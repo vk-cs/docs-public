@@ -8445,21 +8445,6 @@
     ]
   },
   {
-    "uuid": "7153a6a3-19af-4a7d-906c-dd88aad569a8",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/tools-for-using-services/account/how-to-guides/ideasportal",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/how-to-guides/ideasportal/ideasportal.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/how-to-guides/ideasportal/ideasportal.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "315854c0-1f37-4cd4-b572-edc1a4e8615a",
     "lang": "en",
     "type": "ARTICLE",
@@ -18165,1869 +18150,6 @@
     ]
   },
   {
-    "uuid": "425f829c-4e2e-400d-8213-6eac33a22253",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/vendor.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "02752860-9094-4b4e-9cee-5cb59991cf53",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/concepts.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/concepts.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b4e0c317-4967-4aa2-9161-59772fb967a3",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/about",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/about/about.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/about/about.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "e0c7ee72-7250-4598-82c2-db92b4b2cb17",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/vendor-preconditions.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/vendor-preconditions.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "7eb88211-df70-45d7-a9e0-16cf9a8ee48b",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/services",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/services/services.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/services/services.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b356c739-624f-45f5-b54f-3a4e279fb88e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/billing",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/billing/billing.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/billing/billing.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "00251bc3-7915-47ab-aeb1-9d66b86953eb",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/saas",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/saas/saas.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/saas/saas.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "0aebaab2-038c-41aa-884b-1be9ea680185",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/image_based",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/image_based/image_based.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/image_based/image_based.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b45e2901-e587-4973-89a2-dc64cf1a6f67",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/cloud_integration",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/cloud_integration/cloud_integration.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/cloud_integration/cloud_integration.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b73997fc-b138-49fe-a170-e0ecbdc51590",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/concepts/glossary",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/glossary/glossary.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/concepts/glossary/glossary.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "ba36c460-79cd-45bf-aa90-8ff6512a1089",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_add.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3ba1aeb5-ffd7-46d4-a88d-2215890214ba",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_add_steps",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_add_steps/ibservice_add_steps.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_add_steps/ibservice_add_steps.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "6893cb8f-b22f-45e9-a684-8423c7b9d1b8",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "eb584126-1304-4f45-8440-38e814c6d662",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements/ib_image_requirements.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements/ib_image_requirements.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "09afdab5-7018-4002-9ed6-998d3fdef594",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_agent",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_agent/ib_image_agent.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_agent/ib_image_agent.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "5d817899-60d8-4f9f-82b1-81e2c66c0cce",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_packer",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_packer/ib_image_create_packer.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_packer/ib_image_create_packer.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "669d7457-5719-4af5-a002-a8b305d72f8a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_cloud",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_cloud/ib_image_create_cloud.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_cloud/ib_image_create_cloud.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "12e3dc5a-1363-4202-83b1-c16a60b06261",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_structure",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_structure/ib_structure.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_structure/ib_structure.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f6302c1f-f4ff-4b1e-9168-2f500acaba01",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_configure.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "140f666e-0df0-4d7b-9411-53d363444b76",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_files",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_files/ibservice_files.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_files/ibservice_files.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "2bc5e6db-4de3-4e8e-99d7-93cd4f2c1c33",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_param",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_param/ibservice_param.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_param/ibservice_param.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "87c9619b-7657-4e54-99bf-5aa2a7138308",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_full_description",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_full_description/ibservice_full_description.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_full_description/ibservice_full_description.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "bf36c879-dec7-41c4-804b-fde6d631e6a9",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/iboption",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/iboption/iboption.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/iboption/iboption.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "beb29a03-20e7-452c-ad1f-3619010fef3b",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibopt_fill_in",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibopt_fill_in/ibopt_fill_in.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibopt_fill_in/ibopt_fill_in.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "24d51557-5cd5-438e-afc9-f7842b38e7c1",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibplan",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibplan/ibplan.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibplan/ibplan.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "735286e9-2ad6-4395-9beb-7e9f631895d9",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ib_display",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ib_display/ib_display.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ib_display/ib_display.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f8034592-6eb5-495b-bd9d-6a2fd03a1bf6",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8987cf7f-ddc4-4d22-b950-567678bbacc6",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_settings",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_settings/tf_manifest_settings.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_settings/tf_manifest_settings.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3fb65faa-3266-4c6b-aff4-33862b3cd38e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_steps",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_steps/tf_manifest_steps.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_steps/tf_manifest_steps.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "028a3449-2a68-4652-99fb-860c04df6de2",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_variable",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_variable/tf_manifest_variable.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_variable/tf_manifest_variable.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "a9fb21d6-44df-478a-8945-7c6c3a3c355d",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_image",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_image/tf_manifest_image.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_image/tf_manifest_image.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "0382e561-e9d1-4f09-ab8a-f4344e3dff0e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script/tf_manifest_script.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script/tf_manifest_script.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "30dccaac-0446-462f-a24a-56c33ff9d427",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_monitoring",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_monitoring/tf_manifest_monitoring.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_monitoring/tf_manifest_monitoring.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "54d835b9-9344-43c2-a820-f7d89d645800",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_output",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_output/tf_manifest_output.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_output/tf_manifest_output.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "562ef0d4-853d-4e63-8527-439643abbc10",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b063424e-824d-418d-8228-49b62ad01d2b",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_prepare",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_prepare/ibservice_upload_prepare.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_prepare/ibservice_upload_prepare.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "a5dcd1b5-04af-41de-9979-255948079b74",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_phases",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_phases/ibservice_upload_phases.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_phases/ibservice_upload_phases.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "83743852-9b4d-4c5d-8ca1-a46121992e18",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_localtest",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_localtest/ibservice_upload_localtest.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_localtest/ibservice_upload_localtest.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "5b3a08f2-a997-4d0e-aef3-2b8e6f00af64",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest/ibservice_upload_deploysystemtest.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest/ibservice_upload_deploysystemtest.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b6e2619b-ea48-4fd1-88c1-778cf26e5522",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_package",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_package/ibservice_upload_package.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_package/ibservice_upload_package.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "c41ffb2b-c571-4a5f-8be5-9782153d0417",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish_image",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish_image/ibservice_upload_publish_image.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish_image/ibservice_upload_publish_image.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f4103de3-006c-4c43-8f32-0782a5527e2a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish/ibservice_upload_publish.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish/ibservice_upload_publish.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3fdc4088-9711-4f52-84b5-8b75dcc3b008",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ibservice_update",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_update/ibservice_update.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ibservice_update/ibservice_update.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "4d8744c8-8814-4c58-9b5d-e971ac52c8b2",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "54c68018-6da9-4e6d-b882-228fc9ddcbb4",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_telegraf",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_telegraf/ib_cloud_monitoring_telegraf.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_telegraf/ib_cloud_monitoring_telegraf.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "4eb8d52a-8689-44e8-be61-e3d4d7c660f2",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_vm",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_vm/ib_cloud_monitoring_vm.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_vm/ib_cloud_monitoring_vm.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "7978fdef-cc6b-456d-887c-47d02638d3a8",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_app",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_app/ib_cloud_monitoring_app.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_app/ib_cloud_monitoring_app.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8e4826bf-2b38-407c-ae63-782c8ed4e78e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/archive",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/archive/archive.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/archive/archive.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "949bc2f7-274d-48a3-b115-1ccdbd0e5c30",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_add.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "c31b8e51-c724-437f-ae82-ec4aa5e52c9a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_add_steps",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_add_steps/saas_add_steps.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_add_steps/saas_add_steps.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "c7282c7b-2c98-41ea-ad25-c959f05b5b3e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker/saas_broker.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker/saas_broker.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8b62e75b-d413-45fd-82ec-b7df9dab2fab",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_configure.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d7a5064e-d7df-435b-ab5f-7f955e0223eb",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_json",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_json/saas_json.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_json/saas_json.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "63208c45-e118-45c2-96e1-12088c1bbcc3",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_param",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_param/saas_param.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_param/saas_param.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "274d1b7f-14c5-41c6-83ec-7fd5529693e0",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_plan",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_plan/saas_plan.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_plan/saas_plan.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "bea8c21c-aa86-43be-a471-835797497a96",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_preview",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_preview/saas_preview.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_preview/saas_preview.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "50c3cbcd-76c6-4371-99cc-1e52f39f3503",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker_add_configuration",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker_add_configuration/saas_broker_add_configuration.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker_add_configuration/saas_broker_add_configuration.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "972dd61f-7820-4b61-b2c7-483351a36c13",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "93bf1d4b-a09e-4cbd-9a42-810813bfe2b4",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_env",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_env/saas_upload_env.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_env/saas_upload_env.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "0bb7e012-6206-473b-a3ec-c8faba18c34a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_localtest",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_localtest/saas_upload_localtest.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_localtest/saas_upload_localtest.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b31d68ec-8acd-48a9-ad4c-4815af234ae6",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_phases",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_phases/saas_upload_phases.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_phases/saas_upload_phases.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "fe9c622f-9e0d-4e2e-88d4-fcb68eb31dcb",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_publish",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_publish/saas_upload_publish.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_publish/saas_upload_publish.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8f5a8bfc-592c-4b70-9095-ab7270e129ea",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_registration",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_registration/saas_upload_registration.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_registration/saas_upload_registration.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "2ffb94d4-62d9-4bbf-8a11-a6e76ab813ea",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_testmarketplace",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_testmarketplace/saas_upload_testmarketplace.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_testmarketplace/saas_upload_testmarketplace.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "af3ffa0f-86a5-412e-8ff9-de6552c66ccc",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/saas_update",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_update/saas_update.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/saas_update/saas_update.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "2c84e247-fa72-45f1-9ee1-484633accf2a",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d5fecc11-0e8b-4193-9647-8e5d77a78dcf",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_datasources.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "30b1d298-6cdc-4447-bcc2-0f7f3ebd37bf",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_datasources_list",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_datasources_list/ivkcs_datasources_list.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_datasources_list/ivkcs_datasources_list.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "e63064f4-195c-4cec-ab36-f1187ec4e32c",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_agent_script_result",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_agent_script_result/ivkcs_agent_script_result.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_agent_script_result/ivkcs_agent_script_result.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "91a4c37e-7908-43c1-8dd3-8aa2acccc032",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_monitoring_user",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_monitoring_user/ivkcs_monitoring_user.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_monitoring_user/ivkcs_monitoring_user.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "5b8a87d1-30ba-445d-9109-585eac40ce44",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 6,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_resources.meta.json",
-    "mdFullPath": null,
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d5a94c12-7da9-48fc-87dc-a06f6841812e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_resources_list",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_resources_list/ivkcs_resources_list.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_resources_list/ivkcs_resources_list.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "4261b57f-6590-4e06-b8c4-50ed00763ac1",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_check",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_check/ivkcs_agent_check.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_check/ivkcs_agent_check.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f6b7940c-84ec-4b5c-8276-02bc8393efef",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_exec",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_exec/ivkcs_agent_exec.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_exec/ivkcs_agent_exec.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "a5da6854-ccd9-43bc-ac5c-11df08153e15",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_init",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_init/ivkcs_agent_init.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_init/ivkcs_agent_init.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "6824d1ae-f189-4f6a-b77a-a8788735bc7a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot/ivkcs_compute_instance_reboot.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot/ivkcs_compute_instance_reboot.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "1945e626-9564-494b-8ff8-07867dca6fa6",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_dns",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_dns/ivkcs_dns.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_dns/ivkcs_dns.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "36140600-4dd0-4c8c-84cf-774af159f465",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_s3",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_s3/ivkcs_s3.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_s3/ivkcs_s3.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "eea31316-890f-4cb4-a624-0cda33dd9781",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_ssh_keypair",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_ssh_keypair/ivkcs_ssh_keypair.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_ssh_keypair/ivkcs_ssh_keypair.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "7a1ea2c6-be8a-4c2b-944a-c4fcf6383660",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 7,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_user_data",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_user_data/ivkcs_user_data.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_user_data/ivkcs_user_data.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f43f54f2-6db1-42dc-8343-e82949c4de12",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/applications-and-services/marketplace/vendor/service_description",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/service_description/service_description.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/vendor/service_description/service_description.md",
-    "variables": {
-      "system": "Магазин приложений Marketplace",
-      "sys1": "Магазин",
-      "sys2": "Магазина",
-      "sys3": "Магазину",
-      "sys4": "Магазин",
-      "sys5": "Магазином",
-      "sys6": "Магазине"
-    },
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "47102bf1-c9a0-48cb-bdba-13f6ea234eb4",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -20628,21 +18750,6 @@
     ]
   },
   {
-    "uuid": "ab1486af-0c0a-4aa3-b328-383da74395fc",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/account/how-to-guides/ideasportal",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/ideasportal/ideasportal.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/ideasportal/ideasportal.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "2542a750-9d11-4793-844b-81cbccd365c0",
     "lang": "ru",
     "type": "ARTICLE",
@@ -20666,6 +18773,1974 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/faq/faq.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/faq/faq.md",
     "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5a29e08c-8ab3-4a3a-960c-6b853089b80d",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/tools-for-using-services/vendor-account",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/vendor-account.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/vendor-account.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "394f4d4e-78d2-406a-9046-0e2ff0a0e553",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/concepts/concepts.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a90ab259-ade2-4dce-a469-304ea75b94e6",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "66e7d029-4003-4bbe-90ec-bfb6366dbc9c",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/service-management.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d789c6c3-b90b-4453-bf48-21dfd1533275",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/service-management/user-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/user-management/user-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/user-management/user-management.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0d4e0692-c2c9-4334-bfa9-291f231d0111",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/service-management/reports",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/reports/reports.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/reports/reports.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b7d4e485-914c-4f1b-aadf-dc164487c265",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/service-management/monitoring",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/monitoring/monitoring.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/service-management/monitoring/monitoring.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "425f829c-4e2e-400d-8213-6eac33a22253",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/manage-apps.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "02752860-9094-4b4e-9cee-5cb59991cf53",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/concepts.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b4e0c317-4967-4aa2-9161-59772fb967a3",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/about.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e0c7ee72-7250-4598-82c2-db92b4b2cb17",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/vendor-preconditions.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/vendor-preconditions.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7eb88211-df70-45d7-a9e0-16cf9a8ee48b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/services",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/services/services.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/services/services.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b356c739-624f-45f5-b54f-3a4e279fb88e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/billing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/billing/billing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/billing/billing.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "00251bc3-7915-47ab-aeb1-9d66b86953eb",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/saas",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/saas/saas.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/saas/saas.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0aebaab2-038c-41aa-884b-1be9ea680185",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based/image_based.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based/image_based.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b45e2901-e587-4973-89a2-dc64cf1a6f67",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/cloud_integration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/cloud_integration/cloud_integration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/cloud_integration/cloud_integration.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b73997fc-b138-49fe-a170-e0ecbdc51590",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/glossary",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/glossary/glossary.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/glossary/glossary.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ba36c460-79cd-45bf-aa90-8ff6512a1089",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_add.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3ba1aeb5-ffd7-46d4-a88d-2215890214ba",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_add_steps",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_add_steps/ibservice_add_steps.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_add_steps/ibservice_add_steps.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6893cb8f-b22f-45e9-a684-8423c7b9d1b8",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "eb584126-1304-4f45-8440-38e814c6d662",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements/ib_image_requirements.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements/ib_image_requirements.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "09afdab5-7018-4002-9ed6-998d3fdef594",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent/ib_image_agent.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent/ib_image_agent.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5d817899-60d8-4f9f-82b1-81e2c66c0cce",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_packer",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_packer/ib_image_create_packer.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_packer/ib_image_create_packer.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "669d7457-5719-4af5-a002-a8b305d72f8a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_cloud",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_cloud/ib_image_create_cloud.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_cloud/ib_image_create_cloud.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "12e3dc5a-1363-4202-83b1-c16a60b06261",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure/ib_structure.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure/ib_structure.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f6302c1f-f4ff-4b1e-9168-2f500acaba01",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_configure.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "140f666e-0df0-4d7b-9411-53d363444b76",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_files",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_files/ibservice_files.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_files/ibservice_files.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2bc5e6db-4de3-4e8e-99d7-93cd4f2c1c33",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_param",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_param/ibservice_param.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_param/ibservice_param.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "87c9619b-7657-4e54-99bf-5aa2a7138308",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_full_description",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_full_description/ibservice_full_description.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_full_description/ibservice_full_description.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "bf36c879-dec7-41c4-804b-fde6d631e6a9",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/iboption.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/iboption.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "beb29a03-20e7-452c-ad1f-3619010fef3b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in/ibopt_fill_in.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in/ibopt_fill_in.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "24d51557-5cd5-438e-afc9-f7842b38e7c1",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibplan",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibplan/ibplan.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibplan/ibplan.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "735286e9-2ad6-4395-9beb-7e9f631895d9",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/ib_display.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/ib_display.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f8034592-6eb5-495b-bd9d-6a2fd03a1bf6",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8987cf7f-ddc4-4d22-b950-567678bbacc6",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_settings",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_settings/tf_manifest_settings.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_settings/tf_manifest_settings.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3fb65faa-3266-4c6b-aff4-33862b3cd38e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps/tf_manifest_steps.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps/tf_manifest_steps.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "028a3449-2a68-4652-99fb-860c04df6de2",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_variable",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_variable/tf_manifest_variable.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_variable/tf_manifest_variable.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a9fb21d6-44df-478a-8945-7c6c3a3c355d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_image",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_image/tf_manifest_image.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_image/tf_manifest_image.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0382e561-e9d1-4f09-ab8a-f4344e3dff0e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_script",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_script/tf_manifest_script.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_script/tf_manifest_script.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "30dccaac-0446-462f-a24a-56c33ff9d427",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_monitoring",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_monitoring/tf_manifest_monitoring.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_monitoring/tf_manifest_monitoring.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "54d835b9-9344-43c2-a820-f7d89d645800",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_output",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_output/tf_manifest_output.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_output/tf_manifest_output.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "562ef0d4-853d-4e63-8527-439643abbc10",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b063424e-824d-418d-8228-49b62ad01d2b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_prepare",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_prepare/ibservice_upload_prepare.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_prepare/ibservice_upload_prepare.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a5dcd1b5-04af-41de-9979-255948079b74",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_phases",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_phases/ibservice_upload_phases.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_phases/ibservice_upload_phases.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "83743852-9b4d-4c5d-8ca1-a46121992e18",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_localtest",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_localtest/ibservice_upload_localtest.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_localtest/ibservice_upload_localtest.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5b3a08f2-a997-4d0e-aef3-2b8e6f00af64",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest/ibservice_upload_deploysystemtest.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest/ibservice_upload_deploysystemtest.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b6e2619b-ea48-4fd1-88c1-778cf26e5522",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_package",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_package/ibservice_upload_package.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_package/ibservice_upload_package.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c41ffb2b-c571-4a5f-8be5-9782153d0417",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish_image",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish_image/ibservice_upload_publish_image.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish_image/ibservice_upload_publish_image.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f4103de3-006c-4c43-8f32-0782a5527e2a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish/ibservice_upload_publish.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish/ibservice_upload_publish.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3fdc4088-9711-4f52-84b5-8b75dcc3b008",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_update",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_update/ibservice_update.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_update/ibservice_update.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4d8744c8-8814-4c58-9b5d-e971ac52c8b2",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "54c68018-6da9-4e6d-b882-228fc9ddcbb4",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_telegraf",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_telegraf/ib_cloud_monitoring_telegraf.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_telegraf/ib_cloud_monitoring_telegraf.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4eb8d52a-8689-44e8-be61-e3d4d7c660f2",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_vm",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_vm/ib_cloud_monitoring_vm.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_vm/ib_cloud_monitoring_vm.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7978fdef-cc6b-456d-887c-47d02638d3a8",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_app",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_app/ib_cloud_monitoring_app.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_app/ib_cloud_monitoring_app.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8e4826bf-2b38-407c-ae63-782c8ed4e78e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/archive",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/archive/archive.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/archive/archive.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "949bc2f7-274d-48a3-b115-1ccdbd0e5c30",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_add.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c31b8e51-c724-437f-ae82-ec4aa5e52c9a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_add_steps",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_add_steps/saas_add_steps.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_add_steps/saas_add_steps.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c7282c7b-2c98-41ea-ad25-c959f05b5b3e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker/saas_broker.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker/saas_broker.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8b62e75b-d413-45fd-82ec-b7df9dab2fab",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_configure.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d7a5064e-d7df-435b-ab5f-7f955e0223eb",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_json",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_json/saas_json.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_json/saas_json.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "63208c45-e118-45c2-96e1-12088c1bbcc3",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_param",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_param/saas_param.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_param/saas_param.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "274d1b7f-14c5-41c6-83ec-7fd5529693e0",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan/saas_plan.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan/saas_plan.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "bea8c21c-aa86-43be-a471-835797497a96",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_preview",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_preview/saas_preview.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_preview/saas_preview.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "50c3cbcd-76c6-4371-99cc-1e52f39f3503",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker_add_configuration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker_add_configuration/saas_broker_add_configuration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker_add_configuration/saas_broker_add_configuration.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "972dd61f-7820-4b61-b2c7-483351a36c13",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "93bf1d4b-a09e-4cbd-9a42-810813bfe2b4",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_env",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_env/saas_upload_env.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_env/saas_upload_env.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0bb7e012-6206-473b-a3ec-c8faba18c34a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_localtest",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_localtest/saas_upload_localtest.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_localtest/saas_upload_localtest.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b31d68ec-8acd-48a9-ad4c-4815af234ae6",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_phases",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_phases/saas_upload_phases.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_phases/saas_upload_phases.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "fe9c622f-9e0d-4e2e-88d4-fcb68eb31dcb",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_publish",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_publish/saas_upload_publish.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_publish/saas_upload_publish.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8f5a8bfc-592c-4b70-9095-ab7270e129ea",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_registration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_registration/saas_upload_registration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_registration/saas_upload_registration.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2ffb94d4-62d9-4bbf-8a11-a6e76ab813ea",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_testmarketplace",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_testmarketplace/saas_upload_testmarketplace.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_testmarketplace/saas_upload_testmarketplace.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "af3ffa0f-86a5-412e-8ff9-de6552c66ccc",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_update",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_update/saas_update.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_update/saas_update.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2c84e247-fa72-45f1-9ee1-484633accf2a",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d5fecc11-0e8b-4193-9647-8e5d77a78dcf",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_datasources.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "30b1d298-6cdc-4447-bcc2-0f7f3ebd37bf",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_datasources_list",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_datasources_list/ivkcs_datasources_list.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_datasources_list/ivkcs_datasources_list.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e63064f4-195c-4cec-ab36-f1187ec4e32c",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_agent_script_result",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_agent_script_result/ivkcs_agent_script_result.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_agent_script_result/ivkcs_agent_script_result.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "91a4c37e-7908-43c1-8dd3-8aa2acccc032",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_monitoring_user",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_monitoring_user/ivkcs_monitoring_user.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_monitoring_user/ivkcs_monitoring_user.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5b8a87d1-30ba-445d-9109-585eac40ce44",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_resources.meta.json",
+    "mdFullPath": null,
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d5a94c12-7da9-48fc-87dc-a06f6841812e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_resources_list",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_resources_list/ivkcs_resources_list.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_resources_list/ivkcs_resources_list.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4261b57f-6590-4e06-b8c4-50ed00763ac1",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_check",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_check/ivkcs_agent_check.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_check/ivkcs_agent_check.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f6b7940c-84ec-4b5c-8276-02bc8393efef",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_exec",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_exec/ivkcs_agent_exec.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_exec/ivkcs_agent_exec.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a5da6854-ccd9-43bc-ac5c-11df08153e15",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_init",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_init/ivkcs_agent_init.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_init/ivkcs_agent_init.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6824d1ae-f189-4f6a-b77a-a8788735bc7a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot/ivkcs_compute_instance_reboot.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot/ivkcs_compute_instance_reboot.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "1945e626-9564-494b-8ff8-07867dca6fa6",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_dns",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_dns/ivkcs_dns.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_dns/ivkcs_dns.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "36140600-4dd0-4c8c-84cf-774af159f465",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_s3",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_s3/ivkcs_s3.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_s3/ivkcs_s3.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "eea31316-890f-4cb4-a624-0cda33dd9781",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_ssh_keypair",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_ssh_keypair/ivkcs_ssh_keypair.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_ssh_keypair/ivkcs_ssh_keypair.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7a1ea2c6-be8a-4c2b-944a-c4fcf6383660",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data/ivkcs_user_data.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data/ivkcs_user_data.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f43f54f2-6db1-42dc-8343-e82949c4de12",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vendor-account/manage-apps/service_description",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/service_description/service_description.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/service_description/service_description.md",
+    "variables": {
+      "system": "Магазин приложений Marketplace",
+      "sys1": "Магазин",
+      "sys2": "Магазина",
+      "sys3": "Магазину",
+      "sys4": "Магазин",
+      "sys5": "Магазином",
+      "sys6": "Магазине"
+    },
     "hidden": false,
     "version": null,
     "buildPoints": [

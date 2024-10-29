@@ -1999,7 +1999,7 @@
   },
   {
     "source": "/en/additionals/account/platform/ideasportal",
-    "destination": "/en/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/en/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -2299,7 +2299,7 @@
   },
   {
     "source": "/ru/additionals/account/platform/ideasportal",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/ru/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -4537,7 +4537,7 @@
   },
   {
     "source": "/en/base/account/platform/ideasportal",
-    "destination": "/en/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/en/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -4597,7 +4597,7 @@
   },
   {
     "source": "/ru/base/account/platform/ideasportal",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/ru/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -16207,7 +16207,7 @@
   },
   {
     "source": "/en/base/account/use-cases/ideasportal",
-    "destination": "/en/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/en/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -18871,7 +18871,7 @@
   },
   {
     "source": "/ru/base/account/use-cases/ideasportal",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/ru/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -21385,7 +21385,7 @@
   },
   {
     "source": "/en/tools-for-using-services/account/use-cases/ideasportal",
-    "destination": "/en/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/en/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -22759,7 +22759,7 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/use-cases/ideasportal",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/ru/tools-for-using-services/account",
     "permanent": false,
     "locale": false
   },
@@ -27794,6 +27794,504 @@
   {
     "source": "/ru/kubernetes/k8s/concepts/versions/version-changelog",
     "destination": "/ru/kubernetes/k8s/concepts/versions/version-support",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/en/tools-for-using-services/account",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/how-to-guides/ideasportal",
+    "destination": "/ru/tools-for-using-services/account",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/about",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/services",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/services",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/billing",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/billing",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/saas",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/saas",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/image_based",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/vendor-preconditions/cloud_integration",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/cloud_integration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/concepts/glossary",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/glossary",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_add_steps",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_add_steps",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_agent",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_packer",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_packer",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_cloud",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_cloud",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_structure",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_files",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_files",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_param",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_param",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibservice_full_description",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibservice_full_description",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/iboption",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibopt_fill_in",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibplan",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibplan",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ib_display",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_settings",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_settings",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_steps",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_variable",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_variable",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_image",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_script",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_monitoring",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_monitoring",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_output",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_output",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_prepare",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_prepare",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_phases",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_phases",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_localtest",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_localtest",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_package",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_package",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish_image",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish_image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_publish",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_publish",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ibservice_update",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_update",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_telegraf",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_telegraf",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_vm",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_vm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ib_cloud_monitoring/ib_cloud_monitoring_app",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring/ib_cloud_monitoring_app",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/archive",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/archive",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_add_steps",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_add_steps",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_json",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_json",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_param",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_param",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_plan",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_preview",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_preview",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker_add_configuration",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker_add_configuration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_env",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_env",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_localtest",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_localtest",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_phases",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_phases",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_publish",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_publish",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_registration",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_registration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_add/saas_upload/saas_upload_testmarketplace",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_upload/saas_upload_testmarketplace",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/saas_update",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/saas_update",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_datasources_list",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_datasources_list",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_agent_script_result",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_agent_script_result",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_datasources/ivkcs_monitoring_user",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_monitoring_user",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_resources_list",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_resources_list",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_check",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_check",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_exec",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_exec",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_init",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_agent_init",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_dns",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_dns",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_s3",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_s3",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_ssh_keypair",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_ssh_keypair",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_user_data",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/vendor/service_description",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/service_description",
     "permanent": false,
     "locale": false
   }
