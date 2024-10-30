@@ -59,14 +59,6 @@
              - it is allowed to use only uppercase and lowercase Latin letters, numbers, and special characters `!`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, `` ` ``, `;`.
              - the password must contain at least one letter of the Latin alphabet and at least one digit.
 
-      - **Virtual machine key**: the key that is used for [connecting to cluster nodes via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix). Select an existing key or create a new one.
-
-        <warn>
-
-        If you select **No key**, then SSH connection will not be possible.
-
-        </warn>
-
       - **Cluster mode**: defines the configuration of the master node.
 
         - **DEV**: a virtual machine with 2 vCPUs and 4 GB RAM will be used for the master node.
