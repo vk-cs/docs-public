@@ -6472,10 +6472,6 @@
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
   ],
   [
-    "/en/ml/spark-to-k8s/service-management/create",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
-  ],
-  [
     "/en/ml/spark-to-k8s/service-management/tokens",
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
   ],
@@ -16482,10 +16478,6 @@
   [
     "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
     "/ru/ml/spark-to-k8s/service-management/launch",
