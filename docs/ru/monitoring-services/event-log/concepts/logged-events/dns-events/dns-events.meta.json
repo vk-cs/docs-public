@@ -1,0 +1,10 @@
+{
+    "title": "Регистрируемые события Public DNS",
+    "pageDescription": "События, которые Public DNS передает в Cloud Audit.",
+    "shortDescription": "События, которые Public DNS передает в Cloud Audit",
+    "metaTitle": "Регистрируемые события Public DNS",
+    "metaDescription": "События, которые Public DNS передает в Cloud Audit",
+    "sectionTitle": "Регистрируемые события Public DNS",
+    "icon": "",
+    "weight": 10
+}
