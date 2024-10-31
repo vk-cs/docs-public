@@ -1,0 +1,12 @@
+{
+    "title": "IAM logged events",
+    "pageDescription": "Events that IAM reports to Cloud Audit.",
+    "shortDescription": "Events that IAM reports to Cloud Audit",
+    "metaTitle": "IAM logged events",
+    "metaDescription": "Events that IAM reports to Cloud Audit",
+    "sectionTitle": "IAM logged events",
+    "icon": "",
+    "weight": 15
+}
+
+
