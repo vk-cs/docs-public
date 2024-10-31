@@ -505,6 +505,16 @@
 /docs/en/monitoring-services/monitoring/service-management/mon-setup-new
 /docs/en/monitoring-services/monitoring/service-management/mon-setup-current
 /docs/en/monitoring-services/monitoring/service-management/grafana-integration
+/docs/en/monitoring-services/event-log
+/docs/en/monitoring-services/event-log/concepts
+/docs/en/monitoring-services/event-log/concepts/about
+/docs/en/monitoring-services/event-log/concepts/search-language
+/docs/en/monitoring-services/event-log/concepts/logged-events
+/docs/en/monitoring-services/event-log/concepts/logged-events/dns-events
+/docs/en/monitoring-services/event-log/concepts/logged-events/iam-events
+/docs/en/monitoring-services/event-log/service-management
+/docs/en/monitoring-services/event-log/service-management/siem-integration
+/docs/en/monitoring-services/event-log/service-management/view-event-log
 /docs/en/applications-and-services
 /docs/en/applications-and-services/marketplace
 /docs/en/applications-and-services/marketplace/concepts

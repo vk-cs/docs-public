@@ -1,10 +1,11 @@
 {
-    "title": "Working with the event log",
-    "pageDescription": "",
-    "shortDescription": "Tools for viewing and searching event log entries",
-    "metaTitle": "Working with the event log",
-    "metaDescription": "Tools for viewing and searching event log entries",
-    "sectionTitle": "Working with the event log",
-    "icon": "",
-    "weight": 2
+  "title": "Working with the event log",
+  "pageDescription": "",
+  "shortDescription": "Tools for viewing and searching event log entries",
+  "metaTitle": "Working with the event log",
+  "metaDescription": "Tools for viewing and searching event log entries",
+  "sectionTitle": "Working with the event log",
+  "icon": "",
+  "weight": 2,
+  "uuid": "9bd4d7e9-c1fb-4621-b049-6b998e726e4a"
 }

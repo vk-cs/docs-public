@@ -561,6 +561,9 @@
 /docs/ru/monitoring-services/event-log/concepts
 /docs/ru/monitoring-services/event-log/concepts/about
 /docs/ru/monitoring-services/event-log/concepts/search-language
+/docs/ru/monitoring-services/event-log/concepts/logged-events
+/docs/ru/monitoring-services/event-log/concepts/logged-events/dns-events
+/docs/ru/monitoring-services/event-log/concepts/logged-events/iam-events
 /docs/ru/monitoring-services/event-log/service-management
 /docs/ru/monitoring-services/event-log/service-management/siem-integration
 /docs/ru/monitoring-services/event-log/service-management/view-event-log

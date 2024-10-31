@@ -7620,6 +7620,156 @@
     ]
   },
   {
+    "uuid": "be8efc1d-9cf8-4e11-8ed5-89c3eba2925c",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/en/monitoring-services/event-log",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/event-log.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/event-log.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6672830b-ae43-49b6-b51f-298a2abd995f",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/monitoring-services/event-log/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/concepts.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "73eb1fa4-6718-4998-90f6-302d84b4c14b",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "048b98ab-c6ea-4a4c-93e4-b2664477dc03",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/search-language",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/search-language/search-language.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/search-language/search-language.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7da44a97-b08f-4bce-a8bd-188806e6576c",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/logged-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/logged-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "def67999-e77c-489c-84be-b1242d6d7fe5",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/dns-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/dns-events/dns-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/dns-events/dns-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4d26a317-a41d-4c18-910b-c59c98467cb5",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/iam-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/iam-events/iam-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/iam-events/iam-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c4d0fe1d-eb31-4b1c-a563-5e0149602dce",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/monitoring-services/event-log/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/service-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/service-management.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "694a6a85-dea4-42a4-9f50-1e91909ba574",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/service-management/siem-integration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "9bd4d7e9-c1fb-4621-b049-6b998e726e4a",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/service-management/view-event-log",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/view-event-log/view-event-log.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "162c920a-b096-44e5-9231-4054ddacc184",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -17782,6 +17932,51 @@
     "partialPath": "/ru/monitoring-services/event-log/concepts/search-language",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/search-language/search-language.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/search-language/search-language.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ad430907-d135-4acc-afb8-cb8e70146a14",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/logged-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/logged-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "42261b89-65a9-4074-9e70-24d957b58d08",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/dns-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/dns-events/dns-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/dns-events/dns-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "163317ce-ff2d-4ffd-98e5-e8a3194f8700",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/iam-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/iam-events/iam-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/iam-events/iam-events.md",
     "variables": {},
     "hidden": false,
     "version": null,
