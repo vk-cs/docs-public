@@ -1,0 +1,12 @@
+{
+    "title": "Регистрируемые события сервиса IAM",
+    "pageDescription": "События, которые IAM передает в Cloud Audit.",
+    "shortDescription": "События, которые IAM передает в Cloud Audit",
+    "metaTitle": "Регистрируемые события сервиса IAM",
+    "metaDescription": "События, которые IAM передает в Cloud Audit",
+    "sectionTitle": "Регистрируемые события сервиса IAM",
+    "icon": "",
+    "weight": 15
+}
+
+
