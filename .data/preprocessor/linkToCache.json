@@ -289,6 +289,41 @@
     "full": "Настройка агента для сбора логов из дополнительных текстовых файлов",
     "text": "Настройка агента для сбора логов из дополнительных текстовых файлов"
   },
+  "create_siem_connections": {
+    "number": null,
+    "full": "Создание SIEM-подключения",
+    "text": "Создание SIEM-подключения"
+  },
+  "edit_siem_connection": {
+    "number": null,
+    "full": "Изменение настроек SIEM-подключения",
+    "text": "Изменение настроек SIEM-подключения"
+  },
+  "activate_siem_connection": {
+    "number": null,
+    "full": "Изменение статуса активности SIEM-подключения",
+    "text": "Изменение статуса активности SIEM-подключения"
+  },
+  "delete_siem_connection": {
+    "number": null,
+    "full": "Удаление SIEM-подключения",
+    "text": "Удаление SIEM-подключения"
+  },
+  "view_events_list": {
+    "number": null,
+    "full": "Просмотр журнала событий",
+    "text": "Просмотр журнала событий"
+  },
+  "filter_events_list": {
+    "number": null,
+    "full": "Использование фильтров и поисковых запросов",
+    "text": "Использование фильтров и поисковых запросов"
+  },
+  "export_events_list": {
+    "number": null,
+    "full": "Экспорт списка событий",
+    "text": "Экспорт списка событий"
+  },
   "preparatory_steps": {
     "number": null,
     "full": "Подготовительные шаги",
@@ -493,46 +528,6 @@
     "number": null,
     "full": "Сигнатура метода и пример использования",
     "text": "Сигнатура метода и пример использования"
-  },
-  "iam_events": {
-    "number": null,
-    "full": "Регистрируемые события сервиса IAM",
-    "text": "Регистрируемые события сервиса IAM"
-  },
-  "create_siem_connections": {
-    "number": null,
-    "full": "Создание SIEM-подключения",
-    "text": "Создание SIEM-подключения"
-  },
-  "edit_siem_connection": {
-    "number": null,
-    "full": "Изменение настроек SIEM-подключения",
-    "text": "Изменение настроек SIEM-подключения"
-  },
-  "activate_siem_connection": {
-    "number": null,
-    "full": "Изменение статуса активности SIEM-подключения",
-    "text": "Изменение статуса активности SIEM-подключения"
-  },
-  "delete_siem_connection": {
-    "number": null,
-    "full": "Удаление SIEM-подключения",
-    "text": "Удаление SIEM-подключения"
-  },
-  "view_events_list": {
-    "number": null,
-    "full": "Просмотр журнала событий",
-    "text": "Просмотр журнала событий"
-  },
-  "filter_events_list": {
-    "number": null,
-    "full": "Использование фильтров и поисковых запросов",
-    "text": "Использование фильтров и поисковых запросов"
-  },
-  "export_events_list": {
-    "number": null,
-    "full": "Экспорт списка событий",
-    "text": "Экспорт списка событий"
   },
   "configure_network_connectivity": {
     "number": null,

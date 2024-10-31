@@ -1,10 +1,11 @@
 {
-    "title": "Search query language",
-    "pageDescription": "",
-    "shortDescription": "Event log search tool",
-    "metaTitle": "Search query language",
-    "metaDescription": "",
-    "sectionTitle": "Search query language",
-    "icon": "",
-    "weight": 2
+  "title": "Search query language",
+  "pageDescription": "",
+  "shortDescription": "Event log search tool",
+  "metaTitle": "Search query language",
+  "metaDescription": "",
+  "sectionTitle": "Search query language",
+  "icon": "",
+  "weight": 2,
+  "uuid": "048b98ab-c6ea-4a4c-93e4-b2664477dc03"
 }

@@ -1,10 +1,11 @@
 {
-    "title": "Managing SIEM connections",
-    "pageDescription": "",
-    "shortDescription": "How to create and configure a connection to your SIEM system",
-    "metaTitle": "Managing SIEM connections",
-    "metaDescription": "How to create and configure a connection to your SIEM system",
-    "sectionTitle": "Managing SIEM connections",
-    "icon": "",
-    "weight": 1
+  "title": "Managing SIEM connections",
+  "pageDescription": "",
+  "shortDescription": "How to create and configure a connection to your SIEM system",
+  "metaTitle": "Managing SIEM connections",
+  "metaDescription": "How to create and configure a connection to your SIEM system",
+  "sectionTitle": "Managing SIEM connections",
+  "icon": "",
+  "weight": 1,
+  "uuid": "694a6a85-dea4-42a4-9f50-1e91909ba574"
 }

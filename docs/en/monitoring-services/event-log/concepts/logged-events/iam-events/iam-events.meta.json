@@ -1,12 +1,11 @@
 {
-    "title": "IAM logged events",
-    "pageDescription": "Events that IAM reports to Cloud Audit.",
-    "shortDescription": "Events that IAM reports to Cloud Audit",
-    "metaTitle": "IAM logged events",
-    "metaDescription": "Events that IAM reports to Cloud Audit",
-    "sectionTitle": "IAM logged events",
-    "icon": "",
-    "weight": 15
+  "title": "IAM logged events",
+  "pageDescription": "Events that IAM reports to Cloud Audit.",
+  "shortDescription": "Events that IAM reports to Cloud Audit",
+  "metaTitle": "IAM logged events",
+  "metaDescription": "Events that IAM reports to Cloud Audit",
+  "sectionTitle": "IAM logged events",
+  "icon": "",
+  "weight": 15,
+  "uuid": "4d26a317-a41d-4c18-910b-c59c98467cb5"
 }
-
-

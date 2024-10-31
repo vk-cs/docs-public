@@ -1,10 +1,11 @@
 {
-    "title": "Logged events",
-    "pageDescription": "Events that VK Cloud services report to Cloud Audit.",
-    "shortDescription": "Events that VK Cloud services report to Cloud Audit",
-    "metaTitle": "Logged events",
-    "metaDescription": "Events that VK Cloud services report to Cloud Audit",
-    "sectionTitle": "Logged events",
-    "icon": "",
-    "weight": 3
+  "title": "Logged events",
+  "pageDescription": "Events that VK Cloud services report to Cloud Audit.",
+  "shortDescription": "Events that VK Cloud services report to Cloud Audit",
+  "metaTitle": "Logged events",
+  "metaDescription": "Events that VK Cloud services report to Cloud Audit",
+  "sectionTitle": "Logged events",
+  "icon": "",
+  "weight": 3,
+  "uuid": "7da44a97-b08f-4bce-a8bd-188806e6576c"
 }

@@ -6812,6 +6812,62 @@
     "http://localhost:3000/docs/en/monitoring-services/monitoring/service-management/mon-setup-new"
   ],
   [
+    "/en/monitoring-services/event-log/concepts/about",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/about",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/siem-integration",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/siem-integration#delete_siem_connection"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/siem-integration",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/siem-integration#activate_siem_connection"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/siem-integration",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/siem-integration#activate_siem_connection"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log#view_events_list"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log#filter_events_list"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log#export_events_list"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log#filter_events_list"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/concepts/search-language"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/en/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log#filter_events_list"
+  ],
+  [
     "/en/applications-and-services/marketplace/concepts/about",
     "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-manage"
   ],
@@ -17821,7 +17877,7 @@
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
-    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log#view_events_list"
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
@@ -17833,7 +17889,7 @@
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
-    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
@@ -17841,7 +17897,7 @@
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
-    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
@@ -17849,7 +17905,7 @@
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",
-    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/monitoring-services/event-log/service-management/view-event-log",

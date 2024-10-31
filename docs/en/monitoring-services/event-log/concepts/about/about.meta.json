@@ -1,10 +1,11 @@
 {
-    "title": "About service",
-    "pageDescription": "",
-    "shortDescription": "Description of the service features",
-    "metaTitle": "About service",
-    "metaDescription": "",
-    "sectionTitle": "About service",
-    "icon": "",
-    "weight": 1
+  "title": "About service",
+  "pageDescription": "",
+  "shortDescription": "Description of the service features",
+  "metaTitle": "About service",
+  "metaDescription": "",
+  "sectionTitle": "About service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "73eb1fa4-6718-4998-90f6-302d84b4c14b"
 }
