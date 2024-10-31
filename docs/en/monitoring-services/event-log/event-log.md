@@ -1,0 +1,1 @@
+Cloud Audit is a service for integrating your security information and event management system (SIEM) with the VK Cloud platform. The purpose of the integration is to organize centralized collection, storage and transmission of messages about security events that come from your cloud services and virtual machines.

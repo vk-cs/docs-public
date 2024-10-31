@@ -1,0 +1,10 @@
+{
+  "title": "Cloud Audit",
+  "pageDescription": "Cloud Audit is a service for integrating your security information and event management system (SIEM) with the VK Cloud platform. The purpose of the integration is to organize centralized collection, storage and transmission of messages about security events that come from your cloud services and virtual machines.",
+  "shortDescription": "Security event collection integrated with the user's SIEM system",
+  "metaTitle": "Cloud Audit",
+  "metaDescription": "Cloud Audit is a service for integrating your SIEM system with the VK Cloud platform. The purpose of the integration is centralized collection, storage and transmission of security event messages to the SIEM system in VK Cloud",
+  "sectionTitle": "Cloud Audit",
+  "icon": "",
+  "weight": 4
+}
