@@ -1529,6 +1529,14 @@
   ],
   [
     "/en/computing/iaas/service-management/fs-manage",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/computing/iaas/service-management/fs-manage",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages"
+  ],
+  [
+    "/en/computing/iaas/service-management/fs-manage",
     "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#linux_4e8c2422"
   ],
   [
@@ -10114,6 +10122,14 @@
   [
     "/ru/computing/iaas/service-management/images/image-metadata",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage"
+  ],
+  [
+    "/ru/computing/iaas/service-management/fs-manage",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/computing/iaas/service-management/fs-manage",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety"
   ],
   [
     "/ru/computing/iaas/service-management/fs-manage",
