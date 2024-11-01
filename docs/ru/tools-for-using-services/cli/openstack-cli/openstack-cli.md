@@ -60,7 +60,7 @@ yum install python-openstackclient
 1. Установите пакеты для работы с отдельными сервисами OpenStack:
 
    ```bash
-   pip install python-<Название сервиса>client
+   pip install python-<НАЗВАНИЕ_СЕРВИСА>client
    ```
 
    Названия сервисов:
@@ -76,8 +76,16 @@ yum install python-openstackclient
 2. Установите клиент общего файлового хранилища Manila CLI с помощью команды:
 
    ```bash
-   pip install "python-manilaclient==4.1.3"
+   pip install "python-manilaclient==4.9.1"
    ```
+
+   <info>
+
+   Рекомендованные версии пакета `python-manilaclient`: 4.9.1 или выше. Если нужна более старая версия, используйте 4.4.2.
+
+   При использовании других версий `python-manilaclient` команды `openstack share network` могут выдавать ошибку.
+
+   </info>
 
 ## 3. Пройдите аутентификацию
 
@@ -85,7 +93,7 @@ yum install python-openstackclient
 2. Убедитесь, что [включена](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
 3. Выберите проект.
 4. На странице **Настройки проекта** [перейдите на вкладку](https://msk.cloud.vk.com/app/project/keys/) **Доступ по API**.
-5. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл с именем `<название проекта>-openrc.sh`.
+5. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл с именем `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh`.
 6. Укажите в переменных среды учетные данные для аутентификации.
 
    <tabs>
@@ -99,7 +107,7 @@ yum install python-openstackclient
    1. Запустите выполнение скрипта:
 
       ```bash
-      source <название проекта>-openrc.sh
+      source <НАЗВАНИЕ_ПРОЕКТА>-openrc.sh
       ```
 
    2. Введите пароль пользователя проекта.
@@ -107,7 +115,7 @@ yum install python-openstackclient
    </tabpanel>
    <tabpanel>
 
-   1. Скопируйте из файла `<название проекта>-openrc.sh` значения параметров без кавычек и выполните команды:
+   1. Скопируйте из файла `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` значения параметров без кавычек и выполните команды:
 
       ```powershell
       set OS_INTERFACE=<OS_INTERFACE>
@@ -122,13 +130,15 @@ yum install python-openstackclient
    2. Укажите пароль, выполнив команду:
 
       ```powershell
-      set OS_PASSWORD=<пароль пользователя проекта>
+      set OS_PASSWORD=<ПАРОЛЬ>
       ```
+
+      Здесь `<ПАРОЛЬ>` — пароль пользователя проекта.
 
    </tabpanel>
    <tabpanel>
 
-   1. Скопируйте данные из файла `<название проекта>-openrc.sh` и выполните команды:
+   1. Скопируйте данные из файла `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` и выполните команды:
 
       ```powershell
       $env:OS_INTERFACE = "<OS_INTERFACE>"
@@ -143,8 +153,10 @@ yum install python-openstackclient
    2. Укажите пароль, выполнив команду:
 
       ```powershell
-      $env:OS_PASSWORD = "<пароль пользователя проекта>"
+      $env:OS_PASSWORD = "<ПАРОЛЬ>"
       ```
+
+      Здесь `<ПАРОЛЬ>` — пароль пользователя проекта.
 
    </tabpanel>
    </tabs>
