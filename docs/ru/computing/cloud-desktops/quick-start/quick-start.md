@@ -92,7 +92,16 @@
 
    В примере используется IP-адрес `99.166.240.100`.
 
-1. [Скачайте и установите](../service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") клиент Cloud Desktop на ваш локальный компьютер.
+1. Посмотрите, какая подсистема доступа к удаленным рабочим столам настроена в вашем проекте:
+   
+   1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
+   1. Перейдите на вкладку **Подсистема** и посмотрите, какая подсистема выбрана.
+   
+1. Скачайте и установите клиент для доступа к удаленным рабочим столам. Выбор клиента зависит от подсистемы:
+
+   - [Termidesk](/ru/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") — если выбрана подсистема **Termidesk**;
+   - [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download") — если выбрана подсистема **VK**.
+      
 1. Подключитесь к пулам:
 
    1. Откройте установленный клиент.

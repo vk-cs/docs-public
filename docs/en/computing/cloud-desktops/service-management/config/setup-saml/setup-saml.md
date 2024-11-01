@@ -3,7 +3,7 @@ Cloud Desktop supports two ways to authenticate users when they connect to remot
 - Authentication with an AD or LDAP user directory service. Used by default.
 - Two-factor authentication with the [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) service.
 
-Only one of the user authentication methods is used at a time for all desktops in your Cloud Desktop infrastructure. If necessary, you can switch between the authentication methods. This does not require reconfiguring other Cloud Desktop components: the network, the remote desktop access provider, and the connection to the user directory.
+Only one of the user authentication methods is used at a time for all desktops in your Cloud Desktop infrastructure. If necessary, you can switch between the authentication methods. This does not require reconfiguring other Cloud Desktop components: the network, the remote desktop access subsystem, and the connection to the user directory.
 
 To use the SAML authentication service in Cloud Desktop, complete the following preparation steps:
 
