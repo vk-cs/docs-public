@@ -1,13 +1,12 @@
 {
-    "title": "Selecting a provider",
-    "pageDescription": "Selecting a provider of remote desktop access.",
-    "shortDescription": "Selecting a provider of remote desktop access",
-    "metaTitle": "Selecting a provider",
+    "title": "Selecting subsystem",
+    "pageDescription": "Selecting a subsystem of remote desktop access.",
+    "shortDescription": "Selecting a subsystem of remote desktop access",
+    "metaTitle": "Selecting subsystem",
     "metaDescription": "Selecting a provider of remote desktop access.",
-    "sectionTitle": "Selecting a provider",
+    "sectionTitle": "Selecting subsystem",
     "icon": "",
     "isBeta": true,
-    "hidden": true,
     "weight": 2,
     "uuid": "c9e9a250-0265-42f9-89d8-86290f8d5c9b"
 }

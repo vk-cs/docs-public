@@ -91,8 +91,16 @@ After completing all the steps of the quick start, you will:
     1. In the list that opens, copy the **External IP address** value.
 
     In the example, the IP address is `99.166.240.100`.
+1. Check which remote desktop access subsystem is configured in your project:
 
-1. [Download and install](../service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") the Cloud Desktop client on your local computer.
+   1. Go to **Cloud Desktop** → **Service settings**.
+   1. Go to the **Subsystem** tab and check which subsystem is selected.
+   
+1. Download and install the client for accessing remote desktops. The choice of client depends on the subsystem:
+
+   - [Termidesk](/ru/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") — if the **Termidesk** subsystem is selected.
+   - [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download") — if the **VK** subsystem is selected.
+
 1. Connect to the pools:
 
    1. Open the installed client.
