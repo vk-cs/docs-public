@@ -18,8 +18,8 @@ ID хоста, который будет перезагружен.
 
 ID вычисляется ресурсом, создающим хост (ресурс `vkcs_compute_instance` провайдера VK CS)
 |string
-|Да
-|Нет
+| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
 |===
 {/caption}
 

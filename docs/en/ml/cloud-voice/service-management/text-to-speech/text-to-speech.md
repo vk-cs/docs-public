@@ -48,8 +48,8 @@ Request parameters:
 | `tempo` | Speech rate | URL | 0.75 to 1.75 |
 | `text` | Text for voiceover (GET request)| URL | Up to 2000 symbols in UTF-8 |
 | `<text to voice>` | Text for voiceover (POST request) | Option `data`| Up to 2000 symbols in UTF-8|
-| `<file name>` | File name with extention | Option `output` | — |
-| `<access token>`| Access token for authorization. Read more about authorization in the section [Getting an access token](../get-voice-token/) | Option `header`| — |
+| `<file name>` | File name with extention | Option `output` | ![](/en/assets/no.svg "inline") |
+| `<access token>`| Access token for authorization. Read more about authorization in the section [Getting an access token](../get-voice-token/) | Option `header`| ![](/en/assets/no.svg "inline") |
 
 ### Restrictions
 

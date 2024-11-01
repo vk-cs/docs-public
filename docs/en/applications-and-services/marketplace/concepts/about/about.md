@@ -46,15 +46,40 @@ Each type of service is initialized in VK Cloud differently:
 
 Key differences for SaaS and image-based services:
 
-| Feature / Type | SaaS | Image-based |
-| ----- | --- | --- |
-| Infrastructure location | A separate account (tenant) on the side of the supplier company | Project in VK Cloud |
-| Management of the deployed infrastructure via VK Cloud | No | Yes |
-| Service instance monitoring | No | Yes |
-| Integration with VK Cloud services | No | Yes |
-| [Tariffication](../../tariffication/) | Product Usage | Product usage + deployed infrastructure in the project |
-| Changing the tariff plan | Yes | Yes |
-| Setting up tariff plan options | Yes | Yes |
+[cols="2,1,1", options="header"]
+|===
+| Feature / Type
+| SaaS
+| Image-based
+
+| Infrastructure location
+| A separate account (tenant) on the side of the supplier company
+| Project in VK Cloud
+
+| Management of the deployed infrastructure via VK Cloud
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+| Service instance monitoring
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+| Integration with VK Cloud services
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+| [Tariffication](../../tariffication/)
+| Product Usage
+| Product usage + deployed infrastructure in the project
+
+| Changing the tariff plan
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+| Setting up tariff plan options
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+|===
 
 ## Information for vendors
 

@@ -22,7 +22,7 @@
 |до 64 vCPU, от 64 до 512 ГБ RAM
 
 |Выделенный хост с гипервизором и процессором Intel(R) Xeon(R) Platinum 8380 CPU (Intel Ice Lake)
-| —
+| ![](/en/assets/no.svg "inline")
 |до 148 vCPU, до 2 ТБ RAM
 
 |===

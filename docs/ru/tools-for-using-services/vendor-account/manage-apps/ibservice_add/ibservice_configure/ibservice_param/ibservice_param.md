@@ -14,19 +14,19 @@
 |
 Идентификатор сервиса UUID4 (ID), сформированный с помощью генератора UUID4
 |string (UUID4)
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |revision
 |
 Ревизия сервиса. Сочетание ревизии и ID сервиса определяет его уникальность в {var(sys6)}. Остальные параметры описывают характеристики конкретной ревизии сервиса
 |string, до 255 символов
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |name
 |
 Имя сервиса
 |string, до 255 символов
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |short_description
 |
@@ -34,37 +34,37 @@
 
 Полное описание сервиса заполняется в файле `full_description.md`
 |string, до 120 символов
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |singleton
 |
 Определяет, есть ли ограничение в один инстанс сервиса на один проект облачной платформы
 |boolean
-|Нет
+| ![](/en/assets/no.svg "inline")
 
 |auto_bind
 |
 Определяет, нужно ли после развертывания сервиса автоматически создавать сервисную привязку
 |boolean
-|Нет
+| ![](/en/assets/no.svg "inline")
 
 |icon
 |
 Определяет файл с изображением для иконки сервиса. Укажите имя файла, находящегося в директории `images`
 |string, до 512 символов
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |help
 |
 URL документации сервиса
 |string, до 512 символов
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |bindable
 |
 Определяет, можно ли создавать сервисные привязки для этого сервиса. Значение должно быть `true`
 |boolean
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |plan_updateable
 |
@@ -74,37 +74,37 @@ URL документации сервиса
 
 Для image-based приложений значение должно быть `false`
 |boolean
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |deactivatable
 |
 Определяет, можно ли временно приостановить использование сервиса
 |boolean
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |bindings_retrievable
 |
 Определяет, нужно ли повторять попытку создания сервисной привязки в течение определенного времени, если предыдущая попытка не удалась
 |boolean
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |instances_retrievable
 |
 Определяет, нужно ли повторять попытку создания инстанса сервиса в течение определенного времени, если предыдущая попытка не удалась
 |boolean
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |plans
 |
 Определяет тарифные планы сервиса (подробнее — в разделе {linkto(#service_plans)[text=%text]})
 |Массив
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |preview
 |
 Определяет тарифные опции для матрицы тарифных планов (подробнее — в разделе {linkto(#service_options_for_matrix)[text=%text]})
 |Массив
-|Да
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 

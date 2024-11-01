@@ -88,15 +88,15 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 .^|Kubernetes<br>1.29.x
 
 |[Capsule](https://github.com/projectcapsule/capsule)
-|—
-|—
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 |0.4.6
 |0.4.6
 |0.4.6
 |0.4.6
 
 |[cert-manager](https://github.com/cert-manager/cert-manager)
-|—
+| ![](/en/assets/no.svg "inline")
 |1.12.2
 |1.12.2
 |1.12.2/1.14.2
@@ -112,7 +112,7 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |2.2.2
 
 |[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration)
-|—
+| ![](/en/assets/no.svg "inline")
 |0.34.2
 |0.34.2
 |0.34.2
@@ -128,7 +128,7 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |4.10.1
 
 |[Istio](https://github.com/istio/istio)
-|—
+| ![](/en/assets/no.svg "inline")
 |1.16.4
 |1.16.4
 |1.19.3
@@ -136,7 +136,7 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |1.22.3
 
 |[Jaeger](https://github.com/jaegertracing/jaeger)
-|—
+| ![](/en/assets/no.svg "inline")
 |0.71.4
 |0.71.4
 |0.71.4
@@ -144,7 +144,7 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |0.71.4
 
 |[Kiali](https://github.com/kiali/kiali)
-|—
+| ![](/en/assets/no.svg "inline")
 |1.59.1
 |1.59.1
 |1.75.0
