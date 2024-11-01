@@ -5,13 +5,14 @@ You can:
 - write data to connected file storages and read data from them,
 - create snapshots of the current state of the file storage.
 
-File storages are created in your VK Cloud management console. Connecting file storages, writing and reading data are only available in VK Cloud virtual machines. Other file storage functions are available in your VK Cloud management console or in the OpenStack CLI using the `openstack share` commands.
+File storages are created in your VK Cloud management console or in the OpenStack CLI. Connecting file storages, writing and reading data are only available in VK Cloud virtual machines. Other file storage functions are available in your VK Cloud management console or in the OpenStack CLI using the `openstack share` commands.
 
 ## Creating a file storage
 
 <tabs>
 <tablist>
 <tab>Management console</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -41,6 +42,68 @@ File storages are created in your VK Cloud management console. Connecting file s
    </info>
 
 1. Click **Add file server**.
+
+</tabpanel>
+<tabpanel>
+
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Select an existing file storage network or create a new one.
+
+    <tabs>
+    <tablist>
+    <tab>Selecting an existing network</tab>
+    <tab>Creating a new network</tab>
+    </tablist>
+    <tabpanel>
+
+    1. Get the list of existing file storage networks by running the command:
+
+        ```bash
+        openstack share network list
+        ```
+
+        Write down the name or ID of the required network.
+    1. (Optional) View the properties of the selected network by running the command:
+
+        ```bash
+        openstack share network show <NETWORK>
+        ```
+
+        Here, `<NETWORK>` is the name or ID of a file storage network that exists in your project.
+
+    </tabpanel>
+    <tabpanel>
+
+   Run the command:
+
+    ```bash
+    openstack share network create --neutron-net-id <NETWORK_ID> --neutron-subnet-id <SUBNET_ID> --name <NETWORK_NAME>
+    ```
+
+    Here:
+
+    - `<NETWORK_ID>` — the ID of a private network that exists in your project.
+    - `<SUBNET_ID>` — the ID of its subnet.
+    - `<NETWORK_NAME>` — a name for the file storage network that will be created.
+
+    Write down the name or ID of the created network.
+
+    </tabpanel>
+    </tabs>
+
+1. Create a file storage using the command:
+
+    ```bash
+    openstack share create --name <STORAGE_NAME> --share-network <NETWORK> <PROTOCOL> <SIZE> 
+    ```
+
+    Here:
+
+      - `<STORAGE_NAME>` — a name for the file storage that will be created.
+      - `<NETWORK>` — the name or ID of the network selected or created in the previous step.
+      - `<PROTOCOL>` — the access protocol. To access the storage from Windows, specify the CIFS protocol, from Linux — NFS.
+      - `<SIZE>` — the required file storage size in GB. Must be within the quota, not less than 10 GB and not more than 10000 GB.
 
 </tabpanel>
 </tabs>
@@ -112,13 +175,13 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
     The command to connect the storage looks like this:
 
     ```bash
-    mount <Mount point> <Disk name>:
+    mount <MOUNT_POINT> <DISK_NAME>:
     ```
 
     Here:
 
-    - `<Mount point>` — the address of the file storage specified in its description.
-    - `<Disk name>` — the uppercase Latin letter not used as the name of other disks.
+    - `<MOUNT_POINT>` — the address of the file storage specified in its description.
+    - `<DISK_NAME>` — the uppercase Latin letter not used as the name of other disks.
 
 </tabpanel>
 <tabpanel>
@@ -128,13 +191,13 @@ To connect the file storage, run the command specified in its [properties](#view
 The command to connect the storage looks like this:
 
 ```bash
-net use <Disk name>: <Mount point>
+net use <DISK_NAME>: <MOUNT_POINT>
 ```
 
 Here:
 
-- `<Mount point>` — the address of the file storage specified in its description.
-- `<Disk name>` — the uppercase Latin letter not used as the name of other disks.
+- `<MOUNT_POINT>` — the address of the file storage specified in its description.
+- `<DISK_NAME>` — the uppercase Latin letter not used as the name of other disks.
 
 </tabpanel>
 </tabs>
@@ -163,19 +226,19 @@ The instructions are given for Ubuntu. For information about connecting to other
 2. Create a directory to mount the storage:
 
     ```bash
-    mkdir <Directory name>
+    mkdir <DIRECTORY_NAME>
     ```
 
 3. Use the command specified in [properties](#viewing_a_list_of_file_storages) of the file storage:
 
     ```bash
-    mount -t nfs <Mount point> ./<Directory name>
+    mount -t nfs <MOUNT_POINT> ./<DIRECTORY_NAME>
     ```
 
     Here:
 
-    - `<Mount point>` — the address of the file storage specified in its description.
-    - `<Directory name>` — the name of the directory created earlier.
+    - `<MOUNT_POINT>` — the address of the file storage specified in its description.
+    - `<DIRECTORY_NAME>` — the name of the directory created earlier.
 
 </tabpanel>
 <tabpanel>
@@ -189,19 +252,19 @@ The instructions are given for Ubuntu. For information about connecting to other
 2. Create a directory to mount the storage:
 
     ```bash
-    mkdir <Directory name>
+    mkdir <DIRECTORY_NAME>
     ```
 
 3. Use the command specified in the [properties](#viewing_a_list_of_file_storages) of the file storage:
 
     ```bash
-    sudo mount -o user=,password= -t cifs <Mount point> ./<Directory name>
+    sudo mount -o user=,password= -t cifs <MOUNT_POINT> ./<DIRECTORY_NAME>
     ```
 
     Here:
 
-    - `<Mount point>` — the address of the file storage specified in its description.
-    - `<Directory name>` — the name of the directory created earlier.
+    - `<MOUNT_POINT>` — the address of the file storage specified in its description.
+    - `<DIRECTORY_NAME>` — the name of the directory created earlier.
 
 </tabpanel>
 </tabs>
@@ -222,9 +285,9 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
@@ -252,15 +315,17 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
     ```bash
-    openstack share show <storage name or ID>
+    openstack share show <STORAGE>
     ```
+
+    Here, `<STORAGE>` is the name or ID of a file storage.
 
 </tabpanel>
 </tabs>
@@ -283,15 +348,20 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
     ```bash
-    openstack share extend <storage name or ID> <new size>
+    openstack share extend <STORAGE> <SIZE>
     ```
+
+    Here:
+
+    - `<STORAGE>` — the name or ID of a file storage.
+    - `<SIZE>` — a new size for the file storage, in GB.
 
 </tabpanel>
 </tabs>
@@ -321,15 +391,20 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
     ```bash
-    openstack share snapshot create --name <snapshot name> <storage name or ID>
+    openstack share snapshot create --name <SNAPSHOT_NAME> <STORAGE>
     ```
+
+    Here:
+
+    - `<SNAPSHOT_NAME>` — a name for the file storage snapshot that will be created.
+    - `<STORAGE>` — the name or ID of a file storage.
 
 </tabpanel>
 </tabs>
@@ -351,15 +426,17 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
     ```bash
-    openstack share snapshot list --share <storage name or ID>
+    openstack share snapshot list --share <STORAGE>
     ```
+
+    Here, `<STORAGE>` is the name or ID of a file storage.
 
 </tabpanel>
 </tabs>
@@ -383,15 +460,25 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
     ```bash
-    openstack share create --snapshot-id <snapshot ID> --share-type <share type> --name <storage name or ID> <protocol> <size>
+    openstack share create --snapshot-id <SNAPSHOT_ID> --share-type <STORAGE_TYPE> --name <STORAGE_NAME> <PROTOCOL> <SIZE>
     ```
+
+    Here,
+
+    - `<SNAPSHOT_ID>` — the ID of the snapshot on which a new file storage will be created.
+    - `<STORAGE_TYPE>` — the type of the file storage that will be created.
+    - `<STORAGE_NAME>` — a name for the file storage that will be created.
+    - `<PROTOCOL>` — the protocol for accessing the storage from the operating system: CIFS or NFS.
+    - `<SIZE>` — the size of the file storage in GB.
+
+    The `<STORAGE_TYPE>`, `<PROTOCOL>`, and `<SIZE>` values ​​must match the corresponding snapshot characteristics.
 
 </tabpanel>
 </tabs>
@@ -415,15 +502,17 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. Run the command:
 
     ```bash
-    openstack share snapshot delete <snapshot name or ID>
+    openstack share snapshot delete <SNAPSHOT>
     ```
+
+    Here, `<SNAPSHOT>` — the name or ID of the snapshot to be deleted.
 
 </tabpanel>
 </tabs>
@@ -449,23 +538,29 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+2. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 3. Add an access rule using the command:
 
     ```bash
-    openstack share access create <storage name or ID> ip <network address in CIDR format> --access-level <access mode>
+    openstack share access create <STORAGE> ip <NETWORK_IP> --access-level <ACCESS_MODE>
     ```
 
-    The `<access mode>` argument can take values `rw` (read and write) and `ro` (read only).
+    Here:
+
+    - `<STORAGE>` — the name or ID of a file storage.
+    - `<NETWORK_IP>` — a network address in the CIDR format.
+    - `<ACCESS_MODE>` — the argument that can take values `rw` (read and write) and `ro` (read only).
 
 4. Check that the rule was created successfully by requesting the list of access rules:
 
     ```bash
-    openstack share access list <storage name or ID>
+    openstack share access list <STORAGE>
     ```
+
+    Here, `<STORAGE>` is the name or ID of a file storage.
 
 </tabpanel>
 </tabs>
@@ -490,21 +585,28 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+2. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 3. Get the ID of the required rule by requesting the list of access rules:
 
     ```bash
-    openstack share access list <storage name or ID>
+    openstack share access list <STORAGE>
     ```
+
+    Here, `<STORAGE>` is the name or ID of a file storage.
 
 4. Delete the access rule using the command:
 
     ```bash
-    openstack share access delete <storage name or ID> <access rule ID>
+    openstack share access delete <STORAGE> <RULE_ID>
     ```
+
+    Here:
+
+    - `<STORAGE>` — the name or ID of a file storage.
+    - `<RULE_ID>` — the ID of the access rule to be deleted.
 
 </tabpanel>
 </tabs>
@@ -531,21 +633,25 @@ Simultaneously with the file storage, the network created for it will be deleted
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
+1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
 1. To delete the file storage, run the command:
 
     ```bash
-    openstack share delete <storage name or ID>
+    openstack share delete <STORAGE>
     ```
+
+    Here, `<STORAGE>` is the name or ID of the file storage to be deleted.
 
 1. To delete the file storage network, run the command:
 
     ```bash
-    openstack share network delete <storage network ID>
+    openstack share network delete <NETWORK_ID>
     ```
+
+    Here, `<NETWORK_ID>` is the ID of the file storage network to be deleted.
 
 </tabpanel>
 </tabs>

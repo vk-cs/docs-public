@@ -5,13 +5,14 @@
 - записывать данные в подключенные файловые хранилища и читать из них данные;
 - создавать снимки текущего состояния файлового хранилища.
 
-Файловые хранилища создаются в личном кабинете VK Cloud. Подключение файловых хранилищ, запись и чтение данных доступны только на виртуальных машинах VK Cloud. Остальные функции работы с хранилищами доступны в личном кабинете VK Cloud или в клиенте OpenStack с помощью команд `openstack share`.
+Файловые хранилища создаются в личном кабинете VK Cloud или в OpenStack CLI. Подключение файловых хранилищ, запись и чтение данных доступны только на виртуальных машинах VK Cloud. Остальные функции работы с хранилищами доступны в личном кабинете VK Cloud или в клиенте OpenStack с помощью команд `openstack share`.
 
 ## Создание файлового хранилища
 
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -39,6 +40,68 @@
    </info>
 
 1. Нажмите **Добавить файловый сервер**.
+
+</tabpanel>
+<tabpanel>
+
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Выберите существующую сеть файлового хранилища или создайте новую.
+
+    <tabs>
+    <tablist>
+    <tab>Выбор существующей сети</tab>
+    <tab>Создание новой сети</tab>
+    </tablist>
+    <tabpanel>
+
+    1. Получите список существующих сетей файлового хранилища, выполнив команду:
+
+        ```bash
+        openstack share network list
+        ```
+
+        Запишите имя или ID нужной сети.
+    1. (Опционально) Просмотрите свойства выбранной сети, выполнив команду:
+
+        ```bash
+        openstack share network show <СЕТЬ>
+        ```
+
+        Здесь `<СЕТЬ>` — имя или ID существующей в проекте сети файлового хранилища.
+
+    </tabpanel>
+    <tabpanel>
+
+    Выполните команду:
+
+    ```bash
+    openstack share network create --neutron-net-id <ID_СЕТИ> --neutron-subnet-id <ID_ПОДСЕТИ> --name <ИМЯ_СЕТИ>
+    ```
+
+    Здесь:
+
+    - `<ID_СЕТИ>` — ID существующей в проекте приватной сети.
+    - `<ID_ПОДСЕТИ>` — ID ее подсети.
+    - `<ИМЯ_СЕТИ>` — имя для создаваемой сети файлового хранилища.
+
+    Запишите имя или ID созданной сети.
+
+    </tabpanel>
+    </tabs>
+
+1. Создайте файловое хранилище с помощью команды:
+
+    ```bash
+    openstack share create --name <ИМЯ_ХРАНИЛИЩА> --share-network <СЕТЬ> <ПРОТОКОЛ> <РАЗМЕР> 
+    ```
+
+    Здесь:
+
+      - `<ИМЯ_ХРАНИЛИЩА>` — имя для создаваемого файлового хранилища.
+      - `<СЕТЬ>` — имя или ID сети, выбранной или созданной на предыдущем шаге.
+      - `<ПРОТОКОЛ>` — протокол доступа. Для доступа к хранилищу из ОС Windows укажите протокол CIFS, из Linux — NFS.
+      - `<РАЗМЕР>` — желаемый размер файлового хранилища в ГБ. Должен быть в пределах квоты, не меньше 10 ГБ и не больше 10000 ГБ.
 
 </tabpanel>
 </tabs>
@@ -110,13 +173,13 @@
     Команда для подключения хранилища выглядит так:
 
     ```bash
-    mount <Точка подключения> <Имя диска>:
+    mount <ТОЧКА_ПОДКЛЮЧЕНИЯ> <ИМЯ_ДИСКА>:
     ```
 
     Здесь:
 
-    - `<Точка подключения>` — адрес файлового хранилища, указанный в его описании;
-    - `<Имя диска>` — заглавная латинская буква, не использованная в имени других дисков.
+    - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
+    - `<ИМЯ_ДИСКА>` — заглавная латинская буква, не использованная в имени других дисков.
 
 </tabpanel>
 <tabpanel>
@@ -126,13 +189,13 @@
 Команда для подключения хранилища выглядит так:
 
 ```bash
-net use <Имя диска>: <Точка подключения>
+net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 ```
 
 Здесь:
 
-- `<Точка подключения>` — адрес файлового хранилища, указанный в его описании;
-- `<Имя диска>` — заглавная латинская буква, не использованная в имени других дисков.
+- `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
+- `<ИМЯ_ДИСКА>` — заглавная латинская буква, не использованная в имени других дисков.
 
 </tabpanel>
 </tabs>
@@ -161,19 +224,19 @@ net use <Имя диска>: <Точка подключения>
 2. Создайте директорию для монтирования хранилища:
 
     ```bash
-    mkdir <Имя директории>
+    mkdir <ИМЯ_ДИРЕКТОРИИ>
     ```
 
 3. Используйте команду, указанную в [свойствах](#prosmotr_informacii_o_faylovom_hranilishche) хранилища:
 
     ```bash
-    mount -t nfs <Точка подключения> ./<Имя директории>
+    mount -t nfs <ТОЧКА_ПОДКЛЮЧЕНИЯ> ./<ИМЯ_ДИРЕКТОРИИ>
     ```
 
     Здесь:
 
-    - `<Точка подключения>` — адрес файлового хранилища, указанный в его описании;
-    - `<Имя директории>` — имя директории, созданной ранее.
+    - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
+    - `<ИМЯ_ДИРЕКТОРИИ>` — имя директории, созданной ранее.
 
 </tabpanel>
 <tabpanel>
@@ -187,19 +250,19 @@ net use <Имя диска>: <Точка подключения>
 2. Создайте директорию для монтирования хранилища:
 
     ```bash
-    mkdir <Имя директории>
+    mkdir <ИМЯ_ДИРЕКТОРИИ>
     ```
 
 3. Используйте команду, указанную в [свойствах](#prosmotr_informacii_o_faylovom_hranilishche) хранилища:
 
     ```bash
-    sudo mount -o user=,password= -t cifs <Точка подключения> ./<Имя директории>
+    sudo mount -o user=,password= -t cifs <ТОЧКА_ПОДКЛЮЧЕНИЯ> ./<ИМЯ_ДИРЕКТОРИИ>
     ```
 
     Здесь:
 
-    - `<Точка подключения>` — адрес файлового хранилища, указанный в его описании;
-    - `<Имя директории>` — имя директории, созданной ранее.
+    - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
+    - `<ИМЯ_ДИРЕКТОРИИ>` — имя директории, созданной ранее.
 
 </tabpanel>
 </tabs>
@@ -221,7 +284,7 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
@@ -249,12 +312,14 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
-    openstack share show <имя или ID хранилища>
+    openstack share show <ХРАНИЛИЩЕ>
     ```
+
+    Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
 </tabpanel>
 </tabs>
@@ -278,12 +343,17 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
-    openstack share extend <имя или ID хранилища> <новый размер>
+    openstack share extend <ХРАНИЛИЩЕ> <РАЗМЕР>
     ```
+
+    Здесь:
+
+    - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
+    - `<РАЗМЕР>` — новый размер файлового хранилища в ГБ.
 
 </tabpanel>
 </tabs>
@@ -314,12 +384,16 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
-    openstack share snapshot create --name <имя снимка> <имя или ID хранилища>
+    openstack share snapshot create --name <ИМЯ_СНИМКА> <ХРАНИЛИЩЕ>
     ```
+   Здесь:
+
+    - `<ИМЯ_СНИМКА>` — имя для создаваемого снимка файлового хранилища.
+    - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
 </tabpanel>
 </tabs>
@@ -342,12 +416,14 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
-    openstack share snapshot list --share <имя или ID хранилища>
+    openstack share snapshot list --share <ХРАНИЛИЩЕ>
     ```
+
+   Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
 </tabpanel>
 </tabs>
@@ -372,14 +448,22 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
-    openstack share create --snapshot-id <ID снимка> --share-type <тип хранилища> --name <имя хранилища> <протокол> <размер>
+    openstack share create --snapshot-id <ID_СНИМКА> --share-type <ТИП_ХРАНИЛИЩА> --name <ИМЯ_ХРАНИЛИЩА> <ПРОТОКОЛ> <РАЗМЕР>
     ```
 
-    Значения `<тип хранилища>`, `<протокол>` и `<размер>` должны совпадать с соответствующими характеристиками снимка.
+    Здесь:
+
+    - `<ID_СНИМКА>` — ID снимка, на основе которого будет создано новое файловое хранилище.
+    - `<ТИП_ХРАНИЛИЩА>` — тип создаваемого файлового хранилища.
+    - `<ИМЯ_ХРАНИЛИЩА>` — имя для создаваемого файлового хранилища.
+    - `<ПРОТОКОЛ>` — протокол для доступа к хранилищу из операционной системы: CIFS или NFS.
+    - `<РАЗМЕР>` — размер файлового хранилища в ГБ.
+
+    Значения `<ТИП_ХРАНИЛИЩА>`, `<ПРОТОКОЛ>` и `<РАЗМЕР>` должны совпадать с соответствующими характеристиками снимка.
 
 </tabpanel>
 </tabs>
@@ -404,12 +488,14 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
     ```bash
-    openstack share snapshot delete <ID или имя снимка>
+    openstack share snapshot delete <СНИМОК>
     ```
+
+    Здесь `<СНИМОК>` — имя или ID снимка, который нужно удалить.
 
 </tabpanel>
 </tabs>
@@ -436,20 +522,26 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Добавьте правило доступа с помощью команды:
 
     ```bash
-    openstack share access create <имя или ID хранилища> ip <адрес сети в формате CIDR> --access-level <режим доступа>
+    openstack share access create <ХРАНИЛИЩЕ> ip <IP_СЕТИ> --access-level <РЕЖИМ_ДОСТУПА>
     ```
 
-    Аргумент `<режим доступа>` может принимать значения `rw` (чтение и запись) или `ro` (только чтение).
+    Здесь:
+
+    - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
+    - `<IP_СЕТИ>` — адрес сети файлового хранилища в формате CIDR.
+    - `<РЕЖИМ_ДОСТУПА>` — аргумент, который принимает значения `rw` (чтение и запись) или `ro` (только чтение).
 
 1. Проверьте, что правило создано успешно, запросив список правил доступа:
 
     ```bash
-    openstack share access list <имя или ID хранилища>
+    openstack share access list <ХРАНИЛИЩЕ>
     ```
+
+    Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
 </tabpanel>
 </tabs>
@@ -475,17 +567,25 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Получите ID нужного правила, запросив список правил доступа:
 
     ```bash
-    openstack share access list <имя или ID хранилища>
+    openstack share access list <ХРАНИЛИЩЕ>
     ```
+
+    Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
+
 1. Удалите правило доступа с помощью команды:
 
     ```bash
-    openstack share access delete <имя или ID хранилища> <ID правила доступа>
+    openstack share access delete <ХРАНИЛИЩЕ> <ID_ПРАВИЛА>
     ```
+
+    Здесь:
+
+    - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
+    - `<ID_ПРАВИЛА>` — ID правила доступа, которое нужно удалить.
 
 </tabpanel>
 </tabs>
@@ -513,18 +613,22 @@ net use <Имя диска>: <Точка подключения>
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Чтобы удалить файловое хранилище, выполните команду:
 
     ```bash
-    openstack share delete <имя или ID хранилища>
+    openstack share delete <ХРАНИЛИЩЕ>
     ```
+
+    Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища, которое нужно удалить.
 
 1. Чтобы удалить сеть файлового хранилища, выполните команду:
 
     ```bash
-    openstack share network delete <ID сети хранилища>
+    openstack share network delete <ID_СЕТИ>
     ```
+
+    Здесь `<ID_СЕТИ>` — ID сети файлового хранилища, которую нужно удалить.
 
 </tabpanel>
 </tabs>

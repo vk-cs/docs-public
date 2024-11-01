@@ -60,7 +60,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 1. Install packages to work with specific OpenStack services:
 
    ```bash
-   pip install python-<service name>client
+   pip install python-<SERVICE_NAME>client
    ```
 
    Service names:
@@ -76,8 +76,16 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 2. Install the Shared File System API client (Manila CLI) using the command:
 
    ```bash
-   pip install "python-manilaclient==4.1.3"
+   pip install "python-manilaclient==4.9.1"
    ```
+
+   <info>
+
+   The recommended versions of `python-manilaclient` are 4.9.1 or higher. If you need an older version, use 4.4.2.
+
+   Using other versions of `python-manilaclient` may cause the `openstack share network` commands to return an error.
+
+   </info>
 
 ## 3. Complete authentication
 
@@ -85,7 +93,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
 3. Select a project.
 4. On the **Project settings** page, [go to](https://msk.cloud.vk.com/app/project/keys/) the **API access** tab.
-5. Click **Download openrc version 3**. The `<project name>-openrc.sh` file will be uploaded.
+5. Click **Download openrc version 3**. The `<PROJECT_NAME>-openrc.sh` file will be uploaded.
 6. Specify the authentication credentials in the environment variables.
 
    <tabs>
@@ -99,7 +107,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
    1. Run the script:
 
       ```bash
-      source <project name>-openrc.sh
+      source <PROJECT_NAME>-openrc.sh
       ```
 
    2. Enter the password of the project user.
@@ -107,7 +115,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
    </tabpanel>
    <tabpanel>
 
-   1. Copy the parameter values without quotes from the `<project name>-openrc.sh` file and run the commands:
+   1. Copy the parameter values without quotes from the `<PROJECT_NAME>-openrc.sh` file and run the commands:
 
       ```powershell
       set OS_INTERFACE=<OS_INTERFACE>
@@ -122,13 +130,15 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
    2. Specify the password by running the command:
 
       ```powershell
-      set OS_PASSWORD=<project user password>
+      set OS_PASSWORD=<PASSWORD>
       ```
+
+      Here, `<PASSWORD>` is the project user password.
 
    </tabpanel>
    <tabpanel>
 
-   1. Copy the data from the `<project name>-openrc.sh` file and run the commands:
+   1. Copy the data from the `<PROJECT_NAME>-openrc.sh` file and run the commands:
 
       ```powershell
       $env:OS_INTERFACE = "<OS_INTERFACE>"
@@ -143,8 +153,10 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
    2. Specify the password by running the command:
 
       ```powershell
-      $env:OS_PASSWORD = "<project user password>"
+      $env:OS_PASSWORD = "<PASSWORD>"
       ```
+
+      Here, `<PASSWORD>` is the project user password.
 
    </tabpanel>
    </tabs>
