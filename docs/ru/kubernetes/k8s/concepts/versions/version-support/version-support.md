@@ -108,58 +108,58 @@
 |1.27.x–1.29.х
 
 |Настройки масштабирования групп узлов
-|✓
-|✓
-|✓
-|✓
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Инвалидация ключевой пары
-|✓
-|✓
-|–
-|–
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |Изменение размера диска Prometheus
-|✓
-|✓
-|✓
-|✓
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Изменение типа виртуальной машины Master
-|✓
-|✓
-|✓
-|✓
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Обновление версии кластера
-|✓
-|✓
-|✓
-|✓
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Метки и ограничения
-|✓
-|✓
-|✓
-|✓
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Узлы кластера на AlmaLinux
-|–
-|✓
-|✓
-|✓
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Интеграция с IAM облака VK Cloud
-|–
-|–
-|✓
-|✓
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Автоматическое масштабирование master-узлов кластера
-|–
-|–
-|–
-|✓
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 
 ## История версий Kubernetes
@@ -172,11 +172,11 @@
 
 |**Kubernetes 1.29.7**
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
-| —
+| ![](/en/assets/no.svg "inline")
 
 |**Kubernetes 1.28.9**
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
-| —
+| ![](/en/assets/no.svg "inline")
 
 |**Kubernetes 1.27.6**
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
@@ -192,7 +192,7 @@
 
 |**Kubernetes 1.25.1**
 |[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
-| —
+| ![](/en/assets/no.svg "inline")
 
 |**Kubernetes 1.24.9**
 |[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)

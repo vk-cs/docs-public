@@ -22,8 +22,8 @@
 
 </info>
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 

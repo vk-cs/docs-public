@@ -38,7 +38,7 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 
 | Контейнер | Кодек | Content-type           |
 | --------- | ----- | ---------------------- |
-| WAV       | —     | audio/wave             |
+| WAV       | ![](/en/assets/no.svg "inline")     | audio/wave             |
 | OGG       | Opus  | audio/ogg; codecs=opus |
 
 ### Ограничения
@@ -140,7 +140,7 @@ curl --request POST \
 
 | Контейнер | Кодек | Content-type          |
 | --------- | ----- | --------------------- |
-| WAV       | —     | audio/wave            |
+| WAV       | ![](/en/assets/no.svg "inline")     | audio/wave            |
 | OGG       | Opus  | audio/ogg codecs=opus |
 
 ## Ограничения

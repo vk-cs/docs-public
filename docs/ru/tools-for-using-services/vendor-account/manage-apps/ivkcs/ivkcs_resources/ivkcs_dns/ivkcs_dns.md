@@ -22,8 +22,8 @@
 
 </info>
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `domain`
@@ -32,16 +32,16 @@
 
 Значение должно быть `xaas.msk.vkcs.cloud`
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `ip`
 |
 IP-адрес хоста
 |string
-|Да
-|Нет
+| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
 |===
 {/caption}
 

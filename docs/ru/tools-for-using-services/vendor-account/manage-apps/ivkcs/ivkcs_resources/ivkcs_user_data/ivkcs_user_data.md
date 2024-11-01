@@ -23,97 +23,97 @@
 |
 Идентификатор развертывания сервиса
 |string
-|Да
-|—
-|Нет
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `hosts`
 |
 Список имен хостов для инициализации агента
 |list, элементы списка — string
-|Да
-|—
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `target_os`
 |
 Целевая ОС (подробнее — в разделе {linkto(#target_os)[text=%text]})
 |string
-|Да
-|—
-|Нет
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `ssh_private_key`
 |
 Закрытый ключ в формате `RSA` для идентификации хоста. Используется вместе с аргументом `ssh_public_key`
 |string
-|Нет
-|—
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `ssh_public_key`
 |
 Открытый ключ в формате `RSA` для идентификации хоста. Используется вместе с аргументом `ssh_private_key`
 |string
-|Нет
-|—
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `ssh_authorized_keys`
 |
 Ключи для аутентификации пользователя по SSH. Прописываются пользователю по умолчанию
 |list, элементы списка — string
-|Нет
-|—
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `ca_certificates`
 |
 Список корневых сертификатов, которые должны быть установлены в ОС как доверенные
 |list, элементы списка — string
-|Нет
-|—
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `agent_install`
 |
 Определяет, устанавливать агент или нет
 |boolean
-|Нет
+| ![](/en/assets/no.svg "inline")
 |`true`
-|Нет
+| ![](/en/assets/no.svg "inline")
 
 |
 `agent_memory_limit`
 |
 Ограничение оперативной памяти, используемой для агента, МБ
 |integer
-|Нет
+| ![](/en/assets/no.svg "inline")
 |`512`
-|Нет
+| ![](/en/assets/no.svg "inline")
 
 |
 `packages`
 |
 Определяет, какие пакеты должны быть установлены (подробнее — в разделе {linkto(#packages)[text=%text]})
 |set
-|Нет
-|—
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |`user_script`
 |Cкрипты, запускаемые через Cloud-init
 |list
-|Нет
-|—
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 |===
 {/caption}
 
@@ -255,13 +255,13 @@ resource "vkcs_compute_instance" "single" {
 `name`
 |Имя пакета
 |string
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |
 `version`
 |Версия пакета
 |string
-|Да
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 
@@ -326,7 +326,7 @@ resource "ivkcs_user_data" "user_data" {
 |`name`
 |Имя скрипта. Выполнение скриптов выполняется в алфавитном порядке
 |string
-| —
+| ![](/en/assets/no.svg "inline")
 
 |`content_type`
 |Тип скрипта. Определяет, когда скрипт будет выполнен. Возможные значения:
@@ -335,12 +335,12 @@ resource "ivkcs_user_data" "user_data" {
   - `text/x-shellscript-per-instance`;
   - `text/x-shellscript-per-once`
 |string
-| —
+| ![](/en/assets/no.svg "inline")
 
 |`content`
 |Тело скрипта
 |string
-| —
+| ![](/en/assets/no.svg "inline")
 |===
 {/caption}
 

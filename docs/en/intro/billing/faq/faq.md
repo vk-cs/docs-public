@@ -340,7 +340,7 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 
 | Phone number
 | To link a foreign phone number to your account, please contact [technical support](mailto:support@mcs.mail.ru)
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Payment for services
 | Currency of payments and other payment terms are discussed at the time of contract execution
