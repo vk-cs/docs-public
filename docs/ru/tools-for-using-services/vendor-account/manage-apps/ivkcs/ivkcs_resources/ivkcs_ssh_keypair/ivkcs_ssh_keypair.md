@@ -23,9 +23,9 @@
 
 </info>
 |integer
-|Нет
+| ![](/en/assets/no.svg "inline")
 |2048
-|Да
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 
