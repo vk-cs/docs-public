@@ -26,21 +26,39 @@ Request parameters are passed in JSON format in the request body:
 
 | Parameter      | Type   | Required | Description                                               |
 | -------------- | ------ | ---------| --------------------------------------------------------- |
-| file           | string | Yes      | An array of files. The file names should be different     |
-| meta           | object | Yes      | Request body                                              |
+| file           | string | ![](/ru/assets/check.svg "inline")      | An array of files. The file names should be different     |
+| meta           | object | ![](/ru/assets/check.svg "inline")      | Request body                                              |
 
 The remaining parameters are passed to `name="meta"`:
 
-| Parameter      | Type   | Required | Description                                               |
-| -------------- | ------ | ---------| --------------------------------------------------------- |
-| images        | `[]image_meta`  | Yes      | Metadata of transmitted images                    |
-| lang          | string          | No       | The expected language of the text in the photo: `rus` — Russian, `eng` — English. When specifying a parameter, the recognition accuracy increases |
+[cols="1,1,1,2", options="header"]
+|===
+| Parameter
+| Type
+| Required
+| Description
+
+| images
+| `[]image_meta`
+| ![](/ru/assets/check.svg "inline")
+| Metadata of transmitted images
+
+| lang
+| string
+| ![](/ru/assets/no.svg "inline")
+| The expected language of the text in the photo:
+
+* `rus` — Russian
+* `eng` — English
+
+When specifying a parameter, the recognition accuracy increases
+|===
 
 Parameters of `image_meta`:
 
 | Parameter      | Type   | Required | Description                                               |
 | -------------- | ------ | ---------| --------------------------------------------------------- |
-|   name         | string | Yes      | File names for matching files in the request and response |
+|   name         | string | ![](/ru/assets/check.svg "inline")      | File names for matching files in the request and response |
 
 <warn>
 
@@ -85,17 +103,17 @@ Parameters of `objects`:
 
 | Parameter     | Type     | Required | Description                                                 |
 | ------------- | -------- |--------- | ----------------------------------------------------------- |
-| status        | int      | Yes      | The status code of the completed operation: `0` — successful, `1` — permanent error, `2` — temporary error |
-| name          | string   | Yes      | The file name for matching files in the request and response |
-| words         | array    | Yes      | Array of recognized words in a string                        |
+| status        | int      | ![](/ru/assets/check.svg "inline")      | The status code of the completed operation: `0` — successful, `1` — permanent error, `2` — temporary error |
+| name          | string   | ![](/ru/assets/check.svg "inline")      | The file name for matching files in the request and response |
+| words         | array    | ![](/ru/assets/check.svg "inline")      | Array of recognized words in a string                        |
 
 Parameters of `words`:
 
 | Parameter     | Type     | Required | Description                                                 |
 | ------------- | -------- |--------- | ----------------------------------------------------------- |
-| prob          | float    | Yes      | String Recognition Confidence                                |
-| coord         | [][]int64| Yes      | Coordinates of the word — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] |
-| text          | string   | Yes      | Recognized response word                                     |
+| prob          | float    | ![](/ru/assets/check.svg "inline")      | String Recognition Confidence                                |
+| coord         | [][]int64| ![](/ru/assets/check.svg "inline")      | Coordinates of the word — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] |
+| text          | string   | ![](/ru/assets/check.svg "inline")      | Recognized response word                                     |
 
 ## Response example
 

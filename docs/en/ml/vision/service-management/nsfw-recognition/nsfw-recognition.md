@@ -23,10 +23,10 @@ Request parameters are passed in JSON format in the request body:
 
 | Parameter      | Type   | Required       | Description                                              |
 | -------------- | ------ | -------------- | -------------------------------------------------------- |
-| file           | string | Yes            | An array of files. The file names should be different    |
-| meta           | object | Yes            | Request body                                             |
-|  images        | array  | Yes            | Metadata of transmitted images                           |
-|   name         | string | Yes            | File names for matching files in the request and response|
+| file           | string | ![](/ru/assets/check.svg "inline")            | An array of files. The file names should be different    |
+| meta           | object | ![](/ru/assets/check.svg "inline")            | Request body                                             |
+|  images        | array  | ![](/ru/assets/check.svg "inline")            | Metadata of transmitted images                           |
+|   name         | string | ![](/ru/assets/check.svg "inline")            | File names for matching files in the request and response|
 
 <warn>
 
@@ -69,12 +69,37 @@ Possible `status` values:
 
 ### objects
 
-| Parameter     | Type     | Required | Description                                                 |
-| ------------- | -------- |--------------- | -------------------------------------------------------- |
-| status        | int      | Yes             | The status code of the completed operation: `0` — successful, `1` — permanent error, `2` — temporary error |
-| error         | string   | Yes             | Text description of the error                               |
-| name          | string   | Yes             | The file name for matching files in the request and response|
-| safe          | number   | Yes             | The degree of confidence that there is no content in the picture is 18+; the value in the segment `[0;1]` |
+[cols="1,1,1,2", options="header"]
+|===
+| Parameter
+| Type
+| Required
+| Description
+
+| status
+| int
+| ![](/ru/assets/check.svg "inline")
+| The status code of the completed operation:
+
+* `0` — successful
+* `1` — permanent error
+* `2` — temporary error
+
+| error
+| string
+| ![](/ru/assets/check.svg "inline")
+| Text description of the error
+
+| name
+| string
+| ![](/ru/assets/check.svg "inline")
+| The file name for matching files in the request and response
+
+| safe
+| number
+| ![](/ru/assets/check.svg "inline")
+| The degree of confidence that there is no content in the picture is 18+; the value in the segment `[0;1]`
+|===
 
 ## Response example
 

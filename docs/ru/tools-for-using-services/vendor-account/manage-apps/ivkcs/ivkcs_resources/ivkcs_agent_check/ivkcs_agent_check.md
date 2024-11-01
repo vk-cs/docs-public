@@ -15,15 +15,15 @@
 `uuid`
 |Идентификатор развертывания сервиса
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `hosts`
 |Список имен хостов
 |list, элементы списка — string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 
@@ -74,8 +74,8 @@ resource "ivkcs_agent_check" "check1" {
 |
 IP-адрес или DNS-имя хоста
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `period`
@@ -87,16 +87,16 @@ IP-адрес или DNS-имя хоста
 * `1h`
 
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `port`
 |
 Проверяемый порт
 |integer
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 
@@ -124,8 +124,8 @@ IP-адрес или DNS-имя хоста
 * `https`
 
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `method`
@@ -139,24 +139,24 @@ IP-адрес или DNS-имя хоста
 * `OPTIONS`
 
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `host`
 |
 IP-адрес или DNS-имя хоста
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `path`
 |
 Путь запроса (конечная точка (endpoint) метода)
 |string
-|Нет
-|Да
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `period`
@@ -168,24 +168,24 @@ IP-адрес или DNS-имя хоста
 * `1h`
 
 |string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `port`
 |
 Проверяемый порт
 |integer
-|Нет
-|Да
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `http_codes`
 |
 Ожидаемые коды ответа
 |list, элементы списка — integer
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `url`
@@ -197,8 +197,8 @@ IP-адрес или DNS-имя хоста
 * Путь запроса (конечная точка (endpoint) метода)
 
 |string
-|Нет
-|Да
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 
@@ -233,8 +233,8 @@ IP-адрес или DNS-имя хоста
 
 |
 string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `options`
@@ -242,8 +242,8 @@ string
 Параметры выполнения скрипта
 |
 set, аргументы списка — в таблице {linkto(../ivkcs_agent_exec/#tab_script_options)[text=Опции скрипта]}
-|Нет
-|Да
+| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `script`
@@ -251,7 +251,7 @@ set, аргументы списка — в таблице {linkto(../ivkcs_agen
 Тело скрипта
 |
 string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}

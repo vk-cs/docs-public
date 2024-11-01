@@ -20,34 +20,34 @@ Cloud Storage обеспечивает поддержку операций со�
 
 |Функция|Поддержка|Примечание|
 |--- |--- |--- |
-|Bucket Create, Read, Update, Delete|Да||
-|Object Create, Read, Update, Delete|Да||
-|Multipart Uploads|Да||
-|Pre-Signed URLs|Да|Поддерживаются оба типа подписи v2 и v4|
-|Bucket ACLs|Да||
-|Object ACLs|Да||
-|Identity and Access Management (IAM)|Нет||
-|Security Token Service (STS)|Нет||
-|Multi-factor Authentication|Нет||
-|Public Access Block|Нет||
-|Bucket Policies|Нет||
-|Object Policies|Нет||
-|Bucket Versioning|Нет||
-|Bucket Replication|Нет||
-|Bucket Notifications|Нет||
-|Bucket Tagging|Нет||
-|Object Tagging|Нет||
-|Request Payment|Нет||
-|Bucket Lifecycle|Да|Поддерживаются истечение срока действия объекта и удаление неполных составных загрузок. Политики жизненного цикла, основанные на маркировке объектов, не поддерживаются.|
-|Bucket Inventory|Нет||
-|Bucket Access Logging|Нет||
-|Bucket Metrics|Нет||
-|Bucket Analytics|Нет||
-|Bucket Accelerate|Нет||
-|Bucket Encryption Configuration|Нет||
-|Bucket Websites|Нет||
-|Object Torrent|Нет||
-|Object Lock|Нет||
+|Bucket Create, Read, Update, Delete| ![](/ru/assets/check.svg "inline")||
+|Object Create, Read, Update, Delete| ![](/ru/assets/check.svg "inline")||
+|Multipart Uploads| ![](/ru/assets/check.svg "inline")||
+|Pre-Signed URLs| ![](/ru/assets/check.svg "inline")|Поддерживаются оба типа подписи v2 и v4|
+|Bucket ACLs| ![](/ru/assets/check.svg "inline")||
+|Object ACLs| ![](/ru/assets/check.svg "inline")||
+|Identity and Access Management (IAM)| ![](/ru/assets/no.svg "inline")||
+|Security Token Service (STS)| ![](/ru/assets/no.svg "inline")||
+|Multi-factor Authentication| ![](/ru/assets/no.svg "inline")||
+|Public Access Block| ![](/ru/assets/no.svg "inline")||
+|Bucket Policies| ![](/ru/assets/no.svg "inline")||
+|Object Policies| ![](/ru/assets/no.svg "inline")||
+|Bucket Versioning| ![](/ru/assets/no.svg "inline")||
+|Bucket Replication| ![](/ru/assets/no.svg "inline")||
+|Bucket Notifications| ![](/ru/assets/no.svg "inline")||
+|Bucket Tagging| ![](/ru/assets/no.svg "inline")||
+|Object Tagging| ![](/ru/assets/no.svg "inline")||
+|Request Payment| ![](/ru/assets/no.svg "inline")||
+|Bucket Lifecycle| ![](/ru/assets/check.svg "inline")|Поддерживаются истечение срока действия объекта и удаление неполных составных загрузок.<br>Политики жизненного цикла, основанные на маркировке объектов, не поддерживаются.|
+|Bucket Inventory| ![](/ru/assets/no.svg "inline")||
+|Bucket Access Logging| ![](/ru/assets/no.svg "inline")||
+|Bucket Metrics| ![](/ru/assets/no.svg "inline")||
+|Bucket Analytics| ![](/ru/assets/no.svg "inline")||
+|Bucket Accelerate| ![](/ru/assets/no.svg "inline")||
+|Bucket Encryption Configuration| ![](/ru/assets/no.svg "inline")||
+|Bucket Websites| ![](/ru/assets/no.svg "inline")||
+|Object Torrent| ![](/ru/assets/no.svg "inline")||
+|Object Lock| ![](/ru/assets/no.svg "inline")||
 
 Запросы API для функций S3, которые в настоящее время не поддерживаются Cloud Storage, получат S3-совместимый ответ об ошибке `NotImplemented` в формате XML.
 
@@ -148,11 +148,11 @@ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 Эти общие заголовки также могут быть получены в большинстве ответов:
 
-|Название|Описание|
-|--- |--- |
-|Content-Length|Длина тела ответа в байтах|
-|Content-Type|Тип MIME тела запроса (например text/plain)|
-|Connection|Индикатор того, открыто или закрыто соединение с сервером|
-|Date|Дата и время ответа в формате всемирного координированного времени (UTC)|
-|Etag|Тег объекта, содержащий хеш MD5 объекта|
-|x-amz-request-id|Уникальный идентификатор запроса|
+|Название| Описание                                                             |
+|--- |--------------------------------------------------------------------------|
+|Content-Length| Длина тела ответа в байтах                                     |
+|Content-Type| Тип MIME тела запроса (например text/plain)                      |
+|Connection| Индикатор того, открыто или закрыто соединение с сервером          |
+|Date| Дата и время ответа в формате всемирного координированного времени (UTC) |
+|Etag| Тег объекта, содержащий хеш MD5 объекта                                  |
+|x-amz-request-id| Уникальный идентификатор запроса                             |

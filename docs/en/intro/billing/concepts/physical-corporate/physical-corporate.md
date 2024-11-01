@@ -167,7 +167,7 @@ EDM work is available only to organizations-residents of the Russian Federation 
 | Payment scheme | Prepayment | Prepayment or post-payment |
 | Type of contract | Public offer agreements | Public offer contracts or individual contract |
 | Recommended<br>payment method | The card linked to the project | Bank transfer |
-| Additional registration | — | Optional |
-| Connecting to EDM | — | Optional |
+| Additional registration | ![](/en/assets/no.svg "inline") | Optional |
+| Connecting to EDM | ![](/en/assets/no.svg "inline") | Optional |
 
-A dash (—) means that the option is unavailable or irrelevant.
+The ![](/en/assets/no.svg "inline") icon means that the option is unavailable or irrelevant.

@@ -15,22 +15,22 @@
 `uuid`
 |Идентификатор развертывания сервиса
 |string
-|Да
-|Нет
+| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |
 `hosts`
 |Список имен хостов для инициализации агента
 |list, элементы списка — string
-|Да
-|Да
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |
 `options`
 |Опции агента
 |set, аргументы списка — в {linkto(#tab_options)[text=таблице %number]}.
-|Нет
-|Нет
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 |===
 {/caption}
 

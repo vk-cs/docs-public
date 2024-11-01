@@ -12,7 +12,37 @@ The Cloud Storage API is designed to interact with the Amazon AWS S3 API. In mos
 
 Cloud Storage provides support for create, read, update, and delete operations for both buckets and objects, as well as the ability to define access control lists (ACLs). Some S3 features are not supported, as shown in the table below:
 
-<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="289"><tbody><tr><td height="19" style="width: 32.962%; background-color: rgb(239, 239, 239);" width="38.062283737024224%">Function</td><td style="width: 21.3418%; background-color: rgb(239, 239, 239);" width="29.41176470588235%">Support</td><td style="width: 45.443%; background-color: rgb(239, 239, 239);" width="32.52595155709343%">Note</td></tr><tr><td height="19" style="width: 32.962%;">Bucket Create, Read, Update, Delete</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Create, Read, Update, Delete</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Multipart Uploads</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Pre-Signed URLs</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;">Both v2 and v4 signature types are supported</td></tr><tr><td height="19" style="width: 32.962%;">Bucket ACLs</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object ACLs</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Identity and Access Management (IAM)</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Security Token Service (STS)</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Multi-factor Authentication</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Public Access Block</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Policies</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Policies</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Versioning</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Replication</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Notifications</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Tagging</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Tagging</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Request Payment</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Lifecycle</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;">Object expiration and removal of incomplete compound downloads are supported. Lifecycle policies based on tagging objects are not supported.</td></tr><tr><td height="19" style="width: 32.962%;">Bucket Inventory</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Access Logging</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Metrics</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Analytics</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Accelerate</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Encryption Configuration</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Websites</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Torrent</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Lock</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr></tbody></table>
+|Function|Support|Note|
+|--- |--- |--- |
+|Bucket Create, Read, Update, Delete| ![](/ru/assets/check.svg "inline")||
+|Object Create, Read, Update, Delete| ![](/ru/assets/check.svg "inline")||
+|Multipart Uploads| ![](/ru/assets/check.svg "inline")||
+|Pre-Signed URLs| ![](/ru/assets/check.svg "inline")|Both v2 and v4 signature types are supported|
+|Bucket ACLs| ![](/ru/assets/check.svg "inline")||
+|Object ACLs| ![](/ru/assets/check.svg "inline")||
+|Identity and Access Management (IAM)| ![](/ru/assets/no.svg "inline")||
+|Security Token Service (STS)| ![](/ru/assets/no.svg "inline")||
+|Multi-factor Authentication| ![](/ru/assets/no.svg "inline")||
+|Public Access Block| ![](/ru/assets/no.svg "inline")||
+|Bucket Policies| ![](/ru/assets/no.svg "inline")||
+|Object Policies| ![](/ru/assets/no.svg "inline")||
+|Bucket Versioning| ![](/ru/assets/no.svg "inline")||
+|Bucket Replication| ![](/ru/assets/no.svg "inline")||
+|Bucket Notifications| ![](/ru/assets/no.svg "inline")||
+|Bucket Tagging| ![](/ru/assets/no.svg "inline")||
+|Object Tagging| ![](/ru/assets/no.svg "inline")||
+|Request Payment| ![](/ru/assets/no.svg "inline")||
+|Bucket Lifecycle| ![](/ru/assets/check.svg "inline")|Object expiration and removal of incomplete compound downloads are supported.<br>Lifecycle policies based on tagging objects are not supported|
+|Bucket Inventory| ![](/ru/assets/no.svg "inline")||
+|Bucket Access Logging| ![](/ru/assets/no.svg "inline")||
+|Bucket Metrics| ![](/ru/assets/no.svg "inline")||
+|Bucket Analytics| ![](/ru/assets/no.svg "inline")||
+|Bucket Accelerate| ![](/ru/assets/no.svg "inline")||
+|Bucket Encryption Configuration| ![](/ru/assets/no.svg "inline")||
+|Bucket Websites| ![](/ru/assets/no.svg "inline")||
+|Object Torrent| ![](/ru/assets/no.svg "inline")||
+|Object Lock| ![](/ru/assets/no.svg "inline")||
+
 
 API requests for S3 functions that are not currently supported by VK Cloud will receive an S3-compliant NotImplemented error response in XML format.
 

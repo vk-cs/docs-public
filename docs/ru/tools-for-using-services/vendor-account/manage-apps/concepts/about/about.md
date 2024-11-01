@@ -97,20 +97,20 @@ SaaS-брокер обеспечивает взаимодействие конк
 |Image-based приложение
 
 |Числовой (integer, number)
-|&#10003;
-|&#10003;
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Строковый (string)
-|&#10003;
-|&#10003;
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Логический (boolean)
-|&#10003;
-|&#10003;
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Datasource
-|—
-|&#10003;
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 

@@ -60,26 +60,26 @@ SDN Sprut полностью совместима с Openstack Neutron API и и
 |Описание
 
 |Сеть
-|Да
+| ![](/ru/assets/check.svg "inline")
 .6+|[Миграция сетевой инфраструктуры](../iaas/)
 
 |Маршрутизатор
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |Плавающий IP-адрес
 |Плавающий IP-адрес нельзя перенести, нужно создать новый в SDN Sprut и назначить его ВМ
 
 |Виртуальная машина
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |Группа безопасности
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |VPN (IPsec)
-|Да
+| ![](/ru/assets/check.svg "inline")
 
 |Балансировщик нагрузки
-|Да
+| ![](/ru/assets/check.svg "inline")
 .4+|Миграция платформенных сервисов
 
 |Файловое хранилище (NFS)

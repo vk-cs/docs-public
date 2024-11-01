@@ -38,7 +38,7 @@ Answer example:
 
 | container | Codec | content-type          |
 | --------- | ----- | --------------------- |
-| WAV       | —     | audio/wave            |
+| WAV       | ![](/en/assets/no.svg "inline")     | audio/wave            |
 | ogg       | Opus  | audio/ogg codecs=opus |
 
 ### Restrictions
@@ -142,7 +142,7 @@ For the last chunk, you need to pass a GET-parameter with the value `last=1`.
 
 | Container | Codek | Content type          |
 | --------- | ----- | --------------------- |
-| WAV       | —     | audio/wave            |
+| WAV       | ![](/en/assets/no.svg "inline")     | audio/wave            |
 | ogg       | Opus  | audio/ogg codecs=opus |
 
 ## Restrictions
