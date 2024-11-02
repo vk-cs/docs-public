@@ -369,6 +369,11 @@
     "full": "Права в сервисе Cloud Audit",
     "text": "Права в сервисе Cloud Audit"
   },
+  "images-volumes": {
+    "number": null,
+    "full": "Диски и образы",
+    "text": "Диски и образы"
+  },
   "linking_phone_number": {
     "number": null,
     "full": "Linking a phone number",
@@ -543,6 +548,11 @@
     "number": null,
     "full": "Права для ролей сервиса Cloud Containers",
     "text": "Права для ролей сервиса Cloud Containers"
+  },
+  "no_quotas_limits": {
+    "number": null,
+    "full": "Лимиты без квот",
+    "text": "Лимиты без квот"
   },
   "xaas_vendor_roles": {
     "number": null,
