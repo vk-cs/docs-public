@@ -8,7 +8,7 @@ Various types of disks are used in the data storage system on the VK Cloud platf
 
 Read more in the article [Cloud Servers overview](../about#disks).
 
-Certain performance characteristics are guaranteed for each type of disk.
+Certain performance characteristics are guaranteed for each type of disk. Quotas and limits on the quantity and size of disks are given in the [Quotas and Limits](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes) article.
 
 <info>
 
@@ -362,8 +362,4 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 3. If, when all conditions are met, the test results do not match the specified values, [contact technical support](mailto:support@mcs.mail.ru).
 
-<warn>
-
-After testing is completed and the results are processed, delete the large test files to free up disk space.
-
-</warn>
+4. Delete the large test files to free up disk space after testing is completed and the results are processed. Quotas and limits on the quantity and size of disks are given in the [Quotas and Limits](/en/tools-for-using-services/account/concepts/quotasandlimits) article.

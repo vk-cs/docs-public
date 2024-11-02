@@ -90,14 +90,14 @@ The following is a list of quotas and limits for the Moscow region.
 | `cores`
 | 9 pcs.
 | not limited
-|
+|![](/en/assets/no.svg "inline")
 
 | Total amount of RAM in the project
 | **RAM**
 | `ram`
 | 10240 MB
 | not limited
-|
+|![](/en/assets/no.svg "inline")
 
 |===
 
@@ -136,7 +136,7 @@ There are no quotas for the Cloud Containers service. The use of this service is
 
 Non-rigid limits can be exceeded without contacting technical support. Recommendations for these and other parameters in [official Kubernetes documentation](https://kubernetes.io/docs/setup/best-practices/cluster-large/). The limit on the number of nodes in a node group is not due to the requirements of Kubernetes, the limit is introduced at the VK Cloud level.
 
-### Disks and images
+### {heading(Disks and images)[id=images-volumes]}
 
 #### Disk capacity
 
@@ -171,7 +171,6 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | `gigabytes_ko1-high-iops`
 | 200 GB
 | not limited
-
 |===
 
 Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](mailto:support@mcs.mail.ru) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
@@ -216,15 +215,43 @@ Quotas for the total number of disks in the project take into account all types 
 
 #### Limits without quotas
 
-| Parameter                  | Limit | Hard |
-|---------------------------|---------|---|
-| Number of disks per instance  | 25 pcs.| ![](/en/assets/check.svg "inline") |
-| Size of one HDD              | 50 TB | ![](/en/assets/check.svg "inline") |
-| Size of one SSD disk              | 10 TB | ![](/en/assets/check.svg "inline") |
-| Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud management console, 5 TB via OpenStack CLI | ![](/en/assets/no.svg "inline") |
-| Size of a single image                 | 500 GB | ![](/en/assets/no.svg "inline") |
-| Total volume of images                  | 2 TB | ![](/en/assets/no.svg "inline") |
-| Total number of disks snapshots         | 200 pcs. | ![](/en/assets/no.svg "inline") |
+[cols="2,2,1", options="header"]
+|===
+|Parameter
+|Limit
+|Hard
+
+|Number of disks per instance
+|25 pcs.
+| ![](/en/assets/check.svg "inline")
+
+|Size of one HDD
+|* 5 TB via VK management console
+* 100 TB using OpenStack CLI
+|![](/en/assets/check.svg "inline")
+
+|Size of one SSD
+|* 5 TB via VK management console
+* 100 TB using OpenStack CLI
+|![](/en/assets/check.svg "inline")
+
+|Size of one High-IOPS SSD disk 
+|* 2 TB via VK management console
+* 5 TB using OpenStack CLI 
+|![](/en/assets/check.svg "inline")
+
+|Size of one image 
+|500 GB 
+|![](/en/assets/check.svg "inline")
+
+|Total volume of images
+|2 TB
+|![](/en/assets/check.svg "inline")
+
+|Total number of disks snapshots 
+|200 pcs.
+|![](/en/assets/check.svg "inline")
+|===
 
 The limit on the number of disks per instance (25 pcs.) is associated with PCI bus limitations.
 
@@ -394,8 +421,8 @@ Even if the quota for the total number of subnets in the project has been increa
 | Number of advanced routers
 | **Advanced routers**
 | `dc_router`
-| 3 шт.
-| 3 шт.
+| 3 pcs.
+| 3 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of security groups in the project
