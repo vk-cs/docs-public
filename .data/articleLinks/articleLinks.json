@@ -1037,6 +1037,10 @@
   ],
   [
     "/en/computing/iaas/concepts/new-volume-sla",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
+  ],
+  [
+    "/en/computing/iaas/concepts/new-volume-sla",
     "http://localhost:3000/docs/en/computing/iaas/concepts/new-volume-sla#disk_performance_testing"
   ],
   [
@@ -1058,6 +1062,10 @@
   [
     "/en/computing/iaas/concepts/new-volume-sla",
     "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+  ],
+  [
+    "/en/computing/iaas/concepts/new-volume-sla",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits"
   ],
   [
     "/en/computing/iaas/concepts/about",
@@ -1089,6 +1097,10 @@
   ],
   [
     "/en/computing/iaas/concepts/volume-sla",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
+  ],
+  [
+    "/en/computing/iaas/concepts/volume-sla",
     "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla#disk_performance_testing"
   ],
   [
@@ -1106,6 +1118,10 @@
   [
     "/en/computing/iaas/concepts/volume-sla",
     "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+  ],
+  [
+    "/en/computing/iaas/concepts/volume-sla",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
@@ -1514,6 +1530,10 @@
   [
     "/en/computing/iaas/service-management/images/images-manage",
     "http://localhost:3000/docs/en/computing/iaas/how-to-guides/packer#1_convert_image_to_raw_format"
+  ],
+  [
+    "/en/computing/iaas/service-management/images/images-manage",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
   ],
   [
     "/en/computing/iaas/service-management/images/images-manage",
@@ -9625,6 +9645,10 @@
   ],
   [
     "/ru/computing/iaas/concepts/new-volume-sla",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
+  ],
+  [
+    "/ru/computing/iaas/concepts/new-volume-sla",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/new-volume-sla#testirovanie_proizvoditelnosti_diskov"
   ],
   [
@@ -9646,6 +9670,10 @@
   [
     "/ru/computing/iaas/concepts/new-volume-sla",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska"
+  ],
+  [
+    "/ru/computing/iaas/concepts/new-volume-sla",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
   ],
   [
     "/ru/computing/iaas/concepts/about",
@@ -9681,6 +9709,10 @@
   ],
   [
     "/ru/computing/iaas/concepts/volume-sla",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
+  ],
+  [
+    "/ru/computing/iaas/concepts/volume-sla",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/volume-sla#testirovanie_proizvoditelnosti_diskov"
   ],
   [
@@ -9698,6 +9730,10 @@
   [
     "/ru/computing/iaas/concepts/volume-sla",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska"
+  ],
+  [
+    "/ru/computing/iaas/concepts/volume-sla",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -10109,7 +10145,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/images/images-manage",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits#diski_i_obrazy_86fe464b"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
   ],
   [
     "/ru/computing/iaas/service-management/images/images-manage",
