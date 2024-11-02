@@ -67,7 +67,7 @@ Only RAW images are supported. If your image is in a different format, [convert 
 
 The recommended way to import an image is using the CLI.
 
-When downloading through your VK Cloud management console, the size of the downloaded file is limited — no more than 100 GB.
+When downloading through your VK Cloud management console, the size of the downloaded file is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes).
 
 </warn>
 
