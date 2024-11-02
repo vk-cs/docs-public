@@ -1,7 +1,7 @@
 Cloud Desktop supports two ways to authenticate users when they connect to remote desktops:
 
 - Authentication with an AD or LDAP user directory service. Used by default.
-- Two-factor authentication with the [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) service.
+- Two-factor authentication with the [SAML](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language) service (available only for Windows desktop pools).
 
 Only one of the user authentication methods is used at a time for all desktops in your Cloud Desktop infrastructure. If necessary, you can switch between the authentication methods. This does not require reconfiguring other Cloud Desktop components: the network, the remote desktop access subsystem, and the connection to the user directory.
 
@@ -26,13 +26,15 @@ To set up two-factor authentication using the SAML service:
     - **Check SSL**: enable this option to check the entire chain of certificates for validity and absence from revocation lists. If this option is disabled, only the presence of an SSL certificate will be checked.
     - **Binding Type**: select the method for sending a response to a SAML authentication request: `HTTP-Redirect` or `HTTP-POST`.
     - **Response Binding Type**: select the method for redirecting a user back to the service that requested SAML authorization: `HTTP-Redirect` or `HTTP-POST`.
+    - **Name ID format**: leave the default value. Only `Unspecified` is available, in which the NameID format is specified directly in the SAML authentication request.
+    - **Group Attr Name**: specify the type of user attribute that will be returned by the SAML service and which the system will use to decide whether to grant access. The attribute can be of any type. Typically, the `Group` value is specified, i.e. access is granted depending on which group the user belongs to.
+
+1. Click **Save**.
+   
+<!---Убрали по задаче https://jira.vk.team/browse/VKCSDOCS-1715, потому что пока доступен только один тип      
     - **Name ID format**: select which NameID format will be used to map name identifiers across identity providers and service providers. Supported options:  
 
         - `Email address`: NameID matches the user's email address.
         - `Persistent`: the provided NameID is registered with the SAML service and is used for multiple sessions.
         - `Transient`: the SAML service identifies the user using the provided NameID and grants access that is valid for only one session.
-        - `Unspecified`: the NameID format is specified directly in the SAML authentication request.
-
-    - **Group Attr Name**: specify the type of user attribute that will be returned by the SAML service and which the system will use to decide whether to grant access. The attribute can be of any type. Typically, the `Group` value is specified, i.e. access is granted depending on which group the user belongs to.
-
-1. Click **Save**.
+        - `Unspecified`: the NameID format is specified directly in the SAML authentication request.-->
