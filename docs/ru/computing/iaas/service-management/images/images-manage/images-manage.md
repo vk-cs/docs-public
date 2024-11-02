@@ -67,7 +67,7 @@ VK Cloud поддерживает загрузку собственных обр
 
 Рекомендованный способ импорта образа — с использованием CLI.
 
-Размер загружаемого файла [ограничен](/ru/tools-for-using-services/account/concepts/quotasandlimits#diski_i_obrazy_86fe464b).
+Размер загружаемого файла [ограничен](/ru/tools-for-using-services/account/concepts/quotasandlimits#images-volumes).
 
 </warn>
 
