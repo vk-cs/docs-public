@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/storage/backups/service-management/db-backup"
+                    "link": "/ru/storage/backups/concepts/about"
                 },
                 {
                     "link": "/ru/storage/backups/concepts/retention-policy"
@@ -17,16 +17,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/storage/backups/service-management/db-backup/db-backup-create"
+                    "link": "/ru/storage/backups/service-management/create-backup-plan"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/db-backup/manage-db-backups"
+                    "link": "/ru/storage/backups/service-management/create-backup-copy"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/db-backup/db-recover-backup"
+                    "link": "/ru/storage/backups/service-management/restore-from-backup"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr"
+                    "link": "/ru/storage/backups/service-management/point-in-time-recovery-pitr"
                 }
             ]
         },

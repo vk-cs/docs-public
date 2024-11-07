@@ -6,5 +6,14 @@
   "metaDescription": "Инструкции по работе с планами резервного копирования и резервными копиями виртуальных машин и баз данных",
   "sectionTitle": "Управление сервисом",
   "weight": 1,
-  "uuid": "4d01c228-cf5c-402f-b6da-f5cc57d8e3c7"
+  "uuid": "cc7f1c83-8425-43d1-8cc0-ff16e1fdc365",
+  "additionalUuids": [
+    "4d01c228-cf5c-402f-b6da-f5cc57d8e3c7",
+    "30fde4e9-d370-43bc-b75d-14ab7a6e61f6",
+    "3e4d2992-ad22-4b56-bc18-a8522e3ada27",
+    "fcda97f7-6a73-4b05-a112-c4a8680fe291",
+    "525de4ae-33be-4abd-9ed4-6054e6dada56",
+    "15694677-ca2a-47ab-8bfb-464e76690e95",
+    "66461ab8-763a-4442-bc7d-67d5160c07c5"
+  ]
 }

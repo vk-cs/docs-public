@@ -6,5 +6,13 @@
   "metaDescription": "Instructions for working with backup plans and backups of virtual machines and databases",
   "sectionTitle": "Service management",
   "weight": 1,
-  "uuid": "62ea437d-d943-4be5-b90a-a2d6c379f316"
+  "uuid": "649e1d23-0533-4f8f-8676-b39ad9bd212b",
+  "additionalUuids": [
+      "62ea437d-d943-4be5-b90a-a2d6c379f316",
+      "9b7b474f-41e5-449f-a78f-8ebc737522d5",
+      "818c1c11-8aea-4c6b-9cc3-ca1ba55e4e86",
+      "c7c4d2c6-982b-4223-b779-fd925a5bc531",
+      "ffc78353-b041-4ab8-9e69-b587a4da37ea",
+      "965a5380-d93a-4c29-9fd7-da32ce103243"
+  ]
 }
