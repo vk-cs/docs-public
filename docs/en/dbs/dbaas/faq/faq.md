@@ -50,7 +50,7 @@ Use the instructions [User management](../service-management/users/).
 
 <summary>Is backup enabled by default?</summary>
 
-Backup is not enabled by default. You can enable it when [creating an instance](../service-management/create/) or configure it in the [Backup](../../../storage/backups/service-management/db-backup/) section.
+Backup is not enabled by default. You can enable it when [creating an instance](../service-management/create/) or configure it in the [Backup](https://msk.cloud.vk.com/app/en/services/databases/backups/) section.
 
 </details>
 
@@ -67,7 +67,7 @@ To check if backup is enabled:
 
    If there is a green indicator next to the name of the required plan, the backup works according to plan. If the indicator is red, the backup is suspended.
 
-Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/storage/backups/service-management/db-backup/).
+Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/storage/backups/service-management/create-backup-plan).
 
 </details>
 
@@ -77,7 +77,7 @@ Backup can be enabled when [creating a DB instance](../service-management/create
 
 No, you can restore the database only to the version for which the backup was created.
 
-To restore a database from a backup, use the [instructions](/en/storage/backups/service-management/db-backup/db-recover-backup).
+To restore a database from a backup, use the [instructions](/en/storage/backups/service-management/restore-from-backup).
 
 </details>
 
