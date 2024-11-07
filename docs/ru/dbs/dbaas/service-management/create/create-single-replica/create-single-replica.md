@@ -85,7 +85,7 @@
 
         Ключ используется для [подключения к хостам инстанса по SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать или изменить](/ru/storage/backups/service-management/db-backup) после создания инстанса БД.
+   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать](/ru/storage/backups/service-management/create-backup-plan#create_db_backup_plan) или [изменить](/ru/storage/backups/service-management/manage-backup-plan#edit_backup_plan) после создания инстанса БД.
 
       Для Tarantool резервное копирование недоступно.
 

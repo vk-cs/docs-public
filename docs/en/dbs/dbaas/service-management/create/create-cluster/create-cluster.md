@@ -29,7 +29,7 @@
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/service-management/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/service-management/create-backup-plan) or [changed](/en/storage/backups/service-management/manage-backup-plan) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -249,7 +249,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/service-management/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/service-management/create-backup-plan) or [changed](/en/storage/backups/service-management/manage-backup-plan) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -478,7 +478,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/service-management/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/service-management/create-backup-plan) or [changed](/en/storage/backups/service-management/manage-backup-plan) after the cluster is created.
 
       <tabs>
       <tablist>

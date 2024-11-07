@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/storage/backups/service-management/db-backup"
+                    "link": "/en/storage/backups/concepts/about"
                 },
                 {
                     "link": "/en/storage/backups/concepts/retention-policy"
@@ -17,16 +17,16 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/storage/backups/service-management/db-backup/db-backup-create"
+                    "link": "/en/storage/backups/service-management/create-backup-plan"
                 },
                 {
-                    "link": "/en/storage/backups/service-management/db-backup/manage-db-backups"
+                    "link": "/en/storage/backups/service-management/create-backup-copy"
                 },
                 {
-                    "link": "/en/storage/backups/service-management/db-backup/db-recover-backup"
+                    "link": "/en/storage/backups/service-management/restore-from-backup"
                 },
                 {
-                    "link": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr"
+                    "link": "/en/storage/backups/service-management/point-in-time-recovery-pitr"
                 }
             ]
         },

@@ -29,7 +29,7 @@
 
         Ключ используется для [подключения к хостам кластера по SSH](../../../connect/ssh).
 
-   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать или изменить](/ru/storage/backups/service-management/db-backup) после создания кластера.
+   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать](/ru/storage/backups/service-management/create-backup-plan#create_db_backup_plan) или [изменить](/ru/storage/backups/service-management/manage-backup-plan#edit_backup_plan) после создания кластера.
 
       <tabs>
       <tablist>
@@ -256,7 +256,7 @@
 
         Ключ используется для [подключения к хостам кластера по SSH](../../../connect/ssh).
 
-   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать или изменить](/ru/storage/backups/service-management/db-backup) после создания кластера.
+   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать](/ru/storage/backups/service-management/create-backup-plan#create_db_backup_plan) или [изменить](/ru/storage/backups/service-management/manage-backup-plan#edit_backup_plan) после создания кластера.
 
       <tabs>
       <tablist>
@@ -485,7 +485,7 @@
 
         Ключ используется для [подключения к хостам кластера по SSH](../../../connect/ssh).
 
-   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать или изменить](/ru/storage/backups/service-management/db-backup) после создания кластера.
+   1. Настройте резервное копирование. При необходимости параметры резервного копирования можно [задать](/ru/storage/backups/service-management/create-backup-plan#create_db_backup_plan) или [изменить](/ru/storage/backups/service-management/manage-backup-plan#edit_backup_plan) после создания кластера.
 
       <tabs>
       <tablist>

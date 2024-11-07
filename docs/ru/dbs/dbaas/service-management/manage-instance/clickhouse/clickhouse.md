@@ -118,7 +118,7 @@
 
 ## Создание резервной копии
 
-Операция подробно описана в разделе [Создание и удаление резервных копий](/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii).
+Операция подробно описана в разделе [Создание резервной копии вручную](/ru/storage/backups/service-management/create-backup-copy).
 
 ## Вертикальное масштабирование
 

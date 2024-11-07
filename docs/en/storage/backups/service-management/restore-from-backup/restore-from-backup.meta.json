@@ -1,0 +1,16 @@
+{
+    "title": "Restoring from backups",
+    "pageDescription": "Restoring a VM or DB instance from a backup.",
+    "shortDescription": "Restoring a VM or DB instance from a backup",
+    "metaTitle": "Restoring from backups",
+    "metaDescription": "Restoring a VM or DB instance from a backup",
+    "sectionTitle": "Restoring from backups",
+    "icon": "",
+    "weight": 4,
+    "uuid": "cc31019f-6201-4071-9653-1d13da73c0ea",
+    "additionalUuids": [
+        "d133f96e-8893-4fd2-bb57-e445a1a37b01",
+        "7173c73f-f340-4e7b-ba4c-bf1bd48f7da5",
+        "5f22b583-7b3e-499c-80b1-3998b51075e9"
+    ] 
+}

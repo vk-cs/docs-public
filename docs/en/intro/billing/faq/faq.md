@@ -255,7 +255,7 @@ To restore the services:
 
    - [Virtual machines](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm)
    - [Kubernetes containers](/en/kubernetes/k8s/service-management/manage-cluster#start_cluster_ffb49399)
-   - [VM backup](/en/storage/backups/service-management/vm-backup/vm-backup-manage#activating_stopping_and_deleting_a_backup_plan)
+   - [VM backup](/en/storage/backups/service-management/manage-backup-plan)
    - Other resources
 
 <info>

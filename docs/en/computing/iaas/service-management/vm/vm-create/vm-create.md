@@ -70,7 +70,7 @@ The available fields may differ for different operating systems.
 
 7. Click **Next step**.
 
-8. If necessary, enable the **Use Backup** option and [specify](/en/storage/backups/service-management/vm-backup/vm-backup-create) settings.
+8. If necessary, enable the **Use Backup** option and [specify](/en/storage/backups/service-management/create-backup-plan) settings.
 9. Click **Create instance**.
 10. Wait for the VM to be created. This process may take some time. When the creation is completed, a page with VM characteristics and connection instructions will open.
 
