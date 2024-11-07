@@ -1,1 +1,0 @@
-Instructions for working with backup plans and backups of virtual machines and databases.

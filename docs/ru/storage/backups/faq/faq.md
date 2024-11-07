@@ -2,7 +2,7 @@
 
 <summary>Как сделать резервную копию ВМ?</summary>
 
-Создать резервную копию ВМ можно вручную или при помощи плана резервного копирования, подробнее в разделе [Управление резервными копиями](/ru/storage/backups/service-management/vm-backup/vm-backup-manage).
+Создать резервную копию ВМ можно [вручную](/ru/storage/backups/service-management/create-backup-copy) или [при помощи плана резервного копирования](/ru/storage/backups/service-management/create-backup-plan).
 
 </details>
 
@@ -36,7 +36,7 @@
 
 <summary>Как удалить резервную копию?</summary>
 
-Удалить резервную копию можно в разделе **Облачные вычисления → Резервное копирование**, подробнее в статье [Управление резервными копиями](/ru/storage/backups/service-management/vm-backup/vm-backup-manage#udalenie_rezervnyh_kopiy).
+Удалить резервную копию можно в разделе **Cloud Backup → Резервное копирование**, подробнее в статье [Управление резервными копиями](/ru/storage/backups/service-management/manage-backup-copy#delete_backup_copy).
 
 </details>
 

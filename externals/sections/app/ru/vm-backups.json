@@ -27,10 +27,10 @@
                     "link": "/ru/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/vm-backup/vm-backup-create"
+                    "link": "/ru/storage/backups/service-management/create-backup-plan"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage"
+                    "link": "/ru/storage/backups/service-management/create-backup-copy"
                 }
             ]
         },

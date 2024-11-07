@@ -14,6 +14,6 @@ Cloud Backup позволяет:
 - стратегия [с ограничением по максимальному числу](/ru/storage/backups/concepts/retention-policy/forward-incremental) хранимых полных копий;
 - [GFS-стратегия](/ru/storage/backups/concepts/retention-policy/gfs-backup).
 
-Для СУБД PostgreSQL также поддерживается механизм непрерывного архивирования и восстановления на момент времени ([Point-in-Time Recovery, PITR](/ru/storage/backups/united-service-management/point-in-time-recovery-pitr)).
+Для СУБД PostgreSQL также поддерживается механизм непрерывного архивирования и восстановления на момент времени ([Point-in-Time Recovery, PITR](/ru/storage/backups/service-management/point-in-time-recovery-pitr)).
 
 Резервные копии хранятся в объектном хранилище Cloud Storage с классом хранения Backup.

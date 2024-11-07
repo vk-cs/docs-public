@@ -1,0 +1,14 @@
+{
+    "title": "Creating backups",
+    "pageDescription": "Methods for creating a backup copy of a VM, DB or analytical DB.",
+    "shortDescription": "Methods for creating a backup copy of a VM, DB or analytical DB",
+    "metaTitle": "Creating backups",
+    "metaDescription": "Methods for creating a backup copy of a VM, DB or analytical DB",
+    "sectionTitle": "Creating backups",
+    "icon": "",
+    "weight": 2,
+    "uuid": "010e1540-7c0b-4ad2-94f5-776dad1d68d0",
+    "additionalUuids": [
+        "7c4ec246-f5b2-4fc6-be26-91280dbb4621"
+    ]    
+}
