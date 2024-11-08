@@ -1,12 +1,13 @@
 {
-    "title": "Лицензионное соглашение для сервиса «Cloud Desktop»",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Лицензионное соглашение для сервиса «Cloud Desktop»",
-    "metaDescription": "Лицензионное соглашение для сервиса «Cloud Desktop»",
-    "sectionTitle": "Лицензионное соглашение для сервиса «Cloud Desktop»",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 18
+  "title": "Лицензионное соглашение для сервиса «Cloud Desktop»",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Лицензионное соглашение для сервиса «Cloud Desktop»",
+  "metaDescription": "Лицензионное соглашение для сервиса «Cloud Desktop»",
+  "sectionTitle": "Лицензионное соглашение для сервиса «Cloud Desktop»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 18,
+  "uuid": "979853f8-1168-475a-a5bc-2cd0f79e4f47"
 }
