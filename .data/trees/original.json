@@ -3285,6 +3285,21 @@
     ]
   },
   {
+    "uuid": "668c55aa-6a31-41e1-a7fb-f6ad64eb22dd",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/storage/backups/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "6e811bb6-abe5-476c-8d30-ea12517d1061",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -3330,7 +3345,7 @@
     ]
   },
   {
-    "uuid": "62ea437d-d943-4be5-b90a-a2d6c379f316",
+    "uuid": "649e1d23-0533-4f8f-8676-b39ad9bd212b",
     "lang": "en",
     "type": "INTERMEDIATE",
     "level": 4,
@@ -3345,148 +3360,13 @@
     ]
   },
   {
-    "uuid": "c7c4d2c6-982b-4223-b779-fd925a5bc531",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/en/storage/backups/service-management/vm-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/vm-backup/vm-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/vm-backup/vm-backup.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "965a5380-d93a-4c29-9fd7-da32ce103243",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/vm-backup/vm-backup-create/vm-backup-create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/vm-backup/vm-backup-create/vm-backup-create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "7173c73f-f340-4e7b-ba4c-bf1bd48f7da5",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage/vm-backup-manage.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage/vm-backup-manage.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "9b7b474f-41e5-449f-a78f-8ebc737522d5",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/en/storage/backups/service-management/db-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/db-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/db-backup.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "5ede036c-195a-43fb-9205-fa6a8b9912a4",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/storage/backups/service-management/db-backup/db-backup-create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/db-backup-create/db-backup-create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/db-backup-create/db-backup-create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d133f96e-8893-4fd2-bb57-e445a1a37b01",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/storage/backups/service-management/db-backup/db-recover-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/db-recover-backup/db-recover-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/db-recover-backup/db-recover-backup.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "7c4ec246-f5b2-4fc6-be26-91280dbb4621",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/storage/backups/service-management/db-backup/manage-db-backups",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/manage-db-backups/manage-db-backups.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/manage-db-backups/manage-db-backups.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3cb0781c-03d6-48ab-b5b5-d09985d3b8c9",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "649e1d23-0533-4f8f-8676-b39ad9bd212b",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/en/storage/backups/united-service-management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/united-service-management.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/united-service-management.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "7b5a792a-8914-4833-a171-b10bce981fed",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/united-service-management/create-backup-plan",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/create-backup-plan/create-backup-plan.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/create-backup-plan/create-backup-plan.md",
+    "partialPath": "/en/storage/backups/service-management/create-backup-plan",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/create-backup-plan/create-backup-plan.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/create-backup-plan/create-backup-plan.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -3499,9 +3379,9 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/united-service-management/manage-backup-plan",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/manage-backup-plan/manage-backup-plan.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/manage-backup-plan/manage-backup-plan.md",
+    "partialPath": "/en/storage/backups/service-management/manage-backup-plan",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/manage-backup-plan/manage-backup-plan.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/manage-backup-plan/manage-backup-plan.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -3514,9 +3394,9 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/united-service-management/create-backup-copy",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/create-backup-copy/create-backup-copy.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/create-backup-copy/create-backup-copy.md",
+    "partialPath": "/en/storage/backups/service-management/create-backup-copy",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/create-backup-copy/create-backup-copy.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/create-backup-copy/create-backup-copy.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -3529,9 +3409,9 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/united-service-management/manage-backup-copy",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/manage-backup-copy/manage-backup-copy.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/manage-backup-copy/manage-backup-copy.md",
+    "partialPath": "/en/storage/backups/service-management/manage-backup-copy",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/manage-backup-copy/manage-backup-copy.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/manage-backup-copy/manage-backup-copy.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -3544,9 +3424,9 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/united-service-management/point-in-time-recovery-pitr",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
+    "partialPath": "/en/storage/backups/service-management/point-in-time-recovery-pitr",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -3559,9 +3439,9 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/united-service-management/restore-from-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/restore-from-backup/restore-from-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/united-service-management/restore-from-backup/restore-from-backup.md",
+    "partialPath": "/en/storage/backups/service-management/restore-from-backup",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/restore-from-backup/restore-from-backup.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/restore-from-backup/restore-from-backup.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -9960,6 +9840,21 @@
     ]
   },
   {
+    "uuid": "979853f8-1168-475a-a5bc-2cd0f79e4f47",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/start/legal/policy-cloud-desktop",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/policy-cloud-desktop/policy-cloud-desktop.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/policy-cloud-desktop/policy-cloud-desktop.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "392a9552-837b-4540-8737-ea7c4f061d48",
     "lang": "ru",
     "type": "ARTICLE",
@@ -12908,7 +12803,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/concepts/about/about.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/concepts/about/about.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
@@ -12960,7 +12855,7 @@
     ]
   },
   {
-    "uuid": "4d01c228-cf5c-402f-b6da-f5cc57d8e3c7",
+    "uuid": "cc7f1c83-8425-43d1-8cc0-ff16e1fdc365",
     "lang": "ru",
     "type": "INTERMEDIATE",
     "level": 4,
@@ -12975,148 +12870,13 @@
     ]
   },
   {
-    "uuid": "fcda97f7-6a73-4b05-a112-c4a8680fe291",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/storage/backups/service-management/vm-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/vm-backup/vm-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/vm-backup/vm-backup.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "525de4ae-33be-4abd-9ed4-6054e6dada56",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/vm-backup/vm-backup-create/vm-backup-create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/vm-backup/vm-backup-create/vm-backup-create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "2682d77f-ebc9-4526-b4c8-7edb848fa0cb",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage/vm-backup-manage.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage/vm-backup-manage.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "30fde4e9-d370-43bc-b75d-14ab7a6e61f6",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/storage/backups/service-management/db-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/db-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/db-backup.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "fa6fcdb4-3785-40c7-8f08-b55f05187127",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/storage/backups/service-management/db-backup/db-backup-create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/db-backup-create/db-backup-create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/db-backup-create/db-backup-create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "93b68cce-b5d1-431b-8b26-030b5effd7ac",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/manage-db-backups/manage-db-backups.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/manage-db-backups/manage-db-backups.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "71967928-a6fd-4441-90aa-f940815f9980",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/db-recover-backup/db-recover-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/db-recover-backup/db-recover-backup.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "14165165-68a1-41ee-a430-675b4593cdb3",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "cc7f1c83-8425-43d1-8cc0-ff16e1fdc365",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/ru/storage/backups/united-service-management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/united-service-management.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/united-service-management.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "ceb156cf-af17-4827-a29e-d0c9c9e1896b",
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/storage/backups/united-service-management/create-backup-plan",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/create-backup-plan/create-backup-plan.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/create-backup-plan/create-backup-plan.md",
+    "partialPath": "/ru/storage/backups/service-management/create-backup-plan",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/create-backup-plan/create-backup-plan.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/create-backup-plan/create-backup-plan.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -13129,9 +12889,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/storage/backups/united-service-management/manage-backup-plan",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/manage-backup-plan/manage-backup-plan.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/manage-backup-plan/manage-backup-plan.md",
+    "partialPath": "/ru/storage/backups/service-management/manage-backup-plan",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/manage-backup-plan/manage-backup-plan.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/manage-backup-plan/manage-backup-plan.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -13144,9 +12904,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/storage/backups/united-service-management/create-backup-copy",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/create-backup-copy/create-backup-copy.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/create-backup-copy/create-backup-copy.md",
+    "partialPath": "/ru/storage/backups/service-management/create-backup-copy",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/create-backup-copy/create-backup-copy.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/create-backup-copy/create-backup-copy.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -13159,9 +12919,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/storage/backups/united-service-management/manage-backup-copy",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/manage-backup-copy/manage-backup-copy.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/manage-backup-copy/manage-backup-copy.md",
+    "partialPath": "/ru/storage/backups/service-management/manage-backup-copy",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/manage-backup-copy/manage-backup-copy.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/manage-backup-copy/manage-backup-copy.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -13174,9 +12934,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/storage/backups/united-service-management/restore-from-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/restore-from-backup/restore-from-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/restore-from-backup/restore-from-backup.md",
+    "partialPath": "/ru/storage/backups/service-management/restore-from-backup",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/restore-from-backup/restore-from-backup.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/restore-from-backup/restore-from-backup.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -13189,9 +12949,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/storage/backups/united-service-management/point-in-time-recovery-pitr",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/united-service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
+    "partialPath": "/ru/storage/backups/service-management/point-in-time-recovery-pitr",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
     "variables": {},
     "hidden": false,
     "version": null,

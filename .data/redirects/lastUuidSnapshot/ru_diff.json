@@ -1,1 +1,21 @@
-{}
+{
+  "cc7f1c83-8425-43d1-8cc0-ff16e1fdc365": "/ru/storage/backups/service-management",
+  "30fde4e9-d370-43bc-b75d-14ab7a6e61f6": "/ru/storage/backups/service-management",
+  "3e4d2992-ad22-4b56-bc18-a8522e3ada27": "/ru/storage/backups/service-management",
+  "fcda97f7-6a73-4b05-a112-c4a8680fe291": "/ru/storage/backups/service-management",
+  "525de4ae-33be-4abd-9ed4-6054e6dada56": "/ru/storage/backups/service-management",
+  "15694677-ca2a-47ab-8bfb-464e76690e95": "/ru/storage/backups/service-management",
+  "66461ab8-763a-4442-bc7d-67d5160c07c5": "/ru/storage/backups/service-management",
+  "ceb156cf-af17-4827-a29e-d0c9c9e1896b": "/ru/storage/backups/service-management/create-backup-plan",
+  "fa6fcdb4-3785-40c7-8f08-b55f05187127": "/ru/storage/backups/service-management/create-backup-plan",
+  "112fd67f-35e5-4f4e-b666-cc0487504871": "/ru/storage/backups/service-management/manage-backup-plan",
+  "bbc248e5-d82c-4b86-b7de-9ec8a43c76d9": "/ru/storage/backups/service-management/create-backup-copy",
+  "93b68cce-b5d1-431b-8b26-030b5effd7ac": "/ru/storage/backups/service-management/create-backup-copy",
+  "99c52748-9daf-4bea-9e6c-90f298a3f9c6": "/ru/storage/backups/service-management/manage-backup-copy",
+  "bd42fe8d-f3f1-47c4-9cfa-c0671245cb75": "/ru/storage/backups/service-management/restore-from-backup",
+  "71967928-a6fd-4441-90aa-f940815f9980": "/ru/storage/backups/service-management/restore-from-backup",
+  "2682d77f-ebc9-4526-b4c8-7edb848fa0cb": "/ru/storage/backups/service-management/restore-from-backup",
+  "1be35352-82d0-47f1-8865-1ef6c2c6cb6e": "/ru/storage/backups/service-management/restore-from-backup",
+  "57a7a27b-b563-4924-8591-391c18f561f2": "/ru/storage/backups/service-management/point-in-time-recovery-pitr",
+  "14165165-68a1-41ee-a430-675b4593cdb3": "/ru/storage/backups/service-management/point-in-time-recovery-pitr"
+}
