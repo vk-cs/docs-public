@@ -27,7 +27,7 @@ For legal entities that work on a post-payment, a negative payment account balan
 
 </info>
 
-To resume the services and avoid deleting objects, [top up](../../service-management/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 4 hours. After defrosting, all objects that have been stopped must be started manually.
+To resume the services and avoid deleting objects, [top up](../../service-management/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 15 minutes. After defrosting, all objects that have been stopped must be started manually.
 
 ## Bonuses
 
