@@ -74,7 +74,7 @@ No penalties are charged on negative balance, but it is necessary to [replenish 
 
 <warn>
 
-Unlocking of services takes up to 4 hours from the moment of crediting.
+Unlocking of services takes up to 15 minutes from the moment of crediting.
 
 </warn>
 
@@ -250,7 +250,7 @@ To restore the services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. [Replenish](../service-management/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods/). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
-1. Wait for the activation of services in the project. It can take up to 2 hours.
+1. Wait for the activation of services in the project. It can take up to 15 minutes.
 1. Manually activate project resources:
 
    - [Virtual machines](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm)
@@ -273,7 +273,7 @@ To find out how long resources are in the queue for deletion, contact [technical
 
 <summary>I have topped up my balance to unblock the services. How long to wait?</summary>
 
-Unlocking can take up to 4 hours.
+Unlocking can take up to 15 minutes.
 
 After unlocking, manually start objects that have been stopped, such as virtual machines.
 
