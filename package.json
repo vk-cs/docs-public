@@ -1,6 +1,6 @@
 {
   "name": "docs-public",
-  "version": "2024.11.3",
+  "version": "2024.11.4",
   "description": "Публичная документация VK Cloud",
   "main": "index.js",
   "scripts": {
