@@ -13,7 +13,13 @@ For each new [project](/en/tools-for-using-services/account/concepts/projects), 
   - Funds on it can sometimes expire.
   - There can be several bonus accounts. Bonuses are divided into several types, and a corresponding bonus account is created for each type. See [Bonuses](#bonuses) for details.
 
-Payment account status and balance of all bonus accounts are [available](../../service-management/payment) in the header of the [management console](https://msk.cloud.vk.com/app/), if services are [activated](/en/tools-for-using-services/account/service-management/activation). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
+Payment account status and balance of all bonus accounts are [available](../../service-management/payment) in the header of the [management console](https://msk.cloud.vk.com/app/). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
+
+<info>
+
+Balance is not displayed in your management console if you have not completed the [registration procedure](/en/intro/start/account-registration/).
+
+</info>
 
 ## Expenses and negative payment account balance
 

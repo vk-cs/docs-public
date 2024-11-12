@@ -52,15 +52,10 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 
 <summary>The project does not display the balance at all. How do I turn it on?</summary>
 
-[Balance](../concepts/balance) is displayed:
+[Balance](../concepts/balance) is displayed, if two conditions are met:
 
-- If your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator or billing administrator.
-- After the services are activated in the project. To understand if the services are activated:
-
-  1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-  1. Go to the section of any service. If the **Enable services** button is displayed, [activate](/en/tools-for-using-services/account/service-management/activation) them by pressing this button.
-
-    During activation, you may need to confirm the phone number and link the payment card.
+- Your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator, or billing administrator.
+- [Registration procedure](/en/intro/start/account-registration/) is completed: phone, email, and card for payment are bound.
 
 </details>
 

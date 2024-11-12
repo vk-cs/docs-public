@@ -4,7 +4,7 @@ To work with VK Cloud via the API [activate API access](../enable-api). Read mor
 
 ## Viewing the list of endpoints
 
-The list is available to all users, regardless of their [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) if [services are activated](/en/tools-for-using-services/account/service-management/activation) in the project.
+The list is available to all users, regardless of their [role](/en/tools-for-using-services/account/concepts/rolesandpermissions).
 
 To see the list of endpoints for your region:
 

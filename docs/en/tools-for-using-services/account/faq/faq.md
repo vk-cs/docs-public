@@ -23,6 +23,14 @@ Through the VK Cloud Account, you can register only phone numbers that start wit
 
 <details>
 
+<summary>I have registered, but the services in my management console are still unavailable</summary>
+
+The services become available after you have completed the [registration](/en/intro/start/account-registration/) procedure: linked your phone, email, and card for payment.
+
+</details>
+
+<details>
+
 <summary>What rights do the project participants have?</summary>
 
 The role model of the project participants is described in the article [Roles and permissions of Management console users](../concepts/rolesandpermissions).
