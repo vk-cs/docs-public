@@ -37,9 +37,6 @@
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/service-management/activation"
-                },
-                {
                     "link": "/ru/intro/billing/service-management/payment",
                     "hiddenForPartners": true
                 }

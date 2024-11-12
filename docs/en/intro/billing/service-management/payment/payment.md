@@ -11,7 +11,6 @@ At the top of the management console page, [the payment account balance and the 
 To see details and costs of services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Make sure that the project has [services activated](/en/tools-for-using-services/account/service-management/activation).
 1. Open the balance page using one of these options:
 
    - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.

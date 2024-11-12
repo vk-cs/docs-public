@@ -22,8 +22,6 @@
 | Суперадминистратор
 | Пользователь с тем же набором прав, что владелец, включая привязку карты и пополнение баланса.
 
-Суперадминистратор — единственная роль, кроме владельца, которой доступна [активация сервисов](../../service-management/activation) в проекте.
-
 | Администратор проекта
 | Пользователь с полным набором прав на создание и редактирование объектов во всех сервисах.
 
@@ -51,8 +49,7 @@
 Сервисы и список участников проекта этой роли недоступны.
 
 | Наблюдатель
-| Пользователь, который имеет полные разрешения на просмотр информации в проекте, включая список участников, данные 
-всех сервисов, баланс проекта и детализацию расходов.
+| Пользователь, который имеет полные разрешения на просмотр информации в проекте, включая список участников, данные всех сервисов, баланс проекта и детализацию расходов.
 
 Наблюдатель не может создавать какие-либо объекты и не может ничего редактировать, кроме настроек своего аккаунта.
 
@@ -364,97 +361,97 @@
 .2+| Операции
 4+| Роли
 
-| Администратор Kubernetes 
-| Оператор Kubernetes 
-| Аудитор Kubernetes 
+| Администратор Kubernetes
+| Оператор Kubernetes
+| Аудитор Kubernetes
 | Наблюдатель
 
-| Создать кластер 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline")       
-| ![](/ru/assets/no.svg "inline")       
+| Создать кластер
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
-| Удалить кластер 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline")       
-| ![](/ru/assets/no.svg "inline")       
+| Удалить кластер
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
-| Запустить кластер 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline")       
+| Запустить кластер
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 | Остановить кластер
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 | Отобразить информацию о кластере, нод-группах
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 
-| Получить kubeconfig 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| Получить kubeconfig
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
-| Получить секрет для доступа в Kubernetes Dashboard 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| Получить секрет для доступа в Kubernetes Dashboard
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 | Обновить версию
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 | Изменить тип виртуальной машины
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 | Изменить размер диска Prometheus
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 | Добавить группу узлов
 | ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 | Удалить группу узлов
 | ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 | Изменить настройки масштабирования
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Изменить Labels и Taints
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 | Установить и удалить аддон
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")

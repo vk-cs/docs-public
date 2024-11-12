@@ -1,17 +1,17 @@
-This guide will help you get started with VK Cloud:
+These instructions will help you to register in VK Cloud. Access to VK Cloud services will appear when all registration steps are completed:
 
-- create an account and sign in to your management console;
-- confirm your VK Cloud account;
-- configure the project that is created during registration;
-- connect to the project via the OpenStack CLI command line interface.
+* [account created](#create_account)
+* [email confirmed](#confirm_email)
+* [phone number confirmed](#confirm_phone)
+* [card linked to the project](#bind_card)
 
 <info>
 
-To join an existing VK Cloud project, follow the instructions in article [Join a project by invitation](/en/tools-for-using-services/account/service-management/project-invitation).
+To join an existing VK Cloud project, follow the instructions in [Join a project by invitation](/en/tools-for-using-services/account/service-management/project-invitation).
 
 </info>
 
-## 1. Create an account
+## {heading(1. Create an account)[id=create_account]}
 
 1. Go to [VK Cloud main page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account** in the upper right corner.
 1. In the window that appears, fill in the fields:
@@ -39,103 +39,61 @@ To join an existing VK Cloud project, follow the instructions in article [Join a
 
 2. Click **Create an account**.
 
-The account confirmation window opens. A confirmation email is sent to the specified email address.
+   A confirmation email is sent to the specified email address.
 
-## 2. Confirm your account
+## {heading(2. Confirm your email)[id=confirm_email]}
 
-If you do not immediately confirm the account, when you try to perform an action (for example, create an object or [activate services](/en/tools-for-using-services/account/service-management/activation)), the confirmation will continue from the step where it was stopped.
+Wait for an email from VK Cloud with the "Complete your registration now" subject and follow the **Confirm email** link.
 
-1. Confirm your email: wait for an email from the address `noreply@cloud.vk.com` and follow the link in the email. If the email has not arrived or has expired, request it again by clicking **Send confirmation again** in the confirmation window.
-1. Confirm your phone:
-
-   <warn>
-
-   For the [region](/en/tools-for-using-services/account/concepts/regions) Moscow, only phone numbers registered in the Russian Federation (starting with +7) are accepted. One number can only be assigned to one account.
-
-   </warn>
-
-   1. Enter your number in the **Phone number** field and click **Request a confirmation code**.
-   1. Enter the SMS code into the provided field and click **Confirm number**.
-
-      If the SMS doesn't arrive or has expired, request it again by clicking **The code didn't arrive?** button which appears in 60 seconds.
-
-1. If additional account verification is requested, send a request to technical support:
-
-   <details>
-   <summary>Why does this check appear?</summary>
-
-   VK Cloud platform automatically [validates the security status](../../it-security/tech#antifraud) of the account. Depending on the results of the check, one of these options is offered:
-
-   - Link a card right away — the **Payment card** tab opens.
-   - Send a request to technical support — the **Account activation** tab opens. Linking a card becomes available after the request is processed by technical support.
-
-   </details>
-
-   1. Copy the [identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) of your project from the VK Cloud site URL.
-
-      An example for the region Moscow: `https://msk.cloud.vk.com/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
-
-   1. Contact [technical support](mailto:support@mcs.mail.ru).
-   1. Specify:
-      - **Subject:** `Project Activation <Project PID>`.
-      - **Service type**: `VK Cloud`.
-      - **Service category**: `VK Cloud: account`.
-      - **Service group**: `Account: Activation and Access`.
-      - **Service**: `VK Cloud Activation and access: Activate account`.
-      - **Region**: select the project region (**Moscow** or **Kazakhstan**).
-      - **Project**: specify the project ID (PID).
-      - **Description**: write the reason for the request (e.g. you need to check your account).
-   1. Attach additional materials according to the instructions on the page.
-   1. Wait for your request to be approved.
-
-2. [Link](/en/tools-for-using-services/account/service-management/activation#linking_a_bank_card) a card of [supported payment system](/en/intro/billing/concepts/payment-methods). The specified amount will be debited from your card and credited to your project balance.
-
-   <warn>
-
-   You cannot use a virtual card for account confirmation.
-
-   One card can be linked to any number of projects within one account.
-
-   </warn>
-
-3. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
-4. Click **Get started with VK Cloud**.
-5. Wait for your management console page to open. A message about successful services activation appears.
-
-A [project](/en/tools-for-using-services/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/intro/billing/concepts/balance#bonuses) are credited to your [balance](/en/intro/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](mailto:support@mcs.mail.ru).
-
-## 3. Activate API access
+If necessary, request the email repeatedly by clicking **Send confirmation again** in the registration form.
 
 <info>
 
-VK Cloud supports working with the platform using [additional tools](/en/tools-for-using-services): REST API, OpenStack CLI, Terraform and others — in order to ensure security, access to them is activated by the user independently.
+If the email is not in your **Inbox**, check your **Spam** folder.
 
 </info>
 
-1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/) 2FA for account.
-1. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
+## {heading(3. Confirm your phone)[id=confirm_phone]}
 
-## 4. (Optional) Invite other users
+<warn>
 
-You are the [owner](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project account created during registration. To add other users to the project:
+One number can only be assigned to one account.
 
-1. [Invite](/en/tools-for-using-services/account/service-management/project-settings/access-manage) users to your project and assign them with [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions).
-1. [Turn on](/en/tools-for-using-services/account/service-management/project-settings/access-manage#inclusion_of_mandatory_2fa_in_the_project) mandatory 2FA in the project to reduce the risk of unauthorized access.
+For the Moscow [region](/en/tools-for-using-services/account/concepts/regions), only phone numbers registered in the Russian Federation (starting with +7) are accepted.
 
-## 5. (Optional) Connect to the project via OpenStack CLI
+</warn>
 
-1. [Install](/en/tools-for-using-services/cli/openstack-cli) OpenStack сlient and authenticate yourself in the project.
-1. To check the connection, open a console and run a command, for example:
+1. In the **Phone Number** field, enter the number in the specified format and press **Confirm**.
+1. Call the number on the screen from your phone number.
+1. Enter the digits received from the robot operator in the tone mode on your mobile device.
 
-    ```bash
-    openstack project list
-    ```
+## {heading(4. Bind card to your project)[id=bind_card]}
 
-    Upon successful connection, a list of created projects will be displayed.
+To complete registration, bind the card of the [supported payment system](/en/intro/billing/concepts/payment-methods) to your project:
+
+1. In the card binding window, specify its details in the same fields: number, month and year, CV code.
+
+   <warn>
+
+   A virtual card cannot be linked to the project during registration.
+
+   </warn>
+
+1. Click the **Add card** button.
+
+   If there are enough funds on the bank account, a test amount will be debited from the card and credited to the [project balance](/en/intro/billing/concepts/balance). After that the card will be successfully linked.
+
+   If the test amount was not spent on services, it can be refunded via [technical support](/en/contacts/). See more about managing your card in [Operations with bank card](/en/intro/billing/service-management/add-card).
+
+1. (Optional) On the **Autopayment** tab, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
+1. Wait for your management console page to open. A message about successful services activation appears.
+
+A [project](/en/tools-for-using-services/account/concepts/projects) is automatically created for your account.
 
 ## What's next?
 
 - [Customize](/en/intro/billing/service-management/corporate/) the project to make payments through the legal entity.
 - [Read](/en/tools-for-using-services/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
 - Learn about the [payment methods](/en/intro/billing/service-management/payment) available and the key [pricing](/en/tools-for-using-services/account/tariffication) model principles.
+- [Configure](/en/tools-for-using-services/account/service-management/project-settings/access-manage) access to your project.
 - Find out how to create and connect a [virtual machine](/en/computing/iaas/quick-start), a [Kubernetes cluster](/en/kubernetes/k8s/quickstart), a [database](/en/dbs/dbaas/start).

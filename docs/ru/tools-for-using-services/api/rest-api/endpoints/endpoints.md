@@ -4,7 +4,7 @@
 
 ## Просмотр списка эндпоинтов
 
-Список доступен всем пользователям, вне зависимости от их [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions), если в проекте [активированы сервисы](/ru/tools-for-using-services/account/service-management/activation).
+Список доступен всем пользователям, вне зависимости от их [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions).
 
 Чтобы увидеть список эндпоинтов для вашего региона:
 

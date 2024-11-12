@@ -57,6 +57,14 @@
 
 <details>
 
+<summary>Я зарегистрировался, но сервисы в личном кабинете все еще недоступны</summary>
+
+Сервисы становятся доступны после того, как вы до конца прошли процедуру [регистрации](../account-registration/): привязали телефон, почту и карту для оплаты.
+
+</details>
+
+<details>
+
 <summary>Как включить двухфакторную аутентификацию?</summary>
 
 Воспользуйтесь инструкцией [Включение 2FA](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa).
