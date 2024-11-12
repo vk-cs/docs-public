@@ -33,9 +33,6 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/tools-for-using-services/account/service-management/activation"
-                },
-                {
                     "link": "/en/intro/billing/service-management/payment",
                     "hiddenForPartners": true
                 }

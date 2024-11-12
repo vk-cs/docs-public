@@ -2,10 +2,8 @@ In Cloud Servers, you can create virtual machines through your management consol
 
 ## Before starting work
 
-1. [Register](/en/intro/start/account-registration) to VK Cloud.
-2. [Activate](/en/tools-for-using-services/account/service-management/activation) the services.
-
-The account balance should be positive, and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) should be sufficient to create the required virtual machine configuration.
+1. [Register](/en/intro/start/account-registration) on the VK Cloud platform.
+1. Verify that the payment account balance is positive and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) are sufficient to create the target configuration of the virtual machine.
 
 ### Available OS
 

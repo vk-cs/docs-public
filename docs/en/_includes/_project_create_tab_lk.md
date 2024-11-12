@@ -5,9 +5,6 @@
     A list of projects in which you are a member will open.
 
 1. At the end of the list, click **Create a new project**.
-
-    If your phone was not linked to your account, [link](/en/tools-for-using-services/account/service-management/activation#linking_phone_number) it.
-
 1. Enter the project name.
 
     Name requirements:

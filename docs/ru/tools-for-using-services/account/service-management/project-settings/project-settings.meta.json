@@ -1,11 +1,11 @@
 {
-  "title": "Настройки проекта",
+  "title": "Работа с проектами",
   "pageDescription": "Операции по управлению проектами на платформе.",
   "shortDescription": "Управление проектами VK Cloud",
-  "metaTitle": "Настройки проекта",
+  "metaTitle": "Работа с проектами",
   "metaDescription": "Управление проектами VK Cloud.",
-  "sectionTitle": "Настройки проекта",
+  "sectionTitle": "Работа с проектами",
   "icon": "",
-  "weight": 3,
+  "weight": 2,
   "uuid": "b4e1e128-e778-4b33-b140-5008fa9146ff"
 }

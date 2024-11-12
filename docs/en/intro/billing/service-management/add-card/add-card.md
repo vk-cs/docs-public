@@ -2,9 +2,10 @@
 
 The card can be linked to the project:
 
-- when [registering](/en/intro/start/account-registration) a user account (if required);
-- when [activating services](/en/tools-for-using-services/account/service-management/activation) in the project (if required);
-- independently at any time.
+- when [registering](/en/intro/start/account-registration) a user account (if required)
+- independently at any time
+
+After the card is bound in the project, access to services appears.
 
 It is recommended to use physical bank cards to pay for services, since payments from virtual cards can be rejected by the security system.
 
@@ -23,16 +24,22 @@ To bind the card:
     - Go to **Balance**.
 
 1. Click the **Add card** button.
-1. On the **Add card** tab enter the card details in the fields **Номер карты**, **месяц / год** and **CV-код**.
+1. In the card binding window, specify its details in the same fields: number, month and year, CV code.
 
-    The amount at the top of the window will be debited from the card and credited to the [payment account](../../concepts/balance) of the project.
+    If there are enough funds on the bank account, a test amount will be debited from the card and credited to the [project balance](/en/intro/billing/concepts/balance). After that the card will be successfully linked.
+
+    <info>
+
+    If the test amount was not spent on services, it can be refunded via [technical support](/en/contacts/).
+
+    </info>
 
 1. Click the **Добавить карту** button.
 1. In the payment confirmation window, enter the SMS code received from the bank.
 
     After successful debiting, the card will be linked.
 
-1. (Optional) On the **Auto-top-up** tab that opens, configure auto-top-up of the payment account. To skip this step, turn off the **Enable auto-top-up balance** option.
+1. (Optional) On the **Auto-top-up** tab that opens, configure auto-top-up of the payment account. To skip this step, disable the **Enable auto-top-up balance** option.
 1. Click the **Save** button.
 
 <info>
