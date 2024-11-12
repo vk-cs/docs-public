@@ -101,7 +101,7 @@
   ],
   [
     "/en/intro/start/concepts/architecture",
-    "http://localhost:3000/docs/en/intro/start/support/sla"
+    "http://localhost:3000/docs/en/intro/start/support/sla/"
   ],
   [
     "/en/intro/start/concepts/architecture",
@@ -117,11 +117,23 @@
   ],
   [
     "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-invitation"
+    "http://localhost:3000/docs/en/intro/start/account-registration#create_account"
   ],
   [
     "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/en/intro/start/account-registration#confirm_email"
+  ],
+  [
+    "/en/intro/start/account-registration",
+    "http://localhost:3000/docs/en/intro/start/account-registration#confirm_phone"
+  ],
+  [
+    "/en/intro/start/account-registration",
+    "http://localhost:3000/docs/en/intro/start/account-registration#bind_card"
+  ],
+  [
+    "/en/intro/start/account-registration",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-invitation"
   ],
   [
     "/en/intro/start/account-registration",
@@ -129,15 +141,15 @@
   ],
   [
     "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/intro/it-security/tech#antifraud"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id"
-  ],
-  [
-    "/en/intro/start/account-registration",
     "http://localhost:3000/docs/en/intro/billing/concepts/payment-methods"
+  ],
+  [
+    "/en/intro/start/account-registration",
+    "http://localhost:3000/docs/en/intro/billing/concepts/balance"
+  ],
+  [
+    "/en/intro/start/account-registration",
+    "http://localhost:3000/docs/en/intro/billing/service-management/add-card"
   ],
   [
     "/en/intro/start/account-registration",
@@ -145,31 +157,7 @@
   ],
   [
     "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage#inclusion_of_mandatory_2fa_in_the_project"
-  ],
-  [
-    "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects"
   ],
   [
     "/en/intro/start/account-registration",
@@ -182,6 +170,10 @@
   [
     "/en/intro/start/account-registration",
     "http://localhost:3000/docs/en/tools-for-using-services/account/tariffication"
+  ],
+  [
+    "/en/intro/start/account-registration",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage"
   ],
   [
     "/en/intro/start/account-registration",
@@ -341,6 +333,10 @@
   ],
   [
     "/en/intro/start/faq",
+    "http://localhost:3000/docs/en/intro/start/account-registration"
+  ],
+  [
+    "/en/intro/start/faq",
     "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
@@ -477,7 +473,7 @@
   ],
   [
     "/en/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/en/intro/start/account-registration/"
   ],
   [
     "/en/intro/billing/concepts/balance",
@@ -637,10 +633,6 @@
   ],
   [
     "/en/intro/billing/service-management/add-card",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/en/intro/billing/service-management/add-card",
     "http://localhost:3000/docs/en/intro/billing/concepts/report#legal_entities"
   ],
   [
@@ -678,10 +670,6 @@
   [
     "/en/intro/billing/service-management/payment",
     "http://localhost:3000/docs/en/intro/billing/concepts/balance"
-  ],
-  [
-    "/en/intro/billing/service-management/payment",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
   ],
   [
     "/en/intro/billing/service-management/payment",
@@ -817,7 +805,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/en/intro/start/account-registration/"
   ],
   [
     "/en/intro/billing/faq",
@@ -993,10 +981,6 @@
   ],
   [
     "/en/computing/iaas/quick-start",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/en/computing/iaas/quick-start",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits"
   ],
   [
@@ -1130,10 +1114,6 @@
   [
     "/en/computing/iaas/service-management/vm/vm-create",
     "http://localhost:3000/docs/en/intro/start/account-registration"
-  ],
-  [
-    "/en/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
@@ -7297,10 +7277,6 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/rolesandpermissions",
     "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage"
   ],
   [
@@ -7449,10 +7425,6 @@
   ],
   [
     "/en/tools-for-using-services/account/service-management/project-settings/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation#linking_a_bank_card"
-  ],
-  [
-    "/en/tools-for-using-services/account/service-management/project-settings/create",
     "http://localhost:3000/docs/en/intro/billing/service-management/payment"
   ],
   [
@@ -7462,6 +7434,10 @@
   [
     "/en/tools-for-using-services/account/service-management/project-settings/create",
     "http://localhost:3000/docs/en/tools-for-using-services/account/tariffication"
+  ],
+  [
+    "/en/tools-for-using-services/account/service-management/project-settings/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage"
   ],
   [
     "/en/tools-for-using-services/account/service-management/project-settings/manage",
@@ -7582,6 +7558,10 @@
   [
     "/en/tools-for-using-services/account/faq",
     "http://localhost:3000/docs/en/intro/start/account-registration"
+  ],
+  [
+    "/en/tools-for-using-services/account/faq",
+    "http://localhost:3000/docs/en/intro/start/account-registration/"
   ],
   [
     "/en/tools-for-using-services/account/faq",
@@ -8017,7 +7997,7 @@
   ],
   [
     "/en/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/en/tools-for-using-services/api/rest-api/endpoints",
@@ -8525,11 +8505,23 @@
   ],
   [
     "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-invitation"
+    "http://localhost:3000/docs/ru/intro/start/account-registration#create_account"
   ],
   [
     "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/ru/intro/start/account-registration#confirm_email"
+  ],
+  [
+    "/ru/intro/start/account-registration",
+    "http://localhost:3000/docs/ru/intro/start/account-registration#confirm_phone"
+  ],
+  [
+    "/ru/intro/start/account-registration",
+    "http://localhost:3000/docs/ru/intro/start/account-registration#bind_card"
+  ],
+  [
+    "/ru/intro/start/account-registration",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-invitation"
   ],
   [
     "/ru/intro/start/account-registration",
@@ -8537,15 +8529,15 @@
   ],
   [
     "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/intro/it-security/platform-security"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
-    "/ru/intro/start/account-registration",
     "http://localhost:3000/docs/ru/intro/billing/concepts/payment-methods"
+  ],
+  [
+    "/ru/intro/start/account-registration",
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
+  ],
+  [
+    "/ru/intro/start/account-registration",
+    "http://localhost:3000/docs/ru/intro/billing/service-management/add-card"
   ],
   [
     "/ru/intro/start/account-registration",
@@ -8553,31 +8545,7 @@
   ],
   [
     "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage#vklyuchenie_v_proekte_obyazatelnoy_2fa"
-  ],
-  [
-    "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects"
   ],
   [
     "/ru/intro/start/account-registration",
@@ -8590,6 +8558,10 @@
   [
     "/ru/intro/start/account-registration",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/tariffication"
+  ],
+  [
+    "/ru/intro/start/account-registration",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage"
   ],
   [
     "/ru/intro/start/account-registration",
@@ -8809,6 +8781,10 @@
   ],
   [
     "/ru/intro/start/faq",
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
+  ],
+  [
+    "/ru/intro/start/faq",
     "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
@@ -8945,7 +8921,7 @@
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/ru/intro/start/account-registration/"
   ],
   [
     "/ru/intro/billing/concepts/balance",
@@ -9105,10 +9081,6 @@
   ],
   [
     "/ru/intro/billing/service-management/add-card",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/ru/intro/billing/service-management/add-card",
     "http://localhost:3000/docs/ru/intro/billing/concepts/report#yuridicheskie_lica"
   ],
   [
@@ -9146,10 +9118,6 @@
   [
     "/ru/intro/billing/service-management/payment",
     "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
-  ],
-  [
-    "/ru/intro/billing/service-management/payment",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
   ],
   [
     "/ru/intro/billing/service-management/payment",
@@ -9289,7 +9257,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/ru/intro/start/account-registration/"
   ],
   [
     "/ru/intro/billing/faq",
@@ -9533,10 +9501,6 @@
   ],
   [
     "/ru/computing/iaas/quick-start",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/ru/computing/iaas/quick-start",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
   ],
   [
@@ -9678,10 +9642,6 @@
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
     "http://localhost:3000/docs/ru/intro/start/account-registration"
-  ],
-  [
-    "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -18397,10 +18357,6 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage"
   ],
   [
@@ -18536,18 +18492,6 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo"
   ],
   [
-    "/ru/tools-for-using-services/account/service-management/activation",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/activation",
-    "http://localhost:3000/docs/ru/intro/billing/service-management/add-card"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/project-settings/create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation#privyazka_bankovskoy_karty"
-  ],
-  [
     "/ru/tools-for-using-services/account/service-management/project-settings/create",
     "http://localhost:3000/docs/ru/intro/billing/service-management/payment"
   ],
@@ -18558,6 +18502,10 @@
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/create",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/tariffication"
+  ],
+  [
+    "/ru/tools-for-using-services/account/service-management/project-settings/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/manage",
@@ -18686,6 +18634,10 @@
   [
     "/ru/tools-for-using-services/account/faq",
     "http://localhost:3000/docs/ru/intro/start/account-registration"
+  ],
+  [
+    "/ru/tools-for-using-services/account/faq",
+    "http://localhost:3000/docs/ru/intro/start/account-registration/"
   ],
   [
     "/ru/tools-for-using-services/account/faq",
@@ -19377,7 +19329,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/endpoints",

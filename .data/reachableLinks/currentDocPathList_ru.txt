@@ -610,7 +610,6 @@
 /docs/ru/tools-for-using-services/account/concepts/regions
 /docs/ru/tools-for-using-services/account/service-management
 /docs/ru/tools-for-using-services/account/service-management/project-invitation
-/docs/ru/tools-for-using-services/account/service-management/activation
 /docs/ru/tools-for-using-services/account/service-management/project-settings
 /docs/ru/tools-for-using-services/account/service-management/project-settings/create
 /docs/ru/tools-for-using-services/account/service-management/project-settings/manage

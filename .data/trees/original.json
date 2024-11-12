@@ -8325,21 +8325,6 @@
     ]
   },
   {
-    "uuid": "680fcbd9-ed6d-4b16-80d1-b8da82f54ac9",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/tools-for-using-services/account/service-management/activation",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/activation/activation.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/activation/activation.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "9c43e4db-6076-4978-8d41-e81cb36e4bf6",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -18547,21 +18532,6 @@
     "partialPath": "/ru/tools-for-using-services/account/service-management/project-invitation",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-invitation/project-invitation.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-invitation/project-invitation.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "9349e09c-e7c0-4fe9-b592-f46785a081ac",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/account/service-management/activation",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/activation/activation.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/activation/activation.md",
     "variables": {},
     "hidden": false,
     "version": null,
