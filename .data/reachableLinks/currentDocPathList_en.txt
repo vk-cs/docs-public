@@ -552,7 +552,6 @@
 /docs/en/tools-for-using-services/account/concepts/regions
 /docs/en/tools-for-using-services/account/service-management
 /docs/en/tools-for-using-services/account/service-management/project-invitation
-/docs/en/tools-for-using-services/account/service-management/activation
 /docs/en/tools-for-using-services/account/service-management/project-settings
 /docs/en/tools-for-using-services/account/service-management/project-settings/create
 /docs/en/tools-for-using-services/account/service-management/project-settings/manage

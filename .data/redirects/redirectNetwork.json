@@ -2131,7 +2131,7 @@
   },
   {
     "source": "/en/additionals/account/start/activation",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -2431,7 +2431,7 @@
   },
   {
     "source": "/ru/additionals/account/start/activation",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -6481,7 +6481,7 @@
   },
   {
     "source": "/en/base/account/start/activation",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -6505,7 +6505,7 @@
   },
   {
     "source": "/ru/base/account/start/activation",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -7183,7 +7183,7 @@
   },
   {
     "source": "/ru/networks/cdn/connect-cdn",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -10129,7 +10129,7 @@
   },
   {
     "source": "/en/networks/cdn/connect-cdn",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -16021,13 +16021,13 @@
   },
   {
     "source": "/en/base/account/instructions/activation",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/activation",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -18679,13 +18679,13 @@
   },
   {
     "source": "/ru/base/account/instructions/activation",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/activation",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -21205,13 +21205,13 @@
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/activation",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/activation",
-    "destination": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -22573,13 +22573,13 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/activation",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/activation",
-    "destination": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   },
@@ -28520,6 +28520,30 @@
   {
     "source": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "destination": "/ru/storage/backups/service-management/point-in-time-recovery-pitr",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/service-management/activation",
+    "destination": "/en/intro/start/account-registration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/activation",
+    "destination": "/ru/intro/start/account-registration",
     "permanent": false,
     "locale": false
   }

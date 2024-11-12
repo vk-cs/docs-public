@@ -4,6 +4,26 @@
     "full": "Зоны доступности",
     "text": "Зоны доступности"
   },
+  "create_account": {
+    "number": null,
+    "full": "1. Создайте учетную запись",
+    "text": "1. Создайте учетную запись"
+  },
+  "confirm_email": {
+    "number": null,
+    "full": "2. Подтвердите электронную почту",
+    "text": "2. Подтвердите электронную почту"
+  },
+  "confirm_phone": {
+    "number": null,
+    "full": "3. Подтвердите ваш телефон",
+    "text": "3. Подтвердите ваш телефон"
+  },
+  "bind_card": {
+    "number": null,
+    "full": "4. Привяжите карту к проекту",
+    "text": "4. Привяжите карту к проекту"
+  },
   "prepayment": {
     "number": null,
     "full": "Prepayment",
@@ -373,11 +393,6 @@
     "number": null,
     "full": "Диски и образы",
     "text": "Диски и образы"
-  },
-  "linking_phone_number": {
-    "number": null,
-    "full": "Linking a phone number",
-    "text": "Linking a phone number"
   },
   "sdn_view": {
     "number": null,
