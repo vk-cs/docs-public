@@ -1,8 +1,5 @@
 1. [Go to](https://cloud.vk.com/account) VK Cloud Account.
 1. On the main page, click **Create a new project**.
-
-    If your phone was not linked to your account, [link](/en/tools-for-using-services/account/service-management/activation#linking_phone_number) it.
-
 1. Enter the project name.
 
     Name requirements:

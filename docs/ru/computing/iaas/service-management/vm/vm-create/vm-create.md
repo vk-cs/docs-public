@@ -3,9 +3,7 @@
 ## Перед началом работы
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) на платформе VK Cloud.
-2. [Активируйте](/ru/tools-for-using-services/account/service-management/activation) сервисы.
-
-Баланс счета должен быть положительным, а [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) должно быть достаточно для создания желаемой конфигурации виртуальной машины.
+1. Убедитесь, что баланс счета положительный, а [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) достаточно для создания желаемой конфигурации виртуальной машины.
 
 ### Доступные ОС
 

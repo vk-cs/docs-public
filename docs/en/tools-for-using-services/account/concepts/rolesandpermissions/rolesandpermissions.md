@@ -23,8 +23,6 @@ There can be only one Project owner in a project. This role cannot be assigned t
 | Superadministrator
 | A user with the same permissions as the Project owner, including linking a card and making payments.
 
-Superadministrator is the only role, besides the Project owner, who can [activate services](../../service-management/activation) in the project.
-
 | Project administrator
 | A user who can create and edit objects in all services.
 

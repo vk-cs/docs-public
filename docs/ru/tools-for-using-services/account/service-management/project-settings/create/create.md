@@ -13,14 +13,12 @@
 </tabpanel>
 </tabs>
 
-## Донастройка проекта
-
-1. Активируйте сервисы: нажмите кнопку **Включить сервисы** в разделе любого сервиса.
-
-1. [Привяжите](../../activation#privyazka_bankovskoy_karty) карту оплаты, если она еще не привязана.
+## Что дальше?
 
 1. [Пополните](/ru/intro/billing/service-management/payment) баланс проекта, чтобы начать пользоваться сервисами.
 
     У проектов, созданных пользователями, [баланс](/ru/intro/billing/concepts/balance) изначально составляет 0 рублей. [Приветственные бонусы](/ru/intro/billing/concepts/balance) для таких проектов не начисляются.
 
    Подробнее о стоимости сервисов в [статье о тарификации](../../../tariffication).
+
+1. [Настройте](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) доступы для проекта.
