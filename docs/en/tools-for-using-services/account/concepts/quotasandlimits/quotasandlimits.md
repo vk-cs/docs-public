@@ -160,13 +160,19 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | 200 GB
 | not limited
 
-| Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) DP1
+| Total volume of High-IOPS HA SSD disks
+| **High-IOPS HA SSD size**
+| `gigabytes_high-iops-ha`
+| 200 GB
+| not limited
+
+| Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) GZ1 (legacy)
 | **High-IOPS SSD size in the (DP1) area**
 | `gigabytes_dp1-high-iops`
 | 200 GB
 | not limited
 
-| Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) MS1
+| Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) MS1 (legacy)
 | **High-IOPS SSD size in the Moscow (MS1) (MS1) area**
 | `gigabytes_ko1-high-iops`
 | 200 GB
@@ -197,13 +203,19 @@ Quotas for the total volume of disks in the project take into account all types 
 | 10 pcs.
 | not limited
 
-| Number of High-IOPS SSD drives in [availability zone](/en/additionals/start/it-security/platform-security) DP1
+| Number of High-IOPS HA SSD disks in the project
+| **High-IOPS HA SSD**
+| `volumes_high-iops-ha`
+| 10 pcs.
+| not limited
+
+| Number of High-IOPS SSD drives in [availability zone](/en/additionals/start/it-security/platform-security) GZ1 (legacy)
 | **High-IOPS SSD volumes in - (DP1) area**
 | `volumes_dp1-high-iops`
 | 10 pcs.
 | not limited
 
-| Number of High-IOPS SSD drives in [availability zone](/en/additionals/start/it-security/platform-security) MS1
+| Number of High-IOPS SSD drives in [availability zone](/en/additionals/start/it-security/platform-security) MS1 (legacy)
 | **High-IOPS SSD volumes in Moscow (MS1) (MS1) area**
 | `volumes_ko1-high-iops`
 | 10 pcs.
@@ -236,6 +248,11 @@ Quotas for the total number of disks in the project take into account all types 
 |![](/en/assets/check.svg "inline")
 
 |Size of one High-IOPS SSD disk 
+|* 2 TB via VK management console
+* 5 TB using OpenStack CLI 
+|![](/en/assets/check.svg "inline")
+
+|Size of one High-IOPS HA SSD disk 
 |* 2 TB via VK management console
 * 5 TB using OpenStack CLI 
 |![](/en/assets/check.svg "inline")
