@@ -7,7 +7,7 @@ The Cluster configuration is a cluster with synchronous data replication. It is 
 In the following steps, select the required configuration options:
 
 | Parameter name | Description |
-|------------------------------------|-------------------- ------------------------|
+|------------------------------------|--------------------------------------------|
 | Cluster name | Leave the default name or enter your name in Latin characters.|
 | Amount of uncompressed clean data | The maximum size of the database. |
 | Node configuration | CPU / RAM / HDD (SSD) master configuration.<br>A replica/slave will be created automatically with the same configuration. |
@@ -21,7 +21,7 @@ In the following steps, select the required configuration options:
 In the next step, set the database initialization parameters:
 
 | Parameter name | Description |
-|------------------------------------|-------------------- ------------------------|
+|------------------------------------|--------------------------------------------|
 | Database name to create | You can leave the default or enter your own. |
 | Username | You must specify a username for remote access. |
 | User password | You must set a user password for remote access. |
