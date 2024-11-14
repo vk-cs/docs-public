@@ -156,19 +156,25 @@
 | не ограничено
 
 | Общий объем дисков High-IOPS SSD
-| **Размер High-IOPS SSD** 
+| **Размер High-IOPS SSD**
 | `gigabytes_high-iops`
 | 200 ГБ
 | не ограничено
 
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) GZ1
+| Общий объем дисков High-IOPS HA SSD
+| **Размер High-IOPS HA SSD**
+| `gigabytes_high-iops-ha`
+| 200 ГБ
+| не ограничено
+
+| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) GZ1 (legacy)
 | **Размер High-IOPS SSD в зоне - (DP1)**
 | `gigabytes_dp1-high-iops`
 | 200 ГБ
 | не ограничено
 
-| Общий объем дисков High-IOPS SSD в зоне доступности MS1
-| **Размер High-IOPS SSD в зоне Москва (MS1)**
+| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) MS1 (legacy)
+| **Размер High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `gigabytes_ko1-high-iops`
 | 200 ГБ
 | не ограничено
@@ -199,14 +205,20 @@
 | 10 шт.
 | не ограничено
 
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) GZ1
+| Количество дисков High-IOPS HA SSD в проекте
+| **Диски High-IOPS HA SSD**
+| `volumes_high-iops-ha`
+| 10 шт.
+| не ограничено
+
+| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) GZ1 (legacy)
 | **Диски High-IOPS SSD в зоне - (DP1)**
 | `volumes_dp1-high-iops`
 | 10 шт.
 | не ограничено
 
-| Количество дисков High-IOPS SSD в зоне доступности MS1
-| **Диски High-IOPS SSD в зоне Москва (MS1)**
+| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) MS1 (legacy)
+| **Диски High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `volumes_ko1-high-iops`
 | 10 шт.
 | не ограничено
@@ -238,6 +250,11 @@
 |![](/ru/assets/check.svg "inline")
 
 |Размер одного диска High-IOPS SSD
+|* 2 TБ через личный кабинет,
+* 5 ТБ при помощи OpenStack CLI 
+|![](/ru/assets/no.svg "inline")
+
+|Размер одного диска High-IOPS HA SSD
 |* 2 TБ через личный кабинет,
 * 5 ТБ при помощи OpenStack CLI 
 |![](/ru/assets/no.svg "inline")
