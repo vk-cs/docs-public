@@ -992,66 +992,6 @@
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#delete_vm"
   ],
   [
-    "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/new-vm-concept#cpu_generations"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/computing/gpu/about"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/computing/iaas/tariffication"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/computing/vm-licenses"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/about#disks"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/new-volume-sla#disk_performance_testing"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/new-volume-sla#disk_performance_testing"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/new-volume-sla#disk_performance_testing"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/new-volume-sla#disk_performance_testing"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/new-volume-sla#disk_performance_testing"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
-  ],
-  [
-    "/en/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits"
-  ],
-  [
     "/en/computing/iaas/concepts/about",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#cpu_generations"
   ],
@@ -1082,6 +1022,10 @@
   [
     "/en/computing/iaas/concepts/volume-sla",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
+  ],
+  [
+    "/en/computing/iaas/concepts/volume-sla",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla#disk_performance_testing"
   ],
   [
     "/en/computing/iaas/concepts/volume-sla",
@@ -9512,70 +9456,6 @@
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
   ],
   [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-vm-concept#pokoleniya_processorov"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/computing/gpu/about"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/computing/iaas/tariffication"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/intro/start/architecture"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/vpn-tunnel"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/computing/vm-licenses"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits#images-volumes"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-volume-sla#testirovanie_proizvoditelnosti_diskov"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-volume-sla#testirovanie_proizvoditelnosti_diskov"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-volume-sla#testirovanie_proizvoditelnosti_diskov"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-volume-sla#testirovanie_proizvoditelnosti_diskov"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-volume-sla#testirovanie_proizvoditelnosti_diskov"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska"
-  ],
-  [
-    "/ru/computing/iaas/concepts/new-volume-sla",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
-  ],
-  [
     "/ru/computing/iaas/concepts/about",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#cpu_generations"
   ],
@@ -9629,6 +9509,10 @@
   ],
   [
     "/ru/computing/iaas/concepts/volume-sla",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/volume-sla#testirovanie_proizvoditelnosti_diskov"
+  ],
+  [
+    "/ru/computing/iaas/concepts/volume-sla",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska"
   ],
   [
@@ -9653,11 +9537,11 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -9937,7 +9821,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
   ],
   [
     "/ru/computing/iaas/service-management/volumes",
@@ -10261,7 +10145,7 @@
   ],
   [
     "/ru/computing/iaas/how-to-guides/packer",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/computing/iaas/how-to-guides/packer",
@@ -12693,11 +12577,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
@@ -12753,11 +12637,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12777,11 +12661,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12793,11 +12677,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12817,11 +12701,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12857,11 +12741,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12909,11 +12793,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -13849,7 +13733,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -15529,23 +15413,11 @@
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
-  ],
-  [
-    "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
-  ],
-  [
-    "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
-  ],
-  [
-    "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/intro/start/architecture#az"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
@@ -15561,15 +15433,27 @@
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
+    "http://localhost:3000/docs/ru/intro/start/architecture#az"
+  ],
+  [
+    "/ru/data-processing/kafka/service-management/create",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
+  ],
+  [
+    "/ru/data-processing/kafka/service-management/create",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/data-processing/kafka/service-management/create",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
   ],
   [
     "/ru/data-processing/kafka/tariffication",
@@ -15601,7 +15485,7 @@
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/create",
@@ -15633,7 +15517,7 @@
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/manage",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/manage",
@@ -15673,7 +15557,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/create",
@@ -15697,7 +15581,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/manage",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/manage",
@@ -15741,7 +15625,7 @@
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/service-management/create",
@@ -15769,7 +15653,7 @@
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/service-management/manage",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/service-management/manage",
@@ -15797,7 +15681,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -15873,7 +15757,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -15929,7 +15813,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -15985,7 +15869,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -16405,11 +16289,11 @@
   ],
   [
     "/ru/ml/spark-to-k8s/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/spark-to-k8s/service-management/create",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/ml/spark-to-k8s/service-management/launch",
@@ -18069,11 +17953,11 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
@@ -18081,7 +17965,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
@@ -18093,7 +17977,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
@@ -18109,7 +17993,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
@@ -18426,6 +18310,14 @@
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
@@ -18969,7 +18861,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
@@ -19733,7 +19625,7 @@
   ],
   [
     "/ru/cases/cases-gitlab/case-gitlab",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
     "/ru/cases/cases-gitlab/case-gitlab",

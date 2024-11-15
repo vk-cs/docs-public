@@ -52,8 +52,6 @@
 /docs/en/computing/iaas
 /docs/en/computing/iaas/quick-start
 /docs/en/computing/iaas/concepts
-/docs/en/computing/iaas/concepts/new-vm-concept
-/docs/en/computing/iaas/concepts/new-volume-sla
 /docs/en/computing/iaas/concepts/about
 /docs/en/computing/iaas/concepts/volume-sla
 /docs/en/computing/iaas/service-management

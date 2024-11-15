@@ -3557,8 +3557,8 @@
   "/en/base/iaas": "/en/computing/iaas",
   "/en/base/iaas/quick-start": "/en/computing/iaas/quick-start",
   "/en/base/iaas/concepts": "/en/computing/iaas/concepts",
-  "/en/base/iaas/concepts/new-vm-concept": "/en/computing/iaas/concepts/new-vm-concept",
-  "/en/base/iaas/concepts/new-volume-sla": "/en/computing/iaas/concepts/new-volume-sla",
+  "/en/base/iaas/concepts/new-vm-concept": "/en/computing/iaas/concepts/about",
+  "/en/base/iaas/concepts/new-volume-sla": "/en/computing/iaas/concepts/volume-sla",
   "/en/base/iaas/concepts/about": "/en/computing/iaas/concepts/about",
   "/en/base/iaas/concepts/volume-sla": "/en/computing/iaas/concepts/volume-sla",
   "/en/base/iaas/service-management": "/en/computing/iaas/service-management",
@@ -3615,8 +3615,8 @@
   "/ru/base/iaas": "/ru/computing/iaas",
   "/ru/base/iaas/quick-start": "/ru/computing/iaas/quick-start",
   "/ru/base/iaas/concepts": "/ru/computing/iaas/concepts",
-  "/ru/base/iaas/concepts/new-vm-concept": "/ru/computing/iaas/concepts/new-vm-concept",
-  "/ru/base/iaas/concepts/new-volume-sla": "/ru/computing/iaas/concepts/new-volume-sla",
+  "/ru/base/iaas/concepts/new-vm-concept": "/ru/computing/iaas/concepts/about",
+  "/ru/base/iaas/concepts/new-volume-sla": "/ru/computing/iaas/concepts/volume-sla",
   "/ru/base/iaas/concepts/about": "/ru/computing/iaas/concepts/about",
   "/ru/base/iaas/concepts/storage-types": "/ru/computing/iaas/concepts/storage-types",
   "/ru/base/iaas/concepts/volume-sla": "/ru/computing/iaas/concepts/volume-sla",
@@ -3865,5 +3865,9 @@
   "/ru/storage/backups/united-service-management/point-in-time-recovery-pitr": "/ru/storage/backups/service-management/point-in-time-recovery-pitr",
   "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr": "/ru/storage/backups/service-management/point-in-time-recovery-pitr",
   "/en/tools-for-using-services/account/service-management/activation": "/en/intro/start/account-registration",
-  "/ru/tools-for-using-services/account/service-management/activation": "/ru/intro/start/account-registration"
+  "/ru/tools-for-using-services/account/service-management/activation": "/ru/intro/start/account-registration",
+  "/en/computing/iaas/concepts/new-vm-concept": "/en/computing/iaas/concepts/about",
+  "/en/computing/iaas/concepts/new-volume-sla": "/en/computing/iaas/concepts/volume-sla",
+  "/ru/computing/iaas/concepts/new-vm-concept": "/ru/computing/iaas/concepts/about",
+  "/ru/computing/iaas/concepts/new-volume-sla": "/ru/computing/iaas/concepts/volume-sla"
 }

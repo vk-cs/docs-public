@@ -26089,13 +26089,13 @@
   },
   {
     "source": "/en/base/iaas/concepts/new-vm-concept",
-    "destination": "/en/computing/iaas/concepts/new-vm-concept",
+    "destination": "/en/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/concepts/new-volume-sla",
-    "destination": "/en/computing/iaas/concepts/new-volume-sla",
+    "destination": "/en/computing/iaas/concepts/volume-sla",
     "permanent": false,
     "locale": false
   },
@@ -26611,13 +26611,13 @@
   },
   {
     "source": "/ru/base/iaas/concepts/new-vm-concept",
-    "destination": "/ru/computing/iaas/concepts/new-vm-concept",
+    "destination": "/ru/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/concepts/new-volume-sla",
-    "destination": "/ru/computing/iaas/concepts/new-volume-sla",
+    "destination": "/ru/computing/iaas/concepts/volume-sla",
     "permanent": false,
     "locale": false
   },
@@ -28544,6 +28544,30 @@
   {
     "source": "/ru/tools-for-using-services/account/service-management/activation",
     "destination": "/ru/intro/start/account-registration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/iaas/concepts/new-vm-concept",
+    "destination": "/en/computing/iaas/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/iaas/concepts/new-volume-sla",
+    "destination": "/en/computing/iaas/concepts/volume-sla",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/iaas/concepts/new-vm-concept",
+    "destination": "/ru/computing/iaas/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/iaas/concepts/new-volume-sla",
+    "destination": "/ru/computing/iaas/concepts/volume-sla",
     "permanent": false,
     "locale": false
   }
