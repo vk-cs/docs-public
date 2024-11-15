@@ -5,6 +5,9 @@
     "metaTitle": "О сервисе",
     "metaDescription": "Cloud Servers — виртуальные машины, диски, зона доступности, операционная система, образ, файловое хранилище, резервная копия, лицензии",
     "sectionTitle": "О сервисе",
-    "weight": 2,
-    "uuid": "bd2e96b3-5691-42ce-ae50-b24df740d6d7"
+    "weight": 0,
+    "uuid": "27ea9318-c08e-4581-a709-9d3dba662280",
+    "additionalUuids": [
+        "bd2e96b3-5691-42ce-ae50-b24df740d6d7"
+    ]
 }

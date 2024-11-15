@@ -3,6 +3,7 @@ Various types of disks are used in the data storage system on the VK Cloud platf
 - HDD
 - SSD
 - High-IOPS SSD
+- High-IOPS HA SSD
 - Low Latency NVME
 
 Read more in the article [Cloud Servers overview](../about#disks).
@@ -18,10 +19,11 @@ For other types of disks, the delay value is approximate and is indicated for re
 
 | Disk type<br/>(name in the API) | Read, IOPS<br/>min.—max. | Read,<br/>IOPS/GB | Write, IOPS <br/>min.max. | Write,<br/>IOPS/GB | Latency, msec<br/>max.|
 |----|----|----|----|----|----|
-| Network HDD<br/>(ceph-hdd)     | 300–2400    | 1  | 150–800    | 1  | 20   |
-| Network SSD<br/>(ceph-ssd)     | 1000–16000  | 30 | 500–8000   | 15 | 3    |
-| High-IOPS SSD<br/>(high-iops)  | 10000–45000 | 30 | 5000–30000 | 25 | 1    |
-| Low Latency NVME<br/>(ef-nvme) | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
+| Network HDD<br/>(ceph-hdd)          | 300–2400    | 1  | 150–800    | 1  | 20   |
+| Network SSD<br/>(ceph-ssd)          | 1000–16000  | 30 | 500–8000   | 15 | 3    |
+| High-IOPS SSD<br/>(high-iops)       | 10000–45000 | 30 | 5000–30000 | 25 | 1    |
+| High-IOPS HA SSD<br/>(high-iops-ha) | 7500–35000  | 25 | 2000–12000 | 15 | 1    |
+| Low Latency NVME<br/>(ef-nvme)      | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
 
 <info>
 
@@ -77,6 +79,23 @@ Below are detailed performance characteristics for network High-IOPS SSD drives 
 | 1000         | 30000        | 500          | 25000        | 500          |
 | 1500         | 45000        | 500          | 30000        | 500          |
 | 2000         | 45000        | 500          | 30000        | 500          |
+
+Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) parameters.
+
+## High-IOPS HA SSD
+
+Below are detailed performance characteristics for network High-IOPS SSD HA drives of different sizes.
+
+| Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
+|--------------|--------------|--------------|--------------|--------------|
+| 10           | 7500         | 375          | 2000         | 250          |
+| 50           | 7500         | 375          | 2000         | 250          |
+| 100          | 7500         | 375          | 2000         | 250          |
+| 250          | 7500         | 375          | 3750         | 300          |
+| 500          | 12500        | 375          | 7500         | 300          |
+| 1000         | 25000        | 375          | 12000        | 300          |
+| 1500         | 35000        | 375          | 12000        | 300          |
+| 2000         | 35000        | 375          | 12000        | 300          |
 
 Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) parameters.
 

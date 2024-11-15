@@ -266,7 +266,7 @@
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. [Определите](../../concepts/about#tipy_diskov_c23be93f):
+1. [Определите](../../concepts/about#disk_types):
 
    - нужный тип диска;
    - его название в API;
