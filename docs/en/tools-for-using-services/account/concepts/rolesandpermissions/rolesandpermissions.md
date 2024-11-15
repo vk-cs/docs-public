@@ -85,6 +85,9 @@ However, this role has only read permissions for:
 
 This user can also create and edit rule groups (firewalls) in the Virtual networks service.
 
+| Junior VM administrator
+| A user with this role can perform the same operations as the virtual machine administrator, except for creating, editing, and deleting rule groups in the firewall settings.
+
 | Virtual machine operator
 | A user with this role can work on a virtual machine, but cannot manage its settings.
 
