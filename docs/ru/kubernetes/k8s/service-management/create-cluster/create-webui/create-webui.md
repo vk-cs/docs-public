@@ -99,7 +99,7 @@
 
    - Настройки master-узлов:
 
-     - **Категория виртуальной машины**: выберите категорию предустановленных конфигураций ВМ. Подробнее в [обзоре сервиса Cloud Servers](/ru/computing/iaas/concepts/about#shablony_konfiguraciy).
+     - **Категория виртуальной машины**: выберите категорию предустановленных конфигураций ВМ. Подробнее в [обзоре сервиса Cloud Servers](/ru/computing/iaas/concepts/about#flavors).
 
      - **Тип виртуальной машины Master:** [шаблон виртуальной машины](../../../concepts/flavors#shablony_konfiguracii) для master-узлов.
 

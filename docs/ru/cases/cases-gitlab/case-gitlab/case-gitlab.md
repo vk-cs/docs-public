@@ -24,7 +24,7 @@
      - имя: `OA-Ubuntu-docker`;
      - операционная система: Ubuntu 22.04;
      - сеть: `network1` с подсетью `10.0.0.0/24`;
-     - [шаблон конфигурации](/ru/computing/iaas/concepts/about#shablony_konfiguraciy): `STD2-4-12`;
+     - [шаблон конфигурации](/ru/computing/iaas/concepts/about#flavors): `STD2-4-12`;
      - сетевой HDD-диск: 50 ГБ;
      - публичный IP-адрес: назначен, далее будет использоваться `185.185.185.185`;
      - группы безопасности: `default`, `gitlab`.
