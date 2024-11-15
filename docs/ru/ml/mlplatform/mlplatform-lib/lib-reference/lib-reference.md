@@ -7,7 +7,7 @@
 
 ## get_flavors
 
-Получить список всех [шаблонов конфигурации ВМ](/ru/computing/iaas/concepts/about#shablony_konfiguraciy), доступных для создания инстансов JupyterHub, MLflow, MLflow Deploy.
+Получить список всех [шаблонов конфигурации ВМ](/ru/computing/iaas/concepts/about#flavors), доступных для создания инстансов JupyterHub, MLflow, MLflow Deploy.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
@@ -326,7 +326,7 @@ get_external_networks(**kwargs
 Каждый диск описывается объектом класса `MLPlatformVolumeIn` с полями:
 
 - `size`: объем диска в ГБ (тип `int`).
-- `volume_type`: [тип диска](/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
+- `volume_type`: [тип диска](/ru/computing/iaas/concepts/about#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
 - `availability_zone`: [зона доступности](/ru/intro/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 <warn>
@@ -640,7 +640,7 @@ attach_s3_bucket_to_jh(
 Каждый диск описывается объектом класса `MLPlatformVolumeIn` с полями:
 
 - `size`: объем диска в ГБ (тип `int`).
-- `volume_type`: [тип диска](/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
+- `volume_type`: [тип диска](/ru/computing/iaas/concepts/about#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
 - `availability_zone`: [зона доступности](/ru/intro/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 <warn>
@@ -870,7 +870,7 @@ create_mlflow(instance_name: str,
 Каждый диск описывается объектом класса `MLPlatformVolumeIn` с полями:
 
 - `size`: объем диска в ГБ (тип `int`).
-- `volume_type`: [тип диска](/ru/computing/iaas/concepts/about#tipy_diskov_c23be93f). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
+- `volume_type`: [тип диска](/ru/computing/iaas/concepts/about#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
 - `availability_zone`: [зона доступности](/ru/intro/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 <warn>
