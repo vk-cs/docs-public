@@ -829,36 +829,6 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/computing/iaas/concepts/new-vm-concept",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/new-vm-concept/new-vm-concept.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/new-vm-concept/new-vm-concept.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "857af423-bdae-4a4b-a6ab-6228144ba462",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/computing/iaas/concepts/new-volume-sla",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/new-volume-sla/new-volume-sla.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/new-volume-sla/new-volume-sla.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8a2a793c-233e-42f1-b47c-05748444a1e9",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
     "partialPath": "/en/computing/iaas/concepts/about",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/about/about.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/about/about.md",
@@ -870,7 +840,7 @@
     ]
   },
   {
-    "uuid": "813812a2-369d-429e-bf56-e865f9f57a1d",
+    "uuid": "857af423-bdae-4a4b-a6ab-6228144ba462",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
@@ -10369,11 +10339,11 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/computing/iaas/concepts/new-vm-concept",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/new-vm-concept/new-vm-concept.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/new-vm-concept/new-vm-concept.md",
+    "partialPath": "/ru/computing/iaas/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/about/about.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
@@ -10384,24 +10354,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/computing/iaas/concepts/new-volume-sla",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/new-volume-sla/new-volume-sla.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/new-volume-sla/new-volume-sla.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "bd2e96b3-5691-42ce-ae50-b24df740d6d7",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/computing/iaas/concepts/about",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/about/about.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/about/about.md",
+    "partialPath": "/ru/computing/iaas/concepts/volume-sla",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/volume-sla/volume-sla.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/volume-sla/volume-sla.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -10417,21 +10372,6 @@
     "partialPath": "/ru/computing/iaas/concepts/storage-types",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/storage-types/storage-types.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/storage-types/storage-types.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "9c45b518-ff23-4f0b-98ff-83301c7071e9",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/computing/iaas/concepts/volume-sla",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/volume-sla/volume-sla.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/concepts/volume-sla/volume-sla.md",
     "variables": {},
     "hidden": false,
     "version": null,
