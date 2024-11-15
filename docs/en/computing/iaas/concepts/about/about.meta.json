@@ -5,6 +5,9 @@
     "metaTitle": "About service",
     "metaDescription": "Cloud Servers — virtual machines, disks, availability zone, operating system, image, file storage, backup, licenses",
     "sectionTitle": "About service",
-    "weight": 2,
-    "uuid": "8a2a793c-233e-42f1-b47c-05748444a1e9"
+    "weight": 0,
+    "uuid": "2586c86d-9565-4346-ba85-17a52c1356b3",
+    "additionalUuids": [
+        "8a2a793c-233e-42f1-b47c-05748444a1e9"
+    ]
 }
