@@ -2815,7 +2815,7 @@
   "/ru/additionals/api/magnum-api": "/ru/tools-for-using-services/api/api-spec/magnum-api",
   "/ru/additionals/api/api-dns": "/ru/tools-for-using-services/api/api-spec/api-dns",
   "/ru/additionals/api/api-cdn": "/ru/tools-for-using-services/api/api-spec/api-cdn",
-  "/ru/additionals/api/partners-api": "/ru/tools-for-using-services/api/api-spec/partners-api",
+  "/ru/additionals/api/partners-api": "/ru/intro/start/partners",
   "/ru/additionals/api/vdi-api": "/ru/tools-for-using-services/api/api-spec/vdi-api",
   "/ru/additionals/billing/faq/qa-corporate": "/ru/intro/billing/faq",
   "/ru/additionals/billing/faq/qa-freeze": "/ru/intro/billing/faq",
@@ -3869,5 +3869,6 @@
   "/en/computing/iaas/concepts/new-vm-concept": "/en/computing/iaas/concepts/about",
   "/en/computing/iaas/concepts/new-volume-sla": "/en/computing/iaas/concepts/volume-sla",
   "/ru/computing/iaas/concepts/new-vm-concept": "/ru/computing/iaas/concepts/about",
-  "/ru/computing/iaas/concepts/new-volume-sla": "/ru/computing/iaas/concepts/volume-sla"
+  "/ru/computing/iaas/concepts/new-volume-sla": "/ru/computing/iaas/concepts/volume-sla",
+  "/ru/tools-for-using-services/api/api-spec/partners-api": "/ru/intro/start/partners"
 }

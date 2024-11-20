@@ -21453,21 +21453,6 @@
     ]
   },
   {
-    "uuid": "3f525128-b6e6-4dda-908e-83ad1e68b2c8",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/partners-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/partners-api/partners-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/partners-api/partners-api.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
     "lang": "ru",
     "type": "ARTICLE",
