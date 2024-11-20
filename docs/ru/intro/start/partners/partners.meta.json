@@ -7,10 +7,6 @@
   "sectionTitle": "Партнерам",
   "icon": "",
   "weight": 4,
-  "relativeSections": [
-    {
-      "partialPath": "/ru/tools-for-using-services/api/api-spec/partners-api"
-    }
-  ],
+  "additionalUuids": ["3f525128-b6e6-4dda-908e-83ad1e68b2c8"],
   "uuid": "6249aa71-381f-4ca7-9851-56039b514415"
 }
