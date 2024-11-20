@@ -20077,7 +20077,7 @@
   },
   {
     "source": "/ru/additionals/api/partners-api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/partners-api",
+    "destination": "/ru/intro/start/partners",
     "permanent": false,
     "locale": false
   },
@@ -28568,6 +28568,12 @@
   {
     "source": "/ru/computing/iaas/concepts/new-volume-sla",
     "destination": "/ru/computing/iaas/concepts/volume-sla",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/api/api-spec/partners-api",
+    "destination": "/ru/intro/start/partners",
     "permanent": false,
     "locale": false
   }

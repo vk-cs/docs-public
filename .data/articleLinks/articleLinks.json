@@ -19376,10 +19376,6 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
   ],
   [
-    "/ru/tools-for-using-services/api/api-spec/partners-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
     "/ru/tools-for-using-services/api/api-spec/vdi-api",
     "http://localhost:3000/docs/ru/computing/cloud-desktops"
   ],
