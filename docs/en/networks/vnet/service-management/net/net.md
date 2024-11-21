@@ -6,7 +6,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 </warn>
 
-## Viewing the list of networks and subnets and information about them
+## Viewing list of networks and subnets and information about them
 
 <tabs>
 <tablist>
@@ -65,7 +65,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 </tabpanel>
 </tabs>
 
-## Creating a network
+## Creating network
 
 <tabs>
 <tablist>
@@ -75,12 +75,12 @@ In addition to the cloud network, you can create subnets. By default, one networ
 <tabpanel>
 
 1. In management console, go to **Virtual networks** → **Networks**.
-2. Click the **Create** button.
-3. Set the network name.
-4. (Optional) Give access to the Internet. This is necessary if you plan to use VPN, SNAT services.
-5. Select a router from the suggested list.
-6. Specify the zone for private DNS.
-7. The default subnet is already created, but you can add more. If you need to add subnets later, skip this step.
+1. Click the **Create** button.
+1. Set the network name.
+1. (Optional) Give access to the Internet. This is necessary if you plan to use VPN, SNAT services.
+1. Select a router from the suggested list.
+1. Specify the zone for private DNS.
+7. (Optional) [Add subnets](#creating_subnet).
 8. Click the **Add Network** button.
 
 Once a network is created, it will appear in the list of networks.
@@ -99,7 +99,7 @@ Once a network is created, it will appear in the list of networks.
 </tabpanel>
 </tabs>
 
-## Editing a network
+## Editing network
 
 <tabs>
 <tablist>
@@ -119,7 +119,7 @@ Once a network is created, it will appear in the list of networks.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Get ID](#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the network you want to edit.
+1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the network you want to edit.
 
 1. Familiarize yourself with the command's help.
 
@@ -159,7 +159,7 @@ Once a network is created, it will appear in the list of networks.
 </tabpanel>
 </tabs>
 
-## Deleting a network
+## Deleting network
 
 <warn>
 
@@ -181,7 +181,7 @@ All the network subnets and ports will be deleted along with the network.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Get ID](#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the network you want to delete.
+1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the network you want to delete.
 
 1. Run the command:
 
@@ -192,7 +192,7 @@ All the network subnets and ports will be deleted along with the network.
 </tabpanel>
 </tabs>
 
-## Creating a subnet
+## Creating subnet
 
 <tabs>
 <tablist>
@@ -217,7 +217,7 @@ All the network subnets and ports will be deleted along with the network.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Get ID](#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the network in which you want to create a subnet.
+1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the network in which you want to create a subnet.
 
 1. Familiarize yourself with the command's help.
 
@@ -261,7 +261,7 @@ All the network subnets and ports will be deleted along with the network.
 </tabpanel>
 </tabs>
 
-## Editing a subnet
+## Editing subnet
 
 <tabs>
 <tablist>
@@ -281,7 +281,7 @@ All the network subnets and ports will be deleted along with the network.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Get ID](#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the subnet you want to edit.
+1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet you want to edit.
 
 1. To apply (`set`) the necessary settings to a subnet or to cancel them (`unset`):
 
@@ -329,7 +329,7 @@ All the network subnets and ports will be deleted along with the network.
 </tabpanel>
 </tabs>
 
-## Deleting a subnet
+## Deleting subnet
 
 <warn>
 
@@ -355,7 +355,7 @@ Once a subnet is deleted, it cannot be restored.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Get ID](#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the subnet you want to delete.
+1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet you want to delete.
 
 1. Run the command:
 

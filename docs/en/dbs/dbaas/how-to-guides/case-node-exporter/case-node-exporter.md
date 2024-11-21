@@ -10,7 +10,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 ## Preparatory steps
 
-1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network, for example, `monitoring-net`.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) a virtual network, for example, `monitoring-net`.
 1. [Create](/en/computing/iaas/service-management/vm/vm-create) VM for Prometheus server:
 
    - name: `Centos_8_5_Prometheus`;
@@ -195,4 +195,4 @@ The created resources are charged and quotas are spent. If you don't need them a
 1. [Delete](/en/applications-and-services/marketplace/service-management/pr-instance-manage#deleting_a_service_instance) a virtual machine with Grafana.
 1. [Remove](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `Centos_8_5_Prometheus` VM.
 1. [Delete](/en/networks/vnet/service-management/ports#deleting_a_port) the port to which the virtual IP address is assigned.
-1. [Delete](/en/networks/vnet/service-management/net#deleting_a_network) a `monitoring-net` network.
+1. [Delete](/en/networks/vnet/service-management/net#deleting_network) a `monitoring-net` network.

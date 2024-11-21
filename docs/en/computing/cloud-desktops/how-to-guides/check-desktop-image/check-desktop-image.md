@@ -11,7 +11,7 @@ The following shows how to check a custom desktop image for compatibility with t
      - the username and password of a LDAP user who has rights to add a VM to the domain.
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Create [a network](/en/networks/vnet/service-management/net#creating_a_network) and [a subnet](/en/networks/vnet/service-management/net#creating_a_subnet):
+1. Create [a network](/en/networks/vnet/service-management/net#creating_network) and [a subnet](/en/networks/vnet/service-management/net#creating_subnet):
 
      - Enable the **Access to internet** option.
      - If the image has AD support software installed:

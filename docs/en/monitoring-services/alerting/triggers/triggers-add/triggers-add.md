@@ -1,22 +1,29 @@
-Trigger - defines a rule that applies to the metric value and notification condition.
+Trigger defines a rule that applies to the metric value and notification condition.
 
-The trigger has a comparison interval. If it is set, then the metric value must fall under the condition during this interval in order for an incident to be created.
+The trigger has a comparison interval. If set, the metric value must satisfy the condition during that interval for an incident to be created.
 
 To create a trigger:
 
-1. Go to the "Alerting" page in the "Monitoring" section.
-2. On the "Triggers" tab, click the "Add Trigger" button.
-3. Fill in all the necessary fields:
-   - Give a name to the trigger.
-   - Select the resource type: virtual machine or database.
-   - Select the source and metric.
-   - Set the trigger conditions.
-   - Select the comparison interval.
-4. Click "Next Step". Here you need to select the notification channel.
-5. Click the "+ Add Channel" button.
-6. In the window that appears, select an existing channel from the suggested list or create a new one:
-   - Give it a name.
-   - Select the type of notification: phone or email.
-   - Enter the recipient's email or phone number.
-   7. Click the "Add Channel" button.
-7. Then click "Create Trigger".
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. Go to the **Monitoring → Alerts** section.
+1. Open the **Triggers** tab, click the **Add** button.
+1. Set the trigger parameters:
+
+   - **Trigger name**: enter a name for the trigger.
+   - **Resource type**: select the resource type from the list.
+   - **Source**: select the source (name of VM, DB, container, etc.) from the list.
+   - **Metric name**: select the metric from the list.
+   - **Trigger trigger condition**: select the operation from the list and specify the threshold value.
+   - **Comparison interval**: select from the list the interval during which the condition must be met for the trigger to work.
+
+1. Click the **Next step** button.
+1. Click the **Add channel** button.
+1. In the window that appears, select an existing channel from the list or select the **Create new channel** option.
+1. (Optional) Specify the parameters of the new notification channel:
+
+   - **Channel name**: enter a name for the channel.
+   - **Notification type**: select the `Email` or `SMS` option.
+   - **Recipient**: enter the email address or phone number of the notification recipient.
+
+1. Click the **Add channel** button.
+1. Click the **Create trigger** button.

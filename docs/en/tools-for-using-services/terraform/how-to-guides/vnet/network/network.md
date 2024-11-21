@@ -92,7 +92,7 @@ Here:
     <summary>Examples</summary>
 
   - `external_network_id = data.vkcs_networking_network.extnet.id`: the ID is taken from the `vkcs_networking_network` data source.
-  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: the ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: the ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
@@ -108,7 +108,7 @@ Here:
 
   - `network_id = vkcs_networking_network.example.id`: the subnet will be hosted on a new network, which will be created by the `vkcs_networking_network` resource.
   - `network_id = data.vkcs_networking_network.example.id`: the subnet will be hosted on the existed network, the ID is taken from the `vkcs_networking_network` data source.
-  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the subnet will be hosted on the existed network. The ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the subnet will be hosted on the existed network. The ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
@@ -145,7 +145,7 @@ Here:
 
   - `subnet_id = vkcs_networking_subnet.example.id`: the subnet ID will be taken after creating the `vkcs_networking_subnet` resource.
   - `subnet_id = data.vkcs_networking_subnet.example.id`: the subnet ID is taken from the `vkcs_networking_subnet` data source.
-  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the port ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the port ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 

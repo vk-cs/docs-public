@@ -27,8 +27,8 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 ## Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a network with the Internet access, if one has not already been created.
-1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with the Internet access, if one has not already been created.
+1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../service-management/pr-instance-add/) the UserGate NGFW service:
 
    - Select the previously created network with Internet access and subnet.
@@ -85,5 +85,5 @@ Recommendations for working with the service:
 The running service infrastructure consumes computing resources. If you no longer need it:
 
 - [Delete](../../service-management/pr-instance-manage#deleting_a_service_instance) the UserGate NGFW service instance.
-- [Delete](/en/networks/vnet/service-management/net#deleting_a_network) the network used for the service.
+- [Delete](/en/networks/vnet/service-management/net#deleting_network) the network used for the service.
 - [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address created during service deployment.

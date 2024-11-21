@@ -142,7 +142,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
 <tabpanel>
 
-Use the imported image to [create a Linux VM](/en/computing/iaas/service-management/vm/vm-create#create_a_vm):
+Use the imported image to [create a Linux VM](/en/computing/iaas/service-management/vm/vm-create):
 
 - when creating a VM in your management console, select an image from the list;
 - when creating via the OpenStack CLI, specify the image ID in the appropriate command.
@@ -151,10 +151,10 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/service-managem
 
 <tabpanel>
 
-1. Use the imported image to [create an intermediate Windows VM](/en/computing/iaas/service-management/vm/vm-create#create_a_vm).
+1. Use the imported image to [create an intermediate Windows VM](/en/computing/iaas/service-management/vm/vm-create).
 2. Add the VirtIO HBA driver to the Windows boot.
 
-   1. [Create a disk](/en/computing/iaas/service-management/volumes#creating_a_disk) minimum size and [connect](/en/computing/iaas/service-management/volumes#connecting_a_disk_to_a_vm) it to VM.
+   1. [Create a disk](/en/computing/iaas/service-management/volumes#create_disk) minimum size and [connect](/en/computing/iaas/service-management/volumes#mount_disk) it to VM.
    2. [Run](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the virtual machine.
    3. Run the VirtIO installer in `repair` mode.
    4. [Stop](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the virtual machine.
@@ -166,7 +166,7 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/service-managem
    openstack image set --property hw_disk_bus=virtio <new image ID>
    ```
 
-5. [Create a target Windows VM](/en/computing/iaas/service-management/vm/vm-create#create_a_vm) from a new image.
+5. [Create a target Windows VM](/en/computing/iaas/service-management/vm/vm-create) from a new image.
 6. Delete the intermediate VM created in step 1, as well as the imported image.
 
 </tabpanel>

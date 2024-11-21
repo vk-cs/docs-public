@@ -5,7 +5,7 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 ## Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_a_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
 1. [Create VM](/en/computing/iaas/service-management/vm/vm-create):
 
    - name: `Ubuntu_22_04_OpenCart`;

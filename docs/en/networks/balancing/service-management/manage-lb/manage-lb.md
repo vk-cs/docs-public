@@ -115,7 +115,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
-1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the subnet.
+1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet.
 
 1. Select the [availability zone](/en/intro/start/concepts/architecture#az) to place the balancer. To get the list of availability zones, run the command:
 
@@ -427,7 +427,7 @@ openstack loadbalancer <command> --help
 
       Write down the identifier of the created pool (`id`).
 
-   1. Find the IP addresses of the virtual machines that will be members of the pool. Also [find the ID](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) subnet where the virtual machines are located.
+   1. Find the IP addresses of the virtual machines that will be members of the pool. Also [find the ID](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) subnet where the virtual machines are located.
 
       These virtual machines must either be located on the subnet where the balancer for which the balancing rule is being created is located, or be accessible from that subnet.
 

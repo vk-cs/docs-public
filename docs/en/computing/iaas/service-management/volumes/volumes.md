@@ -1,8 +1,14 @@
-The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#creating-a-disk), later [connect](#connecting-a-disk-to-a-vm) to the necessary VMs. For created disks, the [resizing](#increasing-the-disk-size) and [changing](#changing-the-disk-type) disk type operations are available. Disks can be [shared between projects](#transfer-disks-between-projects) and virtual machines, [disconnect from VM](#disconnecting_a_disk_from_a_vm), [make bootable](#changing_the_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_a_disk).
+The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#creating-a-disk), later [connect](#connecting-a-disk-to-a-vm) to the necessary VMs. For created disks, the [resizing](#increasing-the-disk-size) and [changing](#changing-the-disk-type) disk type operations are available. Disks can be [shared between projects](#transfer-disks-between-projects) and virtual machines, [disconnect from VM](#disconnecting_disk_from_vm), [make bootable](#changing_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_disk).
 
-## Creating a disk
+## {heading(Creating disk)[id=create_disk]}
 
 Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about/).
+
+<info>
+
+Read the [Managing VM](/ru/computing/iaas/service-management/vm/vm-manage#mount_disk) section to know how to create a disk for a specific VM.
+
+</info>
 
 <tabs>
 <tablist>
@@ -13,39 +19,12 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Open the page with the required list of disks.
+1. Go to the **Cloud Servers** → **Disks** section.
+1. Above the list of disks, click **Create disk**.
 
-   - All disks: go to **Cloud Servers** → **Disks**.
+{include(/en/_includes/_disk_params.md)[tags=disk]}
 
-   - Disks of a specific virtual machine:
-
-      1. Go to **Cloud Servers** → **Virtual machines**.
-      2. In the list of virtual machines, click on the name of the VM for which you want to create a disk.
-      3. On the VM page, go to the **Disks** tab.
-
-3. Above the list of disks, click **Create disk**.
-4. Specify the disk parameters:
-
-   - **Disk Name**: required field. If necessary, click **Add description** and enter the text in the field that appears.
-   - **Source**: select the appropriate option for the parameter:
-
-      - **Empty disk**: fill in the parameters **Disk Type** and **Availability zone**.
-      - **Disk snapshot**: in the **List of snapshots** field, select the snapshot from which you want to create a disk.
-      - **Disk image**: fill in the parameters **Disk Type**, **Availability zone** and **Disk image**.
-      - **Disk**: in the **Cloning disk** field, select the required disk.
-
-   - **Size**: specify the disk size in gigabytes.
-   - **Boot disk**: enable the option if you need to make the disk bootable.
-
-      <info>
-
-      The boot disk can be used as the VM's main (root) disk or connected to the VM as an additional disk from which the operating system can be booted.
-
-      </info>
-
-   - **Connect disk to instance**: if you need to connect a disk to a VM immediately after creation, enable this option and select the VM you need in the field **Choose instance**.
-
-5. Click the **Create disk** button.
+1. Click the **Create disk** button.
 
 </tabpanel>
 
@@ -84,7 +63,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 </tabpanel>
 </tabs>
 
-## Increasing the disk size with rebooting
+## Increasing disk size with rebooting
 
 Restrictions related to changing the VM disk size on the VK Cloud platform:
 
@@ -163,9 +142,9 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 </tabpanel>
 </tabs>
 
-## Increasing the disk size without rebooting
+## Increasing disk size without rebooting
 
-1. [Increase](#increasing_the_disk_size_with_rebooting) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
+1. [Increase](#increasing_disk_size_with_rebooting) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
 1. Increase the size of disk partitions in the VM operating system:
 
    <tabs>
@@ -293,7 +272,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 </tabpanel>
 </tabs>
 
-## Changing the disk type
+## Changing disk type
 
 Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about/).
 
@@ -332,7 +311,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
    <info>
 
-   If the **Change disk type** option is not active, [disconnect the disk](#disconnecting_a_disk_from_a_vm) from the VM.
+   If the **Change disk type** option is not active, [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
    </info>
 
@@ -367,7 +346,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 </tabpanel>
 </tabs>
 
-## Changing the bootable attribute
+## Changing bootable attribute
 
 Make the disk bootable to use it as the VM's primary (root) disk. The boot disk can also be used as an additional VM disk to boot the operating system.
 
@@ -437,7 +416,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 </tabpanel>
 </tabs>
 
-## Connecting a disk to a VM
+## {heading(Connecting disk to VM)[id=mount_disk]}
 
 <tabs>
 
@@ -500,11 +479,11 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 </tabpanel>
 </tabs>
 
-## Disconnecting a disk from a VM
+## Disconnecting disk from VM
 
 <warn>
 
-To disable the VM's main (root) disk, use the option [Replacing the root disk](#replacing_the_root_disk).
+To disable the main (root) disk of the VM, use the [Replacing the root disk](#replacing_root_disk) option.
 
 </warn>
 
@@ -576,7 +555,7 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 </tabpanel>
 </tabs>
 
-## Replacing the root disk
+## Replacing root disk
 
 Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_vm).
 
@@ -590,7 +569,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk that will be used to replace the main one.
+2. [Disconnect from VM](#disconnecting_disk_from_vm) the disk that will be used to replace the main one.
 3. [Clone](#cloning_disk) the target disk if necessary.
 4. Open the page with the required list of disks.
 
@@ -619,7 +598,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
    <warn>
 
-   If the required disk is not in the list, check that it is [disconnected from the VM](#disconnecting_a_disk_from_a_vm).
+   If the required disk is not in the list, check that it is [disconnected from the VM](#disconnecting_disk_from_vm).
 
    </warn>
 
@@ -644,8 +623,8 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 4. Check the parameters of the disk that is selected to replace the main one:
 
-   - The disk is disconnected from the VM (`Status`: `available`). If not, [disconnect the disk](#disconnecting_a_disk_from_a_vm).
-   - The disk is bootable (`Bootable`: `true`). If not, [make it bootable](#changing_the_bootable_attribute).
+   - The disk is disconnected from the VM (`Status`: `available`). If not, [disconnect the disk](#disconnecting_disk_from_vm).
+   - The disk is bootable (`Bootable`: `true`). If not, [make it bootable](#changing_bootable_attribute).
 
 5. Copy the ID of the selected disk.
 6. Run the command to replace the main disk:
@@ -677,7 +656,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to it (to both projects).
 
 2. Sign in to the project you want to move the disk from.
-3. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk to be moved.
+3. [Disconnect from VM](#disconnecting_disk_from_vm) the disk to be moved.
 4. View the list of disks:
 
    ```bash
@@ -729,9 +708,9 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 </tabpanel>
 </tabs>
 
-## Deleting a disk
+## Deleting disk
 
-Before deleting [disconnect the disk](#disconnecting_a_disk_from_a_vm) from the VM.
+Before deleting [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
 <err>
 
@@ -785,7 +764,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting_a_disk_from_a_vm).
+2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting_disk_from_vm).
 
 3. Copy the disk ID.
 
@@ -802,7 +781,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 A disk snapshot is a file that stores a copy of a disk taken at a certain point in time. The snapshot can be used to create a new VM or a new disk.
 
-### Creating a snapshot
+### Creating snapshot
 
 <tabs>
 

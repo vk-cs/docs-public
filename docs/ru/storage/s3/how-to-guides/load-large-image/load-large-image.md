@@ -33,7 +33,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
-1. [Создайте](/ru/computing/iaas/service-management/volumes#sozdanie_diska) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm) его к ВМ.
+1. [Создайте](/ru/computing/iaas/service-management/volumes#create_disk) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/service-management/volumes#mount_disk) его к ВМ.
 
 ## 1. Загрузите образ из локальной машины в объектное хранилище
 
@@ -144,7 +144,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 1. [Замените основной диск](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) ВМ на диск с помещенным на него образом ОС.
 1. [Запустите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
 
-Вы также можете [отключить](/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену основного диска](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) другой ВМ.  
+Вы также можете [отключить](/ru/computing/iaas/service-management/volumes#mount_disk) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену основного диска](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) другой ВМ.  
 
 ## Удалите неиспользуемые ресурсы
 

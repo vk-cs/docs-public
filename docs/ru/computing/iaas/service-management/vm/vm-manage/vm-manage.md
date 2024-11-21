@@ -596,6 +596,61 @@ systemctl status qemu-guest-agent
       ```bash
       ssh -i <путь к файлу с приватным ключом> <логин>@<внешний IP-адрес ВМ>
       ```
+## {heading(Подключение диска к ВМ)[id=mount_disk]}
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+
+<tabpanel>
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**. 
+1. Нажмите на имя ВМ, которой нужно подключить диск.
+1. Перейдите на вкадку **Диски**.   
+1. Подключите диск к ВМ:
+
+   <tabs>
+   <tablist>
+   <tab>Существующий диск</tab>
+   <tab>Новый диск</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Нажмите кнопку **Подключить диск**.
+   1. В открывшемся окне выберите из списка диск, который нужно подключить к ВМ, и нажмите кнопку **Подключить диск**.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Нажмите кнопку **Создать диск**.
+    
+    {include(/ru/_includes/_disk_params.md)[tags=vm]}
+
+   1. Нажмите кнопку **Создать диск**.
+
+   </tabpanel>
+   </tabs>
+</tabpanel>
+
+<tabpanel>
+
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+
+1. [Создайте диск](/ru/computing/iaas/service-management/volumes#create_disk), если он еще не создан. Сохраните его ID.
+
+1. [Подключите диск](/ru/computing/iaas/service-management/volumes#mount_disk) к ВМ.
+
+</tabpanel>
+</tabs>
+
+<info>
+
+Создание диска без привязки ВМ описано в разделе [Диски](/ru/computing/iaas/service-management/volumes).
+
+</info>
 
 ## Просмотр журнала событий
 
