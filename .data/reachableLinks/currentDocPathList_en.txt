@@ -481,8 +481,8 @@
 /docs/en/monitoring-services/alerting/notification/notification-add
 /docs/en/monitoring-services/alerting/notification/notification-edit
 /docs/en/monitoring-services/alerting/triggers
-/docs/en/monitoring-services/alerting/triggers/trigger-edit
 /docs/en/monitoring-services/alerting/triggers/triggers-add
+/docs/en/monitoring-services/alerting/triggers/trigger-edit
 /docs/en/monitoring-services/alerting/triggers/trigger-start
 /docs/en/monitoring-services/alerting/incidents
 /docs/en/monitoring-services/monitoring
@@ -550,6 +550,7 @@
 /docs/en/tools-for-using-services/account/concepts/regions
 /docs/en/tools-for-using-services/account/service-management
 /docs/en/tools-for-using-services/account/service-management/project-invitation
+/docs/en/tools-for-using-services/account/service-management/catalog
 /docs/en/tools-for-using-services/account/service-management/project-settings
 /docs/en/tools-for-using-services/account/service-management/project-settings/create
 /docs/en/tools-for-using-services/account/service-management/project-settings/manage

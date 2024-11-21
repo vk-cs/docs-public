@@ -7260,13 +7260,13 @@
     ]
   },
   {
-    "uuid": "cd0b257a-1b2d-4917-85bb-c45eee8975ee",
+    "uuid": "50192b5c-7e36-44d5-bfca-10284414836b",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/monitoring-services/alerting/triggers/trigger-edit",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/trigger-edit/trigger-edit.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/trigger-edit/trigger-edit.md",
+    "partialPath": "/en/monitoring-services/alerting/triggers/triggers-add",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/triggers-add/triggers-add.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/triggers-add/triggers-add.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -7275,13 +7275,13 @@
     ]
   },
   {
-    "uuid": "50192b5c-7e36-44d5-bfca-10284414836b",
+    "uuid": "cd0b257a-1b2d-4917-85bb-c45eee8975ee",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/monitoring-services/alerting/triggers/triggers-add",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/triggers-add/triggers-add.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/triggers-add/triggers-add.md",
+    "partialPath": "/en/monitoring-services/alerting/triggers/trigger-edit",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/trigger-edit/trigger-edit.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/trigger-edit/trigger-edit.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -8287,6 +8287,21 @@
     "partialPath": "/en/tools-for-using-services/account/service-management/project-invitation",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/project-invitation/project-invitation.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/project-invitation/project-invitation.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b5470d59-d6af-4ca0-bd78-c2b4775e0887",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/account/service-management/catalog",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/catalog/catalog.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/catalog/catalog.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -9420,51 +9435,6 @@
     ]
   },
   {
-    "uuid": "55eb9967-05ce-4436-87ff-574691574580",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/ru/intro/start/support",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "40b9cfd6-bbcb-4aa1-b69b-a0af91f885cd",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/intro/start/support/support-info",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support-info/support-info.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support-info/support-info.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "294ebc83-b5fa-41d0-9c53-2b24ffe9fa21",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/intro/start/support/sla",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/sla/sla.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/sla/sla.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "6249aa71-381f-4ca7-9851-56039b514415",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -9502,6 +9472,51 @@
     "partialPath": "/ru/intro/start/partners/partners-profile",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/partners/partners-profile/partners-profile.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/partners/partners-profile/partners-profile.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "55eb9967-05ce-4436-87ff-574691574580",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/intro/start/support",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "40b9cfd6-bbcb-4aa1-b69b-a0af91f885cd",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/start/support/support-info",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support-info/support-info.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/support-info/support-info.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "294ebc83-b5fa-41d0-9c53-2b24ffe9fa21",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/start/support/sla",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/sla/sla.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/sla/sla.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -18532,6 +18547,21 @@
     "partialPath": "/ru/tools-for-using-services/account/service-management/project-settings/access-manage",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage/access-manage.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage/access-manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a9fc2f69-73d9-4825-989b-125f026e24a2",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/account/service-management/catalog",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/catalog/catalog.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/catalog/catalog.md",
     "variables": {},
     "hidden": false,
     "version": null,

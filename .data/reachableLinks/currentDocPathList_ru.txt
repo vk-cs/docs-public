@@ -4,12 +4,12 @@
 /docs/ru/intro/start/concepts/glossary
 /docs/ru/intro/start/concepts/architecture
 /docs/ru/intro/start/account-registration
-/docs/ru/intro/start/support
-/docs/ru/intro/start/support/support-info
-/docs/ru/intro/start/support/sla
 /docs/ru/intro/start/partners
 /docs/ru/intro/start/partners/about-partners
 /docs/ru/intro/start/partners/partners-profile
+/docs/ru/intro/start/support
+/docs/ru/intro/start/support/support-info
+/docs/ru/intro/start/support/sla
 /docs/ru/intro/start/legal
 /docs/ru/intro/start/legal/legal-terms
 /docs/ru/intro/start/legal/policy-hotbox
@@ -612,6 +612,7 @@
 /docs/ru/tools-for-using-services/account/service-management/project-settings/create
 /docs/ru/tools-for-using-services/account/service-management/project-settings/manage
 /docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage
+/docs/ru/tools-for-using-services/account/service-management/catalog
 /docs/ru/tools-for-using-services/account/service-management/notifications-view
 /docs/ru/tools-for-using-services/account/service-management/actionslogs
 /docs/ru/tools-for-using-services/account/service-management/debugging

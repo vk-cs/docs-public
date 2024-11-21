@@ -369,15 +369,15 @@
   ],
   [
     "/en/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create#create_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/en/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create#create_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/en/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#connecting_a_disk_to_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#mount_disk"
   ],
   [
     "/en/intro/migration/migrate-vmware",
@@ -393,7 +393,7 @@
   ],
   [
     "/en/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create#create_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/en/intro/billing/quick-start",
@@ -1045,7 +1045,7 @@
   ],
   [
     "/en/computing/iaas/concepts/volume-sla",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/computing/iaas/concepts/volume-sla",
@@ -1069,6 +1069,10 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-create",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
   ],
   [
@@ -1081,7 +1085,7 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/images/images-manage"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/images/images-manage#importing_an_image"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
@@ -1201,11 +1205,11 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-manage",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-manage",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-manage",
@@ -1250,6 +1254,22 @@
   [
     "/en/computing/iaas/service-management/vm/vm-manage",
     "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#create_disk"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#mount_disk"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-add-net",
@@ -1309,11 +1329,15 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#deleting_a_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#deleting_disk"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about"
+  ],
+  [
+    "/en/computing/iaas/service-management/volumes",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#mount_disk"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1337,7 +1361,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#increasing_the_disk_size_with_rebooting"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#increasing_disk_size_with_rebooting"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1361,7 +1385,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1381,7 +1405,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1393,7 +1417,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1401,7 +1425,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1413,23 +1437,11 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_the_bootable_attribute"
-  ],
-  [
-    "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
-  ],
-  [
-    "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
-  ],
-  [
-    "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_bootable_attribute"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1437,7 +1449,19 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
+  ],
+  [
+    "/en/computing/iaas/service-management/volumes",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
+  ],
+  [
+    "/en/computing/iaas/service-management/volumes",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/computing/iaas/service-management/volumes",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1446,6 +1470,10 @@
   [
     "/en/computing/iaas/service-management/volumes",
     "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/computing/iaas/service-management/images/images-manage",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
   ],
   [
     "/en/computing/iaas/service-management/images/images-manage",
@@ -1462,6 +1490,10 @@
   [
     "/en/computing/iaas/service-management/images/images-manage",
     "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/en/computing/iaas/service-management/images/images-manage",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
   ],
   [
     "/en/computing/iaas/service-management/images/image-metadata",
@@ -1593,7 +1625,7 @@
   ],
   [
     "/en/computing/iaas/how-to-guides/disk-encrypt",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#connecting_a_disk_to_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#mount_disk"
   ],
   [
     "/en/computing/iaas/how-to-guides/disk-encrypt",
@@ -1605,7 +1637,7 @@
   ],
   [
     "/en/computing/iaas/how-to-guides/disk-encrypt",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/computing/iaas/how-to-guides/disk-encrypt",
@@ -1669,7 +1701,7 @@
   ],
   [
     "/en/computing/iaas/how-to-guides/packer",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/computing/iaas/how-to-guides/packer",
@@ -1773,15 +1805,15 @@
   ],
   [
     "/en/computing/iaas/faq",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#increasing_the_disk_size_with_rebooting"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#increasing_disk_size_with_rebooting"
   ],
   [
     "/en/computing/iaas/faq",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_the_disk_type"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_disk_type"
   ],
   [
     "/en/computing/iaas/faq",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_a_disk_from_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#disconnecting_disk_from_vm"
   ],
   [
     "/en/computing/iaas/faq",
@@ -1793,7 +1825,7 @@
   ],
   [
     "/en/computing/iaas/faq",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/computing/iaas/faq",
@@ -1953,7 +1985,7 @@
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/ipsec",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/ipsec",
@@ -1973,7 +2005,7 @@
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/ipsec",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
@@ -1981,7 +2013,7 @@
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_subnet"
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
@@ -2201,7 +2233,7 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_subnet"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2209,7 +2241,11 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2217,7 +2253,7 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2225,7 +2261,7 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2233,7 +2269,7 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2241,7 +2277,7 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/vnet/service-management/shared-nets",
@@ -2637,7 +2673,7 @@
   ],
   [
     "/en/networks/vnet/how-to-guides/vpn-tunnel",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
     "/en/networks/vnet/how-to-guides/vpn-tunnel",
@@ -2649,7 +2685,7 @@
   ],
   [
     "/en/networks/vnet/how-to-guides/vip-keepalived",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_subnet"
   ],
   [
     "/en/networks/vnet/how-to-guides/vip-keepalived",
@@ -2681,7 +2717,7 @@
   ],
   [
     "/en/networks/vnet/how-to-guides/vip-keepalived",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
     "/en/networks/vnet/tariffication",
@@ -2737,7 +2773,7 @@
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
@@ -2793,7 +2829,7 @@
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
@@ -2961,11 +2997,11 @@
   ],
   [
     "/en/networks/directconnect/how-to-guides/advanced-router",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_subnet"
   ],
   [
     "/en/storage/s3/quick-start",
-    "http://localhost:3000/docs/en/storage/s3/quick-start#udalite_neispolzuemye_resursy"
+    "http://localhost:3000/docs/en/storage/s3/quick-start#delete_unused_resources"
   ],
   [
     "/en/storage/s3/quick-start",
@@ -2973,11 +3009,11 @@
   ],
   [
     "/en/storage/s3/quick-start",
-    "http://localhost:3000/docs/en/storage/s3/quick-start#2_dobavte_obekt_s_privatnymi_nastroykami_acl_i_predostavte_dostup_k_nemu"
+    "http://localhost:3000/docs/en/storage/s3/quick-start#2_add_object_with_private_acl_settings_and_grant_access_to_it"
   ],
   [
     "/en/storage/s3/quick-start",
-    "http://localhost:3000/docs/en/storage/s3/quick-start#3_dobavte_obekt_s_publichnymi_nastroykami_acl_i_predostavte_dostup_k_nemu"
+    "http://localhost:3000/docs/en/storage/s3/quick-start#3_add_object_with_public_acl_settings_and_grant_access_to_it"
   ],
   [
     "/en/storage/s3/quick-start",
@@ -3213,7 +3249,7 @@
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#connecting_a_disk_to_a_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#mount_disk"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
@@ -3221,15 +3257,19 @@
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_the_bootable_attribute"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_bootable_attribute"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
+  ],
+  [
+    "/en/storage/s3/how-to-guides/load-large-image",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_root_disk"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
@@ -3241,7 +3281,7 @@
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#deleting_a_disk"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#deleting_disk"
   ],
   [
     "/en/storage/s3/tariffication",
@@ -3445,7 +3485,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
@@ -3469,7 +3509,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3565,7 +3605,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3605,7 +3645,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3621,7 +3661,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3673,7 +3713,7 @@
   ],
   [
     "/en/dbs/dbaas/how-to-guides/case-node-exporter",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/dbs/dbaas/how-to-guides/case-node-exporter",
@@ -3717,7 +3757,7 @@
   ],
   [
     "/en/dbs/dbaas/how-to-guides/case-node-exporter",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
     "/en/dbs/dbaas/monitoring/postgresql",
@@ -4409,7 +4449,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/networks/vnet/networks/create-net#creating_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/networks/create-net#creating_subnet"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -6660,6 +6700,10 @@
     "http://localhost:3000/docs/en/monitoring-services/logging/concepts/search-tools"
   ],
   [
+    "/en/monitoring-services/alerting/triggers/trigger-start",
+    "http://localhost:3000/docs/monitoring-services/alerting/triggers/triggers-add"
+  ],
+  [
     "/en/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
   ],
@@ -6841,7 +6885,7 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
@@ -6885,7 +6929,7 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
@@ -6893,11 +6937,11 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_subnet"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
@@ -6917,7 +6961,7 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
@@ -6929,11 +6973,11 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/nexus-3-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/nexus-3-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_subnet"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/nexus-3-start",
@@ -6945,11 +6989,11 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/grafana-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/grafana-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_subnet"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/grafana-start",
@@ -6965,11 +7009,11 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/redash-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/redash-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_subnet"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/redash-start",
@@ -6985,11 +7029,11 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_subnet"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
@@ -7001,11 +7045,11 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_subnet"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
@@ -7689,7 +7733,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
@@ -7709,7 +7753,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
@@ -7733,7 +7777,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
@@ -7765,11 +7809,11 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
@@ -7789,7 +7833,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
@@ -7873,7 +7917,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
@@ -7881,7 +7925,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
@@ -7893,11 +7937,11 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/reference/configuration",
@@ -8029,7 +8073,7 @@
   ],
   [
     "/en/cases/cases-cms/cases-wp",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/cases/cases-cms/cases-wp",
@@ -8073,7 +8117,7 @@
   ],
   [
     "/en/cases/cases-cms/cases-joomla",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/cases/cases-cms/cases-joomla",
@@ -8117,7 +8161,7 @@
   ],
   [
     "/en/cases/cases-cms/cases-opencart",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/cases/cases-cms/cases-opencart",
@@ -8161,7 +8205,7 @@
   ],
   [
     "/en/cases/cases-cms/cases-bitrix",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/cases/cases-cms/cases-bitrix",
@@ -8217,7 +8261,7 @@
   ],
   [
     "/en/cases/cases-gitlab/case-gitlab",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/cases/cases-gitlab/case-gitlab",
@@ -8277,7 +8321,7 @@
   ],
   [
     "/en/cases/cases-lamp",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/cases/cases-lamp",
@@ -8512,6 +8556,14 @@
     "http://localhost:3000/docs/ru/dbs/dbaas/start"
   ],
   [
+    "/ru/intro/start/partners/about-partners",
+    "http://localhost:3000/docs/ru/intro/start/partners/partners-profile"
+  ],
+  [
+    "/ru/intro/start/partners/partners-profile",
+    "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
+  ],
+  [
     "/ru/intro/start/support/support-info",
     "http://localhost:3000/docs/ru/intro/start/support/sla"
   ],
@@ -8526,14 +8578,6 @@
   [
     "/ru/intro/start/support/support-info",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/faq"
-  ],
-  [
-    "/ru/intro/start/partners/about-partners",
-    "http://localhost:3000/docs/ru/intro/start/partners/partners-profile"
-  ],
-  [
-    "/ru/intro/start/partners/partners-profile",
-    "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
   ],
   [
     "/ru/intro/start/legal/policy-hotbox",
@@ -8761,15 +8805,15 @@
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#mount_disk"
   ],
   [
     "/ru/intro/migration/migrate-vmware",
@@ -8785,7 +8829,7 @@
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/ru/intro/billing/quick-start",
@@ -9537,6 +9581,10 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
   ],
   [
@@ -9549,7 +9597,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#import_obraza"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -9717,6 +9765,22 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#create_disk"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#mount_disk"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-manage",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
   ],
   [
@@ -9782,6 +9846,10 @@
   [
     "/ru/computing/iaas/service-management/volumes",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about"
+  ],
+  [
+    "/ru/computing/iaas/service-management/volumes",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#mount_disk"
   ],
   [
     "/ru/computing/iaas/service-management/volumes",
@@ -9917,6 +9985,10 @@
   ],
   [
     "/ru/computing/iaas/service-management/images/images-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
+  ],
+  [
+    "/ru/computing/iaas/service-management/images/images-manage",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#operacionnaya_sistema"
   ],
   [
@@ -9930,6 +10002,10 @@
   [
     "/ru/computing/iaas/service-management/images/images-manage",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/computing/iaas/service-management/images/images-manage",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
   ],
   [
     "/ru/computing/iaas/service-management/images/image-metadata",
@@ -10061,7 +10137,7 @@
   ],
   [
     "/ru/computing/iaas/how-to-guides/disk-encrypt",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#mount_disk"
   ],
   [
     "/ru/computing/iaas/how-to-guides/disk-encrypt",
@@ -10698,6 +10774,10 @@
   [
     "/ru/networks/vnet/service-management/net",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_podseti"
   ],
   [
     "/ru/networks/vnet/service-management/net",
@@ -12257,7 +12337,7 @@
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#mount_disk"
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
@@ -17513,7 +17593,7 @@
   ],
   [
     "/ru/monitoring-services/alerting/triggers/trigger-start",
-    "http://localhost:3000/docs/monitoring-services/alerting/triggers/trigger-edit"
+    "http://localhost:3000/docs/monitoring-services/alerting/triggers/triggers-add"
   ],
   [
     "/ru/monitoring-services/monitoring/quick-start",
