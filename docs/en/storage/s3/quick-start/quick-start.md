@@ -1,139 +1,132 @@
-Быстрый старт поможет вам начать работу с сервисом и познакомиться с его возможностями.
+Quick Start will help you get started with the service and get acquainted with its capabilities.
 
-Пройдя все шаги быстрого старта, вы научитесь загружать объекты в бакет и предоставлять доступ к загруженным объектам по ссылке.
+After completing all the steps of the quick start, you will learn how to upload objects to a bucket and provide access to the uploaded objects via a link.
 
 <warn>
 
-Загруженные в бакет объекты [тарифицируются](../tariffication). После прохождения быстрого старта [удалите эти объекты и бакет](#udalite_neispolzuemye_resursy), если они вам больше не нужны.
+Objects uploaded to the bucket [are subject to tariffication](../tariffication). After completing the quick start, [delete these objects and the bucket](#delete_unused_resources) if you no longer need them.
 
 </warn>
 
-## Подготовительные шаги
+## Before you start
 
-1. Убедитесь, что [AWS CLI](https://aws.amazon.com/ru/cli/) установлен.
+1. Make sure the [AWS CLI](https://aws.amazon.com/en/cli/) is installed.
+1. Create an account for the Cloud Storage service:
 
-1. Создайте аккаунт для сервиса Cloud Storage:
+   1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/).
+   1. Select a project.
+   1. Go to the **Object Storage → Accounts** section.
+   1. Click the **Add account** or **Add** button.
+   1. Specify an account name.
+   1. Click the **Create** button.
+   1. In the window, copy and save the **Access Key ID** and **Secret Key** values.
 
-   1. Перейдите в [личный кабинет](https://msk.cloud.vk.com/app/) VK Cloud.
-   1. Выберите проект.
-   1. Перейдите в раздел **Объектное хранилище → Аккаунты**.
-   1. Нажмите кнопку **Добавить аккаунт** или **Добавить**.
-   1. Задайте имя аккаунта.
-   1. Нажмите кнопку **Создать**.
-   1. В окне скопируйте и сохраните значения **Access Key ID** и **Secret Key**.
+   <warn>
 
-      <warn>
+   After you close the window, the **Secret Key** value cannot be restored. If the value is lost, create a new account.
 
-      После закрытия окна значение **Secret Key** нельзя будет восстановить. Если значение утеряно, создайте новый аккаунт.
+   </warn>
 
-      </warn>
+1. Configure the AWS CLI to work with the created account:
 
-1. Настройте AWS CLI на работу с созданным аккаунтом:
+   1. Run the command:
 
-   1. Выполните команду:
+   ```bash
+   aws configure
+   ```
 
-      ```bash
-      aws configure
-      ```
+1. Configure the settings:
 
-   1. Задайте необходимые настройки:
+   - `AWS Access Key ID`: enter the previously saved **Access Key ID** value.
+   - `AWS Secret Access Key`: enter the previously saved **Secret Key** value.
+   - `Default region name`: enter `ru-msk`.
+   - `Default output format`: enter `json`.
 
-      1. `AWS Access Key ID`: введите сохраненное ранее значение **Access Key ID**.
-      1. `AWS Secret Access Key`: введите сохраненное ранее значение **Secret Key**.
-      1. `Default region name`: введите `ru-msk`.
-      1. `Default output format`: введите `json`.
+## 1. Create bucket
 
-## 1. Создайте бакет
+1. Go to your VK Cloud [management console](https://cloud.vk.com/app/).
+1. Select a project.
+1. Go to **Object Storage → Buckets**.
+1. Click the **Create bucket** or **Add** button.
+1. Specify a name for the bucket.
+1. Select the `Hotbox` storage class.
+1. Select the default ACL setting `private`.
+1. Click the **Add bucket** button.
 
-1. Перейдите в [личный кабинет](https://msk.cloud.vk.com/app/) VK Cloud.
-1. Выберите проект.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите кнопку **Создать бакет** или **Добавить**.
-1. Задайте название бакета.
-1. Выберите класс хранения `Hotbox`.
-1. Выберите настройку ACL по умолчанию `private`.
-1. Нажмите кнопку **Добавить бакет**.
+## 2. Add object with private ACL settings and grant access to it
 
-## 2. Добавьте объект с приватными настройками ACL и предоставьте доступ к нему
+1. Add an object:
 
-1. Добавьте объект:
+   1. In your VK Cloud [management console](https://cloud.vk.com/app/) go to the **Object storage → Buckets** section.
+   1. Click on the name of the created bucket.
+   1. Click the **Add file** button.
+   1. Make sure that the `private` ACL settings are selected.
+1. Click the **Select files** button and select the file to upload to the bucket.
 
-   1. Перейдите в [личный кабинет](https://msk.cloud.vk.com/app/) VK Cloud.
-   1. Выберите проект, где находится созданный бакет.
-   1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-   1. Нажмите на имя созданного бакета.
-   1. Нажмите кнопку **Добавить файл**.
-   1. Убедитесь, что выбраны настройки ACL `private`.
-   1. Нажмите кнопку **Выбрать файлы** и выберите файл, который нужно загрузить в бакет.
+1. Provide access to the uploaded object via a temporary [signed link](../service-management/objects/signed-url):
 
-1. Предоставьте доступ к загруженному объекту по временной [подписанной ссылке](../service-management/objects/signed-url):
+1. Generate a temporary link to access the object with private ACL settings by running the command:
 
-   1. Сгенерируйте временную ссылку для доступа к объекту с приватными настройками ACL, выполнив команду:
+   ```bash
+   aws s3 presign s3://<bucket name>/<object name> --endpoint-url https://hb.bizmrg.com
+   ```
 
-      ```bash
-      aws s3 presign s3://<название бакета>/<имя объекта> --endpoint-url https://hb.bizmrg.com
-      ```
+   <details>
+   <summary>Example</summary>
 
-      <details>
-      <summary>Пример</summary>
+   Let's the object `cat_image_private_acl.png` was uploaded to the bucket `my-cloud-bucket`.
 
-      Пусть в бакет `my-cloud-bucket` был загружен объект `cat_image_private_acl.png`.
+   Then the command will look like:
 
-      Тогда команда будет иметь вид:
+   ```bash
+   aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.bizmrg.com
+   ```
 
-      ```bash
-      aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.bizmrg.com
-      ```
+   </details>
 
-      </details>
+1. Save the generated temporary link.
 
-   1. Сохраните сгенерированную временную ссылку.
+   The link looks like this:
 
-      Ссылка имеет следующий вид:
+   ```http
+   https://hb.bizmrg.com/<bucket name>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
+   ```
 
-      ```http
-      https://hb.bizmrg.com/<название бакета>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
-      ```
+   <info>
 
-      <info>
+   Such a link is valid for a limited time (by default 1 hour). After this time, you need to generate a new link.
 
-      Такая ссылка действует ограниченное время (по умолчанию 1 час). По истечении этого времени нужно будет сгенерировать новую ссылку на объект.
+   </info>
 
-      </info>
+## 3. Add object with public ACL settings and grant access to it
 
-## 3. Добавьте объект с публичными настройками ACL и предоставьте доступ к нему
+1. Add an object:
 
-1. Добавьте объект:
+   1. In your VK Cloud [management console](https://cloud.vk.com/app/) go to the **Object storage → Buckets** section.
+   1. Click on the name of the created bucket.
+   1. Click the **Add file** button.
+   1. Make sure that the `public-read` ACL settings are selected.
+   1. Click the **Select files** button and select the file to upload to the bucket.
 
-   1. Перейдите в [личный кабинет](https://msk.cloud.vk.com/app/) VK Cloud.
-   1. Выберите проект, где находится созданный бакет.
-   1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-   1. Нажмите на имя созданного бакета.
-   1. Нажмите кнопку **Добавить файл**.
-   1. Убедитесь, что выбраны настройки ACL `public-read`.
-   1. Нажмите кнопку **Выбрать файлы** и выберите файл, который нужно загрузить в бакет.
+1. Grant access to the uploaded object via a direct link:
 
-1. Предоставьте доступ к загруженному объекту по прямой ссылке:
+   1. In your VK Cloud [management console](https://cloud.vk.com/app/) go to the **Object storage → Buckets** section.
+   1. Expand the menu of the previously loaded object and select **Access to file**.
+   1. Save the generated direct link.
 
-   1. Перейдите в [личный кабинет](https://msk.cloud.vk.com/app/) VK Cloud.
-   1. Выберите проект, где находится созданный бакет.
-   1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-   1. Нажмите на имя созданного бакета.
-   1. Раскройте меню загруженного ранее объекта и выберите пункт **Доступ к файлу**.
-   1. Сохраните сгенерированную прямую ссылку.
+   The link looks like this:
 
-      Ссылка имеет следующий вид:
+   ```http
+   https://<bucket name>.hb.bizmrg.com/...
+   ```
 
-      ```http
-      https://<название бакета>.hb.bizmrg.com/...
-      ```
+## 4. Check access to objects
 
-## 4. Проверьте наличие доступа к объектам
+1. Go to the generated temporary link in the browser. The object [added earlier with private ACL settings](#2_add_object_with_private_acl_settings_and_grant_access_to_it) should load.
 
-1. Перейдите в браузере по сгенерированной временной ссылке. Должен загрузиться объект, [добавленный ранее с приватными настройками ACL](#2_dobavte_obekt_s_privatnymi_nastroykami_acl_i_predostavte_dostup_k_nemu).
-1. Перейдите в браузере по сгенерированной прямой ссылке. Должен загрузиться объект, [добавленный ранее с публичными настройками ACL](#3_dobavte_obekt_s_publichnymi_nastroykami_acl_i_predostavte_dostup_k_nemu).
+1. Go to the generated direct link in the browser. The object [added earlier with public ACL settings](#3_add_object_with_public_acl_settings_and_grant_access_to_it) should load.
 
-## Удалите неиспользуемые ресурсы
+## Delete unused resources
 
-1. Загруженные в бакет объекты [тарифицируются](../tariffication). Если они вам больше не нужны, [удалите их](../service-management/objects/manage-object).
-1. Если бакет вам больше не нужен, [удалите его](../service-management/buckets/bucket#removing_a_bucket).
+1. You have to [pay](../tariffication) for uploaded objects. If you no longer need them, [delete them](../service-management/objects/manage-object).
+1. If you no longer need a bucket, [delete it](../service-management/buckets/bucket#removing_a_bucket).
