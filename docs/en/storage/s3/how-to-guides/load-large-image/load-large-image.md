@@ -33,7 +33,7 @@ The following will be used:
 
 1. [Create](/en/computing/iaas/service-management/vm/vm-create) an Ubuntu 22.04 VM in VK Cloud.
 1. Install the [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) utility on the VM.
-1. [Create](/en/computing/iaas/service-management/volumes#creating_a_disk) a disk of at least 600 GB in size and [connect](/en/computing/iaas/service-management/volumes#connecting_a_disk_to_a_vm) it to the VM.
+1. [Create](/en/computing/iaas/service-management/volumes#create_disk) a disk of at least 600 GB in size and [connect](/en/computing/iaas/service-management/volumes#mount_disk) it to the VM.
 
 ## 2. Upload the image from the local machine to the object storage
 
@@ -139,9 +139,11 @@ The following will be used:
    wget https://uc_bucket.hb.bizmrg.com/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. [Mark](/en/computing/iaas/service-management/volumes#changing_the_bootable_attribute) the disk containing the OS image as bootable.
-1. [Replace the VM root disk](/en/computing/iaas/service-management/volumes#replacing_the_root_disk) with the disk containing the OS image.
+1. [Mark](/en/computing/iaas/service-management/volumes#changing_bootable_attribute) the disk containing the OS image as bootable.
+1. [Replace the VM root disk](/en/computing/iaas/service-management/volumes#replacing_root_disk) with the disk containing the OS image.
 1. [Start](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM. Verify that the start has been successful.
+
+You can also [disconnect](/en/computing/iaas/service-management/volumes#mount_disk) the disk with the OS image placed on it from the current VM and use it as a [replacement for the root disk](/en/computing/iaas/service-management/volumes#replacing_root_disk) for another VM.
 
 ## Delete unused resources
 
@@ -149,4 +151,4 @@ The created resources are charged and consume computing resources. If you don't 
 
 - [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM.
 - [Delete](../../service-management/buckets/bucket#removing_a_bucket) the `uc_bucket` bucket.
-- [Delete](/en/computing/iaas/service-management/volumes#deleting_a_disk) the disk.
+- [Delete](/en/computing/iaas/service-management/volumes#deleting_disk) the disk.

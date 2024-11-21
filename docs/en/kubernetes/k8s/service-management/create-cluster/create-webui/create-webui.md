@@ -19,11 +19,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/).
    1. Select [project](../../../../../tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. If there are no clusters in the selected project, click the **Create cluster** button.
-
-      Otherwise, click the **Add** button.
-
-   The Create a new Kubernetes cluster wizard will open.
+   1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
 
 ## 1. Set the cluster configuration
 
@@ -124,7 +120,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
      - **Network:** select the network and subnet where the cluster master and worker nodes will be located. If the required network and subnet are not on the list, [create](/en/networks/vnet/networks/create-net) them.
 
-     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the required subnet is not on the list, [create](/en/networks/vnet/networks/create-net#creating_a_subnet) it.
+     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the required subnet is not on the list, [create](/en/networks/vnet/networks/create-net#creating_subnet) it.
 
        By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 

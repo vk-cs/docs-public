@@ -8,15 +8,7 @@ To create a JupyterHub instance:
 
 1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform**.
-1. Select the type of instance to be created in one of the following ways:
-
-   - Click the **Create instance** button in the **JupyterHub** tile.
-   - Go to **Instances** and follow these steps:
-
-        1. Click the **Add** button above the list of instances.
-        1. Select the **JupyterHub Instance** tile.
-        1. Click the **Next step** button.
-
+1. Click the **Create instance** button in the **JupyterHub** tile.
 1. On the “Configuration” step, specify the instance parameters:
 
     - **Name of instance**: display name of the instance, also sets the hostname in the OS. The name can only contain Latin letters, numbers and the special characters `-`, `_` and `.`.

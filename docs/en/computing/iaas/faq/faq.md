@@ -260,7 +260,7 @@ The operation of creating and deleting resources can be performed an unlimited n
 
 You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Servers** service.
 
-Full information is available in the article about [disk expansion](../service-management/volumes#increasing_the_disk_size_with_rebooting).
+Full information is available in the article about [disk expansion](../service-management/volumes#increasing_disk_size_with_rebooting).
 
 </details>
 
@@ -292,7 +292,7 @@ Compare the obtained indicators with the [guaranteed disk performance](../concep
 
 <info>
 
-To increase performance, you can [increase the size](../service-management/volumes#increasing_the_disk_size_with_rebooting) or [change](../service-management/volumes#changing_the_disk_type) disk type.
+To increase performance, you can [increase the size](../service-management/volumes#increasing_disk_size_with_rebooting) or [change](../service-management/volumes#changing_disk_type) disk type.
 
 </info>
 
@@ -310,7 +310,7 @@ At the time of migration, there may be a decrease in read-only performance, but 
 
 <summary>I can't delete a disk</summary>
 
-Make sure that the disk [is disabled](../service-management/volumes#disconnecting_a_disk_from_a_vm) from VM — after that, delete the disk in the **Cloud Servers** → **Disks** section.
+Make sure that the disk [is disabled](../service-management/volumes#disconnecting_disk_from_vm) from VM — after that, delete the disk in the **Cloud Servers** → **Disks** section.
 
 </details>
 
@@ -334,7 +334,7 @@ The VK Cloud platform allows the creation of virtual machines from previously pr
 
 <summary>How do I change the VM's root disk?</summary>
 
-Replacement of the root disk is possible only if another disk has already been created in the VK Cloud project. It can be either an empty disk or a boot disk containing the operating system. Instructions are given in the article about [replacing the root disk](../service-management/volumes#replacing_the_root_disk).
+Replacement of the root disk is possible only if another disk has already been created in the VK Cloud project. It can be either an empty disk or a boot disk containing the operating system. Instructions are given in the article about [replacing the root disk](../service-management/volumes#replacing_root_disk).
 
 </details>
 

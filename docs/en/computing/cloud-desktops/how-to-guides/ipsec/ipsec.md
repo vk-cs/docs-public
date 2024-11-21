@@ -15,7 +15,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create an LDAP environment:
 
-    1. Select or [create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+    1. Select or [create](/en/networks/vnet/service-management/net#creating_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
 
         Write down the following:
 
@@ -28,7 +28,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create a VDI environment:
 
-    1. In VK Cloud, select or [create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+    1. In VK Cloud, select or [create](/en/networks/vnet/service-management/net#creating_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
 
         Write down the following:
 
@@ -436,7 +436,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 ## 11. Check if VDI is able to connect to LDAP
 
-1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
 
 1. Create a test [virtual machine](/en/computing/iaas/service-management/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
 
@@ -459,4 +459,4 @@ If you no longer need the created resources, delete them:
 1. [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) the virtual machines.
 1. [Delete](/en/networks/vnet/service-management/vpn#removing_a_vpn_tunnel) the VPN tunnel.
 1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) the routers.
-1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_a_subnet) and the [network](/en/networks/vnet/service-management/net#deleting_a_network) in which the VM is located.
+1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_subnet) and the [network](/en/networks/vnet/service-management/net#deleting_network) in which the VM is located.
