@@ -76,7 +76,7 @@
 </tablist>
 <tabpanel>
 
-1. [Создайте](/en/networks/vnet/service-management/net#creating_a_network) новую внутреннюю сеть и [маршрутизатор](/en/networks/vnet/service-management/router).
+1. [Создайте](/en/networks/vnet/service-management/net#creating_network) новую внутреннюю сеть и [маршрутизатор](/en/networks/vnet/service-management/router).
 1. Создайте кластер, указав созданную сеть.
 1. [Настройте VPN-подключение](/en/networks/vnet/how-to-guides/vpn-tunnel) к сервисам VK Cloud.
 

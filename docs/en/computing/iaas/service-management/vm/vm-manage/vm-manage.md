@@ -199,9 +199,9 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
 1. Prepare the VM for deletion.
 
-   - If you need to save the main disk, clone it or [replace it with an unnecessary one](../../volumes#replacing_the_root_disk).
+   - If you need to save the main disk, clone it or [replace it with an unnecessary one](../../volumes#replacing_root_disk).
 
-   - [Disconnect from the VM](../../volumes#disconnecting_a_disk_from_a_vm) additional disks that need to be saved.
+   - [Disconnect from the VM](../../volumes#disconnecting_disk_from_vm) additional disks that need to be saved.
 
       Additional disks for which the `delete_on_termination`: `False` property is set in the deletion policy can not be disconnected from the VM.
 
@@ -642,3 +642,59 @@ Examples of events:
 </tabpanel>
 
 </tabs>
+
+## {heading(Connecting disk to VM)[id=mount_disk]}
+
+<tabs>
+<tablist>
+<tab>Management console</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+
+<tabpanel>
+
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. Go to the **Cloud Servers → Virtual machines** section.
+1. Click on the name of the VM to which you want to connect the disk.
+1. Go to the **Disks** tab.
+1. Connect the disk to the VM:
+
+    <tabs>
+    <tablist>
+    <tab>Existing disk</tab>
+    <tab>New disk</tab>
+    </tablist>
+    <tabpanel>
+
+    1. Click the **Connect disk** button.
+    1. In the window that opens, select the disk you want to connect to the VM and click the **Connect disk** button.
+
+    </tabpanel>
+    <tabpanel>
+
+    1. Click the **Create disk** button.
+
+    {include(/en/_includes/_disk_params.md)[tags=vm]}
+
+    1. Click the **Create disk** button.
+
+    </tabpanel>
+    </tabs>
+</tabpanel>
+
+<tabpanel>
+
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+
+1. [Create a disk](/en/computing/iaas/service-management/volumes#create_disk), if it has not been created yet. Save its ID.
+
+1. [Connect the disk](/en/computing/iaas/service-management/volumes#mount_disk) to the VM.
+
+</tabpanel>
+</tabs>
+
+<info>
+
+Creating a disk without connecting a VM is described in the [Disks](/en/computing/iaas/service-management/volumes) section.
+
+</info>

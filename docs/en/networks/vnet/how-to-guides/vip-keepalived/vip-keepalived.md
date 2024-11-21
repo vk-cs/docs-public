@@ -15,7 +15,7 @@ To show the virtual IP address setting:
 
 1. Select the subnet where the virtual machines and virtual IP address will be placed. They must be on the same subnet.
 
-    If the required subnet does not exist, [create it](../../service-management/net#creating_a_subnet).
+    If the required subnet does not exist, [create it](../../service-management/net#creating_subnet).
 
     Write down the following information:
     - subnet name;
@@ -379,4 +379,4 @@ If you no longer need the created resources, delete them:
 1. [Delete](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) virtual machines.
 1. [Remove](../../service-management/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
 1. [Delete](../../service-management/ports#deleting_a_port) the port that has been assigned a virtual IP address.
-1. Delete the [subnet](../../service-management/net#deleting_a_subnet) and [network](../../service-management/net#deleting_a_network) where the virtual cars.
+1. Delete the [subnet](../../service-management/net#deleting_subnet) and [network](../../service-management/net#deleting_network) where the virtual cars.

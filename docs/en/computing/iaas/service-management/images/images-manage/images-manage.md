@@ -11,15 +11,16 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Servers → Images**.
-3. Click the **Create** button.
-4. In the window that appears:
+1. [Stop the VM](../../../service-management/vm/vm-manage#start_stop_restart_vm) that image you want to create.
+1. Go to **Cloud Servers → Images**.
+1. Click the **Create** button.
+1. Specify the image settings:
 
-   1. **Source**: choose **Disk**.
-   2. **Select disk**: select the disk of the existing VM. The VM must be stopped.
-   3. **Name of the image**: specify the name of the image.
-   4. Click the **Create image** button.
+   - **Source**: select **Disk**.
+   - **Select Disk**: select an existing virtual machine disk.
+   - **Name of the image**: specify a name for the image.
+
+1. Click the **Create image** button.
 
 </tabpanel>
 <tabpanel>
@@ -79,14 +80,14 @@ When downloading through your VK Cloud management console, the size of the downl
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Servers → Images**.
-3. Click the **Create** button.
-4. In the window that appears:
+1. Go to **Cloud Servers → Images**.
+1. Click the **Create** button.
+1. Specify import settings:
 
-   1. **Source**: select **File**.
-   2. **Selected file**: upload the image file in RAW format.
-   3. **Name of the image**: specify the name of the image.
-   4. Click the **Create image** button.
+   - **Source**: select **File**.
+   - **Selected file**: upload the image file in RAW format.
+   - **Name of the image**: specify the name of the image.
+1. Click the **Create image** button.
 
 </tabpanel>
 <tabpanel>
@@ -149,6 +150,8 @@ The VK Cloud service provides the following image visibility statuses for users:
 | `private`   | The image is for personal access only               |
 | `shared`    | The image can be used in several projects           |
 
+By default, all images have the `private` status. To share an image with other projects:
+
 <tabs>
 <tablist>
 <tab>Management console</tab>
@@ -162,24 +165,23 @@ Through your VK Cloud management console, you can allow access to the image only
 
 </info>
 
-To change the visibility status of an image:
-
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Servers → Images**.
-3. Click ![ ](/en/assets/more-icon.svg "inline") for the required image and select **Share image**.
-4. In the window that appears:
+1. Go to **Cloud Servers → Images**.
+1. Click ![ ](/ru/assets/more-icon.svg "inline") for the image you need and select **Share image**.
+1. In the window that opens, select the type of the project with which you want to share the image:
 
-   1. Choose one of the options:
+   - **My Projects**: allows you to share the image with projects in which you are the owner.
+   
+      If you select this type, in the **Project ID** box, select the [unique project identifier (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) of the `mcsNNNNNNNNNN` type from the list. Multiple projects can be added.
+   
+   - **Other projects**: allows you to share the image with all other projects.
 
-      - **My projects**: select the required projects from the drop-down list.
-      - **Other projects**: specify the project ID.
+   If you select this type, in the **OpenStack Project ID** box, specify the [Project ID](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) of the `exampled4ef0547e5b222f445` form, it does not match the unique identifier of the project. Multiple projects can be added.   
 
-   2. Click the **Allow access** button.
+1. Click the **Allow access** button.
 
 </tabpanel>
 <tabpanel>
-
-To change the visibility status of an image:
 
 1. Get the `ID` of the image from the list:
 

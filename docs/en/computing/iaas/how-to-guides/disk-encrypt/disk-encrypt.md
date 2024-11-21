@@ -13,7 +13,7 @@ Configure virtual machine disk encryption using [cryptsetup](https://manpages.ub
 Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as well as an additional disk that will be encrypted.
 
 1. [Create the Linux VM](../../service-management/vm/vm-create/) from CentOS 7.9 image.
-2. [Create](../../service-management/volumes#creating_a_disk) and [connect](../../service-management/volumes#connecting_a_disk_to_a_vm) disk to VM.
+2. [Create](../../service-management/volumes#create_disk) and [connect](../../service-management/volumes#mount_disk) disk to VM.
 3. [Connect to VM](../../service-management/vm/vm-connect/vm-connect-nix/).
 4. Output a list of disks and find the name of the required disk (for example, `/dev/vdb`):
 
@@ -90,7 +90,7 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
 </err>
 
-1. Make the disk [non-bootable](../../service-management/volumes#replacing_the_root_disk).
+1. Make the disk [non-bootable](../../service-management/volumes#replacing_root_disk).
 2. Stop all processes using the disk:
 
    ```bash

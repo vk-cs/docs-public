@@ -64,7 +64,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
    </details>
 
-1. (Optional) [Create](/en/networks/vnet/service-management/net#creating_a_network) a network with Internet access if it has not been created before.
+1. (Optional) [Create](/en/networks/vnet/service-management/net#creating_network) a network with Internet access if it has not been created before.
 
 ## 1. Deploy Check Point CloudGuard Network service
 
@@ -389,4 +389,4 @@ Running service infrastructure consumes computing resources. If you no longer ne
 - [Delete](/en/applications-and-services/marketplace/service-management/pr-instance-manage#deleting_a_service_instance) the instance of the Check Point CloudGuard Network service.
 - [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) VMs created as a gateway and a management server.
 - Make sure that all disks are deleted along with the VMs.
-- [Delete](/en/networks/vnet/service-management/net#deleting_a_network) the network used for the service.
+- [Delete](/en/networks/vnet/service-management/net#deleting_network) the network used for the service.

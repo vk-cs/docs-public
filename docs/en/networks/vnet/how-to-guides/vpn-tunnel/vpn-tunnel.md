@@ -335,5 +335,5 @@ If you no longer need the created resources, delete them:
    </info>
 
 1. [Delete](../../service-management/router#removing_the_router) client and cloud network routers.
-1. Delete the client and cloud [subnets](../../service-management/net#deleting_a_subnet) and [networks](../../service-management/net#deleting_a_network).
+1. Delete the client and cloud [subnets](../../service-management/net#deleting_subnet) and [networks](../../service-management/net#deleting_network).
 1. [Delete](../../service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.

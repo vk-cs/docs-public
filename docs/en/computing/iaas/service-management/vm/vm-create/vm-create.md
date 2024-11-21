@@ -15,7 +15,7 @@ If necessary, you can [import an OS image](../../images/images-manage#exporting_
 
 <info>
 
-The available fields may differ for different operating systems.
+The VM settings available for configuration may vary depending on the operating system.
 
 </info>
 
@@ -27,9 +27,11 @@ The available fields may differ for different operating systems.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Servers → Virtual machines**.
-3. Click the **Create instance** or **Add** button.
-4. Set VM parameters:
+1. Verify that the account balance is positive and there are enough [quotas](/ru/tools-for-using-services/account/concepts/quotasandlimits) to create the virtual machine configuration you need.
+1. Go to **Cloud Servers → Virtual machines**.
+1. Click the **Create Instance** or **Add** button.
+1. Set the VM parameters:   
+
      - **Name of virtual machine**: use only Latin letters, numbers, or special characters `-`, `_`, and `.`.
      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](../../../concepts/about#flavors).
      - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](../../../concepts/about).
@@ -37,10 +39,10 @@ The available fields may differ for different operating systems.
      - **Number of machines in configuration**: specify the required number of VM.
      - **Disk size**: specify the required VM disk size in gigabytes.
      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](../../../concepts/about#disks).
-     - **Operating system**: select the operating system version or [previously created image](../../images/images-manage/).
+     - **Operating system**: select the operating system or the image that you previously [created](../../images/images-manage#creating_an_image) or [imported](../../images/images-manage#importing_an_image) in VK Cloud.
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
-5. Click **Next step**.
-6. Configure the VM connection to the network:
+1. Click the **Next step** button.
+1. Configure the VM connection to the network:
    - **Network**: select an existing network or create a new one. Depending on the choice of network type, the list of available fields will change.
    - **SDN**: select a [virtual network management system](/en/networks/vnet/concepts/architecture#sdns_used). Resources created in networks of different SDNs will be accessible to each other only when using floating IPs. The option is available if a new network is created for the VM.
    - **Subnet address**: the option is available if a new network is created for the VM.
@@ -66,11 +68,11 @@ The available fields may differ for different operating systems.
 
    - **Enable monitoring**: enable to use [monitoring tools](/en/monitoring-services/monitoring/concepts).
 
-7. Click **Next step**.
+1. Click the **Next step** button.
 
-8. If necessary, enable the **Use Backup** option and [specify](/en/storage/backups/service-management/create-backup-plan) settings.
-9. Click **Create instance**.
-10. Wait for the VM to be created. This process may take some time. When the creation is completed, a page with VM characteristics and connection instructions will open.
+1. If necessary, enable the **Use Backup** option and [specify](/en/storage/backups/service-management/create-backup-plan) settings.
+1. Click the **Create instance** button.
+1. Wait for the VM to be created. This process may take some time. When the creation is completed, a page with VM characteristics and connection instructions will open.
 
 </tabpanel>
 <tabpanel>
