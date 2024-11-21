@@ -1,9 +1,10 @@
 {
-    "title": "Catalog of services",
-    "pageDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service.",
-    "shortDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service",
-    "metaTitle": "Catalog of services",
-    "metaDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service.",
-    "sectionTitle": "Catalog of services",
-    "weight": 3
+  "title": "Catalog of services",
+  "pageDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service.",
+  "shortDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service",
+  "metaTitle": "Catalog of services",
+  "metaDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service.",
+  "sectionTitle": "Catalog of services",
+  "weight": 3,
+  "uuid": "b5470d59-d6af-4ca0-bd78-c2b4775e0887"
 }
