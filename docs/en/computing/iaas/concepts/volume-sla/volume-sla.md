@@ -120,7 +120,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 1. Before testing, make sure that the following conditions are met:
 
-   - the disk is [non-bootable](../../service-management/volumes#replacing_the_root_disk);
+   - the disk is [non-bootable](../../service-management/volumes#replacing_root_disk);
    - there is no load on the disk from the operating system.
 
    When these conditions are met, the IOPS measurement results must correspond to the following values:

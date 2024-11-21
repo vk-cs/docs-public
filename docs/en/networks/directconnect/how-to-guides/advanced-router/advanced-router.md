@@ -30,7 +30,7 @@ To show the configuration of an advanced router, two independent networks will b
    In this case, we will use a network with a virtual machine Router OS 7.10 (MikroTik), performing the functions of a BGP router.
    </info>
 
-1. Select or [create](../../service-management/net#creating_a_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+1. Select or [create](../../service-management/net#creating_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
 
    Note the following:
 
@@ -311,4 +311,4 @@ If you no longer need the created resources, delete them:
 
 1. [Delete](../../../../computing/iaas/service-management/vm/vm-manage#delete_vm) the virtual machine.
 1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) routers.
-1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_a_network) and the [network](/en/networks/vnet/service-management/net#deleting_a_subnet).
+1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_network) and the [network](/en/networks/vnet/service-management/net#deleting_subnet).

@@ -7,8 +7,8 @@ By using the Grafana service, you agree to the license agreements of the service
 To deploy the Grafana service in a project:
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a network, if one has not been created earlier.
-1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) a network, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../service-management/pr-instance-add/) Grafana service:
 
    - **Как будет размещена Grafana**: specify the `external` access type to Grafana to have access to the service via an external IP address.

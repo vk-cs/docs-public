@@ -139,7 +139,7 @@
 
 <tabpanel>
 
-Используйте импортированный образ для [создания ВМ Linux](/ru/computing/iaas/service-management/vm/vm-create#create_vm):
+Используйте импортированный образ для [создания ВМ Linux](/ru/computing/iaas/service-management/vm/vm-create):
 
 - при создании ВМ в личном кабинете выберите образ из списка;
 - при создании через OpenStack CLI укажите ID образа в соответствующей команде.
@@ -148,10 +148,10 @@
 
 <tabpanel>
 
-1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/computing/iaas/service-management/vm/vm-create#create_vm).
+1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/computing/iaas/service-management/vm/vm-create).
 2. Добавьте драйвер VirtIO HBA в загрузку Windows.
 
-   1. [Создайте диск](/ru/computing/iaas/service-management/volumes#sozdanie_diska) минимального размера и [подключите](/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm) его к ВМ.
+   1. [Создайте диск](/ru/computing/iaas/service-management/volumes#create_disk) минимального размера и [подключите](/ru/computing/iaas/service-management/volumes#mount_disk) его к ВМ.
    2. [Запустите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
    3. Запустите установщик VirtIO в режиме `repair`.
    4. [Остановите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
@@ -162,7 +162,7 @@
    openstack image set --property hw_disk_bus=virtio <ID нового образа>
    ```
 
-5. [Создайте целевую ВМ Windows](/ru/computing/iaas/service-management/vm/vm-create#create_vm) из нового образа.
+5. [Создайте целевую ВМ Windows](/ru/computing/iaas/service-management/vm/vm-create) из нового образа.
 6. Удалите промежуточную виртуальную машину, созданную на шаге 1, а также импортированный образ.
 
 </tabpanel>

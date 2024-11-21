@@ -56,7 +56,7 @@ Import the image according to [instructions](../../service-management/images/ima
 
 1. Determine the details of the network and the downloaded image:
 
-    1. [Get](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
+    1. [Get](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
     1. Copy the name of the downloaded image, getting a list of images using the command `openstack image list`.
     1. Write the received values into variables:
 

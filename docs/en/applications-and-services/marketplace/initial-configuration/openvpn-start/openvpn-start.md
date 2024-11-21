@@ -5,8 +5,8 @@ By using the OpenVPN service, you agree to the service agreements of [Marketplac
 To deploy the OpenVPN service in the project::
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a network with Internet access, if one has not been created earlier.
-1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with Internet access, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../service-management/pr-instance-add/) the OpenVPN service:
 
    1. In the “Настройки Кластера” step, specify VM settings:
