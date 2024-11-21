@@ -67,14 +67,21 @@ To create such an application:
 
 ## 2. Create load balancers
 
-Create several load balancers with different behaviors that serve the deployed `coffee` application:
+Create several load balancers with different behaviors that serve the deployed `coffee` application.
+
+The tabs below describe different scenarios for creating load balancers:
+
+- Scenario 1 — manual assignment of a static public address with random replica selection.
+- Scenario 2 — automatic assignment of a dynamic public address with replica pinning.
+- Scenario 3 — automatic assignment of a dynamic public address, random replica selection, access limiting
+- Scenario 4 — automatic assignment of a dynamic private address with random replica selection.
 
 <tabs>
 <tablist>
-<tab>Manual assignment of static public address, random replica</tab>
-<tab>Automatic assignment of dynamic public address, bounded replica</tab>
-<tab>Automatic assignment of dynamic public address, random replica, access limiting</tab>
-<tab>Automatic assignment of dynamic public address, random replica</tab>
+<tab>Scenario 1</tab>
+<tab>Scenario 2</tab>
+<tab>Scenario 3</tab>
+<tab>Scenario 4</tab>
 </tablist>
 <tabpanel>
 
