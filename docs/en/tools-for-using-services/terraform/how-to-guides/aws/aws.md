@@ -39,7 +39,7 @@ A detailed description of the resources is in the [provider documentation](https
             skip_requesting_account_id  = true
             skip_region_validation      = true
             endpoints {
-                s3 = "<домен>"
+                s3 = "<domain>"
             }
         }
         ```
@@ -104,7 +104,7 @@ Here:
   
     - contains from 4 to 63 characters
     - begins and ends with a letter or a number
-    - consists only of lowercase Latin letters, numbers, and special characters: `.`, `-`, `_`
+    - consists only of lowercase Latin letters, numbers, and special characters: `.`, `-`
     - unique across the entire VK Cloud platform in all regions
 
     The bucket name is contained in the URLs of the objects in it, so do not use confidential information in the name.
@@ -112,7 +112,6 @@ Here:
     If you are creating a bucket for hosting, it is not recommended to use in the name:
 
     - IP addresses and similar formatting (for example, `192.168.5.4`), as this may cause confusion between the bucket name and the IP address of the site.
-    - Underscores (`_`) — such a bucket cannot be linked to a DNS.
     - `xn--` at the beginning: everything that comes after will be perceived by the browser as [Punycode](https://ru.wikipedia.org/wiki/Punycode).
 
     <warn>
