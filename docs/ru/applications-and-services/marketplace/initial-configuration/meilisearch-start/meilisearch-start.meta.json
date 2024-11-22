@@ -1,0 +1,10 @@
+{
+    "title": "Развертывание Meilisearch",
+    "pageDescription": "Шаги по развертыванию Meilisearch в целевой проект VK Cloud с помощью Marketplace. Развертывание сервиса Meilisearch для задач поиска и фильтрации данных.",
+    "shortDescription": "Развертывание Meilisearch для задач поиска и фильтрации данных",
+    "metaTitle": "Развертывание Meilisearch",
+    "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Meilisearch для задач поиска и фильтрации данных в целевой проект",
+    "sectionTitle": "Развертывание Meilisearch",
+    "icon": "",
+    "weight": 12
+}
