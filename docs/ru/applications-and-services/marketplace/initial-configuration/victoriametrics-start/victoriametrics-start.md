@@ -153,7 +153,7 @@
 
    <info>
 
-   Если вы не сохранили данные для доступа, [сгенерируйте](../../service-management/pr-instance-manage#obnovlenie_dostupa_k_instansu_servisa) новые.
+   Если вы не сохранили данные для доступа, [сгенерируйте](../../service-management/pr-instance-manage#update_access) новые.
 
    </info>
 
