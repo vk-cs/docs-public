@@ -17970,6 +17970,21 @@
     ]
   },
   {
+    "uuid": "fd9c7f36-0cfc-4d21-b99a-f2d2d46385de",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start/meilisearch-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start/meilisearch-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "ba22f6fc-8e6f-4c67-923d-35097a50c273",
     "lang": "ru",
     "type": "INTERMEDIATE",

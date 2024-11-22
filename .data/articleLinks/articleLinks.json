@@ -18013,7 +18013,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/redash-start",
-    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#obnovlenie_dostupa_k_instansu_servisa"
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
@@ -18081,7 +18081,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#obnovlenie_dostupa_k_instansu_servisa"
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
@@ -18136,6 +18136,34 @@
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-add"
   ],
   [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#redaktirovanie_podseti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
+  ],
+  [
     "/ru/applications-and-services/marketplace/service-management/pr-instance-add",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/concepts/about#tipy_servisov"
   ],
@@ -18157,7 +18185,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/service-management/pr-instance-manage",
-    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#obnovlenie_dostupa_k_instansu_servisa"
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
   ],
   [
     "/ru/applications-and-services/marketplace/tariffication",
