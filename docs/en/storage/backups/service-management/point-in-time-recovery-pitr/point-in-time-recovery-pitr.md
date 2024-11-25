@@ -4,7 +4,7 @@ The PITR function is only available for databases running PostgreSQL.
 
 </warn>
 
-## Creating a schedule
+## Creating schedule
 
 When creating a PITR schedule, DBMS logs will be copied.
 
@@ -14,24 +14,24 @@ When creating a PITR schedule, DBMS logs will be copied.
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Go to **Databases** → **Backup**.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Go to **Cloud Backup → Backup**.
 1. Go to the **Point-in-time recovery** tab.
-1. Click the **Add**.
+1. Click **Add**.
 1. In the window that opens, specify:
 
-   1. **Schedule Name**: the name for the schedule being created.
-   1. **Start time**: specify the start time of the backup in the GMT+03:00 time zone.
-   1. **Store, number of copies**: specify the number of backups stored.
-   1. **Backup interval**: select the appropriate backup interval.
-   1. **Database**: select a deployed instance with a PostgreSQL DBMS.
+   1. **Schedule Name**: specify a name for the schedule being created.
+   1. **Start time**: specify the backup start time in the time zone shown below in this window.
+   1. **Store, number of copies**: specify the number of backup copies to keep.
+   1. **Backup interval**: select the interval between backup runs.
+   1. **Database**: select a deployed instance with the PostgreSQL DBMS.
 
-1. Click the **Save schedule**.
+1. Click **Save schedule**.
 
 </tabpanel>
 </tabs>
 
-## Editing an existing schedule
+## Editing existing schedule
 
 <tabs>
 <tablist>
@@ -39,16 +39,16 @@ When creating a PITR schedule, DBMS logs will be copied.
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Go to **Databases** → **Backup**.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Go to **Cloud Backup → Backup**.
 1. Go to the **Point-in-time recovery** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required schedule and select **Edit schedule**.
-1. Make the necessary changes and click the **Save schedule**.
+1. Make the necessary changes and click **Save schedule**.
 
 </tabpanel>
 </tabs>
 
-## Viewing schedule backups
+## Viewing backups created within schedule
 
 <tabs>
 <tablist>
@@ -56,17 +56,17 @@ When creating a PITR schedule, DBMS logs will be copied.
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Go to **Databases** → **Backup**.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Go to **Cloud Backup → Backup**.
 1. Go to the **Point-in-time recovery** tab.
-1. Click on the name of the required schedule.
+1. Click the name of the required schedule.
 
 A list of backups for the selected schedule will be displayed.
 
 </tabpanel>
 </tabs>
 
-## Restore from backup
+## Creating database instance from backup
 
 <tabs>
 <tablist>
@@ -74,14 +74,14 @@ A list of backups for the selected schedule will be displayed.
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Go to **Databases** → **Backup**.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Go to **Cloud Backup → Backup**.
 1. Go to the **Point-in-time recovery** tab.
-1. Click on the name of the required schedule.
+1. Click the name of the required schedule.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Restore from backup**.
-1. On “Create instance” step specify the necessary parameters and click the **Next step**.
-1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave the field empty, the last backup created will be automatically selected.
-1. Click the **Create database**.
+1. In the “Create instance” step, specify the necessary parameters and click **Next step**.
+1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave this field empty, the most recently created backup will be selected automatically.
+1. Click **Create database**.
 
 </tabpanel>
 </tabs>

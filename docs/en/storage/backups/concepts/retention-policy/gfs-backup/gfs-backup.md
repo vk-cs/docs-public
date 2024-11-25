@@ -1,48 +1,43 @@
-## Description
+In VK Cloud, the GFS strategy (Grandfather-Father-Son) can be used to store and delete backups.
 
-The industry uses GFS ("grandfather-father-son", Grandfather-Father-Son) backup storage strategy.
-In the grandfather-father-son algorithm, backup consists of three consecutive steps:
+In the GFS strategy, backups include three levels of hierarchy:
 
-- "Grandfather" is a full backup for the beginning of the year.
-- "Father" — full backup at the beginning of the month.
-- "Son" — full backup and increments once a week.
+- "Grandfather" is a full backup at the beginning of the year.
+- "Father" is a full backup at the beginning of the month.
+- "Son" is a full backup once a week and incremental copies during that week.
+
+The backup retention period is set separately for each level. Typically, the periods are chosen to meet legal requirements or corporate policies.
+
+The following settings are most commonly used:
+
+- Keep weekly backups: 4 weeks.
+- Keep monthly backups: 12 months.
+- Keep annual backups: 5 years.
+
+<info>
+
+The retention period for annual backups includes the current year. For example, if you set the retention period to 2 years, annual backups for the previous year and the current year will be kept.
+
+</info>
 
 ## Working principle
 
-After each successful backup, the process of deleting outdated backups is started. The GFS backup strategy does not create weekly, monthly or annual backups separately. This process is dynamic and depends on the current GFS settings. The process of deleting backups first checks that there is the required number of weekly backups. Next, it checks the presence/absence of monthly and annual backups. After that, it makes a decision to delete outdated/redundant backups, if any.
+Backups are created automatically according to a pre-configured schedule. After each successful backup, the process of deleting outdated backups is started.
 
-Changing the GFS settings is applied at the next successful backup. If you specify to store fewer full backups than are stored now, the outdated backups will be deleted.
+- The storage periods of weekly backups are checked.
+- The presence of monthly and annual backups and their retention periods are checked.
+- The algorithm determines which copies are outdated according to the GFS strategy settings and deletes them.
 
-GFS settings store:
+If you change the GFS settings, the changes will be applied on the next successful backup. If the retention period of any full backups has been reduced in the settings, the outdated backups will be deleted.
 
-- Weekly backups — full and incremental backups for the specified number of weeks.
-- Monthly backups — backups created at the beginning of the month remain. Only full backups for the specified number of calendar months remain. Incremental backups are deleted.
-- Annual backups — backups created at the beginning of the year remain. Only annual backups for the specified number of years (including the current calendar year) remain. Incremental backups are deleted.
+The creation and deletion processes result in the following hierarchical set of stored backups:
 
-## Usage Scenarios
+- Weekly backups — full and incremental backups for the number of weeks specified in the settings.
+- Monthly backups — full backups created at the beginning of the month for the number of calendar months specified in the settings. Incremental backups are deleted.
+- Annual backups — full backups created at the beginning of the year for the number of years specified in the settings (including the current calendar year). Incremental backups are deleted.
 
-A typical scenario for using GFS is to follow the requirements of corporate policies or legislation.
+<info>
 
-The most commonly used and recommended best practices are the following settings.
+The same backup copy cannot be both monthly and weekly (or annual and monthly). Each backup is marked with one of the tags: "weekly", "monthly", or "annual".
 
-- Keep weekly backups: 4 weeks.
-- Store monthly backups: 12 months.
-- Store annual backups: 5 years.
-
-## FAQ
-
-### When does the "deletion" happen?
-
-After the first successful backup.
-
-### Can there be one backup at the same time Monthly and Weekly (or Annual and Monthly)?
-
-No. In the current implementation of GFS, backups have unique tags "weekly", "monthly" or "annual".
-
-### If it's 2022 now, how to save the annual backup for 2021, how much is it per annum?
-
-Two. The current year also counts.
-
-### Why is Weekly backup a mandatory field?
-
-Architectural requirement. This is necessary for the correct labeling of backups when applying the retention policy.
+</info>
