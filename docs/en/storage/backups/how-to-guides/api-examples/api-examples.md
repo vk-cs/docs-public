@@ -5,7 +5,7 @@ The following are some examples of using the VK Cloud [Karboii API](/ru/tools-fo
 To follow the examples given:
 
 1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
-1. [Get an access token](/ru/tools-for-using-services/api/rest-api/case-keystone-token "change-lang") `X-Subject-Token`.
+1. [Get an access token](/en/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
 1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the endpoint for the Karboii service.
 
 </info>
@@ -36,7 +36,7 @@ The requests will use:
   +-----------------------------+-----------------------------------------------------------+
   ```
 
-## Get a list of created backup plans
+## Get list of created backup plans
 
 Request example:
 
@@ -73,7 +73,7 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 
 </details>
 
-## Create a new backup plan for the VM
+## Create new backup plan for the VM
 
 ### 1. Get the prodiver_id
 
@@ -104,7 +104,7 @@ curl -X GET \
 
 </details>
 
-### 2. Create a backup plan
+### 2. Create backup plan
 
 Will be used `prodiver_id` = `37997f75-0637-XXXX-bf7e-49ff2ff11fa5`, because a plan is being created for a virtual machine (not a DB instance).
 
@@ -158,7 +158,7 @@ curl -X POST \
 
 </details>
 
-### 3. Create a trigger
+### 3. Create trigger
 
 Request example:
 
