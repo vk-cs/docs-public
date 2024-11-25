@@ -27,7 +27,7 @@ On the host from which you plan to connect to the registry:
         ...
 
         { "insecure-registries": [
-          "https://192.0.2.2:5000"
+          "192.0.2.2:5000"
         ],
 
         ...
