@@ -3390,13 +3390,13 @@
     ]
   },
   {
-    "uuid": "6414daee-8994-4038-9178-ba926bce1796",
+    "uuid": "cc31019f-6201-4071-9653-1d13da73c0ea",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/service-management/point-in-time-recovery-pitr",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
+    "partialPath": "/en/storage/backups/service-management/restore-from-backup",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/restore-from-backup/restore-from-backup.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/restore-from-backup/restore-from-backup.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -3405,13 +3405,13 @@
     ]
   },
   {
-    "uuid": "cc31019f-6201-4071-9653-1d13da73c0ea",
+    "uuid": "6414daee-8994-4038-9178-ba926bce1796",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/storage/backups/service-management/restore-from-backup",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/restore-from-backup/restore-from-backup.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/restore-from-backup/restore-from-backup.md",
+    "partialPath": "/en/storage/backups/service-management/point-in-time-recovery-pitr",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/storage/backups/service-management/point-in-time-recovery-pitr/point-in-time-recovery-pitr.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -17977,6 +17977,36 @@
     "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start/meilisearch-start.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start/meilisearch-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6dd9f4ba-fc8e-4d75-881a-2f7dc9dfdc93",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-start/wordpress-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-start/wordpress-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2d022a37-6df2-4776-b20f-ff4fa7773caa",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain/wordpress-domain.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain/wordpress-domain.md",
     "variables": {},
     "hidden": false,
     "version": null,

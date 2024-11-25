@@ -1,10 +1,11 @@
 {
-    "title": "Установка и настройка сервиса WordPress",
-    "pageDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов.",
-    "shortDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов",
-    "metaTitle": "Установка и настройка сервиса WordPress",
-    "metaDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов",
-    "sectionTitle": "Установка и настройка сервиса WordPress",
-    "icon": "",
-    "weight": 12
+  "title": "Установка и настройка сервиса WordPress",
+  "pageDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов.",
+  "shortDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов",
+  "metaTitle": "Установка и настройка сервиса WordPress",
+  "metaDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов",
+  "sectionTitle": "Установка и настройка сервиса WordPress",
+  "icon": "",
+  "weight": 12,
+  "uuid": "6dd9f4ba-fc8e-4d75-881a-2f7dc9dfdc93"
 }

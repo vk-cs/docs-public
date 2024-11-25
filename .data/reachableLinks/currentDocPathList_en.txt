@@ -223,8 +223,8 @@
 /docs/en/storage/backups/service-management/manage-backup-plan
 /docs/en/storage/backups/service-management/create-backup-copy
 /docs/en/storage/backups/service-management/manage-backup-copy
-/docs/en/storage/backups/service-management/point-in-time-recovery-pitr
 /docs/en/storage/backups/service-management/restore-from-backup
+/docs/en/storage/backups/service-management/point-in-time-recovery-pitr
 /docs/en/storage/backups/how-to-guides
 /docs/en/storage/backups/how-to-guides/api-examples
 /docs/en/storage/backups/faq
