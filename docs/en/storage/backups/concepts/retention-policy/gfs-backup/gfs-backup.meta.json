@@ -1,9 +1,9 @@
 {
     "title": "Backup by GFS strategy",
-    "pageDescription": "Strategy for long-term storage of GFS backups",
-    "shortDescription": "Strategy for long-term storage of GFS backups",
+    "pageDescription": "GFS strategy for long-term storage of backups",
+    "shortDescription": "GFS strategy for long-term storage of backups",
     "metaTitle": "Backup by GFS strategy",
-    "metaDescription": "The article describes the strategy of long-term storage of GFS backups.",
+    "metaDescription": "The article describes the GFS strategy of long-term storage of backups.",
     "sectionTitle": "Backup by GFS strategy",
     "icon": "",
     "weight": 1,
