@@ -3296,8 +3296,52 @@
     "http://localhost:3000/docs/en/storage/s3/concepts/about-s3-api"
   ],
   [
+    "/en/storage/backups/concepts/about",
+    "http://localhost:3000/docs/en/storage/backups/united-service-management/create-backup-copy"
+  ],
+  [
+    "/en/storage/backups/concepts/about",
+    "http://localhost:3000/docs/en/storage/backups/united-service-management/create-backup-plan"
+  ],
+  [
+    "/en/storage/backups/concepts/about",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/forward-incremental"
+  ],
+  [
+    "/en/storage/backups/concepts/about",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
+  ],
+  [
+    "/en/storage/backups/concepts/about",
+    "http://localhost:3000/docs/en/storage/backups/service-management/point-in-time-recovery-pitr"
+  ],
+  [
+    "/en/storage/backups/service-management/create-backup-plan",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
+  ],
+  [
+    "/en/storage/backups/service-management/create-backup-copy",
+    "http://localhost:3000/docs/en/storage/backups/service-management/create-backup-plan"
+  ],
+  [
+    "/en/storage/backups/service-management/manage-backup-copy",
+    "http://localhost:3000/docs/en/storage/backups/service-management/manage-backup-plan#activate_stop_delete_backup_plan"
+  ],
+  [
+    "/en/storage/backups/service-management/restore-from-backup",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#disks"
+  ],
+  [
+    "/en/storage/backups/service-management/restore-from-backup",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#deleting_disk"
+  ],
+  [
     "/en/storage/backups/how-to-guides/api-examples",
     "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
+  ],
+  [
+    "/en/storage/backups/how-to-guides/api-examples",
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/en/storage/backups/faq",
@@ -3305,7 +3349,7 @@
   ],
   [
     "/en/storage/backups/faq",
-    "http://localhost:3000/docs/en/storage/backups/service-management/manage-backup-copy"
+    "http://localhost:3000/docs/en/storage/backups/service-management/manage-backup-copy#delete_backup_copy"
   ],
   [
     "/en/storage/backups/faq",
@@ -8065,7 +8109,7 @@
   ],
   [
     "/en/tools-for-using-services/api/rest-api/install-jq",
-    "http://localhost:3000/docs/en/storage/backups/how-to-guides/api-examples#get_a_list_of_created_backup_plans"
+    "http://localhost:3000/docs/en/storage/backups/how-to-guides/api-examples#get_list_of_created_backup_plans"
   ],
   [
     "/en/cases/cases-cms/cases-wp",
@@ -18162,6 +18206,42 @@
   [
     "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#redaktirovanie_podseti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/wordpress-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa"
   ],
   [
     "/ru/applications-and-services/marketplace/service-management/pr-instance-add",

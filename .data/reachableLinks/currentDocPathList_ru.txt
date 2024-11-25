@@ -574,6 +574,8 @@
 /docs/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs
 /docs/ru/applications-and-services/marketplace/initial-configuration/openvpn-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start
+/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-start
+/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain
 /docs/ru/applications-and-services/marketplace/service-management
 /docs/ru/applications-and-services/marketplace/service-management/pr-instance-add
 /docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage
