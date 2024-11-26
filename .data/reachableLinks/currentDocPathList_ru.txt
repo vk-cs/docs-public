@@ -10,6 +10,8 @@
 /docs/ru/intro/start/support
 /docs/ru/intro/start/support/support-info
 /docs/ru/intro/start/support/sla
+/docs/ru/intro/start/support/chatbots
+/docs/ru/intro/start/support/chatbots/tg-support-bot
 /docs/ru/intro/start/legal
 /docs/ru/intro/start/legal/legal-terms
 /docs/ru/intro/start/legal/policy-hotbox
@@ -602,6 +604,7 @@
 /docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage
 /docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides
 /docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad
+/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert
 /docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete
 /docs/ru/tools-for-using-services/account
 /docs/ru/tools-for-using-services/account/concepts

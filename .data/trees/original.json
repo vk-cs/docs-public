@@ -8160,6 +8160,21 @@
     ]
   },
   {
+    "uuid": "238a631b-5b81-4b2a-9ee0-06eb30b39fcb",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert/update-fim-cert.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert/update-fim-cert.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "5836351d-8ef8-437a-ab03-5cf1fc3282e2",
     "lang": "en",
     "type": "ARTICLE",
@@ -9517,6 +9532,36 @@
     "partialPath": "/ru/intro/start/support/sla",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/sla/sla.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/sla/sla.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f8836195-ea04-43ae-874c-73e57b74b609",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/intro/start/support/chatbots",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/chatbots/chatbots.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/chatbots/chatbots.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "601ddd8f-bfd7-47a1-a546-2eadb18d0b5d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/intro/start/support/chatbots/tg-support-bot",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/chatbots/tg-support-bot/tg-support-bot.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/chatbots/tg-support-bot/tg-support-bot.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -18397,6 +18442,21 @@
     "partialPath": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad/add-fim-for-ad.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad/add-fim-for-ad.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b1a19e0d-414d-4e46-9192-e1489291b310",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert/update-fim-cert.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert/update-fim-cert.md",
     "variables": {},
     "hidden": false,
     "version": null,
