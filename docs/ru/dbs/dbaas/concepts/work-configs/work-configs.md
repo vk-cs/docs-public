@@ -74,7 +74,7 @@
 | ![](/ru/assets/check.svg "inline") 
 | ![](/ru/assets/check.svg "inline") 
 | ![](/ru/assets/check.svg "inline") 
-|
+
 | ClickHouse
 | ![](/ru/assets/check.svg "inline") 
 | ![](/ru/assets/no.svg "inline")
