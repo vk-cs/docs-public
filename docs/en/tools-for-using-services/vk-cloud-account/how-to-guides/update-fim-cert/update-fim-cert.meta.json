@@ -6,5 +6,6 @@
   "metaDescription": "How to update federated access certificate in VK Cloud manually or set up automatic update",
   "sectionTitle": "Updating identity federation certificate",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "238a631b-5b81-4b2a-9ee0-06eb30b39fcb"
 }

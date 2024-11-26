@@ -7276,6 +7276,10 @@
     "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage#deleting_member"
   ],
   [
+    "/en/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert",
+    "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert#auto-update"
+  ],
+  [
     "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#deleting_a_project"
   ],
@@ -8606,6 +8610,10 @@
   [
     "/ru/intro/start/partners/partners-profile",
     "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
+  ],
+  [
+    "/ru/intro/start/support/support-info",
+    "http://localhost:3000/docs/ru/intro/start/support/chatbots/tg-support-bot"
   ],
   [
     "/ru/intro/start/support/support-info",
@@ -18390,6 +18398,10 @@
   [
     "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage#udalenie_uchastnika"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert#auto-update"
   ],
   [
     "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
