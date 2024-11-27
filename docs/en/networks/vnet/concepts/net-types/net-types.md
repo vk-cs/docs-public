@@ -88,3 +88,11 @@ It is not possible to edit or delete the subnets of that network. The following 
 
 - Assigning the network to a virtual machine.
 - Assigning the network for a router external network connection.
+
+## {heading(Service network)[id=service_net]}
+
+_Service network_ provides network connection between VMs and VK Cloud internal resources. For example, using the service network, you can [connect](/en/networks/vnet/how-to-guides/s3-service-net) to Cloud Storage buckets from a VM without Internet access.
+
+The service network does not provide VM access to the Internet or to another VM.
+
+To add a service network to your project, contact [technical support](mailto:support@mcs.mail.ru).
