@@ -2130,6 +2130,21 @@
     ]
   },
   {
+    "uuid": "ca6534a2-5609-4d15-9a2b-618b193cdbc1",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/networks/vnet/how-to-guides/s3-service-net",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/vnet/how-to-guides/s3-service-net/s3-service-net.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/vnet/how-to-guides/s3-service-net/s3-service-net.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "67484dfe-8bd0-4103-82f0-922e3c47e7cf",
     "lang": "en",
     "type": "ARTICLE",
@@ -6412,6 +6427,21 @@
     "partialPath": "/en/ml/spark-to-k8s/concepts/about",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/about/about.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "635decee-a840-403b-8e83-e517f47d2005",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/ml/spark-to-k8s/concepts/architecture",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/architecture/architecture.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/architecture/architecture.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -11752,6 +11782,21 @@
     "partialPath": "/ru/networks/vnet/how-to-guides/vip-keepalived",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/how-to-guides/vip-keepalived/vip-keepalived.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/how-to-guides/vip-keepalived/vip-keepalived.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "feca3736-7230-4b69-b75d-bec056cd896b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/how-to-guides/s3-service-net/s3-service-net.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/how-to-guides/s3-service-net/s3-service-net.md",
     "variables": {},
     "hidden": false,
     "version": null,

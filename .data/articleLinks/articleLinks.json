@@ -2212,6 +2212,10 @@
     "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet"
   ],
   [
+    "/en/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/en/networks/vnet/how-to-guides/s3-service-net"
+  ],
+  [
     "/en/networks/vnet/concepts/ips-and-inet",
     "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
   ],
@@ -2717,6 +2721,54 @@
   ],
   [
     "/en/networks/vnet/how-to-guides/vip-keepalived",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/networks/directconnect"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/storage/s3/service-management/buckets/create-bucket"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-add-net#deleting_a_vm_network"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-console"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/en/networks/vnet/how-to-guides/s3-service-net",
     "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_network"
   ],
   [
@@ -6342,6 +6394,30 @@
   [
     "/en/ml/spark-to-k8s/concepts/about",
     "http://localhost:3000/docs/en/kubernetes/k8s"
+  ],
+  [
+    "/en/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/concepts/architecture#cluster_spark"
+  ],
+  [
+    "/en/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/concepts/architecture#vm_docker_registry"
+  ],
+  [
+    "/en/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/concepts/architecture#cloud_storage"
+  ],
+  [
+    "/en/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/concepts/architecture#service_ml_platform"
+  ],
+  [
+    "/en/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry"
+  ],
+  [
+    "/en/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/storage/s3"
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
@@ -10804,6 +10880,10 @@
     "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet"
   ],
   [
+    "/ru/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/s3-service-net"
+  ],
+  [
     "/ru/networks/vnet/concepts/ips-and-inet",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
   ],
@@ -11345,6 +11425,58 @@
   ],
   [
     "/ru/networks/vnet/how-to-guides/vip-keepalived",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/networks/directconnect/connect"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-add-net#podklyuchenie_seti_k_vm"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-add-net#udalenie_seti_vm"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-console"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/networks/vnet/how-to-guides/s3-service-net",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
   ],
   [
