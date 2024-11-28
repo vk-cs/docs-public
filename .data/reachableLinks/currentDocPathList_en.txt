@@ -139,6 +139,7 @@
 /docs/en/networks/vnet/how-to-guides/vpn-tunnel
 /docs/en/networks/vnet/how-to-guides/vip-keepalived
 /docs/en/networks/vnet/how-to-guides/advanced-router
+/docs/en/networks/vnet/how-to-guides/s3-service-net
 /docs/en/networks/vnet/tariffication
 /docs/en/networks/balancing
 /docs/en/networks/balancing/concepts
@@ -425,6 +426,7 @@
 /docs/en/ml/spark-to-k8s
 /docs/en/ml/spark-to-k8s/concepts
 /docs/en/ml/spark-to-k8s/concepts/about
+/docs/en/ml/spark-to-k8s/concepts/architecture
 /docs/en/ml/spark-to-k8s/how-to-guides
 /docs/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi
 /docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse

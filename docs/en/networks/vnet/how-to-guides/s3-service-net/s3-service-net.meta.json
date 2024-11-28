@@ -6,5 +6,6 @@
   "metaDescription": "How to connect to object storage a VM that is in a private network or connected to VK Cloud via Direct Connect",
   "sectionTitle": "Connecting to Cloud Storage without Internet",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "ca6534a2-5609-4d15-9a2b-618b193cdbc1"
 }

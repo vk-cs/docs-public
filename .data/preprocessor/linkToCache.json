@@ -99,6 +99,11 @@
     "full": "Общая сеть",
     "text": "Общая сеть"
   },
+  "service_net": {
+    "number": null,
+    "full": "Сервисная сеть",
+    "text": "Сервисная сеть"
+  },
   "share": {
     "number": null,
     "full": "Доступ к сети из других проектов",
@@ -334,6 +339,26 @@
     "full": "Удаление инстанса",
     "text": "Удаление инстанса"
   },
+  "cluster_spark": {
+    "number": null,
+    "full": "Кластер Cloud Spark",
+    "text": "Кластер Cloud Spark"
+  },
+  "vm_docker_registry": {
+    "number": null,
+    "full": "ВМ с Docker Registry",
+    "text": "ВМ с Docker Registry"
+  },
+  "cloud_storage": {
+    "number": null,
+    "full": "Cloud Storage",
+    "text": "Cloud Storage"
+  },
+  "service_ml_platform": {
+    "number": null,
+    "full": "Сервис Cloud ML Platform",
+    "text": "Сервис Cloud ML Platform"
+  },
   "auth_parameters": {
     "number": null,
     "full": "Параметры авторизации плагина",
@@ -563,26 +588,6 @@
     "number": null,
     "full": "Получение информации о текущем токене доступа",
     "text": "Получение информации о текущем токене доступа"
-  },
-  "cluster_spark": {
-    "number": null,
-    "full": "Кластер Cloud Spark",
-    "text": "Кластер Cloud Spark"
-  },
-  "vm_docker_registry": {
-    "number": null,
-    "full": "ВМ с Docker Registry",
-    "text": "ВМ с Docker Registry"
-  },
-  "cloud_storage": {
-    "number": null,
-    "full": "Cloud Storage",
-    "text": "Cloud Storage"
-  },
-  "service_ml_platform": {
-    "number": null,
-    "full": "Сервис Cloud ML Platform",
-    "text": "Сервис Cloud ML Platform"
   },
   "get_default_manifest_additional_info": {
     "number": null,

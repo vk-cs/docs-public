@@ -158,6 +158,7 @@
 /docs/ru/networks/vnet/how-to-guides/vpn-tunnel
 /docs/ru/networks/vnet/how-to-guides/advanced-router
 /docs/ru/networks/vnet/how-to-guides/vip-keepalived
+/docs/ru/networks/vnet/how-to-guides/s3-service-net
 /docs/ru/networks/vnet/tariffication
 /docs/ru/networks/balancing
 /docs/ru/networks/balancing/concepts

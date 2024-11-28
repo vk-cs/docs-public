@@ -1,10 +1,11 @@
 {
-    "title": "Service architecture",
-    "pageDescription": "How the service works and features of its integration with ML Platform.",
-    "shortDescription": "How the service works and features of its integration with ML Platform",
-    "metaTitle": "Service architecture",
-    "metaDescription": "How the service works and features of its integration with ML Platform",
-    "sectionTitle": "Service architecture",
-    "icon": "",
-    "weight": 2
+  "title": "Service architecture",
+  "pageDescription": "How the service works and features of its integration with ML Platform.",
+  "shortDescription": "How the service works and features of its integration with ML Platform",
+  "metaTitle": "Service architecture",
+  "metaDescription": "How the service works and features of its integration with ML Platform",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "635decee-a840-403b-8e83-e517f47d2005"
 }
