@@ -73,9 +73,9 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 
 </details>
 
-## Create new backup plan for the VM
+## Create new backup plan for VM
 
-### 1. Get the prodiver_id
+### 1. Get prodiver_id
 
 Request example:
 
