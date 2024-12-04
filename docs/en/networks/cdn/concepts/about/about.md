@@ -21,4 +21,10 @@ The CDN service helps:
 - Over 46 points of presence in Europe, CIS, North and South America.
 - More than 200 caching CDN servers.
 - Over 700 peering partners.
-- Network capacity exceeding 12 terabits per second (Tbps).
+- Network capacity exceeding 12 Tbps.
+
+<info>
+
+Confirm your phone number to access the service. If your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) has access to the CDN service, but it is not displayed in your management console, confirm your phone number via [technical support](mailto:support@mcs.mail.ru).
+
+</info>
