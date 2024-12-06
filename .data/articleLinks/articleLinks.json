@@ -2193,6 +2193,10 @@
   ],
   [
     "/en/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
+  ],
+  [
+    "/en/networks/vnet/concepts/net-types",
     "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id"
   ],
   [
@@ -2282,6 +2286,10 @@
   [
     "/en/networks/vnet/service-management/net",
     "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
   ],
   [
     "/en/networks/vnet/service-management/shared-nets",
@@ -3010,6 +3018,10 @@
   [
     "/en/networks/cdn/faq",
     "http://localhost:3000/docs/en/networks/cdn/concepts/http2-support"
+  ],
+  [
+    "/en/networks/cdn/faq",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/en/networks/dns/publicdns",
@@ -3949,7 +3961,7 @@
   ],
   [
     "/en/dbs/adb/quick-start/launch-adb",
-    "http://localhost:3000/docs/ru/dbs/dbaas/dbaas-start/db-connect"
+    "http://localhost:3000/docs/en/dbs/dbaas/connect"
   ],
   [
     "/en/dbs/adb/connect/int-connect-adb",
@@ -4318,6 +4330,14 @@
   [
     "/en/kubernetes/k8s/concepts/scale",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/scale#autoscaling"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s"
   ],
   [
     "/en/kubernetes/k8s/concepts/scale",
@@ -10861,6 +10881,10 @@
   ],
   [
     "/ru/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
+  ],
+  [
+    "/ru/networks/vnet/concepts/net-types",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
   ],
   [
@@ -10981,7 +11005,7 @@
   ],
   [
     "/ru/networks/vnet/service-management/shared-nets",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#shared_net"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/service-management/shared-nets",
@@ -11822,6 +11846,10 @@
   [
     "/ru/networks/cdn/faq",
     "http://localhost:3000/docs/ru/networks/cdn/monitoring"
+  ],
+  [
+    "/ru/networks/cdn/faq",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/networks/dns/private-dns",
@@ -13754,6 +13782,14 @@
   [
     "/ru/kubernetes/k8s/concepts/scale",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/scale#autoscaling"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s"
   ],
   [
     "/ru/kubernetes/k8s/concepts/scale",
