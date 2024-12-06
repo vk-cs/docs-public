@@ -1,8 +1,8 @@
-[Shared networks](../../concepts/net-types#shared_net) allow you to work with one network in several projects.
+[Shared networks](../../concepts/net-types#shared_net) allow you to work with one network in several projects within one [SDN](../../concepts/architecture#sdns_used).
 
 <info>
 
-To enable shared nets in your project, contact [technical support](mailto:support@mcs.mail.ru).
+Network sharing is available by default in projects with the Sprut [SDN](../../concepts/architecture#sdns_used). To share a network in a project with the Neutron SDN, contact [technical support](mailto:support@mcs.mail.ru).
 
 </info>
 
