@@ -16,6 +16,58 @@ Both types of scaling are performed manually. [Autoscaling](#autoscaling) also w
 
 _Vertical autoscaling_ of master nodes works for all clusters, you cannot disable it.
 
+The vertical scaling scheme depends on the cluster creation date:
+
+- The new scaling scheme is applicable to clusters created on or after 2024-12-06.
+- The old scaling scheme is applicable to clusters created before 2024-12-06.
+
+<tabs>
+<tablist>
+<tab>New scheme</tab>
+<tab>Old scheme</tab>
+</tablist>
+<tabpanel>
+
+The vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
+
+[cols="1,2", options="header"]
+|===
+
+|Threshold
+|Autoscaling behavior
+
+|CPU load is 80% for 60 seconds
+.2+|If at least one of the thresholds is exceeded, the autoscaling agent requests the [Cloud Containers](/ru/kubernetes/k8s) service to change the master node flavor:
+
+- The CPU generation will not change.
+- The number of CPU cores will increase by two.
+- The amount of RAM will change only if this is necessary to increase the CPU.
+
+Examples:
+
+- `STD2-2-6` will change to `STD2-4-6`.
+- `STD2-6-6` will change to `STD2-8-8`.
+- `STD3-2-6` will change to `STD3-4-6`.
+
+|CPU load exceeds 60% for 5 minutes
+
+|RAM load exceeds 90% for 60 seconds
+|The autoscaling agent requests the [Cloud Containers](/ru/kubernetes/k8s) service to change the master node flavor:
+
+- The CPU generation will not change.
+- The number of CPU cores will only change if this is necessary to increase RAM.
+- The amount of RAM will change by one step in the following order: 6, 8, 12, 16, 20, 24, 32, 36, 48.
+
+Examples:
+
+- `STD2-2-6` will change to `STD2-2-8`.
+- `STD2-2-8` will change to `STD2-4-12`.
+- `STD3-2-6` will change to `STD3-2-8`.
+|===
+
+</tabpanel>
+<tabpanel>
+
 Vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
 
 - CPU load exceeds 80% for 60 seconds
@@ -23,6 +75,9 @@ Vertical autoscaling agent evaluates the master node load by CPU and RAM, monito
 - RAM load exceeds 90% for 60 seconds
 
 If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-6` will be changed to `STD2-4-12`.
+
+</tabpanel>
+</tabs>
 
 You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../service-management/scale#scale_master_nodes).
 
