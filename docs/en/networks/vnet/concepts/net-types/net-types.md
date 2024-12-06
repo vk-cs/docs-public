@@ -12,7 +12,7 @@ _Shared network_ also provides access to the subnets with the private IP address
 
 To create a shared network, you have to create a standard network in one project and then share it with other projects. Only a user with the [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project owner (hereinafter referred to as _network owner_) has the ability to share a network.
 
-A network owner can share the net with any project:
+A network owner can share the net with any project within one [SDN](../architecture#sdns_used):
 
 - by [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) with those projects where this user is also the owner.
 - by project ID in OpenStack ([Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id)) with any other projects.
