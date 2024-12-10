@@ -104,6 +104,11 @@
     "full": "Сервисная сеть",
     "text": "Сервисная сеть"
   },
+  "shadow_port": {
+    "number": null,
+    "full": "Shadow port",
+    "text": "Shadow port"
+  },
   "share": {
     "number": null,
     "full": "Доступ к сети из других проектов",
@@ -543,6 +548,11 @@
     "number": null,
     "full": "Sprut",
     "text": "Sprut"
+  },
+  "external_net": {
+    "number": null,
+    "full": "Внешняя сеть",
+    "text": "Внешняя сеть"
   },
   "get_provider_id": {
     "number": null,
