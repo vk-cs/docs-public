@@ -203,6 +203,12 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   </tabpanel>
   </tabs>
 
+    <info>
+       
+    Чтобы создать кластер без доступа в интернет, укажите сеть с подключенным [Shadow port](/ru/networks/vnet/concepts/ips-and-inet#shadow_port).
+       
+    </info>
+
 - `floating_ip_enabled` — назначить публичный IP-адрес для API-кластера:
 
   - `true` — при создании кластера ему будет назначен [плавающий IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#plavayushchiy_ip_adres) для доступа к кластеру из интернета. Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.

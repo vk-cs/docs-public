@@ -46,7 +46,7 @@
 
   1. Создается сеть `example-tf-net` в SDN `Sprut`.
   1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
-  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, без подключения к [внешней сети](/ru/networks/vnet/concepts/net-types#vneshnyaya_set).
+  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, без подключения к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net).
   1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
 
 {include(/ru/_includes/_create_network_tf.md)[tags=net,router,shift=2]}
@@ -58,7 +58,7 @@
 
   1. Создается сеть `example-tf-net` в SDN `Sprut`.
   1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
-  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#vneshnyaya_set) в SDN `Sprut`.
+  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net) в SDN `Sprut`.
   1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
 
 {include(/ru/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
@@ -70,7 +70,7 @@
 
   1. Создается сеть `example-tf-net` в SDN `Sprut`.
   1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
-  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#vneshnyaya_set) в SDN `Sprut`.
+  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net) в SDN `Sprut`.
   1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
   1. Создается порт, которому присваивается IP-адрес `192.168.199.23`.
   1. Порт связывается с плавающим IP-адресом.
@@ -84,7 +84,7 @@
 
 - `admin_state_up` — создание ресурса в статусе включен `true` или выключен `false`.
 
-- `external` — признак [внешней сети](/ru/networks/vnet/concepts/net-types#vneshnyaya_set): `true` или `false`.
+- `external` — признак [внешней сети](/ru/networks/vnet/concepts/net-types#external_net): `true` или `false`.
 
 - `external_network_id` — идентификатор внешней сети для доступа к интернету. Идентификатор можно указать в манифесте или получить из источника данных.
 

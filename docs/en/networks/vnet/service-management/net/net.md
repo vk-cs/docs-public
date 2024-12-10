@@ -77,11 +77,19 @@ In addition to the cloud network, you can create subnets. By default, one networ
 1. In management console, go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
 1. Set the network name.
-1. (Optional) Give access to the Internet. This is necessary if you plan to use VPN, SNAT services.
-1. Select a router from the suggested list.
-1. Specify the zone for private DNS.
-7. (Optional) [Add subnets](#creating_subnet).
-8. Click the **Add Network** button.
+1. (Optional) Enable the **Internet access** option to access the VM in the network from the Internet. Internet access is required for VPN, SNAT.
+1. (Optional) Enable the **Access to VK Cloud services** option to connect [Shadow port](../../concepts/ips-and-inet#shadow_port) to the network. This option allows you to locate Kubernetes clusters in private networks without internet access. This option is available if the Shadow port is added to the project and internet access is disabled for the network.
+
+   <info>
+
+   To connect the Shadow port to your project, contact [technical support](mailto:support@mcs.mail.ru).
+
+   </info>
+   
+1. Select the [router](../../concepts/router) from the list. If the **Internet access** option is enabled, only routers connected to the [external network](../../concepts/net-types#external_network) will be listed.
+1. Specify the [zone](../../../dns/private-dns) for private DNS.
+1. By default, the subnet is already created, but you can add more. If you need to add subnets later, skip this step.
+8. Click the **Add network** button.
 
 Once a network is created, it will appear in the list of networks.
 

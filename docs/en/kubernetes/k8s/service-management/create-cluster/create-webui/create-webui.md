@@ -118,10 +118,16 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    - Network settings:
 
-     - **Network:** select the network and subnet where the cluster master and worker nodes will be located. If the required network and subnet are not on the list, [create](/en/networks/vnet/networks/create-net) them.
+     - **Network:** select the network and subnet that will host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/service-management/net#creating_network) them.
 
-     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the required subnet is not on the list, [create](/en/networks/vnet/networks/create-net#creating_subnet) it.
+        <info>
 
+        To create a cluster without internet access, select the network with the connected [Shadow port](/en/networks/vnet/concepts/ips-and-inet#shadow_port) from the list.
+
+        </info>
+
+     - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/service-management/net#creating_network) it. 
+     
        By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 
      - **Use pod subnet:** enable this option to specify the subnet that the pods will use to communicate with each other.
@@ -132,27 +138,27 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
        By default, the option is enabled, which allows access to the cluster and the Ingress controller from the Internet.
 
-   - Miscellaneous settings:
+        - Miscellaneous settings:
 
-     - **Trusted Docker Registry:** add Docker Registry addresses to the trusted list to disable HTTPS connection check when connecting to them.
+       - **Trusted Docker Registry:** add Docker Registry addresses to the trusted list to disable HTTPS connection check when connecting to them.
 
-       This comes in handy if the Docker registry uses a self-signed SSL or TLS certificate that cannot be validated by the cluster.
+         This comes in handy if the Docker registry uses a self-signed SSL or TLS certificate that cannot be validated by the cluster.
 
-       See [Docker documentation](https://docs.docker.com/registry/insecure/#deploy-a-plain-http-registry) for more information on disabling the validation (see the description of the `insecure-registries` setting).
+         See [Docker documentation](https://docs.docker.com/registry/insecure/#deploy-a-plain-http-registry) for more information on disabling the validation (see the description of the `insecure-registries` setting).
 
-     - **Virtual machine key:** SSH key, with which you can connect to the cluster hosts. The recommended value is `No key`.
+       - **Virtual machine key:** SSH key, with which you can connect to the cluster hosts. The recommended value is `No key`.
 
-       <info>
+         <info>
 
-       **Limited scope**
+         **Limited scope**
 
-       This setting is only available for clusters with Kubernetes version 1.22.9 and lower.
+         This setting is only available for clusters with Kubernetes version 1.22.9 and lower.
 
-       </info>
+         </info>
 
-     - **Enable monitoring:** enable this option to install a metrics collection agent in the cluster.
+       - **Enable monitoring:** enable this option to install a metrics collection agent in the cluster.
 
-       By default, the option is enabled and allows you to monitor the state of the cluster [using the Cloud Monitoring service](/en/monitoring-services/monitoring/service-management/mon-setup-new).
+         By default, the option is enabled and allows you to monitor the state of the cluster [using the Cloud Monitoring service](/en/monitoring-services/monitoring/service-management/mon-setup-new).
 
 1. Click the **Next step** button.
 

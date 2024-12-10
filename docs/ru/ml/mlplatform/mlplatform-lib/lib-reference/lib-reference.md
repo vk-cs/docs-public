@@ -185,7 +185,7 @@ get_internal_networks(**kwargs
 
 ## get_external_networks
 
-Получить список всех [внешних сетей](/ru/networks/vnet/concepts/net-types#vneshnyaya_set), доступных в проекте.
+Получить список всех [внешних сетей](/ru/networks/vnet/concepts/net-types#external_net), доступных в проекте.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
