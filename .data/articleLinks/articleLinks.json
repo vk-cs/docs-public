@@ -2232,6 +2232,14 @@
     "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
   ],
   [
+    "/en/networks/vnet/concepts/ips-and-inet",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
+  ],
+  [
+    "/en/networks/vnet/concepts/ips-and-inet",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster"
+  ],
+  [
     "/en/networks/vnet/service-management/net",
     "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_net"
   ],
@@ -2241,7 +2249,15 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet#shadow_port"
+  ],
+  [
+    "/en/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
+  ],
+  [
+    "/en/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/en/networks/dns/private-dns"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -4561,11 +4577,15 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/networks/vnet/networks/create-net"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/networks/vnet/networks/create-net#creating_subnet"
+    "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet#shadow_port"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_network"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -4638,6 +4658,10 @@
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#storage_types"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet#shadow_port"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -10817,7 +10841,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/networks/vnet/concepts/router",
@@ -10829,7 +10853,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/networks/vnet/concepts/router",
@@ -10857,7 +10881,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/vpn",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/networks/vnet/concepts/vpn",
@@ -10909,7 +10933,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/ips-and-inet",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/networks/vnet/concepts/ips-and-inet",
@@ -10918,6 +10942,14 @@
   [
     "/ru/networks/vnet/concepts/ips-and-inet",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
+  ],
+  [
+    "/ru/networks/vnet/concepts/ips-and-inet",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/networks/vnet/concepts/ips-and-inet",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/create-cluster"
   ],
   [
     "/ru/networks/vnet/service-management/net",
@@ -10933,7 +10965,15 @@
   ],
   [
     "/ru/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_podseti"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet#shadow_port"
+  ],
+  [
+    "/ru/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
+  ],
+  [
+    "/ru/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/ru/networks/dns/private-dns"
   ],
   [
     "/ru/networks/vnet/service-management/net",
@@ -14057,11 +14097,15 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/networks/vnet/networks/create-net"
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/networks/vnet/networks/create-net#sozdanie_podseti"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet#shadow_port"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_podseti"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -14134,6 +14178,10 @@
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/storage#podderzhivaemye_tipy_hranilishch_vk_cloud"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet#shadow_port"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -16025,7 +16073,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -18165,7 +18213,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/usergate-start",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/usergate-start",
@@ -18809,7 +18857,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/manage",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/manage",
@@ -19389,19 +19437,19 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#external_net"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
