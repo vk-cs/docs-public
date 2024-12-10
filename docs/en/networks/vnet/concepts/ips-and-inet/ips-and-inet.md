@@ -97,3 +97,13 @@ On all subnets of the external network `ext-net`:
 | ext-subnet28 | 94.139.244.0/22  | 94.139.245.0—94.139.247.253                        | 94.139.247.254  |
 | ext-subnet29 | 212.233.88.0/21  | 212.233.88.1—212.233.95.253                        | 212.233.95.254  |
 <!-- prettier-ignore-end -->
+
+## {heading(Shadow port)[id=shadow_port]}
+
+The _Shadow port_ technology allows you to launch Kubernetes clusters in private networks. Usually, Kubernetes needs internet access to get all the information from related services to configure the cluster. Shadow port allows you to connect to VK Cloud internal services without connecting to the internet.
+
+To use the technology for creating a Kubernetes cluster:
+
+1. Contact [technical support](mailto:support@mcs.mail.ru) to connect Shadow port to your project.
+1. [Enable](../../service-management/net#creating_network) the **Access to VK Cloud services** option for a network without internet access.
+1. [Locate](/en/kubernetes/k8s/service-management/create-cluster) the cluster on this network.

@@ -115,7 +115,7 @@
 По обращению в [техническую поддержку](/ru/contacts) возможен перенос объектов:
 
 - плавающего IP-адресов (floating IP);
-- адреса [внешней сети](/ru/networks/vnet/concepts/net-types#vneshnyaya_set).
+- адреса [внешней сети](/ru/networks/vnet/concepts/net-types#external_net).
 
 ## Просмотр квот проекта
 
