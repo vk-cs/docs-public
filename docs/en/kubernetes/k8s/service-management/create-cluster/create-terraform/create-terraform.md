@@ -200,6 +200,13 @@ Here:
   </tabpanel>
   </tabs>
 
+
+    <info>
+
+    To create a cluster without internet access, specify a network with a connected [Shadow port](/en/networks/vnet/concepts/ips-and-inet#shadow_port).
+
+    </info>
+
 - `floating_ip_enabled` — assign a public IP address to the API cluster:
 
   - `true` — when the cluster is created, a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) will be assigned to access the cluster from the Internet. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#internet_access) to a router with access to the external network.
