@@ -14,7 +14,7 @@ These components are present in all Cloud Containers clusters.
 .^|Kubernetes<br>1.26.x
 .^|Kubernetes<br>1.27.x
 .^|Kubernetes<br>1.28.x
-.^|Kubernetes<br>1.29.x
+.^|Kubernetes<br>1.29.x–1.30.x
 
 |[CoreDNS](https://github.com/coredns/coredns)
 |1.2.4
@@ -85,7 +85,7 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 .^|Kubernetes<br>1.25.x–1.26.x
 .^|Kubernetes<br>1.27.x
 .^|Kubernetes<br>1.28.x
-.^|Kubernetes<br>1.29.x
+.^|Kubernetes<br>1.29.x–1.30.x
 
 |[Capsule](https://github.com/projectcapsule/capsule)
 | ![](/en/assets/no.svg "inline")

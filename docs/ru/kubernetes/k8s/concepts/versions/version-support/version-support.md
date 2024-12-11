@@ -2,10 +2,10 @@
 
 В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
 
+- 1.30.5
 - 1.29.7
 - 1.28.9
 - 1.27.6
-- 1.26.5
 
 При [создании нового кластера](../../../service-management/create-cluster) выбирайте последнюю доступную [версию Kubernetes](#podderzhka_versiy_kubernetes). По возможности [обновляйте кластер](../../../service-management/update) до последней доступной версии. Процедура обновления описана в [соответствующем разделе концепций](../../update).
 
@@ -26,6 +26,11 @@
 |Официальная дата релиза
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
+
+|1.30.x
+|10 сентября 2024
+|10.12.2024
+|10.02.2026
 
 | 1.29.x
 | 17 июля 2024
@@ -105,7 +110,7 @@
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.29.х
+|1.27.x–1.30.х
 
 |Настройки масштабирования групп узлов
 | ![](/ru/assets/check.svg "inline")
@@ -169,6 +174,10 @@
 |Версия
 |Изменения в Kubernetes
 |Изменения в сервисе Kubernetes aaS
+
+|**Kubernetes 1.30.5**
+|[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
+|![](/en/assets/no.svg "inline")
 
 |**Kubernetes 1.29.7**
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
