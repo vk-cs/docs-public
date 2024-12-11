@@ -47,6 +47,12 @@ openstack security group rule list --long <security group ID>
 
 ## Create a security group
 
+<warn>
+
+A security group ID is displayed in not all platform services. Create groups with unique names to make it easy to identify them later.
+
+</warn>
+
 <tabs>
 <tablist>
 <tab>Management console</tab>
