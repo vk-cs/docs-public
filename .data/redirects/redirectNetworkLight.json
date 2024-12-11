@@ -673,7 +673,7 @@
   "/ru/dbs/dbaas/dbaas-start/db-migration": "/ru/dbs/dbaas/how-to-guides/db-migration",
   "/ru/dbs/dbaas/manage-db/db-delete": "/ru/dbs/dbaas/service-management/manage-instance",
   "/ru/dbs/dbaas/dbaas-start/db-clickhouse": "/ru/dbs/dbaas/concepts/types/clickhouse",
-  "/ru/dbs/dbaas/dbaas-start/db-postgrespro": "/ru/dbs/dbaas/concepts/types/postgrespro",
+  "/ru/dbs/dbaas/dbaas-start/db-postgrespro": "/ru/dbs/dbaas/concepts/types",
   "/ru/dbs/dbaas/dbaas-start/db-postgres": "/ru/dbs/dbaas/concepts/types/postgresql",
   "/ru/dbs/dbaas/dbaas-start/db-redis": "/ru/dbs/dbaas/concepts/types/redis",
   "/ru/dbs/dbaas/external/terraform": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas",
@@ -1853,7 +1853,7 @@
   "/ru/dbs/dbaas/types/mongodb": "/ru/dbs/dbaas/concepts/types/mongodb",
   "/ru/dbs/dbaas/types/mysql": "/ru/dbs/dbaas/concepts/types/mysql",
   "/ru/dbs/dbaas/types/opensearch": "/ru/dbs/dbaas/concepts/types/opensearch",
-  "/ru/dbs/dbaas/types/postgrespro": "/ru/dbs/dbaas/concepts/types/postgrespro",
+  "/ru/dbs/dbaas/types/postgrespro": "/ru/dbs/dbaas/concepts/types",
   "/ru/dbs/dbaas/types/postgresql": "/ru/dbs/dbaas/concepts/types/postgresql",
   "/ru/dbs/dbaas/types/redis": "/ru/dbs/dbaas/concepts/types/redis",
   "/ru/dbs/dbaas/types/tarantool": "/ru/dbs/dbaas/concepts/types/tarantool",
@@ -3870,5 +3870,6 @@
   "/en/computing/iaas/concepts/new-volume-sla": "/en/computing/iaas/concepts/volume-sla",
   "/ru/computing/iaas/concepts/new-vm-concept": "/ru/computing/iaas/concepts/about",
   "/ru/computing/iaas/concepts/new-volume-sla": "/ru/computing/iaas/concepts/volume-sla",
-  "/ru/tools-for-using-services/api/api-spec/partners-api": "/ru/intro/start/partners"
+  "/ru/tools-for-using-services/api/api-spec/partners-api": "/ru/intro/start/partners",
+  "/ru/dbs/dbaas/concepts/types/postgrespro": "/ru/dbs/dbaas/concepts/types"
 }

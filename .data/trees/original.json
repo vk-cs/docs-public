@@ -13230,21 +13230,6 @@
     ]
   },
   {
-    "uuid": "a467ce69-4f9d-4e9d-a979-0f19f7ca44a0",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/dbs/dbaas/concepts/types/postgrespro",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/concepts/types/postgrespro/postgrespro.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/concepts/types/postgrespro/postgrespro.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "e655dba7-5447-4e7d-ab22-ae291916f5af",
     "lang": "ru",
     "type": "ARTICLE",

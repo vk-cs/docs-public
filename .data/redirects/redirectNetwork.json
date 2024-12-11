@@ -4135,7 +4135,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/dbaas-start/db-postgrespro",
-    "destination": "/ru/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/ru/dbs/dbaas/concepts/types",
     "permanent": false,
     "locale": false
   },
@@ -12109,7 +12109,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/types/postgrespro",
-    "destination": "/ru/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/ru/dbs/dbaas/concepts/types",
     "permanent": false,
     "locale": false
   },
@@ -28574,6 +28574,12 @@
   {
     "source": "/ru/tools-for-using-services/api/api-spec/partners-api",
     "destination": "/ru/intro/start/partners",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/ru/dbs/dbaas/concepts/types",
     "permanent": false,
     "locale": false
   }
