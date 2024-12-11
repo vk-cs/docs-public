@@ -2,10 +2,10 @@ New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.30.5
 - 1.29.7
 - 1.28.9
 - 1.27.6
-- 1.26.5
 
 When [creating a new cluster](../../../service-management/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../service-management/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
 
@@ -26,6 +26,11 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |Official release date
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
+
+|1.30.x
+|10 September 2024
+|10.12.2024
+|10.02.2026
 
 | 1.29.x
 | 17 July 2024
@@ -105,7 +110,7 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.29.х
+|1.27.x–1.30.х
 
 |Node group scaling settings
 | ![](/ru/assets/check.svg "inline")
@@ -169,6 +174,10 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |Version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
+
+|**Kubernetes 1.30.5**
+|[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
+|![](/en/assets/no.svg "inline")
 
 |**Kubernetes 1.29.7**
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
