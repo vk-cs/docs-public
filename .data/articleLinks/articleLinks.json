@@ -2153,15 +2153,15 @@
   ],
   [
     "/en/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create/"
   ],
   [
     "/en/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups#assign_a_rule_group_to_an_instance"
   ],
   [
     "/en/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
+    "http://localhost:3000/docs/en/networks/vnet/concepts/traffic-limiting#preset_sg"
   ],
   [
     "/en/networks/vnet/concepts/vpn",
@@ -2725,7 +2725,7 @@
   ],
   [
     "/en/networks/vnet/how-to-guides/vip-keepalived",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/traffic-limiting#using_ip_source_guard"
+    "http://localhost:3000/docs/en/networks/vnet/concepts/traffic-limiting#source_guard"
   ],
   [
     "/en/networks/vnet/how-to-guides/vip-keepalived",
@@ -7785,6 +7785,14 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
@@ -8014,6 +8022,10 @@
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
     "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
@@ -10865,15 +10877,15 @@
   ],
   [
     "/ru/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
-  ],
-  [
-    "/ru/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
-  ],
-  [
-    "/ru/networks/vnet/concepts/traffic-limiting",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create/"
+  ],
+  [
+    "/ru/networks/vnet/concepts/traffic-limiting",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans"
+  ],
+  [
+    "/ru/networks/vnet/concepts/traffic-limiting",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#preset_sg"
   ],
   [
     "/ru/networks/vnet/concepts/vpn",
@@ -11469,7 +11481,7 @@
   ],
   [
     "/ru/networks/vnet/how-to-guides/vip-keepalived",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#ispolzovanie_ip_source_guard"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#source_guard"
   ],
   [
     "/ru/networks/vnet/how-to-guides/vip-keepalived",
@@ -12825,22 +12837,6 @@
   ],
   [
     "/ru/dbs/dbaas/concepts/types/postgresql",
-    "http://localhost:3000/docs/ru/dbs/dbaas/concepts/extensions"
-  ],
-  [
-    "/ru/dbs/dbaas/concepts/types/postgrespro",
-    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/create"
-  ],
-  [
-    "/ru/dbs/dbaas/concepts/types/postgrespro",
-    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/create"
-  ],
-  [
-    "/ru/dbs/dbaas/concepts/types/postgrespro",
-    "http://localhost:3000/docs/ru/dbs/dbaas/connect"
-  ],
-  [
-    "/ru/dbs/dbaas/concepts/types/postgrespro",
     "http://localhost:3000/docs/ru/dbs/dbaas/concepts/extensions"
   ],
   [
@@ -18105,7 +18101,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#prednastroennye_gruppy_bezopasnosti"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start",
@@ -19229,6 +19225,14 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
@@ -19490,6 +19494,10 @@
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
     "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/network"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",

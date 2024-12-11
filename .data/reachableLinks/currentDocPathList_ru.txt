@@ -254,7 +254,6 @@
 /docs/ru/dbs/dbaas/concepts/types/mysql
 /docs/ru/dbs/dbaas/concepts/types/opensearch
 /docs/ru/dbs/dbaas/concepts/types/postgresql
-/docs/ru/dbs/dbaas/concepts/types/postgrespro
 /docs/ru/dbs/dbaas/concepts/types/tarantool
 /docs/ru/dbs/dbaas/concepts/types/redis
 /docs/ru/dbs/dbaas/concepts/architecture
