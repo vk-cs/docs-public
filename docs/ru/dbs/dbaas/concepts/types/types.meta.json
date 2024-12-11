@@ -7,5 +7,6 @@
   "sectionTitle": "Типы СУБД",
   "icon": "",
   "weight": 1,
+  "additionalUuids": ["a467ce69-4f9d-4e9d-a979-0f19f7ca44a0"],
   "uuid": "d549727d-00d0-4964-a2f1-aa6ee74ea5dc"
 }
