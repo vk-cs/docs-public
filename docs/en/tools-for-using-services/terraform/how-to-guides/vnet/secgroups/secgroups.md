@@ -39,9 +39,10 @@ Create a Terraform configuration file `secgroup.tf`.  The content depends on the
 
 <tabs>
 <tablist>
-<tab>By protocol via several ports</tab>
-<tab>By protocol via all ports</tab>
-<tab>Incoming traffic</tab>
+<tab>For individual ports</tab>
+<tab>For all ports</tab>
+<tab>Incoming traffic only</tab>
+<tab>Preset groups</tab>
 </tablist>
 <tabpanel>
 
@@ -72,6 +73,19 @@ In the file, the following configuration is described:
   1. In the group, create the rule that allow all incoming traffic.
 
   {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
+
+</tabpanel>
+<tabpanel>
+
+The file describes the configuration for adding [preset security groups](/ru/networks/vnet/concepts/traffic-limiting#secgroups) to the project.
+
+<warn>
+
+Do not change the rules or create preset security groups via Terraform if they already exist in the project.
+
+</warn>
+
+{include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
 </tabpanel>
 </tabs>
