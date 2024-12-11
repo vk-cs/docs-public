@@ -39,9 +39,10 @@
 
 <tabs>
 <tablist>
-<tab>По протоколу для отдельных портов</tab>
-<tab>По протоколу для всех портов</tab>
+<tab>Для отдельных портов</tab>
+<tab>Для всех портов</tab>
 <tab>Только входящий трафик</tab>
+<tab>Преднастроенные группы</tab>
 </tablist>
 <tabpanel>
 
@@ -72,6 +73,17 @@
   1. В группе создается правило, которое разрешает весь входящий трафик.
 
   {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
+
+</tabpanel>
+<tabpanel>
+
+В файле описана конфигурация для добавления в проект [преднастроенных групп безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups).
+
+<warn>
+Не изменяйте правила и не создавайте преднастроенные группы безопасности через Terraform, если они уже есть в проекте.
+</warn>
+
+  {include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
 </tabpanel>
 </tabs>

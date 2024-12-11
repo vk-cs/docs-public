@@ -2,7 +2,7 @@ Using Terraform you can create virtual machines. As an example, a VM will be cre
 
 Two options for VM configuration will be considered: without additional settings and with an additional disk connected.
 
-## Preparatory steps
+## Before you start
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you plan to create a VM. Different regions may have different quotas configured.
 
@@ -105,7 +105,7 @@ Two options for VM configuration will be considered: without additional settings
    </tabpanel>
    </tabs>
 
-## 1. Create a file describing the basic network infrastructure
+## 1. Create file describing basic network infrastructure
 
 1. [Create a `network.tf` file](../../vnet/network).
 
@@ -122,7 +122,13 @@ Two options for VM configuration will be considered: without additional settings
 
 The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs/data-sources).
 
-## 2. Create a file with the VM description
+## 2. (Optional) Create security groups
+
+To connect to the VM via SSH, assign the `ssh` [preset security group](/ru/networks/vnet/concepts/traffic-limiting#secgroups) to the VM. This group is in the project if VMs on Linux OS with SSH access were previously created.
+
+If the project does not have the `ssh` security group, describe it in the configuration file: [create](../../vnet/secgroups) the `secgroup.tf` file and add the description of the `ssh` security group with firewall rules to it.
+
+## 3. Create file with VM description
 
 Create a `main.tf` file.
 
@@ -137,11 +143,11 @@ Depending on the required configuration option (a VM without additional settings
 
 The file describes:
 
-- VM parameters;
+- VM parameters
 - resources assigned to the VM that are necessary for access from an external network:
-  - a floating IP address;
-  - a SSH key pair that will be used for access;
-  - security groups to which the VM must be added: `default` and `ssh` (both groups are configured in VK Cloud by default).
+  - a floating IP address
+  - a pair of SSH keys that will be used for access
+  - security groups: `default` and `ssh`
 
 ```hcl
 data "vkcs_compute_flavor" "compute" {
@@ -197,13 +203,13 @@ output "instance_fip" {
 
 The file describes:
 
-- VM parameters;
+- VM parameters
 - resources assigned to the VM that are necessary for access from an external network:
-  - a floating IP address;
-  - a SSH key pair that will be used for access;
-  - security groups to which the VM must be added: `default` and `ssh` (both groups are configured in VK Cloud by default);
-- an additional 50 GB block device;
-- a synthetic resource `vkcs_compute_volume_attach` for connecting the block device to the VM.
+  - a floating IP address
+  - a pair of SSH keys that will be used for access
+  - security groups: `default` and `ssh`
+- an additional 50 GB block device
+- a synthetic resource `vkcs_compute_volume_attach` for connecting the block device to the VM
 
 ```hcl
 data "vkcs_compute_flavor" "compute" {
@@ -272,7 +278,7 @@ output "instance_fip" {
 
 The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 
-## 3. Create resources using Terraform
+## 4. Create resources using Terraform
 
 1. Place the Terraform configuration files `provider.tf`, `variables.tf`, `network.tf` and `main.tf` in the same directory.
 
@@ -296,7 +302,7 @@ The resources arguments are described in the [Terraform provider documentation](
 
 Once resource creation is complete, the Terraform `instance_fip` output will show the floating IP address assigned to the VM.
 
-## 4. Check if the example works
+## 5. Check if example works
 
 [Connect via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
 
