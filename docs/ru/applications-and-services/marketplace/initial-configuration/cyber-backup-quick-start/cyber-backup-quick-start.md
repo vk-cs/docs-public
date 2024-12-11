@@ -31,7 +31,7 @@
    - Доступна для подключения по SSH:
 
       - Имеет внешний IP-адрес.
-      - Ей назначена [группа безопасности](/ru/networks/vnet/concepts/traffic-limiting#prednastroennye_gruppy_bezopasnosti) `ssh`.
+      - Ей назначена [группа безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups) `ssh`.
 
          Если группа не назначена, [назначьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
 

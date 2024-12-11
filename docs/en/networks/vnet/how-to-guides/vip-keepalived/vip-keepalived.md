@@ -305,7 +305,7 @@ Write down all received data. Result for the given example:
 
 ## 3. Configure IP Source Guard
 
-The `keepalived` installed on virtual machines should be able to send traffic not only from the IP addresses `192.168.0.11` and `192.168.0.22`, but also from the virtual IP address `192.168.0.254`. Since OpenStack ports in VK Cloud use the [IP Source Guard mechanism](../../concepts/traffic-limiting#using_ip_source_guard), allow traffic from the virtual IP address for virtual machine ports:
+The `keepalived` installed on virtual machines should be able to send traffic not only from the IP addresses `192.168.0.11` and `192.168.0.22`, but also from the virtual IP address `192.168.0.254`. Since OpenStack ports in VK Cloud use the [IP Source Guard mechanism](../../concepts/traffic-limiting#source_guard), allow traffic from the virtual IP address for virtual machine ports:
 
 1. For `kld-vm-1`:
 
