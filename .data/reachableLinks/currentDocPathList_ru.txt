@@ -12,6 +12,7 @@
 /docs/ru/intro/start/support/sla
 /docs/ru/intro/start/support/chatbots
 /docs/ru/intro/start/support/chatbots/tg-support-bot
+/docs/ru/intro/start/support/chatbots/ai-bot
 /docs/ru/intro/start/legal
 /docs/ru/intro/start/legal/legal-terms
 /docs/ru/intro/start/legal/policy-hotbox

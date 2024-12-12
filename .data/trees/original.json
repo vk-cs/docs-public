@@ -9600,6 +9600,21 @@
     ]
   },
   {
+    "uuid": "b44f31e2-8836-480e-bd58-e7ae74d8ce33",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/intro/start/support/chatbots/ai-bot",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/chatbots/ai-bot/ai-bot.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/support/chatbots/ai-bot/ai-bot.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "31d2161c-1450-4801-b340-4116591a8ce2",
     "lang": "ru",
     "type": "INTERMEDIATE",
