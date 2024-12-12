@@ -28576,11 +28576,5 @@
     "destination": "/ru/intro/start/partners",
     "permanent": false,
     "locale": false
-  },
-  {
-    "source": "/ru/dbs/dbaas/concepts/types/postgrespro",
-    "destination": "/ru/dbs/dbaas/concepts/types",
-    "permanent": false,
-    "locale": false
   }
 ]
