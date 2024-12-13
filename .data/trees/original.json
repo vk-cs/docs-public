@@ -9525,6 +9525,21 @@
     ]
   },
   {
+    "uuid": "6685671c-e71f-4695-8c0a-f85bcdc09341",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/start/partners/partners-certification",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/partners/partners-certification/partners-certification.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/partners/partners-certification/partners-certification.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "55eb9967-05ce-4436-87ff-574691574580",
     "lang": "ru",
     "type": "INTERMEDIATE",
