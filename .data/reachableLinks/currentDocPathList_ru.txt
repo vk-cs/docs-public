@@ -7,6 +7,7 @@
 /docs/ru/intro/start/partners
 /docs/ru/intro/start/partners/about-partners
 /docs/ru/intro/start/partners/partners-profile
+/docs/ru/intro/start/partners/partners-certification
 /docs/ru/intro/start/support
 /docs/ru/intro/start/support/support-info
 /docs/ru/intro/start/support/sla

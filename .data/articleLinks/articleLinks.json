@@ -8744,6 +8744,46 @@
     "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
   ],
   [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/create"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/create"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management"
+  ],
+  [
+    "/ru/intro/start/partners/partners-certification",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#udalenie_proekta"
+  ],
+  [
     "/ru/intro/start/support/support-info",
     "http://localhost:3000/docs/ru/intro/start/support/chatbots/tg-support-bot"
   ],
