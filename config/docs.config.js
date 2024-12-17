@@ -48,6 +48,47 @@ export const config = {
                 },
             ],
         },
+        supportMenu: {
+            ru: [
+                {
+                    title: 'Портал техподдержки',
+                    absoluteLink: 'https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud',
+                    iconPartialPath: '/ru/assets/portal-support.svg',
+                },
+                {
+                    title: 'Telegram-бот техподдержки',
+                    absoluteLink: 'https://t.me/vk_tech_support_bot',
+                    iconPartialPath: '/ru/assets/telegram-icon.svg',
+                },
+                {
+                    title: 'ИИ-консультант в Telegram',
+                    absoluteLink: 'https://t.me/vk_cloud_support_bot',
+                    iconPartialPath: '/ru/assets/ai-bot.svg',
+                },
+                {
+                    title: 'Сайт VK Cloud',
+                    absoluteLink: 'https://cloud.vk.com/',
+                    iconPartialPath: '/ru/assets/web-site.svg',
+                },
+            ],
+            en: [
+                {
+                    title: 'Support email',
+                    absoluteLink: 'mailto:support@mcs.mail.ru',
+                    iconPartialPath: '/en/assets/email-icon.svg',
+                },
+                {
+                    title: 'AI consultant in Telegram',
+                    absoluteLink: 'https://t.me/vk_cloud_support_bot',
+                    iconPartialPath: '/ru/assets/ai-bot.svg',
+                },
+                {
+                    title: 'VK Cloud web site',
+                    absoluteLink: 'https://cloud.vk.com/en/',
+                    iconPartialPath: '/ru/assets/web-site.svg',
+                },
+            ]
+        }
     },
     contacts: {
         useNativeSupportUrl: false,
@@ -78,9 +119,6 @@ export const config = {
     paths: {
         policy: '/additionals/start/legal/policy-privacy',
     },
-    links: {
-        telegramSupport: 'https://t.me/vk_tech_support_bot',
-    },
     enablers: {
         auth: true,
         likeDislike: true,
@@ -88,7 +126,6 @@ export const config = {
         sentry: true,
         suggester: true,
         editOnGitOps: true,
-        telegramSupport: true,
     },
     translations: {
         en: {
