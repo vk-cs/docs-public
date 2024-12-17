@@ -1685,6 +1685,10 @@
   ],
   [
     "/en/computing/iaas/how-to-guides/win-image",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/images/image-metadata"
+  ],
+  [
+    "/en/computing/iaas/how-to-guides/win-image",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
   ],
   [
