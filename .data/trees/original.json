@@ -17790,6 +17790,21 @@
     ]
   },
   {
+    "uuid": "35958e75-11bf-45e0-a4bf-2b34dff1ce89",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/manila-events/manila-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/manila-events/manila-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "05c63c12-7cac-4249-83ca-edad70ea85c7",
     "lang": "ru",
     "type": "INTERMEDIATE",
