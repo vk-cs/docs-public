@@ -18008,6 +18008,46 @@
     "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log"
   ],
   [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#file_share"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_faylovogo_hranilishcha_i_ego_seti"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#dobavlenie_pravila_dostupa"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_pravila_dostupa"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#uvelichenie_razmera_faylovogo_hranilishcha"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_snimka"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_snimka"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_faylovogo_hranilishcha_i_ego_seti"
+  ],
+  [
     "/ru/monitoring-services/event-log/service-management/siem-integration",
     "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/siem-integration#delete_siem_connection"
   ],
