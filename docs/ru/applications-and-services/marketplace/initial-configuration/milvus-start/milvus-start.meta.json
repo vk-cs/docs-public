@@ -1,0 +1,10 @@
+{
+  "title": "Развертывание Milvus",
+  "pageDescription": "Шаги по развертыванию Milvus в целевой проект VK Cloud с помощью Marketplace. Развертывание сервиса Milvus для быстрого поиска и анализа неструктурированных данных.",
+  "shortDescription": "Развертывание Milvus для быстрого поиска и анализа неструктурированных данных",
+  "metaTitle": "Развертывание Milvus",
+  "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Milvus для задач для быстрого поиска и анализа неструктурированных данных",
+  "sectionTitle": "Развертывание Milvus",
+  "icon": "",
+  "weight": 13
+}

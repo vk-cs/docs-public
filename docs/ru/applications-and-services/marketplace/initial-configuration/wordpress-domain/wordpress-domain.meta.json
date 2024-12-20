@@ -6,6 +6,6 @@
   "metaDescription": "Изменение домена и настройка SSL-сертификатов для WordPress",
   "sectionTitle": "Изменение домена для сервиса WordPress",
   "icon": "",
-  "weight": 13,
+  "weight": 16,
   "uuid": "2d022a37-6df2-4776-b20f-ff4fa7773caa"
 }
