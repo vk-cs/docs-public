@@ -208,55 +208,11 @@
    </tabpanel>
    </tabs>
 
-1. Если планируется подключаться к кластеру Kubernetes версии 1.23 и выше, подготовьте все необходимое для подключения с использованием [Single Sign-On (SSO)](../../concepts/access-management).
+1. Подготовьте все необходимое для подключения с использованием [Single Sign-On (SSO)](../../concepts/access-management).
 
-   1. На хосте, с которого планируется подключаться к кластеру, установите `keystone-auth`, если утилита еще не установлена:
+   1. На хосте, с которого планируется подключаться к кластеру, установите `client-keystone-auth`, если плагин еще не установлен:
 
-      <tabs>
-      <tablist>
-      <tab>Windows (PowerShell)</tab>
-      <tab>Linux (bash)/macOS (zsh)</tab>
-      </tablist>
-      <tabpanel>
-
-      1. Выполните команду:
-
-         ```powershell
-         iex (New-Object System.Net.WebClient).DownloadString( `
-           'https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/windows/client-install.ps1' `
-         )
-
-         ```
-
-         Начнется установка утилиты `keystone-auth`.
-
-      1. Подтвердите добавление директории с утилитой в переменную окружения `PATH`, введя `Y` в ответ на запрос:
-
-         ```text
-         Add client-keystone-auth installation dir to your PATH? [Y/n]
-         ```
-
-      </tabpanel>
-      <tabpanel>
-
-      1. Выполните команду:
-
-         ```bash
-         curl -sSL \
-           https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/linux/client-install.sh \
-         | bash
-         ```
-
-         Начнется установка утилиты `keystone-auth`.
-
-      1. Если вы используете командную оболочку, отличную от `bash` или `zsh`, самостоятельно добавьте путь до утилиты в переменную окружения `PATH`.
-
-      1. Перезапустите командную оболочку или выполните команду `source`.
-
-         Подсказка с нужными командами будет выведена по завершении установки.
-
-      </tabpanel>
-      </tabs>
+      {include(/ru/_includes/_client-keystone-auth.md)}
 
    1. Определите, от имени какого пользователя будет выполняться подключение к кластеру. Затем:
 
@@ -265,72 +221,7 @@
 
 ## Подключение к кластеру
 
-На хосте, с которого планируется подключаться к кластеру:
-
-1. Загрузите файл конфигурации кластера:
-
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud под аккаунтом пользователя, который будет подключаться к кластеру.
-   1. Выберите проект, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Получить Kubeconfig для доступа к кластеру**.
-
-   Такой файл автоматически создается для каждого нового кластера и имеет имя в формате `<имя кластера>_kubeconfig.yaml`.
-
-   <info>
-
-   Далее предполагается, что загруженный файл имеет имя `kubernetes-cluster-1234_kubeconfig.yaml` и находится в директории `C:\Users\user\.kube` (для Windows) или `/home/user/.kube` (для Linux и macOS). Скорректируйте приведенные ниже команды при необходимости.
-
-   </info>
-
-1. Файл конфигурации содержит чувствительную информацию, которая не должна быть доступна другим пользователям. Поэтому ограничьте права доступа к этому файлу:
-
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
-   ```powershell
-   icacls.exe 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml' `
-     /c /t `
-     /Inheritance:d `
-     /Remove:g BUILTIN\Administrators Everyone Users `
-     /Grant:r ${env:UserName}:RW
-   ```
-
-   </tabpanel>
-   <tabpanel>
-
-   ```bash
-   sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
-   ```
-
-   </tabpanel>
-   </tabs>
-
-1. Поместите путь к файлу конфигурации в переменную среды окружения `$KUBECONFIG`:
-
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
-   ```powershell
-   $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
-   ```
-
-   </tabpanel>
-   <tabpanel>
-
-   ```bash
-   export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
-   ```
-
-   </tabpanel>
-   </tabs>
+{include(/ru/_includes/_kubeconfig.md)}
 
 ## Проверка подключения к кластеру
 
