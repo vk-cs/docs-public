@@ -1,0 +1,10 @@
+{
+  "title": "Развертывание Qdrant",
+  "pageDescription": "Шаги по развертыванию Qdrant в целевой проект VK Cloud с помощью Marketplace. Развертывание сервиса Qdrant для работы с векторами высокой размерности.",
+  "shortDescription": "Развертывание Qdrant для работы с векторами высокой размерности",
+  "metaTitle": "Развертывание Qdrant",
+  "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Qdrant для работы с векторами высокой размерности.",
+  "sectionTitle": "Развертывание Qdrant",
+  "icon": "",
+  "weight": 14
+}
