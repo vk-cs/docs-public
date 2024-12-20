@@ -1,36 +1,44 @@
 Чтобы просматривать логи, воспользуйтесь удобным способом:
 
-- [Перейдите](https://msk.cloud.vk.com/app/services/monitoring/logging) в раздел **Мониторинг** → **Логирование** личного кабинета.
-- Используйте [методы API](/ru/tools-for-using-services/api/api-spec/logging).
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>API</tab>
+<tab>Grafana</tab>
+</tablist>
+<tabpanel>
 
-Чтобы уточнить результаты поиска, используйте [язык поисковых запросов](../../concepts/search-tools/). Примеры поисковых выражений:
+1. [Перейдите](https://msk.cloud.vk.com/app/services/monitoring/logging) в раздел **Мониторинг** → **Логирование** личного кабинета.
+1. (Опционально) Выберите значения для фильтров.
+1. (Опционально) Введите значение для поиска или сформулируйте запрос с использованием [языка поисковых запросов](../../concepts/search-tools/).
 
-- Поиск сообщений, содержащих `internal error`:
+    Примеры поисковых выражений:
 
-  ```sql
-  "internal error"
-  ```
+      {include(/ru/_includes/_logs_query.md)}
 
-  или
+</tabpanel>
+<tabpanel>
 
-  ```sql
-  message: "internal error"
-  ```  
+Воспользуйтесь [методами API](/ru/tools-for-using-services/api/api-spec/logging).
 
-- Поиск сообщений, содержащих `error: "service unavailable"`:
+Чтобы уточнить результаты поиска, в параметре `like` укажите выражение для поиска в поле `message`. Для записи поискового выражения используйте [язык поисковых запросов](../../concepts/search-tools/).
 
-  ```sql
-  message: "error: \"service unavailable\""
-  ```
+Примеры поисковых выражений:
 
-- Использование времени, уровня логирования и `payload`:
+  {include(/ru/_includes/_logs_query.md)}
 
-  ```sql
-  level >= debug AND (timestamp <= "2023-04-10T10:20:00Z" OR payload.code = 200)
-  ```
+</tabpanel>
+<tabpanel>
 
-- Использование `NOT`, `EXISTS`:
+1. [Разверните](/ru/applications-and-services/marketplace/initial-configuration/grafana-start) сервис Grafana из [Магазина приложений](https://msk.cloud.vk.com/app/services/marketplace) в вашем проекте.
 
-  ```sql
-  service_id <> databases AND NOT message: hello AND payload.status EXISTS
-  ```
+    При развертывании сервиса он будет автоматически интегрирован с Cloud Logging:
+
+      - Будет установлена связь, позволяющая Grafana получать логи приложений из сервиса Cloud Logging.
+      - В Grafana будут настроены источники данных (data sources), связанные с Cloud Logging.
+
+1. Перейдите в консоль Grafana и авторизуйтесь в ней.
+1. Для просмотра логов создайте дашборд и выберите в нем источник данных, связанный с Cloud Logging.
+
+</tabpanel>
+</tabs>
