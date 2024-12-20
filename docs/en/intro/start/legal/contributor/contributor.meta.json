@@ -9,5 +9,9 @@
     "disableGithub": true,
     "disableDateInformation": true,
     "weight": 13,
-    "uuid": "73e42643-683d-4e6c-9575-4648f01f532e"
+    "build": {
+        "for": [
+        "dontbuild"
+        ]
+    }
 }
