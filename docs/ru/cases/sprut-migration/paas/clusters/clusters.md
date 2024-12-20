@@ -23,4 +23,4 @@
     1. [Проверьте](/ru/kubernetes/k8s/connect/kubectl#proverka_podklyucheniya_k_klasteru) подключение к кластеру.
     2. Убедитесь, что ваши приложения, размещенные в новом кластере, работают.
 
-1. [Удалите](/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster) исходный кластер, если он вам больше не нужен.
+1. [Удалите](/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster) исходный кластер, если он вам больше не нужен.
