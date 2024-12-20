@@ -1,17 +1,18 @@
 {
-    "title": "Company details",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Company details",
-    "metaDescription": "Requisites for the conclusion of contracts and invoicing Full name\nLimited Liability Company",
-    "sectionTitle": "Company details",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 6,
-    "build": {
-        "for": [
-        "dontbuild"
-        ]
-    }
+  "title": "Company details",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Company details",
+  "metaDescription": "Requisites for the conclusion of contracts and invoicing Full name\nLimited Liability Company",
+  "sectionTitle": "Company details",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 6,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "d1b98d7c-e083-4465-bebf-860a41378f6d"
 }

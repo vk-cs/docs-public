@@ -1,17 +1,18 @@
 {
-    "title": "License agreement for the Vision program",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "License agreement for the Vision program",
-    "metaDescription": "This License Agreement (hereinafter the",
-    "sectionTitle": "License agreement for the Vision program",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 4,
-    "build": {
-        "for": [
-        "dontbuild"
-        ]
-    }
+  "title": "License agreement for the Vision program",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "License agreement for the Vision program",
+  "metaDescription": "This License Agreement (hereinafter the",
+  "sectionTitle": "License agreement for the Vision program",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "118989ab-7df2-453f-a910-579edd5c5ff0"
 }

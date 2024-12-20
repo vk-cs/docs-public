@@ -1,17 +1,18 @@
 {
-    "title": "User agreement for the service “Cloud for hot data” (Hotbox)",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "User agreement for the service “Cloud for hot data” (Hotbox)",
-    "metaDescription": "This document is an official offer of Mail.ru LLC",
-    "sectionTitle": "User agreement for the service “Cloud for hot data” (Hotbox)",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 1,
-    "build": {
-        "for": [
-        "dontbuild"
-        ]
-    }
+  "title": "User agreement for the service “Cloud for hot data” (Hotbox)",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "User agreement for the service “Cloud for hot data” (Hotbox)",
+  "metaDescription": "This document is an official offer of Mail.ru LLC",
+  "sectionTitle": "User agreement for the service “Cloud for hot data” (Hotbox)",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "fbd72e78-22cc-42c7-a9d2-ac5cb61df90a"
 }

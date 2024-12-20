@@ -1,17 +1,18 @@
 {
-    "title": "Terms of Use",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Terms of Use",
-    "metaDescription": "Terms of use of the platform",
-    "sectionTitle": "Terms of Use",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 0,
-    "build": {
-        "for": [
-        "dontbuild"
-        ]
-    }
+  "title": "Terms of Use",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Terms of Use",
+  "metaDescription": "Terms of use of the platform",
+  "sectionTitle": "Terms of Use",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 0,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "b1343225-b3a6-4f4a-8052-bd606c3da705"
 }
