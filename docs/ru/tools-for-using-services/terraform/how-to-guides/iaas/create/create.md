@@ -17,11 +17,6 @@
 1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 
    ```hcl
-   variable "image_name" {
-     type = string
-     default = "Ubuntu-22.04-202208"
-   }
-
    variable "compute_flavor" {
      type = string
      default = "STD2-2-4"
@@ -40,7 +35,6 @@
 
    В этом файле объявляются следующие переменные:
 
-   - `image_name`: имя образа виртуальной машины;
    - `compute_flavor`: имя шаблона конфигурации виртуальной машины;
    - `key_pair_name`: имя ключевой пары, которая будет использоваться для подключения к виртуальной машине по SSH;
    - `availability_zone_name`: имя зоны доступности, где будет размещена виртуальная машина.
@@ -49,20 +43,10 @@
 
    <tabs>
    <tablist>
-   <tab>image_name</tab>
    <tab>compute_flavor</tab>
    <tab>key_pair_name</tab>
    <tab>availability_zone_name</tab>
    </tablist>
-   <tabpanel>
-
-   C помощью OpenStack CLI:
-
-   ```bash
-   openstack image list
-   ```
-
-   </tabpanel>
    <tabpanel>
 
    C помощью OpenStack CLI:
@@ -153,7 +137,12 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_name
+  visibility = "public"
+  default    = true
+  properties = {
+    mcs_os_distro  = "ubuntu"
+    mcs_os_version = "24.04"
+  }
 }
 
 resource "vkcs_compute_instance" "compute" {
@@ -174,12 +163,12 @@ resource "vkcs_compute_instance" "compute" {
   }
 
   network {
-    uuid = vkcs_networking_network.network.id
+    uuid = vkcs_networking_network.example.id
   }
 
   depends_on = [
-    vkcs_networking_network.network,
-    vkcs_networking_subnet.subnetwork
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
   ]
 }
 
@@ -215,7 +204,12 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_name
+  visibility = "public"
+  default    = true
+  properties = {
+    mcs_os_distro  = "ubuntu"
+    mcs_os_version = "24.04"
+  }
 }
 
 resource "vkcs_compute_instance" "compute" {
@@ -236,12 +230,12 @@ resource "vkcs_compute_instance" "compute" {
   }
 
   network {
-    uuid = vkcs_networking_network.network.id
+    uuid = vkcs_networking_network.example.id
   }
 
   depends_on = [
-    vkcs_networking_network.network,
-    vkcs_networking_subnet.subnetwork
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
   ]
 }
 
@@ -276,9 +270,85 @@ output "instance_fip" {
 
 Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 
-## 4. Создайте ресурсы при помощи Terraform
+## 4. (Опционально) Настройте мониторинг на ВМ
 
-1. Поместите файлы конфигурации Terraform `provider.tf`, `variables.tf`, `network.tf` и `main.tf` в одну директорию.
+Это позволит при создании ВМ автоматически включить передачу ее метрик в сервис Cloud Monitoring.
+
+<info>
+
+Мониторинг невозможно подключить для ВМ, недоступных из внешней сети.
+
+</info>
+
+1. Укажите в файле `provider.tf` версию провайдера 0.9.0 или выше. Пример:
+
+    ```hcl
+    terraform {
+      required_providers {
+        vkcs = {
+          source = "vk-cs/vkcs"
+          version = "0.9.0"
+        }
+      }
+    }
+    ```
+
+1. Создайте файл `monitoring.tf` и поместите в него содержимое:
+
+    ```hcl
+    resource "vkcs_cloud_monitoring" "basic" {
+      image_id = data.vkcs_images_image.compute.id
+    }
+    ```
+
+1. Добавьте блок `cloud_monitoring` в описание ресурса `vkcs_compute_instance` в файле `main.tf`. Пример:
+
+    ```hcl
+    resource "vkcs_compute_instance" "compute" {
+      name                    = "compute-instance"
+      flavor_id               = data.vkcs_compute_flavor.compute.id
+      key_pair                = var.key_pair_name
+      security_groups         = ["default","ssh"]
+      availability_zone       = var.availability_zone_name
+
+      block_device {
+        uuid                  = data.vkcs_images_image.compute.id
+        source_type           = "image"
+        destination_type      = "volume"
+        volume_type           = "ceph-ssd"
+        volume_size           = 8
+        boot_index            = 0
+        delete_on_termination = true
+      }
+
+      network {
+        uuid = vkcs_networking_network.example.id
+      }
+
+      cloud_monitoring {
+        service_user_id = vkcs_cloud_monitoring.basic.service_user_id
+        script          = vkcs_cloud_monitoring.basic.script
+      }
+
+      depends_on = [
+        vkcs_networking_network.example,
+        vkcs_networking_subnet.example
+      ]
+    }
+    ```
+
+Описание параметров подключения к сервису Cloud Monitoring приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/compute_instance.md).
+
+## 5. Создайте ресурсы при помощи Terraform
+
+1. Поместите в одну директорию все файлы конфигурации Terraform:
+
+   - `provider.tf`,
+   - `variables.tf`,
+   - `network.tf`,
+   - `main.tf`,
+   - `secgroup.tf`,
+   - `monitoring.tf`.
 
 1. Перейдите в эту директорию.
 
@@ -300,7 +370,7 @@ output "instance_fip" {
 
 После завершения создания ресурсов в выводе Terraform `instance_fip` будет показан назначенный ВМ плавающий IP-адрес.
 
-## 5. Проверьте работоспособность примера
+## 6. Проверьте работоспособность примера
 
 [Подключитесь по SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `compute-instance`.
 
