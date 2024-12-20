@@ -329,6 +329,7 @@
 /docs/ru/kubernetes/k8s/concepts/security-policies
 /docs/ru/kubernetes/k8s/connect
 /docs/ru/kubernetes/k8s/connect/kubectl
+/docs/ru/kubernetes/k8s/connect/lens
 /docs/ru/kubernetes/k8s/connect/k8s-dashboard
 /docs/ru/kubernetes/k8s/connect/docker-registry
 /docs/ru/kubernetes/k8s/connect/docker-mirror
@@ -375,6 +376,7 @@
 /docs/ru/kubernetes/k8s/how-to-guides/sa-kubeconfig
 /docs/ru/kubernetes/k8s/how-to-guides/case-certmanager-helm3
 /docs/ru/kubernetes/k8s/how-to-guides/update-monitoring-addon
+/docs/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder
 /docs/ru/kubernetes/k8s/monitoring
 /docs/ru/kubernetes/k8s/install-tools
 /docs/ru/kubernetes/k8s/install-tools/helm
@@ -579,6 +581,8 @@
 /docs/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs
 /docs/ru/applications-and-services/marketplace/initial-configuration/openvpn-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start
+/docs/ru/applications-and-services/marketplace/initial-configuration/milvus-start
+/docs/ru/applications-and-services/marketplace/initial-configuration/qdrant-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain
 /docs/ru/applications-and-services/marketplace/service-management

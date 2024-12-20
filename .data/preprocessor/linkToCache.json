@@ -614,6 +614,26 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
+  "prepare": {
+    "number": null,
+    "full": "Подготовительные шаги",
+    "text": "Подготовительные шаги"
+  },
+  "delete_cluster": {
+    "number": null,
+    "full": "Удалить кластер",
+    "text": "Удалить кластер"
+  },
+  "set": {
+    "number": null,
+    "full": "1. Настройте добавление пустого пода в кластер",
+    "text": "1. Настройте добавление пустого пода в кластер"
+  },
+  "check": {
+    "number": null,
+    "full": "2. Проверьте применение настроек",
+    "text": "2. Проверьте применение настроек"
+  },
   "1_create_mlflow": {
     "number": null,
     "full": "1. Создайте инстанс MLflow",

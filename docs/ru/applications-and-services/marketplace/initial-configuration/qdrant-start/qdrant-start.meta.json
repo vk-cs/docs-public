@@ -6,5 +6,6 @@
   "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Qdrant для работы с векторами высокой размерности.",
   "sectionTitle": "Развертывание Qdrant",
   "icon": "",
-  "weight": 14
+  "weight": 14,
+  "uuid": "29b1eacd-1629-4b14-8750-416818a76195"
 }

@@ -14355,6 +14355,21 @@
     ]
   },
   {
+    "uuid": "9ded7f7a-4890-4a4c-acfa-4f058c9fac69",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/connect/lens",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/connect/lens/lens.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/connect/lens/lens.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "2c07e5de-6bf8-4272-b68b-12680ad1eb00",
     "lang": "ru",
     "type": "ARTICLE",
@@ -15037,6 +15052,21 @@
     "partialPath": "/ru/kubernetes/k8s/how-to-guides/update-monitoring-addon",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/update-monitoring-addon/update-monitoring-addon.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/update-monitoring-addon/update-monitoring-addon.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "aa15da0b-a8f1-4e47-902f-3f674cc57a87",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder/autoscaling-placeholder.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder/autoscaling-placeholder.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -18097,6 +18127,36 @@
     "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start/meilisearch-start.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start/meilisearch-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "9478781f-896c-4b5e-ad73-844a4d5af1aa",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/milvus-start/milvus-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/milvus-start/milvus-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "29b1eacd-1629-4b14-8750-416818a76195",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/qdrant-start/qdrant-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/qdrant-start/qdrant-start.md",
     "variables": {},
     "hidden": false,
     "version": null,

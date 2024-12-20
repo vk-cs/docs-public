@@ -12908,12 +12908,20 @@
     "http://localhost:3000/docs/ru/dbs/dbaas/service-management/replication"
   ],
   [
+    "/ru/dbs/dbaas/concepts/work-configs",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/create/create-cluster#mysql_postgresql_postgrespro_enterprise_postgrespro_enterprise_1c"
+  ],
+  [
     "/ru/dbs/dbaas/concepts/extensions",
     "http://localhost:3000/docs/ru/dbs/dbaas/extensions"
   ],
   [
     "/ru/dbs/dbaas/concepts/extensions",
     "http://localhost:3000/docs/ru/dbs/dbaas/service-management/managing-extensions"
+  ],
+  [
+    "/ru/dbs/dbaas/concepts/disks-autoscaling",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/postgresql#nastroyka_avtomasshtabirovaniya_razmera_diska_s_dannymi"
   ],
   [
     "/ru/dbs/dbaas/concepts/disks-autoscaling",
@@ -13553,7 +13561,7 @@
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
@@ -13892,6 +13900,10 @@
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
   ],
   [
+    "/ru/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder"
+  ],
+  [
     "/ru/kubernetes/k8s/concepts/update",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/versions/version-support"
   ],
@@ -14021,6 +14033,14 @@
   ],
   [
     "/ru/kubernetes/k8s/connect/kubectl",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/access-management"
+  ],
+  [
+    "/ru/kubernetes/k8s/connect/lens",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api"
+  ],
+  [
+    "/ru/kubernetes/k8s/connect/lens",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/access-management"
   ],
   [
@@ -15101,7 +15121,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-tcp",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-http",
@@ -15137,7 +15157,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-http",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/k8s-canary",
@@ -15157,7 +15177,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/k8s-canary",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
@@ -15205,7 +15225,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/gatekeeper/labels",
@@ -15229,7 +15249,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/gatekeeper/labels",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/gatekeeper/repositories",
@@ -15257,7 +15277,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/gatekeeper/repositories",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
@@ -15293,7 +15313,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
@@ -15317,7 +15337,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/velero-backup",
@@ -15353,7 +15373,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/velero-backup",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
@@ -15441,7 +15461,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
@@ -15485,7 +15505,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/sa-kubeconfig",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/case-certmanager-helm3",
@@ -15585,7 +15605,23 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/update-monitoring-addon",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/create-cluster"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/connect/kubectl"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/connect/kubectl#proverka_podklyucheniya_k_klasteru"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/monitoring",
@@ -17889,6 +17925,10 @@
   ],
   [
     "/ru/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/search-tools"
+  ],
+  [
+    "/ru/monitoring-services/logging/service-management/view-logs",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/logging"
   ],
   [
@@ -18481,10 +18521,6 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
-    "http://localhost:3000/docs/ru/intro/start/account-registration"
-  ],
-  [
-    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
   ],
   [
@@ -18493,7 +18529,15 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/storage/s3/concepts/about"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
     "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
@@ -18505,6 +18549,70 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/meilisearch-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#redaktirovanie_podseti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/storage/s3/concepts/about"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/milvus-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#redaktirovanie_podseti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/storage/s3/concepts/about"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/qdrant-start",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#update_access"
   ],
   [
@@ -20417,7 +20525,7 @@
   ],
   [
     "/ru/cases/sprut-migration/paas/fs-manage",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/cases/sprut-migration/paas/clusters",
@@ -20457,7 +20565,7 @@
   ],
   [
     "/ru/cases/sprut-migration/paas/clusters",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/cases/sprut-migration/paas/db",
