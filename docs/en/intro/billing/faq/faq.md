@@ -10,7 +10,7 @@ Bonuses are not awarded when new projects are created by existing users and when
 
 <warn>
 
-In some cases, previously accrued bonuses may be canceled or denied. See more in [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal/legal-terms#8_payment_for_company_services)
+In some cases, previously accrued bonuses may be canceled or denied. See more in [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal)
 
 </warn>
 
