@@ -1,12 +1,13 @@
 {
-    "title": "Пользовательское соглашение «Магазин приложений»",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Пользовательское соглашение «Магазин приложений» с 01.02.2025",
-    "metaDescription": "",
-    "sectionTitle": "Пользовательское соглашение «Магазин приложений»",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 11
+  "title": "Пользовательское соглашение «Магазин приложений»",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Пользовательское соглашение «Магазин приложений» с 01.02.2025",
+  "metaDescription": "",
+  "sectionTitle": "Пользовательское соглашение «Магазин приложений»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 11,
+  "uuid": "502436bc-1baa-4712-8a00-4d839852ff0e"
 }

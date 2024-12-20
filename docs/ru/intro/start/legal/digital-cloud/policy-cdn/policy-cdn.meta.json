@@ -1,12 +1,13 @@
 {
-    "title": "Пользовательское соглашение для сервиса CDN",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Пользовательское соглашение для сервиса CDN с 01.02.2025",
-    "metaDescription": "Настоящий документ представляет собой оферту в соответствии со ст. 435 ГК РФ (далее по тексту – «Оферта») на заключение между ООО «Цифровое облако»",
-    "sectionTitle": "Пользовательское соглашение для сервиса CDN",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 9
+  "title": "Пользовательское соглашение для сервиса CDN",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Пользовательское соглашение для сервиса CDN с 01.02.2025",
+  "metaDescription": "Настоящий документ представляет собой оферту в соответствии со ст. 435 ГК РФ (далее по тексту – «Оферта») на заключение между ООО «Цифровое облако»",
+  "sectionTitle": "Пользовательское соглашение для сервиса CDN",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "8f69d4a3-e19a-4ab0-b0d9-b1e229815bf5"
 }

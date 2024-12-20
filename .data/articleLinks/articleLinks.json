@@ -200,130 +200,6 @@
     "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
   ],
   [
-    "/en/intro/start/legal/policy-cdn",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-cdn",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-cdn",
-    "http://localhost:3000/docs/ru/intro/start/legal"
-  ],
-  [
-    "/en/intro/start/legal/policy-hotbox",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-hotbox"
-  ],
-  [
-    "/en/intro/start/legal/policy-hotbox",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-icebox",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-icebox"
-  ],
-  [
-    "/en/intro/start/legal/policy-icebox",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-infra"
-  ],
-  [
-    "/en/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-infra"
-  ],
-  [
-    "/en/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/en/intro/start/legal/legal-terms"
-  ],
-  [
-    "/en/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/en/intro/start/legal"
-  ],
-  [
-    "/en/intro/start/legal/policy-vision",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-privacy",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-1cgrm"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-1cgrm"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal/legal-terms"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/architecture"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal"
-  ],
-  [
-    "/en/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/policy-152fz",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/en/intro/start/legal/cloud-servers"
-  ],
-  [
-    "/en/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/en/intro/start/legal/cloud-servers"
-  ],
-  [
-    "/en/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/en/intro/start/legal/legal-terms"
-  ],
-  [
-    "/en/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/en/intro/start/legal/policy-privacy"
-  ],
-  [
-    "/en/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/en/intro/start/legal"
-  ],
-  [
-    "/en/intro/start/legal/contributor",
-    "http://localhost:3000/docs/en/intro/start/legal/contributor"
-  ],
-  [
     "/en/intro/start/faq",
     "http://localhost:3000/docs/en/intro/start/support/support-info"
   ],
@@ -493,7 +369,7 @@
   ],
   [
     "/en/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/en/intro/start/legal/legal-terms#8_payment_for_company_services"
+    "http://localhost:3000/docs/en/intro/start/legal"
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
@@ -785,7 +661,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/start/legal/legal-terms#8_payment_for_company_services"
+    "http://localhost:3000/docs/en/intro/start/legal"
   ],
   [
     "/en/intro/billing/faq",
@@ -8804,184 +8680,368 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/account/faq"
   ],
   [
-    "/ru/intro/start/legal/policy-hotbox",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-hotbox"
+    "/ru/intro/start/legal/digital-cloud/policy-hotbox",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-hotbox"
   ],
   [
-    "/ru/intro/start/legal/policy-hotbox",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-hotbox",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-icebox",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-icebox"
+    "/ru/intro/start/legal/digital-cloud/policy-icebox",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-icebox"
   ],
   [
-    "/ru/intro/start/legal/policy-icebox",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-icebox",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-infra"
+    "/ru/intro/start/legal/digital-cloud/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-infra"
   ],
   [
-    "/ru/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-infra"
+    "/ru/intro/start/legal/digital-cloud/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-infra"
   ],
   [
-    "/ru/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms"
+    "/ru/intro/start/legal/digital-cloud/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/legal-terms"
   ],
   [
-    "/ru/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-infra",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/digital-cloud/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/"
   ],
   [
-    "/ru/intro/start/legal/policy-vision",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-vision",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-voice",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-voice",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-voice",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/digital-cloud/policy-voice",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud"
   ],
   [
-    "/ru/intro/start/legal/policy-privacy",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-privacy",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-1cgrm"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-1cgrm"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-1cgrm"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-1cgrm"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/legal-terms"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/"
   ],
   [
-    "/ru/intro/start/legal/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-152fz",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/digital-cloud/policy-cdn",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-cdn",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-cdn",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-cdn",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/digital-cloud/policy-cdn",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud"
   ],
   [
-    "/ru/intro/start/legal/policy-cdn",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/digital-cloud/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/cloud-servers"
   ],
   [
-    "/ru/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/ru/intro/start/legal/cloud-servers"
+    "/ru/intro/start/legal/digital-cloud/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/cloud-servers"
   ],
   [
-    "/ru/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/ru/intro/start/legal/cloud-servers"
+    "/ru/intro/start/legal/digital-cloud/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/legal-terms"
   ],
   [
-    "/ru/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms"
+    "/ru/intro/start/legal/digital-cloud/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy/"
+    "/ru/intro/start/legal/digital-cloud/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy/"
+    "/ru/intro/start/legal/digital-cloud/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud"
   ],
   [
-    "/ru/intro/start/legal/cloud-servers",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/digital-cloud/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/legal-terms"
   ],
   [
-    "/ru/intro/start/legal/marketplace",
-    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms"
+    "/ru/intro/start/legal/digital-cloud/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/marketplace"
   ],
   [
-    "/ru/intro/start/legal/marketplace",
-    "http://localhost:3000/docs/ru/intro/start/legal/marketplace"
-  ],
-  [
-    "/ru/intro/start/legal/marketplace",
+    "/ru/intro/start/legal/digital-cloud/marketplace",
     "http://localhost:3000/docs/ru/intro/start/support/support-info"
   ],
   [
-    "/ru/intro/start/legal/marketplace",
+    "/ru/intro/start/legal/digital-cloud/marketplace",
     "http://localhost:3000/docs/ru/intro/start/support/support-info"
   ],
   [
-    "/ru/intro/start/legal/marketplace",
+    "/ru/intro/start/legal/digital-cloud/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/marketplace"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-vdi"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-cloud-desktop"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-cloud-desktop",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-cloud-desktop"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-cloud-desktop",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/digital-cloud/policy-cloud-desktop",
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-cloud-desktop"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-hotbox",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-hotbox"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-hotbox",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-icebox",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-icebox"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-icebox",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-infra"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-infra"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/legal-terms"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-infra",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-vision",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-voice",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-voice",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-privacy",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-1cgrm"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-1cgrm"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/legal-terms"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-1cgrm",
     "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/marketplace",
-    "http://localhost:3000/docs/ru/intro/start/legal/marketplace"
+    "/ru/intro/start/legal/vk/policy-152fz",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/contributor",
-    "http://localhost:3000/docs/en/intro/start/legal/contributor"
+    "/ru/intro/start/legal/vk/policy-cdn",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-startup-program",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-startup-program"
+    "/ru/intro/start/legal/vk/policy-cdn",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
   ],
   [
-    "/ru/intro/start/legal/policy-startup-program",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/vk/policy-cdn",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
   ],
   [
-    "/ru/intro/start/legal/policy-startup-program",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/vk/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/cloud-servers"
   ],
   [
-    "/ru/intro/start/legal/research-agreement",
-    "http://localhost:3000/docs/ru/intro/start/legal/research-agreement"
+    "/ru/intro/start/legal/vk/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/cloud-servers"
   ],
   [
-    "/ru/intro/start/legal/policy-vdi",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-vdi"
+    "/ru/intro/start/legal/vk/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/legal-terms"
   ],
   [
-    "/ru/intro/start/legal/policy-vdi",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "/ru/intro/start/legal/vk/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy/"
   ],
   [
-    "/ru/intro/start/legal/policy-vdi",
-    "http://localhost:3000/docs/ru/intro/start/legal"
+    "/ru/intro/start/legal/vk/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy/"
+  ],
+  [
+    "/ru/intro/start/legal/vk/cloud-servers",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/legal-terms"
+  ],
+  [
+    "/ru/intro/start/legal/vk/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/marketplace"
+  ],
+  [
+    "/ru/intro/start/legal/vk/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/support/support-info"
+  ],
+  [
+    "/ru/intro/start/legal/vk/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/support/support-info"
+  ],
+  [
+    "/ru/intro/start/legal/vk/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/marketplace",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/marketplace"
+  ],
+  [
+    "/ru/intro/start/legal/vk/contributor",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/contributor"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-startup-program",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-startup-program"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-startup-program",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-startup-program",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-promo-migration",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/legal-terms"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-vdi"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-cloud-desktop"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-vdi",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-cloud-desktop",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-cloud-desktop"
+  ],
+  [
+    "/ru/intro/start/legal/vk/policy-cloud-desktop",
+    "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-cloud-desktop"
   ],
   [
     "/ru/intro/start/faq",
@@ -9153,7 +9213,7 @@
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms#8_oplata_uslug_kompanii"
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/legal-terms#8_oplata_uslug_kompanii"
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
@@ -9449,7 +9509,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms#8_oplata_uslug_kompanii"
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/legal-terms#8_oplata_uslug_kompanii"
   ],
   [
     "/ru/intro/billing/faq",

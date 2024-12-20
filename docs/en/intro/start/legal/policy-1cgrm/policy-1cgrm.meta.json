@@ -1,17 +1,18 @@
 {
-    "title": "User agreement for the service “1C: Ready Workplace”",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "User agreement for the service “1C: Ready Workplace”",
-    "metaDescription": "This document is an official offer of Mail.Ru LLC (hereinafter referred to as the",
-    "sectionTitle": "User agreement for the service “1C: Ready Workplace”",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 7,
-    "build": {
-        "for": [
-        "dontbuild"
-        ]
-    }
+  "title": "User agreement for the service “1C: Ready Workplace”",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "User agreement for the service “1C: Ready Workplace”",
+  "metaDescription": "This document is an official offer of Mail.Ru LLC (hereinafter referred to as the",
+  "sectionTitle": "User agreement for the service “1C: Ready Workplace”",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 7,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "1b8d5e34-fbb3-44a9-a60d-e1d5dc0d487d"
 }

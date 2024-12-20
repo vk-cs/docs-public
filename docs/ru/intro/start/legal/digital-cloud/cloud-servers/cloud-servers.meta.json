@@ -1,12 +1,13 @@
 {
-    "title": "Пользовательское соглашение для сервиса «Cloud Servers»",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Пользовательское соглашение для сервиса «Cloud Servers» с 01.02.2025",
-    "metaDescription": "Настоящий документ является официальным предложением ООО «Цифровое облако» (далее – «Компания») заключить пользовательское соглашение (далее – «Соглашение») с Вами",
-    "sectionTitle": "Пользовательское соглашение для сервиса «Cloud Servers»",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 10
+  "title": "Пользовательское соглашение для сервиса «Cloud Servers»",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Пользовательское соглашение для сервиса «Cloud Servers» с 01.02.2025",
+  "metaDescription": "Настоящий документ является официальным предложением ООО «Цифровое облако» (далее – «Компания») заключить пользовательское соглашение (далее – «Соглашение») с Вами",
+  "sectionTitle": "Пользовательское соглашение для сервиса «Cloud Servers»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "uuid": "ecbf43f4-8ceb-4519-97f7-c5b9942df6ab"
 }
