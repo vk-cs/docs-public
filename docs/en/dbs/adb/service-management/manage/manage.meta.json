@@ -1,0 +1,14 @@
+{
+  "title": "Managing cluster",
+  "pageDescription": "Step-by-step instructions for managing a deployed analytical database cluster in VK Cloud.",
+  "shortDescription": "Scaling cluster resources and deleting an ADB cluster",
+  "metaTitle": "Managing cluster",
+  "metaDescription": "Arenadata DB as a Service VK Cloud: instructions for managing a deployed cluster",
+  "sectionTitle": "Managing cluster",
+  "icon": "",
+  "weight": 2,
+  "uuid": "e9c0e367-1682-4de6-b858-b01cd359b35e",
+  "additionalUuids": [
+    "3eefe365-4d48-4ba4-ba5e-14a26bddfc85"
+  ]
+}
