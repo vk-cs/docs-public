@@ -20545,7 +20545,7 @@
   },
   {
     "source": "/en/dbs/adb/adb-start/delete-adb",
-    "destination": "/en/dbs/adb/quick-start/delete-adb",
+    "destination": "/en/dbs/adb/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -28578,78 +28578,6 @@
     "locale": false
   },
   {
-    "source": "/en/intro/start/legal/cloud-servers",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/contributor",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/legal-terms",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/org-details",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-1cgrm",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-152fz",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-cdn",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-hotbox",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-icebox",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-infra",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-privacy",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/intro/start/legal/policy-vision",
-    "destination": "/en/intro/start/legal",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/ru/intro/start/legal/legal-terms",
     "destination": "/ru/intro/start/legal/vk/legal-terms",
     "permanent": false,
@@ -28766,6 +28694,12 @@
   {
     "source": "/ru/intro/start/legal/cloud-start",
     "destination": "/ru/intro/start/legal/vk/cloud-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/dbs/adb/quick-start/delete-adb",
+    "destination": "/en/dbs/adb/service-management/manage",
     "permanent": false,
     "locale": false
   }

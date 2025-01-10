@@ -263,13 +263,14 @@
 /docs/en/dbs/adb
 /docs/en/dbs/adb/quick-start
 /docs/en/dbs/adb/quick-start/create-adb
-/docs/en/dbs/adb/quick-start/delete-adb
 /docs/en/dbs/adb/quick-start/launch-adb
 /docs/en/dbs/adb/concepts
 /docs/en/dbs/adb/concepts/about
 /docs/en/dbs/adb/connect
 /docs/en/dbs/adb/connect/int-connect-adb
 /docs/en/dbs/adb/connect/ext-connect-adb
+/docs/en/dbs/adb/service-management
+/docs/en/dbs/adb/service-management/manage
 /docs/en/kubernetes
 /docs/en/kubernetes/k8s
 /docs/en/kubernetes/k8s/quick-start
