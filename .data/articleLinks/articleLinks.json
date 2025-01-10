@@ -1309,7 +1309,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api//case-keystone-token"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -3865,6 +3865,14 @@
   ],
   [
     "/en/dbs/adb/connect/ext-connect-adb",
+    "http://localhost:3000/docs/en/dbs/adb/quick-start/create-adb"
+  ],
+  [
+    "/en/dbs/adb/connect/ext-connect-adb",
+    "http://localhost:3000/docs/en/dbs/dbaas/connect"
+  ],
+  [
+    "/en/dbs/adb/service-management/manage",
     "http://localhost:3000/docs/en/dbs/adb/quick-start/create-adb"
   ],
   [
@@ -13541,7 +13549,7 @@
   ],
   [
     "/ru/dbs/adb/quick-start/launch-adb",
-    "http://localhost:3000/docs/ru/dbs/dbaas/dbaas-start/db-connect"
+    "http://localhost:3000/docs/ru/dbs/dbaas/connect"
   ],
   [
     "/ru/dbs/adb/connect/int-connect-adb",
@@ -13553,7 +13561,7 @@
   ],
   [
     "/ru/dbs/adb/connect/ext-connect-adb",
-    "http://localhost:3000/docs/ru/dbs/dbaas/dbaas-start/db-connect"
+    "http://localhost:3000/docs/ru/dbs/dbaas/connect"
   ],
   [
     "/ru/dbs/adb/service-management/manage",

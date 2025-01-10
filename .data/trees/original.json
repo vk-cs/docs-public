@@ -3990,21 +3990,6 @@
     ]
   },
   {
-    "uuid": "3eefe365-4d48-4ba4-ba5e-14a26bddfc85",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/dbs/adb/quick-start/delete-adb",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/quick-start/delete-adb/delete-adb.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/quick-start/delete-adb/delete-adb.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "5497a821-e2e0-4b3b-b04a-67d8aa48f038",
     "lang": "en",
     "type": "ARTICLE",
@@ -4087,6 +4072,36 @@
     "partialPath": "/en/dbs/adb/connect/ext-connect-adb",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/connect/ext-connect-adb/ext-connect-adb.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/connect/ext-connect-adb/ext-connect-adb.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3d3a2d85-dd5e-443a-aca8-162b1888812b",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/dbs/adb/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/service-management/service-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/service-management/service-management.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e9c0e367-1682-4de6-b858-b01cd359b35e",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/dbs/adb/service-management/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/service-management/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/dbs/adb/service-management/manage/manage.md",
     "variables": {},
     "hidden": false,
     "version": null,
