@@ -95,11 +95,30 @@ Image-based брокер
    * `x-service-token`: `<SERVICE_TOKEN>` — сервисный ключ.
 
       {caption(Пример запроса на загрузку сервисного пакета в {var(sys1)})[align=left;position=above]}
-      ```bash
-      $ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product \
+      <tabs>
+      <tablist>
+      <tab>Linux (bash)</tab>
+      <tab>Windows (cmd)</tab>
+      </tablist>
+      <tabpanel>
+
+      ```console
+      curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product \
       -H 'x-service-token: <SERVICE_TOKEN>' \
       -F "upload=@/home/VKservice.zip"
       ```
+
+      </tabpanel>
+      <tabpanel>
+
+      ```console
+      curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product ^
+      -H "x-service-token: <SERVICE_TOKEN>" ^
+      -F "upload=@/home/VKservice.zip"
+      ```
+
+      </tabpanel>
+      </tabs>
       {/caption}
 
       HTTP-коды ответа:
@@ -179,20 +198,56 @@ Image-based брокер
 1. Перейдите в раздел **Магазин приложений**.
 1. Откройте консоль и получите JWT-токен авторизации в {var(sys6)}:
 
+   <tabs>
+   <tablist>
+   <tab>Linux (bash)</tab>
+   <tab>Windows (cmd)</tab>
+   </tablist>
+   <tabpanel>
+
    ```console
-   $ curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid \
+   curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid \
    --cookie 'sid=<SID>'
    ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```console
+   curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid ^
+   --cookie "sid=<SID>"
+   ```
+
+   </tabpanel>
+   </tabs>
 
    Здесь `<SID>` — значение файла cookie `sid` в веб-браузере.
 
    В ответе на команду отобразится JWT-токен.
 1. Получите лог инстанса сервиса:
 
+   <tabs>
+   <tablist>
+   <tab>Linux (bash)</tab>
+   <tab>Windows (cmd)</tab>
+   </tablist>
+   <tabpanel>
+
    ```console
-   $ curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
+   curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
    -H 'Authorization: Bearer <JWT_TOKEN>'
    ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```console
+   curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> ^
+   -H "Authorization: Bearer <JWT_TOKEN>"
+   ```
+
+   </tabpanel>
+   </tabs>
 
    Здесь:
 
