@@ -6,8 +6,6 @@ You can apply to technical support through the following available communication
 
 | Channel | Information                 | Working hours    |
 |---------|-----------------------------|------------------|
-| Portal  | https://support.mcs.mail.ru | around the clock |
-| Telegram bot | `@vk_tech_support_bot` | around the clock |
 | Mail    | support@mcs.mail.ru         | around the clock |
 | Phone   | +7 (499) 350-97-03          | around the clock |
 
@@ -19,7 +17,7 @@ If possible, attach any available diagnostic information: screenshots, logs and 
 
 </info>
 
-SLA indicators are given in the article [SLA](../sla/).
+You can also ask questions about working with the VK Cloud platform to the [AI ​​consultant](../chatbots/ai-bot). It is [available in Telegram](https://t.me/vk_cloud_support_bot) 24/7.
 
 ## Stages of service readiness
 
