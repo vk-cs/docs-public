@@ -330,7 +330,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 </tabs>
 
-## Increasing the file storage size
+## Increasing file storage size
 
 <tabs>
 <tablist>

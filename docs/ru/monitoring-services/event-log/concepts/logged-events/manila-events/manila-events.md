@@ -10,7 +10,7 @@
 |POST
 |`/v2/shares/`
 
-[Создано](/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha) файловое хранилище
+[Создано](/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage) файловое хранилище
 
 |POST
 |`/v2/shares/manage`
@@ -25,7 +25,7 @@
 |DELETE
 |`/v2/shares/{share_id}`
 
-[Удалено](/ru/computing/iaas/service-management/fs-manage#udalenie_faylovogo_hranilishcha_i_ego_seti) файловое хранилище
+[Удалено](/ru/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network) файловое хранилище
 
 2+^|[Операции с метаданными файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#delete-share-metadata-item)
 
@@ -50,16 +50,16 @@
 |POST
 |`/v2/shares/{share_id}/action`
 
-* [Предоставлен](/ru/computing/iaas/service-management/fs-manage#dobavlenie_pravila_dostupa) доступ к файловому хранилищу.
-* [Отозван](/ru/computing/iaas/service-management/fs-manage#udalenie_pravila_dostupa) доступ к файловому хранилищу.
-* [Изменен размер](/ru/computing/iaas/service-management/fs-manage#uvelichenie_razmera_faylovogo_hranilishcha) файлового хранилища
+* [Предоставлен](/ru/computing/iaas/service-management/fs-manage#adding_an_access_rule) доступ к файловому хранилищу.
+* [Отозван](/ru/computing/iaas/service-management/fs-manage#deleting_an_access_rule) доступ к файловому хранилищу.
+* [Изменен размер](/ru/computing/iaas/service-management/fs-manage#increasing_file_storage_size) файлового хранилища
 
 2+^|[Операции со снимками файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-snapshots)
 
 |POST
 |`/v2/snapshots`
 
-[Создан](/ru/computing/iaas/service-management/fs-manage#sozdanie_snimka) снимок файлового хранилища
+[Создан](/ru/computing/iaas/service-management/fs-manage#creating_a_snapshot) снимок файлового хранилища
 
 |POST
 |`/v2/snapshots/manage`
@@ -79,7 +79,7 @@
 |DELETE
 |`/v2/snapshots/{snapshot_id}`
 
-[Удален](/ru/computing/iaas/service-management/fs-manage#udalenie_snimka) снимок файлового хранилища
+[Удален](/ru/computing/iaas/service-management/fs-manage#deleting_a_snapshot) снимок файлового хранилища
 
 2+^|[Операции с метаданными снимков файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#snapshot-metadata-since-api-v2-73)
 
@@ -104,7 +104,7 @@
 |POST
 |`/v2/share-networks`
 
-[Создана](/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha) сеть файлового хранилища
+[Создана](/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage) сеть файлового хранилища
 
 |POST
 |`/v2/share-networks/{share_network_id}/action`
@@ -122,7 +122,7 @@
 |DELETE
 |`/v2/share-networks/{share_network_id}`
 
-[Удалена](/ru/computing/iaas/service-management/fs-manage#udalenie_faylovogo_hranilishcha_i_ego_seti) сеть файлового хранилища
+[Удалена](/ru/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network) сеть файлового хранилища
 
 2+^|[Управление подсетями в сетях файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-network-subnets-since-api-v2-51)
 
@@ -210,7 +210,7 @@
 |`/v2/share-access-rules/{access_id}/metadata/{key}`
 
 * Отменена настройка метаданных для правила доступа к файловому хранилищу.
-* Удалены значения для элемента метаданных с заданным ключом
+* Удалено значение для элемента метаданных с заданным ключом
 
 2+^|[Управление резервным копированием файлового хранилища](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-backups-since-api-v2-80)
 
