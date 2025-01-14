@@ -445,7 +445,7 @@
 
 Чтобы подключить постоянный том NFS с помощью статического PVC:
 
-1. [Создайте файловое хранилище](/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha).
+1. [Создайте файловое хранилище](/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage).
 
    При создании укажите:
 
