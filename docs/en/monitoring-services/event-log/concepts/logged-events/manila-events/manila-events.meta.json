@@ -1,0 +1,11 @@
+{
+  "title": "Logged events with file storages",
+  "pageDescription": "Events that the service of file storages reports to Cloud Audit.",
+  "shortDescription": "Events that the service of file storages reports to Cloud Audit",
+  "metaTitle": "Logged events with file storages",
+  "metaDescription": "Events that the service of file storages reports to Cloud Audit",
+  "sectionTitle": "Logged events with file storages",
+  "icon": "",
+  "weight": 16,
+  "uuid": "9979a589-31ee-4e8f-8d5e-497fe0bb5cba"
+}

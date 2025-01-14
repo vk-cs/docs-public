@@ -6,7 +6,7 @@
    1. [Выполните](../balancers/) миграцию балансировщиков.
    1. [Обновите](../dns/) A-записи публичного DNS.
 
-1. [Создайте](/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha) новое файловое хранилище, аналогичное исходному.
+1. [Создайте](/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage) новое файловое хранилище, аналогичное исходному.
 1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ с минимальной конфигурацией `STD2-1-2` (1 vCPU и 2 ГБ оперативной памяти).
 1. [Подключите](/ru/computing/iaas/service-management/vm/vm-add-net) ВМ к сетям исходного (SDN Neutron) и нового (SDN Sprut) хранилищ.
 1. [Подключитесь](/ru/computing/iaas/service-management/fs-manage#podklyuchenie_faylovogo_hranilishcha) через созданную ВМ к обоим хранилищам (исходному и новому).
