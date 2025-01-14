@@ -104,3 +104,9 @@ When vertically scaling any cluster nodes, the virtual machines that are used by
 - If there are not enough computing resources for the workload after scaling the node group, then this load may not work correctly or become unavailable.
 
   Make sure that when scaling down computing resources, the total amount of resources in the node group is sufficient.
+
+## {heading(Pre-reserve resources)[id=placeholder]}
+
+{include(/en/_includes/_placeholder.md)}
+
+How to set up overprovisioning resources for cluster scaling, see [Reserving nodes in group](/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder).
