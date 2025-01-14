@@ -1,21 +1,23 @@
 ## About tariffication
 
-The cost of Cloud storage service is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/en/pricing) to calculate the total cost of the service usage.
+The cost of individual service components is given in the [price list](https://cloud.vk.com/pricelist). To calculate the total cost of the service, use the [calculator](https://cloud.vk.com/en/pricing).
 
-Tariffication is based on the "pay as you go" principle: you pay only for the resources you have consumed up to second.
+Tariffication is based on the "pay as you go" principle: you pay only for the resources you consume, accurate to one second.
 
-See [Billing](/en/intro/billing) for how the tools related to paying for platform services work.
+For more information about how to pay for the service, see the [Billing](/en/intro/billing) section.
 
 ## What is charged
 
-Tarrification in Cloud storage depends on data [storage classes](../service-management/change-storage-class/).
+Tarrification in Cloud storage depends on the data [storage class](../service-management/change-storage-class/).
 
-You pay in Hotbox and Icebox for:
+For the Hotbox and Icebox classes, you pay for:
 
-- The amount of data stored (per GB).
+- Volume of stored data (per GB).
 - Outgoing traffic (per GB).
 
-You pay in Backup only for the amount of data stored (per GB).
+    Outgoing traffic is any downloading of information from the bucket: either on request from VK Cloud (for example, from a VM), or from outside VK Cloud (for example, from the user's PC). In both cases, the bucket is accessed using an external IP address.
+
+For the Backup storage class, you pay only for the volume of stored data (per GB).
 
 ## What is not charged
 
