@@ -6,5 +6,6 @@
   "metaDescription": "Events that the service of file storages reports to Cloud Audit",
   "sectionTitle": "Logged events with file storages",
   "icon": "",
-  "weight": 16
+  "weight": 16,
+  "uuid": "73a08f7d-98b5-46af-8504-3463767ccffa"
 }

@@ -150,6 +150,36 @@
     ]
   },
   {
+    "uuid": "7b86cfc7-3b70-4bd7-8b35-ed35351218d1",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/en/intro/start/support/chatbots",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/support/chatbots/chatbots.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/support/chatbots/chatbots.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3fdaa568-dd6b-4119-93b3-c5b5444cb8b4",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/intro/start/support/chatbots/ai-bot",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/support/chatbots/ai-bot/ai-bot.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/support/chatbots/ai-bot/ai-bot.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "952f96ac-f2ec-4bbd-bfba-643832bb0d2b",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -5070,6 +5100,21 @@
     ]
   },
   {
+    "uuid": "609f7a4e-fb3c-4ffd-a033-e04f243573c0",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder/autoscaling-placeholder.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder/autoscaling-placeholder.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "d54d6b63-3d4f-43d3-93c4-e2f3f4cbcb19",
     "lang": "en",
     "type": "ARTICLE",
@@ -7432,6 +7477,21 @@
     "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/iam-events",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/iam-events/iam-events.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/iam-events/iam-events.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "73a08f7d-98b5-46af-8504-3463767ccffa",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/manila-events/manila-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/manila-events/manila-events.md",
     "variables": {},
     "hidden": false,
     "version": null,

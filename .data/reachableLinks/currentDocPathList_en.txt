@@ -7,6 +7,8 @@
 /docs/en/intro/start/support
 /docs/en/intro/start/support/support-info
 /docs/en/intro/start/support/sla
+/docs/en/intro/start/support/chatbots
+/docs/en/intro/start/support/chatbots/ai-bot
 /docs/en/intro/start/partners
 /docs/en/intro/start/partners/partners-profile
 /docs/en/intro/start/legal
@@ -335,6 +337,7 @@
 /docs/en/kubernetes/k8s/how-to-guides/external-dns
 /docs/en/kubernetes/k8s/how-to-guides/sa-kubeconfig
 /docs/en/kubernetes/k8s/how-to-guides/update-monitoring-addon
+/docs/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder
 /docs/en/kubernetes/k8s/monitoring
 /docs/en/kubernetes/k8s/install-tools
 /docs/en/kubernetes/k8s/install-tools/helm
@@ -493,6 +496,7 @@
 /docs/en/monitoring-services/event-log/concepts/logged-events
 /docs/en/monitoring-services/event-log/concepts/logged-events/dns-events
 /docs/en/monitoring-services/event-log/concepts/logged-events/iam-events
+/docs/en/monitoring-services/event-log/concepts/logged-events/manila-events
 /docs/en/monitoring-services/event-log/service-management
 /docs/en/monitoring-services/event-log/service-management/siem-integration
 /docs/en/monitoring-services/event-log/service-management/view-event-log

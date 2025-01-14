@@ -189,11 +189,11 @@
   ],
   [
     "/en/intro/start/support/support-info",
-    "http://localhost:3000/docs/en/intro/start/support/sla"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/faq"
   ],
   [
-    "/en/intro/start/support/support-info",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/faq"
+    "/en/intro/start/support/chatbots/ai-bot",
+    "http://localhost:3000/docs/en/dbs/adb"
   ],
   [
     "/en/intro/start/partners/partners-profile",
@@ -4268,6 +4268,10 @@
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/architecture#cluster_topologies"
   ],
   [
+    "/en/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder"
+  ],
+  [
     "/en/kubernetes/k8s/concepts/update",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/versions/version-support"
   ],
@@ -5952,6 +5956,22 @@
     "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
+    "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster"
+  ],
+  [
+    "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl"
+  ],
+  [
+    "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+  ],
+  [
+    "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
+  ],
+  [
     "/en/kubernetes/k8s/monitoring",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#kube_prometheus_stack"
   ],
@@ -6802,6 +6822,46 @@
   [
     "/en/monitoring-services/event-log/concepts/about",
     "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/view-event-log"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#file_storage"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#creating_a_file_storage"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#adding_an_access_rule"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#deleting_an_access_rule"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#increasing_file_storage_size"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#creating_a_snapshot"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#deleting_a_snapshot"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#creating_a_file_storage"
+  ],
+  [
+    "/en/monitoring-services/event-log/concepts/logged-events/manila-events",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network"
   ],
   [
     "/en/monitoring-services/event-log/service-management/siem-integration",
@@ -8688,6 +8748,10 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/account/faq"
   ],
   [
+    "/ru/intro/start/support/chatbots/ai-bot",
+    "http://localhost:3000/docs/ru/dbs/adb"
+  ],
+  [
     "/ru/intro/start/legal/digital-cloud/policy-hotbox",
     "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-hotbox"
   ],
@@ -10409,7 +10473,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/fs-manage",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_snimka"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#deleting_a_snapshot"
   ],
   [
     "/ru/computing/iaas/service-management/fs-manage",
@@ -10673,7 +10737,7 @@
   ],
   [
     "/ru/computing/iaas/faq",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_snimka"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#creating_a_snapshot"
   ],
   [
     "/ru/computing/iaas/faq",
@@ -15277,7 +15341,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
@@ -18121,39 +18185,39 @@
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_faylovogo_hranilishcha_i_ego_seti"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#dobavlenie_pravila_dostupa"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#adding_an_access_rule"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_pravila_dostupa"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#deleting_an_access_rule"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#uvelichenie_razmera_faylovogo_hranilishcha"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#increasing_file_storage_size"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_snimka"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#creating_a_snapshot"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_snimka"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#deleting_a_snapshot"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage"
   ],
   [
     "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#udalenie_faylovogo_hranilishcha_i_ego_seti"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network"
   ],
   [
     "/ru/monitoring-services/event-log/service-management/siem-integration",
@@ -20577,7 +20641,7 @@
   ],
   [
     "/ru/cases/sprut-migration/paas/fs-manage",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage"
   ],
   [
     "/ru/cases/sprut-migration/paas/fs-manage",
