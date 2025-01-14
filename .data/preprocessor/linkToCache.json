@@ -24,6 +24,16 @@
     "full": "4. Привяжите карту к проекту",
     "text": "4. Привяжите карту к проекту"
   },
+  "using_ai_bot": {
+    "number": null,
+    "full": "Как пользоваться ИИ-консультантом",
+    "text": "Как пользоваться ИИ-консультантом"
+  },
+  "how_bot_works": {
+    "number": null,
+    "full": "Как работает ИИ-консультант",
+    "text": "Как работает ИИ-консультант"
+  },
   "prepayment": {
     "number": null,
     "full": "Prepayment",
@@ -229,6 +239,11 @@
     "full": "Автоматическое масштабирование",
     "text": "Автоматическое масштабирование"
   },
+  "placeholder": {
+    "number": null,
+    "full": "Pre-reserve resources",
+    "text": "Pre-reserve resources"
+  },
   "kubernetes-roles-relation": {
     "number": null,
     "full": "Relationship between the roles of management console and Kubernetes",
@@ -309,6 +324,26 @@
     "full": "4. Verify add-on operability after updating",
     "text": "4. Verify add-on operability after updating"
   },
+  "prepare": {
+    "number": null,
+    "full": "Подготовительные шаги",
+    "text": "Подготовительные шаги"
+  },
+  "set": {
+    "number": null,
+    "full": "1. Настройте добавление пустого пода в кластер",
+    "text": "1. Настройте добавление пустого пода в кластер"
+  },
+  "check": {
+    "number": null,
+    "full": "2. Проверьте применение настроек",
+    "text": "2. Проверьте применение настроек"
+  },
+  "delete": {
+    "number": null,
+    "full": "Удаление инстанса",
+    "text": "Удаление инстанса"
+  },
   "with_jh": {
     "number": null,
     "full": "Связка с JupyterHub",
@@ -363,11 +398,6 @@
     "number": null,
     "full": "Использование общих папок",
     "text": "Использование общих папок"
-  },
-  "delete": {
-    "number": null,
-    "full": "Удаление инстанса",
-    "text": "Удаление инстанса"
   },
   "cluster_spark": {
     "number": null,
@@ -499,16 +529,6 @@
     "full": "Просмотр SDN проекта",
     "text": "Просмотр SDN проекта"
   },
-  "using_ai_bot": {
-    "number": null,
-    "full": "Как пользоваться ИИ-консультантом",
-    "text": "Как пользоваться ИИ-консультантом"
-  },
-  "how_bot_works": {
-    "number": null,
-    "full": "Как работает ИИ-консультант",
-    "text": "Как работает ИИ-консультант"
-  },
   "bonuses": {
     "number": null,
     "full": "Бонусы",
@@ -579,6 +599,41 @@
     "full": "Создайте ВМ",
     "text": "Создайте ВМ"
   },
+  "creating_a_file_storage": {
+    "number": null,
+    "full": "Создание файлового хранилища",
+    "text": "Создание файлового хранилища"
+  },
+  "increasing_file_storage_size": {
+    "number": null,
+    "full": "Увеличение размера файлового хранилища",
+    "text": "Увеличение размера файлового хранилища"
+  },
+  "creating_a_snapshot": {
+    "number": null,
+    "full": "Создание снимка",
+    "text": "Создание снимка"
+  },
+  "deleting_a_snapshot": {
+    "number": null,
+    "full": "Удаление снимка",
+    "text": "Удаление снимка"
+  },
+  "adding_an_access_rule": {
+    "number": null,
+    "full": "Добавление правила доступа",
+    "text": "Добавление правила доступа"
+  },
+  "deleting_an_access_rule": {
+    "number": null,
+    "full": "Удаление правила доступа",
+    "text": "Удаление правила доступа"
+  },
+  "deleting_a_file_storage_and_its_network": {
+    "number": null,
+    "full": "Удаление файлового хранилища и его сети",
+    "text": "Удаление файлового хранилища и его сети"
+  },
   "neutron": {
     "number": null,
     "full": "Neutron",
@@ -614,25 +669,10 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
-  "prepare": {
-    "number": null,
-    "full": "Подготовительные шаги",
-    "text": "Подготовительные шаги"
-  },
   "delete_cluster": {
     "number": null,
     "full": "Удалить кластер",
     "text": "Удалить кластер"
-  },
-  "set": {
-    "number": null,
-    "full": "1. Настройте добавление пустого пода в кластер",
-    "text": "1. Настройте добавление пустого пода в кластер"
-  },
-  "check": {
-    "number": null,
-    "full": "2. Проверьте применение настроек",
-    "text": "2. Проверьте применение настроек"
   },
   "1_create_mlflow": {
     "number": null,
