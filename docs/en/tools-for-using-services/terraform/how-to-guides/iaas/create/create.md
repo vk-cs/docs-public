@@ -17,11 +17,6 @@ Two options for VM configuration will be considered: without additional settings
 1. Create a Terraform configuration file `variables.tf` with variables:
 
    ```hcl
-   variable "image_name" {
-     type = string
-     default = "Ubuntu-22.04-202208"
-   }
-
    variable "compute_flavor" {
      type = string
      default = "STD2-2-4"
@@ -40,7 +35,6 @@ Two options for VM configuration will be considered: without additional settings
 
    This file declares the following variables:
 
-   - `image_name`: the name of the virtual machine image;
    - `compute_flavor`: the name of the virtual machine configuration template;
    - `key_pair_name`: the name of the key pair that will be used to connect to the virtual machine via SSH;
    - `availability_zone_name`: the name of the availability zone where the virtual machine will be hosted.
@@ -49,20 +43,10 @@ Two options for VM configuration will be considered: without additional settings
 
    <tabs>
    <tablist>
-   <tab>image_name</tab>
    <tab>compute_flavor</tab>
    <tab>key_pair_name</tab>
    <tab>availability_zone_name</tab>
    </tablist>
-   <tabpanel>
-
-   Using OpenStack CLI:
-
-   ```bash
-   openstack image list
-   ```
-
-   </tabpanel>
    <tabpanel>
 
    Using OpenStack CLI:
@@ -155,7 +139,12 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_name
+  visibility = "public"
+  default    = true
+  properties = {
+    mcs_os_distro  = "ubuntu"
+    mcs_os_version = "24.04"
+  }
 }
 
 resource "vkcs_compute_instance" "compute" {
@@ -176,12 +165,12 @@ resource "vkcs_compute_instance" "compute" {
   }
 
   network {
-    uuid = vkcs_networking_network.network.id
+    uuid = vkcs_networking_network.example.id
   }
 
   depends_on = [
-    vkcs_networking_network.network,
-    vkcs_networking_subnet.subnetwork
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
   ]
 }
 
@@ -217,7 +206,12 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_name
+  visibility = "public"
+  default    = true
+  properties = {
+    mcs_os_distro  = "ubuntu"
+    mcs_os_version = "24.04"
+  }
 }
 
 resource "vkcs_compute_instance" "compute" {
@@ -238,12 +232,12 @@ resource "vkcs_compute_instance" "compute" {
   }
 
   network {
-    uuid = vkcs_networking_network.network.id
+    uuid = vkcs_networking_network.example.id
   }
 
   depends_on = [
-    vkcs_networking_network.network,
-    vkcs_networking_subnet.subnetwork
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
   ]
 }
 
@@ -278,9 +272,85 @@ output "instance_fip" {
 
 The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 
-## 4. Create resources using Terraform
+## 4. (Optional) Set up monitoring on VM
 
-1. Place the Terraform configuration files `provider.tf`, `variables.tf`, `network.tf` and `main.tf` in the same directory.
+This will allow you to automatically enable the transfer of metrics to the Cloud Monitoring service when creating a VM.
+
+<info>
+
+Monitoring cannot be enabled for VMs that are not accessible from the external network.
+
+</info>
+
+1. Specify the provider version 0.9.0 or higher in the `provider.tf` file. Example:
+
+    ```hcl
+    terraform {
+      required_providers {
+        vkcs = {
+          source = "vk-cs/vkcs"
+          version = "0.9.0"
+        }
+      }
+    }
+    ```
+
+1. Create a `monitoring.tf` file and put the following contents in it:
+
+    ```hcl
+    resource "vkcs_cloud_monitoring" "basic" {
+      image_id = data.vkcs_images_image.compute.id
+    }
+    ```
+
+1. Add the `cloud_monitoring` block to the `vkcs_compute_instance` resource description in the `main.tf` file. Example:
+
+    ```hcl
+    resource "vkcs_compute_instance" "compute" {
+      name                    = "compute-instance"
+      flavor_id               = data.vkcs_compute_flavor.compute.id
+      key_pair                = var.key_pair_name
+      security_groups         = ["default","ssh"]
+      availability_zone       = var.availability_zone_name
+
+      block_device {
+        uuid                  = data.vkcs_images_image.compute.id
+        source_type           = "image"
+        destination_type      = "volume"
+        volume_type           = "ceph-ssd"
+        volume_size           = 8
+        boot_index            = 0
+        delete_on_termination = true
+      }
+
+      network {
+        uuid = vkcs_networking_network.example.id
+      }
+
+      cloud_monitoring {
+        service_user_id = vkcs_cloud_monitoring.basic.service_user_id
+        script          = vkcs_cloud_monitoring.basic.script
+      }
+
+      depends_on = [
+        vkcs_networking_network.example,
+        vkcs_networking_subnet.example
+      ]
+    }
+    ```
+
+The parameters for connecting to the Cloud Monitoring service are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/compute_instance.md).
+
+## 5. Create resources using Terraform
+
+1. Place all Terraform configuration files in the same directory:
+
+   - `provider.tf`
+   - `variables.tf`
+   - `network.tf`
+   - `main.tf`
+   - `secgroup.tf`
+   - `monitoring.tf`
 
 1. Go to this directory.
 
@@ -302,14 +372,14 @@ The resources arguments are described in the [Terraform provider documentation](
 
 Once resource creation is complete, the Terraform `instance_fip` output will show the floating IP address assigned to the VM.
 
-## 5. Check if example works
+## 6. Check if example works
 
 [Connect via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
 
-To connect use:
+To connect, use:
 
-- the IP address from the `instance_fip` output;
-- the private SSH key from the `keypair-terraform` key pair.
+- the IP address from the `instance_fip` output
+- the private SSH key from the `keypair-terraform` key pair
 
 If the example worked successfully, the console will show typical Ubuntu output:
 
