@@ -37,9 +37,15 @@
           "description": "",
           "icon": "/ru/on-premises/assets/data-platform-icon.svg",
           "iconMobile": "/ru/on-premises/assets/data-platform-mobile-icon.svg" 
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/s3/",
+          "title": "Cloud Storage в частной инсталляции",
+          "description": "",
+          "icon": "/ru/on-premises/assets/cloud-storage-icon.svg",
+          "iconMobile": "/ru/on-premises/assets/cloud-storage-mobile-icon.svg" 
         }
       ]
     }
   }
 ]
-
