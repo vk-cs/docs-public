@@ -165,7 +165,7 @@
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
-|Администратор, оператор ВМ
+|Администратор, младший администратор, оператор ВМ
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
@@ -237,7 +237,7 @@
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
-|Администратор, оператор ВМ
+|Администратор, младший администратор
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
@@ -313,7 +313,12 @@
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
-|Администратор, оператор ВМ
+|Администратор, младший администратор
+| Все события проекта
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Оператор ВМ
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")

@@ -165,7 +165,7 @@ Each role has certain permissions set to perform operations.
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 
-|VM administrator, VM operator
+|VM administrator, junior VM administrator, VM operator
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/check.svg "inline")
@@ -237,7 +237,7 @@ Each role has certain permissions set to perform operations.
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 
-|VM administrator, VM operator
+|VM administrator, junior VM administrator
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/check.svg "inline")
@@ -313,7 +313,12 @@ Each role has certain permissions set to perform operations.
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
 
-|VM administrator, VM operator
+|VM administrator, junior VM administrator
+| All events of a project
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+|VM operator
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
