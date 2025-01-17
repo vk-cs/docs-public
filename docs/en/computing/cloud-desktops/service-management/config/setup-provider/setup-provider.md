@@ -1,11 +1,12 @@
 The Cloud Desktop service allows you to use the following subsystems of remote access to desktops:
 
-- [Termidesk](https://termidesk.ru/products/) developed by UVEON. Used by default.
+- [Termidesk](https://termidesk.ru/products/) developed by UVEON.
   
-    Use this subsystem if users workstations are running Linux OS.
+    Use this subsystem if users workstations are running Windows or Linux OS.
+
 - VK developed by the VK company. Uses its own data transfer protocol, which ensures high-quality display of the virtual desktop and speed of interaction.
 
-    Use this subsystem if users workstations are running Windows OS.
+    Use this subsystem if users workstations are running Windows or MacOS.
 
 To select a remote desktop access subsystem:
 
