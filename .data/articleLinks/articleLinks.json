@@ -1597,7 +1597,15 @@
   ],
   [
     "/en/computing/iaas/tariffication",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication#what_is_charged"
+  ],
+  [
+    "/en/computing/iaas/tariffication",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#image"
+  ],
+  [
+    "/en/computing/iaas/tariffication",
+    "http://localhost:3000/docs/en/storage/s3/tariffication"
   ],
   [
     "/en/computing/iaas/troubleshooting/linux-vm-network",
@@ -6772,6 +6780,22 @@
     "http://localhost:3000/docs/en/monitoring-services/logging/concepts/search-tools"
   ],
   [
+    "/en/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/en/monitoring-services/logging/concepts/search-tools"
+  ],
+  [
+    "/en/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/en/monitoring-services/logging/concepts/logging-plugin#conf_parameters"
+  ],
+  [
+    "/en/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/en/monitoring-services/logging/concepts/logging-plugin#conf_parameters"
+  ],
+  [
+    "/en/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/en/monitoring-services/logging/concepts/logging-plugin#conf_parameters"
+  ],
+  [
     "/en/monitoring-services/alerting/triggers/trigger-start",
     "http://localhost:3000/docs/monitoring-services/alerting/triggers/triggers-add"
   ],
@@ -10618,6 +10642,18 @@
   [
     "/ru/computing/iaas/tariffication",
     "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+  ],
+  [
+    "/ru/computing/iaas/tariffication",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#obraz"
+  ],
+  [
+    "/ru/computing/iaas/tariffication",
+    "http://localhost:3000/docs/ru/storage/s3/tariffication"
+  ],
+  [
+    "/ru/computing/iaas/tariffication",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/storage-types"
   ],
   [
     "/ru/computing/iaas/troubleshooting/linux-vm-network",
@@ -18066,6 +18102,18 @@
   [
     "/ru/monitoring-services/logging/service-management/view-logs",
     "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/search-tools"
+  ],
+  [
+    "/ru/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/logging-plugin#conf_parameters"
+  ],
+  [
+    "/ru/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/logging-plugin#conf_parameters"
+  ],
+  [
+    "/ru/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/logging-plugin#conf_parameters"
   ],
   [
     "/ru/monitoring-services/alerting/triggers/trigger-start",
