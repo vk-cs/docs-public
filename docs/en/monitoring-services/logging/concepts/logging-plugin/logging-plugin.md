@@ -69,7 +69,7 @@ Accounts generated for the Cloud Logging service have only the right to record l
 
 </warn>
 
-## Plugin configuration parameters
+## {heading(Plugin configuration parameters)[id=conf_parameters]}
 
 [cols="1,1,3", options="header"]
 |===
