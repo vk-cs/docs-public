@@ -9,7 +9,7 @@ The backup plan includes:
 You can create a backup plan:
 
 - automatically, by enabling the backup option when creating a VM or DB instance
-- manually in your VK Cloud management console or using the [Cloud Backup API](/ru/tools-for-using-services/api/api-spec/backup-api)
+- manually in your VK Cloud management console or using the [Cloud Backup API](/ru/tools-for-using-services/api/api-spec/backup-api "change-lang")
 
 <info>
 
