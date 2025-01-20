@@ -7,7 +7,7 @@
 
 **Поддерживаемые приложения**: SAP, Microsoft Active Directory, PostgreSQL, Oracle, NGINX, Red Hat Jboss Enterprise, IBM WebSphere, Apache, VMware vSphere, MySQL, MongoDB, Hadoop, Spark.
 
-**Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС.
+**Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Полный список доступных для миграции ОС и их версий приведен на странице [создания ВМ](/ru/computing/iaas/service-management/vm/vm-create#create_vm) в вашем личном кабинете.
 
 </details>
 
@@ -27,8 +27,8 @@
 
 1. [Авторизуйтесь](https://migration.mcs-cloud.ru) в личном кабинете Hystax Acura, используя полученные логин и пароль.
 1. Нажмите кнопку **Install replication agents**.
-1. На шаге «Agent selection» выберите **Linux** и нажмите кнопку **Next**.
-1. На шаге «Agent settings» укажите параметры:
+1. На шаге **Agent selection** выберите **Linux** и нажмите кнопку **Next**.
+1. На шаге **Agent settings** укажите параметры:
 
    - **Machines group**: `Default`.
    - **Select target Linux distribution**: `Debian/Ubuntu (.deb package)`.
@@ -107,14 +107,9 @@
 1. В поле **Name** укажите наименование плана `MR-plan`.
 1. Перейдите на вкладку **Expert** и нажмите кнопку **Generate Migration Plan from all machines**.
 
-   Будет сформирован JSON-файл с ВМ `Ubuntu-MR`.
+   Будет сформирован JSON-файл с планом миграции ВМ `Ubuntu-MR`.
 
-1. Скорректируйте план в соответствии с требованиями по миграции ВМ:
-
-    - В параметре `subnet_id` укажите идентификатор сети для ВМ `Ubuntu-MR`.
-    - В параметре `flavor` укажите название шаблона ВМ, уточните его с помощью команды `openstack flavor list`.
-
-    Подробное описание параметров в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_overview.html#migration-plan-syntax).
+1. Скорректируйте параметры плана в соответствии с требованиями по миграции ВМ.
 
    <details>
     <summary>Пример плана миграции одной ВМ</summary>
@@ -123,34 +118,63 @@
 
     ```json
     {
-        "subnets": {
-            "subnet_0": {
-                "name": "subnet_0",
-                "cidr": "10.0.1.0/24",
-                "subnet_id": "2aebd081-44a8-480f-xxxx-yyyyyyyyyyyy"
+      "devices": {
+        "<ИМЯ_ВМ>": {
+          "flavor": "STD3-4-8",
+          "availability_zone": "MS1",
+          "security_groups": [
+            "default",
+            "ssh"
+          ],
+          "id": "a0c733a4-7c2c-f4db-7af3-XXXX",
+          "custom_image_metadata": {
+            "os_type": "linux",
+            "os_distro": "ubuntu18.04",
+            "os_version": "18.04",
+            "os_admin_user": "admin",
+            "os_require_quiesce": "yes",
+            "hw_qemu_guest_agent": "yes"
+          },
+          "ports": [
+            {
+              "name": "port_0",
+              "ip": "10.0.2.15",
+              "floating_ip": true,
+              "subnet": "subnet_0"
             }
-        },
-        "devices": {
-            "ubuntu01": {
-                "id": "ec09a435-3389-d19f-4cf4-zzzzzzzzzzz",
-                "security_groups": [
-                    "default_all"
-                ],
-                "availability_zone": "MS1",
-                "rank": 0,
-                "flavor": "STD3-4-8",
-                "ports": [
-                    {
-                        "name": "port_0",
-                        "ip": "10.0.1.23",
-                        "floating_ip": true,
-                        "subnet": "subnet_0"
-                    }
-                ]
-            }
+          ],
+          "rank": 0
         }
+      },
+      "subnets": {
+        "subnet_0": {
+          "subnet_id": "41ffb51d-baf4-4b6c-8517-XXXX",
+          "cidr": "10.0.2.0/24"
+        }
+      }
     }
     ```
+
+   Параметры плана:
+
+    - `<ИМЯ_ВМ>` — имя, которое будет присвоено виртуальной машине в VK Cloud.
+    - `flavor` — имя или ID [шаблона конфигурации](/ru/computing/iaas/concepts/about#flavors) для ВМ. Уточните название с помощью команды `openstack flavor list`.
+    - `availability_zone` — имя [зоны доступности](/ru/intro/start/concepts/architecture#az), в которой будет развернута ВМ.
+    - `security_groups` — список имен или ID [групп безопасности](/ru/networks/vnet/service-management/secgroups) для `Ubuntu-MR`.
+    - `id` — внутренний ID виртуальной машины, сгенерированный Hystax на предыдущем шаге.
+    - `custom_image_metadata` — пользовательские метаданные для ВМ.
+      - `os_type` — тип гостевой ОС.
+      - `os_distro` — имя дистрибутива ОС. Уточните имя, следуя инструкции в разделе [Заполнение os_distro и os_version](/ru/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version).
+      - `os_version` — версия ОС. Уточните версию, следуя инструкции в разделе [Заполнение os_distro и os_version](/ru/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version).
+      - `os_admin_user` — имя пользователя ОС с правами администратора. Пароль может быть установлен через [личный кабинет](/ru/computing/iaas/service-management/vm/vm-manage#password).
+      - `os_require_quiesce: "yes"` — включение поддержки резервного копирования в VK Cloud.
+      - `hw_qemu_guest_agent: "yes"` — включение поддержки гостевого агента QEMU.
+    - `ports` — список сетевых интерфейсов ВМ.
+    - `rank` — параметр, определяющий порядок запуска виртуальных машин, если их несколько в плане миграции.
+    - `subnet_id` — ID подсети, в которой будет развернута ВМ.
+    - `cidr` — адрес подсети в формате CIDR.
+
+   Подробное описание параметров — в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе [Метатеги образов](/ru/computing/iaas/service-management/images/image-metadata).
 
    </details>
 
