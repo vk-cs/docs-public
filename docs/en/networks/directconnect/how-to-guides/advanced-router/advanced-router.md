@@ -5,7 +5,7 @@ To show the configuration of an advanced router, two independent networks will b
 - Client network — the customer’s internal network, which may not have access to the Internet.
 - Virtual network — located in VK Cloud and connected to the platform router.
 
-## Preparation steps
+## Before you start
 
 1. Make sure the OpenStack client is [installed](../../../../tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](../../../../tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
