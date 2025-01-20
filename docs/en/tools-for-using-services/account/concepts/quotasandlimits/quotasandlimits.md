@@ -613,6 +613,11 @@ There are no quotas for the Cloud Storage service. The use of these services is 
 | unlimited, maximum known value among all projects: 500 requests/sec
 | ![](/en/assets/no.svg "inline")
 
+| Number of lifecycle rules
+| 50 pcs.
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
 |===
 
 The rate limits can be [increased](../../service-management/project-settings/manage#increasing_project_quotas) by contacting technical support.

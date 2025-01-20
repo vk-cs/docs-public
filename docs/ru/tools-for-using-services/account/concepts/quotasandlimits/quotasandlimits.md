@@ -615,6 +615,11 @@
 | не ограничено, максимальное известное значение среди всех проектов: 500 запросов/с
 | ![](/ru/assets/no.svg "inline")
 
+| Количество lifecycle-правил
+| 50 шт.
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
 |===
 
 Рейт-лимиты можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
