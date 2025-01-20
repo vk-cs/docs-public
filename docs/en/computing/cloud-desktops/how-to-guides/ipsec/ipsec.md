@@ -9,7 +9,7 @@ To show how to configure a secure connection with virtual desktops:
 - A transit network will be created that will connect the Debian 11-based VPN gateway to the platform router, behind which VDI networks will be formed.
 - To simulate VDI, a network with a VM will be added. The VM will ping the LDAP server to check network connectivity.
 
-## Preparation steps
+## Before you start
 
 1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
