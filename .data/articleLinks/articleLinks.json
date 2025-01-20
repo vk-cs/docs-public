@@ -3284,10 +3284,6 @@
     "http://localhost:3000/docs/en/storage/backups/service-management/point-in-time-recovery-pitr"
   ],
   [
-    "/en/storage/backups/service-management/create-backup-plan",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
-  ],
-  [
     "/en/storage/backups/service-management/create-backup-copy",
     "http://localhost:3000/docs/en/storage/backups/service-management/create-backup-plan"
   ],
@@ -6993,6 +6989,10 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create#create_a_vm"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
     "http://localhost:3000/docs/en/intro/start/account-registration"
   ],
   [
@@ -7006,6 +7006,34 @@
   [
     "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
     "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-add/"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/images/image-metadata"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
@@ -18377,6 +18405,10 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
     "http://localhost:3000/docs/ru/intro/start/account-registration"
   ],
   [
@@ -18386,6 +18418,34 @@
   [
     "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-add/"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/image-metadata"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",

@@ -99,6 +99,11 @@
     "full": "Создание диска",
     "text": "Создание диска"
   },
+  "find_os_distro_and_os_version": {
+    "number": null,
+    "full": "Заполнение os_distro и os_version",
+    "text": "Заполнение os_distro и os_version"
+  },
   "migrate_own_licenses": {
     "number": null,
     "full": "Перенос в облако VK Cloud приобретенных ранее лицензий",
