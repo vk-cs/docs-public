@@ -10,7 +10,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 </warn>
 
-## Preparation steps
+## Before you start
 
 1. If you already have an existing Cloud Containers cluster with the Kube Prometheus Stack add-on that needs to be upgraded, skip this step.
 
