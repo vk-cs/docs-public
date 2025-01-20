@@ -10,7 +10,7 @@ The following resources are used to create networks:
 
 A detailed description of the resources is in the [provider documentation](https://docs.comcloud.xyz/modules/terraform-aws-modules/s3-bucket/aws/latest).
 
-## Preparation steps
+## Before you start
 
 1. Learn the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you plan to create the instance. Different regions may have different quotas configured.
 

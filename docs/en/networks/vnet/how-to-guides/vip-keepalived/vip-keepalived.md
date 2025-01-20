@@ -9,7 +9,7 @@ To show the virtual IP address setting:
 
 ![Scenario Diagram](./assets/vip-keepalived.png){params[noBorder=true]}
 
-## 1. Preparation steps
+## 1. Before you start
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
