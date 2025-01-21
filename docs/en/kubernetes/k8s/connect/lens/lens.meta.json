@@ -6,5 +6,6 @@
   "metaDescription": "How to connect to a Kubernetes cluster using Lens",
   "sectionTitle": "Connecting to cluster using Lens",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "daa5c3bc-3c1f-4629-9e48-9aae243dda87"
 }

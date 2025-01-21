@@ -4376,8 +4376,16 @@
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management"
   ],
   [
+    "/en/kubernetes/k8s/connect/lens",
+    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api#activate_api_access"
+  ],
+  [
+    "/en/kubernetes/k8s/connect/lens",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management"
+  ],
+  [
     "/en/kubernetes/k8s/connect/k8s-dashboard",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/connect/docker-registry",
@@ -4393,7 +4401,7 @@
   ],
   [
     "/en/kubernetes/k8s/connect/docker-registry",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/connect/docker-registry",
@@ -4405,7 +4413,7 @@
   ],
   [
     "/en/kubernetes/k8s/connect/addons-ui",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/connect/addons-ui",
@@ -5013,7 +5021,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
@@ -5301,7 +5309,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/service-management/scale",
@@ -5969,7 +5977,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/autoscaling-placeholder",
@@ -5993,7 +6001,7 @@
   ],
   [
     "/en/kubernetes/k8s/monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/monitoring",
@@ -6001,7 +6009,7 @@
   ],
   [
     "/en/kubernetes/k8s/install-tools/helm",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/install-tools/gatekeeper",
@@ -6017,7 +6025,7 @@
   ],
   [
     "/en/kubernetes/k8s/install-tools/velero",
-    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_the_connection_to_the_cluster"
+    "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl#checking_connection_to_cluster"
   ],
   [
     "/en/kubernetes/k8s/install-tools/velero",
@@ -19598,6 +19606,14 @@
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_datasources/ivkcs_monitoring_user",
     "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ib_cloud_monitoring"
+  ],
+  [
+    "/ru/tools-for-using-services/vendor-account/manage-apps/service_description",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure"
+  ],
+  [
+    "/ru/tools-for-using-services/vendor-account/manage-apps/service_description",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_json"
   ],
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/service_description",
