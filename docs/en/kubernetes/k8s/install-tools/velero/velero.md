@@ -7,7 +7,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    - Either the worker node groups have at least 2 vCPUs available;
    - Or [automatic scaling is enabled](../../service-management/scale#autoscale_worker_nodes).
 
-1. [Make sure](../../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster with `kubectl`.
+1. [Make sure](../../connect/kubectl#checking_connection_to_cluster) that you can connect to the cluster with `kubectl`.
 1. [Install](/en/tools-for-using-services/cli/openstack-cli/) OpenStack CLI if it is not already installed. [Make sure](/en/tools-for-using-services/cli/openstack-cli/) that you can authorize in the cloud using it.
 1. [Create a Hotbox bucket](/en/storage/s3/buckets/bucket#bucket_creation) to store backups in the [Object Storage](../../../../storage/s3) service.
 1. [Create an account](/en/storage/s3/service-management/account-management#create_an_account) in the [Object Storage](/en/storage/s3) service.

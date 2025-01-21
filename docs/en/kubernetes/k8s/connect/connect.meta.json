@@ -1,10 +1,10 @@
 {
-  "title": "Connecting to a cluster",
+  "title": "Connecting to cluster",
   "pageDescription": "There are several ways to connect to the Cloud Containers cluster and its components. All available connection options are discussed here.",
   "shortDescription": "Ways to connect to a Cloud Containers cluster",
-  "metaTitle": "Connecting to a cluster",
+  "metaTitle": "Connecting to cluster",
   "metaDescription": "",
-  "sectionTitle": "Connecting to a cluster",
+  "sectionTitle": "Connecting to cluster",
   "icon": "",
   "weight": 3,
   "uuid": "c8059744-4842-443c-8b70-0f3ad8630d7d"
