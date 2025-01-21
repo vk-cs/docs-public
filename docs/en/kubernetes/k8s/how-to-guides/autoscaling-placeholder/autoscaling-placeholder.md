@@ -12,7 +12,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
 1. [Create](../../service-management/create-cluster) a cluster, if you have not done it already.
 1. [Install and configure](../../connect/kubectl) `kubectl`, if you have not done it already.
-1. [Connect](../../connect/kubectl#checking_the_connection_to_the_cluster) to the cluster using `kubectl`.
+1. [Connect](../../connect/kubectl#checking_connection_to_cluster) to the cluster using `kubectl`.
 1. Prepare the CPU and RAM data of the scaling node:
 
     1. In the terminal with a session connected to the cluster, run the command:
