@@ -4440,6 +4440,21 @@
     ]
   },
   {
+    "uuid": "daa5c3bc-3c1f-4629-9e48-9aae243dda87",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/kubernetes/k8s/connect/lens",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/connect/lens/lens.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/connect/lens/lens.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "a7d4320e-5761-4af2-9551-6d41244bb0db",
     "lang": "en",
     "type": "ARTICLE",

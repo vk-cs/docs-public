@@ -293,6 +293,7 @@
 /docs/en/kubernetes/k8s/concepts/access-management
 /docs/en/kubernetes/k8s/connect
 /docs/en/kubernetes/k8s/connect/kubectl
+/docs/en/kubernetes/k8s/connect/lens
 /docs/en/kubernetes/k8s/connect/k8s-dashboard
 /docs/en/kubernetes/k8s/connect/docker-registry
 /docs/en/kubernetes/k8s/connect/addons-ui
