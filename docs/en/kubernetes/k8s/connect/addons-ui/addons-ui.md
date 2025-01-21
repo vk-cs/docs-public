@@ -7,7 +7,7 @@ A browser must be installed on the host to connect.
 
 ## Preparatory steps
 
-1. On the host from which you plan to connect to the add-on web interface, [make sure](../kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl`.
+1. On the host from which you plan to connect to the add-on web interface, [make sure](../kubectl#checking_connection_to_cluster) that you can connect to the cluster using `kubectl`.
 
 1. Install `kauthproxy` on the same host if the utility is not already installed:
 

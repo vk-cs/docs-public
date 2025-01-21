@@ -337,7 +337,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 </tabpanel>
 <tabpanel>
 
-1. [Make sure](../../../../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl`.
+1. [Make sure](../../../../connect/kubectl#checking_connection_to_cluster) that you can connect to the cluster using `kubectl`.
 
 1. Get the password to sign in to Grafana from the Kubernetes secret:
 
