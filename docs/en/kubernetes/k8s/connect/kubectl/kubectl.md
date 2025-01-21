@@ -5,7 +5,7 @@ The way to connect to the cluster depends on its IP address:
 - If an external IP address is assigned to the cluster, then you can connect to it from any host with Internet access.
 - If the cluster is assigned only an internal IP address, then you can connect to it only from a host in VK Cloud — a virtual machine that is located in the same subnet as the cluster.
 
-## Preparatory steps
+## Before you start
 
 1. On the host from which you plan to connect to the cluster, install `kubectl` if the utility is not already installed.
 
@@ -210,135 +210,26 @@ The way to connect to the cluster depends on its IP address:
    </tabpanel>
    </tabs>
 
-1. If you plan to connect to a Kubernetes cluster version 1.23 or higher, prepare everything you need to connect using [Single Sign-On (SSO)](../../concepts/access-management).
+1. Prepare everything you need to connect using [Single Sign-On (SSO)](../../concepts/access-management).
 
-   1. On the host from which you plan to connect to the cluster, install `keystone-auth` if the utility is not already installed:
+   1. On the host from which you plan to connect to the cluster, install `client-keystone-auth` if the plugin is not already installed:
 
-      <tabs>
-      <tablist>
-      <tab>Windows (PowerShell)</tab>
-      <tab>Linux (bash)/macOS (zsh)</tab>
-      </tablist>
-      <tabpanel>
-
-      1. Run the command:
-
-         ```powershell
-         iex (New-Object System.Net.WebClient).DownloadString( `
-           'https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/windows/client-install.ps1' `
-         )
-
-         ```
-
-         This will start installing the `keystone-auth` utility.
-
-      1. Confirm adding the directory with the utility to the `PATH` environment variable by entering `Y` in response to the prompt:
-
-         ```text
-         Add client-keystone-auth installation dir to your PATH? [Y/n]
-         ```
-
-      </tabpanel>
-      <tabpanel>
-
-      1. Run the command:
-
-         ```bash
-         curl -sSL \
-           https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/linux/client-install.sh \
-         | bash
-         ```
-
-         This will start installing the `keystone-auth` utility.
-
-      1. If you are using a shell other than `bash` or `zsh`, add the path to the utility to the `PATH` environment variable manually.
-
-      1. Restart the shell session or run the `source` command.
-
-         A tip with the necessary commands will be displayed when the installation is complete.
-
-      </tabpanel>
-      </tabs>
+      {include(/en/_includes/_client_keystone_auth.md)}
 
    1. Determine on behalf of which user you want to connect to the cluster. Then:
 
       - [Assign](/tools-for-using-services/account/service-management/project-settings/access-manage#inviting_a_new_member_to_the_project) necessary [role](../../concepts/access-management) to this user.
       - [Activate API access](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#enabling_2fa) for this user.
 
-## Connecting to the cluster
+## Connecting to cluster
 
-On the host from which you plan to connect to the cluster:
+{include(/en/_includes/_kubeconfig.md)}
 
-1. Download the configuration file of the cluster you want to connect to to the local computer:
-
-   1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud under the account of the user who will connect to the cluster.
-   1. Select the project where the necessary cluster is located.
-   1. Go to **Containers → Kubernetes Clusters**.
-   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Get Kubeconfig to access the cluster**.
-
-   Such a file is automatically created for each new cluster and is named in the format `<cluster name>_kubeconfig.yaml`.
-
-   <info>
-
-    Further, it is assumed that the downloaded file has the name `kubernetes-cluster-1234_kubeconfig.yaml` and is located in the directory `C:\Users\user\.kube` (for Windows) or `/home/user/.kube` (for Linux and macOS). Correct the commands below if necessary.
-
-   </info>
-
-1. The configuration file contains sensitive information that should not be accessible to other users. Therefore, restrict the access rights to this file:
-
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
-   ```powershell
-   icacls.exe 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml' `
-     /c /t `
-     /Inheritance:d `
-     /Remove:g BUILTIN\Administrators Everyone Users `
-     /Grant:r ${env:UserName}:RW
-   ```
-
-   </tabpanel>
-   <tabpanel>
-
-   ```bash
-   sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
-   ```
-
-   </tabpanel>
-   </tabs>
-
-1. Place the path to the configuration file in the `$KUBECONFIG` environment variable:
-
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
-   ```powershell
-   $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
-   ```
-
-   </tabpanel>
-   <tabpanel>
-
-   ```bash
-   export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
-   ```
-
-   </tabpanel>
-   </tabs>
-
-## Checking the connection to the cluster
+## Checking connection to cluster
 
 <tabs>
 <tablist>
-<tab>Version of Kubernetes 1.23 and higher</tab>
+<tab>Version of Kubernetes 1.23 and higher</tab>                                                        
 <tab>Version of Kubernetes 1.22 and lower</tab>
 </tablist>
 <tabpanel>
