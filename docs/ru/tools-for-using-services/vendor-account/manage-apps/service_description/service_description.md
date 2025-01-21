@@ -15,7 +15,9 @@
 * В каталоге {var(sys2)}.
 * На вкладке **Описание сервиса** на странице сервиса.
 
-Для image-based приложения иконка загружается в составе сервисного пакета (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure/#ib_structure)[text=%text]}), для SaaS-приложения — в JSON-файле указывается ссылка на иконку.
+Для image-based приложения иконка загружается в составе [сервисного пакета](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure).
+
+Для SaaS-приложения отправьте на [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com) письмо с вложенной в него иконкой в формате SVG размером не менее 62 × 62 пикселей. В ответном письме будет выслана ссылка на иконку, которая указывается в [JSON-файле](/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_json).
 
 ## {heading(Краткое описание сервиса)[id=service_description_short]}
 
