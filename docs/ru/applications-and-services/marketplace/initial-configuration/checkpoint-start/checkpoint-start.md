@@ -300,15 +300,15 @@ Check Point CloudGuard Network предоставляется по модели 
    1. Перейдите по адресу `https://<внешний_IP_адрес>:443`, где `<внешний_IP_адрес>` — внешний IP-адрес севера управления, указанный в инструкции по настройке сервера управления.
    1. Введите логин, полученный в инструкции по настройке сервера управления, и пароль, установленный при [настройке](#setup_management).
    1. В окне мастера настройки First Time Configuration Wizard нажмите **Next**.
-   1. На шаге «Deployment Options» оставьте настройки без изменения и нажмите **Next**.
-   1. На шаге «Management Connection» оставьте настройки без изменения и нажмите **Next**.
-   1. На шаге «Device Information» оставьте настройки без изменения и нажмите **Next**.
-   1. На шаге «Date and Time Settings» оставьте настройки без изменения и нажмите **Next**.
-   1. На шаге «Installation Type» выберите **Security Gateway and/or Security Management**.
-   1. На шаге «Products» выберите с помощью флажка только **Security Management**, чтобы настроить сервис **Check Point CloudGuard Network — Security Management BYOL** как сервер управления. При необходимости вы можете настроить сервис как шлюз и сервер управления одновременно. Подробнее об этом читайте в [официальной документации сервиса](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Installation_and_Upgrade_Guide/Content/Topics-IUG/Installing-Standalone.htm).
-   1. На шаге «Security Management Administrator» оставьте настройки без изменения и нажмите **Next**.
-   1. На шаге «Security Management GUI Clients» оставьте настройки без изменения и нажмите **Next**.
-   1. На шаге «First Time Configuration Wizard Summary» нажмите **Finish** и подтвердите перезагрузку системы.
+   1. На шаге **Deployment Options** оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге **Management Connection** оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге **Device Information** оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге **Date and Time Settings** оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге **Installation Type** выберите **Security Gateway and/or Security Management**.
+   1. На шаге **Products** выберите с помощью флажка только **Security Management**, чтобы настроить сервис **Check Point CloudGuard Network — Security Management BYOL** как сервер управления. При необходимости вы можете настроить сервис как шлюз и сервер управления одновременно. Подробнее об этом читайте в [официальной документации сервиса](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Installation_and_Upgrade_Guide/Content/Topics-IUG/Installing-Standalone.htm).
+   1. На шаге **Security Management Administrator** оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге **Security Management GUI Clients** оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге **First Time Configuration Wizard Summary** нажмите **Finish** и подтвердите перезагрузку системы.
 
 Теперь вы можете подключаться к ВМ сервера управления с помощью веб-интерфейса GAiA Portal по адресу `https://<внешний_IP_адрес>` (или по SSH `<внешний_IP_адрес>:22`), где `<внешний IP-адрес>` — внешний IP-адрес севера управления, указанный в инструкции по настройке сервера управления.
 
