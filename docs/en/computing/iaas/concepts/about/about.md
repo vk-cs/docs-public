@@ -230,7 +230,7 @@ Each zone is isolated from failures in other availability zones. Placing virtual
 VK Cloud platform resources are hosted in data centers:
 
 - GZ1 – [Goznak](https://tech.goznak.ru/dc-goznak-moscow) data center. Address: Moscow, Prospekt Mira, 105, building 6.
-- MS1 (ko1) – [DataLine NORD4](https://www.dtln.ru/tsod-nord) data center. Address: Moscow, Korovinskoe highway, 41.
+- MS1 (ko1) – DataLine NORD4 data center. Address: Moscow, Korovinskoe highway, 41.
 - QAZ — [QazCloud](https://qazcloud.kz) data center. Address: Republic of Kazakhstan, Akmola region, Kosshy, Republic str. 1.
 
 In the MS1 availability zone, the VK Cloud infrastructure is protected in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FL.
