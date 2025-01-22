@@ -1,4 +1,4 @@
-- Точки присутствия в дата-центрах: [DataLine NORD4](https://www.dtln.ru/tsod-nord), [Гознак](https://tech.goznak.ru/dc-goznak-moscow), [«Медведково» Ростелеком-ЦОД](https://dcnetwork.ru/dc/moscow).
+- Точки присутствия в дата-центрах: DataLine NORD4, [Гознак](https://tech.goznak.ru/dc-goznak-moscow), «Медведково» Ростелеком-ЦОД.
 - Тип волокна: только Single-Mode (SM).
 - Тип трансивера: Duplex с коннекторами LC (подключение требует двух волокон в одном канале связи).
 - В порт коммутатора VK Cloud должен приходить исключительно тегированный трафик (802.1Q Trunk Mode).
