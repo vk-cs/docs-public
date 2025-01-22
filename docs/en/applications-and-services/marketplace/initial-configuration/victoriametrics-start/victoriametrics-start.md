@@ -117,7 +117,7 @@ To deploy the VictoriaMetrics service in a project:
    </tabpanel>
    <tabpanel>
 
-   1. На шаге «Настройки Кластера»:
+   1. На шаге **Настройки Кластера**:
 
       - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
