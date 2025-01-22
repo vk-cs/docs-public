@@ -36,8 +36,8 @@
 
 1. [Авторизуйтесь](https://dr.mcs-cloud.ru) в личном кабинете Hystax Acura, используя полученные логин и пароль.
 1. Нажмите кнопку **Install replication agents**.
-1. На шаге «Agent selection» выберите **Linux** и нажмите кнопку **Next**.
-1. На шаге «Agent settings» укажите параметры:
+1. На шаге **Agent selection** выберите **Linux** и нажмите кнопку **Next**.
+1. На шаге **Agent settings** укажите параметры:
 
    - **Machines group**: `Default`.
    - **Select target Linux distribution**: `Debian/Ubuntu (.deb package)`.
@@ -217,8 +217,8 @@
 ## 5. Восстановите инфраструктуру в VK Cloud
 
 1. Перейдите в раздел **Failback**.
-1. На шаге «Select target cloud type» выберите опцию **OPENSTACK** и нажмите кнопку **Next**.
-1. На шаге «Select target environment» выберите опцию **New OpenStack** и укажите параметры:
+1. На шаге **Select target cloud type** выберите опцию **OPENSTACK** и нажмите кнопку **Next**.
+1. На шаге **Select target environment** выберите опцию **New OpenStack** и укажите параметры:
 
    - **Cloud name**: `VK Cloud`.
    - **Keystone API endpoint**: значение Keystone из [списка эндпоинтов](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), для VK Cloud — `https://infra.mail.ru:35357/v3/`.
@@ -231,9 +231,9 @@
    - **Floating IP Network**: внешняя сеть `ext-net`.
 
 1. Нажмите кнопку **Next**.
-1. На шаге «Select resource» из списка **From Cloud Site** выберите `VK-Cloud-infra`.
+1. На шаге **Select resource** из списка **From Cloud Site** выберите `VK-Cloud-infra`.
 1. Нажмите кнопку **Next**.
-1. На шаге «Failback settings» укажите название восстанавливаемой структуры.
+1. На шаге **Failback settings** укажите название восстанавливаемой структуры.
 1. Нажмите кнопку **Start Failback**.
 
    Инфраструктура в VK Cloud будет приведена в состояние, соответствующее `VK-Cloud-infra`.
