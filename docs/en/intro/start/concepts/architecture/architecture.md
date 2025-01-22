@@ -86,11 +86,11 @@ Each availability zone has one or more data processing centers (data centers) wh
 
   The address of the data center: Moscow, Mira avenue, 105, building 6.
 
-- `MS1`: includes a data center [DataLine NORD4](https://www.dtln.ru/tsod-nord);
+- `MS1`: includes a data center DataLine NORD4;
 
   The address of the data center: Moscow, Korovinskoe highway, 41.
 
-- `ME1`: includes a data center [«Medvedkovo» Rostelecom-DPC](https://dcnetwork.ru/dc/moscow);
+- `ME1`: includes a data center «Medvedkovo» Rostelecom-DPC;
 
   The address of the data center: Moscow, Chermyanskaya st., 4.
 
