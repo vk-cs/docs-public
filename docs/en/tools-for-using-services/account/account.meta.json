@@ -1,10 +1,10 @@
 {
-  "title": "Management console",
+  "title": "Management Console",
   "pageDescription": "The management console contains VK Cloud user infrastructure management tools.",
   "shortDescription": "VK Cloud management console",
-  "metaTitle": "Management console",
+  "metaTitle": "Management Console",
   "metaDescription": "The management console contains VK Cloud user infrastructure management tools.",
-  "sectionTitle": "Management console",
+  "sectionTitle": "Management Console",
   "icon": "",
   "weight": 2,
   "additionalUuids": ["7153a6a3-19af-4a7d-906c-dd88aad569a8"],
