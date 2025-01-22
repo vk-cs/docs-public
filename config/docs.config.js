@@ -1,10 +1,15 @@
-import { ESuggestType, ESchemaType } from "@vk-tech/d11n-helpers";
 export const config = {
     main: {
         projectName: 'VK Cloud',
         copyright: '© %year% VK Cloud',
         analytics: '(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(46889073,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});',
         scriptManager: 'https://vkcs-scripts.mrgcdn.ru/master/help.js',
+        metaTags: [
+            {
+                name: 'yandex-verification',
+                content: '6c9a89c60e5f8e06',
+            },
+        ],
         locales: ['ru', 'en'],
     },
     breadcrumbs: {
@@ -16,7 +21,7 @@ export const config = {
     },
     layout: {
         main: {
-            schema: ESchemaType.LIST,
+            schema: 'LIST',
         }
     },
     header: {
@@ -101,7 +106,7 @@ export const config = {
         signOutUrl: 'https://msk.cloud.vk.com/app/signout',
     },
     gitOps: {
-        type: ESuggestType.GITHUB,
+        type: 'GITHUB',
         data: {
             repoUrl: 'https://github.com/vk-cs/docs-public',
             path: '',
