@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/computing/gpu/about"
+                    "link": "/ru/computing/gpu/concepts/about"
                 },
                 {
                     "link": "/ru/computing/iaas/faq"
