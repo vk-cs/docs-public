@@ -9921,7 +9921,7 @@
   ],
   [
     "/ru/computing/iaas/concepts/about",
-    "http://localhost:3000/docs/ru/computing/gpu/about"
+    "http://localhost:3000/docs/ru/computing/gpu/concepts/about"
   ],
   [
     "/ru/computing/iaas/concepts/about",
@@ -13929,6 +13929,18 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/flavors#gpu"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/flavors#gpu-sharing"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/flavors#gpu-sharing"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
@@ -14058,6 +14070,14 @@
   [
     "/ru/kubernetes/k8s/concepts/storage",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/network"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/flavors",
+    "http://localhost:3000/docs/ru/computing/gpu/about"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/flavors",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
     "/ru/kubernetes/k8s/concepts/scale",
@@ -14617,7 +14637,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
@@ -14657,7 +14677,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
@@ -14717,7 +14737,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -14796,6 +14816,30 @@
     "http://localhost:3000/docs/ru/kubernetes/k8s/reference/pods"
   ],
   [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#dobavit_gruppu_worker_uzlov"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator#redaktirovanie_koda_nastroyki_addona_pri_ustanovke"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator#ustanovka_addona"
+  ],
+  [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
@@ -14829,7 +14873,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -14893,7 +14937,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
@@ -14945,7 +14989,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -15009,7 +15053,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -15065,7 +15109,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#nastroit_metki_i_ogranicheniya"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -15670,6 +15714,50 @@
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
     "http://localhost:3000/docs/ru/networks/dns/publicdns#udalenie_dns_zony"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/flavors#gpu"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/flavors#gpu-sharing"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/flavors#gpu-sharing"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/computing/gpu/connect"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/create-cluster"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/connect/kubectl"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/manage-addons#edit"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-node-group#labels_taints"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#zapustit_ili_ostanovit_klaster"
+  ],
+  [
+    "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/sa-kubeconfig",

@@ -17185,7 +17185,7 @@
   },
   {
     "source": "/ru/ml/gpu/gpu-start/gpu-info",
-    "destination": "/ru/computing/gpu/about",
+    "destination": "/ru/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -19561,7 +19561,7 @@
   },
   {
     "source": "/ru/base/gpu/gpu-start/gpu-info",
-    "destination": "/ru/computing/gpu/about",
+    "destination": "/ru/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -21589,7 +21589,7 @@
   },
   {
     "source": "/ru/base/gpu/gpu-info",
-    "destination": "/ru/computing/gpu/about",
+    "destination": "/ru/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -26953,7 +26953,7 @@
   },
   {
     "source": "/ru/base/gpu/about",
-    "destination": "/ru/computing/gpu/about",
+    "destination": "/ru/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -28700,6 +28700,12 @@
   {
     "source": "/en/dbs/adb/quick-start/delete-adb",
     "destination": "/en/dbs/adb/service-management/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/gpu/about",
+    "destination": "/ru/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   }

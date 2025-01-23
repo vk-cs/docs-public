@@ -118,7 +118,8 @@
 /docs/ru/computing/iaas/troubleshooting/linux-vm-network
 /docs/ru/computing/iaas/faq
 /docs/ru/computing/gpu
-/docs/ru/computing/gpu/about
+/docs/ru/computing/gpu/concepts
+/docs/ru/computing/gpu/concepts/about
 /docs/ru/computing/gpu/connect
 /docs/ru/computing/cloud-desktops
 /docs/ru/computing/cloud-desktops/quick-start
@@ -368,6 +369,7 @@
 /docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry
 /docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit
 /docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration
+/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator
 /docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress
 /docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio
 /docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger
@@ -391,6 +393,7 @@
 /docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache
 /docs/ru/kubernetes/k8s/how-to-guides/velero-backup
 /docs/ru/kubernetes/k8s/how-to-guides/external-dns
+/docs/ru/kubernetes/k8s/how-to-guides/gpu-operator
 /docs/ru/kubernetes/k8s/how-to-guides/sa-kubeconfig
 /docs/ru/kubernetes/k8s/how-to-guides/case-certmanager-helm3
 /docs/ru/kubernetes/k8s/how-to-guides/update-monitoring-addon

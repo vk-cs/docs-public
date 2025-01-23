@@ -679,10 +679,40 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
+  "gpu_operator": {
+    "number": null,
+    "full": "GPU Operator",
+    "text": "GPU Operator"
+  },
+  "gpu": {
+    "number": null,
+    "full": "Шаблоны конфигурации с GPU",
+    "text": "Шаблоны конфигурации с GPU"
+  },
+  "gpu-features": {
+    "number": null,
+    "full": "Особенности создания кластера с GPU",
+    "text": "Особенности создания кластера с GPU"
+  },
+  "gpu-sharing": {
+    "number": null,
+    "full": "Технологии совместного использования GPU",
+    "text": "Технологии совместного использования GPU"
+  },
   "delete_cluster": {
     "number": null,
     "full": "Удалить кластер",
     "text": "Удалить кластер"
+  },
+  "labels_taints": {
+    "number": null,
+    "full": "Настроить метки и ограничения",
+    "text": "Настроить метки и ограничения"
+  },
+  "edit": {
+    "number": null,
+    "full": "Редактирование кода аддона",
+    "text": "Редактирование кода аддона"
   },
   "1_create_mlflow": {
     "number": null,
