@@ -105,7 +105,7 @@
 
       Если такой группы нет — [добавьте ее](../../../manage-node-group#dobavit_gruppu_worker_uzlov).
 
-   1. [Задайте](../../../manage-node-group#nastroit_metki_i_ogranicheniya) для этой группы узлов, если это еще не сделано:
+   1. [Задайте](../../../manage-node-group#labels_taints) для этой группы узлов, если это еще не сделано:
 
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.

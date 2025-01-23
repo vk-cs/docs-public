@@ -177,6 +177,60 @@ Fluent Bit в комбинации со [специальными фильтра
 </tabpanel>
 </tabs>
 
+### {heading(GPU Operator)[id=gpu_operator]}
+
+<tabs>
+<tablist>
+<tab>Описание</tab>
+<tab>Системные требования</tab>
+</tablist>
+<tabpanel>
+
+GPU Operator позволяет управлять [GPU на узлах кластера](../../flavors#gpu) для выполнения машинного обучения или обработки больших данных.
+
+Доступны следующие варианты использования GPU в кластере:
+
+- Один под использует один или несколько GPU.
+- Аддон распределяет один GPU между несколькими подами по стратегии [MIG](../../flavors#gpu-sharing).
+- Аддон распределяет один GPU между несколькими подами по стратегии [MPS](../../flavors#gpu-sharing).
+
+Состав аддона:
+
+- NVIDIA GPU Operator для управления GPU.
+- Служебные валидаторы для проверки CUDA (Compute Unified Device Architecture) после изменения конфигурации.
+- Средства самостоятельной диагностики оператора.
+- NVIDIA device plugin для автоматизации привязки и выделения ресурсов GPU.
+- Node Feature Discovery для определения и регистрации функций, доступных на узлах кластера. Компонент содержит следующие службы:
+  
+  - NFD-Master отвечает за подключение к серверу API Kubernetes и обновление объектов узлов.
+  - NFD-Worker подключается к службе NFD-Master для объявления аппаратных функций.
+  - NFD Garbage-Collector гарантирует, что все объекты Node Feature Discovery имеют соответствующие узлы, и удаляет устаревшие объекты для несуществующих узлов.
+
+Подробнее об аддоне и его компонентах: [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html), [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes), [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery).
+
+</tabpanel>
+<tabpanel>
+
+Требования отдельных компонентов аддона:
+
+- NVIDIA GPU Operator:
+  - **CPU**: 200–500m;
+  - **RAM**: 64–512Mi;
+- NFD-Master:
+  - **CPU**: 100–500m;
+  - **RAM**: 128Mi–4Gi;
+- NFD Garbage-Collector:
+  - **CPU**: 10–500m;
+  - **RAM**: 128Mi–1Gi;
+- NFD-Worker (на каждом узле GPU):
+  - **CPU**: 205–2000m;
+  - **RAM**: 192Mi–2Gi.
+
+Если аддон устанавливается на насколько worker-узлов, то NFD-Worker будет установлен на каждый из этих узлов и потребует указанное количество RAM на каждый узел. Остальные компоненты устанавливаются только на один узел.
+
+</tabpanel>
+</tabs>
+
 ### Ingress Controller (NGINX)
 
 <warn>
