@@ -1,0 +1,10 @@
+{
+    "title": "Использование GPU Operator",
+    "pageDescription": "Как создать кластер с GPU и разделить GPU на несколько подов по технологиям MPS и MIG.",
+    "shortDescription": "Как создать кластер с GPU и разделить GPU на несколько подов по технологиям MPS и MIG",
+    "metaTitle": "Использование GPU Operator",
+    "metaDescription": "Как создать кластер с GPU и разделить GPU на несколько подов по технологиям MPS и MIG.",
+    "sectionTitle": "Использование GPU Operator",
+    "icon": "",
+    "weight": 8
+}
