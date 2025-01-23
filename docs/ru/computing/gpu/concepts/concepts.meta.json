@@ -6,5 +6,6 @@
   "metaDescription": "Описание принципов функционирования и устройства Cloud GPU",
   "sectionTitle": "Концепции",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "b97eb302-010a-4c03-9f47-1ff1b85b186c"
 }

@@ -1,9 +1,10 @@
 {
-    "title": "Types of data storages",
-    "pageDescription": "Types of data storages supported by VK Cloud.",
-    "shortDescription": "Advantages and disadvantages of the types of data storages supported by VK Cloud",
-    "metaTitle": "Types of data storages",
-    "metaDescription": "Object storage, block storage, file storage",
-    "sectionTitle": "Types of data storages",
-    "weight": 2
+  "title": "Types of data storages",
+  "pageDescription": "Types of data storages supported by VK Cloud.",
+  "shortDescription": "Advantages and disadvantages of the types of data storages supported by VK Cloud",
+  "metaTitle": "Types of data storages",
+  "metaDescription": "Object storage, block storage, file storage",
+  "sectionTitle": "Types of data storages",
+  "weight": 2,
+  "uuid": "e149a28d-b146-4297-a506-5f3d6bc5e992"
 }

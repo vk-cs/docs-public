@@ -2470,7 +2470,7 @@
   "/ru/additionals/start/it-security/faq/faq-others": "/ru/intro/it-security/faq",
   "/ru/ml/gpu": "/ru/computing/gpu",
   "/ru/ml/gpu/gpu-start": "/ru/computing/gpu",
-  "/ru/ml/gpu/gpu-start/gpu-info": "/ru/computing/gpu/about",
+  "/ru/ml/gpu/gpu-start/gpu-info": "/ru/computing/gpu/concepts/about",
   "/ru/ml/gpu/gpu-start/gpu-create": "/ru/computing/gpu/connect",
   "/ru/manage/cloud-desktops": "/ru/computing/cloud-desktops",
   "/ru/manage/cloud-desktops/quick-start": "/ru/computing/cloud-desktops/quick-start",
@@ -2744,7 +2744,7 @@
   "/ru/intro/start/help-glossary": "/ru/intro/start/concepts/glossary",
   "/ru/intro/start/architecture": "/ru/intro/start/concepts/architecture",
   "/ru/base/gpu/gpu-start": "/ru/computing/gpu",
-  "/ru/base/gpu/gpu-start/gpu-info": "/ru/computing/gpu/about",
+  "/ru/base/gpu/gpu-start/gpu-info": "/ru/computing/gpu/concepts/about",
   "/ru/base/gpu/gpu-start/gpu-create": "/ru/computing/gpu/connect",
   "/ru/ml/mlplatform/mlflowdeploy": "/ru/ml/mlplatform/deploymlflow",
   "/ru/ml/mlplatform/mlflowdeploy/start": "/ru/ml/mlplatform/deploymlflow/quick-start",
@@ -2969,7 +2969,7 @@
   "/ru/intro/it-security/faq/faq-accounts": "/ru/intro/it-security/faq",
   "/ru/intro/it-security/faq/faq-net-security": "/ru/intro/it-security/faq",
   "/ru/intro/it-security/faq/faq-others": "/ru/intro/it-security/faq",
-  "/ru/base/gpu/gpu-info": "/ru/computing/gpu/about",
+  "/ru/base/gpu/gpu-info": "/ru/computing/gpu/concepts/about",
   "/ru/base/gpu/gpu-create": "/ru/computing/gpu/connect",
   "/ru/networks/cdn/instructions/working-cdn": "/ru/networks/cdn/service-management/manage-cdn",
   "/ru/dbs/dbaas/concepts/about-dbaas": "/ru/dbs/dbaas/concepts/about",
@@ -3645,7 +3645,7 @@
   "/ru/base/iaas/troubleshooting/linux-vm-network": "/ru/computing/iaas/troubleshooting/linux-vm-network",
   "/ru/base/iaas/faq": "/ru/computing/iaas/faq",
   "/ru/base/gpu": "/ru/computing/gpu",
-  "/ru/base/gpu/about": "/ru/computing/gpu/about",
+  "/ru/base/gpu/about": "/ru/computing/gpu/concepts/about",
   "/ru/base/gpu/connect": "/ru/computing/gpu/connect",
   "/ru/base/cloud-desktops": "/ru/computing/cloud-desktops",
   "/ru/base/cloud-desktops/quick-start": "/ru/computing/cloud-desktops/quick-start",
@@ -3891,5 +3891,6 @@
   "/ru/intro/start/legal/policy-vdi": "/ru/intro/start/legal/vk/policy-vdi",
   "/ru/intro/start/legal/policy-cloud-desktop": "/ru/intro/start/legal/vk/policy-cloud-desktop",
   "/ru/intro/start/legal/cloud-start": "/ru/intro/start/legal/vk/cloud-start",
-  "/en/dbs/adb/quick-start/delete-adb": "/en/dbs/adb/service-management/manage"
+  "/en/dbs/adb/quick-start/delete-adb": "/en/dbs/adb/service-management/manage",
+  "/ru/computing/gpu/about": "/ru/computing/gpu/concepts/about"
 }

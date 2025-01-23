@@ -499,6 +499,7 @@
   "5e2f7148-41a2-45fe-830f-b5a7acaa20ae": "/en/kubernetes/k8s/concepts/access-management",
   "c8059744-4842-443c-8b70-0f3ad8630d7d": "/en/kubernetes/k8s/connect",
   "ed3fa2bc-5a3e-4760-8492-2c33d13532b3": "/en/kubernetes/k8s/connect/kubectl",
+  "daa5c3bc-3c1f-4629-9e48-9aae243dda87": "/en/kubernetes/k8s/connect/lens",
   "a7d4320e-5761-4af2-9551-6d41244bb0db": "/en/kubernetes/k8s/connect/k8s-dashboard",
   "816df8dd-1bcb-424d-bf87-f451d47d4a1d": "/en/kubernetes/k8s/connect/docker-registry",
   "1db777eb-c3bf-4d9f-8ce3-2e94811b74a0": "/en/kubernetes/k8s/connect/addons-ui",

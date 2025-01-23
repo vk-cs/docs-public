@@ -1,10 +1,11 @@
 {
-    "title": "GPU Operator",
-    "pageDescription": "Здесь описана настройка и установка аддона GPU Operator.",
-    "shortDescription": "",
-    "metaTitle": " GPU Operator",
-    "metaDescription": "Здесь описана настройка и установка аддона GPU Operator.",
-    "sectionTitle": "GPU Operator",
-    "icon": "",
-    "weight": 6
+  "title": "GPU Operator",
+  "pageDescription": "Здесь описана настройка и установка аддона GPU Operator.",
+  "shortDescription": "",
+  "metaTitle": " GPU Operator",
+  "metaDescription": "Здесь описана настройка и установка аддона GPU Operator.",
+  "sectionTitle": "GPU Operator",
+  "icon": "",
+  "weight": 6,
+  "uuid": "c7c54de5-7b62-4713-8ccb-95a614da2b78"
 }

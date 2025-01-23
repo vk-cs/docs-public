@@ -705,6 +705,21 @@
     ]
   },
   {
+    "uuid": "e149a28d-b146-4297-a506-5f3d6bc5e992",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/computing/iaas/concepts/storage-types",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/storage-types/storage-types.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/storage-types/storage-types.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "94e74c03-95cb-435c-9bb4-f401fdca4fce",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -11100,13 +11115,28 @@
     ]
   },
   {
+    "uuid": "b97eb302-010a-4c03-9f47-1ff1b85b186c",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/computing/gpu/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/concepts/concepts.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "27066880-3429-4ed7-a142-a5cd51125b85",
     "lang": "ru",
     "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/ru/computing/gpu/about",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/about/about.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/about/about.md",
+    "level": 5,
+    "partialPath": "/ru/computing/gpu/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/concepts/about/about.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -14850,6 +14880,21 @@
     ]
   },
   {
+    "uuid": "c7c54de5-7b62-4713-8ccb-95a614da2b78",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator/install-advanced-gpu-operator.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator/install-advanced-gpu-operator.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4",
     "lang": "ru",
     "type": "ARTICLE",
@@ -15187,6 +15232,21 @@
     "partialPath": "/ru/kubernetes/k8s/how-to-guides/external-dns",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "27c61042-d47f-4ba8-b9f5-10c870014d7b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/how-to-guides/gpu-operator",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/gpu-operator/gpu-operator.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/gpu-operator/gpu-operator.md",
     "variables": {},
     "hidden": false,
     "version": null,
