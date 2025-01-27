@@ -118,20 +118,6 @@
 |Удаление пространства имен по идентификатору
 |`ACTION_NAMESPACE_DELETE`
 
-3+|**PTR Record**
-
-|POST<br>`/v2/reverse_dns/{ReverseDnsUuid}/ptr/`
-|Создание записи типа PTR для DNS-зоны по заданным параметрам
-|`ACTION_PTR_RECORD_CREATE`
-
-|PUT<br>`/v2/reverse_dns/{ReverseDnsUuid}/ptr/{PTRRecordUuid}`
-|Изменение параметров PTR-записи
-|`ACTION_PTR_RECORD_UPDATE`
-
-|DELETE<br>`/v2/reverse_dns/{ReverseDnsUuid}/ptr/{PTRRecordUuid}`
-|Удаление PTR-записи по ее идентификатору
-|`ACTION_PTR_RECORD_DELETE`
-
 3+|**Purge DNS**
 
 |POST<br>`/v2/purge_dns/`
@@ -145,18 +131,4 @@
 |DELETE<br>`/v2/purge_dns/{PurgeDnsUuid}`
 |Удаление PurgeDns
 |`ACTION_PURGE_DNS_DELETE`
-
-3+|**Reverse DNS**
-
-|POST<br>`/v2/reverse_dns/`
-|Создание ReverseDns
-|`ACTION_REVERSE_DNS_CREATE`
-
-|PUT<br>`/v2/reverse_dns/{ReverseDnsUuid}`
-|Изменение ReverseDns
-|`ACTION_REVERSE_DNS_UPDATE`
-
-|DELETE<br>`/v2/reverse_dns/{ReverseDnsUuid}`
-|Удаление ReverseDns
-|`ACTION_REVERSE_DNS_DELETE`
 |===
