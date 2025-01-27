@@ -881,6 +881,10 @@
   ],
   [
     "/en/computing/iaas/concepts/about",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture"
+  ],
+  [
+    "/en/computing/iaas/concepts/about",
     "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel"
   ],
   [
