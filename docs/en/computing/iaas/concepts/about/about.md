@@ -223,29 +223,21 @@ Unavailable disk types:
 
 ## Availability zone
 
-An availability zone is one or more data centers in which components of the cloud infrastructure can be placed. In VK Cloud, the availability zone corresponds to a separate Tier III data center.
+Availability zone is one or more data centers that can host cloud infrastructure components.
 
 Each zone is isolated from failures in other availability zones. Placing virtual resources in multiple zones provides fault tolerance and reduces the likelihood of data loss.
 
-VK Cloud platform resources are hosted in data centers:
+VK Cloud allocates the following virtual resources to [supported availability zones](/en/intro/start/concepts/architecture):
 
-- GZ1 – [Goznak](https://tech.goznak.ru/dc-goznak-moscow) data center. Address: Moscow, Prospekt Mira, 105, building 6.
-- MS1 (ko1) – DataLine NORD4 data center. Address: Moscow, Korovinskoe highway, 41.
-- QAZ — [QazCloud](https://qazcloud.kz) data center. Address: Republic of Kazakhstan, Akmola region, Kosshy, Republic str. 1.
+- Virtual machines.
+- Disks: hosted on network block storage and automatically replicated within their availability zone.
+- Load balancers.
 
-In the MS1 availability zone, the VK Cloud infrastructure is protected in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FL.
-
-VK Cloud distributes the following virtual resources across availability zones:
-
-- virtual machines;
-- disks: are placed in network block storage and are automatically replicated within their availability zone;
-- load balancers.
-
-Networks and routers are not tied to availability zones.
+There are resources for which there are no availability zones, such as Cloud Storage bucket or virtual network. For projects in the Moscow region, these resources are global (not tied to a zone).
 
 <info>
 
-A network created in the QAZ availability zone cannot be united with networks in other availability zones, since QAZ zone is located in the Kazakhstan [region](../../../../tools-for-using-services/account/concepts/regions). In this case, networks can be connected over [VPN](/en/networks/vnet/how-to-guides/vpn-tunnel).
+A network established in a QAZ availability zone cannot be interconnected by standard methods with networks from other availability zones because the QAZ zone is in a different [region](../../../../tools-for-using-services/account/concepts/regions). In this case, network connectivity can be provided by [VPN](/en/networks/vnet/how-to-guides/vpn-tunnel) means.
 
 </info>
 
