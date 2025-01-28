@@ -123,17 +123,63 @@
 
 Лимит на 4 GPU у одного инстанса связан с ограничением технологии KVM, которая не позволяет подключить к одной виртуальной машине более 4 видеокарт.
 
-### Контейнеры (Kubernetes)
+### {heading(Контейнеры (Kubernetes))[id=k8s]}
 
 Для сервиса Контейнеры (Kubernetes) квоты не предусмотрены. Использование этого сервиса ограничивается только техническими лимитами.
 
-| Параметр                                         | Лимит              | Жесткий |
-|--------------------------------------------------|--------------------|---------|
-| Количество [узлов](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) в группе узлов          | 100 шт.            | ![](/ru/assets/check.svg "inline") |
-| Количество групп узлов в кластере                | 50 шт.             | ![](/ru/assets/no.svg "inline") |
-| Количество подов у узла                  | 110 шт.            | ![](/ru/assets/no.svg "inline") |
-| Количество сущностей (ReplicaSet, StatefulSet, пространств имен и т.д.) у кластера | 10000 шт.          | ![](/ru/assets/no.svg "inline") |
-| Длина имени кластера k8s и группы узлов | 24 символа         | ![](/ru/assets/check.svg "inline") |
+[cols="3,1,1", options="header"]
+|===
+|Параметр
+|Лимит
+|Жесткий
+|Длина имени кластера k8s и группы узлов
+|24 символа
+|![](/ru/assets/check.svg "inline")
+
+|Количество [узлов](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) в группе
+|500 шт.
+|![](/ru/assets/check.svg "inline")
+
+|Количество master-узлов в кластере
+|1, 3 или 5 шт.
+|![](/ru/assets/check.svg "inline")
+
+|Количество узлов в одной [зоне доступности](/ru/intro/start/concepts/architecture#az)
+|200 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Количество групп узлов в кластере
+|50 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Количество [подов](/ru/kubernetes/k8s/reference/pods) у кластера
+|50000 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Количество подов у узла
+|110 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Количество сервисов у кластера
+|5000 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Количество пространств имен у кластера
+|5000 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Количество объектов у кластера
+|100000 шт.
+|![](/ru/assets/no.svg "inline")
+
+|Объем базы [etcd](https://etcd.io/)
+|6 ГБ
+|![](/ru/assets/no.svg "inline")
+
+|Объем ресурсов одного типа
+|800 МБ
+|![](/ru/assets/no.svg "inline")
+|===
 
 Нежесткие лимиты можно превысить без обращения в техническую поддержку. Рекомендации по этим и другим параметрам в [официальной документации Kubernetes](https://kubernetes.io/docs/setup/best-practices/cluster-large/). Лимит на количество узлов в группе узлов не обусловлен требованиями Kubernetes, ограничение вводится на уровне VK Cloud.
 

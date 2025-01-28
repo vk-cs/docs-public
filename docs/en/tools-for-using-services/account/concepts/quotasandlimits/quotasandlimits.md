@@ -126,13 +126,61 @@ The limit on 4 GPUs per instance is related to the limitation of KVM technology,
 
 There are no quotas for the Cloud Containers service. The use of this service is limited only by technical limits.
 
-| Parameter                                         | Limit              | Hard |
-|--------------------------------------------------|--------------------|---------|
-| Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) in the node group | 100 pcs.            | ![](/en/assets/check.svg "inline") |
-| Number of node groups in the cluster                | 50 pcs.             | ![](/en/assets/no.svg "inline") |
-| Number of pods at the node                  | 110 pcs.            | ![](/en/assets/no.svg "inline") |
-| The number of entities (ReplicaSet, StatefulSet, namespaces, etc.) in the cluster | 10000 pcs.          | ![](/en/assets/no.svg "inline") |
-| Length of the k8s cluster name and node group | 24 characters         | ![](/en/assets/check.svg "inline") |
+[cols="3,1,1", options="header"]
+|===
+|Parameter
+|Limit
+|Hard
+
+|Length of a k8s cluster and node group name
+|24 characters
+|![](/en/assets/check.svg "inline")
+
+|Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) in a node group
+|500 pcs.
+|![](/en/assets/check.svg "inline")
+
+|Number of master nodes in a cluster
+|1, 3, 5 pcs.
+|![](/en/assets/check.svg "inline")
+
+|Number of nodes in an [availability zone](/en/intro/start/concepts/architecture#az)
+|200 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of node groups in a cluster
+|50 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of [pods](/en/kubernetes/k8s/reference/pods) in a cluster
+|50000 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of pods in a node
+|110 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of services in a cluster
+|5000 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of namespaces in a cluster
+|5000 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of objects in a cluster
+|100000 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Volume of an [etcd](https://etcd.io/) base
+|6 GB
+|![](/en/assets/no.svg "inline")
+
+|Volume of one type resources
+|800 MB
+|![](/en/assets/no.svg "inline")
+|===
+
 
 Non-rigid limits can be exceeded without contacting technical support. Recommendations for these and other parameters in [official Kubernetes documentation](https://kubernetes.io/docs/setup/best-practices/cluster-large/). The limit on the number of nodes in a node group is not due to the requirements of Kubernetes, the limit is introduced at the VK Cloud level.
 
