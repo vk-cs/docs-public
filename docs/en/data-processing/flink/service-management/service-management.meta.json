@@ -1,0 +1,10 @@
+{
+  "title": "Service management",
+  "pageDescription": "How to create an instance of the Cloud Flink service in the VK Cloud project, how to manage Cloud Flink components in VK Cloud.",
+  "shortDescription": "Creating an instance of the service and managing its components",
+  "metaTitle": "Service management",
+  "metaDescription": "Cloud Flink in VK Cloud: creating an instance of the service, managing the instance and its components",
+  "sectionTitle": "Service management",
+  "icon": "",
+  "weight": 3
+}

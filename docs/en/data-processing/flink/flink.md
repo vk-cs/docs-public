@@ -1,0 +1,1 @@
+Cloud Flink based on Apache Flink and Kubernetes will help organize stream processing and transfer of any volumes of data from sources to target systems. The service allows you to transfer and process data without loss and with a high level of consistency.
