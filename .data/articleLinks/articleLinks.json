@@ -7517,6 +7517,14 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/en/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/en/kubernetes/k8s/reference/pods"
+  ],
+  [
+    "/en/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/en/additionals/start/it-security/platform-security"
   ],
   [
@@ -19250,6 +19258,14 @@
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/reference/pods"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",

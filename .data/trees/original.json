@@ -9825,6 +9825,21 @@
     ]
   },
   {
+    "uuid": "261b49d2-e547-4d54-ad63-7fd5da9fcf10",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/intro/start/legal/digital-cloud/potential-partners",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/digital-cloud/potential-partners/potential-partners.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/digital-cloud/potential-partners/potential-partners.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "f11afe21-b7c3-42be-9bd1-ce8227332c7d",
     "lang": "ru",
     "type": "INTERMEDIATE",

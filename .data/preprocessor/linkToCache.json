@@ -769,6 +769,11 @@
     "full": "Лимиты без квот",
     "text": "Лимиты без квот"
   },
+  "k8s": {
+    "number": null,
+    "full": "Контейнеры (Kubernetes)",
+    "text": "Контейнеры (Kubernetes)"
+  },
   "xaas_vendor_roles": {
     "number": null,
     "full": "Роли пользователей",

@@ -32,6 +32,7 @@
 /docs/ru/intro/start/legal/digital-cloud/research-agreement
 /docs/ru/intro/start/legal/digital-cloud/policy-vdi
 /docs/ru/intro/start/legal/digital-cloud/policy-cloud-desktop
+/docs/ru/intro/start/legal/digital-cloud/potential-partners
 /docs/ru/intro/start/legal/vk
 /docs/ru/intro/start/legal/vk/legal-terms
 /docs/ru/intro/start/legal/vk/policy-hotbox
