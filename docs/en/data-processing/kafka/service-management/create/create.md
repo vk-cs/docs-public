@@ -14,7 +14,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
-1. Click the **Добавить инстанс** or **Создать экземпляр** button.
+1. Click the **Add an instance** or **Create an instance** button.
 1. At the “Configuration” step:
 
    1. Select the type of service **Kafka**.
@@ -47,7 +47,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
    1. Select [availability zone](/en/intro/start/architecture#az) where the Cloud Containers cluster node will be located.
    1. Click the **Next step** button.
 
-1. At the “Учетные данные” step:
+1. At the “Credentials” step:
 
    1. Set the administrator login to access Kafka.
    1. Create or generate an administrator password.
