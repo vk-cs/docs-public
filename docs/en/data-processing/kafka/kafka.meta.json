@@ -6,7 +6,7 @@
   "metaDescription": "A service for creating and managing Apache Kafka clusters in the VK Cloud infrastructure",
   "sectionTitle": "Cloud Kafka",
   "icon": "",
-  "weight": 1,
+  "weight": 10,
   "isBeta": true,
   "uuid": "5a98aa95-afb4-4a0e-bcef-8545cf0d9e5b"
 }
