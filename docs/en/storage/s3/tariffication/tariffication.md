@@ -22,4 +22,4 @@ For the Backup storage class, you pay only for the volume of stored data (per GB
 ## What is not charged
 
 - Incoming traffic.
-- [API](../concepts/about-s3-api/) usage.
+- [API](../concepts/s3-api/) usage.
