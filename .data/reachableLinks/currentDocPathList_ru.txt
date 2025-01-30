@@ -435,6 +435,14 @@
 /docs/ru/data-processing/cloud-streams/how-to-guides
 /docs/ru/data-processing/cloud-streams/how-to-guides/connect-kafka
 /docs/ru/data-processing/cloud-streams/how-to-guides/connect-nifi
+/docs/ru/data-processing/flink
+/docs/ru/data-processing/flink/concepts
+/docs/ru/data-processing/flink/concepts/about
+/docs/ru/data-processing/flink/concepts/architecture
+/docs/ru/data-processing/flink/service-management
+/docs/ru/data-processing/flink/service-management/create
+/docs/ru/data-processing/flink/service-management/manage
+/docs/ru/data-processing/flink/tariffication
 /docs/ru/data-processing/kafka
 /docs/ru/data-processing/kafka/quick-start
 /docs/ru/data-processing/kafka/concepts

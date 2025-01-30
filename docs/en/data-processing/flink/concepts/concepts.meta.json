@@ -6,5 +6,6 @@
   "metaDescription": "How the Flink service works in VK Cloud: functional features and internal architecture",
   "sectionTitle": "Concepts",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "eceda4ea-b022-4604-9d93-8d49db2f827d"
 }

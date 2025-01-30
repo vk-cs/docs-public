@@ -1,10 +1,11 @@
 {
-    "title": "Working with service components",
-    "pageDescription": "Operations for single-node or cluster installation via VK Cloud management console.",
-    "shortDescription": "How to manage service instance components in a project",
-    "metaTitle": "Working with service components",
-    "metaDescription": "Cloud Flink: managing service instance components in a project",
-    "sectionTitle": "Working with service components",
-    "icon": "",
-    "weight": 2
+  "title": "Working with service components",
+  "pageDescription": "Operations for single-node or cluster installation via VK Cloud management console.",
+  "shortDescription": "How to manage service instance components in a project",
+  "metaTitle": "Working with service components",
+  "metaDescription": "Cloud Flink: managing service instance components in a project",
+  "sectionTitle": "Working with service components",
+  "icon": "",
+  "weight": 2,
+  "uuid": "6ba1f1ff-92a8-444b-aad7-3d54a394141a"
 }

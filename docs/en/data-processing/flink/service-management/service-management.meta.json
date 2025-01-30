@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Flink in VK Cloud: creating an instance of the service, managing the instance and its components",
   "sectionTitle": "Service management",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "5f431995-2574-4cc4-9668-0b88218921e8"
 }

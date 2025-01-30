@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Flink в VK Cloud: создание экземпляра сервиса, управление экземпляром и его компонентами",
   "sectionTitle": "Управление сервисом",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "8b49ab8a-4e31-42c5-9081-72bd3ca23cc6"
 }

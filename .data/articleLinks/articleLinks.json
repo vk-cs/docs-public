@@ -6092,6 +6092,70 @@
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects/"
   ],
   [
+    "/en/data-processing/bigdata/quick-start",
+    "http://localhost:3000/docs/en/data-processing/bigdata/tariffication"
+  ],
+  [
+    "/en/data-processing/bigdata/quick-start",
+    "http://localhost:3000/docs/en/data-processing/bigdata/service-management/delete"
+  ],
+  [
+    "/en/data-processing/bigdata/quick-start",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project"
+  ],
+  [
+    "/en/data-processing/bigdata/service-management/add-component",
+    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+  ],
+  [
+    "/en/data-processing/bigdata/service-management/scale/change-replica-factor",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/data-processing/bigdata/service-management/scale/change-replica-factor",
+    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+  ],
+  [
+    "/en/data-processing/bigdata/service-management/scale/config-jmemory-heap",
+    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+  ],
+  [
+    "/en/data-processing/bigdata/connect",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/data-processing/bigdata/connect",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/data-processing/bigdata/connect",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/router"
+  ],
+  [
+    "/en/data-processing/bigdata/connect",
+    "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel"
+  ],
+  [
+    "/en/data-processing/bigdata/connect",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/traffic-limiting"
+  ],
+  [
+    "/en/data-processing/bigdata/tariffication",
+    "http://localhost:3000/docs/en/intro/billing"
+  ],
+  [
+    "/en/data-processing/bigdata/tariffication",
+    "http://localhost:3000/docs/en/data-processing/bigdata/concepts/licensing"
+  ],
+  [
+    "/en/data-processing/bigdata/tariffication",
+    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+  ],
+  [
+    "/en/data-processing/bigdata/tariffication",
+    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+  ],
+  [
     "/en/data-processing/kafka/quick-start",
     "http://localhost:3000/docs/en/data-processing/kafka/quick-start#delete_unused_resources"
   ],
@@ -6164,68 +6228,68 @@
     "http://localhost:3000/docs/en/networks/vnet/tariffs"
   ],
   [
-    "/en/data-processing/bigdata/quick-start",
-    "http://localhost:3000/docs/en/data-processing/bigdata/tariffication"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/data-processing/flink/service-management/create#single"
   ],
   [
-    "/en/data-processing/bigdata/quick-start",
-    "http://localhost:3000/docs/en/data-processing/bigdata/service-management/delete"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/data-processing/flink/service-management/create#cluster"
   ],
   [
-    "/en/data-processing/bigdata/quick-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/architecture#cluster_topologies"
   ],
   [
-    "/en/data-processing/bigdata/service-management/add-component",
-    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
   ],
   [
-    "/en/data-processing/bigdata/service-management/scale/change-replica-factor",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
-    "/en/data-processing/bigdata/service-management/scale/change-replica-factor",
-    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
   ],
   [
-    "/en/data-processing/bigdata/service-management/scale/config-jmemory-heap",
-    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/data-processing/flink/service-management/manage#change_password"
   ],
   [
-    "/en/data-processing/bigdata/connect",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/architecture#cluster_topologies"
   ],
   [
-    "/en/data-processing/bigdata/connect",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
   ],
   [
-    "/en/data-processing/bigdata/connect",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/router"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
-    "/en/data-processing/bigdata/connect",
-    "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
   ],
   [
-    "/en/data-processing/bigdata/connect",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/traffic-limiting"
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#disks"
   ],
   [
-    "/en/data-processing/bigdata/tariffication",
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/en/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/en/data-processing/flink/service-management/manage#change_password"
+  ],
+  [
+    "/en/data-processing/flink/tariffication",
     "http://localhost:3000/docs/en/intro/billing"
   ],
   [
-    "/en/data-processing/bigdata/tariffication",
-    "http://localhost:3000/docs/en/data-processing/bigdata/concepts/licensing"
-  ],
-  [
-    "/en/data-processing/bigdata/tariffication",
+    "/en/data-processing/flink/tariffication",
     "http://localhost:3000/docs/en/networks/vnet/tariffs"
-  ],
-  [
-    "/en/data-processing/bigdata/tariffication",
-    "http://localhost:3000/docs/en/data-processing/bigdata/connect"
   ],
   [
     "/en/ml/mlplatform/concepts/mlflow-modes",
@@ -16116,6 +16180,66 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects/"
   ],
   [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/data-processing/flink/service-management/create#single"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/data-processing/flink/service-management/create#cluster"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/intro/start/architecture#az"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/data-processing/flink/service-management/manage#change_password"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/intro/start/architecture#az"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#disk_types"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/data-processing/flink/service-management/create",
+    "http://localhost:3000/docs/ru/data-processing/flink/service-management/manage#change_password"
+  ],
+  [
+    "/ru/data-processing/flink/tariffication",
+    "http://localhost:3000/docs/ru/intro/billing"
+  ],
+  [
+    "/ru/data-processing/flink/tariffication",
+    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+  ],
+  [
     "/ru/data-processing/kafka/quick-start",
     "http://localhost:3000/docs/ru/data-processing/kafka/quick-start#udalite_neispolzuemye_resursy"
   ],
@@ -19557,7 +19681,7 @@
   ],
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_packer",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
   ],
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_packer",

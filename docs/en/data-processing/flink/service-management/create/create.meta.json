@@ -1,10 +1,11 @@
 {
-    "title": "Creating service instance",
-    "pageDescription": "How to create an instance of the Cloud Flink in the required configuration in the VK Cloud project.",
-    "shortDescription": "How to create an instance of Cloud Flink in the configuration you need",
-    "metaTitle": "Creating an instance of the service",
-    "metaDescription": "How to create an instance of the service in the required configuration.",
-    "sectionTitle": "Creating an instance of the service",
-    "icon": "",
-    "weight": 1
+  "title": "Creating service instance",
+  "pageDescription": "How to create an instance of the Cloud Flink in the required configuration in the VK Cloud project.",
+  "shortDescription": "How to create an instance of Cloud Flink in the configuration you need",
+  "metaTitle": "Creating an instance of the service",
+  "metaDescription": "How to create an instance of the service in the required configuration.",
+  "sectionTitle": "Creating an instance of the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "05c26a5d-60a5-404e-bec0-004a9b0f0ce5"
 }
