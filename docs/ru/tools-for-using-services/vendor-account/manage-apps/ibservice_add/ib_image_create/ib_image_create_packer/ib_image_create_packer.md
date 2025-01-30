@@ -9,7 +9,7 @@
    1. Выполните команду `packer`, чтобы убедиться в успешной установке Packer.
 
    Подробная инструкция приведена в [официальной документации Packer](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli).
-1. Установите OpenStack CLI (подробнее — в разделе [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli)).
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) OpenStack CLI и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Скачайте базовый образ ОС, поддерживающий работу с облачными платформами.
 
    ОС должна удовлетворять {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements/#ib_image_requirements)[text=%text]}.
@@ -26,20 +26,20 @@
    1. Установите утилиту [qemu-img](https://www.qemu.org/docs/master/tools/qemu-img.html) на локальный компьютер.
 
       {caption(Пример установки qemu-img для образов на базе RHEL (CentOS, AlmaLinux, Rocky Linux))[align=left;position=above]}
-      ```bash
-      $ sudo yum install qemu-img
+      ```console
+      sudo yum install qemu-img
       ```
       {/caption}
 
       {caption(Пример установки qemu-img для образов на базе Debian (Ubuntu))[align=left;position=above]}
-      ```bash
-      $ sudo apt install qemu-utils
+      ```console
+      sudo apt install qemu-utils
       ```
       {/caption}
    1. Выполните команду:
 
-      ```bash
-      $ qemu-img convert -f qcow2 -O raw <INITIAL_IMAGE_NAME> <IMAGE_NAME>
+      ```console
+      qemu-img convert -f qcow2 -O raw <INITIAL_IMAGE_NAME> <IMAGE_NAME>
       ```
 
       Здесь:
@@ -49,7 +49,7 @@
 
 1. Загрузите базовый образ в формате `RAW` в облачную платформу:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <IMAGE_PATH> <IMAGE_NAME>
    ```
 
@@ -65,9 +65,9 @@
 
    1. В переменные окружения запишите ID сети и ID базового образа:
 
-      ```bash
-      $ export NETWORK_ID=<NETWORK_ID>
-      $ export SOURCE_IMAGE=<IMAGE_ID>
+      ```console
+      export NETWORK_ID=<NETWORK_ID>
+      export SOURCE_IMAGE=<IMAGE_ID>
       ```
 
       Здесь:
@@ -79,7 +79,7 @@
    1. В файле опишите конфигурацию ВМ, на базе которой будет создан образ сервиса (синтаксис — на [официальном сайте Packer](https://developer.hashicorp.com/packer/docs/templates/hcl_templates)).
 
       {caption(Пример конфигурации ВМ с ОС Alt Linux P9 и развертыванием image-based приложения из плейбука Ansible)[align=left;position=above]}
-      ```bash
+      ```console
       # ID сети
       variable "network_id" {
         type = string
@@ -155,7 +155,7 @@
 
          Доступные группы безопасности посмотрите с помощью команды:
 
-         ```bash
+         ```console
          # openstack security group list
          ```
 
@@ -163,8 +163,8 @@
 
    1. Проверьте созданную конфигурацию:
 
-      ```bash
-      $ packer validate <FILE_NAME>.pkr.hcl
+      ```console
+      packer validate <FILE_NAME>.pkr.hcl
       ```
 
       Здесь `<FILE_NAME>.pkr.hcl` — имя packer-файла.
@@ -173,15 +173,15 @@
 
    1. Запустите создание образа сервиса:
 
-      ```bash
-      $ packer build <PACKER_FILE>
+      ```console
+      packer build <PACKER_FILE>
       ```
 
       Здесь `<PACKER_FILE>` — имя packer-файла.
    1. Дождитесь появления сообщения об успешном создании. В сообщении будет указан ID образа сервиса.
 
       {caption(Пример сообщения об успешном создании образа сервиса)[align=left;position=above]}
-      ```bash
+      ```console
       ==> Builds finished. The artifacts of successful builds are:
       --> openstack.altlinux: An image was created: c6320138-035f-40d8-XXXX-e814edb2ce5f
       ```
