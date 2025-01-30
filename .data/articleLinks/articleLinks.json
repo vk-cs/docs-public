@@ -3265,7 +3265,7 @@
   ],
   [
     "/en/storage/s3/tariffication",
-    "http://localhost:3000/docs/en/storage/s3/concepts/about-s3-api"
+    "http://localhost:3000/docs/en/storage/s3/concepts/s3-api"
   ],
   [
     "/en/storage/backups/concepts/about",
@@ -12352,19 +12352,19 @@
     "http://localhost:3000/docs/ru/storage/backups"
   ],
   [
-    "/ru/storage/s3/concepts/about-s3-api",
+    "/ru/storage/s3/concepts/s3-api",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/"
   ],
   [
-    "/ru/storage/s3/concepts/about-s3-api",
+    "/ru/storage/s3/concepts/s3-api",
     "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/concepts/about-s3-api",
+    "/ru/storage/s3/concepts/s3-api",
     "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/concepts/about-s3-api",
+    "/ru/storage/s3/concepts/s3-api",
     "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
@@ -12965,7 +12965,7 @@
   ],
   [
     "/ru/storage/s3/tariffication",
-    "http://localhost:3000/docs/ru/storage/s3/concepts/about-s3-api"
+    "http://localhost:3000/docs/ru/storage/s3/concepts/s3-api"
   ],
   [
     "/ru/storage/backups/concepts/about",

@@ -169,7 +169,7 @@
 /docs/en/storage/s3/quick-start
 /docs/en/storage/s3/concepts
 /docs/en/storage/s3/concepts/about
-/docs/en/storage/s3/concepts/about-s3-api
+/docs/en/storage/s3/concepts/s3-api
 /docs/en/storage/s3/connect
 /docs/en/storage/s3/connect/s3-cli
 /docs/en/storage/s3/connect/s3-file-managers

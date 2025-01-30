@@ -3547,7 +3547,7 @@
   },
   {
     "source": "/ru/base/s3/dev/s3-rest-api/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/about-s3-api",
+    "destination": "/ru/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -5281,7 +5281,7 @@
   },
   {
     "source": "/en/base/s3/s3-rest-api/about-s3-api",
-    "destination": "/en/storage/s3/concepts/about-s3-api",
+    "destination": "/en/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -5425,7 +5425,7 @@
   },
   {
     "source": "/ru/additionals/api/s3-rest-api/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/about-s3-api",
+    "destination": "/ru/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -9229,7 +9229,7 @@
   },
   {
     "source": "/en/base/s3/about-s3-api",
-    "destination": "/en/storage/s3/concepts/about-s3-api",
+    "destination": "/en/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -9409,7 +9409,7 @@
   },
   {
     "source": "/ru/base/s3/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/about-s3-api",
+    "destination": "/ru/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -14731,7 +14731,7 @@
   },
   {
     "source": "/en/base/s3/concepts/about-s3-api",
-    "destination": "/en/storage/s3/concepts/about-s3-api",
+    "destination": "/en/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -17365,7 +17365,7 @@
   },
   {
     "source": "/ru/base/s3/concepts/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/about-s3-api",
+    "destination": "/ru/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   },
@@ -28706,6 +28706,18 @@
   {
     "source": "/ru/computing/gpu/about",
     "destination": "/ru/computing/gpu/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/concepts/about-s3-api",
+    "destination": "/en/storage/s3/concepts/s3-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/concepts/about-s3-api",
+    "destination": "/ru/storage/s3/concepts/s3-api",
     "permanent": false,
     "locale": false
   }
