@@ -223,7 +223,7 @@
 /docs/ru/storage/s3/quick-start
 /docs/ru/storage/s3/concepts
 /docs/ru/storage/s3/concepts/about
-/docs/ru/storage/s3/concepts/about-s3-api
+/docs/ru/storage/s3/concepts/s3-api
 /docs/ru/storage/s3/connect
 /docs/ru/storage/s3/connect/s3-cli
 /docs/ru/storage/s3/connect/s3-file-managers
