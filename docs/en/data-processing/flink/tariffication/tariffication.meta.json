@@ -1,10 +1,11 @@
 {
-    "title": "Tariffication",
-    "pageDescription": "Features of billing services and applications in the Cloud Flink, cost calculation.",
-    "shortDescription": "Features of service billing and cost calculation",
-    "metaTitle": "Tariffication",
-    "metaDescription": "Cloud Flink in VK Cloud: features of service billing, cost calculation",
-    "sectionTitle": "Tariffication",
-    "icon": "",
-    "weight": 4
+  "title": "Tariffication",
+  "pageDescription": "Features of billing services and applications in the Cloud Flink, cost calculation.",
+  "shortDescription": "Features of service billing and cost calculation",
+  "metaTitle": "Tariffication",
+  "metaDescription": "Cloud Flink in VK Cloud: features of service billing, cost calculation",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "898e6b74-1044-4ffe-bb2e-67993640e5e3"
 }

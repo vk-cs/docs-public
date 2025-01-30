@@ -1,10 +1,11 @@
 {
-    "title": "Service architecture",
-    "pageDescription": "Architecture of the Cloud Flink service in VK Cloud.",
-    "shortDescription": "How the Cloud Flink service works",
-    "metaTitle": "Service architecture",
-    "metaDescription": "Architecture of Cloud Flink service in VK Cloud",
-    "sectionTitle": "Service architecture",
-    "icon": "",
-    "weight": 2
+  "title": "Service architecture",
+  "pageDescription": "Architecture of the Cloud Flink service in VK Cloud.",
+  "shortDescription": "How the Cloud Flink service works",
+  "metaTitle": "Service architecture",
+  "metaDescription": "Architecture of Cloud Flink service in VK Cloud",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7c4246e3-b54c-4fb2-b553-4d787fc1b1a5"
 }

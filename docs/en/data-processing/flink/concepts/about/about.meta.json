@@ -1,10 +1,11 @@
 {
-    "title": "About service",
-    "pageDescription": "Features and usage of Cloud Flink in VK Cloud.",
-    "shortDescription": "Features and usage of Cloud Flink",
-    "metaTitle": "About service",
-    "metaDescription": "Features and usage of Cloud Flink",
-    "sectionTitle": "About service",
-    "icon": "",
-    "weight": 1
+  "title": "About service",
+  "pageDescription": "Features and usage of Cloud Flink in VK Cloud.",
+  "shortDescription": "Features and usage of Cloud Flink",
+  "metaTitle": "About service",
+  "metaDescription": "Features and usage of Cloud Flink",
+  "sectionTitle": "About service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "c1b6b8a2-b1a1-49d1-9b78-d625b44e3682"
 }

@@ -5460,231 +5460,6 @@
     ]
   },
   {
-    "uuid": "5a98aa95-afb4-4a0e-bcef-8545cf0d9e5b",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 3,
-    "partialPath": "/en/data-processing/kafka",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/kafka.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/kafka.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "978242aa-5ce2-49d9-b1fd-9dfac7d406b7",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/en/data-processing/kafka/quick-start",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/quick-start/quick-start.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/quick-start/quick-start.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "66569cc6-fe23-4bd8-94e6-cc15efda7539",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/en/data-processing/kafka/concepts",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/concepts.meta.json",
-    "mdFullPath": null,
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "1d4b25a0-8344-42e2-9d40-50b52363da87",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/kafka/concepts/about",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/about/about.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/about/about.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f06f9912-b825-4f1b-8bb1-0021d6f75c1f",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/kafka/concepts/architecture",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/architecture/architecture.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/architecture/architecture.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "953a586d-70c8-4569-acab-f2b4159cf2c4",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/en/data-processing/kafka/service-management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/service-management.meta.json",
-    "mdFullPath": null,
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "a24b57ac-a14c-45be-a1bd-3fcc8ae11bba",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/kafka/service-management/create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/create/create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/create/create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3bca8573-7e40-4113-a7a3-3309b1c22ea2",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/kafka/service-management/management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/management/management.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/management/management.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "087cd0f8-7d97-4264-8f21-629f2a99db89",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/en/data-processing/kafka/tariffication",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/tariffication/tariffication.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/tariffication/tariffication.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "72405ea3-c208-49eb-a10b-c7873e46e997",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 3,
-    "partialPath": "/en/data-processing/console",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/console.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/console.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d6eff2ef-a454-4f4c-957c-f078576269cd",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/en/data-processing/console/concepts",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/concepts.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/concepts.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b17364d8-3143-4fa1-9b98-c8c377e55d03",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/console/concepts/about",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/about/about.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/about/about.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "0c9e0938-c558-4b65-abe5-96a42431c83a",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/en/data-processing/console/service-management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/service-management.meta.json",
-    "mdFullPath": null,
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "6dff963b-ef6d-4689-bb2d-b8e22420520f",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/console/service-management/create-group",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/create-group/create-group.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/create-group/create-group.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3776b604-2797-47d9-858d-bb703be06d24",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/data-processing/console/service-management/groups-manage",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/groups-manage/groups-manage.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/groups-manage/groups-manage.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "d93b16d5-c976-4fc0-99ac-192ce784b348",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -5902,6 +5677,351 @@
     "partialPath": "/en/data-processing/bigdata/tariffication",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/bigdata/tariffication/tariffication.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/bigdata/tariffication/tariffication.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5a98aa95-afb4-4a0e-bcef-8545cf0d9e5b",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/en/data-processing/kafka",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/kafka.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/kafka.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "978242aa-5ce2-49d9-b1fd-9dfac7d406b7",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/kafka/quick-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/quick-start/quick-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/quick-start/quick-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "66569cc6-fe23-4bd8-94e6-cc15efda7539",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/data-processing/kafka/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/concepts.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "1d4b25a0-8344-42e2-9d40-50b52363da87",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/kafka/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f06f9912-b825-4f1b-8bb1-0021d6f75c1f",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/kafka/concepts/architecture",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/architecture/architecture.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/concepts/architecture/architecture.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "953a586d-70c8-4569-acab-f2b4159cf2c4",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/data-processing/kafka/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/service-management.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a24b57ac-a14c-45be-a1bd-3fcc8ae11bba",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/kafka/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3bca8573-7e40-4113-a7a3-3309b1c22ea2",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/kafka/service-management/management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/management/management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/service-management/management/management.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "087cd0f8-7d97-4264-8f21-629f2a99db89",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/kafka/tariffication",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/tariffication/tariffication.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/kafka/tariffication/tariffication.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "64bb4311-d21f-40e8-a8bf-1d4fce4bfe70",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/en/data-processing/flink",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/flink.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/flink.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "eceda4ea-b022-4604-9d93-8d49db2f827d",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/data-processing/flink/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/concepts/concepts.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c1b6b8a2-b1a1-49d1-9b78-d625b44e3682",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/flink/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7c4246e3-b54c-4fb2-b553-4d787fc1b1a5",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/flink/concepts/architecture",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/concepts/architecture/architecture.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/concepts/architecture/architecture.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5f431995-2574-4cc4-9668-0b88218921e8",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/data-processing/flink/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/service-management.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "05c26a5d-60a5-404e-bec0-004a9b0f0ce5",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/flink/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6ba1f1ff-92a8-444b-aad7-3d54a394141a",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/flink/service-management/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/manage/manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "898e6b74-1044-4ffe-bb2e-67993640e5e3",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/flink/tariffication",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/tariffication/tariffication.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/tariffication/tariffication.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "72405ea3-c208-49eb-a10b-c7873e46e997",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/en/data-processing/console",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/console.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/console.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d6eff2ef-a454-4f4c-957c-f078576269cd",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/data-processing/console/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/concepts.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b17364d8-3143-4fa1-9b98-c8c377e55d03",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/console/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0c9e0938-c558-4b65-abe5-96a42431c83a",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/data-processing/console/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/service-management.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6dff963b-ef6d-4689-bb2d-b8e22420520f",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/console/service-management/create-group",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/create-group/create-group.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/create-group/create-group.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3776b604-2797-47d9-858d-bb703be06d24",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/data-processing/console/service-management/groups-manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/groups-manage/groups-manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/console/service-management/groups-manage/groups-manage.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -15862,6 +15982,126 @@
     "partialPath": "/ru/data-processing/cloud-streams/how-to-guides/connect-nifi",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/cloud-streams/how-to-guides/connect-nifi/connect-nifi.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/cloud-streams/how-to-guides/connect-nifi/connect-nifi.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ff5faa92-156a-4d08-8c73-398379942248",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/data-processing/flink",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/flink.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/flink.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "753c078e-1fb6-4ba0-9b05-024cf849629a",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/data-processing/flink/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/concepts/concepts.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "9827faf9-1306-416d-9fd6-e0cbd51ba13e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/data-processing/flink/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "40743070-0dc1-4727-84e4-ef84c1ae416c",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/data-processing/flink/concepts/architecture",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/concepts/architecture/architecture.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/concepts/architecture/architecture.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8b49ab8a-4e31-42c5-9081-72bd3ca23cc6",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/data-processing/flink/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/service-management/service-management.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2aab1fcc-4e26-4ede-a040-368f01d46cbc",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/data-processing/flink/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/service-management/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d02291a9-8893-418e-a42c-cb17bb245c94",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/data-processing/flink/service-management/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/service-management/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/service-management/manage/manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d75f56dd-e6eb-4285-8e63-08e31872e441",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/data-processing/flink/tariffication",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/tariffication/tariffication.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/data-processing/flink/tariffication/tariffication.md",
     "variables": {},
     "hidden": false,
     "version": null,

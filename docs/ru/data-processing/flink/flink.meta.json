@@ -7,5 +7,6 @@
   "sectionTitle": "Cloud Flink",
   "icon": "",
   "weight": 20,
-  "isBeta": true
+  "isBeta": true,
+  "uuid": "ff5faa92-156a-4d08-8c73-398379942248"
 }
