@@ -17131,7 +17131,7 @@
   },
   {
     "source": "/ru/additionals/start/it-security/certificates",
-    "destination": "/ru/intro/it-security/certificates",
+    "destination": "/ru/intro/it-security/certificates/digital-cloud-certificates",
     "permanent": false,
     "locale": false
   },
@@ -28718,6 +28718,12 @@
   {
     "source": "/ru/storage/s3/concepts/about-s3-api",
     "destination": "/ru/storage/s3/concepts/s3-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/intro/it-security/certificates",
+    "destination": "/ru/intro/it-security/certificates/digital-cloud-certificates",
     "permanent": false,
     "locale": false
   }

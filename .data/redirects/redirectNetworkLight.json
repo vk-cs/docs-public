@@ -2461,7 +2461,7 @@
   "/ru/additionals/start/it-security/platform-security": "/ru/intro/it-security/platform-security",
   "/ru/additionals/start/it-security/security-policy": "/ru/intro/it-security/security-policy",
   "/ru/additionals/start/it-security/compliance-152fz": "/ru/intro/it-security/compliance-152fz",
-  "/ru/additionals/start/it-security/certificates": "/ru/intro/it-security/certificates",
+  "/ru/additionals/start/it-security/certificates": "/ru/intro/it-security/certificates/digital-cloud-certificates",
   "/ru/additionals/start/it-security/faq": "/ru/intro/it-security/faq",
   "/ru/additionals/start/it-security/faq/faq-compliance": "/ru/intro/it-security/faq",
   "/ru/additionals/start/it-security/faq/faq-liability": "/ru/intro/it-security/faq",
@@ -3894,5 +3894,6 @@
   "/en/dbs/adb/quick-start/delete-adb": "/en/dbs/adb/service-management/manage",
   "/ru/computing/gpu/about": "/ru/computing/gpu/concepts/about",
   "/en/storage/s3/concepts/about-s3-api": "/en/storage/s3/concepts/s3-api",
-  "/ru/storage/s3/concepts/about-s3-api": "/ru/storage/s3/concepts/s3-api"
+  "/ru/storage/s3/concepts/about-s3-api": "/ru/storage/s3/concepts/s3-api",
+  "/ru/intro/it-security/certificates": "/ru/intro/it-security/certificates/digital-cloud-certificates"
 }
