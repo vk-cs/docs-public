@@ -122,7 +122,7 @@ export const config = {
         },
     },
     paths: {
-        policy: '/additionals/start/legal/policy-privacy',
+        policy: '/intro/start/legal/digital-cloud/policy-privacy',
     },
     enablers: {
         auth: true,
