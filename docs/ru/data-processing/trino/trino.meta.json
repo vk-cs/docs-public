@@ -1,0 +1,11 @@
+{
+  "title": "Cloud Trino",
+  "pageDescription": "Сервис для создания и управления кластерами Trino в инфраструктуре VK Cloud.",
+  "shortDescription": "SQL-движок для обработки больших данных из удаленных источников",
+  "metaTitle": "Cloud Trino",
+  "metaDescription": "Сервис для создания и управления кластерами Trino в инфраструктуре VK Cloud",
+  "sectionTitle": "Cloud Trino",
+  "icon": "",
+  "weight": 50,
+  "isBeta": true
+}
