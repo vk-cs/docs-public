@@ -721,14 +721,6 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id"
-  ],
-  [
-    "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/faq",
     "http://localhost:3000/docs/en/intro/billing/concepts/payment-methods"
   ],
   [
@@ -9777,14 +9769,6 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
-    "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/intro/billing/faq",
     "http://localhost:3000/docs/ru/intro/billing/concepts/payment-methods"
   ],
   [
@@ -16309,6 +16293,38 @@
   ],
   [
     "/ru/data-processing/kafka/tariffication",
+    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+  ],
+  [
+    "/ru/data-processing/trino/concepts/architecture",
+    "http://localhost:3000/docs/ru/storage/s3"
+  ],
+  [
+    "/ru/data-processing/trino/service-management/create",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture#topologii_klastera"
+  ],
+  [
+    "/ru/data-processing/trino/service-management/create",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
+  ],
+  [
+    "/ru/data-processing/trino/service-management/create",
+    "http://localhost:3000/docs/ru/intro/start/architecture#az"
+  ],
+  [
+    "/ru/data-processing/trino/service-management/create",
+    "http://localhost:3000/docs/ru/data-processing/trino/service-management/management#change_password"
+  ],
+  [
+    "/ru/data-processing/trino/service-management/management",
+    "http://localhost:3000/docs/ru/data-processing/trino/service-management/management#change_password"
+  ],
+  [
+    "/ru/data-processing/trino/tariffication",
+    "http://localhost:3000/docs/ru/intro/billing"
+  ],
+  [
+    "/ru/data-processing/trino/tariffication",
     "http://localhost:3000/docs/ru/networks/vnet/tariffs"
   ],
   [

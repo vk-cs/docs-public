@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Trino в VK Cloud: создание экземпляра сервиса, управление экземпляром и его компонентами",
   "sectionTitle": "Управление сервисом",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "16b1e065-e25e-405e-9ab9-f595c10f117f"
 }

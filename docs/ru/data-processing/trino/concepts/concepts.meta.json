@@ -6,5 +6,6 @@
   "metaDescription": "Как устроен сервис Trino в VK Cloud: функциональные особенности и внутренняя архитектура",
   "sectionTitle": "Концепции",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "f9a9e000-0d97-486b-8725-d47706a391e2"
 }
