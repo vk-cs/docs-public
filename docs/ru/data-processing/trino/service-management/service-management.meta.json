@@ -1,0 +1,10 @@
+{
+  "title": "Управление сервисом",
+  "pageDescription": "Как создать экземпляр сервиса Cloud Trino в проекте VK Cloud, как управлять компонентами Cloud Trino в VK Cloud.",
+  "shortDescription": "Создание экземпляра сервиса и управление его компонентами",
+  "metaTitle": "Управление сервисом",
+  "metaDescription": "Cloud Trino в VK Cloud: создание экземпляра сервиса, управление экземпляром и его компонентами",
+  "sectionTitle": "Управление сервисом",
+  "icon": "",
+  "weight": 3
+}
