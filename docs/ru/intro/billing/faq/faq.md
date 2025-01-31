@@ -177,20 +177,6 @@ VK Cloud ежеминутно фиксирует потребление ресу
 
 <details>
 
-<summary>Как получить чек об оплате от конкретного числа?</summary>
-
-1. Обратитесь в [техническую поддержку](/ru/contacts).
-2. Укажите:
-
-   - [идентификатор (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта;
-   - [регион](/ru/tools-for-using-services/account/concepts/regions) проекта;
-   - сумму и дату платежа;
-   - подтверждение платежа.
-
-</details>
-
-<details>
-
 <summary>Я пополнил баланс, но платеж не зачислен. Что делать?</summary>
 
 Сроки зачисления средств зависят от [способа оплаты](../concepts/payment-methods):
@@ -198,11 +184,11 @@ VK Cloud ежеминутно фиксирует потребление ресу
 - Оплата при помощи банковского перевода — платеж может идти до трех банковских дней с момента перечисления средств банком.
 - Оплата остальными способами — платеж зачисляется в течение 5–10 минут после подтверждения платежа.
 
-Если платеж не поступил в указанные сроки, для его розыска обратитесь в [техническую поддержку](/ru/contacts) и укажите:
+Если платеж не поступил в срок, напишите в отдел документооборота VK Cloud на почту [docs_vktech@vk.company](mailto:docs_vktech@vk.company). Для розыска платежа потребуются следующие данные:
 
 - [идентификатор (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта;
 - [регион](/ru/tools-for-using-services/account/concepts/regions) проекта;
-- подтверждение платежа.
+- квитанция об оплате.
 
 </details>
 

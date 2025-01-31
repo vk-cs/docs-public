@@ -183,20 +183,6 @@ If you have not received your original documents or need scanned copies, write t
 
 <details>
 
-<summary>How do I get a payment receipt from a specific date?</summary>
-
-1. Contact [technical support](mailto:support@mcs.mail.ru).
-2. Specify:
-
-   - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
-   - Project [region](/en/tools-for-using-services/account/concepts/regions)
-   - Amount and date of payment
-   - Payment confirmation
-
-</details>
-
-<details>
-
 <summary>I have topped up the balance, but the payment is not credited. What to do?</summary>
 
 The terms of crediting funds depend on [the payment method](../concepts/payment-methods):
@@ -204,11 +190,11 @@ The terms of crediting funds depend on [the payment method](../concepts/payment-
 - Payment by bank transfer — payment can take up to three banking days from the date of transfer of funds by the bank.
 - Payment by other methods — the payment is credited within 5-10 minutes after payment confirmation.
 
-If the payment is not received within the specified time, contact [technical support](mailto:support@mcs.mail.ru) to search for it and specify:
+If the payment is not received on time, write to VK Cloud document management department at [docs_vktech@vk.company](mailto:docs_vktech@vk.company). The following details will be required to trace the payment:
 
 - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
 - Project [region](/en/tools-for-using-services/account/concepts/regions)
-- Payment confirmation
+- Receipt of payment
 
 </details>
 
