@@ -452,6 +452,14 @@
 /docs/ru/data-processing/kafka/service-management/create
 /docs/ru/data-processing/kafka/service-management/management
 /docs/ru/data-processing/kafka/tariffication
+/docs/ru/data-processing/trino
+/docs/ru/data-processing/trino/concepts
+/docs/ru/data-processing/trino/concepts/about
+/docs/ru/data-processing/trino/concepts/architecture
+/docs/ru/data-processing/trino/service-management
+/docs/ru/data-processing/trino/service-management/create
+/docs/ru/data-processing/trino/service-management/management
+/docs/ru/data-processing/trino/tariffication
 /docs/ru/data-processing/console
 /docs/ru/data-processing/console/concepts
 /docs/ru/data-processing/console/concepts/about

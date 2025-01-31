@@ -7,5 +7,6 @@
   "sectionTitle": "Cloud Trino",
   "icon": "",
   "weight": 50,
-  "isBeta": true
+  "isBeta": true,
+  "uuid": "fc24889b-4e67-4f98-b4fb-2fd71255667f"
 }

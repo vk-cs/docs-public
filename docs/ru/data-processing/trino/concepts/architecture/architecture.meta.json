@@ -1,10 +1,11 @@
 {
-    "title": "Архитектура сервиса",
-    "pageDescription": "Архитектура сервиса Cloud Trino в VK Cloud.",
-    "shortDescription": "Как устроен сервис Cloud Trino на разных уровнях",
-    "metaTitle": "Архитектура сервиса",
-    "metaDescription": "VK Cloud: архитектура сервиса Cloud Trino",
-    "sectionTitle": "Архитектура сервиса",
-    "icon": "",
-    "weight": 2
+  "title": "Архитектура сервиса",
+  "pageDescription": "Архитектура сервиса Cloud Trino в VK Cloud.",
+  "shortDescription": "Как устроен сервис Cloud Trino на разных уровнях",
+  "metaTitle": "Архитектура сервиса",
+  "metaDescription": "VK Cloud: архитектура сервиса Cloud Trino",
+  "sectionTitle": "Архитектура сервиса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "9c2d8fd9-a98c-4b9a-9010-7f48d467fcf0"
 }
