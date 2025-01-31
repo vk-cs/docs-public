@@ -9900,6 +9900,10 @@
     "http://localhost:3000/docs/ru/intro/it-security/certificates"
   ],
   [
+    "/ru/intro/it-security/certificates/digital-cloud-certificates",
+    "http://localhost:3000/docs/ru/intro/it-security/certificates/vk-certificates"
+  ],
+  [
     "/ru/intro/it-security/faq",
     "http://localhost:3000/docs/ru/intro/it-security/platform-security#provedenie_proverok_bezopasnosti"
   ],

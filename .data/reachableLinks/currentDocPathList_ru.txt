@@ -82,6 +82,8 @@
 /docs/ru/intro/it-security/penetration-testing-policy
 /docs/ru/intro/it-security/compliance-152fz
 /docs/ru/intro/it-security/certificates
+/docs/ru/intro/it-security/certificates/digital-cloud-certificates
+/docs/ru/intro/it-security/certificates/vk-certificates
 /docs/ru/intro/it-security/faq
 /docs/ru/on-premises
 /docs/ru/computing

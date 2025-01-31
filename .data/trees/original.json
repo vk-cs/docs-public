@@ -10680,13 +10680,43 @@
     ]
   },
   {
-    "uuid": "77fe3f50-6fb7-4062-9551-828c4fa83659",
+    "uuid": "b413687f-a50f-4d21-b1e5-988e2cbf985b",
     "lang": "ru",
-    "type": "ARTICLE",
+    "type": "INTERMEDIATE",
     "level": 4,
     "partialPath": "/ru/intro/it-security/certificates",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/certificates/certificates.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/certificates/certificates.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "77fe3f50-6fb7-4062-9551-828c4fa83659",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/it-security/certificates/digital-cloud-certificates",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/certificates/digital-cloud-certificates/digital-cloud-certificates.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/certificates/digital-cloud-certificates/digital-cloud-certificates.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "bb01ef70-f9a2-4bae-a377-9e9bd391ce7c",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/it-security/certificates/vk-certificates",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/certificates/vk-certificates/vk-certificates.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/certificates/vk-certificates/vk-certificates.md",
     "variables": {},
     "hidden": false,
     "version": null,
