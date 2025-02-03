@@ -550,7 +550,7 @@ schema:
 ![pic1](../../../assets/Option_datasource_az.png){params[width=45%]}
 {/caption}
 
-## {heading(Тарифная опция опция типа datasource (виртуальная сеть))[id=option_datasource_subnet]}
+## {heading(Тарифная опция опция типа datasource (подсеть))[id=option_datasource_subnet]}
 
 Заполните файл `parameters/<OPTION_NAME>.yaml` следующим образом:
 
@@ -562,7 +562,7 @@ schema:
    * `type` — тип тарифной опции. Укажите `string`.
    * `datasource.type` — тип сущности облачной платформы. Укажите `subnet`.
 
-{caption(Пример описания опции `datasource` для виртуальной сети, формат `YAML`)[align=left;position=above]}
+{caption(Пример описания опции `datasource` для подсети, формат `YAML`)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -578,8 +578,49 @@ schema:
 
 На {linkto(#pic_option_datasource_subnet)[text=рисунке %number]} приведено, как вышеописанная опция будет отображаться в мастере конфигурации тарифного плана.
 
-{caption(Рисунок {counter(pic)[id=numb_pic_option_datasource_subnet]} — Тарифная опция datasource (виртуальная сеть))[align=center;position=under;id=pic_option_datasource_subnet;number={const(numb_pic_option_datasource_subnet)} ]}
+{caption(Рисунок {counter(pic)[id=numb_pic_option_datasource_subnet]} — Тарифная опция datasource (подсеть))[align=center;position=under;id=pic_option_datasource_subnet;number={const(numb_pic_option_datasource_subnet)} ]}
 ![pic1](../../../assets/Option_datasource_subnet.png){params[width=40%]}
+{/caption}
+
+## {heading(Тарифная опция типа datasource (сеть))[id=option_datasource_net]}
+
+Заполните файл `parameters/<OPTION_NAME>.yaml` следующим образом:
+
+1. Укажите параметр `actions`.
+1. В секции `schema` задайте следующие параметры:
+
+   * `description` — имя тарифной опции.
+   * `hint` — описание тарифной опции (опционально).
+   * `type` — тип тарифной опции. Укажите `string`.
+   * `datasource.type` — тип сущности облачной платформы. Укажите `network`.
+   * `datasource.value_is` — тип вывода информации. Доступны значения:
+      * `uuid` — отображать UUID сети.
+      * `name` — отображать имя сети.
+   * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_datasource)[text=%text]}.
+
+{caption(Пример описания опции `datasource` для сети, формат `YAML`)[align=left;position=above]}
+```yaml
+actions:
+- create
+- update
+
+schema:
+  description: Внутренняя сеть
+  hint: Внутренняя сеть
+  type: string
+  datasource:
+    type: network
+    value_is: name
+    filter:
+      kind: private
+      shared: false
+```
+{/caption}
+
+На {linkto(#pic_option_datasource_net)[text=рисунке %number]} приведено, как вышеописанная опция будет отображаться в мастере конфигурации тарифного плана.
+
+{caption(Рисунок {counter(pic)[id=numb_pic_option_datasource_net]} — Тарифная опция datasource (сеть))[align=center;position=under;id=pic_option_datasource_net;number={const(numb_pic_option_datasource_net)} ]}
+![pic1](../../../assets/Option_datasource_net.png){params[width=55%]}
 {/caption}
 
 ## {heading(Описание диска с помощью файлов тарифных опций)[id=IBoption_fill_in_volume]}
