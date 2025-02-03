@@ -1,82 +1,140 @@
 Интерфейс командной строки OpenStack (OpenStack CLI) позволяет работать с сервисами платформы VK Cloud через консоль.
 
-## 1. Установите клиент OpenStack
+##  Подготовительные шаги
 
 <tabs>
 <tablist>
-<tab>Debian, Ubuntu</tab>
-<tab>RHEL 8, CentOS 8, Fedora</tab>
-<tab>CentOS 7</tab>
+<tab>Ubuntu, Debian</tab>
+<tab>CentOS</tab>
+<tab>macOS</tab>
 <tab>Windows</tab>
 </tablist>
 <tabpanel>
 
+1. Установите Python 3, если он еще не установлен:
+
+   ```bash
+   sudo apt update
+   sudo apt install python3
+   ```
+   
+1. Установите pip3, если он еще не установлен:
+
+   ```bash
+   sudo apt install python3-pip
+   ```
+
+</tabpanel>
+<tabpanel>
+
+<info>
+
+Инструкция написана для CentOS 8. Для других версий OC команды могут отличаться.
+
+</info>
+
+1. Установите Python 3, если он еще не установлен:
+
+   ```bash
+   sudo dnf update -y
+   sudo dnf install python3 -y
+   ```
+   
+1. Установите pip3, если он еще не установлен:
+
+   ```bash
+   sudo dnf install python3-pip -y
+   ```
+
+1. Установите OpenStack SDK версии 1.0.1:
+
+   ```bash
+   sudo pip3 install openstacksdk==1.0.1
+   ```
+
+</tabpanel>
+<tabpanel>
+
+Установите Python 3 и pip3, если они еще не установлены:
+
 ```bash
-sudo apt update
-sudo apt install python3-openstackclient
+brew install python3
 ```
 
 </tabpanel>
 <tabpanel>
 
-```bash
-dnf install https://www.rdoproject.org/repos/rdo-release.el8.rpm
-dnf update
-dnf install python3-openstackclient
-```
-
-</tabpanel>
-<tabpanel>
-
-```bash
-yum install https://rdoproject.org/repos/rdo-release.rpm
-yum upgrade
-yum install python-openstackclient
-```
-
-</tabpanel>
-<tabpanel>
+<info>
 
 Инструкция написана на примере Python 3.10.11 и Microsoft C++ Build Tools 2022. Для других версий программ названия и версии компонентов могут отличаться.
 
-1. Скачайте и установите [Python3](https://www.python.org/downloads/windows/). Рекомендуется использовать версию 3.6 или 3.8.
-2. Скачайте и запустите [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
-3. Перейдите на вкладку **Отдельные компоненты**, выберите в списке и установите:
+</info>
+
+1. Скачайте и установите [Python3](https://www.python.org/downloads/windows/).
+1. Скачайте и запустите [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
+1. Перейдите на вкладку **Отдельные компоненты**, выберите в списке и установите:
 
    - `Средства CMake C++ для Windows`. При выборе этого компонента автоматически будет выбран компонент `MSVC версии 143 — VS 2022 С++ x64/x86 Build Tools (последняя версия)`.
    - `Пакет SDK для Windows 10`.
 
-1. Выполните команду:
-
-   ```bash
-   pip install -UI python-openstackclient
-   ```
-
 </tabpanel>
 </tabs>
+
+## 1. Установите клиент OpenStack
+
+1. Установите Openstack CLI:
+
+   <tabs>
+   <tablist>
+   <tab>Linux, maсOS</tab>
+   <tab>Windows</tab>
+   </tablist>
+   <tabpanel>
+
+   ```bash
+   pip3 install python-openstackclient
+   ```
+   
+   </tabpanel>
+   <tabpanel>
+
+   ```powershell
+   pip install python-openstackclient
+   ```
+   
+   </tabpanel>
+   </tabs>
+   
+1. Проверьте, что OpenStack CLI установлен:
+
+   ```bash
+   openstack --version
+   ```
+   
+   Если OpenStack CLI установлен корректно, в ответе вернется номер версии.
 
 ## 2. (Опционально) Установите дополнительные пакеты
 
 1. Установите пакеты для работы с отдельными сервисами OpenStack:
 
    ```bash
-   pip install python-<НАЗВАНИЕ_СЕРВИСА>client
+   pip3 install python-<НАЗВАНИЕ_СЕРВИСА>client
    ```
 
    Названия сервисов:
 
-   - `cinder` – API блочного хранилища и расширений;
-   - `glance` – API образов;
-   - `heat` – API оркестрации;
-   - `neutron` – API сетей;
-   - `nova` – API облачных вычислений (ВМ) и расширений;
+   - `cinder` — API блочного хранилища и расширений;
+   - `glance` — API образов;
+   - `heat` — API оркестрации;
+   - `neutron` — API сетей;
+   - `nova` — API облачных вычислений (ВМ) и расширений;
    - `octavia` — API балансировщика нагрузки;
-   - `sahara` – API обработки больших данных.
+   - `sahara` — API обработки больших данных.
 
 2. Установите клиент общего файлового хранилища Manila CLI с помощью команды:
 
    ```bash
-   pip install "python-manilaclient==4.9.1"
+   pip3 install "python-manilaclient==4.9.1"
    ```
 
    <info>
@@ -98,7 +156,7 @@ yum install python-openstackclient
 
    <tabs>
    <tablist>
-   <tab>Linux</tab>
+   <tab>Ubuntu, Debian, CentOS, macOS</tab>
    <tab>Windows (cmd)</tab>
    <tab>Windows (PowerShell)</tab>
    </tablist>
