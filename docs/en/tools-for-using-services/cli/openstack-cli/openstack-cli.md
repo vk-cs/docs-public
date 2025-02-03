@@ -1,43 +1,74 @@
 The OpenStack Command line interface (OpenStack CLI) allows you to work with VK Cloud platform services via the console. To use the OpenStack CLI, [install](#1-install-the-openstack-client) the OpenStack client and [authenticate](#3_complete_authentication).
 
-## 1. Install the OpenStack client
+## Before you start
 
 <tabs>
 <tablist>
-<tab>Debian, Ubuntu</tab>
-<tab>RHEL 8, CentOS 8, Fedora</tab>
-<tab>CentOS 7</tab>
+<tab>Ubuntu, Debian</tab>
+<tab>CentOS</tab>
+<tab>macOS</tab>
 <tab>Windows</tab>
 </tablist>
 <tabpanel>
 
+1. Install Python 3, if you have not already done:
+
+   ```bash
+   sudo apt update
+   sudo apt install python3
+   ```
+
+1. Install pip3, if you have not already done:
+
+   ```bash
+   sudo apt install python3-pip
+   ```
+
+</tabpanel>
+<tabpanel>
+
+<info>
+
+The instructions are written for CentOS 8. For other versions of the OS, the commands may differ.
+
+</info>
+
+1. Install Python 3, if you have not already done:
+
+   ```bash
+   sudo dnf update -y
+   sudo dnf install python3 -y
+   ```
+
+1. Install pip3, if you have not already done:
+
+   ```bash
+   sudo dnf install python3-pip -y
+   ```
+
+1. Install OpenStack SDK version 1.0.1:
+
+   ```bash
+   sudo pip3 install openstacksdk==1.0.1
+
+
+</tabpanel>
+<tabpanel>
+
+Install Python 3 and pip3, if you have not already done:
+
 ```bash
-sudo apt update
-sudo apt install python3-openstackclient
+brew install python3
 ```
 
 </tabpanel>
 <tabpanel>
 
-```bash
-dnf install https://www.rdoproject.org/repos/rdo-release.el8.rpm
-dnf update
-dnf install python3-openstackclient
-```
+<info>
 
-</tabpanel>
-<tabpanel>
+The instructions are written using the example of Python 3.10.11 and Microsoft C++ Build Tools 2022. For other versions of programs, the names and versions of components may differ.
 
-```bash
-yum install https://rdoproject.org/repos/rdo-release.rpm
-yum upgrade
-yum install python-openstackclient
-```
-
-</tabpanel>
-<tabpanel>
-
-The instruction is written using the example of Python 3.10.11 and Microsoft C++ Build Tools 2022. For other versions of programs, the names and versions of components may differ.
+</info>
 
 1. Download and install [Python3](https://www.python.org/downloads/windows/). It is recommended to use version 3.6 or 3.8.
 2. Download and run [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
@@ -46,34 +77,62 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
    - `C++ CMake tools for Windows`. When you select this component, the `MSVC v143 - VS 2022 C++ x64/x86 build tools (latest)` component will be automatically selected.
    - `Windows 10 SDK`.
 
-1. Run the command:
-
-   ```bash
-   pip install -UI python-openstackclient
-   ```
-
 </tabpanel>
 </tabs>
+
+## 1. Install the OpenStack client
+
+1. Install Openstack CLI:
+
+   <tabs>
+   <tablist>
+   <tab>Linux, maсOS</tab>
+   <tab>Windows</tab>
+   </tablist>
+   <tabpanel>
+
+
+   ```bash
+   pip3 install python-openstackclient
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```powershell
+   pip install python-openstackclient
+   ```
+
+   </tabpanel>
+   </tabs>
+
+1. Check, if the OpenStack CLI is installed:
+
+   ```bash
+   openstack --version
+   ```
+
+   If the OpenStack CLI is installed correctly, the response will return the version number.
 
 ## 2. (Optional) Install additional packages
 
 1. Install packages to work with specific OpenStack services:
 
    ```bash
-   pip install python-<SERVICE_NAME>client
+   pip3 install python-<SERVICE_NAME>client
    ```
 
    Service names:
 
-   - `cinder` – block storage API and extensions;
-   - `glance` – images API;
-   - `heat` – orchestration API;
-   - `neutron` – network API;
-   - `nova` – cloud computing (VM) and extensions API;
+   - `cinder` — block storage API and extensions;
+   - `glance` — images API;
+   - `heat` — orchestration API;
+   - `neutron` — network API;
+   - `nova` — cloud computing (VM) and extensions API;
    - `octavia` — load balancer API;
-   - `sahara` – Cloud Big Data processing API.
+   - `sahara` — Cloud Big Data processing API.
 
-2. Install the Shared File System API client (Manila CLI) using the command:
+2. Install the Shared File System API client (the Manila CLI) using the command:
 
    ```bash
    pip install "python-manilaclient==4.9.1"
@@ -161,7 +220,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
    </tabpanel>
    </tabs>
 
-## 4. Check if the OpenStack CLI is ready to work
+## 4. Check if OpenStack CLI is ready to work
 
 1. Check the availability of the OpenStack client:
 
@@ -175,7 +234,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 
    <tabs>
    <tablist>
-   <tab>Linux</tab>
+   <tab>Ubuntu, Debian, CentOS, macOS</tab>
    <tab>Windows (cmd)</tab>
    <tab>Windows (PowerShell)</tab>
    </tablist>
