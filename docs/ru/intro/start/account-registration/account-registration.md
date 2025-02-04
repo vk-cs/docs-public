@@ -95,5 +95,5 @@
 - [Ознакомьтесь](/ru/tools-for-using-services/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
 - Ознакомьтесь со [способами пополнения баланса](/ru/intro/billing/service-management/payment) и базовыми принципами [тарификации](/ru/tools-for-using-services/account/tariffication) сервисов.
 - [Настройте](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) доступ к вашему новому проекту.
-- Узнайте, как создать и подключить [виртуальную машину](/ru/computing/iaas/quick-start), [кластер Kubernetes](/ru/kubernetes/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).
+- Узнайте, как создать и подключить [виртуальную машину](/ru/computing/iaas/quick-start), [кластер Kubernetes](/ru/kubernetes/k8s/quick-start), [базу данных](/ru/dbs/dbaas/quick-start).
  

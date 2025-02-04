@@ -4,7 +4,7 @@
 
 - [Cloud Servers](/ru/computing/iaas/concepts/about).
 - [Виртуальные сети](/ru/networks/vnet/concepts).
-- [Контейнеры](/ru/kubernetes/k8s/k8s-reference).
+- [Контейнеры](/ru/kubernetes/k8s/reference).
 
 </info>
 

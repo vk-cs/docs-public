@@ -98,7 +98,7 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 | 09.12.2021
 |===
 
-The version history can be viewed at [Kubernetes version history](../version-changelog).
+The version history can be viewed at [Kubernetes version history](#k8s_versions_hystory).
 
 ## Service feature matrix for Kubernetes <a id="k8s-features-list"></a>
 
@@ -167,7 +167,7 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 | ![](/ru/assets/check.svg "inline")
 |===
 
-## Kubernetes version history
+## {heading(Kubernetes version history)[id=k8s_versions_hystory]}
 
 [cols="1,1,2", options="header"]
 |===

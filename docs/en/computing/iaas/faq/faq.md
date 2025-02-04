@@ -475,8 +475,8 @@ The maximum amount of file storage is 50TB.
 
 <summary>In which availability zone are file storages created?</summary>
 
-Repositories are created in [availability zones](/en/intro/start/architecture#az) GZ1 (Moscow region) and QAZ (Kazakhstan region).
-[Availability zones](/en/intro/start/architecture#az) of repositories depend on the [region](/ru/tools-for-using-services/account/concepts/regions) of the project:
+Repositories are created in [availability zones](/en/intro/start/concepts/architecture#az) GZ1 (Moscow region) and QAZ (Kazakhstan region).
+[Availability zones](/en/intro/start/concepts/architecture#az) of repositories depend on the [region](/ru/tools-for-using-services/account/concepts/regions) of the project:
 
 - GZ1 for Moscow region;
 - QAZ for Kazakhstan region.

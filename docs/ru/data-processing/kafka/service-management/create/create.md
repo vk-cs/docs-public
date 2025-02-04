@@ -44,7 +44,7 @@
          1. Выберите нужную [SDN](/ru/networks/vnet/concepts/sdn): **Neutron** или **Sprut**.
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
-   1. Выберите [зону доступности](/ru/intro/start/architecture#az), где будет размещен узел кластера Cloud Containers.
+   1. Выберите [зону доступности](/ru/intro/start/concepts/architecture#az), где будет размещен узел кластера Cloud Containers.
    1. Нажмите кнопку **Следующий шаг**.
 
 1. На шаге **Учетные данные**:
@@ -106,7 +106,7 @@
          1. Выберите нужную [SDN](/ru/networks/vnet/concepts/sdn): **Neutron** или **Sprut**.
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
-   1. Выберите [зону доступности](/ru/intro/start/architecture#az), где будет размещен узел кластера Cloud Containers.
+   1. Выберите [зону доступности](/ru/intro/start/concepts/architecture#az), где будет размещен узел кластера Cloud Containers.
    1. Настройте параметры узлов кластера, выбрав одну из опций:
 
       <tabs>

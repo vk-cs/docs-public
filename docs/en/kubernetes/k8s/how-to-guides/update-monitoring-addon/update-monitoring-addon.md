@@ -105,7 +105,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    </tabpanel>
    </tabs>
 
-1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../k8s-reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
+1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
 
    ```bash
    kubectl -n $NAMESPACE get pvc
@@ -606,7 +606,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
       The installation process may take a long time. Wait until it is completed.
 
-1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](../../k8s-reference/pvs-and-pvcs) used by the add-on:
+1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](../../reference/pvs-and-pvcs) used by the add-on:
 
    ```bash
    kubectl -n $NAMESPACE get pvc

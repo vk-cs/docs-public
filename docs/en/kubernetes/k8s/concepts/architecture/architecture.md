@@ -6,7 +6,7 @@ A Kubernetes Cloud Containers cluster consists of two types of nodes, master nod
 
 - Master nodes store cluster-wide state information and manage workload distribution across worker nodes.
 
-- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](/en/intro/start/architecture#az) to improve fault tolerance.
+- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](/en/intro/start/concepts/architecture#az) to improve fault tolerance.
 
 Cluster high availablity depends on the number of master nodes and their distribution across [availability zones](/en/intro/start/concepts/architecture#az). Possible configurations:
 

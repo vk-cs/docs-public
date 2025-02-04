@@ -39,7 +39,7 @@ In the event that this Agreement uses terms that are not defined in Section 2 of
 
 2.4. The applicable rules, including this Agreement, may be changed by the Contractor at any time without any prior notice to the Customer. Any such changes will take effect on the day following the day such changes are posted on the Site. The Customer undertakes to independently check the Applicable Rules for changes. Failure by the Customer to take steps to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a basis for the Customer's failure to fulfill his obligations related to the use of the Platform and the Service. The Customer has the right to refuse to accept changes and additions to the Applicable Rules, which means the Customer's refusal to use the Platform and / or the Service.
 
-2.5. To use the Service, the Customer undertakes to ensure that the technical and software capacities of the Customer comply with the requirements of the Contractor, which are available on the page at the link [https://help.mail.ru/mcs](/en/intro/start/architecture) and may be updated from time to time.
+2.5. To use the Service, the Customer undertakes to ensure that the technical and software capacities of the Customer comply with the requirements of the Contractor, which are available on the page at the link [https://help.mail.ru/mcs](/en/intro/start/concepts/architecture) and may be updated from time to time.
 
 2.6. Functionality of the Service, use of the Service:
 
