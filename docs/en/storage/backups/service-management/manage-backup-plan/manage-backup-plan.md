@@ -10,18 +10,18 @@
 1. Go to **Cloud Backup → Backup**.
 1. Go to the **Automatic** tab.
 
-    A page will open with a list of backup plans and summary of their execution:
+    A page with a list of backup plans will open. For each plan, the list contains the following information:
 
-    - the number of successful backups from their total number over the last 24 hours and the last 7 days
-    - the number of successful recoveries of VMs or database instances from their total number over the last 24 hours
-
-    For each plan in the list, there is also information about the number of successful, unsuccessful and not yet completed backup runs. By default, the last run information is displayed. To see data for a day or a week, click the **Filters** button and select the required value.
+    * The total volume of VM backups included in the plan. The volume of backups of DB and ADB instances is not included in this amount.
+    * The plan status: `Turned on` or `Stopped`.
+    * The number of successful, unsuccessful and not yet completed backup runs. By default, the last run information is displayed. To see data for a day or a week, click the **Filters** button and select the required value.
+    * The date and time of the last and next scheduled runs.
 
 1. To view additional information about a backup plan, click ![](/en/assets/info-icon.svg "inline") for the required plan.
 1. To find the required plan more easily in the list:
 
-    - Filter the list. To do this, click **Filters** and select the backup status, time interval, and backup resource type.
-    - Enter partially or completely the name of the required plan in the search bar. As you type, the list will show only plans with matching names.
+    * Filter the list. To do this, click **Filters** and select the backup status, time interval, and backup resource type.
+    * Enter partially or completely the name of the required plan in the search bar. As you type, the list will show only plans with matching names.
 
 </tabpanel>
 </tabs>
@@ -45,8 +45,8 @@ The list of backup copies created according to a plan is grouped by the instance
 1. Go to the **Automatic** tab.
 1. To open the list of instances included in the plan, use one of the following methods:
 
-   - Click the name of the required plan in the list.
-   - In the list of plans, click ![ ](/en/assets/more-icon.svg "inline") for the required plan and select **View backups**.
+   * Click the name of the required plan in the list.
+   * In the list of plans, click ![ ](/en/assets/more-icon.svg "inline") for the required plan and select **View backups**.
 
 1. To open the list of instance backup copies, click the instance name or the ![ ](/en/assets/right-arrow-icon.svg "inline") icon.
 
@@ -72,8 +72,8 @@ When editing a plan, you cannot change the selection of instances for backup.
 1. Go to the **Automatic** tab.
 1. Find the required plan in the list and go to the page for editing it in one of the following ways:
 
-   - Click ![ ](/en/assets/more-icon.svg "inline") for the plan in the list and select **Edit**.
-   - Set the checkbox for the plan and click **Edit** above the list of plans.
+   * Click ![ ](/en/assets/more-icon.svg "inline") for the plan in the list and select **Edit**.
+   * Set the checkbox for the plan and click **Edit** above the list of plans.
 
 1. Change the required parameters of the plan.
 
