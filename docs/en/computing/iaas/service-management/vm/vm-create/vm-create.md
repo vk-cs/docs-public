@@ -153,6 +153,12 @@ The VM settings available for configuration may vary depending on the operating 
                            --availability-zone MS1
    ```
 
+   <warn>
+
+   If the `--network` option specifies an external network (`ext-net`), add the `--use-config-drive` option to the VM creation command.
+
+   </warn>
+
    After creating a VM, information about it will be displayed. Find the `adminPass` field and copy its value. You will need it to sign in to the server via the VNC console.
 
 5. Check the status of the created VM:
