@@ -1,7 +1,7 @@
 /docs/en/intro
 /docs/en/intro/start
 /docs/en/intro/start/concepts
-/docs/en/intro/start/concepts/help-glossary
+/docs/en/intro/start/concepts/glossary
 /docs/en/intro/start/concepts/architecture
 /docs/en/intro/start/account-registration
 /docs/en/intro/start/support

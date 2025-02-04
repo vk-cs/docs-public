@@ -3673,7 +3673,7 @@
   },
   {
     "source": "/en/additionals/start/start-intro/help-glossary",
-    "destination": "/en/intro/start/concepts/help-glossary",
+    "destination": "/en/intro/start/concepts/glossary",
     "permanent": false,
     "locale": false
   },
@@ -14389,7 +14389,7 @@
   },
   {
     "source": "/en/additionals/start/help-glossary",
-    "destination": "/en/intro/start/concepts/help-glossary",
+    "destination": "/en/intro/start/concepts/glossary",
     "permanent": false,
     "locale": false
   },
@@ -19501,7 +19501,7 @@
   },
   {
     "source": "/en/intro/start/help-glossary",
-    "destination": "/en/intro/start/concepts/help-glossary",
+    "destination": "/en/intro/start/concepts/glossary",
     "permanent": false,
     "locale": false
   },
@@ -28722,8 +28722,8 @@
     "locale": false
   },
   {
-    "source": "/ru/intro/it-security/certificates",
-    "destination": "/ru/intro/it-security/certificates/digital-cloud-certificates",
+    "source": "/en/intro/start/concepts/help-glossary",
+    "destination": "/en/intro/start/concepts/glossary",
     "permanent": false,
     "locale": false
   }
