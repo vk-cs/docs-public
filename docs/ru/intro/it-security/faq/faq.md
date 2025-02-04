@@ -207,8 +207,8 @@ VK Cloud отвечает за безопасность облачной инф�
 Для пользователей VK Cloud доступны сервисы мониторинга событий:
 
 - [Cloud Audit](/ru/tools-for-using-services/account/service-management/actionslogs),
-- [Cloud Logging](/ru/manage/logging),
-- [Cloud Monitoring](/ru/manage/monitoring).
+- [Cloud Logging](/ru/monitoring-services/logging),
+- [Cloud Monitoring](/ru/monitoring-services/monitoring).
 
 </details>
 

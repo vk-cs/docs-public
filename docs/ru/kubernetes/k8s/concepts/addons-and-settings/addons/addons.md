@@ -144,7 +144,7 @@
 </tablist>
 <tabpanel>
 
-[Fluent Bit](https://docs.fluentbit.io/manual) позволяет настраивать сбор логов в кластерах Cloud Containers, чтобы затем анализировать их в сервисе [Cloud Logging](/ru/manage/logging), например, с помощью плагинов Elasticsearch или Loki. Основное преимущество данного аддона — возможность более гибкой настройки под нужды пользователя.
+[Fluent Bit](https://docs.fluentbit.io/manual) позволяет настраивать сбор логов в кластерах Cloud Containers, чтобы затем анализировать их в сервисе [Cloud Logging](/ru/monitoring-services/logging), например, с помощью плагинов Elasticsearch или Loki. Основное преимущество данного аддона — возможность более гибкой настройки под нужды пользователя.
 
 Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и [поды](../../../reference/pods) (pods), расположенные на узлах кластера.
 
@@ -165,7 +165,7 @@
 </tablist>
 <tabpanel>
 
-Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Cloud Containers в сервис [Cloud Logging](/ru/manage/logging) для дальнейшего анализа этих логов.
+Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Cloud Containers в сервис [Cloud Logging](/ru/monitoring-services/logging) для дальнейшего анализа этих логов.
 
 Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и [поды](../../../reference/pods) (pods), расположенные на узлах кластера. Подробнее о том, как работает аддон, читайте в [разделе про его установку](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration).
 

@@ -84,7 +84,7 @@ Two options for VM configuration will be considered: without additional settings
    </tabpanel>
    <tabpanel>
 
-   In the section about [availability zones](/en/intro/start/architecture#az).
+   In the section about [availability zones](/en/intro/start/concepts/architecture#az).
 
    </tabpanel>
    </tabs>

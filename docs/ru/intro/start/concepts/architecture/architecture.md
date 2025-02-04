@@ -5,7 +5,7 @@
   <details>
     <summary>Список IaaS-сервисов</summary>
 
-  - [Cloud Servers](/ru/computing/iaas) (IaaS Compute) — предоставляет виртуальные машины с возможностью выделения публичных IP и безлимитным трафиком в 1 ГБит/с (также [доступны](/ru/ml/gpu) виртуальные машины с NVIDIA GPU). Отвечает за виртуализацию и интеграцию ресурсов, использует гипервизор KVM.
+  - [Cloud Servers](/ru/computing/iaas) (IaaS Compute) — предоставляет виртуальные машины с возможностью выделения публичных IP и безлимитным трафиком в 1 ГБит/с (также [доступны](/ru/computing/gpu) виртуальные машины с NVIDIA GPU). Отвечает за виртуализацию и интеграцию ресурсов, использует гипервизор KVM.
   - [Cloud Storage](/ru/storage/s3) (IaaS Storage) — предоставляет S3-совместимое объектное хранилище. Рабочая нагрузка на хранилище распределяется между всеми узлами хранения. Можно развернуть хранилище с настраиваемой архитектурой.
   - [Cloud Networks](/ru/networks/vnet) (IaaS Network) — обеспечивает сетевое взаимодействие в рамках выбранного [проекта](/ru/tools-for-using-services/account/concepts/projects) с помощью технологии SDN (Software Defined Network). Функционирует на базе OpenStack Neutron и на базе ПО собственной разработки — Sprut. Включает в себя компоненты:
 
@@ -24,14 +24,14 @@
 
   - [Cloud Containers](/ru/kubernetes/k8s) — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
   - [Cloud Databases](/ru/dbs/dbaas) — предоставляет масштабируемые СУБД: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB на базе Greenplum.
-  - [Cloud Big Data](/ru/bigdata/hortonworks) — применяется для анализа больших данных на базе Arenadata Hadoop, поддерживает масштабирование.
-  - [Cloud Streams](/ru/bigdata/cloud-streams) — предоставляет кластера на базе Arenadata Streaming для обработки потоковых данных.
+  - [Cloud Big Data](/ru/data-processing/bigdata) — применяется для анализа больших данных на базе Arenadata Hadoop, поддерживает масштабирование.
+  - [Cloud Streams](/ru/data-processing/cloud-streams) — предоставляет кластера на базе Arenadata Streaming для обработки потоковых данных.
   - [Cloud ML Platform](/ru/ml/mlplatform) — поддерживает сервисы для полного цикла ML-разработки.
   - [Cloud Voice](/ru/ml/cloud-voice) — предоставляет REST API для распознавания и синтеза речи на базе машинного обучения.
   - [Vision](/ru/ml/vision) — предоставляет REST API для распознавания лиц и объектов на базе машинного обучения.
-  - [Cloud Alerting](/ru/manage/alerting) —  настраивает уведомления об изменении ключевых метрик сервисов VK Cloud.
-  - [Cloud Logging](/ru/manage/logging) — агрегирует и анализирует логи сервисов в VK Cloud.
-  - Monitoring — обеспечивает мониторинг метрик, специфичных для PaaS-сервисов, например, аналитика по подам K8s-контейнеров, статистика транзакций СУБД PostgreSQL.
+  - [Cloud Alerting](/ru/monitoring-services/alerting) —  настраивает уведомления об изменении ключевых метрик сервисов VK Cloud.
+  - [Cloud Logging](/ru/monitoring-services/logging) — агрегирует и анализирует логи сервисов в VK Cloud.
+  - [Cloud Monitoring](/ru/monitoring-services/monitoring) — обеспечивает мониторинг метрик, специфичных для PaaS-сервисов, например, аналитика по подам K8s-контейнеров, статистика транзакций СУБД PostgreSQL.
   - Дополнительные сервисы:
 
     - [1С:Готовое рабочее место](/ru/applications-and-services/1cgrm) — предоставляет ресурсы и ПО для развертывания сервисов 1С: Бухгалтерия, Зарплата и Управление персоналом, Управление нашей фирмой.
@@ -45,9 +45,9 @@
     <summary>Список Common&Security-сервисов</summary>
 
   - [Billing](/ru/intro/billing) — ведет учет использования ресурсов и контроль расходов, формирует финансовые отчеты, обеспечивает взаимодействие с платежными системами при оплате сервисов.
-  - Audit — формирует журнал аудита действий пользователей в VK Cloud.
+  - [Audit](/ru/monitoring-services/event-log) — формирует журнал аудита действий пользователей в VK Cloud.
   - IAM — управляет аутентификацией и авторизацией пользователей и сервисов в совокупности с Keystone.
-  - [Cloud Monitoring](/ru/manage/monitoring) — обеспечивает мониторинг облачных сервисов и пользовательских приложений.
+  - [Cloud Monitoring](/ru/monitoring-services/monitoring) — обеспечивает мониторинг облачных сервисов и пользовательских приложений.
   - Keystone — обеспечивает аутентификацию клиента по API, обнаружение служб и распределенную мультитенантную авторизацию.
 
   </details>
@@ -123,4 +123,4 @@ VK Cloud предоставляет [техническую поддержку](
 
 ## Миграция в VK Cloud
 
-VK Cloud поддерживает миграцию с использованием [стороннего ПО](/ru/additionals/migration) или [средствами платформы](/ru/additionals/migration/migrate-hystax). Перенос виртуальных ресурсов обходится дешевле за счет реализации сервисов на базе OSS-решений (Open Source Solutions).
+VK Cloud поддерживает миграцию с использованием [стороннего ПО](../../../migration) или [средствами платформы](../../../migration/migrate-hystax-mr). Перенос виртуальных ресурсов обходится дешевле за счет реализации сервисов на базе OSS-решений (Open Source Solutions).

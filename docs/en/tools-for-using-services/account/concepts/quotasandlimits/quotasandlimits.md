@@ -214,13 +214,13 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | 200 GB
 | not limited
 
-| Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) GZ1 (legacy)
+| Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#az) GZ1 (legacy)
 | **High-IOPS SSD size in the (DP1) area**
 | `gigabytes_dp1-high-iops`
 | 200 GB
 | not limited
 
-| Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) MS1 (legacy)
+| Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#az) MS1 (legacy)
 | **High-IOPS SSD size in the Moscow (MS1) (MS1) area**
 | `gigabytes_ko1-high-iops`
 | 200 GB
@@ -257,13 +257,13 @@ Quotas for the total volume of disks in the project take into account all types 
 | 10 pcs.
 | not limited
 
-| Number of High-IOPS SSD drives in [availability zone](/en/additionals/start/it-security/platform-security) GZ1 (legacy)
+| Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#az) GZ1 (legacy)
 | **High-IOPS SSD volumes in - (DP1) area**
 | `volumes_dp1-high-iops`
 | 10 pcs.
 | not limited
 
-| Number of High-IOPS SSD drives in [availability zone](/en/additionals/start/it-security/platform-security) MS1 (legacy)
+| Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#az) MS1 (legacy)
 | **High-IOPS SSD volumes in Moscow (MS1) (MS1) area**
 | `volumes_ko1-high-iops`
 | 10 pcs.

@@ -213,13 +213,13 @@
 | 200 ГБ
 | не ограничено
 
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) GZ1 (legacy)
+| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) GZ1 (legacy)
 | **Размер High-IOPS SSD в зоне - (DP1)**
 | `gigabytes_dp1-high-iops`
 | 200 ГБ
 | не ограничено
 
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) MS1 (legacy)
+| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) MS1 (legacy)
 | **Размер High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `gigabytes_ko1-high-iops`
 | 200 ГБ
@@ -257,13 +257,13 @@
 | 10 шт.
 | не ограничено
 
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) GZ1 (legacy)
+| Количество дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) GZ1 (legacy)
 | **Диски High-IOPS SSD в зоне - (DP1)**
 | `volumes_dp1-high-iops`
 | 10 шт.
 | не ограничено
 
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#az) MS1 (legacy)
+| Количество дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) MS1 (legacy)
 | **Диски High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `volumes_ko1-high-iops`
 | 10 шт.
