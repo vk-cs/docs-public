@@ -96,4 +96,4 @@ A [project](/en/tools-for-using-services/account/concepts/projects) is automatic
 - [Read](/en/tools-for-using-services/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
 - Learn about the [payment methods](/en/intro/billing/service-management/payment) available and the key [pricing](/en/tools-for-using-services/account/tariffication) model principles.
 - [Configure](/en/tools-for-using-services/account/service-management/project-settings/access-manage) access to your project.
-- Find out how to create and connect a [virtual machine](/en/computing/iaas/quick-start), a [Kubernetes cluster](/en/kubernetes/k8s/quickstart), a [database](/en/dbs/dbaas/start).
+- Find out how to create and connect a [virtual machine](/en/computing/iaas/quick-start), a [Kubernetes cluster](/en/kubernetes/k8s/quick-start), a [database](/en/dbs/dbaas/quick-start).

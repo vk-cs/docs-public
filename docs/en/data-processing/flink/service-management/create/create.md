@@ -37,7 +37,7 @@ You can create a Cloud Flink instance in one of two configurations:
             1. Select **Create new network**.
             1. Select the [SDN](/en/networks/vnet/concepts/architecture#sdns_used): `Neutron` or `Sprut`.
             1. Specify the subnet address, for example, `10.0.1.0/24`.
-         1. Select the [availability zone](/en/intro/start/architecture#az) where the Cloud Containers cluster node will be placed.
+         1. Select the [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be placed.
    1. Select the [VM type](/en/computing/iaas/concepts/about#flavors) where Cloud Flink will be deployed.
    1. Click the **Next step** button.
 
@@ -99,7 +99,7 @@ You can create a Cloud Flink instance in one of two configurations:
          1. Select **Create new network**.
          1. Select the [SDN](/en/networks/vnet/concepts/architecture#sdns_used): `Neutron` or `Sprut`.
          1. Specify the subnet address, for example, `10.0.1.0/24`.
-      1. Select the [availability zone](/en/intro/start/architecture#az) where the Cloud Containers cluster node will be placed.
+      1. Select the [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be placed.
    1. Select the [VM type](/en/computing/iaas/concepts/about#flavors) where Cloud Flink will be deployed.
    1. Configure the cluster node settings by selecting one of the options:
 

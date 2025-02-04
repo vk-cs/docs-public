@@ -15,7 +15,7 @@ The article provides examples of creating database instances with various settin
 In all the examples below, DB instances are created with the following properties:
 
 - [Region](/en/tools-for-using-services/account/concepts/regions): by default (the same as the project region).
-- [Availability zone](/en/intro/start/architecture): by default (for the Moscow region — `GZ1`).
+- [Availability zone](/en/intro/start/concepts/architecture): by default (for the Moscow region — `GZ1`).
 - DBMS type and version: MySQL 8.0.
 - [Configuration](/en/dbs/dbaas/concepts/work-configs) of the DB instance: **Single**.
 - External IP address: assigned.

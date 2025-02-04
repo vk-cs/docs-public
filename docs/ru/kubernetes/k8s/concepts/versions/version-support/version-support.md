@@ -98,7 +98,7 @@
 | 09.12.2021
 |===
 
-Историю изменений версий можно посмотреть в разделе [История версий Kubernetes](../version-changelog).
+Историю изменений версий можно посмотреть в разделе [История версий Kubernetes](#k8s_versions_hystory).
 
 ## Поддержка функций сервиса в версиях Kubernetes <a id="k8s-features-list"></a>
 
@@ -167,7 +167,7 @@
 | ![](/ru/assets/check.svg "inline")
 |===
 
-## История версий Kubernetes
+## {heading(История версий Kubernetes)[id=k8s_versions_hystory]}
 
 [cols="1,1,2", options="header"]
 |===
