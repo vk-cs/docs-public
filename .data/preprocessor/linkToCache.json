@@ -249,6 +249,11 @@
     "full": "Pre-reserve resources",
     "text": "Pre-reserve resources"
   },
+  "k8s_versions_hystory": {
+    "number": null,
+    "full": "История версий Kubernetes",
+    "text": "История версий Kubernetes"
+  },
   "kubernetes-roles-relation": {
     "number": null,
     "full": "Relationship between the roles of management console and Kubernetes",
@@ -1271,13 +1276,18 @@
   },
   "pic_option_datasource_subnet": {
     "number": "21",
-    "full": "Рисунок 21 — Тарифная опция datasource (виртуальная сеть)",
-    "text": "21  Рисунок 21 — Тарифная опция datasource (виртуальная сеть)"
+    "full": "Рисунок 21 — Тарифная опция datasource (подсеть)",
+    "text": "21  Рисунок 21 — Тарифная опция datasource (подсеть)"
+  },
+  "pic_option_datasource_net": {
+    "number": "22",
+    "full": "Рисунок 22 — Тарифная опция datasource (сеть)",
+    "text": "22  Рисунок 22 — Тарифная опция datasource (сеть)"
   },
   "pic_option_fill_in_volume": {
-    "number": "22",
-    "full": "Рисунок 22 — Тарифные опции типа integer и datasource, позволяющие настроить размер и тип диска",
-    "text": "22  Рисунок 22 — Тарифные опции типа integer и datasource, позволяющие настроить размер и тип диска"
+    "number": "23",
+    "full": "Рисунок 23 — Тарифные опции типа integer и datasource, позволяющие настроить размер и тип диска",
+    "text": "23  Рисунок 23 — Тарифные опции типа integer и datasource, позволяющие настроить размер и тип диска"
   },
   "IB_option_fill_in": {
     "number": "1",
@@ -1356,12 +1366,17 @@
   },
   "option_datasource_subnet": {
     "number": "1.15",
-    "full": "1.15 Тарифная опция опция типа datasource (виртуальная сеть)",
-    "text": "Тарифная опция опция типа datasource (виртуальная сеть)"
+    "full": "1.15 Тарифная опция опция типа datasource (подсеть)",
+    "text": "Тарифная опция опция типа datasource (подсеть)"
+  },
+  "option_datasource_net": {
+    "number": "1.16",
+    "full": "1.16 Тарифная опция типа datasource (сеть)",
+    "text": "Тарифная опция типа datasource (сеть)"
   },
   "IBoption_fill_in_volume": {
-    "number": "1.16",
-    "full": "1.16 Описание диска с помощью файлов тарифных опций",
+    "number": "1.17",
+    "full": "1.17 Описание диска с помощью файлов тарифных опций",
     "text": "Описание диска с помощью файлов тарифных опций"
   },
   "tab_plan_param": {
@@ -2183,5 +2198,20 @@
     "number": null,
     "full": "Порядок проведения тестирования",
     "text": "Порядок проведения тестирования"
+  },
+  "migration_sequence": {
+    "number": null,
+    "full": "Последовательность миграции",
+    "text": "Последовательность миграции"
+  },
+  "services_to_migrate": {
+    "number": null,
+    "full": "Какие сервисы можно мигрировать",
+    "text": "Какие сервисы можно мигрировать"
+  },
+  "migration_instruments": {
+    "number": null,
+    "full": "Инструменты миграции",
+    "text": "Инструменты миграции"
   }
 }

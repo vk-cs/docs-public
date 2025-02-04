@@ -596,7 +596,7 @@
   "/ru/manage/terraform/quick-start/workspace": "/ru/tools-for-using-services/terraform/quick-start",
   "/en/additionals/start/start-intro/about-help": "/en/intro/start/about-help",
   "/en/additionals/start/start-intro": "/en/intro/start/account-registration",
-  "/en/additionals/start/start-intro/help-glossary": "/en/intro/start/concepts/help-glossary",
+  "/en/additionals/start/start-intro/help-glossary": "/en/intro/start/concepts/glossary",
   "/en/additionals/it-security": "/en/intro/it-security",
   "/en/additionals/it-security/platform-security": "/en/intro/it-security/platform-security",
   "/en/additionals/it-security/tech": "/en/intro/it-security/tech",
@@ -2129,7 +2129,7 @@
   "/en/additionals/cases/migration/migrate-vmware": "/en/intro/migration/migrate-vmware",
   "/en/additionals/start": "/en/intro/start",
   "/en/additionals/start/account-registration": "/en/intro/start/account-registration",
-  "/en/additionals/start/help-glossary": "/en/intro/start/concepts/help-glossary",
+  "/en/additionals/start/help-glossary": "/en/intro/start/concepts/glossary",
   "/en/additionals/start/architecture": "/en/intro/start/concepts/architecture",
   "/en/additionals/start/support": "/en/intro/start/support",
   "/en/additionals/start/support/support-info": "/en/intro/start/support/support-info",
@@ -2736,7 +2736,7 @@
   "/ru/additionals/cases/cases-logs/mp-elk-monitoring": "/ru/cases/cases-logs/mp-elk-monitoring",
   "/ru/additionals/cases/cases-logs/case-fluent-bit": "/ru/cases/cases-logs/case-fluent-bit",
   "/ru/additionals/cases/cases-logs/case-fluentd": "/ru/cases/cases-logs/case-fluentd",
-  "/en/intro/start/help-glossary": "/en/intro/start/concepts/help-glossary",
+  "/en/intro/start/help-glossary": "/en/intro/start/concepts/glossary",
   "/en/intro/start/architecture": "/en/intro/start/concepts/architecture",
   "/en/base/gpu/gpu-start": "/en/computing/gpu",
   "/en/base/gpu/gpu-start/gpu-info": "/en/computing/gpu/about",
@@ -3895,5 +3895,5 @@
   "/ru/computing/gpu/about": "/ru/computing/gpu/concepts/about",
   "/en/storage/s3/concepts/about-s3-api": "/en/storage/s3/concepts/s3-api",
   "/ru/storage/s3/concepts/about-s3-api": "/ru/storage/s3/concepts/s3-api",
-  "/ru/intro/it-security/certificates": "/ru/intro/it-security/certificates/digital-cloud-certificates"
+  "/en/intro/start/concepts/help-glossary": "/en/intro/start/concepts/glossary"
 }
