@@ -51,7 +51,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/bigdata/hortonworks/bigdata-integrate/bigdata-api) clusters |
+| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/data-processing/bigdata/service-management) clusters |
 
 ### Cloud Databases
 

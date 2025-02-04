@@ -5,7 +5,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
   <details>
     <summary>List of IaaS services</summary>
 
-  - [Cloud Servers](/en/computing/iaas) (IaaS Compute) — provides virtual machines with the ability to allocate public IP and unlimited traffic of 1 GBit/s (also [available](/en/ml/gpu) virtual machines with NVIDIA GPU). Responsible for virtualization and resource integration, uses the KVM hypervisor.
+  - [Cloud Servers](/en/computing/iaas) (IaaS Compute) — provides virtual machines with the ability to allocate public IP and unlimited traffic of 1 GBit/s (also [available](/en/computing/gpu) virtual machines with NVIDIA GPU). Responsible for virtualization and resource integration, uses the KVM hypervisor.
   - [Cloud Storage](/en/storage/s3) (IaaS Storage) — provides S3-compatible object storage. The workload on the storage is distributed among all storage nodes. You can deploy a storage with a custom architecture.
   - [Cloud Networks](/en/networks/vnet) (IaaS Network) — provides network interaction within the selected [project](/en/tools-for-using-services/account/concepts/projects) using SDN (Software Defined Network) technology. It operates on the basis of OpenStack Neutron and on the basis of proprietary software — Sprut. Includes components:
 
@@ -24,14 +24,14 @@ Virtualization, monitoring, container, and data storage services can be deployed
 
   - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters in which you can run services and applications.
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMS: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB based on Greenplum.
-  - [Cloud Big Data](/en/bigdata/hortonworks) — used for big data analysis based on Arenadata Hadoop, supports scaling.
-  - [Cloud Streams](/en/bigdata/cloud-streams) — provides Arenadata Streaming-based clusters for processing streaming data.
+  - [Cloud Big Data](/en/data-processing/bigdata) — used for big data analysis based on Arenadata Hadoop, supports scaling.
+  - [Cloud Streams](/en//data-processing/cloud-streams) — provides Arenadata Streaming-based clusters for processing streaming data.
   - [Cloud ML Platform](/en/ml/mlplatform) — supports services for a full ML development cycle.
   - [Cloud Voice](/en/ml/cloud-voice) — provides a REST API for speech recognition and synthesis based on machine learning.
   - [Vision](/ru/ml/vision) — provides a REST API for face and object recognition based on machine learning.
-  - [Cloud Alerting](/en/manage/alerting) —  configures notifications about changes in key metrics of VK Cloud services.
-  - [Cloud Logging](/en/manage/logging) — aggregates and analyzes service logs in VK Cloud.
-  - Monitoring — provides monitoring of metrics specific to PaaS services, for example, analytics on K8s container feeds, PostgreSQL DBMS transaction statistics.
+  - [Cloud Alerting](/en/monitoring-services/alerting) —  configures notifications about changes in key metrics of VK Cloud services.
+  - [Cloud Logging](/en/monitoring-services/logging) — aggregates and analyzes service logs in VK Cloud.
+  - [Cloud Monitoring](/en/monitoring-services/monitoring) — provides monitoring of metrics specific to PaaS services, for example, analytics on K8s container feeds, PostgreSQL DBMS transaction statistics.
   - Additional services:
 
     - [1C:Ready workplace](/en/applications-and-services/1cgrm) — provides resources and software for the deployment of 1C services: Accounting, Salary and Personnel Management, Management of our company.
@@ -45,9 +45,9 @@ Virtualization, monitoring, container, and data storage services can be deployed
     <summary>List of Common&Security Services</summary>
 
   - [Billing](/en/intro/billing) — keeps records of resource usage and expense control, generates financial reports, provides interaction with payment systems when paying for services.
-  - Audit — generates an audit log of user actions in VK Cloud.
+  - [Audit](/en/monitoring-services/event-log) — generates an audit log of user actions in VK Cloud.
   - IAM — manages authentication and authorization of users and services in conjunction with Keystone.
-  - [Cloud Monitoring](/en/manage/monitoring) — provides monitoring of cloud services and user applications.
+  - [Cloud Monitoring](/en/monitoring-services/monitoring) — provides monitoring of cloud services and user applications.
   - Keystone — provides API client authentication, service discovery, and distributed multi-tenant authorization.
 
   </details>
@@ -112,4 +112,4 @@ For more information, see the section [Platform security](/en/intro/it-security/
 
 ## Migration to VK Cloud
 
-VK Cloud supports migration using [third-party software](/en/additionals/migration) or [platform tools](/en/additionals/migration/migrate-hystax). The transfer of virtual resources is cheaper due to the implementation of services based on OSS (Open Source Solutions).
+VK Cloud supports migration using [third-party software](../../../migration) or [platform tools](../../../migration/migrate-hystax-mr). The transfer of virtual resources is cheaper due to the implementation of services based on OSS (Open Source Solutions).

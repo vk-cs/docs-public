@@ -84,7 +84,7 @@
    </tabpanel>
    <tabpanel>
 
-   В статье о [зонах доступности](/ru/intro/start/architecture#az).
+   В статье о [зонах доступности](/ru/intro/start/concepts/architecture#az).
 
    </tabpanel>
    </tabs>

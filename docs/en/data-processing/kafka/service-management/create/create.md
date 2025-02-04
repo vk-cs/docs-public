@@ -44,7 +44,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
          1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
          1. Enter the subnet address, for example, `10.0.1.0/24`.
 
-   1. Select [availability zone](/en/intro/start/architecture#az) where the Cloud Containers cluster node will be located.
+   1. Select [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be located.
    1. Click the **Next step** button.
 
 1. At the “Credentials” step:
@@ -106,7 +106,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
          1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
          1. Set the subnet address, for example, `10.0.1.0/24`.
 
-   1. Select [availability zone](/en/intro/start/architecture#az) where the Cloud Containers cluster node will be located.
+   1. Select [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be located.
    1. Configure the cluster node settings by selecting one of the options:
 
       <tabs>

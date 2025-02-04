@@ -107,7 +107,7 @@ Load on the disk subsystem:
 
   In this case, it is recommended:
 
-  1. [Increase option value](../../../dbaas/manage-db/db-flags-options) `max_connections`.
+  1. [Increase option value](../../../dbaas/service-management/db-config) `max_connections`.
   1. Optimize queries so that there are no long transactions.
 
 - For troubleshooting replica lagging issues, see the [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) and [PostgreSQL](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION).
