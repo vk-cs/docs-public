@@ -1,0 +1,10 @@
+{
+    "title": "CDN",
+    "pageDescription": "How to use Terraform to manage the CDN service objects.",
+    "shortDescription": "How to use Terraform to manage the CDN service objects",
+    "metaTitle": "CDN",
+    "metaDescription": "How to use Terraform to manage the CDN service objects",
+    "sectionTitle": "CDN",
+    "icon": "",
+    "weight": 30
+}
