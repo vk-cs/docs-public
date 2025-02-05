@@ -1,0 +1,10 @@
+{
+    "title": "CDN",
+    "pageDescription": "Как использовать Terraform для управления объектами сервиса CDN.",
+    "shortDescription": "Как использовать Terraform для управления объектами сервиса CDN",
+    "metaTitle": "CDN",
+    "metaDescription": "Как использовать Terraform для управления объектами сервиса CDN",
+    "sectionTitle": "CDN",
+    "icon": "",
+    "weight": 30
+}

@@ -6,6 +6,6 @@
   "metaDescription": "Работа с сервисом Cloud ML Platform с использованием Terraform",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
-  "weight": 7,
+  "weight": 70,
   "uuid": "c7b4e18d-fdec-4100-a8b6-01b3c8ffb544"
 }
