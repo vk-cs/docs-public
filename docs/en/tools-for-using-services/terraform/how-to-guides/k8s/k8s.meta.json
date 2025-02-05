@@ -6,6 +6,6 @@
   "metaDescription": "Working with the Cloud Containers service using Terraform",
   "sectionTitle": "Containers",
   "icon": "",
-  "weight": 6,
+  "weight": 60,
   "uuid": "ca85cd22-0768-49ac-be8f-417b0f276045"
 }

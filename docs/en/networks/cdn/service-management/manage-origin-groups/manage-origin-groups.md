@@ -1,4 +1,4 @@
-## Viewing list of groups
+## {heading(Viewing list of groups)[id=origin_group_list]}
 
 <tabs>
 <tablist>

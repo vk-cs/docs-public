@@ -6,6 +6,6 @@
   "metaDescription": "Working with Cloud Spark using Terraform",
   "sectionTitle": "Cloud Spark",
   "icon": "",
-  "weight": 8,
+  "weight": 80,
   "uuid": "0f7b601d-9c0f-4955-9512-404d97eb539b"
 }
