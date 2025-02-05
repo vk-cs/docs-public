@@ -137,7 +137,7 @@
     }
   },
   "paths": {
-    "policy": "/intro/start/legal/digital-cloud/policy-privacy",
+    "policy": "/intro/start/legal",
     "basePath": "/docs",
     "assets": "/docs/_docs",
     "api": "/docs/api"
