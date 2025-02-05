@@ -2,9 +2,9 @@ The following describes how to create a cluster from your management console. It
 
 <warn>
 
-When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 

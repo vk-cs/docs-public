@@ -4,9 +4,9 @@ Ready-to-use examples of configuration files to create different clusters are li
 
 <warn>
 
-When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for it.
+When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 

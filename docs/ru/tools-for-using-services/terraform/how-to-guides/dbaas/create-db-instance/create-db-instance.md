@@ -22,9 +22,9 @@
 
 <warn>
 
-При создании инстансов БД MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1С в [конфигурации](/ru/dbs/dbaas/concepts/work-configs) **Кластер** будет создан [сервисный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При создании инстансов БД MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1С в [конфигурации](/ru/dbs/dbaas/concepts/work-configs) **Кластер** будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
-Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
+Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
 
 </warn>
 

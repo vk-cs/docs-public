@@ -83,9 +83,9 @@ Wait for the cluster to complete, this process may take a while.
 
 <warn>
 
-When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
+When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 

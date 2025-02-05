@@ -79,7 +79,7 @@
 
         <warn>
 
-        The use of a floating IP address is [charged](/en/networks/vnet/tariffs).
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
         </warn>
 
@@ -180,9 +180,9 @@
 
 <warn>
 
-When creating a cluster of the listed DBMS types, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for it.
+When creating a cluster of the listed DBMS types, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
-Using a load balancer [charged](/en/networks/vnet/tariffs).
+Using a load balancer [charged](/en/networks/vnet/tariffication).
 
 </warn>
 
@@ -235,7 +235,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         <warn>
 
-        The use of a floating IP address is [charged](/en/networks/vnet/tariffs).
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
         </warn>
 
@@ -385,7 +385,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         <warn>
 
-        The use of a floating IP address is [charged](/en/networks/vnet/tariffs).
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
         </warn>
 
@@ -470,7 +470,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         <warn>
 
-        The use of a floating IP address is [charged](/en/networks/vnet/tariffs).
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
         </warn>
 

@@ -4,9 +4,9 @@
 
 <warn>
 
-При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
-Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
+Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 
 </warn>
 
