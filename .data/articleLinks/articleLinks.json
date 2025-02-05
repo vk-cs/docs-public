@@ -37,7 +37,7 @@
   ],
   [
     "/en/intro/start/concepts/architecture",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer"
   ],
   [
     "/en/intro/start/concepts/architecture",
@@ -1977,7 +1977,7 @@
   ],
   [
     "/en/networks/vnet/concepts/about",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer"
   ],
   [
     "/en/networks/vnet/concepts/about",
@@ -2001,7 +2001,7 @@
   ],
   [
     "/en/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer"
   ],
   [
     "/en/networks/vnet/concepts/architecture",
@@ -3361,7 +3361,7 @@
   ],
   [
     "/en/dbs/dbaas/quick-start",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/concepts/about",
@@ -3501,7 +3501,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
@@ -3553,7 +3553,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3593,11 +3593,11 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3621,7 +3621,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3661,7 +3661,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3677,7 +3677,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3785,7 +3785,7 @@
   ],
   [
     "/en/dbs/dbaas/tariffication",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/dbs/dbaas/extensions/postgresql",
@@ -3893,11 +3893,11 @@
   ],
   [
     "/en/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/quick-start",
@@ -4073,11 +4073,11 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -4109,11 +4109,11 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -4433,11 +4433,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -4529,11 +4529,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -4653,11 +4653,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
@@ -4813,11 +4813,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -4897,7 +4897,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
-    "http://localhost:3000/docs/ru/manage/tools-for-using-services/terraform/quick-start"
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
@@ -4945,11 +4945,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -5577,11 +5577,11 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/storage",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/storage",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/storage",
@@ -5661,7 +5661,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/load-balancer",
-    "http://localhost:3000/docs/en/networks/vnet/networks/fip"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/floating-ip#adding_floating_ip_address_to_the_project"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/load-balancer",
@@ -5673,7 +5673,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/load-balancer",
-    "http://localhost:3000/docs/en/networks/vnet/networks/fip#removing_floating_ip_address_from_the_project"
+    "http://localhost:3000/docs/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/load-balancer",
@@ -5805,11 +5805,11 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer#types_of_load_balancers"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer#types_of_load_balancers"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
@@ -6149,7 +6149,7 @@
   ],
   [
     "/en/data-processing/bigdata/tariffication",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/data-processing/bigdata/tariffication",
@@ -6165,7 +6165,7 @@
   ],
   [
     "/en/data-processing/kafka/concepts/architecture",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer"
   ],
   [
     "/en/data-processing/kafka/service-management/create",
@@ -6225,7 +6225,7 @@
   ],
   [
     "/en/data-processing/kafka/tariffication",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/data-processing/flink/service-management/create",
@@ -6289,7 +6289,7 @@
   ],
   [
     "/en/data-processing/flink/tariffication",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
   ],
   [
     "/en/ml/mlplatform/concepts/mlflow-modes",
@@ -6389,11 +6389,11 @@
   ],
   [
     "/en/ml/mlplatform/deploymlflow/quick-start/create",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/quick-start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/mlplatform/deploymlflow/quick-start/create",
-    "http://localhost:3000/docs/en/ml/mlplatform/mlflow/quick-start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/mlflow/service-management/create"
   ],
   [
     "/en/ml/mlplatform/deploymlflow/quick-start/create",
@@ -6401,15 +6401,15 @@
   ],
   [
     "/en/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/quick-start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
-    "http://localhost:3000/docs/en/ml/mlplatform/mlflow/quick-start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/mlflow/service-management/create"
   ],
   [
     "/en/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/quick-start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/mlplatform/deploymlflow/service-management/delete",
@@ -6421,7 +6421,7 @@
   ],
   [
     "/en/ml/mlplatform/faq",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/quick-start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/spark-to-k8s/connect/spark-connect",
@@ -7856,202 +7856,6 @@
     "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/iaas/create"
   ],
   [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/nfs",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/nfs",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/iaas/create"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/keypair",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/iaas/volumes",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/dbs/dbaas/concepts/work-configs"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/load-balancer"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/networks/vnet/tariffs"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/about"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/dbs/dbaas/service-management/managing-extensions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/en/dbs/dbaas/service-management/users"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster/create-terraform"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/helpers/terraform-howto"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions/"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start#update_terraform"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start#update_terraform"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start#update_terraform"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
-  ],
-  [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
@@ -8104,30 +7908,6 @@
     "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
-    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information"
-  ],
-  [
-    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups#view_a_list_of_security_groups_and_information_about_them"
-  ],
-  [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn",
     "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
   ],
@@ -8174,6 +7954,258 @@
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups#view_a_list_of_security_groups_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting#secgroups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/nfs",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/nfs",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/iaas/create"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/keypair",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/iaas/volumes",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/networks/cdn/concepts"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/networks/cdn/concepts/origin-groups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/networks/cdn/concepts/origin-groups"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/cdn#ssl"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/cdn#cdn"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/en/networks/cdn/service-management/manage-origin-groups#origin_group_list"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions/"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/dbs/dbaas/concepts/work-configs"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/networks/vnet/tariffication"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/dbs/dbaas/service-management/managing-extensions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/en/dbs/dbaas/service-management/users"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster/create-terraform"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/helpers/terraform-howto"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start#update_terraform"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start#update_terraform"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start#update_terraform"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
@@ -8649,7 +8681,7 @@
   ],
   [
     "/ru/intro/start/concepts/glossary",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/intro/start/concepts/architecture",
@@ -8673,7 +8705,7 @@
   ],
   [
     "/ru/intro/start/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer"
   ],
   [
     "/ru/intro/start/concepts/architecture",
@@ -10765,7 +10797,7 @@
   ],
   [
     "/ru/computing/iaas/tariffication",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/computing/iaas/tariffication",
@@ -11165,7 +11197,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/about",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer"
   ],
   [
     "/ru/networks/vnet/concepts/about",
@@ -11177,7 +11209,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/about",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/about",
@@ -13089,7 +13121,7 @@
   ],
   [
     "/ru/dbs/dbaas/quick-start",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/dbs/dbaas/concepts/about",
@@ -13269,7 +13301,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
@@ -13321,7 +13353,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -13361,11 +13393,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -13389,7 +13421,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -13429,7 +13461,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -13445,7 +13477,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -13677,7 +13709,7 @@
   ],
   [
     "/ru/dbs/dbaas/tariffication",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/dbs/dbaas/extensions/postgresql",
@@ -13805,11 +13837,11 @@
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
@@ -13981,11 +14013,11 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -14029,11 +14061,11 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -14413,11 +14445,11 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -14509,11 +14541,11 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -14673,11 +14705,11 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/manage-addons",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/manage-addons",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/manage-addons",
@@ -14793,11 +14825,11 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -14865,7 +14897,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
-    "http://localhost:3000/docs/ru/manage/tools-for-using-services/terraform/quick-start"
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
@@ -14929,11 +14961,11 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -15425,11 +15457,11 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-tcp",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-tcp",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-tcp",
@@ -15461,11 +15493,11 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-http",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-http",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/ingress/ingress-http",
@@ -15525,11 +15557,11 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/storage",
@@ -15617,11 +15649,11 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
@@ -15629,7 +15661,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
-    "http://localhost:3000/docs/ru/networks/vnet/networks/fip"
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/load-balancer",
@@ -15753,11 +15785,11 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
@@ -16181,7 +16213,7 @@
   ],
   [
     "/ru/data-processing/bigdata/tariffication",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs#tarificiruetsya"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
   ],
   [
     "/ru/data-processing/bigdata/tariffication",
@@ -16249,7 +16281,7 @@
   ],
   [
     "/ru/data-processing/flink/tariffication",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/data-processing/kafka/quick-start",
@@ -16261,7 +16293,7 @@
   ],
   [
     "/ru/data-processing/kafka/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer"
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
@@ -16321,7 +16353,7 @@
   ],
   [
     "/ru/data-processing/kafka/tariffication",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/data-processing/trino/concepts/architecture",
@@ -16353,7 +16385,7 @@
   ],
   [
     "/ru/data-processing/trino/tariffication",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
   ],
   [
     "/ru/ml/mlplatform/concepts/mlflow-modes",
@@ -16445,7 +16477,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/create",
-    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/create",
@@ -16477,7 +16509,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/manage",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/delete"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage#delete"
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/manage",
@@ -16509,7 +16541,7 @@
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/service-management/create",
-    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/service-management/create",
@@ -16557,15 +16589,15 @@
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
-    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
-    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
-    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/connect"
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-authz",
@@ -16889,7 +16921,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -17029,7 +17061,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -17081,7 +17113,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/quick-start/create"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/create"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -17097,7 +17129,7 @@
   ],
   [
     "/ru/ml/mlplatform/faq",
-    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/connect"
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/ru/ml/spark-to-k8s/concepts/about",
@@ -19972,186 +20004,6 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/iaas/create"
   ],
   [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/dbs/dbaas/concepts/work-configs"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/networks/vnet/tariffs"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/mysql#poluchenie_informacii_ob_instanse_bd_i_ego_hostah"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/managing-extensions#192-tabpanel-1"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/users#prosmotr_spiska_polzovateley"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/create-cluster/create-terraform"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/helpers/terraform-howto"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#avtomaticheskaya_ochistka_baketa"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#user-id"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#permissons"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start#obnovlenie_terraform"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start#obnovlenie_terraform"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start#obnovlenie_terraform"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
-  ],
-  [
-    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow"
-  ],
-  [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
@@ -20274,6 +20126,218 @@
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/origin-groups"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/origin-groups"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/cdn#ssl"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/cdn#cdn"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-origin-groups#origin_group_list"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#avtomaticheskaya_ochistka_baketa"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#user-id"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#permissons"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/dbs/dbaas/concepts/work-configs"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/mysql#poluchenie_informacii_ob_instanse_bd_i_ego_hostah"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/managing-extensions#192-tabpanel-1"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/users#prosmotr_spiska_polzovateley"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/create-cluster/create-terraform"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/helpers/terraform-howto"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start#obnovlenie_terraform"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start#obnovlenie_terraform"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start#obnovlenie_terraform"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/spark/create",
@@ -20889,7 +20953,7 @@
   ],
   [
     "/ru/cases/performance-testing/network-testing",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn#sprut"
   ],
   [
     "/ru/cases/performance-testing/network-testing",
