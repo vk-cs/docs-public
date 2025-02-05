@@ -107,9 +107,9 @@ The requirements of the individual add-on components:
 
 <warn>
 
-When installing the add-on, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 
@@ -182,9 +182,9 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 <warn>
 
-When installing the add-on, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 

@@ -44,7 +44,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Install Terraform and configure the environment](/ru/manage/tools-for-using-services/terraform/quick-start), if it is not already done.
+   1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start), if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster the following resource and data sources:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource
@@ -74,7 +74,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 </tabpanel>
 
-## {heading(Editing add-on settings code during installation))[id=editing_addon_settings_code_during_installation]}
+## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
 The full add-on settings code along with the description of the fields is available:
 

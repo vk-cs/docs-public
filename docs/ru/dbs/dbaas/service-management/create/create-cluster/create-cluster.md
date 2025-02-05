@@ -86,7 +86,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffs#tarificiruetsya).
+        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -187,9 +187,9 @@
 
 <warn>
 
-При создании кластера перечисленных типов СУБД для него будет создан [сервисный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При создании кластера перечисленных типов СУБД для него будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
-Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
+Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
 
 </warn>
 
@@ -248,7 +248,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffs#tarificiruetsya).
+        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -398,7 +398,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffs#tarificiruetsya).
+        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -483,7 +483,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffs#tarificiruetsya).
+        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 

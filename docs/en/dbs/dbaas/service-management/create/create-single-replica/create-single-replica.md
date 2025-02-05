@@ -53,7 +53,7 @@
 
         <warn>
 
-        The use of a floating IP address is [charged](/en/networks/vnet/tariffs).
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
         </warn>
 

@@ -9,7 +9,7 @@ The configuration and cost of the services are given in the [price list](https:/
 - Licenses (for example, for PostgresPro) — for each day of license use.
 - Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD or High-IOPS SSD).
 - Disk snapshot (backup) — for every 1 GB of snapshot size.
-- IP addresses and load balancers, for more information, see [Virtual networks](/en/networks/vnet/tariffs).
+- IP addresses and load balancers, for more information, see [Virtual networks](/en/networks/vnet/tariffication).
 - System disks.
 - Depending on the DBMS type: disk for the transaction log.
 

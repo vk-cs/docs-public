@@ -17,7 +17,7 @@ To learn how to pay for the service, see the section [Billing](/en/intro/billing
 - CPU — for each core.
 - RAM — for each 1 GB of RAM.
 - Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD or High-IOPS SSD).
-- IP addresses and load balancers, for more information, see [Cloud Networks](/en/networks/vnet/tariffs).
+- IP addresses and load balancers, for more information, see [Cloud Networks](/en/networks/vnet/tariffication).
 - System disks.
 
 ## Not charged

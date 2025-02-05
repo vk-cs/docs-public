@@ -53,7 +53,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffs#tarificiruetsya).
+        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 

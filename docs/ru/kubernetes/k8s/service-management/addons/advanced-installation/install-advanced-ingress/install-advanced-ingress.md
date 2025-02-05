@@ -2,9 +2,9 @@
 
 <warn>
 
-При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
-Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
+Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
 
 </warn>
 
