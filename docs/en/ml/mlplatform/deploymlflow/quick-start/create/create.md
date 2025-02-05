@@ -6,8 +6,8 @@ Creating MLflow Deploy instances is available both through your VK Cloud managem
 
 ## Before you start
 
-1. [Create](../../../jupyterhub/quick-start/create/) a JupyterHub instance.
-2. [Create](../../../mlflow/quick-start/create/) an MLflow instance.
+1. [Create](../../../jupyterhub/service-management/create/) a JupyterHub instance.
+2. [Create](../../../mlflow/service-management/create/) an MLflow instance.
 
 ## Creating an instance
 

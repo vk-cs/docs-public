@@ -83,9 +83,9 @@
 
 <warn>
 
-При установке аддонов Docker Registry и Ingress NGINX для них будут созданы [стандартные балансировщики нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При установке аддонов Docker Registry и Ingress NGINX для них будут созданы [стандартные балансировщики нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
-Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
+Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 
 </warn>
 

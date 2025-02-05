@@ -591,4 +591,4 @@ tsdb1=>
 Инстанс БД [тарифицируется](../tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
 1. Удалите инстанс БД.
-1. При необходимости [удалите плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta), назначенный инстансу БД. Присутствующие в проекте плавающие IP-адреса [тарифицируются](/ru/networks/vnet/tariffs).
+1. При необходимости [удалите плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta), назначенный инстансу БД. Присутствующие в проекте плавающие IP-адреса [тарифицируются](/ru/networks/vnet/tariffication).

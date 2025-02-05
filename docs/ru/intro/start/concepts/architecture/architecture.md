@@ -11,7 +11,7 @@
 
     - [DNS](/ru/networks/dns) — поддерживает публичный и приватный DNS, обеспечивающий разрешение имен для сервисов платформы VK Cloud.
     - [CDN](/ru/networks/cdn) — организует передачу контента от ваших серверов к пользователям с минимальной задержкой.
-    - [Load Balancer](/ru/networks/vnet/concepts/load-balancer) — распределяет нагрузку на инфраструктуру, обеспечивая отказоустойчивость и гибкое масштабирование приложений.
+    - [Load Balancer](/ru/networks/balancing/concepts/load-balancer) — распределяет нагрузку на инфраструктуру, обеспечивая отказоустойчивость и гибкое масштабирование приложений.
     - [AntiDDoS](/ru/security/firewall-and-protection-ddos#antiddos) — фильтрует трафик, приходящий к развернутым в проекте ресурсам VK Cloud для блокирования DDoS-атак.
     - [WAF](/ru/security/firewall-and-protection-ddos#waf) (Web Application Firewall) — настраивает правила фильтрации входящего и исходящего трафика для обнаружения и блокирования сетевых атак.
 

@@ -17,9 +17,9 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
     <warn>
 
-    When installing the add-on, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+    When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
-    Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+    Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
     </warn>
 

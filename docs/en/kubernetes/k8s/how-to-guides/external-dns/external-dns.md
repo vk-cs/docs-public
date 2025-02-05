@@ -417,11 +417,11 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    - The required `external-dns.alpha.kubernetes.io/hostname` annotation is specified: the domain name to use for the service.
    - The optional `external-dns.alpha.kubernetes.io/ttl` annotation is specified: TTL in seconds for the resource record to be created by ExternalDNS.
 
-   - The `LoadBalancer` service type is selected. A [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for such a service. Since the load balancer is created with a public IP address, the application associated with the service will be accessible from the Internet.
+   - The `LoadBalancer` service type is selected. A [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for such a service. Since the load balancer is created with a public IP address, the application associated with the service will be accessible from the Internet.
 
      <warn>
 
-     Using the load balancer is [charged](/en/networks/vnet/tariffs).
+     Using the load balancer is [charged](/en/networks/vnet/tariffication).
 
      </warn>
 

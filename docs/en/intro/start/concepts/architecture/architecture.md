@@ -11,7 +11,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
 
     - [DNS](/en/networks/dns) — supports public and private DNS, which provides name resolution for VK Cloud platform services.
     - [CDN](/en/networks/cdn) — organizes the transfer of content from your servers to users with minimal delay.
-    - [Load Balancer](/en/networks/vnet/concepts/load-balancer) — distributes the load on the infrastructure, providing fault tolerance and flexible scaling of applications.
+    - [Load Balancer](/en/networks/balancing/concepts/load-balancer) — distributes the load on the infrastructure, providing fault tolerance and flexible scaling of applications.
     - AntiDDoS — filters traffic coming to VK Cloud resources deployed in the project to block DDoS attacks.
     - WAF (Web Application Firewall) — configures incoming and outgoing traffic filtering rules to detect and block network attacks.
 

@@ -7,7 +7,7 @@
 
 Инстанс MLflow может работать в двух режимах: в [связке с JupyterHub](../../../concepts/mlflow-modes#with_jh) или отдельно, в [режиме Standalone](../../../concepts/mlflow-modes#standalone).
 
-Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/quick-start/create/) его.
+Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/service-management/create/) его.
 
 Чтобы создать инстанс MLflow:
 

@@ -2,9 +2,9 @@
 
 <warn>
 
-При развертывании для каждого из сервисов будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При развертывании для каждого из сервисов будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
-Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
+Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 
 </warn>
 
@@ -95,7 +95,7 @@
 </tablist>
 <tabpanel>
 
-1. Выберите публичный IP-адрес, который нужно назначить балансировщику или создайте новый. Это можно сделать в [личном кабинете VK Cloud](../../../../networks/vnet/networks/fip).
+1. Выберите публичный IP-адрес, который нужно назначить балансировщику или создайте новый. Это можно сделать в [личном кабинете VK Cloud](../../../../networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt).
 
    К IP-адресу не должно быть привязано внутреннего IP-адреса.
 

@@ -2,9 +2,9 @@
 
 <warn>
 
-When installing the add-on, [standard load balancers](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 

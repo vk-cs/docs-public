@@ -92,7 +92,7 @@
 
 <info>
 
-Если инстанс MLflow связан с MLflow Deploy, сначала [удалите инстанс MLflow Deploy](../../../deploymlflow/service-management/delete).
+Если инстанс MLflow связан с MLflow Deploy, сначала [удалите инстанс MLflow Deploy](../../../deploymlflow/service-management/manage#delete).
 
 </info>
 
