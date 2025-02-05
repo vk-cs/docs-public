@@ -6424,6 +6424,14 @@
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/quick-start/connect"
   ],
   [
+    "/en/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create"
+  ],
+  [
+    "/en/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/spark/create"
+  ],
+  [
     "/en/ml/spark-to-k8s/concepts/about",
     "http://localhost:3000/docs/en/kubernetes/k8s"
   ],
