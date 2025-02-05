@@ -204,9 +204,9 @@ After making changes to the option, [clear the CDN resource cache](../content-se
 
 </warn>
 
-## Activating shielding
+## {heading(Activating shielding)[id=shielding]}
 
-Origin shielding (or precache server) helps to protect the origin from high loads. The precache server collects all user requests and sends them one by one to the origin if the required content is not in the cache of the precache server itself.
+Origin shielding helps to protect the origin from high loads, using a precache server. The precache server collects all user requests and sends them one by one to the origin if the required content is not in the cache of the precache server itself.
 
 <info>
 
