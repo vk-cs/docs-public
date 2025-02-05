@@ -10,7 +10,7 @@
 
 Прежде чем приступить к созданию инстанса MLflow Deploy, подготовьте необходимую инфраструктуру:
 
-1. Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/quick-start/create/) его.
+1. Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/service-management/create/) его.
 1. [Создайте](../../../mlflow/service-management/create) инстанс MLflow или MLflow Standalone, если это еще не сделано.
 
 Чтобы создать инстанс MLflow Deploy:

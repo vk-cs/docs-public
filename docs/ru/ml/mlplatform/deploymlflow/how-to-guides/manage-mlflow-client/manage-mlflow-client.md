@@ -3,8 +3,8 @@
 
 ## Перед началом работы
 
-1. [Создайте](../../../jupyterhub/quick-start/create/) инстанс JupyterHub.
-2. [Создайте](../../../mlflow/quick-start/create/) инстанс MLflow.
+1. [Создайте](../../../jupyterhub/service-management/create/) инстанс JupyterHub.
+2. [Создайте](../../../mlflow/service-management/create/) инстанс MLflow.
 3. Перезагрузите виртуальную машину с JupyterHub:
    1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
    1. В подразделе **Инстансы ML Platform** нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса JupyterHub и выберите пункт **Перезагрузить**.
@@ -17,7 +17,7 @@
 
 ## Подготовка ML-модели
 
-1. [Подключитесь](../../../jupyterhub/quick-start/connect/) к инстансу JupyterHub.
+1. [Подключитесь](../../../jupyterhub/service-management/connect/) к инстансу JupyterHub.
 2. Перейдите в директорию **tutorials**.
 
    В состав JupyterHub от VK Cloud включены обучающие Jupyter-ноутбуки: `mlflow_demo.ipynb` и `mlflow_deploy_demo.ipynb`.

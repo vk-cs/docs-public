@@ -593,4 +593,4 @@ The monitoring service is enabled for PostgreSQL. Look through the gathered moni
 The DB instance [is charged](../tariffication) and consumes computational resources. If you no longer need it, then:
 
 1. [Delete DB instance](../service-management/delete).
-1. If necessary, [delete floating IP address](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project), that was assigned to the DB instance. Floating IP addresses, that exist in the project, [are charged](/en/networks/vnet/tariffs).
+1. If necessary, [delete floating IP address](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project), that was assigned to the DB instance. Floating IP addresses, that exist in the project, [are charged](/en/networks/vnet/tariffication).

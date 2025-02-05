@@ -14,7 +14,7 @@ The service provides networking within the selected VK Cloud platform's [project
 
     They can be used to connect both VK Cloud subnets alone and VK Cloud subnets to subnets at a remote site.
 
-  - [Load balancers](../load-balancer) to distribute incoming traffic across multiple instances of platform services.
+  - [Load balancers](/en/networks/balancing/concepts/load-balancer) to distribute incoming traffic across multiple instances of platform services.
   - [Firewall](../traffic-limiting) with rule groups to restrict traffic to specific platform services.
   - [VPN](../vpn) to connect a third-party network to a network created within the platform.
 

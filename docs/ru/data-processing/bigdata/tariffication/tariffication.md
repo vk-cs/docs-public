@@ -9,7 +9,7 @@
 - [Лицензии](../concepts/licensing/).
 - Диски — за каждый 1 ГБ дискового пространства, цена зависит от типа диска (SSD, HDD, High-IOPS, Low Latency NVME).
 - Резервные копии — за каждый 1 ГБ размера снимка.
-- [публичные IP-адреса](/ru/networks/vnet/tariffs#tarificiruetsya).
+- [публичные IP-адреса](/ru/networks/vnet/tariffication#tarificiruetsya).
 
 ## Не тарифицируется
 

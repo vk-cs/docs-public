@@ -30,6 +30,6 @@ You can learn more about managing VM instances in ["Starting, Stopping, and Rest
 
 The Jupyter Kernel needs to be restarted after installing the libraries or if it hangs. To restart the Kernel, in the JupyterHub interface, select the menu item "Kernel" -> "Restart Kernel".
 
-You can learn more about connecting to the JupyterHub interface in the article [“Connecting to JupyterHub”](../jupyterhub/quick-start/connect/).
+You can learn more about connecting to the JupyterHub interface in the article [“Connecting to JupyterHub”](../jupyterhub/service-management/connect/).
 
 </details>

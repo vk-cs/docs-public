@@ -2,8 +2,8 @@ Manage MLflow Deploy instances using MLflow Deployment Client, a python library 
 
 ## Before you start
 
-1. [Create](../../../jupyterhub/quick-start/create/) a JupyterHub instance.
-2. [Create](../../../mlflow/quick-start/create/) an MLflow instance.
+1. [Create](../../../jupyterhub/service-management/create/) a JupyterHub instance.
+2. [Create](../../../mlflow/service-management/create/) an MLflow instance.
 3. Reboot the virtual machine with the JupyterHub instance:
     1. Go to **Cloud Servers → Virtual machines**.
     2. In the **ML Platform Instances** subsection, find the JupyterHub you need instance.
@@ -17,7 +17,7 @@ JupyterHub, MLflow and MLflow Deploy instances must be created on the same netwo
 
 ## Preparing the model
 
-1. [Connect](../../../jupyterhub/quick-start/connect/) to the JupyterHub instance.
+1. [Connect](../../../jupyterhub/service-management/connect/) to the JupyterHub instance.
 2. Open the **tutorials** directory.
 
     JupyterHub from VK Cloud includes training Jupyter notebooks: `mlflow_demo.ipynb` and `mlflow_deploy_demo.ipynb`.

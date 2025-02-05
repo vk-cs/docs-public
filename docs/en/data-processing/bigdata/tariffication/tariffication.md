@@ -9,7 +9,7 @@ The cost of network services is given in [price list](https://cloud.vk.com/price
 - [Licenses](../concepts/licensing/).
 - Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVME).
 - Disk snapshot (backup) — for every 1 GB of snapshot size.
-- [Floating IP addresses](/en/networks/vnet/tariffs).
+- [Floating IP addresses](/en/networks/vnet/tariffication).
 
 ## What is not charged
 
