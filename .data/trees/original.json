@@ -8670,6 +8670,96 @@
     ]
   },
   {
+    "uuid": "533d83cb-42fb-40ec-aa5f-2edc18ccea46",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vnet.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vnet.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0705e6dd-fb0b-4bee-ac41-0da12b11f7ab",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network/network.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network/network.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f84c78b0-333d-403b-8998-8f5cd404ce9d",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn/vpn.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn/vpn.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "39e5018f-e040-49ad-af48-0adc3c4e20a2",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/lb",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/lb/lb.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/lb/lb.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ae7b13c4-c7a3-4b36-a5ec-66b889d19769",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing/networks-routing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing/networks-routing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ac1ac684-b859-4221-b95e-fbdec0d78213",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "03c064ea-f496-4468-9286-2196733efc90",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -8745,6 +8835,36 @@
     ]
   },
   {
+    "uuid": "83049232-592e-4050-9f49-f071b2c6e2d1",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/cdn",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/cdn/cdn.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/cdn/cdn.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "318b32c9-9810-43fe-9142-56c9391b9524",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "eb5034ac-f26d-4abb-a050-74cdc3ab8018",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -8805,21 +8925,6 @@
     ]
   },
   {
-    "uuid": "318b32c9-9810-43fe-9142-56c9391b9524",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/aws",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "89340d10-bfea-4c2c-a96a-eebaa42abb5c",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -8872,96 +8977,6 @@
     "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow/deploymlflow.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow/deploymlflow.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "533d83cb-42fb-40ec-aa5f-2edc18ccea46",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vnet.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vnet.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "0705e6dd-fb0b-4bee-ac41-0da12b11f7ab",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network/network.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network/network.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "ac1ac684-b859-4221-b95e-fbdec0d78213",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f84c78b0-333d-403b-8998-8f5cd404ce9d",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn/vpn.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn/vpn.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "39e5018f-e040-49ad-af48-0adc3c4e20a2",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/lb",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/lb/lb.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/lb/lb.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "ae7b13c4-c7a3-4b36-a5ec-66b889d19769",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing/networks-routing.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing/networks-routing.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -21723,141 +21738,6 @@
     ]
   },
   {
-    "uuid": "806b42d8-3f18-4777-8aa5-8ff492a572f8",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/dbaas.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/dbaas.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "05965f87-b66c-4650-b368-a0355f7a353d",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance/create-db-instance.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance/create-db-instance.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "eace3838-1ea1-44ea-8ff8-1b3020151771",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/k8s",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/k8s.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/k8s.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "aad57e44-a3e2-41ff-8a70-b8546cee5142",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/create/create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/create/create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/aws",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/aws/aws.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "c7b4e18d-fdec-4100-a8b6-01b3c8ffb544",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlplatform.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlplatform.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "66fd85f6-5860-48e2-a2ce-73dfcacc8043",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub/jupyterhub.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub/jupyterhub.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "42a38910-568b-4db3-9420-5aea83a2765a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow/mlflow.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow/mlflow.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "881ae303-17ab-436c-b3f3-0319b85e791f",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow/deploymlflow.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow/deploymlflow.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "9336a564-a734-4519-ad39-081dfb11589f",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -21940,6 +21820,156 @@
     "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing/networks-routing.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing/networks-routing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c9ef334a-2a4b-4da7-b31e-863ae9047f1b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/cdn",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/cdn/cdn.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/cdn/cdn.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/aws/aws.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "806b42d8-3f18-4777-8aa5-8ff492a572f8",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/dbaas.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/dbaas.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "05965f87-b66c-4650-b368-a0355f7a353d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance/create-db-instance.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance/create-db-instance.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "eace3838-1ea1-44ea-8ff8-1b3020151771",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/k8s",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/k8s.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/k8s.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "aad57e44-a3e2-41ff-8a70-b8546cee5142",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c7b4e18d-fdec-4100-a8b6-01b3c8ffb544",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlplatform.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlplatform.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "66fd85f6-5860-48e2-a2ce-73dfcacc8043",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub/jupyterhub.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub/jupyterhub.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "42a38910-568b-4db3-9420-5aea83a2765a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow/mlflow.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow/mlflow.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "881ae303-17ab-436c-b3f3-0319b85e791f",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow/deploymlflow.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow/deploymlflow.md",
     "variables": {},
     "hidden": false,
     "version": null,

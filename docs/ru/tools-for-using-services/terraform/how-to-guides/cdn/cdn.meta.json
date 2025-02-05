@@ -1,10 +1,11 @@
 {
-    "title": "CDN",
-    "pageDescription": "Как использовать Terraform для управления объектами сервиса CDN.",
-    "shortDescription": "Как использовать Terraform для управления объектами сервиса CDN",
-    "metaTitle": "CDN",
-    "metaDescription": "Как использовать Terraform для управления объектами сервиса CDN",
-    "sectionTitle": "CDN",
-    "icon": "",
-    "weight": 30
+  "title": "CDN",
+  "pageDescription": "Как использовать Terraform для управления объектами сервиса CDN.",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса CDN",
+  "metaTitle": "CDN",
+  "metaDescription": "Как использовать Terraform для управления объектами сервиса CDN",
+  "sectionTitle": "CDN",
+  "icon": "",
+  "weight": 30,
+  "uuid": "c9ef334a-2a4b-4da7-b31e-863ae9047f1b"
 }

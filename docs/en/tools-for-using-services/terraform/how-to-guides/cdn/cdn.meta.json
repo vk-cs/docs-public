@@ -1,10 +1,11 @@
 {
-    "title": "CDN",
-    "pageDescription": "How to use Terraform to manage the CDN service objects.",
-    "shortDescription": "How to use Terraform to manage the CDN service objects",
-    "metaTitle": "CDN",
-    "metaDescription": "How to use Terraform to manage the CDN service objects",
-    "sectionTitle": "CDN",
-    "icon": "",
-    "weight": 30
+  "title": "CDN",
+  "pageDescription": "How to use Terraform to manage the CDN service objects.",
+  "shortDescription": "How to use Terraform to manage the CDN service objects",
+  "metaTitle": "CDN",
+  "metaDescription": "How to use Terraform to manage the CDN service objects",
+  "sectionTitle": "CDN",
+  "icon": "",
+  "weight": 30,
+  "uuid": "83049232-592e-4050-9f49-f071b2c6e2d1"
 }
