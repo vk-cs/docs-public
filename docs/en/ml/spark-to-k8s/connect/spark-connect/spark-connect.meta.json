@@ -1,0 +1,9 @@
+{
+  "title": "Connecting to a Spark cluster via Spark Connect",
+  "pageDescription": "How to remotely connect to a Spark cluster and work with it via IDE or Jupyter Notebook.",
+  "shortDescription": "How to remotely connect to a Spark cluster and work with it via IDE or Jupyter Notebook",
+  "metaTitle": "Connecting to a Spark cluster via Spark Connect",
+  "metaDescription": "How to remotely connect to a Spark cluster and work with it via IDE or Jupyter Notebook",
+  "sectionTitle": "Connecting to a Spark cluster via Spark Connect",
+  "icon": ""
+}
