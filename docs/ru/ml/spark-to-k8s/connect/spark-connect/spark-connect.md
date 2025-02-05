@@ -16,8 +16,8 @@ Spark Connect позволяет удаленно подключиться к к
 1. Поместите нужный набор данных в привязанный к кластеру бакет Cloud Storage:
 
     1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
-    1. Выберите бакет, привязанный к кластеру. Его имя соответствует маске `<имя кластера>-<доменное имя>-bucket`.
-    1. Перейдите в директорию **datasets** и добавьте в нее файл данными.
+    1. Выберите бакет, привязанный к кластеру. Его имя соответствует маске `<ИМЯ_КЛАСТЕРА>-<ДОМЕННОЕ_ИМЯ>-bucket`.
+    1. Перейдите в директорию **datasets** и добавьте в нее файл с данными.
     1. Сохраните имя бакета для дальнейшего использования.
 1. [Создайте токен](../../ml-platform-library/authz#create_token_console) доступа с правами администратора для библиотеки ML Platform.
 
@@ -68,13 +68,13 @@ pip3 install grpcio-status
     ```python
     from pyspark.sql import SparkSession
 
-    ADMIN_REFRESH_TOKEN = "<токен доступа>"
+    ADMIN_REFRESH_TOKEN = "<ТОКЕН_ДОСТУПА>"
 
-    spark_connect_url = f"sc://<доменное имя кластера>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"
+    spark_connect_url = f"sc://<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"
 
-    spark = SparkSession.builder.remote(spark_connect_url).appName("<имя приложения>").getOrCreate()
+    spark = SparkSession.builder.remote(spark_connect_url).appName("<ИМЯ_ПРИЛОЖЕНИЯ>").getOrCreate()
 
-    df = spark.read.csv("s3a://<имя бакета>/datasets/<имя набора данных>.csv", header=True, inferSchema=True)
+    df = spark.read.csv("s3a://<ИМЯ_БАКЕТА>/datasets/<ИМЯ_НАБОРА_ДАННЫХ>.csv", header=True, inferSchema=True)
 
     df.show()
     spark.stop()
@@ -82,7 +82,7 @@ pip3 install grpcio-status
 
     Здесь:
 
-    - `<токен доступа>`: токен доступа к библиотеке ML Platform, созданный ранее.
+    - `<ТОКЕН_ДОСТУПА>` — токен доступа к библиотеке ML Platform, созданный ранее;
 
     <err>
 
@@ -90,10 +90,10 @@ pip3 install grpcio-status
 
     </err>
 
-    - `<доменное имя кластера>`: DNS-имя кластера, например: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
-    - `<имя приложения>`: имя приложения, которое будет отображаться в интерфейсе кластера.
-    - `<имя бакета>`: имя бакета Cloud Storage, связанного с кластером Spark.
-    - `<имя набора данных>`: имя набора данных, загруженного ранее в бакет Cloud Storage.
+    - `<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>` — DNS-имя кластера, например: `k8s-3d3b7fddd30040.ml.bizmrg.com`;
+    - `<ИМЯ_ПРИЛОЖЕНИЯ>` — имя приложения, которое будет отображаться в интерфейсе кластера;
+    - `<ИМЯ_БАКЕТА>` — имя бакета Cloud Storage, связанного с кластером Spark;
+    - `<ИМЯ_НАБОРА_ДАННЫХ>` — имя набора данных, загруженного ранее в бакет Cloud Storage.
 
 1. Откройте скрипт в вашей IDE и запустите выполнение скрипта.
 
@@ -111,11 +111,11 @@ pip3 install grpcio-status
     from pyspark.sql import Row
 
 
-    ADMIN_REFRESH_TOKEN = "<токен доступа>"
+    ADMIN_REFRESH_TOKEN = "<ТОКЕН_ДОСТУПА>"
 
-    spark_connect_url = f"sc://<доменное имя кластера>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"
+    spark_connect_url = f"sc://<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"
 
-    spark = SparkSession.builder.remote(spark_connect_url).appName("<имя приложения>").getOrCreate()
+    spark = SparkSession.builder.remote(spark_connect_url).appName("<ИМЯ_ПРИЛОЖЕНИЯ>").getOrCreate()
 
     df = spark.createDataFrame([
     Row(a=1, b=2., c='string1', d=date(2000, 1, 1), e=datetime(2000, 1, 1, 12, 0)),
@@ -129,7 +129,7 @@ pip3 install grpcio-status
 
     Здесь:
 
-    - `<токен доступа>`: токен доступа к библиотеке ML Platform, созданный ранее.
+    - `<ТОКЕН_ДОСТУПА>` — токен доступа к библиотеке ML Platform, созданный ранее;
 
     <err>
 
@@ -137,8 +137,8 @@ pip3 install grpcio-status
 
     </err>
 
-    - `<доменное имя кластера>`: DNS-имя кластера, например: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
-    - `<имя приложения>`: имя приложения, которое будет отображаться в интерфейсе кластера.
+    - `<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>` — DNS-имя кластера, например: `k8s-3d3b7fddd30040.ml.bizmrg.com`;
+    - `<ИМЯ_ПРИЛОЖЕНИЯ>` — имя приложения, которое будет отображаться в интерфейсе кластера.
 
 1. Откройте скрипт в вашей IDE и запустите выполнение скрипта.
 
@@ -161,13 +161,13 @@ pip3 install grpcio-status
     ```python
     from pyspark.sql import SparkSession
 
-    ADMIN_REFRESH_TOKEN = "<токен доступа>"
+    ADMIN_REFRESH_TOKEN = "<ТОКЕН_ДОСТУПА>"
 
-    spark_connect_url = f"sc://<доменное имя кластера>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"
+    spark_connect_url = f"sc://<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"
 
-    spark = SparkSession.builder.remote(spark_connect_url).appName("<имя приложения>") \
+    spark = SparkSession.builder.remote(spark_connect_url).appName("<ИМЯ_ПРИЛОЖЕНИЯ>") \
     .config("spark.sql.legacy.setCommandRejectsSparkCoreConfs", "false") \
-    .config("spark.jars.packages", "<название пакета из Maven>") \
+    .config("spark.jars.packages", "<НАЗВАНИЕ_ПАКЕТА_ИЗ_MAVEN>") \
     .getOrCreate()
 
     spark.stop()
@@ -175,7 +175,7 @@ pip3 install grpcio-status
 
     Здесь:
 
-    - `<токен доступа>`: токен доступа к библиотеке ML Platform, созданный ранее.
+    - `<ТОКЕН_ДОСТУПА>` — токен доступа к библиотеке ML Platform, созданный ранее;
 
     <err>
 
@@ -183,9 +183,9 @@ pip3 install grpcio-status
 
     </err>
 
-    - `<доменное имя кластера>`: DNS-имя кластера, например: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
-    - `<имя приложения>`: имя приложения, которое будет отображаться в интерфейсе кластера.
-    - `<название пакета из Maven>`: название библиотеки (jar-файла) из репозитория Maven, например: `org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1`.
+    - `<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>` — DNS-имя кластера, например: `k8s-3d3b7fddd30040.ml.bizmrg.com`;
+    - `<ИМЯ_ПРИЛОЖЕНИЯ>` — имя приложения, которое будет отображаться в интерфейсе кластера;
+    - `<НАЗВАНИЕ_ПАКЕТА_ИЗ_MAVEN>` — название библиотеки (jar-файла) из репозитория Maven, например: `org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1`.
 
 1. Откройте скрипт в вашей IDE и запустите выполнение скрипта.
 1. Проверьте, что все нужные зависимости загружены. Иногда зависимости могут не загружаться, в этом случае запустите скрипт снова.
