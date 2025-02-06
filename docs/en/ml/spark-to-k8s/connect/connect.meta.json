@@ -2,9 +2,10 @@
   "title": "Connecting to Spark cluster",
   "pageDescription": "How to connect to a Spark cluster.",
   "shortDescription": "How to connect to a Spark cluster",
-  "metaTitle": "Connecting to a Spark cluster",
+  "metaTitle": "Connecting to Spark cluster",
   "metaDescription": "How to connect to a Spark cluster",
-  "sectionTitle": "Connecting to a Spark cluster",
+  "sectionTitle": "Connecting to Spark cluster",
   "icon": "",
+  "weight": 1,
   "uuid": "df4a0f01-a6f1-4b68-9853-8edb194116e5"
 }
