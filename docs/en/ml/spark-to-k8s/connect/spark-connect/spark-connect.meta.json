@@ -1,10 +1,11 @@
 {
-  "title": "Connecting to a Spark cluster via Spark Connect",
+  "title": "Connecting to Spark cluster via Spark Connect",
   "pageDescription": "How to remotely connect to a Spark cluster and work with it via IDE or Jupyter Notebook.",
   "shortDescription": "How to remotely connect to a Spark cluster and work with it via IDE or Jupyter Notebook",
-  "metaTitle": "Connecting to a Spark cluster via Spark Connect",
+  "metaTitle": "Connecting to Spark cluster via Spark Connect",
   "metaDescription": "How to remotely connect to a Spark cluster and work with it via IDE or Jupyter Notebook",
-  "sectionTitle": "Connecting to a Spark cluster via Spark Connect",
+  "sectionTitle": "Connecting to Spark cluster via Spark Connect",
   "icon": "",
+  "weight": 1,
   "uuid": "d1b9f44d-6453-4f9f-a062-e6e76d1ec4c7"
 }
