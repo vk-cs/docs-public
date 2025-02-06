@@ -6424,14 +6424,6 @@
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
-    "/en/ml/spark-to-k8s/connect/spark-connect",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create"
-  ],
-  [
-    "/en/ml/spark-to-k8s/connect/spark-connect",
-    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/spark/create"
-  ],
-  [
     "/en/ml/spark-to-k8s/concepts/about",
     "http://localhost:3000/docs/en/kubernetes/k8s"
   ],
@@ -6458,6 +6450,14 @@
   [
     "/en/ml/spark-to-k8s/concepts/architecture",
     "http://localhost:3000/docs/en/storage/s3"
+  ],
+  [
+    "/en/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create"
+  ],
+  [
+    "/en/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/spark/create"
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
@@ -9189,7 +9189,7 @@
   ],
   [
     "/ru/intro/start/legal/vk/policy-1cgrm",
-    "http://localhost:3000/docs/ru/intro/start/legal/policy-privacy"
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/policy-privacy"
   ],
   [
     "/ru/intro/start/legal/vk/policy-152fz",
@@ -9461,11 +9461,11 @@
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/base/account/concepts/regions"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/base/account/concepts/projects"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects"
   ],
   [
     "/ru/intro/billing/concepts/balance",
@@ -13305,7 +13305,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/dbs/dbaas/connect/ssh"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
@@ -13701,7 +13701,7 @@
   ],
   [
     "/ru/dbs/dbaas/monitoring/postgresql",
-    "http://localhost:3000/docs/ru/dbs/dbaas/config/db-config"
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/db-config"
   ],
   [
     "/ru/dbs/dbaas/tariffication",
@@ -13809,7 +13809,7 @@
   ],
   [
     "/ru/dbs/adb/connect/int-connect-adb",
-    "http://localhost:3000/docs/ru/dbs/dbaas/dbaas-start/db-connect"
+    "http://localhost:3000/docs/ru/dbs/dbaas/connect"
   ],
   [
     "/ru/dbs/adb/connect/ext-connect-adb",
@@ -14193,7 +14193,7 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/flavors",
-    "http://localhost:3000/docs/ru/computing/gpu/about"
+    "http://localhost:3000/docs/ru/computing/gpu/concepts/about"
   ],
   [
     "/ru/kubernetes/k8s/concepts/flavors",
@@ -17137,7 +17137,7 @@
   ],
   [
     "/ru/ml/spark-to-k8s/concepts/about",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-registry"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry"
   ],
   [
     "/ru/ml/spark-to-k8s/concepts/about",
@@ -18657,7 +18657,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/concepts/about",
-    "http://localhost:3000/docs/ru/intro/start/legal/marketplace"
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/marketplace"
   ],
   [
     "/ru/applications-and-services/marketplace/concepts/about",
@@ -19769,7 +19769,7 @@
   ],
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_create_cloud",
-    "http://localhost:3000/docs/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in",
@@ -19929,7 +19929,7 @@
   ],
   [
     "/ru/tools-for-using-services/vendor-account/manage-apps/service_description",
-    "http://localhost:3000/docs/ru/intro/start/legal/marketplace"
+    "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/marketplace"
   ],
   [
     "/ru/tools-for-using-services/cli/openstack-cli",

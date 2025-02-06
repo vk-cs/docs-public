@@ -6435,36 +6435,6 @@
     ]
   },
   {
-    "uuid": "df4a0f01-a6f1-4b68-9853-8edb194116e5",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/en/ml/spark-to-k8s/connect",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/connect.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/connect.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d1b9f44d-6453-4f9f-a062-e6e76d1ec4c7",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/en/ml/spark-to-k8s/connect/spark-connect",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/spark-connect/spark-connect.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/spark-connect/spark-connect.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "5ccdfae6-21c3-4091-ba1a-d448491f8d91",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -6502,6 +6472,36 @@
     "partialPath": "/en/ml/spark-to-k8s/concepts/architecture",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/architecture/architecture.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/architecture/architecture.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "df4a0f01-a6f1-4b68-9853-8edb194116e5",
+    "lang": "en",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/connect.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d1b9f44d-6453-4f9f-a062-e6e76d1ec4c7",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/ml/spark-to-k8s/connect/spark-connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/spark-connect/spark-connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/connect/spark-connect/spark-connect.md",
     "variables": {},
     "hidden": false,
     "version": null,

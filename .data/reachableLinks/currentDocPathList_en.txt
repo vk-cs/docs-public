@@ -426,11 +426,11 @@
 /docs/en/ml/mlplatform/deploymlflow/service-management/delete
 /docs/en/ml/mlplatform/faq
 /docs/en/ml/spark-to-k8s
-/docs/en/ml/spark-to-k8s/connect
-/docs/en/ml/spark-to-k8s/connect/spark-connect
 /docs/en/ml/spark-to-k8s/concepts
 /docs/en/ml/spark-to-k8s/concepts/about
 /docs/en/ml/spark-to-k8s/concepts/architecture
+/docs/en/ml/spark-to-k8s/connect
+/docs/en/ml/spark-to-k8s/connect/spark-connect
 /docs/en/ml/spark-to-k8s/how-to-guides
 /docs/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi
 /docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse
