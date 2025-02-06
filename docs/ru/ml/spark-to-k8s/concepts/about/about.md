@@ -13,7 +13,7 @@ Cloud Spark — решение на базе [Apache Spark Operator](https://git
 
 - Развертывание кластера Spark внутри Kubernetes.
 - Автоматическая настройка master-узлов разворачиваемых кластеров.
-- Использование [Docker Registry](ru/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-registry) от VK Cloud с предустановленным образом Spark.
+- Использование [Docker Registry](ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry) от VK Cloud с предустановленным образом Spark.
 - Горизонтальное и вертикальное масштабирование кластера с поддержкой автоматического масштабирования.
 - Разграничение доступов с помощью токенов и ролевой модели.
 - Удаление кластера или перевод его в спящий режим по расписанию.

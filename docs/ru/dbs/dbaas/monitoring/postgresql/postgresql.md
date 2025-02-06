@@ -107,7 +107,7 @@
 
   В таком случае рекомендуется:
 
-  1. [Увеличить значение параметра](../../../dbaas/config/db-config) `max_connections`.
+  1. [Увеличить значение параметра](../../../dbaas/service-management/db-config) `max_connections`.
   1. Оптимизировать запросы так, чтобы не было длинных транзакций.
 
 - Про устранение проблем, связанных с отставанием реплики, см. документацию [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) и [PostgreSQL](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION).
