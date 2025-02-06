@@ -46,7 +46,7 @@
     sudo apt install iperf3
     ```
 
-1. На тестовой ВМ [подключите](/ru/base/iaas/how-to-guides/vm-multiqueue) механизм множества очередей самостоятельно, либо обратитесь в [техническую поддержку](/ru/contacts), указав в обращении [ID виртуальной машины](/ru/computing/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
+1. На тестовой ВМ [подключите](/ru/computing/iaas/how-to-guides/vm-multiqueue) механизм множества очередей самостоятельно, либо обратитесь в [техническую поддержку](/ru/contacts), указав в обращении [ID виртуальной машины](/ru/computing/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
 1. На дополнительных ВМ выполните команду для запуска серверной части утилиты iPerf:
 
     ```bash

@@ -29,7 +29,7 @@
       Здесь:
 
       * `<KEY_PATH>` — путь к файлу с закрытым ключом доступа к ВМ.
-      * `<USER_NAME>` — имя пользователя ОС. Укажите имя в зависимости от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix).
+      * `<USER_NAME>` — имя пользователя ОС. Укажите имя в зависимости от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
       * `<FLOATING_IP>` — внешний IP-адрес ВМ.
 
    1. Если на ВМ не установлены программные пакеты, указанные в {linkto(../ib_image_requirements/#ib_image_requirements)[text=%text]}, установите их.
