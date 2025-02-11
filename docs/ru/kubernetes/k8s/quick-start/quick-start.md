@@ -149,7 +149,7 @@
    1. Выберите роль **Администратор Kubernetes** из выпадающего списка.
    1. Сохраните изменения.
 
-1. [Активируйте доступ по API](/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api) для этого пользователя.
+1. [Активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api) для этого пользователя.
 
 1. Получите kubeconfig для кластера в [личном кабинете VK Cloud](https://msk.cloud.vk.com/app/):
 

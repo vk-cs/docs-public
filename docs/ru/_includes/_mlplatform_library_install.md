@@ -9,7 +9,7 @@
    </tablist>
    <tabpanel>
 
-   [Создайте инстанс JupyterHub](/ru/ml/mlplatform/jupyterhub/start/create) в проекте VK Cloud. Он уже содержит настроенные Python 3.x и pip, с которыми можно работать из блокнота JupyterHub (notebook).
+   [Создайте инстанс JupyterHub](/ru/ml/mlplatform/jupyterhub/service-management/create) в проекте VK Cloud. Он уже содержит настроенные Python 3.x и pip, с которыми можно работать из блокнота JupyterHub (notebook).
 
    </tabpanel>
    <tabpanel>
@@ -31,7 +31,7 @@
    </tablist>
    <tabpanel>
 
-   1. [Подключитесь к инстансу JupyterHub](/ru/ml/mlplatform/jupyterhub/start/connect).
+   1. [Подключитесь к инстансу JupyterHub](/ru/ml/mlplatform/jupyterhub/service-management/connect).
    1. В блокноте JupyterHub создайте и выполните ячейку со следующим содержимым:
 
       ```bash
