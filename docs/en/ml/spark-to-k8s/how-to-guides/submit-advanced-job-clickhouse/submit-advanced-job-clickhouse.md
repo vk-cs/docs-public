@@ -16,7 +16,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/create) in your VK Cloud project. It already contains the configured Python 3.x and pip, which you can work with from the JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) in your VK Cloud project. It already contains the configured Python 3.x and pip, which you can work with from the JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -38,7 +38,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    </tablist>
    <tabpanel>
 
-   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
       ```bash

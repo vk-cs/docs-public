@@ -300,7 +300,7 @@ Request parameters are passed in JSON format in the request body with `name="met
 
 Each time a known person is recognized, the facial vector representation (embedding) is updated to improve recognition accuracy in the future. However, in some cases, it is better to disable auto-update using the `update_embedding` parameter, for example, when it is known in advance that the photos are of poor quality.
 
-For a description of the space parameter, see the section of the [Set](/ml/vision/manage-vision/face-recognition#set) method.
+For a description of the space parameter, see the section of the [Set](/ml/vision/service-management/face-recognition#set) method.
 
 `image_meta` parameters:
 
@@ -692,7 +692,7 @@ Request parameters are passed in JSON format in the request body with `name="met
 | space | string | numeric identifier used to avoid person collisions (required non-empty) |
 | images | []image_meta | metadata of transferred images (required non-empty) |
 
-For a description of the space parameter, see the section of the [Set](/ml/vision/manage-vision/face-recognition#set) method.
+For a description of the space parameter, see the section of the [Set](/ml/vision/service-management/face-recognition#set) method.
 
 `image_meta` parameters:
 
@@ -828,7 +828,7 @@ Request parameters are passed in JSON format in the request body with `name="met
 | -------- | ------ | -------- |
 | space | string | Numeric identifier used to avoid person collisions (required non-empty)|
 
-For a description of the space parameter, see the section of the [Set](/ml/vision/manage-vision/face-recognition#set) method.
+For a description of the space parameter, see the section of the [Set](/ml/vision/service-management/face-recognition#set) method.
 
 This request does not require the transfer of images.
 

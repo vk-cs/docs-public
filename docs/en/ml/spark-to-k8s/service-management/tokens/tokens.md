@@ -80,7 +80,7 @@ When working in a production environment, do not operate tokens in clear text. U
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -102,7 +102,7 @@ When working in a production environment, do not operate tokens in clear text. U
    </tablist>
    <tabpanel>
 
-   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```bash
@@ -171,7 +171,7 @@ When working in a production environment, do not operate tokens in clear text. U
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -193,7 +193,7 @@ When working in a production environment, do not operate tokens in clear text. U
    </tablist>
    <tabpanel>
 
-   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```bash
@@ -292,7 +292,7 @@ When working in a production environment, do not operate tokens in clear text. U
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -314,7 +314,7 @@ When working in a production environment, do not operate tokens in clear text. U
    </tablist>
    <tabpanel>
 
-   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```bash
