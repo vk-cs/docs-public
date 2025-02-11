@@ -24,7 +24,7 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/monitoring-services/monitorin
    - для региона Москва — `https://cloud.vk.com/monitoring/query/v2`;
    - для региона Казахстан — `https://kz.cloud.vk.com/monitoring/query/v2`.
 
-1. [Получите](/ru/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
+1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
 </details>
 
