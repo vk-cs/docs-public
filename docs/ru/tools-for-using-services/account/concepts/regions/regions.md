@@ -41,7 +41,7 @@ https://kz.cloud.vk.com
 
 - набор доступных сервисов;
 - набор [квот](../quotasandlimits);
-- адреса [эндпоинтов VK Cloud API](/ru/tools-for-using-services/rest-api);
+- адреса [эндпоинтов VK Cloud API](/ru/tools-for-using-services/api/rest-api);
 - имя региона в файлах конфигурации [openrc](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) и [Terraform](/ru/tools-for-using-services/terraform/quick-start).
 
 <warn>

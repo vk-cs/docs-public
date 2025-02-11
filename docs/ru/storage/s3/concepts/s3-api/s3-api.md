@@ -4,7 +4,7 @@ Cloud Storage предоставляет [RESTful XML API](/ru/tools-for-using-s
 
 Вы можете передавать команды Cloud Storage через клиент [AWS CLI](../../connect/s3-cli/).
 
-Перед началом работы с API создайте [аккаунт](/ru/storage/s3/access-management/s3-account) и [бакет](ru/storage/s3/service-management/buckets/create-bucket), если этого не сделано ранее.
+Перед началом работы с API создайте [аккаунт](/ru/storage/s3/access-management/s3-account) и [бакет](/ru/storage/s3/service-management/buckets/create-bucket), если этого не сделано ранее.
 
 <info>
 

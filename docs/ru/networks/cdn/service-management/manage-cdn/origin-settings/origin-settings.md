@@ -264,7 +264,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 <warn>
 
-После внесения изменений в опцию необходимо [очистить кеш CDN-ресурса](../content-settings##ochictka_kesha).
+После внесения изменений в опцию необходимо [очистить кеш CDN-ресурса](../content-settings#ochistka_kesha).
 
 </warn>
 

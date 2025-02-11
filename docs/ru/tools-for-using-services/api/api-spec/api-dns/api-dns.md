@@ -19,7 +19,7 @@ REST API [публичного DNS](/ru/networks/dns/publicdns) поддержи
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
 1. Найдите в блоке **Сервис OpenStack** эндпоинт **Publicdns**.
-1. [Получите](/ru/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`. Используйте токен в заголовке при отправке запросов.
+1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`. Используйте токен в заголовке при отправке запросов.
 
 Пример запроса:
 

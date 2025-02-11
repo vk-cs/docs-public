@@ -20,7 +20,7 @@
    - `bigdata` — логирование ресурсов сервиса Cloud Big Data.
    - `vdi` — логирование ресурсов сервиса Cloud Desktop.
 
-1. [Получите](/ru/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
+1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
 </details>
 

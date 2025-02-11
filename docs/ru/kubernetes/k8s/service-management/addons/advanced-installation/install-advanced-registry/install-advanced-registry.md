@@ -1,6 +1,6 @@
 ## Подготовительные шаги
 
-1. [Создайте](ru/storage/s3/service-management/buckets/create-bucket) в Cloud Storage бакет, который будет использоваться для хранения Docker-образов.
+1. [Создайте](/ru/storage/s3/service-management/buckets/create-bucket) в Cloud Storage бакет, который будет использоваться для хранения Docker-образов.
 
    При создании выберите:
 
