@@ -55,7 +55,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    Требования к пользователю:
 
-   - Должен быть [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
+   - Должен быть [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
    - Должна быть [назначена](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
      - Администратор сети (минимально необходимая [роль](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions)).

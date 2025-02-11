@@ -189,7 +189,7 @@
 
 |**Kubernetes 1.27.6**
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
-|Реализовано [автоматическое масштабирование](/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера.
+|Реализовано [автоматическое масштабирование](/ru/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера.
 
 |**Kubernetes 1.26.5**
 |[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)

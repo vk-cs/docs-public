@@ -4,7 +4,7 @@
 
 1. [Создайте](../../service-management/create-cluster) кластер Kubernetes, к которому нужно подключиться, или выберите нужный кластер из списка в [личном кабинете](https://msk.cloud.vk.com/app/) на странице **Контейнеры → Кластеры Kubernetes**.
 1. На хосте, с которого планируется подключаться к кластеру, [установите Lens](https://docs.k8slens.dev/getting-started/install-lens/), если этого еще не сделано.
-1. Убедитесь, что [активирован доступ по API](/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api).
+1. Убедитесь, что [активирован доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api).
 1. Установите плагин `client-keystone-auth` для подключения к кластеру с использованием [Single Sign-On (SSO)](../../concepts/access-management):
 
    {include(/ru/_includes/_client-keystone-auth.md)}

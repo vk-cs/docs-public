@@ -223,7 +223,7 @@
    - **Cloud name**: `VK Cloud`.
    - **Keystone API endpoint**: значение Keystone из [списка эндпоинтов](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), для VK Cloud — `https://infra.mail.ru:35357/v3/`.
    - **User domain**: значение **User Domain Name** [настроек проекта](https://msk.cloud.vk.com/app/project/keys).
-   - **Username**: имя пользователя с [доступом по API](/ru/tools-for-using-services/rest-api/enable-api) и ролью не ниже Администратора проекта.
+   - **Username**: имя пользователя с [доступом по API](/ru/tools-for-using-services/api/rest-api/enable-api) и ролью не ниже Администратора проекта.
    - **Password**: пароль пользователя.
    - **Target project domain**: значение **Project Domain ID** [настроек проекта](https://msk.cloud.vk.com/app/project/keys).
    - **Target project ID**: значение **Project ID** [настроек проекта](https://msk.cloud.vk.com/app/project/keys)

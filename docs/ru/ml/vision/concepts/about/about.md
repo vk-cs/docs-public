@@ -12,13 +12,13 @@ Vision — это технология распознавания лиц, объ
 
 Технологии Vision доступны через программные интерфейсы API, которые постоянно расширяются. Их список доступен в этом справочном центре. С помощью API вы сможете решить такие кейсы, как:
 
-- [Распознавание лиц](/ml/vision/manage-vision/face-recognition);
-- [Определение сцен и объектов](/ml/vision/manage-vision/vision-api-obj);
-- [Классификация документов](/ml/vision/manage-vision/vision-api-doctypes);
-- [Распознавание полей документов](/ml/vision/manage-vision/docs-recognition);
+- [Распознавание лиц](/ml/vision/service-management/face-recognition);
+- [Определение сцен и объектов](/ml/vision/service-management/vision-api-obj);
+- [Классификация документов](/ml/vision/service-management/vision-api-doctypes);
+- [Распознавание полей документов](/ml/vision/service-management/docs-recognition);
 - Распознавание знаменитостей;
-- [Распознавание текста на изображениях](/ml/vision/manage-vision/vision-api-txt);
-- [Обнаружение автомобилей и их номеров](/ml/vision/manage-vision/plate-recognition);
-- [Определение номеров автомобилей](/ml/vision/manage-vision/plate-recognition);
-- [Увеличение разрешения](/ml/vision/manage-vision/vision-image-api);
+- [Распознавание текста на изображениях](/ml/vision/service-management/vision-api-txt);
+- [Обнаружение автомобилей и их номеров](/ml/vision/service-management/plate-recognition);
+- [Определение номеров автомобилей](/ml/vision/service-management/plate-recognition);
+- [Увеличение разрешения](/ml/vision/service-management/vision-image-api);
 - Выявление дефекта на производстве.
