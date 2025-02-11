@@ -559,7 +559,7 @@ systemctl status qemu-guest-agent
       ssh-keygen -y -f <имя файла с приватным ключом> > <имя файла с публичным ключом>
       ```
 
-   - Если утрачен файл с приватным ключом, [создайте новую ключевую пару](/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs#sozdanie_klyuchevoy_pary).
+   - Если утрачен файл с приватным ключом, [создайте новую ключевую пару](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs#sozdanie_klyuchevoy_pary).
 
 2. Создайте ссылку на файл с публичным ключом.
 

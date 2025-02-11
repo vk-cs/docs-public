@@ -21,7 +21,7 @@ The following shows how to check a custom desktop image for compatibility with t
 
      - Select other network and subnet parameters at your discretion.
 
-1. If the image has AD support software installed, [organize](en/computing/cloud-desktops/how-to-guides/ipsec) a VPN tunnel between the LDAP server and the created subnet.
+1. If the image has AD support software installed, [organize](/en/computing/cloud-desktops/how-to-guides/ipsec) a VPN tunnel between the LDAP server and the created subnet.
 
 ## 1. Check whether you can create a VM from the image prepared
 
