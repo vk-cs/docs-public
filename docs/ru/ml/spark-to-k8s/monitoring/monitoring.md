@@ -18,7 +18,7 @@
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Мониторинг** → **Логирование**.
-1. [Настройте](ru/monitoring-services/logging/service-management/view-logs) фильтрацию логов в таблице.
+1. [Настройте](/ru/monitoring-services/logging/service-management/view-logs) фильтрацию логов в таблице.
 
 ## Использование Cloud Monitoring
 
@@ -69,7 +69,7 @@
 
 ## Использование библиотеки Cloud ML Platform
 
-Библиотека [Cloud ML Platform](ru/ml/spark-to-k8s/ml-platform-library/library-reference) позволяет получить списки событий и логов кластера.
+Библиотека [Cloud ML Platform](/ru/ml/spark-to-k8s/ml-platform-library/library-reference) позволяет получить списки событий и логов кластера.
 
 Используйте следующие методы:
 

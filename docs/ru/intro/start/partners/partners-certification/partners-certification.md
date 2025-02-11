@@ -44,13 +44,13 @@ VK Tech публикует сертификаты продуктов на [сп�
 
    При регистрации для всех новых пользователей автоматически создается проект. Вы можете использовать этот проект для проведения сертификационных испытаний или [создать](/ru/tools-for-using-services/account/service-management/project-settings/create) новый.
 
-1. Получите [PID](/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта. Он понадобится вам при отправке пакета документов на сертификацию.
+1. Получите [PID](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта. Он понадобится вам при отправке пакета документов на сертификацию.
 
 </tabpanel>
 <tabpanel>
 
 1. [Cоздайте](/ru/tools-for-using-services/account/service-management/project-settings/create) новый проект.
-1. Получите [PID](/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта.
+1. Получите [PID](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта.
 Он понадобится вам при отправке пакета документов на сертификацию.
 
 </tabpanel>

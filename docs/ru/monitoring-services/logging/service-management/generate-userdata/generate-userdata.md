@@ -2,7 +2,7 @@
 
 - `user_id` — идентификатор пользователя, от имени которого будут записываться логи;
 - `password` — пароль указанного пользователя;
-- `project_id` — [идентификатор](/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id) проекта VK Cloud в OpenStack.
+- `project_id` — [идентификатор](/ru/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) проекта VK Cloud в OpenStack.
 
 Чтобы сгенерировать учетные данные:
 
