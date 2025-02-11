@@ -1,7 +1,7 @@
 You can protect your infrastructure from potential web threats with the Check Point CloudGuard Network service. This service is a comprehensive solution for advanced threat prevention and network protection in any type of cloud. The Check Point CloudGuard Network service includes:
 
-* Security Gateway BYOL — a virtual gateway (NGFW).
-* Security Management BYOL — a service management server.
+- Security Gateway BYOL — a virtual gateway (NGFW).
+- Security Management BYOL — a service management server.
 
 <details>
 
@@ -12,9 +12,9 @@ You can protect your infrastructure from potential web threats with the Check Po
 1. The required networks are connected to the gateway.
 1. The service is managed using the SmartConsole application that connects to the management server. This application allows you to:
 
-   * Configure communication between the virtual gateway and the management server.
-   * Configure the security policy by adding required licenses.
-   * Configure backup.
+   - Configure communication between the virtual gateway and the management server.
+   - Configure the security policy by adding required licenses.
+   - Configure backup.
 
 </details>
 
@@ -115,18 +115,18 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Run the commands:
 
    ```bash
-   set hostname <VM_name>
-   set interface eth0 ipv4-address <internal_IP> subnet-mask <subnet_mask>
-   set static-route default nexthop gateway address <gateway_default_ip> on
+   set hostname <VM_NAME>
+   set interface eth0 ipv4-address <INTERNAL_IP> subnet-mask <SUBNET_MASK>
+   set static-route default nexthop gateway address <GATEWAY_DEFAULT_IP> on
    save config
    ```
 
    Here:
 
-   * `<VM_name>` — the name of the gateway virtual machine. The VM name is generated automatically when you deploy the **Security Gateway BYOL** service. You can change the VM name using this parameter.
-   * `<internal_IP>` — the internal IP address of the gateway specified in the gateway configuration instructions.
-   * `<subnet_mask>` — the subnet mask specified in the gateway configuration instructions.
-   * `<gateway_default_ip>` — default static route to the gateway specified in the gateway configuration instructions.
+   - `<VM_NAME>` — the name of the gateway virtual machine. The VM name is generated automatically when you deploy the **Security Gateway BYOL** service. You can change the VM name using this parameter.
+   - `<INTERNAL_IP>` — the internal IP address of the gateway specified in the gateway configuration instructions.
+   - `<SUBNET_MASK>` — the subnet mask specified in the gateway configuration instructions.
+   - `<GATEWAY_DEFAULT_IP>` — default static route to the gateway specified in the gateway configuration instructions.
 
 ## {heading(3. Configure management server)[id=setup_management]}
 
@@ -143,18 +143,18 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Run the commands:
 
    ```bash
-   set hostname <VM_name>
-   set interface eth0 ipv4-address <internal_IP> subnet-mask <subnet_mask>
-   set static-route default nexthop gateway address <gateway_default_ip> on
+   set hostname <VM_NAME>
+   set interface eth0 ipv4-address <INTERNAL_IP> subnet-mask <SUBNET_MASK>
+   set static-route default nexthop gateway address <GATEWAY_DEFAULT_IP> on
    save config
    ```
 
    Here:
 
-   * `<VM_name>` — the name of the virtual machine used as a management server. The VM name is generated automatically when you deploy the **Security Management BYOL** service. You can change the VM name using this parameter.
-   * `<internal_IP>` — the internal IP address of the management server, specified in the configuration instructions.
-   * `<subnet_mask>` — the subnet mask specified in the management server configuration instructions.
-   * `<gateway_default_ip>` — default static route to the management server specified in the management server configuration instructions.
+   - `<VM_NAME>` — the name of the virtual machine used as a management server. The VM name is generated automatically when you deploy the **Security Management BYOL** service. You can change the VM name using this parameter.
+   - `<INTERNAL_IP>` — the internal IP address of the management server, specified in the configuration instructions.
+   - `<SUBNET_MASK>` — the subnet mask specified in the management server configuration instructions.
+   - `<GATEWAY_DEFAULT_IP>` — default static route to the management server specified in the management server configuration instructions.
 
 ## 4. Increase logical volume sizes of gateway and management server VMs
 
@@ -243,11 +243,11 @@ More information can be found in the [sk95566 article](https://support.checkpoin
 
 1. Connect to the virtual gateway through the GAiA Portal web interface and complete the gateway configuration using the First Time Configuration Wizard:
 
-   1. Go to ```https://<external_IP_address>:443```, where `<external_IP_address>` is the gateway external IP address specified in the gateway configuration instructions.
+   1. Go to ```https://<EXTERNAL_IP_ADDRESS>:443```, where `<EXTERNAL_IP_ADDRESS>` is the gateway external IP address specified in the gateway configuration instructions.
    1. Enter the login received in the gateway configuration instructions and the password set at the [configuration](#setup_gateway).
    1. In the **SIC** section of the window that appears, set a password in the **Activation Key** field. Make a note of this password. You will need it when you connect the gateway to the management server.
 
-Now, you can connect to the gateway VM using the GAiA Portal web interface at `https://<external_IP_address>` (or by SSH `<external_IP_address>:22`).
+Now, you can connect to the gateway VM using the GAiA Portal web interface at `https://<EXTERNAL_IP_ADDRESS>` (or by SSH `<EXTERNAL_IP_ADDRESS>:22`).
 
 ## {heading(6. Configure network access to management server)[id=configure_network_access_to_management]}
 
@@ -297,7 +297,7 @@ Now, you can connect to the gateway VM using the GAiA Portal web interface at `h
 
 1. Connect to the management server through the GAiA Portal web interface and complete the management server configuration using the First Time Configuration Wizard:
 
-   1. Go to `https://<external_IP_address>:443`, where `<external_IP_address>` is the external IP address of the management server specified in the management server configuration instructions.
+   1. Go to `https://<EXTERNAL_IP_ADDRESS>:443`, where `<EXTERNAL_IP_ADDRESS>` is the external IP address of the management server specified in the management server configuration instructions.
    1. Enter the login received in the management server configuration instructions and the password set at the [configuration](#setup_management).
    1. On the First Time Configuration Wizard window, click **Next**.
    1. At the “Deployment Options” step, leave the settings unchanged and click **Next**.
@@ -310,7 +310,7 @@ Now, you can connect to the gateway VM using the GAiA Portal web interface at `h
    1. At the “Security Management GUI Clients” step, leave the settings unchanged and click **Next**.
    1. At the “First Time Configuration Wizard Summary” step, click **Finish** and confirm the system reboot.
 
-Now, you can connect to the management server VM using the GAiA Portal web interface at `https://<external_IP_address>` (or via SSH `<external_IP_address>:22`), where `<external_IP_address>` is the external IP address of the management server specified in the management server configuration instructions.
+Now, you can connect to the management server VM using the GAiA Portal web interface at `https://<EXTERNAL_IP_ADDRESS>` (or via SSH `<EXTERNAL_IP_ADDRESS>:22`), where `<EXTERNAL_IP_ADDRESS>` is the external IP address of the management server specified in the management server configuration instructions.
 
 ## 7. Add network interfaces
 
@@ -334,7 +334,7 @@ By default, one network interface is created for a VM. To add a network interfac
 
 1. Install the SmartConsole application for managing the Check Point CloudGuard Network service by the [link](https://sc1.checkpoint.com/documents/Jumbo_HFA/R81.20_SC/R81.20/R81.20_Downloads.htm) or through the GAiA Portal web interface of the gateway or the management server:
 
-   1. Go to `https://<external_IP_address>` where `<external_IP_address>` is the external IP address of the gateway or the management server specified in the configuration instructions.
+   1. Go to `https://<EXTERNAL_IP_ADDRESS>` where `<EXTERNAL_IP_ADDRESS>` is the external IP address of the gateway or the management server specified in the configuration instructions.
    1. From the left menu, select **Maintenance** → **Download SmartConsole**.
    1. Click **Download** to download the SmartConsole distribution.
    1. Run the SmartConsole installation file.
@@ -343,8 +343,8 @@ By default, one network interface is created for a VM. To add a network interfac
 1. [Connect](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Connecting-to-Security-Management-Server-through-SmartConsole.htm?tocpath=_____7#Connecting_to_the_Security_Management_Server_through_SmartConsole) to the management server using SmartConsole by specifying the login and the password set for the management server, and the external IP address of the management server from the configuration instructions.
 1. [Connect](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Creating-New-Security-Gateway.htm?tocpath=Managing%20Gateways%7C_____1) the gateway to the management server by specifying:
 
-   * **Name**: the gateway VM name specified in the `hostname` parameter during [gateway configuration](#setup_gateway).
-   * **IPv4 Address**: the internal IP address of the gateway specified in the `<internal_IP>` parameter during [gateway configuration](#setup_gateway).
+   - **Name**: the gateway VM name specified in the `hostname` parameter during [gateway configuration](#setup_gateway).
+   - **IPv4 Address**: the internal IP address of the gateway specified in the `<INTERNAL_IP>` parameter during [gateway configuration](#setup_gateway).
 
    In the connection step, enter the SIC password that you specified when [configuring network access to the gateway](#configure_network_access_to_gateway).
 
@@ -368,17 +368,17 @@ Backup and instance recovery of the Check Point CloudGuard Network service are n
 
 Backup options are described in the [sk108902 article](https://support.checkpoint.com/results/sk/sk108902) and include the following built-in GAiA backup procedures:
 
-* **System Backup** performs backup of the GAiA OS configuration and the management server base and is used for periodic backups. Backup size:
+- **System Backup** performs backup of the GAiA OS configuration and the management server base and is used for periodic backups. Backup size:
 
-  * Tens or hundreds of MB for gateways
-  * Hundreds or thousands of MB for the management server
+  - Tens or hundreds of MB for gateways
+  - Hundreds or thousands of MB for the management server
 
-* **Snapshot** creates a snapshot of system settings and products such are:
+- **Snapshot** creates a snapshot of system settings and products such are:
 
-  * File system (root)
-  * System configuration (interfaces, routing, hostname, etc.)
-  * Software blades configuration
-  * Management database (on the management server)
+  - File system (root)
+  - System configuration (interfaces, routing, hostname, etc.)
+  - Software blades configuration
+  - Management database (on the management server)
 
   The snapshot size is several gigabytes. Used mainly before upgrading the GAiA operating system to a new version or before installing the Jumbo Hotfix software package.
 
