@@ -141,6 +141,6 @@ This is a group operation: if necessary, you can delete several instances at onc
 
 <info>
 
-If the JupyterHub instance was associated with MLflow, first [delete the MLflow instance](/en/ml/mlplatform/mlflow/manage/delete).
+If the JupyterHub instance was associated with MLflow, first [delete the MLflow instance](/en/ml/mlplatform/mlflow/service-management/manage#delete).
 
 </info>

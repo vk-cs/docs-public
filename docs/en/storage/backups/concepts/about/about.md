@@ -6,8 +6,8 @@ Cloud Backup is a service where you can manage the creation of backup copies and
 
 Cloud Backup allows you to:
 
-- [run backups manually](/en/storage/backups/united-service-management/create-backup-copy), for example, before operations associated with the risk of data loss
-- [create backups automatically](/en/storage/backups/united-service-management/create-backup-plan) according to a pre-configured schedule
+- [run backups manually](/en/storage/backups/service-management/create-backup-copy), for example, before operations associated with the risk of data loss
+- [create backups automatically](/en/storage/backups/service-management/create-backup-plan) according to a pre-configured schedule
 
 For scheduled backups, Cloud Backup offers a choice between two strategies for creating and storing backups:
 

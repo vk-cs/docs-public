@@ -6,8 +6,8 @@ Cloud Backup — сервис, в котором можно централизо
 
 Cloud Backup позволяет:
 
-- [запускать резервное копирование вручную](/ru/storage/backups/united-service-management/create-backup-copy), например, перед операциями, связанными с риском утраты данных;
-- [создавать резервные копии автоматически](/ru/storage/backups/united-service-management/create-backup-plan) по заранее настроенному расписанию.
+- [запускать резервное копирование вручную](/ru/storage/backups/service-management/create-backup-copy), например, перед операциями, связанными с риском утраты данных;
+- [создавать резервные копии автоматически](/ru/storage/backups/service-management/create-backup-plan) по заранее настроенному расписанию.
 
 Для копирования по расписанию Cloud Backup предлагает выбор между двумя стратегиями создания и хранения резервных копий:
 

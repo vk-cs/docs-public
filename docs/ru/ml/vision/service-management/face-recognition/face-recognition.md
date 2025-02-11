@@ -302,7 +302,7 @@ curl -X 'POST' \
 
 Каждый раз, когда распознается известная персона, происходит обновление векторного представления лица (embedding) для лучшего распознания этой персоны в будущем. Однако в некоторых случаях лучше отключать автообновление с помощью параметра `update_embedding`, например, когда заведомо известно, что фотографии плохого качества.
 
-Описание параметра `space` смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
+Описание параметра `space` смотрите в разделе метода [Set](/ml/vision/service-management/face-recognition#set).
 
 Параметры `image_meta`:
 
@@ -694,7 +694,7 @@ curl -X 'POST' \
 | space    | string       | числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty) |
 | images   | []image_meta | метаданные передаваемых изображений (required non-empty) |
 
-Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](/ml/vision/service-management/face-recognition#set).
 
 Параметры `image_meta`:
 
@@ -830,7 +830,7 @@ curl -X 'POST' \
 | -------- | ------ | -------- |
 | space    | string | Числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty)|
 
-Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](/ml/vision/service-management/face-recognition#set).
 
 Данный запрос не требует передачи изображений.
 

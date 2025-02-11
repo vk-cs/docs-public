@@ -18,7 +18,7 @@
 
 <info>
 
-VK Cloud предоставляет [DNS-серверы](/networks/dns/publicdns), на которые вы можете делегировать свой домен.
+VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/publicdns), на которые вы можете делегировать свой домен.
 
 </info>
 

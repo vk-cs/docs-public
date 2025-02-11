@@ -24,7 +24,7 @@ The partner's management console will be available at the URL https://cloud.vk.c
 
 <warn>
 
-If you have not been contacted within 48 hours, please contact the support service at the [contacts](/intro/start/support/support-info#sposoby_obrashcheniya).
+If you have not been contacted within 48 hours, please contact the support service at the [contacts](/intro/start/support/support-info).
 
 </warn>
 
