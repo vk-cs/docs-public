@@ -127,7 +127,7 @@ export const config = {
     enablers: {
         auth: true,
         likeDislike: true,
-        dislikeFeedbackForm: true,
+        dislikeFeedbackForm: false,
         sentry: true,
         suggester: true,
         editOnGitOps: true,
