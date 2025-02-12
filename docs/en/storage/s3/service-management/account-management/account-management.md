@@ -10,7 +10,7 @@ The number of created accounts is not limited and their names should not be uniq
 
 ## Create an account
 
-To create an account, go to the "Accounts" tab of the "Object Storage" service and click the "Add account" button. In the window that appears, enter the account name and confirm the entry.
+To create an account, go to the **Accounts** tab of the **Object Storage** service and click the **Add account** button. In the window that appears, enter the account name and confirm the entry.
 
 <warn>
 

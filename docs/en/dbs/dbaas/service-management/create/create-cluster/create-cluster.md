@@ -10,13 +10,13 @@
 1. Select the project where you want to create a cluster.
 1. Go to **Databases → Database instances**.
 1. Click the **Create database** or **Add** button.
-1. On the “Configuration” step:
+1. On the **Configuration** step:
 
    1. Select the `OpenSearch` database type.
    1. Select the required OpenSearch version, for example, `2`.
    1. Click the **Next step** button.
 
-1. On the “Parameters” step:
+1. On the **Parameters** step:
 
    1. Set the general cluster parameters:
 
@@ -54,7 +54,7 @@
 
    1. Click the **Next step** button.
 
-1. On the “Nodes” step:
+1. On the **Nodes** step:
 
    1. In the **Dashboards** block, select the option **Enable Dashboards** if you need access to the [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/quickstart-dashboards/) web interface.
 
@@ -129,7 +129,7 @@
 
    1. Click the **Next step** button.
 
-1. On the “Initialization” step:
+1. On the **Initialization** step:
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 
@@ -196,14 +196,14 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 1. Select the project where you want to create a cluster.
 1. Go to **Databases → Database instances**.
 1. Click the **Create database** or **Add** button.
-1. On the “Configuration” step:
+1. On the **Configuration** step:
 
    1. Select one of the database types: `MySQL`, `PostgreSQL`, `PostgresPro Enterprise` or `PostgresPro Enterprise 1C`.
    1. Select the required version.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
-1. On the “Create instance” step:
+1. On the **Create instance** step:
 
    1. Set the general cluster parameters:
 
@@ -288,7 +288,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Click the **Next step** button.
 
-1. On the “Initialization” step:
+1. On the **Initialization** step:
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 
@@ -348,14 +348,14 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 1. Select the project where you want to create a cluster.
 1. Go to **Databases → Database instances**.
 1. Click the **Create database** or **Add** button.
-1. On the “Configuration” step:
+1. On the **Configuration** step:
 
    1. Select the `Tarantool` database type.
    1. Select the required version.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
-1. On the “Create instance” step:
+1. On the **Create instance** step:
 
    1. Set the general cluster parameters:
 
@@ -401,7 +401,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Click the **Next step** button.
 
-1. On the “Initialization” step:
+1. On the **Initialization** step:
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected.
 
@@ -439,14 +439,14 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 1. Select the project where you want to create a cluster.
 1. Go to **Databases → Database instances**.
 1. Click the **Create database** or **Add** button.
-1. On the “Configuration” step:
+1. On the **Configuration** step:
 
    1. Select the required database type.
    1. Select the required version.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
-1. On the “Parameters” step:
+1. On the **Parameters** step:
 
    1. Set the general cluster parameters:
 
@@ -507,7 +507,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Click the **Next step** button.
 
-1. In the “Shards” step, set the shards settings.
+1. In the **Shards** step, set the shards settings.
 
    For ClickHouse, the number of shards can be changed by adding and removing shards (there must be at least one shard in the cluster). For Redis and MongoDB, the number of shards is fixed.
 
@@ -536,7 +536,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Click the **Next step** button.
 
-1. On the “Initialization” step:
+1. On the **Initialization** step:
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 

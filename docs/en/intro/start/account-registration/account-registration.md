@@ -1,9 +1,9 @@
 These instructions will help you to register in VK Cloud. Access to VK Cloud services will appear when all registration steps are completed:
 
-* [account created](#create_account)
-* [email confirmed](#confirm_email)
-* [phone number confirmed](#confirm_phone)
-* [card linked to the project](#bind_card)
+- [account created](#create_account)
+- [email confirmed](#confirm_email)
+- [phone number confirmed](#confirm_phone)
+- [card linked to the project](#bind_card)
 
 <info>
 

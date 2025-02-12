@@ -184,14 +184,14 @@ The DB instance is charged and consumes computational resources. After completin
 
    Otherwise, click the **Add** button.
 
-1. On the “Configuration” step: select:
+1. On the **Configuration** step: select:
 
    - The **PostgreSQL** database type and the most current version.
    - The **Single** configuration.
 
 1. Click the **Next step** button.
 
-1. On the “Create instance” step set:
+1. On the **Create instance** step set:
 
    - **Database instance name:** for example, `vk-cloud-dbaas-quickstart`.
    - **Type of virtual machine:** `STD3-2-8`.
@@ -221,7 +221,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 1. Click the **Next step** button.
 
-1. On the “Initialization” step set:
+1. On the **Initialization** step set:
 
    - **Creation type:** `New database`.
    - **Name of database for creation:** `tsdb1`.

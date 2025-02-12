@@ -17,14 +17,14 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Создать экземпляр** button.
-1. At the “Configuration” step:
+1. At the **Configuration** step:
 
    1. Select the type of service **Kafka**.
    1. Select version **3.5.0**.
    1. Select the configuration **Single**.
    1. Click the **Next step** button.
 
-1. At the “Parameters” step:
+1. At the **Parameters** step:
 
    1. Set a name and description for the instance: `vkcloud-demo-kafka` and `The first instance of Cloud Kafka`.
    1. Set the node parameters for the broker:
@@ -40,7 +40,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
    1. **Availability zone**: `Москва (GZ1)`.
    1. Click the **Next step** button.
 
-1. At the “Учетные данные” step:
+1. At the **Учетные данные** step:
 
    1. **Логин администратора для доступа к Kafka**: for example, `kafkaadmin`.
    1. **Пароль администратора для доступа к Kafka**: click the **Generate** button and save the received password.

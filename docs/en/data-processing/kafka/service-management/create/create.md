@@ -15,14 +15,14 @@ You can create an instance of Cloud Kafka in one of two configurations:
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Add an instance** or **Create an instance** button.
-1. At the “Configuration” step:
+1. At the **Configuration** step:
 
    1. Select the type of service **Kafka**.
    1. Select the version of the service.
    1. Select the configuration **Single**.
    1. Click the **Next step** button.
 
-1. At the “Parameters” step:
+1. At the **Parameters** step:
 
    1. Specify the name and the description for the instance.
    1. Set the node parameters for the broker:
@@ -47,7 +47,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
    1. Select [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be located.
    1. Click the **Next step** button.
 
-1. At the “Credentials” step:
+1. At the **Credentials** step:
 
    1. Set the administrator login to access Kafka.
    1. Create or generate an administrator password.
@@ -83,14 +83,14 @@ You can create an instance of Cloud Kafka in one of two configurations:
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Создать инстанс** or **Создать экземпляр** button.
-1. At the “Configuration” step:
+1. At the **Configuration** step:
 
    1. Select the type of service **Kafka**.
    1. Select the required version of the service.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
-1. At the “Parameters” step:
+1. At the **Parameters** step:
 
    1. Specify the name and the description for the instance.
    1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host an instance of Cloud Kafka.
@@ -149,7 +149,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
    1. Click the **Create** button.
 
-1. At the “Учетные данные” step:
+1. At the **Учетные данные** step:
 
    1. Set the administrator login to access Kafka.
    1. Create or generate an administrator password.
