@@ -25,15 +25,15 @@ It is recommended to avoid using personal information such as project number or 
 - Bucket cannot be renamed
 - Buckets cannot be nested
 - You can delete a bucket only if there are no objects in it
-- It is impossible to delete a bucket with the "Backup" type on your own, this type of storage is managed by the instance backup service
+- It is impossible to delete a bucket with the **Backup** type on your own, this type of storage is managed by the instance backup service
 - After deleting a bucket, it may take some time before creating a new bucket with the same name becomes possible.
 
 ## Bucket creation
 
 To create a bucket in the VK Cloud panel:
 
-1.  Go to the "Buckets" tab of the Object Storage service in the VK Cloud panel.
-2.  Press the "Add" button.
+1.  Go to the **Buckets** tab of the Object Storage service in the VK Cloud panel.
+2.  Press the **Add** button.
 3.  Select the type of bucket to create and enter a DNS-compatible name.
 
 ## Removing a bucket
@@ -46,4 +46,4 @@ The bucket with the Backup storage class cannot be deleted. You can delete the o
 
 </warn>
 
-After deleting backups, the Backup bucket may be empty. It is required by Object Storage for further work with backup plans in the project.
+After deleting backups, the **Backup** bucket may be empty. It is required by Object Storage for further work with backup plans in the project.

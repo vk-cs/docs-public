@@ -24,19 +24,19 @@ Create a virtual machine with Internet access:
 1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
-1. At the “Configuration” step:
+1. At the **Configuration** step:
 
     1. Name the virtual machine, for example `test-vm1`.
     1. Set other settings depending on your requirements or leave them unchanged.
 
 1. Press **Next step**.
-1. At the “Network settings” step:
+1. At the **Network settings** step:
 
      1. Networks: `External network (ext-net)`.
      1. Leave the rest of the settings unchanged.
 
 1. Press **Next step**.
-1. At the “Backup settings” step, leave the settings unchanged.
+1. At the **Backup settings** step, leave the settings unchanged.
 1. Click **Create Instance**.
 
 The creation of the virtual machine may take some time, after which it will appear in the list.
@@ -46,12 +46,12 @@ Create a second virtual machine:
 1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
-1. At the “Configuration” step:
+1. At the **Configuration** step:
 
      1. Give the virtual machine a name, for example `test-vm2`.
      1. Set other settings depending on your requirements or leave them unchanged.
 
-1. At the “Network settings” step:
+1. At the **Network settings** step:
 
      1. Networks: `test-network`.
      2. Virtual machine key: `Create a new key`.
@@ -59,7 +59,7 @@ Create a second virtual machine:
      4. Assign an external IP address: disable.
 
 2. Press **Next step**.
-3. At the “Backup settings” step, leave the settings unchanged.
+3. At the **Backup settings** step, leave the settings unchanged.
 4. Click **Create Instance**.
 
 A file with a virtual machine key will be downloaded to your computer.
@@ -74,7 +74,7 @@ Create a third virtual machine:
      1. Name the virtual machine, for example `test-vm3`.
      1. Set other settings depending on your requirements or leave them unchanged.
 
-1. At the “Network settings” step:
+1. At the **Network settings** step:
 
     1. Networks: `test-network`.
     1. Virtual machine key: `Create a new key`.
@@ -82,7 +82,7 @@ Create a third virtual machine:
     1. Assign an external IP address: disable.
 
 1. Press **Next step**.
-1. At the “Backup settings” step, leave the settings unchanged.
+1. At the **Backup settings** step, leave the settings unchanged.
 1. Click **Create Instance**.
 
 Wait for the creation of the virtual machine to complete.

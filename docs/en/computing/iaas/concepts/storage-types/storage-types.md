@@ -11,7 +11,7 @@ Each storage type has its own advantages and disadvantages. The choice of type d
 | Type
 | Special features
 | Advantages
-| Disadvantages 
+| Disadvantages
 
 | Block
 | Provides an interface for reading/writing data blocks.

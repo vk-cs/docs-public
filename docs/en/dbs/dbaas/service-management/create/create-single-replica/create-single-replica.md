@@ -8,14 +8,14 @@
 1. Select the project where you want to create a DB instance.
 1. Go to **Databases → Database instances**.
 1. Click the **Create database** or **Add** button.
-1. On the “Configuration” step:
+1. On the **Configuration** step:
 
    1. Select the required database type.
    1. Select the required version.
    1. Select the configuration **Single** or **Master-Replica**. The configuration is available for some [DBMS types](../../../concepts/work-configs#available_configurations_for_dbms_types).
    1. Click the **Next step** button.
 
-1. On the “Create instance” step:
+1. On the **Create instance** step:
 
    1. Set general instance parameters:
 
@@ -126,7 +126,7 @@
 
    1. Click the **Next step** button.
 
-1. On the “Initialization” step:
+1. On the **Initialization** step:
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 

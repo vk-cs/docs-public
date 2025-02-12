@@ -10,9 +10,9 @@ There is no charge for creating a bucket. The fee is charged only for storing ob
 
 There are several types of buckets that differ in both the purpose and the amount of payment for the objects placed in them:
 
-- Hotbox — designed for storing and quickly distributing a large number of files for media services, online media, sites with multi-user content and mobile applications
-- Icebox — cloud storage of rarely used data: backups, logs, media content, scientific, statistical data, as well as working archives
-- Backup — placement of backup copies of instances created both automatically and manually. A bucket of this type is not subject to self-creation or deletion, but is managed by the backup service.
+- **Hotbox** — designed for storing and quickly distributing a large number of files for media services, online media, sites with multi-user content and mobile applications
+- **Icebox** — cloud storage of rarely used data: backups, logs, media content, scientific, statistical data, as well as working archives
+- **Backup** — placement of backup copies of instances created both automatically and manually. A bucket of this type is not subject to self-creation or deletion, but is managed by the backup service.
 
 You can create a bucket both in the VK Cloud Panel and using the AWS CLI.
 
@@ -33,8 +33,8 @@ There is a limit on the number of buckets in one project, for more information, 
 
 To create it, you should:
 
-1. Go to the "Buckets" tab of the Object Storage service in the VK Cloud panel.
-2. Click the "Add" button.
+1. Go to the **Buckets** tab of the Object Storage service in the VK Cloud panel.
+2. Click the **Add** button.
 3. Select the type of bucket to be created and enter a DNS-compatible name.
 
 <warn>
@@ -67,7 +67,7 @@ After creating a bucket, its name cannot be changed.
 
 Before creating a bucket, you need to create a user who will be granted access to manage operations in the AWS CLI.
 
-To do this, on the "Accounts" tab of the "Object Storage" service, create an account by clicking the "Add Account" button, specify any required name and save the API keys received.
+To do this, on the **Accounts** tab of the Object Storage service, create an account by clicking the **Add Account** button, specify any required name and save the API keys received.
 
 2. Sign in to AWS CLI
 
