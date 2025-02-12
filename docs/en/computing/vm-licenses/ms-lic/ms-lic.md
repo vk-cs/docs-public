@@ -10,7 +10,7 @@ VK Cloud provides Microsoft software under the Service Provider License Agreemen
 
 If you have any questions about licensing and rights to use Microsoft software, contact your legal department or Microsoft sales representatives.
 
-**By using this product, you agree to the terms of use of the following products**: [Microsoft](https://www.microsoft.com/en-us/licensing/product-licensing/products).
+**By using this product, you agree to the terms of use of the following products**: [Microsoft](https://www.microsoft.com/licensing/docs/view/Services-Provider-Use-Rights-SPUR?lang=1).
 
 ## Price
 
@@ -77,7 +77,7 @@ To transfer licenses under the Software Assurance agreement, you must go through
 - name of the partner: `VK Cloud`;
 - partner web site: `cloud.vk.com`.
 
-After receiving the form, Microsoft will check your license and inform you and your Microsoft partner about the results of the check. Further instructions in the manual [Moving licenses within Software Assurance](https://www.microsoft.com/ru-ru/licensing/licensing-programs/software-assurance-license-mobility) and to the document [License Mobility Verification Guide](http://download.microsoft.com/download/7/9/b/79bd917e-760b-48b6-a266-796b3e47c47a/License_Mobility_Customer_Verification_Guide.pdf) Microsoft (PDF).
+After receiving the form, Microsoft will check your license and inform you and your Microsoft partner about the results of the check. Further instructions in the manual [Moving licenses within Software Assurance](https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility) and to the document [License Mobility Verification Guide](http://download.microsoft.com/download/7/9/b/79bd917e-760b-48b6-a266-796b3e47c47a/License_Mobility_Customer_Verification_Guide.pdf "download") Microsoft (PDF).
 
 According to the requirements of the agreement, you are responsible for performing inspections and extensions. However, you can start deploying application server software without waiting for the verification to be completed. You can deploy the software ten days before submitting the form.
 
@@ -107,7 +107,7 @@ To use the license transfer, ensure that the conditions are met:
     - Forefront Unified Access Gateway;
     - Remote Desktop Services.
 
-    The full list of eligible software products is available in the [Microsoft Product Terms of Use](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx).
+    The full list of eligible software products is available in the [Microsoft Product Terms of Use](https://www.microsoft.com/licensing/docs/view/Services-Provider-Use-Rights-SPUR?lang=1).
 
 3. Eligible corporate licensing programs include Enterprise Agreement, Enterprise Subscription Agreement and Microsoft Open Value Agreement, which include the Software Assurance agreement, as well as other Microsoft corporate licensing programs in which the Software Assurance agreement is an additional feature, for example, Microsoft Open License or Select Plus.
 
@@ -115,4 +115,4 @@ To use the license transfer, ensure that the conditions are met:
 
 5. License portability does not apply to Microsoft Windows client operating systems, desktop application products (for example, Microsoft Office) and Microsoft Windows Server operating systems.
 
-6. In accordance with the rules of the Microsoft Server farm, licenses deployed in a specific VK Cloud region cannot be transferred to another VK Cloud region within 90 days. For more information, see [Microsoft Product Terms of Use](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx).
+6. In accordance with the rules of the Microsoft Server farm, licenses deployed in a specific VK Cloud region cannot be transferred to another VK Cloud region within 90 days. For more information, see [Microsoft Product Terms of Use](https://www.microsoft.com/licensing/docs/view/Services-Provider-Use-Rights-SPUR?lang=1).
