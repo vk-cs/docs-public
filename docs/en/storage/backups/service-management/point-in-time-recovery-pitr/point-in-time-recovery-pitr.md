@@ -79,7 +79,7 @@ A list of backups for the selected schedule will be displayed.
 1. Go to the **Point-in-time recovery** tab.
 1. Click the name of the required schedule.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Restore from backup**.
-1. In the “Create instance” step, specify the necessary parameters and click **Next step**.
+1. In the **Create instance** step, specify the necessary parameters and click **Next step**.
 1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave this field empty, the most recently created backup will be selected automatically.
 1. Click **Create database**.
 

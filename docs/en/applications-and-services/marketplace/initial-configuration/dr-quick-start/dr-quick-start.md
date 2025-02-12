@@ -36,8 +36,8 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 
 1. Sign in to Hystax Acura [personal account](https://dr.mcs-cloud.ru) using the received username and password.
 1. Click the **Install replication agents** button.
-1. In the “Agent selection” step, select **Linux** and click **Next**.
-1. At the “Agent settings” step, specify the parameters:
+1. In the **Agent selection** step, select **Linux** and click **Next**.
+1. At the **Agent settings** step, specify the parameters:
 
    - **Machines group**: `Default`.
    - **Select target Linux distribution**: `Debian/Ubuntu (.deb package)`.
@@ -217,8 +217,8 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 ## 5. Restore infrastructure in VK Cloud
 
 1. Go to **Failback**.
-1. In the “Select target cloud type” step, select the **OPENSTACK** option and click **Next** button.
-1. At the “Select target environment” step, select the **New OpenStack** option and specify the parameters:
+1. In the **Select target cloud type** step, select the **OPENSTACK** option and click **Next** button.
+1. At the **Select target environment** step, select the **New OpenStack** option and specify the parameters:
 
    - **Cloud name**: `VK Cloud`.
    - **Keystone API endpoint**: Keystone value from [endpoints list](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:35357/v3/` for VK Cloud.
@@ -231,9 +231,9 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
    - **Floating IP Network**: external network `ext-net`.
 
 1. Click the **Next** button.
-1. At the “Select resource” step, select `VK-Cloud-infra` from the list **From Cloud Site**.
+1. At the **Select resource** step, select `VK-Cloud-infra` from the list **From Cloud Site**.
 1. Click the **Next** button.
-1. At the “Failback settings” step, specify the name of the structure being restored.
+1. At the **Failback settings** step, specify the name of the structure being restored.
 1. Click the **Start Failback** button.
 
    The infrastructure in VK Cloud will be brought to the state corresponding to 'VK-Cloud-infra'.
