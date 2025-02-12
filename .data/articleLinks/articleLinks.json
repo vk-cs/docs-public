@@ -205,7 +205,7 @@
   ],
   [
     "/en/intro/start/partners/partners-profile",
-    "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
+    "http://localhost:3000/docs/en/intro/start/support/support-info"
   ],
   [
     "/en/intro/start/faq",
@@ -3213,10 +3213,6 @@
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
-  ],
-  [
-    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
   ],
   [
@@ -3269,11 +3265,11 @@
   ],
   [
     "/en/storage/backups/concepts/about",
-    "http://localhost:3000/docs/en/storage/backups/united-service-management/create-backup-copy"
+    "http://localhost:3000/docs/en/storage/backups/service-management/create-backup-copy"
   ],
   [
     "/en/storage/backups/concepts/about",
-    "http://localhost:3000/docs/en/storage/backups/united-service-management/create-backup-plan"
+    "http://localhost:3000/docs/en/storage/backups/service-management/create-backup-plan"
   ],
   [
     "/en/storage/backups/concepts/about",
@@ -4341,7 +4337,7 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/access-management",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes"
   ],
   [
     "/en/kubernetes/k8s/concepts/access-management",
@@ -4369,11 +4365,11 @@
   ],
   [
     "/en/kubernetes/k8s/connect/kubectl",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes"
   ],
   [
     "/en/kubernetes/k8s/connect/kubectl",
-    "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#enabling_2fa"
+    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api#activate_api_access"
   ],
   [
     "/en/kubernetes/k8s/connect/kubectl",
@@ -4381,7 +4377,7 @@
   ],
   [
     "/en/kubernetes/k8s/connect/lens",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api#activate_api_access"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access"
   ],
   [
     "/en/kubernetes/k8s/connect/lens",
@@ -6345,7 +6341,7 @@
   ],
   [
     "/en/ml/mlplatform/jupyterhub/service-management/manage",
-    "http://localhost:3000/docs/en/ml/mlplatform/mlflow/manage/delete"
+    "http://localhost:3000/docs/en/ml/mlplatform/mlflow/service-management/manage#delete"
   ],
   [
     "/en/ml/mlplatform/mlflow/quick-start",
@@ -6465,11 +6461,11 @@
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
@@ -6501,11 +6497,11 @@
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
@@ -6561,11 +6557,11 @@
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
@@ -6573,11 +6569,11 @@
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
@@ -6589,11 +6585,11 @@
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create"
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
     "/en/ml/spark-to-k8s/service-management/tokens",
@@ -6645,35 +6641,35 @@
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-api-obj"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-api-obj"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-api-doctypes"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-api-doctypes"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/docs-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/docs-recognition"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-api-txt"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-api-txt"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/plate-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/plate-recognition"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/plate-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/plate-recognition"
   ],
   [
     "/en/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-image-api"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-image-api"
   ],
   [
     "/en/ml/vision/service-management/face-recognition",
@@ -6689,7 +6685,7 @@
   ],
   [
     "/en/ml/vision/service-management/face-recognition",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition#set"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition#set"
   ],
   [
     "/en/ml/vision/service-management/face-recognition",
@@ -6701,7 +6697,7 @@
   ],
   [
     "/en/ml/vision/service-management/face-recognition",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition#set"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition#set"
   ],
   [
     "/en/ml/vision/service-management/face-recognition",
@@ -6713,7 +6709,7 @@
   ],
   [
     "/en/ml/vision/service-management/face-recognition",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition#set"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition#set"
   ],
   [
     "/en/ml/vision/service-management/vision-api-doctypes",
@@ -6877,7 +6873,7 @@
   ],
   [
     "/en/monitoring-services/alerting/triggers/trigger-start",
-    "http://localhost:3000/docs/monitoring-services/alerting/triggers/triggers-add"
+    "http://localhost:3000/docs/en/monitoring-services/alerting/triggers/triggers-add"
   ],
   [
     "/en/monitoring-services/monitoring/quick-start",
@@ -7541,7 +7537,7 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes"
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
@@ -8873,7 +8869,7 @@
   ],
   [
     "/ru/intro/start/partners/partners-profile",
-    "http://localhost:3000/docs/intro/start/support/support-info#sposoby_obrashcheniya"
+    "http://localhost:3000/docs/ru/intro/start/support/support-info"
   ],
   [
     "/ru/intro/start/partners/partners-certification",
@@ -8885,7 +8881,7 @@
   ],
   [
     "/ru/intro/start/partners/partners-certification",
-    "http://localhost:3000/docs/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
   ],
   [
     "/ru/intro/start/partners/partners-certification",
@@ -8893,7 +8889,7 @@
   ],
   [
     "/ru/intro/start/partners/partners-certification",
-    "http://localhost:3000/docs/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
   ],
   [
     "/ru/intro/start/partners/partners-certification",
@@ -9969,11 +9965,11 @@
   ],
   [
     "/ru/intro/it-security/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api"
   ],
   [
     "/ru/intro/it-security/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api"
   ],
   [
     "/ru/intro/it-security/faq",
@@ -10173,7 +10169,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -10201,7 +10197,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
-    "http://localhost:3000/docs/networks/dns/publicdns"
+    "http://localhost:3000/docs/ru/networks/dns/publicdns"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
@@ -10225,7 +10221,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
-    "http://localhost:3000/docs/networks/dns/publicdns"
+    "http://localhost:3000/docs/ru/networks/dns/publicdns"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
@@ -10285,7 +10281,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-manage",
-    "http://localhost:3000/docs/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs#sozdanie_klyuchevoy_pary"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs#sozdanie_klyuchevoy_pary"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-manage",
@@ -12133,7 +12129,7 @@
   ],
   [
     "/ru/networks/cdn/service-management/manage-cdn/origin-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings"
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings#ochistka_kesha"
   ],
   [
     "/ru/networks/cdn/service-management/manage-cdn/ssl",
@@ -13013,11 +13009,11 @@
   ],
   [
     "/ru/storage/backups/concepts/about",
-    "http://localhost:3000/docs/ru/storage/backups/united-service-management/create-backup-copy"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/create-backup-copy"
   ],
   [
     "/ru/storage/backups/concepts/about",
-    "http://localhost:3000/docs/ru/storage/backups/united-service-management/create-backup-plan"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/create-backup-plan"
   ],
   [
     "/ru/storage/backups/concepts/about",
@@ -13057,7 +13053,7 @@
   ],
   [
     "/ru/storage/backups/how-to-guides/api-examples",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/storage/backups/how-to-guides/api-examples",
@@ -13593,11 +13589,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/postgre-update",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#prosmotr_spiska_endpointov"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/endpoints#prosmotr_spiska_endpointov"
   ],
   [
     "/ru/dbs/dbaas/service-management/postgre-update",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/dbs/dbaas/service-management/postgre-update",
@@ -13869,7 +13865,7 @@
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api"
   ],
   [
     "/ru/kubernetes/k8s/quick-start",
@@ -14273,7 +14269,7 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/versions/version-support",
-    "http://localhost:3000/docs/kubernetes/k8s/concepts/scale#autoscaling"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/scale#autoscaling"
   ],
   [
     "/ru/kubernetes/k8s/concepts/versions/version-support",
@@ -14373,7 +14369,7 @@
   ],
   [
     "/ru/kubernetes/k8s/connect/kubectl",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api"
   ],
   [
     "/ru/kubernetes/k8s/connect/kubectl",
@@ -14381,7 +14377,7 @@
   ],
   [
     "/ru/kubernetes/k8s/connect/lens",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api"
   ],
   [
     "/ru/kubernetes/k8s/connect/lens",
@@ -15769,7 +15765,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
@@ -18201,7 +18197,7 @@
   ],
   [
     "/ru/ml/vision/quick-start/auth-vision",
-    "http://localhost:3000/docs/tools-for-using-services/account/concepts/projects"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects"
   ],
   [
     "/ru/ml/vision/quick-start/auth-vision",
@@ -18209,7 +18205,7 @@
   ],
   [
     "/ru/ml/vision/quick-start/auth-vision",
-    "http://localhost:3000/docs/tools-for-using-services/account/concepts/projects"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects"
   ],
   [
     "/ru/ml/vision/concepts/about",
@@ -18217,35 +18213,35 @@
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-api-obj"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-api-obj"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-api-doctypes"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-api-doctypes"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/docs-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/docs-recognition"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-api-txt"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-api-txt"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/plate-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/plate-recognition"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/plate-recognition"
+    "http://localhost:3000/docs/ml/vision/service-management/plate-recognition"
   ],
   [
     "/ru/ml/vision/concepts/about",
-    "http://localhost:3000/docs/ml/vision/manage-vision/vision-image-api"
+    "http://localhost:3000/docs/ml/vision/service-management/vision-image-api"
   ],
   [
     "/ru/ml/vision/service-management/face-recognition",
@@ -18261,7 +18257,7 @@
   ],
   [
     "/ru/ml/vision/service-management/face-recognition",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition#set"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition#set"
   ],
   [
     "/ru/ml/vision/service-management/face-recognition",
@@ -18273,7 +18269,7 @@
   ],
   [
     "/ru/ml/vision/service-management/face-recognition",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition#set"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition#set"
   ],
   [
     "/ru/ml/vision/service-management/face-recognition",
@@ -18285,7 +18281,7 @@
   ],
   [
     "/ru/ml/vision/service-management/face-recognition",
-    "http://localhost:3000/docs/ml/vision/manage-vision/face-recognition#set"
+    "http://localhost:3000/docs/ml/vision/service-management/face-recognition#set"
   ],
   [
     "/ru/ml/vision/service-management/vision-api-obj",
@@ -18397,7 +18393,7 @@
   ],
   [
     "/ru/monitoring-services/logging/service-management/generate-userdata",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id"
   ],
   [
     "/ru/monitoring-services/logging/service-management/connect-plugin",
@@ -18453,7 +18449,7 @@
   ],
   [
     "/ru/monitoring-services/alerting/triggers/trigger-start",
-    "http://localhost:3000/docs/monitoring-services/alerting/triggers/triggers-add"
+    "http://localhost:3000/docs/ru/monitoring-services/alerting/triggers/triggers-add"
   ],
   [
     "/ru/monitoring-services/monitoring/quick-start",
@@ -18485,7 +18481,7 @@
   ],
   [
     "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
@@ -18493,7 +18489,7 @@
   ],
   [
     "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id"
   ],
   [
     "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
@@ -18697,7 +18693,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/dr-quick-start",
@@ -19509,7 +19505,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/regions",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/regions",
@@ -19573,7 +19569,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/manage",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/manage",
@@ -19665,7 +19661,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/actionslogs",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/install-jq"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/install-jq"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/debugging",
@@ -19701,7 +19697,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/how-to-guides/account-delete"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete"
   ],
   [
     "/ru/tools-for-using-services/vendor-account/concepts/about",
@@ -19933,7 +19929,7 @@
   ],
   [
     "/ru/tools-for-using-services/cli/openstack-cli",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/tools-for-using-services/cli/openstack-cli",
@@ -19941,7 +19937,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/quick-start",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/tools-for-using-services/terraform/quick-start",
@@ -20397,7 +20393,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
@@ -20517,7 +20513,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/backup-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/vision-api",
@@ -20549,7 +20545,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/logging",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/magnum-api",
@@ -20557,7 +20553,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/magnum-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/api-dns",
@@ -20569,7 +20565,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/api-dns",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/api-cdn",
@@ -20581,7 +20577,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/api-cdn",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/vdi-api",
@@ -20605,7 +20601,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/monitoring2-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/cases/cases-cms/cases-wp",

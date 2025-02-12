@@ -559,6 +559,11 @@
     "full": "Права в сервисе Cloud Audit",
     "text": "Права в сервисе Cloud Audit"
   },
+  "roles_permissions_kubernetes": {
+    "number": null,
+    "full": "Права для ролей сервиса Cloud Containers",
+    "text": "Права для ролей сервиса Cloud Containers"
+  },
   "images-volumes": {
     "number": null,
     "full": "Диски и образы",
@@ -838,11 +843,6 @@
     "number": null,
     "full": "Обновление доступа к инстансу сервиса",
     "text": "Обновление доступа к инстансу сервиса"
-  },
-  "roles_permissions_kubernetes": {
-    "number": null,
-    "full": "Права для ролей сервиса Cloud Containers",
-    "text": "Права для ролей сервиса Cloud Containers"
   },
   "no_quotas_limits": {
     "number": null,
