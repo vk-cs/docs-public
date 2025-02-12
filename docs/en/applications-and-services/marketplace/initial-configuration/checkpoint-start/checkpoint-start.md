@@ -300,15 +300,15 @@ Now, you can connect to the gateway VM using the GAiA Portal web interface at `h
    1. Go to `https://<EXTERNAL_IP_ADDRESS>:443`, where `<EXTERNAL_IP_ADDRESS>` is the external IP address of the management server specified in the management server configuration instructions.
    1. Enter the login received in the management server configuration instructions and the password set at the [configuration](#setup_management).
    1. On the First Time Configuration Wizard window, click **Next**.
-   1. At the “Deployment Options” step, leave the settings unchanged and click **Next**.
-   1. At the “Management Connection” step, leave the settings unchanged and click **Next**.
-   1. At the “Device Information” step, leave the settings unchanged and click **Next**.
-   1. At the “Date and Time Settings” step, leave the settings unchanged and press **Next**.
-   1. At the “Installation Type” step, select **Security Gateway and/or Security Management**.
-   1. At the “Products” step, only set the **Security Management** checkbox to configure the **Check Point CloudGuard Network — Security Management BYOL** service as a management server. If necessary, you can configure the service as a gateway and a management server at the same time. Read more about it in the [service official documentation](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Installation_and_Upgrade_Guide/Content/Topics-IUG/Installing-Standalone.htm).
-   1. At the “Security Management Administrator” step, leave the settings unchanged and click **Next**.
-   1. At the “Security Management GUI Clients” step, leave the settings unchanged and click **Next**.
-   1. At the “First Time Configuration Wizard Summary” step, click **Finish** and confirm the system reboot.
+   1. At the **Deployment Options** step, leave the settings unchanged and click **Next**.
+   1. At the **Management Connection** step, leave the settings unchanged and click **Next**.
+   1. At the **Device Information** step, leave the settings unchanged and click **Next**.
+   1. At the **Date and Time Settings** step, leave the settings unchanged and press **Next**.
+   1. At the **Installation Type** step, select **Security Gateway and/or Security Management**.
+   1. At the **Products** step, only set the **Security Management** checkbox to configure the **Check Point CloudGuard Network — Security Management BYOL** service as a management server. If necessary, you can configure the service as a gateway and a management server at the same time. Read more about it in the [service official documentation](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Installation_and_Upgrade_Guide/Content/Topics-IUG/Installing-Standalone.htm).
+   1. At the **Security Management Administrator** step, leave the settings unchanged and click **Next**.
+   1. At the **Security Management GUI Clients** step, leave the settings unchanged and click **Next**.
+   1. At the **First Time Configuration Wizard Summary** step, click **Finish** and confirm the system reboot.
 
 Now, you can connect to the management server VM using the GAiA Portal web interface at `https://<EXTERNAL_IP_ADDRESS>` (or via SSH `<EXTERNAL_IP_ADDRESS>:22`), where `<EXTERNAL_IP_ADDRESS>` is the external IP address of the management server specified in the management server configuration instructions.
 

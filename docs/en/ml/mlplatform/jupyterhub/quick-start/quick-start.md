@@ -7,7 +7,7 @@ After going through all the quick start steps, you will learn how to create and 
 1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform**.
 1. Click the **Create instance** button in the **JupyterHub** tile.
-1. On the “Configuration” step, set the administrator password for the instance. Save the username and password you entered.
+1. On the **Configuration** step, set the administrator password for the instance. Save the username and password you entered.
 
     <err>
 
@@ -16,7 +16,7 @@ After going through all the quick start steps, you will learn how to create and 
     </err>
 
 1. Leave other parameters as default. Click the **Next Step** button.
-1. On the “Select Network” step, leave the default network and click the **Create instance** button.
+1. On the **Select Network** step, leave the default network and click the **Create instance** button.
 1. Wait for the instance to be created. This usually takes 10–15 minutes. Once the instance is created, it will appear in the list of ML Platform instances.
 
 ## 2. Connect to instance

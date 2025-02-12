@@ -30,7 +30,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
    Otherwise, click **Add**.
 
-1. In the “Configuration” step:
+1. In the **Configuration** step:
 
    1. Select the cluster configuration **Dev environment** with the newest version of Kubernetes.
 
@@ -42,7 +42,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
    1. Click the **Next Step** button.
 
-1. In the “Create cluster” step, set:
+1. In the **Create cluster** step, set:
 
    1. **Cluster name:** for example, `vk-cloud-k8s-quickstart`.
    1. **Virtual machine type — Master:** `STD3-2-8`.
@@ -61,7 +61,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
    1. Leave the other settings unchanged.
    1. Press the **Next step** button.
 
-1. In the “Node group” step, set:
+1. In the **Node group** step, set:
 
    1. **Node type:** `STD3-4-8`.
    1. **Availability zone:** `Moscow (MS1)`.

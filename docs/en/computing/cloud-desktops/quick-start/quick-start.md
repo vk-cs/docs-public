@@ -48,7 +48,7 @@ After completing all the steps of the quick start, you will:
 
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Click the **Add** button.
-1. At the “Configuration” step, specify:
+1. At the **Configuration** step, specify:
 
     - **Pool name**: for example, `vk-cloud-desktops-pool-quickstart`.
     - **Pool type**: `Sessional`.
@@ -60,7 +60,7 @@ After completing all the steps of the quick start, you will:
     - **User inactivity timeout**: `5`.
 
 1. Click the **Next step** button.
-1. At the “Virtual machine settings” step, specify:
+1. At the **Virtual machine settings** step, specify:
 
     - **Instance type**: `STD1-1`.
     - **Disk size**: `10`.
@@ -69,7 +69,7 @@ After completing all the steps of the quick start, you will:
     - **Security group vk-cloud-desktops-pool-quickstart**: `default`.
 
 1. Click the **Next step** button.
-1. At the “Peripherals setup” step, leave the parameters unchanged.
+1. At the **Peripherals setup** step, leave the parameters unchanged.
 1. Click the **Create a pool** button.
 
    The creation of the pool of desktops will begin. This process can take a long time.

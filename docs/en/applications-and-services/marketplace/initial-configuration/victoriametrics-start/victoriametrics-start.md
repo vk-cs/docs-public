@@ -69,14 +69,14 @@ To deploy the VictoriaMetrics service in a project:
    </tablist>
    <tabpanel>
 
-   1. At the “Настройки VictoriaMetrics” step:
+   1. At the **Настройки VictoriaMetrics** step:
 
       - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
    1. Click the **Next step** button.
-   1. At the “Параметры сервера” step:
+   1. At the **Параметры сервера** step:
 
       - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
@@ -87,12 +87,12 @@ To deploy the VictoriaMetrics service in a project:
         - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
-   1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.
+   1. At the **Confirmation** step, review the calculated cost of the service and click **Connect the tariff**.
 
    </tabpanel>
    <tabpanel>
 
-   1. At the “Настройки VictoriaMetrics” step:
+   1. At the **Настройки VictoriaMetrics** step:
 
       - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
@@ -100,7 +100,7 @@ To deploy the VictoriaMetrics service in a project:
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
    1. Click the **Next step** button.
-   1. At the “Параметры серверов” step:
+   1. At the **Параметры серверов** step:
 
       - **Количество серверов**: specify the number of VMs to deploy in the cluster.
       - **Сеть**: select the previously created network and subnet.
@@ -112,7 +112,7 @@ To deploy the VictoriaMetrics service in a project:
         - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
-   1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.
+   1. At the **Confirmation** step, review the calculated cost of the service and click **Connect the tariff**.
 
    </tabpanel>
    <tabpanel>
@@ -125,7 +125,7 @@ To deploy the VictoriaMetrics service in a project:
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
    1. Click the **Next step** button.
-   1. At the “Общие параметры” step:
+   1. At the **Общие параметры** step:
 
       - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
@@ -133,7 +133,7 @@ To deploy the VictoriaMetrics service in a project:
       - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
-   1. At the “Параметры компонентов” step:
+   1. At the **Параметры компонентов** step:
 
       - For each of the `vmselect`, `vminsert` and `vmstorage` components, specify the number of deployed VMs in the cluster and [the type of virtual machine](/en/computing/iaas/concepts/about#flavors).
       - For the data disk for `vmstorage`:
@@ -141,7 +141,7 @@ To deploy the VictoriaMetrics service in a project:
         - **Disk size**: specify the required VM disk size in gigabytes.
         - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
-   1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.
+   1. At the **Confirmation** step, review the calculated cost of the service and click **Connect the tariff**.
 
    </tabpanel>
    </tabs>

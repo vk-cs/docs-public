@@ -86,7 +86,7 @@ Scheme of preliminary preparation of networks:
 
 In your management console [create a VPN](/en/networks/vnet/service-management/vpn) with the following parameters:
 
-1. At the “IKE Configuration” step, specify the algorithms for the primary IPsec connection:
+1. At the **IKE Configuration** step, specify the algorithms for the primary IPsec connection:
 
     - **IKE-policy**:	`New IKE-policy`;
     - **Policy name**:	`d11-gate-ike`;
@@ -96,7 +96,7 @@ In your management console [create a VPN](/en/networks/vnet/service-management/v
     - **IKE version**: `v2`;
     - **Diffie-Hellman group**: `group14`.
 
-1. At the “Configure IPsec” step, specify algorithms to protect payload traffic between nodes:
+1. At the **Configure IPsec** step, specify algorithms to protect payload traffic between nodes:
 
     - **IPsec Policy**:	`New IPsec-policy`;
     - **Policy name**:	`d11-gate-ike`;
@@ -106,7 +106,7 @@ In your management console [create a VPN](/en/networks/vnet/service-management/v
     - **IKE version**: `v2`;
     - **Diffie-Hellman group**: `group14`.
 
-1. At the “Creating Endpoint Groups” step, specify the networks the traffic between which will be protected by VPN:
+1. At the **Creating Endpoint Groups** step, specify the networks the traffic between which will be protected by VPN:
 
     - **Router**: `priv-router`;
     - **Local Endpoint**: `New endpoint group`;
@@ -116,7 +116,7 @@ In your management console [create a VPN](/en/networks/vnet/service-management/v
     - **Group name**: `d11-tunnel-remote-acl`;
     - **Subnet address**: `10.55.4.0/22`.
 
-1. At the “Configure a tunnel” step, specify the address of the remote gateway with which the IPsec connection will be established and the pre-shared key (PSK):
+1. At the **Configure a tunnel** step, specify the address of the remote gateway with which the IPsec connection will be established and the pre-shared key (PSK):
 
     - **Settings**: `Advanced`;
     - **Tunnel name**: `d11-ipsec-tun`;

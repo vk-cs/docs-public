@@ -30,7 +30,7 @@ To set up two-factor authentication using the SAML service:
     - **Group Attr Name**: specify the type of user attribute that will be returned by the SAML service and which the system will use to decide whether to grant access. The attribute can be of any type. Typically, the `Group` value is specified, i.e. access is granted depending on which group the user belongs to.
 
 1. Click **Save**.
-   
+
 <!---Убрали по задаче https://jira.vk.team/browse/VKCSDOCS-1715, потому что пока доступен только один тип      
     - **Name ID format**: select which NameID format will be used to map name identifiers across identity providers and service providers. Supported options:  
 

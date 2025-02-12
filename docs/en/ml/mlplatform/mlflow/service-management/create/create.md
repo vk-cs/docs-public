@@ -9,7 +9,7 @@ To create an MLflow instance:
 1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform**.
 1. Click the **Create instance** button in the **MLflow** tile.
-1. On the “Configuration” step, specify the instance parameters:
+1. On the **Configuration** step, specify the instance parameters:
 
     - **Name of instance**: display name of the instance, also specifies the OS hostname. The name can only contain Latin letters, numbers and special characters `-`, `_` and `.`.
     - **Category of virtual machine**: defines a list of preinstalled VM configurations in the **Type of virtual machine** box. More details in [review of the Cloud Servers service](/en/computing/iaas/concepts/about#flavors).
@@ -43,7 +43,7 @@ To create an MLflow instance:
 
 1. Click the **Next step** button.
 
-1. On the “Select network” step, specify the parameters of the network, where the instance will be located:
+1. On the **Select network** step, specify the parameters of the network, where the instance will be located:
 
     - **Network**: select a network or create a new one.
     - **Subnetwork Address**: enter the subnet CIDR if you choose to create a new network.

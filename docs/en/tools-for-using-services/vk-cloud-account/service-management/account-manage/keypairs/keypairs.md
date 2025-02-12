@@ -20,7 +20,7 @@ Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/service-manag
 1. Run the command:
 
    ```bash
-   openstack keypair show <key pair name>
+   openstack keypair show <KEY PAIR NAME>
    ```
 
 <info>
@@ -130,7 +130,7 @@ This is a group operation: if necessary, you can delete several key pairs at onc
 1. Run the command:
 
    ```bash
-   openstack keypair delete <key pair name>
+   openstack keypair delete <KEY PAIR NAME>
    ```
 
 </tabpanel>

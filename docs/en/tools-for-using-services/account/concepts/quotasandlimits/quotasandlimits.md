@@ -13,8 +13,8 @@ After activating the services, basic quotas become available to the project. The
 
 Quotas can be [viewed](../../service-management/project-settings/manage#viewing_project_quotas):
 
-* short list — [in the management console](../../service-management/project-settings/manage#viewing_project_quotas)
-* extended list — via the OpenStack CLI
+- short list — [in the management console](../../service-management/project-settings/manage#viewing_project_quotas)
+- extended list — via the OpenStack CLI
 
 There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#common_4cc7e93b), which can be created by a single user.
 
@@ -295,18 +295,18 @@ Quotas for the total number of disks in the project take into account all types 
 * 100 TB using OpenStack CLI
 |![](/en/assets/check.svg "inline")
 
-|Size of one High-IOPS SSD disk 
+|Size of one High-IOPS SSD disk
 |* 2 TB via VK management console
 * 5 TB using OpenStack CLI 
 |![](/en/assets/check.svg "inline")
 
-|Size of one High-IOPS HA SSD disk 
+|Size of one High-IOPS HA SSD disk
 |* 2 TB via VK management console
 * 5 TB using OpenStack CLI 
 |![](/en/assets/check.svg "inline")
 
-|Size of one image 
-|500 GB 
+|Size of one image
+|500 GB
 |![](/en/assets/check.svg "inline")
 
 |Total volume of images
