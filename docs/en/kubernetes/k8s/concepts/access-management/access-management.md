@@ -8,7 +8,7 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 
 - The user's roles in the management console affect:
 
-  - [Available operations with clusters in the management console](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions).
+  - [Available operations with clusters in the management console](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes).
   - [Available actions in the cluster](#kubernetes-roles-relation).
 
     A user with a specific management console role is assigned an appropriate [Kubernetes role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles). The Kubernetes role defines which cluster objects are available to the user and what actions are allowed to be performed on these objects.

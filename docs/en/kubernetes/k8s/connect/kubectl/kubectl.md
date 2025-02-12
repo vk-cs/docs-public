@@ -216,10 +216,8 @@ The way to connect to the cluster depends on its IP address:
 
       {include(/en/_includes/_client_keystone_auth.md)}
 
-   1. Determine on behalf of which user you want to connect to the cluster. Then:
-
-      - [Assign](/tools-for-using-services/account/service-management/project-settings/access-manage#inviting_a_new_member_to_the_project) necessary [role](../../concepts/access-management) to this user.
-      - [Activate API access](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#enabling_2fa) for this user.
+   1. Check if you have the [required role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes) to work with Kubernetes clusters. If you do not have one, ask the project owner or superadmin to add it for you.
+   1. [Activate](/en/tools-for-using-services/rest-api/enable-api#activate_api_access) API access.
 
 ## Connecting to cluster
 
