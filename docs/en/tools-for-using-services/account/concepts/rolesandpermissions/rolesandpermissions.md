@@ -116,7 +116,7 @@ He can create and edit only rule groups (firewalls).
 - can add floating IP addresses to the project.
 
 | Kubernetes administrator, operator, and auditor
-| For detailed information about the permissions of these roles, see [Roles for the Cloud Containers service and their permissions](#roles_for_the_containers_service_and_their_permissions).
+| For detailed information about the permissions of these roles, see [Roles for the Cloud Containers service and their permissions](#roles_permissions_kubernetes).
 
 |===
 
@@ -344,7 +344,7 @@ Each role has certain permissions set to perform operations.
 | ![](/en/assets/no.svg "inline")
 |===
 
-## Roles for the Containers service and their permissions
+## {heading(Permissions in Cloud Containers)[id=roles_permissions_kubernetes]}
 
 The following user roles are intended for working with the [Сontainers service](/en/kubernetes/k8s):
 
