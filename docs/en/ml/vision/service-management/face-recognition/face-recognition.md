@@ -55,7 +55,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 ### Request example
 
 ```http
-curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs"      \
+curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs"      \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
@@ -118,7 +118,7 @@ Request example (any image is used):
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
@@ -153,7 +153,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -196,7 +196,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_many_people.jpg;type=image/jpeg' \
@@ -241,7 +241,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -300,7 +300,7 @@ Request parameters are passed in JSON format in the request body with `name="met
 
 Each time a known person is recognized, the facial vector representation (embedding) is updated to improve recognition accuracy in the future. However, in some cases, it is better to disable auto-update using the `update_embedding` parameter, for example, when it is known in advance that the photos are of poor quality.
 
-For a description of the space parameter, see the section of the [Set](/ml/vision/service-management/face-recognition#set) method.
+For a description of the space parameter, see the section of the [Set](../../service-management/face-recognition#set) method.
 
 `image_meta` parameters:
 
@@ -320,7 +320,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_person_in_db.jpg;type=image/jpeg' \
@@ -429,7 +429,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
@@ -492,7 +492,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -536,7 +536,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
@@ -601,7 +601,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
@@ -638,7 +638,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -692,7 +692,7 @@ Request parameters are passed in JSON format in the request body with `name="met
 | space | string | numeric identifier used to avoid person collisions (required non-empty) |
 | images | []image_meta | metadata of transferred images (required non-empty) |
 
-For a description of the space parameter, see the section of the [Set](/ml/vision/service-management/face-recognition#set) method.
+For a description of the space parameter, see the section of the [Set](../../service-management/face-recognition#set) method.
 
 `image_meta` parameters:
 
@@ -705,7 +705,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 <warn>
 
-The method is subject to [restrictions](../../vision-limits#image_processing)
+The method is subject to [restrictions](../../concepts/vision-limits#image_processing)
 
 </warn>
 
@@ -713,7 +713,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing)
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
@@ -775,7 +775,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
@@ -828,7 +828,7 @@ Request parameters are passed in JSON format in the request body with `name="met
 | -------- | ------ | -------- |
 | space | string | Numeric identifier used to avoid person collisions (required non-empty)|
 
-For a description of the space parameter, see the section of the [Set](/ml/vision/service-management/face-recognition#set) method.
+For a description of the space parameter, see the section of the [Set](../../service-management/face-recognition#set) method.
 
 This request does not require the transfer of images.
 
@@ -836,7 +836,7 @@ This request does not require the transfer of images.
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
@@ -871,7 +871,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<your_token>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<YOUR_TOKEN>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={

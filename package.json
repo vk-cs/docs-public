@@ -4,14 +4,6 @@
   "description": "Публичная документация VK Cloud",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "portal install && preparer prepare",
-    "init": "portal install",
-    "preparation": "preparer prepare",
-    "build": "portal build",
-    "start": "portal start",
-    "healthcheck": "audit checkup",
-    "lint": "preparer prepare",
-    "dev": "portal dev",
     "portal:install": "portal install",
     "preparer:prepare": "preparer prepare",
     "audit:checkup": "audit checkup",
@@ -26,8 +18,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vk-tech/d11n-audit": "3.5.10",
-    "@vk-tech/d11n-portal": "3.5.10",
-    "@vk-tech/d11n-preparer": "3.5.10"
+    "@vk-tech/d11n-audit": "4.0.8",
+    "@vk-tech/d11n-portal": "4.0.8",
+    "@vk-tech/d11n-preparer": "4.0.8"
   }
 }

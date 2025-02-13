@@ -73,7 +73,7 @@ A change of ownership is possible in any state of the project balance.
 
 <info>
 
-The new owner may need to [link a payment card](../../activation#linking_a_bank_card), if the project does not have a linked card, and [confirm phone number](../../activation).
+The new owner may need to [link a payment card](/en/intro/billing/service-management/add-card#bind_the_card), if the project does not have a linked card, and [confirm phone number](/en/intro/start/account-registration).
 
 </info>
 
