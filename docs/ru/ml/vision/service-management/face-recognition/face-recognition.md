@@ -57,7 +57,7 @@ HOST: `https://smarty.mail.ru`
 ### Пример запроса
 
 ```curl
-curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs"      \
+curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs"      \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
@@ -120,7 +120,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш т
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
@@ -155,7 +155,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -198,7 +198,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_many_people.jpg;type=image/jpeg' \
@@ -243,7 +243,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -302,7 +302,7 @@ curl -X 'POST' \
 
 Каждый раз, когда распознается известная персона, происходит обновление векторного представления лица (embedding) для лучшего распознания этой персоны в будущем. Однако в некоторых случаях лучше отключать автообновление с помощью параметра `update_embedding`, например, когда заведомо известно, что фотографии плохого качества.
 
-Описание параметра `space` смотрите в разделе метода [Set](/ml/vision/service-management/face-recognition#set).
+Описание параметра `space` смотрите в разделе метода [Set](../../service-management/face-recognition#set).
 
 Параметры `image_meta`:
 
@@ -322,7 +322,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_person_in_db.jpg;type=image/jpeg' \
@@ -431,7 +431,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
@@ -494,7 +494,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -538,7 +538,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
@@ -603,7 +603,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
@@ -640,7 +640,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -694,7 +694,7 @@ curl -X 'POST' \
 | space    | string       | числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty) |
 | images   | []image_meta | метаданные передаваемых изображений (required non-empty) |
 
-Описание параметра space смотрите в разделе метода [Set](/ml/vision/service-management/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](../../service-management/face-recognition#set).
 
 Параметры `image_meta`:
 
@@ -715,7 +715,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
@@ -777,7 +777,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
@@ -830,7 +830,7 @@ curl -X 'POST' \
 | -------- | ------ | -------- |
 | space    | string | Числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty)|
 
-Описание параметра space смотрите в разделе метода [Set](/ml/vision/service-management/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](../../service-management/face-recognition#set).
 
 Данный запрос не требует передачи изображений.
 
@@ -838,7 +838,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
@@ -873,7 +873,7 @@ curl -X 'POST' \
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
