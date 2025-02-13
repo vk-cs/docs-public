@@ -1,0 +1,587 @@
+{
+  "az": {
+    "number": null,
+    "full": "Availability zones",
+    "text": "Availability zones"
+  },
+  "create_account": {
+    "number": null,
+    "full": "1. Create an account",
+    "text": "1. Create an account"
+  },
+  "confirm_email": {
+    "number": null,
+    "full": "2. Confirm your email",
+    "text": "2. Confirm your email"
+  },
+  "confirm_phone": {
+    "number": null,
+    "full": "3. Confirm your phone",
+    "text": "3. Confirm your phone"
+  },
+  "bind_card": {
+    "number": null,
+    "full": "4. Bind card to your project",
+    "text": "4. Bind card to your project"
+  },
+  "using_ai_bot": {
+    "number": null,
+    "full": "How to use AI consultant",
+    "text": "How to use AI consultant"
+  },
+  "how_bot_works": {
+    "number": null,
+    "full": "How AI consultant works",
+    "text": "How AI consultant works"
+  },
+  "prepayment": {
+    "number": null,
+    "full": "Prepayment",
+    "text": "Prepayment"
+  },
+  "additional_registration_of_legal_entities": {
+    "number": null,
+    "full": "Additional registration of legal entities and sole proprietors",
+    "text": "Additional registration of legal entities and sole proprietors"
+  },
+  "legal_entities": {
+    "number": null,
+    "full": "Legal entities and sole proprietors",
+    "text": "Legal entities and sole proprietors"
+  },
+  "composition_of_accounting_documents": {
+    "number": null,
+    "full": "Composition of accounting documents",
+    "text": "Composition of accounting documents"
+  },
+  "methods_of_obtaining_accounting_documents": {
+    "number": null,
+    "full": "Methods of obtaining accounting documents",
+    "text": "Methods of obtaining accounting documents"
+  },
+  "edm": {
+    "number": null,
+    "full": "Electronic document management system (EDM)",
+    "text": "Electronic document management system (EDM)"
+  },
+  "delivery_of_original_documents": {
+    "number": null,
+    "full": "Delivery of original documents",
+    "text": "Delivery of original documents"
+  },
+  "cpu_generations": {
+    "number": null,
+    "full": "CPU generations",
+    "text": "CPU generations"
+  },
+  "start_stop_restart_vm": {
+    "number": null,
+    "full": "Starting, stopping, reboot the VM",
+    "text": "Starting, stopping, reboot the VM"
+  },
+  "delete_vm": {
+    "number": null,
+    "full": "Deleting a VM",
+    "text": "Deleting a VM"
+  },
+  "password": {
+    "number": null,
+    "full": "Setting and changing a password",
+    "text": "Setting and changing a password"
+  },
+  "mount_disk": {
+    "number": null,
+    "full": "Connecting disk to VM",
+    "text": "Connecting disk to VM"
+  },
+  "create_disk": {
+    "number": null,
+    "full": "Creating disk",
+    "text": "Creating disk"
+  },
+  "find_os_distro_and_os_version": {
+    "number": null,
+    "full": "Filling os_distro and os_version tags",
+    "text": "Filling os_distro and os_version tags"
+  },
+  "migrate_own_licenses": {
+    "number": null,
+    "full": "Migration previously purchased licenses to VK Cloud",
+    "text": "Migration previously purchased licenses to VK Cloud"
+  },
+  "source_guard": {
+    "number": null,
+    "full": "IP Source Guard",
+    "text": "IP Source Guard"
+  },
+  "secgroups": {
+    "number": null,
+    "full": "Firewall and security groups",
+    "text": "Firewall and security groups"
+  },
+  "default_sg": {
+    "number": null,
+    "full": "Default security group",
+    "text": "Default security group"
+  },
+  "preset_sg": {
+    "number": null,
+    "full": "Preset security groups",
+    "text": "Preset security groups"
+  },
+  "custom_sg": {
+    "number": null,
+    "full": "Custom security groups",
+    "text": "Custom security groups"
+  },
+  "shared_net": {
+    "number": null,
+    "full": "Shared network",
+    "text": "Shared network"
+  },
+  "service_net": {
+    "number": null,
+    "full": "Service network",
+    "text": "Service network"
+  },
+  "shadow_port": {
+    "number": null,
+    "full": "Shadow port",
+    "text": "Shadow port"
+  },
+  "share": {
+    "number": null,
+    "full": "Sharing network",
+    "text": "Sharing network"
+  },
+  "view_shared": {
+    "number": null,
+    "full": "Viewing projects with shared network access",
+    "text": "Viewing projects with shared network access"
+  },
+  "unshare": {
+    "number": null,
+    "full": "Unsharing network",
+    "text": "Unsharing network"
+  },
+  "delete_shared": {
+    "number": null,
+    "full": "Deleting shared network",
+    "text": "Deleting shared network"
+  },
+  "shielding": {
+    "number": null,
+    "full": "Activating shielding",
+    "text": "Activating shielding"
+  },
+  "origin_group_list": {
+    "number": null,
+    "full": "Viewing list of groups",
+    "text": "Viewing list of groups"
+  },
+  "user-id": {
+    "number": null,
+    "full": "Canonical user ID",
+    "text": "Canonical user ID"
+  },
+  "project-id": {
+    "number": null,
+    "full": "Project ID",
+    "text": "Project ID"
+  },
+  "permissons": {
+    "number": null,
+    "full": "Types of permits",
+    "text": "Types of permits"
+  },
+  "create_vm_backup_plan": {
+    "number": null,
+    "full": "Creating backup plan for virtual machine",
+    "text": "Creating backup plan for virtual machine"
+  },
+  "create_db_backup_plan": {
+    "number": null,
+    "full": "Creating backup plan for database instance",
+    "text": "Creating backup plan for database instance"
+  },
+  "edit_backup_plan": {
+    "number": null,
+    "full": "Editing backup plan",
+    "text": "Editing backup plan"
+  },
+  "activate_stop_delete_backup_plan": {
+    "number": null,
+    "full": "Activating, stopping, and deleting backup plan",
+    "text": "Activating, stopping, and deleting backup plan"
+  },
+  "delete_backup_copy": {
+    "number": null,
+    "full": "Deleting instance backup copies",
+    "text": "Deleting instance backup copies"
+  },
+  "features_of_installing_addons": {
+    "number": null,
+    "full": "Features of installing add-ons",
+    "text": "Features of installing add-ons"
+  },
+  "available_addons": {
+    "number": null,
+    "full": "Available add-ons",
+    "text": "Available add-ons"
+  },
+  "istio": {
+    "number": null,
+    "full": "Istio",
+    "text": "Istio"
+  },
+  "jaeger": {
+    "number": null,
+    "full": "Jaeger",
+    "text": "Jaeger"
+  },
+  "kube_prometheus_stack": {
+    "number": null,
+    "full": "Kube Prometheus Stack",
+    "text": "Kube Prometheus Stack"
+  },
+  "storage_types": {
+    "number": null,
+    "full": "Supported VK Cloud storage types",
+    "text": "Supported VK Cloud storage types"
+  },
+  "autoscaling": {
+    "number": null,
+    "full": "Autoscaling",
+    "text": "Autoscaling"
+  },
+  "placeholder": {
+    "number": null,
+    "full": "Pre-reserve resources",
+    "text": "Pre-reserve resources"
+  },
+  "k8s_versions_hystory": {
+    "number": null,
+    "full": "Kubernetes version history",
+    "text": "Kubernetes version history"
+  },
+  "kubernetes-roles-relation": {
+    "number": null,
+    "full": "Relationship between the roles of management console and Kubernetes",
+    "text": "Relationship between the roles of management console and Kubernetes"
+  },
+  "viewing_addons": {
+    "number": null,
+    "full": "Viewing add-ons",
+    "text": "Viewing add-ons"
+  },
+  "addons_available_for_installation": {
+    "number": null,
+    "full": "Add-ons available for installation",
+    "text": "Add-ons available for installation"
+  },
+  "installed_addons": {
+    "number": null,
+    "full": "Installed add-ons",
+    "text": "Installed add-ons"
+  },
+  "installing_addon": {
+    "number": null,
+    "full": "Installing add-on",
+    "text": "Installing add-on"
+  },
+  "editing_addon_code": {
+    "number": null,
+    "full": "Editing add-on code",
+    "text": "Editing add-on code"
+  },
+  "updating_addon_version": {
+    "number": null,
+    "full": "Updating add-on version",
+    "text": "Updating add-on version"
+  },
+  "removing_addon": {
+    "number": null,
+    "full": "Removing add-on",
+    "text": "Removing add-on"
+  },
+  "editing_addon_settings_code_during_installation": {
+    "number": null,
+    "full": "Editing add-on settings code during installation",
+    "text": "Editing add-on settings code during installation"
+  },
+  "scale_master_nodes": {
+    "number": null,
+    "full": "Scaling of master nodes",
+    "text": "Scaling of master nodes"
+  },
+  "scale_worker_nodes": {
+    "number": null,
+    "full": "Scaling groups of worker nodes",
+    "text": "Scaling groups of worker nodes"
+  },
+  "autoscale_worker_nodes": {
+    "number": null,
+    "full": "Configuring automatic scaling for worker node groups",
+    "text": "Configuring automatic scaling for worker node groups"
+  },
+  "1_get_information_you_need_to_update_your_addon": {
+    "number": null,
+    "full": "1. Get information you need to update your add-on",
+    "text": "1. Get information you need to update your add-on"
+  },
+  "2_prepare_addon_environment_for_update": {
+    "number": null,
+    "full": "2. Prepare add-on environment for update",
+    "text": "2. Prepare add-on environment for update"
+  },
+  "3_update_addon_version": {
+    "number": null,
+    "full": "3. Update add-on version",
+    "text": "3. Update add-on version"
+  },
+  "4_verify_addon_operability_after_updating": {
+    "number": null,
+    "full": "4. Verify add-on operability after updating",
+    "text": "4. Verify add-on operability after updating"
+  },
+  "prepare": {
+    "number": null,
+    "full": "Before you start",
+    "text": "Before you start"
+  },
+  "set": {
+    "number": null,
+    "full": "1. Configure adding empty pod to cluster",
+    "text": "1. Configure adding empty pod to cluster"
+  },
+  "check": {
+    "number": null,
+    "full": "2. Check settings are applied",
+    "text": "2. Check settings are applied"
+  },
+  "delete": {
+    "number": null,
+    "full": "Deleting instance",
+    "text": "Deleting instance"
+  },
+  "single": {
+    "number": null,
+    "full": "Creating instance in Single configuration",
+    "text": "Creating instance in Single configuration"
+  },
+  "cluster": {
+    "number": null,
+    "full": "Creating instance in Cluster configuration",
+    "text": "Creating instance in Cluster configuration"
+  },
+  "change_password": {
+    "number": null,
+    "full": "Changing administrator password",
+    "text": "Changing administrator password"
+  },
+  "with_jh": {
+    "number": null,
+    "full": "Connection with JupyterHub",
+    "text": "Connection with JupyterHub"
+  },
+  "standalone": {
+    "number": null,
+    "full": "Standalone mode",
+    "text": "Standalone mode"
+  },
+  "create-users": {
+    "number": null,
+    "full": "Creating new users",
+    "text": "Creating new users"
+  },
+  "change-vm-type": {
+    "number": null,
+    "full": "Changing virtual machine type",
+    "text": "Changing virtual machine type"
+  },
+  "change-disk-size": {
+    "number": null,
+    "full": "Changing disk size",
+    "text": "Changing disk size"
+  },
+  "add-s3": {
+    "number": null,
+    "full": "Connecting S3 bucket",
+    "text": "Connecting S3 bucket"
+  },
+  "pause": {
+    "number": null,
+    "full": "Stopping and starting instance",
+    "text": "Stopping and starting instance"
+  },
+  "reload": {
+    "number": null,
+    "full": "Rebooting instance",
+    "text": "Rebooting instance"
+  },
+  "force-reload": {
+    "number": null,
+    "full": "Force rebooting instance",
+    "text": "Force rebooting instance"
+  },
+  "copy-jh-link": {
+    "number": null,
+    "full": "Sharing instance link",
+    "text": "Sharing instance link"
+  },
+  "shared": {
+    "number": null,
+    "full": "Using shared folders",
+    "text": "Using shared folders"
+  },
+  "cluster_spark": {
+    "number": null,
+    "full": "Cloud Spark cluster",
+    "text": "Cloud Spark cluster"
+  },
+  "vm_docker_registry": {
+    "number": null,
+    "full": "VM with Docker Registry",
+    "text": "VM with Docker Registry"
+  },
+  "cloud_storage": {
+    "number": null,
+    "full": "Cloud Storage",
+    "text": "Cloud Storage"
+  },
+  "service_ml_platform": {
+    "number": null,
+    "full": "Cloud ML Platform service",
+    "text": "Cloud ML Platform service"
+  },
+  "auth_parameters": {
+    "number": null,
+    "full": "Plugin authorization parameters",
+    "text": "Plugin authorization parameters"
+  },
+  "conf_parameters": {
+    "number": null,
+    "full": "Plugin configuration parameters",
+    "text": "Plugin configuration parameters"
+  },
+  "configure_agent": {
+    "number": null,
+    "full": "Configuring the agent to collect logs from additional text files",
+    "text": "Configuring the agent to collect logs from additional text files"
+  },
+  "create_siem_connections": {
+    "number": null,
+    "full": "Creating SIEM connections",
+    "text": "Creating SIEM connections"
+  },
+  "edit_siem_connection": {
+    "number": null,
+    "full": "Editing SIEM connection settings",
+    "text": "Editing SIEM connection settings"
+  },
+  "activate_siem_connection": {
+    "number": null,
+    "full": "Activating or disactivating the SIEM connection",
+    "text": "Activating or disactivating the SIEM connection"
+  },
+  "delete_siem_connection": {
+    "number": null,
+    "full": "Deleting SIEM connection",
+    "text": "Deleting SIEM connection"
+  },
+  "view_events_list": {
+    "number": null,
+    "full": "Viewing event list",
+    "text": "Viewing event list"
+  },
+  "filter_events_list": {
+    "number": null,
+    "full": "Using filters and search queries",
+    "text": "Using filters and search queries"
+  },
+  "export_events_list": {
+    "number": null,
+    "full": "Exporting event list",
+    "text": "Exporting event list"
+  },
+  "preparatory_steps": {
+    "number": null,
+    "full": "Preparatory steps",
+    "text": "Preparatory steps"
+  },
+  "setup_gateway": {
+    "number": null,
+    "full": "2. Configure virtual gateway",
+    "text": "2. Configure virtual gateway"
+  },
+  "setup_management": {
+    "number": null,
+    "full": "3. Configure management server",
+    "text": "3. Configure management server"
+  },
+  "configure_network_access_to_gateway": {
+    "number": null,
+    "full": "5. Configure network access to gateway",
+    "text": "5. Configure network access to gateway"
+  },
+  "configure_network_access_to_management": {
+    "number": null,
+    "full": "6. Configure network access to management server",
+    "text": "6. Configure network access to management server"
+  },
+  "manual-update": {
+    "number": null,
+    "full": "Manual certificate update",
+    "text": "Manual certificate update"
+  },
+  "auto-update": {
+    "number": null,
+    "full": "Automatic certificate update",
+    "text": "Automatic certificate update"
+  },
+  "roles_permissions": {
+    "number": null,
+    "full": "Permissions for all roles",
+    "text": "Permissions for all roles"
+  },
+  "roles_logging": {
+    "number": null,
+    "full": "Permissions in Cloud Logging",
+    "text": "Permissions in Cloud Logging"
+  },
+  "roles_monitoring": {
+    "number": null,
+    "full": "Permissions in Cloud Monitoring",
+    "text": "Permissions in Cloud Monitoring"
+  },
+  "roles_audit": {
+    "number": null,
+    "full": "Permissions in Cloud Audit",
+    "text": "Permissions in Cloud Audit"
+  },
+  "roles_permissions_kubernetes": {
+    "number": null,
+    "full": "Permissions in Cloud Containers",
+    "text": "Permissions in Cloud Containers"
+  },
+  "images-volumes": {
+    "number": null,
+    "full": "Disks and images",
+    "text": "Disks and images"
+  },
+  "sdn_view": {
+    "number": null,
+    "full": "Viewing project SDN",
+    "text": "Viewing project SDN"
+  },
+  "ssl": {
+    "number": null,
+    "full": "3. (Optional) Add SSL certificate to your project",
+    "text": "3. (Optional) Add SSL certificate to your project"
+  },
+  "cdn": {
+    "number": null,
+    "full": "4. Add description of CDN resource",
+    "text": "4. Add description of CDN resource"
+  }
+}
