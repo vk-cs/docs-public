@@ -164,7 +164,7 @@
 
 Туннели с одинаковыми селекторами (исходными и целевыми диапазонами подсетей) не могут существовать одновременно, даже если они находятся в разных SDN. Поэтому нельзя заранее создать туннель в SDN Sprut, аналогичный туннелю в SDN Neutron, так как это приведет к проблемам в работе исходного туннеля.
 
-1. [Удалите](/networks/vnet/service-management/vpn#udalenie_vpn_tunnelya) исходный туннель в SDN Neutron.
+1. [Удалите](/ru/networks/vnet/service-management/vpn#udalenie_vpn_tunnelya) исходный туннель в SDN Neutron.
 1. [Добавьте](/ru/networks/vnet/service-management/vpn#dobavlenie_vpn_tunnelya) новый VPN-туннель для продвинутого маршрутизатора, настроенного в SDN Sprut, и задайте параметры IPsec-политики.
 
 ## 6. Скопируйте группы безопасности в SDN Sprut

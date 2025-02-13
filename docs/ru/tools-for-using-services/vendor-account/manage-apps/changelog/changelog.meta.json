@@ -5,9 +5,6 @@
   "metaTitle": "История изменений",
   "metaDescription": "История изменений",
   "sectionTitle": "История изменений",
-  "variables": {
-    "revdate": "18.07.2024"
-  },
   "build": {
     "for": [
       "dontbuild"
