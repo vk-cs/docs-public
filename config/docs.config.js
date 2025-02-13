@@ -131,6 +131,7 @@ export const config = {
         sentry: true,
         suggester: true,
         editOnGitOps: true,
+        dpp: true,
     },
     translations: {
         en: {

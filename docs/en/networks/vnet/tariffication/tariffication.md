@@ -2,7 +2,7 @@
 
 Tariffication is based on the "pay as you go" principle: you are charged only for the resources you consume to the nearest second.
 
-The cost of network services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/pricing) to calculate the total cost of other platform services that use network services. See [Billing](../../../intro/billing) for how the tools related to paying for platform services work.
+The cost of network services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/pricing) to calculate the total cost of other platform services that use network services. See [Billing](/en/intro/billing) for how the tools related to paying for platform services work.
 
 ## What is charged
 
@@ -14,7 +14,7 @@ Charged:
   - The public IP address assigned to the port if the port is connected to the `ext-net' network.
   - Existing floating public IP addresses (even if not assigned to any port).
 
-- [Standard and service](../concepts/load-balancer#types_of_load_balancers) load balancers.
+- [Standard and service](../../balancing/concepts/load-balancer#types_of_load_balancers) load balancers.
 
 ## What is not charged
 
