@@ -118,13 +118,13 @@ When using the AWS CLI to work with Object Storage, there are a few things to ke
 
 - The AWS CLI treats Cloud Storage as a hierarchical file system and object keys are in the form of a file path.
 - When running the aws command to work with Cloud Storage, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
-- Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.bizmrg.com](http://hb.bizmrg.com).
+- Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.ru-msk.vkcloud-storage.ru](http://hb.ru-msk.vkcloud-storage.ru).
 - Any operations cannot be performed using the CLI with the Backup bucket class.
 - When using the storage classes `--storage-class`, the `STANDARD` values for Hotbox and `STANDARD_IA` for Icebox apply.
 - When working in MacOS, in some cases it is required to run the following view:
 
 ```bash
- export PYTHONPATH =/Library/Python/2.7/site-packages; aws s3 <command> --endpoint-url=http://hb.bizmrg.com
+ export PYTHONPATH =/Library/Python/2.7/site-packages; aws s3 <command> --endpoint-url=http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 ## Examples of using
@@ -132,7 +132,7 @@ When using the AWS CLI to work with Object Storage, there are a few things to ke
 Create a bucket:
 
 ```bash
- aws s3 mb s3: //<bucket_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 mb s3: //<bucket_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Changing the bucket storage class:
@@ -144,41 +144,41 @@ Changing the bucket storage class:
 File upload
 
 ```bash
- aws s3 cp <path_to_local_file> s3: // <packet_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 cp <path_to_local_file> s3: // <packet_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Downloading an object
 
 ```bash
- aws s3 cp s3: // <batch_name> / <key_name> <path_to_local_file> --endpoint-url http://hb.bizmrg.com
+ aws s3 cp s3: // <batch_name> / <key_name> <path_to_local_file> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Synchronizing a local directory with a bucket
 
 ```bash
- aws s3 sync <local_directory> s3: // <package_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 sync <local_directory> s3: // <package_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Moving an object
 
 ```bash
- aws s3 mv s3: // <batch_name> / <source_key_name> s3: // <bucket_name> / <destination_key_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 mv s3: // <batch_name> / <source_key_name> s3: // <bucket_name> / <destination_key_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Getting a list of objects
 
 ```bash
- aws s3 ls s3: // <bucket_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 ls s3: // <bucket_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Deleting an Object
 
 ```bash
- aws s3 rm s3: // <bucket_name> / <key_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 rm s3: // <bucket_name> / <key_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Removing a multi-component object
 
 ```bash
- aws s3api abort-multipart-upload --bucket <bucket_name> --endpoint-url http://hb.bizmrg.com --key large_test_file --upload-id <multipart_upload_object_ID>
+ aws s3api abort-multipart-upload --bucket <bucket_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru --key large_test_file --upload-id <multipart_upload_object_ID>
 ```

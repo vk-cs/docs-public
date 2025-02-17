@@ -130,18 +130,18 @@ Submit a job to the cluster by executing the script:
 
 ```python
 from mlplatform_client import MLPlatform
-   
+
 REFRESH_TOKEN = "<the value of the access token>"
 CLUSTER_ID = "<cluster ID>"
 
 PY_FILE = "calculate-pi.py"
 JOB_NAME = "pi-spark-job"
-   
+
 mlp = MLPlatform(REFRESH_TOKEN)
-   
+
 spark_job_manifest = mlp.get_default_manifest(CLUSTER_ID, JOB_NAME)
 spark_job_info = mlp.spark_submit_job(CLUSTER_ID, spark_job_manifest, PY_FILE)
-   
+
 print(spark_job_info)
 ```
 

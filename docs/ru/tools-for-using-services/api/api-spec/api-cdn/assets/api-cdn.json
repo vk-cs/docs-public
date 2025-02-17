@@ -1648,7 +1648,7 @@
           },
           "hostHeader": {
             "enabled": true,
-            "value": "example.hb.bizmrg.com"
+            "value": "example.hb.ru-msk.vkcloud-storage.ru"
           },
           "ignoreQueryString": {
             "enabled": true,
@@ -1663,7 +1663,7 @@
           }
         },
         "originGroup": 80,
-        "originGroup_name": "example.hb.bizmrg.com",
+        "originGroup_name": "example.hb.ru-msk.vkcloud-storage.ru",
         "originProtocol": "MATCH",
         "preset_applied": false,
         "proxy_ssl_enabled": false,
@@ -2323,7 +2323,7 @@
               "description": "Признак использования: `true` — опция включена, `false` — опция не включена"
             },
             "policy_type": {
-              "type": "string",              
+              "type": "string",
               "description": "Тип политики `allow` — разрешить доступ всем доменам, кроме указанных в параметре `excepted_values`; `deny` — запретить доступ всем доменам, кроме указанных в параметре `excepted_values`"
             },
             "excepted_values": {

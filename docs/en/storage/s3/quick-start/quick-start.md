@@ -68,7 +68,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 1. Generate a temporary link to access the object with private ACL settings by running the command:
 
    ```bash
-   aws s3 presign s3://<bucket name>/<object name> --endpoint-url https://hb.bizmrg.com
+   aws s3 presign s3://<bucket name>/<object name> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    <details>
@@ -79,7 +79,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    Then the command will look like:
 
    ```bash
-   aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.bizmrg.com
+   aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    </details>
@@ -89,7 +89,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    The link looks like this:
 
    ```http
-   https://hb.bizmrg.com/<bucket name>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
+   https://hb.ru-msk.vkcloud-storage.ru/<bucket name>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
    ```
 
    <info>
@@ -117,7 +117,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    The link looks like this:
 
    ```http
-   https://<bucket name>.hb.bizmrg.com/...
+   https://<bucket name>.hb.ru-msk.vkcloud-storage.ru/...
    ```
 
 ## 4. Check access to objects

@@ -22,7 +22,7 @@ Webhooks для Cloud Storage — это возможность настраив
 
 ```xml
 PUT /?notification HTTP/1.1
-Host: Bucket.hb.bizmrg.com
+Host: Bucket.hb.ru-msk.vkcloud-storage.ru
 
 <?xml version="1.0" encoding="UTF-8"?>
 <NotificationConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
@@ -57,7 +57,7 @@ Host: Bucket.hb.bizmrg.com
 
 ```xml
 PUT /?notification HTTP/1.1
-Host: bucketA.hb.bizmrg.com
+Host: bucketA.hb.ru-msk.vkcloud-storage.ru
 Content-Length: 606
 Content-Type: application/xml
 x-amz-content-sha256: 34850007f92ec3331486b48fd7db15f48315fe73c4a9b135e6d9fd629276c1e7
@@ -105,7 +105,7 @@ Connection: close
 
 ```xml
 GET /?notification HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 Content-Length: 0
 Content-Type: application/xml
 x-amz-content-sha256: 34850007f92ec3331486b48fd7db15f48315fe73c4a9b135e6d9fd629276c1e7

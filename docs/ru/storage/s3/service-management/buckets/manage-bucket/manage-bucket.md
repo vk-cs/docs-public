@@ -25,9 +25,9 @@
       ```
 
       Здесь:
-  
+
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -36,7 +36,7 @@
       Пример команды:
 
       ```bash
-      aws s3 ls --endpoint-url https://hb.bizmrg.com
+      aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -72,7 +72,7 @@
     )
 
     const (
-	    vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	    vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 	    defaultRegion = "us-east-1"
     )
 
@@ -95,7 +95,7 @@
 
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 Команда `ListBuckets` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListBuckets).
@@ -112,7 +112,7 @@
    ```python
    import boto3
    session = boto3.session.Session()
-   s3_client = session.client(service_name='s3', endpoint_url='https://hb.bizmrg.com')
+   s3_client = session.client(service_name='s3', endpoint_url='https://hb.ru-msk.vkcloud-storage.ru')
 
    response = s3_client.list_buckets()
    print(response)
@@ -123,7 +123,7 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 Команда `list_buckets` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_buckets.html).
@@ -148,7 +148,7 @@
 {include(/ru/_includes/_s3-open-bucket.md)}
 
 1. Перейдите на вкладку **Домен** и нажмите кнопку ![plus-icon](/ru/assets/plus-icon.svg "inline") **Привязать домен**.
-1. В открывшемся окне скопируйте значение для CNAME-записи вида `<название_бакета>.<endpoint-url>`. Пример записи `mybucket.hb.bizmrg.com`.
+1. В открывшемся окне скопируйте значение для CNAME-записи вида `<название_бакета>.<endpoint-url>`. Пример записи `mybucket.hb.ru-msk.vkcloud-storage.ru`.
 1. Перейдите в личный кабинет провайдера вашего домена. Добавьте для вашего домена любую CNAME-запись и в значение записи добавьте скопированный текст.
 1. Подождите, пока изменения вступят в силу. Обычно это занимает 15–20 минут.
 1. Вернитесь в личный кабинет VK Cloud. В поле **Домен** укажите имя вашего домена.
@@ -278,7 +278,7 @@ Cloud Storage позволяет синхронизировать объекты
         ```
    Здесь `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.bizmrg.com` — домен региона Москва;
+      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -287,7 +287,7 @@ Cloud Storage позволяет синхронизировать объекты
    Пример команды:
 
    ```bash
-   aws s3 sync s3://example-bucket . --endpoint-url https://hb.bizmrg.com
+   aws s3 sync s3://example-bucket . --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
@@ -304,7 +304,7 @@ Cloud Storage позволяет синхронизировать объекты
    Пример команды:
 
    ```bash
-   aws s3 sync . s3://example-bucket --endpoint-url https://hb.bizmrg.com
+   aws s3 sync . s3://example-bucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
@@ -441,9 +441,9 @@ Cloud Storage позволяет настроить автоматическое
       Здесь:
 
       - (Опционально) `force` — удаляет бакет и все объекты в нем. Без этого параметра бакет будет удален, только если не содержит объектов.
-  
+
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -452,7 +452,7 @@ Cloud Storage позволяет настроить автоматическое
       Пример команды:
 
       ```bash
-      aws s3 rb s3://example-bucket --force --endpoint-url https://hb.bizmrg.com
+      aws s3 rb s3://example-bucket --force --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:

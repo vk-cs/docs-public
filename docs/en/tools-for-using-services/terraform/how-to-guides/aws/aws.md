@@ -101,7 +101,7 @@ Here:
 - `bucket` — bucket name:
 
   - `bucket = "example-bucket"` — the bucket will be created with the `example-bucket` name. Name requirements:
-  
+
     - contains from 4 to 63 characters
     - begins and ends with a letter or a number
     - consists only of lowercase Latin letters, numbers, and special characters: `.`, `-`
@@ -286,7 +286,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 1. Verify that the bucket and objects have been created. Run the command:
 
     ```bash
-    aws s3 ls s3://example-bucket/ --endpoint-url https://hb.bizmrg.com
+    aws s3 ls s3://example-bucket/ --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```
 
     Here:
@@ -303,7 +303,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 
     ```bash
     aws s3api get-bucket-lifecycle-configuration \
-      --endpoint-url https://hb.bizmrg.com \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
       --bucket example-bucket
     ```
 
@@ -311,7 +311,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 
     ```bash
     aws s3api get-bucket-acl \
-      --endpoint-url https://hb.bizmrg.com \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
       --bucket example-bucket
     ```
 
@@ -319,7 +319,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 
     ```bash
     aws s3api get-bucket-cors \
-      --endpoint-url https://hb.bizmrg.com \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
       --bucket example-bucket
     ```
 
