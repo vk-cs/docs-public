@@ -275,9 +275,9 @@ root@ubuntu-std1-1:~# systemctl start nginx 
 
 Для ознакомления с Kibana можно использовать тестовый набор данных:
 
-[![](assets/1576047965286-1576047965286.png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_2.png)
+[![](assets/1576047965286-1576047965286.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Kibana_Dashboard_2.png)
 
-[![](assets/1576047982336-1576047982336.png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_3.png)
+[![](assets/1576047982336-1576047982336.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Kibana_Dashboard_3.png)
 
 ## Установка filebeat
 
@@ -501,19 +501,19 @@ root@ubuntu-std1-1:~# service filebeat start
 
 1.  Перейдите в Kibana, в левом меню нажмите шестеренку, выберите Kibana > Index Patterns и нажмите Create Index Pattern.
 
-[![](assets/1576061057996-1576061057996.png)](https://hb.bizmrg.com/help-images/logging/Template-1.png)
+[![](assets/1576061057996-1576061057996.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Template-1.png)
 
 2.  Чтобы выбрать все записи, в поле Index pattern введите nginx-\*  и нажмите Next step.
 
-[![](assets/1576061025693-1576061025693.png)](https://hb.bizmrg.com/help-images/logging/Template-2.png)
+[![](assets/1576061025693-1576061025693.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Template-2.png)
 
 3.  Чтобы использоваться временные метки из лог-файлов, в поле Time Filter field name выберите @timestamp и нажмите Create index pattern.
 
-[![](assets/1576060887959-1576060887959.png)](https://hb.bizmrg.com/help-images/logging/Template-3.png)
+[![](assets/1576060887959-1576060887959.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Template-3.png)
 
 Будет создан index pattern.
 
-[![](assets/1576063973675-1576063973675.png)](https://hb.bizmrg.com/help-images/logging/Template-4.png)
+[![](assets/1576063973675-1576063973675.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Template-4.png)
 
 Чтобы просмотреть логи, попавшие в Elasticsearch, перейдите в Discover.
 
@@ -525,7 +525,7 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 
 1.  В левом меню выберите Visualisations и нажмите кнопку Create new visualisation.
 
-[![](assets/1576064128640-1576064128640.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_1.png)
+[![](assets/1576064128640-1576064128640.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation_1.png)
 
 2.  Выберите Vertical bar.
 
@@ -537,7 +537,7 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 
 4.  Добавьте ось X.
 
-[![](assets/1576065045921-1576065045921.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-4.png)
+[![](assets/1576065045921-1576065045921.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation-4.png)
 
 5.  Введите данные:
 
@@ -546,11 +546,11 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 - Size: 10 - 10 топ значений.
 - Custom Label: Top 10 clients - название визуализации.
 
-[![](assets/1576065062374-1576065062374.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-5.png)
+[![](assets/1576065062374-1576065062374.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation-5.png)
 
 6.  Выполните запрос и сохраните визуализацию.
 
-[![](assets/1576065262380-1576065262380.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-6.png)
+[![](assets/1576065262380-1576065262380.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation-6.png)
 
 В результате на визуализации показаны топ-10 IP-адресов, с которых были обращения.
 
@@ -562,7 +562,7 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 4.  Добавьте ось X.
 5.  Чтобы данные отображались секторам, выберите Add bucket / Split slices.
 
-[![](assets/1576065754486-1576065754486.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_21.png)
+[![](assets/1576065754486-1576065754486.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation_21.png)
 
 1.  Введите следующие данные:
 
@@ -571,11 +571,11 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 - Size:5  - выбираем топ 5.
 - Custom label: Top 5 countries -  название графика.
 
-[![](assets/1576065921656-1576065921656.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_22.png)
+[![](assets/1576065921656-1576065921656.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation_22.png)
 
 9.  Выполните запрос и сохраните визуализацию.
 
-[![](assets/1576065939964-1576065939964.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_23.png)
+[![](assets/1576065939964-1576065939964.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation_23.png)
 
 На графике отобразятся топ 5 стран, из которых был доступ.
 
@@ -589,7 +589,7 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 6.  Чтобы на втором графике получить выборку количества ответов сервера "200 ОК" в единицу времени, нажмите "+", выберите другой цвет, в названии укажите Responce:200, в строке запроса - responce:200.
 7.  Нажмите "+" и аналогичным образом добавьте код ответа 302. Затем сохраните визуализацию.
 
-[![](assets/1576067043735-1576067043735.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_32.png)
+[![](assets/1576067043735-1576067043735.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Visualisation_32.png)
 
 ## Настройка Kibana Dashboard
 
@@ -597,16 +597,16 @@ Kibana Dashboard - это набор визуализаций.
 
 1.  Нажмите Dashboards, затем Create New Dashboard.
 
-[![](assets/1576067237826-1576067237826.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_1.png)
+[![](assets/1576067237826-1576067237826.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Dashboard_1.png)
 
 2.  В верхнем меню нажмите Add.
 
-[![](assets/1576067256219-1576067256219.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_2.png)
+[![](assets/1576067256219-1576067256219.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Dashboard_2.png)
 
 3.  В открывшемся окне выберите созданные вами визуализации.
 
-[![](assets/1576067130968-1576067130968.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_3.png)
+[![](assets/1576067130968-1576067130968.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Dashboard_3.png)
 
 4.  При необходимости измените порядок и размер визуализаций, затем нажмите Save.
 
-[![](assets/1576067332838-1576067332838.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_4.png)
+[![](assets/1576067332838-1576067332838.png)](https://hb.ru-msk.vkcloud-storage.ru/help-images/logging/Dashboard_4.png)

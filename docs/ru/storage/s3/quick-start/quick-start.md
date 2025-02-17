@@ -70,7 +70,7 @@
    1. Сгенерируйте временную ссылку для доступа к объекту с приватными настройками ACL, выполнив команду:
 
       ```bash
-      aws s3 presign s3://<название бакета>/<имя объекта> --endpoint-url https://hb.bizmrg.com
+      aws s3 presign s3://<название бакета>/<имя объекта> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       <details>
@@ -81,7 +81,7 @@
       Тогда команда будет иметь вид:
 
       ```bash
-      aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.bizmrg.com
+      aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       </details>
@@ -91,7 +91,7 @@
       Ссылка имеет следующий вид:
 
       ```https
-      https://hb.bizmrg.com/<название бакета>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
+      https://hb.ru-msk.vkcloud-storage.ru/<название бакета>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
       ```
 
       <info>
@@ -124,7 +124,7 @@
       Ссылка имеет следующий вид:
 
       ```https
-      https://<название бакета>.hb.bizmrg.com/...
+      https://<название бакета>.hb.ru-msk.vkcloud-storage.ru/...
       ```
 
 ## 4. Проверьте наличие доступа к объектам
