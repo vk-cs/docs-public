@@ -24,7 +24,7 @@ Inquiry:
 ```http
  PUT / HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-acl: public-read
 x-amz-content-sha256: c6f1fc479f5f690c443b73a258aacc06ddad09eca0b001e9640ff2cd56fe5710
 x-amz-date: 20200831T173143Z
@@ -55,7 +55,7 @@ Inquiry:
 ```http
  GET / HTTP / 1.1
 
-Host: hb.bizmrg.com
+Host: hb.ru-msk.vkcloud-storage.ru
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T183940Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = 245eb867ab4dba65c71
@@ -103,7 +103,7 @@ Inquiry:
 ```http
  GET / HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T172613Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = de1bf77684d915c74
@@ -160,7 +160,7 @@ Inquiry:
 ```http
  HEAD / HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20170714T185156Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = e3b4551b249278fc34ae
@@ -189,7 +189,7 @@ Inquiry:
 ```http
  DELETE / HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20170710T181321Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = b0558a259d9dbbcdate, Signature = b0558a259d9794

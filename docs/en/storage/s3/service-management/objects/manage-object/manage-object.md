@@ -26,9 +26,9 @@
       ```
 
       Здесь:
-  
+
       - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -37,7 +37,7 @@
       Пример команды:
 
       ```bash
-      aws s3 ls s3://my-bucket --endpoint-url https://hb.bizmrg.com
+      aws s3 ls s3://my-bucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -74,7 +74,7 @@
 	   "log"
    )
 
-   const vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+   const vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 
    const defaultRegion = "us-east-1"
 
@@ -103,7 +103,7 @@
 
 Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-- `https://hb.bizmrg.com` — домен региона Москва;
+- `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
 - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 Команда `ListObjectsV2` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
@@ -120,7 +120,7 @@
    ```python
    import boto3
    session = boto3.session.Session()
-   s3_client = session.client(service_name='s3',endpoint_url='https://hb.bizmrg.com')
+   s3_client = session.client(service_name='s3',endpoint_url='https://hb.ru-msk.vkcloud-storage.ru')
 
    test_bucket_name = 'boto3-test-bucket-name'
 
@@ -130,7 +130,7 @@
 
 Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-- `https://hb.bizmrg.com` — домен региона Москва;
+- `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
 - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 Команда `list_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
@@ -176,7 +176,7 @@
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<имя_загруженного файла>` — имя, которое будет присвоено скаченному объекту.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.bizmrg.com` — домен региона Москва;
+       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -185,7 +185,7 @@
       Пример команды:
 
       ```bash
-      aws s3api get-object --bucket my-bucket --key folder/my-object.exe uploaded-file.exe --endpoint-url   https://hb.bizmrg.com
+      aws s3api get-object --bucket my-bucket --key folder/my-object.exe uploaded-file.exe --endpoint-url   https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -222,7 +222,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 	   defaultRegion         = "us-east-1"
    )
 
@@ -253,7 +253,7 @@
 
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `GetObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
@@ -270,7 +270,7 @@
    ```python
    import boto3
    session = boto3.session.Session()
-   s3_client = session.client(service_name='s3', endpoint_url='https://hb.bizmrg.com')
+   s3_client = session.client(service_name='s3', endpoint_url='https://hb.ru-msk.vkcloud-storage.ru')
 
    response = s3_client.get_object(Bucket='boto3-bucket-name-test', Key='object_name.txt')
    print(response)
@@ -279,7 +279,7 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `get_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_objects).
@@ -332,11 +332,11 @@
       ```
 
       Здесь:
-  
+
       - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
       - `<настройка_acl>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
       - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -345,7 +345,7 @@
       Пример команды:
 
       ```bash
-      aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.bizmrg.com
+      aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
    </details>
@@ -381,7 +381,7 @@
 
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.bizmrg.com` — домен региона Москва;
+       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
    - `<время_действия>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
 
@@ -391,13 +391,13 @@
    Пример команды :
 
    ```bash
-   aws s3 presign s3://my-bucket/my-object.png --endpoint-url https://hb.bizmrg.com --expires-in 300000
+   aws s3 presign s3://my-bucket/my-object.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --expires-in 300000
    ```
 
    Пример ответа:
 
    ```http
-   https://hb.bizmrg.com/dd-winscp/usetech.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4TucX9HhP8RZveR9Cb3vGr%2F20231113%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20231113T104239Z&X-Amz-Expires=300000&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7c4d87d12dd12f8f420ffaed84328f1d6a79050818fd4c615b219ce7bc18e9
+   https://hb.ru-msk.vkcloud-storage.ru/dd-winscp/usetech.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4TucX9HhP8RZveR9Cb3vGr%2F20231113%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20231113T104239Z&X-Amz-Expires=300000&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7c4d87d12dd12f8f420ffaed84328f1d6a79050818fd4c615b219ce7bc18e9
    ```
 
    </details>
@@ -426,7 +426,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 	   defaultRegion         = "ru-msk"
    )
 
@@ -466,7 +466,7 @@
    ```
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 </tabpanel>
@@ -499,7 +499,7 @@
 
    logger = logging.getLogger(__name__)
    session = boto3.session.Session()
-   s3_client = session.client(service_name='s3', endpoint_url='https://hb.bizmrg.com')
+   s3_client = session.client(service_name='s3', endpoint_url='https://hb.ru-msk.vkcloud-storage.ru')
 
    request = create_presigned_url(s3_client, "my-bucket", "picture.png")
 
@@ -512,7 +512,7 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 </tabpanel>
@@ -544,7 +544,7 @@
    - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.bizmrg.com` — домен региона Москва;
+       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -553,7 +553,7 @@
    Пример команды:
 
    ```bash
-   aws s3 cp s3://my-bucket/my-picture.png s3://my-another-bucket/my-picture.png --endpoint-url=https://hb.bizmrg.com
+   aws s3 cp s3://my-bucket/my-picture.png s3://my-another-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
@@ -586,7 +586,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 	   defaultRegion         = "us-east-1"
    )
 
@@ -598,7 +598,7 @@
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   // Копирование объекта из одного бакета в другой
-	
+
 	   sourceBucket := "gobucket"
 	   sourceKey := "test_string.txt"
 	   destBucket := "gobucket2"
@@ -618,7 +618,7 @@
 
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `CopyObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
@@ -633,10 +633,10 @@
 1. Добавьте код в свой проект:
 
    ```python
-   
+
    import boto3
    session = boto3.session.Session()
-   s3_client = session.client(service_name='s3', endpoint_url='https://hb.bizmrg.com')
+   s3_client = session.client(service_name='s3', endpoint_url='https://hb.ru-msk.vkcloud-storage.ru')
 
    source_bucket_name = 'boto3-source-bucket-name'
    source_path = 'object_key1.txt'
@@ -653,7 +653,7 @@
    ```
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `copy` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy).
@@ -682,7 +682,7 @@
    - `<бакет_источник>` — имя бакета, из которого копируется объект.
    - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.bizmrg.com` — домен региона Москва;
+       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -691,7 +691,7 @@
       Пример команды:
 
       ```bash
-      aws s3 cp --recursive s3://my-bucket s3://my-another-bucket --endpoint-url=https://hb.bizmrg.com
+      aws s3 cp --recursive s3://my-bucket s3://my-another-bucket --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -749,7 +749,7 @@
 
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.bizmrg.com` — домен региона Москва;
+       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -758,7 +758,7 @@
       Пример команды:
 
       ```bash
-      aws s3 rm s3://my-bucket/my-picture.png --endpoint-url=https://hb.bizmrg.com
+      aws s3 rm s3://my-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -790,7 +790,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 	   defaultRegion = "us-east-1"
    )
 
@@ -839,7 +839,7 @@
    ```
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команды [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) и [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) подробно описаны в официальной документации к библиотеке aws-sdk-go.
@@ -856,7 +856,7 @@
    ```python
    import boto3
    session = boto3.session.Session()
-   s3_client = session.client(service_name='s3', endpoint_url='https://hb.bizmrg.com')
+   s3_client = session.client(service_name='s3', endpoint_url='https://hb.ru-msk.vkcloud-storage.ru')
 
    test_bucket_name = 'boto3-test-bucket-name'
 
@@ -870,7 +870,7 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `delete_objects` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).
@@ -913,7 +913,7 @@
 
     - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.bizmrg.com` — домен региона Москва;
+      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    <details>
@@ -922,7 +922,7 @@
       Пример команды:
 
       ```bash
-      aws s3api list-multipart-uploads --bucket mybucket --endpoint-url https://hb.bizmrg.com
+      aws s3api list-multipart-uploads --bucket mybucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -994,13 +994,13 @@
 
     - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.bizmrg.com` — домен региона Москва;
+      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Пример выполнения команды:
 
    ```bash
-   aws s3api abort-multipart-upload --bucket mybucket --key inupload.avi --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH --endpoint-url https://hb.bizmrg.com
+   aws s3api abort-multipart-upload --bucket mybucket --key inupload.avi --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
 В результате все незавершенные загрузки будут отменены, а загруженные части — удалены.

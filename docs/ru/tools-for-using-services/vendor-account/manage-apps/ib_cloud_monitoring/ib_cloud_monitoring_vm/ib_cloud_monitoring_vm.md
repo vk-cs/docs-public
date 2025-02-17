@@ -14,8 +14,8 @@
 
    1. Скачайте и установите в целевую ОС программный пакет:
 
-      * [https://mcs-monitoring.hb.bizmrg.com/telegraf/telegraf_1.28.5-vkcs.1-1_amd64.deb](https://mcs-monitoring.hb.bizmrg.com/telegraf/telegraf_1.28.5-vkcs.1-1_amd64.deb) — для образов на базе Debian.
-      * [https://mcs-monitoring.hb.bizmrg.com/telegraf/telegraf-1.28.5-vkcs.1-1.x86_64.rpm](https://mcs-monitoring.hb.bizmrg.com/telegraf/telegraf-1.28.5-vkcs.1-1.x86_64.rpm) — для образов на базе RHEL.
+      * [https://mcs-monitoring.hb.ru-msk.vkcloud-storage.ru/telegraf/telegraf_1.28.5-vkcs.1-1_amd64.deb](https://mcs-monitoring.hb.ru-msk.vkcloud-storage.ru/telegraf/telegraf_1.28.5-vkcs.1-1_amd64.deb) — для образов на базе Debian.
+      * [https://mcs-monitoring.hb.ru-msk.vkcloud-storage.ru/telegraf/telegraf-1.28.5-vkcs.1-1.x86_64.rpm](https://mcs-monitoring.hb.ru-msk.vkcloud-storage.ru/telegraf/telegraf-1.28.5-vkcs.1-1.x86_64.rpm) — для образов на базе RHEL.
 
    1. В директории `/etc/telegraf/` создайте конфигурационный файл агента мониторинга `telegraf.conf`:
 
@@ -265,8 +265,8 @@
 
    Здесь `<TELEGRAF_URL>` — URL-адрес программного пакета агента мониторинга. Укажите значение в зависимости от базовой ОС:
 
-   * `https://mcs-monitoring.hb.bizmrg.com/telegraf/telegraf_1.28.5-vkcs.1-1_amd64.deb` — для образов на базе Debian.
-   * `https://mcs-monitoring.hb.bizmrg.com/telegraf/telegraf-1.28.5-vkcs.1-1.x86_64.rpm` — для образов на базе RHEL.
+   * `https://mcs-monitoring.hb.ru-msk.vkcloud-storage.ru/telegraf/telegraf_1.28.5-vkcs.1-1_amd64.deb` — для образов на базе Debian.
+   * `https://mcs-monitoring.hb.ru-msk.vkcloud-storage.ru/telegraf/telegraf-1.28.5-vkcs.1-1.x86_64.rpm` — для образов на базе RHEL.
 
       Подробнее о плагинах — в разделе [Стандартные метрики](/ru/monitoring-services/monitoring/concepts/mon-metrics).
 

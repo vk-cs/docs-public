@@ -29,7 +29,7 @@ Authorization: <тип подписи>-<алгоритм подписи> Credent
 
 ```bash
 PUT / HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-acl: public-read
 x-amz-content-sha256: c6f1fc479f5f690c443b73a258aacc06ddad09eca0b001e9640ff2cd56fe5710
 x-amz-date: 20200831T173143Z

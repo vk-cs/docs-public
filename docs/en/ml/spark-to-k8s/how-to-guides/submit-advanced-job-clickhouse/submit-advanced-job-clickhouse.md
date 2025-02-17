@@ -202,8 +202,10 @@ When submitting a Spark job, the paths to the files uploaded to the bucket will 
      name: clickhouse-secret
    stringData:
      CH_USER: user_spark
-     CH_PASSWORD: <password of the user_spark user in the ClickHouse instance>
+     CH_PASSWORD: <CLICK_HOUSE_PASSWORD>
    ```
+
+   Here `<CLICK_HOUS_PASSWORD>` ia the password of the `user_spark` user in the ClickHouse instance.
 
    This file describes a Kubernetes secret that stores user credentials for connecting to a ClickHouse instance.
 

@@ -228,7 +228,7 @@
 
     ```shell
 
-    aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url http://hb.bizmrg.com
+    aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 
     ```
 
@@ -241,7 +241,7 @@
 
     ```shell
 
-    aws s3 cp H:/SQLDumps/todaydump.sql s3://s3_backet_name --endpoint-url http://hb.bizmrg.com
+    aws s3 cp H:/SQLDumps/todaydump.sql s3://s3_backet_name --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 
     ```
 
@@ -356,7 +356,7 @@
 
       ```bash
 
-      /usr/local/bin/aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url http://hb.bizmrg.com
+      /usr/local/bin/aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 
       ```
 
@@ -369,7 +369,7 @@
 
       ```bash
 
-      /usr/local/bin/aws s3 cp /mnt/backups/SQLDumps/todaydump.sql s3://s3_backet_name --endpoint-url http://hb.bizmrg.com
+      /usr/local/bin/aws s3 cp /mnt/backups/SQLDumps/todaydump.sql s3://s3_backet_name --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 
       ```
 

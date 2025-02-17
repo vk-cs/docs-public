@@ -94,8 +94,8 @@ aws s3 mb s3://<unique package name> --endpoint-url <endpoint-url>
 
 Where endpoint is the url:
 
-- Common domain (points to the Moscow region): https://hb.bizmrg.com
-- Moscow domain: https://hb.bizmrg.com
+- Common domain (points to the Moscow region): https://hb.ru-msk.vkcloud-storage.ru
+- Moscow domain: https://hb.ru-msk.vkcloud-storage.ru
 - Kazakhstan domain: https://hb.kz-ast.bizmrg.com
 
 The following output will appear as a result of the correct execution of the command:

@@ -32,7 +32,7 @@ Regardless of which method is used, Cloud Storage stores the notification config
 By default, notifications are not enabled for any events. Thus, initially, the notification sub-resource stores an empty configuration.
 
 ```bash
- <NotificationConfiguration xmlns = "http: // <batch_name> .hb.bizmrg.com / image / 01.jpg /"> 
+ <NotificationConfiguration xmlns = "http: // <batch_name> .hb.ru-msk.vkcloud-storage.ru / image / 01.jpg /"> 
 </NotificationConfiguration>
 ```
 
