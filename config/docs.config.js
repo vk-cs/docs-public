@@ -99,12 +99,6 @@ export const config = {
         useNativeSupportUrl: false,
         url: 'https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud',
     },
-    auth: {
-        appUrl: 'https://msk.cloud.vk.com/app',
-        signUpUrl: 'https://msk.cloud.vk.com/app/signup',
-        signInUrl: 'https://msk.cloud.vk.com/app/signin',
-        signOutUrl: 'https://msk.cloud.vk.com/app/signout',
-    },
     gitOps: {
         type: 'GITHUB',
         data: {
