@@ -2,10 +2,10 @@ New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.31.4
 - 1.30.5
 - 1.29.7
 - 1.28.9
-- 1.27.6
 
 When [creating a new cluster](../../../service-management/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../service-management/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
 
@@ -26,6 +26,11 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |Official release date
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
+
+|1.31.x
+|10 December 2024
+|17.02.2025
+|17.04.2026
 
 |1.30.x
 |10 September 2024
@@ -98,7 +103,7 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 | 09.12.2021
 |===
 
-The version history can be viewed at [Kubernetes version history](#k8s_versions_hystory).
+The version history can be viewed at [Kubernetes version history](#k8s_versions_history).
 
 ## Service feature matrix for Kubernetes <a id="k8s-features-list"></a>
 
@@ -110,70 +115,81 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.30.х
+|1.27.x–1.31.х
 
 |Node group scaling settings
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Key pair invalidation
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 
 |Change the size of the Prometheus disk
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Change the type of Master virtual machine
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Update cluster version
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Label & Taints
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Cluster nodes on AlmaLinux
 | ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Integration with VK Cloud IAM
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 |Autoscaling of cluster master
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+
+|GPU support
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/check.svg "inline")
 |===
 
-## {heading(Kubernetes version history)[id=k8s_versions_hystory]}
+## {heading(Kubernetes version history)[id=k8s_versions_history]}
 
 [cols="1,1,2", options="header"]
 |===
 |Version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
+
+|**Kubernetes 1.31.4**
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Added the ability to use and manage GPUs in Kubernetes clusters
 
 |**Kubernetes 1.30.5**
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
@@ -189,7 +205,7 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 
 |**Kubernetes 1.27.6**
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
-|[Autoscaling](/en/kubernetes/k8s/concepts/scale#autoscaling) of cluster master nodes is implemented.
+|[Autoscaling](/en/kubernetes/k8s/concepts/scale#autoscaling) of cluster master nodes is implemented
 
 |**Kubernetes 1.26.5**
 |[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
@@ -223,9 +239,7 @@ By default, a limit on the consumed computing resources ([limit ranges](https://
 
 |**Kubernetes 1.20.4**
 |[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
-|Изменен [формат хранения логов](/en/cases/cases-logs/case-fluent-bit)
-
-[Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) of the cluster has been replaced by [CRI-O](https://cri-o.io/).
+|[Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) of the cluster has been replaced by [CRI-O](https://cri-o.io/).
 
 [Log storage format](/en/cases/cases-logs/case-fluent-bit) has been changed
 |===

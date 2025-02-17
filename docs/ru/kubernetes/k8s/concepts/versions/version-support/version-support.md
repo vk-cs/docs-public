@@ -2,10 +2,10 @@
 
 В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
 
+- 1.31.4
 - 1.30.5
 - 1.29.7
 - 1.28.9
-- 1.27.6
 
 При [создании нового кластера](../../../service-management/create-cluster) выбирайте последнюю доступную [версию Kubernetes](#podderzhka_versiy_kubernetes). По возможности [обновляйте кластер](../../../service-management/update) до последней доступной версии. Процедура обновления описана в [соответствующем разделе концепций](../../update).
 
@@ -26,6 +26,11 @@
 |Официальная дата релиза
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
+
+|1.31.x
+|10 декабря 2024
+|17.02.2025
+|17.04.2026
 
 |1.30.x
 |10 сентября 2024
@@ -98,7 +103,7 @@
 | 09.12.2021
 |===
 
-Историю изменений версий можно посмотреть в разделе [История версий Kubernetes](#k8s_versions_hystory).
+Историю изменений версий можно посмотреть в разделе [История версий Kubernetes](#k8s_versions_history).
 
 ## Поддержка функций сервиса в версиях Kubernetes <a id="k8s-features-list"></a>
 
@@ -110,7 +115,7 @@
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.30.х
+|1.27.x–1.31.х
 
 |Настройки масштабирования групп узлов
 | ![](/ru/assets/check.svg "inline")
@@ -165,9 +170,15 @@
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
+
+|Поддержка GPU
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 
-## {heading(История версий Kubernetes)[id=k8s_versions_hystory]}
+## {heading(История версий Kubernetes)[id=k8s_versions_history]}
 
 [cols="1,1,2", options="header"]
 |===
@@ -175,21 +186,25 @@
 |Изменения в Kubernetes
 |Изменения в сервисе Kubernetes aaS
 
+|**Kubernetes 1.31.4**
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Добавлена возможность [использовать и управлять GPU](../../../how-to-guides/gpu-operator) в кластерах Kubernetes
+
 |**Kubernetes 1.30.5**
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
-|![](/en/assets/no.svg "inline")
+|![](/ru/assets/no.svg "inline")
 
 |**Kubernetes 1.29.7**
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |**Kubernetes 1.28.9**
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |**Kubernetes 1.27.6**
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
-|Реализовано [автоматическое масштабирование](/ru/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера.
+|Реализовано [автоматическое масштабирование](/ru/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера
 
 |**Kubernetes 1.26.5**
 |[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
@@ -197,11 +212,11 @@
 
 - Calico обновлено до 3.26.1.
 - Helm обновлен до 3.12.2.
-- Gatekeeper обновлен до 3.12.0.
+- Gatekeeper обновлен до 3.12.0
 
 |**Kubernetes 1.25.1**
 |[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |**Kubernetes 1.24.9**
 |[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
