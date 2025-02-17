@@ -49,9 +49,9 @@
 1. Откройте консоль и выполните команду:
 
    ```bash
-   aws s3 cp <путь_к_локальному_файлу> s3://<название_бакета>/<ключ_объекта> 
-      --endpoint-url <endpoint-url> 
-      --storage-class <класс-хранения> 
+   aws s3 cp <путь_к_локальному_файлу> s3://<название_бакета>/<ключ_объекта>
+      --endpoint-url <endpoint-url>
+      --storage-class <класс-хранения>
       --acl <настройка-ACL>
    ```
 
@@ -61,7 +61,7 @@
 
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
       - (Опционально) `<класс-хранения>` — задает [класс хранения](../../../reference#klass_hraneniya) объекта. Если не указано, класс хранения наследуется из бакета. Доступные значения:
@@ -81,9 +81,9 @@
 Пример команды:
 
    ```bash
-   aws s3 cp ../pictures/picture.png s3://my-bucket/folder/my-picture.png 
-      --endpoint-url https://hb.bizmrg.com 
-      --storage-class STANDARD_IA 
+   aws s3 cp ../pictures/picture.png s3://my-bucket/folder/my-picture.png
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+      --storage-class STANDARD_IA
       --acl public-read
    ```
 
@@ -129,7 +129,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 	   defaultRegion         = "us-east-1"
    )
 
@@ -178,7 +178,7 @@
    ```
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `PutObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject).
@@ -196,8 +196,8 @@
       import boto3
       session = boto3.session.Session()
       s3_client = session.client(
-         service_name = 's3', 
-         endpoint_url = 'https://hb.bizmrg.com'
+         service_name = 's3',
+         endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru'
          )
 
       test_bucket_name = 'boto3-test-bucket-name'
@@ -214,7 +214,7 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 Команды `put_object` и `upload_file` подробно описаны в официальной документации к библиотеке boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
@@ -242,9 +242,9 @@
 1. Инициируйте составную загрузку. Откройте консоль и выполните команду:
 
    ```bash
-   aws s3api create-multipart-upload 
-      --bucket <название_бакета> 
-      --key <ключ_объекта> 
+   aws s3api create-multipart-upload
+      --bucket <название_бакета>
+      --key <ключ_объекта>
       --endpoint-url <endpoint-url>
    ```
 
@@ -256,7 +256,7 @@
 
    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.bizmrg.com` — домен региона Москва;
+      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    В результате вернется ответ с параметрами загрузки, включая идентификатор составной загрузки — `UploadId`. Сохраните полученный идентификатор, он понадобится для выполнения последующих команд.
@@ -267,7 +267,7 @@
    Пример команды:
 
    ```bash
-   aws s3api create-multipart-upload --bucket mybucket --key large.avi --endpoint-url https://hb.bizmrg.com
+   aws s3api create-multipart-upload --bucket mybucket --key large.avi --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
@@ -284,12 +284,12 @@
 1. Выполните загрузку первой части файла. Откройте консоль, перейдите в директорию файла для загрузки и выполните команду:
 
    ```bash
-   aws s3api upload-part 
-      --bucket <имя_бакета> 
-      --key <ключ_объекта> 
-      --part-number <номер_части> 
-      --body <название_части> 
-      --upload-id <UploadId> 
+   aws s3api upload-part
+      --bucket <имя_бакета>
+      --key <ключ_объекта>
+      --part-number <номер_части>
+      --body <название_части>
+      --upload-id <UploadId>
       --endpoint-url <endpoint-url>
    ```
 
@@ -307,13 +307,13 @@
    Пример команды:
 
    ```bash
-   aws s3api upload-part 
-      --bucket mybucket 
-      --key large.avi  
-      --part-number 1 
-      --body large.avi.00.part 
-      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH 
-      --endpoint-url https://hb.bizmrg.com
+   aws s3api upload-part
+      --bucket mybucket
+      --key large.avi
+      --part-number 1
+      --body large.avi.00.part
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
@@ -330,10 +330,10 @@
 1. Проверьте, все ли части файла загружены. Для этого выполните команду:
 
    ```bash
-   aws s3api list-parts 
-      --bucket <имя_бакета> 
-      --key <ключ_объекта> 
-      --upload-id <UploadId> 
+   aws s3api list-parts
+      --bucket <имя_бакета>
+      --key <ключ_объекта>
+      --upload-id <UploadId>
       --endpoint-url <endpoint-url>
    ```
 
@@ -343,11 +343,11 @@
    Пример запроса:
 
    ```bash
-   aws s3api list-parts 
-      --bucket mybucket 
-      --key large.avi 
-      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH 
-      --endpoint-url https://hb.bizmrg.com
+   aws s3api list-parts
+      --bucket mybucket
+      --key large.avi
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
@@ -424,11 +424,11 @@
 1. Завершите составную загрузку и объедините части файла в объект. Откройте консоль и выполните команду:
 
    ```bash
-   aws s3api complete-multipart-upload 
-      --multipart-upload file://<JSON-file> 
-      --bucket <имя_бакета> 
-      --key <ключ_объекта> 
-      --upload-id <UploadId> 
+   aws s3api complete-multipart-upload
+      --multipart-upload file://<JSON-file>
+      --bucket <имя_бакета>
+      --key <ключ_объекта>
+      --upload-id <UploadId>
       --endpoint-url <endpoint-url>
    ```
 
@@ -439,18 +439,18 @@
    Пример команды:
 
    ```bash
-   aws s3api complete-multipart-upload 
-      --multipart-upload file://fileparts.json 
-      --bucket mybucket --key large.avi 
-      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH 
-      --endpoint-url https://hb.bizmrg.com
+   aws s3api complete-multipart-upload
+      --multipart-upload file://fileparts.json
+      --bucket mybucket --key large.avi
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
 
    ```bash
    {
-    "Location": "http://hb.bizmrg.com/mybucket/large.avi",
+    "Location": "http://hb.ru-msk.vkcloud-storage.ru/mybucket/large.avi",
     "Bucket": "mybucket",
     "Key": "large.avi",
     "ETag": "\"example7e0a4a8ce5683bf54ee3dff96-4\""
@@ -489,7 +489,7 @@
    type BucketBasics struct {
 	      S3Client *s3.Client
       }
-   
+
    // UploadLargeObject разделяет большой файл на части и загружает их Cloud Storage одновременно
    func (basics BucketBasics) UploadLargeObject(bucketName string, objectKey string, largeObject []byte) error {
 	largeBuffer := bytes.NewReader(largeObject)
@@ -574,8 +574,8 @@
 
     # Загрузка с настройками по умолчанию
     def upload_with_default_configuration(local_file_path, bucket_name, object_key, file_size_mb):
-    
-    
+
+
       transfer_callback = TransferCallback(file_size_mb)
       s3.Bucket(bucket_name).upload_file(
          local_file_path, object_key,  Callback=transfer_callback
@@ -584,7 +584,7 @@
 
     # Загрузка с определением размера частей загружаемого объекта и добавлением метаданных объекта
     def upload_with_chunksize_and_meta(local_file_path, bucket_name, object_key, file_size_mb, metadata=None):
-   
+
       transfer_callback = TransferCallback(file_size_mb)
 
       config = TransferConfig(multipart_chunksize=1 * MB)
@@ -601,7 +601,7 @@
     # Загрузка с установкой порогового значения
     # Если файл меньше или равен установленному порогу, он загружается обычным методом, если больше — через составную
     def upload_with_high_threshold(local_file_path, bucket_name, object_key, file_size_mb):
-    
+
       transfer_callback = TransferCallback(file_size_mb)
       config = TransferConfig(multipart_threshold=file_size_mb * 2 * MB)
       s3.Bucket(bucket_name).upload_file(

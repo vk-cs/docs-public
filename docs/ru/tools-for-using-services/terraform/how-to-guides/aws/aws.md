@@ -117,7 +117,7 @@ resource "aws_s3_object" "object-two" {
     <warn>
     После создания бакета изменить его имя будет невозможно.
     </warn>
-  
+
   - `bucket = aws_s3_bucket.example-bucket.bucket` — при создании объекта указывается ресурс, который создает бакет. В это примере объект будет помещен в бакет `example-bucket`, который будет создан ресурсом `aws_s3_bucket`.
 
 - (Опционально) `force_destroy` — параметр разрешает удаление бакета, даже если в нем будут объекты. Доступные значения `true` и `false`. По умолчанию — `false`.
@@ -255,7 +255,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 ## 5. Создайте необходимые ресурсы с помощью Terraform
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
-  
+
    - `aws_provider.tf`;
    - `network.tf`.
 
@@ -284,7 +284,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 1. Проверьте, что бакет и объекты созданы. Выполните команду:
 
    ```bash
-   aws s3 ls s3://example-bucket/ --endpoint-url https://hb.bizmrg.com
+   aws s3 ls s3://example-bucket/ --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Здесь:
@@ -301,7 +301,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
    ```bash
    aws s3api get-bucket-lifecycle-configuration \
-    --endpoint-url https://hb.bizmrg.com \
+    --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
     --bucket example-bucket
    ```
 
@@ -309,7 +309,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
    ```bash
    aws s3api get-bucket-acl \
-    --endpoint-url https://hb.bizmrg.com \
+    --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
     --bucket example-bucket
    ```
 
@@ -317,7 +317,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
    ```bash
    aws s3api get-bucket-cors \
-    --endpoint-url https://hb.bizmrg.com \
+    --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
     --bucket example-bucket
    ```
 

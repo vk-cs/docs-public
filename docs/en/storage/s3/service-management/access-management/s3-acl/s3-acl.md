@@ -12,7 +12,7 @@ When a container or object is created, the service creates a standard ACL that g
 
 ```xml
  <? xml version = "1.0" encoding = "UTF-8"?>
-<AccessControlPolicy xmlns = "http: // <bucket_name> .hb.bizmrg.com / images / 01.jpg /">
+<AccessControlPolicy xmlns = "http: // <bucket_name> .hb.ru-msk.vkcloud-storage.ru / images / 01.jpg /">
 <Owner>
 <ID> \*\*\* Owner-Canonical-User-ID \*\*\* </ID>
 <DisplayName> owner-display-name </DisplayName>
@@ -73,7 +73,7 @@ Canonical user ID is a unique identifier consisting of a set of characters. Exam
 It can be calculated using the command
 
 ```bash
- aws s3api list-buckets --query Owner.ID --output text --endpoint-url https://hb.bizmrg.com
+ aws s3api list-buckets --query Owner.ID --output text --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
 ```
 
 You can also find the canonical user ID of the VK Cloud account by reading the ACL of the bucket or object that the VK Cloud account has access to. When an individual VK Cloud account is granted permissions on a Grant request, a grant entry with the canonical user ID of the VK Cloud account is added to the ACL.
@@ -143,7 +143,7 @@ When granting access policy permission, you can use conditional keys to restrict
 
 ```xml
  <? xml version = "1.0" encoding = "UTF-8"?>
-<AccessControlPolicy xmlns = "http: // <bucket_name> .hb.bizmrg.com / images / 01.jpg /">
+<AccessControlPolicy xmlns = "http: // <bucket_name> .hb.ru-msk.vkcloud-storage.ru / images / 01.jpg /">
 <Owner>
 <ID> Owner-canonical-user-ID </ID>
 <DisplayName> display-name </DisplayName>

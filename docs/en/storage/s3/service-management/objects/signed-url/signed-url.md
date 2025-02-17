@@ -30,7 +30,7 @@ The AWS SDK uses version 4 signature by default to authenticate requests. When u
 ## General view of the signed URL
 
 ```bash
- https://hb.bizmrg.com/ <bucket_name> / <key_name>?
+ https://hb.ru-msk.vkcloud-storage.ru/ <bucket_name> / <key_name>?
 X-Amz-Algorithm = AWS4-HMAC-SHA256
 & X-Amz-Expires = <time interval in seconds>
 & X-Amz-SignedHeaders = <list of headers separated by ";">
@@ -64,5 +64,5 @@ In order to compose a signed URL, you must own static access keys.
 Using the AWS CLI, you can generate a pre-signed link with the following command:
 
 ```bash
- aws s3 presign s3: // <batch_name> / <key_name> --endpoint-url https://hb.bizmrg.com --expires-in <time_in_seconds>
+ aws s3 presign s3: // <batch_name> / <key_name> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --expires-in <time_in_seconds>
 ```

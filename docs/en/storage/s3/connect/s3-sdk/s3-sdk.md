@@ -21,7 +21,7 @@ To connect to the object storage using the SDK:
    </tablist>
    <tabpanel>
 
-   - Endpoint URL: `https://hb.bizmrg.com`.
+   - Endpoint URL: `https://hb.ru-msk.vkcloud-storage.ru`.
    - Access Key ID: the key ID received when creating the account.
    - Secret Key: the secret key received when creating the account.
    - Default region name: `ru-msk`.
@@ -57,16 +57,16 @@ To connect to the object storage using the SDK:
      export AWS_SECRET_ACCESS_KEY=<account secret key>
      export AWS_DEFAULT_REGION=<default region name>
      ```
-  
+
      </tabpanel>
      <tabpanel>
 
      ```bash
      $Env:AWS_ACCESS_KEY_ID="<account key ID>"
      $Env:AWS_SECRET_ACCESS_KEY="<account secret key>"
-     $Env:AWS_DEFAULT_REGION="<default region name>"     
+     $Env:AWS_DEFAULT_REGION="<default region name>"
      ```
-  
+
      </tabpanel>
      </tabs>
 
@@ -92,14 +92,14 @@ To connect to the object storage using the SDK:
      session = boto3.session.Session()
      s3_client = session.client(
          service_name = 's3',
-         endpoint_url = 'https://hb.bizmrg.com',
+         endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru',
          aws_access_key_id = '<YOUR_ACCESS_KEY>',
          aws_secret_access_key = '<YOUR_SECRET_KEY>',
          region_name='ru-msk'
      )
 
      response = s3_client.list_buckets()
- 
+
      for key in response['Buckets']:
          print(key['Name'])
      ```
@@ -120,12 +120,12 @@ To connect to the object storage using the SDK:
          "github.com/aws/aws-sdk-go/service/s3"
          "log"
      )
- 
+
      const (
-         vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+         vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
          defaultRegion = "ru-msk"
      )
- 
+
      func main() {
      	sess, _ := session.NewSession()
 
