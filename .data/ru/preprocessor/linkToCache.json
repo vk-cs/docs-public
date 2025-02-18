@@ -1,0 +1,2112 @@
+{
+  "az": {
+    "number": null,
+    "full": "Зоны доступности",
+    "text": "Зоны доступности"
+  },
+  "create_account": {
+    "number": null,
+    "full": "1. Создайте учетную запись",
+    "text": "1. Создайте учетную запись"
+  },
+  "confirm_email": {
+    "number": null,
+    "full": "2. Подтвердите электронную почту",
+    "text": "2. Подтвердите электронную почту"
+  },
+  "confirm_phone": {
+    "number": null,
+    "full": "3. Подтвердите ваш телефон",
+    "text": "3. Подтвердите ваш телефон"
+  },
+  "bind_card": {
+    "number": null,
+    "full": "4. Привяжите карту к проекту",
+    "text": "4. Привяжите карту к проекту"
+  },
+  "using_ai_bot": {
+    "number": null,
+    "full": "Как пользоваться ИИ-консультантом",
+    "text": "Как пользоваться ИИ-консультантом"
+  },
+  "how_bot_works": {
+    "number": null,
+    "full": "Как работает ИИ-консультант",
+    "text": "Как работает ИИ-консультант"
+  },
+  "bonuses": {
+    "number": null,
+    "full": "Бонусы",
+    "text": "Бонусы"
+  },
+  "prepay": {
+    "number": null,
+    "full": "Предоплата",
+    "text": "Предоплата"
+  },
+  "yuridicheskie_lica": {
+    "number": null,
+    "full": "Юридические лица и ИП",
+    "text": "Юридические лица и ИП"
+  },
+  "reporting_documents_composition": {
+    "number": null,
+    "full": "Состав отчетных документов",
+    "text": "Состав отчетных документов"
+  },
+  "ways_to_receive_reporting_documents": {
+    "number": null,
+    "full": "Способы получения отчетных документов",
+    "text": "Способы получения отчетных документов"
+  },
+  "edm": {
+    "number": null,
+    "full": "Электронный документооборот (ЭДО)",
+    "text": "Электронный документооборот (ЭДО)"
+  },
+  "delivering_original_documents": {
+    "number": null,
+    "full": "Доставка оригиналов документов",
+    "text": "Доставка оригиналов документов"
+  },
+  "view_balance": {
+    "number": null,
+    "full": "Просмотр баланса",
+    "text": "Просмотр баланса"
+  },
+  "balance_charge": {
+    "number": null,
+    "full": "Внесение средств",
+    "text": "Внесение средств"
+  },
+  "doregistraciya_yul": {
+    "number": null,
+    "full": "Дорегистрация ЮЛ и ИП",
+    "text": "Дорегистрация ЮЛ и ИП"
+  },
+  "payment_refunds_bonuses": {
+    "number": null,
+    "full": "Оплата, возврат, бонусы",
+    "text": "Оплата, возврат, бонусы"
+  },
+  "flavors": {
+    "number": null,
+    "full": "Шаблоны конфигураций",
+    "text": "Шаблоны конфигураций"
+  },
+  "cpu_generations": {
+    "number": null,
+    "full": "Поколения процессоров",
+    "text": "Поколения процессоров"
+  },
+  "disk_types": {
+    "number": null,
+    "full": "Типы дисков",
+    "text": "Типы дисков"
+  },
+  "file_share": {
+    "number": null,
+    "full": "Файловое хранилище",
+    "text": "Файловое хранилище"
+  },
+  "create_vm": {
+    "number": null,
+    "full": "Создайте ВМ",
+    "text": "Создайте ВМ"
+  },
+  "start_stop_restart_vm": {
+    "number": null,
+    "full": "Запуск, остановка, перезагрузка ВМ",
+    "text": "Запуск, остановка, перезагрузка ВМ"
+  },
+  "delete_vm": {
+    "number": null,
+    "full": "Удаление ВМ",
+    "text": "Удаление ВМ"
+  },
+  "password": {
+    "number": null,
+    "full": "Установка и изменение пароля",
+    "text": "Установка и изменение пароля"
+  },
+  "mount_disk": {
+    "number": null,
+    "full": "Подключение диска к ВМ",
+    "text": "Подключение диска к ВМ"
+  },
+  "create_disk": {
+    "number": null,
+    "full": "Создание диска",
+    "text": "Создание диска"
+  },
+  "find_os_distro_and_os_version": {
+    "number": null,
+    "full": "Заполнение os_distro и os_version",
+    "text": "Заполнение os_distro и os_version"
+  },
+  "creating_a_file_storage": {
+    "number": null,
+    "full": "Создание файлового хранилища",
+    "text": "Создание файлового хранилища"
+  },
+  "increasing_file_storage_size": {
+    "number": null,
+    "full": "Увеличение размера файлового хранилища",
+    "text": "Увеличение размера файлового хранилища"
+  },
+  "creating_a_snapshot": {
+    "number": null,
+    "full": "Создание снимка",
+    "text": "Создание снимка"
+  },
+  "deleting_a_snapshot": {
+    "number": null,
+    "full": "Удаление снимка",
+    "text": "Удаление снимка"
+  },
+  "adding_an_access_rule": {
+    "number": null,
+    "full": "Добавление правила доступа",
+    "text": "Добавление правила доступа"
+  },
+  "deleting_an_access_rule": {
+    "number": null,
+    "full": "Удаление правила доступа",
+    "text": "Удаление правила доступа"
+  },
+  "deleting_a_file_storage_and_its_network": {
+    "number": null,
+    "full": "Удаление файлового хранилища и его сети",
+    "text": "Удаление файлового хранилища и его сети"
+  },
+  "migrate_own_licenses": {
+    "number": null,
+    "full": "Перенос в облако VK Cloud приобретенных ранее лицензий",
+    "text": "Перенос в облако VK Cloud приобретенных ранее лицензий"
+  },
+  "neutron": {
+    "number": null,
+    "full": "Neutron",
+    "text": "Neutron"
+  },
+  "sprut": {
+    "number": null,
+    "full": "Sprut",
+    "text": "Sprut"
+  },
+  "source_guard": {
+    "number": null,
+    "full": "Использование IP Source Guard",
+    "text": "Использование IP Source Guard"
+  },
+  "secgroups": {
+    "number": null,
+    "full": "Использование файервола и групп безопасности",
+    "text": "Использование файервола и групп безопасности"
+  },
+  "default_sg": {
+    "number": null,
+    "full": "Группа безопасности default",
+    "text": "Группа безопасности default"
+  },
+  "preset_sg": {
+    "number": null,
+    "full": "Преднастроенные группы безопасности",
+    "text": "Преднастроенные группы безопасности"
+  },
+  "custom_sg": {
+    "number": null,
+    "full": "Пользовательские группы безопасности",
+    "text": "Пользовательские группы безопасности"
+  },
+  "shared_net": {
+    "number": null,
+    "full": "Общая сеть",
+    "text": "Общая сеть"
+  },
+  "external_net": {
+    "number": null,
+    "full": "Внешняя сеть",
+    "text": "Внешняя сеть"
+  },
+  "service_net": {
+    "number": null,
+    "full": "Сервисная сеть",
+    "text": "Сервисная сеть"
+  },
+  "shadow_port": {
+    "number": null,
+    "full": "Shadow port",
+    "text": "Shadow port"
+  },
+  "share": {
+    "number": null,
+    "full": "Доступ к сети из других проектов",
+    "text": "Доступ к сети из других проектов"
+  },
+  "view_shared": {
+    "number": null,
+    "full": "Просмотр проектов, которым доступна общая сеть",
+    "text": "Просмотр проектов, которым доступна общая сеть"
+  },
+  "unshare": {
+    "number": null,
+    "full": "Отключение проекта от общей сети",
+    "text": "Отключение проекта от общей сети"
+  },
+  "delete_shared": {
+    "number": null,
+    "full": "Удаление общей сети",
+    "text": "Удаление общей сети"
+  },
+  "shielding": {
+    "number": null,
+    "full": "Включение шилдинга",
+    "text": "Включение шилдинга"
+  },
+  "origin_group_list": {
+    "number": null,
+    "full": "Получение списка групп источников",
+    "text": "Получение списка групп источников"
+  },
+  "user-id": {
+    "number": null,
+    "full": "Выдача прав по идентификатору пользователя",
+    "text": "Выдача прав по идентификатору пользователя"
+  },
+  "project-id": {
+    "number": null,
+    "full": "Выдача прав по идентификатору проекта",
+    "text": "Выдача прав по идентификатору проекта"
+  },
+  "permissons": {
+    "number": null,
+    "full": "Виды разрешений",
+    "text": "Виды разрешений"
+  },
+  "create_vm_backup_plan": {
+    "number": null,
+    "full": "Создание плана резервного копирования для виртуальной машины",
+    "text": "Создание плана резервного копирования для виртуальной машины"
+  },
+  "create_db_backup_plan": {
+    "number": null,
+    "full": "Создание плана резервного копирования для инстанса базы данных",
+    "text": "Создание плана резервного копирования для инстанса базы данных"
+  },
+  "edit_backup_plan": {
+    "number": null,
+    "full": "Изменение плана резервного копирования",
+    "text": "Изменение плана резервного копирования"
+  },
+  "activate_stop_delete_backup_plan": {
+    "number": null,
+    "full": "Активация, остановка и удаление плана резервного копирования",
+    "text": "Активация, остановка и удаление плана резервного копирования"
+  },
+  "delete_backup_copy": {
+    "number": null,
+    "full": "Удаление резервных копий инстанса",
+    "text": "Удаление резервных копий инстанса"
+  },
+  "get_provider_id": {
+    "number": null,
+    "full": "1. Получить идентификатор провайдера",
+    "text": "1. Получить идентификатор провайдера"
+  },
+  "create_plan": {
+    "number": null,
+    "full": "2. Создать план резервного копирования",
+    "text": "2. Создать план резервного копирования"
+  },
+  "create_trigger": {
+    "number": null,
+    "full": "3. Создать триггер",
+    "text": "3. Создать триггер"
+  },
+  "fluent_bit_logaas_integration": {
+    "number": null,
+    "full": "Fluent Bit для Cloud Logging (logaas-integration)",
+    "text": "Fluent Bit для Cloud Logging (logaas-integration)"
+  },
+  "gpu_operator": {
+    "number": null,
+    "full": "GPU Operator",
+    "text": "GPU Operator"
+  },
+  "istio": {
+    "number": null,
+    "full": "Istio",
+    "text": "Istio"
+  },
+  "gpu": {
+    "number": null,
+    "full": "Шаблоны конфигурации с GPU",
+    "text": "Шаблоны конфигурации с GPU"
+  },
+  "gpu-features": {
+    "number": null,
+    "full": "Особенности создания кластера с GPU",
+    "text": "Особенности создания кластера с GPU"
+  },
+  "gpu-sharing": {
+    "number": null,
+    "full": "Технологии совместного использования GPU",
+    "text": "Технологии совместного использования GPU"
+  },
+  "autoscaling": {
+    "number": null,
+    "full": "Автоматическое масштабирование",
+    "text": "Автоматическое масштабирование"
+  },
+  "prepare": {
+    "number": null,
+    "full": "Подготовительные шаги",
+    "text": "Подготовительные шаги"
+  },
+  "k8s_versions_history": {
+    "number": null,
+    "full": "История версий Kubernetes",
+    "text": "История версий Kubernetes"
+  },
+  "delete_cluster": {
+    "number": null,
+    "full": "Удалить кластер",
+    "text": "Удалить кластер"
+  },
+  "labels_taints": {
+    "number": null,
+    "full": "Настроить метки и ограничения",
+    "text": "Настроить метки и ограничения"
+  },
+  "edit": {
+    "number": null,
+    "full": "Редактирование кода аддона",
+    "text": "Редактирование кода аддона"
+  },
+  "scale_master_nodes": {
+    "number": null,
+    "full": "Масштабирование master-узлов",
+    "text": "Масштабирование master-узлов"
+  },
+  "scale_worker_nodes": {
+    "number": null,
+    "full": "Масштабирование групп worker-узлов",
+    "text": "Масштабирование групп worker-узлов"
+  },
+  "autoscale_worker_nodes": {
+    "number": null,
+    "full": "Настройка автоматического масштабирования групп worker-узлов",
+    "text": "Настройка автоматического масштабирования групп worker-узлов"
+  },
+  "set": {
+    "number": null,
+    "full": "1. Настройте добавление пустого пода в кластер",
+    "text": "1. Настройте добавление пустого пода в кластер"
+  },
+  "check": {
+    "number": null,
+    "full": "2. Проверьте применение настроек",
+    "text": "2. Проверьте применение настроек"
+  },
+  "delete": {
+    "number": null,
+    "full": "Удаление инстанса",
+    "text": "Удаление инстанса"
+  },
+  "single": {
+    "number": null,
+    "full": "Создание экземпляра в конфигурации Single",
+    "text": "Создание экземпляра в конфигурации Single"
+  },
+  "cluster": {
+    "number": null,
+    "full": "Создание экземпляра в конфигурации Кластер",
+    "text": "Создание экземпляра в конфигурации Кластер"
+  },
+  "change_password": {
+    "number": null,
+    "full": "Изменение пароля администратора",
+    "text": "Изменение пароля администратора"
+  },
+  "rename": {
+    "number": null,
+    "full": "Переименование экземпляра сервиса",
+    "text": "Переименование экземпляра сервиса"
+  },
+  "view": {
+    "number": null,
+    "full": "Просмотр параметров экземпляра сервиса",
+    "text": "Просмотр параметров экземпляра сервиса"
+  },
+  "status": {
+    "number": null,
+    "full": "Просмотр статуса компонентов",
+    "text": "Просмотр статуса компонентов"
+  },
+  "scaling": {
+    "number": null,
+    "full": "Масштабирование экземпляра сервиса",
+    "text": "Масштабирование экземпляра сервиса"
+  },
+  "add_admin": {
+    "number": null,
+    "full": "Создание учетной записи администратора",
+    "text": "Создание учетной записи администратора"
+  },
+  "add_connect": {
+    "number": null,
+    "full": "Добавление подключения",
+    "text": "Добавление подключения"
+  },
+  "delete_connect": {
+    "number": null,
+    "full": "Удаление подключения",
+    "text": "Удаление подключения"
+  },
+  "maintenance": {
+    "number": null,
+    "full": "Изменение периода обслуживания",
+    "text": "Изменение периода обслуживания"
+  },
+  "with_jh": {
+    "number": null,
+    "full": "Связка с JupyterHub",
+    "text": "Связка с JupyterHub"
+  },
+  "standalone": {
+    "number": null,
+    "full": "Режим Standalone",
+    "text": "Режим Standalone"
+  },
+  "create-users": {
+    "number": null,
+    "full": "Создание новых пользователей",
+    "text": "Создание новых пользователей"
+  },
+  "change-vm-type": {
+    "number": null,
+    "full": "Изменение типа виртуальной машины",
+    "text": "Изменение типа виртуальной машины"
+  },
+  "change-disk-size": {
+    "number": null,
+    "full": "Изменение размера диска",
+    "text": "Изменение размера диска"
+  },
+  "add-s3": {
+    "number": null,
+    "full": "Подключение бакета S3",
+    "text": "Подключение бакета S3"
+  },
+  "pause": {
+    "number": null,
+    "full": "Остановка и запуск инстанса",
+    "text": "Остановка и запуск инстанса"
+  },
+  "reload": {
+    "number": null,
+    "full": "Перезагрузка инстанса",
+    "text": "Перезагрузка инстанса"
+  },
+  "force-reload": {
+    "number": null,
+    "full": "Принудительный перезапуск инстанса",
+    "text": "Принудительный перезапуск инстанса"
+  },
+  "copy-jh-link": {
+    "number": null,
+    "full": "Копирование ссылки на инстанс",
+    "text": "Копирование ссылки на инстанс"
+  },
+  "shared": {
+    "number": null,
+    "full": "Использование общих папок",
+    "text": "Использование общих папок"
+  },
+  "1_create_mlflow": {
+    "number": null,
+    "full": "1. Создайте инстанс MLflow",
+    "text": "1. Создайте инстанс MLflow"
+  },
+  "copy-link": {
+    "number": null,
+    "full": "Копирование ссылки на инстанс",
+    "text": "Копирование ссылки на инстанс"
+  },
+  "delete_deploy_server": {
+    "number": null,
+    "full": "Удаление сервера развертывания",
+    "text": "Удаление сервера развертывания"
+  },
+  "create_token_console": {
+    "number": null,
+    "full": "Создание токена доступа через библиотеку Cloud ML Platform",
+    "text": "Создание токена доступа через библиотеку Cloud ML Platform"
+  },
+  "get_current_token_details": {
+    "number": null,
+    "full": "Получение информации о текущем токене доступа",
+    "text": "Получение информации о текущем токене доступа"
+  },
+  "cluster_spark": {
+    "number": null,
+    "full": "Кластер Cloud Spark",
+    "text": "Кластер Cloud Spark"
+  },
+  "vm_docker_registry": {
+    "number": null,
+    "full": "ВМ с Docker Registry",
+    "text": "ВМ с Docker Registry"
+  },
+  "cloud_storage": {
+    "number": null,
+    "full": "Cloud Storage",
+    "text": "Cloud Storage"
+  },
+  "service_ml_platform": {
+    "number": null,
+    "full": "Сервис Cloud ML Platform",
+    "text": "Сервис Cloud ML Platform"
+  },
+  "get_default_manifest_additional_info": {
+    "number": null,
+    "full": "Сигнатура метода и пример использования",
+    "text": "Сигнатура метода и пример использования"
+  },
+  "auth_parameters": {
+    "number": null,
+    "full": "Параметры авторизации плагина",
+    "text": "Параметры авторизации плагина"
+  },
+  "conf_parameters": {
+    "number": null,
+    "full": "Параметры конфигурации плагина",
+    "text": "Параметры конфигурации плагина"
+  },
+  "configure_agent": {
+    "number": null,
+    "full": "Настройка агента для сбора логов из дополнительных текстовых файлов",
+    "text": "Настройка агента для сбора логов из дополнительных текстовых файлов"
+  },
+  "create_siem_connections": {
+    "number": null,
+    "full": "Создание SIEM-подключения",
+    "text": "Создание SIEM-подключения"
+  },
+  "edit_siem_connection": {
+    "number": null,
+    "full": "Изменение настроек SIEM-подключения",
+    "text": "Изменение настроек SIEM-подключения"
+  },
+  "activate_siem_connection": {
+    "number": null,
+    "full": "Изменение статуса активности SIEM-подключения",
+    "text": "Изменение статуса активности SIEM-подключения"
+  },
+  "delete_siem_connection": {
+    "number": null,
+    "full": "Удаление SIEM-подключения",
+    "text": "Удаление SIEM-подключения"
+  },
+  "view_events_list": {
+    "number": null,
+    "full": "Просмотр журнала событий",
+    "text": "Просмотр журнала событий"
+  },
+  "filter_events_list": {
+    "number": null,
+    "full": "Использование фильтров и поисковых запросов",
+    "text": "Использование фильтров и поисковых запросов"
+  },
+  "export_events_list": {
+    "number": null,
+    "full": "Экспорт списка событий",
+    "text": "Экспорт списка событий"
+  },
+  "preparatory_steps": {
+    "number": null,
+    "full": "Подготовительные шаги",
+    "text": "Подготовительные шаги"
+  },
+  "setup_gateway": {
+    "number": null,
+    "full": "2. Настройте виртуальный шлюз",
+    "text": "2. Настройте виртуальный шлюз"
+  },
+  "setup_management": {
+    "number": null,
+    "full": "3. Настройте сервер управления",
+    "text": "3. Настройте сервер управления"
+  },
+  "configure_network_access_to_gateway": {
+    "number": null,
+    "full": "5. Настройте сетевой доступ к шлюзу",
+    "text": "5. Настройте сетевой доступ к шлюзу"
+  },
+  "configure_network_access_to_management": {
+    "number": null,
+    "full": "6. Настройте сетевой доступ к серверу управления",
+    "text": "6. Настройте сетевой доступ к серверу управления"
+  },
+  "configure_network_connectivity": {
+    "number": null,
+    "full": "2. Настройте сетевую связанность для доступа к базе 1С из клиентской сети",
+    "text": "2. Настройте сетевую связанность для доступа к базе 1С из клиентской сети"
+  },
+  "import_1C_information_base": {
+    "number": null,
+    "full": "3. Импортируйте информационную базу 1С в облачную инфраструктуру",
+    "text": "3. Импортируйте информационную базу 1С в облачную инфраструктуру"
+  },
+  "update_access": {
+    "number": null,
+    "full": "Обновление доступа к инстансу сервиса",
+    "text": "Обновление доступа к инстансу сервиса"
+  },
+  "manual-update": {
+    "number": null,
+    "full": "Ручное обновление сертификата",
+    "text": "Ручное обновление сертификата"
+  },
+  "auto-update": {
+    "number": null,
+    "full": "Автоматическое обновление сертификата",
+    "text": "Автоматическое обновление сертификата"
+  },
+  "roles_permissions": {
+    "number": null,
+    "full": "Права для всех ролей",
+    "text": "Права для всех ролей"
+  },
+  "roles_logging": {
+    "number": null,
+    "full": "Права в сервисе Cloud Logging",
+    "text": "Права в сервисе Cloud Logging"
+  },
+  "roles_monitoring": {
+    "number": null,
+    "full": "Права в сервисе Cloud Monitoring",
+    "text": "Права в сервисе Cloud Monitoring"
+  },
+  "roles_audit": {
+    "number": null,
+    "full": "Права в сервисе Cloud Audit",
+    "text": "Права в сервисе Cloud Audit"
+  },
+  "roles_permissions_kubernetes": {
+    "number": null,
+    "full": "Права для ролей сервиса Cloud Containers",
+    "text": "Права для ролей сервиса Cloud Containers"
+  },
+  "no_quotas_limits": {
+    "number": null,
+    "full": "Лимиты без квот",
+    "text": "Лимиты без квот"
+  },
+  "k8s": {
+    "number": null,
+    "full": "Контейнеры (Kubernetes)",
+    "text": "Контейнеры (Kubernetes)"
+  },
+  "images-volumes": {
+    "number": null,
+    "full": "Диски и образы",
+    "text": "Диски и образы"
+  },
+  "sdn_view": {
+    "number": null,
+    "full": "Просмотр SDN проекта",
+    "text": "Просмотр SDN проекта"
+  },
+  "xaas_vendor_roles": {
+    "number": null,
+    "full": "Роли пользователей",
+    "text": "Роли пользователей"
+  },
+  "pic_xaas": {
+    "number": "1",
+    "full": "Рисунок 1 — Взаимодействие Магазина с сервисами",
+    "text": "1  Рисунок 1 — Взаимодействие Магазина с сервисами"
+  },
+  "tab_entities": {
+    "number": "1",
+    "full": "Таблица 1 — Сущности, связанные с сервисом",
+    "text": "1 Таблица 1 — Сущности, связанные с сервисом"
+  },
+  "tab_tariff_options_types": {
+    "number": "2",
+    "full": "Таблица 2 — Типы тарифных опций",
+    "text": "2 Таблица 2 — Типы тарифных опций"
+  },
+  "tab_tariff_types": {
+    "number": "3",
+    "full": "Таблица 3 — Типы тарификации",
+    "text": "3 Таблица 3 — Типы тарификации"
+  },
+  "pic_xaas_saas_broker_resource_usage": {
+    "number": "2",
+    "full": "Рисунок 2 — Передача отчета между Магазином и брокером",
+    "text": "2  Рисунок 2 — Передача отчета между Магазином и брокером"
+  },
+  "tab_metrics_request": {
+    "number": "4",
+    "full": "Таблица 4 — Параметры запроса на передачу метрик Магазину",
+    "text": "4 Таблица 4 — Параметры запроса на передачу метрик Магазину"
+  },
+  "tab_http_response_codes": {
+    "number": "5",
+    "full": "Таблица 5 — HTTP-коды ответа",
+    "text": "5 Таблица 5 — HTTP-коды ответа"
+  },
+  "pic_preview": {
+    "number": "3",
+    "full": "Рисунок 3 — Матрица тарифных планов",
+    "text": "3  Рисунок 3 — Матрица тарифных планов"
+  },
+  "pic_xaas_wizard": {
+    "number": "4",
+    "full": "Рисунок 4 — Мастер конфигурации тарифного плана",
+    "text": "4  Рисунок 4 — Мастер конфигурации тарифного плана"
+  },
+  "index": {
+    "number": "1",
+    "full": "1 Общая информация",
+    "text": "Общая информация"
+  },
+  "xaas_vendor_index_type_services": {
+    "number": "1.1",
+    "full": "1.1 Типы сервисов",
+    "text": "Типы сервисов"
+  },
+  "xaas_option_types": {
+    "number": "1.2",
+    "full": "1.2 Типы тарифных опций",
+    "text": "Типы тарифных опций"
+  },
+  "xaas_billing": {
+    "number": "1.3",
+    "full": "1.3 Тарификация",
+    "text": "Тарификация"
+  },
+  "billing_pull": {
+    "number": "1.3.1",
+    "full": "1.3.1 Pull-модель постоплатной тарификации",
+    "text": "Pull-модель постоплатной тарификации"
+  },
+  "billing_push": {
+    "number": "1.3.2",
+    "full": "1.3.2 Push-модель постоплатной тарификации",
+    "text": "Push-модель постоплатной тарификации"
+  },
+  "xaas_tariff_matrix": {
+    "number": "1.4",
+    "full": "1.4 Матрица тарифных планов",
+    "text": "Матрица тарифных планов"
+  },
+  "xaas_wizard": {
+    "number": "1.5",
+    "full": "1.5 Мастер конфигурации тарифного плана",
+    "text": "Мастер конфигурации тарифного плана"
+  },
+  "service": {
+    "number": "1",
+    "full": "1 Типы сервисов",
+    "text": "Типы сервисов"
+  },
+  "billing": {
+    "number": "1",
+    "full": "1 Тарификация",
+    "text": "Тарификация"
+  },
+  "saas": {
+    "number": "1",
+    "full": "1 Требования к API SaaS-приложений",
+    "text": "Требования к API SaaS-приложений"
+  },
+  "image_based": {
+    "number": "1",
+    "full": "1 Требования к image-based приложениям",
+    "text": "Требования к image-based приложениям"
+  },
+  "image_based_req_image": {
+    "number": "1.1",
+    "full": "1.1 Требования к образу сервиса",
+    "text": "Требования к образу сервиса"
+  },
+  "image_based_req_agent": {
+    "number": "1.2",
+    "full": "1.2 Агент",
+    "text": "Агент"
+  },
+  "cloud_integration": {
+    "number": "1",
+    "full": "1 Функционирование сервиса в облачной платформе",
+    "text": "Функционирование сервиса в облачной платформе"
+  },
+  "glossary": {
+    "number": "1",
+    "full": "1 Термины и сокращения",
+    "text": "Термины и сокращения"
+  },
+  "ibservice_add_steps": {
+    "number": "1",
+    "full": "1 Порядок действий",
+    "text": "Порядок действий"
+  },
+  "ib_image_requirements": {
+    "number": "1",
+    "full": "1 Требования к образу сервиса",
+    "text": "Требования к образу сервиса"
+  },
+  "ib_image_agent": {
+    "number": "1",
+    "full": "1 Агент",
+    "text": "Агент"
+  },
+  "ib_image_create_packer": {
+    "number": "1",
+    "full": "1 Создание с помощью Packer",
+    "text": "Создание с помощью Packer"
+  },
+  "ib_image_create_cloud": {
+    "number": "1",
+    "full": "1 Создание через ЛК облачной платформы",
+    "text": "Создание через ЛК облачной платформы"
+  },
+  "pic_structure": {
+    "number": "1",
+    "full": "Рисунок 1 — Структура файлов сервисного пакета для генератора JSON-файла 0.0.1",
+    "text": "1  Рисунок 1 — Структура файлов сервисного пакета для генератора JSON-файла 0.0.1"
+  },
+  "ib_structure": {
+    "number": "1",
+    "full": "1 Структура сервисного пакета",
+    "text": "Структура сервисного пакета"
+  },
+  "ib_structure_file": {
+    "number": "1.1",
+    "full": "1.1 Генератор JSON-файла 0.0.1",
+    "text": "Генератор JSON-файла 0.0.1"
+  },
+  "ibservice_files": {
+    "number": "1",
+    "full": "1 Список конфигурационных файлов image-based приложения",
+    "text": "Список конфигурационных файлов image-based приложения"
+  },
+  "tab_ibservice_param": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры и секции в файле service.yaml",
+    "text": "1 Таблица 1 — Параметры и секции в файле service.yaml"
+  },
+  "ibservice_param": {
+    "number": "1",
+    "full": "1 Файл service.yaml",
+    "text": "Файл service.yaml"
+  },
+  "service_plans": {
+    "number": "1.1",
+    "full": "1.1 Тарифные планы сервиса",
+    "text": "Тарифные планы сервиса"
+  },
+  "service_options_for_matrix": {
+    "number": "1.2",
+    "full": "1.2 Тарифные опции для матрицы тарифных планов",
+    "text": "Тарифные опции для матрицы тарифных планов"
+  },
+  "ibexample_service": {
+    "number": "1.3",
+    "full": "1.3 Пример файла service.yaml",
+    "text": "Пример файла service.yaml"
+  },
+  "ibservice_full_description": {
+    "number": "1",
+    "full": "1 Файл full_description.md",
+    "text": "Файл full_description.md"
+  },
+  "tab_top_level_options": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры и секции для описания тарифной опции",
+    "text": "1 Таблица 1 — Параметры и секции для описания тарифной опции"
+  },
+  "pic_tariff_option": {
+    "number": "1",
+    "full": "Рисунок 1 — Тарифная опция",
+    "text": "1  Рисунок 1 — Тарифная опция"
+  },
+  "tab_billing_integer": {
+    "number": "2",
+    "full": "Таблица 2 — Параметры секции billing для предоплатной опции типа integer с шагом изменения",
+    "text": "2 Таблица 2 — Параметры секции billing для предоплатной опции типа integer с шагом изменения"
+  },
+  "tab_billing_boolean": {
+    "number": "3",
+    "full": "Таблица 3 — Параметры секции billing для предоплатной опции-переключателя boolean",
+    "text": "3 Таблица 3 — Параметры секции billing для предоплатной опции-переключателя boolean"
+  },
+  "tab_billing_number": {
+    "number": "4",
+    "full": "Таблица 4 — Параметры секции billing для постоплатной опции типа integer или number",
+    "text": "4 Таблица 4 — Параметры секции billing для постоплатной опции типа integer или number"
+  },
+  "pic_tariff_option_integer": {
+    "number": "2",
+    "full": "Рисунок 2 — Тарифная опция-константа типа integer",
+    "text": "2  Рисунок 2 — Тарифная опция-константа типа integer"
+  },
+  "pic_tariff_option_select": {
+    "number": "3",
+    "full": "Рисунок 3 — Тарифная опция типа integer c выбором значения из списка",
+    "text": "3  Рисунок 3 — Тарифная опция типа integer c выбором значения из списка"
+  },
+  "pic_tariff_option_step": {
+    "number": "4",
+    "full": "Рисунок 4 — Тарифная опция типа integer с шагом изменения",
+    "text": "4  Рисунок 4 — Тарифная опция типа integer с шагом изменения"
+  },
+  "pic_tariff_option_step_plus": {
+    "number": "5",
+    "full": "Рисунок 5 — Тарифная опция типа integer с шагом изменения, значение увеличено на шаг изменения",
+    "text": "5  Рисунок 5 — Тарифная опция типа integer с шагом изменения, значение увеличено на шаг изменения"
+  },
+  "tab_tariff_option_integer": {
+    "number": "5",
+    "full": "Таблица 5 — Секция schema для тарифной опции типа integer",
+    "text": "5 Таблица 5 — Секция schema для тарифной опции типа integer"
+  },
+  "tab_tariff_option_postpaid": {
+    "number": "6",
+    "full": "Таблица 6 — Секция schema для постоплатной опции",
+    "text": "6 Таблица 6 — Секция schema для постоплатной опции"
+  },
+  "pic_option_string_const": {
+    "number": "6",
+    "full": "Рисунок 6 — Тарифная опция-константа типа string",
+    "text": "6  Рисунок 6 — Тарифная опция-константа типа string"
+  },
+  "pic_option_string_input": {
+    "number": "14",
+    "full": "Рисунок 14 — Тарифная опция типа string с вводом значения",
+    "text": "14  Рисунок 14 — Тарифная опция типа string с вводом значения"
+  },
+  "pic_option_string_enum": {
+    "number": "15",
+    "full": "Рисунок 15 — Тарифная опция типа string c выбором значения из списка",
+    "text": "15  Рисунок 15 — Тарифная опция типа string c выбором значения из списка"
+  },
+  "tab_option_string": {
+    "number": "7",
+    "full": "Таблица 7 — Секция schema для тарифной опции типа string",
+    "text": "7 Таблица 7 — Секция schema для тарифной опции типа string"
+  },
+  "pic_option_boolean_const": {
+    "number": "9",
+    "full": "Рисунок 9 — Тарифная опция-константа типа boolean",
+    "text": "9  Рисунок 9 — Тарифная опция-константа типа boolean"
+  },
+  "pic_option_boolean": {
+    "number": "10",
+    "full": "Рисунок 10 — Переключатель boolean",
+    "text": "10  Рисунок 10 — Переключатель boolean"
+  },
+  "tab_option_boolean": {
+    "number": "8",
+    "full": "Таблица 8 — Секция schema для тарифной опции типа boolean",
+    "text": "8 Таблица 8 — Секция schema для тарифной опции типа boolean"
+  },
+  "pic_option_datasource": {
+    "number": "9",
+    "full": "Таблица 9 — Секция schema для тарифной опции типа datasource",
+    "text": "9 Таблица 9 — Секция schema для тарифной опции типа datasource"
+  },
+  "tab_CPU_RAM": {
+    "number": "10",
+    "full": "Таблица 10 — Ограничения по CPU и RAM для ВМ",
+    "text": "10 Таблица 10 — Ограничения по CPU и RAM для ВМ"
+  },
+  "iboption_structure": {
+    "number": null,
+    "full": "Структура",
+    "text": "Структура"
+  },
+  "iboption_billing": {
+    "number": null,
+    "full": "Секция billing",
+    "text": "Секция billing"
+  },
+  "iboption_schema": {
+    "number": null,
+    "full": "Секция schema",
+    "text": "Секция schema"
+  },
+  "iboption_numeric_schemas": {
+    "number": null,
+    "full": "Секция schema для числовых тарифных опций",
+    "text": "Секция schema для числовых тарифных опций"
+  },
+  "iboption_option_integer": {
+    "number": null,
+    "full": "Бесплатная или предоплатная тарифная опция типа integer",
+    "text": "Бесплатная или предоплатная тарифная опция типа integer"
+  },
+  "iboption_option_postpaid": {
+    "number": null,
+    "full": "Постоплатная тарифная опция типа integer или number",
+    "text": "Постоплатная тарифная опция типа integer или number"
+  },
+  "iboption_option_string": {
+    "number": null,
+    "full": "Секция schema для тарифной опции типа string",
+    "text": "Секция schema для тарифной опции типа string"
+  },
+  "iboption_option_boolean": {
+    "number": null,
+    "full": "Секция schema для тарифной опции типа boolean",
+    "text": "Секция schema для тарифной опции типа boolean"
+  },
+  "iboption_option_datasource": {
+    "number": null,
+    "full": "Секция schema для тарифной опции типа datasource",
+    "text": "Секция schema для тарифной опции типа datasource"
+  },
+  "pic_option_int_const": {
+    "number": "1",
+    "full": "Рисунок 1 — Тарифная опция-константа типа integer",
+    "text": "1  Рисунок 1 — Тарифная опция-константа типа integer"
+  },
+  "pic_option_int_enum": {
+    "number": "2",
+    "full": "Рисунок 2 — Тарифная опция типа integer c выбором значения из списка",
+    "text": "2  Рисунок 2 — Тарифная опция типа integer c выбором значения из списка"
+  },
+  "pic_option_int_step": {
+    "number": "3",
+    "full": "Рисунок 3 — Бесплатная тарифная опция типа integer с шагом изменения 1",
+    "text": "3  Рисунок 3 — Бесплатная тарифная опция типа integer с шагом изменения 1"
+  },
+  "pic_option_int_step_plus": {
+    "number": "4",
+    "full": "Рисунок 4 — Бесплатная тарифная опция типа integer с шагом изменения 1, значение увеличено на 1 шаг",
+    "text": "4  Рисунок 4 — Бесплатная тарифная опция типа integer с шагом изменения 1, значение увеличено на 1 шаг"
+  },
+  "pic_option_int_with_user_step_free": {
+    "number": "5",
+    "full": "Рисунок 5 — Бесплатная тарифная опция типа integer с пользовательским шагом изменения (billing.base = 25, schema.default = 0, billing.unit.size = 100)",
+    "text": "5  Рисунок 5 — Бесплатная тарифная опция типа integer с пользовательским шагом изменения (billing.base = 25, schema.default = 0, billing.unit.size = 100)"
+  },
+  "pic_option_int_with_user_step_free1": {
+    "number": "6",
+    "full": "Рисунок 6 — Бесплатная тарифная опция типа integer с пользовательским шагом изменения (billing.base = 25, schema.default = 1, billing.unit.size = 100)",
+    "text": "6  Рисунок 6 — Бесплатная тарифная опция типа integer с пользовательским шагом изменения (billing.base = 25, schema.default = 1, billing.unit.size = 100)"
+  },
+  "pic_option_int_with_user_step_free2": {
+    "number": "7",
+    "full": "Рисунок 7 — Бесплатная тарифная опция типа integer с пользовательским шагом изменения (billing.base = 25, schema.default = 2, billing.unit.size = 100)",
+    "text": "7  Рисунок 7 — Бесплатная тарифная опция типа integer с пользовательским шагом изменения (billing.base = 25, schema.default = 2, billing.unit.size = 100)"
+  },
+  "pic_option_int_step_prepayed": {
+    "number": "2",
+    "full": "Рисунок 2 — Тарифный план с бесплатной опцией типа integer с шагом изменения (base = 25, size = 100)",
+    "text": "2  Рисунок 2 — Тарифный план с бесплатной опцией типа integer с шагом изменения (base = 25, size = 100)"
+  },
+  "pic_option_int_step_prepayed1": {
+    "number": "6",
+    "full": "Рисунок 6 — Тарифный план с предоплатной опцией типа integer с шагом изменения, значение опции увеличено на 1 шаг (base = 25, size = 100)",
+    "text": "6  Рисунок 6 — Тарифный план с предоплатной опцией типа integer с шагом изменения, значение опции увеличено на 1 шаг (base = 25, size = 100)"
+  },
+  "pic_option_int_step_prepayed2": {
+    "number": "7",
+    "full": "Рисунок 7 — Тарифный план с предоплатной опцией типа integer с шагом изменения, значение опции увеличено на 2 шага (base = 25, size = 100)",
+    "text": "7  Рисунок 7 — Тарифный план с предоплатной опцией типа integer с шагом изменения, значение опции увеличено на 2 шага (base = 25, size = 100)"
+  },
+  "pic_option_int_step_prepayed3": {
+    "number": "11",
+    "full": "Рисунок 11 — Платная тарифная опция типа integer c шагом изменения (billing.base = 25, billing.cost = 150, billing.unit.size = 100, schema.default = 1)",
+    "text": "11  Рисунок 11 — Платная тарифная опция типа integer c шагом изменения (billing.base = 25, billing.cost = 150, billing.unit.size = 100, schema.default = 1)"
+  },
+  "pic_option_postpayed_ib": {
+    "number": "12",
+    "full": "Рисунок 12 — Постоплатная тарифная опция",
+    "text": "12  Рисунок 12 — Постоплатная тарифная опция"
+  },
+  "pic_option_string": {
+    "number": "13",
+    "full": "Рисунок 13 — Тарифная опция-константа типа string",
+    "text": "13  Рисунок 13 — Тарифная опция-константа типа string"
+  },
+  "pic_option_bool_const": {
+    "number": "16",
+    "full": "Рисунок 16 — Тарифная опция-константа типа boolean (const = false)",
+    "text": "16  Рисунок 16 — Тарифная опция-константа типа boolean (const = false)"
+  },
+  "pic_option_bool": {
+    "number": "8",
+    "full": "Рисунок 8 — Тарифный план с предоплатной опцией-переключателем boolean",
+    "text": "8  Рисунок 8 — Тарифный план с предоплатной опцией-переключателем boolean"
+  },
+  "pic_option_bool_paid": {
+    "number": "18",
+    "full": "Рисунок 18 — Платная тарифная опция-переключатель boolean",
+    "text": "18  Рисунок 18 — Платная тарифная опция-переключатель boolean"
+  },
+  "pic_option_datasource_flavor": {
+    "number": "19",
+    "full": "Рисунок 19 — Тарифная опция datasource (тип ВМ)",
+    "text": "19  Рисунок 19 — Тарифная опция datasource (тип ВМ)"
+  },
+  "pic_option_datasource_az": {
+    "number": "20",
+    "full": "Рисунок 20 — Тарифная опция datasource (зона доступности)",
+    "text": "20  Рисунок 20 — Тарифная опция datasource (зона доступности)"
+  },
+  "pic_option_datasource_subnet": {
+    "number": "21",
+    "full": "Рисунок 21 — Тарифная опция datasource (подсеть)",
+    "text": "21  Рисунок 21 — Тарифная опция datasource (подсеть)"
+  },
+  "pic_option_datasource_net": {
+    "number": "22",
+    "full": "Рисунок 22 — Тарифная опция datasource (сеть)",
+    "text": "22  Рисунок 22 — Тарифная опция datasource (сеть)"
+  },
+  "pic_option_fill_in_volume": {
+    "number": "23",
+    "full": "Рисунок 23 — Тарифные опции типа integer и datasource, позволяющие настроить размер и тип диска",
+    "text": "23  Рисунок 23 — Тарифные опции типа integer и datasource, позволяющие настроить размер и тип диска"
+  },
+  "IB_option_fill_in": {
+    "number": "1",
+    "full": "1 Заполнение YAML-файлов тарифных опций",
+    "text": "Заполнение YAML-файлов тарифных опций"
+  },
+  "option_int_const": {
+    "number": "1.1",
+    "full": "1.1 Бесплатная тарифная опция-константа типа integer",
+    "text": "Бесплатная тарифная опция-константа типа integer"
+  },
+  "option_int_enum": {
+    "number": "1.2",
+    "full": "1.2 Бесплатная тарифная опция типа integer с выбором значения из списка",
+    "text": "Бесплатная тарифная опция типа integer с выбором значения из списка"
+  },
+  "option_int_step": {
+    "number": "1.3",
+    "full": "1.3 Бесплатная тарифная опция типа integer с шагом изменения 1",
+    "text": "Бесплатная тарифная опция типа integer с шагом изменения 1"
+  },
+  "option_int_with_user_step_free": {
+    "number": "1.4",
+    "full": "1.4 Бесплатная тарифная опция типа integer с пользовательским шагом изменения",
+    "text": "Бесплатная тарифная опция типа integer с пользовательским шагом изменения"
+  },
+  "option_int_step_prepayed": {
+    "number": "1.5",
+    "full": "1.5 Предоплатная тарифная опция типа integer с шагом изменения",
+    "text": "Предоплатная тарифная опция типа integer с шагом изменения"
+  },
+  "option_postpayed_ib": {
+    "number": "1.6",
+    "full": "1.6 Постоплатная тарифная опция типа integer или number",
+    "text": "Постоплатная тарифная опция типа integer или number"
+  },
+  "option_string": {
+    "number": "1.7",
+    "full": "1.7 Бесплатная тарифная опция-константа типа string",
+    "text": "Бесплатная тарифная опция-константа типа string"
+  },
+  "option_string_input": {
+    "number": "1.8",
+    "full": "1.8 Бесплатная тарифная опция типа string с вводом значения",
+    "text": "Бесплатная тарифная опция типа string с вводом значения"
+  },
+  "option_string_enum": {
+    "number": "1.9",
+    "full": "1.9 Бесплатная тарифная опция типа string с выбором значения из списка",
+    "text": "Бесплатная тарифная опция типа string с выбором значения из списка"
+  },
+  "option_bool_const": {
+    "number": "1.10",
+    "full": "1.10 Бесплатная тарифная опция-константа типа boolean",
+    "text": "Бесплатная тарифная опция-константа типа boolean"
+  },
+  "option_bool": {
+    "number": "1.11",
+    "full": "1.11 Бесплатная тарифная опция-переключатель boolean",
+    "text": "Бесплатная тарифная опция-переключатель boolean"
+  },
+  "option_bool_paid": {
+    "number": "1.12",
+    "full": "1.12 Предоплатная тарифная опция-переключатель boolean",
+    "text": "Предоплатная тарифная опция-переключатель boolean"
+  },
+  "option_datasource_flavor": {
+    "number": "1.13",
+    "full": "1.13 Тарифная опция типа datasource (тип ВМ)",
+    "text": "Тарифная опция типа datasource (тип ВМ)"
+  },
+  "option_datasource_az": {
+    "number": "1.14",
+    "full": "1.14 Тарифная опция типа datasource (зона доступности)",
+    "text": "Тарифная опция типа datasource (зона доступности)"
+  },
+  "option_datasource_subnet": {
+    "number": "1.15",
+    "full": "1.15 Тарифная опция опция типа datasource (подсеть)",
+    "text": "Тарифная опция опция типа datasource (подсеть)"
+  },
+  "option_datasource_net": {
+    "number": "1.16",
+    "full": "1.16 Тарифная опция типа datasource (сеть)",
+    "text": "Тарифная опция типа datasource (сеть)"
+  },
+  "IBoption_fill_in_volume": {
+    "number": "1.17",
+    "full": "1.17 Описание диска с помощью файлов тарифных опций",
+    "text": "Описание диска с помощью файлов тарифных опций"
+  },
+  "tab_plan_param": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры файла plans/<PLAN_NAME>/plan.yaml",
+    "text": "1 Таблица 1 — Параметры файла plans/<PLAN_NAME>/plan.yaml"
+  },
+  "tab_plan_billing": {
+    "number": "2",
+    "full": "Таблица 2 — Параметры секции billing",
+    "text": "2 Таблица 2 — Параметры секции billing"
+  },
+  "pic_plan_billing": {
+    "number": "1",
+    "full": "Рисунок 1 — Стоимость тарифного плана",
+    "text": "1  Рисунок 1 — Стоимость тарифного плана"
+  },
+  "ibplan": {
+    "number": "1",
+    "full": "1 Файл plan.yaml",
+    "text": "Файл plan.yaml"
+  },
+  "plan_billing": {
+    "number": "1.1",
+    "full": "1.1 Секция billing тарифного плана",
+    "text": "Секция billing тарифного плана"
+  },
+  "plan_options": {
+    "number": "1.2",
+    "full": "1.2 Секция parameters_patch",
+    "text": "Секция parameters_patch"
+  },
+  "ibexample_plan": {
+    "number": "1.3",
+    "full": "1.3 Примеры файлов plan.yaml",
+    "text": "Примеры файлов plan.yaml"
+  },
+  "tab_plans": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры файла plans/<PLAN_NAME>/display.yaml",
+    "text": "1 Таблица 1 — Параметры файла plans/<PLAN_NAME>/display.yaml"
+  },
+  "pic_wizard_ib_page": {
+    "number": "1",
+    "full": "Рисунок 1 — Мастер конфигурации тарифного плана",
+    "text": "1  Рисунок 1 — Мастер конфигурации тарифного плана"
+  },
+  "pic_wizard_ib_price": {
+    "number": "2",
+    "full": "Рисунок 2 — Мастер конфигурации тарифного плана. Информация о стоимости инфраструктуры",
+    "text": "2  Рисунок 2 — Мастер конфигурации тарифного плана. Информация о стоимости инфраструктуры"
+  },
+  "pic_alkair_included": {
+    "number": "3",
+    "full": "Рисунок 3 — Тарифная опция включена, стоимость ВМ для ПО Алькаир учитывается в стоимости инфраструктуры",
+    "text": "3  Рисунок 3 — Тарифная опция включена, стоимость ВМ для ПО Алькаир учитывается в стоимости инфраструктуры"
+  },
+  "ib_display": {
+    "number": "1",
+    "full": "1 Файл display.yaml",
+    "text": "Файл display.yaml"
+  },
+  "IBdisplay_pages": {
+    "number": "1.1",
+    "full": "1.1 Массив pages",
+    "text": "Массив pages"
+  },
+  "IBdisplay_entities": {
+    "number": "1.2",
+    "full": "1.2 Массив entities",
+    "text": "Массив entities"
+  },
+  "IBdisplay_vm": {
+    "number": "1.2.1",
+    "full": "1.2.1 ВМ",
+    "text": "ВМ"
+  },
+  "IBdisplay_lb": {
+    "number": "1.2.2",
+    "full": "1.2.2 Балансировщик нагрузки",
+    "text": "Балансировщик нагрузки"
+  },
+  "IBdisplay_floating_ip": {
+    "number": "1.2.3",
+    "full": "1.2.3 Внешний IP-адрес",
+    "text": "Внешний IP-адрес"
+  },
+  "IBdisplay_when": {
+    "number": "1.3",
+    "full": "1.3 Конструкция when",
+    "text": "Конструкция when"
+  },
+  "IBdisplay_when_in_pages": {
+    "number": "1.3.1",
+    "full": "1.3.1 В массиве pages",
+    "text": "В массиве pages"
+  },
+  "IBdisplay_when_in_entities": {
+    "number": "1.3.2",
+    "full": "1.3.2 В массиве entities",
+    "text": "В массиве entities"
+  },
+  "tab_setting": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры в файле settings.yaml",
+    "text": "1 Таблица 1 — Параметры в файле settings.yaml"
+  },
+  "tf_manifest_settings": {
+    "number": "1",
+    "full": "1 Файл settings.yaml",
+    "text": "Файл settings.yaml"
+  },
+  "tab_providers": {
+    "number": "1",
+    "full": "Таблица 1 — Провайдеры Terraform",
+    "text": "1 Таблица 1 — Провайдеры Terraform"
+  },
+  "pic_tf_steps": {
+    "number": "1",
+    "full": "Рисунок 1 — Шаги для манифеста Terraform",
+    "text": "1  Рисунок 1 — Шаги для манифеста Terraform"
+  },
+  "tf_manifest_steps": {
+    "number": "1.2",
+    "full": "1.2 Шаги для манифеста Terraform",
+    "text": "Шаги для манифеста Terraform"
+  },
+  "tf_elements": {
+    "number": "1.1",
+    "full": "1.1 Элементы Terraform",
+    "text": "Элементы Terraform"
+  },
+  "tf_manifest_example": {
+    "number": "1.3",
+    "full": "1.3 Пример манифеста Terraform",
+    "text": "Пример манифеста Terraform"
+  },
+  "tab_tf_variables": {
+    "number": "1",
+    "full": "Таблица 1 — Переменные Terraform",
+    "text": "1 Таблица 1 — Переменные Terraform"
+  },
+  "tf_manifest_variable": {
+    "number": "1",
+    "full": "1 Входные переменные для конфигурации ресурсов",
+    "text": "Входные переменные для конфигурации ресурсов"
+  },
+  "tf_manifest_image": {
+    "number": "1",
+    "full": "1 Описание инфраструктуры",
+    "text": "Описание инфраструктуры"
+  },
+  "tf_manifest_image_sdn": {
+    "number": "1.1",
+    "full": "1.1 Использование типа SDN в ресурсах Terraform",
+    "text": "Использование типа SDN в ресурсах Terraform"
+  },
+  "tf_manifest_ip": {
+    "number": "1.2",
+    "full": "1.2 Назначение фиксированного IP-адреса",
+    "text": "Назначение фиксированного IP-адреса"
+  },
+  "tf_manifest_password": {
+    "number": "1.3",
+    "full": "1.3 Генерация паролей",
+    "text": "Генерация паролей"
+  },
+  "tf_manifest_script": {
+    "number": "1",
+    "full": "1 Использование скриптов",
+    "text": "Использование скриптов"
+  },
+  "tf_script_userdata": {
+    "number": "1.1",
+    "full": "1.1 Выполнение скриптов через Cloud-init",
+    "text": "Выполнение скриптов через Cloud-init"
+  },
+  "tf_script_agentexec": {
+    "number": "1.2",
+    "full": "1.2 Выполнение скриптов через агент",
+    "text": "Выполнение скриптов через агент"
+  },
+  "tf_manifest_monitoring": {
+    "number": "1",
+    "full": "1 Мониторинг",
+    "text": "Мониторинг"
+  },
+  "tf_manifest_output": {
+    "number": "1",
+    "full": "1 Описание выходных параметров",
+    "text": "Описание выходных параметров"
+  },
+  "ibservice_upload_prepare": {
+    "number": "1",
+    "full": "1 Подготовительные операции",
+    "text": "Подготовительные операции"
+  },
+  "pic_upload_phases": {
+    "number": "1",
+    "full": "Рисунок 1 — Этапы загрузки image-based приложения в Магазин",
+    "text": "1  Рисунок 1 — Этапы загрузки image-based приложения в Магазин"
+  },
+  "ibservice_upload_phases": {
+    "number": "1",
+    "full": "1 Этапы загрузки сервиса",
+    "text": "Этапы загрузки сервиса"
+  },
+  "ibservice_upload_localtest": {
+    "number": "1",
+    "full": "1 Локальное тестирование манифеста Terraform",
+    "text": "Локальное тестирование манифеста Terraform"
+  },
+  "tab_request_params": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры запроса на загрузку манифеста",
+    "text": "1 Таблица 1 — Параметры запроса на загрузку манифеста"
+  },
+  "tab_http_codes": {
+    "number": "2",
+    "full": "Таблица 2 — HTTP-коды ответа",
+    "text": "2 Таблица 2 — HTTP-коды ответа"
+  },
+  "tab_check_terraform_configuration": {
+    "number": "3",
+    "full": "Таблица 3 — Параметры запроса на проверку текущей конфигурации манифеста",
+    "text": "3 Таблица 3 — Параметры запроса на проверку текущей конфигурации манифеста"
+  },
+  "tab_http_codes_after_check": {
+    "number": "4",
+    "full": "Таблица 4 — HTTP-коды ответа",
+    "text": "4 Таблица 4 — HTTP-коды ответа"
+  },
+  "tab_create_service_instance": {
+    "number": "5",
+    "full": "Таблица 5 — Параметры запроса на создание инстанса сервиса",
+    "text": "5 Таблица 5 — Параметры запроса на создание инстанса сервиса"
+  },
+  "tab_http_codes_after_create": {
+    "number": "6",
+    "full": "Таблица 6 — HTTP-коды ответа",
+    "text": "6 Таблица 6 — HTTP-коды ответа"
+  },
+  "tab_delete_service_instance": {
+    "number": "7",
+    "full": "Таблица 7 — Параметры запроса на удаление инстанса сервиса",
+    "text": "7 Таблица 7 — Параметры запроса на удаление инстанса сервиса"
+  },
+  "tab_http_codes_after_delete": {
+    "number": "8",
+    "full": "Таблица 8 — HTTP-коды ответа",
+    "text": "8 Таблица 8 — HTTP-коды ответа"
+  },
+  "tab_check_instance_status": {
+    "number": "9",
+    "full": "Таблица 9 — Параметры запроса на проверку состояния инстанса сервиса",
+    "text": "9 Таблица 9 — Параметры запроса на проверку состояния инстанса сервиса"
+  },
+  "tab_http_codes_status": {
+    "number": "10",
+    "full": "Таблица 10 — HTTP-коды ответа",
+    "text": "10 Таблица 10 — HTTP-коды ответа"
+  },
+  "tab_log_request": {
+    "number": "11",
+    "full": "Таблица 11 — Параметры запроса на вывод лога инстанса сервиса",
+    "text": "11 Таблица 11 — Параметры запроса на вывод лога инстанса сервиса"
+  },
+  "tab_http_codes_log": {
+    "number": "12",
+    "full": "Таблица 12 — HTTP-коды ответа",
+    "text": "12 Таблица 12 — HTTP-коды ответа"
+  },
+  "ibservice_upload_deploysystemtest": {
+    "number": "1",
+    "full": "1 Тестирование манифестов с системой развертывания",
+    "text": "Тестирование манифестов с системой развертывания"
+  },
+  "upload_terraform_manifest": {
+    "number": "1.1",
+    "full": "1.1 Загрузка манифеста Terraform в систему развертывания",
+    "text": "Загрузка манифеста Terraform в систему развертывания"
+  },
+  "check_terraform_configuration": {
+    "number": "1.2",
+    "full": "1.2 Проверка текущей конфигурации манифеста Terraform",
+    "text": "Проверка текущей конфигурации манифеста Terraform"
+  },
+  "create_service_instance": {
+    "number": "1.3",
+    "full": "1.3 Создание инстанса сервиса",
+    "text": "Создание инстанса сервиса"
+  },
+  "delete_service_instance": {
+    "number": "1.4",
+    "full": "1.4 Удаление инстанса сервиса",
+    "text": "Удаление инстанса сервиса"
+  },
+  "check_instance_status": {
+    "number": "1.5",
+    "full": "1.5 Проверка состояния инстанса сервиса",
+    "text": "Проверка состояния инстанса сервиса"
+  },
+  "deploysystemtest_log": {
+    "number": "1.6",
+    "full": "1.6 Просмотр логов инстанса сервиса",
+    "text": "Просмотр логов инстанса сервиса"
+  },
+  "agent_log": {
+    "number": "1.7",
+    "full": "1.7 Просмотр логов и результатов работы агента",
+    "text": "Просмотр логов и результатов работы агента"
+  },
+  "pic_ib_upload": {
+    "number": "1",
+    "full": "Рисунок 1 — Схема загрузки сервисного пакета",
+    "text": "1  Рисунок 1 — Схема загрузки сервисного пакета"
+  },
+  "tab_scheme_elements": {
+    "number": "1",
+    "full": "Таблица 1 — Описание основных элементов схемы",
+    "text": "1 Таблица 1 — Описание основных элементов схемы"
+  },
+  "ibservice_upload_package": {
+    "number": "1",
+    "full": "1 Загрузка сервисного пакета в Магазин",
+    "text": "Загрузка сервисного пакета в Магазин"
+  },
+  "upload_scheme": {
+    "number": "1.1",
+    "full": "1.1 Схема загрузки",
+    "text": "Схема загрузки"
+  },
+  "upload_actions": {
+    "number": "1.2",
+    "full": "1.2 Порядок загрузки сервисного пакета в Магазин",
+    "text": "Порядок загрузки сервисного пакета в Магазин"
+  },
+  "upload_test": {
+    "number": "1.3",
+    "full": "1.3 Тестирование загруженного сервиса до публикации",
+    "text": "Тестирование загруженного сервиса до публикации"
+  },
+  "ibservice_upload_package_log": {
+    "number": "1.4",
+    "full": "1.4 Просмотр логов инстанса сервиса",
+    "text": "Просмотр логов инстанса сервиса"
+  },
+  "ibservice_upload_publish_image": {
+    "number": "1",
+    "full": "1 Публикация образа сервиса",
+    "text": "Публикация образа сервиса"
+  },
+  "ibservice_upload_publish": {
+    "number": "1",
+    "full": "1 Публикация сервиса",
+    "text": "Публикация сервиса"
+  },
+  "ibservice_update": {
+    "number": "1",
+    "full": "1 Обновление image-based приложения",
+    "text": "Обновление image-based приложения"
+  },
+  "pic_use_agent": {
+    "number": "1",
+    "full": "Рисунок 1 — Использование агента мониторинга",
+    "text": "1  Рисунок 1 — Использование агента мониторинга"
+  },
+  "ib_cloud_monitoring_telegraf": {
+    "number": "1",
+    "full": "1 Агент мониторинга",
+    "text": "Агент мониторинга"
+  },
+  "ib_cloud_monitoring_vm": {
+    "number": "1",
+    "full": "1 Системные метрики ВМ",
+    "text": "Системные метрики ВМ"
+  },
+  "ib_cloud_monitoring_telegraf_image": {
+    "number": "1.1",
+    "full": "1.1 Агент мониторинга в образе сервиса",
+    "text": "Агент мониторинга в образе сервиса"
+  },
+  "monitoring_agent": {
+    "number": "1.2",
+    "full": "1.2 Агент мониторинга в манифесте Terraform",
+    "text": "Агент мониторинга в манифесте Terraform"
+  },
+  "ib_cloud_monitoring_app": {
+    "number": "1",
+    "full": "1 Метрики image-based приложения",
+    "text": "Метрики image-based приложения"
+  },
+  "collect_metrics": {
+    "number": "1.1",
+    "full": "1.1 Сбор метрик",
+    "text": "Сбор метрик"
+  },
+  "collected_metrics_example": {
+    "number": "1.2",
+    "full": "1.2 Пример собранных метрик",
+    "text": "Пример собранных метрик"
+  },
+  "tab_service_archiving": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры запроса на архивацию сервиса",
+    "text": "1 Таблица 1 — Параметры запроса на архивацию сервиса"
+  },
+  "tab_http_response_codes1": {
+    "number": "2",
+    "full": "Таблица 2 — HTTP-коды ответа",
+    "text": "2 Таблица 2 — HTTP-коды ответа"
+  },
+  "archive": {
+    "number": "1",
+    "full": "1 Перенос image-based приложения в архив",
+    "text": "Перенос image-based приложения в архив"
+  },
+  "saas_add_steps": {
+    "number": "1",
+    "full": "1 Порядок действий",
+    "text": "Порядок действий"
+  },
+  "pic_saas_broker": {
+    "number": "1",
+    "full": "Рисунок 1 — Взаимодействие брокера с Магазином и SaaS-приложением",
+    "text": "1  Рисунок 1 — Взаимодействие брокера с Магазином и SaaS-приложением"
+  },
+  "saas_broker": {
+    "number": "1",
+    "full": "1 Брокер для SaaS-приложения",
+    "text": "Брокер для SaaS-приложения"
+  },
+  "saas_json": {
+    "number": "1",
+    "full": "1 Структура JSON-файла",
+    "text": "Структура JSON-файла"
+  },
+  "saas_example": {
+    "number": "1.1",
+    "full": "1.1 Пример JSON-файла для SaaS-приложения",
+    "text": "Пример JSON-файла для SaaS-приложения"
+  },
+  "tab_params": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры сервиса",
+    "text": "1 Таблица 1 — Параметры сервиса"
+  },
+  "saas_param": {
+    "number": "1",
+    "full": "1 Параметры сервиса",
+    "text": "Параметры сервиса"
+  },
+  "tab_plan_params": {
+    "number": "2",
+    "full": "Таблица 2 — Параметры страниц, групп и тарифных опций для мастера конфигурации тарифного плана",
+    "text": "2 Таблица 2 — Параметры страниц, групп и тарифных опций для мастера конфигурации тарифного плана"
+  },
+  "pic_wizard_saas": {
+    "number": "1",
+    "full": "Рисунок 1 — Мастер конфигурации тарифного плана",
+    "text": "1  Рисунок 1 — Мастер конфигурации тарифного плана"
+  },
+  "pic_option_int_step_free": {
+    "number": "3",
+    "full": "Рисунок 3 — Тарифный план с бесплатной опцией типа integer с шагом изменения, значение опции увеличено на 1 шаг (base = 25, size = 100)",
+    "text": "3  Рисунок 3 — Тарифный план с бесплатной опцией типа integer с шагом изменения, значение опции увеличено на 1 шаг (base = 25, size = 100)"
+  },
+  "pic_option_int_step_free1": {
+    "number": "4",
+    "full": "Рисунок 4 — Тарифный план с бесплатной опцией типа integer с шагом изменения, значение опции увеличено на 2 шага (base = 25, size = 100)",
+    "text": "4  Рисунок 4 — Тарифный план с бесплатной опцией типа integer с шагом изменения, значение опции увеличено на 2 шага (base = 25, size = 100)"
+  },
+  "pic_option_int_step_prepayed4": {
+    "number": "5",
+    "full": "Рисунок 5 — Тарифный план с предоплатной опцией типа integer с шагом изменения (base = 25, size = 100)",
+    "text": "5  Рисунок 5 — Тарифный план с предоплатной опцией типа integer с шагом изменения (base = 25, size = 100)"
+  },
+  "tab_option_number": {
+    "number": "3",
+    "full": "Таблица 3 — Параметры числовой постоплатной тарифной опции",
+    "text": "3 Таблица 3 — Параметры числовой постоплатной тарифной опции"
+  },
+  "pic_option_postpaid": {
+    "number": "9",
+    "full": "Рисунок 9 — Тарифный план с постоплатной опцией (billing.cost = 7, billing.unit.size = 1)",
+    "text": "9  Рисунок 9 — Тарифный план с постоплатной опцией (billing.cost = 7, billing.unit.size = 1)"
+  },
+  "saas_plan_structure": {
+    "number": null,
+    "full": "Структура",
+    "text": "Структура"
+  },
+  "saas_plan_param": {
+    "number": null,
+    "full": "Параметры тарифного плана",
+    "text": "Параметры тарифного плана"
+  },
+  "saas_plan_display": {
+    "number": null,
+    "full": "Секция display",
+    "text": "Секция display"
+  },
+  "saas_plan_billing": {
+    "number": null,
+    "full": "Секция billing",
+    "text": "Секция billing"
+  },
+  "option_int_step_free": {
+    "number": null,
+    "full": "Секция billing с бесплатной тарифной опцией типа integer с пользовательским шагом изменения",
+    "text": "Секция billing с бесплатной тарифной опцией типа integer с пользовательским шагом изменения"
+  },
+  "option_int_step_prepaid": {
+    "number": null,
+    "full": "Секция billing с предоплатной тарифной опцией типа integer с шагом изменения",
+    "text": "Секция billing с предоплатной тарифной опцией типа integer с шагом изменения"
+  },
+  "option_boolean": {
+    "number": null,
+    "full": "Секция billing с предоплатной тарифной опцией-переключателем boolean",
+    "text": "Секция billing с предоплатной тарифной опцией-переключателем boolean"
+  },
+  "option_number": {
+    "number": null,
+    "full": "Секция billing с постоплатной числовой тарифной опцией",
+    "text": "Секция billing с постоплатной числовой тарифной опцией"
+  },
+  "saas_plan_schema": {
+    "number": null,
+    "full": "Секция schemas",
+    "text": "Секция schemas"
+  },
+  "saas_preview": {
+    "number": "1",
+    "full": "1 Секция preview",
+    "text": "Секция preview"
+  },
+  "saas_broker_add_configuration": {
+    "number": "1",
+    "full": "1 Загрузка конфигурации сервиса в брокер",
+    "text": "Загрузка конфигурации сервиса в брокер"
+  },
+  "saas_upload_env": {
+    "number": "1",
+    "full": "1 Развертывание брокера на окружении",
+    "text": "Развертывание брокера на окружении"
+  },
+  "pic_saas_swagger_broker": {
+    "number": "1",
+    "full": "Рисунок 1 — Пример API swagger UI",
+    "text": "1  Рисунок 1 — Пример API swagger UI"
+  },
+  "pic_saas_swagger_resourceusage": {
+    "number": "2",
+    "full": "Рисунок 2 — Пример API swagger UI, содержащий запросы для постоплатных тарифных опций",
+    "text": "2  Рисунок 2 — Пример API swagger UI, содержащий запросы для постоплатных тарифных опций"
+  },
+  "saas_upload_localtest": {
+    "number": "1",
+    "full": "1 Локальное тестирование брокера",
+    "text": "Локальное тестирование брокера"
+  },
+  "pic_saas_upload": {
+    "number": "1",
+    "full": "Рисунок 1 — Загрузка SaaS-приложения",
+    "text": "1  Рисунок 1 — Загрузка SaaS-приложения"
+  },
+  "saas_upload_phases": {
+    "number": "1",
+    "full": "1 Этапы загрузки сервиса",
+    "text": "Этапы загрузки сервиса"
+  },
+  "saas_upload_publish": {
+    "number": "1",
+    "full": "1 Публикация сервиса",
+    "text": "Публикация сервиса"
+  },
+  "tab_registration": {
+    "number": "1",
+    "full": "Таблица 1 — Параметры брокера для регистрации в Магазине",
+    "text": "1 Таблица 1 — Параметры брокера для регистрации в Магазине"
+  },
+  "saas_upload_registration": {
+    "number": "1",
+    "full": "1 Регистрация брокера",
+    "text": "Регистрация брокера"
+  },
+  "saas_upload_testmarketplace": {
+    "number": "1",
+    "full": "1 Тестирование сервиса в Магазине",
+    "text": "Тестирование сервиса в Магазине"
+  },
+  "saas_update": {
+    "number": "1",
+    "full": "1 Обновление SaaS-приложения",
+    "text": "Обновление SaaS-приложения"
+  },
+  "tab_sources": {
+    "number": "1",
+    "full": "Таблица 1 — Источники данных iVK CS",
+    "text": "1 Таблица 1 — Источники данных iVK CS"
+  },
+  "ivkcs_datasources_list": {
+    "number": "1",
+    "full": "1 Список источников данных",
+    "text": "Список источников данных"
+  },
+  "tab_source_args": {
+    "number": "1",
+    "full": "Таблица 1 — Аргументы источника данных ivkcs_agent_script_result",
+    "text": "1 Таблица 1 — Аргументы источника данных ivkcs_agent_script_result"
+  },
+  "tab_source_args1": {
+    "number": "2",
+    "full": "Таблица 2 — Атрибуты источника данных ivkcs_agent_script_result",
+    "text": "2 Таблица 2 — Атрибуты источника данных ivkcs_agent_script_result"
+  },
+  "ivkcs_agent_script_result": {
+    "number": "1",
+    "full": "1 Источник данных ivkcs_agent_script_result",
+    "text": "Источник данных ivkcs_agent_script_result"
+  },
+  "tab_attributes": {
+    "number": "2",
+    "full": "Таблица 2 — Атрибуты ресурса ivkcs_ssh_keypair",
+    "text": "2 Таблица 2 — Атрибуты ресурса ivkcs_ssh_keypair"
+  },
+  "ivkcs_monitoring_user": {
+    "number": "1",
+    "full": "1 Источник данных ivkcs_monitoring_user",
+    "text": "Источник данных ivkcs_monitoring_user"
+  },
+  "tab_provider_resources": {
+    "number": "1",
+    "full": "Таблица 1 — Ресурсы провайдера iVK CS",
+    "text": "1 Таблица 1 — Ресурсы провайдера iVK CS"
+  },
+  "ivkcs_resources_list": {
+    "number": "1",
+    "full": "1 Список ресурсов",
+    "text": "Список ресурсов"
+  },
+  "tab_arguments": {
+    "number": "1",
+    "full": "Таблица 1 — Аргумент ресурса ivkcs_user_data",
+    "text": "1 Таблица 1 — Аргумент ресурса ivkcs_user_data"
+  },
+  "tab_port_health": {
+    "number": "2",
+    "full": "Таблица 2 — Аргументы блока port_health",
+    "text": "2 Таблица 2 — Аргументы блока port_health"
+  },
+  "tab_http_health": {
+    "number": "3",
+    "full": "Таблица 3 — Аргументы блока http_health",
+    "text": "3 Таблица 3 — Аргументы блока http_health"
+  },
+  "tab_script_health": {
+    "number": "4",
+    "full": "Таблица 4 — Аргументы блока script_health",
+    "text": "4 Таблица 4 — Аргументы блока script_health"
+  },
+  "ivkcs_agent_check": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_agent_check",
+    "text": "Ресурс ivkcs_agent_check"
+  },
+  "port_health": {
+    "number": "1.1",
+    "full": "1.1 Блок port_health",
+    "text": "Блок port_health"
+  },
+  "http_health": {
+    "number": "1.2",
+    "full": "1.2 Блок http_health",
+    "text": "Блок http_health"
+  },
+  "script_health": {
+    "number": "1.3",
+    "full": "1.3 Блок script_health",
+    "text": "Блок script_health"
+  },
+  "tab_arguments1": {
+    "number": "2",
+    "full": "Таблица 2 — Аргументы одного элемента step",
+    "text": "2 Таблица 2 — Аргументы одного элемента step"
+  },
+  "tab_script_options": {
+    "number": "3",
+    "full": "Таблица 3 — Опции скрипта",
+    "text": "3 Таблица 3 — Опции скрипта"
+  },
+  "ivkcs_agent_exec": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_agent_exec",
+    "text": "Ресурс ivkcs_agent_exec"
+  },
+  "tab_options": {
+    "number": "2",
+    "full": "Таблица 2 — Опции инициализации агента",
+    "text": "2 Таблица 2 — Опции инициализации агента"
+  },
+  "ivkcs_agent_init": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_agent_init",
+    "text": "Ресурс ivkcs_agent_init"
+  },
+  "ivkcs_compute_instance_reboot": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_compute_instance_reboot",
+    "text": "Ресурс ivkcs_compute_instance_reboot"
+  },
+  "ivkcs_dns": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_dns",
+    "text": "Ресурс ivkcs_dns"
+  },
+  "ivkcs_s3": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_s3",
+    "text": "Ресурс ivkcs_s3"
+  },
+  "ivkcs_ssh_keypair": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_ssh_keypair",
+    "text": "Ресурс ivkcs_ssh_keypair"
+  },
+  "tab_target_os": {
+    "number": "2",
+    "full": "Таблица 2 — Возможные значения аргумента target_os",
+    "text": "2 Таблица 2 — Возможные значения аргумента target_os"
+  },
+  "tab_packages": {
+    "number": "3",
+    "full": "Таблица 3 — Аргументы packages",
+    "text": "3 Таблица 3 — Аргументы packages"
+  },
+  "tab_userscript": {
+    "number": "4",
+    "full": "Таблица 4 — Аргументы user_script",
+    "text": "4 Таблица 4 — Аргументы user_script"
+  },
+  "tab_scripttype": {
+    "number": "5",
+    "full": "Таблица 5 — Типы скриптов",
+    "text": "5 Таблица 5 — Типы скриптов"
+  },
+  "ivkcs_user_data": {
+    "number": "1",
+    "full": "1 Ресурс ivkcs_user_data",
+    "text": "Ресурс ivkcs_user_data"
+  },
+  "target_os": {
+    "number": "1.1",
+    "full": "1.1 Аргумент target_os",
+    "text": "Аргумент target_os"
+  },
+  "packages": {
+    "number": "1.2",
+    "full": "1.2 Аргумент packages",
+    "text": "Аргумент packages"
+  },
+  "user_script": {
+    "number": "1.3",
+    "full": "1.3 Аргумент user_script",
+    "text": "Аргумент user_script"
+  },
+  "service_description": {
+    "number": "1",
+    "full": "1 Заполнение описания сервиса для Магазина",
+    "text": "Заполнение описания сервиса для Магазина"
+  },
+  "service_description_icon": {
+    "number": "1.1",
+    "full": "1.1 Иконка",
+    "text": "Иконка"
+  },
+  "service_description_short": {
+    "number": "1.2",
+    "full": "1.2 Краткое описание сервиса",
+    "text": "Краткое описание сервиса"
+  },
+  "service_description_full": {
+    "number": "1.3",
+    "full": "1.3 Полное описание сервиса",
+    "text": "Полное описание сервиса"
+  },
+  "service_description_info": {
+    "number": "1.3.1",
+    "full": "1.3.1 Информация о сервисе",
+    "text": "Информация о сервисе"
+  },
+  "service_description_tariffication": {
+    "number": "1.3.2",
+    "full": "1.3.2 Правила тарификации",
+    "text": "Правила тарификации"
+  },
+  "service_description_links": {
+    "number": "1.3.3",
+    "full": "1.3.3 Полезные ссылки",
+    "text": "Полезные ссылки"
+  },
+  "service_description_support": {
+    "number": "1.3.4",
+    "full": "1.3.4 Техническая поддержка",
+    "text": "Техническая поддержка"
+  },
+  "service_description_license": {
+    "number": "1.3.5",
+    "full": "1.3.5 Лицензионное соглашение",
+    "text": "Лицензионное соглашение"
+  },
+  "ssl": {
+    "number": null,
+    "full": "3. (Опционально) Добавьте SSL-сертификат в проект",
+    "text": "3. (Опционально) Добавьте SSL-сертификат в проект"
+  },
+  "cdn": {
+    "number": null,
+    "full": "4. Добавьте описание CDN-ресурса",
+    "text": "4. Добавьте описание CDN-ресурса"
+  },
+  "test_item_selection": {
+    "number": null,
+    "full": "Ресурсы и компоненты для тестирования",
+    "text": "Ресурсы и компоненты для тестирования"
+  },
+  "test_order": {
+    "number": null,
+    "full": "Порядок проведения тестирования",
+    "text": "Порядок проведения тестирования"
+  },
+  "migration_sequence": {
+    "number": null,
+    "full": "Последовательность миграции",
+    "text": "Последовательность миграции"
+  },
+  "services_to_migrate": {
+    "number": null,
+    "full": "Какие сервисы можно мигрировать",
+    "text": "Какие сервисы можно мигрировать"
+  },
+  "migration_instruments": {
+    "number": null,
+    "full": "Инструменты миграции",
+    "text": "Инструменты миграции"
+  }
+}

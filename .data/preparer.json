@@ -1,0 +1,38 @@
+{
+  "partitions": [
+    {
+      "key": "ru",
+      "locale": "ru",
+      "version": null,
+      "current": true,
+      "partialPath": "/ru",
+      "variables": {
+        "system": "Магазин приложений Marketplace",
+        "sys1": "Магазин",
+        "sys2": "Магазина",
+        "sys3": "Магазину",
+        "sys4": "Магазин",
+        "sys5": "Магазином",
+        "sys6": "Магазине",
+        "revdate": "18.07.2024"
+      }
+    },
+    {
+      "key": "en",
+      "locale": "en",
+      "version": null,
+      "current": true,
+      "partialPath": "/en",
+      "variables": {}
+    }
+  ],
+  "locales": [
+    "ru",
+    "en"
+  ],
+  "versions": [],
+  "buildPoints": [
+    "common"
+  ],
+  "createdAt": "2025-02-18T08:37:11.935Z"
+}
