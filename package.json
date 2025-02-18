@@ -18,8 +18,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vk-tech/d11n-audit": "4.0.8",
-    "@vk-tech/d11n-portal": "4.0.8",
-    "@vk-tech/d11n-preparer": "4.0.8"
+    "@vk-tech/d11n-audit": "4.0.10",
+    "@vk-tech/d11n-portal": "4.0.10",
+    "@vk-tech/d11n-preparer": "4.0.10"
   }
 }
