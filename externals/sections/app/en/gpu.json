@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/computing/gpu/about"
+                    "link": "/en/computing/gpu/concepts/about"
                 },
                 {
                     "link": "/en/computing/iaas/faq"

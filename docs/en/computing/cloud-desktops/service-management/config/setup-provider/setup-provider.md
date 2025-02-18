@@ -1,6 +1,6 @@
 The Cloud Desktop service allows you to use the following subsystems of remote access to desktops:
 
-- [Termidesk](https://termidesk.ru/products/) developed by UVEON.
+- [Termidesk](https://termidesk.ru/products) developed by UVEON.
   
     Use this subsystem if users workstations are running Windows or Linux OS.
 
@@ -17,6 +17,6 @@ To select a remote desktop access subsystem:
 
 <warn>
 
-If you want to change the subsystem after creating a desktop pool, first delete all [desktop pools](../../desktops-pool/manage#deleting_a_desktop_pools) and the [service infrastructure](../../delete-vdi).
+If you want to change the subsystem after creating a desktop pool, first delete all [desktop pools](../../desktops-pool/manage#delete_pool) and the [service infrastructure](../../delete-vdi).
 
 </warn>

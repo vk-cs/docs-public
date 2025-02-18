@@ -17,7 +17,7 @@ The following software must be installed on the image:
 - Software for cloud-based virtual machine initialization:
 
   - For Astra Linux — the [cloud-init](https://www.ibm.com/docs/ru/powervc-cloud/2.0.0?topic=init-installing-configuring-cloud-linux) package.
-  - For Windows — the [Cloudbase-Init](https://cloudbase.it/cloudbase-init/) application.
+  - For Windows — the [Cloudbase-Init](https://cloudbase.it/cloudbase-init) application.
 
 - Applications required for your users' work.
 
@@ -26,7 +26,7 @@ The following software must be installed on the image:
 It is recommended to install on the image:
 
 - (For Astra Linux) additional software for supporting the RDP protocol and the AD service. This will speed up the deployment of desktops in a pool.
-- Components of the [Termidesk](https://termidesk.ru/) software, which speeds up the connection of users to pool desktops.
+- Components of the [Termidesk](https://termidesk.ru) software, which speeds up the connection of users to pool desktops.
 
     <tabs>
     <tablist>
