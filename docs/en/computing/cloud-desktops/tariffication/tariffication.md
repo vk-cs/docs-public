@@ -7,7 +7,7 @@ The cost of network services is given in [price list](https://cloud.vk.com/price
 - Virtual servers deployed within the Cloud Desktop service.
 - Licenses for deployed virtual servers.
 
-To view the details of expenses, use the [instructions](/ru/intro/billing/service-management/detail/). Write-offs are accounted for in the following sections:
+To view the details of expenses, use the [instructions](/ru/intro/billing/service-management/detail). Write-offs are accounted for in the following sections:
 
 - **Virtual servers**.
 - **Licenses**.

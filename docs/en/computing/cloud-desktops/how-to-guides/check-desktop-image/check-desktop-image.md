@@ -10,7 +10,7 @@ The following shows how to check a custom desktop image for compatibility with t
      - the IP address or FQDN of your LDAP server;
      - the username and password of a LDAP user who has rights to add a VM to the domain.
 
-1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Create [a network](/en/networks/vnet/service-management/net#creating_network) and [a subnet](/en/networks/vnet/service-management/net#creating_subnet):
 
      - Enable the **Access to internet** option.
@@ -27,7 +27,7 @@ The following shows how to check a custom desktop image for compatibility with t
 
 1. Check that the image is visible in the VM creation wizard:
 
-     1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
+     1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
      1. Upload the prepared image to VK Cloud by following the [instructions](/en/computing/iaas/service-management/images/images-manage#importing_an_image).
      1. Go to **Cloud Servers** → **Virtual machines** and click **Add**.
      1. In the **Operating System** list, find the image you uploaded and select it.

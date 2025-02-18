@@ -17,7 +17,7 @@
 - ПO для облачной инициализации виртуальной машины:
 
   - Для ОС Astra Linux — пакет [cloud-init](https://www.ibm.com/docs/ru/powervc-cloud/2.0.0?topic=init-installing-configuring-cloud-linux).
-  - Для ОС Windows — сервисное приложение [Cloudbase-Init](https://cloudbase.it/cloudbase-init/).
+  - Для ОС Windows — сервисное приложение [Cloudbase-Init](https://cloudbase.it/cloudbase-init).
 
 - Приложения, необходимые для работы ваших пользователей.
 
@@ -26,7 +26,7 @@
 Рекомендуется установить на образ:
 
 - (Для ОС Astra Linux) дополнительное ПО для поддержки протокола RDP и службы каталогов AD. Это позволит ускорить развертывание рабочих столов в пуле.
-- Компоненты [программного продукта Termidesk](https://termidesk.ru/), который позволяет ускорить подключение к рабочим столам пула.
+- Компоненты [программного продукта Termidesk](https://termidesk.ru), который позволяет ускорить подключение к рабочим столам пула.
 
     <tabs>
     <tablist>

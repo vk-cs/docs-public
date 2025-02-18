@@ -1,5 +1,8 @@
-Before using, you must leave a request on the [website](https://cloud.vk.com/cloud-gpu/). Click "Apply". Fill out the form and click Submit.
+Before using the service, leave a request on the [VK Cloud website](https://cloud.vk.com/en/):
 
-Upon successful submission of the application, a message will appear informing you that the application has been submitted successfully.
+1. Click the **Contact sales** button.
+1. Fill in the form and click the **Send** button.
 
-After reviewing the application and conducting the necessary consultations, the manager will connect the service.
+If your request is successfully submitted, a confirmation message will appear.
+
+After reviewing the request and conducting the necessary consultations, the manager will connect the service.
