@@ -14,9 +14,9 @@
       "ru",
       "en"
     ],
+    "logoLink": "https://cloud.vk.com",
     "defaultLocale": "ru",
-    "classNamePrefix": "pp",
-    "logoLink": "/"
+    "classNamePrefix": "pp"
   },
   "breadcrumbs": {
     "projectName": "VK Cloud",

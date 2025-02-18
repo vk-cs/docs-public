@@ -6,5 +6,6 @@
   "shortDescription": "Scenarios of using Cloud GPU with VK Cloud services",
   "metaDescription": "How to use Cloud GPU with VK Cloud services",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "b951d16e-5332-47d0-b474-ee8e2e8984fd"
 }

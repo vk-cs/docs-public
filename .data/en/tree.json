@@ -962,13 +962,26 @@
     ]
   },
   {
+    "uuid": "0522378d-0981-4895-91f7-2f800727662e",
+    "lang": "en",
+    "type": "SECTION",
+    "level": 3,
+    "partialPath": "/en/computing/gpu/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/concepts.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "b2a6e660-59c6-4de3-be83-e09aac1fb14e",
     "lang": "en",
     "type": "ARTICLE",
-    "level": 3,
-    "partialPath": "/en/computing/gpu/about",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/about/about.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/about/about.md",
+    "level": 4,
+    "partialPath": "/en/computing/gpu/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/about/about.md",
     "hidden": false,
     "buildPoints": [
       "common"
@@ -982,6 +995,32 @@
     "partialPath": "/en/computing/gpu/connect",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/connect/connect.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/connect/connect.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b951d16e-5332-47d0-b474-ee8e2e8984fd",
+    "lang": "en",
+    "type": "SECTION",
+    "level": 3,
+    "partialPath": "/en/computing/gpu/how-to-guides",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/how-to-guides.meta.json",
+    "mdFullPath": null,
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ed9397f7-752b-49ce-be70-93481e256c9b",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/computing/gpu/how-to-guides/vdi-with-gpu",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
     "hidden": false,
     "buildPoints": [
       "common"

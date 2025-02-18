@@ -1448,16 +1448,28 @@
     "link": "https://cloud.vk.com/cloud-gpu/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
-    "link": "https://www.openldap.org/devel/admin/guide.html#Building%20and%20Installing%20OpenLDAP%20Software"
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "link": "https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
     "link": "https://msk.cloud.vk.com/app/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
+    "link": "https://msk.cloud.vk.com/app"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/concepts/about/about.md",
@@ -1465,7 +1477,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/concepts/about/about.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/concepts/desktop-image/desktop-image.md",
@@ -1477,35 +1489,35 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/concepts/desktop-image/desktop-image.md",
-    "link": "https://cloudbase.it/cloudbase-init/"
+    "link": "https://cloudbase.it/cloudbase-init"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/concepts/desktop-image/desktop-image.md",
-    "link": "https://termidesk.ru/"
+    "link": "https://termidesk.ru"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-net/setup-net.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-net/setup-net.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-ldap/setup-ldap.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-ldap/setup-ldap.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.md",
-    "link": "https://termidesk.ru/products/"
+    "link": "https://termidesk.ru/products"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.md",
@@ -1513,43 +1525,43 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/group-policies/group-policies.md",
-    "link": "https://termidesk.ru/"
+    "link": "https://termidesk.ru"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/manage-desktops/manage-desktops.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/manage-desktops/manage-desktops.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/manage-desktops/manage-desktops.md",
@@ -1557,31 +1569,31 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/manage-desktops/manage-desktops.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/delete-vdi/delete-vdi.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/how-to-guides/ipsec/ipsec.md",
-    "link": "https://mcs.mail.ru/app/"
+    "link": "https://mcs.mail.ru/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/how-to-guides/ipsec/ipsec.md",
-    "link": "https://mcs.mail.ru/app/"
+    "link": "https://mcs.mail.ru/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/how-to-guides/check-desktop-image/check-desktop-image.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/how-to-guides/check-desktop-image/check-desktop-image.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/faq/faq.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/vm-licenses/ms-lic/ms-lic.md",
@@ -6306,6 +6318,22 @@
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain/wordpress-domain.md",
     "link": "https://www.redirect-checker.org/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://github.com/binhnk0791/joomla/blob/master/LICENSE.txt"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://cloud.vk.com/docs/intro/start/concepts/architecture#az"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://docs.joomla.org/Main_Page/ru"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/service-management/pr-instance-add/pr-instance-add.md",
