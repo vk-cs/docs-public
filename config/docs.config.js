@@ -11,6 +11,7 @@ export const config = {
             },
         ],
         locales: ['ru', 'en'],
+        logoLink: 'https://cloud.vk.com',
     },
     breadcrumbs: {
         projectName: 'VK Cloud',
