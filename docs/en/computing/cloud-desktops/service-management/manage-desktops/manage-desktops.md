@@ -44,7 +44,7 @@ The **Start** button is active only if all VMs for the selected tables are disab
 
 ## Ending the user session
 
-The state of the desktop after the end of the session is determined by the **Actions at the end of session** option, set when [creating](../desktops-pool/add/) the pool.
+The state of the desktop after the end of the session is determined by the **Actions at the end of session** option, set when [creating](../desktops-pool/add) the pool.
 
 To end the user session, log out of the system:
 

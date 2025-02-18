@@ -8,28 +8,29 @@ After completing all the steps of the quick start, you will:
     1. Create a pool of desktops.
     1. Verify that two desktops are successfully deployed in the pool.
 
-## 1. Preparatory steps
+## Preparatory steps
 
-1. Create and configure the OpenLDAP user directory service ([an example](https://www.openldap.org/devel/admin/guide.html#Building%20and%20Installing%20OpenLDAP%20Software)).
+1. Create and configure the OpenLDAP user directory service as described in [the official OpenLDAP documentation](https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide).
 1. Find out the details of the configured directory:
 
    - IP address or FQDN of the OpenLDAP server
    - Unique account name
    - Account password
 
-1. (Optional) [Set up](/en/networks/vnet/how-to-guides/vpn-tunnel#2_set_up_a_vpn_tunnel_on_the_cloud_side) a VPN on the router that will be used for the service.
+1. (Optional) [Set up](/en/networks/vnet/how-to-guides/vpn-tunnel) a VPN on the router that will be used for the service.
 1. Check that the Cloud Desktop service is connected to your [management console](https://msk.cloud.vk.com/app/en): the **Cloud Desktop** section is available in the menu on the left.
 
-## 2. Set up an external infrastructure
+## 1. Set up external infrastructure
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the desktops will be placed.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, specify:
 
+    - **Router**: a router from the list, for example, a router with a VPN network, if one is configured.
     - **IP address space**: a range of IP addresses for the subnets where the service resources will be deployed.
-    - **Router**: a router with a VPN network.
-    - **DNS**: the IP address of a DNS server.
+    - **DNS server address for your domain**: the IP address of the DNS server for the domain that will be used for authentication on remote desktops.
+    - **Desktop access mode**: `External access`.
     - **Availability zone**: `Moscow (MS1)`.
 
 1. Click the **Save** button.
@@ -38,13 +39,13 @@ After completing all the steps of the quick start, you will:
     - **Host**: the IP address or FQDN of the OpenLDAP server.
     - **Port**: `389`.
     - **Base DN**: the root directory to search for objects in AD or LDAP.
-    - **User DN**: the full path to the account in the OpenLDAP database which will be used for synchronization with the accounts directory.
-    - **Password**: the password of the OpenLDAP account specified in **User DN**.
+    - **User DN for connecting to LDAP directory**: the full path to the account in the OpenLDAP database which will be used for synchronization with the accounts directory.
+    - **Password**: the password of the OpenLDAP account specified in **User DN for connecting to LDAP directory**.
     - **Selection field**: `UID`.
 
 1. Click the **Save** button.
 
-## 3. Create a pool of desktops
+## 2. Create pool of desktops
 
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Click the **Add** button.
@@ -63,9 +64,9 @@ After completing all the steps of the quick start, you will:
 1. At the **Virtual machine settings** step, specify:
 
     - **Instance type**: `STD1-1`.
-    - **Disk size**: `10`.
+    - **Disk size**: `15`.
     - **Disk Type**: `HDD`.
-    - **Image**: `Astra Linux SE 1.7.2 Орел GUI`.
+    - **Image**: `Astra Linux для VDI`.
     - **Security group vk-cloud-desktops-pool-quickstart**: `default`.
 
 1. Click the **Next step** button.
@@ -74,15 +75,15 @@ After completing all the steps of the quick start, you will:
 
    The creation of the pool of desktops will begin. This process can take a long time.
 
-## 4. Make sure that desktops are deployed in the pool
+## 3. Make sure desktops are deployed in pool
 
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. In the list of pools, click the pool name `vk-cloud-desktops-pool-quickstart`.
 1. Go to the **Desktops** tab.
 
-   The value `2` should be displayed in the **Deployed** block.
+   The value `1` should be displayed in the **Deployed** block.
 
-## 5. Check desktop connectivity
+## 4. Check desktop connectivity
 
 1. Write down the external IP address for connecting to the pool:
 
@@ -95,11 +96,11 @@ After completing all the steps of the quick start, you will:
 
    1. Go to **Cloud Desktop** → **Service settings**.
    1. Go to the **Subsystem** tab and check which subsystem is selected.
-   
+
 1. Download and install the client for accessing remote desktops. The choice of client depends on the subsystem:
 
-   - [Termidesk](/ru/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") — if the **Termidesk** subsystem is selected.
-   - [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download") — if the **VK** subsystem is selected.
+   - [Termidesk](/ru/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") — if the Termidesk subsystem is selected.
+   - [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download") — if the VK subsystem is selected.
 
 1. Connect to the pools:
 
@@ -115,9 +116,9 @@ After completing all the steps of the quick start, you will:
 
 ## Delete unused resources
 
-A running service consumes computing resources. If you don't need it anymore, [delete](../service-management/desktops-pool/manage#deleting_a_desktop_pools) the desktop pool.
+A running service consumes computing resources. If you don't need it anymore, [delete](../service-management/desktops-pool/manage#delete_pool) the desktop pool.
 
 ## What's next?
 
-- [Learn about the concepts](../concepts/) of the virtual desktop service.
-- [Read the instructions](../service-management/manage-desktops/) for working with virtual desktops.
+- [Learn about the concepts](../concepts) of the virtual desktop service.
+- [Read the instructions](../service-management/manage-desktops) for working with virtual desktops.

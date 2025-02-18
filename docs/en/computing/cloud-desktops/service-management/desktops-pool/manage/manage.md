@@ -1,6 +1,6 @@
 <info>
 
-You can also [manage all desktops](../../manage-desktops/) created in the system for all pools.
+You can also [manage all desktops](../../manage-desktops) created in the system for all pools.
 
 </info>
 
@@ -71,7 +71,7 @@ This is a group operation: if necessary, you can send a message to users of seve
 
 1. Click the **Send message** button.
 
-## Deleting a desktop pools
+## {heading(Deleting a desktop pool)[id=delete_pool]}
 
 <warn>
 

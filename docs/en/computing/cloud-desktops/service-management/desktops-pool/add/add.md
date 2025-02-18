@@ -6,7 +6,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
 ## Preparatory steps
 
-1. Make sure that your [connection to the service](../../config/) is configured.
+1. Make sure that your [connection to the service](../../config) is configured.
 1. (Optional) If you want to use your own image to create desktops, [prepare](/en/computing/cloud-desktops/concepts/desktop-image) and [check](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) it.
 1. Run the pool creation wizard:
    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
@@ -15,7 +15,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
    The wizard for creating a new pool opens.
 
-## 1. Set up the pool configuration
+## {heading(1. Set up the pool configuration)[id=setup_pool_configuration]}
 
 1. Set the pool configuration parameters:
 
@@ -44,7 +44,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
 1. Click the **Next step** button.
 
-## 2. Configure the pool VMs
+## {heading(2. Configure the pool VMs)[id=configure_pool_vms]}
 
 1. Specify the settings of the virtual machines on which the pool desktops will be created:
 

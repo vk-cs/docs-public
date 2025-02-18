@@ -67,7 +67,7 @@ VMs are grouped into categories in a management console:
 | Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru)
 
 | Virtual machines with GPU
-| VMs with connected [graphics card](../../../gpu/about/)
+| VMs with connected [graphics card](../../../gpu/concepts/about)
 | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/)
 
 | VMs with local disks

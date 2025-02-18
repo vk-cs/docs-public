@@ -43,9 +43,9 @@ The following roles are provided in the service:
 | Microphone        | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
 | Clipboard         | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
 
-The available peripherals are set when [adding](../../service-management/desktops-pool/add/) a desktop pool.
+The available peripherals are set when [adding](../../service-management/desktops-pool/add) a desktop pool.
 
 ## What's next?
 
-- [Get acquainted](../glossary/) with the basic concepts of the service.
-- [Go through](../../quick-start/) the Quick start.
+- [Get acquainted](../glossary) with the basic concepts of the service.
+- [Go through](../../quick-start) the Quick start.
