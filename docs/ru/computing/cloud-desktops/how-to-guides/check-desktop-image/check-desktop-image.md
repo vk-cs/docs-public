@@ -10,7 +10,7 @@
      - IP-адрес или FQDN вашего сервера LDAP;
      - имя и пароль пользователя LDAP с правами заведения ВМ в домен.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Создайте [сеть](/ru/networks/vnet/service-management/net#sozdanie_seti) и [подсеть](/ru/networks/vnet/service-management/net#sozdanie_podseti):
 
      - Включите опцию **Доступ в интернет**.
@@ -27,7 +27,7 @@
 
 1. Проверьте, что образ виден в мастере создания ВМ:
 
-     1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+     1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
      1. Загрузите подготовленный образ в VK Cloud, следуя [инструкции по импорту](/ru/computing/iaas/service-management/images/images-manage#import_obraza).
      1. Перейдите в раздел **Облачные вычисления** → **Вычислительные машины** и нажмите кнопку **Добавить**.
      1. Убедитесь, что в списке **Операционная система** отображается загруженный вами образ, и выберите его.

@@ -12,7 +12,7 @@
 
 ## 1. Добавьте правило для Windows Defender Firewall
 
-Для работы агента [Termidesk](https://termidesk.ru/), установленного на виртуальных рабочих столах, активируйте Windows Defender Firewall и разрешите в нем входящие подключения для группы портов TCP 43900–44000.
+Для работы агента [Termidesk](https://termidesk.ru), установленного на виртуальных рабочих столах, активируйте Windows Defender Firewall и разрешите в нем входящие подключения для группы портов TCP 43900–44000.
 
 1. Перейдите в раздел **Computer Configuration → Policies → Windows Security → Security Settings → Windows Defender Firewall with Advanced Security – Local Group Police Object**.
 1. Перейдите по ссылке **Windows Defender Firewall Properties**.
