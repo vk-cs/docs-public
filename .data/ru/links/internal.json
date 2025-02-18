@@ -3612,10 +3612,88 @@
     "hash": "migrate_own_licenses"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/concepts/about",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/gpu/concepts/about",
+    "link": "http://localhost:3000/docs/ru/computing/gpu/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/gpu/connect",
+    "link": "http://localhost:3000/docs/ru/computing/gpu/connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/networks/vnet/how-to-guides/vpn-tunnel",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/vpn-tunnel",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/tools-for-using-services/account/concepts/projects",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/config/setup-net",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/config/setup-net",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/config/setup-ldap",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/config/setup-ldap",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/config/setup-provider",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/config/setup-provider",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/config/setup-saml",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/config/setup-saml",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "setup_pool_configuration"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "configure_pool_vms"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "hash": "delete_pool"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
     "dst": "/ru/networks/vnet/how-to-guides/vpn-tunnel",
     "link": "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/vpn-tunnel",
-    "hash": "2_nastroyte_vpn_tunnel_na_storone_oblachnoy_seti"
+    "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
@@ -3627,7 +3705,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
     "dst": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
     "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
-    "hash": "udalenie_pula_rabochih_stolov"
+    "hash": "delete_pool"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/quick-start/quick-start.md",
@@ -3943,8 +4021,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/tariffication/tariffication.md",
-    "dst": "/ru/intro/billing/service-management/detail/",
-    "link": "http://localhost:3000/docs/ru/intro/billing/service-management/detail/",
+    "dst": "/ru/intro/billing/service-management/detail",
+    "link": "http://localhost:3000/docs/ru/intro/billing/service-management/detail",
     "hash": null
   },
   {
@@ -16306,6 +16384,48 @@
     "dst": "/ru/applications-and-services/marketplace/service-management/pr-instance-manage",
     "link": "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage",
     "hash": "udalenie_instansa_servisa"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/networks/vnet/service-management/net",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/service-management/net",
+    "hash": "sozdanie_seti"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/networks/vnet/service-management/net",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/service-management/net",
+    "hash": "redaktirovanie_podseti"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/monitoring-services/monitoring",
+    "link": "http://localhost:3000/docs/ru/monitoring-services/monitoring",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/concepts/about",
+    "hash": "flavors"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/concepts/about",
+    "hash": "diski"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/storage/s3/concepts/about",
+    "link": "http://localhost:3000/docs/ru/storage/s3/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/ru/applications-and-services/marketplace/service-management/pr-instance-manage",
+    "link": "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage",
+    "hash": "update_access"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/service-management/service-management.md",

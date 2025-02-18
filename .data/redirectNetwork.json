@@ -14563,7 +14563,7 @@
   },
   {
     "source": "/en/ml/gpu/gpu-start/gpu-info",
-    "destination": "/en/computing/gpu/about",
+    "destination": "/en/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -19525,7 +19525,7 @@
   },
   {
     "source": "/en/base/gpu/gpu-start/gpu-info",
-    "destination": "/en/computing/gpu/about",
+    "destination": "/en/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -20269,7 +20269,7 @@
   },
   {
     "source": "/en/base/gpu/gpu-info",
-    "destination": "/en/computing/gpu/about",
+    "destination": "/en/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -26431,7 +26431,7 @@
   },
   {
     "source": "/en/base/gpu/about",
-    "destination": "/en/computing/gpu/about",
+    "destination": "/en/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -28724,6 +28724,12 @@
   {
     "source": "/en/intro/start/concepts/help-glossary",
     "destination": "/en/intro/start/concepts/glossary",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/gpu/about",
+    "destination": "/en/computing/gpu/concepts/about",
     "permanent": false,
     "locale": false
   }

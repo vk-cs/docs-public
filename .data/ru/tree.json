@@ -1651,6 +1651,32 @@
     ]
   },
   {
+    "uuid": "57afc18d-55e0-457e-a1e1-e26faf4d41df",
+    "lang": "ru",
+    "type": "SECTION",
+    "level": 3,
+    "partialPath": "/ru/computing/gpu/how-to-guides",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/how-to-guides.meta.json",
+    "mdFullPath": null,
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f073142a-d037-4c17-9079-4e5bd01d7268",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/computing/gpu/how-to-guides/vdi-with-gpu",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "842b1d20-793c-49a7-9461-32eb20bec850",
     "lang": "ru",
     "type": "SECTION",
@@ -8158,6 +8184,19 @@
     "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain/wordpress-domain.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/wordpress-domain/wordpress-domain.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "999ad2ff-7acb-49c5-8232-fa1f2cd6cf39",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/joomla-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
     "hidden": false,
     "buildPoints": [
       "common"

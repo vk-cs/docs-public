@@ -828,28 +828,40 @@
     "link": "https://cloud.vk.com/pricelist"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/about/about.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/about/about.md",
     "link": "https://developer.nvidia.com/cuda-toolkit"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/about/about.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/about/about.md",
     "link": "https://github.com/ufoym/deepo"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/about/about.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/about/about.md",
     "link": "https://www.nvidia.com/ru-ru/design-visualization/technologies/grid-technology/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/about/about.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/concepts/about/about.md",
     "link": "https://cloud.vk.com/cloud-gpu/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/connect/connect.md",
-    "link": "https://cloud.vk.com/cloud-gpu/"
+    "link": "https://cloud.vk.com/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "link": "https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "link": "https://msk.cloud.vk.com/app/en"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "link": "https://msk.cloud.vk.com/app/en"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/quick-start/quick-start.md",
-    "link": "https://www.openldap.org/devel/admin/guide.html#Building%20and%20Installing%20OpenLDAP%20Software"
+    "link": "https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/quick-start/quick-start.md",
@@ -881,11 +893,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/concepts/desktop-image/desktop-image.md",
-    "link": "https://cloudbase.it/cloudbase-init/"
+    "link": "https://cloudbase.it/cloudbase-init"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/concepts/desktop-image/desktop-image.md",
-    "link": "https://termidesk.ru/"
+    "link": "https://termidesk.ru"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-net/setup-net.md",
@@ -905,7 +917,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.md",
-    "link": "https://termidesk.ru/products/"
+    "link": "https://termidesk.ru/products"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.md",
@@ -965,19 +977,19 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/how-to-guides/ipsec/ipsec.md",
-    "link": "https://cloud.vk.com/app/en/"
+    "link": "https://cloud.vk.com/app/en"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/how-to-guides/ipsec/ipsec.md",
-    "link": "https://cloud.vk.com/app/en/"
+    "link": "https://cloud.vk.com/app/en"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/how-to-guides/check-desktop-image/check-desktop-image.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/how-to-guides/check-desktop-image/check-desktop-image.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/faq/faq.md",

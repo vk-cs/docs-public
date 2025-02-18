@@ -104,6 +104,21 @@
     "full": "Filling os_distro and os_version tags",
     "text": "Filling os_distro and os_version tags"
   },
+  "setup_pool_configuration": {
+    "number": null,
+    "full": "1. Set up the pool configuration",
+    "text": "1. Set up the pool configuration"
+  },
+  "configure_pool_vms": {
+    "number": null,
+    "full": "2. Configure the pool VMs",
+    "text": "2. Configure the pool VMs"
+  },
+  "delete_pool": {
+    "number": null,
+    "full": "Deleting a desktop pool",
+    "text": "Deleting a desktop pool"
+  },
   "migrate_own_licenses": {
     "number": null,
     "full": "Migration previously purchased licenses to VK Cloud",

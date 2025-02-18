@@ -1327,8 +1327,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/about/about.md",
-    "dst": "/en/computing/gpu/about",
-    "link": "http://localhost:3000/docs/en/computing/gpu/about",
+    "dst": "/en/computing/gpu/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/gpu/concepts/about",
     "hash": null
   },
   {
@@ -2646,10 +2646,88 @@
     "hash": "migrate_own_licenses"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/gpu/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/gpu/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/gpu/connect",
+    "link": "http://localhost:3000/docs/en/computing/gpu/connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/contacts",
+    "link": "http://localhost:3000/docs/en/contacts",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/networks/vnet/how-to-guides/vpn-tunnel",
+    "link": "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/tools-for-using-services/account/concepts/projects",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/config/setup-net",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/config/setup-net",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/config/setup-ldap",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/config/setup-ldap",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/config/setup-provider",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/config/setup-provider",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/config/setup-saml",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/config/setup-saml",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "setup_pool_configuration"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "configure_pool_vms"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/gpu/how-to-guides/vdi-with-gpu/vdi-with-gpu.md",
+    "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "hash": "delete_pool"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/quick-start/quick-start.md",
     "dst": "/en/networks/vnet/how-to-guides/vpn-tunnel",
     "link": "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel",
-    "hash": "2_set_up_a_vpn_tunnel_on_the_cloud_side"
+    "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/quick-start/quick-start.md",
@@ -2661,7 +2739,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/quick-start/quick-start.md",
     "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
     "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage",
-    "hash": "deleting_a_desktop_pools"
+    "hash": "delete_pool"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/quick-start/quick-start.md",
@@ -2965,8 +3043,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/tariffication/tariffication.md",
-    "dst": "/ru/intro/billing/service-management/detail/",
-    "link": "http://localhost:3000/docs/ru/intro/billing/service-management/detail/",
+    "dst": "/ru/intro/billing/service-management/detail",
+    "link": "http://localhost:3000/docs/ru/intro/billing/service-management/detail",
     "hash": null
   },
   {

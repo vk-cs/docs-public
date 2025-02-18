@@ -6,5 +6,6 @@
   "shortDescription": "How to deploy virtual desktops with GPUs",
   "metaDescription": "How to deploy virtual desktops with GPUs",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "uuid": "ed9397f7-752b-49ce-be70-93481e256c9b"
 }
