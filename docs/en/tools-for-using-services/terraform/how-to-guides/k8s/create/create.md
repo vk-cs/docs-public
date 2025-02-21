@@ -50,7 +50,7 @@ resource "vkcs_networking_router_interface" "k8s" {
 In the examples below, clusters with the following configuration are created:
 
 - The `Moscow` region, the `GZ1` availability zone.
-- Kubernetes version: `1.25`.
+- Kubernetes version: `1.31`.
 
 - One `STD3-4-8` master node.
 - Two `STD2-2-4` worker nodes:
@@ -87,7 +87,7 @@ data "vkcs_compute_flavor" "k8s-node-group-flavor" {
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-    version = "1.25"
+    version = "1.31"
 }
 
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
@@ -155,7 +155,7 @@ data "vkcs_compute_flavor" "k8s-node-group-flavor" {
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-    version = "1.25"
+    version = "1.31"
 }
 
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
@@ -229,7 +229,7 @@ data "vkcs_compute_flavor" "k8s-node-group-flavor" {
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-    version = "1.25"
+    version = "1.31"
 }
 
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
