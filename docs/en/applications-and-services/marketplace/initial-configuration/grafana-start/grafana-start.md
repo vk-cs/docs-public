@@ -21,7 +21,7 @@ To deploy the Grafana service in a project:
 
 1. Use the `grafana_url` link from the email to go to the Grafana console.
 1. Click the **Sign in** button.
-1. In the window appears, enter the username `admin` and the password `admin`.
+1. In the window appears, enter the username `admin` and the password from the letter. It is recommended that you change your password after logging in.
 1. Enter a new password.
 1. (Optional) Create a dashboard according to the [official documentation](https://grafana.com/docs/grafana/v10.0/getting-started/build-first-dashboard/).
 
