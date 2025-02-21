@@ -59,6 +59,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
       </info>
 
+    - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the pool virtual machines from the list.
     - **Security group <pool name>**: specify the security groups for the VMs. If you do not specify a value, the group will not be assigned.
 
 1. Click the **Next step** button.

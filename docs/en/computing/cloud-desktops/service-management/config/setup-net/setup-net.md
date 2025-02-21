@@ -5,7 +5,13 @@
    - **IP address space**: specify a range of IP addresses for the subnets where the service resources will be deployed. Parameter requirements: format — CIDR, minimum network prefix — `/7`, maximum — `/22`.
    - **Router**: select a router from the list.
    - **DNS**: specify the IP address of a DNS server. To add more addresses, click **Add DNS** and specify an additional IP address.
-   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the pool virtual machines from the list.
+   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the Cloud Desktop service from the list.
+
+     <info>
+
+     You can specify a different availability zone for a pool when creating it.
+
+     </info>
 
 1. CLick the **Save** button.
 
