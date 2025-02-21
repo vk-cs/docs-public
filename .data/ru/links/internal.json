@@ -3811,6 +3811,12 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
+    "dst": "/ru/intro/start/concepts/architecture",
+    "link": "http://localhost:3000/docs/ru/intro/start/concepts/architecture",
+    "hash": "az"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
     "dst": "/ru/computing/cloud-desktops/concepts/about",
     "link": "http://localhost:3000/docs/ru/computing/cloud-desktops/concepts/about",
     "hash": "dostupnye_periferiynye_ustroystva"

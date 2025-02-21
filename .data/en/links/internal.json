@@ -2839,6 +2839,12 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
+    "dst": "/en/intro/start/concepts/architecture",
+    "link": "http://localhost:3000/docs/en/intro/start/concepts/architecture",
+    "hash": "az"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
     "dst": "/en/computing/cloud-desktops/concepts/about",
     "link": "http://localhost:3000/docs/en/computing/cloud-desktops/concepts/about",
     "hash": "available_peripherals"
