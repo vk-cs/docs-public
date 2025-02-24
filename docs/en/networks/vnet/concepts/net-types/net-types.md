@@ -4,7 +4,7 @@ Cloud Networks service allows to work with several network types.
 
 _Standard network_ provides access to the subnets with the private IP addresses and exists within a single project.
 
-The standard network, its subnets and ports [can be managed](../../service-management/) via management console, OpenStack CLI or Terraform.
+The standard network, its subnets and ports [can be managed](../../service-management) via management console, OpenStack CLI or Terraform.
 
 ## {heading(Shared network)[id=shared_net]}
 

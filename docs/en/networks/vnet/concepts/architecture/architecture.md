@@ -41,7 +41,7 @@ As an SDN, the VK Cloud platform uses:
   - It uses the HTTP REST API instead of a message queue.
   - All agents store their current state. Agents receive from the SDN controller the target state they should be in, and bring their state to the required state.
   - A layered architecture was chosen to simplify the data transfer layer and allow for more flexibility.
-  - [Advanced router](../../how-to-guides/advanced-router/) is used with support for static and dynamic routing.
+  - [Advanced router](../../how-to-guides/advanced-router) is used with support for static and dynamic routing.
   - The organization of dedicated connections between the local network of clients and VK Cloud is available — [Cloud Direct Connect](https://cloud.vk.com/direct-connect).
 
   Additional materials about Sprut:

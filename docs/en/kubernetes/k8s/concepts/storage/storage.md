@@ -73,7 +73,7 @@ When using [dynamic provisioning](../../reference/pvs-and-pvcs#1_provisioning_6b
 
 There are preconfigured storage classes that use Cinder CSI for block storage.
 
-The classes provide different types of storage in [multiple regions](../../../../tools-for-using-services/account/concepts/regions/) and availability zones.
+The classes provide different types of storage in [multiple regions](../../../../tools-for-using-services/account/concepts/regions) and availability zones.
 Each storage class has a distinct reclaim policy confugured for it.
 
 <tabs>
@@ -107,6 +107,6 @@ All storage classes listed:
 
 ## See also
 
-- [Container service overview](../about/).
-- [Container service architecture](../architecture/).
-- [Network in a cluster](../network/).
+- [Container service overview](../about).
+- [Container service architecture](../architecture).
+- [Network in a cluster](../network).

@@ -21,7 +21,7 @@
 
 ## Использование Grafana
 
-1. [Убедитесь](../service-management/addons/manage-addons#prosmotr_addonov), что аддон мониторинга (`kube-prometheus-stack`) [установлен](../service-management/addons/advanced-installation/install-advanced-monitoring/) в кластере.
+1. [Убедитесь](../service-management/addons/manage-addons#prosmotr_addonov), что аддон мониторинга (`kube-prometheus-stack`) [установлен](../service-management/addons/advanced-installation/install-advanced-monitoring) в кластере.
 
 1. [Убедитесь](../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
 
@@ -56,7 +56,7 @@
 
       Появится страница входа в Grafana.
 
-1. Выполните вход в Grafana. В зависимости от того, с какими параметрами был [установлен](../service-management/addons/advanced-installation/install-advanced-monitoring/) аддон, используйте:
+1. Выполните вход в Grafana. В зависимости от того, с какими параметрами был [установлен](../service-management/addons/advanced-installation/install-advanced-monitoring) аддон, используйте:
 
    - Логин `admin` и временный пароль. Пароль необходимо будет сменить после первого входа.
    - Логин `admin` и постоянный пароль из секрета Kubernetes.

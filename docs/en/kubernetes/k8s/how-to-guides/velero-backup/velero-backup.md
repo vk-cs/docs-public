@@ -10,7 +10,7 @@ With [Velero](https://velero.io/docs/main/) you can back up and restore cluster 
 
 1. Make sure that you can [connect to the cluster](../../connect/kubectl) with `kubectl`.
 1. Make sure that [Velero is installed and configured](../../install-tools/velero).
-1. [Install](/en/tools-for-using-services/cli/openstack-cli/) OpenStack CLI if it is not already installed. Make sure you can [authorize](/en/tools-for-using-services/cli/openstack-cli/) in the cloud using it.
+1. [Install](/en/tools-for-using-services/cli/openstack-cli) OpenStack CLI if it is not already installed. Make sure you can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the cloud using it.
 
 ## 1. Deploy application
 

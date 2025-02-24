@@ -2,7 +2,7 @@
 
 <info>
 
-Для работы с CDN по HTTP/2 [настройте SSL-сертификаты](../../service-management/manage-certificates/) для CDN-ресурса, так как при работе по HTTP/2 браузер выполняет запросы по HTTPS.
+Для работы с CDN по HTTP/2 [настройте SSL-сертификаты](../../service-management/manage-certificates) для CDN-ресурса, так как при работе по HTTP/2 браузер выполняет запросы по HTTPS.
 
 </info>
 
