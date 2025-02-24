@@ -81,21 +81,21 @@ The following is a list of quotas and limits for the Moscow region.
 | Number of instances in the project
 | **Virtual machines**
 | `instances`
-| 6 pcs.
+| 15 pcs.
 | 1000 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of vCPUs in the project
 | **vCPU**
 | `cores`
-| 9 pcs.
+| 48 pcs.
 | not limited
 |![](/en/assets/no.svg "inline")
 
 | Total amount of RAM in the project
 | **RAM**
 | `ram`
-| 10240 MB
+| 73728 MB
 | not limited
 |![](/en/assets/no.svg "inline")
 
@@ -181,7 +181,6 @@ There are no quotas for the Cloud Containers service. The use of this service is
 |![](/en/assets/no.svg "inline")
 |===
 
-
 Non-rigid limits can be exceeded without contacting technical support. Recommendations for these and other parameters in [official Kubernetes documentation](https://kubernetes.io/docs/setup/best-practices/cluster-large/). The limit on the number of nodes in a node group is not due to the requirements of Kubernetes, the limit is introduced at the VK Cloud level.
 
 ### {heading(Disks and images)[id=images-volumes]}
@@ -199,19 +198,19 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | The total volume of disks in the project
 | **Disk size**
 | `gigabytes`
-| 200 GB
+| 600 GB
 | not limited
 
 | Total volume of High-IOPS SSD disks
 | **High-IOPS SSD size**
 | `gigabytes_high-iops`
-| 200 GB
+| 600 GB
 | not limited
 
 | Total volume of High-IOPS HA SSD disks
 | **High-IOPS HA SSD size**
 | `gigabytes_high-iops-ha`
-| 200 GB
+| 600 GB
 | not limited
 
 | Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#az) GZ1 (legacy)
@@ -242,31 +241,31 @@ Quotas for the total volume of disks in the project take into account all types 
 | Number of disks in the project
 | **Disks**
 | `volumes`
-| 10 pcs.
+| 60 pcs.
 | not limited
 
 | Number of High-IOPS SSD disks in the project
 | **High-IOPS SSD**
 | `volumes_high-iops`
-| 10 pcs.
+| 60 pcs.
 | not limited
 
 | Number of High-IOPS HA SSD disks in the project
 | **High-IOPS HA SSD**
 | `volumes_high-iops-ha`
-| 10 pcs.
+| 60 pcs.
 | not limited
 
 | Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#az) GZ1 (legacy)
 | **High-IOPS SSD volumes in - (DP1) area**
 | `volumes_dp1-high-iops`
-| 10 pcs.
+| 32 pcs.
 | not limited
 
 | Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#az) MS1 (legacy)
 | **High-IOPS SSD volumes in Moscow (MS1) (MS1) area**
 | `volumes_ko1-high-iops`
-| 10 pcs.
+| 32 pcs.
 | not limited
 
 |===
@@ -340,19 +339,19 @@ The limit on the number of disks snapshots (200 pcs.) can be exceeded by contact
 
 | Number of file storages in the project
 | **NFS/CIFS file storage**
-| 10 pcs.
+| 15 pcs.
 | not limited
 | ![](/en/assets/no.svg "inline")
 
 | The total volume of all file storages in the project
 | **Size of NFS/CIFS file shares**
-| 200 GB
+| 500 GB
 | not limited
 | ![](/en/assets/no.svg "inline")
 
 | The total volume of snapshots of file storages in the project
 | **NFS/CIFS snapshot size**
-| 200 GB
+| 500 GB
 | not limited
 | ![](/en/assets/no.svg "inline")
 
@@ -396,22 +395,22 @@ The limits in this section are determined by the requirements of operation, they
 
 | Number of networks in the project
 | **Sprut networks**
-| `networks`
-| 10 pcs.
-| 20 pcs
+| `network`
+| 50 pcs.
+| 50 pcs
 | ![](/en/assets/no.svg "inline")
 
 | Number of subnets in the project
 | **Sprut subnets**
-| `subnets`
-| 10 pcs.
-| 20 pcs
+| `subnet`
+| 50 pcs.
+| 50 pcs
 | ![](/en/assets/no.svg "inline")
 
 | Number of floating IP addresses
 | **Sprut floating IP addresses**
-| `floating-ips`
-| 6 pcs.
+| `floatingip`
+| 12 pcs.
 | 50 pcs.
 | ![](/en/assets/no.svg "inline")
 
@@ -431,21 +430,21 @@ The limits in this section are determined by the requirements of operation, they
 
 | Number of networks in the project
 | **Neutron networks**
-| `networks`
-| 10 pcs.
+| `network`
+| 15 pcs.
 | 20 pcs
 | ![](/en/assets/no.svg "inline")
 
 | Number of subnets in the project
 | **Neutron subnets**
-| `subnets`
-| 10 pcs.
+| `subnet`
+| 15 pcs.
 | 20 pcs
 | ![](/en/assets/no.svg "inline")
 
 | Number of floating IP addresses
 | **Neutron floating IP addresses**
-| `floating-ips`
+| `floatingip`
 | 6 pcs.
 | 50 pcs.
 | ![](/en/assets/no.svg "inline")
@@ -478,7 +477,7 @@ Even if the quota for the total number of subnets in the project has been increa
 
 | Number of routers
 | **Sprut routers**
-| `routers`
+| `router`
 | 12 pcs.
 | 20 pcs.
 | ![](/en/assets/no.svg "inline")
@@ -492,30 +491,37 @@ Even if the quota for the total number of subnets in the project has been increa
 
 | Number of security groups in the project
 | **Sprut firewall groups**
-| `secgroups`
-| 12 pcs.
+| `security_group`
+| 50 pcs.
 | not limited
 | ![](/en/assets/no.svg "inline")
 
 | Number of security rules in the project
 | **Sprut firewall rules**
-| `secgroup-rules`
-| 200 pcs.
+| `security_group_rule`
+| 500 pcs.
 | not limited
 | ![](/en/assets/no.svg "inline")
 
 | Number of ports in the project
 | **Sprut ports**
-| `ports`
-| 120 pcs.
+| `port`
+| 500 pcs.
 | 500 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of external Neutron or Sprut ports in the project
 | **Sprut external network ports**
 | `external_port`
-| 5 pcs.
-| 6 pcs.
+| 12 pcs.
+| 12 pcs.
+| ![](/en/assets/no.svg "inline")
+
+| Number of Anycast IP addresses
+| **—**
+| `anycastip`
+| 5 pcs.
+| 50 pcs.
 | ![](/en/assets/no.svg "inline")
 
 |===
@@ -534,36 +540,43 @@ Even if the quota for the total number of subnets in the project has been increa
 
 | Number of routers
 | **Neutron routers**
-| `routers`
+| `router`
 | 12 pcs.
 | 20 pcs.
 | ![](/en/assets/no.svg "inline")
 
+| Number of advanced routers
+| **Neutron routers**
+| `dc_router`
+| 3 шт.
+| 3 шт.
+| ![](/en/assets/no.svg "inline")
+
 | Number of security groups in the project
 | **Neutron firewall groups**
-| `secgroups`
-| 12 pcs.
+| `security_group`
+| 24 pcs.
 | not limited
 | ![](/en/assets/no.svg "inline")
 
 | Number of security rules in the project
 | **Neutron firewall rules**
-| `secgroup-rules`
+| `ecurity_group_rule`
 | 200 pcs.
 | not limited
 | ![](/en/assets/no.svg "inline")
 
 | Number of ports in the project
 | **Neutron ports**
-| `ports`
-| 120 pcs.
+| `port`
+| 3000 pcs.
 | 500 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of external Neutron or Sprut ports in the project
 | **Neutron external network ports**
 | `external_port`
-| 5 pcs.
+| 6 pcs.
 | 6 pcs.
 | ![](/en/assets/no.svg "inline")
 
@@ -608,8 +621,8 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 
 | Parameter                                     | Quota in CLI | Basic quota  | Limit | Hard |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
-| Number of backups                             | `backups`| ![](/en/assets/no.svg "inline") | not limited | ![](/en/assets/no.svg "inline") |
-| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshots` in the extended list | 200 pcs. | not limited | ![](/en/assets/no.svg "inline") |
+| Number of backups                             | `backup`| ![](/en/assets/no.svg "inline") | not limited | ![](/en/assets/no.svg "inline") |
+| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshot` in the extended list | 600 pcs. | not limited | ![](/en/assets/no.svg "inline") |
 | Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
 | Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 
