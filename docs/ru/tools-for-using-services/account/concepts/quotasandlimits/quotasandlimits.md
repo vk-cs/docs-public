@@ -13,8 +13,8 @@
 
 Квоты можно [посмотреть](../../service-management/project-settings/manage#prosmotr_kvot_proekta):
 
-* краткий список — [в личном кабинете](../../service-management/project-settings/manage#prosmotr_kvot_proekta),
-* расширенный список — через OpenStack CLI.
+- краткий список — [в личном кабинете](../../service-management/project-settings/manage#prosmotr_kvot_proekta);
+- расширенный список — через OpenStack CLI.
 
 Есть неявные квоты, которые нельзя увидеть ни одним из способов, они проявляются в виде сообщений об ошибке при попытке создать новый объект. Пример неявной квоты — [квота на количество проектов](#obshchie_d4f726f4), которые может создать один пользователь.
 
@@ -82,21 +82,21 @@
 | Количество инстансов в проекте
 | **Виртуальные машины**
 |`instances`
-| 6 шт.
+| 15 шт.
 | 1000 шт.
 | ![](/ru/assets/no.svg "inline") 
 
 | Количество vCPU в проекте
 | **vCPU**
 | `cores`
-| 9 шт.
+| 48 шт.
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Общий объем оперативной памяти в проекте
 | **RAM**
 | `ram`
-| 10240 МБ
+| 73728 МБ
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
@@ -198,19 +198,19 @@
 | Общий объем дисков в проекте
 | **Размер дисков**
 | `gigabytes`
-| 200 ГБ
+| 600 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS SSD
 | **Размер High-IOPS SSD**
 | `gigabytes_high-iops`
-| 200 ГБ
+| 600 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS HA SSD
 | **Размер High-IOPS HA SSD**
 | `gigabytes_high-iops-ha`
-| 200 ГБ
+| 600 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) GZ1 (legacy)
@@ -242,31 +242,31 @@
 | Количество дисков в проекте
 | **Диски**
 | `volumes`
-| 10 шт.
+| 60 шт.
 | не ограничено
 
 | Количество дисков High-IOPS SSD в проекте
 | **Диски High-IOPS SSD**
 | `volumes_high-iops`
-| 10 шт.
+| 60 шт.
 | не ограничено
 
 | Количество дисков High-IOPS HA SSD в проекте
 | **Диски High-IOPS HA SSD**
 | `volumes_high-iops-ha`
-| 10 шт.
+| 60 шт.
 | не ограничено
 
 | Количество дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) GZ1 (legacy)
 | **Диски High-IOPS SSD в зоне - (DP1)**
 | `volumes_dp1-high-iops`
-| 10 шт.
+| 32 шт.
 | не ограничено
 
 | Количество дисков High-IOPS SSD в [зоне доступности](/ru/intro/start/concepts/architecture#az) MS1 (legacy)
 | **Диски High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `volumes_ko1-high-iops`
-| 10 шт.
+| 32 шт.
 | не ограничено
 
 |===
@@ -306,11 +306,11 @@
 |![](/ru/assets/no.svg "inline")
 
 |Размер одного образа
-|500 ГБ 
+|500 ГБ
 |![](/ru/assets/no.svg "inline")
 
 |Общий объем образов
-|2 ТБ 
+|2 ТБ
 |![](/ru/assets/no.svg "inline")
 
 |Общее количество снимков дисков
@@ -340,19 +340,19 @@
 
 | Количество файловых хранилищ в проекте
 | **Файловые хранилища NFS/CIFS**
-| 10 шт.
+| 15 шт.
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Общий объем всех файловых хранилищ в проекте
 | **Размер файловых хранилищ NFS/CIFS**
-| 200 ГБ
+| 500 ГБ
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Общий объем снимков файловых хранилищ в проекте
 | **Размер снимков файловых хранилищ NFS/CIFS**
-| 200 ГБ
+| 500 ГБ
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
@@ -363,10 +363,10 @@
 | ![](/ru/assets/no.svg "inline")
 
 | Размер одного файлового хранилища
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 | 50 ТБ
-| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
 
 |===
 
@@ -396,22 +396,22 @@
 
 | Количество сетей в проекте
 | **Сети Sprut**
-| `networks`
-| 10 шт.
-| 20 шт.
+| `network`
+| 50 шт.
+| 50 шт.
 | ![](/ru/assets/no.svg "inline")
 
 | Количество подсетей в проекте
 | **Подсети Sprut**
-| `subnets`
-| 10 шт.
-| 20 шт.
+| `subnet`
+| 50 шт.
+| 50 шт.
 | ![](/ru/assets/no.svg "inline")
 
 | Количество плавающих IP-адресов
-| **IP-адреса Sprut** 
-| `floating-ips`
-| 6 шт.
+| **IP-адреса Sprut**
+| `floatingip`
+| 12 шт.
 | 50 шт.
 | ![](/ru/assets/no.svg "inline")
 
@@ -431,21 +431,21 @@
 
 | Количество сетей в проекте
 | **Сети Neutron**
-| `networks`
-| 10 шт.
+| `network`
+| 15 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 | Количество подсетей в проекте
 | **Подсети Neutron**
-| `subnets`
-| 10 шт.
+| `subnet`
+| 15 шт.
 | 20 шт.
 | ![](/ru/assets/no.svg "inline")
 
 | Количество плавающих IP-адресов
 | **IP-адреса Neutron**
-| `floating-ips`
+| `floatingip`
 | 6 шт.
 | 50 шт.
 | ![](/ru/assets/no.svg "inline") 
@@ -478,7 +478,7 @@
 
 | Количество маршрутизаторов
 | **Маршрутизаторы Sprut**
-| `routers`
+| `router`
 | 12 шт.
 | 20 шт.
 | ![](/ru/assets/no.svg "inline")
@@ -492,31 +492,38 @@
 
 | Количество групп безопасности в проекте
 | **Группы безопасности Sprut**
-| `secgroups`
-| 12 шт.
+| `security_group`
+| 50 шт.
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Количество правил безопасности в проекте
 | **Правила безопасности Sprut**
-| `secgroup-rules`
-| 200 шт.
+| `security_group_rule`
+| 500 шт.
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Количество портов в проекте
 | **Порты Sprut**
-| `ports`
-| 120 шт.
+| `port`
 | 500 шт.
-| ![](/ru/assets/no.svg "inline") 
+| 500 шт.
+| ![](/ru/assets/no.svg "inline")
 
 | Количество портов с адресами во внешней сети в проекте
 | **Порты во внешней сети Sprut**
 | `external_port`
+| 12 шт.
+| 12 шт.
+| ![](/ru/assets/no.svg "inline")
+
+| Количество IP-адресов Anycast
+| **—**
+| `anycastip`
 | 5 шт.
-| 6 шт.
-| ![](/ru/assets/no.svg "inline") 
+| 50 шт.
+| ![](/ru/assets/no.svg "inline")
 
 |===
 
@@ -534,38 +541,45 @@
 
 | Количество маршрутизаторов
 | **Маршрутизаторы Neutron**
-| `routers`
+| `router`
 | 12 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
+
+| Количество продвинутых маршрутизаторов
+| **Маршрутизаторы Neutron**
+| `dc_router`
+| 3 шт.
+| 3 шт.
+| ![](/ru/assets/no.svg "inline")
 
 | Количество групп безопасности в проекте
 | **Группы безопасности Neutron**
-| `secgroups`
-| 12 шт.
+| `security_group`
+| 24 шт.
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Количество правил безопасности в проекте
 | **Правила безопасности Neutron**
-| `secgroup-rules`
+| `security_group_rule`
 | 200 шт.
 | не ограничено
 | ![](/ru/assets/no.svg "inline")
 
 | Количество портов в проекте
 | **Порты Neutron**
-| `ports`
-| 120 шт.
+| `port`
+| 300 шт.
 | 500 шт.
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 | Количество портов Neutron с адресами во внешней сети в проекте
 | **Порты во внешней сети Neutron**
 | `external_port`
-| 5 шт.
 | 6 шт.
-| ![](/ru/assets/no.svg "inline") 
+| 6 шт.
+| ![](/ru/assets/no.svg "inline")
 
 |===
 
@@ -586,14 +600,14 @@
 | `load_balancers`
 | 12 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 | Количество правил балансировки на один балансировщик
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | 10 шт. через ЛК, 30 шт. через CLI
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 |===
 
@@ -608,8 +622,8 @@
 
 | Параметр                                      | Квота из CLI | Базовая квота  | Лимит | Жесткий |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
-| Количество резервных копий                    | `backups` | ![](/ru/assets/no.svg "inline") | не ограничено | ![](/ru/assets/no.svg "inline") |
-| Количество снимков                            | `snapshots` | 200 шт. | не ограничено | ![](/ru/assets/no.svg "inline") |
+| Количество резервных копий                    | `backup` | ![](/ru/assets/no.svg "inline") | не ограничено | ![](/ru/assets/no.svg "inline") |
+| Количество снимков                            | `snapshot` | 600 шт. | не ограничено | ![](/ru/assets/no.svg "inline") |
 | Размер одной резервной копии                  | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 320 ТБ        | ![](/ru/assets/no.svg "inline") |
 | Общий объем образов                           | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 2 ТБ          | ![](/ru/assets/no.svg "inline") |
 
@@ -654,7 +668,7 @@
 | Рейт-лимит: обычные запросы
 | 1000 запросов/с
 | не ограничено, максимальное известное значение среди всех проектов: 9000 запросов/с
-| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
 
 | Рейт-лимит: запросы на листинг
 | 250 запросов/с
