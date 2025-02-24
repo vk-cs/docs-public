@@ -45,13 +45,13 @@
 
 </info>
 
-Подробнее в разделе [Доступные версии Kubernetes и политика поддержки версий](../versions/).
+Подробнее в разделе [Доступные версии Kubernetes и политика поддержки версий](../versions).
 
 ## Интеграция с Kubernetes API
 
 Все взаимодействие с кластером происходит через [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 
-API-эндпоинт кластеров Cloud Containers размещен за [отдельным балансировщиком нагрузки](../network/), поэтому доступ к API кластера можно получить по одному и тому же IP-адресу вне зависимости от количества master-узлов.
+API-эндпоинт кластеров Cloud Containers размещен за [отдельным балансировщиком нагрузки](../network), поэтому доступ к API кластера можно получить по одному и тому же IP-адресу вне зависимости от количества master-узлов.
 
 ## Интеграция с платформой VK Cloud
 
@@ -62,7 +62,7 @@ API-эндпоинт кластеров Cloud Containers размещен за [
   Позволяет использовать в кластерах хранилище VK Cloud в виде постоянных томов ([persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)).
   Доступно использование Persistent Volume Claim (PVC).
 
-  Интеграция достигается с помощью OpenStack Cinder API. Подробнее в разделе [Хранилище в кластере](../storage/).
+  Интеграция достигается с помощью OpenStack Cinder API. Подробнее в разделе [Хранилище в кластере](../storage).
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI) — интеграция с сетевыми сервисами.
 
@@ -71,7 +71,7 @@ API-эндпоинт кластеров Cloud Containers размещен за [
   - сетевую связность между контейнерами, [подами](../../reference/pods) и узлами кластера;
   - применение и соблюдение [сетевых политик](https://kubernetes.io/docs/concepts/services-networking/network-policies/) (Network Policies) Kubernetes.
 
-  Calico интегрируется с платформой VK Cloud с помощью OpenStack Neutron API. Подробнее в разделе [Сеть в кластере](../network/).
+  Calico интегрируется с платформой VK Cloud с помощью OpenStack Neutron API. Подробнее в разделе [Сеть в кластере](../network).
 
 ## Встроенная поддержка Open Policy Agent
 

@@ -74,7 +74,7 @@ In your management console, you can use preset security groups with the followin
 |Any incoming traffic from any IP addresses is allowed
 |===
 
-To use a preset security group, [create a VM](/en/computing/iaas/service-management/vm/vm-create/) with this group. After that, the group will appear in the project and will be available even after the VM is deleted.
+To use a preset security group, [create a VM](/en/computing/iaas/service-management/vm/vm-create) with this group. After that, the group will appear in the project and will be available even after the VM is deleted.
 
 Preset security groups that can be assigned to VMs depend on the OS image:
 

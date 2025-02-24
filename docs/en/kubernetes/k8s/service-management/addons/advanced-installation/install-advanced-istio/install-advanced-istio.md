@@ -97,7 +97,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. If necessary, [install](../install-advanced-kiali/) the `kiali` add-on in addition.
+1. If necessary, [install](../install-advanced-kiali) the `kiali` add-on in addition.
 
 </tabpanel>
 <tabpanel>
@@ -199,7 +199,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. If necessary, [install](../install-advanced-kiali/) the `kiali` add-on in addition.
+1. If necessary, [install](../install-advanced-kiali) the `kiali` add-on in addition.
 
 </tabpanel>
 <tabpanel>
@@ -245,7 +245,7 @@ If this does not suit you, perform a **standard installation** or **installation
    </tabpanel>
    </tabs>
 
-1. If necessary, [install](../install-advanced-kiali/) the `kiali` add-on in addition.
+1. If necessary, [install](../install-advanced-kiali) the `kiali` add-on in addition.
 
 </tabpanel>
 </tabs>

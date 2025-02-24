@@ -4,7 +4,7 @@ After going through all the steps of the quickstart, you will:
 
 1. Create a small Kubernetes cluster.
 1. Learn how to connect to it.
-1. Become familiar with Kubernetes and [addons for it](../concepts/addons-and-settings/addons/):
+1. Become familiar with Kubernetes and [addons for it](../concepts/addons-and-settings/addons):
    1. Connect management and monitoring tools.
    1. Load the Docker images into the Docker registry.
    1. Deploy simple applications based on the downloaded images, with the ability to use Cloud Storage.
@@ -93,11 +93,11 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    Write down the data for accessing the Docker registry.
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-monitoring/) the `kube-prometheus-stack` add-on.
+1. [Install](../service-management/addons/advanced-installation/install-advanced-monitoring) the `kube-prometheus-stack` add-on.
 
    Write down the password to access the Grafana web interface.
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-ingress/) the `ingress-nginx` add-on with default parameters.
+1. [Install](../service-management/addons/advanced-installation/install-advanced-ingress) the `ingress-nginx` add-on with default parameters.
 
    Write down the floating IP address for the load balancer.
 
@@ -127,7 +127,7 @@ Install the following tools on the host:
 
   For example, for cluster version 1.23.6, `kubectl` versions 1.22, 1.23 and 1.24 are suitable.
 
-  See [Connecting to a cluster with kubectl](../connect/kubectl/) for details.
+  See [Connecting to a cluster with kubectl](../connect/kubectl) for details.
 
   </warn>
 
@@ -204,7 +204,7 @@ Install the following tools on the host:
 
 ## 2. Get access to cluster monitoring tools
 
-An add-on with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
+An add-on with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
 
 <tabs>
 <tablist>
@@ -258,7 +258,7 @@ The browser will be opened and you will be redirected to the Kubernetes Dashboar
 
 ## 3. Upload the necessary images to the Docker registry
 
-The [Docker Registry add-on](../connect/docker-registry/) was installed in the cluster which will store the Docker images.
+The [Docker Registry add-on](../connect/docker-registry) was installed in the cluster which will store the Docker images.
 
 <info>
 
@@ -795,6 +795,6 @@ A running cluster consumes computing resources. If you no longer need it:
 
 ## What's next?
 
-- [Get to know the usage scenarios](../how-to-guides/) of the cluster.
-- [Get to know the concepts](../concepts/) of the container service.
+- [Get to know the usage scenarios](../how-to-guides) of the cluster.
+- [Get to know the concepts](../concepts) of the container service.
 - [Get to know the detailed instructions](../connect) on how to connect to the cluster.

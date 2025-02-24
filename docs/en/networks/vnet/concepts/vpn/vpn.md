@@ -31,6 +31,6 @@ The VPN service is based on [StrongSwan](https://www.strongswan.org) and allows 
 
 Read more about setting VPN:
 
-- [Managing VPN tunnels in SDN Sprut and SDN Neutron](../../service-management/vpn/).
-- [Example of creaing VPN tunnel in SDN Sprut](../../how-to-guides/advanced-router/).
-- [Example of creaing VPN tunnel in SDN Neutron](../../how-to-guides/vpn-tunnel/).
+- [Managing VPN tunnels in SDN Sprut and SDN Neutron](../../service-management/vpn).
+- [Example of creaing VPN tunnel in SDN Sprut](../../how-to-guides/advanced-router).
+- [Example of creaing VPN tunnel in SDN Neutron](../../how-to-guides/vpn-tunnel).

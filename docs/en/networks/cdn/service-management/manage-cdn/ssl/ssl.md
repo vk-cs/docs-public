@@ -18,7 +18,7 @@ Here is the article about applying SSL sertificates. To know how to create, edit
 
     - **Do not use** — a certificate will not be used: personal domains can only be accessed via HTTP.
     - **(By default) Let's Encrypt** — a free [Let's Encrypt](https://letsencrypt.org) certificate will be used. The certificate will be created after the CDN resource is established, once the origin servers are available and DNS changes involving the CNAME records for personal domains have propagated. This usually takes up to 30 minutes. Choosing this option also requires enabling the [**Access to content by end users**](../enable-cdn) option.
-    - **User's certificate** —  a certificate selected from the list will be used. To make the certificate available for selection, add it to the [certificate store](../../manage-certificates/).
+    - **User's certificate** —  a certificate selected from the list will be used. To make the certificate available for selection, add it to the [certificate store](../../manage-certificates).
 1. Click **Save changes**.
 
 </tabpanel>

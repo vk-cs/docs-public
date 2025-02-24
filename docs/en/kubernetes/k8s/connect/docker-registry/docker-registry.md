@@ -1,6 +1,6 @@
 You can connect to the Docker registry if the appropriate [add-on](../../concepts/addons-and-settings/addons) is installed in the cluster.
 
-When [installing](../../service-management/addons/advanced-installation/install-advanced-registry/) an add-on, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
+When [installing](../../service-management/addons/advanced-installation/install-advanced-registry) an add-on, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
 
 ## Preparatory steps
 

@@ -31,6 +31,6 @@ VPN позволяет организовать туннель между одн
 
 Подробнее о настройке VPN:
 
-- [Управление VPN-туннелями в SDN Sprut и SDN Neutron](../../service-management/vpn/).
-- [Пример создания VPN-туннеля в SDN Sprut](../../how-to-guides/advanced-router/).
-- [Пример создания VPN-туннеля в SDN Neutron](../../how-to-guides/vpn-tunnel/).
+- [Управление VPN-туннелями в SDN Sprut и SDN Neutron](../../service-management/vpn).
+- [Пример создания VPN-туннеля в SDN Sprut](../../how-to-guides/advanced-router).
+- [Пример создания VPN-туннеля в SDN Neutron](../../how-to-guides/vpn-tunnel).

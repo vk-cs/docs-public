@@ -4,7 +4,7 @@
 
 1. Создадите небольшой кластер Kubernetes.
 1. Научитесь подключаться к нему.
-1. Познакомитесь с Kubernetes и [аддонами для него](../concepts/addons-and-settings/addons/):
+1. Познакомитесь с Kubernetes и [аддонами для него](../concepts/addons-and-settings/addons):
    1. Подключите инструменты для управления и мониторинга.
    1. Загрузите Docker-образы в реестр Docker.
    1. Развернете простые приложения на основе загруженных образов, с возможностью использовать хранилище Cloud Storage.
@@ -93,11 +93,11 @@
 
    Запишите данные для доступа к реестру Docker.
 
-1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-monitoring/) `kube-prometheus-stack`.
+1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-monitoring) `kube-prometheus-stack`.
 
    Запишите пароль для доступа к веб-интерфейсу Grafana.
 
-1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-ingress/) `ingress-nginx` с параметрами по умолчанию.
+1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-ingress) `ingress-nginx` с параметрами по умолчанию.
 
    Запишите плавающий IP-адрес для балансировщика нагрузки.
 
@@ -127,7 +127,7 @@
 
   Например, для кластера версии 1.23.6 подходит `kubectl` версий 1.22, 1.23 и 1.24.
 
-  Подробнее в разделе [Подключение к кластеру с помощью kubectl](../connect/kubectl/).
+  Подробнее в разделе [Подключение к кластеру с помощью kubectl](../connect/kubectl).
 
   </warn>
 
@@ -204,7 +204,7 @@
 
 ## 2. Получите доступ к средствам мониторинга кластера
 
-В кластере был установлен аддон со [средствами мониторинга](../monitoring) на базе Prometheus и Grafana. Также для всех кластеров Cloud Containers доступен [Kubernetes Dashboard](../connect/k8s-dashboard/), который позволяет не только управлять кластером, но и осуществлять его мониторинг.
+В кластере был установлен аддон со [средствами мониторинга](../monitoring) на базе Prometheus и Grafana. Также для всех кластеров Cloud Containers доступен [Kubernetes Dashboard](../connect/k8s-dashboard), который позволяет не только управлять кластером, но и осуществлять его мониторинг.
 
 <tabs>
 <tablist>
@@ -258,7 +258,7 @@
 
 ## 3. Загрузите нужные образы в реестр Docker
 
-В кластере был установлен аддон [реестра Docker](../connect/docker-registry/), в котором будут храниться Docker-образы.
+В кластере был установлен аддон [реестра Docker](../connect/docker-registry), в котором будут храниться Docker-образы.
 
 <info>
 
@@ -795,6 +795,6 @@ K8S Persistent Volume status: present
 
 ## Что дальше?
 
-- [Познакомьтесь со сценариями использования](../how-to-guides/) кластера.
-- [Познакомьтесь с концепциями](../concepts/) сервиса Cloud Containers.
+- [Познакомьтесь со сценариями использования](../how-to-guides) кластера.
+- [Познакомьтесь с концепциями](../concepts) сервиса Cloud Containers.
 - [Познакомьтесь с подробными инструкциями](../connect) по подключению к кластеру.

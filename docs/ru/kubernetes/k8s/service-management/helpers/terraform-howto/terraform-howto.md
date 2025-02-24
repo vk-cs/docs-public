@@ -1,7 +1,7 @@
 ## Как начать пользоваться Terraform
 
 1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
-1. [Создайте](../../create-cluster/create-terraform/) новый кластер с одной или несколькими группами worker-узлов.
+1. [Создайте](../../create-cluster/create-terraform) новый кластер с одной или несколькими группами worker-узлов.
 1. Управляйте созданными ресурсами с помощью Terraform.
 
 Подробная информация о работе с сервисом Cloud Containers приведена в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
