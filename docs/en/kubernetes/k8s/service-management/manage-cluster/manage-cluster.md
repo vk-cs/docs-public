@@ -89,7 +89,7 @@ Available props:
 - `kubectl` configuration file;
 - Kubernetes Dashboard secret (it can only be obtained when the cluster is running).
 
-The operations to get these props are described in detail in [Connecting](../../connect/) section.
+The operations to get these props are described in detail in [Connecting](../../connect) section.
 
 ## Invalidate cluster key pair
 
@@ -125,7 +125,7 @@ After performing this operation, the existing public keys on the cluster will be
 
 ## Change virtual machine type for master nodes
 
-This operation is described in detail in [Cluster node scaling](../scale/).
+This operation is described in detail in [Cluster node scaling](../scale).
 
 The operation can be performed only when the cluster is running.
 

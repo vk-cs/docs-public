@@ -397,7 +397,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 </tablist>
 <tabpanel>
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный CDN-ресурс.
 1. Перейдите в раздел **CDN → CDN-ресурсы**.
 1. Выберите персональный домен в списке.

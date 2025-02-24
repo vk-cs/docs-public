@@ -24,7 +24,7 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
   Not all add-ons support all three installation options.
 
-  The installation process is described in the section [Configuring and installing add-ons](../../../service-management/addons/advanced-installation/).
+  The installation process is described in the section [Configuring and installing add-ons](../../../service-management/addons/advanced-installation).
 
 ## {heading(Available add-ons)[id=available_addons]}
 
@@ -122,7 +122,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 [Docker Registry](https://docs.docker.com/registry/) is designed to host and store Docker images. It works in a high availability (HA) configuration. Registry images can be used when deploying services in a cluster.
 
-See [Connecting to the Docker registry](../../../connect/docker-registry/) for details.
+See [Connecting to the Docker registry](../../../connect/docker-registry) for details.
 
 </tabpanel>
 <tabpanel>
@@ -199,7 +199,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 If you have a controller, it is sufficient to create [Ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/) to make such services available from outside the Cloud Containers cluster.
 
-The pre-installed Ingress controller integrates tightly with the VK Cloud platform. For more information, see [Network in cluster](../../network/).
+The pre-installed Ingress controller integrates tightly with the VK Cloud platform. For more information, see [Network in cluster](../../network).
 
 </tabpanel>
 <tabpanel>

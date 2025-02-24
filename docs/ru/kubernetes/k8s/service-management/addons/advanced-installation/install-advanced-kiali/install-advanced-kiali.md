@@ -1,6 +1,6 @@
 ## Подготовительные шаги
 
-[Установите аддон](../install-advanced-istio/) `istio`.
+[Установите аддон](../install-advanced-istio) `istio`.
 
 ## Установка аддона
 

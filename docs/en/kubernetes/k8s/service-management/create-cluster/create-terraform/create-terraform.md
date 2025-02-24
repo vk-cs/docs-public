@@ -1,10 +1,10 @@
-Description of how to create a cluster using Terraform is provided below. It is also possible to create a cluster [via VK Cloud management console](../create-webui/).
+Description of how to create a cluster using Terraform is provided below. It is also possible to create a cluster [via VK Cloud management console](../create-webui).
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 
 <warn>
 
-When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
+When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](../../../concepts/addons-and-settings/addons) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
@@ -12,15 +12,15 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 ## Before creating cluster
 
-1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits/) for the [region](/en/tools-for-using-services/account/concepts/regions/) in which you plan to create the cluster. Different quotas may be configured for different regions.
+1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create the cluster. Different quotas may be configured for different regions.
 
    If you want to increase the quotas, write to [technical support](mailto:support@mcs.mail.ru).
 
-1. Read about [Terraform features](../../helpers/terraform-howto/) in the container service.
+1. Read about [Terraform features](../../helpers/terraform-howto) in the container service.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-1. [Install the OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli/) and [authorize](/en/tools-for-using-services/cli/openstack-cli/), if not already done.
+1. [Install the OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli) and [authorize](/en/tools-for-using-services/cli/openstack-cli), if not already done.
 
 1. Create a Terraform configuration file.
 
@@ -120,7 +120,7 @@ Here:
   - `standard` (default) — all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). Fault tolerance is provided at the zone level.
   - `regional` — cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
 
-- `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](../../../concepts/architecture/) section.
+- `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](../../../concepts/architecture) section.
 - `cluster_node_volume_type` — the volume type for [storage](../../../concepts/storage#storage_types) that will be used by nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
 - `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `GZ1`.
 - `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "GZ1"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones will be set up automatically.
@@ -223,7 +223,7 @@ You can use Terraform to create a cluster of master nodes only, and add worker n
 
 </info>
 
-This operation is described in detail in [Worker node group management](../../manage-node-group/).
+This operation is described in detail in [Worker node group management](../../manage-node-group).
 
 ## 4. Run the cluster creation procedure
 
@@ -249,6 +249,6 @@ This operation is described in detail in [Worker node group management](../../ma
 
 ## What's next?
 
-- [Set up the environment](../../../connect/) on the host from which you plan to connect to the cluster.
-- [Familiarize yourself with the usage scenarios](../../../how-to-guides/) of the cluster.
-- [Familiarize yourself with the concepts](../../../concepts/) of the container service.
+- [Set up the environment](../../../connect) on the host from which you plan to connect to the cluster.
+- [Familiarize yourself with the usage scenarios](../../../how-to-guides) of the cluster.
+- [Familiarize yourself with the concepts](../../../concepts) of the container service.

@@ -1,10 +1,10 @@
-Далее описывается создание кластера с помощью Terraform. Также возможно создать кластер [с помощью личного кабинета VK Cloud](../create-webui/).
+Далее описывается создание кластера с помощью Terraform. Также возможно создать кластер [с помощью личного кабинета VK Cloud](../create-webui).
 
 Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](/ru/tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 
 <warn>
 
-При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
+При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 
@@ -12,15 +12,15 @@
 
 ## Перед созданием кластера
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits/) для [региона](/ru/tools-for-using-services/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, напишите в [техническую поддержку](/ru/contacts).
 
-1. Ознакомьтесь с [особенностями использования Terraform](../../helpers/terraform-howto/) в сервисе Cloud Containers.
+1. Ознакомьтесь с [особенностями использования Terraform](../../helpers/terraform-howto) в сервисе Cloud Containers.
 
 1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-1. [Установите OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli/) и [пройдите авторизацию](/ru/tools-for-using-services/cli/openstack-cli/), если этого еще не сделано.
+1. [Установите OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli) и [пройдите авторизацию](/ru/tools-for-using-services/cli/openstack-cli), если этого еще не сделано.
 
 1. Создайте конфигурационный файл Terraform.
 
@@ -120,7 +120,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   - `standart` (по умолчанию) — все master-узлы кластера будут располагаться в одной [зоне доступности](/ru/intro/start/concepts/architecture#az). Отказоустойчивость обеспечиваетcя на уровне зоны.
   - `regional` — master-узлы кластера будут располагаться в каждой из трех зон доступности, что позволяет сохранить управление даже при отказе одной из зон. Общее количество master-узлов — 3 или более.
 
-- `master_count` — количество master-узлов. Должно быть нечетным числом. Для стандартного кластера количество master-узлов должно быть `1`, `3` или `5`. Для регионального — `3` или `5`. Подробнее в разделе [Архитектура сервиса](../../../concepts/architecture/).
+- `master_count` — количество master-узлов. Должно быть нечетным числом. Для стандартного кластера количество master-узлов должно быть `1`, `3` или `5`. Для регионального — `3` или `5`. Подробнее в разделе [Архитектура сервиса](../../../concepts/architecture).
 - `cluster_node_volume_type` — тип диска для [хранения данных](../../../concepts/storage#podderzhivaemye_tipy_hranilishch_vk_cloud), который будет использоваться узлами. Выбранный тип диска влияет на производительность кластера. Доступные значения: `ceph-ssd` (по умолчанию) и `high-iops`.
 - `availability_zone` — зона доступности кластера. Используйте параметр, если тип кластера — стандартный. Для региона `Москва` укажите одну из трех зон доступности: `ME1`, `MS1` или `GZ1`.
 - `availability_zones` — зоны доступности кластера. Используйте параметр, если тип кластера — региональный. Для региона `Москва` укажите три зоны доступности: `["ME1", "MS1", "GZ1"]`. Если кластер региональный и параметр `availability_zones` не указан, зоны доступности будут подставлены автоматически.
@@ -225,7 +225,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 </info>
 
-Эта операция подробно описана в разделе [Управление группой worker-узлов](../../manage-node-group/).
+Эта операция подробно описана в разделе [Управление группой worker-узлов](../../manage-node-group).
 
 ## 4. Запустите процедуру создания кластера
 
@@ -251,6 +251,6 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 ## Что дальше?
 
-- [Настройте окружение](../../../connect/) на хосте, с которого планируется подключаться к кластеру.
-- [Познакомьтесь со сценариями использования](../../../how-to-guides/) кластера.
-- [Познакомьтесь с концепциями](../../../concepts/) сервиса Cloud Containers.
+- [Настройте окружение](../../../connect) на хосте, с которого планируется подключаться к кластеру.
+- [Познакомьтесь со сценариями использования](../../../how-to-guides) кластера.
+- [Познакомьтесь с концепциями](../../../concepts) сервиса Cloud Containers.

@@ -45,13 +45,13 @@ Before Kubernetes 1.19, Docker\\[Dockershim](https://kubernetes.io/blog/2022/05/
 
 </info>
 
-See [Available Kubernetes versions and version support policy](../versions/) for details.
+See [Available Kubernetes versions and version support policy](../versions) for details.
 
 ## Integration with the Kubernetes API
 
 All interaction with the cluster is through the [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 
-The Cloud Containers cluster API endpoint is placed behind [dedicated load balancer](../network/), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
+The Cloud Containers cluster API endpoint is placed behind [dedicated load balancer](../network), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
 
 ## Integration with VK Cloud platform
 
@@ -62,7 +62,7 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
   Allows to use Cloud storage in clusters as [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
   Persistent Volume Claim (PVC) is available.
 
-  Integration is achieved using OpenStack Cinder API. See [Storage in cluster](../storage/) for details.
+  Integration is achieved using OpenStack Cinder API. See [Storage in cluster](../storage) for details.
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI): integration with network services.
 
@@ -71,13 +71,13 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
   - network connectivity between containers, [pods](../../reference/pods), and cluster nodes;
   - application and enforcement of Kubernetes [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
 
-  Calico integrates with VK Cloud platform using OpenStack Neutron API. See [Network in cluster](../network/) for details.
+  Calico integrates with VK Cloud platform using OpenStack Neutron API. See [Network in cluster](../network) for details.
 
 ## Built-in support for the Open Policy Agent
 
 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) can access various information and components of a Kubernetes cluster. With certain settings, pods themselves and the Kubernetes cluster in which they run can be vulnerable to attacks.
 
-Since Kubernetes version 1.21, [Open Policy Agent Gatekeeper](../../reference/gatekeeper/) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
+Since Kubernetes version 1.21, [Open Policy Agent Gatekeeper](../../reference/gatekeeper) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
 These constraints are created based on constraint templates. Cloud Containers clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre_configured_gatekeeper_templates_and_constraints). You can create your own templates and constraints.
 

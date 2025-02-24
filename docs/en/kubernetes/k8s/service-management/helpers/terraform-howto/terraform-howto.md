@@ -1,7 +1,7 @@
 ## How to start using Terraform
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
-1. [Create](../../create-cluster/create-terraform/) a new cluster with one or more worker node groups.
+1. [Create](../../create-cluster/create-terraform) a new cluster with one or more worker node groups.
 1. Manage the created resources using Terraform.
 
 See the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) for more information on working with the container service.

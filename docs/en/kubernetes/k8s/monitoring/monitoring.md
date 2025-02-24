@@ -21,7 +21,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
 ## Using Grafana
 
-1. [Make sure](../service-management/addons/manage-addons#viewing_addons) that the monitoring add-on (`kube-prometheus-stack`) [is installed](../service-management/addons/advanced-installation/install-advanced-monitoring/) in a cluster.
+1. [Make sure](../service-management/addons/manage-addons#viewing_addons) that the monitoring add-on (`kube-prometheus-stack`) [is installed](../service-management/addons/advanced-installation/install-advanced-monitoring) in a cluster.
 1. [Make sure](../connect/kubectl#checking_connection_to_cluster) that you can connect to the cluster using `kubectl`.
 
 1. Access the Grafana web interface:
@@ -55,7 +55,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
       The Grafana authorization page will appear.
 
-1. Sign in to Grafana. Depending on the parameters with which the add-on was [installed](../service-management/addons/advanced-installation/install-advanced-monitoring/), use:
+1. Sign in to Grafana. Depending on the parameters with which the add-on was [installed](../service-management/addons/advanced-installation/install-advanced-monitoring), use:
 
    - Login `admin` and temporary password. The password will need to be changed after the first authorization.
    - Login `admin` and a permanent password from the Kubernetes secret.
