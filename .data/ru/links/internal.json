@@ -4183,8 +4183,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/concepts/traffic-limiting/traffic-limiting.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-create/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-create",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create",
     "hash": null
   },
   {
@@ -5287,14 +5287,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/balancing/concepts/load-balancer/load-balancer.md",
-    "dst": "/ru/kubernetes/k8s/",
-    "link": "http://localhost:3000/docs/ru/kubernetes/k8s/",
+    "dst": "/ru/kubernetes/k8s",
+    "link": "http://localhost:3000/docs/ru/kubernetes/k8s",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/balancing/concepts/load-balancer/load-balancer.md",
-    "dst": "/ru/dbs/dbaas/",
-    "link": "http://localhost:3000/docs/ru/dbs/dbaas/",
+    "dst": "/ru/dbs/dbaas",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas",
     "hash": null
   },
   {
@@ -5479,8 +5479,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/cdn/concepts/about/about.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -5803,8 +5803,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/cdn/faq/faq.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -8791,8 +8791,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/concepts/flavors/flavors.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -9199,8 +9199,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/create-cluster/create-webui/create-webui.md",
-    "dst": "/ru/tools-for-using-services/account/concepts/regions/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions/",
+    "dst": "/ru/tools-for-using-services/account/concepts/regions",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions",
     "hash": null
   },
   {
@@ -9349,8 +9349,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/create-cluster/create-terraform/create-terraform.md",
-    "dst": "/ru/tools-for-using-services/account/concepts/regions/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions/",
+    "dst": "/ru/tools-for-using-services/account/concepts/regions",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions",
     "hash": null
   },
   {
@@ -9373,8 +9373,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/create-cluster/create-terraform/create-terraform.md",
-    "dst": "/ru/tools-for-using-services/cli/openstack-cli/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli/",
+    "dst": "/ru/tools-for-using-services/cli/openstack-cli",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli",
     "hash": null
   },
   {
@@ -10897,8 +10897,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/storage/storage.md",
-    "dst": "/ru/computing/iaas/service-management/volumes/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes/",
+    "dst": "/ru/computing/iaas/service-management/volumes",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes",
     "hash": null
   },
   {
@@ -11035,14 +11035,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/load-balancer/load-balancer.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-create/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-create",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/load-balancer/load-balancer.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "hash": null
   },
   {
@@ -11119,8 +11119,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/velero-backup/velero-backup.md",
-    "dst": "/ru/tools-for-using-services/cli/openstack-cli/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli/",
+    "dst": "/ru/tools-for-using-services/cli/openstack-cli",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli",
     "hash": null
   },
   {
@@ -11677,8 +11677,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/install-tools/velero/velero.md",
-    "dst": "/ru/tools-for-using-services/cli/openstack-cli/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli/",
+    "dst": "/ru/tools-for-using-services/cli/openstack-cli",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli",
     "hash": null
   },
   {
