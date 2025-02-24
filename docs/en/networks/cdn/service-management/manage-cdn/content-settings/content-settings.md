@@ -65,7 +65,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 ## Preloading cache
 
-You can upload content in a cache of a CDN resource in advance, before end users request it. It can help [reduce the load](../../../concepts/about/) of origin servers. Preloading is relevant for files larger than 200 MB.
+You can upload content in a cache of a CDN resource in advance, before end users request it. It can help [reduce the load](../../../concepts/about) of origin servers. Preloading is relevant for files larger than 200 MB.
 
 <warn>
 

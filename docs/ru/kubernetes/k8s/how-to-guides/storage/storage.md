@@ -13,7 +13,7 @@
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../service-management/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../service-management/addons/advanced-installation/install-advanced-ingress/) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
+1. [Убедитесь](../../service-management/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../service-management/addons/advanced-installation/install-advanced-ingress) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
 
     <warn>
 
@@ -62,7 +62,7 @@
 
 Чтобы подключить постоянный том с помощью статического PVC:
 
-1. [Создайте сетевой HDD-диск](/ru/computing/iaas/service-management/volumes/).
+1. [Создайте сетевой HDD-диск](/ru/computing/iaas/service-management/volumes).
 
    При создании укажите:
 

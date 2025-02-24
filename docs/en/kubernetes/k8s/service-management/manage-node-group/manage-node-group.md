@@ -17,7 +17,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Add node group**.
-1. Set [settings](../helpers/node-group-settings/) for the node group.
+1. Set [settings](../helpers/node-group-settings) for the node group.
 1. Click the **Add node group** button.
 
 </tabpanel>
@@ -86,7 +86,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 You can change the size of a group of worker nodes manually or configure auto scaling.
 
-These operations are described in detail in [Scaling cluster nodes](../scale/) section.
+These operations are described in detail in [Scaling cluster nodes](../scale) section.
 
 ## Customise labels and taints
 
@@ -199,11 +199,11 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 </tabpanel>
 </tabs>
 
-See [Labels and taints](../../reference/labels-and-taints/) for details.
+See [Labels and taints](../../reference/labels-and-taints) for details.
 
 ## Configure update settings
 
-To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update, specify the maximum percentage of unavailable nodes for the node group before [updating cluster](../update/).
+To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update, specify the maximum percentage of unavailable nodes for the node group before [updating cluster](../update).
 
 <tabs>
 <tablist>
@@ -262,7 +262,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 </tabpanel>
 </tabs>
 
-More details about the update procedure in [Cluster version update](../../concepts/update/).
+More details about the update procedure in [Cluster version update](../../concepts/update).
 
 ## Delete node group
 

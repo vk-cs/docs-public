@@ -163,7 +163,7 @@ To update some add-ons, you will first need to uninstall the previous version.
 1. Go to **Addons** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Update**.
 1. In the window that opens, review the changes.
-1. (Optional) [Update](../../update/) the cluster version for compatibility with the add-on.
+1. (Optional) [Update](../../update) the cluster version for compatibility with the add-on.
 1. Make the necessary changes to the add-on settings.
 1. Click the **Update** button.
 

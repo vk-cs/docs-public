@@ -105,7 +105,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 ## 3. Check the performance of traffic distribution
 
-1. [Connect](../../../connect/k8s-dashboard/) to the cluster using Kubernetes Dashboard.
+1. [Connect](../../../connect/k8s-dashboard) to the cluster using Kubernetes Dashboard.
 1. Go to **Namespaces**.
 1. Switch the **Namespace** filter to `All`.
 1. At the bottom of the side menu, select **Ingresses**.

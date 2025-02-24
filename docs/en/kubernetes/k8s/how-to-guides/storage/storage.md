@@ -13,7 +13,7 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
    Other cluster parameters are at your discretion.
 
-1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../service-management/addons/advanced-installation/install-advanced-ingress/) in a cluster with default parameters. It will be required to provide access to demo applications.
+1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../service-management/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
 
     <warn>
 
@@ -62,7 +62,7 @@ This example will create:
 
 To connect a persistent volume using static PVC:
 
-1. [Create a network HDD](/en/computing/iaas/service-management/volumes/).
+1. [Create a network HDD](/en/computing/iaas/service-management/volumes).
 
    When creating, specify:
 

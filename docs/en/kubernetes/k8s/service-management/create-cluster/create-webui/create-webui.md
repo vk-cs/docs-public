@@ -1,4 +1,4 @@
-The following describes how to create a cluster from your management console. It is also possible to create a cluster [with Terraform](../create-terraform/).
+The following describes how to create a cluster from your management console. It is also possible to create a cluster [with Terraform](../create-terraform).
 
 <warn>
 
@@ -10,7 +10,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 ## Before you create a cluster
 
-1. Familiarize yourself with the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits/) for the [region](/en/tools-for-using-services/account/concepts/regions/) where the cluster is to be created. Different quotas may be configured for different regions.
+1. Familiarize yourself with the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where the cluster is to be created. Different quotas may be configured for different regions.
 
    If you want to increase the quotas, write to [technical support](mailto:support@mcs.mail.ru).
 
@@ -164,9 +164,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 ## 3. Configure the node groups
 
-1. Set the [settings](../../helpers/node-group-settings/) for the worker node group.
+1. Set the [settings](../../helpers/node-group-settings) for the worker node group.
 
-1. If necessary, add one or more worker-node groups by clicking **Add node group**, and [configure](../../helpers/node-group-settings/) them.
+1. If necessary, add one or more worker-node groups by clicking **Add node group**, and [configure](../../helpers/node-group-settings) them.
 
 1. If more than one worker node group is configured at this step, you can delete a node group by clicking **Delete node group** under the appropriate group.
 
@@ -176,6 +176,6 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 ## What's next?
 
-- [Set up the environment](../../../connect/) on the host from which you plan to connect to the cluster.
-- [Familiarize yourself with the usage scenarios](../../../how-to-guides/) of the cluster.
-- [Familiarize yourself with the concepts](../../../concepts/) of the container service.
+- [Set up the environment](../../../connect) on the host from which you plan to connect to the cluster.
+- [Familiarize yourself with the usage scenarios](../../../how-to-guides) of the cluster.
+- [Familiarize yourself with the concepts](../../../concepts) of the container service.
