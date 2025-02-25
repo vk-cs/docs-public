@@ -417,11 +417,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/quick-start/quick-start.md",
@@ -429,7 +429,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/concepts/about/about.md",
@@ -1093,7 +1093,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/vm-licenses/alt-linux/alt-linux.md",
-    "link": "https://msk.cloud.vk.com/app/en/project/"
+    "link": "https://msk.cloud.vk.com/app/en/project"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/vm-licenses/alt-linux/alt-linux.md",
@@ -4361,7 +4361,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/deploymlflow/service-management/delete/delete.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/concepts/about/about.md",
@@ -4388,6 +4388,66 @@
     "link": "https://msk.cloud.vk.com/app/en"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "link": "mailto:support@mcs.mail.ru"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "link": "https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/user-guide.md#specifying-spark-configuration"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "link": "https://yaml.org/spec/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "link": "https://conda.io/projects/conda/en/latest/index.html"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "link": "https://conda.io/projects/conda/en/latest/index.html"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "link": "https://conda.io/projects/conda/en/latest/index.html"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-node-group/manage-node-group.md",
+    "link": "https://msk.cloud.vk.com/app/en/"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi/submit-basic-job-pi.md",
     "link": "https://conda.io/projects/conda/en/latest/index.html"
   },
@@ -4406,42 +4466,6 @@
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse/submit-advanced-job-clickhouse.md",
     "link": "https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "link": "https://msk.cloud.vk.com/app/en/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "link": "https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/user-guide.md#specifying-spark-configuration"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "link": "https://yaml.org/spec/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "link": "https://msk.cloud.vk.com/app/en/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "link": "https://msk.cloud.vk.com/app/en/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "link": "https://conda.io/projects/conda/en/latest/index.html"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "link": "https://conda.io/projects/conda/en/latest/index.html"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "link": "https://msk.cloud.vk.com/app/en/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "link": "https://conda.io/projects/conda/en/latest/index.html"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/cloud-voice/service-management/speech-recognition/speech-recognition.md",
@@ -4537,7 +4561,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/alerting/triggers/trigger-start/trigger-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/monitoring/concepts/mon-metrics/mon-metrics.md",
@@ -4637,31 +4661,31 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
-    "link": "https://cloud.vk.com/app/"
+    "link": "https://cloud.vk.com/app/en/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/concepts/about/about.md",
