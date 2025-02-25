@@ -25,7 +25,7 @@ Through the VK Cloud Account, you can register only phone numbers that start wit
 
 <summary>I have registered, but the services in my management console are still unavailable</summary>
 
-The services become available after you have completed the [registration](/en/intro/start/account-registration/) procedure: linked your phone, email, and card for payment.
+The services become available after you have completed the [registration](/en/intro/start/account-registration) procedure: linked your phone, email, and card for payment.
 
 </details>
 
@@ -41,7 +41,7 @@ The role model of the project participants is described in the article [Roles an
 
 <summary>How do I add an additional participant to the project?</summary>
 
-The procedure is described in the article [Access management](../service-management/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions/).
+The procedure is described in the article [Access management](../service-management/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions).
 
 </details>
 

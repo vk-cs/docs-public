@@ -15,11 +15,11 @@
 
 <info>
 
-Further work with the project is carried out in [VK Cloud Management Console](/en/tools-for-using-services/account/service-management/project-settings/manage/).
+Further work with the project is carried out in [VK Cloud Management Console](/en/tools-for-using-services/account/service-management/project-settings/manage).
 
 </info>
 
 ## What is next?
 
-- Learn more about [project management](/en/tools-for-using-services/account/service-management/project-settings/manage/).
-- Get acquainted with the [access settings](/en/tools-for-using-services/account/service-management/project-settings/access-manage/) features of the project.
+- Learn more about [project management](/en/tools-for-using-services/account/service-management/project-settings/manage).
+- Get acquainted with the [access settings](/en/tools-for-using-services/account/service-management/project-settings/access-manage) features of the project.

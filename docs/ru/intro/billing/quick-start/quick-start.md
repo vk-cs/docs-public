@@ -69,7 +69,7 @@
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
-1. [Пополните](../service-management/payment#vnesenie_sredstv) лицевой счет проекта удобным для вас [способом](../concepts/payment-methods/).
+1. [Пополните](../service-management/payment#vnesenie_sredstv) лицевой счет проекта удобным для вас [способом](../concepts/payment-methods).
 
 </tabpanel>
 <tabpanel>

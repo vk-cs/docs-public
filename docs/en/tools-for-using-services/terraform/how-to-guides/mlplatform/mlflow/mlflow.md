@@ -102,7 +102,7 @@ The specified VM type will be used to create an MLflow instance in your Terrafor
 
 ## 3. (Optional) Create a file describing the synchronized JupyterHub instance
 
-Create a Terraform configuration file named `jh_instance.tf` to describe [the JupyterHub instance](../jupyterhub/).
+Create a Terraform configuration file named `jh_instance.tf` to describe [the JupyterHub instance](../jupyterhub).
 
 ## 4. (Optional) Create a file describing the network infrastructure for the instance
 

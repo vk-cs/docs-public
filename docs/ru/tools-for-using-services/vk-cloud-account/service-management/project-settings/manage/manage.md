@@ -1,6 +1,6 @@
 <info>
 
-Дополнительные настройки проекта доступны в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/service-management/project-settings/manage/).
+Дополнительные настройки проекта доступны в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/service-management/project-settings/manage).
 
 </info>
 

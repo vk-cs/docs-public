@@ -77,7 +77,7 @@ Individuals work with the platform under [public offer agreements](/en/intro/sta
 </tabpanel>
 <tabpanel>
 
-Legal entities and sole proprietors work with VK Cloud either on the basis of contracts [public offer](/en/intro/start/legal/) of the relevant services, or under an individual contract.
+Legal entities and sole proprietors work with VK Cloud either on the basis of contracts [public offer](/en/intro/start/legal) of the relevant services, or under an individual contract.
 
 If you have any questions related to contracts, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 

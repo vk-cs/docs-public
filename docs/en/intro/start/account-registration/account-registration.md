@@ -83,7 +83,7 @@ To complete registration, bind the card of the [supported payment system](/en/in
 
    If there are enough funds on the bank account, a test amount will be debited from the card and credited to the [project balance](/en/intro/billing/concepts/balance). After that the card will be successfully linked.
 
-   If the test amount was not spent on services, it can be refunded via [technical support](/en/contacts/). See more about managing your card in [Operations with bank card](/en/intro/billing/service-management/add-card).
+   If the test amount was not spent on services, it can be refunded via [technical support](mailto:support@mcs.mail.ru). See more about managing your card in [Operations with bank card](/en/intro/billing/service-management/add-card).
 
 1. (Optional) On the **Autopayment** tab, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
 1. Wait for your management console page to open. A message about successful services activation appears.
@@ -92,7 +92,7 @@ A [project](/en/tools-for-using-services/account/concepts/projects) is automatic
 
 ## What's next?
 
-- [Customize](/en/intro/billing/service-management/corporate/) the project to make payments through the legal entity.
+- [Customize](/en/intro/billing/service-management/corporate) the project to make payments through the legal entity.
 - [Read](/en/tools-for-using-services/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
 - Learn about the [payment methods](/en/intro/billing/service-management/payment) available and the key [pricing](/en/tools-for-using-services/account/tariffication) model principles.
 - [Configure](/en/tools-for-using-services/account/service-management/project-settings/access-manage) access to your project.
