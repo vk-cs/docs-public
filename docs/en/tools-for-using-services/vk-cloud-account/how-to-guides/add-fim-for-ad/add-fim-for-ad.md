@@ -79,7 +79,7 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
       - **Permissions**:
          - Select **Project** to associate the group and roles within the same project. You can associate the same group with different roles in different projects, which allows you to differentiate the level of federated user access to projects.
          - Select **Domain** to associate the group and roles across all projects. The **Domain** permission is only available to the project owner and provides the federated user with the same access level to all projects owned by the owner.
-      - **Group roles**: select the [VK Cloud roles](/en/tools-for-using-services/account/concepts/rolesandpermissions/), that correspond to your access matrix for the group being created.
+      - **Group roles**: select the [VK Cloud roles](/en/tools-for-using-services/account/concepts/rolesandpermissions), that correspond to your access matrix for the group being created.
 
    1. Click the **Add** button.
 

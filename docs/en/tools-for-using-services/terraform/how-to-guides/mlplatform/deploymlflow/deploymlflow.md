@@ -100,7 +100,7 @@ The specified VM type will be used to create an MLflow Deploy instance in your T
 
 ## 3. (Optional) Create a file describing the synchronized MLflow instance
 
-Create a Terraform configuration file named `mlflow_instance.tf` to describe [the MLflow instance](../jupyterhub/).
+Create a Terraform configuration file named `mlflow_instance.tf` to describe [the MLflow instance](../jupyterhub).
 
 ## 4. (Optional) Create a file describing the network infrastructure for the instance
 

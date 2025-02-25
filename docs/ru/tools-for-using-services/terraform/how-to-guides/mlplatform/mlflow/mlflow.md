@@ -101,7 +101,7 @@ data "vkcs_compute_flavor" "basic" {
 
 ## 3. (Опционально) Создайте файл с описанием связанного инстанса JupyterHub
 
-Создайте файл конфигурации Terraform `jh_instance.tf` c [описанием инстанса JupyterHub](../jupyterhub/).
+Создайте файл конфигурации Terraform `jh_instance.tf` c [описанием инстанса JupyterHub](../jupyterhub).
 
 ## 4. (Опционально) Создайте файл с описанием сетевой инфраструктуры для инстанса
 

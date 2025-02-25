@@ -24,7 +24,7 @@
 
 <summary>Я зарегистрировался, но сервисы в личном кабинете все еще недоступны</summary>
 
-Сервисы становятся доступны после того, как вы до конца прошли процедуру [регистрации](/ru/intro/start/account-registration/): привязали телефон, почту и карту для оплаты.
+Сервисы становятся доступны после того, как вы до конца прошли процедуру [регистрации](/ru/intro/start/account-registration): привязали телефон, почту и карту для оплаты.
 
 </details>
 
@@ -40,7 +40,7 @@
 
 <summary>Как добавить дополнительного участника в проект?</summary>
 
-Процедура описана в статье [Управление доступами](../service-management/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika). При добавлении укажите роль, ориентируясь на [матрицу ролей](../concepts/rolesandpermissions/).
+Процедура описана в статье [Управление доступами](../service-management/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika). При добавлении укажите роль, ориентируясь на [матрицу ролей](../concepts/rolesandpermissions).
 
 </details>
 

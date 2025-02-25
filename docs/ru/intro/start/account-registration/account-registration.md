@@ -82,7 +82,7 @@
 
    Если на счете достаточно средств, с карты будет списана тестовая сумма, которая будет зачислена на [баланс проекта](/ru/intro/billing/concepts/balance). После этого карта будет успешно привязана.
 
-   Если тестовая сумма не была израсходована на оплату сервисов, то ее можно вернуть через [техническую поддержку](/ru/contacts/). Подробнее об управлении картой в статье [Операции с банковской картой](/ru/intro/billing/service-management/add-card).
+   Если тестовая сумма не была израсходована на оплату сервисов, то ее можно вернуть через [техническую поддержку](/ru/contacts). Подробнее об управлении картой в статье [Операции с банковской картой](/ru/intro/billing/service-management/add-card).
 
 1. (Опционально) На вкладке **Автопополнение** настройте [автопополнение](/ru/intro/billing/service-management/add-card#nastroit_avtopopolnenie) баланса.
 1. Дождитесь перехода в личный кабинет.
@@ -91,7 +91,7 @@
 
 ## Что дальше?
 
-- [Донастройте](/ru/intro/billing/service-management/corporate/) проект для проведения оплаты через ЮЛ.
+- [Донастройте](/ru/intro/billing/service-management/corporate) проект для проведения оплаты через ЮЛ.
 - [Ознакомьтесь](/ru/tools-for-using-services/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
 - Ознакомьтесь со [способами пополнения баланса](/ru/intro/billing/service-management/payment) и базовыми принципами [тарификации](/ru/tools-for-using-services/account/tariffication) сервисов.
 - [Настройте](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) доступ к вашему новому проекту.

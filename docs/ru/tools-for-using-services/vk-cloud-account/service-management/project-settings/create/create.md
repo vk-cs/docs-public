@@ -15,11 +15,11 @@
 
 <info>
 
-Дальнейшая работа с проектом проводится в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/service-management/project-settings/manage/).
+Дальнейшая работа с проектом проводится в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/service-management/project-settings/manage).
 
 </info>
 
 ## Что дальше?
 
-- Узнайте подробнее об [управлении проектом](/ru/tools-for-using-services/account/service-management/project-settings/manage/).
-- Ознакомьтесь с возможностями [настройки доступа](/ru/tools-for-using-services/account/service-management/project-settings/access-manage/) к проекту.
+- Узнайте подробнее об [управлении проектом](/ru/tools-for-using-services/account/service-management/project-settings/manage).
+- Ознакомьтесь с возможностями [настройки доступа](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) к проекту.

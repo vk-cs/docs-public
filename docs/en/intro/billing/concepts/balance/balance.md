@@ -17,7 +17,7 @@ Payment account status and balance of all bonus accounts are [available](../../s
 
 <info>
 
-Balance is not displayed in your management console if you have not completed the [registration procedure](/en/intro/start/account-registration/).
+Balance is not displayed in your management console if you have not completed the [registration procedure](/en/intro/start/account-registration).
 
 </info>
 

@@ -16,7 +16,7 @@ A detailed description of the resources is in the [provider documentation](https
 
     If you want to increase the quotas, contact [technical support](mailto:support@mcs.mail.ru).
 
-1. [Install Terraform](../../quick-start/) if it is not already done.
+1. [Install Terraform](../../quick-start) if it is not already done.
 1. Set up the provider:
 
     1. Create a directory you will work with the platform, and navigate to it.
@@ -46,7 +46,7 @@ A detailed description of the resources is in the [provider documentation](https
 
         Here:
 
-        - `<region>` — the region where the Cloud Storage service is hosted. The setting must match the [region](/en/tools-for-using-services/account/concepts/regions/) of the account:
+        - `<region>` — the region where the Cloud Storage service is hosted. The setting must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
 
             - `ru-msk` — the Moscow region.
             - `kz-ast` — the Kazakhstan region.
