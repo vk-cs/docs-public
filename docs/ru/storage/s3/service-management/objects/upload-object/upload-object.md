@@ -61,8 +61,8 @@
 
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+         - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
       - (Опционально) `<класс-хранения>` — задает [класс хранения](../../../reference#klass_hraneniya) объекта. Если не указано, класс хранения наследуется из бакета. Доступные значения:
 
@@ -178,8 +178,8 @@
    ```
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    Команда `PutObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject).
 
@@ -214,8 +214,8 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
 Команды `put_object` и `upload_file` подробно описаны в официальной документации к библиотеке boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
 
@@ -256,8 +256,8 @@
 
    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    В результате вернется ответ с параметрами загрузки, включая идентификатор составной загрузки — `UploadId`. Сохраните полученный идентификатор, он понадобится для выполнения последующих команд.
 

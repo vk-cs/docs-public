@@ -68,8 +68,8 @@
 
       - `endpoint-url` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+         - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    Пример команды создания бакета:
 
@@ -129,8 +129,8 @@
 
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    Название бакета должно:
 
@@ -173,8 +173,8 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    Название бакета должно:
 
