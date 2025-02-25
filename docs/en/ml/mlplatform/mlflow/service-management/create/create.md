@@ -17,7 +17,7 @@ To create an MLflow instance:
     - **Availability zone**: selecting the [data center](/en/intro/start/concepts/architecture#az) where the instance will be launched.
     - **Enable MLflow demo**: if the option is enabled, all data will be stored on the instance VM, if disabled, an S3 bucket with the PostgreSQL DBaaS database will be connected to store data. To save working data, use the demo mode only to get acquainted with the functionality.
     - **Disk Size**: sets the size of the VM data disk in GB. The minimum value is 20 GB. When an instance is created, a root disk and an additional data disk are connected to it. The root disk size is fixed - 25 GB. You can only change the size of the data disk.
-    - **Disk type**: [type](/en/computing/iaas/concepts/volume-sla/) of the disk to be created.
+    - **Disk type**: [type](/en/computing/iaas/concepts/volume-sla) of the disk to be created.
     - **Connect a JupyterHub instance for collaboration**: by default, each MLflow instance works [in conjunction with a JupyterHub instance](../../../concepts/mlflow-modes#with_jh). To make the MLflow instance work [separately](../../../concepts/mlflow-modes#standalone), disable the option.
     - **Instance JupyterHub**: select the JupyterHub instance to collaborate with. Available, if the **Connect a JupyterHub instance for collaboration** option is enabled.
     - **Choosing a domain name**: sets the DNS name of the instance. Available, if the **Connect a JupyterHub instance for collaboration** option is disabled. To connect your domain, select the **Connecting your domain** from the list and specify a name in the box below.

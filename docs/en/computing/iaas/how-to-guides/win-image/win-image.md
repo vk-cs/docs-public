@@ -211,7 +211,7 @@ openstack image create \
 ```
 Replace <IMAGE_NAME> with the actual one. Arguments of the form `--property <key>=<value>` are used to assign [meta tags](/en/computing/iaas/service-management/images/image-metadata) to the image.
 
-Wait for the operation to complete. After uploading the image, you will be able to [create a VM](../../service-management/vm/vm-create/) by standard means of the VK Cloud platform.
+Wait for the operation to complete. After uploading the image, you will be able to [create a VM](../../service-management/vm/vm-create) by standard means of the VK Cloud platform.
 
 ## Delete unused resources
 

@@ -2,12 +2,12 @@ Connect your SIEM system to VK Cloud so that Cloud Audit can send it information
 
 You can connect several SIEM systems to VK Cloud, and also set up several connections to the same SIEM system, for example, to receive data from VK Cloud in different formats. However, only one of these connections can be active at a time.
 
-In your personal account, you can change [parameters](#edit_siem_connection) and [activity status](#activate_siem_connection) of connections, as well as [delete](#delete_siem_connection) unnecessary connections.
+In your management console, you can change [parameters](#edit_siem_connection) and [activity status](#activate_siem_connection) of connections, as well as [delete](#delete_siem_connection) unnecessary connections.
 
 ## {heading(Creating SIEM connections)[id=create_siem_connections]}
 
 1. Open the port of your SIEM system to receive messages from VK Cloud. For more information about other necessary settings, read the documentation of the SIEM system.
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 1. Click the **Settings** button and go to the **SIEM** tab.
 1. Click the **Create connection** button.
@@ -30,7 +30,7 @@ Only one SIEM connection can be active. If you activate a new connection, the pr
 
 ## {heading(Editing SIEM connection settings)[id=edit_siem_connection]}
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 1. Click the **Settings** button and go to the **SIEM** tab.
 1. Click ![](/en/assets/more-icon.svg "inline") for the required connection and select **Configure**.
@@ -54,7 +54,7 @@ Only one SIEM connection can be active. If you activate a new connection, the pr
 
 ## {heading(Activating or disactivating the SIEM connection)[id=activate_siem_connection]}
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 1. Click the **Settings** button and go to the **SIEM** tab.
 
@@ -77,7 +77,7 @@ Only one SIEM connection can be active. If you activate a new connection, the pr
 
 This is a group operation: if necessary, you can delete several connections at once by setting the checkboxes.
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 1. Click the **Settings** button and go to the **SIEM** tab.
 1. Delete the SIEM connection in one of the following ways:

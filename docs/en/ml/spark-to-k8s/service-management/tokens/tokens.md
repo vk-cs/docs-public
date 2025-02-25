@@ -129,7 +129,7 @@ When working in a production environment, do not operate tokens in clear text. U
    ```python
    from mlplatform_client import MLPlatform
 
-   REGISTER_TOKEN = "<the value of the registration token>"
+   REGISTER_TOKEN = "<REGISTRATION_TOKEN_VALUE>"
 
    mlp = MLPlatform()
    refresh_token = mlp.create_refresh_token(REGISTER_TOKEN)
@@ -221,14 +221,14 @@ When working in a production environment, do not operate tokens in clear text. U
    from mlplatform_client import MLPlatform
    from mlplatform_client.serializers.auth import MLPTokenType
 
-   ADMIN_REFRESH_TOKEN = "<the value of the access token with the Administrator role>"
+   ADMIN_REFRESH_TOKEN = "<ADMINISTRATOR_TOKEN_VALUE>"
 
    mlp = MLPlatform(ADMIN_REFRESH_TOKEN)
 
    register_token = mlp.create_register_token(
-       client_name="<access token name>",
-       access_ttl="<lifetime of the registration token>",
-       refresh_ttl="<access token lifetime>",
+       client_name="<ACCESS_TOKEN_NAME>",
+       access_ttl="<REGISTRATION_TOKEN_LIFETIME>",
+       refresh_ttl="<ACCSESS_TOKEN_LIFETIME>",
        token_type=<the role of the access token>)
 
    print(register_token)
@@ -344,8 +344,8 @@ When working in a production environment, do not operate tokens in clear text. U
    ```python
    from mlplatform_client import MLPlatform
 
-   ADMIN_REFRESH_TOKEN = "<the value of the access token with the Administrator role>"
-   REFRESH_TOKEN_NAME = "<name of the access token to delete>"
+   ADMIN_REFRESH_TOKEN = "<ADMINISTRATOR_TOKEN_VALUE>"
+   REFRESH_TOKEN_NAME = "<NAME_OF_THE_ACCESS_TOKEN_TO_DELETE>"
 
    mlp = MLPlatform(ADMIN_REFRESH_TOKEN)
    mlp.delete_token(token_name=REFRESH_TOKEN_NAME)

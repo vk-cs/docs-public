@@ -10,7 +10,7 @@ To view the logs, use any method convenient for you:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/services/monitoring/logging) the **Monitoring** → **Logging** section of your VK Cloud management console.
 1. (Optional) Select values ​​for filters.
-1. (Optional) Enter a value to search for or formulate a query using the [search query language](../../concepts/search-tools/).
+1. (Optional) Enter a value to search for or formulate a query using the [search query language](../../concepts/search-tools).
 
     Examples of search expressions:
 
@@ -21,7 +21,7 @@ To view the logs, use any method convenient for you:
 
 Use [API methods](/ru/tools-for-using-services/api/api-spec/logging "change-lang").
 
-To refine the search results, specify a search expression for the `message` field in the `like` parameter. Use the [search query language](../../concepts/search-tools/) to write the search expression.
+To refine the search results, specify a search expression for the `message` field in the `like` parameter. Use the [search query language](../../concepts/search-tools) to write the search expression.
 Examples of search expressions:
 
   {include(/en/_includes/_logs_query.md)}

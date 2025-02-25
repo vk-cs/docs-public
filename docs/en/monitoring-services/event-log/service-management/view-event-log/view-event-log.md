@@ -6,9 +6,9 @@ The Cloud Audit service allows you the following:
 
 ## {heading(Viewing event list)[id=view_events_list]}
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
-   
+
    The list of events allowed to be viewed for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project will be displayed.
 
 1. (Optional) Sort the list in ascending or descending order of the event registration time. To do this, use the sort icon in the **Event Date** column header.
@@ -17,7 +17,7 @@ The Cloud Audit service allows you the following:
 
 ## {heading(Using filters and search queries)[id=filter_events_list]}
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 
    The list of events allowed to be viewed for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project will be displayed.
@@ -36,7 +36,7 @@ The list will display events that meet the search parameters.
 
 ## {heading(Exporting event list)[id=export_events_list]}
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://cloud.vk.com/app/en/) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 
    The list of events allowed to be viewed for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project will be displayed.

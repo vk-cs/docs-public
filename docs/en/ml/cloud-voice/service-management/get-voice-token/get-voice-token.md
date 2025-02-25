@@ -85,6 +85,6 @@ The received access token must be sent in all HTTP requests in the Bearer Token 
 
 ### See also
 
-[Speech recognition](../speech-recognition/)
+[Speech recognition](../speech-recognition)
 
-[Speech synthesis](../text-to-speech/)
+[Speech synthesis](../text-to-speech)

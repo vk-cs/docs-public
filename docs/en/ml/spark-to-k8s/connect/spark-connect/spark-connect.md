@@ -4,7 +4,7 @@ Spark Connect allows to remotely connect to a Spark cluster and work with it via
 
 1. [Go to](https://msk.cloud.vk.com/app/en) to VK Cloud account.
 1. Select a project.
-1. [Create](../../service-management/create/) a Spark cluster if it is not already done. Select **Virtual Machine Type** with at least 6 CPUs and 12 GB RAM.
+1. [Create](../../service-management/create) a Spark cluster if it is not already done. Select **Virtual Machine Type** with at least 6 CPUs and 12 GB RAM.
 
     <info>
 

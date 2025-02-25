@@ -1,4 +1,4 @@
-Подробный пример смотрите в статье «[Пример интеграции на Python](../vision-py/)». В этой статье мы выполним запросы `persons/recognize`, `persons/set` и `persons/delete`. Для этого потребуется:
+Подробный пример смотрите в статье «[Пример интеграции на Python](../vision-py)». В этой статье мы выполним запросы `persons/recognize`, `persons/set` и `persons/delete`. Для этого потребуется:
 
 ```bash
 sudo apt-get install php5-cli

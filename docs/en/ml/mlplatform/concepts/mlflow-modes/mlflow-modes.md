@@ -9,7 +9,7 @@ The MLflow instance can operate in two modes:
 
 In this mode, when creating an MLflow client server, you have to select the already created JupyterHub server for the bundle. Only one MLflow instance can be associated with one JupyterHub instance.
 
-If MLflow works in connection with the JupyterHub instance, [users creating](../../jupyterhub/service-management/) and authentication is performed via JupyterHub.
+If MLflow works in connection with the JupyterHub instance, [users creating](../../jupyterhub/service-management) and authentication is performed via JupyterHub.
 
 ## {heading(Standalone mode)[id=standalone]}
 
@@ -23,7 +23,7 @@ Features of Standalone mode:
 
 This mode is useful for accessing the service via the ML Platform client library.
 
-In Standalone mode, the instance administrator is added when [creating an instance](../../mlflow/service-management/create/), use tokens for other users access.
+In Standalone mode, the instance administrator is added when [creating an instance](../../mlflow/service-management/create), use tokens for other users access.
 
 ## Deploy the model in Standalone mode
 

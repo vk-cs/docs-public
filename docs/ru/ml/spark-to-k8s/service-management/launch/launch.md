@@ -8,7 +8,7 @@
     ```python
     from mlplatform_client import MLPlatform
 
-    REFRESH_TOKEN = '<значение токена доступа>'
+    REFRESH_TOKEN = '<ЗНАЧЕНИЕ_ТОКЕНА_ДОСТУПА>'
     mlp = MLPlatform(REFRESH_TOKEN)
     ```
 
@@ -34,9 +34,9 @@
     <summary>Пример скрипта Python</summary>
 
     ```python
-    job_manifest.set_jars([f"s3a://<имя бакета>/spark-files/test.jar"])
-    job_manifest.set_files([f"s3a://<имя бакета>/datasets/dataset.csv"])
-    job_manifest.add_pyfiles([f"s3a://<имя бакета>/spark-files/python_file.py"])
+    job_manifest.set_jars([f"s3a://<ИМЯ_БАКЕТА>/spark-files/test.jar"])
+    job_manifest.set_files([f"s3a://<ИМЯ_БАКЕТА>/datasets/dataset.csv"])
+    job_manifest.add_pyfiles([f"s3a://<ИМЯ_БАКЕТА>/spark-files/python_file.py"])
     ```
 
     </details>
@@ -112,7 +112,7 @@
     Пример скрипта Python:
 
     ```python
-    mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest, pycode_file_path="<имя приложения>.py")
+    mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest, pycode_file_path="<ИМЯ_ПРИЛОЖЕНИЯ>.py")
     ```
 
     </tabpanel>
@@ -123,7 +123,7 @@
     Пример скрипта Python:
 
     ```python
-    job_manifest.main_app_file="local:///opt/spark/examples/src/main/python/<имя приложения>.py"
+    job_manifest.main_app_file="local:///opt/spark/examples/src/main/python/<ИМЯ_ПРИЛОЖЕНИЯ>.py"
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
@@ -145,7 +145,7 @@
     ```scala
     job_manifest.spec_type = "Scala"
     job_manifest.main_class = "org.apache.spark.examples.<имя главного класса>"
-    job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<имя приложения>.jar"
+    job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<ИМЯ_ПРИЛОЖЕНИЯ>.jar"
 
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
@@ -156,7 +156,7 @@
     ```java
     job_manifest.spec_type = "Java"
     job_manifest.main_class = "org.apache.spark.examples.<имя главного класса>"
-    job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<имя приложения>.java"
+    job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<ИМЯ_ПРИЛОЖЕНИЯ>.java"
 
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
@@ -165,7 +165,7 @@
     <tabpanel>
 
     ```python
-    job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<имя приложения>.py"
+    job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<ИМЯ_ПРИЛОЖЕНИЯ>.py"
 
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```

@@ -7,11 +7,11 @@
 
 Инстанс MLflow может работать в двух режимах: в [связке с JupyterHub](../../../concepts/mlflow-modes#with_jh) или отдельно, в [режиме Standalone](../../../concepts/mlflow-modes#standalone).
 
-Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/service-management/create/) его.
+Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/service-management/create) его.
 
 Чтобы создать инстанс MLflow:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **ML Platform**.
 1. Нажмите кнопку **Создать инстанс** в карточке **MLflow**.
 1. На шаге **Конфигурация** укажите параметры инстанса:
