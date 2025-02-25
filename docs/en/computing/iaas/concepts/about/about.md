@@ -83,7 +83,7 @@ By default, only actual configuration templates are displayed: on servers with I
 
 To add custom VM configurations to the list, including VMs with more than 16 vCPU and 64 GB of RAM, contact [technical support](mailto:support@mcs.mail.ru).
 
-Select the **Archive VM types** category to find the old VM configuration templates. The server for VMs of the old configuration is selected randomly: Intel Cascade Lake or Intel Ice Lake, but [charged](../../tariffication/) at the price of Intel Ice Lake. If the server is unavailable (for example, during maintenance work), these VMs can move to a server of a different generation.
+Select the **Archive VM types** category to find the old VM configuration templates. The server for VMs of the old configuration is selected randomly: Intel Cascade Lake or Intel Ice Lake, but [charged](../../tariffication) at the price of Intel Ice Lake. If the server is unavailable (for example, during maintenance work), these VMs can move to a server of a different generation.
 
 <details>
    <summary> Archived VM types</summary>

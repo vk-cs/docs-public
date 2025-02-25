@@ -1,7 +1,7 @@
 Spark jobs can be submitted to the cluster in different ways:
 
 - For Spark applications that do not have dependencies, it is sufficient to pass the application code in the job manifest. This approach will be demonstrated below.
-- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Cloud Storage](/en/storage/s3) bucket and edit the job manifest. This approach is illustrated [using the example of working with ClickHouse](../submit-advanced-job-clickhouse/).
+- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Cloud Storage](/en/storage/s3) bucket and edit the job manifest. This approach is illustrated [using the example of working with ClickHouse](../submit-advanced-job-clickhouse).
 
 As an example, an application will be used to calculate an approximate value of the number π.
 

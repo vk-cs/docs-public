@@ -79,7 +79,7 @@ The VM settings available for configuration may vary depending on the operating 
 
 1. Get ready to work with the OpenStack CLI:
 
-   1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/) two-factor authentication.
+   1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) two-factor authentication.
    2. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
    3. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -183,5 +183,5 @@ Some features of creating a VM via the CLI:
 
 ## What's next?
 
-- See the ways to connect to [Linux VM](../vm-connect/vm-connect-nix/) or [Windows](../vm-connect/vm-connect-win/).
-- Learn how to [work with VM](../vm-manage/).
+- See the ways to connect to [Linux VM](../vm-connect/vm-connect-nix) or [Windows](../vm-connect/vm-connect-win).
+- Learn how to [work with VM](../vm-manage).

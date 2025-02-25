@@ -11,7 +11,7 @@ JupyterHub instance management is available through your VK Cloud management con
 1. Open **File** → **Hub Control Panel** menu.
 1. On the top panel, click **Authorize Users**. Next to the new user, click the **Authorize** button.
 
-As a result, the user will be able to [sign in the JupyterHub instance](../connect/) using the specified username and password.
+As a result, the user will be able to [sign in the JupyterHub instance](../connect) using the specified username and password.
 
 ## {heading(Changing virtual machine type)[id=change-vm-type]}
 

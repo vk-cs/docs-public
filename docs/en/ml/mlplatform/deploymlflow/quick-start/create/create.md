@@ -2,12 +2,12 @@ The MLflow Deploy service provides the ability to automatically package ML model
 
 The service is integrated with the Cloud ML Platform components: JupyterHub and MLflow.
 
-Creating MLflow Deploy instances is available both through your VK Cloud management console and via [MLflow Client](../../service-management/manage-mlflow-client/).
+Creating MLflow Deploy instances is available both through your VK Cloud management console and via [MLflow Client](../../service-management/manage-mlflow-client).
 
 ## Before you start
 
-1. [Create](../../../jupyterhub/service-management/create/) a JupyterHub instance.
-2. [Create](../../../mlflow/service-management/create/) an MLflow instance.
+1. [Create](../../../jupyterhub/service-management/create) a JupyterHub instance.
+2. [Create](../../../mlflow/service-management/create) an MLflow instance.
 
 ## Creating an instance
 

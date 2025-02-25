@@ -72,7 +72,7 @@ For example:
 ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 ```
 
-The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/) to **Cloud Servers → Virtual machines**.
+The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/en/) to **Cloud Servers → Virtual machines**.
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
@@ -99,7 +99,7 @@ For example:
 ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 ```
 
-The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/) to **Cloud Servers → Virtual machines**.
+The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/en/) to **Cloud Servers → Virtual machines**.
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
@@ -134,7 +134,7 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
    <info>
 
-   The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/) to **Cloud Servers → Virtual machines**.
+   The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/en/) to **Cloud Servers → Virtual machines**.
 
    </info>
 
