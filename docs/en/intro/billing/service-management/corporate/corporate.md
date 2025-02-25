@@ -1,8 +1,8 @@
-VK Cloud provides special features for [legal entities and sole proprietors](../../concepts/physical-corporate/). Contractors-legal entities can receive accounting [accounting documents](../../concepts/report/) from the platform. They have the opportunity to conclude an individual contract with VK Cloud.
+VK Cloud provides special features for [legal entities and sole proprietors](../../concepts/physical-corporate). Contractors-legal entities can receive accounting [accounting documents](../../concepts/report) from the platform. They have the opportunity to conclude an individual contract with VK Cloud.
 
 ## Conclusion of an individual contract
 
-Legal entities and sole proprietors by default work with VK Cloud on the basis of contracts [public offer](/en/intro/start/legal/legal-terms/). It is possible to conclude an individual contract with VK Cloud, for more information, see the article [Billing of individuals and legal entities](../../concepts/physical-corporate).
+Legal entities and sole proprietors by default work with VK Cloud on the basis of contracts [public offer](/en/intro/start/legal/legal-terms). It is possible to conclude an individual contract with VK Cloud, for more information, see the article [Billing of individuals and legal entities](../../concepts/physical-corporate).
 
 To conclude an individual contract:
 
@@ -16,7 +16,7 @@ The manager will contact you to clarify the required terms of the contract.
 
 ## Setting up the workflow
 
-A contractor who works with VK Cloud as a legal entity receives a package of [accounting documents](../../concepts/report/) on their projects from the platform on a monthly basis. The document flow is carried out in electronic form (according to [EDM](../../concepts/report)) or, if work on EDM is impossible, in paper form.
+A contractor who works with VK Cloud as a legal entity receives a package of [accounting documents](../../concepts/report) on their projects from the platform on a monthly basis. The document flow is carried out in electronic form (according to [EDM](../../concepts/report)) or, if work on EDM is impossible, in paper form.
 
 To set up workflow with VK Cloud:
 
@@ -38,7 +38,7 @@ Filling in the details in the management console is only available in [region](/
 
 </info>
 
-If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#predoplata), after additional registration, you will be able to [upload](../bill-generation/) from your management console accounts that specify the details of both the supplier and the buyer of services. If the additional registration is not completed, only the details of the supplier are indicated in the invoice.
+If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#predoplata), after additional registration, you will be able to [upload](../bill-generation) from your management console accounts that specify the details of both the supplier and the buyer of services. If the additional registration is not completed, only the details of the supplier are indicated in the invoice.
 
 To complete additional registration:
 

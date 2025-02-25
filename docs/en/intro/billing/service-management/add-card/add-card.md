@@ -30,7 +30,7 @@ To bind the card:
 
     <info>
 
-    If the test amount was not spent on services, it can be refunded via [technical support](/en/contacts/).
+    If the test amount was not spent on services, it can be refunded via [technical support](/en/contacts).
 
     </info>
 

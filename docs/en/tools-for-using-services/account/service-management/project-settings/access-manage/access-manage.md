@@ -77,7 +77,7 @@ If the user enters the project by invitation, he does not need to confirm the ph
 
 An invitation will be sent to the specified email address, it is valid for 24 hours.
 
-After [logging in to the project](/en/tools-for-using-services/account/service-management/project-invitation/) the new member's status in the column **Activated** will change to **Yes**.
+After [logging in to the project](/en/tools-for-using-services/account/service-management/project-invitation) the new member's status in the column **Activated** will change to **Yes**.
 
 <info>
 

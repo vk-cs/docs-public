@@ -3,7 +3,7 @@
 
 <summary>How do I contact support?</summary>
 
-Technical support can be contacted through the communication channels listed at [Terms of support](../support/support-info/).
+Technical support can be contacted through the communication channels listed at [Terms of support](../support/support-info).
 
 <info>
 
@@ -19,7 +19,7 @@ If possible, attach any available diagnostic information: screenshots, logs and 
 
 <summary>How quickly does support respond?</summary>
 
-Information about the timing of the response and the provision of a solution is in the [SLA](../support/sla/) section.
+Information about the timing of the response and the provision of a solution is in the [SLA](../support/sla) section.
 
 </details>
 
@@ -59,7 +59,7 @@ Restore the password from the account. To do this, click **Recover password** on
 
 <summary>I have registered, but the services in my management console are still unavailable</summary>
 
-The services become available after you have completed the [registration](../account-registration/) procedure: linked your phone, email, and card for payment.
+The services become available after you have completed the [registration](../account-registration) procedure: linked your phone, email, and card for payment.
 
 </details>
 
@@ -67,7 +67,7 @@ The services become available after you have completed the [registration](../acc
 
 <summary>How do I enable two-factor authentication?</summary>
 
-Use the instruction [Enabling 2FA](en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa).
+Use the instruction [Enabling 2FA](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa).
 
 </details>
 
