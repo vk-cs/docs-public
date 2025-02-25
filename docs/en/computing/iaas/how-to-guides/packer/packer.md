@@ -151,7 +151,7 @@ Import the image according to [instructions](../../service-management/images/ima
 
 ## 5. Complete the image setup
 
-1. Set [meta tags](../../service-management/images/image-metadata/) to the created image using the command:
+1. Set [meta tags](../../service-management/images/image-metadata) to the created image using the command:
 
     ```bash
     openstack image set \

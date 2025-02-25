@@ -177,6 +177,6 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
 <warn>
 
-If you could not connect to the VM via SSH, use the instructions from the article [Network in a Linux VM](../../../../troubleshooting/linux-vm-network/).
+If you could not connect to the VM via SSH, use the instructions from the article [Network in a Linux VM](../../../../troubleshooting/linux-vm-network).
 
 </warn>

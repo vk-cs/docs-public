@@ -17,7 +17,7 @@ Supported OAuth2 providers:
 
 | Provider | oauth_provider value | Getting a token |
 | --------- | ---------------------- | ------------------------------------------------ |
-| VK Cloud | mcs | See in [article](../../quick-start/auth-vision/) |
+| VK Cloud | mcs | See in [article](../../quick-start/auth-vision) |
 
 Request parameters are passed in JSON format in the request body with `name="meta"`:
 

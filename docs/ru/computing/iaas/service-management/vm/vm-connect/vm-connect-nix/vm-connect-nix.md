@@ -177,6 +177,6 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 <warn>
 
-Если не удалось подключиться к ВМ по SSH, воспользуйтесь инструкцией из статьи [Сеть в ВМ Linux](../../../../troubleshooting/linux-vm-network/).
+Если не удалось подключиться к ВМ по SSH, воспользуйтесь инструкцией из статьи [Сеть в ВМ Linux](../../../../troubleshooting/linux-vm-network).
 
 </warn>
