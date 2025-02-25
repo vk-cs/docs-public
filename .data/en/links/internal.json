@@ -169,8 +169,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en/intro/start/support/sla/",
-    "link": "http://localhost:3000/docs/en/intro/start/support/sla/",
+    "dst": "/en/intro/start/support/sla",
+    "link": "http://localhost:3000/docs/en/intro/start/support/sla",
     "hash": null
   },
   {
@@ -181,8 +181,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en/intro/it-security/",
-    "link": "http://localhost:3000/docs/en/intro/it-security/",
+    "dst": "/en/intro/it-security",
+    "link": "http://localhost:3000/docs/en/intro/it-security",
     "hash": null
   },
   {
@@ -259,8 +259,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/account-registration/account-registration.md",
-    "dst": "/en/intro/billing/service-management/corporate/",
-    "link": "http://localhost:3000/docs/en/intro/billing/service-management/corporate/",
+    "dst": "/en/intro/billing/service-management/corporate",
+    "link": "http://localhost:3000/docs/en/intro/billing/service-management/corporate",
     "hash": null
   },
   {
@@ -547,8 +547,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/billing/concepts/balance/balance.md",
-    "dst": "/en/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/en/intro/start/account-registration/",
+    "dst": "/en/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/en/intro/start/account-registration",
     "hash": null
   },
   {
@@ -637,8 +637,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/billing/concepts/physical-corporate/physical-corporate.md",
-    "dst": "/en/intro/start/legal/",
-    "link": "http://localhost:3000/docs/en/intro/start/legal/",
+    "dst": "/en/intro/start/legal",
+    "link": "http://localhost:3000/docs/en/intro/start/legal",
     "hash": null
   },
   {
@@ -799,8 +799,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/billing/service-management/add-card/add-card.md",
-    "dst": "/en/contacts/",
-    "link": "http://localhost:3000/docs/en/contacts/",
+    "dst": "/en/contacts",
+    "link": "http://localhost:3000/docs/en/contacts",
     "hash": null
   },
   {
@@ -1051,8 +1051,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/billing/faq/faq.md",
-    "dst": "/en/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/en/intro/start/account-registration/",
+    "dst": "/en/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/en/intro/start/account-registration",
     "hash": null
   },
   {
@@ -1519,8 +1519,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/service-management/vm/vm-create/vm-create.md",
-    "dst": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
+    "dst": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "hash": null
   },
   {
@@ -9577,8 +9577,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/create/create.md",
-    "dst": "/en/computing/iaas/concepts/volume-sla/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla/",
+    "dst": "/en/computing/iaas/concepts/volume-sla",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla",
     "hash": null
   },
   {
@@ -9649,8 +9649,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/mlflow/service-management/create/create.md",
-    "dst": "/en/computing/iaas/concepts/volume-sla/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla/",
+    "dst": "/en/computing/iaas/concepts/volume-sla",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla",
     "hash": null
   },
   {
@@ -9798,6 +9798,150 @@
     "hash": null
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "dst": "/en/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
+    "hash": "availability_zone"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "dst": "/en/networks/vnet/service-management/net",
+    "link": "http://localhost:3000/docs/en/networks/vnet/service-management/net",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "dst": "/en/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
+    "hash": "flavors"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "dst": "/en/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
+    "hash": "flavors"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/launch/launch.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/create",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/launch/launch.md",
+    "dst": "/en/storage/s3/service-management/buckets/create-bucket",
+    "link": "http://localhost:3000/docs/en/storage/s3/service-management/buckets/create-bucket",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/launch/launch.md",
+    "dst": "/en/storage/s3/service-management/objects/upload-object",
+    "link": "http://localhost:3000/docs/en/storage/s3/service-management/objects/upload-object",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/launch/launch.md",
+    "dst": "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "dst": "/en/kubernetes/k8s/concepts/scale",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/concepts/scale",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
+    "hash": "creating_a_registration_token"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
+    "hash": "creating_an_access_token"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
+    "hash": "getting_a_list_of_access_tokens"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
+    "hash": "creating_an_access_token"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
+    "hash": "getting_a_list_of_access_tokens"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-node-group/manage-node-group.md",
+    "dst": "/en/kubernetes/k8s/service-management/helpers/node-group-settings",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/helpers/node-group-settings",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-node-group/manage-node-group.md",
+    "dst": "/en/kubernetes/k8s/concepts/scale",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/concepts/scale",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/buckets/buckets.md",
+    "dst": "/en/storage/s3",
+    "link": "http://localhost:3000/docs/en/storage/s3",
+    "hash": null
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi/submit-basic-job-pi.md",
     "dst": "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
@@ -9922,96 +10066,6 @@
     "dst": "/en/dbs/dbaas/service-management/delete",
     "link": "http://localhost:3000/docs/en/dbs/dbaas/service-management/delete",
     "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "dst": "/en/computing/iaas/concepts/about",
-    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
-    "hash": "availability_zone"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "dst": "/en/networks/vnet/service-management/net",
-    "link": "http://localhost:3000/docs/en/networks/vnet/service-management/net",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "dst": "/en/computing/iaas/concepts/about",
-    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
-    "hash": "flavors"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "dst": "/en/computing/iaas/concepts/about",
-    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
-    "hash": "flavors"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/mlplatform/jupyterhub/service-management/create",
-    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/mlplatform/jupyterhub/service-management/connect",
-    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
-    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
-    "hash": "creating_a_registration_token"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/mlplatform/jupyterhub/service-management/create",
-    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/mlplatform/jupyterhub/service-management/connect",
-    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
-    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
-    "hash": "creating_an_access_token"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
-    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
-    "hash": "getting_a_list_of_access_tokens"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/mlplatform/jupyterhub/service-management/create",
-    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/create",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/mlplatform/jupyterhub/service-management/connect",
-    "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
-    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
-    "hash": "creating_an_access_token"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
-    "dst": "/en/ml/spark-to-k8s/service-management/tokens",
-    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens",
-    "hash": "getting_a_list_of_access_tokens"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/cloud-voice/concepts/about/about.md",
@@ -10357,8 +10411,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin/manage-vkcloudlogs-plugin.md",
-    "dst": "/en/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/en/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -10369,8 +10423,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin/manage-vkcloudlogs-plugin.md",
-    "dst": "/en/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/en/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -10381,8 +10435,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin/manage-vkcloudlogs-plugin.md",
-    "dst": "/en/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/en/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -10453,8 +10507,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/monitoring/service-management/mon-setup-current/mon-setup-current.md",
-    "dst": "/en/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/en/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -10477,8 +10531,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/monitoring/service-management/mon-setup-current/mon-setup-current.md",
-    "dst": "/en/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/en/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -11287,26 +11341,26 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
-    "dst": "/en/tools-for-using-services/account/service-management/project-settings/manage/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage/",
+    "dst": "/en/tools-for-using-services/account/service-management/project-settings/manage",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
-    "dst": "/en/tools-for-using-services/account/service-management/project-settings/manage/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage/",
+    "dst": "/en/tools-for-using-services/account/service-management/project-settings/manage",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
-    "dst": "/en/tools-for-using-services/account/service-management/project-settings/access-manage/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage/",
+    "dst": "/en/tools-for-using-services/account/service-management/project-settings/access-manage",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage/manage.md",
-    "dst": "/en/tools-for-using-services/account/service-management/project-settings/manage/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage/",
+    "dst": "/en/tools-for-using-services/account/service-management/project-settings/manage",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage",
     "hash": null
   },
   {
@@ -11323,8 +11377,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad/add-fim-for-ad.md",
-    "dst": "/en/tools-for-using-services/account/concepts/rolesandpermissions/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions/",
+    "dst": "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions",
     "hash": null
   },
   {
@@ -11779,8 +11833,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage/access-manage.md",
-    "dst": "/en/tools-for-using-services/account/service-management/project-invitation/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-invitation/",
+    "dst": "/en/tools-for-using-services/account/service-management/project-invitation",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-invitation",
     "hash": null
   },
   {
@@ -11833,8 +11887,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/faq/faq.md",
-    "dst": "/en/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/en/intro/start/account-registration/",
+    "dst": "/en/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/en/intro/start/account-registration",
     "hash": null
   },
   {
@@ -12235,8 +12289,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
-    "dst": "/en/tools-for-using-services/account/concepts/regions/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions/",
+    "dst": "/en/tools-for-using-services/account/concepts/regions",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions",
     "hash": null
   },
   {
@@ -12541,14 +12595,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/api/rest-api/enable-api/enable-api.md",
-    "dst": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
+    "dst": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/api/rest-api/enable-api/enable-api.md",
-    "dst": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
+    "dst": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "hash": null
   },
   {

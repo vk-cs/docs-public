@@ -5681,6 +5681,97 @@
     ]
   },
   {
+    "uuid": "1b5bd1df-c554-4414-9368-c828b1f1eb10",
+    "lang": "en",
+    "type": "SECTION",
+    "level": 3,
+    "partialPath": "/en/ml/spark-to-k8s/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/service-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/service-management.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5c2421fe-fc39-4821-b770-a31c7ed7ca3b",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "23b5fdc6-c538-4475-9406-7f5c0dfd2f37",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/service-management/launch",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/launch/launch.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/launch/launch.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3bd0a0e1-2a8f-458b-a051-f9900faa0110",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/service-management/manage-cluster",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-cluster/manage-cluster.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7ce53948-cc35-4fa6-9f96-639990c2b8f4",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/service-management/tokens",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "1c75813c-8671-49fc-a288-658b7ac3ca32",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/service-management/manage-node-group",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-node-group/manage-node-group.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/manage-node-group/manage-node-group.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2798724f-0fa1-4f06-848d-d13e61844243",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/ml/spark-to-k8s/service-management/buckets",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/buckets/buckets.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/buckets/buckets.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "7abead36-6cc2-4cd5-9911-dcfd878c19ad",
     "lang": "en",
     "type": "SECTION",
@@ -5714,45 +5805,6 @@
     "partialPath": "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse/submit-advanced-job-clickhouse.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse/submit-advanced-job-clickhouse.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "1b5bd1df-c554-4414-9368-c828b1f1eb10",
-    "lang": "en",
-    "type": "SECTION",
-    "level": 3,
-    "partialPath": "/en/ml/spark-to-k8s/service-management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/service-management.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/service-management.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "5c2421fe-fc39-4821-b770-a31c7ed7ca3b",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/en/ml/spark-to-k8s/service-management/create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/create/create.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "7ce53948-cc35-4fa6-9f96-639990c2b8f4",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/en/ml/spark-to-k8s/service-management/tokens",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/spark-to-k8s/service-management/tokens/tokens.md",
     "hidden": false,
     "buildPoints": [
       "common"

@@ -205,8 +205,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/concepts/architecture/architecture.md",
-    "dst": "/ru/intro/it-security/",
-    "link": "http://localhost:3000/docs/ru/intro/it-security/",
+    "dst": "/ru/intro/it-security",
+    "link": "http://localhost:3000/docs/ru/intro/it-security",
     "hash": null
   },
   {
@@ -283,8 +283,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/account-registration/account-registration.md",
-    "dst": "/ru/intro/billing/service-management/corporate/",
-    "link": "http://localhost:3000/docs/ru/intro/billing/service-management/corporate/",
+    "dst": "/ru/intro/billing/service-management/corporate",
+    "link": "http://localhost:3000/docs/ru/intro/billing/service-management/corporate",
     "hash": null
   },
   {
@@ -469,8 +469,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/digital-cloud/policy-infra/policy-infra.md",
-    "dst": "/ru/intro/start/legal/digital-cloud/",
-    "link": "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud/",
+    "dst": "/ru/intro/start/legal/digital-cloud",
+    "link": "http://localhost:3000/docs/ru/intro/start/legal/digital-cloud",
     "hash": null
   },
   {
@@ -529,8 +529,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/digital-cloud/policy-1cgrm/policy-1cgrm.md",
-    "dst": "/ru/intro/start/legal/",
-    "link": "http://localhost:3000/docs/ru/intro/start/legal/",
+    "dst": "/ru/intro/start/legal",
+    "link": "http://localhost:3000/docs/ru/intro/start/legal",
     "hash": null
   },
   {
@@ -841,14 +841,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/vk/cloud-servers/cloud-servers.md",
-    "dst": "/ru/intro/start/legal/vk/policy-privacy/",
-    "link": "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy/",
+    "dst": "/ru/intro/start/legal/vk/policy-privacy",
+    "link": "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/vk/cloud-servers/cloud-servers.md",
-    "dst": "/ru/intro/start/legal/vk/policy-privacy/",
-    "link": "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy/",
+    "dst": "/ru/intro/start/legal/vk/policy-privacy",
+    "link": "http://localhost:3000/docs/ru/intro/start/legal/vk/policy-privacy",
     "hash": null
   },
   {
@@ -1207,8 +1207,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/billing/concepts/balance/balance.md",
-    "dst": "/ru/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/ru/intro/start/account-registration/",
+    "dst": "/ru/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/ru/intro/start/account-registration",
     "hash": null
   },
   {
@@ -1297,8 +1297,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/billing/concepts/physical-corporate/physical-corporate.md",
-    "dst": "/ru/intro/start/legal/",
-    "link": "http://localhost:3000/docs/ru/intro/start/legal/",
+    "dst": "/ru/intro/start/legal",
+    "link": "http://localhost:3000/docs/ru/intro/start/legal",
     "hash": null
   },
   {
@@ -1459,8 +1459,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/billing/service-management/add-card/add-card.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -1723,8 +1723,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/billing/faq/faq.md",
-    "dst": "/ru/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/ru/intro/start/account-registration/",
+    "dst": "/ru/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/ru/intro/start/account-registration",
     "hash": null
   },
   {
@@ -1987,8 +1987,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/platform-security/platform-security.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -2035,8 +2035,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/faq/faq.md",
-    "dst": "/ru/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/ru/intro/start/account-registration/",
+    "dst": "/ru/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/ru/intro/start/account-registration",
     "hash": null
   },
   {
@@ -2395,8 +2395,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/service-management/vm/vm-create/vm-create.md",
-    "dst": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
+    "dst": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "hash": null
   },
   {
@@ -3463,26 +3463,26 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/faq/faq.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/faq/faq.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/faq/faq.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/faq/faq.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -4051,8 +4051,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/vm-licenses/ms-lic/ms-lic.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -13465,8 +13465,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/service-management/manage-node-group/manage-node-group.md",
-    "dst": "/ru/kubernetes/k8s/service-management/helpers/node-group-settings/",
-    "link": "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/helpers/node-group-settings/",
+    "dst": "/ru/kubernetes/k8s/service-management/helpers/node-group-settings",
+    "link": "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/helpers/node-group-settings",
     "hash": null
   },
   {
@@ -16639,26 +16639,26 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
-    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/manage/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/",
+    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/manage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
-    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/manage/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/",
+    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/manage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
-    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/access-manage/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage/",
+    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/access-manage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage/manage.md",
-    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/manage/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/",
+    "dst": "/ru/tools-for-using-services/account/service-management/project-settings/manage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage",
     "hash": null
   },
   {
@@ -17071,8 +17071,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/manage.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -17083,8 +17083,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/manage.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -17191,14 +17191,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/manage.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/manage.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -17245,8 +17245,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/actionslogs/actionslogs.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -17287,8 +17287,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/systemstate/systemstate.md",
-    "dst": "/ru/contacts/",
-    "link": "http://localhost:3000/docs/ru/contacts/",
+    "dst": "/ru/contacts",
+    "link": "http://localhost:3000/docs/ru/contacts",
     "hash": null
   },
   {
@@ -17305,8 +17305,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/faq/faq.md",
-    "dst": "/ru/intro/start/account-registration/",
-    "link": "http://localhost:3000/docs/ru/intro/start/account-registration/",
+    "dst": "/ru/intro/start/account-registration",
+    "link": "http://localhost:3000/docs/ru/intro/start/account-registration",
     "hash": null
   },
   {
@@ -17341,8 +17341,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/concepts/about/about.md",
-    "dst": "/ru/applications-and-services/marketplace/concepts/about/",
-    "link": "http://localhost:3000/docs/ru/applications-and-services/marketplace/concepts/about/",
+    "dst": "/ru/applications-and-services/marketplace/concepts/about",
+    "link": "http://localhost:3000/docs/ru/applications-and-services/marketplace/concepts/about",
     "hash": null
   },
   {
@@ -18475,8 +18475,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/enable-api/enable-api.md",
-    "dst": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/",
+    "dst": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "hash": null
   },
   {
