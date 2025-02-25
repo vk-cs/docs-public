@@ -1,1 +1,1 @@
-Service of notifications about changes in key metrics of cloud services
+Service of notifications about changes in key metrics of cloud services.

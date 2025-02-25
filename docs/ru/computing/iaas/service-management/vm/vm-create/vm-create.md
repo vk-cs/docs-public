@@ -27,7 +27,7 @@
 <tabpanel>
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Проверьте, что баланс счета положителен и [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) достаточно для создания желаемой конфигурации виртуальной машины.   
+1. Проверьте, что баланс счета положителен и [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) достаточно для создания желаемой конфигурации виртуальной машины.
 1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
 1. Нажмите кнопку **Создать инстанс** или **Добавить**.
 1. Задайте параметры ВМ:
@@ -78,7 +78,7 @@
 
 1. Подготовьтесь к работе с OpenStack CLI:
 
-   1. [Включите](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/) двухфакторную аутентификацию.
+   1. [Включите](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию.
    2. [Активируйте](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API для текущего пользователя.
    3. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -182,5 +182,5 @@
 
 ## Что дальше?
 
-- Посмотрите способы подключения к [ВМ Linux](../vm-connect/vm-connect-nix/) или [ВМ Windows](../vm-connect/vm-connect-win/).
-- Узнайте, как [работать с ВМ](../vm-manage/).
+- Посмотрите способы подключения к [ВМ Linux](../vm-connect/vm-connect-nix) или [ВМ Windows](../vm-connect/vm-connect-win).
+- Узнайте, как [работать с ВМ](../vm-manage).

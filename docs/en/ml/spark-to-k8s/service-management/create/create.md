@@ -9,7 +9,7 @@
 1. Go to **ML Platform → Spark in k8s**.
 1. Go to **Clusters** tab.
 1. Click the **Add cluster** or **Add** button.
-1. On the «Create cluster» step:
+1. On the **Create cluster** step:
 
    1. Set general settings:
 
@@ -25,7 +25,7 @@
 
       - **Type of virtual machine:** [configuration template](/en/computing/iaas/concepts/about#flavors) for worker nodes.
 
-        Templates with high-performance CPUs are available [on request to the support service] (mailto:support@mcs.mail.ru). To use these templates, select the **Show only high performance CPUs** option.
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the **Show only high performance CPUs** option.
 
       - **Enable autoscaling**: select this option so that the cluster automatically scales the number of worker nodes depending on the load.
 
@@ -108,7 +108,7 @@
 
    1. Click the **Next step** button.
 
-1. On the «Spark settings» step:
+1. On the **Spark settings** step:
 
    1. (Optional) Set advanced Spark settings. These settings will be used by all Spark jobs that will run in the cluster.
 

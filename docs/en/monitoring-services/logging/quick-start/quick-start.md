@@ -7,5 +7,5 @@
    curl https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
    ```
 
-1. [Generate](../service-management/generate-userdata/) credentials for connecting to the service.
-1. [Install and configure](../service-management/connect-plugin/) the `vkcloudlogs-fluent-bit-plugin` plugin.
+1. [Generate](../service-management/generate-userdata) credentials for connecting to the service.
+1. [Install and configure](../service-management/connect-plugin) the `vkcloudlogs-fluent-bit-plugin` plugin.

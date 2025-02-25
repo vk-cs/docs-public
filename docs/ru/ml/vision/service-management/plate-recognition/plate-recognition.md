@@ -13,8 +13,8 @@
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision/)|
-| VK Cloud  | mr                        | Смотрите в [статье](../../quick-start/auth-vision/)|
+| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| VK Cloud  | mr                        | Смотрите в [статье](../../quick-start/auth-vision)|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 

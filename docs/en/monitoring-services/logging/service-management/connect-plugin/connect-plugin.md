@@ -1,4 +1,4 @@
-1. [Install Fluent Bit](../../quick-start/) if this has not been done before.
+1. [Install Fluent Bit](../../quick-start) if this has not been done before.
 1. Install the `vkcloudlogs-fluent-bit-plugin` plugin.
 
    <tabs>
