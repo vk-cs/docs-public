@@ -31,12 +31,12 @@ You can also ask questions about working with the VK Cloud platform to the [AI â
 
 The use of service beta versions is not charged. If the beta version of the service during the operation uses any charged VK Cloud service, it is paid according to the [price list](https://cloud.vk.com/pricelist).
 
-Technical support for beta versions is limited: providing responses and correcting even critical errors are not guaranteed. Also, the [Service Level Agreement (SLA)](../sla/) is not applied, and the response time is unlimited.<br>Documentation for beta versions may be incomplete or absent
+Technical support for beta versions is limited: providing responses and correcting even critical errors are not guaranteed. Also, the [Service Level Agreement (SLA)](../sla) is not applied, and the response time is unlimited.<br>Documentation for beta versions may be incomplete or absent
 
 | General Availability
 | Stable versions of services that are available to all users for purchase. They can be fully used to solve problems.
 
-These services are subject to billing and the technical support is fully provided according to the [Service Level Agreement (SLA)](../sla/)
+These services are subject to billing and the technical support is fully provided according to the [Service Level Agreement (SLA)](../sla)
 
 |===
 

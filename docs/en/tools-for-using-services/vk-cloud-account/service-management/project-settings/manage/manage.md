@@ -1,6 +1,6 @@
 <info>
 
-Additional project settings are available in [VK Cloud  Management Console](/en/tools-for-using-services/account/service-management/project-settings/manage/).
+Additional project settings are available in [VK Cloud  Management Console](/en/tools-for-using-services/account/service-management/project-settings/manage).
 
 </info>
 

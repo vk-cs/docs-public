@@ -6,7 +6,7 @@ Expenses details are available to users with the [roles](/en/tools-for-using-ser
 
 Deductions and additions for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) are tied to the Moscow Time Zone (GMT+3), in the Kazakhstan region —  to the Astana Time Zone (GMT+6).
 
-The same principle applies to [the formation of accounting documents](../../concepts/report/).
+The same principle applies to [the formation of accounting documents](../../concepts/report).
 
 </warn>
 
@@ -22,7 +22,7 @@ The same principle applies to [the formation of accounting documents](../../conc
 
    <warn>
 
-   Amounts on the tab are rounded to **two decimal places**. A similar principle applies for [services cost calculation](../../tariffication/) and [accounting documents](../../concepts/report/).
+   Amounts on the tab are rounded to **two decimal places**. A similar principle applies for [services cost calculation](../../tariffication) and [accounting documents](../../concepts/report).
 
    </warn>
 

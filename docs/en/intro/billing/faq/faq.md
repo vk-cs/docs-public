@@ -55,7 +55,7 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 [Balance](../concepts/balance) is displayed, if two conditions are met:
 
 - Your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator, or billing administrator.
-- [Registration procedure](/en/intro/start/account-registration/) is completed: phone, email, and card for payment are bound.
+- [Registration procedure](/en/intro/start/account-registration) is completed: phone, email, and card for payment are bound.
 
 </details>
 
@@ -105,7 +105,7 @@ If you do not know your payment scheme, contact the document management departme
 
 <summary>How to pay for the work of a service from a legal entity?</summary>
 
-If you work with VK Cloud on prepayment, [form an invoice](../service-management/bill-generation/) and pay it in your management console.
+If you work with VK Cloud on prepayment, [form an invoice](../service-management/bill-generation) and pay it in your management console.
 
 When working on the post-payment scheme, the invoice and [accounting documents](../concepts/report#legal_entities) for the reporting period are sent via the electronic document management system (EDM) within five working days of the month following the reporting one.
 
@@ -128,7 +128,7 @@ Post-payment is available:
 - Only for legal entities.
 - Only within the framework of an individual contract with VK Cloud.
 
-To activate the postpayment scheme, [conclude an individual contract](../service-management/corporate/) and perform additional project configuration for legal entities in the VK Cloud management console.
+To activate the postpayment scheme, [conclude an individual contract](../service-management/corporate) and perform additional project configuration for legal entities in the VK Cloud management console.
 
 </details>
 
@@ -230,7 +230,7 @@ When working on prepayment with a negative payment account balance, the project 
 To restore the services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. [Replenish](../service-management/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods/). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
+1. [Replenish](../service-management/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
 1. Wait for the activation of services in the project. It can take up to 15 minutes.
 1. Manually activate project resources:
 

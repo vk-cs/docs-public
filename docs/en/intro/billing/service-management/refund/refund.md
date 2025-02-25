@@ -1,7 +1,7 @@
 ## Terms of return
 
 - The request for a refund must be issued by the project owner.
-- The money can only be refunded from the [payment account balance](../../concepts/balance/) of the project. The refund amount cannot exceed the amount of unspent funds on the payment account balance.
+- The money can only be refunded from the [payment account balance](../../concepts/balance) of the project. The refund amount cannot exceed the amount of unspent funds on the payment account balance.
 - The money will be refunded:
 
   - To individuals — to a bank card or an electronic wallet from which the payment account balance was replenished, based on checks.
