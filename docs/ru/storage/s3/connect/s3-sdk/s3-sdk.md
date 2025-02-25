@@ -21,7 +21,7 @@
    </tablist>
    <tabpanel>
 
-   - Endpoint URL: `https://hb.ru-msk.vkcloud-storage.ru`.
+   - Endpoint URL: `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru`.
    - Access Key ID: полученный при создании аккаунта идентификатор ключа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `ru-msk`.
@@ -29,7 +29,7 @@
    </tabpanel>
    <tabpanel>
 
-   - Endpoint URL: `https://hb.kz-ast.bizmrg.com`.
+   - Endpoint URL: `https://hb.kz-ast.vkcloud-storage.com`.
    - Access Key ID: полученный при создании аккаунта идентификатор ключа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `kz-ast`.

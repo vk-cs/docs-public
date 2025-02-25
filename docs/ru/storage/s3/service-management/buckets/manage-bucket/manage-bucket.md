@@ -27,8 +27,8 @@
       Здесь:
 
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+         - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды просмотра списка бакетов</summary>
@@ -95,8 +95,8 @@
 
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
 Команда `ListBuckets` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListBuckets).
 
@@ -123,8 +123,8 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
 Команда `list_buckets` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_buckets.html).
 
@@ -278,8 +278,8 @@ Cloud Storage позволяет синхронизировать объекты
         ```
    Здесь `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    <details>
     <summary>Пример команды обновления локальной директории в соответствии с бакетом</summary>
@@ -443,8 +443,8 @@ Cloud Storage позволяет настроить автоматическое
       - (Опционально) `force` — удаляет бакет и все объекты в нем. Без этого параметра бакет будет удален, только если не содержит объектов.
 
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+         - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды удаления бакета и всех объектов в нем </summary>
