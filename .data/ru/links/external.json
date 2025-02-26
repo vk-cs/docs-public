@@ -357,6 +357,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/vk/legal-terms/legal-terms.md",
+    "link": "https://cloud.vk.com/docs/ru/intro/start/legal/vk"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/vk/legal-terms/legal-terms.md",
+    "link": "https://cloud.vk.com/docs/ru/intro/start/legal/digital-cloud"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/vk/legal-terms/legal-terms.md",
     "link": "mailto:support@mcs.mail.ru"
   },
   {
