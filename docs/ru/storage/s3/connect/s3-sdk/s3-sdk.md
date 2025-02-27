@@ -29,7 +29,7 @@
    </tabpanel>
    <tabpanel>
 
-   - Endpoint URL: `https://hb.kz-ast.vkcloud-storage.com`.
+   - Endpoint URL: `https://hb.kz-ast.vkcloud-storage.ru`.
    - Access Key ID: полученный при создании аккаунта идентификатор ключа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `kz-ast`.
