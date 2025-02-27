@@ -29,7 +29,7 @@ To connect to the object storage using the SDK:
    </tabpanel>
    <tabpanel>
 
-   - Endpoint url: `https://hb.kz-ast.vkcloud-storage.com`.
+   - Endpoint url: `https://hb.kz-ast.vkcloud-storage.ru`.
    - Access Key ID: the key ID received when creating the account.
    - Secret Key: the secret key received when creating the account.
    - Default region name: `kz-ast`.

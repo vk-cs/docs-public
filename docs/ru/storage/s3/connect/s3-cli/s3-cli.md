@@ -60,12 +60,12 @@ VK Cloud позволяет использовать интерфейс кома
   1. Укажите **S3 Endpoint** — имя хоста для подключения:
 
       - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `hb.kz-ast.vkcloud-storage.com` — для региона Казахстан.
+      - `hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
 
   1. Добавьте шаблон имени хоста для доступа к бакету. В параметре **DNS-style bucket+hostname:port template for accessing a bucket** укажите значение:
 
       - `%(bucket)s.hb.vkcloud-storage.ru` или `%(bucket)s.hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `%(bucket)s.hb.kz-ast.vkcloud-storage.com` — для региона Казахстан.
+      - `%(bucket)s.hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
 
   1. Остальные настройки оставьте по умолчанию.
 
@@ -94,7 +94,7 @@ VK Cloud позволяет использовать интерфейс кома
 
 - `<домен>` — регион аккаунта Cloud Storage.  По умолчанию AWS CLI настроен на работу с серверами Amazon, поэтому обязательно указывайте `--endpoint-url` при выполнении любой команды. Возможные значения:
   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Россия;
-  - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+  - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 </tabpanel>
 <tabpanel>
