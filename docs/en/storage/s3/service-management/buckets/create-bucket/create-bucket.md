@@ -96,7 +96,7 @@ Where endpoint is the url:
 
 - Common domain (points to the Moscow region): https://hb.ru-msk.vkcloud-storage.ru
 - Moscow domain: https://hb.ru-msk.vkcloud-storage.ru
-- Kazakhstan domain: https://hb.kz-ast.vkcloud-storage.com
+- Kazakhstan domain: https://hb.kz-ast.vkcloud-storage.ru
 
 The following output will appear as a result of the correct execution of the command:
 
