@@ -6,7 +6,7 @@ Cloud Desktop cannot work without the AD/LDAP user directory service. If your ne
 
 </warn>
 
-To set up a connection to the user directory:
+## 1. Configure connection to user directory
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Service settings**.
@@ -29,7 +29,7 @@ All existing pools will switch to the new connection settings automatically.
 
 </info>
 
-## Checking the directory connection settings
+## 2. Check connection settings
 
 To check the connection settings to the user directory, it is not necessary to save the changes in the settings.
 
