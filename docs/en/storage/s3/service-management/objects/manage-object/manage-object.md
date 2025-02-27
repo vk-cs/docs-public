@@ -29,7 +29,7 @@
 
       - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды просмотра списка объектов</summary>
@@ -104,7 +104,7 @@
 Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
 - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-- `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+- `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 Команда `ListObjectsV2` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
 
@@ -131,7 +131,7 @@
 Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
 - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-- `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+- `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 Команда `list_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
 
@@ -177,7 +177,7 @@
    - `<имя_загруженного файла>` — имя, которое будет присвоено скаченному объекту.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды скачивания объекта</summary>
@@ -254,7 +254,7 @@
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Команда `GetObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
 
@@ -280,7 +280,7 @@
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Команда `get_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_objects).
 
@@ -337,7 +337,7 @@
       - `<настройка_acl>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
       - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды просмотра списка объектов</summary>
@@ -382,7 +382,7 @@
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    - `<время_действия>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
 
    <details>
@@ -467,7 +467,7 @@
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 </tabpanel>
 <tabpanel>
@@ -513,7 +513,7 @@
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 </tabpanel>
 </tabs>
@@ -545,7 +545,7 @@
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды копирования объекта в другой бакет</summary>
@@ -619,7 +619,7 @@
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Команда `CopyObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
 
@@ -654,7 +654,7 @@
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Команда `copy` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy).
 
@@ -683,7 +683,7 @@
    - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды копирования всех объектов бакета в другой бакет</summary>
@@ -750,7 +750,7 @@
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды удаления объекта</summary>
@@ -840,7 +840,7 @@
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Команды [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) и [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) подробно описаны в официальной документации к библиотеке aws-sdk-go.
 
@@ -871,7 +871,7 @@
    Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Команда `delete_objects` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).
 
@@ -914,7 +914,7 @@
     - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    <details>
       <summary>Пример команды просмотра незавершенных загрузок</summary>
@@ -995,7 +995,7 @@
     - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.com` — домен региона Казахстан.
+      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Пример выполнения команды:
 
