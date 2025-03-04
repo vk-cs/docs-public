@@ -15,7 +15,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
    The wizard for creating a new pool opens.
 
-## {heading(1. Set up the pool configuration)[id=setup_pool_configuration]}
+## {heading(1. Set up pool configuration)[id=setup_pool_configuration]}
 
 1. Set the pool configuration parameters:
 
@@ -44,10 +44,11 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
 1. Click the **Next step** button.
 
-## {heading(2. Configure the pool VMs)[id=configure_pool_vms]}
+## {heading(2. Configure pool VMs)[id=configure_pool_vms]}
 
 1. Specify the settings of the virtual machines on which the pool desktops will be created:
 
+    - **Category of virtual machine**: select a [category](/en/computing/iaas/concepts/about#vm_categories) from the list. The category serves as a filter for the **Instance type** box.
     - **Instance type**: select the VM type from the list of types available in the project.
     - **Disk size**: specify the disk size in GB. The value cannot be less than the size of the OS image.
     - **Disk Type**: choose one of the values — `HDD`, `SSD` or `High-IOPS SSD`.
@@ -60,15 +61,15 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
       </info>
 
     - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the pool virtual machines from the list.
-    - **Security group <pool name>**: specify the security groups for the VMs. If you do not specify a value, the group will not be assigned.
 
+1. (Optional) Click the **Add a security group** button and specify additional security groups for the VM. The primary security group named `vdi-desktop-<POOL_NAME>` is assigned to the pool automatically.
 1. Click the **Next step** button.
 
-## 3. Configure the peripherals
+## {heading(3. Configure peripherals)[id=configure_peripherals]}
 
 1. Select [peripheral devices](../../../concepts/about#available_peripherals) that will be available on the pool desktops.
 1. Click the **Create a pool** button.
 
-   The pool will be created within an hour.
+   The pool creation will start. This may take up to 40 minutes.
 
 If the pool is created successfully, a list of created pools will open.

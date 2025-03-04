@@ -40,7 +40,7 @@ Example of using a server group: deploy multiple application VMs on only one nod
 
 On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors.
 
-### Virtual machine categories
+### {heading(Virtual machine categories)[id=vm_categories]}
 
 VMs are grouped into categories in a management console:
 

@@ -67,7 +67,6 @@ After completing all the steps of the quick start, you will:
     - **Disk size**: `15`.
     - **Disk Type**: `HDD`.
     - **Image**: `Astra Linux для VDI`.
-    - **Security group vk-cloud-desktops-pool-quickstart**: `default`.
 
 1. Click the **Next step** button.
 1. At the **Peripherals setup** step, leave the parameters unchanged.
