@@ -69,6 +69,11 @@
     "full": "Delivery of original documents",
     "text": "Delivery of original documents"
   },
+  "vm_categories": {
+    "number": null,
+    "full": "Virtual machine categories",
+    "text": "Virtual machine categories"
+  },
   "cpu_generations": {
     "number": null,
     "full": "CPU generations",
@@ -106,18 +111,23 @@
   },
   "setup_pool_configuration": {
     "number": null,
-    "full": "1. Set up the pool configuration",
-    "text": "1. Set up the pool configuration"
+    "full": "1. Set up pool configuration",
+    "text": "1. Set up pool configuration"
   },
   "configure_pool_vms": {
     "number": null,
-    "full": "2. Configure the pool VMs",
-    "text": "2. Configure the pool VMs"
+    "full": "2. Configure pool VMs",
+    "text": "2. Configure pool VMs"
+  },
+  "configure_peripherals": {
+    "number": null,
+    "full": "3. Configure peripherals",
+    "text": "3. Configure peripherals"
   },
   "delete_pool": {
     "number": null,
-    "full": "Deleting a desktop pool",
-    "text": "Deleting a desktop pool"
+    "full": "Deleting desktop pool",
+    "text": "Deleting desktop pool"
   },
   "migrate_own_licenses": {
     "number": null,
@@ -268,6 +278,11 @@
     "number": null,
     "full": "Autoscaling",
     "text": "Autoscaling"
+  },
+  "alerting": {
+    "number": null,
+    "full": "Kubernetes cluster scaling alert",
+    "text": "Kubernetes cluster scaling alert"
   },
   "placeholder": {
     "number": null,
