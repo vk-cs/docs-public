@@ -4,9 +4,9 @@ You can also [manage all desktops](../../manage-desktops) created in the system 
 
 </info>
 
-## Viewing a list of desktop pools
+## Viewing list of desktop pools
 
-1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Desktop pools**.
 
    A list of previously created desktop pools is displayed.
@@ -15,6 +15,28 @@ You can also [manage all desktops](../../manage-desktops) created in the system 
 
    - Green — **Available** for connecting new desktops.
    - Gray — **Unavailable** for connecting desktops.
+
+## Editing pool parameters
+
+Once a pool is created, you can change any of its parameters except the name, type, and availability zone.
+
+To change the rules for the pool security group, in your personal account or using the Openstack CLI, [add](/en/networks/vnet/service-management/secgroups#adding_a_rule) new rules to the group and [delete](/en/networks/vnet/service-management/secgroups#deleting_a_rule) unnecessary ones.
+
+To change other parameters:
+
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+1. Go to **Cloud Desktop** → **Desktop pools**.
+1. Go to the pool editing page using one of the methods:
+
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required pool and select the **Edit pool** option.
+   - In the list of pools, click the name of the required pool, go to the **Pool parameters** tab and click the **Edit pool** button.
+
+1. (Optional) Change the [pool configuration parameters](/en/computing/cloud-desktops/service-management/desktops-pool/add#setup_pool_configuration).
+1. Click the **Next step** button.
+1. (Optional) Change the [settings of the pool virtual machines](/en/computing/cloud-desktops/service-management/desktops-pool/add#configure_pool_vms).
+1. Click the **Next step** button.
+1. (Optional) Change the [peripherals settings of the pool VMs](/en/computing/cloud-desktops/service-management/desktops-pool/add#configure_peripherals).
+1. Click the **Save changes** button.
 
 ## Managing pool desktops
 
@@ -28,7 +50,7 @@ Available for desktops, all VMs of which are in an emergency state.
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. In the list of pools, click the name of the required pool.
 1. Go to the **Desktops** tab.
@@ -36,7 +58,7 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 1. Click **More** and select the option **Restart**.
 1. Confirm the action.
 
-### Logging out of a session
+### Logging out of session
 
 It is used to force the termination of the user's session.
 
@@ -48,7 +70,7 @@ The VM remains turned on at the end of the session.
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. In the list of pools, click the name of the required pool.
 1. Go to the **Desktops** tab.
@@ -56,11 +78,11 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 1. Click **More** and select the option **End session**.
 1. Confirm the action.
 
-## Sending a message to pool users
+## Sending message to pool users
 
 This is a group operation: if necessary, you can send a message to users of several pools by selecting them using checkboxes.
 
-1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Check the box for the required pool.
 1. Click the **Message to users** button.
@@ -71,7 +93,7 @@ This is a group operation: if necessary, you can send a message to users of seve
 
 1. Click the **Send message** button.
 
-## {heading(Deleting a desktop pool)[id=delete_pool]}
+## {heading(Deleting desktop pool)[id=delete_pool]}
 
 <warn>
 
@@ -81,7 +103,7 @@ The deleted pool cannot be restored. If there are desktops in the pool, they wil
 
 This is a group operation: if necessary, you can delete several pools at once by selecting them using the checkboxes.
 
-1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Delete the pool using one of the following methods:
 
