@@ -83,6 +83,18 @@ You can change the master node VM flavor to a flavor with smaller CPU and RAM on
 
 You can [configure](../../service-management/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes. The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
+## {heading(Kubernetes cluster scaling alert)[id=alerting]}
+
+To receive notifications about cluster or node group scaling, [set up](/en/monitoring-services/alerting/triggers/triggers-add) a trigger in the Cloud Alerting service. The trigger can be configured by the following metrics:
+
+- `kubernetes_master_vscale` — vertical scaling of the cluster master node.
+- `kubernetes_worker_vscale` — vertical scaling of a node group.
+- `kubernetes_worker_hscale` — horizontal scaling of a node group.
+
+To receive timely notifications about cluster scaling, specify the trigger condition as `greater than 0` and the comparison interval as `1 minute`.
+
+When a trigger occurs, you will receive a notification on the selected channel.
+
 ## Current restrictions
 
 - Vertical scaling capabilities are limited by [current quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) and available [virtual machine templates](../flavors#configuration_templates).
