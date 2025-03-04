@@ -2833,6 +2833,12 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
+    "dst": "/en/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
+    "hash": "vm_categories"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/add/add.md",
     "dst": "/en/computing/iaas/service-management/images/images-manage",
     "link": "http://localhost:3000/docs/en/computing/iaas/service-management/images/images-manage",
     "hash": "importing_an_image"
@@ -2854,6 +2860,30 @@
     "dst": "/en/computing/cloud-desktops/service-management/manage-desktops",
     "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/manage-desktops",
     "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
+    "dst": "/en/networks/vnet/service-management/secgroups",
+    "link": "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups",
+    "hash": "deleting_a_rule"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
+    "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "setup_pool_configuration"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
+    "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "configure_pool_vms"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
+    "dst": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "hash": "configure_peripherals"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/desktops-pool/manage/manage.md",
@@ -6496,6 +6526,12 @@
     "dst": "/en/kubernetes/k8s/service-management/scale",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale",
     "hash": "autoscale_worker_nodes"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/scale/scale.md",
+    "dst": "/en/monitoring-services/alerting/triggers/triggers-add",
+    "link": "http://localhost:3000/docs/en/monitoring-services/alerting/triggers/triggers-add",
+    "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/scale/scale.md",
