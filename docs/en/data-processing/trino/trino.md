@@ -1,0 +1,1 @@
+Cloud Trino is a high-performance distributed SQL engine designed to process large amounts of data located in different sources.  
