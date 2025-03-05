@@ -1,0 +1,10 @@
+{
+  "title": "Joomla deployment",
+  "pageDescription": "Steps to deploy Joomla to a VK Cloud target project using Marketplace. Deploy Joomla service for creating and managing websites.",
+  "shortDescription": "Deploying the Joomla service to create and manage websites",
+  "metaTitle": "Joomla deployment",
+  "metaDescription": "Marketplace VK Cloud: steps to deploy Joomla service for creating and managing websites",
+  "sectionTitle": "Joomla deployment",
+  "icon": "",
+  "weight": 10
+}
