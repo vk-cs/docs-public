@@ -1,0 +1,11 @@
+{
+  "title": "Cloud Trino",
+  "pageDescription": "A service for creating and managing Trino clusters in the VK Cloud infrastructure.",
+  "shortDescription": "SQL engine for processing big data from remote sources",
+  "metaTitle": "Cloud Trino",
+  "metaDescription": "Service for creating and managing Trino clusters in VK Cloud infrastructure",
+  "sectionTitle": "Cloud Trino",
+  "icon": "",
+  "weight": 50,
+  "isBeta": true
+}
