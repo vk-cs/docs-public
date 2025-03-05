@@ -1,0 +1,10 @@
+{
+  "title": "Concepts",
+  "pageDescription": "A detailed description of the Trino service principles of operation and design in VK Cloud.",
+  "shortDescription": "How the Trino service is organised in VK Cloud: functional features and internal architecture",
+  "metaTitle": "Concepts",
+  "metaDescription": "How the Trino service is organised in VK Cloud: functional features and internal architecture",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2
+}

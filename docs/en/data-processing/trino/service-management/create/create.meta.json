@@ -1,0 +1,10 @@
+{
+  "title": "Service instance creation",
+  "pageDescription": "How to create an instance of Cloud Trino service in the VK Cloud project.",
+  "shortDescription": "How to create a Cloud Trino instance in the right configuration",
+  "metaTitle": "Service instance creation",
+  "metaDescription": "How to create a service instance in the desired configuration.",
+  "sectionTitle": "Service instance creation",
+  "icon": "",
+  "weight": 1
+}
