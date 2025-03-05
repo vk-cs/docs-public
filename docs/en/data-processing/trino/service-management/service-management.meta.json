@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Trino in VK Cloud: creating a service instance, managing the instance and it's components",
   "sectionTitle": "Service management",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "63d96e86-5dad-417d-ba66-de9511b85046"
 }

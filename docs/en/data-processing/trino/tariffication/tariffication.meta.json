@@ -6,5 +6,6 @@
   "metaDescription": "Trino VK Cloud: features of service tariffication, cost calculation",
   "sectionTitle": "Tariffication",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "14e6f4a5-0f6c-4a22-a997-28ac948a350f"
 }

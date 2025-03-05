@@ -409,6 +409,46 @@
     "full": "Changing administrator password",
     "text": "Changing administrator password"
   },
+  "rename": {
+    "number": null,
+    "full": "Renaming service instance",
+    "text": "Renaming service instance"
+  },
+  "view": {
+    "number": null,
+    "full": "View service instance parameters",
+    "text": "View service instance parameters"
+  },
+  "status": {
+    "number": null,
+    "full": "Viewing status of components",
+    "text": "Viewing status of components"
+  },
+  "scaling": {
+    "number": null,
+    "full": "Scaling service instance",
+    "text": "Scaling service instance"
+  },
+  "add_admin": {
+    "number": null,
+    "full": "Creating administrator account",
+    "text": "Creating administrator account"
+  },
+  "add_connect": {
+    "number": null,
+    "full": "Adding connection",
+    "text": "Adding connection"
+  },
+  "delete_connect": {
+    "number": null,
+    "full": "Deleting connection",
+    "text": "Deleting connection"
+  },
+  "maintenance": {
+    "number": null,
+    "full": "Change in service period",
+    "text": "Change in service period"
+  },
   "with_jh": {
     "number": null,
     "full": "Connection with JupyterHub",

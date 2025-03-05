@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Trino in VK Cloud: features and application of the service  ",
   "sectionTitle": "About service",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "741bf51c-3460-4d1a-b4ec-b20faa8e72e1"
 }

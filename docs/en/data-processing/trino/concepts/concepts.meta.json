@@ -6,5 +6,6 @@
   "metaDescription": "How the Trino service is organised in VK Cloud: functional features and internal architecture",
   "sectionTitle": "Concepts",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "7612b5cf-85e7-4142-a7c0-972df2ba7df4"
 }

@@ -6,5 +6,6 @@
   "metaDescription": "Marketplace VK Cloud: steps to deploy Joomla service for creating and managing websites",
   "sectionTitle": "Joomla deployment",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "uuid": "6acde0fd-d1b7-49bb-81f4-fdf6187c169d"
 }

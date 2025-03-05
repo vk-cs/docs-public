@@ -4205,7 +4205,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/create/create.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/service-management/create/create.md",
@@ -4233,6 +4233,46 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/flink/tariffication/tariffication.md",
+    "link": "https://cloud.vk.com/pricing"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/about/about.md",
+    "link": "https://trino.io"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/about/about.md",
+    "link": "https://trino.io/docs/current/overview/concepts.html"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.md",
+    "link": "https://www.postgresql.org/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.md",
+    "link": "https://greenplum.org"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.md",
+    "link": "https://clickhouse.com/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.md",
+    "link": "https://aws.amazon.com/s3/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/management/management.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/management/management.md",
+    "link": "https://msk.cloud.vk.com/app"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/tariffication/tariffication.md",
     "link": "https://cloud.vk.com/pricing"
   },
   {
@@ -4970,6 +5010,18 @@
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.md",
     "link": "https://docs.victoriametrics.com/guides/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://github.com/binhnk0791/joomla/blob/master/LICENSE.txt"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://msk.cloud.vk.com/app"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "link": "https://docs.joomla.org/Main_Page/ru"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/service-management/pr-instance-add/pr-instance-add.md",

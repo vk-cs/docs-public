@@ -6,5 +6,6 @@
   "metaDescription": "VK Cloud: Cloud Trino service architecture",
   "sectionTitle": "Service architecture",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "ea54a9fc-ecf9-4823-967f-f9368949c7f3"
 }

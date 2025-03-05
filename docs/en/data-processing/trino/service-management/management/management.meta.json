@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Trino: management of service instance components in the project",
   "sectionTitle": "Working with service components",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "3b62050c-e930-4870-9a7b-4720044256eb"
 }
