@@ -9576,6 +9576,54 @@
     "hash": null
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.md",
+    "dst": "/ru/storage/s3",
+    "link": "http://localhost:3000/docs/ru/storage/s3",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.md",
+    "dst": "/en/kubernetes/k8s",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.md",
+    "dst": "/en/networks/vnet/concepts/architecture",
+    "link": "http://localhost:3000/docs/en/networks/vnet/concepts/architecture",
+    "hash": "sdns_used"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.md",
+    "dst": "/en/intro/start/concepts/architecture",
+    "link": "http://localhost:3000/docs/en/intro/start/concepts/architecture",
+    "hash": "az"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.md",
+    "dst": "/en/data-processing/trino/service-management/management",
+    "link": "http://localhost:3000/docs/en/data-processing/trino/service-management/management",
+    "hash": "change_password"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/management/management.md",
+    "dst": "/en/data-processing/trino/service-management/management",
+    "link": "http://localhost:3000/docs/en/data-processing/trino/service-management/management",
+    "hash": "change_password"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/tariffication/tariffication.md",
+    "dst": "/en/intro/billing",
+    "link": "http://localhost:3000/docs/en/intro/billing",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/tariffication/tariffication.md",
+    "dst": "/en/networks/vnet/tariffication",
+    "link": "http://localhost:3000/docs/en/networks/vnet/tariffication",
+    "hash": null
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/concepts/mlflow-modes/mlflow-modes.md",
     "dst": "/en/ml/mlplatform/jupyterhub/service-management",
     "link": "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management",
@@ -11227,6 +11275,54 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.md",
+    "dst": "/en/applications-and-services/marketplace/service-management/pr-instance-manage",
+    "link": "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-manage",
+    "hash": "updating_access_to_a_service_instance"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/networks/vnet/service-management/net",
+    "link": "http://localhost:3000/docs/en/networks/vnet/service-management/net",
+    "hash": "creating_network"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/networks/vnet/service-management/net",
+    "link": "http://localhost:3000/docs/en/networks/vnet/service-management/net",
+    "hash": "editing_network"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/monitoring-services/monitoring",
+    "link": "http://localhost:3000/docs/en/monitoring-services/monitoring",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/intro/start/concepts/architecture",
+    "link": "http://localhost:3000/docs/en/intro/start/concepts/architecture",
+    "hash": "az"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
+    "hash": "flavors"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/computing/iaas/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/iaas/concepts/about",
+    "hash": "disks"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
+    "dst": "/en/storage/s3/concepts/about",
+    "link": "http://localhost:3000/docs/en/storage/s3/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
     "dst": "/en/applications-and-services/marketplace/service-management/pr-instance-manage",
     "link": "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-manage",
     "hash": "updating_access_to_a_service_instance"

@@ -5187,6 +5187,110 @@
     ]
   },
   {
+    "uuid": "1648f6d7-10a9-4177-bd9b-125ce015a7fe",
+    "lang": "en",
+    "type": "SECTION",
+    "level": 2,
+    "partialPath": "/en/data-processing/trino",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/trino.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/trino.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7612b5cf-85e7-4142-a7c0-972df2ba7df4",
+    "lang": "en",
+    "type": "SECTION",
+    "level": 3,
+    "partialPath": "/en/data-processing/trino/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/concepts.meta.json",
+    "mdFullPath": null,
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "741bf51c-3460-4d1a-b4ec-b20faa8e72e1",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/trino/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/about/about.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ea54a9fc-ecf9-4823-967f-f9368949c7f3",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/trino/concepts/architecture",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/concepts/architecture/architecture.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "63d96e86-5dad-417d-ba66-de9511b85046",
+    "lang": "en",
+    "type": "SECTION",
+    "level": 3,
+    "partialPath": "/en/data-processing/trino/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/service-management.meta.json",
+    "mdFullPath": null,
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b79bc402-44ba-4c8d-9fca-d074a17ac4a0",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/trino/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/create/create.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3b62050c-e930-4870-9a7b-4720044256eb",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/data-processing/trino/service-management/management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/management/management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/service-management/management/management.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "14e6f4a5-0f6c-4a22-a997-28ac948a350f",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 3,
+    "partialPath": "/en/data-processing/trino/tariffication",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/tariffication/tariffication.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/data-processing/trino/tariffication/tariffication.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "72405ea3-c208-49eb-a10b-c7873e46e997",
     "lang": "en",
     "type": "SECTION",
@@ -6962,6 +7066,19 @@
     "partialPath": "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6acde0fd-d1b7-49bb-81f4-fdf6187c169d",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/en/applications-and-services/marketplace/initial-configuration/joomla-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/joomla-start/joomla-start.md",
     "hidden": false,
     "buildPoints": [
       "common"
