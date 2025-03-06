@@ -1,0 +1,10 @@
+{
+    "title": "Использование TLS-протокола для подключения к PostgreSQL",
+    "pageDescription": "Подключение к базе данных PostgreSQL с помощью протокола TLS.",
+    "shortDescription": "Подробное руководство по настройке и использованию TLS для защиты данных от несанкционированного доступа",
+    "metaTitle": "Использование TLS-протокола для подключения к PostgreSQL",
+    "metaDescription": "Cloud Databases в VK Cloud: использование TLS-протокола для подключения к PostgreSQL.",
+    "sectionTitle": "Использование TLS-протокола для подключения к PostgreSQL",
+    "icon": "",
+    "weight": 6
+}
