@@ -4095,6 +4095,19 @@
     ]
   },
   {
+    "uuid": "9799a1b4-4704-43c6-b031-cb7faf1393cc",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/how-to-guides/tls-connect/tls-connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/how-to-guides/tls-connect/tls-connect.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "bd897921-5f48-486d-b348-00b340cd3a7e",
     "lang": "ru",
     "type": "SECTION",

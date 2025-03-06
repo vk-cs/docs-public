@@ -3256,6 +3256,10 @@
     "link": "https://grafana.com/grafana/dashboards/1860-node-exporter-full/"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/how-to-guides/tls-connect/tls-connect.md",
+    "link": "https://msk.cloud.vk.com/app"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/monitoring/postgresql/postgresql.md",
     "link": "https://msk.cloud.vk.com/app/"
   },

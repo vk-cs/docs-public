@@ -7374,6 +7374,42 @@
     "hash": null
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/connect/connect.md",
+    "dst": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/connect/connect.md",
+    "dst": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/connect/connect.md",
+    "dst": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/connect/connect.md",
+    "dst": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/connect/connect.md",
+    "dst": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/connect/connect.md",
+    "dst": "/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/tls-connect",
+    "hash": null
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/service-management/create/create-single-replica/create-single-replica.md",
     "dst": "/ru/dbs/dbaas/concepts/work-configs",
     "link": "http://localhost:3000/docs/ru/dbs/dbaas/concepts/work-configs",
@@ -8062,6 +8098,24 @@
     "dst": "/ru/networks/vnet/service-management/net",
     "link": "http://localhost:3000/docs/ru/networks/vnet/service-management/net",
     "hash": "udalenie_seti"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/how-to-guides/tls-connect/tls-connect.md",
+    "dst": "/ru/dbs/dbaas/service-management/create",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/service-management/create",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/how-to-guides/tls-connect/tls-connect.md",
+    "dst": "/ru/dbs/dbaas/connect",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/connect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/how-to-guides/tls-connect/tls-connect.md",
+    "dst": "/ru/dbs/dbaas/service-management/manage-instance/postgresql",
+    "link": "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/postgresql",
+    "hash": "udalenie_instansa_bd_ili_ego_hostov"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/monitoring/postgresql/postgresql.md",
