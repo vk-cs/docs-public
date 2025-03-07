@@ -2,17 +2,17 @@ To connect to the object storage using the SDK:
 
 1. Install the necessary tools or SDK:
 
-   - [Tools for PowerShell](https://docs.aws.amazon.com/powershell/).
+   - [Tools for PowerShell](https://docs.aws.amazon.com/powershell).
    - [SDK for Java](https://docs.aws.amazon.com/sdk-for-java/index.html).
    - [SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/index.html).
    - [SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/index.html).
    - [SDK for Ruby](https://docs.aws.amazon.com/sdk-for-ruby/index.html).
    - [SDK for Python (Boto)](http://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
    - [SDK for PHP](https://docs.aws.amazon.com/sdk-for-php/index.html).
-   - [SDK for Go](https://docs.aws.amazon.com/sdk-for-go/).
-   - [Mobile SDK for iOS and Android](https://docs.amplify.aws/).
+   - [SDK for Go](https://docs.aws.amazon.com/sdk-for-go).
+   - [Mobile SDK for iOS and Android](https://docs.amplify.aws).
 
-1. Create [account](../../service-management/account-management/) and [bucket](../../service-management/buckets/create-bucket/) if this has not been done before. Save the connection details:
+1. Create [account](../../service-management/account-management) and [bucket](../../service-management/buckets/create-bucket) if this has not been done before. Save the connection details:
 
    <tabs>
    <tablist>

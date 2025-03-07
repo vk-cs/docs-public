@@ -1,11 +1,11 @@
 {
-  "title": "Public DNS logged events",
+  "title": "Public DNS events",
   "pageDescription": "Events that Public DNS reports to Cloud Audit.",
   "shortDescription": "Events that Public DNS reports to Cloud Audit",
-  "metaTitle": "Public DNS logged events",
+  "metaTitle": "Public DNS events",
   "metaDescription": "Events that Public DNS reports to Cloud Audit",
-  "sectionTitle": "Public DNS logged events",
+  "sectionTitle": "Public DNS events",
   "icon": "",
-  "weight": 10,
+  "weight": 0,
   "uuid": "def67999-e77c-489c-84be-b1242d6d7fe5"
 }

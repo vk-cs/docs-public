@@ -4,7 +4,7 @@ Before uploading an object to the storage, you should create a bucket for its pl
 
 <note>
 
-There is no charge for creating a bucket. The fee is charged only for storing objects in the bucket and for moving objects to and from the bucket. Additional information about the cost of storage and operations can be obtained at [website](https://cloud.vk.com/pricing/).
+There is no charge for creating a bucket. The fee is charged only for storing objects in the bucket and for moving objects to and from the bucket. Additional information about the cost of storage and operations can be obtained at [website](https://cloud.vk.com/pricing).
 
 </note>
 

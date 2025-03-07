@@ -1,11 +1,11 @@
 Чтобы установить мониторинг в существующую виртуальную машину:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Откройте страницу ВМ, нажав на ее имя в общем списке.
 1. На вкладке **Общая информация** под основной информацией о ВМ перейдите на вкладку **Настройка мониторинга**.
 1. Скопируйте появившуюся команду.
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect) к виртуальной машине.
 1. На подключенной ВМ выполните скопированную ранее команду.
 
 Агент мониторинга будет установлен и станет запускаться каждый раз при старте ВМ.
@@ -16,7 +16,7 @@
 1. [Получите токен доступа](/ru/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
 1. [Получите Project ID](/ru/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id), специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
 1. [Получите ID виртуальной машины](/ru/computing/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect) к виртуальной машине.
 1. Выполните команду:
 
    <tabs>

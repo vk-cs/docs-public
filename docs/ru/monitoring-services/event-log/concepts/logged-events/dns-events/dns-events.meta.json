@@ -1,11 +1,11 @@
 {
-  "title": "Регистрируемые события Public DNS",
+  "title": "События Public DNS",
   "pageDescription": "События, которые Public DNS передает в Cloud Audit.",
   "shortDescription": "События, которые Public DNS передает в Cloud Audit",
-  "metaTitle": "Регистрируемые события Public DNS",
+  "metaTitle": "События Public DNS",
   "metaDescription": "События, которые Public DNS передает в Cloud Audit",
-  "sectionTitle": "Регистрируемые события Public DNS",
+  "sectionTitle": "События Public DNS",
   "icon": "",
-  "weight": 10,
+  "weight": 0,
   "uuid": "42261b89-65a9-4074-9e70-24d957b58d08"
 }

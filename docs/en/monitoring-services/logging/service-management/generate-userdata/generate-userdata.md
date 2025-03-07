@@ -12,7 +12,7 @@ To generate the credentials for the service:
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Monitoring** → **Logging**.
 1. Click the **Settings** button.
 1. Go to the **User credential generation** tab.

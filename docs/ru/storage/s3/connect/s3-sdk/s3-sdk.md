@@ -2,17 +2,17 @@
 
 1. Установите нужные инструменты или SDK:
 
-   - [Инструменты для PowerShell](https://docs.aws.amazon.com/powershell/).
+   - [Инструменты для PowerShell](https://docs.aws.amazon.com/powershell).
    - [SDK для Java](https://docs.aws.amazon.com/sdk-for-java/index.html).
    - [SDK для .NET](https://docs.aws.amazon.com/sdk-for-net/index.html).
    - [SDK для JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/index.html).
    - [SDK для Ruby](https://docs.aws.amazon.com/sdk-for-ruby/index.html).
    - [SDK для Python (Boto)](http://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
    - [SDK для PHP](https://docs.aws.amazon.com/sdk-for-php/index.html).
-   - [SDK для Go](https://docs.aws.amazon.com/sdk-for-go/).
-   - [Mobile SDK для iOS и Android](https://docs.amplify.aws/).
+   - [SDK для Go](https://docs.aws.amazon.com/sdk-for-go).
+   - [Mobile SDK для iOS и Android](https://docs.amplify.aws).
 
-1. Создайте [аккаунт](../../service-management/account-management/) и [бакет](../../service-management/buckets/create-bucket/), если этого не было сделано ранее. Сохраните реквизиты для подключения:
+1. Создайте [аккаунт](../../service-management/account-management) и [бакет](../../service-management/buckets/create-bucket), если этого не было сделано ранее. Сохраните реквизиты для подключения:
 
    <tabs>
    <tablist>

@@ -8,7 +8,7 @@ For more information about how to pay for the service, see the [Billing](/en/int
 
 ## What is charged
 
-Tarrification in Cloud storage depends on the data [storage class](../service-management/change-storage-class/).
+Tarrification in Cloud storage depends on the data [storage class](../service-management/change-storage-class).
 
 For the Hotbox and Icebox classes, you pay for:
 
@@ -22,4 +22,4 @@ For the Backup storage class, you pay only for the volume of stored data (per GB
 ## What is not charged
 
 - Incoming traffic.
-- [API](../concepts/s3-api/) usage.
+- [API](../concepts/s3-api) usage.
