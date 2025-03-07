@@ -10,10 +10,10 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 ## Before you start
 
-1. Make sure the [AWS CLI](https://aws.amazon.com/en/cli/) is installed.
+1. Make sure the [AWS CLI](https://aws.amazon.com/en/cli) is installed.
 1. Create an account for the Cloud Storage service:
 
-   1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/).
+   1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app).
    1. Select a project.
    1. Go to the **Object Storage → Accounts** section.
    1. Click the **Add account** or **Add** button.
@@ -44,7 +44,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 ## 1. Create bucket
 
-1. Go to your VK Cloud [management console](https://cloud.vk.com/app/).
+1. Go to your VK Cloud [management console](https://cloud.vk.com/app).
 1. Select a project.
 1. Go to **Object Storage → Buckets**.
 1. Click the **Create bucket** or **Add** button.
@@ -57,7 +57,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 1. Add an object:
 
-   1. In your VK Cloud [management console](https://cloud.vk.com/app/) go to the **Object storage → Buckets** section.
+   1. In your VK Cloud [management console](https://cloud.vk.com/app) go to the **Object storage → Buckets** section.
    1. Click on the name of the created bucket.
    1. Click the **Add file** button.
    1. Make sure that the `private` ACL settings are selected.
@@ -102,7 +102,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 1. Add an object:
 
-   1. In your VK Cloud [management console](https://cloud.vk.com/app/) go to the **Object storage → Buckets** section.
+   1. In your VK Cloud [management console](https://cloud.vk.com/app) go to the **Object storage → Buckets** section.
    1. Click on the name of the created bucket.
    1. Click the **Add file** button.
    1. Make sure that the `public-read` ACL settings are selected.
@@ -110,7 +110,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 1. Grant access to the uploaded object via a direct link:
 
-   1. In your VK Cloud [management console](https://cloud.vk.com/app/) go to the **Object storage → Buckets** section.
+   1. In your VK Cloud [management console](https://cloud.vk.com/app) go to the **Object storage → Buckets** section.
    1. Expand the menu of the previously loaded object and select **Access to file**.
    1. Save the generated direct link.
 

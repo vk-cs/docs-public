@@ -16,8 +16,8 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 ## Подготовительные шаги
 
-1. Создайте [аккаунт](../../service-management/access-management/access-keys/) и [бакет](../../service-management/buckets/create-bucket/) `uc_bucket`.
-1. Убедитесь, что у вас [установлен и настроен](../../connect/s3-cli/) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
+1. Создайте [аккаунт](../../service-management/access-management/access-keys) и [бакет](../../service-management/buckets/create-bucket) `uc_bucket`.
+1. Убедитесь, что у вас [установлен и настроен](../../connect/s3-cli) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
 
    ```txt
    [default]

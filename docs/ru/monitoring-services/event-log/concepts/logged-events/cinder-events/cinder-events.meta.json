@@ -1,0 +1,11 @@
+{
+  "title": "События компонента Cinder",
+  "pageDescription": "События, которые сервис управления дисками и их снимками передает в Cloud Audit.",
+  "shortDescription": "События, которые сервис управления дисками и их снимками передает в Cloud Audit",
+  "metaTitle": "События компонента Cinder",
+  "metaDescription": "События, которые сервис управления дисками и их снимками передает в Cloud Audit",
+  "sectionTitle": "События компонента Cinder",
+  "icon": "",
+  "weight": 5,
+  "uuid": "5e977c7c-5fe7-4041-a585-1b664fff1599"
+}
