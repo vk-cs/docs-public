@@ -1,0 +1,10 @@
+{
+  "title": "Cinder component events",
+  "pageDescription": "Events that the service of disk and snapshot management reports to Cloud Audit.",
+  "shortDescription": "Events that the service of disk and snapshot management reports to Cloud Audit",
+  "metaTitle": "Cinder component events",
+  "metaDescription": "Events that the service of disk and snapshot management reports to Cloud Audit",
+  "sectionTitle": "Cinder component events",
+  "icon": "",
+  "weight": 5
+}

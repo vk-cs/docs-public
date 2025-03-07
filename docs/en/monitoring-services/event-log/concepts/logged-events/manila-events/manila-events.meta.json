@@ -1,11 +1,11 @@
 {
-  "title": "Logged events with file storages",
+  "title": "Manila component events",
   "pageDescription": "Events that the service of file storages reports to Cloud Audit.",
   "shortDescription": "Events that the service of file storages reports to Cloud Audit",
-  "metaTitle": "Logged events with file storages",
+  "metaTitle": "Manila component events",
   "metaDescription": "Events that the service of file storages reports to Cloud Audit",
-  "sectionTitle": "Logged events with file storages",
+  "sectionTitle": "Manila component events",
   "icon": "",
-  "weight": 16,
+  "weight": 2,
   "uuid": "73a08f7d-98b5-46af-8504-3463767ccffa"
 }

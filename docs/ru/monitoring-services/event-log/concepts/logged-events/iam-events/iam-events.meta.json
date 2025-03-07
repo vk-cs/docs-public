@@ -1,11 +1,11 @@
 {
-  "title": "Регистрируемые события сервиса IAM",
-  "pageDescription": "События, которые IAM передает в Cloud Audit.",
-  "shortDescription": "События, которые IAM передает в Cloud Audit",
-  "metaTitle": "Регистрируемые события сервиса IAM",
-  "metaDescription": "События, которые IAM передает в Cloud Audit",
-  "sectionTitle": "Регистрируемые события сервиса IAM",
+  "title": "События сервиса IAM",
+  "pageDescription": "События, которые сервис управления идентификацией и доступом передает в Cloud Audit.",
+  "shortDescription": "События, которые сервис управления идентификацией и доступом передает в Cloud Audit",
+  "metaTitle": "События сервиса IAM",
+  "metaDescription": "События, которые сервис управления идентификацией и доступом передает в Cloud Audit",
+  "sectionTitle": "События сервиса IAM",
   "icon": "",
-  "weight": 15,
+  "weight": 1,
   "uuid": "163317ce-ff2d-4ffd-98e5-e8a3194f8700"
 }
