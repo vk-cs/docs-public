@@ -4,7 +4,7 @@ The trigger has a comparison interval. If set, the metric value must satisfy the
 
 To create a trigger:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to the **Monitoring → Alerts** section.
 1. Open the **Triggers** tab, click the **Add** button.
 1. Set the trigger parameters:

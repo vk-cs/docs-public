@@ -6,7 +6,7 @@
 
 ## {heading(Просмотр журнала событий)[id=view_events_list]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 
    Отобразится список событий, разрешенных к просмотру для вашей [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions) в проекте.
@@ -17,7 +17,7 @@
 
 ## {heading(Использование фильтров и поисковых запросов)[id=filter_events_list]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 
    Отобразится список событий, разрешенных к просмотру для вашей [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions) в проекте.
@@ -35,7 +35,7 @@
 
 ## {heading(Экспорт списка событий)[id=export_events_list]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 
     Отобразится список событий, разрешенных к просмотру для вашей [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions) в проекте.
