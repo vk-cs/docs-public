@@ -1,4 +1,4 @@
-Cloud Servers — сервис облачных вычислений для управления виртуальными машинами на платформе VK Cloud.
+{include(/ru/_includes/_cloud_servers_intro.md)}
 
 ## Виртуальные машины
 
