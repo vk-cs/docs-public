@@ -2197,27 +2197,27 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/quick-start/quick-start.md",
-    "link": "https://aws.amazon.com/ru/cli/"
+    "link": "https://aws.amazon.com/ru/cli"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/quick-start/quick-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/concepts/about/about.md",
@@ -2233,7 +2233,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-cli/s3-cli.md",
-    "link": "https://s3tools.org/kb/"
+    "link": "https://s3tools.org/kb"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-file-managers/s3-file-managers.md",
@@ -2245,11 +2245,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-file-managers/s3-file-managers.md",
-    "link": "https://disk-o.cloud/ru/"
+    "link": "https://disk-o.cloud/ru"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-sdk/s3-sdk.md",
-    "link": "https://docs.aws.amazon.com/powershell/"
+    "link": "https://docs.aws.amazon.com/powershell"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-sdk/s3-sdk.md",
@@ -2277,11 +2277,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-sdk/s3-sdk.md",
-    "link": "https://docs.aws.amazon.com/sdk-for-go/"
+    "link": "https://docs.aws.amazon.com/sdk-for-go"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-sdk/s3-sdk.md",
-    "link": "https://docs.amplify.aws/"
+    "link": "https://docs.amplify.aws"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/connect/s3-sdk/s3-sdk.md",
@@ -2289,7 +2289,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/create-bucket/create-bucket.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/create-bucket/create-bucket.md",
@@ -2317,7 +2317,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/manage-bucket/manage-bucket.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/manage-bucket/manage-bucket.md",
@@ -2333,11 +2333,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/manage-bucket/manage-bucket.md",
-    "link": "https://habr.com/ru/companies/vk/articles/510110/"
+    "link": "https://habr.com/ru/companies/vk/articles/510110"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/manage-bucket/manage-bucket.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/manage-bucket/manage-bucket.md",
@@ -2345,7 +2345,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/upload-object/upload-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/upload-object/upload-object.md",
@@ -2365,7 +2365,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
@@ -2381,7 +2381,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
@@ -2393,7 +2393,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
@@ -2409,7 +2409,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
@@ -2421,35 +2421,35 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/objects/manage-object/manage-object.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/change-storage-class/change-storage-class.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/access-management/access-keys/access-keys.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/access-management/access-keys/access-keys.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/access-management/access-keys/access-keys.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/access-management/access-keys/access-keys.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/access-management/access-keys/access-keys.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/access-management/s3-acl/s3-acl.md",
@@ -3601,6 +3601,18 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/manage/manage.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/pfx-setting/pfx-setting.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/pfx-setting/pfx-setting.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/pfx-setting/pfx-setting.md",
     "link": "https://msk.cloud.vk.com/app/"
   },
   {
@@ -5781,7 +5793,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/logging/service-management/generate-userdata/generate-userdata.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/logging/service-management/connect-plugin/connect-plugin.md",
@@ -5801,11 +5813,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/alerting/triggers/triggers-add/triggers-add.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/alerting/triggers/trigger-start/trigger-start.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/concepts/mon-metrics/mon-metrics.md",
@@ -5837,7 +5849,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current/mon-setup-current.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
@@ -5909,31 +5921,31 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
-    "link": "https://msk.cloud.vk.com/app/"
+    "link": "https://msk.cloud.vk.com/app"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/concepts/about/about.md",

@@ -1,0 +1,38 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.5.0
+2 info using node@v18.20.2
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 2ms
+9 timing config:load:file:/builds/infra/front/tech-writers/docs-public/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 7ms
+11 timing config:load:file:/root/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 2ms
+13 timing config:load:file:/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 24ms
+17 timing npm:load:configload Completed in 25ms
+18 timing config:load:flatten Completed in 3ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm config set @vk-cloud-authapp:registry https://${CI_SERVER_HOST}/api/v4/projects/23670/packages/npm/
+22 verbose argv "config" "set" "@vk-cloud-authapp:registry" "https://${CI_SERVER_HOST}/api/v4/projects/23670/packages/npm/"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:/builds/infra/front/tech-writers/docs-public/._npm/_logs/2025-03-10T10_08_21_746Z-
+26 verbose logfile /builds/infra/front/tech-writers/docs-public/._npm/_logs/2025-03-10T10_08_21_746Z-debug-0.log
+27 timing npm:load:logFile Completed in 12ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 63ms
+31 info config set "@vk-cloud-authapp:registry" "https://${CI_SERVER_HOST}/api/v4/projects/23670/packages/npm/"
+32 silly logfile done cleaning log files
+33 timing command:config Completed in 13ms
+34 verbose exit 0
+35 timing config:load:flatten Completed in 1ms
+36 timing npm Completed in 130ms
+37 info ok

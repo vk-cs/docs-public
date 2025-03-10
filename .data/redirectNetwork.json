@@ -21931,19 +21931,19 @@
   },
   {
     "source": "/ru/dbs/adb/adb-connect",
-    "destination": "/ru/dbs/adb/connect",
+    "destination": "/ru/dbs/adb/service-management/pfx-setting",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/adb/adb-connect/int-connect-adb",
-    "destination": "/ru/dbs/adb/connect/int-connect-adb",
+    "destination": "/ru/dbs/adb/service-management/pfx-setting",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/adb/adb-connect/ext-connect-adb",
-    "destination": "/ru/dbs/adb/connect/ext-connect-adb",
+    "destination": "/ru/dbs/adb/service-management/pfx-setting",
     "permanent": false,
     "locale": false
   },
@@ -28730,6 +28730,24 @@
   {
     "source": "/en/computing/gpu/about",
     "destination": "/en/computing/gpu/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/adb/connect",
+    "destination": "/ru/dbs/adb/service-management/pfx-setting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/adb/connect/int-connect-adb",
+    "destination": "/ru/dbs/adb/service-management/pfx-setting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/adb/connect/ext-connect-adb",
+    "destination": "/ru/dbs/adb/service-management/pfx-setting",
     "permanent": false,
     "locale": false
   }

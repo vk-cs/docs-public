@@ -6851,6 +6851,58 @@
     ]
   },
   {
+    "uuid": "ee12df87-8948-411e-964e-54c6517aa4cf",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/network-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4fc41d71-8a88-473e-a220-e7ce8c08a147",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/octavia-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/octavia-events/octavia-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/octavia-events/octavia-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "90856031-d88a-45a2-8653-3fbc051fd396",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/cinder-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/cinder-events/cinder-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/cinder-events/cinder-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "91db1032-a2cf-425b-a0ac-260f6182f2ed",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/event-log/concepts/logged-events/nova-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "c4d0fe1d-eb31-4b1c-a563-5e0149602dce",
     "lang": "en",
     "type": "SECTION",
