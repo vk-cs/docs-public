@@ -4303,45 +4303,6 @@
     ]
   },
   {
-    "uuid": "a7a105fd-6fec-4c37-b82b-514e96c182f2",
-    "lang": "ru",
-    "type": "SECTION",
-    "level": 3,
-    "partialPath": "/ru/dbs/adb/connect",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/connect.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/connect.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f1fd81a9-b185-4741-b6b5-632e873c37e1",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/ru/dbs/adb/connect/int-connect-adb",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/int-connect-adb/int-connect-adb.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/int-connect-adb/int-connect-adb.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "2cfd2a10-621b-4a03-ad1b-b8a8cedea079",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/ru/dbs/adb/connect/ext-connect-adb",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/ext-connect-adb/ext-connect-adb.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/ext-connect-adb/ext-connect-adb.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "3cb25b27-2c09-462b-a166-54738c5ed730",
     "lang": "ru",
     "type": "SECTION",
@@ -4362,6 +4323,19 @@
     "partialPath": "/ru/dbs/adb/service-management/manage",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/manage/manage.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/manage/manage.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "cf5a86cc-d643-4f5f-aac5-614c6434ab1a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/dbs/adb/service-management/pfx-setting",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/pfx-setting/pfx-setting.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/pfx-setting/pfx-setting.md",
     "hidden": false,
     "buildPoints": [
       "common"
@@ -7885,6 +7859,58 @@
     "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/manila-events",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/manila-events/manila-events.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/manila-events/manila-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "842a898d-d8f7-4a75-8ffd-2f0d924bf3ea",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/network-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "20d56066-38fb-452c-8867-6dc8e7a72a15",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/octavia-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/octavia-events/octavia-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/octavia-events/octavia-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "5e977c7c-5fe7-4041-a585-1b664fff1599",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/cinder-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/cinder-events/cinder-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/cinder-events/cinder-events.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d5c8fc79-2ff1-4391-a023-1b8495fed81f",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/logged-events/nova-events",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.md",
     "hidden": false,
     "buildPoints": [
       "common"

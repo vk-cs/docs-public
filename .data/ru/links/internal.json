@@ -6037,8 +6037,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/concepts/s3-api/s3-api.md",
-    "dst": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/",
+    "dst": "/ru/tools-for-using-services/api/api-spec/s3-rest-api",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api",
     "hash": null
   },
   {
@@ -6319,8 +6319,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/storage/s3/service-management/buckets/bucket-keys/bucket-keys.md",
-    "dst": "/ru/tools-for-using-services/cli/aws-cli/",
-    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/aws-cli/",
+    "dst": "/ru/tools-for-using-services/cli/aws-cli",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/cli/aws-cli",
     "hash": null
   },
   {
@@ -8292,27 +8292,15 @@
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/int-connect-adb/int-connect-adb.md",
-    "dst": "/ru/dbs/dbaas/connect",
-    "link": "http://localhost:3000/docs/ru/dbs/dbaas/connect",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/ext-connect-adb/ext-connect-adb.md",
-    "dst": "/ru/dbs/adb/quick-start/create-adb",
-    "link": "http://localhost:3000/docs/ru/dbs/adb/quick-start/create-adb",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/connect/ext-connect-adb/ext-connect-adb.md",
-    "dst": "/ru/dbs/dbaas/connect",
-    "link": "http://localhost:3000/docs/ru/dbs/dbaas/connect",
-    "hash": null
-  },
-  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/manage/manage.md",
     "dst": "/ru/dbs/adb/quick-start/create-adb",
     "link": "http://localhost:3000/docs/ru/dbs/adb/quick-start/create-adb",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/adb/service-management/pfx-setting/pfx-setting.md",
+    "dst": "/ru/storage/s3/service-management/buckets/create-bucket",
+    "link": "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket",
     "hash": null
   },
   {
@@ -15271,8 +15259,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin/manage-vkcloudlogs-plugin.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15283,8 +15271,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin/manage-vkcloudlogs-plugin.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15295,8 +15283,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin/manage-vkcloudlogs-plugin.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15379,8 +15367,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current/mon-setup-current.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15409,8 +15397,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current/mon-setup-current.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15421,8 +15409,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15433,8 +15421,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15445,8 +15433,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15457,8 +15445,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15469,8 +15457,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15481,8 +15469,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
-    "dst": "/ru/computing/iaas/service-management/vm/vm-connect/",
-    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/",
+    "dst": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect",
     "hash": null
   },
   {
@@ -15562,6 +15550,60 @@
     "dst": "/ru/computing/iaas/service-management/fs-manage",
     "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage",
     "hash": "deleting_a_file_storage_and_its_network"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/ru/networks/vnet",
+    "link": "http://localhost:3000/docs/ru/networks/vnet",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/ru/networks/vnet/concepts/ips-and-inet",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet",
+    "hash": "plavayushchiy_ip_adres"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/ru/networks/vnet/concepts/router",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/concepts/router",
+    "hash": "vozmozhnosti_prodvinutogo_marshrutizatora"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/ru/networks/vnet/service-management/advanced-router/manage-bgp",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/service-management/advanced-router/manage-bgp",
+    "hash": "dobavlenie_bgp_marshrutizatora"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/ru/networks/directconnect",
+    "link": "http://localhost:3000/docs/ru/networks/directconnect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/octavia-events/octavia-events.md",
+    "dst": "/ru/networks/balancing",
+    "link": "http://localhost:3000/docs/ru/networks/balancing",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/cinder-events/cinder-events.md",
+    "dst": "/ru/computing/iaas/service-management/volumes",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.md",
+    "dst": "/ru/computing/iaas/service-management/vm",
+    "link": "http://localhost:3000/docs/ru/computing/iaas/service-management/vm",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.md",
+    "dst": "/ru/networks/vnet/concepts/ips-and-inet",
+    "link": "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet",
+    "hash": "plavayushchiy_ip_adres"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",

@@ -10698,6 +10698,60 @@
     "hash": "deleting_a_file_storage_and_its_network"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/ru/networks/vnet",
+    "link": "http://localhost:3000/docs/ru/networks/vnet",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/en/networks/vnet/concepts/ips-and-inet",
+    "link": "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet",
+    "hash": "floating_ip_address"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/en/networks/vnet/concepts/router",
+    "link": "http://localhost:3000/docs/en/networks/vnet/concepts/router",
+    "hash": "advanced_router_capabilities"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/en/networks/vnet/service-management/advanced-router/manage-bgp",
+    "link": "http://localhost:3000/docs/en/networks/vnet/service-management/advanced-router/manage-bgp",
+    "hash": "adding_a_bgp_router"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/network-events/network-events.md",
+    "dst": "/en/networks/directconnect",
+    "link": "http://localhost:3000/docs/en/networks/directconnect",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/octavia-events/octavia-events.md",
+    "dst": "/en/networks/balancing",
+    "link": "http://localhost:3000/docs/en/networks/balancing",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/cinder-events/cinder-events.md",
+    "dst": "/en/computing/iaas/service-management/volumes",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/volumes",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.md",
+    "dst": "/en/computing/iaas/service-management/vm",
+    "link": "http://localhost:3000/docs/en/computing/iaas/service-management/vm",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/concepts/logged-events/nova-events/nova-events.md",
+    "dst": "/en/networks/vnet/concepts/ips-and-inet",
+    "link": "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet",
+    "hash": "floating_ip_address"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
     "dst": "/en/monitoring-services/event-log/service-management/siem-integration",
     "link": "http://localhost:3000/docs/en/monitoring-services/event-log/service-management/siem-integration",

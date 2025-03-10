@@ -6,5 +6,6 @@
   "metaDescription": "Events that the service of virtual networks reports to Cloud Audit",
   "sectionTitle": "Neutron and Sprut components events",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "ee12df87-8948-411e-964e-54c6517aa4cf"
 }

@@ -6,5 +6,6 @@
   "metaDescription": "Events that the service of disk and snapshot management reports to Cloud Audit",
   "sectionTitle": "Cinder component events",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "90856031-d88a-45a2-8653-3fbc051fd396"
 }

@@ -6,5 +6,6 @@
   "metaDescription": "Events that the service of computing resource management reports to Cloud Audit",
   "sectionTitle": "Nova component events",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "91db1032-a2cf-425b-a0ac-260f6182f2ed"
 }
