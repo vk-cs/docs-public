@@ -6640,6 +6640,10 @@
     "link": "https://msk.cloud.vk.com/app/"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "link": "mailto:marketplace@cloud.vk.com"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/about.md",
     "link": "mailto:marketplace@cloud.vk.com"
   },

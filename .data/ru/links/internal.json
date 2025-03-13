@@ -17502,6 +17502,66 @@
     "hash": "xaas_vendor_roles"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/tf_manifest/tf_manifest_steps",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "hash": "get_token"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "hash": "preparatory_steps"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "hash": "preparatory_steps"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage/resource-usage.md",
+    "dst": "/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/how-to-guides/resource-usage",
+    "hash": "preparatory_steps"
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based/image_based.md",
     "dst": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add",
     "link": "http://localhost:3000/docs/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add",

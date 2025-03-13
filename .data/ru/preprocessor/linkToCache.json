@@ -754,6 +754,11 @@
     "full": "Роли пользователей",
     "text": "Роли пользователей"
   },
+  "get_token": {
+    "number": null,
+    "full": "1. Получите токен доступа к Marketplace API",
+    "text": "1. Получите токен доступа к Marketplace API"
+  },
   "pic_xaas": {
     "number": "1",
     "full": "Рисунок 1 — Взаимодействие Магазина с сервисами",
@@ -1936,8 +1941,8 @@
   },
   "tab_arguments": {
     "number": "1",
-    "full": "Таблица 1 — Аргумент ресурса ivkcs_user_data",
-    "text": "1 Таблица 1 — Аргумент ресурса ivkcs_user_data"
+    "full": "Таблица 1 — Аргументы ресурса ivkcs_user_data",
+    "text": "1 Таблица 1 — Аргументы ресурса ivkcs_user_data"
   },
   "tab_port_health": {
     "number": "2",
