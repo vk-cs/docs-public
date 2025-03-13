@@ -6,5 +6,6 @@
   "shortDescription": "Дополнительные сервисы и интеграции, предоставляемые магазином приложений",
   "metaDescription": "Marketplace VK Cloud: дополнительные сервисы и интеграции",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "fbb10aba-c96c-4264-abdd-b7fcca6e0e89"
 }
