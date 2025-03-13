@@ -8,7 +8,7 @@
 
 Аргументы ресурса `ivkcs_user_data` приведены в {linkto(#tab_arguments)[text=таблице %number]}.
 
-{caption(Таблица {counter(table)[id=numb_tab_arguments]} — Аргумент ресурса ivkcs_user_data)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
+{caption(Таблица {counter(table)[id=numb_tab_arguments]} — Аргументы ресурса ivkcs_user_data)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
 [cols="4,5,2,2,2,2", options="header"]
 |===
 |Имя
@@ -25,7 +25,7 @@
 |string
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `hosts`
@@ -43,77 +43,105 @@
 |string
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `ssh_private_key`
 |
 Закрытый ключ в формате `RSA` для идентификации хоста. Используется вместе с аргументом `ssh_public_key`
 |string
-| ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `ssh_public_key`
 |
 Открытый ключ в формате `RSA` для идентификации хоста. Используется вместе с аргументом `ssh_private_key`
 |string
-| ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `ssh_authorized_keys`
 |
 Ключи для аутентификации пользователя по SSH. Прописываются пользователю по умолчанию
 |list, элементы списка — string
-| ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `ca_certificates`
 |
 Список корневых сертификатов, которые должны быть установлены в ОС как доверенные
 |list, элементы списка — string
-| ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `agent_install`
 |
 Определяет, устанавливать агент или нет
 |boolean
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 |`true`
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `agent_memory_limit`
 |
 Ограничение оперативной памяти, используемой для агента, МБ
 |integer
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 |`512`
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |
 `packages`
 |
 Определяет, какие пакеты должны быть установлены (подробнее — в разделе {linkto(#packages)[text=%text]})
 |set
-| ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |`user_script`
 |Cкрипты, запускаемые через Cloud-init
 |list
-| ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|`token_file_path`
+|Путь к файлу для записи токена доступа к Marketplace API
+|string
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|`token_rotate`
+|Определяет, включить ротацию токена или нет
+|boolean
+| ![](/ru/assets/no.svg "inline")
+| `false`
+| ![](/ru/assets/check.svg "inline")
+
+|`token_file_owner`
+|Пользователь, назначаемый владельцем файла с токеном
+|string
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|`token_file_group`
+|Группа, назначаемая файлу с токеном
+|string
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 |===
 {/caption}
 
