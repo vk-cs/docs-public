@@ -1,10 +1,11 @@
 {
-    "title": "Adding static DNS records",
-    "pageDescription": "How to add a domain and IP address to the cluster DNS service using the CoreDNS resource.",
-    "shortDescription": "How to add a domain and IP address to the cluster DNS service using the CoreDNS resource",
-    "metaTitle": "Adding static DNS records",
-    "metaDescription": "",
-    "sectionTitle": "Adding static DNS records",
-    "icon": "",
-    "weight": 3
+  "title": "Adding static DNS records",
+  "pageDescription": "How to add a domain and IP address to the cluster DNS service using the CoreDNS resource.",
+  "shortDescription": "How to add a domain and IP address to the cluster DNS service using the CoreDNS resource",
+  "metaTitle": "Adding static DNS records",
+  "metaDescription": "",
+  "sectionTitle": "Adding static DNS records",
+  "icon": "",
+  "weight": 3,
+  "uuid": "279c2833-143e-46ce-93c9-7cace5bc7992"
 }

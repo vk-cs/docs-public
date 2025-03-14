@@ -299,6 +299,11 @@
     "full": "Relationship between the roles of management console and Kubernetes",
     "text": "Relationship between the roles of management console and Kubernetes"
   },
+  "start_cluster": {
+    "number": null,
+    "full": "Start cluster",
+    "text": "Start cluster"
+  },
   "viewing_addons": {
     "number": null,
     "full": "Viewing add-ons",

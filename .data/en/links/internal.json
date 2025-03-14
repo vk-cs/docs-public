@@ -31,8 +31,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en/computing/gpu",
-    "link": "http://localhost:3000/docs/en/computing/gpu",
+    "dst": "/en/intro/start/concepts/architecture",
+    "link": "http://localhost:3000/docs/en/intro/start/concepts/architecture",
+    "hash": "az"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
+    "dst": "/en/computing/iaas",
+    "link": "http://localhost:3000/docs/en/computing/iaas",
     "hash": null
   },
   {
@@ -85,8 +91,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en//data-processing/cloud-streams",
-    "link": "http://localhost:3000/docs/en//data-processing/cloud-streams",
+    "dst": "/en/ml/spark-to-k8s",
+    "link": "http://localhost:3000/docs/en/ml/spark-to-k8s",
     "hash": null
   },
   {
@@ -103,8 +109,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/ru/ml/vision",
-    "link": "http://localhost:3000/docs/ru/ml/vision",
+    "dst": "/en/ml/vision",
+    "link": "http://localhost:3000/docs/en/ml/vision",
     "hash": null
   },
   {
@@ -127,14 +133,38 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en/applications-and-services/1cgrm",
-    "link": "http://localhost:3000/docs/en/applications-and-services/1cgrm",
+    "dst": "/en/computing/cloud-desktops/concepts/about",
+    "link": "http://localhost:3000/docs/en/computing/cloud-desktops/concepts/about",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/ru/applications-and-services/marketplace",
-    "link": "http://localhost:3000/docs/ru/applications-and-services/marketplace",
+    "dst": "/en/data-processing/kafka/concepts/about",
+    "link": "http://localhost:3000/docs/en/data-processing/kafka/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
+    "dst": "/en/data-processing/flink/concepts/about",
+    "link": "http://localhost:3000/docs/en/data-processing/flink/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
+    "dst": "/en/data-processing/trino/concepts/about",
+    "link": "http://localhost:3000/docs/en/data-processing/trino/concepts/about",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
+    "dst": "/en/applications-and-services/marketplace",
+    "link": "http://localhost:3000/docs/en/applications-and-services/marketplace",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
+    "dst": "/en/applications-and-services/1cgrm",
+    "link": "http://localhost:3000/docs/en/applications-and-services/1cgrm",
     "hash": null
   },
   {
@@ -151,20 +181,14 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en/monitoring-services/monitoring",
-    "link": "http://localhost:3000/docs/en/monitoring-services/monitoring",
+    "dst": "/en/tools-for-using-services",
+    "link": "http://localhost:3000/docs/en/tools-for-using-services",
     "hash": null
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
     "dst": "/en/intro/start/support/support-info",
     "link": "http://localhost:3000/docs/en/intro/start/support/support-info",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/start/concepts/architecture/architecture.md",
-    "dst": "/en/tools-for-using-services",
-    "link": "http://localhost:3000/docs/en/tools-for-using-services",
     "hash": null
   },
   {
@@ -1161,7 +1185,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/billing/faq/faq.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/intro/billing/faq/faq.md",
@@ -4356,6 +4380,12 @@
     "hash": "preloading_cache"
   },
   {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/cdn/concepts/secure-token/secure-token.md",
+    "dst": "/en/networks/cdn/concepts/origin-groups",
+    "link": "http://localhost:3000/docs/en/networks/cdn/concepts/origin-groups",
+    "hash": null
+  },
+  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/cdn/service-management/create-resource/create-resource.md",
     "dst": "/en/networks/cdn/concepts/about",
     "link": "http://localhost:3000/docs/en/networks/cdn/concepts/about",
@@ -6045,7 +6075,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/quick-start/quick-start.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/quick-start/quick-start.md",
@@ -6343,8 +6373,8 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/addons-and-settings/settings/settings.md",
-    "dst": "/en/kubernetes/k8s/how-to-guides/local-dns-cache",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "dst": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "hash": null
   },
   {
@@ -8133,7 +8163,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8157,7 +8187,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8181,7 +8211,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8205,7 +8235,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8229,7 +8259,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8241,7 +8271,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8259,7 +8289,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
@@ -8271,7 +8301,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/scale/scale.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_cluster_ffb49399"
+    "hash": "start_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/update/update.md",
@@ -8403,7 +8433,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/ingress/ingress-tcp/ingress-tcp.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/ingress/ingress-tcp/ingress-tcp.md",
@@ -8445,7 +8475,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/ingress/ingress-http/ingress-http.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/ingress/ingress-http/ingress-http.md",
@@ -8475,7 +8505,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/ingress/k8s-canary/k8s-canary.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/ingress/k8s-canary/k8s-canary.md",
@@ -8547,7 +8577,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/storage/storage.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/storage/storage.md",
@@ -8577,7 +8607,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/gatekeeper/labels/labels.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/gatekeeper/labels/labels.md",
@@ -8607,7 +8637,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/gatekeeper/repositories/repositories.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/gatekeeper/repositories/repositories.md",
@@ -8649,7 +8679,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/load-balancer/load-balancer.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/load-balancer/load-balancer.md",
@@ -8692,42 +8722,6 @@
     "dst": "/en/kubernetes/k8s/how-to-guides/case-certmanager-helm3",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/case-certmanager-helm3",
     "hash": "2_install_cert_manager"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "dst": "/en/kubernetes/k8s/reference/pods",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/reference/pods",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "dst": "/en/kubernetes/k8s/service-management/create-cluster",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "dst": "/en/kubernetes/k8s/connect/kubectl",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl",
-    "hash": null
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "dst": "/en/kubernetes/k8s/concepts/addons-and-settings/settings",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/settings",
-    "hash": "kube_proxy_operation_mode"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "delete_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/velero-backup/velero-backup.md",
@@ -8775,7 +8769,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/velero-backup/velero-backup.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/velero-backup/velero-backup.md",
@@ -8784,136 +8778,202 @@
     "hash": "delete_cluster"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/dns/publicdns",
     "link": "http://localhost:3000/docs/en/networks/dns/publicdns",
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/dns/publicdns",
     "link": "http://localhost:3000/docs/en/networks/dns/publicdns",
     "hash": "setting_up_a_role_model"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
+    "dst": "/en/kubernetes/k8s/service-management/create-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/kubernetes/k8s/connect/kubectl",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl",
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/kubernetes/k8s/install-tools/helm",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/install-tools/helm",
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/tools-for-using-services/account/service-management/project-settings/access-manage",
     "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage",
     "hash": "inviting_a_new_member_to_the_project"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/tools-for-using-services/api/rest-api/enable-api",
     "link": "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api",
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/tools-for-using-services/account/service-management/project-settings/access-manage",
     "link": "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/access-manage",
     "hash": "changing_member_role"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/tools-for-using-services/account/concepts/rolesandpermissions",
     "link": "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions",
     "hash": "roles_permissions"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
-    "dst": "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/external-dns",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
+    "dst": "/en/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns",
     "hash": "1_prepare_a_user_for_externaldns"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/balancing/concepts/load-balancer",
     "link": "http://localhost:3000/docs/en/networks/balancing/concepts/load-balancer",
     "hash": "types_of_load_balancers"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/vnet/tariffication",
     "link": "http://localhost:3000/docs/en/networks/vnet/tariffication",
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/dns/publicdns",
     "link": "http://localhost:3000/docs/en/networks/dns/publicdns",
     "hash": "viewing_a_list_of_dns_zones"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
-    "dst": "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/external-dns",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
+    "dst": "/en/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns",
     "hash": "2_install_externaldns"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
     "hash": null
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
-    "dst": "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/external-dns",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
+    "dst": "/en/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns",
     "hash": "31_publish_the_application_using_a_service_like_loadbalancer_8907e782"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/dns/publicdns",
     "link": "http://localhost:3000/docs/en/networks/dns/publicdns",
     "hash": "viewing_a_list_of_dns_zones"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/kubernetes/k8s/service-management/addons/manage-addons",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons",
     "hash": "removing_addon"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/dns/publicdns",
     "link": "http://localhost:3000/docs/en/networks/dns/publicdns",
     "hash": "deleting_resource_records"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
-    "dst": "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/external-dns",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
+    "dst": "/en/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns",
     "hash": "2_install_externaldns"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
     "hash": "delete_cluster"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "dst": "/en/networks/dns/publicdns",
     "link": "http://localhost:3000/docs/en/networks/dns/publicdns",
     "hash": "deleting_a_zone"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "dst": "/en/kubernetes/k8s/reference/pods",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/reference/pods",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "dst": "/en/kubernetes/k8s/service-management/create-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "dst": "/en/kubernetes/k8s/connect/kubectl",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "dst": "/en/kubernetes/k8s/concepts/addons-and-settings/settings",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/settings",
+    "hash": "kube_proxy_operation_mode"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
+    "hash": "start_or_stop_cluster"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
+    "hash": "delete_cluster"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/coredns/coredns.md",
+    "dst": "/en/kubernetes/k8s/service-management/create-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/create-cluster",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/coredns/coredns.md",
+    "dst": "/en/kubernetes/k8s/connect/kubectl",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/connect/kubectl",
+    "hash": null
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/coredns/coredns.md",
+    "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
+    "hash": "start_or_stop_cluster"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/dns/coredns/coredns.md",
+    "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
+    "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
+    "hash": "delete_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/sa-kubeconfig/sa-kubeconfig.md",
@@ -8967,7 +9027,7 @@
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/sa-kubeconfig/sa-kubeconfig.md",
     "dst": "/en/kubernetes/k8s/service-management/manage-cluster",
     "link": "http://localhost:3000/docs/en/kubernetes/k8s/service-management/manage-cluster",
-    "hash": "start_or_stop_the_cluster"
+    "hash": "start_or_stop_cluster"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/how-to-guides/sa-kubeconfig/sa-kubeconfig.md",
