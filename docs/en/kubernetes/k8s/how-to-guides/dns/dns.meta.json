@@ -1,0 +1,10 @@
+{
+  "title": "DNS settings for cluster",
+  "pageDescription": "How to set up and manage DNS configuration for your Kubernetes cluster.",
+  "shortDescription": "How to set up and manage DNS configuration for your Kubernetes cluster",
+  "metaTitle": "DNS settings for cluster",
+  "metaDescription": "",
+  "sectionTitle": "DNS settings for cluster",
+  "icon": "",
+  "weight": 7
+}

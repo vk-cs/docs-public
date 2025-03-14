@@ -6,6 +6,6 @@
     "metaDescription": "How to install ExternalDNS integrated with the VK Cloud DNS and use this tool in a cluster.",
     "sectionTitle": "Installing and using ExternalDNS",
     "icon": "",
-    "weight": 7,
+    "weight": 1,
     "uuid": "3c085d42-5e20-4f56-80ce-5f06511aa899"
 }
