@@ -1,0 +1,10 @@
+{
+  "title": "Настройки DNS для кластера",
+  "pageDescription": "Как настроить и управлять DNS-конфигурацией вашего Kubernetes-кластера.",
+  "shortDescription": "Как настроить и управлять DNS-конфигурацией вашего Kubernetes-кластера",
+  "metaTitle": "Настройки DNS для кластера",
+  "metaDescription": "",
+  "sectionTitle": "Настройки DNS для кластера",
+  "icon": "",
+  "weight": 7
+}
