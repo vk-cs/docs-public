@@ -257,12 +257,19 @@ Read more about services and load balancers in [official Kubernetes documentatio
 
 ## 3. Check the operation of the load balancers
 
+The tabs below describe different scenarios for testing load balancers:
+
+- Scenario 1 — load balancer with manual assignment of static public address, random replica.
+- Scenario 2 — load balancer with automatic assignment of dynamic public address, bounded replica.
+- Scenario 3 — load balancer with automatic assignment of dynamic public address, random replica, access limiting
+- Scenario 4 — load balancer with automatic assignment of dynamic public address, random replica.
+
 <tabs>
 <tablist>
-<tab>Load balancer with manual assignment of static public address, random replica</tab>
-<tab>Load balancer with automatic assignment of dynamic public address, bounded replica</tab>
-<tab>Load balancer with automatic assignment of dynamic public address, random replica, access limiting</tab>
-<tab>Load balancer with automatic assignment of dynamic public address, random replica</tab>
+<tab>Scenario 1</tab>
+<tab>Scenario 2</tab>
+<tab>Scenario 3</tab>
+<tab>Scenario 4</tab>
 </tablist>
 <tabpanel>
 
