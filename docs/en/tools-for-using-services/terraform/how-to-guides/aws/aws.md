@@ -27,31 +27,32 @@ A detailed description of the resources is in the [provider documentation](https
             required_providers {
                 aws = {
             source = "hashicorp/aws"
+            version = "< 5.85.0"
                 }
             }
         }
         provider "aws" {
-            region                      = "<region>"
-            access_key                  = "<public access key>"
-            secret_key                  = "<secret key>"
+            region                      = "<REGION>"
+            access_key                  = "<PUBLIC_ACCESS_KEY>"
+            secret_key                  = "<SECRET_KEY>"
             skip_credentials_validation = true
             skip_metadata_api_check     = true
             skip_requesting_account_id  = true
             skip_region_validation      = true
             endpoints {
-                s3 = "<domain>"
+                s3 = "<DOMAIN>"
             }
         }
         ```
 
         Here:
 
-        - `<region>` — the region where the Cloud Storage service is hosted. The setting must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
+        - `<REGION>` — the region where the Cloud Storage service is hosted. The setting must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
 
             - `ru-msk` — the Moscow region.
             - `kz-ast` — the Kazakhstan region.
-        - `<public access key>`, `<secret key>` — the [key identifier and secret key](/ru/storage/s3/service-management/access-management/access-keys "change-lang") for accessing the object storage.
-        - `<domain>` — the URL for accessing the storage, which depends on the account region. Possible values:
+        - `<PUBLIC_ACCESS_KEY>`, `<SECRET_KEY>` — the [key identifier and secret key](/ru/storage/s3/service-management/access-management/access-keys "change-lang") for accessing the object storage.
+        - `<DOMAIN>` — the URL for accessing the storage, which depends on the account region. Possible values:
 
             - `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain.
             - `https://hb.kz-ast.bizmrg.com` — the Kazakhstan region domain.

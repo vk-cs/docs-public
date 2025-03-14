@@ -27,31 +27,32 @@
             required_providers {
                 aws = {
             source = "hashicorp/aws"
+            version = "< 5.85.0"
                 }
             }
         }
         provider "aws" {
-            region                      = "<регион>"
-            access_key                  = "<публичный ключ доступа>"
-            secret_key                  = "<секретный ключ>"
+            region                      = "<РЕГИОН>"
+            access_key                  = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>"
+            secret_key                  = "<СЕКРЕТНЫЙ_КЛЮЧ>"
             skip_credentials_validation = true
             skip_metadata_api_check     = true
             skip_requesting_account_id  = true
             skip_region_validation      = true
             endpoints {
-                s3 = "<домен>"
+                s3 = "<ДОМЕН>"
             }
         }
         ```
 
         Здесь:
 
-        - `<регион>` — регион размещения сервиса Cloud Storage. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+        - `<РЕГИОН>` — регион размещения сервиса Cloud Storage. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
             - `ru-msk` — регион Москва;
             - `kz-ast` — регион Казахстан.
-        - `<публичный ключ доступа>`, `<секретный ключ>` — [идентификатор ключа и секретный ключ](/ru/storage/s3/service-management/access-management/access-keys) доступа к объектному хранилищу.
-        - `<домен>` — URL для доступа к хранилищу, который зависит от региона аккаунта. Возможные значения:
+        - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — [идентификатор ключа и секретный ключ](/ru/storage/s3/service-management/access-management/access-keys) доступа к объектному хранилищу.
+        - `<ДОМЕН>` — URL для доступа к хранилищу, который зависит от региона аккаунта. Возможные значения:
 
             - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
             - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
