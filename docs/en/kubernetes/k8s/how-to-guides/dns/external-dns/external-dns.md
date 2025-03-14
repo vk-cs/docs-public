@@ -2,21 +2,21 @@
 
 ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdns) via a plugin. Below is an example of installing ExternalDNS to a cluster and using this tool with the `Ingress` and `Service` resources.
 
-## Preparatory steps
+## Before you start
 
 1. [Create](/en/networks/dns/publicdns#setting_up_a_role_model) a DNS zone for ExternalDNS to work with, if not already done.
 
    In the example below, the `example.com` zone is used.
 
-1. [Create](https://cloud.vk.com/docs/en/kubernetes/k8s/service-management/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
+1. [Create](../../../service-management/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
 
    Select other cluster parameters at your discretion.
 
-1. [Make sure](../../connect/kubectl) that you can connect to the cluster using `kubectl`.
+1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
 
    To connect, use the cluster configuration file (kubeconfig) downloaded from your VK Cloud management console.
 
-1. [Install](../../install-tools/helm) Helm version 3.0.0 or higher if the utility is not already installed.
+1. [Install](../../../install-tools/helm) Helm version 3.0.0 or higher if the utility is not already installed.
 
    To install, select a version of Helm that is [compatible](https://helm.sh/docs/topics/version_skew/) with the cluster.
 
@@ -725,7 +725,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
 
-   1. [Delete the Ingress NGINX add-on](../../service-management/addons/manage-addons#removing_addon).
+   1. [Delete the Ingress NGINX add-on](../../../service-management/addons/manage-addons#removing_addon).
 
       It may take a long time to remove the add-on and its associated resources.
 
@@ -762,7 +762,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. A running Cloud Containers cluster consumes compute resources and is charged. If you no longer need it:
 
-   - [stop](../../service-management/manage-cluster#start_or_stop_the_cluster) it to use it later;
-   - [delete](../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.
 
 1. [Delete](/en/networks/dns/publicdns#deleting_a_zone) the `example.com` DNS zone if you no longer need it.

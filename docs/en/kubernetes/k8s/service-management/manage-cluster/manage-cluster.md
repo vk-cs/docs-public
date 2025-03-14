@@ -4,9 +4,9 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 </warn>
 
-## Start or stop the cluster
+## Start or stop cluster
 
-### Start cluster
+### {heading(Start cluster)[id=start_cluster]}
 
 <tabs>
 <tablist>
