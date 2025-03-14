@@ -1,1 +1,4 @@
-{}
+{
+  "a6760e08-6eb8-4ffc-8ef5-536939f491e2": "/ru/kubernetes/k8s/how-to-guides/dns/external-dns",
+  "312af785-6883-4587-b9ae-bb2a4b14c533": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache"
+}

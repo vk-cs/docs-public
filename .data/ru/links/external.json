@@ -5,7 +5,7 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/concepts/architecture/architecture.md",
-    "link": "https://www.openstack.org/software/"
+    "link": "https://www.openstack.org/software"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/concepts/architecture/architecture.md",
@@ -17,11 +17,11 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/concepts/architecture/architecture.md",
-    "link": "https://qazcloud.kz/"
+    "link": "https://qazcloud.kz"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/concepts/architecture/architecture.md",
-    "link": "https://cloud.vk.com/cloud-platform/certificates/"
+    "link": "https://cloud.vk.com/cloud-platform/certificates"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/account-registration/account-registration.md",
@@ -3301,6 +3301,10 @@
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/extensions/postgresql/postgresql.md",
+    "link": "https://www.pgbouncer.org"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/dbs/dbaas/extensions/postgresql/postgresql.md",
     "link": "https://github.com/ossc-db/pg_hint_plan"
   },
   {
@@ -4988,64 +4992,68 @@
     "link": "https://kubernetes.io/docs/concepts/services-networking/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "link": "https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "link": "https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/#configuration"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "link": "https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml"
-  },
-  {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "link": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/"
-  },
-  {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/velero-backup/velero-backup.md",
     "link": "https://velero.io/docs/main/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://kubernetes.io/docs/concepts/services-networking/service/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://helm.sh/docs/topics/version_skew/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://msk.cloud.vk.com/app/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://helm.sh/docs/chart_template_guide/values_files/"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#values"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://www.rfc-editor.org/rfc/rfc1912"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://github.com/google/re2/wiki/Syntax"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://github.com/google/re2/wiki/Syntax"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example"
   },
   {
-    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
     "link": "https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "link": "https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "link": "https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/#configuration"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "link": "https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "link": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/"
+  },
+  {
+    "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/coredns/coredns.md",
+    "link": "https://coredns.io/manual/toc/"
   },
   {
     "src": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/gpu-operator/gpu-operator.md",

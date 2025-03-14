@@ -1807,7 +1807,7 @@
   },
   {
     "source": "/ru/base/k8s/k8s-network/k8s-localdnscache",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   },
@@ -3283,7 +3283,7 @@
   },
   {
     "source": "/en/base/k8s/k8s-net/k8s-localdnscache",
-    "destination": "/en/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   },
@@ -15367,7 +15367,7 @@
   },
   {
     "source": "/en/base/k8s/use-cases/local-dns-cache",
-    "destination": "/en/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   },
@@ -18013,7 +18013,7 @@
   },
   {
     "source": "/ru/base/k8s/use-cases/local-dns-cache",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   },
@@ -18025,7 +18025,7 @@
   },
   {
     "source": "/ru/base/k8s/use-cases/external-dns",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/external-dns",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/external-dns",
     "permanent": false,
     "locale": false
   },
@@ -24049,7 +24049,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/use-cases/local-dns-cache",
-    "destination": "/en/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   },
@@ -24061,7 +24061,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/use-cases/external-dns",
-    "destination": "/en/kubernetes/k8s/how-to-guides/external-dns",
+    "destination": "/en/kubernetes/k8s/how-to-guides/dns/external-dns",
     "permanent": false,
     "locale": false
   },
@@ -24745,7 +24745,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/use-cases/local-dns-cache",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   },
@@ -24757,7 +24757,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/use-cases/external-dns",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/external-dns",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/external-dns",
     "permanent": false,
     "locale": false
   },
@@ -28748,6 +28748,30 @@
   {
     "source": "/ru/dbs/adb/connect/ext-connect-adb",
     "destination": "/ru/dbs/adb/service-management/pfx-setting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/how-to-guides/external-dns",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/kubernetes/k8s/how-to-guides/external-dns",
+    "destination": "/en/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/kubernetes/k8s/how-to-guides/local-dns-cache",
+    "destination": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
   }

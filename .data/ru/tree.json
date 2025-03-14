@@ -2587,6 +2587,19 @@
     ]
   },
   {
+    "uuid": "a1d0dc8d-2d5f-43e7-8e7f-4c2111e402f3",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/networks/cdn/concepts/secure-token",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/cdn/concepts/secure-token/secure-token.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/cdn/concepts/secure-token/secure-token.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "c6bfd0d1-f1bd-4e92-8aed-3e0fe5427bdf",
     "lang": "ru",
     "type": "SECTION",
@@ -5161,19 +5174,6 @@
     ]
   },
   {
-    "uuid": "312af785-6883-4587-b9ae-bb2a4b14c533",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/ru/kubernetes/k8s/how-to-guides/local-dns-cache",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/local-dns-cache/local-dns-cache.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "f63b1d07-3c96-4910-9867-dfa1a6e7df66",
     "lang": "ru",
     "type": "ARTICLE",
@@ -5187,13 +5187,52 @@
     ]
   },
   {
+    "uuid": "386fb1c2-c9b0-45bf-8f00-5b800b39be0c",
+    "lang": "ru",
+    "type": "SECTION",
+    "level": 4,
+    "partialPath": "/ru/kubernetes/k8s/how-to-guides/dns",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/dns.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/dns.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "a6760e08-6eb8-4ffc-8ef5-536939f491e2",
     "lang": "ru",
     "type": "ARTICLE",
-    "level": 4,
-    "partialPath": "/ru/kubernetes/k8s/how-to-guides/external-dns",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/external-dns/external-dns.md",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/how-to-guides/dns/external-dns",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/external-dns/external-dns.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "312af785-6883-4587-b9ae-bb2a4b14c533",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache/local-dns-cache.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "2c86aa74-8baa-4a4a-8584-36d2ff715b38",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/how-to-guides/dns/coredns",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/coredns/coredns.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/how-to-guides/dns/coredns/coredns.md",
     "hidden": false,
     "buildPoints": [
       "common"
