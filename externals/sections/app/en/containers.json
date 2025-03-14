@@ -50,7 +50,7 @@
                     "link": "/en/kubernetes/k8s/how-to-guides/ingress"
                 },
                 {
-                    "link": "/en/kubernetes/k8s/how-to-guides/local-dns-cache"
+                    "link": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache"
                 },
                 {
                     "link": "/en/kubernetes/k8s/how-to-guides/velero-backup"

@@ -7,7 +7,7 @@
 Этот прокси может работать в [нескольких режимах](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/#options), они перечислены в описании настройки `--proxy-mode`. В кластерах Cloud Containers прокси работает в режиме `iptables`. Этот режим работы влияет:
 
 - [на поведение балансировщиков нагрузки](../../../how-to-guides/load-balancer);
-- [на поведение и настройки локального кеширующего DNS-сервера](../../../how-to-guides/local-dns-cache).
+- [на поведение и настройки локального кеширующего DNS-сервера](../../../how-to-guides/dns/local-dns-cache).
 
 ## Настройки лимитов для подов
 

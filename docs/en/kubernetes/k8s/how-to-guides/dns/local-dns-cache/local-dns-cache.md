@@ -1,60 +1,60 @@
-На каждом узле кластера можно настроить локальный кеширующий DNS-сервер на базе CoreDNS. Такая схема также известна как NodeLocal DNS. Это позволит повысить стабильность и производительность сервиса DNS в кластере, не меняя уже существующих приложений.
+A local CoreDNS-based caching DNS server can be configured on each cluster node. This is also known as NodeLocal DNS. This will improve the stability and performance of the DNS service in the cluster, without changing existing applications.
 
-## Обзор архитектуры DNS в кластере
+## Overview of the DNS architecture in a cluster
 
-Пусть некоторый [под](../../reference/pods) инициирует DNS-запрос.
+Let some [pod](../../../reference/pods) initiate a DNS query.
 
-- Без использования кеширующих DNS-серверов произойдет следующее:
+- Without using caching DNS servers, the following will happen:
 
-  1. DNS-запрос будет отправлен на IP-адрес сервиса `kube-dns` кластера.
-  1. Этот IP-адрес будет транслирован `kube-proxy` в IP-адрес эндпоинта `kube-dns` с помощью правил `iptables`. При этом `iptables` использует `conntrack` для отслеживания соединений.
-  1. При получении ответа от `kubedns` будет выполнен обратный процесс.
+  1. the DNS query will be sent to the IP address of the `kube-dns` service of the cluster.
+  1. This IP address will be translated by `kube-proxy` into the IP address of the `kube-dns` endpoint using `iptables` rules. In doing so, `iptables` will use `conntrack` to track connections.
+  1. When a response is received from `kube-dns`, the reverse process will be performed.
   
-  Если DNS-запросы преимущественно отправляются по протоколу UDP, то высокая нагрузка на `kube-dns` (например, если какое-либо приложение активно отправляет DNS-запросы) может привести к проблемам:
+  If DNS queries are mostly sent via UDP protocol, then high load on `kube-dns` (for example, if any application is actively sending DNS queries) may lead to issues:
   
-  - Состояние гонки (racing condition) для `conntrack`. В результате существенно (до нескольких раз) замедляется получение ответов на DNS-запросы.
-  - Переполнение служебных таблиц для `conntrack`. Записи для UDP удаляются из них только по тайм-ауту (по умолчанию — 30 секунд). При переполнении таблиц новые DNS-запросы, отправленные по UDP, будут отбрасываться.
+  - Race condition for `conntrack`. This results in significant (up to several times) slowdown of responses to DNS queries.
+  - Overflow of service tables for `conntrack`. Records for UDP are removed from these tables only by time-out (default — 30 seconds). If tables are full, new DNS queries sent via UDP will be dropped.
 
-- При использовании кеширующих DNS-серверов произойдет следующее:
+- When using caching DNS servers, the following will happen:
 
-  1. Поды будут обращаться к локальному кеширующему DNS-серверу, который расположен на том же узле, что и поды.
+  1. Pods will refer to the local caching DNS-server, which is located on the same node as the pods.
 
-     Это позволит избежать трансляции адресов (Dynamic NAT, DNAT), использования `iptables` и `conntrack`. Описанные выше проблемы будут сняты.
+     This will avoid address translation (Dynamic NAT, DNAT), the use of `iptables` and `conntrack`. The issues described above will be eliminated.
 
-  1. Сам кеширующий DNS-сервер будет обращаться к сервису `kube-dns`, используя `iptables` и `conntrack`, но уже по протоколу TCP.
+  1. The caching DNS-server itself will address to service `kube-dns` using `iptables` and `conntrack`, but via TCP protocol.
 
-     В этом случае нагрузка на `kube-dns` снижается, поскольку к нему обращается напрямую ограниченное количество DNS-серверов, а не все сервисы кластера, требующие DNS для своей работы. Кроме того, при использовании TCP снижается задержка (latency), связанная с потерей UDP-пакетов и тайм-аутами.
+     In this case load on `kube-dns` is reduced, because it is queried directly by a limited number of DNS-servers and not by all services of the cluster that require DNS for their work. Also, when using TCP, the latency associated with UDP packet loss and time-outs is reduced.
 
-Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/).
+See [official Kubernetes documentation](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/) for more details.
 
-## 1. Подготовительные шаги
+## Before you start
 
-1. [Создайте](../../service-management/create-cluster) кластер Kubernetes самой актуальной версии.
+1. [Create](../../../service-management/create-cluster) a Kubernetes cluster of the most current version.
 
-   Параметры кластера выберите на свое усмотрение.
+   Choose the cluster parameters at your own discretion.
 
-1. [Убедитесь](../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
 
-## 2. Разверните кеширующий DNS-сервер на каждом узле
+## 1. Deploy a caching DNS server on each node
 
-DNS-сервер будет развернут в следующей конфигурации:
+The DNS server will be deployed in the following configuration:
 
-- Тип развертывания: DaemonSet, чтобы сервер был доступен на всех узлах кластера.
-- IP-адреса, которые слушает сервер:
-  - Локальный IP-адрес `169.254.0.10` на каждом узле. Такой link-local-адрес выбран специально, чтобы не было пересечений с адресами из других подсетей, используемых кластером.
-  - IP-адрес сервиса `kube-dns`. В кластерах Cloud Containers это всегда `10.254.0.10`.
+- Deployment type: DaemonSet so that the server is available on all nodes in the cluster.
+- IP addresses that the server listens to:
+  - A local `169.254.0.10` IP address on each node. This link-local address is specifically chosen so that there is no overlap with addresses from other subnets used by the cluster.
+  - The IP address of the `kube-dns` service. In Cloud Containers clusters, this is always `10.254.0.10`.
 
-  Такая конфигурация используется, потому что `kube-proxy` в кластерах Cloud Containers [работает](../../concepts/addons-and-settings/settings#rezhim_raboty_kube_proxy) в режиме `iptables`.
+  This configuration is used because `kube-proxy` in Cloud Containers clusters [operates](../../../concepts/addons-and-settings/settings#kube_proxy_operation_mode) in `iptables` mode.
 
-- Порт, к которому будет обращаться Prometheus для сбора метрик: `9153`.
-- Метка для выбора сервиса: `kube-dns`: `coredns`.
-- Домен кластера: `cluster.local`.
+- The port to which Prometheus will connect to collect metrics: `9153`.
+- Label for service selection: `kube-dns`: `coredns`.
+- Cluster domain: `cluster.local`.
 
-Подробнее о конфигурациях и настройке в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/#configuration).
+See [official Kubernetes documentation](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/#configuration) for more details about configurations and settings.
 
-Чтобы развернуть DNS-сервер:
+To deploy a DNS server:
 
-1. Создайте файл манифеста для NodeLocal DNS:
+1. Create a manifest file for NodeLocal DNS:
 
    <details>
    <summary markdown="span">nodelocaldns.yaml</summary>
@@ -275,15 +275,15 @@ DNS-сервер будет развернут в следующей конфи�
 
    </details>
 
-   Этот файл создан на основе [манифеста из официального репозитория Kubernetes](https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml) с учетом конфигурации, приведенной выше.
+   This file is based on the [manifest from the official Kubernetes repository](https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml), taking into account the configuration above.
 
-1. Создайте нужные для работы NodeLocal DNS ресурсы Kubernetes на основе манифеста:
+1. Create the Kubernetes resources required for NodeLocal DNS based on the manifest:
 
    ```yaml
    kubectl apply -f nodelocaldns.yaml
    ```
 
-   Должна быть выведена следующая информация о созданных ресурсах:
+   The following information about the created resources should be displayed:
 
    ```text
    serviceaccount/node-local-dns created
@@ -293,39 +293,39 @@ DNS-сервер будет развернут в следующей конфи�
    service/node-local-dns created
    ```
 
-## 3. Проверьте работу кеширующего DNS-сервера
+## 2. Check the operation of the caching DNS server
 
-1. Создайте [под, включающий в себя утилиты для работы с DNS](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/):
+1. Create [pod that includes utilities to work with DNS](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/):
 
    ```bash
    kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml
    ```
 
-1. Убедитесь, что под успешно создан, выполнив команду:
+1. Verify that the pod is successfully created by running the command:
 
    ```bash
    kubectl get pod dnsutils
    ```
 
-   Должна быть выведена следующая информация:
+   Output should give you the similar information:
 
    ```text
    NAME       READY   STATUS    RESTARTS    AGE
    dnsutils   1/1     Running   ...         ...
    ```
 
-1. Подключитесь к bash-сессии внутри этого пода:
+1. Connect to a bash session inside this pod:
 
    ```bash
    kubectl exec -it dnsutils -- bash
    ```
 
-1. Проверьте, что DNS-запросы успешно выполняются:
+1. Check that the DNS queries are successful:
 
    <tabs>
    <tablist>
-   <tab>Без указания DNS-сервера</tab>
-   <tab>С явным указанием DNS-сервера</tab>
+   <tab>Without specifying a DNS server</tab>
+   <tab>With explicitly specified DNS server</tab>
    </tablist>
    <tabpanel>
 
@@ -334,7 +334,7 @@ DNS-сервер будет развернут в следующей конфи�
    nslookup kubernetes.default
    ```
 
-   Должна быть выведена похожая информация:
+   Output should give you the similar information:
 
    ```text
    Server:         10.254.0.10
@@ -363,7 +363,7 @@ DNS-сервер будет развернут в следующей конфи�
    nslookup kubernetes.default 169.254.0.10
    ```
 
-   Должна быть выведена похожая информация:
+   Output should give you the similar information:
 
    ```text
    Server:         169.254.0.10
@@ -387,15 +387,15 @@ DNS-сервер будет развернут в следующей конфи�
    </tabpanel>
    </tabs>
 
-1. Завершите bash-сессию в поде `dnsutils`:
+1. End the bash session in the `dnsutils` pod:
 
    ```bash
    exit
    ```
 
-## Удалите неиспользуемые ресурсы
+## Delete unused resources
 
-1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их.
+1. If the Kubernetes resources you created are no longer needed, delete them.
 
    <tabs>
    <tablist>
@@ -421,7 +421,7 @@ DNS-сервер будет развернут в следующей конфи�
    </tabpanel>
    </tabs>
 
-1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
+1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.

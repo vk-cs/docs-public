@@ -8,15 +8,15 @@ ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dn
 
    Для примера далее используется зона `example.com`.
 
-1. [Создайте](../../service-management/create-cluster) кластер Cloud Containers самой актуальной версии, который имеет внешний IP-адрес и доступен из интернета.
+1. [Создайте](../../../service-management/create-cluster) кластер Cloud Containers самой актуальной версии, который имеет внешний IP-адрес и доступен из интернета.
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
 
    Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета VK Cloud.
 
-1. [Установите](../../install-tools/helm) Helm версии 3.0.0 или выше, если утилита еще не установлена.
+1. [Установите](../../../install-tools/helm) Helm версии 3.0.0 или выше, если утилита еще не установлена.
 
    Выберите для установки версию Helm, которая [совместима](https://helm.sh/docs/topics/version_skew/) с кластером.
 
@@ -725,7 +725,7 @@ ExternalDNS будет использовать реквизиты этого п
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
   
-   1. [Удалите аддон Ingress NGINX](../../service-management/addons/manage-addons#udalenie_addona).
+   1. [Удалите аддон Ingress NGINX](../../../service-management/addons/manage-addons#udalenie_addona).
 
       Удаление аддона и связанных с ним ресурсов может занять длительное время.
 
@@ -762,7 +762,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../service-management/manage-cluster#delete_cluster) его навсегда.
 
 1. [Удалите DNS-зону](/ru/networks/dns/publicdns#udalenie_dns_zony) `example.com`, если она вам больше не нужна.

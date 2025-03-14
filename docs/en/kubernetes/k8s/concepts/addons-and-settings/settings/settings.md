@@ -7,7 +7,7 @@ The Cloud Containers network proxy runs on each node, providing access to IP add
 This proxy can work in [several modes](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/#options), they are listed in the `--proxy-mode` setting description. In Cloud Containers clusters, the proxy works in `iptables` mode. This mode of operation affects:
 
 - [the behavior of load balancers](../../../how-to-guides/load-balancer);
-- [on the behavior and settings of the local caching DNS server](../../../how-to-guides/local-dns-cache).
+- [on the behavior and settings of the local caching DNS server](../../../how-to-guides/dns/local-dns-cache).
 
 ## Limits settings for pods
 
