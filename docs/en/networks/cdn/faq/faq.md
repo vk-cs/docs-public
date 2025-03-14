@@ -50,7 +50,15 @@
 
 <summary>Is it possible to enable WAF and DDoS protection?</summary>
 
-Yes, it is. Contact [technical support](mailto:support@mcs.mail.ru) to make an applications for connection.
+Yes, it is. Contact [technical support](mailto:support@mcs.mail.ru) to make an application for connection.
+
+</details>
+
+<details>
+
+<summary>Is it possible to protect content using Secure token?</summary>
+
+Yes, it is. Contact [technical support](mailto:support@mcs.mail.ru) to make an application for enabling and setting up Secure token.
 
 </details>
 
