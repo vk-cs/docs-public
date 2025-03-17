@@ -4,7 +4,7 @@ The Cloud Desktop service allows you to use the following subsystems of remote a
   
     Use this subsystem if users workstations are running Windows or Linux OS.
 
-- VK developed by the VK company. Uses its own data transfer protocol, which ensures high-quality display of the virtual desktop and speed of interaction.
+- VK developed by the VK Tech company. Uses its own data transfer protocol, which ensures high-quality display of the virtual desktop and speed of interaction.
 
     Use this subsystem if users workstations are running Windows or MacOS.
 
