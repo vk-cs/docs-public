@@ -24,17 +24,31 @@ To set up two-factor authentication using the SAML service:
     - **Client ID**: specify the unique identifier of the client application in the SAML authentication service.
     - **Metadata URL**: specify the URL where the XML file with metadata for SAML integration is located.
     - **Check SSL**: enable this option to check the entire chain of certificates for validity and absence from revocation lists. If this option is disabled, only the presence of an SSL certificate will be checked.
-    - **Binding Type**: select the method for sending a response to a SAML authentication request: `HTTP-Redirect` or `HTTP-POST`.
-    - **Response Binding Type**: select the method for redirecting a user back to the service that requested SAML authorization: `HTTP-Redirect` or `HTTP-POST`.
-    - **Name ID format**: leave the default value. Only `Unspecified` is available, in which the NameID format is specified directly in the SAML authentication request.
+    - **Binding Type**: select the method for sending a response to a SAML authentication request.
+
+      - For the Termidesk subsystem — `HTTP-Redirect` or `HTTP-POST`.
+      - For the VK subsystem — `HTTP-Redirect`, `HTTP-POST` or `Artifact`.
+
+    - **Response Binding Type**: select the method for redirecting a user back to the service that requested SAML authorization.
+
+      - For the Termidesk subsystem — `HTTP-Redirect` or `HTTP-POST`.
+      - For the VK subsystem — `HTTP-Redirect`, `HTTP-POST` or `Artifact`.
+
+    - **Name ID format**: select which NameID format will be used to map name identifiers across identity providers and service providers.
+
+      - For the Termidesk subsystem, , only the `Unspecified` value is available.
+      - For the VK subsystem, the following values ​​are available:
+
+        - `Unspecified`: the NameID format is specified directly in the SAML authentication request.
+        - `NotConfigured`: the NameID format is not configured and is not passed in the request.
+        - `Email address`: NameID matches the user's email address, for example, `john@company.com`.
+        - `Transient`: the SAML service identifies the user using the provided NameID and grants access that is valid for only one session.
+        - `Persistent`: the provided NameID is registered with the SAML service and is used for multiple sessions.
+        - `X509SubjectName`: NameID matches the username in the X.509 certificate, for example, `CN=john,O=Company Ltd.,C=US`.
+        - `WindowsDomainQualifiedName`: NameID matches the user name in the FQDN format, for example, `CompanyDomain\John`.
+        - `KerberosPrincipalName`: NameID matches the principal name in the Kerberos protocol, for example, `john@realm`.
+        - `EntityIdentifier`: NameID is in the URI format and is used to identify the SAML service provider.
+
     - **Group Attr Name**: specify the type of user attribute that will be returned by the SAML service and which the system will use to decide whether to grant access. The attribute can be of any type. Typically, the `Group` value is specified, i.e. access is granted depending on which group the user belongs to.
 
 1. Click **Save**.
-
-<!---Убрали по задаче https://jira.vk.team/browse/VKCSDOCS-1715, потому что пока доступен только один тип      
-    - **Name ID format**: select which NameID format will be used to map name identifiers across identity providers and service providers. Supported options:  
-
-        - `Email address`: NameID matches the user's email address.
-        - `Persistent`: the provided NameID is registered with the SAML service and is used for multiple sessions.
-        - `Transient`: the SAML service identifies the user using the provided NameID and grants access that is valid for only one session.
-        - `Unspecified`: the NameID format is specified directly in the SAML authentication request.-->
