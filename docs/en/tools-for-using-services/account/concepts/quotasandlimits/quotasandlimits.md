@@ -274,58 +274,68 @@ Quotas for the total number of disks in the project take into account all types 
 
 #### Limits without quotas
 
-[cols="2,2,1", options="header"]
+[cols="2,2,3,1", options="header"]
 |===
 |Parameter
 |Limit
+|Comment
 |Hard
 
 |Number of disks per instance
-|25 pcs.
+|25 pcs. when configuration disk is enabled.
+
+ 26 pcs. when configuration disk is disabled
+|The limit is associated with PCI bus limitations.
+
+If, while [creating VM](/ru/computing/iaas/service-management/vm/vm-create), the **Use configuration disk** option is enabled in VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
+
+If the **Use configuration disk** option is disabled or the `--use-config-drive` parameter is not used, the maximum number of disks is 26
+
 | ![](/en/assets/check.svg "inline")
 
 |Size of one HDD
-|* 5 TB via VK management console
-* 100 TB using OpenStack CLI
+|5 TB via VK Cloud management console.
+
+ 100 TB using OpenStack CLI
+|![](/ru/assets/no.svg "inline")
 |![](/en/assets/check.svg "inline")
 
 |Size of one SSD
-|* 5 TB via VK management console
-* 100 TB using OpenStack CLI
+|5 TB via VK Cloud management console.
+
+ 100 TB using OpenStack CLI
+|![](/ru/assets/no.svg "inline")
 |![](/en/assets/check.svg "inline")
 
 |Size of one High-IOPS SSD disk
-|* 2 TB via VK management console
-* 5 TB using OpenStack CLI 
-|![](/en/assets/check.svg "inline")
+|2 TB via VK Cloud management console.
+
+ 5 TB using OpenStack CLI
+|The limit (5 TB) is due to operational requirements. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
+|![](/ru/assets/no.svg "inline")
 
 |Size of one High-IOPS HA SSD disk
-|* 2 TB via VK management console
-* 5 TB using OpenStack CLI 
-|![](/en/assets/check.svg "inline")
+|2 TB via VK Cloud management console.
+
+ 5 TB using OpenStack CLI
+|The limit (5 TB) is due to operational requirements. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
+|![](/ru/assets/no.svg "inline")
 
 |Size of one image
 |500 GB
-|![](/en/assets/check.svg "inline")
+|This is a hard limit for the Glance service. If you need to download a larger image, use the [instruction](/en/storage/s3/how-to-guides/load-large-image)
+|![](/ru/assets/no.svg "inline")
 
 |Total volume of images
 |2 TB
-|![](/en/assets/check.svg "inline")
+|The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
+|![](/ru/assets/no.svg "inline")
 
-|Total number of disks snapshots 
+|Total number of disks snapshots
 |200 pcs.
-|![](/en/assets/check.svg "inline")
+|The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
+|![](/en/assets/no.svg "inline")
 |===
-
-The limit on the number of disks per instance (25 pcs.) is associated with PCI bus limitations.
-
-The limit on the size of one image (500 GB) is a hard limit for the Glance service. If you need to download a larger image, use the [instruction](/en/storage/s3/how-to-guides/load-large-image).
-
-The limit on the size of one SSD-HIGH-IOPS disk (5 TB) is due to operational requirements, it can be exceeded without contacting technical support. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks.
-
-The limit on the total volume of images (2 TB) can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
-
-The limit on the number of disks snapshots (200 pcs.) can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
 ### File storage
 
