@@ -1,18 +1,20 @@
+
+Throughout this guide, a VK Cloud subnet will be connected with the client subnet via a VPN tunnel. This VPN tunnel will be built to another network of the VK Cloud platform, and a virtual machine will be used as a VPN endpoint. Several virtual machines will also be created to test the functionality of the tunnel.
+
 <warn>
 
 The VPN service is only available in networks created with use of [Neutron SDN]( ../../concepts/architecture#sdns_used).
+For networks created with use of Sprut SDN, set up a tunnel via [advanced router](/en/networks/vnet/how-to-guides/advanced-router).
 
 </warn>
 
-Throughout this guide, an VK Cloud subnet will be connected with the client subnet via a VPN tunnel. This VPN tunnel will be built to another network of the VK Cloud platform, and a virtual machine will be used as a VPN endpoint. Several virtual machines will also be created to test the functionality of the tunnel.
-
 The guide can be adapted to work with any other VPN endpoint, such as a corporate firewall or other network equipment.
 
-## 1. Preparatory steps
+## Before you start
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. Create networks.
+1. [Create](/en/networks/vnet/service-management/net#creating_network) networks.
 
    <info>
 
@@ -29,9 +31,10 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
    This network will act as the client network.
 
-   When creating a network, set the following parameters:
+   When you create a network, set the following parameters:
 
     - **Network name**: `clientNet`.
+    - **SDN**: `Neutron`. By default Sprut SDN is created.
     - **Internet Access**: Make sure this option is selected. It will allow you to assign public floating IP addresses to virtual machines on this network.
     - **Router**: `Create new`.
     - **Subnet List**: edit the only subnet in the list. Set the following parameters for the subnet:
@@ -48,9 +51,10 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
     This network will act as a virtual network.
 
-    When creating a network, set the following parameters:
+    When you create a network, set the following parameters:
 
     - **Network name**: `vkcloudNet`.
+    - **SDN**: Neutron. By default Sprut SDN is created.
     - **Internet Access**: Make sure this option is selected. It will allow you to ensure the operation of the VPN tunnel and assign public floating IP addresses to virtual machines in this network.
     - **Router**: `Create new`.
     - **Subnet List**: edit the only subnet in the list. Set the following parameters for the subnet:
@@ -78,6 +82,12 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
     1. Click the **Ports** tab.
     1. Find the `SNAT` device port in the list of ports and copy its IP address.
 
+       <info>
+
+       If you do not find the `SNAT` device port in the list, make sure that SDN Neutron was selected when creating the virtual network.
+
+       </info>
+
 1. Create a virtual machine that will act as a VPN gateway on the `clientNet` client network, with the following settings:
 
     - **Virtual machine name**: `client_vpn_gw`.
@@ -104,9 +114,9 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 ![Example Infrastructure](./assets/vpn-tunnel.png){params[noBorder=true]}
 
-## 2. Set up a VPN tunnel on the cloud side
+## 1. Set up a VPN tunnel on the cloud side
 
-Create a VPN with the following settings:
+[Create a VPN](/en/networks/vnet/service-management/vpn) with the following settings:
 
 <tabs>
 <tablist>
@@ -173,7 +183,7 @@ Select **Settings** - `Basic`, and set:
 </tabpanel>
 </tabs>
 
-## 3. Set up a VPN tunnel on the side of the client network
+## 2. Set up a VPN tunnel on the side of the client network
 
 1. Disable IP Source Guard on the VPN gateway port so that it can forward any traffic:
 
@@ -182,7 +192,7 @@ Select **Settings** - `Basic`, and set:
     1. Allow traffic from any address through this port:
 
        ```bash
-       openstack port set <port id> --allowed-address ip-address=0.0.0.0/0
+       openstack port set <PORT_ID> --allowed-address ip-address=0.0.0.0/0
        ```
 
 1. Connect to the `client_vpn_gw` virtual machine via SSH. All further actions must be performed on this virtual machine.
@@ -203,7 +213,7 @@ Select **Settings** - `Basic`, and set:
 
    ```
 
-1. Add VPN connection settings from the client network side to the `/etc/ipsec.conf` file. These settings are a mirror image of the tunnel settings made in the [previous step](#2_set_up_a_vpn_tunnel_on_the_cloud_side).
+1. Add VPN connection settings from the client network side to the `/etc/ipsec.conf` file. These settings are a mirror image of the tunnel settings made [on the cloud side](#1_set_up_a_vpn_tunnel_on_the_cloud_side).
 
    ```ini
    conn client-vkcloud-vpn
@@ -230,10 +240,10 @@ Select **Settings** - `Basic`, and set:
 
    </info>
 
-1. Specify the shared key (PSK) in the `/etc/ipsec.secrets` file. The key must match the key specified [previously](#2_set_up_a_vpn_tunnel_on_the_cloud_side):
+1. Specify the shared key (PSK) in the `/etc/ipsec.secrets` file. The key must match the key specified [on the cloud side](#1_set_up_a_vpn_tunnel_on_the_cloud_side):
 
    ```ini
-   192.0.2.200 192.0.2.100 : PSK "<pre-shared key, specified previously>"
+   192.0.2.200 192.0.2.100 : PSK "<PRE-SHARED_KEY_SPECIFIED_PREVIUOSLY>"
    ```
 
 1. Restart the StrongSwan service:
@@ -242,7 +252,7 @@ Select **Settings** - `Basic`, and set:
    sudo systemctl restart strongswan-starter
    ```
 
-## 4. Add static routes
+## 3. Add static routes
 
 In order for traffic to pass through the VPN tunnel, you need to add static routes:
 
@@ -277,7 +287,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 </tabpanel>
 </tabs>
 
-## 5. Check if the VPN tunnel is working
+## 4. Check if the VPN tunnel is working
 
 1. View the status of the VPN tunnel from the VK Cloud platform.
 
