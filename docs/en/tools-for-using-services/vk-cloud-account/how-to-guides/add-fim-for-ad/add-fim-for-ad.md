@@ -13,7 +13,7 @@ When changing your Active Directory domain, remove the existing federation and s
 ## Before you start
 
 1. [Set up AD FS](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment) and [create](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps) users and groups.
-1. [Export](https://adfshelp.microsoft.com/MetadataExplorer/GetFederationMetadata) the XML metadata file of your AD FS.
+1. [Export](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-endpoints#federation-metadata-test) the XML metadata file of your AD FS.
 
 ## 1. Create identity federation in VK Cloud
 
