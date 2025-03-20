@@ -165,4 +165,4 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 Развернутый инстанс БД [тарифицируется](../../tariffication/) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
 - [Удалите](../../service-management/manage-instance/postgresql#uvelichenie_razmera_diska_s_dannymi) инстанс БД.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, назначенный инстансу БД.
+- При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный инстансу БД.

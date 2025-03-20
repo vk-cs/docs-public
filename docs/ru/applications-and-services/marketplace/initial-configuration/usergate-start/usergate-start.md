@@ -86,4 +86,4 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 
 - [Удалите](../../service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса UserGate NGFW.
 - [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть, используемую для сервиса.
-- [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, созданный во время развертывания сервиса.
+- [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, созданный во время развертывания сервиса.

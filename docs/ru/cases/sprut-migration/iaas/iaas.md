@@ -52,7 +52,7 @@
     В ответе найдите и сохраните следующие сведения:
 
      - ID тех виртуальных машин, которые имеют несколько сетевых интерфейсов.
-     - ID и IP-адреса тех виртуальных машин, которые имеют назначенные Floating IP-адреса.
+     - ID и IP-адреса тех виртуальных машин, которые имеют назначенные плавающие IP-адреса.
      - ID всех остальных ВМ, которые нужно перенести.
 1. Получите список маршрутизаторов:
 
@@ -211,9 +211,9 @@
     All security groups have corresponding '-sprut' groups.
     ```
 
-## 8. (Опционально) Создайте Floating IP-адрес в SDN Sprut
+## 8. (Опционально) Создайте плавающий IP-адрес в SDN Sprut
 
-Floating IP-адреса нельзя перенести в другую SDN. Если в инфраструктуре вашего проекта есть Floating IP-адреса, [создайте новые Floating IP-адреса](/ru/networks/vnet/service-management/ip/floating-ip#add) в SDN Sprut и запишите их.
+Плавающие IP-адреса нельзя перенести в другую SDN. Если в инфраструктуре вашего проекта есть плавающие IP-адреса, [создайте новые плавающие IP-адрес](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) в SDN Sprut и запишите их.
 
 ## 9. Переключите сетевые интерфейсы ВМ в SDN Sprut
 
@@ -227,7 +227,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 - Одну ВМ можно переключить выполнением отдельного скрипта. Такой способ подойдет, если в вашем проекте есть ВМ, которая имеет несколько сетевых интерфейсов, то есть выступает в роли маршрутизатора, прокси или пограничного файервола.
 - Если в вашей конфигурации ВМ подключена напрямую к внешней сети `ext-net`, перенесите ее в SDN Sprut любым удобным способом:
 
-  - [Добавьте](/ru/networks/vnet/service-management/ip/floating-ip#add) Floating IP-адрес в SDN Sprut и подключите к нему ВМ.
+  - [Добавьте](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) в SDN Sprut плавающий IP-адрес и подключите к нему ВМ.
   - [Пересоздайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ в SDN Sprut и подключите ее к внешней сети `internet`.
 
 <tabs>
@@ -252,7 +252,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
     - `<VM-1>`, `<VM-2>` — имена ВМ, которые нужно перенести в SDN Sprut.
     - `<sprut-network-1>`,`<sprut-network-2>` — имена сетей в SDN Sprut, к которым нужно подключить ВМ.
     - `<sprut-subnet-1>`, `<sprut-subnet-2>` — имена подсетей в SDN Sprut, к которым нужно подключить ВМ.
-    - (Опционально) `<sprut-floating-ip>` — Floating IP-адрес в SDN Sprut, который нужно привязать к ВМ.
+    - (Опционально) `<sprut-floating-ip>` — плавающий IP-адрес в SDN Sprut, который нужно привязать к ВМ.
 
     Пример файла со списком ВМ:
 
@@ -377,7 +377,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 Если ресурсы SDN Neutron вам больше не нужны, удалите их:
 
-1. [Уберите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адреса из проекта.
+1. [Уберите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающие IP-адреса из проекта.
 1. [Удалите](/ru/networks/vnet/service-management/secgroups#udalenie_gruppy_bezopasnosti) группы безопасности.
 1. Удалите [сети](/ru/networks/vnet/service-management/net#udalenie_seti) и [подсети](/ru/networks/vnet/service-management/net#udalenie_podseti).
 1. [Удалите](/ru/networks/vnet/service-management/router#udalenie_marshrutizatora) маршрутизаторы.

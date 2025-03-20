@@ -41,7 +41,7 @@
 
    Будет выведена общая информация о балансировщике нагрузки и идентификаторы:
 
-   - `vip_port_id` — идентификатор порта, который используется в качестве Virtual IP на балансировщике нагрузки. На этот порт можно назначить Floating IP-адрес.
+   - `vip_port_id` — идентификатор порта, который используется в качестве Virtual IP на балансировщике нагрузки. На этот порт можно назначить плавающий IP-адрес.
 
    - `listeners` — список идентификаторов listener-объектов. Эти объекты слушают входящие соединения к балансировщику нагрузки и служат точкой входа для трафика.
 
@@ -236,7 +236,7 @@
    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор порта](../../../vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
-1. [Привяжите Floating IP-адрес](../../../vnet/service-management/ip/floating-ip#associate) к порту с этим идентификатором.
+1. [Привяжите плавающий IP-адрес](../../../vnet/service-management/floating-ip#privyazka_plavayushchego_ip_adresa) к порту с этим идентификатором.
 
 </tabpanel>
 </tabs>
@@ -274,7 +274,7 @@
    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор порта](../../../vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
-1. [Отвяжите Floating IP-адрес](../../../vnet/service-management/ip/floating-ip#disassociate) от порта с этим идентификатором.
+1. [Отвяжите плавающий IP-адрес](../../../vnet/service-management/floating-ip#otvyazka_plavayushchego_ip_adresa) от порта с этим идентификатором.
 
 </tabpanel>
 </tabs>
