@@ -92,5 +92,5 @@
 
 - [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `Ubuntu_22_04_LAMP`.
 - [Удалите](/ru/dbs/dbaas/service-management/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-5864`.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес `211.243.95.137`.
+- При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `211.243.95.137`.
 - [Удалите](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey) созданную DNS-запись `site-lamp.example.vk.cloud`.

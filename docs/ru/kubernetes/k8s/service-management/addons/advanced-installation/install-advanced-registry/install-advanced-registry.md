@@ -40,7 +40,7 @@
 
    Запишите вывод команды (в формате `<логин>:<зашифрованный пароль>`).
 
-1. [Добавьте](/ru/networks/vnet/service-management/ip/floating-ip#add) Floating IP-адрес или [найдите](/ru/networks/vnet/service-management/ip/floating-ip#view) существующий непривязанный Floating IP-адрес.
+1. [Добавьте](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) плавающий IP-адрес или [найдите](/ru/networks/vnet/service-management/floating-ip#prosmotr_spiska_plavayushchih_ip_adresov) существующий непривязанный плавающий IP-адрес.
 
    Запишите этот IP-адрес. Он будет использоваться для доступа к реестру Docker.
 

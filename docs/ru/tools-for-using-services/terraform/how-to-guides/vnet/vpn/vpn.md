@@ -21,7 +21,7 @@
 
 - Источники данных (data source):
 
-  - `vkcs_networking_network`: внешняя сеть для получения Floating IP-адреса.
+  - `vkcs_networking_network`: внешняя сеть для получения плавающего IP (floating IP).
 
 ```hcl
 data "vkcs_networking_network" "extnet" {

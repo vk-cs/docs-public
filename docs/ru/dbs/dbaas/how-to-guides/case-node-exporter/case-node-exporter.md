@@ -154,7 +154,7 @@
    - Сформируйте [поисковый запрос](https://prometheus.io/docs/prometheus/2.45/querying/examples/), чтобы просмотреть данные в табличном виде.
    - Откройте [шаблонные наборы графиков](https://prometheus.io/docs/visualization/consoles/) по адресу `http://87.239.239.239:9090/consoles/index.html.example`.
 
-1. (Опционально) [Отвяжите](/ru/networks/vnet/service-management/ip/floating-ip#disassociate) Floating IP-адрес от ВМ `Centos_8_5_Prometheus`.
+1. (Опционально) [Отвяжите](/ru/networks/vnet/service-management/floating-ip#otvyazka_plavayushchego_ip_adresa) плавающий адрес от ВМ `Centos_8_5_Prometheus`.
 
 ## 3. Настройте визуализацию данных в Grafana
 
@@ -193,6 +193,6 @@
 
 1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) развернутые виртуальные машины.
 1. [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) виртуальную машину с Grafana.
-1. [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
+1. [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
 1. [Удалите](/ru/networks/vnet/service-management/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
 1. [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть `monitoring-net`.

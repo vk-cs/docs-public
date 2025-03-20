@@ -248,4 +248,4 @@
 
 - [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `Ubuntu-DR`.
 - Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, если он был создан во время восстановления.
+- [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время восстановления.
