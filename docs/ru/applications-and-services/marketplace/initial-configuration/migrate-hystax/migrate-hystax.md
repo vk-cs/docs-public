@@ -207,4 +207,4 @@
 
 - Удалите ВМ `Ubuntu-MR`, добавленную в [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
 - Удалите (detach) резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время миграции.
+- [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, если он был создан во время миграции.

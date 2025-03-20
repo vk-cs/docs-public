@@ -8,7 +8,7 @@ VK Cloud поддерживает изменение фактора реплик
 </tablist>
 <tabpanel>
 
-1. [Подключитесь к master-узлу](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) с плавающем адресом с помощью SSH.
+1. [Подключитесь к master-узлу](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) с Floating IP-адресом с помощью SSH.
 1. (Опционально) Уточните текущее число копий:
 
    ```bash
