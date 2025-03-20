@@ -1,4 +1,4 @@
-You can configure a firewall to protect your infrastructure from network attacks using the [UserGate NGFW](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/e27c25f9-49db-4ba7-9789-6395b96b39c9/latest/info/) service. Its features:
+You can configure a firewall to protect your infrastructure from network attacks using the UserGate NGFW service. Its features:
 
 - protection against attacks;
 - traffic management;
