@@ -82,11 +82,11 @@
 
       - **Назначить внешний IP**: выберите эту опцию, чтобы иметь доступ к веб-интерфейсу из интернета.
 
-        Узлу с ролью `Dashboards` будет назначен плавающий IP-адрес.
+        Узлу с ролью `Dashboards` будет назначен Floating IP-адрес.
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -242,13 +242,13 @@
 
       - **Сеть:** сеть, в которой будет размещаться кластер. Если нужной сети нет в списке, [создайте ее](/ru/networks/vnet/service-management/net#sozdanie_seti).
 
-      - **Назначить внешний IP:** выберите эту опцию, чтобы назначить кластеру плавающий IP-адрес.
+      - **Назначить внешний IP:** выберите эту опцию, чтобы назначить кластеру Floating IP-адрес.
 
         Такой кластер будет доступен из интернета.
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -392,13 +392,13 @@
 
       - **Сеть:** сеть, в которой будет размещаться кластер. Если нужной сети нет в списке, [создайте ее](/ru/networks/vnet/service-management/net#sozdanie_seti).
 
-      - **Назначить внешний IP:** выберите эту опцию, чтобы назначить хостам кластера плавающий IP-адрес.
+      - **Назначить внешний IP:** выберите эту опцию, чтобы назначить хостам кластера Floating IP-адрес.
 
         Такой кластер будет доступен из интернета.
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -472,7 +472,7 @@
 
       - **Сеть:** сеть, в которой будет размещаться кластер. Если нужной сети нет в списке, [создайте ее](/ru/networks/vnet/service-management/net#sozdanie_seti).
 
-      - **Назначить внешний IP:** выберите эту опцию, чтобы назначить плавающий IP-адрес:
+      - **Назначить внешний IP:** выберите эту опцию, чтобы назначить Floating IP-адрес:
 
         - для кластера (MongoDB);
         - для хостов кластера (ClickHouse).
@@ -483,7 +483,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
