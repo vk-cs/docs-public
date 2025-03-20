@@ -211,8 +211,8 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - `floating_ip_enabled` — назначить публичный IP-адрес для API-кластера:
 
-  - `true` — при создании кластера ему будет назначен [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip) для доступа к кластеру из интернета. Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
-  - `false` — кластеру не будет назначен Floating IP-адрес.
+  - `true` — при создании кластера ему будет назначен [плавающий IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#plavayushchiy_ip_adres) для доступа к кластеру из интернета. Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
+  - `false` — кластеру не будет назначен плавающий IP-адрес.
 
 Чтобы установить аддоны в кластер с помощью Terraform, [получите список доступных аддонов](../../addons/manage-addons#348-tabpanel-1) и [установите нужные](../../addons/advanced-installation).
 

@@ -50,7 +50,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 <summary>Сколько стоит внешний IP-адрес?</summary>
 
-Актуальные цены на Floating IP-адреса и IP-адреса на портах виртуальных машин (`ext-net`) размещены в [прайс-листе](https://cloud.vk.com/pricelist).
+Актуальные цены на плавающие IP-адреса и IP-адреса на портах виртуальных машин (`ext-net`) размещены в [прайс-листе](https://cloud.vk.com/pricelist).
 
 </details>
 
@@ -168,13 +168,13 @@ VNC-консоль доступна на странице виртуальной
 
 <details>
 
-<summary>Могу ли я задать Floating IP-адрес для ВМ?</summary>
+<summary>Могу ли я задать плавающий IP-адрес для ВМ?</summary>
 
-Вы можете [назначить существующий](/ru/networks/vnet/service-management/ip/floating-ip#associate) Floating IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/service-management/ip/floating-ip#add) адрес вручную.
+Вы можете [назначить существующий](/ru/networks/vnet/service-management/floating-ip#privyazka_plavayushchego_ip_adresa) плавающий IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) адрес вручную.
 
 <warn>
 
-Назначение нового Floating IP-адреса происходит случайным образом.
+Назначение нового плавающего IP-адреса происходит случайным образом.
 
 </warn>
 

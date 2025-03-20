@@ -122,5 +122,5 @@
 
 - [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `Almalinux_9_WP`.
 - [Удалите](/ru/dbs/dbaas/service-management/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-9341`.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес `212.233.95.135`.
+- При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `212.233.95.135`.
 - [Удалите](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey) созданную DNS-запись `site-wp.example.vk.cloud`.

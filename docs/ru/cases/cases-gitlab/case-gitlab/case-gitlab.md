@@ -284,4 +284,4 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
 - [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `OA-Ubuntu-docker`.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес `185.185.185.185`.
+- При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `185.185.185.185`.

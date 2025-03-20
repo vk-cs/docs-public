@@ -130,7 +130,7 @@
 - **RAM**: 128Mi–512 Mi.
 - **Объем объектного хранилища S3**: зависит от размера и количества образов, которые планируется размещать в реестре.
 - **Стандартный балансировщик нагрузки**: одна штука.
-- **Floating IP-адрес**: одна штука.
+- **Плавающий IP**: одна штука.
 
 </tabpanel>
 </tabs>
@@ -260,7 +260,7 @@ Ingress-контроллер тесно интегрируется с платф
 - **CPU**: 210m–610m.
 - **RAM**: 238Mi–660Mi.
 - **Стандартный балансировщик нагрузки**: одна штука.
-- **Floating IP-адрес**: одна штука (при установке с [настройками по умолчанию](../../../service-management/addons/advanced-installation/install-advanced-ingress#ustanovka_addona)).
+- **Плавающий IP**: одна штука (при установке с [настройками по умолчанию](../../../service-management/addons/advanced-installation/install-advanced-ingress#ustanovka_addona)).
 
 </tabpanel>
 </tabs>
