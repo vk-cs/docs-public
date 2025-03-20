@@ -2,7 +2,7 @@
 
 - приватной сети;
 - сети с доступом в интернет;
-- сети с портом, привязанным к Floating IP-адресу.
+- сети с портом, привязанным к плавающему IP-адресу.
 
 При создании сетей используются:
 
@@ -38,7 +38,7 @@
 <tablist>
 <tab>Создание приватной сети</tab>
 <tab>Создание сети с доступом в интернет</tab>
-<tab>Создание сети с портом, привязанным к Floating IP-адресу</tab>
+<tab>Создание сети с портом, привязанным к плавающему IP-адресу</tab>
 </tablist>
 <tabpanel>
 
@@ -73,7 +73,7 @@
   1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net) в SDN `Sprut`.
   1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
   1. Создается порт, которому присваивается IP-адрес `192.168.199.23`.
-  1. Порт связывается с Floating IP-адресом.
+  1. Порт связывается с плавающим IP-адресом.
 
   {include(/ru/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
 
@@ -112,9 +112,9 @@
 
   </details>
 
-- `pool` — пул Floating IP-адресов: `internet` для [SDN](/ru/networks/vnet/concepts/sdn) Sprut, `ext-net` для SDN Neutron.
+- `pool` — пул плавающих IP-адресов: `internet` для [SDN](/ru/networks/vnet/concepts/sdn) Sprut, `ext-net` для SDN Neutron.
 
-- `port_id` — идентификатор порта, с которым будет связан Floating IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
+- `port_id` — идентификатор порта, с которым будет связан плавающий IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
   <details>
     <summary>Примеры</summary>
