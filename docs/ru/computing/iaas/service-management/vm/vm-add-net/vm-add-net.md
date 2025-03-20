@@ -120,7 +120,7 @@
 
       Также возможно создать порт с [опциями DHCP](https://github.com/Juniper/contrail-controller/wiki/Extra-DHCP-Options).
 
-      При необходимости [установите порту плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip).
+      При необходимости [установите порту Floating IP-адрес](/ru/networks/vnet/service-management/ip/floating-ip).
 
    В результате будет выведен ID созданного порта и другая информация о нем.
 

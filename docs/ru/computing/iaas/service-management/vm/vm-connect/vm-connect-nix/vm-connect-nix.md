@@ -8,7 +8,7 @@
 
 - виртуальная машина запущена и процесс загрузки ОС завершился;
 - в настройках сети ВМ разрешен удаленный доступ по протоколу SSH (TCP-порт `22`) — [добавьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) группу безопасности `ssh`;
-- у ВМ есть внешний («плавающий») IP-адрес, доступный для подключения.
+- у ВМ есть внешний IP-адрес ([Floating IP](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)), доступный для подключения.
 
    <info>
 
