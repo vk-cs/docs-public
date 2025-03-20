@@ -13,7 +13,7 @@
 ## Подготовительные шаги
 
 1. [Настройте](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment) AD FS, [создайте](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps) пользователей и группы.
-1. [Экспортируйте](https://adfshelp.microsoft.com/MetadataExplorer/GetFederationMetadata) XML-файл с метаданными вашей AD FS.
+1. [Экспортируйте](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-endpoints#federation-metadata-test) XML-файл с метаданными вашей AD FS.
 
 ## 1. Создайте федерацию удостоверений в VK Cloud
 
