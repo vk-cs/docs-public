@@ -130,4 +130,4 @@
 Использование кластера [тарифицируется](../tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
 1. [Удалите](../service-management/delete) кластер.
-1. При необходимости [удалите плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta), назначенный узлам кластера.
+1. При необходимости [удалите Floating IP-адрес](/ru/networks/vnet/service-management/ip/floating-ip#delete), назначенный узлам кластера.

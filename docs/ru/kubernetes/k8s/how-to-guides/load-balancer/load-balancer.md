@@ -95,7 +95,7 @@
 </tablist>
 <tabpanel>
 
-1. Выберите публичный IP-адрес, который нужно назначить балансировщику или создайте новый. Это можно сделать в [личном кабинете VK Cloud](../../../../networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt).
+1. Выберите публичный IP-адрес, который нужно назначить балансировщику или создайте новый. Это можно сделать в [личном кабинете VK Cloud](../../../../networks/vnet/service-management/ip/floating-ip#add).
 
    К IP-адресу не должно быть привязано внутреннего IP-адреса.
 
@@ -403,7 +403,7 @@
    </tabpanel>
    </tabs>
 
-1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta).
+1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/service-management/ip/floating-ip#delete).
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 

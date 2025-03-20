@@ -66,8 +66,8 @@ SDN Sprut полностью совместима с Openstack Neutron API и и
 |Маршрутизатор
 | ![](/ru/assets/check.svg "inline")
 
-|Плавающий IP-адрес
-|Плавающий IP-адрес нельзя перенести, нужно создать новый в SDN Sprut и назначить его ВМ
+|Floating IP-адрес
+|Floating IP-адрес нельзя перенести, нужно создать новый в SDN Sprut и привязать его к ВМ
 
 |Виртуальная машина
 | ![](/ru/assets/check.svg "inline")
