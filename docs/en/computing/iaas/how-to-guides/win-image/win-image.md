@@ -152,7 +152,7 @@ The Windows installation ISO image may contain several editions of the operating
     virtual_disk_format=RAW
     image_type=KVM
     external_switch=external
-    virtio_iso_path="С:\windows-imaging-tools-master\ISO\virtio-win.iso"
+    virtio_iso_path="C:\windows-imaging-tools-master\ISO\virtio-win.iso"
     time_zone="Russian Standard Time"
     install_qemu_ga=True
     install_updates=True
