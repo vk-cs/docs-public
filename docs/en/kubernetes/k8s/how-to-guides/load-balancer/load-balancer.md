@@ -261,7 +261,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 - Scenario 1 — load balancer with manual assignment of static public address, random replica.
 - Scenario 2 — load balancer with automatic assignment of dynamic public address, bounded replica.
-- Scenario 3 — load balancer with automatic assignment of dynamic public address, random replica, access limiting
+- Scenario 3 — load balancer with automatic assignment of dynamic public address, random replica, access limiting.
 - Scenario 4 — load balancer with automatic assignment of dynamic public address, random replica.
 
 <tabs>
