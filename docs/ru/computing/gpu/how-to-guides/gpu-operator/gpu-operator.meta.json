@@ -1,0 +1,10 @@
+{
+    "title": "Управление ресурсами GPU в сервисе Cloud Containers",
+    "pageDescription": "Как создать кластер Kubernetes с GPU и разделить GPU на несколько подов по технологиям MPS и MIG.",
+    "shortDescription": "Как создать кластер Kubernetes с GPU и разделить GPU на несколько подов по технологиям MPS и MIG",
+    "metaTitle": "Управление ресурсами GPU в сервисе Cloud Containers",
+    "metaDescription": "Как создать кластер Kubernetes с GPU и разделить GPU на несколько подов по технологиям MPS и MIG.",
+    "sectionTitle": "Управление ресурсами GPU в сервисе Cloud Containers",
+    "icon": "",
+    "weight": 1
+  }

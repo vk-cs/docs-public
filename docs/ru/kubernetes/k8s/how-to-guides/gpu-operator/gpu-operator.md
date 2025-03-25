@@ -1,17 +1,17 @@
-Cloud Containers позволяет создавать [кластеры с GPU (графическими процессорами)](../../concepts/flavors#gpu) для выполнения машинного обучения или обработки больших данных.
+Cloud Containers позволяет создавать [кластеры с GPU (графическими процессорами)](/ru/kubernetes/k8s/concepts/flavors#gpu) для выполнения машинного обучения или обработки больших данных.
 
 GPU может использоваться в кластере следующими способами:
 
 - Один под использует один или несколько GPU. В этом случае каждый задействованный GPU одновременно выполняет один процесс.
-- Ресурсы GPU распределены несколькими подами по стратегии [MPS](../../concepts/flavors#gpu-sharing). Каждый процесс получает выделенный набор ресурсов GPU, и они взаимодействуют друг с другом через межпроцессное взаимодействие (IPC).
-- Ресурсы GPU распределены несколькими подами по стратегии [MIG](../../concepts/flavors#gpu-sharing). При этом каждая часть имеет собственные ресурсы (память, вычислительные блоки) и может работать изолированно от других.
+- Ресурсы GPU распределены несколькими подами по стратегии [MPS](/ru/kubernetes/k8s/concepts/flavors#gpu-sharing). Каждый процесс получает выделенный набор ресурсов GPU, и они взаимодействуют друг с другом через межпроцессное взаимодействие (IPC).
+- Ресурсы GPU распределены несколькими подами по стратегии [MIG](/ru/kubernetes/k8s/concepts/flavors#gpu-sharing). При этом каждая часть имеет собственные ресурсы (память, вычислительные блоки) и может работать изолированно от других.
 
 В статье показано, как создать кластер с узлом GPU и проверить его работу, как разделить использование GPU между отдельными подами по технологиям MPS или MIG и как переключиться с одного варианта разделения на другой.
 
 ## Подготовительные шаги
 
 1. [Подключите](/ru/computing/gpu/connect) сервис Cloud GPU, если он еще не подключен.
-1. [Создайте кластер](../../service-management/create-cluster) с GPU, если такой кластер еще не создан. Укажите следующие параметры:
+1. [Создайте кластер](/ru/kubernetes/k8s/service-management/create-cluster) с GPU, если такой кластер еще не создан. Укажите следующие параметры:
 
    - Выберите сеть с доступом в интернет.
    - Оставьте опцию **Назначить внешний IP** включенной.
@@ -27,11 +27,11 @@ GPU может использоваться в кластере следующи
 
    В качестве примера далее будет создан кластер `my-kubernetes-cluster` с узлом `my-kubernetes-cluster-gpu-group-0` на шаблоне с GPU. При использовании других имен сделайте соответствующие замены в командах.
 
-1. [Подключитесь](../../connect/kubectl) к кластеру через kubectl.
+1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру через kubectl.
 
 ## 1. Установите аддон GPU-operator
 
-Воспользуйтесь [инструкцией по установке](../../service-management/addons/advanced-installation/install-advanced-gpu-operator).
+Воспользуйтесь [инструкцией по установке](ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator).
 
 ## 2. Проверьте работу кластера 
 
@@ -99,7 +99,7 @@ GPU может использоваться в кластере следующи
 
 ## 3. Разделите GPU по технологии MPS
 
-1. [Добавьте](../../service-management/addons/manage-addons#edit) конфигурацию NVIDIA device plugin в код аддона GPU Operator:
+1. [Добавьте](ru/kubernetes/k8s/service-management/addons/manage-addons#edit) конфигурацию NVIDIA device plugin в код аддона GPU Operator:
 
    <warn>
 
@@ -172,7 +172,7 @@ GPU может использоваться в кластере следующи
    
    <info>
 
-   Вы можете [добавить метку](../../service-management/manage-node-group#labels_taints) для всех узлов в группе через личный кабинет.
+   Вы можете [добавить метку](ru/kubernetes/k8s/service-management/manage-node-group#labels_taints) для всех узлов в группе через личный кабинет.
 
    </info>
    
@@ -279,5 +279,5 @@ GPU может использоваться в кластере следующи
 
 Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-- [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+- [остановите](ru/kubernetes/k8s/service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+- [удалите](ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster) его навсегда.
