@@ -1,0 +1,10 @@
+{
+  "title": "Cloud ML Platform library",
+  "pageDescription": "Cloud ML Platform Python library documentation (for JupyterHub, MLflow, MLflow Deploy).",
+  "shortDescription": "Information on working with the library and the catalog of methods applicable to Cloud ML Platform components.",
+  "metaTitle": "Cloud ML Platform library",
+  "metaDescription": "Cloud ML Platform Python library documentation (for JupyterHub, MLflow, MLflow Deploy).",
+  "sectionTitle": "Cloud ML Platform library",
+  "icon": "",
+  "weight": 6
+}
