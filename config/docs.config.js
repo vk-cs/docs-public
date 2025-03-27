@@ -117,6 +117,7 @@ export const config = {
         },
     },
     paths: {
+        basePath: '/docs',
         policy: '/intro/start/legal',
     },
     enablers: {
