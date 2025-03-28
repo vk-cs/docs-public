@@ -1,0 +1,31 @@
+---
+include:
+  - project: infra/common/ci-templates
+    file:
+      - pipelines/docs-v2/pipe.gitlab-ci.yml
+
+variables:
+  # pipeline parameters
+  VKCS_D11N_VERSION: '4.0.28'
+  VKCS_DOCKERFILE_PATH: devops/Dockerfile
+  VKCS_DEV_DEPLOY_MODE: auto
+  VKCS_PROD_DEPLOY_MODE: auto
+  VKCS_STAGE_DEPLOY_MODE: auto
+  VKCS_DEVINT_DEPLOY_MODE: auto
+  VKCS_DEPLOY_DEVINT_PLAYBOOK: ansible-openstack/playbooks/helm-new-help.yml
+  VKCS_RELEASE_BRANCH: master
+  VKCS_RELEASES_ENABLED: "true"
+
+  # Github sync variables
+  GITHUB_REPO: vk-cs/docs-public
+  # must be defined in Project CI/CD
+  # GITHUB_TOKEN: secret
+  # GITLAB_TOKEN: secret
+
+  VKCS_AUDIT_ENABLED: "true"
+  VKCS_AUDIT_CHECK_URL_STAGE: "https://stage.cloud.vk.com"
+  VKCS_AUDIT_CHECK_URL_PROD: "https://cloud.vk.com"
+
+  # NOTE: override variables to reuse ansible playbooks after changes in MCSAD-1045
+  HELM_CHART_NAME: new-help
+  VKCS_AWX_JOB_TEMPLATE_LABEL: ${HELM_CHART_NAME}-helm
