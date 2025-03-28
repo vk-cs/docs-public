@@ -7,7 +7,7 @@ include:
 
 variables:
   # pipeline parameters
-  VKCS_D11N_VERSION: '4.0.27'
+  VKCS_D11N_VERSION: '4.0.28'
   VKCS_DOCKERFILE_PATH: devops/Dockerfile
   VKCS_DEV_DEPLOY_MODE: auto
   VKCS_PROD_DEPLOY_MODE: auto
