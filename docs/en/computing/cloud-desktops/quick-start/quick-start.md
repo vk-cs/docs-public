@@ -10,7 +10,7 @@ After completing all the steps of the quick start, you will:
 
 ## Preparatory steps
 
-1. Create and configure the OpenLDAP user directory service as described in [the official OpenLDAP documentation](https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide).
+1. Create and configure the OpenLDAP user directory service as described in [the official OpenLDAP documentation](https://www.openldap.org/devel/admin/guide.html#A%20Quick-Start%20Guide).
 1. Find out the details of the configured directory:
 
    - IP address or FQDN of the OpenLDAP server
