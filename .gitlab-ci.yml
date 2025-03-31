@@ -24,7 +24,7 @@ variables:
 
   VKCS_AUDIT_ENABLED: "true"
   VKCS_AUDIT_CHECK_URL_STAGE: "https://stage.cloud.vk.com"
-  VKCS_AUDIT_CHECK_URL_PROD: "https://cloud.vk.com"
+  VKCS_AUDIT_CHECK_URL_PROD: "https://mcstest.mail.ru"
 
   # NOTE: override variables to reuse ansible playbooks after changes in MCSAD-1045
   HELM_CHART_NAME: new-help
