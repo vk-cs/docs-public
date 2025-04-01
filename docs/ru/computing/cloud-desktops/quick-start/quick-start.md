@@ -10,7 +10,7 @@
 
 ## Подготовительные шаги
 
-1. Создайте и настройте службу каталогов пользователей OpenLDAP, как описано [в официальной документации OpenLDAP](https://www.openldap.org/devel/admin/guide.html#A%20Quick-Start%20Guide).
+1. Создайте и настройте службу каталогов пользователей OpenLDAP, как описано [в официальной документации OpenLDAP](https://www.openldap.org/doc/admin/quickstart.html).
 1. Узнайте реквизиты настроенного каталога:
 
    - IP-адрес или FQDN сервера OpenLDAP;
