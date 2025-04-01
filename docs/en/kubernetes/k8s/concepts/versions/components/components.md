@@ -137,9 +137,9 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |4.1.4
 |4.1.4
 |4.7.1
-|4.10.1
-|4.10.1
-|4.12.0
+|4.12.1
+|4.12.1
+|4.12.1
 
 |[Istio](https://github.com/istio/istio)
 | ![](/en/assets/no.svg "inline")
