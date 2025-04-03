@@ -4,7 +4,7 @@
 
 <warn>
 
-Далее приведен пример настройки VPN-туннеля для сетй с SDN [Neutron](/ru/networks/vnet/concepts/sdn#neutron).
+Далее приведен пример настройки VPN-туннеля для сетей с SDN [Neutron](/ru/networks/vnet/concepts/sdn#neutron).
 В сетях с SDN [Sprut](/ru/networks/vnet/concepts/sdn#sprut) соединение виртуальной сети VK Cloud с клиентской сетью настраивается при помощи [продвинутого маршрутизатора](/ru/networks/vnet/how-to-guides/advanced-router).
 
 </warn>
