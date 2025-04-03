@@ -168,7 +168,7 @@ Connection: close
 
 ```json
 POST <url> HTTP/1.1
-x-amz-sns-messages-type: SubscriptionConfirmation
+X-Amz-Sns-Message-Type: Notification
 
 { "Records":
     [
@@ -210,7 +210,7 @@ x-amz-sns-messages-type: SubscriptionConfirmation
 
 ```xml
 POST http://test.com HTTP/1.1
-x-amz-sns-messages-type: SubscriptionConfirmation
+X-Amz-Sns-Message-Type: Notification
 content-type: application/json
 
 {
