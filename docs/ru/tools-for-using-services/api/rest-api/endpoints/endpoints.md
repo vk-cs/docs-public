@@ -57,7 +57,7 @@
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
-| Trove             | https://infra.mail.ru:8779/v1.0/<project_id>        | Управление [базами данных](/ru/dbs/dbaas) |
+| Trove             | https://msk.cloud.vk.com/infra/database/v1.0/<project_id>        | Управление [базами данных](/ru/dbs/dbaas) |
 
 ### Cloud Storage
 
