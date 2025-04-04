@@ -6,7 +6,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 ## Start or stop cluster
 
-### {heading(Start cluster)[id=start_cluster]}
+### {heading(Start cluster)[id=start]}
 
 <tabs>
 <tablist>
@@ -28,7 +28,7 @@ To start a cluster:
 </tabpanel>
 </tabs>
 
-### Stop cluster
+### {heading(Stop cluster)[id=stop]}
 
 <tabs>
 <tablist>

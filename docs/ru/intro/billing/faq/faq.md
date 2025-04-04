@@ -229,7 +229,7 @@ VK Cloud ежеминутно фиксирует потребление ресу
 1. Вручную активируйте ресурсы проекта:
 
    - [виртуальные машины](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm);
-   - [контейнеры Kubernetes](/ru/kubernetes/k8s/service-management/manage-cluster#zapustit_klaster_bbf98834);
+   - [контейнеры Kubernetes](/ru/kubernetes/k8s/service-management/manage-cluster#start);
    - [резервное копирование ВМ](/ru/storage/backups/service-management/manage-backup-plan#activate_stop_delete_backup_plan);
    - другие ресурсы.
 
