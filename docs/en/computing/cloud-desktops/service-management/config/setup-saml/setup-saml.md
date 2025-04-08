@@ -11,6 +11,12 @@ To use the SAML authentication service in Cloud Desktop, complete the following 
 1. Connect your SAML identity provider to the same domain as the directory service.
 1. Prepare your SAML identity provider for integration with Cloud Desktop. The configuration procedure depends on the chosen SAML provider.
 
+    <warn>
+
+    If you selected the [VK subsystem](../setup-provider), use [Keycloak](https://www.keycloak.org) as your SAML identity provider. Configure Keycloak by following [instructions](../../../how-to-guides/keycloak).
+
+    </warn>
+
 To set up two-factor authentication using the SAML service:
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
@@ -50,5 +56,11 @@ To set up two-factor authentication using the SAML service:
         - `EntityIdentifier`: NameID is in the URI format and is used to identify the SAML service provider.
 
     - **Group Attr Name**: specify the type of user attribute that will be returned by the SAML service and which the system will use to decide whether to grant access. The attribute can be of any type. Typically, the `Group` value is specified, i.e. access is granted depending on which group the user belongs to.
+
+      <warn>
+
+      If you selected the [VK subsystem](../setup-provider), specify the `memberOf` value.
+
+      </warn>
 
 1. Click **Save**.
