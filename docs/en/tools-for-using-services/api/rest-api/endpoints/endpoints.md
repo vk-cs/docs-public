@@ -57,7 +57,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Trove             | https://infra.mail.ru:8779/v1.0/<project_id>        | Managing [databases](/en/dbs/dbaas) |
+| Trove             | https://msk.cloud.vk.com/infra/database/v1.0/<project_id>        | Managing [databases](/en/dbs/dbaas) |
 
 ### Cloud Storage
 
