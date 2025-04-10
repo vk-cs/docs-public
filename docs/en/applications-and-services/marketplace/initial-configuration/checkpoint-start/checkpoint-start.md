@@ -320,7 +320,7 @@ By default, one network interface is created for a VM. To add a network interfac
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a gateway.
 1. Go to the **Networks** tab.
-1. [Connect](/en/computing/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the gateway VM and [add](/en/networks/vnet/service-management/secgroups#adding_a_rule) rules to the security group for that network.
+1. [Connect](/en/computing/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the gateway VM and [add](/en/networks/vnet/service-management/secgroups#add-rule) rules to the security group for that network.
 
    <info>
 

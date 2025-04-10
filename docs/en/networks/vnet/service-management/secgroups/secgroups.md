@@ -1,6 +1,6 @@
 A security group is a set of custom traffic rules that can be assigned to instances ports.
 
-## View a list of security groups and information about them
+## {heading(Viewing list of security groups and information about them)[id=view-secgroups]}
 
 <tabs>
 <tablist>
@@ -45,7 +45,7 @@ openstack security group rule list --long <security group ID>
 </tabpanel>
 </tabs>
 
-## Create a security group
+## {heading(Creating security group)[id=create-group]}
 
 <warn>
 
@@ -94,7 +94,7 @@ openstack security group create --description <group description> <new group nam
 </tabpanel>
 </tabs>
 
-## Editing the name and description of the security group
+## {heading(Editing name and description of security group)[id=edit-group]}
 
 <tabs>
 <tablist>
@@ -130,7 +130,7 @@ openstack security group set --description <description> --name <name> <group ID
 </tabpanel>
 </tabs>
 
-## Adding a rule
+## {heading(Adding rule)[id=add-rule]}
 
 A security group rule is a set of parameters that define the conditions for traffic to pass through. Rules are combined into groups, which in turn apply to instance ports.
 
@@ -146,16 +146,35 @@ A security group rule is a set of parameters that define the conditions for traf
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. In the **Incoming traffic** and **Outgoing traffic** section , click **+ Add rule**.
-1. Select the type of traffic (SSH, HTTP, HTTPS, etc.)
+1. Select the type of traffic (SSH, HTTP, HTTPS, etc.). When you select some types, the remaining rule parameters will be pre-configured or unavailable.
 1. Select the required protocol.
+1. Specify the port through which traffic will be allowed.
 1. In the **Remote address** section , specify the address for which the selected type of traffic will be allowed:
 
-   - All IP addresses;
-   - Range of IP addresses;
-   - Security team.
+   <tabs>
+   <tablist>
+   <tab>All IP addresses</tab>
+   <tab>IP-address range</tab>
+   <tab>Security group</tab>
+   </tablist>
+   <tabpanel>
+   The rule will allow traffic for all IP addresses.
+   </tabpanel>
+   <tabpanel>
+   The rule will allow traffic only for the specified IP address:
 
-1. Click **Add description** and in the field that appears, describe the new rule.
-1. Click **Save Rule**.
+      1. In the box that appears, enter the IP address of the node or subnet with a mask in the `0.0.0.0/0` format.
+      1. (Optional) To allow traffic for your device, click **Use my IP**.
+   </tabpanel>
+   <tabpanel>
+   The rule will allow traffic exchange with nodes that have the specified security group assigned.
+
+   In the box that appears, select the security group.
+   </tabpanel>
+   </tabs>
+
+1. (Optional) Click **Add description** and in the box that appears, describe the new rule.
+1. Click **Save rule**.
 
 </tabpanel>
 <tabpanel>
@@ -190,8 +209,7 @@ Available arguments for the rule creation command:
 </tabpanel>
 </tabs>
 
-## Deleting a rule
-
+## {heading(Deleting rule)[id=delete-rule]}
 <tabs>
 <tablist>
 <tab>Management console</tab>
@@ -227,7 +245,7 @@ openstack security group rule delete <rule ID>
 </tabpanel>
 </tabs>
 
-## Assign a rule group to an instance
+## {heading(Assigning rule group to instance)[id=assign-rule]}
 
 To apply a rule set to a virtual machine, the security group that contains the rule set must be applied to the virtual machine.
 
@@ -260,7 +278,7 @@ openstack server add security group <instance ID> <security group ID>
 </tabpanel>
 </tabs>
 
-## Detach a group from an instance
+## {heading(Detaching group from instance)[id=detach-rule]}
 
 <tabs>
 <tablist>
@@ -291,7 +309,7 @@ openstack server remove security group <instance ID> <security group ID>
 </tabpanel>
 </tabs>
 
-## Deleting a security group
+## {heading(Deleting security group)[id=delete-group]}
 
 <tabs>
 <tablist>

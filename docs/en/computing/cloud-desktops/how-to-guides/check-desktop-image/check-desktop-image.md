@@ -84,7 +84,7 @@ Connection to the Astra Linux VM via RDP and LDAP should always be checked, rega
          ```
 
      1. Terminate the current connection session to the VM.
-     1. [Add](/en/networks/vnet/service-management/secgroups#assign_a_rule_group_to_an_instance) the VM to the `rdp` security group.
+     1. [Add](/en/networks/vnet/service-management/secgroups#assign-rule) the VM to the `rdp` security group.
      1. Connect to the VM via RDP, following the [instructions for connecting to a Windows VM](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_vm).
      1. Verify that the connection is successful and the graphical user interface opens.
 
