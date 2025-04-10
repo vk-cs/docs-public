@@ -130,7 +130,7 @@ resource "aws_s3_object" "object-two" {
 
 ## 2. Настройте автоматическую очистку бакета
 
-В примере ниже будет добавлено [правило автоматического удаления](/ru/storage/s3/service-management/buckets/manage-bucket#avtomaticheskaya_ochistka_baketa) (lifecycle) объектов с префиксом `tmp` из бакета через один день.
+В примере ниже будет добавлено [правило автоматического удаления](/ru/storage/s3/service-management/buckets/manage-bucket#manage_lifecycle) (lifecycle) объектов с префиксом `tmp` из бакета через один день.
 
 Добавьте следующее содержимое в файл `main.tf`:
 

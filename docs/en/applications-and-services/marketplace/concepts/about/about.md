@@ -4,7 +4,7 @@ Marketplace is a VK Cloud subsystem that provides customers with access to third
 - open source solutions;
 - self-developed services.
 
-All details on infrastructure deployment and software or creating a tenant (account) remain on the VK Cloud side. The user receives a prepared instance of the service (an instance of the service), which, if necessary, can be customized to their needs. All deployed instances of the service are [charged](../../tariffication/) and [managed](../../service-management/pr-instance-manage/) within the VK Cloud project. The Marketplace helps you launch services faster and simplifies their support.
+All details on infrastructure deployment and software or creating a tenant (account) remain on the VK Cloud side. The user receives a prepared instance of the service (an instance of the service), which, if necessary, can be customized to their needs. All deployed instances of the service are [charged](../../tariffication) and [managed](../../service-management/pr-instance-manage) within the VK Cloud project. The Marketplace helps you launch services faster and simplifies their support.
 
 <warn>
 
@@ -16,7 +16,7 @@ By using the services from the app store, you agree to the [user Agreement](/ru/
 
 VK Cloud supports two types of services:
 
-- SaaS services — centrally installed [multi-tenant](https://habr.com/en/companies/microsoft/articles/145027/) products. The vendor deploys the service either on its own infrastructure, or on the infrastructure in its project in VK Cloud. The user is granted access to the service through a separate account (tenant). The service and its instances are managed on the VK Cloud side.
+- SaaS services — centrally installed [multi-tenant](https://habr.com/en/companies/microsoft/articles/145027) products. The vendor deploys the service either on its own infrastructure, or on the infrastructure in its project in VK Cloud. The user is granted access to the service through a separate account (tenant). The service and its instances are managed on the VK Cloud side.
 - Image-based services — a product that is deployed based on virtual machine images in the VK Cloud project. Additional infrastructure can be used to maintain the product: virtual networks, load balancers, DBaaS clusters, S3 object storage, backup. The service, its instances, and infrastructure are managed on the VK Cloud side.
 
 Each type of service is initialized in VK Cloud differently:
@@ -28,18 +28,18 @@ Each type of service is initialized in VK Cloud differently:
 </tablist>
 <tabpanel>
 
-1. The user [connects](../../service-management/pr-instance-add/) the service to the project.
+1. The user [connects](../../service-management/pr-instance-add) the service to the project.
 1. VK Cloud sends a request to the supplier to create a tenant account in his product.
 1. The supplier registers a new account, sends the VK Cloud details.
-1. VK Cloud creates a service instance for [management](../../service-management/pr-instance-manage/) and sends the access details to the user.
+1. VK Cloud creates a service instance for [management](../../service-management/pr-instance-manage) and sends the access details to the user.
 
 </tabpanel>
 <tabpanel>
 
-1. The user [connects](../../service-management/pr-instance-add/) the service to the project.
+1. The user [connects](../../service-management/pr-instance-add) the service to the project.
 1. VK Cloud creates the necessary infrastructure in the user's project.
 1. VK Cloud installs the service on the created infrastructure.
-1. VK Cloud creates a service instance for [management](../../service-management/pr-instance-manage/) and sends the access details to the user.
+1. VK Cloud creates a service instance for [management](../../service-management/pr-instance-manage) and sends the access details to the user.
 
 </tabpanel>
 </tabs>
@@ -68,7 +68,7 @@ Key differences for SaaS and image-based services:
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 
-| [Tariffication](../../tariffication/)
+| [Tariffication](../../tariffication)
 | Product Usage
 | Product usage + deployed infrastructure in the project
 

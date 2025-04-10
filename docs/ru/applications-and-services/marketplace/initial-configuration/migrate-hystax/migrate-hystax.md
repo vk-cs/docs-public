@@ -1,4 +1,4 @@
-Вы можете мигрировать ваши ресурсы в VK Cloud с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info/) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
+Вы можете мигрировать ваши ресурсы в VK Cloud с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
 
 <details>
   <summary>Откуда можно перенести данные?</summary>
@@ -13,13 +13,13 @@
 
 Данная инструкция поможет мигрировать ваши ресурсы в VK Cloud с помощью сервиса Hystax Acura Migration на примере ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
-Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use/).
+Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use).
 
 ## 1. Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
-1. [Подключите](/ru/applications-and-services/marketplace/service-management/pr-instance-add/) сервис Hystax Acura Migration.
+1. [Подключите](/ru/applications-and-services/marketplace/service-management/pr-instance-add) сервис Hystax Acura Migration.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://migration.mcs-cloud.ru (личный кабинет Hystax Acura).
 

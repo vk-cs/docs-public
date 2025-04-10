@@ -1,4 +1,4 @@
-VK Cloud поддерживает изменение [классов хранения](../../concepts/about#klassy_hraneniya_baketa) для сущностей:
+VK Cloud поддерживает изменение [классов хранения](../../concepts/about#storage_class) для сущностей:
 
 - бакета,
 - объекта,

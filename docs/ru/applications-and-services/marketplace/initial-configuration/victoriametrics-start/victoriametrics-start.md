@@ -1,4 +1,4 @@
-Вы можете собирать, хранить и анализировать метрики в базе данных временных рядов (time series database) с помощью сервиса [VictoriaMetrics](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info/).
+Вы можете собирать, хранить и анализировать метрики в базе данных временных рядов (time series database) с помощью сервиса [VictoriaMetrics](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info).
 
 Инструкция поможет развернуть сервис VictoriaMetrics (на примере версии 1.93.9) на ВМ в VK Cloud и настроить сбор метрик.
 
@@ -9,7 +9,7 @@
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть, если она не была создана ранее.
 1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещены один или несколько серверов с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../service-management/pr-instance-add/) сервис в проекте, выбрав подходящий тарифный план (**Single**, **Cluster Mini**, **Cluster Maxi**):
+1. [Разверните](../../service-management/pr-instance-add) сервис в проекте, выбрав подходящий тарифный план (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
    <details>
     <summary>Подробнее о конфигурациях для тарифных планов</summary>
@@ -162,4 +162,4 @@
    - **Single**: воспользуйтесь [инструкцией из официальной документации](https://docs.victoriametrics.com/Single-server-VictoriaMetrics.html#how-to-scrape-prometheus-exporters-such-as-node-exporter).
    - **Cluster Mini** и **Cluster Maxi**: воспользуйтесь утилитой [vmagent](https://docs.victoriametrics.com/vmagent.html).
 
-   Для расширенной конфигурации сервиса используйте официальную инструкцию [VictoriaMetrics](https://docs.victoriametrics.com/guides/).
+   Для расширенной конфигурации сервиса используйте официальную инструкцию [VictoriaMetrics](https://docs.victoriametrics.com/guides).
