@@ -27,7 +27,7 @@ By going through the steps of this instruction, you will:
 1. Configure the security policy.
 1. Familiarize yourself with the backup options.
 
-By using the Check Point CloudGuard Network service, you agree to license agreements of [Marketplace](/en/intro/start/legal/marketplace) and [Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty/).
+By using the Check Point CloudGuard Network service, you agree to license agreements of [Marketplace](/en/intro/start/legal/marketplace) and [Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
 
 <warn>
 
@@ -70,7 +70,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
 1. Deploy the **Security Gateway BYOL**:
 
-   1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+   1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
    1. Go to **App Store**.
    1. On the **Check Point CloudGuard Network — Security Gateway BYOL** tile, click **Details**.
    1. On the service page, click **Connect**.
@@ -86,7 +86,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
 1. Deploy the **Security Management BYOL**:
 
-   1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+   1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
    1. Go to **App Store**.
    1. On the **Check Point CloudGuard Network — Security Management BYOL** tile, click **Details**.
    1. On the service page, click **Connect**.
@@ -102,7 +102,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
 ## {heading(2. Configure virtual gateway)[id=setup_gateway]}
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a virtual gateway.
 1. On the VM page, go to the **Console** tab.
@@ -130,7 +130,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
 ## {heading(3. Configure management server)[id=setup_management]}
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a management server.
 1. On the VM page, go to the **Console** tab.
@@ -160,7 +160,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
 If you deploy the gateway and the management server on virtual machines with a disk larger than 100 GB, increase the size of the `lv_current` or the `lv_log` logical volumes for these VMs:
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a gateway or a management server.
 1. On the VM page, go to the **Console** tab.
@@ -206,7 +206,7 @@ More information can be found in the [sk95566 article](https://support.checkpoin
 
 ## {heading(5. Configure network access to gateway)[id=configure_network_access_to_gateway]}
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
 1. Go to **Cloud Networks** → **Firewall Settings**.
 1. Add permissive rules for incoming traffic from IP addresses on your network for the security group specified in the gateway configuration instructions:
    1. Click the name of the required security group.
@@ -251,7 +251,7 @@ Now, you can connect to the gateway VM using the GAiA Portal web interface at `h
 
 ## {heading(6. Configure network access to management server)[id=configure_network_access_to_management]}
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
 1. Go to **Cloud Networks** → **Firewall Settings**.
 1. Add permissive rules for incoming traffic from IP addresses on your network for the security group specified in the management server configuration instructions:
    1. Click the name of the required security group.
@@ -316,7 +316,7 @@ Now, you can connect to the management server VM using the GAiA Portal web inter
 
 By default, one network interface is created for a VM. To add a network interface to the gateway:
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a gateway.
 1. Go to the **Networks** tab.

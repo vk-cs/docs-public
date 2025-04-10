@@ -1,4 +1,4 @@
-You can deploy repositories of libraries and artifacts used in modular development using the [Nexus 3](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info/) service. This instruction will help you deploy the Nexus 3 service on a VM in VK Cloud, sign in to the service console and create a new user.
+You can deploy repositories of libraries and artifacts used in modular development using the [Nexus 3](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info) service. This instruction will help you deploy the Nexus 3 service on a VM in VK Cloud, sign in to the service console and create a new user.
 
 By using the Nexus 3 service, you agree to the license agreements of the [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Sonatype](https://sonatype.ru/prices) services.
 
@@ -7,7 +7,7 @@ To deploy the Nexus service in a project:
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with Internet access, if one has not been created earlier.
 1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
-1. [Deploy](../../service-management/pr-instance-add/) Nexus 3 service:
+1. [Deploy](../../service-management/pr-instance-add) Nexus 3 service:
 
    - Select the previously created network with Internet access and subnet. The external IP address will be assigned automatically.
    - Choose the other parameters at your discretion.

@@ -17,6 +17,6 @@
 
 <info>
 
-Instructions for getting started with the services are given in the section [Configuring marketplace services](../../initial-configuration/).
+Instructions for getting started with the services are given in the section [Configuring marketplace services](../../initial-configuration).
 
 </info>

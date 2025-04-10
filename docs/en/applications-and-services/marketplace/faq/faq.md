@@ -3,7 +3,7 @@
 
 <summary>What is Marketplace?</summary>
 
-Marketplace is a VK Cloud subsystem that provides customers with access to third—party services of various kinds, for more information, see the article [About the service](../concepts/about/).
+Marketplace is a VK Cloud subsystem that provides customers with access to third—party services of various kinds, for more information, see the article [About the service](../concepts/about).
 
 </details>
 
@@ -27,7 +27,7 @@ The services differ in architecture and pricing, the full list of differences is
 
 <summary>How to connect a new service?</summary>
 
-[Use the instructions](../service-management/pr-instance-add/) to connect the service instance.
+[Use the instructions](../service-management/pr-instance-add) to connect the service instance.
 
 </details>
 
@@ -36,7 +36,7 @@ The services differ in architecture and pricing, the full list of differences is
 <summary>What should I do if the service did not start when connecting?</summary>
 
 1. Check if there are enough quotas in the project to deploy the service. Free up resources or increase quotas through [technical support](mailto:support@mcs.mail.ru).
-1. With [prepaid payment system](../tariffication/): check if there are enough funds in the project account.
+1. With [prepaid payment system](../tariffication): check if there are enough funds in the project account.
 1. [Update](../service-management/pr-instance-manage#recreating_or_re_updating_a_service_instance) service instance.
 
 </details>
@@ -45,7 +45,7 @@ The services differ in architecture and pricing, the full list of differences is
 
 <summary>How are SaaS and image-based services charged?</summary>
 
-The set of charged resources differs for different types of services, for more information, see the article [Tariffication](../tariffication/).
+The set of charged resources differs for different types of services, for more information, see the article [Tariffication](../tariffication).
 
 </details>
 
@@ -53,7 +53,7 @@ The set of charged resources differs for different types of services, for more i
 
 <summary>What happens to the service instance if no payment was made?</summary>
 
-If no payment was made with the postpaid method, the service will be deleted, for more information, see the article [Tariffication](../tariffication/).
+If no payment was made with the postpaid method, the service will be deleted, for more information, see the article [Tariffication](../tariffication).
 
 </details>
 

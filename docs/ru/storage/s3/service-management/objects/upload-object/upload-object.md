@@ -10,7 +10,7 @@
 
 </err>
 
-## Стандартная загрузка
+## {heading(Стандартная загрузка)[id=standard_upload]}
 
 <tabs>
 <tablist>
@@ -222,7 +222,7 @@
 </tabpanel>
 </tabs>
 
-## Составная загрузка
+## {heading(Составная загрузка)[id=multipart_upload]}
 
 <tabs>
 <tablist>
