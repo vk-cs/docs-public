@@ -6,6 +6,6 @@
     "metaDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов.",
     "sectionTitle": "API Cloud Storage",
     "icon": "",
-    "weight": 2,
+    "weight": 3,
     "uuid": "4801a6f5-5a82-4c45-81d4-5cada60392ab"
 }

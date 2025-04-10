@@ -123,7 +123,7 @@ spark.stop()
       - идентификатор кластера (содержится в поле `id`);
       - имя бакета Cloud Storage (содержится в поле `s3_bucket_name`).
 
-1. [Загрузите](/ru/storage/s3/service-management/objects/upload-object#standartnaya_zagruzka) файлы в директорию `spark-files` этого бакета:
+1. [Загрузите](/ru/storage/s3/service-management/objects/upload-object#standard_upload) файлы в директорию `spark-files` этого бакета:
 
    - `query-clickhouse.py` с кодом приложения Spark.
    - [clickhouse-jdbc-0.5.0-shaded.jar](https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/0.5.0/clickhouse-jdbc-0.5.0-shaded.jar) с JDBC-драйвером для ClickHouse.

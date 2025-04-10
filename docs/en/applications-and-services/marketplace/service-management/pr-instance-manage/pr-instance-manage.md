@@ -30,7 +30,7 @@ Possible service instance statuses:
 
 Activation will be required:
 
-- when [tariffication](../../tariffication/) is prepaid;
+- when [tariffication](../../tariffication) is prepaid;
 - after replenishment of the project account, if the service instance was deactivated due to lack of funds.
 
 <tabs>

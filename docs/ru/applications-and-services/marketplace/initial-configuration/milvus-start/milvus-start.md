@@ -14,7 +14,7 @@ Milvus предоставляет RESTful API и клиентские библи
 
 Чтобы развернуть сервис Milvus в проекте VK Cloud:
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) и [перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу Milvus из интернета:
 
     1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.

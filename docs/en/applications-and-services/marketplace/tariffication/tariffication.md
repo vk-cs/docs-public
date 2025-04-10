@@ -1,6 +1,6 @@
 ## About tariffication
 
-The cost of using the service instance depends on the selected tariff plan and options. It is reflected in the [service configuration wizard](../service-management/pr-instance-add/) and consists of two parts:
+The cost of using the service instance depends on the selected tariff plan and options. It is reflected in the [service configuration wizard](../service-management/pr-instance-add) and consists of two parts:
 
 - The cost of using the service, it is reflected in the **Tariff plans** tab.
 - For image-based services — the cost of the infrastructure, it is reflected in the section **Details**.
@@ -55,7 +55,7 @@ For SaaS and image-based services:
 - Virtual project resources used for backup or recovery.
 - Other services provided within the service (the final set depends on the vendor's service).
 
-For image-based services, VK Cloud virtual resources deployed to maintain the service infrastructure are charged: VMs, disks, networks, routers. The full list of required resources is available when [connecting](../service-management/pr-instance-add/) the service instance.
+For image-based services, VK Cloud virtual resources deployed to maintain the service infrastructure are charged: VMs, disks, networks, routers. The full list of required resources is available when [connecting](../service-management/pr-instance-add) the service instance.
 
 ## Not charged
 

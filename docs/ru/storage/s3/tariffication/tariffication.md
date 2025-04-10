@@ -8,7 +8,7 @@
 
 ## Тарифицируется
 
-Тарификация услуг в Cloud Storage зависит от [класса хранения](../concepts/about#klassy_hraneniya_baketa) данных.
+Тарификация услуг в Cloud Storage зависит от [класса хранения](../concepts/about#storage_class) данных.
 
 В Hotbox и Icebox тарифицируется:
 
