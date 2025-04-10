@@ -21,15 +21,15 @@
 
 1. Откройте консоль и выполните команду:
 
-      ```bash
-      aws s3 ls s3://<имя_бакета>/<префикс>/ --endpoint-url <домен>
+      ```console
+      aws s3 ls s3://<ИМЯ_БАКЕТА>/<ПРЕФИКС>/ --endpoint-url <URL_СЕРВИСА>
       ```
 
       Здесь:
 
-      - `<префикс>` — если ключи, которые используются профиле AWS CLI, дают доступ не ко всему бакету, а только к объектам с определеннным префиксом, укажите префикс для просмотра объектов с ним.
-
-      - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+      - `<ИМЯ_БАКЕТА>` — имя целевого бакета.
+      - `<ПРЕФИКС>` — необязательный параметр. Укажите префикс, если вас интересует только список объектов с определенным префиксом или если ваш доступ к бакету ограничен объектами с определенным префиксом.
+      - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -38,13 +38,13 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3 ls s3://my-bucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
 
-      ```bash
+      ```console
                                     PRE folder/
       2023-09-27 11:45:05     421326 picture-1.jpg
       2023-09-27 11:47:37       2713 picture-2.png
@@ -55,7 +55,7 @@
 
    </details>
 
-Полное описание операций просмотра объектов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
+Описание доступных параметров для команды просмотра списка объектов — в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html).
 
 </tabpanel>
 <tabpanel>
@@ -157,7 +157,7 @@
 1. Нажмите на имя нужного бакета.
 1. Выполните одно из действий для нужного объекта:
 
-   - Выберите с помощью флажка объект, затем нажмите кнопку **Скачать**.
+   - Выберите объект с помощью флажка, затем нажмите кнопку **Скачать**.
    - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для объекта и выберите пункт **Скачать файл**.
 
 </tabpanel>
@@ -169,15 +169,16 @@
 
 1. Выполните команду:
 
-   ```bash
-   aws s3api get-object --bucket <имя_бакета> --key <ключ_объекта> <имя_загруженного файла> --endpoint-url <домен>
+   ```console
+   aws s3api get-object --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> <ИМЯ_ФАЙЛА> --endpoint-url <URL_СЕРВИСА>
    ```
 
    Здесь:
 
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<имя_загруженного файла>` — имя, которое будет присвоено скаченному объекту.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<ИМЯ_ФАЙЛА>` — имя, которое будет присвоено скачанному файлу.
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -186,8 +187,8 @@
 
       Пример команды:
 
-      ```bash
-      aws s3api get-object --bucket my-bucket --key folder/my-object.exe uploaded-file.exe --endpoint-url   https://hb.ru-msk.vkcloud-storage.ru
+      ```console
+      aws s3api get-object --bucket my-bucket --key folder/my-object.exe uploaded-file.exe --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
@@ -296,11 +297,11 @@
 - в личном кабинете VK Cloud;
 - через CLI, API, SDK и файловые менеджеры, если есть ключи доступа к бакету или аккаунту.
 
-Вы можете изменить уровень доступа объекта, чтобы сделать его доступным сторонним пользователям. Уровни доступа соответствуют [фиксированным ACL](../../access-management/s3-acl). По умолчанию доступны уровни:
+Вы можете изменить уровень доступа объекта, чтобы сделать его доступным сторонним пользователям. Уровни доступа соответствуют [фиксированным ACL](../../access-management/s3-acl). По умолчанию можно установить уровни:
 
-- `private` — полные права доступа при наличии ключей доступа к бакету или аккаунту, всем остальным объект не доступен;
-- `public-read` — полные права доступа при наличии ключей, остальным пользователям VK Cloud и сторонним пользователям объект доступен только для чтения;
-- `authenticated-read` — полные права доступа при наличии ключей, остальным пользователям VK Cloud объект доступен только для чтения.
+- `private` — полные права при наличии ключей доступа к бакету или аккаунту, всем остальным объект недоступен;
+- `public-read` — полные права при наличии ключей, остальным пользователям VK Cloud и сторонним пользователям объект доступен только для чтения;
+- `authenticated-read` — полные права при наличии ключей, остальным пользователям VK Cloud объект доступен только для чтения, сторонним пользователям объект недоступен.
 
 Чтобы изменить уровень доступа к объекту:
 
@@ -329,15 +330,16 @@
 
 1. Откройте консоль и выполните команду:
 
-      ```bash
-      aws s3api put-object-acl --bucket <имя_бакета> --key <ключ_объекта> --acl <настройка_acl> --endpoint-url <домен>
+      ```console
+      aws s3api put-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --acl <НАСТРОЙКА_ACL> --endpoint-url <URL_СЕРВИСА>
       ```
 
       Здесь:
 
-      - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-      - `<настройка_acl>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
-      - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+      - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+      - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+      - `<НАСТРОЙКА_ACL>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
+      - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -346,7 +348,7 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
@@ -359,7 +361,8 @@
 
 ## Предоставление доступа к объекту по подписанному URL
 
-[Подписанный URL](../signed-url) предоставляет полный доступ к объекту стороннему пользователю, но ограничен по времени.
+<!--- на слова "Подписанный URL" прикрепить ссылку на раздел "Разграничение доступа", когда он будет написан--->
+Подписанный URL предоставляет полный доступ к объекту стороннему пользователю, но ограничен по времени.
 
 Для генерации подписанного URL:
 
@@ -375,24 +378,25 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
-   aws s3 presign s3://<имя_бакета>/<ключ_объекта> --endpoint-url <домен> --expires-in <время_действия>
+   ```console
+   aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <URL_СЕРВИСА> --expires-in <СРОК_ДЕЙСТВИЯ>
    ```
 
    Здесь:
 
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-   - `<время_действия>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
+   - `<СРОК_ДЕЙСТВИЯ>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
 
    <details>
       <summary>Пример команды формирования подписанного URL</summary>
 
-   Пример команды :
+   Пример команды:
 
-   ```bash
+   ```console
    aws s3 presign s3://my-bucket/my-object.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --expires-in 300000
    ```
 
@@ -520,6 +524,689 @@
 </tabpanel>
 </tabs>
 
+## {heading(Блокировка удаления объектов)[id=lock_object]}
+
+<!--- добавить якорь к ссылке #ways_to_create_bucket --->
+Установить блокировку от удаления или перезаписи можно только для объектов в бакетах, созданных с [явным указанием](../../buckets/create-bucket) такой возможности.
+
+### Временная блокировка по умолчанию
+
+Временная блокировка по умолчанию (`DefaultRetention`) устанавливается на уровне бакета. Она применяется ко всем новым объектам, загружаемым в бакет, и не распространяется на уже загруженные объекты.
+Устанавливать блокировку по умолчанию необязательно.
+
+<warn>
+
+Явное указание режима и срока блокировки для объекта внутри бакета имеет приоритет над настройками блокировки по умолчанию на уровне бакета.
+
+</warn>
+
+Для управления временной блокировкой по умолчанию:
+
+<tabs>
+<tablist>
+<tab>AWS CLI</tab>
+</tablist>
+<tabpanel>
+
+1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Откройте консоль и выполните нужное действие с блокировкой:
+
+   <tabs>
+   <tablist>
+   <tab>Установить</tab>
+   <tab>Снять</tab>
+   <tab>Узнать статус</tab>
+   </tablist>
+   <tabpanel>
+
+   Чтобы установить временную блокировку по умолчанию, выполните команду:
+
+   ```console
+   aws s3api put-object-lock-configuration 
+     --endpoint-url <URL_СЕРВИСА> 
+     --bucket <ИМЯ_БАКЕТА>
+     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule":
+       { "DefaultRetention": { "Mode": "<РЕЖИМ_БЛОКИРОВКИ>", "Days": <СРОК_БЛОКИРОВКИ> }}}'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, для которого устанавливается блокировка по умолчанию.
+   - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
+
+     <!--- Уточнить ссылки, когда раздел features будет опубликован --->
+     - `GOVERNANCE` — [управляемый режим](../../../concepts/);
+     - `COMPLIANCE` — [строгий режим](../../../concepts/).
+
+   - `<СРОК_БЛОКИРОВКИ>` — срок блокировки в днях (`Days`) или годах (`Years`) от момента загрузки объекта. Нельзя указать `Days` и `Years` одновременно.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-lock-configuration --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my_bucket --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "COMPLIANCE", "Days": 30 }}}'
+   ```
+
+   Команда не выводит ответа. Для всех новых объектов, загружаемых в `my_bucket`, будет устанавливаться строгий режим блокировки на срок в 30 дней. Для уже загруженных в `my_bucket` объектов режим блокировки не изменится.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы снять временную блокировку по умолчанию, выполните команду:
+
+   ```console
+   aws s3api put-object-lock-configuration 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА>
+     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled" }'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, для которого снимается блокировка по умолчанию.
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы получить текущую конфигурацию блокировки по умолчанию для бакета, выполните команду:
+
+   ```console
+   aws s3api get-object-lock-configuration 
+     --endpoint-url <URL_СЕРВИСА> 
+     --bucket <ИМЯ_БАКЕТА>
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, для которого запрашивается конфигурация блокировки по умолчанию.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api get-object-lock-configuration --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my_bucket
+   ```
+
+   Пример вывода:
+
+   ```json
+   { "ObjectLockConfiguration": {
+      "ObjectLockEnabled": "Enabled",
+      "Rule": {
+         "DefaultRetention": {
+            "Mode": "COMPLIANCE",
+            "Days": 30 }}}}
+   ```
+
+   </details>
+
+   </tabpanel>
+   </tabs>
+
+</tabpanel>
+</tabs>
+
+### Бессрочная блокировка
+
+Бессрочная блокировка (legal hold) может устанавливаться как при загрузке объекта в бакет, так и для объекта, уже находящегося в бакете. Устанавливать и снимать такую блокировку может только пользователь, обладающий [правами на запись WRITE](../../access-management/s3-acl#permissons).
+
+<warn>
+
+Если для объекта установлены одновременно и временная, и бессрочная блокировки, бессрочная имеет приоритет над временной.
+
+</warn>
+
+Для управления бессрочной блокировкой:
+
+<tabs>
+<tablist>
+<tab>AWS CLI</tab>
+</tablist>
+<tabpanel>
+
+1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Откройте консоль и выполните нужное действие с блокировкой.
+
+   <tabs>
+   <tablist>
+   <tab>Установить для нового объекта</tab>
+   <tab>Установить для объекта в бакете</tab>
+   <tab>Снять</tab>
+   <tab>Узнать статус</tab>
+   </tablist>
+   <tabpanel>
+
+   Чтобы установить бессрочную блокировку для нового объекта, загружаемого в бакет, выполните команду:
+
+   ```console
+   aws s3api put-object 
+     --endpoint-url <URL_СЕРВИСА> 
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --body <ПУТЬ_К_ФАЙЛУ> 
+     --object-lock-legal-hold-status ON
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в который будет загружен новый объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<ПУТЬ_К_ФАЙЛУ>` — путь к локальному файлу.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image.png --body image.png --object-lock-legal-hold-status ON
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+      "ETag": "\"746066bba59ef00362b139a89a0b0363\""
+   }
+   ```
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы установить бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
+
+   ```console
+   aws s3api put-object-legal-hold 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --legal-hold Status=ON
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-legal-hold --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --legal-hold Status=ON
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы установить бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
+
+   ```console
+   aws s3api put-object-legal-hold 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --legal-hold Status=OFF
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-legal-hold --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --legal-hold Status=OFF
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы узнать статус бессрочной блокировки объекта, выполните команду:
+
+   ```console
+   aws s3api get-object-legal-hold
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+   ```
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api get-object-legal-hold --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image.png
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+      "LegalHold": {
+         "Status": "ON"
+      }
+   }
+   ```
+
+   </details>
+
+   <info>
+
+   Статус блокировки объекта также можно посмотреть в ответах команд `s3api get-object` и `s3api head-object`. Подробнее — в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html).
+
+   </info>
+
+   </tabpanel>
+   </tabs>
+
+</tabpanel>
+</tabs>
+
+### Временная блокировка
+
+Временная блокировка (retention period) может устанавливаться как при загрузке объекта в бакет, так и для объекта, уже находящегося в бакете.
+
+Для управления временной блокировкой:
+
+<tabs>
+<tablist>
+<tab>AWS CLI</tab>
+</tablist>
+<tabpanel>
+
+1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Откройте консоль и выполните нужное действие с блокировкой.
+
+   <tabs>
+   <tablist>
+   <tab>Установить для нового объекта</tab>
+   <tab>Установить для объекта в бакете</tab>
+   <tab>Продлить</tab>
+   <tab>Узнать статус</tab>
+   </tablist>
+   <tabpanel>
+
+   Чтобы установить временную блокировку для нового объекта, загружаемого в бакет, выполните команду:
+
+   ```console
+   aws s3api put-object 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --body <ПУТЬ_К_ФАЙЛУ>
+     --object-lock-mode <РЕЖИМ_БЛОКИРОВКИ>
+     --object-lock-retain-until-date '<YYYY-MM-DD HH:MM:SS>'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в который будет загружен новый объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<ПУТЬ_К_ФАЙЛУ>` — путь к локальному файлу.
+   - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
+
+     <!--- Уточнить ссылки, когда раздел features будет опубликован --->
+     - `GOVERNANCE` — [управляемый режим](../../../concepts/);
+     - `COMPLIANCE` — [строгий режим](../../../concepts/).
+
+   - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --body image.png --object-lock-mode GOVERNANCE --object-lock-retain-until-date '2025-05-15 12:00:00'
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+      "ETag": "\"746066bba59ef00362b139a89a0b0363\""
+   }
+   ```
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы установить временную блокировку для объекта, находящегося в бакете, выполните команду:
+
+   ```console
+   aws s3api put-object-retention 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --retention '{ "Mode": "<РЕЖИМ_БЛОКИРОВКИ>", "RetainUntilDate": "<YYYY-MM-DD HH:MM:SS>"}'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
+
+     <!--- Уточнить ссылки, когда раздел features будет опубликован --->
+     - `GOVERNANCE` — [управляемый режим](../../../concepts/);
+     - `COMPLIANCE` — [строгий режим](../../../concepts/).
+
+   - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "2025-05-15 12:00:00"}'
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы установить временную блокировку для объекта, находящегося в бакете, выполните команду:
+
+   ```console
+   aws s3api put-object-retention 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --retention '{ "Mode": "<РЕЖИМ_БЛОКИРОВКИ>", "RetainUntilDate": "<YYYY-MM-DD HH:MM:SS>"}'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
+
+     <!--- Уточнить ссылки, когда раздел features будет опубликован --->
+     - `GOVERNANCE` — [управляемый режим](../../../concepts/);
+     - `COMPLIANCE` — [строгий режим](../../../concepts/).
+
+   - `<YYYY-MM-DD HH:MM:SS>` — новая более поздняя дата и время окончания блокировки.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "2025-08-15 21:00:00"}'
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы узнать статус временной блокировки объекта, выполните команду:
+
+   ```console
+   aws s3api get-object-retention
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+   ```
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api get-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+      "Retention": {
+         "Mode": "COMPLIANCE",
+         "RetainUntilDate": "2025-03-15T12:00:00+00:00"
+      }
+   }
+   ```
+
+   </details>
+
+   <info>
+
+   Статус блокировки объекта также можно посмотреть в ответах команд `s3api get-object` и `s3api head-object`. Подробнее — в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/index.html).
+
+   </info>
+
+   </tabpanel>
+   </tabs>
+
+</tabpanel>
+</tabs>
+
+### Обход временной блокировки
+
+<warn>
+
+Обойти временную блокировку со строгим режимом (`COMPLIANCE`) нельзя.
+
+</warn>
+
+Пользователь, обладающий [правами на запись WRITE](../../access-management/s3-acl#permissons), может обойти временную блокировку с режимом `GOVERNANCE`, используя в командах флаг `--bypass-governance-retention`. Обходя блокировку, он может:
+
+- удалить объект до окончания срока блокировки;
+- снять временную блокировку;
+- сократить срок блокировки;
+- изменить режим на `COMPLIANCE`.
+
+Для выполнения действий в обход блокировки:
+
+<tabs>
+<tablist>
+<tab>AWS CLI</tab>
+</tablist>
+<tabpanel>
+
+1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Откройте консоль и выполните нужное действие.
+
+   <tabs>
+   <tablist>
+   <tab>Удалить объект</tab>
+   <tab>Снять блокировку</tab>
+   <tab>Сократить срок</tab>
+   <tab>Изменить режим</tab>
+   </tablist>
+   <tabpanel>
+
+   Чтобы удалить объект, для которого установлена управляемая временная блокировка, выполните команду:
+
+   ```console
+   aws s3api delete-object
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА>
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --bypass-governance-retention
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api delete-object --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы снять с объекта управляемую временную блокировку, выполните команду:
+
+   ```console
+   aws s3api put-object-retention 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --bypass-governance-retention
+     --retention '{}'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention --retention '{}'
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы сократить для объекта срок управляемой временной блокировки, выполните команду:
+
+   ```console
+   aws s3api put-object-retention 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --bypass-governance-retention
+     --retention '{ "Mode": "GOVERNANCE", "RetainUntilDate": "<YYYY-MM-DD HH:MM:SS>"}'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<YYYY-MM-DD HH:MM:SS>` — новая более ранняя дата и время окончания блокировки.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention --retention '{ "Mode": "GOVERNANCE", "RetainUntilDate": "2025-04-10 10:00:00"}' 
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   Чтобы изменить для объекта режим временной блокировки на `COMPLIANCE`, выполните команду:
+
+   ```console
+   aws s3api put-object-retention 
+     --endpoint-url <URL_СЕРВИСА>
+     --bucket <ИМЯ_БАКЕТА> 
+     --key <КЛЮЧ_ОБЪЕКТА>
+     --bypass-governance-retention
+     --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "<YYYY-MM-DD HH:MM:SS>"}'
+   ```
+
+   Здесь:
+
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
+
+   <details>
+   <summary>Пример команды</summary>
+
+   ```console
+   aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "2025-05-15 12:00:00"}' 
+   ```
+
+   Команда не выводит ответа.
+
+   </details>
+
+   </tabpanel>
+   </tabs>
+
+</tabpanel>
+</tabs>
+
 ## {heading(Копирование объекта)[id=copy_object]}
 
 Инструкция подходит для копирования объекта в пределах одного бакета или между бакетами одного проекта.
@@ -536,16 +1223,16 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
-   aws s3 cp s3://<бакет_источник>/<ключ_объекта> s3://<бакет_приемник>/<ключ_объекта> --endpoint-url=<домен>
+   ```console
+   aws s3 cp s3://<БАКЕТ_ИСТОЧНИК>/<КЛЮЧ_ОБЪЕКТА> s3://<БАКЕТ_ПРИЕМНИК>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <URL_СЕРВИСА>
    ```
 
    Здесь:
 
-   - `<бакет_источник>` — имя бакета, из которого копируется объект.
-   - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<БАКЕТ_ИСТОЧНИК>` — имя бакета, из которого копируется объект.
+   - `<БАКЕТ_ПРИЕМНИК>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -554,13 +1241,13 @@
 
    Пример команды:
 
-   ```bash
-   aws s3 cp s3://my-bucket/my-picture.png s3://my-another-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
+   ```console
+   aws s3 cp s3://my-bucket/my-picture.png s3://my-another-bucket/my-picture.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
 
-   ```bash
+   ```console
    copy: s3://my-bucket/my-picture.png to s3://my-another-bucket/my-picture.png
    ```
 
@@ -675,15 +1362,15 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
-   aws s3 cp --recursive s3://<бакет_источник> s3://<бакет_приемник> --endpoint-url=<домен>
+   ```console
+   aws s3 cp --recursive s3://<БАКЕТ_ИСТОЧНИК> s3://<БАКЕТ_ПРИЕМНИК> --endpoint-url <URL_СЕРВИСА>
    ```
 
    Здесь:
 
-   - `<бакет_источник>` — имя бакета, из которого копируется объект.
-   - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<БАКЕТ_ИСТОЧНИК>` — имя бакета, из которого копируется объект.
+   - `<БАКЕТ_ПРИЕМНИК>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -692,13 +1379,13 @@
 
       Пример команды:
 
-      ```bash
-      aws s3 cp --recursive s3://my-bucket s3://my-another-bucket --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
+      ```console
+      aws s3 cp --recursive s3://my-bucket s3://my-another-bucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
 
-      ```bash
+      ```console
       copy: s3://my-bucket/video.mp4 to s3://my-another-bucket/video.mp4
       copy: s3://my-bucket/pre/scheme.svg to s3://my-another-bucket/pre/scheme.svg
       copy: s3://my-bucket/picture.png to s3://my-another-bucket/picture.png
@@ -711,6 +1398,8 @@
 </tabs>
 
 ## Удаление объекта
+
+В этом разделе описано, как удалить объект без установленной блокировки от удаления и перезаписи. О снятии и обходе блокировки — в разделе [Блокировка удаления объектов](#lock_object).
 
 <tabs>
 <tablist>
@@ -731,7 +1420,7 @@
 1. Нажмите на имя нужного бакета. Откроется страница с информацией о бакете на вкладке **Папки и файлы**.
 1. Выполните одно из действий для нужного объекта:
 
-   - Выберите с помощью флажка объект, затем нажмите кнопку **Удалить**.
+   - Выберите объект с помощью флажка, затем нажмите кнопку **Удалить**.
    - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для объекта и выберите пункт **Удалить файл**.
 
 1. Подтвердите удаление.
@@ -743,14 +1432,15 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
-   aws s3 rm s3://<имя_бакета>/<ключ_объекта> --endpoint-url=<домен>
+   ```console
+   aws s3 rm s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <URL_СЕРВИСА>
    ```
 
    Здесь:
 
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -759,13 +1449,13 @@
 
       Пример команды:
 
-      ```bash
-      aws s3 rm s3://my-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
+      ```console
+      aws s3 rm s3://my-bucket/my-picture.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
 
-      ```bash
+      ```console
       delete: s3://my-bucket/my-picture.png
       ```
 
@@ -905,15 +1595,14 @@
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
 
-   ```bash
-   aws s3api list-multipart-uploads --bucket <имя_бакета> --endpoint-url <endpoint-url>
+   ```console
+   aws s3api list-multipart-uploads --bucket <ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА>
    ```
 
    Здесь:
 
-    - `<имя_бакета>` — имя бакета, для которого нужно удалить незавершенные загрузки.
-
-    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно удалить незавершенные загрузки.
+    - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -923,7 +1612,7 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3api list-multipart-uploads --bucket mybucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
@@ -972,7 +1661,7 @@
 1. Нажмите на имя нужного бакета и перейдите на вкладку **Multipart**.
 1. Выполните одно из действий для нужной части:
 
-   - Выберите с помощью флажка часть, затем нажмите кнопку **Удалить** над таблицей.
+   - Выберите часть с помощью флажка, затем нажмите кнопку **Удалить** над таблицей.
    - Выберите часть, которую нужно удалить, и нажмите на значок ![Удалить](assets/delete-icon.svg "inline") справа.
 1. Подтвердите удаление.
 
@@ -982,26 +1671,25 @@
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
 
-   ```bash
-   aws s3api abort-multipart-upload --bucket <имя_бакета> --key <ключ_объекта> --upload-id <UploadId> --endpoint-url <endpoint-url>
+   ```console
+   aws s3api abort-multipart-upload --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --upload-id <ID_ЗАГРУЗКИ> --endpoint-url <URL_СЕРВИСА>
    ```
 
    Здесь:
 
-    - `<имя_бакета>` — имя бакета, для которого нужно удалить незавершенные загрузки.
+    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно удалить незавершенные загрузки.
+    - `<КЛЮЧ_ОБЪЕКТА>` — значение в поле **Название** на вкладке **Multipart** в личном кабинете или значение параметра `Key` в ответе AWS CLI.
 
-    - `<ключ_объекта>` — **Название** объекта на вкладке **Multipart** в личном кабинете или значение параметра `Key` в ответе AWS CLI.
+    - `<ID_ЗАГРУЗКИ>` — значение в поле **ID** на вкладке **Multipart** в личном кабинете или значение параметра `UploadId` в ответе AWS CLI.
 
-    - `<UploadId>` — **ID** объекта на вкладке **Multipart** в личном кабинете или значение параметра `UploadId` в ответе AWS CLI.
-
-    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    Пример выполнения команды:
 
-   ```bash
+   ```console
    aws s3api abort-multipart-upload --bucket mybucket --key inupload.avi --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
