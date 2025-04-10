@@ -89,7 +89,7 @@ There are no preset groups when working via OpenStack CLI and Terraform. You can
 
 ## {heading(Custom security groups)[id=custom_sg]}
 
-You can create any other traffic restrictions. To do this, [create](../../service-management/secgroups#create_a_security_group) security groups with specific firewall rules and [assign](../../service-management/secgroups#assign_a_rule_group_to_an_instance) them to ports.
+You can create any other traffic restrictions. To do this, [create](../../service-management/secgroups#create_a_security_group) security groups with specific firewall rules and [assign](../../service-management/secgroups#assign-rule) them to ports.
 
 For custom security groups to work correctly:
 
