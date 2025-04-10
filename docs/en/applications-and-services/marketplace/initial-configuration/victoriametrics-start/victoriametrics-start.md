@@ -1,4 +1,4 @@
-You can collect, store and analyze metrics in the time series database using the [VictoriaMetrics service](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info/).
+You can collect, store and analyze metrics in the time series database using the [VictoriaMetrics service](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info).
 
 The instructions will help you deploy the VictoriaMetrics service (using the example of version 1.93.9) on a VM in VK Cloud and configure the collection of metrics.
 
@@ -9,7 +9,7 @@ To deploy the VictoriaMetrics service in a project:
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/service-management/net#creating_network) a network, if one has not been created earlier.
 1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
-1. [Deploy](../../service-management/pr-instance-add/) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
+1. [Deploy](../../service-management/pr-instance-add) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
    <details>
     <summary>Learn more about configurations for tariff plans</summary>
@@ -162,4 +162,4 @@ To deploy the VictoriaMetrics service in a project:
    - **Single**: use the [instructions from the official documentation](https://docs.victoriametrics.com/Single-server-VictoriaMetrics.html#how-to-scrape-prometheus-exporters-such-as-node-exporter).
    - **Cluster Mini** and **Cluster Maxi**: use the [vmagent](https://docs.victoriametrics.com/vmagent.html) utility.
 
-   For the extended configuration of the service, use the official instructions [VictoriaMetrics](https://docs.victoriametrics.com/guides/).
+   For the extended configuration of the service, use the official instructions [VictoriaMetrics](https://docs.victoriametrics.com/guides).

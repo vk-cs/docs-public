@@ -1,4 +1,4 @@
-You can migrate your resources to VK Cloud using the [Hystax Acura Migration](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info/) service without suspending applications. You can transfer resources from both virtual and physical platforms.
+You can migrate your resources to VK Cloud using the [Hystax Acura Migration](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) service without suspending applications. You can transfer resources from both virtual and physical platforms.
 
 <details>
   <summary>Where can I transfer data from?</summary>
@@ -13,14 +13,14 @@ You can migrate your resources to VK Cloud using the [Hystax Acura Migration](ht
 
 This instruction will help you migrate your resources to VK Cloud using the Hystax Acura Migration service using the example of the `Ubuntu-MR` VM with the Ubuntu 18.04 operating system.
 
-By using the Hystax Acura Migration service, you agree to the license agreements of [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Hystax Acura Migration](https://хст.рф/terms-of-use/).
+By using the Hystax Acura Migration service, you agree to the license agreements of [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Hystax Acura Migration](https://хст.рф/terms-of-use).
 
 ## 1. Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Configure](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
 1. [Create a VM](/en/computing/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
-1. [Connect](/en/applications-and-services/marketplace/service-management/pr-instance-add/) Hystax Acura Migration service.
+1. [Connect](/en/applications-and-services/marketplace/service-management/pr-instance-add) Hystax Acura Migration service.
 
    Wait for the installation to complete — a link with a username and password will be sent to your email. The service will be deployed at https://migration.mcs-cloud.ru (Hystax Acura personal account).
 

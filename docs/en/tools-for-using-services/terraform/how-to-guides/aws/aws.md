@@ -130,7 +130,7 @@ Here:
 
 ## 2. Set up automatic bucket cleanup
 
-The example below will add an [automatic deletion rule](/ru/storage/s3/service-management/buckets/manage-bucket#avtomaticheskaya_ochistka_baketa "change-lang") (lifecycle) for objects with the `tmp` prefix from the bucket after one day.
+The example below will add an [automatic deletion rule](/ru/storage/s3/service-management/buckets/manage-bucket#manage_lifecycle "change-lang") (lifecycle) for objects with the `tmp` prefix from the bucket after one day.
 
 Add the following content to the `main.tf` file:
 

@@ -29,7 +29,7 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with the Internet access, if one has not already been created.
 1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
-1. [Deploy](../../service-management/pr-instance-add/) the UserGate NGFW service:
+1. [Deploy](../../service-management/pr-instance-add) the UserGate NGFW service:
 
    - Select the previously created network with Internet access and subnet.
    - Choose other parameters at your discretion.
@@ -56,7 +56,7 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
    The UserGate console dashboard will open.
 
 1. Go to **Settings** → **Network** → **Interfaces**. Make sure that there is one network adapter in the **Current node** group (the network selected during the service deployment stage).
-1. [Go to](https://msk.cloud.vk.com/app/en/) your management console at VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) your management console at VK Cloud.
 1. Go to **Cloud Servers** → **Virtual**.
 1. Open the page of the service VM (usually `<identifier>usergate`) by clicking on its name in the list.
 1. Go to the **Networks** tab.

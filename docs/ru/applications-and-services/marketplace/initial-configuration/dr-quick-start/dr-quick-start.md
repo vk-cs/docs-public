@@ -1,4 +1,4 @@
-Вы можете настроить восстановление данных и IT-инфраструктуры в случае непредвиденных обстоятельств с помощью сервиса [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info/) без приостановки работы приложений. Использование сервиса позволяет оптимизировать показатели:
+Вы можете настроить восстановление данных и IT-инфраструктуры в случае непредвиденных обстоятельств с помощью сервиса [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info) без приостановки работы приложений. Использование сервиса позволяет оптимизировать показатели:
 
 - Конечная точка восстановления (RPO) — время между созданием последней резервной копии и моментом возникновения аварии. Может настраиваться индивидуально для каждого ресурса.
 - Конечное время восстановления (RTO) — время между реакцией на аварию и восстановлением инфраструктуры. Сервис позволяет свести этот показатель к минимуму.
@@ -21,14 +21,14 @@
 1. Создадите резервную инфраструктуру с использованием плана резервного восстановления.
 1. Восстановите резервируемую инфраструктуру в VK Cloud.
 
-Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
+Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
 
 ## 1. Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
 1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
-1. [Подключите](../../service-management/pr-instance-add/) сервис Hystax Acura Disaster Recovery.
+1. [Подключите](../../service-management/pr-instance-add) сервис Hystax Acura Disaster Recovery.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://dr.mcs-cloud.ru (личный кабинет Hystax Acura).
 
