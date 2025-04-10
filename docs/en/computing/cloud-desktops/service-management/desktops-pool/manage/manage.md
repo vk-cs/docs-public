@@ -20,7 +20,7 @@ You can also [manage all desktops](../../manage-desktops) created in the system 
 
 Once a pool is created, you can change any of its parameters except the name, type, and availability zone.
 
-To change the rules for the pool security group, in your personal account or using the Openstack CLI, [add](/en/networks/vnet/service-management/secgroups#adding_a_rule) new rules to the group and [delete](/en/networks/vnet/service-management/secgroups#deleting_a_rule) unnecessary ones.
+To change the rules for the pool security group, in your personal account or using the Openstack CLI, [add](/en/networks/vnet/service-management/secgroups#add-rule) new rules to the group and [delete](/en/networks/vnet/service-management/secgroups#delete-rule) unnecessary ones.
 
 To change other parameters:
 

@@ -125,7 +125,7 @@ Here:
 
   - `port_id = vkcs_networking_port.example.id`: the security group ID will be taken after creating the `vkcs_networking_secgroup` resource.
   - `port_id = data.vkcs_networking_port.example.id`: the security group ID is taken from the `vkcs_networking_secgroup` data source.
-  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the security group ID is taken from the [list of security groups](/en/networks/vnet/service-management/secgroups#view_a_list_of_security_groups_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the security group ID is taken from the [list of security groups](/en/networks/vnet/service-management/secgroups#view-secgroups) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
