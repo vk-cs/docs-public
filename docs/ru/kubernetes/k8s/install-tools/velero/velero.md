@@ -16,8 +16,8 @@ Velero — это клиент-серверная утилита для резе
 
    ```text
    [default]
-   aws_access_key_id=<идентификатор ключа (Access Key ID)>
-   aws_secret_access_key=<секрет (Secret Key)>
+   aws_access_key_id=<ИДЕНТИФИКАТОР_КЛЮЧА_ACCESS_KEY_ID>
+   aws_secret_access_key=<СЕКРЕТНЫЙ_КЛЮЧ_SECRET_KEY>
    ```
 
 1. Определите, какая версия Velero [совместима с версией кластера](https://github.com/vmware-tanzu/velero#velero-compatibility-matrix) Kubernetes, в который нужно установить Velero.
@@ -40,13 +40,13 @@ Velero — это клиент-серверная утилита для резе
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 \
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
    --provider aws \
-   --bucket <имя бакета для Velero> \
-   --secret-file <путь к файлу s3_creds> \
+   --bucket <ИМЯ_БАКЕТА_VELERO> \
+   --secret-file <ПУТЬ_К_ФАЙЛУ_S3_CREDS> \
    --use-volume-snapshots=false \
    --backup-location-config \
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<домен>
+     region=ru-msk,s3ForcePathStyle="true",s3Url=<ДОМЕН>
 
    ```
 
@@ -56,19 +56,19 @@ Velero — это клиент-серверная утилита для резе
    ```powershell
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 `
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
    --provider aws `
-   --bucket <имя бакета для Velero> `
-   --secret-file <путь к файлу s3_creds> `
+   --bucket <ИМЯ_БАКЕТА_VELERO> `
+   --secret-file <ПУТЬ_К_ФАЙЛУ_S3_CREDS> `
    --use-volume-snapshots=false `
    --backup-location-config `
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<домен>
+     region=ru-msk,s3ForcePathStyle="true",s3Url=<ДОМЕН>
    ```
 
    </tabpanel>
    </tabs>
 
-   Здесь `<домен>` — домен сервиса Cloud Storage, соответствующий региону аккаунта:
+   Здесь `<ДОМЕН>` — домен сервиса Cloud Storage, соответствующий региону аккаунта:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва.
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
