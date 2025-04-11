@@ -5,7 +5,7 @@
 <warn>
 
 Далее приведен пример настройки VPN-туннеля для сетей с SDN [Neutron](/ru/networks/vnet/concepts/sdn#neutron).
-В сетях с SDN [Sprut](/ru/networks/vnet/concepts/sdn#sprut) соединение виртуальной сети VK Cloud с клиентской сетью настраивается при помощи [продвинутого маршрутизатора](/ru/networks/vnet/how-to-guides/advanced-router).
+В сетях с SDN [Sprut](/ru/networks/vnet/concepts/sdn#sprut) соединение виртуальной сети VK Cloud с клиентской сетью настраивается при помощи [продвинутого маршрутизатора](/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router).
 
 </warn>
 
@@ -112,7 +112,7 @@
    | Виртуальная подсеть со стороны облачного VPN-шлюза                      | `10.0.0.0/29`   |
    | IP-адрес порта `SNAT` в облачной подсети                             | `10.0.0.5`      |
 
-![Example Infrastructure](./assets/vpn-tunnel.png){params[noBorder=true]}
+![Example Infrastructure](assets/vpn-tunnel.png){params[noBorder=true]}
 
 ## 1. Настройте VPN-туннель на стороне облачной сети
 
@@ -335,8 +335,8 @@
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальные машины.
-1. [Удалите](../../service-management/vpn#udalenie_vpn_tunnelya) VPN-туннель.
-1. [Удалите](/ru/networks/vnet/service-management/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
+1. [Удалите](../../../service-management/vpn#udalenie_vpn_tunnelya) VPN-туннель.
+1. [Удалите](../../../service-management/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 
    <info>
 
@@ -344,6 +344,6 @@
 
    </info>
 
-1. [Удалите](../../service-management/router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
-1. Удалите клиентскую и облачную [подсети](../../service-management/net#udalenie_podseti) и [сети](../../service-management/net#udalenie_seti).
-1. [Удалите](../../service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающие IP-адреса.
+1. [Удалите](../../../service-management/router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
+1. Удалите клиентскую и облачную [подсети](../../../service-management/net#udalenie_podseti) и [сети](../../../service-management/net#udalenie_seti).
+1. [Удалите](../../../service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающие IP-адреса.
