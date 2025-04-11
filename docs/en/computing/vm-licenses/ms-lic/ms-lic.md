@@ -10,7 +10,7 @@ VK Cloud provides Microsoft software under the Service Provider License Agreemen
 
 If you have any questions about licensing and rights to use Microsoft software, contact your legal department or Microsoft sales representatives.
 
-**By using this product, you agree to the terms of use of the following products**: [Microsoft](https://www.microsoft.com/licensing/docs/view/Services-Provider-Use-Rights-SPUR?lang=1).
+By using this product, you agree to the terms of use of the following products: [Microsoft](https://www.microsoft.com/licensing/docs/view/Services-Provider-Use-Rights-SPUR?lang=1).
 
 ## Price
 
@@ -21,9 +21,18 @@ The price for a month of using the software can be found out:
 - in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
 - in the section **Balance** [management console](https://msk.cloud.vk.com/app/en/services/billing).
 
+## {heading(VM requirements for automatic license activation)[id=requirements]}
+
+To automatically activate licenses for Microsoft Windows Server and Microsoft Office products purchased from VK Cloud:
+
+- A VM must be accessible via internet. If the access is not via an IP address provided by VK Cloud, you should provide the IP address of the VM to [technical support](mailto:support@mcs.mail.ru).
+- TCP port 1688 must be open on the VM.
+
+Since a VM with Microsoft Windows OS regularly renews its activation, it is necessary to ensure that the VM has access to the activation server for its entire life.
+
 ## Windows Server
 
-When creating a VM with Microsoft Windows OS, a licensed copy of the OS of the selected edition is automatically deployed. It will be activated when the VM is turned on.
+When creating a VM with Microsoft Windows OS, a licensed copy of the OS of the selected edition is automatically deployed. The license will be activated automatically when the VM is launched if the [VM requirements](../../vm-licenses/ms-lic#requirements) are met.
 
 The available editions of the Microsoft Windows Server are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [management console](https://msk.cloud.vk.com/app/services/infra/servers/add).
 

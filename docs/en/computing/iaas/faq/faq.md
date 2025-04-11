@@ -497,7 +497,7 @@ Yes, you can, for more information, see the article [File Storage management](..
 
 <summary>How do I get a Windows Server license?</summary>
 
-A licensed copy of the Windows Server operating system is preinstalled in the Windows-based VM being created. Activation of the licensed copy occurs automatically after the VM is created. If an OS activation error occurs, contact [technical support](mailto:support@mcs.mail.ru) with the virtual machine ID.
+A licensed copy of the Windows Server operating system is preinstalled on the Windows-based VM being created. Activation of the licensed copy occurs automatically after the VM is launched if the [VM requirements](../../vm-licenses/ms-lic#requirements) are met. If an OS activation error occurs, contact [technical support](mailto:support@mcs.mail.ru) with the virtual machine ID.
 
 </details>
 
@@ -516,7 +516,8 @@ The list of standard licenses provided is limited, you can see the list availabl
 Microsoft provides several licensing models that allow you to make the most optimal use of your budget:
 
 - To the core. This licensing model provides access to an unlimited number of users or devices.
-- Per user. It is designed to provide access to the license to one user for an unlimited number of servers.
+- Per user. It is designed to provide access to the license to one user on an unlimited number of servers.
+- Per device. With this model, the license is purchased for every device that accesses your server. The number of users, who work with that device, is not limited. Per-device licenses may reduce costs and simplify administration for companies where employees share devices, for example, on different work shifts.
 
 According to Microsoft licensing rules, the “per core” option implies the need to cover each VM virtual core with a license. Regardless of the number of VM cores, licenses are subject to every 2 virtual CPUs, for more information, see the article [Microsoft](/en/computing/vm-licenses/ms-lic).
 
