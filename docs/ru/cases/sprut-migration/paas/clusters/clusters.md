@@ -15,8 +15,8 @@
 
     Чтобы сократить время недоступности сервисов, объедините исходную SDN Neutron и новую SDN Sprut с помощью продвинутого маршрутизатора, подключенного к транзитным сетям со стандартными маршрутизаторами. Такой подход будет полезен, если вы переносите сервисы постепенно или не можете отключить кластер на время миграции.
 
-    1. [Подключите](/ru/networks/vnet/how-to-guides/advanced-router) продвинутый маршрутизатор к транзитным сетям со стандартными маршрутизаторами в исходной SDN Neutron и новой SDN Sprut.
-    1. [Настройте](/ru/networks/vnet/how-to-guides/advanced-router#6_nastroyte_staticheskie_marshruty_mezhdu_setyami) статические маршруты между сетями Neutron и Sprut.
+    1. [Подключите](/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router) продвинутый маршрутизатор к транзитным сетям со стандартными маршрутизаторами в исходной SDN Neutron и новой SDN Sprut.
+    1. [Настройте](/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router#6_nastroyte_staticheskie_marshruty_mezhdu_setyami) статические маршруты между сетями Neutron и Sprut.
 
 1. Проверьте работоспособность нового кластера:
 

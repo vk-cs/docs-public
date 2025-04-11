@@ -22,7 +22,7 @@ SDN Sprut полностью совместима с Openstack Neutron API и и
 
 Функциональные преимущества миграции:
 
-- [Продвинутый маршрутизатор](/ru/networks/vnet/how-to-guides/advanced-router) с поддержкой динамической маршрутизации по протоколу BGP для построения отказоустойчивых схем маршрутизации.
+- [Продвинутый маршрутизатор](/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router) с поддержкой динамической маршрутизации по протоколу BGP для построения отказоустойчивых схем маршрутизации.
 - [Cloud Direct Connect](https://cloud.vk.com/direct-connect) — выделенные подключения между локальной сетью компании и VK Cloud.
 - [Общие сети](/ru/networks/vnet/concepts/net-types#shared_net) для объединения проектов в одном регионе.
 - Децентрализованный DHCP-сервис для повышения отказоустойчивости.
