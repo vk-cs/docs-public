@@ -94,8 +94,8 @@
 1. Нажмите кнопку **Добавить VPN** или **Добавить**. Откроется мастер создания нового VPN-туннеля.
 1. Выберите SDN, в которой будет создан VPN:
 
-   - **SDN Neutron**: VPN можно подключить только к [стандартному маршрутизатору](../../concepts/router#vozmozhnosti_standartnogo_marshrutizatora) Sprut или Neutron.
-   - **SDN Sprut**: VPN можно подключить только к [продвинутому маршрутизатору](../../concepts/router#vozmozhnosti_prodvinutogo_marshrutizatora).
+   - **SDN Neutron**: VPN можно подключить только к [стандартному маршрутизатору](../../concepts/router#standard) Sprut или Neutron.
+   - **SDN Sprut**: VPN можно подключить только к [продвинутому маршрутизатору](../../concepts/router#advanced).
 
 1. Настройте IKE:
 

@@ -1,0 +1,1 @@
+{include(/ru/networks//vnet/how-to-guides/onpremise-connect/dc-advanced-router/dc-advanced-router.md)}

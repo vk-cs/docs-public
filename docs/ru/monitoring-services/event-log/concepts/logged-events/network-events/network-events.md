@@ -373,7 +373,7 @@
 
 <!-- direct_connect actions -->
 |`create-dc-router`
-|Создан [продвинутый маршрутизатор](/ru/networks/vnet/concepts/router#vozmozhnosti_prodvinutogo_marshrutizatora)
+|Создан [продвинутый маршрутизатор](/ru/networks/vnet/concepts/router#advanced)
 
 |`update-dc-router`
 |Обновлен продвинутый маршрутизатор
