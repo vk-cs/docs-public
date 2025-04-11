@@ -149,7 +149,7 @@ A security group rule is a set of parameters that define the conditions for traf
 1. Select the type of traffic (SSH, HTTP, HTTPS, etc.). When you select some types, the remaining rule parameters will be pre-configured or unavailable.
 1. Select the required protocol.
 1. Specify the port through which traffic will be allowed.
-1. In the **Remote address** section , specify the address for which the selected type of traffic will be allowed:
+1. In the **Remote address** section, specify the address for which the selected type of traffic will be allowed:
 
    <tabs>
    <tablist>
@@ -161,18 +161,22 @@ A security group rule is a set of parameters that define the conditions for traf
    The rule will allow traffic for all IP addresses.
    </tabpanel>
    <tabpanel>
+   
    The rule will allow traffic only for the specified IP address:
 
       1. In the box that appears, enter the IP address of the node or subnet with a mask in the `0.0.0.0/0` format.
       1. (Optional) To allow traffic for your device, click **Use my IP**.
+   
    </tabpanel>
    <tabpanel>
+   
    The rule will allow traffic exchange with nodes that have the specified security group assigned.
 
    In the box that appears, select the security group.
+
    </tabpanel>
    </tabs>
-
+   
 1. (Optional) Click **Add description** and in the box that appears, describe the new rule.
 1. Click **Save rule**.
 
