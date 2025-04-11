@@ -28,13 +28,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/networks/vnet/how-to-guides/vpn-tunnel"
+                    "link": "/ru/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel"
                 },
                 {
                     "link": "/ru/networks/vnet/how-to-guides/vip-keepalived"
                 },
                 {
-                    "link": "/ru/networks/vnet/how-to-guides/advanced-router"
+                    "link": "/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router"
                 }
             ]
         }
