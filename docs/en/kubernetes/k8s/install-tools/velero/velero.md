@@ -16,8 +16,8 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
    ```text
    [default]
-   aws_access_key_id=<Access Key ID>
-   aws_secret_access_key=<Secret Key>
+   aws_access_key_id=<ACCESS_KEY_ID>
+   aws_secret_access_key=<SECRET_KEY>
    ```
 
 1. Determine which version of Velero [is compatible with the Kubernetes cluster version](https://github.com/vmware-tanzu/velero#velero-compatibility-matrix) you want to install Velero in.
@@ -40,13 +40,13 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 \
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
    --provider aws \
-   --bucket <Velero bucket name> \
-   --secret-file <path to s3_creds file> \
+   --bucket <VELERO_BUCKET_NAME> \
+   --secret-file <PATH_TO_S3_CREDS_FILE> \
    --use-volume-snapshots=false \
    --backup-location-config \
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<domain>
+     region=ru-msk,s3ForcePathStyle="true",s3Url=<DOMAIN>
 
    ```
 
@@ -56,19 +56,19 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```powershell
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 `
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
    --provider aws `
-   --bucket <Velero bucket name> `
-   --secret-file <path to s3_creds file> `
+   --bucket <VELERO_BUCKET_NAME> `
+   --secret-file <PATH_TO_S3_CREDS_FILE> `
    --use-volume-snapshots=false `
    --backup-location-config `
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<domain>
+     region=ru-msk,s3ForcePathStyle="true",s3Url=<DOMAIN>
    ```
 
    </tabpanel>
    </tabs>
 
-   Here `<domain>` is the Cloud Storage service domain corresponding to the account region:
+   Here `<DOMAIN>` is the Cloud Storage service domain corresponding to the account region:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain.
    - `https://hb.kz-ast.bizmrg.com` — the Kazakhstan region domain.
