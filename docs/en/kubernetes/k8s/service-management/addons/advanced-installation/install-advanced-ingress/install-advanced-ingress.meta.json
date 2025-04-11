@@ -6,6 +6,6 @@
     "metaDescription": "Configuring and installing the Ingress controller add-on",
     "sectionTitle": "Ingress NGINX",
     "icon": "",
-    "weight": 6,
+    "weight": 7,
     "uuid": "2b6ffc85-38a5-4a34-8021-13ac4fafc0b5"
 }

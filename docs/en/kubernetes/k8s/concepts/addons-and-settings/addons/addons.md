@@ -178,6 +178,60 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 </tabpanel>
 </tabs>
 
+### {heading(GPU Operator)[id=gpu_operator]}
+
+<tabs>
+<tablist>
+<tab>Description</tab>
+<tab>System requirements</tab>
+</tablist>
+<tabpanel>
+
+GPU Operator allows you to manage [GPUs on cluster nodes](../../flavors#gpu) to perform machine learning or big data processing.
+
+The following options for using GPUs in a cluster are available:
+
+- One pod uses one or more GPUs.
+- The add-on distributes one GPU between several pods using the [MIG](../../flavors#gpu-sharing) strategy.
+- The add-on distributes one GPU between several pods using the [MPS](../../flavors#gpu-sharing) strategy.
+
+Addon components:
+
+- NVIDIA GPU Operator for GPU management.
+- Service validators for CUDA (Compute Unified Device Architecture) validation after configuration changes.
+- Operator self-diagnosis tools.
+- NVIDIA device plugin for automating GPU resource binding and allocation.
+- Node Feature Discovery for identifying and registering features available on cluster nodes. The component contains the following services:
+
+  - NFD-Master is responsible for connecting to the Kubernetes API server and updating node objects.
+  - NFD-Worker connects to the NFD-Master service to advertise hardware features.
+  - NFD Garbage-Collector ensures that all Node Feature Discovery objects have corresponding nodes and removes stale objects for non-existent nodes.
+
+Read more about the add-on and its components: [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html), [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes), [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery).
+
+</tabpanel>
+<tabpanel>
+
+The add-on components requirements:
+
+- NVIDIA GPU Operator:
+  - **CPU**: 200–500m
+  - **RAM**: 64–512Mi
+- NFD-Master:
+  - **CPU**: 100–500m
+  - **RAM**: 128Mi–4Gi
+- NFD Garbage-Collector:
+  - **CPU**: 10–500m
+  - **RAM**: 128Mi–1Gi
+- NFD-Worker (on each GPU node):
+  - **CPU**: 205–2000m
+  - **RAM**: 192Mi–2Gi
+
+If the add-on is installed on several worker nodes, then NFD-Worker will be installed on each of these nodes and will require the specified amount of RAM for each node. The remaining components are installed on one node only.
+
+</tabpanel>
+</tabs>
+
 ### Ingress Controller (NGINX)
 
 <warn>

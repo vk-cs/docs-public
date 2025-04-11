@@ -172,7 +172,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       If there is no such group — [add it](../../../manage-node-group#add_worker_node_group).
 
-   1. [Customise](../../../manage-node-group#customise_labels_and_taints) for this node group, if it hasn't already been done:
+   1. [Customise](../../../manage-node-group#labels_taints) for this node group, if it hasn't already been done:
 
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.

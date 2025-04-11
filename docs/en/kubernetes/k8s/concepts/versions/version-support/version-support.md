@@ -189,7 +189,7 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 
 |**Kubernetes 1.31.4**
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
-|Added the ability to use and manage GPUs in Kubernetes clusters
+|Added the ability to [use and manage](../../../how-to-guides/gpu-operator) GPUs in Kubernetes clusters
 
 |**Kubernetes 1.30.5**
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
