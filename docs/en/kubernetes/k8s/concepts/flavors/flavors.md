@@ -107,3 +107,43 @@ Available CPU resources on the node:
 | 36 | 36 935 672 | 32 848 683 | 32 079 |
 | 48 | 49 321 092 | 44 479 128 | 43 437 |
 | 64 | 65 836 152 |	59 987 556 | 58 582 |
+
+## {heading(GPU flavors)[id=gpu]}
+
+[GPU-accelerated servers](/en/computing/gpu/concepts/about) allow you to perform complex and resource-intensive calculations in the field of machine learning and big data processing.
+
+To use GPU flavors on cluster nodes, [leave a request](https://cloud.vk.com/cloud-gpu/) to enable the Cloud GPU service.
+
+### {heading(Features of creating a cluster with GPU)[id=gpu-features]}
+
+You can use a flavor with GPU for worker nodes only. The flavor with GPU must be in the same [availability zone](/en/intro/start/concepts/architecture#az) as the node that uses it.
+
+If you create or edit a cluster via Terraform or CLI, specify the availability zone for the node with GPU in which the GPU provided to you is located. Otherwise, the cluster will not be created or will not work correctly.
+
+When you work via the VK Cloud management console, only templates with GPUs that are in the same availability zone as this node will be available in the **Node type** box.
+
+<warn>
+
+GPU flavors cannot be used for cluster master nodes.
+
+</warn>
+
+### {heading(GPU sharing technologies)[id=gpu-sharing]}
+
+In practice, machine learning and big data processes do not use the entire GPU resource. Therefore, GPU processors either work only partially, or perform regular tasks in addition to complex ones. This makes using GPUs expensive.
+
+*GPU sharing technologies* allow one graphics processor to be used by several processes or instances simultaneously: different applications or different data specialists can share one GPU in their work.
+
+On the VK Cloud platform, two technologies of this kind are available in Kubernetes clusters: MIG and MPS.
+
+*MIG (Multi-Instance Graphics)* is a GPU virtualization technology that allows you to split one graphics processor into several independent GPUs. Each part has its own resources (memory, computing units) and can work in isolation from others.
+
+The technology is designed to improve the efficiency of using graphics processors in virtualized environments (for example, on servers), where it is important to minimize costs by providing isolated access to each user or application.
+
+MIG technology is not available for all GPU models. The official NVIDIA documentation describes the [technology](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html) and the [GPU models](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html#supported-gpus) for which it is available in more detail.
+
+*MPS (CUDA Multi-Process Service)* is a mechanism that allows the computing power of a GPU to be shared among multiple processes. Each process gets a dedicated set of GPU resources, and they communicate with each other via inter-process communication (IPC).
+
+This technology is suitable for tasks where high parallelism and GPU computing power are important, but applications do not need to have a direct access each other's memory or resources.
+
+For more information, see the [official NVIDIA documentation](https://docs.nvidia.com/deploy/mps/index.html).

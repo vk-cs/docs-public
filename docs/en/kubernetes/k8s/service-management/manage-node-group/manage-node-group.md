@@ -88,7 +88,8 @@ You can change the size of a group of worker nodes manually or configure auto sc
 
 These operations are described in detail in [Scaling cluster nodes](../scale) section.
 
-## Customise labels and taints
+## {heading(Customise labels and taints)[id=labels_taints]}
+
 
 <warn>
 
