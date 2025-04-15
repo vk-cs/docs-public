@@ -68,7 +68,7 @@ _Neutron_ — SDN, которая является частью платформ
 
 ## {heading(Sprut)[id=sprut]}
 
-_Sprut_ — SDN собственной разработки VK Cloud, полностью совместимая с Openstack Neutron API.
+_Sprut_ — SDN собственной разработки VK Cloud, полностью совместимая с OpenStack Neutron API.
 
 SDN Sprut обеспечивает стабильную работу сетей и сетевых функций поверх этих сетей на больших масштабах.
 

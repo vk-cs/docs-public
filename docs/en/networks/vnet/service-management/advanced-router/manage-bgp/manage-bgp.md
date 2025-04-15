@@ -1,4 +1,4 @@
-An advanced router allows you to establish connection between autonomous networks using the [BGP protocol](../../../concepts/router#advanced_router_capabilities). To do this, you need to add a BGP router and specify BGP neighbors.
+An advanced router allows you to establish connection between autonomous networks using the [BGP protocol](../../../concepts/router#advanced). To do this, you need to add a BGP router and specify BGP neighbors.
 
 ## Adding a BGP router
 

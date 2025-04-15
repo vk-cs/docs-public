@@ -94,8 +94,8 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 1. Click the **Add VPN** or **Add** button. The New VPN Tunnel Wizard opens.
 1. Select the SDN in which the VPN will be created:
 
-   - **SDN Neutron**: VPN can only be connected to a [standard router](../../concepts/router#standard_router_capabilities) of Sprut or Neutron.
-   - **SDN Sprut**: VPN can only be connected to an [advanced router](../../concepts/router#advanced_router_capabilities).
+   - **SDN Neutron**: VPN can only be connected to a [standard router](../../concepts/router#standard) of Sprut or Neutron.
+   - **SDN Sprut**: VPN can only be connected to an [advanced router](../../concepts/router#advanced).
 
 1. Set up IKE:
 
