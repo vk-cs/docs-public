@@ -19,7 +19,7 @@ To deploy Joomla service in the VK Cloud project:
     1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with internet access if it has not been created previously.
     1. In [subnet settings](/en/networks/vnet/service-management/net#editing_network) where the VM with the deployed service will be located, disable the **Private DNS** option.
 
-1. Go to **App Store**, on the section page, click **All Solutions**.
+1. Go to **Marketplace**, on the section page, click **All Solutions**.
 1. On the **Joomla** service card, click **Details**.
 1. On the service description page, click **Connect**.
 1. Enter the details on the **Параметры сервера** page.
@@ -52,7 +52,7 @@ To deploy Joomla service in the VK Cloud project:
 
 1. Familiarize yourself with the infrastructure costs for deploying the service and click **Connect the tariff**. 
 
-    The cloud infrastructure deployment will start and the service properties page will open. The status of the process will also be displayed in the **App Store → My Services** section.
+    The cloud infrastructure deployment will start and the service properties page will open. The status of the process will also be displayed in the **Marketplace → My Services** section.
 
     After successful deployment, you will receive a message to the email associated with your VK Cloud account:
 

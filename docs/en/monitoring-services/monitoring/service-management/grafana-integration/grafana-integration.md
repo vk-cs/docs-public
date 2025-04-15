@@ -3,7 +3,7 @@ You can visualize resource monitoring data collected by Cloud Monitoring:
 - in the **Monitoring → Dashboards** section of your VK Cloud management console, as described in the article [Installing monitoring in a new VM](../mon-setup-new);
 - using the Grafana service.
 
-To use the Grafana service, [deploy](/en/applications-and-services/marketplace/initial-configuration/grafana-start) it from the [App store](https://msk.cloud.vk.com/app/en/services/marketplace) to your project.
+To use the Grafana service, [deploy](/en/applications-and-services/marketplace/initial-configuration/grafana-start) it from the [Marketplace](https://msk.cloud.vk.com/app/en/services/marketplace) to your project.
 
 When deploying the service, it will be automatically integrated with Cloud Monitoring:
 
