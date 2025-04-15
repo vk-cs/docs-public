@@ -26,7 +26,7 @@ Routers are used to organize traffic exchange between subnets. There are two typ
 
 Different types of routers can be used within a single VK Cloud subnet.
 
-## Standard router capabilities
+## {heading(Standard router capabilities)[id=standard]}
 
 - **Routing traffic between VK Cloud subnets.**
 
@@ -54,7 +54,7 @@ Different types of routers can be used within a single VK Cloud subnet.
 
     This allows you to create a secure channel for managing the VK Cloud infrastructure or transferring data between the company network and VK Cloud networks.
 
-## Advanced router capabilities
+## {heading(Advanced router capabilities)[id=advanced]}
 
 - **Connecting to a network junction between VK Cloud and a remote site.**
 

@@ -1,4 +1,4 @@
-You can manage [advanced routers](../../../concepts/router#advanced_router_capabilities): view, edit and delete them.
+You can manage [advanced routers](../../../concepts/router#advanced): view, edit and delete them.
 
 Advanced routers are only available with [SDN Sprut](../../../concepts/architecture#sdns_used). To find out which SDN is used in your project or to connect another, contact [technical support](mailto:support@mcs.mail.ru).
 
