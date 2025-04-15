@@ -1,4 +1,4 @@
-[Advanced routers](/en/networks/vnet/concepts/router#advanced_router_capabilities) can connect your local network with VK Cloud virtual networks without using a dedicated virtual machine as a router. This simplifies data transfer by using dynamic routing capabilities over the [BGP](https://datatracker.ietf.org/doc/html/rfc1163) protocol.
+[Advanced routers](/en/networks/vnet/concepts/router#advanced) can connect your local network with VK Cloud virtual networks without using a dedicated virtual machine as a router. This simplifies data transfer by using dynamic routing capabilities over the [BGP](https://datatracker.ietf.org/doc/html/rfc1163) protocol.
 
 To show the configuration of an advanced router, two independent networks will be connected using the BGP protocol:
 
@@ -42,7 +42,7 @@ To show the configuration of an advanced router, two independent networks will b
 
     Note the VM's IP address.
 
-1. Contact the [technical support](mailto:support@mcs.mail.ru) to add a network to your VK Cloud project to organize a [direct connection](/en/networks/vnet/concepts/router#advanced_router_capabilities).
+1. Contact the [technical support](mailto:support@mcs.mail.ru) to add a network to your VK Cloud project to organize a [direct connection](/en/networks/vnet/concepts/router#advanced).
 
     When the network is provided, note its name, subnet name, and IP address.
 
