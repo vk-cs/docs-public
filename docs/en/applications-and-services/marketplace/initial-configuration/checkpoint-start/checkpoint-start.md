@@ -71,7 +71,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Deploy the **Security Gateway BYOL**:
 
    1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
-   1. Go to **App Store**.
+   1. Go to **Marketplace**.
    1. On the **Check Point CloudGuard Network — Security Gateway BYOL** tile, click **Details**.
    1. On the service page, click **Connect**.
    1. Set the gateway parameters on the service configuration page:
@@ -87,7 +87,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Deploy the **Security Management BYOL**:
 
    1. [Go](https://msk.cloud.vk.com/app) to your VK Cloud management console.
-   1. Go to **App Store**.
+   1. Go to **Marketplace**.
    1. On the **Check Point CloudGuard Network — Security Management BYOL** tile, click **Details**.
    1. On the service page, click **Connect**.
    1. Set the management server parameters on the service configuration page:

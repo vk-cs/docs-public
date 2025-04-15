@@ -25,7 +25,7 @@ A server group is a collection of servers within a cluster that are combined in 
 - virtual machines;
 - DB instances;
 - K8s clusters;
-- application instances from the App Store.
+- application instances from the Marketplace.
 
 The policy determines the allocation of resources on the platform compute nodes. Supported policies:
 
