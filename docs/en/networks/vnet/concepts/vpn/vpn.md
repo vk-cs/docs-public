@@ -1,36 +1,33 @@
-VPN allows you to organize a tunnel between one or more VK Cloud subnets and the client network. This can be useful in situations where you need to:
+VPN (Virtual Private Network) is a technology that allows one or more secure network connections to be provided over other networks.
 
-- connect the company's network to the cloud network (for example, to have access to the VK Cloud infrastructure);
-- arrange a secure channel to manage the VK Cloud infrastructure (for example, to use telnet together with virtual machines).
+Depending on the protocols used, VPN can:
 
-The VPN service is based on [StrongSwan](https://www.strongswan.org) and allows organizing IPsec tunnels. To link VK Cloud subnets and client subnets:
+- Connect different types of endpoints (node-to-node, node-to-network, network-to-network).
+- Have different levels of data security.
+- Be used for different purposes (user access to corporate networks, unification of remote networks into one infrastructure, etc.).
 
-1. Connect to [router](../router) all VK Cloud subnets that you want to access via VPN. Networks in [SDN Sprut](../architecture#sdns_used) can only use an advanced router to organize VPN, and networks in [SDN Neutron](../architecture#sdns_used) can only use a standard one.
+In VK Cloud, the VPN service (VPNaaS) allows you to create a secure communication tunnel between one or more VK Cloud subnets and the client's remote infrastructure subnets (on-premises) to solve the following tasks:
 
-1. Configure this router to access the [external network](../net-types#external_network) so that you can use its `SNAT` interfaces.
+- Connect the company network to the VK Cloud network to have access to the cloud infrastructure.
+- Organize a secure channel for managing the VK Cloud infrastructure (for example, to use telnet together with virtual machines).
 
-1. Set static routes to the necessary client subnets on the remote site.
+The VPN service in VK Cloud is implemented on the basis of [StrongSwan](https://www.strongswan.org) using the IPsec and IKEv1, IKEv2 stack . The following parameters are supported:
 
-   These routes are set in the VK Cloud subnet settings, which must be accessible through the VPN. This is necessary because the VK Cloud VPN accesses client subnets through the `SNAT` interface:
+- Operating modes: IKEv1, IKEv2 (recommended).
+- Authentication: Pre-Shared Key (PSK).
+- Diffie-Hellman groups: modp1024 (Group 2), modp1536 (Group 5), modp2048 (Group 14).
+- Encryption algorithms: AES-128, AES-192, AES-256, 3DES.
+- Hashing: SHA1, SHA256.
+- SA lifetime: 3600 seconds (default).
 
-   ```text
-   <client subnet address 1> - <VK Cloud subnet's SNAT interface address>
+The VPN service is available in both [SDN](../architecture) (Software Defined Network) used in VK Cloud:
 
-   ...
+- SDN Neutron: VPN can only be connected to a [standard router](../router#standard).
+- SDN Sprut: VPN can only be connected to an [advanced router](../router#advanced).
 
-   <client subnet address N> - <VK Cloud subnet's SNAT interface address>
-   ```
+In the Sprut SDN, a VPN can be built between the cloud and the remote infrastructure over an Internet connection or over [Direct Connect](/ru/networks/directconnect). VPN over Direct Connect does not require Internet access from the remote infrastructure and provides the most stable connection.
 
-1. When setting up a VPN connection in VK Cloud, specify the router behind which the VK Cloud subnets you want to access via VPN are placed.
-
-1. Configure the VPN on the client side, taking into account the configuration of the VK Cloud IPsec VPN server, which:
-
-   - works in the `main` mode
-   - supports only authorization by pre-shared key
-   - supports a limited subset of Diffie-Hellman groups
-
-Read more about setting VPN:
+Read more about setting up a VPN:
 
 - [Managing VPN tunnels in SDN Sprut and SDN Neutron](../../service-management/vpn).
-- [Example of creaing VPN tunnel in SDN Sprut](../../how-to-guides/advanced-router).
-- [Example of creaing VPN tunnel in SDN Neutron](../../how-to-guides/vpn-tunnel).
+- [Example of creating a VPN tunnel in SDN Neutron](../../how-to-guides/vpn-tunnel).

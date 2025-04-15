@@ -373,7 +373,7 @@ Events that the service of [virtual networks](/ru/networks/vnet) reports to Clou
 
 <!-- direct_connect actions -->
 |`create-dc-router`
-|An [advanced router](/en/networks/vnet/concepts/router#advanced_router_capabilities) has been created
+|An [advanced router](/en/networks/vnet/concepts/router#advanced) has been created
 
 |`update-dc-router`
 |An advanced router has been updated
