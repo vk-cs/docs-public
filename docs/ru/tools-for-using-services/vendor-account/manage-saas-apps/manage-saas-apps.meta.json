@@ -1,0 +1,12 @@
+{
+  "title": "Управление SaaS-приложениями",
+  "pageDescription": "Руководство по добавлению SaaS-приложений в Marketplace и их обновлению",
+  "shortDescription": "Добавление и обновление SaaS-приложений в Marketplace",
+  "metaTitle": "Управление SaaS-приложениями",
+  "metaDescription": "Руководство по добавлению SaaS-приложений в Marketplace и их обновлению",
+  "sectionTitle": "Управление SaaS-приложениями",
+  "weight": 3,
+  "isBeta": true,
+  "hidden": true,
+  "uuid": "9d701d79-19f3-4865-aa8d-4dbc84d79887"
+}
