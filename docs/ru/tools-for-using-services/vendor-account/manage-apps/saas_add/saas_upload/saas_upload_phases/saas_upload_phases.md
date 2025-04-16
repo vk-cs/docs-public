@@ -1,8 +1,8 @@
 # {heading(Этапы загрузки сервиса)[id=saas_upload_phases]}
 
-У пользователя, загружающего сервис в {var(sys1)}, должна быть учетная запись (личный кабинет) в облачной платформе. Инструкция по регистрации приведена в разделе [Регистрация в VK Cloud](/ru/intro/start/account-registration).
+У пользователя, загружающего сервис в магазин, должна быть учетная запись (личный кабинет) в облачной платформе. Инструкция по регистрации приведена в разделе [Регистрация в VK Cloud](/ru/intro/start/account-registration).
 
-Этапы загрузки SaaS-приложения в {var(sys1)} ({linkto(#pic_saas_upload)[text=рисунок %number]}):
+Этапы загрузки SaaS-приложения в магазин ({linkto(#pic_saas_upload)[text=рисунок %number]}):
 
 1. {linkto(../saas_upload_localtest/#saas_upload_localtest)[text=%text]}.
 1. {linkto(../saas_upload_env/#saas_upload_env)[text=%text]}.

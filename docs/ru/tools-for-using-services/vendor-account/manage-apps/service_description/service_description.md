@@ -1,4 +1,4 @@
-# {heading(Заполнение описания сервиса для {var(sys2)})[id=service_description]}
+# {heading(Заполнение описания сервиса для магазина)[id=service_description]}
 
 Описание сервиса включает в себя:
 
@@ -12,7 +12,7 @@
 
 Иконка сервиса отображается в карточке сервиса:
 
-* В каталоге {var(sys2)}.
+* В каталоге магазина.
 * На вкладке **Описание сервиса** на странице сервиса.
 
 Для image-based приложения иконка загружается в составе [сервисного пакета](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_structure).
@@ -23,7 +23,7 @@
 
 Краткое описание сервиса отображается в карточке сервиса:
 
-* В каталоге {var(sys2)}.
+* В каталоге магазина.
 * На вкладке **Описание сервиса** на странице сервиса.
 
 Текст указывается в параметре `short_description` в конфигурации сервиса:
@@ -212,7 +212,7 @@ UserGate NGFW содержит все функции решений класса
 
 * Ссылки:
 
-   * На [Пользовательское соглашение Магазина Приложений](/ru/intro/start/legal/digital-cloud/marketplace)
+   * На [Пользовательское соглашение магазина приложений](/ru/intro/start/legal/digital-cloud/marketplace)
    * На пользовательское соглашение сервиса.
 
 * Для opensource-решений — дисклеймер об opensource-лицензиях.
@@ -221,7 +221,7 @@ UserGate NGFW содержит все функции решений класса
 ```markdown
 # Лицензионное соглашение
 Используя сервис UserGate NGFW, вы соглашаетесь с:
-- [Пользовательским соглашением Магазина приложений](https://cloud.vk.com/docs/ru/intro/start/legal/digital-cloud/marketplace).
+- [Пользовательским соглашением магазина приложений](https://cloud.vk.com/docs/ru/intro/start/legal/digital-cloud/marketplace).
 - [Лицензионным соглашением на использование UserGate NGFW](https://www.usergate.com/ru/usergate-eula).
 ```
 {/caption}
