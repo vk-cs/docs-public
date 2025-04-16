@@ -15,4 +15,4 @@
    </info>
 1. В манифестах `plans/<PLAN_NAME>/deployment/deploy.tf` поменяйте ID образа сервиса на ID публичного образа сервиса.
 1. В файле `service.yaml` укажите новую ревизию сервиса.
-1. Чтобы загрузить в {var(sys1)} сервисный пакет с ID публичного образа сервиса, выполните запрос к сервису Infra API, приведенный в разделе {linkto(../ibservice_upload_package/#ibservice_upload_package)[text=%text]}.
+1. Чтобы загрузить в магазин сервисный пакет с ID публичного образа сервиса, выполните запрос к сервису Infra API, приведенный в разделе {linkto(../ibservice_upload_package/#ibservice_upload_package)[text=%text]}.

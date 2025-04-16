@@ -8,7 +8,7 @@
 1. {linkto(../ibservice_upload_publish_image/#ibservice_upload_publish_image)[text=%text]}.
 1. {linkto(../ibservice_upload_publish/#ibservice_upload_publish)[text=%text]}.
 
-{caption(Рисунок {counter(pic)[id=numb_pic_upload_phases]} — Этапы загрузки image-based приложения в {var(sys1)})[align=center;position=under;id=pic_upload_phases;number={const(numb_pic_upload_phases)} ]}
+{caption(Рисунок {counter(pic)[id=numb_pic_upload_phases]} — Этапы загрузки image-based приложения в магазин)[align=center;position=under;id=pic_upload_phases;number={const(numb_pic_upload_phases)} ]}
 ![pic1](../../../assets/IB_upload_phases.png){params[noBorder=true]}
 {/caption}
 

@@ -9,8 +9,8 @@
    * `BROKER_PROVIDER_CLIENT_ID` — имя брокера для доступа к SaaS-приложению.
    * `BROKER_PROVIDER_SECRET` — пароль для доступа брокера к SaaS-приложению.
    * `BROKER_PROVIDER_URL` — URL SaaS-приложения.
-   * `BROKER_USERNAME` — имя {var(sys2)} для межсервисного взаимодействия c брокером.
-   * `BROKER_PASSWORD` — пароль {var(sys2)} для межсервисного взаимодействия с брокером.
+   * `BROKER_USERNAME` — имя магазина для межсервисного взаимодействия c брокером.
+   * `BROKER_PASSWORD` — пароль магазина для межсервисного взаимодействия с брокером.
 
    <err>
 
