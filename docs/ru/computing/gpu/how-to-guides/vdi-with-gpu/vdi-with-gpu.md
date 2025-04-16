@@ -14,7 +14,7 @@
 
 1. [Подключите](/ru/computing/gpu/connect) сервис Cloud GPU.
 1. Запросите в [технической поддержке](/ru/contacts) квоты на шаблон конфигурации ВМ на базе GPU. В примере используется шаблон `GPU2-24-96-T4-1`.
-1. Создайте и настройте службу каталогов пользователей OpenLDAP, как описано [в официальной документации OpenLDAP](https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide).
+1. Создайте и настройте службу каталогов пользователей OpenLDAP, как описано [в официальной документации OpenLDAP](https://www.openldap.org/doc/admin26/quickstart.html).
 1. Узнайте реквизиты настроенного каталога:
 
    * IP-адрес или FQDN сервера OpenLDAP;
