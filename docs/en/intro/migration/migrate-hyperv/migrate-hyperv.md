@@ -22,7 +22,7 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 </tablist>
 <tabpanel>
 
-1. [Check](https://www.tencentcloud.com/document/product/213/9929) availability of VirtIO drivers in the system.
+1. [Check](../check-virtio) availability of VirtIO drivers in the system.
 2. Check availability QEMU Guest Agent:
 
    ```bash
