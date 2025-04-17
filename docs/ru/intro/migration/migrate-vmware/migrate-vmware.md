@@ -22,7 +22,7 @@
 </tablist>
 <tabpanel>
 
-1. [Проверьте](https://www.tencentcloud.com/document/product/213/9929) наличие драйверов VirtIO в системе.
+1. [Проверьте](../check-virtio) наличие драйверов VirtIO в системе.
 2. Проверьте наличие гостевого агента QEMU:
 
    ```bash
