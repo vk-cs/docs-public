@@ -138,7 +138,7 @@
 |Удалено правило группы безопасности
 
 |`create-floating-ip`
-|Создан [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#plavayushchiy_ip_adres)
+|Создан [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)
 
 |`delete-floating-ip`
 |Удален Floating IP-адрес
