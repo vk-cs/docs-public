@@ -86,7 +86,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -248,7 +248,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -398,7 +398,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
@@ -483,7 +483,7 @@
 
         <warn>
 
-        Использование плавающего IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
+        Использование Floating IP-адреса [тарифицируется](/ru/networks/vnet/tariffication#tarificiruetsya).
 
         </warn>
 
