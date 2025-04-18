@@ -63,7 +63,7 @@
 
 Для SaaS-приложения поддерживаются все [типы тарифных опций](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_option_types), кроме `datasource`. Параметры тарифных опций описываются JSON-схемами. Используются такие же параметры, как и [параметры тарифных опций для image-based приложения](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_schema). Примеры описания разных типов опций и их отображения в интерфейсе магазина для image-based приложения приведены в разделе [Заполнение YAML-файлов тарифных опций](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in).
 
-Стоимость платных опций и шаг изменения для опции типа `integer` указываются в [секции billing](../billing-section/).
+Стоимость платных опций и шаг изменения для опции типа `integer` указываются в [секции billing](../billing-section).
 
 Требование к именам опций:
 

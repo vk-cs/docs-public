@@ -198,7 +198,7 @@
 |Создано ограничение пропускной способности
 
 |`create-floating-ip`
-|Создан [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#plavayushchiy_ip_adres)
+|Создан [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)
 
 |`update-floating-ip`
 |Обновлен Floating IP-адрес
@@ -472,9 +472,8 @@
 |Удалено правило перенаправления портов для сети Direct Connect
 
 <!--  anycastips-->
-<!--  !!! Добавить ссылку на "Anycast IP-адрес", когда будет опубликована статья -->
 |`create-anycastips`
-|Создан Anycast IP-адрес
+|Создан [Anycast IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#anycast-ip)
 
 |`update-anycastips`
 |Обновлен Anycast IP-адрес

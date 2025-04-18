@@ -1,6 +1,6 @@
 <warn>
 
-Управление шардами доступно только в [конфигурации](../../concepts/work-configs/) **Кластер** для СУБД ClickHouse и MongoDB.
+Управление шардами доступно только в [конфигурации](../../concepts/work-configs) **Кластер** для СУБД ClickHouse и MongoDB.
 
 </warn>
 

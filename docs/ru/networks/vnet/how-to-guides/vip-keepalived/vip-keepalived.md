@@ -92,7 +92,7 @@
    - **Сеть:** сеть и подсеть, выбранные ранее.
    - **DNS-имя:** `kld-jumphost-vm`.
    - **Настройки Firewall:** `default`, `ssh`.
-   - **Назначить внешний IP:** убедитесь, что опция выбрана. Плавающий IP-адрес (Floating IP, FIP) необходим для подключения к виртуальной машине по SSH из интернета.
+   - **Назначить внешний IP:** убедитесь, что опция выбрана. Внешний IP-адрес ([Floating IP](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)) необходим для подключения к виртуальной машине по SSH из интернета.
 
    Прочие параметры виртуальной машины выберите на свое усмотрение.
 
@@ -378,6 +378,6 @@
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальные машины.
-1. [Удалите](../../service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
+1. [Удалите](../../service-management/ip/floating-ip#delete) Floating IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
 1. [Удалите](../../service-management/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
 1. Удалите [подсеть](../../service-management/net#udalenie_podseti) и [сеть](../../service-management/net#udalenie_seti), в которых были размещены виртуальные машины.
