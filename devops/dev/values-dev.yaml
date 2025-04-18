@@ -1,0 +1,33 @@
+env:
+  TARGET_ENV: "branch"
+
+components:
+  - name: mcs-help
+    replicas: 1
+    ports:
+      - port: 3000
+        headlessOnly: true
+    probes:
+      liveness:
+        path: /docs/api/healthz
+        port: 3000
+        initialDelaySeconds: 20
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+      readiness:
+        path: /docs/api/healthz
+        port: 3000
+        initialDelaySeconds: 20
+        periodSeconds: 15
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+    ingress:
+      rules:
+        - hostname: {{ .Release.Store.ingressHostname }}
+          paths:
+          - path: /
+      tls:
+        - secretName: front-wildcard-tls-secret
