@@ -417,7 +417,7 @@
 | 50 шт.
 | ![](/ru/assets/no.svg "inline")
 
-| Количество плавающих IP-адресов
+| Количество Floating IP-адресов
 | **IP-адреса Sprut**
 | `floatingip`
 | 12 шт.
@@ -452,7 +452,7 @@
 | 20 шт.
 | ![](/ru/assets/no.svg "inline")
 
-| Количество плавающих IP-адресов
+| Количество Floating IP-адресов
 | **IP-адреса Neutron**
 | `floatingip`
 | 6 шт.

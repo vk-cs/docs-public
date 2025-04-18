@@ -377,7 +377,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 Если ресурсы SDN Neutron вам больше не нужны, удалите их:
 
-1. [Уберите](/ru/networks/vnet/service-management/ip/floating-ip#delete) плавающие IP-адреса из проекта.
+1. [Уберите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адреса из проекта.
 1. [Удалите](/ru/networks/vnet/service-management/secgroups#udalenie_gruppy_bezopasnosti) группы безопасности.
 1. Удалите [сети](/ru/networks/vnet/service-management/net#udalenie_seti) и [подсети](/ru/networks/vnet/service-management/net#udalenie_podseti).
 1. [Удалите](/ru/networks/vnet/service-management/router#udalenie_marshrutizatora) маршрутизаторы.
