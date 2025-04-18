@@ -100,7 +100,7 @@ Floating IP-адрес назначается из общего пула слу�
 </tabpanel>
 </tabs>
 
-## {heading(Привязка Floating IP-адреса)[id=associate]} 
+## {heading(Привязка Floating IP-адреса)[id=associate]}
 
 <tabs>
 <tablist>
