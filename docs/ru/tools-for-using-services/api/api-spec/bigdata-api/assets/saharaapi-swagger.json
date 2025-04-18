@@ -3057,7 +3057,7 @@
           },
           "is_fip_available": {
             "type": "boolean",
-            "description": "Доступно ли добавление плавающего IP-адреса на группу нод",
+            "description": "Доступно ли добавление Floating IP-адреса на группу нод",
             "example": true
           },
           "uncompressed_data": {
@@ -3144,7 +3144,7 @@
           },
           "floating_ip_pool": {
             "type": "string",
-            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "description": "UUID диапазона доступных Floating IP-адресов",
             "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
           },
           "security_groups": {
@@ -3299,7 +3299,7 @@
           },
           "floating_ip_pool": {
             "type": "string",
-            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "description": "UUID диапазона доступных Floating IP-адресов",
             "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
           },
           "id": {
@@ -3577,7 +3577,7 @@
           },
           "floating_ip_pool": {
             "type": "string",
-            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "description": "UUID диапазона доступных Floating IP-адресов",
             "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
           },
           "security_groups": {
@@ -3649,7 +3649,7 @@
           "floating_ip_pool": {
             "type": "string",
             "format": "uuid",
-            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "description": "UUID диапазона доступных Floating IP-адресов",
             "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
           },
           "listeners": {
@@ -3737,7 +3737,7 @@
           "floating_ip_pool": {
             "type": "string",
             "format": "uuid",
-            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "description": "UUID диапазона доступных Floating IP-адресов",
             "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
           },
           "listeners": {
@@ -3841,7 +3841,7 @@
           "floating_ip_pool": {
             "type": "string",
             "format": "uuid",
-            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "description": "UUID диапазона доступных Floating IP-адресов",
             "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
           },
           "floating_ip_address": {
