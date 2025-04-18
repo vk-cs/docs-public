@@ -1,0 +1,30 @@
+env:
+  TARGET_ENV: "{{ helm_fronapp_help_TARGET_ENV | default('development') }}"
+envSecret:
+  MAILER_TOKEN: new-help-secret
+  VKTEAMS_ALERT_TOKEN: new-help-secret
+  GITHUB_BOT_TOKEN: new-help-secret
+
+components:
+  - name: mcs-help
+    replicas: "{{ helm_fronapp_help_replicas | d(1) }}"
+    probes:
+      liveness:
+        path: /docs/api/healthz
+        initialDelaySeconds: 25
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+      readiness:
+        path: /docs/api/healthz
+        initialDelaySeconds: 25
+        periodSeconds: 15
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+    ports:
+      - port: "{{ helm_fronapp_help_port | d(3000) }}"
+        headlessOnly: true
+    affinity: "{{ helm_fronapp_help_affinity | default({}) }}"
+    tolerations: "{{ helm_fronapp_help_tolerations | default([]) }}"
