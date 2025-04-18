@@ -8,7 +8,7 @@
 
 Ограничения конфигурации:
 
-- Нельзя использовать [Floating IP-адрес](../../../concepts/ips-and-inet#plavayushchiy_ip_adres). В качестве альтернативы может быть настроена трансляция DNAT (Destination NAT).
+- Нельзя использовать [Floating IP-адрес](../../../concepts/ips-and-inet#floating-ip). В качестве альтернативы может быть настроена трансляция DNAT (Destination NAT).
 - Нельзя подключить [PaaS-сервисы](/ru/intro/start/concepts/architecture), так как их развертывание требует доступа в интернет через [публичные IP-адреса](/ru/networks/vnet/concepts/ips-and-inet#pul_publichnyh_ip_adresov_vneshney_seti_internet) VK Cloud.
 - Доступно только на проектах с SDN Sprut.
 
