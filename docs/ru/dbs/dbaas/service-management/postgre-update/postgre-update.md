@@ -36,7 +36,7 @@
 
 1. [Получите токен](/ru/tools-for-using-services/api/rest-api/case-keystone-token) для авторизации запросов к API.
 
-1. Выполните обновление. Процедура обновления зависит от [конфигурации](../../concepts/work-configs/):
+1. Выполните обновление. Процедура обновления зависит от [конфигурации](../../concepts/work-configs):
 
    <tabs>
    <tablist>

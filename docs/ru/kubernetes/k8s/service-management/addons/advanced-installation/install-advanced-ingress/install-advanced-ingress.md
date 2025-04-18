@@ -381,7 +381,7 @@ controller:
 1. Перейдите в раздел меню **Service → Services**.
 1. Найдите в списке сервисов `ingress-nginx-controller` типа `LoadBalancer`.
 
-   В столбце **External Endpoints** будет отображен плавающий IP-адрес, назначенный балансировщику.
+   В столбце **External Endpoints** будет отображен Floating IP-адрес, назначенный балансировщику.
 
 </tabpanel>
 <tabpanel>
@@ -394,7 +394,7 @@ controller:
    kubectl get svc ingress-nginx-controller -n ingress-nginx
    ```
 
-   В столбце `EXTERNAL-IP` будет отображен плавающий IP-адрес, назначенный балансировщику.
+   В столбце `EXTERNAL-IP` будет отображен Floating IP-адрес, назначенный балансировщику.
 
 </tabpanel>
 </tabs>

@@ -25,7 +25,7 @@
 
 - Управление [кластером](../../service-management/manage-cluster) и [группами узлов](../../service-management/manage-node-group) с помощью личного кабинета VK Cloud и собственного Terraform-провайдера VK Cloud.
 
-- Управление объектами и ресурсами Kubernetes после [подключения к кластеру](../../connect/) с помощью `kubectl` или Kubernetes Dashboard.
+- Управление объектами и ресурсами Kubernetes после [подключения к кластеру](../../connect) с помощью `kubectl` или Kubernetes Dashboard.
 
 - Автоматическое и ручное [масштабирование кластера](../../service-management/scale) (cluster autoscaling).
 

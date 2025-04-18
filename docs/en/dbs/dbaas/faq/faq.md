@@ -2,7 +2,7 @@
 
 <summary>How to create a database?</summary>
 
-You can create a database using [step-by-step instructions](../service-management/create/) or [quick start](../quick-start/).
+You can create a database using [step-by-step instructions](../service-management/create) or [quick start](../quick-start).
 
 </details>
 
@@ -10,7 +10,7 @@ You can create a database using [step-by-step instructions](../service-managemen
 
 <summary>Which DBMS are available in the cloud?</summary>
 
-Full [list](../types/) of supported DBMS and their [configurations](../concepts/work-configs/).
+Full [list](../types/) of supported DBMS and their [configurations](../concepts/work-configs).
 
 </details>
 
@@ -18,7 +18,7 @@ Full [list](../types/) of supported DBMS and their [configurations](../concepts/
 
 <summary>How do I select the required DB instance configuration?</summary>
 
-You can select the required configuration type when [creating a DB instance](../service-management/create/). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs/).
+You can select the required configuration type when [creating a DB instance](../service-management/create). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs).
 
 </details>
 
@@ -26,7 +26,7 @@ You can select the required configuration type when [creating a DB instance](../
 
 <summary>Can I change the DB instance configuration file myself?</summary>
 
-No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../service-management/db-config/).
+No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../service-management/db-config).
 
 </details>
 
@@ -34,7 +34,7 @@ No, the configuration file is not editable by the user. To change the configurat
 
 <summary>What does the cost of the service depend on?</summary>
 
-The cost of the service depends on the selected [configuration](../concepts/work-configs/). Payment is calculated only for the resources used, for more information, see the article [Tariffication](../tariffication/).
+The cost of the service depends on the selected [configuration](../concepts/work-configs). Payment is calculated only for the resources used, for more information, see the article [Tariffication](../tariffication).
 
 </details>
 
@@ -42,7 +42,7 @@ The cost of the service depends on the selected [configuration](../concepts/work
 
 <summary>How do I add a database user?</summary>
 
-Use the instructions [User management](../service-management/users/).
+Use the instructions [User management](../service-management/users).
 
 </details>
 
@@ -50,7 +50,7 @@ Use the instructions [User management](../service-management/users/).
 
 <summary>Is backup enabled by default?</summary>
 
-Backup is not enabled by default. You can enable it when [creating an instance](../service-management/create/) or configure it in the [Backup](https://msk.cloud.vk.com/app/en/services/databases/backups/) section.
+Backup is not enabled by default. You can enable it when [creating an instance](../service-management/create) or configure it in the [Backup](https://msk.cloud.vk.com/app/en/services/databases/backups) section.
 
 </details>
 
@@ -67,7 +67,7 @@ To check if backup is enabled:
 
    If there is a green indicator next to the name of the required plan, the backup works according to plan. If the indicator is red, the backup is suspended.
 
-Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/storage/backups/service-management/create-backup-plan).
+Backup can be enabled when [creating a DB instance](../service-management/create) or configured separately by [creating a backup plan](/en/storage/backups/service-management/create-backup-plan).
 
 </details>
 
@@ -97,7 +97,7 @@ You can change the type of VM hosting the databases or increase the disk size. W
 
 You can also enable autoscaling of the database disk size. Then, as the amount of data increases, the disk size will increase automatically.
 
-For instructions on scaling a DB instance, see [DB instance management](../service-management/).
+For instructions on scaling a DB instance, see [DB instance management](../service-management).
 
 </details>
 
@@ -121,7 +121,7 @@ Asynchronous replication works for **Master-Replica** configurations. Synchronou
 
 <summary>How do I create a database replica?</summary>
 
-Use the instructions in the article [Replication](../service-management/replication/).
+Use the instructions in the article [Replication](../service-management/replication).
 
 </details>
 
@@ -129,7 +129,7 @@ Use the instructions in the article [Replication](../service-management/replicat
 
 <summary>How do I install monitoring extensions for the database?</summary>
 
-Installing extensions is described in detail in the section [Managing extensions](../service-management/managing-extensions/).
+Installing extensions is described in detail in the section [Managing extensions](../service-management/managing-extensions).
 
 The monitoring service is enabled by default for PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C.
 
@@ -139,7 +139,7 @@ The monitoring service is enabled by default for PostgreSQL, PostgresPro Standar
 
 <summary>How is auto-switching between database nodes configured?</summary>
 
-When using a database cluster, if the wizard is unavailable, switching to other nodes will be configured automatically. When using [configuration](../concepts/work-configs/) **Master-Replica** switching will need to be done manually:
+When using a database cluster, if the wizard is unavailable, switching to other nodes will be configured automatically. When using [configuration](../concepts/work-configs) **Master-Replica** switching will need to be done manually:
 
 - MySQL;
 - PostgreSQL, Postgres Pro.

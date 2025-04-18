@@ -168,9 +168,9 @@ VNC-консоль доступна на странице виртуальной
 
 <details>
 
-<summary>Могу ли я задать плавающий IP-адрес для ВМ?</summary>
+<summary>Могу ли я задать Floating IP-адрес для ВМ?</summary>
 
-Вы можете [назначить существующий](/ru/networks/vnet/service-management/floating-ip#privyazka_plavayushchego_ip_adresa) плавающий IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) адрес вручную.
+Вы можете [назначить существующий](/ru/networks/vnet/service-management/ip/floating-ip#associate) Floating IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/service-management/ip/floating-ip#add
 
 <warn>
 

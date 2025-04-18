@@ -200,7 +200,7 @@
    </tabpanel>
    </tabs>
 
-1. При необходимости дополнительно [установите](../install-advanced-kiali/) аддон `kiali`.
+1. При необходимости дополнительно [установите](../install-advanced-kiali) аддон `kiali`.
 
 </tabpanel>
 <tabpanel>

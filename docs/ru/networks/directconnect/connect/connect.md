@@ -23,7 +23,7 @@
 1. Обратитесь к своему telecom-партнеру и организуйте канал связи L2 до VK Cloud с использованием требуемой технологии. Канал строится, включая кроссировки до стоек дата-центров.
 
 1. [Создайте заявку](https://cloud.vk.com/direct-connect) на подключение Direct Connect.
-1. После подключения сервиса [настройте маршрутизацию](../how-to-guides/advanced-router/) L3 Static / BGP в своем проекте VK Cloud.
+1. После подключения сервиса [настройте маршрутизацию](../how-to-guides/advanced-router) L3 Static / BGP в своем проекте VK Cloud.
 
 </tabpanel>
 <tabpanel>
