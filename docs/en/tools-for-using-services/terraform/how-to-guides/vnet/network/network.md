@@ -46,7 +46,7 @@ In the file, the following configuration is described:
 
   1. Create the `example-tf-net` net in the `Sprut` SDN.
   1. Create the `example-tf-subnet` subnet in the `example-tf-net` net.
-  1. Create the `example-tf-router` router in the `Sprut` SDN, without [external network](/en/networks/vnet/concepts/net-types#external_network) connection.
+  1. Create the `example-tf-router` router in the `Sprut` SDN, without [external network](/en/networks/vnet/concepts/net-types#external_net) connection.
   1. Connect the `example-tf-subnet` subnet and the `example-tf-router` router.
 
 {include(/en/_includes/_create_network_tf.md)[tags=net,router,shift=2]}
@@ -58,7 +58,7 @@ In the file, the following configuration is described:
 
   1. Create the `example-tf-net` net in the `Sprut` SDN.
   1. Create the `example-tf-subnet` subnet in the `example-tf-net` net.
-  1. Create the `example-tf-router` router in the `Sprut` SDN, with [external network](/en/networks/vnet/concepts/net-types#external_network) connection.
+  1. Create the `example-tf-router` router in the `Sprut` SDN, with [external network](/en/networks/vnet/concepts/net-types#external_net) connection.
   1. Connect the `example-tf-subnet` subnet and the `example-tf-router` router.
 
 {include(/en/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
@@ -70,7 +70,7 @@ In the file, the following configuration is described:
 
   1. Create the `example-tf-net` net in the `Sprut` SDN.
   1. Create the `example-tf-subnet` subnet in the `example-tf-net` net.
-  1. Create the `example-tf-router` router in the `Sprut` SDN, with [external network](/en/networks/vnet/concepts/net-types#external_network) connection.
+  1. Create the `example-tf-router` router in the `Sprut` SDN, with [external network](/en/networks/vnet/concepts/net-types#external_net) connection.
   1. Connect the `example-tf-subnet` subnet and the `example-tf-router` router.
   1. Create the port with the `192.168.199.23` IP address.
   1. Allocate the port and the floating IP.
@@ -84,7 +84,7 @@ Here:
 
 - `admin_state_up` — creating the resource in the enabled state `true` or disabled — `false`.
 
-- `external` — [external network](/en/networks/vnet/concepts/net-types#external_network): `true` or `false`.
+- `external` — [external network](/en/networks/vnet/concepts/net-types#external_net): `true` or `false`.
 
 - `external_network_id` — the ID of an external network for the Internet access. You can specify ID in the manifest or get it from the data source.
 

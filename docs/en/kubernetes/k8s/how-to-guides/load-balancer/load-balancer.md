@@ -85,7 +85,7 @@ The tabs below describe different scenarios for creating load balancers:
 </tablist>
 <tabpanel>
 
-1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/service-management/floating-ip#adding_floating_ip_address_to_the_project).
+1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/service-management/ip/floating-ip#adding_floating_ip_address_to_the_project).
 
    There should be no internal IP address attached to the IP address.
 
@@ -395,7 +395,7 @@ The tabs below describe different scenarios for testing load balancers:
    </tabpanel>
    </tabs>
 
-1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project).
+1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project).
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

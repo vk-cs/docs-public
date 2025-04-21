@@ -92,5 +92,5 @@ Deployed virtual resources are charged. If you don't need them anymore:
 
 - [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Ubuntu_22_04_LAMP` VM.
 - [Delete](/en/dbs/dbaas/service-management/delete) `MySQL-5864` instance.
-- If necessary, [delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) `211.243.95.137` floating IP address.
+- If necessary, [delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) `211.243.95.137` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-lamp.example.vk.cloud` DNS record.

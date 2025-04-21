@@ -198,7 +198,7 @@ Events that the service of [virtual networks](/ru/networks/vnet) reports to Clou
 |A bandwidth limit rule has been created
 
 |`create-floating-ip`
-|A [Floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) has been created
+|A [Floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating-ip) has been created
 
 |`update-floating-ip`
 |A Floating IP address has been updated

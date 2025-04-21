@@ -17,7 +17,7 @@ The following rules apply:
 
 ## Internet access
 
-In order for objects in the subnet to have access to the Internet, you need to connect a [router](../router) to the subnet with access to [external network](../net-types#external_network).
+In order for objects in the subnet to have access to the Internet, you need to connect a [router](../router) to the subnet with access to [external network](../net-types#external_net).
 
 Network objects that need a router with external network access:
 
@@ -29,7 +29,7 @@ For [virtual machine](/en/computing/iaas/concepts/about#virtual_machines) the In
 - Connect the VM to an external network. In this way, a subnet and external IP address will be automatically assigned to it.
 - Connect the VM to a private subnet that is connected to a router with access to an external network, and assign it a floating IP address. In this way, the IP address can be set manually or automatically.
 
-## Floating IP address
+## {heading(Floating IP address)[id=floating-ip]}
 
 A floating IP address (DNAT) is a static IP address that can be dynamically reassigned between resources in a cloud environment. Floating IP is used through [SDN](../architecture#sdns_used), which allows the network administrator to move IP addresses between devices without having to change the physical or virtual network configuration. This allows you to switch traffic between different servers without changing the configuration of the servers themselves.
 
@@ -41,21 +41,57 @@ Floating IP addresses are used for:
 
 - Flexible network reconfiguration — in environments with frequently changing requirements, floating IP addresses allow you to quickly redistribute resources without the need to change IP addressing and associated settings.
 
-## Public IP address pool of the internet external network
+## {heading(Anycast IP address)[id=anycast-ip]}
 
-All projects in SDN Sprut are connected to the external network `internet`.
+<warn>
 
-On all subnets of the external network `internet`:
+Anycast IP addresses work only in Sprut SDN.
 
-- DHCP is disabled;
-- DNS servers `5.61.237.120` and `5.61.237.127` are used.
+</warn>
 
-<!-- prettier-ignore-start -->
-| Subnet name  | Subnet address   | Available IP address range                         | Gateway         |
-| ------------ | ---------------- | -------------------------------------------------- | --------------- |
-| ext-sub  | 89.208.216.0/24  | 89.208.216.1 - 89.208.216.253                       | 89.208.216.254 |
-| ext-sub2  | 212.111.84.0/22  | 212.111.84.1 - 212.111.87.253                        | 212.111.87.254 |
-<!-- prettier-ignore-end -->
+The anycast IP service enables building a fault-tolerant infrastructure with optimal routing.
+
+_Anycast_ is a routing method where a single IP address is assigned to multiple servers in different [availability zones](/en/intro/start/concepts/architecture#az). Traffic via the anycast IP address is automatically routed to the nearest or least loaded node based on BGP metrics.
+
+An anycast IP address performs the following tasks:
+
+- Distributes load across servers, ensuring application performance.
+- In case of server or availability zone failure, redirects traffic to another server or availability zone, ensuring fault tolerance of the application.
+
+Differences from floating IP address:
+
+[cols="1,2,2", options="header"]
+|===
+|
+|Floating IP address
+|Anycast IP address
+
+|What it is bound to
+|Bound to the private IP address of a virtual machine, load balancer, or other cloud resource
+|Bound to other public IP addresses
+
+|Binding type
+|One-to-one
+|One-to-many
+
+|Primary purpose
+|Local fault tolerance: allows shifting the load to a backup resource instance if the primary one fails
+|Regional fault tolerance: automatically redistributes traffic if one of the availability zones fails
+
+|Pre-check
+|No pre-check of resource availability, so redistribution takes time
+|Performs a pre-check of resource availability, traffic is immediately routed optimally
+|===
+
+An anycast IP address can be bound to the following IP addresses:
+
+- Public IP addresses of virtual machines in [external networks](/en/networks/vnet/concepts/net-types#external_net).
+- Load balancer IP addresses. The load balancer must be placed in a network with internet access and must not be bound to a [Floating IP address](#floating-ip).
+- Interface of an [advanced router](../../concepts/router#advanced) with a public IP address in an external network (the **SNAT** option must be enabled).
+
+Up to 8 IP addresses can be bound to a single anycast IP address, and all IP addresses must be of the same type.
+
+The number of anycast IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#nets).
 
 ## Public IP address pool of the ext-net external network
 

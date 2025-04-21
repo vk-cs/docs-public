@@ -26,7 +26,7 @@ Technical limits are the limitations of the platform due to the features of the 
 
 Some of the limits are strict, they cannot be exceeded physically. For example, the limit on [4 GPUs per instance](#virtual_machines_9c2b1861) is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
-Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#cloud_networks_7dd887aa) are introduced to ensure optimal network performance and stable operation.
+Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#nets) are introduced to ensure optimal network performance and stable operation.
 
 There are no corresponding quotas for some technical limits.
 
@@ -381,7 +381,7 @@ If the **Use configuration disk** option is disabled or the `--use-config-drive`
 
 Quota for the number of file storage networks (**NFS / CIFS file storage networks**) is a quota for internal use.
 
-### Cloud Networks
+### {heading(Cloud networks)[id=nets]}
 
 The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to request quotas exceeding the corresponding limits via [technical support](mailto:support@mcs.mail.ru).
 

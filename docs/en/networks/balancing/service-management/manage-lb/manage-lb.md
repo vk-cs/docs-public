@@ -238,7 +238,7 @@ If the balancer network is connected to a router with Internet access, you can a
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. [Get port ID](/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
-1. [Assign a floating IP address](/en/networks/vnet/service-management/floating-ip#bindind_a_floating_ip_address) to a port with this ID.
+1. [Assign a floating IP address](/en/networks/vnet/service-management/ip/floating-ip#bindind_a_floating_ip_address) to a port with this ID.
 
 </tabpanel>
 </tabs>
@@ -276,7 +276,7 @@ If the balancer network is connected to a router with Internet access, and a pub
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. [Get port ID](/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
-1. [Unlink floating IP address](/en/networks/vnet/service-management/floating-ip#unbinding_floating_ip_address) from the port with this ID.
+1. [Unlink floating IP address](/en/networks/vnet/service-management/ip/floating-ip#unbinding_floating_ip_address) from the port with this ID.
 
 </tabpanel>
 </tabs>

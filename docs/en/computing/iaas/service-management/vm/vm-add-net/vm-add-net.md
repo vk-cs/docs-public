@@ -120,7 +120,7 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
       It is also possible to create a port with [DHCP options](https://github.com/Juniper/contrail-controller/wiki/Extra-DHCP-Options).
 
-      If necessary, [set a floating IP address to the port](/en/networks/vnet/service-management/floating-ip).
+      If necessary, [set a floating IP address to the port](/en/networks/vnet/service-management/ip/floating-ip).
 
    As a result, the ID of the created port and other information about it will be displayed.
 

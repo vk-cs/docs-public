@@ -86,7 +86,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
    </info>
    
-1. Select the [router](../../concepts/router) from the list. If the **Internet access** option is enabled, only routers connected to the [external network](../../concepts/net-types#external_network) will be listed.
+1. Select the [router](../../concepts/router) from the list. If the **Internet access** option is enabled, only routers connected to the [external network](../../concepts/net-types#external_net) will be listed.
 1. Specify the [zone](../../../dns/private-dns) for private DNS.
 1. By default, the subnet is already created, but you can add more. If you need to add subnets later, skip this step.
 8. Click the **Add network** button.
