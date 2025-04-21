@@ -34,14 +34,14 @@ VK Cloud поддерживает логирование для инстансо
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    journalctl -u postgresql
    ```
 
    <details>
     <summary>Пример вывода</summary>
 
-   ```bash
+   ```console
    -- Logs begin at Wed 2023-07-12 10:04:48 UTC, end at Wed 2023-07-12 10:32:29 UTC. --
    Jul 12 10:04:55 by-postgresql-4429.novalocal systemd[1]: Starting PostgreSQL 14 database server...
    Jul 12 10:04:55 by-postgresql-4429.novalocal postmaster[994]: 2023-07-12 10:04:55.350 UTC [994] LOG:  redirecting log output to logging collector process
@@ -65,14 +65,14 @@ VK Cloud поддерживает логирование для инстансо
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    journalctl -u mysqld
    ```
 
    <details>
     <summary>Пример вывода</summary>
 
-   ```bash
+   ```console
    -- Logs begin at Wed 2023-07-12 10:44:42 UTC, end at Wed 2023-07-12 10:46:52 UTC. --
    Jul 12 10:44:48 by-mysql-4691.novalocal systemd[1]: Starting MySQL Server...
    Jul 12 10:45:20 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:20.775688Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.26) initializing of server in progress as proce>
@@ -109,14 +109,14 @@ VK Cloud поддерживает логирование для инстансо
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    journalctl -u redis
    ```
 
    <details>
     <summary>Пример вывода</summary>
 
-   ```bash
+   ```console
    -- Logs begin at Wed 2023-07-12 10:54:08 UTC, end at Wed 2023-07-12 11:16:13 UTC. --
    Jul 12 10:54:11 by-redis-8145.novalocal systemd[1]: Starting Redis persistent key-value database...
    Jul 12 10:54:11 by-redis-8145.novalocal systemd[1]: Started Redis persistent key-value database.
@@ -143,14 +143,14 @@ VK Cloud поддерживает логирование для инстансо
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    journalctl -u mongod
    ```
 
    <details>
     <summary>Пример вывода</summary>
 
-   ```bash
+   ```console
    -- Logs begin at Wed 2023-07-12 11:23:00 UTC, end at Wed 2023-07-12 11:36:53 UTC. --
    Jul 12 11:23:07 by-mongodb-2687.novalocal systemd[1]: Starting High-performance, schema-free document-oriented database...
    Jul 12 11:23:07 by-mongodb-2687.novalocal sudo[984]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/cloud-init status --wait
@@ -180,14 +180,14 @@ VK Cloud поддерживает логирование для инстансо
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    journalctl -u clickhouse-server
    ```
 
    <details>
     <summary>Пример вывода</summary>
 
-   ```bash
+   ```console
    -- Logs begin at Tue 2023-09-12 07:16:05 UTC, end at Tue 2023-09-12 10:17:56 UTC. --
    Sep 12 07:16:14 clickhouse4030.novalocal systemd[1]: Starting ClickHouse Server (analytic DBMS for big data)...
    Sep 12 07:16:15 clickhouse4030.novalocal cloud-init[978]: .....

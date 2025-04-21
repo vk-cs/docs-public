@@ -298,13 +298,13 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 1. Перейдите в эту директорию.
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform init
    ```
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -319,7 +319,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

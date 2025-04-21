@@ -57,7 +57,7 @@
 1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:
 
-   ```bash
+   ```console
    curl -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
    ```
 
@@ -98,7 +98,7 @@
 
 Чтобы получить последние 2 записи из журнала компонента Magnum, выполните запрос:
 
-```bash
+```console
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
 source=magnum&\
 limit=2&\
@@ -155,7 +155,7 @@ to=" \
 
 Чтобы получить последние 2 записи из журнала компонента Nova за заданный период, выполните запрос:
 
-```bash
+```console
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
 source=nova&\
 limit=2&\
@@ -215,7 +215,7 @@ to=2023-11-15T16:43:00.477Z" \
 
 1. Запросите вывод в файл `nova_part1.log` 10 последних записей журнала за нужный период:
 
-   ```bash
+   ```console
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
    source=nova&\
    limit=10&\
@@ -227,7 +227,7 @@ to=2023-11-15T16:43:00.477Z" \
 
 2. Получите значение параметра `marker` из файла `nova_part1.log`:
 
-   ```bash
+   ```console
    cat nova_part1.log | grep marker
    ```
 
@@ -239,7 +239,7 @@ to=2023-11-15T16:43:00.477Z" \
 
 3. Запросите вывод в файл `nova_part2.log` 10 более ранних по времени записей журнала, используя значение параметра `marker`:
 
-   ```bash
+   ```console
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
    source=nova&\
    marker=eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX&\

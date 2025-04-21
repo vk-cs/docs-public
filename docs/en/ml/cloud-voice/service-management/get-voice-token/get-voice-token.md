@@ -10,7 +10,7 @@ There are two ways to get a token:
 
 An example of a request to generate a token:
 
-```bash
+```console
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -42,7 +42,7 @@ In response from the server, you will receive 2 tokens:
 
 Example of a token refresh request:
 
-```bash
+```console
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{

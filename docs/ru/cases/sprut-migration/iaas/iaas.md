@@ -15,13 +15,13 @@
 
     1. Обновите индексы пакетов, выполнив команду:
 
-        ```bash
+        ```console
         sudo apt-get update
         ```
 
     1. Установите утилиту [jq](https://jqlang.github.io/jq/):
 
-        ```bash
+        ```console
         sudo apt-get install -y jq
         ```
 
@@ -29,13 +29,13 @@
 
     1. Скопируйте репозиторий со скриптами для выполнения миграции:
 
-        ```bash
+        ```console
         git clone https://github.com/vk-cs/neutron-2-sprut.git
         ```
     1. Перейдите в директорию `neutron-2-sprut`.
     1. Выполните команду, которая добавит права на выполнение всех файлов с расширением `.sh` в этой директории:
 
-        ```bash
+        ```console
         chmod +x .sh
         ```
 
@@ -46,7 +46,7 @@
 1. Подключитесь к ВМ администратора по SSH.
 1. Получите список ВМ:
 
-    ```bash
+    ```console
     openstack server list
     ```
     В ответе найдите и сохраните следующие сведения:
@@ -56,7 +56,7 @@
      - ID всех остальных ВМ, которые нужно перенести.
 1. Получите список маршрутизаторов:
 
-    ```bash
+    ```console
     openstack router list
     ```
 
@@ -66,7 +66,7 @@
 
 1. Получите список групп безопасности:
 
-    ```bash
+    ```console
     ```
 
     Сохраните названия всех групп безопасности, кроме групп по умолчанию: `all`, `default`, `ssh+www`.
@@ -106,7 +106,7 @@
 
 1. Запустите скрипт миграции маршрутизаторов:
 
-    ```bash
+    ```console
     ./copy-router-and-networks.sh config.csv
     ```
 
@@ -120,19 +120,19 @@
 
 1. Проверьте список сетей:
 
-    ```bash
+    ```console
     openstack network list
     ```
 
 1. Проверьте список подсетей:
 
-    ```bash
+    ```console
     openstack subnet list
     ```
 
 1. Проверьте список стандартных маршрутизаторов:
 
-    ```bash
+    ```console
     openstack router list
     ```
 
@@ -173,7 +173,7 @@
 1. Перейдите в директорию `neutron-2-sprut`.
 1. Скопируйте группы безопасности в SDN Sprut:
 
-    ```bash
+    ```console
      ./copy-security-group.sh \
         --group-mapping=<id группы 1 в SDN Neutron>=<id группы 1 в SDN Sprut>,<id группы 2 в SDN Neutron>=<id группы 2 в SDN Sprut>,... \
         --groups=<название группы 3>,<название группы 4>,...
@@ -186,7 +186,7 @@
 
     Пример команды:
 
-    ```bash
+    ```console
     ./copy-security-group.sh \
         --group-mapping=4a361c99-cccc-cccc-cccc-b59fb469d354=121a7574-dddd-dddd-dddd-66baa01400d6,14f303dc-aaaa-aaaa-aaaa-9637c9c342df=3371584a-bbbb-bbbb-bbbb-1cc9f3e89601 \
         --groups=web-server-security,spark-k8s-6681-master,ml_sec_group
@@ -201,13 +201,13 @@
 1. Подключитесь к ВМ администратора по SSH и перейдите в директорию `neutron-2-sprut`.
 1. Запустите скрипт:
 
-    ```bash
+    ```console
     ./check-if-all-sprut-sg-present.sh
     ```
 
     Если все нужные группы скопированы, в результате выполнения скрипта вернется сообщение:
 
-    ```bash
+    ```console
     All security groups have corresponding '-sprut' groups.
     ```
 
@@ -265,7 +265,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 1. Убедитесь, что ВМ активны:
 
-    ```bash
+    ```console
     openstack server list
     ```
 
@@ -273,13 +273,13 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 1. Запустите скрипт миграции:
 
-    ```bash
+    ```console
     ./migrator-multiple.sh <имя файла со списком ВМ>
     ```
 
     Пример команды:
 
-    ```bash
+    ```console
     ./migrator-multiple.sh  migrate-vm.csv
     ```
 
@@ -298,13 +298,13 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     dhclient
     ```
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     ipconfig /release
     ipconfig /renew
     ```
@@ -324,7 +324,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 1. Подключитесь к ВМ администратора по SSH и перейдите в директорию `neutron-2-sprut`.
 1. Убедитесь, что ВМ активна:
 
-    ```bash
+    ```console
     openstack server show <имя ВМ>
     ```
 
@@ -332,7 +332,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 1. Перейдите в директорию `neutron-2-sprut`.
 1. Запустите скрипт миграции:
 
-    ```bash
+    ```console
     ./migrator.sh --opt <clone/noclone>
     ```
 
@@ -353,13 +353,13 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     dhclient
     ```
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     ipconfig /release
     ipconfig /renew
     ```

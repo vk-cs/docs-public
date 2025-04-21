@@ -25,14 +25,14 @@
 1. [Проверьте](../check-virtio) наличие драйверов VirtIO в системе.
 2. Проверьте наличие гостевого агента QEMU:
 
-   ```bash
+   ```console
    systemctl status qemu-guest-agent
    ```
 
    Если гостевой агент QEMU отсутствует, [установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) его.
 3. Проверьте, установлена ли утилита Cloud-Init:
 
-   ```bash
+   ```console
    cloud-init --version
    ```
 
@@ -85,7 +85,7 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 2. Конвертируйте файл диска из формата VMDK в RAW:
 
-   ```bash
+   ```console
    qemu-img convert -f vmdk -O raw <путь_к_файлу.vmdk> <путь_к_файлу.raw>
    ```
 
@@ -99,7 +99,7 @@
 
    <tabpanel>
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь_к_файлу.raw> <название образа>
    ```
 
@@ -108,7 +108,7 @@
 
    При импорте образа Windows укажите тип шины диска — IDE (параметр `hw_disk_bus`):
 
-   ```bash
+   ```console
    openstack image create --progress --private --container-format bare --disk-format raw <путь_к_файлу.raw> --property store=s3 --property os_type=windows --property hw_disk_bus=ide --min-disk 40 <название образа>
    ```
 
@@ -117,13 +117,13 @@
 
    Если виртуальная машина должна поддерживать резервное копирование, добавьте в команду параметры:
 
-   ```bash
+   ```console
    --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes
    ```
 
 4. Проверьте, что образ появился в проекте и имеет статус `ACTIVE`:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
@@ -158,7 +158,7 @@
 3. [Создайте образ](/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza) из загрузочного диска ВМ.
 4. Измените тип шины диска нового образа:
 
-   ```bash
+   ```console
    openstack image set --property hw_disk_bus=virtio <ID нового образа>
    ```
 

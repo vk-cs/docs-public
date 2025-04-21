@@ -87,7 +87,7 @@
 1. Запустите Windows PowerShell от имени администратора.
 1. Выведите список всех версий Windows с помощью команды:
 
-    ```powershell
+    ```console
     Get-WindowsImage -ImagePath E:\sources\Install.wim
     ```
 
@@ -110,7 +110,7 @@
 1. Создайте директорию `Temp` в корневой директории диска `C:`.
 1. Экспортируйте редакцию с `ImageIndex` = `1` с помощью команды:
 
-    ```powershell
+    ```console
     dism `
     /export-image `
     /SourceImageFile:E:\sources\Install.wim `
@@ -129,7 +129,7 @@
 
 1. Перейдите в директорию `C:\windows-imaging-tools-master` и импортируйте модули со скриптами для автоматизации создания образа:
 
-    ```powershell
+    ```console
     Import-Module .\WinImageBuilder.psm1
     Import-Module .\Config.psm1
     Import-Module .\UnattendResources\ini.psm1
@@ -138,7 +138,7 @@
 1. Распакуйте архив репозитория WindowsUpdateCLI и перенесите содержимое директории `WindowsUpdateCLI-master` в `C:\windows-imaging-tools-master\UnattendResources\WindowsUpdates`.
 1. Создайте конфигурационный файл `config.ini`:
 
-    ```powershell
+    ```console
     $ConfigFilePath = ".\config.ini"
     New-WindowsImageConfig -ConfigFilePath $ConfigFilePath
     ```
@@ -183,7 +183,7 @@
 
 1. Запустите локальную сборку образа с помощью команды:
 
-    ```powershell
+    ```console
     New-WindowsOnlineImage -ConfigFilePath $ConfigFilePath
     ```
 
@@ -193,7 +193,7 @@
 
 [Воспользуйтесь OpenStack CLI](../../service-management/images/images-manage#import_obraza) для импорта образа:
 
-```bash
+```console
 openstack image create \
     --progress \
     --private \

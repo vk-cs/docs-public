@@ -87,7 +87,7 @@ The Windows installation ISO image may contain several editions of the operating
 1. Run Windows PowerShell as administrator.
 1. List all editions of Windows using the command:
 
-    ```powershell
+    ```console
     Get-WindowsImage -ImagePath E:\sources\Install.wim
     ```
 
@@ -110,7 +110,7 @@ The Windows installation ISO image may contain several editions of the operating
 1. Create a `Temp` directory in the root directory of the `C:` drive.
 1. Export the edition with `ImageIndex` = `1` using the command:
 
-    ```powershell
+    ```console
     dism `
     /export-image `
     /SourceImageFile:E:\sources\Install.wim `
@@ -129,7 +129,7 @@ The Windows installation ISO image may contain several editions of the operating
 
 1. Go to the `C:\windows-imaging-tools-master` directory and import modules with scripts to automate image creation:
 
-    ```powershell
+    ```console
     Import-Module .\WinImageBuilder.psm1
     Import-Module .\Config.psm1
     Import-Module .\UnattendResources\ini.psm1
@@ -138,7 +138,7 @@ The Windows installation ISO image may contain several editions of the operating
 1. Unzip the WindowsUpdateCLI repository archive and move the contents of the `WindowsUpdateCLI-master` directory to `C:\windows-imaging-tools-master\UnattendResources\WindowsUpdates`.
 1. Create a configuration file named `config.ini`:
 
-    ```powershell
+    ```console
     $ConfigFilePath = ".\config.ini"
     New-WindowsImageConfig -ConfigFilePath $ConfigFilePath
     ```
@@ -183,7 +183,7 @@ The Windows installation ISO image may contain several editions of the operating
 
 1. Run a local image build using the command:
 
-    ```powershell
+    ```console
     New-WindowsOnlineImage -ConfigFilePath $ConfigFilePath
     ```
 
@@ -193,7 +193,7 @@ The Windows installation ISO image may contain several editions of the operating
 
 [Use OpenStack CLI](../../service-management/images/images-manage#importing_an_image) to import the image:
 
-```bash
+```console
 openstack image create \
     --progress \
     --private \

@@ -70,7 +70,7 @@
 {/caption}
 
 {caption(Пример запроса на архивацию сервиса)[align=left;position=above]}
-```bash
+```console
 $ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product/archive \
 -H "Content-Type: application/json" \
 -H "x-service-token: $token" \

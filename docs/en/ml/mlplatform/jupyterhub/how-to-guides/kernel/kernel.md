@@ -2,7 +2,7 @@ To create an individual kernel, run the following commands in the JupyterHub ter
 
 1. Create a virtual environment:
 
-```bash
+```console
 python3 -m venv set-name-of-venv
 ```
 
@@ -10,19 +10,19 @@ where `set-name-of-venv` is the name of the virtual environment.
 
 2. Activate the virtual environment:
 
-```bash
+```console
 source set-name-of-venv/bin/activate
 ```
 
 3. Install ipykernel:
 
-```bash
+```console
 pip install ipykernel
 ```
 
 4. Create a new kernel:
 
-```bash
+```console
 python -m ipykernel install --user --name set-name-of-venv --display-name "Python (myenv)"
 ```
 

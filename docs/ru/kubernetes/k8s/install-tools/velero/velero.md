@@ -37,7 +37,7 @@ Velero — это клиент-серверная утилита для резе
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    velero install \
    --plugins \
      velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
@@ -53,7 +53,7 @@ Velero — это клиент-серверная утилита для резе
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    velero install `
    --plugins `
      velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
@@ -88,7 +88,7 @@ Velero — это клиент-серверная утилита для резе
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl -n velero create secret generic openstack-cloud-credentials \
      --from-literal OS_PROJECT_ID=$OS_PROJECT_ID \
      --from-literal OS_REGION_NAME=$OS_REGION_NAME \
@@ -106,7 +106,7 @@ Velero — это клиент-серверная утилита для резе
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl -n velero create secret generic openstack-cloud-credentials `
      --from-literal OS_PROJECT_ID=$env:OS_PROJECT_ID `
      --from-literal OS_REGION_NAME=$env:OS_REGION_NAME `
@@ -184,7 +184,7 @@ Velero — это клиент-серверная утилита для резе
 
    1. Примените патч к развертыванию Velero:
 
-      ```bash
+      ```console
       kubectl patch deployment velero -n velero --patch-file velero-patch.yaml
       ```
 
@@ -192,7 +192,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. Создайте расположение снапшотов по умолчанию, выполнив команду:
 
-   ```bash
+   ```console
    velero snapshot-location create default --provider openstack --config region=ru-msk
    ```
 
@@ -200,7 +200,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. Выполните команду для проверки настроенных плагинов:
 
-   ```bash
+   ```console
    velero plugin get
    ```
 
@@ -215,7 +215,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. Выполните команду для проверки настроенных расположений для резервных копий:
 
-   ```bash
+   ```console
    velero backup-location get
    ```
 
@@ -228,7 +228,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. Выполните команду для проверки настроенных расположений для снапшотов:
 
-   ```bash
+   ```console
    velero snapshot-location get
    ```
 
@@ -243,6 +243,6 @@ Velero — это клиент-серверная утилита для резе
 
 Выполните команду:
 
-```bash
+```console
 velero uninstall
 ```

@@ -57,14 +57,14 @@
 
     1. Получите список существующих сетей файлового хранилища, выполнив команду:
 
-        ```bash
+        ```console
         openstack share network list
         ```
 
         Запишите имя или ID нужной сети.
     1. (Опционально) Просмотрите свойства выбранной сети, выполнив команду:
 
-        ```bash
+        ```console
         openstack share network show <СЕТЬ>
         ```
 
@@ -75,7 +75,7 @@
 
     Выполните команду:
 
-    ```bash
+    ```console
     openstack share network create --neutron-net-id <ID_СЕТИ> --neutron-subnet-id <ID_ПОДСЕТИ> --name <ИМЯ_СЕТИ>
     ```
 
@@ -92,7 +92,7 @@
 
 1. Создайте файловое хранилище с помощью команды:
 
-    ```bash
+    ```console
     openstack share create --name <ИМЯ_ХРАНИЛИЩА> --share-network <СЕТЬ> <ПРОТОКОЛ> <РАЗМЕР> 
     ```
 
@@ -153,7 +153,7 @@
 
         Воспользуйтесь Powershell-командой:
 
-        ```powershell
+        ```console
         Install-WindowsFeature NFS-Client, RSAT-NFS-Admin
         ```
 
@@ -172,7 +172,7 @@
 
     Команда для подключения хранилища выглядит так:
 
-    ```bash
+    ```console
     mount <ТОЧКА_ПОДКЛЮЧЕНИЯ> <ИМЯ_ДИСКА>:
     ```
 
@@ -188,7 +188,7 @@
 
 Команда для подключения хранилища выглядит так:
 
-```bash
+```console
 net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 ```
 
@@ -217,19 +217,19 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 1. Установите пакет `nfs-common` с помощью команды:
 
-    ```bash
+    ```console
     sudo apt-get install nfs-common
     ```
 
 2. Создайте директорию для монтирования хранилища:
 
-    ```bash
+    ```console
     mkdir <ИМЯ_ДИРЕКТОРИИ>
     ```
 
 3. Используйте команду, указанную в [свойствах](#prosmotr_informacii_o_faylovom_hranilishche) хранилища:
 
-    ```bash
+    ```console
     mount -t nfs <ТОЧКА_ПОДКЛЮЧЕНИЯ> ./<ИМЯ_ДИРЕКТОРИИ>
     ```
 
@@ -243,19 +243,19 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 1. Установите `cifs-utils` с помощью команды:
 
-    ```bash
+    ```console
     sudo apt install -y cifs-utils
     ```
 
 2. Создайте директорию для монтирования хранилища:
 
-    ```bash
+    ```console
     mkdir <ИМЯ_ДИРЕКТОРИИ>
     ```
 
 3. Используйте команду, указанную в [свойствах](#prosmotr_informacii_o_faylovom_hranilishche) хранилища:
 
-    ```bash
+    ```console
     sudo mount -o user=,password= -t cifs <ТОЧКА_ПОДКЛЮЧЕНИЯ> ./<ИМЯ_ДИРЕКТОРИИ>
     ```
 
@@ -287,7 +287,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share list
     ```
 
@@ -315,7 +315,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share show <ХРАНИЛИЩЕ>
     ```
 
@@ -346,7 +346,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share extend <ХРАНИЛИЩЕ> <РАЗМЕР>
     ```
 
@@ -387,7 +387,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share snapshot create --name <ИМЯ_СНИМКА> <ХРАНИЛИЩЕ>
     ```
    Здесь:
@@ -419,7 +419,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share snapshot list --share <ХРАНИЛИЩЕ>
     ```
 
@@ -451,7 +451,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share create --snapshot-id <ID_СНИМКА> --share-type <ТИП_ХРАНИЛИЩА> --name <ИМЯ_ХРАНИЛИЩА> <ПРОТОКОЛ> <РАЗМЕР>
     ```
 
@@ -491,7 +491,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack share snapshot delete <СНИМОК>
     ```
 
@@ -525,7 +525,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Добавьте правило доступа с помощью команды:
 
-    ```bash
+    ```console
     openstack share access create <ХРАНИЛИЩЕ> ip <IP_СЕТИ> --access-level <РЕЖИМ_ДОСТУПА>
     ```
 
@@ -537,7 +537,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 1. Проверьте, что правило создано успешно, запросив список правил доступа:
 
-    ```bash
+    ```console
     openstack share access list <ХРАНИЛИЩЕ>
     ```
 
@@ -570,7 +570,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Получите ID нужного правила, запросив список правил доступа:
 
-    ```bash
+    ```console
     openstack share access list <ХРАНИЛИЩЕ>
     ```
 
@@ -578,7 +578,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 1. Удалите правило доступа с помощью команды:
 
-    ```bash
+    ```console
     openstack share access delete <ХРАНИЛИЩЕ> <ID_ПРАВИЛА>
     ```
 
@@ -616,7 +616,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Чтобы удалить файловое хранилище, выполните команду:
 
-    ```bash
+    ```console
     openstack share delete <ХРАНИЛИЩЕ>
     ```
 
@@ -624,7 +624,7 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 1. Чтобы удалить сеть файлового хранилища, выполните команду:
 
-    ```bash
+    ```console
     openstack share network delete <ID_СЕТИ>
     ```
 

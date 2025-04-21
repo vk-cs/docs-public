@@ -59,7 +59,7 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
 1. (Optional) Configure access rights to the key file:
 
-   ```bash
+   ```console
    chmod 400 <key path>
    ```
 
@@ -67,19 +67,19 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
    - To connect by IP address:
 
-      ```bash
+      ```console
       ssh -i <key path> <username>@<external IP address of the virtual machine>
       ```
 
    - To connect by a fully qualified domain name:
 
-     ```bash
+     ```console
       ssh -i <key path> <username>@<FQDN of the virtual machine>
       ```
 
 3. If this is the first connection to the VM, a confirmation request will appear:
 
-      ```bash
+      ```console
       The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
       ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
       Are you sure you want to continue connecting (yes/no)?
@@ -109,13 +109,13 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
    - To connect by IP address:
 
-      ```bash
+      ```console
       ssh -i <key path> <username>@<external IP address of the virtual machine>
       ```
 
    - To connect by a fully qualified domain name:
 
-     ```bash
+     ```console
       ssh -i <key path> <username>@<FQDN of the virtual machine>
       ```
 

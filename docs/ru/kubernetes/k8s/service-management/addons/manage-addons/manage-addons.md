@@ -29,13 +29,13 @@
 1. Создайте конфигурационный файл Terraform, указав ID кластера в блоке [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 1. Примените конфигурацию для источника данных `vkcs_kubernetes_addons` с помощью команды:
 
-   ```bash
+   ```console
    terraform apply -target="data.vkcs_kubernetes_addons.<имя ресурса кластера в файле конфигурации Terraform>"
    ```
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform state show data.vkcs_kubernetes_addons.<имя ресурса кластера в файле конфигурации Terraform>
    ```
 
@@ -71,13 +71,13 @@
 1. Создайте конфигурационный файл Terraform, указав ID кластера в блоке [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md).
 1. Примените конфигурацию для источника данных `vkcs_kubernetes_addon` с помощью команды:
 
-   ```bash
+   ```console
    terraform apply -target="data.vkcs_kubernetes_addon.<имя ресурса кластера в файле конфигурации Terraform>"
    ```
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform state show data.vkcs_kubernetes_addon.<имя ресурса кластера в файле конфигурации Terraform>
    ```
 
@@ -218,13 +218,13 @@
 1. В файле конфигурации Terraform удалите или закомментируйте блок с удаляемыми аддонами.
 1. Ознакомьтесь с планируемыми изменениями:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Примените изменения:
 
-   ```bash
+   ```console
    terraform apply
    ```
 

@@ -146,13 +146,13 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Введите в консоли команду:
 
-    ```bash
+    ```console
     openstack quota show
     ```
 
     <details><summary>Пример вывода команды для региона Москва</summary>
 
-    ```bash
+    ```console
     +----------------------------+--------------------------------------------------+
     | Field                      | Value                                            |
     +----------------------------+--------------------------------------------------+
@@ -268,14 +268,14 @@
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     nova quota-show
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     cinder quota-show <project_id>
     ```
 

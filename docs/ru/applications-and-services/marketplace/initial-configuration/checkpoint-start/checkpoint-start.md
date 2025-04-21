@@ -109,12 +109,12 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Введите логин и пароль, полученные в инструкции по настройке шлюза, для входа в командную строку CLISH операционной системы GAiA.
 1. Установите новый пароль на ВМ шлюза с помощью команды:
 
-   ```bash
+   ```console
    set user admin password
    ```
 1. Выполните команды:
 
-   ```bash
+   ```console
    set hostname <ИМЯ_ХОСТА>
    set interface eth0 ipv4-address <ВНУТРЕННИЙ_IP> subnet-mask <МАСКА_ПОДСЕТИ>
    set static-route default nexthop gateway address <IP_ШЛЮЗА_ПО_УМОЛЧАНИЮ> on
@@ -137,12 +137,12 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Введите логин и пароль, полученные в инструкции по настройке сервера управления, для входа в командную строку CLISH операционной системы GAiA.
 1. Установите новый пароль на ВМ сервера управления с помощью команды:
 
-   ```bash
+   ```console
    set user admin password
    ```
 1. Выполните команды:
 
-   ```bash
+   ```console
    set hostname <ИМЯ_ХОСТА>
    set interface eth0 ipv4-address <ВНУТРЕННИЙ_IP> subnet-mask <МАСКА_ПОДСЕТИ>
    set static-route default nexthop gateway address <IP_ШЛЮЗА_ПО_УМОЛЧАНИЮ> on
@@ -167,25 +167,25 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Введите логин, полученный в инструкции по настройке нужной ВМ, и выбранный при настройке ВМ пароль.
 1. Установите пароль для загрузчика GRUB 2:
 
-   ```bash
+   ```console
    set grub2-password
    ```
 
 1. Установите пароль для экспертного режима (аналог однопользовательского режима в Linux):
 
-   ```bash
+   ```console
    set expert-password
    ```
 
 1. Сохраните изменения в настройках:
 
-   ```bash
+   ```console
    save config
    ```
 
 1. Перезагрузите ВМ:
 
-   ```bash
+   ```console
    reboot
    ```
 
@@ -194,7 +194,7 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Введите логин, установленный при настройке шлюза (или сервера управления) и пароль, установленный для загрузчика GRUB2.
 1. Запустите диспетчер логических томов LVM:
 
-    ```bash
+    ```console
     lvm_manager
     ```
 

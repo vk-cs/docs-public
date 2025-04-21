@@ -143,7 +143,7 @@
    1. [Настройте](/ru/computing/iaas/service-management/vm/vm-manage#password) пароль для виртуальных машин в VK Cloud, имена которых начинаются с `alkir-` и `app-`.
    1. На вкладке **Консоль** для каждой из этих виртуальных машин добавьте статический маршрут к своей сети через развернутый сервис Облачный маршрутизатор с функциями VPN с помощью команды:
 
-      ```bash
+      ```console
       sudo ip r add 192.168.245.0/24 via 10.254.254.18
       ```
       Здесь:
@@ -288,14 +288,14 @@
    1. Убедитесь, что пользователь, от имени которого вы выполняете действия, имеет права `sudo`.
    1. Установите пакет `unzip`, если он не установлен:
 
-      ```bash
+      ```console
 
       sudo apt install unzip
 
       ```
    1. Последовательно выполните команды:
 
-      ```bash
+      ```console
 
       curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       unzip awscliv2.zip
@@ -305,7 +305,7 @@
 
    1. Проверьте корректность установки приложения, запросив его версию:
 
-      ```bash
+      ```console
 
       /usr/local/bin/aws --version
 
@@ -321,7 +321,7 @@
 
    1. Для настройки AWS CLI запустите команду:
 
-      ```bash
+      ```console
 
       /usr/local/bin/aws configure
 
@@ -354,7 +354,7 @@
 
 1. Загрузите файл резервной копии базы 1С в удаленное хранилище S3, выполнив команду:
 
-      ```bash
+      ```console
 
       /usr/local/bin/aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 
@@ -367,7 +367,7 @@
 
       Пример:
 
-      ```bash
+      ```console
 
       /usr/local/bin/aws s3 cp /mnt/backups/SQLDumps/todaydump.sql s3://s3_backet_name --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 
@@ -403,7 +403,7 @@
 
    1. Запустите скрипт `start_import_linux.sh`:
 
-      ```bash
+      ```console
 
       sudo sh start_import_linux.sh
 

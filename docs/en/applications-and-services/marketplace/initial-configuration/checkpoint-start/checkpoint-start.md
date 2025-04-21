@@ -109,12 +109,12 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Enter the login and the password obtained in the gateway configuration instructions to enter the CLISH command line of the GAiA operating system.
 1. Set a new password on the gateway VM using the command:
 
-   ```bash
+   ```console
    set user admin password
    ```
 1. Run the commands:
 
-   ```bash
+   ```console
    set hostname <VM_NAME>
    set interface eth0 ipv4-address <INTERNAL_IP> subnet-mask <SUBNET_MASK>
    set static-route default nexthop gateway address <GATEWAY_DEFAULT_IP> on
@@ -137,12 +137,12 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Enter the login and the password obtained in the management server configuration instructions to enter the CLISH command line of the GAiA operating system.
 1. Set a new password on the management server VM using the command:
 
-   ```bash
+   ```console
    set user admin password
    ```
 1. Run the commands:
 
-   ```bash
+   ```console
    set hostname <VM_NAME>
    set interface eth0 ipv4-address <INTERNAL_IP> subnet-mask <SUBNET_MASK>
    set static-route default nexthop gateway address <GATEWAY_DEFAULT_IP> on
@@ -167,25 +167,25 @@ If you deploy the gateway and the management server on virtual machines with a d
 1. Enter the login received in the configuration instructions for the required VM and the password specified when configuring this VM.
 1. Set the password for the GRUB 2 bootloader:
 
-   ```bash
+   ```console
    set grub2-password
    ```
 
 1. Set the password for the expert mode (the equivalent of the single-user mode in Linux):
 
-   ```bash
+   ```console
    set expert-password
    ```
 
 1. Save the changes to the settings:
 
-   ```bash
+   ```console
    save config
    ```
 
 1. Reboot the VM:
 
-   ```bash
+   ```console
    reboot
    ```
 
@@ -194,7 +194,7 @@ If you deploy the gateway and the management server on virtual machines with a d
 1. Enter the login set during the gateway (or the management server) configuration and the password set for the GRUB2 bootloader.
 1. Start the LVM (Logical Volume Manager):
 
-    ```bash
+    ```console
     lvm_manager
     ```
 

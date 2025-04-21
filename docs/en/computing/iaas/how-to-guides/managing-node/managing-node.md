@@ -23,25 +23,25 @@ To define the rules for distributing server groups, specify the group in the ins
 
 1. Output a list of server groups using the command:
 
-    ```bash
+    ```console
     openstack server group list
     ```
 
 1. Find a group of servers with a policy like `affinity` or `anti-affinity`. If no server groups are found, create one using the command:
 
-    ```bash
+    ```console
     ​openstack server group create <name of the server group> --policy <policy name>
     ```
 
 1. Create bootable disks for future VMs. Example for three disks:
 
-   ```bash
+   ```console
    for i in 1 2 3;do openstack volume create --size 10 --image 98af6254-XXXX-XXXX-XXXX-81858ce9302a --availability-zone MS1 --bootable root-volume-$i;done
    ```
 
 1. Create the necessary virtual machines specifying the server group. Example for three VMs:
 
-    ```bash
+    ```console
     for i in 1 2 3;do openstack --insecure server create --flavor std1-1 --volume root-volume-$i --hint group=<politic group ID> --nic net-id=<network ID> vm-affinity-$i;done
     ```
 

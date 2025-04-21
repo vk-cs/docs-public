@@ -19,7 +19,7 @@ Use these instructions if your cluster is version 1.20 or lower. Starting with K
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts; `
    helm install gatekeeper/gatekeeper --name-template=gatekeeper --namespace opa-gatekeeper --create-namespace
    ```
@@ -27,7 +27,7 @@ Use these instructions if your cluster is version 1.20 or lower. Starting with K
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
    helm install gatekeeper/gatekeeper --name-template=gatekeeper --namespace opa-gatekeeper --create-namespace
 
@@ -40,7 +40,7 @@ Use these instructions if your cluster is version 1.20 or lower. Starting with K
 
 Check that the Gatekeeper pods have been created and are working by running the command:
 
-```bash
+```console
 kubectl -n opa-gatekeeper get pods
 ```
 
@@ -58,13 +58,13 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 1. To delete Gatekeeper, run the command:
 
-   ```bash
+   ```console
    helm delete gatekeeper --namespace opa-gatekeeper
    ```
 
 1. To delete the CRD objects created for Gatekeeper, run the command:
 
-   ```bash
+   ```console
    kubectl delete crd -l gatekeeper.sh/system=yes
    ```
 

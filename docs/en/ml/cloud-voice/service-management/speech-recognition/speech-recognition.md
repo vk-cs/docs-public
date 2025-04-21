@@ -9,7 +9,7 @@ To recognize speech from an audio file, send the audio file in the body of the P
 
 Request example:
 
-```bash
+```console
 curl -L --request POST 'https://voice.mcs.mail.ru/asr'
 --header 'Content-Type: audio/ogg; codecs=opus'
 --header 'Authorization: Bearer xxxxxxxxxx'
@@ -72,7 +72,7 @@ In order to create a task, it is enough to send a POST request to https://voice.
 
 Request example:
 
-```bash
+```console
 curl --request POST \
   --url https://voice.mcs.mail.ru/asr_stream/create_task
   --header 'Authorization: Bearer access_tokenxxxxxxxx'
@@ -105,7 +105,7 @@ The response will be the result of chunk recognition.
 
 Request example:
 
-```bash
+```console
 curl --request POST \
   --url 'https://voice.mcs.mail.ru/asr_stream/add_chunk?task_id=xxxxx&chunk_num=2' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \
@@ -168,7 +168,7 @@ The response will include the recognition result with the current status of the 
 
 Request example:
 
-```bash
+```console
 curl --request GET \
   --url 'https://voice.mcs.mail.ru/asr_stream/get_result?task_id=xxxxx' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \

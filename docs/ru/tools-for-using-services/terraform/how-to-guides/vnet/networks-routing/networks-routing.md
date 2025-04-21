@@ -69,7 +69,7 @@
 
    C помощью OpenStack CLI:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
@@ -78,7 +78,7 @@
 
    C помощью OpenStack CLI:
 
-   ```bash
+   ```console
    openstack flavor list
    ```
 
@@ -87,7 +87,7 @@
 
    C помощью OpenStack CLI:
 
-   ```bash
+   ```console
    openstack keypair list
    ```
 
@@ -171,7 +171,7 @@
 
   В конфигурации используется параметр `user_data`, чтобы выполнить команду, которая включает маршрутизацию, с помощью `cloud-init`:
 
-  ```bash
+  ```console
   sysctl -w net.ipv4.ip_forward=1
   ```
 
@@ -393,13 +393,13 @@ output "common-instance-private-ip" {
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform init
    ```
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -426,7 +426,7 @@ output "common-instance-private-ip" {
 
 1. Выполните пинг IP-адреса из вывода `common-instance-private-ip`:
 
-   ```bash
+   ```console
    ping 192.168.199.XXX
    ```
 
@@ -452,7 +452,7 @@ output "common-instance-private-ip" {
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

@@ -32,7 +32,7 @@ VK Cloud обеспечивает виртуальные машины входя
 
 В этом случае рекомендуется установить и настроить `qemu-guest-agent`, выполнив команду в терминале:
 
-```bash
+```console
 sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-guest-agent; systemctl start qemu-guest-agent"
 ```
 

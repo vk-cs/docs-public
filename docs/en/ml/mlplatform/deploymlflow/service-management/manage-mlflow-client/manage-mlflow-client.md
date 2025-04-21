@@ -134,7 +134,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
     </info>
 
-    ```bash
+    ```console
     auth_value = "user:PasswordDA@dvv//!123$"
     auth_deployment_name = "test_deploy_auth"
     client.create_deployment(deploy_server_name, auth_deployment_name, model_source_uri, auth=auth_value)

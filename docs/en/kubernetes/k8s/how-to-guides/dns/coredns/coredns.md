@@ -14,7 +14,7 @@ This article shows an example of how to add a domain and IP address to the clust
 
 1. Run the command:
 
-   ```bash
+   ```console
    kubectl edit cm coredns -n kube-system
    ```
 
@@ -56,13 +56,13 @@ This article shows an example of how to add a domain and IP address to the clust
 
 1. Create a temporary pod:
 
-   ```bash
+   ```console
    kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
    ```
 
    Expected output:
 
-   ```bash
+   ```console
    Server:    10.254.0.10
    Address 1: 10.254.0.10 kube-dns.kube-system.svc.cluster.local
 
@@ -74,7 +74,7 @@ This article shows an example of how to add a domain and IP address to the clust
 
    1. Restart all CoreDNS pods:
 
-      ```bash
+      ```console
       kubectl rollout restart daemonset/coredns -n kube-system
       ```
 
@@ -82,7 +82,7 @@ This article shows an example of how to add a domain and IP address to the clust
 
    1. Repeat creating a temporary pod to test DNS:
    
-      ```bash
+      ```console
       kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
       ```
 

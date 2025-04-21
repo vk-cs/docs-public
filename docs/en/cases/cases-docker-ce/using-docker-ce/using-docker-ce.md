@@ -1,16 +1,16 @@
 Docker CE allows working with Docker images and managing containers. To do this, the [Docker CLI commands](https://docs.docker.com/engine/reference/commandline/cli/) are used. The Docker command comprises options and subcommands:
 
-```bash
+```console
 docker [OPTIONS] SUBCOMMAND
 ```
 
 To view the Docker CLI help, run the commands:
 
-```bash
+```console
 docker --help
 ```
 
-```bash
+```console
 docker SUBCOMMAND --help
 ```
 
@@ -31,7 +31,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
 
 1. View available Ubuntu images in Docker Hub:
 
-   ```bash
+   ```console
    sudo docker search ubuntu
    ```
 
@@ -57,7 +57,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
 
 1. Pull the `ubuntu` image:
 
-   ```bash
+   ```console
    sudo docker pull ubuntu
    ```
 
@@ -79,7 +79,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
 
 1. Make sure that the image was pulled by viewing the pulled images:
 
-   ```bash
+   ```console
    sudo docker images
    ```
 
@@ -104,7 +104,7 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
 
 1. Create and run the container:
 
-   ```bash
+   ```console
    sudo docker run -it ubuntu
    ```
 
@@ -120,13 +120,13 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
 
    1. Run the command:
 
-      ```bash
+      ```console
       apt update && apt install nodejs -y
       ```
 
    1. View the information about installed Node.js version:
 
-      ```bash
+      ```console
       node -v
       ```
 
@@ -138,7 +138,7 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
 
 1. Exit the container's bash command line:
 
-   ```bash
+   ```console
    exit
    ```
 
@@ -155,14 +155,14 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker ps -a
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker ps
    ```
 
@@ -192,33 +192,33 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker start <container identifier>
    ```
 
    Example command to start the `ubuntu` container with the `8502eb90112b` identifier:
 
-   ```bash
+   ```console
    sudo docker start 8502eb90112b
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker stop <container identifier>
    ```
 
    Example command to stop the `ubuntu` container with the `8502eb90112b` identifier:
 
-   ```bash
+   ```console
    sudo docker stop 8502eb90112b
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker rm <container identifier>
    ```
 
@@ -226,7 +226,7 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
 
    Example command to remove the `ubuntu` container with the `8502eb90112b` identifier:
 
-   ```bash
+   ```console
    sudo docker rm 8502eb90112b
    ```
 

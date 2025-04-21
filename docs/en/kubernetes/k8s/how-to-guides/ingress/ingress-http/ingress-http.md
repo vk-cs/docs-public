@@ -36,13 +36,13 @@ To deploy the demo applications:
 
 1. Apply this manifest to the cluster:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe.yaml
    ```
 
 To check the status of the application components, run the command:
 
-```bash
+```console
 kubectl get svc,rs,deployment -n default
 ```
 
@@ -73,7 +73,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
    helm repo update
 
@@ -82,7 +82,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
@@ -99,7 +99,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress \
     --create-namespace --namespace example-nginx-ingress-http \
     --set controller.service.type=NodePort \
@@ -111,7 +111,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress `
     --create-namespace --namespace example-nginx-ingress-http `
     --set controller.service.type=NodePort `
@@ -126,7 +126,7 @@ deployment.apps/tea      3/3     3            3           ...
 
    To check the status of the Ingress Controller, run the command:
 
-   ```bash
+   ```console
    kubectl get svc -n example-nginx-ingress-http
    ```
 
@@ -322,7 +322,7 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. Apply this manifest to the cluster:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
@@ -330,13 +330,13 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. Verify that the resource was created successfully by running the command:
 
-   ```bash
+   ```console
    kubectl describe ingress cafe-ingress
    ```
 
    The output of the command should be similar to this one:
 
-   ```bash
+   ```console
    Name:             cafe-ingress-http
    Labels:           <none>
    Namespace:        default
@@ -355,7 +355,7 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. Check that pods named `tea` and `coffee` exist by getting a list of all pods in the `default` namespace:
 
-   ```bash
+   ```console
    kubectl get pods
    ```
 
@@ -368,7 +368,7 @@ The following will demonstrate how to create an Ingress resource that works excl
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<public IP address of the HTTP load balancer> https://cafe.example.com/coffee
    ```
 
@@ -390,7 +390,7 @@ The following will demonstrate how to create an Ingress resource that works excl
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<public IP address of the HTTP load balancer> https://cafe.example.com/tea
    ```
 
@@ -429,7 +429,7 @@ The following will demonstrate how to create an Ingress resource that works excl
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f ./cafe-ingress.yaml
    kubectl delete -f ./cafe.yaml
    helm uninstall nginx-ingress-http -n example-nginx-ingress-http
@@ -440,7 +440,7 @@ The following will demonstrate how to create an Ingress resource that works excl
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f ./cafe-ingress.yaml; `
    kubectl delete -f ./cafe.yaml; `
    helm uninstall nginx-ingress-http -n example-nginx-ingress-http; `

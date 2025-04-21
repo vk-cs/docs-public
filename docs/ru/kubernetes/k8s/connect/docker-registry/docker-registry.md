@@ -48,11 +48,11 @@
 
       - Для серверного варианта Docker Engine выполните одну из команд для перезапуска:
 
-        ```bash
+        ```console
         sudo systemd restart docker
         ```
 
-        ```bash
+        ```console
         sudo service docker restart
         ```
 
@@ -73,7 +73,7 @@
 
 1. Войдите в реестр:
 
-   ```bash
+   ```console
    docker login <URL реестра Docker> --username <логин для реестра Docker>
    ```
 
@@ -104,7 +104,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl create secret docker-registry k8s-registry-creds \ 
      --docker-server=<IP-адрес реестра>:5000 \
      --docker-username=<логин> \
@@ -115,7 +115,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl create secret docker-registry k8s-registry-creds ` 
      --docker-server=<IP-адрес реестра>:5000 `
      --docker-username=<логин> `

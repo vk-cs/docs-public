@@ -32,7 +32,7 @@ This authentication process is inconvenient when working with automated tools th
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export VKCLOUD_KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    export SA_KUBECONFIG="/home/user/.kube/sa_kubeconfig.yaml"
    ```
@@ -40,7 +40,7 @@ This authentication process is inconvenient when working with automated tools th
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $VKCLOUD_KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    $SA_KUBECONFIG="C:\Users\user\.kube\sa_kubeconfig.yaml"
    ```
@@ -50,7 +50,7 @@ This authentication process is inconvenient when working with automated tools th
 
 1. Make sure that after connecting to the cluster, you have the rights to create the necessary Kubernetes resources:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create serviceaccount
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create secret
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create clusterrolebinding
@@ -73,7 +73,7 @@ This authentication process is inconvenient when working with automated tools th
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      create serviceaccount example-sa -n kube-system
 
@@ -82,7 +82,7 @@ This authentication process is inconvenient when working with automated tools th
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      create serviceaccount example-sa -n kube-system
 
@@ -101,7 +101,7 @@ This authentication process is inconvenient when working with automated tools th
 
    To get a list of all cluster roles with a detailed description, run the command:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG describe clusterroles
    ```
 
@@ -120,7 +120,7 @@ This authentication process is inconvenient when working with automated tools th
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      create clusterrolebinding example-binding \
        --serviceaccount=kube-system:example-sa \
@@ -130,7 +130,7 @@ This authentication process is inconvenient when working with automated tools th
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      create clusterrolebinding example-binding `
        --serviceaccount=kube-system:example-sa `
@@ -178,7 +178,7 @@ This authentication process is inconvenient when working with automated tools th
 
    1. Apply the manifest file:
 
-      ```bash
+      ```console
       kubectl --kubeconfig $VKCLOUD_KUBECONFIG apply -f example-token.yaml
       ```
 
@@ -197,7 +197,7 @@ This authentication process is inconvenient when working with automated tools th
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      describe serviceaccount example-sa -n kube-system
 
@@ -206,7 +206,7 @@ This authentication process is inconvenient when working with automated tools th
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      describe serviceaccount example-sa -n kube-system
 
@@ -244,7 +244,7 @@ This authentication process is inconvenient when working with automated tools th
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      get secret example-token -n kube-system \
      --template={{.data.token}} | base64 --decode
@@ -254,7 +254,7 @@ This authentication process is inconvenient when working with automated tools th
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    [System.Text.Encoding]::UTF8.GetString( `
      [System.Convert]::FromBase64String( `
        (kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -278,13 +278,13 @@ This authentication process is inconvenient when working with automated tools th
 
 1. Create the basis for this kubeconfig by copying the kubeconfig downloaded from the VK Cloud management console.
 
-   ```bash
+   ```console
    cp $VKCLOUD_KUBECONFIG $SA_KUBECONFIG
    ```
 
 1. (Optional) Get to know the kubeconfig structure:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG config view
    ```
 
@@ -346,7 +346,7 @@ This authentication process is inconvenient when working with automated tools th
          </tablist>
          <tabpanel>
 
-         ```bash
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
            config get-users
 
@@ -355,7 +355,7 @@ This authentication process is inconvenient when working with automated tools th
          </tabpanel>
          <tabpanel>
 
-         ```powershell
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
            config get-users
 
@@ -373,7 +373,7 @@ This authentication process is inconvenient when working with automated tools th
          </tablist>
          <tabpanel>
 
-         ```bash
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
            config delete-user <username>
 
@@ -382,7 +382,7 @@ This authentication process is inconvenient when working with automated tools th
          </tabpanel>
          <tabpanel>
 
-         ```powershell
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
            config delete-user <username>
 
@@ -408,7 +408,7 @@ This authentication process is inconvenient when working with automated tools th
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
         config set-credentials example-sa --token="<token value>"
 
@@ -417,7 +417,7 @@ This authentication process is inconvenient when working with automated tools th
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
         config set-credentials example-sa --token="<token value>"
 
@@ -441,7 +441,7 @@ This authentication process is inconvenient when working with automated tools th
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
         config set-context --current --user="example-sa"
 
@@ -450,7 +450,7 @@ This authentication process is inconvenient when working with automated tools th
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
         config set-context --current --user="example-sa"
 
@@ -467,7 +467,7 @@ This authentication process is inconvenient when working with automated tools th
 
 1. (Optional) Check the updated kubeconfig content for the service account:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG config view
    ```
 
@@ -506,7 +506,7 @@ Use the `kubectl` commands and the previously created kubeconfig for the service
 
 1. Get information about the cluster:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG cluster-info
    ```
 
@@ -522,7 +522,7 @@ Use the `kubectl` commands and the previously created kubeconfig for the service
 
 1. Get a list of the main resources in the `default` namespace:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG get all -n default
    ```
 
@@ -552,7 +552,7 @@ If a previously created token or a kubeconfig containing it has been compromised
 
 To do this, delete the secret that is used to store the token:
 
-```bash
+```console
 kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-system
 ```
 
@@ -567,7 +567,7 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      delete clusterrolebinding example-binding
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -580,7 +580,7 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      delete clusterrolebinding example-binding
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `

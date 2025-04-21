@@ -13,7 +13,7 @@ Harbor устанавливается как Docker-образ с помощью
 
 1. Скачайте скрипт online installer и разархивируйте его:
 
-```bash
+```console
 root@ubuntu-standard-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/download/v1.9.3/harbor-online-installer-v1.9.3.tgz
 root@ubuntu-standard-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
 ```
@@ -44,7 +44,7 @@ data_volume: /opt/harbor
 
 3. Выполните скрипт `install.sh`:
 
-```bash
+```console
 root@ubuntu-standard-2-4-40gb:~/harbor# ./install.sh
 
 [Step 0]: checking installation environment ...

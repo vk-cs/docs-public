@@ -8,7 +8,7 @@
 
 Данные аутентификации прописываются в заголовке `Authorization` запроса:
 
-```bash
+```console
 Authorization: <тип подписи>-<алгоритм подписи> Credential=<ключ-доступа>/<дата>/<регион>/s3/aws4_request,SignedHeaders=<заголовки>,Signature=<подпись>
 ```
 Здесь:
@@ -27,7 +27,7 @@ Authorization: <тип подписи>-<алгоритм подписи> Credent
 
 Пример запроса с авторизацией:
 
-```bash
+```console
 PUT / HTTP/1.1
 Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-acl: public-read

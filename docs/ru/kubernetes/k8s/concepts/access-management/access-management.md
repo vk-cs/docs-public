@@ -103,6 +103,6 @@ Please enter password:
 
 Чтобы просмотреть список доступных ресурсов для роли, подключитесь к кластеру и выполните команду:
 
-```bash
+```console
 kubectl describe clusterrole <роль в Kubernetes>
 ```

@@ -102,7 +102,7 @@
 
 1. Создайте нужные ресурсы Kubernetes на основе манифеста:
 
-   ```bash
+   ```console
    kubectl apply -f coffee.yaml
    ```
 
@@ -112,7 +112,7 @@
 
    1. Найдите созданный для приложения постоянный том:
 
-      ```bash
+      ```console
       kubectl get pv -n example-app
       ```
 
@@ -126,7 +126,7 @@
 
    1. Получите идентификатор диска для созданного постоянного тома:
 
-      ```bash
+      ```console
       kubectl describe pv <идентификатор постоянного тома> -n example-app
       ```
 
@@ -144,7 +144,7 @@
 
    1. Получите подробную информацию о диске с таким идентификатором, используя OpenStack CLI:
 
-      ```bash
+      ```console
       openstack volume show <идентификатор диска> --fit-width
       ```
 
@@ -152,7 +152,7 @@
 
    Периодически проверяйте статус балансировщика:
 
-   ```bash
+   ```console
    kubectl get svc -n example-app
    ```
 
@@ -160,7 +160,7 @@
 
 1. Убедитесь, что NGINX отвечает на запросы:
 
-   ```bash
+   ```console
    curl <публичный IP-адрес, назначенный балансировщику>
    ```
 
@@ -174,13 +174,13 @@
 
 1. Создайте ручную резервную копию всего пространства имен `example-app`, в котором находятся нужные для работы приложения ресурсы:
 
-   ```bash
+   ```console
    velero backup create coffee-backup --include-namespaces example-app
    ```
 
 1. Загрузите детальную информацию о резервной копии:
 
-   ```bash
+   ```console
    velero backup describe coffee-backup
    ```
 
@@ -192,13 +192,13 @@
 
 1. Посмотрите логи операции резервного копирования (при необходимости):
 
-   ```bash
+   ```console
    velero backup logs coffee-backup
    ```
 
 Также возможно выполнять создание резервный копий автоматически по расписанию. Подробнее о резервном копировании по расписанию в справке Velero:
 
-```bash
+```console
 velero help
 ```
 
@@ -206,13 +206,13 @@ velero help
 
 1. Имитируйте отказ приложения. Для этого удалите пространство имен `example-app`, в котором находятся ресурсы, необходимые для работы приложения:
 
-   ```bash
+   ```console
    kubectl delete ns example-app
    ```
 
 1. Выполните восстановление из резервной копии, которая была создана ранее:
 
-   ```bash
+   ```console
    velero restore create --from-backup coffee-backup
    ```
 
@@ -226,7 +226,7 @@ velero help
 
    Периодически проверяйте статус балансировщика:
 
-   ```bash
+   ```console
    kubectl get svc -n example-app
    ```
 
@@ -234,7 +234,7 @@ velero help
 
 1. Убедитесь, что NGINX отвечает на запросы:
 
-   ```bash
+   ```console
    curl <публичный IP-адрес, назначенный балансировщику>
    ```
 
@@ -255,7 +255,7 @@ velero help
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete ns example-app
    velero backup delete coffee-backup
 
@@ -264,7 +264,7 @@ velero help
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete ns example-app; `
    velero backup delete coffee-backup
    ```
@@ -274,7 +274,7 @@ velero help
 
 1. Если Velero вам больше не нужен, удалите его:
 
-   ```bash
+   ```console
    velero uninstall
    ```
 

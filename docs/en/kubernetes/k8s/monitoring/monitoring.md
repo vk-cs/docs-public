@@ -28,7 +28,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
    1. In a separate terminal session, run the command:
 
-      ```bash
+      ```console
       kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
       ```
 

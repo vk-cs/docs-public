@@ -69,7 +69,7 @@ The infrastructure of the example:
 
    Using OpenStack CLI:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
@@ -78,7 +78,7 @@ The infrastructure of the example:
 
    Using CLI:
 
-   ```bash
+   ```console
    openstack flavor list
    ```
 
@@ -87,7 +87,7 @@ The infrastructure of the example:
 
    Using CLI:
 
-   ```bash
+   ```console
    openstack keypair list
    ```
 
@@ -171,7 +171,7 @@ Create a Terraform configuration file `main.tf`. It describes:
 
   The configuration uses the `user_data` argument to run a command that enables routing using `cloud-init`:
 
-  ```bash
+  ```console
   sysctl -w net.ipv4.ip_forward=1
   ```
 
@@ -393,13 +393,13 @@ output "common-instance-private-ip" {
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform init
    ```
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -426,7 +426,7 @@ output "common-instance-private-ip" {
 
 1. Ping the IP address from the output `common-instance-private-ip`:
 
-   ```bash
+   ```console
    ping 192.168.199.XXX
    ```
 
@@ -452,7 +452,7 @@ If you no longer need the resources created with Terraform, delete them:
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

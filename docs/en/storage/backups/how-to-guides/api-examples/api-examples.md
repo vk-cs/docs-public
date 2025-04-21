@@ -14,18 +14,18 @@ The requests will use:
 
 - endpoint:
 
-  ```bash
+  ```console
   https://mcs.mail.ru/infra/karboii/v1
   ```
 
 - token:
 
-  ```bash
+  ```console
   gBkZhRqVNHSuSAJBI6duyXXXX
   ```
 - virtual machine:
 
-  ```bash
+  ```console
   +-----------------------------+-----------------------------------------------------------+
   | Field                       | Value                                                     |
   +-----------------------------+-----------------------------------------------------------+
@@ -40,7 +40,7 @@ The requests will use:
 
 Request example:
 
-```bash
+```console
 curl -X GET \
 -H "Accept: application/json" \
 -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
@@ -79,7 +79,7 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 
 Request example:
 
-```bash
+```console
 curl -X GET \
     -H "Accept: application/json" \
     -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
@@ -110,7 +110,7 @@ Will be used `prodiver_id` = `37997f75-0637-XXXX-bf7e-49ff2ff11fa5`, because a p
 
 Request example:
 
-```bash
+```console
 curl -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
@@ -162,7 +162,7 @@ curl -X POST \
 
 Request example:
 
-```bash
+```console
 curl -s -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \

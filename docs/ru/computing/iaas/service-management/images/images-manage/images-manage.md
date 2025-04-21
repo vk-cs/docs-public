@@ -33,19 +33,19 @@ VK Cloud позволяет создать образ из диска сущес
 
 1. Получите `ID` диска:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 2. Создайте образ:
 
-   ```bash
+   ```console
    openstack image create --volume <ID диска> <название образа>
    ```
 
 3. Проверьте создание образа:
 
-   ```bash
+   ```console
    openstack image list --name <название образа>
    ```
 
@@ -96,7 +96,7 @@ VK Cloud поддерживает загрузку собственных обр
 
 - Если поддержка не нужна, выполните команду:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь к файлу образа> <название образа>
    ```
 
@@ -116,13 +116,13 @@ VK Cloud поддерживает загрузку собственных обр
 
 1. Получите `ID` образа из списка:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
 2. Экспортируйте образ:
 
-   ```bash
+   ```console
    openstack image save --file <название файла образа>.raw <ID образа>
    ```
 
@@ -132,7 +132,7 @@ VK Cloud поддерживает загрузку собственных обр
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 1. Выполните команду:
 
-   ```bash
+   ```console
    curl -H "X-Auth-Token:{токен}" "https://infra.mail.ru:9292/v2/images/{ID образа}/file" --output <название файла образа>.raw
    ```
 
@@ -185,13 +185,13 @@ VK Cloud поддерживает загрузку собственных обр
 
 1. Получите `ID` образа из списка:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
 2. Отобразите подробную информацию об отдельном образе:
 
-   ```bash
+   ```console
    openstack image show <ID образа>
    ```
 
@@ -199,7 +199,7 @@ VK Cloud поддерживает загрузку собственных обр
 
 3. Измените статус образа:
 
-   ```bash
+   ```console
    openstack image set --<статус> <ID образа>
    ```
 
@@ -207,19 +207,19 @@ VK Cloud поддерживает загрузку собственных обр
 
 1. Добавьте образ в проект:
 
-   ```bash
+   ```console
    openstack image add project <ID образа> <ID проекта>
    ```
 
 2. Подтвердите добавление образа в проект:
 
-   ```bash
+   ```console
    openstack image set --accept <ID образа>
    ```
 
 Для просмотра проектов, имеющих доступ к образу, выполните команду:
 
-```bash
+```console
 openstack image member list <ID образа>
 ```
 
@@ -249,13 +249,13 @@ openstack image member list <ID образа>
 
 Чтобы удалить образ, не прикрепленный к проектам:
 
-```bash
+```console
 openstack image delete <ID образа>
 ```
 
 Чтобы удалить образ из проекта:
 
-```bash
+```console
 openstack image remove project <ID образа> <ID проекта>
 ```
 

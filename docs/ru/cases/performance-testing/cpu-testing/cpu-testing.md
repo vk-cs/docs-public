@@ -13,19 +13,19 @@
 
 1. Установите на ВМ утилиту sysbench:
 
-    ```bash
+    ```console
     sudo apt install sysbench
     ```
 
 1. Запустите 5 раз подряд тестирование производительности CPU в один поток:
 
-    ```bash
+    ```console
     sysbench cpu --threads=1 --time=60 run
     ```
 
 1. Запустите 5 раз подряд тестирование производительности CPU в 16 потоков:
 
-    ```bash
+    ```console
     sysbench cpu --threads=16 --time=60 run
     ```
 
@@ -35,7 +35,7 @@
 
 1. Установите на ВМ утилиту Geekbench 6:
 
-    ```bash
+    ```console
     wget https://cdn.geekbench.com/Geekbench-6.2.1-Linux.tar.gz
     tar xf Geekbench-6.2.1-Linux.tar.gz
     cd Geekbench-6.2.1-Linux
@@ -43,7 +43,7 @@
 
 1. Запустите 5 раз подряд тестирование производительности CPU:
 
-    ```bash
+    ```console
     ./geekbench6
     ```
 
@@ -53,19 +53,19 @@
 
 1. Установите на ВМ утилиту 7-Zip Benchmark:
 
-    ```bash
+    ```console
     sudo apt install p7zip-full
     ```
 
 1. Запустите 5 раз подряд тестирование производительности CPU в один поток и сохраните вывод команды в файл:
 
-    ```bash
+    ```console
     7z b -md26 -mmt1 5
     ```
 
 1. Запустите 5 раз подряд тестирование производительности CPU в 16 потоков и сохраните вывод команды в файл:
 
-    ```bash
+    ```console
     7z b -md26 -mmt16 5
     ```
 
@@ -75,19 +75,19 @@
 
 1. Установите на ВМ утилиту UnixBench:
 
-    ```bash
+    ```console
     sudo snap install unixbench
     ```
 
 1. Запустите 5 раз подряд тестирование производительности CPU в один поток и сохраните вывод команды в файл:
 
-    ```bash
+    ```console
     unixbench -c 1
     ```
 
 1. Запустите 5 раз подряд тестирование производительности CPU в 16 потоков и сохраните вывод команды в файл:
 
-     ```bash
+     ```console
     unixbench -c 16
     ```
 

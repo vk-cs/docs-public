@@ -11,13 +11,13 @@
 1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ.
 1. Установите на ВМ утилиту sysbench:
 
-    ```bash
+    ```console
     sudo apt install sysbench
     ```
 
 1. Запустите выполнение последовательных операций чтения и записи:
 
-    ```bash
+    ```console
     sysbench --test=memory run
     ```
 

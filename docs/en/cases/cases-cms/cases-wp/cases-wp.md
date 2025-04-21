@@ -42,7 +42,7 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 
 1. (Optional) Check the name resolution to the IP address using the command `nslookup site-wp.example.vk.cloud`. Output upon successful operation:
 
-   ```bash
+   ```console
    Non-authoritative answer:
    Name:   site-wp.example.vk.cloud
    Address: 212.233.95.135
@@ -53,14 +53,14 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Almalinux_9_WP` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo systemctl reboot
    ```
 
 1. Download the necessary repositories by sequentially executing the commands:
 
-   ```bash
+   ```console
    sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
    sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
    sudo dnf module enable php:remi-8.2 -y
@@ -69,13 +69,13 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 
 1. Launch the httpd daemon:
 
-   ```bash
+   ```console
    sudo systemctl enable httpd.service --now
    ```
 
 1. Download the WordPress CMS repository and deploy it on a running web server:
 
-   ```bash
+   ```console
    sudo wget https://wordpress.org/latest.tar.gz
    sudo tar xzf latest.tar.gz -C /var/www/html/
    sudo chown -R apache:apache /var/www/html/wordpress/
@@ -83,7 +83,7 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 
 1. Set the SELinux parameters for the correct operation of the web server:
 
-   ```bash
+   ```console
    sudo setsebool -P httpd_can_network_connect on
    sudo setsebool -P httpd_unified on
    sudo setsebool -P httpd_enable_cgi on

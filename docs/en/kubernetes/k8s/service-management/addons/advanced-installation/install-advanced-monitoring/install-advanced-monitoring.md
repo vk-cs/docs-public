@@ -74,19 +74,19 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Check the Terraform configuration file for correctness:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Check out the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -348,7 +348,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    $ENCODED = kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}'; `
    [System.Text.Encoding]::Utf8.GetString([System.Convert]::FromBase64String($ENCODED)) | Write-Output
    ```
@@ -356,7 +356,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}' | base64 --decode
    ```
 
@@ -378,7 +378,7 @@ Further the `kube-prometheus-stack` service name and the `prometheus-monitoring`
 
 1. Get the name of the Grafana pod:
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring get pod -l app.kubernetes.io/name=grafana
    ```
 
@@ -390,7 +390,7 @@ Further the `kube-prometheus-stack` service name and the `prometheus-monitoring`
 
 1. Reset the password by executing the command inside the Grafana pod:
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring exec <Grafana pod name> -- sh -c "grafana cli --debug admin reset-admin-password <new password>"
    ```
 

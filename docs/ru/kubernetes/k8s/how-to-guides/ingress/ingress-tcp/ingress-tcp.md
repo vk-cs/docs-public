@@ -36,13 +36,13 @@ Ingress-контроллер можно развернуть [в связке с
 
 1. Примените этот манифест в кластере:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe.yaml
    ```
 
 Для проверки состояния компонентов приложений выполните команду:
 
-```bash
+```console
 kubectl get svc,rs,deployment -n default
 ```
 
@@ -77,7 +77,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
    helm repo update
 
@@ -86,7 +86,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
@@ -96,7 +96,7 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Установите Ingress-контроллер с поддержкой PROXY-протокола, выполнив команду:
 
-   ```bash
+   ```console
    helm install nginx-ingress-tcp nginx-stable/nginx-ingress --set-string 'controller.config.entries.use-proxy-protocol=true' --create-namespace --namespace example-nginx-ingress-tcp
    ```
 
@@ -104,7 +104,7 @@ deployment.apps/tea      3/3     3            3           ...
 
    Для проверки состояния Ingress-контроллера выполните команду:
 
-   ```bash
+   ```console
    kubectl get svc -n example-nginx-ingress-tcp
    ```
 
@@ -139,7 +139,7 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Примените этот манифест в кластере:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe-secret.yaml
    ```
 
@@ -147,7 +147,7 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Проверьте, что секрет успешно создался, выполнив команду:
 
-   ```bash
+   ```console
    kubectl describe secret cafe-secret
    ```
 
@@ -159,7 +159,7 @@ deployment.apps/tea      3/3     3            3           ...
 
    1. Примените этот манифест в кластере:
 
-      ```bash
+      ```console
       kubectl apply -f ./cafe-ingress.yaml
       ```
 
@@ -167,13 +167,13 @@ deployment.apps/tea      3/3     3            3           ...
 
    Проверьте, что ресурс успешно создался, выполнив команду:
 
-   ```bash
+   ```console
    kubectl describe ingress cafe-ingress
    ```
 
    Вывод команды должен быть похож на этот:
 
-   ```bash
+   ```console
    Name:             cafe-ingress
    Labels:           <none>
    Namespace:        default
@@ -196,7 +196,7 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Проверьте, что поды с именами `tea` и `coffee` существуют, получив список всех подов в пространстве имен `default`:
 
-   ```bash
+   ```console
    kubectl get pods
    ```
 
@@ -209,7 +209,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<IP-адрес Ingress> https://cafe.example.com/coffee
    ```
 
@@ -232,7 +232,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<IP-адрес Ingress> https://cafe.example.com/tea
    ```
 
@@ -272,7 +272,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f ./cafe-ingress.yaml
    kubectl delete -f ./cafe-secret.yaml
    kubectl delete -f ./cafe.yaml
@@ -284,7 +284,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f ./cafe-ingress.yaml; `
    kubectl delete -f ./cafe-secret.yaml; `
    kubectl delete -f ./cafe.yaml; `

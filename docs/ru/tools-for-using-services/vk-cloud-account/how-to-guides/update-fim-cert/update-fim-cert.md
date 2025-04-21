@@ -9,7 +9,7 @@
 1. Скопируйте загруженный файл на компьютер с ADFS.
 1. Запустите PowerShell от имени администратора и выполните команду:
 
-   ```bash
+   ```console
    Update-ADFSRelyingPartyTrust -TargetName "<RELYING_PARTY_TRUST_NAME>" -MetadataFile <PATH_TO_METADATA_XML>
    ```
    
@@ -43,7 +43,7 @@
 1. Включите опции **Monitor relying party** и **Automatically update relying party**, затем нажмите кнопку **Apply**.
 1. (Опционально) Проверьте настройки интервала между проверками метаданных для ADFS, выполнив команду PowerShell:
 
-   ```bash
+   ```console
    Get-ADFSProperties | select MonitoringInterval
    ```
 
@@ -51,7 +51,7 @@
 
 1. (Опционально) Измените интервал проверки, выполнив команду PowerShell:
 
-   ```bash
+   ```console
    Set-AdfsProperties -MonitoringInterval <MINUTES>
    ```
    

@@ -39,7 +39,7 @@ To deploy the OpenVPN service in the project::
 
 1. Connect to the service VM via SSH. To do this, run the command in the terminal:
 
-   ```bash
+   ```console
    ssh -i <PRIVATE_KEY> ubuntu@<VM-ADDRRESS>
    ```
 
@@ -51,14 +51,14 @@ To deploy the OpenVPN service in the project::
 1. Get root user privileges, run the `sudo bash` command.
 1. Create a new user. Run the command:
 
-   ```bash
+   ```console
    /home/ubuntu/create_client.sh <USERNAME>
    ```
 
    After the script successfully completes, a configuration file for the new user will appear in the `/etc/openvpn/server` path.
 1. (Optional) Block the user. Run the command:
 
-   ```bash
+   ```console
    /home/ubuntu/revoke_client.sh <USERNAME>
    ```
 

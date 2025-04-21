@@ -154,7 +154,7 @@
    1. Запустите командную строку от имени администратора.
    2. Создайте директорию `temp` и пустой файл размером не менее 10 ГБ:
 
-      ```bash
+      ```console
       md C:\temp
       fsutil file createnew C:\temp\test.bin 10485760000
       ```
@@ -170,13 +170,13 @@
 
       - Тест случайной записи блоками по 4 КБ:
 
-         ```bash
+         ```console
          diskspd -Suw -b4K -o1 -t32 -r -w100 C:\temp\test.bin > C:\temp\random_write_results.txt
          ```
 
       - Тест случайного чтения блоками по 4 КБ:
 
-         ```bash
+         ```console
          diskspd -Suw -b4K -o1 -t32 -r -w0 C:\temp\test.bin > C:\temp\random_read_results.txt
          ```
 
@@ -207,7 +207,7 @@
          </tablist>
          <tabpanel>
 
-         ```powershell
+         ```console
          fio `
             --name=randwrite `
             --iodepth=32 `
@@ -224,7 +224,7 @@
          </tabpanel>
          <tabpanel>
 
-         ```bash
+         ```console
             fio ^
             --name=randwrite ^
             --iodepth=32 ^
@@ -250,7 +250,7 @@
          </tablist>
          <tabpanel>
 
-         ```powershell
+         ```console
          fio `
             --name=randread `
             --iodepth=32 `
@@ -267,7 +267,7 @@
          </tabpanel>
          <tabpanel>
 
-         ```bash
+         ```console
          fio ^
             --name=randread ^
             --iodepth=32 ^
@@ -298,13 +298,13 @@
 
    1. Обновите список пакетов:
 
-      ```bash
+      ```console
       sudo apt update
       ```
 
    2. Установите FIO:
 
-      ```bash
+      ```console
       sudo apt install fio
       ```
 
@@ -325,7 +325,7 @@
 
          </err>
 
-         ```bash
+         ```console
          fio \
             --name=randwrite \
             --ioengine=libaio \
@@ -342,7 +342,7 @@
 
       - Тест случайного чтения блоками по 4 КБ:
 
-         ```bash
+         ```console
          fio \
             --name=randread \
             --ioengine=libaio \

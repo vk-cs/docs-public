@@ -29,13 +29,13 @@
 
    - Если известно имя ВМ, получите информацию о виртуальной машине и найдите строку с `id`:
 
-      ```bash
+      ```console
       openstack server show <Имя ВМ>
       ```
 
    - Если точное имя ВМ неизвестно, выведите список виртуальных машин и найдите в нем нужную:
 
-      ```bash
+      ```console
       openstack server list
       ```
 
@@ -85,19 +85,19 @@
 
    - Запустить ВМ:
 
-      ```bash
+      ```console
       openstack server start <ID виртуальной машины>
       ```
 
    - Остановить ВМ:
 
-      ```bash
+      ```console
       openstack server stop <ID виртуальной машины>
       ```
 
    - Перезагрузить ВМ:
 
-      ```bash
+      ```console
       openstack server reboot <ID виртуальной машины>
       ```
 
@@ -147,7 +147,7 @@
 
 2. Вызовите принудительный перезапуск ВМ:
 
-   ```bash
+   ```console
    openstack server reboot --hard <ID виртуальной машины>
    ```
 
@@ -212,7 +212,7 @@
 
       2. Выполните команду:
 
-         ```bash
+         ```console
          openstack server show <ID виртуальной машины> --os-compute-api-version 2.42
          ```
 
@@ -260,7 +260,7 @@
    1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
    2. Удалите ВМ:
 
-      ```bash
+      ```console
       openstack server delete <ID виртуальной машины>
       ```
 
@@ -314,7 +314,7 @@
 
    - Переименовать ВМ:
 
-      ```bash
+      ```console
       openstack server set --name <новое имя> <ID виртуальной машины>
       ```
 
@@ -322,13 +322,13 @@
 
       1. Получите список доступных шаблонов конфигурации и скопируйте ID шаблона:
 
-         ```bash
+         ```console
          openstack flavor list --all
          ```
 
       2. Запустите изменение типа ВМ и дождитесь окончания процесса:
 
-         ```bash
+         ```console
          openstack server resize --flavor <ID шаблона> <ID виртуальной машины>
          ```
 
@@ -364,25 +364,25 @@
 
    - Вывести список тегов ВМ:
 
-      ```bash
+      ```console
       nova server-tag-list <ID виртуальной машины>
       ```
 
    - Присвоить тег ВМ:
 
-      ```bash
+      ```console
       nova server-tag-add <ID виртуальной машины> <тег>
       ```
 
    - Удалить тег у ВМ:
 
-      ```bash
+      ```console
       nova server-tag-delete <ID виртуальной машины> <тег>
       ```
 
    - Удалить все теги у ВМ:
 
-      ```bash
+      ```console
       nova server-tag-delete-all <ID виртуальной машины>
       ```
 
@@ -439,7 +439,7 @@
 
 <tabpanel>
 
-```bash
+```console
 sc query qemu-ga
 ```
 
@@ -447,7 +447,7 @@ sc query qemu-ga
 
 <tabpanel>
 
-```bash
+```console
 systemctl status qemu-guest-agent
 ```
 
@@ -491,7 +491,7 @@ systemctl status qemu-guest-agent
 
 2. Установите пароль:
 
-   ```bash
+   ```console
    openstack server set --root-password <ID виртуальной машины>
    ```
 
@@ -555,7 +555,7 @@ systemctl status qemu-guest-agent
 
    - Если утрачен файл с публичным ключом, перейдите в директорию с файлом приватного ключа и выполните команду:
 
-      ```bash
+      ```console
       ssh-keygen -y -f <имя файла с приватным ключом> > <имя файла с публичным ключом>
       ```
 
@@ -578,13 +578,13 @@ systemctl status qemu-guest-agent
    4. Используйте имя пользователя по умолчанию и пароль для входа в ОС ВМ.
    5. Скачайте файл с публичным ключом:
 
-      ```bash
+      ```console
       wget <ссылка на файл с публичным ключом>
       ```
 
    6. Скопируйте публичный ключ в файл `authorized_keys`:
 
-      ```bash
+      ```console
       cat <файл с публичным ключом> >> ~/.ssh/authorized_keys
       ```
 
@@ -593,7 +593,7 @@ systemctl status qemu-guest-agent
    1. Перейдите в терминал компьютера, на котором хранится приватный ключ.
    2. Подключитесь к ВМ по SSH:
 
-      ```bash
+      ```console
       ssh -i <путь к файлу с приватным ключом> <логин>@<внешний IP-адрес ВМ>
       ```
 
@@ -671,19 +671,19 @@ systemctl status qemu-guest-agent
 
    - Просмотреть журнал событий (расширенный формат):
 
-      ```bash
+      ```console
       openstack server event list --long <ID виртуальной машины>
       ```
 
    - Просмотреть журнал событий (краткий формат):
 
-      ```bash
+      ```console
       openstack server event list <ID виртуальной машины>
       ```
 
    - Используйте ID события из колонки **Request ID**, чтобы вывести подробную информацию о событии:
 
-      ```bash
+      ```console
       openstack server event show <ID виртуальной машины> <ID события>
       ```
 

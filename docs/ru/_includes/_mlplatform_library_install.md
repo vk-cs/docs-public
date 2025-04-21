@@ -34,7 +34,7 @@
    1. [Подключитесь к инстансу JupyterHub](/ru/ml/mlplatform/jupyterhub/service-management/connect).
    1. В блокноте JupyterHub создайте и выполните ячейку со следующим содержимым:
 
-      ```bash
+      ```console
       %pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
       ```
 
@@ -43,7 +43,7 @@
 
    Выполните команду:
 
-   ```bash
+   ```console
    pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
    ```
 

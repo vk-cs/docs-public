@@ -25,7 +25,7 @@
 1. [Проверьте](../check-virtio) наличие драйверов VirtIO в системе.
 2. Проверьте наличие QEMU Guest Agent:
 
-   ```bash
+   ```console
    systemctl status qemu-guest-agent
    ```
 
@@ -80,19 +80,19 @@
 1. [Конвертируйте](/ru/computing/iaas/how-to-guides/packer#1_konvertiruyte_obraz_v_format_raw) полученный в результате экспорта файл `.vhdx` в формат RAW.
 1. Загрузите файл в существующий проект VK Cloud:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь_к_файлу.raw> <название_образа>
    ```
 
    Если виртуальная машина должна поддерживать резервное копирование, загрузите файл `.raw` с указанием метаданных наличия гостевого агента:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --file <путь_к_файлу.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <название_образа>
    ```
 
 1. Проверьте загрузку образа в [личном кабинете](https://msk.cloud.vk.com/app/) VK Cloud в разделе **Облачные вычисления → Образы** или через CLI:
 
-   ```bash
+   ```console
    openstack image list
    ```
 

@@ -9,14 +9,14 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo rpm -i https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -sSLo vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
    sudo dpkg -i vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
    ```
@@ -24,7 +24,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo apt-get install https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
    ```
 
@@ -74,7 +74,7 @@
 
 1. Включите агент сбора логов `vkcloudlogs-fluent-bit.service`, выполнив команду:
 
-   ```bash
+   ```console
    sudo systemctl enable vkcloudlogs-fluent-bit.service
    sudo systemctl start vkcloudlogs-fluent-bit.service
    ```

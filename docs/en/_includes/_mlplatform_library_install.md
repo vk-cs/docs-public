@@ -34,7 +34,7 @@ To install the Cloud ML Platform library for Python:
    1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In JupyterHub notepad, create and execute a cell with the following contents:
 
-      ```bash
+      ```console
       %pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
       ```
 
@@ -43,7 +43,7 @@ To install the Cloud ML Platform library for Python:
 
    Run the command:
 
-   ```bash
+   ```console
    pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
    ```
 

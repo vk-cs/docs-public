@@ -31,7 +31,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
    1. Run the command:
 
-   ```bash
+   ```console
    aws configure
    ```
 
@@ -67,7 +67,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 1. Generate a temporary link to access the object with private ACL settings by running the command:
 
-   ```bash
+   ```console
    aws s3 presign s3://<bucket name>/<object name> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -78,7 +78,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
    Then the command will look like:
 
-   ```bash
+   ```console
    aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 

@@ -37,7 +37,7 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 1. На хосте в отдельной сессии терминала выполните команду:
 
-   ```bash
+   ```console
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
@@ -68,7 +68,7 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 1. На хосте в отдельной сессии терминала выполните команду:
 
-   ```bash
+   ```console
    kauthproxy -n kube-system https://kubernetes-dashboard.svc
    ```
 

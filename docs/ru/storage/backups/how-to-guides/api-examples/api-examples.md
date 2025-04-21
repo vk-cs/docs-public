@@ -10,18 +10,18 @@
 
 - эндпоинт:
 
-  ```bash
+  ```console
   https://mcs.mail.ru/infra/karboii/v1
   ```
 
 - токен:
 
-  ```bash
+  ```console
   gBkZhRqVNHSuSAJBI6duyXXXX
   ```
 - виртуальная машина:
 
-  ```bash
+  ```console
   +-----------------------------+-----------------------------------------------------------+
   | Field                       | Value                                                     |
   +-----------------------------+-----------------------------------------------------------+
@@ -36,7 +36,7 @@
 
 Пример запроса:
 
-```bash
+```console
 curl -X GET \
 -H "Accept: application/json" \
 -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
@@ -81,7 +81,7 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 
 Пример запроса:
 
-```bash
+```console
 curl -X GET \
     -H "Accept: application/json" \
     -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
@@ -112,7 +112,7 @@ curl -X GET \
 
 Пример запроса:
 
-```bash
+```console
 curl -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
@@ -164,7 +164,7 @@ curl -X POST \
 
 Пример запроса:
 
-```bash
+```console
 curl -s -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \

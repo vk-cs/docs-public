@@ -2,7 +2,7 @@
 
 1. Создайте virtual environment:
 
-```bash
+```console
 python3 -m venv set-name-of-venv
 ```
 
@@ -10,19 +10,19 @@ python3 -m venv set-name-of-venv
 
 2. Активируйте virtual environment:
 
-```bash
+```console
 source set-name-of-venv/bin/activate
 ```
 
 3. Установите ipykernel:
 
-```bash
+```console
 pip install ipykernel
 ```
 
 4. Создайте новый kernel:
 
-```bash
+```console
 python -m ipykernel install --user --name set-name-of-venv --display-name "Python (myenv)"
 ```
 

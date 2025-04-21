@@ -38,7 +38,7 @@
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте.
 1. Выполните команду:
 
-    ```bash
+    ```console
     openstack token issue -c id -f value
     ```
 
@@ -58,7 +58,7 @@
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     curl -X POST \
     -H "Content-Type: application/json" \
     -d '{
@@ -90,7 +90,7 @@
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     curl -X POST ^
     -H "Content-Type: application/json" ^
     -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
@@ -111,7 +111,7 @@
 </tablist>
 <tabpanel>
 
-```bash
+```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 27038  100 26470  100   568  99259   2129 --:--:-- --:--:-- --:--:-- 99138
@@ -120,7 +120,7 @@ x-subject-token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbM
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   230    0     0  100   230      0    920 --:--:-- --:--:-- --:--:--   923FINDSTR: Слишком длинная строка 12.
@@ -146,7 +146,7 @@ x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBG
 1. [Получите токен](#generaciya_tokena): сгенерируйте новый токен или скопируйте значение действующего токена.
 1. Выполните команду с помощью утилиты cURL:
 
-   ```bash
+   ```console
    curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <токен, полученный на предыдущем шаге>"
    ```
 

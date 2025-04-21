@@ -114,13 +114,13 @@ VK Cloud позволяет создавать отказоустойчивые 
 1. Откройте сессию терминала одной из ВМ.
 1. Создайте файл `dnsbalancer.service` с помощью команды:
 
-   ```bash
+   ```console
    sudo vim /etc/systemd/system/dnsbalancer.service
    ```  
 
 1. Добавьте в созданный файл следующие строки:
 
-    ```bash
+    ```console
     [Unit]
     Description=Service for checking A-Records into Zone
     After=network.target
@@ -136,19 +136,19 @@ VK Cloud позволяет создавать отказоустойчивые 
 
 1. Перезагрузите процесс `systemd` с помощью команды:
 
-   ```bash
+   ```console
    sudo systemctl daemon-reload
    ```
 
 1. Запустите демон при помощи команды:
 
-   ```bash
+   ```console
    sudo systemctl start dnsbalancer.service
    ```
 
 1. Выполните команду, чтобы демон запускался автоматически во время загрузки системы:
 
-   ```bash
+   ```console
    sudo systemctl enable dnsbalancer.service
    ```
 

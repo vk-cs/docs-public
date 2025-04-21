@@ -56,13 +56,13 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Upload the file to the cluster and run the pod:
 
-   ```bash
+   ```console
    kubectl apply -f cuda-vectoradd.yaml
    ```
 
    Example answer:
 
-   ```bash
+   ```console
    pod/cuda-vectoradd created
    ```
 
@@ -70,13 +70,13 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. View the container logs by running the command:
 
-   ```bash
+   ```console
    kubectl logs pod/cuda-vectoradd
    ```
 
    Example answer:
 
-   ```bash
+   ```console
    [Vector addition of 50000 elements]
    Copy input data from the host memory to the CUDA device
    CUDA kernel launch with 196 blocks of 256 threads
@@ -87,13 +87,13 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Delete the stopped pod:
 
-   ```bash
+   ```console
    kubectl delete -f cuda-vectoradd.yaml
    ```
 
    Example answer:
 
-   ```bash
+   ```console
    pod "cuda-vectoradd" deleted
    ```
 
@@ -145,7 +145,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Make sure the GPU on the node is not partitioned:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -166,7 +166,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Add a label for the node with the GPU, which will enable the `mps-on` mode added in the add-on configuration:
 
-   ```bash
+   ```console
    kubectl label node my-kubernetes-cluster-gpu-group-0 nvidia.com/device-plugin.config=mps-on
    ```
 
@@ -178,7 +178,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Wait a few minutes for the settings to apply, then check them:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -201,7 +201,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Add a label to the node with the GPU that will disable MPS splitting of the GPU:
 
-   ```bash
+   ```console
    kubectl label node my-kubernetes-cluster-gpu-group-0 nvidia.com/device-plugin.config=default --overwrite
    ```
 
@@ -209,7 +209,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Make sure the GPU on the node is not partitioned:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -230,7 +230,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Get a ConfigMap describing the options for allocating GPU parts using MIG technology:
 
-   ```bash
+   ```console
    kubectl get configmaps default-mig-parted-config -o yaml
    ```
 
@@ -242,7 +242,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Add a label for the node with GPU:
 
-   ```bash
+   ```console
    kubectl label nodes my-kubernetes-cluster-gpu-group-0 nvidia.com/mig.config=all-1g.10gb --overwrite
    ```
 
@@ -250,7 +250,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. Check that the selected configuration has been applied:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -271,7 +271,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. (Optional) To disable GPU splitting, apply the `all-disabled` configuration:
 
-   ```bash
+   ```console
    kubectl label nodes my-kubernetes-cluster-gpu-group-0 nvidia.com/mig.config=all-disabled --overwrite
    ```
 

@@ -17,7 +17,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
     1. In the terminal with a session connected to the cluster, run the command:
 
-       ```bash
+       ```console
        kubectl get nodes -o wide
        ```
 
@@ -25,7 +25,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
     1. Get a detailed description of the worker node. Run the command:
 
-       ```bash
+       ```console
        kubectl describe node <WORKER_NODE_NAME>
        ```
 
@@ -86,7 +86,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 1. Open a terminal and navigate to the directory where you saved the `placeholder.yaml` file.
 1. Run the command:
 
-   ```bash
+   ```console
    kubectl apply -f placeholder.yaml
    ```
 

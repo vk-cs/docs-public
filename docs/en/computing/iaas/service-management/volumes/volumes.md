@@ -36,19 +36,19 @@ Read the [Managing VM](/ru/computing/iaas/service-management/vm/vm-manage#mount_
 
 3. View the available disk types and copy the type ID corresponding to the name in the API.
 
-   ```bash
+   ```console
    openstack volume type list
    ```
 
 4. View the availability zones and copy the name of the selected zone:
 
-   ```bash
+   ```console
    openstack availability zone list --volume
    ```
 
 5. Create a disk of a certain type and size in the selected availability zone:
 
-   ```bash
+   ```console
    openstack volume create --type <type disk ID> --size <size> --availability-zone <disk availability zone> <disk name>
    ```
 
@@ -115,7 +115,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 2. Output a list of disks:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
@@ -127,13 +127,13 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
    - If the disk is disconnected from the VM (`Status`: `available`):
 
-      ```bash
+      ```console
          openstack volume set --size <new size> <disk ID>
       ```
 
    - If the disk is connected to the VM (`Status`: `in-use`):
 
-      ```bash
+      ```console
          cinder extend <disk ID> <new size>
       ```
 
@@ -165,7 +165,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
    1. Connect to the VM via [SSH](../vm/vm-connect/vm-connect-nix) or via [console](../vm/vm-console).
    1. Find out what disk partitions are on the VM and what file systems they have. To do this, run the command:
     
-      ```bash
+      ```console
         df -Th
       ```
             
@@ -174,7 +174,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
        
       The example command:
     
-      ```bash
+      ```console
         growpart /dev/vda 1 # you need a space before 1
       ```
 
@@ -187,14 +187,14 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
         sudo resize2fs /dev/vda1 # you need no space before 1
       ```
 
       </tabpanel>
       <tabpanel>
        
-      ```bash
+      ```console
         sudo xfs_growfs -d /dev/vda1
       ```
     
@@ -253,19 +253,19 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 1. View the available disk types and copy the type ID corresponding to the name in the API.
 
-   ```bash
+   ```console
    openstack volume type list
    ```
 
 1. View the availability zones and copy the name of the required zone:
 
-   ```bash
+   ```console
    openstack availability zone list --volume
    ```
 
 1. Clone a disk based on an existing one:
 
-   ```bash
+   ```console
    openstack volume create --type <type disk ID> --size <disk size> --availability-zone <availability zone> --source <disk ID> <disk name>
    ```
 
@@ -327,19 +327,19 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
 3. View the list of available disk types and copy the type ID corresponding to the name in the API.
 
-   ```bash
+   ```console
    openstack volume type list
    ```
 
 4. View the list of disks and copy the ID of the disk whose type you want to change:
 
-   ```bash
+   ```console
    openstack volume list --long
    ```
 
 5. Change the disk type:
 
-   ```bash
+   ```console
    openstack volume set --type <type ID> --retype-policy on-demand <disk ID>
    ```
 
@@ -397,19 +397,19 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
    - Make a disk bootable:
 
-      ```bash
+      ```console
       openstack volume set --bootable <disk ID>
       ```
 
    - Make the disk non-bootable:
 
-      ```bash
+      ```console
       openstack volume set --non-bootable <disk ID>
       ```
 
 3. Check the result:
 
-   ```bash
+   ```console
    openstack volume show <disk ID>
    ```
 
@@ -454,25 +454,25 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 2. Output a list of disks and copy the disk ID:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 2. Print the list of virtual machines and copy the ID of the virtual machine to which you want to connect the disk:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Connect the disk:
 
-   ```bash
+   ```console
    openstack server add volume <virtual machine ID> <disk ID>
    ```
 
 4. View the disk information to check the result (the `attachments` field):
 
-   ```bash
+   ```console
    openstack volume show <disk ID>
    ```
 
@@ -530,25 +530,25 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
 
 2. Output a list of disks and copy the disk ID:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 2. Output a list of virtual machines and copy the ID of the virtual machine from which you want to disconnect the disk:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Disconnect the disk:
 
-   ```bash
+   ```console
    openstack server remove volume <virtual machine ID> <disk ID>
    ```
 
 4. View the disk information to check the result (the `attachments` field):
 
-   ```bash
+   ```console
    openstack volume show <disk ID>
    ```
 
@@ -611,13 +611,13 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 2. Get [access token](/en/tools-for-using-services/api/rest-api/case-keystone-token).
 3. View the list of virtual machines and copy the ID of the virtual machine whose main disk needs to be replaced:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. View the list of disks:
 
-   ```bash
+   ```console
    openstack volume list --long
    ```
 
@@ -629,7 +629,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 5. Copy the ID of the selected disk.
 6. Run the command to replace the main disk:
 
-   ```bash
+   ```console
 
    curl -g -i -X POST https://infra.mail.ru:8774/v2.1/servers/<virtual machine ID>/action \
    -H "Accept: application/json" \
@@ -659,7 +659,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 3. [Disconnect from VM](#disconnecting_disk_from_vm) the disk to be moved.
 4. View the list of disks:
 
-   ```bash
+   ```console
    openstack volume list --long
    ```
 
@@ -667,27 +667,27 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 6. Copy the disk ID.
 7. Create a request to move the disk:
 
-   ```bash
+   ```console
    openstack volume transfer request create <disk ID>
    ```
 
 8. Copy the `auth_key` and `id` values.
 9. Review the list of disks and make sure that the status of the disk being moved has changed to `awaiting-transfer`:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 10. Sign in to the project you want to move the disk to.
 11. Move the disk:
 
-      ```bash
+      ```console
       openstack volume transfer request accept --auth-key <auth_key> <id>
       ```
 
 12. Make sure that the disk appears in the project:
 
-      ```bash
+      ```console
       openstack volume show <disk ID>
       ```
 
@@ -695,13 +695,13 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 - View the list of transfer requests:
 
-   ```bash
+   ```console
    openstack volume transfer request list
    ```
 
 - Delete a transfer request:
 
-   ```bash
+   ```console
    openstack volume transfer request delete <request ID>
    ```
 
@@ -770,7 +770,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 4. Delete the disk.
 
-   ```bash
+   ```console
       openstack volume delete <disk ID>
    ```
 
@@ -831,7 +831,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 2. Output a list of disks:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
@@ -841,13 +841,13 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
    - If the disk is disconnected from the VM (`Status`: `available`):
 
-      ```bash
+      ```console
          openstack volume snapshot create --volume <disk ID> <snapshot name>
       ```
 
    - If the disk is connected to the VM (`Status`: `in-use`):
 
-      ```bash
+      ```console
          openstack volume snapshot create --force --volume <disk ID> <snapshot name>
       ```
 
@@ -910,19 +910,19 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
    - Display a list of disk snapshots:
 
-      ```bash
+      ```console
       openstack volume snapshot list --volume <disk ID> 
       ```
 
    - Display a list of disk snapshots of the entire project:
 
-      ```bash
+      ```console
       openstack volume snapshot list --project <project ID>
       ```
 
    - Change snapshot properties:
 
-      ```bash
+      ```console
       openstack volume snapshot set <property> <snapshot ID>
       ```
 
@@ -935,7 +935,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
    - Delete a disk snapshot:
 
-      ```bash
+      ```console
       openstack volume snapshot delete <snapshot ID>
       ```
 

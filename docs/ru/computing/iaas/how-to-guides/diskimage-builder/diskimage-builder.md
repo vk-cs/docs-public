@@ -15,34 +15,34 @@
 
 1. Настройте поддержку Python-библиотек:
 
-    ```bash
+    ```console
     sudo apt update
     sudo apt -y install python-pip curl
     ```
 
 1. Установите пакет `qemu-utils`, который предоставляет утилиты [QEMU](https://www.qemu.org/):
 
-    ```bash
+    ```console
     sudo apt install qemu-utils
     ```
 
 1. Установите приложение `virtualenv` для создания виртуального окружения Python, как описано в [официальной документации](https://virtualenv.pypa.io/en/latest/installation.html).
 1. Узнайте версию Python, установленную на вашем компьютере:
 
-    ```bash
+    ```console
     python –version
     ```
 
 1. Создайте и активируйте виртуальное окружение Python, последовательно выполнив команды:
 
-    ```bash
+    ```console
     virtualenv -p python<версия Python> venv_py<версия Python>
     source venv_py<версия Python>/bin/activate
     ```
 
 1. Установите утилиту `diskimage-builder`:
 
-    ```bash
+    ```console
     pip install git+https://opendev.org/openstack/diskimage-builder.git
     ```
 
@@ -50,7 +50,7 @@
 
 Выполните команду:
 
-```bash
+```console
 DIB_RELEASE=15.3 disk-image-create -t raw -o opensuse-15.3.raw vm opensuse
 ```
 
@@ -67,7 +67,7 @@ DIB_RELEASE=15.3 disk-image-create -t raw -o opensuse-15.3.raw vm opensuse
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в вашем проекте VK Cloud.
 1. Загрузите образ `opensuse-15.3.raw` в VK Cloud под именем `Opensuse`:
 
-    ```bash
+    ```console
     openstack image create \
         --progress \
         --private \

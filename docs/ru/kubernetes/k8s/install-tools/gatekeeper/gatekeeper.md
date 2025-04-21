@@ -19,7 +19,7 @@ Gatekeeper — это контроллер, встраиваемый между 
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts; `
    helm install gatekeeper/gatekeeper --name-template=gatekeeper --namespace opa-gatekeeper --create-namespace
    ```
@@ -27,7 +27,7 @@ Gatekeeper — это контроллер, встраиваемый между 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
    helm install gatekeeper/gatekeeper --name-template=gatekeeper --namespace opa-gatekeeper --create-namespace
 
@@ -40,7 +40,7 @@ Gatekeeper — это контроллер, встраиваемый между 
 
 Проверьте, что поды Gatekeeper создались и работают, выполнив команду:
 
-```bash
+```console
 kubectl -n opa-gatekeeper get pods
 ```
 
@@ -144,7 +144,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 1. Примените созданные манифесты:
 
-   ```bash
+   ```console
    kubectl apply -f host-namespaces-template.yaml -f host-namespaces-constraint.yaml
    ```
 
@@ -175,7 +175,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
    1. Попытайтесь применить этот манифест:
 
-      ```bash
+      ```console
       kubectl apply -f pod_namespace.yaml
       ```
 
@@ -367,7 +367,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 1. Примените созданные манифесты:
 
-   ```bash
+   ```console
    kubectl apply -f host-filesystem-template.yaml -f host-filesystem-constraint.yaml
    ```
 
@@ -404,7 +404,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
    1. Попытайтесь применить этот манифест:
 
-      ```bash
+      ```console
       kubectl apply -f pod_filesystem.yaml
       ```
 
@@ -423,13 +423,13 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 1. Чтобы удалить Gatekeeper, выполните команду:
 
-   ```bash
+   ```console
    helm delete gatekeeper --namespace opa-gatekeeper
    ```
 
 1. Чтобы удалить CRD-объекты, созданные для Gatekeeper, выполните команду:
 
-   ```bash
+   ```console
    kubectl delete crd -l gatekeeper.sh/system=yes
    ```
 

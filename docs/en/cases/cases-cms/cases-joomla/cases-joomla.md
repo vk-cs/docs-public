@@ -42,7 +42,7 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
 
 1. (Optional) Check the name resolution to the IP address using the command `nslookup site-joomla.example.vk.cloud`. Output upon successful operation:
 
-   ```bash
+   ```console
    Non-authoritative answer:
    Name:   site-joomla.example.vk.cloud
    Address: 87.239.105.44
@@ -53,14 +53,14 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Almalinux_9_Joomla` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo systemctl reboot
    ```
 
 1. Download the necessary repositories by sequentially executing the commands:
 
-   ```bash
+   ```console
    sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
    sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
    sudo dnf module enable php:remi-8.2 -y
@@ -69,13 +69,13 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
 
 1. Launch the httpd daemon:
 
-   ```bash
+   ```console
    sudo systemctl enable httpd.service --now
    ```
 
 1. Download the Joomla CMS repository! and deploy it in the `joomla` subdirectory on the running web server:
 
-   ```bash
+   ```console
    wget https://github.com/joomla/joomla-cms/releases/download/4.3.4/Joomla_4.3.4-Stable-Full_Package.tar.gz
    sudo mkdir -p /var/www/html/joomla
    sudo tar xzf Joomla_4.3.4-Stable-Full_Package.tar.gz -C /var/www/html/joomla/
@@ -84,7 +84,7 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
 
 1. Set the SELinux parameters for the correct operation of the web server:
 
-   ```bash
+   ```console
    sudo setsebool -P httpd_enable_cgi on
    sudo setsebool -P httpd_unified on
    sudo setsebool -P httpd_builtin_scripting on

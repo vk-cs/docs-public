@@ -40,13 +40,13 @@
     ```
 2. Примените изменения, выполнив команду:
 
-    ```bash
+    ```console
     kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh/psp-host-filesystem --patch-file fluentbit_patch.yaml --type merge
     ```
 
 Установить Fluent Bit с файлом настройки можно следующими командами:
 
-```bash
+```console
 helm repo add fluent https://fluent.github.io/helm-charts
 helm install fluent-bit fluent/fluent-bit --values values.yaml
 ```

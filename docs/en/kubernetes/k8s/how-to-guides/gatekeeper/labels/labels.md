@@ -23,7 +23,7 @@ To demonstrate how Gatekeeper works, the following will be created:
 
    1. Create a restriction template based on the template manifest:
 
-      ```bash
+      ```console
       kubectl apply -f template.yaml
       ```
 
@@ -175,7 +175,7 @@ To demonstrate how Gatekeeper works, the following will be created:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete ns allowed-namespace
    kubectl delete k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels
@@ -185,7 +185,7 @@ To demonstrate how Gatekeeper works, the following will be created:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete ns allowed-namespace; `
    kubectl delete k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label; `
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels

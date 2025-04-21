@@ -46,7 +46,7 @@ In Linux, use the Remmina utility to connect via RDP.
 
 1. Download and install the Remmina client:
 
-   ```bash
+   ```console
    sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
    sudo apt-get update
    sudo apt-get install remmina remmina-plugin-rdp libfreerdp-plugins-standard

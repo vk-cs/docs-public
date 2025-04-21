@@ -191,7 +191,7 @@ Select **Settings** - `Basic`, and set:
 
     1. Allow traffic from any address through this port:
 
-       ```bash
+       ```console
        openstack port set <PORT_ID> --allowed-address ip-address=0.0.0.0/0
        ```
 
@@ -199,7 +199,7 @@ Select **Settings** - `Basic`, and set:
 
 1. Enable IP Forwarding so that the virtual machine can route traffic from the private network to the VPN tunnel:
 
-    ```bash
+    ```console
     echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
     sudo sysctl -p
 
@@ -207,7 +207,7 @@ Select **Settings** - `Basic`, and set:
 
 1. Install StrongSwan - An IPsec VPN Implementation for Linux:
 
-   ```bash
+   ```console
    sudo apt update
    sudo apt install -y strongswan libcharon-extra-plugins libcharon-extauth-plugins libstrongswan-extra-plugins
 
@@ -248,7 +248,7 @@ Select **Settings** - `Basic`, and set:
 
 1. Restart the StrongSwan service:
 
-   ```bash
+   ```console
    sudo systemctl restart strongswan-starter
    ```
 
@@ -324,7 +324,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
 1. Ping the `clientVM` virtual machine from the `vkcloudVM` virtual machine:
 
-    ```bash
+    ```console
     ping 172.16.0.4
     ```
 

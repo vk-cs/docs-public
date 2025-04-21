@@ -22,13 +22,13 @@ To install and perform the initial configuration of the Nginx web server:
 1. Open a terminal window.
 1. Update the package indexes by running the command:
 
-   ```bash
+   ```console
    sudo apt update
    ```
 
 1. Install the Nginx web server by running the command:
 
-   ```bash
+   ```console
    sudo apt install nginx -y
    ```
 
@@ -45,7 +45,7 @@ The ELK stack requires a Java virtual machine to run. To install JVM:
 1. Open a terminal window.
 1. Install the JVM software package by running the command:
 
-   ```bash
+   ```console
    sudo apt install default-jre -y
    ```
 
@@ -53,7 +53,7 @@ The ELK stack requires a Java virtual machine to run. To install JVM:
 
 1. Install the JDK software package, which includes the Java compiler, standard Java class libraries, examples, documentation, and various utilities. To do this, run the command:
 
-   ```bash
+   ```console
    sudo apt install default-jdk -y
    ```
 
@@ -67,25 +67,25 @@ To install and perform the initial configuration of Elasticsearch:
 
 1. Import the GPG Elasticsearch public key, which is used to protect Elastic packages, by running the command:
 
-   ```bash
+   ```console
    sudo wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt key add
    ```
 
 1. Add the Elastic packages to the sources.list.d system repositories directory by running the command:
 
-   ```bash
+   ```console
    sudo echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
    ```
 
 1. Update the package indexes by running the command:
 
-   ```bash
+   ```console
    sudo apt update
    ```
 
 1. Install Elasticsearch by running the command:
 
-   ```bash
+   ```console
    sudo apt install elasticsearch
    ```
 
@@ -93,7 +93,7 @@ To install and perform the initial configuration of Elasticsearch:
 
    1. Open this file for editing by running the command:
 
-      ```bash
+      ```console
       sudo nano /etc/elasticsearch/elasticsearch.
       ```
 
@@ -123,13 +123,13 @@ To install and perform the initial configuration of Elasticsearch:
 
 1. Start the Elasticsearch service by running the command:
 
-   ```bash
+   ```console
    sudo systemctl start elasticsearch
    ```
 
 1. Check the startup status of the Elasticsearch service by running the command:
 
-   ```bash
+   ```console
    sudo systemctl status elasticsearch
    ```
 
@@ -141,7 +141,7 @@ To install and perform the initial configuration of Elasticsearch:
 
       1. Open the file containing the Java virtual machine settings by running the command:
 
-         ```bash
+         ```console
          sudo nano /etc/elasticsearch/jvm.options
          ```
 
@@ -171,13 +171,13 @@ To install and perform the initial configuration of Elasticsearch:
 
 1. To start the Elasticsearch service automatically when the operating system is restarted, run the command:
 
-   ```bash
+   ```console
    sudo systemctl enable elasticsearch
    ```
 
 1. To test access to the Elasticsearch service, send an HTTP request by running the command:
 
-   ```bash
+   ```console
    curl -X GET localhost:9200
    ```
 
@@ -193,25 +193,25 @@ To install and perform the initial configuration of Kibana, do the following:
 1. Open a terminal window.
 1. Install Kibana by running the command:
 
-   ```bash
+   ```console
    sudo apt install kibana
    ```
 
 1. Start Kibana by running the command:
 
-   ```bash
+   ```console
    sudo systemctl start kibana
    ```
 
 1. To start the Kibana service automatically when the operating system is restarted, run the command:
 
-   ```bash
+   ```console
    sudo systemctl enable kibana
    ```
 
 1. To check the status of Kibana, run the command:
 
-   ```bash
+   ```console
    sudo systemctl status kibana
    ```
 
@@ -219,7 +219,7 @@ To install and perform the initial configuration of Kibana, do the following:
 
    1. Open this file by running the command:
 
-      ```bash
+      ```console
       sudo nano /etc/kibana/kibana.yml
       ```
 
@@ -263,7 +263,7 @@ To install and perform the initial configuration of Kibana, do the following:
 
 1. Create an administrator account to access the Kibana web interface. To do this, run the command:
 
-   ```bash
+   ```console
    echo "mcskibadmin:\`openssl passwd -apr1\`" | sudo tee -a /etc/nginx/htpasswd.users
    ```
 
@@ -273,13 +273,13 @@ To install and perform the initial configuration of Kibana, do the following:
 
 1. Create a file with a virtual site for the Nginx web server by running the command:
 
-   ```bash
+   ```console
    sudo nano /etc/nginx/sites-available/elk
    ```
 
 1. Add the following information to this file:
 
-   ```bash
+   ```console
    server {
    listen 80;
    
@@ -303,25 +303,25 @@ To install and perform the initial configuration of Kibana, do the following:
 
 1. Activate the new Nginx configuration by running the command:
 
-   ```bash
+   ```console
    sudo ln -s /etc/nginx/sites-available/elk /etc/nginx/sites-enabled/
    ```
 
 1. Restart Kibana by running the command:
 
-   ```bash
+   ```console
    sudo systemctl restart kibana
    ```
 
 1. Restart the Nginx web server by running the command:
 
-   ```bash
+   ```console
    sudo systemctl restart nginx
    ```
 
 1. Make sure that the syntax of the nginx configuration file does not contain errors by running the command:
 
-   ```bash
+   ```console
    sudo nginx -t
    ```
 
@@ -331,7 +331,7 @@ To install and perform the initial setup of Logstash:
 
 1. Install Logstash by running the command:
 
-   ```bash
+   ```console
    sudo apt install logstash
    ```
 
@@ -347,7 +347,7 @@ To install and perform the initial setup of Logstash:
 
    1. Create the file `02-beats-input.conf` by running the command:
 
-      ```bash
+      ```console
       sudo nano /etc/logstash/conf.d/02-beats-input.conf
       ```
 
@@ -367,7 +367,7 @@ To install and perform the initial setup of Logstash:
 
    1. Create the `30-elasticsearch-output.conf` file by running the command:
 
-      ```bash
+      ```console
       sudo nano /etc/logstash/conf.d/30-elasticsearch-output.conf
       ```
 
@@ -392,7 +392,7 @@ To install and perform the initial setup of Logstash:
 
    1. Create the file `10-system-filter.conf` by running the command:
 
-      ```bash
+      ```console
       sudo nano /etc/logstash/conf.d/10-logstash-filter.conf
       ```
 
@@ -417,19 +417,19 @@ To install and perform the initial setup of Logstash:
    1. Save your changes using the CTRL+O key combination and finish editing using the CTRL+X key combination.
 
 1. Check the Logstash configuration by running the command:
-      ```bash
+      ```console
       sudo -u logstash /usr/share/logstash/bin/logstash --path.settings /etc/logstash -t
       ```
 
 1. Start Logstash by running the command:
 
-   ```bash
+   ```console
    sudo systemctl start logstash
    ```
 
 1. To start the Logstash service automatically when the operating system is rebooted, run the command:
 
-   ```bash
+   ```console
    sudo systemctl enable logstash
    ```
 
@@ -443,7 +443,7 @@ To install Filebeat:
 
 1. Install Filebeat by running the command:
 
-   ```bash
+   ```console
    sudo apt install filebeat
    ```
 
@@ -451,7 +451,7 @@ To install Filebeat:
 
    1. Open this file:
 
-      ```bash
+      ```console
       sudo nano /etc/filebeat/filebeat.yml
       ```
 
@@ -491,7 +491,7 @@ To install Filebeat:
 
 1. Enable the Logstash module. To do this, run the command:
 
-   ```bash
+   ```console
    sudo sudo filebeat modules enable logstash
    ```
 
@@ -505,13 +505,13 @@ To install Filebeat:
 
 1. To view the included modules, run the command:
 
-   ```bash
+   ```console
    sudo filebeat modules list
    ```
 
 1. Download the Elasticsearch index template by running the command:
 
-   ```bash
+   ```console
    sudo filebeat setup --template -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'
    ```
 
@@ -525,25 +525,25 @@ To install Filebeat:
 
 1. Dashboards allow you to visualize the Filebeat data sent to Kibana. To enable the dashboard, run the command:
 
-   ```bash
+   ```console
    sudo filebeat setup -e -E output.logstash.enabled=false -E output.elasticsearch.hosts=['localhost:9200'] -E setup.kibana.host=localhost:5601
    ```
 
 1. Start Filebeat by running the command:
 
-   ```bash
+   ```console
    sudo systemctl start filebeat
    ```
 
 1. To start the filebeat service automatically when the operating system is rebooted, run the command:
 
-   ```bash
+   ```console
    sudo systemctl enable filebeat
    ```
 
 1. To verify that Elasticsearch is receiving data, query the Filebeat index with the command:
 
-   ```bash
+   ```console
    curl -XGET 'http://localhost:9200/filebeat-\*/_search?pretty'
    ```
 
