@@ -248,4 +248,4 @@ Running VMs consume computing resources. If you don't need them anymore:
 
 - [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Ubuntu-DR` VM.
 - Delete the backup infrastructure `VK-Cloud-infra` via Hystax Acura [personal account](https://dr.mcs-cloud.ru).
-- [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during recovery.
+- [Delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during recovery.

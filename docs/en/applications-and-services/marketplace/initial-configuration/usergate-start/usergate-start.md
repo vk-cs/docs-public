@@ -76,7 +76,7 @@ For advanced service configuration, use the official [UserGate NGFW](https://sup
 Recommendations for working with the service:
 
 - When configuring the network interface, use static addressing: the IP address must match the address assigned to the VM port. You can see the address on the **Networks** tab of the VM page.
-- If you are connecting to the [external network](/en/networks/vnet/concepts/net-types#external_network), manually configure the IP addresses in the UserGate console. Use the network details from the section **Cloud networks** → **Networks**.
+- If you are connecting to the [external network](/en/networks/vnet/concepts/net-types#external_net), manually configure the IP addresses in the UserGate console. Use the network details from the section **Cloud networks** → **Networks**.
 
 </info>
 
@@ -86,4 +86,4 @@ The running service infrastructure consumes computing resources. If you no longe
 
 - [Delete](../../service-management/pr-instance-manage#deleting_a_service_instance) the UserGate NGFW service instance.
 - [Delete](/en/networks/vnet/service-management/net#deleting_network) the network used for the service.
-- [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address created during service deployment.
+- [Delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address created during service deployment.

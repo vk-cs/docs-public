@@ -8,7 +8,7 @@ To make it easier to explain how routers work, it is further assumed that the fi
 
 Routers are used to organize traffic exchange between subnets. There are two types of routers in VK Cloud:
 
-- A _standard router_ is designed to route traffic between VK Cloud subnets, and to provide access to the [external network](../net-types#external_network) from such subnets.
+- A _standard router_ is designed to route traffic between VK Cloud subnets, and to provide access to the [external network](../net-types#external_net) from such subnets.
 
   It also routes traffic between VK Cloud subnets and the remote site if a [VPN tunnel](../vpn) is used.
 
@@ -34,7 +34,7 @@ Different types of routers can be used within a single VK Cloud subnet.
 
   You can also configure static routing. For example, direct traffic to a virtual machine that acts as a dedicated firewall or other network device.
 
-- **Providing access from VK Cloud subnets to the [external network](../net-types#external_network).**
+- **Providing access from VK Cloud subnets to the [external network](../net-types#external_net).**
 
   A router connected to the external network provides additional capabilities for subnets:
 

@@ -80,7 +80,7 @@ If the project has file storages, balancers or advanced routers, the shutdown wi
 |You can only delete ports in your project
 |===
 
-## External network
+## {heading(External network)[id=external_net]}
 
 _External network_ (`ext-net`, `internet`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
 

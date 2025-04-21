@@ -115,7 +115,7 @@ The VM settings available for configuration may vary depending on the operating 
       ```
 
       - If the `ext-net` network is selected, an external IP address will be automatically assigned to the virtual machine.
-      - If a private network is selected, then a floating [IP address can be assigned to the virtual machine after creation](/en/networks/vnet/service-management/floating-ip).
+      - If a private network is selected, then a floating [IP address can be assigned to the virtual machine after creation](/en/networks/vnet/service-management/ip/floating-ip).
 
    5. Get a list of available key pairs and save `keypair_name`:
 
