@@ -51,14 +51,14 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
@@ -88,7 +88,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export CHART_NAME="kube-prometheus-stack"
    export NAMESPACE="prometheus-monitoring"
 
@@ -97,7 +97,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $CHART_NAME="kube-prometheus-stack"
    $NAMESPACE="prometheus-monitoring"
    ```
@@ -107,7 +107,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE get pvc
    ```
 
@@ -148,7 +148,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    <details>
    <summary>prepare-for-addon-update.sh</summary>
 
-   ```bash
+   ```console
    #!/bin/sh
 
    set -e
@@ -294,13 +294,13 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 1. Make the script code file executable:
 
-   ```bash
+   ```console
    chmod +x prepare-for-addon-update.sh
    ```
 
 1. Define the parameters to run the script with:
 
-   ```bash
+   ```console
    bash prepare-for-addon-update.sh -h
    ```
 
@@ -340,7 +340,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    Run the command, specifying the required parameters. You can omit the parameter if you are satisfied with its default value.
 
-   ```bash
+   ```console
      bash prepare-for-addon-update.sh \
        -k <path to the kubeconfig file> \
        -c <name of the kubeconfig context> \
@@ -402,7 +402,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 1. Get the list of PVs that are used by the add-on via PVCs in the add-on namespace:
 
-   ```bash
+   ```console
    kubectl get pv -o jsonpath='{range .items[?(@.spec.claimRef.namespace=="'"${NAMESPACE}"'")]}{.metadata.name}{"\n"}{end}'
    ```
 
@@ -412,13 +412,13 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    This command patches an individual PV. Run it for all PVs in the list.
 
-   ```bash
+   ```console
    kubectl patch pv <PV name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
    ```
 
 3. Get a list of all PVs in the cluster and make sure that the PVs, which the add-on is working with, use the `Retain` reclaim policy and are associated with a PVC (`Bound`):
 
-   ```bash
+   ```console
    kubectl get pv
    ```
 
@@ -436,13 +436,13 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 4. Delete the Helm chart of the current version of the add-on. This is necessary for successfully removing the PVCs and CRDs sets that are used by the add-on.
 
-   ```bash
+   ```console
    helm uninstall -n $NAMESPACE $CHART_NAME --wait --timeout 600s
    ```
 
 5. Get a list of PVCs that have been used by the add-on:
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE get pvc
    ```
 
@@ -452,7 +452,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    This command deletes a separate PVC. Run it for all PVCs from the list.
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE delete pvc <PVC name>
    ```
 
@@ -460,13 +460,13 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    This command patches an individual PV. Run it for all PVs in the list you received earlier.
 
-   ```bash
+   ```console
    kubectl patch pv <PV name> --type json -p '[{"op": "remove", "path": "/spec/claimRef"}]'
    ```
 
 8. Get a list of all PVs in the cluster and make sure that the PVs, which the add-on is working with, use the `Retain` reclaim policy and are available for binding (`Available`):
 
-   ```bash
+   ```console
    kubectl get pv
    ```
 
@@ -484,7 +484,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 9. Get a list of CRDs that the add-on has worked with:
 
-   ```bash
+   ```console
    kubectl get crd -o jsonpath='{range .items[?(@.spec.group=="monitoring.coreos.com")]}{.metadata.name}{"\n"}{end}'
    ```
 
@@ -492,13 +492,13 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    This command deletes an individual CRD. Execute it for all CRDs in the list obtained earlier.
 
-   ```bash
+   ```console
    kubectl delete crd <CRD name>
    ```
 
 11. Delete the namespace in which the add-on has been installed.
 
-   ```bash
+   ```console
    kubectl delete ns $NAMESPACE
    ```
 
@@ -608,7 +608,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](../../reference/pvs-and-pvcs) used by the add-on:
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE get pvc
    ```
 

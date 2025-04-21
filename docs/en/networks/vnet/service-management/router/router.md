@@ -29,13 +29,13 @@ You can manage routers: view, edit and delete them.
 
 1. To see a list of routers and their IDs, run the command:
 
-   ```bash
+   ```console
    openstack router list
    ```
 
 1. To see detailed information about a router, run the command:
 
-   ```bash
+   ```console
    openstack router show <router ID>
    ```
 
@@ -90,14 +90,14 @@ You can manage routers: view, edit and delete them.
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack router create <router name> --external-gateway ext-net
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack router create <router name>
    ```
 
@@ -157,7 +157,7 @@ You can manage routers: view, edit and delete them.
 
    - Change the name of the router:
 
-     ```bash
+     ```console
      openstack router set <router ID> --name <new name>
      ```
 
@@ -170,14 +170,14 @@ You can manage routers: view, edit and delete them.
      </tablist>
      <tabpanel>
 
-     ```bash
+     ```console
      openstack router set <router ID> --external-gateway ext-net
      ```
 
      </tabpanel>
      <tabpanel>
 
-     ```bash
+     ```console
      openstack router unset <router ID> --external-gateway
      ```
 
@@ -198,7 +198,7 @@ You can manage routers: view, edit and delete them.
      1. Get the ID of the necessary subnet.
      1. Run the command:
 
-        ```bash
+        ```console
         openstack router add subnet <router ID> <subnet ID>
         ```
 
@@ -210,7 +210,7 @@ You can manage routers: view, edit and delete them.
      </tabpanel>
      <tabpanel>
 
-     ```bash
+     ```console
      openstack router remove subnet <router ID> <subnet ID>
      ```
 
@@ -283,7 +283,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     1. [Get the ID of the OpenStack port](../ports#viewing_a_list_of_ports_and_port_information) located on the subnet you want to connect to the router. This port should not be used by any objects (load balancers, virtual machines, etc.) If there is no such port, [create it](../ports#adding_a_port).
     1. Run the command:
 
-       ```bash
+       ```console
        openstack router add port <router id> <port id>
        ```
 
@@ -303,7 +303,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     1. [Look at the interfaces (ports)](#viewing_a_list_of_routers_and_information_about_them) configured on the router.
     1. Run the command:
 
-       ```bash
+       ```console
        openstack router remove port <router id> <port id>
        ```
 
@@ -350,7 +350,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. To add a static route, run the command:
 
-    ```bash
+    ```console
     openstack router set <router id> --route destination=<prefixed destination network>,gateway=<next hop address>
     ```
 
@@ -359,13 +359,13 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     1. [Look up the static routes](#viewing_a_list_of_routers_and_information_about_them) configured on the router.
     1. Run the command:
 
-       ```bash
+       ```console
        openstack router unset <router id> --route destination=<prefixed destination network>,gateway=<next hop address>
        ```
 
 1. To remove all static routes, run the command:
 
-    ```bash
+    ```console
     openstack router set <router id> --no-route
     ```
 
@@ -414,7 +414,7 @@ To remove a router:
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack router delete <router ID>
    ```
 

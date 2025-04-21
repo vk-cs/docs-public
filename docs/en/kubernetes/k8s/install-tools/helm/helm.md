@@ -11,7 +11,7 @@
 
 1. Make sure that the correct version of Helm is installed by running the command:
 
-   ```bash
+   ```console
    helm version
    ```
 
@@ -26,7 +26,7 @@
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add bitnami https://charts.bitnami.com/bitnami; `
    helm repo update; `
    helm install demo-helm-nginx bitnami/nginx
@@ -35,7 +35,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add bitnami https://charts.bitnami.com/bitnami
    helm repo update
    helm install demo-helm-nginx bitnami/nginx
@@ -47,7 +47,7 @@
 
 1. Verify that the NGINX pod is working by running the command:
 
-   ```bash
+   ```console
    kubectl get pods
    ```
 
@@ -69,7 +69,7 @@
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm uninstall demo-helm-nginx; `
    helm repo remove bitnami
    ```
@@ -77,7 +77,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    helm uninstall demo-helm-nginx
    helm repo remove bitnami
 

@@ -32,7 +32,7 @@
 
    Чтобы создать такой порт, выполните команду в OpenStack CLI:
 
-   ```bash
+   ```console
    openstack port create <имя порта> --network mynetwork --fixed-ip subnet=mysubnet,ip-address=192.168.0.254
    ```
 
@@ -107,7 +107,7 @@
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команду:
 
-         ```bash
+         ```console
          ip route | grep default
          ```
 
@@ -124,7 +124,7 @@
 
       1. Выполните команду OpenStack CLI:
 
-         ```bash
+         ```console
          openstack port list -c ID --server kld-vm-1 --fixed-ip ip-address=<IP-адрес сетевого интерфейса из предыдущего шага>
          ```
 
@@ -172,7 +172,7 @@
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команды:
 
-         ```bash
+         ```console
          sudo apt update
          sudo apt install keepalived
 
@@ -280,14 +280,14 @@
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команду:
 
-         ```bash
+         ```console
          sudo systemctl start keepalived
 
          ```
 
       1. Выполните команду для проверки состояния `keepalived`:
 
-         ```bash
+         ```console
          sudo systemctl status keepalived
          ```
 
@@ -310,13 +310,13 @@
 
 1. Для `kld-vm-1`:
 
-   ```bash
+   ```console
    openstack port set e1bd636a-aaaa-bbbb-cccc-a673e7cbef83 --allowed-address ip-address=192.168.0.254/24
    ```
 
 1. Для `kld-vm-2`:
 
-   ```bash
+   ```console
    openstack port set 74268d00-xxxx-yyyy-zzzz-cf9f93536d5c --allowed-address ip-address=192.168.0.254/24
    ```
 
@@ -328,7 +328,7 @@
    1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
    1. Запустите непрерывный пинг виртуального IP-адреса:
 
-      ```bash
+      ```console
       ping 192.168.0.254
       ```
 
@@ -340,7 +340,7 @@
    1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
    1. Остановите процесс `keepalived`:
 
-      ```bash
+      ```console
       sudo systemctl stop keepalived
       ```
 
@@ -349,7 +349,7 @@
 
    1. Повторно запустите процесс `keepalived`:
 
-      ```bash
+      ```console
       sudo systemctl start keepalived
       ```
 
@@ -357,7 +357,7 @@
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       ip address show dev ens3
       ```
 

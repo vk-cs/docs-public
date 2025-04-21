@@ -22,7 +22,7 @@
    1. Назначьте внешний IP-адрес с помощью кнопки **Назначить внешний IP**.
    1. Подключитесь к ВМ через SSH:
 
-      ```bash
+      ```console
       $ ssh -i <KEY_PATH> <USER_NAME>@<FLOATING_IP>
       ```
 
@@ -35,7 +35,7 @@
    1. Если на ВМ не установлены программные пакеты, указанные в {linkto(../ib_image_requirements/#ib_image_requirements)[text=%text]}, установите их.
 
       {caption(Пример команды, чтобы установить `curl` на ОС Ubuntu)[align=left;position=above]}
-      ```bash
+      ```console
       $ sudo apt install curl
       ```
       {/caption}
@@ -47,7 +47,7 @@
 
    * Для ОС RHEL (CentOS, AlmaLinux, Rocky Linux) выполните команды:
 
-      ```bash
+      ```console
       # Очистить логи cloud-init
       $ sudo cloud-init clean --log --seed
       # Очистить ssh-ключи
@@ -73,7 +73,7 @@
 
    * Для ОС Debian (Ubuntu) выполните команды:
 
-      ```bash
+      ```console
       # Очистить логи cloud-init
       $ sudo cloud-init clean --log --seed
       # Очистить ssh-ключи
@@ -103,7 +103,7 @@
    </err>
 1. Остановите ВМ:
 
-   ```bash
+   ```console
    $ sudo /sbin/shutdown -hP now
    ```
 

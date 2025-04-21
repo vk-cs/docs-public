@@ -67,7 +67,7 @@
 
    1. Убедитесь, что на хосте установлена версия Java 11 или выше:
 
-      ```bash
+      ```console
       java --version
       ```
 
@@ -75,25 +75,25 @@
 
       Пример установки OpenJDK 11 (только JRE) с помощью `apt` для Ubuntu 22.04 LTS:
 
-      ```bash
+      ```console
       sudo apt update && sudo apt install openjdk-11-jre
       ```
 
    1. [Загрузите архив](https://archive.apache.org/dist/kafka/3.5.0/kafka_2.13-3.5.0.tgz) с дистрибутивом Kafka версии 3.5.0. Версии Kafka для экземпляра сервиса и на хосте должны совпадать. Пример команды для загрузки дистрибутива с помощью cURL:
 
-      ```bash
+      ```console
       curl -O https://archive.apache.org/dist/kafka/3.5.0/kafka_2.13-3.5.0.tgz
       ```
 
    1. Распакуйте архив и перейдите в директорию с распакованными файлами:
 
-      ```bash
+      ```console
       tar -xzf kafka_2.13-3.5.0.tgz && cd kafka_2.13-3.5.0
       ```
 
    1. Получите версию консольного клиента-производителя (producer) и консольного клиента-потребителя (consumer):
 
-      ```bash
+      ```console
       bin/kafka-console-producer.sh --version
       bin/kafka-console-consumer.sh --version
       ```
@@ -141,7 +141,7 @@
 
    Для этого выполните команду:
 
-   ```bash
+   ```console
    bin/kafka-console-consumer.sh \
      --bootstrap-server kafka-bootstrap.example.com:9093 \
      --consumer.config client-ssl.properties \
@@ -153,7 +153,7 @@
 
    Для этого выполните команду:
 
-   ```bash
+   ```console
    bin/kafka-console-producer.sh \
      --broker-list kafka-bootstrap.example.com:9093 \
      --producer.config client-ssl.properties

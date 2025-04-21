@@ -71,7 +71,7 @@
 
 1. Создайте нужный ресурс Kubernetes на основе манифеста:
 
-   ```bash
+   ```console
    kubectl apply -f coffee.yaml
    ```
 
@@ -122,13 +122,13 @@
 
 1. Создайте нужный ресурс Kubernetes на основе манифеста:
 
-   ```bash
+   ```console
    kubectl apply -f lb-static-public-ip.yaml
    ```
 
 1. Периодически проверяйте статус сервиса командой:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-public-static-ip
    ```
 
@@ -160,13 +160,13 @@
 
 1. Создайте нужный ресурс Kubernetes на основе манифеста:
 
-   ```bash
+   ```console
    kubectl apply -f lb-session-affinity.yaml
    ```
 
 1. Периодически проверяйте статус сервиса командой:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-session-affinity
    ```
 
@@ -179,7 +179,7 @@
 
    Например, выполните команду:
 
-   ```bash
+   ```console
    curl icanhazip.com
    ```
 
@@ -209,13 +209,13 @@
 
 1. Создайте нужный ресурс Kubernetes на основе манифеста:
 
-   ```bash
+   ```console
    kubectl apply -f lb-restrict-access-by-ip.yaml
    ```
 
 1. Периодически проверяйте статус сервиса командой:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-restrict-access-by-ip
    ```
 
@@ -248,13 +248,13 @@
 
 1. Создайте нужный ресурс Kubernetes на основе манифеста:
 
-   ```bash
+   ```console
    kubectl apply -f lb-private-ip.yaml
    ```
 
 1. Периодически проверяйте статус сервиса командой:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-private-ip
    ```
 
@@ -285,14 +285,14 @@
 
 1. Получите IP-адрес, назначенный балансировщику:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-public-static-ip
    ```
 
    Нужный адрес содержится в столбце таблицы `EXTERNAL-IP`.
 
 1. Выполните несколько раз запрос к приложению через балансировщик нагрузки:
-   ```bash
+   ```console
    curl http://<IP-адрес балансировщика>
    ```
 
@@ -303,7 +303,7 @@
 
 1. Получите IP-адрес, назначенный балансировщику:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-session-affinity
    ```
 
@@ -311,7 +311,7 @@
 
 1. Выполните несколько раз запрос к приложению через балансировщик нагрузки:
 
-   ```bash
+   ```console
    curl http://<IP-адрес балансировщика>
    ```
 
@@ -322,7 +322,7 @@
 
 1. Получите IP-адрес, назначенный балансировщику:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-restrict-access-by-ip
    ```
 
@@ -330,7 +330,7 @@
 
 1. Выполните несколько раз запрос к приложению через балансировщик нагрузки (c IP-адреса, с которого разрешен доступ):
 
-   ```bash
+   ```console
    curl http://<IP-адрес балансировщика>
    ```
 
@@ -343,7 +343,7 @@
 
 1. Получите IP-адрес, назначенный балансировщику:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-private-ip
    ```
 
@@ -354,7 +354,7 @@
 1. [Подключитесь к этой виртуальной машине](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) по SSH.
 
 1. Выполните несколько раз запрос к приложению через балансировщик нагрузки:
-   ```bash
+   ```console
    curl http://<IP-адрес балансировщика>
    ```
 
@@ -380,7 +380,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete svc coffee-svc-public-static-ip
    kubectl delete svc coffee-svc-session-affinity
    kubectl delete svc coffee-svc-restrict-access-by-ip
@@ -392,7 +392,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete svc coffee-svc-public-static-ip; `
    kubectl delete svc coffee-svc-session-affinity; `
    kubectl delete svc coffee-svc-restrict-access-by-ip; `

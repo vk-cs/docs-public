@@ -19,7 +19,7 @@ Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/service-manag
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 
-   ```bash
+   ```console
    openstack keypair show <KEY PAIR NAME>
    ```
 
@@ -54,7 +54,7 @@ To display data only about the public key, add the `--public-key` option to the 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 
-   ```bash
+   ```console
    openstack keypair create
    ```
 
@@ -90,7 +90,7 @@ To display data only about the public key, add the `--public-key` option to the 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 
-   ```bash
+   ```console
    openstack keypair create --public-key <path to the public key file> <key pair name>
    ```
 
@@ -129,7 +129,7 @@ This is a group operation: if necessary, you can delete several key pairs at onc
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 
-   ```bash
+   ```console
    openstack keypair delete <KEY PAIR NAME>
    ```
 

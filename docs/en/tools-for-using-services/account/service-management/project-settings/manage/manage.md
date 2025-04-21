@@ -145,13 +145,13 @@ To get an extended list of quotas for a project:
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 
-    ```bash
+    ```console
     openstack quota show
     ```
 
     <details><summary>Example of command output for the Moscow region</summary>
 
-    ```bash
+    ```console
     +----------------------------+--------------------------------------------------+
     | Field                      | Value                                            |
     +----------------------------+--------------------------------------------------+
@@ -267,14 +267,14 @@ To get an extended list of quotas for a project:
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     nova quota-show
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     cinder quota-show <project_id>
     ```
 

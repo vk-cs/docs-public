@@ -42,7 +42,7 @@
 
 1. (Опционально) Проверьте резолвинг имени в IP-адрес с помощью команды `nslookup site-joomla.example.vk.cloud`. Вывод при успешной операции:
 
-   ```bash
+   ```console
    Non-authoritative answer:
    Name:   site-joomla.example.vk.cloud
    Address: 87.239.105.44
@@ -53,14 +53,14 @@
 1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Almalinux_9_Joomla`.
 1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo systemctl reboot
    ```
 
 1. Загрузите необходимые репозитории, последовательно выполнив команды:
 
-   ```bash
+   ```console
    sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
    sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-9.rpm -y
    sudo dnf module enable php:remi-8.2 -y
@@ -69,13 +69,13 @@
 
 1. Запустите httpd-демон:
 
-   ```bash
+   ```console
    sudo systemctl enable httpd.service --now
    ```
 
 1. Скачайте репозиторий CMS Joomla! и разверните ее в директории `joomla` на запущенном веб-сервере:
 
-   ```bash
+   ```console
    wget https://github.com/joomla/joomla-cms/releases/download/4.3.4/Joomla_4.3.4-Stable-Full_Package.tar.gz
    sudo mkdir -p /var/www/html/joomla
    sudo tar xzf Joomla_4.3.4-Stable-Full_Package.tar.gz -C /var/www/html/joomla/
@@ -84,7 +84,7 @@
 
 1. Установите параметры SELinux для корректной работы веб-сервера:
 
-   ```bash
+   ```console
    sudo setsebool -P httpd_enable_cgi on
    sudo setsebool -P httpd_unified on
    sudo setsebool -P httpd_builtin_scripting on

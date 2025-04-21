@@ -41,7 +41,7 @@ As an example, an application will be used to calculate an approximate value of 
    1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
-      ```bash
+      ```console
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
@@ -50,7 +50,7 @@ As an example, an application will be used to calculate an approximate value of 
 
    Execute the command:
 
-   ```bash
+   ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 

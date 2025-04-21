@@ -46,7 +46,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 
 1. (Optional) Check the name resolution to the IP address using the command `nslookup site-lamp.example.vk.cloud`. Output upon successful operation:
 
-   ```bash
+   ```console
    Non-authoritative answer:
    Name:   site-lamp.example.vk.cloud
    Address: 211.243.95.137
@@ -57,14 +57,14 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Ubuntu_22_04_LAMP` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
-   ```bash
+   ```console
    sudo apt update && sudo apt upgrade -y
    sudo reboot
    ```
 
 1. Download the necessary repositories and start the web server:
 
-   ```bash
+   ```console
    sudo apt install apache2 apache2-utils libapache2-mod-php php8.1 php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-intl php8.1-mbstring php8.1-mysql php8.1-opcache php8.1-readline php8.1-soap php8.1-xml php8.1-xmlrpc php8.1-zip php-gd -y
    sudo systemctl enable apache2 --now
    ```

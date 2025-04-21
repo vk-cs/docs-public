@@ -32,7 +32,7 @@ The password to the virtual machine is set through the guest agent. If the agent
 
 In this case, it is recommended to install and configure `qemu-guest-agent` by running the command in the terminal:
 
-```bash
+```console
 sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-guest-agent; systemctl start qemu-guest-agent"
 ```
 

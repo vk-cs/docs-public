@@ -31,14 +31,14 @@ ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dn
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
@@ -87,7 +87,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Создайте пространство имен, в которое будет установлен ExternalDNS:
 
-   ```bash
+   ```console
    kubectl create ns external-dns
    ```
 
@@ -100,7 +100,7 @@ ExternalDNS будет использовать реквизиты этого п
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl -n external-dns create secret generic vkcs-auth \
      --from-literal=ProjectID="<Project ID>" \
      --from-literal=UserDomainName="<User Domain Name>" \
@@ -113,7 +113,7 @@ ExternalDNS будет использовать реквизиты этого п
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl -n external-dns create secret generic vkcs-auth `
      --from-literal=ProjectID="<Project ID>" `
      --from-literal=UserDomainName="<User Domain Name>" `
@@ -128,7 +128,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Добавьте Helm-репозиторий Bitnami:
 
-   ```bash
+   ```console
    helm repo add bitnami https://charts.bitnami.com/bitnami
    ```
 
@@ -284,13 +284,13 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Установите ExternalDNS:
 
-   ```bash
+   ```console
    helm -n external-dns install external-dns-vkcs bitnami/external-dns -f external-dns-vkcs-values.yaml
    ```
 
 1. Убедитесь, что Helm-чарт был успешно развернут:
 
-   ```bash
+   ```console
    helm -n external-dns list && kubectl -n external-dns get all
    ```
 
@@ -355,13 +355,13 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Примените этот манифест в кластере для развертывания приложения:
 
-   ```bash
+   ```console
    kubectl apply -f tea-app.yaml
    ```
 
 1. Проверьте, что приложение было успешно развернуто в виде `ReplicaSet` из трех реплик:
 
-   ```bash
+   ```console
    kubectl get rs,pod -l app==tea
    ```
 
@@ -427,13 +427,13 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Примените этот манифест в кластере для создания сервиса:
 
-   ```bash
+   ```console
    kubectl apply -f tea-service.yaml
    ```
 
 1. Проверьте статус сервиса:
 
-   ```bash
+   ```console
    kubectl get svc tea-svc
    ```
 
@@ -585,13 +585,13 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Примените эти манифесты в кластере для создания всех необходимых ресурсов:
 
-   ```bash
+   ```console
    kubectl apply -f coffee-app.yaml -f coffee-service.yaml
    ```
 
 1. Проверьте, что приложение было успешно развернуто в виде `ReplicaSet` из двух реплик вместе с соответствующим сервисом:
 
-   ```bash
+   ```console
    kubectl get rs,pod,svc -l app==coffee
    ```
 
@@ -650,13 +650,13 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Примените этот манифест в кластере для создания ресурса:
 
-   ```bash
+   ```console
    kubectl apply -f cafe-ingress.yaml
    ```
 
 1. Проверьте статус Ingress:
 
-   ```bash
+   ```console
    kubectl get ingress cafe-ingress
    ```
 
@@ -713,7 +713,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    1. Удалите все ресурсы, связанные с приложением `tea`:
 
-      ```bash
+      ```console
       kubectl delete -f cafe-ingress.yaml -f coffee-service.yaml -f coffee-app.yaml
       ```
 
@@ -721,7 +721,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    1. Удалите все ресурсы, связанные с приложением `coffee`:
 
-      ```bash
+      ```console
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
   
@@ -744,7 +744,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    1. Удалите Helm-чарт с ExternalDNS:
 
-      ```bash
+      ```console
       helm -n external-dns uninstall external-dns-vkcs
       ```
 
@@ -756,7 +756,7 @@ ExternalDNS будет использовать реквизиты этого п
 
       </warn>
 
-      ```bash
+      ```console
       kubectl delete ns external-dns
       ```
 

@@ -116,14 +116,14 @@ jq must be pre-installed on your system.
 </tablist>
 <tabpanel>
 
-```bash
+```console
 sudo apt-get install jq
 ```
 
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
 yum install epel-release -y
 yum update -y
 yum install jq -y
@@ -135,7 +135,7 @@ yum install jq -y
 1. [Install](https://community.chocolatey.org/courses/installation/installing) package manager [Chocolatey](https://chocolatey.org), if it is not already installed.
 1. Open PowerShell and run the command:
 
-   ```powershell
+   ```console
    choco install jq -y
    ```
 
@@ -146,19 +146,19 @@ Use the package manager that is convenient for you:
 
 - Fink:
 
-  ```bash
+  ```console
   fink install jq
   ```
 
 - Homebrew:
 
-  ```bash
+  ```console
   brew install jq
   ```
 
 - MacPorts:
 
-  ```bash
+  ```console
   port install jq
   ```
 
@@ -171,7 +171,7 @@ Use the package manager that is convenient for you:
 
 Command:
 
-```bash
+```console
 curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans" | jq "."
 ```
 

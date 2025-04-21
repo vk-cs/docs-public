@@ -37,7 +37,7 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
 1. On the host in a separate terminal session, run the command:
 
-   ```bash
+   ```console
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
@@ -68,7 +68,7 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
 1. On the host in a separate terminal session, run the command:
 
-     ```bash
+     ```console
      kauthproxy -n kube-system https://kubernetes-dashboard.svc
      ```
 

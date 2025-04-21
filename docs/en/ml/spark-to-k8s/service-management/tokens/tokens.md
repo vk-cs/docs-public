@@ -105,7 +105,7 @@ When working in a production environment, do not operate tokens in clear text. U
    1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
-      ```bash
+      ```console
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
@@ -114,7 +114,7 @@ When working in a production environment, do not operate tokens in clear text. U
 
    Run the command:
 
-   ```bash
+   ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
@@ -196,7 +196,7 @@ When working in a production environment, do not operate tokens in clear text. U
    1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
-      ```bash
+      ```console
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
@@ -205,7 +205,7 @@ When working in a production environment, do not operate tokens in clear text. U
 
    Run the command:
 
-   ```bash
+   ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
@@ -317,7 +317,7 @@ When working in a production environment, do not operate tokens in clear text. U
    1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
-      ```bash
+      ```console
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
@@ -326,7 +326,7 @@ When working in a production environment, do not operate tokens in clear text. U
 
    Run the command:
 
-   ```bash
+   ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 

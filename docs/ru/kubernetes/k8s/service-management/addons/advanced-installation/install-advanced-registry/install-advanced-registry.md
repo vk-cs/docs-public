@@ -34,7 +34,7 @@
 
 1. Создайте зашифрованную пару логин\пароль для авторизации в реестре Docker, выполнив команду:
 
-   ```bash
+   ```console
    docker run --entrypoint htpasswd registry:2.7.0 -Bbn <логин> <пароль>
    ```
 
@@ -119,13 +119,13 @@
 
    1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Примените изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -245,13 +245,13 @@
 
    1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Примените изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 

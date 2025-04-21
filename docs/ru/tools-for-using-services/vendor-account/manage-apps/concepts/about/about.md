@@ -301,7 +301,7 @@ Push-модель — способ получения метрик по факт
 {/caption}
 
 {caption(Пример запроса на передачу метрик магазину)[align=left;position=above]}
-```bash
+```console
 $ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/usages \
 -H "Content-Type: application/json" \
 -H 'x-service-token: <SERVICE_TOKEN_USAGES>' \

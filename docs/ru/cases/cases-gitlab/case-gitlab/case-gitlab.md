@@ -49,7 +49,7 @@
 1. [Подключитесь к ВМ](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) `OA-Ubuntu-docker` по SSH.
 1. Проверьте состояние файервола операционной системы и отключите его, если он активен:
 
-    ```bash
+    ```console
     sudo ufw status
     sudo ufw disable
     ```
@@ -65,25 +65,25 @@
 
    1. Обновите список доступных пакетов Ubuntu и их версий:
 
-        ```bash
+        ```console
         sudo apt-get update
         ```
 
    1. Установите последнюю версию плагина Docker Compose:
 
-        ```bash
+        ```console
         sudo apt-get install docker-compose-plugin
         ```
 
    1. Убедитесь, что плагин установлен правильно, запросив его версию:
 
-        ```bash
+        ```console
         docker compose version
         ```
 
         Ожидаемый результат:
 
-        ```bash
+        ```console
         Docker Compose version vN.N.N
         ```
 
@@ -95,7 +95,7 @@ GitLab для доступа по SSH по умолчанию используе
 
 1. Откройте для редактирования файл `/etc/ssh/sshd_config`:
 
-    ```bash
+    ```console
     sudo nano /etc/ssh/sshd_config
     ```
 
@@ -111,19 +111,19 @@ GitLab для доступа по SSH по умолчанию используе
 
 1. Перезапустите сервис `sshd`:
 
-    ```bash
+    ```console
     sudo systemctl restart sshd
     ```
 
 1. Закройте текущий сеанс подключения к ВМ:
 
-    ```bash
+    ```console
     exit
     ```
 
 1. Подключитесь к ВМ `OA-Ubuntu-docker` по SSH, используя новый порт:
 
-    ```bash
+    ```console
     ssh -i <путь к ключу> ubuntu@185.185.185.185 -p 35242
     ```
 
@@ -133,7 +133,7 @@ GitLab для доступа по SSH по умолчанию используе
 
 1. Создайте директории для постоянного хранилища GitLab, последовательно выполнив команды:
 
-    ```bash
+    ```console
     sudo mkdir -p /opt/gitlab
     sudo mkdir -p /opt/gitlab/config
     sudo mkdir -p /opt/gitlab/logs
@@ -145,7 +145,7 @@ GitLab для доступа по SSH по умолчанию используе
 
 1. Создайте и откройте для редактирования файл конфигурации для Docker Compose:
 
-    ```bash
+    ```console
     sudo nano docker-compose.yml
     ```
 
@@ -198,7 +198,7 @@ GitLab для доступа по SSH по умолчанию используе
 1. Сохраните файл и завершите работу с редактором, нажав CTRL+O, а затем CTRL+X.
 1. Запустите Docker Compose:
 
-    ```bash
+    ```console
     sudo docker compose up -d
     ```
 
@@ -231,7 +231,7 @@ GitLab для доступа по SSH по умолчанию используе
 
 Выполните команду:
 
-```bash
+```console
 sudo docker ps
 ```
 
@@ -251,7 +251,7 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 
 1. Получите и скопируйте автоматически сгенерированный пароль администратора GitLab:
 
-    ```bash
+    ```console
     sudo cat /opt/gitlab/config/initial_root_password
     ```
 

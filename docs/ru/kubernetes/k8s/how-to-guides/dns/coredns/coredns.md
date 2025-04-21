@@ -14,7 +14,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    kubectl edit cm coredns -n kube-system
    ```
 
@@ -56,13 +56,13 @@
 
 1. Создайте временный под:
 
-   ```bash
+   ```console
    kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
    ```
 
    Ожидаемый вывод:
 
-   ```bash
+   ```console
    Server:    10.254.0.10
    Address 1: 10.254.0.10 kube-dns.kube-system.svc.cluster.local
 
@@ -74,7 +74,7 @@
 
    1. Перезапустите все поды CoreDNS:
 
-      ```bash
+      ```console
       kubectl rollout restart daemonset/coredns -n kube-system
       ```
 
@@ -82,7 +82,7 @@
 
    1. Повторите создание временного пода для проверки DNS:
    
-      ```bash
+      ```console
       kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
       ```
 

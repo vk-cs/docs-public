@@ -36,7 +36,7 @@
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       openstack flavor list
       ```
 
@@ -58,7 +58,7 @@
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       terraform refresh
       ```
 
@@ -231,19 +231,19 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 1. Проверьте конфигурационный файл Terraform на корректность:
 
-   ```bash
+   ```console
    terraform validate
    ```
 
 1. Ознакомьтесь с планируемыми изменениями:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Примените планируемые изменения:
 
-   ```bash
+   ```console
    terraform apply
    ```
 

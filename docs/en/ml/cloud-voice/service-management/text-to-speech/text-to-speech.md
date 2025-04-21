@@ -13,7 +13,7 @@ To synthesize speech using a GET request, send the text in the `text` parameter.
 
 Request example:
 
-```bash
+```console
 curl -L --request GET \
     --url 'https://voice.mcs.mail.ru/tts?text=<text to voice>' \
     --output <file name>
@@ -27,7 +27,7 @@ To synthesize speech using a POST request, send the text in the body of the requ
 
 Request example:
 
-```bash
+```console
 curl -L --request POST \
   --url 'https://voice.mcs.mail.ru/tts?encoder=mp3' \
   --header 'Authorization: Bearer <access token>' \

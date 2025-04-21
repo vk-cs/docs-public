@@ -37,31 +37,31 @@
 
 1. Чтобы посмотреть список сетей и их идентификаторы, выполните команду:
 
-   ```bash
+   ```console
    openstack network list
    ```
 
 1. Чтобы посмотреть подробную информацию о сети, выполните команду:
 
-   ```bash
+   ```console
    openstack network show <идентификатор сети>
    ```
 
 1. Чтобы посмотреть список всех подсетей и их идентификаторы, выполните команду:
 
-   ```bash
+   ```console
    openstack subnet list
    ```
 
 1. Чтобы посмотреть список всех подсетей, принадлежащих конкретной сети, и их идентификаторы выполните команду:
 
-   ```bash
+   ```console
    openstack subnet list --network <идентификатор сети>
    ```
 
 1. Чтобы посмотреть подробную информацию о подсети, выполните команду:
 
-   ```bash
+   ```console
    openstack subnet show <идентификатор подсети>
    ```
 
@@ -107,7 +107,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack network create <название сети>
    ```
 
@@ -141,7 +141,7 @@
 
 1. Познакомьтесь со справкой команды.
 
-   ```bash
+   ```console
    openstack network set --help
    ```
 
@@ -156,7 +156,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack network set <идентификатор сети> \
      --name <новое имя сети> \
      --dns-domain <новый DNS-домен>
@@ -165,7 +165,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack network set <идентификатор сети> `
      --name <новое имя сети> `
      --dns-domain <новый DNS-домен>
@@ -206,7 +206,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack network delete <идентификатор сети>
    ```
 
@@ -245,7 +245,7 @@
 
 1. Познакомьтесь со справкой команды.
 
-   ```bash
+   ```console
    openstack subnet create --help
    ```
 
@@ -260,7 +260,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack subnet create <название> \
      --subnet-range <адрес подсети> \
      --network <идентификатор сети> \
@@ -271,7 +271,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack subnet create <название> `
      --subnet-range <адрес подсети> `
      --network <идентификатор сети> `
@@ -314,11 +314,11 @@
 
    1. Познакомьтесь со справкой команд.
 
-      ```bash
+      ```console
       openstack subnet set --help
       ```
 
-      ```bash
+      ```console
       openstack subnet unset --help
       ```
 
@@ -333,7 +333,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack subnet <set или unset> <идентификатор подсети> \
         --allocation-pool start=<начальный IP-адрес для DHCP>,end=<конечный IP-адрес для DHCP> \
         --dns-nameserver <адрес DNS-сервера> \
@@ -343,7 +343,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack subnet <set или unset> <идентификатор подсети> `
         --allocation-pool start=<начальный IP-адрес для DHCP>,end=<конечный IP-адрес для DHCP> `
         --dns-nameserver <адрес DNS-сервера> `
@@ -389,7 +389,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack subnet delete <идентификатор подсети>
    ```
 

@@ -179,7 +179,7 @@ To connect a persistent volume using static PVC:
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
-   ```bash
+   ```console
    kubectl apply -f ./tea.yaml
    ```
 
@@ -280,7 +280,7 @@ To connect a persistent volume using dynamic PVC:
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
-   ```bash
+   ```console
    kubectl apply -f ./coffee.yaml
    ```
 
@@ -414,7 +414,7 @@ To connect a persistent volume to multiple pods using dynamic PVC:
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
-   ```bash
+   ```console
    kubectl apply -f ./juice.yaml
    ```
 
@@ -621,7 +621,7 @@ To connect an NFS persistent volume using a static PVC:
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
-   ```bash
+   ```console
    kubectl apply -f ./milkshake.yaml
    ```
 
@@ -709,7 +709,7 @@ To connect an NFS persistent volume using a static PVC:
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
@@ -734,7 +734,7 @@ To connect an NFS persistent volume using a static PVC:
 
    Run the command:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/tea
    ```
 
@@ -749,7 +749,7 @@ To connect an NFS persistent volume using a static PVC:
 
    Run the command:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/coffee
    ```
 
@@ -764,7 +764,7 @@ To connect an NFS persistent volume using a static PVC:
 
    Run the commands:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/juice
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/juice/0
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/juice/1
@@ -781,7 +781,7 @@ To connect an NFS persistent volume using a static PVC:
 
    Run the commands:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/milkshake
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/milkshake/0
    curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/milkshake/1
@@ -807,7 +807,7 @@ To connect an NFS persistent volume using a static PVC:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f ./cafe-ingress.yaml
    kubectl delete -f ./milkshake.yaml
    kubectl delete -f ./juice.yaml
@@ -819,7 +819,7 @@ To connect an NFS persistent volume using a static PVC:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f ./cafe-ingress.yaml; `
    kubectl delete -f ./milkshake.yaml; `
    kubectl delete -f ./juice.yaml; `

@@ -167,7 +167,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    mkdir ~/.kube && \
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
@@ -175,7 +175,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    mkdir ~/.kube; `
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
@@ -187,7 +187,7 @@
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       kubectl cluster-info
       ```
 
@@ -215,7 +215,7 @@
 
 1. В отдельной сессии терминала выполните команду:
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
    ```
 
@@ -239,7 +239,7 @@
 
 1. В отдельной сессии терминала выполните команду:
 
-   ```bash
+   ```console
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
@@ -301,11 +301,11 @@
 
       - Используйте одну из команд для перезапуска:
 
-        ```bash
+        ```console
         sudo systemd restart docker
         ```
 
-        ```bash
+        ```console
         sudo service docker restart
         ```
 
@@ -335,14 +335,14 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       mkdir ~/image-build && cd ~/image-build
       ```
 
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       mkdir ~/image-build; cd ~/image-build
       ```
 
@@ -394,7 +394,7 @@
 
    1. Запустите сборку образа:
 
-      ```bash
+      ```console
       docker build . -t 192.0.2.22:5000/nginx-k8s-demo:latest
       ```
 
@@ -404,19 +404,19 @@
 
    1. Выполните вход в реестр:
 
-      ```bash
+      ```console
       docker login 192.0.2.22:5000 --username registry --password registry-password-123456
       ```
 
    1. Запушьте образ в реестр:
 
-      ```bash
+      ```console
       docker push 192.0.2.22:5000/nginx-k8s-demo:latest
       ```
 
    1. Проверьте, что образ находится в реестре:
 
-      ```bash
+      ```console
       curl -k -X GET -u registry:registry-password-123456 https://192.0.2.22:5000/v2/_catalog
       ```
 
@@ -428,7 +428,7 @@
 
    1. Создайте секрет Kubernetes, чтобы можно было получить доступ к загруженному образу из Kubernetes:
 
-      ```bash
+      ```console
       kubectl create secret docker-registry k8s-registry-creds --docker-server=192.0.2.22:5000 --docker-username=registry --docker-password=registry-password-123456
       ```
 
@@ -454,14 +454,14 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    mkdir ~/k8s-deployments && cd ~/k8s-deployments
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    mkdir ~/k8s-deployments; cd ~/k8s-deployments
    ```
 
@@ -608,7 +608,7 @@
 
 1. Разверните приложения:
 
-   ```bash
+   ```console
    kubectl apply -f deploy-coffee.yaml -f deploy-tea.yaml
    ```
 
@@ -626,7 +626,7 @@
 
    - `kubectl`: выполните команду.
 
-     ```bash
+     ```console
      kubectl get pv
      ```
 
@@ -643,7 +643,7 @@
 
    - `kubectl`: выполните команду.
 
-     ```bash
+     ```console
      kubectl get deployment
      ```
 
@@ -660,7 +660,7 @@
 
    - `kubectl`: выполните команду.
 
-     ```bash
+     ```console
      kubectl get svc
      ```
 
@@ -713,13 +713,13 @@
 
 1. Разверните ресурс [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/):
 
-   ```bash
+   ```console
    kubectl apply -f deploy-ingress.yaml
    ```
 
 1. Проверьте корректность развертывания с помощью `kubectl`, выполнив команду:
 
-   ```bash
+   ```console
    kubectl get ingress
    ```
 
@@ -738,7 +738,7 @@
 </tablist>
 <tabpanel>
 
-```bash
+```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/tea
 ```
 
@@ -759,7 +759,7 @@ K8S Persistent Volume status: present
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/coffee
 ```
 

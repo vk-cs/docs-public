@@ -9,7 +9,7 @@
 
 Пример запроса:
 
-```bash
+```console
 curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 --header 'Content-Type: audio/ogg; codecs=opus' \
 --header 'Authorization: Bearer xxxxxxxxxx'  \
@@ -72,7 +72,7 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 
 Пример запроса:
 
-```bash
+```console
 curl --request POST \
   --url https://voice.mcs.mail.ru/asr_stream/create_task \
   --header 'Authorization: Bearer access_tokenxxxxxxxx'
@@ -105,7 +105,7 @@ curl --request POST \
 
 Пример запроса:
 
-```bash
+```console
 curl --request POST \
   --url 'https://voice.mcs.mail.ru/asr_stream/add_chunk?task_id=xxxxx&chunk_num=2' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \
@@ -166,7 +166,7 @@ curl --request POST \
 
 Пример запроса:
 
-```bash
+```console
 curl --request GET \
   --url 'https://voice.mcs.mail.ru/asr_stream/get_result?task_id=xxxxx' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \

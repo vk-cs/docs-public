@@ -102,7 +102,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
 1. Create the necessary Kubernetes resources based on the manifest:
 
-   ```bash
+   ```console
    kubectl apply -f coffee.yaml
    ```
 
@@ -112,7 +112,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
    1. Locate the persistent volume created for the application:
 
-      ```bash
+      ```console
       kubectl get pv -n example-app
       ```
 
@@ -126,7 +126,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
    1. Get the disk ID for the permanent volume created:
 
-      ```bash
+      ```console
       kubectl describe pv <persistent volume ID> -n example-app
       ```
 
@@ -144,7 +144,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
    1. Get detailed information about the disk with this ID using the OpenStack CLI:
 
-      ```bash
+      ```console
       openstack volume show <disk ID> --fit-width
       ```
 
@@ -152,7 +152,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
     Check the status of the load balancer periodically:
 
-   ```bash
+   ```console
    kubectl get svc -n example-app
    ```
 
@@ -160,7 +160,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
 1. Make sure that NGINX is responding to requests:
 
-   ```bash
+   ```console
    curl <public IP address assigned to the load balancer>
    ```
 
@@ -174,13 +174,13 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
 1. Create a manual backup of the entire `example-app` namespace, which contains the resources you need for the application:
 
-   ```bash
+   ```console
    velero backup create coffee-backup --include-namespaces example-app
    ```
 
 1. Load the backup details:
 
-   ```bash
+   ```console
    velero backup describe coffee-backup
    ```
 
@@ -192,13 +192,13 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
 1. Check the logs of the backup operation (if necessary):
 
-   ```bash
+   ```console
    velero backup logs coffee-backup
    ```
 
 It's also possible to do automatic scheduled backups. For more information about scheduled backups, see Velero's help:
 
-```bash
+```console
 velero help
 ```
 
@@ -206,13 +206,13 @@ velero help
 
 1. Simulate application failure. To do this, delete the `example-app` namespace, which contains the resources needed for the application to work:
 
-   ```bash
+   ```console
    kubectl delete ns example-app
    ```
 
 1. Perform a restore from the backup that was created earlier:
 
-   ```bash
+   ```console
    velero restore create --from-backup coffee-backup
    ```
 
@@ -226,7 +226,7 @@ velero help
 
    Check the status of the load balancer periodically:
 
-   ```bash
+   ```console
    kubectl get svc -n example-app
    ```
 
@@ -234,7 +234,7 @@ velero help
 
 1. Make sure that NGINX is responding to requests:
 
-   ```bash
+   ```console
    curl <public IP address assigned to the load balancer>
    ```
 
@@ -255,7 +255,7 @@ velero help
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete ns example-app
    velero backup delete coffee-backup
 
@@ -264,7 +264,7 @@ velero help
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete ns example-app; `
    velero backup delete coffee-backup
    ```
@@ -274,7 +274,7 @@ velero help
 
 1. If you no longer need Velero, delete it:
 
-   ```bash
+   ```console
    velero uninstall
    ```
 

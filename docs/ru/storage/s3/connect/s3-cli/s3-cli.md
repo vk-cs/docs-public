@@ -20,7 +20,7 @@ VK Cloud позволяет использовать интерфейс кома
 
   1. В консоли выполните команду:
 
-      ```bash
+      ```console
       aws configure
       ```
 
@@ -46,7 +46,7 @@ VK Cloud позволяет использовать интерфейс кома
 
   1. В консоли выполните команду:
 
-      ```bash
+      ```console
       s3cmd --configure
       ```
 
@@ -87,7 +87,7 @@ VK Cloud позволяет использовать интерфейс кома
 </tablist>
 <tabpanel>
 
-  ```bash
+  ```console
   aws s3 ls --endpoint-url <домен>
   ```
 Здесь:
@@ -99,7 +99,7 @@ VK Cloud позволяет использовать интерфейс кома
 </tabpanel>
 <tabpanel>
 
-  ```bash
+  ```console
   s3cmd ls
   ```
 </tabpanel>
@@ -123,13 +123,13 @@ VK Cloud позволяет использовать интерфейс кома
 </tablist>
 <tabpanel>
 
-  ```bash
+  ```console
   aws s3 mb s3://<имя_бакета> --endpoint-url <домен>
   ```
   <details>
     <summary>Пример результата выполнения команды</summary>
 
-  ```bash
+  ```console
   make_bucket: new-bucket-aws-cli
   ```
 
@@ -137,13 +137,13 @@ VK Cloud позволяет использовать интерфейс кома
 </tabpanel>
 <tabpanel>
 
-  ```bash
+  ```console
   s3cmd mb s3://<имя_бакета>
   ```
   <details>
     <summary>Пример результата выполнения команды</summary>
 
-  ```bash
+  ```console
   Bucket 's3://my-bucket/' created
   ```
   </details>
@@ -159,26 +159,26 @@ VK Cloud позволяет использовать интерфейс кома
 </tablist>
 <tabpanel>
 
-  ```bash
+  ```console
   aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url <домен>
   ```
   <details>
     <summary>Пример результата выполнения команды</summary>
 
-  ```bash
+  ```console
   upload: ..\Diagrams\example.svg to s3://new-bucket-aws-cli/example.svg
   ```
   </details>
 </tabpanel>
 <tabpanel>
 
-  ```bash
+  ```console
   s3cmd put <путь_к_локальному_файлу> s3://<имя_бакета>/<имя_объекта>
   ```
   <details>
     <summary>Пример результата выполнения команды</summary>
 
-  ```bash
+  ```console
   upload: 'local-file' -> 's3://my-bucket/new-object'
   ```
   </details>
@@ -194,13 +194,13 @@ VK Cloud позволяет использовать интерфейс кома
 </tablist>
 <tabpanel>
 
-  ```bash
+  ```console
   aws s3 ls s3://<имя_бакета> --endpoint-url <домен>
   ```
   <details>
     <summary>Пример результата выполнения команды</summary>
 
-  ```bash
+  ```console
                                   PRE folder/
         2023-09-27 11:45:05     421326 picture-1.jpg
         2023-09-27 11:47:37       2713 picture-2.png
@@ -212,13 +212,13 @@ VK Cloud позволяет использовать интерфейс кома
 </tabpanel>
 <tabpanel>
 
-  ```bash
+  ```console
   s3cmd ls s3://<имя_бакета>
   ```
   <details>
     <summary>Пример результата выполнения команды</summary>
 
-  ```bash
+  ```console
       2023-10-06 05:37      2713   s3://my-bucket/picture-1.png
       2023-10-06 05:36       361   s3://my-bucket/delete-picture.png
       2023-10-06 05:38     56849   s3://my-bucket/icon.ico

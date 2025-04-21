@@ -51,7 +51,7 @@
 
    C помощью OpenStack CLI:
 
-   ```bash
+   ```console
    openstack flavor list
    ```
    </tabpanel>
@@ -75,7 +75,7 @@
 
       1. Выполните команду:
 
-        ```bash
+        ```console
         openstack keypair list
         ```
 
@@ -354,13 +354,13 @@ output "instance_fip" {
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform init
     ```
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -381,7 +381,7 @@ output "instance_fip" {
 
 Если пример отработал успешно, в консоли будет показан типовой вывод Ubuntu:
 
-```bash
+```console
 Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-46-generic x86_64)
 
 * Documentation: https://help.ubuntu.com
@@ -405,7 +405,7 @@ Swap usage: 0%
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform destroy
     ```
 

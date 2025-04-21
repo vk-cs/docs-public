@@ -37,9 +37,9 @@ output "private_key" {
 
 Добавьте пример в файл `keypair.tf` и выполните следующие команды:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

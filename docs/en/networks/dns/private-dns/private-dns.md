@@ -60,13 +60,13 @@ Via port settings:
 
 1. Get a list of instance ports by running the command:
 
-   ```bash
+   ```console
    openstack port list --server <instance ID>
    ```
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack port set --dns-name <DNS name> <port ID>
    ```
 

@@ -33,7 +33,7 @@
     1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ по SSH.
     1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
-        ```bash
+        ```console
         sudo apt update && sudo apt upgrade -y
         sudo reboot
         ```
@@ -49,13 +49,13 @@
 
 1. Откройте сессию терминала с ВМ и получите права root-пользователя:
 
-    ```bash
+    ```console
     sudo bash
     ```
 
 1. Посмотрите список сетевых интерфейсов ВМ:
 
-    ```bash
+    ```console
     ip a
     ```
 
@@ -63,14 +63,14 @@
 
     Пример ответа:
 
-    ```bash
+    ```console
     ens7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether fa:16:3e:d8:86:43 brd ff:ff:ff:ff:ff:ff
     altname enp0s7
     ```
 1. Создайте новый файл конфигурации сетевого интерфейса для Netplan:
 
-    ```bash
+    ```console
     nano /etc/netplan/service.yaml
     ```
 
@@ -97,7 +97,7 @@
 
 1. Примените настройки, выполнив команду:
 
-    ```bash
+    ```console
     netplan apply
     ```
 
@@ -105,7 +105,7 @@
 
     1. Откройте файл `hosts`:
 
-        ```bash
+        ```console
         nano /etc/hosts
         ```
 
@@ -117,13 +117,13 @@
 
 1. Проверьте, что подключение к Cloud Storage устанавливается через сервисную сеть:
 
-    ```bash
+    ```console
     curl hb.ru-msk.vkcloud-storage.ru -v
     ```
 
     В ответе должна быть строка:
 
-    ```bash
+    ```console
     Connected to hb.ru-msk.vkcloud-storage.ru (198.18.0.1) port 80 (#0)
     ```
 
@@ -139,7 +139,7 @@
     - [По SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix), если публичная сеть не была отключена.
 1. Выполните команду:
 
-    ```bash
+    ```console
     aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```
 

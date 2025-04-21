@@ -38,7 +38,7 @@ Kiali — веб-интерфейс для работы с Istio. Чтобы п�
 1. [Убедитесь](../../service-management/addons/manage-addons#prosmotr_addonov), что аддон `kiali` [установлен](../../service-management/addons/advanced-installation/install-advanced-kiali) в кластере.
 1. На хосте в отдельной сессии терминала выполните команду:
 
-   ```bash
+   ```console
    kauthproxy -n istio-system https://kiali.svc
    ```
 
@@ -58,7 +58,7 @@ Kiali — веб-интерфейс для работы с Istio. Чтобы п�
 1. [Убедитесь](../../service-management/addons/manage-addons#prosmotr_addonov), что аддон `jaeger` [установлен](../../service-management/addons/advanced-installation/install-advanced-jaeger) в кластере.
 1. На хосте в отдельной сессии терминала выполните команду:
 
-   ```bash
+   ```console
    kauthproxy -n jaeger http://jaeger-query.svc
    ```
 

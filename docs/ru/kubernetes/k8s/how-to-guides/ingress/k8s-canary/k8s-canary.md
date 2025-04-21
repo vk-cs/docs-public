@@ -8,13 +8,13 @@
 
    1. Создайте новое пространство имен (namespace) для проекта:
 
-      ```bash
+      ```console
       kubectl create ns echo-production
       ```
 
    1. Создайте ресурс Kubernetes на основе манифеста, например, [http-svc](https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml):
 
-   ```bash
+   ```console
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-production
    ```
 
@@ -46,7 +46,7 @@
 
 1. Примените манифест в кластере:
 
-   ```bash
+   ```console
    kubectl apply -f http-svc.ingress -n echo-production
    ```
 
@@ -56,13 +56,13 @@
 
 1. Создайте Canary-версию пространства имен для приложения:
 
-   ```bash
+   ```console
    kubectl create ns echo-canary
    ```
 
 1. Разверните Canary-версию приложения:
 
-   ```bash
+   ```console
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-canary
    ```
 
@@ -99,7 +99,7 @@
 
 1. Примените манифест в кластере:
 
-   ```bash
+   ```console
    kubectl apply -f http-svc.ingress.canary -n echo-canary
    ```
 
@@ -129,13 +129,13 @@
 
    </details>
 
-   ```bash
+   ```console
    ruby count.rb
    ```
 
 Пример успешного результата:
 
-```bash
+```console
 {"echo-production"=>896, "echo-canary"=>104}
 ```
 

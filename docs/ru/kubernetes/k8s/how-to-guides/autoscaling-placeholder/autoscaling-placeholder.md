@@ -17,7 +17,7 @@
    
    1. В терминале с сессией подключения к кластеру выполните команду:
 
-      ```bash
+      ```console
       kubectl get nodes -o wide
       ```
       
@@ -25,7 +25,7 @@
 
    1. Получите подробное описание worker-узла. Выполните команду:
 
-      ```bash
+      ```console
       kubectl describe node <ИМЯ_WORKER-УЗЛА>
       ```
       
@@ -86,7 +86,7 @@
 1. Откройте терминал и перейдите в директорию, где вы сохранили файл `placeholder.yaml`.  
 1. Выполните команду:
 
-   ```bash
+   ```console
    kubectl apply -f placeholder.yaml
    ```
 

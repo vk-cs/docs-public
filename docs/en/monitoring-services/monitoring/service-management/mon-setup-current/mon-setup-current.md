@@ -26,7 +26,7 @@ If the **Configuring monitoring** tab is missing:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    curl \
    -H "content-type: application/json" \
    -H "X-Auth-Token: <access token X-Subject-Token>" \
@@ -39,13 +39,13 @@ If the **Configuring monitoring** tab is missing:
 
    1. Place the request body parameters into the `params` variable:
 
-      ```powershell
+      ```console
       $params = @{'instance_id' = '<virtual machine ID>'; 'os_type' = 'windows'; 'capabilities' = @('telegraf')} | convertto-json
       ```
 
    1. Check the variable is created using `echo $params`. Expected output:
 
-      ```powershell
+      ```console
       {
          "instance_id": "<virtual machine ID>",
          "capabilities":  [
@@ -57,7 +57,7 @@ If the **Configuring monitoring** tab is missing:
 
    1. Run the command:
 
-      ```powershell
+      ```console
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
       Invoke-WebRequest -Method Post -ContentType application/json `
       -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link `
@@ -77,14 +77,14 @@ If the **Configuring monitoring** tab is missing:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | sudo bash
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | iex
    ```
 

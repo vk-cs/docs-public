@@ -22,7 +22,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack floating ip list
    ```
 
@@ -58,7 +58,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack floating ip create ext-net
    ```
 
@@ -90,7 +90,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack floating ip set <floating IP ID> --description "<new description>"
    ```
 
@@ -131,7 +131,7 @@ A floating IP address is randomly assigned from a shared pool.
 1. Get the list of ports. Find in the list the port ID of the port to which you want to bind the floating IP address.
 1. Run the command:
 
-   ```bash
+   ```console
    openstack floating ip set <floating IP address ID> --port <port ID>
    ```
 
@@ -162,7 +162,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack floating ip unset <floating IP address ID> --port
    ```
 
@@ -193,7 +193,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 1. Execute the command:
 
-   ```bash
+   ```console
    openstack floating ip delete <floating IP address ID>
    ```
 

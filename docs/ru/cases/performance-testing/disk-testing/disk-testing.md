@@ -10,7 +10,7 @@
 
 1. Установите на ВМ утилиту fio:
 
-    ```bash
+    ```console
     sudo apt install fio
     ```
 
@@ -19,7 +19,7 @@
     <details>
     <summary>fio.sh</summary>
 
-    ```bash
+    ```console
     #!/bin/bash
 
     # List of values for bs

@@ -29,13 +29,13 @@
 
 1. Чтобы посмотреть список балансировщиков нагрузки и их идентификаторы, выполните команду:
 
-   ```bash
+   ```console
    openstack loadbalancer list
    ```
 
 1. Чтобы посмотреть детальную информацию о балансировщике нагрузки, выполните команду:
 
-   ```bash
+   ```console
    openstack loadbalancer show <идентификатор балансировщика>
    ```
 
@@ -49,19 +49,19 @@
 
 1. Чтобы посмотреть настройки listener-объектов и их связь с пулами, выполните команду:
 
-   ```bash
+   ```console
    openstack loadbalancer listener show <идентификатор listener-объекта>
    ```
 
 1. Чтобы посмотреть настройки пула и список участников этого пула, выполните команду:
 
-   ```bash
+   ```console
    openstack loadbalancer pool show <идентификатор пула>
    ```
 
 1. Чтобы посмотреть настройки отдельного участника из пула, выполните команду:
 
-   ```bash
+   ```console
    openstack loadbalancer member show <идентификатор пула> <идентификатор участника>
    ```
 
@@ -118,7 +118,7 @@
 
 1. Выберите [зону доступности](/ru/intro/start/concepts/architecture#az), в которой будет размещен балансировщик. Чтобы получить список зон доступности, используйте команду:
 
-   ```bash
+   ```console
    openstack availability zone list
    ```
 
@@ -126,7 +126,7 @@
 
 1. Создайте балансировщик:
 
-   ```bash
+   ```console
    openstack loadbalancer create --name <имя балансировщика> --vip-subnet-id <идентификатор подсети> --availability-zone <зона доступности>
    ```
 
@@ -181,7 +181,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack loadbalancer <идентификатор балансировщика> \
      --name <новое имя>
    ```
@@ -189,7 +189,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack loadbalancer <идентификатор балансировщика> `
      --name <новое имя>
    ```
@@ -376,7 +376,7 @@
 
 Здесь приведены только основные аргументы команд. Подробнее о командах и их аргументах читайте в справке OpenStack CLI:
 
-```bash
+```console
 openstack loadbalancer --help
 openstack loadbalancer <команда> --help
 ```
@@ -401,7 +401,7 @@ openstack loadbalancer <команда> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer pool create \
         --loadbalancer <идентификатор балансировщика> \
         --name <имя пула> \
@@ -412,7 +412,7 @@ openstack loadbalancer <команда> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer pool create `
         --loadbalancer <идентификатор балансировщика> `
         --name <имя пула> `
@@ -438,7 +438,7 @@ openstack loadbalancer <команда> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer member create <идентификатор пула> \
         --name <имя участника> \
         --address <IP-адрес виртуальной машины> \
@@ -449,7 +449,7 @@ openstack loadbalancer <команда> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer member create <идентификатор пула> `
         --name <имя участника> `
         --address <IP-адрес виртуальной машины> `
@@ -475,7 +475,7 @@ openstack loadbalancer <команда> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer healthmonitor create <идентификатор пула> \
         --name <имя healthcheck-объекта> \
         --delay <задержка, с> \
@@ -488,7 +488,7 @@ openstack loadbalancer <команда> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer healthmonitor create <идентификатор пула> `
         --name <имя healthcheck-объекта> `
         --delay <задержка, с> `
@@ -510,7 +510,7 @@ openstack loadbalancer <команда> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer listener create <идентификатор балансировщика> \
         --name <имя listener-объекта> \
         --protocol <протокол балансировки> \
@@ -521,7 +521,7 @@ openstack loadbalancer <команда> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer listener create <идентификатор балансировщика> `
         --name <имя listener-объекта> `
         --protocol <протокол балансировки> `
@@ -542,7 +542,7 @@ openstack loadbalancer <команда> --help
 
       1. Выполните команду:
 
-         ```bash
+         ```console
          openstack loadbalancer listener show <идентификатор listener-объекта>
          ```
 
@@ -550,13 +550,13 @@ openstack loadbalancer <команда> --help
 
    1. Удалите listener-объект:
 
-      ```bash
+      ```console
       openstack loadbalancer listener delete <идентификатор listener-объекта>
       ```
 
    1. Удалите пул:
 
-      ```bash
+      ```console
       openstack loadbalancer pool delete <идентификатор пула>
       ```
 
@@ -598,7 +598,7 @@ openstack loadbalancer <команда> --help
 
 1. Удалите балансировщик:
 
-   ```bash
+   ```console
    openstack loadbalancer delete <идентификатор балансировщика>
    ```
 

@@ -78,19 +78,19 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Check the Terraform configuration file for correctness:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Check out the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 

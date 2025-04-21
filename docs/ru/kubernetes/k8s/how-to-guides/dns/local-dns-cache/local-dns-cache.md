@@ -297,13 +297,13 @@ DNS-сервер будет развернут в следующей конфи�
 
 1. Создайте [под, включающий в себя утилиты для работы с DNS](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/):
 
-   ```bash
+   ```console
    kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml
    ```
 
 1. Убедитесь, что под успешно создан, выполнив команду:
 
-   ```bash
+   ```console
    kubectl get pod dnsutils
    ```
 
@@ -316,7 +316,7 @@ DNS-сервер будет развернут в следующей конфи�
 
 1. Подключитесь к bash-сессии внутри этого пода:
 
-   ```bash
+   ```console
    kubectl exec -it dnsutils -- bash
    ```
 
@@ -329,7 +329,7 @@ DNS-сервер будет развернут в следующей конфи�
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    nslookup cloud.vk.com && \
    nslookup kubernetes.default
    ```
@@ -358,7 +358,7 @@ DNS-сервер будет развернут в следующей конфи�
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    nslookup cloud.vk.com 169.254.0.10 && \
    nslookup kubernetes.default 169.254.0.10
    ```
@@ -389,7 +389,7 @@ DNS-сервер будет развернут в следующей конфи�
 
 1. Завершите bash-сессию в поде `dnsutils`:
 
-   ```bash
+   ```console
    exit
    ```
 
@@ -404,7 +404,7 @@ DNS-сервер будет развернут в следующей конфи�
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f https://k8s.io/examples/admin/dns/dnsutils.yaml
    kubectl  -f nodelocaldns.yaml
 
@@ -413,7 +413,7 @@ DNS-сервер будет развернут в следующей конфи�
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f https://k8s.io/examples/admin/dns/dnsutils.yaml; `
    kubectl  -f nodelocaldns.yaml
    ```

@@ -13,7 +13,7 @@
 
 Чтобы можно было получить доступ к логам контейнеризированных приложений в Kubernetes, docker-контейнеры должны передавать свои логи в стандартные потоки вывода (stdout) и ошибок (stderr). По умолчанию docker logging driver пишет логи в json-файл на ноде, откуда их можно получить с помощью команды:
 
-```bash
+```console
 kubectl logs pod_name
 ```
 
@@ -25,7 +25,7 @@ Docker logging driver — механизм сбора логов, встроен
 
 Когда жизненным циклом docker-контейнеров управляет оркестратор Kubernetes, поды с контейнерами часто и непредсказуемо создаются, перезагружаются и удаляются. Если это допускают настройки драйвера логирования docker, можно получить доступ к последним до перезагрузки логам пода с помощью аргумента --previous:
 
-```bash
+```console
 kubectl logs pod_name --previous
 ```
 
@@ -50,7 +50,7 @@ kubectl logs pod_name --previous
 
 1. Создайте namespace `kube-logging`:
 
-```bash
+```console
 kubectl create ns kube-logging
 ```
 
@@ -62,7 +62,7 @@ kubectl create ns kube-logging
 
 2. Узнайте `storage class`, доступные в кластере Kubernetes:
 
-```bash
+```console
 admin@k8s:~$ kubectl get sc 
 NAME            PROVISIONER            AGE
 hdd (default)   kubernetes.io/cinder   103d
@@ -73,7 +73,7 @@ ssd-retain      kubernetes.io/cinder   103d
 
 3. Установите Elasticsearch в кластер Kubernetes с заданными переменными:
 
-    ```bash
+    ```console
     helm install stable/elasticsearch \
           --name elastic \
           --set client.replicas=1 \
@@ -91,11 +91,11 @@ ssd-retain      kubernetes.io/cinder   103d
     В результате будет установлен кластер Elasticsearch, состоящий из 1 мастер-ноды, 1 ноды хранения данных и 1 ноды клиента.
 4. Убедитесь, что все поды готовы к работе:
 
-    ```bash
+    ```console
     kubectl get po -n kube-logging
     ```
 
-    ```bash
+    ```console
     NAME                                           READY   STATUS    RESTARTS   AGE
     elastic-elasticsearch-client-c74598797-9m7pm   1/1     Running  
     elastic-elasticsearch-data-0                   1/1     Running  
@@ -104,11 +104,11 @@ ssd-retain      kubernetes.io/cinder   103d
 
 5. Узнайте название сервисов в kube-logging:
 
-    ```bash
+    ```console
     kubectl get svc -n kube-logging
     ```
 
-```bash
+```console
 NAME                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
 elastic-elasticsearch-client      ClusterIP   10.233.8.213   <none>        9200/TCP   11m
 elastic-elasticsearch-discovery   ClusterIP   None           <none>        9300/TCP   11m
@@ -118,13 +118,13 @@ elastic-elasticsearch-discovery   ClusterIP   None           <none>  
 
 6. Скачайте переменные helm-чарта kibana для редактирования:
 
-```bash
+```console
 helm fetch --untar stable/kibana
 ```
 
 7. Перейдите в директорию `kibana` и отредактируйте файл `values.yaml`:
 
-```bash
+```console
 cd kibana/ && vim values.yaml
 ```
 
@@ -142,7 +142,7 @@ cd kibana/ && vim values.yaml
 
 9. Установите Kibana с модифицированными параметрами:
 
-```bash
+```console
 helm install stable/kibana \
      --name kibana \
      --namespace kube-logging \
@@ -151,19 +151,19 @@ helm install stable/kibana \
 
 10. Убедитесь, что под стартовал, и пробросьте на свою локальную машину порт 5601 пода Kibana для доступа к дашборду:
 
-```bash
+```console
 kubectl get pod -n kube-logging 
 ```
 
 Впишите в следующую команду полное имя пода для kibana, полученное из вывода предыдущей команды, вместо kibana-pod_hash_id:
 
-```bash
+```console
 kubectl port-forward --namespace kube-logging kibana-pod_hash_id 5601:5601
 ```
 
 11. В адресной строке браузера укажите строку подключения к проброшенному дашборду Kibana:
 
-```bash
+```console
 localhost:5601
 ```
 
@@ -349,7 +349,7 @@ metadata:
 
 2.  В kubernetes примените configmap:
 
-    ```bash
+    ```console
     kubectl apply -f fluentd-cm.yaml
     ```
 
@@ -398,11 +398,11 @@ metadata:
     ```
 4.  Задеплойте ресурсы в кластер:
 
-```bash
+```console
 kubectl apply -f sa-r-crb.yaml
 ```
 
-```bash
+```console
 serviceaccount/fluentd created
 clusterrole.rbac.authorization.k8s.io/fluentd created
 clusterrolebinding.rbac.authorization.k8s.io/fluentd created
@@ -431,7 +431,7 @@ clusterrolebinding.rbac.authorization.k8s.io/fluentd created
    ```
 6. Примените изменения, выполнив команду:
 
-    ```bash
+    ```console
     kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh k8spsphostfilesystem --patch-file fluent_patch.yaml --type merge
     ```
 
@@ -504,7 +504,7 @@ spec:
 
 8.  Примените манифест в kubernetes:
 
-    ```bash
+    ```console
     kubectl apply -f fluentd-daemonset.yaml
     ```
 

@@ -42,7 +42,7 @@
 
 1. (Опционально) Проверьте резолвинг имени в IP-адрес с помощью команды `nslookup site-bitrix.example.vk.cloud`. Вывод при успешной операции:
 
-   ```bash
+   ```console
    Non-authoritative answer:
    Name:   site-bitrix.example.vk.cloud
    Address: 87.239.105.191
@@ -53,7 +53,7 @@
 1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu_22_04_Bitrix`.
 1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo apt upgrade -y
    sudo systemctl reboot
@@ -61,7 +61,7 @@
 
 1. Установите необходимые пакеты для CMS Bitrix:
 
-   ```bash
+   ```console
    sudo apt install apache2 apache2-utils libapache2-mod-php php8.1 php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-intl php8.1-mbstring php8.1-mysql php8.1-opcache php8.1-readline php8.1-soap php8.1-xml php8.1-xmlrpc php8.1-zip php-gd -y
    ```
 
@@ -85,7 +85,7 @@
 
 1. Проверьте конфигурацию веб-сервера на синтаксические ошибки:
 
-   ```bash
+   ```console
    apachectl configtest
    ```
 
@@ -93,13 +93,13 @@
 
 1. Перезапустите веб-сервер с помощью команды:
 
-   ```bash
+   ```console
    sudo systemctl restart apache2
    ```
 
 1. Скачайте репозиторий CMS Bitrix редакции «Старт» с официального сайта и распакуйте его на веб-сервер:
 
-   ```bash
+   ```console
    cd ~
    wget https://www.1c-bitrix.ru/download/start_encode.tar.gz
    sudo rm -rf /var/www/html/*

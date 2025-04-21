@@ -24,7 +24,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 1. Make sure that the `psql` utility is installed. To do this, view its version:
 
-   ```bash
+   ```console
    psql --version
    ```
 
@@ -49,7 +49,7 @@ The DB instance is charged and consumes computational resources. After completin
 
    1. Connect the PostgreSQL repository:
 
-      ```bash
+      ```console
       sudo apt install curl ca-certificates gnupg
       curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
       sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -59,7 +59,7 @@ The DB instance is charged and consumes computational resources. After completin
 
    1. Install the `psql` utility:
 
-      ```bash
+      ```console
       sudo apt install -y postgresql-client
       ```
 
@@ -87,14 +87,14 @@ The DB instance is charged and consumes computational resources. After completin
          </tablist>
          <tabpanel>
 
-         ```bash
+         ```console
          sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
          </tabpanel>
          <tabpanel>
 
-         ```bash
+         ```console
          sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
@@ -105,7 +105,7 @@ The DB instance is charged and consumes computational resources. After completin
 
       1. If the executed command looked like `sudo dnf...`, then disable the built-in PostgreSQL module:
 
-         ```bash
+         ```console
          sudo dnf -qy module disable postgresql
          ```
 
@@ -118,14 +118,14 @@ The DB instance is charged and consumes computational resources. After completin
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       sudo yum install -y postgresql
       ```
 
       </tabpanel>
       <tabpanel>
 
-      ```bash
+      ```console
       sudo dnf install -y postgresql
       ```
 
@@ -261,7 +261,7 @@ The DB instance is charged and consumes computational resources. After completin
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    chmod 0600 <path/to/the/key.pem>
    ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
 
@@ -270,7 +270,7 @@ The DB instance is charged and consumes computational resources. After completin
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
    ```
 
@@ -279,7 +279,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 1. View DB instance logs:
 
-   ```bash
+   ```console
    journalctl -u postgresql
    ```
 
@@ -329,7 +329,7 @@ Connect to the `tsdb1` database via the `psql` utility:
 
 1. Execute the command:
 
-   ```bash
+   ```console
    psql -h <DB instance external IP address> -d tsdb1 -U tsuser1
    ```
 
@@ -337,7 +337,7 @@ Connect to the `tsdb1` database via the `psql` utility:
 
 If the connection is successful, the following prompt will be displayed:
 
-```bash
+```console
 tsdb1=>
 ```
 

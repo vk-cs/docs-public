@@ -13,7 +13,7 @@ To install the Harbor repositories:
 
 1. Download the online installer script and unzip it:
 
-```bash
+```console
 root@ubuntu-std3-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/download/v1.9.3/harbor-online-installer-v1.9.3.tgz
 root@ubuntu-std3-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
 ```
@@ -44,7 +44,7 @@ And:
 
 3. Run the `install.sh` script:
 
-```bash
+```console
 root@ubuntu-std3-2-4-40gb:~/harbor# ./install.sh
 
 [Step 0]: checking installation environment ...

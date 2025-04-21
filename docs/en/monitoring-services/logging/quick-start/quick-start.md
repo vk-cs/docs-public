@@ -3,7 +3,7 @@
 1. [Connect to the VM via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 1. Install [Fluent Bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu) version 2.1.9 on the VM:
 
-   ```bash
+   ```console
    curl https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
    ```
 

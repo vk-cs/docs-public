@@ -29,13 +29,13 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
    - If you know the VM name, get information about the VM and find the string with the `id`:
 
-      ```bash
+      ```console
       openstack server show <VM name>
       ```
 
    - If the exact name of the VM is unknown, output a list of virtual machines and find the necessary one in it:
 
-      ```bash
+      ```console
       openstack server list
       ```
 
@@ -85,19 +85,19 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
    - Start VM:
 
-      ```bash
+      ```console
       openstack server start <virtual machine ID>
       ```
 
    - Stop VM:
 
-      ```bash
+      ```console
       openstack server stop <virtual machine ID>
       ```
 
    - Restart VM:
 
-      ```bash
+      ```console
       openstack server reboot <virtual machine ID>
       ```
 
@@ -147,7 +147,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 2. Force a VM reboot:
 
-   ```bash
+   ```console
    openstack server reboot --hard <virtual machine ID>
    ```
 
@@ -212,7 +212,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
       2. Run the command:
 
-         ```bash
+         ```console
          openstack server show <virtual machine ID> --os-compute-api-version 2.42
          ```
 
@@ -260,7 +260,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
    2. Delete the VM:
 
-      ```bash
+      ```console
       openstack server delete <virtual machine ID>
       ```
 
@@ -314,7 +314,7 @@ If the VM type changes, the VM will be rebooted.
 
    - Rename VM:
 
-      ```bash
+      ```console
       openstack server set --name <new name> <virtual machine ID>
       ```
 
@@ -322,13 +322,13 @@ If the VM type changes, the VM will be rebooted.
 
       1. Get a list of available configuration templates and copy the template ID:
 
-         ```bash
+         ```console
          openstack flavor list --all
          ```
 
       2. Start changing the VM type and wait for the process to finish:
 
-         ```bash
+         ```console
          openstack server resize --flavor <flavor ID> <virtual machine ID>
          ```
 
@@ -364,25 +364,25 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
    - Output a list of VM tags:
 
-      ```bash
+      ```console
       nova server-tag-list <virtual machine ID>
       ```
 
    - Assign a VM tag:
 
-      ```bash
+      ```console
       nova server-tag-add <virtual machine ID> <tag>
       ```
 
    - Delete a tag from a VM:
 
-      ```bash
+      ```console
       nova server-tag-delete <virtual machine ID> <tag>
       ```
 
    - Delete all tags from a VM:
 
-      ```bash
+      ```console
       nova server-tag-delete-all <virtual machine ID>
       ```
 
@@ -439,7 +439,7 @@ Command to check the status of the QEMU guest agent:
 
 <tabpanel>
 
-```bash
+```console
 sc query qemu-ga
 ```
 
@@ -447,7 +447,7 @@ sc query qemu-ga
 
 <tabpanel>
 
-```bash
+```console
 systemctl status qemu-guest-agent
 ```
 
@@ -491,7 +491,7 @@ systemctl status qemu-guest-agent
 
 2. Set a password:
 
-   ```bash
+   ```console
    openstack server set --root-password <virtual machine ID>
    ```
 
@@ -555,7 +555,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
 
    - If the public key file is lost, go to the directory with the private key file and run the command:
 
-      ```bash
+      ```console
       ssh-keygen -y -f <filename with the private key> > <filename with the public key>
       ```
 
@@ -578,13 +578,13 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
    4. Use the default username and password to sign in to the VM OS.
    5. Download the file with the public key:
 
-      ```bash
+      ```console
       wget <link to a file with a public key>
       ```
 
    6. Copy the public key to the file `authorized_keys`:
 
-      ```bash
+      ```console
       cat <file with a public key> >> ~/.ssh/authorized_keys
       ```
 
@@ -593,7 +593,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
    1. Go to the terminal of the computer where the private key is stored.
    2. Connect to the VM via SSH:
 
-      ```bash
+      ```console
       ssh -i <the path to the file with the private key> <login>@<external IP address of the VM>
       ```
 
@@ -615,19 +615,19 @@ The event log contains information about changes in the VM state and user action
 
    - View the event log (extended format):
 
-      ```bash
+      ```console
       openstack server event list --long <virtual machine ID>
       ```
 
    - View the event log (short format):
 
-      ```bash
+      ```console
       openstack server event list <virtual machine ID>
       ```
 
    - Use the event ID from the **Request ID** column to display detailed information about the event:
 
-      ```bash
+      ```console
       openstack server event show <virtual machine ID> <event ID>
       ```
 

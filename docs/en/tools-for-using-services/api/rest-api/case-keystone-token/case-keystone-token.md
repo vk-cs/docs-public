@@ -39,7 +39,7 @@ Get a token:
 
 1. Execute the command:
 
-    ```bash
+    ```console
     openstack token issue -c id -f value
     ```
 
@@ -61,7 +61,7 @@ Get a token:
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     curl -X POST \
     -H "Content-Type: application/json" \
     -d '{
@@ -115,7 +115,7 @@ The token value will be output in the `x-subject-token` parameter.
 </tablist>
 <tabpanel>
 
-```bash
+```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 27038  100 26470  100   568  99259   2129 --:--:-- --:--:-- --:--:-- 99138
@@ -124,7 +124,7 @@ x-subject-token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbM
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   230    0     0  100   230      0    920 --:--:-- --:--:-- --:--:--   923FINDSTR: Слишком длинная строка 12.

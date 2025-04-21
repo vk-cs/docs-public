@@ -115,7 +115,7 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
 1. [Install](https://www.postgresql.org/ftp/odbc/versions/) ODBC driver.
 1. Connect to the database:
 
-   ```bash
+   ```console
    Driver={PostgreSQL UNICODE}; Server="<IP-ADDRESS>"; Port=5432; Database="<DATABASE>"; Uid="<USERNAME>"; Pwd="<PASSWORD>";
    ```
 
@@ -257,7 +257,7 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
 1. [Install](https://dev.mysql.com/downloads/connector/odbc/) ODBC driver.
 1. Connect to the database:
 
-   ```bash
+   ```console
    DRIVER={MySQL ODBC 5.3 UNICODE Driver}; Server="<IP-ADDRESS>"; Port=<PORT>; Database="<DATABASE>"; Uid="<USERNAME>"; Pwd="<PASSWORD>";
    ```
 
@@ -357,7 +357,7 @@ Read more about connecting to Tarantool in Python in [documentation](https://www
 1. [Install](https://www.tarantool.io/en/download/os-installation/) Tarantool.
 1. Connect to the database:
 
-   ```bash
+   ```console
    tarantoolctl connect <USERNAME>:<PASSWORD>@<IP-ADDRESS>
    ```
 
@@ -534,7 +534,7 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
 1. [Install](https://github.com/ClickHouse/clickhouse-odbc) ODBC driver for ClickHouse.
 1. Connect to the database:
 
-   ```bash
+   ```console
    Driver={PATH_OF_CLICKHOUSE_ODBC_SO}; Server="<IP-ADDRESS>"; Port=<PORT>; Database="<DATABASE>"; Uid="<USERNAME>"; Pwd="<PASSWORD>";
    ```
 

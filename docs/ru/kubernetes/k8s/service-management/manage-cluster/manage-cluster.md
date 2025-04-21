@@ -74,7 +74,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform state show vkcs_kubernetes_cluster.<имя ресурса кластера в файле конфигурации Terraform>
    ```
 

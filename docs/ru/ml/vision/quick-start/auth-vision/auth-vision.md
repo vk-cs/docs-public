@@ -21,7 +21,7 @@
    - **OAuth Секретный ключ**: ключ, который необходимо передать в `client_secret` параметре запроса.
 4. Сгенерируйте токены:
 
-   ```bash
+   ```console
    curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
    --header 'Content-Type: application/json' \
    --data '{
@@ -46,7 +46,7 @@
 
 Чтобы сгенерировать новый токен доступа с помощью токена обновления, выполните команду:
 
-```bash
+```console
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{

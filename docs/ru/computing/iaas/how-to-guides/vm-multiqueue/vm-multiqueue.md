@@ -30,14 +30,14 @@ VK Cloud поддерживает множества очередей (multiqueu
 1. [Создайте](../../service-management/images/images-manage) образ ВМ.
 1. Получите список доступных образов:
 
-    ```bash
+    ```console
     openstack image list
     ```
 
 1. Скопируйте ID нужного образа.
 1. Включите множества очередей:
 
-    ```bash
+    ```console
     openstack image set <IMG_ID> --property hw_vif_multiqueue_enabled=true
     ```
 
@@ -58,14 +58,14 @@ VK Cloud поддерживает множества очередей (multiqueu
 1. [Создайте](../../service-management/vm/vm-create) ВМ, в которой больше одного ЦП, и [подключитесь](../../service-management/vm/vm-connect) к ней.
 1. Посмотрите все сетевые интерфейсы:
 
-    ```bash
+    ```console
     sudo ip link show
     ```
 
     <details>
      <summary>Пример вывода</summary>
 
-    ```bash
+    ```console
     ubuntu@dm-test:~$ sudo ip link show
     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
         link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -80,14 +80,14 @@ VK Cloud поддерживает множества очередей (multiqueu
 
 1. Посмотрите текущее количество очередей:
 
-    ```bash
+    ```console
     ethtool -l <имя_сетевого_интерфейса>
     ```
 
    <details>
      <summary>Пример вывода</summary>
 
-   ```bash
+   ```console
     ubuntu@dm-test:~$ ethtool -l ens3
     Channel parameters for ens3:
     Pre-set maximums:
@@ -115,19 +115,19 @@ VK Cloud поддерживает множества очередей (multiqueu
 1. [Создайте](../../service-management/vm/vm-create) ВМ и [подключитесь](../../service-management/vm/vm-connect) к ней.
 1. Выполните команду:
 
-    ```bash
+    ```console
     sudo ethtool -L <имя_сетевого_интерфейса> combined <число_очередей>
     ```
 1. Проверьте новое количество очередей (параметр `Combined`):
 
-    ```bash
+    ```console
     ethtool -l <имя_сетевого_интерфейса>
     ```
 
 <details>
   <summary>Пример установки очередей</summary>
 
-```bash
+```console
 ubuntu@dm-test:~$ sudo ethtool -L ens3 combined 2
 ubuntu@dm-test:~$ ethtool -l ens3
 Channel parameters for ens3:

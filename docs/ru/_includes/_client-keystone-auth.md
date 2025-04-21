@@ -7,7 +7,7 @@
 
 1. В PowerShell выполните команду:
 
-   ```powershell
+   ```console
    iex (New-Object System.Net.WebClient).DownloadString( `
    'https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/windows/client-install.ps1' `
    )
@@ -27,7 +27,7 @@
 
 1. В терминале выполните команду:
 
-   ```bash
+   ```console
    curl -sSL \
      https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/linux/client-install.sh \
    | bash

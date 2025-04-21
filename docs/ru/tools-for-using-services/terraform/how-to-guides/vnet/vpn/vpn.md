@@ -137,9 +137,9 @@ resource "vkcs_vpnaas_site_connection" "connection" {
 
 Добавьте обе части примера в файл `vpn.tf` и выполните следующие команды:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

@@ -51,7 +51,7 @@ Two options for VM configuration will be considered: without additional settings
 
    Using OpenStack CLI:
 
-   ```bash
+   ```console
    openstack flavor list
    ```
    </tabpanel>
@@ -75,7 +75,7 @@ Two options for VM configuration will be considered: without additional settings
 
       1. Run the command:
 
-        ```bash
+        ```console
         openstack keypair list
         ```
 
@@ -356,13 +356,13 @@ The parameters for connecting to the Cloud Monitoring service are described in t
 
 1. Run the command:
 
-    ```bash
+    ```console
     terraform init
     ```
 
 1. Run the command:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -383,7 +383,7 @@ To connect, use:
 
 If the example worked successfully, the console will show typical Ubuntu output:
 
-```bash
+```console
 Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-46-generic x86_64)
 
 * Documentation: https://help.ubuntu.com
@@ -407,7 +407,7 @@ Some of the objects created in this scenario consume resources. If you no longer
 
 1. Run the command:
 
-    ```bash
+    ```console
     terraform destroy
     ```
 

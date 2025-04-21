@@ -9,7 +9,7 @@ ADFS certificates have an expiration date, once it expires, users will not be ab
 1. Copy the downloaded file to the computer with ADFS.
 1. Run PowerShell as administrator and run the command:
 
-    ```bash
+    ```console
     Update-ADFSRelyingPartyTrust -TargetName "<RELYING_PARTY_TRUST_NAME>" -MetadataFile <PATH_TO_METADATA_XML>
     ```
 
@@ -45,7 +45,7 @@ ADFS certificates have an expiration date, once it expires, users will not be ab
 
 1. (Optional) Check the settings for the interval between metadata checks for ADFS by running the PowerShell command:
 
-    ```bash
+    ```console
     Get-ADFSProperties | select MonitoringInterval
     ```
 
@@ -53,7 +53,7 @@ ADFS certificates have an expiration date, once it expires, users will not be ab
 
 1. (Optional) Change the check interval by running the PowerShell command:
 
-    ```bash
+    ```console
     Set-AdfsProperties -MonitoringInterval <MINUTES>
     ```
 

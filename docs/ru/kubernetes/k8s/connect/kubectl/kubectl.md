@@ -32,25 +32,25 @@
 
       Пример команды для загрузки утилиты `kubectl`, совместимой с кластером версии 1.23.6:
 
-      ```bash
+      ```console
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/linux/amd64/kubectl
       ```
 
    1. Сделайте двоичный файл `kubectl` исполняемым:
 
-      ```bash
+      ```console
       sudo chmod +x ./kubectl
       ```
 
    1. Поместите этот файл в директорию, которая содержится в переменной окружения `PATH`, например, в `/usr/local/bin`:
 
-      ```bash
+      ```console
       sudo mv ./kubectl /usr/local/bin/kubectl
       ```
 
    1. Проверьте версию `kubectl`, выполнив команду:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -59,7 +59,7 @@
 
    1. Подключите репозиторий Kubernetes:
 
-      ```bash
+      ```console
       sudo apt-get update && sudo apt-get install -y apt-transport-https
       curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
       echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
@@ -71,7 +71,7 @@
 
       Пример команды для установки утилиты `kubectl`, совместимой с кластером версии 1.23.6:
 
-      ```bash
+      ```console
       sudo apt-get install -y kubectl=1.23.6-00
       ```
 
@@ -83,7 +83,7 @@
 
    1. Проверьте версию `kubectl`, выполнив команду:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -92,7 +92,7 @@
 
    1. Подключите репозиторий Kubernetes:
 
-      ```bash
+      ```console
       cat << EOF > /etc/yum.repos.d/kubernetes.repo
       [kubernetes]
       name=Kubernetes
@@ -108,7 +108,7 @@
 
       Пример команды для установки утилиты `kubectl`, совместимой с кластером версии 1.23.6:
 
-      ```bash
+      ```console
       yum install -y kubectl-1.23.6-0
       ```
 
@@ -120,7 +120,7 @@
 
    1. Проверьте версию `kubectl`, выполнив команду:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -131,25 +131,25 @@
 
       Пример команды для загрузки утилиты `kubectl`, совместимой с кластером версии 1.23.6:
 
-      ```bash
+      ```console
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/darwin/amd64/kubectl
       ```
 
    1. Сделайте двоичный файл `kubectl` исполняемым:
 
-      ```bash
+      ```console
       sudo chmod +x ./kubectl
       ```
 
    1. Поместите этот файл в директорию, которая содержится в переменной окружения `PATH`, например, в `/usr/local/bin`:
 
-      ```bash
+      ```console
       sudo mv ./kubectl /usr/local/bin/kubectl
       ```
 
    1. Проверьте версию `kubectl`, выполнив команду:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -158,19 +158,19 @@
 
    1. Выполните одну из команд установки:
 
-      ```bash
+      ```console
       brew install kubectl
       ```
 
       Или:
 
-      ```bash
+      ```console
       brew install kubernetes-cli
       ```
 
    1. Проверьте версию `kubectl`, выполнив команду:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -181,7 +181,7 @@
 
       Пример команды для загрузки утилиты `kubectl`, совместимой с кластером версии 1.23.6:
 
-      ```powershell
+      ```console
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe
       ```
 
@@ -201,7 +201,7 @@
 
    1. Проверьте версию `kubectl`, выполнив команду:
 
-      ```powershell
+      ```console
       kubectl version --short
       ```
 
@@ -234,7 +234,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    kubectl cluster-info
    ```
 
@@ -247,7 +247,7 @@
 
 Выполните команду на хосте:
 
-```bash
+```console
 kubectl cluster-info
 ```
 

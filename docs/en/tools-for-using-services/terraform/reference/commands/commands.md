@@ -13,6 +13,6 @@ Before using the commands, switch to the working directory that contains the `.t
 
 In cases where commands are used in automation scripts, for convenience, the `-chdir=` option is used to change the working directory before applying the command:
 
-```bash
+```console
 terraform -chdir=terraform/configuration apply
 ```

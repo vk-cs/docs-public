@@ -11,13 +11,13 @@ VK Cloud поддерживает изменение фактора реплик
 1. [Подключитесь к master-узлу](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) с Floating IP-адресом с помощью SSH.
 1. (Опционально) Уточните текущее число копий:
 
-   ```bash
+   ```console
    hdfs dfs -stat
    ```
 
    Пример вывода команды:
 
-   ```bash
+   ```console
    hdfs fsck /user/admin/data.csv
    /user/admin/data.csv:  Under replicated BP-1014754436-192.168.99.119-1532095262675:blk_1073743175_2396. Target Replicas is 3 but found 1 live replica(s), 0 decommissioned replica(s) and 0 decommissioning replica(s).
    Status: HEALTHY
@@ -42,7 +42,7 @@ VK Cloud поддерживает изменение фактора реплик
 
 1. Измените фактор репликации для отдельного файла с помощью команды:
 
-   ```bash
+   ```console
    hdfs dfs -setrep 3 <путь к файлу>
    ```
 

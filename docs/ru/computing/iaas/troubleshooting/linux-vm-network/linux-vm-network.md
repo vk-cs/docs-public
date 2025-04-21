@@ -69,7 +69,7 @@
 
 2. Выполните команду:
 
-    ```bash
+    ```console
     ip link show
     ```
 
@@ -94,7 +94,7 @@
 
 3.  Выполните команду, подставив в нее полученное на предыдущем шаге имя интерфейса:
 
-    ```bash
+    ```console
     ip address show ens3
     ```
 
@@ -117,7 +117,7 @@
 
 4. Выполните команду:
 
-    ```bash
+    ```console
     ip route show default
     ```
 
@@ -174,7 +174,7 @@
 
     1. Выполните команду:
 
-        ```bash
+        ```console
         sudo netplan apply
         ```
 
@@ -203,7 +203,7 @@
 
     1. Перезапустите сетевое соединение, выполнив команду:
 
-        ```bash
+        ```console
         sudo systemctl restart networking
         ```
 
@@ -240,7 +240,7 @@
 
     1. Перезапустите сетевое соединение, выполнив команду:
 
-        ```bash
+        ```console
         sudo nmcli con up "System eth0"
         ```
 
@@ -271,13 +271,13 @@
 
     1. Примените настройки DNS-серверов:
 
-       ```bash
+       ```console
        sudo netconfig update
        ```
 
     1. Перезапустите сетевое соединение, выполнив команду:
 
-        ```bash
+        ```console
         sudo systemctl restart network
         ```
 
@@ -286,7 +286,7 @@
 
 6. Запретите вносить автоматические изменения в отредактированный конфигурационный файл:
 
-    ```bash
+    ```console
     echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
     ```
 
@@ -302,7 +302,7 @@
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     sudo systemctl status ssh
     ```
 
@@ -322,7 +322,7 @@
 
     1. Определите, на каком порте работает сервис SSH:
 
-       ```bash
+       ```console
        sudo cat /etc/ssh/sshd_config | grep -w Port
        ```
 
@@ -336,7 +336,7 @@
 
     1. Подключитесь, используя номер нестандартного порта. Например, если сервис SSH работает на порте `222`:
 
-        ```bash
+        ```console
         ssh -i /path/to/private_key_file username@192.0.2.22 -p 222
         ```
 
@@ -347,7 +347,7 @@
 
     1. Определите, на каком порте работает сервис SSH:
 
-        ```bash
+        ```console
         sudo cat /etc/ssh/sshd_config | grep -w Port
         ```
 
@@ -359,7 +359,7 @@
 
     1. Убедитесь, что другие процессы не используют этот порт. Просмотрите логи сервиса SSH:
 
-        ```bash
+        ```console
         sudo journalctl -xeu ssh
         ```
 
@@ -382,14 +382,14 @@
             </tablist>
             <tabpanel>
 
-            ```bash
+            ```console
             sudo apt install net-tools -y
             ```
 
             </tabpanel>
             <tabpanel>
 
-            ```bash
+            ```console
             sudo yum install net-tools -y
             ```
 
@@ -398,7 +398,7 @@
 
         1. Выполните команду:
 
-            ```bash
+            ```console
             sudo netstat -plntu | grep :22
             ```
 
@@ -413,13 +413,13 @@
 
         - либо с помощью `systemctl`:
 
-            ```bash
+            ```console
             sudo systemctl stop some-other-service
             ```
 
         - либо принудительно завершив работу процесса:
 
-            ```bash
+            ```console
             sudo kill 1234
             ```
 
@@ -427,19 +427,19 @@
 
     1. Перезапустите сервис:
 
-        ```bash
+        ```console
         sudo systemctl restart some-other-service
         ```
 
     1. Перезапустите сервис SSH:
 
-        ```bash
+        ```console
         sudo systemctl restart sshd
         ```
 
     1. Убедитесь, что сервис SSH успешно запущен:
 
-        ```bash
+        ```console
         sudo systemctl status sshd
         ```
 
@@ -452,7 +452,7 @@
         Если сервис SSH не запускается, проверьте настройки сервиса в конфигурационном файле `/etc/ssh/sshd_config`.
         Для получения дополнительной информации о проблемах в работе сервиса посмотрите логи:
 
-        ```bash
+        ```console
         sudo journalctl -xeu ssh
         ```
 
@@ -487,14 +487,14 @@
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo ufw disable
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo systemctl stop firewalld
     ```
 
@@ -503,13 +503,13 @@
 
     1. Сохраните существующие правила `iptables`:
 
-        ```bash
+        ```console
         sudo iptables-save | sudo tee ~/iptables.rules
         ```
 
     1. Выполните команды:
 
-        ```bash
+        ```console
         sudo iptables -P INPUT ACCEPT
         sudo iptables -P FORWARD ACCEPT
         sudo iptables -P OUTPUT ACCEPT
@@ -543,21 +543,21 @@
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo ufw enable
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo systemctl start firewalld
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo iptables-restore < ~/iptables.rules
     ```
 

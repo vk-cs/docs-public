@@ -93,7 +93,7 @@
    * `<OPERATING_SYSTEM>` — ОС компьютера. Чтобы определить значение, выполните команду `terraform --version`. В выводе команды отображается текущая версия Terraform и ОС с архитектурой.
 
       {caption(Пример ответа)[align=left;position=above]}
-      ```bash
+      ```console
       Terraform v1.5.4
       on linux_amd64
       ```

@@ -36,10 +36,10 @@ resource "vkcs_blockstorage_volume" "volume" {
 
 Добавьте текст примера в файл `volume.tf` и выполните следующие команды:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```
 
@@ -71,9 +71,9 @@ resource "vkcs_blockstorage_snapshot" "snapshot" {
 
 Добавьте текст примера в файл `snapshot.tf` и выполните следующие команды:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

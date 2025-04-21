@@ -73,7 +73,7 @@ Different information is available for running and stopped clusters. Terraform a
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform state show vkcs_kubernetes_cluster.<cluster resource name in the Terraform configuration file>
    ```
 

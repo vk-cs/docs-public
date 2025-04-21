@@ -19,7 +19,7 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack keypair show <название ключевой пары>
    ```
 
@@ -54,7 +54,7 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack keypair create
    ```
 
@@ -90,7 +90,7 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack keypair create --public-key <путь к файлу публичного ключа> <имя ключевой пары>
    ```
 
@@ -129,7 +129,7 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack keypair delete <имя ключевой пары>
    ```
 

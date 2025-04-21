@@ -38,13 +38,13 @@ Ingress-контроллер можно развернуть  [в связке �
 
 1. Примените этот манифест в кластере:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe.yaml
    ```
 
 Для проверки состояния компонентов приложений выполните команду:
 
-```bash
+```console
 kubectl get svc,rs,deployment -n default
 ```
 
@@ -75,7 +75,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
    helm repo update
 
@@ -84,7 +84,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
@@ -101,7 +101,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress \
     --create-namespace --namespace example-nginx-ingress-http \
     --set controller.service.type=NodePort \
@@ -113,7 +113,7 @@ deployment.apps/tea      3/3     3            3           ...
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress `
     --create-namespace --namespace example-nginx-ingress-http `
     --set controller.service.type=NodePort `
@@ -128,7 +128,7 @@ deployment.apps/tea      3/3     3            3           ...
 
    Для проверки состояния Ingress-контроллера выполните команду:
 
-   ```bash
+   ```console
    kubectl get svc -n example-nginx-ingress-http
    ```
 
@@ -324,7 +324,7 @@ HTTP-балансировщик нагрузки будет терминиров
 
 1. Примените этот манифест в кластере:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
@@ -332,13 +332,13 @@ HTTP-балансировщик нагрузки будет терминиров
 
 1. Проверьте, что ресурс успешно создался, выполнив команду:
 
-   ```bash
+   ```console
    kubectl describe ingress cafe-ingress
    ```
 
    Вывод команды должен быть похож на этот:
 
-   ```bash
+   ```console
    Name:             cafe-ingress-http
    Labels:           <none>
    Namespace:        default
@@ -357,7 +357,7 @@ HTTP-балансировщик нагрузки будет терминиров
 
 1. Проверьте, что поды с именами `tea` и `coffee` существуют, получив список всех подов в пространстве имен `default`:
 
-   ```bash
+   ```console
    kubectl get pods
    ```
 
@@ -370,7 +370,7 @@ HTTP-балансировщик нагрузки будет терминиров
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<публичный IP-адрес HTTP-балансировщика> https://cafe.example.com/coffee
    ```
 
@@ -392,7 +392,7 @@ HTTP-балансировщик нагрузки будет терминиров
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<публичный IP-адрес HTTP-балансировщика> https://cafe.example.com/tea
    ```
 
@@ -431,7 +431,7 @@ HTTP-балансировщик нагрузки будет терминиров
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f ./cafe-ingress.yaml
    kubectl delete -f ./cafe.yaml
    helm uninstall nginx-ingress-http -n example-nginx-ingress-http
@@ -442,7 +442,7 @@ HTTP-балансировщик нагрузки будет терминиров
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f ./cafe-ingress.yaml; `
    kubectl delete -f ./cafe.yaml; `
    helm uninstall nginx-ingress-http -n example-nginx-ingress-http; `

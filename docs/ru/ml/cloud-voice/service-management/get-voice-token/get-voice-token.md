@@ -16,7 +16,7 @@
 
 Пример запроса для генерации токена:
 
-```bash
+```console
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -48,7 +48,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 Пример запроса на обновление токена:
 
-```bash
+```console
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{

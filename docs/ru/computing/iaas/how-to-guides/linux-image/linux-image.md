@@ -18,7 +18,7 @@
    1. Установите на ВМ пакет `cloud-init`, как описано в [официальной документации Arch Linux](https://wiki.archlinux.org/title/Cloud-init).
    1. Включите автозапуск `cloud-init`, выполнив команду:
 
-      ```bash
+      ```console
       systemctl enable cloud-init
       ```
    1. (Опционально) Отредактируйте настройки в конфигурационном файле `/etc/cloud/cloud.cfg`.
@@ -27,13 +27,13 @@
 
    1. Установите пакет `qemu-guest-agent`:
 
-      ```bash
+      ```console
       apt-get install qemu-guest-agent
       ```
 
    1. Включите автозапуск ` qemu-guest-agent `, выполнив команду:
 
-      ```bash
+      ```console
       systemctl enable qemu-guest-agent
       ```
 
@@ -48,7 +48,7 @@
     ```
 1. Очистите ВМ от ненужных артефактов, последовательно выполнив команды:
 
-    ```bash
+    ```console
     rm /etc/udev/rules.d/*
     rm -rf /var/lib/cloud/*
     rm -rf /tmp/*
@@ -64,7 +64,7 @@
 
 1. Сделайте копию жесткого диска локальной ВМ:
 
-    ```bash
+    ```console
     dd if=/dev/sda of=~/Arch.raw bs=64K conv=noerror,sync status=progress
     ```
 
@@ -73,7 +73,7 @@
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) на локальную ВМ клиент OpenStack и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в вашем проекте VK Cloud.
 1. Загрузите образ `Arch.raw` в VK Cloud под именем `Arch`:
 
-    ```bash
+    ```console
     openstack image create \
         --progress \
         --private \

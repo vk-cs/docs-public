@@ -60,13 +60,13 @@
 
 1. Получите список портов инстанса, выполнив команду:
 
-   ```bash
+   ```console
    openstack port list --server <ID сервера>
    ```
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack port set --dns-name <DNS-имя> <ID порта>
    ```
 
