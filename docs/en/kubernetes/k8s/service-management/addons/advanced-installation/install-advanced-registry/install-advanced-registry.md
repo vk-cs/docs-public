@@ -40,7 +40,7 @@
 
    Write down the output of the command (in the format `<login>:<encrypted password>`).
 
-1. [Add](/en/networks/vnet/service-management/floating-ip#adding_floating_ip_address_to_the_project) floating IP or [find](/en/networks/vnet/service-management/floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
+1. [Add](/en/networks/vnet/service-management/ip/floating-ip#adding_floating_ip_address_to_the_project) floating IP or [find](/en/networks/vnet/service-management/ip/floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
 
    Write down this IP address. It will be used to access the Docker registry.
 

@@ -102,4 +102,4 @@ After going through all the steps of the Quick start, you will:
 Cluster usage is [charged](../tariffication) and consumes computing resources. If you no longer need it:
 
 1. [Delete](../service-management/delete) the cluster.
-1. If necessary, [remove the floating IP address](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) assigned to the cluster nodes.
+1. If necessary, [remove the floating IP address](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) assigned to the cluster nodes.

@@ -2515,7 +2515,7 @@
   },
   {
     "source": "/ru/networks/vnet/networks/fip",
-    "destination": "/ru/networks/vnet/service-management/floating-ip",
+    "destination": "/ru/networks/vnet/service-management/ip/floating-ip",
     "permanent": false,
     "locale": false
   },
@@ -4699,7 +4699,7 @@
   },
   {
     "source": "/en/networks/vnet/networks/fip",
-    "destination": "/en/networks/vnet/service-management/floating-ip",
+    "destination": "/en/networks/vnet/service-management/ip/floating-ip",
     "permanent": false,
     "locale": false
   },
@@ -19645,7 +19645,7 @@
   },
   {
     "source": "/en/networks/vnet/operations/manage-floating-ip",
-    "destination": "/en/networks/vnet/service-management/floating-ip",
+    "destination": "/en/networks/vnet/service-management/ip/floating-ip",
     "permanent": false,
     "locale": false
   },
@@ -19741,7 +19741,7 @@
   },
   {
     "source": "/ru/networks/vnet/operations/manage-floating-ip",
-    "destination": "/ru/networks/vnet/service-management/floating-ip",
+    "destination": "/ru/networks/vnet/service-management/ip/floating-ip",
     "permanent": false,
     "locale": false
   },
@@ -22963,7 +22963,7 @@
   },
   {
     "source": "/en/networks/vnet/operations/floating-ip",
-    "destination": "/en/networks/vnet/service-management/floating-ip",
+    "destination": "/en/networks/vnet/service-management/ip/floating-ip",
     "permanent": false,
     "locale": false
   },
@@ -23155,7 +23155,7 @@
   },
   {
     "source": "/ru/networks/vnet/operations/floating-ip",
-    "destination": "/ru/networks/vnet/service-management/floating-ip",
+    "destination": "/ru/networks/vnet/service-management/ip/floating-ip",
     "permanent": false,
     "locale": false
   },

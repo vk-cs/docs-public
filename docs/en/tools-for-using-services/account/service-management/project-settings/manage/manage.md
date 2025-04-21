@@ -114,7 +114,7 @@ Currently, transferring PaaS service objects between projects is not supported. 
 By contacting [technical support](mailto:support@mcs.mail.ru), it is possible to transfer objects:
 
 - floating IP addresses;
-- addresses of the [external networks](/en/networks/vnet/concepts/net-types#external_network).
+- addresses of the [external networks](/en/networks/vnet/concepts/net-types#external_net).
 
 ## Viewing project quotas
 

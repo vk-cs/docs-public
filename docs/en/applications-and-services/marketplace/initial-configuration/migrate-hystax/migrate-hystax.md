@@ -208,4 +208,4 @@ Running VMs consume computing resources. If you don't need them anymore:
 
 - Delete `Ubuntu-MR` VM, added to Hystax Acura [personal account](https://migration.mcs-cloud.ru).
 - Delete (detach) the backup infrastructure `VK-Cloud-infra` via Hystax Acura [personal account](https://migration.mcs-cloud.ru).
-- [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during migration.
+- [Delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during migration.

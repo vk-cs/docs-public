@@ -138,7 +138,7 @@ Events that the service of [computing resource management](/en/computing/iaas/se
 |A security group rule has been deleted
 
 |`create-floating-ip`
-|A [Floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) has been created
+|A [Floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating-ip) has been created
 
 |`delete-floating-ip`
 |A Floating IP address has been deleted
