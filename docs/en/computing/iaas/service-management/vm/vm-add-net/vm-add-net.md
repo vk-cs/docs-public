@@ -47,31 +47,31 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 1. Get the ID of the virtual machine that you plan to connect to the network:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 1. Get a list of networks and their subnets:
 
-   ```bash
+   ```console
    openstack network list
    ```
 
 1. Get a list of available ports on the required network:
 
-   ```bash
+   ```console
    openstack port list --network <network name or ID>
    ```
 
 1. Attach the selected port to the VM:
 
-   ```bash
+   ```console
    openstack server add port <virtual machine ID> <port ID>
    ```
 
 1. Make sure that the port is successfully connected to the VM:
 
-   ```bash
+   ```console
    openstack port list --server <virtual machine ID>
    ```
 
@@ -79,19 +79,19 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 1. Get a list of networks and their subnets:
 
-   ```bash
+   ```console
    openstack network list
    ```
 
 1. Get a list of IP addresses for the subnet you plan to connect to:
 
-   ```bash
+   ```console
    openstack subnet list --network <network name or ID>
    ```
 
 1. Get a list of security groups:
 
-   ```bash
+   ```console
    openstack security group list
    ```
 
@@ -99,13 +99,13 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
    - In the right network and with the `default` security group:
 
-      ```bash
+      ```console
       openstack port create <port name> --network <network name or ID>
       ```
 
    - With parameters specified:
 
-      ```bash
+      ```console
       openstack port create <port name> \
                             --network <network name or ID> \
                             --fixed-ip subnet=<subnet name or ID>,ip-address=<port IP address> \
@@ -114,7 +114,7 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
       To view the full list of supported parameters, run the command:
 
-      ```bash
+      ```console
       openstack port create --help
       ```
 
@@ -126,19 +126,19 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 1. Get the ID of the virtual machine that you plan to connect to the network:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 1. Attach the created port to the VM:
 
-   ```bash
+   ```console
    openstack server add port <virtual machine ID> <port ID>
    ```
 
 1. Make sure that the port is successfully connected to the VM:
 
-   ```bash
+   ```console
    openstack port list --server <virtual machine ID>
    ```
 
@@ -172,19 +172,19 @@ The network connection to the VM will be deleted, but the previously created por
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 2. Get the VM ID:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Get a list of ports from the VM:
 
-   ```bash
+   ```console
    openstack port list --server <virtual machine ID>
    ```
 
 4. Delete the unnecessary port:
 
-   ```bash
+   ```console
    openstack port delete <port name or ID>
    ```
 

@@ -24,7 +24,7 @@ See the [Terraform provider documentation](https://github.com/vk-cs/terraform-pr
 
      1. Run the command:
 
-        ```bash
+        ```console
         terraform apply -refresh-only
         ```
 

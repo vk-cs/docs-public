@@ -36,7 +36,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    1. Run the command:
 
-      ```bash
+      ```console
       openstack flavor list
       ```
 
@@ -58,7 +58,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    1. Run the command:
 
-      ```bash
+      ```console
       terraform refresh
       ```
 
@@ -229,19 +229,19 @@ This operation is described in detail in [Worker node group management](../../ma
 
 1. Check the Terraform configuration file for correctness:
 
-   ```bash
+   ```console
    terraform validate
    ```
 
 1. Familiarize yourself with the planned changes:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Apply the planned changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 

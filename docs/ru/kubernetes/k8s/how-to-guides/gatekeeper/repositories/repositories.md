@@ -190,7 +190,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete pod allowed-pod
    kubectl delete k8sallowedrepos.constraints.gatekeeper.sh/require-docker-hub
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8sallowedrepos
@@ -200,7 +200,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete pod allowed-pod; `
    kubectl delete k8sallowedrepos.constraints.gatekeeper.sh/require-docker-hub; `
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8sallowedrepos

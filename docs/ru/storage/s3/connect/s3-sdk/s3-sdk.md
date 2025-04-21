@@ -52,7 +52,7 @@
      </tablist>
      <tabpanel>
 
-     ```bash
+     ```console
      export AWS_ACCESS_KEY_ID=<идентификатор ключа аккаунта>
      export AWS_SECRET_ACCESS_KEY=<секретный ключ аккаунта>
      export AWS_DEFAULT_REGION=<имя региона по умолчанию>
@@ -61,7 +61,7 @@
      </tabpanel>
      <tabpanel>
 
-     ```bash
+     ```console
      $Env:AWS_ACCESS_KEY_ID="<идентификатор ключа аккаунта>"
      $Env:AWS_SECRET_ACCESS_KEY="<секретный ключ аккаунта>"
      $Env:AWS_DEFAULT_REGION="<имя региона по умолчанию>"

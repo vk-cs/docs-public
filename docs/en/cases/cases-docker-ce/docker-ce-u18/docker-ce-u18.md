@@ -17,7 +17,7 @@ Make sure that:
 
 1. Install the packages that are required for the further installation process:
 
-   ```bash
+   ```console
    sudo apt update && \
    sudo apt install -y \
      apt-transport-https \
@@ -28,13 +28,13 @@ Make sure that:
 
 1. Add the Docker repository's GPG key to the keyring:
 
-   ```bash
+   ```console
    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
    ```
 
 1. Make sure that the GPG key was successfully added:
 
-   ```bash
+   ```console
    apt-key list
    ```
 
@@ -58,19 +58,19 @@ Make sure that:
 
 1. Add the Docker repository:
 
-   ```bash
+   ```console
    sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
 
 1. Update the repository:
 
-   ```bash
+   ```console
    sudo apt update
    ```
 
 1. Make sure that the repository was successfully added:
 
-   ```bash
+   ```console
    apt-cache policy docker-ce
    ```
 
@@ -103,7 +103,7 @@ Make sure that:
 
 1. Install Docker CE:
 
-   ```bash
+   ```console
    sudo apt install docker-ce -y
    ```
 
@@ -115,7 +115,7 @@ Make sure that:
 
 1. Make sure that Docker CE is installed and running:
 
-   ```bash
+   ```console
    sudo systemctl status docker --no-pager -l
    ```
 
@@ -150,7 +150,7 @@ Make sure that:
 
 1. Get general information about the installed Docker CE:
 
-   ```bash
+   ```console
    sudo docker info
    ```
 
@@ -216,7 +216,7 @@ Make sure that:
 
 1. Run the `hello-world` test container:
 
-   ```bash
+   ```console
    sudo docker run --rm hello-world
    ```
 

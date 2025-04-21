@@ -67,7 +67,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
    1. Make sure that Java version 11 or higher is installed on the host:
 
-      ```bash
+      ```console
       java --version
       ```
 
@@ -75,25 +75,25 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
      Example of installing OpenJDK 11 (JRE only) using `apt` for Ubuntu 22.04 LTS:
 
-      ```bash
+      ```console
       sudo apt update && sudo apt install openjdk-11-jre
       ```
 
    1. [Download the archive](https://archive.apache.org/dist/kafka/3.5.0/kafka_2.13-3.5.0.tgz) with the Kafka distribution version 3.5.0. The Kafka versions for the service instance and on the host must match. Example of a command to download a distribution using cURL:
 
-      ```bash
+      ```console
       curl -O https://archive.apache.org/dist/kafka/3.5.0/kafka_2.13-3.5.0.tgz
       ```
 
    1. Unzip the archive and go to the directory with the unpacked files:
 
-      ```bash
+      ```console
       tar -xzf kafka_2.13-3.5.0.tgz && cd kafka_2.13-3.5.0
       ```
 
    1. Get the version of the producer console client and the consumer console client:
 
-      ```bash
+      ```console
       bin/kafka-console-producer.sh --version
       bin/kafka-console-consumer.sh --version
       ```
@@ -141,7 +141,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
    To do this, run the command:
 
-   ```bash
+   ```console
    bin/kafka-console-consumer.sh \
      --bootstrap-server kafka-bootstrap.example.com:9093 \
      --consumer.config client-ssl.properties \
@@ -153,7 +153,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
    To do this, run the command:
 
-   ```bash
+   ```console
    bin/kafka-console-producer.sh \
      --broker-list kafka-bootstrap.example.com:9093 \
      --producer.config client-ssl.properties

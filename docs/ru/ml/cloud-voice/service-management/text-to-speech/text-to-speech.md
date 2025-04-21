@@ -13,7 +13,7 @@
 
 Пример запроса:
 
-```bash
+```console
 curl -L --request GET \
     --url 'https://voice.mcs.mail.ru/tts?text=<текст для озвучивания>' \
     --output <имя файла>
@@ -27,7 +27,7 @@ curl -L --request GET \
 
 Пример запроса:
 
-```bash
+```console
 curl -L --request POST \
   --url 'https://voice.mcs.mail.ru/tts?encoder=mp3' \
   --header 'Authorization: Bearer <токен доступа>' \
@@ -70,7 +70,7 @@ curl -L --request POST \
 
 Пример конвертации PCM в WAV:
 
-```bash
+```console
 ffmpeg -f s16be -ar 24k -ac 1 -i test_sound7.pcm test_sound7.wav
 ```
 

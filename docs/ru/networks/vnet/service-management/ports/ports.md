@@ -35,7 +35,7 @@
 
 1. Чтобы посмотреть список всех портов, выполните команду:
 
-   ```bash
+   ```console
    openstack port list
    ```
 
@@ -43,33 +43,33 @@
 
    1. Выполните команду для получения идентификаторов и имен подсетей:
 
-      ```bash
+      ```console
       openstack subnet list
       ```
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       openstack port list --fixed-ip subnet=<имя или идентификатор подсети>
       ```
 
 1. Чтобы посмотреть подробную информацию о порте, выполните команду, подставив идентификатор или имя порта, полученные ранее:
 
-   ```bash
+   ```console
    openstack port show <идентификатор или имя порта>
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь одной из команд:
 
-```bash
+```console
 openstack port list --help
 ```
 
-```bash
+```console
 openstack subnet list --help
 ```
 
-```bash
+```console
 openstack port show --help
 ```
 
@@ -106,13 +106,13 @@ openstack port show --help
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack port create <имя порта> --network <имя или идентификатор сети> --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<IP-адрес порта>
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
 
-```bash
+```console
 openstack port create --help
 ```
 
@@ -159,13 +159,13 @@ openstack port create --help
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack port set <имя или идентификатор порта> --enable
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
 
-```bash
+```console
 openstack port set --help
 ```
 
@@ -212,13 +212,13 @@ openstack port set --help
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack port set <имя или идентификатор порта> --disable
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
 
-```bash
+```console
 openstack port set --help
 ```
 
@@ -259,25 +259,25 @@ openstack port set --help
 
    - Имя порта:
 
-     ```bash
+     ```console
      openstack port set <имя или идентификатор порта> --name <новое имя>
      ```
 
    - DNS-имя порта:
 
-     ```bash
+     ```console
      openstack port set <имя или идентификатор порта> --dns-name <новое доменное имя>
      ```
 
    - IP-адрес порта:
 
-     ```bash
+     ```console
      openstack port set <имя или идентификатор порта> --no-fixed-ip --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<новый IP-адрес порта>
      ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
 
-```bash
+```console
 openstack port set --help
 ```
 
@@ -300,7 +300,7 @@ openstack port set --help
 
 1. Чтобы добавить один IP-адрес источника, выполните команду:
 
-   ```bash
+   ```console
    openstack port set <имя или идентификатор порта> --allowed-address ip-address=<IP-адрес>
    ```
 
@@ -308,7 +308,7 @@ openstack port set --help
 
 1. Чтобы удалить один IP-адрес источника, выполните команду:
 
-   ```bash
+   ```console
    openstack port unset <имя или идентификатор порта> --allowed-address ip-address=<IP-адрес>,mac-address=<mac-address>
    ```
 
@@ -316,11 +316,11 @@ openstack port set --help
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь одной из команд:
 
-```bash
+```console
 openstack port set --help
 ```
 
-```bash
+```console
 openstack subnet unset --help
 ```
 
@@ -371,13 +371,13 @@ openstack subnet unset --help
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack port delete <имя или идентификатор порта>
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
 
-```bash
+```console
 openstack port delete --help
 ```
 

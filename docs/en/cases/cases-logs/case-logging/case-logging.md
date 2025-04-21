@@ -25,45 +25,45 @@ The ELK stack consists of three components:
 1. Login to the Ubuntu server as root.
 2. Import the Elasticsearch repository key:
 
-```bash
+```console
 root@ubuntu-std1-1:~# wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt key add -
 OK
 ```
 
 3. Install apt-transport-https:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install apt-transport-https
 ```
 
 4. Add a repository:
 
-```bash
+```console
 root@ubuntu-std1-1:~# echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 deb https://artifacts.elastic.co/packages/7.x/apt stable main
 ```
 
 5. Install Elasticsearch:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get update && apt-get install elasticsearch
 ```
 
 6. Install Kibana:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install kibana
 ```
 
 7. Install OpenJDK for Logstash to work:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install openjdk-8-jre
 ```
 
 8. Install Logstash:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install logstash
 
 ```
@@ -110,13 +110,13 @@ Customize:
 
 Start elasticsearch:
 
-```bash
+```console
 root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 ```
 
 If you specify too large a Heap Size value, the launch will fail. In this case, the following will be in the logs:
 
-```bash
+```console
 root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 Job for elasticsearch.service failed because the control process exited with error code.
 See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
@@ -132,7 +132,7 @@ Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # /var/log/elasticsearch/hs_
 ```
 
 If successful, add Elasticsearch to the list of processes to start automatically:
-```bash
+```console
 root@ubuntu-std1-1:~# systemctl enable elasticsearch.service
 Synchronizing state of elasticsearch.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable elasticsearch
@@ -141,7 +141,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/elasticsearch.servic
 
 Verify that Elasticsearch is responding:
 
-```bash
+```console
 root@ubuntu-std1-1:~# curl http://localhost:9200
 {
 "name" : "ubuntu-std1-1",
@@ -168,13 +168,13 @@ By default, the Kibana configuration file /etc/kibana/kibana.yml contains all th
 
 1. Start Kibana:
 
-```bash
+```console
 root@ubuntu-std1-1:/etc/kibana# systemctl start kibana.service
 ```
 
 2. Add Kibana to the list of applications that start automatically:
 
-```bash
+```console
 root@ubuntu-std1-1:/etc/kibana# systemctl enable kibana.service
 Synchronizing state of kibana.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable kibana
@@ -197,13 +197,13 @@ Consider the most popular first method.
 
 1. Install Nginx:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install nginx
 ```
 
 2. Make sure that in the configuration file /etc/elasticsearch/elasticsearch.yml the network.host parameter is set to 127.0.0.1 or localhost. If necessary, make this configuration and restart the elasticsearch daemon:
 
-```bash
+```console
 root@ubuntu-std1-1:~# cat /etc/elasticsearch/elasticsearch.yml | grep network.host
 network.host: 127.0.0.1
 root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
@@ -211,7 +211,7 @@ root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
 
 3. Make sure that the server.host parameter in the configuration file /etc/kibana/kibana.yml is set to 127.0.0.1 or localhost. If necessary, make this configuration and restart the kibana daemon:
 
-```bash
+```console
 root@ubuntu-std1-1:~# cat /etc/kibana/kibana.yml | grep server.host
 server.host: "127.0.0.1"
 # When this setting's value is true Kibana uses the hostname specified in the server.host
@@ -220,7 +220,7 @@ root@ubuntu-std1-1:~# systemctl restart kibana.service
 
 4. Make sure Elasticsearh and Kibana are using interface 127.0.0.1:
 
-```bash
+```console
 root@ubuntu-std1-1:~# netstat -tulpn | grep9200
 tcp6 0 0 127.0.0.1:9200 :::\* LISTEN 10512/java
 root@ubuntu-std1-1:~# netstat -tulpn | grep 5601
@@ -251,19 +251,19 @@ proxy_set_header Host $http_host;
 
 6. Specify the username (USER) and password (PASSWORD):
 
-```bash
+```console
 root@ubuntu-std1-1:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
 ```
 
 7. To enable the site, create a symlink to the `/etc/nginx/sites-enabled` directory:
 
-```bash
+```console
 root@ubuntu-std1-1:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf
 ```
 
 8. Start Nginx:
 
-```bash
+```console
 root@ubuntu-std1-1:~# systemctl start nginx
 ```
 
@@ -294,13 +294,13 @@ The most common agent is Filebeat, we use it to collect Nginx logs.
 
 1. Install Filebeat:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install filebeat
 ```
 
 2. Allow Nginx log processing:
 
-```bash
+```console
 root@ubuntu-std1-1:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebeat/modules.d/nginx.yml
 ```
 
@@ -381,7 +381,7 @@ hosts: ["<logstash server IP address>:5044"]
 
 6. Make sure there are no errors in the configuration file:
 
-```bash
+```console
 root@ubuntu-std1-1:/etc/filebeat# filebeat test config -c /etc/filebeat/filebeat.yml
 config OK
 ```
@@ -466,7 +466,7 @@ For the same reason, you don't need to use the %{COMBINEDAPACHELOG} macro in the
 
 To track errors in Logstash, enable debugging. To do this, add the following line to the output section:
 
-```bash
+```console
 stdout { codec => rubydebug }
 ```
 
@@ -474,7 +474,7 @@ As a result, the output to the Elasticsearch database will be duplicated by the 
 
 4. Launch Logstash and add it to the list of applications to start automatically:
 
-```bash
+```console
 root@ubuntu-std1-1:~# systemctl start logstash
 root@ubuntu-std1-1:~# systemctl enable logstash
 Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service → /etc/systemd/system/logstash.service.
@@ -482,14 +482,14 @@ Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service →
 
 5. Make sure the service has started:
 
-```bash
+```console
 root@ubuntu-std1-1:~# netstat -tulpn | grep5044
 tcp6 0 0 :::5044 :::\* LISTEN 18857/java
 ```
 
 6. Test Filebeat:
 
-```bash
+```console
 root@ubuntu-std1-1:~# service filebeat start
 ```
 

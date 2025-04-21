@@ -46,7 +46,7 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 1. Скачайте и установите клиент Remmina:
 
-   ```bash
+   ```console
    sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
    sudo apt-get update
    sudo apt-get install remmina remmina-plugin-rdp libfreerdp-plugins-standard

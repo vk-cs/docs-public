@@ -19,7 +19,7 @@ The separation is intentional to show the possibility of using different tables 
 
 You can install Fluent Bit with the configuration file with the following commands:
 
-```bash
+```console
 helm repo add fluent https://fluent.github.io/helm-charts
 helm install fluent-bit fluent/fluent-bit --values ​​values.yaml
 ```

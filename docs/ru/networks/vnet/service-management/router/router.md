@@ -29,13 +29,13 @@
 
 1. Чтобы посмотреть список маршрутизаторов и их идентификаторы, выполните команду:
 
-   ```bash
+   ```console
    openstack router list
    ```
 
 1. Чтобы посмотреть детальную информацию о маршрутизаторе, выполните команду:
 
-   ```bash
+   ```console
    openstack router show <идентификатор маршрутизатора>
    ```
 
@@ -92,14 +92,14 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack router create <имя маршрутизатора> --external-gateway ext-net
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack router create <имя маршрутизатора>
    ```
 
@@ -159,7 +159,7 @@
 
    - Измените имя маршрутизатора:
 
-     ```bash
+     ```console
      openstack router set <идентификатор маршрутизатора> --name <новое имя>
      ```
 
@@ -172,14 +172,14 @@
      </tablist>
      <tabpanel>
 
-     ```bash
+     ```console
      openstack router set <идентификатор маршрутизатора> --external-gateway ext-net
      ```
 
      </tabpanel>
      <tabpanel>
 
-     ```bash
+     ```console
      openstack router unset <идентификатор маршрутизатора> --external-gateway
      ```
 
@@ -200,7 +200,7 @@
      1. Получите идентификатор нужной подсети.
      1. Выполните команду:
 
-        ```bash
+        ```console
         openstack router add subnet <идентификатор маршрутизатора> <идентификатор подсети>
         ```
 
@@ -212,7 +212,7 @@
      </tabpanel>
      <tabpanel>
 
-     ```bash
+     ```console
      openstack router remove subnet <идентификатор маршрутизатора> <идентификатор подсети>
      ```
 
@@ -285,7 +285,7 @@
    1. [Получите идентификатор порта OpenStack](../ports#prosmotr_spiska_portov_i_informacii_o_nih), находящегося в подсети, которую нужно подключить к маршрутизатору. Этот порт не должен использоваться никакими объектами (балансировщиками нагрузки, виртуальными машинами и т. д.) Если такого порта нет, [создайте его](../ports#dobavlenie_porta).
    1. Выполните команду:
 
-      ```bash
+      ```console
       openstack router add port <идентификатор маршрутизатора> <идентификатор порта>
       ```
 
@@ -305,7 +305,7 @@
    1. [Посмотрите интерфейсы (порты)](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih), настроенные на маршрутизаторе.
    1. Выполните команду:
 
-      ```bash
+      ```console
       openstack router remove port <идентификатор маршрутизатора> <идентификатор порта>
       ```
 
@@ -352,7 +352,7 @@
 
 1. Чтобы добавить статический маршрут, выполните команду:
 
-   ```bash
+   ```console
    openstack router set <идентификатор маршрутизатора> --route destination=<сеть назначения с префиксом>,gateway=<адрес next hop>
    ```
 
@@ -361,13 +361,13 @@
    1. [Посмотрите статические маршруты](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih), настроенные на маршрутизаторе.
    1. Выполните команду:
 
-      ```bash
+      ```console
       openstack router unset <идентификатор маршрутизатора> --route destination=<сеть назначения с префиксом>,gateway=<адрес next hop>
       ```
 
 1. Чтобы удалить все статические маршруты, выполните команду:
 
-   ```bash
+   ```console
    openstack router set <идентификатор маршрутизатора> --no-route
    ```
 
@@ -416,7 +416,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack router delete <идентификатор маршрутизатора>
    ```
 

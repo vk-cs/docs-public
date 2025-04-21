@@ -17,7 +17,7 @@
 
 1. Установите пакеты, необходимые для дальнейшей установки:
 
-   ```bash
+   ```console
    sudo apt update && \
    sudo apt install -y \
      apt-transport-https \
@@ -28,13 +28,13 @@
 
 1. Добавьте GPG-ключ репозитория Docker в хранилище ключей:
 
-   ```bash
+   ```console
    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
    ```
 
 1. Убедитесь, что GPG-ключ был добавлен успешно:
 
-   ```bash
+   ```console
    apt-key list
    ```
 
@@ -58,18 +58,18 @@
 
 1. Подключите репозиторий Docker:
 
-   ```bash
+   ```console
    sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
 1. Обновите репозиторий:
 
-   ```bash
+   ```console
    sudo apt update
    ```
 
 1. Убедитесь, что репозиторий был подключен успешно:
 
-   ```bash
+   ```console
    apt-cache policy docker-ce
    ```
 
@@ -102,7 +102,7 @@
 
 1. Установите Docker CE:
 
-   ```bash
+   ```console
    sudo apt install docker-ce -y
    ```
 
@@ -114,7 +114,7 @@
 
 1. Убедитесь, что Docker CE установлен и запущен:
 
-   ```bash
+   ```console
    sudo systemctl status docker --no-pager -l
    ```
 
@@ -149,7 +149,7 @@
 
 1. Посмотрите общую информацию об установленном Docker CE:
 
-   ```bash
+   ```console
    sudo docker info
    ```
 
@@ -215,7 +215,7 @@
 
 1. Запустите тестовый контейнер `hello-world`:
 
-   ```bash
+   ```console
    sudo docker run --rm hello-world
    ```
 

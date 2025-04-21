@@ -10,7 +10,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    systemctl -l status telegraf
    ```
 
@@ -30,7 +30,7 @@
   </tablist>
   <tabpanel>
 
-  ```bash
+  ```console
   sudo systemctl start telegraf
   ```
 
@@ -45,7 +45,7 @@
   </tablist>
   <tabpanel>
 
-  ```bash
+  ```console
   sudo systemctl stop telegraf
   ```
 
@@ -77,7 +77,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo systemctl reload telegraf.service
    ```
 
@@ -106,7 +106,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo systemctl reload telegraf.service
    ```
 
@@ -125,7 +125,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    journalctl -u telegraf
    ```
 
@@ -147,28 +147,28 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo yum erase telegraf
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo dnf remove telegraf
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo apt-get remove telegraf
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo apt remove telegraf
    ```
 

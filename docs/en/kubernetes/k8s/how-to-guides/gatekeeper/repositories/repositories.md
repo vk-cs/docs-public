@@ -23,7 +23,7 @@ To demostrate how Gatekeeper works several objects will be created:
 
    1. Create a constraint template based on the template manifest:
 
-      ```bash
+      ```console
       kubectl apply -f template.yaml
       ```
 
@@ -178,7 +178,7 @@ To demostrate how Gatekeeper works several objects will be created:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete pod allowed-pod
    kubectl delete k8sallowedrepos.constraints.gatekeeper.sh/require-docker-hub
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8sallowedrepos
@@ -188,7 +188,7 @@ To demostrate how Gatekeeper works several objects will be created:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete pod allowed-pod; `
    kubectl delete k8sallowedrepos.constraints.gatekeeper.sh/require-docker-hub; `
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8sallowedrepos

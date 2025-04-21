@@ -42,7 +42,7 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 
 1. (Optional) Check the name resolution to the IP address using the command `nslookup site-opencart.example.vk.cloud`. Output upon successful operation:
 
-   ```bash
+   ```console
    Non-authoritative answer:
    Name:   site-opencart.example.vk.cloud
    Address: 87.239.106.48
@@ -53,21 +53,21 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Ubuntu_22_04_OpenCart` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo systemctl reboot
    ```
 
 1. Download the necessary repositories and start the web server:
 
-   ```bash
+   ```console
    sudo apt install apache2 apache2-utils libapache2-mod-php php8.1 php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-intl php8.1-mbstring php8.1-mysql php8.1-opcache php8.1-readline php8.1-soap php8.1-xml php8.1-xmlrpc php8.1-zip php-gd -y
    sudo systemctl enable apache2 --now
    ```
 
 1. Download the OpenCart repository and deploy it in the `opencart` subdirectory on the running web server:
 
-   ```bash
+   ```console
    cd ~
    wget https://github.com/opencart/opencart/archive/refs/tags/4.0.2.3.tar.gz
    tar xzf 4.0.2.3.tar.gz
@@ -96,19 +96,19 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 
    1. Delete the `install` directory from the web server:
 
-      ```bash
+      ```console
       sudo rm -rf /var/www/html/opencart/install
       ```
 
    1. Move the `storage` directory to `/var/www`:
 
-      ```bash
+      ```console
       sudo mv /var/www/html/opencart/system/storage/ /var/www
       ```
 
    1. At configuration files `/var/www/html/opencart/config.php` and `/var/www/html/opencart/admin/config.php` replace:
 
-      ```bash
+      ```console
       // source string
       define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 

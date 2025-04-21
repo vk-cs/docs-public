@@ -29,20 +29,20 @@ To run a script:
 1. Login to the Docker node as root.
 2. Install packages:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
 3. Add the Docker repository key:
 
-```bash
+```console
 root@ubuntu-std1-1:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt key add-
 OK
 ```
 
 4. Add the Docker repository:
 
-```bash
+```console
 root@ubuntu-std1-1:~# add-apt-repository \
 > "deb [arch=amd64] https://download.docker.com/linux/ubuntu\
 > $(lsb_release -cs) \
@@ -51,13 +51,13 @@ root@ubuntu-std1-1:~# add-apt-repository \
 
 5. Install Docker:
 
-```bash
+```console
 root@ubuntu-std1-1:~# apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
 6. Initialize the cluster:
 
-```bash
+```console
 root@ubuntu-std1-1:~# docker swarm init
 ```
 
@@ -171,7 +171,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 
 3. Run containers:
 
-```bash
+```console
 root@ubuntu-std1-1:~# docker stack deploy -c /root/wordpress/docker-compose.yml blog
 Creating network blog_backend
 Creating network blog_frontend
@@ -182,7 +182,7 @@ Creating service blog_db
 
 4. Make sure everything started successfully:
 
-```bash
+```console
 root@ubuntu-std1-1:~# docker service ls
 ID . NAME . . . . . MODE . . . REPLICAS .
 12jo1tmdr8ni 1/1 mysql:5.7
@@ -208,13 +208,13 @@ The Fluentd version being used is td-agent 3.5.1-0.
 
 1. Install fluentd:
 
-```bash
+```console
 root@ubuntu-std1-1:~# curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent3.sh | sh
 ```
 
 2. Add fluentd to startup:
 
-```bash
+```console
 root@ubuntu-std1-1:~# systemctl enable td-agent
 Synchronizing state of td-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable td-agent

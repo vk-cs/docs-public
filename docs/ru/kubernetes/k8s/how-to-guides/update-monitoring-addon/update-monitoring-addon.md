@@ -51,14 +51,14 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
@@ -88,7 +88,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export CHART_NAME="kube-prometheus-stack"
    export NAMESPACE="prometheus-monitoring"
 
@@ -97,7 +97,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $CHART_NAME="kube-prometheus-stack"
    $NAMESPACE="prometheus-monitoring"
    ```
@@ -107,7 +107,7 @@
 
 1. Получите информацию о используемых аддоном [Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)](../../reference/pvs-and-pvcs). Они используются для хранения собираемых метрик, а также других данных, необходимых для работы аддона.
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE get pvc
    ```
 
@@ -148,7 +148,7 @@
    <details>
    <summary>prepare-for-addon-update.sh</summary>
 
-   ```bash
+   ```console
    #!/bin/sh
 
    set -e
@@ -294,13 +294,13 @@
 
 1. Сделайте файл с кодом скрипта исполняемым:
 
-   ```bash
+   ```console
    chmod +x prepare-for-addon-update.sh
    ```
 
 1. Определите, с какими параметрами будет выполнен скрипт:
 
-   ```bash
+   ```console
    bash prepare-for-addon-update.sh -h
    ```
 
@@ -340,7 +340,7 @@
 
    Выполните команду, указав нужные параметры. Если вас устраивает значение параметра по умолчанию, то параметр можно опустить.
 
-   ```bash
+   ```console
      bash prepare-for-addon-update.sh \
        -k <путь к файлу kubeconfig> \
        -c <название контекста kubeconfig> \
@@ -402,7 +402,7 @@
 
 1. Получите список PVs, которые используются аддоном через PVCs в пространстве имен аддона:
 
-   ```bash
+   ```console
    kubectl get pv -o jsonpath='{range .items[?(@.spec.claimRef.namespace=="'"${NAMESPACE}"'")]}{.metadata.name}{"\n"}{end}'
    ```
 
@@ -412,13 +412,13 @@
 
    Эта команда патчит отдельный PV. Выполните ее для всех PVs из списка.
 
-   ```bash
+   ```console
    kubectl patch pv <имя PV> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
    ```
 
 1. Получите список всех PVs в кластере и убедитесь, что те PVs, с которыми работает аддон, используют политику освобождения `Retain` и связаны с PVC (`Bound`):
 
-   ```bash
+   ```console
    kubectl get pv
    ```
 
@@ -436,13 +436,13 @@
 
 1. Удалите Helm-чарт (chart) текущей версии аддона. Это необходимо для того, чтобы успешно удалить наборы PVCs и CRDs, которые используются аддоном.
 
-   ```bash
+   ```console
    helm uninstall -n $NAMESPACE $CHART_NAME --wait --timeout 600s
    ```
 
 1. Получите список PVCs, которые использовались аддоном:
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE get pvc
    ```
 
@@ -452,7 +452,7 @@
 
    Эта команда удаляет отдельный PVC. Выполните ее для всех PVCs из списка.
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE delete pvc <имя PVC>
    ```
 
@@ -460,13 +460,13 @@
 
    Эта команда патчит отдельный PV. Выполните ее для всех PVs из списка, полученного ранее.
 
-   ```bash
+   ```console
    kubectl patch pv <имя PV> --type json -p '[{"op": "remove", "path": "/spec/claimRef"}]'
    ```
 
 1. Получите список всех PVs в кластере и убедитесь, что те PVs, с которыми работал аддон, используют политику освобождения `Retain` и доступны для связывания (`Available`):
 
-   ```bash
+   ```console
    kubectl get pv
    ```
 
@@ -484,7 +484,7 @@
 
 1. Получите список CRDs, с которыми работал аддон:
 
-   ```bash
+   ```console
    kubectl get crd -o jsonpath='{range .items[?(@.spec.group=="monitoring.coreos.com")]}{.metadata.name}{"\n"}{end}'
    ```
 
@@ -492,13 +492,13 @@
 
    Эта команда удаляет отдельный CRD. Выполните ее для всех CRDs из списка, полученного ранее.
 
-   ```bash
+   ```console
    kubectl delete crd <имя CRD>
    ```
 
 1. Удалите пространство имен, в котором был установлен аддон.
 
-   ```bash
+   ```console
    kubectl delete ns $NAMESPACE
    ```
 
@@ -608,7 +608,7 @@
 
 1. Получите информацию о используемых аддоном [Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)](../../reference/pvs-and-pvcs):
 
-   ```bash
+   ```console
    kubectl -n $NAMESPACE get pvc
    ```
 

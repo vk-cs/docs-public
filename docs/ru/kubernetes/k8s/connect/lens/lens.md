@@ -50,7 +50,7 @@
       </tablist>
       <tabpanel>
    
-      ```bash
+      ```console
       $env:OS_PASSWORD = "<ПАРОЛЬ>"
       ```
    
@@ -59,7 +59,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```bash
+      ```console
       export OS_PASSWORD=<ПАРОЛЬ>
       ```
 
@@ -94,7 +94,7 @@
       1. Откройте файл `~/.bashrc`.
       1. Добавьте в файл строку:
       
-         ```bash
+         ```console
          export OS_PASSWORD=<ПАРОЛЬ> 
          ```
 
@@ -108,7 +108,7 @@
       1. Откройте файл `.bashrc` или `.zshrc`.
       1. Добавьте в файл строку:
 
-         ```bash
+         ```console
          export OS_PASSWORD=<ПАРОЛЬ> 
          ```
 

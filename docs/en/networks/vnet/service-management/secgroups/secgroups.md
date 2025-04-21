@@ -26,19 +26,19 @@ A page with detailed information about it will open.
 
 1. To view the list of security groups, run the command:
 
-```bash
+```console
 open stack security group list
 ```
 
 1. To view detailed information about a security group, run the command:
 
-```bash
+```console
 openstack security group show <security group ID>
 ```
 
 1. To view security group rules:
 
-```bash
+```console
 openstack security group rule list --long <security group ID>
 ```
 
@@ -75,19 +75,19 @@ A security group ID is displayed in not all platform services. Create groups wit
 
 1. View the security groups in the project:
 
-```bash
+```console
 open stack security group list
 ```
 
 1. Get information about the security group:
 
-```bash
+```console
 openstack security group show <group ID>
 ```
 
 1. Create a security group:
 
-```bash
+```console
 openstack security group create --description <group description> <new group name>
 ```
 
@@ -123,7 +123,7 @@ Edit the name and (if necessary) the name of the security group.
 
 1. To change the description and name of a security group, run the command:
 
-```bash
+```console
 openstack security group set --description <description> --name <name> <group ID>
 ```
 
@@ -187,13 +187,13 @@ A security group rule is a set of parameters that define the conditions for traf
 
 1. View the list of group rules:
 
-```bash
+```console
 openstack security group rule list --long <group ID>
 ```
 
 1. Create a rule:
 
-```bash
+```console
 openstack security group rule create <arguments> <security group ID>
 ```
 
@@ -236,13 +236,13 @@ Available arguments for the rule creation command:
 
 1. To view detailed information for a rule, run the command:
 
-```bash
+```console
 openstack security group rule show <rule ID>
 ```
 
 1. To delete a rule, run the command:
 
-```bash
+```console
 openstack security group rule delete <rule ID>
 ```
 
@@ -275,7 +275,7 @@ To apply a rule set to a virtual machine, the security group that contains the r
 
 1. Run the command:
 
-```bash
+```console
 openstack server add security group <instance ID> <security group ID>
 ```
 
@@ -306,7 +306,7 @@ openstack server add security group <instance ID> <security group ID>
 
 1. Run the command:
 
-```bash
+```console
 openstack server remove security group <instance ID> <security group ID>
 ```
 
@@ -342,7 +342,7 @@ This is a group operation: if necessary, you can delete several security groups 
 
 1. Run the command:
 
-```bash
+```console
 openstack security group delete <security group ID>
 ```
 

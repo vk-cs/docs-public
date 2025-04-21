@@ -185,7 +185,7 @@ variable "db_user_password" {
 
 - Создайте файл `secret.tfvars`, запишите в него `db_user_password="YOUR_DB_PASSWORD"` и передайте его в качестве аргумента в команду `terraform apply`:
 
-   ```bash
+   ```console
    terraform apply -var-file="secret.tfvars"
    ```
 
@@ -201,20 +201,20 @@ variable "db_user_password" {
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export TF_VAR_db_user_password=YOUR_DB_PASSWORD
    ```
    </tabpanel>
    <tabpanel>
 
-    ```bash
+    ```console
     set TF_VAR_db_user_password=YOUR_DB_PASSWORD
     ```
 
    </tabpanel>
    <tabpanel>
 
-    ```bash
+    ```console
     $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
     ```
 
@@ -317,7 +317,7 @@ resource "vkcs_db_user" "db-user" {
 1. Перейдите в эту директорию.
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform init
     ```
 
@@ -325,7 +325,7 @@ resource "vkcs_db_user" "db-user" {
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -350,7 +350,7 @@ resource "vkcs_db_user" "db-user" {
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform destroy
     ```
 

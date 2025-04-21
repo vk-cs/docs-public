@@ -28,7 +28,7 @@
 
 1. Перезапустите Apache с помощью команды:
 
-    ```bash
+    ```console
     sudo systemctl restart httpd
     ```
 
@@ -36,13 +36,13 @@
 
     1. Восстановите SELinux-контекст безопасности для папки `/var/www/html/`, чтобы Apache имел доступ к новым конфигурациям. Для этого выполните команду:
 
-        ```bash
+        ```console
         sudo restorecon -Rv /var/www/html/
         ```
 
     1. Разрешите демону HTTPD устанавливать внешние сетевые подключения и обращаться к домашним директориям пользователей. Для этого выполните команды:
 
-        ```bash
+        ```console
         sudo setsebool -P httpd_can_network_connect 1
         sudo setsebool -P httpd_enable_homedirs 1
         ```
@@ -51,13 +51,13 @@
 
     1. Установите пакет `Certbot` для автоматического получения сертификатов от Let’s Encrypt, выполнив команду:
 
-        ```bash
+        ```console
         sudo dnf install certbot python3-certbot-apache
         ```
 
     1. Запустите `Certbot` и следуйте инструкциям для автоматической установки SSL-сертификата на новый домен:
 
-        ```bash
+        ```console
         sudo certbot --apache -d new-domain.com -d www.new-domain.com
         ```
 
@@ -65,13 +65,13 @@
 
     1. После установки SSL-сертификата включите его автоматическую проверку и обновление, выполнив команду:
   
-        ```bash
+        ```console
         sudo systemctl enable certbot-renew.timer
         ```
 
     1. Перезапустите Apache с помощью команды:
 
-        ```bash
+        ```console
         sudo systemctl restart httpd
         ```
 
@@ -98,7 +98,7 @@
 
 1. Замените все ссылки на старый домен новыми в контенте и настройках базы данных, выполнив команды:
 
-    ```bash
+    ```console
     cd /var/www/html
     wp search-replace 'http://old-domain.com' 'https://new-domain.com' --allow-root
     ```

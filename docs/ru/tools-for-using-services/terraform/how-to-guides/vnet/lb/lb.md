@@ -170,9 +170,9 @@ resource "vkcs_lb_member" "member_2" {
 
 Добавьте обе части примера в файл `lb.tf` и выполните следующие команды:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

@@ -13,7 +13,7 @@ Log rotation is the process of processing, cleaning, archiving, and sending logs
 
 To access the logs of containerized applications in Kubernetes, Docker containers must transfer their logs to standard output streams (stdout) and errors (stderr). By default, Docker logging driver writes logs to a JSON file on the node, from where they can be obtained using the command:
 
-```bash
+```console
 kubectl logs pod_name
 ```
 
@@ -25,7 +25,7 @@ Docker logging driver is a log collection mechanism built into the Docker engine
 
 When the Kubernetes orchestrator manages the lifecycle of Docker containers, pods with containers are often and unpredictably created, reloaded and deleted. If the settings of the Docker logging driver allow this, you can access the last logs of the pod before the reboot using the --previous argument:
 
-```bash
+```console
 kubectl logs pod_name --previous
 ```
 
@@ -50,7 +50,7 @@ We organize a centralized logging system for Kubernetes.
 
 1. Create namespace kube-logging:
 
-```bash
+```console
 kubectl create ns kube-logging
 ```
 
@@ -62,7 +62,7 @@ When installing from helm, you will need to set the storage-class for the applic
 
 2. Find out the storage class available in the Kubernetes cluster:
 
-```bash
+```console
 admin@k8s:~$ kubectl get sc 
 NAME            PROVISIONER            AGE
 hdd (default)   kubernetes.io/cinder   103d
@@ -73,7 +73,7 @@ ssd-retain      kubernetes.io/cinder   103d
 
 3. Install Elasticsearch in the Kubernetes cluster with the specified variables:
 
-   ```bash
+   ```console
    helm install stable/elasticsearch \
          --name elastic \
          --set client.replicas=1 \
@@ -92,7 +92,7 @@ ssd-retain      kubernetes.io/cinder   103d
    As a result, an Elasticsearch cluster will be installed, consisting of one master node, one data storage node, and one client node.
 4. Make sure that all the pods are ready to work:
 
-   ```bash
+   ```console
    kubectl get po -n kube-logging
    ```
 
@@ -105,7 +105,7 @@ ssd-retain      kubernetes.io/cinder   103d
 
 5. Find out the name of the services in kube-logging:
 
-   ```bash
+   ```console
    kubectl get svc -n kube-logging
    ```
 
@@ -119,13 +119,13 @@ The elastic-elasticsearch-client service will be used for linking with kibana an
 
 6. Download kibana helm chart variables for editing:
 
-```bash
+```console
 helm fetch --untar stable/kibana
 ```
 
 7. Go to the kibana directory and edit the values file.yaml:
 
-```bash
+```console
 cd kibana/ && vim values.yaml
 ```
 
@@ -143,7 +143,7 @@ files:
 
 9. Install Kibana with modified parameters:
 
-```bash
+```console
 helm install stable/kibana \
      --name kibana \
      --namespace kube-logging \
@@ -152,19 +152,19 @@ helm install stable/kibana \
 
 10. Make sure that the pod has started, and send port 5601 of the Kibana pod to your local machine to access the dashboard:
 
-```bash
+```console
 kubectl get pod -n kube-logging 
 ```
 
 Enter in the following command the full name of the pod for kibana, obtained from the output of the previous command, instead of kibana-pod_hash_id:
 
-```bash
+```console
 kubectl port-forward --namespace kube-logging kibana-pod_hash_id 5601:5601
 ```
 
 11. In the browser address bar, specify the connection string to the abandoned Kibana dashboard:
 
-```bash
+```console
 localhost:5601
 ```
 

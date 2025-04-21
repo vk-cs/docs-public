@@ -34,13 +34,13 @@ To deploy the demo applications:
 
 1. Apply this manifest to the cluster:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe.yaml
    ```
 
 To check the status of the application components, run the command:
 
-```bash
+```console
 kubectl get svc,rs,deployment -n default
 ```
 
@@ -75,7 +75,7 @@ To install an NGINX Ingress Controller with PROXY protocol support:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
    helm repo update
 
@@ -84,7 +84,7 @@ To install an NGINX Ingress Controller with PROXY protocol support:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
@@ -94,7 +94,7 @@ To install an NGINX Ingress Controller with PROXY protocol support:
 
 1. Install a PROXY-enabled Ingress controller by running the command:
 
-   ```bash
+   ```console
    helm install nginx-ingress-tcp nginx-stable/nginx-ingress --set-string 'controller.config.entries.use-proxy-protocol=true' --create-namespace --namespace example-nginx-ingress-tcp
    ```
 
@@ -102,7 +102,7 @@ To install an NGINX Ingress Controller with PROXY protocol support:
 
    To check the status of the Ingress controller, run the command:
 
-   ```bash
+   ```console
    kubectl get svc -n example-nginx-ingress-tcp
    ```
 
@@ -137,7 +137,7 @@ To create an Ingress resource:
 
 1. Apply this manifest to the cluster:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe-secret.yaml
    ```
 
@@ -145,7 +145,7 @@ To create an Ingress resource:
 
 1. Check that the secret has been successfully created by running the command:
 
-   ```bash
+   ```console
    kubectl describe secret cafe-secret
    ```
 
@@ -157,7 +157,7 @@ To create an Ingress resource:
 
    1. Apply this manifest to the cluster:
 
-      ```bash
+      ```console
       kubectl apply -f ./cafe-ingress.yaml
       ```
 
@@ -165,13 +165,13 @@ To create an Ingress resource:
 
    Check that the resource was successfully created by running the command:
 
-   ```bash
+   ```console
    kubectl describe ingress cafe-ingress
    ```
 
    The output of the command should be similar to this one:
 
-   ```bash
+   ```console
    Name:             cafe-ingress
    Labels:           <none>
    Namespace:        default
@@ -194,7 +194,7 @@ To create an Ingress resource:
 
 1. Check that pods named `tea` and `coffee` exist by getting a list of all pods in the `default` namespace:
 
-   ```bash
+   ```console
    kubectl get pods
    ```
 
@@ -207,7 +207,7 @@ To create an Ingress resource:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<Ingress IP address> https://cafe.example.com/coffee
    ```
 
@@ -230,7 +230,7 @@ To create an Ingress resource:
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    curl -k --resolve cafe.example.com:443:<Ingress IP address> https://cafe.example.com/tea
    ```
 
@@ -270,7 +270,7 @@ To create an Ingress resource:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f ./cafe-ingress.yaml
    kubectl delete -f ./cafe-secret.yaml
    kubectl delete -f ./cafe.yaml
@@ -282,7 +282,7 @@ To create an Ingress resource:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f ./cafe-ingress.yaml; `
    kubectl delete -f ./cafe-secret.yaml; `
    kubectl delete -f ./cafe.yaml; `

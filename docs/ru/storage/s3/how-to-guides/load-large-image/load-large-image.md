@@ -39,13 +39,13 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. На локальной машине выполните команду:
 
-   ```bash
+   ```console
    dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
 1. Убедитесь, что загрузка началась, с помощью команды:
 
-   ```bash
+   ```console
    aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -77,7 +77,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. Проверьте партиции с помощью команды:
 
-   ```bash
+   ```console
    aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9BvfrmffLufWMzwiLWPbU3XkWE3ibSefgQ1GU81ER66EEHfKMZM8xxqRsDkBaN63XXXX
    ```
 
@@ -125,7 +125,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    <details>
     <summary>Пример вывода команды</summary>
 
-   ```bash
+   ```console
    NAME  MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
    vda   252:0   0  10G  0  disk
    -vda1 252:1   0  10G  0  part /
@@ -136,7 +136,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. Поместите образ на диск с помощью команды:
 
-   ```bash
+   ```console
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 

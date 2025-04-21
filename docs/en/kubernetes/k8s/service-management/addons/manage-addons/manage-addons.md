@@ -29,13 +29,13 @@
 1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) block.
 1. Apply the configuration for the `vcs_kubernetes_addons` data source using the command:
 
-   ```bash
+   ```console
    terraform apply -target="data.vkcs_kubernetes_addons.<the name of the cluster resource in the Terraform configuration file>"
    ```
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform state show data.vkcs_kubernetes_addons.<the name of the cluster resource in the Terraform configuration file>
    ```
 
@@ -71,13 +71,13 @@
 1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) block.
 1. Apply the configuration for the `vcs_kubernetes_addon` data source using the command:
 
-   ```bash
+   ```console
    terraform apply -target="data.vkcs_kubernetes_addon.<the name of the cluster resource in the Terraform configuration file>"
    ```
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform state show data.vkcs_kubernetes_addon.<the name of the cluster resource in the Terraform configuration file>
    ```
 
@@ -222,13 +222,13 @@ To remove the add-on:
 1. In the Terraform configuration file, delete or comment out the block with the add-ons to be deleted.
 1. Check out the planned changes:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Apply the changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 

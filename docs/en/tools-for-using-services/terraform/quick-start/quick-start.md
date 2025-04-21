@@ -48,7 +48,7 @@
 
 In the directory from which you are going to work with the project, run the command:
 
-```bash
+```console
 terraform init
 ```
 
@@ -60,7 +60,7 @@ This will create supplementary files needed for Terraform to work.
 
 1. Run the command:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -77,6 +77,6 @@ If the provider version in the `vkcs_provider.tf` file is lower than the one nee
 1. Open the `vkcs_provider.tf` file and edit the version as you need, for example: `version = "~> 0.6.0"`.
 1. Run the command in the terminal:
 
-  ```bash
+  ```console
   terraform init --upgrade
   ```

@@ -54,7 +54,7 @@ To show how to configure a secure connection with virtual desktops:
 
     1. Update the OS before further setup:
 
-        ```bash
+        ```console
         apt update && apt upgrade -y
         ```
 
@@ -150,13 +150,13 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command) .
 1. Create the `eth1` file using the command:
 
-    ```bash
+    ```console
     vim /etc/network/interfaces.d/eth1
     ```
 
 1. Add the following to the created file:
 
-    ```bash
+    ```console
     auto eth1
     iface eth1 inet static
     address 10.56.0.4/24
@@ -173,30 +173,30 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
 
 1. Run the command to apply the new network settings:
 
-    ```bash
+    ```console
     systemctl restart networking
     ```
 
 1. Check that the `eth1` interface is configured correctly:
 
-   ```bash
+   ```console
    ip a | grep 10.56
    ```
 
    The interface is configured correctly if the response is returned:
 
-   ```bash
+   ```console
    inet 10.56.0.4/24 brd 10.56.0.7 scope global eth1
    ```
 1. Check that the route to the `10.55.4.0/22` network is configured correctly:
 
-   ```bash
+   ```console
    ip r | grep 10.55
    ```
 
    The route to the future VDI network is correct and is added automatically if the response is returned:
 
-   ```bash
+   ```console
    10.55.4.0/22 via 10.56.0.1 dev eth1
    ```
 
@@ -206,13 +206,13 @@ Disable IP Source Guard on the VPN gateway port so it can forward any traffic:
 
 1. Open a new terminal session and run the command:
 
-    ```bash
+    ```console
     openstack port list --server Debian-IPsec-Gate
     ```
 
     The response will return a list of `Debian-IPsec-Gate` ports. Find the port facing the transit network:
 
-    ```bash
+    ```console
     +--------------------------------------+-------------+-------------------+-------------------------------------------------------------------------------+--------+
     | ID                                   | Name        | MAC Address       | Fixed IP Addresses                                                            | Status |
     +--------------------------------------+-------------+-------------------+-------------------------------------------------------------------------------+--------+
@@ -223,7 +223,7 @@ Disable IP Source Guard on the VPN gateway port so it can forward any traffic:
 
 1. Turn off Port Security:
 
-    ```bash
+    ```console
     openstack port set --disable-port-security f00c7678-47c0-4d88-9be2-b5592de9112f
     ```
 
@@ -235,19 +235,19 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
 1. Run the command:
 
-    ```bash
+    ```console
     echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
     ```
 
 1. Run the command to apply the settings without rebooting the OS:
 
-    ```bash
+    ```console
     sysctl -p
     ```
 
 1. Check that the settings are applied:
 
-    ```bash
+    ```console
     cat /proc/sys/net/ipv4/ip_forward
     ```
 
@@ -257,7 +257,7 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
 1. Run the command:
 
-    ```bash
+    ```console
     apt install vim strongswan strongswan-swanctl iptables iptables-persistent netfilter-persistent conntrack bmon -y
     ```
 
@@ -265,7 +265,7 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
 1. Enable automatic launch of the `strongswan` and `netfilter` services:
 
-    ```bash
+    ```console
     systemctl enable strongswan-starter
     systemctl start strongswan-starter
     systemctl enable netfilter-persistent
@@ -275,13 +275,13 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
 1. Create a `swanctl` configuration file to configure the VPN connection:
 
-    ```bash
+    ```console
     vim /etc/swanctl/conf.d/vkcloud.conf
     ```
 
 1. Add the following content to the `swanctl` file:
 
-    ```bash
+    ```console
     connections {
         vkcloud-ikev2 {
             remote_addrs = 146.185.241.42
@@ -326,13 +326,13 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
     1. Run the command:
 
-        ```bash
+        ```console
         vim /etc/strongswan.d/charon.conf
         ```
 
     1. Find the line `# Section containing a list of scripts` and add the `swanctl` configuration command to it:
 
-        ```bash
+        ```console
         start-scripts {
             swanctl = /usr/sbin/swanctl --load-all
         }
@@ -342,19 +342,19 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
 1. Run the command to apply the new configuration settings and start the VPN connection:
 
-    ```bash
+    ```console
     swanctl --load-all
     ```
 
 1. Check the loading of the VPN connection configuration:
 
-    ```bash
+    ```console
     swanctl --list-conns
     ```
 
     Expected response:
 
-    ```bash
+    ```console
     vkcloud-ikev2: IKEv2, no reauthentication, rekeying every 28800s, dpd delay 15s
     local:  212.233.72.226
     remote: 146.185.241.42
@@ -369,13 +369,13 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
 1. Check the IKE/SA tunnel settings:
 
-    ```bash
+    ```console
     swanctl --list-sas
     ```
 
     Expected response:
 
-    ```bash
+    ```console
     vkcloud-ikev2: #1, ESTABLISHED, IKEv2, e462fc2edaae6649_i* e9f38c18ddd4f0ef_r
     local  '212.233.72.226' @ 212.233.72.226[4500]
     remote '146.185.241.42' @ 146.185.241.42[4500]
@@ -397,7 +397,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
     Add the rule to the NAT table:
 
-    ```bash
+    ```console
     iptables -t nat -A POSTROUTING -s 10.55.4.0/22 -d 10.10.2.0/24 -j ACCEPT
     ```
 
@@ -405,14 +405,14 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
     Add the rules to the MANGLE table:
 
-    ```bash
+    ```console
     iptables -t mangle -A FORWARD -s 10.10.2.0/24 -d 10.55.4.0/22 -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1321:65495 -j TCPMSS --set-mss 1320
     iptables -t mangle -A FORWARD -s 10.55.4.0/22 -d 10.10.2.0/24 -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1321:65495 -j TCPMSS --set-mss 1320
     ```
 
 1. Save settings:
 
-    ```bash
+    ```console
     service netfilter-persistent save
     ```
 
@@ -442,7 +442,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 1. Ping the LDAP server:
 
-    ```bash
+    ```console
     ping 10.10.2.14
     ```
 

@@ -57,7 +57,7 @@ To open detailed information about an individual record, click on the icon ![Inf
 1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the address of the `Audit` endpoint.
 1. Run the request:
 
-   ```bash
+   ```console
    curl -X GET "<Audit endpoint>/logs" -H "X-Auth-Token: <token>"
    ```
 
@@ -98,7 +98,7 @@ To split the output of records to the console or file into lines, the requests u
 
 To get the last 2 records from the action log of the Magnum component, run the request:
 
-```bash
+```console
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
 source=magnum&\
 limit=2&\
@@ -155,7 +155,7 @@ Response example:
 
 To get the last 2 records from the action log of the Nova component for a given period, run the request:
 
-```bash
+```console
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
 source=nova&\
 limit=2&\
@@ -215,7 +215,7 @@ To output all log records of the Nova component for a given period into files in
 
 1. Request output of 10 recent log records for the specified period to the `nova_part1.log` file:
 
-   ```bash
+   ```console
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
    source=nova&\
    limit=10&\
@@ -227,7 +227,7 @@ To output all log records of the Nova component for a given period into files in
 
 2. Extract the value of the `marker` parameter from the `nova_part1.log` file:
 
-   ```bash
+   ```console
    cat nova_part1.log | grep marker
    ```
 
@@ -239,7 +239,7 @@ To output all log records of the Nova component for a given period into files in
 
 3. Request output of 10 earlier log records to the `nova_part2.log` file using the `marker` parameter value:
 
-   ```bash
+   ```console
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
    source=nova&\
    marker=eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX&\

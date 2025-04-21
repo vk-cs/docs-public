@@ -59,7 +59,7 @@ A detailed description of the resources is in the [provider documentation](https
 
 1. Run the command to initialize Terraform:
 
-    ```bash
+    ```console
     terraform init
     ```
 
@@ -265,13 +265,13 @@ Here:
 
 1. Make sure that the configuration files are correct and contain the required changes:
 
-    ```bash
+    ```console
     terraform validate && terraform plan
     ```
 
 1. Apply the changes:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -286,7 +286,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 1. [Connect](/ru/storage/s3/connect/s3-cli "change-lang") to Cloud Storage via AWS CLI.
 1. Verify that the bucket and objects have been created. Run the command:
 
-    ```bash
+    ```console
     aws s3 ls s3://example-bucket/ --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```
 
@@ -302,7 +302,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 
 1. Check that automatic cleaning rules are configured for the bucket. Run the command:
 
-    ```bash
+    ```console
     aws s3api get-bucket-lifecycle-configuration \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
       --bucket example-bucket
@@ -310,7 +310,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 
 1. Check that access rights to the bucket are configured for other users:
 
-    ```bash
+    ```console
     aws s3api get-bucket-acl \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
       --bucket example-bucket
@@ -318,7 +318,7 @@ Make sure the bucket and objects have been created successfully, and the configu
 
 1. Check that CORS rules are configured for the bucket:
 
-    ```bash
+    ```console
     aws s3api get-bucket-cors \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
       --bucket example-bucket
@@ -332,7 +332,7 @@ If you no longer need the Terraform resources, delete them:
 
 1. Run the command:
 
-    ```bash
+    ```console
     terraform destroy
     ```
 

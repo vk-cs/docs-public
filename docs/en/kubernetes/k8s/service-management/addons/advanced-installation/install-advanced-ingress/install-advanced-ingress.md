@@ -82,19 +82,19 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Check the Terraform configuration file for correctness:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Check out the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -328,7 +328,7 @@ The following uses the service name `ingress-nginx` and the `ingress-nginx` name
 
 1. Run the command:
 
-   ```bash
+   ```console
    kubectl get svc ingress-nginx-controller -n ingress-nginx
    ```
 

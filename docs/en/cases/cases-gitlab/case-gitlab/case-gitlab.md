@@ -49,7 +49,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `OA-Ubuntu-docker` VM via SSH.
 1. Check the status of your operating system firewall and disable it if it is active:
 
-    ```bash
+    ```console
     sudo ufw status
     sudo ufw disable
     ```
@@ -65,25 +65,25 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
    1. Update the list of available Ubuntu packages and their versions:
 
-        ```bash
+        ```console
         sudo apt-get update
         ```
 
    1. Install the latest version of the Docker Compose plugin:
 
-        ```bash
+        ```console
         sudo apt-get install docker-compose-plugin
         ```
 
    1. Verify that the plugin is installed correctly by requesting its version:
 
-        ```bash
+        ```console
         docker compose version
         ```
 
         Expected result:
 
-        ```bash
+        ```console
         Docker Compose version vN.N.N
         ```
 
@@ -95,7 +95,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 1. Open the `/etc/ssh/sshd_config` file for editing:
 
-    ```bash
+    ```console
     sudo nano /etc/ssh/sshd_config
     ```
 
@@ -111,19 +111,19 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 1. Restart the `sshd` service:
 
-    ```bash
+    ```console
     sudo systemctl restart sshd
     ```
 
 1. Close the current connection to the VM:
 
-    ```bash
+    ```console
     exit
     ```
 
 1. Connect to the `OA-Ubuntu-docker` VM via SSH using the new port:
 
-    ```bash
+    ```console
     ssh -i <path to SSH key> ubuntu@185.185.185.185 -p 35242
     ```
 
@@ -133,7 +133,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 1. Create directories for the GitLab persistent repository by sequentially running the commands:
 
-    ```bash
+    ```console
     sudo mkdir -p /opt/gitlab
     sudo mkdir -p /opt/gitlab/config
     sudo mkdir -p /opt/gitlab/logs
@@ -145,7 +145,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 1. Create and open for editing a Docker Compose configuration file:
 
-    ```bash
+    ```console
     sudo nano docker-compose.yml
     ```
 
@@ -198,7 +198,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 1. Save the file and exit the editor by pressing CTRL+O and then CTRL+X.
 1. Launch the Docker Compose plugin:
 
-    ```bash
+    ```console
     sudo docker compose up -d
     ```
 
@@ -231,7 +231,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 Run the command:
 
-```bash
+```console
 sudo docker ps
 ```
 
@@ -251,7 +251,7 @@ If the VM on which GitLab is installed has a domain name, you can issue a public
 
 1. Obtain and copy the automatically generated GitLab admin password:
 
-    ```bash
+    ```console
     sudo cat /opt/gitlab/config/initial_root_password
     ```
 

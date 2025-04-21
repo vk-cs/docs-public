@@ -179,7 +179,7 @@
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
-   ```bash
+   ```console
    kubectl apply -f ./tea.yaml
    ```
 
@@ -280,7 +280,7 @@
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
-   ```bash
+   ```console
    kubectl apply -f ./coffee.yaml
    ```
 
@@ -414,7 +414,7 @@
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
-   ```bash
+   ```console
    kubectl apply -f ./juice.yaml
    ```
 
@@ -621,7 +621,7 @@
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
-   ```bash
+   ```console
    kubectl apply -f ./milkshake.yaml
    ```
 
@@ -709,7 +709,7 @@
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
-   ```bash
+   ```console
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
@@ -734,7 +734,7 @@
 
    Выполните команду:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/tea
    ```
 
@@ -749,7 +749,7 @@
 
    Выполните команду:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/coffee
    ```
 
@@ -764,7 +764,7 @@
 
    Выполните команды:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/juice
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/juice/0
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/juice/1
@@ -781,7 +781,7 @@
 
    Выполните команды:
 
-   ```bash
+   ```console
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/milkshake
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/milkshake/0
    curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/milkshake/1
@@ -807,7 +807,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f ./cafe-ingress.yaml
    kubectl delete -f ./milkshake.yaml
    kubectl delete -f ./juice.yaml
@@ -819,7 +819,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f ./cafe-ingress.yaml; `
    kubectl delete -f ./milkshake.yaml; `
    kubectl delete -f ./juice.yaml; `

@@ -154,7 +154,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
    1. Run the command prompt as an administrator.
    2. Create a `temp` directory and an empty file of at least 10 GB in size:
 
-      ```bash
+      ```console
       md C:\temp
       fsutil file createnew C:\temp\test.bin 10485760000
       ```
@@ -170,13 +170,13 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
       - Random write test in blocks of 4 KB:
 
-         ```bash
+         ```console
          diskspd -Suw -b4K -o1 -t32 -r -w100 C:\temp\test.bin > C:\temp\random_write_results.txt
          ```
 
       - Random reading test in blocks of 4 KB:
 
-         ```bash
+         ```console
          diskspd -Suw -b4K -o1 -t32 -r -w0 C:\temp\test.bin > C:\temp\random_read_results.txt
          ```
 
@@ -207,7 +207,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
          </tablist>
          <tabpanel>
 
-         ```powershell
+         ```console
          fio `
             --name=randwrite `
             --iodepth=32 `
@@ -224,7 +224,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
          </tabpanel>
          <tabpanel>
 
-         ```bash
+         ```console
             fio ^
             --name=randwrite ^
             --iodepth=32 ^
@@ -250,7 +250,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
          </tablist>
          <tabpanel>
 
-         ```powershell
+         ```console
          fio `
             --name=randread `
             --iodepth=32 `
@@ -267,7 +267,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
          </tabpanel>
          <tabpanel>
 
-         ```bash
+         ```console
          fio ^
             --name=randread ^
             --iodepth=32 ^
@@ -298,13 +298,13 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
    1. Update the package list:
 
-      ```bash
+      ```console
       sudo apt update
       ```
 
    2. Install FIO:
 
-      ```bash
+      ```console
       sudo apt install fio
       ```
 
@@ -325,7 +325,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
          </err>
 
-         ```bash
+         ```console
          fio \
             --name=randwrite \
             --ioengine=libaio \
@@ -342,7 +342,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
       - Random reading test in blocks of 4 KB:
 
-         ```bash
+         ```console
          fio \
             --name=randread \
             --ioengine=libaio \

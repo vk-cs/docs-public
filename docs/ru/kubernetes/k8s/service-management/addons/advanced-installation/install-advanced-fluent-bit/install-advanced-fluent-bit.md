@@ -58,13 +58,13 @@
 
    1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Примените изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 

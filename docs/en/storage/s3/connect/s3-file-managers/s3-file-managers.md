@@ -57,51 +57,51 @@ Many systems provide ready-made packages:
 
 Amazon Linux via EPEL:
 
-```bash
+```console
 sudo amazon-linux-extras install epel
 sudo yum install s3fs-fuse
 ```
 
 Arch Linux:
 
-```bash
+```console
 sudo pacman -S s3fs-fuse
 ```
 
 Debian 9 and Ubuntu 16.04 or newer:
 
-```bash
+```console
 sudo apt install s3fs
 ```
 
 Fedora 27 or newer:
 
-```bash
+```console
 sudo dnf install s3fs-fuse
 ```
 
 Gentoo:
 
-```bash
+```console
 sudo emerge net-fs / s3fs
 ```
 
 RHEL and CentOS 7 or newer via EPEL:
 
-```bash
+```console
 sudo yum install epel-release
 sudo yum install s3fs-fuse
 ```
 
 SUSE 12 and openSUSE 42.1 or newer:
 
-```bash
+```console
 sudo zypper install s3fs
 ```
 
 macOS via Homebrew:
 
-```bash
+```console
 brew cask install osxfuse
 brew install s3fs
 ```
@@ -112,7 +112,7 @@ To mount a bucket in an operating system, you should:
 
 1.  Save the key ID and private key in the `~/.passwd-s3fs` file in the format `<key_identifier>: <secret_key>`, and also restrict access to the `~/.passwd-s3fs` file:
 
-    ```bash
+    ```console
     echo <key_identifier>: <secret_key>> ~ / .passwd-s3fs
     chmod 600 ~ / .passwd-s3fs
     ```
@@ -120,7 +120,7 @@ To mount a bucket in an operating system, you should:
 2.  Select the directory where the bucket will be mounted and make sure you have permission for the mount operation.
 3.  Run a command of the form:
 
-    ```bash
+    ```console
     s3fs <package_name> / mount / <path_to_directory> -o passwd_file = ~ / .passwd-s3fs -o url = http: //hb.ru-msk.vkcloud-storage.ru -o use_path_request_style
     ```
 

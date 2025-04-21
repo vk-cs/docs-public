@@ -126,7 +126,7 @@ The v4 signature consists of several parts. The table below describes each part 
 
 **Authorization header example**
 
-```bash
+```console
 Authorization: AWS4-HMAC-SHA256
 Credential = urvt4LXPwoSL9s6ieGTLT5 / 20200831 / ru-msk / s3 / aws4_request,
 SignedHeaders = host; x-amz-acl; x-amz-content-sha256; x-amz-date,
@@ -135,7 +135,7 @@ Signature = 6cab03bef74a80a0441ab7fd33c829a2cdb46bba07e82da518cdb78ac238fda5
 
 **Signature example (pseudo code)**
 
-```bash
+```console
 canonicalRequest = \`
 {HTTPMethod} \ n
 {canonicalURI} \ n
@@ -166,7 +166,7 @@ The canonical request included in the signature consists of:
 
 For example, for the following query:
 
-```bash
+```console
 GET /? Acl HTTP / 1.1
 Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -175,7 +175,7 @@ x-amz-date: 20200831T221549Z
 
 This is the canonical query:
 
-```bash
+```console
 GET
 /
 acl =

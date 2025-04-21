@@ -33,19 +33,19 @@ The disk to create the image must be disconnected from the VM and have the statu
 
 1. Get the `ID` of the disk:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 2. Create an image:
 
-   ```bash
+   ```console
    openstack image create --volume <disk ID> <image name>
    ```
 
 3. Check the image creation:
 
-   ```bash
+   ```console
    openstack image list --name <image name>
    ```
 
@@ -96,7 +96,7 @@ The parameters of the image import command depend on the need for backup support
 
 - If support is not needed, run the command:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <image file path> <image name>
    ```
 
@@ -116,13 +116,13 @@ The parameters of the image import command depend on the need for backup support
 
 1. Get the `ID` of the image from the list:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
 2. Export the image:
 
-   ```bash
+   ```console
    openstack image save --file <image file path>.raw <image ID>
    ```
 
@@ -132,7 +132,7 @@ The parameters of the image import command depend on the need for backup support
 1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token) the access token `X-Auth-Token`.
 1. Run the command:
 
-   ```bash
+   ```console
    curl -H "X-Auth-Token:{token}" "https://infra.mail.ru:9292/v2/images/{image ID}/file" --output <image file path>.raw
    ```
 
@@ -185,13 +185,13 @@ Through your VK Cloud management console, you can allow access to the image only
 
 1. Get the `ID` of the image from the list:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
 2. Display detailed information about the individual image:
 
-   ```bash
+   ```console
    openstack image show <image ID>
    ```
 
@@ -199,7 +199,7 @@ Through your VK Cloud management console, you can allow access to the image only
 
 3. Change the image status:
 
-   ```bash
+   ```console
    openstack image set --<status> <image ID>
    ```
 
@@ -207,19 +207,19 @@ To share an image in the status `shared`:
 
 1. Add an image to the project:
 
-   ```bash
+   ```console
    openstack image add project <image ID> <project ID>
    ```
 
 2. Confirm adding the image to the project:
 
-   ```bash
+   ```console
    openstack image set --accept <image ID>
    ```
 
 To view the projects that have access to the image, run the command:
 
-```bash
+```console
 openstack image member list <image ID>
 ```
 
@@ -249,13 +249,13 @@ openstack image member list <image ID>
 
 To delete an image that is not attached to projects:
 
-```bash
+```console
 openstack image delete <image ID>
 ```
 
 To delete an image from a project:
 
-```bash
+```console
 openstack image remove project <image ID> <project ID>
 ```
 

@@ -26,14 +26,14 @@ Use the utility `qemu-img`:
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo yum install qemu-img
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo apt install qemu-utils
     ```
 
@@ -42,7 +42,7 @@ Use the utility `qemu-img`:
 
 1. Run the file conversion using the command:
 
-    ```bash
+    ```console
     qemu-img convert -f qcow2 -O raw alt-p9-cloud-x86_64.qcow2 alt-p9-cloud-x86_64.raw
     ```
 
@@ -60,7 +60,7 @@ Import the image according to [instructions](../../service-management/images/ima
     1. Copy the name of the downloaded image, getting a list of images using the command `openstack image list`.
     1. Write the received values into variables:
 
-        ```bash
+        ```console
         export SOURCE_IMAGE=8b64c09b-7141-41ad-XXXX-9f5a8dbbd87e
         export NETWORK_ID=f19e1e54-bce9-4c25-XXXX-e0f40e2cff14
         ```
@@ -128,7 +128,7 @@ Import the image according to [instructions](../../service-management/images/ima
 
 1. Check the created configuration using the command:
 
-    ```bash
+    ```console
     packer validate altlinux.pkr.hcl
     ```
 
@@ -136,13 +136,13 @@ Import the image according to [instructions](../../service-management/images/ima
 
 1. Run the image creation using the command:
 
-    ```bash
+    ```console
     packer build altlinux.pkr.hcl
     ```
 
 1. Wait for the successful download message to appear:
 
-    ```bash
+    ```console
     ==> Builds finished. The artifacts of successful builds are:
     --> openstack.altlinux: An image was created: c6320138-035f-40d8-XXXX-e814edb2ce5f
     ```
@@ -153,7 +153,7 @@ Import the image according to [instructions](../../service-management/images/ima
 
 1. Set [meta tags](../../service-management/images/image-metadata) to the created image using the command:
 
-    ```bash
+    ```console
     openstack image set \
     --property hw_video_model='qxl' \
     --property hw_watchdog_action='reset' \
@@ -189,13 +189,13 @@ Import the image according to [instructions](../../service-management/images/ima
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
     ```
 
     The result of the command execution:
 
-    ```bash
+    ```console
     +------------------+------------------------------------------------------+
     | Field            | Value                                                |
     +------------------+------------------------------------------------------+

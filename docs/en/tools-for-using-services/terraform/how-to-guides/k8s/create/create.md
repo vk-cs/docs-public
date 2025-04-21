@@ -297,13 +297,13 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 1. Go to this directory.
 1. Run the command:
 
-   ```bash
+   ```console
    terraform init
    ```
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -319,7 +319,7 @@ If you no longer need the resources created with Terraform, delete them:
 
 1. Run the command:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

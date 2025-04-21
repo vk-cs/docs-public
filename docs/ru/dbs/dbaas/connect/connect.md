@@ -135,7 +135,7 @@
 1. [Установите](https://www.postgresql.org/ftp/odbc/versions/) драйвер ODBC.
 1. Подключитесь к базе данных:
 
-   ```bash
+   ```console
    Driver={PostgreSQL UNICODE}; Server="<IP-АДРЕС>"; Port=5432; Database="<БД>"; Uid="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"; Pwd="<ПАРОЛЬ>"; Sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>;
    ```
 
@@ -278,7 +278,7 @@
 1. [Установите](https://dev.mysql.com/downloads/connector/odbc/) драйвер ODBC.
 1. Подключитесь к базе данных:
 
-   ```bash
+   ```console
    DRIVER={MySQL ODBC 5.3 UNICODE Driver}; Server="<IP-АДРЕС>"; Port=<ПОРТ>; Database="<БД>"; Uid="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"; Pwd="<ПАРОЛЬ>";
    ```
 
@@ -378,7 +378,7 @@
 1. [Установите](https://www.tarantool.io/ru/download/os-installation/) Tarantool.
 1. Подключитесь к базе данных:
 
-   ```bash
+   ```console
    tarantoolctl connect <ИМЯ_ПОЛЬЗОВАТЕЛЯ>:<ПАРОЛЬ>@<IP-АДРЕС>
    ```
 
@@ -555,7 +555,7 @@
 1. [Установите](https://github.com/ClickHouse/clickhouse-odbc) ODBC-драйвер для ClickHouse.
 1. Подключитесь к базе данных:
 
-   ```bash
+   ```console
    Driver={PATH_OF_CLICKHOUSE_ODBC_SO}; Server="<IP-АДРЕС>"; Port=<ПОРТ>; Database="<БД>"; Uid="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"; Pwd="<ПАРОЛЬ>";
    ```
 

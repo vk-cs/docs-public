@@ -48,11 +48,11 @@ On the host from which you plan to connect to the registry:
 
       - For the server version of the Docker Engine, run one of the commands to restart:
 
-        ```bash
+        ```console
         sudo systemd restart docker
         ```
 
-        ```bash
+        ```console
         sudo service docker restart
         ```
 
@@ -73,7 +73,7 @@ On the host from which you plan to connect to the registry:
 
 1. Sign in into the registry:
 
-   ```bash
+   ```console
    docker login <URL of Docker registry> --username <login for Docker registry>
    ```
 
@@ -104,7 +104,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl create secret docker-registry k8s-registry-creds \ 
      --docker-server=<registry IP address>:5000 \
      --docker-username=<login> \
@@ -115,7 +115,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl create secret docker-registry k8s-registry-creds ` 
      --docker-server=<registry IP address>:5000 `
      --docker-username=<login> `

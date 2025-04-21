@@ -18,7 +18,7 @@ A backup will be made before the update. Plan ahead for the upgrade because Post
 
 Make an API request:
 
-```bash
+```console
 curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 --header 'X-Auth-Token:  <user token>' \
 --header 'Content-Type: application/json' \
@@ -36,7 +36,7 @@ To update the replicas, a new version of PostgreSQL will be installed on the ser
 
 Make an API request:
 
-```bash
+```console
 curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 --header 'X-Auth-Token:  <user token>' \
 --header 'Content-Type: application/json' \

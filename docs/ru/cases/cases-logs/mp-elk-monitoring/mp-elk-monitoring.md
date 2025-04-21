@@ -20,13 +20,13 @@
 2. Запомните IP-адрес инстанса, имя и пароль пользователя для доступа к Kibana. Они понадобятся позже, при проверке функциональности на узле c ELK.
 3. Подключитесь к инстансу по ssh, используя pem-файл. Для этого выполните команду:
 
-```bash
+```console
 ssh -i /path/to/key.pem ubuntu@<instance_ip>
 ```
 
 4.  Установите плагины `ingest-geoip` и `ingest-user-agent` для Elasticsearch, они необходимы для совместной работы Kibana и логов Nginx. Для этого, находясь в директории с установленным elasticsearch (по умолчанию для Ubuntu — `/usr/share/elasticsearch/`), выполните команды:
 
-```bash
+```console
 bin/elasticsearch-plugin install ingest-geoip
 bin/elasticsearch-plugin install ingest-user-agent
 
@@ -34,7 +34,7 @@ bin/elasticsearch-plugin install ingest-user-agent
 
 5.  Чтобы подключить установленные модули, перезапустите Elasticsearch, выполнив команду:
 
-```bash
+```console
 sudo service elasticsearch restart
 ```
 
@@ -43,7 +43,7 @@ sudo service elasticsearch restart
 1.  Подключитесь к удаленному узлу, который вы хотите подключить к ELK.
 2.  Поскольку создается связь ELK и Nginx, установите Nginx из стандартных репозиториев Ubuntu, выполнив команду:
 
-```bash
+```console
 sudo apt update
 sudo apt install nginx
 ```
@@ -94,7 +94,7 @@ protocol: https
 
 5.  Включите модуль Nginx для Filebeat, выполнив команду:
 
-```bash
+```console
 sudo filebeat modules enable nginx
 ```
 
@@ -121,13 +121,13 @@ sudo filebeat modules enable nginx
 
 7.  Если дашборды для Kibana не были настроены ранее, выполните их загрузку, используя команду:
 
-```bash
+```console
 sudo filebeat setup
 ```
 
 8.  Для запуска Filebeat выполните команду:
 
-```bash
+```console
 sudo service filebeat start
 ```
 

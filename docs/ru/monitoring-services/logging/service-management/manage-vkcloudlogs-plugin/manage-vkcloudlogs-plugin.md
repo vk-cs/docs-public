@@ -11,7 +11,7 @@
   </tablist>
   <tabpanel>
 
-  ```bash
+  ```console
   sudo systemctl enable vkcloudlogs-fluent-bit.service
   sudo systemctl start vkcloudlogs-fluent-bit.service
   ```
@@ -27,7 +27,7 @@
   </tablist>
   <tabpanel>
 
-  ```bash
+  ```console
   sudo systemctl stop vkcloudlogs-fluent-bit.service
   sudo systemctl disable vkcloudlogs-fluent-bit.service
   ```
@@ -80,7 +80,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo systemctl restart vkcloudlogs-fluent-bit.service
    ```
 
@@ -100,21 +100,21 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo yum remove vkcloudlogs-fluent-bit-plugin.x86_64
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo apt remove vkcloudlogs-fluent-bit-plugin
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo apt-get remove vkcloudlogs-fluent-bit-plugin
    ```
 

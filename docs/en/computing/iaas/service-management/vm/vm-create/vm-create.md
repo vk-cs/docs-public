@@ -87,19 +87,19 @@ The VM settings available for configuration may vary depending on the operating 
 
    1. Get a list of available VM types and save the required `flavor_ID`:
 
-      ```bash
+      ```console
       openstack flavor list
       ```
 
    2. Get a list of available VM images and save the required `image_ID`:
 
-      ```bash
+      ```console
       openstack image list
       ```
 
    3. Get a list of security groups:
 
-      ```bash
+      ```console
       openstack security group list
       ```
 
@@ -110,7 +110,7 @@ The VM settings available for configuration may vary depending on the operating 
 
    4. Get a list of available networks and save the required `network_ID`:
 
-      ```bash
+      ```console
       openstack network list
       ```
 
@@ -119,32 +119,32 @@ The VM settings available for configuration may vary depending on the operating 
 
    5. Get a list of available key pairs and save `keypair_name`:
 
-      ```bash
+      ```console
       openstack keypair list
       ```
 
       To create a new key pair:
          1. Generate a key:
 
-            ```bash
+            ```console
             ssh-keygen -q -N ""
             ```
 
          2. Upload the key:
 
-            ```bash
+            ```console
             openstack keypair create --public-key ~/.ssh/id_rsa.pub --type ssh <keypair_name>
             ```
 
 3. Create a boot disk:
 
-   ```bash
+   ```console
    openstack volume create root-volume --size 10 --image <image_id> --availability-zone MS1 --bootable
    ```
 
 4. Create a VM:
 
-   ```bash
+   ```console
    openstack server create <VM_name>
                            --volume <volume_id>
                            --network <network_ID> \
@@ -163,7 +163,7 @@ The VM settings available for configuration may vary depending on the operating 
 
 5. Check the status of the created VM:
 
-   ```bash
+   ```console
    openstack server list
    ```
 

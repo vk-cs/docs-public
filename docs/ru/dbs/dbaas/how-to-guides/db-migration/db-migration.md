@@ -52,14 +52,14 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 1. Переведите БД `PostgreSQL-7313` в режим «только чтение»:
 
-   ```bash
+   ```console
    alter database "PostgreSQL-7313" set default_transaction_read_only=on;
    ```
 
 1. Отключитесь от БД с помощью команды `exit`.
 1. Создайте дамп с помощью команды:
 
-   ```bash
+   ```console
    pg_dump --host=224.224.209.224 --port=5432 --username=user --format=c --dbname=PostgreSQL-7313 --file=db_dump
    ```
 
@@ -67,7 +67,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 1. Повторно подключитесь к БД и выведите ее из режима «только чтение»:
 
-   ```bash
+   ```console
    psql -h 224.224.209.224 -p 5432 -U postgres -d PostgreSQL-7313
    set default_transaction_read_only=off;
    alter database "PostgreSQL-7313" set default_transaction_read_only=off;
@@ -79,13 +79,13 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
    1. Подключитесь к БД `PostgreSQL-7313` под пользователем `postgres`:
 
-      ```bash
+      ```console
       psql -h 212.212.12.212 -p 5432 -U postgres -d PostgreSQL-7313
       ```
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       CREATE DATABASE "PostgreSQL-7313";
       ```
 
@@ -94,7 +94,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 1. Восстановите дамп БД-источника с помощью команды:
 
-   ```bash
+   ```console
    pg_restore --host=212.212.12.212 --username=user --dbname=PostgreSQL-7313 --port=5432 --verbose db_dump --single-transaction --no-privileges
    ```
 
@@ -103,7 +103,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
    <details>
        <summary>Ожидаемый вывод команды</summary>
 
-      ```bash
+      ```console
        pg_restore: creating TABLE "public.test-db"
        pg_restore: creating SEQUENCE "public.test-db_id_seq"
        pg_restore: creating SEQUENCE OWNED BY "public.test-db_id_seq"
@@ -123,7 +123,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 1. Подключитесь к БД `PostgreSQL-7313` в инстансе-приемнике под пользователем `user`:
 
-   ```bash
+   ```console
    psql -h 212.212.12.212 -p 5432 -U user -d PostgreSQL-7313
    ```
 

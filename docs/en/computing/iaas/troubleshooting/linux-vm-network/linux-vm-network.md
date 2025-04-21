@@ -69,7 +69,7 @@ Check that the network interface is configured correctly:
 
 2. Run the command:
 
-    ```bash
+    ```console
     ip link show
     ```
 
@@ -94,7 +94,7 @@ Check that the network interface is configured correctly:
 
 3.  Execute the command by substituting the interface name received in the previous step into it:
 
-    ```bash
+    ```console
     ip address show ens3
     ```
 
@@ -117,7 +117,7 @@ Check that the network interface is configured correctly:
 
 4. Run the command:
 
-    ```bash
+    ```console
     ip route show default
     ```
 
@@ -174,7 +174,7 @@ Check that the network interface is configured correctly:
 
     1. Run the command:
 
-        ```bash
+        ```console
         sudo netplan apply
         ```
 
@@ -203,7 +203,7 @@ Check that the network interface is configured correctly:
 
     1. Restart the network connection by running the command:
 
-        ```bash
+        ```console
         sudo systemctl restart networking
         ```
 
@@ -240,7 +240,7 @@ Check that the network interface is configured correctly:
 
     1. Restart the network connection by running the command:
 
-        ```bash
+        ```console
         sudo nmcli con up "System eth0"
         ```
 
@@ -271,13 +271,13 @@ Check that the network interface is configured correctly:
 
     1. Apply the DNS servers' settings:
 
-       ```bash
+       ```console
        sudo netconfig update
        ```
 
     1. Restart the network connection by running the command:
 
-       ```bash
+       ```console
        sudo systemctl restart network
        ```
 
@@ -286,7 +286,7 @@ Check that the network interface is configured correctly:
 
 6. Prohibit making automatic changes to the edited configuration file:
 
-    ```bash
+    ```console
     echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
     ```
 
@@ -302,7 +302,7 @@ Check the SSH operation:
 
 1. Run the command:
 
-    ```bash
+    ```console
     sudo systemctl status ssh
     ```
 
@@ -322,7 +322,7 @@ Check the SSH operation:
 
     1. Determine which port the SSH service is running on:
 
-       ```bash
+       ```console
        sudo cat /etc/ssh/sshd_config | grep -w Port
        ```
 
@@ -336,7 +336,7 @@ Check the SSH operation:
 
     1. Connect using a non-standard port number. For example, if the SSH service is running on a port `222`:
 
-        ```bash
+        ```console
         ssh -i /path/to/private_key_file username@192.0.2.22 -p 222
         ```
 
@@ -347,7 +347,7 @@ Check the SSH operation:
 
     1. Determine which port the SSH service is running on:
 
-        ```bash
+        ```console
         sudo cat /etc/ssh/sshd_config | grep -w Port
         ```
 
@@ -359,7 +359,7 @@ Check the SSH operation:
 
     1. Make sure that other processes are not using this port. View SSH service logs:
 
-        ```bash
+        ```console
         sudo journalctl -xeu ssh
         ```
 
@@ -382,14 +382,14 @@ Check the SSH operation:
             </tablist>
             <tabpanel>
 
-            ```bash
+            ```console
             sudo apt install net-tools -y
             ```
 
             </tabpanel>
             <tabpanel>
 
-            ```bash
+            ```console
             sudo yum install net-tools -y
             ```
 
@@ -398,7 +398,7 @@ Check the SSH operation:
 
         1. Run the command:
 
-            ```bash
+            ```console
             sudo netstat -plntu | grep :22
             ```
 
@@ -413,13 +413,13 @@ Check the SSH operation:
 
         - or using `systemctl`:
 
-            ```bash
+            ```console
             sudo systemctl stop some-other-service
             ```
 
         - or by forcibly shutting down the process:
 
-            ```bash
+            ```console
             sudo kill 1234
             ```
 
@@ -427,19 +427,19 @@ Check the SSH operation:
 
     1. Restart the service:
 
-        ```bash
+        ```console
         sudo systemctl restart some-other-service
         ```
 
     1. Restart SSH service:
 
-        ```bash
+        ```console
         sudo systemctl restart sshd
         ```
 
     1. Make sure that the SSH service is running successfully:
 
-        ```bash
+        ```console
         sudo systemctl status sshd
         ```
 
@@ -452,7 +452,7 @@ Check the SSH operation:
         If the SSH service does not start, check the service settings in the configuration file `/etc/ssh/sshd_config`.
         For more information about problems with the service, see the logs:
 
-        ```bash
+        ```console
         sudo journalctl -xeu ssh
         ```
 
@@ -487,14 +487,14 @@ To check the firewall settings:
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo ufw disable
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo systemctl stop firewalld
     ```
 
@@ -503,13 +503,13 @@ To check the firewall settings:
 
     1. Save the existing rules `iptables`:
 
-        ```bash
+        ```console
         sudo iptables-save | sudo tee ~/iptables.rules
         ```
 
     1. Run the commands:
 
-        ```bash
+        ```console
         sudo iptables -P INPUT ACCEPT
         sudo iptables -P FORWARD ACCEPT
         sudo iptables -P OUTPUT ACCEPT
@@ -543,21 +543,21 @@ To turn on the firewall again:
     </tablist>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo ufw enable
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo systemctl start firewalld
     ```
 
     </tabpanel>
     <tabpanel>
 
-    ```bash
+    ```console
     sudo iptables-restore < ~/iptables.rules
     ```
 

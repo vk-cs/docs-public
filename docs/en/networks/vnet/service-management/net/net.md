@@ -34,31 +34,31 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 1. To see a list of networks and their identifiers, run the command:
 
-   ```bash
+   ```console
    openstack network list
    ```
 
 1. To see detailed information about the network, run the command:
 
-   ```bash
+   ```console
    openstack network show <network ID>
    ```
 
 1. To see a list of all subnets and their identifiers, run the command:
 
-   ```bash
+   ```console
    openstack subnet list
    ```
 
 1. To see a list of all subnets belonging to a particular network and their IDs, run the command:
 
-   ```bash
+   ```console
    openstack subnet list --network <network ID>
    ```
 
 1. To see detailed information about a subnet, execute the command:
 
-   ```bash
+   ```console
    openstack subnet show <subnet ID>
    ```
 
@@ -100,7 +100,7 @@ Once a network is created, it will appear in the list of networks.
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack network create <network name>
    ```
 
@@ -131,7 +131,7 @@ Once a network is created, it will appear in the list of networks.
 
 1. Familiarize yourself with the command's help.
 
-   ```bash
+   ```console
    openstack network set --help
    ```
 
@@ -146,7 +146,7 @@ Once a network is created, it will appear in the list of networks.
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack network set <network ID> \
      --name <new network name> \
      --dns-domain <new DNS domain>
@@ -155,7 +155,7 @@ Once a network is created, it will appear in the list of networks.
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack network set <network ID> `
      --name <new network name> `
      --dns-domain <new DNS domain>
@@ -193,7 +193,7 @@ All the network subnets and ports will be deleted along with the network.
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack network delete <network ID>
    ```
 
@@ -229,7 +229,7 @@ All the network subnets and ports will be deleted along with the network.
 
 1. Familiarize yourself with the command's help.
 
-   ```bash
+   ```console
    openstack subnet create --help
    ```
 
@@ -244,7 +244,7 @@ All the network subnets and ports will be deleted along with the network.
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack subnet create <name> \
      --subnet-range <subnet address> \
      --network <network ID> \
@@ -255,7 +255,7 @@ All the network subnets and ports will be deleted along with the network.
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack subnet create <name> `
      --subnet-range <subnet address> `
      --network <network ID> `
@@ -295,11 +295,11 @@ All the network subnets and ports will be deleted along with the network.
 
    1. Familiarize yourself with the commands' help.
 
-      ```bash
+      ```console
       openstack subnet set --help
       ```
 
-      ```bash
+      ```console
       openstack subnet unset --help
       ```
 
@@ -314,7 +314,7 @@ All the network subnets and ports will be deleted along with the network.
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack subnet <set or unset> <subnet ID> \
         --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> \
         --dns-nameserver <DNS server address> \
@@ -324,7 +324,7 @@ All the network subnets and ports will be deleted along with the network.
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack subnet <set or unset> <subnet ID> `
         --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> `
         --dns-nameserver < DNS server address> `
@@ -367,7 +367,7 @@ Once a subnet is deleted, it cannot be restored.
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack subnet delete <subnet ID>
    ```
 

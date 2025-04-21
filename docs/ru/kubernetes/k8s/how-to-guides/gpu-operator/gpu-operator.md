@@ -56,13 +56,13 @@ GPU может использоваться в кластере следующи
    
 1. Загрузите файл в кластер и запустите под:
 
-   ```bash
+   ```console
    kubectl apply -f cuda-vectoradd.yaml
    ```
 
    Пример ответа:
 
-   ```bash
+   ```console
    pod/cuda-vectoradd created
    ```
 
@@ -70,13 +70,13 @@ GPU может использоваться в кластере следующи
 
 1. Просмотрите логи контейнера, выполнив команду:
 
-   ```bash
+   ```console
    kubectl logs pod/cuda-vectoradd
    ```
    
    Пример ответа:
 
-   ```bash
+   ```console
    [Vector addition of 50000 elements]
    Copy input data from the host memory to the CUDA device
    CUDA kernel launch with 196 blocks of 256 threads
@@ -87,13 +87,13 @@ GPU может использоваться в кластере следующи
    
 1. Удалите остановленный под:
 
-   ```bash
+   ```console
    kubectl delete -f cuda-vectoradd.yaml
    ```
    
    Пример ответа:
 
-   ```bash
+   ```console
    pod "cuda-vectoradd" deleted
    ```
 
@@ -145,7 +145,7 @@ GPU может использоваться в кластере следующи
 
 1. Убедитесь, что GPU на узле не разделен:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -166,7 +166,7 @@ GPU может использоваться в кластере следующи
 
 1. Добавьте метку (label) для узла с GPU, которая включит режим `mps-on`, добавленный в конфигурации аддона:
 
-   ```bash
+   ```console
    kubectl label node my-kubernetes-cluster-gpu-group-0 nvidia.com/device-plugin.config=mps-on
    ```
    
@@ -178,7 +178,7 @@ GPU может использоваться в кластере следующи
    
 1. Подождите несколько минут, пока применятся настройки, после чего проверьте их:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -201,7 +201,7 @@ GPU может использоваться в кластере следующи
 
 1. Добавьте метку (label) для узла с GPU, которая отменит разделение GPU на части по технологии MPS:
 
-   ```bash
+   ```console
    kubectl label node my-kubernetes-cluster-gpu-group-0 nvidia.com/device-plugin.config=default --overwrite
    ```
 
@@ -209,7 +209,7 @@ GPU может использоваться в кластере следующи
 
 1. Убедитесь, что GPU на узле не разделен:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -230,7 +230,7 @@ GPU может использоваться в кластере следующи
 
 1. Получите ConfigMap с описанием вариантов выделения частей GPU по технологии MIG:
 
-   ```bash
+   ```console
    kubectl get configmaps default-mig-parted-config -o yaml
    ```
    
@@ -242,7 +242,7 @@ GPU может использоваться в кластере следующи
 
 1. Добавьте метку (label) для узла с GPU:
 
-   ```bash
+   ```console
    kubectl label nodes my-kubernetes-cluster-gpu-group-0 nvidia.com/mig.config=all-1g.10gb --overwrite
    ```
    
@@ -250,7 +250,7 @@ GPU может использоваться в кластере следующи
 
 1. Проверьте, что выбранная конфигурация применилась:
 
-   ```bash
+   ```console
    kubectl describe node my-kubernetes-cluster-gpu-group-0
    ```
 
@@ -271,7 +271,7 @@ GPU может использоваться в кластере следующи
 
 1. (Опционально) Для отмены разделения GPU на части примените конфигурацию `all-disabled`:
 
-   ```bash
+   ```console
    kubectl label nodes my-kubernetes-cluster-gpu-group-0 nvidia.com/mig.config=all-disabled --overwrite
    ```
 

@@ -17,7 +17,7 @@ VK Cloud не несет ответственности за корректну�
 3. [Подключитесь к ВМ](../../service-management/vm/vm-connect/vm-connect-nix).
 4. Выведите список дисков и найдите имя нужного диска (например, `/dev/vdb`):
 
-   ```bash
+   ```console
    sudo fdisk -l 
    ```
 
@@ -25,19 +25,19 @@ VK Cloud не несет ответственности за корректну�
 
    1. Проверьте, что на диске нет файловой системы:
 
-      ```bash
+      ```console
       lsblk -f
       ```
 
    2. Отформатируйте диск:
 
-      ```bash
+      ```console
       sudo mkfs.ext4 /dev/vdb
       ```
 
    3. Проверьте результат форматирования:
 
-      ```bash
+      ```console
       lsblk -f
       ```
 
@@ -45,32 +45,32 @@ VK Cloud не несет ответственности за корректну�
 
    1. Создайте директорию для монтирования диска `/volumes/disk1`:
 
-      ```bash
+      ```console
       sudo mkdir /volumes
       sudo mkdir /volumes/disk1
       ```
 
    2. Добавьте в файл `/etc/fstab` строку с параметрами монтирования диска:
 
-      ```bash
+      ```console
       sudo sed -i '$a /dev/vdb /volumes/disk1 auto defaults 0 0' /etc/fstab
       ```
 
    3. Выведите содержимое файла и убедитесь, что строка добавлена:
 
-      ```bash
+      ```console
       cat /etc/fstab
       ```
 
 7. Перезапустите виртуальную машину:
 
-   ```bash
+   ```console
    sudo reboot
    ```
 
 8. Проверьте, что диск примонтирован в указанную директорию:
 
-   ```bash
+   ```console
    lsblk
    ```
 
@@ -78,7 +78,7 @@ VK Cloud не несет ответственности за корректну�
 
 Выполните команду для установки:
 
-```bash
+```console
 sudo yum install -y cryptsetup cryptsetup-reencrypt
 ```
 
@@ -93,20 +93,20 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 1. Сделайте диск [незагрузочным](../../service-management/volumes#izmenenie_atributa_zagruzochnyy).
 2. Остановите все процессы, использующие диск:
 
-   ```bash
+   ```console
    sudo lsof /volumes/disk1
    sudo systemctl stop volumes-disk1.mount
    ```
 
 3. Посмотрите размер текущей файловой системы:
 
-   ```bash
+   ```console
    sudo e2fsck -f /dev/vdb
    ```
 
    Пример результата выполнения команды:
 
-   ```bash
+   ```console
    e2fsck 1.42.9 (28-Dec-2013)
    Pass 1: Checking inodes, blocks, and sizes
    Pass 2: Checking directory structure
@@ -118,13 +118,13 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 4. Измените размер файловой системы до минимально возможного:
 
-   ```bash
+   ```console
    sudo resize2fs -M /dev/vdb
    ```
 
    Пример результата выполнения команды:
 
-   ```bash
+   ```console
    resize2fs 1.42.9 (28-Dec-2013)
    Resizing the filesystem on /dev/vdb to 24971 (4k) blocks.
    The filesystem on /dev/vdb is now 24971 blocks long.
@@ -132,13 +132,13 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 5. Запустите шифрование диска:
 
-   ```bash
+   ```console
    sudo cryptsetup-reencrypt /dev/vdb --new --reduce-device-size 4096S
    ```
 
 6. Введите и подтвердите ключевую фразу:
 
-   ```bash
+   ```console
    Enter new passphrase:
    Verify passphrase:
    ```
@@ -151,7 +151,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 7. Дождитесь завершения процесса шифрования:
 
-   ```bash
+   ```console
       Finished, time 00:23.401, 3875 MiB written, speed 165.6 MiB/s
    ```
 
@@ -159,7 +159,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       sudo cryptsetup open /dev/vdb vdb_crypt
       ```
 
@@ -167,25 +167,25 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 9. Расширьте файловую систему до размера диска:
 
-   ```bash
+   ```console
    sudo resize2fs /dev/mapper/vdb_crypt
    ```
 
 10. Измените имя устройства для монтирования:
 
-   ```bash
+   ```console
    sudo sed 's#/dev/vdb#/dev/mapper/vdb_crypt#' -i /etc/fstab
    ```
 
 11. Выведите содержимое файла `fstab` и убедитесь, что запись изменена:
 
-      ```bash
+      ```console
       cat /etc/fstab
       ```
 
 12. Примонтируйте диск:
 
-      ```bash
+      ```console
       sudo mount /volumes/disk1
       ```
 
@@ -193,13 +193,13 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
       1. Получите `root` доступ:
 
-         ```bash
+         ```console
          sudo -s
          ```
 
       2. Выполните команду:
 
-         ```bash
+         ```console
          UUID=$(blkid -s UUID -o value /dev/vdb)
          echo "vdb_crypt UUID=${UUID} none luks,discard" >> /etc/crypttab
          exit
@@ -217,19 +217,19 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 1. Измените настройки загрузчика `grub`. Удалите настройку `console=ttyS0,115200` в параметрах загрузчика:
 
-   ```bash
+   ```console
    sudo sed 's#console=ttyS0,115200 ##' -i /etc/default/grub
    ```
 
 2. Просмотрите файл `grub` и убедитесь, что настройка удалена:
 
-   ```bash
+   ```console
    cat /etc/default/grub
    ```
 
 3. Выполните конфигурирование загрузчика:
 
-   ```bash
+   ```console
    sudo grub2-mkconfig -o /boot/grub2/grub.cfg
    ```
 
@@ -239,7 +239,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 1. Перейдите в [VNC-консоль](../../service-management/vm/vm-console#vnc_konsol) виртуальной машины. В выводе консоли при загрузке операционной системы появится приглашение ввести ключевую фразу:
 
-   ```bash
+   ```console
    Please enter passphrase for disk vdb_crypt on /volumes/disk1:
    ```
 

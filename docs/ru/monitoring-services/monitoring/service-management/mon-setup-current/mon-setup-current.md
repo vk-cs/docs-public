@@ -26,7 +26,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    curl \
    -H "content-type: application/json" \
    -H "X-Auth-Token: <токен доступа X-Subject-Token>" \
@@ -39,13 +39,13 @@
 
    1. Поместите параметры тела запроса в переменную `params`:
 
-      ```powershell
+      ```console
       $params = @{'instance_id' = '<ID виртуальной машины>'; 'os_type' = 'windows'; 'capabilities' = @('telegraf')} | convertto-json
       ```
 
    1. Убедитесь в создании переменной с помощью `echo $params`. Ожидаемый вывод:
 
-      ```powershell
+      ```console
       {
          "instance_id": "<ID виртуальной машины>",
          "capabilities":  [
@@ -57,7 +57,7 @@
 
    1. Выполните команду:
 
-      ```powershell
+      ```console
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
       Invoke-WebRequest -Method Post -ContentType application/json `
       -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link `
@@ -77,14 +77,14 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | sudo bash
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | iex
    ```
 

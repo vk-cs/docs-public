@@ -73,7 +73,7 @@ To do this, on the **Accounts** tab of the Object Storage service, create an acc
 
 Run the AWS configuration
 
-```bash
+```console
 aws configure
 ```
 
@@ -88,7 +88,7 @@ Use the following data in the configurator:
 
 The bucket is created using the command
 
-```bash
+```console
 aws s3 mb s3://<unique package name> --endpoint-url <endpoint-url>
 ```
 
@@ -100,7 +100,7 @@ Where endpoint is the url:
 
 The following output will appear as a result of the correct execution of the command:
 
-```bash
+```console
 make_bucket: <make_bucket_name>
 ```
 

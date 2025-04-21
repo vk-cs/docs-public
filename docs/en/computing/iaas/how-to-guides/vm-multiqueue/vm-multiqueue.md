@@ -31,14 +31,14 @@ The option includes multiqueue at the image level and will work for all VMs crea
 1. [Create](../../service-management/images/images-manage) image VM.
 1. Get a list of available images:
 
-    ```bash
+    ```console
     openstack image list
     ```
 
 1. Copy the ID of the required image.
 1. Enable multiqueue:
 
-    ```bash
+    ```console
     openstack image set <IMG_ID> --property hw_vif_multiqueue_enabled=true
     ```
 
@@ -59,14 +59,14 @@ This option is used when the VM has already been created at the time of enabling
 1. [Create](../../service-management/vm/vm-create) a VM with more than one CPU, and [connect](../../service-management/vm/vm-connect) to it.
 1. View all network interfaces:
 
-    ```bash
+    ```console
     sudo ip link show
     ```
 
     <details>
      <summary>Example output</summary>
 
-    ```bash
+    ```console
     ubuntu@dm-test:~$ sudo ip link show
     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
         link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -81,14 +81,14 @@ This option is used when the VM has already been created at the time of enabling
 
 1. See the current number of queues:
 
-    ```bash
+    ```console
     ethtool -l <network interface name>
     ```
 
     <details>
      <summary>Example output</summary>
 
-    ```bash
+    ```console
     ubuntu@dm-test:~$ ethtool -l ens3
     Channel parameters for ens3:
     Pre-set maximums:
@@ -116,19 +116,19 @@ The number of queues cannot be greater than the number of virtual CPUs.
 1. [Create](../../service-management/vm/vm-create) a VM and [connect](../../service-management/vm/vm-connect) to it.
 1. Run the command:
 
-    ```bash
+    ```console
     sudo ethtool -L <network interface name> combined <number of queues>
     ```
 1. Check the new number of queues (parameter `Combined`):
 
-    ```bash
+    ```console
     ethtool -l <network interface name>
     ```
 
 <details>
   <summary>Example of installing queues</summary>
 
-```bash
+```console
 ubuntu@dm-test:~$ sudo ethtool -L ens3 combined 2
 ubuntu@dm-test:~$ ethtool -l ens3
 Channel parameters for ens3:

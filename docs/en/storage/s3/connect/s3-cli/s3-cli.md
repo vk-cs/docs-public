@@ -28,7 +28,7 @@ AWS CLI version 2 uses glibc, groff, and less. They are included by default in m
 
 For Linux x86 (64-bit):
 
-```bash
+```console
  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
@@ -36,7 +36,7 @@ sudo ./aws/install
 
 For Linux ARM
 
-```bash
+```console
  curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
@@ -44,7 +44,7 @@ sudo ./aws/install
 
 Check the correctness of the installation:
 
-```bash
+```console
  aws --version
 ```
 
@@ -58,7 +58,7 @@ Installation for MacOS is done using the standard MacOS user interface and brows
 
 You can check the correctness of the installation in the terminal:
 
-```bash
+```console
  aws --version
 ```
 
@@ -77,7 +77,7 @@ Run the downloaded MSI installer and follow the instructions on the screen. By d
 
 You can use the Windows Standard Command Line Interface (cmd) to confirm the installation:
 
-```bash
+```console
  aws --version
 ```
 
@@ -93,7 +93,7 @@ In the VK Cloud panel, in the "Accounts" menu of the "Object Storage" service, y
 
 The fastest way to customize your AWS CLI installation is with the command:
 
-```bash
+```console
  aws configure
 ```
 
@@ -123,7 +123,7 @@ When using the AWS CLI to work with Object Storage, there are a few things to ke
 - When using the storage classes `--storage-class`, the `STANDARD` values for Hotbox and `STANDARD_IA` for Icebox apply.
 - When working in MacOS, in some cases it is required to run the following view:
 
-```bash
+```console
  export PYTHONPATH =/Library/Python/2.7/site-packages; aws s3 <command> --endpoint-url=http://hb.ru-msk.vkcloud-storage.ru
 ```
 
@@ -131,54 +131,54 @@ When using the AWS CLI to work with Object Storage, there are a few things to ke
 
 Create a bucket:
 
-```bash
+```console
  aws s3 mb s3: //<bucket_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Changing the bucket storage class:
 
-```bash
+```console
  aws s3api create-bucket --bucket <bucket_name> --endpoint-url <destination storage class URL> --cli-input-json "{\" Bucket \ ": {\" storage-class \ ": \" <destination_class_value > \ "}}"
 ```
 
 File upload
 
-```bash
+```console
  aws s3 cp <path_to_local_file> s3: // <packet_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Downloading an object
 
-```bash
+```console
  aws s3 cp s3: // <batch_name> / <key_name> <path_to_local_file> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Synchronizing a local directory with a bucket
 
-```bash
+```console
  aws s3 sync <local_directory> s3: // <package_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Moving an object
 
-```bash
+```console
  aws s3 mv s3: // <batch_name> / <source_key_name> s3: // <bucket_name> / <destination_key_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Getting a list of objects
 
-```bash
+```console
  aws s3 ls s3: // <bucket_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Deleting an Object
 
-```bash
+```console
  aws s3 rm s3: // <bucket_name> / <key_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
 ```
 
 Removing a multi-component object
 
-```bash
+```console
  aws s3api abort-multipart-upload --bucket <bucket_name> --endpoint-url http://hb.ru-msk.vkcloud-storage.ru --key large_test_file --upload-id <multipart_upload_object_ID>
 ```

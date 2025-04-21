@@ -36,10 +36,10 @@ Here:
 
 Add the text of the example to the `volume.tf` file and run the following commands:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```
 
@@ -71,9 +71,9 @@ Here:
 
 Add the text of the example to the `snapshot.tf` file and run the following commands:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

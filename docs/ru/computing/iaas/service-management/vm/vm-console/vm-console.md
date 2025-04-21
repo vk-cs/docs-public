@@ -43,13 +43,13 @@ VNC-консоль — инструмент диагностики и управ
     1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
     1. Получите ссылку на страницу с VNC-консолью.
 
-    ```bash
+    ```console
     openstack console url show <ID виртуальной машины>
     ```
 
     Пример вывода:
 
-    ```bash
+    ```console
     +-------+-------------------------------------------------------------------------------------+
     | Field | Value                                                                               |
     +-------+-------------------------------------------------------------------------------------+
@@ -85,7 +85,7 @@ VNC-консоль — инструмент диагностики и управ
 
 Если виртуальная машина была создана из пользовательского образа, настройте консоль. Для этого добавьте в GRUB параметры:
 
-```bash
+```console
 console=tty0 console=ttyS0,115200n8
 ```
 
@@ -100,13 +100,13 @@ console=tty0 console=ttyS0,115200n8
 
 - Вывести все записи логов:
 
-   ```bash
+   ```console
    openstack console log show <ID виртуальной машины>
    ```
 
 - Вывести ограниченное количество записей:
 
-   ```bash
+   ```console
    openstack console log show --lines <кол-во записей> <ID виртуальной машины>
   ```
 

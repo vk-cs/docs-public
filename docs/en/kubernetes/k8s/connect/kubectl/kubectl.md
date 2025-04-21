@@ -32,25 +32,25 @@ The way to connect to the cluster depends on its IP address:
 
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
 
-      ```bash
+      ```console
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/linux/amd64/kubectl
       ```
 
    1. Make the `kubectl` binary file executable:
 
-      ```bash
+      ```console
       sudo chmod +x ./kubectl
       ```
 
    1. Place this file in a directory which is contained in the `PATH` environment variable, e.g. in `/usr/local/bin`:
 
-      ```bash
+      ```console
       sudo mv ./kubectl /usr/local/bin/kubectl
       ```
 
    1. Check the `kubectl` version by running the command:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -59,7 +59,7 @@ The way to connect to the cluster depends on its IP address:
 
    1. Add the Kubernetes repository:
 
-      ```bash
+      ```console
       sudo apt-get update && sudo apt-get install -y apt-transport-https
       curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
       echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
@@ -71,7 +71,7 @@ The way to connect to the cluster depends on its IP address:
 
       An example command to install the `kubectl` utility which is compatible with cluster version 1.23.6:
 
-      ```bash
+      ```console
       sudo apt-get install -y kubectl=1.23.6-00
       ```
 
@@ -83,7 +83,7 @@ The way to connect to the cluster depends on its IP address:
 
    1. Check the `kubectl` version by running the command:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -92,7 +92,7 @@ The way to connect to the cluster depends on its IP address:
 
    1. Add the Kubernetes repository:
 
-      ```bash
+      ```console
       cat << EOF > /etc/yum.repos.d/kubernetes.repo
       [kubernetes]
       name=Kubernetes
@@ -108,7 +108,7 @@ The way to connect to the cluster depends on its IP address:
 
       An example command to install the `kubectl` utility which is compatible with cluster version 1.23.6:
 
-      ```bash
+      ```console
       yum install -y kubectl-1.23.6-0
       ```
 
@@ -120,7 +120,7 @@ The way to connect to the cluster depends on its IP address:
 
    1. Check the `kubectl` version by running the command:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -131,25 +131,25 @@ The way to connect to the cluster depends on its IP address:
 
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
 
-      ```bash
+      ```console
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/darwin/amd64/kubectl
       ```
 
    1. Make the `kubectl` binary file executable:
 
-      ```bash
+      ```console
       sudo chmod +x ./kubectl
       ```
 
    1. Place this file in a directory which is contained in the `PATH` environment variable, e.g. in `/usr/local/bin`:
 
-      ```bash
+      ```console
       sudo mv ./kubectl /usr/local/bin/kubectl
       ```
 
    1. Check the `kubectl` version by running the command:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -158,19 +158,19 @@ The way to connect to the cluster depends on its IP address:
 
    1. Run one of the installation commands:
 
-      ```bash
+      ```console
       brew install kubectl
       ```
 
       Or:
 
-      ```bash
+      ```console
       brew install kubernetes-cli
       ```
 
    1. Check the `kubectl` version by running the command:
 
-      ```bash
+      ```console
       kubectl version --short
       ```
 
@@ -181,7 +181,7 @@ The way to connect to the cluster depends on its IP address:
 
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
 
-      ```powershell
+      ```console
       curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe
       ```
 
@@ -203,7 +203,7 @@ The way to connect to the cluster depends on its IP address:
 
    1. Check the `kubectl` version by running the command:
 
-      ```powershell
+      ```console
       kubectl version --short
       ```
 
@@ -236,7 +236,7 @@ On the host:
 
 1. Run the command:
 
-   ```bash
+   ```console
    kubectl cluster-info
    ```
 
@@ -249,7 +249,7 @@ On the host:
 
 Run the command on the host:
 
-```bash
+```console
 kubectl cluster-info
 ```
 

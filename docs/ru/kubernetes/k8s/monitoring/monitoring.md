@@ -29,7 +29,7 @@
 
    1. В отдельной сессии терминала выполните команду:
 
-      ```bash
+      ```console
       kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
       ```
 

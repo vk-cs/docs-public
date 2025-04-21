@@ -97,7 +97,7 @@ CORS использует дополнительные HTTP-заголовки. 
 <details>
   <summary>Общий вид подписанного URL</summary>
 
-```bash
+```console
 https://hb.ru-msk.vkcloud-storage.ru/<имя_бакета>/<имя_ключа>?
      X-Amz-Algorithm=AWS4-HMAC-SHA256
     &X-Amz-Expires=<интервал времени в секундах>

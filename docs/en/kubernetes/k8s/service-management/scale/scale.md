@@ -57,7 +57,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
       1. Run the command:
 
-         ```bash
+         ```console
          openstack flavor list
          ```
 
@@ -84,19 +84,19 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    1. Check correctness of the Terraform configuration file:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Familiarize yourself with the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the planned changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -163,7 +163,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
       1. Run the command:
 
-         ```bash
+         ```console
          openstack flavor list
          ```
 
@@ -191,19 +191,19 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    1. Check correctness of the Terraform configuration file:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Familiarize yourself with the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the planned changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -272,19 +272,19 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    1. Check correctness of the Terraform configuration file:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Familiarize yourself with the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the planned changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -351,19 +351,19 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    1. Check correctness of the Terraform configuration file:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Familiarize yourself with the planned changes:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Apply the planned changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 

@@ -39,13 +39,13 @@ The following will be used:
 
 1. On the local machine, run the command:
 
-   ```bash
+   ```console
    dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
 1. Verify that uploading has started using the command:
 
-   ```bash
+   ```console
    aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -77,7 +77,7 @@ The following will be used:
 
 1. Check the partitions using the command:
 
-   ```bash
+   ```console
    aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9Bv63XXXX
    ```
 
@@ -124,7 +124,7 @@ The following will be used:
    <details>
     <summary>Example of command output</summary>
 
-   ```bash
+   ```console
    NAME  MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
    vda   252:0   0  10G  0  disk
    -vda1 252:1   0  10G  0  part /
@@ -135,7 +135,7 @@ The following will be used:
 
 1. Place the image on the disk using the command:
 
-   ```bash
+   ```console
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 

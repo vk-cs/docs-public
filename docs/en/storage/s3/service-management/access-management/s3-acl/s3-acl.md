@@ -72,7 +72,7 @@ Canonical user ID is a unique identifier consisting of a set of characters. Exam
 
 It can be calculated using the command
 
-```bash
+```console
  aws s3api list-buckets --query Owner.ID --output text --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
 ```
 

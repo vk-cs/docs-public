@@ -25,7 +25,7 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 1. [Check](../check-virtio) availability of VirtIO drivers in the system.
 2. Check availability QEMU Guest Agent:
 
-   ```bash
+   ```console
    systemctl status qemu-guest-agent
    ```
 
@@ -33,7 +33,7 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
 3. Check if the Cloud-Init utility is installed:
 
-   ```bash
+   ```console
    cloud-init --version
    ```
 
@@ -88,7 +88,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli) and you can [sign in](/en/tools-for-using-services/cli/openstack-cli) to it.
 2. Convert a disk file from VMDK format to RAW:
 
-   ```bash
+   ```console
    qemu-img convert -f vmdk -O raw <file_path.vmdk> <file_path.raw>
    ```
 
@@ -102,7 +102,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    <tabpanel>
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <file_path.raw> <image name>
    ```
 
@@ -111,7 +111,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    When importing a Windows image, specify the disk bus type — IDE (`hw_disk_bus` parameter):
 
-   ```bash
+   ```console
    openstack image create --progress --private --container-format bare --disk-format raw <file_path.raw> --property store=s3 --property os_type=windows --property hw_disk_bus=ide --min-disk 40 <image name>
    ```
 
@@ -120,13 +120,13 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    If the VM needs to support backup, add parameters to the command:
 
-   ```bash
+   ```console
    --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes
    ```
 
 4. Check the image download in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Servers → Images** or via CLI:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
@@ -162,7 +162,7 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/service-managem
 3. [Create a image](/en/computing/iaas/service-management/images/images-manage#creating_an_image) from the VM's boot disk.
 4. Change the disk bus type of the new image:
 
-   ```bash
+   ```console
    openstack image set --property hw_disk_bus=virtio <new image ID>
    ```
 

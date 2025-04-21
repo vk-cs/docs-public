@@ -32,7 +32,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export VKCLOUD_KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    export SA_KUBECONFIG="/home/user/.kube/sa_kubeconfig.yaml"
 
@@ -41,7 +41,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $VKCLOUD_KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    $SA_KUBECONFIG="C:\Users\user\.kube\sa_kubeconfig.yaml"
 
@@ -52,7 +52,7 @@
 
 1. Убедитесь, что после подключения к кластеру есть права на создание необходимых ресурсов Kubernetes:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create serviceaccount
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create secret
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create clusterrolebinding
@@ -76,7 +76,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      create serviceaccount example-sa -n kube-system
 
@@ -85,7 +85,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      create serviceaccount example-sa -n kube-system
 
@@ -104,7 +104,7 @@
 
    Чтобы получить список всех кластерных ролей с подробным описанием, выполните команду:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG describe clusterroles
    ```
 
@@ -123,7 +123,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      create clusterrolebinding example-binding \
        --serviceaccount=kube-system:example-sa \
@@ -133,7 +133,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      create clusterrolebinding example-binding `
        --serviceaccount=kube-system:example-sa `
@@ -181,7 +181,7 @@
 
    1. Примените файл манифеста:
 
-      ```bash
+      ```console
       kubectl --kubeconfig $VKCLOUD_KUBECONFIG apply -f example-token.yaml
       ```
 
@@ -200,7 +200,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      describe serviceaccount example-sa -n kube-system
 
@@ -209,7 +209,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      describe serviceaccount example-sa -n kube-system
 
@@ -247,7 +247,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      get secret example-token -n kube-system \
      --template={{.data.token}} | base64 --decode
@@ -257,7 +257,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    [System.Text.Encoding]::UTF8.GetString( `
      [System.Convert]::FromBase64String( `
        (kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -281,13 +281,13 @@
 
 1. Создайте основу для этого kubeconfig путем копирования kubeconfig, загруженного из личного кабинета VK Cloud.
 
-   ```bash
+   ```console
    cp $VKCLOUD_KUBECONFIG $SA_KUBECONFIG
    ```
 
 1. (Опционально) Познакомьтесь со структурой kubeconfig:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG config view
    ```
 
@@ -349,7 +349,7 @@
          </tablist>
          <tabpanel>
 
-         ```bash
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
            config get-users
 
@@ -358,7 +358,7 @@
          </tabpanel>
          <tabpanel>
 
-         ```powershell
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
            config get-users
 
@@ -376,7 +376,7 @@
          </tablist>
          <tabpanel>
 
-         ```bash
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
            config delete-user <имя пользователя>
 
@@ -385,7 +385,7 @@
          </tabpanel>
          <tabpanel>
 
-         ```powershell
+         ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
            config delete-user <имя пользователя>
 
@@ -411,7 +411,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
         config set-credentials example-sa --token="<значение токена>"
 
@@ -420,7 +420,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
         config set-credentials example-sa --token="<значение токена>"
 
@@ -444,7 +444,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
         config set-context --current --user="example-sa"
 
@@ -453,7 +453,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
         config set-context --current --user="example-sa"
 
@@ -470,7 +470,7 @@
 
 1. (Опционально) Проверьте обновленное содержимое kubeconfig для сервисного аккаунта:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG config view
    ```
 
@@ -509,7 +509,7 @@
 
 1. Получите информацию о кластере:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG cluster-info
    ```
 
@@ -525,7 +525,7 @@
 
 1. Получите список основных ресурсов в пространстве имен `default`:
 
-   ```bash
+   ```console
    kubectl --kubeconfig $SA_KUBECONFIG get all -n default
    ```
 
@@ -555,7 +555,7 @@
 
 Для этого удалите секрет, который используется для хранения токена:
 
-```bash
+```console
 kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-system
 ```
 
@@ -570,7 +570,7 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
      delete clusterrolebinding example-binding
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -583,7 +583,7 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
      delete clusterrolebinding example-binding
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `

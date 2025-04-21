@@ -13,14 +13,14 @@
 
 1. Установите Python 3, если он еще не установлен:
 
-   ```bash
+   ```console
    sudo apt update
    sudo apt install python3
    ```
    
 1. Установите pip3, если он еще не установлен:
 
-   ```bash
+   ```console
    sudo apt install python3-pip
    ```
 
@@ -35,20 +35,20 @@
 
 1. Установите Python 3, если он еще не установлен:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo dnf install python3 -y
    ```
    
 1. Установите pip3, если он еще не установлен:
 
-   ```bash
+   ```console
    sudo dnf install python3-pip -y
    ```
 
 1. Установите OpenStack SDK версии 1.0.1:
 
-   ```bash
+   ```console
    sudo pip3 install openstacksdk==1.0.1
    ```
 
@@ -57,7 +57,7 @@
 
 Установите Python 3 и pip3, если они еще не установлены:
 
-```bash
+```console
 brew install python3
 ```
 
@@ -91,14 +91,14 @@ brew install python3
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    pip3 install python-openstackclient
    ```
    
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    pip install python-openstackclient
    ```
    
@@ -107,7 +107,7 @@ brew install python3
    
 1. Проверьте, что OpenStack CLI установлен:
 
-   ```bash
+   ```console
    openstack --version
    ```
    
@@ -117,7 +117,7 @@ brew install python3
 
 1. Установите пакеты для работы с отдельными сервисами OpenStack:
 
-   ```bash
+   ```console
    pip3 install python-<НАЗВАНИЕ_СЕРВИСА>client
    ```
 
@@ -133,7 +133,7 @@ brew install python3
 
 2. Установите клиент общего файлового хранилища Manila CLI с помощью команды:
 
-   ```bash
+   ```console
    pip3 install "python-manilaclient==4.9.1"
    ```
 
@@ -164,7 +164,7 @@ brew install python3
 
    1. Запустите выполнение скрипта:
 
-      ```bash
+      ```console
       source <НАЗВАНИЕ_ПРОЕКТА>-openrc.sh
       ```
 
@@ -175,7 +175,7 @@ brew install python3
 
    1. Скопируйте из файла `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` значения параметров без кавычек и выполните команды:
 
-      ```powershell
+      ```console
       set OS_INTERFACE=<OS_INTERFACE>
       set OS_IDENTITY_API_VERSION=<OS_IDENTITY_API_VERSION>
       set OS_PROJECT_ID=<OS_PROJECT_ID>
@@ -187,7 +187,7 @@ brew install python3
 
    2. Укажите пароль, выполнив команду:
 
-      ```powershell
+      ```console
       set OS_PASSWORD=<ПАРОЛЬ>
       ```
 
@@ -198,7 +198,7 @@ brew install python3
 
    1. Скопируйте данные из файла `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` и выполните команды:
 
-      ```powershell
+      ```console
       $env:OS_INTERFACE = "<OS_INTERFACE>"
       $env:OS_IDENTITY_API_VERSION = "<OS_IDENTITY_API_VERSION>"
       $env:OS_PROJECT_ID = "<OS_PROJECT_ID>"
@@ -210,7 +210,7 @@ brew install python3
 
    2. Укажите пароль, выполнив команду:
 
-      ```powershell
+      ```console
       $env:OS_PASSWORD = "<ПАРОЛЬ>"
       ```
 
@@ -223,7 +223,7 @@ brew install python3
 
 1. Проверьте наличие клиента OpenStack:
 
-   ```bash
+   ```console
    openstack --version
    ```
 
@@ -239,21 +239,21 @@ brew install python3
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    env | grep OS_
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    set | findstr OS_
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    gci env: | where name -like 'OS_*'
    ```
 
@@ -264,7 +264,7 @@ brew install python3
 
 3. Выполните команду, которая использует клиент OpenStack. Например:
 
-   ```bash
+   ```console
    openstack project list
    ```
 
@@ -274,14 +274,14 @@ brew install python3
 
 - Просмотреть список доступных шаблонов конфигураций:
 
-   ```bash
+   ```console
    openstack flavor list
    ```
 
    <details>
    <summary>Пример результата выполнения команды</summary>
 
-   ```bash
+   ```console
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
    | ID                                   | Name              |   RAM | Disk | Ephemeral | VCPUs | Is Public |
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
@@ -298,14 +298,14 @@ brew install python3
 
 - Вывести информацию об отдельном образе:
 
-   ```bash
+   ```console
    openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
 
    <details>
    <summary>Пример результата выполнения команды (сокращенный вывод)</summary>
 
-    ```bash
+    ```console
     +------------------+------------------------------------------------------+
     | Field            | Value                                                |
     +------------------+------------------------------------------------------+
@@ -334,14 +334,14 @@ brew install python3
 
 - Вывести список [зон доступности](/ru/intro/start/concepts/architecture#az):
 
-   ```bash
+   ```console
    openstack availability zone list
    ```
 
    <details>
    <summary>Пример результата выполнения команды (сокращенный вывод)</summary>
 
-    ```bash
+    ```console
     +-----------+-------------+
     | Zone Name | Zone Status |
     +-----------+-------------+

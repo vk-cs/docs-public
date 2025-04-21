@@ -38,7 +38,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Centos_8_5_Prometheus` VM.
 1. Download Prometheus and unzip the downloaded archive:
 
-   ```bash
+   ```console
    sudo su
    export VERSION="2.45.1"
    wget https://github.com/prometheus/prometheus/releases/download/v$VERSION/prometheus-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
@@ -46,7 +46,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. Copy the contents of the repository `prometheus-2.45.1.linux-amd64`:
 
-   ```bash
+   ```console
    mkdir /etc/prometheus
    mkdir /var/lib/prometheus
    cp /tmp/prometheus-$VERSION.linux-amd64/prometheus /usr/local/bin
@@ -58,13 +58,13 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. (Optional) Delete files from the temporary directory:
 
-   ```bash
+   ```console
    rm -rf /tmp/prometheus-$VERSION.linux-amd64
    ```
 
 1. Create a group and a user `prometheus`, assign him rights to the associated repositories:
 
-   ```bash
+   ```console
    groupadd --system prometheus
    useradd --system -g prometheus -s /bin/false prometheus
    chown -R prometheus:prometheus /var/lib/prometheus /etc/prometheus
@@ -103,7 +103,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. Run Prometheus:
 
-   ```bash
+   ```console
    systemctl daemon-reload
    systemctl start prometheus.service
    systemctl enable prometheus.service
@@ -111,7 +111,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. Make sure that Prometheus is working correctly:
 
-   ```bash
+   ```console
    systemctl status prometheus.service
    ```
 
@@ -120,7 +120,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    <details>
     <summary>An example of the expected output</summary>
 
-    ```bash
+    ```console
     prometheus.service - Prometheus
      Loaded: loaded (/etc/systemd/system/prometheus.service; enabled; vendor preset: disabled)
      Active: active (running) since Mon 2023-11-20 16:11:25 UTC; 25min ago
@@ -169,7 +169,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    <details>
     <summary>Example with the sysbench utility</summary>
 
-   ```bash
+   ```console
    sysbench cpu  --cpu-max-prime=2000000 --time=60 run
    sysbench fileio --file-test-mode=rndrw --time=60 prepare
    sysbench fileio --file-test-mode=rndrw --time=60 run

@@ -167,7 +167,7 @@ Install the following tools on the host:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    mkdir ~/.kube && \
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
@@ -175,7 +175,7 @@ Install the following tools on the host:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    mkdir ~/.kube; `
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
@@ -187,7 +187,7 @@ Install the following tools on the host:
 
    1. Run the command:
 
-      ```bash
+      ```console
       kubectl cluster-info
       ```
 
@@ -215,7 +215,7 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
 
 1. In a separate terminal session, run the command:
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
    ```
 
@@ -239,7 +239,7 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
 
 1. In a separate terminal session, run the command:
 
-   ```bash
+   ```console
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
@@ -301,11 +301,11 @@ To put your own images in the Docker cluster registry:
 
       - Run one of the commands to perform restart:
 
-        ```bash
+        ```console
         sudo systemd restart docker
         ```
 
-        ```bash
+        ```console
         sudo service docker restart
         ```
 
@@ -335,14 +335,14 @@ To put your own images in the Docker cluster registry:
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       mkdir ~/image-build && cd ~/image-build
       ```
 
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       mkdir ~/image-build; cd ~/image-build
       ```
 
@@ -394,7 +394,7 @@ To put your own images in the Docker cluster registry:
 
    1. Run the build process:
 
-      ```bash
+      ```console
       docker build . -t 192.0.2.22:5000/nginx-k8s-demo:latest
       ```
 
@@ -404,19 +404,19 @@ To put your own images in the Docker cluster registry:
 
    1. Sign in to the registry:
 
-      ```bash
+      ```console
       docker login 192.0.2.22:5000 --username registry --password registry-password-123456
       ```
 
    1. Push the image to the registry:
 
-      ```bash
+      ```console
       docker push 192.0.2.22:5000/nginx-k8s-demo:latest
       ```
 
    1. Check that the image is in the registry:
 
-      ```bash
+      ```console
       curl -k -X GET -u registry:registry-password-123456 https://192.0.2.22:5000/v2/_catalog
       ```
 
@@ -428,7 +428,7 @@ To put your own images in the Docker cluster registry:
 
    1. Create a Kubernetes secret so you can access the uploaded image from Kubernetes:
 
-      ```bash
+      ```console
       kubectl create secret docker-registry k8s-registry-creds --docker-server=192.0.2.22:5000 --docker-username=registry --docker-password=registry-password-123456
       ```
 
@@ -454,14 +454,14 @@ To deploy the applications:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    mkdir ~/k8s-deployments && cd ~/k8s-deployments
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    mkdir ~/k8s-deployments; cd ~/k8s-deployments
    ```
 
@@ -608,7 +608,7 @@ To deploy the applications:
 
 1. Deploy the applications:
 
-   ```bash
+   ```console
    kubectl apply -f deploy-coffee.yaml -f deploy-tea.yaml
    ```
 
@@ -626,7 +626,7 @@ To deploy the applications:
 
    - `kubectl`: run the command.
 
-     ```bash
+     ```console
      kubectl get pv
      ```
 
@@ -643,7 +643,7 @@ To deploy the applications:
 
    - `kubectl`: run the command.
 
-     ```bash
+     ```console
      kubectl get deployment
      ```
 
@@ -660,7 +660,7 @@ To deploy the applications:
 
    - `kubectl`: run the command.
 
-     ```bash
+     ```console
      kubectl get svc
      ```
 
@@ -713,13 +713,13 @@ For Ingress controller to route requests to the corresponding Service resources,
 
 1. Deploy the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) resource:
 
-   ```bash
+   ```console
    kubectl apply -f deploy-ingress.yaml
    ```
 
 1. Check if the deployment is correct by running the following `kubectl` command:
 
-   ```bash
+   ```console
    kubectl get ingress
    ```
 
@@ -738,7 +738,7 @@ Requests for:
 </tablist>
 <tabpanel>
 
-```bash
+```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/tea
 ```
 
@@ -759,7 +759,7 @@ K8S Persistent Volume status: present
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/coffee
 ```
 

@@ -27,7 +27,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
    1. Run the command:
 
-      ```bash
+      ```console
       openstack flavor list
       ```
 
@@ -63,19 +63,19 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 1. Check correctness of the Terraform configuration file:
 
-   ```bash
+   ```console
    terraform validate
    ```
 
 1. Familiarize yourself with the planned changes:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Apply the planned changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -181,19 +181,19 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 
 1. Check correctness of the Terraform configuration file:
 
-   ```bash
+   ```console
    terraform validate
    ```
 
 1. Familiarize yourself with the planned changes:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Apply the planned changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -244,19 +244,19 @@ To increase update speed, the container service updates multiple nodes in a grou
 
 1. Check correctness of the Terraform configuration file:
 
-   ```bash
+   ```console
    terraform validate
    ```
 
 1. Familiarize yourself with the planned changes:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Apply the planned changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -292,19 +292,19 @@ The single cluster node group cannot be deleted from the management console. How
 
 1. Check correctness of the Terraform configuration file:
 
-   ```bash
+   ```console
    terraform validate
    ```
 
 1. Familiarize yourself with the planned changes:
 
-   ```bash
+   ```console
    terraform plan
    ```
 
 1. Apply the planned changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 

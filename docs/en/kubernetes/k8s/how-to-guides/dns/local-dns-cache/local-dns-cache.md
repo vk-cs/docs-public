@@ -297,13 +297,13 @@ To deploy a DNS server:
 
 1. Create [pod that includes utilities to work with DNS](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/):
 
-   ```bash
+   ```console
    kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml
    ```
 
 1. Verify that the pod is successfully created by running the command:
 
-   ```bash
+   ```console
    kubectl get pod dnsutils
    ```
 
@@ -316,7 +316,7 @@ To deploy a DNS server:
 
 1. Connect to a bash session inside this pod:
 
-   ```bash
+   ```console
    kubectl exec -it dnsutils -- bash
    ```
 
@@ -329,7 +329,7 @@ To deploy a DNS server:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    nslookup cloud.vk.com && \
    nslookup kubernetes.default
    ```
@@ -358,7 +358,7 @@ To deploy a DNS server:
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    nslookup cloud.vk.com 169.254.0.10 && \
    nslookup kubernetes.default 169.254.0.10
    ```
@@ -389,7 +389,7 @@ To deploy a DNS server:
 
 1. End the bash session in the `dnsutils` pod:
 
-   ```bash
+   ```console
    exit
    ```
 
@@ -404,7 +404,7 @@ To deploy a DNS server:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete -f https://k8s.io/examples/admin/dns/dnsutils.yaml
    kubectl  -f nodelocaldns.yaml
 
@@ -413,7 +413,7 @@ To deploy a DNS server:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete -f https://k8s.io/examples/admin/dns/dnsutils.yaml; `
    kubectl  -f nodelocaldns.yaml
    ```

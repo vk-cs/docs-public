@@ -17,7 +17,7 @@ Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as we
 3. [Connect to VM](../../service-management/vm/vm-connect/vm-connect-nix).
 4. Output a list of disks and find the name of the required disk (for example, `/dev/vdb`):
 
-   ```bash
+   ```console
    sudo fdisk -l 
    ```
 
@@ -25,19 +25,19 @@ Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as we
 
    1. Check that there is no file system on the disk:
 
-      ```bash
+      ```console
       lsblk -f
       ```
 
    2. Format the disk:
 
-      ```bash
+      ```console
       sudo mkfs.ext4 /dev/vdb
       ```
 
    3. Check the formatting result:
 
-      ```bash
+      ```console
       lsblk -f
       ```
 
@@ -45,32 +45,32 @@ Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as we
 
    1. Create a directory to mount the disk `/volumes/disk1`:
 
-      ```bash
+      ```console
       sudo mkdir /volumes
       sudo mkdir /volumes/disk1
       ```
 
    2. Add a line with the disk mount parameters to the `/etc/fstab` file:
 
-      ```bash
+      ```console
       sudo sed -i '$a /dev/vdb /volumes/disk1 auto defaults 0 0' /etc/fstab
       ```
 
    3. Print the contents of the file and make sure that the line is added:
 
-      ```bash
+      ```console
       cat /etc/fstab
       ```
 
 7. Restart the VM:
 
-   ```bash
+   ```console
    sudo reboot
    ```
 
 8. Make sure that the disk is mounted in the specified directory:
 
-   ```bash
+   ```console
    lsblk
    ```
 
@@ -78,7 +78,7 @@ Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as we
 
 Run the command to install:
 
-```bash
+```console
 sudo yum install -y cryptsetup cryptsetup-reencrypt
 ```
 
@@ -93,20 +93,20 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 1. Make the disk [non-bootable](../../service-management/volumes#replacing_root_disk).
 2. Stop all processes using the disk:
 
-   ```bash
+   ```console
    sudo lsof /volumes/disk1
    sudo systemctl stop volumes-disk1.mount
    ```
 
 3. See the size of the current file system:
 
-   ```bash
+   ```console
    sudo e2fsck -f /dev/vdb
    ```
 
    Example of the result of executing the command:
 
-   ```bash
+   ```console
    e2fsck 1.42.9 (28-Dec-2013)
    Pass 1: Checking inodes, blocks, and sizes
    Pass 2: Checking directory structure
@@ -118,13 +118,13 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
 4. Change the file system size to the minimum possible:
 
-   ```bash
+   ```console
    sudo resize2fs -M /dev/vdb
    ```
 
    Example of the result of executing the command:
 
-   ```bash
+   ```console
    resize2fs 1.42.9 (28-Dec-2013)
    Resizing the filesystem on /dev/vdb to 24971 (4k) blocks.
    The filesystem on /dev/vdb is now 24971 blocks long.
@@ -132,13 +132,13 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
 5. Start disk encryption:
 
-   ```bash
+   ```console
    sudo cryptsetup-reencrypt /dev/vdb --new --reduce-device-size 4096S
    ```
 
 6. Enter and confirm the keyword:
 
-   ```bash
+   ```console
    Enter new passphrase:
    Verify passphrase:
    ```
@@ -151,7 +151,7 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
 7. Wait for the encryption process to complete:
 
-   ```bash
+   ```console
       Finished, time 00:23.401, 3875 MiB written, speed 165.6 MiB/s
    ```
 
@@ -159,7 +159,7 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
    1. Run the command:
 
-      ```bash
+      ```console
       sudo cryptsetup open /dev/vdb vdb_crypt
       ```
 
@@ -167,25 +167,25 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
 9. Expand the file system to disk size:
 
-   ```bash
+   ```console
    sudo resize2fs /dev/mapper/vdb_crypt
    ```
 
 10. Change the name of the device to mount:
 
-   ```bash
+   ```console
    sudo sed 's#/dev/vdb#/dev/mapper/vdb_crypt#' -i /etc/fstab
    ```
 
 11. Output the contents of the `fstab` file and make sure that the entry has been changed:
 
-      ```bash
+      ```console
       cat /etc/fstab
       ```
 
 12. Mount the disk:
 
-      ```bash
+      ```console
       sudo mount /volumes/disk1
       ```
 
@@ -193,13 +193,13 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
       1. Get `root` access:
 
-         ```bash
+         ```console
          sudo -s
          ```
 
       2. Run the command:
 
-         ```bash
+         ```console
          UUID=$(blkid -s UUID -o value /dev/vdb)
          echo "vdb_crypt UUID=${UUID} none luks,discard" >> /etc/crypttab
          exit
@@ -217,19 +217,19 @@ Configure the bootloader so that the passphrase for decrypting the disk is reque
 
 1. Change the settings of the `grub` loader. Remove the `console=ttyS0,115200` setting in the bootloader parameters:
 
-   ```bash
+   ```console
    sudo sed 's#console=ttyS0,115200 ##' -i /etc/default/grub
    ```
 
 2. Review the `grub` file and make sure that the setting is removed:
 
-   ```bash
+   ```console
    cat /etc/default/grub
    ```
 
 3. Configure the bootloader:
 
-   ```bash
+   ```console
    sudo grub2-mkconfig -o /boot/grub2/grub.cfg
    ```
 
@@ -239,7 +239,7 @@ Configure the bootloader so that the passphrase for decrypting the disk is reque
 
 1. Go to the [VNC Console](../../service-management/vm/vm-console#the_vnc_console) virtual machine. In the console output, when the operating system boots, you will be prompted to enter a keyword:
 
-   ```bash
+   ```console
    Please enter passphrase for disk vdb_crypt on /volumes/disk1:
    ```
 

@@ -21,7 +21,7 @@ Follow the steps on the host from which you plan to connect to the cluster:
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    icacls.exe 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml' `
      /c /t `
      /Inheritance:d `
@@ -32,7 +32,7 @@ Follow the steps on the host from which you plan to connect to the cluster:
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
@@ -51,14 +51,14 @@ Follow the steps on the host from which you plan to connect to the cluster:
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 

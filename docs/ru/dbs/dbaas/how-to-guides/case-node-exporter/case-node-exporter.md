@@ -38,7 +38,7 @@
 1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
 1. Скачайте Prometheus и распакуйте скачанный архив:
 
-   ```bash
+   ```console
    sudo su
    export VERSION="2.45.1"
    wget https://github.com/prometheus/prometheus/releases/download/v$VERSION/prometheus-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
@@ -46,7 +46,7 @@
 
 1. Скопируйте содержимое репозитория `prometheus-2.45.1.linux-amd64`:
 
-   ```bash
+   ```console
    mkdir /etc/prometheus
    mkdir /var/lib/prometheus
    cp /tmp/prometheus-$VERSION.linux-amd64/prometheus /usr/local/bin
@@ -58,13 +58,13 @@
 
 1. (Опционально) Удалите файлы из временной директории:
 
-   ```bash
+   ```console
    rm -rf /tmp/prometheus-$VERSION.linux-amd64
    ```
 
 1. Создайте группу и пользователя `prometheus`, назначьте ему права на связанные репозитории:
 
-   ```bash
+   ```console
    groupadd --system prometheus
    useradd --system -g prometheus -s /bin/false prometheus
    chown -R prometheus:prometheus /var/lib/prometheus /etc/prometheus
@@ -103,7 +103,7 @@
 
 1. Запустите Prometheus:
 
-   ```bash
+   ```console
    systemctl daemon-reload
    systemctl start prometheus.service
    systemctl enable prometheus.service
@@ -111,7 +111,7 @@
 
 1. Убедитесь, что Prometheus работает корректно:
 
-   ```bash
+   ```console
    systemctl status prometheus.service
    ```
 
@@ -120,7 +120,7 @@
    <details>
     <summary>Пример ожидаемого вывода</summary>
 
-    ```bash
+    ```console
     prometheus.service - Prometheus
      Loaded: loaded (/etc/systemd/system/prometheus.service; enabled; vendor preset: disabled)
      Active: active (running) since Mon 2023-11-20 16:11:25 UTC; 25min ago
@@ -169,7 +169,7 @@
    <details>
     <summary>Пример с утилитой sysbench</summary>
 
-   ```bash
+   ```console
    sysbench cpu  --cpu-max-prime=2000000 --time=60 run
    sysbench fileio --file-test-mode=rndrw --time=60 prepare
    sysbench fileio --file-test-mode=rndrw --time=60 run

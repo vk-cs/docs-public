@@ -57,7 +57,7 @@
 
       1. Выполните команду:
 
-         ```bash
+         ```console
          openstack flavor list
          ```
 
@@ -84,19 +84,19 @@
 
    1. Проверьте конфигурационный файл Terraform на корректность:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Ознакомьтесь с планируемыми изменениями:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Примените планируемые изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -163,7 +163,7 @@
 
       1. Выполните команду:
 
-         ```bash
+         ```console
          openstack flavor list
          ```
 
@@ -191,19 +191,19 @@
 
    1. Проверьте конфигурационный файл Terraform на корректность:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Ознакомьтесь с планируемыми изменениями:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Примените планируемые изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -272,19 +272,19 @@
 
    1. Проверьте конфигурационный файл Terraform на корректность:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Ознакомьтесь с планируемыми изменениями:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Примените планируемые изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -351,19 +351,19 @@
 
    1. Проверьте конфигурационный файл Terraform на корректность:
 
-      ```bash
+      ```console
       terraform validate
       ```
 
    1. Ознакомьтесь с планируемыми изменениями:
 
-      ```bash
+      ```console
       terraform plan
       ```
 
    1. Примените планируемые изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
