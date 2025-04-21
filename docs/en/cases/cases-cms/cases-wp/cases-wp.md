@@ -122,5 +122,5 @@ Deployed virtual resources are charged. If you don't need them anymore:
 
 - [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Almalinux_9_WP` VM.
 - [Delete](/en/dbs/dbaas/service-management/delete) `MySQL-9341` instance.
-- If necessary, [delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) `212.233.95.135` floating IP address.
+- If necessary, [delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) `212.233.95.135` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-wp.example.vk.cloud` DNS record.

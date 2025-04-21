@@ -185,7 +185,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 ## get_external_networks
 
-Get a list of all [external networks](/en/networks/vnet/concepts/net-types#external_network) available in the project.
+Get a list of all [external networks](/en/networks/vnet/concepts/net-types#external_net) available in the project.
 
 Required token role: `Administrator`. [Read more about token roles](../lib-authz).
 
