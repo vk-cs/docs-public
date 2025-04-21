@@ -54,7 +54,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       curl \
         --request GET \
         --url https://<эндпоинт API>/<идентификатор проекта>/instances \
@@ -64,7 +64,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       curl `
         --request GET `
         --url https://<эндпоинт API>/<идентификатор проекта>/instances `
@@ -162,7 +162,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       curl \
         --request PATCH \
         --url https://<эндпоинт API>/<идентификатор проекта>/instances/<идентификатор инстанса с ролью Master> \
@@ -178,7 +178,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       curl `
         --request PATCH `
         --url https://<эндпоинт API>/<идентификатор проекта>/instances/<идентификатор инстанса с ролью Master> `
@@ -205,7 +205,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       curl \
         --request GET \
         --url https://<эндпоинт API>/<идентификатор проекта>/instances/<идентификатор инстанса> \
@@ -215,7 +215,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       curl `
         --request GET `
         --url https://<эндпоинт API>/<идентификатор проекта>/instances/<идентификатор инстанса> `
@@ -244,7 +244,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       curl \
         --request GET \
         --url https://<эндпоинт API>/<идентификатор проекта>/clusters \
@@ -254,7 +254,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       curl `
         --request GET `
         --url https://<эндпоинт API>/<идентификатор проекта>/clusters `
@@ -304,7 +304,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       curl \
         --request POST \
         --url https://<эндпоинт API>/<идентификатор проекта>/clusters/<идентификатор кластера> \
@@ -321,7 +321,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       curl \
         --request POST `
         --url https://<эндпоинт API>/<идентификатор проекта>/clusters/<идентификатор кластера> `
@@ -349,7 +349,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       curl \
         --request GET \
         --url https://<эндпоинт API>/<идентификатор проекта>/clusters/<идентификатор кластера> \
@@ -359,7 +359,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       curl `
         --request GET `
         --url https://<эндпоинт API>/<идентификатор проекта>/clusters/<идентификатор кластера> `

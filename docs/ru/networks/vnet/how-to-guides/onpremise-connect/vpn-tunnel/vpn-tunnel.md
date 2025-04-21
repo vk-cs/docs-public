@@ -197,7 +197,7 @@
 
    1. Разрешите прохождение трафика с любых адресов через этот порт:
 
-      ```bash
+      ```console
       openstack port set <ИДЕНТИФИКАТОР_ПОРТА> --allowed-address ip-address=0.0.0.0/0
       ```
 
@@ -205,7 +205,7 @@
 
 1. Включите IP Forwarding, чтобы виртуальная машина могла маршрутизировать трафик из приватной сети в VPN-туннель:
 
-   ```bash
+   ```console
    echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
    sudo sysctl -p
 
@@ -213,7 +213,7 @@
 
 1. Установите StrongSwan — реализацию IPsec VPN для Linux:
 
-   ```bash
+   ```console
    sudo apt update
    sudo apt install -y strongswan libcharon-extra-plugins libcharon-extauth-plugins libstrongswan-extra-plugins
 
@@ -254,7 +254,7 @@
 
 1. Перезапустите сервис StrongSwan:
 
-   ```bash
+   ```console
    sudo systemctl restart strongswan-starter
    ```
 
@@ -330,7 +330,7 @@
 
 1. Выполните пинг виртуальной машины `clientVM` с виртуальной машины `vkcloudVM`:
 
-   ```bash
+   ```console
    ping 172.16.0.4
    ```
 

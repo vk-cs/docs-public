@@ -1,16 +1,16 @@
 Docker CE позволяет работать с образами Docker и управлять контейнерами. Для этого используются [команды Docker CLI](https://docs.docker.com/engine/reference/commandline/cli/). Команда Docker состоит из опций (options) и подкоманд (subcommands):
 
-```bash
+```console
 docker [OPTIONS] SUBCOMMAND
 ```
 
 Чтобы посмотреть справку по Docker CLI, воспользуйтесь командами:
 
-```bash
+```console
 docker --help
 ```
 
-```bash
+```console
 docker SUBCOMMAND --help
 ```
 
@@ -31,7 +31,7 @@ docker SUBCOMMAND --help
 
 1. Посмотрите доступные образы с Ubuntu в Docker Hub:
 
-   ```bash
+   ```console
    sudo docker search ubuntu
    ```
 
@@ -57,7 +57,7 @@ docker SUBCOMMAND --help
 
 1. Загрузите образ `ubuntu`:
 
-   ```bash
+   ```console
    sudo docker pull ubuntu
    ```
 
@@ -79,7 +79,7 @@ docker SUBCOMMAND --help
 
 1. Убедитесь, что образ загружен, выполнив команду для просмотра загруженных образов:
 
-   ```bash
+   ```console
    sudo docker images
    ```
 
@@ -104,7 +104,7 @@ docker SUBCOMMAND --help
 
 1. Создайте и запустите контейнер:
 
-   ```bash
+   ```console
    sudo docker run -it ubuntu
    ```
 
@@ -120,13 +120,13 @@ docker SUBCOMMAND --help
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       apt update && apt install nodejs -y
       ```
 
    1. Выведите информацию об установленной версии Node.js:
 
-      ```bash
+      ```console
       node -v
       ```
 
@@ -138,7 +138,7 @@ docker SUBCOMMAND --help
 
 1. Выйдите из командной строки bash контейнера:
 
-   ```bash
+   ```console
    exit
    ```
 
@@ -155,14 +155,14 @@ docker SUBCOMMAND --help
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker ps -a
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker ps
    ```
 
@@ -192,33 +192,33 @@ docker SUBCOMMAND --help
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker start <идентификатор контейнера>
    ```
 
    Пример команды для запуска контейнера `ubuntu` с идентификатором `8502eb90112b`:
 
-   ```bash
+   ```console
    sudo docker start 8502eb90112b
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker stop <идентификатор контейнера>
    ```
 
    Пример команды для остановки контейнера `ubuntu` с идентификатором `8502eb90112b`:
 
-   ```bash
+   ```console
    sudo docker stop 8502eb90112b
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    sudo docker rm <идентификатор контейнера>
    ```
 
@@ -226,7 +226,7 @@ docker SUBCOMMAND --help
 
    Пример команды для удаления контейнера `ubuntu` с идентификатором `8502eb90112b`:
 
-   ```bash
+   ```console
    sudo docker rm 8502eb90112b
    ```
 

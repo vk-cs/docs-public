@@ -41,19 +41,19 @@
 
 1. Добавьте репозиторий `cert-manager`:
 
-   ```bash
+   ```console
    helm repo add jetstack https://charts.jetstack.io
    ```
 
 1. Обновите кеш чартов (charts):
 
-   ```bash
+   ```console
    helm repo update
    ```
 
 1. Получите список доступных чартов `cert-manager` и их версий:
 
-   ```bash
+   ```console
    helm search repo jetstack -l
    ```
 
@@ -77,7 +77,7 @@
 
    Выполните команду:
 
-   ```bash
+   ```console
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.3/cert-manager.crds.yaml
    ```
 
@@ -92,7 +92,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm install cert-manager jetstack/cert-manager \
      --version v1.11.3 \
      --namespace cert-manager \
@@ -102,7 +102,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm install cert-manager jetstack/cert-manager `
      --version v1.11.3 `
      --namespace cert-manager `
@@ -151,7 +151,7 @@
 
 1. Проверьте, что в пространстве имен `cert-manager` были успешно созданы необходимые поды, и что они находятся в состоянии `Running`:
 
-   ```bash
+   ```console
    kubectl get pods -n cert-manager
    ```
 
@@ -211,7 +211,7 @@
 
    1. Примените файл манифеста.
 
-      ```bash
+      ```console
       kubectl apply -f cert-manager-test-resources.yaml
       ```
 
@@ -219,7 +219,7 @@
 
    1. Проверьте, что были созданы все необходимые ресурсы:
 
-      ```bash
+      ```console
       kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges,secrets -n cert-manager-test
       ```
 
@@ -248,7 +248,7 @@
 
    1. Проверьте статус сертификата:
 
-      ```bash
+      ```console
       kubectl describe certificate selfsigned-cert -n cert-manager-test
       ```
 
@@ -317,7 +317,7 @@
 </tablist>
 <tabpanel>
 
-```bash
+```console
 kubectl get -o yaml \
   --all-namespaces \
   issuer,clusterissuer,certificate \
@@ -327,7 +327,7 @@ kubectl get -o yaml \
 </tabpanel>
 <tabpanel>
 
-```powershell
+```console
 kubectl get -o yaml `
   --all-namespaces `
   issuer,clusterissuer,certificate `
@@ -343,19 +343,19 @@ kubectl get -o yaml `
 
 1. Посмотрите версию установленного релиза `cert-manager`:
 
-   ```bash
+   ```console
    helm list --namespace cert-manager
    ```
 
 1. Обновите кеш чартов:
 
-   ```bash
+   ```console
    helm repo update
    ```
 
 1. Получите список доступных чартов `cert-manager` и их версий:
 
-   ```bash
+   ```console
    helm search repo jetstack -l
    ```
 
@@ -379,7 +379,7 @@ kubectl get -o yaml `
 
    Поскольку ранее эти CRDs были [установлены вручную](#2_ustanovite_cert_manager), обновите их также вручную перед обновлением самого `cert-manager`.
 
-   ```bash
+   ```console
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
    ```
 
@@ -392,7 +392,7 @@ kubectl get -o yaml `
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm upgrade cert-manager jetstack/cert-manager \
      --version v1.12.3 \
      --namespace cert-manager
@@ -401,7 +401,7 @@ kubectl get -o yaml `
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm upgrade cert-manager jetstack/cert-manager `
      --version v1.12.3 `
      --namespace cert-manager
@@ -450,7 +450,7 @@ kubectl get -o yaml `
 
 1. Если ресурсы Kubernetes, [созданные для проверки работоспособности](#3_proverte_rabotosposobnost_cert_manager) `cert-manager`, были созданы в тестовых целях и больше вам не нужны, удалите их:
 
-   ```bash
+   ```console
    kubectl delete -f cert-manager-test-resources.yaml
    ```
 
@@ -464,7 +464,7 @@ kubectl get -o yaml `
 
    1. Убедитесь, что в кластере больше нет ресурсов, созданных `cert-manager`:
 
-      ```bash
+      ```console
       kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges --all-namespaces
       ```
 
@@ -472,18 +472,18 @@ kubectl get -o yaml `
 
    1. Удалите релиз `cert-manager`:
 
-      ```bash
+      ```console
       helm delete cert-manager --namespace cert-manager
       ```
 
    1. Удалите пространство имен `cert-manager`:
 
-      ```bash
+      ```console
       kubectl delete ns cert-manager
       ```
 
    1. Удалите установленные в кластер CRDs для `cert-manager`:
 
-      ```bash
+      ```console
       kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
       ```

@@ -82,7 +82,7 @@ To add shielding to the CDN resource configuration, get a list of available prec
 
 1. Apply the changes:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -183,13 +183,13 @@ Here:
 1. Go to this directory.
 1. Make sure that the configuration files are correct and contain the required changes:
 
-   ```bash
+   ```console
    terraform validate && terraform plan
    ```
 
 1. Apply the changes:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -213,7 +213,7 @@ If you no longer need the Terraform resources, delete them:
 1. Go to the directory that contains the Terraform configuration files.
 1. Run the command:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

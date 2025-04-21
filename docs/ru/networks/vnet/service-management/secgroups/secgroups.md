@@ -26,19 +26,19 @@
 
 1. Чтобы посмотреть список групп безопасности, выполните команду:
 
-   ```bash
+   ```console
    openstack security group list
    ```
 
 1. Чтобы посмотреть детальную информацию о группе безопасности, выполните команду:
 
-   ```bash
+   ```console
    openstack security group show <ID группы безопасности>
    ```
 
 1. Чтобы просмотреть правила группы безопасности:
 
-   ```bash
+   ```console
    openstack security group rule list --long <ID группы безопасности>
    ```
 
@@ -75,19 +75,19 @@
 
 1. Просмотрите группы безопасности в проекте:
 
-   ```bash
+   ```console
    openstack security group list
    ```
 
 1. Получите информацию о группе безопасности:
 
-   ```bash
+   ```console
    openstack security group show <ID группы>
    ```
 
 1. Создайте группу безопасности:
 
-   ```bash
+   ```console
    openstack security group create --description <описание группы> <название новой группы>
    ```
 
@@ -123,7 +123,7 @@
 
 1. Чтобы изменить описание и название группы безопасности, выполните команду:
 
-   ```bash
+   ```console
    openstack security group set --description <описание> --name <название> <ID группы>
    ```
 
@@ -190,13 +190,13 @@
 
 1. Просмотрите список правил группы:
 
-   ```bash
+   ```console
    openstack security group rule list --long <ID группы>
    ```
 
 1. Создайте правило:
 
-   ```bash
+   ```console
    openstack security group rule create <аргументы> <ID группы безопасности>
    ```
 
@@ -241,13 +241,13 @@
 
 1. Чтобы посмотреть детальную информацию для правила, выполните команду:
 
-   ```bash
+   ```console
    openstack security group rule show <ID правила>
    ```
 
 1. Чтобы удалить правило, выполните команду:
 
-   ```bash
+   ```console
    openstack security group rule delete <ID правила>
    ```
 
@@ -280,7 +280,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack server add security group <ID инстанса> <ID группы безопасности>
    ```
 
@@ -311,7 +311,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack server remove security group <ID инстанса> <ID группы безопасности>
    ```
 
@@ -347,7 +347,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    openstack security group delete <ID группы безопасности>
    ```
 

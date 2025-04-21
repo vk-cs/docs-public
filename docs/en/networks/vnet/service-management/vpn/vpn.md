@@ -34,13 +34,13 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 1. To view a list of VPN tunnels, run the command:
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection list
    ```
 
 1. To view detailed information about the VPN tunnel, run the command:
 
-    ```bash
+    ```console
     openstack vpn ipsec site connection show <VPN tunnel ID from the list obtained earlier>
     ```
 
@@ -48,31 +48,31 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    - `IKE Policy` — the identifier of the IKE policy. To view detailed information about the policy, run the command:
 
-     ```bash
+     ```console
       openstack vpn ike policy show <IKE policy id>
      ```
 
    - `IPSec Policy` — the identifier of the IPsec policy. To view detailed information about the policy, run the command:
 
-      ```bash
+      ```console
       openstack vpn ipsec policy show <ipsec policy id>
       ```
 
    - `Local Endpoint Group ID` — the identifier of the local endpoint group. To view detailed information about the group, run the command:
 
-      ```bash
+      ```console
       openstack vpn endpoint group show <local endpoint group id>
       ```
 
    - `Peer Endpoint Group ID` — the identifier of the remote (peer) endpoint group. To view detailed information about the group, run the command:
 
-      ```bash
+      ```console
       openstack vpn endpoint group show <remote endpoint group id>
       ```
 
    - `VPN Service` — the identifier of the VPN service that this VPN tunnel serves. To view detailed information about the service, run the command:
 
-      ```bash
+      ```console
       openstack vpn service show <VPN service id>
       ```
 
@@ -236,11 +236,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. Get a list of IKE policies and view policy details:
 
-       ```bash
+       ```console
        openstack vpn ike policy list
        ```
 
-       ```bash
+       ```console
        openstack vpn ike policy show <policy id>
        ```
 
@@ -255,7 +255,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
        </tablist>
        <tabpanel>
 
-       ```bash
+       ```console
        openstack vpn ike policy create <policy name> \
          --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> \
          --auth-algorithm <Authorization algorithm: sha1, sha256> \
@@ -267,7 +267,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
        openstack vpn ike policy create <policy name> `
          --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> `
          --auth-algorithm <Authorization algorithm: sha1, sha256> `
@@ -285,11 +285,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. Get a list of IPsec policies and view policy details:
 
-       ```bash
+       ```console
        openstack vpn ipsec policy list
        ```
 
-       ```bash
+       ```console
        openstack vpn ipsec policy show <policy id>
        ```
 
@@ -304,7 +304,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
        </tablist>
        <tabpanel>
 
-       ```bash
+       ```console
        openstack vpn ipsec policy create <policy name> \
          --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> \
          --auth-algorithm <Authorization algorithm: sha1, sha256> \
@@ -315,7 +315,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn ipsec policy create <policy name> `
         --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> `
         --auth-algorithm <Authorization algorithm: sha1, sha256> `
@@ -332,11 +332,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. Get a list of routers and view detailed information about them:
 
-       ```bash
+       ```console
        open stack router list
        ```
 
-       ```bash
+       ```console
        openstack router show <router id>
        ```
 
@@ -353,7 +353,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn service create <VPN service name> \
         --router <router ID obtained in the previous step> \
         --enable
@@ -362,7 +362,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn service create <VPN service name> `
         --router <router ID obtained in the previous step> `
         --enable
@@ -377,11 +377,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. Get a list of endpoint groups and view detailed information about them:
 
-       ```bash
+       ```console
        openstack vpn endpoint group list
        ```
 
-       ```bash
+       ```console
        openstack vpn endpoint group show <group id>
        ```
 
@@ -401,7 +401,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
        openstack vpn endpoint group create <local endpoint group name> \
          --type subnet \
          --value <identifier of the subnet connected to the router, which should be accessible through the VPN tunnel> \
@@ -412,7 +412,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
        openstack vpn endpoint group create <local endpoint group name> `
          --type subnet `
          --value <identifier of the subnet connected to the router, which should be accessible through the VPN tunnel> `
@@ -434,7 +434,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
        openstack vpn endpoint group create <remote endpoint group name> \
          --type cidr \
          --value "<remote subnet in the format 10.0.0.0/24 that should be accessible through the VPN tunnel>" \
@@ -445,7 +445,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
        openstack vpn endpoint group create <remote endpoint group name> `
          --type cidr `
          --value "<remote subnet in the format 10.0.0.0/24 that should be accessible through the VPN tunnel>" `
@@ -467,7 +467,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
     openstack vpn ipsec site connection create <VPN tunnel name> \
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
       --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> \
@@ -485,7 +485,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
     openstack vpn ipsec site connection create <VPN tunnel name> `
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
       --initiator <behavior when establishing an IPsec connection> `
@@ -621,11 +621,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. Get a list of endpoint groups and view detailed information about them:
 
-      ```bash
+      ```console
       openstack vpn endpoint group list
       ```
 
-      ```bash
+      ```console
       openstack vpn endpoint group show <group id>
       ```
 
@@ -646,7 +646,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn endpoint group create <local endpoint group name> \
       --type subnet \
       --value <subnet ID of the VK Cloud platform connected to the router, which should be accessible through the VPN tunnel> \
@@ -657,7 +657,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
        openstack vpn endpoint group create <local endpoint group name> `
          --type subnet `
          --value <subnet ID of the VK Cloud platform connected to the router, which should be accessible through the VPN tunnel> `
@@ -679,7 +679,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
        openstack vpn endpoint group create <remote endpoint group name> \
          --type cidr \
          --value "<remote subnet in the format 10.0.0.0/24 that should be accessible through the VPN tunnel>" \
@@ -690,7 +690,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
        openstack vpn endpoint group create <remote endpoint group name> `
          --type cidr `
          --value "<remote subnet in the format 10.0.0.0/24 that should be accessible through the VPN tunnel>" `
@@ -712,7 +712,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
     openstack vpn ipsec site connection set <VPN tunnel ID> \
       --name <new VPN tunnel name> \
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
@@ -727,7 +727,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
     openstack vpn ipsec site connection set <VPN tunnel ID> `
       --name <new VPN tunnel name> `
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
@@ -786,14 +786,14 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
     openstack vpn service set <VPN service ID> --disable && openstack vpn service set <VPN service ID> --enable
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
     openstack vpn service set <VPN service id> --disable; openstack vpn service set <VPN service id> --enable
    ```
 
@@ -848,7 +848,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 1. To remove only the VPN tunnel, run the command:
 
-   ```bash
+   ```console
     openstack vpn ipsec site connection delete <VPN tunnel id>
    ```
 
@@ -861,7 +861,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection delete <VPN tunnel id>
    openstack vpn ike policy delete <IKE policy id>
    openstack vpn ipsec policy delete <ipsec policy id>
@@ -873,7 +873,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack vpn ipsec site connection delete <VPN tunnel ID>; `
    openstack vpn ike policy delete <IKE policy identifier>; `
    openstack vpn ipsec policy delete <ipsec policy id>; `

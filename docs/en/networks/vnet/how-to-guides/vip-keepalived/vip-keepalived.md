@@ -31,7 +31,7 @@ To show the virtual IP address setting:
 
     To create such a port, run the command in the OpenStack CLI:
 
-    ```bash
+    ```console
     openstack port create <port name> --network mynetwork --fixed-ip subnet=mysubnet,ip-address=192.168.0.254
     ```
 
@@ -106,7 +106,7 @@ To show the virtual IP address setting:
        1. Connect to the virtual machine `kld-vm-1` via SSH.
        1. Run the command:
 
-          ```bash
+          ```console
           ip route | grep default
           ```
 
@@ -123,7 +123,7 @@ To show the virtual IP address setting:
 
        1. Run the OpenStack CLI command:
 
-         ```bash
+         ```console
          openstack port list -c ID --server kld-vm-1 --fixed-ip ip-address=<Network interface IP address from previous step>
          ```
 
@@ -171,7 +171,7 @@ Write down all received data. Result for the given example:
        1. Connect to the virtual machine `kld-vm-1` via SSH.
        1. Run the commands:
 
-          ```bash
+          ```console
           sudo apt update
           sudo apt install keepalived
 
@@ -279,14 +279,14 @@ Write down all received data. Result for the given example:
        1. Connect to the virtual machine `kld-vm-1` via SSH.
        1. Run the command:
 
-         ```bash
+         ```console
          sudo systemctl start keepalived
 
          ```
 
        1. Run the command to check the status of `keepalived`:
 
-         ```bash
+         ```console
          sudo systemctl status keepalived
          ```
 
@@ -309,13 +309,13 @@ The `keepalived` installed on virtual machines should be able to send traffic no
 
 1. For `kld-vm-1`:
 
-   ```bash
+   ```console
    openstack port set e1bd636a-aaaa-bbbb-cccc-a673e7cbef83 --allowed-address ip-address=192.168.0.254/24
    ```
 
 1. For `kld-vm-2`:
 
-   ```bash
+   ```console
    openstack port set 74268d00-xxxx-yyyy-zzzz-cf9f93536d5c --allowed-address ip-address=192.168.0.254/24
    ```
 
@@ -327,7 +327,7 @@ Open two terminal sessions:
    1. [Connect](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the virtual machine `kld-jumphost-vm` via SSH.
    1. Start a continuous ping of the virtual IP address:
 
-      ```bash
+      ```console
       ping 192.168.0.254
       ```
 
@@ -339,7 +339,7 @@ Open two terminal sessions:
     1. Connect to the virtual machine `kld-vm-1` via SSH.
     1. Stop the `keepalived` process:
 
-      ```bash
+      ```console
       sudo systemctl stop keepalived
       ```
 
@@ -348,7 +348,7 @@ Open two terminal sessions:
 
    1. Restart the `keepalived` process:
 
-       ```bash
+       ```console
        sudo systemctl start keepalived
        ```
 
@@ -356,7 +356,7 @@ Open two terminal sessions:
 
    1. Run the command:
 
-      ```bash
+      ```console
       ip address show dev ens3
       ```
 

@@ -19,7 +19,7 @@
 
 Пример содержимого файла:
 
-```bash
+```console
 terraform {
     required_providers {
         vkcs = {
@@ -89,7 +89,7 @@ provider "vkcs" {
 
 Для определения последовательности создания ресурсов и их зависимостей можно использовать мета-аргумент `depends_on`. Мета-аргумент указывает ресурс, от которого зависит создаваемый ресурс:
 
-```bash
+```console
 depends_on = [
     vkcs_kubernetes_cluster.k8s-cluster,
 ]

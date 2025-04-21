@@ -61,7 +61,7 @@ To create such an application:
 
 1. Create the Kubernetes resource based on the manifest:
 
-   ```bash
+   ```console
    kubectl apply -f coffee.yaml
    ```
 
@@ -112,13 +112,13 @@ The tabs below describe different scenarios for creating load balancers:
 
 1. Create the Kubernetes resource based on the manifest:
 
-   ```bash
+   ```console
    kubectl apply -f lb-static-public-ip.yaml
    ```
 
 1. Periodically check the status of the service with the command:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-public-static-ip
    ```
 
@@ -150,13 +150,13 @@ The tabs below describe different scenarios for creating load balancers:
 
 1. Create the Kubernetes resource based on the manifest:
 
-   ```bash
+   ```console
    kubectl apply -f lb-session-affinity.yaml
    ```
 
 1. Periodically check the status of the service with the command:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-session-affinity
    ```
 
@@ -169,7 +169,7 @@ The tabs below describe different scenarios for creating load balancers:
 
    For example, run the command:
 
-   ```bash
+   ```console
    curl icanhazip.com
    ```
 
@@ -199,13 +199,13 @@ The tabs below describe different scenarios for creating load balancers:
 
 1. Create the Kubernetes resource based on the manifest:
 
-   ```bash
+   ```console
    kubectl apply -f lb-restrict-access-by-ip.yaml
    ```
 
 1. Periodically check the status of the service with the command:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-restrict-access-by-ip
    ```
 
@@ -238,13 +238,13 @@ The tabs below describe different scenarios for creating load balancers:
 
 1. Create the Kubernetes resource based on the manifest:
 
-   ```bash
+   ```console
    kubectl apply -f lb-private-ip.yaml
    ```
 
 1. Periodically check the status of the service with the command:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-private-ip
    ```
 
@@ -275,7 +275,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Get the IP address assigned to the load balancer:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-public-static-ip
    ```
 
@@ -283,7 +283,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Request the application several times via the load balancer:
 
-   ```bash
+   ```console
    curl http://<load balancer IP address>
    ```
 
@@ -294,7 +294,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Get the IP address assigned to the load balancer:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-session-affinity
    ```
 
@@ -302,7 +302,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Request the application several times via the load balancer:
 
-   ```bash
+   ```console
    curl http://<load balancer IP address>
    ```
 
@@ -313,7 +313,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Get the IP address assigned to the load balancer:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-restrict-access-by-ip
    ```
 
@@ -321,7 +321,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Request the application several times via the load balancer (from the allowed IP address):
 
-   ```bash
+   ```console
    curl http://<load balancer IP address>
    ```
 
@@ -334,7 +334,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Get the IP address assigned to the load balancer:
 
-   ```bash
+   ```console
    kubectl get svc coffee-svc-private-ip
    ```
 
@@ -346,7 +346,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Request the application several times via the load balancer:
 
-   ```bash
+   ```console
    curl http://<load balancer IP address>
    ```
 
@@ -372,7 +372,7 @@ The tabs below describe different scenarios for testing load balancers:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete svc coffee-svc-public-static-ip
    kubectl delete svc coffee-svc-session-affinity
    kubectl delete svc coffee-svc-restrict-access-by-ip
@@ -384,7 +384,7 @@ The tabs below describe different scenarios for testing load balancers:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete svc coffee-svc-public-static-ip; `
    kubectl delete svc coffee-svc-session-affinity; `
    kubectl delete svc coffee-svc-restrict-access-by-ip; `

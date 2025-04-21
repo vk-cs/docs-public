@@ -31,14 +31,14 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
@@ -87,7 +87,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Create a namespace where ExternalDNS will be installed:
 
-   ```bash
+   ```console
    kubectl create ns external-dns
    ```
 
@@ -100,7 +100,7 @@ Prepare the user and get all the necessary credentials:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl -n external-dns create secret generic vkcs-auth \
      --from-literal=ProjectID="<Project ID>" \
      --from-literal=UserDomainName="<User Domain Name>" \
@@ -113,7 +113,7 @@ Prepare the user and get all the necessary credentials:
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl -n external-dns create secret generic vkcs-auth `
      --from-literal=ProjectID="<Project ID>" `
      --from-literal=UserDomainName="<User Domain Name>" `
@@ -128,7 +128,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Add the Bitnami Helm repository:
 
-   ```bash
+   ```console
    helm repo add bitnami https://charts.bitnami.com/bitnami
    ```
 
@@ -284,13 +284,13 @@ Prepare the user and get all the necessary credentials:
 
 1. Install ExternalDNS:
 
-   ```bash
+   ```console
    helm -n external-dns install external-dns-vkcs bitnami/external-dns -f external-dns-vkcs-values.yaml
    ```
 
 1. Verify that the Helm chart has been successfully deployed:
 
-   ```bash
+   ```console
    helm -n external-dns list && kubectl -n external-dns get all
    ```
 
@@ -355,13 +355,13 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. Apply this manifest to the cluster to deploy the application:
 
-   ```bash
+   ```console
    kubectl apply -f tea-app.yaml
    ```
 
 1. Verify that the application has been successfully deployed as a `ReplicaSet` of three replicas:
 
-   ```bash
+   ```console
    kubectl get rs,pod -l app==tea
    ```
 
@@ -427,13 +427,13 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. Apply this manifest to the cluster to create the service:
 
-   ```bash
+   ```console
    kubectl apply -f tea-service.yaml
    ```
 
 1. Check the status of the service:
 
-   ```bash
+   ```console
    kubectl get svc tea-svc
    ```
 
@@ -585,13 +585,13 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. Apply these manifests to the cluster to create all necessary resources:
 
-   ```bash
+   ```console
    kubectl apply -f coffee-app.yaml -f coffee-service.yaml
    ```
 
 1. Check that the application has been successfully deployed as a `ReplicaSet` of two replicas along with the corresponding service:
 
-   ```bash
+   ```console
    kubectl get rs,pod,svc -l app==coffee
    ```
 
@@ -650,13 +650,13 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. Apply this manifest to the cluster to create the resource:
 
-   ```bash
+   ```console
    kubectl apply -f cafe-ingress.yaml
    ```
 
 1. Check the status of Ingress:
 
-   ```bash
+   ```console
    kubectl get ingress cafe-ingress
    ```
 
@@ -713,7 +713,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    1. Delete all resources associated with the `tea` application:
 
-      ```bash
+      ```console
       kubectl delete -f cafe-ingress.yaml -f coffee-service.yaml -f coffee-app.yaml
       ```
 
@@ -721,7 +721,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    1. Remove all resources associated with the `coffee` application:
 
-      ```bash
+      ```console
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
 
@@ -744,7 +744,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    1. Remove the Helm chart from ExternalDNS:
 
-      ```bash
+      ```console
       helm -n external-dns uninstall external-dns-vkcs
       ```
 
@@ -756,7 +756,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
       </warn>
 
-      ```bash
+      ```console
       kubectl delete ns external-dns
       ```
 

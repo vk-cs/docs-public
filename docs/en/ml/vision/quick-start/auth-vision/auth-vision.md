@@ -1,6 +1,6 @@
 To authorize the client on the VK Cloud platform, a token is used, which is passed in the request parameter:
 
-```bash
+```console
 curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oauth\_token=qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd" -F file\_0=@examples/car\_number.jpg - F meta='{"mode":\["object"\],"images":\[ {"name":"file\_0"}\]}'
 ```
 Authorization parameters:
@@ -57,7 +57,7 @@ The usage scheme for tokens is as follows:
 - Application saves tokens and uses **access token** for subsequent image recognition requests.
 - When the access token lifetime comes to an end, requests for image recognition will stop passing:
 
-```bash
+```console
   "status":401,"body":"authorization failed, provider: mcs, token: vMA3Pjyno6tvCdo8MeDQ8xYT(...), reason: CONDITION/UNAUTHORIZED, Access Token invalid"
 ```
 

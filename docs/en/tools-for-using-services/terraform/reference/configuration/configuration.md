@@ -19,7 +19,7 @@ The file is available for [download](../../quick-start#preparatory_steps) in you
 
 An example of the file contents:
 
-```bash
+```console
 terraform {
     required_providers {
         vkcs = {
@@ -89,7 +89,7 @@ A typical configuration contains:
 
 To determine the sequence of creating resources and their dependencies, you can use the `depends_on` meta-argument. The meta-argument indicates the resource on which the resource being created depends:
 
-```bash
+```console
 depends_on = [
     vkcs_kubernetes_cluster.k8s-cluster,
 ]

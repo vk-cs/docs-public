@@ -162,7 +162,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 
 Пример запроса:
 
-```bash
+```console
 curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \
@@ -192,7 +192,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 
 Пример запроса:
 
-```bash
+```console
 curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \

@@ -34,7 +34,7 @@ Spark Connect позволяет удаленно подключиться к к
 </tablist>
 <tabpanel>
 
-```bash
+```console
 pip3 install pyspark
 pip3 install pandas
 pip3 install pyarrow
@@ -46,7 +46,7 @@ pip3 install grpcio-status
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
 %pip install pyspark
 %pip install pandas
 %pip install pyarrow
@@ -144,7 +144,7 @@ pip3 install grpcio-status
 
 В результате вернется созданный датафрейм:
 
-```bash
+```console
 +---+---+-------+----------+-------------------+
 |  a|  b|      c|         d|                  e|
 +---+---+-------+----------+-------------------+

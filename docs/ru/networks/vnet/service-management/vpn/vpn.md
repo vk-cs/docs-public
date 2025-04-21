@@ -34,13 +34,13 @@
 
 1. Чтобы посмотреть список VPN-туннелей, выполните команду:
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection list
    ```
 
 1. Чтобы посмотреть детальную информацию о VPN-туннеле, выполните команду:
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection show <идентификатор VPN-туннеля из списка, полученного ранее>
    ```
 
@@ -48,31 +48,31 @@
 
    - `IKE Policy` — идентификатор IKE-политики. Чтобы посмотреть детальную информацию о политике, выполните команду:
 
-     ```bash
+     ```console
      openstack vpn ike policy show <идентификатор IKE-политики>
      ```
 
    - `IPSec Policy` — идентификатор IPsec-политики. Чтобы посмотреть детальную информацию о политике, выполните команду:
 
-     ```bash
+     ```console
      openstack vpn ipsec policy show <идентификатор IPsec-политики>
      ```
 
    - `Local Endpoint Group ID` — идентификатор локальной endpoint-группы. Чтобы посмотреть детальную информацию о группе, выполните команду:
 
-     ```bash
+     ```console
      openstack vpn endpoint group show <идентификатор локальной endpoint-группы>
      ```
 
    - `Peer Endpoint Group ID` — идентификатор удаленной (peer) endpoint-группы. Чтобы посмотреть детальную информацию о группе, выполните команду:
 
-     ```bash
+     ```console
      openstack vpn endpoint group show <идентификатор удаленной endpoint-группы>
      ```
 
    - `VPN Service` — идентификатор VPN-сервиса, который обслуживает этот VPN-туннель. Чтобы посмотреть детальную информацию о сервисе, выполните команду:
 
-     ```bash
+     ```console
      openstack vpn service show <идентификатор VPN-сервиса>
      ```
 
@@ -235,11 +235,11 @@
 
    1. Получите список IKE-политик и посмотрите детальную информацию о политиках:
 
-      ```bash
+      ```console
       openstack vpn ike policy list
       ```
 
-      ```bash
+      ```console
       openstack vpn ike policy show <идентификатор политики>
       ```
 
@@ -254,7 +254,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn ike policy create <имя политики> \
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
         --auth-algorithm <Алгоритм авторизации: sha1, sha256> \
@@ -266,7 +266,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn ike policy create <имя политики> `
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
         --auth-algorithm <Алгоритм авторизации: sha1, sha256> `
@@ -284,11 +284,11 @@
 
    1. Получите список IPsec-политик и посмотрите детальную информацию о политиках:
 
-      ```bash
+      ```console
       openstack vpn ipsec policy list
       ```
 
-      ```bash
+      ```console
       openstack vpn ipsec policy show <идентификатор политики>
       ```
 
@@ -303,7 +303,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn ipsec policy create <имя политики> \
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
         --auth-algorithm <Алгоритм авторизации: sha1, sha256> \
@@ -314,7 +314,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn ipsec policy create <имя политики> `
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
         --auth-algorithm <Алгоритм авторизации: sha1, sha256> `
@@ -331,11 +331,11 @@
 
    1. Получите список маршрутизаторов и посмотрите детальную информацию о них:
 
-      ```bash
+      ```console
       openstack router list
       ```
 
-      ```bash
+      ```console
       openstack router show <идентификатор марщрутизатора>
       ```
 
@@ -352,7 +352,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn service create <имя VPN-сервиса> \
         --router <идентификатор маршрутизатора, полученный на предыдущем шаге> \
         --enable
@@ -361,7 +361,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn service create <имя VPN-сервиса> `
         --router <идентификатор маршрутизатора, полученный на предыдущем шаге> `
         --enable
@@ -376,11 +376,11 @@
 
    1. Получите список endpoint-групп и посмотрите детальную информацию о них:
 
-      ```bash
+      ```console
       openstack vpn endpoint group list
       ```
 
-      ```bash
+      ```console
       openstack vpn endpoint group show <идентификатор группы>
       ```
 
@@ -400,7 +400,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> \
         --type subnet \
         --value <идентификатор подсети, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
@@ -411,7 +411,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> `
         --type subnet `
         --value <идентификатор подсети, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
@@ -433,7 +433,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> \
         --type cidr \
         --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
@@ -444,7 +444,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> `
         --type cidr `
         --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
@@ -466,7 +466,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection create <имя VPN-туннеля> \
      --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> \
      --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
@@ -484,7 +484,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack vpn ipsec site connection create <имя VPN-туннеля> `
      --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> `
      --initiator <поведение при установке IPsec-соединения> `
@@ -618,11 +618,11 @@
 
    1. Получите список endpoint-групп и посмотрите детальную информацию о них:
 
-      ```bash
+      ```console
       openstack vpn endpoint group list
       ```
 
-      ```bash
+      ```console
       openstack vpn endpoint group show <идентификатор группы>
       ```
 
@@ -642,7 +642,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> \
         --type subnet \
         --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
@@ -653,7 +653,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> `
         --type subnet `
         --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
@@ -675,7 +675,7 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> \
         --type cidr \
         --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
@@ -686,7 +686,7 @@
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> `
         --type cidr `
         --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
@@ -708,7 +708,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection set <идентификатор VPN-туннеля> \
      --name <новое имя VPN-туннеля> \
      --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> \
@@ -723,7 +723,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack vpn ipsec site connection set <идентификатор VPN-туннеля> `
      --name <новое имя VPN-туннеля> `
      --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> `
@@ -782,14 +782,14 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack vpn service set <идентификатор VPN-сервиса> --disable && openstack vpn service set <идентификатор VPN-сервиса> --enable
    ```
   
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack vpn service set <идентификатор VPN-сервиса> --disable; openstack vpn service set <идентификатор VPN-сервиса> --enable
    ```
 
@@ -844,7 +844,7 @@
 
 1. Чтобы удалить только VPN-туннель, выполните команду:
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
    ```
 
@@ -857,7 +857,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
    openstack vpn ike policy delete <идентификатор IKE-политики>
    openstack vpn ipsec policy delete <идентификатор IPsec-политики>
@@ -870,7 +870,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>; `
    openstack vpn ike policy delete <идентификатор IKE-политики>; `
    openstack vpn ipsec policy delete <идентификатор IPsec-политики>; `

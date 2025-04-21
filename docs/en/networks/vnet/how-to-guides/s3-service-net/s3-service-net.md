@@ -33,7 +33,7 @@ If you configure a connection to the service network via Direct Connect, access 
    1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the VM via SSH.
    1. Update packages to the latest version and reboot the VM using the commands:
 
-      ```bash
+      ```console
       sudo apt update && sudo apt upgrade -y
       sudo reboot
       ```
@@ -49,13 +49,13 @@ To configure the VM network interface directed to the service network:
 
 1. Open a terminal session with the VM and get root user rights:
 
-    ```bash
+    ```console
    sudo bash
    ```
 
 1. View the list of VM network interfaces:
 
-    ```bash
+    ```console
     ip a
     ```
 
@@ -63,14 +63,14 @@ To configure the VM network interface directed to the service network:
 
     Example response:
 
-    ```bash
+    ```console
     ens7: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether fa:16:3e:d8:86:43 brd ff:ff:ff:ff:ff:ff
     altname enp0s7
     ```
 1. Create a new network interface configuration file for Netplan:
 
-    ```bash
+    ```console
     nano /etc/netplan/service.yaml
     ```
 
@@ -97,7 +97,7 @@ To configure the VM network interface directed to the service network:
 
 1. Apply the settings by running the command:
 
-    ```bash
+    ```console
     netplan apply
     ```
 
@@ -105,7 +105,7 @@ To configure the VM network interface directed to the service network:
 
    1. Open the `hosts` file:
 
-      ```bash
+      ```console
       nano /etc/hosts
       ```
 
@@ -117,13 +117,13 @@ To configure the VM network interface directed to the service network:
 
    1. Check that the connection to Cloud Storage is established via the service network:
 
-      ```bash
+      ```console
       curl hb.ru-msk.vkcloud-storage.ru -v
       ```
 
       The response should contain the line:
 
-      ```bash
+      ```console
       Connected to hb.ru-msk.vkcloud-storage.ru (198.18.0.1) port 80 (#0)
       ```
 
@@ -140,7 +140,7 @@ If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/ser
 
 1. Run the command:
 
-    ```bash
+    ```console
     aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```
 

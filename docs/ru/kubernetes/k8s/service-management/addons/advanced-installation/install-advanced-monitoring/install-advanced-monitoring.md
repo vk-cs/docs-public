@@ -62,13 +62,13 @@
 
    1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Примените изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -198,13 +198,13 @@
 
    1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Примените изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -264,13 +264,13 @@
 
    1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Примените изменения:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -368,7 +368,7 @@ grafana:
    </tablist>
    <tabpanel>
 
-   ```powershell
+   ```console
    $ENCODED = kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}'; `
    [System.Text.Encoding]::Utf8.GetString([System.Convert]::FromBase64String($ENCODED)) | Write-Output
    ```
@@ -376,7 +376,7 @@ grafana:
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}' | base64 --decode
    ```
 
@@ -398,7 +398,7 @@ grafana:
 
 1. Получите имя пода Grafana:
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring get pod -l app.kubernetes.io/name=grafana
    ```
 
@@ -410,7 +410,7 @@ grafana:
 
 1. Сбросьте пароль, выполнив команду внутри пода Grafana:
 
-   ```bash
+   ```console
    kubectl -n prometheus-monitoring exec <имя пода Grafana> -- sh -c "grafana cli --debug admin reset-admin-password <новый пароль>"
    ```
 

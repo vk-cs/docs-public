@@ -54,7 +54,7 @@
 
     1. Обновите ОС перед дальнейшей настройкой:
 
-        ```bash
+        ```console
         apt update && apt upgrade -y
         ```
 
@@ -150,13 +150,13 @@
 1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `Debian-IPsec-Gate` по SSH и получите права root-пользователя (команда `sudo bash`).
 1. Создайте файл `eth1` с помощью команды:
 
-    ```bash
+    ```console
     vim /etc/network/interfaces.d/eth1
     ```
 
 1. Добавьте в созданный файл следующие строки:
 
-    ```bash
+    ```console
     auto eth1
     iface eth1 inet static
     address 10.56.0.4/24
@@ -173,30 +173,30 @@
 
 1. Выполните команду для применения новых сетевых настроек:
 
-    ```bash
+    ```console
     systemctl restart networking
     ```
 
 1. Проверьте корректность настройки IP-адреса интерфейса `eth1`:
 
-   ```bash
+   ```console
    ip a | grep 10.56
    ```
 
    Интерфейс настроен корректно, если вернется ответ:
 
-   ```bash
+   ```console
    inet 10.56.0.4/24 brd 10.56.0.7 scope global eth1
    ```
 1. Проверьте корректность настройки маршрута в сеть `10.55.4.0/22`:
 
-   ```bash
+   ```console
    ip r | grep 10.55
    ```
 
    Маршрут в будущую сеть VDI верный и добавлен автоматически, если вернется ответ:
 
-   ```bash
+   ```console
    10.55.4.0/22 via 10.56.0.1 dev eth1
    ```
 
@@ -206,13 +206,13 @@
 
 1. Откройте новую сессию терминала и выполните команду:
 
-    ```bash
+    ```console
     openstack port list --server Debian-IPsec-Gate
     ```
 
     В ответе вернется список портов `Debian-IPsec-Gate`. Найдите порт, направленный в сторону транзитной сети:
 
-    ```bash
+    ```console
     +--------------------------------------+-------------+-------------------+-------------------------------------------------------------------------------+--------+
     | ID                                   | Name        | MAC Address       | Fixed IP Addresses                                                            | Status |
     +--------------------------------------+-------------+-------------------+-------------------------------------------------------------------------------+--------+
@@ -223,7 +223,7 @@
 
 1. Выключите Port Security:
 
-    ```bash
+    ```console
     openstack port set --disable-port-security f00c7678-47c0-4d88-9be2-b5592de9112f
     ```
 
@@ -235,19 +235,19 @@
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
     ```
 
 1. Выполните команду для применения настроек без перезагрузки ОС:
 
-    ```bash
+    ```console
     sysctl -p
     ```
 
 1. Проверьте, что настройки применены:
 
-    ```bash
+    ```console
     cat /proc/sys/net/ipv4/ip_forward
     ```
 
@@ -257,7 +257,7 @@
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     apt install vim strongswan strongswan-swanctl iptables iptables-persistent netfilter-persistent conntrack bmon -y
     ```
 
@@ -265,7 +265,7 @@
 
 1. Включите автоматический запуск сервисов `strongswan` и `netfilter`:
 
-    ```bash
+    ```console
     systemctl enable strongswan-starter
     systemctl start strongswan-starter
     systemctl enable netfilter-persistent
@@ -275,13 +275,13 @@
 
 1. Создайте конфигурационный файл swanctl для настройки VPN-подключения:
 
-    ```bash
+    ```console
     vim /etc/swanctl/conf.d/vkcloud.conf
     ```
 
 1. Добавьте в файл `swanctl` следующие строки:
 
-    ```bash
+    ```console
     connections {
         vkcloud-ikev2 {
             remote_addrs = 146.185.241.42
@@ -326,13 +326,13 @@
 
     1. Выполните команду:
 
-        ```bash
+        ```console
         vim /etc/strongswan.d/charon.conf
         ```
 
     1. Найдите строку `# Section containing a list of scripts` и добавьте в нее команду считывания конфигурации swanctl:
 
-        ```bash
+        ```console
         start-scripts {
             swanctl = /usr/sbin/swanctl --load-all
         }
@@ -342,19 +342,19 @@
 
 1. Выполните команду для применения новых параметров конфигурации и запуска VPN-подключения:
 
-    ```bash
+    ```console
     swanctl --load-all
     ```
 
 1. Проверьте загрузку конфигурации VPN-соединения:
 
-    ```bash
+    ```console
     swanctl --list-conns
     ```
 
     Ожидаемый ответ:
 
-    ```bash
+    ```console
     vkcloud-ikev2: IKEv2, no reauthentication, rekeying every 28800s, dpd delay 15s
     local:  212.233.72.226
     remote: 146.185.241.42
@@ -369,13 +369,13 @@
 
 1. Проверьте уставку IKE/SA туннелей:
 
-    ```bash
+    ```console
     swanctl --list-sas
     ```
 
     Ожидаемый ответ:
 
-    ```bash
+    ```console
     vkcloud-ikev2: #1, ESTABLISHED, IKEv2, e462fc2edaae6649_i* e9f38c18ddd4f0ef_r
     local  '212.233.72.226' @ 212.233.72.226[4500]
     remote '146.185.241.42' @ 146.185.241.42[4500]
@@ -397,7 +397,7 @@
 
     Добавьте правила в таблицу NAT:
 
-    ```bash
+    ```console
     iptables -t nat -A POSTROUTING -s 10.55.4.0/22 -d 10.10.2.0/24 -j ACCEPT
     ```
 
@@ -405,14 +405,14 @@
 
     Добавьте правила в таблицу MANGLE:
 
-    ```bash
+    ```console
     iptables -t mangle -A FORWARD -s 10.10.2.0/24 -d 10.55.4.0/22 -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1321:65495 -j TCPMSS --set-mss 1320
     iptables -t mangle -A FORWARD -s 10.55.4.0/22 -d 10.10.2.0/24 -p tcp -m tcp --tcp-flags SYN,RST SYN -m tcpmss --mss 1321:65495 -j TCPMSS --set-mss 1320
     ```
 
 1. Сохраните настройки:
 
-    ```bash
+    ```console
     service netfilter-persistent save
     ```
 
@@ -442,7 +442,7 @@
 
 1. Отправьте пинг до LDAP-сервера:
 
-    ```bash
+    ```console
     ping 10.10.2.14
     ```
 

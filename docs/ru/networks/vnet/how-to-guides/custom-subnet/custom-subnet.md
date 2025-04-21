@@ -13,7 +13,7 @@
 
 Добавьте следующие переменные окружения на свой компьютер:
 
-```bash
+```console
 # Получение токена через OpenStack CLI
 OS_TOKEN=$(openstack token issue -c id -f value)
    
@@ -43,7 +43,7 @@ OS_NET_URL=https://infra.mail.ru:9696/v2.0
 
 В терминале выполните API-запрос для создания подсети:
 
-```bash
+```console
 curl -X POST ${OS_NET_URL}/subnets \
     -H "$H_AUTH" \
     -H "$H_SDN" \

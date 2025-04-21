@@ -38,7 +38,7 @@ Kiali is a web interface for working with Istio. To connect to it:
 1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that `kiali` add-on [is installed](../../service-management/addons/advanced-installation/install-advanced-kiali) to the cluster.
 1. On the host, in a separate terminal session, run the command:
 
-   ```bash
+   ```console
    kauthproxy -n istio-system https://kiali.svc
    ```
 
@@ -58,7 +58,7 @@ Kiali is a web interface for working with Istio. To connect to it:
 1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that `jaeger` add-on [is installed](../../service-management/addons/advanced-installation/install-advanced-jaeger) to the cluster.
 1. On the host, in a separate terminal session, run the command:
 
-   ```bash
+   ```console
    kauthproxy -n jaeger http://jaeger-query.svc
    ```
 

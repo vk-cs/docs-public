@@ -13,14 +13,14 @@ The OpenStack Command line interface (OpenStack CLI) allows you to work with VK 
 
 1. Install Python 3, if you have not already done:
 
-   ```bash
+   ```console
    sudo apt update
    sudo apt install python3
    ```
 
 1. Install pip3, if you have not already done:
 
-   ```bash
+   ```console
    sudo apt install python3-pip
    ```
 
@@ -35,20 +35,20 @@ The instructions are written for CentOS 8. For other versions of the OS, the com
 
 1. Install Python 3, if you have not already done:
 
-   ```bash
+   ```console
    sudo dnf update -y
    sudo dnf install python3 -y
    ```
 
 1. Install pip3, if you have not already done:
 
-   ```bash
+   ```console
    sudo dnf install python3-pip -y
    ```
 
 1. Install OpenStack SDK version 1.0.1:
 
-   ```bash
+   ```console
    sudo pip3 install openstacksdk==1.0.1
 
 
@@ -57,7 +57,7 @@ The instructions are written for CentOS 8. For other versions of the OS, the com
 
 Install Python 3 and pip3, if you have not already done:
 
-```bash
+```console
 brew install python3
 ```
 
@@ -92,14 +92,14 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    <tabpanel>
 
 
-   ```bash
+   ```console
    pip3 install python-openstackclient
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    pip install python-openstackclient
    ```
 
@@ -108,7 +108,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 1. Check, if the OpenStack CLI is installed:
 
-   ```bash
+   ```console
    openstack --version
    ```
 
@@ -118,7 +118,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 1. Install packages to work with specific OpenStack services:
 
-   ```bash
+   ```console
    pip3 install python-<SERVICE_NAME>client
    ```
 
@@ -134,7 +134,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 2. Install the Shared File System API client (the Manila CLI) using the command:
 
-   ```bash
+   ```console
    pip install "python-manilaclient==4.9.1"
    ```
 
@@ -165,7 +165,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    1. Run the script:
 
-      ```bash
+      ```console
       source <PROJECT_NAME>-openrc.sh
       ```
 
@@ -176,7 +176,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    1. Copy the parameter values without quotes from the `<PROJECT_NAME>-openrc.sh` file and run the commands:
 
-      ```powershell
+      ```console
       set OS_INTERFACE=<OS_INTERFACE>
       set OS_IDENTITY_API_VERSION=<OS_IDENTITY_API_VERSION>
       set OS_PROJECT_ID=<OS_PROJECT_ID>
@@ -188,7 +188,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    2. Specify the password by running the command:
 
-      ```powershell
+      ```console
       set OS_PASSWORD=<PASSWORD>
       ```
 
@@ -199,7 +199,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    1. Copy the data from the `<PROJECT_NAME>-openrc.sh` file and run the commands:
 
-      ```powershell
+      ```console
       $env:OS_INTERFACE = "<OS_INTERFACE>"
       $env:OS_IDENTITY_API_VERSION = "<OS_IDENTITY_API_VERSION>"
       $env:OS_PROJECT_ID = "<OS_PROJECT_ID>"
@@ -211,7 +211,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    2. Specify the password by running the command:
 
-      ```powershell
+      ```console
       $env:OS_PASSWORD = "<PASSWORD>"
       ```
 
@@ -224,7 +224,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 1. Check the availability of the OpenStack client:
 
-   ```bash
+   ```console
    openstack --version
    ```
 
@@ -240,20 +240,20 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    env | grep OS_
    ```
 
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    set | findstr OS_
    ```
    </tabpanel>
    <tabpanel>
 
-   ```bash
+   ```console
    gci env: | where name -like 'OS_*'
    ```
 
@@ -264,7 +264,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 3. Run the command that uses the OpenStack client. For example:
 
-   ```bash
+   ```console
    openstack project list
    ```
 
@@ -274,14 +274,14 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 - View the list of available flavors:
 
-   ```bash
+   ```console
    openstack flavor list
    ```
 
    <details>
    <summary>Example of the command output</summary>
 
-   ```bash
+   ```console
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
    | ID                                   | Name              |   RAM | Disk | Ephemeral | VCPUs | Is Public |
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
@@ -298,14 +298,14 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 - Output information about a specific image:
 
-   ```bash
+   ```console
    openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
 
    <details>
    <summary>Example of the command output (shortened)</summary>
 
-    ```bash
+    ```console
     +------------------+------------------------------------------------------+
     | Field            | Value                                                |
     +------------------+------------------------------------------------------+
@@ -334,14 +334,14 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 - Get the list of [availability zones](/en/intro/start/concepts/architecture#az):
 
-   ```bash
+   ```console
    openstack availability zone list
    ```
 
    <details>
    <summary>The example result of running the command</summary>
 
-    ```bash
+    ```console
     +-----------+-------------+
     | Zone Name | Zone Status |
     +-----------+-------------+

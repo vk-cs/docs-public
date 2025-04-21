@@ -37,9 +37,9 @@ Here, `name` is a unique name of the key pair (a required argument). Changing th
 
 Add the text of the example to the `keypair.tf` file and run the commands:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

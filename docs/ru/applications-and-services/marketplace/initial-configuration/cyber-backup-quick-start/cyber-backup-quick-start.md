@@ -48,7 +48,7 @@
 1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ.
 1. В вашей домашней директории разместите произвольный непустой файл. Например, выполните в консоли:
 
-    ```bash
+    ```console
 
     cp --help > /home/ubuntu/cp_help.txt
 
@@ -105,7 +105,7 @@
    1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ, загрузите на нее дистрибутив агента сервиса для Linux.
    1. Установите на ВМ пакет `rpm`:
 
-      ```bash
+      ```console
 
       sudo apt-get install rpm
 
@@ -113,7 +113,7 @@
 
    1. Запустите на ВМ дистрибутив, выполнив команду запуска со следующими параметрами:
 
-      ```bash
+      ```console
 
       sudo ./<Путь к дистрибутиву Linux> -i BackupAndRecoveryAgent --rain=https://cloud.acronis-infoprotect.ru --token=<маркер регистрации>
 

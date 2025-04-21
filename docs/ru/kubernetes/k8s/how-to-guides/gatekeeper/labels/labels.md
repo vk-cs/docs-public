@@ -179,7 +179,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    kubectl delete ns allowed-namespace
    kubectl delete k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels
@@ -189,7 +189,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    kubectl delete ns allowed-namespace; `
    kubectl delete k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label; `
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels

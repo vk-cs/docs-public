@@ -186,7 +186,7 @@ Use one of the ways to set a password:
 
 - Create a file `secret.tfvars`, write `db_user_password="YOUR_DB_PASSWORD"` into it and pass it as an argument to the `terraform apply` command:
 
-   ```bash
+   ```console
    terraform apply -var-file="secret.tfvars"
    ```
 
@@ -202,20 +202,20 @@ Use one of the ways to set a password:
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    export TF_VAR_db_user_password=YOUR_DB_PASSWORD
    ```
    </tabpanel>
    <tabpanel>
 
-    ```bash
+    ```console
     set TF_VAR_db_user_password=YOUR_DB_PASSWORD
     ```
 
    </tabpanel>
    <tabpanel>
 
-    ```bash
+    ```console
     $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
     ```
 
@@ -318,7 +318,7 @@ resource "vkcs_db_user" "db-user" {
 1. Go to this directory.
 1. Run the command:
 
-    ```bash
+    ```console
     terraform init
     ```
 
@@ -326,7 +326,7 @@ resource "vkcs_db_user" "db-user" {
 
 1. Run the command:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -351,7 +351,7 @@ Some objects created in this scenario consume resources. If you no longer need t
 1. Go to the directory with the Terraform configuration files.
 1. Run the command:
 
-    ```bash
+    ```console
     terraform destroy
     ```
 

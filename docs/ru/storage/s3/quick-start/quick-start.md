@@ -32,7 +32,7 @@
 
    1. Выполните команду:
 
-      ```bash
+      ```console
       aws configure
       ```
 
@@ -70,7 +70,7 @@
 
    1. Сгенерируйте временную ссылку для доступа к объекту с приватными настройками ACL, выполнив команду:
 
-      ```bash
+      ```console
       aws s3 presign s3://<название бакета>/<имя объекта> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
@@ -81,7 +81,7 @@
 
       Тогда команда будет иметь вид:
 
-      ```bash
+      ```console
       aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 

@@ -18,7 +18,7 @@
   1. [Установите аддон](../../../k8s/service-management/addons/advanced-installation/install-advanced-registry) Docker Registry, если этого еще не сделано.
   1. Скачайте нужный образ на локальный компьютер. Для этого выполните команду:
 
-      ```bash
+      ```console
       docker pull mirror.gcr.io/<имя_образа>
       ```
   

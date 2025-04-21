@@ -41,19 +41,19 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
 1. Add the `cert-manager` repository:
 
-   ```bash
+   ```console
    helm repo add jetstack https://charts.jetstack.io
    ```
 
 1. Update the charts cache:
 
-   ```bash
+   ```console
    helm repo update
    ```
 
 1. List available `cert-manager` charts and their versions:
 
-   ```bash
+   ```console
    helm search repo jetstack -l
    ```
 
@@ -77,7 +77,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    Execute the command:
 
-   ```bash
+   ```console
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.3/cert-manager.crds.yaml
    ```
 
@@ -92,7 +92,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm install cert-manager jetstack/cert-manager \
      --version v1.11.3 \
      --namespace cert-manager \
@@ -102,7 +102,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm install cert-manager jetstack/cert-manager `
      --version v1.11.3 `
      --namespace cert-manager `
@@ -151,7 +151,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
 1. Verify that all the necessary pods have been successfully created in the `cert-manager` namespace. The pods should be in the `Running` state:
 
-   ```bash
+   ```console
    kubectl get pods -n cert-manager
    ```
 
@@ -211,7 +211,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    1. Apply the manifest:
 
-      ```bash
+      ```console
       kubectl apply -f cert-manager-test-resources.yaml
       ```
 
@@ -219,7 +219,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    1. Verify that all the necessary resources have been successfully created in the `cert-manager-test` namespace:
 
-      ```bash
+      ```console
       kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges,secrets -n cert-manager-test
       ```
 
@@ -249,7 +249,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    1. Verify the certificate's status:
 
-      ```bash
+      ```console
       kubectl describe certificate selfsigned-cert -n cert-manager-test
       ```
 
@@ -318,7 +318,7 @@ To create a backup, execute the command:
 </tablist>
 <tabpanel>
 
-```bash
+```console
 kubectl get -o yaml \
   --all-namespaces \
   issuer,clusterissuer,certificate \
@@ -328,7 +328,7 @@ kubectl get -o yaml \
 </tabpanel>
 <tabpanel>
 
-```powershell
+```console
 kubectl get -o yaml `
   --all-namespaces `
   issuer,clusterissuer,certificate `
@@ -344,19 +344,19 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
 1. Check the version of the installed `cert-manager` release:
 
-   ```bash
+   ```console
    helm list --namespace cert-manager
    ```
 
 1. Update the charts cache:
 
-   ```bash
+   ```console
    helm repo update
    ```
 
 1. List available `cert-manager` charts and their versions:
 
-   ```bash
+   ```console
    helm search repo jetstack -l
    ```
 
@@ -380,7 +380,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
    Since these CRDs have been [installed manually](#2_install_cert_manager), upgrade them manually as well before upgrading the `cert-manager` itself.
 
-   ```bash
+   ```console
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
    ```
 
@@ -393,7 +393,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    helm upgrade cert-manager jetstack/cert-manager \
      --version v1.12.3 \
      --namespace cert-manager
@@ -402,7 +402,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    helm upgrade cert-manager jetstack/cert-manager `
      --version v1.12.3 `
      --namespace cert-manager
@@ -451,7 +451,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
 1. If the Kubernetes resources, created to [confirm cert-manager operability](#3_confirm_cert_manager_operability), are the test ones and you no longer need them, then delete them:
 
-   ```bash
+   ```console
    kubectl delete -f cert-manager-test-resources.yaml
    ```
 
@@ -465,7 +465,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
    1. Make sure that there are no resources created by `cert-manager` in the cluster:
 
-      ```bash
+      ```console
       kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges --all-namespaces
       ```
 
@@ -473,18 +473,18 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
    1. Delete the `cert-manager` release:
 
-      ```bash
+      ```console
       helm delete cert-manager --namespace cert-manager
       ```
 
    1. Delete the `cert-manager` namespace:
 
-      ```bash
+      ```console
       kubectl delete ns cert-manager
       ```
 
    1. Delete the CRDs, installed in the cluster for `cert-manager`:
 
-      ```bash
+      ```console
       kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
       ```

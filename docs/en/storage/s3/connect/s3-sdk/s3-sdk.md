@@ -52,7 +52,7 @@ To connect to the object storage using the SDK:
      </tablist>
      <tabpanel>
 
-     ```bash
+     ```console
      export AWS_ACCESS_KEY_ID=<account key ID>
      export AWS_SECRET_ACCESS_KEY=<account secret key>
      export AWS_DEFAULT_REGION=<default region name>
@@ -61,7 +61,7 @@ To connect to the object storage using the SDK:
      </tabpanel>
      <tabpanel>
 
-     ```bash
+     ```console
      $Env:AWS_ACCESS_KEY_ID="<account key ID>"
      $Env:AWS_SECRET_ACCESS_KEY="<account secret key>"
      $Env:AWS_DEFAULT_REGION="<default region name>"

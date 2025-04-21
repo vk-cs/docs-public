@@ -47,31 +47,31 @@
 
 1. Получите ID виртуальной машины, которую планируется подключить к сети:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 1. Получите список сетей и входящих в них подсетей:
 
-   ```bash
+   ```console
    openstack network list
    ```
 
 1. Получите список доступных портов в нужной сети:
 
-   ```bash
+   ```console
    openstack port list --network <имя или идентификатор сети>
    ```
 
 1. Присоедините выбранный порт к ВМ:
 
-   ```bash
+   ```console
    openstack server add port <ID виртуальной машины> <ID порта>
    ```
 
 1. Убедитесь, что порт успешно подключен к ВМ:
 
-   ```bash
+   ```console
    openstack port list --server <ID виртуальной машины>
    ```
 
@@ -79,19 +79,19 @@
 
 1. Получите список сетей и входящих в них подсетей:
 
-   ```bash
+   ```console
    openstack network list
    ```
 
 1. Получите список IP-адресов для подсети, к которой планируется выполнить подключение:
 
-   ```bash
+   ```console
    openstack subnet list --network <имя или идентификатор сети>
    ```
 
 1. Получите список групп безопасности:
 
-   ```bash
+   ```console
    openstack security group list
    ```
 
@@ -99,13 +99,13 @@
 
    - В нужной сети и с группой безопасности `default`:
 
-      ```bash
+      ```console
       openstack port create <имя порта> --network <имя или идентификатор сети>
       ```
 
    - С указанием параметров:
 
-      ```bash
+      ```console
       openstack port create <имя порта> \
                             --network <имя или идентификатор сети> \
                             --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<IP-адрес порта> \
@@ -114,7 +114,7 @@
 
       Чтобы посмотреть полный перечень поддерживаемых параметров, выполните команду:
 
-      ```bash
+      ```console
       openstack port create --help
       ```
 
@@ -126,19 +126,19 @@
 
 1. Получите ID виртуальной машины, которую планируется подключить к сети:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 1. Присоедините созданный порт к ВМ:
 
-   ```bash
+   ```console
    openstack server add port <ID виртуальной машины> <ID порта>
    ```
 
 1. Убедитесь, что порт успешно подключен к ВМ:
 
-   ```bash
+   ```console
    openstack port list --server <ID виртуальной машины>
    ```
 
@@ -172,19 +172,19 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 2. Получите ID виртуальной машины:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Получите список портов у ВМ:
 
-   ```bash
+   ```console
    openstack port list --server <ID виртуальной машины>
    ```
 
 4. Удалите ненужный порт:
 
-   ```bash
+   ```console
    openstack port delete <имя или идентификатор порта>
    ```
 

@@ -61,13 +61,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Make sure the configuration files are correct and contain the necessary changes:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Apply the changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -186,13 +186,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Make sure the configuration files are correct and contain the necessary changes:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Apply the changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 
@@ -254,13 +254,13 @@ If this is not suitable for you, perform a **standard installation** or **instal
 
    1. Make sure the configuration files are correct and contain the necessary changes:
 
-      ```bash
+      ```console
       terraform validate && terraform plan
       ```
 
    1. Apply the changes:
 
-      ```bash
+      ```console
       terraform apply
       ```
 

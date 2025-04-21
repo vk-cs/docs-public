@@ -59,7 +59,7 @@
 
 1. Выполните команду для инициализации Terraform:
 
-    ```bash
+    ```console
     terraform init
     ```
 
@@ -263,13 +263,13 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 1. Перейдите в эту директорию.
 1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-   ```bash
+   ```console
    terraform validate && terraform plan
    ```
 
 1. Примените изменения:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -284,7 +284,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 1. [Подключитесь](/ru/storage/s3/connect/s3-cli) к Cloud Storage через AWS CLI.
 1. Проверьте, что бакет и объекты созданы. Выполните команду:
 
-   ```bash
+   ```console
    aws s3 ls s3://example-bucket/ --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -300,7 +300,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 1. Проверьте, что для бакета настроены правила автоматической очистки. Выполните команду:
 
-   ```bash
+   ```console
    aws s3api get-bucket-lifecycle-configuration \
     --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
     --bucket example-bucket
@@ -308,7 +308,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 1. Проверьте, что настроены права доступа к бакету для других пользователей:
 
-   ```bash
+   ```console
    aws s3api get-bucket-acl \
     --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
     --bucket example-bucket
@@ -316,7 +316,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 1. Проверьте, что для бакета настроены правила CORS:
 
-   ```bash
+   ```console
    aws s3api get-bucket-cors \
     --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
     --bucket example-bucket
@@ -329,7 +329,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

@@ -23,7 +23,7 @@
 
 1. Скопируйте **registration token**. В консоли на сервере, на котором установлен GitLab-runner, выполните команду:
 
-   ```bash
+   ```console
    docker exec -it gitlab-runner gitlab-runner register -n --url https://<SERVER_DNS_NAME>/ --executor docker --registration-token ua2k238fbMtAxMBBRf_z --description "shared-runner" --docker-image="docker:dind" --tag-list "shared_runner" --docker-privileged --docker-volumes /var/run/docker.sock:/var/run/docker.sock
    ```
 
@@ -102,7 +102,7 @@
 
 1. Загрузите созданный файл в репозиторий:
 
-   ```bash
+   ```console
    ash-work:k8s-conf-demo git add .
    ash-work:k8s-conf-demo git commit -m "create .gitlab-ci.yml"
    [master 55dd5fa] create .gitlab-ci.yml
@@ -154,13 +154,13 @@
 
    1. Создайте secret с `<SERVER_DNS_NAME>` (имя сервера Harbor) и `<PASSWORD>` (пароль пользователя k8s в Harbor):
 
-   ```bash
+   ```console
    kubectl create secret docker-registry myprivateregistry --docker-server=https://<SERVER_DNS_NAME>:8443 --docker-username=k8s --docker-password=<PASSWORD>
    ```
 
    1. Убедитесь, что secret успешно создан:
 
-   ```bash
+   ```console
    ash-work:~ kubectl get secret myprivateregistry --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode
    ```
 
@@ -200,19 +200,19 @@
 
 1. Запустите приложение:
 
-   ```bash
+   ```console
    kubectl create -f deployment.yaml 
    ```
 
 1. Через некоторое время убедитесь, что контейнер поднялся:
 
-   ```bash
+   ```console
    kubectl get pods 
    ```
 
    Должна быть выведена похожая информация:
 
-   ```bash
+   ```console
    NAME READY STATUS RESTARTS AGE 
    myapp-deployment-66d55bcbd5-s86m6   1/1     Running   0          39s
    ```
@@ -242,7 +242,7 @@
 
 1. Создайте сервис:
 
-   ```bash
+   ```console
    kubectl create -f service.yaml
    ```
 
@@ -273,19 +273,19 @@
 
 1. Примените ingress-контроллер:
 
-   ```bash
+   ```console
    kubectl create -f ingress.yaml
    ```
 
 1. Посмотрите состояние ingress-контроллера:
 
-   ```bash
+   ```console
    kubectl describe ingress myapp-ingress
    ```
 
    Ожидаемый вывод команды:
 
-   ```bash
+   ```console
    Name: myapp-ingress 
    Namespace: default 
    Address: 
@@ -305,7 +305,7 @@
 
 1. Протестируйте работу приложения. Внешний IP-адрес, связанный с ingress-контроллером, можно на [странице кластера](/ru/kubernetes/k8s/service-management/manage-cluster#poluchit_informaciyu_o_klastere). Он называется IP-адрес балансировщика нагрузки для Ingress Controller. Обозначим его как `<INGRESS_EXTERNAL_IP>`.
 
-   ```bash
+   ```console
    ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/handler
    ```
 
@@ -317,7 +317,7 @@
 
 1. (Опционально) Удалите созданные в кластере сервисы:
 
-   ```bash
+   ```console
    ash-work:~ kubectl delete -f ingress.yaml
    ash-work:~ kubectl delete -f service.yaml
    ash-work:~ kubectl delete -f deployment.yaml
@@ -329,19 +329,19 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Получите API URL:
 
-   ```bash
+   ```console
    ash-work:~ kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ {print $NF}'
    ```
 
 1. Получите список секретов кластера:
 
-   ```bash
+   ```console
    kubectl get secrets
    ```
 
    Ожидаемый вывод команды:
 
-   ```bash
+   ```console
    NAME                       TYPE                                  DATA   AGE
    dashboard-sa-token-xnvmp   kubernetes.io/service-account-token   3      41h
    default-token-fhvxq        kubernetes.io/service-account-token   3      41h
@@ -351,7 +351,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Получите PEM-сертификат секрета `default-token`:
 
-   ```bash
+   ```console
    kubectl get secret default-token-fhvxq -o jsonpath="{['data']['ca\.crt']}" | base64 --decode
    ```
 
@@ -385,7 +385,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Примените права и получите токен доступа к кластеру:
 
-   ```bash
+   ```console
    kubectl apply -f gitlab-admin-service-account.yaml
    kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep gitlab-admin | awk '{print $1}')
    ```
@@ -464,13 +464,13 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Проверьте namespace кластера:
 
-   ```bash
+   ```console
    kubectl get namespaces
    ```
 
    Ожидаемый вывод команды:
 
-   ```bash
+   ```console
    NAME STATUS AGE
    default Active 45h
    gitlab-managed-apps Active 67m
@@ -484,7 +484,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Посмотрите поды, сервисы и ingress в `k8s-conf-demo-1-production`:
 
-   ```bash
+   ```console
    kubectl get pods -n k8s-conf-demo-1-production
    kubectl get services -n k8s-conf-demo-1-production
    kubectl get ingress -n k8s-conf-demo-1-production
@@ -492,7 +492,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Проверьте работоспособность приложения:
 
-   ```bash
+   ```console
    ash-work:~ curl --resolve echo.com:<INGRESS_EXTERNAL_IP> http://echo.com/handler
    ```
 
@@ -501,13 +501,13 @@ GitLab по умолчанию поддерживает интеграцию с 
 1. Для тестирования авторазвертывания измените код приложения: в файле репозитория `app/app.py` исправьте строку `return 'OK'` на `return 'HANDLER OK'`.
 1. Опубликуйте изменения:
 
-   ```bash
+   ```console
    k8s-conf-demo git add . && git commit -m "update" && git push
    ```
 
 1. Дождитесь окончания выполнения CI/CD и проверьте вывод приложения повторно:
 
-   ```bash
+   ```console
    ash-work:~ curl --resolve echo.com:<INGRESS_EXTERNAL_IP> http://echo.com/handler
    ```
 

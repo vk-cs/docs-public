@@ -23,7 +23,7 @@
 
 1. Убедитесь, что утилита `psql` установлена. Для этого посмотрите версию утилиты:
 
-   ```bash
+   ```console
    psql --version
    ```
 
@@ -48,7 +48,7 @@
 
    1. Подключите репозиторий PostgreSQL:
 
-      ```bash
+      ```console
       sudo apt install curl ca-certificates gnupg
       curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
       sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -58,7 +58,7 @@
 
    1. Установите утилиту `psql`:
 
-      ```bash
+      ```console
       sudo apt install -y postgresql-client
       ```
 
@@ -86,14 +86,14 @@
          </tablist>
          <tabpanel>
 
-         ```bash
+         ```console
          sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
          </tabpanel>
          <tabpanel>
 
-         ```bash
+         ```console
          sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
@@ -104,7 +104,7 @@
 
       1. Если использовалась команда вида `sudo dnf...`, отключите встроенный модуль PostgreSQL:
 
-         ```bash
+         ```console
          sudo dnf -qy module disable postgresql
          ```
 
@@ -117,14 +117,14 @@
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       sudo yum install -y postgresql
       ```
 
       </tabpanel>
       <tabpanel>
 
-      ```bash
+      ```console
       sudo dnf install -y postgresql
       ```
 
@@ -259,7 +259,7 @@
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    chmod 0600 <путь/к/ключу/ключ.pem>
    ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
 
@@ -268,7 +268,7 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
    ```
 
@@ -277,7 +277,7 @@
 
 1. Посмотрите логи инстанса:
 
-   ```bash
+   ```console
    journalctl -u postgresql
    ```
 
@@ -327,7 +327,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    psql -h <внешний IP-адрес инстанса БД> -d tsdb1 -U tsuser1
    ```
 
@@ -335,7 +335,7 @@
 
 При успешном подключении должно отобразиться приглашение:
 
-```bash
+```console
 tsdb1=>
 ```
 

@@ -35,7 +35,7 @@ To find the values ​​of the `os_distro` and `os_version` meta tags, use, for
 
    1. Query libosinfo for the OS you are interested in, for example Ubuntu 24.XX, by running the command:
 
-      ```bash
+      ```console
       osinfo-query os | grep -i ubuntu24
       ```
 
@@ -64,7 +64,7 @@ If your local copy of the libosinfo database does not contain information about 
 
 1. Get the image `ID`:
 
-   ```bash
+   ```console
    openstack image show <image ID>
    ```
 
@@ -72,7 +72,7 @@ If your local copy of the libosinfo database does not contain information about 
 
 2. Set a meta tag:
 
-   ```bash
+   ```console
    openstack image set --property <tag name and value> <image ID>
    ```
 
@@ -104,7 +104,7 @@ If your local copy of the libosinfo database does not contain information about 
 
   5. Check the image information:
 
-     ```bash
+     ```console
      openstack image show <image ID>
      ```
 
@@ -126,7 +126,7 @@ If your local copy of the libosinfo database does not contain information about 
 
 1. Get the image `ID`:
 
-   ```bash
+   ```console
    openstack image show <image ID>
    ```
 
@@ -134,7 +134,7 @@ If your local copy of the libosinfo database does not contain information about 
 
 2. Delete a meta tag:
 
-   ```bash
+   ```console
    openstack image unset --property <tag name and value> <image ID>
    ```
 

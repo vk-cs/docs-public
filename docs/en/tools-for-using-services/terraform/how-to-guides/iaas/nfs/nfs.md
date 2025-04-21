@@ -90,9 +90,9 @@ resource "vkcs_sharedfilesystem_share_access" "share_access_2" {
 
 Add the text of the example to the `nfs.tf` file and run the following commands:
 
-```bash
+```console
 terraform init
 ```
-```bash
+```console
 terraform apply
 ```

@@ -123,14 +123,14 @@
 
    1. Для добавления сетевых интерфейсов подключитесь к MikroTik по SSH и выполните команду:
 
-      ```bash
+      ```console
        /ip address add address=172.20.2.204/24 interface ether1
        /ip address add address=10.0.0.15/24 interface ether2
       ```
 
    1. Настройте интерфейсы с использованием DHCP:
 
-      ```bash
+      ```console
        /ip dhcp-client
        add add-default-route=no interface=ether1
        add add-default-route=no interface=ether2
@@ -138,21 +138,21 @@
 
    1. Настройте системный идентификатор (System ID):
 
-      ```bash
+      ```console
        /system identity
        set name=bgp-customer
       ```
 
    1. Подготовьте список сетей для BGP-анонса:
 
-      ```bash
+      ```console
        /ip firewall address-list
        add address=10.0.0.0/24 list=bgp_networks
       ```
 
    1. Настройте BFD-протокол:
 
-      ```bash
+      ```console
        /routing bfd configuration
        add disabled=no interfaces=ether1
       ```
@@ -215,19 +215,19 @@
 
 1. Подключитесь к MikroTik по SSH и выполните команду:
 
-    ```bash
+    ```console
     /routing bgp connection
     add address-families=ip as=65512 local.address=172.20.2.204 .role=ebgp name=bgp-customer output.network=bgp_networks remote.address=172.20.2.215 .as=64512 router-id=172.20.2.204 use-bfd=yes
     ```
 1. Проверьте, что установлена связь по BFD-протоколу. Выполните команду:
 
-   ```bash
+   ```console
    /routing bfd session print
    ```
 
    Пример ответа:
 
-   ```bash
+   ```console
       Flags: U - up, I - inactive 
    0 U multihop=no vrf=main remote-address=172.20.2.215%ether1 local-address=172.20.2.204 state=up state-changes=1 uptime=3h27m12s desired-tx-interval=200ms actual-tx-interval=100ms 
      required-min-rx=200ms remote-min-rx=10ms multiplier=5 hold-time=1s packets-rx=75343 packets-tx=72203
@@ -235,13 +235,13 @@
 
 1. Проверьте, что установлена связь с BGP-соседом на стороне MikroTik. Выполните команду:
 
-   ```bash
+   ```console
    /routing bgp session print
    ```
 
    Пример ответа:
 
-   ```bash
+   ```console
       Flags: E - established
    0 E name="tw-bgp-mikrotik-1"
         remote.address=172.20.2.215 .as=64512 .id=172.20.2.215 .capabilities=mp,rr,gr,as4,ap,err,llgr .hold-time=4m
@@ -253,13 +253,13 @@
    ```
 1. Выполните команду, чтобы посмотреть все маршруты MikroTik:
 
-   ```bash
+   ```console
    /ip route print where bgp
    ```
 
    Пример ответа:
 
-   ```bash
+   ```console
    Flags: D - DYNAMIC; A - ACTIVE; b, y - BGP-MPLS-VPN
    Columns: DST-ADDRESS, GATEWAY, DISTANCE
        DST-ADDRESS    GATEWAY       DISTANCE
@@ -288,7 +288,7 @@
    1. Откройте сессию терминала с ВМ `vkcloud-vm`.
    1. Выполните команду:
 
-       ```bash
+       ```console
        ip route
        ```
 
@@ -304,7 +304,7 @@
 1. Откройте сессию терминала с ВМ `vkcloud-vm`.
 1. Выполните пинг внутреннего IP-адреса машины в клиентской сети:
 
-      ```bash
+      ```console
       ping 10.0.0.5
       ```
 

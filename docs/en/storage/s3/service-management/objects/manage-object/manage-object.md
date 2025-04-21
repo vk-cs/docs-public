@@ -21,7 +21,7 @@
 
 1. Откройте консоль и выполните команду:
 
-      ```bash
+      ```console
       aws s3 ls s3://<имя_бакета> --endpoint-url <домен>
       ```
 
@@ -36,13 +36,13 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3 ls s3://my-bucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
 
-      ```bash
+      ```console
                                     PRE folder/
       2023-09-27 11:45:05     421326 picture-1.jpg
       2023-09-27 11:47:37       2713 picture-2.png
@@ -167,7 +167,7 @@
 
 1. Выполните команду:
 
-   ```bash
+   ```console
    aws s3api get-object --bucket <имя_бакета> --key <ключ_объекта> <имя_загруженного файла> --endpoint-url <домен>
    ```
 
@@ -184,7 +184,7 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3api get-object --bucket my-bucket --key folder/my-object.exe uploaded-file.exe --endpoint-url   https://hb.ru-msk.vkcloud-storage.ru
       ```
 
@@ -327,7 +327,7 @@
 
 1. Откройте консоль и выполните команду:
 
-      ```bash
+      ```console
       aws s3api put-object-acl --bucket <имя_бакета> --key <ключ_объекта> --acl <настройка_acl> --endpoint-url <домен>
       ```
 
@@ -344,7 +344,7 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
@@ -373,7 +373,7 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
+   ```console
    aws s3 presign s3://<имя_бакета>/<ключ_объекта> --endpoint-url <домен> --expires-in <время_действия>
    ```
 
@@ -390,7 +390,7 @@
 
    Пример команды :
 
-   ```bash
+   ```console
    aws s3 presign s3://my-bucket/my-object.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --expires-in 300000
    ```
 
@@ -534,7 +534,7 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
+   ```console
    aws s3 cp s3://<бакет_источник>/<ключ_объекта> s3://<бакет_приемник>/<ключ_объекта> --endpoint-url=<домен>
    ```
 
@@ -552,13 +552,13 @@
 
    Пример команды:
 
-   ```bash
+   ```console
    aws s3 cp s3://my-bucket/my-picture.png s3://my-another-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Пример ответа:
 
-   ```bash
+   ```console
    copy: s3://my-bucket/my-picture.png to s3://my-another-bucket/my-picture.png
    ```
 
@@ -673,7 +673,7 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
+   ```console
    aws s3 cp --recursive s3://<бакет_источник> s3://<бакет_приемник> --endpoint-url=<домен>
    ```
 
@@ -690,13 +690,13 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3 cp --recursive s3://my-bucket s3://my-another-bucket --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
 
-      ```bash
+      ```console
       copy: s3://my-bucket/video.mp4 to s3://my-another-bucket/video.mp4
       copy: s3://my-bucket/pre/scheme.svg to s3://my-another-bucket/pre/scheme.svg
       copy: s3://my-bucket/picture.png to s3://my-another-bucket/picture.png
@@ -741,7 +741,7 @@
 
 1. Откройте консоль и выполните команду:
 
-   ```bash
+   ```console
    aws s3 rm s3://<имя_бакета>/<ключ_объекта> --endpoint-url=<домен>
    ```
 
@@ -757,13 +757,13 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3 rm s3://my-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Пример ответа:
 
-      ```bash
+      ```console
       delete: s3://my-bucket/my-picture.png
       ```
 
@@ -903,7 +903,7 @@
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
 
-   ```bash
+   ```console
    aws s3api list-multipart-uploads --bucket <имя_бакета> --endpoint-url <endpoint-url>
    ```
 
@@ -921,7 +921,7 @@
 
       Пример команды:
 
-      ```bash
+      ```console
       aws s3api list-multipart-uploads --bucket mybucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
@@ -980,7 +980,7 @@
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
 
-   ```bash
+   ```console
    aws s3api abort-multipart-upload --bucket <имя_бакета> --key <ключ_объекта> --upload-id <UploadId> --endpoint-url <endpoint-url>
    ```
 
@@ -999,7 +999,7 @@
 
    Пример выполнения команды:
 
-   ```bash
+   ```console
    aws s3api abort-multipart-upload --bucket mybucket --key inupload.avi --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 

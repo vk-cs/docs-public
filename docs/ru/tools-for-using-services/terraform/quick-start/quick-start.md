@@ -46,7 +46,7 @@
 
 В директории, из которой вы планируете работать с проектом, выполните команду:
 
-```bash
+```console
 terraform init
 ```
 
@@ -58,7 +58,7 @@ terraform init
 
 1. Выполните команду:
 
-    ```bash
+    ```console
     terraform apply
     ```
 
@@ -75,6 +75,6 @@ terraform init
 1. Откройте файл `vkcs_provider.tf` и измените версию на нужную, например: `version = "~> 0.8.0"`.
 1. В терминале выполните команду:
 
-  ```bash
+  ```console
   terraform init --upgrade
   ```

@@ -86,19 +86,19 @@
 
    1. Получите список доступных типов ВМ и сохраните нужный `flavor_ID`:
 
-      ```bash
+      ```console
       openstack flavor list
       ```
 
    2. Получите список доступных образов ВМ и сохраните нужный `image_ID`:
 
-      ```bash
+      ```console
       openstack image list
       ```
 
    3. Получите список групп безопасности:
 
-      ```bash
+      ```console
       openstack security group list
       ```
 
@@ -109,7 +109,7 @@
 
    4. Получите список доступных сетей и сохраните нужный `network_ID`:
 
-      ```bash
+      ```console
       openstack network list
       ```
 
@@ -118,32 +118,32 @@
 
    5. Получите список доступных ключевых пар и сохраните `keypair_name`:
 
-      ```bash
+      ```console
       openstack keypair list
       ```
 
       Чтобы создать новую ключевую пару:
          1. Сгенерируйте ключ:
 
-            ```bash
+            ```console
             ssh-keygen -q -N ""
             ```
 
          2. Загрузите ключ:
 
-            ```bash
+            ```console
             openstack keypair create --public-key ~/.ssh/id_rsa.pub --type ssh <keypair_name>
             ```
 
 3. Создайте загрузочный диск:
 
-   ```bash
+   ```console
    openstack volume create root-volume --size 10 --image <image_id> --availability-zone MS1 --bootable
    ```
 
 4. Создайте ВМ:
 
-   ```bash
+   ```console
    openstack server create <VM_name>
                            --volume <volume_id>
                            --network <network_ID> \
@@ -162,7 +162,7 @@
 
 5. Проверьте состояние созданной ВМ:
 
-   ```bash
+   ```console
    openstack server list
    ```
 

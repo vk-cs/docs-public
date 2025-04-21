@@ -8,13 +8,13 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
    1. Create a new namespace for the project:
 
-      ```bash
+      ```console
       kubectl create ns echo-production
       ```
 
    1. Create a Kubernetes resource based on the manifest, for example, [http-svc](https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml):
 
-   ```bash
+   ```console
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-production
    ```
 
@@ -46,7 +46,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 1. Apply the manifest in the cluster:
 
-   ```bash
+   ```console
    kubectl apply -f http-svc.ingress -n echo-production
    ```
 
@@ -56,13 +56,13 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 1. Create a Canary version of the namespace for the application:
 
-   ```bash
+   ```console
    kubectl create ns echo-canary
    ```
 
 1. Deploy the Canary version of the app:
 
-   ```bash
+   ```console
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-canary
    ```
 
@@ -99,7 +99,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 1. Apply the manifest in the cluster:
 
-   ```bash
+   ```console
    kubectl apply -f http-svc.ingress.canary -n echo-canary
    ```
 
@@ -129,13 +129,13 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
    </details>
 
-   ```bash
+   ```console
    ruby count.rb
    ```
 
 Example of a successful result:
 
-```bash
+```console
 {"echo-production"=>896, "echo-canary"=>104}
 ```
 

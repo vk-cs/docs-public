@@ -59,14 +59,14 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
     1. Get the list of existing file storage networks by running the command:
 
-        ```bash
+        ```console
         openstack share network list
         ```
 
         Write down the name or ID of the required network.
     1. (Optional) View the properties of the selected network by running the command:
 
-        ```bash
+        ```console
         openstack share network show <NETWORK>
         ```
 
@@ -77,7 +77,7 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
    Run the command:
 
-    ```bash
+    ```console
     openstack share network create --neutron-net-id <NETWORK_ID> --neutron-subnet-id <SUBNET_ID> --name <NETWORK_NAME>
     ```
 
@@ -94,7 +94,7 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
 1. Create a file storage using the command:
 
-    ```bash
+    ```console
     openstack share create --name <STORAGE_NAME> --share-network <NETWORK> <PROTOCOL> <SIZE> 
     ```
 
@@ -155,7 +155,7 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
 
         Run the Powershell command:
 
-        ```powershell
+        ```console
         Install-WindowsFeature NFS-Client, RSAT-NFS-Admin
         ```
 
@@ -174,7 +174,7 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
 
     The command to connect the storage looks like this:
 
-    ```bash
+    ```console
     mount <MOUNT_POINT> <DISK_NAME>:
     ```
 
@@ -190,7 +190,7 @@ To connect the file storage, run the command specified in its [properties](#view
 
 The command to connect the storage looks like this:
 
-```bash
+```console
 net use <DISK_NAME>: <MOUNT_POINT>
 ```
 
@@ -219,19 +219,19 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 1. Install the `nfs-common` package using the command:
 
-    ```bash
+    ```console
     sudo apt-get install nfs-common
     ```
 
 2. Create a directory to mount the storage:
 
-    ```bash
+    ```console
     mkdir <DIRECTORY_NAME>
     ```
 
 3. Use the command specified in [properties](#viewing_a_list_of_file_storages) of the file storage:
 
-    ```bash
+    ```console
     mount -t nfs <MOUNT_POINT> ./<DIRECTORY_NAME>
     ```
 
@@ -245,19 +245,19 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 1. Install `cifs-utils` using the command:
 
-    ```bash
+    ```console
     sudo apt install -y cifs-utils
     ```
 
 2. Create a directory to mount the storage:
 
-    ```bash
+    ```console
     mkdir <DIRECTORY_NAME>
     ```
 
 3. Use the command specified in the [properties](#viewing_a_list_of_file_storages) of the file storage:
 
-    ```bash
+    ```console
     sudo mount -o user=,password= -t cifs <MOUNT_POINT> ./<DIRECTORY_NAME>
     ```
 
@@ -291,7 +291,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share list
     ```
 
@@ -321,7 +321,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share show <STORAGE>
     ```
 
@@ -354,7 +354,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share extend <STORAGE> <SIZE>
     ```
 
@@ -397,7 +397,7 @@ The size of the file storage cannot be reduced.
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share snapshot create --name <SNAPSHOT_NAME> <STORAGE>
     ```
 
@@ -432,7 +432,7 @@ The size of the file storage cannot be reduced.
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share snapshot list --share <STORAGE>
     ```
 
@@ -466,7 +466,7 @@ The size of the file storage cannot be reduced.
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share create --snapshot-id <SNAPSHOT_ID> --share-type <STORAGE_TYPE> --name <STORAGE_NAME> <PROTOCOL> <SIZE>
     ```
 
@@ -508,7 +508,7 @@ The size of the file storage cannot be reduced.
 
 1. Run the command:
 
-    ```bash
+    ```console
     openstack share snapshot delete <SNAPSHOT>
     ```
 
@@ -544,7 +544,7 @@ The size of the file storage cannot be reduced.
 
 3. Add an access rule using the command:
 
-    ```bash
+    ```console
     openstack share access create <STORAGE> ip <NETWORK_IP> --access-level <ACCESS_MODE>
     ```
 
@@ -556,7 +556,7 @@ The size of the file storage cannot be reduced.
 
 4. Check that the rule was created successfully by requesting the list of access rules:
 
-    ```bash
+    ```console
     openstack share access list <STORAGE>
     ```
 
@@ -591,7 +591,7 @@ The size of the file storage cannot be reduced.
 
 3. Get the ID of the required rule by requesting the list of access rules:
 
-    ```bash
+    ```console
     openstack share access list <STORAGE>
     ```
 
@@ -599,7 +599,7 @@ The size of the file storage cannot be reduced.
 
 4. Delete the access rule using the command:
 
-    ```bash
+    ```console
     openstack share access delete <STORAGE> <RULE_ID>
     ```
 
@@ -639,7 +639,7 @@ Simultaneously with the file storage, the network created for it will be deleted
 
 1. To delete the file storage, run the command:
 
-    ```bash
+    ```console
     openstack share delete <STORAGE>
     ```
 
@@ -647,7 +647,7 @@ Simultaneously with the file storage, the network created for it will be deleted
 
 1. To delete the file storage network, run the command:
 
-    ```bash
+    ```console
     openstack share network delete <NETWORK_ID>
     ```
 

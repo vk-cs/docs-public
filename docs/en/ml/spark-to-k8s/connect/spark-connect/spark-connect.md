@@ -34,7 +34,7 @@ Install PySpark and all package dependencies to work with Spark Connect in one o
 </tablist>
 <tabpanel>
 
-```bash
+```console
 pip3 install pyspark
 pip3 install pandas
 pip3 install pyarrow
@@ -46,7 +46,7 @@ pip3 install grpcio-status
 </tabpanel>
 <tabpanel>
 
-```bash
+```console
 %pip install pyspark
 %pip install pandas
 %pip install pyarrow
@@ -144,7 +144,7 @@ Other examples of remote work with Cloud Spark cluster can be downloaded at [lin
 
 This returns the dataframe that was created:
 
-```bash
+```console
 +---+---+-------+----------+-------------------+
 |  a|  b|      c|         d|                  e|
 +---+---+-------+----------+-------------------+

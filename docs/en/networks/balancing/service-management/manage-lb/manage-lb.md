@@ -29,13 +29,13 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. To see a list of load balancers and their identifiers, run the command:
 
-   ```bash
+   ```console
    openstack loadbalancer list
    ```
 
 1. To see detailed information about a load balancer, run the command:
 
-   ```bash
+   ```console
    openstack loadbalancer show <load balancer ID>
    ```
 
@@ -49,19 +49,19 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. To see the listener object settings and their relations to pools, run the command:
 
-   ```bash
+   ```console
    openstack loadbalancer listener show <listener object ID>
    ```
 
 1. To see the pool settings and the list of members of that pool, run the command:
 
-   ```bash
+   ```console
    openstack loadbalancer pool show <pool ID>
    ```
 
 1. To see the settings of an individual participant from the pool, run the command:
 
-   ```bash
+   ```console
    openstack loadbalancer member show <pool ID <member ID>
    ```
 
@@ -119,7 +119,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Select the [availability zone](/en/intro/start/concepts/architecture#az) to place the balancer. To get the list of availability zones, run the command:
 
-   ```bash
+   ```console
    openstack availability zone list
    ```
 
@@ -127,7 +127,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Create a balancer:
 
-   ```bash
+   ```console
    openstack loadbalancer create --name <load-balancer-name> --vip-subnet-id <subnet-ID> --availability-zone <availability-zone>
    ```
 
@@ -183,7 +183,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    </tablist>
    <tabpanel>
 
-   ```bash
+   ```console
    openstack loadbalancer <load balancer ID> \
      --name <new name>
    ```
@@ -191,7 +191,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    </tabpanel>
    <tabpanel>
 
-   ```powershell
+   ```console
    openstack loadbalancer <load balancer ID> `
      --name <new name>
    ```
@@ -378,7 +378,7 @@ The following options are available when adding or editing a rule:
 
 Here are just the basic command arguments. Read more about the commands and their arguments in the OpenStack CLI help:
 
-```bash
+```console
 openstack loadbalancer --help
 openstack loadbalancer <command> --help
 ```
@@ -403,7 +403,7 @@ openstack loadbalancer <command> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer pool create \
         --loadbalancer <loadbalancer ID> \
         --name <pool name> \
@@ -414,7 +414,7 @@ openstack loadbalancer <command> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer pool create `
         --loadbalancer <loadbalancer ID> `
         --name <pool name> `
@@ -440,7 +440,7 @@ openstack loadbalancer <command> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer member create <pool ID> \
         --name <member name> \
         --address <IP address of the virtual machine> \
@@ -451,7 +451,7 @@ openstack loadbalancer <command> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer member create <pool ID> `
         --name <member name> `
         --address <IP address of the virtual machine> `
@@ -477,7 +477,7 @@ openstack loadbalancer <command> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer healthmonitor create <pool id> \
         --name <healthcheck object name> \
         --delay <delay, sec> \
@@ -490,7 +490,7 @@ openstack loadbalancer <command> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer healthmonitor create <pool id> `
         --name <healthcheck object name> `
         --delay <delay, sec> `
@@ -512,7 +512,7 @@ openstack loadbalancer <command> --help
       </tablist>
       <tabpanel>
 
-      ```bash
+      ```console
       openstack loadbalancer listener create <load balancer ID> \
         --name <listener object name> \
         --protocol <balancing protocol> \
@@ -523,7 +523,7 @@ openstack loadbalancer <command> --help
       </tabpanel>
       <tabpanel>
 
-      ```powershell
+      ```console
       openstack loadbalancer listener create <load balancer ID> `
         --name <listener object name> `
         --protocol <balancing protocol> `
@@ -544,7 +544,7 @@ openstack loadbalancer <command> --help
 
       1. Execute the command:
 
-         ```bash
+         ```console
          openstack loadbalancer listener show <listener object ID>
          ```
 
@@ -552,13 +552,13 @@ openstack loadbalancer <command> --help
 
    1. Remove the listener object:
 
-      ```bash
+      ```console
       openstack loadbalancer listener delete <listener object ID>
       ```
 
    1. Delete the pool:
 
-      ```bash
+      ```console
       openstack loadbalancer pool delete <pool ID>
       ```
 
@@ -600,7 +600,7 @@ To remove a load balancer:
 
 1. Remove the load balancer:
 
-   ```bash
+   ```console
    openstack loadbalancer delete <load balancer ID>
    ```
 

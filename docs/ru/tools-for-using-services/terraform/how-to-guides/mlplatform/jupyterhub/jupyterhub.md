@@ -170,13 +170,13 @@ resource "vkcs_networking_router_interface" "app" {
 1. Перейдите в эту директорию.
 1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
-   ```bash
+   ```console
    terraform validate && terraform plan
    ```
 
 1. Примените изменения:
 
-   ```bash
+   ```console
    terraform apply
    ```
 
@@ -198,7 +198,7 @@ resource "vkcs_networking_router_interface" "app" {
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:
 
-   ```bash
+   ```console
    terraform destroy
    ```
 

@@ -24,7 +24,7 @@
 
      1. Выполните команду:
 
-        ```bash
+        ```console
         terraform apply -refresh-only
         ```
 

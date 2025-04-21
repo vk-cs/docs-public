@@ -35,7 +35,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 1. To see a list of all ports, run the command:
 
-   ```bash
+   ```console
    openstack port list
    ```
 
@@ -43,33 +43,33 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
    1. Run the command to get subnet IDs and names:
 
-      ```bash
+      ```console
       openstack subnet list
       ```
 
    1. Run the command:
 
-      ```bash
+      ```console
       openstack port list --fixed-ip subnet=<name or ID of the subnet>
       ```
 
 1. To see detailed port information, run the command with the port ID or name obtained earlier:
 
-   ```bash
+   ```console
    openstack port show <name or ID of the port>
    ```
 
 Use one of the commands to get detailed information about the supported parameters:
 
-```bash
+```console
 openstack port list --help
 ```
 
-```bash
+```console
 openstack subnet list --help
 ```
 
-```bash
+```console
 openstack port show --help
 ```
 
@@ -106,13 +106,13 @@ openstack port show --help
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack port create <port name> --network <network name or ID> --fixed-ip subnet=<network name or ID>,ip-address=<port IP address>
    ```
 
 For detailed information on supported parameters, run the command:
 
-```bash
+```console
 openstack port create --help
 ```
 
@@ -159,13 +159,13 @@ This is a group operation: you can enable multiple disabled ports at once, if ne
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack port set <name or ID  of the port> --enable
    ```
 
 For detailed information on supported parameters, run the command:
 
-```bash
+```console
 openstack port set --help
 ```
 
@@ -212,13 +212,13 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack port set <name or ID of the port> --disable
    ```
 
 For detailed information on supported parameters, run the command:
 
-```bash
+```console
 openstack port set --help
 ```
 
@@ -259,25 +259,25 @@ openstack port set --help
 
    - Port name:
 
-     ```bash
+     ```console
      openstack port set <name or ID of the port> --name <new name>
      ```
 
    - DNS name of the port:
 
-     ```bash
+     ```console
      openstack port set <name or ID of the port> --dns-name <new domain name>
      ```
 
    - IP address of the port:
 
-     ```bash
+     ```console
      openstack port set <name or ID of the port> --no-fixed-ip --fixed-ip subnet=<name or ID of the subnet>,ip-address=<new port IP address>
      ```
 
 For detailed information on supported parameters, run the command:
 
-```bash
+```console
 openstack port set --help
 ```
 
@@ -300,7 +300,7 @@ This mechanism allows only traffic for which the source IP address is in the `al
 
 1. To add a single source IP address, run the command:
 
-   ```bash
+   ```console
    openstack port set <name or ID of the port> --allowed-address ip-address=<IP-address>
    ```
 
@@ -308,7 +308,7 @@ This mechanism allows only traffic for which the source IP address is in the `al
 
 1. To remove a single source IP address, run the command:
 
-   ```bash
+   ```console
    openstack port unset <name or ID of the port> --allowed-address ip-address=<IP address>,mac-address=<mac-address>
    ```
 
@@ -316,11 +316,11 @@ This mechanism allows only traffic for which the source IP address is in the `al
 
 For detailed information on supported parameters, run one of the commands:
 
-```bash
+```console
 openstack port set --help
 ```
 
-```bash
+```console
 openstack port unset --help
 ```
 
@@ -371,13 +371,13 @@ This is a group operation: you can delete multiple ports at once, if necessary, 
 
 1. Run the command:
 
-   ```bash
+   ```console
    openstack port delete <name or ID of the port>
    ```
 
 For detailed information on supported parameters, run the command:
 
-```bash
+```console
 openstack port delete --help
 ```
 

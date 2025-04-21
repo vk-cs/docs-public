@@ -20,18 +20,18 @@
 1. В файле `.env` в директории брокера укажите значения переменных для доступа к БД брокера.
 1. Чтобы установить Python-библиотеки, выполните команду:
 
-   ```bash
+   ```console
    $ pip install -r requirements/prod.txt
    ```
 
 1. Чтобы запустить брокер, выполните команду:
 
-   ```bash
+   ```console
    $ gunicorn app.main:app --log-file - --workers ${UVICORN_WORKERS:-1} --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:${BROKER_PORT:-8000} --timeout ${WORKER_TIMEOUT:-90}
    ```
 
    {caption(Пример ответа на команду запуска брокера)[align=left;position=above]}
-   ```bash
+   ```console
    INFO:     Started server process [34934]
    INFO:     Waiting for application startup.
    INFO:     Application startup complete.

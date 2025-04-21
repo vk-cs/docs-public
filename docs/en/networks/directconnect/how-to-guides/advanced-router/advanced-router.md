@@ -117,14 +117,14 @@ To add the interfaces:
 
    1. To add network interfaces, connect to MikroTik via SSH and run the command:
 
-      ```bash
+      ```console
        /ip address add address=172.20.2.204/24 interface ether1
        /ip address add address=10.0.0.15/24 interface ether2
       ```
 
    1. Configure interfaces using DHCP:
 
-      ```bash
+      ```console
        /ip dhcp-client
        add add-default-route=no interface=ether1
        add add-default-route=no interface=ether2
@@ -132,21 +132,21 @@ To add the interfaces:
 
    1. Configure system ID:
 
-      ```bash
+      ```console
        /system identity
        set name=bgp-customer
       ```
 
    1. Add networks for BGP announcement:
 
-      ```bash
+      ```console
        /ip firewall address-list
        add address=10.0.0.0/24 list=bgp_networks
       ```
 
    1. Configure the BFD protocol:
 
-      ```bash
+      ```console
        /routing bfd configuration
        add disabled=no interfaces=ether1
       ```
@@ -209,19 +209,19 @@ Both announcements must have green markers.
 
 1. Connect to MikroTik via SSH and run the command::
 
-    ```bash
+    ```console
     /routing bgp connection
     add address-families=ip as=65512 local.address=172.20.2.204 .role=ebgp name=bgp-customer output.network=bgp_networks remote.address=172.20.2.215 .as=64512 router-id=172.20.2.204 use-bfd=yes
     ```
 1. Check the connection is established using the BFD protocol. Run the command:
 
-   ```bash
+   ```console
    /routing bfd session print
    ```
 
    Response example:
 
-   ```bash
+   ```console
       Flags: U - up, I - inactive
    0 U multihop=no vrf=main remote-address=172.20.2.215%ether1 local-address=172.20.2.204 state=up state-changes=1 uptime=3h27m12s desired-tx-interval=200ms actual-tx-interval=100ms
      required-min-rx=200ms remote-min-rx=10ms multiplier=5 hold-time=1s packets-rx=75343 packets-tx=72203
@@ -229,13 +229,13 @@ Both announcements must have green markers.
 
 1. Check the connection with the BGP neighbor is established in MikroTik. Run the command:
 
-   ```bash
+   ```console
    /routing bgp session print
    ```
 
    Response example:
 
-   ```bash
+   ```console
       Flags: E - established
    0 E name="tw-bgp-mikrotik-1"
         remote.address=172.20.2.215 .as=64512 .id=172.20.2.215 .capabilities=mp,rr,gr,as4,ap,err,llgr .hold-time=4m
@@ -247,13 +247,13 @@ Both announcements must have green markers.
    ```
 1. Run the command to check all MikroTik's routes:
 
-   ```bash
+   ```console
    /ip route print where bgp
    ```
 
    Response example:
 
-   ```bash
+   ```console
    Flags: D - DYNAMIC; A - ACTIVE; b, y - BGP-MPLS-VPN
    Columns: DST-ADDRESS, GATEWAY, DISTANCE
        DST-ADDRESS    GATEWAY       DISTANCE
@@ -279,7 +279,7 @@ Both announcements must have green markers.
 
 1. Check that static routes are registered on the VM `172.17.0.8`, which is located in the virtual network `vkcloud-net`. Connect to the `vkcloud-vm` VM via SSH and run the command:
 
-   ```bash
+   ```console
     ip route
    ```
 
@@ -295,7 +295,7 @@ For instance, ping the `10.0.0.5` machine on the client network from the `172.17
 1. Connect to the `vkcloud-vm` VM via SSH.
 1. Ping the internal IP address of a machine on the client network:
 
-      ```bash
+      ```console
       ping 10.0.0.5
       ```
 

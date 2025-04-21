@@ -30,7 +30,7 @@ AWS CLI доступен в двух версиях:
 
 Для Linux x86 (64-бит) выполните:
 
-  ```bash
+  ```console
   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
   unzip awscliv2.zip
   sudo ./aws/install
@@ -38,7 +38,7 @@ AWS CLI доступен в двух версиях:
 
 Для Linux ARM выполните:
 
-  ```bash
+  ```console
   curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
   unzip awscliv2.zip
   sudo ./aws/install
@@ -55,7 +55,7 @@ AWS CLI доступен в двух версиях:
 
 1. Загрузите и откройте [установщик MSI AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.pkg) или выполните команду в консоли:
 
-    ```bash
+    ```console
     curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o   "AWSCLIV2.pkg"
     sudo installer -pkg AWSCLIV2.pkg -target /
     ```
@@ -74,7 +74,7 @@ AWS CLI доступен в двух версиях:
 
 1. Загрузите и откройте [установщик MSI AWS CLI](https://awscli.amazonaws.com/AWSCLIV2.msi) или выполните команду в консоли:
 
-    ```bash
+    ```console
    msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
    ```
 
@@ -87,7 +87,7 @@ AWS CLI доступен в двух версиях:
 
 Выполните команду в консоли:
 
-  ```bash
+  ```console
   aws --version
   ```
 Если клиент AWS установлен, в выводе консоли отобразится его версия.

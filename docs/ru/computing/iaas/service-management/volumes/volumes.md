@@ -37,19 +37,19 @@
 
 3. Просмотрите доступные типы дисков и скопируйте ID типа, соответствующий названию в API.
 
-   ```bash
+   ```console
    openstack volume type list
    ```
 
 4. Просмотрите зоны доступности и скопируйте имя выбранной зоны:
 
-   ```bash
+   ```console
    openstack availability zone list --volume
    ```
 
 5. Создайте диск определенного типа и размера в выбранной зоне доступности:
 
-   ```bash
+   ```console
    openstack volume create --type <ID типа диска> --size <Размер> --availability-zone <Зона доступности диска> <Название диска>
    ```
 
@@ -116,7 +116,7 @@
 
 2. Выведите список дисков:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
@@ -128,13 +128,13 @@
 
    - Если диск отключен от ВМ (`Status`: `available`):
 
-      ```bash
+      ```console
          openstack volume set --size <Размер> <ID диска>
       ```
 
    - Если диск подключен к ВМ (`Status`: `in-use`):
 
-      ```bash
+      ```console
          cinder extend <ID диска> <Размер>
       ```
 
@@ -166,7 +166,7 @@
     1. Подключитесь к ВМ по [SSH](../vm/vm-connect/vm-connect-nix) или через [консоль](../vm/vm-console).
     1. Узнайте, какие на ВМ есть разделы диска и какие у них файловые системы. Для этого выполните команду:
     
-        ```bash
+        ```console
         df -Th
        ```
             
@@ -175,7 +175,7 @@
         
         Пример команды:
     
-        ```bash
+        ```console
         growpart /dev/vda 1 # перед 1 нужен пробел
         ```
 
@@ -188,14 +188,14 @@
         </tablist>
         <tabpanel>
 
-        ```bash
+        ```console
         sudo resize2fs /dev/vda1 # перед 1 не должно быть пробела
         ```
 
         </tabpanel>
         <tabpanel>
        
-        ```bash
+        ```console
         sudo xfs_growfs -d /dev/vda1
         ```
     
@@ -254,19 +254,19 @@
 
 1. Просмотрите доступные типы дисков и скопируйте ID типа, соответствующий названию в API.
 
-   ```bash
+   ```console
    openstack volume type list
    ```
 
 1. Просмотрите зоны доступности и скопируйте имя нужной зоны:
 
-   ```bash
+   ```console
    openstack availability zone list --volume
    ```
 
 1. Клонируйте диск на основе существующего:
 
-   ```bash
+   ```console
    openstack volume create --type <ID типа диска> --size <Размер> --availability-zone <Зона доступности диска> --source <ID диска> <Название диска>
    ```
 
@@ -328,19 +328,19 @@
 
 3. Просмотрите список доступных типов дисков и скопируйте ID типа, соответствующий названию в API.
 
-   ```bash
+   ```console
    openstack volume type list
    ```
 
 4. Просмотрите список дисков и скопируйте ID диска, тип которого нужно изменить:
 
-   ```bash
+   ```console
    openstack volume list --long
    ```
 
 5. Измените тип диска:
 
-   ```bash
+   ```console
    openstack volume set --type <ID типа> --retype-policy on-demand <ID диска>
    ```
 
@@ -398,19 +398,19 @@
 
    - Сделать диск загрузочным:
 
-      ```bash
+      ```console
       openstack volume set --bootable <ID диска>
       ```
 
    - Сделать диск не загрузочным:
 
-      ```bash
+      ```console
       openstack volume set --non-bootable <ID диска>
       ```
 
 3. Проверьте результат:
 
-   ```bash
+   ```console
    openstack volume show <ID диска>
    ```
 
@@ -455,25 +455,25 @@
 
 2. Выведите список дисков и скопируйте ID диска:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 2. Выведите список виртуальных машин и скопируйте ID виртуальной машины, к которой нужно подключить диск:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Подключите диск:
 
-   ```bash
+   ```console
    openstack server add volume <ID виртуальной машины> <ID диска>
    ```
 
 4. Просмотрите информацию о диске, чтобы проверить результат (поле `attachments`):
 
-   ```bash
+   ```console
    openstack volume show <ID диска>
    ```
 
@@ -531,25 +531,25 @@
 
 2. Выведите список дисков и скопируйте ID диска:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 2. Выведите список виртуальных машин и скопируйте ID виртуальной машины, от которой нужно отключить диск:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Отключите диск:
 
-   ```bash
+   ```console
    openstack server remove volume <ID виртуальной машины> <ID диска>
    ```
 
 4. Просмотрите информацию о диске, чтобы проверить результат (поле `attachments`):
 
-   ```bash
+   ```console
    openstack volume show <ID диска>
    ```
 
@@ -612,13 +612,13 @@
 2. Получите [токен доступа](/ru/tools-for-using-services/api/rest-api/case-keystone-token).
 3. Просмотрите список виртуальных машин и скопируйте ID виртуальной машины, основной диск которой нужно заменить:
 
-   ```bash
+   ```console
    openstack server list
    ```
 
 3. Просмотрите список дисков:
 
-   ```bash
+   ```console
    openstack volume list --long
    ```
 
@@ -630,7 +630,7 @@
 5. Скопируйте ID выбранного диска.
 6. Выполните команду для замены основного диска:
 
-   ```bash
+   ```console
 
    curl -g -i -X POST https://infra.mail.ru:8774/v2.1/servers/<ID виртуальной машины>/action \
    -H "Accept: application/json" \
@@ -660,7 +660,7 @@
 3. [Отключите от ВМ](#otklyuchenie_diska_ot_vm) диск, который нужно переместить.
 4. Просмотрите список дисков:
 
-   ```bash
+   ```console
    openstack volume list --long
    ```
 
@@ -668,27 +668,27 @@
 6. Скопируйте ID диска.
 7. Создайте запрос на перемещение диска:
 
-   ```bash
+   ```console
    openstack volume transfer request create <ID диска>
    ```
 
 8. Скопируйте значения `auth_key` и `id`.
 9. Просмотрите список дисков и убедитесь, что статус перемещаемого диска изменился на `awaiting-transfer`:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
 10. Авторизуйтесь в проекте, в который нужно переместить диск.
 11. Переместите диск:
 
-      ```bash
+      ```console
       openstack volume transfer request accept --auth-key <auth_key> <id>
       ```
 
 12. Убедитесь, что диск появился в проекте:
 
-      ```bash
+      ```console
       openstack volume show <ID диска>
       ```
 
@@ -696,13 +696,13 @@
 
 - Просмотреть список запросов на перенос:
 
-   ```bash
+   ```console
    openstack volume transfer request list
    ```
 
 - Удалить запрос на перенос:
 
-   ```bash
+   ```console
    openstack volume transfer request delete <ID запроса>
    ```
 
@@ -771,7 +771,7 @@
 
 4. Удалите диск.
 
-   ```bash
+   ```console
       openstack volume delete <ID диска>
    ```
 
@@ -832,7 +832,7 @@
 
 2. Выведите список дисков:
 
-   ```bash
+   ```console
    openstack volume list
    ```
 
@@ -842,13 +842,13 @@
 
    - Если диск отключен от ВМ (`Status`: `available`):
 
-      ```bash
+      ```console
          openstack volume snapshot create --volume <ID диска> <Название снимка>
       ```
 
    - Если диск подключен к ВМ (`Status`: `in-use`):
 
-      ```bash
+      ```console
          openstack volume snapshot create --force --volume <ID диска> <Название снимка>
       ```
 
@@ -911,19 +911,19 @@
 
    - Вывести список снимков диска:
 
-      ```bash
+      ```console
       openstack volume snapshot list --volume <ID диска> 
       ```
 
    - Вывести список снимков дисков всего проекта:
 
-      ```bash
+      ```console
       openstack volume snapshot list --project <ID проекта>
       ```
 
    - Изменить свойства снимка:
 
-      ```bash
+      ```console
       openstack volume snapshot set <свойство> <ID снимка>
       ```
 
@@ -936,7 +936,7 @@
 
    - Удалить снимок диска:
 
-      ```bash
+      ```console
       openstack volume snapshot delete <ID снимка>
       ```
 

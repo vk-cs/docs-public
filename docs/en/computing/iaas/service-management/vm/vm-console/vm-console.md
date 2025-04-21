@@ -45,13 +45,13 @@ To connect VM via VNC console:
 
     1. Get a link to the VNC console page.
 
-       ```bash
+       ```console
        openstack console url show <virtual machine ID>
        ```
 
        Example output:
 
-       ```bash
+       ```console
        +-------+-------------------------------------------------------------------------------------+
        | Field | Value                                                                                 |
        +-------+-------------------------------------------------------------------------------------+
@@ -87,7 +87,7 @@ OpenStack provides support for a console running through a VM serial port. This 
 
 If the VM was created from a custom image, configure the console. To do this, add the following parameters to GRUB:
 
-```bash
+```console
 console=tty0 console=ttyS0,115200n8
 ```
 
@@ -102,13 +102,13 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 - Output all log entries:
 
-   ```bash
+   ```console
    openstack console log show <virtual machine ID>
    ```
 
 - Output a limited number of records:
 
-   ```bash
+   ```console
    openstack console log show --lines <number of entries> <virtual machine ID>
   ```
 

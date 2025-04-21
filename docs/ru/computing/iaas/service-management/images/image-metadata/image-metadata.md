@@ -35,7 +35,7 @@
 
    1. Запросите в libosinfo данные об интересующей вас ОС, например Ubuntu 24.XX, выполнив команду:
 
-      ```bash
+      ```console
       osinfo-query os | grep -i ubuntu24
       ```
 
@@ -64,13 +64,13 @@
 
 1. Получите `ID` образа из списка:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
 1. Получите подробную информацию о нужном образе:
 
-   ```bash
+   ```console
    openstack image show <ID образа>
    ```
 
@@ -78,7 +78,7 @@
 
 2. Задайте метатег:
 
-   ```bash
+   ```console
    openstack image set --property <имя метатега>=<значение> <ID образа>
    ```
 
@@ -110,7 +110,7 @@
   
   5. Проверьте информацию об образе:
   
-     ```bash
+     ```console
      openstack image show <ID образа>
      ```
   
@@ -132,13 +132,13 @@
 
 1. Получите `ID` образа из списка:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
 1. Получите подробную информацию о нужном образе:
 
-   ```bash
+   ```console
    openstack image show <ID образа>
    ```
 
@@ -146,7 +146,7 @@
 
 2. Удалите метатег:
 
-   ```bash
+   ```console
    openstack image unset --property <имя метатега> <ID образа>
    ```
 

@@ -25,7 +25,7 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 1. [Check](../check-virtio) availability of VirtIO drivers in the system.
 2. Check availability QEMU Guest Agent:
 
-   ```bash
+   ```console
    systemctl status qemu-guest-agent
    ```
 
@@ -80,19 +80,19 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 2. [Convert](/en/computing/iaas/how-to-guides/packer#1_convert_image_to_raw_format) the resulting export file `.vhdx` to RAW format.
 3. Upload the file to an existing VK Cloud project:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <file_path.raw> <image name>
    ```
 
    If the VM needs to support backup, upload the file `.raw` indicating the metadata of the presence of a guest agent:
 
-   ```bash
+   ```console
    openstack image create --private --container-format bare --disk-format raw --file <file_path.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <image name>
    ```
 
 4. Check the image download in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Servers → Images** or via CLI:
 
-   ```bash
+   ```console
    openstack image list
    ```
 
