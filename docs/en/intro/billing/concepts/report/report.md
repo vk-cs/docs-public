@@ -85,13 +85,9 @@ The composition of the accounting documents depends on the specific terms of the
 </tabpanel>
 </tabs>
 
-In addition to the documents provided for in the contract, upon request, the following documents can be provided:
+In addition to the documents specified in the contract, a billing report for the selected period is available in your management console. It contains details of resource consumption and is used to confirm the amounts in the accounting documents. Information on downloading is available in the [Downloading the report](../../service-management/detail#downloading_the_report) section.
 
-- Billing report for the selected period.
-
-    It contains details on resource consumption and is used to confirm amounts in accounting documents. You can [upload](../../service-management/detail#downloading_the_report) such a report from your management console.
-
-- Reconciliation report with the details of mutual settlements.
+A reconciliation certificate with detailed mutual settlements is available upon request via [technical support](/en/contacts).
 
 ### {heading(Methods of obtaining accounting documents)[id=methods_of_obtaining_accounting_documents]}
 
