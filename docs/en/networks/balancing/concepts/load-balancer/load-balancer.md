@@ -2,6 +2,12 @@
 
 The load balancer allows you to distribute incoming traffic between multiple virtual backend servers and thereby ensure high availability for the services provided by those servers. If one or more servers fail, traffic will be redirected to the remaining servers. Also the separate type of load balancer is used to power other VK Cloud platform services.
 
+<warn>
+
+It is recommended that you use standard load balancers provided by VK Cloud in your projects. The functionality of third-party solutions is not guaranteed. Specifically, Windows Server Network Load Balancer (NLB) and Software Load Balancer (SLB) are not supported.
+
+</warn>
+
 The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs.openstack.org/octavia/latest/), which has [HAProxy](http://www.haproxy.org/) at its core. OpenStack Octavia gives the balancer the following capabilities:
 
 - Proxying and balancing HTTP-, HTTPS-, UDP- and TCP-connections (the latter including proxy-protocol support).
