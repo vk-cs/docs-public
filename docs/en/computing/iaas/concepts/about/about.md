@@ -259,6 +259,32 @@ It is not possible to use Windows 7 / 8 / 8.1 / 10 / 11 operating systems in VK 
 
 </warn>
 
+### {heading(Default account)[id=default_account]}
+
+In operating systems of all VK Cloud images (except OS Bitrix), the `root` account is blocked for security purposes and an account has been added for use by default.
+
+You can see the default account name in the list below or in the [password setup](../../service-management/vm/vm-manage#password) window.
+
+<details>
+<summary>List of default accounts for different OS</summary>
+
+| Operating system | Username |
+| --- | --- |
+| AlmaLinux | almalinux |
+| ALT Linux | altlinux |
+| Astra Linux | astra |
+| Bitrix | root |
+| CentOS | centos |
+| Debian | debian |
+| Fedora | fedora |
+| FreeBSD | freebsd |
+| openSUSE | opensuse |
+| Ubuntu | ubuntu |
+| RED OS | redos |
+| Windows | Admin |
+
+</details>
+
 ## Image
 
 The configuration and data of the virtual machine are stored as one or more files. These files can be used as an image to run a VM in a local environment or to create a new VM.

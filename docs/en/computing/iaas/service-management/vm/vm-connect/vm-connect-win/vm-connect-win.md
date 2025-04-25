@@ -26,11 +26,9 @@ If RDP connection to the VM is not possible or unavailable, use the [VNC console
 
 ## 2. Prepare credentials
 
-To connect to a VM via RDP, you need to know the operating system user name and password.
-
-[Set password](../../vm-manage#password) to log in to the OS. Write down the username and password.
-
-If the password has been lost, [reset](../../vm-manage#password) or [recovery](../../vm-manage#password_recovery) it.
+1. [Find out](../../../../concepts/about#default_account) the name of the default OS user.
+1. [Set](../../vm-manage#password) password to log in to the OS. Write down the username and password.
+1. If the password has been lost, [reset](../../vm-manage#password) or [recovery](../../vm-manage#password_recovery) it.
 
 ## 3. Connect to VM
 
@@ -61,8 +59,8 @@ In Linux, use the Remmina utility to connect via RDP.
 
       - **Name**: connection name (for example, VM name).
       - **Server**: the external IP address or the FQDN of the virtual machine.
-      - **Username**.
-      - **Password**.
+      - **Username**: `<USERNAME>`.
+      - **Password**: `<PASSWORD>`.
 
 4. Click **Save and Connect** to connect to the VM. The new connection will be saved in the list.
 
@@ -89,8 +87,8 @@ Connect to the VM:
       2. Specify the parameters of the new connection:
          - **PC name**: the external IP address or the FQDN of the virtual machine.
          - **User account**: select **Add User Account** and specify the credentials:
-            - **Username**.
-            - **Password**.
+            - **Username**: `<USERNAME>`.
+            - **Password**: `<PASSWORD>`.
       3. Click **Add** — the new connection will appear in the list.
 
    - Using the configuration file:
@@ -127,8 +125,8 @@ Connect to the VM:
       2. Click **Connect**.
       3. In the window that opens, enter the credentials:
 
-         - **Username**.
-         - **Password**.
+         - **Username**: `<USERNAME>`.
+         - **Password**: `<PASSWORD>`.
 
       4. Click **OK**.
 
@@ -138,7 +136,7 @@ Connect to the VM:
       2. In the block **Connection settings** click **Open**.
       3. Select the configuration file and click **Open**.
       4. Press the button **Connect** and confirm the connection again in the window that opens.
-      5. In the operating system authorization window, enter `<Password>`.
+      5. In the operating system authorization window, enter `<PASSWORD>`.
 
 </tabpanel>
 </tabs>
