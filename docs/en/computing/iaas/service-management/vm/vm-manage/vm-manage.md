@@ -391,31 +391,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 ## {heading(Setting and changing a password)[id=password]}
 
-In VK Cloud images (except Bitrix), the `root` account is blocked for security purposes and an account has been added for use by default.
-
-You can see the default account name in the list below or in the password setup window.
-
-<details>
-<summary>List of default accounts for different OS</summary>
-
-| Operating system | Username |
-| --- | --- |
-| AlmaLinux | almalinux |
-| ALT Linux | altlinux |
-| Astra Linux | astra |
-| Bitrix | root |
-| CentOS | centos |
-| Debian | debian |
-| Fedora | fedora |
-| FreeBSD | freebsd |
-| openSUSE | opensuse |
-| Ubuntu | ubuntu |
-| RED OS | redos |
-| Windows | Admin |
-
-</details>
-
-You need to set the default account password by yourself during your first authorization in the OS. The set password can be changed.
+You need to set the [default account](../../../concepts/about#default_account) password by yourself during your first authorization in the OS. The set password can be changed.
 
 Conditions for setting a password:
 
@@ -455,6 +431,8 @@ systemctl status qemu-guest-agent
 
 </tabs>
 
+To set the password:
+
 <tabs>
 
 <tablist>
@@ -466,7 +444,7 @@ systemctl status qemu-guest-agent
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
-3. Set the password in one of the ways.
+3. Use one of the ways:
 
     - Through the context menu:
 
@@ -489,7 +467,7 @@ systemctl status qemu-guest-agent
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Set a password:
+2. Run the command:
 
    ```console
    openstack server set --root-password <virtual machine ID>
