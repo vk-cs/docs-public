@@ -30,11 +30,7 @@ If SSH connection to the VM is not possible or unavailable, use the [VNC console
 
 ## 2. Prepare credentials
 
-To connect to the VM via SSH, you need to know the operating system account name and password.
-
-[Set a password](../../vm-manage#password) to log in to the OS. Write down the account name and password.
-
-If the password has been lost, [reset](../../vm-manage#password) or [restore](../../vm-manage#password_recovery) it.
+To connect to the VM via SSH, [find out](../../../../concepts/about#default_account) the name of the default OS user. Write it down.
 
 ## 3. Check for key pair
 
@@ -60,7 +56,7 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 1. (Optional) Configure access rights to the key file:
 
    ```console
-   chmod 400 <key path>
+   chmod 400 <KEY_PATH>
    ```
 
 2. Run the command in the terminal.
@@ -68,13 +64,13 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
    - To connect by IP address:
 
       ```console
-      ssh -i <key path> <username>@<external IP address of the virtual machine>
+      ssh -i <KEY_PATH> <USERNAME>@<EXTERNAL_IP_ADDRESS_OF_VM>
       ```
 
    - To connect by a fully qualified domain name:
 
      ```console
-      ssh -i <key path> <username>@<FQDN of the virtual machine>
+      ssh -i <KEY_PATH> <USERNAME>@<FQDN_OF_VM>
       ```
 
 3. If this is the first connection to the VM, a confirmation request will appear:
@@ -110,13 +106,13 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
    - To connect by IP address:
 
       ```console
-      ssh -i <key path> <username>@<external IP address of the virtual machine>
+      ssh -i <KEY_PATH> <USERNAME>@<EXTERNAL_IP_ADDRESS_OF_VM>
       ```
 
    - To connect by a fully qualified domain name:
 
      ```console
-      ssh -i <key path> <username>@<FQDN of the virtual machine>
+      ssh -i <KEY_PATH> <USERNAME>@<FQDN_OF_VM>
       ```
 
 3. If this is the first connection to the VM, a confirmation request will appear:
@@ -127,7 +123,7 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
       Are you sure you want to continue connecting (yes/no)?
       ```
 
-     Type `yes` in the command prompt and press _Enter_.
+     Type `yes` in the command prompt and press ENTER.
 
       <info>
 
