@@ -41,7 +41,7 @@ This is a group operation: multiple IP addresses can be unbound at once by selec
 
 When health checks are enabled, the anycast IP address regularly verifies the availability and functionality of servers and load balancers on the specified port.
 
-In the management console, you can only add a TCP port check. Adding checks for ICMP or TCP ports is available via the [Anycast IP API](/ru/tools-for-using-services/api/api-spec/api-anycast "change-lang").
+In the management console, you can only add a TCP port check. Adding checks for ICMP or TCP ports is available via the [Anycast IP API](/en/tools-for-using-services/api/api-spec/api-anycast).
 
 <warn>
 

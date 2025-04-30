@@ -1,0 +1,438 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "HTTP requests for managing Anycast IP addresses",
+    "title": "Anycast IP API",
+    "version": "1.0.0"
+  },
+  "host": "<OS_NEUTRON_URL>:9696",
+  "basePath": "/v2.0",
+  "tags": [
+    {
+      "name": "Anycast IP Address"
+    },
+    {
+      "name": "Port Binding"
+    }
+  ],
+  "paths": {
+    "/anycastips": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "summary": "Get a list of Anycast IP addresses",
+        "description": "Retrieve a list of Anycast IP addresses added to the project",
+        "operationId": "getAnycastips",
+        "tags": [
+          "Anycast IP Address"
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully. Returns a list of Anycast IP addresses added to the project",
+            "schema": {
+              "$ref": "#/definitions/getAnycastipsResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "summary": "Create an Anycast IP address",
+        "description": "Add an Anycast IP address to the project",
+        "operationId": "createAnycastip",
+        "tags": [
+          "Anycast IP Address"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/createAnycastip"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Request completed successfully. Returns an array of data for the created group and its sources",
+            "schema": {
+              "$ref": "#/definitions/createAnycastipResponse"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/anycastips/{id}": {
+      "get": {
+        "summary": "Get information about an Anycast IP address",
+        "description": "Retrieve information about an Anycast IP address by its ID",
+        "produces": [
+          "application/json"
+        ],
+        "operationId": "getAnycastipsId",
+        "tags": [
+          "Anycast IP Address"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Anycast IP address ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully. Returns the parameters of the Anycast IP address",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/getAnycastipsResponse"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "summary": "Modify an Anycast IP address",
+        "description": "Edit the parameters of an Anycast IP address",
+        "produces": [
+          "application/json"
+        ],
+        "operationId": "putAnycastipsId",
+        "tags": [
+          "Anycast IP Address"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Anycast IP address ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/createAnycastip"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully. Returns the modified parameters of the Anycast IP address",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/createAnycastipResponse"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete an Anycast IP address",
+        "description": "Delete an Anycast IP address by its ID",
+        "produces": [
+          "application/json"
+        ],
+        "operationId": "deleteAnycastipsId",
+        "tags": [
+          "Anycast IP Address"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Anycast IP address ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully. Returns the modified parameters of the Anycast IP address",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/createAnycastipResponse"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/anycastips/{id}/associate_anycastip": {
+      "put": {
+        "summary": "Bind a port to an Anycast IP address",
+        "description": "Bind a public IP address of a VM, load balancer, or advanced router interface to an Anycast IP address. Only one type of IP address can be bound to a single Anycast IP address",
+        "produces": [
+          "application/json"
+        ],
+        "operationId": "putAssociateAnycastips",
+        "tags": [
+          "Port Binding"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Anycast IP address ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/putAssociateAnycastips"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully. Returns the modified parameters of the Anycast IP address"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/anycastips/{id}/disassociate_anycastip": {
+      "put": {
+        "summary": "Unbind a port from an Anycast IP address",
+        "description": "Unbind a public IP address of a VM, load balancer, or advanced router interface from an Anycast IP address",
+        "produces": [
+          "application/json"
+        ],
+        "operationId": "putDisAssociateAnycastips",
+        "tags": [
+          "Port Binding"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Anycast IP address ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/putDisAssociateAnycastips"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully. Returns the modified parameters of the Anycast IP address"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "anycastip": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Anycast IP address name",
+          "type": "string"
+        },
+        "description": {
+          "description": "Anycast IP address description",
+          "type": "string"
+        },
+        "tenant_id": {
+          "description": "Tenant ID",
+          "type": "string"
+        },
+        "project_id": {
+          "description": "Project ID",
+          "type": "string"
+        },
+        "network_id": {
+          "description": "Unique external network ID (UUID) from which the IP address for Anycast will be selected",
+          "type": "string"
+        },
+        "associations": {
+          "description": "List of associated (bound) IP addresses. Can be empty. Only one type of IP address can be bound to a single Anycast IP address",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Unique IP address ID (UUID) to be bound to the Anycast IP address",
+              "type": "string"
+            },
+            "type": {
+              "description": "IP address type: `port` — VM public IP address, `dc_interface` — advanced router interface IP address, `octavia` — load balancer IP address",
+              "type": "string"
+            }
+          }
+        },
+        "healthcheck": {
+          "description": "Health check",
+          "type": "object",
+          "properties": {
+            "type": {
+              "description": "Port type: `TCP` or `ICMP`",
+              "type": "string"
+            },
+            "port": {
+              "description": "Health check port. `NULL` is allowed. For the VMs specified in the check, add a security rule allowing incoming traffic on the specified port from the IP address `169.254.169.100/32`",
+              "type": "integer"
+            },
+            "property": {
+              "description": "Options for specific check types. Currently, options are not implemented",
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "getAnycastipsResponse": {
+      "type": "object",
+      "properties": {
+        "anycastip": {
+          "$ref": "#/definitions/anycastip"
+        }
+      },
+      "example": {
+        "anycastips": {
+          "associations": [],
+          "name": "test1234567",
+          "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
+          "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
+          "created_at": "2025-01-24T09:11:16",
+          "updated_at": "2025-01-28T14:26:05",
+          "subnet_id": "4675a124-dddd-eeee-ffff-82dc7d53c820",
+          "healthcheck": {},
+          "project_id": "bbb2222c2c174a0bb128cd33cf0b7878",
+          "ip_address": "212.233.94.233",
+          "id": "5a3fd388-gggg-hhhh-iiii-98557b07cc7d",
+          "description": ""
+        }
+      }
+    },
+    "createAnycastip": {
+      "type": "object",
+      "properties": {
+        "anycastip": {
+          "$ref": "#/definitions/anycastip"
+        }
+      },
+      "example": {
+        "name": "Example Anicast IP",
+        "anycastip": {
+          "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
+          "associations": {
+            "id": "d9735126-dddd-eeee-ffff-eb28cf64c809",
+            "type": "port"
+          },
+          "healthcheck": {
+            "type": "TCP,",
+            "port": "80,",
+            "property": {}
+          }
+        }
+      }
+    },
+    "createAnycastipResponse": {
+      "type": "object",
+      "properties": {
+        "anycastip": {
+          "$ref": "#/definitions/anycastip"
+        }
+      },
+      "example": {
+        "anycastip": {
+          "associations": [
+            {
+              "type": "port",
+              "id": "d9735126-dddd-eeee-ffff-eb28cf64c809"
+            }
+          ],
+          "name": "Example Anicast IP",
+          "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
+          "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
+          "created_at": "2025-01-30T09:04:24",
+          "updated_at": "2025-01-30T09:04:24",
+          "subnet_id": "4675a124-xxxx-yyyy-zzzz-82dc7d53c820"
+        },
+        "healthcheck": {
+          "property": {},
+          "type": "TCP",
+          "port": 80
+        },
+        "project_id": "bbb222c2c174a0bb128cd33cf0b7878",
+        "ip_address": "212.233.95.21",
+        "id": "b3a72e00-pppp-rrrr-ssss-20422135cc64",
+        "description": ""
+      }
+    },
+    "putAssociateAnycastips": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique IP address ID (UUID) to be bound to the Anycast IP address",
+          "type": "string"
+        },
+        "type": {
+          "description": "IP address type: `port` — VM public IP address, `dc_interface` — advanced router interface IP address, `octavia` — load balancer IP address",
+          "type": "string"
+        }
+      },
+      "example": {
+        "id": "d9735126-dddd-eeee-ffff-eb28cf64c809",
+        "type": "port"
+      }
+    },
+    "putDisAssociateAnycastips": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique IP address ID (UUID) to be bound to the Anycast IP address",
+          "type": "string"
+        }
+      },
+      "example": {
+        "id": "d9735126-dddd-eeee-ffff-eb28cf64c809"
+      }
+    }
+  }
+}
