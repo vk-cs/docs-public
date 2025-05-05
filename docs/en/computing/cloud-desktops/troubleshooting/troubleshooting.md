@@ -1,0 +1,1 @@
+Methods for diagnosing problems with virtual desktops.
