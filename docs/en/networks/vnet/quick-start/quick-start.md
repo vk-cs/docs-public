@@ -13,6 +13,7 @@ After completing all the quick start steps, you will:
 1. Go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
 1. Specify a network name, for example, `test-network`.
+1. SDN: `Sprut` (default).
 1. Internet access: included.
 1. Router: `Create new`.
 1. Click **Add network**.
@@ -32,7 +33,7 @@ Create a virtual machine with Internet access:
 1. Press **Next step**.
 1. At the **Network settings** step:
 
-     1. Networks: `External network (ext-net)`.
+     1. Networks: `External network (internet)`.
      1. Leave the rest of the settings unchanged.
 
 1. Press **Next step**.
@@ -138,13 +139,13 @@ In the last step, you created a virtual machine key that was saved to your compu
 1. Make the key available only to the current user:
 
      ```console
-     chmod 400 <path to key>
+     chmod 400 <PATH_TO_KEY>
      ```
 
 1. Connect to the instance via SSH:
 
      ```console
-     ssh -i <path to key> centos@10.0.0.6
+     ssh -i <PATH_TO_KEY> <USERNAME>@<FLOATING_IP>
      ```
 
 ## Step 5: Delete unused resources
