@@ -185,7 +185,7 @@ The VK Cloud platform supports various types of disks:
 
 | Local <br/>Low Latency NVME
 | ef-nvme
-| nova
+| MS1, GZ1, ME1
 | SSD, which is located on the same hypervisor as the VM. High speed and fast response. Dual replication: both copies are on the same hypervisor
 
 | Network<br/>High-IOPS HA SSD
