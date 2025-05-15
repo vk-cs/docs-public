@@ -1,0 +1,4452 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "OpenStack Trove Cluster API"
+  },
+  "paths": {
+    "/clusters": {
+      "post": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Создать кластер",
+        "description": "Создание кластера",
+        "operationId": "createCluster",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/addClusterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Задача на создание кластера принята",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/addClusterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Получить список кластеров",
+        "description": "Получение списка кластеров",
+        "operationId": "getClusterList",
+        "parameters": [
+          {
+            "name": "include_deleted",
+            "in": "query",
+            "description": "Включать ли удаленные кластеры",
+            "schema": {
+              "type": "boolean"
+            },
+            "allowEmptyValue": false
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата в одном результате",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "description": "Маркер пагинации для больших наборов данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllClustersResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Получить информацию о кластере",
+        "description": "Получение детальной информации о кластере",
+        "operationId": "getCluster",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "show_deleted",
+            "in": "query",
+            "description": "Показывать ли удаленный кластер",
+            "schema": {
+              "type": "boolean"
+            },
+            "allowEmptyValue": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "clusters",
+          "configurations"
+        ],
+        "summary": "Действие с кластером",
+        "description": "Выполнение определенного действия с кластером",
+        "operationId": "actionCluster",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/growClusterRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/shrinkClusterRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/switchoverRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/resizeVolumeRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/resizeFlavorRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/attachClusterConfigurationRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/detachClusterConfigurationRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/upgradeGuestagentRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/applyCapabilityRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/enableCloudMonitoringRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/versionUpgradeRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/addClusterResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Изменить свойства кластера",
+        "description": "Изменение свойств кластера",
+        "operationId": "patchCluster",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/patchClusterRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Удалить кластер",
+        "description": "Удаление кластера",
+        "operationId": "deleteCluster",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Задача на удаление принята"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/capabilities": {
+      "get": {
+        "tags": [
+          "clusters",
+          "capabilities"
+        ],
+        "summary": "Получить информацию о возможностях кластера",
+        "description": "Получение детальной информации о возможностях кластера",
+        "operationId": "clusterGetCapabilities",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterCapabilities"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/configurations": {
+      "post": {
+        "tags": [
+          "configurations"
+        ],
+        "summary": "Создать конфигурацию",
+        "description": "Создание конфигурации инстанса",
+        "operationId": "createConfiguration",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createConfigurationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Задача на создание конфигурации принята",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/createConfigurationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "configurations"
+        ],
+        "summary": "Получить конфигурации",
+        "description": "Получение конфигурации инстанса",
+        "operationId": "getConfigurations",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата в одном результате",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "description": "Маркер пагинации для больших наборов данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllConfigurationsResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/configurations/{configuration_id}": {
+      "get": {
+        "tags": [
+          "configurations"
+        ],
+        "summary": "Получить конфигурацию",
+        "description": "Получение информации об определенной конфигурации",
+        "operationId": "getConfiguration",
+        "parameters": [
+          {
+            "name": "configuration_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID конфигурации",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getConfigurationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "configurations"
+        ],
+        "summary": "Изменить конфигурацию",
+        "description": "Изменение конфигурации инстанса",
+        "operationId": "patchConfiguration",
+        "parameters": [
+          {
+            "name": "configuration_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID конфигурации",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/patchConfigurationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Задача на создание конфигурации принята"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "configurations"
+        ],
+        "summary": "Удалить конфигурацию",
+        "description": "Удаление конфигурации инстанса",
+        "operationId": "deleteConfiguration",
+        "parameters": [
+          {
+            "name": "configuration_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID конфигурации",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Конфигурация успешно удалена"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/backups": {
+      "get": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Список резервных копий арендатора",
+        "description": "Получение списка резервных копий с пагинацией",
+        "operationId": "getBackups",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата в одном результате",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "description": "Маркер пагинации для больших наборов данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllBackupsResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Создать резервную копию для кластера или инстанса",
+        "description": "Создание резервной копии для кластера или инстанса",
+        "operationId": "backupCluster",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/backupRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Задача на создание резервной копии принята",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getBackupResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/backups/{backup_id}": {
+      "get": {
+        "tags": [
+          "backups"
+        ],
+        "parameters": [
+          {
+            "name": "backup_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID резервной копии",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "summary": "Получить резервную копию",
+        "description": "Получение определенной резервной копии кластера или инстанса",
+        "operationId": "getBackup",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getBackupResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Требуется аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Удалить резервную копию",
+        "description": "Удаление резервной копии кластера или инстанса",
+        "operationId": "deleteBackup",
+        "parameters": [
+          {
+            "name": "backup_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID резервной копии",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Задача на удаление принята"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/backups/{backup_id}/cancel": {
+      "post": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Отменить резервное копирование",
+        "description": "Отмена создания резервной копии",
+        "operationId": "cancelBackup",
+        "parameters": [
+          {
+            "name": "backup_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID резервной копии",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Задача на отмену принята"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instances": {
+      "post": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Создать инстанс",
+        "description": "Создание инстанса базы данных",
+        "operationId": "instanceCreate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createInstanceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Задача на создание инстанса принята",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/createInstanceResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Получить список инстансов",
+        "description": "Получение списка инстансов с возможностью включить в список удаленные инстансы",
+        "operationId": "getInstanceList",
+        "parameters": [
+          {
+            "name": "include_deleted",
+            "in": "query",
+            "description": "Включать ли удаленные инстансы",
+            "schema": {
+              "type": "boolean"
+            },
+            "allowEmptyValue": false
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата в одном результате",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "description": "Маркер пагинации для больших наборов данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllInstancesResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}": {
+      "get": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Получить информацию об инстансе",
+        "description": "Получение детальной информации об инстансе",
+        "operationId": "instanceGet",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "show_deleted",
+            "in": "query",
+            "description": "Показывать ли удаленный инстанс",
+            "schema": {
+              "type": "boolean"
+            },
+            "allowEmptyValue": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getInstanceDetailed"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "instances",
+          "configurations"
+        ],
+        "summary": "Подключить и отключить конфигурацию",
+        "decsription": "Получение и отключение конфигурации для инстанса",
+        "operationId": "attachDetachConfiguration",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/attachInstanceConfigurationRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/detachInstanceConfigurationRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Изменить свойства инстанса",
+        "description": "Изменение свойств инстанса",
+        "operationId": "patchInstance",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/patchInstanceRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Удалить инстанс",
+        "description": "Удаление инстанса",
+        "operationId": "deleteInstance",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Задача на удаление принята"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/action": {
+      "post": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Выполнить действие с инстансом",
+        "description": "Выполнение определенного действия с инстансом",
+        "operationId": "actionInstance",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/resizeVolumeRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/resizeFlavorRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/upgradeGuestagentRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/applyCapabilityRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/enableCloudMonitoringRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/versionUpgradeRequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/createInstanceResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/databases": {
+      "get": {
+        "tags": [
+          "databases"
+        ],
+        "summary": "Получить список баз данных инстанса",
+        "description": "Получение информации о существующих базах данных инстанса",
+        "operationId": "instanceGetDatabases",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата в одном результате",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "description": "Маркер пагинации для больших наборов данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatabases"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "422": {
+            "description": "Инстанс не готов"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "databases"
+        ],
+        "summary": "Создать базу данных в инстансе",
+        "description": "Создание базы данных в инстансе",
+        "operationId": "instanceCreateDatabase",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/getDatabases"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Задача на создание базы данных принята"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/databases/{database_name}": {
+      "delete": {
+        "tags": [
+          "databases"
+        ],
+        "summary": "Удалить базу данных из инстанса",
+        "description": "Удаление базы данных из инстанса",
+        "operationId": "deleteInstanceDatabase",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "database_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя базы данных",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "force",
+            "in": "query",
+            "description": "Принудительное удаление базы данных, если true",
+            "schema": {
+              "type": "boolean"
+            },
+            "allowEmptyValue": false
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Задача на удаление принята"
+          },
+          "400": {
+            "description": "Некорректный запрос (например, guestagent не поддерживает force)"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "databases",
+          "database_parameters"
+        ],
+        "summary": "Получить информацию о базе данных инстанса",
+        "description": "Получить детальную информацию о базе данных инстанса",
+        "operationId": "getInstanceDatabaseInfo",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "database_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя базы данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/databaseInfo"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          },
+          "422": {
+            "description": "Инстанс не готов"
+          },
+          "501": {
+            "description": "Не реализовано для данного хранилища данных"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "databases",
+          "database_parameters"
+        ],
+        "summary": "Изменить базу данных в инстансе",
+        "decsription": "Изменение базы данных в инстансе",
+        "operationId": "editInstanceDatabase",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/databaseParamsEdit"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "database_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя базы данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Параметры базы данных успешно изменены",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/databaseInfo"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос (например, неподдерживаемый параметр/тип)"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          },
+          "501": {
+            "description": "Не реализовано для данного хранилища данных"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/users": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Получить список пользователей базы данных",
+        "description": "Получение списка пользователей базы данных инстанса",
+        "operationId": "listDatabaseUsers",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата в одном результате",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "description": "Маркер пагинации для больших наборов данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getUsersResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "422": {
+            "description": "Инстанс не готов"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Создать пользователя",
+        "description": "Создание пользователя",
+        "operationId": "createDatabaseUser",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createUsersRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Обновить пароли пользователей",
+        "decsription": "Обновление паролей пользователей",
+        "operationId": "updateUsersPasswords",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/updateUsersRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/users/{user_name}": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Получить информацию о пользователе базы данных",
+        "description": "Получение информации о пользователе базы данных инстанса",
+        "operationId": "showDatabaseUser",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя пользователя",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getUserResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          },
+          "422": {
+            "description": "Инстанс не готов"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Удалить пользователя",
+        "description": "Удаление пользователя",
+        "operationId": "deleteDatabaseUser",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя пользователя",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Обновить пользователя",
+        "decsription": "Обновление данных пользователя в инстансе",
+        "operationId": "updateUser",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/updateUserRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "user_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя пользователя",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": ""
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/root": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Показать статус root-доступа для инстанса базы данных",
+        "operationId": "showRootEnabledStatus",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rootEnabled"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "422": {
+            "description": "Инстанс не готов"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Включить root-пользователя",
+        "description": "Включение root-пользователя для инстанса",
+        "operationId": "enableRoot",
+        "requestBody": {
+          "description": "Запрос на выполнение операции",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rootEnableRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rootEnableResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Отключить root-пользователя",
+        "description": "Отключение root-пользователя для инстанса",
+        "operationId": "disableRoot",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/mgmt/instances/{instance_id}/root": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Показать историю root-доступа для инстанса базы данных",
+        "description": "Отображение истории root-доступа для инстанса базы данных",
+        "operationId": "rootHistory",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rootHistory"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/capabilities": {
+      "get": {
+        "tags": [
+          "instances",
+          "capabilities"
+        ],
+        "summary": "Получить информацию о возможностях инстанса",
+        "description": "Получение информации о возможностях инстанса",
+        "operationId": "instanceGetCapabilities",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getCapabilities"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/datastores": {
+      "get": {
+        "tags": [
+          "datastores"
+        ],
+        "summary": "Получить список хранилищ данных",
+        "description": "Получение информации о существующих хранилищах данных",
+        "operationId": "getDatastoreList",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllDatastoresResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/datastores/{datastore_id}": {
+      "get": {
+        "tags": [
+          "datastores"
+        ],
+        "summary": "Получение информации о хранилище данных",
+        "description": "Получение детальной информации о хранилище данных",
+        "operationId": "getDatastore",
+        "parameters": [
+          {
+            "name": "datastore_id",
+            "in": "path",
+            "required": true,
+            "description": "ID хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatastoreResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/datastores/versions/{datastore_version_id}": {
+      "get": {
+        "tags": [
+          "datastores"
+        ],
+        "summary": "Получить информацию о версии хранилища данных",
+        "description": "Получение информации о версии хранилища данных",
+        "operationId": "getDatastoreVersion",
+        "parameters": [
+          {
+            "name": "datastore_version_id",
+            "in": "path",
+            "required": true,
+            "description": "ID версии хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatastoreVersionResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/datastores/versions/{datastore_version_id}/capabilities": {
+      "get": {
+        "tags": [
+          "datastores",
+          "capabilities"
+        ],
+        "summary": "Получить информацию о возможностях версии хранилища данных",
+        "description": "Получение информации о возможностях, которые поддерживаются определенной версией хранилища данных",
+        "operationId": "datastoreGetCapabilities",
+        "parameters": [
+          {
+            "name": "datastore_version_id",
+            "in": "path",
+            "required": true,
+            "description": "ID версии хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatastoreCapabilities"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/datastores/{datastore_name}/versions/{datastore_version_id}/capabilities": {
+      "get": {
+        "tags": [
+          "datastores",
+          "capabilities"
+        ],
+        "summary": "Получить информацию о возможностях хранилища данных",
+        "description": "Получение информации о возможностях, которые поддерживаются конкретным хранилищем данных в зависимости от его версии",
+        "operationId": "datastoreGetCapabilitiesByUUID",
+        "parameters": [
+          {
+            "name": "datastore_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "datastore_version_id",
+            "in": "path",
+            "required": true,
+            "description": "ID версии хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatastoreCapabilities"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "404": {
+            "description": "Версия хранилища данных не найдена"
+          }
+        }
+      }
+    },
+    "/datastores/{datastore_name}/versions/{datastore_version_name}/database_parameters": {
+      "get": {
+        "tags": [
+          "datastores",
+          "database_parameters"
+        ],
+        "summary": "Получить параметры базы данных для версии хранилища данных",
+        "description": "Получение параметров базы данных, поддерживаемые для версии хранилища данных",
+        "operationId": "datastoreGetDatabaseParams",
+        "parameters": [
+          {
+            "name": "datastore_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "datastore_version_name",
+            "in": "path",
+            "required": true,
+            "description": "Имя версии хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatabaseParams"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/datastores/versions/{datastore_version_id}/minor_versions": {
+      "get": {
+        "tags": [
+          "datastores"
+        ],
+        "summary": "Получить поддерживаемые минорные версии",
+        "description": "Получение минорных версий, поддерживаемых для хранилища данных",
+        "operationId": "datastoreGetMinorVersions",
+        "parameters": [
+          {
+            "name": "datastore_version_id",
+            "in": "path",
+            "required": true,
+            "description": "ID версии хранилища данных",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getDatastoreMinorVersions"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/instances/{instance_id}/backup_schedule": {
+      "get": {
+        "tags": [
+          "instances",
+          "backups"
+        ],
+        "summary": "Получить информация о расписании резервного копирования",
+        "description": "Получение информации о расписании резервного копирования инстанса. Пустой JSON означает отсутствие настроенного расписания",
+        "operationId": "instanceGetBackupSchedule",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backupSchedule"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "instances",
+          "backups"
+        ],
+        "summary": "Создать или изменить расписание резервного копирования",
+        "decsription": "Создание или изменение расписания резервного копирования инстанса для поддерживаемых хранилищ данных",
+        "operationId": "instanceUpdateBackupSchedule",
+        "parameters": [
+          {
+            "name": "instance_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID инстанса",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/postBackupSchedule"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "405": {
+            "description": "Не разрешено, например, для реплик инстансов"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/backup_schedule": {
+      "get": {
+        "tags": [
+          "clusters",
+          "backups"
+        ],
+        "summary": "Получить информацию о расписании резервного копирования",
+        "description": "Получение Информации о расписании резервного копирования кластера. Пустой JSON означает отсутствие настроенного расписания",
+        "operationId": "clusterGetBackupSchedule",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/backupSchedule"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "clusters",
+          "backups"
+        ],
+        "summary": "Создать или изменить расписание резервного копирования",
+        "decsription": "Создание или изменение расписания резервного копирования инстанса для поддерживаемых хранилищ данных",
+        "operationId": "clusterUpdateBackupSchedule",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "description": "UUID кластера",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/postBackupSchedule"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/backup_schedules": {
+      "get": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Получить все расписания резервного копирования",
+        "description": "Получение всех расписаний резервного копирования для арендатора",
+        "operationId": "getBackupScheduleList",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getBackupSchedulesResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          }
+        }
+      }
+    },
+    "/billing/journal": {
+      "get": {
+        "tags": [
+          "billing"
+        ],
+        "summary": "Получить журнал биллинга",
+        "description": "Получение журнала биллинга",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "required": true,
+            "description": "Минимальный ID",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Максимальное количество ресурсов для возврата",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/billingJournalEntry"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "422": {
+            "description": "Некорректное значение параметра \"from\""
+          }
+        }
+      }
+    },
+    "/cluster_resources": {
+      "post": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Ресурсы для кластера",
+        "description": "Определение ресурсов, необходимых для создания кластера",
+        "operationId": "clusterResources",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/addClusterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ресурсы, необходимые для создания кластера",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resourcesInfo"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    },
+    "/instance_resources": {
+      "post": {
+        "tags": [
+          "instances"
+        ],
+        "summary": "Ресурсы для инстанса",
+        "description": "Определить ресурсы, необходимые для создания инстанса",
+        "operationId": "instanceResources",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createInstanceRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ресурсы, необходимые для создания инстанса",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/resourcesInfo"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Для выполнения запроса необходима аутентификация"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемый ресурс не найден"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "pageLink": {
+        "type": "object",
+        "properties": {
+          "rel": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "rel": "self",
+          "href": "https://infra.mail.ru:8779/v1.0/blablabla"
+        }
+      },
+      "fault": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Failed to delete something"
+          },
+          "created": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          }
+        }
+      },
+      "database": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "name": "mydb1"
+        }
+      },
+      "getDatabases": {
+        "type": "object",
+        "properties": {
+          "databases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/database"
+            }
+          }
+        }
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "databases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/database"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "databases": [
+            "mydb1"
+          ],
+          "name": "user1",
+          "password": "qwerty"
+        }
+      },
+      "getUser": {
+        "type": "object",
+        "properties": {
+          "databases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/database"
+            }
+          },
+          "host": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "databases": [
+            "mydb1"
+          ],
+          "host": "%",
+          "name": "user1"
+        }
+      },
+      "updateUserBody": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "host": {
+            "type": "string"
+          }
+        }
+      },
+      "getUserResponse": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "$ref": "#/components/schemas/getUser"
+          }
+        }
+      },
+      "getUsersResponse": {
+        "type": "object",
+        "properties": {
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getUser"
+            }
+          }
+        }
+      },
+      "createUsersRequest": {
+        "type": "object",
+        "properties": {
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/user"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "password"
+        ]
+      },
+      "updateUserRequest": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "$ref": "#/components/schemas/updateUserBody"
+          }
+        }
+      },
+      "updateUsersRequest": {
+        "type": "object",
+        "properties": {
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/updateUserBody"
+            }
+          }
+        }
+      },
+      "rootEnabled": {
+        "type": "object",
+        "properties": {
+          "rootEnabled": {
+            "type": "boolean"
+          }
+        }
+      },
+      "rootEnableRequest": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "rootEnableResponse": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "rootHistory": {
+        "type": "object",
+        "properties": {
+          "root_history": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "volume": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "size": 100,
+          "type": "ef-nvme"
+        }
+      },
+      "walVolume": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string"
+          },
+          "autoresize_enabled": {
+            "type": "integer"
+          },
+          "autoresize_max_size": {
+            "type": "integer"
+          }
+        },
+        "example": {
+          "size": 100,
+          "type": "ef-nvme",
+          "autoresize_enabled": 1,
+          "autoresize_max_size": 350
+        }
+      },
+      "flavor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        }
+      },
+      "restorePoint": {
+        "type": "object",
+        "properties": {
+          "backupRef": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "backupRef"
+        ],
+        "example": {
+          "backupRef": "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "postInstance": {
+        "type": "object",
+        "properties": {
+          "key_name": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "allow_remote_access": {
+            "type": "boolean"
+          },
+          "availability_zone": {
+            "type": "string"
+          },
+          "flavorRef": {
+            "type": "string"
+          },
+          "configuration": {
+            "type": "string"
+          },
+          "restorePoint": {
+            "$ref": "#/components/schemas/restorePoint"
+          },
+          "nics": {
+            "$ref": "#/components/schemas/nics"
+          },
+          "security_groups": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "volume": {
+            "$ref": "#/components/schemas/volume"
+          },
+          "wal_volume": {
+            "$ref": "#/components/schemas/walVolume"
+          },
+          "volume_autoresize_enabled": {
+            "type": "integer"
+          },
+          "volume_autoresize_max_size": {
+            "type": "integer"
+          },
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "databases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/database"
+            }
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/postCapability"
+            }
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/user"
+            }
+          },
+          "backup_schedule": {
+            "$ref": "#/components/schemas/postBackupSchedule"
+          },
+          "cloud_monitoring_enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "availability_zone",
+          "flavorRef",
+          "nics",
+          "volume",
+          "name",
+          "datastore"
+        ]
+      },
+      "postClusterInstance": {
+        "type": "object",
+        "properties": {
+          "key_name": {
+            "type": "string"
+          },
+          "availability_zone": {
+            "type": "string"
+          },
+          "flavorRef": {
+            "type": "string"
+          },
+          "nics": {
+            "$ref": "#/components/schemas/nics"
+          },
+          "security_groups": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "volume": {
+            "$ref": "#/components/schemas/volume"
+          },
+          "wal_volume": {
+            "$ref": "#/components/schemas/volume"
+          },
+          "shard_id": {
+            "type": "string"
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/postCapability"
+            }
+          },
+          "cloud_monitoring_enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "availability_zone",
+          "flavorRef",
+          "nics",
+          "volume"
+        ]
+      },
+      "postCluster": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "allow_remote_access": {
+            "type": "boolean"
+          },
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "instances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/postClusterInstance"
+            }
+          },
+          "databases": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/database"
+            }
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/user"
+            }
+          },
+          "configuration": {
+            "type": "string"
+          },
+          "restorePoint": {
+            "$ref": "#/components/schemas/restorePoint"
+          },
+          "volume_autoresize_enabled": {
+            "type": "integer"
+          },
+          "volume_autoresize_max_size": {
+            "type": "integer"
+          },
+          "wal_autoresize_enabled": {
+            "type": "integer"
+          },
+          "wal_autoresize_max_size": {
+            "type": "integer"
+          },
+          "backup_schedule": {
+            "$ref": "#/components/schemas/postBackupSchedule"
+          }
+        },
+        "required": [
+          "name",
+          "datastore",
+          "instances"
+        ]
+      },
+      "addClusterRequest": {
+        "type": "object",
+        "properties": {
+          "cluster": {
+            "$ref": "#/components/schemas/postCluster"
+          }
+        },
+        "required": [
+          "cluster"
+        ]
+      },
+      "createInstanceRequest": {
+        "type": "object",
+        "properties": {
+          "instance": {
+            "$ref": "#/components/schemas/postInstance"
+          }
+        },
+        "required": [
+          "instance"
+        ]
+      },
+      "getInstanceInCluster": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "compute_instance_id": {
+            "type": "string"
+          },
+          "volume": {
+            "type": "object",
+            "properties": {
+              "size": {
+                "type": "integer"
+              },
+              "used": {
+                "type": "number"
+              },
+              "volume_id": {
+                "type": "string"
+              }
+            }
+          },
+          "wal_volume": {
+            "type": "object",
+            "properties": {
+              "size": {
+                "type": "integer"
+              },
+              "used": {
+                "type": "number"
+              },
+              "volume_id": {
+                "type": "string"
+              }
+            }
+          },
+          "flavor": {
+            "$ref": "#/components/schemas/flavor"
+          },
+          "ga_version": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "example": "leader"
+          },
+          "type": {
+            "type": "string",
+            "example": "member"
+          }
+        }
+      },
+      "clusterTask": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "datastore": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "type": "postgresql",
+          "version": "9.6"
+        }
+      },
+      "getCluster": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "instances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getInstanceInCluster"
+            }
+          },
+          "created": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "updated": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "task": {
+            "$ref": "#/components/schemas/clusterTask"
+          },
+          "configuration": {
+            "$ref": "#/components/schemas/configurationObject"
+          },
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "locality": {
+            "type": "string"
+          },
+          "loadbalancer_id": {
+            "type": "string"
+          },
+          "volume_autoresize_enabled": {
+            "type": "integer"
+          },
+          "volume_autoresize_max_size": {
+            "type": "integer"
+          },
+          "wal_autoresize_enabled": {
+            "type": "integer"
+          },
+          "wal_autoresize_max_size": {
+            "type": "integer"
+          }
+        }
+      },
+      "configurationObject": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "addClusterResponse": {
+        "type": "object",
+        "properties": {
+          "cluster": {
+            "$ref": "#/components/schemas/getCluster"
+          }
+        }
+      },
+      "getAllClustersResponse": {
+        "type": "object",
+        "properties": {
+          "clusters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getCluster"
+            }
+          }
+        }
+      },
+      "createInstanceResponse": {
+        "type": "object",
+        "properties": {
+          "instance": {
+            "$ref": "#/components/schemas/getInstanceDetailed"
+          }
+        }
+      },
+      "getAllInstancesResponse": {
+        "type": "object",
+        "properties": {
+          "instances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getInstanceDetailed"
+            }
+          }
+        }
+      },
+      "getInstanceDetailed": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "created": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "updated": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "status": {
+            "type": "string"
+          },
+          "health_status": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "compute_instance_id": {
+            "type": "string"
+          },
+          "volume": {
+            "type": "object",
+            "properties": {
+              "size": {
+                "type": "integer"
+              },
+              "used": {
+                "type": "number"
+              },
+              "volume_id": {
+                "type": "string"
+              }
+            }
+          },
+          "wal_volume": {
+            "type": "object",
+            "properties": {
+              "size": {
+                "type": "integer"
+              },
+              "used": {
+                "type": "number"
+              },
+              "volume_id": {
+                "type": "string"
+              },
+              "autoresize_enabled": {
+                "type": "integer"
+              },
+              "autoresize_max_size": {
+                "type": "integer"
+              }
+            }
+          },
+          "configuration_id": {
+            "type": "string"
+          },
+          "flavor": {
+            "$ref": "#/components/schemas/flavor"
+          },
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "ga_version": {
+            "type": "string"
+          },
+          "volume_autoresize_enabled": {
+            "type": "integer"
+          },
+          "volume_autoresize_max_size": {
+            "type": "integer"
+          },
+          "datastore_minor_version": {
+            "type": "string"
+          },
+          "upgrade_info": {
+            "$ref": "#/components/schemas/upgradeInfo"
+          }
+        }
+      },
+      "patchInstanceRequest": {
+        "type": "object",
+        "properties": {
+          "instance": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "newname"
+              },
+              "replica_of": {
+                "type": "object",
+                "example": null
+              },
+              "datastore_version": {
+                "type": "string",
+                "example": "22.3"
+              },
+              "datastore_minor_version": {
+                "type": "string",
+                "example": "13.24"
+              },
+              "volume_autoresize_enabled": {
+                "type": "integer"
+              },
+              "volume_autoresize_max_size": {
+                "type": "integer"
+              },
+              "wal_volume": {
+                "type": "object",
+                "properties": {
+                  "autoresize_enabled": {
+                    "type": "integer"
+                  },
+                  "autoresize_max_size": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "instance"
+        ]
+      },
+      "getClusterDetailed": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "instances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getInstanceInCluster"
+            }
+          },
+          "created": {
+            "type": "string"
+          },
+          "updated": {
+            "type": "string"
+          },
+          "task": {
+            "$ref": "#/components/schemas/clusterTask"
+          },
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "locality": {
+            "type": "string"
+          },
+          "loadbalancer_id": {
+            "type": "string"
+          },
+          "vrrp_port_id": {
+            "type": "string"
+          },
+          "ips": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "volume_autoresize_enabled": {
+            "type": "integer"
+          },
+          "volume_autoresize_max_size": {
+            "type": "integer"
+          },
+          "wal_autoresize_enabled": {
+            "type": "integer"
+          },
+          "wal_autoresize_max_size": {
+            "type": "integer"
+          },
+          "upgrade_info": {
+            "$ref": "#/components/schemas/upgradeInfo"
+          }
+        }
+      },
+      "patchClusterRequest": {
+        "type": "object",
+        "properties": {
+          "cluster": {
+            "type": "object",
+            "properties": {
+              "volume_autoresize_enabled": {
+                "type": "integer"
+              },
+              "volume_autoresize_max_size": {
+                "type": "integer"
+              },
+              "wal_autoresize_enabled": {
+                "type": "integer"
+              },
+              "wal_autoresize_max_size": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "required": [
+          "instance"
+        ]
+      },
+      "getClusterResponse": {
+        "type": "object",
+        "properties": {
+          "cluster": {
+            "$ref": "#/components/schemas/getClusterDetailed"
+          }
+        }
+      },
+      "backupRequest": {
+        "type": "object",
+        "properties": {
+          "backup": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "my backup 1"
+              },
+              "description": {
+                "type": "string",
+                "example": "manual backup needed for bla bla bla"
+              },
+              "incremental": {
+                "type": "integer",
+                "example": 0
+              },
+              "cluster": {
+                "type": "string",
+                "example": "00000000-0000-0000-0000-000000000000"
+              },
+              "instance": {
+                "type": "string",
+                "example": null
+              },
+              "container_prefix": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ]
+          }
+        },
+        "required": [
+          "backup"
+        ]
+      },
+      "getAllBackupsResponse": {
+        "type": "object",
+        "properties": {
+          "backups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getBackup"
+            }
+          }
+        }
+      },
+      "getBackupResponse": {
+        "type": "object",
+        "properties": {
+          "backup": {
+            "$ref": "#/components/schemas/getBackup"
+          }
+        }
+      },
+      "getBackup": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "name": {
+            "type": "string",
+            "example": "Autobackup1"
+          },
+          "description": {
+            "type": "string"
+          },
+          "locationRef": {
+            "type": "string",
+            "example": "hb.bizmrg.com/databasebackups-ce2a41bbd1434013b85bdf0ba07c770f/ad529fb1-83fd-4160-aed6-8c4ea0aa4fe5"
+          },
+          "backup_schedule_id": {
+            "type": "string",
+            "example": null
+          },
+          "instance_id": {
+            "type": "string",
+            "example": null
+          },
+          "cluster_id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "created": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "updated": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "size": {
+            "type": "integer"
+          },
+          "status": {
+            "type": "string",
+            "example": "COMPLETED"
+          },
+          "parent_id": {
+            "type": "string",
+            "example": null
+          },
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "fault": {
+            "$ref": "#/components/schemas/fault"
+          },
+          "meta": {
+            "type": "object"
+          }
+        }
+      },
+      "backupSchedule": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "schedule1"
+          },
+          "start_hours": {
+            "type": "integer",
+            "example": 3
+          },
+          "start_minutes": {
+            "type": "integer",
+            "example": 30
+          },
+          "interval_hours": {
+            "type": "integer",
+            "example": 8
+          },
+          "keep_count": {
+            "type": "integer",
+            "example": 21
+          },
+          "max_restore_timestamp": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          }
+        }
+      },
+      "postBackupSchedule": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "my schedule"
+          },
+          "start_hours": {
+            "type": "integer",
+            "example": 0
+          },
+          "start_minutes": {
+            "type": "integer",
+            "example": 1
+          },
+          "interval_hours": {
+            "type": "integer",
+            "example": 24
+          },
+          "keep_count": {
+            "type": "integer",
+            "example": 7
+          }
+        },
+        "required": [
+          "start_hours",
+          "start_minutes",
+          "interval_hours",
+          "keep_count"
+        ]
+      },
+      "getBackupSchedule": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "name": {
+            "type": "string",
+            "example": "main schedule"
+          },
+          "instance_id": {
+            "type": "string",
+            "example": null
+          },
+          "cluster_id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "created": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "updated": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          },
+          "start_hours": {
+            "type": "integer",
+            "example": 0
+          },
+          "start_minutes": {
+            "type": "integer",
+            "example": 1
+          },
+          "interval_hours": {
+            "type": "integer",
+            "example": 24
+          },
+          "keep_count": {
+            "type": "integer",
+            "example": 7
+          },
+          "max_restore_timestamp": {
+            "type": "string",
+            "example": "2021-04-05T10:11:03"
+          }
+        }
+      },
+      "getBackupSchedulesResponse": {
+        "type": "object",
+        "properties": {
+          "backup_schedules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getBackupSchedule"
+            }
+          }
+        }
+      },
+      "growClusterRequest": {
+        "type": "object",
+        "properties": {
+          "grow": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "key_name": {
+                  "type": "string"
+                },
+                "availability_zone": {
+                  "type": "string"
+                },
+                "flavorRef": {
+                  "type": "string"
+                },
+                "volume": {
+                  "$ref": "#/components/schemas/volume"
+                },
+                "wal_volume": {
+                  "$ref": "#/components/schemas/volume"
+                },
+                "shard_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "availability_zone",
+                "flavorRef",
+                "volume"
+              ]
+            }
+          }
+        }
+      },
+      "shrinkClusterRequest": {
+        "type": "object",
+        "properties": {
+          "shrink": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          }
+        }
+      },
+      "switchoverRequest": {
+        "type": "object",
+        "properties": {
+          "manual_failover": {
+            "type": "object",
+            "properties": {
+              "candidate": {
+                "type": "string"
+              },
+              "leader": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "candidate"
+            ]
+          }
+        }
+      },
+      "resizeVolumeRequest": {
+        "type": "object",
+        "properties": {
+          "resize": {
+            "type": "object",
+            "properties": {
+              "volume": {
+                "type": "object",
+                "properties": {
+                  "size": {
+                    "type": "integer"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "data",
+                      "wal"
+                    ],
+                    "default": "data"
+                  }
+                },
+                "required": [
+                  "size"
+                ]
+              },
+              "shard_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "resizeFlavorRequest": {
+        "type": "object",
+        "properties": {
+          "resize": {
+            "type": "object",
+            "properties": {
+              "flavorRef": {
+                "type": "string"
+              },
+              "shard_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "flavorRef"
+            ]
+          }
+        }
+      },
+      "enableCloudMonitoringRequest": {
+        "type": "object",
+        "properties": {
+          "cloud_monitoring": {
+            "type": "object",
+            "properties": {
+              "enable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "enable"
+            ]
+          }
+        }
+      },
+      "versionUpgradeRequest": {
+        "type": "object",
+        "properties": {
+          "version_upgrade": {
+            "type": "object",
+            "properties": {
+              "target_version": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "target_version"
+            ]
+          }
+        }
+      },
+      "postConfiguration": {
+        "type": "object",
+        "properties": {
+          "datastore": {
+            "$ref": "#/components/schemas/datastore"
+          },
+          "name": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "items": {
+              "type": "string"
+            },
+            "required": [
+              "name",
+              "datastore",
+              "values"
+            ]
+          }
+        }
+      },
+      "patchConfiguration": {
+        "type": "object",
+        "properties": {
+          "values": {
+            "type": "object",
+            "items": {
+              "type": "string"
+            },
+            "required": [
+              "values"
+            ]
+          }
+        }
+      },
+      "getConfiguration": {
+        "type": "object",
+        "properties": {
+          "updated": {
+            "type": "string"
+          },
+          "created": {
+            "type": "string"
+          },
+          "instance_count": {
+            "type": "integer"
+          },
+          "datastore_version_id": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "datastore_name": {
+            "type": "string"
+          },
+          "datastore_version_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "values": {
+            "type": "object",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "clusterConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "configuration_id": {
+            "type": "string"
+          },
+          "restart_confirmed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "configuration"
+        ]
+      },
+      "instanceConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "configuration": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "configuration"
+        ]
+      },
+      "attachClusterConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "configuration_attach": {
+            "$ref": "#/components/schemas/clusterConfigurationRequest"
+          }
+        }
+      },
+      "detachClusterConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "configuration_detach": {
+            "$ref": "#/components/schemas/clusterConfigurationRequest"
+          }
+        }
+      },
+      "attachInstanceConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "restart_confirmed": {
+            "type": "boolean"
+          },
+          "instance": {
+            "$ref": "#/components/schemas/instanceConfigurationRequest"
+          }
+        }
+      },
+      "detachInstanceConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "restart_confirmed": {
+            "type": "boolean"
+          },
+          "instance": {
+            "$ref": "#/components/schemas/instanceConfigurationRequest"
+          }
+        }
+      },
+      "createConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "configuration": {
+            "$ref": "#/components/schemas/postConfiguration"
+          }
+        },
+        "required": [
+          "configuration"
+        ]
+      },
+      "patchConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "configuration": {
+            "$ref": "#/components/schemas/patchConfiguration"
+          }
+        },
+        "required": [
+          "configuration"
+        ]
+      },
+      "createConfigurationResponse": {
+        "type": "object",
+        "properties": {
+          "configuration": {
+            "$ref": "#/components/schemas/getConfiguration"
+          }
+        }
+      },
+      "getAllConfigurationsResponse": {
+        "type": "object",
+        "properties": {
+          "configurations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getConfiguration"
+            }
+          }
+        }
+      },
+      "getConfigurationResponse": {
+        "type": "object",
+        "properties": {
+          "configuration": {
+            "$ref": "#/components/schemas/getConfiguration"
+          }
+        }
+      },
+      "upgradeGuestagentRequest": {
+        "type": "object",
+        "properties": {
+          "guestagent_upgrade": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string"
+              },
+              "key": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "version"
+            ]
+          }
+        }
+      },
+      "capabilityParam": {
+        "type": "object",
+        "properties": {
+          "required": {
+            "type": "boolean"
+          },
+          "type": {
+            "enum": [
+              "integer",
+              "boolean",
+              "string",
+              "float",
+              "list"
+            ]
+          },
+          "element_type": {
+            "enum": [
+              "integer",
+              "boolean",
+              "string",
+              "float"
+            ]
+          },
+          "enum_values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "default_value": {
+            "type": "string"
+          },
+          "min": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number"
+          },
+          "regex": {
+            "type": "string"
+          },
+          "masked": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "required",
+          "type"
+        ]
+      },
+      "getCapability": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "getDatastoreCapability": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/capabilityParam"
+            }
+          },
+          "should_be_on_master": {
+            "type": "boolean"
+          },
+          "allow_upgrade_from_backup": {
+            "type": "boolean"
+          },
+          "allow_major_upgrade": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "getDatastoreCapabilities": {
+        "type": "object",
+        "properties": {
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getDatastoreCapability"
+            }
+          }
+        },
+        "required": [
+          "capabilities"
+        ]
+      },
+      "getCapabilities": {
+        "type": "object",
+        "properties": {
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getCapability"
+            }
+          }
+        },
+        "required": [
+          "capabilities"
+        ]
+      },
+      "getClusterCapability": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "getClusterCapabilities": {
+        "type": "object",
+        "properties": {
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getClusterCapability"
+            }
+          }
+        },
+        "required": [
+          "capabilities"
+        ]
+      },
+      "postCapability": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "example": {
+              "database": "testdb"
+            }
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "applyCapabilityRequest": {
+        "type": "object",
+        "properties": {
+          "apply_capability": {
+            "type": "object",
+            "properties": {
+              "capabilities": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/postCapability"
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "capabilities"
+            ]
+          }
+        }
+      },
+      "databaseParamMeta": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "integer",
+              "boolean",
+              "string",
+              "float"
+            ]
+          }
+        }
+      },
+      "getDatabaseParams": {
+        "type": "object",
+        "properties": {
+          "database-params": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/databaseParamMeta"
+            },
+            "example": {
+              "max_connections": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      },
+      "getDatastoreMinorVersions": {
+        "type": "object",
+        "properties": {
+          "additionalProperties": {
+            "$ref": "#/components/schemas/getDatastoreMinorVersion"
+          }
+        }
+      },
+      "getDatastoreMinorVersion": {
+        "type": "object",
+        "properties": {
+          "possible_upgrades": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "9.6.0",
+              "9.7.0",
+              "10.0.0"
+            ]
+          },
+          "preferred": {
+            "type": "boolean"
+          }
+        }
+      },
+      "databaseInfo": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "collate": {
+            "type": "string"
+          },
+          "character_set": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            }
+          }
+        },
+        "example": {
+          "name": "mydb1",
+          "collate": "en_US.UTF-8",
+          "character_set": "UTF8",
+          "params": {
+            "max_connections": 50
+          }
+        }
+      },
+      "databaseParamsEdit": {
+        "type": "object",
+        "properties": {
+          "params": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "example": {
+              "max_connections": 50
+            }
+          }
+        },
+        "required": [
+          "params"
+        ]
+      },
+      "dsVersion": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "5.7"
+          },
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          }
+        }
+      },
+      "getDatastoreVersionResponse": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "5.7"
+          },
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "datastore": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "next_version_name": {
+            "type": "string",
+            "example": 13
+          }
+        }
+      },
+      "getDatastore": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "mysql"
+          },
+          "id": {
+            "type": "string",
+            "example": "00000000-0000-0000-0000-000000000000"
+          },
+          "minimum_cpu": {
+            "type": "integer",
+            "description": "minimum required CPU"
+          },
+          "minimum_ram": {
+            "type": "integer",
+            "description": "minimum required RAM"
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/dsVersion"
+            }
+          },
+          "volume_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cluster_volume_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "getDatastoreResponse": {
+        "type": "object",
+        "properties": {
+          "datastore": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getDatastore"
+            }
+          }
+        }
+      },
+      "getAllDatastoresResponse": {
+        "type": "object",
+        "properties": {
+          "datastores": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getDatastore"
+            }
+          }
+        }
+      },
+      "billingJournalEntry": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "tenant_id": {
+            "type": "string"
+          },
+          "instance_id": {
+            "type": "string"
+          },
+          "flavor_uuid": {
+            "type": "string"
+          },
+          "volumes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "is_enabled": {
+            "type": "boolean"
+          },
+          "is_deleted": {
+            "type": "boolean"
+          },
+          "created": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "tenant_id",
+          "instance_id",
+          "flavor_uuid",
+          "volumes",
+          "is_enabled",
+          "is_deleted",
+          "created"
+        ],
+        "example": {
+          "id": 100000,
+          "tenant_id": "00000000-0000-0000-0000-000000000000",
+          "instance_id": "00000000-0000-0000-0000-000000000000",
+          "flavor_uuid": "00000000-0000-0000-0000-000000000000",
+          "volumes": [
+            {
+              "id": "00000000-0000-0000-0000-000000000000",
+              "type": "dp1-ssd",
+              "size": 40
+            },
+            {
+              "id": "00000000-0000-0000-0000-000000000000",
+              "type": "dp1-hdd",
+              "size": 20
+            }
+          ],
+          "is_enabled": true,
+          "is_deleted": false,
+          "created": "2021-04-05T10:11:03"
+        }
+      },
+      "upgradeInfo": {
+        "type": "object",
+        "properties": {
+          "major_version": {
+            "type": "string"
+          },
+          "minor_versions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "example": {
+          "major_version": "12",
+          "minor_versions": [
+            "11.10",
+            "11.11"
+          ]
+        }
+      },
+      "resourcesInfo": {
+        "type": "object",
+        "properties": {
+          "fip_count": {
+            "type": "integer"
+          },
+          "lb_count": {
+            "type": "integer"
+          }
+        }
+      },
+      "nics": {
+        "type": "object",
+        "description": "Should include network_id and/or subnet_id or subnet_id/subnet-id or port_id like json",
+        "oneOf": [
+          {
+            "properties": {
+              "net-id": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "properties": {
+              "subnet_id": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "properties": {
+              "subnet-id": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "properties": {
+              "port_id": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "properties": {
+              "network_id": {
+                "type": "string"
+              },
+              "subnet_id": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "example": {
+          "network_id": "network_id",
+          "subnet_id'": "subnet_id"
+        }
+      }
+    }
+  }
+}
