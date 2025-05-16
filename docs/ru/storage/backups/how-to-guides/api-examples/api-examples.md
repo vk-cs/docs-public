@@ -39,7 +39,7 @@
 ```console
 curl -X GET \
 -H "Accept: application/json" \
--H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+-H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
 https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
@@ -84,7 +84,7 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```console
 curl -X GET \
     -H "Accept: application/json" \
-    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
@@ -116,7 +116,7 @@ curl -X GET \
 curl -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
-    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
     -d '{
       "plan": {
         "name": "example-plan",
@@ -168,7 +168,7 @@ curl -X POST \
 curl -s -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
-    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
     -d '{
       "trigger_info": {
         "name": "example-plan",

@@ -30,8 +30,8 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 ```json
 {
-  "refresh_token": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
-  "access_token": "0987654321ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "refresh_token": "<ЗНАЧЕНИЕ_ОБНОВЛЯЮЩЕГО_ТОКЕНА>",
+  "access_token": "<ЗНАЧЕНИЕ_ТОКЕНА_ДОСТУПА>",
   "expired_in": "3600",
   "scope": {
     "tts": 1,
