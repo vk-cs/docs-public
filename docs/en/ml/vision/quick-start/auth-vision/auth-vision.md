@@ -1,7 +1,7 @@
 To authorize the client on the VK Cloud platform, a token is used, which is passed in the request parameter:
 
 ```console
-curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oauth\_token=qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd" -F file\_0=@examples/car\_number.jpg - F meta='{"mode":\["object"\],"images":\[ {"name":"file\_0"}\]}'
+curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oauth\_token=<TOKEN_VALUE>" -F file\_0=@examples/car\_number.jpg - F meta='{"mode":\["object"\],"images":\[ {"name":"file\_0"}\]}'
 ```
 Authorization parameters:
 
@@ -104,8 +104,8 @@ Type of token to generate:
 
 ```json
 {
-  "refresh_token": "Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh",
-  "access_token": "vMA3Pjyno6tvCdo8MeDQ8xfgbibiubr9r",
+  "refresh_token": "<REFRESH_TOKEN_VALUE>",
+  "access_token": "<ACCESS_TOKEN_VALUE>",
   "expired_in": "3600",
   scope: {
     "objects": 1,
@@ -139,8 +139,8 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 ```json
 {
-  "refresh_token": "Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh",
-  "access_token": "vMA3Pjyno6tvCdo8MeDQ8xfgbibiubr9r",
+  "refresh_token": "<REFRESH_TOKEN_VALUE>",
+  "access_token": "<ACCESS_TOKEN_VALUE>",
   "expired_in": "3600",
   scope: {
     "objects": 1,

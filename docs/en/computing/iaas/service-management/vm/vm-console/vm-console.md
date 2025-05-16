@@ -56,7 +56,7 @@ To connect VM via VNC console:
        | Field | Value                                                                                 |
        +-------+-------------------------------------------------------------------------------------+
        | type  | novnc                                                                                |
-       | url   | https://infra.mail.ru:6080/vnc_auto.html?token=20224980-43eb-4535-85c7-310a18e27941 |
+       | url   | https://infra.mail.ru:6080/vnc_auto.html?token=<TOKEN_VALUE>  |
        +-------+-------------------------------------------------------------------------------------+
        ```
 

@@ -127,7 +127,7 @@ x-subject-token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbM
 FINDSTR: Слишком длинная строка 12.
 100 26700  100 26470  100   230  49114    426 --:--:-- --:--:-- --:--:-- 49628
 FINDSTR: Слишком длинная строка 12.
-x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBGP2h9Iq2U533pi13h_ZIHa0viga7HxmSsEeCZ_Fq1CEy0m75lmpDtZYd8SAazmjqbV5Kf4ygGnp77kPadkL0hAgC0b7vKjgNGoZ9bLZDBQmlEivNMlptyZKcQ
+x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 ```
 
 </tabpanel>
