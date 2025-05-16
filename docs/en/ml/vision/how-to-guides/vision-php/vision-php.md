@@ -11,7 +11,7 @@ Download the file [smarty.php](https://cloud.mail.ru/public/HqA7/ck6NPjotF).
 
 ```php
 php examples/php/smarty.php\
-"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="<TOKEN_VALUE>" \
 examples/friends1.jpg \
 '{"space":"1", "images":[{"name":"examples/friends1.jpg"}]}'
 ```
@@ -45,7 +45,7 @@ status:0,
 
 ```php
 php examples/php/smarty.php\
-"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="<TOKEN_VALUE>" \
 examples/rachel-green.jpg \
 '{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
 ```
@@ -71,7 +71,7 @@ This request does not require a file, so we pass an empty string instead of the 
 
 ```php
 php examples/php/smarty.php\
-"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="<TOKEN_VALUE>" \
 "" \
 '{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
 ```

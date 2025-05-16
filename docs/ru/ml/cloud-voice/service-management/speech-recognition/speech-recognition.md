@@ -85,7 +85,7 @@ curl --request POST \
   "qid": "61b5cf067c494b4a9a0b87a3c43e37ef",
   "result": {
     "task_id": "05ad987e-ceee-4186-acdb-956148b91692",
-    "task_token": "040b2fcfc3d9b9806b691070e873125dfc0450a8251887ba91b19be08eb3951c"
+    "task_token": "<ЗНАЧЕНИЕ_ТОКЕНА>"
   }
 }
 ```

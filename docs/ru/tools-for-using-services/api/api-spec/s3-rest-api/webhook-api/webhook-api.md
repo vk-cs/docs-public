@@ -219,7 +219,7 @@ content-type: application/json
     "Message":"You have chosen to subscribe to the topic $topic. To confirm the subscription you need to response with calculated signature",
     "TopicArn":"mcs2883541269|bucketA|s3:ObjectCreated:Put",
     "SignatureVersion":1,
-    "Token":"RPE5UuG94rGgBH6kHXN9FUPugFxj1hs2aUQc99btJp3E49tA"
+    "Token":"<ЗНАЧЕНИЕ_ТОКЕНА>"
 }
 ```
 

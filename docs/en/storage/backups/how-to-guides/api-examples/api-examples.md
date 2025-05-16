@@ -43,7 +43,7 @@ Request example:
 ```console
 curl -X GET \
 -H "Accept: application/json" \
--H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+-H "X-Auth-Token: <TOKEN_VALUE>" \
 https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
@@ -82,7 +82,7 @@ Request example:
 ```console
 curl -X GET \
     -H "Accept: application/json" \
-    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+    -H "X-Auth-Token: <TOKEN_VALUE>" \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
@@ -114,7 +114,7 @@ Request example:
 curl -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
-    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+    -H "X-Auth-Token: <TOKEN_VALUE>" \
     -d '{
       "plan": {
         "name": "example-plan",
@@ -166,7 +166,7 @@ Request example:
 curl -s -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
-    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
+    -H "X-Auth-Token: <TOKEN_VALUE>" \
     -d '{
       "trigger_info": {
         "name": "example-plan",

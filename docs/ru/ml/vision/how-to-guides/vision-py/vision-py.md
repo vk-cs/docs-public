@@ -6,7 +6,7 @@
 
 ```python
 python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider="mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider="mcs&oauth_token=<ЗНАЧЕНИЕ_ТОКЕНА>" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":false}' \
 -v
@@ -54,7 +54,7 @@ python examples/python/smarty.py \
 
 ```python
 python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mcs&oauth_token=<ЗНАЧЕНИЕ_ТОКЕНА>" \
 -p examples/rachel-green.jpg \
 --meta '{"space":"1", "images":[{"person_id":1}]}' \
 -v
@@ -79,7 +79,7 @@ python examples/python/smarty.py \
 
 ```python
 python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=<ЗНАЧЕНИЕ_ТОКЕНА>" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":false}' \
 -v
@@ -122,7 +122,7 @@ python examples/python/smarty.py \
 
 ```python
 python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=<ЗНАЧЕНИЕ_ТОКЕНА>" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":true}' \
 -v
@@ -170,7 +170,7 @@ python examples/python/smarty.py \
 
 ```python
 python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mcs&oauth_token=<ЗНАЧЕНИЕ_ТОКЕНА>" \
 --meta '{"space":"1", "images":[{"name":"myname", "person_id":1}]}' \
 -v
 ```
