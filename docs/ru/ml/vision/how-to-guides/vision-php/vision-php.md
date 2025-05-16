@@ -11,7 +11,7 @@ sudo apt-get install php5-curl
 
 ```php
 php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" \
 examples/friends1.jpg \
 '{"space":"1", "images":[{"name":"examples/friends1.jpg"}]}'
 ```
@@ -46,7 +46,7 @@ examples/friends1.jpg \
 
 ```php
 php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" \
 examples/rachel-green.jpg \
 '{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
 ```
@@ -72,7 +72,7 @@ examples/rachel-green.jpg \
 
 ```php
 php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" \
 "" \
 '{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
 ```

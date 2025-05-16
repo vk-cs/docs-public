@@ -104,7 +104,7 @@ source=magnum&\
 limit=2&\
 from=&\
 to=" \
--H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXX" \
+-H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
 -H "Content-Type: application/json" | jq
 ```
 
@@ -161,7 +161,7 @@ source=nova&\
 limit=2&\
 from=2023-10-15T10:00:00.000Z&\
 to=2023-11-15T16:43:00.477Z" \
--H "X-Auth-Token: gAAAAABlXEVTelmi_XXXX" \
+-H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
 -H "Content-Type: application/json" | jq
 ```
 
@@ -221,7 +221,7 @@ to=2023-11-15T16:43:00.477Z" \
    limit=10&\
    from=2023-10-15T10:00:00.000Z&\
    to=2023-11-15T16:43:00.477Z" \
-   -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
+   -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
    -H "Content-Type: application/json" | jq > nova_part1.log
    ```
 
@@ -246,7 +246,7 @@ to=2023-11-15T16:43:00.477Z" \
    limit=10&\
    from=2023-10-15T10:00:00.000Z&\
    to=2023-11-15T16:43:00.477Z" \
-   -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
+   -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
    -H "Content-Type: application/json" | jq > nova_part2.log
    ```
 

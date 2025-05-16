@@ -7,7 +7,7 @@ Download the file [smarty.py](https://cloud.mail.ru/public/2xP1/vWgqf332Z).
 ```python
 
 python examples/python/smarty.py\
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider="mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider="mcs&oauth_token=<TOKEN_VALUE>" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":false}' \
 -v
@@ -55,7 +55,7 @@ We will establish that this person has id=1 in the database. Let's do this with 
 
 ```python
 python examples/python/smarty.py\
--u "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mcs&oauth_token=<TOKEN_VALUE>" \
 -p examples/rachel-green.jpg \
 --meta '{"space":"1", "images":[{"person_id":1}]}' \
 -v
@@ -80,7 +80,7 @@ Now let's try to search for faces again. Run the same query:
 
 ```python
 python examples/python/smarty.py\
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=<TOKEN_VALUE>" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":false}' \
 -v
@@ -123,7 +123,7 @@ Now let's go back to the very beginning and imagine that we haven't loaded the p
 
 ```python
 python examples/python/smarty.py\
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=<TOKEN_VALUE>" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":true}' \
 -v
@@ -171,7 +171,7 @@ If you need to clean up the space (space) or some person was added to the databa
 
 ```python
 python examples/python/smarty.py\
--u "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+-u "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mcs&oauth_token=<TOKEN_VALUE>" \
 --meta '{"space":"1", "images":[{"name":"myname", "person_id":1}]}' \
 -v
 ```
