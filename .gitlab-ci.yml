@@ -18,7 +18,7 @@ variables:
   VKCS_RELEASES_ENABLED: "true"
 
   # Github sync variables
-  GITHUB_REPO: vk-cs/docs-public
+  VKCS_GITHUB_REPO: vk-cs/docs-public
   # must be defined in Project CI/CD
   # GITHUB_TOKEN: secret
   # GITLAB_TOKEN: secret
