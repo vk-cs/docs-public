@@ -1,14 +1,14 @@
 {
-    "title": "Личный кабинет клиента партнера VK Cloud",
-    "pageDescription": "Платформа партнера VK Cloud",
-    "shortDescription": "Управление возможностями партнерской программы VK Cloud",
-    "metaTitle": "Личный кабинет клиента партнера VK Cloud",
-    "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud",
-    "sectionTitle": "Личный кабинет партнера VK Cloud",
-    "icon": "",
-    "disableGithub": true,
-    "isBeta": true,
-    "hidden": false,
-    "weight": 4,
-    "uuid": ""
+  "title": "Личный кабинет клиента партнера VK Cloud",
+  "pageDescription": "Платформа партнера VK Cloud",
+  "shortDescription": "Управление возможностями партнерской программы VK Cloud",
+  "metaTitle": "Личный кабинет клиента партнера VK Cloud",
+  "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud",
+  "sectionTitle": "Личный кабинет партнера VK Cloud",
+  "icon": "",
+  "disableGithub": true,
+  "isBeta": true,
+  "hidden": false,
+  "weight": 4,
+  "uuid": "d6e2c4e7-a7f6-48fc-9764-d72b986bd359"
 }

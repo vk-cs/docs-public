@@ -1,10 +1,11 @@
 {
-    "title": "VM emergency boot mode",
-    "pageDescription": "Recovering a virtual machine in emergency boot mode.",
-    "shortDescription": "Recovering a virtual machine in emergency boot mode",
-    "metaTitle": "VM emergency boot mode",
-    "metaDescription": "Recovering a virtual machine in emergency boot mode",
-    "sectionTitle": "VM emergency boot mode",
-    "icon": "",
-    "weight": 2
+  "title": "VM emergency boot mode",
+  "pageDescription": "Recovering a virtual machine in emergency boot mode.",
+  "shortDescription": "Recovering a virtual machine in emergency boot mode",
+  "metaTitle": "VM emergency boot mode",
+  "metaDescription": "Recovering a virtual machine in emergency boot mode",
+  "sectionTitle": "VM emergency boot mode",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7a3089ee-d6e9-4eaa-8c79-2b9496962a96"
 }

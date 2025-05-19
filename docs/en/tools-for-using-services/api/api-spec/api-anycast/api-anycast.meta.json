@@ -1,10 +1,11 @@
 {
-    "title": "Anycast IP",
-    "pageDescription": "OpenAPI specification for Anycast IP service.",
-    "shortDescription": "OpenAPI specification for Anycast IP service",
-    "metaTitle": "Anycast IP",
-    "metaDescription": "OpenAPI specification for Anycast IP service",
-    "sectionTitle": "Anycast IP",
-    "icon": "",
-    "weight": 1
+  "title": "Anycast IP",
+  "pageDescription": "OpenAPI specification for Anycast IP service.",
+  "shortDescription": "OpenAPI specification for Anycast IP service",
+  "metaTitle": "Anycast IP",
+  "metaDescription": "OpenAPI specification for Anycast IP service",
+  "sectionTitle": "Anycast IP",
+  "icon": "",
+  "weight": 1,
+  "uuid": "d49bcfdd-f2be-47a9-97b9-202401a1c2b8"
 }

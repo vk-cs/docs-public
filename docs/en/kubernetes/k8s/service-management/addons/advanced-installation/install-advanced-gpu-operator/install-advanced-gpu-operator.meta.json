@@ -6,5 +6,6 @@
   "metaDescription": "The configuration and installation of the GPU Operator add-on is described here.",
   "sectionTitle": "GPU Operator",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "uuid": "93191d95-23c2-4cd8-bc7a-5c52c5d984a3"
 }

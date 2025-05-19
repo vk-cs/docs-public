@@ -1,9 +1,10 @@
-Система хранения данных на платформе VK Cloud организована с использованием сетевых дисков. Конфигурация основного диска задается на этапе [создания виртуальной машины](../vm/vm-create), дополнительные диски можно [создать](#sozdanie-diska) позже и [подключить](#podklyuchenie-diska-k-vm) к нужным ВМ. Для созданных дисков доступны операции [изменения размера](#izmenenie-razmera-diska) и [типа](#izmenenie-tipa-diska). Диски можно [перемещать между проектами](#peremeshchenie-diskov-mezhdu-proektami) и виртуальными машинами, [отключать от ВМ](#otklyuchenie_diska_ot_vm), [делать загрузочными](#izmenenie_atributa_zagruzochnyy) и не загрузочными. Диски, которые больше не используются, можно [удалить](#udalenie_diska).
+Система хранения данных на платформе VK Cloud организована с использованием [сетевых и локальных дисков](../../concepts/data-storage/disk-types), различающихся между собой надежностью хранения, количеством реплик данных и параметрами [производительности](../../concepts/data-storage/volume-sla).
 
+Конфигурация основного диска задается на этапе [создания виртуальной машины](../vm/vm-create), дополнительные диски можно [создать](#sozdanie-diska) позже и [подключить](#podklyuchenie-diska-k-vm) к нужным ВМ. Для созданных дисков доступны операции [изменения размера](#izmenenie-razmera-diska) и [типа](#izmenenie-tipa-diska). Диски можно [перемещать между проектами](#peremeshchenie-diskov-mezhdu-proektami) и виртуальными машинами, [отключать от ВМ](#otklyuchenie_diska_ot_vm), а также [делать загрузочными](#izmenenie_atributa_zagruzochnyy) и не загрузочными. Диски, которые больше не используются, можно [удалить](#udalenie_diska).
 
 ## {heading(Создание диска)[id=create_disk]}
 
-Создание HDD и SSD-дисков доступно по умолчанию во всех конфигурациях. Для создания дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/about#cpu_i_ram) и дискам. Подробнее о [типах дисков](../../concepts/about#diski) — в статье [Обзор сервиса Cloud Servers](../../concepts/about).
+Чтобы создать диск типа Low Latency NVME, [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm/cpu-generation) и дискам. Создание остальных [типов диска](../../concepts/data-storage/disk-types#disk_types) доступно по умолчанию во всех конфигурациях.
 
 <info>
 
@@ -33,7 +34,7 @@
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-2. Выберите в [таблице](../../concepts/about#diski) тип диска, определите его название в API и зону доступности, подходящую для размещения.
+2. [Выберите](../../concepts/data-storage/disk-types#disk_types) тип диска, определите его название в API и зону доступности, подходящую для размещения.
 
 3. Просмотрите доступные типы дисков и скопируйте ID типа, соответствующий названию в API.
 
@@ -246,7 +247,7 @@
 <tabpanel>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. [Определите](../../concepts/about#disk_types):
+1. [Определите](../../concepts/data-storage/disk-types#disk_types):
 
    - нужный тип диска;
    - его название в API;
@@ -275,7 +276,7 @@
 
 ## Изменение типа диска
 
-Диски с типом HDD и SSD доступны по умолчанию во всех конфигурациях. Для использования дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/about#cpu_i_ram) и дискам. Подробнее о [типах дисков](../../concepts/about#diski) — в статье [Обзор сервиса Cloud Servers](../../concepts/about).
+Чтобы изменить тип диска на Low Latency NVME, [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm/cpu-generation) и дискам. Остальные [типы диска](../../concepts/data-storage/disk-types#disk_types) доступны по умолчанию во всех конфигурациях.
 
 <tabs>
 
@@ -324,7 +325,7 @@
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-2. Выберите в [таблице](../../concepts/about#diski) новый тип диска и определите его название в API.
+2. [Выберите](../../concepts/data-storage/disk-types#disk_types) новый тип диска и определите его название в API.
 
 3. Просмотрите список доступных типов дисков и скопируйте ID типа, соответствующий названию в API.
 
