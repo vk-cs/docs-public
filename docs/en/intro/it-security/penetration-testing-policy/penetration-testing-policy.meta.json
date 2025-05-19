@@ -6,5 +6,6 @@
   "metaDescription": "Conditions of penetration tests for public VK Cloud",
   "sectionTitle": "Penetration test policy",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "9fd6e44f-d38f-4c2c-8a47-6f5ebcaddd29"
 }

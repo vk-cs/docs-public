@@ -1,10 +1,11 @@
 {
-    "title": "Подключение к ВРМ",
-    "sectionTitle": "Подключение к ВРМ",
-    "metaTitle": "Подключение к ВРМ",
-    "pageDescription": "Как подключиться к виртуальному рабочему столу с помощью Cloud Desktop Client.",
-    "shortDescription": "Как подключиться к виртуальному рабочему столу с помощью Cloud Desktop Client",
-    "metaDescription": "Как подключиться к виртуальному рабочему столу с помощью Cloud Desktop Client",
-    "icon": "",
-    "weight": 2
+  "title": "Подключение к ВРМ",
+  "sectionTitle": "Подключение к ВРМ",
+  "metaTitle": "Подключение к ВРМ",
+  "pageDescription": "Как подключиться к виртуальному рабочему столу с помощью Cloud Desktop Client.",
+  "shortDescription": "Как подключиться к виртуальному рабочему столу с помощью Cloud Desktop Client",
+  "metaDescription": "Как подключиться к виртуальному рабочему столу с помощью Cloud Desktop Client",
+  "icon": "",
+  "weight": 2,
+  "uuid": "09834e8c-7926-4911-9c9a-75569e78f8c5"
 }

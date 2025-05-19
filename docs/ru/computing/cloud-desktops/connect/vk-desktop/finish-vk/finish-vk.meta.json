@@ -1,10 +1,11 @@
 {
-    "title": "Завершение работы",
-    "sectionTitle": "Завершение работы",
-    "metaTitle": "Завершение работы",
-    "pageDescription": "Как завершить работу с ВРМ.",
-    "shortDescription": "Как завершить работу с ВРМ",
-    "metaDescription": "Как завершить работу с ВРМ",
-    "icon": "",
-    "weight": 4
+  "title": "Завершение работы",
+  "sectionTitle": "Завершение работы",
+  "metaTitle": "Завершение работы",
+  "pageDescription": "Как завершить работу с ВРМ.",
+  "shortDescription": "Как завершить работу с ВРМ",
+  "metaDescription": "Как завершить работу с ВРМ",
+  "icon": "",
+  "weight": 4,
+  "uuid": "d1cc2bc8-5e98-4e99-b5e8-f762a7191296"
 }

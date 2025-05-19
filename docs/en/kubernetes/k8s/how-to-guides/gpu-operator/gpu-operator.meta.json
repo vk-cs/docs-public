@@ -6,5 +6,6 @@
   "metaDescription": "How to create a cluster with a GPU and split the GPU into several pods using MPS and MIG technologies.",
   "sectionTitle": "Using GPU Operator",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "uuid": "db7b4e61-8525-456a-988b-3b98e864076e"
 }
