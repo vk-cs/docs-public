@@ -1,10 +1,11 @@
 {
-    "title": "Установка Cloud Desktop Client",
-    "sectionTitle": "Установка Cloud Desktop Client",
-    "metaTitle": "Установка Cloud Desktop Client",
-    "pageDescription": "Как установить клиентское приложение Cloud Desktop Client на компьютер пользователя.",
-    "shortDescription": "Как установить клиентское приложение Cloud Desktop Client на компьютер пользователя",
-    "metaDescription": "Как установить клиентское приложение Cloud Desktop Client на компьютер пользователя",
-    "icon": "",
-    "weight": 1
+  "title": "Установка Cloud Desktop Client",
+  "sectionTitle": "Установка Cloud Desktop Client",
+  "metaTitle": "Установка Cloud Desktop Client",
+  "pageDescription": "Как установить клиентское приложение Cloud Desktop Client на компьютер пользователя.",
+  "shortDescription": "Как установить клиентское приложение Cloud Desktop Client на компьютер пользователя",
+  "metaDescription": "Как установить клиентское приложение Cloud Desktop Client на компьютер пользователя",
+  "icon": "",
+  "weight": 1,
+  "uuid": "ca2808c2-80b3-4eef-854e-66911d70c462"
 }

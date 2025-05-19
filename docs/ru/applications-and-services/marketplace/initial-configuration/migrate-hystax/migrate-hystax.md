@@ -158,7 +158,7 @@
    Параметры плана:
 
     - `<ИМЯ_ВМ>` — имя, которое будет присвоено виртуальной машине в VK Cloud.
-    - `flavor` — имя или ID [шаблона конфигурации](/ru/computing/iaas/concepts/about#flavors) для ВМ. Уточните название с помощью команды `openstack flavor list`.
+    - `flavor` — имя или ID [шаблона конфигурации](/ru/computing/iaas/concepts/vm/flavor) для ВМ. Уточните название с помощью команды `openstack flavor list`.
     - `availability_zone` — имя [зоны доступности](/ru/intro/start/concepts/architecture#az), в которой будет развернута ВМ.
     - `security_groups` — список имен или ID [групп безопасности](/ru/networks/vnet/service-management/secgroups) для `Ubuntu-MR`.
     - `id` — внутренний ID виртуальной машины, сгенерированный Hystax на предыдущем шаге.

@@ -27,8 +27,8 @@
    1. Задайте для экземпляра название и описание.
    1. Задайте параметры узла для брокера:
 
-      - **Тип инстанса:** [шаблон конфигурации](/ru/computing/iaas/concepts/about#flavors) для узла.
-      - **Тип диска:** [тип диска](/ru/computing/iaas/concepts/about#disk_types) для узла.
+      - **Тип инстанса:** [шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) для узла.
+      - **Тип диска:** [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) для узла.
       - **Размер диска:** размер диска для узла.
 
    1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
@@ -116,7 +116,7 @@
       </tablist>
       <tabpanel>
 
-      Выберите один из готовых шаблонов кластера. [Шаблон конфигурации](/ru/computing/iaas/concepts/about#flavors) и [тип диска](/ru/computing/iaas/concepts/about#disk_types) для узлов кластера уже выбраны.
+      Выберите один из готовых шаблонов кластера. [Шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) и [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) для узлов кластера уже выбраны.
 
       При выборе любого шаблона экземпляр Cloud Kafka будет состоять из трех узлов для брокеров и трех узлов для ZooKeeper.
 
@@ -127,8 +127,8 @@
 
       1. Задайте в блоке **Broker** параметры узлов для брокеров:
 
-         - **Тип инстанса:** [шаблон конфигурации](/ru/computing/iaas/concepts/about#flavors) для узла.
-         - **Тип диска:** [тип диска](/ru/computing/iaas/concepts/about#disk_types) для узла.
+         - **Тип инстанса:** [шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) для узла.
+         - **Тип диска:** [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) для узла.
          - **Размер диска:** размер диска для узла.
          - **Количество broker:** общее количество узлов.
 

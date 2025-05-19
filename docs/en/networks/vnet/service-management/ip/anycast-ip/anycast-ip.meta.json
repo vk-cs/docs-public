@@ -1,11 +1,11 @@
 {
-    "title": "Anycast IP addresses",
-    "pageDescription": "Managing anycast IP addresses in the cloud networks service.",
-    "shortDescription": "Adding, removing, binding anycast IP addresses and other operations",
-    "metaTitle": "Anycast IP addresses",
-    "metaDescription": "Adding, removing, binding anycast IP addresses and other operations",
-    "sectionTitle": "Anycast IP addresses",
-    "icon": "",
-    "weight": 2,
-    "uuid": ""
+  "title": "Anycast IP addresses",
+  "pageDescription": "Managing anycast IP addresses in the cloud networks service.",
+  "shortDescription": "Adding, removing, binding anycast IP addresses and other operations",
+  "metaTitle": "Anycast IP addresses",
+  "metaDescription": "Adding, removing, binding anycast IP addresses and other operations",
+  "sectionTitle": "Anycast IP addresses",
+  "icon": "",
+  "weight": 2,
+  "uuid": "02ffacb3-9d2d-44b2-8ec9-468f4d65bca6"
 }

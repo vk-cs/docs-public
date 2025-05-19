@@ -39,7 +39,7 @@
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
       1. Выберите [зону доступности](/ru/intro/start/concepts/architecture#az), где будет размещен узел кластера Cloud Containers.
-   1. Выберите [тип виртуальной машины](/ru/computing/iaas/concepts/about#flavors), на которой будет развернут Cloud Flink.
+   1. Выберите [тип виртуальной машины](/ru/computing/iaas/concepts/vm/flavor), на которой будет развернут Cloud Flink.
    1. Нажмите кнопку **Следующий шаг**.
 
 1. На шаге **Учетные данные**:
@@ -111,7 +111,7 @@
       </tablist>
       <tabpanel>
 
-      Выберите один из готовых шаблонов кластера. [Шаблон конфигурации](/ru/computing/iaas/concepts/about#flavors) и [тип диска](/ru/computing/iaas/concepts/about#disk_types) для узлов кластера уже выбраны.
+      Выберите один из готовых шаблонов кластера. [Шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) и [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) для узлов кластера уже выбраны.
 
       При выборе любого шаблона экземпляр Cloud Flink будет состоять из одного узла Job Manager и нескольких узлов Task Manager.
 
@@ -120,7 +120,7 @@
 
       Настройте параметры самостоятельно:
 
-      1. В блоке **Job Manager** задайте [шаблон конфигурации](/ru/computing/iaas/concepts/about#flavors) для master-узла. Количество master-узлов не редактируется.
+      1. В блоке **Job Manager** задайте [шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) для master-узла. Количество master-узлов не редактируется.
       1. В блоке **Task Manager** задайте параметры worker-узлов:
 
          - **Тип виртуальной машины:** шаблон конфигурации для узлов.
