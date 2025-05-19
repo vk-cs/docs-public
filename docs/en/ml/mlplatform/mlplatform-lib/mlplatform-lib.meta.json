@@ -6,5 +6,6 @@
   "metaDescription": "Cloud ML Platform Python library documentation (for JupyterHub, MLflow, MLflow Deploy).",
   "sectionTitle": "Cloud ML Platform library",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "uuid": "c2308f2a-7880-4547-93c9-a04218ec85cc"
 }

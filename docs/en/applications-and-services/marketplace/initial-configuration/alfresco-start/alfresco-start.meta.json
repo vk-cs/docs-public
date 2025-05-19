@@ -1,10 +1,11 @@
 {
-    "title": "Alfresco deployment",
-    "pageDescription": "Steps to deploy Alfresco to a target VK Cloud project using Marketplace. Deployment of Alfresco for managing corporate content and automating business processes.",
-    "shortDescription": "Deployment of Alfresco for enterprise content management and business process automation",
-    "metaTitle": "Alfresco deployment",
-    "metaDescription": "Marketplace VK Cloud: steps to deploy the Alfresco system for enterprise content management and business process automation",
-    "sectionTitle": "Alfresco deployment",
-    "icon": "",
-    "weight": 11
-  }
+  "title": "Alfresco deployment",
+  "pageDescription": "Steps to deploy Alfresco to a target VK Cloud project using Marketplace. Deployment of Alfresco for managing corporate content and automating business processes.",
+  "shortDescription": "Deployment of Alfresco for enterprise content management and business process automation",
+  "metaTitle": "Alfresco deployment",
+  "metaDescription": "Marketplace VK Cloud: steps to deploy the Alfresco system for enterprise content management and business process automation",
+  "sectionTitle": "Alfresco deployment",
+  "icon": "",
+  "weight": 11,
+  "uuid": "657e3447-613d-418f-a33a-48b1b9d2a292"
+}

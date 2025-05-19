@@ -1,4 +1,4 @@
-События, которые сервис [файловых хранилищ](/ru/computing/iaas/concepts/about#file_share) передает в Cloud Audit:
+События, которые сервис [файловых хранилищ](/ru/computing/iaas/concepts/data-storage/file-share) передает в Cloud Audit:
 
 [cols="1,4", options="header"]
 |===

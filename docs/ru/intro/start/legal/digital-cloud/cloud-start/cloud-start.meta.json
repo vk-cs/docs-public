@@ -1,12 +1,13 @@
 {
-    "title": "Правила акции «Облачный апгрейд»",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Правила акции «Облачный апгрейд» с 02.04.2025",
-    "metaDescription": "Правила акции «Облачный апгрейд»",
-    "sectionTitle": "Правила акции «Облачный апгрейд»",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 20
-  }
+  "title": "Правила акции «Облачный апгрейд»",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Правила акции «Облачный апгрейд» с 02.04.2025",
+  "metaDescription": "Правила акции «Облачный апгрейд»",
+  "sectionTitle": "Правила акции «Облачный апгрейд»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 20,
+  "uuid": "a6870dc7-bcd5-4a8b-9e0c-613bc1aea550"
+}

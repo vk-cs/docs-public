@@ -1,10 +1,11 @@
 {
-    "title": "Anycast IP-адреса",
-    "pageDescription": "Управление Anycast IP-адресами в сервисе виртуальных сетей.",
-    "shortDescription": "Добавление, удаление, привязка Anycast IP-адресов и другие операции",
-    "metaTitle": "Anycast IP-адреса",
-    "metaDescription": "",
-    "sectionTitle": "Anycast IP-адреса",
-    "icon": "",
-    "weight": 2
+  "title": "Anycast IP-адреса",
+  "pageDescription": "Управление Anycast IP-адресами в сервисе виртуальных сетей.",
+  "shortDescription": "Добавление, удаление, привязка Anycast IP-адресов и другие операции",
+  "metaTitle": "Anycast IP-адреса",
+  "metaDescription": "",
+  "sectionTitle": "Anycast IP-адреса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "077ad3f0-f9d3-42fa-9184-7b6163b51678"
 }

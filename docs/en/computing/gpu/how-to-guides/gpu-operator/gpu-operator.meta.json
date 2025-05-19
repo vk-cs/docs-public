@@ -6,5 +6,6 @@
   "metaDescription": "How to create a Kubernetes cluster with a GPU and split the GPU into several pods using MPS and MIG technologies.",
   "sectionTitle": "GPU resource management in Cloud Containers",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "14c119a9-2d45-488e-ad96-e19ee4d0e610"
 }
