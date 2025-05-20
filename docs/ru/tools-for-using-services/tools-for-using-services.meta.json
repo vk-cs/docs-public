@@ -6,7 +6,7 @@
   "metaDescription": "Основное управление ресурсами платформы выполняется через личный кабинет VK Cloud. Помимо веб-интерфейса, управление может производиться с использованием инструментов: OpenStack CLI, REST API, Terraform.",
   "sectionTitle": "Инструменты для работы с сервисами",
   "icon": "",
-  "weight": 11,
+  "weight": 12,
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/account/concepts/projects"

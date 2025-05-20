@@ -1,0 +1,12 @@
+{
+  "title": "ClickHouse",
+  "pageDescription": "Столбцовая аналитическая СУБД для хранения и обработки исторических данных.",
+  "shortDescription": "Столбцовая аналитическая СУБД для хранения и обработки исторических данных",
+  "metaTitle": "ClickHouse",
+  "metaDescription": "Столбцовая аналитическая СУБД для хранения и обработки исторических данных",
+  "sectionTitle": "ClickHouse",
+  "icon": "",
+  "weight": 0,
+  "isBeta": true,
+  "uuid": "c6e57c85-a0cd-4880-a0eb-9bd15fb5409d"
+}
