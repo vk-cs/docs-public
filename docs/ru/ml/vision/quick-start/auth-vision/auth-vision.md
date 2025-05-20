@@ -25,8 +25,8 @@
    curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
    --header 'Content-Type: application/json' \
    --data '{
-   "client_id":"<OAuth Идентификатор клиента>",
-   "client_secret": "<OAuth Секретный ключ>",
+   "client_id":"<OAUTH_ИДЕНТИФИКАТОР_КЛИЕНТА>",
+   "client_secret": "<OAUTH_СЕКРЕТНЫЙ_КЛЮЧ>",
    "grant_type":"client_credentials"
    }'
    ```
@@ -50,8 +50,8 @@
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{
-"client_id":"<OAuth Идентификатор клиента>",
-"refresh_token":"<токен обновления>",
+"client_id":"<OAUTH_ИДЕНТИФИКАТОР_КЛИЕНТА>",
+"refresh_token":"<ТОКЕН_ОБНОВЛЕНИЯ>",
 "grant_type":"refresh_token"
 }'
 ```
