@@ -48,7 +48,6 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
     - **Selection field**: `UID`.
 
 1. Click the **Save** button.
-1. On the **Subsystem** tab, [select](/en/computing/cloud-desktops/service-management/config/setup-provider) one of the options at your discretion.
 1. (Optional) On the **SAML** tab, [set up](/en/computing/cloud-desktops/service-management/config/setup-saml) two-factor authentication.
 
 ## 2. Create pool of desktops
@@ -94,10 +93,7 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
 
     In the example, the IP address is `99.166.240.100`.
 
-1. Download and install the client for accessing remote desktops. The choice of client depends on the subsystem:
-
-   - [Termidesk](/en/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") — if you selected the Termidesk subsystem.
-   - [Cloud Desktop Client](/en/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download") — if you selected the VK subsystem.
+1. Download and install the client for accessing remote desktops: [Cloud Desktop Client](/en/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download").
 
 1. Connect to the pools:
 

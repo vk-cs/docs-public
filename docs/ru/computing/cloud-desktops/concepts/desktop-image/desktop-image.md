@@ -23,40 +23,7 @@
 
 ## Рекомендации по подготовке собственного образа
 
-Рекомендуется установить на образ:
-
-- (Для ОС Astra Linux) дополнительное ПО для поддержки протокола RDP и службы каталогов AD. Это позволит ускорить развертывание рабочих столов в пуле.
-- Компоненты [программного продукта Termidesk](https://termidesk.ru), который позволяет ускорить подключение к рабочим столам пула.
-
-    <tabs>
-    <tablist>
-    <tab>Windows</tab>
-    <tab>Astra Linux</tab>
-    </tablist>
-    <tabpanel>
-
-    Для установки Termidesk выполните команды в приложении Windows PowerShell:
-
-    ```shell
-    Invoke-WebRequest -Uri https://repos.termidesk.ru/windows/windows_x86_64/termidesk-agent_4.3.2.24030_x64.msi -OutFile $env:TEMP\termidesk-agent.msi
-    Start-Process msiexec -ArgumentList "/i `"$env:TEMP\termidesk-agent.msi`" /qn" -Wait -NoNewWindow
-    Remove-Item $env:TEMP\termidesk-agent.msi
-    ```
-
-    </tabpanel>
-    <tabpanel>
-
-    Для установки Termidesk выполните команды в терминале:
-
-    ```shell
-    apt update && apt install -y curl lsb-release spice-vdagent xserver-xorg-video-qxl xrdp
-    echo "deb https://repos.termidesk.ru/astra $(lsb_release -cs) non-free" > /etc/apt/sources.list.d/termidesk.list
-    curl https://repos.termidesk.ru/astra/GPG-KEY-PUBLIC | apt-key add -
-    apt update && apt install -y 'python3-termidesk-agent=4.*' termidesk-pcsc-vscard termidesk-video-agent astra-ad-sssd-client
-    ```
-
-    </tabpanel>
-    </tabs>
+Для ОС Astra Linux рекомендуется установить на образ дополнительное ПО для поддержки протокола RDP и службы каталогов AD. Это позволит ускорить развертывание рабочих столов в пуле.
 
 ## Что дальше?
 
