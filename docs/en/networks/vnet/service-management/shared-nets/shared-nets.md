@@ -8,7 +8,22 @@ Network sharing is available by default in projects with the Sprut [SDN](../../c
 
 ## {heading(Sharing network)[id=share]}
 
-Only a user with the [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project owner can share the network with other projects.
+<details>
+
+<summary>Who can share a network with other projects?</summary>
+
+Users with the following [roles](/ru/tools-for-using-services/account/concepts/rolesandpermissions) can share a network with other projects:
+
+- project owner
+- superadministrator
+- project administrator
+- virtual machine administrator
+- junior VM administrator
+- network administrator
+- internal network administrator
+- Kubernetes administrator
+
+</details>
 
 To share a network with other projects:
 
