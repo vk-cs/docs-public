@@ -1,6 +1,6 @@
-Keycloak is an authentication and access management system. You can use Keycloak in Cloud Desktop as a SAML identity provider.
+[Keycloak](https://www.keycloak.org/) is an authentication and access management system. You can use Keycloak in Cloud Desktop as a SAML identity provider.
 
-The following shows how to prepare Keycloak to work with the [VK subsystem](../../service-management/config/setup-provider) of Cloud Desktop.
+The following shows how to prepare Keycloak to work with Cloud Desktop.
 
 ## Preparatory steps
 

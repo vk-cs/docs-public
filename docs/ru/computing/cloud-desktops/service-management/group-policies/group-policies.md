@@ -12,7 +12,7 @@
 
 ## 1. Добавьте правило для Windows Defender Firewall
 
-Для работы агента [Termidesk](https://termidesk.ru), установленного на виртуальных рабочих столах, активируйте Windows Defender Firewall и разрешите в нем входящие подключения для группы портов TCP 43900–44000.
+Для работы агента Cloud Desktop, установленного на виртуальных рабочих столах, активируйте Windows Defender Firewall и разрешите в нем входящие подключения для групп портов TCP 16002–16005 и UDP 14010–14012.
 
 1. Перейдите в раздел **Computer Configuration → Policies → Windows Security → Security Settings → Windows Defender Firewall with Advanced Security – Local Group Police Object**.
 1. Перейдите по ссылке **Windows Defender Firewall Properties**.
@@ -21,14 +21,15 @@
 1. В контекстном меню раздела выберите пункт **New Rule…**.
 1. Выберите опцию **Port** и нажмите кнопку **Next**.
 1. Выберите опции **TCP** и **Specific local ports**.
-1. Укажите диапазон значений `43900-44000` и нажмите кнопку **Next**.
+1. Укажите диапазон значений `16002–16005` и нажмите кнопку **Next**.
 1. Выберите опцию **Allow the connection** и нажмите кнопку **Next**.
 1. Выберите опцию **Domain** и нажмите кнопку **Next**.
-1. Укажите имя для правила (например, `Termidesk API Inbound`) и нажмите кнопку **Finish**.
+1. Укажите имя для правила (например, `Cloud Desktop API Inbound TCP`) и нажмите кнопку **Finish**.
+1. Аналогичным образом добавьте второе правило. Для него выберите опцию **UDP** вместо **TCP**, укажите диапазон значений `14010–14012` для портов и имя правила `Cloud Desktop API Inbound UDP`.
 
 ## 2. Настройте механизм согласования безопасности для RDP-сеанса подключения к виртуальным рабочим столам
 
-Чтобы подключаться к виртуальным рабочим столам через шлюз TLS, измените стандартные настройки уровня защиты терминального сеанса на стороне агента Termidesk.
+Чтобы подключаться к виртуальным рабочим столам через шлюз TLS, измените стандартные настройки уровня защиты терминального сеанса на стороне агента Cloud Desktop.
 
 1. Перейдите в раздел **Computer Configuration → Policies → Administrative Templates → Windows Components → Remote Desktop Services → Remote Desktop Session Host → Security**.
 1. В контекстном меню пункта **Require use of specific security layer for remote (RDP) connections** выберите пункт **Edit**.
@@ -36,26 +37,7 @@
 1. Для параметра **Security Layer** выберите значение `RDP`.
 1. Нажмите кнопку **ОК**.
 
-## 3. Настройте клиент Termidesk на использование глобальных NTP-серверов в зоне RU
-
-Разработчик продукта Termidesk рекомендует использовать глобальные серверы времени из пула:
-
-- `0.ru.pool.ntp.org`;
-- `1.ru.pool.ntp.org`;
-- `2.ru.pool.ntp.org`;
-- `3.ru.pool.ntp.org`.
-
-Чтобы выполнить настройку:
-
-1. Перейдите в раздел **Computer Configuration → Policies → Administrative Templates → System → Windows Time Service → Time Providers**.
-1. В контекстном меню пункта **Enable Windows NTP Client** выберите пункт **Edit**.
-1. Выберите опцию **Enabled** и нажмите кнопку **ОК**.
-1. В контекстном меню пункта **Configure Windows NTP Client** выберите пункт **Edit**.
-1. Выберите опцию **Enabled**.
-1. В поле **NtpServer** укажите `0.ru.pool.ntp.org,0x9 1.ru.pool.ntp.org,0x9 2.ru.pool.ntp.org,0x9 3.ru.pool.ntp.org,0x9`.
-1. В поле **SpecialPollingInterval** укажите `1800` и нажмите кнопку **ОК**.
-
-## 4. Разрешите конечным пользователям подключение к виртуальным рабочим столам
+## 3. Разрешите конечным пользователям подключение к виртуальным рабочим столам
 
 Разрешите пользователям, входящим в вашу доменную группу для сервиса Cloud Desktop, подключаться к виртуальным рабочим столам по протоколу RDP.
 
