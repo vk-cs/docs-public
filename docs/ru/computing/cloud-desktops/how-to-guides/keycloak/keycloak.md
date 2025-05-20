@@ -1,6 +1,6 @@
-Keycloak — это система идентификации и управления доступом. Вы можете использовать Keycloak в сервисе Cloud Desktop в качестве поставщика удостоверений SAML.
+[Keycloak](https://www.keycloak.org/) — это система идентификации и управления доступом. Вы можете использовать Keycloak в сервисе Cloud Desktop в качестве поставщика удостоверений SAML.
 
-Далее показано, как подготовить Keycloak к работе с [подсистемой VK](../../service-management/config/setup-provider) сервиса Cloud Desktop.
+Далее показано, как подготовить Keycloak к работе с сервисом Cloud Desktop.
 
 ## Подготовительные шаги
 

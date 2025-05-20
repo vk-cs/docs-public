@@ -48,7 +48,6 @@
     * **Поле для выборки**: например, `UID`.
 
 1. Нажмите кнопку **Сохранить**.
-1. На вкладке **Подсистема** [выберите](/ru/computing/cloud-desktops/service-management/config/setup-provider) один из вариантов на свое усмотрение.
 1. (Опционально) На вкладке **SAML** [настройте](/ru/computing/cloud-desktops/service-management/config/setup-saml) двухфакторную аутентификацию.
 
 ## 2. Создайте пул рабочих столов
@@ -99,10 +98,7 @@
 
    В примере используется IP-адрес `99.166.240.100`.
 
-1. Скачайте и установите клиент для доступа к удаленным рабочим столам:
-
-   * [Termidesk](/ru/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") — если вы выбрали подсистему Termidesk;
-   * [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download") — если вы выбрали подсистему VK.
+1. Скачайте и установите клиент для доступа к удаленным рабочим столам: [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download").
 
 1. Подключитесь к пулам:
 
