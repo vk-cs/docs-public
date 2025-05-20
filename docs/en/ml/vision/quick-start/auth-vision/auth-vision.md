@@ -1,157 +1,68 @@
-To authorize the client on the VK Cloud platform, a token is used, which is passed in the request parameter:
+The VK Cloud platform uses an access token for authorization. It is passed in a parameter of each API-request.
 
-```console
-curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oauth\_token=<TOKEN_VALUE>" -F file\_0=@examples/car\_number.jpg - F meta='{"mode":\["object"\],"images":\[ {"name":"file\_0"}\]}'
-```
-Authorization parameters:
+There are two ways to get an access token:
 
-| Parameter | Description |
-|---------------|-------------------------------- ----------------- |
-| oauth_provider | mcs |
-| oauth_token | qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd |
+* OAuth — generation of a pair of tokens (an access token and a refresh token).
+* Service token — generation of a token that is not limited in time of use.
 
-## oauth_provider
+<warn>
 
-authorization server. In Vision, authorization is available through VK Cloud and OAUTH.MAIL.RU.
+To increase account security, use OAuth tokens. OAuth authorization uses a pair of tokens instead of one, and the access token is only valid for an hour.
 
-- **oauth_provider=mcs** — authorization available to all mcs clients that have Machine Learning -> Vision API enabled.
-- **oauth_provider=mr** — authorization via oauth.mail.ru, available only for internal projects of the mail.ru company, you can learn more about it at [https://o2.mail.ru/docs/](https: //o2.mail.ru/docs/).
+</warn>
 
-## oauth_token
+## {heading(Obtaining OAuth tokens)[id=obtain-oauth-token]}
 
-Token for client authorization on the VK Cloud platform.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
+2. Select the [project](/en/tools-for-using-services/account/concepts/projects).
+3. Go to **AI API** → **Vision API**. A page will open with the information needed to obtain the tokens:
+   - **OAuth endpoint**: address for OAuth token retrieval requests.
+   - **OAuth Client ID**: the account ID to be passed in the `client_id` parameter of the request.
+   - **OAuth Secret key**: the key to be passed in the `client_secret` parameter of the request.
+4. Generate tokens:
 
-### Getting a token in the VK Cloud authorization system
-
-As part of authorization through mcs, 2 types of token are supported:
-
-- service_token;
-- access_token.
-
-## service_token
-
-The token that is the easiest to generate, it has no restrictions on the lifetime and the number of tokens of this type.
-
-The token is generated on the user's page in [management console](https://msk.cloud.vk.com/app/services/machinelearning/vision/).
-
-## access_token
-
-To obtain this token, the [OAuth 2.0](https://ru.wikipedia.org/wiki/OAuth#OAuth_2.0) protocol is used.
-
-To get the first **access_token**, you need to send a request to the authorization server (see below) with the mcs client ID (client_id) and secret key (client_secret) from [management console](https://msk.cloud.vk.com/app/services/machinelearning/vision/).
-
-In response, 2 tokens will be received from the server:
-
-- access token (access_token);
-- a token for updating a “rotten” access token (refresh_token).
-
-The first **access_token** is reusable and short-lived, it is used for authorization in an image recognition request. The second one, **refresh_token**, is used to refresh the access token. **refresh_token** has two properties that are inverse to **access** tokens: they are long-lived, but not reusable.
-
-In total, 25 refresh_tokens are available to the client (/auth/oauth/v1/token with grant_type="client_credentials").
-
-For every refresh_token, the client can get 25 access_tokens ( /auth/oauth/v1/token c" grant_type="refresh_token).
-
-The usage scheme for tokens is as follows:
-
-- The user logs in to the service by passing the identifier and secret key to the server. In response, it receives 2 tokens and a lifetime.
-- Application saves tokens and uses **access token** for subsequent image recognition requests.
-- When the access token lifetime comes to an end, requests for image recognition will stop passing:
-
-```console
-  "status":401,"body":"authorization failed, provider: mcs, token: vMA3Pjyno6tvCdo8MeDQ8xYT(...), reason: CONDITION/UNAUTHORIZED, Access Token invalid"
-```
-
-- You will need to refresh the **access token** with a **refresh token**.
-
-### Getting the first token
-
-We need to send a request to the authorization server with the client ID and secret key:
-
-```http
-curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+   ```console
+   curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
    --header 'Content-Type: application/json' \
    --data '{
-   "client_id":"<OAuth client ID>",
-   "client_secret": "<OAuth secret key>",
+   "client_id":"<CLIENT_OAUTH_IDENTIFIER>",
+   "client_secret": "<OAUTH_SECRET_KEY>",
    "grant_type":"client_credentials"
    }'
-```
+   ```
 
-### Query parameters
+There will be two tokens in the server response:
 
-| Parameter | Description |
-|--------------|---------------------------------- ------------- |
-| client_id | mcs1017666666.ml.vision.f7kk1rmajnhfy |
-| client_secret | 5FYLyJoex37xw45TJShx6dGifnouhdsOIndbsyg78ejnbs |
-| grant_type | client_credentials |
+- `access_token`: an access token for use in API requests to the service. It is reusable, but is valid for one hour. When the lifetime of the token expires, it will be necessary to generate a new one. No more than 25 access tokens can be active in a project at the same time.
+- `refresh_token`: refresh token to generate a new access token. No more than 25 refresh tokens can be active in the project at the same time. Each refresh token can generate any number of access tokens, but no more than 25 simultaneously active tokens.
 
-## client_id
+<warn>
 
-The client ID on the mcs platform is taken from the [management console] page (https://msk.cloud.vk.com/app/services/machinelearning/vision/).
+Save the `refresh_token` token. If it is lost, it cannot be recovered.
 
-## client_secret
+</warn>
 
-The secret key is taken from the [management console] page (https://msk.cloud.vk.com/app/services/machinelearning/vision/).
+### {heading(Updating an access token)[id=obtain-access-token]}
 
-## grant_type
+To generate a new access token using the update token, run the command:
 
-Type of token to generate:
-
-- **"grant_type":"client_credentials"** — generation of access_token and refresh_token by client_secret (only for the first time).
-- **"grant_type":"refresh_token"** — generation of access_token via refresh_token to update access token.
-
-### Response to request
-
-```json
-{
-  "refresh_token": "<REFRESH_TOKEN_VALUE>",
-  "access_token": "<ACCESS_TOKEN_VALUE>",
-  "expired_in": "3600",
-  scope: {
-    "objects": 1,
-    video: 1
-    "persons": 1
-  }
-}
-```
-
-| Parameter | Description |
-|--------------|---------------------------------- -------------------------------------- |
-| access_token | Access token for client authorization in image and video recognition requests |
-| refresh_token | Token to generate access_token when the old one expires |
-| expired_in | Lifetime of the generated access_token in seconds |
-
-### Refresh token
-
-To generate `access_token` via `refresh_token`, send a request to the authorization server:
-
-```http
+```console
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{
-"client_id":"<OAuth client ID>",
-"refresh_token":"<refresh token>",
+"client_id":"<CLIENT_OAUTH_IDENTIFIER>",
+"refresh_token":"<YOUR_REFRESH_TOKEN>",
 "grant_type":"refresh_token"
 }'
 ```
 
-### Response to request
+Here, `client_id` and `refresh_token` are obtained at the [OAuth token generation](../auth-vision#obtain-oauth-token) stage.
 
-```json
-{
-  "refresh_token": "<REFRESH_TOKEN_VALUE>",
-  "access_token": "<ACCESS_TOKEN_VALUE>",
-  "expired_in": "3600",
-  scope: {
-    "objects": 1,
-    video: 1
-    "persons": 1
-  }
-}
-```
+## {heading(Obtaining a service token)[id=obtain-service-token]}
 
-| Parameter | Description |
-|--------------|------------------------------------------------ |
-| access_token |Access token for client authorization in image and video recognition requests |
-| refresh_token |Token to generate an access_token when the old one expires|
-| expired_in |The lifetime of the generated access_token in seconds |
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
+2. Select the [project](/en/tools-for-using-services/account/concepts/projects).
+3. Go to **AI API** → **Vision API**.
+4. Click **Add service token**.
+5. In the window that opens, select the type of tasks for which the token will be used.
+6. Click **Create**. The new token will appear in the list of service tokens.
