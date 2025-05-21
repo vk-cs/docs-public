@@ -1,0 +1,11 @@
+{
+    "title": "Cloud AirFlow",
+    "pageDescription": "Среда обработки потоков для высокопроизводительных, масштабируемых приложений реального времени.",
+    "shortDescription": "Потоковая обработка для высокопроизводительных приложений реального времени",
+    "metaTitle": "Cloud AirFlow",
+    "metaDescription": "Среда обработки потоков для приложений реального времени",
+    "sectionTitle": "Cloud AirFlow",
+    "icon": "",
+    "weight": 70,
+    "isBeta": true
+  }
