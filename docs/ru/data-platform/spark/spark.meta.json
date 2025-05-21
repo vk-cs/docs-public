@@ -1,0 +1,12 @@
+{
+  "title": "Spark",
+  "pageDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных.",
+  "shortDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
+  "metaTitle": "Spark",
+  "metaDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
+  "sectionTitle": "Spark",
+  "icon": "",
+  "weight": 0,
+  "isBeta": true,
+  "uuid": "eeff3f8f-5a5b-4a4b-8bb3-63fd8844263a"
+}
