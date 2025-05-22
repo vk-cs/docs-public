@@ -5,7 +5,6 @@
   "metaTitle": "Cloud Spark",
   "metaDescription": "Сервис Cloud Spark в VK Cloud: решение Spark для обработки больших данных",
   "sectionTitle": "Cloud Spark",
-  "isBeta": true,
   "icon": "",
   "weight": 2,
   "uuid": "2d96870f-547b-41f4-b9f6-9407cc5317c9"

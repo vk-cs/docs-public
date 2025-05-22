@@ -62,5 +62,4 @@
 
 ## 2. Настройте подключение к ClickHouse в Cloud Trino
 
-1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
-1. [Добавьте](/ru/data-processing/trino/service-management/management#add_connect) новое подключение для источника `Clickhouse`. В  параметрах подключения укажите данные экземпляра сервиса ClickHouse, созданного выше.
+[Добавьте](/ru/data-processing/trino/service-management/management#add_connect) новое подключение для источника `Clickhouse` в настройках экземпляра сервиса Cloud Trino, который был создан при развертывании базовой конфигурации. В  параметрах подключения укажите данные экземпляра сервиса ClickHouse, созданного выше.
