@@ -6,7 +6,6 @@
   "metaDescription": "Сервис для упрощения работы с платформой данных в инфраструктуре VK Cloud",
   "sectionTitle": "Data Platform UI Console",
   "icon": "",
-  "weight": 500,
-  "isBeta": true,
+  "weight": 7,
   "uuid": "58eb5560-944a-4887-8699-f1a7dfc08a28"
 }
