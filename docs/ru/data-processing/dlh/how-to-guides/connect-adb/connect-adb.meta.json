@@ -1,0 +1,10 @@
+{
+    "title": "Развертывание Clickhouse",
+    "pageDescription": "Как развернуть экземпляр сервиса Clickhouse в качестве аналитической БД для сервиса Data LakeHouse.",
+    "shortDescription": "Как развернуть экземпляр сервиса Clickhouse в качестве аналитической БД для сервиса Data LakeHouse",
+    "metaTitle": "Развертывание Clickhouse",
+    "metaDescription": "Как развернуть экземпляр сервиса Clickhouse.",
+    "sectionTitle": "Развертывание Clickhouse",
+    "icon": "",
+    "weight": 1
+}
