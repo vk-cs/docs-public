@@ -6,6 +6,5 @@
     "metaDescription": "Подход к хранению и анализу данных с элементами «озер данных» и корпоративного хранилища данных",
     "sectionTitle": "Data LakeHouse",
     "icon": "",
-    "weight": 60,
-    "isBeta": true
+    "weight": 1
   }
