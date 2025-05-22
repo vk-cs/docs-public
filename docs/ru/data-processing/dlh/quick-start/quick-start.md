@@ -16,7 +16,7 @@
 
 Бакет S3-объектного хранилища будет создан автоматически при настройке подключений для экземпляра сервиса Cloud Trino.
 
-## 1. Создайте экземпляр сервиса Iceberg Metastore
+## {heading(1. Создайте экземпляр сервиса Iceberg Metastore)[id=create_iceberg_instance]}
 
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
 1. Нажмите кнопку **Создать экземпляр**.
@@ -65,13 +65,13 @@
 
 Дождитесь окончания процесса создания экземпляра сервиса Iceberg Metastore.
 
-## 2. Создайте инстанс БД PostgreSQL
+## {heading(2. Создайте инстанс БД PostgreSQL)[id=create_postgresql_instance]}
 
 БД PostgreSQL в базовой конфигурации сервиса DLH выступает в качестве внешнего источника данных. Чтобы развернуть инстанс PostgreSQL:
 
 {include(/ru/_includes/_postgresql_create.md)}
 
-## 3. Создайте экземпляр сервиса Cloud Trino
+## {heading(3. Создайте экземпляр сервиса Cloud Trino)[id=create_trino_instance]}
 
 Cloud Trino используется в качестве горизонтально масштабируемого движка SQL-запросов к внешнему источнику (PostgreSQL).
 

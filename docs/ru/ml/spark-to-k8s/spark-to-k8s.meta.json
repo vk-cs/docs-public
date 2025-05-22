@@ -1,10 +1,10 @@
 {
-  "title": "Cloud Spark",
+  "title": "Cloud Spark в k8s",
   "pageDescription": "Решение Spark в Kubernetes для обработки больших данных.",
   "shortDescription": "Кластеры Spark в Kubernetes для обработки больших данных",
-  "metaTitle": "Cloud Spark",
+  "metaTitle": "Cloud Spark в k8s",
   "metaDescription": "Сервис Cloud Spark в VK Cloud: решение Spark для обработки больших данных",
-  "sectionTitle": "Cloud Spark",
+  "sectionTitle": "Cloud Spark в k8s",
   "icon": "",
   "weight": 2,
   "uuid": "2d96870f-547b-41f4-b9f6-9407cc5317c9"
