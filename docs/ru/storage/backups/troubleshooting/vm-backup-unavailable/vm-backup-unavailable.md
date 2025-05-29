@@ -23,11 +23,11 @@
    ```
    {/caption}
 
-  {caption(CentOS)[position=above]}
-  ```console
-  yum install qemu-guest-agent
-  ```
-  {/caption}
+   {caption(CentOS)[position=above]}
+   ```console
+   yum install qemu-guest-agent
+   ```
+   {/caption}
 
 1. Проверьте доступность резервных копий.
 1. Проверьте возможность сброса пароля.
