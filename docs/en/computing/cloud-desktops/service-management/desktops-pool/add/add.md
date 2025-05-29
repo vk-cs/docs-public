@@ -67,11 +67,25 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
     - **Instance type**: select the VM type from the list of types available in the project.
     - **Disk size**: specify the disk size in GB. The value cannot be less than the size of the OS image.
     - **Disk Type**: choose one of the values — `HDD`, `SSD` or `High-IOPS SSD`.
-    - **Image**: select an image to create the VMs from the list of available images. If necessary, click **Upload your image** and download the [previously prepared](/en/computing/cloud-desktops/concepts/desktop-image) and [checked](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) image following the [import instructions](/en/computing/iaas/service-management/images/images-manage#importing_an_image).
+    - **Image**: select an image to create the VMs from the list of available images.
+
+      <details>
+      <summary>List of available images</summary>
+
+      - `Windows Server 2019 Standard (ru)`
+      - `Windows Server 2019 Standard (en)`
+      - `Windows Server 2022 Standard (ru)`
+      - `Windows Server 2022 Standard (en)`
+      - `Red OS 7.3 Стандарт (Cloud Desktop)`
+      - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
+
+      </details>
+
+      If necessary, click **Upload your image** and upload the [previously prepared](/en/computing/cloud-desktops/concepts/desktop-image) and [checked](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) image following the [import instructions](/en/computing/iaas/service-management/images/images-manage#importing_an_image).
 
       <info>
 
-      The pool cannot be created until the image download is complete.
+      The pool cannot be created until the image upload is complete.
 
       </info>
 
