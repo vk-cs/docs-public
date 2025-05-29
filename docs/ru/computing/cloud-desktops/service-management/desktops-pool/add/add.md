@@ -66,7 +66,21 @@
     - **Тип инстанса**: выберите тип ВМ из списка типов, доступных в проекте.
     - **Размер диска**: укажите размер диска в ГБ. Значение не может быть меньше размера образа ОС.
     - **Тип диска**: выберите одно из значений — `HDD`, `SSD` или `High-IOPS SSD`.
-    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/computing/iaas/service-management/images/images-manage#import_obraza).
+    - **Образ**: выберите образ для создания ВМ из списка доступных образов.
+
+      <details>
+      <summary>Список доступных образов</summary>
+
+      - `Windows Server 2019 Standard (ru)`
+      - `Windows Server 2019 Standard (en)`
+      - `Windows Server 2022 Standard (ru)`
+      - `Windows Server 2022 Standard (en)`
+      - `Red OS 7.3 Стандарт (Cloud Desktop)`
+      - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
+
+      </details>
+
+      При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/computing/iaas/service-management/images/images-manage#import_obraza).
 
       <info>
 
