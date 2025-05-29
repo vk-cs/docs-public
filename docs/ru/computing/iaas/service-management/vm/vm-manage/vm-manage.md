@@ -545,7 +545,7 @@ systemctl status qemu-guest-agent
    2. Перейдите в раздел **Объектное хранилище → Бакеты**.
    3. Используйте существующий бакет или [создайте новый](/ru/storage/s3/service-management/buckets/create-bucket).
    4. [Добавьте файл](/ru/storage/s3/service-management/objects/upload-object) с публичным ключом в бакет.
-   5. [Включите доступ](/ru/storage/s3/service-management/objects/manage-object#predostavlenie_dostupa_k_obektu) по ссылке к этому файлу.
+   5. [Включите доступ](/ru/storage/s3/service-management/objects/manage-object#access_via_signed_link) по ссылке к этому файлу.
    6. Скопируйте ссылку на файл с публичным ключом.
 
 3. Загрузите публичный ключ на виртуальную машину.
