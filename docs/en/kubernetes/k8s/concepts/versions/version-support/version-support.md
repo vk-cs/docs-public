@@ -2,6 +2,7 @@ New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.32.1
 - 1.31.4
 - 1.30.5
 - 1.29.7
@@ -26,6 +27,11 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |Official release date
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
+
+|1.32.x
+|12 December 2024
+|28.05.2025
+|28.07.2026
 
 |1.31.x
 |10 December 2024
@@ -115,7 +121,7 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.31.х
+|1.27.x–1.32.х
 
 |Node group scaling settings
 | ![](/en/assets/check.svg "inline")
@@ -183,31 +189,35 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 
 [cols="1,1,2", options="header"]
 |===
-|Version
+|Kubernetes version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
 
-|**Kubernetes 1.31.4**
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](/ru/assets/no.svg "inline")
+
+|1.31.4
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
 |Added the ability to [use and manage](../../../how-to-guides/gpu-operator) GPUs in Kubernetes clusters
 
-|**Kubernetes 1.30.5**
+|1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
 |![](/en/assets/no.svg "inline")
 
-|**Kubernetes 1.29.7**
+|1.29.7
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
 | ![](/en/assets/no.svg "inline")
 
-|**Kubernetes 1.28.9**
+|1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
 | ![](/en/assets/no.svg "inline")
 
-|**Kubernetes 1.27.6**
+|1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
 |[Autoscaling](/en/kubernetes/k8s/concepts/scale#autoscaling) of cluster master nodes is implemented
 
-|**Kubernetes 1.26.5**
+|1.26.5
 |[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
 |Packages are updated:
 
@@ -215,29 +225,29 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 - Helm is updated to version 3.12.2
 - Gatekeeper is updated to version 3.12.0
 
-|**Kubernetes 1.25.1**
+|1.25.1
 |[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
 | ![](/en/assets/no.svg "inline")
 
-|**Kubernetes 1.24.9**
+|1.24.9
 |[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
 |Calico is updated to version 3.25.0
 
-|**Kubernetes 1.23.6**
+|1.23.6
 |[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
 |Added [integration with VK Cloud IAM](/en/kubernetes/k8s/concepts/access-management)
 
-|**Kubernetes 1.22.6**
+|1.22.6
 |[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
 |The cluster nodes use the [AlmaLinux](https://wiki.almalinux.org) operating system version 9.
 
 By default, a limit on the consumed computing resources ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) is set for namespaces
 
-|**Kubernetes 1.21.4**
+|1.21.4
 |[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
 |The cluster nodes use the [AlmaLinux](https://wiki.almalinux.org) operating system version 8
 
-|**Kubernetes 1.20.4**
+|1.20.4
 |[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
 |[Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) of the cluster has been replaced by [CRI-O](https://cri-o.io/).
 

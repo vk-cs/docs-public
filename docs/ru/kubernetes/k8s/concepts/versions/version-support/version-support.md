@@ -2,6 +2,7 @@
 
 В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
 
+- 1.32.1
 - 1.31.4
 - 1.30.5
 - 1.29.7
@@ -26,6 +27,11 @@
 |Официальная дата релиза
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
+
+|1.32.x
+|12 декабря 2024
+|28.05.2025
+|28.07.2026
 
 |1.31.x
 |10 декабря 2024
@@ -115,7 +121,7 @@
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.31.х
+|1.27.x–1.32.х
 
 |Настройки масштабирования групп узлов
 | ![](/ru/assets/check.svg "inline")
@@ -182,31 +188,35 @@
 
 [cols="1,1,2", options="header"]
 |===
-|Версия
+|Версия Kubernetes
 |Изменения в Kubernetes
 |Изменения в сервисе Kubernetes aaS
 
-|**Kubernetes 1.31.4**
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](/ru/assets/no.svg "inline")
+
+|1.31.4
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
 |Добавлена возможность [использовать и управлять GPU](../../../how-to-guides/gpu-operator) в кластерах Kubernetes
 
-|**Kubernetes 1.30.5**
+|1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
 |![](/ru/assets/no.svg "inline")
 
-|**Kubernetes 1.29.7**
+|1.29.7
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
 | ![](/ru/assets/no.svg "inline")
 
-|**Kubernetes 1.28.9**
+|1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
 | ![](/ru/assets/no.svg "inline")
 
-|**Kubernetes 1.27.6**
+|1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
 |Реализовано [автоматическое масштабирование](/ru/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера
 
-|**Kubernetes 1.26.5**
+|1.26.5
 |[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
 |Обновление пакетов:
 
@@ -214,29 +224,29 @@
 - Helm обновлен до 3.12.2.
 - Gatekeeper обновлен до 3.12.0
 
-|**Kubernetes 1.25.1**
+|1.25.1
 |[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
 | ![](/ru/assets/no.svg "inline")
 
-|**Kubernetes 1.24.9**
+|1.24.9
 |[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
 |Calico обновлено до 3.25.0
 
-|**Kubernetes 1.23.6**
+|1.23.6
 |[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
 |Добавлена [интеграция с IAM облака VK Cloud](/ru/kubernetes/k8s/concepts/access-management)
 
-|**Kubernetes 1.22.6**
+|1.22.6
 |[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
 |На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 9.
 
 По умолчанию устанавливается ограничение на потребляемые вычислительные ресурсы ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) для пространств имен (namespace)
 
-|**Kubernetes 1.21.4**
+|1.21.4
 |[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
 |На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 8
 
-|**Kubernetes 1.20.4**
+|1.20.4
 |[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
 |[Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
 
