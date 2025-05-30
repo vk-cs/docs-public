@@ -1,11 +1,11 @@
 {
   "title": "Управление сервисом",
-  "pageDescription": "Работа с партнерской платформой VK Cloud.",
-  "shortDescription": "Как управлять возможностями партнерской платформы VK Cloud",
+  "pageDescription": "Работа с платформой партнера VK Cloud.",
+  "shortDescription": "Работа с платформой партнера VK Cloud",
   "metaTitle": "Управление сервисом",
-  "metaDescription": "Работа с партнерской платформой VK Cloud.",
+  "metaDescription": "Работа с партнерской платформой VK Cloud",
   "sectionTitle": "Управление сервисом",
   "icon": "",
-  "weight": 0,
-  "uuid": "edead5bc-1696-4a72-a55e-db1ffada179b"
+  "weight": 2,
+  "uuid": ""
 }
