@@ -97,8 +97,18 @@
 
 <details>
 
+<summary>На балансе лицевого счета в проекте моего клиента отображается задолженность, хотя клиент оплачивал мне услуги. Почему?</summary>
+
+Платформа VK Cloud не отслеживает платежи ваших клиентов, поэтому эти средства автоматически не зачисляются на клиентский счет. Если вы хотите зачислить средства на баланс проекта клиента, напишите на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru).
+
+В письме укажите сумму пополнения и [PID](/ru/tools-for-using-services/partner-platform/service-management/client-management/client-information#prosmotr_spiska_proektov_klienta) проекта клиента, после чего средства будут зачислены. Пополнять счет можно как на регулярной основе, так и единоразово на любую сумму, которую вы укажете.
+
+</details>
+
+<details>
+
 <summary>Не нашли ответ на свой вопрос?</summary>
 
-Напишите нам на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru)
+Напишите на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru)
 
 </details>
