@@ -6,6 +6,6 @@
   "metaDescription": "Восстановление виртуальной машины в режиме аварийной загрузки",
   "sectionTitle": "Режим аварийной загрузки ВМ",
   "icon": "",
-  "weight": 10,
+  "weight": 11,
   "uuid": "1dc54ecb-febf-429b-bed9-48b3fc50e7cd"
 }
