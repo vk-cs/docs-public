@@ -22,19 +22,24 @@
 1. Пересоздайте ВМ из образа.
 1. Установите на ВМ гостевой агент QEMU (пакет `qemu-guest-agent`):
 
-   {caption(Ubuntu, Debian)[position=above]}
+   <tabs>
+   <tablist>
+   <tab>Ubuntu, Debian</tab>
+   <tab>CentOS</tab>
+   </tablist>
+   <tabpanel>
    ```console
    apt-get install qemu-guest-agent
    ```
-   {/caption}
-
-   {caption(CentOS)[position=above]}
+   </tabpanel>
+   <tabpanel>
    ```console
    yum install qemu-guest-agent
    ```
-   {/caption}
+   </tabpanel>
+   </tabs>
 
-1. Проверьте, что резервное копирование ВМ работает.
+1. Проверьте, что резервное копирование ВМ работает. Если проблема сохраняется, обратитесь в [техническую поддержку](/ru/contacts).
 
 </tabpanel>
 <tabpanel>
@@ -45,8 +50,8 @@
    openstack volume set --image-property hw_qemu_guest_agent="yes" --image-property os_require_quiesce="yes" <ID_ДИСКА>
    ```
 
-1. Чтобы добавить ВМ метаданные, обратитесь в [техническую поддержку](/ru/contacts).
-1. После подтверждения, что метаданные ВМ добавлены, выполните принудительную перезагрузку ВМ:
+1. Обратитесь в [техническую поддержку](/ru/contacts), чтобы специалисты добавили метаданные к самой ВМ. Дождитесь выполнения запроса.
+1. Выполните принудительную перезагрузку ВМ:
 
    1. Остановите ВМ:
 
@@ -62,19 +67,24 @@
 
 1. Установите на ВМ гостевой агент QEMU (пакет `qemu-guest-agent`):
 
-   {caption(Ubuntu, Debian)[position=above]}
+   <tabs>
+   <tablist>
+   <tab>Ubuntu, Debian</tab>
+   <tab>CentOS</tab>
+   </tablist>
+   <tabpanel>
    ```console
    apt-get install qemu-guest-agent
    ```
-   {/caption}
-
-   {caption(CentOS)[position=above]}
+   </tabpanel>
+   <tabpanel>
    ```console
    yum install qemu-guest-agent
    ```
-   {/caption}
+   </tabpanel>
+   </tabs>
 
-1. Проверьте, что резервное копирование ВМ работает.
+1. Проверьте, что резервное копирование ВМ работает. Если проблема сохраняется, обратитесь в [техническую поддержку](/ru/contacts).
 
 </tabpanel>
 </tabs>
