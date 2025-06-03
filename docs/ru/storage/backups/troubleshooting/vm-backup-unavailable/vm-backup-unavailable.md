@@ -30,14 +30,18 @@
    <tab>CentOS</tab>
    </tablist>
    <tabpanel>
+   
    ```console
    apt-get install qemu-guest-agent
    ```
+   
    </tabpanel>
    <tabpanel>
+   
    ```console
    yum install qemu-guest-agent
    ```
+   
    </tabpanel>
    </tabs>
 
@@ -75,11 +79,13 @@
    <tab>CentOS</tab>
    </tablist>
    <tabpanel>
+   
    ```console
    apt-get install qemu-guest-agent
    ```
    </tabpanel>
    <tabpanel>
+   
    ```console
    yum install qemu-guest-agent
    ```
