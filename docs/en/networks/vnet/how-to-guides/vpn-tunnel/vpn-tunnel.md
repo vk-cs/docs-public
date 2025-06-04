@@ -185,7 +185,7 @@ Select **Settings** - `Basic`, and set:
 
 ## 2. Set up a VPN tunnel on the side of the client network
 
-1. Disable IP Source Guard on the VPN gateway port so that it can forward any traffic:
+1. Disable [IP Source Guard](/en/networks/vnet/concepts/traffic-limiting#source_guard) on the VPN gateway port so that it can forward any traffic:
 
     1. Find the port with the private IP address `172.16.0.5` of the virtual machine `client_vpn_gw`. Get the ID of this port.
 

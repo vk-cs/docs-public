@@ -191,9 +191,9 @@
 
 ## 2. Настройте VPN-туннель на стороне клиентской сети
 
-1. Отключите [IP Source Guard](/ru/networks/vnet/service-management/ports#nastroyka_ip_source_guard_dlya_porta) для порта VPN-шлюза, чтобы он мог пересылать любой трафик:
+1. Отключите [IP Source Guard](/ru/networks/vnet/concepts/traffic-limiting#source_guard) для порта VPN-шлюза, чтобы он мог пересылать любой трафик:
 
-   1. Найдите порт с приватным IP-адресом `172.16.0.5` виртуальной машины `client_vpn_gw`. Получите идентификатор этого порта.
+   1. Найдите порт с приватным IP-адресом `172.16.0.5` виртуальной машины `client_vpn_gw`. [Получите](/ru/networks/vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) идентификатор этого порта.
 
    1. Разрешите прохождение трафика с любых адресов через этот порт:
 
