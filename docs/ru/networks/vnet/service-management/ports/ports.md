@@ -321,7 +321,7 @@ openstack port set --help
 ```
 
 ```console
-openstack subnet unset --help
+openstack port unset --help
 ```
 
 </tabpanel>

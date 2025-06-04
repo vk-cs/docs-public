@@ -1,6 +1,6 @@
 ## {heading(IP Source Guard)[id=source_guard]}
 
-For OpenStack ports, you can specify a list of IP addresses to use [IP Source Guard](https://www.juniper.net/documentation/us/en/software/junos/security-services/topics/concept/port-security-ip-source-guard.html).
+For OpenStack ports, you can specify a list of IP addresses to use [IP Source Guard](/en/networks/vnet/service-management/source-guard).
 Only traffic whose source IP address is on this list will pass through the port. This helps protect against IP spoofing attacks.
 
 For example, you can allow:
