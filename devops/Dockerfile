@@ -17,6 +17,4 @@ COPY guides/ guides/
 ENV SENTRY_RELEASE=$IMAGE_TAG
 
 RUN npx preparer prepare \
-    && npx portal install \
-    && npx portal build \
-    && npm cache clean --force
+    && npx portal build
