@@ -36,14 +36,9 @@
 
 ## Доступные периферийные устройства
 
-| Периферийное устройство | ОС Windows                         | ОС Linux                           |
-|-------------------------|------------------------------------|------------------------------------|
-| Печать                  | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
-| Файлы                   | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
-| Микрофон                | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
-| Буфер обмена            | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+Периферийные устройства, доступные пользователю рабочего стола, задаются при [создании](../../service-management/desktops-pool/add) пула рабочих столов.
 
-Доступные периферийные устройства задаются при [добавлении](../../service-management/desktops-pool/add) пула рабочих столов.
+{include(/ru/_includes/_vdi_peripherals.md)}
 
 ## {heading(Сетевая конфигурация сервиса)[id=setup_nets]}
 
