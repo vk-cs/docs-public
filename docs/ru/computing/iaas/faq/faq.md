@@ -20,7 +20,7 @@ VK Cloud обеспечивает виртуальные машины входя
 
 <summary>Как установить новый пароль для ВМ?</summary>
 
-Воспользуйтесь [инструкцией](../service-management/vm/vm-manage#password).
+Воспользуйтесь [инструкцией](../instructions/vm/vm-manage#password).
 
 </details>
 
@@ -86,7 +86,7 @@ VK Cloud обеспечивает виртуальные машины входя
 
 <summary>Как перейти в консоль виртуального сервера?</summary>
 
-VNC-консоль доступна на странице виртуальной машины в разделе **Облачные вычисления → Виртуальные машины**. Подробнее — в статье [Диагностика ВМ](../service-management/vm/vm-console#vnc_konsol).
+VNC-консоль доступна на странице виртуальной машины в разделе **Облачные вычисления → Виртуальные машины**. Подробнее — в статье [Диагностика ВМ](../instructions/vm/vm-console#vnc_konsol).
 
 </details>
 
@@ -108,7 +108,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Можно ли увеличить CPU или RAM?</summary>
 
-Да. Если машина уже создана, [измените ее тип](../service-management/vm/vm-manage#pereimenovanie_i_izmenenie_tipa_vm).
+Да. Если машина уже создана, [измените ее тип](../instructions/vm/vm-manage#pereimenovanie_i_izmenenie_tipa_vm).
 
 </details>
 
@@ -138,7 +138,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Могу ли я задать Floating IP-адрес для ВМ?</summary>
 
-Вы можете [назначить существующий](/ru/networks/vnet/service-management/ip/floating-ip#associate) Floating IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/service-management/ip/floating-ip#add
+Вы можете [назначить существующий](/ru/networks/vnet/instructions/ip/floating-ip#associate) Floating IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/instructions/ip/floating-ip#add
 
 <warn>
 
@@ -228,7 +228,7 @@ VNC-консоль доступна на странице виртуальной
 
 Увеличить диск можно при помощи панели VK Cloud в разделе **Виртуальные машины** или **Диски** раздела **Облачные вычисления**.
 
-Полная информация доступна в статье [Управление дисками](../service-management/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
+Полная информация доступна в статье [Управление дисками](../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
 
 </details>
 
@@ -252,7 +252,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как передать диск ВМ другому проекту?</summary>
 
-Воспользуйтесь [инструкцией](../service-management/volumes#peremeshchenie_diskov_mezhdu_proektami).
+Воспользуйтесь [инструкцией](../instructions/volumes#peremeshchenie_diskov_mezhdu_proektami).
 
 </details>
 
@@ -268,7 +268,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как поменять корневой (root) диск ВМ?</summary>
 
-Замена корневого диска возможна, только если в проекте VK Cloud уже был создан другой диск. Это может быть как пустой диск, так и загрузочный, содержащий операционную систему. Инструкция приведена в статье о [замене root-диска](../service-management/volumes#zamena_osnovnogo_root_diska).
+Замена корневого диска возможна, только если в проекте VK Cloud уже был создан другой диск. Это может быть как пустой диск, так и загрузочный, содержащий операционную систему. Инструкция приведена в статье о [замене root-диска](../instructions/volumes#zamena_osnovnogo_root_diska).
 
 </details>
 
@@ -276,7 +276,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Можно ли создать снимок диска?</summary>
 
-Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../service-management/volumes#snimki_diska). Созданный снимок будет храниться до момента удаления самого диска.
+Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../instructions/volumes#snimki_diska). Созданный снимок будет храниться до момента удаления самого диска.
 
 </details>
 
@@ -284,7 +284,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как восстановить диск из снимка?</summary>
 
-Воспользуйтесь [инструкцией](../service-management/volumes#snimki_diska).
+Воспользуйтесь [инструкцией](../instructions/volumes#snimki_diska).
 
 </details>
 
@@ -359,7 +359,7 @@ VNC-консоль доступна на странице виртуальной
 
 Да, такая возможность есть. При этом хранилище будет восстановлено в отдельную ВМ, это потребует дополнительных квот.
 
-Подробнее о создании снимков в статье [Управление файловыми хранилищами](../service-management/fs-manage#creating_a_snapshot).
+Подробнее о создании снимков в статье [Управление файловыми хранилищами](../instructions/fs-manage#creating_a_snapshot).
 
 </details>
 
@@ -420,7 +420,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Можно ли настроить одновременный доступ с разных ВМ к файловому хранилищу?</summary>
 
-Да, можно, подробнее в статье [Управление файловыми хранилищами](../service-management/fs-manage#podklyuchenie_faylovogo_hranilishcha).
+Да, можно, подробнее в статье [Управление файловыми хранилищами](../instructions/fs-manage#podklyuchenie_faylovogo_hranilishcha).
 
 </details>
 

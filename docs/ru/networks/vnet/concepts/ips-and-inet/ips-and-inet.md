@@ -208,5 +208,5 @@ Anycast IP-адрес может быть связан со следующими
 Чтобы использовать технологию для создания кластера Kubernetes:
 
 1. Обратитесь в [техническую поддержку](/ru/contacts), чтобы подключить Shadow port в свой проект. 
-1. [Подключите](../../service-management/net#sozdanie_seti) опцию **Доступ к сервисам VK Cloud** для сети без доступа в интернет.
-1. [Разметите](/ru/kubernetes/k8s/service-management/create-cluster) кластер Kubernetes в этой сети.
+1. [Подключите](../../instructions/net#sozdanie_seti) опцию **Доступ к сервисам VK Cloud** для сети без доступа в интернет.
+1. [Разметите](/ru/kubernetes/k8s/instructions/create-cluster) кластер Kubernetes в этой сети.

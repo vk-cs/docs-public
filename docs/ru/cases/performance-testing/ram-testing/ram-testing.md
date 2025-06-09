@@ -8,7 +8,7 @@
 
 ## 1. Выполните тестирование оперативной памяти
 
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ.
+1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ.
 1. Установите на ВМ утилиту sysbench:
 
     ```console
@@ -40,5 +40,5 @@
 
 Созданные ресурсы тарифицируются. Если они вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) тестовую ВМ.
-1. Удалите [подсеть](/ru/networks/vnet/service-management/net#udalenie_podseti) и [сеть](/ru/networks/vnet/service-management/net#udalenie_seti), в которой была размещена ВМ.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) тестовую ВМ.
+1. Удалите [подсеть](/ru/networks/vnet/instructions/net#udalenie_podseti) и [сеть](/ru/networks/vnet/instructions/net#udalenie_seti), в которой была размещена ВМ.

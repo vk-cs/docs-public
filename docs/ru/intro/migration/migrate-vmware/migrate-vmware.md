@@ -139,7 +139,7 @@
 
 <tabpanel>
 
-Используйте импортированный образ для [создания ВМ Linux](/ru/computing/iaas/service-management/vm/vm-create):
+Используйте импортированный образ для [создания ВМ Linux](/ru/computing/iaas/instructions/vm/vm-create):
 
 - при создании ВМ в личном кабинете выберите образ из списка;
 - при создании через OpenStack CLI укажите ID образа в соответствующей команде.
@@ -148,21 +148,21 @@
 
 <tabpanel>
 
-1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/computing/iaas/service-management/vm/vm-create).
+1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/computing/iaas/instructions/vm/vm-create).
 2. Добавьте драйвер VirtIO HBA в загрузку Windows.
 
-   1. [Создайте диск](/ru/computing/iaas/service-management/volumes#create_disk) минимального размера и [подключите](/ru/computing/iaas/service-management/volumes#mount_disk) его к ВМ.
-   2. [Запустите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
+   1. [Создайте диск](/ru/computing/iaas/instructions/volumes#create_disk) минимального размера и [подключите](/ru/computing/iaas/instructions/volumes#mount_disk) его к ВМ.
+   2. [Запустите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
    3. Запустите установщик VirtIO в режиме `repair`.
-   4. [Остановите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
-3. [Создайте образ](/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza) из загрузочного диска ВМ.
+   4. [Остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
+3. [Создайте образ](/ru/computing/iaas/instructions/images/images-manage#sozdanie_obraza) из загрузочного диска ВМ.
 4. Измените тип шины диска нового образа:
 
    ```console
    openstack image set --property hw_disk_bus=virtio <ID нового образа>
    ```
 
-5. [Создайте целевую ВМ Windows](/ru/computing/iaas/service-management/vm/vm-create) из нового образа.
+5. [Создайте целевую ВМ Windows](/ru/computing/iaas/instructions/vm/vm-create) из нового образа.
 6. Удалите промежуточную виртуальную машину, созданную на шаге 1, а также импортированный образ.
 
 </tabpanel>

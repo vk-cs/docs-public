@@ -15,7 +15,7 @@
 </tablist>
   <tabpanel>
 
-  1. [Установите аддон](../../../k8s/service-management/addons/advanced-installation/install-advanced-registry) Docker Registry, если этого еще не сделано.
+  1. [Установите аддон](../../../k8s/instructions/addons/advanced-installation/install-advanced-registry) Docker Registry, если этого еще не сделано.
   1. Скачайте нужный образ на локальный компьютер. Для этого выполните команду:
 
       ```console
@@ -27,7 +27,7 @@
   </tabpanel>
   <tabpanel>
 
-  Используйте зеркало в конфигурации [CRI-O](https://cri-o.io/) на рабочих узлах кластера. Для этого примените следующий манифест в кластере [с помощью kubectl](../kubectl) или в [личном кабинете](../../service-management/manage-resources):
+  Используйте зеркало в конфигурации [CRI-O](https://cri-o.io/) на рабочих узлах кластера. Для этого примените следующий манифест в кластере [с помощью kubectl](../kubectl) или в [личном кабинете](../../instructions/manage-resources):
 
   ```yaml
 

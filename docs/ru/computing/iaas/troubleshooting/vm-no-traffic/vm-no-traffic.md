@@ -10,7 +10,7 @@
    openstack port list --server <ID_ВМ>
    ```
 
-1. [Настройте IP Source Guard](/ru/networks/vnet/service-management/ports#nastroyka_ip_source_guard_dlya_porta) для портов, которые должны пропускать трафик из своих сетей.
+1. [Настройте IP Source Guard](/ru/networks/vnet/instructions/ports#nastroyka_ip_source_guard_dlya_porta) для портов, которые должны пропускать трафик из своих сетей.
       
    Если нужно разрешить весь трафик, проходящий через порт, укажите в команде IP-адрес подсети порта в формате CIDR. 
 

@@ -11,12 +11,12 @@
      - имя и пароль пользователя LDAP с правами заведения ВМ в домен.
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. Создайте [сеть](/ru/networks/vnet/service-management/net#sozdanie_seti) и [подсеть](/ru/networks/vnet/service-management/net#sozdanie_podseti):
+1. Создайте [сеть](/ru/networks/vnet/instructions/net#sozdanie_seti) и [подсеть](/ru/networks/vnet/instructions/net#sozdanie_podseti):
 
      - Включите опцию **Доступ в интернет**.
      - Если на образе установлено ПО для поддержки службы каталогов AD:
 
-         - В настройках сети выберите существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora) новый.
+         - В настройках сети выберите существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/instructions/router#dobavlenie_marshrutizatora) новый.
          - В настройках подсети отключите опцию **Приватный DNS** и добавьте в поле **DNS-серверы** IP-адрес DNS-сервера, который вы получили у вашего системного администратора.
 
      - Остальные параметры сети и подсети выберите на свое усмотрение.
@@ -28,7 +28,7 @@
 1. Проверьте, что образ виден в мастере создания ВМ:
 
      1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-     1. Загрузите подготовленный образ в VK Cloud, следуя [инструкции по импорту](/ru/computing/iaas/service-management/images/images-manage#import_obraza).
+     1. Загрузите подготовленный образ в VK Cloud, следуя [инструкции по импорту](/ru/computing/iaas/instructions/images/images-manage#import_obraza).
      1. Перейдите в раздел **Облачные вычисления** → **Вычислительные машины** и нажмите кнопку **Добавить**.
      1. Убедитесь, что в списке **Операционная система** отображается загруженный вами образ, и выберите его.
 
@@ -70,8 +70,8 @@
      1. На вкладке **Общая информация** свойств ВМ нажмите кнопку **Установить пароль** и задайте пароль администратора.
      1. Подключитесь к ВМ:
 
-         - Для [подключения](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win) к ВМ Windows используйте протокол RDP.
-         - Для [подключения](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ Astra Linux используйте протокол SSH.
+         - Для [подключения](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win) к ВМ Windows используйте протокол RDP.
+         - Для [подключения](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ Astra Linux используйте протокол SSH.
 
      1. Убедитесь, что подключение прошло успешно.
 
@@ -84,8 +84,8 @@
          ```
 
      1. Завершите текущий сеанс подключения к ВМ.
-     1. [Добавьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) ВМ в группу безопасности `rdp`.
-     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
+     1. [Добавьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) ВМ в группу безопасности `rdp`.
+     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
      1. Убедитесь, что подключение прошло успешно и открылся графический интерфейс пользователя.
 
 1. (Для ВМ Astra Linux) Проверьте возможность подключения к ВМ с помощью LDAP.
@@ -108,10 +108,10 @@
            - `<ldap_id or domain_name>` — IP-адрес или FQDN вашего сервера LDAP;
            - `<username>` и `<password>` — имя и пароль пользователя LDAP с правами заведения ВМ в домен.
 
-     1. [Перезагрузите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ВМ.
-     1. [Перейдите](/ru/computing/iaas/service-management/vm/vm-console#vnc_konsol) в консоль ВМ.
+     1. [Перезагрузите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ.
+     1. [Перейдите](/ru/computing/iaas/instructions/vm/vm-console#vnc_konsol) в консоль ВМ.
      1. Авторизуйтесь с помощью логина и пароля пользователя LDAP и убедитесь, что вход прошел успешно.
-     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
+     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
      1. Авторизуйтесь с помощью логина и пароля пользователя LDAP и убедитесь, что вход прошел успешно.
 
 ## 3. Проверьте работоспособность установленного вами ПО и периферийных устройств
@@ -123,5 +123,5 @@
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ее, чтобы воспользоваться ею позже;
-- [удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ее навсегда.
+- [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ее, чтобы воспользоваться ею позже;
+- [удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ее навсегда.

@@ -20,7 +20,7 @@
 
 ## {heading(ВМ с Docker Registry)[id=vm_docker_registry]}
 
-В [Docker Registry](/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry) хранится используемый по умолчанию Docker-образ контейнера, который включает библиотеки, зависимости и настройки для развертывания кластера Cloud Spark и запуска на нем пользовательских приложений.
+В [Docker Registry](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry) хранится используемый по умолчанию Docker-образ контейнера, который включает библиотеки, зависимости и настройки для развертывания кластера Cloud Spark и запуска на нем пользовательских приложений.
 
 При необходимости пользователь может загрузить в Docker Registry собственные Docker-образы и затем использовать их в сервисе.
 

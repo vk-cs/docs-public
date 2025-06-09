@@ -18,11 +18,11 @@
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
-| Nova              | https://infra.mail.ru:8774/v2.1                     | Управление [виртуальными машинами](/ru/computing/iaas/service-management/vm) |
-| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Управление [дисками](/ru/computing/iaas/service-management/volumes) и их снимками |
-| Glance            | https://infra.mail.ru:9292                          | Управление [образами ВМ](/ru/computing/iaas/service-management/images) |
+| Nova              | https://infra.mail.ru:8774/v2.1                     | Управление [виртуальными машинами](/ru/computing/iaas/instructions/vm) |
+| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Управление [дисками](/ru/computing/iaas/instructions/volumes) и их снимками |
+| Glance            | https://infra.mail.ru:9292                          | Управление [образами ВМ](/ru/computing/iaas/instructions/images) |
 | Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Управление [резервным копированием](/ru/tools-for-using-services/api/api-spec/backup-api) ВМ и инстансов баз данных |
-| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Управление [файловыми хранилищами](/ru/computing/iaas/service-management/fs-manage) |
+| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Управление [файловыми хранилищами](/ru/computing/iaas/instructions/fs-manage) |
 
 <info>
 
@@ -37,14 +37,14 @@
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
 | Magnum            | https://infra.mail.ru:9511/v1                       | Управление контейнерами [Cloud Containers](/ru/kubernetes/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Управление [аддонами](/ru/kubernetes/k8s/service-management/addons) сервиса Cloud Containers |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Управление [аддонами](/ru/kubernetes/k8s/instructions/addons) сервиса Cloud Containers |
 
 ### Cloud Networks
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
 | Neutron           | https://infra.mail.ru:9696                          | Управление всеми объектами [сетевой инфраструктуры](/ru/networks/vnet), кроме публичных DNS-зон и балансировщиков нагрузки |
-| Octavia           | https://public.infra.mail.ru:9876                   | Управление [балансировщиками нагрузки](/ru/networks/balancing/service-management/manage-lb) |
+| Octavia           | https://public.infra.mail.ru:9876                   | Управление [балансировщиками нагрузки](/ru/networks/balancing/instructions/manage-lb) |
 | Publicdns         | https://mcs.mail.ru/public-dns                      | Управление публичными [DNS-зонами](/ru/networks/dns/publicdns) |
 
 ### Cloud Big Data
@@ -93,7 +93,7 @@
 
 Адреса некоторых эндпоинтов содержат переменную `<project_id>`. При создании запроса замените эту переменную на Project ID текущего проекта.
 
-Project ID не совпадает с [идентификатором проекта](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) в личном кабинете. Это еще один идентификатор, который используется в конфигурационных файлах:
+Project ID не совпадает с [идентификатором проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) в личном кабинете. Это еще один идентификатор, который используется в конфигурационных файлах:
 
 - В `openrc.sh`, как значение переменной `OS_PROJECT_ID`. Этот файл необходим для работы при помощи дополнительных инструментов, таких OpenStack CLI или cURL.
 - В `vkcs_provider.tf`, как значение параметра `project_id`. Этот файл необходим для работы через Terraform.

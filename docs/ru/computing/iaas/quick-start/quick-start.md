@@ -157,5 +157,5 @@ Are you sure you want to continue connecting (yes/no)?
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](../service-management/vm/vm-manage#start_stop_restart_vm) ее, чтобы воспользоваться ею позже;
-- [удалите](../service-management/vm/vm-manage#delete_vm) ее навсегда.
+- [остановите](../instructions/vm/vm-manage#start_stop_restart_vm) ее, чтобы воспользоваться ею позже;
+- [удалите](../instructions/vm/vm-manage#delete_vm) ее навсегда.

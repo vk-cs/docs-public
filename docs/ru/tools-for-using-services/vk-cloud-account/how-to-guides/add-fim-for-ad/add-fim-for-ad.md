@@ -92,6 +92,6 @@
 
 <warn>
 
-Active Directory автоматически не синхронизируется с VK Cloud. После блокировки пользователя в Active Directory [удалите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#udalenie_uchastnika) его из проектов в личном кабинете VK Cloud.
+Active Directory автоматически не синхронизируется с VK Cloud. После блокировки пользователя в Active Directory [удалите](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#udalenie_uchastnika) его из проектов в личном кабинете VK Cloud.
 
 </warn>

@@ -46,14 +46,14 @@ VK Cloud позволяет настроить разные [варианты п
 
    </info>
 
-1. Выберите или [создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) виртуальную сеть в вашем проекте в VK Cloud. Сеть не должна быть подключена к маршрутизатору.
+1. Выберите или [создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) виртуальную сеть в вашем проекте в VK Cloud. Сеть не должна быть подключена к маршрутизатору.
 
    Запишите следующую информацию:
 
    - имя и IP-адрес подсети;
    - имя сети, в которой находится подсеть.
 
-1. [Создайте виртуальную машину](/ru/computing/iaas/service-management/vm/vm-create) в выбранной сети.
+1. [Создайте виртуальную машину](/ru/computing/iaas/instructions/vm/vm-create) в выбранной сети.
 
    Запишите IP-адрес ВМ.
 1. Обратитесь в [техническую поддержку](/ru/contacts), чтобы подключить в ваш проект сеть [Cloud Direct Connect](../../../../directconnect), если этого еще не сделано.
@@ -100,14 +100,14 @@ VK Cloud позволяет настроить разные [варианты п
 
 ## 2. Добавьте продвинутый маршрутизатор
 
-[Создайте](/ru/networks/vnet/service-management/advanced-router/manage-advanced-routers#add) продвинутый маршрутизатор со следующими параметрами:
+[Создайте](/ru/networks/vnet/instructions/advanced-router/manage-advanced-routers#add) продвинутый маршрутизатор со следующими параметрами:
 
 - **Название**: в этом примере `Advanced router`;
 - **SNAT**: опция выключена.
 
 ## 3. Настройте сетевые интерфейсы продвинутого маршрутизатора
 
-1. [Добавьте](ru/networks/vnet/service-management/advanced-router/manage-interfaces#add) интерфейс продвинутого маршрутизатора, направленный в виртуальную сеть:
+1. [Добавьте](ru/networks/vnet/instructions/advanced-router/manage-interfaces#add) интерфейс продвинутого маршрутизатора, направленный в виртуальную сеть:
 
    - **Название**: `vkcloud-net-iface`;
    - **Подсеть**: `vkcloud-subnet`;
@@ -334,6 +334,6 @@ IP-адрес должен отвечать на пинг.
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальную машину.
-1. [Удалите](/ru/networks/vnet/service-management/router#udalenie_marshrutizatora) маршрутизаторы.
-1. Удалите [подсеть](/ru/networks/vnet/service-management/net#udalenie_podseti) и [сеть](/ru/networks/vnet/service-management/net#udalenie_seti), в которой была размещена ВМ.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) виртуальную машину.
+1. [Удалите](/ru/networks/vnet/instructions/router#udalenie_marshrutizatora) маршрутизаторы.
+1. Удалите [подсеть](/ru/networks/vnet/instructions/net#udalenie_podseti) и [сеть](/ru/networks/vnet/instructions/net#udalenie_seti), в которой была размещена ВМ.

@@ -2,7 +2,7 @@
 
 Перед локальным тестированием убедитесь, что OpenStack PID внесен в список поставщиков (подробнее — в разделе {linkto(../ibservice_upload_prepare/#ibservice_upload_prepare)[text=%text]}).
 
-При локальном тестировании используйте подсети существующих сетей или создайте новую сеть и используйте ее подсеть (подробнее — в разделе [Сети и подсети](/ru/networks/vnet/service-management/net)).
+При локальном тестировании используйте подсети существующих сетей или создайте новую сеть и используйте ее подсеть (подробнее — в разделе [Сети и подсети](/ru/networks/vnet/instructions/net)).
 
 <err>
 
@@ -18,7 +18,7 @@
    1. Распакуйте архив и в переменной среды `Path` укажите путь к распакованному файлу.
    1. Выполните команду `terraform -help`, чтобы убедиться в успешной установке Terraform.
 
-1. В ЛК облачной платформы включите двухфакторную аутентификацию (2FA) и доступ по API (подробнее — в разделе [Управление 2FA](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa)).
+1. В ЛК облачной платформы включите двухфакторную аутентификацию (2FA) и доступ по API (подробнее — в разделе [Управление 2FA](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa)).
 1. Отредактируйте файл с конфигурацией CLI для Terraform: для Windows — `terraform.rc`, для других ОС — `.terraformrc` (подробнее — [в официальной документации Terraform](https://developer.hashicorp.com/terraform/cli/config/config-file)):
 
    1. Чтобы Terraform одновременно работал с зеркалами и локальными провайдерами, добавьте следующую информацию:

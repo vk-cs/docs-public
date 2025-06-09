@@ -16,7 +16,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 ## Подготовительные шаги
 
-1. Создайте [аккаунт](../../service-management/access-management/access-keys) и [бакет](../../service-management/buckets/create-bucket) `uc_bucket`.
+1. Создайте [аккаунт](../../instructions/access-management/access-keys) и [бакет](../../instructions/buckets/create-bucket) `uc_bucket`.
 1. Убедитесь, что у вас [установлен и настроен](../../connect/s3-cli) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
 
    ```txt
@@ -31,9 +31,9 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
        addressing_style = path
    ```
 
-1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
+1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
-1. [Создайте](/ru/computing/iaas/service-management/volumes#create_disk) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/service-management/volumes#mount_disk) его к ВМ.
+1. [Создайте](/ru/computing/iaas/instructions/volumes#create_disk) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/instructions/volumes#mount_disk) его к ВМ.
 
 ## 1. Загрузите образ из локальной машины в объектное хранилище
 
@@ -118,7 +118,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 ## 2. Загрузите образ на диск VK Cloud
 
-1. [Подключитесь к ВМ](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) с помощью SSH.
+1. [Подключитесь к ВМ](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) с помощью SSH.
 
 1. Проверьте наличие подключенного диска с помощью команды `lsblk`.
 
@@ -140,16 +140,16 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. [Пометьте](/ru/computing/iaas/service-management/volumes#izmenenie_atributa_zagruzochnyy) диск с помещенным на него образом ОС как загрузочный.
-1. [Замените основной диск](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) ВМ на диск с помещенным на него образом ОС.
-1. [Запустите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
+1. [Пометьте](/ru/computing/iaas/instructions/volumes#izmenenie_atributa_zagruzochnyy) диск с помещенным на него образом ОС как загрузочный.
+1. [Замените основной диск](/ru/computing/iaas/instructions/volumes#zamena_osnovnogo_root_diska) ВМ на диск с помещенным на него образом ОС.
+1. [Запустите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
 
-Вы также можете [отключить](/ru/computing/iaas/service-management/volumes#mount_disk) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену основного диска](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) другой ВМ.  
+Вы также можете [отключить](/ru/computing/iaas/instructions/volumes#mount_disk) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену основного диска](/ru/computing/iaas/instructions/volumes#zamena_osnovnogo_root_diska) другой ВМ.  
 
 ## Удалите неиспользуемые ресурсы
 
 Созданные ресурсы тарифицируются и потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ВМ.
-- [Удалите](../../service-management/buckets/manage-bucket#udalenie_baketa) бакет `uc_bucket`.
-- [Удалите](/ru/computing/iaas/service-management/volumes#udalenie_diska) диск.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ.
+- [Удалите](../../instructions/buckets/manage-bucket#udalenie_baketa) бакет `uc_bucket`.
+- [Удалите](/ru/computing/iaas/instructions/volumes#udalenie_diska) диск.

@@ -1,5 +1,5 @@
 Далее приведены примеры создания разных кластеров Kubernetes с помощью Terraform.
-Подробно процедура создания кластера описана в разделе [Создание кластера с помощью Terraform](/ru/kubernetes/k8s/service-management/create-cluster/create-terraform).
+Подробно процедура создания кластера описана в разделе [Создание кластера с помощью Terraform](/ru/kubernetes/k8s/instructions/create-cluster/create-terraform).
 
 ## Перед созданием кластера
 
@@ -7,7 +7,7 @@
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/service-management/helpers/terraform-howto) в сервисе Cloud Containers.
+1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/instructions/helpers/terraform-howto) в сервисе Cloud Containers.
 
 1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 

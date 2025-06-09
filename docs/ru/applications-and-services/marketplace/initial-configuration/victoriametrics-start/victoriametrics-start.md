@@ -7,9 +7,9 @@
 Чтобы развернуть сервис VictoriaMetrics в проекте:
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещены один или несколько серверов с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../service-management/pr-instance-add) сервис в проекте, выбрав подходящий тарифный план (**Single**, **Cluster Mini**, **Cluster Maxi**):
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть, если она не была создана ранее.
+1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещены один или несколько серверов с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. [Разверните](../../instructions/pr-instance-add) сервис в проекте, выбрав подходящий тарифный план (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
    <details>
     <summary>Подробнее о конфигурациях для тарифных планов</summary>
@@ -153,7 +153,7 @@
 
    <info>
 
-   Если вы не сохранили данные для доступа, [сгенерируйте](../../service-management/pr-instance-manage#update_access) новые.
+   Если вы не сохранили данные для доступа, [сгенерируйте](../../instructions/pr-instance-manage#update_access) новые.
 
    </info>
 

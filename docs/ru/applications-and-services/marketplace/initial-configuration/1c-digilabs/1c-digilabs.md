@@ -140,7 +140,7 @@
 1. Настройте VPN-соединения на виртуальных машинах в VK Cloud:
 
    1. В [личном кабинете VK Cloud]( https://msk.cloud.vk.com/app) перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
-   1. [Настройте](/ru/computing/iaas/service-management/vm/vm-manage#password) пароль для виртуальных машин в VK Cloud, имена которых начинаются с `alkir-` и `app-`.
+   1. [Настройте](/ru/computing/iaas/instructions/vm/vm-manage#password) пароль для виртуальных машин в VK Cloud, имена которых начинаются с `alkir-` и `app-`.
    1. На вкладке **Консоль** для каждой из этих виртуальных машин добавьте статический маршрут к своей сети через развернутый сервис Облачный маршрутизатор с функциями VPN с помощью команды:
 
       ```console
@@ -151,7 +151,7 @@
       - `192.168.245.0/24` — сеть пользователя;
       - `10.254.254.18` — адрес локального маршрутизатора.
 
-   1. [Назначьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) для каждой из вышеуказанных ВМ группу безопасности `default` и группу со словом `vpn` в названии. При необходимости [добавьте](/ru/networks/vnet/service-management/secgroups#sozdanie_gruppy_bezopasnosti) эти группы безопасности в разделе **Настройки Firewall**.
+   1. [Назначьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) для каждой из вышеуказанных ВМ группу безопасности `default` и группу со словом `vpn` в названии. При необходимости [добавьте](/ru/networks/vnet/instructions/secgroups#sozdanie_gruppy_bezopasnosti) эти группы безопасности в разделе **Настройки Firewall**.
 
 1. Добавьте на локальных машинах в файл `hosts` (либо в локальный DNS) записи, задающие соответствие имен виртуальных машин VK Cloud и их IP-адресов. Без этого невозможно подключиться к базе 1С, так как по умолчанию система 1С использует имена серверов в обращениях к сервису.
 
@@ -467,5 +467,5 @@
 
 Работающая инфраструктура сервиса тарифицируется. Если она вам больше не нужна:
 
-- [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса Размещение высоконагруженных 1С в облаке.
-- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ, созданную для подключения к облачной информационной базе 1С.
+- [Удалите](/ru/applications-and-services/marketplace/instructions/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса Размещение высоконагруженных 1С в облаке.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ, созданную для подключения к облачной информационной базе 1С.

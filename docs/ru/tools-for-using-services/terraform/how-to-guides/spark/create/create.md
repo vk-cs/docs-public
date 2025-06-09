@@ -78,7 +78,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
 
   - `network_id = vkcs_networking_network.default.id`: кластер будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: кластер будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
   </details>
 
@@ -114,13 +114,13 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
     <summary>Примеры</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`, который будет указан в описании сетевой инфраструктуры кластера.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
   </details>
 
 - `spark_configuration` — перечень свойств (properties), отвечающих за [конфигурацию Spark](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
 
-- `environment_variables` — перечень [переменных среды окружения для Spark](/ru/ml/spark-to-k8s/service-management/create).
+- `environment_variables` — перечень [переменных среды окружения для Spark](/ru/ml/spark-to-k8s/instructions/create).
 
 ## 2. Создайте файл с описанием инстанса K8S Docker Registry
 
@@ -164,7 +164,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
   </details>
 
@@ -174,7 +174,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
     <summary>Примеры</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`, который будет указан в описании сетевой инфраструктуры кластера.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
   </details>
 

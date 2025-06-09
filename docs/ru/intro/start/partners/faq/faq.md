@@ -101,7 +101,7 @@
 
 Платформа VK Cloud не отслеживает платежи ваших клиентов, поэтому эти средства автоматически не зачисляются на клиентский счет. Если вы хотите зачислить средства на баланс проекта клиента, напишите на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru).
 
-В письме укажите сумму пополнения и [PID](/ru/tools-for-using-services/partner-platform/service-management/client-management/client-information#prosmotr_spiska_proektov_klienta) проекта клиента, после чего средства будут зачислены. Пополнять счет можно как на регулярной основе, так и единоразово на любую сумму, которую вы укажете.
+В письме укажите сумму пополнения и [PID](/ru/tools-for-using-services/partner-platform/instructions/client-management/client-information#prosmotr_spiska_proektov_klienta) проекта клиента, после чего средства будут зачислены. Пополнять счет можно как на регулярной основе, так и единоразово на любую сумму, которую вы укажете.
 
 </details>
 

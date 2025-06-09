@@ -5,8 +5,8 @@
 ## Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
-1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create):
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
+1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create):
 
    - имя: `Ubuntu_22_04_Bitrix`;
    - операционная система: Ubuntu 22.04;
@@ -14,7 +14,7 @@
    - назначьте публичный IP-адрес. В примере будет использоваться `87.239.105.191`;
    - группы безопасности: `default`, `ssh+www`.
 
-1. [Создайте инстанс БД](/ru/dbs/dbaas/service-management/create/create-single-replica):
+1. [Создайте инстанс БД](/ru/dbs/dbaas/instructions/create/create-single-replica):
 
    - имя: `MySQL-1111`;
    - СУБД: MySQL 8.0;
@@ -50,7 +50,7 @@
 
 ## 1. Установите Bitrix на ВМ
 
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu_22_04_Bitrix`.
+1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu_22_04_Bitrix`.
 1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
    ```console
@@ -134,7 +134,7 @@
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `Ubuntu_22_04_Bitrix`.
-- [Удалите](/ru/dbs/dbaas/service-management/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-1111`.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес `87.239.105.191`.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ `Ubuntu_22_04_Bitrix`.
+- [Удалите](/ru/dbs/dbaas/instructions/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-1111`.
+- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес `87.239.105.191`.
 - [Удалите](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey) созданную DNS-запись `site-bitrix.example.vk.cloud`.

@@ -23,7 +23,7 @@
 Предполагается, что в проекте уже существует виртуальная машина (ВМ), данные которой вы планируете защитить при помощи сервиса Кибер Бэкап Облачный.
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для учетной записи, если она еще не настроена.
+1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для учетной записи, если она еще не настроена.
 1. Убедитесь, что ВМ, которая будет зарегистрирована в сервисе:
 
    - Отвечает его [системным требованиям](https://docs.cyberprotect.ru/ru-RU/CyberBackupCloud/21.06/user/#supported-operating-systems-and-environments.html).
@@ -33,9 +33,9 @@
       - Имеет внешний IP-адрес.
       - Ей назначена [группа безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups) `ssh`.
 
-         Если группа не назначена, [назначьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
+         Если группа не назначена, [назначьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
 
-      - У вас есть приватный SSH-ключ из [ключевой пары](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix#3_proverte_nalichie_klyuchevoy_pary), которая используется для доступа к ВМ. Имя ключевой пары отображается на странице ВМ в разделе **Облачные вычисления**.
+      - У вас есть приватный SSH-ключ из [ключевой пары](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix#3_proverte_nalichie_klyuchevoy_pary), которая используется для доступа к ВМ. Имя ключевой пары отображается на странице ВМ в разделе **Облачные вычисления**.
 
    В примере в этой статье подключение описано для ВМ с Ubuntu 22.04 и именем `Ubuntu-CBC`.
 
@@ -45,7 +45,7 @@
 
    </info>
 
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ.
+1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ.
 1. В вашей домашней директории разместите произвольный непустой файл. Например, выполните в консоли:
 
     ```console
@@ -73,7 +73,7 @@
 
 1. Перейдите по ссылке из письма. В окне регистрации задайте пароль для вашего аккаунта.
 
-   Ваш логин будет совпадать с [идентификатором (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) проекта в VK Cloud, в котором вы подключили сервис.
+   Ваш логин будет совпадать с [идентификатором (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) проекта в VK Cloud, в котором вы подключили сервис.
 
 1. Подтвердите согласие с юридическими условиями использования сервиса: выберите все соглашения в списке и нажмите кнопку **Принять**.
 
@@ -102,7 +102,7 @@
 
          После того, как окно будет закрыто, посмотреть значение маркера будет невозможно.
 
-   1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ, загрузите на нее дистрибутив агента сервиса для Linux.
+   1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ, загрузите на нее дистрибутив агента сервиса для Linux.
    1. Установите на ВМ пакет `rpm`:
 
       ```console
@@ -169,7 +169,7 @@
 
 ## 4. Удалите данные с ВМ
 
-[Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC` и удалите из вашей домашней директории файл `cp_help.txt`.
+[Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC` и удалите из вашей домашней директории файл `cp_help.txt`.
 
 ## 5. Восстановите ВМ из резервной копии
 
@@ -195,6 +195,6 @@
 
 ## 6. Проверьте работоспособность восстановленной ВМ
 
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC`.
+1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC`.
 1. Проверьте наличие файла `cp_help.txt` в домашней директории.
-1. [Выполните](/ru/computing/iaas/service-management/vm/vm-manage) произвольные операции с ВМ.
+1. [Выполните](/ru/computing/iaas/instructions/vm/vm-manage) произвольные операции с ВМ.

@@ -30,7 +30,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 ## Подготовительные шаги
 
-1. [Разверните](../../service-management/create/create-single-replica) в VK Cloud инстанс БД PostgreSQL:
+1. [Разверните](../../instructions/create/create-single-replica) в VK Cloud инстанс БД PostgreSQL:
 
    - версия СУБД: 13;
    - название инстанса БД: `PostgreSQL-7313`;
@@ -164,5 +164,5 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 Развернутый инстанс БД [тарифицируется](../../tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-- [Удалите](../../service-management/manage-instance/postgresql#uvelichenie_razmera_diska_s_dannymi) инстанс БД.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, назначенный инстансу БД.
+- [Удалите](../../instructions/manage-instance/postgresql#uvelichenie_razmera_diska_s_dannymi) инстанс БД.
+- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, назначенный инстансу БД.

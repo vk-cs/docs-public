@@ -1,4 +1,4 @@
-События, которые [сервис управления дисками и их снимками](/ru/computing/iaas/service-management/volumes) передает в Cloud Audit.
+События, которые [сервис управления дисками и их снимками](/ru/computing/iaas/instructions/volumes) передает в Cloud Audit.
 
 ## События компонента Cinder v2
 

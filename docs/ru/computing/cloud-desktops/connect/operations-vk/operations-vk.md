@@ -21,6 +21,6 @@
 
 ## {heading(Использование периферийных устройств)[id=base_configuration_peripheral]}
 
-На виртуальном рабочем столе могут быть доступны периферийные устройства. Какие именно — указывается при [создании](../../service-management/desktops-pool/add#configure_peripherals) пула рабочих столов.
+На виртуальном рабочем столе могут быть доступны периферийные устройства. Какие именно — указывается при [создании](../../instructions/desktops-pool/add#configure_peripherals) пула рабочих столов.
 
 {include(/ru/_includes/_vdi_peripherals.md)}

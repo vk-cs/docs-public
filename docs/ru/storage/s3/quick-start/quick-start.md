@@ -135,5 +135,5 @@
 
 ## Удалите неиспользуемые ресурсы
 
-1. Загруженные в бакет объекты [тарифицируются](../tariffication). Если они вам больше не нужны, [удалите их](../service-management/objects/manage-object).
-1. Если бакет вам больше не нужен, [удалите его](../service-management/buckets/manage-bucket#udalenie_baketa).
+1. Загруженные в бакет объекты [тарифицируются](../tariffication). Если они вам больше не нужны, [удалите их](../instructions/objects/manage-object).
+1. Если бакет вам больше не нужен, [удалите его](../instructions/buckets/manage-bucket#udalenie_baketa).

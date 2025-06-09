@@ -2,7 +2,7 @@
 
 ## Подготовительные шаги
 
-1. [Создайте кластер](../../service-management/create-cluster) Kubernetes самой актуальной версии.
+1. [Создайте кластер](../../instructions/create-cluster) Kubernetes самой актуальной версии.
 
    Разместите в зоне доступности `GZ1` одну или несколько групп worker-узлов.
 
@@ -218,7 +218,7 @@ velero help
 
    Команда восстановит данные в тот же кластер, в котором было выполнено резервное копирование. Если нужно восстановить данные в новый кластер:
 
-   1. [Создайте кластер](../../service-management/create-cluster).
+   1. [Создайте кластер](../../instructions/create-cluster).
    1. [Установите Velero](../../install-tools/velero) в кластер.
    1. Выполните приведенную выше команду.
 
@@ -280,9 +280,9 @@ velero help
 
 1. Если резервные копии вам больше не нужны, удалите их из бакета, который использовался Velero.
 
-   При необходимости также [удалите сам бакет](/ru/storage/s3/service-management/buckets/manage-bucket#udalenie_baketa).
+   При необходимости также [удалите сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#udalenie_baketa).
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.

@@ -6,10 +6,10 @@
    1. [Выполните](../balancers/) миграцию балансировщиков.
    1. [Обновите](../dns/) A-записи публичного DNS.
 
-1. [Создайте](/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage) новое файловое хранилище, аналогичное исходному.
-1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ с минимальной конфигурацией `STD2-1-2` (1 vCPU и 2 ГБ оперативной памяти).
-1. [Подключите](/ru/computing/iaas/service-management/vm/vm-add-net) ВМ к сетям исходного (SDN Neutron) и нового (SDN Sprut) хранилищ.
-1. [Подключитесь](/ru/computing/iaas/service-management/fs-manage#podklyuchenie_faylovogo_hranilishcha) через созданную ВМ к обоим хранилищам (исходному и новому).
+1. [Создайте](/ru/computing/iaas/instructions/fs-manage#creating_a_file_storage) новое файловое хранилище, аналогичное исходному.
+1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ с минимальной конфигурацией `STD2-1-2` (1 vCPU и 2 ГБ оперативной памяти).
+1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net) ВМ к сетям исходного (SDN Neutron) и нового (SDN Sprut) хранилищ.
+1. [Подключитесь](/ru/computing/iaas/instructions/fs-manage#podklyuchenie_faylovogo_hranilishcha) через созданную ВМ к обоим хранилищам (исходному и новому).
 1. Запустите на ВМ утилиту `rsync` для синхронизации файлов и папок между исходным и новым хранилищем.
 
     ```console
@@ -21,4 +21,4 @@
     * `<адрес_приемника>` — IP-адрес нового хранилища.
 
 1. Убедитесь, что все данные успешно перенесены в новое файловое хранилище.
-1. [Удалите](/ru/kubernetes/k8s/service-management/manage-cluster#delete_cluster) исходное файловое хранилище, если оно вам больше не нужно.
+1. [Удалите](/ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) исходное файловое хранилище, если оно вам больше не нужно.

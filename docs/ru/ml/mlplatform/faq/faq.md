@@ -19,7 +19,7 @@
 1. Перейдите в раздел **Облачные вычисления** -> **Виртуальные машины**.
 2. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для инстанса ВМ с JupyterHub и выберите пункт **Перезагрузить**.
 
-Подробнее об управлении виртуальными машинами — в статье [«Управление ВМ»](/ru/computing/iaas/service-management/vm/vm-manage).
+Подробнее об управлении виртуальными машинами — в статье [«Управление ВМ»](/ru/computing/iaas/instructions/vm/vm-manage).
 
 </details>
 
@@ -29,6 +29,6 @@
 
 После установки библиотек или при зависании Jupyter Kernel необходимо перезапустить. Для перезапуска Kernel в интерфейсе JupyterHub выберите пункт меню «Kernel» -> «Restart Kernel».
 
-Вы можете узнать больше о подключении к интерфейсу JupyterHub в статье [«Подключение к JupyterHub»](../jupyterhub/service-management/connect).
+Вы можете узнать больше о подключении к интерфейсу JupyterHub в статье [«Подключение к JupyterHub»](../jupyterhub/instructions/connect).
 
 </details>

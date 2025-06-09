@@ -27,7 +27,7 @@ VK Cloud поддерживает множества очередей (multiqueu
 
 Вариант включает множества очередей на уровне образа и будет работать для всех ВМ, созданных на базе этого образа после выполнения инструкции.
 
-1. [Создайте](../../service-management/images/images-manage) образ ВМ.
+1. [Создайте](../../instructions/images/images-manage) образ ВМ.
 1. Получите список доступных образов:
 
     ```console
@@ -46,16 +46,16 @@ VK Cloud поддерживает множества очередей (multiqueu
 
 Вариант применяется, когда ВМ уже была создана на момент включения множества очередей.
 
-1. [Получите ID виртуальной машины](../../service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny) через CLI или личный кабинет VK Cloud.
+1. [Получите ID виртуальной машины](../../instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny) через CLI или личный кабинет VK Cloud.
 1. Обратитесь в [техническую поддержку](/ru/contacts) с запросом на подключение множества очередей и указанием ID целевой виртуальной машины.
-1. После успешной обработки запроса из технической поддержки [выполните принудительную перезагрузку](../../service-management/vm/vm-manage#prinuditelnyy_perezapusk_vm) ВМ.
+1. После успешной обработки запроса из технической поддержки [выполните принудительную перезагрузку](../../instructions/vm/vm-manage#prinuditelnyy_perezapusk_vm) ВМ.
 
 </tabpanel>
 </tabs>
 
 ## 2. Проверьте подключение множества включения
 
-1. [Создайте](../../service-management/vm/vm-create) ВМ, в которой больше одного ЦП, и [подключитесь](../../service-management/vm/vm-connect) к ней.
+1. [Создайте](../../instructions/vm/vm-create) ВМ, в которой больше одного ЦП, и [подключитесь](../../instructions/vm/vm-connect) к ней.
 1. Посмотрите все сетевые интерфейсы:
 
     ```console
@@ -112,7 +112,7 @@ VK Cloud поддерживает множества очередей (multiqueu
 
 </info>
 
-1. [Создайте](../../service-management/vm/vm-create) ВМ и [подключитесь](../../service-management/vm/vm-connect) к ней.
+1. [Создайте](../../instructions/vm/vm-create) ВМ и [подключитесь](../../instructions/vm/vm-connect) к ней.
 1. Выполните команду:
 
     ```console
