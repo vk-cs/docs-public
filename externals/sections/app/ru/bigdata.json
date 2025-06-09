@@ -15,7 +15,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/data-processing/bigdata/service-management/delete"
+                    "link": "/ru/data-processing/bigdata/instructions/delete"
                 }
             ]
         },
@@ -23,7 +23,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/data-processing/bigdata/service-management/scale"
+                    "link": "/ru/data-processing/bigdata/instructions/scale"
                 },
                 {
                     "link": "/ru/data-processing/bigdata/connect"

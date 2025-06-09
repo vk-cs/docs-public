@@ -27,16 +27,16 @@
                     "link": "/ru/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-create"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-create"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-connect"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-connect"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-manage"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-manage"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-add-net"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-add-net"
                 }
             ]
         },
@@ -44,7 +44,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-console"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-console"
                 },
                 {
                     "link": "/ru/computing/iaas/troubleshooting"

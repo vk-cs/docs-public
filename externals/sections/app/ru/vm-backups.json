@@ -27,10 +27,10 @@
                     "link": "/ru/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/create-backup-plan"
+                    "link": "/ru/storage/backups/instructions/create-backup-plan"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/create-backup-copy"
+                    "link": "/ru/storage/backups/instructions/create-backup-copy"
                 }
             ]
         },
@@ -38,7 +38,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-console"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-console"
                 },
                 {
                     "link": "/ru/computing/iaas/troubleshooting"
