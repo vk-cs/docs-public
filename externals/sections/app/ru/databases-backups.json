@@ -17,16 +17,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/storage/backups/service-management/create-backup-plan"
+                    "link": "/ru/storage/backups/instructions/create-backup-plan"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/create-backup-copy"
+                    "link": "/ru/storage/backups/instructions/create-backup-copy"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/restore-from-backup"
+                    "link": "/ru/storage/backups/instructions/restore-from-backup"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management/point-in-time-recovery-pitr"
+                    "link": "/ru/storage/backups/instructions/point-in-time-recovery-pitr"
                 }
             ]
         },

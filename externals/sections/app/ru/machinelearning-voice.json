@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/ml/cloud-voice/service-management/get-voice-token"
+                    "link": "/ru/ml/cloud-voice/instructions/get-voice-token"
                 },
                 {
-                    "link": "/ru/ml/cloud-voice/service-management/speech-recognition"
+                    "link": "/ru/ml/cloud-voice/instructions/speech-recognition"
                 },
                 {
-                    "link": "/ru/ml/cloud-voice/service-management/text-to-speech"
+                    "link": "/ru/ml/cloud-voice/instructions/text-to-speech"
                 },
                 {
                     "link": "/ru/ml/cloud-voice/tariffication"
