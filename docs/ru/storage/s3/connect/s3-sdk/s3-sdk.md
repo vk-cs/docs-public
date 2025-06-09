@@ -12,7 +12,7 @@
    - [SDK для Go](https://docs.aws.amazon.com/sdk-for-go).
    - [Mobile SDK для iOS и Android](https://docs.amplify.aws).
 
-1. Создайте [аккаунт](../../service-management/account-management) и [бакет](../../service-management/buckets/create-bucket), если этого не было сделано ранее. Сохраните реквизиты для подключения:
+1. Создайте [аккаунт](../../instructions/account-management) и [бакет](../../instructions/buckets/create-bucket), если этого не было сделано ранее. Сохраните реквизиты для подключения:
 
    <tabs>
    <tablist>

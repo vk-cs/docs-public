@@ -27,7 +27,7 @@ Marketplace — подсистема VK Cloud, которая предостав
 
 <summary>Как подключить новый сервис?</summary>
 
-[Воспользуйтесь инструкцией](../service-management/pr-instance-add) по подключению инстанса сервиса.
+[Воспользуйтесь инструкцией](../instructions/pr-instance-add) по подключению инстанса сервиса.
 
 </details>
 
@@ -37,7 +37,7 @@ Marketplace — подсистема VK Cloud, которая предостав
 
 1. Проверьте, достаточно ли в проекте квот для разворачивания сервиса. Освободите ресурсы или увеличьте квоты через [техническую поддержку](/ru/contacts).
 1. При [предоплатной системе оплаты](../tariffication): проверьте, достаточно ли средств на счете проекта.
-1. [Обновите](../service-management/pr-instance-manage#peresozdanie_ili_povtornoe_obnovlenie_instansa_servisa) инстанс сервиса.
+1. [Обновите](../instructions/pr-instance-manage#peresozdanie_ili_povtornoe_obnovlenie_instansa_servisa) инстанс сервиса.
 
 </details>
 

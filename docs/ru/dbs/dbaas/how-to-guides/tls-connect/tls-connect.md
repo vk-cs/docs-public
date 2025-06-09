@@ -11,7 +11,7 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](/ru/dbs/dbaas/service-management/create) инстанс БД Postgresql, если это не было сделано ранее.
+1. [Создайте](/ru/dbs/dbaas/instructions/create) инстанс БД Postgresql, если это не было сделано ранее.
 1. Убедитесь, что инстанс баз данных запущен.
 
 ## 1. Настройте защищенное соединение на сервере PostgreSQL
@@ -46,4 +46,4 @@
 
 ## Удалите неиспользуемые ресурсы
 
-Если инстанс базы данных вам больше не нужен, [удалите](/ru/dbs/dbaas/service-management/manage-instance/postgresql#udalenie_instansa_bd_ili_ego_hostov) его.
+Если инстанс базы данных вам больше не нужен, [удалите](/ru/dbs/dbaas/instructions/manage-instance/postgresql#udalenie_instansa_bd_ili_ego_hostov) его.

@@ -4,7 +4,7 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](../../service-management/create-cluster) кластер Cloud Containers самой актуальной версии.
+1. [Создайте](../../instructions/create-cluster) кластер Cloud Containers самой актуальной версии.
 
    При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
 
@@ -61,7 +61,7 @@
 
    Для каждой из команд должен быть выведен ответ `yes`.
 
-   Если нет прав на создание любого из этих ресурсов (ответ `no`), [скорректируйте роль пользователя VK Cloud](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#izmenenie_roli_uchastnika), от имени которого выполняется подключение к кластеру.
+   Если нет прав на создание любого из этих ресурсов (ответ `no`), [скорректируйте роль пользователя VK Cloud](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#izmenenie_roli_uchastnika), от имени которого выполняется подключение к кластеру.
 
    Подробнее о ролевой модели и доступных ролях читайте в разделе [Управление доступом](../../concepts/access-management).
 
@@ -598,5 +598,5 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
 1. Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.

@@ -391,7 +391,7 @@
 |Удален интерфейс продвинутого маршрутизатора
 
 |`create-dc-bgp`
-|Создан [BGP-ресурс](/ru/networks/vnet/service-management/advanced-router/manage-bgp#dobavlenie_bgp_marshrutizatora) на продвинутом маршрутизаторе
+|Создан [BGP-ресурс](/ru/networks/vnet/instructions/advanced-router/manage-bgp#dobavlenie_bgp_marshrutizatora) на продвинутом маршрутизаторе
 
 |`update-dc-bgp`
 |Обновлен BGP-ресурс на продвинутом маршрутизаторе

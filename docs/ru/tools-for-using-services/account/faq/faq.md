@@ -40,7 +40,7 @@
 
 <summary>Как добавить дополнительного участника в проект?</summary>
 
-Процедура описана в статье [Управление доступами](../service-management/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika). При добавлении укажите роль, ориентируясь на [матрицу ролей](../concepts/rolesandpermissions).
+Процедура описана в статье [Управление доступами](../instructions/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika). При добавлении укажите роль, ориентируясь на [матрицу ролей](../concepts/rolesandpermissions).
 
 </details>
 
@@ -74,7 +74,7 @@
 
 <summary>Как сменить владельца учетной записи VK Cloud?</summary>
 
-Воспользуйтесь инструкцией из статьи [Управление проектом](../service-management/project-settings/manage#smena_vladelca_proekta).
+Воспользуйтесь инструкцией из статьи [Управление проектом](../instructions/project-settings/manage#smena_vladelca_proekta).
 
 </details>
 

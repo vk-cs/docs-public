@@ -372,7 +372,7 @@ output "instance_fip" {
 
 ## 6. Проверьте работоспособность примера
 
-[Подключитесь по SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `compute-instance`.
+[Подключитесь по SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `compute-instance`.
 
 Для подключения используйте:
 

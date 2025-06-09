@@ -10,7 +10,7 @@
 
 1. Убедитесь, что размер загружаемого файла не превышает 500 ГБ. Если необходимо загрузить образ большего размера, воспользуйтесь [инструкцией](/ru/storage/s3/how-to-guides/load-large-image).
 
-1. Попробуйте [загрузить образ](/ru/computing/iaas/service-management/images/images-manage#import_obraza) с использованием OpenStack CLI. 
+1. Попробуйте [загрузить образ](/ru/computing/iaas/instructions/images/images-manage#import_obraza) с использованием OpenStack CLI. 
 
 1. Если проблема сохраняется, [обратитесь в техническую поддержку](/ru/contacts). 
 

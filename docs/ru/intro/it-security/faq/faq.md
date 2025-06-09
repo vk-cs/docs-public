@@ -143,7 +143,7 @@ VK Cloud отвечает за безопасность облачной инф�
 
 <summary>Что делать в случае компрометации аккаунта?</summary>
 
-[Измените](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo#smena_parolya) пароль от аккаунта. Если не удалось этого сделать, обратитесь в [техническую поддержку](/ru/contacts).
+[Измените](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo#smena_parolya) пароль от аккаунта. Если не удалось этого сделать, обратитесь в [техническую поддержку](/ru/contacts).
 
 </details>
 
@@ -153,7 +153,7 @@ VK Cloud отвечает за безопасность облачной инф�
 
 <summary>Как выполнить настройку сетевых групп безопасности?</summary>
 
-Подробная информация размещена в разделе [Управление правилами файервола](/ru/networks/vnet/service-management/secgroups).
+Подробная информация размещена в разделе [Управление правилами файервола](/ru/networks/vnet/instructions/secgroups).
 
 </details>
 
@@ -206,7 +206,7 @@ VK Cloud отвечает за безопасность облачной инф�
 
 Для пользователей VK Cloud доступны сервисы мониторинга событий:
 
-- [Cloud Audit](/ru/tools-for-using-services/account/service-management/actionslogs),
+- [Cloud Audit](/ru/tools-for-using-services/account/instructions/actionslogs),
 - [Cloud Logging](/ru/monitoring-services/logging),
 - [Cloud Monitoring](/ru/monitoring-services/monitoring).
 

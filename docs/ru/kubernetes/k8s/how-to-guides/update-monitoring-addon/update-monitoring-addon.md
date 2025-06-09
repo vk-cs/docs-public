@@ -16,11 +16,11 @@
 
    В противном случае создайте тестовый кластер, в котором будет выполняться обновление аддона:
 
-   1. [Создайте](../../service-management/create-cluster) кластер Cloud Containers версии `1.26.5`.
+   1. [Создайте](../../instructions/create-cluster) кластер Cloud Containers версии `1.26.5`.
 
       При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
 
-   1. [Установите в кластер](../../service-management/addons/advanced-installation/install-advanced-monitoring) аддон Kube Prometheus Stack версии `36.2.0`.
+   1. [Установите в кластер](../../instructions/addons/advanced-installation/install-advanced-monitoring) аддон Kube Prometheus Stack версии `36.2.0`.
 
       Выполните **быструю установку** аддона (без редактирования кода настройки аддона).
 
@@ -67,7 +67,7 @@
 
 ## 1. Получите информацию, необходимую для обновления аддона
 
-1. [Перейдите в режим редактирования кода настройки аддона](../../service-management/addons/manage-addons).
+1. [Перейдите в режим редактирования кода настройки аддона](../../instructions/addons/manage-addons).
 
    Не изменяйте код настройки аддона.
 
@@ -507,8 +507,8 @@
 
 ## 3. Обновите аддон на новую версию
 
-1. [Удалите текущую версию аддона](../../service-management/addons/manage-addons#udalenie_addona), пользуясь интерфейсами VK Cloud.
-1. [Установите в кластер](../../service-management/addons/advanced-installation/install-advanced-monitoring) аддон Kube Prometheus Stack версии `54.2.2`.
+1. [Удалите текущую версию аддона](../../instructions/addons/manage-addons#udalenie_addona), пользуясь интерфейсами VK Cloud.
+1. [Установите в кластер](../../instructions/addons/advanced-installation/install-advanced-monitoring) аддон Kube Prometheus Stack версии `54.2.2`.
 
    Выполните **стандартную установку** следующим образом:
 
@@ -616,7 +616,7 @@
 
 ## 4. Проверьте работоспособность аддона после обновления
 
-[Получите доступ к веб-интерфейсу Grafana](../../monitoring#ispolzovanie_grafana). Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, [сбросьте его](../../service-management/addons/advanced-installation/install-advanced-monitoring#sbros_parolya_dlya_grafana).
+[Получите доступ к веб-интерфейсу Grafana](../../monitoring#ispolzovanie_grafana). Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, [сбросьте его](../../instructions/addons/advanced-installation/install-advanced-monitoring#sbros_parolya_dlya_grafana).
 
 Успешное подключение к Grafana свидетельствует об успешном обновлении аддона.
 
@@ -624,5 +624,5 @@
 
 Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если вы создали кластер в тестовых целях и он вам больше не нужен:
 
-- [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+- [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+- [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.

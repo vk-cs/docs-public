@@ -26,9 +26,9 @@
 1. В анкете заявки укажите:
     - (Опционально) **Тема завки**: например `Подключение флейвора Cloud GPU`.
     - **Регион**: выберите регион из выпадающего списка.
-    - **PID проекта**: укажите [уникальный идентификатор проекта (PID)](https://cloud.vk.com/docs/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta).
+    - **PID проекта**: укажите [уникальный идентификатор проекта (PID)](https://cloud.vk.com/docs/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
     - **Параметры конфигурации**: укажите нужное число ядер процессора (CPU) и объем оперативной памяти. Доступны только стандартные параметры конфигурации, рассчитанные исходя из объема физических ресурсов GPU NVIDIA Tesla. [Цена](https://cloud.vk.com/cloud-gpu/#price) зависит от модели Cloud GPU (A100/V100/A30/L40S), а не от размера шаблона конфигурации.
-    - (Опционально) Отметьте необходимость увеличения [квоты](https://cloud.vk.com/docs/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta) на проекте вместе с добавлением шаблона конфигурации. 
+    - (Опционально) Отметьте необходимость увеличения [квоты](https://cloud.vk.com/docs/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta) на проекте вместе с добавлением шаблона конфигурации. 
     - **Описание**: иные параметры конфигурации. Ознакомьтесь с доступными параметрами конфигурации на сайте VK Cloud в разделе [расчета стоимости подключения](https://cloud.vk.com/cloud-gpu/#price).
 
         <details>

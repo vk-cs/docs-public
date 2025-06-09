@@ -10,8 +10,8 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) виртуальную сеть, например, `monitoring-net`.
-1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ для сервера Prometheus:
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) виртуальную сеть, например, `monitoring-net`.
+1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ для сервера Prometheus:
 
    - имя: `Centos_8_5_Prometheus`;
    - операционная система: CentOS 8.4;
@@ -21,7 +21,7 @@
 
    Внутренний IP-адрес созданного инстанса: `10.0.3.7`.
 
-1. [Создайте инстанс БД](/ru/dbs/dbaas/service-management/create/create-single-replica):
+1. [Создайте инстанс БД](/ru/dbs/dbaas/instructions/create/create-single-replica):
 
    - имя: `Redis-5`;
    - СУБД: Redis 5;
@@ -34,8 +34,8 @@
 
 ## 2. Установите и настройте Prometheus
 
-1. [Установите](/ru/dbs/dbaas/service-management/managing-extensions#ustanovka_rasshireniya) расширение **Node exporter** для инстанса БД `Redis-5`. При установке укажите параметр `listen_port` = `9100`.
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
+1. [Установите](/ru/dbs/dbaas/instructions/managing-extensions#ustanovka_rasshireniya) расширение **Node exporter** для инстанса БД `Redis-5`. При установке укажите параметр `listen_port` = `9100`.
+1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
 1. Скачайте Prometheus и распакуйте скачанный архив:
 
    ```console
@@ -154,7 +154,7 @@
    - Сформируйте [поисковый запрос](https://prometheus.io/docs/prometheus/2.45/querying/examples/), чтобы просмотреть данные в табличном виде.
    - Откройте [шаблонные наборы графиков](https://prometheus.io/docs/visualization/consoles/) по адресу `http://87.239.239.239:9090/consoles/index.html.example`.
 
-1. (Опционально) [Отвяжите](/ru/networks/vnet/service-management/ip/floating-ip#disassociate) Floating IP-адрес от ВМ `Centos_8_5_Prometheus`.
+1. (Опционально) [Отвяжите](/ru/networks/vnet/instructions/ip/floating-ip#disassociate) Floating IP-адрес от ВМ `Centos_8_5_Prometheus`.
 
 ## 3. Настройте визуализацию данных в Grafana
 
@@ -191,8 +191,8 @@
 
 Созданные ресурсы тарифицируются и расходуют квоты. Если они вам больше не нужны:
 
-1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) развернутые виртуальные машины.
-1. [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) виртуальную машину с Grafana.
-1. [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
-1. [Удалите](/ru/networks/vnet/service-management/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
-1. [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть `monitoring-net`.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) развернутые виртуальные машины.
+1. [Удалите](/ru/applications-and-services/marketplace/instructions/pr-instance-manage#udalenie_instansa_servisa) виртуальную машину с Grafana.
+1. [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
+1. [Удалите](/ru/networks/vnet/instructions/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
+1. [Удалите](/ru/networks/vnet/instructions/net#udalenie_seti) сеть `monitoring-net`.

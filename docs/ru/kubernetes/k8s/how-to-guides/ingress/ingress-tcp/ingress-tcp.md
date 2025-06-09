@@ -10,13 +10,13 @@ Ingress-контроллер можно развернуть [в связке с
 
 ## 1. Подготовительные шаги
 
-1. [Создайте](../../../service-management/create-cluster) кластер Kubernetes самой актуальной версии.
+1. [Создайте](../../../instructions/create-cluster) кластер Kubernetes самой актуальной версии.
 
    При создании кластера выберите опцию **Назначить внешний IP**.
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../../service-management/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) **не установлен** в кластере. В демонстрационных целях Ingress-контроллер будет установлен вручную.
+1. [Убедитесь](../../../instructions/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) **не установлен** в кластере. В демонстрационных целях Ingress-контроллер будет установлен вручную.
 
 1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
 
@@ -297,5 +297,5 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.

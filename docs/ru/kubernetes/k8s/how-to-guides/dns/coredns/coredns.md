@@ -4,7 +4,7 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](../../../service-management/create-cluster) кластер Kubernetes самой актуальной версии.
+1. [Создайте](../../../instructions/create-cluster) кластер Kubernetes самой актуальной версии.
 
    Параметры кластера выберите на свое усмотрение.
 
@@ -90,5 +90,5 @@
 
 Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.

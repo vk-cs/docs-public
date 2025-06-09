@@ -7,7 +7,7 @@
 
 **Поддерживаемые приложения**: SAP, Microsoft Active Directory, PostgreSQL, Oracle, NGINX, Red Hat Jboss Enterprise, IBM WebSphere, Apache, VMware vSphere, MySQL, MongoDB, Hadoop, Spark.
 
-**Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Полный список доступных для миграции ОС и их версий приведен на странице [создания ВМ](/ru/computing/iaas/service-management/vm/vm-create#create_vm) в вашем личном кабинете.
+**Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Полный список доступных для миграции ОС и их версий приведен на странице [создания ВМ](/ru/computing/iaas/instructions/vm/vm-create#create_vm) в вашем личном кабинете.
 
 </details>
 
@@ -18,8 +18,8 @@
 ## 1. Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
-1. [Подключите](/ru/applications-and-services/marketplace/service-management/pr-instance-add) сервис Hystax Acura Migration.
+1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
+1. [Подключите](/ru/applications-and-services/marketplace/instructions/pr-instance-add) сервис Hystax Acura Migration.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://migration.mcs-cloud.ru (личный кабинет Hystax Acura).
 
@@ -160,13 +160,13 @@
     - `<ИМЯ_ВМ>` — имя, которое будет присвоено виртуальной машине в VK Cloud.
     - `flavor` — имя или ID [шаблона конфигурации](/ru/computing/iaas/concepts/vm/flavor) для ВМ. Уточните название с помощью команды `openstack flavor list`.
     - `availability_zone` — имя [зоны доступности](/ru/intro/start/concepts/architecture#az), в которой будет развернута ВМ.
-    - `security_groups` — список имен или ID [групп безопасности](/ru/networks/vnet/service-management/secgroups) для `Ubuntu-MR`.
+    - `security_groups` — список имен или ID [групп безопасности](/ru/networks/vnet/instructions/secgroups) для `Ubuntu-MR`.
     - `id` — внутренний ID виртуальной машины, сгенерированный Hystax на предыдущем шаге.
     - `custom_image_metadata` — пользовательские метаданные для ВМ.
       - `os_type` — тип гостевой ОС.
-      - `os_distro` — имя дистрибутива ОС. Уточните имя, следуя инструкции в разделе [Заполнение os_distro и os_version](/ru/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version).
-      - `os_version` — версия ОС. Уточните версию, следуя инструкции в разделе [Заполнение os_distro и os_version](/ru/computing/iaas/service-management/images/image-metadata#find_os_distro_and_os_version).
-      - `os_admin_user` — имя пользователя ОС с правами администратора. Пароль может быть установлен через [личный кабинет](/ru/computing/iaas/service-management/vm/vm-manage#password).
+      - `os_distro` — имя дистрибутива ОС. Уточните имя, следуя инструкции в разделе [Заполнение os_distro и os_version](/ru/computing/iaas/instructions/images/image-metadata#find_os_distro_and_os_version).
+      - `os_version` — версия ОС. Уточните версию, следуя инструкции в разделе [Заполнение os_distro и os_version](/ru/computing/iaas/instructions/images/image-metadata#find_os_distro_and_os_version).
+      - `os_admin_user` — имя пользователя ОС с правами администратора. Пароль может быть установлен через [личный кабинет](/ru/computing/iaas/instructions/vm/vm-manage#password).
       - `os_require_quiesce: "yes"` — включение поддержки резервного копирования в VK Cloud.
       - `hw_qemu_guest_agent: "yes"` — включение поддержки гостевого агента QEMU.
     - `ports` — список сетевых интерфейсов ВМ.
@@ -174,7 +174,7 @@
     - `subnet_id` — ID подсети, в которой будет развернута ВМ.
     - `cidr` — адрес подсети в формате CIDR.
 
-   Подробное описание параметров — в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе [Метатеги образов](/ru/computing/iaas/service-management/images/image-metadata).
+   Подробное описание параметров — в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе [Метатеги образов](/ru/computing/iaas/instructions/images/image-metadata).
 
    </details>
 
@@ -199,7 +199,7 @@
 
 ## 5. Проверьте работоспособность добавленной ВМ
 
-Найдите добавленную ВМ в VK Cloud (`<PID проекта>_cloud_agent`), [выполните](/ru/computing/iaas/service-management/vm/vm-manage) произвольные операции над ней.
+Найдите добавленную ВМ в VK Cloud (`<PID проекта>_cloud_agent`), [выполните](/ru/computing/iaas/instructions/vm/vm-manage) произвольные операции над ней.
 
 ## Удалите неиспользуемые ресурсы
 
@@ -207,4 +207,4 @@
 
 - Удалите ВМ `Ubuntu-MR`, добавленную в [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
 - Удалите (detach) резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, если он был создан во время миграции.
+- [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, если он был создан во время миграции.

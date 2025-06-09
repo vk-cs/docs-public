@@ -51,7 +51,7 @@
 
             - `ru-msk` — регион Москва;
             - `kz-ast` — регион Казахстан.
-        - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — [идентификатор ключа и секретный ключ](/ru/storage/s3/service-management/access-management/access-keys) доступа к объектному хранилищу.
+        - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — [идентификатор ключа и секретный ключ](/ru/storage/s3/instructions/access-management/access-keys) доступа к объектному хранилищу.
         - `<ДОМЕН>` — URL для доступа к хранилищу, который зависит от региона аккаунта. Возможные значения:
 
             - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
@@ -124,13 +124,13 @@ resource "aws_s3_object" "object-two" {
 - (Опционально) `force_destroy` — параметр разрешает удаление бакета, даже если в нем будут объекты. Доступные значения `true` и `false`. По умолчанию — `false`.
 - `key`— ключ объекта. Имя объекта, когда он будет загружен в бакет.
 - `source` — путь на вашем устройстве до файла, который нужно загрузить в бакет.
-- `acl` — [настройки ACL](/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl) для объекта. Доступные значения: `private`, `public-read`, `auth-read`.
+- `acl` — [настройки ACL](/ru/storage/s3/instructions/access-management/s3-acl#fiksirovannyy_acl) для объекта. Доступные значения: `private`, `public-read`, `auth-read`.
 - `etag` — идентификатор версии объекта. Устанавливается с помощью `filemd5("path/to/source")`. Используйте этот параметр только для объектов меньше 16 МБ. Для объектов больше 16 МБ используйте `source_hash`, потому что они будут загружаться методом составной загрузки (multipart).
 - `source_hash` — идентификатор версии объекта. Параметр аналогичен `etag`, но без ограничений по размеру объекта. Устанавливается с помощью `filemd5("path/to/source")`.
 
 ## 2. Настройте автоматическую очистку бакета
 
-В примере ниже будет добавлено [правило автоматического удаления](/ru/storage/s3/service-management/buckets/manage-bucket#manage_lifecycle) (lifecycle) объектов с префиксом `tmp` из бакета через один день.
+В примере ниже будет добавлено [правило автоматического удаления](/ru/storage/s3/instructions/buckets/manage-bucket#manage_lifecycle) (lifecycle) объектов с префиксом `tmp` из бакета через один день.
 
 Добавьте следующее содержимое в файл `main.tf`:
 
@@ -166,7 +166,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
 
 <info>
 
-Невозможно указать ACL для отдельного [аккаунта](/ru/storage/s3/service-management/access-management/access-keys) Cloud Storage из другого проекта.
+Невозможно указать ACL для отдельного [аккаунта](/ru/storage/s3/instructions/access-management/access-keys) Cloud Storage из другого проекта.
 
 </info>
 
@@ -216,9 +216,9 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 Здесь:
 
 - `data "aws_canonical_user_id" "current" {}` — источник данных получает канонический идентификатор (Canonical User ID) текущего пользователя.
-- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. [Как узнать канонический идентификатор пользователя](/ru/storage/s3/service-management/access-management/s3-acl#user-id).
-- `email_address = "mcs1234567890"` — PID (идентификатор проекта), которому выдаются права доступа к бакету. [Как узнать PID](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta).
-- `permission` — [тип прав доступа](/ru/storage/s3/service-management/access-management/s3-acl#permissons). Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. [Как узнать канонический идентификатор пользователя](/ru/storage/s3/instructions/access-management/s3-acl#user-id).
+- `email_address = "mcs1234567890"` — PID (идентификатор проекта), которому выдаются права доступа к бакету. [Как узнать PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
+- `permission` — [тип прав доступа](/ru/storage/s3/instructions/access-management/s3-acl#permissons). Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Настройте правила CORS для бакета
 

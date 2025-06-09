@@ -29,4 +29,4 @@ http://cdn.example.com/files/image.jpg?md5=CUQ1rzAvtQCxwLS&expires=1301605293
 
 </info>
 
-Если для CDN-ресурса включена опция Secure token, то контент будет доступен только по подписанным ссылкам. Чтобы организовать доступ к части контента по обычным ссылкам, [создайте](/ru/networks/cdn/service-management/create-resource) для него еще один ресурс с отдельным [источником](/ru/networks/cdn/concepts/origin-groups).
+Если для CDN-ресурса включена опция Secure token, то контент будет доступен только по подписанным ссылкам. Чтобы организовать доступ к части контента по обычным ссылкам, [создайте](/ru/networks/cdn/instructions/create-resource) для него еще один ресурс с отдельным [источником](/ru/networks/cdn/concepts/origin-groups).

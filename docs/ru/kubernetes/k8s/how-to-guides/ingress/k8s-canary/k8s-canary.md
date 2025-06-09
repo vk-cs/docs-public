@@ -2,7 +2,7 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](/ru/kubernetes/k8s/service-management/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
+1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
 1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру с помощью kubectl.
 1. Создайте тестовое приложение:
 
@@ -143,5 +143,5 @@
 
 Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-- [остановите](../../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](../../../service-management/manage-cluster#delete_cluster) его навсегда.
+- [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+- [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.

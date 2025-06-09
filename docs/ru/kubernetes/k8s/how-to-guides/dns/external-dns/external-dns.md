@@ -8,7 +8,7 @@ ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dn
 
    Для примера далее используется зона `example.com`.
 
-1. [Создайте](../../../service-management/create-cluster) кластер Cloud Containers самой актуальной версии, который имеет внешний IP-адрес и доступен из интернета.
+1. [Создайте](../../../instructions/create-cluster) кластер Cloud Containers самой актуальной версии, который имеет внешний IP-адрес и доступен из интернета.
 
    Прочие параметры кластера выберите на свое усмотрение.
 
@@ -51,12 +51,12 @@ ExternalDNS будет использовать реквизиты этого п
 
 Подготовьте пользователя и получите все необходимые реквизиты:
 
-1. [Выберите](/tools-for-using-services/account/service-management/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
+1. [Выберите](/tools-for-using-services/account/instructions/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
 
    Требования к пользователю:
 
    - Должен быть [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
-   - Должна быть [назначена](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
+   - Должна быть [назначена](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
      - Администратор сети (минимально необходимая [роль](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions)).
      - Администратор проекта.
@@ -494,7 +494,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 ### 3.2. Опубликуйте приложение, используя Ingress
 
-1. [Установите](/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress) в кластер аддон Ingress NGINX самой актуальной версии.
+1. [Установите](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress) в кластер аддон Ingress NGINX самой актуальной версии.
 
    Выполните **стандартную установку**. Не изменяйте никакие параметры, только отредактируйте код настройки аддона:
 
@@ -725,7 +725,7 @@ ExternalDNS будет использовать реквизиты этого п
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
   
-   1. [Удалите аддон Ingress NGINX](../../../service-management/addons/manage-addons#udalenie_addona).
+   1. [Удалите аддон Ingress NGINX](../../../instructions/addons/manage-addons#udalenie_addona).
 
       Удаление аддона и связанных с ним ресурсов может занять длительное время.
 
@@ -762,7 +762,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.
 
 1. [Удалите DNS-зону](/ru/networks/dns/publicdns#udalenie_dns_zony) `example.com`, если она вам больше не нужна.

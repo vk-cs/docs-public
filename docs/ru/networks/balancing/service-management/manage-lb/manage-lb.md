@@ -114,7 +114,7 @@
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
-1. Выберите сеть и подсеть, в которых будет размещен балансировщик. [Получите идентификатор](../../../vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети.
+1. Выберите сеть и подсеть, в которых будет размещен балансировщик. [Получите идентификатор](../../../vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети.
 
 1. Выберите [зону доступности](/ru/intro/start/concepts/architecture#az), в которой будет размещен балансировщик. Чтобы получить список зон доступности, используйте команду:
 
@@ -235,8 +235,8 @@
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
-1. [Получите идентификатор порта](../../../vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
-1. [Привяжите Floating IP-адрес](../../../vnet/service-management/ip/floating-ip#associate) к порту с этим идентификатором.
+1. [Получите идентификатор порта](../../../vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
+1. [Привяжите Floating IP-адрес](../../../vnet/instructions/ip/floating-ip#associate) к порту с этим идентификатором.
 
 </tabpanel>
 </tabs>
@@ -273,8 +273,8 @@
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
-1. [Получите идентификатор порта](../../../vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
-1. [Отвяжите Floating IP-адрес](../../../vnet/service-management/ip/floating-ip#disassociate) от порта с этим идентификатором.
+1. [Получите идентификатор порта](../../../vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
+1. [Отвяжите Floating IP-адрес](../../../vnet/instructions/ip/floating-ip#disassociate) от порта с этим идентификатором.
 
 </tabpanel>
 </tabs>
@@ -425,7 +425,7 @@ openstack loadbalancer <команда> --help
 
       Запишите идентификатор созданного пула (`id`).
 
-   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](../../../vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, в которой находятся виртуальные машины.
+   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](../../../vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, в которой находятся виртуальные машины.
 
       Эти виртуальные машины должны быть либо размещены в подсети, где находится балансировщик, для которого создается правило балансировки, либо доступны из этой подсети.
 
