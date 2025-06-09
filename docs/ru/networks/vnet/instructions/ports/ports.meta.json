@@ -1,0 +1,11 @@
+{
+    "title": "Порты",
+    "pageDescription": "Управление портами OpenStack в сервисе виртуальных сетей.",
+    "shortDescription": "Базовые операции с портами OpenStack",
+    "metaTitle": "Порты",
+    "metaDescription": "",
+    "sectionTitle": "Порты",
+    "icon": "",
+    "weight": 2,
+    "uuid": "41005c76-6d04-4731-af40-02e70dc3c86f"
+}

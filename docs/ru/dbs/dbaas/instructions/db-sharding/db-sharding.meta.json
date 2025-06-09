@@ -1,0 +1,11 @@
+{
+    "title": "Шардирование инстанса БД",
+    "pageDescription": "Как добавить шард, как масштабировать шард, как удалить хост из шарда, как удалить шард в СУБД VK Cloud.",
+    "shortDescription": "Управление шардами в СУБД ClickHouse и MongoDB",
+    "metaTitle": "Шардирование инстанса БД",
+    "metaDescription": "Cloud Databases: управление шардами СУБД в VK Cloud",
+    "sectionTitle": "Шардирование инстанса БД",
+    "icon": "",
+    "weight": 4,
+    "uuid": "7ff17b62-9804-4552-852e-bfc046a2b558"
+}
