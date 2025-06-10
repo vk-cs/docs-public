@@ -8,7 +8,7 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
    In the example below, the `example.com` zone is used.
 
-1. [Create](../../../service-management/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
+1. [Create](../../../instructions/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
 
    Select other cluster parameters at your discretion.
 
@@ -51,12 +51,12 @@ ExternalDNS will use this VK Cloud user's credentials to cooperate with the VK C
 
 Prepare the user and get all the necessary credentials:
 
-1. [Select](/tools-for-using-services/account/service-management/project-settings/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/tools-for-using-services/account/service-management/project-settings/access-manage#inviting_a_new_member_to_the_project).
+1. [Select](/tools-for-using-services/account/instructions/project-settings/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/tools-for-using-services/account/instructions/project-settings/access-manage#inviting_a_new_member_to_the_project).
 
    User Requirements:
 
    - API access must be [enabled](/en/tools-for-using-services/api/rest-api/enable-api).
-   - One of the following roles must be [assigned](/en/tools-for-using-services/account/service-management/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
+   - One of the following roles must be [assigned](/en/tools-for-using-services/account/instructions/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
 
      - Network Administrator (a minimum required [role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions)).
      - Project Administrator.
@@ -494,7 +494,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 ### 3.2. Publish the application using Ingress
 
-1. [Install](/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX add-on of the latest version to the cluster.
+1. [Install](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX add-on of the latest version to the cluster.
 
    Perform a **standard installation**. Do not change any parameters, only edit the add-on configuration code:
 
@@ -725,7 +725,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
 
-   1. [Delete the Ingress NGINX add-on](../../../service-management/addons/manage-addons#removing_addon).
+   1. [Delete the Ingress NGINX add-on](../../../instructions/addons/manage-addons#removing_addon).
 
       It may take a long time to remove the add-on and its associated resources.
 
@@ -762,7 +762,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. A running Cloud Containers cluster consumes compute resources and is charged. If you no longer need it:
 
-   - [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.
 
 1. [Delete](/en/networks/dns/publicdns#deleting_a_zone) the `example.com` DNS zone if you no longer need it.

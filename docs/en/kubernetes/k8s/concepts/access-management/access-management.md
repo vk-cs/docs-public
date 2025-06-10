@@ -19,7 +19,7 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 
 <info>
 
-To get the same capabilities for older clusters, [upgrade](../../service-management/update) to version 1.23 or higher.
+To get the same capabilities for older clusters, [upgrade](../../instructions/update) to version 1.23 or higher.
 
 </info>
 

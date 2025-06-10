@@ -51,7 +51,7 @@ A detailed description of the resources is in the [provider documentation](https
 
             - `ru-msk` — the Moscow region.
             - `kz-ast` — the Kazakhstan region.
-        - `<PUBLIC_ACCESS_KEY>`, `<SECRET_KEY>` — the [key identifier and secret key](/ru/storage/s3/service-management/access-management/access-keys "change-lang") for accessing the object storage.
+        - `<PUBLIC_ACCESS_KEY>`, `<SECRET_KEY>` — the [key identifier and secret key](/ru/storage/s3/instructions/access-management/access-keys "change-lang") for accessing the object storage.
         - `<DOMAIN>` — the URL for accessing the storage, which depends on the account region. Possible values:
 
             - `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain.
@@ -124,13 +124,13 @@ Here:
 - (Optional) `force_destroy` — this parameter allows deleting the bucket, even if it contains objects. Available values ​​are `true` and `false`. Default is `false`.
 - `key` — the key of the object. The name of the object when it will be uploaded to the bucket.
 - `source` — the path on your device to the file to be uploaded to the bucket.
-- `acl` — [ACL settings](/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl "change-lang") for the object. Available values: `private`, `public-read`, `auth-read`.
+- `acl` — [ACL settings](/ru/storage/s3/instructions/access-management/s3-acl#fiksirovannyy_acl "change-lang") for the object. Available values: `private`, `public-read`, `auth-read`.
 - `source_hash` — object version identifier. The parameter is similar to `etag`, but without object size restrictions. Set using `filemd5("path/to/source")`.
 - `etag` — object version identifier. It is set with `filemd5("path/to/source")`. Use this parameter only for objects smaller than 16 MB. For objects larger than 16 MB, use `source_hash`, because they will be loaded via the multipart upload method.
 
 ## 2. Set up automatic bucket cleanup
 
-The example below will add an [automatic deletion rule](/ru/storage/s3/service-management/buckets/manage-bucket#manage_lifecycle "change-lang") (lifecycle) for objects with the `tmp` prefix from the bucket after one day.
+The example below will add an [automatic deletion rule](/ru/storage/s3/instructions/buckets/manage-bucket#manage_lifecycle "change-lang") (lifecycle) for objects with the `tmp` prefix from the bucket after one day.
 
 Add the following content to the `main.tf` file:
 
@@ -167,7 +167,7 @@ The example below will grant read permissions to a bucket ACL by user ID and PID
 
 <info>
 
-It is not possible to specify an ACL for a single Cloud Storage [account](/ru/storage/s3/service-management/access-management/access-keys "change-lang") from another project.
+It is not possible to specify an ACL for a single Cloud Storage [account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") from another project.
 
 </info>
 
@@ -217,9 +217,9 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 Here:
 
 - `data "aws_canonical_user_id" "current" {}` — the data source gets the canonical identifier (Canonical User ID) of the current user.
-- `id = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — the canonical identifier of the user (Canonical User ID) that is granted access rights to the bucket. [How to find out the canonical identifier of the user](/ru/storage/s3/service-management/access-management/s3-acl#user-id "change-lang").
-- `email_address = "mcs1234567890"` — the PID (project identifier) ​​that is granted access rights to the bucket. [How to find out the PID](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta).
-- `permission` — [type of access rights](/ru/storage/s3/service-management/access-management/s3-acl#permissons "change-lang"). Available values: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `id = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — the canonical identifier of the user (Canonical User ID) that is granted access rights to the bucket. [How to find out the canonical identifier of the user](/ru/storage/s3/instructions/access-management/s3-acl#user-id "change-lang").
+- `email_address = "mcs1234567890"` — the PID (project identifier) ​​that is granted access rights to the bucket. [How to find out the PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
+- `permission` — [type of access rights](/ru/storage/s3/instructions/access-management/s3-acl#permissons "change-lang"). Available values: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Set up CORS rules for the bucket
 

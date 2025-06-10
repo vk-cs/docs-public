@@ -39,7 +39,7 @@ Via VM:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
-1. Start to [create new virtual machine](/en/computing/iaas/service-management/vm/vm-create). In the “Network Settings” step, enter the name in the **DNS-name** field.
+1. Start to [create new virtual machine](/en/computing/iaas/instructions/vm/vm-create). In the “Network Settings” step, enter the name in the **DNS-name** field.
 
 Via port settings:
 

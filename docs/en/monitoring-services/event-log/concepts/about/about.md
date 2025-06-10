@@ -14,4 +14,4 @@ The collected information about events is available in the VK Cloud personal acc
 - project administrator
 - observer
 
-To work with the event log, Cloud Audit provides [tools](/en/monitoring-services/event-log/service-management/view-event-log) for searching, filtering, and exporting information about events.
+To work with the event log, Cloud Audit provides [tools](/en/monitoring-services/event-log/instructions/view-event-log) for searching, filtering, and exporting information about events.

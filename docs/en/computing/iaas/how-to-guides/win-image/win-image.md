@@ -191,7 +191,7 @@ The Windows installation ISO image may contain several editions of the operating
 
 ## 6. Import image to VK Cloud
 
-[Use OpenStack CLI](../../service-management/images/images-manage#importing_an_image) to import the image:
+[Use OpenStack CLI](../../instructions/images/images-manage#importing_an_image) to import the image:
 
 ```console
 openstack image create \
@@ -209,10 +209,10 @@ openstack image create \
     --property os_type=windows \
     <IMAGE_NAME>
 ```
-Replace <IMAGE_NAME> with the actual one. Arguments of the form `--property <key>=<value>` are used to assign [meta tags](/en/computing/iaas/service-management/images/image-metadata) to the image.
+Replace <IMAGE_NAME> with the actual one. Arguments of the form `--property <key>=<value>` are used to assign [meta tags](/en/computing/iaas/instructions/images/image-metadata) to the image.
 
-Wait for the operation to complete. After uploading the image, you will be able to [create a VM](../../service-management/vm/vm-create) by standard means of the VK Cloud platform.
+Wait for the operation to complete. After uploading the image, you will be able to [create a VM](../../instructions/vm/vm-create) by standard means of the VK Cloud platform.
 
 ## Delete unused resources
 
-If you no longer need the imported image, [delete it](../../service-management/images/images-manage#deleting_an_image).
+If you no longer need the imported image, [delete it](../../instructions/images/images-manage#deleting_an_image).

@@ -79,9 +79,9 @@ If at least one of the thresholds is exceeded, a request will be sent to the [Cl
 </tabpanel>
 </tabs>
 
-You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../service-management/scale#scale_master_nodes).
+You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../instructions/scale#scale_master_nodes).
 
-You can [configure](../../service-management/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes. The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
+You can [configure](../../instructions/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes. The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
 ## {heading(Kubernetes cluster scaling alert)[id=alerting]}
 
@@ -99,7 +99,7 @@ When a trigger occurs, you will receive a notification on the selected channel.
 
 - Vertical scaling capabilities are limited by [current quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) and available [virtual machine templates](../flavors#configuration_templates).
 - Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 100 nodes.
-- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](../../service-management/scale#scaling_groups_of_worker_nodes_c172481b).
+- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](../../instructions/scale#scaling_groups_of_worker_nodes_c172481b).
 
 ## Ensuring accessibility with vertical scaling
 

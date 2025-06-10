@@ -7,7 +7,7 @@ To demonstrate how Gatekeeper works, the following will be created:
 
 ## Preparatory steps
 
-1. [Create](../../../service-management/create-cluster) a Kubernetes cluster of the most current version.
+1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the most current version.
 
    Choose the cluster parameters at your own discretion.
 
@@ -196,5 +196,5 @@ To demonstrate how Gatekeeper works, the following will be created:
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.

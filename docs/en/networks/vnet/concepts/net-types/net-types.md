@@ -4,7 +4,7 @@ Cloud Networks service allows to work with several network types.
 
 _Standard network_ provides access to the subnets with the private IP addresses and exists within a single project.
 
-The standard network, its subnets and ports [can be managed](../../service-management) via management console, OpenStack CLI or Terraform.
+The standard network, its subnets and ports [can be managed](../../instructions) via management console, OpenStack CLI or Terraform.
 
 ## {heading(Shared network)[id=shared_net]}
 
@@ -14,7 +14,7 @@ To create a shared network, you have to create a standard network in one project
 
 A network owner can share the net with any project within one [SDN](../architecture#sdns_used):
 
-- by [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) with those projects where this user is also the owner.
+- by [unique identifier (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id) with those projects where this user is also the owner.
 - by project ID in OpenStack ([Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id)) with any other projects.
 
 The project user with whom the network was shared (hereinafter referred to as _network user_) will receive a message and can accept or decline the invitation to the shared network. The user's decision applies to the entire project: if one user declines the offer to join the network, the network will be unavailable for the entire project.

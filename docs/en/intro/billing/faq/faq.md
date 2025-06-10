@@ -65,7 +65,7 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 
 The payment account balance in the project management console may go negative. If you work with VK Cloud on [prepay](../concepts/physical-corporate#prepayment), the work of services and resources in this case will be suspended.
 
-No penalties are charged on negative balance, but it is necessary to [replenish the payment account](../service-management/payment#making_a_payment) to continue the work.
+No penalties are charged on negative balance, but it is necessary to [replenish the payment account](../instructions/payment#making_a_payment) to continue the work.
 
 <warn>
 
@@ -81,7 +81,7 @@ Unlocking of services takes up to 15 minutes from the moment of crediting.
 
 The project will resume automatically when the payment account balance is positive.
 
-It is recommended to deposit an amount equal to the daily charge, or enable [auto-top-up](../service-management/add-card#configure_auto_completion).
+It is recommended to deposit an amount equal to the daily charge, or enable [auto-top-up](../instructions/add-card#configure_auto_completion).
 
 </details>
 
@@ -105,7 +105,7 @@ If you do not know your payment scheme, contact the document management departme
 
 <summary>How to pay for the work of a service from a legal entity?</summary>
 
-If you work with VK Cloud on prepayment, [form an invoice](../service-management/bill-generation) and pay it in your management console.
+If you work with VK Cloud on prepayment, [form an invoice](../instructions/bill-generation) and pay it in your management console.
 
 When working on the post-payment scheme, the invoice and [accounting documents](../concepts/report#legal_entities) for the reporting period are sent via the electronic document management system (EDM) within five working days of the month following the reporting one.
 
@@ -128,7 +128,7 @@ Post-payment is available:
 - Only for legal entities.
 - Only within the framework of an individual contract with VK Cloud.
 
-To activate the postpayment scheme, [conclude an individual contract](../service-management/corporate) and perform additional project configuration for legal entities in the VK Cloud management console.
+To activate the postpayment scheme, [conclude an individual contract](../instructions/corporate) and perform additional project configuration for legal entities in the VK Cloud management console.
 
 </details>
 
@@ -192,7 +192,7 @@ The terms of crediting funds depend on [the payment method](../concepts/payment-
 
 If the payment is not received on time, write to VK Cloud document management department at [docs_vktech@vk.company](mailto:docs_vktech@vk.company). The following details will be required to trace the payment:
 
-- [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
+- [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
 - Project [region](/en/tools-for-using-services/account/concepts/regions)
 - Receipt of payment
 
@@ -202,7 +202,7 @@ If the payment is not received on time, write to VK Cloud document management de
 
 <summary>How do I make a refund?</summary>
 
-Contact [technical support](mailto:support@mcs.mail.ru). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../service-management/refund).
+Contact [technical support](mailto:support@mcs.mail.ru). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../instructions/refund).
 
 You can refund only funds that you have previously credited to your payment account. [Bonuses](../concepts/balance#bonuses) cannot be refunded.
 
@@ -230,20 +230,20 @@ When working on prepayment with a negative payment account balance, the project 
 To restore the services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. [Replenish](../service-management/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
+1. [Replenish](../instructions/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
 1. Wait for the activation of services in the project. It can take up to 15 minutes.
 1. Manually activate project resources:
 
-   - [Virtual machines](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm)
-   - [Kubernetes containers](/en/kubernetes/k8s/service-management/manage-cluster#start)
-   - [VM backup](/en/storage/backups/service-management/manage-backup-plan)
+   - [Virtual machines](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm)
+   - [Kubernetes containers](/en/kubernetes/k8s/instructions/manage-cluster#start)
+   - [VM backup](/en/storage/backups/instructions/manage-backup-plan)
    - Other resources
 
 <info>
 
 To find out how long resources are in the queue for deletion, contact [technical support](mailto:support@mcs.mail.ru) and specify:
 
-- [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
+- [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
 - [Region](/en/tools-for-using-services/account/concepts/regions)
 
 </info>
@@ -289,7 +289,7 @@ Charges for bank card payments are not included in [accounting documents for leg
 1. Contact [technical support](mailto:support@mcs.mail.ru).
 1. Specify:
 
-   - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
+   - [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
    - Project [region](/en/tools-for-using-services/account/concepts/regions)
    - Payment confirmation
 
@@ -344,8 +344,8 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 </tablist>
 <tabpanel>
 
-1. Complete the [additional registration](../service-management/corporate#additional_registration_of_legal_entities) of the legal entity, if it has not already been done.
-1. [Create an invoice](../service-management/bill-generation) for the required amount in your management console.
+1. Complete the [additional registration](../instructions/corporate#additional_registration_of_legal_entities) of the legal entity, if it has not already been done.
+1. [Create an invoice](../instructions/bill-generation) for the required amount in your management console.
 1. Pay the bill by bank transfer.
 
 </tabpanel>
@@ -418,7 +418,7 @@ The manager will contact you to clarify the required terms of the contract.
 
 If your project is in [region](/en/tools-for-using-services/account/concepts/regions) Moscow, and you are working with “VK” LLC, its main details are available at https://cloud.vk.com/contacts.
 
-You can also [generate an invoice](../service-management/bill-generation) in your management console and view the contents of the **Supplier** field.
+You can also [generate an invoice](../instructions/bill-generation) in your management console and view the contents of the **Supplier** field.
 
 </tabpanel>
 <tabpanel>
@@ -483,7 +483,7 @@ VK Cloud can duplicate reporting documents in the form of scanned copies in PDF 
 
 <summary>I have unloaded the invoice, it does not contain my details. How do I add them?</summary>
 
-To make the data of your organization appear in the **Payer** field in the invoices, that you [generate in your management console](../service-management/bill-generation), perform the the [additional registration](../service-management/corporate#additional_registration_of_legal_entities) of your legal entity.
+To make the data of your organization appear in the **Payer** field in the invoices, that you [generate in your management console](../instructions/bill-generation), perform the the [additional registration](../instructions/corporate#additional_registration_of_legal_entities) of your legal entity.
 
 Additional registration is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only for Russian resident companies.
 
@@ -495,7 +495,7 @@ Additional registration is only available in [region](/en/tools-for-using-servic
 
 <info>
 
-You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/service-management/project-settings/manage#changing_project_owner).
+You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/instructions/project-settings/manage#changing_project_owner).
 
 </info>
 
@@ -507,7 +507,7 @@ To register a project to another organization:
    - Full name and details of the organization to which the project was registered.
    - Full name and details of the organization to which the project needs to be reissued.
 
-1. For legal entities-residents of the Russian Federation in the Moscow region: [specify](/en/intro/billing/service-management/corporate#additional_registration_of_legal_entities) new details in your management console.
+1. For legal entities-residents of the Russian Federation in the Moscow region: [specify](/en/intro/billing/instructions/corporate#additional_registration_of_legal_entities) new details in your management console.
 
 </details>
 

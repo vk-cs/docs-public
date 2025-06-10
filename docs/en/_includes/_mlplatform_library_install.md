@@ -9,7 +9,7 @@ To install the Cloud ML Platform library for Python:
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) in the VK Cloud project. It already contains configured Python 3.x and pip, which you can work with from the JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) in the VK Cloud project. It already contains configured Python 3.x and pip, which you can work with from the JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -31,7 +31,7 @@ To install the Cloud ML Platform library for Python:
    </tablist>
    <tabpanel>
 
-   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
+   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In JupyterHub notepad, create and execute a cell with the following contents:
 
       ```console

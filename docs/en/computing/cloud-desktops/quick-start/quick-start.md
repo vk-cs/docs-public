@@ -107,9 +107,9 @@ After completing all the steps of the quick start, you will:
 
 ## Delete unused resources
 
-A running service consumes computing resources. If you don't need it anymore, [delete](../service-management/desktops-pool/manage#delete_pool) the desktop pool.
+A running service consumes computing resources. If you don't need it anymore, [delete](../instructions/desktops-pool/manage#delete_pool) the desktop pool.
 
 ## What's next?
 
 - [Learn about the concepts](../concepts) of the virtual desktop service.
-- [Read the instructions](../service-management/manage-desktops) for working with virtual desktops.
+- [Read the instructions](../instructions/manage-desktops) for working with virtual desktops.

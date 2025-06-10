@@ -16,11 +16,11 @@ If you configure a connection to the service network via Direct Connect, access 
 
    Write down the network name and IP address. In this example, `s3-ephn` and `198.18.0.0/20`.
 
-1. [Create a bucket](/en/storage/s3/service-management/buckets/create-bucket) in the Cloud Storage service, if you haven't  done it already.
-1. [Create an account](/ru/storage/s3/service-management/access-management/access-keys "change-lang") in the Cloud Storage service, if you haven't done it already. Save the key ID and secret key.
+1. [Create a bucket](/en/storage/s3/instructions/buckets/create-bucket) in the Cloud Storage service, if you haven't  done it already.
+1. [Create an account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") in the Cloud Storage service, if you haven't done it already. Save the key ID and secret key.
 1. Prepare the VM you want to connect to Cloud Storage:
 
-   1. [Create a VM](/en/computing/iaas/service-management/vm/vm-create) with the following parameters:
+   1. [Create a VM](/en/computing/iaas/instructions/vm/vm-create) with the following parameters:
 
       - **Operating system**: in this example, Ubuntu is used. You can use another OS, but the network settings in it will be different.
       - **Network**: any network with internet access.
@@ -28,9 +28,9 @@ If you configure a connection to the service network via Direct Connect, access 
       - **Assign external IP**: enable the option.
       - **Use Backup**: disable the option to save money.
       - Choose other settings as you wish.
-   1. [Connect](/en/computing/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm) the service network to the VM. Select the service network that was added to your project. In this example, `s3-ephn`. Leave other parameters by default.
+   1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the service network to the VM. Select the service network that was added to your project. In this example, `s3-ephn`. Leave other parameters by default.
    1. Find the IP and MAC addresses of the service network connection on the **Networks** tab. Write them down. In this example, `198.18.14.1` and `fa:16:3e:d8:86:43`.
-   1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the VM via SSH.
+   1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the VM via SSH.
    1. Update packages to the latest version and reboot the VM using the commands:
 
       ```console
@@ -129,14 +129,14 @@ To configure the VM network interface directed to the service network:
 
 ## 2. (Optional) Disable public network
 
-If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/service-management/vm/vm-add-net#deleting_a_vm_network) the network with Internet access that was added when creating the VM.
+If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/instructions/vm/vm-add-net#deleting_a_vm_network) the network with Internet access that was added when creating the VM.
 
 ## 3. Check connection to Cloud Storage
 
 1. Connect to the VM:
 
-   - [Via the VNC console](/ru/computing/iaas/service-management/vm/vm-console), if the public network was disabled.
-   - [Via SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix), if the public network was not disabled.
+   - [Via the VNC console](/ru/computing/iaas/instructions/vm/vm-console), if the public network was disabled.
+   - [Via SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix), if the public network was not disabled.
 
 1. Run the command:
 
@@ -155,5 +155,5 @@ The response should return a list of the Cloud Storage buckets.
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) the virtual machine.
-1. [Delete](/en/networks/vnet/service-management/net#deleting_network) the networks in which the VM was placed.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machine.
+1. [Delete](/en/networks/vnet/instructions/net#deleting_network) the networks in which the VM was placed.

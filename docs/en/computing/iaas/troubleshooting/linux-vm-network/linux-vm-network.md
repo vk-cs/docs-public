@@ -17,16 +17,16 @@ The described approaches can also be used when access is lost to another applica
 1. Perform a forced reboot.
 
    This operation can help if the VM is not responding or its network interface is initialized incorrectly:
-   1. [Stop](../../service-management/vm/vm-manage#start_stop_restart_vm) VM.
-   1. For a stopped VM [run](../../service-management/vm/vm-manage#forced_vm_reboot) forced reboot.
+   1. [Stop](../../instructions/vm/vm-manage#start_stop_restart_vm) VM.
+   1. For a stopped VM [run](../../instructions/vm/vm-manage#forced_vm_reboot) forced reboot.
 
    If this does not solve the problem, follow the remaining steps and proceed to diagnostics.
 
-1. [Make sure](../../service-management/vm/vm-manage#start_stop_restart_vm), that the VM is running.
+1. [Make sure](../../instructions/vm/vm-manage#start_stop_restart_vm), that the VM is running.
 
-1. [Make sure](../../service-management/vm/vm-console#the_vnc_console),that you can access the virtual machine console and sign in.
+1. [Make sure](../../instructions/vm/vm-console#the_vnc_console),that you can access the virtual machine console and sign in.
 
-   If necessary, [restore password](../../service-management/vm/vm-manage#password) for authorization.
+   If necessary, [restore password](../../instructions/vm/vm-manage#password) for authorization.
 
 1. Get information about the configuration of the virtual machine network interface:
 

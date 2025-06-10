@@ -43,7 +43,7 @@ The following roles are provided in the service:
 | Microphone        | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
 | Clipboard         | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
 
-The available peripherals are set when [adding](../../service-management/desktops-pool/add) a desktop pool.
+The available peripherals are set when [adding](../../instructions/desktops-pool/add) a desktop pool.
 
 ## {heading(Network configuration of service)[id=setup_nets]}
 
@@ -54,7 +54,7 @@ The network configuration of the service includes:
 
 All these networks are connected to the same router with internet access. It is acceptable to host service VMs and any number of desktop pools on the same network.
 
-Automatic and manual modes for setting up the network configuration are supported. The mode is selected at the stage of [configuring a network](../../service-management/config/setup-net) for the service infrastructure and can be changed until you first run desktop pool creation. After that, you will not be able to change the networks setup mode of the service.
+Automatic and manual modes for setting up the network configuration are supported. The mode is selected at the stage of [configuring a network](../../instructions/config/setup-net) for the service infrastructure and can be changed until you first run desktop pool creation. After that, you will not be able to change the networks setup mode of the service.
 
 ### {heading(Automatic networks setup)[id=automatic_net_setup]}
 
@@ -73,14 +73,14 @@ In the manual mode, you can create various network configurations. You can:
 - create a separate network for service VMs and separate networks for each pool
 - configure any other combinations
 
-The network for hosting service VMs is specified when [setting up the service infrastructure](../../service-management/config/setup-net), and the network for desktop pools is specified when [creating a pool](../../service-management/desktops-pool/add).
+The network for hosting service VMs is specified when [setting up the service infrastructure](../../instructions/config/setup-net), and the network for desktop pools is specified when [creating a pool](../../instructions/desktops-pool/add).
 
 ### {heading(Requirements for number of ports)[id=ports_number]}
 
 In the manual mode, you need to control that the requirements for the number of free ports in the networks are met:
 
 - The network for service VMs must have at least 16 free ports.
-- The pool network must have no fewer free ports than the sum of the [pool parameters](../../service-management/desktops-pool/add#setup_pool_configuration): **Min number of desktops** and **Hot reserve**. The recommended number of free ports is equal to the maximum number of desktops in the pool, one port per desktop.
+- The pool network must have no fewer free ports than the sum of the [pool parameters](../../instructions/desktops-pool/add#setup_pool_configuration): **Min number of desktops** and **Hot reserve**. The recommended number of free ports is equal to the maximum number of desktops in the pool, one port per desktop.
 - If the network is used for multiple service components, for example, for service VMs and a pool, the required number of ports must be calculated as the sum of the requirements for these components.
 
 The number *P* of free ports is calculated using the formula:

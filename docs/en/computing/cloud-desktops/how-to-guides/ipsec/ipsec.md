@@ -15,20 +15,20 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create an LDAP environment:
 
-    1. Select or [create](/en/networks/vnet/service-management/net#creating_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+    1. Select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
 
         Write down the following:
 
         - The subnet IP address.
         - The router name and IP address.
 
-    1. Create a [virtual machine](/en/computing/iaas/service-management/vm/vm-create) running Windows Server 2019 on the selected network.
+    1. Create a [virtual machine](/en/computing/iaas/instructions/vm/vm-create) running Windows Server 2019 on the selected network.
 
          Write down the name and IP address of the VM.
 
 1. Create a VDI environment:
 
-    1. In VK Cloud, select or [create](/en/networks/vnet/service-management/net#creating_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+    1. In VK Cloud, select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
 
         Write down the following:
 
@@ -39,7 +39,7 @@ To show how to configure a secure connection with virtual desktops:
 
         Write down the subnet IP address (CIDR).
 
-1. [Create a virtual machine](/en/computing/iaas/service-management/vm/vm-create) connected to the external network `ext-net`. This will allow you to avoid using a floating IP address during further configuration.
+1. [Create a virtual machine](/en/computing/iaas/instructions/vm/vm-create) connected to the external network `ext-net`. This will allow you to avoid using a floating IP address during further configuration.
 
     The VM parameters:
 
@@ -50,7 +50,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Update the OS on the Debian VM:
 
-    1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command).
+    1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command).
 
     1. Update the OS before further setup:
 
@@ -84,7 +84,7 @@ Scheme of preliminary preparation of networks:
 
 ## 1. Set up a VPN tunnel on the AD/LDAP side
 
-In your management console [create a VPN](/en/networks/vnet/service-management/vpn) with the following parameters:
+In your management console [create a VPN](/en/networks/vnet/instructions/vpn) with the following parameters:
 
 1. At the **IKE Configuration** step, specify the algorithms for the primary IPsec connection:
 
@@ -147,7 +147,7 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
 
 ## 3. Configure an additional network interface in a Debian VM
 
-1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command) .
+1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command) .
 1. Create the `eth1` file using the command:
 
     ```console
@@ -436,9 +436,9 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 ## 11. Check if VDI is able to connect to LDAP
 
-1. [Create](/en/networks/vnet/service-management/net#creating_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
+1. [Create](/en/networks/vnet/instructions/net#creating_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
 
-1. Create a test [virtual machine](/en/computing/iaas/service-management/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
+1. Create a test [virtual machine](/en/computing/iaas/instructions/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
 
 1. Ping the LDAP server:
 
@@ -456,7 +456,7 @@ Scheme of the built interaction between networks and machines within networks:
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) the virtual machines.
-1. [Delete](/en/networks/vnet/service-management/vpn#removing_a_vpn_tunnel) the VPN tunnel.
-1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) the routers.
-1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_subnet) and the [network](/en/networks/vnet/service-management/net#deleting_network) in which the VM is located.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machines.
+1. [Delete](/en/networks/vnet/instructions/vpn#removing_a_vpn_tunnel) the VPN tunnel.
+1. [Delete](/en/networks/vnet/instructions/router#removing_the_router) the routers.
+1. Delete the [subnet](/en/networks/vnet/instructions/net#deleting_subnet) and the [network](/en/networks/vnet/instructions/net#deleting_network) in which the VM is located.

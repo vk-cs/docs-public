@@ -14,7 +14,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Create](/en/networks/vnet/service-management/net#creating_network) networks.
+1. [Create](/en/networks/vnet/instructions/net#creating_network) networks.
 
    <info>
 
@@ -116,7 +116,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 ## 1. Set up a VPN tunnel on the cloud side
 
-[Create a VPN](/en/networks/vnet/service-management/vpn) with the following settings:
+[Create a VPN](/en/networks/vnet/instructions/vpn) with the following settings:
 
 <tabs>
 <tablist>
@@ -334,9 +334,9 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) virtual machines.
-1. [Delete](../../service-management/vpn#removing_a_vpn_tunnel) VPN tunnel.
-1. [Delete](../../service-management/router#managing_static_routes) static routes defined on the side of the client network.
+1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) virtual machines.
+1. [Delete](../../instructions/vpn#removing_a_vpn_tunnel) VPN tunnel.
+1. [Delete](../../instructions/router#managing_static_routes) static routes defined on the side of the client network.
 
    <info>
 
@@ -344,6 +344,6 @@ If you no longer need the created resources, delete them:
 
    </info>
 
-1. [Delete](../../service-management/router#removing_the_router) client and cloud network routers.
-1. Delete the client and cloud [subnets](../../service-management/net#deleting_subnet) and [networks](../../service-management/net#deleting_network).
-1. [Delete](../../service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.
+1. [Delete](../../instructions/router#removing_the_router) client and cloud network routers.
+1. Delete the client and cloud [subnets](../../instructions/net#deleting_subnet) and [networks](../../instructions/net#deleting_network).
+1. [Delete](../../instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.

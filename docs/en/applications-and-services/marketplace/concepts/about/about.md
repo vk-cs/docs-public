@@ -4,7 +4,7 @@ Marketplace is a VK Cloud subsystem that provides customers with access to third
 - open source solutions;
 - self-developed services.
 
-All details on infrastructure deployment and software or creating a tenant (account) remain on the VK Cloud side. The user receives a prepared instance of the service (an instance of the service), which, if necessary, can be customized to their needs. All deployed instances of the service are [charged](../../tariffication) and [managed](../../service-management/pr-instance-manage) within the VK Cloud project. The Marketplace helps you launch services faster and simplifies their support.
+All details on infrastructure deployment and software or creating a tenant (account) remain on the VK Cloud side. The user receives a prepared instance of the service (an instance of the service), which, if necessary, can be customized to their needs. All deployed instances of the service are [charged](../../tariffication) and [managed](../../instructions/pr-instance-manage) within the VK Cloud project. The Marketplace helps you launch services faster and simplifies their support.
 
 <warn>
 
@@ -28,18 +28,18 @@ Each type of service is initialized in VK Cloud differently:
 </tablist>
 <tabpanel>
 
-1. The user [connects](../../service-management/pr-instance-add) the service to the project.
+1. The user [connects](../../instructions/pr-instance-add) the service to the project.
 1. VK Cloud sends a request to the supplier to create a tenant account in his product.
 1. The supplier registers a new account, sends the VK Cloud details.
-1. VK Cloud creates a service instance for [management](../../service-management/pr-instance-manage) and sends the access details to the user.
+1. VK Cloud creates a service instance for [management](../../instructions/pr-instance-manage) and sends the access details to the user.
 
 </tabpanel>
 <tabpanel>
 
-1. The user [connects](../../service-management/pr-instance-add) the service to the project.
+1. The user [connects](../../instructions/pr-instance-add) the service to the project.
 1. VK Cloud creates the necessary infrastructure in the user's project.
 1. VK Cloud installs the service on the created infrastructure.
-1. VK Cloud creates a service instance for [management](../../service-management/pr-instance-manage) and sends the access details to the user.
+1. VK Cloud creates a service instance for [management](../../instructions/pr-instance-manage) and sends the access details to the user.
 
 </tabpanel>
 </tabs>

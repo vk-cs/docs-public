@@ -16,7 +16,7 @@ As an example, an application will be used to calculate an approximate value of 
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -38,7 +38,7 @@ As an example, an application will be used to calculate an approximate value of 
    </tablist>
    <tabpanel>
 
-   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
+   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
       ```console
@@ -59,7 +59,7 @@ As an example, an application will be used to calculate an approximate value of 
 
    The up-to-date version of the library is always available at the link provided.
 
-1. [Create an access token](../../service-management/tokens#creating_an_access_token), which is needed to work with the library.
+1. [Create an access token](../../instructions/tokens#creating_an_access_token), which is needed to work with the library.
 
    A token with both the `Administrator` role and the `User` role is suitable.
 
@@ -71,7 +71,7 @@ As an example, an application will be used to calculate an approximate value of 
 
    </err>
 
-1. [Create](../../service-management/create) a Spark cluster.
+1. [Create](../../instructions/create) a Spark cluster.
 
    Choose the cluster parameters at your discretion.
 
@@ -211,4 +211,4 @@ If you no longer need the created resources, delete them:
 
 1. Delete the Spark cluster.
 1. Delete the Docker registry for this Spark cluster.
-1. [Delete the access token](../../service-management/tokens#deleting_an_access_token).
+1. [Delete the access token](../../instructions/tokens#deleting_an_access_token).

@@ -5,8 +5,8 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
 ## Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
-1. [Create VM](/en/computing/iaas/service-management/vm/vm-create):
+1. [Create](/en/networks/vnet/instructions/net#creating_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Create VM](/en/computing/iaas/instructions/vm/vm-create):
 
    - name: `Almalinux_9_Joomla`;
    - operating system: Almalinux 9;
@@ -14,7 +14,7 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
    - assign a public IP address. The example will use `87.239.105.44`;
    - security groups (firewall settings): `default`, `ssh+www`.
 
-1. [Create DB instance](/en/dbs/dbaas/service-management/create):
+1. [Create DB instance](/en/dbs/dbaas/instructions/create):
 
    - name: `MySQL-7313`;
    - DBMS: MySQL 8.0;
@@ -50,7 +50,7 @@ This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 
 
 ## 2. Install Joomla! on VM
 
-1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Almalinux_9_Joomla` VM.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Almalinux_9_Joomla` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
    ```console
@@ -114,7 +114,7 @@ In the browser, go to `http://site-joomla.example.vk.cloud/joomla/`. Upon succes
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Almalinux_9_Joomla` VM.
-- [Delete](/en/dbs/dbaas/service-management/delete) `MySQL-7313` instance.
-- If necessary, [delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) `87.239.105.44` floating IP address.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Almalinux_9_Joomla` VM.
+- [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-7313` instance.
+- If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) `87.239.105.44` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-joomla.example.vk.cloud` DNS record.

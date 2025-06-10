@@ -12,7 +12,7 @@ To connect to the object storage using the SDK:
    - [SDK for Go](https://docs.aws.amazon.com/sdk-for-go).
    - [Mobile SDK for iOS and Android](https://docs.amplify.aws).
 
-1. Create [account](../../service-management/account-management) and [bucket](../../service-management/buckets/create-bucket) if this has not been done before. Save the connection details:
+1. Create [account](../../instructions/account-management) and [bucket](../../instructions/buckets/create-bucket) if this has not been done before. Save the connection details:
 
    <tabs>
    <tablist>

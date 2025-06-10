@@ -142,7 +142,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
 <tabpanel>
 
-Use the imported image to [create a Linux VM](/en/computing/iaas/service-management/vm/vm-create):
+Use the imported image to [create a Linux VM](/en/computing/iaas/instructions/vm/vm-create):
 
 - when creating a VM in your management console, select an image from the list;
 - when creating via the OpenStack CLI, specify the image ID in the appropriate command.
@@ -151,22 +151,22 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/service-managem
 
 <tabpanel>
 
-1. Use the imported image to [create an intermediate Windows VM](/en/computing/iaas/service-management/vm/vm-create).
+1. Use the imported image to [create an intermediate Windows VM](/en/computing/iaas/instructions/vm/vm-create).
 2. Add the VirtIO HBA driver to the Windows boot.
 
-   1. [Create a disk](/en/computing/iaas/service-management/volumes#create_disk) minimum size and [connect](/en/computing/iaas/service-management/volumes#mount_disk) it to VM.
-   2. [Run](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the virtual machine.
+   1. [Create a disk](/en/computing/iaas/instructions/volumes#create_disk) minimum size and [connect](/en/computing/iaas/instructions/volumes#mount_disk) it to VM.
+   2. [Run](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the virtual machine.
    3. Run the VirtIO installer in `repair` mode.
-   4. [Stop](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the virtual machine.
+   4. [Stop](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the virtual machine.
 
-3. [Create a image](/en/computing/iaas/service-management/images/images-manage#creating_an_image) from the VM's boot disk.
+3. [Create a image](/en/computing/iaas/instructions/images/images-manage#creating_an_image) from the VM's boot disk.
 4. Change the disk bus type of the new image:
 
    ```console
    openstack image set --property hw_disk_bus=virtio <new image ID>
    ```
 
-5. [Create a target Windows VM](/en/computing/iaas/service-management/vm/vm-create) from a new image.
+5. [Create a target Windows VM](/en/computing/iaas/instructions/vm/vm-create) from a new image.
 6. Delete the intermediate VM created in step 1, as well as the imported image.
 
 </tabpanel>

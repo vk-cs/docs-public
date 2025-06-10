@@ -11,12 +11,12 @@ The following shows how to check a custom desktop image for compatibility with t
      - the username and password of a LDAP user who has rights to add a VM to the domain.
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. Create [a network](/en/networks/vnet/service-management/net#creating_network) and [a subnet](/en/networks/vnet/service-management/net#creating_subnet):
+1. Create [a network](/en/networks/vnet/instructions/net#creating_network) and [a subnet](/en/networks/vnet/instructions/net#creating_subnet):
 
      - Enable the **Access to internet** option.
      - If the image has AD support software installed:
 
-         - In the network settings, select an existing router with connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+         - In the network settings, select an existing router with connection to an external network or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
          - In the subnet settings, disable the **Private DNS** option and add the DNS server IP address obtained from your system administrator to the **DNS servers** field.
 
      - Select other network and subnet parameters at your discretion.
@@ -28,7 +28,7 @@ The following shows how to check a custom desktop image for compatibility with t
 1. Check that the image is visible in the VM creation wizard:
 
      1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-     1. Upload the prepared image to VK Cloud by following the [instructions](/en/computing/iaas/service-management/images/images-manage#importing_an_image).
+     1. Upload the prepared image to VK Cloud by following the [instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
      1. Go to **Cloud Servers** → **Virtual machines** and click **Add**.
      1. In the **Operating System** list, find the image you uploaded and select it.
 
@@ -70,8 +70,8 @@ Connection to the Astra Linux VM via RDP and LDAP should always be checked, rega
      1. On the **General information** tab of the VM page, click **Set password** and set the administrator password.
      1. Connect to the VM:
 
-         - To [connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win) to the Windows VM, use the RDP protocol.
-         - To [connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the Astra Linux VM use the SSH protocol.
+         - To [connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-win) to the Windows VM, use the RDP protocol.
+         - To [connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the Astra Linux VM use the SSH protocol.
 
      1. Verify that the connection has been successful.
 
@@ -84,8 +84,8 @@ Connection to the Astra Linux VM via RDP and LDAP should always be checked, rega
          ```
 
      1. Terminate the current connection session to the VM.
-     1. [Add](/en/networks/vnet/service-management/secgroups#assign-rule) the VM to the `rdp` security group.
-     1. Connect to the VM via RDP, following the [instructions for connecting to a Windows VM](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_vm).
+     1. [Add](/en/networks/vnet/instructions/secgroups#assign-rule) the VM to the `rdp` security group.
+     1. Connect to the VM via RDP, following the [instructions for connecting to a Windows VM](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-win#3_connect_to_vm).
      1. Verify that the connection is successful and the graphical user interface opens.
 
 1. (For Astra Linux) Check the ability to connect to the VM using LDAP.
@@ -108,10 +108,10 @@ Connection to the Astra Linux VM via RDP and LDAP should always be checked, rega
            - `<ldap_id or domain_name>` — the IP address or FQDN of your LDAP server;
            - `<username>` and `<password>` — the username and password of a LDAP user who has rights to add the VM to the domain.
 
-     1. [Reboot](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM.
-     1. [Go to](/en/computing/iaas/service-management/vm/vm-console#the_vnc_console) the VM's console.
+     1. [Reboot](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the VM.
+     1. [Go to](/en/computing/iaas/instructions/vm/vm-console#the_vnc_console) the VM's console.
      1. Sign in using the username and password of the LDAP user. Verify you are successfully authorized.
-     1. Connect to the VM via RDP, following the [instructions for connecting to a Windows VM](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_vm).
+     1. Connect to the VM via RDP, following the [instructions for connecting to a Windows VM](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-win#3_connect_to_vm).
      1. Sign in using the username and password of the LDAP user. Verify you are successfully authorized.
 
 ## 3. Check the functionality of your installed software and peripheral devices
@@ -123,5 +123,5 @@ Connection to the Astra Linux VM via RDP and LDAP should always be checked, rega
 
 The running VM consumes computing resources. If you no longer need it:
 
-- [stop](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM to use it later;
-- [delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) the VM permanently.
+- [stop](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the VM to use it later;
+- [delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the VM permanently.
