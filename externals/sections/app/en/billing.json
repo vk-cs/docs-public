@@ -10,11 +10,11 @@
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/intro/billing/service-management/payment",
+                    "link": "/en/intro/billing/instructions/payment",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/intro/billing/service-management/refund",
+                    "link": "/en/intro/billing/instructions/refund",
                     "hiddenForPartners": true
                 }
             ]

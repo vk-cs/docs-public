@@ -6,7 +6,7 @@ After deletion, it is impossible to restore the account.
 
 </err>
 
-To stop debiting funds for using the services, it is not necessary to delete the account. It is enough to [preserve](/en/tools-for-using-services/account/service-management/project-settings/manage#project_conservation) or [delete](/en/tools-for-using-services/account/service-management/project-settings/manage#deleting_a_project) projects that consume resources.
+To stop debiting funds for using the services, it is not necessary to delete the account. It is enough to [preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project_conservation) or [delete](/en/tools-for-using-services/account/instructions/project-settings/manage#deleting_a_project) projects that consume resources.
 
 To delete an account:
 
@@ -18,4 +18,4 @@ To delete an account:
 
     You will be contacted for confirmation. Deletion is possible only after correspondence with the user from his registered mail.
 
-1. If necessary, perform [refund](/en/intro/billing/service-management/refund).
+1. If necessary, perform [refund](/en/intro/billing/instructions/refund).

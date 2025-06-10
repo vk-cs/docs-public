@@ -2,7 +2,7 @@
 
 <summary>How do I make a VM backup?</summary>
 
-You can create a VM backup [manually](/en/storage/backups/service-management/create-backup-copy) or [using a backup plan](/en/storage/backups/service-management/create-backup-plan).
+You can create a VM backup [manually](/en/storage/backups/instructions/create-backup-copy) or [using a backup plan](/en/storage/backups/instructions/create-backup-plan).
 
 </details>
 
@@ -36,7 +36,7 @@ The time to create a backup depends on the amount of data on the disk of the VM 
 
 <summary>How do I delete a backup?</summary>
 
-You can delete a backup in the **Cloud Backup → Backup** section, see more in [Managing backups](/en/storage/backups/service-management/manage-backup-copy#delete_backup_copy).
+You can delete a backup in the **Cloud Backup → Backup** section, see more in [Managing backups](/en/storage/backups/instructions/manage-backup-copy#delete_backup_copy).
 
 </details>
 
@@ -62,6 +62,6 @@ After installation, you will need to register additional metadata on the VM. For
 
 <summary>How to view the list of VMs that do not have a backup plan?</summary>
 
-[Use](/en/computing/iaas/service-management/vm/vm-filter) the **Backup** filter to find such VMs.
+[Use](/en/computing/iaas/instructions/vm/vm-filter) the **Backup** filter to find such VMs.
 
 </details>

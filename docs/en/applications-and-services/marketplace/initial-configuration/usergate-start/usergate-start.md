@@ -27,9 +27,9 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 ## Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with the Internet access, if one has not already been created.
-1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
-1. [Deploy](../../service-management/pr-instance-add) the UserGate NGFW service:
+1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with the Internet access, if one has not already been created.
+1. In the [settings of the subnet](/en/networks/vnet/instructions/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
+1. [Deploy](../../instructions/pr-instance-add) the UserGate NGFW service:
 
    - Select the previously created network with Internet access and subnet.
    - Choose other parameters at your discretion.
@@ -60,8 +60,8 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
 1. Go to **Cloud Servers** → **Virtual**.
 1. Open the page of the service VM (usually `<identifier>usergate`) by clicking on its name in the list.
 1. Go to the **Networks** tab.
-1. [Connect](/en/computing/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the VM.
-1. Reboot the VM [using VK Cloud](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
+1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the VM.
+1. Reboot the VM [using VK Cloud](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
 
 ## 2. Check for the added network
 
@@ -84,6 +84,6 @@ Recommendations for working with the service:
 
 The running service infrastructure consumes computing resources. If you no longer need it:
 
-- [Delete](../../service-management/pr-instance-manage#deleting_a_service_instance) the UserGate NGFW service instance.
-- [Delete](/en/networks/vnet/service-management/net#deleting_network) the network used for the service.
-- [Delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address created during service deployment.
+- [Delete](../../instructions/pr-instance-manage#deleting_a_service_instance) the UserGate NGFW service instance.
+- [Delete](/en/networks/vnet/instructions/net#deleting_network) the network used for the service.
+- [Delete](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address created during service deployment.

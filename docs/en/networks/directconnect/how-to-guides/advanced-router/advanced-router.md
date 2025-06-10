@@ -30,7 +30,7 @@ To show the configuration of an advanced router, two independent networks will b
    In this case, we will use a network with a virtual machine Router OS 7.10 (MikroTik), performing the functions of a BGP router.
    </info>
 
-1. Select or [create](../../service-management/net#creating_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
+1. Select or [create](../../instructions/net#creating_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
 
    Note the following:
 
@@ -38,7 +38,7 @@ To show the configuration of an advanced router, two independent networks will b
    - the name of the network in which the subnet is located;
    - the router name.
 
-1. Create a [virtual machine](../../../../computing/iaas/service-management/vm/vm-create) on the `vkcloud-net` network. Add SSH access and disable backup.
+1. Create a [virtual machine](../../../../computing/iaas/instructions/vm/vm-create) on the `vkcloud-net` network. Add SSH access and disable backup.
 
     Note the VM's IP address.
 
@@ -309,6 +309,6 @@ The structured interaction between the networks and the VMs within networks look
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](../../../../computing/iaas/service-management/vm/vm-manage#delete_vm) the virtual machine.
-1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) routers.
-1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_network) and the [network](/en/networks/vnet/service-management/net#deleting_subnet).
+1. [Delete](../../../../computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machine.
+1. [Delete](/en/networks/vnet/instructions/router#removing_the_router) routers.
+1. Delete the [subnet](/en/networks/vnet/instructions/net#deleting_network) and the [network](/en/networks/vnet/instructions/net#deleting_subnet).

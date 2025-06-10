@@ -391,7 +391,7 @@ Events that the service of [virtual networks](/ru/networks/vnet) reports to Clou
 |An interface of an advanced router has been deleted
 
 |`create-dc-bgp`
-|A [BGP resource](/en/networks/vnet/service-management/advanced-router/manage-bgp#adding_a_bgp_router) has been created on an advanced router
+|A [BGP resource](/en/networks/vnet/instructions/advanced-router/manage-bgp#adding_a_bgp_router) has been created on an advanced router
 
 |`update-dc-bgp`
 |A BGP resource has been updated on an advanced router

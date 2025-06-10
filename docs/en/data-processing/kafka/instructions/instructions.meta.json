@@ -1,0 +1,11 @@
+{
+  "title": "Step-by-step instructions",
+  "pageDescription": "How to create an instance of the Cloud Kafka service in the VK Cloud project, how to manage Cloud Kafka components in VK Cloud.",
+  "shortDescription": "Creating an instance of the service and managing its components",
+  "metaTitle": "Step-by-step instructions",
+  "metaDescription": "Cloud Kafka in VK Cloud: creating an instance of the service, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 3,
+  "uuid": "953a586d-70c8-4569-acab-f2b4159cf2c4"
+}

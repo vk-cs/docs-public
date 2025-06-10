@@ -4,12 +4,12 @@ Cloud Voice is a service that allows you to recognize and synthesize speech. Wit
 
 To start using the service, go to the [Cloud Voice] page(https://msk.cloud.vk.com/app/services/machinelearning/voice/methods). You must be logged in to do this.
 
-To use the service, you need to get an access token. To learn how to get an access token, read [here](../../service-management/get-voice-token).
+To use the service, you need to get an access token. To learn how to get an access token, read [here](../../instructions/get-voice-token).
 
 ### See also
 
-[Getting an access token](../../service-management/get-voice-token)
+[Getting an access token](../../instructions/get-voice-token)
 
-[Speech recognition](../../service-management/speech-recognition)
+[Speech recognition](../../instructions/speech-recognition)
 
-[Speech synthesis](../../service-management/text-to-speech)
+[Speech synthesis](../../instructions/text-to-speech)

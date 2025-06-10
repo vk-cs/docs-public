@@ -4,7 +4,7 @@ This authentication process is inconvenient when working with automated tools th
 
 ## Preparatory steps
 
-1. [Create](../../service-management/create-cluster) the Cloud Containers cluster is the most up-to-date version.
+1. [Create](../../instructions/create-cluster) the Cloud Containers cluster is the most up-to-date version.
 
    When creating a cluster, select the **Assign external IP** option. Select other cluster parameters at your discretion.
 
@@ -58,7 +58,7 @@ This authentication process is inconvenient when working with automated tools th
 
    The answer `yes` should be output for each of the commands.
 
-   If you do not have the rights to create any of these resources (the answer is `no`), [adjust the VK Cloud user role](/en/tools-for-using-services/account/service-management/project-settings/access-manage#changing_member_role) on behalf of which the connection to the cluster is being performed.
+   If you do not have the rights to create any of these resources (the answer is `no`), [adjust the VK Cloud user role](/en/tools-for-using-services/account/instructions/project-settings/access-manage#changing_member_role) on behalf of which the connection to the cluster is being performed.
 
    For more information about the role model and available roles, see [Access management](../../concepts/access-management).
 
@@ -595,5 +595,5 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
 1. A running Cloud Containers cluster is charged and consumes computing resources. If you don't need it anymore:
 
-   - [stop](../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../service-management/manage-cluster#delete_cluster) its forever.
+   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../instructions/manage-cluster#delete_cluster) its forever.

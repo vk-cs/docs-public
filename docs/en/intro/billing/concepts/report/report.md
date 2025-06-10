@@ -19,7 +19,7 @@ If an organization or a sole proprietor has several [projects](/en/tools-for-usi
 
 </info>
 
-How to start receiving reporting documents from VK Cloud, read the article [Additional project configuration for legal entities](../../service-management/corporate). If you have any questions related to accounting documents, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
+How to start receiving reporting documents from VK Cloud, read the article [Additional project configuration for legal entities](../../instructions/corporate). If you have any questions related to accounting documents, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
 <warn>
 
@@ -62,7 +62,7 @@ The composition of the accounting documents depends on the specific terms of the
 
     </info>
 
-    An invoice for payment is not provided. Organizations that work on prepayment [form](../../service-management/bill-generation) it independently in their management console.
+    An invoice for payment is not provided. Organizations that work on prepayment [form](../../instructions/bill-generation) it independently in their management console.
 
 - When working on a post-payment:
 
@@ -85,7 +85,7 @@ The composition of the accounting documents depends on the specific terms of the
 </tabpanel>
 </tabs>
 
-In addition to the documents specified in the contract, a billing report for the selected period is available in your management console. It contains details of resource consumption and is used to confirm the amounts in the accounting documents. Information on downloading is available in the [Downloading the report](../../service-management/detail#downloading_the_report) section.
+In addition to the documents specified in the contract, a billing report for the selected period is available in your management console. It contains details of resource consumption and is used to confirm the amounts in the accounting documents. Information on downloading is available in the [Downloading the report](../../instructions/detail#downloading_the_report) section.
 
 A reconciliation certificate with detailed mutual settlements is available upon request via [technical support](/en/contacts).
 

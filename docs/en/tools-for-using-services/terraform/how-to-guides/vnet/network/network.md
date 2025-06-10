@@ -92,7 +92,7 @@ Here:
     <summary>Examples</summary>
 
   - `external_network_id = data.vkcs_networking_network.extnet.id`: the ID is taken from the `vkcs_networking_network` data source.
-  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: the ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: the ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
@@ -108,7 +108,7 @@ Here:
 
   - `network_id = vkcs_networking_network.example.id`: the subnet will be hosted on a new network, which will be created by the `vkcs_networking_network` resource.
   - `network_id = data.vkcs_networking_network.example.id`: the subnet will be hosted on the existed network, the ID is taken from the `vkcs_networking_network` data source.
-  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the subnet will be hosted on the existed network. The ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the subnet will be hosted on the existed network. The ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
@@ -121,7 +121,7 @@ Here:
 
   - `port_id = vkcs_networking_port.example.id`: the port ID will be taken after creating the `vkcs_networking_port` resource.
   - `port_id = data.vkcs_networking_port.example.id`: the port ID is taken from the `vkcs_networking_port` data source.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the port ID is taken from the [list of ports](/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information) in the VK Cloud account or via the Openstack CLI.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the port ID is taken from the [list of ports](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
@@ -132,11 +132,11 @@ Here:
 
   - `router_id = vkcs_networking_subnet.example.id`: the subnet will be connected to the router that will be created with the `vkcs_networking_router` resource.
   - `router_id = data.vkcs_networking_subnet.example.id`: the subnet will be connected to the existing router. The router ID is taken from the `vkcs_networking_router` data source.
-  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: the subnet will be connected to the existing router. The router ID is taken from the [list of routers](/en/networks/vnet/service-management/router#viewing_a_list_of_routers_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: the subnet will be connected to the existing router. The router ID is taken from the [list of routers](/en/networks/vnet/instructions/router#viewing_a_list_of_routers_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 
-- `sdn` — [SDN](/en/networks/vnet/concepts/architecture#sdns_used), where the resource will be created (nets, subnets, routers, etc.). Possible values: `neutron`, `sprut`. If SDN is not specified, the default SDN is used. You can find out SDNs available to your project in the [project settings](/en/tools-for-using-services/account/service-management/project-settings/manage#sdn_view).
+- `sdn` — [SDN](/en/networks/vnet/concepts/architecture#sdns_used), where the resource will be created (nets, subnets, routers, etc.). Possible values: `neutron`, `sprut`. If SDN is not specified, the default SDN is used. You can find out SDNs available to your project in the [project settings](/en/tools-for-using-services/account/instructions/project-settings/manage#sdn_view).
 
 - `subnet_id` — the ID of the subnet. You can specify ID in the manifest or get it from the data source or resource.
 
@@ -145,7 +145,7 @@ Here:
 
   - `subnet_id = vkcs_networking_subnet.example.id`: the subnet ID will be taken after creating the `vkcs_networking_subnet` resource.
   - `subnet_id = data.vkcs_networking_subnet.example.id`: the subnet ID is taken from the `vkcs_networking_subnet` data source.
-  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the port ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the port ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
 
   </details>
 

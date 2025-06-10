@@ -75,7 +75,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -110,13 +110,13 @@ Here:
     <summary>Examples</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
 - `spark_configuration` — properties of the [Spark configuration](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
 
-- `environment_variables` — a list of the Spark [environment variables](/en/ml/spark-to-k8s/service-management/create).
+- `environment_variables` — a list of the Spark [environment variables](/en/ml/spark-to-k8s/instructions/create).
 
 ## 2. Create a K8S Docker Registry instance manifest file
 
@@ -160,7 +160,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -170,7 +170,7 @@ Here:
     <summary>Examples</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 

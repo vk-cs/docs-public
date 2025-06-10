@@ -23,7 +23,7 @@ After completing all the quick start steps, you will link a payment card to the 
 
 The payment account balance and the bonus balance of the project will be displayed on the page. The bonus balance display the welcome [bonuses](../concepts/balance) accrued after registration.
 
-For more information about the balance, see the [Balance management](../service-management/payment) article.
+For more information about the balance, see the [Balance management](../instructions/payment) article.
 
 ## 2. Make sure that a map is linked to the project
 
@@ -32,7 +32,7 @@ For more information about the balance, see the [Balance management](../service-
 1. Check if the card is linked:
 
    - If the card is linked, its last 4 digits are displayed on the page.
-   - If the card is not linked, the button is displayed on the page **Link a card**. In this case, [bind](../service-management/add-card#bind_the_card) it.
+   - If the card is not linked, the button is displayed on the page **Link a card**. In this case, [bind](../instructions/add-card#bind_the_card) it.
 
 One card can be linked to only one project. When linking the card, a small amount will be debited from it, which will be credited to the project balance.
 
@@ -45,17 +45,17 @@ One card can be linked to only one project. When linking the card, a small amoun
 </tablist>
 <tabpanel>
 
-[Configure auto-completion](../service-management/add-card#configure_auto_completion) from the card, if it was not configured earlier.
+[Configure auto-completion](../instructions/add-card#configure_auto_completion) from the card, if it was not configured earlier.
 
 </tabpanel>
 <tabpanel>
 
-1. [Disable](../service-management/add-card#configure_auto_completion) auto-completion from the card if it was enabled earlier.
+1. [Disable](../instructions/add-card#configure_auto_completion) auto-completion from the card if it was enabled earlier.
 1. Set up [electronic document management (EDM)](../concepts/report) with VK Cloud, following the instructions of your EDM operator.
 
    If you need help with connecting EDM, send a request to the VK Cloud Document Management Department (docs_vktech@vk.company).
 
-1. [Go through pre-registration](../service-management/corporate#additional_registration_of_legal_entities) to generate invoices for payment with full details.
+1. [Go through pre-registration](../instructions/corporate#additional_registration_of_legal_entities) to generate invoices for payment with full details.
 
 </tabpanel>
 </tabs>
@@ -71,14 +71,14 @@ One card can be linked to only one project. When linking the card, a small amoun
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
-1. [Top up](../service-management/payment#making_a_payment) the payment account of the project in a [convenient way](../concepts/payment-methods) for you.
+1. [Top up](../instructions/payment#making_a_payment) the payment account of the project in a [convenient way](../concepts/payment-methods) for you.
 
 </tabpanel>
 <tabpanel>
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
-1. [Create an invoice](../service-management/bill-generation) for the required amount in your management console.
+1. [Create an invoice](../instructions/bill-generation) for the required amount in your management console.
 1. Pay the bill by bank transfer.
 
 Crediting of funds can take up to three banking days.
@@ -90,5 +90,5 @@ Funds will be debited from the payment account as the paid resources are used. I
 
 ## What's next?
 
-- See the available options [expense details](../service-management/detail).
-- Set a monthly spending limit for the project and [set up notifications](../service-management/payment#expenses_notifications) when the limit is reached.
+- See the available options [expense details](../instructions/detail).
+- Set a monthly spending limit for the project and [set up notifications](../instructions/payment#expenses_notifications) when the limit is reached.

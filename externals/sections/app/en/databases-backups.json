@@ -17,16 +17,16 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/storage/backups/service-management/create-backup-plan"
+                    "link": "/en/storage/backups/instructions/create-backup-plan"
                 },
                 {
-                    "link": "/en/storage/backups/service-management/create-backup-copy"
+                    "link": "/en/storage/backups/instructions/create-backup-copy"
                 },
                 {
-                    "link": "/en/storage/backups/service-management/restore-from-backup"
+                    "link": "/en/storage/backups/instructions/restore-from-backup"
                 },
                 {
-                    "link": "/en/storage/backups/service-management/point-in-time-recovery-pitr"
+                    "link": "/en/storage/backups/instructions/point-in-time-recovery-pitr"
                 }
             ]
         },

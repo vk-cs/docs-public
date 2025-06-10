@@ -10,7 +10,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
 ## {heading(Before you start )[id=prepare]}
 
-1. [Create](../../service-management/create-cluster) a cluster, if you have not done it already.
+1. [Create](../../instructions/create-cluster) a cluster, if you have not done it already.
 1. [Install and configure](../../connect/kubectl) `kubectl`, if you have not done it already.
 1. [Connect](../../connect/kubectl#checking_connection_to_cluster) to the cluster using `kubectl`.
 1. Prepare the CPU and RAM data of the scaling node:
@@ -103,4 +103,4 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
 ## {heading(Delete unused resources)[id=delete]}
 
-If you no longer need the created cluster, [delete](../../service-management/manage-cluster#delete_cluster) it.
+If you no longer need the created cluster, [delete](../../instructions/manage-cluster#delete_cluster) it.

@@ -1,4 +1,4 @@
-The examples of creating different Kubernetes clusters using Terraform are provided below. The cluster creation procedure is described in details in the [Creating a cluster with Terraform](/en/kubernetes/k8s/service-management/create-cluster/create-terraform) section.
+The examples of creating different Kubernetes clusters using Terraform are provided below. The cluster creation procedure is described in details in the [Creating a cluster with Terraform](/en/kubernetes/k8s/instructions/create-cluster/create-terraform) section.
 
 ## Before creating a cluster
 
@@ -6,7 +6,7 @@ The examples of creating different Kubernetes clusters using Terraform are provi
 
    If you want to increase quotas, contact [technical support](mailto:support@mcs.mail.ru).
 
-1. Learn about the [features of using Terraform](/en/kubernetes/k8s/service-management/helpers/terraform-howto) with the Cloud Containers service.
+1. Learn about the [features of using Terraform](/en/kubernetes/k8s/instructions/helpers/terraform-howto) with the Cloud Containers service.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 

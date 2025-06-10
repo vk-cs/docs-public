@@ -11,7 +11,7 @@ This article shows how to create a cluster with a GPU node and test its operatio
 ## Before you start
 
 1. [Connect](en/computing/gpu/connect) the Cloud GPU service if it is not connected yet.
-1. [Create a cluster](/en/kubernetes/k8s/service-management/create-cluster) with GPU if such a cluster has not been created yet. Specify the following parameters:
+1. [Create a cluster](/en/kubernetes/k8s/instructions/create-cluster) with GPU if such a cluster has not been created yet. Specify the following parameters:
 
    - Select a network with Internet access.
    - Leave the **Assign external IP** option enabled.
@@ -31,7 +31,7 @@ This article shows how to create a cluster with a GPU node and test its operatio
 
 ## 1. Install GPU Operator add-on
 
-Follow the [installation instructions](/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-gpu-operator).
+Follow the [installation instructions](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-gpu-operator).
 
 ## 2. Test cluster
 
@@ -99,7 +99,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 ## 3. Split GPU using MPS technology
 
-1. [Add](/en/kubernetes/k8s/service-management/addons/manage-addons#editing_addon_code) NVIDIA device plugin configuration to GPU Operator add-on code:
+1. [Add](/en/kubernetes/k8s/instructions/addons/manage-addons#editing_addon_code) NVIDIA device plugin configuration to GPU Operator add-on code:
 
    <warn>
 
@@ -172,7 +172,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
    <info>
 
-   You can [add a label](en/kubernetes/k8s/service-management/manage-node-group#labels_taints) for all nodes in a group via your management console.
+   You can [add a label](en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for all nodes in a group via your management console.
 
    </info>
 
@@ -279,5 +279,5 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 A running Cloud Containers cluster is billed and consumes compute resources. If you no longer need it:
 
-- [Stop](en/kubernetes/k8s/service-management/manage-cluster#stop) it to use later.
-- [Delete](en/kubernetes/k8s/service-management/manage-cluster#delete_cluster) it permanently.
+- [Stop](en/kubernetes/k8s/instructions/manage-cluster#stop) it to use later.
+- [Delete](en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.

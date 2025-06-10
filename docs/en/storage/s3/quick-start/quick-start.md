@@ -63,7 +63,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    1. Make sure that the `private` ACL settings are selected.
 1. Click the **Select files** button and select the file to upload to the bucket.
 
-1. Provide access to the uploaded object via a temporary [signed link](../service-management/objects/signed-url):
+1. Provide access to the uploaded object via a temporary [signed link](../instructions/objects/signed-url):
 
 1. Generate a temporary link to access the object with private ACL settings by running the command:
 
@@ -128,5 +128,5 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 ## Delete unused resources
 
-1. You have to [pay](../tariffication) for uploaded objects. If you no longer need them, [delete them](../service-management/objects/manage-object).
-1. If you no longer need a bucket, [delete it](../service-management/buckets/bucket#removing_a_bucket).
+1. You have to [pay](../tariffication) for uploaded objects. If you no longer need them, [delete them](../instructions/objects/manage-object).
+1. If you no longer need a bucket, [delete it](../instructions/buckets/bucket#removing_a_bucket).

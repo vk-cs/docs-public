@@ -29,4 +29,4 @@ The MLflow instance web interface will open.
 
 ## Delete unused resources
 
-MLflow instances are priced. If you no longer need the created instance, [delete](../service-management/manage#delete) it.
+MLflow instances are priced. If you no longer need the created instance, [delete](../instructions/manage#delete) it.

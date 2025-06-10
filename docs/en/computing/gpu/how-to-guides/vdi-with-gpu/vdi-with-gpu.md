@@ -29,7 +29,7 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the desktops will be placed.
 1. Go to **Cloud Desktop** → **Service settings**.
-1. On the **Network settings** tab, specify the [network parameters](/en/computing/cloud-desktops/service-management/config/setup-net):
+1. On the **Network settings** tab, specify the [network parameters](/en/computing/cloud-desktops/instructions/config/setup-net):
 
     - **Router**: a router from the list.
     - **IP address space**: a range of IP addresses for the subnets where the service resources will be deployed.
@@ -38,7 +38,7 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
     - **Availability zone**: for example, `Moscow (MS1)`.
 
 1. Click the **Save** button.
-1. On the **Directory settings** tab, specify specify [the parameters for connecting to the user directory](/en/computing/cloud-desktops/service-management/config/setup-ldap):
+1. On the **Directory settings** tab, specify specify [the parameters for connecting to the user directory](/en/computing/cloud-desktops/instructions/config/setup-ldap):
 
     - **Host**: the IP address or FQDN of the OpenLDAP server.
     - **Port**: the port number for LDAP access — `389`.
@@ -48,13 +48,13 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
     - **Selection field**: `UID`.
 
 1. Click the **Save** button.
-1. (Optional) On the **SAML** tab, [set up](/en/computing/cloud-desktops/service-management/config/setup-saml) two-factor authentication.
+1. (Optional) On the **SAML** tab, [set up](/en/computing/cloud-desktops/instructions/config/setup-saml) two-factor authentication.
 
 ## 2. Create pool of desktops
 
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Click the **Add** button.
-1. At the **Configuration** step, specify the [pool parameters](/en/computing/cloud-desktops/service-management/desktops-pool/add#setup_pool_configuration):
+1. At the **Configuration** step, specify the [pool parameters](/en/computing/cloud-desktops/instructions/desktops-pool/add#setup_pool_configuration):
 
     - **Pool name**: for example, `vk-cloud-desktops-pool-gpu`.
     - **Pool type**: for example, `Sessional`.
@@ -64,7 +64,7 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
     Select the remaining parameters at your discretion.
 
 1. Click the **Next step** button.
-1. At the **Virtual machine settings** step, [configure the pool VMs](/en/computing/cloud-desktops/service-management/desktops-pool/add#configure_pool_vms):
+1. At the **Virtual machine settings** step, [configure the pool VMs](/en/computing/cloud-desktops/instructions/desktops-pool/add#configure_pool_vms):
 
     - **Instance type**: the name of the VM flavor received from the technical support — `GPU2-24-96-T4-1`.
     - **Image**: for example, `Windows Server 2019 Standard (en)`.
@@ -93,7 +93,7 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
 
     In the example, the IP address is `99.166.240.100`.
 
-1. Download and install the client for accessing remote desktops: [Cloud Desktop Client](/en/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download").
+1. Download and install the client for accessing remote desktops: [Cloud Desktop Client](/en/computing/cloud-desktops/instructions/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download").
 
 1. Connect to the pools:
 
@@ -109,4 +109,4 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
 
 ## Delete unused resources
 
-A running service consumes computing resources. If you don't need it anymore, [delete](/en/computing/cloud-desktops/service-management/desktops-pool/manage#delete_pool) the desktop pool.
+A running service consumes computing resources. If you don't need it anymore, [delete](/en/computing/cloud-desktops/instructions/desktops-pool/manage#delete_pool) the desktop pool.

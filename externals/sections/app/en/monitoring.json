@@ -14,10 +14,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/monitoring-services/monitoring/service-management/mon-setup-new"
+                    "link": "/en/monitoring-services/monitoring/instructions/mon-setup-new"
                 },
                 {
-                    "link": "/en/monitoring-services/monitoring/service-management/mon-setup-current"
+                    "link": "/en/monitoring-services/monitoring/instructions/mon-setup-current"
                 }
             ]
         }
