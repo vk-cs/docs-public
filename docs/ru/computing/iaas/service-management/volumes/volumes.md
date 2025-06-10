@@ -1,6 +1,6 @@
 Система хранения данных на платформе VK Cloud организована с использованием [сетевых и локальных дисков](../../concepts/data-storage/disk-types), различающихся между собой надежностью хранения, количеством реплик данных и параметрами [производительности](../../concepts/data-storage/volume-sla).
 
-Конфигурация основного диска задается на этапе [создания виртуальной машины](../vm/vm-create), дополнительные диски можно [создать](#sozdanie-diska) позже и [подключить](#podklyuchenie-diska-k-vm) к нужным ВМ. Для созданных дисков доступны операции [изменения размера](#izmenenie-razmera-diska) и [типа](#izmenenie-tipa-diska). Диски можно [перемещать между проектами](#peremeshchenie-diskov-mezhdu-proektami) и виртуальными машинами, [отключать от ВМ](#otklyuchenie_diska_ot_vm), а также [делать загрузочными](#izmenenie_atributa_zagruzochnyy) и не загрузочными. Диски, которые больше не используются, можно [удалить](#udalenie_diska).
+Конфигурация основного диска задается на этапе [создания виртуальной машины](../vm/vm-create), дополнительные диски можно [создать](#sozdanie-diska) позже и [подключить](#podklyuchenie-diska-k-vm) к нужным ВМ. Для созданных дисков доступны операции [изменения размера](#izmenenie-razmera-diska) и [типа](#izmenenie-tipa-diska). Диски можно [перемещать между проектами](#peremeshchenie-diskov-mezhdu-proektami) и виртуальными машинами, [отключать от ВМ](#otklyuchenie_diska_ot_vm), а также [делать загрузочными](#izmenenie_atributa_zagruzochnyy) и незагрузочными. Диски, которые больше не используются, можно [удалить](#udalenie_diska).
 
 ## {heading(Создание диска)[id=create_disk]}
 
@@ -403,7 +403,7 @@
       openstack volume set --bootable <ID диска>
       ```
 
-   - Сделать диск не загрузочным:
+   - Сделать диск незагрузочным:
 
       ```console
       openstack volume set --non-bootable <ID диска>
