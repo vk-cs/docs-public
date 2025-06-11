@@ -44,6 +44,6 @@
     - Степень детализации: день, неделя, месяц или год.
     - Тип движения средств: списания или поступления.
 
-1. Нажмите на значок ![Скачать](/ru/tools-for-using-services/partner-platform/service-management/reports/balance/assets/download_icon.svg "inline").
+1. Нажмите на значок ![Скачать](/ru/tools-for-using-services/partner-platform/instructions/reports/balance/assets/download_icon.svg "inline").
 1. В открывшемся окне укажите тип скачиваемого отчета: **docx**, **xlsx**, **Для бухгалтерии**.
 1. Нажмите кнопку **Скачать отчет**.
