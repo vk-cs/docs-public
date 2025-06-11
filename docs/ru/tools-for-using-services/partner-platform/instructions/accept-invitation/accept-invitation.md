@@ -1,4 +1,4 @@
-Клиент партнера присоединяется к VK Cloud по [приглашению](/ru/tools-for-using-services/partner-platform/service-management/invite-client), которое приходит на его почту.
+Клиент партнера присоединяется к VK Cloud по [приглашению](/ru/tools-for-using-services/partner-platform/instructions/invite-client), которое приходит на его почту.
 
 Письмо с приглашением приходит с темой **Вас приглашают подключиться к партнерскому проекту в VK Cloud**.
 
