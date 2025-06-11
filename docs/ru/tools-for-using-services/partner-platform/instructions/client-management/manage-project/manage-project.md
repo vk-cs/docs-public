@@ -13,7 +13,7 @@
 
 Клиент лишается доступа к заблокированному проекту. Потребление ресурсов при этом не останавливается и партнер должен его оплачивать.
 
-Чтобы остановить потребление, напишите в [техническую поддержку](/ru/contacts) или на на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) и укажите [PID](/ru/tools-for-using-services/partner-platform/service-management/client-management/client-information#prosmotr_spiska_proektov_klienta) заблокированного проекта.
+Чтобы остановить потребление, напишите в [техническую поддержку](/ru/contacts) или на на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) и укажите [PID](/ru/tools-for-using-services/partner-platform/instructions/client-management/client-information#prosmotr_spiska_proektov_klienta) заблокированного проекта.
 
 ## Разблокировка проекта
 
