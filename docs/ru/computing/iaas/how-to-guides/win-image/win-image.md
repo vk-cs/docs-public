@@ -191,7 +191,7 @@
 
 ## 6. Импортируйте образ в облако VK Cloud
 
-[Воспользуйтесь OpenStack CLI](../../service-management/images/images-manage#import_obraza) для импорта образа:
+[Воспользуйтесь OpenStack CLI](../../instructions/images/images-manage#import_obraza) для импорта образа:
 
 ```console
 openstack image create \
@@ -209,10 +209,10 @@ openstack image create \
     --property os_type=windows \
     <ИМЯ_ОБРАЗА>
 ```
-Замените <ИМЯ_ОБРАЗА> на актуальное. Аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/service-management/images/image-metadata).
+Замените <ИМЯ_ОБРАЗА> на актуальное. Аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/instructions/images/image-metadata).
 
-Дождитесь завершения операции. После загрузки образа появится возможность [создавать ВМ](../../service-management/vm/vm-create) стандартными средствами платформы VK Cloud.
+Дождитесь завершения операции. После загрузки образа появится возможность [создавать ВМ](../../instructions/vm/vm-create) стандартными средствами платформы VK Cloud.
 
 ## Удалите неиспользуемые ресурсы
 
-Если импортированный образ вам больше не нужен, [удалите его](../../service-management/images/images-manage#udalenie_obraza).
+Если импортированный образ вам больше не нужен, [удалите его](../../instructions/images/images-manage#udalenie_obraza).

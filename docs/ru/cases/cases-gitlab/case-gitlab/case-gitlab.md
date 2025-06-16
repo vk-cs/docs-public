@@ -5,8 +5,8 @@
 ## Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
-1. [Создайте](/ru/networks/vnet/service-management/secgroups) группу безопасности `gitlab` и добавьте в нее  разрешения на входящий трафик для портов:
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
+1. [Создайте](/ru/networks/vnet/instructions/secgroups) группу безопасности `gitlab` и добавьте в нее  разрешения на входящий трафик для портов:
 
    - `80` (HTTP),
    - `443` (HTTPS),
@@ -15,7 +15,7 @@
 
    Вместо `35242` можно использовать любой порт, не зарезервированный операционной системой.
 
-1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create) с операционной системой Ubuntu.
+1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create) с операционной системой Ubuntu.
 
    При выборе параметров ВМ учитывайте [требования к оборудованию](https://docs.gitlab.com/ee/install/requirements.html), необходимые для установки GitLab и GitLab Runner.
 
@@ -46,7 +46,7 @@
 
     </details>
 
-1. [Подключитесь к ВМ](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) `OA-Ubuntu-docker` по SSH.
+1. [Подключитесь к ВМ](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) `OA-Ubuntu-docker` по SSH.
 1. Проверьте состояние файервола операционной системы и отключите его, если он активен:
 
     ```console
@@ -103,7 +103,7 @@ GitLab для доступа по SSH по умолчанию используе
 
     <info>
 
-    Номер `35242` использован в качестве примера. Если вы используете другой номер, откройте его для подключения по SSH в настройках файервола ВМ. Подробнее в разделе [Управление правилами файервола](/ru/networks/vnet/service-management/secgroups).
+    Номер `35242` использован в качестве примера. Если вы используете другой номер, откройте его для подключения по SSH в настройках файервола ВМ. Подробнее в разделе [Управление правилами файервола](/ru/networks/vnet/instructions/secgroups).
 
     </info>
 
@@ -283,5 +283,5 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `OA-Ubuntu-docker`.
-- При необходимости [удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес `185.185.185.185`.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ `OA-Ubuntu-docker`.
+- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес `185.185.185.185`.

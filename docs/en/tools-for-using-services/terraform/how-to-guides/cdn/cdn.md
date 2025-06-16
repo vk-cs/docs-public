@@ -149,7 +149,7 @@ Here:
 
      - `origin_group = vkcs_cdn_origin_group.origin_group.id`: the origin group identifier will be obtained after creating the `vkcs_cdn_origin_group` resource.
      - `origin_group = data.vkcs_cdn_origin_group.origin_group.id`: the group identifier will be obtained from the `vkcs_cdn_origin_group` data source.
-     - `origin_group = "266524"`: the identifier obtained from the [list of origin groups](/en/networks/cdn/service-management/manage-origin-groups#origin_group_list) in the VK Cloud personal account is specified.
+     - `origin_group = "266524"`: the identifier obtained from the [list of origin groups](/en/networks/cdn/instructions/manage-origin-groups#origin_group_list) in the VK Cloud personal account is specified.
 
     </details>
 

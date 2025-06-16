@@ -2,7 +2,7 @@ VK Cloud позволяет использовать интерфейс кома
 
 ## Подготовительные шаги
 
-1. [Создайте аккаунт и ключ доступа](../../service-management/access-management/access-keys) к Cloud Storage в личном кабинете VK Cloud. Сохраните **Secret Key**.
+1. [Создайте аккаунт и ключ доступа](../../instructions/access-management/access-keys) к Cloud Storage в личном кабинете VK Cloud. Сохраните **Secret Key**.
 
 2. Установите нужные инструменты:
 

@@ -16,7 +16,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    </tablist>
    <tabpanel>
 
-   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/create) in your VK Cloud project. It already contains the configured Python 3.x and pip, which you can work with from the JupyterHub notebook.
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) in your VK Cloud project. It already contains the configured Python 3.x and pip, which you can work with from the JupyterHub notebook.
 
    </tabpanel>
    <tabpanel>
@@ -38,7 +38,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    </tablist>
    <tabpanel>
 
-   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/service-management/connect).
+   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
       ```console
@@ -59,7 +59,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
    The up-to-date version of the library is always available at the link provided.
 
-1. [Create an access token](../../service-management/tokens#creating_an_access_token) with the `Administrator` role. This token is required to work with the library.
+1. [Create an access token](../../instructions/tokens#creating_an_access_token) with the `Administrator` role. This token is required to work with the library.
 
    <err>
 
@@ -69,7 +69,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
    </err>
 
-1. [Create](../../service-management/create) a Cloud Spark cluster.
+1. [Create](../../instructions/create) a Cloud Spark cluster.
 
    Select the cluster parameters at your discretion.
 
@@ -88,7 +88,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
 1. Find and write down the ID of the created cluster (contained in the `id` field).
 
-1. [Create a ClickHouse instance](/en/dbs/dbaas/service-management/create/create-single-replica) that:
+1. [Create a ClickHouse instance](/en/dbs/dbaas/instructions/create/create-single-replica) that:
 
    - uses the newest version available;
    - uses the Single configuration;
@@ -174,7 +174,7 @@ All mentioned environment variables [will be set up later](#3_send_the_spark_job
       - cluster identifier (contained in the `id` field);
       - Cloud Storage bucket name (contained in the `s3_bucket_name` field).
 
-1. [Upload](/en/storage/s3/service-management/objects/upload-object) files to the `spark-files` directory of this bucket:
+1. [Upload](/en/storage/s3/instructions/objects/upload-object) files to the `spark-files` directory of this bucket:
 
    - the `query-clickhouse.py` file with the Spark application code;
    - the [clickhouse-jdbc-0.5.0-shaded.jar](https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/0.5.0/clickhouse-jdbc-0.5.0-shaded.jar) file with the JDBC driver for ClickHouse.
@@ -339,6 +339,6 @@ If you no longer need the created resources, delete them:
 
 1. Delete the Spark cluster.
 1. Delete the Docker registry for this Spark cluster.
-1. Delete [objects from the bucket](/en/storage/s3/service-management/objects/manage-object#udalenie_obekta) and [the bucket itself](/en/storage/s3/service-management/buckets/bucket#removing_a_bucket) that was used by this cluster.
-1. [Delete the access token](../../service-management/tokens#deleting_an_access_token).
-1. [Delete the ClickHouse instance](/en/dbs/dbaas/service-management/delete).
+1. Delete [objects from the bucket](/en/storage/s3/instructions/objects/manage-object#udalenie_obekta) and [the bucket itself](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket) that was used by this cluster.
+1. [Delete the access token](../../instructions/tokens#deleting_an_access_token).
+1. [Delete the ClickHouse instance](/en/dbs/dbaas/instructions/delete).

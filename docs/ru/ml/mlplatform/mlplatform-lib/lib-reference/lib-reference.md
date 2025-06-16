@@ -1437,10 +1437,10 @@ create_deployment(deploy_server_name: str,
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
    ```
 
-1. [Создайте](../../jupyterhub/service-management/create) инстанс JupyterHub, если это еще не сделано.
-1. [Создайте](../../mlflow/service-management/create) инстанс MLflow, если это еще не сделано.
+1. [Создайте](../../jupyterhub/instructions/create) инстанс JupyterHub, если это еще не сделано.
+1. [Создайте](../../mlflow/instructions/create) инстанс MLflow, если это еще не сделано.
 1. Создайте и обучите ML-модель, если это еще не сделано.
-1. [Создайте](../../deploymlflow/service-management/create) инстанс MLflow Deploy, если это еще не сделано.
+1. [Создайте](../../deploymlflow/instructions/create) инстанс MLflow Deploy, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -1922,10 +1922,10 @@ ping_model(deploy_server_name: str,
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
    ```
 
-1. [Создайте](../../jupyterhub/service-management/create) инстанс JupyterHub, если это еще не сделано.
-1. [Создайте](../../mlflow/service-management/create) инстанс MLflow, если это еще не сделано.
+1. [Создайте](../../jupyterhub/instructions/create) инстанс JupyterHub, если это еще не сделано.
+1. [Создайте](../../mlflow/instructions/create) инстанс MLflow, если это еще не сделано.
 1. Создайте и обучите ML-модель, если это еще не сделано.
-1. [Создайте](../../deploymlflow/service-management/create) инстанс MLflow Deploy, если это еще не сделано.
+1. [Создайте](../../deploymlflow/instructions/create) инстанс MLflow Deploy, если это еще не сделано.
 1. Разверните ML-модель на инстансе MLflow Deploy с помощью метода [create_deployment](#create_deployment).
 1. Выполните скрипт Python:
 
@@ -2038,10 +2038,10 @@ predict_model(data: Dict,
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
    ```
 
-1. [Создайте](../../jupyterhub/service-management/create) инстанс JupyterHub, если это еще не сделано.
-1. [Создайте](../../mlflow/service-management/create) инстанс MLflow, если это еще не сделано.
+1. [Создайте](../../jupyterhub/instructions/create) инстанс JupyterHub, если это еще не сделано.
+1. [Создайте](../../mlflow/instructions/create) инстанс MLflow, если это еще не сделано.
 1. Создайте и обучите ML-модель, если это еще не сделано.
-1. [Создайте](../../deploymlflow/service-management/create) инстанс MLflow Deploy, если это еще не сделано.
+1. [Создайте](../../deploymlflow/instructions/create) инстанс MLflow Deploy, если это еще не сделано.
 1. Разверните ML-модель на инстансе MLflow Deploy с помощью метода [create_deployment](#create_deployment).
 1. Выполните скрипт Python:
 

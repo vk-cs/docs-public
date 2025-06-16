@@ -67,7 +67,7 @@
 
 <summary>Как включить двухфакторную аутентификацию?</summary>
 
-Воспользуйтесь инструкцией [Включение 2FA](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa).
+Воспользуйтесь инструкцией [Включение 2FA](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa).
 
 </details>
 

@@ -14,10 +14,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/monitoring-services/monitoring/service-management/mon-setup-new"
+                    "link": "/ru/monitoring-services/monitoring/instructions/mon-setup-new"
                 },
                 {
-                    "link": "/ru/monitoring-services/monitoring/service-management/mon-setup-current"
+                    "link": "/ru/monitoring-services/monitoring/instructions/mon-setup-current"
                 }
             ]
         }

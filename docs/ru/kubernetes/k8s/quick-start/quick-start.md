@@ -89,15 +89,15 @@
 
 </warn>
 
-1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-registry) `docker-registry`.
+1. [Установите аддон](../instructions/addons/advanced-installation/install-advanced-registry) `docker-registry`.
 
    Запишите данные для доступа к реестру Docker.
 
-1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-monitoring) `kube-prometheus-stack`.
+1. [Установите аддон](../instructions/addons/advanced-installation/install-advanced-monitoring) `kube-prometheus-stack`.
 
    Запишите пароль для доступа к веб-интерфейсу Grafana.
 
-1. [Установите аддон](../service-management/addons/advanced-installation/install-advanced-ingress) `ingress-nginx` с параметрами по умолчанию.
+1. [Установите аддон](../instructions/addons/advanced-installation/install-advanced-ingress) `ingress-nginx` с параметрами по умолчанию.
 
    Запишите Floating IP-адрес для балансировщика нагрузки.
 
@@ -790,8 +790,8 @@ K8S Persistent Volume status: present
 
 Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-- [остановите](../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](../service-management/manage-cluster#delete_cluster) его навсегда.
+- [остановите](../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+- [удалите](../instructions/manage-cluster#delete_cluster) его навсегда.
 
 ## Что дальше?
 

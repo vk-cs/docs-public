@@ -2,7 +2,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 ## Preparatory steps
 
-1. [Create](/ru/kubernetes/k8s/service-management/create-cluster/create-webui) Kubernetes cluster in VK Cloud.
+1. [Create](/ru/kubernetes/k8s/instructions/create-cluster/create-webui) Kubernetes cluster in VK Cloud.
 1. [Connect](/ru/kubernetes/k8s/connect/kubectl) to the cluster using kubectl.
 1. Create a test application:
 
@@ -143,5 +143,5 @@ Example of a successful result:
 
 A running cluster consumes computing resources. If you no longer need it:
 
-- [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-- [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.
+- [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+- [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.

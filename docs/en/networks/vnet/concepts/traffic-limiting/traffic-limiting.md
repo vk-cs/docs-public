@@ -1,6 +1,6 @@
 ## {heading(IP Source Guard)[id=source_guard]}
 
-For OpenStack ports, you can specify a list of IP addresses to use [IP Source Guard](/en/networks/vnet/service-management/source-guard).
+For OpenStack ports, you can specify a list of IP addresses to use [IP Source Guard](/en/networks/vnet/instructions/source-guard).
 Only traffic whose source IP address is on this list will pass through the port. This helps protect against IP spoofing attacks.
 
 For example, you can allow:
@@ -74,7 +74,7 @@ In your management console, you can use preset security groups with the followin
 |Any incoming traffic from any IP addresses is allowed
 |===
 
-To use a preset security group, [create a VM](/en/computing/iaas/service-management/vm/vm-create) with this group. After that, the group will appear in the project and will be available even after the VM is deleted.
+To use a preset security group, [create a VM](/en/computing/iaas/instructions/vm/vm-create) with this group. After that, the group will appear in the project and will be available even after the VM is deleted.
 
 Preset security groups that can be assigned to VMs depend on the OS image:
 
@@ -89,7 +89,7 @@ There are no preset groups when working via OpenStack CLI and Terraform. You can
 
 ## {heading(Custom security groups)[id=custom_sg]}
 
-You can create any other traffic restrictions. To do this, [create](../../service-management/secgroups#create_a_security_group) security groups with specific firewall rules and [assign](../../service-management/secgroups#assign-rule) them to ports.
+You can create any other traffic restrictions. To do this, [create](../../instructions/secgroups#create_a_security_group) security groups with specific firewall rules and [assign](../../instructions/secgroups#assign-rule) them to ports.
 
 For custom security groups to work correctly:
 

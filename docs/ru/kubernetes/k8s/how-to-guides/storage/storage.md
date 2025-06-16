@@ -2,7 +2,7 @@
 
 ## 1. Подготовительные шаги
 
-1. [Создайте](../../service-management/create-cluster) кластер Kubernetes самой актуальной версии.
+1. [Создайте](../../instructions/create-cluster) кластер Kubernetes самой актуальной версии.
 
    При создании кластера:
 
@@ -13,7 +13,7 @@
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../service-management/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../service-management/addons/advanced-installation/install-advanced-ingress) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
+1. [Убедитесь](../../instructions/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../instructions/addons/advanced-installation/install-advanced-ingress) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
 
     <warn>
 
@@ -62,7 +62,7 @@
 
 Чтобы подключить постоянный том с помощью статического PVC:
 
-1. [Создайте сетевой HDD-диск](/ru/computing/iaas/service-management/volumes).
+1. [Создайте сетевой HDD-диск](/ru/computing/iaas/instructions/volumes).
 
    При создании укажите:
 
@@ -445,7 +445,7 @@
 
 Чтобы подключить постоянный том NFS с помощью статического PVC:
 
-1. [Создайте файловое хранилище](/ru/computing/iaas/service-management/fs-manage#creating_a_file_storage).
+1. [Создайте файловое хранилище](/ru/computing/iaas/instructions/fs-manage#creating_a_file_storage).
 
    При создании укажите:
 
@@ -455,7 +455,7 @@
    - **Cеть:** сеть и подсеть, в которых размещен кластер Kubernetes. Эту информацию можно узнать на странице кластера.
    - **Cеть файлового хранилища:** существующая сеть. Если подходящей сети нет в списке, выберите пункт `Создать новую сеть`.
 
-1. [Посмотрите информацию](/ru/computing/iaas/service-management/fs-manage#prosmotr_informacii_o_faylovom_hranilishche) о созданном файловом хранилище.
+1. [Посмотрите информацию](/ru/computing/iaas/instructions/fs-manage#prosmotr_informacii_o_faylovom_hranilishche) о созданном файловом хранилище.
 
    Сохраните значение параметра **Точка подключения**.
 
@@ -713,7 +713,7 @@
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Определите](../../service-management/addons/advanced-installation/install-advanced-ingress#poluchenie_ip_adresa_balansirovshchika) публичный IP-адрес Ingress-контроллера.
+1. [Определите](../../instructions/addons/advanced-installation/install-advanced-ingress#poluchenie_ip_adresa_balansirovshchika) публичный IP-адрес Ingress-контроллера.
 
 1. Проверьте доступность приложений с помощью `curl`, используя IP-адрес Ingress-контроллера.
 
@@ -840,5 +840,5 @@
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.

@@ -16,7 +16,7 @@ The following will be used:
 
 ## 1. Preparatory steps
 
-1. Create an [account](/en/storage/s3/access-management/s3-account) and a [bucket](/en/storage/s3/service-management/buckets/create-bucket) with the `uc_bucket` name.
+1. Create an [account](/en/storage/s3/access-management/s3-account) and a [bucket](/en/storage/s3/instructions/buckets/create-bucket) with the `uc_bucket` name.
 1. Make sure you have the AWS CLI [installed and configured](/ru/tools-for-using-services/cli/aws-cli "change-lang"). Specify the credentials for connecting to the bucket in it (`Access key ID` and `Secret key`). Open the `~/.aws/config` configuration file and make changes to it:
 
    ```txt
@@ -31,9 +31,9 @@ The following will be used:
        addressing_style = path
    ```
 
-1. [Create](/en/computing/iaas/service-management/vm/vm-create) an Ubuntu 22.04 VM in VK Cloud.
+1. [Create](/en/computing/iaas/instructions/vm/vm-create) an Ubuntu 22.04 VM in VK Cloud.
 1. Install the [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) utility on the VM.
-1. [Create](/en/computing/iaas/service-management/volumes#create_disk) a disk of at least 600 GB in size and [connect](/en/computing/iaas/service-management/volumes#mount_disk) it to the VM.
+1. [Create](/en/computing/iaas/instructions/volumes#create_disk) a disk of at least 600 GB in size and [connect](/en/computing/iaas/instructions/volumes#mount_disk) it to the VM.
 
 ## 2. Upload the image from the local machine to the object storage
 
@@ -118,7 +118,7 @@ The following will be used:
 
 ## 3. Upload the image to the VK Cloud disk
 
-1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the VM via SSH.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the VM via SSH.
 1. Check for a mounted disk using the `lsblk` command.
 
    <details>
@@ -139,16 +139,16 @@ The following will be used:
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. [Mark](/en/computing/iaas/service-management/volumes#changing_bootable_attribute) the disk containing the OS image as bootable.
-1. [Replace the VM root disk](/en/computing/iaas/service-management/volumes#replacing_root_disk) with the disk containing the OS image.
-1. [Start](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM. Verify that the start has been successful.
+1. [Mark](/en/computing/iaas/instructions/volumes#changing_bootable_attribute) the disk containing the OS image as bootable.
+1. [Replace the VM root disk](/en/computing/iaas/instructions/volumes#replacing_root_disk) with the disk containing the OS image.
+1. [Start](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the VM. Verify that the start has been successful.
 
-You can also [disconnect](/en/computing/iaas/service-management/volumes#mount_disk) the disk with the OS image placed on it from the current VM and use it as a [replacement for the root disk](/en/computing/iaas/service-management/volumes#replacing_root_disk) for another VM.
+You can also [disconnect](/en/computing/iaas/instructions/volumes#mount_disk) the disk with the OS image placed on it from the current VM and use it as a [replacement for the root disk](/en/computing/iaas/instructions/volumes#replacing_root_disk) for another VM.
 
 ## Delete unused resources
 
 The created resources are charged and consume computing resources. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM.
-- [Delete](../../service-management/buckets/bucket#removing_a_bucket) the `uc_bucket` bucket.
-- [Delete](/en/computing/iaas/service-management/volumes#deleting_disk) the disk.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the VM.
+- [Delete](../../instructions/buckets/bucket#removing_a_bucket) the `uc_bucket` bucket.
+- [Delete](/en/computing/iaas/instructions/volumes#deleting_disk) the disk.

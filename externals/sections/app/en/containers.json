@@ -27,7 +27,7 @@
                     "link": "/en/kubernetes/k8s/quick-start"
                 },
                 {
-                    "link": "/en/kubernetes/k8s/service-management/create-cluster"
+                    "link": "/en/kubernetes/k8s/instructions/create-cluster"
                 },
                 {
                     "link": "/en/kubernetes/k8s/connect"
@@ -44,7 +44,7 @@
                     "link": "/en/kubernetes/k8s/install-tools"
                 },
                 {
-                    "link": "/en/kubernetes/k8s/service-management/addons"
+                    "link": "/en/kubernetes/k8s/instructions/addons"
                 },
                 {
                     "link": "/en/kubernetes/k8s/how-to-guides/ingress"

@@ -28,7 +28,7 @@
 
 <info>
 
-Если после входа в VK Cloud открылась страница **Включение двухфакторной аутентификации**, [настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) эту опцию, чтобы получить доступ к личному кабинету.
+Если после входа в VK Cloud открылась страница **Включение двухфакторной аутентификации**, [настройте](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) эту опцию, чтобы получить доступ к личному кабинету.
 
 </info>
 

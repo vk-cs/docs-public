@@ -1,4 +1,4 @@
-Есть несколько способов [пополнить](../../service-management/payment) баланс [проекта](/ru/tools-for-using-services/account/concepts/projects). Внесенные средства поступают на [баланс лицевого счет](../balance) проекта, откуда потом расходуются на оплату сервисов.
+Есть несколько способов [пополнить](../../instructions/payment) баланс [проекта](/ru/tools-for-using-services/account/concepts/projects). Внесенные средства поступают на [баланс лицевого счет](../balance) проекта, откуда потом расходуются на оплату сервисов.
 
 Список доступных способов оплаты отображается на странице **Баланс** личного кабинета при нажатии на кнопку **Пополнить баланс**. Доступные способы зависят от [региона](/ru/tools-for-using-services/account/concepts/regions).
 
@@ -19,7 +19,7 @@
 
   Поддерживаются карты, выпущенные в России, с валютой рубль.
 
-  Для всех карт, кроме UnionPay, можно [настроить автопополнение](../../service-management/add-card#nastroit_avtopopolnenie).
+  Для всех карт, кроме UnionPay, можно [настроить автопополнение](../../instructions/add-card#nastroit_avtopopolnenie).
 
 - Электронные деньги.
 
@@ -45,7 +45,7 @@
 
 - Банковский перевод.
 
-    Эта опция недоступна в личном кабинете. Для оплаты этим способом обратитесь в [техническую поддержку](/ru/contacts) и запросите счет, сообщив реквизиты организации, [идентификатор (PID) проекта](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) и сумму в тенге.
+    Эта опция недоступна в личном кабинете. Для оплаты этим способом обратитесь в [техническую поддержку](/ru/contacts) и запросите счет, сообщив реквизиты организации, [идентификатор (PID) проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) и сумму в тенге.
 
 </tabpanel>
 </tabs>

@@ -10,8 +10,8 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 ## Preparatory steps
 
-1. [Create](/en/networks/vnet/service-management/net#creating_network) a virtual network, for example, `monitoring-net`.
-1. [Create](/en/computing/iaas/service-management/vm/vm-create) VM for Prometheus server:
+1. [Create](/en/networks/vnet/instructions/net#creating_network) a virtual network, for example, `monitoring-net`.
+1. [Create](/en/computing/iaas/instructions/vm/vm-create) VM for Prometheus server:
 
    - name: `Centos_8_5_Prometheus`;
    - operating system: CentOS 8.4;
@@ -21,7 +21,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
    The internal IP address of the created instance: `10.0.3.7`.
 
-1. [Create a DB instance](/en/dbs/dbaas/service-management/create/create-single-replica):
+1. [Create a DB instance](/en/dbs/dbaas/instructions/create/create-single-replica):
 
    - name: `Redis-5`;
    - DBMS: Redis 5;
@@ -34,8 +34,8 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 ## 2. Install and configure Prometheus
 
-1. [Install](/en/dbs/dbaas/service-management/managing-extensions#installing_the_extension) the **Node exporter** extension for the `Redis-5` DB instance. When installing, specify the parameter `listen_port` = `9100`.
-1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Centos_8_5_Prometheus` VM.
+1. [Install](/en/dbs/dbaas/instructions/managing-extensions#installing_the_extension) the **Node exporter** extension for the `Redis-5` DB instance. When installing, specify the parameter `listen_port` = `9100`.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Centos_8_5_Prometheus` VM.
 1. Download Prometheus and unzip the downloaded archive:
 
    ```console
@@ -154,7 +154,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    - Create a [search query](https://prometheus.io/docs/prometheus/2.45/querying/examples/) to view the data in tabular form.
    - Open the [template graph sets](https://prometheus.io/docs/visualization/consoles/) to `http://87.239.239.239:9090/consoles/index.html.example`.
 
-1. (Optional) [Unbind](/en/networks/vnet/service-management/ip/floating-ip#unbinding_floating_ip_address) floating address from VM `Centos_8_5_Prometheus`.
+1. (Optional) [Unbind](/en/networks/vnet/instructions/ip/floating-ip#unbinding_floating_ip_address) floating address from VM `Centos_8_5_Prometheus`.
 
 ## 3. Set up data visualization in Grafana
 
@@ -191,8 +191,8 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 The created resources are charged and quotas are spent. If you don't need them anymore:
 
-1. [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) deployed virtual machines.
-1. [Delete](/en/applications-and-services/marketplace/service-management/pr-instance-manage#deleting_a_service_instance) a virtual machine with Grafana.
-1. [Remove](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `Centos_8_5_Prometheus` VM.
-1. [Delete](/en/networks/vnet/service-management/ports#deleting_a_port) the port to which the virtual IP address is assigned.
-1. [Delete](/en/networks/vnet/service-management/net#deleting_network) a `monitoring-net` network.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) deployed virtual machines.
+1. [Delete](/en/applications-and-services/marketplace/instructions/pr-instance-manage#deleting_a_service_instance) a virtual machine with Grafana.
+1. [Remove](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `Centos_8_5_Prometheus` VM.
+1. [Delete](/en/networks/vnet/instructions/ports#deleting_a_port) the port to which the virtual IP address is assigned.
+1. [Delete](/en/networks/vnet/instructions/net#deleting_network) a `monitoring-net` network.

@@ -3,7 +3,7 @@ For each new [project](/en/tools-for-using-services/account/concepts/projects), 
 - The payment account is an account to which the real money is credited:
 
   - You can replenish it using one of the available [payment methods](../payment-methods).
-  - Funds on it can be [refunded](../../service-management/refund).
+  - Funds on it can be [refunded](../../instructions/refund).
   - Funds on it never expire.
 
 - The bonus account is a dedicated account for storing bonuses:
@@ -13,7 +13,7 @@ For each new [project](/en/tools-for-using-services/account/concepts/projects), 
   - Funds on it can sometimes expire.
   - There can be several bonus accounts. Bonuses are divided into several types, and a corresponding bonus account is created for each type. See [Bonuses](#bonuses) for details.
 
-Payment account status and balance of all bonus accounts are [available](../../service-management/payment) in the header of the [management console](https://msk.cloud.vk.com/app/). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
+Payment account status and balance of all bonus accounts are [available](../../instructions/payment) in the header of the [management console](https://msk.cloud.vk.com/app/). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
 
 <info>
 
@@ -33,7 +33,7 @@ For legal entities that work on a post-payment, a negative payment account balan
 
 </info>
 
-To resume the services and avoid deleting objects, [top up](../../service-management/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 15 minutes. After defrosting, all objects that have been stopped must be started manually.
+To resume the services and avoid deleting objects, [top up](../../instructions/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 15 minutes. After defrosting, all objects that have been stopped must be started manually.
 
 ## Bonuses
 

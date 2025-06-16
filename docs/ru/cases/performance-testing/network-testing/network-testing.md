@@ -15,21 +15,21 @@
 
 При тестировании межсетевого взаимодействия дополнительные виртуальные машины выполняют роль серверов.
 
-1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) виртуальную машину со следующими параметрами:
+1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) виртуальную машину со следующими параметрами:
 
     * **Зона доступности**: выберите ту же зону доступности, что и у основной тестируемой ВМ.
     * **Сеть**: выберите ту же SDN Sprut, что и у основной тестируемой ВМ.
 
     Остальные параметры выберите такими же, как и у основной тестируемой ВМ.
 
-1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ещё одну виртуальную машину со следующими параметрами:
+1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) ещё одну виртуальную машину со следующими параметрами:
 
     * **Зона доступности**: выберите другую зону доступности, что и у основной тестируемой ВМ.
     * **Сеть**: выберите ту же SDN Sprut, что и у основной тестируемой ВМ.
 
     Остальные параметры выберите такими же, как и у основной тестируемой ВМ.
 
-1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к дополнительным ВМ.
+1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к дополнительным ВМ.
 
 ## 2. Определите IP-адреса всех ВМ
 
@@ -46,7 +46,7 @@
     sudo apt install iperf3
     ```
 
-1. На тестовой ВМ [подключите](/ru/computing/iaas/how-to-guides/vm-multiqueue) механизм множества очередей самостоятельно, либо обратитесь в [техническую поддержку](/ru/contacts), указав в обращении [ID виртуальной машины](/ru/computing/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
+1. На тестовой ВМ [подключите](/ru/computing/iaas/how-to-guides/vm-multiqueue) механизм множества очередей самостоятельно, либо обратитесь в [техническую поддержку](/ru/contacts), указав в обращении [ID виртуальной машины](/ru/computing/iaas/instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
 1. На дополнительных ВМ выполните команду для запуска серверной части утилиты iPerf:
 
     ```console
@@ -206,5 +206,5 @@ done
 
 Созданные ресурсы тарифицируются. Если они вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) тестовую и дополнительные ВМ.
-1. Удалите [подсети](/ru/networks/vnet/service-management/net#udalenie_podseti) и [сети](/ru/networks/vnet/service-management/net#udalenie_seti), в которых были размещены ВМ.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) тестовую и дополнительные ВМ.
+1. Удалите [подсети](/ru/networks/vnet/instructions/net#udalenie_podseti) и [сети](/ru/networks/vnet/instructions/net#udalenie_seti), в которых были размещены ВМ.

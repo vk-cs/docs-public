@@ -14,4 +14,4 @@
 - администратор проекта;
 - наблюдатель.
 
-Для работы с журналом событий Cloud Audit предоставляет [инструменты](/ru/monitoring-services/event-log/service-management/view-event-log) поиска, фильтрации и экспорта информации о событиях.
+Для работы с журналом событий Cloud Audit предоставляет [инструменты](/ru/monitoring-services/event-log/instructions/view-event-log) поиска, фильтрации и экспорта информации о событиях.

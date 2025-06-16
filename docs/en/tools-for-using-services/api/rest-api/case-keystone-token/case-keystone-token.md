@@ -3,7 +3,7 @@ A Keystone token is required to work with some components and resources of the V
 ## Preparatory steps
 
 1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en/main).
-1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
+1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
 1. At the top of your management console page, select the project for which you need a token.
 
 ## Token generation
@@ -196,6 +196,6 @@ Task: to get a list of networks via the REST API (Neutron service).
 
 Other examples of token usage:
 
-- [viewing logs](/en/monitoring-services/logging/service-management/view-logs) in the Cloud Logging service;
+- [viewing logs](/en/monitoring-services/logging/instructions/view-logs) in the Cloud Logging service;
 <!-- @TODO change for EN version -->
 - [working](/ru/tools-for-using-services/api/api-dns "change-lang") with public DNS.

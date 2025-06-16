@@ -2,7 +2,7 @@
 
 <summary>How to create a database?</summary>
 
-You can create a database using [step-by-step instructions](../service-management/create) or [quick start](../quick-start).
+You can create a database using [step-by-step instructions](../instructions/create) or [quick start](../quick-start).
 
 </details>
 
@@ -18,7 +18,7 @@ Full [list](../types/) of supported DBMS and their [configurations](../concepts/
 
 <summary>How do I select the required DB instance configuration?</summary>
 
-You can select the required configuration type when [creating a DB instance](../service-management/create). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs).
+You can select the required configuration type when [creating a DB instance](../instructions/create). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs).
 
 </details>
 
@@ -26,7 +26,7 @@ You can select the required configuration type when [creating a DB instance](../
 
 <summary>Can I change the DB instance configuration file myself?</summary>
 
-No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../service-management/db-config).
+No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../instructions/db-config).
 
 </details>
 
@@ -42,7 +42,7 @@ The cost of the service depends on the selected [configuration](../concepts/work
 
 <summary>How do I add a database user?</summary>
 
-Use the instructions [User management](../service-management/users).
+Use the instructions [User management](../instructions/users).
 
 </details>
 
@@ -50,7 +50,7 @@ Use the instructions [User management](../service-management/users).
 
 <summary>Is backup enabled by default?</summary>
 
-Backup is not enabled by default. You can enable it when [creating an instance](../service-management/create) or configure it in the [Backup](https://msk.cloud.vk.com/app/en/services/databases/backups) section.
+Backup is not enabled by default. You can enable it when [creating an instance](../instructions/create) or configure it in the [Backup](https://msk.cloud.vk.com/app/en/services/databases/backups) section.
 
 </details>
 
@@ -67,7 +67,7 @@ To check if backup is enabled:
 
    If there is a green indicator next to the name of the required plan, the backup works according to plan. If the indicator is red, the backup is suspended.
 
-Backup can be enabled when [creating a DB instance](../service-management/create) or configured separately by [creating a backup plan](/en/storage/backups/service-management/create-backup-plan).
+Backup can be enabled when [creating a DB instance](../instructions/create) or configured separately by [creating a backup plan](/en/storage/backups/instructions/create-backup-plan).
 
 </details>
 
@@ -77,7 +77,7 @@ Backup can be enabled when [creating a DB instance](../service-management/create
 
 No, you can restore the database only to the version for which the backup was created.
 
-To restore a database from a backup, use the [instructions](/en/storage/backups/service-management/restore-from-backup).
+To restore a database from a backup, use the [instructions](/en/storage/backups/instructions/restore-from-backup).
 
 </details>
 
@@ -97,7 +97,7 @@ You can change the type of VM hosting the databases or increase the disk size. W
 
 You can also enable autoscaling of the database disk size. Then, as the amount of data increases, the disk size will increase automatically.
 
-For instructions on scaling a DB instance, see [DB instance management](../service-management).
+For instructions on scaling a DB instance, see [DB instance management](../instructions).
 
 </details>
 
@@ -121,7 +121,7 @@ Asynchronous replication works for **Master-Replica** configurations. Synchronou
 
 <summary>How do I create a database replica?</summary>
 
-Use the instructions in the article [Replication](../service-management/replication).
+Use the instructions in the article [Replication](../instructions/replication).
 
 </details>
 
@@ -129,7 +129,7 @@ Use the instructions in the article [Replication](../service-management/replicat
 
 <summary>How do I install monitoring extensions for the database?</summary>
 
-Installing extensions is described in detail in the section [Managing extensions](../service-management/managing-extensions).
+Installing extensions is described in detail in the section [Managing extensions](../instructions/managing-extensions).
 
 The monitoring service is enabled by default for PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C.
 

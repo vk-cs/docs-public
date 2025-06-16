@@ -2,7 +2,7 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
 ## 1. Preparatory steps
 
-1. [Create](../../service-management/create-cluster) a Kubernetes cluster of the most current version.
+1. [Create](../../instructions/create-cluster) a Kubernetes cluster of the most current version.
 
    When creating the cluster:
 
@@ -13,7 +13,7 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
    Other cluster parameters are at your discretion.
 
-1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../service-management/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
+1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../instructions/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
 
     <warn>
 
@@ -62,7 +62,7 @@ This example will create:
 
 To connect a persistent volume using static PVC:
 
-1. [Create a network HDD](/en/computing/iaas/service-management/volumes).
+1. [Create a network HDD](/en/computing/iaas/instructions/volumes).
 
    When creating, specify:
 
@@ -445,7 +445,7 @@ This example will create:
 
 To connect an NFS persistent volume using a static PVC:
 
-1. [Create file storage](/en/computing/iaas/service-management/fs-manage#creating_a_file_storage).
+1. [Create file storage](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage).
 
    When creating it, specify:
 
@@ -455,7 +455,7 @@ To connect an NFS persistent volume using a static PVC:
    - **Network:** network and subnet where the Kubernetes cluster is located. This information can be found on the cluster page.
    - **File storage network:** existing network. If a suitable network is not on the list, select `Create new network`.
 
-1. [View information](/en/computing/iaas/service-management/fs-manage#viewing_information_about_file_storage) about the created file storage.
+1. [View information](/en/computing/iaas/instructions/fs-manage#viewing_information_about_file_storage) about the created file storage.
 
    Save the value of the **Connection point** parameter.
 
@@ -713,7 +713,7 @@ To connect an NFS persistent volume using a static PVC:
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Define](../../service-management/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
+1. [Define](../../instructions/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
 
 1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
 
@@ -840,5 +840,5 @@ To connect an NFS persistent volume using a static PVC:
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../instructions/manage-cluster#delete_cluster) it permanently.

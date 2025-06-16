@@ -16,8 +16,8 @@ To deploy Joomla service in the VK Cloud project:
 1. [Register](/en/intro/start/account-registration) and [go to](https://msk.cloud.vk.com/app) the VK Cloud management console.
 1. To have access to the VM with the deployed service and to the Joomla web interface from the internet:
 
-    1. [Create](/en/networks/vnet/service-management/net#creating_network) a network with internet access if it has not been created previously.
-    1. In [subnet settings](/en/networks/vnet/service-management/net#editing_network) where the VM with the deployed service will be located, disable the **Private DNS** option.
+    1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with internet access if it has not been created previously.
+    1. In [subnet settings](/en/networks/vnet/instructions/net#editing_network) where the VM with the deployed service will be located, disable the **Private DNS** option.
 
 1. Go to **Marketplace**, on the section page, click **All Solutions**.
 1. On the **Joomla** service card, click **Details**.
@@ -72,7 +72,7 @@ To deploy Joomla service in the VK Cloud project:
 
    <info>
 
-   If the access data is lost, [generate](../../service-management/pr-instance-manage#updating_access_to_a_service_instance) new one.
+   If the access data is lost, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new one.
 
    </info>
 

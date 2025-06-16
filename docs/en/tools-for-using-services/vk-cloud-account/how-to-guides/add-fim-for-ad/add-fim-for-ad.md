@@ -91,6 +91,6 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
 
 <warn>
 
-Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/tools-for-using-services/account/service-management/project-settings/access-manage#deleting_member) them from projects in the VK Cloud management console.
+Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/tools-for-using-services/account/instructions/project-settings/access-manage#deleting_member) them from projects in the VK Cloud management console.
 
 </warn>

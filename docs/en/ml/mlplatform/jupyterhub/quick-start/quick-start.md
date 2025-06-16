@@ -28,4 +28,4 @@ The JupyterHub instance web interface will open.
 
 ## Delete unused resources
 
-JupyterHub instances are priced. If you no longer need the created instance, [delete](../service-management/manage#delete) it.
+JupyterHub instances are priced. If you no longer need the created instance, [delete](../instructions/manage#delete) it.

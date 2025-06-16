@@ -1,12 +1,12 @@
 You can connect to the Docker registry if the appropriate [add-on](../../concepts/addons-and-settings/addons) is installed in the cluster.
 
-When [installing](../../service-management/addons/advanced-installation/install-advanced-registry) an add-on, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
+When [installing](../../instructions/addons/advanced-installation/install-advanced-registry) an add-on, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
 
 ## Preparatory steps
 
-1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that the Docker registry add-on (`docker-registry`) is installed in the cluster.
+1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that the Docker registry add-on (`docker-registry`) is installed in the cluster.
 1. [Make sure](../kubectl#checking_connection_to_cluster) that you can connect to the cluster using `kubectl`.
-1. [Get the data](../../service-management/addons/advanced-installation/install-advanced-registry#connecting_to_registry) to access the Docker registry.
+1. [Get the data](../../instructions/addons/advanced-installation/install-advanced-registry#connecting_to_registry) to access the Docker registry.
 
 ## Connecting to the Docker Registry
 

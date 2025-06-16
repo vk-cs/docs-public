@@ -16,7 +16,7 @@ If you plan to work with VK Cloud as a legal entity or sole proprietor, go throu
 
 ### {heading(Prepayment)[id=prepayment]}
 
-The user [deposits](../../service-management/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the payment account of the project, from where they are then spent on paying for services. If a project becomes negative, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) until the payment account balance becomes positive.
+The user [deposits](../../instructions/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the payment account of the project, from where they are then spent on paying for services. If a project becomes negative, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) until the payment account balance becomes positive.
 
 <tabs>
 <tablist>
@@ -90,7 +90,7 @@ By default, all users work under public offer contracts. On the part of VK Cloud
 
 ### Individual agreement
 
-If a legal entity or a sole proprietor is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../service-management/corporate#conclusion_of_an_individual_contract) with VK Cloud.
+If a legal entity or a sole proprietor is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../instructions/corporate#conclusion_of_an_individual_contract) with VK Cloud.
 
 </tabpanel>
 </tabs>
@@ -108,7 +108,7 @@ Both individuals and legal entities, including sole proprietors, have access to 
 
 A bank card linked to the project is the most convenient payment method. Advantages of this method:
 
-- you can set up [auto-top-up](../../service-management/add-card#configure_auto_completion) balance;
+- you can set up [auto-top-up](../../instructions/add-card#configure_auto_completion) balance;
 - when depositing manually, you do not need to enter the card details every time.
 
 </tabpanel>
@@ -127,9 +127,9 @@ Legal entities and sole proprietors can also top up the payment account balance 
 
 ## {heading(Additional registration of legal entities)[id=additional_registration_of_legal_entities]}
 
-[Additional registration](../../service-management/corporate) means saving the details of a legal entity or a sole proprietor in the project settings in the management console. You do not need to specify banking details manually, they are filled in automatically after entering the individual taxpayer number.
+[Additional registration](../../instructions/corporate) means saving the details of a legal entity or a sole proprietor in the project settings in the management console. You do not need to specify banking details manually, they are filled in automatically after entering the individual taxpayer number.
 
-After additional registration, those organizations and sole proprietors that work on [prepayment](#payment_scheme) can upload [invoices for payment](../../service-management/bill-generation) with full details from the management console.
+After additional registration, those organizations and sole proprietors that work on [prepayment](#payment_scheme) can upload [invoices for payment](../../instructions/bill-generation) with full details from the management console.
 
 ## EDM
 

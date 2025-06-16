@@ -30,7 +30,7 @@
                     "link": "/ru/dbs/dbaas/connect"
                 },
                 {
-                    "link": "/ru/dbs/dbaas/service-management/manage-instance"
+                    "link": "/ru/dbs/dbaas/instructions/manage-instance"
                 }
             ]
         },
@@ -44,7 +44,7 @@
                     "link": "/ru/dbs/dbaas/extensions"
                 },
                 {
-                    "link": "/ru/storage/backups/service-management"
+                    "link": "/ru/storage/backups/instructions"
                 }
             ]
         }

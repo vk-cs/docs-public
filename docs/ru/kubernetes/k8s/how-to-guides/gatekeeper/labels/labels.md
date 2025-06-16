@@ -7,13 +7,13 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](../../../service-management/create-cluster) кластер Kubernetes самой актуальной версии.
+1. [Создайте](../../../instructions/create-cluster) кластер Kubernetes самой актуальной версии.
 
    Параметры кластера выберите на свое усмотрение.
 
 1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
 
-1. Убедитесь, что [синхронизация политик безопасности](../../../concepts/security-policies#synchro) с кластером [выключена](../../../service-management/manage-security#upravlenie_sinhronizaciey_politik_bezopasnosti_s_klasterom).
+1. Убедитесь, что [синхронизация политик безопасности](../../../concepts/security-policies#synchro) с кластером [выключена](../../../instructions/manage-security#upravlenie_sinhronizaciey_politik_bezopasnosti_s_klasterom).
 
    В противном случае созданные ограничения и шаблоны будут удалены при очередной синхронизации политик.
 
@@ -200,5 +200,5 @@
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.

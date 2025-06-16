@@ -3,10 +3,10 @@
     "path": "/account/security",
     "groups": [
       {
-        "title": "SERVICE MANAGEMENT",
+        "title": "STEP-BY-STEP INSTRUCTIONS",
         "links": [
           {
-            "link": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
+            "link": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa"
           }
         ]
       }

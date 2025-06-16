@@ -4,7 +4,7 @@ This article shows an example of how to add a domain and IP address to the clust
 
 ## Before you start
 
-1. [Create](../../../service-management/create-cluster) a Kubernetes cluster of the most actual version.
+1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the most actual version.
 
    Choose the parameters of the cluster as you wish.
 
@@ -90,5 +90,5 @@ This article shows an example of how to add a domain and IP address to the clust
 
 The running cluster consumes computing resources. If you no longer need it:
 
-- [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later.
-- [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.
+- [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later.
+- [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.

@@ -3,10 +3,10 @@
     "path": "/account/key-pairs",
     "groups": [
       {
-        "title": "SERVICE MANAGEMENT",
+        "title": "STEP-BY-STEP INSTRUCTIONS",
         "links": [
           {
-            "link": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs"
+            "link": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/keypairs"
           }
         ]
       }

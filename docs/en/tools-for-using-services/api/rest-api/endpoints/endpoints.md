@@ -18,15 +18,15 @@ To see the list of endpoints for your region:
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/computing/iaas/service-management/vm) |
-| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/computing/iaas/service-management/volumes) and their snapshots |
-| Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/computing/iaas/service-management/images) |
+| Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/computing/iaas/instructions/vm) |
+| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/computing/iaas/instructions/volumes) and their snapshots |
+| Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/computing/iaas/instructions/images) |
 | Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/storage/backups/how-to-guides/api-examples) of VMs and database instances |
-| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/computing/iaas/service-management/fs-manage) |
+| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/computing/iaas/instructions/fs-manage) |
 
 <info>
 
-The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the management console allows [viewing VM logs](/en/monitoring-services/logging/service-management/view-logs).
+The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the management console allows [viewing VM logs](/en/monitoring-services/logging/instructions/view-logs).
 
 </info>
 
@@ -37,21 +37,21 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
 | Magnum            | https://infra.mail.ru:9511/v1                       | Managing [Cloud Containers](/en/kubernetes/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing Cloud Containers [add-ons](/en/kubernetes/k8s/service-management/addons) |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing Cloud Containers [add-ons](/en/kubernetes/k8s/instructions/addons) |
 
 ### Cloud Networks
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
 | Neutron           | https://infra.mail.ru:9696                          | Managing all [network infrastructure](/en/networks/vnet) objects, except public DNS zones and load balancers |
-| Octavia           | https://public.infra.mail.ru:9876                   | Managing [load balancers](/en/networks/balancing/service-management) |
+| Octavia           | https://public.infra.mail.ru:9876                   | Managing [load balancers](/en/networks/balancing/instructions) |
 | Publicdns         | https://mcs.mail.ru/public-dns                      | Managing [public DNS zones](/en/networks/dns/publicdns) |
 
 ### Cloud Big Data
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/data-processing/bigdata/service-management) clusters |
+| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/data-processing/bigdata/instructions) clusters |
 
 ### Cloud Databases
 
@@ -94,7 +94,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 The addresses of some endpoints contain the variable `<project_id>`. When creating a request, replace this variable with the Project ID of the current project.
 
-The Project ID does not match the [project ID](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) to VK Cloud management console. This is another identifier that is used in configuration files:
+The Project ID does not match the [project ID](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id) to VK Cloud management console. This is another identifier that is used in configuration files:
 
 - In `openrc.sh`, as the value of the variable `OS_PROJECT_ID`. This file is required to work with additional tools such as the OpenStack CLI or cURL.
 - In `vkcs_provider.tf`, as the value of the `project_id` parameter. This file is required to work through Terraform.

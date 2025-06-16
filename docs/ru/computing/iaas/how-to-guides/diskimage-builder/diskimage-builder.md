@@ -81,7 +81,7 @@ DIB_RELEASE=15.3 disk-image-create -t raw -o opensuse-15.3.raw vm opensuse
         Opensuse
     ```
 
-    Здесь аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/service-management/images/image-metadata).
+    Здесь аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/instructions/images/image-metadata).
 
 ## 4. Проверьте успешность загрузки образа
 
@@ -91,4 +91,4 @@ DIB_RELEASE=15.3 disk-image-create -t raw -o opensuse-15.3.raw vm opensuse
 
 ## Удалите неиспользуемые ресурсы
 
-Если загруженный образ вам больше не нужен, [удалите его](/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza).
+Если загруженный образ вам больше не нужен, [удалите его](/ru/computing/iaas/instructions/images/images-manage#udalenie_obraza).

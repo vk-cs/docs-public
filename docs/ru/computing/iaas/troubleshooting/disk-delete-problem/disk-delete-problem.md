@@ -4,8 +4,8 @@
 
 ### Решение
 
-1. Убедитесь, что диск [отключен](../../service-management/volumes#otklyuchenie_diska_ot_vm) от ВМ и [удалены](../../service-management/volumes#snimki_diska) его снимки. 
+1. Убедитесь, что диск [отключен](../../instructions/volumes#otklyuchenie_diska_ot_vm) от ВМ и [удалены](../../instructions/volumes#snimki_diska) его снимки. 
 
-1. Попробуйте [удалить](../../service-management/volumes#udalenie_diska) диск.
+1. Попробуйте [удалить](../../instructions/volumes#udalenie_diska) диск.
 
 1. Если проблема сохраняется, [обратитесь в техническую поддержку](/ru/contacts).

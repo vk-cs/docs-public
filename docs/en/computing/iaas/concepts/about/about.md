@@ -263,7 +263,7 @@ It is not possible to use Windows 7 / 8 / 8.1 / 10 / 11 operating systems in VK 
 
 In operating systems of all VK Cloud images (except OS Bitrix), the `root` account is blocked for security purposes and an account has been added for use by default.
 
-You can see the default account name in the list below or in the [password setup](../../service-management/vm/vm-manage#password) window.
+You can see the default account name in the list below or in the [password setup](../../instructions/vm/vm-manage#password) window.
 
 <details>
 <summary>List of default accounts for different OS</summary>

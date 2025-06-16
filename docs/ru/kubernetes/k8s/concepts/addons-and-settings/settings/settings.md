@@ -32,6 +32,6 @@ VK Cloud не несет ответственность за проблемы с
 
 </warn>
 
-Политики безопасности не действуют в кластерах версий ниже 1.21. Чтобы подключить их, [обновите такие кластера до актуальной версии](../../../service-management/update). Если обновление невозможно, [установите Gatekeeper](../../../install-tools/gatekeeper#ustanovka) вручную, а затем [настройте ограничения и шаблоны](../../../install-tools/gatekeeper#opcionalno_nastroyka_ogranicheniy_i_shablonov).
+Политики безопасности не действуют в кластерах версий ниже 1.21. Чтобы подключить их, [обновите такие кластера до актуальной версии](../../../instructions/update). Если обновление невозможно, [установите Gatekeeper](../../../install-tools/gatekeeper#ustanovka) вручную, а затем [настройте ограничения и шаблоны](../../../install-tools/gatekeeper#opcionalno_nastroyka_ogranicheniy_i_shablonov).
 
 Подробнее об политиках и рекомендациях по работе с ними читайте в разделе [Политики безопасности](../../security-policies).

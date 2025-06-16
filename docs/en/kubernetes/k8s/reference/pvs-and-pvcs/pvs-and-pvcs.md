@@ -19,7 +19,7 @@ A [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-vol
 
 <info>
 
-Access to PVC in RWX mode is not implemented in Cloud Containers. To organize shared access to data from several pods on different nodes, deploy [NFS server](/ru/computing/iaas/service-management/fs-manage) on a separate virtual machine.
+Access to PVC in RWX mode is not implemented in Cloud Containers. To organize shared access to data from several pods on different nodes, deploy [NFS server](/ru/computing/iaas/instructions/fs-manage) on a separate virtual machine.
 
 </info>
 

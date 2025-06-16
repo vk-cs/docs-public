@@ -149,4 +149,4 @@ By default: `true`
 By default: `true`
 |===
 
-Examples of setting up the plugin using its authorization and configuration parameters are given in the [Plugin installation](../../service-management/connect-plugin) и [Managing the logging agent](../../service-management/manage-vkcloudlogs-plugin#configure_agent) sections.
+Examples of setting up the plugin using its authorization and configuration parameters are given in the [Plugin installation](../../instructions/connect-plugin) и [Managing the logging agent](../../instructions/manage-vkcloudlogs-plugin#configure_agent) sections.

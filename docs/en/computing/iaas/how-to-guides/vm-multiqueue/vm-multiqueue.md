@@ -28,7 +28,7 @@ On the VK Cloud platform, it is not enough to enable multiqueue only at the imag
 
 The option includes multiqueue at the image level and will work for all VMs created after executing the instruction.
 
-1. [Create](../../service-management/images/images-manage) image VM.
+1. [Create](../../instructions/images/images-manage) image VM.
 1. Get a list of available images:
 
     ```console
@@ -47,16 +47,16 @@ The option includes multiqueue at the image level and will work for all VMs crea
 
 This option is used when the VM has already been created at the time of enabling multiqueue.
 
-1. [Get the VM UUID](../../service-management/vm/vm-manage#getting_a_virtual_machine_id) через CLI или личный кабинет VK Cloud.
+1. [Get the VM UUID](../../instructions/vm/vm-manage#getting_a_virtual_machine_id) через CLI или личный кабинет VK Cloud.
 1. Contact [technical support](mailto:support@mcs.mail.ru) with a request to connect multiqueue and specifying the UUID of the target VM.
-1. After successfully processing the request from technical support, perform a [forced VM reboot](../../service-management/vm/vm-manage#forced_vm_reboot).
+1. After successfully processing the request from technical support, perform a [forced VM reboot](../../instructions/vm/vm-manage#forced_vm_reboot).
 
 </tabpanel>
 </tabs>
 
 ## 2. Check the multiqueue connection
 
-1. [Create](../../service-management/vm/vm-create) a VM with more than one CPU, and [connect](../../service-management/vm/vm-connect) to it.
+1. [Create](../../instructions/vm/vm-create) a VM with more than one CPU, and [connect](../../instructions/vm/vm-connect) to it.
 1. View all network interfaces:
 
     ```console
@@ -113,7 +113,7 @@ The number of queues cannot be greater than the number of virtual CPUs.
 
 </info>
 
-1. [Create](../../service-management/vm/vm-create) a VM and [connect](../../service-management/vm/vm-connect) to it.
+1. [Create](../../instructions/vm/vm-create) a VM and [connect](../../instructions/vm/vm-connect) to it.
 1. Run the command:
 
     ```console

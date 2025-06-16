@@ -2,7 +2,7 @@
 
 CDN (Content Delivery Network) is a network of geographically distributed caching servers for content distribution.
 
-When using a CDN, content is delivered from the CDN server closest to the user. If the necessary content is not on this server, CDN requests it from the origin servers or neighboring CDN servers. When the CDN server gets the data, the server caches it for a while. The CDN service of VK Cloud also provides the option of [preloading content](../../service-management/manage-cdn/content-settings#preloading_cache) onto CDN servers, which further reduces the load of origin servers.
+When using a CDN, content is delivered from the CDN server closest to the user. If the necessary content is not on this server, CDN requests it from the origin servers or neighboring CDN servers. When the CDN server gets the data, the server caches it for a while. The CDN service of VK Cloud also provides the option of [preloading content](../../instructions/manage-cdn/content-settings#preloading_cache) onto CDN servers, which further reduces the load of origin servers.
 
 The CDN service helps:
 

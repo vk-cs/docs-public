@@ -70,7 +70,7 @@
 
 - `s3_bucket`: имя бакета [Cloud Storage](/ru/storage/s3), где будут храниться отчеты. Обязательный параметр.
 
-  Если бакета с таким именем не существует — [создайте его](/ru/storage/s3/service-management/buckets/create-bucket).
+  Если бакета с таким именем не существует — [создайте его](/ru/storage/s3/instructions/buckets/create-bucket).
 
   <warn>
 
@@ -78,7 +78,7 @@
 
   </warn>
 
-  Отчеты по конкретному инстансу БД хранятся в директории с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, [посмотрев информацию об инстансе БД](/ru/dbs/dbaas/service-management/manage-instance/postgresql#poluchenie_informacii_ob_instanse_bd).
+  Отчеты по конкретному инстансу БД хранятся в директории с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, [посмотрев информацию об инстансе БД](/ru/dbs/dbaas/instructions/manage-instance/postgresql#poluchenie_informacii_ob_instanse_bd).
 
 - `period`: интервал между созданием отчетов (в часах).
 

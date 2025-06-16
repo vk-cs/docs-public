@@ -27,9 +27,9 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 ## Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../service-management/pr-instance-add) сервис UserGate NGFW:
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
+1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. [Разверните](../../instructions/pr-instance-add) сервис UserGate NGFW:
 
    - Выберите ранее созданные сеть с доступом в интернет и подсеть.
    - Остальные параметры выберите на свое усмотрение.
@@ -60,8 +60,8 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Откройте страницу ВМ сервиса (обычно `<идентификатор>usergate`), нажав на ее имя в списке.
 1. Перейдите на вкладку **Сети**.
-1. [Подключите](/ru/computing/iaas/service-management/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ.
-1. Перезагрузите ВМ [средствами VK Cloud](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) или через [консоль UserGate](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером).
+1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ.
+1. Перезагрузите ВМ [средствами VK Cloud](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) или через [консоль UserGate](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером).
 
 ## 2. Проверьте наличие добавленной сети
 
@@ -84,6 +84,6 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 
 Работающая инфраструктура сервиса потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [Удалите](../../service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса UserGate NGFW.
-- [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть, используемую для сервиса.
-- [Удалите](/ru/networks/vnet/service-management/ip/floating-ip#delete) Floating IP-адрес, созданный во время развертывания сервиса.
+- [Удалите](../../instructions/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса UserGate NGFW.
+- [Удалите](/ru/networks/vnet/instructions/net#udalenie_seti) сеть, используемую для сервиса.
+- [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, созданный во время развертывания сервиса.

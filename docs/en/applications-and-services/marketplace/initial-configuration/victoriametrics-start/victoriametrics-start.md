@@ -7,9 +7,9 @@ By using VictoriaMetrics, you agree to the [Marketplace](/ru/intro/start/legal/m
 To deploy the VictoriaMetrics service in a project:
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_network) a network, if one has not been created earlier.
-1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
-1. [Deploy](../../service-management/pr-instance-add) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
+1. [Create](/en/networks/vnet/instructions/net#creating_network) a network, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/instructions/net#editing_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
+1. [Deploy](../../instructions/pr-instance-add) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
    <details>
     <summary>Learn more about configurations for tariff plans</summary>
@@ -153,7 +153,7 @@ To deploy the VictoriaMetrics service in a project:
 
    <info>
 
-   If you have not saved the access data, [generate](../../service-management/pr-instance-manage#updating_access_to_a_service_instance) new one.
+   If you have not saved the access data, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new one.
 
    </info>
 

@@ -29,7 +29,7 @@
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects), где будут размещены рабочие столы.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
-1. На вкладке **Настройка сети** задайте [сетевые параметры](/ru/computing/cloud-desktops/service-management/config/setup-net):
+1. На вкладке **Настройка сети** задайте [сетевые параметры](/ru/computing/cloud-desktops/instructions/config/setup-net):
 
    * **Роутер**: маршрутизатор из списка.
    * **Пространство IP-адресов**: диапазон IP-адресов для тех подсетей, в которых будут развернуты ресурсы сервиса.
@@ -38,7 +38,7 @@
    * **Зона доступности**: например, `Москва (MS1)`.
 
 1. Нажмите кнопку **Сохранить**.
-1. На вкладке **Настройка каталога** укажите [параметры подключения к каталогу пользователей](/ru/computing/cloud-desktops/service-management/config/setup-ldap):
+1. На вкладке **Настройка каталога** укажите [параметры подключения к каталогу пользователей](/ru/computing/cloud-desktops/instructions/config/setup-ldap):
 
     * **Хост**: IP-адрес или FQDN сервера OpenLDAP.
     * **Порт**: номер порта для доступа по протоколу LDAP — `389`.
@@ -48,13 +48,13 @@
     * **Поле для выборки**: например, `UID`.
 
 1. Нажмите кнопку **Сохранить**.
-1. (Опционально) На вкладке **SAML** [настройте](/ru/computing/cloud-desktops/service-management/config/setup-saml) двухфакторную аутентификацию.
+1. (Опционально) На вкладке **SAML** [настройте](/ru/computing/cloud-desktops/instructions/config/setup-saml) двухфакторную аутентификацию.
 
 ## 2. Создайте пул рабочих столов
 
 1. Перейдите в раздел **Cloud Desktop** → **Пулы рабочих столов**.
 1. Нажмите кнопку **Добавить**.
-1. На шаге **Конфигурация** задайте [параметры пула](/ru/computing/cloud-desktops/service-management/desktops-pool/add#setup_pool_configuration):
+1. На шаге **Конфигурация** задайте [параметры пула](/ru/computing/cloud-desktops/instructions/desktops-pool/add#setup_pool_configuration):
 
     * **Имя пула**: например, `vk-cloud-desktops-pool-gpu`.
     * **Тип пула**: например, `Сессионный`.
@@ -65,7 +65,7 @@
 
 1. Нажмите кнопку **Следующий шаг**.
 
-1. На шаге **Настройки виртуальных машин** задайте [конфигурацию ВМ пула](/ru/computing/cloud-desktops/service-management/desktops-pool/add#configure_pool_vms):
+1. На шаге **Настройки виртуальных машин** задайте [конфигурацию ВМ пула](/ru/computing/cloud-desktops/instructions/desktops-pool/add#configure_pool_vms):
 
     * **Тип инстанса**: имя шаблона конфигурации ВМ, полученного в технической поддержке — `GPU2-24-96-T4-1`.
     * **Образ**: например, `Windows Server 2019 Standard (ru)`.
@@ -98,7 +98,7 @@
 
    В примере используется IP-адрес `99.166.240.100`.
 
-1. Скачайте и установите клиент для доступа к удаленным рабочим столам: [Cloud Desktop Client](/ru/computing/cloud-desktops/service-management/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download").
+1. Скачайте и установите клиент для доступа к удаленным рабочим столам: [Cloud Desktop Client](/ru/computing/cloud-desktops/instructions/assets/Cloud_Desktop_user_guide_v_1_0.pdf "download").
 
 1. Подключитесь к пулам:
 
@@ -115,4 +115,4 @@
 
 ## Удалите неиспользуемые ресурсы
 
-Работающий сервис потребляет вычислительные ресурсы. Если он вам больше не нужен, [удалите](/ru/computing/cloud-desktops/service-management/desktops-pool/manage#delete_pool) пул рабочих столов.
+Работающий сервис потребляет вычислительные ресурсы. Если он вам больше не нужен, [удалите](/ru/computing/cloud-desktops/instructions/desktops-pool/manage#delete_pool) пул рабочих столов.

@@ -158,4 +158,4 @@ VK Cloud позволяет создавать отказоустойчивые 
 
 ## Удалите неиспользуемые ресурсы
 
-Если созданные ВМ вам больше не нужны, [удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) их.
+Если созданные ВМ вам больше не нужны, [удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) их.

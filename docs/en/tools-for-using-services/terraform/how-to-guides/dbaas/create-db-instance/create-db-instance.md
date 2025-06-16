@@ -340,9 +340,9 @@ resource "vkcs_db_user" "db-user" {
 
 - The DB instance.
 - The external IP address for the instance — is displayed on the instance page.
-- The [Prometheus Node exporter](/en/dbs/dbaas/service-management/managing-extensions) extension (if installed) — is displayed on the instance page on the **Extensions** tab.
+- The [Prometheus Node exporter](/en/dbs/dbaas/instructions/managing-extensions) extension (if installed) — is displayed on the instance page on the **Extensions** tab.
 - DB on the instance (if created) — is displayed on the instance page on the **List of databases** tab.
-- [DB user](/en/dbs/dbaas/service-management/users) (if created) — is displayed on the instance page on the **Users** tab.
+- [DB user](/en/dbs/dbaas/instructions/users) (if created) — is displayed on the instance page on the **Users** tab.
 
 ## Delete unused resources
 

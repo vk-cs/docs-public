@@ -138,7 +138,7 @@ The following shows how to prepare Keycloak to work with Cloud Desktop.
 
 1. In the side menu, go to the **Realm Settings** section.
 1. Set the **Require SSL** parameter to `None`.
-1. In the **Endpoints** block, copy the **SAML 2.0 Identity Provider Metadata** link. When configuring [two-factor authentication using the SAML service](../../service-management/config/setup-saml), you will need to specify it as the value of the **Metadata URL** parameter.
+1. In the **Endpoints** block, copy the **SAML 2.0 Identity Provider Metadata** link. When configuring [two-factor authentication using the SAML service](../../instructions/config/setup-saml), you will need to specify it as the value of the **Metadata URL** parameter.
 1. In the side menu, go to the **User Federation** section and click the name of the created LDAP provider.
 1. In the **Action** list, select **Sync all users**.
 

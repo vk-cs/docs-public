@@ -10,7 +10,7 @@
 
 ## {heading(Подготовительные шаги)[id=prepare]}
 
-1. [Создайте](../../service-management/create-cluster) кластер, если это еще не сделано.
+1. [Создайте](../../instructions/create-cluster) кластер, если это еще не сделано.
 1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
 1. [Подключитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru) к кластеру при помощи `kubectl`.
 1. Подготовьте данные о CPU и RAM масштабируемого узла:
@@ -103,4 +103,4 @@
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=delete]}
 
-Если созданный кластер вам больше не нужен, [удалите](../../service-management/manage-cluster#delete_cluster) его.
+Если созданный кластер вам больше не нужен, [удалите](../../instructions/manage-cluster#delete_cluster) его.

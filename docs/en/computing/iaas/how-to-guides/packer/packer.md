@@ -50,13 +50,13 @@ Use the utility `qemu-img`:
 
 ## 2. Upload the base image to the cloud
 
-Import the image according to [instructions](../../service-management/images/images-manage#importing_an_image).
+Import the image according to [instructions](../../instructions/images/images-manage#importing_an_image).
 
 ## 3. Create a Packer configuration file
 
 1. Determine the details of the network and the downloaded image:
 
-    1. [Get](/en/networks/vnet/service-management/net#viewing_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
+    1. [Get](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
     1. Copy the name of the downloaded image, getting a list of images using the command `openstack image list`.
     1. Write the received values into variables:
 
@@ -151,7 +151,7 @@ Import the image according to [instructions](../../service-management/images/ima
 
 ## 5. Complete the image setup
 
-1. Set [meta tags](../../service-management/images/image-metadata) to the created image using the command:
+1. Set [meta tags](../../instructions/images/image-metadata) to the created image using the command:
 
     ```console
     openstack image set \
@@ -225,4 +225,4 @@ Import the image according to [instructions](../../service-management/images/ima
 
 ## Delete unused resources
 
-If you no longer need the image, [delete it](../../service-management/images/images-manage#deleting_an_image).
+If you no longer need the image, [delete it](../../instructions/images/images-manage#deleting_an_image).

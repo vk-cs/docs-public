@@ -11,9 +11,9 @@
 
 После активации сервисов проекту становятся доступны базовые квоты. Для них установлены значения по умолчанию, которые применяются для всех новых проектов региона.
 
-Квоты можно [посмотреть](../../service-management/project-settings/manage#prosmotr_kvot_proekta):
+Квоты можно [посмотреть](../../instructions/project-settings/manage#prosmotr_kvot_proekta):
 
-- краткий список — [в личном кабинете](../../service-management/project-settings/manage#prosmotr_kvot_proekta);
+- краткий список — [в личном кабинете](../../instructions/project-settings/manage#prosmotr_kvot_proekta);
 - расширенный список — через OpenStack CLI.
 
 Есть неявные квоты, которые нельзя увидеть ни одним из способов, они проявляются в виде сообщений об ошибке при попытке создать новый объект. Пример неявной квоты — [квота на количество проектов](#obshchie_d4f726f4), которые может создать один пользователь.
@@ -30,7 +30,7 @@
 
 Для некоторых технических лимитов не существует соответствующих им квот.
 
-Квоты можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta) в пределах технических лимитов, обратившись в техническую поддержку.
+Квоты можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta) в пределах технических лимитов, обратившись в техническую поддержку.
 
 Нежесткие лимиты можно превысить — либо также через [техническую поддержку](/ru/contacts), либо самостоятельно. Однако превышение этих лимитов может негативно сказаться на стабильности работы.
 
@@ -288,7 +288,7 @@
  26 шт., если конфигурационный диск отключен
 |Лимит связан с ограничениями шины PCI.
 
-Если при [создании виртуальной машины](/ru/computing/iaas/service-management/vm/vm-create) в личном кабинете включена опция **Использовать конфигурационный диск** или в OpenStack CLI задействован параметр `--use-config-drive`, то максимальное количество дисков — 25 штук. Используйте конфигурационный диск в сетях без [DHCP-сервера](/ru/networks/vnet/concepts/ips-and-inet#setevaya_adresaciya).
+Если при [создании виртуальной машины](/ru/computing/iaas/instructions/vm/vm-create) в личном кабинете включена опция **Использовать конфигурационный диск** или в OpenStack CLI задействован параметр `--use-config-drive`, то максимальное количество дисков — 25 штук. Используйте конфигурационный диск в сетях без [DHCP-сервера](/ru/networks/vnet/concepts/ips-and-inet#setevaya_adresaciya).
 
 Если опция **Использовать конфигурационный диск** отключена или параметр `--use-config-drive` не задействован, то максимальное количество дисков — 26 штук
 | ![](/ru/assets/check.svg "inline")
@@ -636,7 +636,7 @@
 | Размер одной резервной копии                  | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 320 ТБ        | ![](/ru/assets/no.svg "inline") |
 | Общий объем образов                           | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 2 ТБ          | ![](/ru/assets/no.svg "inline") |
 
-Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе Cloud Storage, этот сервис используется для хранения резервных копий. Этот лимит можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
+Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе Cloud Storage, этот сервис используется для хранения резервных копий. Этот лимит можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
 
 ### {heading(Cloud Storage)[id=cloud_storage_limits]}
 
@@ -691,4 +691,4 @@
 
 |===
 
-Рейт-лимиты можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
+Рейт-лимиты можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.

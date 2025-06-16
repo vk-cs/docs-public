@@ -11,7 +11,7 @@ To solve these problems, Cloud Containers volumes are used. Volumes have differe
 
 Cloud Containers do not support ReadWriteMany (RWX) access to Persistent Volume Claims. This means that you cannot simultaneously write data to a single PV from multiple pods on different nodes.
 
-To share data between pods on different nodes, [deploy an NFS server](/en/computing/iaas/service-management/fs-manage) on a separate VM. An NFS server shares data over the network, allowing multiple pods to simultaneously read and write data to a shared volume.
+To share data between pods on different nodes, [deploy an NFS server](/en/computing/iaas/instructions/fs-manage) on a separate VM. An NFS server shares data over the network, allowing multiple pods to simultaneously read and write data to a shared volume.
 
 Cloud Containers clusters are tightly integrated with the VK Cloud platform to handle PVs:
 

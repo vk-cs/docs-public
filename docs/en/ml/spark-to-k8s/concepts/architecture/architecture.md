@@ -20,7 +20,7 @@ A Cloud Spark cluster is a K8s cluster deployed on the Cloud Containers service.
 
 ## {heading(VM with Docker Registry)[id=vm_docker_registry]}
 
-[Docker Registry](/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry) stores the default Docker container image, which includes libraries, dependencies, and settings for deploying the Cloud Spark cluster and running user applications on it.
+[Docker Registry](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry) stores the default Docker container image, which includes libraries, dependencies, and settings for deploying the Cloud Spark cluster and running user applications on it.
 
 If necessary, the user can upload their own Docker images to Docker Registry and then use them in the service.
 

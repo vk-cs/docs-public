@@ -1,4 +1,4 @@
-[Anycast](/en/networks/vnet/service-management/ip/anycast-ip) REST API supports Anycast IP address management:
+[Anycast](/en/networks/vnet/instructions/ip/anycast-ip) REST API supports Anycast IP address management:
 
 - viewing the list of Anycast IP addresses in a project
 - viewing, creating, editing, and deleting an IP address
@@ -9,7 +9,7 @@
 <summary>Obtaining an endpoint, authorization, and authentication</summary>
 
 1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
-1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
+1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
 1. Enable API access if it hasn't been done yet:
 
    1. Click the username in the page header and select **Security**.

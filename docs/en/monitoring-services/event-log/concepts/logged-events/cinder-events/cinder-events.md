@@ -1,4 +1,4 @@
-Events that the service of [disk and snapshot management](/en/computing/iaas/service-management/volumes) reports to Cloud Audit.
+Events that the service of [disk and snapshot management](/en/computing/iaas/instructions/volumes) reports to Cloud Audit.
 
 ## Cinder v2 component events
 

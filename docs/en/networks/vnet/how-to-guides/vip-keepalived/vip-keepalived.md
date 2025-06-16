@@ -15,7 +15,7 @@ To show the virtual IP address setting:
 
 1. Select the subnet where the virtual machines and virtual IP address will be placed. They must be on the same subnet.
 
-    If the required subnet does not exist, [create it](../../service-management/net#creating_subnet).
+    If the required subnet does not exist, [create it](../../instructions/net#creating_subnet).
 
     Write down the following information:
     - subnet name;
@@ -102,7 +102,7 @@ To show the virtual IP address setting:
 
     1. For the virtual machine `kld-vm-1`:
 
-       1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `kld-jumphost-vm` virtual machine via SSH.
+       1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `kld-jumphost-vm` virtual machine via SSH.
        1. Connect to the virtual machine `kld-vm-1` via SSH.
        1. Run the command:
 
@@ -167,7 +167,7 @@ Write down all received data. Result for the given example:
 
     1. For the virtual machine `kld-vm-1`:
 
-       1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `kld-jumphost-vm` virtual machine via SSH.
+       1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `kld-jumphost-vm` virtual machine via SSH.
        1. Connect to the virtual machine `kld-vm-1` via SSH.
        1. Run the commands:
 
@@ -324,7 +324,7 @@ The `keepalived` installed on virtual machines should be able to send traffic no
 Open two terminal sessions:
 
 1. During the first session:
-   1. [Connect](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the virtual machine `kld-jumphost-vm` via SSH.
+   1. [Connect](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the virtual machine `kld-jumphost-vm` via SSH.
    1. Start a continuous ping of the virtual IP address:
 
       ```console
@@ -376,7 +376,7 @@ Open two terminal sessions:
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) virtual machines.
-1. [Remove](../../service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
-1. [Delete](../../service-management/ports#deleting_a_port) the port that has been assigned a virtual IP address.
-1. Delete the [subnet](../../service-management/net#deleting_subnet) and [network](../../service-management/net#deleting_network) where the virtual cars.
+1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) virtual machines.
+1. [Remove](../../instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
+1. [Delete](../../instructions/ports#deleting_a_port) the port that has been assigned a virtual IP address.
+1. Delete the [subnet](../../instructions/net#deleting_subnet) and [network](../../instructions/net#deleting_network) where the virtual cars.

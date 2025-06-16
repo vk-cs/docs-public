@@ -41,7 +41,7 @@
 1. На шаге **Настройка узлов** создания кластера выберите опцию **Назначить внешний IP на Head-узел**.
 1. Дождитесь завершения развертывания кластера. Сохраните SSH-ключ, сгенерированный при создании кластера.
 1. Откройте страницу нужного кластера, нажав на его имя.
-1. [Подключитесь к Head-узлу](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) по IP-адресу, указанному в **ADCM UI** по SSH-ключу.
+1. [Подключитесь к Head-узлу](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) по IP-адресу, указанному в **ADCM UI** по SSH-ключу.
 
 </tabpanel>
 </tabs>
@@ -60,7 +60,7 @@
 1. Укажите нужные параметры узла и выберите опцию **Назначить внешний IP на Edge-узел**.
 1. Дождитесь завершения развертывания кластера. Сохраните SSH-ключ, сгенерированный при создании кластера.
 1. Откройте страницу нужного кластера, нажав на его имя.
-1. [Подключитесь к Edge-узлу](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) по SSH-ключу.
+1. [Подключитесь к Edge-узлу](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) по SSH-ключу.
 
 </tabpanel>
 </tabs>
@@ -76,14 +76,14 @@
 </tablist>
 <tabpanel>
 
-1. [Создайте](/en/networks/vnet/service-management/net#creating_network) новую внутреннюю сеть и [маршрутизатор](/en/networks/vnet/service-management/router).
+1. [Создайте](/en/networks/vnet/instructions/net#creating_network) новую внутреннюю сеть и [маршрутизатор](/en/networks/vnet/instructions/router).
 1. Создайте кластер, указав созданную сеть.
 1. [Настройте VPN-подключение](/en/networks/vnet/how-to-guides/vpn-tunnel) к сервисам VK Cloud.
 
 </tabpanel>
 <tabpanel>
 
-[Настройте](/en/networks/vnet/service-management/secgroups) группы безопасности нужным для вас образом, подробнее в статье [Ограничение трафика](/en/networks/vnet/concepts/traffic-limiting).
+[Настройте](/en/networks/vnet/instructions/secgroups) группы безопасности нужным для вас образом, подробнее в статье [Ограничение трафика](/en/networks/vnet/concepts/traffic-limiting).
 
 </tabpanel>
 </tabs>

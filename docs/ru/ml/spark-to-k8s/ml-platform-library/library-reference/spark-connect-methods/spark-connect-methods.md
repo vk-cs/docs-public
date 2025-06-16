@@ -80,8 +80,8 @@ add_spark_connect_jars(cluster_id: str,
 
 1. [Установите библиотеку](../../install), если это еще не сделано.
 1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
-1. [Создайте кластер Spark](../../../service-management/create), если это еще не сделано.
-1. [Загрузите в бакет](/ru/storage/s3/service-management/objects/upload-object) кластера Cloud Spark jar-файлы, которые необходимо подключить через Spark Connect.
+1. [Создайте кластер Spark](../../../instructions/create), если это еще не сделано.
+1. [Загрузите в бакет](/ru/storage/s3/instructions/objects/upload-object) кластера Cloud Spark jar-файлы, которые необходимо подключить через Spark Connect.
 1. Сохраните имя бакета. Далее в скрипте используется имя `spark-k8s-XXXX-bucket`.
 1. [Подключитесь к кластеру Cloud Spark через Spark Connect](../../../connect/spark-connect), если это еще не сделано.
 1. Выполните скрипт Python:
