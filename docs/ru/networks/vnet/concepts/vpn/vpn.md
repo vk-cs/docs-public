@@ -29,6 +29,6 @@ VPN-сервис доступен в обеих [SDN](../sdn) (Software Defined 
 
 Подробнее о настройке VPN:
 
-- [Управление VPN-туннелями в SDN Sprut и SDN Neutron](../../service-management/vpn).
+- [Управление VPN-туннелями в SDN Sprut и SDN Neutron](../../instructions/vpn).
 - [Пример создания VPN-туннеля в SDN Sprut](../../how-to-guides/onpremise-connect/dc-advanced-router).
 - [Пример создания VPN-туннеля в SDN Neutron](../../how-to-guides/onpremise-connect/vpn-tunnel).

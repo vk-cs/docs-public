@@ -1,4 +1,4 @@
-Events that the service of [computing resource management](/en/computing/iaas/service-management/vm) reports to Cloud Audit.
+Events that the service of [computing resource management](/en/computing/iaas/instructions/vm) reports to Cloud Audit.
 
 [cols="2,3", options="header"]
 |===

@@ -27,7 +27,7 @@
                     "link": "/en/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/en/computing/iaas/service-management/volumes"
+                    "link": "/en/computing/iaas/instructions/volumes"
                 }
             ]
         },
@@ -35,7 +35,7 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/computing/iaas/service-management/vm/vm-console"
+                    "link": "/en/computing/iaas/instructions/vm/vm-console"
                 },
                 {
                     "link": "/en/computing/iaas/troubleshooting"

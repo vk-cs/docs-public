@@ -1,6 +1,6 @@
 The supported versions of components and [add-ons](../../addons-and-settings/addons) depend on the version of the Cloud Containers cluster.
 
-When [updating a cluster](../../../service-management/update), part of its components are also updated, as well the installed add-ons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
+When [updating a cluster](../../../instructions/update), part of its components are also updated, as well the installed add-ons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 ## Components
 
@@ -91,7 +91,7 @@ The table shows the supported component versions for different Kubernetes cluste
 
 ## Add-ons
 
-The necessary add-ons can be [installed](../../../service-management/addons/manage-addons#installing_addon) in the cluster individually. The table shows the supported addon versions for different Kubernetes cluster versions.
+The necessary add-ons can be [installed](../../../instructions/addons/manage-addons#installing_addon) in the cluster individually. The table shows the supported addon versions for different Kubernetes cluster versions.
 
 [cols="2,1,1,1,1,1,1,1,1", options="header"]
 |===
@@ -135,7 +135,7 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |2.2.2
 |2.2.2
 
-|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration)
+|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
 | ![](/en/assets/no.svg "inline")
 |0.34.2
 |0.34.2

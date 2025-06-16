@@ -21,7 +21,7 @@
 
    </err>
 
-1. [Создайте](../../service-management/create) кластер Spark.
+1. [Создайте](../../instructions/create) кластер Spark.
 
    Параметры кластера выберите на свое усмотрение.
 

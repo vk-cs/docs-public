@@ -8,7 +8,7 @@ The following versions of Kubernetes aaS from VK Cloud are currently available:
 - 1.29.7
 - 1.28.9
 
-When [creating a new cluster](../../../service-management/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../service-management/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
+When [creating a new cluster](../../../instructions/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../instructions/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
 
 If the cluster uses an outdated [version of Kubernetes](#kubernetes_version_support), then:
 

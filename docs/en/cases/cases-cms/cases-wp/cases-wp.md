@@ -5,8 +5,8 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 ## Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/service-management/net#creating_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
-1. [Create VM](/en/computing/iaas/service-management/vm/vm-create):
+1. [Create](/en/networks/vnet/instructions/net#creating_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Create VM](/en/computing/iaas/instructions/vm/vm-create):
 
    - name: `Almalinux_9_WP`;
    - operating system Almalinux 9;
@@ -14,7 +14,7 @@ This instruction will help you deploy the latest version of the WordPress CMS in
    - assign a public IP address. The example will use `212.233.95.135`;
    - security groups (firewall settings): `default`, `ssh+www`.
 
-1. [Create DB instance](/en/dbs/dbaas/service-management/create):
+1. [Create DB instance](/en/dbs/dbaas/instructions/create):
 
    - name: `MySQL-9341`;
    - DBMS: MySQL 8.0;
@@ -50,7 +50,7 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 
 ## 2. Install WordPress on VM
 
-1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Almalinux_9_WP` VM.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Almalinux_9_WP` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
    ```console
@@ -120,7 +120,7 @@ The WordPress CMS admin panel opens.
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Almalinux_9_WP` VM.
-- [Delete](/en/dbs/dbaas/service-management/delete) `MySQL-9341` instance.
-- If necessary, [delete](/en/networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project) `212.233.95.135` floating IP address.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Almalinux_9_WP` VM.
+- [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-9341` instance.
+- If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) `212.233.95.135` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-wp.example.vk.cloud` DNS record.

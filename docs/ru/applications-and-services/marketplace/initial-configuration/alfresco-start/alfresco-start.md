@@ -17,8 +17,8 @@ Alfresco — это система управления корпоративны
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу Alfresco из интернета:
 
-    1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-    1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+    1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
+    1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
 
 1. Перейдите в раздел **Магазин приложений**, на странице раздела нажмите кнопку **Все решения**.
 1. На карточке сервиса **Alfresco** нажмите кнопку **Подробнее**.
@@ -64,7 +64,7 @@ Alfresco — это система управления корпоративны
 
    <info>
 
-   Если данные для доступа утрачены, [сгенерируйте](../../service-management/pr-instance-manage#update_access) новые.
+   Если данные для доступа утрачены, [сгенерируйте](../../instructions/pr-instance-manage#update_access) новые.
 
    </info>
 

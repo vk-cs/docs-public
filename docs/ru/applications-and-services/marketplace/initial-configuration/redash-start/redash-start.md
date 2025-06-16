@@ -5,9 +5,9 @@
 Чтобы развернуть сервис Redash в проекте:
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../service-management/pr-instance-add) сервис в проекте:
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
+1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. [Разверните](../../instructions/pr-instance-add) сервис в проекте:
 
    - Выберите ранее созданные сеть с доступом в интернет и подсеть. Внешний IP-адрес будет назначен автоматически.
    - Остальные параметры выберите на свое усмотрение.
@@ -19,7 +19,7 @@
 
    <info>
 
-   Если вы не сохранили данные для доступа, [сгенерируйте](../../service-management/pr-instance-manage#update_access) новые.
+   Если вы не сохранили данные для доступа, [сгенерируйте](../../instructions/pr-instance-manage#update_access) новые.
 
    </info>
 

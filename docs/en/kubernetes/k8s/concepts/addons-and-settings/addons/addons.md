@@ -1,4 +1,4 @@
-Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../service-management/create-cluster/create-terraform), or [later](../../../service-management/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
+Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../instructions/create-cluster/create-terraform), or [later](../../../instructions/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
 
 ## {heading(Features of installing add-ons)[id=features_of_installing_addons]}
 
@@ -8,7 +8,7 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
   <info>
 
-  Some add-ons can be installed on all cluster nodes (including master nodes). For more details, see [Configuring and installing add-ons](../../../service-management/addons/advanced-installation).
+  Some add-ons can be installed on all cluster nodes (including master nodes). For more details, see [Configuring and installing add-ons](../../../instructions/addons/advanced-installation).
 
   </info>
 
@@ -24,7 +24,7 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
   Not all add-ons support all three installation options.
 
-  The installation process is described in the section [Configuring and installing add-ons](../../../service-management/addons/advanced-installation).
+  The installation process is described in the section [Configuring and installing add-ons](../../../instructions/addons/advanced-installation).
 
 ## {heading(Available add-ons)[id=available_addons]}
 
@@ -168,7 +168,7 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from the Cloud Containers cluster to the [Cloud Logging](/en/monitoring-services/logging) service for further analysis of these logs.
 
-The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the [section about installing it](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration).
+The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the [section about installing it](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration).
 
 </tabpanel>
 <tabpanel>
@@ -261,7 +261,7 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 - **CPU**: 210m–610m.
 - **RAM**: 238Mi–660Mi.
 - **Standard load balancer**: one piece.
-- **Floating IP**: one piece. (when installed with [default settings](../../../service-management/addons/advanced-installation/install-advanced-ingress#installing_addon)).
+- **Floating IP**: one piece. (when installed with [default settings](../../../instructions/addons/advanced-installation/install-advanced-ingress#installing_addon)).
 
 </tabpanel>
 </tabs>
@@ -321,7 +321,7 @@ Add-on requirements:
 
   Elasticsearch is used as a backend for storage. Each Elasticsearch replica will be hosted on a separate worker node to ensure fault tolerance.
 
-  For more information about choosing the number of replicas, see [section about installing Jaeger](../../../service-management/addons/advanced-installation/install-advanced-jaeger).
+  For more information about choosing the number of replicas, see [section about installing Jaeger](../../../instructions/addons/advanced-installation/install-advanced-jaeger).
 
 - Worker nodes must use the configuration of computing resources:
 

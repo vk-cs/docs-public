@@ -149,4 +149,4 @@
 По умолчанию: `true`
 |===
 
-Примеры настройки плагина с помощью параметров авторизации и конфигурации приведены в разделах [Установка плагина](../../service-management/connect-plugin) и [Управление агентом логирования](../../service-management/manage-vkcloudlogs-plugin#configure_agent).
+Примеры настройки плагина с помощью параметров авторизации и конфигурации приведены в разделах [Установка плагина](../../instructions/connect-plugin) и [Управление агентом логирования](../../instructions/manage-vkcloudlogs-plugin#configure_agent).

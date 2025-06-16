@@ -64,7 +64,7 @@ Check Point CloudGuard Network предоставляется по модели 
 
    </details>
 
-1. (Опционально) [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
+1. (Опционально) [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
 
 ## 1. Разверните сервис Check Point CloudGuard Network
 
@@ -320,7 +320,7 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. В списке виртуальных машин нажмите на имя ВМ, которая была создана в качестве шлюза.
 1. Перейдите на вкладку **Сети**.
-1. [Подключите](/ru/computing/iaas/service-management/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ шлюза и [добавьте](/ru/networks/vnet/service-management/secgroups#dobavlenie_pravila) правила в группу безопасности для этой сети.
+1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ шлюза и [добавьте](/ru/networks/vnet/instructions/secgroups#dobavlenie_pravila) правила в группу безопасности для этой сети.
 
    <info>
 
@@ -386,7 +386,7 @@ Check Point CloudGuard Network предоставляется по модели 
 
 Работающая инфраструктура сервиса потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса Check Point CloudGuard Network.
-- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ, созданные в качестве шлюза и сервера управления.
+- [Удалите](/ru/applications-and-services/marketplace/instructions/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса Check Point CloudGuard Network.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ, созданные в качестве шлюза и сервера управления.
 - Убедитесь, что вместе с ВМ были удалены все диски.
-- [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть, используемую для сервиса.
+- [Удалите](/ru/networks/vnet/instructions/net#udalenie_seti) сеть, используемую для сервиса.

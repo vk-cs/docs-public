@@ -13,12 +13,12 @@
 
 Чтобы иметь возможность просматривать логи кластера:
 
-1. [Установите плагин логирования](/ru/monitoring-services/logging/service-management/connect-plugin) на ВМ кластера.
+1. [Установите плагин логирования](/ru/monitoring-services/logging/instructions/connect-plugin) на ВМ кластера.
 1. Подождите несколько минут, чтобы накопились данные.
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Мониторинг** → **Логирование**.
-1. [Настройте](/ru/monitoring-services/logging/service-management/view-logs) фильтрацию логов в таблице.
+1. [Настройте](/ru/monitoring-services/logging/instructions/view-logs) фильтрацию логов в таблице.
 
 ## Использование Cloud Monitoring
 

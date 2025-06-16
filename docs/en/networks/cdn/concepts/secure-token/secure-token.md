@@ -29,4 +29,4 @@ To enable and configure Secure token, please contact [technical support](mailto:
 
 </info>
 
-If Secure token is enabled for a CDN resource, the content will only be accessible via pre-signed URLs. To allow access to part of the content via regular URLs, [create](/en/networks/cdn/service-management/create-resource) another resource with a separate [origin](/en/networks/cdn/concepts/origin-groups).
+If Secure token is enabled for a CDN resource, the content will only be accessible via pre-signed URLs. To allow access to part of the content via regular URLs, [create](/en/networks/cdn/instructions/create-resource) another resource with a separate [origin](/en/networks/cdn/concepts/origin-groups).

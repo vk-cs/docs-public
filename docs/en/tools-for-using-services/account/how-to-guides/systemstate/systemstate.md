@@ -7,7 +7,7 @@ Statuses can be useful if you encounter service failures. For example, when crea
 ## 1. Preparatory steps
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-1. Click on the user name in the header of the page and select **Application debug**. The [event log](/en/tools-for-using-services/account/service-management/debugging) opens.
+1. Click on the user name in the header of the page and select **Application debug**. The [event log](/en/tools-for-using-services/account/instructions/debugging) opens.
 1. Make sure that the log contains information about errors like `5XX`. This is a sign of possible problems with the operation of the services.
 
 ## 2. View the status of the services

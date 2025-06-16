@@ -10,7 +10,7 @@ Events that the service of [file storages](/en/computing/iaas/concepts/about#fil
 |POST
 |`/v2/shares/`
 
-A file storage has been [created](/en/computing/iaas/service-management/fs-manage#creating_a_file_storage)
+A file storage has been [created](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage)
 
 |POST
 |`/v2/shares/manage`
@@ -25,7 +25,7 @@ Settings of a file storage have been changed
 |DELETE
 |`/v2/shares/{share_id}`
 
-A file storage has been [deleted](/en/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network)
+A file storage has been [deleted](/en/computing/iaas/instructions/fs-manage#deleting_a_file_storage_and_its_network)
 2+^|[Operations with file storage metadata](https://docs.openstack.org/api-ref/shared-file-system/index.html#delete-share-metadata-item)
 
 |POST
@@ -49,16 +49,16 @@ A metadata element with the given key has been deleted
 |POST
 |`/v2/shares/{share_id}/action`
 
-* Access to a file storage has been [granted](/en/computing/iaas/service-management/fs-manage#adding_an_access_rule).
-* Access to a file storage has been [revoked](/en/computing/iaas/service-management/fs-manage#deleting_an_access_rule).
-* File storage size has been [changed](/en/computing/iaas/service-management/fs-manage#increasing_file_storage_size)
+* Access to a file storage has been [granted](/en/computing/iaas/instructions/fs-manage#adding_an_access_rule).
+* Access to a file storage has been [revoked](/en/computing/iaas/instructions/fs-manage#deleting_an_access_rule).
+* File storage size has been [changed](/en/computing/iaas/instructions/fs-manage#increasing_file_storage_size)
 
 2+^|[Operations with file storage snapshots](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-snapshots)
 
 |POST
 |`/v2/snapshots`
 
-A file storage snapshot has been [created](/en/computing/iaas/service-management/fs-manage#creating_a_snapshot)
+A file storage snapshot has been [created](/en/computing/iaas/instructions/fs-manage#creating_a_snapshot)
 
 |POST
 |`/v2/snapshots/manage`
@@ -78,7 +78,7 @@ Setting of a file storage snapshot have been changed
 |DELETE
 |`/v2/snapshots/{snapshot_id}`
 
-A file storage snapshot has been [deleted](/en/computing/iaas/service-management/fs-manage#deleting_a_snapshot)
+A file storage snapshot has been [deleted](/en/computing/iaas/instructions/fs-manage#deleting_a_snapshot)
 
 2+^|[Operations with metadata of file storage snapshots](https://docs.openstack.org/api-ref/shared-file-system/index.html#snapshot-metadata-since-api-v2-73)
 
@@ -103,7 +103,7 @@ A metadata element with the given key has been deleted
 |POST
 |`/v2/share-networks`
 
-A file storage network has been [created](/en/computing/iaas/service-management/fs-manage#creating_a_file_storage)
+A file storage network has been [created](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage)
 
 |POST
 |`/v2/share-networks/{share_network_id}/action`
@@ -121,7 +121,7 @@ Settings of a file storage network have been changed
 |DELETE
 |`/v2/share-networks/{share_network_id}`
 
-A file storage network has been [deleted](/en/computing/iaas/service-management/fs-manage#deleting_a_file_storage_and_its_network)
+A file storage network has been [deleted](/en/computing/iaas/instructions/fs-manage#deleting_a_file_storage_and_its_network)
 
 2+^|[Managing subnets in file storage networks](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-network-subnets-since-api-v2-51)
 

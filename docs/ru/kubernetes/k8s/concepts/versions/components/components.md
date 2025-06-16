@@ -2,7 +2,7 @@
 
 При обновлении кластера также обновляется часть компонентов. Если [обновляемый вместе с кластером компонент](../../update) был удален, он восстановится при обновлении кластера.
 
-Аддоны не обновляются вместе с кластером. Если для аддона доступна новая версия, вы можете [обновить их самостоятельно](../../../service-management/addons/manage-addons#obnovlenie_versii_addona).
+Аддоны не обновляются вместе с кластером. Если для аддона доступна новая версия, вы можете [обновить их самостоятельно](../../../instructions/addons/manage-addons#obnovlenie_versii_addona).
 
 ## Компоненты
 
@@ -93,7 +93,7 @@
 
 ## Аддоны
 
-Необходимые аддоны могут быть [установлены](../../../service-management/addons/manage-addons#ustanovka_addona) в кластер отдельно. В таблице приведены поддерживаемые версии аддонов для различных версий кластеров Kubernetes.
+Необходимые аддоны могут быть [установлены](../../../instructions/addons/manage-addons#ustanovka_addona) в кластер отдельно. В таблице приведены поддерживаемые версии аддонов для различных версий кластеров Kubernetes.
 
 [cols="2,1,1,1,1,1,1,1,1", options="header"]
 |===
@@ -137,7 +137,7 @@
 |2.2.2
 |2.2.2
 
-|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration)
+|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
 | ![](/ru/assets/no.svg "inline")
 |0.34.2
 |0.34.2

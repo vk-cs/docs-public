@@ -87,7 +87,7 @@
         Arch
     ```
 
-    Здесь аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/service-management/images/image-metadata).
+    Здесь аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/instructions/images/image-metadata).
 
 ## 5. Проверьте успешность загрузки образа
 
@@ -97,4 +97,4 @@
 
 ## Удалите неиспользуемые ресурсы
 
-Если загруженный образ вам больше не нужен, [удалите его](/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza).
+Если загруженный образ вам больше не нужен, [удалите его](/ru/computing/iaas/instructions/images/images-manage#udalenie_obraza).

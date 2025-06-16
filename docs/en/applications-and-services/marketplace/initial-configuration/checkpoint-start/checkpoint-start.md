@@ -64,7 +64,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
    </details>
 
-1. (Optional) [Create](/en/networks/vnet/service-management/net#creating_network) a network with Internet access if it has not been created before.
+1. (Optional) [Create](/en/networks/vnet/instructions/net#creating_network) a network with Internet access if it has not been created before.
 
 ## 1. Deploy Check Point CloudGuard Network service
 
@@ -320,7 +320,7 @@ By default, one network interface is created for a VM. To add a network interfac
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a gateway.
 1. Go to the **Networks** tab.
-1. [Connect](/en/computing/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the gateway VM and [add](/en/networks/vnet/service-management/secgroups#add-rule) rules to the security group for that network.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the gateway VM and [add](/en/networks/vnet/instructions/secgroups#add-rule) rules to the security group for that network.
 
    <info>
 
@@ -386,7 +386,7 @@ Backup options are described in the [sk108902 article](https://support.checkpoin
 
 Running service infrastructure consumes computing resources. If you no longer need it:
 
-- [Delete](/en/applications-and-services/marketplace/service-management/pr-instance-manage#deleting_a_service_instance) the instance of the Check Point CloudGuard Network service.
-- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) VMs created as a gateway and a management server.
+- [Delete](/en/applications-and-services/marketplace/instructions/pr-instance-manage#deleting_a_service_instance) the instance of the Check Point CloudGuard Network service.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) VMs created as a gateway and a management server.
 - Make sure that all disks are deleted along with the VMs.
-- [Delete](/en/networks/vnet/service-management/net#deleting_network) the network used for the service.
+- [Delete](/en/networks/vnet/instructions/net#deleting_network) the network used for the service.

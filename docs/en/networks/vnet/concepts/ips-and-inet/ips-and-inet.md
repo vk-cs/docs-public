@@ -209,5 +209,5 @@ The _Shadow port_ technology allows you to launch Kubernetes clusters in private
 To use the technology for creating a Kubernetes cluster:
 
 1. Contact [technical support](mailto:support@mcs.mail.ru) to connect Shadow port to your project.
-1. [Enable](../../service-management/net#creating_network) the **Access to VK Cloud services** option for a network without internet access.
-1. [Locate](/en/kubernetes/k8s/service-management/create-cluster) the cluster on this network.
+1. [Enable](../../instructions/net#creating_network) the **Access to VK Cloud services** option for a network without internet access.
+1. [Locate](/en/kubernetes/k8s/instructions/create-cluster) the cluster on this network.

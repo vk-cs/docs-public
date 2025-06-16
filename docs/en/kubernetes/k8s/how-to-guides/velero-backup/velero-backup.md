@@ -2,7 +2,7 @@ With [Velero](https://velero.io/docs/main/) you can back up and restore cluster 
 
 ## Preparatory steps
 
-1. [Create a cluster](../../service-management/create-cluster) Kubernetes of the most current version.
+1. [Create a cluster](../../instructions/create-cluster) Kubernetes of the most current version.
 
    Place one or more groups of worker nodes in the `GZ1` availability area.
 
@@ -218,7 +218,7 @@ velero help
 
    The command will restore the data to the same cluster that was backed up. If you need to restore data to a new cluster:
 
-   1. [Create cluster](../../service-management/create-cluster).
+   1. [Create cluster](../../instructions/create-cluster).
    1. [Install Velero](../../install-tools/velero) in the cluster.
    1. Run the above command.
 
@@ -280,9 +280,9 @@ velero help
 
 1. If you don't need the backups anymore, delete them from the bucket that Velero used.
 
-   If necessary, also [delete the bucket itself](/en/storage/s3/service-management/buckets/bucket#removing_a_bucket).
+   If necessary, also [delete the bucket itself](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket).
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../instructions/manage-cluster#delete_cluster) it permanently.

@@ -2,4 +2,4 @@
 
 ### Решение
 
-Создайте новую ключевую пару и добавьте публичный ключ на ВМ вручную. Для этого воспользуйтесь [инструкцией по восстановлению доступа к ВМ](/ru/computing/iaas/service-management/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu).
+Создайте новую ключевую пару и добавьте публичный ключ на ВМ вручную. Для этого воспользуйтесь [инструкцией по восстановлению доступа к ВМ](/ru/computing/iaas/instructions/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu).

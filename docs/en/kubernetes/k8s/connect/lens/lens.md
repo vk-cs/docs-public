@@ -2,7 +2,7 @@
 
 ## Before you start
 
-1. [Create](../../service-management/create-cluster) a Kubernetes cluster to connect to, or select the cluster from the list in your [management console](https://msk.cloud.vk.com/app/) in the **Containers → Kubernetes Clusters** section.
+1. [Create](../../instructions/create-cluster) a Kubernetes cluster to connect to, or select the cluster from the list in your [management console](https://msk.cloud.vk.com/app/) in the **Containers → Kubernetes Clusters** section.
 1. On the host from which you plan to connect to the cluster, [install Lens](https://docs.k8slens.dev/getting-started/install-lens/), if you have not done it already.
 1. Make sure that [API access is enabled](/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access).
 1. Install the `client-keystone-auth` plugin to connect to the cluster using [Single Sign-On (SSO)](../../concepts/access-management):

@@ -9,10 +9,10 @@
 
 Чтобы перенести базу данных в SDN Sprut:
 
-1. [Сделайте](/ru/storage/backups/service-management/create-backup-copy) снимок БД. Вы также можете [выполнить](/ru/dbs/dbaas/how-to-guides/db-migration) резервное копирование с помощью программы pg_dump или других встроенных средств резервного копирования БД.
-1. [Восстановите](/ru/storage/backups/service-management/restore-from-backup) БД из резервной копии в новой сети.
+1. [Сделайте](/ru/storage/backups/instructions/create-backup-copy) снимок БД. Вы также можете [выполнить](/ru/dbs/dbaas/how-to-guides/db-migration) резервное копирование с помощью программы pg_dump или других встроенных средств резервного копирования БД.
+1. [Восстановите](/ru/storage/backups/instructions/restore-from-backup) БД из резервной копии в новой сети.
 1. (Опционально) [Настройте](/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router) при помощи продвинутого маршрутизатора сетевую связанность виртуальных машин с исходной и восстановленной базами данных, чтобы приложения не теряли доступ к БД при переносе.
 1. Настройте подключение по новому адресу в приложениях, работающих с перенесенной БД.
 1. (Опционально) Запустите приложения, работающие с перенесенной БД, если останавливали их перед началом миграции БД.
 1. Убедитесь, что миграция прошла успешно.
-1. [Удалите](/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd) исходную базу данных, если она вам больше не нужна.
+1. [Удалите](/ru/dbs/dbaas/instructions/manage-instance/clickhouse#udalenie_instansa_bd) исходную базу данных, если она вам больше не нужна.

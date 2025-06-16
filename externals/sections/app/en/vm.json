@@ -27,16 +27,16 @@
                     "link": "/en/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/en/computing/iaas/service-management/vm/vm-create"
+                    "link": "/en/computing/iaas/instructions/vm/vm-create"
                 },
                 {
-                    "link": "/en/computing/iaas/service-management/vm/vm-connect"
+                    "link": "/en/computing/iaas/instructions/vm/vm-connect"
                 },
                 {
-                    "link": "/en/computing/iaas/service-management/vm/vm-manage"
+                    "link": "/en/computing/iaas/instructions/vm/vm-manage"
                 },
                 {
-                    "link": "/en/computing/iaas/service-management/vm/vm-add-net"
+                    "link": "/en/computing/iaas/instructions/vm/vm-add-net"
                 }
             ]
         },
@@ -44,7 +44,7 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/computing/iaas/service-management/vm/vm-console"
+                    "link": "/en/computing/iaas/instructions/vm/vm-console"
                 },
                 {
                     "link": "/en/computing/iaas/troubleshooting"

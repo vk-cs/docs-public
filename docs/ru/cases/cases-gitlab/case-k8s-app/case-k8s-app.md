@@ -1,7 +1,7 @@
 В данной статье описано, как настроить авторазвертывание приложения в кластер Kubernetes. В примере будет использоваться оборудование:
 
 - Сервер Ubuntu 18.04 LTS x86_64: на нем будут установлены и настроены Docker, GitLab и Harbor.
-- [Развернутый](/ru/kubernetes/k8s/service-management/create-cluster/create-webui) в VK Cloud кластер K8s.
+- [Развернутый](/ru/kubernetes/k8s/instructions/create-cluster/create-webui) в VK Cloud кластер K8s.
 
 ## Подготовительные шаги
 
@@ -148,7 +148,7 @@
 
 ## 3. Разверните локальное приложение в кластере Kubernetes
 
-1. [Создайте](/ru/kubernetes/k8s/service-management/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
+1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
 1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру с помощью `kubectl`.
 1. Предоставьте кластеру права доступа к репозиторию образов Harbor:
 
@@ -303,7 +303,7 @@
      Normal  UPDATE  5s    nginx-ingress-controller  Ingress default/myapp-ingress
    ```
 
-1. Протестируйте работу приложения. Внешний IP-адрес, связанный с ingress-контроллером, можно на [странице кластера](/ru/kubernetes/k8s/service-management/manage-cluster#poluchit_informaciyu_o_klastere). Он называется IP-адрес балансировщика нагрузки для Ingress Controller. Обозначим его как `<INGRESS_EXTERNAL_IP>`.
+1. Протестируйте работу приложения. Внешний IP-адрес, связанный с ingress-контроллером, можно на [странице кластера](/ru/kubernetes/k8s/instructions/manage-cluster#poluchit_informaciyu_o_klastere). Он называется IP-адрес балансировщика нагрузки для Ingress Controller. Обозначим его как `<INGRESS_EXTERNAL_IP>`.
 
    ```console
    ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/handler

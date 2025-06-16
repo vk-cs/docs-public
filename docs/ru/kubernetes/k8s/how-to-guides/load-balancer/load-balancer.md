@@ -95,7 +95,7 @@
 </tablist>
 <tabpanel>
 
-1. Выберите публичный IP-адрес, который нужно назначить балансировщику или создайте новый. Это можно сделать в [личном кабинете VK Cloud](../../../../networks/vnet/service-management/ip/floating-ip#add).
+1. Выберите публичный IP-адрес, который нужно назначить балансировщику или создайте новый. Это можно сделать в [личном кабинете VK Cloud](../../../../networks/vnet/instructions/ip/floating-ip#add).
 
    К IP-адресу не должно быть привязано внутреннего IP-адреса.
 
@@ -349,9 +349,9 @@
 
    Нужный адрес содержится в столбце таблицы `EXTERNAL-IP`.
 
-1. [Создайте виртуальную машину Linux](/ru/computing/iaas/service-management/vm/vm-create) в той же подсети, где находится IP-адрес балансировщика.
+1. [Создайте виртуальную машину Linux](/ru/computing/iaas/instructions/vm/vm-create) в той же подсети, где находится IP-адрес балансировщика.
 
-1. [Подключитесь к этой виртуальной машине](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) по SSH.
+1. [Подключитесь к этой виртуальной машине](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) по SSH.
 
 1. Выполните несколько раз запрос к приложению через балансировщик нагрузки:
    ```console
@@ -403,9 +403,9 @@
    </tabpanel>
    </tabs>
 
-1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/service-management/ip/floating-ip#delete).
+1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/instructions/ip/floating-ip#delete).
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../service-management/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../service-management/manage-cluster#delete_cluster) его навсегда.
+   - [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.

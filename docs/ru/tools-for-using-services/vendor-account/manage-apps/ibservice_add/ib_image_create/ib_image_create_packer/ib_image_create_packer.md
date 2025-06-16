@@ -60,7 +60,7 @@
 
       ID созданного образа будет отображаться в ЛК облачной платформы.
 
-   Подробная инструкция приведена в разделе [Импорт образа](/ru/computing/iaas/service-management/images/images-manage#import_obraza).
+   Подробная инструкция приведена в разделе [Импорт образа](/ru/computing/iaas/instructions/images/images-manage#import_obraza).
 1. Сконфигурируйте packer-файл:
 
    1. В переменные окружения запишите ID сети и ID базового образа:
@@ -144,7 +144,7 @@
 
       </info>
 
-      Имя пользователя ОС зависит от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
+      Имя пользователя ОС зависит от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
       Имя группы безопасности по умолчанию зависит от типа SDN:
 

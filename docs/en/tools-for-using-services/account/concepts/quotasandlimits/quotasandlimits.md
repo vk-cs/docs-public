@@ -11,9 +11,9 @@ Quotas are not shared between several projects of the same owner and are not inh
 
 After activating the services, basic quotas become available to the project. They have default values that apply to all new projects in the region.
 
-Quotas can be [viewed](../../service-management/project-settings/manage#viewing_project_quotas):
+Quotas can be [viewed](../../instructions/project-settings/manage#viewing_project_quotas):
 
-- short list — [in the management console](../../service-management/project-settings/manage#viewing_project_quotas)
+- short list — [in the management console](../../instructions/project-settings/manage#viewing_project_quotas)
 - extended list — via the OpenStack CLI
 
 There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#common_4cc7e93b), which can be created by a single user.
@@ -30,7 +30,7 @@ Other limits are not related to physical limitations and are based on the operat
 
 There are no corresponding quotas for some technical limits.
 
-Quotas can be [increased](../../service-management/project-settings/manage#increasing_project_quotas) within the technical limits by contacting technical support.
+Quotas can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) within the technical limits by contacting technical support.
 
 Non-rigid limits can be exceeded — either also through [technical support](mailto:support@mcs.mail.ru), or independently. However, exceeding these limits can negatively affect the stability of work.
 
@@ -287,7 +287,7 @@ Quotas for the total number of disks in the project take into account all types 
  26 pcs. when configuration disk is disabled
 |The limit is associated with PCI bus limitations.
 
-If, while [creating VM](/ru/computing/iaas/service-management/vm/vm-create), the **Use configuration disk** option is enabled in VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
+If, while [creating VM](/ru/computing/iaas/instructions/vm/vm-create), the **Use configuration disk** option is enabled in VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
 
 If the **Use configuration disk** option is disabled or the `--use-config-drive` parameter is not used, the maximum number of disks is 26
 
@@ -632,11 +632,11 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 | Parameter                                     | Quota in CLI | Basic quota  | Limit | Hard |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
 | Number of backups                             | `backup`| ![](/en/assets/no.svg "inline") | not limited | ![](/en/assets/no.svg "inline") |
-| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshot` in the extended list | 600 pcs. | not limited | ![](/en/assets/no.svg "inline") |
+| Number of snapshots                           | [quota](../../instructions/project-settings/manage#viewing_project_quotas)  `snapshot` in the extended list | 600 pcs. | not limited | ![](/en/assets/no.svg "inline") |
 | Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
 | Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 
-The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../service-management/project-settings/manage#increasing_project_quotas) by contacting technical support.
+The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
 
 ### Cloud Storage
 
@@ -691,4 +691,4 @@ There are no quotas for the Cloud Storage service. The use of these services is 
 
 |===
 
-The rate limits can be [increased](../../service-management/project-settings/manage#increasing_project_quotas) by contacting technical support.
+The rate limits can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.

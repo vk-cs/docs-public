@@ -16,11 +16,11 @@
 
     Запишите имя и IP-адрес сети. В этом примере — `s3-ephn` и `198.18.0.0/20`.
 
-1. [Создайте бакет](/ru/storage/s3/service-management/buckets/create-bucket) в сервисе Cloud Storage, если этого еще не сделано.
-1. [Создайте аккаунт](/ru/storage/s3/service-management/access-management/access-keys) в сервисе Cloud Storage, если этого еще не сделано. Сохраните идентификатор ключа и секретный ключ.
+1. [Создайте бакет](/ru/storage/s3/instructions/buckets/create-bucket) в сервисе Cloud Storage, если этого еще не сделано.
+1. [Создайте аккаунт](/ru/storage/s3/instructions/access-management/access-keys) в сервисе Cloud Storage, если этого еще не сделано. Сохраните идентификатор ключа и секретный ключ.
 1. Подготовьте ВМ, из которой нужно подключить доступ к Cloud Storage:
 
-    1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create) со следующими параметрами:
+    1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create) со следующими параметрами:
 
         - **Операционная система**: в этом примере используется ОС Ubuntu. Вы можете использовать другую ОС, но настройка сети в ней будет отличаться.
         - **Сеть**: любая сеть с доступом в интернет.
@@ -28,9 +28,9 @@
         - **Назначить внешний IP**: включите опцию.
         - **Использовать резервное копирование**: отключите опцию для экономии средств.
         - Остальные настройки выберите по своему усмотрению.
-    1. [Подключите](/ru/computing/iaas/service-management/vm/vm-add-net#podklyuchenie_seti_k_vm) сервисную сеть к ВМ. Выберите сервисную сеть, которая была добавлена в ваш проект. В этом примере — `s3-ephn`. Остальные параметры оставьте по умолчанию.
+    1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) сервисную сеть к ВМ. Выберите сервисную сеть, которая была добавлена в ваш проект. В этом примере — `s3-ephn`. Остальные параметры оставьте по умолчанию.
     1. На вкладке **Сети** посмотрите IP-адрес и MAC-адрес подключения сервисной сети к ВМ. Запишите их. В этом примере — `198.18.14.1` и `fa:16:3e:d8:86:43`.
-    1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ по SSH.
+    1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ по SSH.
     1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
         ```console
@@ -129,14 +129,14 @@
 
 ## 2. (Опционально) Отключите публичную сеть
 
-Если доступ к ВМ по SSH вам больше не нужен, [отключите](/ru/computing/iaas/service-management/vm/vm-add-net#udalenie_seti_vm) сеть с доступом в интернет, которая была добавлена при создании ВМ.
+Если доступ к ВМ по SSH вам больше не нужен, [отключите](/ru/computing/iaas/instructions/vm/vm-add-net#udalenie_seti_vm) сеть с доступом в интернет, которая была добавлена при создании ВМ.
 
 ## 3. Проверьте подключение к сервису Cloud Storage
 
 1. Подключитесь к ВМ:
    
-    - [Через VNC-консоль](/ru/computing/iaas/service-management/vm/vm-console), если публичная сеть была отключена.
-    - [По SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix), если публичная сеть не была отключена.
+    - [Через VNC-консоль](/ru/computing/iaas/instructions/vm/vm-console), если публичная сеть была отключена.
+    - [По SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix), если публичная сеть не была отключена.
 1. Выполните команду:
 
     ```console
@@ -154,5 +154,5 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальную машину.
-1. [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сети, в которых была размещена ВМ.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) виртуальную машину.
+1. [Удалите](/ru/networks/vnet/instructions/net#udalenie_seti) сети, в которых была размещена ВМ.

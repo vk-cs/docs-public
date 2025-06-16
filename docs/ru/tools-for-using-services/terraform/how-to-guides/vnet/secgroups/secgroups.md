@@ -104,7 +104,7 @@
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор порта будет получен после создания ресурса `vkcs_networking_port`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор порта будет получен из источника данных `vkcs_networking_port`.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка портов](/ru/networks/vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка портов](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
   </details>
 
@@ -123,7 +123,7 @@
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор группы безопасности будет получен после создания ресурса `vkcs_networking_secgroup`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор группы безопасности будет получен из источника данных `vkcs_networking_secgroup`.
-  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка групп безопасности](/ru/networks/vnet/service-management/secgroups#prosmotr_spiska_grupp_bezopasnosti_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка групп безопасности](/ru/networks/vnet/instructions/secgroups#prosmotr_spiska_grupp_bezopasnosti_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
   </details>
 

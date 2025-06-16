@@ -160,7 +160,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
 
 1. In your browser, follow the received link. The console of the operating system loaded from the Live CD will open. In this guide, this will be the console of the Ubuntu Server 20.04 OS.
 
-    You can also [log into](../../service-management/vm/vm-console#the_vnc_console) this console via your VK Cloud management console.
+    You can also [log into](../../instructions/vm/vm-console#the_vnc_console) this console via your VK Cloud management console.
 
 1. Perform VM recovery operations in the console.
 1. Once the work is completed, return the VM to normal operation mode by running the command:

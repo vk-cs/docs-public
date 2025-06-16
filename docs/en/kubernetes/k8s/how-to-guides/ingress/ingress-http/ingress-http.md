@@ -10,13 +10,13 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
 ## 1. Preparatory steps
 
-1. [Create](../../../service-management/create-cluster) a Kubernetes cluster of the most current version.
+1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the most current version.
 
    When creating the cluster select the **Assign external IP** option.
 
    Select other cluster settings at your discretion.
 
-1. [Make sure](../../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
+1. [Make sure](../../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
 1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl'.
 
@@ -428,5 +428,5 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.

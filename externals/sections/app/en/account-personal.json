@@ -3,10 +3,10 @@
     "path": "/account/personal",
     "groups": [
       {
-        "title": "SERVICE MANAGEMENT",
+        "title": "STEP-BY-STEP INSTRUCTIONS",
         "links": [
           {
-            "link": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo"
+            "link": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo"
           }
         ]
       }

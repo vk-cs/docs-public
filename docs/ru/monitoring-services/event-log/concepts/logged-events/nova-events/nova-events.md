@@ -1,4 +1,4 @@
-События, которые [сервис управления вычислительными ресурсами](/ru/computing/iaas/service-management/vm) передает в Cloud Audit.
+События, которые [сервис управления вычислительными ресурсами](/ru/computing/iaas/instructions/vm) передает в Cloud Audit.
 
 [cols="2,3", options="header"]
 |===

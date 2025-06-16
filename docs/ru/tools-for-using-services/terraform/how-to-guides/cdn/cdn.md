@@ -149,7 +149,7 @@
 
     - `origin_group = vkcs_cdn_origin_group.origin_group.id`: идентификатор группы источников будет получен после создания ресурса `vkcs_cdn_origin_group`.
     - `origin_group = data.vkcs_cdn_origin_group.origin_group.id`: идентификатор группы будет получен из источника данных `vkcs_cdn_origin_group`.
-    - `origin_group = "266524"`: указан идентификатор, полученный из [списка групп источников](/ru/networks/cdn/service-management/manage-origin-groups#origin_group_list) в личном кабинете VK Cloud.
+    - `origin_group = "266524"`: указан идентификатор, полученный из [списка групп источников](/ru/networks/cdn/instructions/manage-origin-groups#origin_group_list) в личном кабинете VK Cloud.
 
   </details>
 

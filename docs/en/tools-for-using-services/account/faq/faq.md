@@ -41,7 +41,7 @@ The role model of the project participants is described in the article [Roles an
 
 <summary>How do I add an additional participant to the project?</summary>
 
-The procedure is described in the article [Access management](../service-management/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions).
+The procedure is described in the article [Access management](../instructions/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions).
 
 </details>
 
@@ -75,7 +75,7 @@ The number will be changed after successful confirmation of the user's identity.
 
 <summary>How do I change the owner of the VK Cloud account?</summary>
 
-Use the instructions from the article [Project management](../service-management/project-settings/manage#changing_project_owner).
+Use the instructions from the article [Project management](../instructions/project-settings/manage#changing_project_owner).
 
 </details>
 

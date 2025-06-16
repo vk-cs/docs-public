@@ -1,6 +1,6 @@
 ## About tariffication
 
-The cost of using the service instance depends on the selected tariff plan and options. It is reflected in the [service configuration wizard](../service-management/pr-instance-add) and consists of two parts:
+The cost of using the service instance depends on the selected tariff plan and options. It is reflected in the [service configuration wizard](../instructions/pr-instance-add) and consists of two parts:
 
 - The cost of using the service, it is reflected in the **Tariff plans** tab.
 - For image-based services — the cost of the infrastructure, it is reflected in the section **Details**.
@@ -35,7 +35,7 @@ If there are not enough funds when debiting, the instance status changes:
 1. Soft Limit. The beginning of the period is considered the first unsuccessful attempt to write off funds. The maximum duration of the period is up to 10 days, the balance is checked daily. If there were no successful write-offs during this period, the Hard Limit period begins.
 1. Hard Limit. Compulsory cancellation of all debts on the service. The instance of the service is blocked until the full payment of the debt for 10 days:
 
-   - If the balance remains positive after debiting, the period is reset to zero, a notification is received about the need for [manual activation](../service-management/pr-instance-manage#updating_access_to_a_service_instance) for the service instance.
+   - If the balance remains positive after debiting, the period is reset to zero, a notification is received about the need for [manual activation](../instructions/pr-instance-manage#updating_access_to_a_service_instance) for the service instance.
    - If there are not enough funds, after the expiration of the period, the service instance is deleted without the possibility of recovery.
 
 </tabpanel>
@@ -55,7 +55,7 @@ For SaaS and image-based services:
 - Virtual project resources used for backup or recovery.
 - Other services provided within the service (the final set depends on the vendor's service).
 
-For image-based services, VK Cloud virtual resources deployed to maintain the service infrastructure are charged: VMs, disks, networks, routers. The full list of required resources is available when [connecting](../service-management/pr-instance-add) the service instance.
+For image-based services, VK Cloud virtual resources deployed to maintain the service infrastructure are charged: VMs, disks, networks, routers. The full list of required resources is available when [connecting](../instructions/pr-instance-add) the service instance.
 
 ## Not charged
 

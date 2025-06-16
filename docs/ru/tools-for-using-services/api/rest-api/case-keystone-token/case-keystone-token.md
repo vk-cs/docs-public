@@ -3,7 +3,7 @@
 ## Подготовительные шаги
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что [включена](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
+1. Убедитесь, что [включена](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
 1. В шапке страницы личного кабинета выберите проект, в котором планируете использовать токен.
 
 ## Генерация токена
@@ -193,5 +193,5 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 
 Другие примеры использования токена:
 
-- [просмотр логов](/ru/monitoring-services/logging/service-management/view-logs) в сервисе Cloud Logging;
+- [просмотр логов](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging;
 - [работа](/ru/tools-for-using-services/api/api-spec/api-dns) с публичным DNS.

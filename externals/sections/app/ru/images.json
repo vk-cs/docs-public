@@ -27,10 +27,10 @@
                     "link": "/ru/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/images/images-manage"
+                    "link": "/ru/computing/iaas/instructions/images/images-manage"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/images/image-metadata"
+                    "link": "/ru/computing/iaas/instructions/images/image-metadata"
                 }
             ]
         },
@@ -44,7 +44,7 @@
                     "link": "/ru/intro/migration/migrate-vmware"
                 },
                 {
-                    "link": "/ru/computing/iaas/service-management/vm/vm-console"
+                    "link": "/ru/computing/iaas/instructions/vm/vm-console"
                 },
                 {
                     "link": "/ru/computing/iaas/troubleshooting"

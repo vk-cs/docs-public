@@ -18,7 +18,7 @@
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сети.
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сети.
 
    <info>
 
@@ -122,7 +122,7 @@
 
 ## 1. Настройте VPN-туннель на стороне облачной сети
 
-[Создайте VPN-туннель](/ru/networks/vnet/service-management/vpn) со следующими параметрами:
+[Создайте VPN-туннель](/ru/networks/vnet/instructions/vpn) со следующими параметрами:
 
 <tabs>
 <tablist>
@@ -193,7 +193,7 @@
 
 1. Отключите [IP Source Guard](/ru/networks/vnet/concepts/traffic-limiting#source_guard) для порта VPN-шлюза, чтобы он мог пересылать любой трафик:
 
-   1. Найдите порт с приватным IP-адресом `172.16.0.5` виртуальной машины `client_vpn_gw`. [Получите](/ru/networks/vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih) идентификатор этого порта.
+   1. Найдите порт с приватным IP-адресом `172.16.0.5` виртуальной машины `client_vpn_gw`. [Получите](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) идентификатор этого порта.
 
    1. Разрешите прохождение трафика с любых адресов через этот порт:
 
@@ -340,9 +340,9 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальные машины.
-1. [Удалите](../../../service-management/vpn#udalenie_vpn_tunnelya) VPN-туннель.
-1. [Удалите](../../../service-management/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) виртуальные машины.
+1. [Удалите](../../../instructions/vpn#udalenie_vpn_tunnelya) VPN-туннель.
+1. [Удалите](../../../instructions/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 
    <info>
 
@@ -350,6 +350,6 @@
 
    </info>
 
-1. [Удалите](../../../service-management/router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
-1. Удалите клиентскую и облачную [подсети](../../../service-management/net#udalenie_podseti) и [сети](../../../service-management/net#udalenie_seti).
-1. [Удалите](../../../service-management/ip/floating-ip#delete) Floating IP-адреса.
+1. [Удалите](../../../instructions/router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
+1. Удалите клиентскую и облачную [подсети](../../../instructions/net#udalenie_podseti) и [сети](../../../instructions/net#udalenie_seti).
+1. [Удалите](../../../instructions/ip/floating-ip#delete) Floating IP-адреса.

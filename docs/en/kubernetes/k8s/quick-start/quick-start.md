@@ -89,15 +89,15 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 </warn>
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-registry) the `docker-registry` add-on.
+1. [Install](../instructions/addons/advanced-installation/install-advanced-registry) the `docker-registry` add-on.
 
    Write down the data for accessing the Docker registry.
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-monitoring) the `kube-prometheus-stack` add-on.
+1. [Install](../instructions/addons/advanced-installation/install-advanced-monitoring) the `kube-prometheus-stack` add-on.
 
    Write down the password to access the Grafana web interface.
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-ingress) the `ingress-nginx` add-on with default parameters.
+1. [Install](../instructions/addons/advanced-installation/install-advanced-ingress) the `ingress-nginx` add-on with default parameters.
 
    Write down the floating IP address for the load balancer.
 
@@ -790,8 +790,8 @@ This result demonstrates that:
 
 A running cluster consumes computing resources. If you no longer need it:
 
-- [stop](../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-- [delete](../service-management/manage-cluster#delete_cluster) it permanently.
+- [stop](../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+- [delete](../instructions/manage-cluster#delete_cluster) it permanently.
 
 ## What's next?
 

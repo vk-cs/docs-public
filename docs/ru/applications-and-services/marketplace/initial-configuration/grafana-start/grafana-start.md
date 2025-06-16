@@ -7,9 +7,9 @@
 Чтобы развернуть сервис Grafana в проекте:
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../service-management/pr-instance-add) сервис Grafana:
+1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть, если она не была создана ранее.
+1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. [Разверните](../../instructions/pr-instance-add) сервис Grafana:
 
    - **Как будет размещена Grafana**: укажите `external` тип доступа к Grafana, чтобы иметь доступ к сервису через внешний IP-адрес.
    - **Резервное копирование**: выберите вариант `no`, чтобы не сохранять данные в объектное хранилище [Cloud Storage](/ru/storage/s3). При варианте `yes` будут скопированы данные за последние 7 дней.

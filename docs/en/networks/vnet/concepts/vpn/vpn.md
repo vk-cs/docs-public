@@ -29,5 +29,5 @@ In the Sprut SDN, a VPN can be built between the cloud and the remote infrastruc
 
 Read more about setting up a VPN:
 
-- [Managing VPN tunnels in SDN Sprut and SDN Neutron](../../service-management/vpn).
+- [Managing VPN tunnels in SDN Sprut and SDN Neutron](../../instructions/vpn).
 - [Example of creating a VPN tunnel in SDN Neutron](../../how-to-guides/vpn-tunnel).

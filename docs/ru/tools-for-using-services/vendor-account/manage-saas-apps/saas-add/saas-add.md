@@ -341,7 +341,7 @@
       * OSB ID инстанса сервиса, который формируется магазином при подключении сервиса. OSB ID передается в SaaS-приложение, чтобы SaaS-приложение сформировало ID инстанса сервиса. ID инстанса сервиса используется в методах, описанных ниже.
       * ID тарифного плана.
       * Тарифные опции плана, описанные в JSON-файле конфигурации сервиса в [секции plans.schemas.service_instance.create](../../reference/saas-apps-reference/schemas-section).
-      * (Опционально) Контекст, содержащий информацию о пользователе: электронная почта, [уникальный идентификатор проекта (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta).
+      * (Опционально) Контекст, содержащий информацию о пользователе: электронная почта, [уникальный идентификатор проекта (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
 
    * Обновление тенанта или аккаунта. Входные данные метода:
 
@@ -354,7 +354,7 @@
 
       * ID инстанса сервиса.
       * Параметры сервисных привязок, описанные в JSON-файле конфигурации сервиса в [секции plans.schemas.service_binding.create](../../reference/saas-apps-reference/schemas-section).
-      * (Опционально) Контекст, содержащий информацию о пользователе: электронная почта, [уникальный идентификатор проекта (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta).
+      * (Опционально) Контекст, содержащий информацию о пользователе: электронная почта, [уникальный идентификатор проекта (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
 
    * Получение и удаление сервисных привязок. Входные данные методов:
 
@@ -641,7 +641,7 @@ URL, на который будут отправляться запросы от
    1. Перейдите на новый тарифный план.
 
 1. Проверьте основные пользовательские сценарии сервиса.
-1. [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса.
+1. [Удалите](/ru/applications-and-services/marketplace/instructions/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса.
 1. Если вы указали тестовые значения стоимости в конфигурации сервиса на время тестирования и отладки, [отредактируйте](../saas-update) их.
 1. Если в процессе тестирования вы изменили конфигурацию сервиса, убедитесь, что ревизия сервиса [обновлена](../saas-update).
 

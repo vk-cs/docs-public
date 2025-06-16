@@ -85,7 +85,7 @@ The tabs below describe different scenarios for creating load balancers:
 </tablist>
 <tabpanel>
 
-1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/service-management/ip/floating-ip#adding_floating_ip_address_to_the_project).
+1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/instructions/ip/floating-ip#adding_floating_ip_address_to_the_project).
 
    There should be no internal IP address attached to the IP address.
 
@@ -340,9 +340,9 @@ The tabs below describe different scenarios for testing load balancers:
 
    The required address is contained in the `EXTERNAL-IP` column of the table.
 
-1. [Create Linux virtual machine](/en/computing/iaas/service-management/vm/vm-create) in the same subnet where the balancer IP address resides.
+1. [Create Linux virtual machine](/en/computing/iaas/instructions/vm/vm-create) in the same subnet where the balancer IP address resides.
 
-1. [Connect to this virtual machine](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) via SSH.
+1. [Connect to this virtual machine](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) via SSH.
 
 1. Request the application several times via the load balancer:
 
@@ -395,9 +395,9 @@ The tabs below describe different scenarios for testing load balancers:
    </tabpanel>
    </tabs>
 
-1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/service-management/ip/floating-ip#removing_floating_ip_address_from_the_project).
+1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project).
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../service-management/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../service-management/manage-cluster#delete_cluster) it permanently.
+   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+   - [delete](../../instructions/manage-cluster#delete_cluster) it permanently.
