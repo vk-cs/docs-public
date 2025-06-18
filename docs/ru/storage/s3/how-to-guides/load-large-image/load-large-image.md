@@ -151,5 +151,5 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 Созданные ресурсы тарифицируются и потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
 - [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ.
-- [Удалите](../../instructions/buckets/manage-bucket#udalenie_baketa) бакет `uc_bucket`.
+- [Удалите](../../instructions/buckets/manage-bucket#bucket_delete) бакет `uc_bucket`.
 - [Удалите](/ru/computing/iaas/instructions/volumes#udalenie_diska) диск.
