@@ -1,0 +1,10 @@
+{
+    "title": "Концепции",
+    "pageDescription": "Подробное описание принципов функционирования и устройства сервиса Cloud Iceberg Metastore в VK Cloud.",
+    "shortDescription": "Об устройстве сервиса Cloud Iceberg Metastore",
+    "metaTitle": "Концепции",
+    "metaDescription": "Как устроен сервис Cloud Iceberg Metastore в VK Cloud: функциональные особенности и внутренняя архитектура",
+    "sectionTitle": "Концепции",
+    "icon": "",
+    "weight": 2
+  }

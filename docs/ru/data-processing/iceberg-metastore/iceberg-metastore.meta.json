@@ -1,0 +1,10 @@
+{
+    "title": "Cloud Iceberg Metastore",
+    "pageDescription": "Сервис для управления метаданными таблиц Apache Iceberg в инфраструктуре VK Cloud.",
+    "shortDescription": "Управление метаданными таблиц Apache Iceberg",
+    "metaTitle": "Cloud Iceberg Metastore",
+    "metaDescription": "Сервис для управления метаданными таблиц Apache Iceberg в инфраструктуре VK Cloud",
+    "sectionTitle": "Cloud Iceberg Metastore",
+    "icon": "",
+    "weight": 4
+  }
