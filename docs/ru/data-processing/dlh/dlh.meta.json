@@ -1,10 +1,10 @@
 {
-    "title": "Data LakeHouse",
+    "title": "Data Lakehouse",
     "pageDescription": "Подход к хранению и анализу данных, сочетающий элементы «озер данных» и корпоративного хранилища данных.",
     "shortDescription": "Подход к хранению и анализу данных с элементами «озер данных» и корпоративного хранилища данных",
-    "metaTitle": "Data LakeHouse",
+    "metaTitle": "Data Lakehouse",
     "metaDescription": "Подход к хранению и анализу данных с элементами «озер данных» и корпоративного хранилища данных",
-    "sectionTitle": "Data LakeHouse",
+    "sectionTitle": "Data Lakehouse",
     "icon": "",
     "weight": 1
   }
