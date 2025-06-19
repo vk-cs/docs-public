@@ -1,10 +1,10 @@
 {
-    "title": "Развертывание Cloud Spark",
+    "title": "Подключение  Cloud Spark в качестве инструмента обработки данных",
     "pageDescription": "Как развернуть экземпляр сервиса Cloud Spark для выполнения сложных ложные ETL и ELT задач.",
     "shortDescription": "Как развернуть экземпляр сервиса Cloud Spark для выполнения сложных ложные ETL и ELT задач",
-    "metaTitle": "Развертывание Cloud Spark",
+    "metaTitle": "Подключение инструментов обработки данных",
     "metaDescription": "Как развернуть экземпляр сервиса Cloud Spark для выполнения сложных ложные ETL и ELT задач",
-    "sectionTitle": "Развертывание Cloud Spark",
+    "sectionTitle": "Подключение инструментов обработки данных",
     "icon": "",
     "weight": 2
 }

@@ -1,10 +1,10 @@
 {
-    "title": "Data LakeHouse",
-    "pageDescription": "Архитектура Data LakeHouse: преимущества по сравнению с Data WareHouse и Data Lake.",
-    "shortDescription": "Архитектура Data LakeHouse: преимущества по сравнению с Data WareHouse и Data Lake",
+    "title": "Data Lakehouse",
+    "pageDescription": "Архитектура Data Lakehouse: преимущества по сравнению с Data Warehouse и Data Lake.",
+    "shortDescription": "Архитектура Data Lakehouse: преимущества по сравнению с Data Warehouse и Data Lake",
     "metaTitle": "LakeHouse",
-    "metaDescription": "Архитектура Data LakeHouse: преимущества по сравнению с Data WareHouse и Data Lake",
-    "sectionTitle": "Data LakeHouse",
+    "metaDescription": "Архитектура Data Lakehouse: преимущества по сравнению с Data Warehouse и Data Lake",
+    "sectionTitle": "Data Lakehouse",
     "icon": "",
     "weight": 3
   }

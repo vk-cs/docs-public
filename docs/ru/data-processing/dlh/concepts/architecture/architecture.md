@@ -1,4 +1,4 @@
-[Data LakeHouse (DLH)](/ru/data-processing/dlh/concepts/about) собирает структурированные и неструктурированные данные из различных источников, обрабатывает их через [Cloud Spark](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_spark) ([ETL](https://ru.wikipedia.org/wiki/ETL) или ELT) или [Cloud Trino](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_trino) (SQL-запросы), хранит в [S3-хранилище](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#s3_vk_cloud_storage) с каталогизацией в [Iceberg Metastore](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#iceberg_metastore), управляет метаданными в DataHub и предоставляет данные для аналитики, BI и ML через Cloud Trino, Cloud Spark или [ClickHouse](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#clickhouse).
+[Data Lakehouse (DLH)](/ru/data-processing/dlh/concepts/about) собирает структурированные и неструктурированные данные из различных источников, обрабатывает их через [Cloud Spark](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_spark) ([ETL](https://ru.wikipedia.org/wiki/ETL) или ELT) или [Cloud Trino](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_trino) (SQL-запросы), хранит в [S3-хранилище](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#s3_vk_cloud_storage) с каталогизацией в [Iceberg Metastore](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#iceberg_metastore), управляет метаданными в DataHub и предоставляет данные для аналитики, BI и ML через Cloud Trino, Cloud Spark или [ClickHouse](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#clickhouse).
 
 ![](./assets/arch_diagram.png){params[noBorder=true]}
 
@@ -31,7 +31,7 @@
 
 - _PUSH-модель_ — это подход, при котором данные из источника автоматически отправляются в Cloud Spark или Cloud Trino. Подход используется для задач, где критична непрерывная доставка и обработка больших объемов данных: сложные ETL- и ELT-процессы, подготовка данных для аналитики, машинное обучение на больших данных.
 
-При проектировании архитектуры Data LakeHouse важно определить, какие типы данных и каким образом будут обрабатываться:
+При проектировании архитектуры Data Lakehouse важно определить, какие типы данных и каким образом будут обрабатываться:
 
 [cols="<,<,<",options="header"]
 |===
