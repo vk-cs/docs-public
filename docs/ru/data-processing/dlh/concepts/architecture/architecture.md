@@ -14,9 +14,9 @@
 
     - При [потоковой обработке](https://en.wikipedia.org/wiki/Stream_processing) (Streaming Processing) данные обрабатываются непрерывно, микропартиями (mini-batches) или событийно (event-by-event), в режиме реального времени. Потоковая обработка осуществляется по [PUSH-модели](#data_processing_models).
 
-    - При [пакетной обработке](https://en.wikipedia.org/wiki/Batch_processing) (Batch Processing) данные накапливаются партиями (файлы, таблицы) и обрабатываются единовременно. Процесс извлечения запускается по расписанию или вручную.
+    - При [пакетной обработке](https://en.wikipedia.org/wiki/Batch_processing) (Batch Processing) данные накапливаются партиями (файлы, таблицы) и обрабатываются единовременно. Процесс извлечения запускается по расписанию или вручную ([PULL-модель](#data_processing_models)).
 
-1. Каталог объектов хранилища S3 (Iceberg Metastore) каталогизирует объекты и предоставляет API для доступа к [хранилищу S3](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#s3_vk_cloud_storage).
+1. Iceberg Metastore каталогизирует объекты [хранилища S3](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#s3_vk_cloud_storage) и предоставляет API для доступа к нему.
 
     Хранение данных организовано с поддержкой [ACID](https://ru.wikipedia.org/wiki/ACID)-транзакций через сервис [Iceberg Metastore](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#iceberg_metastore), который позволяет представить объекты хранилища S3 как таблицы БД. Использование хранилища S3 значительно снижает стоимость хранения.
 
@@ -40,8 +40,8 @@
 | PUSH-модель
 
 | Сервис
-| [Cloud Airflow](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_airflow)
-|  [Cloud Trino](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_trino), [Cloud Spark](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_spark)
+| [Cloud Airflow](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_airflow), [Cloud Trino](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_trino), [Cloud Spark](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_spark) (пакетная обработка)
+| [Cloud Spark](https://cloud.vk.com/docs/data-processing/dlh/concepts/components#cloud_spark) (потоковая обработка, микробатчи)
 
 | Поддержка источников
 | API, БД, файлы
