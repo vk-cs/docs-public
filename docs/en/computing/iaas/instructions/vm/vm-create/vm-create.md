@@ -70,7 +70,19 @@ The VM settings available for configuration may vary depending on the operating 
 
 1. Click the **Next step** button.
 
-1. If necessary, enable the **Use Backup** option and [specify](/en/storage/backups/instructions/create-backup-plan) settings.
+1. Specify backup settings.
+
+   By default, backup is enabled and has settings that comply with VK Cloud best practices:
+
+   - **Enable GFS**: the option is enabled.
+   - **Keep weekly full backups**: the period of `4` weeks is specified.
+   - **Keep monthly full backups**: the option is enabled, the period of `12` months is specified.
+   - **Keep yearly full backups**: the option is enabled, the period of `3` years is specified.
+   - **Enable incremental backups**: the option is disabled.
+   - **Backup schedule**: all days of the week are selected, the start time is selected between 09:00 and 18:00.
+
+   If necessary, [select](/ru/storage/backups/instructions/create-backup-plan#create_vm_backup_plan) other values.
+
 1. Click the **Create instance** button.
 1. Wait for the VM to be created. This process may take some time. When the creation is completed, a page with VM characteristics and connection instructions will open.
 

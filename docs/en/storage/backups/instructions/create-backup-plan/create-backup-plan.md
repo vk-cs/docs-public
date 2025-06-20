@@ -31,6 +31,19 @@ Each VM or DB instance can have only one backup plan.
 1. Enter the backup **Plan name**.
 1. Select the resource type: `Virtual machine`.
 
+   Below on the plan creation page are default settings that comply with VK Cloud best practices:
+
+   - **Enable incremental backups**: the option is disabled.
+   - **Days of creating a full backup**: all days of the week are selected, the start time is selected between 09:00 and 18:00.
+   - **Enable full copy storage strategy (GFS)**: the option is enabled.
+   - **Keep weekly complete copies**: the period of `4` weeks is specified.
+   - **Keep monthly complete copies**: the option is enabled, the period of `12` months is specified.
+   - **Keep yearly complete copies**: the option is enabled, the period of `3` years is specified.
+
+1. If the default settings are suitable for your plan, select the required VMs in the **Apply to the following virtual machines** field and click the **Create a plan** button. Skip the rest of the steps.
+
+   If you need to change the settings, proceed to the next step.
+
 {include(/en/_includes/_backup_plan_create_change.md)[tags=vm]}
 
 The created backup plan will appear in the list.
