@@ -4,6 +4,7 @@ envSecret:
   MAILER_TOKEN: new-help-secret
   VKTEAMS_ALERT_TOKEN: new-help-secret
   GITHUB_BOT_TOKEN: new-help-secret
+  AI_SEARCH_TOKEN: new-help-secret
 
 components:
   - name: mcs-help

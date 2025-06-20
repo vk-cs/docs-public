@@ -1,5 +1,6 @@
 env:
   TARGET_ENV: "branch"
+  AI_SEARCH_TOKEN: '{{ requiredEnv "TEST_AI_SEARCH_TOKEN" }}'
 
 components:
   - name: mcs-help

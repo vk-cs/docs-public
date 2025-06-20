@@ -128,6 +128,7 @@ export const config = {
         suggester: true,
         editOnGitOps: true,
         dpp: true,
+        aiSearch: true,
     },
     translations: {
         en: {
