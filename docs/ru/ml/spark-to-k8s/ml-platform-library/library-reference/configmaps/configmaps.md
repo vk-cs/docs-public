@@ -68,8 +68,7 @@
 
 ### Сигнатура метода, примеры манифестов и пример использования метода
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 create_configmap_from_yaml(cluster_id: str,
@@ -79,10 +78,9 @@ create_configmap_from_yaml(cluster_id: str,
                           ) -> mlplatform_client.serializers.spark_proxy.K8sConfigmap
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример манифеста с кодом приложения для кластера Cloud Spark</summary>
+{cut(Пример манифеста с кодом приложения для кластера Cloud Spark)}
 
 ```yaml
 apiVersion: v1
@@ -124,10 +122,9 @@ data:
     spark.stop()
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример манифеста с настройками доступа к инстансу базы данных MongoDB (mongodb_configmap.yaml)</summary>
+{cut(Пример манифеста с настройками доступа к инстансу базы данных MongoDB (mongodb_configmap.yaml))}
 
 ```yaml
 kind: ConfigMap
@@ -144,10 +141,9 @@ data:
     rsa.public.key=42
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода для манифеста mongodb_configmap.yaml</summary>
+{cut(Пример использования метода для манифеста mongodb_configmap.yaml)}
 
 <err>
 
@@ -186,7 +182,7 @@ name: example-configmap
 namespace: default      
 ```
 
-</details>
+{/cut}
 
 ## list_configmaps
 
@@ -226,8 +222,7 @@ namespace: default
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 list_configmaps(cluster_id: str,
@@ -236,10 +231,9 @@ list_configmaps(cluster_id: str,
                ) -> mlplatform_client.serializers.spark_proxy.K8sObjectNamesList[str]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -268,7 +262,7 @@ list_configmaps(cluster_id: str,
 
    В случае успеха будут выведены имена всех ConfigMap в пространстве имен `default`.
 
-</details>
+{/cut}
 
 ## get_configmap_detail
 
@@ -332,8 +326,7 @@ list_configmaps(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_configmap_detail(cluster_id: str,
@@ -343,10 +336,9 @@ get_configmap_detail(cluster_id: str,
                     ) -> mlplatform_client.serializers.spark_proxy.K8sConfigmap
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -376,7 +368,7 @@ get_configmap_detail(cluster_id: str,
 
    В случае успеха будет выведена информация о ConfigMap с именем `example-configmap`.
 
-</details>
+{/cut}
 
 ## delete_configmap
 
@@ -421,8 +413,7 @@ get_configmap_detail(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 delete_configmap(cluster_id: str,
@@ -431,10 +422,9 @@ delete_configmap(cluster_id: str,
                  **kwargs)
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -462,4 +452,4 @@ delete_configmap(cluster_id: str,
 
    ConfigMap с указанным именем будет удален из кластера Cloud Spark. Это можно проверить с помощью метода [list_configmaps](#list_configmaps).
 
-</details>
+{/cut}

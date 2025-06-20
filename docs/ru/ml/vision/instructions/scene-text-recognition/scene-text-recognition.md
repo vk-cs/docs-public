@@ -157,8 +157,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 
 ## Дополнительные примеры
 
-<details>
-    <summary>На изображении нет текста</summary>
+{cut(На изображении нет текста)}
 
 Пример запроса:
 
@@ -185,10 +184,9 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-    <summary>Некорректный JSON</summary>
+{cut(Некорректный JSON)}
 
 Пример запроса:
 
@@ -215,4 +213,4 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 }
 ```
 
-</details>
+{/cut}

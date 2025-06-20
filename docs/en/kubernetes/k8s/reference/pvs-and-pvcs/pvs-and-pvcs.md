@@ -62,8 +62,7 @@ When a new PVC is created in a Kubernetes cluster:
 
    If there is no available PV that exactly matches the parameters specified in the PVC, a PV with excessive characteristics may be selected. Keep an eye on the available PVs and the PVCs being created to avoid a situation where all PVs of large capacity are associated with PVCs that request small amounts of storage. An extra space on such PVs will be wasted and they will not be available for binding when PVCs requiring large amounts of storage appear in the cluster.
 
-   <details>
-   <summary>PV selection example</summary>
+   {cut(PV selection example)}
 
    For example, let there exist in a cluster:
 
@@ -77,7 +76,7 @@ When a new PVC is created in a Kubernetes cluster:
    - The PV size exceeds the requested size and the PV supports more modes than specified in the PVC.
    - There is the third PV with the same size as the first PV but with excessive set of access modes.
 
-   </details>
+   {/cut}
 
 1. Kubernetes performs one of the actions:
 

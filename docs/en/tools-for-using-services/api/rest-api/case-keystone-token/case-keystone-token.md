@@ -105,8 +105,7 @@ Get a token:
 
 The token value will be output in the `x-subject-token` parameter.
 
-<details>
-<summary markdown="span">Examples of responses to a token generation request</summary>
+{cut(Examples of responses to a token generation request)}
 
 <tabs>
 <tablist>
@@ -136,7 +135,7 @@ x-subject-token: <TOKEN_VALUE>
 </tabpanel>
 </tabs>
 
-</details>
+{/cut}
 
 </tabpanel>
 </tabs>
@@ -153,8 +152,7 @@ Task: to get a list of networks via the REST API (Neutron service).
    curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <token generated in the previous step>"
    ```
 
-   <details>
-   <summary markdown="span">An example of the result</summary>
+   {cut(An example of the result)}
 
    ``` json
    {
@@ -192,7 +190,7 @@ Task: to get a list of networks via the REST API (Neutron service).
    }
    ```
 
-   </details>
+   {/cut}
 
 Other examples of token usage:
 

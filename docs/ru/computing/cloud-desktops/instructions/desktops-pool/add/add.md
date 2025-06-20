@@ -68,8 +68,7 @@
     - **Тип диска**: выберите одно из значений — `HDD`, `SSD` или `High-IOPS SSD`.
     - **Образ**: выберите образ для создания ВМ из списка доступных образов.
 
-      <details>
-      <summary>Список доступных образов</summary>
+      {cut(Список доступных образов)}
 
       - `Windows Server 2019 Standard (ru)`
       - `Windows Server 2019 Standard (en)`
@@ -78,7 +77,7 @@
       - `Red OS 7.3 Стандарт (Cloud Desktop)`
       - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
 
-      </details>
+      {/cut}
 
       При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/computing/iaas/instructions/images/images-manage#import_obraza).
 

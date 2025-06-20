@@ -49,8 +49,7 @@ The following will be used:
    aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
-   <details>
-    <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    ```json
     {
@@ -73,7 +72,7 @@ The following will be used:
     }
    ```
 
-   </details>
+   {/cut}
 
 1. Check the partitions using the command:
 
@@ -81,8 +80,7 @@ The following will be used:
    aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9Bv63XXXX
    ```
 
-   <details>
-    <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    ```json
     {
@@ -112,7 +110,7 @@ The following will be used:
     }
    ```
 
-   </details>
+   {/cut}
 
 1. Wait for the uploading to complete. The output of the `aws s3api list-multipart-uploads` command should not contain any data in the `Uploads` block.
 
@@ -121,8 +119,7 @@ The following will be used:
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the VM via SSH.
 1. Check for a mounted disk using the `lsblk` command.
 
-   <details>
-    <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    ```console
    NAME  MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -131,7 +128,7 @@ The following will be used:
    vdb   252:16  0  600G 0  disk
    ```
 
-   </details>
+   {/cut}
 
 1. Place the image on the disk using the command:
 

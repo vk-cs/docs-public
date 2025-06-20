@@ -36,8 +36,7 @@ After the project is frozen, the funds continue to be deducted from the payment 
 
 A number of services may have their own terms for freezing and deleting objects.
 
-<details>
-  <summary markdown="span">Example for the Object storage service</summary>
+{cut(Example for the Object storage service)}
 
 - When the payment account balance becomes negative, the service objects are frozen.
 
@@ -49,7 +48,7 @@ A number of services may have their own terms for freezing and deleting objects.
 
 For more information about the service, see [Object storage](/en/storage/s3).
 
-</details>
+{/cut}
 
 After the payment account balance becomes positive, the services in the project are automatically activated after a while. Objects that have been stopped must be started manually after defrosting.
 

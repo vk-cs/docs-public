@@ -37,8 +37,7 @@ docker SUBCOMMAND --help
 
    В выводе команды будет содержаться список образов, которые подходят под условия поиска.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
@@ -53,7 +52,7 @@ docker SUBCOMMAND --help
    ...
    ```
 
-   </details>
+   {/cut}
 
 1. Загрузите образ `ubuntu`:
 
@@ -63,8 +62,7 @@ docker SUBCOMMAND --help
 
    В выводе команды будет содержаться информация о ходе процесса загрузки.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    Using default tag: latest
@@ -75,7 +73,7 @@ docker SUBCOMMAND --help
    docker.io/library/ubuntu:latest
    ```
 
-   </details>
+   {/cut}
 
 1. Убедитесь, что образ загружен, выполнив команду для просмотра загруженных образов:
 
@@ -85,8 +83,7 @@ docker SUBCOMMAND --help
 
    В выводе команды будет содержаться список загруженных образов.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
@@ -94,7 +91,7 @@ docker SUBCOMMAND --help
    hello-world   latest    feb5d9fea6a5   18 months ago   13.3kB
    ```
 
-   </details>
+   {/cut}
 
 ## Создание и запуск контейнера
 
@@ -169,8 +166,7 @@ docker SUBCOMMAND --help
    </tabpanel>
    </tabs>
 
-   <details>
-   <summary>Пример вывода docker ps -a</summary>
+   {cut(Пример вывода docker ps -a)}
 
    ```text
    CONTAINER ID   IMAGE         COMMAND       CREATED          STATUS                       PORTS     NAMES
@@ -178,7 +174,7 @@ docker SUBCOMMAND --help
    794ef863c235   hello-world   "/hello"      19 hours ago     Exited (0) 19 hours ago                dazzling_keldysh
    ```
 
-   </details>
+   {/cut}
 
    Идентификатор контейнера содержится в столбце `CONTAINER ID`.
 

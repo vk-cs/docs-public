@@ -31,8 +31,7 @@ To demonstrate how Gatekeeper works, the following will be created:
 
    1. Create a restriction manifest based on the template created earlier:
 
-      <details>
-      <summary markdown="span">constraint.yaml</summary>
+      {cut(constraint.yaml)}
 
       ```yaml
       apiVersion: constraints.gatekeeper.sh/v1beta1
@@ -51,7 +50,7 @@ To demonstrate how Gatekeeper works, the following will be created:
               allowedRegex: "(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?"
       ```
 
-      </details>
+      {/cut}
 
    1. Create a constraint based on the constraint manifest:
 
@@ -87,8 +86,7 @@ To demonstrate how Gatekeeper works, the following will be created:
 
    1. Create a manifest for the namespace:
 
-      <details>
-      <summary markdown="span">example-allowed.yaml</summary>
+      {cut(example-allowed.yaml)}
 
       ```yaml
       apiVersion: v1
@@ -125,8 +123,7 @@ To demonstrate how Gatekeeper works, the following will be created:
 
    1. Create a manifest for the namespace:
 
-      <details>
-      <summary markdown="span">example-disallowed.yaml</summary>
+      {cut(example-disallowed.yaml)}
 
       ```yaml
       apiVersion: v1

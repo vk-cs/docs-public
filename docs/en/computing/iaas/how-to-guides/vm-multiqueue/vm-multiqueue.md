@@ -63,8 +63,7 @@ This option is used when the VM has already been created at the time of enabling
     sudo ip link show
     ```
 
-    <details>
-     <summary>Example output</summary>
+    {cut(Example output)}
 
     ```console
     ubuntu@dm-test:~$ sudo ip link show
@@ -77,7 +76,7 @@ This option is used when the VM has already been created at the time of enabling
 
     Here `ens3` is the name of the network interface for which you need to check the multiqueue connection.
 
-    </details>
+    {/cut}
 
 1. See the current number of queues:
 
@@ -85,8 +84,7 @@ This option is used when the VM has already been created at the time of enabling
     ethtool -l <network interface name>
     ```
 
-    <details>
-     <summary>Example output</summary>
+    {cut(Example output)}
 
     ```console
     ubuntu@dm-test:~$ ethtool -l ens3
@@ -103,7 +101,7 @@ This option is used when the VM has already been created at the time of enabling
     Combined:       1
     ```
 
-    </details>
+    {/cut}
 
 ## 3. Set the required number of queues for the VM
 
@@ -125,8 +123,7 @@ The number of queues cannot be greater than the number of virtual CPUs.
     ethtool -l <network interface name>
     ```
 
-<details>
-  <summary>Example of installing queues</summary>
+{cut(Example of installing queues)}
 
 ```console
 ubuntu@dm-test:~$ sudo ethtool -L ens3 combined 2
@@ -144,4 +141,4 @@ Other:          n/a
 Combined:       2
 ```
 
-</details>
+{/cut}

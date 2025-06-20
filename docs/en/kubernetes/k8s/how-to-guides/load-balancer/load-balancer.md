@@ -31,8 +31,7 @@ To create such an application:
 
 1. Create a manifest file:
 
-   <details>
-   <summary markdown="span">coffee.yaml</summary>
+   {cut(coffee.yaml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -57,7 +56,7 @@ To create such an application:
            - containerPort: 8080
    ```
 
-   </details>
+   {/cut}
 
 1. Create the Kubernetes resource based on the manifest:
 

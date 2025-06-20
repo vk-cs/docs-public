@@ -26,8 +26,7 @@ Additionally it is possible to:
 
   Some Kubernetes resources can not be filtered by the namespace filter. See the information in the list of available resources below.
 
-<details>
-<summary>List of available resources</summary>
+{cut(List of available resources)}
 
 <!--prettier-ignore-->
 | Resource                                            | Comment                                       |
@@ -63,4 +62,4 @@ Additionally it is possible to:
 | Cluster Role Bindings                               | Namespace filter is not applicable            |
 | Role Bindings                                       |                                               |
 
-</details>
+{/cut}

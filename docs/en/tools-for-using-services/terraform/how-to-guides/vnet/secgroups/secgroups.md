@@ -101,14 +101,13 @@ Here:
 
 - `port_id` — the port ID, which will be allocated a floating IP address. You can specify ID in the manifest or get it from the data source or resource.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `port_id = vkcs_networking_port.example.id`: the port ID will be taken after creating the `vkcs_networking_port` resource.
   - `port_id = data.vkcs_networking_port.example.id`: the port ID is taken from the `vkcs_networking_port` data source.
   - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the port ID is taken from the [list of ports](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) in the VK Cloud account or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `port_range_max` — the upper limit of the allowed port range, an integer from 1 to 65535. To select all ports, omit the `port_range_min` and `port_range_max` arguments.
 
@@ -120,14 +119,13 @@ Here:
 
 - `security_group_id` — the ID of the security group for which the rule is being created. You can specify ID in the manifest or get it from the data source or resource.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `port_id = vkcs_networking_port.example.id`: the security group ID will be taken after creating the `vkcs_networking_secgroup` resource.
   - `port_id = data.vkcs_networking_port.example.id`: the security group ID is taken from the `vkcs_networking_secgroup` data source.
   - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the security group ID is taken from the [list of security groups](/en/networks/vnet/instructions/secgroups#view-secgroups) in the VK Cloud account or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `security_group_ids` — the array of the security group IDs.
 

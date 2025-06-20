@@ -30,8 +30,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
     openstack image create --file ubuntu-20.04.4-live-server-amd64.iso --disk-format iso --container-format bare --min-ram 800 --property hw_rescue_device=cdrom ubuntu-20.04.4-live-server-private
     ```
 
-    <details>
-    <summary>Example of output</summary>
+    {cut(Example of output)}
 
     ```console
     +------------------+--------------------------------------------------------------------------------+
@@ -58,7 +57,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
     +------------------+--------------------------------------------------------------------------------+
     ```
 
-    </details>
+    {/cut}
 
     <info>
 
@@ -91,8 +90,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
     openstack server show bb079908-XXXX
     ```
 
-    <details>
-    <summary>Example of output</summary>
+    {cut(Example of output)}
 
     ```console
     +-----------------------------+-----------------------------------------------------------+
@@ -127,7 +125,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
     +-----------------------------+-----------------------------------------------------------+
     ```
 
-    </details>
+    {/cut}
 
 1. Get a link to the virtual machine console by running the command:
 
@@ -143,8 +141,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
     openstack console url show bb079908-XXXX
     ```
 
-    <details>
-    <summary>Example of output</summary>
+    {cut(Example of output)}
 
     ```console
     +----------+-----------------------------------------------------------------------------------------------+
@@ -156,7 +153,7 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
     +----------+-----------------------------------------------------------------------------------------------+
     ```
 
-    </details>
+    {/cut}
 
 1. In your browser, follow the received link. The console of the operating system loaded from the Live CD will open. In this guide, this will be the console of the Ubuntu Server 20.04 OS.
 

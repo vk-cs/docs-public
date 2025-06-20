@@ -82,8 +82,7 @@ To connect to the object storage using the SDK:
 
    In the examples below, upon successful connection, a list of storage buckets for the Moscow region is displayed.
 
-   <details>
-     <summary>Example on Python</summary>
+   {cut(Example on Python)}
 
      All parameters of connection to the object storage are specified in the source code.
 
@@ -104,10 +103,9 @@ To connect to the object storage using the SDK:
          print(key['Name'])
      ```
 
-   </details>
+   {/cut}
 
-   <details>
-     <summary>Example on Go</summary>
+   {cut(Example on Go)}
 
      The parameters `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` are added to the environment variables, the rest are specified in the source code.
 
@@ -141,4 +139,4 @@ To connect to the object storage using the SDK:
      }
      ```
 
-   </details>
+   {/cut}

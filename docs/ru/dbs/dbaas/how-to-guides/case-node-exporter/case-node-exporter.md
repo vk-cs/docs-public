@@ -117,8 +117,7 @@
 
    Вывод команды должен содержать статус `active`.
 
-   <details>
-    <summary>Пример ожидаемого вывода</summary>
+   {cut(Пример ожидаемого вывода)}
 
     ```console
     prometheus.service - Prometheus
@@ -142,7 +141,7 @@
     Nov 20 16:11:25 centos-8-5-prometheus.novalocal prometheus[1065]: ts=2023-11-20T16:11:25.327Z caller=manager.go:995 level=info component="rule manager" msg="Starting rule manager..."
     ```
 
-   </details>
+   {/cut}
 
 1. Подождите несколько минут, чтобы накопились данные.
 1. Перейдите по адресу `http://87.239.239.239:9090`.
@@ -166,8 +165,7 @@
 
 1. Создайте тестовую нагрузку на ВМ `Redis-5` удобным для вас способом.
 
-   <details>
-    <summary>Пример с утилитой sysbench</summary>
+   {cut(Пример с утилитой sysbench)}
 
    ```console
    sysbench cpu  --cpu-max-prime=2000000 --time=60 run
@@ -177,7 +175,7 @@
    sysbench mutex --time=60 run
    ```
 
-   </details>
+   {/cut}
 
    <warn>
 

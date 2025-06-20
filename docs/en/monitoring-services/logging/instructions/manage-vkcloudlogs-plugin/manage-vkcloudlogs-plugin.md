@@ -44,8 +44,7 @@
    - in the `[INPUT]` section, specify the path to the source file in the `Path` parameter and the tag in the `Tag` parameter;
    - in the `[OUTPUT]` section, specify the same tag so that the records are sent to the logs.
 
-   <details>
-    <summary>Example of connecting the /var/log/auth.log file</summary>
+   {cut(Example of connecting the /var/log/auth.log file)}
 
    ```ini
    [INPUT]
@@ -64,7 +63,7 @@
       project_id        XXXX000XXXX00
    ```
 
-   </details>
+   {/cut}
 
    <info>
 

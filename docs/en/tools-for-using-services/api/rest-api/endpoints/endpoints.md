@@ -30,7 +30,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 </info>
 
-<details><summary>Other endpoints</summary>
+{cut(Other endpoints)}
 
 ### Cloud Containers
 
@@ -88,7 +88,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Quota-manager     | https://mcs.mail.ru/quota-manager                   | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Cloud services orchestration (deprecated)
 
-</details>
+{/cut}
 
 ## Getting Project ID
 

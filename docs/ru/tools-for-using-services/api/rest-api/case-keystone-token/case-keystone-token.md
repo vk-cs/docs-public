@@ -101,8 +101,7 @@
 
 Значение токена будет выведено в параметре `x-subject-token`.
 
-<details>
-<summary markdown="span">Примеры ответов на запрос получения токена</summary>
+{cut(Примеры ответов на запрос получения токена)}
 
 <tabs>
 <tablist>
@@ -133,7 +132,7 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 </tabpanel>
 </tabs>
 
-</details>
+{/cut}
 
 </tabpanel>
 </tabs>
@@ -150,8 +149,7 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
    curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <токен, полученный на предыдущем шаге>"
    ```
 
-   <details>
-   <summary markdown="span">Пример результата</summary>
+   {cut(Пример результата)}
 
    ```json
    {
@@ -189,7 +187,7 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
     }
    ```
 
-   </details>
+   {/cut}
 
 Другие примеры использования токена:
 

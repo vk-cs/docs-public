@@ -18,8 +18,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
 1. Create a manifest file:
 
-   <details>
-   <summary markdown="span">coffee.yaml</summary>
+   {cut(coffee.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -98,7 +97,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
 1. Create the necessary Kubernetes resources based on the manifest:
 

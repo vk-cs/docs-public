@@ -30,8 +30,7 @@
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды просмотра списка бакетов</summary>
+   {cut(Пример команды просмотра списка бакетов)}
 
       Пример команды:
 
@@ -48,7 +47,7 @@
       2024-03-18 16:00:57 bucket-4
       ```
 
-   </details>
+   {/cut}
 
 Описание всех параметров для команды вывода списка бакетов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html).
 
@@ -280,8 +279,7 @@ Cloud Storage позволяет синхронизировать объекты
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-    <summary>Пример команды обновления локальной директории в соответствии с бакетом</summary>
+   {cut(Пример команды обновления локальной директории в соответствии с бакетом)}
 
    Пример команды:
 
@@ -295,10 +293,9 @@ Cloud Storage позволяет синхронизировать объекты
    download: s3://example-bucket/my-object.pdf to .\my-object.pdf
    ```
 
-   </details>
+   {/cut}
 
-   <details>
-    <summary>Пример команды обновления бакета в соответствии с локальной директорией</summary>
+   {cut(Пример команды обновления бакета в соответствии с локальной директорией)}
 
    Пример команды:
 
@@ -312,7 +309,7 @@ Cloud Storage позволяет синхронизировать объекты
    upload: .\my-file.svg to s3://example-bucket/my-file.svg
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 </tabs>
@@ -470,8 +467,7 @@ Cloud Storage позволяет настроить автоматическое
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды удаления бакета и всех объектов в нем </summary>
+   {cut(Пример команды удаления бакета и всех объектов в нем )}
 
       Пример команды:
 
@@ -488,7 +484,7 @@ Cloud Storage позволяет настроить автоматическое
       remove_bucket: example-bucket
       ```
 
-   </details>
+   {/cut}
 
 Описание всех параметров команды удаления бакета доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/rb.html).
 

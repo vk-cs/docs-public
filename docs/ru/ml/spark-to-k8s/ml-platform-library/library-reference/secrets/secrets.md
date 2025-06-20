@@ -64,8 +64,7 @@
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 create_secret_from_yaml(cluster_id: str,
@@ -74,10 +73,9 @@ create_secret_from_yaml(cluster_id: str,
                         **kwargs
                        ) -> mlplatform_client.serializers.spark_proxy.K8sSecret
 ```
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -105,7 +103,7 @@ create_secret_from_yaml(cluster_id: str,
    print(secret)
    ```
 
-</details>
+{/cut}
 
 ## list_secrets
 
@@ -146,8 +144,7 @@ create_secret_from_yaml(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 list_secrets(cluster_id: str,
@@ -156,10 +153,9 @@ list_secrets(cluster_id: str,
             ) -> mlplatform_client.serializers.spark_proxy.K8sObjectNamesList[str]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -188,7 +184,7 @@ list_secrets(cluster_id: str,
 
    В случае успеха будут выведен список секретов в пространстве имен `default`.
 
-</details>
+{/cut}
 
 ## get_secret_detail
 
@@ -260,8 +256,7 @@ list_secrets(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_secret_detail(cluster_id: str,
@@ -271,10 +266,9 @@ get_secret_detail(cluster_id: str,
                  ) -> mlplatform_client.serializers.spark_proxy.K8sSecret
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -304,7 +298,7 @@ get_secret_detail(cluster_id: str,
 
    В случае успеха будет выведена информация о секрете `sample-secret`.
 
-</details>
+{/cut}
 
 ## delete_secret
 
@@ -351,8 +345,7 @@ get_secret_detail(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 delete_secret(cluster_id: str,
@@ -361,10 +354,9 @@ delete_secret(cluster_id: str,
               **kwargs)
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -392,4 +384,4 @@ delete_secret(cluster_id: str,
 
    Секрет будет удален из кластера Cloud Spark. Это можно проверить с помощью метода [list_secrets](#list_secrets).
 
-</details>
+{/cut}

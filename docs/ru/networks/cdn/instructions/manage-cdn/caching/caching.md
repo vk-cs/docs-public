@@ -246,8 +246,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 - для игнорирования указанных параметров — `ignoreQueryString` (`value`=`false`), `query_params_blacklist`;
 - для игнорирования всех параметров, кроме указанных — `ignoreQueryString` (`value`=`false`), `query_params_whitelist`.
 
-<details>
-<summary>Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах</summary>
+{cut(Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах)}
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -267,9 +266,8 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</details>
-<details>
-<summary>Пример запроса для настройки CDN-ресурса на игнорирование указанных query-параметров в HTTP-запросах</summary>
+{/cut}
+{cut(Пример запроса для настройки CDN-ресурса на игнорирование указанных query-параметров в HTTP-запросах)}
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -296,9 +294,8 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</details>
-<details>
-<summary>Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах, кроме указанных</summary>
+{/cut}
+{cut(Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах, кроме указанных)}
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -325,7 +322,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</details>
+{/cut}
 
 </tabpanel>
 </tabs>

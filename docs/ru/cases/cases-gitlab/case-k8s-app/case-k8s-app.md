@@ -45,8 +45,7 @@
 
 1. Перейдите в директорию со скачанным репозиторием и создайте файл `.gitlab-ci.yml` с содержимым:
 
-   <details>
-    <summary>.gitlab-ci.yml</summary>
+   {cut(.gitlab-ci.yml)}
 
    ```yaml
    image: docker:latest
@@ -98,7 +97,7 @@
 
    </warn>
 
-   </details>
+   {/cut}
 
 1. Загрузите созданный файл в репозиторий:
 
@@ -122,8 +121,7 @@
 
 1. Дождитесь завершения сборки.
 
-   <details>
-    <summary>Где отслеживать процесс сборки?</summary>
+   {cut(Где отслеживать процесс сборки?)}
 
    1. В интерфейсе GitLab перейдите в раздел **CI/CD** → **Pipelines**.
    1. Нажмите на статус сборки. Откроется текущий пайплайн:
@@ -140,7 +138,7 @@
 
       ![](assets/1583700851963-1583700851963.png)
 
-   </details>
+   {/cut}
 
 1. (Опционально) Проверьте наличие собранного образа в Harbor:
 
@@ -166,8 +164,7 @@
 
 1. Создайте файл приложения `deployment.yml`:
 
-   <details>
-     <summary>deployment.yml</summary>
+   {cut(deployment.yml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -196,7 +193,7 @@
          - name: myprivateregistry
    ```
 
-   </details>
+   {/cut}
 
 1. Запустите приложение:
 
@@ -219,8 +216,7 @@
 
 1. Создайте файл `service.yml`:
 
-   <details>
-     <summary>service.yml</summary>
+   {cut(service.yml)}
 
    ```yaml
    apiVersion: v1
@@ -238,7 +234,7 @@
        run: myapp
    ```
 
-   </details>
+   {/cut}
 
 1. Создайте сервис:
 
@@ -248,8 +244,7 @@
 
 1. Чтобы обеспечить доступ к приложению из внешней сети, настройте ingress-контроллер. Для этого создайте файл `ingress.yaml`:
 
-   <details>
-     <summary>ingress.yaml</summary>
+   {cut(ingress.yaml)}
 
    ```yaml
    apiVersion: extensions/v1beta1 
@@ -269,7 +264,7 @@
 
    В этом файле укажите домен, при обращении к которому будет выполнен переход в приложение. Можно указать любой домен, в примере указан локально для тестов.
 
-   </details>
+   {/cut}
 
 1. Примените ingress-контроллер:
 
@@ -357,8 +352,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 
 1. Создайте файл `gitlab-admin-service-account.yaml`, который описывает права доступа GitLab к кластеру.
 
-   <details>
-     <summary>gitlab-admin-service-account.yaml</summary>
+   {cut(gitlab-admin-service-account.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -381,7 +375,7 @@ GitLab по умолчанию поддерживает интеграцию с 
      namespace: kube-system
    ```
 
-   </details>
+   {/cut}
 
 1. Примените права и получите токен доступа к кластеру:
 
@@ -401,8 +395,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 1. Переместите файлы `deployment.yaml`, `service.yaml`, `ingress.yaml` в директорию `deployments` проекта.
 1. В файл `.gitlab-ci.yml` добавьте секцию `deploy`:
 
-   <details>
-     <summary>.gitlab-ci.yml</summary>
+   {cut(.gitlab-ci.yml)}
 
    ```yaml
    image: docker:latest
@@ -460,7 +453,7 @@ GitLab по умолчанию поддерживает интеграцию с 
        - ./kubectl rollout restart deployment
    ```
 
-   </details>
+   {/cut}
 
 1. Проверьте namespace кластера:
 

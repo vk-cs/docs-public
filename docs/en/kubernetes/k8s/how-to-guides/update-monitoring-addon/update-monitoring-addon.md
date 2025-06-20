@@ -113,8 +113,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    The output of the command will contain a list of PVCs (`NAME`) and their corresponding PVs (`VOLUMES`) with the size of the volumes (`CAPACITY`). Write this information down, you will need it later.
 
-   <details>
-   <summary>Example of the command partial output</summary>
+   {cut(Example of the command partial output)}
 
    ```text
    NAME                                                                             STATUS   VOLUME                                     CAPACITY   ...
@@ -123,7 +122,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0           Bound    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...
    ```
 
-   </details>
+   {/cut}
 
 ## {heading(2. Prepare add-on environment for update)[id=2_prepare_addon_environment_for_update]}
 
@@ -145,8 +144,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 1. Create a file with the script code:
 
-   <details>
-   <summary>prepare-for-addon-update.sh</summary>
+   {cut(prepare-for-addon-update.sh)}
 
    ```console
    #!/bin/sh
@@ -281,7 +279,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    echo "Completed!"
    ```
 
-   </details>
+   {/cut}
 
    The script performs the following actions:
 
@@ -313,8 +311,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    - `-r`: name of the application with which the add-on is installed. It matches the name of the Helm-chart for the add-on. Default value is `kube-prometheus-stack`.
    - `-d`: value of the [--dry-run](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) argument for `kubectl`. Default value is `none`. Use `server` or `client` for test running of the script: no changes will be made to the cluster.
 
-   <details>
-   <summary>Help output example</summary>
+   {cut(Help output example)}
 
    ```text
    Usage:
@@ -326,7 +323,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    -d dry run              "none". [none,server,client]
    ```
 
-   </details>
+   {/cut}
 
 1. Run the script.
 
@@ -362,8 +359,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    Completed!
    ```
 
-   <details>
-   <summary>Command output example</summary>
+   {cut(Command output example)}
 
    ```text
    Settings retain policy for the prometheus PVs...
@@ -395,7 +391,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    Completed!
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -422,8 +418,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    kubectl get pv
    ```
 
-   <details>
-   <summary>Example of partial command output</summary>
+   {cut(Example of partial command output)}
 
    ```text
    NAME                                       CAPACITY   ...   RECLAIM POLICY   STATUS  CLAIM    ...
@@ -432,7 +427,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...   Retain           Bound   prometheus-monitoring/prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0 ...
    ```
 
-   </details>
+   {/cut}
 
 4. Delete the Helm chart of the current version of the add-on. This is necessary for successfully removing the PVCs and CRDs sets that are used by the add-on.
 
@@ -470,8 +465,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    kubectl get pv
    ```
 
-   <details>
-   <summary>Example of partial command output</summary>
+   {cut(Example of partial command output)}
 
    ```text
    NAME                                       CAPACITY   ...   RECLAIM POLICY   STATUS      ...
@@ -480,7 +474,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...   Retain           Available   ...
    ```
 
-   </details>
+   {/cut}
 
 9. Get a list of CRDs that the add-on has worked with:
 

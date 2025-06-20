@@ -351,8 +351,7 @@
 
    1. Поместите в эту директорию следующие файлы:
 
-      <details>
-      <summary markdown="span">Dockerfile</summary>
+      {cut(Dockerfile)}
 
       ```ini
       FROM nginx:mainline-alpine
@@ -366,10 +365,9 @@
       USER nginx
       ```
 
-      </details>
+      {/cut}
 
-      <details>
-      <summary markdown="span">nginx-config.conf</summary>
+      {cut(nginx-config.conf)}
 
       ```ini
       server {
@@ -390,7 +388,7 @@
       }
       ```
 
-      </details>
+      {/cut}
 
    1. Запустите сборку образа:
 
@@ -470,8 +468,7 @@
 
 1. Поместите в эту директорию следующие файлы:
 
-   <details>
-   <summary markdown="span">deploy-coffee.yaml</summary>
+   {cut(deploy-coffee.yaml)}
 
    ```yaml
    kind: PersistentVolumeClaim
@@ -532,10 +529,9 @@
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
-   <details>
-   <summary markdown="span">deploy-tea.yaml</summary>
+   {cut(deploy-tea.yaml)}
 
    ```yaml
    kind: PersistentVolumeClaim
@@ -596,7 +592,7 @@
        app: tea
    ```
 
-   </details>
+   {/cut}
 
    <warn>
 
@@ -679,8 +675,7 @@
 
 1. Поместите в директорию `~/k8s-deployments` следующий файл:
 
-   <details>
-   <summary markdown="span">deploy-ingress.yaml</summary>
+   {cut(deploy-ingress.yaml)}
 
    ```yaml
    apiVersion: networking.k8s.io/v1
@@ -709,7 +704,7 @@
                      number: 80
    ```
 
-   </details>
+   {/cut}
 
 1. Разверните ресурс [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/):
 

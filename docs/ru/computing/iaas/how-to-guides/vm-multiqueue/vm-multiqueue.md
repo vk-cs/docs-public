@@ -62,8 +62,7 @@ VK Cloud поддерживает множества очередей (multiqueu
     sudo ip link show
     ```
 
-    <details>
-     <summary>Пример вывода</summary>
+    {cut(Пример вывода)}
 
     ```console
     ubuntu@dm-test:~$ sudo ip link show
@@ -76,7 +75,7 @@ VK Cloud поддерживает множества очередей (multiqueu
 
     Здесь `ens3` — имя сетевого интерфейса, для которого нужно проверить подключение множества очередей.
 
-    </details>
+    {/cut}
 
 1. Посмотрите текущее количество очередей:
 
@@ -84,8 +83,7 @@ VK Cloud поддерживает множества очередей (multiqueu
     ethtool -l <имя_сетевого_интерфейса>
     ```
 
-   <details>
-     <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```console
     ubuntu@dm-test:~$ ethtool -l ens3
@@ -102,7 +100,7 @@ VK Cloud поддерживает множества очередей (multiqueu
     Combined:       1
     ```
 
-   </details>
+   {/cut}
 
 ## 3. Установите нужное количество очередей для ВМ
 
@@ -124,8 +122,7 @@ VK Cloud поддерживает множества очередей (multiqueu
     ethtool -l <имя_сетевого_интерфейса>
     ```
 
-<details>
-  <summary>Пример установки очередей</summary>
+{cut(Пример установки очередей)}
 
 ```console
 ubuntu@dm-test:~$ sudo ethtool -L ens3 combined 2
@@ -143,4 +140,4 @@ Other:          n/a
 Combined:       2
 ```
 
-</details>
+{/cut}

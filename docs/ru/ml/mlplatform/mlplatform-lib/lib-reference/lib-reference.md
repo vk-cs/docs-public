@@ -27,18 +27,16 @@
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_flavors(**kwargs
            ) -> List[mlplatform_client.serializers.nova.NovaFlavor]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -99,7 +97,7 @@ get_flavors(**kwargs
     # конец фрагмента
    ```
 
-</details>
+{/cut}
 
 ## get_internal_networks
 
@@ -117,18 +115,16 @@ get_flavors(**kwargs
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_internal_networks(**kwargs
                      ) -> List[mlplatform_client.serializers.gateway.NetworkOut]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -181,7 +177,7 @@ get_internal_networks(**kwargs
     # конец фрагмента
    ```
 
-</details>
+{/cut}
 
 ## get_external_networks
 
@@ -199,18 +195,16 @@ get_internal_networks(**kwargs
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_external_networks(**kwargs
                      ) -> List[mlplatform_client.serializers.gateway.NetworkOut]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -252,7 +246,7 @@ get_external_networks(**kwargs
     external: True]
    ```
 
-</details>
+{/cut}
 
 ## create_jupyter_hub
 
@@ -380,8 +374,7 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 create_jupiter_hub(instance_name: str,
@@ -396,10 +389,9 @@ create_jupiter_hub(instance_name: str,
                   ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -481,7 +473,7 @@ create_jupiter_hub(instance_name: str,
 
    Сразу после вызова метода `create_jupyter_hub` инстанс находится в процессе создания, поэтому некоторые параметры не определены, например: доменное имя и IP-адрес.
 
-</details>
+{/cut}
 
 ## attach_s3_bucket_to_jh
 
@@ -533,8 +525,7 @@ create_jupiter_hub(instance_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 attach_s3_bucket_to_jh(
@@ -544,10 +535,9 @@ attach_s3_bucket_to_jh(
                       ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -575,7 +565,7 @@ attach_s3_bucket_to_jh(
 
    Подключенный бакет будет доступен на инстансе JupyterHub с указанным идентификатором как папка `/shared/s3fs`.
 
-</details>
+{/cut}
 
 ## create_mlflow
 
@@ -695,8 +685,7 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 create_mlflow(instance_name: str,
@@ -710,10 +699,9 @@ create_mlflow(instance_name: str,
              ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -793,7 +781,7 @@ create_mlflow(instance_name: str,
 
    Сразу после вызова метода `create_mlflow` инстанс находится в процессе создания, поэтому некоторые параметры не определены, например: доменное имя и IP-адрес.
 
-</details>
+{/cut}
 
 ## create_deploy
 
@@ -925,8 +913,7 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 create_deploy(instance_name: str,
@@ -942,10 +929,9 @@ create_deploy(instance_name: str,
               ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1028,7 +1014,7 @@ create_deploy(instance_name: str,
 
    Сразу после вызова метода `create_deploy` инстанс находится в процессе создания, поэтому некоторые параметры не определены, например: доменное имя и IP-адрес.
 
-</details>
+{/cut}
 
 ## get_all_instances_info
 
@@ -1046,18 +1032,16 @@ create_deploy(instance_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_all_instances_info(**kwargs
                       ) -> List[mlplatform_client.serializers.gateway.VmDetailInfo]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1121,7 +1105,7 @@ get_all_instances_info(**kwargs
     # конец фрагмента
     ```
 
-</details>
+{/cut}
 
 ## get_instance_info
 
@@ -1152,8 +1136,7 @@ get_all_instances_info(**kwargs
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_instance_info(instance_id: str,
@@ -1161,10 +1144,9 @@ get_instance_info(instance_id: str,
                  ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1231,7 +1213,7 @@ get_instance_info(instance_id: str,
         cinder_id: d6ee2d16-ХХХХ],
     ```
 
-</details>
+{/cut}
 
 ## delete_instance
 
@@ -1262,8 +1244,7 @@ get_instance_info(instance_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 delete_instance(instance_id: str,
@@ -1271,10 +1252,9 @@ delete_instance(instance_id: str,
                ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1315,7 +1295,7 @@ delete_instance(instance_id: str,
 
    В случае успеха во втором списке будет отсутствовать удаленный инстанс.
 
-</details>
+{/cut}
 
 ## create_deployment
 
@@ -1396,8 +1376,7 @@ delete_instance(instance_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 create_deployment(deploy_server_name: str,
@@ -1412,10 +1391,9 @@ create_deployment(deploy_server_name: str,
                  ) -> mlplatform_client.serializers.deployment.DeployOut
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1477,7 +1455,7 @@ create_deployment(deploy_server_name: str,
 
    О подготовке к созданию развертывания — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/how-to-guides/manage-mlflow-client).
 
-</details>
+{/cut}
 
 ## list_deployments
 
@@ -1520,8 +1498,7 @@ create_deployment(deploy_server_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 list_deployments(deploy_server_name: str,
@@ -1531,10 +1508,9 @@ list_deployments(deploy_server_name: str,
                 ) -> List[mlplatform_client.serializers.deployment.DeployOut]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1589,7 +1565,7 @@ list_deployments(deploy_server_name: str,
    predict_ref: ]
    ```
 
-</details>
+{/cut}
 
 ## get_deployment
 
@@ -1640,8 +1616,7 @@ list_deployments(deploy_server_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_deployment(deploy_server_name: str,
@@ -1652,10 +1627,9 @@ get_deployment(deploy_server_name: str,
               ) -> mlplatform_client.serializers.deployment.DeployOut
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1711,7 +1685,7 @@ get_deployment(deploy_server_name: str,
    predict_ref: https://jh-test-mlp-XXXX.ml.msk.vkcs.cloud/deploy/f27bd56d-XXXX/test_deployment_1/invocations
    ```
 
-</details>
+{/cut}
 
 ## delete_deployment
 
@@ -1762,8 +1736,7 @@ get_deployment(deploy_server_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 delete_deployment(deploy_server_name: str,
@@ -1774,10 +1747,9 @@ delete_deployment(deploy_server_name: str,
                  ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1834,7 +1806,7 @@ delete_deployment(deploy_server_name: str,
 
    В случае успеха во втором списке будет отсутствовать удаленное развертывание.
 
-</details>
+{/cut}
 
 ## ping_model
 
@@ -1885,8 +1857,7 @@ delete_deployment(deploy_server_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 ping_model(deploy_server_name: str,
@@ -1897,10 +1868,9 @@ ping_model(deploy_server_name: str,
           ) -> str
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1943,7 +1913,7 @@ ping_model(deploy_server_name: str,
 
    О подготовке к использованию ML-модели — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/how-to-guides/manage-mlflow-client).
 
-</details>
+{/cut}
 
 ## predict_model
 
@@ -2000,8 +1970,7 @@ ping_model(deploy_server_name: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 predict_model(data: Dict,
@@ -2013,10 +1982,9 @@ predict_model(data: Dict,
              ) -> Dict[str, Any]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -2069,4 +2037,4 @@ predict_model(data: Dict,
 
    О подготовке к использованию ML-модели — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/how-to-guides/manage-mlflow-client).
 
-</details>
+{/cut}

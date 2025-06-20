@@ -117,8 +117,7 @@
    - `STATUS`: `deployed`;
    - `NOTES`: `cert-manager v1.11.3 has been deployed successfully!`.
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    NAME: cert-manager
@@ -145,7 +144,7 @@
    https://cert-manager.io/docs/usage/ingress/
    ```
 
-   </details>
+   {/cut}
 
 ## 3. Проверьте работоспособность cert-manager
 
@@ -155,8 +154,7 @@
    kubectl get pods -n cert-manager
    ```
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    NAME                                       READY   STATUS    RESTARTS   AGE
@@ -165,14 +163,13 @@
    cert-manager-webhook-...                   1/1     Running   0          3m20s
    ```
 
-   </details>
+   {/cut}
 
 1. В тестовых целях выпустите самоподписанный сертификат:
 
    1. Создайте файл манифеста:
 
-      <details>
-      <summary>cert-manager-test-resources.yaml</summary>
+      {cut(cert-manager-test-resources.yaml)}
 
       ```yaml
       apiVersion: v1
@@ -201,7 +198,7 @@
           name: test-selfsigned
       ```
 
-      </details>
+      {/cut}
 
       В этом манифесте описаны:
 
@@ -228,8 +225,7 @@
       - `CertificateRequest` в статусе `READY: True`;
       - `Secret`, содержащий в себе данные сертификата.
 
-      <details>
-      <summary>Пример вывода команды</summary>
+      {cut(Пример вывода команды)}
 
       ```text
       NAME                                     READY   AGE
@@ -244,7 +240,7 @@
       NAME                         TYPE                DATA   AGE
       secret/selfsigned-cert-tls   kubernetes.io/tls   3      39m
       ```
-      </details>
+      {/cut}
 
    1. Проверьте статус сертификата:
 
@@ -257,8 +253,7 @@
       - Информация о статусе (`Status`) будет содержать строку `Certificate is up to date and has not expired`.
       - В списке событий (`Events`) будет событие c сообщением `The certificate has been successfully issued`.
 
-      <details>
-      <summary>Пример части вывода команды</summary>
+      {cut(Пример части вывода команды)}
 
       ```text
       ...
@@ -284,7 +279,7 @@
         Normal  Issuing    3m16s  cert-manager-certificates-issuing          The certificate has been successfully issued
       ```
 
-      </details>
+      {/cut}
 
    Если сертификат был выпущен успешно, то `cert-manager` корректно установлен и работает.
 
@@ -415,8 +410,7 @@ kubectl get -o yaml `
    - `STATUS`: `deployed`;
    - `NOTES`: `cert-manager v1.12.3 has been deployed successfully!`.
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    Release "cert-manager" has been upgraded. Happy Helming!
@@ -444,7 +438,7 @@ kubectl get -o yaml `
    https://cert-manager.io/docs/usage/ingress/
    ```
 
-   </details>
+   {/cut}
 
 ## Удалите неиспользуемые ресурсы
 

@@ -51,8 +51,7 @@ Such capabilities are very broad and are themselves considered vulnerabilities, 
 
 **Example of how the constraint acts:**
 
-<details>
-<summary>The pod_namespace.yaml manifest that does not satisfy the constraint</summary>
+{cut(The pod_namespace.yaml manifest that does not satisfy the constraint)}
 
 <!-- prettier-ignore -->
 ```yaml
@@ -70,7 +69,7 @@ spec:
       image: nginx
 ```
 
-</details>
+{/cut}
 
 If you try to apply such a manifest with `kubectl apply -f pod_namespace.yaml`, you will get a similar message saying that the constraint for the pod has been violated:
 
@@ -87,8 +86,7 @@ This restriction prevents pod from mounting the subdirectories of the host on wh
 
 **Example of how the constraint acts:**
 
-<details>
-<summary>The pod_filesystem.yaml manifest that does not satisfy the constraint</summary>
+{cut(The pod_filesystem.yaml manifest that does not satisfy the constraint)}
 
 <!-- prettier-ignore -->
 ```yaml
@@ -112,7 +110,7 @@ spec:
         path: /tmp # directory on host
 ```
 
-</details>
+{/cut}
 
 If you try to apply such a manifest with `kubectl apply -f pod_filesystem.yaml`, you will get a similar message saying that the constraint for the pod has been violated:
 

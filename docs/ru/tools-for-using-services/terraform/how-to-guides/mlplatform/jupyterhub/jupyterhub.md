@@ -60,8 +60,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
 - `admin_password` — пароль администратора инстанса JupyterHub.
 
-  <details>
-    <summary>Требования к паролю</summary>
+  {cut(Требования к паролю)}
 
   - Минимальная длина пароля — 8 символов.
   - Должен содержать заглавные и строчные буквы латинского алфавита.
@@ -69,24 +68,22 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
 - `flavor_id` — идентификатор типа ВМ. Идентификатор можно прописать в манифесте или получить из источника данных.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `network_id` — идентификатор сети, в которой будет размещен инстанс. Инстанс может быть размещен в существующей сети или в новой. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 ## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
 

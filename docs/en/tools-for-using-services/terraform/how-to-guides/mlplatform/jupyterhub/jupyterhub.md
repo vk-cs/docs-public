@@ -60,8 +60,7 @@ Here:
 
 - `admin_password` — the JupyterHub instance administrator password.
 
-  <details>
-    <summary>Password requirements</summary>
+  {cut(Password requirements)}
 
   - Must contain at least 8 characters.
   - Must contain uppercase and lowercase Latin letters.
@@ -69,24 +68,22 @@ Here:
 
 - `flavor_id` — a VM type ID. You can specify the ID in the manifest or get it from the data source.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: the ID is taken from the `vkcs_compute_flavor` data source, which will be generated further.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `network_id` — an ID of the network where the instance will be hosted. The instance can be hosted on an existing network or a new one. You can specify the ID in the manifest or get it from the data source or resource.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `network_id = vkcs_networking_network.default.id`: the instance will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the instance will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the instance will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 ## 2. (Optional) Create a file describing the data source for the VM type
 

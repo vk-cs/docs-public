@@ -281,8 +281,7 @@
    journalctl -u postgresql
    ```
 
-   <details>
-   <summary>Пример фрагмента вывода</summary>
+   {cut(Пример фрагмента вывода)}
 
    ```text
    -- Logs begin at Fri 2023-05-19 10:28:34 UTC, end at Mon 2023-05-22 06:08:42 UTC. --
@@ -304,7 +303,7 @@
    ...
    ```
 
-   </details>
+   {/cut}
 
    Из приведенного фрагмента вывода можно сделать заключение, что PostgreSQL запущен, работает и готов принимать входящие соединения.
 
@@ -385,8 +384,7 @@ tsdb1=>
    WHERE tablename LIKE 'sensor%';
    ```
 
-   <details>
-   <summary>Результат запроса</summary>
+   {cut(Результат запроса)}
 
    ```text
      tablename
@@ -396,7 +394,7 @@ tsdb1=>
    (2 rows)
    ```
 
-   </details>
+   {/cut}
 
 1. Конвертируйте таблицу PostgreSQL `sensor_data` в гипертаблицу ([hypertable](https://docs.timescale.com/use-timescale/latest/hypertables/)) TimescaleDB:
 
@@ -411,8 +409,7 @@ tsdb1=>
    FROM timescaledb_information.hypertables;
    ```
 
-   <details>
-   <summary>Результат запроса</summary>
+   {cut(Результат запроса)}
 
    ```text
     hypertable_name
@@ -421,7 +418,7 @@ tsdb1=>
    (1 row)
    ```
 
-   </details>
+   {/cut}
 
 ## 7. Наполните таблицы данными
 
@@ -447,8 +444,7 @@ tsdb1=>
    SELECT * FROM sensors;
    ```
 
-   <details>
-   <summary>Результат запроса</summary>
+   {cut(Результат запроса)}
 
    ```text
     id | type | location
@@ -460,7 +456,7 @@ tsdb1=>
    (4 rows)
    ```
 
-   </details>
+   {/cut}
 
 1. Наполните таблицу `sensor_data` случайно сгенерированными данными:
 
@@ -480,8 +476,7 @@ tsdb1=>
    SELECT * FROM sensor_data ORDER BY time LIMIT 8;
    ```
 
-   <details>
-   <summary>Пример результата запроса</summary>
+   {cut(Пример результата запроса)}
 
    ```text
                 time              | sensor_id |    temperature     |         cpu
@@ -497,7 +492,7 @@ tsdb1=>
    (8 rows)
    ```
 
-   </details>
+   {/cut}
 
 ## 8. Выполните тестовые запросы
 
@@ -519,8 +514,7 @@ tsdb1=>
    ORDER BY period;
    ```
 
-   <details>
-   <summary>Пример части результата запроса</summary>
+   {cut(Пример части результата запроса)}
 
    ```text
             period         |      avg_temp      |       avg_cpu
@@ -538,7 +532,7 @@ tsdb1=>
 
    ```
 
-   </details>
+   {/cut}
 
 1. Выведите средние значения температуры и загрузки CPU за тридцатиминутные интервалы, а также последнее зафиксированное за интервал значение температуры:
 
@@ -553,8 +547,7 @@ tsdb1=>
    ORDER BY period;
    ```
 
-   <details>
-   <summary>Пример части результата запроса</summary>
+   {cut(Пример части результата запроса)}
 
    ```text
             period         |      avg_temp      |     last_temp      |       avg_cpu
@@ -571,7 +564,7 @@ tsdb1=>
    ...
    ```
 
-   </details>
+   {/cut}
 
 Вывод результатов запросов, похожих на приведенные, свидетельствует о корректной работе PostgreSQL и расширения TimescaleDB.
 

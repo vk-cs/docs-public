@@ -1,7 +1,5 @@
 
-<details>
-
-<summary>How do I contact support?</summary>
+{cut(How do I contact support?)}
 
 Technical support can be contacted through the communication channels listed at [Terms of support](../support/support-info).
 
@@ -13,99 +11,75 @@ To speed up the processing of your request, inform the technical support about y
 
 If possible, attach any available diagnostic information: screenshots, logs and other materials.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How quickly does support respond?</summary>
+{cut(How quickly does support respond?)}
 
 Information about the timing of the response and the provision of a solution is in the [SLA](../support/sla) section.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>What is your work schedule?</summary>
+{cut(What is your work schedule?)}
 
 You can contact technical support at any time, 24/7.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I cannot change my phone number</summary>
+{cut(I cannot change my phone number)}
 
 After registering a phone number, changing it is possible only through a request to technical support. The support team will contact the current owner to confirm the phone change.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Can't register with my phone number</summary>
+{cut(Can't register with my phone number)}
 
 Registration via VK Cloud account is only possible for Russian numbers that start with +7.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I forgot my account password</summary>
+{cut(I forgot my account password)}
 
 Restore the password from the account. To do this, click **Recover password** on the authorization page.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I have registered, but the services in my management console are still unavailable</summary>
+{cut(I have registered, but the services in my management console are still unavailable)}
 
 The services become available after you have completed the [registration](../account-registration) procedure: linked your phone, email, and card for payment.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I enable two-factor authentication?</summary>
+{cut(How do I enable two-factor authentication?)}
 
 Use the instruction [Enabling 2FA](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Lost my two-factor authentication app</summary>
+{cut(Lost my two-factor authentication app)}
 
 Contact [technical support](mailto:support@mcs.mail.ru). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [management console](https://msk.cloud.vk.com/app/account/profile).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I did not receive bonus points upon registration</summary>
+{cut(I did not receive bonus points upon registration)}
 
 Bonus points are awarded when the first project is created in VK Cloud; this option is not available for subsequent projects.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I do not have enough quotas</summary>
+{cut(I do not have enough quotas)}
 
 The expansion of resource quotas is performed upon request to [technical support](mailto:support@mcs.mail.ru).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I delete my account?</summary>
+{cut(How do I delete my account?)}
 
 The account is deleted upon request to technical support on behalf of the account of the project owner. Before deleting the account, delete all existing resources, as well as untie the bank card (if available).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I do not receive letters from support</summary>
+{cut(I do not receive letters from support)}
 
 If you have not received a reply by email:
 
@@ -114,46 +88,36 @@ If you have not received a reply by email:
 - Make sure that other emails reach the selected email address. To do this, send a test email to him from any other mailbox.
 - Contact technical support via another communication channel.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Where can I view data on the health and failures of services?</summary>
+{cut(Where can I view data on the health and failures of services?)}
 
 This data is published on the [system status](https://status.msk.cloud.vk.com) page.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Where can I change the data of a legal entity?</summary>
+{cut(Where can I change the data of a legal entity?)}
 
 To fill in the data about the legal entity, go to [management console](https://msk.cloud.vk.com/app/en/), click on the name of your account and select **Project Settings** from the drop-down menu. On the page that opens, on the **General Information** tab, you can change the data of the legal entity.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is there individual support for services in VK Cloud?</summary>
+{cut(Is there individual support for services in VK Cloud?)}
 
 In VK Cloud you can connect the priority support service (Professional Services) from VK Cloud experts. To use this service, leave a request [on the website](https://cloud.vk.com/professional-services/).
 
 Also check out the [full list of Professional Services](/en/intro/start/support/support-info#individual_support).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Do you have an affiliate program?</summary>
+{cut(Do you have an affiliate program?)}
 
 Yes. Read more about the affiliate program in the [documentation](..).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>What if I didn't find the answer to my question?</summary>
+{cut(What if I didn't find the answer to my question?)}
 
 If you did not find the answer to your question on the portal, [send your question](mailto:support@mcs.mail.ru) to our support.
 
-</details>
+{/cut}

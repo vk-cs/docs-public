@@ -71,8 +71,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 1. Создайте манифесты для ресурсов Gatekeeper:
 
-   <details>
-   <summary>Шаблон ограничения host-namespaces-template.yaml</summary>
+   {cut(Шаблон ограничения host-namespaces-template.yaml)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -120,10 +119,9 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
            }
    ```
 
-   </details>
+   {/cut}
 
-   <details>
-   <summary>Ограничение host-namespaces-constraint.yaml </summary>
+   {cut(Ограничение host-namespaces-constraint.yaml )}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -140,7 +138,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
          - Pod
    ```
 
-   </details>
+   {/cut}
 
 1. Примените созданные манифесты:
 
@@ -152,8 +150,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
    1. Создайте манифест пода, который не удовлетворяет политике:
 
-      <details>
-      <summary>Манифест pod_namespace.yaml</summary>
+      {cut(Манифест pod_namespace.yaml)}
 
       <!-- prettier-ignore -->
       ```yaml
@@ -171,7 +168,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
             image: nginx
       ```
 
-      </details>
+      {/cut}
 
    1. Попытайтесь применить этот манифест:
 
@@ -196,8 +193,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 1. Создайте манифесты для ресурсов Gatekeeper:
 
-   <details>
-   <summary>Шаблон ограничения host-filesystem-template.yaml</summary>
+   {cut(Шаблон ограничения host-filesystem-template.yaml)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -339,10 +335,9 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
            }
    ```
 
-   </details>
+   {/cut}
 
-   <details>
-   <summary>Ограничение host-filesystem-constraint.yaml</summary>
+   {cut(Ограничение host-filesystem-constraint.yaml)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -363,7 +358,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
          readOnly: true
    ```
 
-   </details>
+   {/cut}
 
 1. Примените созданные манифесты:
 
@@ -375,8 +370,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
    1. Создайте манифест пода, который не удовлетворяет политике:
 
-      <details>
-      <summary>Манифест pod_filesystem.yaml</summary>
+      {cut(Манифест pod_filesystem.yaml)}
 
       <!-- prettier-ignore -->
       ```yaml
@@ -400,7 +394,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
               path: /tmp # directory on host
       ```
 
-      </details>
+      {/cut}
 
    1. Попытайтесь применить этот манифест:
 

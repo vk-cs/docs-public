@@ -27,18 +27,16 @@ A list of available VM configuration templates. Each item in the list contains t
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 get_flavors(**kwargs
            ) -> List[mlplatform_client.serializers.nova.NovaFlavor]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -99,7 +97,7 @@ When working in a production environment, do not operate tokens in the clear. Us
     # end of fragment
    ```
 
-</details>
+{/cut}
 
 ## get_internal_networks
 
@@ -117,18 +115,16 @@ List of standard networks of the project. Each item in the list contains the ID,
 
 ### Method signature and usage example
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 get_internal_networks(**kwargs
                      ) -> List[mlplatform_client.serializers.gateway.NetworkOut]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -181,7 +177,7 @@ When working in a production environment, do not operate tokens in the clear. Us
     # end of fragment
    ```
 
-</details>
+{/cut}
 
 ## get_external_networks
 
@@ -199,18 +195,16 @@ A list of the project's external networks. Each list item contains ID, name, [SD
 
 ### Method signature and usage example
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 get_external_networks(**kwargs
                      ) -> List[mlplatform_client.serializers.gateway.NetworkOut]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -252,7 +246,7 @@ When working in a production environment, do not operate tokens in the clear. Us
     external: True]
    ```
 
-</details>
+{/cut}
 
 ## create_jupyter_hub
 
@@ -380,8 +374,7 @@ An object of class `VmDetailInfo` with information about the created JupyterHub 
 
 ### Method signature and usage example
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 create_jupiter_hub(instance_name: str,
@@ -396,10 +389,9 @@ create_jupiter_hub(instance_name: str,
                   ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -481,7 +473,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    Immediately after calling the `create_jupyter_hub` method, the instance is in the process of creation, so some parameters are not defined, for example: domain name and IP address.
 
-</details>
+{/cut}
 
 ## attach_s3_bucket_to_jh
 
@@ -533,8 +525,7 @@ There is no return value.
 
 ### Method signature and usage example
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 attach_s3_bucket_to_jh(
@@ -544,10 +535,9 @@ attach_s3_bucket_to_jh(
                       ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -575,7 +565,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    The connected bucket will be available on the JupyterHub instance with the specified id as the `/shared/s3fs` folder .
 
-</details>
+{/cut}
 
 ## create_mlflow
 
@@ -695,8 +685,7 @@ An object of the `VmDetailInfo` class with information about the created MLflow 
 
 ### Method signature and usage example
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 create_mlflow(instance_name: str,
@@ -710,10 +699,9 @@ create_mlflow(instance_name: str,
              ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -793,7 +781,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    Immediately after calling the `create_mlflow` method, the instance is in the process of creation, so some parameters are not defined, for example: domain name and IP address.
 
-</details>
+{/cut}
 
 ## create_deploy
 
@@ -925,8 +913,7 @@ An object of class `VmDetailInfo` with information about the created MLflow Depl
 
 ### Method signature and usage example
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 create_deploy(instance_name: str,
@@ -942,10 +929,9 @@ create_deploy(instance_name: str,
               ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of method usage</summary>
+{cut(Example of method usage)}
 
 <err>
 
@@ -1027,7 +1013,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
     Immediately after calling the `create_deploy` method, the instance is in the process of being created, so some parameters are not defined, for example: domain name and IP address.
 
-</details>
+{/cut}
 
 ## get_all_instances_info
 
@@ -1045,18 +1031,16 @@ A list of objects of class `VmDetailInfo` with information about all available J
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 get_all_instances_info(**kwargs
                       ) -> List[mlplatform_client.serializers.gateway.VmDetailInfo]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1119,7 +1103,7 @@ When working in a production environment, do not operate tokens in the clear. Us
     # fragment end
     ```
 
-</details>
+{/cut}
 
 ## get_instance_info
 
@@ -1150,8 +1134,7 @@ An object of class `VmDetailInfo` with information about the Cloud ML Platform i
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 get_instance_info(instance_id: str,
@@ -1159,10 +1142,9 @@ get_instance_info(instance_id: str,
                  ) -> mlplatform_client.serializers.gateway.VmDetailInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1228,7 +1210,7 @@ When working in a production environment, do not operate tokens in the clear. Us
         cinder_id: d6ee2d16-ХХХХ],
     ```
 
-</details>
+{/cut}
 
 ## delete_instance
 
@@ -1259,8 +1241,7 @@ There is no return value.
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 delete_instance(instance_id: str,
@@ -1268,10 +1249,9 @@ delete_instance(instance_id: str,
                ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1311,7 +1291,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
     In case of success, the second list will not contain the deleted instance.
 
-</details>
+{/cut}
 
 ## create_deployment
 
@@ -1392,8 +1372,7 @@ An object of the `DeployOut` class with information about the created ML model d
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 create_deployment(deploy_server_name: str,
@@ -1408,10 +1387,9 @@ create_deployment(deploy_server_name: str,
                  ) -> mlplatform_client.serializers.deployment.DeployOut
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1473,7 +1451,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    To learn about preparing to create a deployment, see [Managing an instance with MLflow Client](/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client "change-lang").
 
-</details>
+{/cut}
 
 ## list_deployments
 
@@ -1516,8 +1494,7 @@ A list of objects of the `DeployOut` class with information about ML model deplo
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 list_deployments(deploy_server_name: str,
@@ -1527,10 +1504,9 @@ list_deployments(deploy_server_name: str,
                 ) -> List[mlplatform_client.serializers.deployment.DeployOut]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1585,7 +1561,7 @@ When working in a production environment, do not operate tokens in the clear. Us
    predict_ref: ]
    ```
 
-</details>
+{/cut}
 
 ## get_deployment
 
@@ -1636,8 +1612,7 @@ An object of the `DeployOut` class with information about the specified MLmodel 
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 get_deployment(deploy_server_name: str,
@@ -1648,10 +1623,9 @@ get_deployment(deploy_server_name: str,
               ) -> mlplatform_client.serializers.deployment.DeployOut
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1707,7 +1681,7 @@ When working in a production environment, do not operate tokens in the clear. Us
    predict_ref: https://jh-test-mlp-XXXX.ml.msk.vkcs.cloud/deploy/f27bd56d-XXXX/test_deployment_1/invocations
    ```
 
-</details>
+{/cut}
 
 ## delete_deployment
 
@@ -1758,8 +1732,7 @@ There is no return value.
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 delete_deployment(deploy_server_name: str,
@@ -1770,10 +1743,9 @@ delete_deployment(deploy_server_name: str,
                  ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1830,7 +1802,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
     If successful, the second list will be missing the remote deployment of the ML model.
 
-</details>
+{/cut}
 
 ## ping_model
 
@@ -1881,8 +1853,7 @@ New line character `\n` if the model is ready for operation.
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 ping_model(deploy_server_name: str,
@@ -1893,10 +1864,9 @@ ping_model(deploy_server_name: str,
           ) -> str
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -1939,7 +1909,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    To prepare for using the ML model, see [Managing an instance with MLflow Client](/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client "change-lang").
 
-</details>
+{/cut}
 
 ## predict_model
 
@@ -1996,8 +1966,7 @@ ML model prediction for given input data in the `Dict[str, Any]` format.
 
 ### Method signature and example of use
 
-<details>
-<summary>Method signature</summary>
+{cut(Method signature)}
 
 ```python
 predict_model(data: Dict,
@@ -2009,10 +1978,9 @@ predict_model(data: Dict,
              ) -> Dict[str, Any]
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Example of using the method</summary>
+{cut(Example of using the method)}
 
 <err>
 
@@ -2065,4 +2033,4 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    To learn about preparing to use the ML model, see [Managing instances with MLflow Client](/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client "change-lang").
 
-</details>
+{/cut}

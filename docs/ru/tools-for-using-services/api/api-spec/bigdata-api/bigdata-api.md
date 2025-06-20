@@ -6,8 +6,7 @@ API сервиса [Cloud Big Data](/ru/data-processing/bigdata) позволя�
 
 </warn>
 
-<details>
-  <summary markdown="span">Получение эндпоинта, авторизация и аутентификация</summary>
+{cut(Получение эндпоинта, авторизация и аутентификация)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. [Включите](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
@@ -21,7 +20,7 @@ API сервиса [Cloud Big Data](/ru/data-processing/bigdata) позволя�
 1. Найдите эндпоинт **Sahara** в блоке **Сервис OpenStack**.
 1. [Получите токен доступа](../../rest-api/case-keystone-token) `X-Auth-Token`.
 
-</details>
+{/cut}
 
 <info>
 
