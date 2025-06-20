@@ -57,36 +57,33 @@ Here:
 
 - `flavor_id` — a VM type ID. You can specify the ID in the manifest or get it from the data source.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: the ID is taken from the `vkcs_compute_flavor` data source, which will be generated further.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `jh_instance_id` — a JupyterHub instance ID for collaboration. You can use an existing instance or create a new one.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: a new JupyterHub instance will be created. The ID will be taken after creating the `vkcs_mlplatform_jupyterhub` resource. The resource will be generated further.
   - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from JupyterHub instance details in your [VK Cloud management console](https://cloud.vk.com/app/en).
 
-  </details>
+  {/cut}
 
 - `demo_mode` — use `true` to store all data on the instance VM, use `false` to connect an S3 bucket with a Postgres database for storing data.
 
 - `network_id` — an ID of the network where the instance will be hosted. The instance can be hosted on an existing network or a new one. You can specify the ID in the manifest or get it from the data source or resource.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `network_id = vkcs_networking_network.default.id`: the instance will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the instance will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the instance will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 ## 2. (Optional) Create a file describing the data source for the VM type
 

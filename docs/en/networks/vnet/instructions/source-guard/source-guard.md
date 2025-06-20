@@ -8,15 +8,13 @@ Examples of IP Source Guard usage can be found in how-to guides for setting up a
 
 Use allowlists for IP addresses on ports with a self-referencing [security group](/ru/networks/vnet/concepts/traffic-limiting#secgroups) (e.g., `default` group) with caution. If you create an IP allowlist for a port with such a security group, traffic from listed IP addresses will be allowed on all network ports with the same group.
 
-<details>
-
-<summary>How does this work?</summary>
+{cut(How does this work?)}
 
 Suppose a port `port-vm-1` is created in the `network` and the `default` group is assigned to this port. IP address `192.168.0.3` is added to the allowlist for this port.
 
 Then, if you add port `port-vm-2` in the `network` and assign the `default` group to `port-vm-2`, the port will allow traffic from IP address `192.168.0.3`, even if the allowlist for `port-vm-2` is empty.
 
-</details>
+{/cut}
 
 </warn>
 

@@ -128,8 +128,7 @@ curl -X 'POST' \
 
 ## Response example
 
-<details>
-  <summary>JSON response</summary>
+{cut(JSON response)}
 
 ```json
 {
@@ -762,7 +761,7 @@ curl -X 'POST' \
 }
 ```
 
-</details>
+{/cut}
 
 ## Additional examples
 
@@ -789,8 +788,7 @@ curl -X 'POST' \
 }'
 ```
 
-<details>
-  <summary>Response example</summary>
+{cut(Response example)}
 
 ```json
 {
@@ -881,7 +879,7 @@ curl -X 'POST' \
 }
 ```
 
-</details>
+{/cut}
 
 ### Invalid JSON or image (no valid mode)
 

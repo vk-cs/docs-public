@@ -138,8 +138,7 @@
 
 ### Примеры описания секции billing
 
-<details>
-<summary>Пример секции billing с бесплатной тарифной опцией типа integer с шагом изменения</summary>
+{cut(Пример секции billing с бесплатной тарифной опцией типа integer с шагом изменения)}
 
 ```json
 "billing": {
@@ -168,10 +167,9 @@
 
   Стоимость плана не изменилась, так как опция бесплатная.
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример секции billing с предоплатной тарифной опцией типа integer с шагом изменения</summary>
+{cut(Пример секции billing с предоплатной тарифной опцией типа integer с шагом изменения)}
 
 ```json
 "billing": {
@@ -200,10 +198,9 @@
 
   Стоимость плана увеличилась на цену шага предоплатной опции.
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример секции billing с предоплатной тарифной опцией-переключателем boolean</summary>
+{cut(Пример секции billing с предоплатной тарифной опцией-переключателем boolean)}
 
 ```json
 "billing": {
@@ -220,10 +217,9 @@
 
 ![](../assets/option_bool_paid.png){params[width=90%]}
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример секции billing с постоплатной числовой тарифной опцией</summary>
+{cut(Пример секции billing с постоплатной числовой тарифной опцией)}
 
 ```json
 "billing": {
@@ -246,4 +242,4 @@
 
 ![](../assets/Option_postpayed_billing.png){params[width=70%]}
 
-</details>
+{/cut}

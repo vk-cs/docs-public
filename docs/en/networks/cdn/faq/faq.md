@@ -1,10 +1,6 @@
-<details>
+{cut(Where are the CDN points of presence?)}
 
-<summary>Where are the CDN points of presence?</summary>
-
-<details>
-
-  <summary>The CDN points of presence in Russia</summary>
+{cut(The CDN points of presence in Russia)}
 
 - Aksai
 - Angarsk
@@ -23,10 +19,9 @@
 - Khabarovsk
 - Chelyabinsk
 
-</details>
+{/cut}
 
-<details>
-  <summary>The CDN points of presence outside Russia</summary>
+{cut(The CDN points of presence outside Russia)}
 
 - Almaty
 - Amsterdam
@@ -42,64 +37,50 @@
 - Tashkent
 - Frankfurt
 
-</details>
+{/cut}
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to enable WAF and DDoS protection?</summary>
+{cut(Is it possible to enable WAF and DDoS protection?)}
 
 Yes, it is. Contact [technical support](mailto:support@mcs.mail.ru) to make an application for connection.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to protect content using Secure token?</summary>
+{cut(Is it possible to protect content using Secure token?)}
 
 Yes, it is. Contact [technical support](mailto:support@mcs.mail.ru) to make an application for enabling and setting up Secure token.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Can I use HTTP/2 protocol?</summary>
+{cut(Can I use HTTP/2 protocol?)}
 
 CDN servers have HTTP/2 enabled by default. If the origin servers do not support HTTP/2, they will deliver the content using a supported protocol (for example, HTTP/1.1). In this case, the browser combines all received content into a single page, even if it is received via different protocols. Read more about [HTTP/2 support](../concepts/http2-support).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Can I deal with CDN via API?</summary>
+{cut(Can I deal with CDN via API?)}
 
 You can find endpoints for managing and monitoring CDN resources in the [API help](/ru/tools-for-using-services/api/api-cdn "change-lang") section.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to add rewrite rules and provide access to raw logs?</summary>
+{cut(Is it possible to add rewrite rules and provide access to raw logs?)}
 
 Unfortunately, this option is not provided.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Can I get CDN statistics?</summary>
+{cut(Can I get CDN statistics?)}
 
 Read about getting statistics in the [Statistics] section(/en/networks/cdn/monitoring).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Why do I not have access to the CDN service?</summary>
+{cut(Why do I not have access to the CDN service?)}
 
 Not all user roles have access to the CDN service. If you were invited to a project, check the access for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions).
 
 If your role has permissions to work in the CDN service, but the service is unavailable, contact [technical support](mailto:support@mcs.mail.ru).
 
-</details>
+{/cut}

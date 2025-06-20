@@ -351,8 +351,7 @@ To put your own images in the Docker cluster registry:
 
    1. Place the following files in this directory:
 
-      <details>
-      <summary markdown="span">Dockerfile</summary>
+      {cut(Dockerfile)}
 
       ```ini
       FROM nginx:mainline-alpine
@@ -366,10 +365,9 @@ To put your own images in the Docker cluster registry:
       USER nginx
       ```
 
-      </details>
+      {/cut}
 
-      <details>
-      <summary markdown="span">nginx-config.conf</summary>
+      {cut(nginx-config.conf)}
 
       ```ini
       server {
@@ -390,7 +388,7 @@ To put your own images in the Docker cluster registry:
       }
       ```
 
-      </details>
+      {/cut}
 
    1. Run the build process:
 
@@ -470,8 +468,7 @@ To deploy the applications:
 
 1. Place the following files in this directory:
 
-   <details>
-   <summary markdown="span">deploy-coffee.yaml</summary>
+   {cut(deploy-coffee.yaml)}
 
    ```yaml
    kind: PersistentVolumeClaim
@@ -532,10 +529,9 @@ To deploy the applications:
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
-   <details>
-   <summary markdown="span">deploy-tea.yaml</summary>
+   {cut(deploy-tea.yaml)}
 
    ```yaml
    kind: PersistentVolumeClaim
@@ -596,7 +592,7 @@ To deploy the applications:
        app: tea
    ```
 
-   </details>
+   {/cut}
 
    <warn>
 
@@ -679,8 +675,7 @@ For Ingress controller to route requests to the corresponding Service resources,
 
 1. Place the following file in the `~/k8s-deployments` directory:
 
-   <details>
-   <summary markdown="span">deploy-ingress.yaml</summary>
+   {cut(deploy-ingress.yaml)}
 
    ```yaml
    apiVersion: networking.k8s.io/v1
@@ -709,7 +704,7 @@ For Ingress controller to route requests to the corresponding Service resources,
                      number: 80
    ```
 
-   </details>
+   {/cut}
 
 1. Deploy the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) resource:
 

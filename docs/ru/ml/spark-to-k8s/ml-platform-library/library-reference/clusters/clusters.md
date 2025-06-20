@@ -18,8 +18,7 @@
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_clusters(**kwargs
@@ -27,10 +26,9 @@ get_clusters(**kwargs
 
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -55,7 +53,7 @@ get_clusters(**kwargs
       print(clusters)
    ```
 
-</details>
+{/cut}
 
 ## get_cluster_info
 
@@ -88,8 +86,7 @@ get_clusters(**kwargs
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_cluster_info(cluster_id: str,
@@ -97,10 +94,9 @@ get_cluster_info(cluster_id: str,
                 ) -> mlplatform_client.serializers.spark_proxy.K8sClusterInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -128,7 +124,7 @@ get_cluster_info(cluster_id: str,
 
    В случае успеха будет выведена информация о кластере.
 
-</details>
+{/cut}
 
 ## set_cluster_delete_time
 
@@ -167,8 +163,7 @@ get_cluster_info(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 set_cluster_delete_time(cluster_id: str,
@@ -176,10 +171,9 @@ set_cluster_delete_time(cluster_id: str,
                         **kwargs
                        ) -> mlplatform_client.serializers.spark_proxy.K8sClusterInfo
 ```
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -207,7 +201,7 @@ set_cluster_delete_time(cluster_id: str,
    ```
    В случае успеха будет выведено число `1440`.
 
-</details>
+{/cut}
 
 ## remove_cluster_delete_time
 
@@ -240,18 +234,16 @@ set_cluster_delete_time(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 remove_cluster_delete_time(cluster_id: str,
                            **kwargs
                           ) -> mlplatform_client.serializers.spark_proxy.K8sClusterInfo
 ```
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -279,7 +271,7 @@ remove_cluster_delete_time(cluster_id: str,
 
    В случае успеха будет выведено значение `None`.
 
-</details>
+{/cut}
 
 ## set_cluster_suspend_time
 
@@ -318,8 +310,7 @@ remove_cluster_delete_time(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 set_cluster_suspend_time(cluster_id: str,
@@ -327,10 +318,9 @@ set_cluster_suspend_time(cluster_id: str,
                          **kwargs
                         ) -> mlplatform_client.serializers.spark_proxy.K8sClusterInfo
 ```
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -359,7 +349,7 @@ set_cluster_suspend_time(cluster_id: str,
 
    В случае успеха будет выведено число `120`.
 
-</details>
+{/cut}
 
 ## remove_cluster_suspend_time
 
@@ -392,8 +382,7 @@ set_cluster_suspend_time(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 remove_cluster_suspend_time(cluster_id: str,
@@ -401,10 +390,9 @@ remove_cluster_suspend_time(cluster_id: str,
                            ) -> mlplatform_client.serializers.spark_proxy.K8sClusterInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -432,7 +420,7 @@ remove_cluster_suspend_time(cluster_id: str,
 
    В случае успеха будет выведено значение `None`.
 
-</details>
+{/cut}
 
 ## stop
 
@@ -456,16 +444,14 @@ remove_cluster_suspend_time(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 stop() 
 ```
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -488,7 +474,7 @@ stop()
    mlp.stop()
    ```
 
-</details>
+{/cut}
 
 ## wake_up_cluster
 
@@ -525,8 +511,7 @@ stop()
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 wake_up_cluster(cluster_id: str,
@@ -534,10 +519,9 @@ wake_up_cluster(cluster_id: str,
                )
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -563,4 +547,4 @@ wake_up_cluster(cluster_id: str,
 
    Начнется запуск кластера.
 
-</details>
+{/cut}

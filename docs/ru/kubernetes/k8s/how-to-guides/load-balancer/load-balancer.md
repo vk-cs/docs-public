@@ -41,8 +41,7 @@
 
 1. Создайте файл манифеста:
 
-   <details>
-   <summary markdown="span">coffee.yaml</summary>
+   {cut(coffee.yaml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -67,7 +66,7 @@
            - containerPort: 8080
    ```
 
-   </details>
+   {/cut}
 
 1. Создайте нужный ресурс Kubernetes на основе манифеста:
 

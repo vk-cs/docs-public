@@ -115,8 +115,7 @@ curl -X 'POST' \
 
 ## Пример ответа
 
-<details>
-  <summary>Ответ в формате JSON</summary>
+{cut(Ответ в формате JSON)}
 
 ```json
 {
@@ -186,7 +185,7 @@ curl -X 'POST' \
 }
 ```
 
-</details>
+{/cut}
 
 ## Дополнительные примеры
 

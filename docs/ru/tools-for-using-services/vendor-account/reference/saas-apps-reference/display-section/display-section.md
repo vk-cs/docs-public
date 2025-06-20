@@ -74,8 +74,7 @@ integer
 | ![](/en/assets/no.svg "inline")
 |===
 
-<details>
-<summary>Пример секции display</summary>
+{cut(Пример секции display)}
 
 ```json
 "display": {
@@ -116,7 +115,7 @@ integer
 
 ![](../assets/Wizard_SaaS.png)
 
-</details>
+{/cut}
 
 По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы группа отображалась только при определенных условиях, используйте [конструкцию when](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/#IBdisplay_when).
 
@@ -159,8 +158,7 @@ integer
 
 Конструкция [when в секции pages](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/#IBdisplay_when_in_pages) используется таким же образом, как и в image-based приложениях.
 
-<details>
-<summary>Пример использования конструкции when в секции pages</summary>
+{cut(Пример использования конструкции when в секции pages)}
 
 ```json
 {
@@ -206,4 +204,4 @@ integer
 * В конструкции `when` — потому что поддерживается один уровень иерархии зависимостей.
 * В `parameters` — потому что одна тарифная опция может быть указана только в одной группе.
 
-</details>
+{/cut}

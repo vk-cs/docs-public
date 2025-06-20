@@ -38,8 +38,7 @@
 
 Имя задания в кластере Cloud Spark должно быть уникальным. Запуск заданий с одинаковыми именами приведет к ошибке.
 
-<details>
-<summary>Как переименовать задание</summary>
+{cut(Как переименовать задание)}
 
 Выполните скрипт Python:
 
@@ -49,7 +48,7 @@ client_manifest.job_name = '<новое имя задания>'
 
 Здесь `client_manifest` — манифест типа SparkApplication, полученный с помощью метода `get_default_manifest` или [get_manifest_from_yaml_file](#get_manifest_from_yaml_file).
 
-</details>
+{/cut}
 
 </warn>
 
@@ -59,8 +58,7 @@ client_manifest.job_name = '<новое имя задания>'
 
 ### {heading(Сигнатура метода и пример использования)[id=get_default_manifest_additional_info]}
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_default_manifest(cluster_id: str,
@@ -69,10 +67,9 @@ get_default_manifest(cluster_id: str,
                      ) -> mlplatform_client.core.manifest.Manifest
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -108,12 +105,11 @@ get_default_manifest(cluster_id: str,
 
    При необходимости вы можете изменить значения параметров манифеста на желаемые.
 
-</details>
+{/cut}
 
 ### Примеры настройки манифеста
 
-<details>
-<summary>Как указать основной исполняемый файл приложения для запуска на кластере Cloud Spark</summary>
+{cut(Как указать основной исполняемый файл приложения для запуска на кластере Cloud Spark)}
 
 Выполните скрипт Python:
 
@@ -123,10 +119,9 @@ client_manifest.main_app_file=f"s3a://{BUCKET_NAME}/spark-files/new_main_file.py
 
 В этом примере указываются имя и путь к файлу в бакете. Имя бакета содержится в переменной `BUCKET_NAME`.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как изменить параметры исполнителя Spark</summary>
+{cut(Как изменить параметры исполнителя Spark)}
 
 Выполните скрипт Python:
 
@@ -140,10 +135,9 @@ client_manifest.set_executor_settings(
 - необходимое для выполнения задания количество исполнителей;
 - количество ядер CPU и объем памяти, которые будут выделены для каждого исполнителя.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как изменить параметры драйвера Spark</summary>
+{cut(Как изменить параметры драйвера Spark)}
 
 Выполните скрипт Python:
 
@@ -157,10 +151,9 @@ client_manifest.set_driver_settings(
 - минимальное и максимальное количество ядер CPU;
 - объем памяти.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как определить переменную окружения для драйвера Spark</summary>
+{cut(Как определить переменную окружения для драйвера Spark)}
 
 Выполните скрипт Python:
 
@@ -171,10 +164,9 @@ client_manifest.set_driver_settings(
 
 В этом примере указываются имя переменной `NEW_ENV` и ее значение `NEW_ENV_VALUE`.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как изменить параметры конфигурации Spark</summary>
+{cut(Как изменить параметры конфигурации Spark)}
 
 Выполните скрипт Python:
 
@@ -185,10 +177,9 @@ client_manifest.set_spark_conf(
 
 В этом примере драйверу Spark передаются дополнительные настройки JVM (виртуальной машины Java), которые нужны для выполнения Java-кода на кластере Spark.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как переопределить путь по умолчанию к jar-файлам и другим дополнительным файлам, необходимым для выполнения задания</summary>
+{cut(Как переопределить путь по умолчанию к jar-файлам и другим дополнительным файлам, необходимым для выполнения задания)}
 
 Выполните скрипт Python:
 
@@ -199,10 +190,9 @@ client_manifest.set_files([f"s3a://{BUCKET_NAME}/dataset.csv"])
 
 В этом примере указывается путь к библиотеке `test.jar` и файлу `dataset.csv` в бакете. Имя бакета содержится в переменной `BUCKET_NAME`.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как указать дополнительный файл с кодом приложения</summary>
+{cut(Как указать дополнительный файл с кодом приложения)}
 
 Выполните скрипт Python:
 
@@ -212,10 +202,9 @@ client_manifest.add_pyfiles([f"s3a://{BUCKET_NAME}/python_file.py"])
 
 В этом примере указываются имя и путь к файлу с Python-кодом в бакете. Имя бакета содержится в переменной `BUCKET_NAME`.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как задать переменные окружения для драйвера и исполнителя Spark</summary>
+{cut(Как задать переменные окружения для драйвера и исполнителя Spark)}
 
 Выполните скрипт Python:
 
@@ -229,10 +218,9 @@ client_manifest.add_executor_env([{"name": "MY_EXECUTOR_ENV", "value": "my_env_v
 - переменная окружения драйвера `MY_DRIVER_ENV` со значением `"my_env_value"`;
 - переменная окружения исполнителя `MY_EXECUTOR_ENV` со значением `"my_env_value"`.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как добавить в окружение драйвера и исполнителя Spark переменные из секрета</summary>
+{cut(Как добавить в окружение драйвера и исполнителя Spark переменные из секрета)}
 
 Выполните скрипт Python:
 
@@ -243,10 +231,9 @@ client_manifest.add_executor_env_from([{"secretRef": {"name": "my-secret"}}])
 
 В этом примере в окружение драйвера и исполнителя Spark добавляются переменные из ранее созданного [секрета](https://kubernetes.io/docs/concepts/configuration/secret/) с именем `my-secret`.
 
-</details>
+{/cut}
 
-<details>
-<summary>Как задать параметры политики рестарта задания Spark</summary>
+{cut(Как задать параметры политики рестарта задания Spark)}
 
 Выполните скрипт Python:
 
@@ -266,7 +253,7 @@ client_manifest.set_restart_policy(
 - `on_submission_failure_retries`: количество попыток запустить задание, если при запуске возникает ошибка.
 - `on_submission_failure_retries_interval`: интервал в секундах между попытками запустить задание, если при запуске возникает ошибка.
 
-</details>
+{/cut}
 
 Больше информации о параметрах настройки Spark в [официальной документации](https://spark.apache.org/docs/latest/configuration.html).
 
@@ -297,18 +284,16 @@ client_manifest.set_restart_policy(
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 get_manifest_from_yaml_file(yaml_file_path: str 
                             ) -> mlplatform_client.core.manifest.Manifest
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -336,7 +321,7 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
    В случае успеха будет выведен код манифеста.
 
-</details>
+{/cut}
 
 ## save_yaml
 
@@ -365,17 +350,15 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 save_yaml(file_path: str) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -408,7 +391,7 @@ save_yaml(file_path: str) -> None
 
    В этом примере из файла `/home/user/sample-job-manifest.yaml` загружается манифест, который затем редактируется и сохраняется в тот же самый файл. В случае успеха будет выведен код измененного манифеста.
 
-</details>
+{/cut}
 
 ## spark_submit_job
 
@@ -457,8 +440,7 @@ save_yaml(file_path: str) -> None
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 spark_submit_job(cluster_id: str,
@@ -468,10 +450,9 @@ spark_submit_job(cluster_id: str,
                 ) -> mlplatform_client.serializers.spark_proxy.K8sSparkJobInfo
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -514,7 +495,7 @@ spark_submit_job(cluster_id: str,
    job_name: pi-spark-job-1, status: SUBMITTED, created_at: 2024-07-04T15:08:08.536636+00:00 ui_url: https://k8s-XXXX.ml.msk.vkcs.cloud/pi-spark-job-1/jobs/
    ```
 
-</details>
+{/cut}
 
 ## spark_jobs_list
 
@@ -547,8 +528,7 @@ spark_submit_job(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 spark_jobs_list(cluster_id: str,
@@ -556,10 +536,9 @@ spark_jobs_list(cluster_id: str,
                ) -> mlplatform_client.serializers.spark_proxy.K8sSparkJobsInfoList
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -595,7 +574,7 @@ spark_jobs_list(cluster_id: str,
    job_name: pi-spark-job-1, status: SUBMITTED, created_at: 2024-07-04T15:08:08.536636+00:00 ui_url: https://k8s-XXXX.ml.msk.vkcs.cloud/pi-spark-job-1/jobs/
    ```
 
-</details>
+{/cut}
 
 ## spark_job_info
 
@@ -634,8 +613,7 @@ spark_jobs_list(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 spark_job_info(cluster_id: str,
@@ -644,10 +622,9 @@ spark_job_info(cluster_id: str,
               ) -> mlplatform_client.serializers.spark_proxy.K8sSparkJobInfoDetail
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -701,7 +678,7 @@ spark_job_info(cluster_id: str,
    pod_state_reason_message: None
    ```
 
-</details>
+{/cut}
 
 ## spark_job_logs
 
@@ -740,8 +717,7 @@ spark_job_info(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 spark_job_logs(cluster_id: str,
@@ -750,11 +726,9 @@ spark_job_logs(cluster_id: str,
               ) -> mlplatform_client.serializers.spark_proxy.K8sSparkJobLogs
 ```
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -796,7 +770,7 @@ spark_job_logs(cluster_id: str,
    ```
    Будут выведены логи задания Spark с именем `pi-spark-job-3`.
 
-</details>
+{/cut}
 
 ## describe_spark_job
 
@@ -835,8 +809,7 @@ spark_job_logs(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 describe_spark_job(cluster_id: str,
@@ -845,10 +818,9 @@ describe_spark_job(cluster_id: str,
                   ) -> mlplatform_client.serializers.spark_proxy.K8sSparkApplication
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -915,7 +887,7 @@ describe_spark_job(cluster_id: str,
    # конец фрагмента 
    ```
 
-</details>
+{/cut}
 
 ## spark_delete_job
 
@@ -954,8 +926,7 @@ describe_spark_job(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 spark_delete_job(cluster_id: str,
@@ -964,11 +935,9 @@ spark_delete_job(cluster_id: str,
                 ) -> None
 ```
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1009,7 +978,7 @@ spark_delete_job(cluster_id: str,
 
    Задание Spark с именем `pi-spark-job-5` будет удалено. Это можно проверить с помощью метода [spark_jobs_list](#spark_jobs_list).
 
-</details>
+{/cut}
 
 ## spark_events
 
@@ -1040,8 +1009,7 @@ spark_delete_job(cluster_id: str,
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 spark_events(cluster_id: str,
@@ -1049,10 +1017,9 @@ spark_events(cluster_id: str,
             ) -> mlplatform_client.serializers.spark_proxy.K8sSparkEventsList
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -1092,4 +1059,4 @@ spark_events(cluster_id: str,
    # конец фрагмента
    ```
 
-</details>
+{/cut}

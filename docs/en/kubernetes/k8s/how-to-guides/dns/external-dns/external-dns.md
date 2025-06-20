@@ -134,8 +134,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Create a file that contains the [values](https://helm.sh/docs/chart_template_guide/values_files/) needed to install ExternalDNS with Helm:
 
-   <details>
-   <summary>external-dns-vkcs-values.yaml</summary>
+   {cut(external-dns-vkcs-values.yaml)}
 
    ```yaml
    policy: upsert-only
@@ -202,7 +201,7 @@ Prepare the user and get all the necessary credentials:
            value: "8888"
    ```
 
-   </details>
+   {/cut}
 
    The behavior of the ExternalDNS Helm chart is influenced by many values. The created file contains a minimum set of values that is sufficient to start working with ExternalDNS. The most important values affecting the behavior of ExternalDNS with the VK Cloud DNS are described below. Descriptions of values that do not apply to the VK Cloud plugin (all values except `sidecars[]`) are given in [README.md](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#values) for the chart.
 
@@ -212,8 +211,7 @@ Prepare the user and get all the necessary credentials:
 
    </warn>
 
-   <details>
-   <summary>Description of important values that affect the behavior of ExternalDNS</summary>
+   {cut(Description of important values that affect the behavior of ExternalDNS)}
 
    - (**Required value**) `provider`: the `webhook` value indicates that an external plugin with webhooks support is required to work with DNS.
 
@@ -233,7 +231,7 @@ Prepare the user and get all the necessary credentials:
 
      You can specify a prefix different from `externaldns-`, if necessary.
 
-   </details>
+   {/cut}
 
    The plugin for ExternalDNS, which provides its integration with the VK Cloud DNS, has many settings that affect the plugin's behavior. The settings are set using environment variables in `sidecars[].env`. In the created file, only the required settings are set. If necessary, you can specify additional settings for the plugin by adding the appropriate environment variables.
 
@@ -243,8 +241,7 @@ Prepare the user and get all the necessary credentials:
 
    </warn>
 
-   <details>
-   <summary> Description of values that affect plugin behavior</summary>
+   {cut( Description of values that affect plugin behavior)}
 
    - (**Required settings**) The settings corresponding to the variables with the `OS_` prefix are used to authenticate the plugin when interacting with the VK Cloud API.
 
@@ -280,7 +277,7 @@ Prepare the user and get all the necessary credentials:
        - `false` (default): "dry run" mode is **disabled**. The plugin runs and manipulates resource records in the DNS zone as configured.
        - `true`: "dry run" mode is **enabled**. The plugin runs but does not manipulate resource records in the DNS zone: no resource records will be created or deleted.
 
-   </details>
+   {/cut}
 
 1. Install ExternalDNS:
 
@@ -294,8 +291,7 @@ Prepare the user and get all the necessary credentials:
    helm -n external-dns list && kubectl -n external-dns get all
    ```
 
-   <details>
-   <summary>Example of partial output of the command</summary>
+   {cut(Example of partial output of the command)}
 
    ```text
    NAME                    NAMESPACE       ...        ...   STATUS          CHART                 ...
@@ -314,7 +310,7 @@ Prepare the user and get all the necessary credentials:
    replicaset.apps/external-dns-vkcs-NNNNNNNNNN   1         1         1       ...
    ```
 
-   </details>
+   {/cut}
 
 ## 3. Verify that External DNS is working
 
@@ -324,8 +320,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. Create a manifest for the `tea` application:
 
-   <details>
-   <summary>tea-app.yaml</summary>
+   {cut(tea-app.yaml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -351,7 +346,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
            - containerPort: 8080
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster to deploy the application:
 
@@ -365,8 +360,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    kubectl get rs,pod -l app==tea
    ```
 
-   <details>
-   <summary>Example of partial output of the command</summary>
+   {cut(Example of partial output of the command)}
 
    ```text
    NAME                           DESIRED   CURRENT   READY   AGE
@@ -378,7 +372,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    pod/tea-XXXXXXXXX-CCCCC   1/1     Running   0          ...
    ```
 
-   </details>
+   {/cut}
 
 1. Create a `tea-service.yaml` manifest for the Kubernetes service (`Service`).
 
@@ -439,8 +433,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    Wait until the service is assigned the public IP address of the load balancer. Creating the load balancer can take a long time.
 
-   <details>
-    <summary>Example of partial output of the command</summary>
+   {cut(Example of partial output of the command)}
 
    - The balancer creation is in progress:
 
@@ -456,7 +449,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
      tea-svc   LoadBalancer   10.254.170.195   203.0.113.111      80:32314/TCP   ...
      ```
 
-   </details>
+   {/cut}
 
 1. Verify that ExternalDNS has created the necessary resource records:
 
@@ -527,8 +520,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. Create a manifest for the `coffee` application:
 
-   <details>
-   <summary>coffee-app.yaml</summary>
+   {cut(coffee-app.yaml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -554,12 +546,11 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
            - containerPort: 8080
    ```
 
-   </details>
+   {/cut}
 
 1. Create a manifest for the Kubernetes service that the application will use.
 
-   <details>
-   <summary>coffee-service.yaml</summary>
+   {cut(coffee-service.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -579,7 +570,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
    Here, the service type is set to [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip), which is sufficient since the application will be published using Ingress. Such a service is accessible only from within the cluster and does not have a dedicated load balancer, unlike the service [created earlier](#31_publish_the_application_using_a_service_like_loadbalancer_8907e782).
 
@@ -595,8 +586,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    kubectl get rs,pod,svc -l app==coffee
    ```
 
-   <details>
-   <summary>Example of partial output of the command</summary>
+   {cut(Example of partial output of the command)}
 
    ```text
    NAME                                DESIRED   CURRENT   READY   AGE
@@ -610,7 +600,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    service/coffee-svc   ClusterIP   10.254.243.13   <none>        80/TCP    ...
    ```
 
-   </details>
+   {/cut}
 
 1. Create the `cafe-ingress.yaml` manifest for the Ingress resource.
 
@@ -662,8 +652,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    Wait for the Ingress resource to be assigned a public IP address. This address will be the same as the address of the Ingress controller.
 
-   <details>
-   <summary>Example of partial output of the command</summary>
+   {cut(Example of partial output of the command)}
 
    - Ingress has not yet been assigned an IP address:
 
@@ -679,7 +668,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
      cafe-ingress   nginx   cafe.example.com    203.0.113.222.nip.io   80      ...
      ```
 
-   </details>
+   {/cut}
 
 1. Verify that ExternalDNS has created the necessary resource records:
 

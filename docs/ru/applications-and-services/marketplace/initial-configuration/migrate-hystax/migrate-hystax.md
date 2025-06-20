@@ -1,7 +1,6 @@
 Вы можете мигрировать ваши ресурсы в VK Cloud с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
 
-<details>
-  <summary>Откуда можно перенести данные?</summary>
+{cut(Откуда можно перенести данные?)}
 
 **Поддерживаемые платформы**: VK Cloud, Yandex Cloud, CROC Cloud, SberCloud, Базис.Cloud, OpenStack, VMware, Amazon Web Services, Google Cloud Platform, Microsoft Azure, Oracle Cloud, Alibaba Cloud, Hyper-V, а также физические машины.
 
@@ -9,7 +8,7 @@
 
 **Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Полный список доступных для миграции ОС и их версий приведен на странице [создания ВМ](/ru/computing/iaas/instructions/vm/vm-create#create_vm) в вашем личном кабинете.
 
-</details>
+{/cut}
 
 Данная инструкция поможет мигрировать ваши ресурсы в VK Cloud с помощью сервиса Hystax Acura Migration на примере ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
@@ -43,8 +42,7 @@
 
    </info>
 
-   <details>
-     <summary>Манифест Ansible для установки агентов</summary>
+   {cut(Манифест Ansible для установки агентов)}
 
    ```yaml
    - hosts: all
@@ -94,7 +92,7 @@
          become: yes
    ```
 
-   </details>
+   {/cut}
 
    После установки агента ВМ `Ubuntu-MR` появится на главной странице [личного кабинета](https://migration.mcs-cloud.ru) Hystax Acura со статусом **Discovered**.
 
@@ -111,8 +109,7 @@
 
 1. Скорректируйте параметры плана в соответствии с требованиями по миграции ВМ.
 
-   <details>
-    <summary>Пример плана миграции одной ВМ</summary>
+   {cut(Пример плана миграции одной ВМ)}
 
     В этом плане описываются одна ВМ и подсеть, в которой будет развернута мигрируемая ВМ.
 
@@ -176,7 +173,7 @@
 
    Подробное описание параметров — в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе [Метатеги образов](/ru/computing/iaas/instructions/images/image-metadata).
 
-   </details>
+   {/cut}
 
 1. Нажмите кнопку **Save**.
 

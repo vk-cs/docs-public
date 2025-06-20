@@ -47,8 +47,7 @@
    1. [Узнайте](../../concepts/logging-plugin#auth_parameters) параметры авторизации плагина для вашего проекта.
    1. Укажите параметры подключения плагина в файле `vkcloudlogs-fluent-bit.conf`:
 
-      <details>
-      <summary>vkcloudlogs-fluent-bit.conf</summary>
+      {cut(vkcloudlogs-fluent-bit.conf)}
 
       В этом примере настраивается логирование данных с `ssh.service` (секция `[INPUT]`) в сервис Cloud Logging (секция `[OUTPUT]`).
 
@@ -70,7 +69,7 @@
          password          <пароль пользователя>
       ```
 
-      </details>
+      {/cut}
 
 1. Включите агент сбора логов `vkcloudlogs-fluent-bit.service`, выполнив команду:
 

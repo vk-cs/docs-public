@@ -84,9 +84,7 @@
 
 1. В секции `Output` кода задайте параметры доставки в выбранный сервис.
 
-   <details>
-
-   <summary>Пример для настройки доставки логов в Elasticsearch</summary>
+   {cut(Пример для настройки доставки логов в Elasticsearch)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -125,11 +123,9 @@
    ```
    Подробно о параметрах для Elasticsearch читайте в [разделе официальной документации](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch).
 
-   </details>
+   {/cut}
 
-   <details>
-
-   <summary>Пример для настройки доставки логов в Loki </summary>
+   {cut(Пример для настройки доставки логов в Loki )}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -149,7 +145,7 @@
 
    Подробно о параметрах для Loki читайте в [официальной документации Fluent Bit](https://docs.fluentbit.io/manual/pipeline/outputs/loki).
 
-   </details>
+   {/cut}
 
 1. (Опционально) Отредактируйте другие параметры кода настройки. Подробнее о параметрах  конфигурационного файла читайте в [официальной документации Fluent Bit](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file). Также на [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml) доступен пример кода настройки Fluent Bit.
 

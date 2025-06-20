@@ -40,8 +40,7 @@ Make sure that:
 
    The command's output should contain the information about Docker repository's GPG key.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    /etc/apt/trusted.gpg
@@ -54,7 +53,7 @@ Make sure that:
    ...
    ```
 
-   </details>
+   {/cut}
 
 1. Add the Docker repository:
 
@@ -76,8 +75,7 @@ Make sure that:
 
    The command's output should contain the information about the installation candidates for the `docker-ce` package.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    docker-ce:
@@ -99,7 +97,7 @@ Make sure that:
        ...
    ```
 
-   </details>
+   {/cut}
 
 1. Install Docker CE:
 
@@ -121,8 +119,7 @@ Make sure that:
 
    The command's output should contain the information that the service is in `active (running)` state.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    ● docker.service - Docker Application Container Engine
@@ -146,7 +143,7 @@ Make sure that:
    Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.360190638Z" level=info msg="API listen on /run/docker.sock"
    ```
 
-   </details>
+   {/cut}
 
 1. Get general information about the installed Docker CE:
 
@@ -154,8 +151,7 @@ Make sure that:
    sudo docker info
    ```
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    Client:
@@ -212,7 +208,7 @@ Make sure that:
    WARNING: No swap limit support
    ```
 
-   </details>
+   {/cut}
 
 1. Run the `hello-world` test container:
 
@@ -222,8 +218,7 @@ Make sure that:
 
    The container will display a greeting message and terminate.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    Hello from Docker!
@@ -248,4 +243,4 @@ Make sure that:
     https://docs.docker.com/get-started/
    ```
 
-   </details>
+   {/cut}

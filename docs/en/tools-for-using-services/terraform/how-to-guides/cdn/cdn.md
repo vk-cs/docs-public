@@ -15,12 +15,11 @@ The example use:
   - [vkcs_cdn_shielding_pops](https://docs.comcloud.xyz/providers/vk-cs/vkcs/latest/docs/data-sources/cdn_shielding_pops)
   - [vkcs_cdn_ssl_certificate](https://docs.comcloud.xyz/providers/vk-cs/vkcs/latest/docs/data-sources/cdn_ssl_certificate)
 
-<details>
-<summary>The full Terraform manifest used in creating the example resources</summary>
+{cut(The full Terraform manifest used in creating the example resources)}
 
 {include(/ru/_includes/_cdn_tf.md)}
 
-</details>
+{/cut}
 
 ## Before you start
 
@@ -144,14 +143,13 @@ Here:
     Do not add the root domain name to the FQDN: an entry like `cdn.example.com` is allowed, but not `cdn.example.com.`. To add additional domains for the CDN, specify them in the `secondary_hostnames` parameter.
 - `origin_group` — identifier of the origin group for the CDN resource. The identifier can be specified in the configuration file, or got from the data source or resource. Required.
 
-    <details>
-    <summary>Examples</summary>
+    {cut(Examples)}
 
      - `origin_group = vkcs_cdn_origin_group.origin_group.id`: the origin group identifier will be obtained after creating the `vkcs_cdn_origin_group` resource.
      - `origin_group = data.vkcs_cdn_origin_group.origin_group.id`: the group identifier will be obtained from the `vkcs_cdn_origin_group` data source.
      - `origin_group = "266524"`: the identifier obtained from the [list of origin groups](/en/networks/cdn/instructions/manage-origin-groups#origin_group_list) in the VK Cloud personal account is specified.
 
-    </details>
+    {/cut}
 
 - `active` — resource availability:
   - `active = true` or parameter not specified — CDN resource goes into the `Active` state, content is delivered to consumers.

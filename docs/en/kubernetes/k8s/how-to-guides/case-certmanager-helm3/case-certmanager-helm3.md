@@ -117,8 +117,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
    - `STATUS`: `deployed`.
    - `NOTES`: `cert-manager v1.11.3 has been deployed successfully!`.
 
-   <details>
-   <summary>Example of the output</summary>
+   {cut(Example of the output)}
 
    ```text
    NAME: cert-manager
@@ -145,7 +144,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
    https://cert-manager.io/docs/usage/ingress/
    ```
 
-   </details>
+   {/cut}
 
 ## 3. Confirm cert-manager operability
 
@@ -155,8 +154,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
    kubectl get pods -n cert-manager
    ```
 
-   <details>
-   <summary>Example of the output</summary>
+   {cut(Example of the output)}
 
    ```text
    NAME                                       READY   STATUS    RESTARTS   AGE
@@ -165,14 +163,13 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
    cert-manager-webhook-...                   1/1     Running   0          3m20s
    ```
 
-   </details>
+   {/cut}
 
 1. Issue a self-signed certificate for testing:
 
    1. Create a manifest:
 
-      <details>
-      <summary>cert-manager-test-resources.yaml</summary>
+      {cut(cert-manager-test-resources.yaml)}
 
       ```yaml
       apiVersion: v1
@@ -201,7 +198,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
           name: test-selfsigned
       ```
 
-      </details>
+      {/cut}
 
       This manifest contains the descriptions of:
 
@@ -229,8 +226,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
       - `CertificateRequest` in the `READY: True` status.
       - `Secret` containing the certificate's data.
 
-      <details>
-      <summary>Example of the output</summary>
+      {cut(Example of the output)}
 
       ```text
       NAME                                     READY   AGE
@@ -245,7 +241,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
       NAME                         TYPE                DATA   AGE
       secret/selfsigned-cert-tls   kubernetes.io/tls   3      39m
       ```
-      </details>
+      {/cut}
 
    1. Verify the certificate's status:
 
@@ -258,8 +254,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
       - Status information (`Status`) will contain the `Certificate is up to date and has not expired` string.
       - The `Events` list will contain the event with the `The certificate has been successfully issued` message.
 
-      <details>
-      <summary>Example of the partial output</summary>
+      {cut(Example of the partial output)}
 
       ```text
       ...
@@ -285,7 +280,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
         Normal  Issuing    3m16s  cert-manager-certificates-issuing          The certificate has been successfully issued
       ```
 
-      </details>
+      {/cut}
 
    If the certificate has been successfully issued, then `cert-manager` is correctly installed and operates normally.
 
@@ -416,8 +411,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
    - `STATUS`: `deployed`.
    - `NOTES`: `cert-manager v1.12.3 has been deployed successfully!`.
 
-   <details>
-   <summary>Example of the output</summary>
+   {cut(Example of the output)}
 
    ```text
    Release "cert-manager" has been upgraded. Happy Helming!
@@ -445,7 +439,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
    https://cert-manager.io/docs/usage/ingress/
    ```
 
-   </details>
+   {/cut}
 
 ## Delete unused resources
 

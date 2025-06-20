@@ -205,8 +205,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
       Additional disks for which the `delete_on_termination`: `False` property is set in the deletion policy can not be disconnected from the VM.
 
-      <details>
-      <summary>Check the disk deletion policy — OpenStack CLI</summary>
+      {cut(Check the disk deletion policy — OpenStack CLI)}
 
       1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -218,7 +217,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
          Find the string `volumes_attached`. It lists the disk IDs and specifies their deletion policy — property `delete_on_termination` (`True` or `False`).
 
-      </details>
+      {/cut}
 
 2. After saving the necessary data, delete the VM.
 

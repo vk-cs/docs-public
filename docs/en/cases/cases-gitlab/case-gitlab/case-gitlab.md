@@ -40,11 +40,10 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
    - If you have a domain, add your VM to it.
    - If you do not have a domain, use, for example, [NoIP](https://www.noip.com/) — one of the services that provides dynamic DNS. For this, install a dynamic update client on the VM. More details in the [NoIP service documentation](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu).
 
-    <details>
-        <summary>What is the purpose of assigning a domain name?</summary>
+    {cut(What is the purpose of assigning a domain name?)}
         You can install GitLab on a VM that does not have a domain name. During installation, self-signed SSL certificates will be automatically issued for connecting to GitLab over HTTPS. However, you will not be able to issue a public SSL certificate for GitLab. As a result, when opening the authorization page of your GitLab server, users will see the warning: “The connection is not secure.”.
 
-    </details>
+    {/cut}
 
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `OA-Ubuntu-docker` VM via SSH.
 1. Check the status of your operating system firewall and disable it if it is active:
@@ -151,8 +150,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 1. Copy the following content into the editor window, replacing `185.185.185.185` with the external IP address of the VM or its fully qualified domain name:
 
-    <details>
-      <summary>Content of the docker-compose.yml file</summary>
+    {cut(Content of the docker-compose.yml file)}
 
       ```yaml
       version: '3.7'
@@ -187,7 +185,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
             - CI_SERVER_URL=https://185.185.185.185/ci
       ```
 
-    </details>
+    {/cut}
 
     <info>
 
@@ -202,8 +200,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
     sudo docker compose up -d
     ```
 
-    <details>
-      <summary>Output upon successful operation</summary>
+    {cut(Output upon successful operation)}
 
       ```txt
       [+] Running 13/13
@@ -225,7 +222,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
       ✔ Container gitlab         Started                                     49.4s
       ✔ Container gitlab-runner  Started                                     49.4s
       ```
-    </details>  
+    {/cut}  
 
 ## 3. Check the status of your GitLab container
 

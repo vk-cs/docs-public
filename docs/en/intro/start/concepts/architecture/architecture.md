@@ -26,8 +26,7 @@ Virtualization, monitoring, container and data storage services can be deployed 
 
 - **Infrastructure as a Service (IaaS)**. IaaS services are based on [OpenStack](https://www.openstack.org/software) and proprietary components. They manage dynamic resource allocation, scaling, fault tolerance. Hosted in the same cloud data centre as PaaS services. IaaS provides basic components: virtual servers, network, data storage, access to dedicated hardware. 
 
-   <details>
-    <summary>List of IaaS services</summary>
+   {cut(List of IaaS services)}
 
   - [Cloud Servers](/en/computing/iaas) — provides virtual machines with the ability to allocate public IPs and unlimited traffic of 1 GBit/s (NVIDIA GPU virtual machines are also available). It is responsible for virtualization and resource integration and uses KVM hypervisor.
   - [Cloud Storage](/en/storage/s3) — provides S3-compatible object storage. The storage workload is shared across all storage nodes. You can deploy storage with a customizable architecture.
@@ -39,12 +38,11 @@ Virtualization, monitoring, container and data storage services can be deployed 
     - [AntiDDoS](/ru/security/firewall-and-protection-ddos#antiddos "change-lang") — filters traffic coming to VK Cloud resources deployed in the project to block DDoS attacks.
     - [WAF](/ru/security/firewall-and-protection-ddos#waf "change-lang") (Web Application Firewall) — configures rules for filtering incoming and outgoing traffic to detect and block network attacks.
 
-  </details>
+  {/cut}
 
 - **Platform as a Service (PaaS)**. Includes open source solutions (Kubernetes) and solutions of technology partners. Built-in monitoring of VK Cloud services and individual entities is supported. The PaaS model is built on top of IaaS. It does not require management of the underlying infrastructure, including hardware and operating systems, and allows you to devote all your efforts to application development and management.  
 
-  <details>
-    <summary>List of PaaS services</summary>
+  {cut(List of PaaS services)}
 
   - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters where you can run services and applications. 
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMSs: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB powered by Greenplum.
@@ -62,14 +60,13 @@ Virtualization, monitoring, container and data storage services can be deployed 
   - [Cloud Trino](/en/data-processing/trino/concepts/about) — SQL engine for processing big data from remote sources.
   - [Marketplace](/en/applications-and-services/marketplace) — allows rapid deployment of web development and administration environments based on virtual machines. Includes such applications as OpenVPN, VK Testers, Redash, Grafana, Milvus, Nexus, Joomla, WordPress and others.
 
-  </details>
+  {/cut}
 
 - **Software as a Service (SaaS)**. Off-the-shelf software available by subscription over the internet. Does not require infrastructure or platform management. An example of a SaaS service in VK Cloud is [1C:Ready Workplace](/en/applications-and-services/1cgrm). The service provides resources and software for deployment of 1C services: "Accounting", "Salary and Personnel Management".
 
 - **Common&Security services** provide a secure user experience and support a role model when using VK Cloud resources.
 
-  <details>
-    <summary>List of Common&Security services</summary>
+  {cut(List of Common&Security services)}
 
   - [Billing](/en/intro/billing) — keeps records of resource usage and cost control, generates financial reports, provides interaction with payment systems when paying for services.
   - [Audit](/en/monitoring-services/event-log) — generates an audit log of user actions in VK Cloud.
@@ -77,7 +74,7 @@ Virtualization, monitoring, container and data storage services can be deployed 
   - Monitoring — provides monitoring of cloud services and user applications.
   - Keystone — provides API-based client authentication, service discovery and distributed multitenant authorization.
 
-  </details>
+  {/cut}
 
 The general scheme of VK Cloud components and services is shown below.
 

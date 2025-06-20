@@ -1,5 +1,4 @@
-<details>
-<summary>Описание полей объектов типа K8sClusterInfo</summary>
+{cut(Описание полей объектов типа K8sClusterInfo)}
 
 [cols="1,1,5", options="header", width=100%]
 |===
@@ -107,10 +106,9 @@
 `None`, если инстанс DockerRegistry еще не создан
 |===
 
-</details>
+{/cut}
 
-<details>
-<summary>Описание полей объектов типа VmDetailInfo</summary>
+{cut(Описание полей объектов типа VmDetailInfo)}
 
 [cols="1,1,5", options="header", width=100%]
 |===
@@ -131,10 +129,9 @@
 |Список подключенных к ВМ дисков
 |===
 
-</details>
+{/cut}
 
-<details>
-<summary>Описание полей объектов типа MLPlatformVolumeIn</summary>
+{cut(Описание полей объектов типа MLPlatformVolumeIn)}
 
 [cols="1,1,5", options="header", width=100%]
 |===
@@ -175,4 +172,4 @@
 `None`, если диск еще не создан
 |===
 
-</details>
+{/cut}

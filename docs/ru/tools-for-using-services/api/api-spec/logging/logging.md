@@ -1,5 +1,4 @@
-<details>
-  <summary markdown="span">Получение эндпоинта, авторизация и аутентификация</summary>
+{cut(Получение эндпоинта, авторизация и аутентификация)}
 
 1. Убедитесь, что на проекте включен сервис Cloud Logging, при необходимости подключите его через [техническую поддержку](/ru/contacts).
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
@@ -22,7 +21,7 @@
 
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
-</details>
+{/cut}
 
 <info>
 

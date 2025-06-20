@@ -9,8 +9,7 @@ REST API [CDN](/ru/networks/cdn) поддерживает управление �
 - очистку кеша CDN-сервера;
 - мониторинг работоспособности CDN-ресурсов.
 
-<details>
-<summary>Получение эндпоинта, авторизация и аутентификация</summary>
+{cut(Получение эндпоинта, авторизация и аутентификация)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. [Включите](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
@@ -31,7 +30,7 @@ curl --location "https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547
 --header "X-Auth-Token: gAAAAABlcqk9GAzdp-XXXX"
 ```
 
-</details>
+{/cut}
 
 <info>
 

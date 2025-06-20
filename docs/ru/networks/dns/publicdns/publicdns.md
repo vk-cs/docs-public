@@ -360,8 +360,7 @@ VK Cloud поддерживает типы ресурсных записей:
 1. Нажмите кнопку **Добавить запись**.
 1. Заполните поля в зависимости от значения **Тип записи**:
 
-   <details>
-    <summary>CNAME</summary>
+   {cut(CNAME)}
 
    - **Имя** (добавляемый псевдоним):
 
@@ -374,9 +373,8 @@ VK Cloud поддерживает типы ресурсных записей:
 
    Пример: необходимо создать CNAME-запись `www.example.com`, указывающую на `example.com`. Для этого в поле **Имя** укажите `www`, а в поле **Значение** — `example.com`.
 
-   </details>
-   <details>
-    <summary>A</summary>
+   {/cut}
+   {cut(A)}
 
    - **Имя**:
 
@@ -387,9 +385,8 @@ VK Cloud поддерживает типы ресурсных записей:
    - **Time to live (TTL)**: время жизни кеша в секундах.
    - **IP-адрес**: IP-адрес (IPv4). Выберите из списка существующих ВМ или укажите новый.
 
-   </details>
-   <details>
-    <summary>MX</summary>
+   {/cut}
+   {cut(MX)}
 
    - **Имя**:
 
@@ -400,9 +397,8 @@ VK Cloud поддерживает типы ресурсных записей:
    - **Time to live (TTL)**: время жизни кеша в секундах.
    - **Значение**: FQDN-адрес почтового сервера. Максимальная длина — 255 символов. Должно состоять из двух или более поддоменов. Максимальная длина поддомена — 63 символа. Допустимы только цифры, латинские буквы, спецсимволы `.` и `-`.
 
-   </details>
-   <details>
-    <summary>AAAA</summary>
+   {/cut}
+   {cut(AAAA)}
 
    - **Имя**:
 
@@ -413,9 +409,8 @@ VK Cloud поддерживает типы ресурсных записей:
    - **Time to live (TTL)**: время жизни кеша в секундах.
    - **IP-адрес**: IP-адрес (IPv6).
 
-   </details>
-   <details>
-    <summary>SRV</summary>
+   {/cut}
+   {cut(SRV)}
 
    - **Имя**:
 
@@ -431,9 +426,8 @@ VK Cloud поддерживает типы ресурсных записей:
    - **Time to live (TTL)**: время жизни кеша в секундах.
    - **Хост**: FQDN-хоста, на котором размещается служба. Максимальная длина — 255 символов. Должно состоять из двух или более поддоменов. Максимальная длина поддомена — 63 символа. Допустимы только цифры, латинские буквы, спецсимволы `.` и `-`.
 
-   </details>
-   <details>
-    <summary>TXT</summary>
+   {/cut}
+   {cut(TXT)}
 
    - **Имя**:
 
@@ -444,9 +438,8 @@ VK Cloud поддерживает типы ресурсных записей:
    - **Time to live (TTL)**: время жизни кеша в секундах.
    - **Значение**: текстовое значение ресурсной записи.
 
-   </details>
-   <details>
-    <summary>NS</summary>
+   {/cut}
+   {cut(NS)}
 
    - **Имя**:
 
@@ -456,7 +449,7 @@ VK Cloud поддерживает типы ресурсных записей:
    - **Time to live (TTL)**: время жизни кеша в секундах.
    - **Значение**: адрес NS-сервера, например, `ns1.mcs.mail.ru` или `ns2.mcs.mail.ru`.
 
-   </details>
+   {/cut}
 
 1. Нажмите кнопку **Добавить запись**.
 
@@ -467,8 +460,7 @@ VK Cloud поддерживает типы ресурсных записей:
 
 Примеры запросов:
 
-<details>
-    <summary>A</summary>
+{cut(A)}
 
 Пример запроса:
 
@@ -499,9 +491,8 @@ content-length: 147
 }
 ```
 
-</details>
-<details>
-    <summary>АААА</summary>
+{/cut}
+{cut(АААА)}
 
 Пример запроса:
 
@@ -533,9 +524,8 @@ content-length: 160
 }
 ```
 
-</details>
-<details>
-    <summary>CNAME</summary>
+{/cut}
+{cut(CNAME)}
 
 Пример запроса:
 
@@ -563,9 +553,8 @@ content-length: 155
 }
 ```
 
-</details>
-<details>
-    <summary>MX</summary>
+{/cut}
+{cut(MX)}
 
 Пример запроса:
 
@@ -594,9 +583,8 @@ content-length: 178
 }
 ```
 
-</details>
-<details>
-    <summary>NS</summary>
+{/cut}
+{cut(NS)}
 
 Пример запроса:
 
@@ -624,9 +612,8 @@ content-length: 161
 }
 ```
 
-</details>
-<details>
-    <summary>SRV</summary>
+{/cut}
+{cut(SRV)}
 
 Пример запроса:
 
@@ -665,9 +652,8 @@ content-length: 204
 }
 ```
 
-</details>
-<details>
-    <summary>TXT</summary>
+{/cut}
+{cut(TXT)}
 
 Пример запроса:
 
@@ -699,7 +685,7 @@ content-length: 167
 }
 ```
 
-</details>
+{/cut}
 </tabpanel>
 </tabs>
 
@@ -724,8 +710,7 @@ content-length: 167
 
 Примеры запросов:
 
-<details>
-    <summary>A</summary>
+{cut(A)}
 
 Пример запроса:
 
@@ -760,9 +745,8 @@ content-length: 298
 ]
 ```
 
-</details>
-<details>
-    <summary>AAAA</summary>
+{/cut}
+{cut(AAAA)}
 
 Пример запроса:
 
@@ -797,9 +781,8 @@ content-length: 324
 ]
 ```
 
-</details>
-<details>
-    <summary>CNAME</summary>
+{/cut}
+{cut(CNAME)}
 
 Пример запроса:
 
@@ -827,9 +810,8 @@ content-length: 162
 ]
 ```
 
-</details>
-<details>
-    <summary>MX</summary>
+{/cut}
+{cut(MX)}
 
 Пример запроса:
 
@@ -858,9 +840,8 @@ content-length: 180
 ]
 ```
 
-</details>
-<details>
-    <summary>NS</summary>
+{/cut}
+{cut(NS)}
 
 Пример запроса:
 
@@ -902,9 +883,8 @@ content-length: 487
 ]
 ```
 
-</details>
-<details>
-    <summary>SRV</summary>
+{/cut}
+{cut(SRV)}
 
 Пример запроса:
 
@@ -935,9 +915,8 @@ content-length: 206
 ]
 ```
 
-</details>
-<details>
-    <summary>TXT</summary>
+{/cut}
+{cut(TXT)}
 
 Пример запроса:
 
@@ -965,7 +944,7 @@ content-length: 169
 ]
 ```
 
-</details>
+{/cut}
 </tabpanel>
 </tabs>
 
@@ -991,8 +970,7 @@ content-length: 169
 
 Примеры запросов:
 
-<details>
-    <summary>А</summary>
+{cut(А)}
 
 Пример запроса:
 
@@ -1018,9 +996,8 @@ content-length: 147
 }
 ```
 
-</details>
-<details>
-    <summary>AAAA</summary>
+{/cut}
+{cut(AAAA)}
 
 Пример запроса:
 
@@ -1046,9 +1023,8 @@ content-length: 160
 }
 ```
 
-</details>
-<details>
-    <summary>CNAME</summary>
+{/cut}
+{cut(CNAME)}
 
 Пример запроса:
 
@@ -1074,9 +1050,8 @@ content-length: 155
 }
 ```
 
-</details>
-<details>
-    <summary>MX</summary>
+{/cut}
+{cut(MX)}
 
 Пример запроса:
 
@@ -1103,9 +1078,8 @@ content-length: 178
 }
 ```
 
-</details>
-<details>
-    <summary>NS</summary>
+{/cut}
+{cut(NS)}
 
 Пример запроса:
 
@@ -1132,9 +1106,8 @@ content-length: 161
 }
 ```
 
-</details>
-<details>
-    <summary>SRV</summary>
+{/cut}
+{cut(SRV)}
 
 Пример запроса:
 
@@ -1163,9 +1136,8 @@ content-length: 204
 }
 ```
 
-</details>
-<details>
-    <summary>TXT</summary>
+{/cut}
+{cut(TXT)}
 
 Пример запроса:
 
@@ -1191,7 +1163,7 @@ content-length: 167
 }
 ```
 
-</details>
+{/cut}
 </tabpanel>
 </tabS>
 
@@ -1218,8 +1190,7 @@ content-length: 167
 
 Примеры запросов:
 
-<details>
-    <summary>А</summary>
+{cut(А)}
 
 Пример запроса:
 
@@ -1246,9 +1217,8 @@ content-length: 147
 }
 ```
 
-</details>
-<details>
-    <summary>AAAA</summary>
+{/cut}
+{cut(AAAA)}
 
 Пример запроса:
 
@@ -1276,9 +1246,8 @@ content-length: 160
 }
 ```
 
-</details>
-<details>
-    <summary>CNAME</summary>
+{/cut}
+{cut(CNAME)}
 
 Пример запроса:
 
@@ -1305,9 +1274,8 @@ content-length: 155
 }
 ```
 
-</details>
-<details>
-    <summary>MX</summary>
+{/cut}
+{cut(MX)}
 
 Пример запроса:
 
@@ -1335,9 +1303,8 @@ content-length: 179
 }
 ```
 
-</details>
-<details>
-    <summary>NS</summary>
+{/cut}
+{cut(NS)}
 
 Пример запроса:
 
@@ -1364,9 +1331,8 @@ content-length: 164
 }
 ```
 
-</details>
-<details>
-    <summary>SRV</summary>
+{/cut}
+{cut(SRV)}
 
 Пример запроса:
 
@@ -1396,9 +1362,8 @@ content-length: 204
 }
 ```
 
-</details>
-<details>
-    <summary>TXT</summary>
+{/cut}
+{cut(TXT)}
 
 Пример запроса:
 
@@ -1425,7 +1390,7 @@ content-length: 171
 }
 ```
 
-</details>
+{/cut}
 </tabpanel>
 </tabs>
 
@@ -1452,8 +1417,7 @@ content-length: 171
 
 Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
-<details>
-    <summary>A</summary>
+{cut(A)}
 
 Пример запроса:
 
@@ -1469,9 +1433,8 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
-<details>
-    <summary>AAAA</summary>
+{/cut}
+{cut(AAAA)}
 
 Пример запроса:
 
@@ -1487,9 +1450,8 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
-<details>
-    <summary>CNAME</summary>
+{/cut}
+{cut(CNAME)}
 
 Пример запроса:
 
@@ -1504,9 +1466,8 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
-<details>
-    <summary>MX</summary>
+{/cut}
+{cut(MX)}
 
 Пример запроса:
 
@@ -1521,9 +1482,8 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
-<details>
-    <summary>NS</summary>
+{/cut}
+{cut(NS)}
 
 Пример запроса:
 
@@ -1538,9 +1498,8 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
-<details>
-    <summary>SRV</summary>
+{/cut}
+{cut(SRV)}
 
 Пример запроса:
 
@@ -1555,9 +1514,8 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
-<details>
-    <summary>TXT</summary>
+{/cut}
+{cut(TXT)}
 
 Пример запроса:
 
@@ -1572,6 +1530,6 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/12f67238
 HTTP/1.1 204 No Content
 ```
 
-</details>
+{/cut}
 </tabpanel>
 </tabs>

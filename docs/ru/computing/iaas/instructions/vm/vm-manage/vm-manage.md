@@ -205,8 +205,7 @@
 
       Дополнительные диски, для которых в политике удаления установлено свойство `delete_on_termination`: `False`, можно не отключать от ВМ.
 
-      <details>
-      <summary>Проверить политику удаления дисков — OpenStack CLI</summary>
+      {cut(Проверить политику удаления дисков — OpenStack CLI)}
 
       1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -218,7 +217,7 @@
 
          Найдите строку `volumes_attached`. В ней перечислены ID дисков и указана политика их удаления — свойство `delete_on_termination` (`True` или `False`).
 
-      </details>
+      {/cut}
 
 2. После сохранения необходимых данных удалите виртуальную машину.
 

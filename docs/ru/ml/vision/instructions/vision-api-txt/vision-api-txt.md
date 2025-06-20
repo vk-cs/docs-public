@@ -139,8 +139,7 @@ curl -X 'POST' \
 }'
 ```
 
-<details>
-  <summary>Пример ответа</summary>
+{cut(Пример ответа)}
 
 ```json
 {
@@ -807,7 +806,7 @@ curl -X 'POST' \
 }
 ```
 
-</details>
+{/cut}
 
 ### На изображении нет текста
 

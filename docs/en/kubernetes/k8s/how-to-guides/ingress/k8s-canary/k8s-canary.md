@@ -22,8 +22,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 1. Create a manifest file `http-svc.ingress` with the following contents:
 
-   <details>
-    <summary>http-svc.ingress</summary>
+   {cut(http-svc.ingress)}
 
    ```yaml
     apiVersion: extensions/v1beta1
@@ -42,7 +41,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
               servicePort: 80
     ```
 
-   </details>
+   {/cut}
 
 1. Apply the manifest in the cluster:
 
@@ -68,8 +67,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 1. Create a Canary version of the Ingress configuration file:
 
-   <details>
-    <summary>http-svc.ingress.canary</summary>
+   {cut(http-svc.ingress.canary)}
 
    ```yaml
    apiVersion: extensions/v1beta1
@@ -95,7 +93,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
    - `nginx.ingress.kubernetes.io/canary: "true"` — Kubernetes will not consider this Ingress as independent and will mark it as Canary, associating it with the main Ingress.
    - `nginx.ingress.kubernetes.io/canary-weight: "10"` — Canary will account for approximately 10% of all requests.
 
-   </details>
+   {/cut}
 
 1. Apply the manifest in the cluster:
 
@@ -115,8 +113,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 1. Make sure that `http-svc` has one IP address specified in the **Endpoints** column.
 1. Check the distribution of requests according to the installed configuration by executing the script `count.rb`:
 
-   <details>
-    <summary>count.rb</summary>
+   {cut(count.rb)}
 
    ```ruby
    counts = Hash.new(0)
@@ -127,7 +124,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
    puts counts
    ```
 
-   </details>
+   {/cut}
 
    ```console
    ruby count.rb

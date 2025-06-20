@@ -199,8 +199,7 @@ To configure the load balancer:
 
             1. Insert the contents below the spoiler in the **Certificate and chain of certificates** field.
 
-               <details>
-               <summary markdown="span">Public part (certificate.pub) of the NGINX self-signed certificate</summary>
+               {cut(Public part (certificate.pub) of the NGINX self-signed certificate)}
 
                ```text
                -----BEGIN CERTIFICATE-----
@@ -225,12 +224,11 @@ To configure the load balancer:
                -----END CERTIFICATE-----
                ```
 
-               </details>
+               {/cut}
 
             1. Insert the contents below the spoiler in the **Private key** field.
 
-               <details>
-               <summary markdown="span">Private part (private.key) of the NGINX self-signed certificate</summary>
+               {cut(Private part (private.key) of the NGINX self-signed certificate)}
 
                ```text
                -----BEGIN RSA PRIVATE KEY-----
@@ -238,7 +236,7 @@ To configure the load balancer:
                -----END RSA PRIVATE KEY-----
                ```
 
-               </details>
+               {/cut}
 
             <info>
 
@@ -264,8 +262,7 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. Create a `cafe-ingress.yaml` manifest file with the following contents:
 
-   <details>
-   <summary markdown="span">cafe-ingress.yaml</summary>
+   {cut(cafe-ingress.yaml)}
 
    ```text
    apiVersion: networking.k8s.io/v1
@@ -294,7 +291,7 @@ The following will demonstrate how to create an Ingress resource that works excl
                  number: 80
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster:
 

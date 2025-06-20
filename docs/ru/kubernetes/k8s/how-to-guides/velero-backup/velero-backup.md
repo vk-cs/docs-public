@@ -18,8 +18,7 @@
 
 1. Создайте файл манифеста:
 
-   <details>
-   <summary markdown="span">coffee.yaml</summary>
+   {cut(coffee.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -98,7 +97,7 @@
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
 1. Создайте нужные ресурсы Kubernetes на основе манифеста:
 

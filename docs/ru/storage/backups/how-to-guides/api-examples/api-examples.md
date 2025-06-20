@@ -43,8 +43,7 @@ curl -X GET \
 https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
-<details>
-   <summary>Пример ответа</summary>
+{cut(Пример ответа)}
 
 ```json
 {
@@ -67,7 +66,7 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 }
 ```
 
-</details>
+{/cut}
 
 ## Создать новый план резервного копирования для ВМ
 
@@ -88,8 +87,7 @@ curl -X GET \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
-<details>
-   <summary>Пример ответа</summary>
+{cut(Пример ответа)}
 
 ```json
 {
@@ -104,7 +102,7 @@ curl -X GET \
 }
 ```
 
-</details>
+{/cut}
 
 ### {heading(2. Создать план резервного копирования)[id=create_plan]}
 
@@ -135,8 +133,7 @@ curl -X POST \
         https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
-<details>
-   <summary>Пример ответа</summary>
+{cut(Пример ответа)}
 
 ```json
 {
@@ -158,7 +155,7 @@ curl -X POST \
 }
 ```
 
-</details>
+{/cut}
 
 ### {heading(3. Создать триггер)[id=create_trigger]}
 
@@ -183,8 +180,7 @@ curl -s -X POST \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/triggers
 ```
 
-<details>
-   <summary>Пример ответа</summary>
+{cut(Пример ответа)}
 
 ```json
 {
@@ -202,4 +198,4 @@ curl -s -X POST \
 }
 ```
 
-</details>
+{/cut}

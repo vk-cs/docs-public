@@ -53,8 +53,7 @@
 
 ### Сигнатура метода и пример использования
 
-<details>
-<summary>Сигнатура метода</summary>
+{cut(Сигнатура метода)}
 
 ```python
 add_spark_connect_jars(cluster_id: str,
@@ -65,10 +64,9 @@ add_spark_connect_jars(cluster_id: str,
                       ) -> mlplatform_client.serializers.spark_proxy.K8sSparkConnectSettings
 ```
 
-</details>
+{/cut}
 
-<details>
-<summary>Пример использования метода</summary>
+{cut(Пример использования метода)}
 
 <err>
 
@@ -131,4 +129,4 @@ add_spark_connect_jars(cluster_id: str,
    spark.jars.packages ai.catboost:catboost-spark_3.4_2.12:1.2.2,com.databricks:spark-csv_2.10:1.3.0
    ```
 
-</details>
+{/cut}

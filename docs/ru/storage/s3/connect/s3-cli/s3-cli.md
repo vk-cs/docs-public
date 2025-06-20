@@ -126,27 +126,25 @@ VK Cloud позволяет использовать интерфейс кома
   ```console
   aws s3 mb s3://<имя_бакета> --endpoint-url <домен>
   ```
-  <details>
-    <summary>Пример результата выполнения команды</summary>
+  {cut(Пример результата выполнения команды)}
 
   ```console
   make_bucket: new-bucket-aws-cli
   ```
 
-  </details>
+  {/cut}
 </tabpanel>
 <tabpanel>
 
   ```console
   s3cmd mb s3://<имя_бакета>
   ```
-  <details>
-    <summary>Пример результата выполнения команды</summary>
+  {cut(Пример результата выполнения команды)}
 
   ```console
   Bucket 's3://my-bucket/' created
   ```
-  </details>
+  {/cut}
 </tabpanel>
 </tabs>
 
@@ -162,26 +160,24 @@ VK Cloud позволяет использовать интерфейс кома
   ```console
   aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url <домен>
   ```
-  <details>
-    <summary>Пример результата выполнения команды</summary>
+  {cut(Пример результата выполнения команды)}
 
   ```console
   upload: ..\Diagrams\example.svg to s3://new-bucket-aws-cli/example.svg
   ```
-  </details>
+  {/cut}
 </tabpanel>
 <tabpanel>
 
   ```console
   s3cmd put <путь_к_локальному_файлу> s3://<имя_бакета>/<имя_объекта>
   ```
-  <details>
-    <summary>Пример результата выполнения команды</summary>
+  {cut(Пример результата выполнения команды)}
 
   ```console
   upload: 'local-file' -> 's3://my-bucket/new-object'
   ```
-  </details>
+  {/cut}
 </tabpanel>
 </tabs>
 
@@ -197,8 +193,7 @@ VK Cloud позволяет использовать интерфейс кома
   ```console
   aws s3 ls s3://<имя_бакета> --endpoint-url <домен>
   ```
-  <details>
-    <summary>Пример результата выполнения команды</summary>
+  {cut(Пример результата выполнения команды)}
 
   ```console
                                   PRE folder/
@@ -208,15 +203,14 @@ VK Cloud позволяет использовать интерфейс кома
         2023-09-27 10:31:02      48314 picture-4.png
         2023-09-27 11:48:56        361 delete-picture.png
   ```
-  </details>
+  {/cut}
 </tabpanel>
 <tabpanel>
 
   ```console
   s3cmd ls s3://<имя_бакета>
   ```
-  <details>
-    <summary>Пример результата выполнения команды</summary>
+  {cut(Пример результата выполнения команды)}
 
   ```console
       2023-10-06 05:37      2713   s3://my-bucket/picture-1.png
@@ -225,6 +219,6 @@ VK Cloud позволяет использовать интерфейс кома
       2023-10-06 05:36     54970   s3://my-bucket/scheme.svg
       2023-10-05 06:58    110207   s3://my-bucket/scheme-picture.png
   ```
-  </details>
+  {/cut}
 </tabpanel>
 </tabs>

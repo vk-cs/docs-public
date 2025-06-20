@@ -49,8 +49,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
-   <details>
-    <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```json
     {
@@ -73,7 +72,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
     }
    ```
 
-   </details>
+   {/cut}
 
 1. Проверьте партиции с помощью команды:
 
@@ -81,8 +80,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9BvfrmffLufWMzwiLWPbU3XkWE3ibSefgQ1GU81ER66EEHfKMZM8xxqRsDkBaN63XXXX
    ```
 
-   <details>
-    <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```json
     {
@@ -112,7 +110,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
     }
    ```
 
-   </details>
+   {/cut}
 
 1. Дождитесь окончания загрузки в объектное хранилище. Вывод команды `aws s3api list-multipart-uploads` не должен содержать данных в блоке `Uploads`.
 
@@ -122,8 +120,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. Проверьте наличие подключенного диска с помощью команды `lsblk`.
 
-   <details>
-    <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```console
    NAME  MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -132,7 +129,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    vdb   252:16  0  600G 0  disk
    ```
 
-   </details>
+   {/cut}
 
 1. Поместите образ на диск с помощью команды:
 

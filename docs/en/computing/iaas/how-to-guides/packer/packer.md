@@ -67,8 +67,7 @@ Import the image according to [instructions](../../instructions/images/images-ma
 
 1. Create the file `altlinux.pkr.hcl`:
 
-    <details>
-        <summary>altlinux.pkr.hcl</summary>
+    {cut(altlinux.pkr.hcl)}
 
       ```hcl
       variable "network_id" {
@@ -124,7 +123,7 @@ Import the image according to [instructions](../../instructions/images/images-ma
 
       </info>
 
-    </details>
+    {/cut}
 
 1. Check the created configuration using the command:
 

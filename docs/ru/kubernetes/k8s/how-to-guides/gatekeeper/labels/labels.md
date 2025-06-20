@@ -35,8 +35,7 @@
 
    1. Создайте манифест ограничения на основе шаблона, созданного ранее:
 
-      <details>
-      <summary markdown="span">constraint.yaml</summary>
+      {cut(constraint.yaml)}
 
       ```yaml
       apiVersion: constraints.gatekeeper.sh/v1beta1
@@ -55,7 +54,7 @@
               allowedRegex: "(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?"
       ```
 
-      </details>
+      {/cut}
 
    1. Создайте ограничение на основе манифеста ограничения:
 
@@ -91,8 +90,7 @@
 
    1. Создайте манифест пространства имен:
 
-      <details>
-      <summary markdown="span">example-allowed.yaml</summary>
+      {cut(example-allowed.yaml)}
 
       ```yaml
       apiVersion: v1
@@ -129,8 +127,7 @@
 
    1. Создайте манифест пространства имен:
 
-      <details>
-      <summary markdown="span">example-disallowed.yaml</summary>
+      {cut(example-disallowed.yaml)}
 
       ```yaml
       apiVersion: v1

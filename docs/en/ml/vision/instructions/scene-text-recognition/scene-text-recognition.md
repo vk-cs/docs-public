@@ -157,8 +157,7 @@ Parameters of `words`:
 
 ## Additional examples
 
-<details>
-    <summary>There is no text on the image</summary>
+{cut(There is no text on the image)}
 
 Request example:
 
@@ -185,10 +184,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-    <summary>Invalid JSON</summary>
+{cut(Invalid JSON)}
 
 Request example:
 
@@ -215,4 +213,4 @@ Response example:
 }
 ```
 
-</details>
+{/cut}

@@ -24,16 +24,14 @@ The AI consultant works only with public documentation and does not have access 
 
     </warn>
 
-    <details>
-    <summary>Examples of questions the bot handles well</summary>
+    {cut(Examples of questions the bot handles well)}
 
     * How to create a virtual machine using terraform?
     * How to set up security groups?
 
-    </details>
+    {/cut}
 
-    <details>
-    <summary>An example of a question that the bot will answer inaccurately</summary>
+    {cut(An example of a question that the bot will answer inaccurately)}
 
     Consider the question: "scaling a cluster". What difficulties will the bot face when answering?
 
@@ -49,16 +47,15 @@ The AI consultant works only with public documentation and does not have access 
         * How to set up automatic scaling of a Kubernetes cluster?
         * For which databases is cluster scaling supported?
 
-    </details>
+    {/cut}
 
 1. To make sure the answer is correct, check the documentation links attached to it. If all links are irrelevant, the answer will not be complete and accurate enough. In this case, try to clarify the question: describe the problem in more detail, specify the subject area, and use more precise terms.
 
-    <details>
-    <summary>Example of an irrelevant answer</summary>
+    {cut(Example of an irrelevant answer)}
 
     You asked about a VM or a database, and the links show that the AI ​consultant only used documentation for the 1C GRM service or Marketplace. Most likely, these are not the sections that are needed to answer your question. Try to clarify the question.
 
-    </details>
+    {/cut}
 
 1. Rate the usefulness of the answer by clicking one of the buttons provided. Your feedback will help improve the AI consultant.
 

@@ -5,8 +5,7 @@
 - binding and unbinding a port to an Anycast IP address
 - adding health checks for bound ports
 
-<details>
-<summary>Obtaining an endpoint, authorization, and authentication</summary>
+{cut(Obtaining an endpoint, authorization, and authentication)}
 
 1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
 1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
@@ -30,7 +29,7 @@ curl --location "https://infra.mail.ru:9696/v2.0/anycastips" \
 --header 'Content-Type: application/json'
 ```
 
-</details>
+{/cut}
 
 <info>
 

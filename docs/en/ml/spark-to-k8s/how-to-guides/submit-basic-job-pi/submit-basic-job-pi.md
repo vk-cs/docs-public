@@ -94,8 +94,7 @@ As an example, an application will be used to calculate an approximate value of 
 
 This application calculates a Monte Carlo approximation of the number π by distributing the computation across the nodes of the Spark cluster.
 
-<details>
-<summary>calculate-pi.py</summary>
+{cut(calculate-pi.py)}
 
 ```python
 import sys
@@ -122,7 +121,7 @@ print("Pi is roughly %f" % (4.0 * count / n))
 spark.stop()
 ```
 
-</details>
+{/cut}
 
 ## 2. Send the Spark job to the cluster
 
@@ -182,14 +181,13 @@ The Cloud ML Platform library itself will adjust the manifest so that the code f
    print(logs)
    ```
 
-   <details>
-   <summary>Example of partial output when the job completes successfully</summary>
+   {cut(Example of partial output when the job completes successfully)}
 
    ```text
    Pi is roughly 3.146360
    ```
 
-   </details>
+   {/cut}
 
 1. (Optional) Get information about events in the cluster. Such information allows you to find out the current status of the cluster and jobs, for example, when investigating issues.
 
