@@ -8,10 +8,10 @@
 |Инструменты
 
 |PULL-модель
-|[Cloud Airflow](../concepts/components#cloud_airflow), [Cloud Spark](../concepts/components#cloud_spark) (пакетная обработка), [Cloud Trino](../concepts/components#cloud_trino)
+|[Cloud Airflow](../concepts/components/airflow), [Cloud Spark](../concepts/components/spark) (пакетная обработка), [Cloud Trino](../concepts/components/trino)
 
 |PUSH-модель
-|[Cloud Spark](../concepts/components#cloud_spark) (потоковая обработка)
+|[Cloud Spark](../concepts/components/spark) (потоковая обработка)
 
 |===
 
@@ -72,6 +72,6 @@
 
 |===
 
-В Data Lakehouse компоненты [Cloud Spark](../concepts/components#cloud_spark) и [Cloud Trino](../concepts/components#cloud_trino) дополняют друг друга: Spark готовит данные, Trino обеспечивает быстрый доступ к ним.
+В Data Lakehouse компоненты [Cloud Spark](../concepts/components/spark) и [Cloud Trino](../concepts/components/trino) дополняют друг друга: Spark готовит данные, Trino обеспечивает быстрый доступ к ним.
 
 {/cut}
