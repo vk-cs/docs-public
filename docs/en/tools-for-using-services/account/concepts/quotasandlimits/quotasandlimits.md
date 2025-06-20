@@ -322,7 +322,9 @@ If the **Use configuration disk** option is disabled or the `--use-config-drive`
 |![](/ru/assets/no.svg "inline")
 
 |Size of one image
-|500 GB
+|100 GB via VK Cloud management console.
+
+ 500 GB using OpenStack CLI
 |This is a hard limit for the Glance service. If you need to download a larger image, use the [instruction](/en/storage/s3/how-to-guides/load-large-image)
 |![](/ru/assets/no.svg "inline")
 
