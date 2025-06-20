@@ -8,9 +8,7 @@ Network sharing is available by default in projects with the Sprut [SDN](../../c
 
 ## {heading(Sharing network)[id=share]}
 
-<details>
-
-<summary>Who can share a network with other projects?</summary>
+{cut(Who can share a network with other projects?)}
 
 Users with the following [roles](/ru/tools-for-using-services/account/concepts/rolesandpermissions) can share a network with other projects:
 
@@ -23,7 +21,7 @@ Users with the following [roles](/ru/tools-for-using-services/account/concepts/r
 - internal network administrator
 - Kubernetes administrator
 
-</details>
+{/cut}
 
 To share a network with other projects:
 

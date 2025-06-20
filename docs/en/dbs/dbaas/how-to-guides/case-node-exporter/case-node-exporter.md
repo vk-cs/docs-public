@@ -117,8 +117,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
    The output of the command must contain the `active` status.
 
-   <details>
-    <summary>An example of the expected output</summary>
+   {cut(An example of the expected output)}
 
     ```console
     prometheus.service - Prometheus
@@ -142,7 +141,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
     Nov 20 16:11:25 centos-8-5-prometheus.novalocal prometheus[1065]: ts=2023-11-20T16:11:25.327Z caller=manager.go:995 level=info component="rule manager" msg="Starting rule manager..."
     ```
 
-   </details>
+   {/cut}
 
 1. Wait a few minutes for the data to accumulate.
 1. Go to the address `http://87.239.239.239:9090`.
@@ -166,8 +165,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. Create a test load on the `Redis-5` VM in a way that is convenient for you.
 
-   <details>
-    <summary>Example with the sysbench utility</summary>
+   {cut(Example with the sysbench utility)}
 
    ```console
    sysbench cpu  --cpu-max-prime=2000000 --time=60 run
@@ -177,7 +175,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    sysbench mutex --time=60 run
    ```
 
-   </details>
+   {/cut}
 
    <warn>
 

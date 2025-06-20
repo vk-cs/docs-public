@@ -2,8 +2,7 @@
 
 1. [Авторизуйтесь](../../ml-platform-library/authz) в библиотеке Cloud ML Platform.
 
-    <details>
-    <summary>Пример скрипта Python</summary>
+    {cut(Пример скрипта Python)}
 
     ```python
     from mlplatform_client import MLPlatform
@@ -12,7 +11,7 @@
     mlp = MLPlatform(REFRESH_TOKEN)
     ```
 
-    </details>
+    {/cut}
 
 1. Создайте манифест `job_manifest` с описанием задания одним из способов:
 
@@ -30,8 +29,7 @@
 1. (Опционально) [Предоставьте](../../instructions/buckets) кластеру Cloud Spark доступ к дополнительно созданным бакетам.
 1. (Опционально) [Загрузите](/ru/storage/s3/instructions/objects/upload-object) в бакеты файлы и зависимости, необходимые для выполнения задания Spark.
 
-    <details>
-    <summary>Пример скрипта Python</summary>
+    {cut(Пример скрипта Python)}
 
     ```python
     job_manifest.set_jars([f"s3a://<ИМЯ_БАКЕТА>/spark-files/test.jar"])
@@ -39,14 +37,13 @@
     job_manifest.add_pyfiles([f"s3a://<ИМЯ_БАКЕТА>/spark-files/python_file.py"])
     ```
 
-    </details>
+    {/cut}
 
 1. (Опционально) Настройте манифест `job_manifest` в соответствии с требованиями задания:
 
     - Создайте переменные.
 
-      <details>
-      <summary>Пример скрипта Python</summary>
+      {cut(Пример скрипта Python)}
 
       ```python
       #Получить список кластеров Cloud Spark
@@ -69,31 +66,29 @@
 
       ```
 
-      </details>
+      {/cut}
 
     - Измените настройки исполнителя Spark.
 
-      <details>
-      <summary>Пример скрипта Python</summary>
+      {cut(Пример скрипта Python)}
 
       ```python
       job_manifest.set_executor_settings(
         {"instances": 2, "cores": 2, "memory": "1024m"})
       ```
 
-      </details>
+      {/cut}
 
     - Измените настройки драйвера Spark.
 
-      <details>
-      <summary>Пример скрипта Python</summary>
+      {cut(Пример скрипта Python)}
 
       ```python
       job_manifest.set_driver_settings(
         {"coreLimit": "100m", "cores": 2, "memory": "1024m"})
       ```
 
-      </details>
+      {/cut}
 
     Больше примеров настройки манифеста приведено в описании метода [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#get_default_manifest_additional_info).
 

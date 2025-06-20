@@ -179,8 +179,7 @@ variable "db_user_password" {
 }
 ```
 
-<details>
-  <summary>How do I set a value for a variable with the sensitive = true parameter?</summary>
+{cut(How do I set a value for a variable with the sensitive = true parameter?)}
 
 Use one of the ways to set a password:
 
@@ -230,7 +229,7 @@ If you do not set the password value, Terraform will require you to enter it in 
 
 </info>
 
-</details>
+{/cut}
 
 A configuration file with the addition of a database and a user:
 

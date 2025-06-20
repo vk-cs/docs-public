@@ -2,17 +2,15 @@
 
 jq должна быть предварительно установлена в вашей системе.
 
-<details>
-  <summary>Пример неотформатированного JSON</summary>
+{cut(Пример неотформатированного JSON)}
 
   ```json
   {"status":200,"body":{"object_labels":[{"status":0,"name":"file","labels":[{"eng":"Close-up","rus":"Крупный план","eng_categories":[],"rus_categories":[],"prob":0.4843,"coord":[165,0,834,477]},{"eng":"Macro Photography","rus":"Макросъемка","eng_categories":[],"rus_categories":[],"prob":0.5021,"coord":[165,0,834,477]},{"eng":"Plant","rus":"Растение","eng_categories":["Plants"],"rus_categories":["Растения"],"prob":0.827,"coord":[165,0,834,668]},{"eng":"Leaf","rus":"Листок","eng_categories":[],"rus_categories":[],"prob":0.6623,"coord":[165,0,834,573]}]}],"scene_labels":[{"status":0,"name":"file","labels":[{"eng":"Rice Paddy","rus":"Рисовое поле","eng_categories":[],"rus_categories":[],"prob":0.6255}]}]},"htmlencoded":false,"last_modified":0}
   ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>Пример JSON с использованием jq</summary>
+{cut(Пример JSON с использованием jq)}
 
   ```json
       {
@@ -103,7 +101,7 @@ jq должна быть предварительно установлена в 
       }
   ```
 
-</details>
+{/cut}
 
 ## Установка
 
@@ -175,8 +173,7 @@ yum install jq -y
 curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans" | jq "."
 ```
 
-<details>
-  <summary>Результат выполнения команды</summary>
+{cut(Результат выполнения команды)}
 
   ```json
       {
@@ -233,7 +230,7 @@ curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mc
       }
   ```
 
-</details>
+{/cut}
 
 <info>
 

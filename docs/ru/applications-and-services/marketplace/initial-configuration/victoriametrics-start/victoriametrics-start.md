@@ -11,8 +11,7 @@
 1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещены один или несколько серверов с развернутым сервисом, отключите опцию **Приватный DNS**.
 1. [Разверните](../../instructions/pr-instance-add) сервис в проекте, выбрав подходящий тарифный план (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
-   <details>
-    <summary>Подробнее о конфигурациях для тарифных планов</summary>
+   {cut(Подробнее о конфигурациях для тарифных планов)}
 
    <tabs>
    <tablist>
@@ -59,7 +58,7 @@
    </tabpanel>
    </tabs>
 
-   </details>
+   {/cut}
 
    <tabs>
    <tablist>

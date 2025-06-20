@@ -22,8 +22,7 @@
 
 1. Создайте файл манифеста `http-svc.ingress` со следующим содержимым:
 
-   <details>
-    <summary>http-svc.ingress</summary>
+   {cut(http-svc.ingress)}
 
    ```yaml
     apiVersion: extensions/v1beta1
@@ -42,7 +41,7 @@
               servicePort: 80
     ```
 
-   </details>
+   {/cut}
 
 1. Примените манифест в кластере:
 
@@ -68,8 +67,7 @@
 
 1. Создайте Canary-версию файла конфигурации Ingress:
 
-   <details>
-    <summary>http-svc.ingress.canary</summary>
+   {cut(http-svc.ingress.canary)}
 
    ```yaml
    apiVersion: extensions/v1beta1
@@ -95,7 +93,7 @@
    - `nginx.ingress.kubernetes.io/canary: "true"` — Kubernetes не будет рассматривать этот Ingress как самостоятельный и пометит его как Canary, связав с основным Ingress.
    - `nginx.ingress.kubernetes.io/canary-weight: "10"` — на Canary будет приходиться примерно 10% всех запросов.
 
-   </details>
+   {/cut}
 
 1. Примените манифест в кластере:
 
@@ -115,8 +113,7 @@
 1. Убедитесь, что у `http-svc` указан один IP-адрес в столбце **Endpoints**.
 1. Проверьте распределение запросов в соответствии с установленной конфигурацией, выполнив скрипт `count.rb`:
 
-   <details>
-    <summary>count.rb</summary>
+   {cut(count.rb)}
 
    ```ruby
    counts = Hash.new(0)
@@ -127,7 +124,7 @@
    puts counts
    ```
 
-   </details>
+   {/cut}
 
    ```console
    ruby count.rb

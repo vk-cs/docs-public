@@ -15,12 +15,11 @@
   - [vkcs_cdn_shielding_pops](https://docs.comcloud.xyz/providers/vk-cs/vkcs/latest/docs/data-sources/cdn_shielding_pops);
   - [vkcs_cdn_ssl_certificate](https://docs.comcloud.xyz/providers/vk-cs/vkcs/latest/docs/data-sources/cdn_ssl_certificate).
 
-<details>
-<summary>Полный манифест Terraform, используемый в создании ресурсов примера</summary>
+{cut(Полный манифест Terraform, используемый в создании ресурсов примера)}
 
 {include(/ru/_includes/_cdn_tf.md)}
 
-</details>
+{/cut}
 
 ## Подготовительные шаги
 
@@ -144,14 +143,13 @@
     Не добавляйте к FQDN корневое доменное имя: допустима запись вида `cdn.example.com`, но не `cdn.example.com.`. Чтобы добавить дополнительные домены для CDN, укажите их в параметре `secondary_hostnames`.
 - `origin_group` — идентификатор группы источников для CDN-ресурса. Идентификатор можно указать в конфигурационном файле, получить из источника данных или ресурса. Обязательный параметр.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
     - `origin_group = vkcs_cdn_origin_group.origin_group.id`: идентификатор группы источников будет получен после создания ресурса `vkcs_cdn_origin_group`.
     - `origin_group = data.vkcs_cdn_origin_group.origin_group.id`: идентификатор группы будет получен из источника данных `vkcs_cdn_origin_group`.
     - `origin_group = "266524"`: указан идентификатор, полученный из [списка групп источников](/ru/networks/cdn/instructions/manage-origin-groups#origin_group_list) в личном кабинете VK Cloud.
 
-  </details>
+  {/cut}
 
 - `active` — доступность ресурса:
   - `active = true` или параметр не указан — CDN-ресурс переходит в состояние `Активен`, контент доставляется потребителям;

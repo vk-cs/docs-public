@@ -156,8 +156,7 @@
 
    1. Создайте файл манифеста:
 
-      <details>
-      <summary>example-token.yaml</summary>
+      {cut(example-token.yaml)}
 
       <!-- prettier-ignore -->
       ```yaml
@@ -171,7 +170,7 @@
           kubernetes.io/service-account.name: example-sa
       ```
 
-      </details>
+      {/cut}
 
       Пояснения к полям манифеста:
 
@@ -220,8 +219,7 @@
 
    В выводе должно содержаться указание на секрет в поле `Tokens`.
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    Name:                example-sa
@@ -234,7 +232,7 @@
    Events:              <none>
    ```
 
-   </details>
+   {/cut}
 
 1. Получите значение токена.
 
@@ -293,8 +291,7 @@
 
    Будет выведено содержимое kubeconfig в сжатом виде: значения некоторых полей будут опущены.
 
-   <details>
-   <summary>Упрощенный пример kubeconfig</summary>
+   {cut(Упрощенный пример kubeconfig)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -316,7 +313,7 @@
          token: <данные для аутентификации>
    ```
 
-   </details>
+   {/cut}
 
    Kubeconfig содержит в себе все параметры, необходимые для работы с кластером:
 
@@ -476,8 +473,7 @@
 
    Этот kubeconfig не должен содержать других пользователей, кроме добавленного ранее `example-sa`. Единственный контекст должен использовать этого пользователя.
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -501,7 +497,7 @@
        token: REDACTED
    ```
 
-   </details>
+   {/cut}
 
 ## 5. Проверьте работу созданного kubeconfig
 
@@ -513,15 +509,14 @@
    kubectl --kubeconfig $SA_KUBECONFIG cluster-info
    ```
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    Kubernetes control plane is running at https://203.0.113.123:6443
    CoreDNS is running at https://203.0.113.123:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
    ```
 
-   </details>
+   {/cut}
 
 1. Получите список основных ресурсов в пространстве имен `default`:
 
@@ -529,15 +524,14 @@
    kubectl --kubeconfig $SA_KUBECONFIG get all -n default
    ```
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
    service/kubernetes   ClusterIP   10.254.0.1   <none>        443/TCP   3d1h
    ```
 
-   </details>
+   {/cut}
 
 Если при выполнении команд пароль не был запрошен, то полученный kubeconfig можно использовать в комбинации с автоматизированными инструментами для доступа к кластеру Cloud Containers.
 

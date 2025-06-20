@@ -57,8 +57,7 @@
 
 Вы можете протестировать однопоточное межсетевое взаимодействие с помощью готового скрипта `iperf3_single` от VK Cloud.
 
-<details>
-<summary>iperf3_single.sh</summary>
+{cut(iperf3_single.sh)}
 
 ```console
 #!/bin/bash
@@ -108,7 +107,7 @@ echo "#" >> "$output_file"
 echo "#" >> "$output_file"
 done
 ```
-</details>
+{/cut}
 
 1. Протестируйте взаимодействие внутри одной зоны. Для этого на тестовой ВМ запустите скрипт `iperf3_single`, заменив следующие параметры в коде скрипта:
 
@@ -125,8 +124,7 @@ done
 
 Вы можете протестировать многопоточное межсетевое взаимодействие с помощью готового скрипта `iperf3_multi` от VK Cloud.
 
-<details>
-<summary>iperf3_multi.sh</summary>
+{cut(iperf3_multi.sh)}
 
 ```console
 #!/bin/bash
@@ -176,7 +174,7 @@ echo "#" >> "$output_file"
 echo "#" >> "$output_file"
 done
 ```
-</details>
+{/cut}
 
 1. Протестируйте взаимодействие внутри одной зоны. Для этого на тестовой ВМ запустите скрипт `iperf3_multi`, заменив следующие параметры в коде скрипта:
 

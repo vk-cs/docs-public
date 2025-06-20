@@ -268,8 +268,7 @@ For more information abount using the extension, see [Using the PostGIS extensio
 
   The default value: no extension selected.
 
-  <details>
-  <summary>Additional extensions available to install</summary>
+  {cut(Additional extensions available to install)}
 
   <!-- prettier-ignore -->
   | Name    |  Description |
@@ -280,7 +279,7 @@ For more information abount using the extension, see [Using the PostGIS extensio
   | [postgis_topology](https://postgis.net/docs/Topology.html)                                  | Implements types and functions that are used to manage topological objects |
   | [pgrouting](http://pgrouting.org/)                                                          | Adds geospatial routing functionality |
 
-  </details>
+  {/cut}
 
 </tabpanel>
 </tabs>
@@ -305,8 +304,7 @@ A set of popular PostgreSQL extensions that require no additional configuration.
 
   The default value: all extensions are selected.
 
-  <details>
-  <summary>Installable extensions</summary>
+  {cut(Installable extensions)}
 
   <!-- prettier-ignore -->
   | Name    |  Description |
@@ -340,7 +338,7 @@ A set of popular PostgreSQL extensions that require no additional configuration.
   | [uuid-ossp](https://www.postgresql.org/docs/current/uuid-ossp.html)                     | Provides functions to generate universally unique identifiers (UUIDs) using the standard algorithms |
   | [xml2](https://www.postgresql.org/docs/current/xml2.html)                               | Provides functions to work with XML. It is possible to execute XPath queries and do XSLT transformations |
 
-  </details>
+  {/cut}
 
 </tabpanel>
 </tabs>

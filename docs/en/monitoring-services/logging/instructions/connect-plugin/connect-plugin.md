@@ -47,8 +47,7 @@
    1. [Find out](../../concepts/logging-plugin#auth_parameters) the authorization parameters for your project.
    1. Specify the connection parameters for the plugin in the `vkcloudlogs-fluent-bit.conf` file:
 
-      <details>
-      <summary>vkcloudlogs-fluent-bit.conf</summary>
+      {cut(vkcloudlogs-fluent-bit.conf)}
 
       This example configures data logging from `ssh.service` (section `[INPUT]`) to the Cloud Logging service (section `[OUTPUT]`).
 
@@ -70,7 +69,7 @@
          password          <user password>
       ```
 
-      </details>
+      {/cut}
 
 1. Activate the `vkcloudlogs-fluent-bit.service` log collection agent by running the commands:
 

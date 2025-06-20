@@ -5,8 +5,7 @@ REST API [Anycast](/ru/networks/vnet/instructions/ip/anycast-ip) поддерж�
 - привязка и отвязка порта к Anycast IP-адресу;
 - добавление проверки работоспособности связанных портов.
 
-<details>
-<summary>Получение эндпоинта, авторизация и аутентификация</summary>
+{cut(Получение эндпоинта, авторизация и аутентификация)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. [Включите](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
@@ -30,7 +29,7 @@ curl --location "https://infra.mail.ru:9696/v2.0/anycastips" \
 --header 'Content-Type: application/json'
 ```
 
-</details>
+{/cut}
 
 <info>
 

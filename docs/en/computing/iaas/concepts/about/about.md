@@ -85,8 +85,7 @@ To add custom VM configurations to the list, including VMs with more than 16 vCP
 
 Select the **Archive VM types** category to find the old VM configuration templates. The server for VMs of the old configuration is selected randomly: Intel Cascade Lake or Intel Ice Lake, but [charged](../../tariffication) at the price of Intel Ice Lake. If the server is unavailable (for example, during maintenance work), these VMs can move to a server of a different generation.
 
-<details>
-   <summary> Archived VM types</summary>
+{cut( Archived VM types)}
 
 | Flavor's name | Configuration Parameters | Description |
 | --- | --- | --- |
@@ -96,7 +95,7 @@ Select the **Archive VM types** category to find the old VM configuration templa
 | Heavy | Up to 16 vCPU <br/> Up to 64 Gb RAM | Customized configurations for creating high-performance VMs |
 | Custom | Unlimited | Individual configurations |
 
-</details>
+{/cut}
 
 To create additional VM templates (for example, with a large amount of resources) [contact technical support](mailto:support@mcs.mail.ru). The cost of a VM in this case is calculated individually for each request.
 
@@ -196,8 +195,7 @@ The VK Cloud platform supports various types of disks:
 According to the ISCSI protocol, the disk wait time in case of loss of availability is 300 sec. During this time, the VM operating system will switch to the backup storage server. However, conduct additional testing with disk failure emulation if you will use the disk to host highly loaded DBMS
 |===
 
-<details>
-   <summary>Information about outdated resource names</summary>
+{cut(Information about outdated resource names)}
 
 Some names of disk types and availability zones are outdated, but are displayed in the output of commands.
 
@@ -219,7 +217,7 @@ Unavailable disk types:
 | Network HDD with geo-replication | ceph   | nova    |
 | Network SSD with geo-replication | ssd    | nova    |
 
-</details>
+{/cut}
 
 ## Availability zone
 
@@ -265,8 +263,7 @@ In operating systems of all VK Cloud images (except OS Bitrix), the `root` accou
 
 You can see the default account name in the list below or in the [password setup](../../instructions/vm/vm-manage#password) window.
 
-<details>
-<summary>List of default accounts for different OS</summary>
+{cut(List of default accounts for different OS)}
 
 | Operating system | Username |
 | --- | --- |
@@ -283,7 +280,7 @@ You can see the default account name in the list below or in the [password setup
 | RED OS | redos |
 | Windows | Admin |
 
-</details>
+{/cut}
 
 ## Image
 

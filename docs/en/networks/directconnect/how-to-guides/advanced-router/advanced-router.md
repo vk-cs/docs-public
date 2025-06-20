@@ -112,8 +112,7 @@ To add the interfaces:
 
 1. (Optional) If the router supports BFD, configure the BFD protocol.
 
-<details>
-    <summary>Example setup for MikroTik</summary>
+{cut(Example setup for MikroTik)}
 
    1. To add network interfaces, connect to MikroTik via SSH and run the command:
 
@@ -151,7 +150,7 @@ To add the interfaces:
        add disabled=no interfaces=ether1
       ```
 
-</details>
+{/cut}
 
 ## 4. Configure BGP neighbors for the advanced router
 
@@ -204,8 +203,7 @@ Both announcements must have green markers.
 1. Check that a connection with the BGP neighbor is established. If the BGP connection is established, the response must have `keepalive-time` and `uptime` values more than zero.
 1. View all available BGP routes. The list of routes should include the networks `172.17.0.0/24` and `172.20.2.0/24`.
 
-<details>
- <summary>Example setup for MikroTik</summary>
+{cut(Example setup for MikroTik)}
 
 1. Connect to MikroTik via SSH and run the command::
 
@@ -261,7 +259,7 @@ Both announcements must have green markers.
    D b 172.20.2.0/24  172.20.2.215        20
    ```
 
-</details>
+{/cut}
 
 ## 6. Configure static routes between networks
 

@@ -71,8 +71,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    aws s3 presign s3://<bucket name>/<object name> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
-   <details>
-   <summary>Example</summary>
+   {cut(Example)}
 
    Let's the object `cat_image_private_acl.png` was uploaded to the bucket `my-cloud-bucket`.
 
@@ -82,7 +81,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
-   </details>
+   {/cut}
 
 1. Save the generated temporary link.
 

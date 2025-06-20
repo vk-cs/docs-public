@@ -44,8 +44,7 @@
 
 Это приложение вычисляет приближенное значение числа π методом Монте-Карло, распределяя вычисления по узлам кластера Spark.
 
-<details>
-<summary>calculate-pi.py</summary>
+{cut(calculate-pi.py)}
 
 ```python
 import sys
@@ -72,7 +71,7 @@ print("Pi is roughly %f" % (4.0 * count / n))
 spark.stop()
 ```
 
-</details>
+{/cut}
 
 ## 2. Отправьте задание Spark на кластер
 
@@ -132,14 +131,13 @@ spark_job_info = mlp.spark_submit_job(CLUSTER_ID, spark_job_manifest, PY_FILE)
    print(logs)
    ```
 
-   <details>
-   <summary>Пример части вывода при успешном выполнении задания</summary>
+   {cut(Пример части вывода при успешном выполнении задания)}
 
    ```text
    Pi is roughly 3.146360
    ```
 
-   </details>
+   {/cut}
 
 1. (Опционально) Получите информацию о событиях в кластере. Она позволяет узнать текущее состояние кластера и заданий, например при поиске проблем.
 

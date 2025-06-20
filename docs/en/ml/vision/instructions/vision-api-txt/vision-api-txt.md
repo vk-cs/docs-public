@@ -147,8 +147,7 @@ curl -X 'POST' \
 }'
 ```
 
-<details>
-  <summary>Response example</summary>
+{cut(Response example)}
 
 ```json
 {
@@ -815,7 +814,7 @@ curl -X 'POST' \
 }
 ```
 
-</details>
+{/cut}
 
 ### There is no text on the image
 

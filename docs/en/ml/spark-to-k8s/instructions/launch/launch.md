@@ -2,8 +2,7 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
 
 1. [Authenticate](/ru/ml/spark-to-k8s/ml-platform-library/authz "change-lang") in the Cloud ML Platform library.
 
-    <details>
-    <summary>Python script example</summary>
+    {cut(Python script example)}
 
     ```python
     from mlplatform_client import MLPlatform
@@ -12,7 +11,7 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     mlp = MLPlatform(REFRESH_TOKEN)
     ```
 
-    </details>
+    {/cut}
 
 1. Create a `job_manifest` manifest which describes the job using one of the following methods:
 
@@ -30,8 +29,7 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
 1. (Optional) [Grant](/ru/ml/spark-to-k8s/instructions/buckets "change-lang") the Cloud Spark cluster access to the additionally created buckets.
 1. (Optional) [Upload](/en/storage/s3/instructions/objects/upload-object) the necessary files and dependencies for the Spark job execution into the buckets.
 
-    <details>
-    <summary>Python script example</summary>
+    {cut(Python script example)}
 
     ```python
     job_manifest.set_jars([f"s3a://<BUCKET_NAME>/spark-files/test.jar"])
@@ -39,14 +37,13 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     job_manifest.add_pyfiles([f"s3a://<BUCKET_NAME>/spark-files/python_file.py"])
     ```
 
-    </details>
+    {/cut}
 
 1. (Optional) Configure the `job_manifest` manifest according to the job requirements:
 
     - Create variables.
 
-      <details>
-      <summary>Python script example</summary>
+      {cut(Python script example)}
 
       ```python
       # Get a list of Cloud Spark clusters
@@ -69,31 +66,29 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
 
       ```
 
-      </details>
+      {/cut}
 
     - Modify Spark executor settings.
 
-      <details>
-      <summary>Python script example</summary>
+      {cut(Python script example)}
 
       ```python
       job_manifest.set_executor_settings(
         {"instances": 2, "cores": 2, "memory": "1024m"})
       ```
 
-      </details>
+      {/cut}
 
     - Modify Spark driver settings.
 
-      <details>
-      <summary>Python script example</summary>
+      {cut(Python script example)}
 
       ```python
       job_manifest.set_driver_settings(
         {"coreLimit": "100m", "cores": 2, "memory": "1024m"})
       ```
 
-      </details>
+      {/cut}
 
     More examples of manifest configuration are provided in the description of the [get_default_manifest](/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#get_default_manifest_additional_info "change-lang") method.
 

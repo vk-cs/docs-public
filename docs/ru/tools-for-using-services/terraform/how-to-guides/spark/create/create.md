@@ -73,29 +73,26 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
 
 - `network_id` — идентификатор сети, в которой будет размещен кластер. Кластер может быть размещен в существующей сети или в новой. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `network_id = vkcs_networking_network.default.id`: кластер будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: кластер будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `flavor_id` — идентификатор типа ВМ. Идентификатор можно прописать в манифесте или получить из источника данных.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `registry_id` — идентификатор реестра Docker, образы из которого будут использоваться при запуске заданий Spark. Можно создать новый реестр или использовать существующий.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: будет создан новый реестр Docker и размещен на выделенной виртуальной машине K8S Docker Registry, которая не входит в состав кластера и тарифицируется отдельно. Идентификатор будет получен после создания ресурса `vkcs_mlplatform_k8s_registry`. Ресурс будет сформирован далее.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего реестра K8S Docker Registry. Чтобы узнать идентификатор инстанса K8S Docker Registry:
@@ -106,17 +103,16 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
     1. Перейдите на вкладку **Инстансы**.
     1. Нажмите на название нужного инстанса.
   
-  </details>
+  {/cut}
 
 - `ip_pool` — идентификатор внешней сети для пула IP-адресов кластера.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`, который будет указан в описании сетевой инфраструктуры кластера.
   - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `spark_configuration` — перечень свойств (properties), отвечающих за [конфигурацию Spark](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
 
@@ -149,34 +145,31 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
 
 - `flavor_id` — идентификатор типа ВМ. Идентификатор можно прописать в манифесте или получить из источника данных.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `network_id` — идентификатор сети, в которой будет размещен инстанс. Инстанс может быть размещен в существующей сети или в новой. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `ip_pool` — идентификатор внешней сети для пула IP-адресов кластера.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`, который будет указан в описании сетевой инфраструктуры кластера.
   - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 ## 3. (Опционально) Создайте файл с описанием источника данных для типа ВМ
 

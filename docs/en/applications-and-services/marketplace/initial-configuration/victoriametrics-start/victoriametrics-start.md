@@ -11,8 +11,7 @@ To deploy the VictoriaMetrics service in a project:
 1. In the [settings of the subnet](/en/networks/vnet/instructions/net#editing_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
-   <details>
-    <summary>Learn more about configurations for tariff plans</summary>
+   {cut(Learn more about configurations for tariff plans)}
 
    <tabs>
    <tablist>
@@ -59,7 +58,7 @@ To deploy the VictoriaMetrics service in a project:
    </tabpanel>
    </tabs>
 
-   </details>
+   {/cut}
 
    <tabs>
    <tablist>

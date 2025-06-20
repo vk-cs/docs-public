@@ -88,8 +88,7 @@ To connect a persistent volume using static PVC:
 
     For the PersistentVolume resource, specify the ID of the created disk in the `spec.cinder.volumeID` parameter.
 
-   <details>
-   <summary markdown="span">tea.yaml</summary>
+   {cut(tea.yaml)}
 
    ```yaml
    ---
@@ -175,7 +174,7 @@ To connect a persistent volume using static PVC:
        app: tea
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
@@ -204,8 +203,7 @@ To connect a persistent volume using dynamic PVC:
 
 1. Create a manifest for the `coffee` application.
 
-   <details>
-   <summary markdown="span">coffee.yaml</summary>
+   {cut(coffee.yaml)}
 
    ```yaml
    ---
@@ -276,7 +274,7 @@ To connect a persistent volume using dynamic PVC:
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
@@ -315,8 +313,7 @@ To connect a persistent volume to multiple pods using dynamic PVC:
 
 1. Create a manifest for the `juice` application.
 
-   <details>
-   <summary markdown="span">juice.yaml</summary>
+   {cut(juice.yaml)}
 
    ```yaml
    ---
@@ -410,7 +407,7 @@ To connect a persistent volume to multiple pods using dynamic PVC:
        statefulset.kubernetes.io/pod-name: juice-1
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
@@ -479,8 +476,7 @@ To connect an NFS persistent volume using a static PVC:
    - IP address from the **Connection point** of the file storage as the value of the `spec.nfs.server` parameter.
    - Data after the IP address (`/shares/...`) as a value of the `spec.nfs.path` parameter.
 
-   <details>
-   <summary markdown="span">milkshake.yaml</summary>
+   {cut(milkshake.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -617,7 +613,7 @@ To connect an NFS persistent volume using a static PVC:
        statefulset.kubernetes.io/pod-name: milkshake-1
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster to create all necessary resources:
 
@@ -632,8 +628,7 @@ To connect an NFS persistent volume using a static PVC:
 
 1. Create a manifest for the Ingress resource through which application requests will go.
 
-   <details>
-   <summary markdown="span">cafe-ingress.yaml</summary>
+   {cut(cafe-ingress.yaml)}
 
    ```yaml
    ---
@@ -705,7 +700,7 @@ To connect an NFS persistent volume using a static PVC:
                  number: 80
    ```
 
-   </details>
+   {/cut}
 
 1. Apply this manifest to the cluster to create all necessary resources:
 

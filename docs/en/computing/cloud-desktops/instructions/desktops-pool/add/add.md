@@ -69,8 +69,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
     - **Disk Type**: choose one of the values — `HDD`, `SSD` or `High-IOPS SSD`.
     - **Image**: select an image to create the VMs from the list of available images.
 
-      <details>
-      <summary>List of available images</summary>
+      {cut(List of available images)}
 
       - `Windows Server 2019 Standard (ru)`
       - `Windows Server 2019 Standard (en)`
@@ -79,7 +78,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
       - `Red OS 7.3 Стандарт (Cloud Desktop)`
       - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
 
-      </details>
+      {/cut}
 
       If necessary, click **Upload your image** and upload the [previously prepared](/en/computing/cloud-desktops/concepts/desktop-image) and [checked](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
 

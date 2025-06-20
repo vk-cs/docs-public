@@ -3,8 +3,7 @@ You can set up data recovery and IT infrastructure in case of unforeseen circums
 - Recovery Point Objective (RPO) — the time between the creation of the last backup and the moment of the accident. It can be configured individually for each resource.
 - Recovery Time Objective (RTO) — the time between the response to an accident and the restoration of infrastructure. The service allows you to minimize this indicator.
 
-<details>
-  <summary>How the service works</summary>
+{cut(How the service works)}
 
 1. Agents are installed on target VMs to synchronize with Hystax Acura.
 1. Data replication is performed for synchronized VMs. If necessary, the VM backup schedule is configured.
@@ -12,7 +11,7 @@ You can set up data recovery and IT infrastructure in case of unforeseen circums
 1. A backup infrastructure is created based on the plan.
 1. In case of emergency situations, the backup infrastructure takes over the entire load.
 
-</details>
+{/cut}
 
 After completing all the steps of a instruction, you will:
 
@@ -52,8 +51,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 
    </info>
 
-   <details>
-     <summary>Ansible manifest for installing agents</summary>
+   {cut(Ansible manifest for installing agents)}
 
    ```yaml
    - hosts: all
@@ -103,7 +101,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
          become: yes
    ```
 
-   </details>
+   {/cut}
 
    After installing the VM agent, `Ubuntu-DR` will appear on the main page of Hystax Acura [personal account](https://dr.mcs-cloud.ru) with **Unprotected** status.
 
@@ -138,8 +136,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 
     Detailed description of the parameters in the official documentation [Hystax Acura](https://hystax.com/documentation/live-migration/migration_overview.html#migration-plan-syntax).
 
-    <details>
-    <summary>Example of a disaster recovery plan</summary>
+    {cut(Example of a disaster recovery plan)}
 
     This plan describes two VMs and the subnet in which the migrated VMs will be deployed.
 
@@ -191,7 +188,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
     }
     ```
 
-    </details>
+    {/cut}
 
 1. Click the **Save** button.
 

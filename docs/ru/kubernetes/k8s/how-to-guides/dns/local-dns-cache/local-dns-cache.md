@@ -56,8 +56,7 @@ DNS-сервер будет развернут в следующей конфи�
 
 1. Создайте файл манифеста для NodeLocal DNS:
 
-   <details>
-   <summary markdown="span">nodelocaldns.yaml</summary>
+   {cut(nodelocaldns.yaml)}
 
    ```yaml
    # Copyright 2018 The Kubernetes Authors.
@@ -273,7 +272,7 @@ DNS-сервер будет развернут в следующей конфи�
        k8s-app: node-local-dns
    ```
 
-   </details>
+   {/cut}
 
    Этот файл создан на основе [манифеста из официального репозитория Kubernetes](https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml) с учетом конфигурации, приведенной выше.
 

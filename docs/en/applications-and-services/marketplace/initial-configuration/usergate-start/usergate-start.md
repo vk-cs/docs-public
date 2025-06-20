@@ -5,14 +5,13 @@ You can configure a firewall to protect your infrastructure from network attacks
 - users authentication;
 - blocking malicious content when browsing external Internet resources.
 
-<details>
-    <summary>Recommended server specifications for the service</summary>
+{cut(Recommended server specifications for the service)}
 
 ![Recommended server specifications for the service](./assets/usergate_vm_recommendation_table_en.png){params[noBorder=true]}
 
 To create a VM that has more than 24 CPUs, contact [technical support](mailto:support@mcs.mail.ru).
 
-</details>
+{/cut}
 
 This instruction will help you deploy the UserGate NGFW service on a VM in VK Cloud, connect to the UserGate NGFW console and add a new network through the service console.
 

@@ -201,8 +201,7 @@ HTTP-балансировщик нагрузки будет терминиров
 
             1. Вставьте содержимое под спойлером в поле **Сертификат или цепочка сертификатов**.
 
-               <details>
-               <summary markdown="span">Публичная часть самоподписанного сертификата NGINX certificate.pub</summary>
+               {cut(Публичная часть самоподписанного сертификата NGINX certificate.pub)}
 
                ```text
                -----BEGIN CERTIFICATE-----
@@ -227,12 +226,11 @@ HTTP-балансировщик нагрузки будет терминиров
                -----END CERTIFICATE-----
                ```
 
-               </details>
+               {/cut}
 
             1. Вставьте содержимое под спойлером в поле **Приватный ключ**.
 
-               <details>
-               <summary markdown="span">Приватная часть самоподписанного сертификата NGINX private.key</summary>
+               {cut(Приватная часть самоподписанного сертификата NGINX private.key)}
 
                ```text
                -----BEGIN RSA PRIVATE KEY-----
@@ -240,7 +238,7 @@ HTTP-балансировщик нагрузки будет терминиров
                -----END RSA PRIVATE KEY-----
                ```
 
-               </details>
+               {/cut}
 
             <info>
 
@@ -266,8 +264,7 @@ HTTP-балансировщик нагрузки будет терминиров
 
 1. Создайте файл манифеста `cafe-ingress.yaml` со следующим содержимым:
 
-   <details>
-   <summary markdown="span">cafe-ingress.yaml</summary>
+   {cut(cafe-ingress.yaml)}
 
    ```text
    apiVersion: networking.k8s.io/v1
@@ -296,7 +293,7 @@ HTTP-балансировщик нагрузки будет терминиров
                  number: 80
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере:
 

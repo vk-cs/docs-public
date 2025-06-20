@@ -38,8 +38,7 @@ VK Cloud поддерживает логирование для инстансо
    journalctl -u postgresql
    ```
 
-   <details>
-    <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```console
    -- Logs begin at Wed 2023-07-12 10:04:48 UTC, end at Wed 2023-07-12 10:32:29 UTC. --
@@ -60,7 +59,7 @@ VK Cloud поддерживает логирование для инстансо
    Jul 12 10:05:46 by-postgresql-4429.novalocal systemd[1]: Started PostgreSQL 14 database server.
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -69,8 +68,7 @@ VK Cloud поддерживает логирование для инстансо
    journalctl -u mysqld
    ```
 
-   <details>
-    <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```console
    -- Logs begin at Wed 2023-07-12 10:44:42 UTC, end at Wed 2023-07-12 10:46:52 UTC. --
@@ -104,7 +102,7 @@ VK Cloud поддерживает логирование для инстансо
    Jul 12 10:45:42 by-mysql-4691.novalocal sudo[1557]: pam_unix(sudo:session): session opened for user root by (uid=0)
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -113,8 +111,7 @@ VK Cloud поддерживает логирование для инстансо
    journalctl -u redis
    ```
 
-   <details>
-    <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```console
    -- Logs begin at Wed 2023-07-12 10:54:08 UTC, end at Wed 2023-07-12 11:16:13 UTC. --
@@ -138,7 +135,7 @@ VK Cloud поддерживает логирование для инстансо
    Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:M 12 Jul 2023 10:54:33.385 # Server initialized
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -147,8 +144,7 @@ VK Cloud поддерживает логирование для инстансо
    journalctl -u mongod
    ```
 
-   <details>
-    <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```console
    -- Logs begin at Wed 2023-07-12 11:23:00 UTC, end at Wed 2023-07-12 11:36:53 UTC. --
@@ -175,7 +171,7 @@ VK Cloud поддерживает логирование для инстансо
    Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.528+0000 I STORAGE  [initandlisten] Starting to check the table logging settings for existing WiredTiger tables
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -184,8 +180,7 @@ VK Cloud поддерживает логирование для инстансо
    journalctl -u clickhouse-server
    ```
 
-   <details>
-    <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```console
    -- Logs begin at Tue 2023-09-12 07:16:05 UTC, end at Tue 2023-09-12 10:17:56 UTC. --
@@ -219,7 +214,7 @@ VK Cloud поддерживает логирование для инстансо
    Sep 12 08:42:58 clickhouse4030.novalocal clickhouse-server[3666]: Logging information to /var/log/clickhouse-server/cli>
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    </tabs>

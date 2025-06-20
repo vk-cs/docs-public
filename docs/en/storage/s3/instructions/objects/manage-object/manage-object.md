@@ -31,8 +31,7 @@
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды просмотра списка объектов</summary>
+   {cut(Пример команды просмотра списка объектов)}
 
       Пример команды:
 
@@ -51,7 +50,7 @@
       2023-09-27 11:48:56        361 delete-picture.png
       ```
 
-   </details>
+   {/cut}
 
 Полное описание операций просмотра объектов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
 
@@ -179,8 +178,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды скачивания объекта</summary>
+   {cut(Пример команды скачивания объекта)}
 
       Пример команды:
 
@@ -199,7 +197,7 @@
        "Metadata": {}
        }
       ```
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -339,8 +337,7 @@
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды просмотра списка объектов</summary>
+   {cut(Пример команды просмотра списка объектов)}
 
       Пример команды:
 
@@ -348,7 +345,7 @@
       aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-   </details>
+   {/cut}
 
 Полное описание операции изменения ACL объекта доступно в [официальной документации AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-acl.html).
 
@@ -385,8 +382,7 @@
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    - `<время_действия>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
 
-   <details>
-      <summary>Пример команды формирования подписанного URL</summary>
+   {cut(Пример команды формирования подписанного URL)}
 
    Пример команды :
 
@@ -400,7 +396,7 @@
    https://hb.ru-msk.vkcloud-storage.ru/dd-winscp/usetech.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4TucX9HhP8RZveR9Cb3vGr%2F20231113%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20231113T104239Z&X-Amz-Expires=300000&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7c4d87d12dd12f8f420ffaed84328f1d6a79050818fd4c615b219ce7bc18e9
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -547,8 +543,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды копирования объекта в другой бакет</summary>
+   {cut(Пример команды копирования объекта в другой бакет)}
 
    Пример команды:
 
@@ -562,7 +557,7 @@
    copy: s3://my-bucket/my-picture.png to s3://my-another-bucket/my-picture.png
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -685,8 +680,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды копирования всех объектов бакета в другой бакет</summary>
+   {cut(Пример команды копирования всех объектов бакета в другой бакет)}
 
       Пример команды:
 
@@ -703,7 +697,7 @@
       copy: s3://my-bucket/example.txt to s3://my-another-bucket/example.txt
       ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 </tabs>
@@ -752,8 +746,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды удаления объекта</summary>
+   {cut(Пример команды удаления объекта)}
 
       Пример команды:
 
@@ -767,7 +760,7 @@
       delete: s3://my-bucket/my-picture.png
       ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -916,8 +909,7 @@
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды просмотра незавершенных загрузок</summary>
+   {cut(Пример команды просмотра незавершенных загрузок)}
 
       Пример команды:
 
@@ -949,7 +941,7 @@
       }
       ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 </tabs>

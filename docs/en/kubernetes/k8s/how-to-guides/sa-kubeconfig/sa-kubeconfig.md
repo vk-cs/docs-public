@@ -153,8 +153,7 @@ This authentication process is inconvenient when working with automated tools th
 
    1. Create a manifest file:
 
-      <details>
-      <summary>example-token.yaml</summary>
+      {cut(example-token.yaml)}
 
       <!-- prettier-ignore -->
       ```yaml
@@ -168,7 +167,7 @@ This authentication process is inconvenient when working with automated tools th
           kubernetes.io/service-account.name: example-sa
       ```
 
-      </details>
+      {/cut}
 
       Explanations of the manifest fields:
 
@@ -217,8 +216,7 @@ This authentication process is inconvenient when working with automated tools th
 
    The output should contain an indication of the secret in the `Tokens` field.
 
-   <details>
-   <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    ```text
    Name:                example-sa
@@ -231,7 +229,7 @@ This authentication process is inconvenient when working with automated tools th
    Events:              <none>
    ```
 
-   </details>
+   {/cut}
 
 1. Get the token value.
 
@@ -290,8 +288,7 @@ This authentication process is inconvenient when working with automated tools th
 
    The contents of kubeconfig will be output in a compressed form: the values of some fields will be skipped.
 
-   <details>
-   <summary>Simplified kubeconfig example</summary>
+   {cut(Simplified kubeconfig example)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -313,7 +310,7 @@ This authentication process is inconvenient when working with automated tools th
          token: <authentication data>
    ```
 
-   </details>
+   {/cut}
 
    Kubeconfig contains all the parameters necessary to work with the cluster:
 
@@ -473,8 +470,7 @@ This authentication process is inconvenient when working with automated tools th
 
    This kubeconfig should not contain any other users except the previously added `example-sa`. The only context is to use this user.
 
-   <details>
-   <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -498,7 +494,7 @@ This authentication process is inconvenient when working with automated tools th
        token: REDACTED
    ```
 
-   </details>
+   {/cut}
 
 ## 5. Check the operation of the created kubeconfig
 
@@ -510,15 +506,14 @@ Use the `kubectl` commands and the previously created kubeconfig for the service
    kubectl --kubeconfig $SA_KUBECONFIG cluster-info
    ```
 
-   <details>
-   <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    ```text
    Kubernetes control plane is running at https://203.0.113.123:6443
    CoreDNS is running at https://203.0.113.123:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
    ```
 
-   </details>
+   {/cut}
 
 1. Get a list of the main resources in the `default` namespace:
 
@@ -526,15 +521,14 @@ Use the `kubectl` commands and the previously created kubeconfig for the service
    kubectl --kubeconfig $SA_KUBECONFIG get all -n default
    ```
 
-   <details>
-   <summary>Example of command output</summary>
+   {cut(Example of command output)}
 
    ```text
    NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
    service/kubernetes   ClusterIP   10.254.0.1   <none>        443/TCP   3d1h
    ```
 
-   </details>
+   {/cut}
 
 If the password was not requested when executing the commands, then the resulting kubeconfig can be used in combination with automated tools to access the Cloud Containers cluster.
 

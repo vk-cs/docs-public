@@ -134,8 +134,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Создайте файл, который содержит в себе значения ([values](https://helm.sh/docs/chart_template_guide/values_files/)), нужные для установки ExternalDNS с помощью Helm:
 
-   <details>
-   <summary>external-dns-vkcs-values.yaml</summary>
+   {cut(external-dns-vkcs-values.yaml)}
 
    ```yaml
    policy: upsert-only
@@ -202,7 +201,7 @@ ExternalDNS будет использовать реквизиты этого п
            value: "8888"
    ```
 
-   </details>
+   {/cut}
 
    На поведение Helm-чарта (chart) ExternalDNS влияет множество значений. В созданном файле задан минимальный набор значений, достаточный для начала работы с ExternalDNS. Ниже описаны наиболее важные значения, которые влияют на работу ExternalDNS с DNS VK Cloud. Описания значений, которые не относятся к плагину VK Cloud (все значения, кроме `sidecars[]`), приведены в [README.md](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#values) для чарта.
 
@@ -212,8 +211,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    </warn>
 
-   <details>
-   <summary>Описание важных значений, влияющих на поведение ExternalDNS</summary>
+   {cut(Описание важных значений, влияющих на поведение ExternalDNS)}
 
    - (**Обязательное значение**) `provider`: значение `webhook` указывает, что нужно использовать внешний плагин с поддержкой механизма вебхуков (webhooks), чтобы работать с DNS.
 
@@ -233,7 +231,7 @@ ExternalDNS будет использовать реквизиты этого п
 
      Вы можете задать другой префикс, который отличается от `externaldns-`, если это необходимо.
 
-   </details>
+   {/cut}
 
    Плагин для ExternalDNS, который обеспечивает интеграцию с DNS VK Cloud, имеет множество настроек, влияющих на поведение плагина. Настройки задаются с помощью переменных среды окружения в `sidecars[].env`. В созданном файле заданы только обязательные настройки. При необходимости вы можете задать дополнительные настройки для плагина, добавив соответствующие переменные среды окружения.
 
@@ -243,8 +241,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    </warn>
 
-   <details>
-   <summary>Описание значений, влияющих на поведение плагина</summary>
+   {cut(Описание значений, влияющих на поведение плагина)}
 
    - (**Обязательные настройки**) Настройки, соответствующие переменным с префиксом `OS_` используются для аутентификации плагина при взаимодействии с API VK Cloud.
 
@@ -280,7 +277,7 @@ ExternalDNS будет использовать реквизиты этого п
        - `false` (по умолчанию): режим «dry run» **выключен**. Плагин работает и манипулирует ресурсными записями в DNS-зоне в соответствии с настройками.
        - `true`: режим «dry run» **включен**. Плагин работает, но не манипулирует ресурсными записями в DNS-зоне: не будет создано или удалено никаких ресурсных записей.
 
-   </details>
+   {/cut}
 
 1. Установите ExternalDNS:
 
@@ -294,8 +291,7 @@ ExternalDNS будет использовать реквизиты этого п
    helm -n external-dns list && kubectl -n external-dns get all
    ```
 
-   <details>
-   <summary>Пример части вывода команды</summary>
+   {cut(Пример части вывода команды)}
 
    ```text
    NAME                    NAMESPACE       ...        ...   STATUS          CHART                 ...
@@ -314,7 +310,7 @@ ExternalDNS будет использовать реквизиты этого п
    replicaset.apps/external-dns-vkcs-NNNNNNNNNN   1         1         1       ...
    ```
 
-   </details>
+   {/cut}
 
 ## 3. Проверьте работу External DNS
 
@@ -324,8 +320,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Создайте манифест для приложения `tea`:
 
-   <details>
-   <summary>tea-app.yaml</summary>
+   {cut(tea-app.yaml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -351,7 +346,7 @@ ExternalDNS будет использовать реквизиты этого п
            - containerPort: 8080
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере для развертывания приложения:
 
@@ -365,8 +360,7 @@ ExternalDNS будет использовать реквизиты этого п
    kubectl get rs,pod -l app==tea
    ```
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    ```text
    NAME                           DESIRED   CURRENT   READY   AGE
@@ -378,7 +372,7 @@ ExternalDNS будет использовать реквизиты этого п
    pod/tea-XXXXXXXXX-CCCCC   1/1     Running   0          ...
    ```
 
-   </details>
+   {/cut}
 
 1. Создайте манифест `tea-service.yaml` для сервиса Kubernetes (`Service`).
 
@@ -439,8 +433,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    Дождитесь, когда сервису будет назначен публичный IP-адрес балансировщика. Создание балансировщика может занять длительное время.
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    - Балансировщик в процессе создания:
 
@@ -456,7 +449,7 @@ ExternalDNS будет использовать реквизиты этого п
      tea-svc   LoadBalancer   10.254.170.195   203.0.113.111      80:32314/TCP   ...
      ```
 
-   </details>
+   {/cut}
 
 1. Убедитесь, что ExternalDNS создал необходимые ресурсные записи:
 
@@ -527,8 +520,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Создайте манифест для приложения `coffee`:
 
-   <details>
-   <summary>coffee-app.yaml</summary>
+   {cut(coffee-app.yaml)}
 
    ```yaml
    apiVersion: apps/v1
@@ -554,12 +546,11 @@ ExternalDNS будет использовать реквизиты этого п
            - containerPort: 8080
    ```
 
-   </details>
+   {/cut}
 
 1. Создайте манифест для сервиса Kubernetes, который будет использоваться приложением.
 
-   <details>
-   <summary>coffee-service.yaml</summary>
+   {cut(coffee-service.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -579,7 +570,7 @@ ExternalDNS будет использовать реквизиты этого п
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
    Здесь для сервиса задан тип [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip), его достаточно, поскольку приложение будет опубликовано с помощью Ingress. Такой сервис доступен только изнутри кластера и не имеет выделенного балансировщика нагрузки в отличие от сервиса, [созданного ранее](#31_opublikuyte_prilozhenie_ispolzuya_servis_tipa_loadbalancer_5cacf8cb).
 
@@ -595,8 +586,7 @@ ExternalDNS будет использовать реквизиты этого п
    kubectl get rs,pod,svc -l app==coffee
    ```
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    ```text
    NAME                                DESIRED   CURRENT   READY   AGE
@@ -610,7 +600,7 @@ ExternalDNS будет использовать реквизиты этого п
    service/coffee-svc   ClusterIP   10.254.243.13   <none>        80/TCP    ...
    ```
 
-   </details>
+   {/cut}
 
 1. Создайте манифест `cafe-ingress.yaml` для ресурса Ingress.
 
@@ -662,8 +652,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    Дождитесь, когда ресурсу Ingress будет назначен публичный IP-адрес. Этот адрес будет совпадать с адресом Ingress-контроллера.
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    - Ingress пока не назначен IP-адрес:
 
@@ -679,7 +668,7 @@ ExternalDNS будет использовать реквизиты этого п
      cafe-ingress   nginx   cafe.example.com    203.0.113.222.nip.io   80      ...
      ```
 
-   </details>
+   {/cut}
 
 1. Убедитесь, что ExternalDNS создал необходимые ресурсные записи:
 

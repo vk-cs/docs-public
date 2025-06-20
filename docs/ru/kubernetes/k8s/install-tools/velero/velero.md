@@ -149,8 +149,7 @@ Velero — это клиент-серверная утилита для резе
 
    1. Создайте файл с патчем:
 
-      <details>
-      <summary markdown="span">velero-patch.yaml</summary>
+      {cut(velero-patch.yaml)}
 
       ```yaml
       spec:
@@ -180,7 +179,7 @@ Velero — это клиент-серверная утилита для резе
                     memory: 256Mi
       ```
 
-      </details>
+      {/cut}
 
    1. Примените патч к развертыванию Velero:
 
