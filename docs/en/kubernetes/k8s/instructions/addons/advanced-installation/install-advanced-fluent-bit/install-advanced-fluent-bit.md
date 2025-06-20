@@ -85,9 +85,7 @@ Installation of the add-on is impossible without editing the settings code. It i
 
 1. In the `Output` section of the code, set the delivery parameters to the selected service.
 
-   <details>
-
-   <summary>Example for configuring log delivery to Elasticsearch</summary>
+   {cut(Example for configuring log delivery to Elasticsearch)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -126,11 +124,9 @@ Installation of the add-on is impossible without editing the settings code. It i
    ```
    See the [official documentation](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch) for details on parameters for Elasticsearch.
 
-   </details>
+   {/cut}
 
-   <details>
-
-   <summary>Example for configuring log delivery to Loki</summary>
+   {cut(Example for configuring log delivery to Loki)}
 
    <!-- prettier-ignore -->
    ```yaml
@@ -150,7 +146,7 @@ Installation of the add-on is impossible without editing the settings code. It i
 
    See the [official Fluent Bit documentation](https://docs.fluentbit.io/manual/pipeline/outputs/loki) for details on parameters for Loki.
 
-   </details>
+   {/cut}
 
 1. (Optional) Edit other parameters of the settings code. Read more about configuration file parameters in the [official Fluent Bit documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file). Also, an example of the Fluent Bit settings code is available on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml).
 

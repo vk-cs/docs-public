@@ -80,8 +80,7 @@
 
         By default, the option is disabled, and the cluster runs until it is deleted, even if there are no Spark jobs running in it. This option is useful to save computing resources during long breaks between running Spark jobs.
 
-      <details>
-      <summary>Examples of the impact of options on the cluster lifecycle</summary>
+      {cut(Examples of the impact of options on the cluster lifecycle)}
 
       - Let only the inactivity time before destruction (120 minutes, 2 hours) be configured.
 
@@ -99,7 +98,7 @@
 
         Then, if the cluster is inactive since 13:00, then at 14:00 it will be deleted.
 
-      </details>
+      {/cut}
 
    1. Select the cluster operating mode using the **Private mode** option:
 
@@ -125,8 +124,7 @@
 
       Property descriptions should be correct from the point of view of [YAML syntax](https://yaml.org/spec/).
 
-      <details>
-      <summary>Examples of descriptions of properties and variables</summary>
+      {cut(Examples of descriptions of properties and variables)}
 
       - A list of several Spark properties:
 
@@ -145,7 +143,7 @@
         ENV_VAR_3: env_var_3_value
         ```
 
-      </details>
+      {/cut}
 
    1. Click the **Create cluster** button.
 

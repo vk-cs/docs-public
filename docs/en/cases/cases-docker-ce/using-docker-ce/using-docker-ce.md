@@ -37,8 +37,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
 
    The command's output will contain the list of images, which satisfy the search criteria.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
@@ -53,7 +52,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
    ...
    ```
 
-   </details>
+   {/cut}
 
 1. Pull the `ubuntu` image:
 
@@ -63,8 +62,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
 
    The command's output will contain the information about the pulling progress.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    Using default tag: latest
@@ -75,7 +73,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
    docker.io/library/ubuntu:latest
    ```
 
-   </details>
+   {/cut}
 
 1. Make sure that the image was pulled by viewing the pulled images:
 
@@ -85,8 +83,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
 
    The command's output will contain the list of pulled images.
 
-   <details>
-   <summary>Example output</summary>
+   {cut(Example output)}
 
    ```text
    REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
@@ -94,7 +91,7 @@ The Ubuntu OS image will be used as example to demonstrate how to work with imag
    hello-world   latest    feb5d9fea6a5   18 months ago   13.3kB
    ```
 
-   </details>
+   {/cut}
 
 ## Creating and running container
 
@@ -169,8 +166,7 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    </tabpanel>
    </tabs>
 
-   <details>
-   <summary>Example docker ps -a output</summary>
+   {cut(Example docker ps -a output)}
 
    ```text
    CONTAINER ID   IMAGE         COMMAND       CREATED          STATUS                       PORTS     NAMES
@@ -178,7 +174,7 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    794ef863c235   hello-world   "/hello"      19 hours ago     Exited (0) 19 hours ago                dazzling_keldysh
    ```
 
-   </details>
+   {/cut}
 
    A container identifier is listed in the `CONTAINER ID` column.
 

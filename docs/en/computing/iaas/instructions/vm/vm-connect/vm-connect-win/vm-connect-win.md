@@ -103,8 +103,7 @@ Connect to the VM:
 
 To connect via RDP, specify the connection parameters manually or using the RDP configuration file.
 
-<details>
-<summary>How to get the RDP configuration file for VK Cloud VM</summary>
+{cut(How to get the RDP configuration file for VK Cloud VM)}
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -112,7 +111,7 @@ To connect via RDP, specify the connection parameters manually or using the RDP 
 3. Go to the **General information** tab and select the **Windows** tab at the bottom of the page.
 4. Click **Download RDP config**.
 
-</details>
+{/cut}
 
 Connect to the VM:
 

@@ -149,7 +149,7 @@ To get an extended list of quotas for a project:
     openstack quota show
     ```
 
-    <details><summary>Example of command output for the Moscow region</summary>
+    {cut(Example of command output for the Moscow region)}
 
     ```console
     +----------------------------+--------------------------------------------------+
@@ -254,7 +254,7 @@ To get an extended list of quotas for a project:
     | volumes_ssd                | -1                                               |
     +----------------------------+--------------------------------------------------+
     ```
-    </details>
+    {/cut}
 
     The value `-1` for the quota means “unlimited”. To find out which resources the quotas from the list correspond to, read the section [Quotas and limits](../../../concepts/quotasandlimits).
 

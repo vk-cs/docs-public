@@ -14,8 +14,7 @@ Backups are deleted according to the following algorithm:
 
 The deletion process starts after each backup and one hour after you change the backup plan settings.
 
-<details>
-    <summary>Example of the algorithm operation</summary>
+{cut(Example of the algorithm operation)}
 
 The parameter **Max. number of full backups** is set to: `2`.
 
@@ -47,7 +46,7 @@ Backups that will remain:
 - **Copy 5**, created with an error
 - **Copy 6**, created successfully
 
-</details>
+{/cut}
 
 <err>
 

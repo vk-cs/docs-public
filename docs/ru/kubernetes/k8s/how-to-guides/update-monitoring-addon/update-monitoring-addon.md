@@ -113,8 +113,7 @@
 
    В выводе команды будет содержаться список PVCs (`NAME`) и соответствующих им PVs (`VOLUMES`) с указанием размера томов (`CAPACITY`). Запишите эту информацию, она понадобится позднее.
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    ```text
    NAME                                                                             STATUS   VOLUME                                     CAPACITY   ...
@@ -123,7 +122,7 @@
    prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0           Bound    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ... 
    ```
 
-   </details>
+   {/cut}
 
 ## 2. Подготовьте окружение аддона к обновлению
 
@@ -145,8 +144,7 @@
 
 1. Создайте файл с кодом скрипта:
 
-   <details>
-   <summary>prepare-for-addon-update.sh</summary>
+   {cut(prepare-for-addon-update.sh)}
 
    ```console
    #!/bin/sh
@@ -281,7 +279,7 @@
    echo "Completed!"
    ```
 
-   </details>
+   {/cut}
 
    Скрипт выполняет следующие действия:
 
@@ -313,8 +311,7 @@
    - `-r`: название приложения, с которым установлен аддон. Совпадает с именем Helm-чарта для аддона. Значение по умолчанию: `kube-prometheus-stack`.
    - `-d`: значение аргумента [--dry-run](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) для `kubectl`. Значение по умолчанию: `none`. Используйте `server` или `client` для тестового запуска скрипта: в кластер не будет внесено никаких изменений.
 
-   <details>
-   <summary>Пример вывода справки</summary>
+   {cut(Пример вывода справки)}
 
    ```text
    Usage:
@@ -326,7 +323,7 @@
    -d dry run              "none". [none, server,client]
    ```
 
-   </details>
+   {/cut}
 
 1. Выполните скрипт.
 
@@ -362,8 +359,7 @@
    Completed!
    ```
 
-   <details>
-   <summary>Пример вывода команды</summary>
+   {cut(Пример вывода команды)}
 
    ```text
    Settings retain policy for the prometheus PVs...
@@ -395,7 +391,7 @@
    Completed!
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -422,8 +418,7 @@
    kubectl get pv
    ```
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    ```text
    NAME                                       CAPACITY   ...   RECLAIM POLICY   STATUS  CLAIM    ...
@@ -432,7 +427,7 @@
    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...   Retain           Bound   prometheus-monitoring/prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0 ...
    ```
 
-   </details>
+   {/cut}
 
 1. Удалите Helm-чарт (chart) текущей версии аддона. Это необходимо для того, чтобы успешно удалить наборы PVCs и CRDs, которые используются аддоном.
 
@@ -470,8 +465,7 @@
    kubectl get pv
    ```
 
-   <details>
-   <summary>Пример частичного вывода команды</summary>
+   {cut(Пример частичного вывода команды)}
 
    ```text
    NAME                                       CAPACITY   ...   RECLAIM POLICY   STATUS      ...
@@ -480,7 +474,7 @@
    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...   Retain           Available   ...
    ```
 
-   </details>
+   {/cut}
 
 1. Получите список CRDs, с которыми работал аддон:
 

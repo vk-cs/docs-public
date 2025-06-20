@@ -3,9 +3,7 @@ You can protect your infrastructure from potential web threats with the Check Po
 - Security Gateway BYOL — a virtual gateway (NGFW).
 - Security Management BYOL — a service management server.
 
-<details>
-
-<summary>How the service works</summary>
+{cut(How the service works)}
 
 1. Two VMs are created in the same or different networks: a virtual gateway and a management server — with GAiA OS preinstalled on them.
 1. The First Time Configuration Wizard is launched on each of these VMs at the first connection, which allows you to configure startup parameters for further work with these VMs via the web interface.
@@ -16,7 +14,7 @@ You can protect your infrastructure from potential web threats with the Check Po
    - Configure the security policy by adding required licenses.
    - Configure backup.
 
-</details>
+{/cut}
 
 By going through the steps of this instruction, you will:
 
@@ -41,20 +39,16 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 1. Plan the network topology and addressing: consider whether the virtual gateway and the management server will be on the same network or on different ones. By default, the gateway and the management server are deployed on the same network.
 1. (Optional) Estimate the required disk size of the VM on which the Check Point CloudGuard Network management server will be deployed, depending on the Check Point licenses purchased.
 
-   <details>
-
-   <summary>Virtual gateway infrastructure requirements</summary>
+   {cut(Virtual gateway infrastructure requirements)}
 
    | System requirements | Number of CPUs, pcs | RAM, GB | Hard disk capacity, at least GB |
    |----------------------|--------------------|---------------|-------------------|
    | Minimal          | 1                  | 8             | 100        |
    | Optimal          | 2                  | 12            | 150        |
 
-   </details>
+   {/cut}
 
-   <details>
-
-   <summary>Management server infrastructure requirements</summary>
+   {cut(Management server infrastructure requirements)}
 
    | License | Number of CPUs, pcs | RAM capacity, GB | Hard disk capacity, at least GB |
    |----------------------|--------------------|---------------|-----------------|
@@ -62,7 +56,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
    | Network Policy Management blade \+ SmartLog | 2 | 10      | 200        |
    | Network Policy Management blade \+ SmartLog \+ SmartEvent/SmartReporter | 4 | 12 | 200   |
 
-   </details>
+   {/cut}
 
 1. (Optional) [Create](/en/networks/vnet/instructions/net#creating_network) a network with Internet access if it has not been created before.
 

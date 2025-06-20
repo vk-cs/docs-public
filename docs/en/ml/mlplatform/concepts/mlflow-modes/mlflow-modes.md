@@ -35,8 +35,7 @@ A model deployment process:
 1. The deployment server sends a request to MLflow and receives the model to be deployed.
 1. The model is lifted in the docker container and the [Traefik](https://traefik.io/traefik/) proxy is configured to open the model access to the external network.
 
-<details>
-<summary> Sample code for working with the deployment server from the client library </summary>
+{cut( Sample code for working with the deployment server from the client library )}
 
 ```python
 # Add environment variables to work with MLflow Standalone

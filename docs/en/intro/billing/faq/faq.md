@@ -1,8 +1,6 @@
 ## Payment, refund, bonuses
 
-<details>
-
-<summary>How do I get bonuses for registering in my management console?</summary>
+{cut(How do I get bonuses for registering in my management console?)}
 
 [Bonuses](../concepts/balance#bonuses) are credited when registering a new user account. Bonuses are accrued after all [registration](/en/intro/start/account-registration) steps are completed.
 
@@ -14,11 +12,9 @@ In some cases, previously accrued bonuses may be canceled or denied. See more in
 
 </warn>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>In what order are the bonuses charged, why could they have expired?</summary>
+{cut(In what order are the bonuses charged, why could they have expired?)}
 
 [Bonuses](../concepts/balance#bonuses) in VK Cloud are spent on using cloud services and resources. There are different types of bonuses, each type of bonus can be spent only on VK Cloud services corresponding to it. One bonus is equal to one ruble.
 
@@ -30,38 +26,30 @@ You cannot withdraw bonuses from the project.
 
 </warn>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Are funds being charged after the end of the test period?</summary>
+{cut(Are funds being charged after the end of the test period?)}
 
 After the test period has expired or bonuses have been burned off, the payment account balance is used to pay for resources. If the payment account balance is zero, the project is [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How are funds charged?</summary>
+{cut(How are funds charged?)}
 
 VK Cloud records the consumption of resources in the cloud on a minute-by-minute basis, and funds for the use of resources are charged from the payment account balance also on a minute-by-minute basis. Licenses are charged once a day.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>The project does not display the balance at all. How do I turn it on?</summary>
+{cut(The project does not display the balance at all. How do I turn it on?)}
 
 [Balance](../concepts/balance) is displayed, if two conditions are met:
 
 - Your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator, or billing administrator.
 - [Registration procedure](/en/intro/start/account-registration) is completed: phone, email, and card for payment are bound.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>What is the risk of a negative balance?</summary>
+{cut(What is the risk of a negative balance?)}
 
 The payment account balance in the project management console may go negative. If you work with VK Cloud on [prepay](../concepts/physical-corporate#prepayment), the work of services and resources in this case will be suspended.
 
@@ -73,21 +61,17 @@ Unlocking of services takes up to 15 minutes from the moment of crediting.
 
 </warn>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How much do I need to replenish my account to resume work?</summary>
+{cut(How much do I need to replenish my account to resume work?)}
 
 The project will resume automatically when the payment account balance is positive.
 
 It is recommended to deposit an amount equal to the daily charge, or enable [auto-top-up](../instructions/add-card#configure_auto_completion).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I have paid the bill, the services in the project are active. Why is the balance negative?</summary>
+{cut(I have paid the bill, the services in the project are active. Why is the balance negative?)}
 
 You are probably a legal entity and work with VK Cloud for a post-payment. In this case, the payment account balance of your project will always be negative.
 
@@ -99,11 +83,9 @@ If you do not know your payment scheme, contact the document management departme
    - Full name of the organization.
    - Details of the organization.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How to pay for the work of a service from a legal entity?</summary>
+{cut(How to pay for the work of a service from a legal entity?)}
 
 If you work with VK Cloud on prepayment, [form an invoice](../instructions/bill-generation) and pay it in your management console.
 
@@ -117,11 +99,9 @@ If you have not received the accounting documents, contact the document manageme
    - Full name of the organization.
    - Details of the organization.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How to connect the post-payment scheme?</summary>
+{cut(How to connect the post-payment scheme?)}
 
 Post-payment is available:
 
@@ -130,19 +110,15 @@ Post-payment is available:
 
 To activate the postpayment scheme, [conclude an individual contract](../instructions/corporate) and perform additional project configuration for legal entities in the VK Cloud management console.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How long does it take for funds to be credited when paying by bank transfer?</summary>
+{cut(How long does it take for funds to be credited when paying by bank transfer?)}
 
 Up to 3 banking days.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Why should I link a card if I am a legal entity and pay according to the details?</summary>
+{cut(Why should I link a card if I am a legal entity and pay according to the details?)}
 
 You may need the card if you work on a prepaid basis and need to make an emergency top-up, for example, to avoid [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) a project.
 
@@ -152,11 +128,9 @@ Charges for bank card payments are not included in [accounting documents for leg
 
 </warn>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>When and how will I receive the accounting documents after payment?</summary>
+{cut(When and how will I receive the accounting documents after payment?)}
 
 <tabs>
 <tablist>
@@ -179,11 +153,9 @@ If you have not received your original documents or need scanned copies, write t
 </tabpanel>
 </tabs>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I have topped up the balance, but the payment is not credited. What to do?</summary>
+{cut(I have topped up the balance, but the payment is not credited. What to do?)}
 
 The terms of crediting funds depend on [the payment method](../concepts/payment-methods):
 
@@ -196,11 +168,9 @@ If the payment is not received on time, write to VK Cloud document management de
 - Project [region](/en/tools-for-using-services/account/concepts/regions)
 - Receipt of payment
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I make a refund?</summary>
+{cut(How do I make a refund?)}
 
 Contact [technical support](mailto:support@mcs.mail.ru). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../instructions/refund).
 
@@ -208,13 +178,11 @@ You can refund only funds that you have previously credited to your payment acco
 
 For individuals, the funds will be returned to the account from which the payment has been made.
 
-</details>
+{/cut}
 
 ## Freezing the project
 
-<details>
-
-<summary>The balance has become negative, how can the services be restored?</summary>
+{cut(The balance has become negative, how can the services be restored?)}
 
 When working on prepayment with a negative payment account balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
 
@@ -248,29 +216,23 @@ To find out how long resources are in the queue for deletion, contact [technical
 
 </info>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I have topped up my balance to unblock the services. How long to wait?</summary>
+{cut(I have topped up my balance to unblock the services. How long to wait?)}
 
 Unlocking can take up to 15 minutes.
 
 After unlocking, manually start objects that have been stopped, such as virtual machines.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Can I take the promised payment to avoid freezing?</summary>
+{cut(Can I take the promised payment to avoid freezing?)}
 
 The promised payment is not supported.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I don't have time to pay for services by transfer. How to avoid freezing?</summary>
+{cut(I don't have time to pay for services by transfer. How to avoid freezing?)}
 
 Pay for services with a bank card, payments from cards are faster.
 
@@ -280,11 +242,9 @@ Charges for bank card payments are not included in [accounting documents for leg
 
 </warn>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I have topped up the balance, but the payment failed. How to avoid freezing?</summary>
+{cut(I have topped up the balance, but the payment failed. How to avoid freezing?)}
 
 1. Contact [technical support](mailto:support@mcs.mail.ru).
 1. Specify:
@@ -293,13 +253,11 @@ Charges for bank card payments are not included in [accounting documents for leg
    - Project [region](/en/tools-for-using-services/account/concepts/regions)
    - Payment confirmation
 
-</details>
+{/cut}
 
 ## Working with legal entities
 
-<details>
-
-<summary>We are a company not from the Russian Federation, how to start working with VK Cloud?</summary>
+{cut(We are a company not from the Russian Federation, how to start working with VK Cloud?)}
 
 With VK Cloud, you can work with a service infrastructure that is physically deployed:
 
@@ -331,11 +289,9 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 
 |===
 
-</details>
+{/cut}
 
-<details>
-
-<summary>We are a company from the Russian Federation, how to pay for services?</summary>
+{cut(We are a company from the Russian Federation, how to pay for services?)}
 
 <tabs>
 <tablist>
@@ -357,11 +313,9 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 </tabpanel>
 </tabs>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>We are a company not from the Russian Federation, how to pay for services?</summary>
+{cut(We are a company not from the Russian Federation, how to pay for services?)}
 
 <tabs>
 <tablist>
@@ -389,11 +343,9 @@ Request an invoice from the document management department of VK Cloud:
 </tabpanel>
 </tabs>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How to conclude an individual contract with VK Cloud?</summary>
+{cut(How to conclude an individual contract with VK Cloud?)}
 
 1. Write to the customer service department of VK Cloud at [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
 1. Specify:
@@ -403,11 +355,9 @@ Request an invoice from the document management department of VK Cloud:
 
 The manager will contact you to clarify the required terms of the contract.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I find out VK Cloud banking details?</summary>
+{cut(How do I find out VK Cloud banking details?)}
 
 <tabs>
 <tablist>
@@ -428,11 +378,9 @@ If your project is in [region](/ru/tools-for-using-services/account/concepts/reg
 </tabpanel>
 </tabs>
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I find out the terms of my contract with VK Cloud?</summary>
+{cut(How do I find out the terms of my contract with VK Cloud?)}
 
 Ask this question in the document management department of VK Cloud:
 
@@ -442,11 +390,9 @@ Ask this question in the document management department of VK Cloud:
    - Full name of the organization.
    - Details of the organization.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How to get accounting documents for accounting?</summary>
+{cut(How to get accounting documents for accounting?)}
 
 1. Write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 1. Specify:
@@ -465,11 +411,9 @@ Accounting documents will be sent once in the reporting period (month).
 
 VK Cloud can duplicate reporting documents in the form of scanned copies in PDF format to e-mail. If you want to receive scanned copies, write about it in the request and specify email addresses of recipients.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I get a reconciliation report for the required period?</summary>
+{cut(How do I get a reconciliation report for the required period?)}
 
 1. Write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 1. Specify:
@@ -477,21 +421,17 @@ VK Cloud can duplicate reporting documents in the form of scanned copies in PDF 
    - Full name and details of the organization.
    - The period for which the act is required.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>I have unloaded the invoice, it does not contain my details. How do I add them?</summary>
+{cut(I have unloaded the invoice, it does not contain my details. How do I add them?)}
 
 To make the data of your organization appear in the **Payer** field in the invoices, that you [generate in your management console](../instructions/bill-generation), perform the the [additional registration](../instructions/corporate#additional_registration_of_legal_entities) of your legal entity.
 
 Additional registration is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only for Russian resident companies.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How to register a project to another legal entity?</summary>
+{cut(How to register a project to another legal entity?)}
 
 <info>
 
@@ -509,20 +449,16 @@ To register a project to another organization:
 
 1. For legal entities-residents of the Russian Federation in the Moscow region: [specify](/en/intro/billing/instructions/corporate#additional_registration_of_legal_entities) new details in your management console.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I get scans of your constituent documents?</summary>
+{cut(How do I get scans of your constituent documents?)}
 
 1. Write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 1. Specify the list of documents that you require copies of.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do we get scans of our accounting documents?</summary>
+{cut(How do we get scans of our accounting documents?)}
 
 1. Write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 1. Specify:
@@ -535,4 +471,4 @@ Copies are provided in PDF format.
 
 If you want to receive copies every reporting period, specify this in the request.
 
-</details>
+{/cut}

@@ -31,8 +31,7 @@ To demostrate how Gatekeeper works several objects will be created:
 
    1. Create a constraint manifest constraint based on the template you created earlier:
 
-      <details>
-      <summary markdown="span">constraint.yaml</summary>
+      {cut(constraint.yaml)}
 
       ```yaml
       apiVersion: constraints.gatekeeper.sh/v1beta1
@@ -51,7 +50,7 @@ To demostrate how Gatekeeper works several objects will be created:
             - "docker.io/"
       ```
 
-      </details>
+      {/cut}
 
    1. Create a constraint based on the constraint manifest:
 
@@ -86,8 +85,7 @@ To demostrate how Gatekeeper works several objects will be created:
 
    1. Create a manifest for the pod:
 
-      <details>
-      <summary markdown="span">example-allowed.yaml</summary>
+      {cut(example-allowed.yaml)}
 
       ```yaml
       apiVersion: v1
@@ -126,8 +124,7 @@ To demostrate how Gatekeeper works several objects will be created:
 
    1. Create a manifest for the pod:
 
-      <details>
-      <summary markdown="span">example-disallowed.yaml</summary>
+      {cut(example-disallowed.yaml)}
 
       ```yaml
       apiVersion: v1

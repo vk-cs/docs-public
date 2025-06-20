@@ -111,8 +111,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<YOUR_TOKE
 
 ### Additional examples
 
-<details>
-  <summary>Field validation error (mismatch of file names with the form)</summary>
+{cut(Field validation error (mismatch of file names with the form))}
 
 Request example (any image is used):
 
@@ -144,10 +143,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>The image does not contain a person's face</summary>
+{cut(The image does not contain a person's face)}
 
 Request example:
 
@@ -187,10 +185,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>Image with multiple faces</summary>
+{cut(Image with multiple faces)}
 
 Request example:
 
@@ -230,10 +227,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>Empty image</summary>
+{cut(Empty image)}
 
 As an example, you can use any empty file with the JPG extension.
 
@@ -267,7 +263,7 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
 ## Recognize
 
@@ -422,8 +418,7 @@ The value of `tag` may equal `undefined` if the value of `create_new` in the req
 
 ### Additional examples
 
-<details>
-  <summary>The face in the image is not in the database and create_new=true</summary>
+{cut(The face in the image is not in the database and create_new=true)}
 
 Request example:
 
@@ -483,10 +478,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>There is no face in the image</summary>
+{cut(There is no face in the image)}
 
 Request example:
 
@@ -525,10 +519,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>The face in the image is not in the database and create_new=false</summary>
+{cut(The face in the image is not in the database and create_new=false)}
 
 It is assumed that the face from the image was not added to the database using the `/api/v1/persons/set` method.
 
@@ -590,10 +583,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>JSON generation error</summary>
+{cut(JSON generation error)}
 
 As an example, you can use any empty file with the JPG extension.
 
@@ -627,10 +619,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-  <summary>Invalid image</summary>
+{cut(Invalid image)}
 
 As an example, you can use any empty file with the JPG extension.
 
@@ -664,7 +655,7 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
 ## Delete
 
@@ -768,8 +759,7 @@ curl -X 'POST' \
 
 ### Additional examples
 
-<details>
-  <summary>JSON validation error (no person_id)</summary>
+{cut(JSON validation error (no person_id))}
 
 Request example:
 
@@ -801,7 +791,7 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
 ## Truncate
 
@@ -864,8 +854,7 @@ curl -X 'POST' \
 
 ### Additional examples
 
-<details>
-  <summary>JSON validation error (no space field)</summary>
+{cut(JSON validation error (no space field))}
 
 Request example:
 
@@ -890,4 +879,4 @@ Response example:
 }
 ```
 
-</details>
+{/cut}

@@ -61,10 +61,9 @@ console.log('Hello World');
 
 For large blocks of code and long examples, blocks of hidden text are used:
 
-<details>
-<summary>A closed block looks like this</summary>
+{cut(A closed block looks like this)}
 An example of hidden text.
-</details>
+{/cut}
 
 Click the block to see its contents. Click again if you want to hide the text back.
 

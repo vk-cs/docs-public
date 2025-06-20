@@ -153,8 +153,7 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
 
 1. Determines the severity level of individual log entries. This is done using Fluent Bit [parsers](https://docs.fluentbit.io/manual/pipeline/filters/parser).
 
-   <details>
-   <summary>Table of supported levels</summary>
+   {cut(Table of supported levels)}
 
    The levels are sorted in ascending order of severity.
 
@@ -167,12 +166,11 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
    | `ERROR` | 1                   | Error messages            |
    | `FATAL` | 0                   | Critical error messages |
 
-   </details>
+   {/cut}
 
 1. Adds additional metadata to the logs, which makes it easier to work with Cloud Containers cluster logs (for example, searching for the necessary logs in Cloud Logging). Special Fluent Bit filters are used for this, [written in Lua](https://docs.fluentbit.io/manual/pipeline/filters/lua). This metadata contains, among other things, the severity level of logged events.
 
-   <details>
-   <summary>Learn more about metadata for determining the source of logs</summary>
+   {cut(Learn more about metadata for determining the source of logs)}
 
    For each log entry, identifiers are set that allow you to determine the source of logs when using Cloud Logging:
 
@@ -211,10 +209,9 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
        kube-system.kube-controller-manager
        ```
 
-   </details>
+   {/cut}
 
-   <details>
-   <summary>Learn more about other metadata with additional information about logs</summary>
+   {cut(Learn more about other metadata with additional information about logs)}
 
    Metadata fields with additional information about the logged event are added to log entries, which allows you to search in Cloud Logging, including by log metadata:
 
@@ -223,7 +220,7 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
    - `severity_num`: the severity level of the logged event in number form.
    - All fields of the JSON message: if logs are written in JSON format, then all fields of the JSON message, except `msg`, are added as metadata.
 
-   </details>
+   {/cut}
 
 You can fine-tune the behavior of the add-on when working with severity levels using:
 
@@ -259,8 +256,7 @@ customFilter:
 
 It is the prefix that is configured for the pods so that you can receive logs from several replica pods that relate to the same [workload](https://kubernetes.io/docs/concepts/workloads/controllers/).
 
-<details>
-<summary>Examples</summary>
+{cut(Examples)}
 
 1. The only rule applies at the level of the `kube-system` namespace.
 
@@ -294,7 +290,7 @@ customFilter:
         min_level: WARN
 ```
 
-</details>
+{/cut}
 
 </tabpanel>
 <tabpanel>
@@ -342,8 +338,7 @@ customRegexp:
 
 It is the prefix that is configured for the pods so that you can receive logs from several replica pods that relate to the same [workload](https://kubernetes.io/docs/concepts/workloads/controllers/).
 
-<details>
-<summary>Examples</summary>
+{cut(Examples)}
 
 1. The only rule applies at the level of the `kube-system` namespace.
 
@@ -387,7 +382,7 @@ customRegexp:
         reg_exp: "Debug trace"
 ```
 
-</details>
+{/cut}
 
 </tabpanel>
 </tabs>

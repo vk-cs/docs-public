@@ -31,8 +31,7 @@
     - (Опционально) Отметьте необходимость увеличения [квоты](https://cloud.vk.com/docs/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta) на проекте вместе с добавлением шаблона конфигурации. 
     - **Описание**: иные параметры конфигурации. Ознакомьтесь с доступными параметрами конфигурации на сайте VK Cloud в разделе [расчета стоимости подключения](https://cloud.vk.com/cloud-gpu/#price).
 
-        <details>
-        <summary>Пример текста описания</summary>
+        {cut(Пример текста описания)}
     
         ```plaintext
         Модель — GPU NVIDIA® Tesla®
@@ -48,7 +47,7 @@
         Тип диска — High-IOPS SSD
         ```
 
-    </details>
+    {/cut}
 
 1. Нажмите кнопку **Отправить**.
 

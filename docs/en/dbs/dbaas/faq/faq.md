@@ -1,62 +1,46 @@
-<details>
-
-<summary>How to create a database?</summary>
+{cut(How to create a database?)}
 
 You can create a database using [step-by-step instructions](../instructions/create) or [quick start](../quick-start).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Which DBMS are available in the cloud?</summary>
+{cut(Which DBMS are available in the cloud?)}
 
 Full [list](../types/) of supported DBMS and their [configurations](../concepts/work-configs).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I select the required DB instance configuration?</summary>
+{cut(How do I select the required DB instance configuration?)}
 
 You can select the required configuration type when [creating a DB instance](../instructions/create). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Can I change the DB instance configuration file myself?</summary>
+{cut(Can I change the DB instance configuration file myself?)}
 
 No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../instructions/db-config).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>What does the cost of the service depend on?</summary>
+{cut(What does the cost of the service depend on?)}
 
 The cost of the service depends on the selected [configuration](../concepts/work-configs). Payment is calculated only for the resources used, for more information, see the article [Tariffication](../tariffication).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I add a database user?</summary>
+{cut(How do I add a database user?)}
 
 Use the instructions [User management](../instructions/users).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is backup enabled by default?</summary>
+{cut(Is backup enabled by default?)}
 
 Backup is not enabled by default. You can enable it when [creating an instance](../instructions/create) or configure it in the [Backup](https://msk.cloud.vk.com/app/en/services/databases/backups) section.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is backup enabled for my DB?</summary>
+{cut(Is backup enabled for my DB?)}
 
 To check if backup is enabled:
 
@@ -69,29 +53,23 @@ To check if backup is enabled:
 
 Backup can be enabled when [creating a DB instance](../instructions/create) or configured separately by [creating a backup plan](/en/storage/backups/instructions/create-backup-plan).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to restore a database of a different version from a backup?</summary>
+{cut(Is it possible to restore a database of a different version from a backup?)}
 
 No, you can restore the database only to the version for which the backup was created.
 
 To restore a database from a backup, use the [instructions](/en/storage/backups/instructions/restore-from-backup).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How is the database disk autoscaling?</summary>
+{cut(How is the database disk autoscaling?)}
 
 If autoscaling is enabled, when the free space threshold is reached, the disk expands by 10 GB.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How does database scaling work?</summary>
+{cut(How does database scaling work?)}
 
 You can change the type of VM hosting the databases or increase the disk size. When changing the VM type, the changes take effect after the VM is restarted.
 
@@ -99,89 +77,69 @@ You can also enable autoscaling of the database disk size. Then, as the amount o
 
 For instructions on scaling a DB instance, see [DB instance management](../instructions).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How are the master, synchronous and asynchronous replicas distributed across the data center?</summary>
+{cut(How are the master, synchronous and asynchronous replicas distributed across the data center?)}
 
 The master and replicas are located in the same data center, but upon request, [technical support](mailto:support@mcs.mail.ru) engineers can distribute them to different data centers.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is replication asynchronous or synchronous in the Master-Replica database configuration?</summary>
+{cut(Is replication asynchronous or synchronous in the Master-Replica database configuration?)}
 
 Asynchronous replication works for **Master-Replica** configurations. Synchronous and asynchronous replication is used for the cluster.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I create a database replica?</summary>
+{cut(How do I create a database replica?)}
 
 Use the instructions in the article [Replication](../instructions/replication).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How do I install monitoring extensions for the database?</summary>
+{cut(How do I install monitoring extensions for the database?)}
 
 Installing extensions is described in detail in the section [Managing extensions](../instructions/managing-extensions).
 
 The monitoring service is enabled by default for PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How is auto-switching between database nodes configured?</summary>
+{cut(How is auto-switching between database nodes configured?)}
 
 When using a database cluster, if the wizard is unavailable, switching to other nodes will be configured automatically. When using [configuration](../concepts/work-configs) **Master-Replica** switching will need to be done manually:
 
 - MySQL;
 - PostgreSQL, Postgres Pro.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>What is the maximum amount of data that can be stored in a DBMS?</summary>
+{cut(What is the maximum amount of data that can be stored in a DBMS?)}
 
 The volume is limited by the capabilities of the disk — 2 TB for High-IOPS SSD, 5 TB for SSD (for one shard), or RAM (Redis, Tarantool).
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to create a user with read-only rights to the database through a management console?</summary>
+{cut(Is it possible to create a user with read-only rights to the database through a management console?)}
 
 No, this is only possible through a direct SQL query.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>How is user access to PostgreSQL organized?</summary>
+{cut(How is user access to PostgreSQL organized?)}
 
 Users access to databases is organized according to the role model of PostgreSQL itself. The user who has maximum access to one database will have access to other databases according to the `public` scheme.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to use tags in Terraform?</summary>
+{cut(Is it possible to use tags in Terraform?)}
 
 VK Cloud does not support tags in Terraform.
 
-</details>
+{/cut}
 
-<details>
-
-<summary>Is it possible to move the database to another project?</summary>
+{cut(Is it possible to move the database to another project?)}
 
 Transferring PaaS service objects between projects is not supported. The virtual machine on which the database was deployed can only be transferred to another project as a regular virtual machine. It is not possible to migrate such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 
-</details>
+{/cut}

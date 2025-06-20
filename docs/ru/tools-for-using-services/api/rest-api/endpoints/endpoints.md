@@ -30,7 +30,7 @@
 
 </info>
 
-<details><summary>Остальные эндпоинты</summary>
+{cut(Остальные эндпоинты)}
 
 ### Cloud Containers
 
@@ -87,7 +87,7 @@
 | Quota-manager     | https://mcs.mail.ru/quota-manager                   | Просмотр [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) проекта |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Оркестрация облачных сервисов (эндпоинт устарел) |
 
-</details>
+{/cut}
 
 ## Получение Project ID
 

@@ -283,8 +283,7 @@ The DB instance is charged and consumes computational resources. After completin
    journalctl -u postgresql
    ```
 
-   <details>
-   <summary>Example output fragment</summary>
+   {cut(Example output fragment)}
 
    ```text
    -- Logs begin at Fri 2023-05-19 10:28:34 UTC, end at Mon 2023-05-22 06:08:42 UTC. --
@@ -306,7 +305,7 @@ The DB instance is charged and consumes computational resources. After completin
    ...
    ```
 
-   </details>
+   {/cut}
 
    It is possible to conclude from this output that PostgreSQL is up and running and ready to accept incoming connections.
 
@@ -387,8 +386,7 @@ All further steps must be performed from the `psql` command line.
    WHERE tablename LIKE 'sensor%';
    ```
 
-   <details>
-   <summary>Query result</summary>
+   {cut(Query result)}
 
    ```text
      tablename
@@ -398,7 +396,7 @@ All further steps must be performed from the `psql` command line.
    (2 rows)
    ```
 
-   </details>
+   {/cut}
 
 1. Convert the PostgreSQL `sensor_data` table into the TimescaleDB [hypertable](https://docs.timescale.com/use-timescale/latest/hypertables/):
 
@@ -413,8 +411,7 @@ All further steps must be performed from the `psql` command line.
    FROM timescaledb_information.hypertables;
    ```
 
-   <details>
-   <summary>Query result</summary>
+   {cut(Query result)}
 
    ```text
     hypertable_name
@@ -423,7 +420,7 @@ All further steps must be performed from the `psql` command line.
    (1 row)
    ```
 
-   </details>
+   {/cut}
 
 ## 7. Fill in the tables with the data
 
@@ -449,8 +446,7 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
    SELECT * FROM sensors;
    ```
 
-   <details>
-   <summary>Query result</summary>
+   {cut(Query result)}
 
    ```text
     id | type | location
@@ -462,7 +458,7 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
    (4 rows)
    ```
 
-   </details>
+   {/cut}
 
 1. Fill in the `sensor_data` table with randomly generated data:
 
@@ -482,8 +478,7 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
    SELECT * FROM sensor_data ORDER BY time LIMIT 8;
    ```
 
-   <details>
-   <summary>Example query result</summary>
+   {cut(Example query result)}
 
    ```text
                 time              | sensor_id |    temperature     |         cpu
@@ -499,7 +494,7 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
    (8 rows)
    ```
 
-   </details>
+   {/cut}
 
 ## 8. Execute test queries
 
@@ -521,8 +516,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
    ORDER BY period;
    ```
 
-   <details>
-   <summary>Example query result fragment</summary>
+   {cut(Example query result fragment)}
 
    ```text
             period         |      avg_temp      |       avg_cpu
@@ -540,7 +534,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
 
    ```
 
-   </details>
+   {/cut}
 
 1. Output the average temperature and CPU utilization values over thirty-minute intervals, along with the last temperature value recorded during the interval:
 
@@ -555,8 +549,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
    ORDER BY period;
    ```
 
-   <details>
-   <summary>Example query result fragment</summary>
+   {cut(Example query result fragment)}
 
    ```text
             period         |      avg_temp      |     last_temp      |       avg_cpu
@@ -573,7 +566,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
    ...
    ```
 
-   </details>
+   {/cut}
 
 Output of query results similar to the above ones indicates that PostgreSQL and TimescaleDB extension are working correctly.
 

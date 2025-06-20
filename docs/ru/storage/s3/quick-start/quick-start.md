@@ -74,8 +74,7 @@
       aws s3 presign s3://<название бакета>/<имя объекта> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      <details>
-      <summary>Пример</summary>
+      {cut(Пример)}
 
       Пусть в бакет `my-cloud-bucket` был загружен объект `cat_image_private_acl.png`.
 
@@ -85,7 +84,7 @@
       aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      </details>
+      {/cut}
 
    1. Сохраните сгенерированную временную ссылку.
 

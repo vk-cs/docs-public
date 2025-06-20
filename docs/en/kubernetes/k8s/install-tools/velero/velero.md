@@ -149,8 +149,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
    1. Create a file with the patch:
 
-      <details>
-      <summary markdown="span">velero-patch.yaml</summary>
+      {cut(velero-patch.yaml)}
 
       ```yaml
       spec:
@@ -180,7 +179,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
                     memory: 256Mi
       ```
 
-      </details>
+      {/cut}
 
    1. Apply the patch to the Velero deployment:
 

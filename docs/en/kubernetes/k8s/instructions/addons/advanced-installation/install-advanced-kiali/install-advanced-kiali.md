@@ -58,8 +58,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - Get the add-on settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
       - (Optional) To dynamically change the add-on parameters (for example, via CI), add the add-on settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the required values.
 
-      <details>
-         <summary>Example of specifying an add-on</summary>
+      {cut(Example of specifying an add-on)}
 
          ```hcl
          resource "vkcs_kubernetes_addon" "kiali-server" {
@@ -74,7 +73,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
          }
          ```
 
-      </details>
+      {/cut}
 
    1. Check the Terraform configuration file for correctness:
 

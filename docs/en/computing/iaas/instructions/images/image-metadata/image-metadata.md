@@ -79,8 +79,7 @@ If your local copy of the libosinfo database does not contain information about 
 </tabpanel>
 </tabs>
 
-<details>
-  <summary markdown="span">Example of installing meta tags for a Windows VM image with drivers `virtio`</summary>
+{cut(Example of installing meta tags for a Windows VM image with drivers `virtio`)}
 
   1. Determine the Windows OS version:
 
@@ -114,7 +113,7 @@ If your local copy of the libosinfo database does not contain information about 
      | properties | hw_vif_model=virtio, os_distro=win2k16, os_require_quiesce=yes, os_type=windows |
      ```
 
-</details>
+{/cut}
 
 ## Deleting a meta tag
 

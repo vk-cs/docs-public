@@ -47,8 +47,7 @@ curl -X GET \
 https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
-<details>
-   <summary>Response example</summary>
+{cut(Response example)}
 
 ```json
 {
@@ -71,7 +70,7 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 }
 ```
 
-</details>
+{/cut}
 
 ## Create new backup plan for VM
 
@@ -86,8 +85,7 @@ curl -X GET \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
-<details>
-   <summary>Response example</summary>
+{cut(Response example)}
 
 ```json
 {
@@ -102,7 +100,7 @@ curl -X GET \
 }
 ```
 
-</details>
+{/cut}
 
 ### 2. Create backup plan
 
@@ -133,8 +131,7 @@ curl -X POST \
         https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
-<details>
-   <summary>Response example</summary>
+{cut(Response example)}
 
 ```json
 {
@@ -156,7 +153,7 @@ curl -X POST \
 }
 ```
 
-</details>
+{/cut}
 
 ### 3. Create trigger
 
@@ -181,8 +178,7 @@ curl -s -X POST \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/triggers
 ```
 
-<details>
-   <summary>Response example</summary>
+{cut(Response example)}
 
 ```json
 {
@@ -200,4 +196,4 @@ curl -s -X POST \
 }
 ```
 
-</details>
+{/cut}

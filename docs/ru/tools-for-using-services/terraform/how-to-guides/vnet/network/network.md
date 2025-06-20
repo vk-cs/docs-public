@@ -88,13 +88,12 @@
 
 - `external_network_id` — идентификатор внешней сети для доступа к интернету. Идентификатор можно указать в манифесте или получить из источника данных.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `external_network_id = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`.
   - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: указывается идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `fixed_ip` — фиксированный IP-адрес для порта. Укажите в блоке следующие аргументы:
 
@@ -103,51 +102,47 @@
 
 - `network_id` — идентификатор сети. В примерах подсеть размещена в новой сети. Подсеть также можно разместить в существующей сети, а идентификатор можно указать в манифесте или получить из источника данных.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `network_id = vkcs_networking_network.example.id`: подсеть будет размещена в новой сети, которая будет создана ресурсом `vkcs_networking_network`.
   - `network_id = data.vkcs_networking_network.example.id`: подсеть будет размещена в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`.
   - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: подсеть будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `pool` — пул Floating IP-адресов: `internet` для [SDN](/ru/networks/vnet/concepts/sdn) Sprut, `ext-net` для SDN Neutron.
 
 - `port_id` — идентификатор порта, с которым будет связан Floating IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор порта будет получен после создания ресурса `vkcs_networking_port`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор порта будет получен из источника данных `vkcs_networking_port`.
   - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка портов](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `router_id` — идентификатор маршрутизатора, с которым будет связана подсеть. В примере подсеть связана с новым маршрутизатором. Подсеть также можно связать c существующим маршрутизатором, а идентификатор можно указать в манифесте или получить из источника данных.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `router_id = vkcs_networking_subnet.example.id`: подсеть будет связана с новым маршрутизатором, который будет создан ресурсом `vkcs_networking_router`.
   - `router_id = data.vkcs_networking_subnet.example.id`: подсеть будет связана с существующим маршрутизатором, его идентификатор берется из источника данных `vkcs_networking_router`.
   - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: подсеть будет связана с существующим маршрутизатором. Указывается его идентификатор, полученный из [списка маршрутизаторов](/ru/networks/vnet/instructions/router#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `sdn` — [SDN](/ru/networks/vnet/concepts/sdn), в которой создается ресурс (сеть, подсеть, маршрутизатор и пр.). Доступные значения: `neutron`, `sprut`. Если SDN не указана, используется SDN по умолчанию. Узнать, какие SDN подключены для вашего проекта, можно в [настройках проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#sdn_view).
 
 - `subnet_id` — идентификатор подсети. Идентификатор можно указать в манифесте, получить из источника данных или после создания ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `subnet_id = vkcs_networking_subnet.example.id`: идентификатор подсети будет получен после ее создания ресурсом `vkcs_networking_subnet`.
   - `subnet_id = data.vkcs_networking_subnet.example.id`: идентификатор подсети берется из источника данных `vkcs_networking_subnet`.
   - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указывается идентификатор подсети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 ## 2. Создайте необходимые ресурсы с помощью Terraform
 

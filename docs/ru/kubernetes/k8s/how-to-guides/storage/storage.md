@@ -88,8 +88,7 @@
 
    Для ресурса PersistentVolume укажите идентификатор созданного диска в параметре `spec.cinder.volumeID`.
 
-   <details>
-   <summary markdown="span">tea.yaml</summary>
+   {cut(tea.yaml)}
 
    ```yaml
    ---
@@ -175,7 +174,7 @@
        app: tea
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
@@ -204,8 +203,7 @@
 
 1. Создайте манифест для приложения `coffee`.
 
-   <details>
-   <summary markdown="span">coffee.yaml</summary>
+   {cut(coffee.yaml)}
 
    ```yaml
    ---
@@ -276,7 +274,7 @@
        app: coffee
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
@@ -315,8 +313,7 @@
 
 1. Создайте манифест для приложения `juice`.
 
-   <details>
-   <summary markdown="span">juice.yaml</summary>
+   {cut(juice.yaml)}
 
    ```yaml
    ---
@@ -410,7 +407,7 @@
        statefulset.kubernetes.io/pod-name: juice-1
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
@@ -479,8 +476,7 @@
    - IP-адрес из параметра **Точка подключения** файлового хранилища в качестве значения параметра `spec.nfs.server`.
    - Данные после IP-адреса (`/shares/...`) в качестве значения параметра `spec.nfs.path`.
 
-   <details>
-   <summary markdown="span">milkshake.yaml</summary>
+   {cut(milkshake.yaml)}
 
    ```yaml
    apiVersion: v1
@@ -617,7 +613,7 @@
        statefulset.kubernetes.io/pod-name: milkshake-1
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 
@@ -632,8 +628,7 @@
 
 1. Создайте манифест для ресурса Ingress, через который будут проходить запросы к приложениям.
 
-   <details>
-   <summary markdown="span">cafe-ingress.yaml</summary>
+   {cut(cafe-ingress.yaml)}
 
    ```yaml
    ---
@@ -705,7 +700,7 @@
                  number: 80
    ```
 
-   </details>
+   {/cut}
 
 1. Примените этот манифест в кластере для создания всех необходимых ресурсов:
 

@@ -99,14 +99,13 @@
 
 - `port_id` — идентификатор порта, с которым будет связан Floating IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор порта будет получен после создания ресурса `vkcs_networking_port`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор порта будет получен из источника данных `vkcs_networking_port`.
   - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка портов](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `port_range_max` — верхняя граница разрешенного диапазона портов, целое число от 1 до 65535. Чтобы выбрать все порты, не указывайте аргументы `port_range_min` и `port_range_max`.
 
@@ -118,14 +117,13 @@
 
 - `security_group_id` — идентификатор группы безопасности, для которой создается правило. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  <details>
-    <summary>Примеры</summary>
+  {cut(Примеры)}
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор группы безопасности будет получен после создания ресурса `vkcs_networking_secgroup`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор группы безопасности будет получен из источника данных `vkcs_networking_secgroup`.
   - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка групп безопасности](/ru/networks/vnet/instructions/secgroups#prosmotr_spiska_grupp_bezopasnosti_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `security_group_ids` — массив идентификаторов групп безопасности.
 

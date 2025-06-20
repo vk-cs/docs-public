@@ -100,8 +100,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
 1. В появившейся строке введите пароль `AN0r25e0ae4d626p!` для пользователя `user`.
 
-   <details>
-       <summary>Ожидаемый вывод команды</summary>
+   {cut(Ожидаемый вывод команды)}
 
       ```console
        pg_restore: creating TABLE "public.test-db"
@@ -117,7 +116,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
        pg_restore: creating CONSTRAINT "public.test-db test-db_pkey"
        ```
 
-   </details>
+   {/cut}
 
 ## 3. Проверьте загруженные данные в VK Cloud
 

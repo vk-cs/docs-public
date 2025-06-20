@@ -246,8 +246,7 @@ Specify the following parameters in the request body in the `options` block:
 - To ignore specified parameters — `ignoreQueryString` (`value`=`false`), `query_params_blacklist`.
 - To ignore all parameters except specified — `ignoreQueryString` (`value`=`false`), `query_params_whitelist`.
 
-<details>
-<summary>Example request to ignore all query parameters in HTTP requests</summary>
+{cut(Example request to ignore all query parameters in HTTP requests)}
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -267,9 +266,8 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</details>
-<details>
-<summary>Example request to ignore specified query parameters in HTTP requests</summary>
+{/cut}
+{cut(Example request to ignore specified query parameters in HTTP requests)}
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -296,9 +294,8 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</details>
-<details>
-<summary>Example request to ignore all query parameters in HTTP requests except specified</summary>
+{/cut}
+{cut(Example request to ignore all query parameters in HTTP requests except specified)}
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -325,7 +322,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</details>
+{/cut}
 
 </tabpanel>
 </tabs>

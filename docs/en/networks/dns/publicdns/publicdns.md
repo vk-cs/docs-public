@@ -189,8 +189,7 @@ To add a resource record:
 1. Click the button **Add record**.
 1. Fill in the fields depending on the value **Record type**:
 
-   <details>
-    <summary>CNAME</summary>
+   {cut(CNAME)}
 
    - **Name** (the alias being added):
 
@@ -203,9 +202,8 @@ To add a resource record:
 
    Example: you need to create a CNAME record `www.example.com` pointing to `example.com`. To do this, enter `www` in the **Name** field, and in the **Value** — `example.com`.
 
-   </details>
-   <details>
-    <summary>A</summary>
+   {/cut}
+   {cut(A)}
 
    - **Name**:
 
@@ -216,9 +214,8 @@ To add a resource record:
    - **Time to live (TTL)**: cache lifetime in seconds.
    - **IP address**: IP address (IPv4). Select from the list of existing VMs or specify a new one.
 
-   </details>
-   <details>
-    <summary>MX</summary>
+   {/cut}
+   {cut(MX)}
 
    - **Name**:
 
@@ -229,9 +226,8 @@ To add a resource record:
    - **Time to live (TTL)**: cache lifetime in seconds.
    - **Value**: FQDN is the address of the mail server. The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, special characters `.` and `-` are allowed.
 
-   </details>
-   <details>
-    <summary>AAAA</summary>
+   {/cut}
+   {cut(AAAA)}
 
    - **Name**:
 
@@ -242,9 +238,8 @@ To add a resource record:
    - **Time to live (TTL)**: cache lifetime in seconds.
    - **IP address**: IP address (IPv6).
 
-   </details>
-   <details>
-    <summary>SRV</summary>
+   {/cut}
+   {cut(SRV)}
 
    - **Name**:
 
@@ -260,9 +255,8 @@ To add a resource record:
    - **Time to live (TTL)**: cache lifetime in seconds.
    - **Host**: FQDN of the host hosting the service. The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, special characters `.` and `-` are allowed.
 
-   </details>
-   <details>
-    <summary>TXT</summary>
+   {/cut}
+   {cut(TXT)}
 
    - **Name**:
 
@@ -273,9 +267,8 @@ To add a resource record:
    - **Time to live (TTL)**: cache lifetime in seconds.
    - **Value**: the text value of the resource record.
 
-   </details>
-   <details>
-    <summary>NS</summary>
+   {/cut}
+   {cut(NS)}
 
    - **Name**:
 
@@ -285,7 +278,7 @@ To add a resource record:
    - **Time to live (TTL)**: cache lifetime in seconds.
    - **Value**: the address of the NS server, for example, `ns1.mcs.mail.ru` or `ns2.mcs.mail.ru`.
 
-   </details>
+   {/cut}
 
 1. Click the button **Add record**.
 

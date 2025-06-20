@@ -40,8 +40,7 @@
 
    В выводе команды должна содержаться информация о GPG-ключе репозитория Docker.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    /etc/apt/trusted.gpg
@@ -54,7 +53,7 @@
    ...
    ```
 
-   </details>
+   {/cut}
 
 1. Подключите репозиторий Docker:
 
@@ -75,8 +74,7 @@
 
    В выводе команды должна содержаться информация о доступных для установки версиях пакета `docker-ce`.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    docker-ce:
@@ -98,7 +96,7 @@
        ...
    ```
 
-   </details>
+   {/cut}
 
 1. Установите Docker CE:
 
@@ -120,8 +118,7 @@
 
    В выводе команды должна содержаться информация о том, что сервис находится в состоянии `active (running)`.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    ● docker.service - Docker Application Container Engine
@@ -145,7 +142,7 @@
    Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.360190638Z" level=info msg="API listen on /run/docker.sock"
    ```
 
-   </details>
+   {/cut}
 
 1. Посмотрите общую информацию об установленном Docker CE:
 
@@ -153,8 +150,7 @@
    sudo docker info
    ```
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    Client:
@@ -211,7 +207,7 @@
    WARNING: No swap limit support
    ```
 
-   </details>
+   {/cut}
 
 1. Запустите тестовый контейнер `hello-world`:
 
@@ -221,8 +217,7 @@
 
    Контейнер выведет приветственное сообщение и завершит работу.
 
-   <details>
-   <summary>Пример вывода</summary>
+   {cut(Пример вывода)}
 
    ```text
    Hello from Docker!
@@ -247,4 +242,4 @@
     https://docs.docker.com/get-started/
    ```
 
-   </details>
+   {/cut}

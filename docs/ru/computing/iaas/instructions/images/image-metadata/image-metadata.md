@@ -85,8 +85,7 @@
 </tabpanel>
 </tabs>
 
-<details>
-  <summary markdown="span">Пример установки метатегов для образа ВМ Windows с драйверами `virtio`</summary>
+{cut(Пример установки метатегов для образа ВМ Windows с драйверами `virtio`)}
 
   1. Определите версию ОС Windows:
   
@@ -120,7 +119,7 @@
      | properties | hw_vif_model=virtio, os_distro=win2k16, os_require_quiesce=yes, os_type=windows |
      ```
 
-</details>
+{/cut}
 
 ## Удаление метатега
 

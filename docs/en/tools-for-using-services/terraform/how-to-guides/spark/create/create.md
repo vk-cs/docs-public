@@ -70,29 +70,26 @@ Here:
 
 - `network_id` — an ID of the network where the cluster will be hosted. The cluster can be hosted on an existing network or a new one. You can specify the ID in the manifest or get it from the data source or resource.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `flavor_id` — a VM type ID. You can specify the ID in the manifest or get it from the data source.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: the ID is taken from the `vkcs_compute_flavor` data source, which will be generated further.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `registry_id` — an ID of the Docker registry that provides images for running Spark jobs. You can create a new registry or use an existing one.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: a new Docker registry will be created and hosted on a dedicated K8S Docker Registry virtual machine, which is not part of the cluster and is billed separately. The ID will be taken after the `vkcs_mlplatform_k8s_registry` resource is created. The resource will be generated further.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: an ID of an existing K8S Docker Registry. To get the K8S Docker Registry ID:
@@ -102,17 +99,16 @@ Here:
     1. Go to the **Instances** tab.
     1. Click the name of the Docker Registry instance you need.
 
-  </details>
+  {/cut}
 
 - `ip_pool` — an external network ID for the cluster IP address pool.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
   - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `spark_configuration` — properties of the [Spark configuration](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
 
@@ -145,34 +141,31 @@ Here:
 
 - `flavor_id` — a VM type ID. You can specify the ID in the manifest or get it from the data source.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: the ID is taken from the `vkcs_compute_flavor` data source, which will be generated further.
   - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
-  </details>
+  {/cut}
 
 - `network_id` — an ID of the network where the cluster will be hosted. The cluster can be hosted on an existing network or a new one. You can specify the ID in the manifest or get it from the data source or resource.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
   - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 - `ip_pool` — an external network ID for the cluster IP address pool.
 
-  <details>
-    <summary>Examples</summary>
+  {cut(Examples)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
   - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
-  </details>
+  {/cut}
 
 ## 3. (Optional) Create a file describing the data source for the VM type
 

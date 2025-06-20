@@ -278,8 +278,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    openstack flavor list
    ```
 
-   <details>
-   <summary>Example of the command output</summary>
+   {cut(Example of the command output)}
 
    ```console
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
@@ -294,7 +293,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    | 19dc16ec-6d6c-XXXX-af1a-ff5cbb056bed | STD3-6-12         | 12288 |    0 |         0 |     6 | True      |
    ```
 
-   </details>
+   {/cut}
 
 - Output information about a specific image:
 
@@ -302,8 +301,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
 
-   <details>
-   <summary>Example of the command output (shortened)</summary>
+   {cut(Example of the command output (shortened))}
 
     ```console
     +------------------+------------------------------------------------------+
@@ -330,7 +328,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
     +------------------+------------------------------------------------------+
     ```
 
-   </details>
+   {/cut}
 
 - Get the list of [availability zones](/en/intro/start/concepts/architecture#az):
 
@@ -338,8 +336,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    openstack availability zone list
    ```
 
-   <details>
-   <summary>The example result of running the command</summary>
+   {cut(The example result of running the command)}
 
     ```console
     +-----------+-------------+
@@ -351,4 +348,4 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
     +-----------+-------------+
     ```
 
-   </details>
+   {/cut}

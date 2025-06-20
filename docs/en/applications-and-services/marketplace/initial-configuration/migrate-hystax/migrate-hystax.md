@@ -1,7 +1,6 @@
 You can migrate your resources to VK Cloud using the [Hystax Acura Migration](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) service without suspending applications. You can transfer resources from both virtual and physical platforms.
 
-<details>
-  <summary>Where can I transfer data from?</summary>
+{cut(Where can I transfer data from?)}
 
 **Supported platforms**: VK Cloud, Yandex Cloud, CROC Cloud, SberCloud, Basis.Cloud, OpenStack, VMware, Amazon Web Services, Google Cloud Platform, Microsoft Azure, Oracle Cloud, Alibaba Cloud, Hyper-V, as well as physical machines.
 
@@ -9,7 +8,7 @@ You can migrate your resources to VK Cloud using the [Hystax Acura Migration](ht
 
 **Supported operating systems**: Windows, RHEL, CentOS, Debian, Ubuntu, Astra Linux, AltLinux, Red OS. The full list of OS and their versions available for migration is provided on the [VM creation](/en/computing/iaas/instructions/vm/vm-create#create_a_vm) page in your management console.
 
-</details>
+{/cut}
 
 This instruction will help you migrate your resources to VK Cloud using the Hystax Acura Migration service using the example of the `Ubuntu-MR` VM with the Ubuntu 18.04 operating system.
 
@@ -44,8 +43,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 
    </info>
 
-   <details>
-     <summary>Ansible manifest for installing agents</summary>
+   {cut(Ansible manifest for installing agents)}
 
    ```yaml
    - hosts: all
@@ -95,7 +93,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
          become: yes
    ```
 
-   </details>
+   {/cut}
 
    After installing the VM agent, `Ubuntu-DR` will appear on the main page of Hystax Acura [personal account](https://migration.mcs-cloud.ru) with **Discovered** status.
 
@@ -112,8 +110,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 
 1. Adjust the plan parameters according to your VM migration requirements.
 
-   <details>
-    <summary>Example of a single VM migration plan</summary>
+   {cut(Example of a single VM migration plan)}
 
     This plan describes one VM and a subnet in which the migrated VM will be deployed.
 
@@ -177,7 +174,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 
    Find the detailed description of the parameters in the official [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description) documentation, the description of user metadata — in the [Images meta tags](/en/computing/iaas/instructions/images/image-metadata) section.
 
-   </details>
+   {/cut}
 
 1. Click the **Save** button.
 

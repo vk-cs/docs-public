@@ -93,8 +93,7 @@ Each action log record provides the information:
 
 To split the output of records to the console or file into lines, the requests use [the jq utility](/en/tools-for-using-services/api/rest-api/install-jq).
 
-<details>
-    <summary>Retrieving the latest log records</summary>
+{cut(Retrieving the latest log records)}
 
 To get the last 2 records from the action log of the Magnum component, run the request:
 
@@ -148,10 +147,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-    <summary>Retrieving log records for a given period</summary>
+{cut(Retrieving log records for a given period)}
 
 To get the last 2 records from the action log of the Nova component for a given period, run the request:
 
@@ -204,10 +202,9 @@ Response example:
 }
 ```
 
-</details>
+{/cut}
 
-<details>
-    <summary>Using the marker parameter</summary>
+{cut(Using the marker parameter)}
 
 Using the `marker` parameter, a large request for log records can be divided into several partial requests. Action log records are arranged in reverse order of time, with the most recent at the beginning of the log. So the first partial request will return a bunch of the most recent records, the next one will return a bunch of earlier records, and so on.
 
@@ -252,4 +249,4 @@ To output all log records of the Nova component for a given period into files in
 
 4. Repeat the previous request, changing only the file name (for example: `nova_part3.log`, `nova_part4.log`, ...), until you get all the log records for the specified period.
 
-</details>
+{/cut}

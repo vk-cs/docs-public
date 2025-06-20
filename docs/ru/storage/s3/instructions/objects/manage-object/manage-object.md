@@ -33,8 +33,7 @@
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды просмотра списка объектов</summary>
+   {cut(Пример команды просмотра списка объектов)}
 
       Пример команды:
 
@@ -53,7 +52,7 @@
       2023-09-27 11:48:56        361 delete-picture.png
       ```
 
-   </details>
+   {/cut}
 
 Описание доступных параметров для команды просмотра списка объектов — в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html).
 
@@ -182,8 +181,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды скачивания объекта</summary>
+   {cut(Пример команды скачивания объекта)}
 
       Пример команды:
 
@@ -202,7 +200,7 @@
        "Metadata": {}
        }
       ```
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -343,8 +341,7 @@
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды настройки доступа к объекту</summary>
+   {cut(Пример команды настройки доступа к объекту)}
 
       Пример команды:
 
@@ -352,7 +349,7 @@
       aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-   </details>
+   {/cut}
 
 Полное описание операции изменения ACL объекта доступно в [официальной документации AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-acl.html).
 
@@ -391,8 +388,7 @@
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    - `<СРОК_ДЕЙСТВИЯ>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
 
-   <details>
-      <summary>Пример команды формирования подписанного URL</summary>
+   {cut(Пример команды формирования подписанного URL)}
 
    Пример команды:
 
@@ -406,7 +402,7 @@
    https://hb.ru-msk.vkcloud-storage.ru/dd-winscp/usetech.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4TucX9HhP8RZveR9Cb3vGr%2F20231113%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20231113T104239Z&X-Amz-Expires=300000&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7c4d87d12dd12f8f420ffaed84328f1d6a79050818fd4c615b219ce7bc18e9
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -581,8 +577,7 @@
 
    - `<СРОК_БЛОКИРОВКИ>` — срок блокировки в днях (`Days`) или годах (`Years`) от момента загрузки объекта. Нельзя указать `Days` и `Years` одновременно.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-lock-configuration --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my_bucket --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "COMPLIANCE", "Days": 30 }}}'
@@ -590,7 +585,7 @@
 
    Команда не выводит ответа. Для всех новых объектов, загружаемых в `my_bucket`, будет устанавливаться строгий режим блокировки на срок в 30 дней. Для уже загруженных в `my_bucket` объектов режим блокировки не изменится.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -629,8 +624,7 @@
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого запрашивается конфигурация блокировки по умолчанию.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api get-object-lock-configuration --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my_bucket
@@ -647,7 +641,7 @@
             "Days": 30 }}}}
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    </tabs>
@@ -705,8 +699,7 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
    - `<ПУТЬ_К_ФАЙЛУ>` — путь к локальному файлу.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image.png --body image.png --object-lock-legal-hold-status ON
@@ -720,7 +713,7 @@
    }
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -743,8 +736,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-legal-hold --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --legal-hold Status=ON
@@ -752,7 +744,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -775,8 +767,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-legal-hold --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --legal-hold Status=OFF
@@ -784,7 +775,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -805,8 +796,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api get-object-legal-hold --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image.png
@@ -822,7 +812,7 @@
    }
    ```
 
-   </details>
+   {/cut}
 
    <info>
 
@@ -887,8 +877,7 @@
 
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --body image.png --object-lock-mode GOVERNANCE --object-lock-retain-until-date '2025-05-15 12:00:00'
@@ -902,7 +891,7 @@
    }
    ```
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -931,8 +920,7 @@
 
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "2025-05-15 12:00:00"}'
@@ -940,7 +928,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -969,8 +957,7 @@
 
    - `<YYYY-MM-DD HH:MM:SS>` — новая более поздняя дата и время окончания блокировки.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "2025-08-15 21:00:00"}'
@@ -978,7 +965,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -999,8 +986,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api get-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image1.png
@@ -1017,7 +1003,7 @@
    }
    ```
 
-   </details>
+   {/cut}
 
    <info>
 
@@ -1084,8 +1070,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api delete-object --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention
@@ -1093,7 +1078,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -1117,8 +1102,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention --retention '{}'
@@ -1126,7 +1110,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -1151,8 +1135,7 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
    - `<YYYY-MM-DD HH:MM:SS>` — новая более ранняя дата и время окончания блокировки.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention --retention '{ "Mode": "GOVERNANCE", "RetainUntilDate": "2025-04-10 10:00:00"}' 
@@ -1160,7 +1143,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    <tabpanel>
@@ -1185,8 +1168,7 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
-   <details>
-   <summary>Пример команды</summary>
+   {cut(Пример команды)}
 
    ```console
    aws s3api put-object-retention --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --bucket my-bucket-with-lock --key images/image2.png --bypass-governance-retention --retention '{ "Mode": "COMPLIANCE", "RetainUntilDate": "2025-05-15 12:00:00"}' 
@@ -1194,7 +1176,7 @@
 
    Команда не выводит ответа.
 
-   </details>
+   {/cut}
 
    </tabpanel>
    </tabs>
@@ -1231,8 +1213,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды копирования объекта в другой бакет</summary>
+   {cut(Пример команды копирования объекта в другой бакет)}
 
    Пример команды:
 
@@ -1246,7 +1227,7 @@
    copy: s3://my-bucket/my-picture.png to s3://my-another-bucket/my-picture.png
    ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -1369,8 +1350,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды копирования всех объектов бакета в другой бакет</summary>
+   {cut(Пример команды копирования всех объектов бакета в другой бакет)}
 
       Пример команды:
 
@@ -1387,7 +1367,7 @@
       copy: s3://my-bucket/example.txt to s3://my-another-bucket/example.txt
       ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 </tabs>
@@ -1439,8 +1419,7 @@
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды удаления объекта</summary>
+   {cut(Пример команды удаления объекта)}
 
       Пример команды:
 
@@ -1454,7 +1433,7 @@
       delete: s3://my-bucket/my-picture.png
       ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 <tabpanel>
@@ -1602,8 +1581,7 @@
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-   <details>
-      <summary>Пример команды просмотра незавершенных загрузок</summary>
+   {cut(Пример команды просмотра незавершенных загрузок)}
 
       Пример команды:
 
@@ -1635,7 +1613,7 @@
       }
       ```
 
-   </details>
+   {/cut}
 
 </tabpanel>
 </tabs>

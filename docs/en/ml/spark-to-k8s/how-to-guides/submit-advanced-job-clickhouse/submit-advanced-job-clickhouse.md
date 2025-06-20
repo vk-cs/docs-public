@@ -279,8 +279,7 @@ When submitting a Spark job, the paths to the files uploaded to the bucket will 
    print(logs)
    ```
 
-   <details>
-   <summary>Example of partial output when the job completes successfully</summary>
+   {cut(Example of partial output when the job completes successfully)}
 
    ```text
    ...
@@ -317,7 +316,7 @@ When submitting a Spark job, the paths to the files uploaded to the bucket will 
    ...
    ```
 
-   </details>
+   {/cut}
 
 1. (Optional) Get information about events in the cluster. Such information allows you to find out the current status of the cluster and jobs, for example, when investigating issues.
 

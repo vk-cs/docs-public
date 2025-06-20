@@ -56,8 +56,7 @@ To deploy a DNS server:
 
 1. Create a manifest file for NodeLocal DNS:
 
-   <details>
-   <summary markdown="span">nodelocaldns.yaml</summary>
+   {cut(nodelocaldns.yaml)}
 
    ```yaml
    # Copyright 2018 The Kubernetes Authors.
@@ -273,7 +272,7 @@ To deploy a DNS server:
        k8s-app: node-local-dns
    ```
 
-   </details>
+   {/cut}
 
    This file is based on the [manifest from the official Kubernetes repository](https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml), taking into account the configuration above.
 

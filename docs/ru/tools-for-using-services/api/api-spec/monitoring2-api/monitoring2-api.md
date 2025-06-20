@@ -6,8 +6,7 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/monitoring-services/monitorin
 
 Запросы на чтение метрик формулируются на языке [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 
-<details>
-  <summary markdown="span">Получение эндпоинта, авторизация и аутентификация</summary>
+{cut(Получение эндпоинта, авторизация и аутентификация)}
 
 1. Убедитесь, что на проекте включен сервис Cloud Monitoring 2.0, при необходимости подключите его через [техническую поддержку](/ru/contacts).
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
@@ -26,7 +25,7 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/monitoring-services/monitorin
 
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
-</details>
+{/cut}
 
 <info>
 
