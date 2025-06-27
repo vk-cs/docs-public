@@ -150,7 +150,7 @@ SaaS-брокер обеспечивает взаимодействие конк
 
 |Предоплатный (Upfront Commitment)
 |
-Оплата за сервис списывается раз в отчетный период в дату подключения сервиса или дату смены тарифного плана. Длительность отчетного периода и дата списания настраиваются в конфигурации сервиса (подробнее — в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibplan/#ibplan)[text=%text]}, {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan/#saas_plan_param)[text=%text]}).
+Оплата за сервис списывается раз в отчетный период в дату подключения сервиса или дату смены тарифного плана. Длительность отчетного периода и дата списания настраиваются в конфигурации сервиса (подробнее — в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibplan#ibplan)[text=%text]}, {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan#saas_plan_param)[text=%text]}).
 
 Стоимость фиксированная.
 
@@ -227,13 +227,13 @@ Pull-модель — способ получения метрик по факт
 1. Магазин рассчитывает стоимость использованных ресурсов на основании полученного отчета.
 1. После обработки отчета (списание денежных средств по этому отчету произошло или запланировано) магазин сообщает брокеру `batch_id` этого отчета. В дальнейшем обработанные отчеты брокер не будет передавать магазину.
 
-Периодичность, с которой запросы от магазина направляются брокеру, настраивается в параметре `billing_cycle_step` в конфигурации сервиса (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan/#saas_plan_param)[text=%text]}).
+Периодичность, с которой запросы от магазина направляются брокеру, настраивается в параметре `billing_cycle_step` в конфигурации сервиса (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_configure/saas_plan#saas_plan_param)[text=%text]}).
 
 {caption(Рисунок {counter(pic)[id=numb_pic_xaas_saas_broker_resource_usage]} — Передача отчета между магазином и брокером)[align=center;position=under;id=pic_xaas_saas_broker_resource_usage;number={const(numb_pic_xaas_saas_broker_resource_usage)} ]}
 ![pic1](../../assets/SaaS_broker_resource_usage.png){params[noBorder=true]}
 {/caption}
 
-В SaaS-брокере должны быть реализованы методы, передающие отчет магазину. Формат отчета приведен в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker/#saas_broker)[text=%text]}.
+В SaaS-брокере должны быть реализованы методы, передающие отчет магазину. Формат отчета приведен в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/saas_add/saas_broker#saas_broker)[text=%text]}.
 
 ### {heading(Push-модель постоплатной тарификации)[id=billing_push]}
 

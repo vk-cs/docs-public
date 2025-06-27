@@ -9,4 +9,4 @@ Marketplace позволяет размещать следующие типы с
 * SaaS-приложение.
 * Image-based приложение.
 
-Более подробная информация о типах сервисов приведена в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_vendor_index_type_services)[text=%text]}. Определения используемых терминов (например, инстанс сервиса, сервисная привязка) можно найти а разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/glossary/#glossary)[text=%text]}.
+Более подробная информация о типах сервисов приведена в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_vendor_index_type_services)[text=%text]}. Определения используемых терминов (например, инстанс сервиса, сервисная привязка) можно найти а разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/glossary#glossary)[text=%text]}.

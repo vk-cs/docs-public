@@ -6,7 +6,7 @@ You can create a database using [step-by-step instructions](../instructions/crea
 
 {cut(Which DBMS are available in the cloud?)}
 
-Full [list](../types/) of supported DBMS and their [configurations](../concepts/work-configs).
+Full [list](../types) of supported DBMS and their [configurations](../concepts/work-configs).
 
 {/cut}
 

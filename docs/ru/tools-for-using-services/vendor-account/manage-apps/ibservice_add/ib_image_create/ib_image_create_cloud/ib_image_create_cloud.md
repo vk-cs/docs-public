@@ -11,7 +11,7 @@
 
       <warn>
 
-      ОС должна удовлетворять {linkto(../ib_image_requirements/#ib_image_requirements)[text=%text]}.
+      ОС должна удовлетворять {linkto(../ib_image_requirements#ib_image_requirements)[text=требованиям к образу сервиса]}.
 
       </warn>
    1. Подтвердите создание ВМ.
@@ -32,7 +32,7 @@
       * `<USER_NAME>` — имя пользователя ОС. Укажите имя в зависимости от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
       * `<FLOATING_IP>` — внешний IP-адрес ВМ.
 
-   1. Если на ВМ не установлены программные пакеты, указанные в {linkto(../ib_image_requirements/#ib_image_requirements)[text=%text]}, установите их.
+   1. Если на ВМ не установлены программные пакеты, указанные в {linkto(../ib_image_requirements#ib_image_requirements)[text=требованиях к образу сервиса]}, установите их.
 
       {caption(Пример команды, чтобы установить `curl` на ОС Ubuntu)[align=left;position=above]}
       ```console
@@ -41,7 +41,7 @@
       {/caption}
 
    1. Установите ПО image-based приложения на ВМ.
-   1. Если требуется отправлять метрики в сервис Cloud Monitoring, установите агент мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm/#ib_cloud_monitoring_telegraf_image)[text=%text]}).
+   1. Если требуется отправлять метрики в сервис Cloud Monitoring, установите агент мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm#ib_cloud_monitoring_telegraf_image)[text=%text]}).
 
 1. Очистите ВМ от чувствительных данных:
 
@@ -98,7 +98,7 @@
 
    <err>
 
-   Перед публикацией сервиса в магазине образ будет опубликован в облачной платформе (подробнее — в разделе {linkto(../../../ibservice_add/ibservice_upload/ibservice_upload_publish_image/#ibservice_upload_publish_image)[text=%text]}). На основе публичного образа будут развертываться инстансы сервиса у пользователей облачной платформы. Данные образа будут общедоступными.
+   Перед публикацией сервиса в магазине образ будет опубликован в облачной платформе (подробнее — в разделе {linkto(../../../ibservice_add/ibservice_upload/ibservice_upload_publish_image#ibservice_upload_publish_image)[text=%text]}). На основе публичного образа будут развертываться инстансы сервиса у пользователей облачной платформы. Данные образа будут общедоступными.
 
    </err>
 1. Остановите ВМ:

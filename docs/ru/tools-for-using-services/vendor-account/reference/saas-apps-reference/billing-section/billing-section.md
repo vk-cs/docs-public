@@ -1,4 +1,4 @@
-Секция  `billing` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add/#service_config) содержит следующую информацию:
+Секция `billing` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) содержит следующую информацию:
 
 * Стоимость тарифного плана. Поддерживается предоплатная тарификация.
 * Шаг изменения для тарифных опций типа `integer`.
@@ -7,7 +7,7 @@
   * Числовой (`integer`, `number`). Поддерживается предоплатная и постоплатная тарификация.
   * Логический (`boolean`). Поддерживается предоплатная тарификация.
 
-Подробнее о типах тарификации — в разделе [Тарификация](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing).
+Подробнее о типах тарификации — в разделе [Тарификация](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing).
 
 <warn>
 
@@ -106,7 +106,7 @@
 
 <warn>
 
-Если сбор метрик происходит по [pull-модели](../../../manage-apps/concepts/about#billing_pull), стоимость должна соответствовать значению `price`, [указанному в методе брокера](../../../manage-saas-apps/saas-add/#saas_broker) для передачи отчета в Marketplace.
+Если сбор метрик происходит по [pull-модели](../../../manage-apps/concepts/about#billing_pull), стоимость должна соответствовать значению `price`, [указанному в методе брокера](../../../manage-saas-apps/saas-add#saas_broker) для передачи отчета в Marketplace.
 
 </warn>
 |float64, >= 0

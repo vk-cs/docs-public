@@ -1,4 +1,4 @@
-Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add/#service_config) в секции `plans`.
+Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) в секции `plans`.
 
 [cols="2,4,2,1,2", options="header"]
 |===
@@ -103,7 +103,7 @@
 |`billing_cycle_step`
 |Может быть задан только для тарифного плана с постоплатными тарифными опциями.
 
-Определяет, с каким периодом Marketplace проверяет, есть ли в брокере необработанные отчеты. Подробнее — в разделе [Тарификация](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing).
+Определяет, с каким периодом Marketplace проверяет, есть ли в брокере необработанные отчеты. Подробнее — в разделе [Тарификация](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing).
 
 Формат записи: `<КОЛИЧЕСТВО_МЕСЯЦЕВ> mons <КОЛИЧЕСТВО_ДНЕЙ> days`. Например, `1 mons 15 days` или `30 days`.
 

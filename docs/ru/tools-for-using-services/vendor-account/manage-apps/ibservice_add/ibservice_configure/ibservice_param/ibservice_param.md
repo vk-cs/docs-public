@@ -114,7 +114,7 @@ URL документации сервиса
 
 </err>
 
-На основании тарифных планов и опций, указанных в секциях `plans` и `preview`, формируется матрица тарифных планов (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_tariff_matrix)[text=%text]}).
+На основании тарифных планов и опций, указанных в секциях `plans` и `preview`, формируется матрица тарифных планов (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix)[text=%text]}).
 
 Пример файла `service.yaml` приведен в приложении {linkto(#ibexample_service)[text=%text]}.
 

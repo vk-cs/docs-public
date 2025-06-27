@@ -89,7 +89,7 @@
 
 Чтобы получить имена пространств имен, отправьте письмо на [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com).
 
-Если пространства имен не заданы, то будут использованы значения, указанные в одноименном параметре сервиса (подробнее — в разделе {linkto(../saas_param/#saas_param)[text=%text]})
+Если пространства имен не заданы, то будут использованы значения, указанные в одноименном параметре сервиса (подробнее — в разделе {linkto(../saas_param#saas_param)[text=%text]})
 |map, ключи — string
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
@@ -128,7 +128,7 @@
 |billing_cycle_step
 |Может быть задан только для тарифного плана с постоплатными тарифными опциями.
 
-Определяет длительность периода, с которым магазин опрашивает брокера на наличие необработанных отчетов (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing)[text=%text]}).
+Определяет длительность периода, с которым магазин опрашивает брокера на наличие необработанных отчетов (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing)[text=%text]}).
 
 Формат записи: `<КОЛИЧЕСТВО_МЕСЯЦЕВ> mons <КОЛИЧЕСТВО_ДНЕЙ> days`. Например, `1 mons 15 days`, `30 days`.
 
@@ -153,7 +153,7 @@
 
 ## {heading(Секция display)[id=saas_plan_display]}
 
-В секции `display` опишите мастер конфигурации тарифного плана (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_wizard)[text=%text]}) по следующей структуре:
+В секции `display` опишите мастер конфигурации тарифного плана (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_wizard)[text=%text]}) по следующей структуре:
 
 ```json
 "display": {
@@ -272,7 +272,7 @@ integer
 ![pic1](../../../assets/Wizard_SaaS.png)
 {/caption}
 
-По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы группа отображалась только при определенных условиях, используйте конструкцию `when`. Описание конструкции приведено в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/#IBdisplay_when)[text=%text]}.
+По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы группа отображалась только при определенных условиях, используйте конструкцию `when`. Описание конструкции приведено в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display#IBdisplay_when)[text=%text]}.
 
 <warn>
 
@@ -311,7 +311,7 @@ integer
 * `<OPTION>` — имя тарифной опции в JSON-файле.
 * `<VALUE>` — значение константы.
 
-Конструкция `when` в секции `pages` используется таким же образом, как в image-based приложениях (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/#IBdisplay_when_in_pages)[text=%text]}).
+Конструкция `when` в секции `pages` используется таким же образом, как в image-based приложениях (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display#IBdisplay_when_in_pages)[text=%text]}).
 
 {caption(Пример использования конструкции when в секции `pages`)[align=left;position=above]}
 ```json
@@ -370,7 +370,7 @@ integer
    * Числовой (`integer`, `number`). Поддерживается предоплатная и постоплатная тарификация.
    * Логический (`boolean`). Поддерживается предоплатная тарификация.
 
-Подробнее о типах тарификации приведено в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing)[text=%text]}.
+Подробнее о типах тарификации приведено в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing)[text=%text]}.
 
 <warn>
 
@@ -412,13 +412,13 @@ integer
 
 <info>
 
-Чтобы эффективно использовать бонусы, выдаваемые для тестирования и отладки сервиса в магазине (подробнее — в разделе {linkto(../../saas_upload/saas_upload_testmarketplace/#saas_upload_testmarketplace)[text=%text]}), укажите тестовую стоимость тарифного плана и его опций.
+Чтобы эффективно использовать бонусы, выдаваемые для тестирования и отладки сервиса в магазине (подробнее — в разделе {linkto(../../saas_upload/saas_upload_testmarketplace#saas_upload_testmarketplace)[text=%text]}), укажите тестовую стоимость тарифного плана и его опций.
 
 </info>
 
 ### {heading(Секция billing с бесплатной тарифной опцией типа integer с пользовательским шагом изменения)[id=option_int_step_free]}
 
-Шаг изменения тарифной опции типа `integer` в `<OPTION_BILLING>` описывается такими же параметрами, как и для image-based приложения (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_billing)[text=%text]}).
+Шаг изменения тарифной опции типа `integer` в `<OPTION_BILLING>` описывается такими же параметрами, как и для image-based приложения (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]}).
 
 Чтобы опция была бесплатной, укажите `0` в параметре `billing.options.<OPTION>.cost`.
 
@@ -455,7 +455,7 @@ integer
 
 ### {heading(Секция billing с предоплатной тарифной опцией типа integer с шагом изменения)[id=option_int_step_prepaid]}
 
-Стоимость и шаг изменения предоплатной тарифной опции типа `integer` в `<OPTION_BILLING>` описывается такими же параметрами, как и для image-based приложения (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_billing)[text=%text]}).
+Стоимость и шаг изменения предоплатной тарифной опции типа `integer` в `<OPTION_BILLING>` описывается такими же параметрами, как и для image-based приложения (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]}).
 
 Чтобы опция была предоплатной, укажите стоимость за 1 шаг изменения в параметре `billing.options.<OPTION>.cost`.
 
@@ -531,7 +531,7 @@ integer
 
 <warn>
 
-Если сбор метрик происходит по pull-модели, стоимость должна соответствовать значению `price`, указанному в методе брокера для передачи отчета магазину (подробнее — в разделе {linkto(../../saas_broker/#saas_broker)[text=%text]}).
+Если сбор метрик происходит по pull-модели, стоимость должна соответствовать значению `price`, указанному в методе брокера для передачи отчета магазину (подробнее — в разделе {linkto(../../saas_broker#saas_broker)[text=%text]}).
 
 </warn>
 |float64, >= 0
@@ -590,7 +590,7 @@ integer
 
 ## {heading(Секция schemas)[id=saas_plan_schema]}
 
-В секции `schemas` опишите тарифные опции конкретного плана (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_option_types)[text=%text]}) по следующей структуре:
+В секции `schemas` опишите тарифные опции конкретного плана (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types)[text=%text]}) по следующей структуре:
 
 ```json
 "schemas": {
@@ -642,7 +642,7 @@ integer
 
    <warn>
 
-   Все постоплатные тарифные опции должны быть описаны в брокере (подробнее — в разделе {linkto(../../saas_broker/#saas_broker)[text=%text]}).
+   Все постоплатные тарифные опции должны быть описаны в брокере (подробнее — в разделе {linkto(../../saas_broker#saas_broker)[text=%text]}).
 
    </warn>
 * Секция `service_binding` — описывает создание сервисных привязок.
@@ -660,7 +660,7 @@ integer
 
 Параметры тарифных опций описываются JSON-схемами. Стоимость платных опций, а также шаг изменения для опции типа `integer` описывается в секции `plans.billing.options` (подробнее — в разделе {linkto(#saas_plan_billing)[text=%text]}).
 
-Для SaaS-приложения поддерживаются все типы тарифных опций, кроме `datasource` (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_option_types)[text=%text]}). Тарифные опции описываются такими же параметрами, как для image-based приложения (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_schema)[text=%text]}). Стоимость опции описывается в секции {linkto(#saas_plan_billing)[text=%text]}.
+Для SaaS-приложения поддерживаются все типы тарифных опций, кроме `datasource` (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types)[text=%text]}). Тарифные опции описываются такими же параметрами, как для image-based приложения (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]}). Стоимость опции описывается в секции {linkto(#saas_plan_billing)[text=%text]}.
 
 Заполнение секции `schema` с примерами отображения разных типов опций в интерфейсе магазина описано в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in#IB_option_fill_in)[text=%text]}.
 
@@ -810,8 +810,8 @@ integer
 
 <warn>
 
-Если сбор метрик происходит по pull-модели, имя опции в JSON-файле должно соответствовать значению `kind`, указанному в методе брокера для передачи отчета магазину (подробнее — в разделе {linkto(../../saas_broker/#saas_broker)[text=%text]}).
+Если сбор метрик происходит по pull-модели, имя опции в JSON-файле должно соответствовать значению `kind`, указанному в методе брокера для передачи отчета магазину (подробнее — в разделе {linkto(../../saas_broker#saas_broker)[text=%text]}).
 
-Если сбор метрик осуществляется по push-модели, имя опции в JSON-файле должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#billing_push)[text=%text]}).
+Если сбор метрик осуществляется по push-модели, имя опции в JSON-файле должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]}).
 
 </warn>

@@ -12,13 +12,13 @@
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) OpenStack CLI и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Скачайте базовый образ ОС, поддерживающий работу с облачными платформами.
 
-   ОС должна удовлетворять {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements/#ib_image_requirements)[text=%text]}.
+   ОС должна удовлетворять {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=требованиям к образу сервиса]}.
 
    На [официальном сайте OpenStack](https://docs.openstack.org/image-guide/obtain-images.html) размещены ссылки на образы некоторых ОС, поддерживающих работу с облачными платформами.
 
    <info>
 
-   Чтобы самостоятельно не загружать базовый образ в облачную платформу, используйте готовый из таблицы в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data/#target_os)[text=%text]}. В этом случае сразу переходите к шагу конфигурации packer-файла.
+   Чтобы самостоятельно не загружать базовый образ в облачную платформу, используйте готовый из таблицы в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]}. В этом случае сразу переходите к шагу конфигурации packer-файла.
 
    </info>
 1. Конвертируйте базовый образ в формат `RAW`:
@@ -73,7 +73,7 @@
       Здесь:
 
       * `<NETWORK_ID>` — ID сети. Значение отображается в ЛК облачной платформы на странице со списком сетей.
-      * `<IMAGE_ID>` — ID базового образа. Значение отображается в ЛК облачной платформы на странице со списком образов. Если используется готовый базовый образ, укажите ID из раздела {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data/#target_os)[text=%text]}.
+      * `<IMAGE_ID>` — ID базового образа. Значение отображается в ЛК облачной платформы на странице со списком образов. Если используется готовый базовый образ, укажите ID из раздела {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]}.
 
    1. Создайте файл `<FILE_NAME>.pkr.hcl`. Например, `altlinux.pkr.hcl`.
    1. В файле опишите конфигурацию ВМ, на базе которой будет создан образ сервиса (синтаксис — на [официальном сайте Packer](https://developer.hashicorp.com/packer/docs/templates/hcl_templates)).
@@ -140,7 +140,7 @@
 
       <info>
 
-      Если требуется отправлять метрики в сервис Cloud Monitoring, в конфигурации ВМ опишите установку агента мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm/#ib_cloud_monitoring_telegraf_image)[text=%text]}).
+      Если требуется отправлять метрики в сервис Cloud Monitoring, в конфигурации ВМ опишите установку агента мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm#ib_cloud_monitoring_telegraf_image)[text=%text]}).
 
       </info>
 

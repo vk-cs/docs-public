@@ -74,19 +74,19 @@
 
 Основные шаги для развертывания сервиса на ВМ в облачной платформе:
 
-1. {linkto(../tf_manifest_variable/#tf_manifest_variable)[text=Описание входных переменных для конфигурации ресурсов]}.
-1. {linkto(../tf_manifest_image/#tf_manifest_image)[text=Описание инфраструктуры]}.
-1. {linkto(../tf_manifest_output/#tf_manifest_output)[text=Описание выходных параметров]}.
+1. {linkto(../tf_manifest_variable#tf_manifest_variable)[text=Описание входных переменных для конфигурации ресурсов]}.
+1. {linkto(../tf_manifest_image#tf_manifest_image)[text=Описание инфраструктуры]}.
+1. {linkto(../tf_manifest_output#tf_manifest_output)[text=Описание выходных параметров]}.
 
 Дополнительные возможности:
 
-* {linkto(../tf_manifest_script/#tf_manifest_script)[text=Использование скриптов]}:
+* {linkto(../tf_manifest_script#tf_manifest_script)[text=Использование скриптов]}:
 
    * Выполнение скриптов в процессе развертывания или переустановки сервиса.
    * Использование результатов выполнения скриптов другими ресурсами манифеста.
    * Получение результатов выполнения скриптов.
 
-* {linkto(../tf_manifest_monitoring/#tf_manifest_monitoring)[text=%text]}.
+* {linkto(../tf_manifest_monitoring#tf_manifest_monitoring)[text=%text]}.
 * Использование DNS облачной платформы (подробнее — в разделе [Справочник по провайдеру VK CS Infra (iVK CS)](../../../ivkcs)).
 
    <warn>
@@ -101,11 +101,11 @@
 
 <info>
 
-Идентификатор развертывания сервиса для ресурсов провайдера iVK CS получите с помощью специальной переменной `instance_uuid` (подробнее — в разделе {linkto(../tf_manifest_variable/#tf_manifest_variable)[text=%text]}).
+Идентификатор развертывания сервиса для ресурсов провайдера iVK CS получите с помощью специальной переменной `instance_uuid` (подробнее — в разделе {linkto(../tf_manifest_variable#tf_manifest_variable)[text=%text]}).
 
 </info>
 
-Мониторинг ВМ и использование скриптов обеспечиваются специальными сервисами (подробнее — в разделе {linkto(../../ibservice_upload/ibservice_upload_package/#ibservice_upload_package)[text=%text]}), с которыми взаимодействует провайдер iVK CS:
+Мониторинг ВМ и использование скриптов обеспечиваются специальными сервисами (подробнее — в разделе {linkto(../../ibservice_upload/ibservice_upload_package#ibservice_upload_package)[text=%text]}), с которыми взаимодействует провайдер iVK CS:
 
 * Сервис управления конфигурациями.
 * Агент.

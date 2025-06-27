@@ -43,7 +43,7 @@
 
 <info>
 
-Automatic disk scaling is supported. To enable it, activate the **Disk autoscaling** option when [creating](../../quick-start/create-adb/) a cluster.
+Automatic disk scaling is supported. To enable it, activate the **Disk autoscaling** option when [creating](../../quick-start/create-adb) a cluster.
 
 </info>
 

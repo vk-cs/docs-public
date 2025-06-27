@@ -4,7 +4,7 @@
 
 <warn>
 
-Перед тестированием с системой развертывания убедитесь, что OpenStack PID внесен в список поставщиков (подробнее — в разделе {linkto(../ibservice_upload_prepare/#ibservice_upload_prepare)[text=%text]}).
+Перед тестированием с системой развертывания убедитесь, что OpenStack PID внесен в список поставщиков (подробнее — в разделе {linkto(../ibservice_upload_prepare#ibservice_upload_prepare)[text=%text]}).
 
 </warn>
 

@@ -43,7 +43,7 @@ To share a network with other projects:
 
    - **Other projects**: allows to share a network with any project.
 
-     As you select this type, specify  the [Project ID](en/tools-for-using-services/api/rest-api/endpoints#getting_project_id) in the **Project ID in OpenStack** field. Project ID looks like `exampled4ef0547e5b222f445`, differs from unique identifier (PID). You can specify several projects here.
+     As you select this type, specify the [Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id) in the **Project ID in OpenStack** field. Project ID looks like `exampled4ef0547e5b222f445`, differs from unique identifier (PID). You can specify several projects here.
 1. Click **Send**.
 
 </tabpanel>
