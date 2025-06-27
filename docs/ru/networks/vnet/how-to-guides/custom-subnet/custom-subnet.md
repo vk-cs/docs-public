@@ -4,7 +4,7 @@
 
 ## Подготовительные шаги
 
-1. [Активируйте доступ по API](ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api), если этого еще не сделано.
+1. [Активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api), если этого еще не сделано.
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что на вашем компьютере установлены пакеты curl и jq.
 1. Выберите или [создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть в вашем проекте VK Cloud. В этой сети будет создана подсеть с пользовательскими параметрами. Запишите UUID этой сети. В этом примере UUID сети — `b2b8468e-aaaa-bbbb-cccc-327c8c2670d4`.

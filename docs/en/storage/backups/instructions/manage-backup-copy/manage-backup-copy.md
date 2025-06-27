@@ -79,7 +79,7 @@
 </tablist>
 <tabpanel>
 
-To delete all instance backup copies created within a plan at once, [delete](../manage-backup-plan/#activate_stop_delete_backup_plan) that plan.
+To delete all instance backup copies created within a plan at once, [delete](../manage-backup-plan#activate_stop_delete_backup_plan) that plan.
 
 To delete individual instance backup copies:
 

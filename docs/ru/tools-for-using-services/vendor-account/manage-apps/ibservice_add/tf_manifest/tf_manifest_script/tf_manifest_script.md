@@ -34,7 +34,7 @@ Cloud-init позволяет настроить очередность выпо
 
 - `ok` — скрипт выполнен успешно.
 - `running` — скрипт выполняется.
-- `failed` — скрипт завершен с ошибкой. [Просмотрите](../../ibservice_upload/ibservice_upload_deploysystemtest/#agent_log) логи агента, чтобы определить ее причину.
+- `failed` — скрипт завершен с ошибкой. [Просмотрите](../../ibservice_upload/ibservice_upload_deploysystemtest#agent_log) логи агента, чтобы определить ее причину.
 
    Если получен статус `failed`, система развертывания запустит процесс развертывания сервиса повторно. Повторные попытки могут занимать до полутора часов и могут быть отключены в файле `settings.yaml` (подробнее — в разделе {linkto(../tf_manifest_settings/#tf_manifest_settings)[text=%text]}).
 

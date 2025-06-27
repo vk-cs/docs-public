@@ -1,6 +1,6 @@
 # {heading(Секция preview)[id=saas_preview]}
 
-Секция `preview` определяет, какие тарифные опции будут отображаться в матрице тарифных планов (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_tariff_matrix)[text=%text]}).
+Секция `preview` определяет, какие тарифные опции будут отображаться в матрице тарифных планов (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix)[text=%text]}).
 
 В матрице будут отображаться все тарифные планы, указанные в секции `plans`, и тарифные опции, указанные в секции `preview`.
 

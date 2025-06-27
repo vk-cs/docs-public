@@ -1,4 +1,4 @@
-Секция `display` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add/#service_config) описывает [мастер конфигурации тарифного плана](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_wizard). Секция имеет следующую структуру:
+Секция `display` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) описывает [мастер конфигурации тарифного плана](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_wizard). Секция имеет следующую структуру:
 
 ```json
 "display": {
@@ -117,7 +117,7 @@ integer
 
 {/cut}
 
-По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы группа отображалась только при определенных условиях, используйте [конструкцию when](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/#IBdisplay_when).
+По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы группа отображалась только при определенных условиях, используйте [конструкцию when](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display#IBdisplay_when).
 
 <warn>
 
@@ -156,7 +156,7 @@ integer
 * `<ИМЯ_ОПЦИИ>` — имя тарифной опции в JSON-файле конфигурации сервиса.
 * `<ЗНАЧЕНИЕ>` — значение константы.
 
-Конструкция [when в секции pages](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display/#IBdisplay_when_in_pages) используется таким же образом, как и в image-based приложениях.
+Конструкция [when в секции pages](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ib_display#IBdisplay_when_in_pages) используется таким же образом, как и в image-based приложениях.
 
 {cut(Пример использования конструкции when в секции pages)}
 

@@ -1,4 +1,4 @@
-Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add/#service_config).
+Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config).
 
 [cols="2,4,1,1", options="header"]
 |===
@@ -58,7 +58,7 @@
 
 |`icon`
 |
-URL [иконки сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/service_description/#service_description_icon).
+URL [иконки сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/service_description#service_description_icon).
 
 Размер файла с иконкой не должен превышать 1 МБ. Размер изображения должен быть не менее 62 × 62 пикселя
 |string, до 512 символов

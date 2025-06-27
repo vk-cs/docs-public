@@ -36,7 +36,7 @@
 
 |full_description
 |
-Полное описание сервиса, которое будет отображаться на его странице (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/service_description/#service_description_full)[text=%text]})
+Полное описание сервиса, которое будет отображаться на его странице (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/service_description#service_description_full)[text=%text]})
 |string
 | ![](/ru/assets/check.svg "inline")
 
@@ -54,7 +54,7 @@
 
 |icon
 |
-URL иконки сервиса (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/service_description/#service_description_icon)[text=%text]}).
+URL иконки сервиса (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/service_description#service_description_icon)[text=%text]}).
 
 Размер файла с иконкой не должен превышать 1 МБ. Размер изображения должен быть не менее 62×62 пикселя
 |string, до 512 символов
@@ -78,7 +78,7 @@ URL документации сервиса
 
 Значение параметра применяется для всех планов сервиса.
 
-Значение можно переопределить для конкретного плана (подробнее в разделе — {linkto(../saas_plan/#saas_plan_param)[text=%text]})
+Значение можно переопределить для конкретного плана (подробнее в разделе — {linkto(../saas_plan#saas_plan_param)[text=%text]})
 |boolean
 | ![](/ru/assets/check.svg "inline")
 
@@ -112,7 +112,7 @@ URL документации сервиса
 
 Значение можно переопределить для конкретного тарифного плана.
 
-Если параметр не задан, в секции `plans` укажите одноименный параметр для каждого тарифного плана отдельно (подробнее в разделе — {linkto(../saas_plan/#saas_plan_param)[text=%text]}).
+Если параметр не задан, в секции `plans` укажите одноименный параметр для каждого тарифного плана отдельно (подробнее в разделе — {linkto(../saas_plan#saas_plan_param)[text=%text]}).
 
 <warn>
 

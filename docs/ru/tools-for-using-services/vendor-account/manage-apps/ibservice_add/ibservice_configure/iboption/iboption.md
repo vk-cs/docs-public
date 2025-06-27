@@ -2,7 +2,7 @@
 
 <warn>
 
-Имя YAML-файла постоплатной тарифной опции должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#billing_push)[text=%text]}).
+Имя YAML-файла постоплатной тарифной опции должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]}).
 
 </warn>
 
@@ -17,7 +17,7 @@
 
 |actions
 |
-Параметр определяет способ тарификации опции (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing)[text=%text]}). Возможные значения:
+Параметр определяет способ тарификации опции (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing)[text=%text]}). Возможные значения:
 
 * Для бесплатной или предоплатной тарификации укажите одно или оба значения:
 
@@ -56,7 +56,7 @@
 ![pic1](../../../assets/Option_shema.png){params[width=45%]}
 {/caption}
 
-Примеры описания разных типов тарифных опций приведены в разделе {linkto(../ibopt_fill_in/#IB_option_fill_in)[text=%text]}.
+Примеры описания разных типов тарифных опций приведены в разделе {linkto(../ibopt_fill_in#IB_option_fill_in)[text=%text]}.
 
 ## {heading(Секция billing)[id=iboption_billing]}
 
@@ -65,7 +65,7 @@
 * Числовой (`integer`, `number`). Поддерживается предоплатная и постоплатная тарификация.
 * Логический (`boolean`). Поддерживается предоплатная тарификация.
 
-Подробнее о типах тарификации — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing)[text=%text]}.
+Подробнее о типах тарификации — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing)[text=%text]}.
 
 В зависимости от типа тарификации и типа опции в секции `billing` укажите параметры и дочерние секции, приведенные в {linkto(#tab_billing_integer)[text=таблице %number]}, {linkto(#tab_billing_boolean)[text=таблице %number]}, {linkto(#tab_billing_number)[text=таблице %number]}.
 
@@ -268,7 +268,7 @@
 |tag
 |Тег. Позволяет связать несколько опций между собой.
 
-Используется, чтобы описать диск (подробнее — в разделе {linkto(../ibopt_fill_in/#IBoption_fill_in_volume)[text=%text]})
+Используется, чтобы описать диск (подробнее — в разделе {linkto(../ibopt_fill_in#IBoption_fill_in_volume)[text=%text]})
 |string
 | ![](/ru/assets/no.svg "inline")
 
@@ -558,7 +558,7 @@
 |tag
 |Тег. Позволяет связать несколько опций между собой.
 
-Используется, чтобы описать диск (подробнее — в разделе {linkto(../ibopt_fill_in/#IBoption_fill_in_volume)[text=%text]})
+Используется, чтобы описать диск (подробнее — в разделе {linkto(../ibopt_fill_in#IBoption_fill_in_volume)[text=%text]})
 |string
 | ![](/en/assets/no.svg "inline")
 
