@@ -27,7 +27,7 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
   - **Number of nodes:** at least one node. One node does not provide high availability on the level of an individual group of nodes, two nodes or more do.
 
-  - **Enable autoscaling:** enable this option to allow [auto-scaling](../../../concepts/architecture/#cluster_scaling_options) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling will be performed.
+  - **Enable autoscaling:** enable this option to allow [auto-scaling](../../../concepts/architecture#cluster_scaling_options) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling will be performed.
 
   - **Percentage of unavailable nodes when updating the cluster version:** the percentage number of nodes that can be taken out of the node group when [cluster update procedure](../../update) is performed.
 

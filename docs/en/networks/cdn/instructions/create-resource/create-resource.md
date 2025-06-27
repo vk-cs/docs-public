@@ -60,7 +60,7 @@ You can create a CDN resource in two ways:
 
    <warn>
 
-   You cannont change personal domains after creating a CDN resource.
+   You cannot change personal domains after creating a CDN resource.
 
    </warn>
 
@@ -125,7 +125,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 1. Go to the **CDN** tab.
 1. Enable the **Use CDN for this bucket** option.
 
-   To make the bucket able to be an origin for a CDN resource, select the `public-read` ACL, then [create objects in this bucket](ru/storage/s3/instructions/objects/upload-object "change-lang").
+   To make the bucket able to be an origin for a CDN resource, select the `public-read` ACL, then [create objects in this bucket](/ru/storage/s3/instructions/objects/upload-object "change-lang").
 
 1. In the **Personal domain** field enter the personal domain, what should be used for CDN. When requesting this domain, content will be delivered via CDN. Use the Fully Qualified Domain Name (FQDN). Do not add a root domain name: you can use `cdn.example.com`, but not `cdn.example.com.`.
 

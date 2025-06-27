@@ -1,6 +1,6 @@
 # {heading(Заполнение YAML-файлов тарифных опций)[id=IB_option_fill_in]}
 
-В файлах `parameters/<OPTION_NAME>.yaml` опишите все тарифные опции (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_option_types)[text=%text]}), которые будут использоваться хотя бы в одном тарифном плане.
+В файлах `parameters/<OPTION_NAME>.yaml` опишите все тарифные опции (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types)[text=%text]}), которые будут использоваться хотя бы в одном тарифном плане.
 
 Каждый отдельный YAML-файл соответствует одной тарифной опции. В нем описываются настройки тарифной опции, а для платных опций — стоимость.
 
@@ -182,7 +182,7 @@ schema:
 
 <info>
 
-Подробное описание параметров секций `billing` и `schema` приведено в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_billing)[text=%text]} и {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_schema)[text=%text]} соответственно.
+Подробное описание параметров секций `billing` и `schema` приведено в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} и {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} соответственно.
 
 </info>
 
@@ -221,7 +221,7 @@ schema:
    {caption(Рисунок {counter(pic)[id=numb_pic_option_int_step_prepayed2]} — Платная тарифная опция типа integer c шагом изменения, значение увеличено на 2 шага (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed2;number={const(numb_pic_option_int_step_prepayed2)} ]}
    ![pic1](../../../assets/Option_int_with_user_step_prepayed2.png)
    {/caption}
-1. Заполните секцию `schema` таким же образом, как для бесплатной тарифной опции с пользовательским шагом изменения (подробнее — в разделе {linkto(../ibopt_fill_in/#option_int_with_user_step_free)[text=%text]}).
+1. Заполните секцию `schema` таким же образом, как для бесплатной тарифной опции с пользовательским шагом изменения (подробнее — в разделе {linkto(../ibopt_fill_in#option_int_with_user_step_free)[text=%text]}).
 
    Если для тарифной опции значение по умолчанию не равно стандартному значению (`schema.default ≠ 0`), то, когда пользователь переходит в мастер конфигурации тарифного плана, для такой тарифной опции будет отображаться ее стоимость ({linkto(#pic_option_int_step_prepayed3)[text=рисунок %number]}). Пользователь может уменьшить значение опции до стандартного, которое входит в стоимость тарифного плана.
 
@@ -231,7 +231,7 @@ schema:
 
 <info>
 
-Подробное описание параметров секций `billing` и `schema` приведено в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_billing)[text=%text]} и {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_schema)[text=%text]} соответственно.
+Подробное описание параметров секций `billing` и `schema` приведено в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} и {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} соответственно.
 
 </info>
 
@@ -239,7 +239,7 @@ schema:
 
 <warn>
 
-Имя YAML-файла постоплатной тарифной опции должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#billing_push)[text=%text]}).
+Имя YAML-файла постоплатной тарифной опции должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]}).
 
 </warn>
 
@@ -323,7 +323,7 @@ schema:
    * `hint` — описание тарифной опции (опционально).
    * `type` — тип тарифной опции. Укажите `string`.
    * `default` — значение по умолчанию.
-   * Дополнительные параметры, приведенные в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_string)[text=%text]} (опционально).
+   * Дополнительные параметры, приведенные в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_string)[text=%text]} (опционально).
 
 {caption(Пример описания опции типа `string` с вводом значения, формат `YAML`)[align=left;position=above]}
 ```yaml
@@ -494,7 +494,7 @@ billing:
    * `hint` — описание тарифной опции (опционально).
    * `type` — тип тарифной опции. Укажите `string`.
    * `datasource.type` — тип сущности облачной платформы. Укажите `flavor`.
-   * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_datasource)[text=%text]}.
+   * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]}.
 
 {caption(Пример описания опции `datasource` для типа ВМ, формат `YAML`)[align=left;position=above]}
 ```yaml
@@ -526,7 +526,7 @@ schema:
    * `description` — имя тарифной опции.
    * `hint` — описание тарифной опции (опционально).
    * `type` — тип тарифной опции. Укажите `string`.
-   * `default` — значение по умолчанию (опционально). Возможные значения приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_datasource)[text=%text]}.
+   * `default` — значение по умолчанию (опционально). Возможные значения приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]}.
    * `datasource.type` — тип сущности облачной платформы. Укажите `az`.
 
 {caption(Пример описания опции `datasource` для зоны доступности, формат `YAML`)[align=left;position=above]}
@@ -596,7 +596,7 @@ schema:
    * `datasource.value_is` — тип вывода информации. Доступны значения:
       * `uuid` — отображать UUID сети.
       * `name` — отображать имя сети.
-   * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_datasource)[text=%text]}.
+   * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]}.
 
 {caption(Пример описания опции `datasource` для сети, формат `YAML`)[align=left;position=above]}
 ```yaml
@@ -640,10 +640,10 @@ schema:
       * `description` — имя тарифной опции.
       * `hint` — описание тарифной опции (опционально).
       * `type` — тип тарифной опции. Укажите `string`.
-      * `default` — значение по умолчанию (опционально). Возможные значения приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_datasource)[text=%text]}.
+      * `default` — значение по умолчанию (опционально). Возможные значения приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]}.
       * `tag` — тег. Тег связывает опцию, описывающую тип диска, с опцией, описывающей размер диска.
       * `datasource.type` — тип сущности облачной платформы. Укажите `volume_type`.
-      * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption/#iboption_option_datasource)[text=%text]}.
+      * `datasource.filter` — фильтры (опционально). Возможные фильтры приведены в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]}.
 
          Если фильтры не указаны, то будут отображаться все типы дисков, поддерживаемые облачной платформой.
 

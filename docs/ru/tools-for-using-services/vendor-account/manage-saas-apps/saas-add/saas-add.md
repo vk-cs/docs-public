@@ -81,7 +81,7 @@
 Здесь:
 
 * `<ПАРАМЕТРЫ_СЕРВИСА>` — [параметры сервиса](../../reference/saas-apps-reference/saas-param).
-* Секции `preview` и `plans` вместе определяют вид [матрицы тарифных планов](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_tariff_matrix). В матрице будут отображаться все тарифные планы, указанные в секции `plans`, и тарифные опции, указанные в секции `preview`.
+* Секции `preview` и `plans` вместе определяют вид [матрицы тарифных планов](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix). В матрице будут отображаться все тарифные планы, указанные в секции `plans`, и тарифные опции, указанные в секции `preview`.
 * Массив `parameters` секции `preview` содержит имена тарифных опций, может быть пустым. Эти имена используются только в конфигурационном JSON-файле. В интерфейсе магазина тарифные опции будут отображаться с именами, заданными в [секции schemas](../../reference/saas-apps-reference/schemas-section) параметром `description` этих опций.
 * Секция `plans` описывает тарифные планы и их опции и для каждого плана содержит следующие блоки:
 

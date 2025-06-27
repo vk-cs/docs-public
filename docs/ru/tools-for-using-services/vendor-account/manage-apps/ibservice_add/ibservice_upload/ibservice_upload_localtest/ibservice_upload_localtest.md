@@ -1,6 +1,6 @@
 # {heading(Локальное тестирование манифеста Terraform)[id=ibservice_upload_localtest]}
 
-Перед локальным тестированием убедитесь, что OpenStack PID внесен в список поставщиков (подробнее — в разделе {linkto(../ibservice_upload_prepare/#ibservice_upload_prepare)[text=%text]}).
+Перед локальным тестированием убедитесь, что OpenStack PID внесен в список поставщиков (подробнее — в разделе {linkto(../ibservice_upload_prepare#ibservice_upload_prepare)[text=%text]}).
 
 При локальном тестировании используйте подсети существующих сетей или создайте новую сеть и используйте ее подсеть (подробнее — в разделе [Сети и подсети](/ru/networks/vnet/instructions/net)).
 

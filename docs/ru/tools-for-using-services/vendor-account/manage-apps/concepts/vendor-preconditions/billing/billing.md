@@ -7,7 +7,7 @@ Marketplace поддерживает следующие типы тарифик�
 * Постоплатный (Usage Based).
 * BYOL (Bring Your Own License).
 
-Более подробная информация о тарификации приведена в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing)[text=%text]}.
+Более подробная информация о тарификации приведена в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing)[text=%text]}.
 
 Требования к тарификации сервиса:
 

@@ -6,4 +6,4 @@ Marketplace интегрирован с сервисом [Cloud Monitoring](/ru/
 ![pic1](../../assets/cloud_monitoring_telegraf.png){params[noBorder=true]}
 {/caption}
 
-Подробнее об использовании агента мониторинга — в разделах {linkto(../ib_cloud_monitoring_vm/#ib_cloud_monitoring_vm)[text=%text]} и {linkto(../ib_cloud_monitoring_app/#ib_cloud_monitoring_app)[text=%text]}.
+Подробнее об использовании агента мониторинга — в разделах {linkto(../ib_cloud_monitoring_vm#ib_cloud_monitoring_vm)[text=%text]} и {linkto(../ib_cloud_monitoring_app#ib_cloud_monitoring_app)[text=%text]}.

@@ -104,11 +104,11 @@ Available extensions:
 
 |===
 
-For some extensions, mandatory parameters must be added — without them, the installation will fail with an error. [Learn more](../../extensions/) about extensions and their parameters.
+For some extensions, mandatory parameters must be added — without them, the installation will fail with an error. [Learn more](../../extensions) about extensions and their parameters.
 
 The number of extensions installed per DB instance is limited and depends on the type of DBMS.
 
-Learn more about working with extensions in VK Cloud in the article [Managing extensions](../../instructions/managing-extensions/).
+Learn more about working with extensions in VK Cloud in the article [Managing extensions](../../instructions/managing-extensions).
 
 <info>
 

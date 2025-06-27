@@ -4,11 +4,11 @@
 
 Этапы загрузки SaaS-приложения в магазин ({linkto(#pic_saas_upload)[text=рисунок %number]}):
 
-1. {linkto(../saas_upload_localtest/#saas_upload_localtest)[text=%text]}.
-1. {linkto(../saas_upload_env/#saas_upload_env)[text=%text]}.
-1. {linkto(../saas_upload_registration/#saas_upload_registration)[text=%text]}.
-1. {linkto(../saas_upload_testmarketplace/#saas_upload_testmarketplace)[text=%text]}.
-1. {linkto(../saas_upload_publish/#saas_upload_publish)[text=%text]}.
+1. {linkto(../saas_upload_localtest#saas_upload_localtest)[text=%text]}.
+1. {linkto(../saas_upload_env#saas_upload_env)[text=%text]}.
+1. {linkto(../saas_upload_registration#saas_upload_registration)[text=%text]}.
+1. {linkto(../saas_upload_testmarketplace#saas_upload_testmarketplace)[text=%text]}.
+1. {linkto(../saas_upload_publish#saas_upload_publish)[text=%text]}.
 
 {caption(Рисунок {counter(pic)[id=numb_pic_saas_upload]} — Загрузка SaaS-приложения)[align=center;position=under;id=pic_saas_upload;number={const(numb_pic_saas_upload)} ]}
 ![pic1](../../../assets/SaaS_upload.png){params[noBorder=true]}

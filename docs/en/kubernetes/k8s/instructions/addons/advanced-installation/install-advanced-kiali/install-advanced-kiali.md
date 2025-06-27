@@ -1,6 +1,6 @@
 ## Preparatory steps
 
-[Install](../install-advanced-istio/) the `istio` add-on.
+[Install](../install-advanced-istio) the `istio` add-on.
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
