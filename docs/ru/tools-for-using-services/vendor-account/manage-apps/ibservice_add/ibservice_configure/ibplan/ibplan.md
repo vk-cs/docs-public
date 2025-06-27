@@ -70,7 +70,7 @@
 
 ## {heading(Секция billing тарифного плана)[id=plan_billing]}
 
-Для стоимости тарифного плана поддерживается только предоплатный тип тарификации (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_billing)[text=%text]}).
+Для стоимости тарифного плана поддерживается только предоплатный тип тарификации (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_billing)[text=%text]}).
 
 Чтобы описать стоимость тарифного плана ({linkto(#pic_plan_billing)[text=рисунок %number]}), в файле `plans/<PLAN_NAME>/plan.yaml` укажите секцию `billing` и задайте параметры, приведенные в {linkto(#tab_plan_billing)[text=таблице %number]}.
 
@@ -144,11 +144,11 @@ billing:
 
 </warn>
 
-К стоимости плана можно добавить платные тарифные опции. Для этого опишите их стоимость в YAML-файлах (подробнее — в разделе {linkto(../ibopt_fill_in/#IB_option_fill_in)[text=%text]}).
+К стоимости плана можно добавить платные тарифные опции. Для этого опишите их стоимость в YAML-файлах (подробнее — в разделе {linkto(../ibopt_fill_in#IB_option_fill_in)[text=%text]}).
 
 <info>
 
-Чтобы эффективно использовать бонусы, выдаваемые для тестирования и отладки сервиса в магазине (подробнее — в разделе {linkto(../../ibservice_upload/ibservice_upload_package/#ibservice_upload_package)[text=%text]}), укажите тестовую стоимость тарифного плана и его опций.
+Чтобы эффективно использовать бонусы, выдаваемые для тестирования и отладки сервиса в магазине (подробнее — в разделе {linkto(../../ibservice_upload/ibservice_upload_package#ibservice_upload_package)[text=%text]}), укажите тестовую стоимость тарифного плана и его опций.
 
 </info>
 

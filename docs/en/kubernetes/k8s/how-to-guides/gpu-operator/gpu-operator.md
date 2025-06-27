@@ -10,7 +10,7 @@ This article shows how to create a cluster with a GPU node and test its operatio
 
 ## Before you start
 
-1. [Connect](en/computing/gpu/connect) the Cloud GPU service if it is not connected yet.
+1. [Connect](/en/computing/gpu/connect) the Cloud GPU service if it is not connected yet.
 1. [Create a cluster](/en/kubernetes/k8s/instructions/create-cluster) with GPU if such a cluster has not been created yet. Specify the following parameters:
 
    - Select a network with Internet access.
@@ -172,7 +172,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
    <info>
 
-   You can [add a label](en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for all nodes in a group via your management console.
+   You can [add a label](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for all nodes in a group via your management console.
 
    </info>
 
@@ -279,5 +279,5 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 A running Cloud Containers cluster is billed and consumes compute resources. If you no longer need it:
 
-- [Stop](en/kubernetes/k8s/instructions/manage-cluster#stop) it to use later.
-- [Delete](en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.
+- [Stop](/en/kubernetes/k8s/instructions/manage-cluster#stop) it to use later.
+- [Delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.

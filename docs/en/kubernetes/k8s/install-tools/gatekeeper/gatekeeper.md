@@ -8,7 +8,7 @@ Use these instructions if your cluster is version 1.20 or lower. Starting with K
 
 ## Installation
 
-1. [Install Helm](../helm/) if the utility is not already installed.
+1. [Install Helm](../helm) if the utility is not already installed.
 
 1. Run the commands
 

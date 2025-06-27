@@ -31,7 +31,7 @@ GPU может использоваться в кластере следующи
 
 ## 1. Установите аддон GPU-operator
 
-Воспользуйтесь [инструкцией по установке](ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-gpu-operator).
+Воспользуйтесь [инструкцией по установке](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-gpu-operator).
 
 ## 2. Проверьте работу кластера 
 
@@ -99,7 +99,7 @@ GPU может использоваться в кластере следующи
 
 ## 3. Разделите GPU по технологии MPS
 
-1. [Добавьте](ru/kubernetes/k8s/instructions/addons/manage-addons#edit) конфигурацию NVIDIA device plugin в код аддона GPU Operator:
+1. [Добавьте](/ru/kubernetes/k8s/instructions/addons/manage-addons#edit) конфигурацию NVIDIA device plugin в код аддона GPU Operator:
 
    <warn>
 
@@ -172,7 +172,7 @@ GPU может использоваться в кластере следующи
    
    <info>
 
-   Вы можете [добавить метку](ru/kubernetes/k8s/instructions/manage-node-group#labels_taints) для всех узлов в группе через личный кабинет.
+   Вы можете [добавить метку](/ru/kubernetes/k8s/instructions/manage-node-group#labels_taints) для всех узлов в группе через личный кабинет.
 
    </info>
    
@@ -279,5 +279,5 @@ GPU может использоваться в кластере следующи
 
 Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-- [остановите](ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+- [остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+- [удалите](/ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.

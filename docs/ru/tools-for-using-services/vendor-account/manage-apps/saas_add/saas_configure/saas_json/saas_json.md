@@ -23,8 +23,8 @@
 
 Здесь:
 
-* `<SERVICE_PARAMETERS>` — параметры сервиса (подробнее — в разделе {linkto(../saas_param/#saas_param)[text=%text]}).
-* Секция `preview` — описывает тарифные опции для матрицы тарифных планов (подробнее — в разделе {linkto(../saas_preview/#saas_preview)[text=%text]}).
+* `<SERVICE_PARAMETERS>` — параметры сервиса (подробнее — в разделе {linkto(../saas_param#saas_param)[text=%text]}).
+* Секция `preview` — описывает тарифные опции для матрицы тарифных планов (подробнее — в разделе {linkto(../saas_preview#saas_preview)[text=%text]}).
 * Секция `plans` — описывает тарифные планы и их опции (подробнее — в разделе [Секция plans](../saas_plan)).
 
 ## {heading(Пример JSON-файла для SaaS-приложения)[id=saas_example]}

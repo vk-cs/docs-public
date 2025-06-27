@@ -2,7 +2,7 @@
 
 <warn>
 
-Чтобы использовать ресурс, образ сервиса должен содержать программный пакет Cloud-init (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements/#ib_image_requirements)[text=%text]}).
+Чтобы использовать ресурс, образ сервиса должен содержать программный пакет Cloud-init (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=%text]}).
 
 </warn>
 

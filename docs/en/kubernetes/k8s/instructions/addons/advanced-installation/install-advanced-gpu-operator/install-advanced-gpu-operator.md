@@ -12,7 +12,7 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
    </tablist>
    <tabpanel>
 
-   1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
    1. Select the project where the required cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
    1. Click the name of the cluster.
@@ -38,7 +38,7 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
    </tablist>
    <tabpanel>
 
-   1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
    1. Select the project where the required cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
    1. Click the name of the cluster.
@@ -105,4 +105,4 @@ The parameter is responsible for installing the nfd-worker plugin only on nodes 
 
 </err>
 
-After editing the code, [continue installing the addon](##installing_addon).
+After editing the code, [continue installing the addon](#installing_addon).

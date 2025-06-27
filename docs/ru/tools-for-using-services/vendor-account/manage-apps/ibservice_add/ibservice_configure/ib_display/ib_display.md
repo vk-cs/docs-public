@@ -1,6 +1,6 @@
 # {heading(Файл display.yaml)[id=ib_display]}
 
-Чтобы описать {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about/#xaas_wizard)[text=%text]}, в файле `plans/<PLAN_NAME>/display.yaml` укажите параметры, приведенные в {linkto(#tab_plans)[text=таблице %number]}.
+Чтобы описать {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_wizard)[text=%text]}, в файле `plans/<PLAN_NAME>/display.yaml` укажите параметры, приведенные в {linkto(#tab_plans)[text=таблице %number]}.
 
 {caption(Таблица {counter(table)[id=numb_tab_plans]} — Параметры файла plans/<PLAN_NAME>/display.yaml)[align=right;position=above;id=tab_plans;number={const(numb_tab_plans)}]}
 [cols="2,5,2,2", options="header"]
@@ -15,7 +15,7 @@
 Описывает все страницы мастера конфигурации тарифного плана, кроме первой и последней.
 
 Если параметр не указан, то мастер конфигурации будет состоять только из автоматически формируемых страниц
-|Массив (подробнее — в разделе {linkto(../ib_display/#IBdisplay_pages)[text=%text]})
+|Массив (подробнее — в разделе {linkto(../ib_display#IBdisplay_pages)[text=%text]})
 |
 Нет
 
@@ -28,7 +28,7 @@
 * Внешние IP-адреса.
 
 Стоимость рассчитывается автоматически в соответствии с тарифами облачной платформы
-|Массив (подробнее — в разделе {linkto(../ib_display/#IBdisplay_entities)[text=%text]})
+|Массив (подробнее — в разделе {linkto(../ib_display#IBdisplay_entities)[text=%text]})
 |
 Да
 |===
@@ -36,7 +36,7 @@
 
 ## {heading(Массив pages)[id=IBdisplay_pages]}
 
-По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы настроить отображение групп в зависимости от условий, используйте конструкцию `when` (подробнее — в разделе {linkto(../ib_display/#IBdisplay_when)[text=%text]}).
+По умолчанию в мастере конфигурации тарифного плана отображаются и настраиваются все группы тарифных опций `groups`. Чтобы настроить отображение групп в зависимости от условий, используйте конструкцию `when` (подробнее — в разделе {linkto(../ib_display#IBdisplay_when)[text=%text]}).
 
 Чтобы описать страницы мастера конфигурации тарифного плана ({linkto(#pic_wizard_ib_page)[text=рисунок %number]}):
 
@@ -92,7 +92,7 @@ pages:
 
 ## {heading(Массив entities)[id=IBdisplay_entities]}
 
-По умолчанию в мастере конфигурации тарифного плана рассчитывается стоимость всех элементов инфраструктуры, описанных в массиве `entities`. Чтобы настроить отображение стоимости инфраструктуры в зависимости от условий, используйте конструкцию `when` (подробнее — в разделе {linkto(../ib_display/#IBdisplay_when)[text=%text]}).
+По умолчанию в мастере конфигурации тарифного плана рассчитывается стоимость всех элементов инфраструктуры, описанных в массиве `entities`. Чтобы настроить отображение стоимости инфраструктуры в зависимости от условий, используйте конструкцию `when` (подробнее — в разделе {linkto(../ib_display#IBdisplay_when)[text=%text]}).
 
 Тип элемента инфраструктуры определяется в параметре `entities.entity`:
 
