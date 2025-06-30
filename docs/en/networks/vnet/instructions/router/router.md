@@ -137,11 +137,11 @@ You can manage routers: view, edit and delete them.
 
    - Manage the subnets connected to the router. You can add new subnets to the router by selecting them from the list, or remove already added subnets.
 
-     <info>
+     {note:info}
 
      You can also add or remove subnets by changing the router interface.
 
-     </info>
+     {/note}
 
 1. After editing the router, click the **Save** button.
 
@@ -225,11 +225,11 @@ You can manage routers: view, edit and delete them.
      </tabpanel>
      </tabs>
 
-     <info>
+     {note:info}
 
      You can also add or remove a subnet by [changing the interface](#managing_an_interface) of the router.
 
-     </info>
+     {/note}
 
 </tabpanel>
 </tabs>
@@ -292,11 +292,11 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     - The selected subnet will be connected to the router.
     - The `INTERFACE_DISTRIBUTED` and (if the router is connected to an external network) `SNAT` interfaces related to this subnet will appear in the list of interfaces.
 
-   <info>
+   {note:info}
 
    To get a list of interfaces, [see router details](#viewing_a_list_of_routers_and_information_about_them) using the OpenStack CLI.
 
-   </info>
+   {/note}
 
 1. To remove an interface:
 
@@ -374,11 +374,11 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 ## Removing the Router
 
-<warn>
+{note:warn}
 
 Before deleting the router, delete the [static routes](#managing-static-routes) and the configured [interfaces](#managing_an_interface) (if any) one by one before deleting the router.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

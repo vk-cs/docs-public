@@ -16,10 +16,10 @@ API сервиса [Cloud Desktop](/ru/computing/cloud-desktops) позволя�
 
 {/cut}
 
-<info>
+{note:info}
 
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/vdiapi-swagger.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/vdiapi-swagger.json)

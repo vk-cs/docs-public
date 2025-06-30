@@ -295,11 +295,11 @@
 
 ## Tarantool
 
-<info>
+{note:info}
 
 К БД Tarantool можно подключиться как гостевой пользователь.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

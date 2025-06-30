@@ -88,13 +88,13 @@
 
 ## Установка аддона
 
-<warn>
+{note:warn}
 
 При установке аддонов Docker Registry и Ingress NGINX для них будут созданы [стандартные балансировщики нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 Процедура установки аддонов рассматривается в [соответствующем разделе](../advanced-installation).
 

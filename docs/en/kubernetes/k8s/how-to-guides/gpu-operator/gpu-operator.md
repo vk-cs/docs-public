@@ -19,11 +19,11 @@ This article shows how to create a cluster with a GPU node and test its operatio
    - In the **Number of nodes** parameter, leave the `1` value.
    - Specify the other parameters at your choice or leave the default ones.
      
-    <err>
+    {note:err}
 
     In the **Number of nodes** and **Maximum number of nodes** parameters, do not specify a value greater than the number of GPUs you have. This may lead to the cluster not working.
 
-    </err>
+    {/note}
 
    As an example, the `my-kubernetes-cluster` cluster will be created with the `my-kubernetes-cluster-gpu-group-0` node on a template with a GPU. If you use other names, make appropriate corrections in the commands.
 
@@ -101,11 +101,11 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 1. [Add](/en/kubernetes/k8s/instructions/addons/manage-addons#editing_addon_code) NVIDIA device plugin configuration to GPU Operator add-on code:
 
-   <warn>
+   {note:warn}
 
    Please keep the indents when editing the code, otherwise the add-on will not be edited or will not work correctly.
 
-   </warn>
+   {/note}
 
    ```yaml
       config:
@@ -170,11 +170,11 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
    kubectl label node my-kubernetes-cluster-gpu-group-0 nvidia.com/device-plugin.config=mps-on
    ```
 
-   <info>
+   {note:info}
 
    You can [add a label](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for all nodes in a group via your management console.
 
-   </info>
+   {/note}
 
 1. Wait a few minutes for the settings to apply, then check them:
 

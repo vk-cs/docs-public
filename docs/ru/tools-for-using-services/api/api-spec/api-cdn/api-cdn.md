@@ -32,10 +32,10 @@ curl --location "https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547
 
 {/cut}
 
-<info>
+{note:info}
 
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/api-cdn.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/api-cdn.json)

@@ -18,21 +18,21 @@ An instance in the **Master-Replica** configuration can be stopped, started, and
 
 ## Cluster
 
-<info>
+{note:info}
 
 The principle of operation of the PostgreSQL cluster is described.
 
-</info>
+{/note}
 
 A group of virtual machines with installed DBMS servers of the selected type that support synchronous and asynchronous data replication, with a load balancer. If the master instance is unavailable, automatic switching will work: one of the replicas will be converted to the master, and another replica will be created instead.
 
 When increasing the disk size or scaling vertically, the changes are applied to all instances of the cluster.
 
-<info>
+{note:info}
 
 To ensure high availability of the PostgreSQL cluster, the [Patroni](https://patroni.readthedocs.io/en/latest/index.html) service is used.
 
-</info>
+{/note}
 
 An instance in the **Cluster** configuration cannot be started, restarted, or stopped.
 

@@ -9,13 +9,13 @@ The way to connect to the cluster depends on its IP address:
 
 1. On the host from which you plan to connect to the cluster, install `kubectl` if the utility is not already installed.
 
-   <warn>
+   {note:warn}
 
    Make sure that the minor version of `kubectl` differs by no more than one from the minor version of the cluster you are connecting to. For example, `kubectl` version 1.23 works correctly with clusters of versions 1.**22**, 1.**23** and 1.**24**.
 
    See [official Kubernetes documentation](https://kubernetes.io/releases/version-skew-policy/#kubectl) for more details.
 
-   </warn>
+   {/note}
 
    <tabs>
    <tablist>
@@ -75,11 +75,11 @@ The way to connect to the cluster depends on its IP address:
       sudo apt-get install -y kubectl=1.23.6-00
       ```
 
-      <info>
+      {note:info}
 
       You can get a list of all available versions by using the command `sudo apt-cache policy kubectl`.
 
-      </info>
+      {/note}
 
    1. Check the `kubectl` version by running the command:
 
@@ -112,11 +112,11 @@ The way to connect to the cluster depends on its IP address:
       yum install -y kubectl-1.23.6-0
       ```
 
-      <info>
+      {note:info}
 
       You can get a list of all available versions by using the command `yum --showduplicates list kubectl`.
 
-      </info>
+      {/note}
 
    1. Check the `kubectl` version by running the command:
 
@@ -190,7 +190,7 @@ The way to connect to the cluster depends on its IP address:
       1. Go to **Start -> This Computer -> Properties -> Advanced System Settings -> Environment Variables -> System Variables**.
       1. Change the value of the `Path` variable by appending the path to the directory with the file `kubectl.exe` to it.
 
-      <info>
+      {note:info}
 
       **Note**
 
@@ -199,7 +199,7 @@ The way to connect to the cluster depends on its IP address:
       - either specify the path to the downloaded file before the entry added by the Docker Desktop installer;
       - or remove the `kubectl` shipped with Docker Desktop.
 
-      </info>
+      {/note}
 
    1. Check the `kubectl` version by running the command:
 

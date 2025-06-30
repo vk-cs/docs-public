@@ -1,10 +1,10 @@
 [Shared networks](../../concepts/net-types#shared_net) allow you to work with one network in several projects within one [SDN](../../concepts/architecture#sdns_used).
 
-<info>
+{note:info}
 
 Network sharing is available by default in projects with the Sprut [SDN](../../concepts/architecture#sdns_used). To share a network in a project with the Neutron SDN, contact [technical support](mailto:support@mcs.mail.ru).
 
-</info>
+{/note}
 
 ## {heading(Sharing network)[id=share]}
 
@@ -114,9 +114,9 @@ To delete a shared network:
 1. [Delete](../ports#deleting_a_port) all occupied shared network ports in your project. To remove some ports, you need to remove or disable the services that are connected to them: VMs, [PaaS services](/ru/intro/start/concepts/architecture), file storages, balancers, advanced router interfaces directed to the shared network.
 1. Make sure that connected projects also have all services on the shared network removed or disabled.
 
- <warn>
+ {note:warn}
  As long as there are occupied ports on the shared network, it is impossible to delete the network.
- </warn>
+ {/note}
 
 {include(/en/_includes/_delete_net.md)}
 

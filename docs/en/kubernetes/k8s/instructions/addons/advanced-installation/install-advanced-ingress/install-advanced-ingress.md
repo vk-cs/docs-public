@@ -1,12 +1,12 @@
 ## {heading(Installing add-on)[id=installing_addon]}
 
-<warn>
+{note:warn}
 
 When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
 
@@ -42,11 +42,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - the name of the namespace where the add-on will be installed;
       - [add-on settings code](#editing_addon_settings_code_during_installation).
 
-        <warn>
+        {note:warn}
 
         An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-        </warn>
+        {/note}
 
    1. Click the **Install addon** button.
 
@@ -190,11 +190,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -213,13 +213,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 During quick installation, the add-on settings code is not edited. A load balancer with a floating IP address will be created, and the Ingress controller will be accessible from the Internet.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
-</info>
+{/note}
 
 1. Install the add-on:
 
@@ -261,12 +261,12 @@ If this does not suit you, perform a **standard installation** or **installation
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
-<info>
+{note:info}
 
 - Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
 - The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml).
 
-</info>
+{/note}
 
 ### Changing the load balancer type for the Ingress controller
 
@@ -300,11 +300,11 @@ After editing the add-on code [continue installing the add-on](#installing_addon
 
 ## Getting the IP address of the load balancer
 
-<info>
+{note:info}
 
 The following uses the service name `ingress-nginx` and the `ingress-nginx` namespace. If other parameters were selected when adding the add-on, adjust the commands.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

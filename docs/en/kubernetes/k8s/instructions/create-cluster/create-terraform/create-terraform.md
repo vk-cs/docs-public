@@ -2,13 +2,13 @@ Description of how to create a cluster using Terraform is provided below. It is 
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 
-<warn>
+{note:warn}
 
 When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](../../../concepts/addons-and-settings/addons) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 ## Before creating cluster
 
@@ -24,11 +24,11 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 1. Create a Terraform configuration file.
 
-   <info>
+   {note:info}
 
    The following steps list only the basic Terraform resource parameters you need to specify in this file. For a complete list of parameters, see [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) for [Kubernetes cluster](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md).
 
-   </info>
+   {/note}
 
 ## 1. Prepare the necessary data sources
 
@@ -201,11 +201,11 @@ Here:
   </tabs>
 
 
-    <info>
+    {note:info}
 
     To create a cluster without internet access, specify a network with a connected [Shadow port](/en/networks/vnet/concepts/ips-and-inet#shadow_port).
 
-    </info>
+    {/note}
 
 - `floating_ip_enabled` — assign a public IP address to the API cluster:
 
@@ -216,12 +216,12 @@ To install add-ons in the cluster via Terraform, [get the list of availible add-
 
 ## 3. Describe the configuration of one or more worker node groups
 
-<info>
+{note:info}
 
 This is an optional step.
 You can use Terraform to create a cluster of master nodes only, and add worker node groups later.
 
-</info>
+{/note}
 
 This operation is described in detail in [Worker node group management](../../manage-node-group).
 

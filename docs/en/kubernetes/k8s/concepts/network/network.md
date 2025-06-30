@@ -12,11 +12,11 @@ When using OpenStack Neutron in large cloud networks (about tens of thousands of
 
 Therefore, VK Cloud has developed its own software-defined network, Sprut. It is fully compatible with Neutron API but works on different principles, which allows to use it together with Calico in large cloud networks without experiencing the described issues. Read more about Sprut in [How cloud networks work and how they differ from On-premise](https://habr.com/ru/company/vk/blog/656797/) and in [YouTube video](https://www.youtube.com/watch?v=iqSXRZ8b_bk).
 
-<info>
+{note:info}
 
 Sprut is in the beta testing phase. Contact [technical support](mailto:support@mcs.mail.ru) to get access to the new SDN service.
 
-</info>
+{/note}
 
 ## Integration with load balancers
 
@@ -67,11 +67,11 @@ Three groups of rules are created for each cluster:
 - `<cluster name>-master`: allow communication with the master nodes.
 - `<cluster name>-minion`: provide communication between groups of worker nodes.
 
-<warn>
+{note:warn}
 
 Changing these rule groups may render the cluster inoperable.
 
-</warn>
+{/note}
 
 ## See also
 

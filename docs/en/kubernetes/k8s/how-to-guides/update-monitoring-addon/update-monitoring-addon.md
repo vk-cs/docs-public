@@ -2,13 +2,13 @@ There are [multiple versions](../../concepts/versions/components) of the [Kube P
 
 To upgrade the Kube Prometheus Stack add-on from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the add-on and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the add-on for saving and further re-using it with the new version.
 
-<warn>
+{note:warn}
 
 It is further assumed that the add-on is installed in the namespace (e.g., `kube-prometheus-stack`) that contains only those Kubernetes resources that relate to the add-on.
 
 If there are other Kubernetes resources in the namespace, modify the commands and script so that they do not affect resources not related to the add-on.
 
-</warn>
+{/note}
 
 ## Before you start
 
@@ -30,11 +30,11 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 1. Make sure the add-on is available and working. To do this, [access the Grafana web interface](../../monitoring#using_grafana).
 
-   <warn>
+   {note:warn}
 
    Write down the password to access Grafana, even if it is stored as a Kubernetes secret. During the add-on upgrade process, the namespace where the add-on and the secret are located will be deleted along with all contents.
 
-   </warn>
+   {/note}
 
 1. [Install](../../install-tools/helm) Helm version 3.0.0 or higher if the utility has not been already installed.
 
@@ -327,13 +327,13 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 1. Run the script.
 
-   <warn>
+   {note:warn}
 
    If you run the script with the `prometheus-monitoring` namespace explicitly (the `-n` parameter) or implicitly specified, this namespace will be removed.
 
    If you run the script for a different namespace, it will not be removed.
 
-   </warn>
+   {/note}
 
    Run the command, specifying the required parameters. You can omit the parameter if you are satisfied with its default value.
 
@@ -590,11 +590,11 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
       If you specified the password for access to Grafana in the `grafana.adminPassword` field when installing the previous version of the add-on, you do not need to specify it again. The new version of the add-on will use the previous PVs as a storage, so the password will remain the same. Installing a new version of the add-on will not change the password for accessing Grafana, even if you leave this field empty: a secret with the password for Grafana will be generated, but it will not be used.
 
-      <warn>
+      {note:warn}
 
       Incorrectly specified configuration code may cause errors during installation or inoperability of the add-on.
 
-      </warn>
+      {/note}
 
    1. Install the add-on.
 

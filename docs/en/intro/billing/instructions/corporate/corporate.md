@@ -32,11 +32,11 @@ To set up workflow with VK Cloud:
 
 After [registration](/en/intro/start/account-registration) in VK Cloud, you can go to the project settings and complete the additional registration of the legal entity or the sole proprietor, specifying your details.
 
-<info>
+{note:info}
 
 Filling in the details in the management console is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian legal entities and sole proprietors.
 
-</info>
+{/note}
 
 If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#predoplata), after additional registration, you will be able to [upload](../bill-generation) from your management console accounts that specify the details of both the supplier and the buyer of services. If the additional registration is not completed, only the details of the supplier are indicated in the invoice.
 
@@ -53,10 +53,10 @@ To complete additional registration:
 
    If the TIN is found in the contractor database, the address is filled in automatically. If necessary, the pre-filled field values can be edited.
 
-   <info>
+   {note:info}
 
    If there is a [paper document flow](../../concepts/report) with the organization, VK Cloud always specifies which address to send them to before sending documents.
 
-   </info>
+   {/note}
 
 1. Click the **Save** button.

@@ -33,11 +33,11 @@
       kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
       ```
 
-      <warn>
+      {note:warn}
 
       Не закрывайте эту сессию, иначе доступ к веб-интерфейсу Grafana пропадет.
 
-      </warn>
+      {/note}
 
    1. По выводу команды определите порт, открытый `kubectl` для доступа к Grafana.
 

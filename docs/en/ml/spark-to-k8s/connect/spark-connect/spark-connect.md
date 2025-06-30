@@ -6,11 +6,11 @@ Spark Connect allows to remotely connect to a Spark cluster and work with it via
 1. Select a project.
 1. [Create](../../instructions/create) a Spark cluster if it is not already done. Select **Virtual Machine Type** with at least 6 CPUs and 12 GB RAM.
 
-    <info>
+    {note:info}
 
     You can also [create a cluster via Terraform](/en/tools-for-using-services/terraform/how-to-guides/spark/create).
 
-    </info>
+    {/note}
 
 1. Save the domain name of the cluster for future use.
 1. Place the desired dataset in the Cloud Storage buckets tied to the cluster:
@@ -84,11 +84,11 @@ To connect to a cluster and display the data loaded in the bucket, complete the 
 
     - `<ACCESS_TOKEN>` — access token to the ML Platform library created earlier.
 
-    <err>
+    {note:err}
 
     For simplicity, the value of the access token is specified in the Python script example. When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](/ru/ml/spark-to-k8s/ml-platform-library/authz "change-lang").
 
-    </err>
+    {/note}
 
     - `<CLUSTER_DOMAIN_NAME>` — DNS name of the cluster, for example: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
     - `<APPLICATION_NAME>` — the name of the application to be displayed in the cluster interface.
@@ -131,11 +131,11 @@ Other examples of remote work with Cloud Spark cluster can be downloaded at [lin
 
     - `<ACCESS_TOKEN>` — access token to the ML Platform library created earlier.
 
-    <err>
+    {note:err}
 
     For simplicity, the value of the access token is specified in the Python script example. When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](/ru/ml/spark-to-k8s/ml-platform-library/authz "change-lang").
 
-    </err>
+    {/note}
 
     - `<CLUSTER_DOMAIN_NAME>` — DNS name of the cluster, for example: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
     - `<APPLICATION_NAME>` — the name of the application to be displayed in the cluster interface.
@@ -178,11 +178,11 @@ This returns the dataframe that was created:
 
     - `<ACCESS_TOKEN>` — access token to the ML Platform library created earlier.
 
-    <err>
+    {note:err}
 
     For simplicity, the value of the access token is specified in the Python script example. When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](/ru/ml/spark-to-k8s/ml-platform-library/authz "change-lang").
 
-    </err>
+    {/note}
 
     - `<CLUSTER_DOMAIN_NAME>` — DNS name of the cluster, for example: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
     - `<APPLICATION_NAME>` — the name of the application to be displayed in the cluster interface.

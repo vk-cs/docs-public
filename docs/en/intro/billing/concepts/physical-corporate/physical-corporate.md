@@ -6,11 +6,11 @@ For the convenience of legal entities or sole proprietors (SP), opportunities ha
 
 Organizations and sole proprietors can work with VK Cloud as individuals or legal entities of their choice.
 
-<info>
+{note:info}
 
 If you plan to work with VK Cloud as a legal entity or sole proprietor, go through [pre-registration](#additional_registration_of_legal_entities) in your management console.
 
-</info>
+{/note}
 
 ## Payment scheme
 
@@ -116,11 +116,11 @@ A bank card linked to the project is the most convenient payment method. Advanta
 
 It is recommended to pay for services by bank transfer, since only such payments can be reflected in [accounting documents](../report#edm).
 
-<info>
+{note:info}
 
 Legal entities and sole proprietors can also top up the payment account balance of the project with a bank card, for example, if you need to urgently transfer funds to avoid freezing the project. Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../report#composition_of_accounting_documents): billing report, reconciliation report.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
@@ -151,11 +151,11 @@ Organizations and sole proprietors that do not work according to EDO receive [or
 
 By default, EDM is not connected.
 
-<info>
+{note:info}
 
 EDM work is available only to organizations-residents of the Russian Federation and sole proprietors who work in [region](/en/tools-for-using-services/account/concepts/regions) Moscow.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>

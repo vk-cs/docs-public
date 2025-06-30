@@ -1,10 +1,10 @@
 In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#4_connect_to_the_vm) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm_message_logs).
 
-<info>
+{note:info}
 
 Information about the user's actions with the VM and about changes in its state is contained in the [event log](../vm-manage#viewing_the_event_log) OpenStack.
 
-</info>
+{/note}
 
 ## The VNC console
 
@@ -62,11 +62,11 @@ To connect VM via VNC console:
 
     1. Use the link to open the VNC console page in the browser.
 
-       <info>
+       {note:info}
 
        If the link has expired, run the command again to get a new link.
 
-      </info>
+      {/note}
 
     </tabpanel>
     </tabs>

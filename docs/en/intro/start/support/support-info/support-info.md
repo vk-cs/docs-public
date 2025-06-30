@@ -9,13 +9,13 @@ You can apply to technical support through the following available communication
 | Mail    | support@mcs.mail.ru         | around the clock |
 | Phone   | +7 (499) 350-97-03          | around the clock |
 
-<info>
+{note:info}
 
 To speed up the processing of the request, inform the technical support of the account details: login, project name and describe the issue in as much detail as possible.
 
 If possible, attach any available diagnostic information: screenshots, logs and other materials.
 
-</info>
+{/note}
 
 You can also ask questions about working with the VK Cloud platform to the [AI ​​consultant](../chatbots/ai-bot). It is [available in Telegram](https://t.me/vk_cloud_support_bot) 24/7.
 
@@ -51,11 +51,11 @@ Technical support:
 - Advises on troubleshooting issues in the platform.
 - Helps in setting up VK Cloud services.
 
-<warn>
+{note:warn}
 
 The VK Cloud Technical Support team does not administer and support operating systems and other services created using the Platform, unless this is agreed in a separate agreement.
 
-</warn>
+{/note}
 
 ## Notifications from technical support
 

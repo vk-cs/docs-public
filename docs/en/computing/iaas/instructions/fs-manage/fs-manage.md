@@ -35,11 +35,11 @@ File storages are created in your VK Cloud management console or in the OpenStac
     1. Select the access mode.
     1. Click the **Add rule** button.
 
-   <info>
+   {note:info}
 
    You can also add access rules after creating the file storage.
 
-   </info>
+   {/note}
 
 1. Click **Add file server**.
 
@@ -114,11 +114,11 @@ The way to connect the file storage depends on the operating system, [Windows](/
 
 ### Windows
 
-<info>
+{note:info}
 
 Instructions are provided for Windows Server 2012 R2. For information about connecting to other versions of Windows, see the developer documentation.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>
@@ -204,11 +204,11 @@ Here:
 
 ### Linux
 
-<info>
+{note:info}
 
 The instructions are given for Ubuntu. For information about connecting to other Unix-like operating systems, read the developer's documentation.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>
@@ -366,11 +366,11 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 The size of the file storage cannot be reduced.
 
-</info>
+{/note}
 
 ## Creating a snapshot
 

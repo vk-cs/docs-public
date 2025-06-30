@@ -5,18 +5,18 @@
 1. Click the **Connect**.
 1. Follow the steps of the tariff plan configuration wizard.
 
-   <info>
+   {note:info}
 
    The steps may vary for different services.
 
-   </info>
+   {/note}
 
 1. Confirm the connection of the service.
 
    Wait for the installation to complete — a one-time link with the details for working with the service will be sent to the mail. Save them before you start working.
 
-<info>
+{note:info}
 
 Instructions for getting started with the services are given in the section [Configuring marketplace services](../../initial-configuration).
 
-</info>
+{/note}

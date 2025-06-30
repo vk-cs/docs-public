@@ -22,11 +22,11 @@ A list of access tokens will be displayed.
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 There are no registration tokens in this list.
 
-</info>
+{/note}
 
 ## Creating an access token
 
@@ -52,24 +52,24 @@ There are no registration tokens in this list.
 1. Click the **Create** button.
 1. In the window that opens, copy the token value and save it on your device.
 
-   <err>
+   {note:err}
 
    After closing the window, it will be impossible to restore the token value. If it is lost, create a new token.
 
-   </err>
+   {/note}
 
 1. Click the **Ready** button.
 
 </tabpanel>
 <tabpanel>
 
-<err>
+{note:err}
 
 For simplicity, the value of the registration token is contained directly in the Python script example, and the value of the access token is output using `print()`.
 
 When working in a production environment, do not operate tokens in clear text. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
@@ -154,13 +154,13 @@ When working in a production environment, do not operate tokens in clear text. U
 </tablist>
 <tabpanel>
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is contained directly in the Python script example, and the value of the registration token is output using `print()`.
 
 When working in a production environment, do not operate tokens in clear text. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
@@ -251,11 +251,11 @@ When working in a production environment, do not operate tokens in clear text. U
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 A list of created registration tokens is not maintained. You can only [get a list of access tokens](#getting_a_list_of_access_tokens).
 
-</info>
+{/note}
 
 ## Deleting an access token
 
@@ -275,13 +275,13 @@ A list of created registration tokens is not maintained. You can only [get a lis
 </tabpanel>
 <tabpanel>
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is contained directly in the Python script example.
 
 When working in a production environment, do not operate tokens in clear text. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 

@@ -14,11 +14,11 @@ After going through all the steps of the quick start, you will:
 
 1. Familiarize yourself with the monitoing data collected during the operation of the DB instance.
 
-<warn>
+{note:warn}
 
 The DB instance is charged and consumes computational resources. After completing the quick start [delete both the instance and the floating IP address assigned to it](#delete_unused_resources) if you no longer need them.
 
-</warn>
+{/note}
 
 ## Preparatory steps
 
@@ -209,13 +209,13 @@ The DB instance is charged and consumes computational resources. After completin
    - **Create replica:** make sure that this option is disabled.
    - **SSH access key:** `Create a new key`.
 
-     <info>
+     {note:info}
 
      With this option enabled, a private SSH key will be downloaded to your computer. Save it.
 
      This key is required to connect to the instance via SSH, for example, for [viewing the logs](#3_optional_view_db_instance_logs).
 
-     </info>
+     {/note}
 
    - **Backup:** `Disabled`.
 
@@ -228,13 +228,13 @@ The DB instance is charged and consumes computational resources. After completin
    - **Username:** `tsuser1`.
    - **User password:** provide a password or generate it.
 
-     <info>
+     {note:info}
 
      It is recommended either to use strong and lenghty password, that comprises several types of characters, or to generate password.
 
      The strong password is crucial, because this DB instance will be exposed to the internet.
 
-     </info>
+     {/note}
 
 1. Click the **Create database** button.
 
@@ -340,11 +340,11 @@ If the connection is successful, the following prompt will be displayed:
 tsdb1=>
 ```
 
-<warn>
+{note:warn}
 
 All further steps must be performed from the `psql` command line.
 
-</warn>
+{/note}
 
 ## 6. Create necessary tables
 
@@ -424,11 +424,11 @@ All further steps must be performed from the `psql` command line.
 
 ## 7. Fill in the tables with the data
 
-<info>
+{note:info}
 
 The `sensor_data` table will be filled in with the randomly generated dataset. The data in your table will differ from the shown examples.
 
-</info>
+{/note}
 
 1. Fill in the `sensors` table with data:
 
@@ -498,11 +498,11 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
 
 ## 8. Execute test queries
 
-<info>
+{note:info}
 
 Earlier the `sensor_data` table was filled in with the randomly generated dataset. Your query results will differ from the shown examples.
 
-</info>
+{/note}
 
 1. Output the average temperature and CPU utilization values over thirty-minute intervals:
 

@@ -19,11 +19,11 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
 1. If you do not already have a Kubernetes cluster, then create one.
 
-   <info>
+   {note:info}
 
    To save time, you can [create a Kubernetes cluster](../../../../kubernetes/k8s/instructions/create-cluster) in a few minutes on the VK Cloud platform.
 
-   </info>
+   {/note}
 
 1. Determine the cluster's version.
 
@@ -61,13 +61,13 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    See the compatibility table for the `cert-manager` and Kubernetes [in the official cert-manager documentation](https://cert-manager.io/docs/installation/supported-releases/).
 
-   <info>
+   {note:info}
 
    Next, the `1.11.3` version of `cert-manager` will be installed to additionally demonstrate the [upgrade](#5_upgrade_cert_manager) to `1.12.3` version.
 
    You could select any version that suits your needs. Adjust the commands listed below to match the selected version.
 
-   </info>
+   {/note}
 
 ## 2. Install cert-manager
 
@@ -286,11 +286,11 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
 ## 4. (Optional) Back up the cert-manager resources
 
-<info>
+{note:info}
 
 Due to security reasons, it is [advised](https://cert-manager.io/docs/tutorials/backup) to create a backup before [upgrading](#5_upgrade_cert_manager) `cert-manager`
 
-</info>
+{/note}
 
 A backup of the `Issuer`, `ClusterIssuer` and `Certificate` reosurces will be created. The following resources are not the part of the backup:
 
@@ -298,11 +298,11 @@ A backup of the `Issuer`, `ClusterIssuer` and `Certificate` reosurces will be cr
 
 - Secrets that directly store the certificate's data, including private key.
 
-  <warn>
+  {note:warn}
 
   During restoring from the backup, if no matching secret is found for the `Certificate` resource, then [the certificate will be reissued](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration).
 
-  </warn>
+  {/note}
 
 To create a backup, execute the command:
 
@@ -363,13 +363,13 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
    See the compatibility table for the `cert-manager` and Kubernetes [in the official cert-manager documentation](https://cert-manager.io/docs/installation/supported-releases/).
 
-   <info>
+   {note:info}
 
    Next, the `1.11.3` version of `cert-manager` will be upgraded to `1.12.3` version.
 
    If a different version of `cert-manager` has been installed earlier, then select the correct version to ugrade to, taking into account the recommendations given above.
 
-   </info>
+   {/note}
 
 1. Upgrade the CRDs installed in the cluster.
 
@@ -449,11 +449,11 @@ Read about advanced backups and restoring from backup [in the official cert-mana
    kubectl delete -f cert-manager-test-resources.yaml
    ```
 
-   <warn>
+   {note:warn}
 
    The `cert-manager-test` namespace with all contents, including additional resources automatically created by `cert-manager`, will be deleted.
 
-   </warn>
+   {/note}
 
 1. If `cert-manager` has been [installed](#2_install_cert_manager) for testing purposes and you no longer need it, then delete all resources associated with it:
 

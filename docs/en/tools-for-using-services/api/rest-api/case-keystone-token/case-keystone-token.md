@@ -8,11 +8,11 @@ A Keystone token is required to work with some components and resources of the V
 
 ## Token generation
 
-<warn>
+{note:warn}
 
 A generated token is valid for one hour. All generated tokens remain valid for their lifetime.
 
-</warn>
+{/note}
 
 Get a token:
 

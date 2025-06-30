@@ -1,10 +1,10 @@
 In addition to the cloud network, you can create subnets. By default, one network with several subnets is already created in the project. Once a network and subnets are created, they become available to all virtual machines in the project at once.
 
-<warn>
+{note:warn}
 
 [Shared networks](../../concepts/net-types#shared_net) can be managed only from the owner project.
 
-</warn>
+{/note}
 
 ## Viewing list of networks and subnets and information about them
 
@@ -80,11 +80,11 @@ In addition to the cloud network, you can create subnets. By default, one networ
 1. (Optional) Enable the **Internet access** option to access the VM in the network from the Internet. Internet access is required for VPN, SNAT.
 1. (Optional) Enable the **Access to VK Cloud services** option to connect [Shadow port](../../concepts/ips-and-inet#shadow_port) to the network. This option allows you to locate Kubernetes clusters in private networks without internet access. This option is available if the Shadow port is added to the project and internet access is disabled for the network.
 
-   <info>
+   {note:info}
 
    To connect the Shadow port to your project, contact [technical support](mailto:support@mcs.mail.ru).
 
-   </info>
+   {/note}
    
 1. Select the [router](../../concepts/router) from the list. If the **Internet access** option is enabled, only routers connected to the [external network](../../concepts/net-types#external_net) will be listed.
 1. Specify the [zone](../../../dns/private-dns) for private DNS.
@@ -169,11 +169,11 @@ Once a network is created, it will appear in the list of networks.
 
 ## Deleting network
 
-<warn>
+{note:warn}
 
 All the network subnets and ports will be deleted along with the network.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -339,12 +339,12 @@ All the network subnets and ports will be deleted along with the network.
 
 ## Deleting subnet
 
-<warn>
+{note:warn}
 
 There must be at least one subnet on the cloud network.
 Once a subnet is deleted, it cannot be restored.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

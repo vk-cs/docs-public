@@ -70,11 +70,11 @@
    {/caption}
 1. Создайте отдельный том диска для хранения данных сервиса. Используйте ресурс `vkcs_blockstorage_volume`. В нем укажите метаданные диска так же, как для root-диска.
 
-   <info>
+   {note:info}
 
    Для хранения данных создавайте отдельный том диска, чтобы не потерять их при переустановке сервиса.
 
-   </info>
+   {/note}
 
    {caption(Пример создания отдельного тома диска)[align=left;position=above]}
    ```hcl
@@ -161,11 +161,11 @@
       ```
       {/caption}
 
-      <info>
+      {note:info}
 
       Перед публикацией сервиса ID образа сервиса будет заменен на публичный ID (подробнее — в разделе {linkto(../../ibservice_upload/ibservice_upload_publish_image#ibservice_upload_publish_image)[text=%text]}).
 
-      </info>
+      {/note}
 
 1. Присоедините отдельный том диска данных к ВМ. Используйте ресурс `vkcs_compute_volume_attach`.
 
@@ -187,11 +187,11 @@
    {/caption}
 1. Передайте данные ВМ (например, закрытый SSH-ключ) в выходных параметрах (подробнее — в разделе {linkto(../tf_manifest_output/#tf_manifest_output)[text=%text]}).
 
-<info>
+{note:info}
 
 Настройки ВМ могут различаться в зависимости от конкретного сервиса.
 
-</info>
+{/note}
 
 ## {heading(Использование типа SDN в ресурсах Terraform)[id=tf_manifest_image_sdn]}
 
@@ -223,11 +223,11 @@ resource "vkcs_networking_secgroup" "secgroup" {
 ```
 {/caption}
 
-<warn>
+{note:warn}
 
 Используйте тип SDN из источника данных `vkcs_networking_subnet`, чтобы корректно указать имя сети при получении пула внешних IP-адресов.
 
-</warn>
+{/note}
 
 Чтобы получить пул внешних IP-адресов, используйте ресурс `vkcs_networking_floatingip` провайдера VK CS. В параметре `pool` задайте имя внешней сети таким образом, чтобы оно определялось автоматически в зависимости от типа SDN:
 
@@ -242,11 +242,11 @@ resource "vkcs_networking_floatingip" "base_fip" {
 ```
 {/caption}
 
-<err>
+{note:err}
 
 Если в параметре `pool` указать конкретное значение, это приведет к ошибке при развертывании инстанса сервиса в проектах с другим типом SDN.
 
-</err>
+{/note}
 
 ## {heading(Назначение фиксированного IP-адреса)[id=tf_manifest_ip]}
 

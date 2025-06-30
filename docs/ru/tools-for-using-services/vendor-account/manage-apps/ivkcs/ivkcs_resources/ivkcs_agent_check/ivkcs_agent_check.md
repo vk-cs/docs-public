@@ -202,11 +202,11 @@ IP-адрес или DNS-имя хоста
 |===
 {/caption}
 
-<warn>
+{note:warn}
 
 Если указан аргумент `url`, то его значение будет иметь приоритет над значениями в аргументах `host`, `path` и `port`.
 
-</warn>
+{/note}
 
 ## {heading(Блок script_health)[id=script_health]}
 

@@ -63,11 +63,11 @@ Acceptable options for specifying user credentials:
 - `key_file`;
 - `user_name` and `password` (for example, your username and password to sign in to your VK Cloud management console).
 
-<warn>
+{note:warn}
 
 Accounts generated for the Cloud Logging service have only the right to record logs. Therefore, authorization with their use is recommended as more secure.
 
-</warn>
+{/note}
 
 ## {heading(Plugin configuration parameters)[id=conf_parameters]}
 

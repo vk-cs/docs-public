@@ -1,4 +1,4 @@
-<info>
+{note:info}
 
 More terms can be found in the corresponding section:
 
@@ -6,7 +6,7 @@ More terms can be found in the corresponding section:
 - [Cloud Networks](/en/networks/vnet/concepts).
 - [Cloud Containers](/en/kubernetes/k8s/reference).
 
-</info>
+{/note}
 
 ## Instances
 

@@ -11,11 +11,11 @@ You can create a backup plan:
 - automatically, by enabling the backup option when creating a VM or DB instance
 - manually in your VK Cloud management console or using the [Cloud Backup API](/ru/tools-for-using-services/api/api-spec/backup-api "change-lang")
 
-<info>
+{note:info}
 
 Each VM or DB instance can have only one backup plan.
 
-</info>
+{/note}
 
 ## {heading(Creating backup plan for virtual machine)[id=create_vm_backup_plan]}
 
@@ -48,11 +48,11 @@ Each VM or DB instance can have only one backup plan.
 
 The created backup plan will appear in the list.
 
-<info>
+{note:info}
 
 When a VM is backed up, all disks connected to it will be also backed up.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>

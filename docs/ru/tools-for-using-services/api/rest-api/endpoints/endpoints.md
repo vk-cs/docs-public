@@ -24,11 +24,11 @@
 | Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Управление [резервным копированием](/ru/tools-for-using-services/api/api-spec/backup-api) ВМ и инстансов баз данных |
 | Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Управление [файловыми хранилищами](/ru/computing/iaas/instructions/fs-manage) |
 
-<info>
+{note:info}
 
 В личном кабинете не отражен эндпоинт Cloud Logging (https://mcs.mail.ru/cloudlogs/v1/logs) — он позволяет [собирать логи ВМ](/ru/tools-for-using-services/api/api-spec/logging).
 
-</info>
+{/note}
 
 {cut(Остальные эндпоинты)}
 
@@ -107,8 +107,8 @@ Project ID не совпадает с [идентификатором проек
 
     Значение доступно на обеих вкладках, под заголовками **Project ID** и **Project ID / tenant_id**, соответственно.
 
-    <info>
+    {note:info}
 
     На вкладке **Доступ по API** значение **Project ID** отображается, если доступ по API активирован.
 
-    </info>
+    {/note}

@@ -52,11 +52,11 @@
    - must consist of at least 8 characters;
    - must contain at least one uppercase and one lowercase letter of the Latin alphabet, at least one digit.
 
-   <err>
+   {note:err}
 
    The password cannot be restored.
 
-   </err>
+   {/note}
 
    To generate a new password, click **Generate** button.
 

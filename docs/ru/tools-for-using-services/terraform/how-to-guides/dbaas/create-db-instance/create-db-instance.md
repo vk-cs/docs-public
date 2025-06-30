@@ -20,13 +20,13 @@
 - [Конфигурация](/ru/dbs/dbaas/concepts/work-configs) инстанса БД: **Single**.
 - Внешний IP-адрес: назначен.
 
-<warn>
+{note:warn}
 
 При создании инстансов БД MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1С в [конфигурации](/ru/dbs/dbaas/concepts/work-configs) **Кластер** будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 Выберите один из примеров создания кластера и создайте файл конфигурации Terraform `main.tf` с нужным содержимым:
 
@@ -222,11 +222,11 @@ variable "db_user_password" {
 
   При применении конфигурации значение пароля автоматически загрузится из окружения.
 
-<info>
+{note:info}
 
 Если не установить значение пароля, при применении конфигурации Terraform потребует ввести его в консоли.
 
-</info>
+{/note}
 
 {/cut}
 

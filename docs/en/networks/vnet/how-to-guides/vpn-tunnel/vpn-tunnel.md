@@ -1,12 +1,12 @@
 
 Throughout this guide, a VK Cloud subnet will be connected with the client subnet via a VPN tunnel. This VPN tunnel will be built to another network of the VK Cloud platform, and a virtual machine will be used as a VPN endpoint. Several virtual machines will also be created to test the functionality of the tunnel.
 
-<warn>
+{note:warn}
 
 The VPN service is only available in networks created with use of [Neutron SDN]( ../../concepts/architecture#sdns_used).
 For networks created with use of Sprut SDN, set up a tunnel via [advanced router](/en/networks/vnet/how-to-guides/advanced-router).
 
-</warn>
+{/note}
 
 The guide can be adapted to work with any other VPN endpoint, such as a corporate firewall or other network equipment.
 
@@ -16,11 +16,11 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 1. [Create](/en/networks/vnet/instructions/net#creating_network) networks.
 
-   <info>
+   {note:info}
 
    You can create a network with any parameters you choose. Adjust the next steps in this scenario as needed.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>
@@ -82,11 +82,11 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
     1. Click the **Ports** tab.
     1. Find the `SNAT` device port in the list of ports and copy its IP address.
 
-       <info>
+       {note:info}
 
        If you do not find the `SNAT` device port in the list, make sure that SDN Neutron was selected when creating the virtual network.
 
-       </info>
+       {/note}
 
 1. Create a virtual machine that will act as a VPN gateway on the `clientNet` client network, with the following settings:
 
@@ -234,11 +234,11 @@ Select **Settings** - `Basic`, and set:
       auto=start
    ```
 
-   <info>
+   {note:info}
 
    For the Diffie-Hellman group `group14`, the equivalent notation is `modp_2048`. The mapping of `modp` to group names is given in [RFC 3526](https://www.rfc-editor.org/rfc/rfc3526).
 
-   </info>
+   {/note}
 
 1. Specify the shared key (PSK) in the `/etc/ipsec.secrets` file. The key must match the key specified [on the cloud side](#1_set_up_a_vpn_tunnel_on_the_cloud_side):
 
@@ -338,11 +338,11 @@ If you no longer need the created resources, delete them:
 1. [Delete](../../instructions/vpn#removing_a_vpn_tunnel) VPN tunnel.
 1. [Delete](../../instructions/router#managing_static_routes) static routes defined on the side of the client network.
 
-   <info>
+   {note:info}
 
    Static routes on the side of the cloud network will be deleted along with the subnet for which they were registered.
 
-   </info>
+   {/note}
 
 1. [Delete](../../instructions/router#removing_the_router) client and cloud network routers.
 1. Delete the client and cloud [subnets](../../instructions/net#deleting_subnet) and [networks](../../instructions/net#deleting_network).

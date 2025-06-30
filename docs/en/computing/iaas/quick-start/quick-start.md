@@ -7,13 +7,13 @@ After going through all the steps of a quick start, you will:
 1. Create a new virtual machine (VM).
 2. Connect to the created VM via SSH.
 
-<info>
+{note:info}
 
 A running VM consumes computing resources.
 
 After passing the quick start, stop or delete the VM if you no longer need it.
 
-</info>
+{/note}
 
 ## 1. Preparatory steps
 
@@ -35,11 +35,11 @@ After passing the quick start, stop or delete the VM if you no longer need it.
 8. In the field **Firewall settings** choose `Only ssh is allowed`.
 9. Click the **Next step** and **Create instance** buttons.
 
-<warn>
+{note:warn}
 
 Do not close the page until the VM creation process is complete.
 
-</warn>
+{/note}
 
 10. Save the suggested key file `.pem`.
 11. Wait until the virtual machine creation process is completed and the page of the new VM based on Ubuntu 22.04 opens.
@@ -132,11 +132,11 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
    1. In the field **Host Name (or IP address)** enter the external IP address of the VM. Specify the port `22` and the connection type `SSH`.
 
-   <info>
+   {note:info}
 
    The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/en/) to **Cloud Servers → Virtual machines**.
 
-   </info>
+   {/note}
 
    2. In the tree on the left, go to the category **Connection → SSH → Auth**.
    3. Set the flag **Allow agent forwarding**.

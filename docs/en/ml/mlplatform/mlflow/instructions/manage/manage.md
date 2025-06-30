@@ -45,11 +45,11 @@ To launch an instance:
 
 This is a group operation: if necessary, you can reboot several instances at once by selecting them with checkboxes.
 
-<info>
+{note:info}
 
 A reboot assumes a graceful shutdown of the operating system of the VM instance.
 
-</info>
+{/note}
 
 To reboot an instance:
 
@@ -65,11 +65,11 @@ To reboot an instance:
 
 If the instance is not responding, use a force reboot.
 
-<warn>
+{note:warn}
 
 A forced instance reboot corresponds to power cycling. Unsaved data may be lost.
 
-</warn>
+{/note}
 
 To force reboot an instance:
 
@@ -92,11 +92,11 @@ The link will be copied to the clipboard; it corresponds to the DNS name of the 
 
 ## {heading(Deleting instance)[id=delete]}
 
-<info>
+{note:info}
 
 If the MLflow instance is associated with an MLflow Deploy, first [delete the MLflow Deploy instance](../../../deploymlflow/instructions/delete).
 
-</info>
+{/note}
 
 This is a group operation: if necessary, you can delete several instances at once by selecting them with checkboxes.
 

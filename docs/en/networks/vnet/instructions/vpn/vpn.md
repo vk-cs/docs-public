@@ -132,11 +132,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. **Router** — select the router whose subnets should be accessible through the VPN tunnel. The available options depend on the selected SDN, and only include routers that are connected to an external network and have an assigned external IP address.
 
-       <warn>
+       {note:warn}
 
        It is recommended to create no more than 500 connections for one router. With more connections, errors may occur.
 
-       </warn>
+       {/note}
 
 1. Select `New endpoint group` from the drop-down list.
 
@@ -184,7 +184,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
          If necessary, generate a key by clicking the corresponding button.
 
-         <info>
+         {note:info}
 
          Valid characters:
          - uppercase and lowercase letters of the Latin alphabet;
@@ -193,7 +193,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
          The key must contain at least one letter or number.
 
-         </info>
+         {/note}
 
     1. (Optional) Specify advanced settings:
 
@@ -567,7 +567,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
          If necessary, generate a key by clicking the corresponding button.
 
-         <info>
+         {note:info}
 
          Valid characters:
          - uppercase and lowercase Latin letters;
@@ -576,7 +576,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
          The key must contain at least one letter or number.
 
-         </info>
+         {/note}
 
    1. (Optional) Аdvanced settings:
 
@@ -747,11 +747,11 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 ## Restarting a VPN tunnel
 
-<info>
+{note:info}
 
 Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Sprut, all tunnel changes are applied automatically, no restart is required.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

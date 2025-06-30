@@ -84,11 +84,11 @@ SDN Sprut обеспечивает стабильную работу сетей 
 
 ![Архитектура SDN Neutron и SDN Sprut](./assets/neutron_vs_sprut.png){params[noBorder=true]}
 
-<info>
+{note:info}
 
 Sprut — основная SDN для всех новых проектов. В настройках можно [узнать, какая SDN используется на вашем проекте](/ru/tools-for-using-services/account/instructions/project-settings/manage#sdn_view). Чтобы подключить другую SDN, [обратитесь в техническую поддержку](/ru/contacts).
 
-</info>
+{/note}
 
 Дополнительные материалы об SDN Sprut:
   

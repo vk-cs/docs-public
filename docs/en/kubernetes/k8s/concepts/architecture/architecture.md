@@ -39,11 +39,11 @@ The following operating systems are used on the master and worker nodes:
 
 The cluster runs containers via Kubernetes [Container Runtime Interface](https://kubernetes.io/docs/concepts/architecture/cri/) (CRI) with CRI-O (starting with Kubernetes version 1.20).
 
-<info>
+{note:info}
 
 Before Kubernetes 1.19, Docker\\[Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/) was used to run containers and is now deprecated.
 
-</info>
+{/note}
 
 See [Available Kubernetes versions and version support policy](../versions) for details.
 

@@ -90,11 +90,11 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
      The balancer will distribute incoming traffic to the selected services located in this subnet.
 
-     <warn>
+     {note:warn}
 
      It is not possible to change this parameter later.
 
-     </warn>
+     {/note}
 
    - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) from the list. To optimize and speed up the
      balancer connection to VMs, place them in the same zone.
@@ -341,11 +341,11 @@ The following options are available when adding or editing a rule:
 
    - **Apply to the following instances**: tools to select virtual machine instances that will act as backends for the balancer. You can add an instance either by selecting it from the list or by selecting the tag assigned to the instance.
 
-     <info>
+     {note:info}
 
      The security groups for the selected virtual machines must be configured to allow traffic to the destination port and protocol.
 
-     </info>
+     {/note}
 
    - **Certificate** (HTTPS balancing protocol only): the certificate to be used by the balancer to terminate the SSL connection.
 
@@ -374,7 +374,7 @@ The following options are available when adding or editing a rule:
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 Here are just the basic command arguments. Read more about the commands and their arguments in the OpenStack CLI help:
 
@@ -383,7 +383,7 @@ openstack loadbalancer --help
 openstack loadbalancer <command> --help
 ```
 
-</info>
+{/note}
 
 1. Make sure that:
 
@@ -462,11 +462,11 @@ openstack loadbalancer <command> --help
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       All member objects within the same pool must use the same port.
 
-      </warn>
+      {/note}
 
    1. Create a healthcheck object for the pool. It will check the status and availability of members in the pool.
 

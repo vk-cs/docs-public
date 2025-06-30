@@ -6,11 +6,11 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
   The following are the system requirements of add-ons based on the standard values [requests and limits](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits) for Kubernetes resources in the add-on setup code. When using non-standard values, the system requirements of add-ons will change.
 
-  <info>
+  {note:info}
 
   Some add-ons can be installed on all cluster nodes (including master nodes). For more details, see [Configuring and installing add-ons](../../../instructions/addons/advanced-installation).
 
-  </info>
+  {/note}
 
 - Add-ons can be installed on a dedicated group of worker nodes or on Kubernetes worker nodes selected by the scheduler. Using the first approach allows you to exclude the influence of add-ons on the operation of production services deployed in the cluster.
 
@@ -28,11 +28,11 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
 ## {heading(Available add-ons)[id=available_addons]}
 
-<info>
+{note:info}
 
 The availability of specific add-ons depends on the [region](/en/tools-for-using-services/account/concepts/regions) in which the cluster is planned to be placed.
 
-</info>
+{/note}
 
 ### Capsule
 
@@ -105,13 +105,13 @@ The requirements of the individual add-on components:
 
 ### Docker Registry
 
-<warn>
+{note:warn}
 
 When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -234,13 +234,13 @@ If the add-on is installed on several worker nodes, then NFD-Worker will be inst
 
 ### Ingress Controller (NGINX)
 
-<warn>
+{note:warn}
 
 When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -350,11 +350,11 @@ Requirements of individual add-on components:
   - **CPU**: 250m–500m.
   - **RAM**: 128M–512M.
 
-<info>
+{note:info}
 
 To ensure stable operation of Jaeger, it is recommended to install it on a dedicated group of worker nodes that meets the above requirements.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>

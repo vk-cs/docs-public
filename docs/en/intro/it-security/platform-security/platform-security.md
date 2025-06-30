@@ -30,11 +30,11 @@ Internet users and automated services have the right to complain both manually a
 
 To provide users with uninterrupted services, VK Cloud technical support promptly responds to such complaints.
 
-<warn>
+{note:warn}
 
 The VK Cloud user will be sent a warning about the presence of a complaint about suspicious activity from an IP address included in his project. If there is no response within one day, the IP address can be disconnected from the virtual machine and removed from the project to eliminate suspicious activity.
 
-</warn>
+{/note}
 
 Suspicious activity may be associated with an attacker gaining unauthorized access to a user's virtual machine. To reduce the risk of such a situation occurring, **follow safety rules**:
 

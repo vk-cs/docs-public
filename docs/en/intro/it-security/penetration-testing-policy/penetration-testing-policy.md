@@ -53,8 +53,8 @@ For more information or advice on penetration testing, contact our security team
 
 VK Cloud strives to provide a high level of security for it's services and client data. Performing penetration tests is an important part of this process. We thank you for your cooperation and contribution to improving the security of our cloud.
 
-<info>
+{note:info}
 
 This policy is subject to update. Check regularly for up-to-date information on the [official VK Cloud website](https://cloud.vk.com).
 
-</info>
+{/note}

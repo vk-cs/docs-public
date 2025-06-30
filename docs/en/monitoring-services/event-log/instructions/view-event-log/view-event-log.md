@@ -47,8 +47,8 @@ The list will display events that meet the search parameters.
 
 A TSV file will be downloaded. The log entries in the file will be arranged in the order determined by the search query, filters, and sorting.
 
-<info>
+{note:info}
 
 The maximum number of entries in the saved file is 1000.
 
-</info>
+{/note}

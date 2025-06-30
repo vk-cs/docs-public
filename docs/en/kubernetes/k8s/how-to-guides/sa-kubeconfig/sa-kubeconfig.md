@@ -19,11 +19,11 @@ This authentication process is inconvenient when working with automated tools th
 
    This will simplify further work with `kubectl`.
 
-   <info>
+   {note:info}
 
    The path to your kubeconfig files may differ from the example below.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>
@@ -266,11 +266,11 @@ This authentication process is inconvenient when working with automated tools th
 
    The token value will be displayed. Save it.
 
-   <err>
+   {note:err}
 
    The value of the token is confidential information. If it is compromised, [revoke the token](#revoke_the_compromised_token).
 
-   </err>
+   {/note}
 
 ## 4. Create a kubeconfig for a service account
 
@@ -532,13 +532,13 @@ Use the `kubectl` commands and the previously created kubeconfig for the service
 
 If the password was not requested when executing the commands, then the resulting kubeconfig can be used in combination with automated tools to access the Cloud Containers cluster.
 
-<err>
+{note:err}
 
 Provide the necessary measures to protect the kubeconfig file. It contains confidential information: the value of the token in plain text.
 
 If kubeconfig is compromised [revoke the token](#revoke_the_compromised_token).
 
-</err>
+{/note}
 
 ## Revoke the compromised token
 

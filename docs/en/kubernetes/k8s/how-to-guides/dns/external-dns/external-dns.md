@@ -63,11 +63,11 @@ Prepare the user and get all the necessary credentials:
      - Superadministrator.
      - Project Owner.
 
-     <info>
+     {note:info}
 
      To work with ExternalDNS, it is recommended to assign a dedicated user with the Network administrator role. This will minimize possible damage if an attacker gains access to this user's credentials.
 
-     </info>
+     {/note}
 
 1. Get the credentials you need to access the VK Cloud API:
 
@@ -205,11 +205,11 @@ Prepare the user and get all the necessary credentials:
 
    The behavior of the ExternalDNS Helm chart is influenced by many values. The created file contains a minimum set of values that is sufficient to start working with ExternalDNS. The most important values affecting the behavior of ExternalDNS with the VK Cloud DNS are described below. Descriptions of values that do not apply to the VK Cloud plugin (all values except `sidecars[]`) are given in [README.md](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#values) for the chart.
 
-   <warn>
+   {note:warn}
 
    Do not change or delete the required values listed below. This may cause ExternalDNS to work incorrectly.
 
-   </warn>
+   {/note}
 
    {cut(Description of important values that affect the behavior of ExternalDNS)}
 
@@ -235,11 +235,11 @@ Prepare the user and get all the necessary credentials:
 
    The plugin for ExternalDNS, which provides its integration with the VK Cloud DNS, has many settings that affect the plugin's behavior. The settings are set using environment variables in `sidecars[].env`. In the created file, only the required settings are set. If necessary, you can specify additional settings for the plugin by adding the appropriate environment variables.
 
-   <warn>
+   {note:warn}
 
    Do not modify or delete the required plugin settings listed below. This may cause ExternalDNS to work incorrectly.
 
-   </warn>
+   {/note}
 
    {cut( Description of values that affect plugin behavior)}
 
@@ -413,11 +413,11 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    - The `LoadBalancer` service type is selected. A [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for such a service. Since the load balancer is created with a public IP address, the application associated with the service will be accessible from the Internet.
 
-     <warn>
+     {note:warn}
 
      Using the load balancer is [charged](/en/networks/vnet/tariffication).
 
-     </warn>
+     {/note}
 
 1. Apply this manifest to the cluster to create the service:
 
@@ -461,13 +461,13 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
         These TXT records are service records used by ExternalDNS to track the status of the `tea-svc` A record created for the `tea-svc` service.
 
-        <info>
+        {note:info}
 
         Such records are easily distinguished by the `externaldns-` prefix in their name. Their values have the standard structure of the form `heritage=.../owner=.../resource=...`.
 
         If you specified a different prefix value when [installing ExternalDNS](#2_install_externaldns), the names of the service TXT records will be different.
 
-        </info>
+        {/note}
 
       If the required resource records are not present, wait a few more minutes. ExternalDNS will start creating resource records after the service has been assigned an IP address. This will take some time.
 
@@ -739,11 +739,11 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    1. Remove the `external-dns` namespace.
 
-      <warn>
+      {note:warn}
 
       The `vkcs-auth` secret, which contains the credentials to access the VK Cloud API, will also be removed.
 
-      </warn>
+      {/note}
 
       ```console
       kubectl delete ns external-dns

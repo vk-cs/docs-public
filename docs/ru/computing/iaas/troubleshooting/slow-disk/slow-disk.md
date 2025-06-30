@@ -17,8 +17,8 @@
 
 1. Сравните полученные показатели с [гарантированной производительностью диска](../../concepts/volume-sla), предоставляемой платформой VK Cloud. Если наблюдаются значительные отклонения, обратитесь в [техническую поддержку](/ru/contacts).
 
-   <info>
+   {note:info}
    
    Чтобы увеличить производительность, можно [увеличить размер](../../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../../instructions/volumes#izmenenie_tipa_diska) диска.
    
-   </info>
+   {/note}

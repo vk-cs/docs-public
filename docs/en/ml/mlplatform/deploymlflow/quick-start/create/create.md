@@ -30,10 +30,10 @@ Creating MLflow Deploy instances is available both through your VK Cloud managem
    - **Network**: select an existing network or create a new one.
    - **Virtual machine key**: a key for decrypting the administrator password. Select an existing key or create a new one.
 
-    <info>
+    {note:info}
 
     The MLflow Deploy instance must be created on the network that hosts JupyterHub and MLflow.
 
-    </info>
+    {/note}
 
 7. Click the **Create Instance** button.

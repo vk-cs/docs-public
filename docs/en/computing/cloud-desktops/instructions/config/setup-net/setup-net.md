@@ -61,19 +61,19 @@ To use the manual setup mode, prepare a network to host the service infrastructu
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       You can change the network setup mode until you first run desktop pool creation. After that, the Cloud Desktop instance will be deployed and changing the mode will no longer be available.
 
-      </warn>
+      {/note}
 
    - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the Cloud Desktop service from the list.
 
-     <info>
+     {note:info}
 
      You can specify a different availability zone for a pool when creating it.
 
-     </info>
+     {/note}
 
 1. CLick the **Save** button.
 
@@ -81,11 +81,11 @@ To use the manual setup mode, prepare a network to host the service infrastructu
 
 To check the network settings, it is not necessary to save the changes in the settings.
 
-<warn>
+{note:warn}
 
 A virtual machine will be deployed for verification, its name begins with `vdi-checker`. The use of this VM [is charged](/en/computing/iaas/tariffication).
 
-</warn>
+{/note}
 
 To check if the service network settings are correct:
 

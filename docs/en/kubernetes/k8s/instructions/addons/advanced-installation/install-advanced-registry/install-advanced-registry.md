@@ -46,13 +46,13 @@
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-<warn>
+{note:warn}
 
 When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on:
 
@@ -91,11 +91,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation).
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -234,11 +234,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -259,12 +259,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
-<info>
+{note:info}
 
 - When editing the add-on settings code, use the information [obtained earlier](#preparatory_steps).
 - The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml).
 
-</info>
+{/note}
 
 Specify:
 

@@ -6,11 +6,11 @@ Cloud Storage предоставляет [RESTful XML API](/ru/tools-for-using-s
 
 Перед началом работы с API создайте [аккаунт](/ru/storage/s3/access-management/s3-account) и [бакет](/ru/storage/s3/instructions/buckets/create-bucket), если этого не сделано ранее.
 
-<info>
+{note:info}
 
 Поддержка SOAP через HTTP устарела, но по-прежнему доступна через HTTPS. Однако новые функции Amazon S3 не будут поддерживаться для SOAP. Рекомендуется использовать REST API или AWS SDK.
 
-</info>
+{/note}
 
 ## Совместимость с S3
 

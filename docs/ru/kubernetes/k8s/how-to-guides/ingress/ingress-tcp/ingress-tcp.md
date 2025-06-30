@@ -1,10 +1,10 @@
-<warn>
+{note:warn}
 
 При развертывании Ingress-контроллера для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 Ingress-контроллер можно развернуть [в связке с TCP-балансировщиком нагрузки](../../../concepts/network) платформы VK Cloud. Далее для примера будут созданы простые демо-приложения и ресурс Ingress для проверки работоспособности контроллера. Далее предполагается, что будет развернут NGINX Ingress Controller. Однако предложенные подходы можно адаптировать и под другие Ingress-контроллеры, например, Traefik.
 
@@ -129,11 +129,11 @@ deployment.apps/tea      3/3     3            3           ...
 
    В этом секрете содержатся публичная и приватная части самоподписанного сертификата NGINX, который используется для доступа к опубликованным приложениям на домене `cafe.example.com`.
 
-   <warn>
+   {note:warn}
 
    Приватная часть этого сертификата публично доступна в интернете, поэтому не используйте этот сертификат для защиты реальных приложений, работающих в промышленном окружении (production environment).
 
-   </warn>
+   {/note}
 
 1. Загрузите манифест [cafe-secret.yaml](https://raw.githubusercontent.com/nginxinc/kubernetes-ingress/v2.4.0/examples/ingress-resources/complete-example/cafe-secret.yaml).
 
@@ -259,11 +259,11 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их.
 
-   <info>
+   {note:info}
 
    Также будет удален TCP-балансировщик нагрузки, созданный для Ingress-контроллера.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>

@@ -61,13 +61,13 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
 1. [Create an access token](../../instructions/tokens#creating_an_access_token) with the `Administrator` role. This token is required to work with the library.
 
-   <err>
+   {note:err}
 
    For simplicity, the token value is specified in the Python script examples in plain text.
 
    When working in a production environment, do not place the token in scripts in plain text. Use environment variables, vaults for secrets, or other tools to work with sensitive data.
 
-   </err>
+   {/note}
 
 1. [Create](../../instructions/create) a Cloud Spark cluster.
 
@@ -183,11 +183,11 @@ All mentioned environment variables [will be set up later](#3_send_the_spark_job
 
      If necessary, download another version of the driver from the [Maven repository](https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/). In this case, in the script below, replace the driver version with the correct one.
 
-   <warn>
+   {note:warn}
 
    When uploading files, do not change the default ACL selected (`private`).
 
-   </warn>
+   {/note}
 
 When submitting a Spark job, the paths to the files uploaded to the bucket will be specified. The Cloud Spark cluster already has access to objects from this bucket, no additional configuration is needed.
 

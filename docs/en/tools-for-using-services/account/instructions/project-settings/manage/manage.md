@@ -40,11 +40,11 @@ The project name can be changed at any stage of the project life.
 
 A project can have only one owner. After appointing another user as the owner, you will switch with him [roles](../../../concepts/rolesandpermissions).
 
-<info>
+{note:info}
 
 A change of ownership is possible in any state of the project balance.
 
-</info>
+{/note}
 
 1. Follow the preparatory steps:
 
@@ -71,11 +71,11 @@ A change of ownership is possible in any state of the project balance.
 
 1. (Optional) Check the role change in the [list of project members](../access-manage).
 
-<info>
+{note:info}
 
 The new owner may need to [link a payment card](/en/intro/billing/instructions/add-card#bind_the_card), if the project does not have a linked card, and [confirm phone number](/en/intro/start/account-registration).
 
-</info>
+{/note}
 
 ## Project conservation
 
@@ -293,11 +293,11 @@ If the project lacks [quotas](../../../concepts/quotasandlimits), contact [techn
 - [project id](#getting-the-project-id) (PID) and [region](../../../concepts/regions);
 - which quotas need to be increased (for example, the number of CPUs, the available amount of RAM) and by how much.
 
-<info>
+{note:info}
 
 Information about increasing quotas for GeekBrains program participants you can find in [FAQ](../../../faq).
 
-</info>
+{/note}
 
 ## {heading(Viewing project SDN)[id=sdn_view]}
 
@@ -325,8 +325,8 @@ To delete a project:
 
     You will be contacted to confirm the deletion.
 
-<err>
+{note:err}
 
 After confirmation, the project and its data are permanently deleted.
 
-</err>
+{/note}

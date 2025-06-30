@@ -4,7 +4,7 @@ Examples of IP Source Guard usage can be found in how-to guides for setting up a
 
 ## Adding allowed addresses
 
-<warn>
+{note:warn}
 
 Use allowlists for IP addresses on ports with a self-referencing [security group](/ru/networks/vnet/concepts/traffic-limiting#secgroups) (e.g., `default` group) with caution. If you create an IP allowlist for a port with such a security group, traffic from listed IP addresses will be allowed on all network ports with the same group.
 
@@ -16,7 +16,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {/cut}
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

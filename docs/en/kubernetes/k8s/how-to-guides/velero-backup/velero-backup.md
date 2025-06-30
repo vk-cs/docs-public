@@ -183,11 +183,11 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
    velero backup describe coffee-backup
    ```
 
-   <warn>
+   {note:warn}
 
    The default backup lifetime is 720 hours. After that time, the backup will be deleted.
 
-   </warn>
+   {/note}
 
 1. Check the logs of the backup operation (if necessary):
 

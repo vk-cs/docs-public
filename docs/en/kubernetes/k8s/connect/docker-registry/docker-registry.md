@@ -91,11 +91,11 @@ In order to deploy workloads in a cluster using images from the Docker registry:
 
    If the `--namespace` parameter is not provided, then the secret will be created in the default namespace (`default`).
 
-   <warn>
+   {note:warn}
 
    The secret must reside in the same namespace the workload is planned to be deployed in.
 
-   </warn>
+   {/note}
 
    <tabs>
    <tablist>

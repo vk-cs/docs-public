@@ -17,11 +17,11 @@ This instruction will help you deploy the UserGate NGFW service on a VM in VK Cl
 
 By using the UserGate NGFW service, you agree to the license agreements of [Marketplace](/en/intro/start/legal/marketplace) and [UserGate](https://www.usergate.com/usergate-eula).
 
-<warn>
+{note:warn}
 
 UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: purchase a [license](https://www.usergate.com/purchase) yourself to use the service.
 
-</warn>
+{/note}
 
 ## Preparatory steps
 
@@ -39,11 +39,11 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 
 ## 1. Add a network to the service
 
-<info>
+{note:info}
 
 By default, UserGate NGFW is created with a single network to connect to the MGMT port.
 
-</info>
+{/note}
 
 1. Go to the UserGate console directly via the IP of the virtual machine or through the intermediate server.
 1. At the language selection step, specify **English**.
@@ -70,14 +70,14 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
 
 For advanced service configuration, use the official [UserGate NGFW](https://support.usergate.com/docs/version/7.x/usergate-7) manual.
 
-<info>
+{note:info}
 
 Recommendations for working with the service:
 
 - When configuring the network interface, use static addressing: the IP address must match the address assigned to the VM port. You can see the address on the **Networks** tab of the VM page.
 - If you are connecting to the [external network](/en/networks/vnet/concepts/net-types#external_net), manually configure the IP addresses in the UserGate console. Use the network details from the section **Cloud networks** → **Networks**.
 
-</info>
+{/note}
 
 ## Delete unused resources
 

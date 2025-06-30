@@ -13,11 +13,11 @@ If necessary, you can [import an OS image](../../images/images-manage#exporting_
 
 ## Create a VM
 
-<info>
+{note:info}
 
 The VM settings available for configuration may vary depending on the operating system.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>
@@ -60,11 +60,11 @@ The VM settings available for configuration may vary depending on the operating 
 
    - (Optional) **Link a domain to an external IP**: enable the option and specify a domain to link the FQDN to the external IP. An [A-record](/en/networks/dns/publicdns#adding_resource_records) for the selected IP will be added to the DNS. The option is available if the **Assign external IP** option is enabled.
 
-      <warn>
+      {note:warn}
 
       You cannot link an external IP to a domain that matches the CNAME record of the DNS zone. In this case, the VM will be created, but the A-record will not be added.
 
-      </warn>
+      {/note}
 
    - **Enable monitoring**: enable to use [monitoring tools](/en/monitoring-services/monitoring/concepts).
 
@@ -165,11 +165,11 @@ The VM settings available for configuration may vary depending on the operating 
                            --availability-zone MS1
    ```
 
-   <warn>
+   {note:warn}
 
    If the `--network` option specifies an external network (`ext-net`), add the `--use-config-drive` option to the VM creation command.
 
-   </warn>
+   {/note}
 
    After creating a VM, information about it will be displayed. Find the `adminPass` field and copy its value. You will need it to sign in to the server via the VNC console.
 
@@ -181,14 +181,14 @@ The VM settings available for configuration may vary depending on the operating 
 
    The created machine should appear in the list of available VMs and have the status `ACTIVE`.
 
-<info>
+{note:info}
 
 Some features of creating a VM via the CLI:
 
 - If you do not specify an availability zone, a random one will be selected.
 - If you do not specify a disk, an “ephemeral disk” will be created (with restrictions).
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>

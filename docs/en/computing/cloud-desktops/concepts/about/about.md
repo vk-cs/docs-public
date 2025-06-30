@@ -91,11 +91,11 @@ P = 2^{32-M}-C-2
 
 Here, *M* is the subnet mask, *C* is the number of ports already created.
 
-<warn>
+{note:warn}
 
 If the networks are used for other purposes besides the Cloud Desktop instance, the number of free ports on them may change over time. If there are not enough ports, desktops will be created with an error.
 
-</warn>
+{/note}
 
 ## What's next?
 

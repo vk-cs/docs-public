@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Make sure you [installed and configured Terraform](../../../quick-start).
 
-</warn>
+{/note}
 
 To create a VPN connection, create a file `vpn.tf`, which describes the configuration of the connection to be created. Add the text from the examples below and correct the arguments values for your connection.
 

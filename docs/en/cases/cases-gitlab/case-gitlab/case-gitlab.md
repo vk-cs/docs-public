@@ -29,11 +29,11 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
      - public IP address: assigned, further will be used `185.185.185.185`;
      - security groups: `default`, `gitlab`.
 
-   <info>
+   {note:info}
 
    When creating a VM running Ubuntu, a user is automatically created with the `ubuntu` name and full rights to use `sudo`.
 
-   </info>
+   {/note}
 
 1. (Optional) Assign a domain name to the VM to use for accessing GitLab. Do it in one of the following ways:
 
@@ -53,11 +53,11 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
     sudo ufw disable
     ```
 
-    <info>
+    {note:info}
 
     There is no need for the operating system firewall, since the [VK Cloud firewall controls](/en/networks/vnet/concepts/traffic-limiting) the incoming and outbound traffic on the VM.
 
-    </info>
+    {/note}
 
 1. [Install and configure Docker](/en/cases/cases-docker-ce/docker-ce-u18).
 1. Install the [Docker Compose](https://docs.docker.com/compose/) plugin:
@@ -100,11 +100,11 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
 1. Replace the line `#Port 22` with `Port 35242`.
 
-    <info>
+    {note:info}
 
     The number `35242` is used as an example. If you are going to use a different number, open it for SSH connections in the VM firewall settings. More details in the [Managing firewall rules](/en/networks/vnet/instructions/secgroups) section.
 
-    </info>
+    {/note}
 
 1. Save the file and exit the editor by pressing CTRL+O and then CTRL+X.
 
@@ -187,11 +187,11 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
     {/cut}
 
-    <info>
+    {note:info}
 
     If necessary, specify additional settings below the `# Add…` comment line. The configuration parameters for the Docker Compose plugin are described in the [official Docker documentation](https://docs.docker.com/compose/compose-file/03-compose-file/).
 
-    </info>
+    {/note}
 
 1. Save the file and exit the editor by pressing CTRL+O and then CTRL+X.
 1. Launch the Docker Compose plugin:

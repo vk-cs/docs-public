@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Changing created virtual resources (VMs, load balancers, DB instances) outside the service can lead to a failure of individual desktops or the entire pool.
 
-</warn>
+{/note}
 
 ## {heading(Preparatory steps)[id=preparatory_steps]}
 
@@ -82,11 +82,11 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
       If necessary, click **Upload your image** and upload the [previously prepared](/en/computing/cloud-desktops/concepts/desktop-image) and [checked](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
 
-      <info>
+      {note:info}
 
       The pool cannot be created until the image upload is complete.
 
-      </info>
+      {/note}
 
     - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the pool virtual machines from the list.
 

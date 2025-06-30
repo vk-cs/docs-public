@@ -9,11 +9,11 @@ After going through all the quick start steps, you will learn how to create and 
 1. Click the **Create instance** button in the **JupyterHub** tile.
 1. On the **Configuration** step, set the administrator password for the instance. Save the username and password you entered.
 
-    <err>
+    {note:err}
 
     To recover the administrator password is impossible.
 
-    </err>
+    {/note}
 
 1. Leave other parameters as default. Click the **Next Step** button.
 1. On the **Select Network** step, leave the default network and click the **Create instance** button.

@@ -27,11 +27,11 @@ The OpenStack Command line interface (OpenStack CLI) allows you to work with VK 
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 The instructions are written for CentOS 8. For other versions of the OS, the commands may differ.
 
-</info>
+{/note}
 
 1. Install Python 3, if you have not already done:
 
@@ -64,11 +64,11 @@ brew install python3
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 The instructions are written using the example of Python 3.10.11 and Microsoft C++ Build Tools 2022. For other versions of programs, the names and versions of components may differ.
 
-</info>
+{/note}
 
 1. Download and install [Python3](https://www.python.org/downloads/windows/). It is recommended to use version 3.6 or 3.8.
 2. Download and run [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
@@ -138,13 +138,13 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    pip install "python-manilaclient==4.9.1"
    ```
 
-   <info>
+   {note:info}
 
    The recommended versions of `python-manilaclient` are 4.9.1 or higher. If you need an older version, use 4.4.2.
 
    Using other versions of `python-manilaclient` may cause the `openstack share network` commands to return an error.
 
-   </info>
+   {/note}
 
 ## 3. Complete authentication
 

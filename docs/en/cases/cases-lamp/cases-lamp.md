@@ -24,19 +24,19 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 
    Choose the other parameters at your discretion.
 
-   <info>
+   {note:info}
 
    Internal IP of the created instance: `10.0.0.7` — use it for further work with the stack.
 
-   </info>
+   {/note}
 
 1. [Create](/en/networks/dns/publicdns#creating_a_zone) DNS zone.
 
-   <warn>
+   {note:warn}
 
    Make sure that the DNS zone is delegated successfully and the NS records are configured correctly: the zone must have the status **NS records are configured correctly**.
 
-   </warn>
+   {/note}
 
 1. [Create](/en/networks/dns/publicdns#adding_resource_records) an record in the selected zone:
 

@@ -14,11 +14,11 @@ The following settings are most commonly used:
 - Keep monthly backups: 12 months.
 - Keep annual backups: 5 years.
 
-<info>
+{note:info}
 
 The retention period for annual backups includes the current year. For example, if you set the retention period to 2 years, annual backups for the previous year and the current year will be kept.
 
-</info>
+{/note}
 
 ## Working principle
 
@@ -36,8 +36,8 @@ The creation and deletion processes result in the following hierarchical set of 
 - Monthly backups — full backups created at the beginning of the month for the number of calendar months specified in the settings. Incremental backups are deleted.
 - Annual backups — full backups created at the beginning of the year for the number of years specified in the settings (including the current calendar year). Incremental backups are deleted.
 
-<info>
+{note:info}
 
 The same backup copy cannot be both monthly and weekly (or annual and monthly). Each backup is marked with one of the tags: "weekly", "monthly", or "annual".
 
-</info>
+{/note}

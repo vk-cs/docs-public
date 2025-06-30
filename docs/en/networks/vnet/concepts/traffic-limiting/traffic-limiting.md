@@ -81,11 +81,11 @@ Preset security groups that can be assigned to VMs depend on the OS image:
 - For Linux VMs, the following groups are available: **ssh**, **ssh+www**, **all** (**All allowed**).
 - For Windows VMs, the following groups are available: **rdp**, **rdp+www**, **all** (**All allowed**).
 
-<info>
+{note:info}
 
 There are no preset groups when working via OpenStack CLI and Terraform. You can create groups with the same rules and use them.
 
-</info>
+{/note}
 
 ## {heading(Custom security groups)[id=custom_sg]}
 

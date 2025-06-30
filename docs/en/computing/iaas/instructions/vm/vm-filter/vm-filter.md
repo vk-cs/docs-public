@@ -13,9 +13,9 @@ Use filtering to quickly find the virtual machines you need:
         - **Yes** — only VMs included in automatic backup plans will remain in the list.
         - **None** — only VMs that are not included in any automatic backup plan will remain in the list.
 
-        <info>
+        {note:info}
         Manually creating VM backups does not affect filtering.
-        </info>
+        {/note}
 
     - **Tags** — select the required tags. Only VMs that have all the selected tags will remain in the list.
     - Filter by VM name — start filling in the search field. Only VMs which names begin with the entered characters will remain in the list.

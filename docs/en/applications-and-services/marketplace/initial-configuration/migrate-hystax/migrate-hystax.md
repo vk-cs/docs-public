@@ -37,11 +37,11 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 1. Click the **Next** button.
 1. Install the agent on the target VM, following the instructions for the Ubuntu distribution.
 
-   <info>
+   {note:info}
 
    You can install migration agents on a group of VMs with different operating systems via Ansible.
 
-   </info>
+   {/note}
 
    {cut(Ansible manifest for installing agents)}
 

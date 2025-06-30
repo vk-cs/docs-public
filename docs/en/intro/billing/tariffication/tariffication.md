@@ -12,8 +12,8 @@ Available operations:
 
 The total cost will be displayed in the line **Final calculation**.
 
-<warn>
+{note:warn}
 
 The total cost is rounded to **two decimal places**. A similar principle applies for [detailing](../instructions/detail) and  [accounting documents](../concepts/report).
 
-</warn>
+{/note}

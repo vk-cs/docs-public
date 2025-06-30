@@ -15,11 +15,11 @@ For each new [project](/en/tools-for-using-services/account/concepts/projects), 
 
 Payment account status and balance of all bonus accounts are [available](../../instructions/payment) in the header of the [management console](https://msk.cloud.vk.com/app/). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
 
-<info>
+{note:info}
 
 Balance is not displayed in your management console if you have not completed the [registration procedure](/en/intro/start/account-registration).
 
-</info>
+{/note}
 
 ## Expenses and negative payment account balance
 
@@ -27,11 +27,11 @@ The balance starts to be spent after the first chargeable objects are created, s
 
 The bonus account corresponding to the type of created object is debited first. When this bonus account runs out of funds, the money is deducted from the payment account balance, even if there are funds in other bonus accounts. If the payment account balance runs out of funds, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
 
-<info>
+{note:info}
 
 For legal entities that work on a post-payment, a negative payment account balance does not lead to the freezing of the project.
 
-</info>
+{/note}
 
 To resume the services and avoid deleting objects, [top up](../../instructions/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 15 minutes. After defrosting, all objects that have been stopped must be started manually.
 
@@ -48,17 +48,17 @@ Bonuses are credited:
   - Moscow — 5000 bonuses (2000 bonuses to pay for virtual servers and their backups, 3000 bonuses for all other services except CDN, third-party services and licenses, as well as software products from the [Marketplace](https://msk.cloud.vk.com/app/services/marketplace)).
   - Kazakhstan — 24000 bonuses on all services except CDN, third-party services and licenses, as well as software products from the Marketplace.
 
-  <err>
+  {note:err}
 
   Unspent sign-up bonuses expire in 60 calendar days after the user registration.
 
-  </err>
+  {/note}
 
 - During some advertising campaigns.
 - When paying refunds for the technical failures that occurred through the fault of VK Cloud. See more about refunds in the agreements on the use of the relevant services.
 
-<warn>
+{note:warn}
 
 In some cases, previously accrued bonuses may be canceled or denied. See more in the [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal)
 
-</warn>
+{/note}

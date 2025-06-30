@@ -9,11 +9,11 @@ Each VK Cloud project has a separate [balance](/en/intro/billing/concepts/balanc
 
 ## Automatic freezing of the project
 
-<info>
+{note:info}
 
 Automatic freezing is not used in projects in which services are provided on a post-payment basis.
 
-</info>
+{/note}
 
 If the payment account balance of the project becomes negative, the project is frozen:
 
@@ -28,11 +28,11 @@ If the payment account balance of the project becomes negative, the project is f
 
 The project owner's mail receives consecutive notifications: about the project freezing, about the upcoming deletion of objects, and about the fact that the objects have been deleted.
 
-<err>
+{note:err}
 
 After the project is frozen, the funds continue to be deducted from the payment account balance. You can [conserve the project](../../instructions/project-settings/manage#project_conservation) to stop debiting funds.
 
-</err>
+{/note}
 
 A number of services may have their own terms for freezing and deleting objects.
 

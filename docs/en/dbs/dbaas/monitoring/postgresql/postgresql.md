@@ -44,11 +44,11 @@ Several [counters and graphs](#available_monitoring_metrics) will be displayed:
 
   Replica lag time (in seconds) from the replication source.
 
-  <info>
+  {note:info}
 
   This metric is only shown when viewing replica host monitoring data.
 
-  </info>
+  {/note}
 
 ### Graphs
 

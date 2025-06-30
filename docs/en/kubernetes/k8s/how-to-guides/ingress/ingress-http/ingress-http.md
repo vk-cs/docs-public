@@ -1,12 +1,12 @@
 The Ingress controller can be deployed [in conjunction with the HTTP load balancer](../../../concepts/network) of the VK Cloud platform. As an example, a simple demo application and an Ingress resource will be deployed to test the operation of the controller.
 
-<info>
+{note:info}
 
 - It is assumed throughout the document that the NGINX Ingress Controller will be deployed. However, the proposed approaches can be adapted to other Ingress controllers such as Traefik.
 
 - In this Ingress deployment, you need to manually add worker nodes to the load balancer rules. This is true both when manually resizing the worker group and when enabling autoscaling.
 
-</info>
+{/note}
 
 ## 1. Preparatory steps
 
@@ -238,11 +238,11 @@ To configure the load balancer:
 
                {/cut}
 
-            <info>
+            {note:info}
 
             The NGINX self-signed certificate is used to access the published applications on the `cafe.example.com` domain.
 
-            </info>
+            {/note}
 
          1. Click the **Next step** button.
          1. Click the **Add** button.
@@ -389,11 +389,11 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <info>
+   {note:info}
 
    The HTTP load balancer created for the Ingress controller will not be removed. If necessary, remove it manually from the VK Cloud management console interface.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>

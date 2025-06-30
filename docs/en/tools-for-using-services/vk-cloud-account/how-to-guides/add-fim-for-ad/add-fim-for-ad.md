@@ -4,11 +4,11 @@ To work in federated mode, the IdP must support the SAML 2.0 standard.
 
 The following steps will show you how to configure federated identity using the [Active Directory Federation Services (AD FS)](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview) as an example.
 
-<info>
+{note:info}
 
 When changing your Active Directory domain, remove the existing federation and set up a new one.
 
-</info>
+{/note}
 
 ## Before you start
 
@@ -89,8 +89,8 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
 2. Enter your corporate authentication credentials. After successful authorization, you will be redirected to the main VK Cloud management console page.
 3. Verify that the automatically assigned VK Cloud user role matches the one selected during [group configuration](#3_configure_role_and_group_mapping_in_vk_cloud).
 
-<warn>
+{note:warn}
 
 Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/tools-for-using-services/account/instructions/project-settings/access-manage#deleting_member) them from projects in the VK Cloud management console.
 
-</warn>
+{/note}

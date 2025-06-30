@@ -59,11 +59,11 @@ The following shows how to check a custom desktop image for compatibility with t
 
 ## 2. Test different ways to connect to the VM created from the image
 
-<info>
+{note:info}
 
 Connection to the Astra Linux VM via RDP and LDAP should always be checked, regardless of whether software supporting these protocols is installed on the image. This software is used when operating the desktop and, if not present on the image, will be automatically installed on the desktop during its deployment.
 
-</info>
+{/note}
 
 1. Check the ability to connect to the created VM:
 

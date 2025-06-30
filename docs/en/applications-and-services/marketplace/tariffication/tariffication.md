@@ -41,11 +41,11 @@ If there are not enough funds when debiting, the instance status changes:
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 For information on how to pay for the use of the service instance, see the section [Billing](/en/intro/billing).
 
-</info>
+{/note}
 
 ## Charged
 

@@ -16,11 +16,11 @@
 
    На [официальном сайте OpenStack](https://docs.openstack.org/image-guide/obtain-images.html) размещены ссылки на образы некоторых ОС, поддерживающих работу с облачными платформами.
 
-   <info>
+   {note:info}
 
    Чтобы самостоятельно не загружать базовый образ в облачную платформу, используйте готовый из таблицы в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]}. В этом случае сразу переходите к шагу конфигурации packer-файла.
 
-   </info>
+   {/note}
 1. Конвертируйте базовый образ в формат `RAW`:
 
    1. Установите утилиту [qemu-img](https://www.qemu.org/docs/master/tools/qemu-img.html) на локальный компьютер.
@@ -138,11 +138,11 @@
       ```
       {/caption}
 
-      <info>
+      {note:info}
 
       Если требуется отправлять метрики в сервис Cloud Monitoring, в конфигурации ВМ опишите установку агента мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm#ib_cloud_monitoring_telegraf_image)[text=%text]}).
 
-      </info>
+      {/note}
 
       Имя пользователя ОС зависит от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
@@ -151,7 +151,7 @@
       * `default` — в проекте облачной платформы на базе OpenStack Neutron.
       * `default-sprut` — в проекте облачной платформы на базе Sprut.
 
-         <info>
+         {note:info}
 
          Доступные группы безопасности посмотрите с помощью команды:
 
@@ -159,7 +159,7 @@
          # openstack security group list
          ```
 
-         </info>
+         {/note}
 
    1. Проверьте созданную конфигурацию:
 

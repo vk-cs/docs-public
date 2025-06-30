@@ -10,12 +10,12 @@ Read more in the article [Cloud Servers overview](../about#disks).
 
 Certain performance characteristics are guaranteed for each type of disk. Quotas and limits on the quantity and size of disks are given in the [Quotas and Limits](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes) article.
 
-<info>
+{note:info}
 
 The latency value is guaranteed only for Low Latency NVME disks.<br/>
 For other types of disks, the delay value is approximate and is indicated for reference.
 
-</info>
+{/note}
 
 | Disk type<br/>(name in the API) | Read, IOPS<br/>min.—max. | Read,<br/>IOPS/GB | Write, IOPS <br/>min.max. | Write,<br/>IOPS/GB | Latency, msec<br/>max.|
 |----|----|----|----|----|----|
@@ -25,11 +25,11 @@ For other types of disks, the delay value is approximate and is indicated for re
 | High-IOPS HA SSD<br/>(high-iops-ha) | 7500–35000  | 25 | 2000–12000 | 15 | 1    |
 | Low Latency NVME<br/>(ef-nvme)      | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
 
-<info>
+{note:info}
 
 Disk performance depends on its volume. In some cases, to increase the speed of data processing, it is enough to increase the size of the disk.
 
-</info>
+{/note}
 
 ## Network HDD
 
@@ -143,11 +143,11 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
    To measure IOPS when reading and writing, use the DiskSpd or FIO utilities.
 
-   <info>
+   {note:info}
 
    The measurement results obtained using DiskSpd and FIO may differ. DiskSpd is a utility created and recommended by Microsoft for testing disks in Windows OS.
 
-   </info>
+   {/note}
 
    **DiskSpd**
 
@@ -194,11 +194,11 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
       - Random write test in blocks of 4 KB:
 
-         <err>
+         {note:err}
 
          Do not specify the name of the file with the necessary data in the `filename` parameter! During write tests, the contents of this file will be overwritten.
 
-         </err>
+         {/note}
 
          <tabs>
          <tablist>
@@ -290,11 +290,11 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
    To measure IOPS when reading and writing, use the FIO utility.
 
-   <info>
+   {note:info}
 
    This technique is only applicable for testing partitions with the file system `ext2`, `ext3`, `ext4` or `xfs`.
 
-   </info>
+   {/note}
 
    1. Update the package list:
 
@@ -319,11 +319,11 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
       - Random write test in blocks of 4 KB:
 
-         <err>
+         {note:err}
 
          Do not specify the name of the file with the necessary data in the `filename` parameter! During write tests, the contents of this file will be overwritten.
 
-         </err>
+         {/note}
 
          ```console
          fio \

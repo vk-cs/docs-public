@@ -17,11 +17,11 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 
   There is no need to configure user rights separately for management consoles and for Kubernetes clusters. For example, disabling a user account or revoking a role in a management console results in revoking the access rights to Kubernetes clusters.
 
-<info>
+{note:info}
 
 To get the same capabilities for older clusters, [upgrade](../../instructions/update) to version 1.23 or higher.
 
-</info>
+{/note}
 
 ## How does the authentication process work
 

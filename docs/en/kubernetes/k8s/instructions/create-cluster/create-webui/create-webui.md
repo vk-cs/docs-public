@@ -1,12 +1,12 @@
 The following describes how to create a cluster from your management console. It is also possible to create a cluster [with Terraform](../create-terraform).
 
-<warn>
+{note:warn}
 
 When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 ## Before you create a cluster
 
@@ -104,11 +104,11 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
      - **Availability zone:** [availability zone](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for a regional cluster and cannot be changed.
      - **Master disk type:** [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The selected disk type affects cluster performance.
 
-       <warn>
+       {note:warn}
 
        The disk type you select affects the performance of the cluster. It is recommended to use an `SSD` or `High-IOPS` disk type for clusters that operate in a production environment or under heavy load.
 
-       </warn>
+       {/note}
 
      - **Number of Master nodes:** must be an odd number. One node does not provide cluster high availability at the master node level, three nodes or more do. The numer of master nodes for the regional cluster is automatically set to `3`.
 
@@ -120,11 +120,11 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
      - **Network:** select the network and subnet that will host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
 
-        <info>
+        {note:info}
 
         To create a cluster without internet access, select the network with the connected [Shadow port](/en/networks/vnet/concepts/ips-and-inet#shadow_port) from the list.
 
-        </info>
+        {/note}
 
      - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#creating_network) it. 
      
@@ -148,13 +148,13 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
        - **Virtual machine key:** SSH key, with which you can connect to the cluster hosts. The recommended value is `No key`.
 
-         <info>
+         {note:info}
 
          **Limited scope**
 
          This setting is only available for clusters with Kubernetes version 1.22.9 and lower.
 
-         </info>
+         {/note}
 
        - **Enable monitoring:** enable this option to install a metrics collection agent in the cluster.
 

@@ -39,11 +39,11 @@
 
 Кластер запускает контейнеры через Kubernetes [Container Runtime Interface](https://kubernetes.io/docs/concepts/architecture/cri/) (CRI) с помощью CRI-O (начиная с версии Kubernetes 1.20).
 
-<info>
+{note:info}
 
 До версии Kubernetes 1.19 для запуска контейнеров использовался Docker\\[Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/), который признан устаревшим (deprecated).
 
-</info>
+{/note}
 
 Подробнее в разделе [Доступные версии Kubernetes и политика поддержки версий](../versions).
 

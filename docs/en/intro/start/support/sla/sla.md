@@ -47,11 +47,11 @@ The types of requests **Service Request** and **Request for Information** are eq
 
 The response time to the appeal is no more than 60 minutes.
 
-<info>
+{note:info}
 
 The countdown of the response time to the appeal begins from the moment the Customer is notified of his registration and assignment of an identification number until the moment of the first response from the technical support service.
 
-</info>
+{/note}
 
 #### Solution statistics table
 

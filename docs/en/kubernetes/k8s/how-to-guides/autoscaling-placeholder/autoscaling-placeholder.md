@@ -2,11 +2,11 @@
 
 This article will show how to set up overprovisioning resources for cluster scaling to the cluster configuration. In this example, the setting will be described in a separate file and applied using `kubectl`.
 
-<info>
+{note:info}
 
 If you use Helm, Kustomize or other configuration managers, the sequence of actions and commands for applying the settings will be different.
 
-</info>
+{/note}
 
 ## {heading(Before you start )[id=prepare]}
 

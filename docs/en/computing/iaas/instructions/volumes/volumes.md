@@ -4,11 +4,11 @@ The data storage system on the VK Cloud platform is organized using network driv
 
 Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
 
-<info>
+{note:info}
 
 Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) section to know how to create a disk for a specific VM.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>
@@ -309,11 +309,11 @@ Creating HDD and SSD drives is available by default in all configurations. To us
       2. On the disk page, go to the **General Information** tab.
       3. Above the table with the disk parameters, click **Change disk type**.
 
-   <info>
+   {note:info}
 
    If the **Change disk type** option is not active, [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
-   </info>
+   {/note}
 
 4. In the window that opens, select **Disk Type** and click **Confirm**.
 
@@ -481,11 +481,11 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 ## Disconnecting disk from VM
 
-<warn>
+{note:warn}
 
 To disable the main (root) disk of the VM, use the [Replacing the root disk](#replacing_root_disk) option.
 
-</warn>
+{/note}
 
 <tabs>
 
@@ -596,11 +596,11 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 6. In the window that opens, select **New root disk** and click **Replace**.
 
-   <warn>
+   {note:warn}
 
    If the required disk is not in the list, check that it is [disconnected from the VM](#disconnecting_disk_from_vm).
 
-   </warn>
+   {/note}
 
 </tabpanel>
 
@@ -712,11 +712,11 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 Before deleting [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
-<err>
+{note:err}
 
 When you delete a disk, all its snapshots will be deleted.
 
-</err>
+{/note}
 
 <tabs>
 
@@ -894,11 +894,11 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
    - **Create disk** — to go to the disk creation page.
    - **Delete disk snapshot** — to delete a snapshot.
 
-      <info>
+      {note:info}
 
       To delete multiple snapshots, select the snapshots with the checkboxes and click the **Delete snapshot** button.
 
-      </info>
+      {/note}
 
 </tabpanel>
 
