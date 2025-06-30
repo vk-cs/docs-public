@@ -7,11 +7,11 @@
     - **Company**: specify the name of the company where you work;
     - **Job title**: specify your position.
 
-    <info>
+    {note:info}
 
     To change the phone number or email, contact [technical support](mailto:support@mcs.mail.ru).
 
-    </info>
+    {/note}
 
 1. Click the **Save changes** button.
 

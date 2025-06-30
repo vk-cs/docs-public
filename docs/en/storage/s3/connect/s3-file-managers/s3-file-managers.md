@@ -23,11 +23,11 @@ To connect, specify:
 - Access Key ID: Key identifier obtained when creating an Object Storage account
 - Secret access key: the secret key obtained when creating an Object Storage account
 
-<info>
+{note:info}
 
 CyberDuck works with Cloud Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
-</info>
+{/note}
 
 ## WinSCP
 
@@ -41,11 +41,11 @@ To configure, enter the following data:
 - Access Key ID: Key ID obtained when creating an Object Storage account
 - Secret Access Key: The secret key obtained when creating an Object Storage account
 
-<info>
+{note:info}
 
 CyberDuck works with Cloud Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
-</info>
+{/note}
 
 ## S3FS
 
@@ -145,8 +145,8 @@ Where:
 
 As a result, the bucket will be mounted as an additional disk in the operating system and will not use local space.
 
-<warn>
+{note:warn}
 
 Only one service is available in the free version of Disk-O: When connecting additional drives, you need to purchase the paid version.
 
-</warn>
+{/note}

@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 Viewing project expenses details and making payments is available to users whose [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the [project](/en/tools-for-using-services/account/concepts/projects) is Project owner, Superadministrator, or Billing administrator.
 
-</info>
+{/note}
 
 ## Viewing the balance
 
@@ -16,11 +16,11 @@ To see details and costs of services:
    - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
-<info>
+{note:info}
 
 The [detailing](../detail) is available on all projects in which your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) is Owner, Superadministrator, or Billing Administrator. The data on the **Detail** and **Expenses on services** tabs is filtered by the current project by default.
 
-</info>
+{/note}
 
 ## Making a payment
 
@@ -44,11 +44,11 @@ To make a payment:
 
    - **Bank card**: for paying with a card that is not linked to the project.
 
-   <info>
+   {note:info}
 
    For legal entities and sole proprietors, the recommended payment method is **Bank transfer**. Payments made using other methods are not included in the [financial documents](../../concepts/report) for legal entities and sole proprietors.
 
-   </info>
+   {/note}
 
 ## Expenses notifications
 

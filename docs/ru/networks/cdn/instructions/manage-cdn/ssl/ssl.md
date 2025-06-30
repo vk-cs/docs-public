@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 Управление SSL-сертификатами подробнее описано в [соответствующем разделе](../../manage-certificates).
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

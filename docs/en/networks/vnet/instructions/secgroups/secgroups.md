@@ -47,11 +47,11 @@ openstack security group rule list --long <security group ID>
 
 ## {heading(Creating security group)[id=create-group]}
 
-<warn>
+{note:warn}
 
 A security group ID is displayed in not all platform services. Create groups with unique names to make it easy to identify them later.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -322,11 +322,11 @@ openstack server remove security group <instance ID> <security group ID>
 </tablist>
 <tabpanel>
 
-<warn>
+{note:warn}
 
 A group cannot be removed as long as there are ports that use this group. Also, the `default` security group and other preset groups cannot be removed.
 
-</warn>
+{/note}
 
 This is a group operation: if necessary, you can delete several security groups at once by selecting them using the checkboxes.
 

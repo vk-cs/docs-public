@@ -1,10 +1,10 @@
 The Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used to forward requests.
 
-<warn>
+{note:warn}
 
 The bucket used for hosting cannot be used to host scripts that require running on the web server side.
 
-</warn>
+{/note}
 
 ## Domain binding
 
@@ -22,11 +22,11 @@ After binding, the bucket will be available via a link of the form:
  http: // <backet_name>. <website_address>. <domain_zone>
 ```
 
-<info>
+{note:info}
 
 When you create a bucket with a period (.) Character in the name, it will only be available when using the HTTP protocol. If you need to use the HTTPS protocol, you must install an SSL certificate.
 
-</info>
+{/note}
 
 ## Installing an SSL Certificate
 

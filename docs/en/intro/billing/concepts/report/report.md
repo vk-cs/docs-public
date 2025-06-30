@@ -13,19 +13,19 @@ The documents are sent to the recipients in the [way](#methods_of_obtaining_acco
 - If an agreement of amounts is required — around the 15th of the month following the reporting period.
 - If approval is not required — on the 7th-10th of the month following the reporting period.
 
-<info>
+{note:info}
 
 If an organization or a sole proprietor has several [projects](/en/tools-for-using-services/account/concepts/projects), one set of documents is generated for all projects. Upon request, separate packages of documents for each project can be provided.
 
-</info>
+{/note}
 
 How to start receiving reporting documents from VK Cloud, read the article [Additional project configuration for legal entities](../../instructions/corporate). If you have any questions related to accounting documents, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
-<warn>
+{note:warn}
 
 The accounting documents reflect only expenses carried out as bank transfers from a legal entity or a sole proprietor.
 
-</warn>
+{/note}
 
 ### {heading(Composition of accounting documents)[id=composition_of_accounting_documents]}
 
@@ -56,11 +56,11 @@ The composition of the accounting documents depends on the specific terms of the
     - Invoice
     - Certificate of completed works
 
-    <info>
+    {note:info}
 
     If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
 
-    </info>
+    {/note}
 
     An invoice for payment is not provided. Organizations that work on prepayment [form](../../instructions/bill-generation) it independently in their management console.
 
@@ -76,11 +76,11 @@ The composition of the accounting documents depends on the specific terms of the
     - Invoice
     - Certificate of completed works
 
-    <info>
+    {note:info}
 
     If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
 
-    </info>
+    {/note}
 
 </tabpanel>
 </tabs>
@@ -95,11 +95,11 @@ Documents are sent through the electronic document management system (EDM).
 
 If electronic document flow with the organization is not possible, VK Cloud sends paper originals of documents to the address of the organization.
 
-<info>
+{note:info}
 
 VK Cloud never sends documents to a legal address without an explicit agreement with the organization.
 
-</info>
+{/note}
 
 #### {heading(Electronic document management system (EDM))[id=edm]}
 
@@ -109,11 +109,11 @@ If your organization or sole proprietor works with another EDI operator from the
 
 You can configure EDM with VK Cloud yourself or send a request for configuration to the document management department of VK Cloud ([docs_vktech@vk.company](mailto:docs_vktech@vk.company)).
 
-<info>
+{note:info}
 
 EDM work is only available for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) and only to organizations and sole proprietors registered in the Russian Federation.
 
-</info>
+{/note}
 
 #### {heading(Delivery of original documents)[id=delivery_of_original_documents]}
 

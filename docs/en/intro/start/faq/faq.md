@@ -3,11 +3,11 @@
 
 Technical support can be contacted through the communication channels listed at [Terms of support](../support/support-info).
 
-<info>
+{note:info}
 
 To speed up the processing of your request, inform the technical support about your account information: login, project name and describe the issue in as much detail as possible.
 
-</info>
+{/note}
 
 If possible, attach any available diagnostic information: screenshots, logs and other materials.
 

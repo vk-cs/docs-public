@@ -108,11 +108,11 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 If the VM is not responding, use a forced reboot.
 
-<info>
+{note:info}
 
 The forced restart of the VM corresponds to the power off and on (power cycling).<br/>The reboot assumes the correct shutdown of the VM operating system (graceful shutdown).
 
-</info>
+{/note}
 
 <tabs>
 
@@ -191,11 +191,11 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
 
 On the VK Cloud platform, the virtual machine is deleted by default along with the main disk (root disk). Deleting additional disks depends on the settings of the corresponding policy.
 
-<err>
+{note:err}
 
 The deletion operation is irreversible! Save the necessary data before deleting the VM.
 
-</err>
+{/note}
 
 1. Prepare the VM for deletion.
 
@@ -270,11 +270,11 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
 On the VK Cloud platform, you can rename a virtual machine, as well as change the type of VM — the number of processors (vCPU) and the amount of RAM.
 
-<info>
+{note:info}
 
 If the VM type changes, the VM will be rebooted.
 
-</info>
+{/note}
 
 <tabs>
 
@@ -397,11 +397,11 @@ Conditions for setting a password:
 - the virtual machine is running and the OS boot process has finished;
 - the QEMU guest agent is installed and running (state — `running`).
 
-<info>
+{note:info}
 
 In virtual machines created from the VK Cloud image, the QEMU guest agent is available by default.
 
-</info>
+{/note}
 
 Command to check the status of the QEMU guest agent:
 
@@ -476,21 +476,21 @@ To set the password:
 
 </tabs>
 
-<info>
+{note:info}
 
 The password must be at least 8 characters long and contain letters of the Latin alphabet, numbers, and characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `-`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `` ` ``, `{`, `}`, `~`.
 
-</info>
+{/note}
 
 ## Password recovery
 
 Password recovery generated for the default user is available only for Windows virtual machines created on a private network. To get a password, you need the private key of the key pair selected when creating the VM.
 
-<warn>
+{note:warn}
 
 If the password was changed after the VM was created or the VM was created on the `ext-net` network, [set a new password](#password).
 
-</warn>
+{/note}
 
 <tabs>
 
@@ -670,8 +670,8 @@ Examples of events:
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 Creating a disk without connecting a VM is described in the [Disks](/en/computing/iaas/instructions/volumes) section.
 
-</info>
+{/note}

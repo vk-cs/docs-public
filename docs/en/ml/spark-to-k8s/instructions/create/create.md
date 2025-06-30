@@ -48,11 +48,11 @@
            - **Registry username**: it can contain only Latin letters, numbers, and special characters `.`, `-`, `_`.
            - **Registry password**: you can come up with a password or generate it.
 
-             <warn>
+             {note:warn}
 
              Save the password. If it is lost, it cannot be restored.
 
-             </warn>
+             {/note}
 
              Password requirements:
 

@@ -1,10 +1,10 @@
 Описаны расширения, специфичные для [PostgreSQL](../../types/postgresql) и [PostgresPro](../../types/postgrespro). О расширениях для мониторинга инстанса БД читайте в разделах [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) и [zabbix](../zabbix).
 
-<info>
+{note:info}
 
 Набор доступных для установки расширений зависит от выбранной версии PostgreSQL и PostgresPro, а также от редакции PostgresPro.
 
-</info>
+{/note}
 
 ## Holistic.dev (holistic)
 
@@ -45,11 +45,11 @@
 
 `database`: список баз данных, в которых должно работать расширение.
 
-<info>
+{note:info}
 
 Если расширение установлено, то из параметра `database` нельзя удалить уже внесенные в него базы данных, только добавить новые.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
@@ -72,11 +72,11 @@
 
   Если бакета с таким именем не существует — [создайте его](/ru/storage/s3/instructions/buckets/create-bucket).
 
-  <warn>
+  {note:warn}
 
   Бакет должен иметь настройки ACL по умолчанию `public-read-write`.
 
-  </warn>
+  {/note}
 
   Отчеты по конкретному инстансу БД хранятся в директории с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, [посмотрев информацию об инстансе БД](/ru/dbs/dbaas/instructions/manage-instance/postgresql#poluchenie_informacii_ob_instanse_bd).
 
@@ -202,11 +202,11 @@
 
 - `database`: список баз данных, в которых должно работать расширение.
 
-  <info>
+  {note:info}
 
   Если расширение установлено, то из параметра `database` нельзя удалить уже внесенные в него базы данных, только добавить новые.
 
-  </info>
+  {/note}
 
 - `interval`: интервал (в секундах) между запуском функции [run_maintenance()](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#maintenance-functions) фоновым процессом ([background worker](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#background-worker), BGW).
 
@@ -240,11 +240,11 @@
 
 Расширение [pg_stat_kcache](https://github.com/powa-team/pg_stat_kcache) собирает статистику о реальных операциях чтения и записи, выполненных на уровне файловой системы.
 
-<info>
+{note:info}
 
 Для работы этого расширения требуется расширение [pg_stat_statements](#pg_stat_statements). Если оно еще не установлено, то установка будет выполнена автоматически.
 
-</info>
+{/note}
 
 </tabpanel>
 <tabpanel>
@@ -388,11 +388,11 @@
 
 `database`: список баз данных, в которых должно работать расширение.
 
-<info>
+{note:info}
 
 Если расширение установлено, то из параметра `database` нельзя удалить уже внесенные в него базы данных, только добавить новые.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>

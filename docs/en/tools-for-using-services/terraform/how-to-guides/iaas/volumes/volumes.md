@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Make sure you [installed and configured Terraform](../../../quick-start).
 
-</warn>
+{/note}
 
 ## Create a disk volume
 

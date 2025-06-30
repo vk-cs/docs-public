@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Make sure you [installed and configured Terraform](../../../quick-start).
 
-</warn>
+{/note}
 
 To create a load balancer, create a `lb.tf` file that describes the configuration of the load balancer to be created. Add the text from the example below and correct the arguments values for your load balancer. The example describes the load balancer setup for two VMs, the traffic on which will be distributed by the created load balancer using the `ROUND_ROBIN` method.
 
@@ -40,11 +40,11 @@ To create a load balancer, you need the following objects:
 
   - `vkcs_compute_instance`: manages the resource of the virtual machine instance. Traffic on these VMs will be distributed by the load balancer to be created.
 
-     <warn>
+     {note:warn}
 
      All arguments, including the instance administrator password, will be stored in their original state in plain text. Learn more about [sensitive data](https://www.terraform.io/docs/language/state/sensitive-data.html?_ga=2.74378194.1320188012.1657572463-152934297.1633441142).
 
-     </warn>
+     {/note}
 
      The resource supports the following arguments:
 

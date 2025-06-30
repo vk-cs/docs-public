@@ -31,11 +31,11 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 ## Adding floating IP address to the project
 
-<warn>
+{note:warn}
 
 A floating IP address is randomly assigned from a shared pool.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -111,13 +111,13 @@ A floating IP address is randomly assigned from a shared pool.
 1. Go to **Virtual networks** → **Floating IP**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the floating IP address, for which the **Internal IP** column shows `Unbinded', and select **Bind IP**.
 
-   <info>
+   {note:info}
 
    Unbound IP addresses also contain a link to the binding in the adjacent column.
 
    To bind a floating IP to another internal IP, first [unbind](#unbinding_floating_ip_address) it from the current one.
 
-   </info>
+   {/note}
 
 1. From the drop-down list, select the OpenStack port with the internal IP address to which you are binding.
 1. Click the **Confirm** button.

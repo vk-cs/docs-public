@@ -8,8 +8,8 @@ The cost of the service is listed in the [price list](https://cloud.vk.com/price
 
 Incoming and outgoing traffic of caching CDN servers.
 
-<info>
+{note:info}
 
 If you need to distribute more than 100 TB per month, contact [technical support](mailto:support@mcs.mail.ru).
 
-</info>
+{/note}

@@ -103,11 +103,11 @@ The following is a list of quotas and limits for the Moscow region.
 
 The limit on the number of instances in the project can be exceeded if the corresponding quota is increased upon request to [technical support](mailto:support@mcs.mail.ru).
 
-<info>
+{note:info}
 
 No more than 1000 virtual machines can be displayed in the management console.
 
-</info>
+{/note}
 
 #### Limits without quotas
 

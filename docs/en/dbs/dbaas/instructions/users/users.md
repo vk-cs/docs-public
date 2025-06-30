@@ -2,11 +2,11 @@ To restrict access to data, you can add users to a DB instance and assign them a
 
 In addition to regular users, each DB instance has an administrator — a user who has the broadest possible authority within the instance. The only available operation to manage the administrator is to [reset his password](#reset_admin_password).
 
-<warn>
+{note:warn}
 
 On Redis 6 instances, only user [creation](#add_user) and [deletion](#delete_user) is supported. For Redis 5, no user management operations are available.
 
-</warn>
+{/note}
 
 ## {heading(Reset administrator password)[id=reset_admin_password]}
 
@@ -48,11 +48,11 @@ The list of users and the databases available to them will be displayed.
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 The administrator is not displayed in the list of users.
 
-</info>
+{/note}
 
 ## {heading(Add user)[id=add_user]}
 
@@ -219,11 +219,11 @@ VK Cloud tools does not allow you to configure selective permissions within a da
    - [Username](../../connect) for the requires DBMS type.
    - Administrator password. If you do not know the password, or if this is your first connection to the DB instance after its creation, [reset](#reset_admin_password) the password before connecting.
 
-   <info>
+   {note:info}
 
    On OpenSearch instances, all users created via VK Cloud receive administrator rights; you can connect on behalf of any of them to set the permissions.
 
-   </info>
+   {/note}
 
 2. Configure the required permissions for the user.
 

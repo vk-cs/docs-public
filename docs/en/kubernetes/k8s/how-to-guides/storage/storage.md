@@ -15,13 +15,13 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
 1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../instructions/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
 
-    <warn>
+    {note:warn}
 
     When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
 
     Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-    </warn>
+    {/note}
 
 1. [Make sure](../../connect/kubectl) that you can connect to the cluster using `kubectl`.
 
@@ -300,11 +300,11 @@ To connect a persistent volume to multiple pods using dynamic PVC:
    1. When you use a StatefulSet PVC, it is not configured separately as in the other examples, but as part of the StatefulSet resource.
    1. The PVC will create one persistent volume for each StatefulSet replica, and these replicas will be numbered in order.
 
-      <info>
+      {note:info}
 
       When deploying an application of multiple replicas as a Deployment resource, you must also ensure that a persistent volume is created for each replica using the PVC. Such volumes will have random identifiers instead of sequential numbers.
 
-      </info>
+      {/note}
 
    1. The required storage size is specified in the `spec.volumeClaimTemplates.spec.resources.requests.storage` parameter of the StatefulSet resource. In this example it is 1 GB.
    1. The storage class is specified in the `spec.volumeClaimTemplates.spec.storageClassName` parameter of the StatefulSet resource. The storage class must use the same availability zone as the worker node on which the sub-application will reside. Otherwise, an attempt to connect a persistent volume corresponding to the PVC to the pad on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
@@ -712,11 +712,11 @@ To connect an NFS persistent volume using a static PVC:
 
 1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
 
-   <info>
+   {note:info}
 
    If some of the applications have not been deployed, the message `Service Unavailable` will be displayed for them.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>

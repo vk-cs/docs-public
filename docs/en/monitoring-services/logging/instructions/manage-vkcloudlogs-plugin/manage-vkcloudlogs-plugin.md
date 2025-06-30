@@ -65,11 +65,11 @@
 
    {/cut}
 
-   <info>
+   {note:info}
 
    To delete the log collection source, remove the corresponding entries from the `vkcloudlogs-fluent-bit.conf` file.
 
-   </info>
+   {/note}
 
 1. Restart the agent:
 

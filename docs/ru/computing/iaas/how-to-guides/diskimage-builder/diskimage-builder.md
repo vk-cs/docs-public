@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 Список поддерживаемых образов доступен в [официальной документации](https://docs.openstack.org/diskimage-builder/latest/user_guide/supported_distros.html) утилиты `diskimage-builder`.
 
-</info>
+{/note}
 
 В качестве примера рассматривается создание и настройка образа ВМ с ОС OpenSuse Leap. Все действия выполняются на локальном компьютере с ОС Ubuntu.
 
@@ -56,11 +56,11 @@ DIB_RELEASE=15.3 disk-image-create -t raw -o opensuse-15.3.raw vm opensuse
 
 Будет создан файл `opensuse-15.3.raw` с образом ВМ в формате RAW.
 
-<info>
+{note:info}
 
 Чтобы собрать образ ВМ с желаемыми свойствами, используйте дополнительные аргументы команды `disk-image-create`. Подробнее в [официальной документации](https://docs.openstack.org/diskimage-builder/latest/user_guide/building_an_image.html).
 
-</info>
+{/note}
 
 ## 3. Загрузите образ в VK Cloud
 

@@ -16,17 +16,17 @@
 
 The manager of the partner department will contact you within 48 hours from the moment of sending the request.
 
-<info>
+{note:info}
 
 The partner's management console will be available at the URL https://cloud.vk.com/partner/app/
 
-</info>
+{/note}
 
-<warn>
+{note:warn}
 
 If you have not been contacted within 48 hours, please contact the support service at the [contacts](/en/intro/start/support/support-info).
 
-</warn>
+{/note}
 
 ## Managing clients in the partner's management console
 
@@ -52,11 +52,11 @@ The following operations are available:
 
 1. Click the **Add** button.
 
-<info>
+{note:info}
 
 An invitation letter will be sent to the specified email address, in which the client will need to confirm the addition to the partner.
 
-</info>
+{/note}
 
 ### Checking the balance
 
@@ -65,19 +65,19 @@ An invitation letter will be sent to the specified email address, in which the c
 
 On the tab **Detail** tab will display detailed information on the client's debits. On the tab **Expenses on services** — statistics of expenses for the selected period of time.
 
-<info>
+{note:info}
 
 When displaying the details, all deposits and withdrawals are calculated based on the Moscow time zone (UTC+3).
 
-</info>
+{/note}
 
 ### client block and unblock
 
-<warn>
+{note:warn}
 
 Blocking the client means that it is impossible to sign in to the VK Cloud management console. Its virtual resources continue to work.
 
-</warn>
+{/note}
 
 To block a client:
 
@@ -88,19 +88,19 @@ To block a client:
 
 1. Confirm the operation.
 
-<info>
+{note:info}
 
 Unlocking works in the same way — instead of the option **Block**, select the option **Unblock**.
 
-</info>
+{/note}
 
 ### Deleting the client
 
-<warn>
+{note:warn}
 
 Deleting a client implies its detachment from the partner, the resources used are not **deleted**.
 
-</warn>
+{/note}
 
 1. [Open](https://cloud.vk.com/partner/app/en/clients/) clients list.
 

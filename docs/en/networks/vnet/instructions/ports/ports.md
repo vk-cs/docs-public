@@ -1,11 +1,11 @@
 You can manage OpenStack ports: view ports, add, edit and delete them.
 
-<warn>
+{note:warn}
 
 - All of the following operations are not available on the external network.
 - You cannot manage `SNAT` device ports.
 
-</warn>
+{/note}
 
 ## Viewing a list of ports and port information
 
@@ -329,11 +329,11 @@ openstack port unset --help
 
 ## Deleting a port
 
-<info>
+{note:info}
 
 It is not possible to delete a port if it is in use by the router.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

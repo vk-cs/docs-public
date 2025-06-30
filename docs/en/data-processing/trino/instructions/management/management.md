@@ -80,11 +80,11 @@
 
    {include(/en/_includes/_trino.md)[tags=password]}
 
-   <info>
+   {note:info}
 
    You cannot recover a lost password, but you can change it to a new one.
 
-   </info>
+   {/note}
 
    To generate a new password, press the **Generate** button.
 
@@ -110,11 +110,11 @@
 
    {include(/en/_includes/_trino.md)[tags=password]}
 
-   <info>
+   {note:info}
 
    A lost password cannot be recovered, but you can [change](#change_password) to a new password.
 
-   </info>
+   {/note}
 
 1. Click the **Add** button.
 
@@ -172,9 +172,9 @@
 1. On the instance page, click the **Maintenance** tab.
 1. Select the days of the week and the time when technical work starts. During these times, the server may be undergoing technical work, including backups - the service will be unavailable.
 
-   <info>
+   {note:info}
    Duration of technical works - 4 hours. Time zone - GMT+03:00. 
-   </info>
+   {/note}
 
 1. Press the **Save changes** button.
 

@@ -9,11 +9,11 @@ After the card is bound in the project, access to services appears.
 
 It is recommended to use physical bank cards to pay for services, since payments from virtual cards can be rejected by the security system.
 
-<info>
+{note:info}
 
 Legal entities are recommended to pay for services using bank transfers. Card payments are not taken into account in [accounting documents](../../concepts/report#legal_entities).
 
-</info>
+{/note}
 
 To bind the card:
 
@@ -28,11 +28,11 @@ To bind the card:
 
     If there are enough funds on the bank account, a test amount will be debited from the card and credited to the [project balance](/en/intro/billing/concepts/balance). After that the card will be successfully linked.
 
-    <info>
+    {note:info}
 
     If the test amount was not spent on services, it can be refunded via [technical support](/en/contacts).
 
-    </info>
+    {/note}
 
 1. Click the **Добавить карту** button.
 1. In the payment confirmation window, enter the SMS code received from the bank.
@@ -42,11 +42,11 @@ To bind the card:
 1. (Optional) On the **Auto-top-up** tab that opens, configure auto-top-up of the payment account. To skip this step, disable the **Enable auto-top-up balance** option.
 1. Click the **Save** button.
 
-<info>
+{note:info}
 
 The full list of payment methods is in the article [Payment methods](../../concepts/payment-methods).
 
-</info>
+{/note}
 
 ## Configure auto-completion
 
@@ -54,11 +54,11 @@ Auto-top-up allows you to automatically top up the [payment account balance](../
 
 The enabled auto-completion does not guarantee that there will always be funds on the payment account of the project. For example, if there are not enough funds on the card, the payment will not be made.
 
-<warn>
+{note:warn}
 
 In the Kazakhstan [region](/en/tools-for-using-services/account/concepts/regions), auto-completion is not available.
 
-</warn>
+{/note}
 
 To activate auto-completion:
 
@@ -84,10 +84,10 @@ To untie the card, contact [technical support](mailto:support@mcs.mail.ru) and p
 - [project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id);
 - the last 4 digits of the linked card number.
 
-<info>
+{note:info}
 
 If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. In emergency cases, a one-time card payment can help you to avoid project [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 
-</info>
+{/note}

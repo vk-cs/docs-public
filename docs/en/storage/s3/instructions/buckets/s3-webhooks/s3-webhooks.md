@@ -1,10 +1,10 @@
 The Cloud Storage webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you must first add a notification configuration that specifies the events that Cloud Storage should publish and the destinations where Cloud Storage should send notifications. This configuration is saved in the Webhooks menu, which is tied to the bucket.
 
-<info>
+{note:info}
 
 Cloud Storage event notifications are designed to be delivered at least once. Usually, event notifications are delivered in seconds, but sometimes it can take a minute or more.
 
-</info>
+{/note}
 
 ## List of notifications
 

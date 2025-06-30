@@ -43,11 +43,11 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
       - you need a non-standard number of Elasticsearch replicas;
       - the master nodes and worker nodes are located in different availability zones.
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -157,11 +157,11 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -179,7 +179,7 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 To install the add-on in this way, it is necessary that the master nodes and the worker nodes are in the same availability zone.
 
@@ -187,7 +187,7 @@ During quick installation, the add-on settings code is not edited. Three Elastic
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
-</info>
+{/note}
 
 1. Install the add-on:
 
@@ -231,11 +231,11 @@ Editing the add-on code is applicable for standard installation and installation
 
 The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml).
 
-<err>
+{note:err}
 
 Do not delete the `podAnnotations.timestamp` fields or the values set in them. These fields are required for correct installation and operation of the add-on.
 
-</err>
+{/note}
 
 ### Changing the number of Elasticsearch replicas
 
@@ -246,11 +246,11 @@ elasticsearch:
   replicas: <number of replicas>
 ```
 
-<warn>
+{note:warn}
 
 Make sure that the number of worker nodes in the cluster is not less than the selected number of replicas.
 
-</warn>
+{/note}
 
 ### Changing Elasticsearch storage settings
 

@@ -5,11 +5,11 @@ To run this monitoring scenario, install and configure servers using the followi
 - Docker on Ubuntu 18.04 LTS x86_64.
 - Elasticsearch and Kibana on Ubuntu 18.04 LTS x86_64.
 
-<warn>
+{note:warn}
 
 If you use other servers and hardware, some script steps may differ from those described below.
 
-</warn>
+{/note}
 
 ## Scheme of work
 
@@ -133,13 +133,13 @@ tag: "nginx"
 
 
 ```
-<warn>
+{note:warn}
 
 **Attention**
 
 change wordpressPASS to a random password.
 
-</warn>
+{/note}
 
 For each container, the Fluentd log driver is described, the background connection to the Fluentd collector is indicated, and additional tags are affixed for further processing (if necessary).
 
@@ -198,13 +198,13 @@ The result is a system consisting of three containers: a MySQL database, Nginx a
 
 ## Install Fluentd
 
-<info>
+{note:info}
 
 **Note**
 
 The Fluentd version being used is td-agent 3.5.1-0.
 
-</info>
+{/note}
 
 1. Install fluentd:
 

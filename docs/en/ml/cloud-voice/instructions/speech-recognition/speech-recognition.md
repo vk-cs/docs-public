@@ -124,19 +124,19 @@ Answer example:
 }
 ```
 
-<warn>
+{note:warn}
 
 The interval between sending chunks should not exceed 5 seconds, after that the task goes into `done` status and it will be impossible to continue sending chunks.
 
 Chunks themselves must be sent sequentially and synchronously.
 
-</warn>
+{/note}
 
-<err>
+{note:err}
 
 For the last chunk, you need to pass a GET-parameter with the value `last=1`.
 
-</err>
+{/note}
 
 #### Supported audio formats
 
@@ -154,11 +154,11 @@ For the last chunk, you need to pass a GET-parameter with the value `last=1`.
 | Maximum number of channels | 1       |
 | Minimum number of chunks   | 5       |
 
-<info>
+{note:info}
 
 The recommended chunk length is 0.08 seconds.
 
-</info>
+{/note}
 
 ### Request to get the end result of the task
 

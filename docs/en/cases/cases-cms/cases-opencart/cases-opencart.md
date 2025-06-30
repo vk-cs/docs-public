@@ -28,11 +28,11 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 
 1. [Create](/en/networks/dns/publicdns#creating_a_zone) DNS zone.
 
-   <warn>
+   {note:warn}
 
    Make sure that the DNS zone is delegated successfully and the NS records are configured correctly: the zone must have the status **NS records are configured correctly**.
 
-   </warn>
+   {/note}
 
 1. [Create](/en/networks/dns/publicdns#adding_resource_records) an record in the selected zone:
 

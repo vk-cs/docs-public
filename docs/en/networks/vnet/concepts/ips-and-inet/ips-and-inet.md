@@ -43,11 +43,11 @@ Floating IP addresses are used for:
 
 ## {heading(Anycast IP address)[id=anycast-ip]}
 
-<warn>
+{note:warn}
 
 Anycast IP addresses work only in Sprut SDN.
 
-</warn>
+{/note}
 
 The anycast IP service enables building a fault-tolerant infrastructure with optimal routing.
 

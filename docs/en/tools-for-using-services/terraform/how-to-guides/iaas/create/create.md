@@ -276,11 +276,11 @@ The resources arguments are described in the [Terraform provider documentation](
 
 This will allow you to automatically enable the transfer of metrics to the Cloud Monitoring service when creating a VM.
 
-<info>
+{note:info}
 
 Monitoring cannot be enabled for VMs that are not accessible from the external network.
 
-</info>
+{/note}
 
 1. Specify the provider version 0.9.0 or higher in the `provider.tf` file. Example:
 

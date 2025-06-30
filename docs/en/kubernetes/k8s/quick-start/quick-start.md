@@ -11,13 +11,13 @@ After going through all the steps of the quickstart, you will:
    1. Provide access to the deployed applications using the Ingress controller.
    1. Make sure that these applications actually work.
 
-<warn>
+{note:warn}
 
 A running Kubernetes cluster consumes computing resources.
 
 After completing a quickstart, stop or delete the cluster if you no longer need it.
 
-</warn>
+{/note}
 
 ## 1. Preparatory steps
 
@@ -34,11 +34,11 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
    1. Select the cluster configuration **Dev environment** with the newest version of Kubernetes.
 
-      <info>
+      {note:info}
 
       Note the version of Kubernetes selected. This is important for further installation of `kubectl`.
 
-      </info>
+      {/note}
 
    1. Click the **Next Step** button.
 
@@ -48,13 +48,13 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
    1. **Virtual machine type — Master:** `STD3-2-8`.
    1. **Availability zone:** `Moscow (MS1)`.
 
-      <info>
+      {note:info}
 
       Configuration files for creating and configuring resources in the cluster are designed to use this zone.
 
       If you choose another zone, adjust configuration files.
 
-      </info>
+      {/note}
 
    1. **Network:** `Create new network`.
    1. **Assign external IP:** make sure this option is selected.
@@ -66,13 +66,13 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
    1. **Node type:** `STD3-4-8`.
    1. **Availability zone:** `Moscow (MS1)`.
 
-      <info>
+      {note:info}
 
       Configuration files for creating and configuring resources in the cluster are designed to use this zone.
 
       If you choose another zone, adjust configuration files.
 
-      </info>
+      {/note}
 
    1. Leave the other settings unchanged.
    1. Click the **Create cluster** button.
@@ -81,13 +81,13 @@ Wait for the cluster to complete, this process may take a while.
 
 ### 1.2. Install add-ons in the cluster
 
-<warn>
+{note:warn}
 
 When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 1. [Install](../instructions/addons/advanced-installation/install-advanced-registry) the `docker-registry` add-on.
 
@@ -121,7 +121,7 @@ Install the following tools on the host:
 - Browser.
 - The [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) utility.
 
-  <warn>
+  {note:warn}
 
   Download a version of `kubectl` that matches the version of the cluster, or differs by one minor version in any direction.
 
@@ -129,7 +129,7 @@ Install the following tools on the host:
 
   See [Connecting to a cluster with kubectl](../connect/kubectl) for details.
 
-  </warn>
+  {/note}
 
 - The [kauthproxy] utility (https://github.com/int128/kauthproxy/releases). See [Connecting to the cluster with Kubernetes Dashboard](../connect/k8s-dashboard) for details.
 - The `client-keystone-auth` utility. See [Connecting to the cluster with kubectl](../connect/kubectl) for details.
@@ -219,12 +219,12 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
    kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
    ```
 
-   <warn>
+   {note:warn}
 
    - Do not close this session, or you will lose access to the Grafana web interface.
    - If port `8001` is already in use by another application, adjust the command by specifying a free port.
 
-   </warn>
+   {/note}
 
 1. Open the Grafana web interface:
 
@@ -243,11 +243,11 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
-   <warn>
+   {note:warn}
 
    Do not close this session, or you will lose access to the Kubernetes Dashboard web interface.
 
-   </warn>
+   {/note}
 
 1. Enter the user password from your VK Cloud account, if a password is requested.
 
@@ -260,12 +260,12 @@ The browser will be opened and you will be redirected to the Kubernetes Dashboar
 
 The [Docker Registry add-on](../connect/docker-registry) was installed in the cluster which will store the Docker images.
 
-<info>
+{note:info}
 
 To best demonstrate the capabilities of the cluster, a special Docker image with the NGINX web server will be built next.
 The image is based on the [plaintext demo image](https://github.com/nginxinc/NGINX-Demos/tree/master/nginx-hello-nonroot) from NGINX.
 
-</info>
+{/note}
 
 To put your own images in the Docker cluster registry:
 
@@ -594,13 +594,13 @@ To deploy the applications:
 
    {/cut}
 
-   <warn>
+   {note:warn}
 
    Note that the configuration files `deploy-coffee.yaml` and `deploy-tea.yaml` for Persistent Volume Claim specify the storage class corresponding to the availability zone of the node (MS1) on which you plan to deploy applications.
 
    Attempting to place an application on a node in one availability zone to which a volume from another availability zone is mounted will fail.
 
-   </warn>
+   {/note}
 
 1. Deploy the applications:
 

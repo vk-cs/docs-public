@@ -18,11 +18,11 @@ The AI consultant works only with public documentation and does not have access 
 
     * Avoid slang and abbreviations, as the bot may not understand them.
 
-    <warn>
+    {note:warn}
 
     To protect confidential information, do not use personal data, logins and passwords in your questions. Such information is not required for the AI ​consultant to work.
 
-    </warn>
+    {/note}
 
     {cut(Examples of questions the bot handles well)}
 

@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 The article describes how to create a JupyterHub instance through your VK Cloud management console. How to create an instance using Terraform, read the article [Creating a JupyterHub instance](/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub).
 
-</info>
+{/note}
 
 To create a JupyterHub instance:
 
@@ -22,9 +22,9 @@ To create a JupyterHub instance:
     - **Bucket**: if the **Connect S3 bucket as disk** option is enabled, in the list, select the bucket that you want to connect to the instance. If there are no suitable buckets, select **Create new bucket** — a new Cloud Storage bucket will be created when creating the instance.
     - **Username**: the administrator name for authorization in the instance OS. Only the administrator will be able to [create other accounts](../manage#create-users) to work on the instance.
 
-        <err>
+        {note:err}
         Do not run an instance under an administrator account. If the administrator places the instance in an inoperative state, the instance cannot be restored.
-        </err>
+        {/note}
 
     - **User password**: the administrator password for authorization in the instance OS. The password must contain:
 
@@ -34,11 +34,11 @@ To create a JupyterHub instance:
         - One or more numbers.
         - One or more special characters from the range: `!`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`,`_`, `{`, `|`, `}`, `~`, `-`.
 
-        <err>
+        {note:err}
 
         Save your password. It is impossible to recover the password.
 
-        </err>
+        {/note}
 
 1. Click the **Next step** button.
 

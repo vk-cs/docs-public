@@ -8,11 +8,11 @@ To connect the router to subnets, you need to add interfaces. To connect the rou
 </tablist>
 <tabpanel>
 
-<info>
+{note:info}
 
 You can also [connect a subnet to the router](../../net) in the **Cloud networks** → **Networks** section of your management console.
 
-</info>
+{/note}
 
 {include(/en/_includes/_open_advanced_router.md)}
 

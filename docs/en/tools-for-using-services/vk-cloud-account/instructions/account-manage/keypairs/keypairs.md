@@ -23,11 +23,11 @@ Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/instructions/
    openstack keypair show <KEY PAIR NAME>
    ```
 
-<info>
+{note:info}
 
 To display data only about the public key, add the `--public-key` option to the command.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
@@ -99,11 +99,11 @@ To display data only about the public key, add the `--public-key` option to the 
 
 ## Key pair recovery
 
-<err>
+{note:err}
 
 The private key cannot be restored. Create a new key pair and upload the public key to the VM.
 
-</err>
+{/note}
 
 To restore access to a Linux virtual machine via SSH using a key pair, use the instructions from the article [VM management](/en/computing/iaas/instructions/vm/vm-manage#restoring_vm_access_by_key).
 

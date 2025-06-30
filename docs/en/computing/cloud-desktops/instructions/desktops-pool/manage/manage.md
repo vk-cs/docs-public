@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 You can also [manage all desktops](../../manage-desktops) created in the system for all pools.
 
-</info>
+{/note}
 
 ## Viewing list of desktop pools
 
@@ -42,11 +42,11 @@ To change other parameters:
 
 ### Reboot
 
-<info>
+{note:info}
 
 Available for desktops, all VMs of which are in an emergency state.
 
-</info>
+{/note}
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
@@ -62,11 +62,11 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 
 It is used to force the termination of the user's session.
 
-<info>
+{note:info}
 
 The VM remains turned on at the end of the session.
 
-</info>
+{/note}
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
@@ -95,11 +95,11 @@ This is a group operation: if necessary, you can send a message to users of seve
 
 ## {heading(Deleting desktop pool)[id=delete_pool]}
 
-<warn>
+{note:warn}
 
 The deleted pool cannot be restored. If there are desktops in the pool, they will also be deleted when the pool is deleted.
 
-</warn>
+{/note}
 
 This is a group operation: if necessary, you can delete several pools at once by selecting them using the checkboxes.
 
@@ -116,10 +116,10 @@ This is a group operation: if necessary, you can delete several pools at once by
 
 1. Confirm the deletion.
 
-<warn>
+{note:warn}
 
 Deleting desktop pools, including the last one, does not delete the Cloud Desktop service infrastructure. It is [charged](../../../tariffication) and consumes computing resources.
 
 If you no longer use Cloud Desktop, [remove](../../delete-vdi) its infrastructure.
 
-</warn>
+{/note}

@@ -46,11 +46,11 @@ A client can have up to 10 different spaces. `Space` values ​​range from `0`
 | name | string | Filenames to match files in request and response (required non-empty) |
 | person_id | int | ID associated with the person in the photo (required non-empty) |
 
-<warn>
+{note:warn}
 
 The method is subject to [restrictions](../../concepts/vision-limits#image_processing)
 
-</warn>
+{/note}
 
 ### Request example
 
@@ -306,11 +306,11 @@ For a description of the space parameter, see the section of the [Set](../../ins
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`.
 
-<warn>
+{note:warn}
 
 The method is subject to [restrictions](../../concepts/vision-limits#image_processing)
 
-</warn>
+{/note}
 
 ### Request example
 
@@ -694,11 +694,11 @@ For a description of the space parameter, see the section of the [Set](../../ins
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`.
 
-<warn>
+{note:warn}
 
 The method is subject to [restrictions](../../concepts/vision-limits#image_processing)
 
-</warn>
+{/note}
 
 ### Request example
 

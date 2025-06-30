@@ -1,10 +1,10 @@
 Gatekeeper is a controller embedded between the Kubernetes API and the Open Policy Agent (OPA) policy engine to check that Kubernetes resources created, modified and deleted are compliant with policies. For more information about Gatekeeper, see [Kubernetes reference](../../reference/gatekeeper) and [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/).
 
-<warn>
+{note:warn}
 
 Use these instructions if your cluster is version 1.20 or lower. Starting with Kubernetes 1.21, Gatekeeper is [already installed](../../concepts/architecture) in the cluster along with [preconfigured templates and restrictions](../../concepts/addons-and-settings/settings).
 
-</warn>
+{/note}
 
 ## Installation
 
@@ -68,8 +68,8 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
    kubectl delete crd -l gatekeeper.sh/system=yes
    ```
 
-   <warn>
+   {note:warn}
 
    This operation will also delete the constraints and their templates.
 
-   </warn>
+   {/note}

@@ -27,11 +27,11 @@
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 Инструкция написана для CentOS 8. Для других версий OC команды могут отличаться.
 
-</info>
+{/note}
 
 1. Установите Python 3, если он еще не установлен:
 
@@ -64,11 +64,11 @@ brew install python3
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 Инструкция написана на примере Python 3.10.11 и Microsoft C++ Build Tools 2022. Для других версий программ названия и версии компонентов могут отличаться.
 
-</info>
+{/note}
 
 1. Скачайте и установите [Python3](https://www.python.org/downloads/windows/).
 1. Скачайте и запустите [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
@@ -137,13 +137,13 @@ brew install python3
    pip3 install "python-manilaclient==4.9.1"
    ```
 
-   <info>
+   {note:info}
 
    Рекомендованные версии пакета `python-manilaclient`: 4.9.1 или выше. Если нужна более старая версия, используйте 4.4.2.
 
    При использовании других версий `python-manilaclient` команды `openstack share network` могут выдавать ошибку.
 
-   </info>
+   {/note}
 
 ## 3. Пройдите аутентификацию
 

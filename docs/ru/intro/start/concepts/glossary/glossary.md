@@ -1,4 +1,4 @@
-<info>
+{note:info}
 
 Больше терминов можно найти в соответствующем разделе:
 
@@ -6,7 +6,7 @@
 - [Виртуальные сети](/ru/networks/vnet/concepts).
 - [Контейнеры](/ru/kubernetes/k8s/reference).
 
-</info>
+{/note}
 
 ## Виртуальные машины (instances)
 

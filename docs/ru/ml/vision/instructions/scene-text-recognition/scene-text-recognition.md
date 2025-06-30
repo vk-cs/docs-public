@@ -60,11 +60,11 @@ ENDPOINT: `/api/v1/scene_text/recognize`
 |-----------| ------ |-------------------------------------| ------------------------------------------------------ |
 | name      | string | ![](/ru/assets/check.svg "inline")  | Имена файлов для сопоставления файлов в запросе и ответе |
 
-<warn>
+{note:warn}
 
 Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
 
-</warn>
+{/note}
 
 ## Пример запроса
 

@@ -62,21 +62,21 @@ After going through all the steps of the Quick start, you will:
    - Must contain at least one uppercase letter, lowercase letter, number and special character.
    - Must not contain repeating groups of characters, e.g., ``aaa123123123123``.
 
-   <warn>
+   {note:warn}
 
    Make a note of the passwords entered. Lost passwords cannot be recovered.
 
-   </warn>
+   {/note}
 
 1. Click **Create cluster**.
 
    Wait for the cluster creation to complete, the process may take about 25–30 minutes.
 
-   <info>
+   {note:info}
 
    In 5-8 minutes after startup, the ADCM interface will be available to monitor the progress of the installation process.
 
-   </info>
+   {/note}
 
 ## 2. Add Airflow component to cluster
 

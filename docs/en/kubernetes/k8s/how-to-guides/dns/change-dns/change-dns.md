@@ -25,10 +25,10 @@ To apply the changes:
 
 1. [Start](../../../instructions/manage-cluster#start) the cluster again and wait for all nodes to initialize.
 
-<warn>
+{note:warn}
 
 Rebooting causes temporary unavailability of services on the cluster. Stop and start the cluster during off-peak hours.
 
-</warn>
+{/note}
 
 When the cluster starts, all its nodes will receive updated DNS settings.

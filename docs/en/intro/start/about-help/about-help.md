@@ -2,7 +2,7 @@
 
 VK Cloud documentation contains the special **Bookmarks** section for the quick access to favorite articles.
 
-<info>Bookmarks are saved within the current browser only.</info>
+{note:info}Bookmarks are saved within the current browser only.{/note}
 
 To open the **Bookmarks** section, click the ![ ](../assets/bookmark-icon.svg "inline") icon in the page header.
 
@@ -40,11 +40,11 @@ VK Cloud Documentation uses several ways to highlight different information type
 
 There are three types of info boxes:
 
-<info>A hint with additional information that may be helpful.</info>
+{note:info}A hint with additional information that may be helpful.{/note}
 
-<warn>Information that is important to know before proceeding.</warn>
+{note:warn}Information that is important to know before proceeding.{/note}
 
-<err>Critical information related to possible security issues or data loss.</err>
+{note:err}Critical information related to possible security issues or data loss.{/note}
 
 ### Code blocks
 

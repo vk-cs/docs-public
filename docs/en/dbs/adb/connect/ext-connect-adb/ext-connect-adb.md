@@ -1,12 +1,12 @@
 ## Connecting to an instance
 
-<warn>
+{note:warn}
 
 **Attention**
 
 Connecting externally requires an ADB instance with external IP enabled. You can learn more about enabling an external IP address on the [“Creating a Cluster”](../../quick-start/create-adb) page.
 
-</warn>
+{/note}
 
 To connect to an ADB instance, use the [database instance connection instructions](../../../dbaas/connect).
 

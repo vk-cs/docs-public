@@ -1,10 +1,10 @@
 Extensions specific to [PostgreSQL](../../types/postgresql) and [PostgresPro](../../types/postgrespro) are described. Read about extensions for monitoring DB instances in [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) and [zabbix](../zabbix).
 
-<info>
+{note:info}
 
 Availability of the extensions depends on selected version of PostgreSQL and PostgresPro, as well as the PostgresPro edition.
 
-</info>
+{/note}
 
 ## Holistic.dev (holistic)
 
@@ -45,11 +45,11 @@ The extension provides the [JsQuery](https://github.com/postgrespro/jsquery) que
 
 `database`: the list of databases in which the extension should operate.
 
-<info>
+{note:info}
 
 When the extension is installed, it is not possible to remove existing entries from the `database` parameter, only to add the new ones.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
@@ -72,11 +72,11 @@ The [pgBadger](https://pgbadger.darold.net/) extension allows analyzing PostgreS
 
   If the bucket with this name does not exist, then [create it](/en/storage/s3/instructions/buckets/create-bucket).
 
-  <warn>
+  {note:warn}
 
   The bucket should have the default ACL setting set to `public-read-write`.
 
-  </warn>
+  {/note}
 
   The reports for a particular DB instance will be stored in a directory with a name that matches the instance identifier. To get the identifier, explore the information about the DB instance.
 
@@ -175,11 +175,11 @@ To do native partitioning, a `partman` user will be created and configured in Po
 
 - `database`: the list of databases in which the extension should operate.
 
-  <info>
+  {note:info}
 
   When the extension is installed, it is not possible to remove existing entries from the `database` parameter, only to add the new ones.
 
-  </info>
+  {/note}
 
 - `interval`: interval (in seconds) between running the [run_maintenance()](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#maintenance-functions) function by the [background worker](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#background-worker) (BGW).
 
@@ -213,11 +213,11 @@ To do native partitioning, a `partman` user will be created and configured in Po
 
 The [pg_stat_kcache](https://github.com/powa-team/pg_stat_kcache) extension collects statistics about real reads and writes done by the filesystem layer.
 
-<info>
+{note:info}
 
 The extension requires the [pg_stat_statements](#pg_stat_statements) extension to be installed. If it is not already installed, then it will be installed automatically.
 
-</info>
+{/note}
 
 </tabpanel>
 <tabpanel>
@@ -359,11 +359,11 @@ The [TimescaleDB](https://docs.timescale.com/) extension adds advanced time-seri
 
 `database`: the list of databases in which the extension should operate.
 
-<info>
+{note:info}
 
 When the extension is installed, it is not possible to remove existing entries from the `database` parameter, only to add the new ones.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>

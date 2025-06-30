@@ -41,11 +41,11 @@ Kubernetes Dashboard — это универсальный веб-интерфе
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
-   <warn>
+   {note:warn}
 
    Не закрывайте эту сессию терминала, иначе доступ к веб-интерфейсу Kubernetes Dashboard пропадет.
 
-   </warn>
+   {/note}
 
 1. Введите пароль от личного кабинета VK Cloud, если он не вписан в файл конфигурации kubeconfig.
 
@@ -72,11 +72,11 @@ Kubernetes Dashboard — это универсальный веб-интерфе
    kauthproxy -n kube-system https://kubernetes-dashboard.svc
    ```
 
-   <warn>
+   {note:warn}
 
    Не закрывайте эту сессию терминала, иначе доступ к веб-интерфейсу Kubernetes Dashboard пропадет.
 
-   </warn>
+   {/note}
 
    Откроется браузер, и вы будете направлены на страницу авторизации Kubernetes Dashboard.
 

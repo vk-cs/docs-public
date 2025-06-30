@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 The list of Windows OS supported for migration to VK Cloud is listed in the [Operating system](../../concepts/about#operating_system) section.
 
-</info>
+{/note}
 
 Creating and uploading a VM image to VK Cloud is considered below using Windows Server 2016 Standard edition as an example. A computer with Windows 11 Pro is used to prepare the image. All commands are run in the Windows PowerShell console.
 
@@ -175,11 +175,11 @@ The Windows installation ISO image may contain several editions of the operating
     * `purge_updates=False` — disabling the cleanup of the `WinSXS` directory after installing updates.
     * `disk_layout` — the type of disk layout.
 
-    <info>
+    {note:info}
 
     The VK Cloud platform supports boot disks with partitioning to boot the OS using BIOS. The disk layout for booting via UEFI is not supported.
 
-    </info>
+    {/note}
 
 1. Run a local image build using the command:
 

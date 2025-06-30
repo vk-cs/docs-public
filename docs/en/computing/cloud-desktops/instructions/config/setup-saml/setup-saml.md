@@ -11,11 +11,11 @@ To use the SAML authentication service in Cloud Desktop, complete the following 
 1. Connect your SAML identity provider to the same domain as the directory service.
 1. Prepare your SAML identity provider for integration with Cloud Desktop. The configuration procedure depends on the chosen SAML provider.
 
-    <info>
+    {note:info}
 
     An example of setting up a SAML identity provider is provided in the [Keycloak integration](../../../how-to-guides/keycloak) section.
 
-    </info>
+    {/note}
 
 To set up two-factor authentication using the SAML service:
 

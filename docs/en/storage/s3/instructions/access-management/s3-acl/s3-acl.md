@@ -2,11 +2,11 @@
 
 Access Control List VK Cloud (ACL or Access Control List) allow you to control access to buckets and objects. Each bucket and object has its own ACL, with which you can determine which accounts and groups are granted access, as well as the type of access. When receiving a request for a resource, the service checks the corresponding ACL to see if the requestor has access rights.
 
-<info>
+{note:info}
 
 By default, the created bucket or object gets a Private ACL, where the owner has full rights, and the rest of the participants have access denied.
 
-</info>
+{/note}
 
 When a container or object is created, the service creates a standard ACL that grants the resource owner full control over that resource and denies access to other projects. This is shown in the following bucket ACL example (the default object ACL has the same structure).
 
@@ -35,11 +35,11 @@ xsi: type = "Canonical User">
 
 The base ACL shown as an example defaults to one Grant element per owner. To grant permission, `<Grant>` elements are added, each `<Grant>` element must specify the grantor and permission options.
 
-<info>
+{note:info}
 
 ACLs can contain up to 100 permissions.
 
-</info>
+{/note}
 
 ## Recipient of rights
 
@@ -59,11 +59,11 @@ For example, the x-amz-grant-read header grants VK Cloud accounts identified by 
  x-amz-grant-read: emailAddress = "mcs1447309426", emailAddress = "mcs1380112926"
 ```
 
-<warn>
+{note:warn}
 
 When granting other VK Cloud accounts access to their resources, please note that VK Cloud accounts can delegate their permissions to users under their own accounts. This is known as multi-account access.
 
-</warn>
+{/note}
 
 ## {heading(Canonical user ID)[id=user-id]}
 
@@ -78,11 +78,11 @@ It can be calculated using the command
 
 You can also find the canonical user ID of the VK Cloud account by reading the ACL of the bucket or object that the VK Cloud account has access to. When an individual VK Cloud account is granted permissions on a Grant request, a grant entry with the canonical user ID of the VK Cloud account is added to the ACL.
 
-<info>
+{note:info}
 
 If you make your bucket public (not recommended), any unauthenticated user can upload objects to the bucket. These anonymous users do not have an VK Cloud account. When an anonymous user uploads an object to a bucket, Cloud Storage adds a special canonical user ID (65a011a29cdf8ec533ec3d1ccaae921c) as the owner of the object to the ACL.
 
-</info>
+{/note}
 
 ## {heading(Project ID)[id=project-id]}
 
@@ -98,21 +98,21 @@ Cloud Storage has a set of predefined groups. When granting access to an account
 
 All VK Cloud accounts are represented in this group. Permission to access this group allows any VK Cloud account to access the resource. However, all requests must be signed (authenticated).
 
-<info>
+{note:info}
 
 When granting access to the Authenticated Users group of users, any authorized VK Cloud user from the Internet can access the resource.
 
-</info>
+{/note}
 
 **All Users** — The All Users group, represented by http://acs.amazonaws.com/groups/global/AllUsers.
 
 Permission to access this group allows anyone on the Internet to access the resource. Requests can be signed (authenticated) or unsigned (anonymous). Unsigned requests omit the Authentication header in the request.
 
-<warn>
+{note:warn}
 
 It is highly recommended that you do not grant permission to the All Users group with WRITE, WRITE_ACP, or FULL_CONTROL authority. For example, WRITE permissions allow anyone to store objects in a bucket, which is paid for by the current owner. It also allows others to delete objects that might need to be kept.
 
-</warn>
+{/note}
 
 ## {heading(Types of permits)[id=permissons]}
 
@@ -190,10 +190,10 @@ Cloud Storage supports a set of predefined permissions known as standard ACLs. E
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(0%); width: 100%;" width="289"><tbody><tr><td height="19" style="width: 25.6203%; background-color: rgb(239, 239, 239);" width="38.062283737024224%">Fixed ACL</td><td style="width: 23.8734%; background-color: rgb(239, 239, 239);" width="29.41176470588235%">Refers to</td><td style="width: 50.3038%; background-color: rgb(239, 239, 239);" width="32.52595155709343%">Permissions added to ACL</td></tr><tr><td height="19" style="width: 25.6203%;">private</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. Nobody else has access rights (default).</td></tr><tr><td height="19" style="width: 25.6203%;">public-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. The AllUsers group gets READ access.</td></tr><tr><td height="19" style="width: 25.6203%;">public-read-write</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. The AllUsers group gets READ and WRITE access.</td></tr><tr><td height="19" style="width: 25.6203%;">aws-exec-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL.</td></tr><tr><td height="19" style="width: 25.6203%;">authenticated-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. AuthenticatedUsers group gets READ access.</td></tr><tr><td height="19" style="width: 25.6203%;">bucket-owner-read</td><td style="width: 23.8734%;">An object</td><td style="width: 50.3038%;">The owner of the object gets FULL_CONTROL. The bucket owner gets READ access. If you specify this template ACL when creating a bucket, Cloud Storage will ignore it.</td></tr><tr><td height="19" style="width: 25.6203%;">bucket-owner-full-control</td><td style="width: 23.8734%;">An object</td><td style="width: 50.3038%;">Both the object owner and the bucket owner get FULL_CONTROL over the object. If you specify this fixed ACL when creating a bucket, will ignore it.</td></tr></tbody></table>
 
-<info>
+{note:info}
 
 Only one of these fixed ACLs can be specified in a request.
 
-</info>
+{/note}
 
 The request specifies a fixed ACL using the x-amz-acl request header. When receives a request with a standard ACL in the request, it adds the predefined permissions to the ACL of the resource.

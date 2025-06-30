@@ -2,9 +2,9 @@ An advanced router allows you to establish connection between autonomous network
 
 ## Adding a BGP router
 
-<info>
+{note:info}
 You can only add one BGP router per advanced router.
-</info>
+{/note}
 
 <tabs>
 <tablist>

@@ -4,11 +4,11 @@
 
 Далее будет показана настройка федерации удостоверений на примере [службы федерации Active Directory](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-overview) (AD FS).
 
-<info>
+{note:info}
 
 При смене домена Active Directory удалите существующую федерацию и настройте новую.
 
-</info>
+{/note}
 
 ## Подготовительные шаги
 
@@ -90,8 +90,8 @@
 1. Введите свои корпоративные аутентификационные данные. После успешной авторизации вы будете перенаправлены на главную страницу личного кабинета VK Cloud.
 1. Проверьте, что автоматически назначенная роль пользователя VK Cloud соответствует выбранной при [добавлении группы](#3_nastroyte_svyaz_grupp_i_roley_v_vk_cloud).
 
-<warn>
+{note:warn}
 
 Active Directory автоматически не синхронизируется с VK Cloud. После блокировки пользователя в Active Directory [удалите](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#udalenie_uchastnika) его из проектов в личном кабинете VK Cloud.
 
-</warn>
+{/note}

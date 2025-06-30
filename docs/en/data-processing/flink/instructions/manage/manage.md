@@ -50,11 +50,11 @@
    - Can contain only numbers, uppercase and lowercase Latin letters, characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `}`, `~`, `-`.
    - Must contain at least one uppercase and one lowercase Latin letter, at least one number, at least one character from the range above.
 
-   <info>
+   {note:info}
 
    You cannot recover the lost password.
 
-   </info>
+   {/note}
 
 1. Click the **Save** button.
 

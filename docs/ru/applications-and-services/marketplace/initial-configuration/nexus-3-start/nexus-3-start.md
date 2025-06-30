@@ -19,8 +19,8 @@
 1. В открывшемся окне введите логин `admin` и полученный по почте пароль `admin_password`.
 1. (Опционально) Пройдите чек-лист из [официальной документации](https://help.sonatype.com/repomanager3/installation-and-upgrades/post-install-checklist).
 
-<info>
+{note:info}
 
 Для расширенной конфигурации сервиса используйте официальную инструкцию [Sonatype Nexus Repository 3](https://help.sonatype.com/repomanager3).
 
-</info>
+{/note}

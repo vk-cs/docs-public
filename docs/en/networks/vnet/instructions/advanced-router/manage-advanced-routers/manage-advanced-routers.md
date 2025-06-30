@@ -36,9 +36,9 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
    - **Description**: an optional field.
    - **SNAT**: enable the option if you need to convert private IP addresses into public ones for access from the project network to the Internet. When you [add the router interface](../manage-interfaces#adding_interfaces_of_advanced_router) directed to an external network, SNAT is enabled automatically.
 
-      <warn>
+      {note:warn}
       SNAT is active only if the router is connected to an external network.
-      </warn>
+      {/note}
 
 1. Click the **Add** button.
 
@@ -66,9 +66,9 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
    - Edit the description of the router.
    - Enable or disable **SNAT**. Enabling the option allows you to convert private IP addresses into public ones for access from the project network to the Internet. When you [add the router interface](../manage-interfaces#adding_interfaces_of_advanced_router) directed to an external network, SNAT is enabled automatically.
 
-      <warn>
+      {note:warn}
       SNAT is active only if the router is connected to an external network.
-      </warn>
+      {/note}
 
 1. Click the **Save** button to complete the editing.
 

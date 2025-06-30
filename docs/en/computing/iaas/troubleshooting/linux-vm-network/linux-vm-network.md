@@ -86,11 +86,11 @@ Check that the network interface is configured correctly:
     Find in the output of the command the name of the interface for which the `link\ether` parameter matches the MAC address received earlier.
     In this example, it will be `ens3`.
 
-    <info>
+    {note:info}
 
     The interface name will vary for different Linux distributions.
 
-    </info>
+    {/note}
 
 3.  Execute the command by substituting the interface name received in the previous step into it:
 
@@ -467,11 +467,11 @@ If a firewall is configured on a virtual machine (for example, `iptables`, `ufw`
 
 Next, it will be shown how to temporarily disable all firewall rules, allowing all traffic. This will help to make sure that the problem is in the firewall.
 
-<warn>
+{note:warn}
 
 After the SSH connection problem is localized, enable the firewall rules back (with the necessary adjustments). If all traffic is allowed, the security of the VM will decrease.
 
-</warn>
+{/note}
 
 To check the firewall settings:
 
@@ -570,11 +570,11 @@ Incorrectly configured security groups can prevent SSH connection, even if there
 
 Next, it will be shown how to temporarily configure the firewall rules so as to allow all traffic. This will help to make sure that the problem is in the firewall.
 
-<warn>
+{note:warn}
 
 After the SSH connection problem is localized, re-configure the firewall rules (with the necessary adjustments). If all traffic is allowed, the security of the VM will decrease.
 
-</warn>
+{/note}
 
 To check the firewall settings:
 
@@ -614,11 +614,11 @@ To configure firewall rules again:
 
         If the selected security groups do not contain rules that allow outgoing traffic, also select the `default` security group. This group allows outgoing traffic. Otherwise, the virtual machine will not have access to the network.
 
-    <info>
+    {note:info}
 
     In order for the firewall to pass the traffic of an SSH service running on the standard port `22`, it is enough to select the rules `default` and `ssh` («only ssh allowed»).
 
-    </info>
+    {/note}
 
 ## 5. Contact technical support
 

@@ -20,13 +20,13 @@ In all the examples below, DB instances are created with the following propertie
 - [Configuration](/en/dbs/dbaas/concepts/work-configs) of the DB instance: **Single**.
 - External IP address: assigned.
 
-<warn>
+{note:warn}
 
 When creating MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1C database instances in **Cluster** [configuration](/en/dbs/dbaas/concepts/work-configs) a [service load balancer](/en/networks/balancing/concepts/load-balancer) will be created.
 
 Using a load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 Select one of the cluster creation examples and create a Terraform configuration file `main.tf` with the appropriate content:
 
@@ -223,11 +223,11 @@ Use one of the ways to set a password:
 
   When the configuration is applied, the password value is automatically loaded from the environment.
 
-<info>
+{note:info}
 
 If you do not set the password value, Terraform will require you to enter it in the console when applying the configuration.
 
-</info>
+{/note}
 
 {/cut}
 

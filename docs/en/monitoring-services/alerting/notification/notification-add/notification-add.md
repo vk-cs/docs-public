@@ -1,10 +1,10 @@
 To receive information about the occurrence of an incident, you must set the notification channel. The notification channel contains information about the recipient and sending methods.
 
-<info>
+{note:info}
 
 You can specify multiple notification channels. One channel can be used multiple times in multiple triggers.
 
-</info>
+{/note}
 
 To create a channel, go to the "Alerting" page in the "Monitoring" section.
 

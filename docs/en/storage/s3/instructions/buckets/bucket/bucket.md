@@ -40,10 +40,10 @@ To create a bucket in the VK Cloud panel:
 
 Deleting a bucket after cleaning it is possible in the general list of buckets of the Object Storage service. To delete one bucket, you can use the delete button against the bucket, and to delete several elements, you can select using the checkbox to the left of the buckets.
 
-<warn>
+{note:warn}
 
 The bucket with the Backup storage class cannot be deleted. You can delete the objects it contains through the backup service. Deletion of backups can be delayed, therefore, if there are backup objects in it, you should wait until the delete backup operation is completed.
 
-</warn>
+{/note}
 
 After deleting backups, the **Backup** bucket may be empty. It is required by Object Storage for further work with backup plans in the project.

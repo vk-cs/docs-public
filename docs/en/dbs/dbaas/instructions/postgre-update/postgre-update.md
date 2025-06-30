@@ -2,11 +2,11 @@ To get access to new PostgreSQL features, you need to upgrade your DBMS versions
 
 To upgrade PostgreSQL, use the [pg_upgrade](https://postgrespro.ru/docs/postgresql/13/pgupgrade) utility.
 
-<warn>
+{note:warn}
 
 A backup will be made before the update. Plan ahead for the upgrade because PostgreSQL will be unavailable at the time of the upgrade.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

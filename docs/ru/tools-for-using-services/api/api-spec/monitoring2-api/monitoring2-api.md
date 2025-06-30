@@ -27,10 +27,10 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/monitoring-services/monitorin
 
 {/cut}
 
-<info>
+{note:info}
 
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/monitoring2-api.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/monitoring2-api.json)

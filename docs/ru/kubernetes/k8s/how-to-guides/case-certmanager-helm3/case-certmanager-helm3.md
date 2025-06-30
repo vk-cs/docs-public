@@ -19,11 +19,11 @@
 
 1. Если у вас еще нет кластера Kubernetes, создайте его.
 
-   <info>
+   {note:info}
 
    Для экономии времени вы можете за несколько минут [создать кластер Kubernetes](../../../../kubernetes/k8s/instructions/create-cluster) в VK Cloud.
 
-   </info>
+   {/note}
 
 1. Определите версию кластера.
 
@@ -61,13 +61,13 @@
 
    Таблица совместимости версий `cert-manager` и Kubernetes [приведена в официальной документации cert-manager](https://cert-manager.io/docs/installation/supported-releases/).
 
-   <info>
+   {note:info}
 
    Далее будет устанавливаться `cert-manager` версии `1.11.3`, чтобы дополнительно продемонстрировать [обновление](#5_obnovite_cert_manager) до версии `1.12.3`.
 
    Вы можете выбрать любую подходящую вам версию. Скорректируйте приведенные ниже команды, чтобы они соответствовали выбранной версии.
 
-   </info>
+   {/note}
 
 ## 2. Установите cert-manager
 
@@ -285,11 +285,11 @@
 
 ## 4. (Опционально) Создайте резервную копию ресурсов cert-manager
 
-<info>
+{note:info}
 
 Создание резервной копии [рекомендовано](https://cert-manager.io/docs/tutorials/backup) в целях безопасности перед [обновлением](#5_obnovite_cert_manager) `cert-manager`.
 
-</info>
+{/note}
 
 Будет создана резервная копия ресурсов `Issuer`, `ClusterIssuer` и `Certificate`. В нее не входят:
 
@@ -297,11 +297,11 @@
 
 - Секреты, которые непосредственно хранят в себе данные сертификатов и в том числе содержат приватный ключ.
 
-  <warn>
+  {note:warn}
 
   Если при восстановлении из резервной копии для ресурса `Cerificate` не будет найдено соответствующего секрета, то [сертификат будет перевыпущен](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration).
 
-  </warn>
+  {/note}
 
 Чтобы создать резервную копию, выполните команду:
 
@@ -362,13 +362,13 @@ kubectl get -o yaml `
 
    Таблица совместимости версий `cert-manager` и Kubernetes [приведена в официальной документации cert-manager](https://cert-manager.io/docs/installation/supported-releases/).
 
-   <info>
+   {note:info}
 
    Далее будет выполнено обновление с версии `1.11.3` на версию `1.12.3`.
 
    Если ранее была установлена другая версия `cert-manager`, выберите нужную версию для обновления с учетом рекомендаций выше.
 
-   </info>
+   {/note}
 
 1. Обновите установленные в кластере CRDs.
 
@@ -448,11 +448,11 @@ kubectl get -o yaml `
    kubectl delete -f cert-manager-test-resources.yaml
    ```
 
-   <warn>
+   {note:warn}
 
    Будет удалено пространство имен `cert-manager-test` со всем содержимым, включая дополнительные ресурсы, автоматически созданные `cert-manager`.
 
-   </warn>
+   {/note}
 
 1. Если `cert-manager` был [установлен](#2_ustanovite_cert_manager) в тестовых целях и больше вам не нужен, удалите все связанные с ним ресурсы:
 

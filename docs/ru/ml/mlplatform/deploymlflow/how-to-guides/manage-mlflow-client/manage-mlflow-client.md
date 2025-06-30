@@ -9,11 +9,11 @@
    1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
    1. В подразделе **Инстансы ML Platform** нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса JupyterHub и выберите пункт **Перезагрузить**.
 
-<info>
+{note:info}
 
 Инстансы JupyterHub, MLflow и MLflow Deploy должны быть созданы в одной сети.
 
-</info>
+{/note}
 
 ## Подготовка ML-модели
 
@@ -130,11 +130,11 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 1. Задайте имя пользователя и пароль.
 
-   <info>
+   {note:info}
 
    Рекомендуется задавать реквизиты, отличные от учетных данных личного кабинета VK Cloud или параметров авторизации на инстансе JupyterHub.
 
-   </info>
+   {/note}
 
    ```console
    auth_value = "user:PasswordDA@dvv//!123$"

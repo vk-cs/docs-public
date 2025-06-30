@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Перед выполнением любой операции с кластером из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti_ispolzovaniya_terraform_dlya_upravleniya_servisom_cloud_containers).
 
-</warn>
+{/note}
 
 ## Запустить или остановить кластер
 
@@ -100,11 +100,11 @@
 
 Операцию можно выполнить только когда кластер запущен.
 
-<warn>
+{note:warn}
 
 После выполнения этой операции существующие публичные ключи на кластере будут удалены.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

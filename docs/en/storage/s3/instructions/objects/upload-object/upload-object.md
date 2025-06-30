@@ -6,11 +6,11 @@ You can upload any type of file - images, backups, data, movies, etc. - to the b
 
 To load objects, go to the created bucket in the "Buckets" section of the "Object Storage" service.
 
-<info>
+{note:info}
 
 To load folders through the VK Cloud Panel interface, they must be dragged into the loading window using the Drag & Drop function. You can drag and drop files to upload files or select them using the Select Files button. The drag and drop functionality is only supported for Chrome and Firefox browsers.
 
-</info>
+{/note}
 
 When loading a folder, Cloud Storage loads all files and subfolders from the specified folder into the bucket. It then assigns a key object name, which is a combination of the downloaded file name and the folder name. For example, if you download a folder named / images that contains two files, sample1.jpg and sample2.jpg, Cloud Storage downloads the files and then assigns the appropriate key names, images / sample1.jpg and images / sample2.jpg. Key names include the folder name as a prefix. The VK Cloud panel displays only the part of the key name that follows the last "/". For example, in the images folder, the images / sample1.jpg and images / sample2.jpg objects appear as sample1.jpg and sample2.jpg.
 

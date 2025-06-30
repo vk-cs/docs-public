@@ -68,11 +68,11 @@
 
 ## Deleting a group
 
-<warn>
+{note:warn}
 
 Deleting a group does not delete the service instances that are part of it.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

@@ -1,8 +1,8 @@
 1. [Create a user](../manage#create-users) for the instance or ask the instance owner to create and provide you with user credentials.
 
-    <err>
+    {note:err}
     Do not run an instance under an administrator account. If the administrator places the instance in an inoperative state, the instance cannot be restored.
-    </err>
+    {/note}
 
 1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances**.

@@ -2,13 +2,13 @@ All deductions and additions for projects are recorded in the VK Cloud managemen
 
 Expenses details are available to users with the [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of Owner, Superadministrator, Project administrator and Billing administrator.
 
-<warn>
+{note:warn}
 
 Deductions and additions for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) are tied to the Moscow Time Zone (GMT+3), in the Kazakhstan region —  to the Astana Time Zone (GMT+6).
 
 The same principle applies to [the formation of accounting documents](../../concepts/report).
 
-</warn>
+{/note}
 
 ## Viewing deductions and additions
 
@@ -20,11 +20,11 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 1. Go to **Detail** tab.
 
-   <warn>
+   {note:warn}
 
    Amounts on the tab are rounded to **two decimal places**. A similar principle applies for [services cost calculation](../../tariffication) and [accounting documents](../../concepts/report).
 
-   </warn>
+   {/note}
 
 1. If necessary, set filters on the displayed records:
 

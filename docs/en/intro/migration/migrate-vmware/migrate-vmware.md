@@ -7,11 +7,11 @@ The VMware virtual machine must meet the following requirements:
 - The current user has administrator rights.
 - At least one disk is connected to the VM.
 
-<info>
+{note:info}
 
 To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or transfer data to a new VMware VM with BIOS emulation.
 
-</info>
+{/note}
 
 ## 2. Prepare the VM for migration
 
@@ -71,11 +71,11 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
 1. Stop the VM.
 
-   <info>
+   {note:info}
 
    If, after removing VMware Tools, the connection to the VM via SSH or RDP does not work, use the VMware console.
 
-   </info>
+   {/note}
 
 2. Select the required VM and export to the format `.ovf`.
 

@@ -5,11 +5,11 @@
    - If you want to create only full backups, select one or more weekdays in the **Days of creating a full backup** field and specify the time.
    - If you want to create both full and incremental backups, enable the **Enable incremental backups** option, select **Full backup create day** and specify the time. On other weekdays, incremental backups will be created.
 
-      <info>
+      {note:info}
 
       The **Enable incremental backups** option allows you to speed up the creation of backup copies, reduce their size and storage costs, but the time to restore a VM from such a copy will be longer.
 
-      </info>
+      {/note}
 
 1. Select one of the [approaches to storing](/en/storage/backups/concepts/retention-policy) full backups: GFS strategy or limiting the number of backups. Use the appropriate option: **Enable full copy storage strategy (GFS)** or **Max. number of full copies**.
 1. Specify parameters for the selected approach.

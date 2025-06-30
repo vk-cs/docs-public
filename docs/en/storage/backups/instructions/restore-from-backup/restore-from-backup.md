@@ -47,17 +47,17 @@
 
         - For restoring to a new instance, specify the required parameters. The remaining parameters will be restored from the backup copy.
 
-            <warn>
+            {note:warn}
 
             Virtual machines created in a private network will not work when restored to an external network: `ext-net`.
 
-            </warn>
+            {/note}
 
         - To restore to the original VM, you do not need to specify any parameters. The disks of the target VM will be restored without changing their properties. The VM will be rebooted.
 
     1. Click **Restore instance**.
 
-    <info>
+    {note:info}
 
     The speed of restoring a VM from a backup depends on:
 
@@ -65,7 +65,7 @@
     - Disk type — if the original VM had an SSD disk, recovery to a VM with an HDD disk will be slower.
     - Restoring type — restoring to the original VM takes less time.
 
-    </info>
+    {/note}
 
     </tabpanel>
     <tabpanel>
@@ -148,8 +148,8 @@
 
 As a result of the recovery, a new disk will be created. It will be attached to a VM if the corresponding option has been selected. The old disk will not be deleted.
 
-<warn>
+{note:warn}
 
 If you no longer need the old disk, manually [delete](/en/computing/iaas/instructions/volumes#deleting_disk) it to save resources.
 
-</warn>
+{/note}

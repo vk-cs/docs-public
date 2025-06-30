@@ -20,11 +20,11 @@
 
 1. (Опционально) [Создайте](/ru/storage/s3/instructions/buckets/create-bucket) дополнительные бакеты для хранения файлов или зависимостей.
 
-    <info>
+    {note:info}
 
     По умолчанию кластер Cloud Spark имеет доступ к бакету, имя которого указано в параметре `s3_bucket_name`. Получить это имя можно с помощью метода [get_clusters](../../ml-platform-library/library-reference/clusters#get_clusters) или в разделе **ML Platform → Spark в k8s** личного кабинета VK Cloud на странице свойств кластера Cloud Spark.
 
-    </info>
+    {/note}
 
 1. (Опционально) [Предоставьте](../../instructions/buckets) кластеру Cloud Spark доступ к дополнительно созданным бакетам.
 1. (Опционально) [Загрузите](/ru/storage/s3/instructions/objects/upload-object) в бакеты файлы и зависимости, необходимые для выполнения задания Spark.
@@ -173,8 +173,8 @@
     </tabpanel>
     </tabs>
 
-<info>
+{note:info}
 
 Подробные примеры запуска заданий Spark приведены в разделах [Базовая работа с заданиями Spark](../../how-to-guides/submit-basic-job-pi) и [Продвинутая работа с заданиями Spark](../../how-to-guides/submit-advanced-job-clickhouse).
 
-</info>
+{/note}

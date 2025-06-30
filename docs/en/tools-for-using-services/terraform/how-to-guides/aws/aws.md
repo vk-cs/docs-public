@@ -115,9 +115,9 @@ Here:
     - IP addresses and similar formatting (for example, `192.168.5.4`), as this may cause confusion between the bucket name and the IP address of the site.
     - `xn--` at the beginning: everything that comes after will be perceived by the browser as [Punycode](https://ru.wikipedia.org/wiki/Punycode).
 
-    <warn>
+    {note:warn}
     Once a bucket is created, its name cannot be changed.
-    </warn>
+    {/note}
 
   - `bucket = aws_s3_bucket.example-bucket.bucket` — if you create an object, specify here the resource that creates the bucket. In this example, the object will be placed in `example-bucket`, which will be created by the `aws_s3_bucket` resource.
 
@@ -165,11 +165,11 @@ Here:
 
 The example below will grant read permissions to a bucket ACL by user ID and PID.
 
-<info>
+{note:info}
 
 It is not possible to specify an ACL for a single Cloud Storage [account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") from another project.
 
-</info>
+{/note}
 
 Add the following content to the `main.tf` file:
 

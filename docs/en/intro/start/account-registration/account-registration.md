@@ -5,11 +5,11 @@ These instructions will help you to register in VK Cloud. Access to VK Cloud ser
 - [phone number confirmed](#confirm_phone)
 - [card linked to the project](#bind_card)
 
-<info>
+{note:info}
 
 To join an existing VK Cloud project, follow the instructions in [Join a project by invitation](/en/tools-for-using-services/account/instructions/project-invitation).
 
-</info>
+{/note}
 
 ## {heading(1. Create an account)[id=create_account]}
 
@@ -22,11 +22,11 @@ To join an existing VK Cloud project, follow the instructions in [Join a project
 
       The maximum length of email address is 320 characters.
 
-      <warn>
+      {note:warn}
 
       You cannot use the `+` character in the address.
 
-      </warn>
+      {/note}
 
     - **Password**: a new password.
 
@@ -47,21 +47,21 @@ Wait for an email from VK Cloud with the "Complete your registration now" subjec
 
 If necessary, request the email repeatedly by clicking **Send confirmation again** in the registration form.
 
-<info>
+{note:info}
 
 If the email is not in your **Inbox**, check your **Spam** folder.
 
-</info>
+{/note}
 
 ## {heading(3. Confirm your phone)[id=confirm_phone]}
 
-<warn>
+{note:warn}
 
 One number can only be assigned to one account.
 
 For the Moscow [region](/en/tools-for-using-services/account/concepts/regions), only phone numbers registered in the Russian Federation (starting with +7) are accepted.
 
-</warn>
+{/note}
 
 1. In the **Phone Number** field, enter the number in the specified format and press **Confirm**.
 1. Call the number on the screen from your phone number.
@@ -73,11 +73,11 @@ To complete registration, bind the card of the [supported payment system](/en/in
 
 1. In the card binding window, specify its details in the same fields: number, month and year, CV code.
 
-   <warn>
+   {note:warn}
 
    A virtual card cannot be linked to the project during registration.
 
-   </warn>
+   {/note}
 
 1. Click the **Add card** button.
 

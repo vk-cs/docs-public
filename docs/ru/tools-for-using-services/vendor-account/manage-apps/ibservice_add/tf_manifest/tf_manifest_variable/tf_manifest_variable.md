@@ -43,11 +43,11 @@
 |===
 {/caption}
 
-<warn>
+{note:warn}
 
 При объявлении переменной укажите тип в параметре `type`.
 
-</warn>
+{/note}
 
 {caption(Пример объявления специальных переменных)[align=left;position=above]}
 ```hcl

@@ -358,11 +358,11 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <warn>
+   {note:warn}
 
    Together with the services, their respective balancers will be removed. This process can take a long time.
 
-   </warn>
+   {/note}
 
    <tabs>
    <tablist>

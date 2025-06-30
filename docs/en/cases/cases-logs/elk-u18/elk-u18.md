@@ -109,13 +109,13 @@ To install and perform the initial configuration of Elasticsearch:
          network.host: localhost
          ```
 
-         <info>
+         {note:info}
 
          **Note**
 
          To search within a file, use the keyboard shortcut CTRL+W.
 
-         </info>
+         {/note}
 
          After editing the `.yml` config file, make sure it doesn't have extra spaces and/or indents!
 
@@ -149,13 +149,13 @@ To install and perform the initial configuration of Elasticsearch:
 
          ![](assets/1559885194663-1559885194663.jpeg)
 
-         <info>
+         {note:info}
 
          **Note**
 
          Details about Xms and Xmx parameters [read here](https://docs.oracle.com/cd/E15523_01/web.1111/e13814/jvm_tuning.htm#PERFM161). For machines with low RAM, we recommend limiting the amount of memory used by the JVM.
 
-         </info>
+         {/note}
 
       1. Specify the required values ​​in the `-Xms1g` and `-Xmx1g` parameters. For example, for an operating system with 1 GB of RAM, you can specify:
 
@@ -337,13 +337,13 @@ To install and perform the initial setup of Logstash:
 
 1. Create and configure a configuration file containing rules for receiving information from beats agents. For this:
 
-   <info>
+   {note:info}
 
    **Note**
 
    The following is one of the possible settings. For more information [read here](https://www.elastic.co/guide/en/logstash/7.2/logstash-config-for-filebeat-modules.html#parsing-system).
 
-   </info>
+   {/note}
 
    1. Create the file `02-beats-input.conf` by running the command:
 
@@ -495,13 +495,13 @@ To install Filebeat:
    sudo sudo filebeat modules enable logstash
    ```
 
-   <info>
+   {note:info}
 
    **Note**
 
    Learn more about filebeat modules [read here](https://www.elastic.co/guide/en/beats/filebeat/6.4/filebeat-module-system.html).
 
-   </info>
+   {/note}
 
 1. To view the included modules, run the command:
 
@@ -515,13 +515,13 @@ To install Filebeat:
    sudo filebeat setup --template -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'
    ```
 
-   <info>
+   {note:info}
 
    **Note**
 
    Elasticsearch indexes are a collection of documents that have similar characteristics. They are identified by names that are used to refer to indexes when performing various index operations. The index template is loaded automatically when new indexes are created.
 
-   </info>
+   {/note}
 
 1. Dashboards allow you to visualize the Filebeat data sent to Kibana. To enable the dashboard, run the command:
 

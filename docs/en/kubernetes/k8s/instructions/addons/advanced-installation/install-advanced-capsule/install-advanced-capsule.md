@@ -37,11 +37,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - namespace where the add-on will be installed
       - [add-on settings code](#editing_addon_settings_code_during_installation)
 
-        <warn>
+        {note:warn}
 
         An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-        </warn>
+        {/note}
 
    1. Click the **Install addon** button.
 
@@ -162,11 +162,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -204,13 +204,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 Editing the add-on settings code is not supported during the quick installation.
 
 If this is not suitable for you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
-</info>
+{/note}
 
 1. Install the add-on:
 
@@ -278,10 +278,10 @@ Editing the add-on code is applicable for standard installation and installation
 
 The full add-on setup code along with the description of the fields is available on [GitHub](https://github.com/projectcapsule/capsule/blob/main/charts/capsule/values.yaml).
 
-<err>
+{note:err}
 
 Do not delete the `podAnnotations.timestamp` fields or the values set in them. These fields are required for correct installation and operation of the add-on.
 
-</err>
+{/note}
 
 After editing the add-on code [continue installing the add-on](#installing_addon).

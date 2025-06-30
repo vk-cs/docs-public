@@ -4,11 +4,11 @@ The region is assigned to each [project](../projects) automatically and depends 
 
 You can create objects (for example, virtual machines) only in the availability zone of the region in which the project was created.
 
-<warn>
+{note:warn}
 
 All regions have a single user base. It is not possible to register accounts with the same mail in different regions.
 
-</warn>
+{/note}
 
 The following regions are available:
 
@@ -25,8 +25,8 @@ Projects created in different regions have different:
 - addresses of [VK Cloud API endpoints](/en/tools-for-using-services/api/rest-api);
 - the name of the region in the configuration files [openrc](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) and [Terraform](/en/tools-for-using-services/terraform/quick-start).
 
-<warn>
+{note:warn}
 
 It is not possible to combine virtual networks of projects from different regions using standard methods. Network connectivity between such projects can be configured using [VPN tunnel](/en/networks/vnet/how-to-guides/vpn-tunnel).
 
-</warn>
+{/note}

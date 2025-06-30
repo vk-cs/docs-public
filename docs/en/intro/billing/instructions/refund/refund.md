@@ -9,11 +9,11 @@
 
 - The refund is possible only in the project currency.
 
-<info>
+{note:info}
 
 The refund is available regardless of how long ago the payment account balance of the project was replenished.
 
-</info>
+{/note}
 
 ## Making a refund for individuals
 
@@ -39,11 +39,11 @@ The refund is available regardless of how long ago the payment account balance o
 
    - If the refund was transferred from a card, enter the first 6 digits and the last 4 digits of this card.
 
-      <info>
+      {note:info}
 
       The refund can be made to the card account even if the card is inactive.
 
-      </info>
+      {/note}
 
    - If the payment account balance was replenished using other payment methods (for example, YooMoney), specify the details of the wallet or means of payment in the request text.
 

@@ -1,12 +1,12 @@
 In this article, we will look at how to replicate and upgrade MongoDB on Ubuntu 18.04.
 
-<info>
+{note:info}
 
 You can learn about the hardware configuration, as well as how to install and configure MongoDB in the article [Installing and configuring MongoDB on Ubuntu](/en/dbs/dbaas/instructions/create/create-single-replica).
 
-</info>
+{/note}
 
-<info>
+{note:info}
 
 In the description below, we use the following server names and IP addresses:
 
@@ -14,7 +14,7 @@ In the description below, we use the following server names and IP addresses:
 - server 2 - mongo2.testdomain.com (10.0.0.3);
 - server 3 - mongo1.testdomain.com (10.0.0.4).
 
-</info>
+{/note}
 
 ## Set up ReplicaSet MongoDB
 

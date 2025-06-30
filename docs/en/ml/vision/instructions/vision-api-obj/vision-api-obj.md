@@ -51,11 +51,11 @@ Possible values ​​for `mode`:
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images.
 
-<warn>
+{note:warn}
 
 The method is subject to [restrictions](../../concepts/vision-limits#image_processing)
 
-</warn>
+{/note}
 
 ## Request example
 

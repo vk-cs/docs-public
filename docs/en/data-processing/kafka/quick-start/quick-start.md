@@ -5,11 +5,11 @@ After completing all the steps of a quick start, you will:
 1. Create an instance of Cloud Kafka in the **Single** configuration.
 1. Learn how to send messages to a [topic](https://kafka.apache.org/documentation/#intro_concepts_and_terms) and receive messages from the topic of the Cloud Kafka instance.
 
-<warn>
+{note:warn}
 
 The instance of Cloud Kafka is [charged](../tariffication) and consumes computing resources. After passing the quick start [delete the service instance](#delete_unused_resources) if you don't need it anymore.
 
-</warn>
+{/note}
 
 ## 1. Create an instance of the Cloud Kafka service
 
@@ -45,11 +45,11 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
    1. **Логин администратора для доступа к Kafka**: for example, `kafkaadmin`.
    1. **Пароль администратора для доступа к Kafka**: click the **Generate** button and save the received password.
 
-      <err>
+      {note:err}
 
       The password cannot be restored.
 
-      </err>
+      {/note}
 
    1. Click the **Create** button.
 
@@ -120,13 +120,13 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
    1. Go to the **General information** tab.
    1. Write down the address from the **Bootstrap** parameter.
 
-   <info>
+   {note:info}
 
    Below, the address is used as an example `kafka-bootstrap.example.com:9093`.
 
    Replace it with the real address of the bootstrap server in the commands below.
 
-   </info>
+   {/note}
 
 ## 3. Send a message to the topic and receive it
 

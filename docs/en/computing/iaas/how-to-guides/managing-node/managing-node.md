@@ -5,7 +5,7 @@ The distribution of server groups of a single service or application on a cluste
 
 VK Cloud supports [four server group allocation policies](../../concepts/about#server_group), for `soft` policies, support for the `compute-api` version above 2.15 is required.
 
-<warn>
+{note:warn}
 
 Valid operations for server groups:
 
@@ -17,7 +17,7 @@ Invalid operations for server groups:
 - add an existing server to the group;
 - delete a group of servers without deleting all its servers.
 
-</warn>
+{/note}
 
 To define the rules for distributing server groups, specify the group in the instance properties:
 
@@ -47,8 +47,8 @@ To define the rules for distributing server groups, specify the group in the ins
 
 1. Wait for the VM creation to finish. Make sure that the deployed VMs have been successfully created and are in the status `ACTIVE`.
 
-<info>
+{note:info}
 
 If no compute nodes are found that meet the constraints, resource creation requests will fail.
 
-</info>
+{/note}

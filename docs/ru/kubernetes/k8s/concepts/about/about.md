@@ -15,11 +15,11 @@
   - Создание событийных (event-triggered) обработчиков данных.
   - Интеграция кластеров Kubernetes и данных с другими [сервисами платформы VK Cloud для машинного обучения](/ru/ml).
 
-<info>
+{note:info}
 
 Дистрибутив Kubernetes от VK Cloud получил сертификат [Certified Kubernetes — Hosted](https://www.cncf.io/certification/software-conformance/#logos) от CNCF ([Cloud Native Computing Foundation](https://www.cncf.io/)). Это означает, что дистрибутив проверили на надежность и соответствие стандартам, он отвечает всем функциональным требованиям сообщества и совместим со стандартным [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/). VK Cloud — единственный в России облачный провайдер, получивший такую сертификацию.
 
-</info>
+{/note}
 
 ## Возможности сервиса
 
@@ -39,11 +39,11 @@
 
 - Плавное обновление (rolling update) кластеров в один клик без простоя. Это применимо как для минорных, так и для мажорных версий Kubernetes.
 
-  <info>
+  {note:info}
 
   Обновления кластеров доступны, начиная с версии кластера `1.17` и выше.
 
-  </info>
+  {/note}
 
 - Обеспечение безопасности на всех этапах работы с кластером:
 

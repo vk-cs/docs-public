@@ -12,13 +12,13 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
 1. Perform the scaling.
 
-   <warn>
+   {note:warn}
 
    During the scaling process, the virtual machines hosting the master nodes will be restarted sequentially.
 
    If the cluster [contains one master node](../../concepts/architecture#cluster_topologies), then the Kubernetes API will be unavailable during scaling.
 
-   </warn>
+   {/note}
 
    <tabs>
    <tablist>
@@ -34,13 +34,13 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Change type of master virtual machine**.
    1. Select the required VM template from the drop-down list.
 
-      <info>
+      {note:info}
 
       Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
 
       See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
-      </info>
+      {/note}
 
    1. Click the **Save** button.
 
@@ -117,13 +117,13 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
 1. Perform the scaling.
 
-   <warn>
+   {note:warn}
 
    During the scaling process, the virtual machines hosting the worker nodes will be restarted sequentially.
 
    Workloads for which replication has not been configured will not be available during scaling.
 
-   </warn>
+   {/note}
 
    <tabs>
    <tablist>
@@ -140,13 +140,13 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Change type of master virtual machine**.
    1. Select the required VM template from the drop-down list.
 
-      <info>
+      {note:info}
 
       Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
 
       See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
-      </info>
+      {/note}
 
    1. Click the **Save** button.
 
