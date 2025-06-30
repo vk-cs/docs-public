@@ -5,13 +5,13 @@
 - Шаблон ограничений и соответствующее ему ограничение. Оно будет разрешать загрузку образов только из репозитория Docker Hub.
 - Несколько ресурсов Kubernetes для проверки работы ограничения.
 
-<info>
+{note:info}
 
 В кластерах Kubernetes VK Cloud версий 1.23 и выше можно [создать](../../../instructions/manage-security#dobavlenie_politiki_bezopasnosti) нужную [политику безопасности](../../../concepts/security-policies#razreshennye_repozitorii_bb3393ca) через личный кабинет.
 
 В этом случае работать с ресурсами Gatekeeper напрямую не обязательно.
 
-</info>
+{/note}
 
 ## Подготовительные шаги
 

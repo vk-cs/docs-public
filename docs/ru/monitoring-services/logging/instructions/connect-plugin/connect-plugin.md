@@ -33,14 +33,14 @@
 
    После установки появится агент сбора логов `vkcloudlogs-fluent-bit.service`. По умолчанию он выключен.
 
-   <info>
+   {note:info}
 
    Агент `vkcloudlogs-fluent-bit.service` работает с файлами:
 
    - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit.conf` — основной файл конфигурации агента с описаниями источников и путей назначения для логирования. Подробнее в разделе [Плагин логирования](../../concepts/logging-plugin) и в [официальной документации Fluent Bit](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode).
    - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugins.conf` — конфигурация подключения плагина.
 
-   </info>
+   {/note}
 
 1. Настройте плагин для отправки логов в сервис Cloud Logging.
 

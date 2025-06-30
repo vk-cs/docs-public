@@ -70,11 +70,11 @@ To launch an instance:
 
 This is a group operation: if necessary, you can reboot several instances at once by selecting them with checkboxes.
 
-<info>
+{note:info}
 
 A reboot assumes a graceful shutdown of the operating system of the VM instance.
 
-</info>
+{/note}
 
 To reboot an instance:
 
@@ -90,11 +90,11 @@ To reboot an instance:
 
 If the instance is not responding, use a force reboot.
 
-<warn>
+{note:warn}
 
 A forced instance reboot corresponds to power cycling. Unsaved data may be lost.
 
-</warn>
+{/note}
 
 To force reboot an instance:
 
@@ -139,8 +139,8 @@ This is a group operation: if necessary, you can delete several instances at onc
     - Set the checkbox for the instance, then click the **Delete** button above the table.
 1. Confirm the action.
 
-<info>
+{note:info}
 
 If the JupyterHub instance was associated with MLflow, first [delete the MLflow instance](/en/ml/mlplatform/mlflow/instructions/manage#delete).
 
-</info>
+{/note}

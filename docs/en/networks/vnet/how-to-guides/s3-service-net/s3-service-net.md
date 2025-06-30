@@ -4,11 +4,11 @@ The article shows an example of setting up a service network to access Cloud Sto
 
 To simplify the setup, the VM will be connected to a public network to have access via SSH. Connection to the service network can be configured without SSH access. In this case, all settings are made via the VNC console.
 
-<info>
+{note:info}
 
 If you configure a connection to the service network via Direct Connect, access to the VM via SSH is available without a public network.
 
-</info>
+{/note}
 
 ## Before you start
 

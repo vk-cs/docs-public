@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 Additional project settings are available in [VK Cloud  Management Console](/en/tools-for-using-services/account/instructions/project-settings/manage).
 
-</info>
+{/note}
 
 ## Getting project ID
 

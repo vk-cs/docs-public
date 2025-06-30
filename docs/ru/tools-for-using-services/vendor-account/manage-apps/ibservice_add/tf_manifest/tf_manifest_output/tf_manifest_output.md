@@ -83,8 +83,8 @@
    ```
    {/caption}
 
-   <err>
+   {note:err}
 
    Выводить закрытый SSH-ключ в `output` без атрибута `sensitive` запрещено.
 
-   </err>
+   {/note}

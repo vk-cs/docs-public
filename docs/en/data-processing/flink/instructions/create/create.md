@@ -52,11 +52,11 @@ You can create a Cloud Flink instance in one of two configurations:
       - Can contain only numbers, uppercase and lowercase Latin letters, characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `}`, `~`, `-`.
       - Must contain at least one uppercase and one lowercase Latin letter, at least one number, at least one character from the range above.
       
-      <info>
+      {note:info}
 
       You cannot recover the lost password, but you can [change](../manage#change_password) it to a new one.
 
-      </info>
+      {/note}
 
    1. Click the **Create** button.
 
@@ -141,11 +141,11 @@ You can create a Cloud Flink instance in one of two configurations:
       - Can contain only numbers, uppercase and lowercase Latin letters, characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `}`, `~`, `-`.
       - Must contain at least one uppercase and one lowercase Latin letter, at least one number, at least one character from the range above.
 
-      <info>
+      {note:info}
 
       You cannot recover lost password, but you can [change](../manage#change_password) it to a new one.
 
-      </info>
+      {/note}
 
    1. Click the **Create** button.
 

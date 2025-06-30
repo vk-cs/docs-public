@@ -50,14 +50,14 @@
 
 * Секция `service_binding` описывает создание сервисных привязок.
 
-<warn>
+{note:warn}
 
 В рамках одного тарифного плана могут быть описаны:
 
 * или только секции `service_instance.create` и `service_instance.update` (обе или только одна);
 * или только секция `service_instance.resource_usages`.
 
-</warn>
+{/note}
 
 Все секции внутри `schemas` являются обязательными для объявления в JSON-файле. Секции могут быть пустыми.
 

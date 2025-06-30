@@ -9,11 +9,11 @@
     * **Тип виртуальной машины**: выберите в списке `STD-3 (Ice Lake) 4 vcpu, 16 Gb RAM`, либо тип, указанный при запросе ресурса.
     * **Тип диска**: по умолчанию выбрано значение `SSD`. Для получения максимальных значений производительности выберите тип [High-IOPS](/ru/computing/iaas/concepts/data-storage/volume-sla#high_iops_ssd) или [Low Latency NVME](/ru/computing/iaas/concepts/data-storage/volume-sla#low_latency_nvme).
 
-       <info>
+       {note:info}
 
        Чтобы создать ВМ с типом диска Low Latency NVME, обратитесь в [техническую поддержку](/ru/contacts) или к вашему менеджеру по работе с клиентами от VK CLoud.
 
-       </info>
+       {/note}
 
     * **Размер диска**: по умолчанию выбрано значение `256 ГБ`. Для получения максимальных значений производительности рекомендуется выбрать `1500 ГБ` при условии выбора в поле **Тип диска** значений `High-IOPS` или `Low Latency NVME`. Подробнее - в разделе о [производительности дисков](/ru/computing/iaas/concepts/data-storage/volume-sla).
     * **Операционная система**: выберите `Ubuntu 22.04 LTS`.

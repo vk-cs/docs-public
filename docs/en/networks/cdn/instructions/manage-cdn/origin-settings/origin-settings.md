@@ -109,11 +109,11 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-<info>
+{note:info}
 
 To edit or to add an origin group use methods that work with origin groups.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
@@ -198,21 +198,21 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 </tabpanel>
 </tabs>
 
-<warn>
+{note:warn}
 
 After making changes to the option, [clear the CDN resource cache](../content-settings#clearing_cache).
 
-</warn>
+{/note}
 
 ## {heading(Activating shielding)[id=shielding]}
 
 Origin shielding helps to protect the origin from high loads, using a precache server. The precache server collects all user requests and sends them one by one to the origin if the required content is not in the cache of the precache server itself.
 
-<info>
+{note:info}
 
 Activating origin shielding increases the consumption of total CDN traffic.
 
-</info>
+{/note}
 
 To enable origin shielding:
 

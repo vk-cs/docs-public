@@ -98,11 +98,11 @@ The VNC console is available on the virtual machine page in the section **Cloud 
 
 Make sure you are using the latest version of the browser. Clear the cache if necessary.
 
-<info>
+{note:info}
 
 The usual keyboard shortcuts, audio transmission and clipboard are not available in the console.
 
-</info>
+{/note}
 
 {/cut}
 
@@ -134,11 +134,11 @@ Billing iteration occurs once an hour — during this time, the calculation of t
 
 You can [assign an existing](/en/networks/vnet/instructions/ip/floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/instructions/ip/floating-ip#adding_floating_ip_address_to_the_project) address manually.
 
-<warn>
+{note:warn}
 
 The assignment of a new floating IP address occurs randomly.
 
-</warn>
+{/note}
 
 {/cut}
 
@@ -230,11 +230,11 @@ If these factors are missing, collect disk performance statistics using one of t
 
 Compare the obtained indicators with the [guaranteed disk performance](../concepts/volume-sla) provided by the VK Cloud platform. If there are significant deviations, contact [technical support](mailto:support@mcs.mail.ru).
 
-<info>
+{note:info}
 
 To increase performance, you can [increase the size](../instructions/volumes#increasing_disk_size_with_rebooting) or [change](../instructions/volumes#changing_disk_type) disk type.
 
-</info>
+{/note}
 
 {/cut}
 

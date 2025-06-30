@@ -57,11 +57,11 @@ DNS zone is a logical association of domain names of your resources, containing 
 
    - **DNS zone**: the name of the zone being created, for example, the domain that was previously purchased.
 
-     <info>
+     {note:info}
 
      The DNS zone name must contain at least one dot, must not end with a dot or digits.
 
-     </info>
+     {/note}
 
    - **Contact email**: the mail of the zone administrator.
    - **Time to expire**: the time (in seconds) after which the secondary NS server stops responding to requests for this zone if the primary NS server does not respond. The value must be greater than the sum in the fields **Time to refresh** and **Time to retry**.
@@ -80,11 +80,11 @@ Use the method `POST /v2/dns/` from the specification in [API documentation](/ru
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 For most providers, it is possible to delegate zone management independently. If you have any questions about how to do this, contact the owner of [specified](https://msk.cloud.vk.com/app/services/dns/list) domain.
 
-</info>
+{/note}
 
 ## Editing a zone
 
@@ -118,19 +118,19 @@ A subzone can be created:
 - In the same project where the main zone is located. This approach is used to separate the resource records of the subzone from the records of the main zone.
 - From a third-party DNS provider.
 
-<warn>
+{note:warn}
 
 You cannot create a sub-zone for a zone in another project.
 
-</warn>
+{/note}
 
 To create a subzone in the VK Cloud project, [create](#adding_resource_records) two NS resource records with the name of the subzone, re-delegating the subzone to the VK Cloud DNS servers.
 
-<info>
+{note:info}
 
 If you want to create a subzone from a third-party provider, then the created NS records will have to point to the DNS servers of the third-party provider.
 
-</info>
+{/note}
 
 After creating NS records, you can create a zone for a delegated subdomain.
 

@@ -9,11 +9,11 @@ Will not be deleted:
 - VDI service network connected to VPN;
 - networks created by the user.
 
-<err>
+{note:err}
 
 It is impossible to cancel the deletion operation!
 
-</err>
+{/note}
 
 To remove infrastructure and settings:
 

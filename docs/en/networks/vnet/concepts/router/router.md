@@ -1,10 +1,10 @@
-<info>
+{note:info}
 
 The ability to exchange traffic in subnets is affected not only by network topology, but also by firewall security groups.
 
 To make it easier to explain how routers work, it is further assumed that the firewall lets all traffic through.
 
-</info>
+{/note}
 
 Routers are used to organize traffic exchange between subnets. There are two types of routers in VK Cloud:
 
@@ -16,11 +16,11 @@ Routers are used to organize traffic exchange between subnets. There are two typ
 
   It is used if a network junction is created between VK Cloud and the remote site via the Cloud Direct Connect service.
 
-  <info>
+  {note:info}
 
   The Cloud Direct Connect service is connected [on request](mailto:support@mcs.mail.ru).
 
-  </info>
+  {/note}
 
   [Sprut SDN](../architecture#sdns_used) is required for an advanced router to operate. Any VK Cloud subnets can be connected to such a router, regardless of which SDN these subnets belong to.
 
@@ -75,11 +75,11 @@ Different types of routers can be used within a single VK Cloud subnet.
   - Hold timer: 240 seconds.
   - Keepalive timer: 80 seconds (hold timer / 3).
 
-  <info>
+  {note:info}
 
   The mismatch of these timers values on both BGP routers does not affect the forming of neighbor relationships.
 
-  </info>
+  {/note}
 
 - **Organization of a VPN tunnel between remote networks and networks in projects with SDN Sprut.**
 

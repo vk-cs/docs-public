@@ -54,11 +54,11 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
       - the namespace where the add-on will be installed
       - the [add-on settings code](#editing_addon_code)
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
       
    1. Click the **Install addon** button.
 
@@ -97,12 +97,12 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
 
 The full addon setup code with descriptions is available on [GitHub](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes).
 
-<err>
+{note:err}
 
 Do not delete the `"mcs.mail.ru/gpu-exists"` parameter and its `true` value.
 
 The parameter is responsible for installing the nfd-worker plugin only on nodes with a GPU. If you delete the parameter and value, nfd-worker and its accompanying plugins will be installed on all cluster nodes, which will lead to increased resource consumption.
 
-</err>
+{/note}
 
 After editing the code, [continue installing the addon](#installing_addon).

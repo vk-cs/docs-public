@@ -21,8 +21,8 @@ VK Cloud предоставляет разные конфигурации кла
 - Arenadata Hadoop Enterprise Limited,
 - Arenadata Hadoop Enterprise Test.
 
-<warn>
+{note:warn}
 
 Использование лицензий тарифицируется.
 
-</warn>
+{/note}

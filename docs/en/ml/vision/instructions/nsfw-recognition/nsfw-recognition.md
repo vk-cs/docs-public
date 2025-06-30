@@ -13,11 +13,11 @@ Authorization data is passed in the query string:
 | oauth_token    | string | OAuth2 access token (required non-empty) |
 | oauth_provider | string | OAuth2 provider (required non-empty)     |
 
-<info>
+{note:info}
 
 Obtaining an access token, as well as supported OAuth2 providers are given in the article [Authorization](../../quick-start/auth-vision).
 
-</info>
+{/note}
 
 Request parameters are passed in JSON format in the request body:
 
@@ -28,11 +28,11 @@ Request parameters are passed in JSON format in the request body:
 |  images        | array  | ![](/ru/assets/check.svg "inline")            | Metadata of transmitted images                           |
 |   name         | string | ![](/ru/assets/check.svg "inline")            | File names for matching files in the request and response|
 
-<warn>
+{note:warn}
 
 The method is subject to [restrictions](../../concepts/vision-limits#image_processing).
 
-</warn>
+{/note}
 
 ## Request example
 

@@ -358,11 +358,11 @@ For other roles these operations are unavailable.
 
 For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation) (`admin`, `edit`, or `view`) assigned to the user.
 
-<info>
+{note:info}
 
 Some of the actions below are available only in the certain state of a cluster. For example, installing or deleting an add-on is possible only when a cluster is running.
 
-</info>
+{/note}
 
 [cols="2,1,1,1,1"]
 |===

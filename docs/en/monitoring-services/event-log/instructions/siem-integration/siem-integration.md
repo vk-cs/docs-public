@@ -22,11 +22,11 @@ In your management console, you can change [parameters](#edit_siem_connection) a
 1. Click the **Create** button.
 1. Wait for the connection check to complete and click the **Activate** or **Save as inactive** button.
 
-<info>
+{note:info}
 
 Only one SIEM connection can be active. If you activate a new connection, the previous one will be stopped. You can [activate](#activate_siem_connection) the stopped connection later.
 
-</info>
+{/note}
 
 ## {heading(Editing SIEM connection settings)[id=edit_siem_connection]}
 
@@ -46,11 +46,11 @@ A page with the settings of the selected SIEM connection will open.
 1. Click the **Create** button.
 1. Wait for the connection check to complete and click the **Activate** or **Save as inactive** button.
 
-<info>
+{note:info}
 
 Only one SIEM connection can be active. If you activate a new connection, the previous one will be stopped. You can [activate](#activate_siem_connection) the stopped connection later.
 
-</info>
+{/note}
 
 ## {heading(Activating or disactivating the SIEM connection)[id=activate_siem_connection]}
 

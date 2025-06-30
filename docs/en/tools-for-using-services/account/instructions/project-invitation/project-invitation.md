@@ -24,11 +24,11 @@ The authorization procedure depends on whether an account with your email is reg
 
     The password must not contain repeating groups of characters, such as ``aaa123123123``.
 
-<info>
+{note:info}
 
 If the **Enable two-factor authentication** page opens, [configure](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication to access VK Cloud Management Console.
 
-</info>
+{/note}
 
 </tabpanel>
 <tabpanel>

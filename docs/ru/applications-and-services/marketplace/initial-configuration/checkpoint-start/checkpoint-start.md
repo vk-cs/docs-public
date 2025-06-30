@@ -27,11 +27,11 @@
 
 Используя сервис Check Point CloudGuard Network, вы соглашаетесь с лицензионным соглашением [магазина приложений](/ru/intro/start/legal/marketplace), а также с [лицензионным соглашением Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
 
-<warn>
+{note:warn}
 
 Check Point CloudGuard Network предоставляется по модели BYOL (Bring Your Own Licence). Напишите партнеру Check Point на почту [cpcloud@rrc.ru](mailto:cpcloud@rrc.ru) для приобретения лицензии на использование сервиса.
 
-</warn>
+{/note}
 
 ## {heading(Подготовительные шаги)[id=preparatory_steps]}
 
@@ -316,11 +316,11 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Перейдите на вкладку **Сети**.
 1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ шлюза и [добавьте](/ru/networks/vnet/instructions/secgroups#dobavlenie_pravila) правила в группу безопасности для этой сети.
 
-   <info>
+   {note:info}
 
    Сетевой интерфейс добавляется и удаляется в операционной системе GAiA без необходимости перезагрузки.
 
-   </info>
+   {/note}
 
 1. [Настройте](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Gaia_AdminGuide/Content/Topics-GAG/Physical-Interfaces.htm?tocpath=Network%20Management%7CNetwork%20Interfaces%7C_____1) сетевой интерфейс в ОС GAiA с использованием веб-интерфейса GAiA Portal или SSH.
 
@@ -354,11 +354,11 @@ Check Point CloudGuard Network предоставляется по модели 
 
 ## 9. Предусмотрите резервное копирование
 
-<warn>
+{note:warn}
 
 Резервное копирование и восстановление инстансов сервиса Check Point CloudGuard Network средствами VK Cloud не поддерживается.
 
-</warn>
+{/note}
 
 Варианты резервного копирования описаны в [cтатье sk108902](https://support.checkpoint.com/results/sk/sk108902) и включают следующие встроенные процедуры резервного копирования GAiA:
 

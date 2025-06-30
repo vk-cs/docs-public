@@ -8,11 +8,11 @@
 </tablist>
 <tabpanel>
 
-<info>
+{note:info}
 
 [Подключить подсеть к маршрутизатору](../../net) можно также в разделе управления сетями.
 
-</info>
+{/note}
 
 {include(/ru/_includes/_open_advanced_router.md)}
 

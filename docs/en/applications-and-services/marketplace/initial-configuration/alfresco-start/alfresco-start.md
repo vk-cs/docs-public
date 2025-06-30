@@ -61,11 +61,11 @@ To deploy the Alfresco service in a VK Cloud project:
     - `alfresco_db_pass` — user password to connect to the database.
     - `keypair` — private key to connect via SSH to the VM where the service is deployed.
 
-   <info>
+   {note:info}
 
    If the access data is lost, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new one.
 
-   </info>
+   {/note}
 
 1. Go to the web interface of the service at `http://<YOUR_DOMAIN_OR_IP>`, where `<YOUR_DOMAIN_OR_IP>` is the address of the server where Alfresco is deployed.
 

@@ -45,11 +45,11 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 1. Click the **Next** button.
 1. Install the agent on the target VM, following the instructions for the Ubuntu distribution.
 
-   <info>
+   {note:info}
 
    You can install migration agents on a group of VMs with different operating systems via Ansible.
 
-   </info>
+   {/note}
 
    {cut(Ansible manifest for installing agents)}
 
@@ -111,11 +111,11 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
    - **Volume availability zone**: `MS1`.
    - **Volume type**: `CEPH-HDD`.
 
-   <info>
+   {note:info}
 
    For more information about replication and creating a backup schedule, see [Hystax official documentation](https://hystax.com/documentation/dr/dr_overview.html#edit-replication-settings-schedule).
 
-   </info>
+   {/note}
 
 1. Click the **Save** button.
 1. Open the `Ubuntu-DR` VM menu and select the **Start Protection** option.
@@ -209,7 +209,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
      1. Click the **Save** button.
      1. Restart the plan.
 
-</info>
+{/note}
 
 ## 5. Restore infrastructure in VK Cloud
 

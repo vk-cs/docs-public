@@ -23,11 +23,11 @@
 
         Instance hostnames will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-        <info>
+        {note:info}
 
         In the **Master-Replica** configuration, the suffix `-1` will be added to the instance name, which does not affect the host names. For example, if the instance name is `my-instance`, then the final instance name will take the form `my-instance-1`, and the hosts will get names like `my-instance-...`, but not `my-instance-1-...`.
 
-        </info>
+        {/note}
 
       - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
 
@@ -51,11 +51,11 @@
 
         Such a DB instance will be accessible from the Internet.
 
-        <warn>
+        {note:warn}
 
         The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
-        </warn>
+        {/note}
 
       - **Firewall settings:** a list of security groups for the DB instance.
 
@@ -75,11 +75,11 @@
         - If this option is not selected, a DB instance will be created in the **Single** configuration: with a single host with the `Master` role.
         - If this option is selected, a DB instance will be created in the **Master-Replica** configuration: with one host as `Master` and another host as `Replica`.
 
-        <info>
+        {note:info}
 
         The name of each replica consists of the instance name and a suffix with the host sequence number (for example, `my-instance-3`). Instance hosts numbering starts with `1`.
 
-        </info>
+        {/note}
 
       - **SSH access key**: select an existing key or create a new one.
 

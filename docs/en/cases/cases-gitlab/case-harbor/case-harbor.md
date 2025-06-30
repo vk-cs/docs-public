@@ -98,13 +98,13 @@ The default login is `admin`. The primary password is set in the `harbor.yml` fi
 
 ![](assets/1583617032764-1583617032764.png)
 
-<warn>
+{note:warn}
 
 **Attention**
 
 Remember the password entered for the user, it will be required for integration with GitLab.
 
-</warn>
+{/note}
 
 6. Create a new project that will contain the built images from GitLab. To do this, select Projects on the left:
 

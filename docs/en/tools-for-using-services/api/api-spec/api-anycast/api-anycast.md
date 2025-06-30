@@ -31,10 +31,10 @@ curl --location "https://infra.mail.ru:9696/v2.0/anycastips" \
 
 {/cut}
 
-<info>
+{note:info}
 
 You can download the original JSON specification via this [link](assets/api-anycast.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/api-anycast.json)

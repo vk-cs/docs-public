@@ -28,11 +28,11 @@
 
 ## Viewing list of backup copies created by plan
 
-<info>
+{note:info}
 
 The list of backup copies created according to a plan is grouped by the instances included in the plan.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>
@@ -55,11 +55,11 @@ The list of backup copies created according to a plan is grouped by the instance
 
 ## {heading(Editing backup plan)[id=edit_backup_plan]}
 
-<warn>
+{note:warn}
 
 When editing a plan, you cannot change the selection of instances for backup.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -107,11 +107,11 @@ When editing a plan, you cannot change the selection of instances for backup.
 
 ## {heading(Activating, stopping, and deleting backup plan)[id=activate_stop_delete_backup_plan]}
 
-<err>
+{note:err}
 
 Deleting a backup plan will delete all backups created according to that plan.
 
-</err>
+{/note}
 
 <tabs>
 <tablist>

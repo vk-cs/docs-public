@@ -22,11 +22,11 @@ This prevents a container running incorrectly from exhausting all of the resourc
 
 ## Pre-configured Gatekeeper templates and constraints
 
-<warn>
+{note:warn}
 
 Disabling or changing these templates and constraints can reduce the security of the Kubernetes Cloud Containers cluster. Any problems with the cluster that arise directly or indirectly due to disabling the settings below must be resolved by the customer themselves.
 
-</warn>
+{/note}
 
 Templates are available for clusters starting with Cloud Containers version 1.21. For older versions, [manually install Gatekeeper](../../../install-tools/gatekeeper) and the above templates and restrictions, or upgrade the cluster. For more information about Gatekeeper, see [Architecture](../../architecture).
 

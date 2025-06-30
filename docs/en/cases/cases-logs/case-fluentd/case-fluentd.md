@@ -5,11 +5,11 @@ It is inconvenient to write logs to containers because:
 - data generated in containerized applications exist as long as the container exists. When the docker container is restarted, data, including application logs, is deleted;
 - logs cannot be rotated in a container since rotation is an additional process in addition to the logged one, and more than one process cannot be started in one container.
 
-<info>
+{note:info}
 
 Log rotation is the process of processing, cleaning, archiving, and sending logs using utilities.
 
-</info>
+{/note}
 
 To access the logs of containerized applications in Kubernetes, Docker containers must transfer their logs to standard output streams (stdout) and errors (stderr). By default, Docker logging driver writes logs to a JSON file on the node, from where they can be obtained using the command:
 
@@ -17,11 +17,11 @@ To access the logs of containerized applications in Kubernetes, Docker container
 kubectl logs pod_name
 ```
 
-<info>
+{note:info}
 
 Docker logging driver is a log collection mechanism built into the Docker engine and supports many [log rotation tools](https://docs.docker.com/config/containers/logging/configure /).
 
-</info>
+{/note}
 
 When the Kubernetes orchestrator manages the lifecycle of Docker containers, pods with containers are often and unpredictably created, reloaded and deleted. If the settings of the Docker logging driver allow this, you can access the last logs of the pod before the reboot using the --previous argument:
 
@@ -54,11 +54,11 @@ We organize a centralized logging system for Kubernetes.
 kubectl create ns kube-logging
 ```
 
-<info>
+{note:info}
 
 When installing from helm, you will need to set the storage-class for the application.
 
-</info>
+{/note}
 
 2. Find out the storage class available in the Kubernetes cluster:
 

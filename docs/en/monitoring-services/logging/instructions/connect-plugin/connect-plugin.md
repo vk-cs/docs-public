@@ -33,14 +33,14 @@
 
    After installation, the `vkcloudlogs-fluent-bit.service` log collection agent will appear. It is disabled by default.
 
-   <info>
+   {note:info}
 
    The `vkcloudlogs-fluent-bit.service` agent works with the following files:
 
    - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit.conf` — the main configuration file of the service with descriptions of sources and destination paths for logging. For more information, see the [Logging plugin](../../concepts/logging-plugin) section and the [Fluent Bit official documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode);
    - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugins.conf` — the plugin connection configuration file.
 
-   </info>
+   {/note}
 
 1. Configure the plugin to send logs to the Cloud Logging service.
 

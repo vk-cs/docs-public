@@ -44,11 +44,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - the name of the namespace where the add-on will be installed;
       - [add-on settings code](#editing_addon_settings_code_during_installation).
 
-        <warn>
+        {note:warn}
 
         An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-        </warn>
+        {/note}
 
    1. Click the **Install addon** button.
 
@@ -72,13 +72,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 During quick installation, the add-on settings code is not edited.
 
 If this does not suit you, perform the **standard installation**.
 
-</info>
+{/note}
 
 1. Install the add-on:
 
@@ -137,13 +137,13 @@ The full add-on settings code along with the description of the fields is availa
 
 Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this add-on.
 
-<warn>
+{note:warn}
 
 Do not delete the fields that are required for the correct installation and operation of the add-on, or the values specified in these fields.
 
 There are comments in the add-on settings code that allow you to find such fields.
 
-</warn>
+{/note}
 
 Read more about [pipeline](https://docs.fluentbit.io/manual/pipeline) and [configuration file settings](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) in the official documentation of Fluent Bit.
 

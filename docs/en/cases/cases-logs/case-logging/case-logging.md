@@ -2,13 +2,13 @@
 
 This scenario requires an installed and configured server for ELK on Ubuntu 18.04 LTS x86_64.
 
-<warn>
+{note:warn}
 
 **Attention!**
 
 If you use other servers and hardware, some script steps may differ from those described below.
 
-</warn>
+{/note}
 
 ## Scheme of work
 
@@ -342,13 +342,13 @@ setup.kibana:
   password: "password"
 ```
 
-<info>
+{note:info}
 
 **Note**
 
 Login and password are required for Filebeat access to Kibana in order to load typical dashboards for known datasets.
 
-</info>
+{/note}
 
 5. The logs will be sent to Logstash, so comment out the output.elasticsearch section and specify the IP address of the server hosting Logstash in the output.logstash section:
 

@@ -20,11 +20,11 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
 
 1. (Optional) [Create](/en/storage/s3/instructions/buckets/create-bucket) additional buckets for storing files or dependencies.
 
-    <info>
+    {note:info}
 
     By default, the Cloud Spark cluster has access to a bucket whose name is specified in the `s3_bucket_name` parameter. You can retrieve this name using the [get_clusters](/ru/ml/spark-to-k8s/ml-platform-library/library-reference/clusters#get_clusters "change-lang") method or in the **ML Platform → Spark in k8s** section of the VK Cloud management console on the Cloud Spark cluster properties page.
 
-    </info>
+    {/note}
 
 1. (Optional) [Grant](/ru/ml/spark-to-k8s/instructions/buckets "change-lang") the Cloud Spark cluster access to the additionally created buckets.
 1. (Optional) [Upload](/en/storage/s3/instructions/objects/upload-object) the necessary files and dependencies for the Spark job execution into the buckets.
@@ -173,8 +173,8 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     </tabpanel>
     </tabs>
 
-<info>
+{note:info}
 
 Detailed examples of running Spark jobs are provided in the [Basic Spark Job Operations](../../how-to-guides/submit-basic-job-pi) and [Advanced Spark Job Operations](../../how-to-guides/submit-advanced-job-clickhouse) sections.
 
-</info>
+{/note}

@@ -2,11 +2,11 @@ Private DNS in VK Cloud is the functionality of a DNS server running in the proj
 
 The service supports configuring the private zone and port names of virtual machines. The DNS server responds to the same addresses as the DHCP ports on the network. For private DNS to work on the network, a DHCP server must be enabled.
 
-<warn>
+{note:warn}
 
 At the moment, the private DNS request forwarding servers are `8.8.8.8`, `8.8.4.4`. Changing these addresses is not supported.
 
-</warn>
+{/note}
 
 ## Editing a zone name for a network
 
@@ -18,11 +18,11 @@ At the moment, the private DNS request forwarding servers are `8.8.8.8`, `8.8.4.
 1. Enter the zone name in the **Zone** field.
 1. Click the button **Save changes**.
 
-<warn>
+{note:warn}
 
 The maximum length of the zone name is 253 characters. Consists of blocks of the form `[a-z0-9-]+\\.`. The maximum block length is 63 characters. A block cannot start and end with `-`.
 
-</warn>
+{/note}
 
 ## Configuring the DNS name
 
@@ -73,8 +73,8 @@ Via port settings:
 </tabpanel>
 </tabs>
 
-<warn>
+{note:warn}
 
 The maximum length of the name is 63 characters. Only numbers, small Latin letters and dashes `-` are allowed.
 
-</warn>
+{/note}

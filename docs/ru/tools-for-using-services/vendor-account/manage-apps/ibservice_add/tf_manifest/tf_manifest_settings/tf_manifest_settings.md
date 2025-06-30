@@ -2,11 +2,11 @@
 
 В файле `settings.yaml` укажите параметры, приведенные в {linkto(#tab_setting)[text=таблице %number]}.
 
-<info>
+{note:info}
 
 Если в сервисном пакете нет файла `settings.yaml`, к манифестам Terraform будут применены значения параметров по умолчанию.
 
-</info>
+{/note}
 
 {caption(Таблица {counter(table)[id=numb_tab_setting]} — Параметры в файле settings.yaml)[align=right;position=above;id=tab_setting;number={const(numb_tab_setting)}]}
 [cols="2,5,2,2", options="header"]

@@ -38,21 +38,21 @@
             * Файл `deploy.tf` — манифест, описывающий инфраструктуру и процесс развертывания конкретного тарифного плана сервиса в облачной платформе.
             * Файл `settings.yaml` (опционально) — настройки выполнения манифеста.
 
-<warn>
+{note:warn}
 
 Для имен файлов и директорий используйте латинские буквы и знаки нижнего подчеркивания в качестве разделителей. В именах не рекомендуется использовать пробелы.
 
-</warn>
+{/note}
 
 {caption(Рисунок {counter(pic)[id=numb_pic_structure]} — Структура файлов сервисного пакета для генератора JSON-файла 0.0.1)[align=center;position=under;id=pic_structure;number={const(numb_pic_structure)} ]}
 ![pic1](../../assets/IBstructure.png){params[width=40%]}
 {/caption}
 
-<info>
+{note:info}
 
 Настройки Terraform, размещаемые в директории `deployment`, вместо одного файла `deploy.tf` могут быть описаны в нескольких манифестах `.tf`.
 
-</info>
+{/note}
 
 {caption(Пример содержимого директории `deployment` с несколькими манифестами `.tf`)[align=left;position=above]}
 ```text

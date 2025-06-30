@@ -36,11 +36,11 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 1. Click **Start** or **Stop**.
 1. Confirm the action.
 
-<info>
+{note:info}
 
 The **Start** button is active only if all VMs for the selected tables are disabled. The **Stop** button is active only if all VMs for the selected tables are enabled.
 
-</info>
+{/note}
 
 ## Ending the user session
 
@@ -65,20 +65,20 @@ To end the user session, log out of the system:
 1. On the desktop, go to **Пуск**.
 1. Click the name of the current user and select **Выход**.
 
-<info>
+{note:info}
 
 You can also use the [logoff](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/logoff) command to end the session.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
 
-<warn>
+{note:warn}
 
 If the session has been terminated in another way, the disconnection will occur according to the time-out set when creating the pool.
 
-</warn>
+{/note}
 
 ## Deleting the desktop
 

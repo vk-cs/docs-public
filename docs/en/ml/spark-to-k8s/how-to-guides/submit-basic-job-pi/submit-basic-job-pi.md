@@ -63,13 +63,13 @@ As an example, an application will be used to calculate an approximate value of 
 
    A token with both the `Administrator` role and the `User` role is suitable.
 
-   <err>
+   {note:err}
 
    For simplicity, the token value is specified in the Python script examples in plain text.
 
    When working in a production environment, do not place the token in scripts in plain text. Use environment variables, vaults for secrets, or other tools to work with sensitive data.
 
-   </err>
+   {/note}
 
 1. [Create](../../instructions/create) a Spark cluster.
 

@@ -79,11 +79,11 @@ For example, [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) or
 
 To filter the list of log entries, use the `<PARAMETER_NAME>/<PARAMETER_VALUE>` pairs in the search string. To filter entries by multiple values of one parameter, list the values one after another.
 
-<info>
+{note:info}
 
 If you specify only the parameter value without its name in the search line, the entries will be filtered by the existence of this value in the `message` parameter.
 
-</info>
+{/note}
 
 ## Search features
 

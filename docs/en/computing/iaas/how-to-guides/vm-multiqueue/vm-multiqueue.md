@@ -11,11 +11,11 @@ The virtio-net multiqueue function provides [performance improvement](https://sp
 - MSI vectors would still be consumed (wasted), if multiqueue was enabled in the host, but has not been enabled in the guest OS by the administrator.
 - In case the number of vNICs in a guest instance is proportional to the number of vCPUs, enabling the multiqueue feature is less important.
 
-<warn>
+{note:warn}
 
 On the VK Cloud platform, it is not enough to enable multiqueue only at the image level (in the QEMU configuration). The OS administrator needs to manually enable the functionality using `ethtool` for VMs that were created before enabling multiqueue.
 
-</warn>
+{/note}
 
 ## 1. Enable multiqueue
 
@@ -105,11 +105,11 @@ This option is used when the VM has already been created at the time of enabling
 
 ## 3. Set the required number of queues for the VM
 
-<info>
+{note:info}
 
 The number of queues cannot be greater than the number of virtual CPUs.
 
-</info>
+{/note}
 
 1. [Create](../../instructions/vm/vm-create) a VM and [connect](../../instructions/vm/vm-connect) to it.
 1. Run the command:

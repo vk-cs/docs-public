@@ -25,8 +25,8 @@
 1. Укажите новый пароль.
 1. (Опционально) Создайте дашборд согласно инструкции из [официальной документации](https://grafana.com/docs/grafana/v10.0/getting-started/build-first-dashboard).
 
-<info>
+{note:info}
 
 Для расширенной конфигурации сервиса используйте официальную инструкцию [Grafana](https://grafana.com/docs/grafana/v10.0).
 
-</info>
+{/note}

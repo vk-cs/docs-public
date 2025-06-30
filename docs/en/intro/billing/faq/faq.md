@@ -6,11 +6,11 @@
 
 Bonuses are not awarded when new projects are created by existing users and when a new user enters a project by invitation.
 
-<warn>
+{note:warn}
 
 In some cases, previously accrued bonuses may be canceled or denied. See more in [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal)
 
-</warn>
+{/note}
 
 {/cut}
 
@@ -20,11 +20,11 @@ In some cases, previously accrued bonuses may be canceled or denied. See more in
 
 Bonuses are given for 60 days, after that they burn off. You can see the details of your expenses on the **Balance** page in your management console.
 
-<warn>
+{note:warn}
 
 You cannot withdraw bonuses from the project.
 
-</warn>
+{/note}
 
 {/cut}
 
@@ -55,11 +55,11 @@ The payment account balance in the project management console may go negative. I
 
 No penalties are charged on negative balance, but it is necessary to [replenish the payment account](../instructions/payment#making_a_payment) to continue the work.
 
-<warn>
+{note:warn}
 
 Unlocking of services takes up to 15 minutes from the moment of crediting.
 
-</warn>
+{/note}
 
 {/cut}
 
@@ -122,11 +122,11 @@ Up to 3 banking days.
 
 You may need the card if you work on a prepaid basis and need to make an emergency top-up, for example, to avoid [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) a project.
 
-<warn>
+{note:warn}
 
 Charges for bank card payments are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 
-</warn>
+{/note}
 
 {/cut}
 
@@ -189,11 +189,11 @@ When working on prepayment with a negative payment account balance, the project 
 - 3 days if you have never replenished the payment account of the project.
 - 30 days if you have topped up the payment account of the project at least once.
 
-   <err>
+   {note:err}
 
    As soon as the storage period in the queue expires, all project resources will be permanently deleted.
 
-   </err>
+   {/note}
 
 To restore the services:
 
@@ -207,14 +207,14 @@ To restore the services:
    - [VM backup](/en/storage/backups/instructions/manage-backup-plan)
    - Other resources
 
-<info>
+{note:info}
 
 To find out how long resources are in the queue for deletion, contact [technical support](mailto:support@mcs.mail.ru) and specify:
 
 - [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
 - [Region](/en/tools-for-using-services/account/concepts/regions)
 
-</info>
+{/note}
 
 {/cut}
 
@@ -236,11 +236,11 @@ The promised payment is not supported.
 
 Pay for services with a bank card, payments from cards are faster.
 
-<warn>
+{note:warn}
 
 Charges for bank card payments are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 
-</warn>
+{/note}
 
 {/cut}
 
@@ -401,11 +401,11 @@ Ask this question in the document management department of VK Cloud:
    - The composition of [accounting documents](../concepts/report) that you require.
    - Method of obtaining documents: through [electronic document management system (EDM)](../concepts/report#edm) or [in paper form to the postal address](../concepts/report#delivery_of_original_documents).
 
-   <info>
+   {note:info}
 
    EDM work is available only to organizations registered in the Russian Federation.
 
-   </info>
+   {/note}
 
 Accounting documents will be sent once in the reporting period (month).
 
@@ -433,11 +433,11 @@ Additional registration is only available in [region](/en/tools-for-using-servic
 
 {cut(How to register a project to another legal entity?)}
 
-<info>
+{note:info}
 
 You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/instructions/project-settings/manage#changing_project_owner).
 
-</info>
+{/note}
 
 To register a project to another organization:
 

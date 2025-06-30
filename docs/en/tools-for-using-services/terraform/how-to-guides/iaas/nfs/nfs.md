@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Make sure you [installed and configured Terraform](../../../quick-start).
 
-</warn>
+{/note}
 
 To create an NFS, create a file `nfs.tf`, which will describe the configuration of the NFS being created. This example creates an NFS and grants read/write access from two IP addresses. Add the text from the example below and correct the settings for your NFS.
 

@@ -79,11 +79,11 @@ In the file, the following configuration is described:
 
 The file describes the configuration for adding [preset security groups](/ru/networks/vnet/concepts/traffic-limiting#secgroups) to the project.
 
-<warn>
+{note:warn}
 
 Do not change the rules or create preset security groups via Terraform if they already exist in the project.
 
-</warn>
+{/note}
 
 {include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 

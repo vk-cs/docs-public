@@ -1,8 +1,8 @@
-<err>
+{note:err}
 
 Create resources in the same SDN, otherwise they will not be created.
 
-</err>
+{/note}
 
 ```hcl
 

@@ -8,19 +8,19 @@ Make sure that the following conditions are met:
 - remote access via RDP protocol (TCP port `3389`) is allowed in the VM network settings;
 - the VM has an external (“floating”) IP address available for connection.
 
-   <info>
+   {note:info}
 
    The external IP address of the VM can be viewed in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in the section **Cloud Servers → Virtual machines**.
 
-   </info>
+   {/note}
 
 Instead of an external IP address, you can use the fully qualified domain name of the virtual machine (FQDN). Properly configured DNS records are required to connect using a fully qualified domain name.
 
-<info>
+{note:info}
 
 VK Cloud provides [DNS servers](/en/networks/dns/publicdns) to which you can delegate your domain.
 
-</info>
+{/note}
 
 If RDP connection to the VM is not possible or unavailable, use the [VNC console](../../vm-console#the_vnc_console).
 
@@ -140,8 +140,8 @@ Connect to the VM:
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 At the first connection, confirm the use of the certificate.
 
-</info>
+{/note}

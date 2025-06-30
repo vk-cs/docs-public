@@ -13,11 +13,11 @@ ENDPOINT: `/api/v1/adult/detect`
 | oauth_token    | string | ![](/ru/assets/check.svg "inline")           | Токен доступа OAuth2 |
 | oauth_provider | string | ![](/ru/assets/check.svg "inline")           | Провайдер OAuth2     |
 
-<info>
+{note:info}
 
 Получение токена доступа, а также поддерживаемые провайдеры OAuth2 приведены в статье [Авторизация](../../quick-start/auth-vision).
 
-</info>
+{/note}
 
 Параметры запроса передаются в формате JSON в теле запроса:
 
@@ -28,11 +28,11 @@ ENDPOINT: `/api/v1/adult/detect`
 | images  | array  | ![](/ru/assets/check.svg "inline")  | Метаданные передаваемых изображений           |
 | name    | string | ![](/ru/assets/check.svg "inline")  | Имена файлов для сопоставления файлов в запросе и ответе|
 
-<warn>
+{note:warn}
 
 Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
 
-</warn>
+{/note}
 
 ## Пример запроса
 

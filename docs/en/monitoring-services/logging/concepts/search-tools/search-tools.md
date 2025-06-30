@@ -15,11 +15,11 @@ To filter logs, use the filter parameters in the search field:
 
 To filter records by multiple values of the same parameter, list the values one by one.
 
-<warn>
+{note:warn}
 
 If you do not specify an expression with fields in the search, then by default the search will be based on a substring in the `message` field.
 
-</warn>
+{/note}
 
 ## Requirements
 

@@ -78,16 +78,16 @@
 
    1. Select the days of the week and the start time of technical works. During this time, technical work may be performed on the server, including creating backups — the service will be unavailable.
 
-      <info>
+      {note:info}
       Duration of technical works is 4 hours. Time zone is GMT+03:00.  
-      </info>
+      {/note}
       
    1. Press the **Next Step** button.
 1. At the **Connections** step, add data sources to the Trino service instance:
 
-   <info>
+   {note:info}
    Data sources can also be added after the service instance is created.
-   </info>
+   {/note}
 
    1. Click the **Add Connection** button.
 
@@ -102,11 +102,11 @@
 
       {include(/en/_includes/_trino.md)[tags=password]}
 
-      <info>
+      {note:info}
 
       You cannot recover a lost password, but you can [change](../management#change_password) it to a new one.
 
-      </info>
+      {/note}
 
    1. (Optional) To add another administrator account, click **Add Account** and specify the login and password.
    1. Click the **Create** button.

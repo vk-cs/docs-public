@@ -1,10 +1,10 @@
 VK Cloud provides a RESTful XML API for programmatically manipulating stored data using standard HTTP requests. The API is compatible with the Amazon AWS S3 API, allowing you to interact with the service using familiar tools.
 
-<info>
+{note:info}
 
 SOAP over HTTP support has been deprecated but is still available over HTTPS. However, new Amazon S3 features will not be supported for SOAP. REST API or AWS SDK is recommended.
 
-</info>
+{/note}
 
 ## S3 compatible
 

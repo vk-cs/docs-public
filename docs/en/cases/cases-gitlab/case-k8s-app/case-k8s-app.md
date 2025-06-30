@@ -22,7 +22,7 @@ For this:
 root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner register -n --url https://<SERVER_DNS_NAME>/ --executor docker --registration-token ua2k238fbMtAxMBBRf_z -- description "shared-runner" --docker-image="docker:dind" --tag-list "shared_runner" --docker-privileged --docker-volumes /var/run/docker.sock:/var/run/docker .sock
 ```
 
-<warn>
+{note:warn}
 
 **Attention**
 
@@ -30,7 +30,7 @@ root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner registe
 
 \--docker-privileged and --docker-volumes are required for the running Docker container to have access to the parent Docker to build images (details [read here](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html)).
 
-</warn>
+{/note}
 
 As a result, runner will be displayed in the web interface:
 
@@ -105,13 +105,13 @@ Variables used for work:
 - before_script - the stage that is executed first. We sign in to the register using the variables that are specified in the GitLab runner settings.
 - build - image build. Standard build of a Docker image using a Dockerfile in the repository.
 
-<warn>
+{note:warn}
 
 **Important!**
 
 `tags: shared_runner` is the tag that was specified when registering the runner. Specifying this tag in the `.gitlab-ci.yml` file allows GitLab-runner to execute this script. After assembly, the assembled image is entered into the registry with the `CI_COMMIT_REF_NAME` tag. For details on the variables that can be used during the build [read the article](https://docs.gitlab.com/ee/ci/variables)). In our example, since we are committing to the master branch, the image name will be `k8s/k8s-conf-demo:master`.
 
-</warn>
+{/note}
 
 - release - final image generation section. In our example, we simply take the image built in the previous stage, add the latest tag to it, and upload it to the repository.
 
@@ -589,10 +589,10 @@ HANDLER OK%
 
 The auto-deployment of the new version was successful.
 
-<info>
+{note:info}
 
 **Note**
 
 The configuration files given in this article are test files and are intended for mastering the mechanisms of GitLab, registering and deploying images to a cluster at an initial level.
 
-</info>
+{/note}

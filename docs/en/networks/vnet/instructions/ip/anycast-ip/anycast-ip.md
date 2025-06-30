@@ -43,11 +43,11 @@ When health checks are enabled, the anycast IP address regularly verifies the av
 
 In the management console, you can only add a TCP port check. Adding checks for ICMP or TCP ports is available via the [Anycast IP API](/en/tools-for-using-services/api/api-spec/api-anycast).
 
-<warn>
+{note:warn}
 
 Without health checks enabled, traffic may be routed to an inactive node, leading to data loss or service unavailability.
 
-</warn>
+{/note}
 
 To add a health check rule:
 

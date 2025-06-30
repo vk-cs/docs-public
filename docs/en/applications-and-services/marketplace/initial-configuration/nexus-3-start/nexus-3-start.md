@@ -19,8 +19,8 @@ To deploy the Nexus service in a project:
 1. In the window that opens, enter the username `admin` and the password `admin_password` received by mail.
 1. (Optional) Go through the checklist from the [official documentation](https://help.sonatype.com/repomanager3/installation-and-upgrades/post-install-checklist).
 
-<info>
+{note:info}
 
 For the extended configuration of the service, use the official [Sonatype Nexus Repository 3 instructions](https://help.sonatype.com/repomanager3).
 
-</info>
+{/note}

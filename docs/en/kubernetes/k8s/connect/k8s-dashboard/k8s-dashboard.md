@@ -41,11 +41,11 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
    ```
 
-   <warn>
+   {note:warn}
 
    Do not close this terminal session, or you will lose access to the Kubernetes Dashboard web interface.
 
-   </warn>
+   {/note}
 
 1. Enter the password for your personal VK Cloud account, if it is not present in the kubeconfig configuration file.
 
@@ -72,11 +72,11 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
      kauthproxy -n kube-system https://kubernetes-dashboard.svc
      ```
 
-   <warn>
+   {note:warn}
 
    Do not close this terminal session, otherwise you will lose access to the Kubernetes Dashboard web interface.
 
-   </warn>
+   {/note}
 
    The browser will open and you will be directed to the Kubernetes Dashboard authorization page.
 

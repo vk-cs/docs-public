@@ -34,11 +34,11 @@ ENDPOINT: `/api/v1/text/recognize`
 
 Изображения передаются в теле запроса, значения поля `name` должны соответствовать переданным в `images`.
 
-<warn>
+{note:warn}
 
 Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
 
-</warn>
+{/note}
 
 ## Пример запроса
 

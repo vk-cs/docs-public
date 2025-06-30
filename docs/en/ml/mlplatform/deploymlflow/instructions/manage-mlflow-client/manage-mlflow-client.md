@@ -9,11 +9,11 @@ Manage MLflow Deploy instances using MLflow Deployment Client, a python library 
     2. In the **ML Platform Instances** subsection, find the JupyterHub you need instance.
     3. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Restart**.
 
-<info>
+{note:info}
 
 JupyterHub, MLflow and MLflow Deploy instances must be created on the same network.
 
-</info>
+{/note}
 
 ## Preparing the model
 
@@ -128,11 +128,11 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 1. Set a username and password.
 
-    <info>
+    {note:info}
 
     It is recommended to set details different from VK Cloud and JupyterHub.
 
-    </info>
+    {/note}
 
     ```console
     auth_value = "user:PasswordDA@dvv//!123$"

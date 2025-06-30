@@ -7,12 +7,12 @@
 
 В каждой сети будут созданы виртуальные машины для проверки работоспособности туннеля.
 
-<warn>
+{note:warn}
 
 Далее приведен пример настройки VPN-туннеля для сетей с SDN [Neutron](/ru/networks/vnet/concepts/sdn#neutron).
 В сетях с SDN [Sprut](/ru/networks/vnet/concepts/sdn#sprut) соединение виртуальной сети VK Cloud с клиентской сетью настраивается при помощи [продвинутого маршрутизатора](/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router).
 
-</warn>
+{/note}
 
 ## Подготовительные шаги
 
@@ -20,11 +20,11 @@
 
 1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сети.
 
-   <info>
+   {note:info}
 
    Можно создать сеть с любыми параметрами на ваш выбор. Скорректируйте дальнейшие шаги в этом сценарии при необходимости.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>
@@ -87,11 +87,11 @@
    1. Перейдите на вкладку **Порты**.
    1. Найдите в списке портов порт устройства `SNAT` и скопируйте его IP-адрес.
 
-      <info>
+      {note:info}
 
       Если вы не находите в списке порт устройства `SNAT`, убедитесь в том, что при создании виртуальной сети выбрана SDN Neutron.
 
-      </info>
+      {/note}
 
 1. Создайте виртуальную машину, которая будет выступать в качестве VPN-шлюза в клиентской сети `clientNet`, со следующими параметрами:
 
@@ -240,11 +240,11 @@
       auto=start
    ```
 
-   <info>
+   {note:info}
 
    Для группы Диффи-Хеллмана `group14` эквивалентное обозначение — `modp_2048`. Соответствие `modp` именам групп приводится в [RFC 3526](https://www.rfc-editor.org/rfc/rfc3526).
 
-   </info>
+   {/note}
 
 1. Укажите в файле `/etc/ipsec.secrets` ключ совместного использования (PSK). Ключ должен совпадать с ключом, указанным [на стороне облачной сети](#1_nastroyte_vpn_tunnel_na_storone_oblachnoy_seti):
 
@@ -344,11 +344,11 @@
 1. [Удалите](../../../instructions/vpn#udalenie_vpn_tunnelya) VPN-туннель.
 1. [Удалите](../../../instructions/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 
-   <info>
+   {note:info}
 
    Статические маршруты на стороне облачной сети будут удалены вместе с подсетью, для которой они были прописаны.
 
-   </info>
+   {/note}
 
 1. [Удалите](../../../instructions/router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
 1. Удалите клиентскую и облачную [подсети](../../../instructions/net#udalenie_podseti) и [сети](../../../instructions/net#udalenie_seti).

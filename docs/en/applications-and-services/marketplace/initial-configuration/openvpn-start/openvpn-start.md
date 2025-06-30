@@ -22,11 +22,11 @@ To deploy the OpenVPN service in the project::
       - **Активировать full-tunneling**: if this option is enabled, all user traffic will be routed through the VPN. This will increase the server load if large data streams are being transmitted. Disable the option if you only need to route user traffic through the VPN to access the subnet.
       - **Адреса подсетей**: specify the subnet addresses, separated by commas, that need to be accessed. Example: `10.0.0.0/24,10.0.10.0/24`. The subnets specified in this field will be accessible from the subnet where the service was deployed. The deployment subnet is specified by default in the service, so there is no need to add it here. This parameter is ignored if the **Активировать full-tunneling** option is enabled.
 
-      <warn>
+      {note:warn}
 
       Check the router settings in the subnets: network connectivity has to be set between subnets in the **Адреса подсетей** field.
 
-      </warn>
+      {/note}
 
    1. Click the **Next Step** button.
    1.  In the **Confirmation** step, review the estimated cost of the service and click the **Connect the Tariff** button.
@@ -66,8 +66,8 @@ To deploy the OpenVPN service in the project::
 
    The user configuration file will not be deleted from the `/etc/openvpn/server` directory. When trying to create a user with the same name, the script will run, but nothing will happen as the user already exists. To restore access for the user, create a configuration file with a new name.
 
-<info>
+{note:info}
 
 For advanced service configuration, use the [official OpenVPN instruction](https://openvpn.net/access-server-manual/introduction).
 
-</info>
+{/note}

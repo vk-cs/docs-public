@@ -13,11 +13,11 @@
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 Further work with the project is carried out in [VK Cloud Management Console](/en/tools-for-using-services/account/instructions/project-settings/manage).
 
-</info>
+{/note}
 
 ## What is next?
 

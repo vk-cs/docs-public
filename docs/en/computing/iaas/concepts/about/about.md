@@ -12,11 +12,11 @@ When creating a virtual machine, its configuration is set:
 - availability zone;
 - operating system.
 
-<info>
+{note:info}
 
 Virtual machines created on the VK Cloud platform use BIOS emulation. UEFI emulation is not supported.
 
-</info>
+{/note}
 
 ## Server Group
 
@@ -99,11 +99,11 @@ Select the **Archive VM types** category to find the old VM configuration templa
 
 To create additional VM templates (for example, with a large amount of resources) [contact technical support](mailto:support@mcs.mail.ru). The cost of a VM in this case is calculated individually for each request.
 
-<info>
+{note:info}
 
 The number and type of CPU, as well as the amount of RAM of an already created virtual machine, can be changed by changing the VM template. This process will require a VM reboot.
 
-</info>
+{/note}
 
 ### Name of VM configuration templates
 
@@ -150,11 +150,11 @@ After creating a disk, you can change its size, type, and availability zone. The
 
 Multiple disks can be attached to a VM, but at least one of them must be bootable and contain the installed operating system.
 
-<info>
+{note:info}
 
 If the VM and disk are located in different availability zones, the disk access speed may be reduced.
 
-</info>
+{/note}
 
 ### Disks types
 
@@ -233,11 +233,11 @@ VK Cloud allocates the following virtual resources to [supported availability zo
 
 There are resources for which there are no availability zones, such as Cloud Storage bucket or virtual network. For projects in the Moscow region, these resources are global (not tied to a zone).
 
-<info>
+{note:info}
 
 A network established in a QAZ availability zone cannot be interconnected by standard methods with networks from other availability zones because the QAZ zone is in a different [region](../../../../tools-for-using-services/account/concepts/regions). In this case, network connectivity can be provided by [VPN](/en/networks/vnet/how-to-guides/vpn-tunnel) means.
 
-</info>
+{/note}
 
 ## Operating system
 
@@ -251,11 +251,11 @@ VK Cloud supports migration of Windows server versions:
 - Windows Server 2019;
 - Windows Server 2022.
 
-<warn>
+{note:warn}
 
 It is not possible to use Windows 7 / 8 / 8.1 / 10 / 11 operating systems in VK Cloud. This restriction is set for all projects and cannot be lifted.
 
-</warn>
+{/note}
 
 ### {heading(Default account)[id=default_account]}
 
@@ -292,21 +292,21 @@ An image, the source of which is a disk, allows you to create a copy of a virtua
 
 The image downloaded from the file can be used for VM migration or to create a virtual machine with your operating system.
 
-<info>
+{note:info}
 
 Cloud Servers supports images in the `raw` format.
 
-</info>
+{/note}
 
 ## File storage
 
 File storage is a virtual file system that can be connected to multiple virtual machines and used to share data. When creating a file storage, the network access protocol to it (NFS or CIFS) is specified.
 
-<info>
+{note:info}
 
 File storage is accessed only from virtual machines inside the VK Cloud project.
 
-</info>
+{/note}
 
 The size of the file storage is set at the creation stage. If necessary, the size of the file storage can be increased, but the file storage cannot be reduced.
 

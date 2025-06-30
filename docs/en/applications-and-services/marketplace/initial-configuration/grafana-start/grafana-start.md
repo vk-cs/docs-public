@@ -25,8 +25,8 @@ To deploy the Grafana service in a project:
 1. Enter a new password.
 1. (Optional) Create a dashboard according to the [official documentation](https://grafana.com/docs/grafana/v10.0/getting-started/build-first-dashboard).
 
-<info>
+{note:info}
 
 For advanced configuration of the service, use the official [Grafana](https://grafana.com/docs/grafana/v10.0) instructions.
 
-</info>
+{/note}

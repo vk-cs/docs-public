@@ -12,11 +12,11 @@ The base cost of applications is determined as follows:
 
 <table border="0" cellpadding="0" cellspacing="0" width="435"><tbody><tr><td height="19" style="background-color: rgb(239, 239, 239);" width="54.48275862068966%">application</td><td style="background-color: rgb(239, 239, 239);" width="45.51724137931034%">The cost</td></tr><tr><td height="19">Accounting department</td><td>39 ₽ per day for 1 license</td></tr><tr><td height="19">Salary and Personnel Management</td><td>41 ₽ per day for 1 license</td></tr><tr><td height="19">Managing Our Firm</td><td>40 ₽ per day for 1 license</td></tr></tbody></table>
 
-<info>
+{note:info}
 
 Payment is made on the basis of 30 calendar days in a month.
 
-</info>
+{/note}
 
 ## Trial period
 
@@ -24,11 +24,11 @@ For all 1C software products: Accounting, Salary and Human Resources Management 
 
 To get demo access to the application, just select it when creating. There is no withdrawal of funds during the demo access, and this service is not displayed in the "Balance" section of the VK Cloud management console.
 
-<warn>
+{note:warn}
 
 Demo access is provided only for the first application of each type in the project. The trial period cannot be extended or stopped. The trial period starts when the application is created.
 
-</warn>
+{/note}
 
 ## Balance and documents
 

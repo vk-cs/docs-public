@@ -7,11 +7,11 @@ The Hyper-V virtual machine must meet the following requirements:
 - The current user has administrator rights.
 - At least one disk is connected to the VM.
 
-<info>
+{note:info}
 
 To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or transfer data to a new Hyper-V VM with BIOS emulation.
 
-</info>
+{/note}
 
 ## 2. Prepare the VM for migration
 
@@ -98,8 +98,8 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    The image should appear in the list and have the status `ACTIVE`.
 
-<warn>
+{note:warn}
 
 When creating a VM from a downloaded image, choose a disk size that is 25% larger than the size of the image, since it is stored in compressed form.
 
-</warn>
+{/note}

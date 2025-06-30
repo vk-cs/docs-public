@@ -110,8 +110,8 @@ The number of extensions installed per DB instance is limited and depends on the
 
 Learn more about working with extensions in VK Cloud in the article [Managing extensions](../../instructions/managing-extensions).
 
-<info>
+{note:info}
 
 The extension is installed on all instance databases.
 
-</info>
+{/note}

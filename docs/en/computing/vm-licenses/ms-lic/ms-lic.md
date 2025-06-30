@@ -1,10 +1,10 @@
 The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://cloud.vk.com/pricelist).
 
-<warn>
+{note:warn}
 
 VK Cloud provides Microsoft software under the Service Provider License Agreement (SPLA). Under this agreement, Microsoft software can only be operated on virtual machines in the VK Cloud.
 
-</warn>
+{/note}
 
 ## Terms of use
 
@@ -38,11 +38,11 @@ The available editions of the Microsoft Windows Server are displayed in the drop
 
 Every 2 vCPUs of a Windows VM require the use of one license. For example, when creating a VM with 5 vCPUs, you will need 3 Windows Server licenses. When changing the type of virtual machine, the number of licenses will be changed in accordance with the number of virtual cores of the modified configuration.
 
-<info>
+{note:info}
 
 Payment of licenses does not require additional actions and will be debited automatically in accordance with the configuration of the created VM.
 
-</info>
+{/note}
 
 ## Remote Desktop Services
 
@@ -55,11 +55,11 @@ These 2 connections can only be used to configure and administer the server. To 
 
 A license will be required for each OS user who connects using the Remote Desktop Protocol (RDP). Activation of the Remote Desktop service completely replaces the default RDP connection.
 
-<warn>
+{note:warn}
 
 Licenses for Remote Desktop Services can only be granted for a licensed copy of the MS Windows operating system purchased from VK Cloud.
 
-</warn>
+{/note}
 
 To activate the license, contact [technical support](mailto:support@mcs.mail.ru) with information:
 

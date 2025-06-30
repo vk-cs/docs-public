@@ -1,12 +1,12 @@
 В данной статье рассмотрим, как реплицировать и обновить MongoDB на Ubuntu 18.04.
 
-<info>
+{note:info}
 
 О конфигурации оборудования, а также о том, как установить и настроить MongoDB, вы можете узнать в статье [Установка и настройка MongoDB на Ubuntu](../../instructions/create/create-single-replica).
 
-</info>
+{/note}
 
-<info>
+{note:info}
 
 В описании далее используем следующие имена и IP-адреса серверов:
 
@@ -14,7 +14,7 @@
 - сервер 2 - mongo2.testdomain.com (10.0.0.3);
 - сервер 3 - mongo1.testdomain.com (10.0.0.4).
 
-</info>
+{/note}
 
 ## Настройка ReplicaSet MongoDB
 

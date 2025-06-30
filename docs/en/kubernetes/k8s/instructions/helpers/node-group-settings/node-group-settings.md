@@ -17,11 +17,11 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
     - **Disk type:** [storage type](../../../concepts/storage#storage_types) to be used by nodes.
 
-      <warn>
+      {note:warn}
 
       The disk type you select affects the performance of the cluster. It is recommended to use `SSD` or `High-IOPS` disk type for clusters that run in a production environment or in high load environments.
 
-      </warn>
+      {/note}
 
     - **Disk size:** the larger the disk size, the better its performance in some disk operations.
 

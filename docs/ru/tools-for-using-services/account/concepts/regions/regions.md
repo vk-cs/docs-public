@@ -4,11 +4,11 @@
 
 Создавать объекты (например, виртуальные машины) можно только в зоне доступности региона, в котором был создан проект.
 
-<warn>
+{note:warn}
 
 Все регионы имеют единую базу пользователей. Невозможно зарегистрировать учетные записи с одной и той же почтой в разных регионах.
 
-</warn>
+{/note}
 
 Доступны следующие регионы:
 
@@ -44,8 +44,8 @@ https://kz.cloud.vk.com
 - адреса [эндпоинтов VK Cloud API](/ru/tools-for-using-services/api/rest-api);
 - имя региона в файлах конфигурации [openrc](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) и [Terraform](/ru/tools-for-using-services/terraform/quick-start).
 
-<warn>
+{note:warn}
 
 Объединить виртуальные сети проектов из разных регионов стандартными способами невозможно. Сетевую связность между такими проектами можно настроить при помощи [VPN-туннеля](/ru/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel).
 
-</warn>
+{/note}

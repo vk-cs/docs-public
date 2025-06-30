@@ -9,11 +9,11 @@ Go to [VK Cloud page](https://cloud.vk.com/en/) and click **Create a VK Cloud Ac
 
 Contact technical support by email [support@mcs.mail.ru](mailto:support@mcs.mail.ru) with a request to enter the phone number manually.
 
-<warn>
+{note:warn}
 
 Through the VK Cloud Account, you can register only phone numbers that start with `+7`.
 
-</warn>
+{/note}
 
 {/cut}
 

@@ -32,11 +32,11 @@ The following tools are available for monitoring the status of a Kubernetes clus
       kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
       ```
 
-      <warn>
+      {note:warn}
 
       Do not close this session or you will lose access to the Grafana web interface.
 
-      </warn>
+      {/note}
 
    1. From the output of the command identify the port opened by `kubectl` to access Grafana.
 

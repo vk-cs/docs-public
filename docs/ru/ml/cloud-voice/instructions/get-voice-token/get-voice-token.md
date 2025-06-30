@@ -75,11 +75,11 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 В проекте единовременно может быть до 25 активных `refresh_token`, к каждому из них может быть привязано по 25 `access_token` в каждый момент времени.
 
-<warn>
+{note:warn}
 
 Сохраните `refresh_token`, чтобы многократно использовать их.
 
-</warn>
+{/note}
 
 ## Сервисный токен
 

@@ -150,11 +150,11 @@ To deploy the VictoriaMetrics service in a project:
 1. Follow the link from the email.
 1. Save the data to access VictoriaMetrics.
 
-   <info>
+   {note:info}
 
    If you have not saved the access data, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new one.
 
-   </info>
+   {/note}
 
 1. (Optional) Configure the collection of metrics depending on the selected configuration:
 

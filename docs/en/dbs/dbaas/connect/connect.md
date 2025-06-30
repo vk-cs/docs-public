@@ -274,11 +274,11 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
 
 ## Tarantool
 
-<info>
+{note:info}
 
 You can connect to the Tarantool database as a guest user.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

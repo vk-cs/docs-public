@@ -232,8 +232,8 @@ curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mc
 
 {/cut}
 
-<info>
+{note:info}
 
 Подробная информация о синтаксисе и использовании утилиты в [официальной документации](https://jqlang.github.io/jq/manual/).
 
-</info>
+{/note}

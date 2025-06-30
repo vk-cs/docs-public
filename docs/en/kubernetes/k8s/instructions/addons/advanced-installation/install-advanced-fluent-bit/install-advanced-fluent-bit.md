@@ -31,11 +31,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation): in the `Output` section set the parameters of logs delivery to the selected service. Leave other parameters at your discretion.
 
-        <warn>
+        {note:warn}
 
         An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-        </warn>
+        {/note}
 
    1. Click the **Install addon** button.
 
@@ -53,9 +53,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       If necessary, adapt the given examples of the resource and the data sources usage to your task and Terraform configuration. For example, you can edit the add-on settings code by changing the `vkcs_kubernetes_addon` resource.
 
-      <warn>
+      {note:warn}
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
-      </warn>
+      {/note}
 
    1. Make sure the configuration files are correct and contain the necessary changes:
 
@@ -150,13 +150,13 @@ Installation of the add-on is impossible without editing the settings code. It i
 
 1. (Optional) Edit other parameters of the settings code. Read more about configuration file parameters in the [official Fluent Bit documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file). Also, an example of the Fluent Bit settings code is available on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml).
 
-   <warn>
+   {note:warn}
 
    Do not delete fields that are required for correct installation and operation of the add-on, as well as the values set in these fields.
 
    Comments in the add-on settings code allow you to find such fields.
 
-   </warn>
+   {/note}
 
 1. When you have finished editing the code, [continue installing the add-on](#installing_addon).
 

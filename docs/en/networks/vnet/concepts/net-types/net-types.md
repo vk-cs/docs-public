@@ -84,11 +84,11 @@ If the project has file storages, balancers or advanced routers, the shutdown wi
 
 _External network_ (`ext-net`, `internet`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
 
-<info>
+{note:info}
 
 In external networks, only IP addresses with a `/32` prefix are allocated.
 
-</info>
+{/note}
 
 It is not possible to edit or delete the subnets of that network. The following operations can be performed via management console, OpenStack CLI or Terraform:
 

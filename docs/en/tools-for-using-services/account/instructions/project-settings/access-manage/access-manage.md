@@ -79,11 +79,11 @@ An invitation will be sent to the specified email address, it is valid for 24 ho
 
 After [logging in to the project](/en/tools-for-using-services/account/instructions/project-invitation) the new member's status in the column **Activated** will change to **Yes**.
 
-<info>
+{note:info}
 
 The member's email is not editable, and the invitation cannot be resent to it. If you have entered an incorrect email address or the invitation has expired, [delete](#deleting_member) the member and invite him again.
 
-</info>
+{/note}
 
 ## Changing member role
 
