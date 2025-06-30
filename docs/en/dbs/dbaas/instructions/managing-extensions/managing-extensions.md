@@ -61,11 +61,11 @@ You can install extensions for DB instances and change extension parameters. Dep
    1. Click the link **Add parameter**.
    1. Select the required parameter from the drop-down list and specify its value. If necessary, add more parameters.
 
-      <info>
+      {note:info}
 
       To delete a parameter, click on the icon ![Trash](./assets/trash-icon.svg "inline").
 
-      </info>
+      {/note}
 
 1. Click the **Add** button.
 
@@ -76,11 +76,11 @@ You can install extensions for DB instances and change extension parameters. Dep
 
 ## Changing extension parameters
 
-<warn>
+{note:warn}
 
 Changing extension parameters is not available for OpenSearch.
 
-</warn>
+{/note}
 
 To change the extension settings:
 

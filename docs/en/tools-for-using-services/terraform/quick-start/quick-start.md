@@ -38,11 +38,11 @@
     </tabpanel>
     </tabs>
 
-    <info>
+    {note:info}
 
     You can create both configuration files yourself. You can also edit the downloaded files — for example, add other Terraform providers. The contents of the files are described in section [Configuration files](../reference/configuration).
 
-    </info>
+    {/note}
 
 ## Terraform initialization
 

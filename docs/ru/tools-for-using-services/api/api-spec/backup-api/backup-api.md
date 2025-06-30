@@ -14,10 +14,10 @@
 
 {/cut}
 
-<info>
+{note:info}
 
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/karboiiapi-swagger.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/karboiiapi-swagger.json)

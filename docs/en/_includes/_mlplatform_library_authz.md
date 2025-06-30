@@ -33,11 +33,11 @@ If a user has access to the VK Cloud management console, it is possible to creat
 1. In the window that opens, copy the token value and save it on your device. Once the window is closed, the token value cannot be restored. If it is lost, create a new token.
 1. Click the **Done** button.
 
-<err>
+{note:err}
 
 Do not share your access token with anyone.
 
-</err>
+{/note}
 
 ## {heading(Creating an access token through the Cloud ML Platform library)[id=create_token_console]}
 
@@ -51,13 +51,13 @@ If a user does not have access to the VK Cloud management console, an access tok
 
 A registration token is created only through the Cloud ML Platform library.
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example, and the value of the registration token is printed using `print()`.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. [Install the library](/en/ml/mlplatform/mlplatform-lib/lib-install), if you have not done it already.
 1. [Create an access token](#create_token_management) with the `Administrator` role, if you have not done it already.
@@ -97,13 +97,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 ### {heading(Creating an access token using a registration token)[id=create_access_token]}
 
-<err>
+{note:err}
 
 For simplicity, the value of the registration token is specified in the example Python script, and the value of the access token is printed using `print()`.
 
 When working in a production environment, do not operate on tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. [Install the library](/en/ml/mlplatform/mlplatform-lib/lib-install), if you have not done it already.
 1. Make sure you have a registration token. If you do not have one, ask the owner of the access token with the `Administrator` role to [create a registration token](#create_token_management).
@@ -126,19 +126,19 @@ When working in a production environment, do not operate on tokens in the clear.
 
 1. Copy the token value and save it on your device.
 
-<err>
+{note:err}
 
 Do not share your access token with anyone.
 
-</err>
+{/note}
 
 ## {heading(Authorisation by token)[id=authorisation_by_token]}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example. When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. Create an access token [via management console](#create_token_management) or [via Cloud ML Platform library](#create_token_console).
 
@@ -189,13 +189,13 @@ Only a list of access tokens can be retrieved. The list of created registration 
 </tabpanel>
 <tabpanel>
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. [Install the library](/en/ml/mlplatform/mlplatform-lib/lib-install) if not already done.
 1. [Authorise using an access token](#create_token_management) with the `Administrator` role, if you have not done it already.
@@ -223,13 +223,13 @@ You can only get information about the access token that is currently in use thr
 </tablist>
 <tabpanel>
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. [Install the library](/en/ml/mlplatform/mlplatform-lib/lib-install) if not already done.
 1. [Authorise using an access token](#create_token_management) with the `User` or `Administrator` role, if not already done.
@@ -276,13 +276,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 </tabpanel>
 <tabpanel>
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</err>
+{/note}
 
 1. [Install the library](/en/ml/mlplatform/mlplatform-lib/lib-install) if not already done.
 1. [Authorise using an access token](#authorisation_by_token) with the `Administrator` role, if not already done.

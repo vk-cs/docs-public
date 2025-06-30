@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 The article describes how to create an MLflow instance through your VK Cloud management console. How to create an instance using Terraform, read the article [Creating MLflow instance](/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow).
 
-</info>
+{/note}
 
 To create an MLflow instance:
 
@@ -35,11 +35,11 @@ To create an MLflow instance:
         - One or more numbers.
         - One or more special characters from the range: `!`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`,`_`, `{`, `|`, `}`, `~`, `-`.
 
-        <err>
+        {note:err}
 
         Save your password. It is impossible to recover the password.
 
-        </err>
+        {/note}
 
 1. Click the **Next step** button.
 

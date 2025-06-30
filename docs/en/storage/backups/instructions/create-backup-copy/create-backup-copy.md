@@ -5,11 +5,11 @@ In addition to [automatic backups](../create-backup-plan), you can create backup
 
 Use the manual mode to create backups before operations associated with the risk of data loss.
 
-<info>
+{note:info}
 
 Backups are stored in the Cloud Storage object storage with the Backup storage class.
 
-</info>
+{/note}
 
 ## Creating backup copy via Cloud Backup service
 
@@ -31,11 +31,11 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
 
 1. Click **Create backup**.
 
-<info>
+{note:info}
 
 When a VM is backed up, all disks connected to it will be also backed up.
 
-</info>
+{/note}
 
 </tabpanel>
 </tabs>
@@ -55,11 +55,11 @@ When a VM is backed up, all disks connected to it will be also backed up.
 1. (Optional) Add **Comments**.
 1. Click **Create backup**.
 
-<info>
+{note:info}
 
 When a VM is backed up, all disks connected to it will be also backed up.
 
-</info>
+{/note}
 
 </tabpanel>
 <tabpanel>

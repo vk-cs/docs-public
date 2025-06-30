@@ -31,11 +31,11 @@
 
 1. Make sure that DNS records are configured for the domains of all added origins (including disabled ones).
 
-   <warn>
+   {note:warn}
 
    If VK Cloud cannot verify the domain's availability through a DNS query, the origin group is not created.
 
-   </warn>
+   {/note}
 
 {/includetag}
 
@@ -158,10 +158,10 @@ Then the `Host: cdn.contoso.com` header is used, when CDN servers request any of
 </tabpanel>
 </tabs>
 
-<warn>
+{note:warn}
 
 Make sure the origins are able to process requests with the `Host` header formatted according to the specified rules.
 
-</warn>
+{/note}
 
 {/includetag}

@@ -1,10 +1,10 @@
 If you no longer plan to use VK Cloud services, delete your account. Along with it, all projects in which you are the owner will be deleted.
 
-<err>
+{note:err}
 
 After deletion, it is impossible to restore the account.
 
-</err>
+{/note}
 
 To stop debiting funds for using the services, it is not necessary to delete the account. It is enough to [preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project_conservation) or [delete](/en/tools-for-using-services/account/instructions/project-settings/manage#deleting_a_project) projects that consume resources.
 

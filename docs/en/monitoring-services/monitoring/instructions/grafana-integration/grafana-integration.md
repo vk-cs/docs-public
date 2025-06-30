@@ -20,8 +20,8 @@ When deploying the service, it will be automatically integrated with Cloud Monit
   - `[VK Cloud] Сервис MLflow Deploy`;
   - `[VK Cloud] Сервис Spark в k8s`.
   
-<info>
+{note:info}
 
 Monitoring data can only be obtained from the project in which the Grafana service is deployed.
 
-</info>
+{/note}

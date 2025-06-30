@@ -10,19 +10,19 @@ Before connecting, make sure that the following conditions are met:
 - remote access via SSH protocol (TCP port `22`) is allowed in the VM network settings — [add](/en/networks/vnet/instructions/secgroups#assign-rule) `ssh` security group;
 - the VM has an external (“floating”) IP address available for connection.
 
-   <info>
+   {note:info}
 
    The external IP address of the VM can be viewed in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in the section **Cloud Servers → Virtual machines**.
 
-   </info>
+   {/note}
 
 Instead of an external IP address, you can use the fully qualified domain name of the virtual machine (FQDN). Properly configured DNS records are required to connect using a fully qualified domain name.
 
-<info>
+{note:info}
 
 VK Cloud provides [DNS servers](/en/networks/dns/publicdns) to which you can delegate your domain.
 
-</info>
+{/note}
 
 The virtual machines that were created from the FreeBSD and Bitrix images offered by the VK Cloud platform do not support working with an external `ext-net` network. To connect via SSH to such a VM, it is necessary that it is on a private network with DHCP enabled.
 
@@ -83,11 +83,11 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
       Type `yes` in the terminal and press _Enter_.
 
-      <info>
+      {note:info}
 
       The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
 
-      </info>
+      {/note}
 
 </tabpanel>
 <tabpanel>
@@ -125,11 +125,11 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
      Type `yes` in the command prompt and press ENTER.
 
-      <info>
+      {note:info}
 
       The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
 
-      </info>
+      {/note}
 
 </tabpanel>
 <tabpanel>
@@ -162,17 +162,17 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
    7. In the terminal window that opens, you will be prompted to enter the OS user name.
    8. Enter the VM operating system user name. As a result, a connection to the server should be established.
 
-      <info>
+      {note:info}
 
       The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
 
-      </info>
+      {/note}
 
 </tabpanel>
 </tabs>
 
-<warn>
+{note:warn}
 
 If you could not connect to the VM via SSH, use the instructions from the article [Network in a Linux VM](../../../../troubleshooting/linux-vm-network).
 
-</warn>
+{/note}

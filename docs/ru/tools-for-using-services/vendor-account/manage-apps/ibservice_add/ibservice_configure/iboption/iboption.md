@@ -1,10 +1,10 @@
 ## {heading(Структура)[id=iboption_structure]}
 
-<warn>
+{note:warn}
 
 Имя YAML-файла постоплатной тарифной опции должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]}).
 
-</warn>
+{/note}
 
 Тарифная опция описывается параметрами и секциями, приведенными в {linkto(#tab_top_level_options)[text=таблице %number]}.
 
@@ -162,11 +162,11 @@
 |===
 {/caption}
 
-<warn>
+{note:warn}
 
 Постоплатные тарифные опции могут быть только в бесплатном тарифном плане.
 
-</warn>
+{/note}
 
 ## {heading(Секция schema)[id=iboption_schema]}
 
@@ -492,11 +492,11 @@
 |default
 |Определяет значение тарифной опции по умолчанию.
 
-<warn>
+{note:warn}
 
 Если для переключателя `boolean` не задан параметр `default`, то значение по умолчанию будет равно `false`.
 
-</warn>
+{/note}
 |boolean
 | ![](/en/assets/no.svg "inline")
 |===

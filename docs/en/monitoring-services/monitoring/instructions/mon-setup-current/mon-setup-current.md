@@ -91,8 +91,8 @@ If the **Configuring monitoring** tab is missing:
    </tabpanel>
    </tabs>
 
-<info>
+{note:info}
 
 Metrics for this VM can be found by the label `host` with the value `hostname` of the VM.
 
-</info>
+{/note}

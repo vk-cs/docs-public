@@ -38,13 +38,13 @@ get_flavors(**kwargs
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -126,13 +126,13 @@ get_internal_networks(**kwargs
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -206,13 +206,13 @@ get_external_networks(**kwargs
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -252,11 +252,11 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 Create a JupyterHub instance.
 
-<info>
+{note:info}
 
 As part of the Cloud ML Platform, the JupyterHub instance is used to develop and learn ML models.
 
-</info>
+{/note}
 
 Required token role: `Administrator`. [Read more about token roles](../lib-authz).
 
@@ -323,11 +323,11 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 - `volume_type`: [disс type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
 - `availability_zone`: [availability zone](/en/intro/start/concepts/architecture#az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
 
-<warn>
+{note:warn}
 
 JupyterHub instances with only one drive are supported.
 
-</warn>
+{/note}
 
 Example of a disk description:
 
@@ -393,13 +393,13 @@ create_jupiter_hub(instance_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -479,11 +479,11 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 Connect the bucket to the JupyterHub instance.
 
-<info>
+{note:info}
 
 Only one bucket can be connected to one instance.
 
-</info>
+{/note}
 
 Required role of the token: `Administrator`. [Read more about token roles](../lib-authz).
 
@@ -539,13 +539,13 @@ attach_s3_bucket_to_jh(
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -571,11 +571,11 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 Create an MLflow instance connected to an existing JupyterHub instance.
 
-<info>
+{note:info}
 
 Within Cloud ML Platform, the MLflow instance is used to store ML models and their parameters.
 
-</info>
+{/note}
 
 Required role of the token: `Administrator`. [Read more about token roles](../lib-authz).
 
@@ -633,11 +633,11 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 - `volume_type`: [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
 - `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
 
-<warn>
+{note:warn}
 
 MLflow instances with only one disk are supported.
 
-</warn>
+{/note}
 
 Example of a disk description:
 
@@ -672,11 +672,11 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 Default value: `True`.
 
-<warn>
+{note:warn}
 
 To preserve ML models and their results, it is recommended to use the demo mode only to familiarise yourself with the functionality
 
-</warn>
+{/note}
 |===
 
 ### Return value
@@ -703,13 +703,13 @@ create_mlflow(instance_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -787,11 +787,11 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 Create an MLflow Deploy instance connected to an existing MLflow or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance.
 
-<info>
+{note:info}
 
 Within Cloud ML Platform, the MLflow Deploy instance is used to deploy MLflow models on it.
 
-</info>
+{/note}
 
 Required token role: `Administrator`. [Learn more about token roles](../lib-authz).
 
@@ -861,11 +861,11 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 - `volume_type`: [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
 - `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
 
-<warn>
+{note:warn}
 
 MLflow instances with only one disk are supported.
 
-</warn>
+{/note}
 
 Example of a disk description:
 
@@ -900,11 +900,11 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 Default value: `True`.
 
-<warn>
+{note:warn}
 
 The operating mode of the MLflow Deploy instance must match the operating mode of the MLflow or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance to which it will be connected.
 
-</warn>
+{/note}
 |===
 
 ### Returning value
@@ -933,13 +933,13 @@ create_deploy(instance_name: str,
 
 {cut(Example of method usage)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -1042,13 +1042,13 @@ get_all_instances_info(**kwargs
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -1146,13 +1146,13 @@ get_instance_info(instance_id: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -1253,13 +1253,13 @@ delete_instance(instance_id: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `Administrator` role if not already done.
@@ -1297,11 +1297,11 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 Create a deployment of the remote ML model.
 
-<info>
+{note:info}
 
 The deployment is created as a Docker container with the ML model packed in it, running on the MLflow Deploy instance. Access to the container is provided via REST API.
 
-</info>
+{/note}
 
 Required role of the token: `User` or `Administrator`. [Read more about token roles](../lib-authz).
 
@@ -1391,13 +1391,13 @@ create_deployment(deploy_server_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install), if you have not already done it.
 1. [Create an access token](../lib-authz) with the `User` role, if you have not already done it.
@@ -1508,13 +1508,13 @@ list_deployments(deploy_server_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `User` role, if not already done.
@@ -1627,13 +1627,13 @@ get_deployment(deploy_server_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `User` role, if not already done.
@@ -1747,13 +1747,13 @@ delete_deployment(deploy_server_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `User` role, if not already done.
@@ -1868,13 +1868,13 @@ ping_model(deploy_server_name: str,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install), if you have not already done it.
 1. [Create an access token](../lib-authz) with the `User` role, if you have not already done it.
@@ -1982,13 +1982,13 @@ predict_model(data: Dict,
 
 {cut(Example of using the method)}
 
-<err>
+{note:err}
 
 For simplicity, the value of the access token is specified in the Python script example.
 
 When working in a production environment, do not operate tokens in the clear. Use environment variables, secret stores, or other tools to handle sensitive data. [Read more about tokens](../lib-authz).
 
-</err>
+{/note}
 
 1. [Install the library](../lib-install) if not already done.
 1. [Create an access token](../lib-authz) with the `User` role, if not already done.

@@ -60,11 +60,11 @@ Parameters of `image_meta`:
 | -------------- | ------ | ---------| --------------------------------------------------------- |
 |   name         | string | ![](/ru/assets/check.svg "inline")      | File names for matching files in the request and response |
 
-<warn>
+{note:warn}
 
 The method is subject to [restrictions](../../concepts/vision-limits#image_processing).
 
-</warn>
+{/note}
 
 ## Request example
 

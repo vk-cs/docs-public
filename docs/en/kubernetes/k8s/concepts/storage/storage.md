@@ -61,11 +61,11 @@ A [reclaim policy](../../reference/pvs-and-pvcs#4_reclaiming_830589dc) can be se
 
   This policy is only applicable to block storage.
 
-  <warn>
+  {note:warn}
 
   Use this policy and the storage classes that implement it with caution: deleting a PVC will cause the PV and the disk corresponding to that volume to be deleted.
 
-  </warn>
+  {/note}
 
 ## Pre-configured storage classes
 

@@ -19,11 +19,11 @@ When creating a pre-signed URL, you need to provide:
 
 Pre-signed URLs are only valid for the specified period. It is possible to use the pre-signed URL multiple times, up to the expiration date and time.
 
-<info>
+{note:info}
 
 You can programmatically generate a pre-signed URL using the REST API, AWS CLI, and AWS SDK for Java, .NET, Ruby, PHP, Node.js, and Python.
 
-</info>
+{/note}
 
 The AWS SDK uses version 4 signature by default to authenticate requests. When using AWS signed version 3 SDKs, you might need to request signature version 4 from the service.
 

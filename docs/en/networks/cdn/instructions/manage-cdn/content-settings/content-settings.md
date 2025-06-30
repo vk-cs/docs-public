@@ -67,11 +67,11 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 You can upload content in a cache of a CDN resource in advance, before end users request it. It can help [reduce the load](../../../concepts/about) of origin servers. Preloading is relevant for files larger than 200 MB.
 
-<warn>
+{note:warn}
 
 To update files on a CDN, first [clear a cache](#clearing_cache) of the CDN resource, and then upload new.
 
-</warn>
+{/note}
 
 To preload a cache of a CDN resource:
 
@@ -340,11 +340,11 @@ For the option to work correctly, the origin must support HTTP Range requests. I
 
 After enabling or disabling the option, caching keys will change, and content will be requested from the origin again.
 
-<warn>
+{note:warn}
 
 To reduce the load on the origin, manage the option during off-peak hours and contact [technical support](mailto:support@mcs.mail.ru) to protect the origin with a pre-cache server.
 
-</warn>
+{/note}
 
 The option does not work in conjunction with [GZip compression](#gzip_compression), [Brotli compression](#brotli_compression) and  [origin compression](#origin_compression).
 

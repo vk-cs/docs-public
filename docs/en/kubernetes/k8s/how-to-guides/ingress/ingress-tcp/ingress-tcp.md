@@ -1,10 +1,10 @@
 The Ingress controller can be deployed [in conjunction with the TCP load balancer](../../../concepts/network) of the VK Cloud platform. As an example, a simple demo application and an Ingress resource will be deployed to test the operation of the controller.
 
-<info>
+{note:info}
 
 It is assumed throughout the document that the NGINX Ingress Controller will be deployed. However, the proposed approaches can be adapted to other Ingress controllers such as Traefik.
 
-</info>
+{/note}
 
 ## 1. Preparatory steps
 
@@ -127,11 +127,11 @@ To create an Ingress resource:
 
    This secret contains the public and private parts of the NGINX self-signed certificate, which is used to access the published applications in the `cafe.example.com` domain.
 
-   <warn>
+   {note:warn}
 
    The private part of this certificate is publicly available on the Internet, so do not use this certificate to protect real applications in a production environment.
 
-   </warn>.
+   {/note}.
 
 1. Download the [cafe-secret.yaml] manifest (https://raw.githubusercontent.com/nginxinc/kubernetes-ingress/v2.4.0/examples/ingress-resources/complete-example/cafe-secret.yaml).
 
@@ -257,11 +257,11 @@ To create an Ingress resource:
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <info>
+   {note:info}
 
    The TCP load balancer created for the Ingress controller will also be removed.
 
-   </info>
+   {/note}
 
    <tabs>
    <tablist>

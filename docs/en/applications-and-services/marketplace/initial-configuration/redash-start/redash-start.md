@@ -17,11 +17,11 @@ To deploy the Redash 10 service in a project:
 1. Follow the link from the email.
 1. Save the data to access Redash, including `redash_url` — has the `https://redash-<ID>.xaas.msk.vkcs.cloud` format.
 
-   <info>
+   {note:info}
 
    If you have not saved the access data, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new ones.
 
-   </info>
+   {/note}
 
 1. Go to the Redash console using the link from `redash_url`.
 1. In the administrator registration data window that opens, and click the **Setup** button.

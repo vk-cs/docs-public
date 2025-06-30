@@ -70,11 +70,11 @@ To connect to the object storage using the SDK:
      </tabpanel>
      </tabs>
 
-     <warn>
+     {note:warn}
 
      Some tools and SDKs may not read the `AWS_DEFAULT_REGION` variable and require specifying the region in a different way — check the documentation of the required tool.
 
-     </warn>
+     {/note}
 
    - Add the details directly to the source code.
 

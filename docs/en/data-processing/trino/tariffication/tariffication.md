@@ -1,10 +1,10 @@
 ## About tariffication
 
-<info>
+{note:info}
 
 The service is in BETA mode, so only infrastructure resources are charged.
 
-</info>
+{/note}
 
 The cost of individual components of the service is given in the [price list](https://cloud.vk.com/pricelist). To estimate the total cost of the service, use the [calculator](https://cloud.vk.com/pricing).
 

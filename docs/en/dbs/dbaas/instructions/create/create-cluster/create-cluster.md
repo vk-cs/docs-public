@@ -77,19 +77,19 @@
 
         A node with the `Dashboards` role will be assigned a floating IP address.
 
-        <warn>
+        {note:warn}
 
         The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
-        </warn>
+        {/note}
 
    1. In the **Master Node** block, select the option **Use dedicated master nodes** if you need to assign the `master` role to a dedicated cluster node.
 
-      <info>
+      {note:info}
 
       If this option is not selected, the `master` role will be assigned to nodes with the `data` role. [Learn more about the cluster structure and roles](../../../concepts/architecture).
 
-      </info>
+      {/note}
 
       Then set the parameters:
 
@@ -154,7 +154,7 @@
 
       The databases will be restored from the backup.
 
-      <warn>
+      {note:warn}
 
       Before restoring, make sure that:
 
@@ -162,7 +162,7 @@
       - The size of the disks in the new DB instance is not less than in the backup copy.
       - The names of the shards of the new DB instance are the same as in the backup.
 
-      </warn>
+      {/note}
 
       From the drop-down list **Backup** select the backup from which you want to restore.
 
@@ -178,13 +178,13 @@
 
 ## MySQL, PostgreSQL, PostgresPro Enterprise, PostgresPro Enterprise 1C
 
-<warn>
+{note:warn}
 
 When creating a cluster of the listed DBMS types, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
 Using a load balancer [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -233,11 +233,11 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Such a cluster will be accessible from the Internet.
 
-        <warn>
+        {note:warn}
 
         The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
-        </warn>
+        {/note}
 
       - **Firewall settings**: a list of security groups for the cluster.
 
@@ -383,11 +383,11 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Such a cluster will be accessible from the Internet.
 
-        <warn>
+        {note:warn}
 
         The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
-        </warn>
+        {/note}
 
       - **Firewall settings**: a list of security groups for the cluster.
 
@@ -468,11 +468,11 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         This option is not available for Redis.
 
-        <warn>
+        {note:warn}
 
         The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
-        </warn>
+        {/note}
 
       - **SSH access key**: select an existing key or create a new one.
 
@@ -563,7 +563,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       The databases will be restored from the backup.
 
-      <warn>
+      {note:warn}
 
       Before restoring, make sure that:
 
@@ -571,7 +571,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
       - The size of the disks in the new DB instance is not less than in the backup copy.
       - The names of the shards of the new DB instance are the same as in the backup.
 
-      </warn>
+      {/note}
 
       From the drop-down list **Backup** select the backup from which you want to restore.
 

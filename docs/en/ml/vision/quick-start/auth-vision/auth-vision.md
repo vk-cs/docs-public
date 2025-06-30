@@ -5,11 +5,11 @@ There are two ways to get an access token:
 * OAuth — generation of a pair of tokens (an access token and a refresh token).
 * Service token — generation of a token that is not limited in time of use.
 
-<warn>
+{note:warn}
 
 To increase account security, use OAuth tokens. OAuth authorization uses a pair of tokens instead of one, and the access token is only valid for an hour.
 
-</warn>
+{/note}
 
 ## {heading(Obtaining OAuth tokens)[id=obtain-oauth-token]}
 
@@ -36,11 +36,11 @@ There will be two tokens in the server response:
 - `access_token`: an access token for use in API requests to the service. It is reusable, but is valid for one hour. When the lifetime of the token expires, it will be necessary to generate a new one. No more than 25 access tokens can be active in a project at the same time.
 - `refresh_token`: refresh token to generate a new access token. No more than 25 refresh tokens can be active in the project at the same time. Each refresh token can generate any number of access tokens, but no more than 25 simultaneously active tokens.
 
-<warn>
+{note:warn}
 
 Save the `refresh_token` token. If it is lost, it cannot be recovered.
 
-</warn>
+{/note}
 
 ### {heading(Updating an access token)[id=obtain-access-token]}
 

@@ -58,11 +58,11 @@ You can create a CDN resource in two ways:
 
 1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to remove the domain you no longer need.
 
-   <warn>
+   {note:warn}
 
    You cannot change personal domains after creating a CDN resource.
 
-   </warn>
+   {/note}
 
 1. Save the original domain name that needs to be set in the CNAME record for the specified domains.
 
@@ -71,11 +71,11 @@ You can create a CDN resource in two ways:
    - **Do not use**: the certificate is not used, personal domains are only accessible via HTTP.
    - (By default) **Let's Encrypt**: [Let's Encrypt](https://letsencrypt.org) certificate is used. The certificate will be created after the CDN resource is created. It needs available origin servers and the DNS changes related to CNAME records for personal domains. This typically takes up to 30 minutes.
 
-   <warn>
+   {note:warn}
 
    The option needs the **Access to content by end users** option to be enabled.
 
-   </warn>
+   {/note}
 
    - **User's certificate**: you can select your SSL certificate from the list. To make the certificate available for selection, add it to the [certificate store](../manage-certificates).
 
@@ -133,11 +133,11 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to remove the domain you no longer need.
 
-   <warn>
+   {note:warn}
 
    You cannont change personal domains after creating a CDN resource.
 
-   </warn>
+   {/note}
 
 1. Save the original domain name, which needs to be set in the CNAME record for the specified domains.
 

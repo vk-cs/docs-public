@@ -2,13 +2,13 @@
 
 Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](/ru/tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 
-<warn>
+{note:warn}
 
 При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 ## Перед созданием кластера
 
@@ -24,11 +24,11 @@
 
 1. Создайте конфигурационный файл Terraform.
 
-   <info>
+   {note:info}
 
    В следующих шагах перечислены только основные параметры ресурсов Terraform, которые нужно указать в этом файле. Полный список параметров приведен в [документации](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) Terraform-провайдера для [кластера Kubernetes](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md).
 
-   </info>
+   {/note}
 
 ## 1. Подготовьте необходимые источники данных
 
@@ -203,11 +203,11 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   </tabpanel>
   </tabs>
 
-    <info>
+    {note:info}
        
     Чтобы создать кластер без доступа в интернет, укажите сеть с подключенным [Shadow port](/ru/networks/vnet/concepts/ips-and-inet#shadow_port).
        
-    </info>
+    {/note}
 
 - `floating_ip_enabled` — назначить публичный IP-адрес для API-кластера:
 
@@ -218,12 +218,12 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 ## 3. Опишите конфигурацию одной или нескольких групп worker-узлов
 
-<info>
+{note:info}
 
 Это необязательный шаг.
 С помощью Terraform можно создать кластер только из master-узлов, а группы worker-узлов добавить позднее.
 
-</info>
+{/note}
 
 Эта операция подробно описана в разделе [Управление группой worker-узлов](../../manage-node-group).
 

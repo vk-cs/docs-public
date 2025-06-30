@@ -115,9 +115,9 @@ resource "aws_s3_object" "object-two" {
     - IP-адреса и схожее с ними форматирование (например, `192.168.5.4`), так как может возникнуть путаница между именем бакета и IP-адресом сайта.
     - `xn--` в начале: все, что идет после, будет воспринято браузером как [паникод](https://ru.wikipedia.org/wiki/Punycode).
 
-    <warn>
+    {note:warn}
     После создания бакета изменить его имя будет невозможно.
-    </warn>
+    {/note}
 
   - `bucket = aws_s3_bucket.example-bucket.bucket` — при создании объекта указывается ресурс, который создает бакет. В это примере объект будет помещен в бакет `example-bucket`, который будет создан ресурсом `aws_s3_bucket`.
 
@@ -164,11 +164,11 @@ resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
 
 В примере ниже будут предоставлены права на чтение ACL бакета по ID пользователя и ID проекта.
 
-<info>
+{note:info}
 
 Невозможно указать ACL для отдельного [аккаунта](/ru/storage/s3/instructions/access-management/access-keys) Cloud Storage из другого проекта.
 
-</info>
+{/note}
 
 Добавьте следующее содержимое в файл `main.tf`:
 

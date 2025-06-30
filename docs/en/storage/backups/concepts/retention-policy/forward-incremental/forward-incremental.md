@@ -1,10 +1,10 @@
 The Forward Incremental Backup allows you to set the maximum number of full backups to keep. If the number of backups exceeds the maximum, VK Cloud will automatically delete the oldest of them.
 
-<info>
+{note:info}
 
 Backups can be created successfully or with an error. Backups created with an error are not charged and cannot be used for recovery.
 
-</info>
+{/note}
 
 Backups are deleted according to the following algorithm:
 
@@ -48,8 +48,8 @@ Backups that will remain:
 
 {/cut}
 
-<err>
+{note:err}
 
 Deleting a full backup will also delete all incremental backups based on it.
 
-</err>
+{/note}

@@ -14,9 +14,9 @@ SDN Sprut полностью совместима с Openstack Neutron API и и
 
 Сейчас Sprut — основная SDN для всех новых проектов, но старые проекты используют SDN Neutron. Вы можете самостоятельно перенести свои проекты в SDN Sprut. В личном кабинете можно [узнать, к какой SDN подключен ваш проект](/ru/tools-for-using-services/account/instructions/project-settings/manage#sdn_view).
 
-<warn>
+{note:warn}
 Поддержка SDN Neutron прекратится в конце 2025 года. После этого пользователи SDN Neutron могут столкнуться с проблемами безопасности и отсутствием обновлений.
-</warn>
+{/note}
 
 Вы можете самостоятельно перенести свои проекты в SDN Sprut.
 

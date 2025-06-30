@@ -1,10 +1,10 @@
 The connection to the user directory is configured separately for each project. Only one connection can be configured for one project.
 
-<warn>
+{note:warn}
 
 Cloud Desktop cannot work without the AD/LDAP user directory service. If your network does not have a directory service, create one yourself.
 
-</warn>
+{/note}
 
 ## 1. Configure connection to user directory
 
@@ -21,23 +21,23 @@ Cloud Desktop cannot work without the AD/LDAP user directory service. If your ne
 
 1. CLick the **Save** button.
 
-<info>
+{note:info}
 
 When working with the service, you can change the settings for connecting to the user directory.
 
 All existing pools will switch to the new connection settings automatically.
 
-</info>
+{/note}
 
 ## 2. Check connection settings
 
 To check the connection settings to the user directory, it is not necessary to save the changes in the settings.
 
-<warn>
+{note:warn}
 
 A virtual machine will be deployed for verification, its name begins with `vdi-checker`. The use of this VM [is charged](/en/computing/iaas/tariffication).
 
-</warn>
+{/note}
 
 To check if the service catalog settings are correct:
 

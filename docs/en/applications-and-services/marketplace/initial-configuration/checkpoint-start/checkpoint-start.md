@@ -27,11 +27,11 @@ By going through the steps of this instruction, you will:
 
 By using the Check Point CloudGuard Network service, you agree to license agreements of [Marketplace](/en/intro/start/legal/marketplace) and [Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
 
-<warn>
+{note:warn}
 
 Check Point CloudGuard Network is provided under the BYOL (Bring Your Own License) model. Email the Check Point partner at [cpcloud@rrc.ru](mailto:cpcloud@rrc.ru) to purchase a license to use the service.
 
-</warn>
+{/note}
 
 ## {heading(Preparatory steps)[id=preparatory_steps]}
 
@@ -316,11 +316,11 @@ By default, one network interface is created for a VM. To add a network interfac
 1. Go to the **Networks** tab.
 1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the gateway VM and [add](/en/networks/vnet/instructions/secgroups#add-rule) rules to the security group for that network.
 
-   <info>
+   {note:info}
 
    The network interface is added and removed in the GAiA operating system without the need to reboot.
 
-   </info>
+   {/note}
 
 1. [Configure](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Gaia_AdminGuide/Content/Topics-GAG/Physical-Interfaces.htm?tocpath=Network%20Management%7CNetwork%20Interfaces%7C_____1) the network interface in the GAiA OS using the GAiA Portal web interface or SSH.
 
@@ -354,11 +354,11 @@ By default, one network interface is created for a VM. To add a network interfac
 
 ## 9. Consider backup
 
-<warn>
+{note:warn}
 
 Backup and instance recovery of the Check Point CloudGuard Network service are not supported by VK Cloud.
 
-</warn>
+{/note}
 
 Backup options are described in the [sk108902 article](https://support.checkpoint.com/results/sk/sk108902) and include the following built-in GAiA backup procedures:
 

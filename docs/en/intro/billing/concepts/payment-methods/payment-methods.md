@@ -11,11 +11,11 @@ The list of available payment methods is displayed on the **Balance** page of th
 
 - Bank card.
 
-  <warn>
+  {note:warn}
 
   It is recommended to use physical bank cards. Payments from virtual cards can be rejected by the security system.
 
-  </warn>
+  {/note}
 
   Bank cards issued in Russia with ruble currency are supported.
 
@@ -28,11 +28,11 @@ The list of available payment methods is displayed on the **Balance** page of th
 - Mobile payments from the phones of the main mobile operators.
 - Bank transfer.
 
-   <warn>
+   {note:warn}
 
    In [accounting documents](../report) for legal entities, only payments made by bank transfer are taken into account.
 
-   </warn>
+   {/note}
 
 </tabpanel>
 <tabpanel>

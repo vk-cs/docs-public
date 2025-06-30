@@ -165,11 +165,11 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
     pre-down ip route del 10.55.4.0/22 via 10.56.0.1 || true
     ```
 
-    <info>
+    {note:info}
 
     The `post-up` и `pre-down` commands automate the route management to the future VDI network when connecting and disconnecting the `eth1` interface.
 
-    </info>
+    {/note}
 
 1. Run the command to apply the new network settings:
 
@@ -426,11 +426,11 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
     - **Destination network (CIDR)**: `10.10.2.0/24`;
     - **Intermediate node (Next HOP)**: `10.56.0.4`.
 
-    <info>
+    {note:info}
 
     The Next HOP IP is the IP address of the internal network interface with a connection to the transit network of the VM running Debian 11.
 
-    </info>
+    {/note}
 
 1. Click the **Add route** button.
 

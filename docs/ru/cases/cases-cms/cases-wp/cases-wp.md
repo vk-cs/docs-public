@@ -28,11 +28,11 @@
 
 1. [Создайте](/ru/networks/dns/publicdns#sozdanie_dns_zony) DNS-зону.
 
-   <warn>
+   {note:warn}
 
    Убедитесь, что DNS-зона делегирована успешно и NS-записи настроены верно: зона должна находиться в статусе **NS-записи настроены верно**.
 
-   </warn>
+   {/note}
 
 1. [Создайте](/ru/networks/dns/publicdns#dobavlenie_resursnyh_zapisey) запись в выделенной зоне:
 

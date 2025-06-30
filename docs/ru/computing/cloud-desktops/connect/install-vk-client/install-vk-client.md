@@ -4,11 +4,11 @@
 
 Клиент Cloud Desktop Client для ОС Windows поставляется в виде установочного файла с расширением `exe`.
 
-<warn>
+{note:warn}
 
 Для установки клиента необходимы права администратора на компьютере.
 
-</warn>
+{/note}
 
 1. Скачайте и запустите установочный файл [cloud-desktop-setup.exe](https://hub.mcs.mail.ru/repository/client-agent-remoteclick/client/release/win/cloud-desktop-setup.exe).
 1. Разрешите внесение изменений на рабочую станцию от имени администратора и дождитесь завершения процесса установки.

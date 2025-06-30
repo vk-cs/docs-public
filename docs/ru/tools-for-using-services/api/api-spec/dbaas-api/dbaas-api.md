@@ -23,10 +23,10 @@ API сервиса [Cloud Databases](/ru/dbs/dbaas) поддерживает р�
 
 {/cut}
 
-<info>
+{note:info}
 
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/dbaasapi-swagger.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/dbaasapi-swagger.json)

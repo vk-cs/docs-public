@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 The PITR function is only available for databases running PostgreSQL.
 
-</warn>
+{/note}
 
 ## Creating schedule
 

@@ -1,10 +1,10 @@
 Gatekeeper — это контроллер, встраиваемый между Kubernetes API и движком политик Open Policy Agent (OPA) для проверки создаваемых, изменяемых и удаляемых ресурсов Kubernetes на соответствие политикам. Более подробная информация о Gatekeeper приведена в [справочнике Kubernetes](../../reference/gatekeeper) и в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/).
 
-<warn>
+{note:warn}
 
 Используйте эту инструкцию, если ваш кластер Cloud Containers версии 1.20 или ниже. Начиная с Kubernetes 1.21, Gatekeeper [уже установлен](../../concepts/architecture) в кластере вместе с [политиками безопасности по умолчанию](../../concepts/addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper).
 
-</warn>
+{/note}
 
 ## Установка
 
@@ -427,8 +427,8 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
    kubectl delete crd -l gatekeeper.sh/system=yes
    ```
 
-   <warn>
+   {note:warn}
 
    Эта операция приведет к удалению ограничений и их шаблонов.
 
-   </warn>
+   {/note}

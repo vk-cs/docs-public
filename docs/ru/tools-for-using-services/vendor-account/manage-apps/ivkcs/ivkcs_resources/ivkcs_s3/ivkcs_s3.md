@@ -16,11 +16,11 @@
 |
 Уникальное имя бакета S3.
 
-<info>
+{note:info}
 
 Чтобы обеспечить уникальность имени, используйте идентификатор развертывания сервиса UUID как часть имени.
 
-</info>
+{/note}
 |string
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")

@@ -1,10 +1,10 @@
 # {heading(Ресурс ivkcs_user_data)[id=ivkcs_user_data]}
 
-<warn>
+{note:warn}
 
 Чтобы использовать ресурс, образ сервиса должен содержать программный пакет Cloud-init (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=%text]}).
 
-</warn>
+{/note}
 
 Аргументы ресурса `ivkcs_user_data` приведены в {linkto(#tab_arguments)[text=таблице %number]}.
 
@@ -145,11 +145,11 @@
 |===
 {/caption}
 
-<info>
+{note:info}
 
 При установке агента используйте аргумент `agent_memory_limit`, чтобы ограничить оперативную память.
 
-</info>
+{/note}
 
 Ресурс `ivkcs_user_data` возвращает атрибут `user_data` в формате списка строк. Индекс в списке соответствует индексу хоста, переданного в аргументе `hosts`. Значением является cloud-config конфигурация в формате MIME-архива. Используйте полученное значение в аргументе `user_data` ресурса `vkcs_compute_instance`.
 
@@ -198,11 +198,11 @@ resource "vkcs_compute_instance" "single" {
 |
 `freebsd132`
 
-<warn>
+{note:warn}
 
 Не поддерживается установка агента.
 
-</warn>
+{/note}
 |FreeBSD 13.2
 |23.1.1
 |23e07695-844a-44b0-8e3d-bc1126b0abc4
@@ -261,11 +261,11 @@ resource "vkcs_compute_instance" "single" {
 
 Если в таблице нет необходимой ОС, используйте значение для ближайшей по родству ОС или ближайшей базовой ОС. Например, ближайшая ОС к Ubuntu 21.10 по родству — Ubuntu 22.04, тогда укажите значение `ubuntu2204`.
 
-<info>
+{note:info}
 
 Если для работы сервиса требуется только агент и SSH-ключи для доступа к ВМ `ssh_authorized_keys`, используйте любое значение аргумента `target_os`.
 
-</info>
+{/note}
 
 ## {heading(Аргумент packages)[id=packages]}
 
@@ -293,11 +293,11 @@ resource "vkcs_compute_instance" "single" {
 |===
 {/caption}
 
-<warn>
+{note:warn}
 
 Для ОС Альт Сервер требуется указать имя и версию пакета в специальном формате.
 
-</warn>
+{/note}
 
 Чтобы указать имя и версию пакета для ОС Альт Сервер, используйте формат:
 

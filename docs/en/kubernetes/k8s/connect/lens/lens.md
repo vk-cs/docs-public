@@ -121,11 +121,11 @@
 
 1. Launch Lens and go to the **Catalog** section.
 
-    <warn>
+    {note:warn}
 
     If you have added a password to temporary environment variables, you need to launch Lens from the same terminal session with the command `lens-desktop`.
 
-    </warn>
+    {/note}
 
 1. Connect to the cluster in one of the following ways:
 

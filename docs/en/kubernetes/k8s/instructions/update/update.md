@@ -2,7 +2,7 @@ If the cluster uses not the latest [supported](../../concepts/versions/version-s
 
 You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters of versions 1.16 and below can only be upgraded by transferring a backup of data to a new cluster of the correct version, for example [using Velero](../../how-to-guides/velero-backup).
 
-<warn>
+{note:warn}
 
 - If a [component](../../concepts/update), that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
@@ -10,7 +10,7 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 
   If the cluster uses a modified Corefile, then back it up prior to updating the cluster.
 
-</warn>
+{/note}
 
 ## Before updating
 

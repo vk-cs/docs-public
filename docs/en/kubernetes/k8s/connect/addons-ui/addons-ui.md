@@ -46,11 +46,11 @@ Kiali is a web interface for working with Istio. To connect to it:
 
    A browser will open and you will be directed to the Kiali web interface. Learn more about working with Kiali in the [official documentation](https://kiali.io/docs/features/).
 
-   <warn>
+   {note:warn}
 
    Do not close this terminal session, otherwise access to the Kiali web interface will be lost.
 
-   </warn>
+   {/note}
 
 </tabpanel>
 <tabpanel>
@@ -66,11 +66,11 @@ Kiali is a web interface for working with Istio. To connect to it:
 
    A browser will open and you will be directed to the Query UI web interface. The web interface is available only via HTTP.
 
-   <warn>
+   {note:warn}
 
    Do not close this terminal session, otherwise access to the web interface will be lost.
 
-   </warn>
+   {/note}
 
 </tabpanel>
 </tabs>

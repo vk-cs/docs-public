@@ -16,11 +16,11 @@ There are several types of buckets that differ in both the purpose and the amoun
 
 You can create a bucket both in the VK Cloud Panel and using the AWS CLI.
 
-<warn>
+{note:warn}
 
 There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#cloud_storage_c24c9efe)
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -37,7 +37,7 @@ To create it, you should:
 2. Click the **Add** button.
 3. Select the type of bucket to be created and enter a DNS-compatible name.
 
-<warn>
+{note:warn}
 
 The bucket name must meet the conditions:
 
@@ -56,7 +56,7 @@ It is recommended to avoid using personal information, such as the project numbe
 
 After creating a bucket, its name cannot be changed.
 
-</warn>
+{/note}
 
 </tabpanel>
 <tabpanel>

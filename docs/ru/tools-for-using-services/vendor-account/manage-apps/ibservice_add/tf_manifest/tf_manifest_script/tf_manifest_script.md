@@ -59,8 +59,8 @@ Cloud-init позволяет настроить очередность выпо
 
 В разделе {linkto(../tf_manifest_steps/#tf_manifest_example)[text=%text]} приведен пример манифеста с применением скриптов в ресурсе `ivkcs_agent_exec`.
 
-<info>
+{note:info}
 
 Ресурсы и источники данных описаны в разделе [Справочник по провайдеру VK CS Infra (iVK CS)](../../../ivkcs).
 
-</info>
+{/note}

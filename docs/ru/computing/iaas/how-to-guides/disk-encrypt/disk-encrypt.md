@@ -1,10 +1,10 @@
-<err>
+{note:err}
 
 VK Cloud не несет ответственности за корректную работу стороннего ПО.
 
 [Сделайте резервную копию ВМ](/ru/storage/backups/instructions/create-backup-copy) перед шифрованием диска.
 
-</err>
+{/note}
 
 Настройте шифрование диска виртуальной машины с помощью [cryptsetup](https://manpages.ubuntu.com/manpages/trusty/man8/cryptsetup.8.html) для Linux.
 
@@ -84,11 +84,11 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 ## 2. Зашифруйте диск
 
-<err>
+{note:err}
 
 Перезапуск виртуальной машины до завершения [настройки загрузчика](#3_izmenite_parametry_zagruzchika) приведет к утрате доступа к ВМ.
 
-</err>
+{/note}
 
 1. Сделайте диск [незагрузочным](../../instructions/volumes#izmenenie_atributa_zagruzochnyy).
 2. Остановите все процессы, использующие диск:
@@ -143,11 +143,11 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
    Verify passphrase:
    ```
 
-   <warn>
+   {note:warn}
 
    Запомните ключевую фразу. Без нее невозможно дешифровать диск и использовать ВМ.
 
-   </warn>
+   {/note}
 
 7. Дождитесь завершения процесса шифрования:
 
@@ -207,11 +207,11 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 ## 3. Измените параметры загрузчика
 
-<err>
+{note:err}
 
 Перезапуск виртуальной машины до завершения настройки загрузчика приведет к утрате доступа к ВМ.
 
-</err>
+{/note}
 
 Настройте загрузчик, чтобы ключевая фраза для расшифровки диска запрашивалась при загрузке системы. Для ввода ключевой фразы используйте [VNC-консоль](../../instructions/vm/vm-console#vnc_konsol) виртуальной машины.
 

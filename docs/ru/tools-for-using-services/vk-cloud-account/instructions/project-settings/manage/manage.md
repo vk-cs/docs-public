@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 Дополнительные настройки проекта доступны в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/instructions/project-settings/manage).
 
-</info>
+{/note}
 
 ## Получение идентификатора проекта
 

@@ -15,11 +15,11 @@ The container service allows you to create Kubernetes clusters and run various s
   - Creating event-triggered data handlers.
   - Integration of Kubernetes clusters and data with other [VK Cloud machine learning platform services](/en/ml).
 
-<info>
+{note:info}
 
 VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Hosted](https://www.cncf.io/certification/software-conformance/#logos) by CNCF ([Cloud Native Computing Foundation](https://www.cncf.io/)). This means that the distribution has been tested for reliability and standards compliance, it meets all functional requirements of the community and is compatible with the standard [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/). VK Cloud is the only cloud provider in Russia that has achieved this certification.
 
-</info>
+{/note}
 
 ## Service features
 
@@ -39,11 +39,11 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 - One-click rolling update of clusters with no downtime. This applies to both minor and major versions of Kubernetes.
 
-  <info>
+  {note:info}
 
   Cluster updates are available starting with cluster version `1.17` and higher.
 
-  </info>
+  {/note}
 
 - Ensuring security at all stages of cluster operation:
 

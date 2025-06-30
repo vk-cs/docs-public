@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 Here is the article about applying SSL sertificates. To know how to create, edit and delete SSL certificates, read [Managing SSL certificates](../../manage-certificates).
 
-</info>
+{/note}
 
 <tabs>
 <tablist>

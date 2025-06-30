@@ -27,11 +27,11 @@
 
    A list of all backup plans in your project will open.
 
-   <info>
+   {note:info}
 
    For each plan, the list displays the total volume of VM backups included in the plan. Backups of DB and DBA instances are not included in the total volume calculation.
 
-   </info>
+   {/note}
 
 1. To find the required plan more easily in the list:
 
@@ -54,11 +54,11 @@
 
    This will open a list of all instances (VM, DB, and ADB instances) in your project that have been manually backed up.
 
-   <info>
+   {note:info}
 
    For each VM, the list displays the total volume of its manual backups. For DB and ADB instances, no volume data is displayed.
 
-   </info>
+   {/note}
 
 1. To find the required instance more easily in the list:
 
@@ -179,8 +179,8 @@ To delete individual instance backup copies:
 </tabpanel>
 </tabs>
 
-<info>
+{note:info}
 
 Delete unnecessary backups promptly to save storage space.
 
-</info>
+{/note}

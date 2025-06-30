@@ -20,8 +20,8 @@
   - `[VK Cloud] Сервис MLflow Deploy`;
   - `[VK Cloud] Сервис Spark в k8s`.
   
-<info>
+{note:info}
 
 Получить можно только данные мониторинга того проекта, в котором развернут сервис Grafana.
 
-</info>
+{/note}

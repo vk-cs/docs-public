@@ -22,7 +22,7 @@ This security feature is globally active on all of our servers and cannot be dis
 
 The IP addresses allocated to virtual machines belong to the VK Cloud platform and can be reassigned by both the user and the system when the user releases the IP address assigned to his project. In order to provide customers with uninterrupted services, technical support promptly responds to such complaints by eliminating activity.
 
-<warn>
+{note:warn}
 
 Technical support reports the existence of a complaint to the project owner at the registered postal address.
 
@@ -35,7 +35,7 @@ In order not to encounter a situation of suspicious activity conducted from a vi
 - pay attention to downloaded and installed software;
 - scan instances for malware or code.
 
-</warn>
+{/note}
 
 ## DDoS Protection
 

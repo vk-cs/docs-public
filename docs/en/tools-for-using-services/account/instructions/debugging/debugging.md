@@ -1,10 +1,10 @@
 Information about events and errors that occurred during the operation of the service is stored in VK Cloud logs. This data is used by technical support when analyzing emerging incidents.
 
-<info>
+{note:info}
 
 If there are failures in the running VM, provide technical support with [VM message logs](/en/computing/iaas/instructions/vm/vm-console#vm_message_logs).
 
-</info>
+{/note}
 
 To download logs locally:
 
@@ -18,11 +18,11 @@ To download logs locally:
 1. Click on the user's name in the header of the page.
 1. From the drop-down list, select **Application debug**.
 
-   <info>
+   {note:info}
 
    Detailed information about each event in JSON format is available when you click on it.
 
-   </info>
+   {/note}
 
 1. Configure the displayed entries:
 

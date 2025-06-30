@@ -29,10 +29,10 @@ curl --location "https://mcs.mail.ru/public-dns/v2/dns/" \
 ```
 {/cut}
 
-<info>
+{note:info}
 
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/public-dns-api.json "download").
 
-</info>
+{/note}
 
 ![{swagger}](assets/public-dns-api.json)

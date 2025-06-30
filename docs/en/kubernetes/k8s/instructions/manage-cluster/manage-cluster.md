@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
 
-</warn>
+{/note}
 
 ## Start or stop cluster
 
@@ -99,11 +99,11 @@ If the private part of the specified key pair has been compromised or lost, you 
 
 The operation can only be performed when the cluster is running.
 
-<warn>
+{note:warn}
 
 After performing this operation, the existing public keys on the cluster will be removed.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

@@ -88,13 +88,13 @@
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-<warn>
+{note:warn}
 
 When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
-</warn>
+{/note}
 
 The procedure for installing add-ons is discussed in the [relevant section](../advanced-installation).
 
@@ -144,11 +144,11 @@ If the edit failed with an error:
 
 Only an increase in the add-on version is available.
 
-<warn>
+{note:warn}
 
 To update some add-ons, you will first need to uninstall the previous version.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

@@ -48,11 +48,11 @@ To find the values ​​of the `os_distro` and `os_version` meta tags, use, for
 
    1. Use the `Short ID` value to define the `os_distro` meta tag and `Version` for the `os_version` meta tag.
 
-<info>
+{note:info}
 
 If your local copy of the libosinfo database does not contain information about the required OS version, the copy may be out of date. Try to update the package for working with libosinfo.
 
-</info>
+{/note}
 
 ## Installing a meta tag
 

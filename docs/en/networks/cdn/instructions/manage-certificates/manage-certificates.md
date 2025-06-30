@@ -1,8 +1,8 @@
-<info>
+{note:info}
 
 To apply an SSL certificate to a CDN resource, follow the [instructions](../manage-cdn/ssl).
 
-</info>
+{/note}
 
 ## Creating an SSL certificate
 
@@ -29,11 +29,11 @@ To apply an SSL certificate to a CDN resource, follow the [instructions](../mana
 
 ## Editing SSL certificate
 
-<warn>
+{note:warn}
 
 You can edit the certificate's name only. To edit public and private key, create a new one.
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

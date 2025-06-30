@@ -127,11 +127,11 @@ VK Cloud предоставляет [техническую поддержку](
 
 Логическая отказоустойчивость реализована с помощью зон доступности (availability zone), которые объединяются в [регионы](/ru/tools-for-using-services/account/concepts/regions).
 
-<info>
+{note:info}
 
 Статус зон доступности, сервисов и инфраструктуры VK Cloud можно проверить на странице [Статус работы сервисов](https://status.msk.cloud.vk.com).
 
-</info>
+{/note}
 
 ### {heading(Зоны доступности)[id=az]}
 

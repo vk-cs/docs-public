@@ -3,8 +3,8 @@
 1. Enter the necessary changes.
 1. Click the **Save** button.
 
-<info>
+{note:info}
 
 Please note you can't change the resource type.
 
-</info>
+{/note}

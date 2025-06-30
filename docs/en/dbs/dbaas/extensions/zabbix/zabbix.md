@@ -57,13 +57,13 @@ When selecting Zabbix agent version 3.4, the components of the template [mysbix]
 
 To start using [import](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) [this template](https://raw.githubusercontent.com/sergiotocalini/mysbix/master/zbx3.4_template_db_mysql.xml).
 
-<warn>
+{note:warn}
 
 In some versions of the Zabbix server, a template with the same name may already be installed. We recommend changing the template name in the XML file to a unique one before importing to avoid collisions.
 
 When choosing the agent version v.5.0, use the template [Template DB MySQL by Zabbix agent](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/mysql_agent?at=refs%2Fheads%2Frelease%2F5.0) preinstalled on Zabbix server version 5.0 and higher.
 
-</warn>
+{/note}
 
 ## Galera Monitoring
 
@@ -148,11 +148,11 @@ When selecting Zabbix agent version 5.0, a second-generation agent will be insta
 3. Install the Zabbix agent on an instance or all cluster instances with the required user parameters.
 4. Connect the instances to the Zabbix server in the Configuration -> Hosts -> Create Hosts section ([more details here](https://www.zabbix.com/documentation/5.4/ru/manual/config/hosts/host)).
 
-<warn>
+{note:warn}
 
 Use the short instance name (hostname -s) for the value of the Hostname, and PSK identity fields (if PSK is used).
 
 5. Assign the monitoring template(s) for the instance or for the group that the instance belongs to ([more details here](https://www.zabbix.com/documentation/5.4/ru/manual/config/templates/linking)).
 6. After 10 minutes, make sure that the data from the agent arrives on the server in the Monitoring -> Latest Data section by filtering the content by instance name. You can view historical information on metrics in the same place — in the last column.
 
-</warn>
+{/note}

@@ -17,11 +17,11 @@ A [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-vol
   - Either mount this PV in RWO mode by a single cluster node.
   - Or mount this PV in RWX mode by multiple cluster nodes.
 
-<info>
+{note:info}
 
 Access to PVC in RWX mode is not implemented in Cloud Containers. To organize shared access to data from several pods on different nodes, deploy [NFS server](/ru/computing/iaas/instructions/fs-manage) on a separate virtual machine.
 
-</info>
+{/note}
 
 ## PV and PVC lifecycle
 
@@ -108,12 +108,12 @@ Available policies:
 
   Depending on the selected PV type, the underlying storage associated with the PV may also be deleted.
 
-  <warn>
+  {note:warn}
 
   Use this policy and the storage classes that implement it with caution: data loss is possible.
   In VK Cloud, due to [integration with Cinder CSI](../../concepts/storage#working_with_container_storage_interface_csi), deleting a PV will also delete the VK Cloud disk associated with it.
 
-  </warn>
+  {/note}
 
 In VK Cloud Kubernetes clusters, the storage type selected affects [available reclaim policies](../../concepts/storage#available_reclaim_policies_for_persistent_volumes).
 

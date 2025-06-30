@@ -25,11 +25,11 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 </tabpanel>
 <tabpanel>
 
-<warn>
+{note:warn}
 
 The disk to create the image must be disconnected from the VM and have the status `available`.
 
-</warn>
+{/note}
 
 1. Get the `ID` of the disk:
 
@@ -58,19 +58,19 @@ The disk to create the image must be disconnected from the VM and have the statu
 
 The VK Cloud service supports uploading your own virtual machine images with [some restrictions](../../../concepts/about#operating_system) by operating systems.
 
-<info>
+{note:info}
 
 Only RAW images are supported. If your image is in a different format, [convert it](../../../how-to-guides/packer#1_convert_image_to_raw_format).
 
-</info>
+{/note}
 
-<warn>
+{note:warn}
 
 The recommended way to import an image is using the CLI.
 
 When downloading through your VK Cloud management console, the size of the downloaded file is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes).
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>
@@ -159,11 +159,11 @@ By default, all images have the `private` status. To share an image with other p
 </tablist>
 <tabpanel>
 
-<info>
+{note:info}
 
 Through your VK Cloud management console, you can allow access to the image only for certain projects.
 
-</info>
+{/note}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Cloud Servers → Images**.

@@ -45,11 +45,11 @@
 1. Нажмите кнопку **Next**.
 1. Установите агент на целевую ВМ, следуя инструкции для дистрибутива Ubuntu.
 
-   <info>
+   {note:info}
 
    Можно установить агенты миграции на группу ВМ с разными ОС через Ansible.
 
-   </info>
+   {/note}
 
    {cut(Манифест Ansible для установки агентов)}
 
@@ -111,11 +111,11 @@
    - **Volume availability zone**: `MS1`.
    - **Volume type**: `CEPH-HDD`.
 
-   <info>
+   {note:info}
 
    Подробней о репликации и создании расписания резервного копирования в [официальной документации Hystax](https://hystax.com/documentation/dr/dr_overview.html#edit-replication-settings-schedule).
 
-   </info>
+   {/note}
 
 1. Нажмите кнопку **Save**.
 1. Раскройте меню ВМ `Ubuntu-DR` и выберите опцию **Start Protection**.
@@ -209,7 +209,7 @@
      1. Нажмите кнопку **Save**.
      1. Повторно запустите план.
 
-</info>
+{/note}
 
 ## 5. Восстановите инфраструктуру в VK Cloud
 

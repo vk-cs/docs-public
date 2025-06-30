@@ -180,11 +180,11 @@ schema:
 ```
 {/caption}
 
-<info>
+{note:info}
 
 Подробное описание параметров секций `billing` и `schema` приведено в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} и {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} соответственно.
 
-</info>
+{/note}
 
 ## {heading(Предоплатная тарифная опция типа integer с шагом изменения)[id=option_int_step_prepayed]}
 
@@ -229,19 +229,19 @@ schema:
    ![pic1](../../../assets/Option_int_with_user_step_prepayed3.png)
    {/caption}
 
-<info>
+{note:info}
 
 Подробное описание параметров секций `billing` и `schema` приведено в разделах {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} и {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} соответственно.
 
-</info>
+{/note}
 
 ## {heading(Постоплатная тарифная опция типа integer или number)[id=option_postpayed_ib]}
 
-<warn>
+{note:warn}
 
 Имя YAML-файла постоплатной тарифной опции должно соответствовать значению `param` в API-запросе на передачу метрик (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]}).
 
-</warn>
+{/note}
 
 Заполните файл `parameters/<OPTION_NAME>.yaml` следующим образом:
 
@@ -677,11 +677,11 @@ schema:
       * `maximum` и `minimum` — максимальное и минимальное значения (опционально).
       * `tag` — тег. Значение должно быть такое же, как в файле, описывающем тип диска.
 
-      <info>
+      {note:info}
 
       Размер диска измеряется в ГБ.
 
-      </info>
+      {/note}
 
    {caption(Пример описания размера диска через тарифную опцию типа `integer` с шагом изменения 1, формат `YAML`)[align=left;position=above]}
    ```yaml
@@ -698,11 +698,11 @@ schema:
    ```
    {/caption}
 
-<warn>
+{note:warn}
 
 Стоимость диска определяется тарифами облачной платформы, поэтому ее нельзя задать в описании тарифной опции.
 
-</warn>
+{/note}
 
 На {linkto(#pic_option_fill_in_volume)[text=рисунке %number]} приведено, как вышеописанные опции (тип и размер диска) будут отображаться в мастере конфигурации тарифного плана.
 

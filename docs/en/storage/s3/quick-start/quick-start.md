@@ -2,11 +2,11 @@ Quick Start will help you get started with the service and get acquainted with i
 
 After completing all the steps of the quick start, you will learn how to upload objects to a bucket and provide access to the uploaded objects via a link.
 
-<warn>
+{note:warn}
 
 Objects uploaded to the bucket [are subject to tariffication](../tariffication). After completing the quick start, [delete these objects and the bucket](#delete_unused_resources) if you no longer need them.
 
-</warn>
+{/note}
 
 ## Before you start
 
@@ -21,11 +21,11 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    1. Click the **Create** button.
    1. In the window, copy and save the **Access Key ID** and **Secret Key** values.
 
-   <warn>
+   {note:warn}
 
    After you close the window, the **Secret Key** value cannot be restored. If the value is lost, create a new account.
 
-   </warn>
+   {/note}
 
 1. Configure the AWS CLI to work with the created account:
 
@@ -91,11 +91,11 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    https://hb.ru-msk.vkcloud-storage.ru/<bucket name>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
    ```
 
-   <info>
+   {note:info}
 
    Such a link is valid for a limited time (by default 1 hour). After this time, you need to generate a new link.
 
-   </info>
+   {/note}
 
 ## 3. Add object with public ACL settings and grant access to it
 

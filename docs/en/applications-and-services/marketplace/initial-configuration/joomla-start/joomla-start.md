@@ -70,11 +70,11 @@ To deploy Joomla service in the VK Cloud project:
     - `default_db_server` — database hostname.
     - `keypair` — private key for SSH connection.
 
-   <info>
+   {note:info}
 
    If the access data is lost, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new one.
 
-   </info>
+   {/note}
 
 1. Follow the link from `joomla_login_url`.
 1. Click **Log In** and log in to Joomla using the administrator login and password obtained from the link in the email.

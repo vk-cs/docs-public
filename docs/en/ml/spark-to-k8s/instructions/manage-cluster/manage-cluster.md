@@ -54,13 +54,13 @@
 
 ## Changing the virtual machine type for master nodes
 
-<warn>The virtual machine type can only be changed when the cluster is running.</warn>
+{note:warn}The virtual machine type can only be changed when the cluster is running.{/note}
 
 The process is described in detail in the [Cluster Node Scaling](/en/kubernetes/k8s/concepts/scale) section.
 
 ## Connecting to a cluster
 
-<warn>Do not use the kubectl configuration file and key pair to connect to the cluster.</warn>
+{note:warn}Do not use the kubectl configuration file and key pair to connect to the cluster.{/note}
 
 To connect to the cluster, use access tokens in the VK Cloud management console or the Cloud ML Platform library. The token creation process is described in detail in the [Authentication and authorization](/ru/ml/spark-to-k8s/ml-platform-library/authz "change-lang") or in the [Working with tokens](/en/ml/spark-to-k8s/instructions/tokens) section.
 

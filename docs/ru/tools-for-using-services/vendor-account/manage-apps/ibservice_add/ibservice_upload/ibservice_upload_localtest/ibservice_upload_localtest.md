@@ -4,11 +4,11 @@
 
 При локальном тестировании используйте подсети существующих сетей или создайте новую сеть и используйте ее подсеть (подробнее — в разделе [Сети и подсети](/ru/networks/vnet/instructions/net)).
 
-<err>
+{note:err}
 
 Использовать внешние сети (например, `ext-net` или `internet`) и их подсети запрещено.
 
-</err>
+{/note}
 
 Чтобы локально протестировать манифест Terraform `plans/<PLAN_NAME>/deployment/deploy.tf`:
 
@@ -49,11 +49,11 @@
 1. Отправьте письмо на [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com), чтобы получить плагин провайдера iVK CS. В письме укажите ОС компьютера, на котором будете локально тестировать манифест, и ее архитектуру (например, Linux на архитектуре amd64).
 1. Если файла с конфигурацией CLI для Terraform нет на локальном компьютере или он был очищен, то скачайте плагин провайдера null c [официального сайта Terraform](https://hashicorp-releases.mcs.mail.ru/terraform-provider-null/).
 
-   <info>
+   {note:info}
 
    Если в файле с конфигурацией CLI для Terraform настроена одновременная работа с зеркалами и локальными провайдерами, то Terraform скачает плагин провайдера null автоматически.
 
-   </info>
+   {/note}
 1. В директории `terraform.d` создайте директорию `plugins`. Директория `terraform.d` создается на компьютере автоматически после установки Terraform, ее путь зависит от ОС (подробнее — [в официальной документации Terraform](https://developer.hashicorp.com/terraform/cli/config/config-file#implied-local-mirror-directories)).
 1. В директории `plugins` создайте следующую структуру директорий:
 

@@ -1,10 +1,10 @@
-<err>
+{note:err}
 
 VK Cloud is not responsible for the correct operation of third-party software.
 
 [Make a backup copy of the VM](/en/storage/backups/instructions/create-backup-copy) before encrypting the disk.
 
-</err>
+{/note}
 
 Configure virtual machine disk encryption using [cryptsetup](https://manpages.ubuntu.com/manpages/trusty/man8/cryptsetup.8.html) for Linux.
 
@@ -84,11 +84,11 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 ## 2. Encrypt the disk
 
-<err>
+{note:err}
 
 Restarting the VM before [bootloader configuration](#3_change_the_loader_parameters) is completed will result in loss of access to the VM.
 
-</err>
+{/note}
 
 1. Make the disk [non-bootable](../../instructions/volumes#replacing_root_disk).
 2. Stop all processes using the disk:
@@ -143,11 +143,11 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
    Verify passphrase:
    ```
 
-   <warn>
+   {note:warn}
 
    Remember the key phrase. Without it, it is impossible to decrypt the disk and use the VM.
 
-   </warn>
+   {/note}
 
 7. Wait for the encryption process to complete:
 
@@ -207,11 +207,11 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
 
 ## 3. Change the loader parameters
 
-<err>
+{note:err}
 
 Restarting the VM before the bootloader configuration is completed will result in the loss of access to the VM.
 
-</err>
+{/note}
 
 Configure the bootloader so that the passphrase for decrypting the disk is requested when the system boots. To enter a passphrase, use the [VNC console](../../instructions/vm/vm-console#the_vnc_console) of the VM.
 

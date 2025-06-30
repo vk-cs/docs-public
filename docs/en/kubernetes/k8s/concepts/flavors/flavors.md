@@ -16,11 +16,11 @@ The following templates becomes available upon request to [technical support](ma
 
 - Customized configurations templates for special needs.
 
-<info>
+{note:info}
 
 Cost high-performance and customized of configurations is calculated individually.
 
-</info>
+{/note}
 
 ## Calculating the right cluster configuration
 
@@ -71,11 +71,11 @@ The number of pods launched on a node affects the performance of the cluster. Yo
 
 When choosing the size of nodes and their number in a cluster, choose a distribution that maximizes resource utilization and maintains the required level of fault tolerance and scalability.
 
-<info>
+{note:info}
 
 If you change the VM type for a group of nodes, the reserved resources are not changed, as they are set when the node is created.
 
-</info>
+{/note}
 
 ## Available computing resources on the node
 
@@ -122,11 +122,11 @@ If you create or edit a cluster via Terraform or CLI, specify the availability z
 
 When you work via the VK Cloud management console, only templates with GPUs that are in the same availability zone as this node will be available in the **Node type** box.
 
-<warn>
+{note:warn}
 
 GPU flavors cannot be used for cluster master nodes.
 
-</warn>
+{/note}
 
 ### {heading(GPU sharing technologies)[id=gpu-sharing]}
 

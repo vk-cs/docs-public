@@ -24,11 +24,11 @@ To see the list of endpoints for your region:
 | Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/storage/backups/how-to-guides/api-examples) of VMs and database instances |
 | Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/computing/iaas/instructions/fs-manage) |
 
-<info>
+{note:info}
 
 The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the management console allows [viewing VM logs](/en/monitoring-services/logging/instructions/view-logs).
 
-</info>
+{/note}
 
 {cut(Other endpoints)}
 
@@ -108,8 +108,8 @@ To get the Project ID value for a project:
 
     The value is available on both tabs, under the headings **Project ID** and **Project ID / tenant_id**, respectively.
 
-    <info>
+    {note:info}
 
     On the **API Access** tab, the **Project ID** value is displayed if API access is activated.
 
-    </info>
+    {/note}

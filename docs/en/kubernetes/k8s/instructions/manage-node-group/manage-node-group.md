@@ -1,8 +1,8 @@
-<warn>
+{note:warn}
 
 Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
 
-</warn>
+{/note}
 
 ## Add worker node group
 
@@ -91,13 +91,13 @@ These operations are described in detail in [Scaling cluster nodes](../scale) se
 ## {heading(Customise labels and taints)[id=labels_taints]}
 
 
-<warn>
+{note:warn}
 
 Configure taints with caution if the node already hosts a workload.
 
 Re-configuring taints can cause pods to be evicted to other nodes. If they do not have enough resources to host the pods, it can lead to partial or complete inaccessibility of applications that use the pods.
 
-</warn>
+{/note}
 
 Labels and taints can be set both with the interfaces supported by the VK Cloud platform (management console and Terraform) and with `kubectl`. When assigning labels and taints, keep in mind that labels and taints set via the platform interfaces are periodically synchronized with the Kubernetes cluster (in one direction only). During synchronization, labels and taints set with the platform will overwrite labels and taints that were set with `kubectl` if their keys match. Other labels and taints that were set with `kubectl` and were not overwritten by values from the platform are valid in the cluster, but are not displayed, e.g. in the Terraform state or management console.
 

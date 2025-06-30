@@ -32,11 +32,11 @@ A list of origin groups will be displayed.
 1. (Optional) [Edit](#editing_origins_in_group) the list of origins in the group.
 1. Make sure, that DNS records are configured for the domains of all added sources (including disabled ones).
 
-   <warn>
+   {note:warn}
 
    If VK Cloud cannot check the availability of these domains using a DNS query, the origin group will not be created.
 
-   </warn>
+   {/note}
 
 {include(/en/_includes/_cdn_origin.md)[tags=4XX_5XX]}
 
@@ -128,11 +128,11 @@ A list of origin groups will be displayed.
 1. (Optional) [Edit](#editing_origins_in_group) origins in the group.
 1. Make sure, that DNS records are configured for the domains of all added sources (including disabled ones).
 
-   <warn>
+   {note:warn}
 
    If VK Cloud cannot check the availability of these domains using a DNS query, the origin group will not be created.
 
-   </warn>
+   {/note}
 
 {include(/en/_includes/_cdn_origin.md)[tags=4XX_5XX]}
 
@@ -143,11 +143,11 @@ A list of origin groups will be displayed.
 
 ## Deleting group
 
-<warn>
+{note:warn}
 
 You cannot delete the origin group if CDN servers use it. To delete such group, firstly link another origin group with the CDN servers or [delete CDN servers](../delete-resource).
 
-</warn>
+{/note}
 
 <tabs>
 <tablist>

@@ -11,11 +11,11 @@
    - **Disk size**: specify the disk size in gigabytes.
    - **Boot disk**: enable the option if you want to make the disk bootable.
 
-       <info>
+       {note:info}
 
        The boot disk can be used as the root disk of the VM or connected to the VM as an additional disk from which the operating system can be loaded.
 
-       </info>
+       {/note}
 
 {includetag(disk)}
     - **Connect disk to instance**: if you need to connect a disk to a VM immediately after creation, enable this option and select the VM you need in the **Choose instance** box.

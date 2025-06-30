@@ -6,11 +6,11 @@ Marketplace is a VK Cloud subsystem that provides customers with access to third
 
 All details on infrastructure deployment and software or creating a tenant (account) remain on the VK Cloud side. The user receives a prepared instance of the service (an instance of the service), which, if necessary, can be customized to their needs. All deployed instances of the service are [charged](../../tariffication) and [managed](../../instructions/pr-instance-manage) within the VK Cloud project. The Marketplace helps you launch services faster and simplifies their support.
 
-<warn>
+{note:warn}
 
 By using the services from the Marketplace, you agree to the [user Agreement](/ru/intro/start/legal/marketplace "change-lang").
 
-</warn>
+{/note}
 
 ## Types of services
 

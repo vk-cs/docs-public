@@ -21,8 +21,8 @@
 
 Если юридическое лицо прошло дорегистрацию, сформированный счет содержит полные реквизиты, необходимые для оформления банковского платежного поручения.
 
-<err>
+{note:err}
 
 В платежном поручении в назначении платежа обязательно укажите [идентификатор (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) проекта.
 
-</err>
+{/note}

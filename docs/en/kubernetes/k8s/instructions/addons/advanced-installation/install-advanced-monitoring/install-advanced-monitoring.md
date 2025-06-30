@@ -34,11 +34,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - the name of the namespace where the add-on will be installed;
       - [add-on settings code](#editing_addon_settings_code_during_installation).
 
-        <warn>
+        {note:warn}
 
         An incorrectly set settings code can lead to errors during installation or the add-on is inoperable.
 
-        </warn>
+        {/note}
 
    1. Click the **Install addon** button.
 
@@ -191,11 +191,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       </tabpanel>
       </tabs>
 
-      <warn>
+      {note:warn}
 
       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-      </warn>
+      {/note}
 
    1. Click the **Install addon** button.
 
@@ -215,13 +215,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tabpanel>
 <tabpanel>
 
-<info>
+{note:info}
 
 During quick installation, the add-on settings code is not edited. A Kubernetes secret will be created, containing a permanent password to sign in to the Grafana web interface.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
-</info>
+{/note}
 
 1. Install the add-on:
 
@@ -264,12 +264,12 @@ If this does not suit you, perform a **standard installation** or **installation
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
-<info>
+{note:info}
 
 - Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
 - The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
 
-</info>
+{/note}
 
 ### Setting temporary password for Grafana web interface
 
@@ -312,11 +312,11 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 
 If the add-on was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret.
 
-<info>
+{note:info}
 
 If, when adding an add-on, a service name other than `kube-prometheus-stack` or a namespace other than `prometheus-monitoring` were selected, adjust the steps below.
 
-</info>
+{/note}
 
 <tabs>
 <tablist>
@@ -369,11 +369,11 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
 If the add-on was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret. If this secret has been lost, you can reset the password to access Grafana again.
 
-<info>
+{note:info}
 
 Further the `kube-prometheus-stack` service name and the `prometheus-monitoring` namespace are used. If other parameters have been selected when adding the add-on, modify the commands accordingly.
 
-</info>
+{/note}
 
 1. Get the name of the Grafana pod:
 

@@ -119,11 +119,11 @@ To send and receive traffic, assign a security group to the VM. For previously c
 1. Click **Apply** in the line with the rule group.
 1. Press **Confirm**.
 
-<info>
+{note:info}
 
 Successful completion of this step ensures that ICMP connectivity exists between the created VMs. Network connectivity will work even if one VM in the assigned rule group does not have a floating IP address.
 
-</info>
+{/note}
 
 ## Step 4. Connect to the VM via ssh
 

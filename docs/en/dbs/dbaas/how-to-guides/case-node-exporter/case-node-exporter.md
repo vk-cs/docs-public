@@ -177,11 +177,11 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
    {/cut}
 
-   <warn>
+   {note:warn}
 
    Installation of additional software on virtual machines of the Cloud Databases service is possible only through a request to [technical support](mailto:support@mcs.mail.ru).
 
-   </warn>
+   {/note}
 
 1. Make sure to change the indicators of the Grafana charts.
 

@@ -6,11 +6,11 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
 
 1. Prepare an ISO file with the image of the required OS, for example, download it from the official website. This guide uses the Ubuntu Server 20.04 OS image.
 
-    <warn>
+    {note:warn}
 
     The image must have the VirtIO drivers installed.
 
-    </warn>
+    {/note}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli##1_install_the_openstack_client), and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. In your project, create a bootable Live CD image for the selected OS by running the command:
@@ -59,11 +59,11 @@ Prerequisite for the recovery procedure: a virtual boot disk must be connected t
 
     {/cut}
 
-    <info>
+    {note:info}
 
     The created image will appear in your VK Cloud management console in the **Cloud Servers** → **Images** section.
 
-    </info>
+    {/note}
 
 1. Perform an emergency boot of the VM from the created Live CD. To do this, run the command:
 

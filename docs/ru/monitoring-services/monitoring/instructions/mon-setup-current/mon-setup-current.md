@@ -91,8 +91,8 @@
    </tabpanel>
    </tabs>
 
-<info>
+{note:info}
 
 Метрики по этой виртуальной машине можно найти по метке `host` со значением `hostname` ВМ.
 
-</info>
+{/note}
