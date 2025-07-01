@@ -79,7 +79,14 @@ A list of backups for the selected schedule will be displayed.
 1. Go to the **Point-in-time recovery** tab.
 1. Click the name of the required schedule.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Restore from backup**.
-1. In the **Create instance** step, specify the necessary parameters and click **Next step**.
+1. In the **Create instance** step, specify the necessary parameters for the [database being created](/en/dbs/dbaas/instructions/create) and click the **Next step** button.
+
+   {note:warn}
+   The instance you create may require more disk space than the backup copy size because Cloud Backup uses data compression.
+
+   Specify a disk size for the instance equal to the size of the original instance that was backed up. If it is unknown, specify the disk size 2–3 times larger than the size of backup copy.
+   {/note}
+
 1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave this field empty, the most recently created backup will be selected automatically.
 1. Click **Create database**.
 
