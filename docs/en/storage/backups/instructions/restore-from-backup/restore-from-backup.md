@@ -70,7 +70,14 @@
     </tabpanel>
     <tabpanel>
 
-    1. Configure the parameters of the database instance being created.
+    1. Configure the parameters of the database instance [being created](/en/dbs/dbaas/instructions/create).
+
+       {note:warn}
+       The instance you create may require more disk space than the backup copy size because Cloud Backup uses data compression.
+
+       Specify a disk size for the instance equal to the size of the original instance that was backed up. If it is unknown, specify the disk size 2–3 times larger than the size of backup copy.
+       {/note}
+
     1. Click **Next step**.
 
     The process of creating a new database instance will start.
