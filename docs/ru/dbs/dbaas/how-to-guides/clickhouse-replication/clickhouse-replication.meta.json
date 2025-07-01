@@ -1,9 +1,9 @@
 {
     "title": "Использование реплицируемых и распределенных таблиц ClickHouse",
-    "pageDescription": "Настройка репликации данных для Clickhouse на уровне таблиц.",
-    "shortDescription": "Как настроить репликацию данных для СУБД Clickhouse",
+    "pageDescription": "Настройка репликации данных для ClickHouse на уровне таблиц.",
+    "shortDescription": "Как настроить репликацию данных для СУБД ClickHouse",
     "metaTitle": "Использование реплицируемых и распределенных таблиц ClickHouse",
-    "metaDescription": "Настройка репликации данных для Clickhouse на уровне таблиц.",
+    "metaDescription": "Настройка репликации данных для ClickHouse на уровне таблиц.",
     "sectionTitle": "Использование реплицируемых и распределенных таблиц ClickHouse",
     "icon": "",
     "weight": 4,
