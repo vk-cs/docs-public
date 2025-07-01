@@ -28,7 +28,7 @@ Ingress-контроллер можно развернуть [в связке с
 
 К этим приложениям будет организован доступ через Ingress-контроллер с помощью ресурса Ingress.
 
-Для демонстрации будут использованы приложения `tea` и `coffee` из [примера Cafe от NGINX](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example). Каждое приложение состоит из ReplicaSet, Deployment и Service, соотвествующего этому Deployment.
+Для демонстрации будут использованы приложения `tea` и `coffee` из [примера Cafe от NGINX](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example). Каждое приложение состоит из ReplicaSet, Deployment и Service, соответствующего этому Deployment.
 
 Чтобы развернуть демо-приложения:
 
