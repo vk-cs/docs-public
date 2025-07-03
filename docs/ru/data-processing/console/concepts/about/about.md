@@ -1,4 +1,4 @@
-Data Platform UI Console (DP Console) — сервис для упрощения работы с Data Platform.
+Data Platform UI Console (DP Console) — сервис для оптимизации работы с Data Platform.
 
 Сервис представляет дополнительный пользовательский интерфейс для централизованного управления и группировки дата-сервисов в Data Platform.
 
