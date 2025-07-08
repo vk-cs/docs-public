@@ -14,6 +14,13 @@ In some cases, previously accrued bonuses may be canceled or denied. See more in
 
 {/cut}
 
+
+{cut(What do I do if I haven't received bonuses for migrating to the VK Cloud platform, testing its performance, or participating in other promotional activities?)}
+
+If you haven't received your [bonuses](../concepts/balance#bonuses), contact your personal manager or send a request via the [feedback form](https://cloud.vk.com/form/).
+
+{/cut}
+
 {cut(In what order are the bonuses charged, why could they have expired?)}
 
 [Bonuses](../concepts/balance#bonuses) in VK Cloud are spent on using cloud services and resources. There are different types of bonuses, each type of bonus can be spent only on VK Cloud services corresponding to it. One bonus is equal to one ruble.
