@@ -6,6 +6,6 @@
   "metaDescription": "Как организовать передачу данных между On-premises инфраструктурой и платформой VK Cloud, используя выделенное подключение и продвинутый маршрутизатор",
   "sectionTitle": "Подключение к VK Cloud через сеть Cloud Direct Connect",
   "icon": "",
-  "weight": 2,
-  "uuid": "13dbc522-afdc-466f-b5da-9b52a5f995e3"
+  "weight": 0,
+  "uuid": ""
 }
