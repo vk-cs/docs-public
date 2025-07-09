@@ -4,11 +4,11 @@ With the help of ready-made infrastructure solutions, VK Cloud, in partnership w
 
 ## Description
 
-Service "1C: Ready Workplace" allows you to rent popular software products from 1C:
+The **1C: Ready Workplace** service allows you to rent popular software products from 1C:
 
-- 1c accounting
-- 1C: Salary and Human Resources
-- 1C: Management of our company
+- 1C: Accounting
+- 1C: Salary and Human Resources Management
+- 1C: Company Management
 
 The service is a remote user access to selected 1C programs deployed in the cloud infrastructure through a browser.
 
@@ -16,11 +16,11 @@ The service is a remote user access to selected 1C programs deployed in the clou
 
 Working with a ready-made 1C application has advantages over deploying your own server and setting up software:
 
-- **Fast access.** The work is carried out through a web browser, where the application is accessed from any computer connected to the Internet.
-- **Free trial period** . The ability to test the service and evaluate its functionality.
-- **Flexible payment.** Payment on a monthly basis, according to the rental model, allows you to significantly save the budget, where all costs are transparent and can be regulated.
-- **Improvements on demand.** There is no need to hire IT specialists to configure and maintain the application. You can get advice or order a revision by sending an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
-- **Security** . The application infrastructure is based on the VK Cloud fault-tolerant services platform, where virtual machines provide reliable storage and processing of 1C applications.
+- **Fast access**. The work is carried out through a web browser, where the application is accessed from any computer connected to the Internet.
+- **Free trial period**. The ability to test the service and evaluate its functionality.
+- **Flexible payment**. Payment on a monthly basis, according to the rental model, allows you to significantly save the budget, where all costs are transparent and can be regulated.
+- **Improvements on demand**. There is no need to hire IT specialists to configure and maintain the application. You can get advice or order a revision by sending an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
+- **Security**. The application infrastructure is based on the VK Cloud fault-tolerant services platform, where virtual machines provide reliable storage and processing of 1C applications.
 
 ## Who benefits from 1C: timing
 
@@ -39,8 +39,8 @@ The cloud service reduces the initial IT costs, because as your business expands
 
 Depending on the number of required licenses, the application can be created in file or client-server mode:
 
-- **File mode** : recommended for infobases in which up to 5 users are supposed to work simultaneously (simultaneous connection sessions). For the file infobase, up to 30 GB of total data volume is provided, including 5 GB for the working infobase and 25 GB for all its backups.
-- **Client-server mode** : this type of operation is recommended for "heavy" infobases, as well as for infobases in which the simultaneous operation of 6 to 50 users (connection sessions). For a client-server database, no more than 60 GB of total data is provided, including 10 GB for a working infobase and 50 GB for its backups.
+- **File mode**: recommended for infobases in which up to 5 users are supposed to work simultaneously (simultaneous connection sessions). For the file infobase, up to 30 GB of total data volume is provided, including 5 GB for the working infobase and 25 GB for all its backups.
+- **Client-server mode**: this type of operation is recommended for "heavy" infobases, as well as for infobases in which the simultaneous operation of 6 to 50 users (connection sessions). For a client-server database, no more than 60 GB of total data is provided, including 10 GB for a working infobase and 50 GB for its backups.
 
 **Note**
 

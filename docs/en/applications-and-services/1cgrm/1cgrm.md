@@ -1,1 +1,7 @@
-Cloud service "1C: Enterprise" allows you to connect on the platform VK Cloud applications "1C: Accounting", "1C: Salary and HR management", "1C: Management of our company" in the form of SaaS. The personal data uploaded to the system is stored on the territory of Russia in accordance with FZ-152.
+The **1C: Ready Workplace** cloud service allows you to enable the following 1C applications in VK Cloud as SaaS: 
+
+- 1C: Accounting
+- 1C: Salary and Human Resources Management
+- 1C: Company Management
+ 
+The personal data uploaded to the system is stored on the territory of Russia in accordance with FZ-152.

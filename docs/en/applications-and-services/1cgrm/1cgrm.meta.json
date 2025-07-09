@@ -1,10 +1,10 @@
 {
-  "title": "1C Workplace",
-  "pageDescription": "Cloud service \"1C: Enterprise\" allows you to connect on the platform VK Cloud applications \"1C: Accounting\", \"1C: Salary and HR management\", \"1C: Management of our company\" in the form of SaaS. The personal data uploaded to the system is stored on the territory of Russia in accordance with FZ-152.",
-  "shortDescription": "Cloud service \"1C: Enterprise\" allows you to connect on the platform VK Cloud applications \"1C: Accounting\", \"1C: Salary and HR management\", \"1C: Management of our company\" in the form of SaaS. The personal data uploaded to the system is stored on the territory of Russia in accordance with FZ-152.",
-  "metaTitle": "1C Workplace",
+  "title": "1C Ready Workplace",
+  "pageDescription": "1C: Enterprise cloud service allows you to enable the following 1C applications in VK Cloud as SaaS: 1C: Accounting, 1C: Salary and Human Resources Management, 1C: Company Management. The personal data uploaded to the system is stored on the territory of Russia in accordance with FZ-152.",
+  "shortDescription": "1C: Enterprise cloud service allows you to enable the following 1C applications in VK Cloud as SaaS: 1C: Accounting, 1C: Salary and Human Resources Management, 1C: Company Management. The personal data uploaded to the system is stored on the territory of Russia in accordance with FZ-152.",
+  "metaTitle": "1C Ready Workplace",
   "metaDescription": "Cloud service",
-  "sectionTitle": "1C Workplace",
+  "sectionTitle": "1C Ready Workplace",
   "icon": "",
   "weight": 2,
   "uuid": "5e68fdc2-4428-407f-9e1a-6c247da70185"
