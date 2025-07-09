@@ -1,12 +1,12 @@
-Most modern Linux-like OS distributions already contain the VirtIO drivers by default. The drivers can be compiled as separate modules (with the `.ko` extension) or be parts of the OS kernel.
+To migrate a virtual machine to VK Cloud, its OS must have VirtIO drivers installed. Most modern Linux-like OS distributions already contain the VirtIO drivers by default. They can be compiled as separate modules (with the `.ko` extension) or be part of the OS kernel.
 
-1. Check whether your OS kernel supports the VirtIO drivers by running the command:
+1. Check whether your OS kernel supports the VirtIO driver. To do this, run the command:
 
    ```console
    grep -E -i "VIRTIO_(BLK|NET|PCI|FS)" /boot/config-$(uname -r)
    ```
 
-   An output example:
+   A response example:
 
    ```console
    CONFIG_VIRTIO_BLK=m
@@ -22,31 +22,50 @@ Most modern Linux-like OS distributions already contain the VirtIO drivers by de
    - `y` — the driver is a part of the kernel.
    - `m` — the driver is not a part of the kernel, but is supported by the kernel.
 
-1. If some lines in the command response are missing, this means that the corresponding VirtIO drivers are not installed and are not supported by the kernel. In this case:
+   The absence of any of the six kernel configuration parameters in the command response means that the corresponding VirtIO drivers are not installed and are not supported by the kernel.
 
-   1. Recompile the Linux kernel adding the VirtIO drivers support.
-   1. Return to these guide to perform the check again.
+1. Analyze the command response:
 
-1. If you see the `y` value in all lines of the command response, all VirtIO drivers are parts of the kernel and no further steps are required to install them. Finish executing the instruction.
-1. If you see the `m` value in one or more lines, check whether the corresponding driver modules have been added to the temporary file system. If not, add them there. To do this:
+   1. If the command response contains all six kernel configuration parameters and all of them are set to `y`, i.e., all the required VirtIO drivers are already part of the kernel, skip the remaining steps in the instructions.
+   1. If any of the configuration parameters in the command response are missing, recompile your OS kernel with adding support for the VirtIO drivers to it. Then check whether your OS kernel supports the VirtIO driver once again.
 
-   <tabs>
-   <tablist>
-   <tab>Debian/Ubuntu</tab>
-   <tab>CentOS/Fedora</tab>
-   </tablist>
-   <tabpanel>
+   1. If any of the six kernel configuration parameters are set to `m`, check whether the corresponding drivers are installed as separate kernel modules:
 
-   1. Run the command:
+      {tabs}
+      {tab(Debian/Ubuntu)}
+
+      Run the command:
 
       ```console
       lsinitramfs /boot/initrd.img-$(uname -r) | grep -E "virtio(_blk|_net|_pci|fs)"
       ```
 
-   1. If you see lines on the screen containing the names `virtio_net.ko`, `virtio_blk.ko`, `virtio_pci.ko`, or `virtiofs.ko`, the corresponding drivers are installed as kernel modules and no further steps are required to install them. Finish executing the instruction.
-   1. If the necessary lines do not appear on the screen, install the VirtIO drivers:
+      The names `virtio_net.ko`, `virtio_blk.ko`, `virtio_pci.ko`, or `virtiofs.ko` in the command response mean that the corresponding drivers are installed as kernel modules.
 
-      1. Run the commands:
+      If all the required drivers are already installed, skip the remaining steps in the instructions.
+
+      {/tab}
+      {tab(CentOS/Fedora)}
+
+      Run the command:
+
+      ```console
+      sudo lsinitrd /boot/initramfs-$(uname -r).img | grep -E "virtio(_blk|_net|_pci|fs)"
+      ```
+
+      The names `virtio_net.ko.xz`, `virtio_blk.ko.xz`, `virtio_pci.ko.xz`, or `virtiofs.ko.xz` in the command response mean that the corresponding drivers are installed as kernel modules.
+
+      If all the required drivers are already installed, skip the remaining steps in the instructions.
+
+      {/tab}
+      {/tabs}
+
+   1. If the check shows that the required VirtIO drivers are not installed as separate kernel modules:
+
+      {tabs}
+      {tab(Debian/Ubuntu)}
+
+      1. Install the VirtIO drivers by running the command:
 
          ```console
          echo -e "virtio_blk\nvirtio_net\nvirtio_pci\nvirtiofs" | sudo tee -a /etc/initramfs-tools/modules
@@ -60,41 +79,32 @@ Most modern Linux-like OS distributions already contain the VirtIO drivers by de
          find /lib/modules/"$(uname -r)"/ -name "virtio*" | grep -E "(blk|net|pci|fs)"
          ```
 
-         After each of the commands, for drivers that need to be installed as separate kernel modules, the corresponding module names should appear on the screen: `virtio_net.ko`, `virtio_blk.ko`, `virtio_pci.ko`, or `virtiofs.ko`.
+         For all VirtIO drivers installed as separate kernel modules, the response from both commands must contain the names of the modules corresponding to those drivers: `virtio_net.ko`, `virtio_blk.ko`, `virtio_pci.ko`, or `virtiofs.ko`.
 
-   </tabpanel>
-   <tabpanel>
+      {/tab}
+      {tab(CentOS/Fedora)}
 
-   1. Run the command:
+      1. Create a backup copy of the `initramfs` file and install the VirtIO drivers by running the commands:
 
-      ```console
-      sudo lsinitrd /boot/initramfs-$(uname -r).img | grep -E "virtio(_blk|_net|_pci|fs)"
-      ```
+         ```console
+         sudo cp /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak
+         sudo mkinitrd -f --with=virtio_blk --with=virtio_net --with=virtio_pci --with=virtiofs/boot/initramfs-$(uname -r).img $(uname -r)
+         ```
 
-   1. If you see lines on the screen containing the names `virtio_net.ko.xz`, `virtio_blk.ko.xz`, `virtio_pci.ko.xz`, or `virtiofs.ko.xz`, the corresponding drivers are installed as kernel modules and no further steps are required to install them. Finish executing the instruction.
-   1. If the necessary lines do not appear on the screen, create a backup of the `initramfs` file and  install the VirtIO drivers:
+         If you get the `Command 'mkinitrd' not found` error, install the VirtIO drivers using the `dracut` utility:
 
-       1. Run the commands:
+         ```console
+         sudo dracut -f --add-drivers "virtio_blk virtio_net virtio_pci virtiofs" /boot/initramfs-$(uname -r).img $(uname -r)
+         ```
 
-          ```console
-          sudo cp /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).img.bak
-          sudo mkinitrd -f --with=virtio_blk --with=virtio_net --with=virtio_pci --with=virtiofs/boot/initramfs-$(uname -r).img $(uname -r)
-          ```
+      1. Restart the OS and check that the drivers have appeared in the `initramfs` file and have been loaded:
 
-       1. If the "Command 'mkinitrd' not found" error appears on the screen, install the VirtIO drivers using the `dracut` utility:
+         ```console
+         sudo lsinitrd /boot/initramfs-$(uname -r).img | grep -E "virtio(_blk|_net|_pci|fs)"
+         find /lib/modules/"$(uname -r)"/ -name "virtio*" | grep -E "(blk|net|pci|fs)"
+         ```
 
-          ```console
-          sudo dracut -f --add-drivers "virtio_blk virtio_net virtio_pci virtiofs" /boot/initramfs-$(uname -r).img $(uname -r)
-          ```
+         For all VirtIO drivers installed as separate kernel modules, the response from both commands must contain the names of the modules corresponding to those drivers: `virtio_net.ko.xz`, `virtio_blk.ko.xz`, `virtio_pci.ko.xz`, or `virtiofs.ko.xz`.
 
-       1. Restart the OS and check that the drivers have appeared in the `initramfs` file and have been loaded:
-
-          ```console
-          sudo lsinitrd /boot/initramfs-$(uname -r).img | grep -E "virtio(_blk|_net|_pci|fs)"
-          find /lib/modules/"$(uname -r)"/ -name "virtio*" | grep -E "(blk|net|pci|fs)"
-          ```
-
-          After each of the commands, for drivers that need to be installed as separate kernel modules, the corresponding module names should appear on the screen: `virtio_net.ko.xz`, `virtio_blk.ko.xz`, `virtio_pci.ko.xz`, or `virtiofs.ko.xz`.
-
-   </tabpanel>
-   </tabs>
+      {/tab}
+      {/tabs}
