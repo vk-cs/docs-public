@@ -1,34 +1,64 @@
- VK Cloud is a cloud platform that provides network access to computing resources (virtual machines, databases, storage and other services) on a "pay as you go" basis: the fee is charged only for the resources consumed.
+VK Cloud is a cloud platform that provides network access to computing resources (virtual machines, databases, storage and other services) on a "pay as you go" basis: the fee is charged only for the resources consumed.
 
-Users rent virtual resources hosted in [data centres](../../../start/concepts/architecture#az) VK instead of maintaining their own physical servers. This minimises management costs and allows the user to interact with VK Cloud technical support on various issues.
+You rent virtual resources hosted in VK [data centers](../../../start/concepts/architecture#az) instead of maintaining your own physical servers. This minimises management costs and provides you with access to VK Cloud technical support.
 
 ## Deployment models
 
 VK Cloud offers the following deployment models:
 
-- **Public Cloud** is a multi-tenant platform with shared resources (servers, storage, networks). Each client's data is isolated. VK Cloud manages the infrastructure, including data centre maintenance, hardware procurement, fault tolerance and network management. Advantages: scalability, pay-as-you-go pricing, access to new technologies.
+- **Public Cloud** is a cloud deployment model in the form of a multi-tenant platform with shared resources (servers, storage, networks). One user's data is isolated from another one's via virtualization, but their data can be physically located on the same servers. VK Cloud manages the infrastructure, including data centre maintenance, hardware procurement, fault tolerance, and network management. 
 
-- **Private Cloud** is a type of cloud platform where resources are allocated to a single client. It eliminates the sharing of physical and virtual resources. Deployed on owned or leased infrastructure with full client control. Benefits: data isolation and control, enhanced security.
+   Advantages: scalability, pay-as-you-go pricing, access to new technologies.
 
- Feature | Public Cloud | Private Cloud |
-|---|---|---|
-| Deployment | Rapid | Requires planning |
-| Responsibility | Shared | Full (client) |
-| Resources | Scalable | Limited |
-| Cost | Cost per use | Subscription fee |
-| Start-up speed | High | Low |
-| Investment | Minimal | High |
-| Scaling | Simple | Complicated |
+- **Private Cloud** is a deployment model based on which resources are allocated to a single client (usually, it is an organization). In this case, employees within a single organization can share its infrastructure, but physical and virtual resource sharing between different organizations is prohibited. In Private Cloud, it is the client (organization) that controls and maintains the underlying infrastructure.
+
+   Advantages: data isolation and control, enhanced security. For more details on Private Cloud, refer to [Private installations](/en/on-premises).
+
+[cols="1,1,1", options="header"]
+|===
+| Feature
+| Public Cloud
+| Private Cloud
+
+| Deployment
+| Automatic
+| Manual adjustment based on your specific requirements
+
+| Infrastructure maintenance
+| By VK Cloud
+| By you
+
+| Resources
+| Scalable
+| Limited
+
+| Cost
+| Pay-as-you-go
+| Subscription fee
+
+| Investments
+| Minimal
+| High
+
+| Data access
+| By you and VK Cloud
+| By you only
+
+| Security
+| [Maintained](https://cloud.vk.com/en/cloud-platform/certificates/) by VK Cloud
+| You configure your desired security level using certified VK Cloud products
+|===
+
  
 ## Cloud service delivery models
 
-Virtualization, monitoring, container and data storage services can be deployed in VK Cloud. The architecture is based on four groups of services:
+You can use VK Cloud to deploy virtualization, monitoring, container, and data storage services. The architecture is based on four groups of services:
 
-- **Infrastructure as a Service (IaaS)**. IaaS services are based on [OpenStack](https://www.openstack.org/software) and proprietary components. They manage dynamic resource allocation, scaling, fault tolerance. Hosted in the same cloud data centre as PaaS services. IaaS provides basic components: virtual servers, network, data storage, access to dedicated hardware. 
+- **Infrastructure as a Service (IaaS)**. IaaS services are based on [OpenStack](https://www.openstack.org/software) and proprietary components. They manage dynamic resource allocation, scaling, fault tolerance, and are hosted in the same cloud data centre as PaaS services. IaaS provides basic components: virtual servers, network, data storage, access to dedicated hardware.
 
    {cut(List of IaaS services)}
 
-  - [Cloud Servers](/en/computing/iaas) — provides virtual machines with the ability to allocate public IPs and unlimited traffic of 1 GBit/s (NVIDIA GPU virtual machines are also available). It is responsible for virtualization and resource integration and uses KVM hypervisor.
+  - [Cloud Servers](/en/computing/iaas) — provides virtual machines with the ability to allocate public IPs and unlimited traffic of 1 GBit/s (NVIDIA GPU virtual machines are also available). It is responsible for virtualization and resource integration, and uses KVM hypervisor.
   - [Cloud Storage](/en/storage/s3) — provides S3-compatible object storage. The storage workload is shared across all storage nodes. You can deploy storage with a customizable architecture.
   - [Cloud Networks](/en/networks/vnet) — provides networking within the selected [project](/en/tools-for-using-services/account/concepts/projects) using SDN (Software Defined Network) technology. It is built on OpenStack Neutron and custom-developed software — Sprut. The service includes the following components:
 
@@ -54,25 +84,25 @@ Virtualization, monitoring, container and data storage services can be deployed 
   - [Cloud Alerting](/en/monitoring-services/alerting) — configures notifications about changes in key metrics of VK Cloud services.
   - [Cloud Logging](/en/monitoring-services/logging) — aggregates and analyzes logs of services in VK Cloud. 
   - [Cloud Monitoring](/en/monitoring-services/monitoring) — provides monitoring of metrics specific to PaaS services, such as analytics on K8s-container pods, and statistics of PostgreSQL DBMS transactions.
-  - [Cloud Desktop](/en/computing/cloud-desktops/concepts/about) — managed virtual desktops accessible from anywhere in the world
+  - [Cloud Desktop](/en/computing/cloud-desktops/concepts/about) — managed virtual desktops accessible from anywhere in the world.
   - [Cloud Kafka](/en/data-processing/kafka/concepts/about) — provides real-time data exchange between different modules of IT systems.
   - [Cloud Flink](/en/data-processing/flink/concepts/about) — stream processing and data transfer from sources to target systems.
   - [Cloud Trino](/en/data-processing/trino/concepts/about) — SQL engine for processing big data from remote sources.
-  - [Marketplace](/en/applications-and-services/marketplace) — allows rapid deployment of web development and administration environments based on virtual machines. Includes such applications as OpenVPN, VK Testers, Redash, Grafana, Milvus, Nexus, Joomla, WordPress and others.
+  - [Marketplace](/en/applications-and-services/marketplace) — allows rapid deployment of web development and administration environments based on virtual machines. Includes such applications as OpenVPN, VK Testers, Redash, Grafana, Milvus, Nexus, Joomla, WordPress, and others.
 
   {/cut}
 
-- **Software as a Service (SaaS)**. Off-the-shelf software available by subscription over the internet. Does not require infrastructure or platform management. An example of a SaaS service in VK Cloud is [1C:Ready Workplace](/en/applications-and-services/1cgrm). The service provides resources and software for deployment of 1C services: "Accounting", "Salary and Personnel Management".
+- **Software as a Service (SaaS)**. Ready-made software available by subscription over the internet. Does not require infrastructure or platform management. An example of a SaaS service in VK Cloud is [1C:Ready Workplace](/en/applications-and-services/1cgrm). The service provides resources and software to deploy the following 1C services: Accounting, Salary and Human Resources Management, Company Management.
 
 - **Common&Security services** provide a secure user experience and support a role model when using VK Cloud resources.
 
   {cut(List of Common&Security services)}
 
   - [Billing](/en/intro/billing) — keeps records of resource usage and cost control, generates financial reports, provides interaction with payment systems when paying for services.
-  - [Audit](/en/monitoring-services/event-log) — generates an audit log of user actions in VK Cloud.
+  - [Cloud Audit](/en/monitoring-services/event-log) — generates an audit log of user actions in VK Cloud.
   - IAM — manages authentication and authorization of users and services in conjunction with Keystone.
   - Monitoring — provides monitoring of cloud services and user applications.
-  - Keystone — provides API-based client authentication, service discovery and distributed multitenant authorization.
+  - Keystone — provides API-based client authentication, service discovery, and distributed multitenant authorization.
 
   {/cut}
 
@@ -84,9 +114,9 @@ The general scheme of VK Cloud components and services is shown below.
 
 Cloud services are managed using an API. Users interact with the API through one or more [tools](/en/tools-for-using-services):
 
-  - VK Cloud management console;
-  - OpenStack CLI;
-  - Terraform with a separate provider.
+  - VK Cloud management console
+  - OpenStack CLI
+  - Terraform with a separate provider
 
 VK Cloud provides [technical support](/en/intro/start/support/support-info) for it's services. Partner solutions (e.g. AntiDDoS, WAF) are supported together with the partner.
 
@@ -100,7 +130,7 @@ Logical fault tolerance is implemented using availability zones, which are combi
 
 {note:info}
 
-The status of the availability zones, services and infrastructure of VK Cloud can be checked on the [services page status page](https://status.msk.cloud.vk.com).
+The status of the availability zones, services and infrastructure of VK Cloud can be checked on the [service operation status page](https://status.msk.cloud.vk.com).
 
 {/note}
 
@@ -112,13 +142,13 @@ Each availability zone has one or more data processing centers (data centers) wh
 |===
 | Region
 | Accessibility zone
-| Data centre
-| Data centre address
+| Data center
+| Data center address
 
 .3+|Moscow
 |`GZ1`
 |[Goznak](https://tech.goznak.ru/dc-goznak-moscow)
-|Moscow, Mira avenue, 105, building 6.
+|Moscow, Mira avenue, 105, building 6
 
 |`MS1`
 |DataLine NORD4
