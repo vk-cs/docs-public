@@ -81,7 +81,7 @@ On the host from which you plan to connect to the registry:
 
 Now you can do any operations with the registry, for example, to push Docker images there.
 
-Read more about registry operations in [official Docker documentation](https://docs.docker.com/registry/).
+Read more about registry operations in [official Docker documentation](https://docs.docker.com/desktop/).
 
 ## Using Docker registry in Kubernetes cluster
 
