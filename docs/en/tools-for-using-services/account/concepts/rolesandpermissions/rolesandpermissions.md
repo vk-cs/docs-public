@@ -1,7 +1,8 @@
-When a user is invited to a [project](../projects), one is assigned with a role. The role defines the scope of [permissions](#roles_permissions) available to a user when working with the management console and with the cloud 
-services.
+When a user is invited to a [project](../projects), one is assigned with a role. The role defines the scope of [permissions](#roles_permissions) available to a user when working with the management console and the cloud services.
 
-The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
+The same user can be a member of several projects and have different roles in each of them. The same user can be assigned several roles in one project; in this case, the permissions of all assigned roles are summarized.
+
+In addition to users, [service accounts](../service-accounts) can be added to a project. They are intended for enabling interactions between programs and services. Service accounts can be assigned any roles listed below, except for the Project owner role.
 
 You can [view](../../instructions/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the management console.
 
