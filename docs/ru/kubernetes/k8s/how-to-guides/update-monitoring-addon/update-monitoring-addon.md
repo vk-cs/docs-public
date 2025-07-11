@@ -28,7 +28,7 @@
 
    Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета VK Cloud.
 
-1. Проверьте, что аддон доступен и работает. Для этого [получите доступ к веб-интерфейсу Grafana](../../monitoring#ispolzovanie_grafana).
+1. Проверьте, что аддон доступен и работает. Для этого [получите доступ к веб-интерфейсу Grafana](../../monitoring#connect_grafana).
 
    {note:warn}
 
@@ -610,7 +610,7 @@
 
 ## 4. Проверьте работоспособность аддона после обновления
 
-[Получите доступ к веб-интерфейсу Grafana](../../monitoring#ispolzovanie_grafana). Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, [сбросьте его](../../instructions/addons/advanced-installation/install-advanced-monitoring#sbros_parolya_dlya_grafana).
+[Получите доступ к веб-интерфейсу Grafana](../../monitoring#connect_grafana). Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, [сбросьте его](../../instructions/addons/advanced-installation/install-advanced-monitoring#reset_grafana_password).
 
 Успешное подключение к Grafana свидетельствует об успешном обновлении аддона.
 
