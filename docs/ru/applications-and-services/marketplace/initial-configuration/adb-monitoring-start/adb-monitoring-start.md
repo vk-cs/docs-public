@@ -141,14 +141,95 @@ Arenadata DB Monitoring — готовое решение для монитор�
    - `<ЛОГИН>` — логин пользователя базы данных Arenadata DB.
    - `<ИМЯ_БД>` — имя базы данных в кластере Arenadata DB.
 
-1. Внутри терминала psql выполните скрипт инициализации базы данных:
+1. Откройте для редактирования скрипт инициализации базы данных `/home/almalinux/init.sql`.
+
+   {cut(Скрипт инициализации базы данных)}
 
    ```console
 
-   \i /home/almalinux/init.sql
+   -- client database
+   -- 1. create
+   CREATE RESOURCE GROUP monitoring_group
+   WITH (
+   concurrency=15,
+   cpu_rate_limit=1,
+   memory_limit=0
+   )
+   ;
+   CREATE USER vkc_monitoring WITH login password '<ПАРОЛЬ>' RESOURCE GROUP monitoring_group CONNECTION LIMIT 5;
+   CREATE SCHEMA IF NOT EXISTS vkcloud_toolkit;
+   CREATE EXTENSION gp_internal_tools;  -- crates session_state schema
+
+
+   CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_replication() RETURNS SETOF pg_stat_replication AS
+   $$ SELECT * FROM pg_catalog.pg_stat_replication; $$
+   LANGUAGE sql SECURITY definer
+   ;
+
+   CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_activity() RETURNS SETOF pg_stat_activity AS
+   $$ SELECT * FROM pg_catalog.pg_stat_activity; $$
+   LANGUAGE sql SECURITY definer
+   ;
+
+
+   CREATE OR REPLACE VIEW vkcloud_toolkit.v_replication_delay
+   AS SELECT pg_current_xlog_location() - ( SELECT pg_stat_replication.replay_location
+            FROM vkcloud_toolkit.pg_stat_replication()) AS replication_delay_bytes
+   ;
+
+
+   CREATE OR REPLACE VIEW vkcloud_toolkit.v_locked_pids
+   AS SELECT COALESCE(blockingl.relation::regclass::text, blockingl.locktype) AS locked_item,
+      now() - blockeda.query_start AS waiting_duration,
+      blockeda.pid AS blocked_pid,
+      blockeda.query AS blocked_query,
+      blockedl.mode AS blocked_mode,
+      blockinga.pid AS blocking_pid,
+      blockinga.query AS blocking_query,
+      blockingl.mode AS blocking_mode
+      FROM pg_locks blockedl
+      JOIN vkcloud_toolkit.pg_stat_activity() blockeda ON blockedl.pid = blockeda.pid
+      JOIN pg_locks blockingl ON (blockingl.transactionid = blockedl.transactionid OR (blockingl.relation = blockedl.relation AND blockingl.locktype = blockedl.locktype)) AND blockedl.pid <> blockingl.pid
+      JOIN vkcloud_toolkit.pg_stat_activity() blockinga ON blockingl.pid = blockinga.pid AND blockinga.datid = blockeda.datid
+   WHERE NOT blockedl.granted AND blockinga.datname = current_database()
+   ;
+
+
+   CREATE OR REPLACE VIEW vkcloud_toolkit.v_resgroup_slots
+   AS SELECT tt.groupname,
+      tt.slots_for_queries,
+      tt.active_queries,
+      tt.slots_for_queries - tt.active_queries AS free_slots,
+      tt.waiting_queries,
+      tt.max_wait_sec
+      FROM ( SELECT grc.groupname,
+               grc.concurrency::bigint AS slots_for_queries,
+               COALESCE(act.active_queries, 0::bigint) AS active_queries,
+               COALESCE(act.waiting_queries, 0::bigint) AS waiting_queries,
+               date_part('epoch'::text, COALESCE(act.max_wait_time, '00:00:00'::interval)) AS max_wait_sec
+            FROM gp_toolkit.gp_resgroup_config grc
+               LEFT JOIN ( SELECT pg_stat_activity.rsgid,
+                     count(1) AS active_queries,
+                     count(pg_stat_activity.rsgqueueduration) AS waiting_queries,
+                     max(pg_stat_activity.rsgqueueduration) AS max_wait_time
+                     FROM vkcloud_toolkit.pg_stat_activity()
+                     WHERE pg_stat_activity.rsgname IS NOT NULL AND pg_stat_activity.rsgname <> 'unknown'::text
+                     GROUP BY pg_stat_activity.rsgid) act ON grc.groupid = act.rsgid) tt
+   ;
+
+
+   -- 2. grant
+   GRANT USAGE ON SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
+   GRANT SELECT ON ALL tables IN SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
+   GRANT EXECUTE ON ALL functions IN SCHEMA vkcloud_toolkit TO vkc_monitoring;
+   GRANT SELECT ON session_state.session_level_memory_consumption TO vkc_monitoring;
 
    ```
-1. Создайте пользователя базы данных с именем `vkc_monitoring` и установите для него пароль `<ПАРОЛЬ>`:
+
+   {/cut}
+
+1. Сгенерируйте или придумайте пароль для пользователя `vkc_monitoring` базы данных Arenadata DB, от имени которого будет работать сервис Arenadata DB Monitoring.
+1. Вставьте этот пароль в скрипт `/home/almalinux/init.sql` в строку:
 
    ```console
 
@@ -156,7 +237,16 @@ Arenadata DB Monitoring — готовое решение для монитор�
 
    ```
 
-1. Выйдите из терминала psql с помощью команды `\q`.
+1. Сохраните изменения.
+1. Внутри терминала `psql` выполните скрипт инициализации базы данных:
+
+   ```console
+
+   \i /home/almalinux/init.sql
+
+   ```
+
+1. Выйдите из терминала `psql` с помощью команды `\q`.
 
 ## 4. Настройте сервис ADB Exporter
 
@@ -287,7 +377,6 @@ ADB Exporter автоматически устанавливается и нас
        - targets: ['localhost:8080']
          labels:
            instance: adcc-node-1
-           environment: staging
 
    ```
 1. Перезапустите Prometheus.
