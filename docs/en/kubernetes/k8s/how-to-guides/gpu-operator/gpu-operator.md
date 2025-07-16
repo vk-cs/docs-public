@@ -53,6 +53,13 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
           limits:
             nvidia.com/gpu: 1
    ```   
+   Here the `nvidia.com/gpu: 1` parameter defines the number of GPU resources requested from the corresponding vendor (in this case — `nvidia.com`). For more information on resources and limits, see the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/).
+
+   {note:warn}
+
+   You must specify the `nvidia.com/gpu: 1` parameter for each pod.
+
+   {/note}
 
 1. Upload the file to the cluster and run the pod:
 
