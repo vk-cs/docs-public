@@ -1,7 +1,7 @@
 It is necessary to form invoices:
 
-- To pay for services by bank transfer. When paying by other [methods] (../../concepts/payment-methods), the account is not needed.
-- If the user works with VK Cloud on prepayment. When working on a post-payment, the user receives invoices for payment from VK Cloud.
+- To pay for services by bank transfer. When paying by other [methods](../../concepts/payment-methods), the account is not needed.
+- If you work with VK Cloud on prepayment. When working on post-payment, you receive invoices for payment from VK Cloud and cannot generate them yourself in your management console.
 
 To create an invoice:
 

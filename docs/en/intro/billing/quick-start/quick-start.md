@@ -78,7 +78,7 @@ One card can be linked to only one project. When linking the card, a small amoun
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
-1. [Create an invoice](../instructions/bill-generation) for the required amount in your management console.
+1. If you work with VK Cloud on prepayment, [create an invoice](../instructions/bill-generation) for the required amount in your management console.
 1. Pay the bill by bank transfer.
 
 Crediting of funds can take up to three banking days.
