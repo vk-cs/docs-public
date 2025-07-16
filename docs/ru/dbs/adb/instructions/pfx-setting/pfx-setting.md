@@ -17,7 +17,7 @@
     <tab>S3</tab>
     <tab>Kafka</tab>
     <tab>Hive</tab>
-    <tab>Postgres/Clickhouse</tab>
+    <tab>Postgres/ClickHouse</tab>
     </tablist>
     <tabpanel>
 
