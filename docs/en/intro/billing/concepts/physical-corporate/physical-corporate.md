@@ -129,7 +129,7 @@ Legal entities and sole proprietors can also top up the payment account balance 
 
 [Additional registration](../../instructions/corporate) means saving the details of a legal entity or a sole proprietor in the project settings in the management console. You do not need to specify banking details manually, they are filled in automatically after entering the individual taxpayer number.
 
-After additional registration, those organizations and sole proprietors that work on [prepayment](#payment_scheme) can upload [invoices for payment](../../instructions/bill-generation) with full details from the management console.
+After additional registration, those organizations and sole proprietors that work on [prepayment](#payment_scheme) can upload [invoices for payment](../../instructions/bill-generation) with full details from the management console. Organizations and sole proprietors that work on post-payment receive invoices for payment from VK Cloud and cannot generate them in the management console.
 
 ## EDM
 
