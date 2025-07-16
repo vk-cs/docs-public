@@ -47,40 +47,42 @@ The invoice and the Certificate of work performed are not provided, as the unive
 
 The composition of the accounting documents depends on the specific terms of the contract. In particular, there are differences for organizations working [on prepayment and on post-payment](../physical-corporate#payment_scheme).
 
-- When working on prepayment:
+<tabs>
+<tablist>
+<tab>Prepayment</tab>
+<tab>Post-payment</tab>
+</tablist>
+<tabpanel>
 
-  - Main documents: universal transfer document.
+- Main documents: universal transfer document
+- Additional documents, if required by the contract:
+  - Invoice
+  - Certificate of completed works
 
-  - Additional documents, if required by contract:
+{note:info} 
 
-    - Invoice
-    - Certificate of completed works
+   If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
 
-    {note:info}
+{/note}
 
-    If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
+The payment invoice is not provided. Organizations that work on prepayment [form](../../instructions/bill-generation) it independently in their management console.
 
-    {/note}
+</tabpanel>
+<tabpanel>
 
-    An invoice for payment is not provided. Organizations that work on prepayment [form](../../instructions/bill-generation) it independently in their management console.
+- Main documents:
+  - Universal transfer document
+  - Payment invoice received from VK CLoud
 
-- When working on a post-payment:
+- Additional documents, if required by the contract:
+  - Invoice
+  - Certificate of completed works
 
-  - Basic documents:
+{note:info} 
 
-    - Universal transfer document
-    - Payment invoice
+  If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
 
-  - Additional documents, if required by contract:
-
-    - Invoice
-    - Certificate of completed works
-
-    {note:info}
-
-    If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
-
-    {/note}
+{/note}
 
 </tabpanel>
 </tabs>
