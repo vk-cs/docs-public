@@ -11,14 +11,14 @@
 
    - `PostgreSQL` — подключение к базе данных PostgreSQL.
    - `Greenplum` — подключение к базе данных Greenplum.
-   - `Clickhouse` — подключение к базе данных Clickhouse.
+   - `Clickhouse` — подключение к базе данных ClickHouse.
    - `Apache Iceberg с S3 VK Cloud` — подключение к Cloud Storage в том же проекте.
    - `Apache Iceberg с внешним S3` — подключение к внешнему объектному хранилищу S3.
 1. Настройте параметры подключения к источнику:
 
    <tabs>
    <tablist>
-   <tab>PostgreSQL, Greenplum, Clickhouse</tab>
+   <tab>PostgreSQL, Greenplum, ClickHouse</tab>
    <tab>S3 VK Cloud</tab>
    <tab>Внешний S3</tab>
    </tablist>
