@@ -375,7 +375,7 @@ The manager will contact you to clarify the required terms of the contract.
 
 If your project is in [region](/en/tools-for-using-services/account/concepts/regions) Moscow, and you are working with “VK” LLC, its main details are available at https://cloud.vk.com/contacts.
 
-You can also [generate an invoice](../instructions/bill-generation) in your management console and view the contents of the **Supplier** field.
+If you work with VK Cloud on prepayment, you can also [generate an invoice](../instructions/bill-generation) in your management console and view the contents of the **Supplier** box.
 
 </tabpanel>
 <tabpanel>
