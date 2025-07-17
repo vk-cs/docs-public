@@ -157,6 +157,6 @@
 
 {note:warn}
 
-Если старый диск больше не нужен, для экономии ресурсов [удалите диск](/ru/computing/iaas/instructions/volumes#udalenie_diska) вручную.
+Если старый диск больше не нужен, для экономии ресурсов [удалите диск](/ru/computing/iaas/instructions/volumes#delete_disk) вручную.
 
 {/note}

@@ -19,6 +19,6 @@
 
    {note:info}
    
-   Чтобы увеличить производительность, можно [увеличить размер](../../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../../instructions/volumes#izmenenie_tipa_diska) диска.
+   Чтобы увеличить производительность, можно [увеличить размер](../../instructions/volumes#change_disk_size) или [изменить тип](../../instructions/volumes#change_disk_type) диска.
    
    {/note}

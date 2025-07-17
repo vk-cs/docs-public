@@ -178,7 +178,7 @@ VNC-консоль доступна на странице виртуальной
 
 Увеличить диск можно при помощи панели VK Cloud в разделе **Виртуальные машины** или **Диски** раздела **Облачные вычисления**.
 
-Полная информация доступна в статье [Управление дисками](../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
+Полная информация доступна в статье [Управление дисками](../instructions/volumes#change_disk_size).
 
 {/cut}
 
@@ -196,7 +196,7 @@ VNC-консоль доступна на странице виртуальной
 
 {cut(Как передать диск ВМ другому проекту?)}
 
-Воспользуйтесь [инструкцией](../instructions/volumes#peremeshchenie_diskov_mezhdu_proektami).
+Воспользуйтесь [инструкцией](../instructions/volumes#move_disk_to_another_project).
 
 {/cut}
 

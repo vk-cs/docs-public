@@ -204,7 +204,7 @@ The operation of creating and deleting resources can be performed an unlimited n
 
 You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Servers** service.
 
-Full information is available in the article about [disk expansion](../instructions/volumes#increasing_disk_size_with_rebooting).
+Full information is available in the article about [disk expansion](../instructions/volumes#change_disk_size).
 
 {/cut}
 
@@ -232,7 +232,7 @@ Compare the obtained indicators with the [guaranteed disk performance](../concep
 
 {note:info}
 
-To increase performance, you can [increase the size](../instructions/volumes#increasing_disk_size_with_rebooting) or [change](../instructions/volumes#changing_disk_type) disk type.
+To increase performance, you can [increase the size](../instructions/volumes#change_disk_size) or [change](../instructions/volumes#change_disk_type) disk type.
 
 {/note}
 
@@ -252,7 +252,7 @@ Make sure that the disk [is disabled](../instructions/volumes#disconnecting_disk
 
 {cut(How do I transfer a VM disk to another project?)}
 
-Use the [instructions](../instructions/volumes#transfer_disks_between_projects).
+Use the [instructions](../instructions/volumes#move_disk_to_another_project).
 
 {/cut}
 
