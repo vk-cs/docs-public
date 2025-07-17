@@ -1,4 +1,4 @@
-The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#creating-a-disk), later [connect](#connecting-a-disk-to-a-vm) to the necessary VMs. For created disks, the [resizing](#increasing-the-disk-size) and [changing](#changing-the-disk-type) disk type operations are available. Disks can be [shared between projects](#transfer-disks-between-projects) and virtual machines, [disconnect from VM](#disconnecting_disk_from_vm), [make bootable](#changing_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_disk).
+The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#create_disk), later [connect](#mount_disk) to the necessary VMs. For created disks, the [resizing](#change_disk_size) and [changing](#change_disk_type) disk type operations are available. Disks can be [moved between projects](#move_disk_to_another_project) and virtual machines, [disconnect from VM](#disconnecting_disk_from_vm), [make bootable](#changing_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_disk).
 
 ## {heading(Creating disk)[id=create_disk]}
 
@@ -63,7 +63,7 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
 </tabpanel>
 </tabs>
 
-## Increasing disk size with rebooting
+## {heading(Increasing disk size with rebooting)[id=change_disk_size]}
 
 Restrictions related to changing the VM disk size on the VK Cloud platform:
 
@@ -144,7 +144,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 ## Increasing disk size without rebooting
 
-1. [Increase](#increasing_disk_size_with_rebooting) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
+1. [Increase](#change_disk_size) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
 1. Increase the size of disk partitions in the VM operating system:
 
    <tabs>
@@ -272,7 +272,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 </tabpanel>
 </tabs>
 
-## Changing disk type
+## {heading(Changing disk type)[id=change_disk_type]}
 
 Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
 
@@ -643,7 +643,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 </tabpanel>
 </tabs>
 
-## Transfer disks between projects
+## {heading(Transfer disks between projects)[id=move_disk_to_another_project]}
 
 <tabs>
 
