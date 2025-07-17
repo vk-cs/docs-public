@@ -137,7 +137,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. [Пометьте](/ru/computing/iaas/instructions/volumes#izmenenie_atributa_zagruzochnyy) диск с помещенным на него образом ОС как загрузочный.
+1. [Пометьте](/ru/computing/iaas/instructions/volumes#changing_bootable_attribute) диск с помещенным на него образом ОС как загрузочный.
 1. [Замените основной диск](/ru/computing/iaas/instructions/volumes#zamena_osnovnogo_root_diska) ВМ на диск с помещенным на него образом ОС.
 1. [Запустите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
 
@@ -149,4 +149,4 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 - [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ.
 - [Удалите](../../instructions/buckets/manage-bucket#bucket_delete) бакет `uc_bucket`.
-- [Удалите](/ru/computing/iaas/instructions/volumes#udalenie_diska) диск.
+- [Удалите](/ru/computing/iaas/instructions/volumes#delete_disk) диск.

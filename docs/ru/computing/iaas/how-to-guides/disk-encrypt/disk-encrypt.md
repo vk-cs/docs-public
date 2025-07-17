@@ -90,7 +90,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 {/note}
 
-1. Сделайте диск [незагрузочным](../../instructions/volumes#izmenenie_atributa_zagruzochnyy).
+1. Сделайте диск [незагрузочным](../../instructions/volumes#changing_bootable_attribute).
 2. Остановите все процессы, использующие диск:
 
    ```console

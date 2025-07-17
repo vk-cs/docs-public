@@ -105,7 +105,7 @@ You will be able to reactivate the project after any period of time by uploading
 
 ## Transferring objects between projects
 
-You can [transfer disks](/en/computing/iaas/instructions/volumes#transfer_disks_between_projects) between projects. This allows you to transfer virtual machines between projects.
+You can [transfer disks](/en/computing/iaas/instructions/volumes#move_disk_to_another_project) between projects. This allows you to transfer virtual machines between projects.
 
 Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) locally the disk image and [download](/en/computing/iaas/instructions/images/images-manage#importing_an_image) it to the new project.
 
