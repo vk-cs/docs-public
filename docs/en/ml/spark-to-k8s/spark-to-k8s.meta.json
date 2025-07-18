@@ -1,11 +1,10 @@
 {
-  "title": "Cloud Spark",
+  "title": "Cloud Spark in k8s",
   "pageDescription": "Kubernetes Spark solution for big data processing.",
   "shortDescription": "Spark clusters in Kubernetes for big data processing",
-  "metaTitle": "Cloud Spark",
+  "metaTitle": "Cloud Spark in k8s",
   "metaDescription": "Cloud Spark service in VK Cloud: Spark solution for big data processing",
-  "sectionTitle": "Cloud Spark",
-  "isBeta": true,
+  "sectionTitle": "Cloud Spark in k8s",
   "icon": "",
   "weight": 2,
   "uuid": "4e18d3d5-845f-4735-944d-a3e1c3234617"
