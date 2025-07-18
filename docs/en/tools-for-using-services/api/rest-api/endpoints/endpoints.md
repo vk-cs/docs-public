@@ -16,13 +16,13 @@ To see the list of endpoints for your region:
 
 ### Cloud Servers
 
-| Endpoint                            | Address                 | Purpose |
-|-------------------------------------|-------------------------|--|
-| Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/computing/iaas/instructions/vm) |
-| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/computing/iaas/instructions/volumes) and their snapshots |
-| Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/computing/iaas/instructions/images) |
-| Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/storage/backups/how-to-guides/api-examples) of VMs and database instances |
-| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/computing/iaas/instructions/fs-manage) |
+| Endpoint          | Address                                           | Purpose                                                                                          |
+|-------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Nova              | https://infra.mail.ru:8774/v2.1                   | Managing [virtual machines](/en/computing/iaas/instructions/vm)                                  |
+| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id> | Managing [disks](/en/computing/iaas/instructions/volumes) and their snapshots                    |
+| Glance            | https://infra.mail.ru:9292                        | Managing [VM images](/en/computing/iaas/instructions/images)                                     |
+| Karboii           | https://mcs.mail.ru/infra/karboii/v1              | Managing [backups](/en/storage/backups/how-to-guides/api-examples) of VMs and database instances |
+| Manila            | https://public.infra.mail.ru:8786/v2/<project_id> | Managing [file shares](/en/computing/iaas/instructions/fs-manage)                                |
 
 {note:info}
 
@@ -34,59 +34,59 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 ### Cloud Containers
 
-| Endpoint                            | Address                 | Purpose |
-|-------------------------------------|-------------------------|--|
-| Magnum            | https://infra.mail.ru:9511/v1                       | Managing [Cloud Containers](/en/kubernetes/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing Cloud Containers [add-ons](/en/kubernetes/k8s/instructions/addons) |
+| Endpoint          | Address                                    | Purpose                                                                     |
+|-------------------|--------------------------------------------|-----------------------------------------------------------------------------|
+| Magnum            | https://infra.mail.ru:9511/v1              | Managing [Cloud Containers](/en/kubernetes/k8s)                             |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons | Managing Cloud Containers [add-ons](/en/kubernetes/k8s/instructions/addons) |
 
 ### Cloud Networks
 
-| Endpoint                            | Address                 | Purpose |
-|-------------------------------------|-------------------------|--|
-| Neutron           | https://infra.mail.ru:9696                          | Managing all [network infrastructure](/en/networks/vnet) objects, except public DNS zones and load balancers |
-| Octavia           | https://public.infra.mail.ru:9876                   | Managing [load balancers](/en/networks/balancing/instructions) |
-| Publicdns         | https://mcs.mail.ru/public-dns                      | Managing [public DNS zones](/en/networks/dns/publicdns) |
+| Endpoint          | Address                           | Purpose                                                                                                      |
+|-------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Neutron           | https://infra.mail.ru:9696        | Managing all [network infrastructure](/en/networks/vnet) objects, except public DNS zones and load balancers |
+| Octavia           | https://public.infra.mail.ru:9876 | Managing [load balancers](/en/networks/balancing/instructions)                                               |
+| Publicdns         | https://mcs.mail.ru/public-dns    | Managing [public DNS zones](/en/networks/dns/publicdns)                                                      |
 
 ### Cloud Big Data
 
-| Endpoint                            | Address                 | Purpose |
-|-------------------------------------|-------------------------|--|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/data-processing/bigdata/instructions) clusters |
+| Endpoint          | Address                                      | Purpose                                                                    |
+|-------------------|----------------------------------------------|----------------------------------------------------------------------------|
+| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id> | Managing [Cloud Big Data](/en/data-platform/bigdata/instructions) clusters |
 
 ### Cloud Databases
 
-| Endpoint                            | Address                 | Purpose |
-|-------------------------------------|-------------------------|--|
-| Trove             | https://msk.cloud.vk.com/infra/database/v1.0/<project_id>        | Managing [databases](/en/dbs/dbaas) |
+| Endpoint          | Address                                                   | Purpose                             |
+|-------------------|-----------------------------------------------------------|-------------------------------------|
+| Trove             | https://msk.cloud.vk.com/infra/database/v1.0/<project_id> | Managing [databases](/en/dbs/dbaas) |
 
 ### Cloud Storage
 
-| Endpoint                            | Address                          | Purpose |
-|-------------------------------------|----------------------------------|--|
-| S3 domain                 | https://hb.ru-msk.vkcloud-storage.ru/    | Managing [Cloud storage](/en/storage/s3) |
+| Endpoint                  | Address                               | Purpose                                  |
+|---------------------------|---------------------------------------|------------------------------------------|
+| S3 domain                 | https://hb.ru-msk.vkcloud-storage.ru/ | Managing [Cloud storage](/en/storage/s3) |
 
 
 ### Cloud ML Platform
 
-| Endpoint                              | Address                     | Purpose |
-|---------------------------------------|---------------------------| -----------------|
-| Mlplatform | https://msk.cloud.vk.com/infra/mlplatform   | Managing [Cloud ML Platform](/en/ml/mlplatform) |
+| Endpoint   | Address                                   | Purpose                                         |
+|------------|-------------------------------------------|-------------------------------------------------|
+| Mlplatform | https://msk.cloud.vk.com/infra/mlplatform | Managing [Cloud ML Platform](/en/ml/mlplatform) |
 
 ### AI API
 
-| Endpoint                      | Address                   | Purpose |
-|-------------------------------|---------------------------|--|
-| Vision for image and video recognition  | https://smarty.mail.ru/   | [Objects recognition](/en/ml/vision) |
+| Endpoint                               | Address                   | Purpose                              |
+|----------------------------------------|---------------------------|--------------------------------------|
+| Vision for image and video recognition | https://smarty.mail.ru/   | [Objects recognition](/en/ml/vision) |
 
 ### Endpoints not associated with a service
 
-| Endpoint                            | Address                 | Purpose |
-|-------------------------------------|-------------------------|--|
-| Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id>       | Collecting the statistics of users' actions in the project |
-| Barbican          | https://public.infra.mail.ru:9311                   | A protected storage for secrets (SSH keys, Keystone tokens, TLS certificates) |
-| Keystone          | https://infra.mail.ru:35357/v3/                     | Managing project users, user authentication via [tokens](../case-keystone-token) |
-| Quota-manager     | https://mcs.mail.ru/quota-manager                   | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
-| Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Cloud services orchestration (deprecated)
+| Endpoint          | Address                                       | Purpose                                                                                 |
+|-------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------|
+| Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id> | Collecting the statistics of users' actions in the project                              |
+| Barbican          | https://public.infra.mail.ru:9311             | A protected storage for secrets (SSH keys, Keystone tokens, TLS certificates)           |
+| Keystone          | https://infra.mail.ru:35357/v3/               | Managing project users, user authentication via [tokens](../case-keystone-token)        |
+| Quota-manager     | https://mcs.mail.ru/quota-manager             | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
+| Heat              | https://infra.mail.ru:8004/v1/<project_id>    | Cloud services orchestration (deprecated)                                               |
 
 {/cut}
 

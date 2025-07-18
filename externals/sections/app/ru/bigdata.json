@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/data-processing/bigdata/tariffication",
+                    "link": "/ru/data-platform/bigdata/tariffication",
                     "hiddenForPartners": true
                 }
             ]
@@ -15,7 +15,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/data-processing/bigdata/instructions/delete"
+                    "link": "/ru/data-platform/bigdata/instructions/delete"
                 }
             ]
         },
@@ -23,10 +23,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/data-processing/bigdata/instructions/scale"
+                    "link": "/ru/data-platform/bigdata/instructions/scale"
                 },
                 {
-                    "link": "/ru/data-processing/bigdata/connect"
+                    "link": "/ru/data-platform/bigdata/connect"
                 }
             ]
         }

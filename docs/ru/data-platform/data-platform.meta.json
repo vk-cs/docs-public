@@ -5,5 +5,9 @@
   "metaDescription": "Платформа данных",
   "weight": 7,
   "isBeta": true,
+  "additionalUuids": [
+    "a935ce7a-2877-4b43-9b03-b85b07d35c27",
+    "5da440c7-c2ef-42e3-9092-0cbfa0e3fe21"
+  ],
   "uuid": "2a352fde-f1d8-408b-9dec-666d2dbd6503"
 }
