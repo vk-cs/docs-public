@@ -70,7 +70,7 @@ VK Cloud allows the installation of OpenSearch plugins on already deployed datab
 
 - `repository-s3`
 
-    The plugin allows to store data with [S3](https://aws.amazon.com/ru/s3/).
+    The plugin allows to store data with [S3](/en/storage/s3).
 
 - `store-smb`
 

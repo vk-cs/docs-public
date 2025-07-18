@@ -70,7 +70,7 @@ VK Cloud поддерживает установку плагинов OpenSearch
 
 - `repository-s3`
 
-    Позволяет использовать [S3](https://aws.amazon.com/ru/s3/) для хранения данных.
+    Позволяет использовать [S3](/ru/storage/s3) для хранения данных.
 
 - `store-smb`
 

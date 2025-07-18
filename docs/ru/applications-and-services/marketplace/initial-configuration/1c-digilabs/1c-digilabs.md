@@ -96,7 +96,7 @@
 
    - `instance_pid` — уникальный идентификатор клиента для сервиса Размещение высоконагруженных 1С в облаке;
    - `instance_uuid` — идентификатор вашего инстанса сервиса;
-   - `s3_access_key` — идентификатор ключа доступа к [сервису AWS](https://aws.amazon.com/ru) (AWS Access Key ID);
+   - `s3_access_key` — идентификатор ключа доступа к [сервису AWS](/ru/tools-for-using-services/cli/aws-cli) (AWS Access Key ID);
    - `s3_name` — имя бакета в хранилище S3;
    - `s3_secret_key` — секретный ключ доступа к сервису AWS (AWS Secret Access Key).
 

@@ -10,7 +10,7 @@
 
 ## Подготовительные шаги
 
-1. Убедитесь, что [AWS CLI](https://aws.amazon.com/ru/cli) установлен.
+1. Убедитесь, что [AWS CLI](/ru/tools-for-using-services/cli/aws-cli) установлен.
 
 1. Создайте аккаунт для сервиса Cloud Storage:
 
