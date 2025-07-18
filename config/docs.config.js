@@ -120,6 +120,12 @@ export const config = {
         basePath: '/docs',
         policy: '/intro/start/legal',
     },
+    // Настройки компонента AI Search
+    aiSearch: {
+            sourceName: 'VK Cloud', // Название источника с которым работает ИИ
+            apiUrl: 'https://185.241.193.47:443/ask', //IP-адрес API ИИ-бота
+        },
+
     enablers: {
         auth: true,
         likeDislike: true,
