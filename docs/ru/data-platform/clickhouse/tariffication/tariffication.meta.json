@@ -1,9 +1,9 @@
 {
   "title": "Тарификация",
-  "pageDescription": "Особенности тарификации экземпляров сервиса ClickHouse, расчет стоимости.",
+  "pageDescription": "Особенности тарификации экземпляров сервиса Cloud ClickHouse, расчет стоимости.",
   "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
   "metaTitle": "Тарификация",
-  "metaDescription": "ClickHouse: особенности тарификации сервиса, расчет стоимости",
+  "metaDescription": "Cloud ClickHouse: особенности тарификации сервиса, расчет стоимости",
   "sectionTitle": "Тарификация",
   "icon": "",
   "weight": 3,

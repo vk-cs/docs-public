@@ -75,7 +75,7 @@ VK Cloud предлагает следующие модели развертыв
 
   - [Cloud Containers](/ru/kubernetes/k8s) — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
   - [Cloud Databases](/ru/dbs/dbaas) — предоставляет масштабируемые СУБД: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB на базе Greenplum.
-  - [Cloud Big Data](/ru/data-processing/bigdata) — применяется для анализа больших данных на базе Arenadata Hadoop, поддерживает масштабирование.
+  - [Cloud Big Data](/ru/data-platform/bigdata) — применяется для анализа больших данных на базе Arenadata Hadoop, поддерживает масштабирование.
   - [Cloud Spark](/ru/ml/spark-to-k8s) — обладает распределенной пакетной и потоковой обработки данных, работы с Machine Learning и аналитикой.
   - [Cloud ML Platform](/ru/ml/mlplatform) — поддерживает сервисы для полного цикла ML-разработки.
   - [Cloud Voice](/ru/ml/cloud-voice) — предоставляет REST API для распознавания и синтеза речи на базе машинного обучения.
@@ -84,9 +84,9 @@ VK Cloud предлагает следующие модели развертыв
   - [Cloud Logging](/ru/monitoring-services/logging) — агрегирует и анализирует логи сервисов в VK Cloud.
   - [Cloud Monitoring](/ru/monitoring-services/monitoring) — обеспечивает мониторинг метрик, специфичных для PaaS-сервисов, например, аналитика по подам K8s-контейнеров, статистика транзакций СУБД PostgreSQL.
   - [Cloud Desktop](/ru/computing/cloud-desktops/concepts/about) — управляемые виртуальные рабочие места, доступные из любой точки мира.
-  - [Cloud Kafka](/ru/data-processing/kafka/concepts/about) — обеспечивает обмен данными между разными модулями ИТ-систем в режиме реального времени.
-  - [Cloud Flink](/ru/data-processing/flink/concepts/about) — потоковая обработка и передача данных из источников в целевые системы.
-  - [Cloud Trino](/ru/data-processing/trino/concepts/about) — SQL-движок для обработки больших данных из удаленных источников.
+  - [Cloud Kafka](/ru/data-platform/kafka/concepts/about) — обеспечивает обмен данными между разными модулями ИТ-систем в режиме реального времени.
+  - [Cloud Flink](/ru/data-platform/flink/concepts/about) — потоковая обработка и передача данных из источников в целевые системы.
+  - [Cloud Trino](/ru/data-platform/trino/concepts/about) — SQL-движок для обработки больших данных из удаленных источников.
   - [Marketplace](/ru/applications-and-services/marketplace) — позволяет быстро разворачивать среды веб-разработки и администрирования на базе виртуальных машин. Включает такие приложения, как: OpenVPN, VK Testers, Redash, Grafana, Milvus, Nexus, Joomla, WordPress и другие.
 
   {/cut}
