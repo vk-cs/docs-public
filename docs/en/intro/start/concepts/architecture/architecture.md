@@ -76,7 +76,7 @@ You can use VK Cloud to deploy virtualization, monitoring, container, and data s
 
   - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters where you can run services and applications. 
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMSs: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB powered by Greenplum.
-  - [Cloud Big Data](/en/data-processing/bigdata) — used for analyzing big data based on Arenadata Hadoop, supports scaling. 
+  - [Cloud Big Data](/en/data-platform/bigdata) — used for analyzing big data based on Arenadata Hadoop, supports scaling. 
   - [Cloud Spark](/en/ml/spark-to-k8s) — supports distributed batch and stream data processing, machine learning and analytics.
   - [Cloud ML Platform](/en/ml/mlplatform) — supports services for full-cycle ML development.
   - [Cloud Voice](/en/ml/cloud-voice) — provides REST API for speech recognition and synthesis based on machine learning.
@@ -85,9 +85,9 @@ You can use VK Cloud to deploy virtualization, monitoring, container, and data s
   - [Cloud Logging](/en/monitoring-services/logging) — aggregates and analyzes logs of services in VK Cloud. 
   - [Cloud Monitoring](/en/monitoring-services/monitoring) — provides monitoring of metrics specific to PaaS services, such as analytics on K8s-container pods, and statistics of PostgreSQL DBMS transactions.
   - [Cloud Desktop](/en/computing/cloud-desktops/concepts/about) — managed virtual desktops accessible from anywhere in the world.
-  - [Cloud Kafka](/en/data-processing/kafka/concepts/about) — provides real-time data exchange between different modules of IT systems.
-  - [Cloud Flink](/en/data-processing/flink/concepts/about) — stream processing and data transfer from sources to target systems.
-  - [Cloud Trino](/en/data-processing/trino/concepts/about) — SQL engine for processing big data from remote sources.
+  - [Cloud Kafka](/en/data-platform/kafka/concepts/about) — provides real-time data exchange between different modules of IT systems.
+  - [Cloud Flink](/en/data-platform/flink/concepts/about) — stream processing and data transfer from sources to target systems.
+  - [Cloud Trino](/en/data-platform/trino/concepts/about) — SQL engine for processing big data from remote sources.
   - [Marketplace](/en/applications-and-services/marketplace) — allows rapid deployment of web development and administration environments based on virtual machines. Includes such applications as OpenVPN, VK Testers, Redash, Grafana, Milvus, Nexus, Joomla, WordPress, and others.
 
   {/cut}

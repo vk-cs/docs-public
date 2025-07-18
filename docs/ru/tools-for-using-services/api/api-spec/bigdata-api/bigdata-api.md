@@ -1,4 +1,4 @@
-API сервиса [Cloud Big Data](/ru/data-processing/bigdata) позволяет разворачивать новые и управлять существующими кластерами больших данных и их шаблонами; доступно управление резервным копированием. Кластерам Cloud Big Data соответствует сервис [OpenStack Sahara](https://docs.openstack.org/sahara/latest/).
+API сервиса [Cloud Big Data](/ru/data-platform/bigdata) позволяет разворачивать новые и управлять существующими кластерами больших данных и их шаблонами; доступно управление резервным копированием. Кластерам Cloud Big Data соответствует сервис [OpenStack Sahara](https://docs.openstack.org/sahara/latest/).
 
 {note:warn}
 

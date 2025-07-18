@@ -6,6 +6,6 @@
   "metaDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
   "sectionTitle": "Cloud Spark",
   "icon": "",
-  "weight": 2,
+  "weight": 3,
   "uuid": "eeff3f8f-5a5b-4a4b-8bb3-63fd8844263a"
 }
