@@ -14,8 +14,8 @@ Cloud Trino connectors allow you to retrieve data from the following sources:
 
 - [PostgreSQL](https://www.postgresql.org/) — object-relational database.
 - [Greenplum](https://greenplum.org) — massively parallel relational DBMS based on PostgreSQL.
-- [Clickhouse](https://clickhouse.com/) — columnar DBMS for online analytical query processing (OLAP).
-- [Cloud Storage](/ru/storage/s3) — cloud object storage with S3 API support in VK Cloud.
-- S3 — external S3 object storage, for example  [S3 AWS](https://aws.amazon.com/s3/).
+- [ClickHouse](https://clickhouse.com/) — columnar DBMS for online analytical query processing (OLAP).
+- [Cloud Storage](/ru/storage/s3) — cloud object storage with S3 support in VK Cloud.
+- S3 — external object storage with [S3](https://trino.io/docs/current/object-storage/file-system-s3.html) support.
 
 The user can manage Cloud Trino resources through the VK Cloud management console.
