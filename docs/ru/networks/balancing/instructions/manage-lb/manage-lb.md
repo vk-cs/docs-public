@@ -36,12 +36,12 @@
 1. Чтобы посмотреть детальную информацию о балансировщике нагрузки, выполните команду:
 
    ```console
-   openstack loadbalancer show <идентификатор балансировщика>
+   openstack loadbalancer show <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА>
    ```
 
    Будет выведена общая информация о балансировщике нагрузки и идентификаторы:
 
-   - `vip_port_id` — идентификатор порта, который используется в качестве Virtual IP на балансировщике нагрузки. На этот порт можно назначить Floating IP-адрес.
+   - `vip_port_id` — идентификатор порта, который используется в качестве виртуального IP-адреса на балансировщике нагрузки. На этот порт можно назначить Floating IP-адрес.
 
    - `listeners` — список идентификаторов listener-объектов. Эти объекты слушают входящие соединения к балансировщику нагрузки и служат точкой входа для трафика.
 
@@ -50,19 +50,19 @@
 1. Чтобы посмотреть настройки listener-объектов и их связь с пулами, выполните команду:
 
    ```console
-   openstack loadbalancer listener show <идентификатор listener-объекта>
+   openstack loadbalancer listener show <ИДЕНТИФИКАТОР_LISTENER-ОБЪЕКТА>
    ```
 
 1. Чтобы посмотреть настройки пула и список участников этого пула, выполните команду:
 
    ```console
-   openstack loadbalancer pool show <идентификатор пула>
+   openstack loadbalancer pool show <ИДЕНТИФИКАТОР_ПУЛА>
    ```
 
 1. Чтобы посмотреть настройки отдельного участника из пула, выполните команду:
 
    ```console
-   openstack loadbalancer member show <идентификатор пула> <идентификатор участника>
+   openstack loadbalancer member show <ИДЕНТИФИКАТОР_ПУЛА> <ИДЕНТИФИКАТОР_УЧАСТНИКА>
    ```
 
    Для участника будет выведена информация, в том числе порт назначения трафика.
@@ -127,7 +127,7 @@
 1. Создайте балансировщик:
 
    ```console
-   openstack loadbalancer create --name <имя балансировщика> --vip-subnet-id <идентификатор подсети> --availability-zone <зона доступности>
+   openstack loadbalancer create --name <ИМЯ_БАЛАНСИРОВЩИКА> --vip-subnet-id <ИДЕНТИФИКАТОР_ПОДСЕТИ> --availability-zone <зона доступности>
    ```
 
 1. (Опционально) [Назначьте балансировщику внешний IP-адрес](#upravlenie_publichnymi_ip_adresami). Через этот адрес он будет доступен из интернета. В противном случае балансировщик будет выступать в качестве внутреннего балансировщика нагрузки.
@@ -182,7 +182,7 @@
    <tabpanel>
 
    ```console
-   openstack loadbalancer <идентификатор балансировщика> \
+   openstack loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> \
      --name <новое имя>
    ```
 
@@ -190,7 +190,7 @@
    <tabpanel>
 
    ```console
-   openstack loadbalancer <идентификатор балансировщика> `
+   openstack loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> `
      --name <новое имя>
    ```
 
@@ -403,10 +403,10 @@ openstack loadbalancer <команда> --help
 
       ```console
       openstack loadbalancer pool create \
-        --loadbalancer <идентификатор балансировщика> \
-        --name <имя пула> \
-        --protocol <протокол назначения> \
-        --lb-algorithm <алгоритм балансировки>
+        --loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> \
+        --name <ИМЯ_ПУЛА> \
+        --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> \
+        --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ>
       ```
 
       </tabpanel>
@@ -414,10 +414,10 @@ openstack loadbalancer <команда> --help
 
       ```console
       openstack loadbalancer pool create `
-        --loadbalancer <идентификатор балансировщика> `
-        --name <имя пула> `
-        --protocol <протокол назначения> `
-        --lb-algorithm <алгоритм балансировки>
+        --loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> `
+        --name <ИМЯ_ПУЛА> `
+        --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> `
+        --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ>
       ```
 
       </tabpanel>
@@ -439,22 +439,22 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer member create <идентификатор пула> \
-        --name <имя участника> \
-        --address <IP-адрес виртуальной машины> \
-        --subnet-id <идентификатор подсети> \
-        --protocol-port <номер порта назначения>
+      openstack loadbalancer member create <ИДЕНТИФИКАТОР_ПУЛА> \
+        --name <ИМЯ_УЧАСТНИКА> \
+        --address <IP-АДРЕС_ВМ> \
+        --subnet-id <ИДЕНТИФИКАТОР_ПОДСЕТИ> \
+        --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
       ```
 
       </tabpanel>
       <tabpanel>
 
       ```console
-      openstack loadbalancer member create <идентификатор пула> `
-        --name <имя участника> `
-        --address <IP-адрес виртуальной машины> `
-        --subnet-id <идентификатор подсети> `
-        --protocol-port <номер порта назначения>
+      openstack loadbalancer member create <ИДЕНТИФИКАТОР_ПУЛА> `
+        --name <ИМЯ_УЧАСТНИКА> `
+        --address <IP-АДРЕС_ВМ> `
+        --subnet-id <ИДЕНТИФИКАТОР_ПОДСЕТИ> `
+        --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
       ```
 
       </tabpanel>
@@ -476,26 +476,26 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer healthmonitor create <идентификатор пула> \
-        --name <имя healthcheck-объекта> \
-        --delay <задержка, с> \
-        --timeout <тайм-аут, с> \
-        --max-retries <количество успешных попыток> \
-        --max-retries-down <количество неуспешных попыток> \
-        --type <тип проверки>
+      openstack loadbalancer healthmonitor create <ИДЕНТИФИКАТОР_ПУЛА> \
+        --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> \
+        --delay <ЗАДЕРЖКА,_с> \
+        --timeout <ТАЙМ-АУТ,_с> \
+        --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК> \
+        --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> \
+        --type <ТИП_ПРОВЕРКИ>
       ```
 
       </tabpanel>
       <tabpanel>
 
       ```console
-      openstack loadbalancer healthmonitor create <идентификатор пула> `
-        --name <имя healthcheck-объекта> `
-        --delay <задержка, с> `
-        --timeout <тайм-аут, с> `
-        --max-retries <количество успешных попыток> `
-        --max-retries-down <количество неуспешных попыток> `
-        --type <тип проверки>
+      openstack loadbalancer healthmonitor create <ИДЕНТИФИКАТОР_ПУЛА> `
+        --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> `
+        --delay <ЗАДЕРЖКА,_с> `
+        --timeout <ТАЙМ-АУТ,_с> `
+        --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>`
+        --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> `
+        --type <ТИП_ПРОВЕРКИ>
       ```
 
       </tabpanel>
@@ -511,22 +511,22 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer listener create <идентификатор балансировщика> \
-        --name <имя listener-объекта> \
-        --protocol <протокол балансировки> \
-        --default-pool <идентификатор пула> \
-        --protocol-port <номер порта>
+      openstack loadbalancer listener create <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> \
+        --name <ИМЯ_LISTENER-ОБЪЕКТА> \
+        --protocol <ПРОТОКОЛ_БАЛАНСИРОВКИ> \
+        --default-pool <ИДЕНТИФИКАТОР_ПУЛА> \
+        --protocol-port <НОМЕР_ПОРТА>
       ```
 
       </tabpanel>
       <tabpanel>
 
       ```console
-      openstack loadbalancer listener create <идентификатор балансировщика> `
-        --name <имя listener-объекта> `
-        --protocol <протокол балансировки> `
-        --default-pool <идентификатор пула> `
-        --protocol-port <номер порта>
+      openstack loadbalancer listener create <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> `
+        --name <ИМЯ_LISTENER-ОБЪЕКТА> `
+        --protocol <ПРОТОКОЛ_БАЛАНСИРОВКИ> `
+        --default-pool <ИДЕНТИФИКАТОР_ПУЛА> `
+        --protocol-port <НОМЕР_ПОРТА>
       ```
 
       </tabpanel>
@@ -543,7 +543,7 @@ openstack loadbalancer <команда> --help
       1. Выполните команду:
 
          ```console
-         openstack loadbalancer listener show <идентификатор listener-объекта>
+         openstack loadbalancer listener show <ИДЕНТИФИКАТОР_LISTENER-ОБЪЕКТА>
          ```
 
       1. Идентификатор пула будет содержаться в поле `default_pool_id`.
@@ -551,13 +551,13 @@ openstack loadbalancer <команда> --help
    1. Удалите listener-объект:
 
       ```console
-      openstack loadbalancer listener delete <идентификатор listener-объекта>
+      openstack loadbalancer listener delete <ИДЕНТИФИКАТОР_LISTENER-ОБЪЕКТА>
       ```
 
    1. Удалите пул:
 
       ```console
-      openstack loadbalancer pool delete <идентификатор пула>
+      openstack loadbalancer pool delete <ИДЕНТИФИКАТОР_ПУЛА>
       ```
 
 </tabpanel>
@@ -599,7 +599,7 @@ openstack loadbalancer <команда> --help
 1. Удалите балансировщик:
 
    ```console
-   openstack loadbalancer delete <идентификатор балансировщика>
+   openstack loadbalancer delete <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА>
    ```
 
 </tabpanel>
