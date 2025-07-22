@@ -109,7 +109,7 @@
 | ![](/ru/assets/no.svg "inline")
 
 |`user_script`
-|Cкрипты, запускаемые через Cloud-init
+|Скрипты, запускаемые через Cloud-init
 |list
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
@@ -187,12 +187,11 @@ resource "vkcs_compute_instance" "single" {
 Создание корректной cloud-config конфигурации гарантируется для базовых образов из таблицы.
 
 {caption(Таблица {counter(table)[id=numb_tab_target_os]} — Возможные значения аргумента target_os)[align=right;position=above;id=tab_target_os;number={const(numb_tab_target_os)}]}
-[cols="3,2,2,3,2", options="header"]
+[cols="3,2,2,2", options="header"]
 |===
 |Значение
 |ОС
 |Версия Cloud-init
-|ID базового образа в облачной платформе
 |Базовая ОС
 
 |
@@ -205,56 +204,48 @@ resource "vkcs_compute_instance" "single" {
 {/note}
 |FreeBSD 13.2
 |23.1.1
-|23e07695-844a-44b0-8e3d-bc1126b0abc4
 |FreeBSD
 
 |
 `debian114`
 |Debian 11.4
 |20.4.1
-|8d26d45a-bd37-4990-8fae-c406ef188843
 |Debian
 
 |
 `ubuntu2204`
 |Ubuntu 22.04
 |22.2
-|b75595ca-4e1d-47e0-8e95-7a02edc0e242
 |Debian
 
 |
 `redos73`
 |RedOS 7.3
 |21.4
-|ff61e505-1e12-4ea8-93e5-39d161d9e6a4
 |Debian
 
 |
 `centos84`
 |CentOS 8.4
 |19.4
-|c9b7a469-a7ed-4119-b840-fd5169ee4348
 |RHEL
 
 |
 `altserver10`
 |Альт Сервер 10
 |22.3.4
-|60502e29-e0c8-4c75-afc8-e0b78856626e
 |Debian
 
 |
 `astralinux17`
 |Astra Linux SE 1.7 «Воронеж»
 |20.2
-|df635659-5dc9-48af-a1f7-1afb9dfaa199
 |Debian
 
 |
 `almalinux9`
 |AlmaLinux 9
 |22.1
-|503b3045-72fa-4ea6-9f2f-5c2fe96ebbb2
 |RHEL
 |===
 {/caption}
@@ -266,6 +257,8 @@ resource "vkcs_compute_instance" "single" {
 Если для работы сервиса требуется только агент и SSH-ключи для доступа к ВМ `ssh_authorized_keys`, используйте любое значение аргумента `target_os`.
 
 {/note}
+
+ID базового образа в VK Cloud, который соответствует значению `target_os`, можно узнать, выполнив в [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli) команду `openstack image list`. Команда выводит список всех доступных в проекте образов ВМ. Для каждого образа отображается его ID, значение `target_os` и статус.
 
 ## {heading(Аргумент packages)[id=packages]}
 
