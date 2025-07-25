@@ -15,9 +15,15 @@ In your management console, you can change [parameters](#edit_siem_connection) a
 
    - **Name**: enter a name for the connection.
    - **Connection point**: enter the IP address of your SIEM system and the port open to receive messages from VK Cloud.
-   - **Data transfer protocol**: select the protocol for transferring data to the SIEM system. Available values: `TCP`, `UDP`, `TCP over TLS`. To use data encryption, select `TCP over TLS`.
+   - **Data transfer protocol**: select the protocol for transferring data to the SIEM system. Available options: `TCP`, `UDP`, `TCP over TLS`. To use data encryption, select `TCP over TLS`.
    - **TLS key**: enter the TLS key value from your provider in PEM format. This option is available when `TCP over TLS` is selected.
-   - **Message format**: select the format in which data will be provided to the SIEM system. Available values: `RAW (Syslog RFC5424)`, `CEF (Common Event Format`.
+   - **Message format**: select the format in which data will be provided to the SIEM system. Available options: `RAW (Syslog RFC5424)`, `CEF (Common Event Format`.
+
+1. (Optional) Select the type of message filtering:
+
+      - **Disabled**: getting information about all events.
+      - **General filters**: filtering events by **Status** or **Source** parameters. Available options: `Disabled`, `Send only selected`, `Send all except`.
+      - **Query filter**: filtering events by creating your own filter using [query language](/en/monitoring-services/event-log/concepts/search-language).
 
 1. Click the **Create** button.
 1. Wait for the connection check to complete and click the **Activate** or **Save as inactive** button.
@@ -39,9 +45,15 @@ A page with the settings of the selected SIEM connection will open.
 
    - **Name**: enter a name for the connection.
    - **Connection point**: enter the IP address of your SIEM system and the port open to receive messages from VK Cloud.
-   - **Data transfer protocol**: select the protocol for transferring data to the SIEM system. Available values: `TCP`, `UDP`, `TCP over TLS`. To use data encryption, select `TCP over TLS`.
+   - **Data transfer protocol**: select the protocol for transferring data to the SIEM system. Available options: `TCP`, `UDP`, `TCP over TLS`. To use data encryption, select `TCP over TLS`.
    - **TLS key**: enter the TLS key value from your provider in PEM format. This option is available when `TCP over TLS` is selected.
-   - **Message format**: select the format in which data will be provided to the SIEM system. Available values: `RAW (Syslog RFC5424)`, `CEF (Common Event Format`.
+   - **Message format**: select the format in which data will be provided to the SIEM system. Available options: `RAW (Syslog RFC5424)`, `CEF (Common Event Format`.
+
+1. (Optional) Select the type of message filtering:
+
+      - **Disabled**: getting information about all events.
+      - **General filters**: filtering events by **Status** or **Source** parameters. Available options: `Disabled`, `Send only selected`, `Send all except`.
+      - **Query filter**: filtering events by creating your own filter using [query language](/en/monitoring-services/event-log/concepts/search-language).
 
 1. Click the **Create** button.
 1. Wait for the connection check to complete and click the **Activate** or **Save as inactive** button.
