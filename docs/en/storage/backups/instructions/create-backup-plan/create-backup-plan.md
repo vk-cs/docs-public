@@ -19,11 +19,8 @@ Each VM or DB instance can have only one backup plan.
 
 ## {heading(Creating backup plan for virtual machine)[id=create_vm_backup_plan]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup**.
@@ -40,30 +37,21 @@ Each VM or DB instance can have only one backup plan.
    - **Keep monthly complete copies**: the option is enabled, the period of `12` months is specified.
    - **Keep yearly complete copies**: the option is enabled, the period of `3` years is specified.
 
-1. If the default settings are suitable for your plan, select the required VMs in the **Apply to the following virtual machines** field and click the **Create a plan** button. Skip the rest of the steps.
+1. If these settings are not suitable for your plan, change them:
 
-   If you need to change the settings, proceed to the next step.
+   {include(/en/_includes/_backup_plan_create_change.md)[tags=vm_part1]}
 
-{include(/en/_includes/_backup_plan_create_change.md)[tags=vm]}
+{include(/en/_includes/_backup_plan_create_change.md)[tags=vm_part2]}
 
 The created backup plan will appear in the list.
 
-{note:info}
-
-When a VM is backed up, all disks connected to it will be also backed up.
-
-{/note}
-
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## {heading(Creating backup plan for database instance)[id=create_db_backup_plan]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup**.
@@ -75,16 +63,13 @@ When a VM is backed up, all disks connected to it will be also backed up.
 
 The created backup plan will appear in the list.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Creating backup plan for analytical database instance
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup**.
@@ -96,5 +81,5 @@ The created backup plan will appear in the list.
 
 The created backup plan will appear in the list.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}

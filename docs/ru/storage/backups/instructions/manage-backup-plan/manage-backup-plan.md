@@ -1,10 +1,7 @@
 ## Просмотр информации о планах резервного копирования
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Cloud Backup → Резервное копирование**.
@@ -23,8 +20,8 @@
     * Отфильтруйте список. Для этого нажмите кнопку **Фильтры** и выберите статус запусков резервного копирования, интервал времени и тип резервных копий.
     * Введите частично или полностью название нужного плана в строку поиска. По мере ввода в списке будут отображаться только планы с подходящими названиями.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Просмотр списка резервных копий плана
 
@@ -34,11 +31,8 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Cloud Backup → Резервное копирование**.
@@ -50,8 +44,8 @@
 
 1. Чтобы открыть список резервных копий инстанса, нажмите на его имя или на значок ![ ](/ru/assets/right-arrow-icon.svg "inline").
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## {heading(Изменение плана резервного копирования)[id=edit_backup_plan]}
 
@@ -61,11 +55,8 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Cloud Backup → Резервное копирование**.
@@ -77,33 +68,27 @@
 
 1. Измените нужные параметры плана.
 
-<tabs>
-<tablist>
-<tab>Виртуальная машина</tab>
-<tab>База данных</tab>
-<tab>Аналитическая база данных</tab>
-</tablist>
-<tabpanel>
+   {tabs}
+   {tab(Виртуальная машина)}
 
-{include(/ru/_includes/_backup_plan_create_change.md)[tags=vm]}
+   {include(/ru/_includes/_backup_plan_create_change.md)[tags=vm_part1]}
+   {include(/ru/_includes/_backup_plan_create_change.md)[tags=vm_part2]}
 
-</tabpanel>
+   {/tab}
+   {tab(База данных)}
 
-<tabpanel>
+   {include(/ru/_includes/_backup_plan_create_change.md)[tags=db]}
 
-{include(/ru/_includes/_backup_plan_create_change.md)[tags=db]}
+   {/tab}
+   {tab(Аналитическая база данных)}
 
-</tabpanel>
+   {include(/ru/_includes/_backup_plan_create_change.md)[tags=adb]}
 
-<tabpanel>
+   {/tab}
+   {/tabs}
 
-{include(/ru/_includes/_backup_plan_create_change.md)[tags=adb]}
-
-</tabpanel>
-</tabs>
-
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## {heading(Активация, остановка и удаление плана резервного копирования)[id=activate_stop_delete_backup_plan]}
 
@@ -113,36 +98,29 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Cloud Backup → Резервное копирование**.
 1. Перейдите на вкладку **Автоматическое**.
 1. Чтобы изменить состояние плана резервного копирования:
 
-   <tabs>
-   <tablist>
-   <tab>Для нескольких планов</tab>
-   <tab>Для одного плана</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+   {tab(Для нескольких планов)}
 
-      1. В списке планов выберите нужные планы с помощью флажков.
-      1. Над списком планов нажмите кнопку с нужным действием.
-      1. Подтвердите действие.
+   1. В списке планов выберите нужные планы с помощью флажков.
+   1. Над списком планов нажмите кнопку с нужным действием.
+   1. Подтвердите действие.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+   {tab(Для одного плана)}
 
-      1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного плана.
-      1. Выберите и подтвердите действие.
+   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного плана.
+   1. Выберите и подтвердите действие.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
