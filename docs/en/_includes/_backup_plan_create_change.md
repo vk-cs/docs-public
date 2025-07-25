@@ -1,4 +1,4 @@
-{includetag(vm)}
+{includetag(vm_part1)}
 
 1. Specify what kind of backups to create: full only or full and incremental.
 
@@ -21,8 +21,33 @@
 
    - For the [approach with limiting the number of backup copies](/en/storage/backups/concepts/retention-policy/forward-incremental), set the maximum number of full backups. When this limit is reached, the oldest backups will be deleted automatically.
 
-1. Select the required VMs in the **Apply to the following virtual machines** field.
-1. Click **Create a plan** or **Save plan**.
+{/includetag}
+
+{includetag(vm_part2)}
+
+1. In the **Virtual machines** block, select the required VM from the list.
+1. (Optional) Select the disks connected to the VM that you want to save in its backup. By default, all disks will be saved.
+
+   {note:warn}
+
+   If a backup does not contain a boot disk, it will impossible to restore the VM from such a copy.
+
+   {/note}
+
+   For details on restoring a VM from a backup where not all disks connected to it are saved, see the [Restoring from backups](/en/storage/backups/instructions/restore-from-backup#restore_instance_from_backup) section.
+
+1. (Optional) Add one more VM to the backup using the **Add virtual machine** button.
+1. Once all the required VMs are added, click the **Create a plan** or **Save plan** button.
+
+{/includetag}
+
+{includetag(restore)}
+
+{note:warn}
+
+If a backup does not contain a boot disk, it will impossible to restore the VM from such a copy.
+
+{/note}
 
 {/includetag}
 
