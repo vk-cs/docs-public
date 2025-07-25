@@ -9,6 +9,8 @@ Cloud Backup allows you to:
 - [run backups manually](/en/storage/backups/instructions/create-backup-copy), for example, before operations associated with the risk of data loss
 - [create backups automatically](/en/storage/backups/instructions/create-backup-plan) according to a pre-configured schedule
 
+When configuring a backup of virtual machines, you can choose which disks connected to the VM to save in its backup. By excluding some disks from the backup, such as large data disks, you can reduce the backup time and the copy size. Disk selection is available in both manual and automatic backup modes.
+
 For scheduled backups, Cloud Backup offers a choice between two strategies for creating and storing backups:
 
 - a strategy [with a limit on the maximum number](/en/storage/backups/concepts/retention-policy/forward-incremental) of stored full copies

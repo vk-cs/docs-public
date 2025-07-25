@@ -1,10 +1,7 @@
 ## Viewing information about backup plans
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -23,8 +20,8 @@
     * Filter the list. To do this, click **Filters** and select the backup status, time interval, and backup resource type.
     * Enter partially or completely the name of the required plan in the search bar. As you type, the list will show only plans with matching names.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Viewing list of backup copies created by plan
 
@@ -34,11 +31,8 @@ The list of backup copies created according to a plan is grouped by the instance
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -50,8 +44,8 @@ The list of backup copies created according to a plan is grouped by the instance
 
 1. To open the list of instance backup copies, click the instance name or the ![ ](/en/assets/right-arrow-icon.svg "inline") icon.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## {heading(Editing backup plan)[id=edit_backup_plan]}
 
@@ -61,11 +55,8 @@ When editing a plan, you cannot change the selection of instances for backup.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -77,33 +68,27 @@ When editing a plan, you cannot change the selection of instances for backup.
 
 1. Change the required parameters of the plan.
 
-<tabs>
-<tablist>
-<tab>Virtual machine</tab>
-<tab>Database</tab>
-<tab>Analytical database</tab>
-</tablist>
-<tabpanel>
+   {tabs}
+   {tab(Virtual machine)}
 
-{include(/en/_includes/_backup_plan_create_change.md)[tags=vm]}
+   {include(/en/_includes/_backup_plan_create_change.md)[tags=vm_part1]}
+   {include(/en/_includes/_backup_plan_create_change.md)[tags=vm_part2]}
 
-</tabpanel>
+   {/tab}
+   {tab(Database)}
 
-<tabpanel>
+   {include(/en/_includes/_backup_plan_create_change.md)[tags=db]}
 
-{include(/en/_includes/_backup_plan_create_change.md)[tags=db]}
+   {/tab}
+   {tab(Analytical database)}
 
-</tabpanel>
+   {include(/en/_includes/_backup_plan_create_change.md)[tags=adb]}
 
-<tabpanel>
+   {/tab}
+   {/tabs}
 
-{include(/en/_includes/_backup_plan_create_change.md)[tags=adb]}
-
-</tabpanel>
-</tabs>
-
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## {heading(Activating, stopping, and deleting backup plan)[id=activate_stop_delete_backup_plan]}
 
@@ -113,36 +98,29 @@ Deleting a backup plan will delete all backups created according to that plan.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
 1. Go to the **Automatic** tab.
 1. To change the state of a backup plan:
 
-   <tabs>
-   <tablist>
-   <tab>For several plans</tab>
-   <tab>For one plan</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+   {tab(For several plans)}
 
-      1. In the list of plans, set the checkboxes for the required plans.
-      1. Above the list of plans, click the required action button.
-      1. Confirm the action.
+   1. In the list of plans, set the checkboxes for the required plans.
+   1. Above the list of plans, click the required action button.
+   1. Confirm the action.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+   {tab(For one plan)}
 
-      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required plan.
-      1. Select and confirm the required action.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required plan.
+   1. Select and confirm the required action.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
