@@ -43,29 +43,48 @@
     </tablist>
     <tabpanel>
 
-    1. On the **Restoring instance from backup** page, select the **Restoring type**: `To a new instance` or `To the existing instance`.
+    {note:warn}
 
-        - For restoring to a new instance, specify the required parameters. The remaining parameters will be restored from the backup copy.
+    Restoring a VM is only available if the backup copy contains its configuration, i.e. the boot disk is saved.
 
-            {note:warn}
+    {/note}
 
-            Virtual machines created in a private network will not work when restored to an external network: `ext-net`.
+    1. On the **Restoring instance from backup** page, select the **Restoring type**: `To the existing instance` or `To a new instance`.
 
-            {/note}
+         {tabs}
+         {tab(To the existing instance)}
 
-        - To restore to the original VM, you do not need to specify any parameters. The disks of the target VM will be restored without changing their properties. The VM will be rebooted.
+         To restore to the original VM, you do not need to specify any parameters.
+
+         Features of restoring a VM and disks connected to it to the original instance:
+
+         - New disks will be created from the copies of disks saved in the VM backup. They will be connected to the original VM. The old disks will be disconnected from the VM and will remain in the project. [Delete](/en/computing/iaas/instructions/volumes#deleting_disk) them if you are no longer need them.
+         - Disks connected to the VM that were not backed up will not change their state.
+         - After restoring a VM from a copy created within a backup plan, the plan will be automatically updated and the disk selection for the VM will change to `All disks`. If necessary, [adjust](../manage-backup-plan#edit_backup_plan) the plan settings after restoring the VM.
+
+         The restored VM will be rebooted.
+
+         {/tab}
+         {tab(To a new instance)}
+
+         For restoring to a new instance, specify the required parameters. The remaining parameters will be restored from the backup copy.
+
+         {note:warn}
+
+          Virtual machines created in a private network will not work when restored to an external network: `ext-net`.
+
+         {/note}
+
+         {/tab}
+         {/tabs}
 
     1. Click **Restore instance**.
-
-    {note:info}
 
     The speed of restoring a VM from a backup depends on:
 
     - Backup type — restoring from an incremental copy takes longer because it first restores data from a full copy and then sequentially adds changes from later incremental backups.
     - Disk type — if the original VM had an SSD disk, recovery to a VM with an HDD disk will be slower.
     - Restoring type — restoring to the original VM takes less time.
-
-    {/note}
 
     </tabpanel>
     <tabpanel>
@@ -86,6 +105,13 @@
     <tabpanel>
 
     1. Configure the parameters of the analytical database instance being created.
+
+       {note:warn}
+       The instance you create may require more disk space than the backup copy size because Cloud Backup uses data compression.
+
+       Specify a disk size for the instance equal to the size of the original instance that was backed up. If it is unknown, specify the disk size 2–3 times larger than the size of backup copy.
+       {/note}
+
     1. Click **Next step**.
 
     The process of creating a new analytical database instance will start.
