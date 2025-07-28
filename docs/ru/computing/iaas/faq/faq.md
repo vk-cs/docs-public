@@ -106,7 +106,7 @@ VNC-консоль доступна на странице виртуальной
 
 {cut(Могу ли я задать Floating IP-адрес для ВМ?)}
 
-Вы можете [назначить существующий](/ru/networks/vnet/instructions/ip/floating-ip#associate) Floating IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/instructions/ip/floating-ip#add
+Вы можете [назначить существующий](/ru/networks/vnet/instructions/ip/floating-ip#associate) Floating IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/instructions/ip/floating-ip#add).
 
 {note:warn}
 
