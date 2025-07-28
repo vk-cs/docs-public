@@ -161,7 +161,7 @@
 
 {/note}
 
-## {heading(Привязка домена)[id=use_cdn]}
+## {heading(Использование CDN)[id=use_cdn]}
 
 {include(/ru/_includes/_s3-create-cdn.md)}
 
