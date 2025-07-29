@@ -2,13 +2,9 @@
 
 ## Просмотр списка балансировщиков нагрузки и информации о них
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
+{tab(Личный кабинет)}
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
@@ -18,10 +14,9 @@
 1. Нажмите на имя нужного балансировщика.
 
    Откроется страница с подробной информацией о нем. На этой странице можно также [редактировать](#redaktirovanie_imeni_balansirovshchika_nagruzki) параметры балансировщика.
+{/tab}
 
-</tabpanel>
-<tabpanel>
-
+{tab(OpenStack CLI)}
 1. Убедитесь, что:
 
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
@@ -36,7 +31,7 @@
 1. Чтобы посмотреть детальную информацию о балансировщике нагрузки, выполните команду:
 
    ```console
-   openstack loadbalancer show <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА>
+   openstack loadbalancer show <ID_БАЛАНСИРОВЩИКА>
    ```
 
    Будет выведена общая информация о балансировщике нагрузки и идентификаторы:
@@ -50,35 +45,31 @@
 1. Чтобы посмотреть настройки прослушивателей и их связь с пулами, выполните команду:
 
    ```console
-   openstack loadbalancer listener show <ИДЕНТИФИКАТОР_LISTENER-ОБЪЕКТА>
+   openstack loadbalancer listener show <ID_ПРОСЛУШИВАТЕЛЯ>
    ```
 
 1. Чтобы посмотреть настройки пула и список участников этого пула, выполните команду:
 
    ```console
-   openstack loadbalancer pool show <ИДЕНТИФИКАТОР_ПУЛА>
+   openstack loadbalancer pool show <ID_ПУЛА>
    ```
 
 1. Чтобы посмотреть настройки отдельного участника из пула, выполните команду:
 
    ```console
-   openstack loadbalancer member show <ИДЕНТИФИКАТОР_ПУЛА> <ИДЕНТИФИКАТОР_УЧАСТНИКА>
+   openstack loadbalancer member show <ID_ПУЛА> <ID_УЧАСТНИКА>
    ```
 
    Для участника будет выведена информация, в том числе порт назначения трафика.
+{/tab}
 
-</tabpanel>
-</tabs>
+{/tabs}
 
 ## Добавление балансировщика нагрузки
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
+{tab(Личный кабинет)}
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
@@ -105,10 +96,9 @@
 
 1. Задайте правила балансировки.
 1. Нажмите кнопку **Добавить балансировщик**.
+{/tab}
 
-</tabpanel>
-<tabpanel>
-
+{tab(OpenStack CLI)}
 1. Убедитесь, что:
 
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
@@ -127,25 +117,21 @@
 1. Создайте балансировщик:
 
    ```console
-   openstack loadbalancer create --name <ИМЯ_БАЛАНСИРОВЩИКА> --vip-subnet-id <ИДЕНТИФИКАТОР_ПОДСЕТИ> --availability-zone <зона доступности>
+   openstack loadbalancer create --name <ИМЯ_БАЛАНСИРОВЩИКА> --vip-subnet-id <ID_ПОДСЕТИ> --availability-zone <ЗОНА_ДОСТУПНОСТИ>
    ```
 
 1. (Опционально) [Назначьте балансировщику внешний IP-адрес](#upravlenie_publichnymi_ip_adresami). Через этот адрес он будет доступен из интернета. В противном случае балансировщик будет выступать в качестве внутреннего балансировщика нагрузки.
 
    Адрес требуется назначить, если планируется размещать за балансировщиком сервисы, которые должны быть доступны из интернета. Назначить адрес можно только при условии, что сеть для подсети, выбранной ранее, находится за маршрутизатором, который имеет доступ в интернет.
+{/tab}
 
-</tabpanel>
-</tabs>
+{/tabs}
 
 ## Редактирование имени балансировщика нагрузки
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
+{tab(Личный кабинет)}
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
@@ -162,9 +148,9 @@
    1. Задайте новое имя.
    1. Нажмите кнопку **Переименовать**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
 
+{tab(OpenStack CLI)}
 1. Убедитесь, что:
 
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
@@ -174,31 +160,29 @@
 
 1. Измените имя балансировщика:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
 
    ```console
-   openstack loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> \
-     --name <новое имя>
+   openstack loadbalancer <ID_БАЛАНСИРОВЩИКА> \
+     --name <НОВОЕ_ИМЯ>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
 
    ```console
-   openstack loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> `
-     --name <новое имя>
+   openstack loadbalancer <ID_БАЛАНСИРОВЩИКА> `
+     --name <НОВОЕ_ИМЯ>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Управление публичными IP-адресами
 
@@ -206,13 +190,9 @@
 
 Если сеть балансировщика подключена к маршрутизатору с доступом в интернет, то можно назначить балансировщику публичный (внешний) IP-адрес.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
+{tab(Личный кабинет)}
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
@@ -226,10 +206,9 @@
 
 1. Выберите нужный публичный IP-адрес из списка либо создайте новый.
 1. Нажмите кнопку **Подтвердить**.
+{/tab}
 
-</tabpanel>
-<tabpanel>
-
+{tab(OpenStack CLI)}
 1. Убедитесь, что:
 
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
@@ -237,21 +216,17 @@
 
 1. [Получите идентификатор порта](../../../vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
 1. [Привяжите Floating IP-адрес](../../../vnet/instructions/ip/floating-ip#associate) к порту с этим идентификатором.
+{/tab}
 
-</tabpanel>
-</tabs>
+{/tabs}
 
 ### Отвязать публичный IP-адрес
 
 Если сеть балансировщика подключена к маршрутизатору с доступом в интернет, и балансировщику назначен публичный (внешний) IP-адрес, то этот адрес можно отвязать.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
+{tab(Личный кабинет)}
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
@@ -264,10 +239,9 @@
    - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного балансировщика и выберите пункт **Отвязать внешний IP**.
 
 1. Нажмите кнопку **Подтвердить**.
+{/tab}
 
-</tabpanel>
-<tabpanel>
-
+{tab(OpenStack CLI)}
 1. Убедитесь, что:
 
    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
@@ -275,19 +249,15 @@
 
 1. [Получите идентификатор порта](../../../vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
 1. [Отвяжите Floating IP-адрес](../../../vnet/instructions/ip/floating-ip#disassociate) от порта с этим идентификатором.
+{/tab}
 
-</tabpanel>
-</tabs>
+{/tabs}
 
 ## Управление правилами балансировки
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
+{tab(Личный кабинет)}
 1. [Перейдите](#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih) на страницу балансировщика для его редактирования.
 1. В секции **Правила балансировки** выполните одно из доступных действий:
 
@@ -369,8 +339,9 @@
    - **Статус ответа**: [HTTP-статус](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), при получении которого проверка доступности будет считаться успешной.
    - **Путь запроса**: путь, по которому надо обратиться для проверки доступности.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 {note:info}
 
@@ -378,7 +349,7 @@
 
 ```console
 openstack loadbalancer --help
-openstack loadbalancer <команда> --help
+openstack loadbalancer <КОМАНДА> --help
 ```
 
 {/note}
@@ -403,7 +374,7 @@ openstack loadbalancer <команда> --help
 
       ```console
       openstack loadbalancer pool create \
-        --loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> \
+        --loadbalancer <ID_БАЛАНСИРОВЩИКА> \
         --name <ИМЯ_ПУЛА> \
         --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> \
         --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ>
@@ -414,7 +385,7 @@ openstack loadbalancer <команда> --help
 
       ```console
       openstack loadbalancer pool create `
-        --loadbalancer <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> `
+        --loadbalancer <ID_БАЛАНСИРОВЩИКА> `
         --name <ИМЯ_ПУЛА> `
         --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> `
         --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ>
@@ -439,10 +410,10 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer member create <ИДЕНТИФИКАТОР_ПУЛА> \
+      openstack loadbalancer member create <ID_ПУЛА> \
         --name <ИМЯ_УЧАСТНИКА> \
         --address <IP-АДРЕС_ВМ> \
-        --subnet-id <ИДЕНТИФИКАТОР_ПОДСЕТИ> \
+        --subnet-id <ID_ПОДСЕТИ> \
         --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
       ```
 
@@ -450,10 +421,10 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer member create <ИДЕНТИФИКАТОР_ПУЛА> `
+      openstack loadbalancer member create <ID_ПУЛА> `
         --name <ИМЯ_УЧАСТНИКА> `
         --address <IP-АДРЕС_ВМ> `
-        --subnet-id <ИДЕНТИФИКАТОР_ПОДСЕТИ> `
+        --subnet-id <ID_ПОДСЕТИ> `
         --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
       ```
 
@@ -476,10 +447,10 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer healthmonitor create <ИДЕНТИФИКАТОР_ПУЛА> \
+      openstack loadbalancer healthmonitor create <ID_ПУЛА> \
         --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> \
-        --delay <ЗАДЕРЖКА,_с> \
-        --timeout <ТАЙМ-АУТ,_с> \
+        --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> \
+        --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> \
         --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК> \
         --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> \
         --type <ТИП_ПРОВЕРКИ>
@@ -489,10 +460,10 @@ openstack loadbalancer <команда> --help
       <tabpanel>
 
       ```console
-      openstack loadbalancer healthmonitor create <ИДЕНТИФИКАТОР_ПУЛА> `
+      openstack loadbalancer healthmonitor create <ID_ПУЛА> `
         --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> `
-        --delay <ЗАДЕРЖКА,_с> `
-        --timeout <ТАЙМ-АУТ,_с> `
+        --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> `
+        --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> `
         --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>`
         --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> `
         --type <ТИП_ПРОВЕРКИ>
@@ -503,34 +474,63 @@ openstack loadbalancer <команда> --help
 
    1. Создайте прослушиватель, который будет обрабатывать входящие соединения:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
 
-      ```console
-      openstack loadbalancer listener create <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> \
-        --name <ИМЯ_LISTENER-ОБЪЕКТА> \
-        --protocol <ПРОТОКОЛ_БАЛАНСИРОВКИ> \
-        --default-pool <ИДЕНТИФИКАТОР_ПУЛА> \
-        --protocol-port <НОМЕР_ПОРТА>
-      ```
+         ```console
+         openstack loadbalancer listener create <ID_БАЛАНСИРОВЩИКА> \
+           --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> \
+           --protocol <ПРОТОКОЛ> \
+           --default-pool <ID_ПУЛА> \
+           --protocol-port <НОМЕР_ПОРТА> \
+           --timeout-member-data <ТАЙМ-АУТ_1> \
+           --timeout-member-connect <ТАЙМ-АУТ_2> \
+           --timeout-client-data <ТАЙМ-АУТ_3> \
+           --timeout-tcp-inspect <ТАЙМ-АУТ_4>
+         ```
+      
+         Здесь:
+      
+         - `<ID_БАЛАНСИРОВЩИКА>` — идентификатор балансировщика нагрузки.
+         - `<ИМЯ_ПРОСЛУШИВАТЕЛЯ>` — название прослушивателя.
+         - `<ПРОТОКОЛ>` — протокол балансировки. Возможные значения: `TCP`, `HTTP`, `HTTPS`.
+         - `<ID_ПУЛА>` — идентификатор пула.
+         - `<НОМЕР_ПОРТА>` — порт протокола балансировки.
+         - `<ТАЙМ-АУТ_1>` — тайм-аут бездействия сервера. По умолчанию — `50000`.
+         - `<ТАЙМ-АУТ_2>` — тайм-аут установки соединения балансировщика с сервером. По умолчанию — `5000`.
+         - `<ТАЙМ-АУТ_3>` — тайм-аут бездействия клиента. По умолчанию — `50000`.
+         - `<ТАЙМ-АУТ_4>` — ожидание дополнительных TCP-пакетов для проверки содержимого. По умолчанию — `0`.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+      {tab(Windows (PowerShell))}
 
-      ```console
-      openstack loadbalancer listener create <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА> `
-        --name <ИМЯ_LISTENER-ОБЪЕКТА> `
-        --protocol <ПРОТОКОЛ_БАЛАНСИРОВКИ> `
-        --default-pool <ИДЕНТИФИКАТОР_ПУЛА> `
-        --protocol-port <НОМЕР_ПОРТА>
-      ```
+         ```console
+         openstack loadbalancer listener create <ID_БАЛАНСИРОВЩИКА> `
+           --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> `
+           --protocol <ПРОТОКОЛ> `
+           --default-pool <ID_ПУЛА> `
+           --protocol-port <НОМЕР_ПОРТА> `
+           --timeout-member-data <ТАЙМ-АУТ_1> `
+           --timeout-member-connect <ТАЙМ-АУТ_2> `
+           --timeout-client-data <ТАЙМ-АУТ_3> `
+           --timeout-tcp-inspect <ТАЙМ-АУТ_4>
+         ```
 
-      </tabpanel>
-      </tabs>
+         Здесь:
+
+         - `<ID_БАЛАНСИРОВЩИКА>` — идентификатор балансировщика нагрузки.
+         - `<ИМЯ_ПРОСЛУШИВАТЕЛЯ>` — название прослушивателя.
+         - `<ПРОТОКОЛ>` — протокол балансировки. Возможные значения: `TCP`, `HTTP`, `HTTPS`.
+         - `<ID_ПУЛА>` — идентификатор пула.
+         - `<НОМЕР_ПОРТА>` — порт протокола балансировки.
+         - `<ТАЙМ-АУТ_1>` — тайм-аут бездействия сервера. По умолчанию — `50000`.
+         - `<ТАЙМ-АУТ_2>` — тайм-аут установки соединения балансировщика с сервером. По умолчанию — `5000`.
+         - `<ТАЙМ-АУТ_3>` — тайм-аут бездействия клиента. По умолчанию — `50000`.
+         - `<ТАЙМ-АУТ_4>` — ожидание дополнительных TCP-пакетов для проверки содержимого. По умолчанию — `0`.
+
+      {/tab}
+      {/tabs}
 
 1. Чтобы применить (`set`) нужные настройки к объектам, которые входят в правило балансировки, или отменить настройки (`unset`), используйте соответствующие команды (например, `openstack loadbalancer pool set`).
 
@@ -543,7 +543,7 @@ openstack loadbalancer <команда> --help
       1. Выполните команду:
 
          ```console
-         openstack loadbalancer listener show <ИДЕНТИФИКАТОР_LISTENER-ОБЪЕКТА>
+         openstack loadbalancer listener show <ID_ПРОСЛУШИВАТЕЛЯ>
          ```
 
       1. Идентификатор пула будет содержаться в поле `default_pool_id`.
@@ -551,26 +551,23 @@ openstack loadbalancer <команда> --help
    1. Удалите прослушиватель:
 
       ```console
-      openstack loadbalancer listener delete <ИДЕНТИФИКАТОР_LISTENER-ОБЪЕКТА>
+      openstack loadbalancer listener delete <ID_ПРОСЛУШИВАТЕЛЯ>
       ```
 
    1. Удалите пул:
 
       ```console
-      openstack loadbalancer pool delete <ИДЕНТИФИКАТОР_ПУЛА>
+      openstack loadbalancer pool delete <ID_ПУЛА>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Удаление балансировщика нагрузки
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько балансировщиков нагрузки, выбрав их с помощью флажков.
 
@@ -586,8 +583,9 @@ openstack loadbalancer <команда> --help
 
 1. Подтвердите удаление балансировщика.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -599,8 +597,8 @@ openstack loadbalancer <команда> --help
 1. Удалите балансировщик:
 
    ```console
-   openstack loadbalancer delete <ИДЕНТИФИКАТОР_БАЛАНСИРОВЩИКА>
+   openstack loadbalancer delete <ID_БАЛАНСИРОВЩИКА>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}

@@ -65,3 +65,7 @@
 
 </tabpanel>
 </tabs>
+
+## Методы балансировки
+
+{include(/ru/_includes/_load_balancer.md)}
