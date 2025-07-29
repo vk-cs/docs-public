@@ -1,22 +1,22 @@
-[CIS Benchmarks](https://learn.cisecurity.org/benchmarks), или контрольные показатели CIS, — это тщательно разработанная и постоянно обновляемая система рекомендаций, призванная обеспечить наилучшую защиту систем, сервисов и приложений от киберугроз. Эти рекомендации разрабатывает и поддерживает некоммерческая организация [Center for Internet Security (CIS)](https://www.cisecurity.org/), которая специализируется на кибербезопасности. Следование стандартам CIS позволяет компаниям минимизировать потенциальные уязвимости, улучшить возможности обнаружения и реагирования на киберинциденты и таким образом повысить надежность своей системы безопасности.
+[CIS Benchmarks](https://learn.cisecurity.org/benchmarks) are a carefully designed and constantly updated system of recommendations aimed to provide the best protection for systems, services, and applications from cyber threats. These recommendations are developed and maintained by [Center for Internet Security (CIS)](https://www.cisecurity.org/), a non-profit organization that specializes in cybersecurity. Following CIS standards allows companies to minimize potential vulnerabilities, improve their ability to detect and respond to cyber incidents and thus increase the reliability of their security systems.
 
-Контрольные показатели CIS доступны для многих IT-систем, в том числе и для [Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/). Полный список систем и рекомендаций можно найти в [официальной документации](https://learn.cisecurity.org/benchmarks). 
+CIS benchmarks are available for various IT systems, including  [Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/). You can find the full list of systems and their corresponding recommendations in the [official documentation](https://learn.cisecurity.org/benchmarks).
 
-Для кластеров Kubernetes [версий 1.28 – 1.31](../../concepts/versions/version-support), доступных на платформе VK Cloud, были проведены тесты контрольных показателей CIS для Kubernetes. В ходе тестирования использовался инструмент с открытым исходным кодом [kube-bench](https://github.com/aquasecurity/kube-bench), который проверяет соответствие кластера Kubernetes контрольным показателям CIS. За основу для тестирования был взят официальный документ [CIS Kubernetes Benchmark v.1.10](https://www.cisecurity.org/benchmark/kubernetes/), в котором описан каждый из этапов тестирования, рекомендации и ожидаемые результаты. 
+Kubernetes clusters [versions 1.28 – 1.31](https://cloud.vk.com/docs/en/kubernetes/k8s/concepts/versions/version-support) available on the VK Cloud platform have been tested using the CIS Kubernetes Benchmark. To conduct testing, an open-source tool called [kube-bench](https://github.com/aquasecurity/kube-bench) was used to verify compliance with the CIS benchmarks. The official [CIS Kubernetes Benchmark v.1.10 document](https://www.cisecurity.org/benchmark/kubernetes/) was used as a basis for the testing. This document describes each stage of the testing process, provides recommendations, and outlines expected results.
 
-Платформа VK Cloud обеспечивает защиту master-узлов, но в остальном пользовательские настройки кластеров могут отличаться. Такие настройки не учитываются в тестировании и находятся в зоне ответственности пользователя, поэтому часть тестов имеют результаты `WARN` или `FAIL` с соответствующими комментариями. Вы можете провести собственное тестирование контрольных показателей CIS, чтобы обеспечить максимальную безопасность своих кластеров Kubernetes.
+The VK Cloud platform provides protection for master nodes, but user settings for clusters can vary. These settings are not taken into account in the testing process and are the responsibility of the user, which causes some tests to result in `WARN` or `FAIL`. To ensure maximum security of your Kubernetes clusters, you can perform your own tests using CIS benchmarks.
 
-Таким образом, тестирование показало, что кластеры Kubernetes на платформе VK Cloud соответствуют рекомендациям CIS Benchmarks. Подробные результаты с комментариями к отдельным этапам тестирования:
+Thus, the testing has shown that Kubernetes clusters on the VK Cloud platform comply with the CIS Benchmarks recommendations. The following are detailed results with comments on individual testing stages:
 
-{cut(Для кластеров версий 1.28 – 1.29)}
+{cut(For clusters versions 1.28 – 1.29)}
 
 [cols="1,3a,1,2a", options="header"]
 |===
 
-| Статус
-| Название
-| Тип запуска
-| Комментарий
+| Status
+| Test stage
+| Test type
+| Comment
 
 4+| **1. Control Plane Security Configuration**
 
@@ -63,32 +63,32 @@
 | PASS	 
 | 1.1.9. Ensure that the Container Network Interface file permissions are set to `600` or more restrictive 	
 | Manual
-| Указанные ограничения установлены
+| The restrictions are set as required 
 
 | PASS	 
 | 1.1.10. Ensure that the Container Network Interface file ownership is set to `root:root` 	
 | Manual
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS	 
 | 1.1.11. Ensure that the etcd data directory permissions are set to `700` or more restrictive 	
 | Automated
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS	 
 | 1.1.12. Ensure that the etcd data directory ownership is set to `etcd:etcd` 	
 | Automated
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS	 
 | 1.1.13. Ensure that the default administrative credential file permissions are set to `600` 	
 | Automated
-| Файлы `admin.conf` и `super-admin.conf` не используются
+| The `admin.conf` and `super-admin.conf` files are not used
 
 | PASS	 
 | 1.1.14. Ensure that the default administrative credential file ownership is set to `root:root` 	
 | Automated
-| Файлы `admin.conf` и `super-admin.conf` не используются
+| The `admin.conf` and `super-admin.conf` files are not used
 
 | PASS	 
 | 1.1.15. Ensure that the `scheduler.conf` file permissions are set to `600` or more restrictive 	
@@ -326,12 +326,12 @@
 | PASS
 | 2.1. Ensure that the `--cert-file` and `--key-file` arguments are set as appropriate
 | Automated
-| Параметры указаны в файле конфигурации
+| The arguments are set in the configuration file
 
 | PASS
 | 2.2. Ensure that the `--client-cert-auth` argument is set to true
 | Automated
-| Параметр указан в файле конфигурации
+| The argument is set in the configuration file
 
 | PASS
 | 2.3. Ensure that the `--auto-tls` argument is not set to `true` 	
@@ -341,12 +341,12 @@
 | PASS
 | 2.4. Ensure that the `--peer-cert-file` and `--peer-key-file` arguments are set as appropriate
 | Automated
-| Параметры указаны в файле конфигурации
+| The arguments are set in the configuration file
 
 | PASS
 | 2.5. Ensure that the `--peer-client-cert-auth` argument is set to `true`
 | Automated
-| Параметр указан в файле конфигурации
+| The argument is set in the configuration file
 
 | PASS
 | 2.6. Ensure that the -`-peer-auto-tls` argument is not set to `true`
@@ -515,7 +515,7 @@
 | FAIL
 | 4.3.1. Ensure that the kube-proxy metrics service is bound to localhost
 | Automated
-| Соответствие требованию влияет на работу аддона Kube Prometheus Stack
+| Compliance with the requirement affects the operation of the Kube Prometheus Stack addon
 
 4+| **5. Kubernetes Policies**
 
@@ -524,32 +524,32 @@
 | FAIL
 | 5.1.1. Ensure that the `cluster-admin` role is only used where required
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.2. Minimize access to secrets
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.3. Minimize wildcard use in Roles and ClusterRoles
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.4. Minimize access to create pods
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.5. Ensure that default service accounts are not actively used
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.6. Ensure that Service Account Tokens are only mounted where necessary
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.7 Avoid use of `system:masters` group
@@ -559,166 +559,166 @@
 | WARN
 | 5.1.8. Limit use of the `Bind`, `Impersonate` and `Escalate` permissions in the Kubernetes cluster
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.9. Minimize access to create persistent volumes
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.10. Minimize access to the proxy sub-resource of nodes
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.11. Minimize access to the approval sub-resource of `certificatesigningrequests` objects
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.12. Minimize access to webhook configuration objects
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.13. Minimize access to the service account token creation
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.2. Pod Security Standards**
 
 | WARN
 | 5.2.1. Ensure that the cluster has at least one active policy control mechanism in place
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.2. Minimize the admission of privileged containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.3. Minimize the admission of containers wishing to share the host process ID namespace
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.4. Minimize the admission of containers wishing to share the host IPC namespace
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.5. Minimize the admission of containers wishing to share the host network namespace
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.6. Minimize the admission of containers with `allowPrivilegeEscalation`
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.7. Minimize the admission of root containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.8. Minimize the admission of containers with the `NET_RAW` capability
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.9. Minimize the admission of containers with added capabilities
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.10. Minimize the admission of containers with capabilities assigned
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.11. Minimize the admission of Windows HostProcess containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.12. Minimize the admission of HostPath volumes
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.13. Minimize the admission of containers which use HostPorts
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.3. Network Policies and CNI**
 
 | PASS
 | 5.3.1. Ensure that the CNI in use supports `NetworkPolicies`
 | Manual
-| Поддерживается
+| Supported
 
 | WARN
 | 5.3.2. Ensure that all Namespaces have `NetworkPolicies` defined
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.4. Secrets Management**
 
 | WARN
 | 5.4.1. Prefer using Secrets as files over Secrets as environment variables
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.4.2. Consider external secret storage
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.5. Extensible Admission Control**
 
 | WARN
 | 5.5.1. Configure Image Provenance using `ImagePolicyWebhook` admission controller
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.7. General Policies**
 
 | WARN
 | 5.7.1. Create administrative boundaries between resources using namespaces
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.7.2. Ensure that the `seccomp` profile is set to `docker/default` in your Pod definitions
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.7.3. Apply SecurityContext to your Pods and Containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.7.4. The default namespace should not be used
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 |===
 
 
 {/cut}
 
-{cut(Для кластеров версий 1.30 – 1.31)}
+{cut(For clusters versions 1.30 – 1.31)}
 
 [cols="1,3a,1,2a", options="header"]
 |===
 
-| Статус
-| Название
-| Тип запуска
-| Описание
+| Status
+| Test stage
+| Test type
+| Comment
 
 4+| **1. Control Plane Security Configuration**
 
@@ -765,32 +765,32 @@
 | PASS
 | 1.1.9. Ensure that the Container Network Interface file permissions are set to `600` or more restrictive
 | Manual
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS
 | 1.1.10. Ensure that the Container Network Interface file ownership is set to `root:root`
 | Manual
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS
 | 1.1.11. Ensure that the etcd data directory permissions are set to `700` or more restrictive
 | Automated
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS
 | 1.1.12. Ensure that the etcd data directory ownership is set to `etcd:etcd`
 | Automated
-| Указанные ограничения установлены
+| The restrictions are set as required
 
 | PASS
 | 1.1.13. Ensure that the default administrative credential file permissions are set to `600`
 | Automated
-| Файлы `admin.conf` и `super-admin.conf` не используются
+| The `admin.conf` and `super-admin.conf` files are not used
 
 | PASS
 | 1.1.14. Ensure that the default administrative credential file ownership is set to `root:root`
 | Automated
-| Файлы `admin.conf` и `super-admin.conf` не используются
+| The `admin.conf` and `super-admin.conf` files are not used
 
 | PASS
 | 1.1.15. Ensure that the `scheduler.conf` file permissions are set to `600` or more restrictive
@@ -1028,12 +1028,12 @@
 | PASS
 | 2.1. Ensure that the `--cert-file` and `--key-file` arguments are set as appropriate
 | Automated
-|Параметры указаны в файле конфигурации
+| The arguments are set in the configuration file
 
 | PASS
 | 2.2. Ensure that the `--client-cert-auth` argument is set to `true`
 | Automated
-| Параметр указан в файле конфигурации
+| The argument is set in the configuration file
 
 | PASS
 | 2.3. Ensure that the `--auto-tls` argument is not set to `true`
@@ -1043,12 +1043,12 @@
 | PASS
 | 2.4. Ensure that the `--peer-cert-file` and `--peer-key-file` arguments are set as appropriate
 | Automated
-| Параметры указаны в файле конфигурации
+| The arguments are set in the configuration file
 
 | PASS
 | 2.5. Ensure that the `--peer-client-cert-auth` argument is set to `true`
 | Automated
-| Параметр указан в файле конфигурации
+| The argument is set in the configuration file
 
 | PASS
 | 2.6. Ensure that the `--peer-auto-tls` argument is not set to `true`
@@ -1217,7 +1217,7 @@
 | FAIL
 | 4.3.1. Ensure that the kube-proxy metrics service is bound to localhost
 | Automated
-| Влияет на интеграцию аддона Kube Prometheus Stack и системного компонента kube-proxy
+| Affects the integration of the Kube Prometheus Stack addon and the kube-proxy system component
 
 4+| **5. Kubernetes Policies**
 
@@ -1226,32 +1226,32 @@
 | FAIL
 | 5.1.1. Ensure that the `cluster-admin` role is only used where required
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.2. Minimize access to secrets
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.3. Minimize wildcard use in Roles and ClusterRoles
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.4. Minimize access to create pods
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.5. Ensure that default service accounts are not actively used
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | FAIL
 | 5.1.6. Ensure that Service Account Tokens are only mounted where necessary
 | Automated
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.7. Avoid use of `system:masters` group
@@ -1261,152 +1261,152 @@
 | WARN
 | 5.1.8. Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes cluster
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.9. Minimize access to create persistent volumes
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.10. Minimize access to the proxy sub-resource of nodes
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.11 Minimize access to the approval sub-resource of `certificatesigningrequests` objects
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.12. Minimize access to webhook configuration objects
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.1.13. Minimize access to the service account token creation
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.2. Pod Security Standards**
 
 | WARN
 | 5.2.1. Ensure that the cluster has at least one active policy control mechanism in place
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.2. Minimize the admission of privileged containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.3. Minimize the admission of containers wishing to share the host process ID namespace
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.4. Minimize the admission of containers wishing to share the host IPC namespace
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.5. Minimize the admission of containers wishing to share the host network namespace
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.6. Minimize the admission of containers with `allowPrivilegeEscalation`
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.7. Minimize the admission of root containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.8. Minimize the admission of containers with the `NET_RAW` capability
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.9. Minimize the admission of containers with added capabilities
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.10. Minimize the admission of containers with capabilities assigned
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.11. Minimize the admission of Windows HostProcess containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.12. Minimize the admission of HostPath volumes
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.2.13. Minimize the admission of containers which use HostPorts
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.3. Network Policies and CNI**
 
 | PASS
 | 5.3.1. Ensure that the CNI in use supports NetworkPolicies
 | Manual
-| Поддерживается
+| Supported
 
 | WARN
 | 5.3.2. Ensure that all Namespaces have NetworkPolicies defined
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.4. Secrets Management**
 
 | WARN
 | 5.4.1. Prefer using Secrets as files over Secrets as environment variables
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.4.2. Consider external secret storage
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.5. Extensible Admission Control**
 
 | WARN
 | 5.5.1. Configure Image Provenance using ImagePolicyWebhook admission controller
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 4+| **5.7. General Policies**
 
 | WARN
 | 5.7.1. Create administrative boundaries between resources using namespaces
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.7.2. Ensure that the `seccomp` profile is set to `docker/default` in your Pod definitions
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.7.3. Apply SecurityContext to your Pods and Containers
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 
 | WARN
 | 5.7.4. The default namespace should not be used
 | Manual
-| Зависит от настроек окружения пользователем
+| Depends on the user's environment settings
 |===
 
 {/cut}
