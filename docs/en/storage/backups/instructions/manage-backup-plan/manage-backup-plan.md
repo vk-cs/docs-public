@@ -23,7 +23,7 @@
 {/tab}
 {/tabs}
 
-## Viewing list of backup copies created by plan
+## {heading(Viewing list of backup copies created by plan)[id=view_copies_list]}
 
 {note:info}
 
@@ -43,6 +43,15 @@ The list of backup copies created according to a plan is grouped by the instance
    * In the list of plans, click ![ ](/en/assets/more-icon.svg "inline") for the required plan and select **View backups**.
 
 1. To open the list of instance backup copies, click the instance name or the ![ ](/en/assets/right-arrow-icon.svg "inline") icon.
+
+   For each copy in the list, the following is displayed:
+
+   * Name.
+   * Volume.
+   * Type — full or incremental.
+   * Date and time of backup start and end. Using this data, you can easily calculate how long it takes to create a backup.
+
+   By estimating the duration of backups, you can set up backup plans for different instances in the project so that backup processes do not run simultaneously and do not slow down other services.
 
 {/tab}
 {/tabs}
