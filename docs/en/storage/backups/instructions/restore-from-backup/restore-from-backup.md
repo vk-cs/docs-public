@@ -83,7 +83,7 @@
     The speed of restoring a VM from a backup depends on:
 
     - Backup type — restoring from an incremental copy takes longer because it first restores data from a full copy and then sequentially adds changes from later incremental backups.
-    - Disk type — if the original VM had an SSD disk, recovery to a VM with an HDD disk will be slower.
+    - Disk type — the [faster the disk](/en/computing/iaas/concepts/volume-sla) of the target VM, the faster the restoring will be.
     - Restoring type — restoring to the original VM takes less time.
 
     </tabpanel>
