@@ -20,6 +20,7 @@ Tasks that the service solves:
 - Monitoring the use of peripheral devices.
 - Maintenance of more than 1000 simultaneous user connections.
 - Creating and configuring VMs on the virtualization platform from a pre-prepared master image.
+- Deploying desktops with high-performance graphics processing units ([GPUs](/en/computing/gpu/concepts/about)) from images provided by VK Cloud.
 - Support of fault tolerance mechanisms for servers that provide management, licensing, storage and accounting for configuration changes.
 
 ## Role model
