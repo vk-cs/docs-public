@@ -7,8 +7,12 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 ## {heading(Preparatory steps)[id=preparatory_steps]}
 
 1. Make sure that your [connection to the service](../../config) is configured.
-1. (Optional) If you want to use your own image to create desktops, [prepare](/en/computing/cloud-desktops/concepts/desktop-image) and [check](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) it.
-1. (Optional) If you previously selected the [manual mode](../../../concepts/about#manual_net_setup) when [setting up the network](../../config/setup-net#setup_net) for the service infrastructure, prepare a network for the desktop pool:
+1. If you want to use your own image to create desktops, [prepare](/en/computing/cloud-desktops/concepts/desktop-image) and [check](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) it.
+1. If you need desktops with GPU graphics processors, leave a request to connect the required flavors on the VK Cloud website or via technical support:
+
+    {include(/en/_includes/_gpu_connect.md)}
+
+1. If you previously selected the [manual mode](../../../concepts/about#manual_net_setup) when [setting up the network](../../config/setup-net#setup_net) for the service infrastructure, prepare a network for the desktop pool:
 
     1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
     1. Go to **Cloud Networks** → **Networks**.
@@ -79,6 +83,8 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
       - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
 
       {/cut}
+
+      If you [applied](#preparatory_steps) to include GPU flavors in your project, the corresponding images will also be available for selection.
 
       If necessary, click **Upload your image** and upload the [previously prepared](/en/computing/cloud-desktops/concepts/desktop-image) and [checked](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
 

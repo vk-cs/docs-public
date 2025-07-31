@@ -1,8 +1,10 @@
-Before using the service, leave a request on the [VK Cloud website](https://cloud.vk.com/en/):
+## Preparatory steps
 
-1. Click the **Contact sales** button.
-1. Fill in the form and click the **Send** button.
+1. [Register](/en/intro/start/account-registration) with VK Cloud if you have not done so yet.
+1. Make sure your account balance is positive and there are enough [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) to deploy a GPU flavor to your project.
 
-If your request is successfully submitted, a confirmation message will appear.
+## Connecting a GPU flavor
 
-After reviewing the request and conducting the necessary consultations, the manager will connect the service.
+To start using the Cloud GPU service, leave a request to connect the required flavor on the VK Cloud website or via technical support:
+
+{include(/en/_includes/_gpu_connect.md)}
