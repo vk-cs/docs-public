@@ -7,8 +7,12 @@
 ## {heading(Подготовительные шаги)[id=preparatory_steps]}
 
 1. Убедитесь, что [подключение к сервису](../../config) настроено.
-1. (Опционально) Если хотите использовать для создания ВМ пула собственный образ, [подготовьте](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) его.
-1. (Опционально) Если ранее при [настройке сети](../../config/setup-net#setup_net) для инфраструктуры сервиса вы выбрали [ручной режим](../../../concepts/about#manual_net_setup), подготовьте сеть для пула рабочих столов:
+1. Если хотите использовать для создания ВМ пула собственный образ, [подготовьте](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) его.
+1. Если вам нужны рабочие столы с графическими процессорами GPU, оставьте заявку на подключение нужного шаблона конфигурации на [сайте VK Cloud](https://cloud.vk.com/cloud-gpu) или через [техническую поддержку](/ru/contacts):
+
+    {include(/ru/_includes/_gpu_connect.md)}
+
+1. Если ранее при [настройке сети](../../config/setup-net#setup_net) для инфраструктуры сервиса вы выбрали [ручной режим](../../../concepts/about#manual_net_setup), подготовьте сеть для пула рабочих столов:
 
     1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
     1. Перейдите в раздел **Виртуальные сети** → **Сети**.
@@ -78,6 +82,8 @@
       - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
 
       {/cut}
+
+      Если вы подавали [заявку на подключение](#preparatory_steps) в проект шаблонов конфигурации с GPU, соответствующие образы также будут доступны для выбора.
 
       При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/computing/iaas/instructions/images/images-manage#import_obraza).
 
