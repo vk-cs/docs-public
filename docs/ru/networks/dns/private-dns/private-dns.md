@@ -26,12 +26,9 @@
 
 ## Настройка DNS-имени
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Возможно несколько способов настройки DNS-имени:
 
@@ -53,8 +50,9 @@
 1. Укажите имя в поле **DNS-имя**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -70,8 +68,9 @@
    openstack port set --dns-name <DNS-имя> <ID порта>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 

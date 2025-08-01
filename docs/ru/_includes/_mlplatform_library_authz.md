@@ -175,19 +175,17 @@
 
 Можно получить только список токенов доступа. Список созданных регистрационных токенов не ведется.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Библиотека Cloud ML Platform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, в котором находятся токены.
 1. Перейдите в раздел **ML Platform → Токены**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Библиотека Cloud ML Platform)}
 
 {note:err}
 
@@ -210,18 +208,17 @@
    print(mlp.get_project_tokens_info())
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Получение информации о текущем токене доступа)[id=get_current_token_details]}
 
 Получить информацию о токене доступа, который используется в настоящий момент, можно только через библиотеку Cloud ML Platform.
 
-<tabs>
-<tablist>
-<tab>Библиотека Cloud ML Platform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Библиотека Cloud ML Platform)}
 
 {note:err}
 
@@ -255,17 +252,15 @@
 	        exp: None
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление токена доступа
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Библиотека Cloud ML Platform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный токен.
@@ -273,8 +268,9 @@
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного токена и выберите пункт **Удалить**.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Библиотека Cloud ML Platform)}
 
 {note:err}
 
@@ -306,10 +302,10 @@
    - `<ТОКЕН_АДМИНИСТРАТОРА>` — значение токена доступа с ролью `Администратор`.
    - `<ТОКЕН_ДЛЯ_УДАЛЕНИЯ>` — имя токена доступа, который нужно удалить.
 
-
    После выполнения этого скрипта выбранный токен доступа будет удален.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/includetag}

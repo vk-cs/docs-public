@@ -8,11 +8,9 @@ The PITR function is only available for databases running PostgreSQL.
 
 When creating a PITR schedule, DBMS logs will be copied.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -28,16 +26,15 @@ When creating a PITR schedule, DBMS logs will be copied.
 
 1. Click **Save schedule**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing existing schedule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -45,16 +42,15 @@ When creating a PITR schedule, DBMS logs will be copied.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required schedule and select **Edit schedule**.
 1. Make the necessary changes and click **Save schedule**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing backups created within schedule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -63,16 +59,15 @@ When creating a PITR schedule, DBMS logs will be copied.
 
 A list of backups for the selected schedule will be displayed.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating database instance from backup
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -90,5 +85,6 @@ A list of backups for the selected schedule will be displayed.
 1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave this field empty, the most recently created backup will be selected automatically.
 1. Click **Create database**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -12,20 +12,18 @@ Use these instructions if your cluster is version 1.20 or lower. Starting with K
 
 1. Run the commands
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts; `
    helm install gatekeeper/gatekeeper --name-template=gatekeeper --namespace opa-gatekeeper --create-namespace
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
@@ -33,8 +31,9 @@ Use these instructions if your cluster is version 1.20 or lower. Starting with K
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Checking Gatekeeper operation
 

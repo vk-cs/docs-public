@@ -28,12 +28,9 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 ## Подключение к кластеру
 
-<tabs>
-<tablist>
-<tab>Версия Kubernetes 1.23 и выше</tab>
-<tab>Версия Kubernetes 1.22 и ниже</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Версия Kubernetes 1.23 и выше)}
 
 1. На хосте в отдельной сессии терминала выполните команду:
 
@@ -53,8 +50,9 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
    Откроется браузер, и вы будете направлены в веб-интерфейс Kubernetes Dashboard.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Версия Kubernetes 1.22 и ниже)}
 
 1. Получите секрет:
 
@@ -86,5 +84,6 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
    Откроется веб-интерфейс Kubernetes Dashboard.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

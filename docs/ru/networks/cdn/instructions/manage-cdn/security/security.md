@@ -4,12 +4,9 @@
 
 Чтобы настроить разрешенные методы:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -18,8 +15,9 @@
 1. Выберите методы, которые CDN-ресурс должен обрабатывать.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -51,8 +49,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Если сервер не распознал указанный метод, вернется ответ с кодом 501 (Not Implemented). Если серверу метод известен, но разрешен на CDN-ресурсе, вернется ответ с кодом 405 (Method Not Allowed).
 
@@ -62,12 +61,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить политику безопасности по странам:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -81,8 +77,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Выберите страны, которым нужно запретить или разрешить доступ к контенту. Страны указаны в списке в формате [ISO 3166-1 alpha-2](https://www.iso.org/ru/iso-3166-country-codes.html). Доступен множественный выбор.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -112,8 +109,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка политики доступа по домену
 
@@ -121,12 +119,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить политику безопасности по доменам:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -141,8 +136,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. (Опционально) Включите опцию **Обращение по прямой ссылке** для разрешения или запрета указанным сайтам обращаться к CDN-ресурсу по прямой ссылке.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -171,8 +167,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка политики доступа по IP-адресам
 
@@ -180,12 +177,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить политику безопасности по IP-адресам:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -199,8 +193,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Введите IP-адреса с маской подсети. Например, `192.168.3.2/32` или `2a03:d000:2980:7::8/128`. Политика доступа работает по адресам сетей, вычисленных на основе указанных IP-адресов. Если два или более IP-адреса принадлежат одной сети, достаточно указать только один из этих IP-адресов.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -231,5 +226,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

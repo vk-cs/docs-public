@@ -18,11 +18,9 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
@@ -38,16 +36,15 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
    To allow all traffic from the port passing through the virtual machine, use IP address `0.0.0.0\0`. This option is used for network intermediary nodes (e.g., routers, firewalls, or VPN gateways). Use this option with caution, as it may expose your network to attacks.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Removing addresses from the allowed
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
@@ -61,16 +58,15 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
    To remove multiple IP addresses, repeat this command for each one.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Clearing existing allowed-address list associated with the port
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
@@ -82,18 +78,17 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
    openstack port set --no-allowed-address <PORT_NAME_OR_ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Retrieving Supported Parameter Information
 
 For detailed information about supported parameters, use one of the following commands:
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Ensure the OpenStack client is [installed](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) and [authenticate](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) in the project.
 
@@ -107,5 +102,6 @@ For detailed information about supported parameters, use one of the following co
    openstack subnet unset --help
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -8,13 +8,9 @@ A backup will be made before the update. Plan ahead for the upgrade because Post
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Single instance</tab>
-<tab>Mater + replicas</tab>
-<tab>Cluster</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Single instance)}
 
 Make an API request:
 
@@ -29,8 +25,9 @@ curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 }'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Mater + replicas)}
 
 To update the replicas, a new version of PostgreSQL will be installed on the servers and the data on the replication tools will be synchronized with the master.
 
@@ -47,8 +44,9 @@ curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 }'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Cluster)}
 
 To update the replicas, a new version of the DBMS will be installed and Patroni will synchronize the data on them.
 
@@ -66,5 +64,6 @@ curl --location --request POST '/v1.0/project_id/clusters/cluster_id' \
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

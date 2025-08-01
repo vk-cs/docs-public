@@ -2,11 +2,9 @@ Access control operations are available only to the following [roles](/en/tools-
 
 ## Viewing project members
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page.
@@ -14,16 +12,15 @@ Access control operations are available only to the following [roles](/en/tools-
 
 Login, assigned roles and status are displayed for each member (**Yes** — the user has joined the project, **No** — the user did not accept the invitation sent to him).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing the roles involved in the project
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
@@ -35,8 +32,9 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
     The list shows all the members invited to the role, including those who did not accept the invitation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Inclusion of mandatory 2FA in the project
 
@@ -55,11 +53,9 @@ You can invite both a user who already has an account in VK Cloud, and an unregi
 
 If the user enters the project by invitation, he does not need to confirm the phone number and link the card.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
@@ -72,8 +68,9 @@ If the user enters the project by invitation, he does not need to confirm the ph
 
 1. Click the **Add user** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 An invitation will be sent to the specified email address, it is valid for 24 hours.
 
@@ -95,11 +92,9 @@ A project member cannot change the role for:
 
 Only the project owner can assign another role to the superadministrator.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
@@ -110,8 +105,9 @@ Only the project owner can assign another role to the superadministrator.
 
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting member
 
@@ -123,11 +119,9 @@ The member cannot delete:
 
 Only the project owner can delete the superadministrator.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can delete several members at once by selecting them using the checkboxes.
 
@@ -136,5 +130,6 @@ This is a group operation: if necessary, you can delete several members at once 
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Delete**.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

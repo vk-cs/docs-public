@@ -13,20 +13,17 @@ To deploy the VictoriaMetrics service in a project:
 
    {cut(Learn more about configurations for tariff plans)}
 
-   <tabs>
-   <tablist>
-   <tab>Single</tab>
-   <tab>Cluster Mini</tab>
-   <tab>Cluster Maxi</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Single)}
 
    One server responsible for receiving, storing and processing metrics. The service is deployed on a single VM, supports vertical scaling (increasing CPU and RAM).
 
    ![](./assets/single_scheme.png)
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Mini)}
 
    A cluster of several nodes with [components](https://docs.victoriametrics.com/Cluster-VictoriaMetrics.html#architecture-overview):
 
@@ -40,8 +37,9 @@ To deploy the VictoriaMetrics service in a project:
 
    ![](./assets/cluster_mini_scheme.png)
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Maxi)}
 
    A cluster of several nodes with [components](https://docs.victoriametrics.com/Cluster-VictoriaMetrics.html#architecture-overview):
 
@@ -55,18 +53,15 @@ To deploy the VictoriaMetrics service in a project:
 
    ![](./assets/cluster_maxi_scheme.png)
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    {/cut}
 
-   <tabs>
-   <tablist>
-   <tab>Single</tab>
-   <tab>Cluster Mini</tab>
-   <tab>Cluster Maxi</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Single)}
 
    1. At the **Настройки VictoriaMetrics** step:
 
@@ -88,8 +83,9 @@ To deploy the VictoriaMetrics service in a project:
    1. Click the **Next step** button.
    1. At the **Confirmation** step, review the calculated cost of the service and click **Connect the tariff**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Mini)}
 
    1. At the **Настройки VictoriaMetrics** step:
 
@@ -113,8 +109,9 @@ To deploy the VictoriaMetrics service in a project:
    1. Click the **Next step** button.
    1. At the **Confirmation** step, review the calculated cost of the service and click **Connect the tariff**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Maxi)}
 
    1. На шаге **Настройки Кластера**:
 
@@ -142,8 +139,9 @@ To deploy the VictoriaMetrics service in a project:
 
    1. At the **Confirmation** step, review the calculated cost of the service and click **Connect the tariff**.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    After the installation is completed, a one-time link with access will be sent to your email.
 

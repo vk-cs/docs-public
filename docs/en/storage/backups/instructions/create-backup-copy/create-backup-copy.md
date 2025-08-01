@@ -14,6 +14,7 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
 ## Creating backup copy via Cloud Backup service
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -33,17 +34,20 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
 1. Click the **Create backup** button.
 
 {/tab}
+
 {/tabs}
 
 ## Creating backup copy via instance page
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Create a backup copy of the required object via its instance page:
 
    {tabs}
+
    {tab(Virtual machine)}
 
    1. Go to **Cloud Servers → Virtual machines**.
@@ -56,6 +60,7 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
    1. Click the **Create backup** button.
 
    {/tab}
+
    {tab(Database)}
 
    1. Go to **Databases → Database instances**.
@@ -64,6 +69,7 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
    1. Click the **Create backup** button.
 
    {/tab}
+
    {tab(Analytical database)}
 
    1. Go to **Analytical DB → Instances**.
@@ -72,14 +78,17 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
    1. Click the **Create backup** button.
 
    {/tab}
+
    {/tabs}
 
 {/tab}
+
 {/tabs}
 
 ## Creating backup copy of virtual machine via catalog of services
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -96,4 +105,5 @@ Backups are stored in the Cloud Storage object storage with the Backup storage c
 1. Click the **Create backup** button.
 
 {/tab}
+
 {/tabs}

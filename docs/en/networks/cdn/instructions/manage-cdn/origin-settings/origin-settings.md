@@ -1,11 +1,8 @@
 ## Changing orogon interaction protocol
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -16,8 +13,9 @@
 
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -39,8 +37,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Changing origin
 
@@ -50,12 +49,9 @@ If a single origin was specified when creating the CDN resource, an origin group
 
 To change an origin:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -73,8 +69,9 @@ To change an origin:
      1. Click **Create group**.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -115,8 +112,9 @@ To edit or to add an origin group use methods that work with origin groups.
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Changing host header
 
@@ -126,12 +124,9 @@ By default, the value of the Host header matches the first CNAME.
 
 To change the header:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -142,8 +137,9 @@ To change the header:
 
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -195,8 +191,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 
@@ -216,11 +213,9 @@ Activating origin shielding increases the consumption of total CDN traffic.
 
 To enable origin shielding:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -230,5 +225,6 @@ To enable origin shielding:
 1. Select the data center, located closer to your origin server.
 1. Click **Save changes**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

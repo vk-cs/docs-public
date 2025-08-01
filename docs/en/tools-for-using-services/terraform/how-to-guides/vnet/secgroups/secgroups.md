@@ -37,14 +37,9 @@ When creating and setting security groups the following is used:
 
 Create a Terraform configuration file `secgroup.tf`.  The content depends on the security groups you need.
 
-<tabs>
-<tablist>
-<tab>For individual ports</tab>
-<tab>For all ports</tab>
-<tab>Incoming traffic only</tab>
-<tab>Preset groups</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(For individual ports)}
 
 In the file, the following configuration is described:
 
@@ -54,8 +49,9 @@ In the file, the following configuration is described:
 
   {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(For all ports)}
 
 In the file, the following configuration is described:
 
@@ -64,8 +60,9 @@ In the file, the following configuration is described:
 
   {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Incoming traffic only)}
 
 In the file, the following configuration is described:
 
@@ -74,8 +71,9 @@ In the file, the following configuration is described:
 
   {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Preset groups)}
 
 The file describes the configuration for adding [preset security groups](/ru/networks/vnet/concepts/traffic-limiting#secgroups) to the project.
 
@@ -87,8 +85,9 @@ Do not change the rules or create preset security groups via Terraform if they a
 
 {include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Here:
 

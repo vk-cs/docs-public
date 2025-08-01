@@ -10,13 +10,9 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to the **Cloud Servers** → **Disks** section.
@@ -26,9 +22,9 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
 
 1. Click the **Create disk** button.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -60,8 +56,9 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
    - `--property <key=value>` — custom disk properties;
    - `--bootable` — create a boot disk.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Increasing disk size with rebooting)[id=change_disk_size]}
 
@@ -70,14 +67,9 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 - The disk size cannot be reduced.
 - If disks with the High IOPS SSD and Low Latency NVME type have snapshots, you cannot increase the size of these disks.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -107,9 +99,9 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 4. Click the button **Save**.
 5. [Reboot](../vm/vm-manage#start_stop_restart_vm) the VM.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -139,29 +131,28 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 6. [Reboot](../vm/vm-manage#start_stop_restart_vm) the VM.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Increasing disk size without rebooting
 
 1. [Increase](#change_disk_size) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
 1. Increase the size of disk partitions in the VM operating system:
 
-   <tabs>
-   <tablist>
-   <tab>Windows</tab>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Windows)}
+      
    1. Connect to the VM via [RDP](../vm/vm-connect/vm-connect-win) or via [console](../vm/vm-console).
    1. Open Disk Management with administrator permissions (`diskmgmt.msc`).
    1. Choose **Extend Volume** in right-click menu of the volume that you want to extend.
    1. [Increase the disk size](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/extend-a-basic-volume).
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Linux)}
+   
    1. Connect to the VM via [SSH](../vm/vm-connect/vm-connect-nix) or via [console](../vm/vm-console).
    1. Find out what disk partitions are on the VM and what file systems they have. To do this, run the command:
     
@@ -180,40 +171,37 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
    1. Increase the file system size to the size of the partition. Depending on the directory file system, use the command:
     
-      <tabs>
-      <tablist>
-      <tab>Ext1, Ext2, Ext3, Ext4</tab>
-      <tab>XFS</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Ext1, Ext2, Ext3, Ext4)}
+            
       ```console
         sudo resize2fs /dev/vda1 # you need no space before 1
       ```
 
-      </tabpanel>
-      <tabpanel>
-       
+      {/tab}
+      
+      {tab(XFS)}
+             
       ```console
         sudo xfs_growfs -d /dev/vda1
       ```
     
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
     
    1. Use the `df -Th` command to verify that the partition size has changed.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 ## Cloning disk
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -241,8 +229,9 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 4. On the page that opens, specify the parameters of the new disk.
 5. Click the **Create disk** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. [Define](../../concepts/about#disks_types_b7c586e):
@@ -269,21 +258,17 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
    openstack volume create --type <type disk ID> --size <disk size> --availability-zone <availability zone> --source <disk ID> <disk name>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Changing disk type)[id=change_disk_type]}
 
 Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -317,9 +302,9 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
 4. In the window that opens, select **Disk Type** and click **Confirm**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -343,8 +328,9 @@ Creating HDD and SSD drives is available by default in all configurations. To us
    openstack volume set --type <type ID> --retype-policy on-demand <disk ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Changing bootable attribute
 
@@ -352,14 +338,9 @@ Make the disk bootable to use it as the VM's primary (root) disk. The boot disk 
 
 To exclude the possibility of accidental booting from the disk, make it non-bootable.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -387,9 +368,9 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 4. In the window that opens, click **Confirm**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -413,19 +394,15 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
    openstack volume show <disk ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Connecting disk to VM)[id=mount_disk]}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers** → **Disks**.
@@ -446,9 +423,9 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 5. In the window that opens, specify the virtual machine in the field **Choose instance**.
 6. Click the **Connect disk**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -476,8 +453,9 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
    openstack volume show <disk ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Disconnecting disk from VM
 
@@ -487,14 +465,9 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -522,9 +495,9 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
 
 4. In the window that opens, check the name of the disk and click **Confirm**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -552,21 +525,17 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
    openstack volume show <disk ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Replacing root disk
 
 Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_vm).
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. [Disconnect from VM](#disconnecting_disk_from_vm) the disk that will be used to replace the main one.
@@ -602,9 +571,9 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
    {/note}
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -640,18 +609,15 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Transfer disks between projects)[id=move_disk_to_another_project]}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to it (to both projects).
 
@@ -705,8 +671,9 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
    openstack volume transfer request delete <request ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting disk
 
@@ -718,14 +685,9 @@ When you delete a disk, all its snapshots will be deleted.
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -758,9 +720,9 @@ When you delete a disk, all its snapshots will be deleted.
 
 4. In the window that opens, check the disk name and click **Confirm**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -774,8 +736,9 @@ When you delete a disk, all its snapshots will be deleted.
       openstack volume delete <disk ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Disk snapshots
 
@@ -783,14 +746,9 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 ### Creating snapshot
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -823,9 +781,9 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 6. Click **Create snapshot**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -851,19 +809,15 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
          openstack volume snapshot create --force --volume <disk ID> <snapshot name>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Using snapshots
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
@@ -900,9 +854,9 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
       {/note}
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -939,5 +893,6 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
       openstack volume snapshot delete <snapshot ID>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

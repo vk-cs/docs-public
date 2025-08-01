@@ -45,13 +45,9 @@ To show the virtual IP address setting:
     - VRRP traffic between `kld-vm1` and `kld-vm-2`;
     - ICMP traffic to the selected virtual IP address (for health check).
 
-   <tabs>
-   <tablist>
-   <tab>kld-vm-1</tab>
-   <tab>kld-vm-2</tab>
-   <tab>kld-jumphost-vm</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(kld-vm-1)}
 
    Set the following options:
 
@@ -65,8 +61,9 @@ To show the virtual IP address setting:
 
    Select other parameters of the virtual machine at your discretion.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(kld-vm-2)}
 
    Set the following options:
 
@@ -80,8 +77,9 @@ To show the virtual IP address setting:
 
    Select other parameters of the virtual machine at your discretion.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(kld-jumphost-vm)}
 
    Set the following options:
 
@@ -95,8 +93,9 @@ To show the virtual IP address setting:
 
     Select other parameters of the virtual machine at your discretion.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Define the OpenStack port through which the `kld-vm-1` and `kld-vm-2` virtual machines will work with the virtual IP address:
 
@@ -181,12 +180,9 @@ Write down all received data. Result for the given example:
 
 1. Configure `keepalived`:
 
-   <tabs>
-   <tablist>
-   <tab>kld-vm-1</tab>
-   <tab>kld-vm-2</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(kld-vm-1)}
 
    1. Connect to the `kld-jumphost-vm` virtual machine via SSH.
    1. Connect to the virtual machine `kld-vm-1` via SSH.
@@ -219,8 +215,9 @@ Write down all received data. Result for the given example:
       }
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(kld-vm-2)}
 
    1. Connect to the `kld-jumphost-vm` virtual machine via SSH.
    1. Connect to the virtual machine `kld-vm-2` via SSH.
@@ -253,8 +250,9 @@ Write down all received data. Result for the given example:
       }
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    In the config file:
 

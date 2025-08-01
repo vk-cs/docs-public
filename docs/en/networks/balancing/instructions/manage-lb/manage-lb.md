@@ -2,12 +2,9 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 ## Viewing a list of load balancers and information about them
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -19,8 +16,9 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
    A page will open with detailed information about the balancer. In this page you can also [edit](#editing_a_load_balancer_name) the balancer parameters.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -67,17 +65,15 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
    Information will be displayed for the member, including the traffic destination port.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding a load balancer
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -107,8 +103,9 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 1. Set the balancer rules.
 1. Click the **Add balancer** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -136,17 +133,15 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
    The address must be assigned if you plan to place services behind the load balancer which must be accessible from the Internet. You can assign an address only if the network for the selected subnet earlier is behind a router that has access to the Internet.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing a load balancer name
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -164,8 +159,9 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    1. Set the new name.
    1. Click the **Rename** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -176,31 +172,31 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Change the name of the load balancer:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab
-   </tablist>
-   <tabpanel>
+   {tabs}
 
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack loadbalancer <load balancer ID> \
      --name <new name>
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack loadbalancer <load balancer ID> `
      --name <new name>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Managing public IP addresses
 
@@ -208,12 +204,9 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 If the balancer network is connected to a router with Internet access, you can assign a public (external) IP address to the balancer.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -229,8 +222,9 @@ If the balancer network is connected to a router with Internet access, you can a
 1. Select the necessary public IP address from the list, or create a new one.
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -240,19 +234,17 @@ If the balancer network is connected to a router with Internet access, you can a
 1. [Get port ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
 1. [Assign a floating IP address](/en/networks/vnet/instructions/ip/floating-ip#bindind_a_floating_ip_address) to a port with this ID.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Unassign the public IP address
 
 If the balancer network is connected to a router with Internet access, and a public (external) IP address is assigned to the balancer, this address can be unassigned.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -267,8 +259,9 @@ If the balancer network is connected to a router with Internet access, and a pub
 
 1. Click **Confirm**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -278,17 +271,15 @@ If the balancer network is connected to a router with Internet access, and a pub
 1. [Get port ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
 1. [Unlink floating IP address](/en/networks/vnet/instructions/ip/floating-ip#unbinding_floating_ip_address) from the port with this ID.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Managing balancing rules
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go](#viewing_a_list_of_load_balancers_and_information_about_them) to the balancer page to edit it.
 1. In the **Balancer rules** section perform one of the available actions:
@@ -371,8 +362,9 @@ The following options are available when adding or editing a rule:
    - **Response status**: [HTTP status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) which will make the accessibility check a success.
    - **Query path**: the path to use to test accessibility.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 {note:info}
 
@@ -396,13 +388,10 @@ openstack loadbalancer <command> --help
 
    1. Create a pool in which the traffic consumers will be placed:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack loadbalancer pool create \
         --loadbalancer <loadbalancer ID> \
@@ -411,9 +400,10 @@ openstack loadbalancer <command> --help
         --lb-algorithm <balancing algorithm>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack loadbalancer pool create `
         --loadbalancer <loadbalancer ID> `
@@ -422,8 +412,9 @@ openstack loadbalancer <command> --help
         --lb-algorithm <balancing algorithm>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       Write down the identifier of the created pool (`id`).
 
@@ -433,13 +424,10 @@ openstack loadbalancer <command> --help
 
    1. For each such virtual machine, create a member object that will be a member of the created pool:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack loadbalancer member create <pool ID> \
         --name <member name> \
@@ -448,9 +436,10 @@ openstack loadbalancer <command> --help
         --protocol-port <destination port number>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack loadbalancer member create <pool ID> `
         --name <member name> `
@@ -459,8 +448,9 @@ openstack loadbalancer <command> --help
         --protocol-port <destination port number>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       {note:warn}
 
@@ -470,13 +460,10 @@ openstack loadbalancer <command> --help
 
    1. Create a healthcheck object for the pool. It will check the status and availability of members in the pool.
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>.
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack loadbalancer healthmonitor create <pool id> \
         --name <healthcheck object name> \
@@ -487,9 +474,10 @@ openstack loadbalancer <command> --help
         --type <type of healthcheck>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack loadbalancer healthmonitor create <pool id> `
         --name <healthcheck object name> `
@@ -500,18 +488,16 @@ openstack loadbalancer <command> --help
         --type <type of healthcheck>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Create a listener object to handle incoming connections:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack loadbalancer listener create <load balancer ID> \
         --name <listener object name> \
@@ -520,9 +506,10 @@ openstack loadbalancer <command> --help
         --protocol-port <port number>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack loadbalancer listener create <load balancer ID> `
         --name <listener object name> `
@@ -531,8 +518,9 @@ openstack loadbalancer <command> --help
         --protocol-port <port number>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
 1. To apply (`set`) the necessary settings to objects that are part of a balancing rule, or to override the settings (`unset`), use the appropriate commands (for example, `openstack loadbalancer pool set`).
 
@@ -562,17 +550,15 @@ openstack loadbalancer <command> --help
       openstack loadbalancer pool delete <pool ID>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Removing the load balancer
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can remove multiple load balancers at once by selecting them using the checkboxes.
 
@@ -588,8 +574,9 @@ To remove a load balancer:
 
 1. Confirm the removal of the balancer.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -604,5 +591,6 @@ To remove a load balancer:
    openstack loadbalancer delete <load balancer ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

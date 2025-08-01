@@ -26,12 +26,9 @@ A browser must be installed on the host to connect.
 
 ## Connecting to the add-on web interface
 
-<tabs>
-<tablist>
-<tab>Kiali</tab>
-<tab>Jaeger</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Kiali)}
 
 Kiali is a web interface for working with Istio. To connect to it:
 
@@ -52,8 +49,9 @@ Kiali is a web interface for working with Istio. To connect to it:
 
    {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Jaeger)}
 
 1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that `jaeger` add-on [is installed](../../instructions/addons/advanced-installation/install-advanced-jaeger) to the cluster.
 1. On the host, in a separate terminal session, run the command:
@@ -72,5 +70,6 @@ Kiali is a web interface for working with Istio. To connect to it:
 
    {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

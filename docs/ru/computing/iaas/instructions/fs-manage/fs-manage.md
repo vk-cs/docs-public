@@ -9,12 +9,9 @@
 
 ## {heading(Создание файлового хранилища)[id=creating_a_file_storage]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где нужно создать файловое хранилище.
@@ -41,20 +38,18 @@
 
 1. Нажмите **Добавить файловый сервер**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
 1. Выберите существующую сеть файлового хранилища или создайте новую.
 
-    <tabs>
-    <tablist>
-    <tab>Выбор существующей сети</tab>
-    <tab>Создание новой сети</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Выбор существующей сети)}
+        
     1. Получите список существующих сетей файлового хранилища, выполнив команду:
 
         ```console
@@ -70,9 +65,10 @@
 
         Здесь `<СЕТЬ>` — имя или ID существующей в проекте сети файлового хранилища.
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Создание новой сети)}
+    
     Выполните команду:
 
     ```console
@@ -87,8 +83,9 @@
 
     Запишите имя или ID созданной сети.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 1. Создайте файловое хранилище с помощью команды:
 
@@ -103,8 +100,9 @@
       - `<ПРОТОКОЛ>` — протокол доступа. Для доступа к хранилищу из ОС Windows укажите протокол CIFS, из Linux — NFS.
       - `<РАЗМЕР>` — желаемый размер файлового хранилища в ГБ. Должен быть в пределах квоты, не меньше 10 ГБ и не больше 10000 ГБ.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Подключение файлового хранилища
 
@@ -118,24 +116,18 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Протокол NFS</tab>
-<tab>Протокол CIFS</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Протокол NFS)}
 
 Подключить файловое хранилище по протоколу NFS в Windows можно с помощью компонента Windows Server — Клиент для NFS.
 
 1. Установите Клиент для NFS из интерфейса Диспетчера серверов или с помощью PowerShell:
 
-    <tabs>
-    <tablist>
-    <tab>Диспетчер серверов</tab>
-    <tab>PowerShell</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Диспетчер серверов)}
+        
     1. Откройте Диспетчер серверов и в меню **Управление** выберите **Добавить роли и компоненты**.
     1. Перейдите в раздел **Тип установки**, выберите опцию **Установка ролей и компонентов** и нажмите **Далее**.
     1. Перейдите в раздел **Компоненты**, выберите в списке **Клиент для NFS**.
@@ -143,9 +135,10 @@
     1. Проверьте, что выбраны все необходимые компоненты, и нажмите **Установить**.
     1. Дождитесь окончания установки и перезагрузите сервер.
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(PowerShell)}
+    
     1. Установите:
 
         - Клиент для NFS;
@@ -159,8 +152,9 @@
 
     2. Дождитесь окончания установки и перезагрузите сервер.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 2. Измените настройки клиента с помощью Диспетчера серверов:
 
@@ -181,8 +175,9 @@
     - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
     - `<ИМЯ_ДИСКА>` — заглавная латинская буква, не использованная в имени других дисков.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Протокол CIFS)}
 
 Для подключения файлового хранилища выполните команду, указанную в его [свойствах](#prosmotr_informacii_o_faylovom_hranilishche).
 
@@ -197,8 +192,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
 - `<ИМЯ_ДИСКА>` — заглавная латинская буква, не использованная в имени других дисков.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Linux
 
@@ -208,12 +204,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Протокол NFS</tab>
-<tab>Протокол CIFS</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Протокол NFS)}
 
 1. Установите пакет `nfs-common` с помощью команды:
 
@@ -238,8 +231,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
     - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
     - `<ИМЯ_ДИРЕКТОРИИ>` — имя директории, созданной ранее.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Протокол CIFS)}
 
 1. Установите `cifs-utils` с помощью команды:
 
@@ -264,24 +258,23 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
     - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — адрес файлового хранилища, указанный в его описании.
     - `<ИМЯ_ДИРЕКТОРИИ>` — имя директории, созданной ранее.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Просмотр списка файловых хранилищ
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
 1. Перейдите в раздел **Облачные вычисления** → **Файловое хранилище**. Отобразится список файловых хранилищ.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -291,25 +284,24 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
     openstack share list
     ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Просмотр информации о файловом хранилище
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
 1. Перейдите в раздел **Облачные вычисления** → **Файловое хранилище**.
 1. Нажмите на имя нужного файлового хранилища. Отобразится информация о нем.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -321,17 +313,15 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
     Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Увеличение размера файлового хранилища)[id=increasing_file_storage_size]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -339,8 +329,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного хранилища и выберите пункт **Изменить размер**.
 1. Введите значение и нажмите **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -355,8 +346,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
     - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
     - `<РАЗМЕР>` — новый размер файлового хранилища в ГБ.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -366,12 +358,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 ## {heading(Создание снимка)[id=creating_a_snapshot]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -380,8 +369,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. (Опционально) Измените название снимка и добавьте описание.
 1. Нажмите **Создать снимок**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -395,25 +385,24 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
     - `<ИМЯ_СНИМКА>` — имя для создаваемого снимка файлового хранилища.
     - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Получение списка снимков
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
 1. Перейдите в раздел **Облачные вычисления** → **Файловое хранилище**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного хранилища и выберите пункт **Список снимков**. Отобразится информация о снимках.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -425,17 +414,15 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
    Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Восстановление хранилища из снимка
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -444,8 +431,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного снимка и выберите пункт **Восстановить файловое хранилище**.
 1. Нажмите **Подтвердить**. Начнется процесс создания нового хранилища из снимка.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -465,17 +453,15 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
     Значения `<ТИП_ХРАНИЛИЩА>`, `<ПРОТОКОЛ>` и `<РАЗМЕР>` должны совпадать с соответствующими характеристиками снимка.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление снимка)[id=deleting_a_snapshot]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -484,8 +470,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного снимка и выберите пункт **Удалить снимок**.
 1. Нажмите **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -497,17 +484,15 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
     Здесь `<СНИМОК>` — имя или ID снимка, который нужно удалить.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Добавление правила доступа)[id=adding_an_access_rule]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -518,8 +503,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Укажите IP или адрес подсети источника и режим доступа.
 1. Нажмите **Добавить правило**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -543,17 +529,15 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
     Здесь `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление правила доступа)[id=deleting_an_access_rule]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -563,8 +547,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного правила и выберите пункт **Удалить**.
 1. Нажмите **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -587,19 +572,17 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
     - `<ХРАНИЛИЩЕ>` — имя или ID файлового хранилища.
     - `<ID_ПРАВИЛА>` — ID правила доступа, которое нужно удалить.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление файлового хранилища и его сети)[id=deleting_a_file_storage_and_its_network]}
 
 Для удаления файлового хранилища необходимо сначала демонтировать его на виртуальных машинах и [удалить](#deleting_a_snapshot) все его снимки.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужное файловое хранилище.
@@ -609,8 +592,9 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
 Одновременно с файловым хранилищем будет удалена созданная для него сеть.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что клиент Manila [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
@@ -630,5 +614,6 @@ net use <ИМЯ_ДИСКА>: <ТОЧКА_ПОДКЛЮЧЕНИЯ>
 
     Здесь `<ID_СЕТИ>` — ID сети файлового хранилища, которую нужно удалить.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

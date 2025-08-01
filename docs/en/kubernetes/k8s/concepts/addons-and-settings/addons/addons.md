@@ -36,34 +36,30 @@ The availability of specific add-ons depends on the [region](/en/tools-for-using
 
 ### Capsule
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 Kubernetes clusters allow you to organize the logical division of Kubernetes resources at the level of individual namespaces. However, this may not be enough to achieve resource separation and isolation in complex scenarios. For example, let's say you want to provide isolated sets of resources to multiple development teams so that they are not accessible to each other. A typical solution to this problem is to create several separate clusters for each team. With this approach, as the number of teams increases, the number of clusters also increases, which complicates the administration of these clusters.
 
 [Capsule](https://capsule.clastix.io/docs) allows you to organize isolated sets of resources within one cluster using tentants. An individual tenant represents namespaces assigned to a group of users combined with restrictions on the creation and consumption of Kubernetes resources. The Capsule policy engine not only monitors compliance with resource usage policies within a tenant, but also ensures the isolation of one tenant from another. Thus, it becomes possible to organize the work of several teams within one multi-tenant cluster without the need to administer additional clusters.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 - **CPU**: 200m.
 - **RAM**: 128Mi.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### cert-manager
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 [cert-manager](https://cert-manager.io/) helps to manage certificates in Kubernetes clusters:
 
@@ -80,8 +76,9 @@ Kubernetes clusters allow you to organize the logical division of Kubernetes res
 
 A certificate issued with `cert-manager` will be available to other Kubernetes resources. For example, it can be used by Ingress.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 The requirements of the individual add-on components:
 
@@ -100,8 +97,9 @@ The requirements of the individual add-on components:
   - **CPU**: 10m.
   - **RAM**: 32Mi.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Docker Registry
 
@@ -113,19 +111,17 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 [Docker Registry](https://docs.docker.com/registry/) is designed to host and store Docker images. It works in a high availability (HA) configuration. Registry images can be used when deploying services in a cluster.
 
 See [Connecting to the Docker registry](../../../connect/docker-registry) for details.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 - **CPU**: 100m.
 - **RAM**: 128Mi–512 Mi.
@@ -133,59 +129,55 @@ See [Connecting to the Docker registry](../../../connect/docker-registry) for de
 - **Standard load balancer**: one piece.
 - **Floating IP**: one piece.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Fluent Bit
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 [Fluent Bit](https://docs.fluentbit.io/manual) allows you to flexibly configure log collection in Cloud Containers clusters and analyze them in the [Cloud Logging](/en/monitoring-services/logging) service, for example, using Elasticsearch or Loki plugins.
 
 The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 The add-on does not have its own system requirements. The add-on subs use [limit settings](../settings#limits_settings_for_pods) by default.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Fluent Bit for Cloud Logging (logaas-integration)
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from the Cloud Containers cluster to the [Cloud Logging](/en/monitoring-services/logging) service for further analysis of these logs.
 
 The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the [section about installing it](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 The add-on does not have its own system requirements. The add-on subs use [limit settings](../settings#limits_settings_for_pods) by default.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### {heading(GPU Operator)[id=gpu_operator]}
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 GPU Operator allows you to manage [GPUs on cluster nodes](../../flavors#gpu) to perform machine learning or big data processing.
 
@@ -209,8 +201,9 @@ Addon components:
 
 Read more about the add-on and its components: [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html), [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes), [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 The add-on components requirements:
 
@@ -229,8 +222,9 @@ The add-on components requirements:
 
 If the add-on is installed on several worker nodes, then NFD-Worker will be installed on each of these nodes and will require the specified amount of RAM for each node. The remaining components are installed on one node only.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Ingress Controller (NGINX)
 
@@ -242,12 +236,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on [NGINX](https://docs.nginx.com/nginx-ingress-controller/intro/overview/) works as a reverse proxy and allows to organize single entry point for services in cluster which work via HTTP or HTTPS.
 
@@ -255,25 +246,24 @@ If you have a controller, it is sufficient to create [Ingress resource](https://
 
 The pre-installed Ingress controller integrates tightly with the VK Cloud platform. For more information, see [Network in cluster](../../network).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 - **CPU**: 210m–610m.
 - **RAM**: 238Mi–660Mi.
 - **Standard load balancer**: one piece.
 - **Floating IP**: one piece. (when installed with [default settings](../../../instructions/addons/advanced-installation/install-advanced-ingress#installing_addon)).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### {heading(Istio)[id=istio]}
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 [Istio](https://istio.io/latest/) is a framework that implements the [service mesh](https://istio.io/latest/about/service-mesh/#what-is-a-service-mesh) concept, which allocates a separate layer for interaction between application services. Using Istio provides traffic management for services without changing the code of the services (sidecar containers are used). Istio benefits:
 
@@ -285,23 +275,22 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 - Expanded traffic monitoring capabilities.
 - Complex routing and balancing of traffic between services can be done.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 - **CPU**: 500m.
 - **RAM**: 2Gi.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### {heading(Jaeger)[id=jaeger]}
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 In distributed systems based on microservices, requests are constantly exchanged. The [Jaeger](https://www.jaegertracing.io) platform created for distributed query tracing. Jaeger tracks the flow of requests through microservices and allows you to:
 
@@ -312,8 +301,9 @@ Such a tool is necessary because query-related factors can significantly affect 
 
 Jaeger performs query tracing based on the data it receives from microservices. Therefore, it is necessary to integrate [into microservices](https://www.jaegertracing.io/docs/latest/architecture/#tracing-sdks) tool stack [OpenTelemetry](https://opentelemetry.io) to send data about requests. You can get acquainted with the integration of OpenTelemetry into a microservice application using the example of [Hot R.O.D](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 Add-on requirements:
 
@@ -356,49 +346,48 @@ To ensure stable operation of Jaeger, it is recommended to install it on a dedic
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Kiali
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 [Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio). It allows to manage, monitor and visualize a service mesh.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 - **CPU**: 10m—500m.
 - **RAM**: 64Mi—1Gi.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### {heading(Kube Prometheus Stack)[id=kube_prometheus_stack]}
 
-<tabs>
-<tablist>
-<tab>Description</tab>
-<tab>System requirements</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Description)}
 
 The system for monitoring the status of the cluster and the services deployed in it is implemented on the basis of [Prometheus](https://prometheus.io/) and visualization tool [Grafana](https://grafana.com/).
 
 See [Cluster Monitoring](../../../monitoring#using_grafana) for details.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(System requirements)}
 
 - **CPU**: 850m–2500m.
 - **RAM**: 968Mi–3804Mi.
 - **HDD**: 2GB.
 - **SSD**: 10GB.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

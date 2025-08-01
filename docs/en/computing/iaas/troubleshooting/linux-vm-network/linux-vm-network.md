@@ -139,15 +139,10 @@ Check that the network interface is configured correctly:
 
 5. Configure the network interface manually:
 
-    <tabs>
-    <tablist>
-    <tab>Ubuntu</tab>
-    <tab>Debian</tab>
-    <tab>AlmaLinux, CentOS</tab>
-    <tab>openSUSE</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Ubuntu)}
+        
     1. Edit the file `/etc/netplan/50-cloud-init.yaml` and bring it to the following form:
 
         ```yaml
@@ -178,9 +173,10 @@ Check that the network interface is configured correctly:
         sudo netplan apply
         ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Debian)}
+    
     1. Edit the file `/etc/network/interfaces.d/50-cloud-init` and bring it to the following form:
 
         ```ini
@@ -207,9 +203,10 @@ Check that the network interface is configured correctly:
         sudo systemctl restart networking
         ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(AlmaLinux, CentOS)}
+    
     1. Edit the file `/etc/sysconfig/network-scripts/ifcfg-<interface name>` and bring it to the following form:
 
         ```ini
@@ -244,9 +241,10 @@ Check that the network interface is configured correctly:
         sudo nmcli con up "System eth0"
         ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(openSUSE)}
+    
     1. Edit the `/etc/sysconfig/network/ifcfg-<interface name>` file and make it look like:
 
        ```ini
@@ -281,8 +279,9 @@ Check that the network interface is configured correctly:
        sudo systemctl restart network
        ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 6. Prohibit making automatic changes to the edited configuration file:
 
@@ -313,13 +312,10 @@ Check the SSH operation:
 
 1. Depending on the SSH service status, follow these steps:
 
-    <tabs>
-    <tablist>
-    <tab>If SSH service is running</tab>
-    <tab>If SSH service is not running</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(If SSH service is running)}
+        
     1. Determine which port the SSH service is running on:
 
        ```console
@@ -342,9 +338,10 @@ Check the SSH operation:
 
     1. Check for SSH access to the VM. If access has not appeared, [proceed to checking the settings of the VM firewall](#3_check_the_settings_of_the_virtual_machine_firewall).
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(If SSH service is not running)}
+    
     1. Determine which port the SSH service is running on:
 
         ```console
@@ -375,26 +372,25 @@ Check the SSH operation:
 
         1. Install the `netstat` utility:
 
-            <tabs>
-            <tablist>
-            <tab>Debian, Ubuntu</tab>
-            <tab>AlmaLinux, CentOS<tab>
-            </tablist>
-            <tabpanel>
+            {tabs}
 
+            {tab(Debian, Ubuntu)}
+                        
             ```console
             sudo apt install net-tools -y
             ```
 
-            </tabpanel>
-            <tabpanel>
-
+            {/tab}
+            
+            {tab(AlmaLinux, CentOS)}
+            
             ```console
             sudo yum install net-tools -y
             ```
 
-            </tabpanel>
-            </tabs>
+            {/tab}
+
+            {/tabs}
 
         1. Run the command:
 
@@ -458,8 +454,9 @@ Check the SSH operation:
 
     1. Check for SSH access to the VM. If access has not appeared, [proceed to checking the settings of the VM firewall](#3_check_the_settings_of_the_virtual_machine_firewall).
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 ## 3. Check the settings of the virtual machine firewall
 
@@ -479,28 +476,26 @@ To check the firewall settings:
 
 1. Disable the firewall:
 
-    <tabs>
-    <tablist>
-    <tab>ufw</tab>
-    <tab>firewalld</tab>
-    <tab>iptables</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(ufw)}
+        
     ```console
     sudo ufw disable
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(firewalld)}
+    
     ```console
     sudo systemctl stop firewalld
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(iptables)}
+    
     1. Save the existing rules `iptables`:
 
         ```console
@@ -520,8 +515,9 @@ To check the firewall settings:
 
         ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 1. Check for SSH access to the VM.
 
@@ -535,34 +531,33 @@ To turn on the firewall again:
 
 1. Run the command:
 
-    <tabs>
-    <tablist>
-    <tab>ufw</tab>
-    <tab>firewalld</tab>
-    <tab>iptables</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(ufw)}
+        
     ```console
     sudo ufw enable
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(firewalld)}
+    
     ```console
     sudo systemctl start firewalld
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(iptables)}
+    
     ```console
     sudo iptables-restore < ~/iptables.rules
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 ## 4. Check the settings of the VK Cloud firewall security groups
 

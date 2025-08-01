@@ -24,26 +24,25 @@ ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dn
 
    Путь к вашему файлу kubeconfig может отличаться от примера ниже.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Подготовьте пользователя для ExternalDNS
 
@@ -93,12 +92,9 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Создайте в этом пространстве имен секрет, который содержит в себе реквизиты для доступа к API VK Cloud, [полученные при подготовке пользователя](#1_podgotovte_polzovatelya_dlya_externaldns):
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl -n external-dns create secret generic vkcs-auth \
@@ -110,8 +106,9 @@ ExternalDNS будет использовать реквизиты этого п
      --from-literal=Password="<пароль пользователя>"
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl -n external-dns create secret generic vkcs-auth `
@@ -123,8 +120,9 @@ ExternalDNS будет использовать реквизиты этого п
      --from-literal=Password="<пароль пользователя>"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Добавьте Helm-репозиторий Bitnami:
 

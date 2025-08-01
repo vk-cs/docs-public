@@ -8,23 +8,16 @@
 
 Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
-<tabs>
-<tablist>
-<tab>Стандартная установка</tab>
-<tab>Установка на выделенные worker-узлы</tab>
-<tab>Быстрая установка</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Стандартная установка)}
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -48,9 +41,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -76,22 +70,22 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. [Подключитесь к Kiali](../../../../connect/addons-ui).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Установка на выделенные worker-узлы)}
 
 1. Подготовьте выделенную группу worker-узлов для установки аддона, если это еще не сделано:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -106,18 +100,16 @@
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -133,13 +125,10 @@
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
-      <tabs>
-      <tablist>
-      <tab>Исключения</tab>
-      <tab>Селекторы узлов</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Исключения)}
+            
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -150,9 +139,10 @@
 
       Задайте это исключение для поля `tolerations`.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Селекторы узлов)}
+      
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -160,8 +150,9 @@
 
       Задайте этот селектор для поля `nodeSelector`.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       {note:warn}
 
@@ -173,9 +164,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -197,13 +189,15 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. [Подключитесь к Kiali](../../../../connect/addons-ui).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Быстрая установка)}
 
 {note:info}
 
@@ -215,13 +209,10 @@
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -238,9 +229,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -262,13 +254,15 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. [Подключитесь к Kiali](../../../../connect/addons-ui).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Редактирование кода настройки аддона при установке
 

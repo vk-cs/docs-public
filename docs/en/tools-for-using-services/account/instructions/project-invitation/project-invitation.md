@@ -6,12 +6,9 @@ If you don't see the invitation in your **Inbox**, check the **Spam** folder.
 
 The authorization procedure depends on whether an account with your email is registered in VK Cloud or not.
 
-<tabs>
-<tablist>
-<tab>The account is not registered</tab>
-<tab>The account is registered</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(The account is not registered)}
 
 1. Click on the link provided in the invitation email.
 
@@ -30,8 +27,9 @@ If the **Enable two-factor authentication** page opens, [configure](/en/tools-fo
 
 {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(The account is registered)}
 
 1. Click on the link provided in the invitation email.
 
@@ -47,8 +45,9 @@ If the **Enable two-factor authentication** page opens, [configure](/en/tools-fo
 
     2. Select the target project identifier from the drop-down list.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## What's next?
 

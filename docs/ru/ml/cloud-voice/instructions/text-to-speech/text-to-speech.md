@@ -2,12 +2,9 @@
 
 ## Запрос
 
-<tabs>
-<tablist>
-<tab>GET</tab>
-<tab>POST</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(GET)}
 
 Для синтеза речи с помощью GET-запроса отправьте текст в параметре `text`.
 
@@ -20,8 +17,9 @@ curl -L --request GET \
     --header 'Authorization: Bearer <токен доступа>'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(POST)}
 
 Для синтеза речи с помощью POST-запроса отправьте текст в теле запроса.
 
@@ -36,8 +34,9 @@ curl -L --request POST \
   --output <имя файла>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Параметры запроса:
 

@@ -4,12 +4,9 @@
 
 VK Cloud позволяет создать образ из диска существующей виртуальной машины.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. [Остановите ВМ](../../../instructions/vm/vm-manage#start_stop_restart_vm), образ которой нужно создать.  
@@ -22,8 +19,9 @@ VK Cloud позволяет создать образ из диска сущес
    - **Название образа**: укажите имя образа.
 1. Нажмите кнопку **Создать образ**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 {note:warn}
 
@@ -51,8 +49,9 @@ VK Cloud позволяет создать образ из диска сущес
 
    Успешно созданный образ должен иметь статус `active`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Импорт образа
 
@@ -72,12 +71,9 @@ VK Cloud поддерживает загрузку собственных обр
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Облачные вычисления → Образы**.
@@ -89,8 +85,9 @@ VK Cloud поддерживает загрузку собственных обр
    - **Название образа**: укажите имя образа.
 1. Нажмите кнопку **Создать образ**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 Параметры команды импорта образа зависят от необходимости поддержки резервного копирования:
 
@@ -102,17 +99,15 @@ VK Cloud поддерживает загрузку собственных обр
 
 - Если поддержка нужна, добавьте параметры `--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes` в команду выше.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Экспорт образа
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-<tab>cURL</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Получите `ID` образа из списка:
 
@@ -126,8 +121,9 @@ VK Cloud поддерживает загрузку собственных обр
    openstack image save --file <название файла образа>.raw <ID образа>
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(cURL)}
 
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 1. Выполните команду:
@@ -136,8 +132,9 @@ VK Cloud поддерживает загрузку собственных обр
    curl -H "X-Auth-Token:{токен}" "https://infra.mail.ru:9292/v2/images/{ID образа}/file" --output <название файла образа>.raw
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Изменение статуса видимости образа
 
@@ -152,12 +149,9 @@ VK Cloud поддерживает загрузку собственных обр
 
 По умолчанию все образы имеют статус `private`. Чтобы поделиться образом с другими проектами:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {note:info}
 
@@ -180,8 +174,9 @@ VK Cloud поддерживает загрузку собственных обр
 
 1. Нажмите кнопку **Разрешить доступ**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Получите `ID` образа из списка:
 
@@ -223,17 +218,15 @@ VK Cloud поддерживает загрузку собственных обр
 openstack image member list <ID образа>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление образа
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Образы**.
@@ -244,8 +237,9 @@ openstack image member list <ID образа>
 
 4. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 Чтобы удалить образ, не прикрепленный к проектам:
 
@@ -259,5 +253,6 @@ openstack image delete <ID образа>
 openstack image remove project <ID образа> <ID проекта>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

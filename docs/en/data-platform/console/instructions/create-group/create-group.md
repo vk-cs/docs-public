@@ -2,11 +2,9 @@ To make it easier to find and manage Data Platform service instances, organize t
 
 To create a logical group:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
@@ -21,5 +19,6 @@ To create a logical group:
 
 1. Click the **Create** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

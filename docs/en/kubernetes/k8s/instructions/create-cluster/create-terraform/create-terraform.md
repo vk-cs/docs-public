@@ -126,14 +126,10 @@ Here:
 - `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "GZ1"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones will be set up automatically.
 - `network_id` and `subnet_id` are the network and subnet identifiers, respectively. They can be specified in different ways:
 
-  <tabs>
-  <tablist>
-  <tab>Setting IDs explicitly</tab>
-  <tab>Using data sources</tab>
-  <tab>Using created resources</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
 
+  {tab(Setting IDs explicitly)}
+    
   If the required network and subnet already exist and you know their identifiers, specify the identifiers explicitly.
 
   Example:
@@ -147,9 +143,10 @@ Here:
     ...
   }
   ```
-  </tabpanel>
-  <tabpanel>
+  {/tab}
 
+  {tab(Using data sources)}
+  
   If the required networks and subnets already exist, but you do not know their identifiers, specify the appropriate data sources and get the identifiers.
 
   Example:
@@ -172,9 +169,10 @@ Here:
     ...
   }
   ```
-  </tabpanel>
-  <tabpanel>
-
+  {/tab}
+  
+  {tab(Using created resources)}
+  
   If the required network and subnet do not already exist, create them and get the IDs:
 
   ```hcl
@@ -197,8 +195,9 @@ Here:
     ...
   }
   ```
-  </tabpanel>
-  </tabs>
+  {/tab}
+  
+  {/tabs}
 
 
     {note:info}

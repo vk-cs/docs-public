@@ -22,12 +22,9 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Client network</tab>
-   <tab>Virtual network</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Client network)}
 
    This network will act as the client network.
 
@@ -46,8 +43,9 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
       - **DHCP IP address pool**: `172.16.0.2 - 172.16.0.6`.
       - **Private DNS**: Make sure this option is selected.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Virtual network)}
 
     This network will act as a virtual network.
 
@@ -65,8 +63,9 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
       - **Enable DHCP**: Make sure this option is selected.
       - **DHCP IP address pool**: `10.0.0.2 - 10.0.0.6`.
       - **Private DNS**: Make sure this option is selected.
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Determine which routers have been created for these networks. This information will be needed when you configure the VPN further.
 
@@ -118,14 +117,9 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 [Create a VPN](/en/networks/vnet/instructions/vpn) with the following settings:
 
-<tabs>
-<tablist>
-<tab>1. Setting up IKE</tab>
-<tab>2. Configuring IPsec</tab>
-<tab>3. Creating Endpoint Groups</tab>
-<tab>4. Tunnel setup</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(1. Setting up IKE)}
 
 Select **IKE Policy** - `New IKE Policy`, and set:
 
@@ -136,8 +130,9 @@ Select **IKE Policy** - `New IKE Policy`, and set:
 - **IKE version**: `v2`.
 - **Diffie-Hellman group**: `group14`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(2. Configuring IPsec)}
 
 Select **IPsec Policy** - `New IPsec Policy`, and set:
 
@@ -147,8 +142,9 @@ Select **IPsec Policy** - `New IPsec Policy`, and set:
 - **Encryption algorithm**: `aes-256`.
 - **Diffie-Hellman group**: `group14`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(3. Creating Endpoint Groups)}
 
 Choose:
 
@@ -162,8 +158,9 @@ Choose:
   - **Group name**: `client-endpoint-group`.
   - **Subnet address**: `172.16.0.0/29`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(4. Tunnel setup)}
 
 Select **Settings** - `Basic`, and set:
 
@@ -180,8 +177,9 @@ Select **Settings** - `Basic`, and set:
     - numbers;
     - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Set up a VPN tunnel on the side of the client network
 
@@ -256,12 +254,9 @@ Select **Settings** - `Basic`, and set:
 
 In order for traffic to pass through the VPN tunnel, you need to add static routes:
 
-<tabs>
-<tablist>
-<tab>On the side of the cloud network</tab>
-<tab>On the side of the client network</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(On the side of the cloud network)}
 
 1. Open the page with the list of subnets for the `vkcloudNet` network in your management console.
 1. Expand the `vkcloudSubnet` subnet menu and select `Edit Subnet`.
@@ -272,8 +267,9 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
    172.16.0.0/29 - 10.0.0.5
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(On the side of the client network)}
 
 1. Open the page with information about the router `router_1234` in your management console, to which the client subnet `clientSubnet` and the VPN gateway `client_vpn_gw` are connected.
 1. On the **Static Routes** tab, click the **Add Static Route** button.
@@ -284,8 +280,9 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
 1. Click the **Add route** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 4. Check if the VPN tunnel is working
 

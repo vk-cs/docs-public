@@ -13,11 +13,9 @@ Log data can be useful both for internal analysis of incidents and when contacti
 
 ## Downloading the action log
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Click on the user's name in the header of the page.
@@ -26,17 +24,15 @@ Log data can be useful both for internal analysis of incidents and when contacti
 
 The generated report will be uploaded with the extension `.xlsx`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing log
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Click on the user's name in the header of the page.
@@ -49,8 +45,9 @@ The generated report will be uploaded with the extension `.xlsx`.
 
 To open detailed information about an individual record, click on the icon ![Info](assets/info-icon.svg "inline") to the right of the entry.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication (2FA) for your account.
 1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token "change-lang") the `X-Auth-Token`.
@@ -73,8 +70,9 @@ To open detailed information about an individual record, click on the icon ![Inf
    | `marker` | string  | The token for requesting the next page, previously returned by the API. TTL of markers — 1 hour |
    | `limit`  | integer | The number of records to return. If omitted, returns 100 records |
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Each action log record provides the information:
 

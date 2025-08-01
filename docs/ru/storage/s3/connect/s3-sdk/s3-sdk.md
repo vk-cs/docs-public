@@ -14,28 +14,27 @@
 
 1. Создайте [аккаунт](../../instructions/account-management) и [бакет](../../instructions/buckets/create-bucket), если этого не было сделано ранее. Сохраните реквизиты для подключения:
 
-   <tabs>
-   <tablist>
-   <tab>Регион Москва</tab>
-   <tab>Регион Казахстан</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Регион Москва)}
 
    - Endpoint URL: `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru`.
    - Access Key ID: полученный при создании аккаунта идентификатор ключа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `ru-msk`.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Регион Казахстан)}
 
    - Endpoint URL: `https://hb.kz-ast.vkcloud-storage.ru`.
    - Access Key ID: полученный при создании аккаунта идентификатор ключа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `kz-ast`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Настройте параметры подключения к Cloud Storage одним из способов:
 
@@ -45,12 +44,9 @@
 
    - Укажите реквизиты в переменных окружения:
 
-     <tabs>
-     <tablist>
-     <tab>Linux (bash) / MacOS (zsh)</tab>
-     <tab>Windows (PowerShell)</tab>
-     </tablist>
-     <tabpanel>
+     {tabs}
+
+     {tab(Linux (bash) / MacOS (zsh))}
 
      ```console
      export AWS_ACCESS_KEY_ID=<идентификатор ключа аккаунта>
@@ -58,8 +54,9 @@
      export AWS_DEFAULT_REGION=<имя региона по умолчанию>
      ```
 
-     </tabpanel>
-     <tabpanel>
+     {/tab}
+
+     {tab(Windows (PowerShell))}
 
      ```console
      $Env:AWS_ACCESS_KEY_ID="<идентификатор ключа аккаунта>"
@@ -67,8 +64,9 @@
      $Env:AWS_DEFAULT_REGION="<имя региона по умолчанию>"
      ```
 
-     </tabpanel>
-     </tabs>
+     {/tab}
+
+     {/tabs}
 
      {note:warn}
 

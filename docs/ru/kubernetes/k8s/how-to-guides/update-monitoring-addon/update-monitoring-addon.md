@@ -44,26 +44,25 @@
 
    Путь к вашим файлам kubeconfig может отличаться от примера ниже.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Получите информацию, необходимую для обновления аддона
 
@@ -81,12 +80,9 @@
 
    Значения ваших переменных могут отличаться от примера ниже.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export CHART_NAME="kube-prometheus-stack"
@@ -94,16 +90,18 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $CHART_NAME="kube-prometheus-stack"
    $NAMESPACE="prometheus-monitoring"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Получите информацию о используемых аддоном [Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)](../../reference/pvs-and-pvcs). Они используются для хранения собираемых метрик, а также других данных, необходимых для работы аддона.
 
@@ -135,12 +133,9 @@
 
 Перед обновлением аддона защитите от удаления постоянные тома, которые он использует, а также удалите упомянутые ресурсы Kubernetes одним из приведенных ниже способов.
 
-<tabs>
-<tablist>
-<tab>Готовый bash-скрипт для Linux</tab>
-<tab>Отдельные команды для Linux/macOS/Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Готовый bash-скрипт для Linux)}
 
 1. Создайте файл с кодом скрипта:
 
@@ -393,8 +388,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Отдельные команды для Linux/macOS/Windows)}
 
 1. Получите список PVs, которые используются аддоном через PVCs в пространстве имен аддона:
 
@@ -496,8 +492,9 @@
    kubectl delete ns $NAMESPACE
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Обновите аддон на новую версию
 
@@ -510,13 +507,9 @@
 
    1. Изучите код настройки аддона предыдущей версии, [полученный ранее](#1_poluchite_informaciyu_neobhodimuyu_dlya_obnovleniya_addona). Найдите фрагменты кода, которые отвечают за настройку хранилища для следующих компонентов аддона:
 
-      <tabs>
-      <tablist>
-      <tab>Grafana</tab>
-      <tab>Alert Manager</tab>
-      <tab>Prometheus</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Grafana)}
 
       ```yaml
       grafana:
@@ -533,8 +526,9 @@
         ...
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Alert Manager)}
 
       ```yaml
       alertmanager:
@@ -556,8 +550,9 @@
                     storage: 1Gi
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Prometheus)}
 
       ```yaml
       prometheus:
@@ -579,8 +574,9 @@
                     storage: 10Gi
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Изучите код настройки новой версии аддона, которую планируется установить.
 

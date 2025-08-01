@@ -94,14 +94,10 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
 
 1. Submit the Spark job to the cluster using the [spark_submit_job](/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs/#spark_submit_job "change-lang") method. To specify the path to the application code file, use one of the following ways:
 
-    <tabs>
-    <tablist>
-    <tab>Local file</tab>
-    <tab>File in Docker image</tab>
-    <tab>File in bucket</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Local file)}
+        
     Specify the local path to the Python application file in the `pycode_file_path` argument of the `spark_submit_job` method.
 
     Python script example:
@@ -110,9 +106,10 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest, pycode_file_path="<APPLICATION_NAME>.py")
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(File in Docker image)}
+    
     Specify the path to the application file embedded in the Docker image of the Cloud Spark cluster in the `main_app_file` field of the application manifest.
 
     Python script example:
@@ -122,21 +119,18 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(File in bucket)}
+    
     Specify the path to the application file uploaded to the bucket in the `main_app_file` field of the application manifest.
 
     Example scripts for different languages:
 
-    <tabs>
-    <tablist>
-    <tab>Scala</tab>
-    <tab>Java</tab>
-    <tab>Python</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Scala)}
+        
     ```scala
     job_manifest.spec_type = "Scala"
     job_manifest.main_class = "org.apache.spark.examples.<main class name>"
@@ -145,9 +139,10 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
 
+    {tab(Java)}
+    
     ```java
     job_manifest.spec_type = "Java"
     job_manifest.main_class = "org.apache.spark.examples.<main class name>"
@@ -156,22 +151,25 @@ To launch a job in a [created](/en/ml/spark-to-k8s/instructions/create) Cloud Sp
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Python)}
+    
     ```python
     job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<APPLICATION_NAME>.py"
 
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
     Here, `spark-files` is the bucket directory where the application code files were previously uploaded.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 {note:info}
 

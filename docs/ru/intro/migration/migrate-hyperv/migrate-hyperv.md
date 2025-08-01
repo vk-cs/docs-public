@@ -15,12 +15,9 @@
 
 ## 2. Подготовьте ВМ к миграции
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 1. [Проверьте](../check-virtio) наличие драйверов VirtIO в системе.
 2. Проверьте наличие QEMU Guest Agent:
@@ -31,8 +28,9 @@
 
    При необходимости [установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 1. [Установите](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) драйверы VirtIO.
 2. [Установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
@@ -41,25 +39,24 @@
    1. [Скачайте](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) Virtio Registry File.
    2. Запустите файл и разрешите внести изменения в реестр.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Экспортируйте виртуальную машину
 
-<tabs>
-<tablist>
-<tab>Диспетчер Hyper-V</tab>
-<tab>PowerShell</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Диспетчер Hyper-V)}
 
 1. Остановите виртуальную машину.
 2. Запустите Диспетчер Hyper-V.
 3. Нажмите правой кнопкой мыши на нужную виртуальную машину и выберите **Экспорт**.
 4. Выберите, где расположить файлы ВМ, и нажмите кнопку **Экспорт**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(PowerShell)}
 
 1. Остановите виртуальную машину.
 2. Запустите PowerShell от имени администратора.
@@ -69,8 +66,9 @@
    Export-VM -Name <имя виртуальной машины> -Path <путь для экспорта файлов>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 4. Импортируйте образ ВМ в VK Cloud
 

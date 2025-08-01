@@ -68,12 +68,9 @@ To install an NGINX Ingress Controller with PROXY protocol support:
 
 1. Add the NGINX Helm repository:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
@@ -81,16 +78,18 @@ To install an NGINX Ingress Controller with PROXY protocol support:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Install a PROXY-enabled Ingress controller by running the command:
 
@@ -200,12 +199,9 @@ To create an Ingress resource:
 
 1. Run the command:
 
-   <tabs>
-   <tablist>
-   <tab>Coffee</tab>
-   <tab>Tea</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Coffee)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<Ingress IP address> https://cafe.example.com/coffee
@@ -227,8 +223,9 @@ To create an Ingress resource:
    - terminates SSL\TLS sessions;
    - provides access to services corresponding to the deployed applications.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Tea)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<Ingress IP address> https://cafe.example.com/tea
@@ -250,8 +247,9 @@ To create an Ingress resource:
    - terminates SSL\TLS sessions;
    - provides access to services corresponding to the deployed applications.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Delete unused resources
 
@@ -263,12 +261,9 @@ To create an Ingress resource:
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml
@@ -279,8 +274,9 @@ To create an Ingress resource:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml; `
@@ -290,8 +286,9 @@ To create an Ingress resource:
    kubectl delete namespace example-nginx-ingress-tcp
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

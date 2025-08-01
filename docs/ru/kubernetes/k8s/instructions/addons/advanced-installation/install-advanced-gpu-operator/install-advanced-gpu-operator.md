@@ -6,12 +6,10 @@
 
 1. Подготовьте выделенную группу worker-узлов для установки аддона, если это еще не сделано:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -27,18 +25,16 @@
       - ключ `nvidia.com`;
       - значение `gpu`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -66,9 +62,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -90,8 +87,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Опционально) [Познакомьтесь с официальной документацией NVIDIA по работе с аддоном](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html).
 

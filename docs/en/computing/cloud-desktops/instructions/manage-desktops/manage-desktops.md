@@ -48,19 +48,17 @@ The state of the desktop after the end of the session is determined by the **Act
 
 To end the user session, log out of the system:
 
-<tabs>
-<tablist>
-<tab>Astra Linux</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Astra Linux)}
 
 1. On the desktop, go to **Пуск**.
 1. Click the **Завершение работы...**.
 1. In the window that opens, click **Выход из сессии**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 1. On the desktop, go to **Пуск**.
 1. Click the name of the current user and select **Выход**.
@@ -71,8 +69,9 @@ You can also use the [logoff](https://learn.microsoft.com/en-us/windows-server/a
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 

@@ -2,19 +2,17 @@
 
 ## Просмотр информации о ключевой паре
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Ключевые пары SSH**.
 1. Нажмите на имя нужной ключевой пары. Отобразится информация о ней.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
@@ -29,17 +27,15 @@
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Создание ключевой пары
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Ключевые пары SSH**.
@@ -48,8 +44,9 @@
 
    Приватный ключ будет загружен на локальное устройство.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
@@ -60,17 +57,15 @@
 
 1. Сохраните приватный ключ, который отобразится на экране, в файл с расширением `.pem`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Импорт существующего ключа
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Ключевые пары SSH**.
@@ -83,8 +78,9 @@
 
 1. Нажмите кнопку **Импортировать ключ**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Воспользуйтесь [официальной документацией](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) GitLab для локальной генерации ключевой пары.
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
@@ -94,8 +90,9 @@
    openstack keypair create --public-key <путь к файлу публичного ключа> <имя ключевой пары>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Восстановление ключевой пары
 
@@ -109,12 +106,9 @@
 
 ## Удаление ключевой пары
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько ключевых пар, выбрав их с помощью флажков.
 
@@ -123,8 +117,9 @@
 1. Нажмите на значок ![Корзина](assets/trash-icon.svg "inline") в строке с удаляемым объектом.
 1. Подтвердите удаление.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
@@ -133,5 +128,6 @@
    openstack keypair delete <имя ключевой пары>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

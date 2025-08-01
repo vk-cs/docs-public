@@ -38,13 +38,9 @@ On the host from which you plan to connect to the registry:
 
    1. Restart the Docker Engine.
 
-      <tabs>
-      <tablist>
-      <tab>Linux</tab>
-      <tab>Windows</tab>
-      <tab>macOS</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+      
+      {tab(Linux)}
 
       - For the server version of the Docker Engine, run one of the commands to restart:
 
@@ -58,18 +54,21 @@ On the host from which you plan to connect to the registry:
 
       - For Docker Desktop, use [GUI](https://docs.docker.com/desktop/settings/linux/#docker-engine).
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows)}
 
       Use [GUI](https://docs.docker.com/desktop/settings/mac/#docker-engine) Docker Desktop.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(macOS)}
 
       Use [GUI](https://docs.docker.com/desktop/settings/mac/#docker-engine) Docker Desktop.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
 1. Sign in into the registry:
 
@@ -97,12 +96,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    ```console
    kubectl create secret docker-registry k8s-registry-creds \ 
@@ -112,8 +108,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
      --namespace=<namespace>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl create secret docker-registry k8s-registry-creds ` 
@@ -123,8 +120,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
      --namespace=<namespace>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Specify in the workload manifest:
 
@@ -136,17 +134,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
 
    Examples of manifests:
 
-   <tabs>
-   <tablist>
-   <tab>Pod</tab>
-   <tab>Deployment</tab>
-   <tab>ReplicaSet</tab>
-   <tab>StatefulSet</tab>
-   <tab>DaemonSet</tab>
-   <tab>Job</tab>
-   <tab>CronJob</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Pod)}
 
    ```yaml
    apiVersion: v1
@@ -161,8 +151,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
        image: <registry IP address>:5000/<image directory>/<image name>:<tag>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Deployment)}
 
    ```yaml
    apiVersion: apps/v1
@@ -177,11 +168,12 @@ In order to deploy workloads in a cluster using images from the Docker registry:
          containers:
          - name: my-app
            image: <registry IP address>:5000/<image directory>/<image name>:<tag>
-   
+
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(ReplicaSet)}
 
    ```yaml
    apiVersion: apps/v1
@@ -198,8 +190,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
            image: <registry IP address>:5000/<image directory>/<image name>:<tag>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(StatefulSet)}
 
    ```yaml
    apiVersion: apps/v1
@@ -216,8 +209,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
            image: <registry IP address>:5000/<image directory>/<image name>:<tag>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(DaemonSet)}
 
    ```yaml
    apiVersion: apps/v1
@@ -234,8 +228,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
            image: <registry IP address>:5000/<image directory>/<image name>:<tag>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Job)}
 
    ```yaml
    apiVersion: batch/v1
@@ -252,8 +247,9 @@ In order to deploy workloads in a cluster using images from the Docker registry:
            image: <registry IP address>:5000/<image directory>/<image name>:<tag>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(CronJob)}
 
    ```yaml
    apiVersion: batch/v1
@@ -272,5 +268,6 @@ In order to deploy workloads in a cluster using images from the Docker registry:
                image: <registry IP address>:5000/<image directory>/<image name>:<tag>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

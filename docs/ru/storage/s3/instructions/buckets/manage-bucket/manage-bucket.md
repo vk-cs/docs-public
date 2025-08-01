@@ -1,20 +1,16 @@
 ## Просмотр списка бакетов
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **Объектное хранилище → Бакеты**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -51,8 +47,9 @@
 
 Описание всех параметров для команды вывода списка бакетов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -99,8 +96,9 @@
 
 Команда `ListBuckets` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListBuckets).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -127,18 +125,17 @@
 
 Команда `list_buckets` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3/client/list_buckets.html).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Привязка домена)[id=bind_domain]}
 
 Привязка домена к бакету позволит получить доступ к объектам бакета через ваш домен, а также использовать бакет в качестве репозитория вашего сайта.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. Зарегистрируйте домен у любого регистратора доменных имен, если этого не было сделано ранее. Привязать можно только домен третьего уровня и выше, например: `mysite.mycompany.ru`, `my.site.mycompany.ru`.
 
@@ -152,8 +149,9 @@
 
 После привязки бакет будет доступен по ссылке вида `http://<ИМЯ_БАКЕТА>.<ИМЯ_ДОМЕНА>`, например `http://mybucket.mysite.mycompany.ru`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 
@@ -177,11 +175,9 @@ Cloud Storage позволяет настроить уведомления о д
 
 ### {heading(Добавление вебхука)[id=add_webhook]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_s3-open-bucket.md)}
 
@@ -203,18 +199,17 @@ Cloud Storage позволяет настроить уведомления о д
    - **Filter suffix**: фильтр, который позволяет генерировать вебхуки на события только с теми объектами, имя которых содержит указанный суффикс. Например, если ввести  значение `png`, то вебхуки будут отправляться при изменении файлов с расширением `.png`.
 1. Нажмите кнопку **Добавить hook**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Вы можете подробно изучить механизм обмена вебхуками в Cloud Storage на [примере создания event-driven приложения](https://habr.com/ru/companies/vk/articles/510110).
 
 ### Редактирование вебхука
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_s3-open-bucket.md)}
 
@@ -223,16 +218,15 @@ Cloud Storage позволяет настроить уведомления о д
 1. Отредактируйте [параметры](#add_webhook) вебхука.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Удаление вебхука
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить несколько вебхуков, выбрав их с помощью флажков.
 
@@ -245,18 +239,17 @@ Cloud Storage позволяет настроить уведомления о д
    - Установите флажок для нужного вебхука и нажмите кнопку ![trash-icon](/ru/assets/trash-icon.svg "inline") **Удалить**.
 1. Подтвердите удаление.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Синхронизация локальной директории с бакетом)[id=sync_local_directory_and_bucket]}
 
 Cloud Storage позволяет синхронизировать объекты бакета и файлы локальной директории. При синхронизации Cloud Storage проверяет наличие файла или объекта, их размер и дату последнего изменения. Сравнение происходит в момент выполнения команды или запроса. В зависимости от команды или запроса обновляется содержимое либо бакета, либо локальной директории.
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -311,8 +304,9 @@ Cloud Storage позволяет синхронизировать объекты
 
    {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Автоматическая очистка бакета)[id=manage_lifecycle]}
 
@@ -320,11 +314,9 @@ Cloud Storage позволяет настроить автоматическое
 
 ### {heading(Добавление правила)[id=add_rule]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_s3-open-bucket.md)}
 
@@ -338,34 +330,32 @@ Cloud Storage позволяет настроить автоматическое
     - **Активировать правило**: выключите опцию, если добавляемое правило не нужно применять к объектам в настоящее время.
 1. Нажмите кнопку **Добавить правило**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Отключение правила
 
 Чтобы объекты не удалялись по заданному правилу, отключите его:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_s3-open-bucket.md)}
 
 1. Перейдите на вкладку **Lifecycle**.
 1. Отключите нужное правило справа.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Редактирование правила
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_s3-open-bucket.md)}
 
@@ -374,34 +364,32 @@ Cloud Storage позволяет настроить автоматическое
 1. Отредактируйте [параметры](#add_rule) правила.
 1. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Удаление правила
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_s3-open-bucket.md)}
 
 1. Перейдите на вкладку **Lifecycle**.
 1. Нажмите на значок ![trash-icon](/ru/assets/trash-icon.svg "inline") для правила, которое нужно удалить.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Очистка бакета)[id=bucket_cleaning]}
 
 При очистке бакета из него удаляются все объекты, сам бакет остается. Операцию очистки бакета отменить нельзя: объекты будут удалены безвозвратно.
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 1. Откройте консоль и выполните команду:
@@ -417,8 +405,9 @@ Cloud Storage позволяет настроить автоматическое
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление бакета)[id=bucket_delete]}
 
@@ -428,12 +417,9 @@ Cloud Storage позволяет настроить автоматическое
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько бакетов, выбрав их с помощью флажков.
 
@@ -448,8 +434,9 @@ Cloud Storage позволяет настроить автоматическое
 
 1. Подтвердите удаление.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -488,5 +475,6 @@ Cloud Storage позволяет настроить автоматическое
 
 Описание всех параметров команды удаления бакета доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/rb.html).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

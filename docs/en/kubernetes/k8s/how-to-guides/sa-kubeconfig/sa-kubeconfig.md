@@ -25,28 +25,27 @@ This authentication process is inconvenient when working with automated tools th
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export VKCLOUD_KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    export SA_KUBECONFIG="/home/user/.kube/sa_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $VKCLOUD_KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    $SA_KUBECONFIG="C:\Users\user\.kube\sa_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Make sure that after connecting to the cluster, you have the rights to create the necessary Kubernetes resources:
 
@@ -66,12 +65,9 @@ This authentication process is inconvenient when working with automated tools th
 
 1. Create an `example-sa` service account in the `kube-system` namespace:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -79,8 +75,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -88,8 +85,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Example of command output:
 
@@ -113,12 +111,9 @@ This authentication process is inconvenient when working with automated tools th
 
    The service account must be specified along with the namespace to which it belongs.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -127,8 +122,9 @@ This authentication process is inconvenient when working with automated tools th
        --clusterrole=edit
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -138,8 +134,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Example of command output:
 
@@ -189,12 +186,9 @@ This authentication process is inconvenient when working with automated tools th
 
 1. Make sure that the service account has been assigned a token from the created secret:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -202,8 +196,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -211,8 +206,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The output should contain an indication of the secret in the `Tokens` field.
 
@@ -235,12 +231,9 @@ This authentication process is inconvenient when working with automated tools th
 
    The secret stores the token in encoded form (encoding scheme [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)). The token must be decoded so that it can be used in kubeconfig:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -249,8 +242,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    [System.Text.Encoding]::UTF8.GetString( `
@@ -261,8 +255,9 @@ This authentication process is inconvenient when working with automated tools th
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The token value will be displayed. Save it.
 
@@ -336,12 +331,9 @@ This authentication process is inconvenient when working with automated tools th
 
       1. Get a list of users:
 
-         <tabs>
-         <tablist>
-         <tab>Linux (bash)/macOS (zsh)</tab>
-         <tab>Windows (PowerShell)</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+
+         {tab(Linux (bash)/macOS (zsh))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
@@ -349,8 +341,9 @@ This authentication process is inconvenient when working with automated tools th
 
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Windows (PowerShell))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
@@ -358,17 +351,15 @@ This authentication process is inconvenient when working with automated tools th
 
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
       1. Delete the user using the required name from the list:
 
-         <tabs>
-         <tablist>
-         <tab>Linux (bash)/macOS (zsh)</tab>
-         <tab>Windows (PowerShell)</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+
+         {tab(Linux (bash)/macOS (zsh))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
@@ -376,8 +367,9 @@ This authentication process is inconvenient when working with automated tools th
 
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Windows (PowerShell))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
@@ -385,8 +377,9 @@ This authentication process is inconvenient when working with automated tools th
 
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
          Example of partial command output:
 
@@ -398,12 +391,9 @@ This authentication process is inconvenient when working with automated tools th
 
       This user corresponds to a previously created service account. The previously received token will be used for authentication.
 
-      <tabs>
-      <tablist>
-      <tab>Linux (bash)/macOS (zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux (bash)/macOS (zsh))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
@@ -411,8 +401,9 @@ This authentication process is inconvenient when working with automated tools th
 
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows (PowerShell))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
@@ -420,8 +411,9 @@ This authentication process is inconvenient when working with automated tools th
 
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       Example of command output:
 
@@ -431,12 +423,9 @@ This authentication process is inconvenient when working with automated tools th
 
    1. Configure the current context to use the added user:
 
-      <tabs>
-      <tablist>
-      <tab>Linux (bash)/macOS (zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux (bash)/macOS (zsh))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
@@ -444,8 +433,9 @@ This authentication process is inconvenient when working with automated tools th
 
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows (PowerShell))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
@@ -453,8 +443,9 @@ This authentication process is inconvenient when working with automated tools th
 
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       Example output:
 
@@ -554,12 +545,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
 1. If you no longer need the created Kubernetes resources, delete them:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -571,8 +559,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -584,8 +573,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. A running Cloud Containers cluster is charged and consumes computing resources. If you don't need it anymore:
 

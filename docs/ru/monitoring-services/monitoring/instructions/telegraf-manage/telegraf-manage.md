@@ -4,18 +4,17 @@
 1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    systemctl -l status telegraf
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Включение или выключение агента
 
@@ -24,33 +23,31 @@
 
 - Чтобы включить агент, выполните команду:
 
-  <tabs>
-  <tablist>
-  <tab>Linux</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
+
+  {tab(Linux)}
 
   ```console
   sudo systemctl start telegraf
   ```
 
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 - Чтобы выключить агент, выполните команду:
 
-  <tabs>
-  <tablist>
-  <tab>Linux</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
+
+  {tab(Linux)}
 
   ```console
   sudo systemctl stop telegraf
   ```
 
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 ## Включение или отключение метрик
 
@@ -71,18 +68,17 @@
 
 1. Примените новую конфигурацию с помощью команды:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    sudo systemctl reload telegraf.service
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Включение или отключение плагина для настройки дополнительных метрик
 
@@ -100,18 +96,17 @@
 
 1. Примените новую конфигурацию с помощью команды:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    sudo systemctl reload telegraf.service
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Просмотр логов агента
 
@@ -119,18 +114,17 @@
 1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    journalctl -u telegraf
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удаление агента
 
@@ -138,39 +132,38 @@
 1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>CentOS 7.X</tab>
-   <tab>CentOS 8.X, RedOS 7, AlmaLinux 9</tab>
-   <tab>Ubuntu 22.X, AltLinux Server</tab>
-   <tab>Astra Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(CentOS 7.X)}
 
    ```console
    sudo yum erase telegraf
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(CentOS 8.X, RedOS 7, AlmaLinux 9)}
 
    ```console
    sudo dnf remove telegraf
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Ubuntu 22.X, AltLinux Server)}
 
    ```console
    sudo apt-get remove telegraf
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Astra Linux)}
 
    ```console
    sudo apt remove telegraf
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

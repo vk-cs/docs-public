@@ -8,12 +8,9 @@ Learn more about networks and ports in the sections [Managing networks and subne
 
 ## Connecting the network to the VM
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -38,8 +35,9 @@ Learn more about networks and ports in the sections [Managing networks and subne
 
 7. Click **Save**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -142,17 +140,15 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
    openstack port list --server <virtual machine ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a VM network
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -166,8 +162,9 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 The network connection to the VM will be deleted, but the previously created port will remain in the status **Not connected**. For more information about removing ports, see [Managing ports](/en/networks/vnet/instructions/ports).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 2. Get the VM ID:
@@ -188,5 +185,6 @@ The network connection to the VM will be deleted, but the previously created por
    openstack port delete <port name or ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -13,12 +13,9 @@
 
 1. Perform the following actions with the files:
 
-    <tabs>
-    <tablist>
-    <tab>Windows</tab>
-    <tab>Other OS</tab>
-    </tablist>
-    <tabpanel>
+    {tabs}
+
+    {tab(Windows)}
 
     1. Paste `%APPDATA%` into the address bar of Windows Explorer and copy the `terraform.rc` file to the directory that opens.
 
@@ -26,8 +23,9 @@
 
         Typically a separate working directory is created for each VK Cloud project.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
+
+    {tab(Other OS)}
 
     1. Rename the Terraform mirror configuration file from `terraform.rc` to `.terraformrc`.
     1. Copy the `.terraformrc` file to the user's home directory root.
@@ -35,8 +33,9 @@
 
         Typically a separate working directory is created for each VK Cloud project.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
     {note:info}
 

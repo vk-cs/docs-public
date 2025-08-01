@@ -66,13 +66,10 @@ Image-based брокер
 1. Запакуйте сервисный пакет (директория `<SERVICE_NAME>` с конфигурационными файлами сервиса и манифестами Terraform) в zip-архив. Размер архива должен быть не более 30 МБ.
 1. Загрузите архив в магазин одним из следующих способов:
 
-   <tabs>
-   <tablist>
-   <tab>Кабинет поставщика</tab>
-   <tab>Infra API</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Кабинет поставщика)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. В разделе **Магазин приложений** нажмите кнопку **Перейти в кабинет поставщика**.
    1. На вкладке **Управление сервисами** нажмите кнопку **Добавить сервис**.
@@ -81,9 +78,10 @@ Image-based брокер
 
    После этого добавленный сервис появляется в списке сервисов в статусе `Скрыто`. Файл загруженного архива отправляется на валидацию.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Infra API)}
+   
    Выполните запрос к сервису Infra API со следующими параметрами:
 
    * Метод запроса: `POST`.
@@ -95,30 +93,29 @@ Image-based брокер
    * `x-service-token`: `<SERVICE_TOKEN>` — сервисный ключ.
 
       {caption(Пример запроса на загрузку сервисного пакета в магазин)[align=left;position=above]}
-      <tabs>
-      <tablist>
-      <tab>Linux (bash)</tab>
-      <tab>Windows (cmd)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux (bash))}
+            
       ```console
       curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product \
       -H 'x-service-token: <SERVICE_TOKEN>' \
       -F "upload=@/home/VKservice.zip"
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (cmd))}
+      
       ```console
       curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product ^
       -H "x-service-token: <SERVICE_TOKEN>" ^
       -F "upload=@/home/VKservice.zip"
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
       {/caption}
 
       HTTP-коды ответа:
@@ -129,8 +126,9 @@ Image-based брокер
 
       Конфигурационные файлы, описывающие тарифные планы и опции сервиса, передаются image-based брокеру, манифесты Terraform — системе развертывания.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
    Сервисный пакет, загружаемый в магазин, сначала попадает в тестовое пространство имен, после публикации — в открытое.
 
@@ -198,56 +196,54 @@ Image-based брокер
 1. Перейдите в раздел **Магазин приложений**.
 1. Откройте консоль и получите JWT-токен авторизации в магазине:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)</tab>
-   <tab>Windows (cmd)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux (bash))}
+      
    ```console
    curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid \
    --cookie 'sid=<SID>'
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (cmd))}
+   
    ```console
    curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid ^
    --cookie "sid=<SID>"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Здесь `<SID>` — значение файла cookie `sid` в веб-браузере.
 
    В ответе на команду отобразится JWT-токен.
 1. Получите лог инстанса сервиса:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)</tab>
-   <tab>Windows (cmd)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux (bash))}
+      
    ```console
    curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
    -H 'Authorization: Bearer <JWT_TOKEN>'
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (cmd))}
+   
    ```console
    curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> ^
    -H "Authorization: Bearer <JWT_TOKEN>"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
    Здесь:
 

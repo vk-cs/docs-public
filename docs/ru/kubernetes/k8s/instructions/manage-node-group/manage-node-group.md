@@ -6,12 +6,9 @@
 
 ## Добавить группу worker-узлов
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
@@ -20,8 +17,9 @@
 1. Задайте [настройки](../helpers/node-group-settings) для группы узлов.
 1. Нажмите кнопку **Добавить группу узлов**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Определите, какие типы виртуальных машин будет использоваться для группы worker-узлов кластера:
 
@@ -79,8 +77,9 @@
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настроить параметры масштабирования
 
@@ -100,12 +99,9 @@
 
 Метки и ограничения можно задать как с помощью интерфейсов, поддерживаемых платформой VK Cloud (личный кабинет и Terraform), так и с помощью `kubectl`. При назначении меток и ограничений учитывайте, что метки и ограничения, заданные с помощью интерфейсов платформы, периодически синхронизируются с кластером Kubernetes (только в одном направлении). При синхронизации метки, заданные с помощью платформы, перезапишут метки и ограничения, которые были заданы с помощью `kubectl`, если их ключи совпадают. Другие метки и ограничения, которые были заданы с помощью `kubectl` и не были перезаписаны значениями от платформы, действуют в кластере, но не отображаются, например, в личном кабинете или состоянии (state) Terraform.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
@@ -123,8 +119,9 @@
      - Изменить существующее ограничение.
      - Удалить существующее ограничение.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform :
 
@@ -195,8 +192,9 @@
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Подробнее в разделе [Метки и ограничения](../../reference/labels-and-taints).
 
@@ -204,12 +202,9 @@
 
 Для повышения скорости сервис Cloud Containers обновляет сразу несколько worker-узлов в группе. Чтобы максимально сохранить доступность ваших приложений и сервисов во время обновления, укажите максимальный процент недоступных узлов для группы узлов перед [обновлением кластера](../update).
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
@@ -219,8 +214,9 @@
 1. В появившемся окне задайте нужный процент.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Добавьте или измените в файле конфигурации Terraform для нужного ресурса [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) параметр `max_node_unavailable`:
 
@@ -258,8 +254,9 @@
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Подробнее об устройстве процедуры обновления в разделе [Обновление версии кластера](../../concepts/update).
 
@@ -269,12 +266,9 @@
 
 Единственную группу узлов кластера невозможно удалить с помощью личного кабинета. Однако это можно сделать с помощью Terraform.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
@@ -283,8 +277,9 @@
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной группы узлов и выберите пункт **Удалить**.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Удалите нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) из файла конфигурации Terraform.
 
@@ -306,5 +301,6 @@
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

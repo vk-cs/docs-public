@@ -229,12 +229,9 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
   - [Добавьте](/ru/networks/vnet/instructions/ip/floating-ip#add) Floating IP-адрес в SDN Sprut и подключите к нему ВМ.
   - [Пересоздайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ в SDN Sprut и подключите ее к внешней сети `internet`.
 
-<tabs>
-<tablist>
-<tab>Миграция нескольких ВМ</tab>
-<tab>Миграция одной ВМ</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Миграция нескольких ВМ)}
 
 1. Подключитесь к ВМ администратора по SSH и перейдите в директорию `neutron-2-sprut`.
 1. Создайте файл формата CSV со списком ВМ, которые нужно перенести.
@@ -290,28 +287,28 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 1. Для каждой ВМ откройте консоль или подключитесь по SSH и выполните опрос DHCP-сервера для получения IP-адреса на добавленный сетевой интерфейс:
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    <tab>Windows</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Linux)}
+        
     ```console
     dhclient
     ```
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Windows)}
+    
     ```console
     ipconfig /release
     ipconfig /renew
     ```
-    </tabpanel>
-    </tabs>
+    {/tab}
 
-</tabpanel>
-<tabpanel>
+    {/tabs}
+
+{/tab}
+
+{tab(Миграция одной ВМ)}
 
 1. Соберите необходимую информацию:
 
@@ -345,28 +342,28 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 1. Введите имя подсети в SDN Sprut, к которой нужно подключить ВМ.
 1. После выполнения скрипта откройте консоль ВМ, которая была перенесена, или подключитесь по SSH и выполните опрос DHCP-сервера для получения IP-адреса на добавленные сетевые интерфейсы:
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    <tab>Windows</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Linux)}
+        
     ```console
     dhclient
     ```
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Windows)}
+    
     ```console
     ipconfig /release
     ipconfig /renew
     ```
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 10. Проверьте созданную конфигурацию
 

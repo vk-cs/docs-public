@@ -76,11 +76,9 @@ There are preconfigured storage classes that use Cinder CSI for block storage.
 The classes provide different types of storage in [multiple regions](../../../../tools-for-using-services/account/concepts/regions) and availability zones.
 Each storage class has a distinct reclaim policy confugured for it.
 
-<tabs>
-<tablist>
-<tab>Moscow region</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Moscow region)}
 
 | Storage class<br>name           | Cinder CSI<br>storage type  | Availability<br>zone | Reclaim<br>Policy |
 | ------------------------------- | --------------------------- | ------------------- | ----------------- |
@@ -97,8 +95,9 @@ Each storage class has a distinct reclaim policy confugured for it.
 | csi-high-iops-me1               | `high-iops`                 | ME1                 | Delete            |
 | csi-high-iops-me1-retain        | `high-iops`                 | ME1                 | Retain            |
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 All storage classes listed:
 

@@ -45,13 +45,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 ## 4. Подключитесь к ВМ
 
-<tabs>
-<tablist>
-<tab>Linux/macOS</tab>
-<tab>Windows 10/11</tab>
-<tab>Windows 7/8</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux/macOS)}
 
 1. (Опционально) Настройте права доступа к файлу ключа:
 
@@ -89,8 +85,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
       {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 10/11)}
 
 1. (Опционально) Настройте права доступа к файлу приватного ключа:
 
@@ -131,8 +128,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
       {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 7/8)}
 
 В Windows 7/8 для подключения по SSH используйте приложение PuTTY.
 
@@ -168,8 +166,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
       {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 

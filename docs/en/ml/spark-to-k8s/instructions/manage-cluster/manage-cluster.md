@@ -1,10 +1,8 @@
 ## Starting a cluster
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
 1. Select the project where the desired cluster is located.
@@ -14,16 +12,15 @@
    - Click ![ ](/en/assets/more-icon.svg "inline") for the desired cluster and select **Launch**.
 1. Confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Stopping a cluster
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
 1. Select the project where the desired cluster is located.
@@ -33,24 +30,24 @@
    - Click ![ ](/en/assets/more-icon.svg "inline") for the desired cluster and select **Stop**.
 1. Confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Retrieving cluster information
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
 1. Select the project where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Click the name of the desired cluster.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Changing the virtual machine type for master nodes
 
@@ -66,11 +63,9 @@ To connect to the cluster, use access tokens in the VK Cloud management console 
 
 ## Deleting a Cluster
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
 1. Select the project where the desired cluster is located.
@@ -80,5 +75,6 @@ To connect to the cluster, use access tokens in the VK Cloud management console 
    - Click ![ ](/en/assets/more-icon.svg "inline") for the desired cluster and select **Delete**.
 1. Confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

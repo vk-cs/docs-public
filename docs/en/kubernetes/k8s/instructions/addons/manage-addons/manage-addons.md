@@ -4,12 +4,9 @@
 
 ### {heading(Add-ons available for installation)[id=addons_available_for_installation]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
@@ -22,8 +19,9 @@
 
 1. Click to the icon ![Information](./assets/info_icon.svg "inline") on the add-on card to view detailed information about it.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) block.
@@ -41,17 +39,15 @@
 
 1. See the available information in the output of the command.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### {heading(Installed add-ons)[id=installed_addons]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
@@ -64,8 +60,9 @@
    - add-on status information: `Installing`, `Installed`, `Error`, `Deleting`.
    - Additional information about the add-on.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) block.
@@ -83,8 +80,9 @@
 
 1. See the available information in the output of the command.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
@@ -100,11 +98,9 @@ The procedure for installing add-ons is discussed in the [relevant section](../a
 
 ## {heading(Editing add-on code)[id=editing_addon_code]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
@@ -116,16 +112,15 @@ The procedure for installing add-ons is discussed in the [relevant section](../a
 1. Click the **Change settings** button.
 1. In the window that opens, confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 If the edit failed with an error:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In the general list of [installed add-ons](#installed_addons), click the **Retry edit** button.
 1. Select one of the troubleshooting options:
@@ -137,8 +132,9 @@ If the edit failed with an error:
 1. Click the **Change settings** button.
 1. In the window that opens, confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Updating add-on version)[id=updating_addon_version]}
 
@@ -150,11 +146,9 @@ To update some add-ons, you will first need to uninstall the previous version.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
@@ -167,16 +161,15 @@ To update some add-ons, you will first need to uninstall the previous version.
 1. Make the necessary changes to the add-on settings.
 1. Click the **Update** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 If the update failed with an error:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In the general list of [installed add-ons](#installed_addons), click the **Retry update** button.
 1. Select one of the troubleshooting options:
@@ -187,17 +180,15 @@ If the update failed with an error:
 1. In the window that opens, make the necessary changes to the add-on settings.
 1. Click the **Update** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Removing add-on)[id=removing_addon]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can delete several add-ons at once by selecting them using the checkboxes.
 
@@ -215,8 +206,9 @@ To remove the add-on:
 
 1. Confirm the deletion.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 1. In the Terraform configuration file, delete or comment out the block with the add-ons to be deleted.
@@ -232,5 +224,6 @@ To remove the add-on:
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

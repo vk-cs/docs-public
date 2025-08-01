@@ -21,28 +21,27 @@ VK Cloud supports two types of services:
 
 Each type of service is initialized in VK Cloud differently:
 
-<tabs>
-<tablist>
-<tab>SaaS</tab>
-<tab>Image-based</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(SaaS)}
 
 1. The user [connects](../../instructions/pr-instance-add) the service to the project.
 1. VK Cloud sends a request to the supplier to create a tenant account in his product.
 1. The supplier registers a new account, sends the VK Cloud details.
 1. VK Cloud creates a service instance for [management](../../instructions/pr-instance-manage) and sends the access details to the user.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Image-based)}
 
 1. The user [connects](../../instructions/pr-instance-add) the service to the project.
 1. VK Cloud creates the necessary infrastructure in the user's project.
 1. VK Cloud installs the service on the created infrastructure.
 1. VK Cloud creates a service instance for [management](../../instructions/pr-instance-manage) and sends the access details to the user.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Key differences for SaaS and image-based services:
 

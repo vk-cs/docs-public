@@ -8,11 +8,9 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 ### {heading(Start cluster)[id=start]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can start several stopped clusters at once by selecting them with checkboxes.
 
@@ -25,16 +23,15 @@ To start a cluster:
 1. Click the **Launch** button.
 1. Confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### {heading(Stop cluster)[id=stop]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can stop several started clusters at once by selecting them with checkboxes.
 
@@ -47,19 +44,17 @@ To stop a cluster:
 1. Click the **Stop** button.
 1. Confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Get cluster information
 
 Different information is available for running and stopped clusters. Terraform allows you to get only part of the information about the cluster.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -68,8 +63,9 @@ Different information is available for running and stopped clusters. Terraform a
 
    General information about the cluster and the event log are available on the corresponding tab at the beginning of the page. Information about connecting to and managing the cluster is available on the corresponding tab at the end of the page.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Run the command:
 
@@ -79,8 +75,9 @@ Different information is available for running and stopped clusters. Terraform a
 
 1. Examine the available information in the output of the command.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Get props for connecting to the cluster
 
@@ -105,11 +102,9 @@ After performing this operation, the existing public keys on the cluster will be
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -120,8 +115,9 @@ After performing this operation, the existing public keys on the cluster will be
    - Create a new key pair using the service;
    - Select another existing key pair.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Change virtual machine type for master nodes
 
@@ -131,11 +127,9 @@ The operation can be performed only when the cluster is running.
 
 ## Delete cluster
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can delete multiple clusters at once by selecting them using the checkboxes.
 
@@ -151,5 +145,6 @@ To delete a cluster:
    1. Select the option if you want to delete the cluster along with its disks.
    1. Click the **Delete cluster** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

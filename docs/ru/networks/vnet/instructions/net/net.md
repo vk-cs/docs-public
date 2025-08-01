@@ -8,12 +8,9 @@
 
 ## Просмотр списка сетей и подсетей, а также информации о них
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. В личном кабинете перейдите в раздел **Виртуальные сети** → **Сети**.
 
@@ -27,8 +24,9 @@
 
    Откроется страница с подробной информацией о ней.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -65,17 +63,15 @@
    openstack subnet show <идентификатор подсети>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Создание сети
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -97,8 +93,9 @@
 
 После создания сети она появится в общем списке сетей.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -111,17 +108,15 @@
    openstack network create <название сети>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Редактирование сети
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. В личном кабинете перейдите в раздел **Виртуальные сети** → **Сети**.
 2. Нажмите на имя облачной сети.
@@ -129,8 +124,9 @@
 4. Внесите нужные изменения.
 5. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -149,33 +145,33 @@
 
 1. Чтобы применить нужные настройки к сети, выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack network set <идентификатор сети> \
      --name <новое имя сети> \
      --dns-domain <новый DNS-домен>
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack network set <идентификатор сети> `
      --name <новое имя сети> `
      --dns-domain <новый DNS-домен>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление сети
 
@@ -185,17 +181,15 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_delete_net.md)}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -210,17 +204,15 @@
    openstack network delete <идентификатор сети>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Создание подсети
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. В личном кабинете перейдите в раздел **Виртуальные сети** → **Сети**.
 2. Нажмите на имя облачной сети.
@@ -233,8 +225,9 @@
 9. (опционально) Включите **Показать поле статических маршрутов**, чтобы указать статические маршруты.
 10. Нажмите кнопку **Создать подсеть**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -253,13 +246,10 @@
 
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack subnet create <название> \
      --subnet-range <адрес подсети> \
@@ -268,9 +258,10 @@
      --gateway <адрес шлюза>
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack subnet create <название> `
      --subnet-range <адрес подсети> `
@@ -279,20 +270,19 @@
      --gateway <адрес шлюза>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Редактирование подсети
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. В личном кабинете перейдите в раздел **Виртуальные сети** → **Сети**.
 2. Нажмите на имя облачной сети, в которой находится подсеть.
@@ -300,8 +290,9 @@
 5. Внесите нужные изменения.
 6. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -326,13 +317,10 @@
 
    1. Выполните команду:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack subnet <set или unset> <идентификатор подсети> \
         --allocation-pool start=<начальный IP-адрес для DHCP>,end=<конечный IP-адрес для DHCP> \
@@ -340,9 +328,10 @@
         --host-route destination=<адрес сети назначения статического маршрута>,gateway=<адрес шлюза статического маршрута>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack subnet <set или unset> <идентификатор подсети> `
         --allocation-pool start=<начальный IP-адрес для DHCP>,end=<конечный IP-адрес для DHCP> `
@@ -350,11 +339,13 @@
         --host-route destination=<адрес сети назначения статического маршрута>,gateway=<адрес шлюза статического маршрута>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
 
-</tabpanel>
-</tabs>
+      {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Удаление подсети
 
@@ -365,20 +356,18 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. В личном кабинете перейдите в раздел **Виртуальные сети** → **Сети**.
 2. Нажмите на имя облачной сети, в которой находится подсеть.
 3. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для подсети, которую требуется удалить, и выберите пункт **Удалить подсеть**.
 5. В открывшемся окне нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -393,5 +382,6 @@
    openstack subnet delete <идентификатор подсети>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -70,13 +70,9 @@ resource "vkcs_networking_router_interface" "k8s" {
 
 Выберите один из примеров создания кластера и создайте файл конфигурации Terraform `main.tf` с нужным содержимым:
 
-<tabs>
-<tablist>
-<tab>Без дополнительных настроек</tab>
-<tab>С переопределением подсети пода</tab>
-<tab>С установкой Docker Registry</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Без дополнительных настроек)}
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -141,8 +137,9 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(С переопределением подсети пода)}
 
 За переопределение сети пода отвечает настройка `labels = { calico_ipv4pool }` ресурса `vkcs_kubernetes_cluster`.
 
@@ -215,8 +212,9 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(С установкой Docker Registry)}
 
 За установку [сервиса](/ru/kubernetes/k8s/concepts/addons-and-settings/addons) отвечает настройка `labels = { docker_registry_enabled }` ресурса `vkcs_kubernetes_cluster`.
 
@@ -289,8 +287,9 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Создайте необходимые ресурсы с помощью Terraform
 

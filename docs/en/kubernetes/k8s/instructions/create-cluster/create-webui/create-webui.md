@@ -29,15 +29,10 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    The cluster configuration affects the default settings, which you will be able to change in the following steps. The following configurations are available:
 
-   <tabs>
-   <tablist>
-   <tab>Dev environment</tab>
-   <tab>Staging environment</tab>
-   <tab>Production</tab>
-   <tab>Other</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Dev environment)}
+      
    A configuration of one master node and one worker node:
 
    - Minimum number of master nodes: one;
@@ -45,8 +40,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    This cluster is suitable for use in application development.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+   
+   {tab(Staging environment)}
 
    A configuration of one master node and one worker node:
 
@@ -55,9 +51,10 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    This cluster is suitable for use when testing or piloting applications.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Production)}
+ 
    A configuration of multiple master nodes and one worker node:
 
    - Minimum number of master nodes: three;
@@ -65,9 +62,10 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    Such a cluster is suitable for any task, including the routine operation of applications in a production environment.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Other)}
+   
    Configuration of your choice:
 
    - minimum number of master nodes: one;
@@ -75,8 +73,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    Select this option to manually configure all settings for the cluster you are creating.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
    For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster_topologies).
 

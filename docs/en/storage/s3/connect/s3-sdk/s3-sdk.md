@@ -14,28 +14,27 @@ To connect to the object storage using the SDK:
 
 1. Create [account](../../instructions/account-management) and [bucket](../../instructions/buckets/create-bucket) if this has not been done before. Save the connection details:
 
-   <tabs>
-   <tablist>
-   <tab>Moscow region</tab>
-   <tab>Kazakhstan region</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Moscow region)}
 
    - Endpoint URL: `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru`.
    - Access Key ID: the key ID received when creating the account.
    - Secret Key: the secret key received when creating the account.
    - Default region name: `ru-msk`.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Kazakhstan region)}
 
    - Endpoint url: `https://hb.kz-ast.vkcloud-storage.ru`.
    - Access Key ID: the key ID received when creating the account.
    - Secret Key: the secret key received when creating the account.
    - Default region name: `kz-ast`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Configure the connection parameters to the object storage using one of the following methods:
 
@@ -45,12 +44,9 @@ To connect to the object storage using the SDK:
 
    - Specify the details in the environment variables:
 
-     <tabs>
-     <tablist>
-     <tab>Linux (bash) / MacOS (zsh)</tab>
-     <tab>Windows (PowerShell)</tab>
-     </tablist>
-     <tabpanel>
+     {tabs}
+
+     {tab(Linux (bash) / MacOS (zsh))}
 
      ```console
      export AWS_ACCESS_KEY_ID=<account key ID>
@@ -58,8 +54,9 @@ To connect to the object storage using the SDK:
      export AWS_DEFAULT_REGION=<default region name>
      ```
 
-     </tabpanel>
-     <tabpanel>
+     {/tab}
+
+     {tab(Windows (PowerShell))}
 
      ```console
      $Env:AWS_ACCESS_KEY_ID="<account key ID>"
@@ -67,8 +64,9 @@ To connect to the object storage using the SDK:
      $Env:AWS_DEFAULT_REGION="<default region name>"
      ```
 
-     </tabpanel>
-     </tabs>
+     {/tab}
+
+     {/tabs}
 
      {note:warn}
 

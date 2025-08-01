@@ -9,34 +9,30 @@ As an example, an application will be used to calculate an approximate value of 
 
 1. Prepare the environment for working with Python in any convenient way:
 
-   <tabs>
-   <tablist>
-   <tab>Using VK Cloud</tab>
-   <tab>By yourself</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Using VK Cloud)}
 
    [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(By yourself)}
 
    1. Install Python 3.x and pip.
    1. If necessary, set up a virtual environment for Python.
 
    For example, you can use [conda](https://conda.io/projects/conda/en/latest/index.html) or perform the installation and configuration manually.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Install the Cloud ML Platform library for Python:
 
-   <tabs>
-   <tablist>
-   <tab>JupyterHub</tab>
-   <tab>pip</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(JupyterHub)}
 
    1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
@@ -45,8 +41,9 @@ As an example, an application will be used to calculate an approximate value of 
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(pip)}
 
    Execute the command:
 
@@ -54,8 +51,9 @@ As an example, an application will be used to calculate an approximate value of 
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The up-to-date version of the library is always available at the link provided.
 

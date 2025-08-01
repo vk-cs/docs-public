@@ -13,20 +13,17 @@
 
    {cut(Подробнее о конфигурациях для тарифных планов)}
 
-   <tabs>
-   <tablist>
-   <tab>Single</tab>
-   <tab>Cluster Mini</tab>
-   <tab>Cluster Maxi</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Single)}
 
    Один сервер, отвечающий за прием, хранение и обработку метрик. Сервис разворачивается на одной ВМ, поддерживает вертикальное масштабирование (увеличение CPU и RAM).
 
    ![](./assets/single_scheme.png)
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Mini)}
 
    Кластер из нескольких узлов с [компонентами](https://docs.victoriametrics.com/Cluster-VictoriaMetrics.html#architecture-overview):
 
@@ -40,8 +37,9 @@
 
    ![](./assets/cluster_mini_scheme.png)
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Maxi)}
 
    Кластер из нескольких узлов с [компонентами](https://docs.victoriametrics.com/Cluster-VictoriaMetrics.html#architecture-overview):
 
@@ -55,18 +53,15 @@
 
    ![](./assets/cluster_maxi_scheme.png)
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    {/cut}
 
-   <tabs>
-   <tablist>
-   <tab>Single</tab>
-   <tab>Cluster Mini</tab>
-   <tab>Cluster Maxi</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Single)}
 
    1. На шаге **Настройки VictoriaMetrics**:
 
@@ -88,8 +83,9 @@
    1. Нажмите кнопку **Следующий шаг**.
    1. На шаге **Подтверждение** ознакомьтесь с рассчитанной стоимостью сервиса и нажмите кнопку **Подключить тариф**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Mini)}
 
    1. На шаге **Настройки VictoriaMetrics**:
 
@@ -113,8 +109,9 @@
    1. Нажмите кнопку **Следующий шаг**.
    1. На шаге **Подтверждение** ознакомьтесь с рассчитанной стоимостью сервиса и нажмите кнопку **Подключить тариф**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Cluster Maxi)}
 
    1. На шаге **Настройки Кластера**:
 
@@ -142,8 +139,9 @@
 
    1. На шаге **Подтверждение** ознакомьтесь с рассчитанной стоимостью сервиса и нажмите кнопку **Подключить тариф**.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    После завершения установки на почту придет одноразовая ссылка с доступами.
 

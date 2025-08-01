@@ -17,16 +17,9 @@
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux (curl)</tab>
-   <tab>Linux (apt)</tab>
-   <tab>Linux (yum)</tab>
-   <tab>macOS (curl)</tab>
-   <tab>macOS (Homebrew)</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (curl))}
 
    1. Загрузите нужную версию `kubectl`.
 
@@ -54,8 +47,9 @@
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (apt))}
 
    1. Подключите репозиторий Kubernetes:
 
@@ -87,8 +81,9 @@
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (yum))}
 
    1. Подключите репозиторий Kubernetes:
 
@@ -124,8 +119,9 @@
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(macOS (curl))}
 
    1. Загрузите нужную версию `kubectl`.
 
@@ -153,8 +149,9 @@
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(macOS (Homebrew))}
 
    1. Выполните одну из команд установки:
 
@@ -174,8 +171,9 @@
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    1. Загрузите нужную версию `kubectl`.
 
@@ -205,8 +203,9 @@
       kubectl version --short
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Подготовьте все необходимое для подключения с использованием [Single Sign-On (SSO)](../../concepts/access-management).
 
@@ -223,12 +222,9 @@
 
 ## Проверка подключения к кластеру
 
-<tabs>
-<tablist>
-<tab>Версия Kubernetes 1.23 и выше</tab>
-<tab>Версия Kubernetes 1.22 и ниже</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Версия Kubernetes 1.23 и выше)}
 
 На хосте:
 
@@ -242,8 +238,9 @@
 
    Это необходимо для [аутентификации](../../concepts/access-management) при подключении к кластеру.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Версия Kubernetes 1.22 и ниже)}
 
 Выполните команду на хосте:
 
@@ -251,8 +248,9 @@
 kubectl cluster-info
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Если кластер работает нормально и `kubectl` настроен на работу с ним, будет выведена похожая информация:
 

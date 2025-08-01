@@ -15,13 +15,9 @@
 
 1. Specify the password for accessing the cluster in one of the following ways:
 
-   <tabs>
-   <tablist>
-   <tab>kubeconfig</tab>
-   <tab>Temporary environment variable</tab>
-   <tab>Permanent environment variable</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(kubeconfig)}
 
    This method allows you to specify a password for connecting to a specific cluster.
 
@@ -36,19 +32,17 @@
        ```
     1. Specify your password for authorization in your VK Cloud management console.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Temporary environment variable)}
 
    This method allows you to specify a password in a terminal session. The password can be used for several clusters, but only for the duration of the session.
 
    Open a terminal session and specify the password in the console:
 
-      <tabs>
-      <tablist>
-      <tab>Windows</tab>
-      <tab>Linux</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Windows)}
 
       ```console
       $env:OS_PASSWORD = "<PASSWORD>"
@@ -56,8 +50,9 @@
 
       Here `<PASSWORD>` is your password for authorization in your VK Cloud management console.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Linux)}
 
       ```console
       export OS_PASSWORD=<PASSWORD>
@@ -65,21 +60,19 @@
 
       Here `<PASSWORD>` is your password for authorization in your VK Cloud management console.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
 
-   </tabpanel>
-   <tabpanel>
+      {/tabs}
+
+   {/tab}
+
+   {tab(Permanent environment variable)}
 
    This method allows you to specify the password in constant user variables. The password can be used to connect to multiple clusters, regardless of the terminal session.
 
-      <tabs>
-      <tablist>
-      <tab>Windows</tab>
-      <tab>Linux</tab>
-      <tab>MacOS</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Windows)}
 
       1. On the host from which you plan to connect to the cluster, open **Start** → **Settings**.
       1. Select **Edit current user environment variables** in the search bar.
@@ -88,8 +81,9 @@
          - **Name**: `OS_PASSWORD`.
          - **Value**: your password for authorization in your VK Cloud management console.
          
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Linux)}
 
       1. Open the `~/.bashrc` file.
       1. Add the following line to the file:
@@ -102,8 +96,9 @@
 
       1. Save the changes.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(MacOS)}
 
       1. Open the `.bashrc` or `.zshrc` file.
       1. Add the following line to the file:
@@ -114,10 +109,13 @@
 
          Here `<PASSWORD>` is your password for authorization in your VK Cloud management console.
       
-      </tabpanel>
-      </tabs>
-   </tabpanel>
-   </tabs>
+      {/tab}
+
+      {/tabs}
+
+   {/tab}
+   
+   {/tabs}
 
 1. Launch Lens and go to the **Catalog** section.
 

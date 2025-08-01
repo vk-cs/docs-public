@@ -4,14 +4,9 @@ You can change the parameters and status of a virtual machine on the VK Cloud pl
 
 To manage a VM using the OpenStack CLI, you need a vm ID.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -19,9 +14,9 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 4. On the VM page, go to the **General information** tab.
 5. Find the row **ID of the virtual machine** in the table.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -39,19 +34,15 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
       openstack server list
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Starting, stopping, reboot the VM)[id=start_stop_restart_vm]}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -75,9 +66,9 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
         3. To the right above the table with VM parameters, click on the icon of the required action.
         4. Confirm the action.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -101,8 +92,9 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
       openstack server reboot <virtual machine ID>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Forced VM reboot
 
@@ -114,14 +106,9 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -139,9 +126,9 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
         3. Above the table with VM parameters, click **More**.
         4. Click **Force reboot** and confirm the action.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -151,8 +138,9 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
    openstack server reboot --hard <virtual machine ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## VM block and unblock
 
@@ -160,13 +148,9 @@ Block the VM if you need to prohibit changing its state and parameters.
 
 A blocked virtual machine cannot be started or stopped, nor can it be restarted. It is not possible to replace disks and change the network interface settings of a blocked VM.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -184,8 +168,9 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
         3. Above the table with VM parameters, click **More**.
         4. Select and confirm the action.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Deleting a VM)[id=delete_vm]}
 
@@ -221,15 +206,10 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
 2. After saving the necessary data, delete the VM.
 
-   <tabs>
+   {tabs}
 
-   <tablist>
-   <tab>Management console</tab>
-   <tab>OpenStack CLI</tab>
-   </tablist>
-
-   <tabpanel>
-
+   {tab(Management console)}
+   
    1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
    2. Go to **Cloud Servers → Virtual machines**.
    3. Delete the VM in one of the ways.
@@ -252,10 +232,10 @@ The deletion operation is irreversible! Save the necessary data before deleting 
          3. To the right above the table with VM parameters, click on the trash icon.
          4. Confirm the action.
 
-   </tabpanel>
+   {/tab}
 
-   <tabpanel>
-
+   {tab(OpenStack CLI)}
+   
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
    2. Delete the VM:
 
@@ -263,8 +243,9 @@ The deletion operation is irreversible! Save the necessary data before deleting 
       openstack server delete <virtual machine ID>
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 ## Renaming and changing the VM type
 
@@ -276,14 +257,9 @@ If the VM type changes, the VM will be rebooted.
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -303,9 +279,9 @@ If the VM type changes, the VM will be rebooted.
       4. Select an action.
       5. Fill in the input field and click **Save**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -331,21 +307,17 @@ If the VM type changes, the VM will be rebooted.
          openstack server resize --flavor <flavor ID> <virtual machine ID>
          ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Assigning tags
 
 Tags allow you to filter the list of virtual machines and find the right VM faster. Use existing tags or create your own tag and choose a color for it.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -353,9 +325,9 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 4. Check the tags or click **Create a new tag**.
 5. To add a new tag, enter its name, select a color, and click **Add tag**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -385,8 +357,9 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
       nova server-tag-delete-all <virtual machine ID>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Setting and changing a password)[id=password]}
 
@@ -405,41 +378,31 @@ In virtual machines created from the VK Cloud image, the QEMU guest agent is ava
 
 Command to check the status of the QEMU guest agent:
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Windows</tab>
-<tab>Linux</tab>
-</tablist>
-
-<tabpanel>
+{tab(Windows)}
 
 ```console
 sc query qemu-ga
 ```
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(Linux)}
 
 ```console
 systemctl status qemu-guest-agent
 ```
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 To set the password:
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -460,9 +423,9 @@ To set the password:
         4. Enter a new password or click **Generate**.
         5. Click **Set password**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -472,9 +435,9 @@ To set the password:
    openstack server set --root-password <virtual machine ID>
    ```
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 {note:info}
 
@@ -492,13 +455,9 @@ If the password was changed after the VM was created or the VM was created on th
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Management console</tab>
-</tablist>
-
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
@@ -520,9 +479,9 @@ If the password was changed after the VM was created or the VM was created on th
 5. Click **Decrypt password**.
 6. A field will appear in the window **Password**. Copy the password by clicking the icon in the field.
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 ## Restoring VM access by key
 
@@ -578,13 +537,9 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
 
 The event log contains information about changes in the VM state and user actions.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -616,19 +571,15 @@ Examples of events:
 - `create` — creating a VM;
 - `live-migration` — VM migration.
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 ## {heading(Connecting disk to VM)[id=mount_disk]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to the **Cloud Servers → Virtual machines** section.
@@ -636,30 +587,30 @@ Examples of events:
 1. Go to the **Disks** tab.
 1. Connect the disk to the VM:
 
-    <tabs>
-    <tablist>
-    <tab>Existing disk</tab>
-    <tab>New disk</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Existing disk)}
+        
     1. Click the **Connect disk** button.
     1. In the window that opens, select the disk you want to connect to the VM and click the **Connect disk** button.
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(New disk)}
+    
     1. Click the **Create disk** button.
 
     {include(/en/_includes/_disk_params.md)[tags=vm]}
 
     1. Click the **Create disk** button.
 
-    </tabpanel>
-    </tabs>
-</tabpanel>
+    {/tab}
 
-<tabpanel>
+    {/tabs}
+
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
@@ -667,8 +618,9 @@ Examples of events:
 
 1. [Connect the disk](/en/computing/iaas/instructions/volumes#mount_disk) to the VM.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 

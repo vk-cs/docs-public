@@ -6,11 +6,9 @@ An advanced router allows you to establish connection between autonomous network
 You can only add one BGP router per advanced router.
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -23,16 +21,15 @@ You can only add one BGP router per advanced router.
 1. (Optional) Add a description for the BGP router.
 1. Click the **Create** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing a BGP router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -52,16 +49,15 @@ You can only add one BGP router per advanced router.
     - Disable the BGP router if you do not need to establish communication at the moment. The BGP router will become inactive.
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a BGP router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -72,18 +68,17 @@ You can only add one BGP router per advanced router.
     - Set the checkbox for the required router, then click the **Delete** button above the table.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding a BGP neighbor
 
 To connect autonomous networks using the BGP protocol, you need to specify the BGP routers which will connect to each other.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -98,8 +93,9 @@ To connect autonomous networks using the BGP protocol, you need to specify the B
 1. (Optional) Add a description for the BGP neighbor.
 1. Click the **Add** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 After you add the BGP neighbor, the router will try to establish a connection with it. When this is done, you will see:
 
@@ -108,11 +104,9 @@ After you add the BGP neighbor, the router will try to establish a connection wi
 
 ## Editing a BGP neighbor
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -140,16 +134,15 @@ After you add the BGP neighbor, the router will try to establish a connection wi
     - Disable the BGP neighbor if the connection is not currently required. The BGP router will not send requests to the remote router.
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a BGP neighbor
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several neighbors at once by setting the checkboxes.
 
@@ -165,8 +158,9 @@ This is a group operation: you can delete several neighbors at once by setting t
     - Click the name of the BGP neighbor, then click the **Delete** button above the table.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## View a BGP announcement
 
@@ -174,11 +168,9 @@ After setting up a BGP neighbor, an advanced router will begin transmitting to t
 
 To view BGP announcements:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -188,16 +180,15 @@ To view BGP announcements:
 
 The tab displays a list of all BGP announcements. Active announcements are marked with green marks.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding a BGP announcement
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -206,13 +197,10 @@ The tab displays a list of all BGP announcements. Active announcements are marke
 1. Click the **Add a BGP announcement** button.
 1. Select the type of announcement:
 
-   <tabs>
-   <tablist>
-   <tab>Static</tab>
-   <tab>Connected</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Static)}
+      
    The announcement conveys information about a manually specified static route.
 
     1. Specify the request parameters:
@@ -223,29 +211,30 @@ The tab displays a list of all BGP announcements. Active announcements are marke
        - (Optional) Add a description for the BGP announcement.
     1. Click the **Add** button.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Connected)}
+   
    The announcement conveys information about a subnet connected to the advanced router interface.
 
    1. Select a subnet connected to the router in the **Connected subnet** field.
    1. Click the **Connect** button.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing a BGP announcement
 
 You can only edit the **Static** announcements.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -263,16 +252,15 @@ You can only edit the **Static** announcements.
 
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a BGP announcement
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several announcements at once by selecting them using the checkboxes.
 
@@ -288,5 +276,6 @@ This is a group operation: you can delete several announcements at once by selec
     - (For **Static** only) Click the BGP announcement name, then click the **Delete** button above the table.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

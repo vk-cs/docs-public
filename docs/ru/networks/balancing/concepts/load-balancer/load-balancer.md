@@ -39,20 +39,18 @@
 
 Разные типы балансировщиков тарифицируются по разному.
 
-<tabs>
-<tablist>
-<tab>Стандартный балансировщик</tab>
-<tab>Сервисный балансировщик</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Стандартный балансировщик)}
 
 Такой балансировщик создается пользователем и может использоваться для обеспечения отказоустойчивости и гибкого масштабирования приложений:
 
 - При работе с [сервисом Cloud Servers](/ru/computing/iaas) для распределения входящего трафика между виртуальными серверами.
 - При работе с [сервисом Cloud Containers](/ru/kubernetes/k8s), например при использовании [Ingress-контроллеров](/ru/kubernetes/k8s/how-to-guides/ingress) (в том числе [предустановленного](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_914e5637)) или сервисов типа [Load Balancer](/ru/kubernetes/k8s/how-to-guides/load-balancer).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Сервисный балансировщик)}
 
 Такой балансировщик создается автоматически для обеспечения работы сервисов и применяется:
 
@@ -63,8 +61,9 @@
   - Postgres Pro Enterprise;
   - Postgres Pro Enterprise 1С.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Методы балансировки
 

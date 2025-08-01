@@ -26,12 +26,9 @@ The maximum length of the zone name is 253 characters. Consists of blocks of the
 
 ## Configuring the DNS name
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 There are several ways to configure the DNS name:
 
@@ -53,8 +50,9 @@ Via port settings:
 1. Enter the name in the field **DNS-name**.
 1. Click the button **Save Changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -70,8 +68,9 @@ Via port settings:
    openstack port set --dns-name <DNS name> <port ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 

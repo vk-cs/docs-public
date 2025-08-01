@@ -77,12 +77,9 @@ To demonstrate how Gatekeeper works, the following will be created:
 
 1. Test the restriction by trying to create several namespaces:
 
-   <tabs>
-   <tablist>
-   <tab>Namespace that satisfies the constraint</tab>
-   <tab>Namespace that does not satisfy the constraint</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Namespace that satisfies the constraint)}
 
    1. Create a manifest for the namespace:
 
@@ -96,6 +93,8 @@ To demonstrate how Gatekeeper works, the following will be created:
         labels:
           creator-name: john.doe
       ```
+
+      {/cut}
 
    1. Try to create a namespace based on the manifest:
 
@@ -118,8 +117,9 @@ To demonstrate how Gatekeeper works, the following will be created:
       allowed-namespace   Active   ...
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Namespace that does not satisfy the constraint)}
 
    1. Create a manifest for the namespace:
 
@@ -133,6 +133,8 @@ To demonstrate how Gatekeeper works, the following will be created:
         labels:
           my-label: sample
       ```
+
+      {/cut}
 
    1. Try to create a namespace based on the manifest:
 
@@ -158,19 +160,17 @@ To demonstrate how Gatekeeper works, the following will be created:
       Error from server (NotFound): namespaces "disallowed-namespace" not found
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Delete unused resources
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete ns allowed-namespace
@@ -179,8 +179,9 @@ To demonstrate how Gatekeeper works, the following will be created:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete ns allowed-namespace; `
@@ -188,8 +189,9 @@ To demonstrate how Gatekeeper works, the following will be created:
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

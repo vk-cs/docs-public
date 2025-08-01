@@ -34,13 +34,9 @@ When creating the net the following is used:
 
 Create a Terraform configuration file named `network.tf`. The content depends on the net type you need.
 
-<tabs>
-<tablist>
-<tab>Private net</tab>
-<tab>Net with Internet access</tab>
-<tab>Net with port allocated to floating IP</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Private net)}
 
 In the file, the following configuration is described:
 
@@ -51,8 +47,9 @@ In the file, the following configuration is described:
 
 {include(/en/_includes/_create_network_tf.md)[tags=net,router,shift=2]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Net with Internet access)}
 
 In the file, the following configuration is described:
 
@@ -63,8 +60,9 @@ In the file, the following configuration is described:
 
 {include(/en/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Net with port allocated to floating IP)}
 
 In the file, the following configuration is described:
 
@@ -77,8 +75,9 @@ In the file, the following configuration is described:
 
   {include(/en/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Here:
 

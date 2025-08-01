@@ -145,26 +145,25 @@ docker SUBCOMMAND --help
 
 1. Для управления контейнерами необходимо получить их идентификаторы. Для этого посмотрите список контейнеров:
 
-   <tabs>
-   <tablist>
-   <tab>Список всех контейнеров</tab>
-   <tab>Список запущенных контейнеров</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Список всех контейнеров)}
 
    ```console
    sudo docker ps -a
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Список запущенных контейнеров)}
 
    ```console
    sudo docker ps
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    {cut(Пример вывода docker ps -a)}
 
@@ -180,13 +179,9 @@ docker SUBCOMMAND --help
 
 1. Управляйте контейнером, используя его идентификатор:
 
-   <tabs>
-   <tablist>
-   <tab>Запустить контейнер</tab>
-   <tab>Остановить контейнер</tab>
-   <tab>Удалить контейнер</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+   
+   {tab(Запустить контейнер)}
 
    ```console
    sudo docker start <идентификатор контейнера>
@@ -198,8 +193,9 @@ docker SUBCOMMAND --help
    sudo docker start 8502eb90112b
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Остановить контейнер)}
 
    ```console
    sudo docker stop <идентификатор контейнера>
@@ -211,8 +207,9 @@ docker SUBCOMMAND --help
    sudo docker stop 8502eb90112b
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Удалить контейнер)}
 
    ```console
    sudo docker rm <идентификатор контейнера>
@@ -226,4 +223,6 @@ docker SUBCOMMAND --help
    sudo docker rm 8502eb90112b
    ```
 
-   </tabpanel>
+   {/tab}
+
+   {/tabs}

@@ -1,21 +1,17 @@
 ## Просмотр списка объектов
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный бакет.
 1. Перейдите в раздел **Объектное хранилище → Бакеты**.
 1. Нажмите на имя нужного бакета.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -54,8 +50,9 @@
 
 Полное описание операций просмотра объектов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -107,8 +104,9 @@
 
 Команда `ListObjectsV2` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -134,19 +132,15 @@
 
 Команда `list_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Скачивание объекта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный бакет.
@@ -157,8 +151,9 @@
    - Выберите с помощью флажка объект, затем нажмите кнопку **Скачать**.
    - Раскройте меню объекта и выберите пункт **Скачать файл**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -199,8 +194,9 @@
       ```
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -256,8 +252,9 @@
 
    Команда `GetObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -282,8 +279,9 @@
 
    Команда `get_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_objects).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Предоставление доступа к объекту
 
@@ -300,12 +298,9 @@
 
 Чтобы изменить уровень доступа к объекту:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно изменить настройки доступа сразу для нескольких объектов, выбрав их с помощью флажков.
 
@@ -318,8 +313,9 @@
 1. Скопируйте ссылку и закройте окно настройки доступа.
 1. Отправьте ссылку пользователям или разместите ее на стороннем ресурсе для прямого доступа к объекту.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -349,8 +345,9 @@
 
 Полное описание операции изменения ACL объекта доступно в [официальной документации AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-acl.html).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Предоставление доступа к объекту по подписанному URL
 
@@ -358,13 +355,9 @@
 
 Для генерации подписанного URL:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -398,8 +391,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -465,8 +459,9 @@
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -511,20 +506,17 @@
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Копирование объекта
 
 Инструкция подходит для копирования объекта в пределах одного бакета или между бакетами одного проекта.
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -559,8 +551,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -618,8 +611,9 @@
 
    Команда `CopyObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -653,16 +647,15 @@
 
    Команда `copy` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Копирование всех объектов бакета
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -699,19 +692,15 @@
 
    {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление объекта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько объектов, выбрав их с помощью флажков.
 
@@ -728,8 +717,9 @@
 
 1. Подтвердите удаление.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -762,8 +752,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -837,8 +828,9 @@
 
    Команды [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) и [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) подробно описаны в официальной документации к библиотеке aws-sdk-go.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -868,8 +860,9 @@
 
    Команда `delete_objects` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление частей загруженного объекта
 
@@ -877,12 +870,9 @@
 
 Вы можете настроить автоматическое удаление незавершенных загрузок через жизненный цикл объектов или удалить загрузку вручную.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Чтобы узнать, есть ли у вас незавершенные составные загрузки:
 
@@ -890,8 +880,9 @@
 1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
 1. Нажмите на имя нужного бакета и перейдите на вкладку **Multipart**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
@@ -943,17 +934,15 @@
 
    {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Чтобы удалить незавершенные загрузки:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько частей, выбрав их с помощью флажков.
 
@@ -966,8 +955,9 @@
    - Выберите часть, которую нужно удалить, и нажмите на значок ![Удалить](assets/delete-icon.svg "inline") справа.
 1. Подтвердите удаление.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
@@ -996,5 +986,7 @@
    ```
 
 В результате все незавершенные загрузки будут отменены, а загруженные части — удалены.
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}

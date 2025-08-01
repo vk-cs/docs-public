@@ -2,12 +2,9 @@ You can manage routers: view, edit and delete them.
 
 ## Viewing a list of routers and information about them
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -19,8 +16,9 @@ You can manage routers: view, edit and delete them.
 
    A page with detailed information about the router will open. You can also [edit](#editing_a_router) router parameters on this page.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -46,17 +44,15 @@ You can manage routers: view, edit and delete them.
    - `interfaces_info`: information about [interfaces of the router](#managing_an_interface). A blank field means that no interfaces have been added.
    - `routes`: information about [static router routes](#managing_static_routes). An empty field means no static routes were added.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding a router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -73,8 +69,9 @@ You can manage routers: view, edit and delete them.
 
 1. Click the **Create** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -83,42 +80,39 @@ You can manage routers: view, edit and delete them.
 
 1. Create a router of the necessary type:
 
-   <tabs>
-   <tablist>
-   <tab>With connection to external network</tab>
-   <tab>Without connection to the external network</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(With connection to external network)}
+      
    ```console
    openstack router create <router name> --external-gateway ext-net
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Without connection to the external network)}
+   
    ```console
    openstack router create <router name>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
    A router with an external network connection will have Internet access and a public IP address. Create this type of router if you plan to assign floating IP addresses to ports on subnets connected to the router and provide Internet access from those subnets.
 
 1. Learn how to connect one or more interfaces to the router by either [editing the router](#editing_a_router) or [managing its interfaces](#managing_an_interface) directly.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing a router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -145,8 +139,9 @@ You can manage routers: view, edit and delete them.
 
 1. After editing the router, click the **Save** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -163,38 +158,34 @@ You can manage routers: view, edit and delete them.
 
    - Manage the connection to the external network:
 
-     <tabs>
-     <tablist>
-     <tab>Enable external network connection</tab>
-     <tab>Disable external network connection</tab>
-     </tablist>
-     <tabpanel>
-
+     {tabs}
+     
+     {tab(Enable external network connection)}
+          
      ```console
      openstack router set <router ID> --external-gateway ext-net
      ```
 
-     </tabpanel>
-     <tabpanel>
-
+     {/tab}
+     
+     {tab(Disable external network connection)}
+     
      ```console
      openstack router unset <router ID> --external-gateway
      ```
 
-     </tabpanel>
-     </tabs>
+     {/tab}
+     
+     {/tabs}
 
      Connect the router to an external network if you plan to assign floating IP addresses to ports on subnets connected to the router and provide Internet access from those subnets.
 
    - Manage the subnets connected to the router. You can add new subnets to the router, or remove already added subnets.
 
-     <tabs>
-     <tablist>
-     <tab>Add a subnet</tab>
-     <tab>Remove a subnet</tab>
-     </tablist>
-     <tabpanel>
-
+     {tabs}
+     
+     {tab(Add a subnet)}
+          
      1. Get the ID of the necessary subnet.
      1. Run the command:
 
@@ -207,9 +198,10 @@ You can manage routers: view, edit and delete them.
      - The selected subnet will be connected to the router.
      - Interfaces `INTERFACE_DISTRIBUTED` and (if the router is connected to an external network) `SNAT` related to this subnet will appear in the list of interfaces.
 
-     </tabpanel>
-     <tabpanel>
-
+     {/tab}
+     
+     {tab(Remove a subnet)}
+     
      ```console
      openstack router remove subnet <router ID> <subnet ID>
      ```
@@ -222,8 +214,9 @@ You can manage routers: view, edit and delete them.
 
      - The subnet, where those interfaces were located, will be removed from the router.
 
-     </tabpanel>
-     </tabs>
+     {/tab}
+
+     {/tabs}
 
      {note:info}
 
@@ -231,19 +224,17 @@ You can manage routers: view, edit and delete them.
 
      {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Managing an interface
 
 Router interface management is an alternative to [managing subnets](#editing_a_router) connected to it.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](#viewing_a_list_of_routers_and_information_about_them) the router page and select tab **Interfaces**.
 
@@ -268,8 +259,9 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     - The corresponding `SNAT` interface (if present) will also be removed.
     - The subnet that this interface was on will be disconnected from the router.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -315,17 +307,15 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
     - The subnet that these interfaces were on will be disconnected from the router.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Managing Static Routes
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](#viewing_a_list_of_routers_and_information_about_them) the router page, then select the **Static Routes** tab.
 
@@ -338,8 +328,9 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. To delete a static route, click ![ ](/en/assets/more-icon.svg "inline") for the required route and select **Delete Interface**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -369,8 +360,9 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     openstack router set <router id> --no-route
     ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Removing the Router
 
@@ -380,12 +372,9 @@ Before deleting the router, delete the [static routes](#managing-static-routes) 
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can delete several routers at once by selecting them using the checkboxes.
 
@@ -402,8 +391,9 @@ To remove a router:
 
 1. Confirm the removal of the router.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -418,5 +408,6 @@ To remove a router:
    openstack router delete <router ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -15,13 +15,9 @@ AWS CLI доступен в двух версиях:
 
 ## 1. Установите клиент AWS
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>macOS</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 Требования:
 
 - 64-разрядная версия CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 and Linux ARM;
@@ -44,8 +40,9 @@ AWS CLI доступен в двух версиях:
   sudo ./aws/install
   ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(macOS)}
 
 Требования:
 
@@ -62,8 +59,9 @@ AWS CLI доступен в двух версиях:
 
 1. Следуйте инструкциям мастера установки.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 Требования:
 
@@ -80,8 +78,9 @@ AWS CLI доступен в двух версиях:
 
 1. Следуйте инструкциям мастера установки. По умолчанию AWS CLI устанавливается в `C:\\Program Files\\Amazon\\AWSCLIV2`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Проверьте установку AWS
 

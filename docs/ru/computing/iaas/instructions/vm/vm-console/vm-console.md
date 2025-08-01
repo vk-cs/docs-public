@@ -24,21 +24,18 @@ VNC-консоль — инструмент диагностики и управ
 
 1. Откройте консоль в личном кабинете VK Cloud или используйте адрес, полученный через OpenStack CLI.
 
-    <tabs>
-    <tablist>
-    <tab>Личный кабинет</tab>
-    <tab>OpenStack CLI</tab>
-    </tablist>
+    {tabs}
 
-    <tabpanel>
+    {tab(Личный кабинет)}
 
     1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
     1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
     1. В списке виртуальных машин нажмите на имя нужной ВМ.
     1. На странице ВМ перейдите на вкладку **Консоль**.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
+
+    {tab(OpenStack CLI)}
 
     1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
     1. Получите ссылку на страницу с VNC-консолью.
@@ -66,8 +63,9 @@ VNC-консоль — инструмент диагностики и управ
 
     {/note}
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 1. Если виртуальная машина не запущена, нажмите кнопку запуска на вкладке.
 1. [Установите пароль](../vm-manage#password) для входа в ОС, если это не было сделано ранее. Запишите имя учетной записи и пароль.
@@ -89,12 +87,9 @@ VNC-консоль — инструмент диагностики и управ
 console=tty0 console=ttyS0,115200n8
 ```
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -110,5 +105,6 @@ console=tty0 console=ttyS0,115200n8
    openstack console log show --lines <кол-во записей> <ID виртуальной машины>
   ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

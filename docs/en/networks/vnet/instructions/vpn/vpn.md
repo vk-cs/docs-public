@@ -7,12 +7,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 ## Viewing a list of VPN tunnels and information about them
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
@@ -24,8 +21,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
     A page with detailed information about it will open. Navigate between the page tabs to view information about IKE and IPsec settings, endpoint groups, and the tunnel. You can also edit the VPN tunnel settings on this page.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -76,17 +74,15 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       openstack vpn service show <VPN service id>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding a VPN Tunnel
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
@@ -142,25 +138,24 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
     1. Set the group settings:
 
-         <tabs>
-         <tablist>
-         <tab>Neutron</tab>
-         <tab>Sprut</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(Neutron)}
+                  
          - **Name** — the name of a local endpoint group.
          - **Subnets** — select one or more subnets connected to the previously selected router. These subnets will be accessible through the VPN tunnel.
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(Sprut)}
+         
          - **Name** — the name of a local endpoint group.
          - **Subnet address** — specify the IP address (CIDR) of the subnet connected to the previously selected router. This subnet will be accessible through the VPN tunnel.
          - (Optional) To connect an additional subnet, click **Добавить еще один CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+         
+         {/tabs}
 
     1. **Remote Endpoint** — select a remote endpoint group from the dropdown list. If the required group does not exist, create a new one:
 
@@ -224,8 +219,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 1. Click the **Create VPN Tunnel** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -248,13 +244,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. If a suitable IKE policy was not found in the previous step, create it:
 
-       <tabs>
-       <tablist>
-       <tab>Linux/macOS (bash, zsh)</tab>
-       <tab>Windows (PowerShell)</tab>
-       </tablist>
-       <tabpanel>
-
+       {tabs}
+       
+       {tab(Linux/macOS (bash, zsh))}
+              
        ```console
        openstack vpn ike policy create <policy name> \
          --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> \
@@ -264,9 +257,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --pfs <Diffie-Hellman group: group5, group2, group14>
        ```
 
-      </tabpanel>
-      <tabpanel>
-
+       {/tab}
+       
+       {tab(Windows (PowerShell))}
+      
       ```console
        openstack vpn ike policy create <policy name> `
          --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> `
@@ -276,8 +270,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --pfs <Diffie-Hellman group: group5, group2, group14>
        ```
 
-      </tabpanel>
-      </tabs>
+       {/tab}
+       
+       {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Save the policy ID (`id`) that will be used by the VPN tunnel.
 
@@ -297,13 +292,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. If a suitable IPsec policy was not found in the previous step, create it:
 
-       <tabs>
-       <tablist>
-       <tab>Linux/macOS (bash, zsh)</tab>
-       <tab>Windows (PowerShell)</tab>
-       </tablist>
-       <tabpanel>
-
+      {tabs}
+       
+      {tab(Linux/macOS (bash, zsh))}
+              
        ```console
        openstack vpn ipsec policy create <policy name> \
          --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> \
@@ -312,9 +304,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --pfs <Diffie-Hellman group: group5, group2, group14>
        ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+       
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn ipsec policy create <policy name> `
         --lifetime units=<units, seconds by default>,value=<key lifetime, default 3600> `
@@ -323,8 +316,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
         --pfs <Diffie-Hellman group: group5, group2, group14>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Make a note of the policy ID that will be used by the VPN tunnel.
 
@@ -346,30 +340,29 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. Create a VPN service using this router:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn service create <VPN service name> \
         --router <router ID obtained in the previous step> \
         --enable
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn service create <VPN service name> `
         --router <router ID obtained in the previous step> `
         --enable
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Make a note of the VPN service ID that will be used by the VPN tunnel.
 
@@ -394,13 +387,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. If there is no suitable local endpoint group, create it:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
        openstack vpn endpoint group create <local endpoint group name> \
          --type subnet \
@@ -409,9 +399,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value <additional subnet ID>
        ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
        openstack vpn endpoint group create <local endpoint group name> `
          --type subnet `
@@ -420,20 +411,18 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value <additional subnet ID>
        ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Write down the ID of the local endpoint group that will be used by the VPN tunnel.
 
    1. If there is no suitable remote endpoint group, create it:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
        openstack vpn endpoint group create <remote endpoint group name> \
          --type cidr \
@@ -442,9 +431,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value "<optional remote subnet>"
        ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
        openstack vpn endpoint group create <remote endpoint group name> `
          --type cidr `
@@ -453,20 +443,18 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value "<optional remote subnet>"
        ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Write down the ID of the remote endpoint group that will be used by the VPN tunnel.
 
 1. Create a VPN tunnel:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
     openstack vpn ipsec site connection create <VPN tunnel name> \
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
@@ -482,9 +470,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --enable
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
     openstack vpn ipsec site connection create <VPN tunnel name> `
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
@@ -500,20 +489,19 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --enable
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Editing a VPN Tunnel
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
@@ -526,25 +514,24 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
        1. Select `New endpoint group` from the drop-down list.
        1. Set the group settings:
 
-         <tabs>
-         <tablist>
-         <tab>Neutron</tab>
-         <tab>Sprut</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(Neutron)}
+                  
          - **Name** — the name of a local endpoint group.
          - **Subnets** — select one or more subnets connected to the previously selected router. These subnets will be accessible through the VPN tunnel.
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(Sprut)}
+         
          - **Name** — the name of a local endpoint group.
          - **Subnet address** — specify the IP address (CIDR) of the subnet connected to the previously selected router. This subnet will be accessible through the VPN tunnel.
          - (Optional) To connect an additional subnet, click **Добавить еще один CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+         
+         {/tabs}
 
    1. **Remote Endpoint** — select a remote endpoint group from the dropdown list. If the required group does not exist, create a new one:
 
@@ -607,8 +594,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 1. Click the **Save** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -639,13 +627,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
    1. If there is no suitable local endpoint group, create it:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn endpoint group create <local endpoint group name> \
       --type subnet \
@@ -654,9 +639,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --value <additional subnet ID>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
        openstack vpn endpoint group create <local endpoint group name> `
          --type subnet `
@@ -665,20 +651,18 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value <additional subnet ID>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Write down the ID of the local endpoint group that will be used by the VPN tunnel.
 
    1. If there is no suitable remote endpoint group, create it:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
        openstack vpn endpoint group create <remote endpoint group name> \
          --type cidr \
@@ -687,9 +671,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value "<optional remote subnet>"
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
        openstack vpn endpoint group create <remote endpoint group name> `
          --type cidr `
@@ -698,20 +683,18 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          --value "<optional remote subnet>"
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       After creation, information about the created object will be displayed, including its identifier. Write down the ID of the remote endpoint group that will be used by the VPN tunnel.
 
 1. Edit the VPN tunnel settings:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
     openstack vpn ipsec site connection set <VPN tunnel ID> \
       --name <new VPN tunnel name> \
@@ -724,9 +707,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --enable
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
     openstack vpn ipsec site connection set <VPN tunnel ID> `
       --name <new VPN tunnel name> `
@@ -739,11 +723,13 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --enable
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Restarting a VPN tunnel
 
@@ -753,12 +739,9 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
@@ -767,8 +750,9 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 1. Read the warning.
 1. Press the **Restart** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -779,38 +763,35 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 1. Run the command:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
 
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
     openstack vpn service set <VPN service ID> --disable && openstack vpn service set <VPN service ID> --enable
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
     openstack vpn service set <VPN service id> --disable; openstack vpn service set <VPN service id> --enable
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Removing a VPN tunnel
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
@@ -826,8 +807,9 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that:
 
@@ -854,13 +836,10 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 1. To remove the VPN tunnel and all objects associated with it, run the commands:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack vpn ipsec site connection delete <VPN tunnel id>
    openstack vpn ike policy delete <IKE policy id>
@@ -870,9 +849,10 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
    openstack vpn service delete <identifier of the VPN service that is serving this VPN tunnel
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack vpn ipsec site connection delete <VPN tunnel ID>; `
    openstack vpn ike policy delete <IKE policy identifier>; `
@@ -882,8 +862,10 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
    openstack vpn service delete <identifier of the VPN service that is serving this VPN tunnel>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}

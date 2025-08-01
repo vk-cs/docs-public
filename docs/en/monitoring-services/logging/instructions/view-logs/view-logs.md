@@ -1,12 +1,8 @@
 To view the logs, use any method convenient for you:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-<tab>Grafana</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/services/monitoring/logging) the **Monitoring** → **Logging** section of your VK Cloud management console.
 1. (Optional) Select values ​​for filters.
@@ -16,8 +12,9 @@ To view the logs, use any method convenient for you:
 
       {include(/en/_includes/_logs_query.md)}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use [API methods](/ru/tools-for-using-services/api/api-spec/logging "change-lang").
 
@@ -26,8 +23,9 @@ Examples of search expressions:
 
   {include(/en/_includes/_logs_query.md)}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Grafana)}
 
 1. [Deploy](/en/applications-and-services/marketplace/initial-configuration/grafana-start) the Grafana service from the [Marketplace](https://msk.cloud.vk.com/app/en/services/marketplace) to your project.
 
@@ -51,13 +49,10 @@ Examples of search expressions:
 
 1. In the **Service** field, specify the ID of the service whose logs you want to display on the dashboard. Use the service IDs pre-configured in the VK Cloud logging system or [your own IDs](../../concepts/logging-plugin#conf_parameters).
 
-    <tabs>
-    <tablist>
-    <tab>Pre-configured IDs</tab>
-    <tab>Your own IDs</tab>
-    </tablist>
-    <tabpanel>
+    {tabs}
 
+    {tab(Pre-configured IDs)}
+        
     - `default` — an identifier that has no services associated with it and is intended for testing and debugging.
     - `containers` — Cloud Containers.
     - `databases` — Cloud Databases.
@@ -65,18 +60,21 @@ Examples of search expressions:
     - `vdi` — Cloud Desktop.
     - `mlplatform` — Cloud ML Platform.
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Your own IDs)}
+    
     Your own IDs (`service_ID`) are located on the **Other resources** tab in the settings of the **Monitoring → Logging** section. They consist of lowercase Latin letters, numbers, and the `-` characters, for example: `a01bc23-d456-7890-a1bc-d2e3f45g6789`.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 1. Click the **Apply** button.
 1. (Optional) In the **Group** field, specify the log group identifier (`group_id`). Use the `group_id` value specified in the [logging plugin settings](../../concepts/logging-plugin#conf_parameters) during its installation. If the **Unique Labels** option is enabled, the `group_id` is displayed in the logs of the required service on the dashboard being created.
 1. (Optional) In the **Stream** field, specify the log source identifier (`stream_id`). Use the `stream_id` value specified in the [logging plugin settings](../../concepts/logging-plugin#conf_parameters) during its installation. If the **Unique Labels** option is enabled, the `stream_id` is displayed in the logs of the required service on the dashboard being created.
 1. Save the changes you made.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

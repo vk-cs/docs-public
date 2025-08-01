@@ -9,12 +9,9 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
 ## Creating a file storage
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where you want to create a file storage.
@@ -43,20 +40,18 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
 1. Click **Add file server**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Make sure that the Manila client is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 1. Select an existing file storage network or create a new one.
 
-    <tabs>
-    <tablist>
-    <tab>Selecting an existing network</tab>
-    <tab>Creating a new network</tab>
-    </tablist>
-    <tabpanel>
+    {tabs}
 
+    {tab(Selecting an existing network)}
+        
     1. Get the list of existing file storage networks by running the command:
 
         ```console
@@ -72,9 +67,10 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
         Here, `<NETWORK>` is the name or ID of a file storage network that exists in your project.
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Creating a new network)}
+    
    Run the command:
 
     ```console
@@ -89,8 +85,9 @@ File storages are created in your VK Cloud management console or in the OpenStac
 
     Write down the name or ID of the created network.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 1. Create a file storage using the command:
 
@@ -105,8 +102,9 @@ File storages are created in your VK Cloud management console or in the OpenStac
       - `<PROTOCOL>` — the access protocol. To access the storage from Windows, specify the CIFS protocol, from Linux — NFS.
       - `<SIZE>` — the required file storage size in GB. Must be within the quota, not less than 10 GB and not more than 10000 GB.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Connecting file storage
 
@@ -120,24 +118,18 @@ Instructions are provided for Windows Server 2012 R2. For information about conn
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>NFS protocol</tab>
-<tab>CIFS protocol</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(NFS protocol)}
 
 In Windows, you can connect a file storage via the NFS protocol using the Windows Server component — Client for NFS.
 
 1. Install Client for NFS from the Server Manager interface or using PowerShell:
 
-    <tabs>
-    <tablist>
-    <tab>Server Manager</tab>
-    <tab>PowerShell</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Server Manager)}
+        
     1. Open Server Manager and choose **Add Roles and Features**.
     1. Go to the **Installation Type** section, select the **Add Roles and Features** option and click **Next**.
     1. Go to the **Components** section, select the **Client fo NFS** option from the list.
@@ -145,9 +137,10 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
     1. Make sure that all the necessary components are selected and click **Install**.
     1. Wait for the installation to complete and restart the server.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
 
+    {tab(PowerShell)}
+    
     1. Install:
 
     - Client for NFS;
@@ -161,8 +154,9 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
 
     2. Wait for the installation to finish and restart the server.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 2. Change the client settings using the Server Manager:
 
@@ -183,8 +177,9 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
     - `<MOUNT_POINT>` — the address of the file storage specified in its description.
     - `<DISK_NAME>` — the uppercase Latin letter not used as the name of other disks.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(CIFS protocol)}
 
 To connect the file storage, run the command specified in its [properties](#viewing_a_list_of_file_storages).
 
@@ -199,8 +194,9 @@ Here:
 - `<MOUNT_POINT>` — the address of the file storage specified in its description.
 - `<DISK_NAME>` — the uppercase Latin letter not used as the name of other disks.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Linux
 
@@ -210,12 +206,9 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>NFS protocol</tab>
-<tab>CIFS protocol</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(NFS protocol)}
 
 1. Install the `nfs-common` package using the command:
 
@@ -240,8 +233,9 @@ The instructions are given for Ubuntu. For information about connecting to other
     - `<MOUNT_POINT>` — the address of the file storage specified in its description.
     - `<DIRECTORY_NAME>` — the name of the directory created earlier.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(CIFS protocol)}
 
 1. Install `cifs-utils` using the command:
 
@@ -266,24 +260,23 @@ The instructions are given for Ubuntu. For information about connecting to other
     - `<MOUNT_POINT>` — the address of the file storage specified in its description.
     - `<DIRECTORY_NAME>` — the name of the directory created earlier.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing a list of file storages
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**. A list of file storages will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -295,25 +288,24 @@ The instructions are given for Ubuntu. For information about connecting to other
     openstack share list
     ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing information about file storage
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage. Information about it will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -327,17 +319,15 @@ The instructions are given for Ubuntu. For information about connecting to other
 
     Here, `<STORAGE>` is the name or ID of a file storage.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Increasing file storage size
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -345,8 +335,9 @@ The instructions are given for Ubuntu. For information about connecting to other
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Change size**.
 1. Enter a new value and click **Confirm**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -363,8 +354,9 @@ The instructions are given for Ubuntu. For information about connecting to other
     - `<STORAGE>` — the name or ID of a file storage.
     - `<SIZE>` — a new size for the file storage, in GB.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -374,12 +366,9 @@ The size of the file storage cannot be reduced.
 
 ## Creating a snapshot
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -388,8 +377,9 @@ The size of the file storage cannot be reduced.
 1. (Optional) Change the name of the snapshot and add a description.
 1. Click **Create snapshot**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -406,25 +396,24 @@ The size of the file storage cannot be reduced.
     - `<SNAPSHOT_NAME>` — a name for the file storage snapshot that will be created.
     - `<STORAGE>` — the name or ID of a file storage.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Getting snapshots list
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**. Information about the snapshots will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -438,17 +427,15 @@ The size of the file storage cannot be reduced.
 
     Here, `<STORAGE>` is the name or ID of a file storage.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Restoring a storage from its snapshot
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -457,8 +444,9 @@ The size of the file storage cannot be reduced.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required snapshot and select **Restore file storage**.
 1. Click **Confirm**. The process of creating a new storage from the snapshot will begin.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -480,17 +468,15 @@ The size of the file storage cannot be reduced.
 
     The `<STORAGE_TYPE>`, `<PROTOCOL>`, and `<SIZE>` values ​​must match the corresponding snapshot characteristics.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a snapshot
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -499,8 +485,9 @@ The size of the file storage cannot be reduced.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required snapshot and select **Delete snapshot**.
 1. Click **Confirm**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -514,17 +501,15 @@ The size of the file storage cannot be reduced.
 
     Here, `<SNAPSHOT>` — the name or ID of the snapshot to be deleted.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding an access rule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -535,8 +520,9 @@ The size of the file storage cannot be reduced.
 1. Specify the source IP or subnet address and select an access mode.
 1. Click the **Add rule** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -562,17 +548,15 @@ The size of the file storage cannot be reduced.
 
     Here, `<STORAGE>` is the name or ID of a file storage.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting an access rule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -582,8 +566,9 @@ The size of the file storage cannot be reduced.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required rule and select **Delete**.
 1. Click **Confirm**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -608,19 +593,17 @@ The size of the file storage cannot be reduced.
     - `<STORAGE>` — the name or ID of a file storage.
     - `<RULE_ID>` — the ID of the access rule to be deleted.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a file storage and its network
 
 To delete a file storage, you must first disconnect it from virtual machines and [delete](#deleting_a_snapshot) all its snapshots.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
@@ -630,8 +613,9 @@ To delete a file storage, you must first disconnect it from virtual machines and
 
 Simultaneously with the file storage, the network created for it will be deleted.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -653,5 +637,6 @@ Simultaneously with the file storage, the network created for it will be deleted
 
     Here, `<NETWORK_ID>` is the ID of the file storage network to be deleted.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

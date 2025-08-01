@@ -71,25 +71,24 @@ Click the block to see its contents. Click again if you want to hide the text ba
 
 Tabs are used for alternate instructions like commands for different operating systems terminals.
 
-<tabs>
-<tablist>
-<tab>First tab</tab>
-<tab>Second tab</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(First tab)}
 
 This is what the text looks like on the first tab.
 
 Click the second tab to switch to it.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Second tab)}
 
 This is what the text looks like on the second tab.
 
 Click the first tab to switch to it.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 If the tabs contain instruction steps that are executed sequentially, the tabs are numbered.

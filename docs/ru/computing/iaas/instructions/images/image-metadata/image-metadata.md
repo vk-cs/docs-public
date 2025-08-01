@@ -56,11 +56,9 @@
 
 ## Установка метатега
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Получите `ID` образа из списка:
 
@@ -82,8 +80,9 @@
    openstack image set --property <имя метатега>=<значение> <ID образа>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {cut(Пример установки метатегов для образа ВМ Windows с драйверами `virtio`)}
 
@@ -123,11 +122,9 @@
 
 ## Удаление метатега
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Получите `ID` образа из списка:
 
@@ -149,5 +146,6 @@
    openstack image unset --property <имя метатега> <ID образа>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
