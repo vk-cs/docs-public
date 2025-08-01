@@ -19,12 +19,9 @@
 
 1. Install NGINX from the Bitnami repository:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm repo add bitnami https://charts.bitnami.com/bitnami; `
@@ -32,8 +29,9 @@
    helm install demo-helm-nginx bitnami/nginx
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -42,8 +40,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Verify that the NGINX pod is working by running the command:
 
@@ -62,20 +61,18 @@
 
 1. Uninstall NGINX installed with Helm and remove the Bitnami repository:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm uninstall demo-helm-nginx; `
    helm repo remove bitnami
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    helm uninstall demo-helm-nginx
@@ -83,8 +80,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Deletion
 

@@ -14,12 +14,9 @@
 
 ## Viewing list of instance backup copies
 
-<tabs>
-<tablist>
-<tab>List of copies created by plan</tab>
-<tab>List of copies created manually</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(List of copies created by plan)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -45,8 +42,9 @@
 
 1. To open the list of instance backup copies, click the instance name or the ![ ](/en/assets/right-arrow-icon.svg "inline") icon.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(List of copies created manually)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -67,17 +65,15 @@
 
 1. To open the list of instance backup copies, click the link in the **Restore points** column for the required instance.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Deleting instance backup copies)[id=delete_backup_copy]}
 
-<tabs>
-<tablist>
-<tab>Deleting copies created by plan</tab>
-<tab>Deleting copies created manually</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Deleting copies created by plan)}
 
 To delete all instance backup copies created within a plan at once, [delete](../manage-backup-plan#activate_stop_delete_backup_plan) that plan.
 
@@ -102,27 +98,27 @@ To delete individual instance backup copies:
 1. To open the list of instance backup copies, click the instance name or the ![ ](/en/assets/right-arrow-icon.svg "inline") icon.
 1. Delete outdated backups using one of the methods:
 
-   <tabs>
-   <tablist>
-   <tab>For several copies</tab>
-   <tab>For one copy</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(For several copies)}
+      
       1. In the list of backup copies, set the checkboxes for the required copies.
       1. Above the list of copies, click **Delete copy** and confirm the action.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(For one copy)}
+   
       1. Click ![ ](/en/assets/more-icon.svg "inline") for the copy you need to delete.
       1. Select **Delete copy** and confirm the action.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Deleting copies created manually)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
@@ -134,50 +130,49 @@ To delete individual instance backup copies:
 
 1. To delete all backup copies of one or more instances at once:
 
-   <tabs>
-   <tablist>
-   <tab>For several instances</tab>
-   <tab>For one instance</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(For several instances)}
+      
       1. In the list of instances, set the checkboxes for the required instances.
       1. Above the list of instances, click **Delete** and confirm the action.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(For one instance)}
+   
       1. Click ![ ](/en/assets/more-icon.svg "inline") for the required instance and select **Delete**.
       1. Confirm the deletion.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. To delete individual instance backup copies:
 
-   <tabs>
-   <tablist>
-   <tab>For several copies</tab>
-   <tab>For one copy</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(For several copies)}
+      
       1. Click the link in the **Restore points** column for the required instance.
       1. In the list of backup copies, set the checkboxes for the required copies.
       1. Above the list of copies, click **Delete** and confirm the action.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(For one copy)}
+   
       1. Click the link in the **Restore points** column for the required instance.
       1. Click ![ ](/en/assets/more-icon.svg "inline") for the copy you need to delete.
       1. Select **Delete copy** and confirm the action.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 

@@ -7,12 +7,9 @@
 
 Чтобы настроить кеширование на CDN-ресурсе:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -20,20 +17,18 @@
 1. Включите опцию **Кеширование на CDN**.
 1. Выберите вариант настройки:
 
-   <tabs>
-   <tablist>
-   <tab>Настройка источника</tab>
-   <tab>Задать настройки</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Настройка источника)}
+      
       CDN-ресурс будет кешировать контент на время, заданное на источнике в заголовке Cache-Control.
 
       Если на источнике не указан Cache-Control, то используется время по умолчанию (4 дня). Чтобы изменить это время, выберите значение в списке **Время жизни кеша по умолчанию**. Выбранное значение будет применяться для ответов с кодами 200, 201, 204, 206, 301, 302, 303, 304, 307, 308. Ответы с остальными кодами кешироваться не будут.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Задать настройки)}
+   
       CDN-ресурс будет кешировать контент на время, заданное в его настройках:
 
       1. Укажите время жизни кеша. Значение будет применяться только для ответов с кодами 200, 206, 301, 302. Ответы с кодами 4ХХ, 5ХХ не будут кешироваться.
@@ -43,13 +38,15 @@
          1. Выберите код ответа. Для всех ответов выберите значение `any`.
          1. Выберите время кеширования для этого ответа.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -85,8 +82,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 - для ответов с кодом 100 — контент кешируется на 1 час;
 - для ответов с кодом 404 — контент не кешируется.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка кеширования в браузере
 
@@ -94,12 +92,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить кеширование в браузере пользователя:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -107,31 +102,31 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Включите опцию **Кеширование в браузере**.
 1. Выберите вариант настройки:
 
-   <tabs>
-   <tablist>
-   <tab>Настройка источника</tab>
-   <tab>Задать настройки</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Настройка источника)}
+      
       Браузер пользователя будет кешировать контент на время, заданное на источнике в заголовке Cache-Control.
 
       Если на источнике не указан Cache-Control, то контент не будет кешироваться в браузере.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Задать настройки)}
+   
       Настройки кеширования для пользовательских браузеров задаются в настройках CDN-ресурса.
 
       Укажите время жизни кеша. Значение будет применяться для ответов с кодами 200, 201, 204, 206, 301, 302, 303, 304, 307, 308, если на источнике не настроены заголовки кеширования. Ответы с остальными кодами кешироваться не будут.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -157,8 +152,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Игнорирование заголовка Set-Cookie при кешировании
 
@@ -166,12 +162,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы CDN-ресурс игнорировал заголовки `Set-Cookie` в HTTP-запросах:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -179,8 +172,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Включите опцию **Игнорировать Set-Cookie**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -206,8 +200,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Игнорирование параметров запроса при кешировании
 
@@ -215,12 +210,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы CDN-ресурс игнорировал параметры в HTTP-запросах:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -235,8 +227,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Для типов **Игнорировать все, кроме** и **Игнорировать только** укажите параметры. Каждый параметр запишите с новой строки.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -324,5 +317,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

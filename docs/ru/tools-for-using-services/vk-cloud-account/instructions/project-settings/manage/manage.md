@@ -10,34 +10,40 @@
 
 Чтобы получить идентификатор проекта:
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
+
 {include(/ru/_includes/_project_pid_tab_account.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(Личный кабинет)}
+
 {include(/ru/_includes/_project_pid_tab_lk.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Изменение имени проекта
 
 Имя проекта можно изменить на любом этапе жизни проекта.
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
+
 {include(/ru/_includes/_project_rename_tab_account.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(Личный кабинет)}
+
 {include(/ru/_includes/_project_rename_tab_lk.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 {include(/ru/_includes/_project_rename_common.md)}

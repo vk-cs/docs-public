@@ -94,14 +94,9 @@
 
 1. Отправьте задание Spark в кластер с помощью метода [spark_submit_job](../../ml-platform-library/library-reference/spark-jobs#spark_submit_job). Чтобы указать путь к файлу с кодом приложения, используйте один из способов:
 
-    <tabs>
-    <tablist>
-    <tab>Локальный файл</tab>
-    <tab>Файл в Docker-образе</tab>
-    <tab>Файл в бакете</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Локальный файл)}
     Укажите локальный путь к файлу приложения на Python в аргументе `pycode_file_path` метода `spark_submit_job`.
 
     Пример скрипта Python:
@@ -110,9 +105,10 @@
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest, pycode_file_path="<ИМЯ_ПРИЛОЖЕНИЯ>.py")
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Файл в Docker-образе)}
+        
     Укажите путь к файлу приложения, встроенному в Docker-образ кластера Cloud Spark, в поле `main_app_file` манифеста приложения.
 
     Пример скрипта Python:
@@ -122,21 +118,18 @@
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Файл в бакете)}
+    
     Укажите путь к файлу приложения, загруженному в бакет, в поле `main_app_file` манифеста приложения.
 
     Пример скрипта для разных языков:
 
-    <tabs>
-    <tablist>
-    <tab>Scala</tab>
-    <tab>Java</tab>
-    <tab>Python</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Scala)}
+        
     ```scala
     job_manifest.spec_type = "Scala"
     job_manifest.main_class = "org.apache.spark.examples.<имя главного класса>"
@@ -145,9 +138,10 @@
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Java)}
+    
     ```java
     job_manifest.spec_type = "Java"
     job_manifest.main_class = "org.apache.spark.examples.<имя главного класса>"
@@ -156,22 +150,25 @@
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Python)}
+    
     ```python
     job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<ИМЯ_ПРИЛОЖЕНИЯ>.py"
 
     mlp.spark_submit_job(cluster_id=CLUSTER_ID, manifest=job_manifest)
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
     Здесь `spark-files` — директория бакета, куда ранее были загружены файлы с кодом приложения.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 {note:info}
 

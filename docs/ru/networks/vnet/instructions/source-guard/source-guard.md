@@ -18,11 +18,9 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -38,16 +36,15 @@
 
    Если необходимо разрешить выход с порта всего трафика, проходящего через виртуальную машину, используйте значение IP-адреса `0.0.0.0\0`. Опция полезна для промежуточных узлов сети, например для маршрутизатора, файервола или VPN-шлюза. Используйте опцию с осторожностью — она может сделать сеть уязвимой для атак.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление IP-адреса из списка разрешенных адресов
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -59,16 +56,15 @@
    openstack port unset <ИМЯ_ИЛИ_ИДЕНТИФИКАТОР_ПОРТА> --allowed-address ip-address=<IP-АДРЕС>,mac-address=<MAC-АДРЕС>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Очистка списка разрешенных адресов для порта
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -80,16 +76,15 @@
    openstack port set --no-allowed-address <ИМЯ_ИЛИ_ИДЕНТИФИКАТОР_ПОРТА>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Получение информации о поддерживаемых параметрах
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -105,5 +100,6 @@
    openstack port unset --help
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

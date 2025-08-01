@@ -43,13 +43,9 @@
 - только один под может иметь доступ к хранилищу (несколько подов не смогут одновременно использовать блочное хранилище);
 - как следствие, для доступа к хранилищу должен использоваться режим `ReadWriteOnce`.
 
-<tabs>
-<tablist>
-<tab>Подключение с помощью статического PVC</tab>
-<tab>Подключение с помощью динамического PVC</tab>
-<tab>Подключение к нескольким подам с помощью динамического PVC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Подключение с помощью статического PVC)}
 
 В этом примере будут созданы:
 
@@ -182,8 +178,9 @@
    kubectl apply -f ./tea.yaml
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Подключение с помощью динамического PVC)}
 
 В этом примере будут созданы:
 
@@ -282,8 +279,9 @@
    kubectl apply -f ./coffee.yaml
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Подключение к нескольким подам с помощью динамического PVC)}
 
 В этом примере будут созданы:
 
@@ -415,8 +413,9 @@
    kubectl apply -f ./juice.yaml
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Подключение файловых хранилищ
 
@@ -427,11 +426,9 @@
 - сразу несколько подов могут иметь доступ к хранилищу;
 - как следствие, для доступа к хранилищу должен использоваться режим `ReadWriteMany`.
 
-<tabs>
-<tablist>
-<tab>Подключение NFS-хранилища с помощью статического PVC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Подключение NFS-хранилища с помощью статического PVC)}
 
 В этом примере будут созданы:
 
@@ -621,8 +618,9 @@
    kubectl apply -f ./milkshake.yaml
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Проверьте работоспособность демо-приложений и постоянных томов
 
@@ -718,14 +716,9 @@
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Tea</tab>
-   <tab>Coffee</tab>
-   <tab>Juice</tab>
-   <tab>Milkshake</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Tea)}
 
    Выполните команду:
 
@@ -739,8 +732,9 @@
    The tea pod says Hello World to everyone! This file is located on the statically claimed persistent volume.
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Coffee)}
 
    Выполните команду:
 
@@ -754,8 +748,9 @@
    The coffee pod says Hello World to everyone! This file is located on the statically claimed persistent volume.
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Juice)}
 
    Выполните команды:
 
@@ -771,8 +766,9 @@
    The juice StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Milkshake)}
 
    Выполните команды:
 
@@ -788,19 +784,17 @@
    The milkshake StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed NFS ReadWriteMany persistent volume.
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удалите неиспользуемые ресурсы
 
 1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml
@@ -811,8 +805,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml; `
@@ -822,8 +817,9 @@
    kubectl delete -f ./tea.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Удалите неиспользуемые хранилища:
 

@@ -1,8 +1,6 @@
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud мanagement console.
 1. Select the project where you want to create a service instance.
@@ -34,12 +32,9 @@
       1. Select [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be located.
    1. Configure the parameters of the nodes on which the service instance will be deployed:
 
-      <tabs>
-      <tablist>
-      <tab>Single</tab>
-      <tab>Cluster</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Single)}
 
       In a **Single** configuration, the instance will be deployed on a single node. 
    
@@ -48,32 +43,37 @@
       - **Basic**: a ready-made node template with 4 CPUs and 6 RAM will be used.
       - **Advanced**: configure the node parameters yourself — set the number of CPUs and RAM in the **Cordinator** block.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Cluster)}
 
       In the **Cluster** configuration, configure the number of nodes and their parameters:
       
       Select a configuration option:
 
-      <tabs>
-      <tablist>
-      <tab>Basic</tab>
-      <tab>Advanced</tab>
-      </tablist>
-      <tabpanel>
-      
+      {tabs}
+
+      {tab(Basic)}
+
       Select one of the ready-made cluster templates. Templates differ in the number of worker nodes, number of CPUs and RAM on each node.
    
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Advanced)}
    
       1. In the **Coordinator** block, set the number of CPUs and RAM of the cluster master node.
       1. In the **Worker** block, specify the number of nodes and the number of CPUs and RAMs for each worker node in the cluster.
       
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
+
+      {/tab}
+
+      {/tabs}
       
    1. Click the **Next Step** button.
+
 1. At the **Maintenance** step:
 
    1. Select the days of the week and the start time of technical works. During this time, technical work may be performed on the server, including creating backups — the service will be unavailable.
@@ -113,5 +113,6 @@
 
    Wait for the operation to complete. It may take a long time to create a Cloud Trino instance.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -76,12 +76,9 @@ To demostrate how Gatekeeper works several objects will be created:
 
 1. Test the restriction by trying to create several pods:
 
-   <tabs>
-   <tablist>
-   <tab>Pod that satisfies the constraint</tab>
-   <tab>Pod that does not satisfy the constraint</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Pod that satisfies the constraint)}
 
    1. Create a manifest for the pod:
 
@@ -97,6 +94,8 @@ To demostrate how Gatekeeper works several objects will be created:
           - name: nginx
             image: docker.io/jitesoft/nginx:latest
       ```
+
+      {/cut}
 
    1. Try to create a pod based on the manifest:
 
@@ -119,8 +118,9 @@ To demostrate how Gatekeeper works several objects will be created:
       allowed-pod   1/1     Running   ...        ...
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Pod that does not satisfy the constraint)}
 
    1. Create a manifest for the pod:
 
@@ -136,6 +136,8 @@ To demostrate how Gatekeeper works several objects will be created:
           - name: nginx
             image: quay.io/jitesoft/nginx:latest
       ```
+
+      {/cut}
 
    1. Try to create a pod based on the manifest:
 
@@ -161,19 +163,17 @@ To demostrate how Gatekeeper works several objects will be created:
       Error from server (NotFound): pods "disallowed-pod" not found
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Delete unused resources
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete pod allowed-pod
@@ -182,8 +182,9 @@ To demostrate how Gatekeeper works several objects will be created:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete pod allowed-pod; `
@@ -191,8 +192,9 @@ To demostrate how Gatekeeper works several objects will be created:
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8sallowedrepos
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

@@ -4,12 +4,9 @@ When a CDN resource is not functioning correctly or if origin data has been upda
 
 To clear a cache of a CDN resource:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -29,8 +26,9 @@ To clear a cache of a CDN resource:
 
 1. Click **Clear cache**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the `POST /projects/{project_id}/resources/{resources_id}/purge` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
 
@@ -60,8 +58,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Preloading cache
 
@@ -75,12 +74,9 @@ To update files on a CDN, first [clear a cache](#clearing_cache) of the CDN reso
 
 To preload a cache of a CDN resource:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -92,8 +88,9 @@ To preload a cache of a CDN resource:
 1. In the **Filling the cache** specify the path to the files on the origin without the domain name and one per line.
 1. Click **Fill cache**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the `POST /projects/{project_id}/resources/{resources_id}/prefetch` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
 
@@ -113,8 +110,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
     }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Configuring HTTP response codes
 
@@ -122,12 +120,9 @@ The **Enable returning HTTP response code** option allows you to set the HTTP re
 
 To configure the HTTP response code:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -137,8 +132,9 @@ To configure the HTTP response code:
 1. Enter the URL for redirection or text for the response code.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -169,8 +165,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## GZip compression
 
@@ -180,12 +177,9 @@ When you use the GZip compression method, uncompressed files are requested from 
 
 To enable GZip compression:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -193,8 +187,9 @@ To enable GZip compression:
 1. Enable the **GZip compression** option.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -220,8 +215,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Brotli compression
 
@@ -233,12 +229,9 @@ The option does not work in conjunction with [origin compression](#origin_compre
 
 To enable Brotli compression:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -247,8 +240,9 @@ To enable Brotli compression:
 1. Select the data types of the content to be compressed. The type `text/html` is selected by default and cannot be removed from the list.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -278,8 +272,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Origin compression
 
@@ -289,12 +284,9 @@ The option does not work in conjunction with [GZip compression](#gzip_compressio
 
 To have a CDN resource request compressed content from an origin:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -302,8 +294,9 @@ To have a CDN resource request compressed content from an origin:
 1. Enable the **Request compression at source** option.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -329,8 +322,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Large file delivery optimization
 
@@ -350,12 +344,9 @@ The option does not work in conjunction with [GZip compression](#gzip_compressio
 
 To enable the optimization of large file delivery:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -363,8 +354,9 @@ To enable the optimization of large file delivery:
 1. Enable the **Enable Large File Delivery Optimization** option.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -390,5 +382,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

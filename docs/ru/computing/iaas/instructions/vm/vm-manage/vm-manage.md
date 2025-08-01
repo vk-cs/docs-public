@@ -4,14 +4,9 @@
 
 Для управления ВМ с помощью OpenStack CLI нужен ID виртуальной машины.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -19,9 +14,9 @@
 4. На странице ВМ перейдите на вкладку **Общая информация**.
 5. Найдите в таблице строку **ID виртуальной машины**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -39,19 +34,15 @@
       openstack server list
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Запуск, остановка, перезагрузка ВМ)[id=start_stop_restart_vm]}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -75,9 +66,9 @@
         3. Справа над таблицей с параметрами ВМ нажмите на значок нужного действия.
         4. Подтвердите действие.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -101,8 +92,9 @@
       openstack server reboot <ID виртуальной машины>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Принудительный перезапуск ВМ
 
@@ -114,14 +106,9 @@
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -139,9 +126,9 @@
         3. Над таблицей с параметрами ВМ нажмите кнопку **Еще**.
         4. Нажмите **Перезапустить принудительно** и подтвердите действие.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -151,8 +138,9 @@
    openstack server reboot --hard <ID виртуальной машины>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Блокировка и разблокировка ВМ
 
@@ -160,13 +148,9 @@
 
 Заблокированную виртуальную машину нельзя запустить или остановить, а также перезагрузить. Невозможно заменить диски и изменить настройки сетевых интерфейсов заблокированной ВМ.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -184,8 +168,9 @@
         3. Над таблицей с параметрами ВМ нажмите кнопку **Еще**.
         4. Выберите и подтвердите действие.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление ВМ)[id=delete_vm]}
 
@@ -221,15 +206,10 @@
 
 2. После сохранения необходимых данных удалите виртуальную машину.
 
-   <tabs>
+   {tabs}
 
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>OpenStack CLI</tab>
-   </tablist>
-
-   <tabpanel>
-
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
    3. Удалите ВМ одним из способов.
@@ -252,10 +232,10 @@
          3. Справа над таблицей с параметрами ВМ нажмите на значок корзины.
          4. Подтвердите действие.
 
-   </tabpanel>
+   {/tab}
 
-   <tabpanel>
-
+   {tab(OpenStack CLI)}
+   
    1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
    2. Удалите ВМ:
 
@@ -263,8 +243,9 @@
       openstack server delete <ID виртуальной машины>
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 ## Переименование и изменение типа ВМ
 
@@ -276,14 +257,9 @@
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -303,9 +279,9 @@
       4. Выберите действие.
       5. Заполните поле ввода и нажмите кнопку **Сохранить**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -331,21 +307,17 @@
          openstack server resize --flavor <ID шаблона> <ID виртуальной машины>
          ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Присвоение тегов
 
 Теги позволяют отфильтровать список виртуальных машин и быстрее найти нужную ВМ. Используйте существующие теги или создайте собственный тег и выберите для него цвет.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -353,9 +325,9 @@
 4. Отметьте флажками нужные теги.
 5. Для добавления нового тега нажмите **Создать новый тег**, введите его имя, выберите цвет и нажмите кнопку **Добавить тег**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -385,8 +357,9 @@
       nova server-tag-delete-all <ID виртуальной машины>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Установка и изменение пароля)[id=password]}
 
@@ -405,41 +378,31 @@
 
 Команда для проверки состояния гостевого агента QEMU:
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Windows</tab>
-<tab>Linux</tab>
-</tablist>
-
-<tabpanel>
+{tab(Windows)}
 
 ```console
 sc query qemu-ga
 ```
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(Linux)}
 
 ```console
 systemctl status qemu-guest-agent
 ```
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 Чтобы установить пароль:
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -460,9 +423,9 @@ systemctl status qemu-guest-agent
         4. Введите новый пароль или нажмите кнопку **Сгенерировать**.
         5. Нажмите кнопку **Задать пароль**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -472,9 +435,9 @@ systemctl status qemu-guest-agent
    openstack server set --root-password <ID виртуальной машины>
    ```
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 {note:info}
 
@@ -492,13 +455,9 @@ systemctl status qemu-guest-agent
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -520,9 +479,9 @@ systemctl status qemu-guest-agent
 5. Нажмите кнопку **Расшифровать пароль**.
 6. В окне появится поле **Пароль**. Скопируйте пароль, нажав значок в поле.
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}
 
 ## Восстановление доступа к ВМ по ключу
 
@@ -576,13 +535,9 @@ systemctl status qemu-guest-agent
 
 ## {heading(Подключение диска к ВМ)[id=mount_disk]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -590,30 +545,30 @@ systemctl status qemu-guest-agent
 1. Перейдите на вкадку **Диски**.
 1. Подключите диск к ВМ:
 
-   <tabs>
-   <tablist>
-   <tab>Существующий диск</tab>
-   <tab>Новый диск</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Существующий диск)}
+      
    1. Нажмите кнопку **Подключить диск**.
    1. В открывшемся окне выберите из списка диск, который нужно подключить к ВМ, и нажмите кнопку **Подключить диск**.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Новый диск)}
+   
    1. Нажмите кнопку **Создать диск**.
     
     {include(/ru/_includes/_disk_params.md)[tags=vm]}
 
    1. Нажмите кнопку **Создать диск**.
 
-   </tabpanel>
-   </tabs>
-</tabpanel>
+   {/tab}
+   
+   {/tabs}
 
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -621,8 +576,9 @@ systemctl status qemu-guest-agent
 
 1. [Подключите диск](/ru/computing/iaas/instructions/volumes#mount_disk) к ВМ.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -634,13 +590,9 @@ systemctl status qemu-guest-agent
 
 Журнал событий содержит информацию об изменении состояния ВМ и о действиях пользователя.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
@@ -672,6 +624,6 @@ systemctl status qemu-guest-agent
 - `create` — создание ВМ;
 - `live-migration` — миграция ВМ.
 
-</tabpanel>
+{/tab}
 
-</tabs>
+{/tabs}

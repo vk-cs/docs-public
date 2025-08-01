@@ -4,12 +4,9 @@ Here is the article about applying SSL sertificates. To know how to create, edit
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -21,8 +18,9 @@ Here is the article about applying SSL sertificates. To know how to create, edit
     - **User's certificate** —  a certificate selected from the list will be used. To make the certificate available for selection, add it to the [certificate store](../../manage-certificates).
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -50,5 +48,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

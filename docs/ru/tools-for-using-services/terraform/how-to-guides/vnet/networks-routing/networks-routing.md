@@ -58,14 +58,9 @@
 
    При необходимости скорректируйте значения переменных, уточнив их допустимые значения:
 
-   <tabs>
-   <tablist>
-   <tab>image_flavor</tab>
-   <tab>compute_flavor</tab>
-   <tab>key_pair_name</tab>
-   <tab>availability_zone_name</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(image_flavor)}
 
    C помощью OpenStack CLI:
 
@@ -73,8 +68,9 @@
    openstack image list
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(compute_flavor)}
 
    C помощью OpenStack CLI:
 
@@ -82,8 +78,9 @@
    openstack flavor list
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(key_pair_name)}
 
    C помощью OpenStack CLI:
 
@@ -91,13 +88,15 @@
    openstack keypair list
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(availability_zone_name)}
 
    Из документа, посвященного [зонам доступности](/ru/intro/start/concepts/architecture#az).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Создайте файлы с описанием базовой сетевой инфраструктуры
 

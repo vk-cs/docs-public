@@ -16,13 +16,9 @@ A generated token is valid for one hour. All generated tokens remain valid for t
 
 Get a token:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-<tab>cURL</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. On the [Project settings](https://msk.cloud.vk.com/app/en/project/keys/) page of the management console, open the **API access** tab.
 
@@ -32,8 +28,9 @@ Get a token:
 
     The token lifetime is shown when you hover your mouse over the ![Copy](assets/copy-icon.svg "inline") icon. If the token expires soon, use the **Reissue** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure you have the OpenStack client [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
@@ -45,8 +42,9 @@ Get a token:
 
     The token value will be output to the console.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(cURL)}
 
 1. Install the cURL [utility](https://github.com/curl/curl/blob/master/docs/INSTALL.md), if not already installed.
 
@@ -54,13 +52,10 @@ Get a token:
 
 1. Perform the command for your operating system:
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    <tab>Windows (cmd)</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Linux)}
+        
     ```console
     curl -X POST \
     -H "Content-Type: application/json" \
@@ -91,28 +86,27 @@ Get a token:
     -i "https://infra.mail.ru:35357/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Windows (cmd))}
+    
     ``` bash
     curl -X POST ^
     -H "Content-Type: application/json" ^
     -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
     -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
     ```
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 The token value will be output in the `x-subject-token` parameter.
 
 {cut(Examples of responses to a token generation request)}
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 ```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -120,8 +114,9 @@ The token value will be output in the `x-subject-token` parameter.
 100 27038  100 26470  100   568  99259   2129 --:--:-- --:--:-- --:--:-- 99138
 x-subject-token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbMx8wDd7PNO704lf00QX3--BRvFB-UcI5IQq5GtVNVzkHoqem4Ocg_-fmRgCdtSSrKvw_KqjpxoksOi2EocauqogKJebeYgAoheSMEnrSz4G70OrTHwUmhI4z0
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -132,13 +127,15 @@ FINDSTR: Line 12 is too long.
 FINDSTR: Line 12 is too long.
 x-subject-token: <TOKEN_VALUE>
 ```
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Usage example for the token
 

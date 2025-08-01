@@ -2,12 +2,9 @@
 
 ## Просмотр списка групп безопасности и информации о них
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -19,8 +16,9 @@
 
    Откроется страница с подробной информацией о ней.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -42,8 +40,9 @@
    openstack security group rule list --long <ID группы безопасности>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Создание группы безопасности
 
@@ -53,12 +52,9 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -68,8 +64,9 @@
 1. Добавьте описание.
 1. Нажмите **Создать группу**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -91,17 +88,15 @@
    openstack security group create --description <описание группы> <название новой группы>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Редактирование имени и описания группы безопасности
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -116,8 +111,9 @@
 
 1. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -127,19 +123,17 @@
    openstack security group set --description <описание> --name <название> <ID группы>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Добавление правила
 
 Правило группы безопасности — это набор параметров, определяющих условия прохождения трафика. Правила объединяются в группы, которые в свою очередь применяются для портов инстансов.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -151,40 +145,40 @@
 1. Укажите порт, через который будет разрешен трафик.
 1. В разделе **Удаленный адрес** укажите адрес, для которого выбранный тип трафика будет разрешен:
 
-   <tabs>
-   <tablist>
-   <tab>Все IP-адреса</tab>
-   <tab>Диапазон IP-адресов</tab>
-   <tab>Группа безопасности</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Все IP-адреса)}
+      
    Правило будет разрешать трафик для всех IP-адресов.
 
-   </tabpanel>
-   <tabpanel>
-
-   Правило будет разрешать трафик только для указанного IP-адреса:
+   {/tab}
+   
+   {tab(Диапазон IP-адресов)}
+   
+   Правило будет разрешать трафик только для указанного IP-адреса: 
    
      1. В появившемся поле укажите IP-адрес узла или подсети с маской в формате `0.0.0.0/0`. 
       
      1. (Опционально) Чтобы разрешить трафик для вашего устройства, нажмите **Использовать мой IP**.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Группа безопасности)}
+   
    Правило будет разрешать обмен трафиком с узлами, для которых назначена указанная группа безопасности.
 
    В появившемся поле выберите группу безопасности.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Опционально) Нажмите **Добавить описание** и в появившимся поле опишите новое правило.
 1. Нажмите **Сохранить правило**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -213,17 +207,15 @@
    - `--egress` — применить правило для исходящего трафика.
    - `--ethertype` — значение EtherType (IPv4, IPv6).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление правила
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -234,8 +226,9 @@
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для правила, которое требуется удалить, и выберите пункт **Удалить**.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -251,19 +244,17 @@
    openstack security group rule delete <ID правила>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Назначение группы правил на инстанс
 
 Для применения набора правил к виртуальной машине, группу безопасности, содержащую этот набор, необходимо применить к виртуальной машине.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -273,8 +264,9 @@
 1. Выберите инстансы, к которым будет добавлена группа.
 1. Нажмите **Добавить группу правил**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -284,17 +276,15 @@
    openstack server add security group <ID инстанса> <ID группы безопасности>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Отвязать группу от инстанса
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -304,8 +294,9 @@
 1. Нажмите значок корзины.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -315,17 +306,15 @@
    openstack server remove security group <ID инстанса> <ID группы безопасности>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление группы безопасности
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {note:warn}
 
@@ -340,8 +329,9 @@
 1. Перейдите в раздел **Виртуальные сети** → **Настройки firewall**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для группы безопасности, которую требуется удалить, и выберите пункт **Удалить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -351,5 +341,6 @@
    openstack security group delete <ID группы безопасности>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

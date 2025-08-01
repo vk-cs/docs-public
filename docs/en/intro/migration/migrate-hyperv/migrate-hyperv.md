@@ -15,12 +15,9 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
 ## 2. Prepare the VM for migration
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 1. [Check](../check-virtio) availability of VirtIO drivers in the system.
 2. Check availability QEMU Guest Agent:
@@ -31,8 +28,9 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
    If necessary, [install](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 1. [Install](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) VirtIO drivers.
 2. [Install](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
@@ -41,25 +39,24 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
    1. [Download](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) Virtio Registry File.
    2. Run the file and allow changes to be made to the registry.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Export the virtual machine
 
-<tabs>
-<tablist>
-<tab>Hyper-V Manager</tab>
-<tab>PowerShell</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Hyper-V Manager)}
 
 1. Stop the VM.
 2. Start the Hyper-V Manager.
 3. Right-click on the required VM and select **Export**.
 4. Select where to place the VM files and click **Export**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(PowerShell)}
 
 1. Stop the VM.
 2. Run PowerShell as an administrator.
@@ -69,8 +66,9 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
    Export-VM -Name <VM name> -Path <file export path>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 4. Import the VM image to VK Cloud
 

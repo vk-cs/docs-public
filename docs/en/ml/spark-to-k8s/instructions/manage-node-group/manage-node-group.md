@@ -1,10 +1,8 @@
 ## Adding a worker node group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
 1. Select the project where the desired cluster is located.
@@ -13,8 +11,9 @@
 1. Set the [settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings) for the node group.
 1. Confirm the operation.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Configuring scaling parameters
 

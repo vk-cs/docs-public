@@ -321,12 +321,9 @@ To deploy a DNS server:
 
 1. Check that the DNS queries are successful:
 
-   <tabs>
-   <tablist>
-   <tab>Without specifying a DNS server</tab>
-   <tab>With explicitly specified DNS server</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Without specifying a DNS server)}
 
    ```console
    nslookup cloud.vk.com && \
@@ -354,8 +351,9 @@ To deploy a DNS server:
    Address: 10.254.0.1
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(With explicitly specified DNS server)}
 
    ```console
    nslookup cloud.vk.com 169.254.0.10 && \
@@ -383,8 +381,9 @@ To deploy a DNS server:
    Address: 10.254.0.1
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. End the bash session in the `dnsutils` pod:
 
@@ -396,12 +395,9 @@ To deploy a DNS server:
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f https://k8s.io/examples/admin/dns/dnsutils.yaml
@@ -409,16 +405,18 @@ To deploy a DNS server:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f https://k8s.io/examples/admin/dns/dnsutils.yaml; `
    kubectl  -f nodelocaldns.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

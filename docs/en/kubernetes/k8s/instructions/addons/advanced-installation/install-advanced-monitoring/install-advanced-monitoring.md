@@ -4,23 +4,16 @@
 
 Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
-<tabs>
-<tablist>
-<tab>Standard installation</tab>
-<tab>Installation on dedicated worker nodes</tab>
-<tab>Quick installation</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Standard installation)}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -44,9 +37,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Create a Terraform configuration file with data about the add-on being installed in the `vkcs_kubernetes_addon` block:
 
@@ -89,23 +83,23 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
 1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Installation on dedicated worker nodes)}
 
 1. Prepare a dedicated group of worker nodes to install the add-on, if it has not already been done:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -120,18 +114,16 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -147,13 +139,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
-      <tabs>
-      <tablist>
-      <tab>Ttolerations</tab>
-      <tab>nodeSelector</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Ttolerations)}
+            
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -171,9 +160,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - `prometheus.prometheusSpec.tolerations`;
       - `kube-state-metrics.tolerations`.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(nodeSelector)}
+      
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -188,8 +178,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - `prometheus.prometheusSpec.nodeSelector`;
       - `kube-state-metrics.nodeSelector`.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       {note:warn}
 
@@ -201,19 +192,22 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    Use the instructions from the standard add-on installation. In the add-on settings, set the necessary exceptions (tolerations) and node selectors (nodeSelector).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
 1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Quick installation)}
 
 {note:info}
 
@@ -225,13 +219,10 @@ If this does not suit you, perform a **standard installation** or **installation
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -248,19 +239,22 @@ If this does not suit you, perform a **standard installation** or **installation
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    Use the instructions from the standard add-on installation.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
 1. [Get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
@@ -290,11 +284,9 @@ This operation is [available](#installing_addon) if the monitoring add-on `kube-
 
 The Prometheus disk stores cluster monitoring data. If there is not enough space for them, or you want to increase the performance of the Prometheus disk, increase the disk size.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 2. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
@@ -305,8 +297,9 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 7. Set the required disk size. The operation works only in the direction of increase.
 8. Click the **Confirm** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Getting Grafana password from Kubernetes secret
 
@@ -318,12 +311,9 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Kubernetes Dashboard</tab>
-<tab>kubectl</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Kubernetes Dashboard)}
 
 1. [Connect to the cluster](../../../../connect/k8s-dashboard) via Kubernetes Dashboard.
 1. In the drop-down list next to the left of the search bar, select a namespace `prometheus-monitoring`.
@@ -333,37 +323,38 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
    The password will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(kubectl)}
 
 1. [Make sure](../../../../connect/kubectl#checking_connection_to_cluster) that you can connect to the cluster using `kubectl`.
 
 1. Get the password to sign in to Grafana from the Kubernetes secret:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Windows (PowerShell))}
+      
    ```console
    $ENCODED = kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}'; `
    [System.Text.Encoding]::Utf8.GetString([System.Convert]::FromBase64String($ENCODED)) | Write-Output
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Linux (bash)/macOS (zsh))}
+   
    ```console
    kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}' | base64 --decode
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Resetting Grafana password
 

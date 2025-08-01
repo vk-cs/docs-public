@@ -4,26 +4,23 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 ## View a list of advanced routers
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**. A list of routers will be displayed. For advanced routers, the **Router Type** column indicates `Advanced`.
 1. Click the name of the router you need. A page will open with detailed information about it. You can [edit](#editing_an_advanced_router) router parameters on this page .
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding an advanced router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**.
@@ -42,16 +39,15 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 1. Click the **Add** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing an advanced router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**.
@@ -72,16 +68,15 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 1. Click the **Save** button to complete the editing.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing an advanced router statistics
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -97,18 +92,17 @@ The tab provides statistical information on the advanced router:
 - Information about BGP sessions: session status, neighbor name, incoming and outgoing BGP announcements, date and time of the last change in the BGP session.
 - Information about static routes: destination network, intermediate node and status.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing a VPN information
 
 You can find out information about VPN tunnels that use the advanced router.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -118,8 +112,9 @@ The tab displays statistical information on the VPN tunnels connected to the adv
 
 To find out the detailed information about a VPN tunnel, click its name. The [VPN settings page](../../vpn) will open.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting an advanced router
 

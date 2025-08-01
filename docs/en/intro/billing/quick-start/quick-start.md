@@ -38,17 +38,15 @@ One card can be linked to only one project. When linking the card, a small amoun
 
 ## 3. Customize the project
 
-<tabs>
-<tablist>
-<tab>Individuals</tab>
-<tab>Legal entities</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Individuals)}
 
 [Configure auto-completion](../instructions/add-card#configure_auto_completion) from the card, if it was not configured earlier.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Legal entities)}
 
 1. [Disable](../instructions/add-card#configure_auto_completion) auto-completion from the card if it was enabled earlier.
 1. Set up [electronic document management (EDM)](../concepts/report) with VK Cloud, following the instructions of your EDM operator.
@@ -57,24 +55,23 @@ One card can be linked to only one project. When linking the card, a small amoun
 
 1. [Go through pre-registration](../instructions/corporate#additional_registration_of_legal_entities) to generate invoices for payment with full details.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 4. Add the initial amount to the payment account
 
-<tabs>
-<tablist>
-<tab>Individuals</tab>
-<tab>Legal entities</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Individuals)}
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
 1. [Top up](../instructions/payment#making_a_payment) the payment account of the project in a [convenient way](../concepts/payment-methods) for you.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Legal entities)}
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
@@ -83,8 +80,9 @@ One card can be linked to only one project. When linking the card, a small amoun
 
 Crediting of funds can take up to three banking days.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Funds will be debited from the payment account as the paid resources are used. If the project becomes negative, it will be [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 

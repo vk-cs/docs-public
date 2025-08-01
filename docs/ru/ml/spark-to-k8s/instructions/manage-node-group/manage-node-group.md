@@ -1,10 +1,8 @@
 ## Добавление группы worker-узлов
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный кластер.
@@ -13,8 +11,9 @@
 1. Задайте [настройки](/ru/kubernetes/k8s/instructions/helpers/node-group-settings) для группы узлов.
 1. Подтвердите выполнение операции.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка параметров масштабирования
 

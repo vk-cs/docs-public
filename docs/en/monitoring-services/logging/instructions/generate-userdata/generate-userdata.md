@@ -6,11 +6,9 @@ The following credentials are used to record logs to the Cloud Logging service:
 
 To generate the credentials for the service:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Monitoring** → **Logging**.
@@ -19,5 +17,6 @@ To generate the credentials for the service:
 1. Click the **Generate** button.
 1. Save the received credentials.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

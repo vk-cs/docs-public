@@ -16,13 +16,9 @@
 
 Получите токен:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-<tab>cURL</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. В разделе [Настройки проекта](https://msk.cloud.vk.com/app/project/keys/) перейдите на вкладку **Доступ по API**.
 
@@ -32,8 +28,9 @@
 
     Срок действия токена отображается при наведении мыши на значок ![Копировать](assets/copy-icon.svg "inline"). Если токен скоро просрочится, воспользуйтесь кнопкой **Перевыпустить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте.
 1. Выполните команду:
@@ -44,20 +41,18 @@
 
     Значение токена будет выведено в консоль.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(cURL)}
 
 1. Установите утилиту [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md), если она еще не установлена.
 1. [Пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli) в проекте. Для работы с клиентом OpenStack и с утилитой cURL процедура аутентификации одинакова.
 1. Выполните команду для вашей операционной системы:
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    <tab>Windows (cmd)</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Linux)}
+        
     ```console
     curl -X POST \
     -H "Content-Type: application/json" \
@@ -87,28 +82,27 @@
     }' \
     -i "https://infra.mail.ru:35357/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
     ```
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Windows (cmd))}
+    
     ```console
     curl -X POST ^
     -H "Content-Type: application/json" ^
     -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
     -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
     ```
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 Значение токена будет выведено в параметре `x-subject-token`.
 
 {cut(Примеры ответов на запрос получения токена)}
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 ```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -116,8 +110,9 @@
 100 27038  100 26470  100   568  99259   2129 --:--:-- --:--:-- --:--:-- 99138
 x-subject-token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbMx8wDd7PNO704lf00QX3--BRvFB-UcI5IQq5GtVNVzkHoqem4Ocg_-fmRgCdtSSrKvw_KqjpxoksOi2EocauqogKJebeYgAoheSMEnrSz4G70OrTHwUmhI4z0
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -129,13 +124,15 @@ FINDSTR: Слишком длинная строка 12.
 x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Пример использования токена
 

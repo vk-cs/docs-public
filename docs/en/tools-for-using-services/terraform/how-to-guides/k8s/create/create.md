@@ -69,13 +69,9 @@ In the examples below, clusters with the following configuration are created:
 
 Select one of the cluster creation examples and create the `main.tf` Terraform configuration file with the necessary content:
 
-<tabs>
-<tablist>
-<tab>With no advanced settings</tab>
-<tab>With redefining pod subnet</tab>
-<tab>With installing Docker Registry</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(With no advanced settings)}
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -140,8 +136,9 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(With redefining pod subnet)}
 
 The `labels = { calico_ipv4pool }` setting of the `vkcs_kubernetes_cluster` resource is used to redefine the pod subnet.
 
@@ -214,8 +211,9 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(With installing Docker Registry)}
 
 The `labels = { docker_registry_enabled }` setting of the `vkcs_kubernetes_cluster` resource is used to install the [service](/en/kubernetes/k8s/concepts/addons-and-settings/addons).
 
@@ -288,8 +286,9 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Create the necessary resources using Terraform
 

@@ -37,14 +37,9 @@
 
 Создайте файл конфигурации Terraform `secgroup.tf`. Содержание зависит от нужных правил ограничения трафика:
 
-<tabs>
-<tablist>
-<tab>Для отдельных портов</tab>
-<tab>Для всех портов</tab>
-<tab>Только входящий трафик</tab>
-<tab>Преднастроенные группы</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Для отдельных портов)}
 
 В файле описана следующая конфигурация правил безопасности:
 
@@ -54,8 +49,9 @@
 
   {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Для всех портов)}
 
 В файле описана следующая конфигурация правил безопасности:
 
@@ -64,8 +60,9 @@
 
   {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Только входящий трафик)}
 
 В файле описана следующая конфигурация правил безопасности:
 
@@ -74,8 +71,9 @@
 
   {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Преднастроенные группы)}
 
 В файле описана конфигурация для добавления в проект [преднастроенных групп безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups).
 
@@ -85,8 +83,9 @@
 
   {include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Здесь:
 

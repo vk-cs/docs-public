@@ -6,12 +6,8 @@ You can create a CDN resource in two ways:
 
 ## Creating resource via CDN service interface
 
-<tabs>
-<tablist>
-<tab>M</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(M)}
 
 {include(/en/_includes/_open-cdn.md)[tags=resources]}
 
@@ -31,26 +27,22 @@ You can create a CDN resource in two ways:
 
    - **Content request**: select the type of origins that CDN servers will request content from:
 
-     <tabs>
-     <tablist>
-     <tab>(By default) From one origin</tab>
-     <tab>From group of origin</tab>
-     </tablist>
-     <tabpanel>
+     {tabs}
+     {tab((By default) From one origin)}
 
      {include(/en/_includes/_cdn_origin.md)[tags=content_source]}
 
      An origin group with a single origin will be automatically created after the CDN resource is set up.
 
-     </tabpanel>
-     <tabpanel>
+     {/tab}
+     {tab(From group of origin)}
 
      Select an origin group from the drop-down list.
 
      If the required group is not in the list, click **Add source group** and add [new origin group](../manage-origin-groups).
 
-     </tabpanel>
-     </tabs>
+     {/tab}
+     {/tabs}
 
 1. In the **Personal domain** field, specify the personal domain that will be used for the CDN. When users request this domain, content will be delivered using the CDN. Use the Fully Qualified Domain Name (FQDN). Do not add a root domain name: you can use `cdn.example.com`, but not `cdn.example.com.`.
 
@@ -87,8 +79,8 @@ You can create a CDN resource in two ways:
 
 1. Click **Create resource**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+{tab(API)}
 
 To create a CDN resource, use the `POST /projects/{project_id}/resources/` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
 
@@ -107,16 +99,13 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
    ]
 }'
 ```
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Creating resource via bucket interface
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/storage/s3/instructions/buckets/create-bucket "change-lang").
@@ -153,8 +142,8 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 The creation of the origin group and CDN resource will start for the bucket. The created items will be available in the **CDN** section of your VK Cloud management console.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Preparing the CDN resource for operation
 

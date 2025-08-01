@@ -44,26 +44,25 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    The path to your kubeconfig files may differ from the example below.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## {heading(1. Get information you need to update your add-on)[id=1_get_information_you_need_to_update_your_addon]}
 
@@ -81,12 +80,9 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    The values of your variables may differ from the example below.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export CHART_NAME="kube-prometheus-stack"
@@ -94,16 +90,18 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $CHART_NAME="kube-prometheus-stack"
    $NAMESPACE="prometheus-monitoring"
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
 
@@ -135,12 +133,9 @@ In addition, the following Kubernetes resources, which are also used by the add-
 
 Before you update the add-on, protect the persistent volumes used by this add-on from deletion, and remove the mentioned Kubernetes resources using one of the methods below.
 
-<tabs>
-<tablist>
-<tab>Ready-to-use bash script for Linux</tab>
-<tab>Separate commands for Linux/macOS/Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Ready-to-use bash script for Linux)}
 
 1. Create a file with the script code:
 
@@ -393,8 +388,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Separate commands for Linux/macOS/Windows)}
 
 1. Get the list of PVs that are used by the add-on via PVCs in the add-on namespace:
 
@@ -496,8 +492,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    kubectl delete ns $NAMESPACE
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(3. Update add-on version)[id=3_update_addon_version]}
 
@@ -510,13 +507,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    1. Review the previous version of the add-on configuration code, [obtained earlier](#1_get_information_you_need_to_update_your_addon). Find code fragments that are responsible for setting up the storage for the following add-on components:
 
-      <tabs>
-      <tablist>
-      <tab>Grafana</tab>
-      <tab>Alert Manager</tab>
-      <tab>Prometheus</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Grafana)}
 
       ```yaml
       grafana:
@@ -533,8 +526,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
         ...
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Alert Manager)}
 
       ```yaml
       alertmanager:
@@ -556,8 +550,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
                     storage: 1Gi
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Prometheus)}
 
       ```yaml
       prometheus:
@@ -579,8 +574,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
                     storage: 10Gi
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Review the configuration code for the new version of the add-on that you plan to install.
 

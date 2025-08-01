@@ -1,26 +1,23 @@
 ## Viewing groups of service instances
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Click the name of the group.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Viewing network connectivity
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
@@ -28,16 +25,15 @@
 1. Click the name of the group.
 1. Go to the **Сетевая связность** tab. A list of networks and services connected with them will open.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing a group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
@@ -63,8 +59,9 @@
 
 1. Click the **Save** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a group
 
@@ -74,11 +71,9 @@ Deleting a group does not delete the service instances that are part of it.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several groups at once by selecting them using the checkboxes and clicking the **Delete** button above the list of groups.
 
@@ -92,5 +87,6 @@ This is a group operation: you can delete several groups at once by selecting th
 
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -101,14 +101,8 @@ Examples:
 
 Select the option:
 
-<tabs>
-<tablist>
-<tab>Do not change</tab>
-<tab>Custom</tab>
-<tab>(By default) Forward</tab>
-</tablist>
-<tabpanel>
-
+{tabs}
+{tab(Do not change)}
 The domain name or IP address of the first origin from the origin group will be used as the header value.
 
 Example:
@@ -120,8 +114,8 @@ Let there is a group of two origins configured:
 
 Then the `Host: 203.0.113.222:8080` header is used, when CDN servers request any of these origins.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+{tab(Custom)}
 
 The specified domain name or IP address value will be used as the header.
 
@@ -136,9 +130,8 @@ Also let the parameter has the `content-source.example.org` value.
 
 Then the `Host: content-source.example.org` header is used, when CDN servers request any of these origins.
 
-</tabpanel>
-<tabpanel>
-
+{/tab}
+{tab((By default) Forward)}
 The name of the first configured personal domain will be used as the header.
 
 Example:
@@ -155,8 +148,8 @@ Also let two personal domains are configured for CDN:
 
 Then the `Host: cdn.contoso.com` header is used, when CDN servers request any of these origins.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 {note:warn}
 

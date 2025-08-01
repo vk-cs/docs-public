@@ -27,12 +27,9 @@ Spark Connect allows to remotely connect to a Spark cluster and work with it via
 
 Install PySpark and all package dependencies to work with Spark Connect in one of the ways:
 
-<tabs>
-<tablist>
-<tab>Python</tab>
-<tab>Jupyter Notebook</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Python)}
 
 ```console
 pip3 install pyspark
@@ -43,8 +40,9 @@ pip3 install protobuf
 pip3 install grpcio-status
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Jupyter Notebook)}
 
 ```console
 %pip install pyspark
@@ -55,9 +53,9 @@ pip3 install grpcio-status
 %pip install grpcio-status
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
 
+{/tabs}
 
 ## 2. Connect to cluster
 

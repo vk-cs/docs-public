@@ -9,12 +9,9 @@ The total cost will be displayed at the last step of connecting the service.
 
 There are two types of tariff plans available for charging services:
 
-<tabs>
-<tablist>
-<tab>Prepaid</tab>
-<tab>Postpaid</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Prepaid)}
 
 - The cost is fixed.
 - Payment is debited once in the reporting period on the date of activation of the service.
@@ -24,8 +21,9 @@ If there are not enough funds when debiting, the instance status changes:
 - If a free promo tariff is available for an instance, the instance is forcibly transferred to it.
 - If a free promo tariff is not available for an instance, the instance is blocked for use until funds are replenished.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Postpaid)}
 
 - The cost is calculated based on the amount of service resources actually used (for example, the amount of storage used).
 - The frequency and day of debiting depend on the specific service.
@@ -38,8 +36,9 @@ If there are not enough funds when debiting, the instance status changes:
    - If the balance remains positive after debiting, the period is reset to zero, a notification is received about the need for [manual activation](../instructions/pr-instance-manage#updating_access_to_a_service_instance) for the service instance.
    - If there are not enough funds, after the expiration of the period, the service instance is deleted without the possibility of recovery.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 

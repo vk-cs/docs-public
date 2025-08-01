@@ -52,13 +52,9 @@ After the VM is successfully created, wait at least 10-15 minutes. During this p
 
 You can connect to a Linux-based virtual machine created from an Ubuntu image via SSH.
 
-<tabs>
-<tablist>
-<tab>Linux/macOS</tab>
-<tab>Windows 10/11</tab>
-<tab>Windows 7/8</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux/macOS)}
 
 Run the command in the terminal:
 
@@ -84,8 +80,9 @@ Are you sure you want to continue connecting (yes/no)?
 
 Type `yes` in the terminal and press _Enter_.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 10/11)}
 
 Run the command in the terminal:
 
@@ -111,8 +108,9 @@ Are you sure you want to continue connecting (yes/no)?
 
 Type `yes` in the terminal and press _Enter_.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 7/8)}
 
 In Windows 7/8, use the PuTTY application to connect via SSH.
 
@@ -150,8 +148,9 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
       If everything is configured correctly, a connection to the server will be established.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Delete unused resources
 

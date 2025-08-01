@@ -4,12 +4,9 @@
 
 Чтобы очистить кеш CDN-ресурса:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -24,8 +21,9 @@
 
 1. Нажмите кнопку **Очистить кеш**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/purge`.
 
@@ -55,8 +53,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Наполнение кеша
 
@@ -70,12 +69,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 Чтобы наполнить кеш CDN-ресурса:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -83,8 +79,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 1. В блоке **Наполнение кеша** укажите путь к файлам на источнике без указания домена и по одному на строку.
 1. Нажмите кнопку **Наполнить кеш**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/prefetch`.
 
@@ -104,8 +101,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
     }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка кода ответа HTTP
 
@@ -113,12 +111,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 Чтобы настроить код ответа HTTP:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -128,8 +123,9 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 1. Введите URL для перенаправления или текст для кода ответа.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -160,8 +156,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Сжатие GZip
 
@@ -171,12 +168,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы подключить сжатие GZip:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -184,8 +178,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Включите опцию **Включить сжатие GZip**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -211,8 +206,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Сжатие Brotli
 
@@ -224,12 +220,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы подключить сжатие Brotli:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -238,8 +231,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Выберите в списке типы сжимаемого контента. Тип `text/html` выбран по умолчанию, его нельзя удалить из списка.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -269,8 +263,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Сжатие на источнике
 
@@ -280,12 +275,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы CDN-ресурс запрашивал сжатый контент с источника:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -293,8 +285,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Включите опцию **Запрашивать сжатие на источнике**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -320,8 +313,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Оптимизация доставки больших файлов
 
@@ -341,12 +335,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы подключить оптимизацию доставки больших файлов:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -354,8 +345,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Включите опцию **Включить оптимизацию доставки больших файлов**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -381,8 +373,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 <!-- Скрыто по задаче VKCSDOCS-1454 ## Включение поддержки WebSocket
 
@@ -390,12 +383,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы подключить поддержку WebSocket на CDN-ресурсе:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный CDN-ресурс.
@@ -405,8 +395,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 1. Включите опцию **Включить WebSocket**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 - При создании CDN-ресурса воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/`.
 
@@ -434,5 +425,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>--!>
+{/tab}
+
+{/tabs}--!>

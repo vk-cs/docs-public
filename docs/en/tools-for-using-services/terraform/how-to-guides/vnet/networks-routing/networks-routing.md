@@ -58,14 +58,9 @@ The infrastructure of the example:
 
    If necessary, adjust the values of the variables. First find out their acceptable values:
 
-   <tabs>
-   <tablist>
-   <tab>image_flavor</tab>
-   <tab>compute_flavor</tab>
-   <tab>key_pair_name</tab>
-   <tab>availability_zone_name</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(image_flavor)}
 
    Using OpenStack CLI:
 
@@ -73,8 +68,9 @@ The infrastructure of the example:
    openstack image list
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(compute_flavor)}
 
    Using CLI:
 
@@ -82,8 +78,9 @@ The infrastructure of the example:
    openstack flavor list
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(key_pair_name)}
 
    Using CLI:
 
@@ -91,13 +88,15 @@ The infrastructure of the example:
    openstack keypair list
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(availability_zone_name)}
 
    From the document on [availability zones](/en/intro/start/concepts/architecture#az).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Create files describing the basic network infrastructure
 

@@ -4,23 +4,16 @@
 
 Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
-<tabs>
-<tablist>
-<tab>Standard installation</tab>
-<tab>Installation on dedicated worker nodes</tab>
-<tab>Quick installation</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Standard installation)}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
     1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
     1. Select the project where the needed cluster is located.
     1. Go to **Containers → Kubernetes Clusters**.
@@ -47,9 +40,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
@@ -71,22 +65,22 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Check out the official Capsule documentation on working with the add-on](https://capsule.clastix.io/docs/general/tutorial).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Installation on dedicated worker nodes)}
 
 1. Prepare a dedicated group of worker nodes to install the add-on, if it has not already been done:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -100,18 +94,16 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -132,13 +124,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Set the necessary tolerations and nodeSelector in the add-on setup code:
 
-      <tabs>
-      <tablist>
-      <tab>Tolerations</tab>
-      <tab>nodeSelector</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Tolerations)}
+            
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -149,9 +138,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       Set this toleration for the `tolerations` field.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(nodeSelector)}
+      
       ```yaml
       nodeSelector:
         add-onNodes: dedicated
@@ -159,8 +149,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       Set this selector for the `nodeSelector` field.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       {note:warn}
 
@@ -172,9 +163,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
@@ -196,13 +188,15 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Check out the official Capsule documentation on working with the add-on](https://capsule.clastix.io/docs/general/tutorial).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Quick installation)}
 
 {note:info}
 
@@ -214,13 +208,10 @@ If this is not suitable for you, perform a **standard installation** or **instal
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -240,9 +231,10 @@ If this is not suitable for you, perform a **standard installation** or **instal
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
@@ -264,13 +256,15 @@ If this is not suitable for you, perform a **standard installation** or **instal
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Check out the official Capsule documentation on working with the add-on](https://capsule.clastix.io/docs/general/tutorial).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 

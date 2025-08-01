@@ -37,15 +37,10 @@
 
 1. Если утилита `psql` не установлена, установите ее:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (APT)</tab>
-   <tab>Linux (RPM)</tab>
-   <tab>macOS (Homebrew)</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux (APT))}
+      
    1. Подключите репозиторий PostgreSQL:
 
       ```console
@@ -62,9 +57,10 @@
       sudo apt install -y postgresql-client
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
 
+   {tab(Linux (RPM))}
+   
    1. Подключите репозиторий PostgreSQL:
 
       1. Заполните опросник на [странице загрузки PostgreSQL для Linux семейства RedHat](https://www.postgresql.org/download/linux/redhat/):
@@ -79,26 +75,25 @@
 
          Ее вид зависит от выбранного дистрибутива:
 
-         <tabs>
-         <tablist>
-         <tab>yum</tab>
-         <tab>dnf</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
 
+         {tab(yum)}
+                  
          ```console
          sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
 
+         {tab(dnf)}
+         
          ```console
          sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
       1. Выполните скопированную команду.
 
@@ -110,30 +105,30 @@
 
    1. Установите утилиту `psql`:
 
-      <tabs>
-      <tablist>
-      <tab>yum</tab>
-      <tab>dnf</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
 
+      {tab(yum)}
+            
       ```console
       sudo yum install -y postgresql
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(dnf)}
+      
       ```console
       sudo dnf install -y postgresql
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
 
-   </tabpanel>
-   <tabpanel>
+      {/tabs}
 
+   {/tab}
+
+   {tab(macOS (Homebrew))}
+   
    1. Установите утилиту `psql`:
 
       ```zsh
@@ -148,9 +143,10 @@
 
       Это необходимо, чтобы запускать утилиту `psql`, не указывая полный путь к ее исполняемому файлу.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
 
+   {tab(Windows)}
+   
    1. [Загрузите инсталлятор от EDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) для самой актуальной версии PostgreSQL.
 
    1. Выполните установку.
@@ -170,8 +166,9 @@
          C:\Program Files\PostgreSQL\15\bin\
          ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Создайте инстанс БД PostgreSQL
 
@@ -252,28 +249,27 @@
 
 1. Подключитесь к инстансу БД по SSH, используя приватный SSH-ключ, полученный при [создании инстанса БД](#1_sozdayte_instans_bd_postgresql):
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
 
+   {tab(Linux/macOS)}
+      
    ```console
    chmod 0600 <путь/к/ключу/ключ.pem>
    ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
 
+   {tab(Windows)}
+   
    ```console
    ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Посмотрите логи инстанса:
 

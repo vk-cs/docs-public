@@ -1,17 +1,20 @@
 {include(/ru/_includes/_project_create_header.md)}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>VK Cloud Аккаунт</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
+
 {include(/ru/_includes/_project_create_tab_lk.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(VK Cloud Аккаунт)}
+
 {include(/ru/_includes/_project_create_tab_account.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Что дальше?
 

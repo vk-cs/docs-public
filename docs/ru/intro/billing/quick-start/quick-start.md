@@ -36,17 +36,15 @@
 
 ## 3. Донастройте проект
 
-<tabs>
-<tablist>
-<tab>Физические лица</tab>
-<tab>Юридические лица</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Физические лица)}
 
 [Настройте автопополнение](../instructions/add-card#nastroit_avtopopolnenie) с карты, если оно не было настроено ранее.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Юридические лица)}
 
 1. Отключите [автопополнение](../instructions/add-card#nastroit_avtopopolnenie) с карты, если оно было включено ранее.
 1. Настройте [электронный документооборот (ЭДО)](../concepts/report#edm) с VK Cloud, следуя инструкциям вашего оператора ЭДО.
@@ -55,24 +53,23 @@
 
 1. [Пройдите дорегистрацию](/ru/intro/billing/instructions/corporate#doregistraciya_yul), чтобы формировать счета на оплату с полными реквизитами.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 4. Зачислите на лицевой счет начальную сумму
 
-<tabs>
-<tablist>
-<tab>Физические лица</tab>
-<tab>Юридические лица</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Физические лица)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
 1. [Пополните](../instructions/payment#vnesenie_sredstv) лицевой счет проекта удобным для вас [способом](../concepts/payment-methods).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Юридические лица)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
@@ -81,8 +78,9 @@
 
 Зачисление средств может занимать до трех банковских дней.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Средства с лицевого счета будут списываться по мере использования платных ресурсов. Если проект уйдет в минус, он будет [заморожен](/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta).
 

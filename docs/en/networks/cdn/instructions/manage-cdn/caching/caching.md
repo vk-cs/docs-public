@@ -7,12 +7,9 @@ The option allows to define content storage parameters in the cache of a CDN res
 
 To configure the caching for the CDN resource:
 
-<tabs>
-<tablist>
-<tab>Personal accaunt</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Personal account)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -20,20 +17,18 @@ To configure the caching for the CDN resource:
 1. Enable the **CDN caching on** option.
 1. Select a configuration option:
 
-   <tabs>
-   <tablist>
-   <tab>Origin settings</tab>
-   <tab>Settings</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Origin settings)}
+      
       The CDN resource will cache content for the duration set on the origin in the Cache-Control header.
 
       If no Cache-Control is specified on the origin, the default time (4 days) is used. To change this time, select a value in the **Default cache lifetime** parameter. The chosen value will apply for responses with codes 200, 201, 204, 206, 301, 302, 303, 304, 307, 308. Responses with other codes will not be cached.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Settings)}
+   
       The CDN resource will cache the content for the time specified in its settings:
 
       1. Specify the cache lifetime. This value will only apply to responses with codes 200, 206, 301, 302. Responses with 4XX, 5XX codes will not be cached.
@@ -43,13 +38,15 @@ To configure the caching for the CDN resource:
          1. Select the response code. For all types of responses, select the `any` value.
          1. Select the caching time for this response.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -85,8 +82,9 @@ The example sets the caching settings for the CDN resource:
 - for 100 responses, content is cached for 1 hour
 - for 404 responses, content is not cached
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Browser сaching сonfigurations
 
@@ -94,12 +92,9 @@ The option allows to set parameters for storing content in the cache of end-user
 
 To set up user's browser caching:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -107,31 +102,31 @@ To set up user's browser caching:
 1. Enable the **Browser caching** option.
 1. Select a configuration option:
 
-   <tabs>
-   <tablist>
-   <tab>Origin settings</tab>
-   <tab>Settings</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Origin settings)}
+      
       The browser will cache content for the duration set on the origin in the Cache-Control header.
 
       If no Cache-Control is specified on the origin, content is not cached.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Settings)}
+   
       Caching settings for user browsers are specified in the CDN resource settings.
 
       Specify the cache lifetime. This value will apply to responses with codes 200, 201, 204, 206, 301, 302, 303, 304, 307, 308 if caching headers are not configured at the origin. Responses with other codes will not be cached.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -157,8 +152,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Ignoring Set-Cookie header when caching
 
@@ -166,12 +162,9 @@ Requests to a CDN server to get the same file may contain one path to the file b
 
 To have the CDN resource ignore `Set-Cookie` headers in HTTP requests:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -179,8 +172,9 @@ To have the CDN resource ignore `Set-Cookie` headers in HTTP requests:
 1. Enable the **Ignore Set-Cookie** option.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -206,8 +200,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Ignoring query parameters when caching
 
@@ -215,12 +210,9 @@ Requests to a CDN server to get the same file may contain one path to the file b
 
 To have the CDN resource ignore parameters in HTTP requests:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -235,8 +227,9 @@ To have the CDN resource ignore parameters in HTTP requests:
 1. For types **Ignore everything except** and **Ignore only** specify the parameters. Enter each parameter in a new line.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -324,5 +317,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

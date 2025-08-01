@@ -8,12 +8,9 @@
 
 Чтобы настроить Docker Hub:
 
-<tabs>
-<tablist>
-<tab>Приватный реестр с аддоном Docker Registry</tab>
-<tab>Daemonset для Cloud Containers</tab>
-</tablist>
-  <tabpanel>
+{tabs}
+
+{tab(Приватный реестр с аддоном Docker Registry)}
 
   1. [Установите аддон](../../../k8s/instructions/addons/advanced-installation/install-advanced-registry) Docker Registry, если этого еще не сделано.
   1. Скачайте нужный образ на локальный компьютер. Для этого выполните команду:
@@ -24,8 +21,9 @@
   
   1. [Загрузите](../../../k8s/quick-start#3_zagruzite_nuzhnye_obrazy_v_reestr_docker) скачанный образ в приватный репозиторий.
 
-  </tabpanel>
-  <tabpanel>
+  {/tab}
+
+{tab(Daemonset для Cloud Containers)}
 
   Используйте зеркало в конфигурации [CRI-O](https://cri-o.io/) на рабочих узлах кластера. Для этого примените следующий манифест в кластере [с помощью kubectl](../kubectl) или в [личном кабинете](../../instructions/manage-resources):
 
@@ -116,5 +114,6 @@
             name: registries-conf-d
   ```
 
-  </tabpanel>
-</tabs>
+  {/tab}
+
+{/tabs}

@@ -1,8 +1,6 @@
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Big Data** → **Clusters**.
@@ -16,5 +14,6 @@
 
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -1,10 +1,8 @@
 ## {heading(Viewing list of groups)[id=origin_group_list]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -12,16 +10,15 @@
 
 A list of origin groups will be displayed.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -42,16 +39,15 @@ A list of origin groups will be displayed.
 
 1. Click **Create group**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding origin to group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -65,16 +61,15 @@ A list of origin groups will be displayed.
 
 {include(/en/_includes/_cdn_origin.md)[tags=4XX_5XX]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing origins in group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -104,16 +99,15 @@ A list of origin groups will be displayed.
 
 1. Click **Save changes**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -138,8 +132,9 @@ A list of origin groups will be displayed.
 
 1. Click **Create group**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting group
 
@@ -149,11 +144,9 @@ You cannot delete the origin group if CDN servers use it. To delete such group, 
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several groups at once by setting the checkboxes.
 
@@ -166,5 +159,6 @@ This is a group operation: you can delete several groups at once by setting the 
    - Click ![ ](/en/assets/more-icon.svg "inline") for the required group and select **Delete group**.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

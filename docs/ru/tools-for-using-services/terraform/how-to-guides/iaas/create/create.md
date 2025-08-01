@@ -41,21 +41,18 @@
 
    При необходимости скорректируйте значения переменных, уточнив их допустимые значения:
 
-   <tabs>
-   <tablist>
-   <tab>compute_flavor</tab>
-   <tab>key_pair_name</tab>
-   <tab>availability_zone_name</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(compute_flavor)}
 
    C помощью OpenStack CLI:
 
    ```console
    openstack flavor list
    ```
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(key_pair_name)}
 
    Воспользуйтесь одним из способов:
 
@@ -81,13 +78,15 @@
 
       2. Скопируйте имя нужной ключевой пары из списка.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(availability_zone_name)}
 
    В статье о [зонах доступности](/ru/intro/start/concepts/architecture#az).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Создайте файл с описанием базовой сетевой инфраструктуры
 
@@ -116,12 +115,9 @@
 
 В зависимости от требуемого варианта конфигурации (ВМ без дополнительных настроек или ВМ с дополнительным диском), поместите в файл содержимое одной из вкладок ниже.
 
-<tabs>
-<tablist>
-<tab>ВМ без дополнительных настроек</tab>
-<tab>ВМ с дополнительным диском</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(ВМ без дополнительных настроек)}
 
 В файле описаны:
 
@@ -185,8 +181,9 @@ output "instance_fip" {
   value = vkcs_networking_floatingip.fip.address
 }
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ВМ с дополнительным диском)}
 
 В файле описаны:
 
@@ -265,8 +262,9 @@ output "instance_fip" {
   value = vkcs_networking_floatingip.fip.address
 }
 ```
-  </tabpanel>
-  </tabs>
+{/tab}
+
+{/tabs}
 
 Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 

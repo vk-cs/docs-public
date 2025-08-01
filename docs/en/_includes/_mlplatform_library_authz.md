@@ -175,19 +175,15 @@ If the authorization was unsuccessful, a similar error message will be displayed
 
 Only a list of access tokens can be retrieved. The list of created registration tokens is not maintained.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Cloud ML Platform library</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app) the VK Cloud management console.
 1. Select the project that holds the tokens.
 1. Go to **ML Platform → Tokens**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+{tab(Cloud ML Platform library)}
 
 {note:err}
 
@@ -210,18 +206,15 @@ When working in a production environment, do not operate tokens in the clear. Us
    print(mlp.get_project_tokens_info())
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## {heading(Getting information about the current access token)[id=get_current_token_details]}
 
 You can only get information about the access token that is currently in use through the Cloud ML Platform library.
 
-<tabs>
-<tablist>
-<tab>Cloud ML Platform library</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Cloud ML Platform library)}
 
 {note:err}
 
@@ -255,17 +248,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 	        exp: None
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 ## Deleting an access token
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Cloud ML Platform library</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app) to the VK Cloud management console.
 1. Select the project where the required token is located.
@@ -273,8 +262,8 @@ When working in a production environment, do not operate tokens in the clear. Us
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired token and select **Delete**.
 1. Click **Confirm**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+{tab(Cloud ML Platform library)}
 
 {note:err}
 
@@ -307,7 +296,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    After executing this script, the selected access token will be deleted.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 {/includetag}

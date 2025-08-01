@@ -66,12 +66,9 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Add the NGINX Helm repository:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
@@ -79,25 +76,24 @@ deployment.apps/tea      3/3     3            3           ...
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Install the Ingress controller with the `NodePort` service by running the command:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress \
@@ -108,8 +104,9 @@ deployment.apps/tea      3/3     3            3           ...
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress `
@@ -119,8 +116,9 @@ deployment.apps/tea      3/3     3            3           ...
     --set controller.service.externalTrafficPolicy=Local
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Wait until the installation of the Ingress-Controller is completed and the port is assigned to the controller.
 
@@ -162,12 +160,9 @@ To configure the load balancer:
       1. Make sure the **Assign external IP** option is enabled.
       1. Set the processing parameters for each type of traffic:
 
-         <tabs>
-         <tablist>
-         <tab>For HTTP traffic</tab>
-         <tab>For HTTPS traffic</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+
+         {tab(For HTTP traffic)}
 
          1. In the **Balancer rules** block, click the **+ Add rule** link.
          1. Select **Assignment protocol** `HTTP`, set for it the **port** that was assigned to the Ingress controller.
@@ -180,8 +175,9 @@ To configure the load balancer:
          1. Click the **Next step** button.
          1. Click the **Add** button.
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(For HTTPS traffic)}
 
          1. In the **Balancer rules** block, click the **+ Add rule** link.
          1. Select **Balancing protocol** `HTTPS`.
@@ -247,8 +243,9 @@ To configure the load balancer:
          1. Click the **Next step** button.
          1. Click the **Add** button.
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
    The load balancer creation operation will start, which will take some time.
 
@@ -334,12 +331,9 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. Run the command:
 
-   <tabs>
-   <tablist>
-   <tab>Coffee</tab>
-   <tab>Tea</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Coffee)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<public IP address of the HTTP load balancer> https://cafe.example.com/coffee
@@ -360,8 +354,9 @@ The following will demonstrate how to create an Ingress resource that works excl
    - interacts with VK Cloud HTTP load balancer (which terminates SSL\TLS sessions);
    - provides access to services corresponding to the deployed applications.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Tea)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<public IP address of the HTTP load balancer> https://cafe.example.com/tea
@@ -382,8 +377,9 @@ The following will demonstrate how to create an Ingress resource that works excl
    - interacts with VK Cloud HTTP load balancer (which terminates SSL\TLS sessions);
    - provides access to services corresponding to the deployed applications.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Delete unused resources
 
@@ -395,12 +391,9 @@ The following will demonstrate how to create an Ingress resource that works excl
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml
@@ -410,8 +403,9 @@ The following will demonstrate how to create an Ingress resource that works excl
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml; `
@@ -420,8 +414,9 @@ The following will demonstrate how to create an Ingress resource that works excl
    kubectl delete namespace example-nginx-ingress-http
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

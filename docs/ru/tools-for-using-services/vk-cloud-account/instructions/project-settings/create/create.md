@@ -1,17 +1,20 @@
 {include(/ru/_includes/_project_create_header.md)}
 
-<tabs>
-<tablist>
-<tab>VK Cloud Аккаунт</tab>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Аккаунт)}
+
 {include(/ru/_includes/_project_create_tab_account.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(Личный кабинет)}
+
 {include(/ru/_includes/_project_create_tab_lk.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 {note:info}
 

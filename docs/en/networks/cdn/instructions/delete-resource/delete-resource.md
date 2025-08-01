@@ -6,11 +6,9 @@ You can delete a CDN resource in two ways:
 
 ## Deleting resource via CDN service interface
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several CDN resources at once by setting the checkboxes.
 
@@ -25,16 +23,15 @@ To delete a CDN resource:
 
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting resource via bucket interface
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project with the bucket you need.
@@ -43,5 +40,6 @@ To delete a CDN resource:
 1. Go to the **CDN** tab.
 1. Disable the **Use CDN for this bucket** option.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

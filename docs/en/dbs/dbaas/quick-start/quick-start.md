@@ -38,15 +38,10 @@ The DB instance is charged and consumes computational resources. After completin
 
 1. If the `psql` utility is not installed, then install it:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (APT)</tab>
-   <tab>Linux (RPM)</tab>
-   <tab>macOS (Homebrew)</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux (APT))}
+      
    1. Connect the PostgreSQL repository:
 
       ```console
@@ -63,9 +58,10 @@ The DB instance is charged and consumes computational resources. After completin
       sudo apt install -y postgresql-client
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
 
+   {tab(Linux (RPM))}
+   
    1. Connect the PostgreSQL repository:
 
       1. Fill in the questionnaire on [RedHat Linux PostgreSQL download page](https://www.postgresql.org/download/linux/redhat/):
@@ -80,26 +76,25 @@ The DB instance is charged and consumes computational resources. After completin
 
          Its appearance depends on the selected platform:
 
-         <tabs>
-         <tablist>
-         <tab>yum</tab>
-         <tab>dnf</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(yum)}
+                  
          ```console
          sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(dnf)}
+         
          ```console
          sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+         
+         {/tabs}
 
       1. Execute the copied command.
 
@@ -111,30 +106,30 @@ The DB instance is charged and consumes computational resources. After completin
 
    1. Install the `psql` utility:
 
-      <tabs>
-      <tablist>
-      <tab>yum</tab>
-      <tab>dnf</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(yum)}
+            
       ```console
       sudo yum install -y postgresql
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(dnf)}
+      
       ```console
       sudo dnf install -y postgresql
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
 
+   {tab(macOS (Homebrew))}
+   
    1. Install the `psql` utility:
 
       ```zsh
@@ -149,9 +144,10 @@ The DB instance is charged and consumes computational resources. After completin
 
       This step is necessary if you want to run the `psql` utility without specifying the full path to its executable file.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows)}
+   
    1. [Download the EDB installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) for the most current PostgreSQL version.
 
    1. Do the installation:
@@ -172,8 +168,9 @@ The DB instance is charged and consumes computational resources. After completin
          C:\Program Files\PostgreSQL\15\bin\
          ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Create PostgreSQL DB instance
 
@@ -254,28 +251,27 @@ The DB instance is charged and consumes computational resources. After completin
 
 1. Connect to DB instace via SSH. Use private SSH key, [obtained during the instance creation](#1_create_postgresql_db_instance):
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS)}
+      
    ```console
    chmod 0600 <path/to/the/key.pem>
    ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
 
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows)}
+   
    ```console
    ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. View DB instance logs:
 

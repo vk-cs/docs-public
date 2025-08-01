@@ -488,33 +488,31 @@
 1. В файле `.env` в директории брокера укажите значения переменных для доступа к БД брокера.
 1. Установите Python-библиотеки, выполнив команду:
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    </tablist>
-    <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    pip install -r requirements/prod.txt
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Запустите брокер, выполнив команду:
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    </tablist>
-    <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    gunicorn app.main:app --log-file - --workers ${UVICORN_WORKERS:-1} --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:${BROKER_PORT:-8000} --timeout ${WORKER_TIMEOUT:-90}
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Пример ответа на команду запуска брокера:
 

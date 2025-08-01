@@ -2,12 +2,9 @@ A security group is a set of custom traffic rules that can be assigned to instan
 
 ## {heading(Viewing list of security groups and information about them)[id=view-secgroups]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -19,8 +16,9 @@ A list of security groups will be displayed.
 
 A page with detailed information about it will open.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -42,8 +40,9 @@ openstack security group show <security group ID>
 openstack security group rule list --long <security group ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Creating security group)[id=create-group]}
 
@@ -53,12 +52,9 @@ A security group ID is displayed in not all platform services. Create groups wit
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -68,8 +64,9 @@ A security group ID is displayed in not all platform services. Create groups wit
 1. Add a description.
 1. Click **Create Group**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -91,17 +88,15 @@ openstack security group show <group ID>
 openstack security group create --description <group description> <new group name>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Editing name and description of security group)[id=edit-group]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -116,8 +111,9 @@ Edit the name and (if necessary) the name of the security group.
 
 1. Click the **Save** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -127,19 +123,17 @@ Edit the name and (if necessary) the name of the security group.
 openstack security group set --description <description> --name <name> <group ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Adding rule)[id=add-rule]}
 
 A security group rule is a set of parameters that define the conditions for traffic to pass through. Rules are combined into groups, which in turn apply to instance ports.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -151,37 +145,39 @@ A security group rule is a set of parameters that define the conditions for traf
 1. Specify the port through which traffic will be allowed.
 1. In the **Remote address** section, specify the address for which the selected type of traffic will be allowed:
 
-   <tabs>
-   <tablist>
-   <tab>All IP addresses</tab>
-   <tab>IP-address range</tab>
-   <tab>Security group</tab>
-   </tablist>
-   <tabpanel>
-   The rule will allow traffic for all IP addresses.
-   </tabpanel>
-   <tabpanel>
+   {tabs}
    
+   {tab(All IP addresses)}
+   
+   The rule will allow traffic for all IP addresses.
+   
+   {/tab}
+   
+   {tab(IP-address range)}
+      
    The rule will allow traffic only for the specified IP address:
 
       1. In the box that appears, enter the IP address of the node or subnet with a mask in the `0.0.0.0/0` format.
       1. (Optional) To allow traffic for your device, click **Use my IP**.
    
-   </tabpanel>
-   <tabpanel>
+   {/tab}
    
+   {tab(Security group)}
+      
    The rule will allow traffic exchange with nodes that have the specified security group assigned.
 
    In the box that appears, select the security group.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
    
 1. (Optional) Click **Add description** and in the box that appears, describe the new rule.
 1. Click **Save rule**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -210,16 +206,15 @@ Available arguments for the rule creation command:
 - `--egress` - apply the rule for outgoing traffic.
 - `--ethertype` - EtherType value (IPv4, IPv6).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Deleting rule)[id=delete-rule]}
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -229,8 +224,9 @@ Available arguments for the rule creation command:
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the rule you want to delete and select **Delete** button.
 1. Press the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -246,19 +242,17 @@ openstack security group rule show <rule ID>
 openstack security group rule delete <rule ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Assigning rule group to instance)[id=assign-rule]}
 
 To apply a rule set to a virtual machine, the security group that contains the rule set must be applied to the virtual machine.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -268,8 +262,9 @@ To apply a rule set to a virtual machine, the security group that contains the r
 1. Select the instances to which the group will be added.
 1. Click **Add Rule Group**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -279,17 +274,15 @@ To apply a rule set to a virtual machine, the security group that contains the r
 openstack server add security group <instance ID> <security group ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Detaching group from instance)[id=detach-rule]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -299,8 +292,9 @@ openstack server add security group <instance ID> <security group ID>
 1. Click the trash can icon.
 1. Press the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -310,17 +304,15 @@ openstack server add security group <instance ID> <security group ID>
 openstack server remove security group <instance ID> <security group ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Deleting security group)[id=delete-group]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {note:warn}
 
@@ -335,8 +327,9 @@ This is a group operation: if necessary, you can delete several security groups 
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the security group you want to delete and select **Delete** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
@@ -346,5 +339,6 @@ This is a group operation: if necessary, you can delete several security groups 
 openstack security group delete <security group ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

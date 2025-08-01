@@ -8,11 +8,9 @@ If there are failures in the running VM, provide technical support with [VM mess
 
 To download logs locally:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page.
@@ -31,5 +29,6 @@ To download logs locally:
 
 1. Click **Download log**. A file of the form `dpp-log-<date>.json` will be downloaded.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

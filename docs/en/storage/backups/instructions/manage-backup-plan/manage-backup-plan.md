@@ -1,6 +1,7 @@
 ## Viewing information about backup plans
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -21,6 +22,7 @@
     * Enter partially or completely the name of the required plan in the search bar. As you type, the list will show only plans with matching names.
 
 {/tab}
+
 {/tabs}
 
 ## {heading(Viewing list of backup copies created by plan)[id=view_copies_list]}
@@ -32,6 +34,7 @@ The list of backup copies created according to a plan is grouped by the instance
 {/note}
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -54,6 +57,7 @@ The list of backup copies created according to a plan is grouped by the instance
    By estimating the duration of backups, you can set up backup plans for different instances in the project so that backup processes do not run simultaneously and do not slow down other services.
 
 {/tab}
+
 {/tabs}
 
 ## {heading(Editing backup plan)[id=edit_backup_plan]}
@@ -65,6 +69,7 @@ When editing a plan, you cannot change the selection of instances for backup.
 {/note}
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -78,25 +83,30 @@ When editing a plan, you cannot change the selection of instances for backup.
 1. Change the required parameters of the plan.
 
    {tabs}
+
    {tab(Virtual machine)}
 
    {include(/en/_includes/_backup_plan_create_change.md)[tags=vm_part1]}
    {include(/en/_includes/_backup_plan_create_change.md)[tags=vm_part2]}
 
    {/tab}
+
    {tab(Database)}
 
    {include(/en/_includes/_backup_plan_create_change.md)[tags=db]}
 
    {/tab}
+
    {tab(Analytical database)}
 
    {include(/en/_includes/_backup_plan_create_change.md)[tags=adb]}
 
    {/tab}
+
    {/tabs}
 
 {/tab}
+
 {/tabs}
 
 ## {heading(Activating, stopping, and deleting backup plan)[id=activate_stop_delete_backup_plan]}
@@ -108,6 +118,7 @@ Deleting a backup plan will delete all backups created according to that plan.
 {/note}
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
@@ -116,20 +127,24 @@ Deleting a backup plan will delete all backups created according to that plan.
 1. To change the state of a backup plan:
 
    {tabs}
+   
    {tab(For several plans)}
-
-   1. In the list of plans, set the checkboxes for the required plans.
-   1. Above the list of plans, click the required action button.
-   1. Confirm the action.
+      
+      1. In the list of plans, set the checkboxes for the required plans.
+      1. Above the list of plans, click the required action button.
+      1. Confirm the action.
 
    {/tab}
+
    {tab(For one plan)}
-
-   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required plan.
-   1. Select and confirm the required action.
+   
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required plan.
+      1. Select and confirm the required action.
 
    {/tab}
+   
    {/tabs}
 
 {/tab}
+
 {/tabs}

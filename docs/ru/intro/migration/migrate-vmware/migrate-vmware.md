@@ -15,12 +15,9 @@
 
 ## 2. Подготовьте ВМ к миграции
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 1. [Проверьте](../check-virtio) наличие драйверов VirtIO в системе.
 2. Проверьте наличие гостевого агента QEMU:
@@ -49,8 +46,9 @@
 
 5. [Удалите](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools, если это ПО установлено.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 1. Проверьте, что обновления операционной системы установлены, и перезагрузите ВМ.
 2. [Установите](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) драйверы VirtIO.
@@ -62,8 +60,9 @@
 
 5. [Удалите](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools, если это ПО установлено.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Экспортируйте виртуальную машину
 
@@ -91,20 +90,17 @@
 
 3. Загрузите полученный файл образа `.raw` в существующий проект VK Cloud.
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows</tab>
-   </tablist>
+   {tabs}
 
-   <tabpanel>
+   {tab(Linux)}
 
    ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь_к_файлу.raw> <название образа>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    При импорте образа Windows укажите тип шины диска — IDE (параметр `hw_disk_bus`):
 
@@ -112,8 +108,9 @@
    openstack image create --progress --private --container-format bare --disk-format raw <путь_к_файлу.raw> --property store=s3 --property os_type=windows --property hw_disk_bus=ide --min-disk 40 <название образа>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Если виртуальная машина должна поддерживать резервное копирование, добавьте в команду параметры:
 
@@ -131,22 +128,18 @@
 
 ## 5. Создайте виртуальную машину
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(Linux)}
 
 Используйте импортированный образ для [создания ВМ Linux](/ru/computing/iaas/instructions/vm/vm-create):
 
 - при создании ВМ в личном кабинете выберите образ из списка;
 - при создании через OpenStack CLI укажите ID образа в соответствующей команде.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(Windows)}
 
 1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/computing/iaas/instructions/vm/vm-create).
 2. Добавьте драйвер VirtIO HBA в загрузку Windows.
@@ -165,5 +158,6 @@
 5. [Создайте целевую ВМ Windows](/ru/computing/iaas/instructions/vm/vm-create) из нового образа.
 6. Удалите промежуточную виртуальную машину, созданную на шаге 1, а также импортированный образ.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

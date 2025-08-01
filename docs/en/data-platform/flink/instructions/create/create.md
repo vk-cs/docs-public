@@ -5,11 +5,9 @@ You can create a Cloud Flink instance in one of two configurations:
 
 ## {heading(Creating instance in Single configuration)[id=single]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Select the project where you want to create a service instance.
@@ -62,16 +60,15 @@ You can create a Cloud Flink instance in one of two configurations:
 
       Wait for the operation to complete. Creating a Cloud Flink instance can take up to 40 minutes.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Creating instance in Cluster configuration)[id=cluster]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project where you want to create a service instance.
@@ -103,20 +100,18 @@ You can create a Cloud Flink instance in one of two configurations:
    1. Select the [VM type](/en/computing/iaas/concepts/about#flavors) where Cloud Flink will be deployed.
    1. Configure the cluster node settings by selecting one of the options:
 
-      <tabs>
-      <tablist>
-      <tab>Basic</tab>
-      <tab>Advanced</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Basic)}
+            
       Select one of the pre-built cluster templates. The [configuration template](/en/computing/iaas/concepts/about#flavors) and [disk type](/en/computing/iaas/concepts/about#disks) for the cluster nodes are already selected.
 
       When you select any template, the Cloud Flink instance will consist of one Job Manager node and multiple Task Manager nodes.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Advanced)}
+      
       Configure the parameters yourself:
 
       1. In the **Job Manager** block, specify the [configuration template](/en/computing/iaas/concepts/about#flavors) for the master node. The number of master nodes is not editable.
@@ -125,8 +120,9 @@ You can create a Cloud Flink instance in one of two configurations:
          - **Type of virtual machine:** configuration template for nodes.
          - **Number of tasks:** total number of task nodes.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
    
    1. Click the **Next step** button.
 
@@ -151,5 +147,6 @@ You can create a Cloud Flink instance in one of two configurations:
 
       Wait for the operation to complete. Creating a Cloud Flink instance can take up to 40 minutes.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

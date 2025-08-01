@@ -1,10 +1,8 @@
 ## {heading(Просмотр информации об экземпляре)[id=view]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -21,16 +19,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 - `<ПАРОЛЬ>` — пароль администратора для доступа к Cloud Iceberg Metastore.
 - `<ИМЯ_БД>` — имя базы данных PostgresSQL.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Редактирование названия и описания экземпляра)[id=edit]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
@@ -38,31 +35,29 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 1. Отредактируйте название и описание экземпляра.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Просмотр статуса компонентов)[id=status]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Статус компонентов**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Масштабирование экземпляра)[id=scaling]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
@@ -75,16 +70,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 1. Измените параметры кластера.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Добавление учетной записи администратора)[id=add_admin]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -100,16 +94,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Изменение параметров сетевого доступа)[id=change_network_access]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -131,16 +124,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
 2. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Управление расширениями)[id=extensions]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -161,16 +153,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
 1. Просмотрите историю изменения расширений, для этого нажмите ![ ](/ru/assets/clock-icon.svg "inline").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Настройка экземпляра сервиса)[id=settings]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -184,13 +175,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
    1. Если необходимо вернуться к значению по умолчанию, нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного параметра и выберите пункт **Сбросить**.
    1. Нажмите кнопку **Сохранить изменения**.
 
+{/tab}
+
+{/tabs}
+
 ## {heading(Изменение параметров обслуживания экземпляра)[id=maintenance]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -200,16 +193,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Создание резервной копии экземпляра)[id=backup]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -219,16 +211,15 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 1. Выберите тип резервной копии из списка.
 1. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Восстановление экземпляра из резервной копии)[id=restore]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_iceberg.md)[tags=open]}
 
@@ -240,21 +231,21 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
    Будет создан новый экземпляр сервиса Cloud Iceberg Metastore.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление экземпляра)[id=delete]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного экземпляра и выберите пункт **Удалить**.
 1. Подтвердите удаление и дождитесь завершения операции. Удаление может занять длительное время.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
