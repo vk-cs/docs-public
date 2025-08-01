@@ -25,12 +25,9 @@
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export VKCLOUD_KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
@@ -38,8 +35,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $VKCLOUD_KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
@@ -47,8 +45,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Убедитесь, что после подключения к кластеру есть права на создание необходимых ресурсов Kubernetes:
 
@@ -69,12 +68,9 @@
 
 1. Создайте сервисный аккаунт `example-sa` в пространстве имен `kube-system`:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -82,8 +78,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -91,8 +88,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Пример вывода команды:
 
@@ -116,12 +114,9 @@
 
    Сервисный аккаунт должен указываться вместе с пространством имен, к которому он принадлежит.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -130,8 +125,9 @@
        --clusterrole=edit
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -141,8 +137,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Пример вывода команды:
 
@@ -192,12 +189,9 @@
 
 1. Убедитесь, что сервисному аккаунту был назначен токен из созданного секрета:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -205,8 +199,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -214,8 +209,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    В выводе должно содержаться указание на секрет в поле `Tokens`.
 
@@ -238,12 +234,9 @@
 
    Секрет хранит в себе токен в закодированном виде (схема кодирования [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)). Токен необходимо декодировать, чтобы его можно было использовать в kubeconfig:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -252,8 +245,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    [System.Text.Encoding]::UTF8.GetString( `
@@ -264,8 +258,9 @@
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Будет выведено значение токена. Сохраните его.
 
@@ -339,12 +334,9 @@
 
       1. Получите список пользователей:
 
-         <tabs>
-         <tablist>
-         <tab>Linux (bash)/macOS (zsh)</tab>
-         <tab>Windows (PowerShell)</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+
+         {tab(Linux (bash)/macOS (zsh))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
@@ -352,8 +344,9 @@
 
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Windows (PowerShell))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
@@ -361,17 +354,15 @@
 
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
       1. Удалите пользователя, используя нужное имя из списка:
 
-         <tabs>
-         <tablist>
-         <tab>Linux (bash)/macOS (zsh)</tab>
-         <tab>Windows (PowerShell)</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+
+         {tab(Linux (bash)/macOS (zsh))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
@@ -379,8 +370,9 @@
 
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Windows (PowerShell))}
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
@@ -388,8 +380,9 @@
 
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
          Пример частичного вывода команды:
 
@@ -401,12 +394,9 @@
 
       Этот пользователь соответствует созданному ранее сервисному аккаунту. Для аутентификации будет использоваться полученный ранее токен.
 
-      <tabs>
-      <tablist>
-      <tab>Linux (bash)/macOS (zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux (bash)/macOS (zsh))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
@@ -414,8 +404,9 @@
 
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows (PowerShell))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
@@ -423,8 +414,9 @@
 
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       Пример вывода команды:
 
@@ -434,12 +426,9 @@
 
    1. Настройте текущий контекст на использование добавленного пользователя:
 
-      <tabs>
-      <tablist>
-      <tab>Linux (bash)/macOS (zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux (bash)/macOS (zsh))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
@@ -447,8 +436,9 @@
 
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows (PowerShell))}
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
@@ -456,8 +446,9 @@
 
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       Пример вывода:
 
@@ -557,12 +548,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
 1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
@@ -574,8 +562,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
@@ -587,8 +576,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 

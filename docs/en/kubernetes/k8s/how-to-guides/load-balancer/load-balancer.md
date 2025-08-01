@@ -75,14 +75,9 @@ The tabs below describe different scenarios for creating load balancers:
 - Scenario 3 — automatic assignment of a dynamic public address, random replica selection, access limiting
 - Scenario 4 — automatic assignment of a dynamic private address with random replica selection.
 
-<tabs>
-<tablist>
-<tab>Scenario 1</tab>
-<tab>Scenario 2</tab>
-<tab>Scenario 3</tab>
-<tab>Scenario 4</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Scenario 1)}
 
 1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/instructions/ip/floating-ip#adding_floating_ip_address_to_the_project).
 
@@ -123,8 +118,9 @@ The tabs below describe different scenarios for creating load balancers:
 
    Wait for the service to be assigned a static public IP address that was set manually earlier: in the `EXTERNAL-IP` table column, an IP address will appear instead of `<pending>`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Scenario 2)}
 
 1. Create the `lb-session-affinity.yaml` manifest file.
 
@@ -161,8 +157,9 @@ The tabs below describe different scenarios for creating load balancers:
 
    Wait for the service to be assigned a dynamic public IP address: in the `EXTERNAL-IP` table column, an IP address will appear instead of `<pending>`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Scenario 3)}
 
 1. Find a public IP address of the host that should be allowed access to the application.
 
@@ -210,8 +207,9 @@ The tabs below describe different scenarios for creating load balancers:
 
    Wait for the service to be assigned a dynamic public IP address: in the `EXTERNAL-IP` table column, an IP address will appear instead of `<pending>`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Scenario 4)}
 
 1. Create the `lb-private-ip.yaml` manifest file.
 
@@ -249,8 +247,9 @@ The tabs below describe different scenarios for creating load balancers:
 
    Wait for the service to be assigned a private IP address: in the `EXTERNAL-IP` table column, an IP address will appear instead of `<pending>`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Read more about services and load balancers in [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/).
 
@@ -263,14 +262,9 @@ The tabs below describe different scenarios for testing load balancers:
 - Scenario 3 — load balancer with automatic assignment of dynamic public address, random replica, access limiting.
 - Scenario 4 — load balancer with automatic assignment of dynamic public address, random replica.
 
-<tabs>
-<tablist>
-<tab>Scenario 1</tab>
-<tab>Scenario 2</tab>
-<tab>Scenario 3</tab>
-<tab>Scenario 4</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Scenario 1)}
 
 1. Get the IP address assigned to the load balancer:
 
@@ -288,8 +282,9 @@ The tabs below describe different scenarios for testing load balancers:
 
    Different pods may respond: both `coffee-0` and `coffee-1`. This behavior means that the load balancer is sending requests to random replicas of the application.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Scenario 2)}
 
 1. Get the IP address assigned to the load balancer:
 
@@ -307,8 +302,9 @@ The tabs below describe different scenarios for testing load balancers:
 
    All requests will be answered by a single selected pod: `coffee-0` or `coffee-1`. This behavior means that the balancer sends requests from a specific IP address to the same application replica.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Scenario 3)}
 
 1. Get the IP address assigned to the load balancer:
 
@@ -328,8 +324,9 @@ The tabs below describe different scenarios for testing load balancers:
 
 1. Try to make the same request from a host with a different IP address. The request will fail.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Scenario 4)}
 
 1. Get the IP address assigned to the load balancer:
 
@@ -351,8 +348,9 @@ The tabs below describe different scenarios for testing load balancers:
 
    Different pods may respond: both `coffee-0` and `coffee-1`. This behavior means that the load balancer is sending requests to random replicas of the application.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Delete unused resources
 
@@ -364,12 +362,9 @@ The tabs below describe different scenarios for testing load balancers:
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete svc coffee-svc-public-static-ip
@@ -380,8 +375,9 @@ The tabs below describe different scenarios for testing load balancers:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete svc coffee-svc-public-static-ip; `
@@ -391,8 +387,9 @@ The tabs below describe different scenarios for testing load balancers:
    kubectl delete statefulset coffee
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project).
 

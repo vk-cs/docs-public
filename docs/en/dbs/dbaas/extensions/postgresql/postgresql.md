@@ -8,40 +8,37 @@ Availability of the extensions depends on selected version of PostgreSQL and Pos
 
 ## Holistic.dev (holistic)
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 [Holistic.dev](https://holistic.dev/) is a static analyzer and tool for extracting information about database organization. Thanks to the collected data, the tool automatically monitors the integrity of relations between database objects and detects possible issues. Administrators use information from Holistic.dev reports to optimize the database. Holistic.dev only collects information about DML queries and database schema, database configuration and query execution plans are not analyzed.
 
 Read more in [official FAQ of the extension](https://holistic.dev/faq).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 - `databases`: the list of databases in which the extension should operate. Required parameter.
 - `api_key`: the Holistic.dev API key. Required parameter.
 - `project_name`: the Holistic.dev project name. Required parameter.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## JsQuery
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The extension provides the [JsQuery](https://github.com/postgrespro/jsquery) query language that extends [jsonb](https://www.postgresql.org/docs/current/datatype-json.html) data type processing capabilities in PostgreSQL.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 `database`: the list of databases in which the extension should operate.
 
@@ -51,22 +48,21 @@ When the extension is installed, it is not possible to remove existing entries f
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## pgBadger
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The [pgBadger](https://pgbadger.darold.net/) extension allows analyzing PostgreSQL logs and building reports. These reports provide statistics on SQL queries and [Autovacuum](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM), as well other data. Read more about features in [the extension documentation](https://pgbadger.darold.net/documentation.html#FEATURE).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 - `s3_bucket`: name of [an object storage](/en/storage/s3) bucket where the reports will be stored. Required parameter.
 
@@ -94,22 +90,21 @@ The [pgBadger](https://pgbadger.darold.net/) extension allows analyzing PostgreS
 
   The default value is `0` (do not delete anything).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## pg_hint_plan
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 When executing an SQL query, the PostgreSQL planner tries to select the best execution plan. However, the chosen plan is not always optimal, as the planner does not take into account some data properties, such as correlations between columns. The [pg_hint_plan](https://github.com/ossc-db/pg_hint_plan) allows adjusting query execution plans by giving hints to the PostgreSQL planner. Hints can be given as comments of a special form to SQL queries,  or as records in the special `hint_plan.hints` table.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 - `enable_hint_table`: specifies whether hints from the `hint_plan.hints` table are allowed to be used.
 
@@ -152,17 +147,15 @@ When executing an SQL query, the PostgreSQL planner tries to select the best exe
 
   The default value: `info`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## pg_partman
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The pg_partman extension is advanced table partitioning manager. Two partitioning methods are supported: partitioning based on `pg_partman` triggers, and native partitioning based on the PostgreSQL's built-in functionality. Read more [in the extension documentation](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md).
 
@@ -170,8 +163,9 @@ The `partman` schema is created alongside the extension. The extension then is i
 
 To do native partitioning, a `partman` user will be created and configured in PostgreSQL. It is possible to set a password for this user. To do partitioning based on `pg_partman` triggers, the `postgres` user should be used.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 - `database`: the list of databases in which the extension should operate.
 
@@ -199,17 +193,15 @@ To do native partitioning, a `partman` user will be created and configured in Po
 
   The default value: `default`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## pg_stat_kcache
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The [pg_stat_kcache](https://github.com/powa-team/pg_stat_kcache) extension collects statistics about real reads and writes done by the filesystem layer.
 
@@ -219,48 +211,47 @@ The extension requires the [pg_stat_statements](#pg_stat_statements) extension t
 
 {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 `database`: the list of databases in which the extension should operate.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## pg_stat_statements
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The extension [pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html) allows tracking planning and execution statistics of all SQL statements.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 `database`: the list of databases in which the extension should operate.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## PostGIS
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The [PostGIS](http://postgis.net/) extension adds capabilities of working with geographic data into PostgreSQL. It implements several geospatial data types, as well supports storing, indexing and processing geographic data.
 
 For more information abount using the extension, see [Using the PostGIS extension in PostgreSQL and PostgresPro](../../how-to-guides/using-postgis).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 - `database`: the list of databases in which the extension should operate.
 
@@ -281,22 +272,21 @@ For more information abount using the extension, see [Using the PostGIS extensio
 
   {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## postgres_extensions
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 A set of popular PostgreSQL extensions that require no additional configuration. You can select one or more extensions to install. They are listed on the **Extension parameters** tab.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 - `databases`: the list of databases in which the extension should operate.
 
@@ -340,22 +330,21 @@ A set of popular PostgreSQL extensions that require no additional configuration.
 
   {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## TimescaleDB
 
-<tabs>
-<tablist>
-<tab>Extension description</tab>
-<tab>Extension parameters</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Extension description)}
 
 The [TimescaleDB](https://docs.timescale.com/) extension adds advanced time-series data manipulating capabilities to PostgreSQL. It provides full support for standard PostgreSQL SQL syntax when working with time-series data that is stored in hypertables. Automatic partitioning of hypertables with time-series data by time and space is supported.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Extension parameters)}
 
 `database`: the list of databases in which the extension should operate.
 
@@ -365,5 +354,6 @@ When the extension is installed, it is not possible to remove existing entries f
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

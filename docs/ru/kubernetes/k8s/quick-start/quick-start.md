@@ -160,28 +160,27 @@
 
    В приведенных ниже командах предполагается, что kubeconfig был загружен в директорию `~/Downloads` под именем `mycluster_kubeconfig.yaml`.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    mkdir ~/.kube && \
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    mkdir ~/.kube; `
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Проверьте, что `kubectl` может подключиться к кластеру:
 
@@ -206,12 +205,9 @@
 
 В кластере был установлен аддон со [средствами мониторинга](../monitoring) на базе Prometheus и Grafana. Также для всех кластеров Cloud Containers доступен [Kubernetes Dashboard](../connect/k8s-dashboard), который позволяет не только управлять кластером, но и осуществлять его мониторинг.
 
-<tabs>
-<tablist>
-<tab>Prometheus + Grafana</tab>
-<tab>Kubernetes Dashboard</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Prometheus + Grafana)}
 
 1. В отдельной сессии терминала выполните команду:
 
@@ -234,8 +230,9 @@
 
 1. Выберите в боковом меню **Dashboards → Browse** любой преднастроенный дашборд для получения информации о ресурсах кластера.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Kubernetes Dashboard)}
 
 1. В отдельной сессии терминала выполните команду:
 
@@ -253,8 +250,9 @@
 
 Откроется браузер, и вы будете направлены в веб-интерфейс Kubernetes Dashboard. Далее выберите для просмотра любую доступную категорию для получения информации о ресурсах кластера.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Загрузите нужные образы в реестр Docker
 
@@ -289,13 +287,9 @@
 
    1. Перезапустите Docker Engine.
 
-      <tabs>
-      <tablist>
-      <tab>Linux</tab>
-      <tab>Windows</tab>
-      <tab>macOS</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux)}
 
       Выполните одно из следующих действий:
 
@@ -311,43 +305,45 @@
 
       - [Перезапустите Docker Engine](https://docs.docker.com/desktop/settings/linux/#docker-engine) из графического интерфейса Docker Desktop (если он установлен).
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows)}
 
       [Перезапустите Docker Engine](https://docs.docker.com/desktop/settings/windows/#docker-engine) из графического интерфейса Docker Desktop.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(macOS)}
 
       [Перезапустите Docker Engine](https://docs.docker.com/desktop/settings/mac/#docker-engine) из графического интерфейса Docker Desktop.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
 1. Соберите Docker-образ:
 
    1. Создайте директорию для файлов и перейдите в нее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS</tab>
-      <tab>Windows</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux/macOS)}
 
       ```console
       mkdir ~/image-build && cd ~/image-build
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows)}
 
       ```console
       mkdir ~/image-build; cd ~/image-build
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Поместите в эту директорию следующие файлы:
 
@@ -445,26 +441,25 @@
 
 1. Создайте директорию для файлов и перейдите в нее:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    mkdir ~/k8s-deployments && cd ~/k8s-deployments
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    mkdir ~/k8s-deployments; cd ~/k8s-deployments
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Поместите в эту директорию следующие файлы:
 
@@ -610,13 +605,9 @@
 
 1. Проверьте корректность развертывания:
 
-   <tabs>
-   <tablist>
-   <tab>Постоянных томов</tab>
-   <tab>Рабочей нагрузки</tab>
-   <tab>Сервисов</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Постоянных томов)}
 
    Воспользуйтесь одним из способов:
 
@@ -632,8 +623,9 @@
 
    Будет видна информация о том, что присутствуют постоянные тома объемом 1 ГБ, созданные при помощи Persistent Volume Claim для deployments `tea` и `coffee`.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Рабочей нагрузки)}
 
    Воспользуйтесь одним из способов:
 
@@ -649,8 +641,9 @@
 
    Будет видна информация о том, что есть deployment `coffee` из трех подов, и deployment `tea` из двух подов.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Сервисов)}
 
    Воспользуйтесь одним из способов:
 
@@ -664,8 +657,9 @@
 
    Будет видна информация о том, что есть два сервиса `coffee-svc` и `tea-svc` типа `ClusterIP`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 5. Настройте Ingress для демо-приложений
 
@@ -726,12 +720,9 @@
 
 Запросы:
 
-<tabs>
-<tablist>
-<tab>Для приложения tea</tab>
-<tab>Для приложения coffee</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Для приложения tea)}
 
 ```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/tea
@@ -751,8 +742,9 @@ X-Forwarded-For (Request source): <IP-адрес хоста, с которого
 K8S Persistent Volume status: present
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Для приложения coffee)}
 
 ```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/coffee
@@ -772,8 +764,9 @@ X-Forwarded-For (Request source): <IP-адрес хоста, с которого
 K8S Persistent Volume status: present
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Такой результат демонстрирует, что:
 

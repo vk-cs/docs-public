@@ -1,21 +1,17 @@
 ## Просмотр списка объектов
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный бакет.
 1. Перейдите в раздел **Объектное хранилище → Бакеты**.
 1. Нажмите на имя нужного бакета.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -56,8 +52,9 @@
 
 Описание доступных параметров для команды просмотра списка объектов — в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -109,8 +106,9 @@
 
 Команда `ListObjectsV2` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -136,19 +134,15 @@
 
 Команда `list_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Скачивание объекта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный бакет.
@@ -159,8 +153,9 @@
    - Выберите объект с помощью флажка, затем нажмите кнопку **Скачать**.
    - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для объекта и выберите пункт **Скачать файл**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -202,8 +197,9 @@
       ```
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -259,8 +255,9 @@
 
    Команда `GetObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -285,8 +282,9 @@
 
    Команда `get_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_objects).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Предоставление доступа к объекту)[id=manage_access]}
 
@@ -303,12 +301,9 @@
 
 Чтобы изменить уровень доступа к объекту:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно изменить настройки доступа сразу для нескольких объектов, выбрав их с помощью флажков.
 
@@ -321,8 +316,9 @@
 1. Скопируйте ссылку и закройте окно настройки доступа.
 1. Отправьте ссылку пользователям или разместите ее на стороннем ресурсе для прямого доступа к объекту.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -353,8 +349,9 @@
 
 Полное описание операции изменения ACL объекта доступно в [официальной документации AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-acl.html).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Предоставление доступа к объекту по подписанному URL)[id=access_via_signed_link]}
 
@@ -363,13 +360,9 @@
 
 Для генерации подписанного URL:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -404,8 +397,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -471,8 +465,9 @@
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -517,8 +512,9 @@
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Блокировка удаления объектов)[id=lock_object]}
 
@@ -537,23 +533,17 @@
 
 Для управления временной блокировкой по умолчанию:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 1. Откройте консоль и выполните нужное действие с блокировкой:
 
-   <tabs>
-   <tablist>
-   <tab>Установить</tab>
-   <tab>Снять</tab>
-   <tab>Узнать статус</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Установить)}
+      
    Чтобы установить временную блокировку по умолчанию, выполните команду:
 
    ```console
@@ -587,9 +577,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Снять)}
+   
    Чтобы снять временную блокировку по умолчанию, выполните команду:
 
    ```console
@@ -606,9 +597,10 @@
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого снимается блокировка по умолчанию.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Узнать статус)}
+   
    Чтобы получить текущую конфигурацию блокировки по умолчанию для бакета, выполните команду:
 
    ```console
@@ -643,11 +635,13 @@
 
    {/cut}
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Бессрочная блокировка
 
@@ -661,24 +655,17 @@
 
 Для управления бессрочной блокировкой:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 1. Откройте консоль и выполните нужное действие с блокировкой.
 
-   <tabs>
-   <tablist>
-   <tab>Установить для нового объекта</tab>
-   <tab>Установить для объекта в бакете</tab>
-   <tab>Снять</tab>
-   <tab>Узнать статус</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Установить для нового объекта)}
+      
    Чтобы установить бессрочную блокировку для нового объекта, загружаемого в бакет, выполните команду:
 
    ```console
@@ -715,9 +702,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Установить для объекта в бакете)}
+   
    Чтобы установить бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
 
    ```console
@@ -746,9 +734,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Снять)}
+   
    Чтобы установить бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
 
    ```console
@@ -777,9 +766,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Узнать статус)}
+   
    Чтобы узнать статус бессрочной блокировки объекта, выполните команду:
 
    ```console
@@ -820,11 +810,13 @@
 
    {/note}
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Временная блокировка
 
@@ -832,24 +824,17 @@
 
 Для управления временной блокировкой:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 1. Откройте консоль и выполните нужное действие с блокировкой.
 
-   <tabs>
-   <tablist>
-   <tab>Установить для нового объекта</tab>
-   <tab>Установить для объекта в бакете</tab>
-   <tab>Продлить</tab>
-   <tab>Узнать статус</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Установить для нового объекта)}
+      
    Чтобы установить временную блокировку для нового объекта, загружаемого в бакет, выполните команду:
 
    ```console
@@ -893,9 +878,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Установить для объекта в бакете)}
+   
    Чтобы установить временную блокировку для объекта, находящегося в бакете, выполните команду:
 
    ```console
@@ -930,9 +916,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Продлить)}
+   
    Чтобы установить временную блокировку для объекта, находящегося в бакете, выполните команду:
 
    ```console
@@ -967,9 +954,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Узнать статус)}
+   
    Чтобы узнать статус временной блокировки объекта, выполните команду:
 
    ```console
@@ -1011,11 +999,13 @@
 
    {/note}
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Обход временной блокировки
 
@@ -1034,24 +1024,17 @@
 
 Для выполнения действий в обход блокировки:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 1. Откройте консоль и выполните нужное действие.
 
-   <tabs>
-   <tablist>
-   <tab>Удалить объект</tab>
-   <tab>Снять блокировку</tab>
-   <tab>Сократить срок</tab>
-   <tab>Изменить режим</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Удалить объект)}
+      
    Чтобы удалить объект, для которого установлена управляемая временная блокировка, выполните команду:
 
    ```console
@@ -1080,9 +1063,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Снять блокировку)}
+   
    Чтобы снять с объекта управляемую временную блокировку, выполните команду:
 
    ```console
@@ -1112,9 +1096,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Сократить срок)}
+   
    Чтобы сократить для объекта срок управляемой временной блокировки, выполните команду:
 
    ```console
@@ -1145,9 +1130,10 @@
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Изменить режим)}
+   
    Чтобы изменить для объекта режим временной блокировки на `COMPLIANCE`, выполните команду:
 
    ```console
@@ -1178,23 +1164,21 @@
 
    {/cut}
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## {heading(Копирование объекта)[id=copy_object]}
 
 Инструкция подходит для копирования объекта в пределах одного бакета или между бакетами одного проекта.
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -1229,8 +1213,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -1288,8 +1273,9 @@
 
    Команда `CopyObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -1323,16 +1309,15 @@
 
    Команда `copy` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Копирование всех объектов бакета
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -1369,21 +1354,17 @@
 
    {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление объекта
 
 В этом разделе описано, как удалить объект без установленной блокировки от удаления и перезаписи. О снятии и обходе блокировки — в разделе [Блокировка удаления объектов](#lock_object).
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько объектов, выбрав их с помощью флажков.
 
@@ -1400,8 +1381,9 @@
 
 1. Подтвердите удаление.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -1435,8 +1417,9 @@
 
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -1510,8 +1493,9 @@
 
    Команды [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) и [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) подробно описаны в официальной документации к библиотеке aws-sdk-go.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -1541,8 +1525,9 @@
 
    Команда `delete_objects` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление частей загруженного объекта
 
@@ -1550,12 +1535,9 @@
 
 Вы можете настроить автоматическое удаление незавершенных загрузок через [жизненный цикл](../../../reference#zhiznennyy_cikl) объектов или удалить загрузку вручную.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Чтобы узнать, есть ли у вас незавершенные составные загрузки:
 
@@ -1563,8 +1545,9 @@
 1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
 1. Нажмите на имя нужного бакета и перейдите на вкладку **Multipart**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
@@ -1615,17 +1598,15 @@
 
    {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Чтобы удалить незавершенные загрузки:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько частей, выбрав их с помощью флажков.
 
@@ -1638,8 +1619,9 @@
    - Выберите часть, которую нужно удалить, и нажмите на значок ![Удалить](assets/delete-icon.svg "inline") справа.
 1. Подтвердите удаление.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
 1. Откройте консоль и выполните команду:
@@ -1667,5 +1649,7 @@
    ```
 
 В результате все незавершенные загрузки будут отменены, а загруженные части — удалены.
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}

@@ -56,11 +56,9 @@ If your local copy of the libosinfo database does not contain information about 
 
 ## Installing a meta tag
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Get the image `ID`:
 
@@ -76,8 +74,9 @@ If your local copy of the libosinfo database does not contain information about 
    openstack image set --property <tag name and value> <image ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {cut(Example of installing meta tags for a Windows VM image with drivers `virtio`)}
 
@@ -117,11 +116,9 @@ If your local copy of the libosinfo database does not contain information about 
 
 ## Deleting a meta tag
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Get the image `ID`:
 
@@ -137,5 +134,6 @@ If your local copy of the libosinfo database does not contain information about 
    openstack image unset --property <tag name and value> <image ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

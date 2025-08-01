@@ -19,12 +19,9 @@ If the **Configuring monitoring** tab is missing:
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect) to the virtual machine.
 1. Run the command:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows (powershell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    curl \
@@ -34,8 +31,9 @@ If the **Configuring monitoring** tab is missing:
    -X POST  https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (powershell))}
 
    1. Place the request body parameters into the `params` variable:
 
@@ -65,31 +63,31 @@ If the **Configuring monitoring** tab is missing:
       -Body $params | Select-Object -Expand Content
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Execute the command from the contents of the response `script` parameter.
 
-   <tabs>
-   <tablist>
-   <tab>Example for Linux</tab>
-   <tab>Example for Windows (powershell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Example for Linux)}
 
    ```console
    sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | sudo bash
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Example for Windows (powershell))}
 
    ```console
    [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | iex
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 {note:info}
 

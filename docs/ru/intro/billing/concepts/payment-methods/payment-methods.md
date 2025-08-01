@@ -2,12 +2,9 @@
 
 Список доступных способов оплаты отображается на странице **Баланс** личного кабинета при нажатии на кнопку **Пополнить баланс**. Доступные способы зависят от [региона](/ru/tools-for-using-services/account/concepts/regions).
 
-<tabs>
-<tablist>
-<tab>Москва</tab>
-<tab>Казахстан</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Москва)}
 
 - Банковская карта.
 
@@ -34,8 +31,9 @@
 
    {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Казахстан)}
 
 - Банковская карта.
 
@@ -47,5 +45,6 @@
 
     Эта опция недоступна в личном кабинете. Для оплаты этим способом обратитесь в [техническую поддержку](/ru/contacts) и запросите счет, сообщив реквизиты организации, [идентификатор (PID) проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) и сумму в тенге.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

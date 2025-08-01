@@ -2,12 +2,9 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 ## Viewing a list of floating IP addresses
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary IP address is located.
@@ -15,8 +12,9 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
    A list of floating IP addresses will be displayed (**External IP** column).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -26,8 +24,9 @@ You can manage floating IP addresses: view, add and remove them from a project, 
    openstack floating ip list
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding floating IP address to the project
 
@@ -37,12 +36,9 @@ A floating IP address is randomly assigned from a shared pool.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary IP address is located.
@@ -51,8 +47,9 @@ A floating IP address is randomly assigned from a shared pool.
 1. (Optional) Add a description.
 1. Click the **Add IP** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -62,17 +59,15 @@ A floating IP address is randomly assigned from a shared pool.
    openstack floating ip create ext-net
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing floating IP address description
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary IP address is located.
@@ -81,8 +76,9 @@ A floating IP address is randomly assigned from a shared pool.
 1. Set the description.
 1. Click the **Save** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -94,17 +90,15 @@ A floating IP address is randomly assigned from a shared pool.
    openstack floating ip set <floating IP ID> --description "<new description>"
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Bindind a floating IP address
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary IP address is located.
@@ -122,8 +116,9 @@ A floating IP address is randomly assigned from a shared pool.
 1. From the drop-down list, select the OpenStack port with the internal IP address to which you are binding.
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -135,17 +130,15 @@ A floating IP address is randomly assigned from a shared pool.
    openstack floating ip set <floating IP address ID> --port <port ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Unbinding floating IP address
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary IP address is located.
@@ -153,8 +146,9 @@ A floating IP address is randomly assigned from a shared pool.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the floating IP address that is bound to the internal IP and select **Unbind IP**.
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -166,17 +160,15 @@ A floating IP address is randomly assigned from a shared pool.
    openstack floating ip unset <floating IP address ID> --port
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Removing floating IP address from the project
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary IP address is located.
@@ -184,8 +176,9 @@ A floating IP address is randomly assigned from a shared pool.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required floating IP address and select **Remove IP from the project**. To remove multiple IPs at once, select them using the checkboxes and click **Remove IP from project**.
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -197,5 +190,6 @@ A floating IP address is randomly assigned from a shared pool.
    openstack floating ip delete <floating IP address ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -14,13 +14,9 @@ Follow the steps on the host from which you plan to connect to the cluster:
 
 1. The configuration file contains sensitive information that should not be accessible to other users. So restrict access rights to this file:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   {tab(Windows (PowerShell))}
+   
    ```console
    icacls.exe 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml' `
      /c /t `
@@ -29,39 +25,35 @@ Follow the steps on the host from which you plan to connect to the cluster:
      /Grant:r ${env:UserName}:RW
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(Linux (bash)/macOS (zsh))}
+   
    ```console
    sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   {/tabs}
 
 {/includetag}
 {includetag(variables)}
 
 1. Put the path to the config file in the `$KUBECONFIG` environment variable:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   {tab(Windows (PowerShell))}
+   
    ```console
    $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(Linux (bash)/macOS (zsh))}
+   
    ```console
    export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   {/tabs}
 {/includetag}   

@@ -81,12 +81,9 @@
 
 1. Проверьте работу ограничения, попробовав создать несколько пространств имен (namespaces):
 
-   <tabs>
-   <tablist>
-   <tab>Пространство, удовлетворяющее ограничению</tab>
-   <tab>Пространство, не удовлетворяющее ограничению</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Пространство, удовлетворяющее ограничению)}
 
    1. Создайте манифест пространства имен:
 
@@ -100,6 +97,8 @@
         labels:
           creator-name: john.doe
       ```
+
+      {/cut}
 
    1. Попытайтесь создать пространство имен на основе манифеста:
 
@@ -122,8 +121,9 @@
       allowed-namespace   Active   ...
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Пространство, не удовлетворяющее ограничению)}
 
    1. Создайте манифест пространства имен:
 
@@ -137,6 +137,8 @@
         labels:
           my-label: sample
       ```
+
+      {/cut}
 
    1. Попытайтесь создать пространство имен на основе манифеста:
 
@@ -162,19 +164,17 @@
       Error from server (NotFound): namespaces "disallowed-namespace" not found
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удалите неиспользуемые ресурсы
 
 1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete ns allowed-namespace
@@ -183,8 +183,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete ns allowed-namespace; `
@@ -192,8 +193,9 @@
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 

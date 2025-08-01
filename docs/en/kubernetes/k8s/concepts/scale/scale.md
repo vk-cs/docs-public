@@ -21,12 +21,9 @@ The vertical scaling scheme depends on the cluster creation date:
 - The new scaling scheme is applicable to clusters created on or after 2024-12-06.
 - The old scaling scheme is applicable to clusters created before 2024-12-06.
 
-<tabs>
-<tablist>
-<tab>New scheme</tab>
-<tab>Old scheme</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(New scheme)}
 
 The vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
 
@@ -65,8 +62,9 @@ Examples:
 - `STD3-2-6` will change to `STD3-2-8`.
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Old scheme)}
 
 Vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
 
@@ -76,8 +74,9 @@ Vertical autoscaling agent evaluates the master node load by CPU and RAM, monito
 
 If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-6` will be changed to `STD2-4-12`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../instructions/scale#scale_master_nodes).
 

@@ -20,12 +20,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
@@ -44,8 +41,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    1. Click the **Save** button.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -100,8 +98,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ### {heading(Scaling groups of worker nodes)[id=scale_worker_nodes]}
 
@@ -125,12 +124,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
@@ -150,8 +146,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    1. Click the **Save** button.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -207,8 +204,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Horizontal scaling
 
@@ -222,12 +220,9 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
 1. Perform the scaling.
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
@@ -241,8 +236,9 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
       1. Set the required number of nodes. It can be changed both up and down.
       1. Click the **Save changes** button.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
@@ -288,8 +284,9 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ### {heading(Configuring automatic scaling for worker node groups)[id=autoscale_worker_nodes]}
 
@@ -299,12 +296,9 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
 1. Set up automatic scaling:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Management console)}
 
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en).
    1. Select the project where the necessary cluster is located.
@@ -318,8 +312,9 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
       1. Set the necessary number of nodes. It can be changed both upward and downward.
       1. Click the **Save changes** button.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
@@ -367,5 +362,6 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

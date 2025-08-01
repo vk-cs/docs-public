@@ -27,12 +27,9 @@ Spark Connect позволяет удаленно подключиться к к
 
 Установите PySpark и все зависимости пакета для работы со Spark Connect одним из способов:
 
-<tabs>
-<tablist>
-<tab>Python</tab>
-<tab>Jupyter Notebook</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Python)}
 
 ```console
 pip3 install pyspark
@@ -43,8 +40,9 @@ pip3 install protobuf
 pip3 install grpcio-status
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Jupyter Notebook)}
 
 ```console
 %pip install pyspark
@@ -55,9 +53,9 @@ pip3 install grpcio-status
 %pip install grpcio-status
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
 
+{/tabs}
 
 ## 2. Подключитесь к кластеру
 

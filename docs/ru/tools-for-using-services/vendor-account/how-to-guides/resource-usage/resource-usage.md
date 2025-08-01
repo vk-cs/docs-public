@@ -75,17 +75,15 @@
 
 При первом обращении к API извлеките токен из файла, путь к которому был [указан](#preparatory_steps) в параметре `token_file_path` манифеста Terraform. При последующих обращениях способ получения токена зависит от того, установлен ли агент на инстансе вашего приложения.
 
-<tabs>
-<tablist>
-<tab>Агент установлен</tab>
-<tab>Агент не установлен</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Агент установлен)}
 
 Извлеките актуальную версию токена из файла, путь к которому был [указан](#preparatory_steps) в параметре `token_file_path` манифеста Terraform.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Агент не установлен)}
 
 Получите токен через запрос к Marketplace API:
 
@@ -120,8 +118,9 @@ curl https://msk.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Подготовьте исходные данные
 
@@ -202,12 +201,9 @@ curl https://msk.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
 
 {cut(Примеры шифрования данных)}
 
-<tabs>
-<tablist>
-<tab>Python</tab>
-<tab>Golang</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Python)}
 
 ```python
 def encrypt_message(public_key_pem: str, data) -> dict:
@@ -255,8 +251,9 @@ def encrypt_message(public_key_pem: str, data) -> dict:
     return api_request
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang)}
 
 ```golang
 package main
@@ -415,8 +412,9 @@ func main() {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 

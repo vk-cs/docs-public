@@ -15,12 +15,9 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
 ## 2. Prepare the VM for migration
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 1. [Check](../check-virtio) availability of VirtIO drivers in the system.
 2. Check availability QEMU Guest Agent:
@@ -51,8 +48,9 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
 5. [Uninstall](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools if this software is installed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 1. Check that the operating system updates are installed and restart the VM.
 2. [Install](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) VirtIO drivers.
@@ -64,8 +62,9 @@ To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or trans
 
 5. [Uninstall](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools if this software is installed.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Export the virtual machine
 
@@ -94,20 +93,17 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
 3. Upload the resulting export file `.raw` to an existing VK Cloud project.
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows</tab>
-   </tablist>
+   {tabs}
 
-   <tabpanel>
+   {tab(Linux)}
 
    ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <file_path.raw> <image name>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    When importing a Windows image, specify the disk bus type — IDE (`hw_disk_bus` parameter):
 
@@ -115,8 +111,9 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
    openstack image create --progress --private --container-format bare --disk-format raw <file_path.raw> --property store=s3 --property os_type=windows --property hw_disk_bus=ide --min-disk 40 <image name>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    If the VM needs to support backup, add parameters to the command:
 
@@ -134,22 +131,18 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
 ## 5. Create a virtual machine
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>Windows</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(Linux)}
 
 Use the imported image to [create a Linux VM](/en/computing/iaas/instructions/vm/vm-create):
 
 - when creating a VM in your management console, select an image from the list;
 - when creating via the OpenStack CLI, specify the image ID in the appropriate command.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(Windows)}
 
 1. Use the imported image to [create an intermediate Windows VM](/en/computing/iaas/instructions/vm/vm-create).
 2. Add the VirtIO HBA driver to the Windows boot.
@@ -169,5 +162,6 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/instructions/vm
 5. [Create a target Windows VM](/en/computing/iaas/instructions/vm/vm-create) from a new image.
 6. Delete the intermediate VM created in step 1, as well as the imported image.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

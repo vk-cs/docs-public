@@ -8,12 +8,9 @@
 
 Чтобы перенести ревизию сервиса в архив:
 
-<tabs>
-<tablist>
-<tab>Кабинет поставщика</tab>
-<tab>Infra API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Кабинет поставщика)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. В разделе **Магазин приложений** нажмите кнопку **Перейти в кабинет поставщика**.
@@ -24,8 +21,9 @@
 
 Для выбранной ревизии в списке будет отображаться статус `Архив`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Infra API)}
 
 Выполните запрос с параметрами, приведенными в {linkto(#tab_service_archiving)[text=таблице %number]}.
 
@@ -107,5 +105,6 @@ HTTP-коды ответа приведены в {linkto(#tab_http_response_code
 |===
 {/caption}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

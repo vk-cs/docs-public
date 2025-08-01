@@ -2,14 +2,9 @@ The OpenStack Command line interface (OpenStack CLI) allows you to work with VK 
 
 ## Before you start
 
-<tabs>
-<tablist>
-<tab>Ubuntu, Debian</tab>
-<tab>CentOS</tab>
-<tab>macOS</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Ubuntu, Debian)}
 
 1. Install Python 3, if you have not already done:
 
@@ -24,8 +19,9 @@ The OpenStack Command line interface (OpenStack CLI) allows you to work with VK 
    sudo apt install python3-pip
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(CentOS)}
 
 {note:info}
 
@@ -51,9 +47,9 @@ The instructions are written for CentOS 8. For other versions of the OS, the com
    ```console
    sudo pip3 install openstacksdk==1.0.1
 
+{/tab}
 
-</tabpanel>
-<tabpanel>
+{tab(macOS)}
 
 Install Python 3 and pip3, if you have not already done:
 
@@ -61,8 +57,9 @@ Install Python 3 and pip3, if you have not already done:
 brew install python3
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 {note:info}
 
@@ -77,34 +74,33 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    - `C++ CMake tools for Windows`. When you select this component, the `MSVC v143 - VS 2022 C++ x64/x86 build tools (latest)` component will be automatically selected.
    - `Windows 10 SDK`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 1. Install the OpenStack client
 
 1. Install Openstack CLI:
 
-   <tabs>
-   <tablist>
-   <tab>Linux, maсOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
 
+   {tab(Linux, maсOS)}
 
    ```console
    pip3 install python-openstackclient
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    pip install python-openstackclient
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Check, if the OpenStack CLI is installed:
 
@@ -155,13 +151,9 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 5. Click **Download openrc version 3**. The `<PROJECT_NAME>-openrc.sh` file will be uploaded.
 6. Specify the authentication credentials in the environment variables.
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows (cmd)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+   
+   {tab(Linux)}
 
    1. Run the script:
 
@@ -171,8 +163,9 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    2. Enter the password of the project user.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (cmd))}
 
    1. Copy the parameter values without quotes from the `<PROJECT_NAME>-openrc.sh` file and run the commands:
 
@@ -194,8 +187,9 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
       Here, `<PASSWORD>` is the project user password.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    1. Copy the data from the `<PROJECT_NAME>-openrc.sh` file and run the commands:
 
@@ -217,8 +211,9 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
       Here, `<PASSWORD>` is the project user password.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 4. Check if OpenStack CLI is ready to work
 
@@ -232,33 +227,32 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 2. Make sure that the environment variables match the project by running the command:
 
-   <tabs>
-   <tablist>
-   <tab>Ubuntu, Debian, CentOS, macOS</tab>
-   <tab>Windows (cmd)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Ubuntu, Debian, CentOS, macOS)}
 
    ```console
    env | grep OS_
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (cmd))}
 
    ```console
    set | findstr OS_
    ```
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    gci env: | where name -like 'OS_*'
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The environment variables must contain authentication credentials corresponding to the project.
 

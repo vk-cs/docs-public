@@ -133,13 +133,9 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 2. Test the disk.
 
-   <tabs>
-   <tablist>
-   <tab>Windows</tab>
-   <tab>Linux</tab>
-   </tablist>
+   {tabs}
 
-   <tabpanel>
+   {tab(Windows)}
 
    To measure IOPS when reading and writing, use the DiskSpd or FIO utilities.
 
@@ -200,12 +196,8 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
          {/note}
 
-         <tabs>
-         <tablist>
-         <tab>PowerShell</tab>
-         <tab>Command line</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+         {tab(PowerShell)}
 
          ```console
          fio `
@@ -221,8 +213,9 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Command line)}
 
          ```console
             fio ^
@@ -238,17 +231,14 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
       - Random reading test in blocks of 4 KB:
 
-         <tabs>
-         <tablist>
-         <tab>PowerShell</tab>
-         <tab>Command line</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+         {tab(PowerShell)}
 
          ```console
          fio `
@@ -264,8 +254,9 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Command line)}
 
          ```console
          fio ^
@@ -281,12 +272,13 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
 
-   </tabpanel>
+         {/tabs}
 
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux)}
 
    To measure IOPS when reading and writing, use the FIO utility.
 
@@ -357,8 +349,9 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
             --filename=/home/user/test
          ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 3. If, when all conditions are met, the test results do not match the specified values, [contact technical support](mailto:support@mcs.mail.ru).
 

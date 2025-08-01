@@ -52,13 +52,9 @@
 
 К виртуальной машине на базе Linux, созданной из образа Ubuntu, можно подключиться по протоколу SSH.
 
-<tabs>
-<tablist>
-<tab>Linux/macOS</tab>
-<tab>Windows 10/11</tab>
-<tab>Windows 7/8</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux/macOS)}
 
 Выполните команду в терминале:
 
@@ -84,8 +80,9 @@ Are you sure you want to continue connecting (yes/no)?
 
 Введите в терминале `yes` и нажмите _Enter_.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 10/11)}
 
 Выполните команду в командной строке:
 
@@ -111,8 +108,9 @@ Are you sure you want to continue connecting (yes/no)?
 
 Введите в командной строке `yes` и нажмите _Enter_.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 7/8)}
 
 В Windows 7/8 для подключения по SSH используйте приложение PuTTY.
 
@@ -150,8 +148,9 @@ Are you sure you want to continue connecting (yes/no)?
 
       Если все настроено верно, будет установлено соединение с сервером.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удалите неиспользуемые ресурсы
 

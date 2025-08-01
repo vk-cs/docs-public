@@ -43,13 +43,9 @@ When using this type of storage:
 - only one pod can access storage (multiple pods cannot use block storage at the same time);
 - as a consequence, the `ReadWriteOnce` mode must be used to access the storage.
 
-<tabs>
-<tablist>
-<tab>Connecting via static PVC</tab>
-<tab>Connecting via dynamic PVC</tab>
-<tab>Connecting to several pods via dynamic PVC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Connecting via static PVC)}
 
 This example will create:
 
@@ -182,8 +178,9 @@ To connect a persistent volume using static PVC:
    kubectl apply -f ./tea.yaml
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Connecting via dynamic PVC)}
 
 This example will create:
 
@@ -282,8 +279,9 @@ To connect a persistent volume using dynamic PVC:
    kubectl apply -f ./coffee.yaml
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Connecting to several pods via dynamic PVC)}
 
 This example will create:
 
@@ -415,8 +413,9 @@ To connect a persistent volume to multiple pods using dynamic PVC:
    kubectl apply -f ./juice.yaml
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Connecting file storages
 
@@ -427,11 +426,9 @@ When using this type of storage:
 - Multiple pods can access the storage at once;
 - as a consequence, the `ReadWriteMany` mode must be used to access the storage.
 
-<tabs>
-<tablist>
-<tab>Connecting NFS storage via static PVC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Connecting NFS storage via static PVC)}
 
 This example will create:
 
@@ -621,8 +618,9 @@ To connect an NFS persistent volume using a static PVC:
    kubectl apply -f ./milkshake.yaml
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Check the functionality of demo applications and persistent volumes
 
@@ -718,14 +716,9 @@ To connect an NFS persistent volume using a static PVC:
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Tea</tab>
-   <tab>Coffee</tab>
-   <tab>Juice</tab>
-   <tab>Milkshake</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Tea)}
 
    Run the command:
 
@@ -739,8 +732,9 @@ To connect an NFS persistent volume using a static PVC:
    The tea pod says Hello World to everyone! This file is located on the statically claimed persistent volume.
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Coffee)}
 
    Run the command:
 
@@ -754,8 +748,9 @@ To connect an NFS persistent volume using a static PVC:
    The coffee pod says Hello World to everyone! This file is located on the statically claimed persistent volume.
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Juice)}
 
    Run the commands:
 
@@ -771,8 +766,9 @@ To connect an NFS persistent volume using a static PVC:
    The juice StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Milkshake)}
 
    Run the commands:
 
@@ -788,19 +784,17 @@ To connect an NFS persistent volume using a static PVC:
    The milkshake StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed NFS ReadWriteMany persistent volume.
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Delete unused resources
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml
@@ -811,8 +805,9 @@ To connect an NFS persistent volume using a static PVC:
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml; `
@@ -822,8 +817,9 @@ To connect an NFS persistent volume using a static PVC:
    kubectl delete -f ./tea.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Remove unused storage:
 

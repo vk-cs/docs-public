@@ -32,13 +32,9 @@ If RDP connection to the VM is not possible or unavailable, use the [VNC console
 
 ## 3. Connect to VM
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>macOS</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 In Linux, use the Remmina utility to connect via RDP.
 
@@ -64,8 +60,9 @@ In Linux, use the Remmina utility to connect via RDP.
 
 4. Click **Save and Connect** to connect to the VM. The new connection will be saved in the list.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(macOS)}
 
 In macOS, use the Microsoft Remote Desktop program to connect via RDP. Specify the connection parameters manually or using the RDP configuration file.
 
@@ -98,8 +95,9 @@ Connect to the VM:
 
 3. Find a new connection in the list and double-click on it to connect to the VM.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 To connect via RDP, specify the connection parameters manually or using the RDP configuration file.
 
@@ -137,8 +135,9 @@ Connect to the VM:
       4. Press the button **Connect** and confirm the connection again in the window that opens.
       5. In the operating system authorization window, enter `<PASSWORD>`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 

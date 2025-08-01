@@ -34,13 +34,9 @@
 
 Создайте файл конфигурации Terraform `network.tf`. Содержание зависит от нужного типа сети:
 
-<tabs>
-<tablist>
-<tab>Создание приватной сети</tab>
-<tab>Создание сети с доступом в интернет</tab>
-<tab>Создание сети с портом, привязанным к Floating IP-адресу</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Создание приватной сети)}
 
 В файле описана сетевая инфраструктура в следующей конфигурации:
 
@@ -51,8 +47,9 @@
 
 {include(/ru/_includes/_create_network_tf.md)[tags=net,router,shift=2]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Создание сети с доступом в интернет)}
 
 В файле описана сетевая инфраструктура в следующей конфигурации:
 
@@ -63,8 +60,9 @@
 
 {include(/ru/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Создание сети с портом, привязанным к Floating IP-адресу)}
 
 В файле описана сетевая инфраструктура в следующей конфигурации:
 
@@ -77,8 +75,9 @@
 
   {include(/ru/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Здесь:
 

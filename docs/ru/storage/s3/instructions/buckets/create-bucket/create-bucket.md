@@ -8,14 +8,9 @@
 
 ## {heading(Способы создания бакетов)[id=ways_to_create_bucket]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
@@ -27,19 +22,17 @@
 1. Выберите [класс хранения](../../../concepts/about#storage_class). Вы сможете [изменить его](../../change-storage-class) позже.
 1. Нажмите кнопку **Создать бакет**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 1. Откройте консоль и выполните одну из команд в зависимости от того, нужно ли включить для бакета возможность устанавливать [блокировку объектов](../../../concepts/features#object_lock):
 
-   <tabs>
-   <tablist>
-   <tab>Бакет без блокировки объектов</tab>
-   <tab>Бакет с возможностью блокировки</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Бакет без блокировки объектов)}
+      
    ```console
    aws s3 mb s3://<ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА>
    ```
@@ -67,9 +60,10 @@
    make_bucket: example-bucket
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Бакет с возможностью блокировки)}
+   
    ```console
    aws s3api create-bucket --bucket <ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА> --region <КОД_РЕГИОНА> --object-lock-enabled-for-bucket
    ```
@@ -101,13 +95,15 @@
    }  
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 Будет создан бакет с [классом хранения](../../../concepts/about#storage_class) `Hotbox`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -159,8 +155,9 @@
 
    Команда `CreateBucket` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CreateBucket).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -190,5 +187,6 @@
 
    Команда `create_bucket` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.create_bucket).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

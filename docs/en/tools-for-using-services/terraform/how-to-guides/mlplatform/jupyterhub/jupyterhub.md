@@ -66,6 +66,8 @@ Here:
   - Must contain uppercase and lowercase Latin letters.
   - Must contain at least one digit and a special character `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `<`, `>`, `|`, `[`, `]`, `{`, `}`, `(`, `)`.
 
+  {/cut}
+
 - `flavor_id` — a VM type ID. You can specify the ID in the manifest or get it from the data source.
 
   {cut(Examples)}
@@ -101,12 +103,9 @@ The specified VM type will be used to create a JupyterHub instance in your Terra
 
 Create a Terraform configuration file named `network.tf` with the network infrastructure description:
 
-<tabs>
-<tablist>
-<tab>Existing network</tab>
-<tab>New network</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Existing network)}
 
 Example data source for a network existing in your project:
 
@@ -116,8 +115,9 @@ data "vkcs_networking_network" "default" {
   sdn = "neutron"
 }
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(New network)}
 
 ```hcl
 # Create networks
@@ -152,8 +152,9 @@ resource "vkcs_networking_router_interface" "app" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 4. Create the necessary resources using Terraform
 

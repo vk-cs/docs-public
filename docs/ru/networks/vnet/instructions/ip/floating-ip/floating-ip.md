@@ -2,12 +2,9 @@
 
 ## {heading(Просмотр списка Floating IP-адресов)[id=view]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -16,8 +13,9 @@
 
    Будет отображен список Floating IP-адресов (колонка **Внешний IP**).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -27,8 +25,9 @@
    openstack floating ip list
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Добавление Floating IP-адреса в проект)[id=add]}
 
@@ -38,12 +37,9 @@ Floating IP-адрес назначается из общего пула слу�
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -53,8 +49,9 @@ Floating IP-адрес назначается из общего пула слу�
 1. (Опционально) Добавьте описание.
 1. Нажмите кнопку **Добавить IP**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -64,17 +61,15 @@ Floating IP-адрес назначается из общего пула слу�
    openstack floating ip create ext-net
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Редактирование описания Floating IP-адреса)[id=edit]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -84,8 +79,9 @@ Floating IP-адрес назначается из общего пула слу�
 1. Задайте описание.
 1. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -97,17 +93,15 @@ Floating IP-адрес назначается из общего пула слу�
    openstack floating ip set <ИДЕНТИФИКАТОР_FLOATING_IP-АДРЕСА> --description "<ОПИСАНИЕ>"
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Привязка Floating IP-адреса)[id=associate]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -121,8 +115,9 @@ Floating IP-адрес назначается из общего пула слу�
 1. Из выпадающего списка выберите порт OpenStack с внутренним IP-адресом, к которому выполняется привязка.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -134,17 +129,15 @@ Floating IP-адрес назначается из общего пула слу�
    openstack floating ip set <ИДЕНТИФИКАТОР_FLOATING_IP-АДРЕСА> --port <ИДЕНТИФИКАТОР_ПОРТА>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Отвязка Floating IP-адреса)[id=disassociate]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -153,8 +146,9 @@ Floating IP-адрес назначается из общего пула слу�
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для Floating IP-адреса, который привязан к внутреннему IP-адресу, и выберите пункт **Отвязать IP**.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -166,17 +160,15 @@ Floating IP-адрес назначается из общего пула слу�
    openstack floating ip unset <ИДЕНТИФИКАТОР_FLOATING_IP-АДРЕСА> --port
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление Floating IP-адреса из проекта)[id=delete]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный IP-адрес.
@@ -185,8 +177,9 @@ Floating IP-адрес назначается из общего пула слу�
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного Floating IP-адреса и выберите пункт **Убрать IP из проекта**. Чтобы отвязать сразу несколько IP-адресов, выберите их с помощью флажков и нажмите кнопку **Убрать IP из проекта**.
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -198,5 +191,6 @@ Floating IP-адрес назначается из общего пула слу�
    openstack floating ip delete <ИДЕНТИФИКАТОР_FLOATING_IP-АДРЕСА>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

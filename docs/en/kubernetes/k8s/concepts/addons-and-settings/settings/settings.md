@@ -30,12 +30,9 @@ Disabling or changing these templates and constraints can reduce the security of
 
 Templates are available for clusters starting with Cloud Containers version 1.21. For older versions, [manually install Gatekeeper](../../../install-tools/gatekeeper) and the above templates and restrictions, or upgrade the cluster. For more information about Gatekeeper, see [Architecture](../../architecture).
 
-<tabs>
-<tablist>
-<tab>host-namespaces<br>constraint</tab>
-<tab>host-filesystem<br>constraint</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(host-namespaces<br>constraint)}
 
 **Description:**.
 
@@ -77,8 +74,9 @@ If you try to apply such a manifest with `kubectl apply -f pod_namespace.yaml`, 
 Error from server ([...] Sharing the host namespace is not allowed: nginx-host-namespace-disallowed): error when creating "pod_namespace.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [...] Sharing the host namespace is not allowed: nginx-host-namespace-disallowed
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(host-filesystem<br>constraint)}
 
 **Description:**
 
@@ -118,7 +116,8 @@ If you try to apply such a manifest with `kubectl apply -f pod_filesystem.yaml`,
 Error from server ([...] HostPath volume {"hostPath": {"path": "/tmp", "type": ""}, "name": "cache-volume"} is not allowed, pod: nginx-host-filesystem. Allowed path: [{"pathPrefix": "/tmp", "readOnly": true}]): error when creating "pod_filesystem.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [...] HostPath volume {"hostPath": {"path": "/tmp", "type": ""}, "name": "cache-volume"} is not allowed, pod: nginx-host-filesystem. Allowed path: [{"pathPrefix": "/tmp", "readOnly": true}]
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 The pod that violated the constraint will not be created.

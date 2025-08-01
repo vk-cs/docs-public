@@ -21,11 +21,9 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 
 ## Do update
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -35,5 +33,6 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 1. Review the version changelog.
 1. Click the **Change version** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

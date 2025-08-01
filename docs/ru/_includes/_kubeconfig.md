@@ -14,12 +14,9 @@
 
 1. Файл конфигурации содержит чувствительную информацию, которая не должна быть доступна другим пользователям. Поэтому ограничьте права доступа к этому файлу:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    icacls.exe 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml' `
@@ -29,39 +26,41 @@
      /Grant:r ${env:UserName}:RW
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 {/includetag}
 {includetag(variables)}
 
 1. Поместите путь к файлу конфигурации в переменную среды окружения `$KUBECONFIG`:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
+   
 {/includetag}   

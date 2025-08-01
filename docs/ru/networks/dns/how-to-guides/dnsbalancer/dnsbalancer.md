@@ -35,32 +35,31 @@ VK Cloud позволяет создавать отказоустойчивые 
 
 1. Скачайте файл `dnsbalancer` для вашей ОС.
 
-    <tabs>
-    <tablist>
-    <tab>Ubuntu, Debian</tab>
-    <tab>FreeBSD</tab>
-    <tab>RedOS</tab>
-    </tablist>
-    <tabpanel>
+    {tabs}
+
+    {tab(Ubuntu, Debian)}
 
     Файл загрузки: [dnsbalancer](./assets/dnsbalancer "download")
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
+
+    {tab(FreeBSD)}
 
     Файл загрузки: [dnsbalancer](./assets/dnsbalancer_freebsd "download")
 
     После скачивания переименуйте файл в `dnsbalancer`.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
+
+    {tab(RedOS)}
 
     Файл загрузки: [dnsbalancer](./assets/dnsbalancer_redos "download")
 
     После скачивания переименуйте файл в `dnsbalancer`.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 1. Откройте сессию терминала для каждой ВМ.
 1. Разместите скачанный файл в директории `/usr/local/bin/` каждой ВМ.

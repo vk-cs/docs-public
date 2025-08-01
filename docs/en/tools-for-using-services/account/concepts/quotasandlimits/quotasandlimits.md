@@ -389,12 +389,9 @@ The limits in this section are determined by the requirements of operation, they
 
 #### Networks, subnets and IP addresses
 
-<tabs>
-<tablist>
-<tab>Sprut</tab>
-<tab>Neutron</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Sprut)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -428,8 +425,9 @@ The limits in this section are determined by the requirements of operation, they
 
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Neutron)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -463,20 +461,17 @@ The limits in this section are determined by the requirements of operation, they
 
 |===
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Even if the quota for the total number of subnets in the project has been increased through technical support, it is not recommended to create more than 20 subnets in one network.
 
 #### Other parameters
 
-<tabs>
-<tablist>
-<tab>Sprut</tab>
-<tab>Neutron</tab>
-<tab>Octavia</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Sprut)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -538,8 +533,9 @@ Even if the quota for the total number of subnets in the project has been increa
 
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Neutron)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -594,8 +590,9 @@ Even if the quota for the total number of subnets in the project has been increa
 
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Octavia)}
 
 [cols="2,1,1,1,1,1", options="header"]
 |===
@@ -622,8 +619,9 @@ Even if the quota for the total number of subnets in the project has been increa
 
 |===
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 You can exceed the limit on the number of balancing rules per load balancer (10 pcs.) without contacting technical support. To do this, create rules using the OpenStack CLI. For stable operation, it is not recommended to use more than 30 rules per load balancer.
 

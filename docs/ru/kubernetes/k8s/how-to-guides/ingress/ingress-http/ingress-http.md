@@ -68,12 +68,9 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Добавьте Helm-репозиторий NGINX:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
@@ -81,25 +78,24 @@ deployment.apps/tea      3/3     3            3           ...
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Установите Ingress-контроллер с сервисом `NodePort`, выполнив команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress \
@@ -110,8 +106,9 @@ deployment.apps/tea      3/3     3            3           ...
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    helm install nginx-ingress-http nginx-stable/nginx-ingress `
@@ -121,8 +118,9 @@ deployment.apps/tea      3/3     3            3           ...
     --set controller.service.externalTrafficPolicy=Local
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Дождитесь завершения установки Ingress-контроллера и назначения контроллеру порта.
 
@@ -164,12 +162,9 @@ HTTP-балансировщик нагрузки будет терминиров
       1. Убедитесь, что опция **Назначить внешний IP** включена.
       1. Задайте параметры обработки для каждого типа трафика:
 
-         <tabs>
-         <tablist>
-         <tab>Для HTTP-трафика</tab>
-         <tab>Для HTTPS-трафика</tab>
-         </tablist>
-         <tabpanel>
+         {tabs}
+
+         {tab(Для HTTP-трафика)}
 
          1. В блоке **Правила балансировки** нажмите ссылку **+ Добавить правило**.
          1. Выберите **Протокол назначения** `HTTP`, задайте для него **порт**, который был назначен Ingress-контроллеру.
@@ -182,8 +177,9 @@ HTTP-балансировщик нагрузки будет терминиров
          1. Нажмите кнопку **Следующий шаг**.
          1. Нажмите кнопку **Добавить**.
 
-         </tabpanel>
-         <tabpanel>
+         {/tab}
+
+         {tab(Для HTTPS-трафика)}
 
          1. В блоке **Правила балансировки** нажмите ссылку **+ Добавить правило**.
          1. Выберите **Протокол балансировки** `HTTPS`.
@@ -249,8 +245,9 @@ HTTP-балансировщик нагрузки будет терминиров
          1. Нажмите кнопку **Следующий шаг**.
          1. Нажмите кнопку **Добавить**.
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
    Начнется операция создания балансировщика, которая займет некоторое время.
 
@@ -336,12 +333,9 @@ HTTP-балансировщик нагрузки будет терминиров
 
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Coffee</tab>
-   <tab>Tea</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Coffee)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<публичный IP-адрес HTTP-балансировщика> https://cafe.example.com/coffee
@@ -362,8 +356,9 @@ HTTP-балансировщик нагрузки будет терминиров
    - взаимодействует с HTTP-балансировщиком нагрузки VK Cloud (который терминирует SSL\TLS-сессии);
    - обеспечивает доступ к сервисам, соответствующим развернутым приложениям.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Tea)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<публичный IP-адрес HTTP-балансировщика> https://cafe.example.com/tea
@@ -384,8 +379,9 @@ HTTP-балансировщик нагрузки будет терминиров
    - взаимодействует с HTTP-балансировщиком нагрузки VK Cloud (который терминирует SSL\TLS-сессии);
    - обеспечивает доступ к сервисам, соответствующим развернутым приложениям.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удалите неиспользуемые ресурсы
 
@@ -397,12 +393,9 @@ HTTP-балансировщик нагрузки будет терминиров
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml
@@ -412,8 +405,9 @@ HTTP-балансировщик нагрузки будет терминиров
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml; `
@@ -422,8 +416,9 @@ HTTP-балансировщик нагрузки будет терминиров
    kubectl delete namespace example-nginx-ingress-http
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 

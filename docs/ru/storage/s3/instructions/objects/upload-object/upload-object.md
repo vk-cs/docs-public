@@ -14,15 +14,9 @@
 
 ## {heading(Стандартная загрузка)[id=standard_upload]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>AWS CLI</tab>
-<tab>API</tab>
-<tab>Golang SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
@@ -41,8 +35,9 @@
 
 1. Чтобы загрузить папку с файлами, перетащите папку в окно загрузки.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
 
@@ -98,8 +93,9 @@
 
 Полное описание операций копирования и перемещения объектов и файлов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 1. Создайте [бакет](../../buckets/create-bucket), если он еще не создан.
 
@@ -109,8 +105,9 @@
 
 1. Используйте метод [PutObject](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/object-api#upload) для загрузки объекта в бакет.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Golang SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
@@ -185,8 +182,9 @@
 
    Команда `PutObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
@@ -221,19 +219,15 @@
 
 Команды `put_object` и `upload_file` подробно описаны в официальной документации к библиотеке boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Составная загрузка)[id=multipart_upload]}
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>API</tab>
-<tab>Go SDK</tab>
-<tab>Python SDK</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки.
 
@@ -455,8 +449,9 @@
    ```
    {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 1. Создайте [бакет](../../buckets/create-bucket), если он еще не создан.
 
@@ -474,8 +469,9 @@
 
 1. Завершите загрузку и соберите объект при помощи запроса [CompleteMultipartUpload](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#complete_multipart_upload).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Go SDK)}
 
 1. Создайте [бакет](../../buckets/create-bucket), если он еще не создан.
 
@@ -526,8 +522,9 @@
    }
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python SDK)}
 
 1. Создайте [бакет](../../buckets/create-bucket), если он еще не создан.
 
@@ -607,5 +604,6 @@
       return transfer_callback.thread_info
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

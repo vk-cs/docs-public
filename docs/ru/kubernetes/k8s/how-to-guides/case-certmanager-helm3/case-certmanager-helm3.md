@@ -85,12 +85,9 @@
 
    Эта команда установит релиз с именем `cert-manager` указанной версии в пространство имен (namespace) `cert-manager`. Если такого пространства в кластере не существует, то оно будет создано автоматически.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    ```console
    helm install cert-manager jetstack/cert-manager \
@@ -99,8 +96,9 @@
      --create-namespace
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm install cert-manager jetstack/cert-manager `
@@ -109,8 +107,9 @@
      --create-namespace
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    При успешном завершении установки в сообщении от Helm будет выведено:
 
@@ -305,12 +304,9 @@
 
 Чтобы создать резервную копию, выполните команду:
 
-<tabs>
-<tablist>
-<tab>Linux (bash) / macOS (zsh)</tab>
-<tab>Windows (PowerShell)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash) / macOS (zsh))}
 
 ```console
 kubectl get -o yaml \
@@ -319,8 +315,9 @@ kubectl get -o yaml \
 > cert-manager-backup.yaml
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (PowerShell))}
 
 ```console
 kubectl get -o yaml `
@@ -329,8 +326,9 @@ kubectl get -o yaml `
 > cert-manager-backup.yaml
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 О продвинутом резервном копировании и восстановлении из резервной копии читайте в [официальной документации cert-manager](https://cert-manager.io/docs/tutorials/backup).
 
@@ -380,12 +378,9 @@ kubectl get -o yaml `
 
 1. Обновите релиз `cert-manager` до выбранной версии:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    ```console
    helm upgrade cert-manager jetstack/cert-manager \
@@ -393,8 +388,9 @@ kubectl get -o yaml `
      --namespace cert-manager
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm upgrade cert-manager jetstack/cert-manager `
@@ -402,8 +398,9 @@ kubectl get -o yaml `
      --namespace cert-manager
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    При успешном завершении обновления в сообщении от Helm будет выведено:
    - `Release "cert-manager" has been upgraded. Happy Helming!`;

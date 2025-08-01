@@ -4,35 +4,41 @@
 
 Чтобы получить идентификатор проекта:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>VK Cloud Аккаунт</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
+
 {include(/ru/_includes/_project_pid_tab_lk.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(VK Cloud Аккаунт)}
+
 {include(/ru/_includes/_project_pid_tab_account.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Изменение имени проекта
 
 Имя проекта можно изменить на любом этапе жизни проекта.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>VK Cloud Аккаунт</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
+
 {include(/ru/_includes/_project_rename_tab_lk.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(VK Cloud Аккаунт)}
+
 {include(/ru/_includes/_project_rename_tab_account.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 {include(/ru/_includes/_project_rename_common.md)}
 
@@ -119,12 +125,9 @@
 
 ## Просмотр квот проекта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Квоты на наиболее часто используемые ресурсы отображаются на главной странице [личного кабинета](https://msk.cloud.vk.com/app/).
 
@@ -138,8 +141,9 @@
 
 Расширенный список квот для проекта можно получить через OpenStack CLI. Информация обо всех квотах и возможностях их увеличения в разделе [Квоты и лимиты](../../../concepts/quotasandlimits).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 Чтобы получить расширенный список квот для проекта:
 
@@ -261,31 +265,31 @@
 
     Вы можете вывести квоты отдельно для компонентов `nova` и `cinder`:
 
-    <tabs>
-    <tablist>
-    <tab>nova</tab>
-    <tab>cinder</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(nova)}
+        
     ```console
     nova quota-show
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(cinder)}
+    
     ```console
     cinder quota-show <project_id>
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
     Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Увеличение квот проекта
 

@@ -13,11 +13,9 @@
 
 ## Скачивание журнала действий
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы.
@@ -26,17 +24,15 @@
 
 Сформированный отчет будет загружен с расширением `.xlsx`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Просмотр записей журнала
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы.
@@ -49,8 +45,9 @@
 
 Чтобы открыть подробную информацию об отдельной записи, нажмите на значок ![Информация](assets/info-icon.svg "inline") справа от записи.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 1. [Включите](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
@@ -73,8 +70,9 @@
    | `marker` | string  | Токен для запроса следующей страницы, ранее возвращенный API. TTL маркеров — 1 час |
    | `limit`  | integer | Количество возвращаемых записей. Если не указан, возвращает 100 записей |
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 В каждой записи журнала действий представлена информация:
 

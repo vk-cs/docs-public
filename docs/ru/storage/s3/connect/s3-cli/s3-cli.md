@@ -11,12 +11,9 @@ VK Cloud позволяет использовать интерфейс кома
 
 ## 1. Настройте подключение к Cloud Storage
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>s3cmd CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
   1. В консоли выполните команду:
 
@@ -41,8 +38,9 @@ VK Cloud позволяет использовать интерфейс кома
 
   AWS CLI хранит эту информацию в профиле (наборе настроек), названном `default` в credentials-файле. Информация из этого профиля используется, когда запускается команда без указания профиля.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(s3cmd CLI)}
 
   1. В консоли выполните команду:
 
@@ -73,19 +71,17 @@ VK Cloud позволяет использовать интерфейс кома
 
   S3cmd CLI хранит собранную информацию в файле `~/.s3cfg`, его содержимое можно изменить вручную.
 
-</tabpanel>
-   </tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Проверьте подключение к Cloud Storage
 
 Выполните команду для вывода списка бакетов:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>s3cmd CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
   ```console
   aws s3 ls --endpoint-url <домен>
@@ -96,14 +92,16 @@ VK Cloud позволяет использовать интерфейс кома
   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Россия;
   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(s3cmd CLI)}
 
   ```console
   s3cmd ls
   ```
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 В выводе консоли должен отобразиться список доступных бакетов. Список может быть пустым, если в хранилище не создано ни одного бакета.
 
@@ -116,12 +114,9 @@ VK Cloud позволяет использовать интерфейс кома
 
 Создание бакета:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>s3cmd CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
   ```console
   aws s3 mb s3://<имя_бакета> --endpoint-url <домен>
@@ -133,8 +128,9 @@ VK Cloud позволяет использовать интерфейс кома
   ```
 
   {/cut}
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(s3cmd CLI)}
 
   ```console
   s3cmd mb s3://<имя_бакета>
@@ -145,17 +141,16 @@ VK Cloud позволяет использовать интерфейс кома
   Bucket 's3://my-bucket/' created
   ```
   {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 Загрузка файла в бакет:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>s3cmd CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
   ```console
   aws s3 cp <путь_к_локальному_файлу> s3://<имя_бакета> --endpoint-url <домен>
@@ -166,8 +161,10 @@ VK Cloud позволяет использовать интерфейс кома
   upload: ..\Diagrams\example.svg to s3://new-bucket-aws-cli/example.svg
   ```
   {/cut}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(s3cmd CLI)}
 
   ```console
   s3cmd put <путь_к_локальному_файлу> s3://<имя_бакета>/<имя_объекта>
@@ -178,17 +175,16 @@ VK Cloud позволяет использовать интерфейс кома
   upload: 'local-file' -> 's3://my-bucket/new-object'
   ```
   {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 Получение списка объектов:
 
-<tabs>
-<tablist>
-<tab>AWS CLI</tab>
-<tab>s3cmd CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(AWS CLI)}
 
   ```console
   aws s3 ls s3://<имя_бакета> --endpoint-url <домен>
@@ -204,8 +200,10 @@ VK Cloud позволяет использовать интерфейс кома
         2023-09-27 11:48:56        361 delete-picture.png
   ```
   {/cut}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(s3cmd CLI)}
 
   ```console
   s3cmd ls s3://<имя_бакета>
@@ -220,5 +218,7 @@ VK Cloud позволяет использовать интерфейс кома
       2023-10-05 06:58    110207   s3://my-bucket/scheme-picture.png
   ```
   {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}

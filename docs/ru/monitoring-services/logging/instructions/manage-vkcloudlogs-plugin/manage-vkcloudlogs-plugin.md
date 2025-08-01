@@ -5,35 +5,33 @@
 
 - Чтобы включить агент, выполните команду:
 
-  <tabs>
-  <tablist>
-  <tab>Linux</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
+
+  {tab(Linux)}
 
   ```console
   sudo systemctl enable vkcloudlogs-fluent-bit.service
   sudo systemctl start vkcloudlogs-fluent-bit.service
   ```
 
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 - Чтобы выключить агент, выполните команду:
 
-  <tabs>
-  <tablist>
-  <tab>Linux</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
+
+  {tab(Linux)}
 
   ```console
   sudo systemctl stop vkcloudlogs-fluent-bit.service
   sudo systemctl disable vkcloudlogs-fluent-bit.service
   ```
 
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 ## {heading(Настройка агента для сбора логов из дополнительных текстовых файлов)[id=configure_agent]}
 
@@ -73,49 +71,47 @@
 
 1. Перезапустите агент:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    sudo systemctl restart vkcloudlogs-fluent-bit.service
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удаление агента и плагина
 
 1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>CentOS 7.X, CentOS 8.X, RedOS 7, AlmaLinux 9</tab>
-   <tab>Ubuntu 22.X, Astra Linux</tab>
-   <tab>AltLinux Server</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(CentOS 7.X, CentOS 8.X, RedOS 7, AlmaLinux 9)}
 
    ```console
    sudo yum remove vkcloudlogs-fluent-bit-plugin.x86_64
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Ubuntu 22.X, Astra Linux)}
 
    ```console
    sudo apt remove vkcloudlogs-fluent-bit-plugin
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(AltLinux Server)}
 
    ```console
    sudo apt-get remove vkcloudlogs-fluent-bit-plugin
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

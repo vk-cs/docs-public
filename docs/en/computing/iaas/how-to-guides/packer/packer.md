@@ -19,26 +19,25 @@ Use the utility `qemu-img`:
 
 1. Install 'qemu-img' if not done before:
 
-    <tabs>
-    <tablist>
-    <tab>RHLE/Centos</tab>
-    <tab>Ubuntu</tab>
-    </tablist>
-    <tabpanel>
+    {tabs}
+
+    {tab(RHLE/Centos)}
 
     ```console
     sudo yum install qemu-img
     ```
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
+
+    {tab(Ubuntu)}
 
     ```console
     sudo apt install qemu-utils
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 1. Run the file conversion using the command:
 
@@ -172,12 +171,9 @@ Import the image according to [instructions](../../instructions/images/images-ma
 
 1. Make sure that the image is displayed correctly.
 
-    <tabs>
-    <tablist>
-    <tab>Management console</tab>
-    <tab>OpenStack CLI</tab>
-    </tablist>
-    <tabpanel>
+    {tabs}
+
+    {tab(Management console)}
 
     1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
     1. Go to **Cloud Servers → Images**.
@@ -185,8 +181,9 @@ Import the image according to [instructions](../../instructions/images/images-ma
 
       The image will also become available when creating a VM.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
+
+    {tab(OpenStack CLI)}
 
     ```console
     openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
@@ -219,8 +216,9 @@ Import the image according to [instructions](../../instructions/images/images-ma
     +------------------+------------------------------------------------------+
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 ## Delete unused resources
 

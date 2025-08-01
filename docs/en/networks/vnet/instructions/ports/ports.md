@@ -9,12 +9,9 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 ## Viewing a list of ports and port information
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -28,8 +25,9 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
    Its information will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -73,17 +71,15 @@ openstack subnet list --help
 openstack port show --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding a port
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -99,8 +95,9 @@ openstack port show --help
 
 1. Click the **Create port** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -116,19 +113,17 @@ For detailed information on supported parameters, run the command:
 openstack port create --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Enabling and disabling a port
 
 ### Enabling a port
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can enable multiple disabled ports at once, if necessary, by selecting them using the checkboxes.
 
@@ -150,8 +145,9 @@ This is a group operation: you can enable multiple disabled ports at once, if ne
      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Enable port**.
      1. Confirm the operation.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -169,19 +165,17 @@ For detailed information on supported parameters, run the command:
 openstack port set --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Disabling a port
 
 A disabled port does not allow any traffic to pass through.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can disable multiple enabled ports at once, if necessary, by selecting them using the checkboxes.
 
@@ -203,8 +197,9 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Disable port**.
      1. Confirm the operation.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -222,17 +217,15 @@ For detailed information on supported parameters, run the command:
 openstack port set --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing a port
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -248,8 +241,9 @@ openstack port set --help
 
 1. Click the **Save changes** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -281,18 +275,17 @@ For detailed information on supported parameters, run the command:
 openstack port set --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Configuring IP Source Guard for a port
 
 This mechanism allows only traffic for which the source IP address is in the `allowed-address` list to be allowed to leave the port.
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -324,8 +317,9 @@ openstack port set --help
 openstack port unset --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a port
 
@@ -335,12 +329,9 @@ It is not possible to delete a port if it is in use by the router.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete multiple ports at once, if necessary, by selecting them using the checkboxes.
 
@@ -362,8 +353,9 @@ This is a group operation: you can delete multiple ports at once, if necessary, 
      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Delete port**.
      1. Confirm the operation.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
@@ -381,5 +373,6 @@ For detailed information on supported parameters, run the command:
 openstack port delete --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

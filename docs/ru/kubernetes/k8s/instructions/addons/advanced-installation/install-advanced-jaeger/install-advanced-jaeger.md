@@ -10,23 +10,16 @@
 
 При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
-<tabs>
-<tablist>
-<tab>Стандартная установка</tab>
-<tab>Установка на выделенные worker-узлы</tab>
-<tab>Быстрая установка</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Стандартная установка)}
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -54,9 +47,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -82,8 +76,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Опционально) [Подключитесь к Query UI](../../../../connect/addons-ui).
 1. (Опционально) [Познакомьтесь с практическим руководством](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) по использованию Jaeger с микросервисным приложением Hot R.O.D. В руководстве показаны:
@@ -91,17 +86,16 @@
    - Интеграция OpenTelemetry в микросервисное приложение для того, чтобы оно отправляло в Jaeger данные, нужные для трассировки запросов.
    - Визуализация и интерпретация собранных Jaeger данные с помощью Query UI.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Установка на выделенные worker-узлы)}
 
 1. Подготовьте выделенную группу worker-узлов для установки аддона, если это еще не сделано:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -116,18 +110,16 @@
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -147,13 +139,10 @@
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
-      <tabs>
-      <tablist>
-      <tab>Исключения</tab>
-      <tab>Селекторы узлов</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Исключения)}
+            
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -169,9 +158,10 @@
       - `collector.tolerations`;
       - `query.tolerations`.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Селекторы узлов)}
+      
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -184,8 +174,9 @@
       - `collector.nodeSelector`;
       - `query.nodeSelector`.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       {note:warn}
 
@@ -197,9 +188,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -225,8 +217,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. (Опционально) [Подключитесь к Query UI](../../../../connect/addons-ui).
 1. (Опционально) [Познакомьтесь с практическим руководством](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) по использованию Jaeger с микросервисным приложением Hot R.O.D. В руководстве показаны:
@@ -234,8 +227,9 @@
    - Интеграция OpenTelemetry в микросервисное приложение для того, чтобы оно отправляло в Jaeger данные, нужные для трассировки запросов.
    - Визуализация и интерпретация собранных Jaeger данные с помощью Query UI.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Быстрая установка)}
 
 {note:info}
 
@@ -249,13 +243,10 @@
 
 1. Установите аддон:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Личный кабинет)}
+      
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
@@ -272,9 +263,10 @@
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
@@ -296,8 +288,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Опционально) [Подключитесь к Query UI](../../../../connect/addons-ui).
 1. (Опционально) [Познакомьтесь с практическим руководством](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) по использованию Jaeger с микросервисным приложением Hot R.O.D. В руководстве показаны:
@@ -305,8 +298,9 @@
    - Интеграция OpenTelemetry в микросервисное приложение для того, чтобы оно отправляло в Jaeger данные, нужные для трассировки запросов.
    - Визуализация и интерпретация собранных Jaeger данные с помощью Query UI.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Редактирование кода настройки аддона при установке
 

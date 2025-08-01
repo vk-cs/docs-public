@@ -90,13 +90,9 @@
 
 ## {heading(Удаление инстанса)[id=delete]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Библиотека Cloud ML Platform</tab>
-<tab>Библиотека Deployment Client</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько инстансов, выбрав их с помощью флажков.
 
@@ -108,15 +104,18 @@
     - Выберите инстанс с помощью флажка, затем нажмите кнопку **Удалить**.
 1. Подтвердите действие.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Библиотека Cloud ML Platform)}
 
 Используйте метод [delete_instance](../../../mlplatform-lib/lib-reference#delete_instance).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Библиотека Deployment Client)}
 
 Используйте метод [delete_endpoint](../../how-to-guides/manage-mlflow-client#delete_deploy_server).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

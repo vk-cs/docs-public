@@ -39,13 +39,9 @@ This authentication process is inconvenient when working with automated tools th
 
 ## {heading(Relationship between the roles of management console and Kubernetes)[id=kubernetes-roles-relation]}
 
-<tabs>
-<tablist>
-<tab>Kubernetes Auditor</tab>
-<tab>Kubernetes Operator </tab>
-<tab>Project Owner<br>Project Administrator<br>Super Administrator<br>Kubernetes Administrator</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Kubernetes Auditor)}
 
 **Kubernetes role:** `view`.
 
@@ -58,8 +54,9 @@ The role does not provide:
 
   A user with access to secrets can access the credentials of any service account in the namespace. This will allow access to the API on behalf of any service account in the namespace. For the read-only role, this will be considered as privilege escalation.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Kubernetes Operator )}
 
 **Kubernetes role:** `edit`.
 
@@ -74,8 +71,9 @@ The role does not provide:
 - Ability to view or change roles and role bindings.
 - Write access to Cloud Containers cluster [endpoints](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) version 1.22 and higher.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Project Owner<br>Project Administrator<br>Super Administrator<br>Kubernetes Administrator)}
 
 **Kubernetes role:** `admin`.
 
@@ -91,8 +89,9 @@ The role does not provide:
 - Write access to the resource quota or to the namespace itself.
 - Write access to Cloud Containers cluster [endpoints](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) version 1.22 and higher.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 To view a list of available resources for a role, connect to the cluster and run the command:
 

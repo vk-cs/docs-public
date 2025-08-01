@@ -105,21 +105,17 @@ jq должна быть предварительно установлена в 
 
 ## Установка
 
-<tabs>
-<tablist>
-<tab>Debian/Ubuntu</tab>
-<tab>RHEL/CentOS 7/8</tab>
-<tab>Windows</tab>
-<tab>Mac OS</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Debian/Ubuntu)}
 
 ```console
 sudo apt-get install jq
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(RHEL/CentOS 7/8)}
 
 ```console
 yum install epel-release -y
@@ -127,8 +123,9 @@ yum update -y
 yum install jq -y
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 1. [Установите](https://community.chocolatey.org/courses/installation/installing) менеджер пакетов [Chocolatey](https://chocolatey.org), если он еще не установлен.
 1. Откройте PowerShell и выполните команду:
@@ -137,8 +134,9 @@ yum install jq -y
    choco install jq -y
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Mac OS)}
 
 Воспользуйтесь удобным для вас менеджером пакетов:
 
@@ -160,8 +158,9 @@ yum install jq -y
   port install jq
   ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Пример использования
 

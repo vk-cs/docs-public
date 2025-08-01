@@ -207,31 +207,30 @@ More information can be found in the [sk95566 article](https://support.checkpoin
    1. In the **Inbound Traffic** block, click **+ Add Rule**.
    1. Select the traffic type and specify ports:
 
-      <tabs>
-      <tablist>
-      <tab>All protocols and all ports</tab>
-      <tab>HTTPS</tab>
-      <tab>SSH</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(All protocols and all ports)}
 
       To allow any incoming traffic from IP addresses on your network:
 
       1. In the **Type** field, select **All protocols and all ports**.
       1. Under **Remote Address**, select **IP-address range** and click **Use my IP** to automatically substitute the IP address range of your network.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(HTTPS)}
 
       Select **HTTPS** and specify the `443` port to allow incoming traffic from any IP addresses to the `443` TCP port.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(SSH)}
 
       Select **SSH** and specify the `22` port to allow incoming traffic from any IP addresses to the `22` TCP port.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Click **Save rule**.
 
@@ -252,40 +251,39 @@ Now, you can connect to the gateway VM using the GAiA Portal web interface at `h
    1. In the **Inbound Traffic** block, click **+ Add Rule**.
    1. Select the traffic type and specify ports:
 
-      <tabs>
-      <tablist>
-      <tab>All protocols and all ports</tab>
-      <tab>HTTPS</tab>
-      <tab>SSH</tab>
-      <tab>Other</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(All protocols and all ports)}
 
       To allow any incoming traffic from IP addresses on your network:
 
       1. In the **Type** field, select **All protocols and all ports**.
       1. Under **Remote Address**, select **IP-address range** and click **Use my IP** to automatically substitute the IP address range of your network.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(HTTPS)}
 
       Select **HTTPS** and specify the `443` port to allow incoming traffic from any IP addresses to the `443` TCP port.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(SSH)}
 
       Select **SSH** and specify the `22` port to allow incoming traffic from any IP addresses to the `22` TCP port.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Other)}
 
       You can set other ports to connect to the management server through the SmartConsole application:
 
       1. In the **Type** field, select **Other**.
       1. Specify `19009`, `18210`, `18190`, and `443` TCP ports to allow incoming traffic from any IP addresses to these ports.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Click **Save rule**.
 

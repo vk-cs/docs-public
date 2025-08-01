@@ -160,28 +160,27 @@ Install the following tools on the host:
 
    The commands below assume that kubeconfig has been downloaded into the `~/Downloads` directory under the name `mycluster_kubeconfig.yaml`.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    mkdir ~/.kube && \
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    mkdir ~/.kube; `
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Check that `kubectl` can connect to the cluster:
 
@@ -206,12 +205,9 @@ Install the following tools on the host:
 
 An add-on with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
 
-<tabs>
-<tablist>
-<tab>Prometheus + Grafana</tab>
-<tab>Kubernetes Dashboard</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Prometheus + Grafana)}
 
 1. In a separate terminal session, run the command:
 
@@ -234,8 +230,9 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
 
 1. Select **Dashboards → Browse** from the side menu of any pre-configured dashboard to get information about the cluster resources.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Kubernetes Dashboard)}
 
 1. In a separate terminal session, run the command:
 
@@ -253,8 +250,9 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
 
 The browser will be opened and you will be redirected to the Kubernetes Dashboard web interface. Next, select any available category to view information about the cluster resources.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Upload the necessary images to the Docker registry
 
@@ -289,13 +287,9 @@ To put your own images in the Docker cluster registry:
 
    1. Restart the Docker Engine.
 
-      <tabs>
-      <tablist>
-      <tab>Linux</tab>
-      <tab>Windows</tab>
-      <tab>macOS</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux)}
 
       Do one of the following:
 
@@ -311,43 +305,45 @@ To put your own images in the Docker cluster registry:
 
       - [Restart the Docker Engine](https://docs.docker.com/desktop/settings/linux/#docker-engine) from the Docker Desktop GUI (if installed).
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows)}
 
       [Restart the Docker Engine](https://docs.docker.com/desktop/settings/windows/#docker-engine) from the Docker Desktop GUI.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(macOS)}
 
       [Restart the Docker Engine](https://docs.docker.com/desktop/settings/mac/#docker-engine) from the Docker Desktop GUI.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
 1. Build a Docker image:
 
    1. Create a directory for the files and navigate to it:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS</tab>
-      <tab>Windows</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux/macOS)}
 
       ```console
       mkdir ~/image-build && cd ~/image-build
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows)}
 
       ```console
       mkdir ~/image-build; cd ~/image-build
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Place the following files in this directory:
 
@@ -445,26 +441,25 @@ To deploy the applications:
 
 1. Create a directory for the files and navigate to it:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    mkdir ~/k8s-deployments && cd ~/k8s-deployments
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    mkdir ~/k8s-deployments; cd ~/k8s-deployments
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Place the following files in this directory:
 
@@ -610,13 +605,9 @@ To deploy the applications:
 
 1. Check if the deployment is correct for:
 
-   <tabs>
-   <tablist>
-   <tab>Persistent volumes</tab>
-   <tab>Workloads</tab>
-   <tab>Services</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Persistent volumes)}
 
    Use one of the ways:
 
@@ -632,8 +623,9 @@ To deploy the applications:
 
    You will see information that 1GB persistent volumes, that have been created with Persistent Volume Claim for deployments `tea` and `coffee`, are present.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Workloads)}
 
    Use one of the ways:
 
@@ -649,8 +641,9 @@ To deploy the applications:
 
    You will see that there is a deployment `coffee` of three pods, and a deployment `tea` of two pods.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Services)}
 
    Use one of the ways:
 
@@ -664,8 +657,9 @@ To deploy the applications:
 
    You will see that there are two services `coffee-svc` and `tea-svc` of type `ClusterIP`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 5. Configure Ingress for demo applications
 
@@ -726,12 +720,9 @@ To verify that the example is working, run `curl` requests to the IP address `19
 
 Requests for:
 
-<tabs>
-<tablist>
-<tab>The tea application</tab>
-<tab>The coffee application</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(The tea application)}
 
 ```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/tea
@@ -751,8 +742,9 @@ X-Forwarded-For (Request source): <IP address of host that sourced the request>
 K8S Persistent Volume status: present
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(The coffee application)}
 
 ```console
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/coffee
@@ -772,8 +764,9 @@ X-Forwarded-For (Request source): <IP address of host that sourced the request>
 K8S Persistent Volume status: present
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 This result demonstrates that:
 

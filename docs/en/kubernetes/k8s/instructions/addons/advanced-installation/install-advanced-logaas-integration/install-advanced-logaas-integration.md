@@ -13,22 +13,16 @@ Regardless of the selected installation option, the add-on will be installed as 
 
 Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
-<tabs>
-<tablist>
-<tab>Standard installation</tab>
-<tab>Quick installation</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Standard installation)}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -54,9 +48,10 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single add-on. Data sources related to add-ons are also documented:
 
    - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
@@ -64,13 +59,15 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    For more information about working with the provider, see [Terraform](/en/tools-for-using-services/terraform).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [View logs](/en/monitoring-services/logging/instructions/view-logs) in the Cloud Logging service to make sure that the add-on is working properly.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Quick installation)}
 
 {note:info}
 
@@ -82,13 +79,10 @@ If this does not suit you, perform the **standard installation**.
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -108,9 +102,10 @@ If this does not suit you, perform the **standard installation**.
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single add-on. Data sources related to add-ons are also documented:
 
    - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
@@ -118,13 +113,15 @@ If this does not suit you, perform the **standard installation**.
 
    For more information about working with the provider, see [Terraform](/en/tools-for-using-services/terraform).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [View logs](/en/monitoring-services/logging/instructions/view-logs) in the Cloud Logging service to make sure that the add-on is working properly.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
@@ -224,12 +221,9 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
 
 You can fine-tune the behavior of the add-on when working with severity levels using:
 
-<tabs>
-<tablist>
-<tab>Custom filters</tab>
-<tab>Custom patterns</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Custom filters)}
 
 Set one or more rules for custom `CustomFilter` filters in the add-on code so that only logs with the specified minimum severity level get into Cloud Logging. These rules can be configured at the level of a specific namespace and at the level of specific pods in the namespace:
 
@@ -292,8 +286,9 @@ customFilter:
 
 {/cut}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Custom patterns)}
 
 Set one or more rules for custom `customRegexp` pattern in the add-on code to set the required severity level for logs bypassing the standard add-on mechanisms. If part of the log entry matches the specified Lua [pattern](https://www.lua.org/manual/5.4/manual.html#6.4.1), then this record is assigned the severity level specified in the rule. If there are no matches, then the record is assigned a severity level determined using the Fluent Bit parsers. This can be useful if the automatic level detection mechanism used in the add-on incorrectly determines the log level of a particular application.
 
@@ -384,5 +379,6 @@ customRegexp:
 
 {/cut}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

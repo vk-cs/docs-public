@@ -389,12 +389,9 @@
 
 #### Сети, подсети и IP-адреса
 
-<tabs>
-<tablist>
-<tab>Sprut</tab>
-<tab>Neutron</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Sprut)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -428,8 +425,9 @@
 
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Neutron)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -463,20 +461,17 @@
 
 |===
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Даже если квота на общее количество подсетей в проекте была увеличена через техническую поддержку, не рекомендуется создавать более 20 подсетей в одной сети.
 
 #### Другие параметры
 
-<tabs>
-<tablist>
-<tab>Sprut</tab>
-<tab>Neutron</tab>
-<tab>Octavia</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Sprut)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -538,8 +533,9 @@
 
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Neutron)}
 
 [cols="3,2,2,1,1,1", options="header"]
 |===
@@ -594,8 +590,9 @@
 
 |===
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Octavia)}
 
 [cols="2,1,1,1,1,1", options="header"]
 |===
@@ -622,8 +619,9 @@
 
 |===
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Вы можете превысить лимит на количество правил балансировки на один балансировщик (10 шт.), не обращаясь в техническую поддержку. Для этого создайте правила при помощи OpenStack CLI. Для стабильной работы не рекомендуется использовать более 30 правил на один балансировщик.
 

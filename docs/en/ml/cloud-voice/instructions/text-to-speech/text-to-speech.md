@@ -2,12 +2,9 @@ The speech synthesis function allows you to voice strings of text. To synthesize
 
 ## The Request
 
-<tabs>
-<tablist>
-<tab>GET</tab>
-<tab>POST</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(GET)}
 
 To synthesize speech using a GET request, send the text in the `text` parameter.
 
@@ -20,8 +17,9 @@ curl -L --request GET \
     --header 'Authorization: Bearer <access token>'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(POST)}
 
 To synthesize speech using a POST request, send the text in the body of the request.
 
@@ -36,8 +34,9 @@ curl -L --request POST \
   --output <file name>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Request parameters:
 

@@ -5,11 +5,9 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 ## Creating an instance in the Single configuration
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
@@ -68,16 +66,15 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       Wait for the operation to complete. It may take a long time to create an instance of Cloud Kafka.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating an instance in the Cluster configuration
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
@@ -109,20 +106,18 @@ You can create an instance of Cloud Kafka in one of two configurations:
    1. Select [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be located.
    1. Configure the cluster node settings by selecting one of the options:
 
-      <tabs>
-      <tablist>
-      <tab>Basic</tab>
-      <tab>Advanced</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Basic)}
+            
       Select one of the ready-made cluster templates. [Flavor](/en/computing/iaas/concepts/about#flavors) and [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) the cluster nodes have already been selected.
 
       If you select any template, the Cloud Kafka instance will consist of three nodes for brokers and three nodes for ZooKeeper.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Advanced)}
+      
       Configure the settings yourself:
 
       1. Set the node parameters for brokers in the **Broker** block:
@@ -144,8 +139,9 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
          These parameters are preset and cannot be changed.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
    1. Click the **Create** button.
 
@@ -170,5 +166,6 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       Wait for the operation to complete. It may take a long time to create an instance of Cloud Kafka.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -17,16 +17,9 @@
 
 ## PostgreSQL
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-<tab>ODBC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Убедитесь, что [PHP](https://www.php.net/manual/ru/install.php) и [composer](https://getcomposer.org/doc/) установлены.
 1. [Установите](https://www.php.net/manual/ru/book.pgsql.php) библиотеку `php-pgsql`.
@@ -46,8 +39,9 @@
 
 Подробнее о подключении к PostgreSQL в PHP читайте в [документации](https://www.php.net/manual/ru/book.pgsql.php).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Убедитесь, что Python [установлен](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Установите](https://www.psycopg.org/docs/install.html#quick-install) модуль `psycopg`.
@@ -67,8 +61,9 @@
    - `<ПАРОЛЬ>` — пароль пользователя БД.
    - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Убедитесь, что Ruby [установлен](https://www.ruby-lang.org/ru/documentation/installation/).
 1. [Установите](https://www.rubydoc.info/gems/pg#how-to-install) библиотеку `pg`.
@@ -88,8 +83,9 @@
    - `<ПАРОЛЬ>` — пароль пользователя БД.
    - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Убедитесь, что [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net) установлены.
 1. [Установите](http://jdbc.postgresql.org/download/) JDBC-драйвер для PostgreSQL.
@@ -109,8 +105,9 @@
    - `<ПАРОЛЬ>` — пароль пользователя БД.
    - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. Убедитесь, что Node.js [установлен](https://nodejs.org/ru/download).
 1. [Установите](https://node-postgres.com/) модули `node-postgres`.
@@ -129,8 +126,9 @@
    - `<ПАРОЛЬ>` — пароль пользователя БД.
    - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ODBC)}
 
 1. [Установите](https://www.postgresql.org/ftp/odbc/versions/) драйвер ODBC.
 1. Подключитесь к базе данных:
@@ -147,21 +145,16 @@
    - `<ПАРОЛЬ>` — пароль пользователя БД.
    - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## MySQL
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-<tab>ODBC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+
+{tab(PHP)}
 
 1. Убедитесь, что [PHP](https://www.php.net/manual/ru/install.php) и [composer](https://getcomposer.org/doc/) установлены.
 1. [Установите](https://www.php.net/manual/ru/book.mysql.php) библиотеку `php-mysql`.
@@ -183,8 +176,9 @@
 
 Подробнее о подключении к MySQL в PHP читайте в [документации](https://www.php.net/manual/ru/set.mysqlinfo.php).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Убедитесь, что Python [установлен](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Установите](https://dev.mysql.com/doc/connector-python/en/) модуль `mysql.connector`.
@@ -204,8 +198,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Убедитесь, что Ruby [установлен](https://www.ruby-lang.org/ru/documentation/installation/).
 1. [Установите](https://rubygems.org/gems/mysql2/versions/0.5.2) модуль `mysql2`.
@@ -225,8 +220,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Установите [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net).
 1. [Установите](http://dev.mysql.com/downloads/connector/j/) JDBC-драйвер для MySQL.
@@ -246,8 +242,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. Установите [Node.js](https://nodejs.org/ru/download).
 1. [Установите](https://github.com/mysqljs/mysql) модуль `mysql`.
@@ -272,8 +269,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ODBC)}
 
 1. [Установите](https://dev.mysql.com/downloads/connector/odbc/) драйвер ODBC.
 1. Подключитесь к базе данных:
@@ -290,8 +288,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Tarantool
 
@@ -301,15 +300,9 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Java</tab>
-<tab>Shell</tab>
-<tab>Go</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Убедитесь, что [PHP](https://www.php.net/manual/ru/install.php) и [composer](https://getcomposer.org/doc/) установлены.
 1. [Установите](https://github.com/tarantool-php/client#installation) библиотеку `tarantool/client`.
@@ -330,8 +323,9 @@
 
 Подробнее о подключении к Tarantool в PHP читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_php/).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. [Установите](https://wiki.python.org/moin/BeginnersGuide/Download) Python.
 1. [Установите](https://github.com/tarantool/tarantool-python#download-and-install) модуль `tarantool`.
@@ -352,8 +346,9 @@
 
 Подробнее о подключении к Tarantool в Python читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_python/).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Java)}
 
 1. Установите [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net).
 1. [Установите](https://github.com/tarantool/cartridge-java/) Java-коннектор `cartridge-java`.
@@ -372,8 +367,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Shell)}
 
 1. [Установите](https://www.tarantool.io/ru/download/os-installation/) Tarantool.
 1. Подключитесь к базе данных:
@@ -388,8 +384,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Go)}
 
 1. Убедитесь, что Go [установлен](https://go.dev/doc/install).
 1. [Установите](https://github.com/tarantool/go-tarantool#installation) библиотеку `go-tarantool`.
@@ -415,21 +412,15 @@
 
 Подробнее о подключении к Tarantool в Go читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_go/).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## ClickHouse
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-<tab>ODBC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Убедитесь, что [PHP](https://www.php.net/manual/ru/install.php) и [composer](https://getcomposer.org/doc/) установлены.
 1. [Установите](https://www.php.net/manual/en/book.curl.php) `php-curl`.
@@ -457,8 +448,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Убедитесь, что Python [установлен](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Установите](https://clickhouse-driver.readthedocs.io/en/latest/api.html) драйвер `clickhouse-driver`.
@@ -477,8 +469,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Убедитесь, что Ruby [установлен](https://www.ruby-lang.org/ru/documentation/installation/).
 1. [Установите](https://github.com/shlima/click_house) драйвер `ClickHouse`.
@@ -497,8 +490,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Убедитесь, что [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net) установлен.
 1. [Установите](https://github.com/ClickHouse/clickhouse-java) JDBC-драйвер для ClickHouse.
@@ -520,8 +514,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. [Установите](https://nodejs.org/ru/download) Node.js.
 1. [Установите](https://clickhouse.com/docs/en/integrations/language-clients/nodejs) модуль `ClickHouse JS`.
@@ -549,8 +544,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ODBC)}
 
 1. [Установите](https://github.com/ClickHouse/clickhouse-odbc) ODBC-драйвер для ClickHouse.
 1. Подключитесь к базе данных:
@@ -567,19 +563,15 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## MongoDB
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Убедитесь, что [PHP](https://www.php.net/manual/ru/install.php) и [composer](https://getcomposer.org/doc/) установлены.
 1. [Установите](https://www.php.net/manual/en/mongodb.tutorial.library.php) PHP-библиотеку для MongoDB.
@@ -596,8 +588,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Убедитесь, что Python [установлен](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Установите](https://www.mongodb.com/docs/drivers/pymongo/) драйвер `PyMongo`.
@@ -617,8 +610,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Убедитесь, что [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net) установлен.
 1. [Установите](https://www.mongodb.com/docs/atlas/data-federation/query/sql/drivers/jdbc/connect/) JDBC-драйвер для MongoDB.
@@ -639,8 +633,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. [Установите](https://nodejs.org/ru/download) Node.js.
 1. [Установите](https://www.mongodb.com/docs/drivers/node/current/) драйвер для MongoDB.
@@ -664,20 +659,15 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Redis
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>Java</tab>
-<tab>Node.js</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Убедитесь, что [PHP](https://www.php.net/manual/ru/install.php) и [composer](https://getcomposer.org/doc/) установлены.
 1. [Установите](https://github.com/predis/predis) `predis`.
@@ -698,8 +688,9 @@
    - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Убедитесь, что Python [установлен](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Установите](https://github.com/redis/redis-py) клиент `redis-py`.
@@ -720,8 +711,9 @@
 
 Подробнее о подключении к Redis в Python читайте в [документации](https://redis.io/docs/clients/python/).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Убедитесь, что Ruby [установлен](https://www.ruby-lang.org/ru/documentation/installation/).
 1. [Установите](https://www.rubydoc.info/gems/redis) драйвер `redis-rb`.
@@ -738,8 +730,9 @@
    - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
    - `<ПОРТ>` — порт подключения, стандартный — `6379`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Java)}
 
 1. Убедитесь, что [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net) установлен.
 1. [Установите](https://github.com/redis/jedis) клиент `Jedis`.
@@ -753,8 +746,9 @@
 
    Здесь `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. Убедитесь, что Node.js [установлен](https://nodejs.org/ru/download).
 1. [Установите](https://github.com/redis/node-redis) клиент `node-redis`.
@@ -773,5 +767,6 @@
 
 Подробнее о подключении к Redis в Node.js читайте в [документации](https://redis.io/docs/clients/nodejs/).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

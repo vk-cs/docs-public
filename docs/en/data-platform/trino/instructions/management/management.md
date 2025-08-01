@@ -1,10 +1,8 @@
 ## {heading(Renaming service instance)[id=rename]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
 1. Go to the section **Data Platform → Экземпляры сервисов**.
@@ -12,44 +10,41 @@
 1. In the window that opens, specify a new instance name.
 1. Click **Save Changes**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(View service instance parameters)[id=view]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Viewing status of components)[id=status]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
 1. On the instance page, click the **Component Status** tab.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Scaling service instance)[id=scaling]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
@@ -61,16 +56,15 @@
    - In the **Worker** block, change the number of nodes and the number of CPUs and RAM for each worker node in the cluster.
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Changing administrator password)[id=change_password]}
 
-<tabs>
-<tablist>
-<tab>Management consoleт</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management consoleт)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
@@ -90,16 +84,15 @@
 
 1. Click the **Save Changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Creating administrator account)[id=add_admin]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
@@ -118,16 +111,15 @@
 
 1. Click the **Add** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Adding connection)[id=add_connect]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
@@ -139,16 +131,15 @@
 
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Deleting connection)[id=delete_connect]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
@@ -156,16 +147,15 @@
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired account and select **Delete**.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Change in service period)[id=maintenance]}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_trino.md)[tags=open]}
 
@@ -178,23 +168,23 @@
 
 1. Press the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Deleting service instance)[id=delete]}
 
 This is a group operation: if necessary, you can delete multiple instances of the service at once by selecting them using the checkboxes.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go](https://msk.cloud.vk.com/app) to the VK Cloud management console.
 1. Go to the section **Data Platform**Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired instance and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. Deletion may take a long time.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

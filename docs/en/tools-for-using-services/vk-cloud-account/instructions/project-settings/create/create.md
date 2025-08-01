@@ -1,17 +1,20 @@
 {include(/en/_includes/_project_create_header.md)}
 
-<tabs>
-<tablist>
-<tab>VK Cloud Account</tab>
-<tab>VK Cloud Management Console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Account)}
+
 {include(/en/_includes/_project_create_tab_account.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(VK Cloud Management Console)}
+
 {include(/en/_includes/_project_create_tab_lk.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 {note:info}
 

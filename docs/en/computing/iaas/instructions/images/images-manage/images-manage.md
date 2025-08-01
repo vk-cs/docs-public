@@ -4,12 +4,9 @@ An image is a file that contains a virtual disk with an installed operating syst
 
 The VK Cloud service allows you to create an image from the disk of an existing virtual machine.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Stop the VM](../../../instructions/vm/vm-manage#start_stop_restart_vm) that image you want to create.
 1. Go to **Cloud Servers → Images**.
@@ -22,8 +19,9 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 
 1. Click the **Create image** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 {note:warn}
 
@@ -51,8 +49,9 @@ The disk to create the image must be disconnected from the VM and have the statu
 
    The successfully created image must have the status `active`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Importing an image
 
@@ -72,12 +71,9 @@ When downloading through your VK Cloud management console, the size of the downl
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Cloud Servers → Images**.
@@ -89,8 +85,9 @@ When downloading through your VK Cloud management console, the size of the downl
    - **Name of the image**: specify the name of the image.
 1. Click the **Create image** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 The parameters of the image import command depend on the need for backup support:
 
@@ -102,17 +99,15 @@ The parameters of the image import command depend on the need for backup support
 
 - If support is needed, add parameters `--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes` to the command above.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Exporting an image
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-<tab>cURL</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Get the `ID` of the image from the list:
 
@@ -126,8 +121,9 @@ The parameters of the image import command depend on the need for backup support
    openstack image save --file <image file path>.raw <image ID>
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(cURL)}
 
 1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token) the access token `X-Auth-Token`.
 1. Run the command:
@@ -136,8 +132,9 @@ The parameters of the image import command depend on the need for backup support
    curl -H "X-Auth-Token:{token}" "https://infra.mail.ru:9292/v2/images/{image ID}/file" --output <image file path>.raw
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Changing the visibility status of an image
 
@@ -152,12 +149,9 @@ The VK Cloud service provides the following image visibility statuses for users:
 
 By default, all images have the `private` status. To share an image with other projects:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {note:info}
 
@@ -171,17 +165,18 @@ Through your VK Cloud management console, you can allow access to the image only
 1. In the window that opens, select the type of the project with which you want to share the image:
 
    - **My Projects**: allows you to share the image with projects in which you are the owner.
-   
+
       If you select this type, in the **Project ID** box, select the [unique project identifier (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) of the `mcsNNNNNNNNNN` type from the list. Multiple projects can be added.
-   
+
    - **Other projects**: allows you to share the image with all other projects.
 
    If you select this type, in the **OpenStack Project ID** box, specify the [Project ID](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) of the `exampled4ef0547e5b222f445` form, it does not match the unique identifier of the project. Multiple projects can be added.   
 
 1. Click the **Allow access** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Get the `ID` of the image from the list:
 
@@ -223,17 +218,15 @@ To view the projects that have access to the image, run the command:
 openstack image member list <image ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting an image
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers → Images**.
@@ -244,8 +237,9 @@ openstack image member list <image ID>
 
 4. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 To delete an image that is not attached to projects:
 
@@ -259,5 +253,6 @@ To delete an image from a project:
 openstack image remove project <image ID> <project ID>
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

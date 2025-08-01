@@ -12,20 +12,18 @@ Gatekeeper — это контроллер, встраиваемый между 
 
 1. Выполните команды:
 
-   <tabs>
-   <tablist>
-   <tab>Windows (PowerShell)</tab>
-   <tab>Linux (bash)/macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts; `
    helm install gatekeeper/gatekeeper --name-template=gatekeeper --namespace opa-gatekeeper --create-namespace
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
@@ -33,8 +31,9 @@ Gatekeeper — это контроллер, встраиваемый между 
 
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Проверка работоспособности
 
@@ -58,12 +57,9 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 В кластерах Cloud Containers версий 1.21 и выше действуют [политики безопасности по умолчанию](../../concepts/addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper), которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
 
-<tabs>
-<tablist>
-<tab>Ограничение host-namespaces</tab>
-<tab>Ограничение host-filesystem</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Ограничение host-namespaces)}
 
 Эта политика запрещает получать доступ к инструментам межпроцессной коммуникации (IPC) и процессам узла кластера Kubernetes c помощью параметров `hostIPC: true` и `hostPID: true`. Подробнее читайте в [описании политики](../../concepts/security-policies#ogranichenie_host_namespaces_7cf1c13b).
 
@@ -184,8 +180,9 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
    Под, нарушивший политику, не будет создан.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ограничение host-filesystem)}
 
 Запрещает монтировать в контейнер директории файловой системы узла кластера Kubernetes с помощью [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath). Подробнее читайте в [описании соответствующей политики безопасности](../../concepts/security-policies#ogranichenie_host_filesystem_14877f88).
 
@@ -410,8 +407,9 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
    Под, нарушивший политику, не будет создан.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление
 

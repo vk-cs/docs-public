@@ -7,11 +7,9 @@ The library supports two types of tokens:
 
 ## Getting a list of access tokens
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the tokens are located.
@@ -19,8 +17,9 @@ The library supports two types of tokens:
 
 A list of access tokens will be displayed.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -30,12 +29,9 @@ There are no registration tokens in this list.
 
 ## Creating an access token
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Cloud ML Platform library</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project in which you want to create a token.
@@ -60,8 +56,9 @@ There are no registration tokens in this list.
 
 1. Click the **Ready** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Cloud ML Platform library)}
 
 {note:err}
 
@@ -73,35 +70,31 @@ When working in a production environment, do not operate tokens in clear text. U
 
 1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
-   <tabs>
-   <tablist>
-   <tab>Using VK Cloud</tab>
-   <tab>By yourself</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Using VK Cloud)}
+      
    [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(By yourself)}
+   
    1. Install Python 3.x and pip.
    1. If necessary, set up a virtual environment for Python.
 
    For example, you can use [conda](https://conda.io/projects/conda/en/latest/index.html) or perform the installation and configuration manually.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Install the Cloud ML Platform library for Python if you have not done it already.
 
-   <tabs>
-   <tablist>
-   <tab>JupyterHub</tab>
-   <tab>pip</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(JupyterHub)}
+      
    1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
@@ -109,17 +102,19 @@ When working in a production environment, do not operate tokens in clear text. U
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(pip)}
+   
    Run the command:
 
    ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The current version of the library is available at the link provided.
 
@@ -143,16 +138,15 @@ When working in a production environment, do not operate tokens in clear text. U
 
 1. Copy the token value and save it on your device.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating a registration token
 
-<tabs>
-<tablist>
-<tab>Cloud ML Platform library</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Cloud ML Platform library)}
 
 {note:err}
 
@@ -164,35 +158,31 @@ When working in a production environment, do not operate tokens in clear text. U
 
 1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
-   <tabs>
-   <tablist>
-   <tab>Using VK Cloud</tab>
-   <tab>By yourself</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Using VK Cloud)}
+      
    [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(By yourself)}
+   
    1. Install Python 3.x and pip.
    1. If necessary, set up a virtual environment for Python.
 
    For example, you can use [conda](https://conda.io/projects/conda/en/latest/index.html) or perform the installation and configuration manually.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Install the Cloud ML Platform library for Python if you have not done it already.
 
-   <tabs>
-   <tablist>
-   <tab>JupyterHub</tab>
-   <tab>pip</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(JupyterHub)}
+      
    1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
@@ -200,17 +190,19 @@ When working in a production environment, do not operate tokens in clear text. U
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(pip)}
+   
    Run the command:
 
    ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The current version of the library is available at the link provided.
 
@@ -248,8 +240,9 @@ When working in a production environment, do not operate tokens in clear text. U
 
 1. Provide this registration token to another user so that he or she can use this token to create an access token with the specified parameters.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -259,12 +252,9 @@ A list of created registration tokens is not maintained. You can only [get a lis
 
 ## Deleting an access token
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Cloud ML Platform library</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the required token is located.
@@ -272,8 +262,9 @@ A list of created registration tokens is not maintained. You can only [get a lis
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required token and select **Delete**.
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Cloud ML Platform library)}
 
 {note:err}
 
@@ -285,35 +276,31 @@ When working in a production environment, do not operate tokens in clear text. U
 
 1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
-   <tabs>
-   <tablist>
-   <tab>Using VK Cloud</tab>
-   <tab>By yourself</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Using VK Cloud)}
+      
    [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(By yourself)}
+   
    1. Install Python 3.x and pip.
    1. If necessary, set up a virtual environment for Python.
 
    For example, you can use [conda](https://conda.io/projects/conda/en/latest/index.html) or perform the installation and configuration manually.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Install the Cloud ML Platform library for Python if you have not done it already.
 
-   <tabs>
-   <tablist>
-   <tab>JupyterHub</tab>
-   <tab>pip</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(JupyterHub)}
+      
    1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/instructions/connect).
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
@@ -321,17 +308,19 @@ When working in a production environment, do not operate tokens in clear text. U
       %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(pip)}
+   
    Run the command:
 
    ```console
    pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    The current version of the library is available at the link provided.
 
@@ -355,5 +344,6 @@ When working in a production environment, do not operate tokens in clear text. U
 
    After executing this script, a message about deleting the access token will be displayed.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

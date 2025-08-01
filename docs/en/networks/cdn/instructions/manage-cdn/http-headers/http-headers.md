@@ -4,12 +4,9 @@ The **Add request titles** option allows you to set custom HTTP headers that the
 
 To add an HTTP header to a request:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -23,8 +20,9 @@ To add an HTTP header to a request:
 1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to delete a request header.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -59,8 +57,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding response headers
 
@@ -68,12 +67,9 @@ The **Add response titles** option allows you to set custom HTTP headers that th
 
 To add an HTTP header to a response:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -87,8 +83,9 @@ To add an HTTP header to a response:
 1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to delete a response header.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -123,8 +120,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Enabling CORS headers support
 
@@ -132,12 +130,9 @@ The [Cross-Origin Resource Sharing (CORS)](/ru/storage/s3/reference#cors "change
 
 To configure the Access-Control-Allow-Origin HTTP header:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -156,8 +151,9 @@ To configure the Access-Control-Allow-Origin HTTP header:
         The requesting domain will be sent in the response header.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -190,5 +186,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

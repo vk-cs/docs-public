@@ -4,35 +4,41 @@
 
 To get the PID:
 
-<tabs>
-<tablist>
-<tab>VK Cloud Management Console</tab>
-<tab>VK Cloud Account</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Management Console)}
+
 {include(/en/_includes/_project_pid_tab_lk.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(VK Cloud Account)}
+
 {include(/en/_includes/_project_pid_tab_account.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Changing project name
 
 The project name can be changed at any stage of the project life.
 
-<tabs>
-<tablist>
-<tab>VK Cloud Management Console</tab>
-<tab>VK Cloud Account</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Management Console)}
+
 {include(/en/_includes/_project_rename_tab_lk.md)}
-</tabpanel>
-<tabpanel>
+
+{/tab}
+
+{tab(VK Cloud Account)}
+
 {include(/en/_includes/_project_rename_tab_account.md)}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 {include(/en/_includes/_project_rename_common.md)}
 
@@ -118,12 +124,9 @@ By contacting [technical support](mailto:support@mcs.mail.ru), it is possible to
 
 ## Viewing project quotas
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 Quotas for the most frequently used resources are displayed on the main page of the [management console](https://msk.cloud.vk.com/app/en).
 
@@ -137,8 +140,9 @@ To see a more complete list of quotas and find out detailed information about ea
 
 An extended list of quotas for the project can be obtained through the OpenStack CLI. Information about all quotas and the possibilities of increasing them in the section [Quotas and limits](../../../concepts/quotasandlimits).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 To get an extended list of quotas for a project:
 
@@ -260,31 +264,31 @@ To get an extended list of quotas for a project:
 
     You can output quotas separately for components `nova` and `cinder`:
 
-    <tabs>
-    <tablist>
-    <tab>nova</tab>
-    <tab>cinder</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(nova)}
+        
     ```console
     nova quota-show
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(cinder)}
+    
     ```console
     cinder quota-show <project_id>
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
     To view quotas for other OpenStack components, [install](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages) appropriate OpenStack client packages (`manila`, `neutron` and others) and use a package-specific command. To find out the syntax of the command, install the appropriate package and run `<component> help quota-show`, for example, `manila help quota-show`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Increasing project quotas
 

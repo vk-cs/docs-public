@@ -103,12 +103,9 @@ Create a Terraform configuration file named `mlflow_instance.tf` to describe [th
 
 Create a Terraform configuration file named `network.tf` with the network infrastructure description:
 
-<tabs>
-<tablist>
-<tab>Existing network</tab>
-<tab>New network</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Existing network)}
 
 The data source example for a network existing in a project:
 
@@ -118,8 +115,9 @@ data "vkcs_networking_network" "default" {
   sdn = "neutron"
 }
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(New network)}
 
 ```hcl
 # Create networks
@@ -154,8 +152,9 @@ resource "vkcs_networking_router_interface" "app" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 5. Create the necessary resources using Terraform
 

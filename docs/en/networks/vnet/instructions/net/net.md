@@ -8,12 +8,9 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 ## Viewing list of networks and subnets and information about them
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In management console, go to **Virtual networks** → **Networks**.
 
@@ -27,8 +24,9 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
    A page detailing the network information will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -62,17 +60,15 @@ In addition to the cloud network, you can create subnets. By default, one networ
    openstack subnet show <subnet ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating network
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In management console, go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
@@ -93,8 +89,9 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 Once a network is created, it will appear in the list of networks.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -104,17 +101,15 @@ Once a network is created, it will appear in the list of networks.
    openstack network create <network name>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing network
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network.
@@ -122,8 +117,9 @@ Once a network is created, it will appear in the list of networks.
 4. Make any changes you want.
 5. Click the **Save changes** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -139,33 +135,33 @@ Once a network is created, it will appear in the list of networks.
 
 1. To apply the necessary settings to the network, run the command:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack network set <network ID> \
      --name <new network name> \
      --dns-domain <new DNS domain>
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack network set <network ID> `
      --name <new network name> `
      --dns-domain <new DNS domain>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting network
 
@@ -175,17 +171,15 @@ All the network subnets and ports will be deleted along with the network.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_delete_net.md)}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -197,17 +191,15 @@ All the network subnets and ports will be deleted along with the network.
    openstack network delete <network ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating subnet
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network.
@@ -220,8 +212,9 @@ All the network subnets and ports will be deleted along with the network.
 9. (Optional) Enable **Show Static route field** to specify static routes.
 10. Click the **Create** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -237,13 +230,10 @@ All the network subnets and ports will be deleted along with the network.
 
 1. Run the command:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack subnet create <name> \
      --subnet-range <subnet address> \
@@ -252,9 +242,10 @@ All the network subnets and ports will be deleted along with the network.
      --gateway <gateway address>
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack subnet create <name> `
      --subnet-range <subnet address> `
@@ -263,20 +254,19 @@ All the network subnets and ports will be deleted along with the network.
      --gateway <gateway address>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Editing subnet
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network where the subnet is located.
@@ -284,8 +274,9 @@ All the network subnets and ports will be deleted along with the network.
 4. Make the necessary changes.
 5. Click the **Save** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -307,13 +298,10 @@ All the network subnets and ports will be deleted along with the network.
 
    1. Run the command:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab
-      </tablist>
-      <tabpanel>
+      {tabs}
 
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack subnet <set or unset> <subnet ID> \
         --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> \
@@ -321,9 +309,10 @@ All the network subnets and ports will be deleted along with the network.
         --host-route destination=<route destination network address>,gateway=<route gateway address>
       ```
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
 
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack subnet <set or unset> <subnet ID> `
         --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> `
@@ -331,11 +320,13 @@ All the network subnets and ports will be deleted along with the network.
         --host-route destination=<destination network address>,gateway=<route gateway address>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
 
-</tabpanel>
-</tabs>
+      {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Deleting subnet
 
@@ -346,20 +337,18 @@ Once a subnet is deleted, it cannot be restored.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network where the subnet is located.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to delete and select **Delete Subnet**.
 5. In the window that opens, click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -371,5 +360,6 @@ Once a subnet is deleted, it cannot be restored.
    openstack subnet delete <subnet ID>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

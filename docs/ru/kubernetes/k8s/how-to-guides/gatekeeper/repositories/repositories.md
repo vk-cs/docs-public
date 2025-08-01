@@ -88,12 +88,9 @@
 
 1. Проверьте работу ограничения, попробовав создать несколько подов:
 
-   <tabs>
-   <tablist>
-   <tab>Под, удовлетворяющий ограничению</tab>
-   <tab>Под, не удовлетворяющий ограничению</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Под, удовлетворяющий ограничению)}
 
    1. Создайте манифест для пода:
 
@@ -109,6 +106,8 @@
           - name: nginx
             image: docker.io/jitesoft/nginx:latest
       ```
+
+      {/cut}
 
    1. Попытайтесь создать под на основе манифеста:
 
@@ -131,8 +130,9 @@
       allowed-pod   1/1     Running   ...        ...
       ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Под, не удовлетворяющий ограничению)}
 
    1. Создайте манифест для пода:
 
@@ -148,6 +148,8 @@
           - name: nginx
             image: quay.io/jitesoft/nginx:latest
       ```
+
+      {/cut}
 
    1. Попытайтесь создать под на основе манифеста:
 
@@ -173,19 +175,17 @@
       Error from server (NotFound): pods "disallowed-pod" not found
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удалите неиспользуемые ресурсы
 
 1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их.
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete pod allowed-pod
@@ -194,8 +194,9 @@
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete pod allowed-pod; `
@@ -203,8 +204,9 @@
    kubectl delete constrainttemplate.templates.gatekeeper.sh/k8sallowedrepos
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 

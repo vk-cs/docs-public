@@ -5,12 +5,9 @@ Oпция **Доступ к контенту конечным пользоват
 
 Чтобы включить CDN-ресурс:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -18,8 +15,9 @@ Oпция **Доступ к контенту конечным пользоват
 1. Включите опцию **Доступ к контенту конечным пользователям**.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -39,5 +37,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

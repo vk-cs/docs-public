@@ -10,22 +10,16 @@ Jaeger add-on [system requirements](../../../../concepts/addons-and-settings/add
 
 If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for groups of worker nodes or [configure automatic scaling](../../../scale#autoscale_worker_nodes) before install.
 
-<tabs>
-<tablist>
-<tab>Standard installation</tab>
-<tab>Installation on dedicated worker nodes</tab>
-<tab>Quick installation</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Standard installation)}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -53,8 +47,9 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Connect to the Query UI](../../../../connect/addons-ui).
 1. (Optional) [Get to know the practical guide](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) for using Jaeger with the Hot R.O.D. microservice application, the manual shows:
@@ -62,17 +57,16 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
    - Integration of OpenTelemetry into a microservice application so that it sends the data needed for query tracing to Jaeger.
    - Visualization and interpretation of the data collected by Jaeger using the Query UI.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Installation on dedicated worker nodes)}
 
 1. Prepare a dedicated group of worker nodes to install the add-on, if it has not already been done:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -87,17 +81,16 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -117,13 +110,10 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
 
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
-      <tabs>
-      <tablist>
-      <tab>Tolerations</tab>
-      <tab>nodeSelector</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Tolerations)}
+            
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -139,9 +129,10 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
       - `collector.tolerations`;
       - `query.tolerations`.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(nodeSelector)}
+      
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -154,8 +145,9 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
       - `collector.nodeSelector`;
       - `query.nodeSelector`.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       {note:warn}
 
@@ -167,8 +159,9 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Connect to the Query UI](../../../../connect/addons-ui).
 1. (Optional) [Get to know the practical guide](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) for using Jaeger with the Hot R.O.D. microservice application, the manual shows:
@@ -176,8 +169,9 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
    - Integration of OpenTelemetry into a microservice application so that it sends the data needed for query tracing to Jaeger.
    - Visualization and interpretation of the data collected by Jaeger using the Query UI.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Quick installation)}
 
 {note:info}
 
@@ -191,12 +185,10 @@ If this does not suit you, perform a **standard installation** or **installation
 
 1. Install the add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
@@ -213,8 +205,9 @@ If this does not suit you, perform a **standard installation** or **installation
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Connect to the Query UI](../../../../connect/addons-ui).
 1. (Optional) [Get to know the practical guide](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) for using Jaeger with the Hot R.O.D. microservice application, the manual shows:
@@ -222,8 +215,9 @@ If this does not suit you, perform a **standard installation** or **installation
    - Integration of OpenTelemetry into a microservice application so that it sends the data needed for query tracing to Jaeger.
    - Visualization and interpretation of the data collected by Jaeger using the Query UI.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 

@@ -29,12 +29,9 @@ The accounting documents reflect only expenses carried out as bank transfers fro
 
 ### {heading(Composition of accounting documents)[id=composition_of_accounting_documents]}
 
-<tabs>
-<tablist>
-<tab>Work under the public offer agreement</tab>
-<tab>Work under an individual contract</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Work under the public offer agreement)}
 
 This refers to work on [service offer agreements](/en/intro/start/legal). This scheme is used by default in all projects, for individuals and legal entities.
 
@@ -42,17 +39,15 @@ Legal entities and sole proprietors working under such an agreement are provided
 
 The invoice and the Certificate of work performed are not provided, as the universal transfer document replaces both of these documents.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Work under an individual contract)}
 
 The composition of the accounting documents depends on the specific terms of the contract. In particular, there are differences for organizations working [on prepayment and on post-payment](../physical-corporate#payment_scheme).
 
-<tabs>
-<tablist>
-<tab>Prepayment</tab>
-<tab>Post-payment</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Prepayment)}
 
 - Main documents: universal transfer document
 - Additional documents, if required by the contract:
@@ -67,8 +62,9 @@ The composition of the accounting documents depends on the specific terms of the
 
 The payment invoice is not provided. Organizations that work on prepayment [form](../../instructions/bill-generation) it independently in their management console.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Post-payment)}
 
 - Main documents:
   - Universal transfer document
@@ -84,8 +80,13 @@ The payment invoice is not provided. Organizations that work on prepayment [form
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
+
+{/tab}
+
+{/tabs}
 
 In addition to the documents specified in the contract, a billing report for the selected period is available in your management console. It contains details of resource consumption and is used to confirm the amounts in the accounting documents. Information on downloading is available in the [Downloading the report](../../instructions/detail#downloading_the_report) section.
 
