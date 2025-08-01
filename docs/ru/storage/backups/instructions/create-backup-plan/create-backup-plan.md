@@ -20,6 +20,7 @@
 ## {heading(Создание плана резервного копирования для виртуальной машины)[id=create_vm_backup_plan]}
 
 {tabs}
+
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
@@ -41,16 +42,18 @@
 
    {include(/ru/_includes/_backup_plan_create_change.md)[tags=vm_part1]}
 
-{include(/ru/_includes/_backup_plan_create_change.md)[tags=vm_part2]}
+   {include(/ru/_includes/_backup_plan_create_change.md)[tags=vm_part2]}
 
-Созданный план резервного копирования появится в списке.
+   Созданный план резервного копирования появится в списке.
 
 {/tab}
+
 {/tabs}
 
 ## {heading(Создание плана резервного копирования для инстанса базы данных)[id=create_db_backup_plan]}
 
 {tabs}
+
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
@@ -64,11 +67,13 @@
 Созданный план резервного копирования появится в списке.
 
 {/tab}
+
 {/tabs}
 
 ## Создание плана резервного копирования для инстанса аналитической базы данных
 
 {tabs}
+
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
@@ -82,4 +87,5 @@
 Созданный план резервного копирования появится в списке.
 
 {/tab}
+
 {/tabs}

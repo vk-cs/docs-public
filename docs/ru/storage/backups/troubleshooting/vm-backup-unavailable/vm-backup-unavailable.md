@@ -8,12 +8,9 @@
 
 ### Решение
 
-<tabs>
-<tablist>
-<tab>ВМ не нагружена и может быть пересоздана</tab>
-<tab>ВМ нагружена и не может быть пересоздана</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(ВМ не нагружена и может быть пересоздана)}
 
 1. Добавьте образу ВМ метаданные:
 
@@ -24,31 +21,31 @@
 1. Пересоздайте ВМ из образа.
 1. Установите на ВМ гостевой агент QEMU (пакет `qemu-guest-agent`):
 
-   <tabs>
-   <tablist>
-   <tab>Ubuntu, Debian</tab>
-   <tab>CentOS</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
    
+   {tab(Ubuntu, Debian)}
+         
    ```console
    apt-get install qemu-guest-agent
    ```
    
-   </tabpanel>
-   <tabpanel>
+   {/tab}
    
+   {tab(CentOS)}
+      
    ```console
    yum install qemu-guest-agent
    ```
    
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Проверьте, что резервное копирование ВМ работает. Если проблема сохраняется, обратитесь в [техническую поддержку](/ru/contacts).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ВМ нагружена и не может быть пересоздана)}
 
 1. Добавьте диску ВМ метаданные:
 
@@ -73,26 +70,26 @@
 
 1. Установите на ВМ гостевой агент QEMU (пакет `qemu-guest-agent`):
 
-   <tabs>
-   <tablist>
-   <tab>Ubuntu, Debian</tab>
-   <tab>CentOS</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
    
+   {tab(Ubuntu, Debian)}
+         
    ```console
    apt-get install qemu-guest-agent
    ```
-   </tabpanel>
-   <tabpanel>
+   {/tab}
    
+   {tab(CentOS)}
+      
    ```console
    yum install qemu-guest-agent
    ```
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Проверьте, что резервное копирование ВМ работает. Если проблема сохраняется, обратитесь в [техническую поддержку](/ru/contacts).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

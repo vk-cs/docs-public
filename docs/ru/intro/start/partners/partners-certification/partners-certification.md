@@ -33,12 +33,9 @@ VK Tech публикует сертификаты продуктов на [сп�
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Я не зарегистрирован в VK Cloud</tab>
-<tab>У меня уже есть личный кабинет VK Cloud</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Я не зарегистрирован в VK Cloud)}
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) на платформе VK Cloud.
 
@@ -46,15 +43,17 @@ VK Tech публикует сертификаты продуктов на [сп�
 
 1. Получите [PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) проекта. Он понадобится вам при отправке пакета документов на сертификацию.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(У меня уже есть личный кабинет VK Cloud)}
 
 1. [Cоздайте](/ru/tools-for-using-services/account/instructions/project-settings/create) новый проект.
 1. Получите [PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) проекта.
 Он понадобится вам при отправке пакета документов на сертификацию.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 3. Отправьте пакет документов
 

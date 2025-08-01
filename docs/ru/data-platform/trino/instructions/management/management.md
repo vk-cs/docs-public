@@ -1,10 +1,8 @@
 ## {heading(Переименование экземпляра сервиса)[id=rename]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
@@ -12,44 +10,41 @@
 1. В открывшемся окне укажите новое название экземпляра.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Просмотр параметров экземпляра сервиса)[id=view]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Просмотр статуса компонентов)[id=status]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Статус компонентов**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Масштабирование экземпляра сервиса)[id=scaling]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
@@ -61,16 +56,15 @@
    - В блоке **Worker** измените количество узлов и количество CPU и RAM для каждого worker-узла кластера.
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Изменение пароля администратора)[id=change_password]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
@@ -90,16 +84,15 @@
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Создание учетной записи администратора)[id=add_admin]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
@@ -118,16 +111,15 @@
 
 1. Нажмите кнопку **Добавить**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Добавление подключения)[id=add_connect]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
@@ -139,16 +131,15 @@
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление подключения)[id=delete_connect]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
@@ -156,16 +147,15 @@
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной учетной записи и выберите пункт **Удалить**.
 1. Подтвердите удаление.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Изменение периода обслуживания)[id=maintenance]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_trino.md)[tags=open]}
 
@@ -178,23 +168,23 @@
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление экземпляра сервиса)[id=delete]}
 
 Это групповая операция: при необходимости можно удалить сразу несколько экземпляров сервиса, выбрав их с помощью флажков.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного экземпляра и выберите пункт **Удалить**.
 1. Подтвердите удаление и дождитесь завершения операции. Удаление может занять длительное время.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

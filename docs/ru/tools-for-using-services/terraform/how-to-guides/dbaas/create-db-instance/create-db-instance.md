@@ -30,13 +30,9 @@
 
 Выберите один из примеров создания кластера и создайте файл конфигурации Terraform `main.tf` с нужным содержимым:
 
-<tabs>
-<tablist>
-<tab>Без дополнительных настроек</tab>
-<tab>С расширением</tab>
-<tab>С БД и пользователем</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Без дополнительных настроек)}
 
 [Шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) для ВМ инстанса задается через переменную `db-instance-flavor`.
 
@@ -97,8 +93,9 @@ resource "vkcs_db_instance" "db-instance" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(С расширением)}
 
 За добавление расширений отвечает настройка `capabilities` ресурса `vkcs_db_instance`.
 
@@ -164,8 +161,9 @@ resource "vkcs_db_instance" "db-instance" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(С БД и пользователем)}
 
 За добавление баз данных и пользователей отвечают ресурсы `vkcs_db_database` и `vkcs_db_user` соответственно.
 
@@ -192,33 +190,32 @@ variable "db_user_password" {
 
 - В сеансе оболочки, из которого вы планируете работать с Terraform, установите значение через переменную окружения с префиксом `TF_VAR`:
 
-   <tabs>
-   <tablist>
-   <tab>Linux, macOS</tab>
-   <tab>Windows (cmd)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux, macOS)}
+      
    ```console
    export TF_VAR_db_user_password=YOUR_DB_PASSWORD
    ```
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (cmd))}
+   
     ```console
     set TF_VAR_db_user_password=YOUR_DB_PASSWORD
     ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
     ```console
     $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
     ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
   При применении конфигурации значение пароля автоматически загрузится из окружения.
 
@@ -307,8 +304,9 @@ resource "vkcs_db_user" "db-user" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Создайте ресурсы при помощи Terraform
 

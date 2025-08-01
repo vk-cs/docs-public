@@ -247,12 +247,9 @@ velero help
 
 1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete ns example-app
@@ -260,16 +257,18 @@ velero help
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete ns example-app; `
    velero backup delete coffee-backup
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Если Velero вам больше не нужен, удалите его:
 

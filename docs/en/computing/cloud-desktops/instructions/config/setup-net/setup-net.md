@@ -42,24 +42,23 @@ To use the manual setup mode, prepare a network to host the service infrastructu
 
    - **Network for VDI**: select a network setup mode.
 
-      <tabs>
-      <tablist>
-      <tab>Automatic setting</tab>
-      <tab>Manual setting</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Automatic setting)}
 
       - **Router**: select a router from the list.
       - **IP address space**: specify a range of IP addresses for the subnets where the service resources will be deployed. Parameter requirements: format — CIDR, minimum network prefix — `/7`, maximum — `/22`.
       - **DNS**: specify the IP address of a DNS server. To add more addresses, click **Add DNS** and specify an additional IP address.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Manual setting)}
 
       - **Network**: select the previously [prepared network](#preparatory_steps) from the list.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       {note:warn}
 

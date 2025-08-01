@@ -30,13 +30,9 @@ Using a load balancer is [charged](/en/networks/vnet/tariffication).
 
 Select one of the cluster creation examples and create a Terraform configuration file `main.tf` with the appropriate content:
 
-<tabs>
-<tablist>
-<tab>Without additional settings</tab>
-<tab>With extension</tab>
-<tab>With DB and user</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Without additional settings)}
 
 The [flavor](/en/computing/iaas/concepts/about) for the instance VM is set via the `db-instance-flavor` variable.
 
@@ -97,8 +93,9 @@ resource "vkcs_db_instance" "db-instance" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(With extension)}
 
 The `capabilities` setting of the `vkcs_db_instance` resource is responsible for adding extensions.
 
@@ -165,8 +162,9 @@ resource "vkcs_db_instance" "db-instance" {
 }
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(With DB and user)}
 
 The `vkcs_db_database` and `vkcs_db_user` resources are responsible for adding databases and users, respectively.
 
@@ -193,33 +191,32 @@ Use one of the ways to set a password:
 
 - In the shell session from which you plan to work with Terraform, set the value via the environment variable with the prefix `TF_VAR`:
 
-   <tabs>
-   <tablist>
-   <tab>Linux, macOS</tab>
-   <tab>Windows (cmd)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux, macOS)}
+      
    ```console
    export TF_VAR_db_user_password=YOUR_DB_PASSWORD
    ```
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (cmd))}
+   
     ```console
     set TF_VAR_db_user_password=YOUR_DB_PASSWORD
     ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
     ```console
     $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
     ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
   When the configuration is applied, the password value is automatically loaded from the environment.
 
@@ -308,8 +305,9 @@ resource "vkcs_db_user" "db-user" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Create resources using Terraform
 

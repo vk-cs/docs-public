@@ -8,12 +8,9 @@ Security Operations Center (SOC VK) provides monitoring of VK Cloud, analyzes se
 
 The following mechanisms also work:
 
-<tabs>
-<tablist>
-<tab>Antifraud</tab>
-<tab>Tracking for suspicious activity</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Antifraud)}
 
 VK Cloud antifraud is a set of security measures and rules aimed at filtering automatic registrations of bots and users, as well as preventing potential attacks on the resources of the VK Cloud platform.
 
@@ -23,8 +20,9 @@ When activating VK Cloud services, you may need to confirm user data. In this ca
 - **Company card (for legal entities)**. In your message, please attach a file with the details of the organization on whose behalf you are registering. The postal address must indicate the name or other details of the organization.
 - **Contact technical support**. Create an account activation request on the [technical support portal](mailto:support@mcs.mail.ru). Application category — account, group — activation and access.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Tracking for suspicious activity)}
 
 Internet users and automated services have the right to complain both manually and automatically about suspicious activity originating from IP addresses belonging to VK Cloud. For example, suspicious activity may include accessing the same web page at short intervals, multiple password guessing attempts, etc.
 
@@ -43,8 +41,9 @@ Suspicious activity may be associated with an attacker gaining unauthorized acce
 - be careful about the software you download and install on the virtual machine
 - scan virtual machines for malicious software or code
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Conducting security checks
 

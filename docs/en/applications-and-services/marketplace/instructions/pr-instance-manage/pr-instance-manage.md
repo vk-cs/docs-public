@@ -1,17 +1,16 @@
 ## Viewing information about a service instance
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Possible service instance statuses:
 
@@ -33,11 +32,9 @@ Activation will be required:
 - when [tariffication](../../tariffication) is prepaid;
 - after replenishment of the project account, if the service instance was deactivated due to lack of funds.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
@@ -45,16 +42,15 @@ Activation will be required:
 1. Go to **Service properties** tab.
 1. Click the **Activate** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing the tariff plan
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
@@ -63,16 +59,15 @@ Activation will be required:
 1. Click the **Set up a tariff** button.
 1. Specify the new values of the tariff options and click **Connect the tariff** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Changing the tariff plan
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
@@ -81,18 +76,17 @@ Activation will be required:
 1. Click the **Choose a tariff** button.
 1. Specify the new tariff plan and click **Connect the tariff** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 The update of the service instance will begin, the process may take a long time. If the update has completed with the status **Ошибка обновления**, [updating access](#updating_access_to_a_service_instance) to a service instance.
 
 ## Updating access to a service instance
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
@@ -103,18 +97,17 @@ The update of the service instance will begin, the process may take a long time.
 
    An email to update access to the service instance will be sent to the user's email.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Recreating or re-updating a service instance
 
 The operation is available if the service instance is in the status **Ошибка создания** or **Ошибка обновления**.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
@@ -122,16 +115,15 @@ The operation is available if the service instance is in the status **Ошибк
 1. Go to the **Service properties** tab.
 1. Click the **Retry** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a service instance
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
@@ -142,5 +134,6 @@ The operation is available if the service instance is in the status **Ошибк
 
    The service instance will be deleted, but will remain in the general list.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

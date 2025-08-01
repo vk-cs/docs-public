@@ -38,13 +38,9 @@
 
    1. Перезапустите Docker Engine.
 
-      <tabs>
-      <tablist>
-      <tab>Linux</tab>
-      <tab>Windows</tab>
-      <tab>macOS</tab>
-      </tablist>
-      <tabpanel>
+      {tabs}
+
+      {tab(Linux)}
 
       - Для серверного варианта Docker Engine выполните одну из команд для перезапуска:
 
@@ -58,18 +54,21 @@
 
       - Для Docker Desktop воспользуйтесь [графическим интерфейсом](https://docs.docker.com/desktop/settings/linux/#docker-engine).
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(Windows)}
 
       Воспользуйтесь [графическим интерфейсом](https://docs.docker.com/desktop/settings/mac/#docker-engine) Docker Desktop.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
+
+      {tab(macOS)}
 
       Воспользуйтесь [графическим интерфейсом](https://docs.docker.com/desktop/settings/mac/#docker-engine) Docker Desktop.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
 1. Войдите в реестр:
 
@@ -97,12 +96,9 @@
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    ```console
    kubectl create secret docker-registry k8s-registry-creds \ 
@@ -112,8 +108,9 @@
      --namespace=<пространство имен>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    kubectl create secret docker-registry k8s-registry-creds ` 
@@ -123,8 +120,9 @@
      --namespace=<пространство имен>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Укажите в манифесте для рабочей нагрузки:
 
@@ -136,17 +134,9 @@
 
    Примеры манифестов:
 
-   <tabs>
-   <tablist>
-   <tab>Pod</tab>
-   <tab>Deployment</tab>
-   <tab>ReplicaSet</tab>
-   <tab>StatefulSet</tab>
-   <tab>DaemonSet</tab>
-   <tab>Job</tab>
-   <tab>CronJob</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Pod)}
 
    ```yaml
    apiVersion: v1
@@ -161,8 +151,9 @@
        image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Deployment)}
 
    ```yaml
    apiVersion: apps/v1
@@ -180,8 +171,9 @@
    
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(ReplicaSet)}
 
    ```yaml
    apiVersion: apps/v1
@@ -198,8 +190,9 @@
            image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(StatefulSet)}
 
    ```yaml
    apiVersion: apps/v1
@@ -216,8 +209,9 @@
            image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(DaemonSet)}
 
    ```yaml
    apiVersion: apps/v1
@@ -234,8 +228,9 @@
            image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Job)}
 
    ```yaml
    apiVersion: batch/v1
@@ -252,8 +247,9 @@
            image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(CronJob)}
 
    ```yaml
    apiVersion: batch/v1
@@ -272,5 +268,6 @@
                image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

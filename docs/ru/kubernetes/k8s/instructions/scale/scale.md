@@ -20,12 +20,9 @@
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
@@ -44,8 +41,9 @@
 
    1. Нажмите кнопку **Сохранить**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -100,8 +98,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ### {heading(Масштабирование групп worker-узлов)[id=scale_worker_nodes]}
 
@@ -125,12 +124,9 @@
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
@@ -150,8 +146,9 @@
 
    1. Нажмите кнопку **Сохранить**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -207,8 +204,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Горизонтальное масштабирование
 
@@ -222,12 +220,9 @@
 
 1. Выполните масштабирование:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
@@ -241,8 +236,9 @@
       1. Задайте нужное количество узлов. Его можно изменять как в большую, так и в меньшую сторону.
       1. Нажмите кнопку **Сохранить изменения**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
@@ -288,8 +284,9 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ### {heading(Настройка автоматического масштабирования групп worker-узлов)[id=autoscale_worker_nodes]}
 
@@ -299,12 +296,9 @@
 
 1. Настройте автоматическое масштабирование:
 
-   <tabs>
-   <tablist>
-   <tab>Личный кабинет</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
@@ -318,8 +312,9 @@
       1. Задайте минимальное и максимальное количество узлов. В этих пределах будет происходить масштабирование.
       1. Нажмите кнопку **Сохранить изменения**.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Terraform)}
 
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
@@ -367,5 +362,6 @@
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

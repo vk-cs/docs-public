@@ -1,8 +1,6 @@
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create a cluster.
@@ -149,5 +147,6 @@
 
       Wait for the operation to complete. Creating a cluster can take a long time.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

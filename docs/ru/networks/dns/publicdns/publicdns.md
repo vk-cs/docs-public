@@ -21,19 +21,17 @@
 
 ## Просмотр списка DNS-зон
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/`.
 
@@ -66,19 +64,17 @@ content-length: 329
     "status": "pending"
 }]
 ```
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Создание DNS-зоны
 
 DNS-зона — логическое объединение доменных имен ваших ресурсов, содержащее их ресурсные записи.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -103,8 +99,9 @@ DNS-зона — логическое объединение доменных и
 1. Нажмите кнопку **Добавить зону**.
 1. Обратитесь к владельцу [указанного](https://msk.cloud.vk.com/app/services/dns/list) домена, чтобы делегировать управление зоной на DNS-сервера VK Cloud.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `POST /v2/dns/`.
 
@@ -149,8 +146,9 @@ content-length: 319
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -160,20 +158,18 @@ content-length: 319
 
 ## Просмотр DNS-зоны
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/<dns-uuid>`.
 
@@ -207,17 +203,15 @@ content-length: 321
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Редактирование DNS-зоны
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -225,8 +219,9 @@ content-length: 321
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
 1. Внесите изменения и нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `PUT /v2/dns/<dns-uuid>`.
 
@@ -263,8 +258,9 @@ content-length: 330
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Создание подзоны DNS
 
@@ -293,12 +289,9 @@ content-length: 330
 
 ## Удаление DNS-зоны
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько зон, выбрав их с помощью флажков.
 
@@ -308,8 +301,9 @@ content-length: 330
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Удалить**.
 1. Подтвердите действие.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `DELETE /v2/dns/<dns-uuid>`.
 
@@ -327,8 +321,9 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/6f981b26
 HTTP/1.1 204 No Content
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Добавление ресурсных записей
 
@@ -346,12 +341,9 @@ VK Cloud поддерживает типы ресурсных записей:
 
 Чтобы добавить ресурсную запись:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -453,8 +445,9 @@ VK Cloud поддерживает типы ресурсных записей:
 
 1. Нажмите кнопку **Добавить запись**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
@@ -686,25 +679,25 @@ content-length: 167
 ```
 
 {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Просмотр списка ресурсных записей
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите на имя зоны, у которой нужно просмотреть ресурсные записи.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
@@ -945,17 +938,16 @@ content-length: 169
 ```
 
 {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Просмотр параметров ресурсных записей
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -963,8 +955,9 @@ content-length: 169
 1. Нажмите на имя зоны, для которой нужно просмотреть ресурсную запись.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной записи и выберите пункт **Редактировать**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
@@ -1164,17 +1157,16 @@ content-length: 167
 ```
 
 {/cut}
-</tabpanel>
-</tabS>
+
+{/tab}
+
+{/tabs}
 
 ## Редактирование ресурсных записей
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -1183,8 +1175,9 @@ content-length: 167
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной записи и выберите пункт **Редактировать**.
 1. Внесите изменения и нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
@@ -1391,17 +1384,16 @@ content-length: 171
 ```
 
 {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}
 
 ## Удаление ресурсных записей
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько записей, выбрав их с помощью флажков.
 
@@ -1412,8 +1404,9 @@ content-length: 171
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной записи и выберите пункт **Удалить**.
 1. Подтвердите действие.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
@@ -1531,5 +1524,7 @@ HTTP/1.1 204 No Content
 ```
 
 {/cut}
-</tabpanel>
-</tabs>
+
+{/tab}
+
+{/tabs}

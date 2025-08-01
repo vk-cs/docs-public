@@ -1,10 +1,8 @@
 ## Scaling cluster
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Analytical DB → Instances**.
@@ -16,30 +14,30 @@
 1. On the page that opens, select the scaling type: **Horizontal** or **Vertical**.
 1. Specify the parameters available for the selected type:
 
-      <tabs>
-      <tablist>
-      <tab>Horizontal</tab>
-      <tab>Vertical</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Horizontal)}
+            
       - **Node type**: select from the list the type of cluster nodes the number of which you want to change.
       - **Number of nodes**: specify the required number of nodes.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Vertical)}
+      
       - **Node type**: select from the list the type of cluster nodes whose parameters you want to change.
       - **Size of data disk**: specify the required size in GB for the data disks of the nodes to be modified. You can only increase the size.
       - **Type of virtual machine**: select from the list the VM type for the nodes to be modified.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
 1. Click the **Save changes** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -49,16 +47,15 @@ Automatic disk scaling is supported. To enable it, activate the **Disk autoscali
 
 ## Deleting cluster
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Analytical DB → Instances**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required ADB instance and select **Delete cluster**.
 1. Confirm the removal.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

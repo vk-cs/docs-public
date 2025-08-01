@@ -133,14 +133,10 @@
 
 2. Протестируйте диск.
 
-   <tabs>
-   <tablist>
-   <tab>Windows</tab>
-   <tab>Linux</tab>
-   </tablist>
-
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Windows)}
+      
    Чтобы измерить IOPS при чтении и записи, используйте утилиты DiskSpd или FIO.
 
    {note:info}
@@ -200,13 +196,10 @@
 
          {/note}
 
-         <tabs>
-         <tablist>
-         <tab>PowerShell</tab>
-         <tab>Командная строка</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(PowerShell)}
+                  
          ```console
          fio `
             --name=randwrite `
@@ -221,9 +214,10 @@
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(Командная строка)}
+         
          ```console
             fio ^
             --name=randwrite ^
@@ -238,18 +232,16 @@
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+
+         {/tabs}
 
       - Тест случайного чтения блоками по 4 КБ:
 
-         <tabs>
-         <tablist>
-         <tab>PowerShell</tab>
-         <tab>Командная строка</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(PowerShell)}
+                  
          ```console
          fio `
             --name=randread `
@@ -264,9 +256,10 @@
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(Командная строка)}
+         
          ```console
          fio ^
             --name=randread ^
@@ -281,13 +274,14 @@
             --filename=C:\Users\ADMIN\test
          ```
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+         
+         {/tabs}
 
-   </tabpanel>
+   {/tab}
 
-   <tabpanel>
-
+   {tab(Linux)}
+   
    Чтобы измерить IOPS при чтении и записи, используйте утилиту FIO.
 
    {note:info}
@@ -357,8 +351,9 @@
             --filename=/home/user/test
          ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 3. Если при выполнении всех условий результаты теста не соответствуют указанным значениям, [обратитесь в техническую поддержку](/ru/contacts).
 

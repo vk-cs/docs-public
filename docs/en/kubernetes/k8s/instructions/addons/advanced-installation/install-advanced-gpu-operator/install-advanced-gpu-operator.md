@@ -6,12 +6,10 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
 
 1. Prepare a dedicated group of worker nodes for installing the addon, if it is not already done:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
    1. Select the project where the required cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
@@ -26,18 +24,16 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
       - key `nvidia.com`
       - value `gpu`
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Install add-on:
 
-   <tabs>
-   <tablist>
-   <tab>Management console</tab>
-   <tab>Terraform</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Management console)}
+      
    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
    1. Select the project where the required cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
@@ -64,9 +60,10 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
 
       The installation of the add-on in the cluster will begin. This process can take a long time.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Terraform)}
+   
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start), if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
@@ -88,8 +85,9 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
       terraform apply
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. (Optional) [Read](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html) the official NVIDIA documentation about working with the add-on.
 

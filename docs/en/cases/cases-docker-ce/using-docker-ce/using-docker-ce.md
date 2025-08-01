@@ -145,26 +145,25 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
 
 1. To manage containers it is necessary to obtain their identifiers. To do this, view the list of the containers:
 
-   <tabs>
-   <tablist>
-   <tab>The list of all containers</tab>
-   <tab>The list of the running containers</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(The list of all containers)}
 
    ```console
    sudo docker ps -a
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(The list of the running containers)}
 
    ```console
    sudo docker ps
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    {cut(Example docker ps -a output)}
 
@@ -180,13 +179,9 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
 
 1. Manage a container, using its identifier:
 
-   <tabs>
-   <tablist>
-   <tab>Start container</tab>
-   <tab>Stop container</tab>
-   <tab>Remove container</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Start container)}
 
    ```console
    sudo docker start <container identifier>
@@ -198,8 +193,9 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    sudo docker start 8502eb90112b
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Stop container)}
 
    ```console
    sudo docker stop <container identifier>
@@ -211,8 +207,9 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    sudo docker stop 8502eb90112b
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Remove container)}
 
    ```console
    sudo docker rm <container identifier>
@@ -226,4 +223,6 @@ The operation will be demonstrated for the previously pulled `ubuntu` image:
    sudo docker rm 8502eb90112b
    ```
 
-   </tabpanel>
+   {/tab}
+
+   {/tabs}

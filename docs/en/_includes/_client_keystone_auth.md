@@ -1,9 +1,5 @@
-<tabs>
-<tablist>
-<tab>Windows (PowerShell)</tab>
-<tab>Linux (bash)/macOS (zsh)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Windows (PowerShell))}
 
 1. In PowerShell, run the command:
 
@@ -22,8 +18,8 @@
    Add client-keystone-auth installation dir to your PATH? [Y/n]
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+{tab(Linux (bash)/macOS (zsh))}
 
 1. In the terminal, run the command:
 
@@ -41,5 +37,5 @@
 
    A prompt with the necessary commands will be displayed upon completion of the installation.
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}

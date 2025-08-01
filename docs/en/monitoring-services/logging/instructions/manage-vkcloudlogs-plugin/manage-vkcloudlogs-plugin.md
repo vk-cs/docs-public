@@ -5,35 +5,33 @@
 
 - To turn the agent on, run the commands:
 
-  <tabs>
-  <tablist>
-  <tab>Linux</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
+
+  {tab(Linux)}
 
   ```console
   sudo systemctl enable vkcloudlogs-fluent-bit.service
   sudo systemctl start vkcloudlogs-fluent-bit.service
   ```
 
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 - To turn the agent off, run the commands:
 
-  <tabs>
-  <tablist>
-  <tab>Linux</tab>
-  </tablist>
-  <tabpanel>
+  {tabs}
+
+  {tab(Linux)}
 
   ```console
   sudo systemctl stop vkcloudlogs-fluent-bit.service
   sudo systemctl disable vkcloudlogs-fluent-bit.service
   ```
 
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 ## {heading(Configuring the agent to collect logs from additional text files)[id=configure_agent]}
 
@@ -73,18 +71,17 @@
 
 1. Restart the agent:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    sudo systemctl restart vkcloudlogs-fluent-bit.service
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Removing the agent and plugin
 
@@ -92,31 +89,30 @@
 1. [Make sure](../connect-plugin) that you have the `vkcloudlogs-fluent-bit-plugin` plugin installed.
 1. Run the command:
 
-   <tabs>
-   <tablist>
-   <tab>CentOS 7.X, CentOS 8.X, RedOS 7, AlmaLinux 9</tab>
-   <tab>Ubuntu 22.X, Astra Linux</tab>
-   <tab>AltLinux Server</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(CentOS 7.X, CentOS 8.X, RedOS 7, AlmaLinux 9)}
 
    ```console
    sudo yum remove vkcloudlogs-fluent-bit-plugin.x86_64
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Ubuntu 22.X, Astra Linux)}
 
    ```console
    sudo apt remove vkcloudlogs-fluent-bit-plugin
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(AltLinux Server)}
 
    ```console
    sudo apt-get remove vkcloudlogs-fluent-bit-plugin
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

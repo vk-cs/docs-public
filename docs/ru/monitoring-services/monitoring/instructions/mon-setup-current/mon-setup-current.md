@@ -19,12 +19,9 @@
 1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows (powershell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    curl \
@@ -34,8 +31,9 @@
    -X POST  https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (powershell))}
 
    1. Поместите параметры тела запроса в переменную `params`:
 
@@ -65,31 +63,31 @@
       -Body $params | Select-Object -Expand Content
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Выполните команду из содержимого параметра `script` ответа.
 
-   <tabs>
-   <tablist>
-   <tab>Пример для Linux</tab>
-   <tab>Пример для Windows (powershell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Пример для Linux)}
 
    ```console
    sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | sudo bash
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Пример для Windows (powershell))}
 
    ```console
    [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | iex
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 {note:info}
 

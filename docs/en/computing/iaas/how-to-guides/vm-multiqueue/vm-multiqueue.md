@@ -19,12 +19,9 @@ On the VK Cloud platform, it is not enough to enable multiqueue only at the imag
 
 ## 1. Enable multiqueue
 
-<tabs>
-<tablist>
-<tab>For all created VMs</tab>
-<tab>For a separate VM</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(For all created VMs)}
 
 The option includes multiqueue at the image level and will work for all VMs created after executing the instruction.
 
@@ -42,8 +39,9 @@ The option includes multiqueue at the image level and will work for all VMs crea
     openstack image set <IMG_ID> --property hw_vif_multiqueue_enabled=true
     ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(For a separate VM)}
 
 This option is used when the VM has already been created at the time of enabling multiqueue.
 
@@ -51,8 +49,9 @@ This option is used when the VM has already been created at the time of enabling
 1. Contact [technical support](mailto:support@mcs.mail.ru) with a request to connect multiqueue and specifying the UUID of the target VM.
 1. After successfully processing the request from technical support, perform a [forced VM reboot](../../instructions/vm/vm-manage#forced_vm_reboot).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 2. Check the multiqueue connection
 

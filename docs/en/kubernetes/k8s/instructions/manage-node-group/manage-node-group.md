@@ -6,12 +6,9 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 ## Add worker node group
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -20,8 +17,9 @@ Before performing any operation on a cluster from Terraform, read the informatio
 1. Set [settings](../helpers/node-group-settings) for the node group.
 1. Click the **Add node group** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Determine what types of virtual machines will be used for the cluster node group:
 
@@ -79,8 +77,9 @@ Before performing any operation on a cluster from Terraform, read the informatio
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Customize scaling options
 
@@ -101,12 +100,9 @@ Re-configuring taints can cause pods to be evicted to other nodes. If they do no
 
 Labels and taints can be set both with the interfaces supported by the VK Cloud platform (management console and Terraform) and with `kubectl`. When assigning labels and taints, keep in mind that labels and taints set via the platform interfaces are periodically synchronized with the Kubernetes cluster (in one direction only). During synchronization, labels and taints set with the platform will overwrite labels and taints that were set with `kubectl` if their keys match. Other labels and taints that were set with `kubectl` and were not overwritten by values from the platform are valid in the cluster, but are not displayed, e.g. in the Terraform state or management console.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -125,8 +121,9 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
      - Modify existing taint.
      - Delete existing taint.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
 
@@ -197,8 +194,9 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 See [Labels and taints](../../reference/labels-and-taints) for details.
 
@@ -206,12 +204,9 @@ See [Labels and taints](../../reference/labels-and-taints) for details.
 
 To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update, specify the maximum percentage of unavailable nodes for the node group before [updating cluster](../update).
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -221,8 +216,9 @@ To increase update speed, the container service updates multiple nodes in a grou
 1. Specify the necessary percentage.
 1. Click the **Save changes** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Add or change the `max_node_unavailable` parameter for the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
 
@@ -260,8 +256,9 @@ To increase update speed, the container service updates multiple nodes in a grou
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 More details about the update procedure in [Cluster version update](../../concepts/update).
 
@@ -271,12 +268,9 @@ This operation can only be performed when the cluster is running.
 
 The single cluster node group cannot be deleted from the management console. However, you can do it with Terraform.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
@@ -285,8 +279,9 @@ The single cluster node group cannot be deleted from the management console. How
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Delete**.
 1. Click the **Confirm** button.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Terraform)}
 
 1. Delete the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource from the Terraform configuration file.
 
@@ -308,5 +303,6 @@ The single cluster node group cannot be deleted from the management console. How
    terraform apply
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

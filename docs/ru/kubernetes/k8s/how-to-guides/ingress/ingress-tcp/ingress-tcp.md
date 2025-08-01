@@ -70,12 +70,9 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Добавьте Helm-репозиторий NGINX:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable
@@ -83,16 +80,18 @@ deployment.apps/tea      3/3     3            3           ...
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    helm repo add nginx-stable https://helm.nginx.com/stable; `
    helm repo update
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Установите Ingress-контроллер с поддержкой PROXY-протокола, выполнив команду:
 
@@ -202,12 +201,9 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Coffee</tab>
-   <tab>Tea</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Coffee)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<IP-адрес Ingress> https://cafe.example.com/coffee
@@ -229,8 +225,9 @@ deployment.apps/tea      3/3     3            3           ...
    - терминирует SSL\TLS-сессии;
    - обеспечивает доступ к сервисам, соответствующим развернутым приложениям.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Tea)}
 
    ```console
    curl -k --resolve cafe.example.com:443:<IP-адрес Ingress> https://cafe.example.com/tea
@@ -252,8 +249,9 @@ deployment.apps/tea      3/3     3            3           ...
    - терминирует SSL\TLS-сессии;
    - обеспечивает доступ к сервисам, соответствующим развернутым приложениям.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## Удалите неиспользуемые ресурсы
 
@@ -265,12 +263,9 @@ deployment.apps/tea      3/3     3            3           ...
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml
@@ -281,8 +276,9 @@ deployment.apps/tea      3/3     3            3           ...
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl delete -f ./cafe-ingress.yaml; `
@@ -292,8 +288,9 @@ deployment.apps/tea      3/3     3            3           ...
    kubectl delete namespace example-nginx-ingress-tcp
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 

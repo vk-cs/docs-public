@@ -20,6 +20,7 @@ Each VM or DB instance can have only one backup plan.
 ## {heading(Creating backup plan for virtual machine)[id=create_vm_backup_plan]}
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -46,11 +47,13 @@ Each VM or DB instance can have only one backup plan.
 The created backup plan will appear in the list.
 
 {/tab}
+
 {/tabs}
 
 ## {heading(Creating backup plan for database instance)[id=create_db_backup_plan]}
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -64,11 +67,13 @@ The created backup plan will appear in the list.
 The created backup plan will appear in the list.
 
 {/tab}
+
 {/tabs}
 
 ## Creating backup plan for analytical database instance
 
 {tabs}
+
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
@@ -82,4 +87,5 @@ The created backup plan will appear in the list.
 The created backup plan will appear in the list.
 
 {/tab}
+
 {/tabs}

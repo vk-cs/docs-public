@@ -187,12 +187,9 @@ data "vkcs_compute_flavor" "basic" {
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для кластера:
 
-<tabs>
-<tablist>
-<tab>Описание существующей сети</tab>
-<tab>Создание новой сети</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Описание существующей сети)}
 
 Пример описания источника данных для существующей в проекте сети:
 
@@ -202,8 +199,9 @@ data "vkcs_networking_network" "default" {
   sdn = "neutron"
 }
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Создание новой сети)}
 
 ```hcl
 # Create networks
@@ -238,8 +236,9 @@ resource "vkcs_networking_router_interface" "app" {
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 5. Создайте необходимые ресурсы с помощью Terraform
 

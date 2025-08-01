@@ -1,10 +1,8 @@
 ## Adding a static route
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -16,16 +14,15 @@
 1. (Optional) Add a route description.
 1. Click the **Add** button.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting a static route
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several routes at once by selecting them using the checkboxes.
 
@@ -38,5 +35,6 @@ This is a group operation: you can delete several routes at once by selecting th
     - Set the checkbox for the required route, then click the **Delete** button above the table.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

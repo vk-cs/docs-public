@@ -24,23 +24,19 @@ To connect VM via VNC console:
 
 1. Open the console:
 
-    <tabs>
-    <tablist>
-    <tab>Management console</tab>
-    <tab>OpenStack CLI</tab>
-    </tablist>
-
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Management console)}
+    
     1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
     1. Go to the **Cloud Servers → Virtual machines** section.
     1. In the list of virtual machines, click on the name of the VM you need.
     1. Go to the **Console** tab.
 
-    </tabpanel>
+    {/tab}
 
-    <tabpanel>
-
+    {tab(OpenStack CLI)}
+    
     1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
     1. Get a link to the VNC console page.
@@ -68,8 +64,9 @@ To connect VM via VNC console:
 
       {/note}
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 1. If the virtual machine is not running, click the start button on the tab.
 1. [Set a password](../vm-manage#password) to log into the OS if you haven't done it already. Write down the account name and password.
@@ -91,12 +88,9 @@ If the VM was created from a custom image, configure the console. To do this, ad
 console=tty0 console=ttyS0,115200n8
 ```
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
@@ -112,5 +106,6 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
    openstack console log show --lines <number of entries> <virtual machine ID>
   ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

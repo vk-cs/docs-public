@@ -28,12 +28,9 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
 ## Connect to cluster
 
-<tabs>
-<tablist>
-<tab>Version of Kubernetes 1.23 and higher</tab>
-<tab>Version of Kubernetes 1.22 and lower</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Version of Kubernetes 1.23 and higher)}
 
 1. On the host in a separate terminal session, run the command:
 
@@ -53,8 +50,9 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
    The browser will open and you will be directed to the Kubernetes Dashboard web interface.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Version of Kubernetes 1.22 and lower)}
 
 1. Get the secret:
 
@@ -86,5 +84,6 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
    The Kubernetes Dashboard web interface will open.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

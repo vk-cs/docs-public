@@ -2,19 +2,17 @@ Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/instructions/
 
 ## Viewing information about key pair
 
-<tabs>
-<tablist>
-<tab>VK Cloud Account</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Account)}
 
 1. [Go to](https://cloud.vk.com/account) VK Cloud Account.
 1. Go to **SSH key pairs**.
 1. Click on the name of the required key pair. Information about it will be displayed.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
@@ -29,17 +27,15 @@ To display data only about the public key, add the `--public-key` option to the 
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating key pair
 
-<tabs>
-<tablist>
-<tab>VK Cloud Account</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Account)}
 
 1. [Go to](https://cloud.vk.com/account) VK Cloud Account.
 1. Go to **SSH key pairs**.
@@ -48,8 +44,9 @@ To display data only about the public key, add the `--public-key` option to the 
 
    The private key will be downloaded to the local device.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
@@ -60,17 +57,15 @@ To display data only about the public key, add the `--public-key` option to the 
 
 1. Save the private key that appears on the screen to a file with the extension `.pem`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Importing existing key
 
-<tabs>
-<tablist>
-<tab>VK Cloud Account</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Account)}
 
 1. [Go to](https://cloud.vk.com/account) VK Cloud Account.
 1. Go to **SSH key pairs**.
@@ -83,8 +78,9 @@ To display data only about the public key, add the `--public-key` option to the 
 
 1. Click **Create**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Use the GitLab [official documentation](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) for local generation of a key pair.
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
@@ -94,8 +90,9 @@ To display data only about the public key, add the `--public-key` option to the 
    openstack keypair create --public-key <path to the public key file> <key pair name>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Key pair recovery
 
@@ -109,12 +106,9 @@ To restore access to a Linux virtual machine via SSH using a key pair, use the i
 
 ## Deleting key pair
 
-<tabs>
-<tablist>
-<tab>VK Cloud Account</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud Account)}
 
 This is a group operation: if necessary, you can delete several key pairs at once by selecting them using the checkboxes.
 
@@ -123,8 +117,9 @@ This is a group operation: if necessary, you can delete several key pairs at onc
 1. Click the ![Trash can](assets/trash-icon.svg "inline") icon in the line with the object to delete.
 1. Confirm the deletion.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
@@ -133,5 +128,6 @@ This is a group operation: if necessary, you can delete several key pairs at onc
    openstack keypair delete <KEY PAIR NAME>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

@@ -1,12 +1,8 @@
 Чтобы просматривать логи, воспользуйтесь удобным способом:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-<tab>Grafana</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/services/monitoring/logging) в раздел **Мониторинг** → **Логирование** личного кабинета.
 1. (Опционально) Выберите значения для фильтров.
@@ -16,8 +12,9 @@
 
       {include(/ru/_includes/_logs_query.md)}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Воспользуйтесь [методами API](/ru/tools-for-using-services/api/api-spec/logging).
 
@@ -27,8 +24,9 @@
 
   {include(/ru/_includes/_logs_query.md)}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Grafana)}
 
 1. [Разверните](/ru/applications-and-services/marketplace/initial-configuration/grafana-start) сервис Grafana из [Магазина приложений](https://msk.cloud.vk.com/app/services/marketplace) в вашем проекте.
 
@@ -52,13 +50,10 @@
 
 1. В поле **Service** укажите идентификатор сервиса, логи которого вы хотите отображать на дашборде. Используйте идентификаторы сервисов, преднастроенные в системе логирования VK Cloud, или [собственные идентификаторы](../../concepts/logging-plugin#conf_parameters).
 
-    <tabs>
-    <tablist>
-    <tab>Преднастроенные идентификаторы</tab>
-    <tab>Собственные идентификаторы</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Преднастроенные идентификаторы)}
+        
     - `default` — идентификатор, который не имеет привязанных к нему сервисов и предназначен для тестирования и отладки.
     - `containers` — Cloud Containers.
     - `databases` — Cloud Databases.
@@ -66,18 +61,21 @@
     - `vdi` — Cloud Desktop.
     - `mlplatform` — Cloud ML Platform.
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Собственные идентификаторы)}
+    
     Собственные идентификаторы (`service_ID`) находятся на вкладке **Прочие ресурсы** в настройках раздела **Мониторинг → Логирование**. Они состоят из строчных латинских букв, цифр и символов `-`, например `a01bc23-d456-7890-a1bc-d2e3f45g6789`.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 1. Нажмите кнопку **Apply**.
 1. (Опционально) В поле **Group** укажите идентификатор группы логов (`group_id`). Используйте значение `group_id`, указанное в [настройках плагина логирования](../../concepts/logging-plugin#conf_parameters) при его установке. Если включена опция **Unique Labels**, `group_id` отображается в логах нужного сервиса на создаваемом дашборде.
 1. (Опционально) В поле **Stream** укажите идентификатор источника логов (`stream_id`). Используйте значение `stream_id`, указанное в [настройках плагина логирования](../../concepts/logging-plugin#conf_parameters) при его установке. Если включена опция **Unique Labels**, `stream_id` отображается в логах нужного сервиса на создаваемом дашборде.
 1. Сохраните внесенные изменения.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

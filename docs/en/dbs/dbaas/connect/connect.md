@@ -2,16 +2,9 @@ You can connect to the database of instances deployed in VK Cloud using the SDK.
 
 ## PostgreSQL
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-<tab>ODBC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Make sure that [PHP](https://www.php.net/manual/en/install.php) and [composer](https://getcomposer.org/doc/) are installed.
 1. [Install](https://www.php.net/manual/en/book.pgsql.php) `php-pgsql` library.
@@ -30,8 +23,9 @@ You can connect to the database of instances deployed in VK Cloud using the SDK.
 
 Read more about connecting to PostgreSQL in PHP in [documentation](https://www.php.net/manual/en/book.pgsql.php).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Make sure Python [is installed](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Install](https://www.psycopg.org/docs/install.html#quick-install) `psycopg` module.
@@ -50,8 +44,9 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Make sure Ruby [is installed](https://www.ruby-lang.org/en/documentation/installation/).
 1. [Install](https://www.rubydoc.info/gems/pg#how-to-install) `pg` library.
@@ -70,8 +65,9 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Make sure that [Oracle Java](http://www.java.com/en/download/manual.jsp) or [OpenJDK](http://openjdk.java.net) are installed.
 1. [Install](http://jdbc.postgresql.org/download.html) JDBC driver for PostgreSQL.
@@ -90,8 +86,9 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. Make sure that the Node.js [installed](https://nodejs.org/en/download).
 1. [Install](https://node-postgres.com/) `node-postgres` modules.
@@ -109,8 +106,9 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ODBC)}
 
 1. [Install](https://www.postgresql.org/ftp/odbc/versions/) ODBC driver.
 1. Connect to the database:
@@ -126,21 +124,15 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## MySQL
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-<tab>ODBC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Make sure that [PHP](https://www.php.net/manual/en/install.php) and [composer](https://getcomposer.org/doc/) are installed.
 1. [Install](https://www.php.net/manual/en/book.mysql.php) `php-mysql` library.
@@ -162,8 +154,9 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
 
 Read more about connecting to MySQL in PHP in [documentation](https://www.php.net/manual/en/set.mysqlinfo.php).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Make sure Python [is installed](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Install](https://dev.mysql.com/doc/connector-python/en/) `mysql.connector` module.
@@ -183,8 +176,9 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Make sure Ruby [is installed](https://www.ruby-lang.org/en/documentation/installation/).
 1. [Install](https://rubygems.org/gems/mysql2/versions/0.5.2) `mysql2` module.
@@ -204,8 +198,9 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Install [Oracle Java](http://www.java.com/en/download/manual.jsp) or [OpenJDK](http://openjdk.java.net).
 1. [Install](http://dev.mysql.com/downloads/connector/j/) JDBC driver for MySQL.
@@ -225,8 +220,9 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. Install [Node.js](https://nodejs.org/en/download).
 1. [Install](https://github.com/mysqljs/mysql) `mysql` module.
@@ -251,8 +247,9 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ODBC)}
 
 1. [Install](https://dev.mysql.com/downloads/connector/odbc/) ODBC driver.
 1. Connect to the database:
@@ -269,8 +266,9 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Tarantool
 
@@ -280,15 +278,9 @@ You can connect to the Tarantool database as a guest user.
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Java</tab>
-<tab>Shell</tab>
-<tab>Go</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Make sure that [PHP](https://www.php.net/manual/en/install.php) and [composer](https://getcomposer.org/doc/) are installed.
 1. [Install](https://github.com/tarantool-php/client#installation) `tarantool/client` library.
@@ -309,8 +301,9 @@ You can connect to the Tarantool database as a guest user.
 
 Read more about connecting to Tarantool in PHP in [documentation](https://www.tarantool.io/en/doc/latest/how-to/getting_started_php/).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. [Install](https://wiki.python.org/moin/BeginnersGuide/Download) Python.
 1. [Install](https://github.com/tarantool/tarantool-python#download-and-install) `tarantool` module.
@@ -331,8 +324,9 @@ Read more about connecting to Tarantool in PHP in [documentation](https://www.ta
 
 Read more about connecting to Tarantool in Python in [documentation](https://www.tarantool.io/en/doc/latest/how-to/getting_started_python/).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Java)}
 
 1. Install [Oracle Java](http://www.java.com/en/download/manual.jsp) or [OpenJDK](http://openjdk.java.net).
 1. [Install](https://github.com/tarantool/cartridge-java/) Java connector `cartridge-java`.
@@ -351,8 +345,9 @@ Read more about connecting to Tarantool in Python in [documentation](https://www
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Shell)}
 
 1. [Install](https://www.tarantool.io/en/download/os-installation/) Tarantool.
 1. Connect to the database:
@@ -367,8 +362,9 @@ Read more about connecting to Tarantool in Python in [documentation](https://www
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Go)}
 
 1. Make sure that Go [is installed](https://go.dev/doc/install).
 1. [Install](https://github.com/tarantool/go-tarantool#installation) `go-tarantool` library.
@@ -394,21 +390,15 @@ Read more about connecting to Tarantool in Python in [documentation](https://www
 
 Read more about connecting to Tarantool in Go in [documentation](https://www.tarantool.io/en/doc/latest/how-to/getting_started_go/).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## ClickHouse
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-<tab>ODBC</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Make sure that [PHP](https://www.php.net/manual/en/install.php) and [composer](https://getcomposer.org/doc/) are installed.
 1. [Install](https://www.php.net/manual/en/book.curl.php) `php-curl`.
@@ -436,8 +426,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Make sure Python [is installed](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Install](https://clickhouse-driver.readthedocs.io/en/latest/api.html) `clickhouse-driver` driver.
@@ -456,8 +447,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Make sure Ruby [is installed](https://www.ruby-lang.org/en/documentation/installation/).
 1. [Install](https://github.com/shlima/click_house) `ClickHouse` driver.
@@ -476,8 +468,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Make sure that [Oracle Java](http://www.java.com/en/download/manual.jsp) or [OpenJDK](http://openjdk.java.net) are installed.
 1. [Install](https://github.com/ClickHouse/clickhouse-java) JDBC driver for ClickHouse.
@@ -499,8 +492,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. [Install](https://nodejs.org/en/download) Node.js.
 1. [Install](https://clickhouse.com/docs/en/integrations/language-clients/nodejs) `ClickHouse JS` module.
@@ -528,8 +522,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(ODBC)}
 
 1. [Install](https://github.com/ClickHouse/clickhouse-odbc) ODBC driver for ClickHouse.
 1. Connect to the database:
@@ -546,19 +541,15 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## MongoDB
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>JDBC</tab>
-<tab>Node.js</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Make sure that [PHP](https://www.php.net/manual/en/install.php) and [composer](https://getcomposer.org/doc/) are installed.
 1. [Install](https://www.php.net/manual/en/mongodb.tutorial.library.php) PHP library for MongoDB.
@@ -575,8 +566,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Make sure Python [is installed](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Install](https://www.mongodb.com/docs/drivers/pymongo/) `PyMongo` driver.
@@ -596,8 +588,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(JDBC)}
 
 1. Make sure that [Oracle Java](http://www.java.com/en/download/manual.jsp) or [OpenJDK](http://openjdk.java.net) are installed.
 1. [Install](https://www.mongodb.com/docs/atlas/data-federation/query/sql/drivers/jdbc/connect/) JDBC driver for MongoDB.
@@ -618,8 +611,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. [Install](https://nodejs.org/en/download) Node.js.
 1. [Install](https://www.mongodb.com/docs/drivers/node/current/) driver for MongoDB.
@@ -643,20 +637,15 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Redis
 
-<tabs>
-<tablist>
-<tab>PHP</tab>
-<tab>Python</tab>
-<tab>Ruby</tab>
-<tab>Java</tab>
-<tab>Node.js</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(PHP)}
 
 1. Make sure that [PHP](https://www.php.net/manual/en/install.php) and [composer](https://getcomposer.org/doc/) are installed.
 1. [Install](https://github.com/predis/predis) `predis`.
@@ -677,8 +666,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
    - `<USERNAME>` — DB user name;
    - `<PASSWORD>` — DB user password.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Python)}
 
 1. Make sure Python [is installed](https://wiki.python.org/moin/BeginnersGuide/Download).
 1. [Install](https://github.com/redis/redis-py) `redis-py` client.
@@ -699,8 +689,9 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
 
 Read more about connecting to Redis in Python in [documentation](https://redis.io/docs/clients/python/).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Ruby)}
 
 1. Make sure Ruby [is installed](https://www.ruby-lang.org/en/documentation/installation/).
 1. [Install](https://www.rubydoc.info/gems/redis) `redis-rb` driver.
@@ -717,8 +708,9 @@ Read more about connecting to Redis in Python in [documentation](https://redis.i
    - `<IP-ADDRESS>` — external IP address of the DB instance;
    - `<PORT>` — connection port, standard — `6379`.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Java)}
 
 1. Make sure that [Oracle Java](http://www.java.com/en/download/manual.jsp) or [OpenJDK](http://openjdk.java.net) are installed.
 1. [Install](https://github.com/redis/jedis) `Jedis` client.
@@ -732,8 +724,9 @@ Read more about connecting to Redis in Python in [documentation](https://redis.i
 
    Here `<IP-ADDRESS>` — external IP address of the DB instance.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Node.js)}
 
 1. Make sure that the Node.js [installed](https://nodejs.org/en/download).
 1. [Install](https://github.com/redis/node-redis) `node-redis` client.
@@ -752,5 +745,6 @@ Read more about connecting to Redis in Python in [documentation](https://redis.i
 
 Learn more about connecting to Redis in Node.js read in [documentation](https://redis.io/docs/clients/nodejs/).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

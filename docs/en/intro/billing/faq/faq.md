@@ -14,7 +14,6 @@ In some cases, previously accrued bonuses may be canceled or denied. See more in
 
 {/cut}
 
-
 {cut(What do I do if I haven't received bonuses for migrating to the VK Cloud platform, testing its performance, or participating in other promotional activities?)}
 
 If you haven't received your [bonuses](../concepts/balance#bonuses), contact your personal manager or send a request via the [feedback form](https://cloud.vk.com/form/).
@@ -139,17 +138,15 @@ Charges for bank card payments are not included in [accounting documents for leg
 
 {cut(When and how will I receive the accounting documents after payment?)}
 
-<tabs>
-<tablist>
-<tab>Individuals</tab>
-<tab>Legal entities</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Individuals)}
 
 Immediately after the funds are credited, the receipt is sent to the email address of the project owner.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Legal entities)}
 
 As part of the package of [accounting documents](../concepts/report) for the corresponding reporting period (month).
 
@@ -157,8 +154,9 @@ When working through the electronic document management system (EDM), documents 
 
 If you have not received your original documents or need scanned copies, write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 
@@ -300,36 +298,32 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 
 {cut(We are a company from the Russian Federation, how to pay for services?)}
 
-<tabs>
-<tablist>
-<tab>Prepayment work</tab>
-<tab>Post-payment work</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Prepayment work)}
 
 1. Complete the [additional registration](../instructions/corporate#additional_registration_of_legal_entities) of the legal entity, if it has not already been done.
 1. [Create an invoice](../instructions/bill-generation) for the required amount in your management console.
 1. Pay the bill by bank transfer.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Post-payment work)}
 
 1. Wait for the invoice from VK Cloud. The invoice comes as part of a package of [accounting documents](../concepts/report) for the corresponding reporting period (month).
 1. Pay the bill by bank transfer.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 
 {cut(We are a company not from the Russian Federation, how to pay for services?)}
 
-<tabs>
-<tablist>
-<tab>Prepayment work</tab>
-<tab>Post-payment work</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Prepayment work)}
 
 Request an invoice from the document management department of VK Cloud:
 
@@ -341,14 +335,16 @@ Request an invoice from the document management department of VK Cloud:
 
 1. Pay the invoice received from VK Cloud using a bank transfer.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Post-payment work)}
 
 1. Wait for the invoice from VK Cloud. The invoice comes as part of a package of [accounting documents](../concepts/report) for the corresponding reporting period (month).
 1. Pay the invoice received from VK Cloud using a bank transfer.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 
@@ -366,24 +362,23 @@ The manager will contact you to clarify the required terms of the contract.
 
 {cut(How do I find out VK Cloud banking details?)}
 
-<tabs>
-<tablist>
-<tab>Moscow</tab>
-<tab>Kazakhstan</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Moscow)}
 
 If your project is in [region](/en/tools-for-using-services/account/concepts/regions) Moscow, and you are working with “VK” LLC, its main details are available at https://cloud.vk.com/contacts.
 
 If you work with VK Cloud on prepayment, you can also [generate an invoice](../instructions/bill-generation) in your management console and view the contents of the **Supplier** box.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Kazakhstan)}
 
 If your project is in [region](/ru/tools-for-using-services/account/concepts/regions) Kazakhstan, and you are working with “QazCloud” LLC, its details are available at https://vkcloud.kz/contacts/.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/cut}
 

@@ -4,12 +4,9 @@ The **Allowed HTTP Methods** option enables control over permitted HTTP request 
 
 To configure the allowed methods:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -18,8 +15,9 @@ To configure the allowed methods:
 1. Select the methods that CDN resource has to process.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -51,8 +49,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 If the origin server does not recognize the specified method, a response with the code 501 (Not Implemented) will be returned. If the origin server knows the method but it is not permitted on the CDN resource, a response with the code 405 (Method Not Allowed) will be returned.
 
@@ -62,12 +61,9 @@ This option allows you to protect content from unauthorized access from certain 
 
 To configure the country-based security policy:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -81,8 +77,9 @@ To configure the country-based security policy:
 1. Select the countries to which you want to deny or allow access to content. Countries are listed in the format [ISO 3166-1 alpha-2](https://www.iso.org/en/iso-3166-country-codes.html). Multiple selections are available.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -112,8 +109,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Configuring domain access policy
 
@@ -121,12 +119,9 @@ The option allows you to protect content from being published on other sites.
 
 To configure the domain access policy:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -141,8 +136,9 @@ To configure the domain access policy:
 1. (Optional) Enable the **Contact via direct link** option to allow or deny the specified sites from accessing the CDN resource via a direct link.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -171,8 +167,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Configuring IP address access policy
 
@@ -180,12 +177,9 @@ The option allows you to deny access to content for specific IP addresses.
 
 To configure IP address-based security policy:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -199,8 +193,9 @@ To configure IP address-based security policy:
 1. Enter the IP addresses with the subnet mask. For example, `192.168.3.2/32` or `2a03:d000:2980:7::8/128`. The access policy works on network addresses calculated based on the specified IP addresses. If two or more IP addresses belong to the same network, it is sufficient to specify only one of those IP addresses.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -233,5 +228,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

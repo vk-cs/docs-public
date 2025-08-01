@@ -5,12 +5,9 @@
 - Вы самостоятельно организуете канал связи.
 - Канал связи организует команда VK Cloud.
 
-<tabs>
-<tablist>
-<tab>Самостоятельная организация</tab>
-<tab>Организует команда VK Cloud</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Самостоятельная организация)}
 
 1. Ознакомьтесь с техническими требованиями и ограничениями:
 
@@ -25,8 +22,9 @@
 1. [Создайте заявку](https://cloud.vk.com/direct-connect) на подключение Direct Connect.
 1. После подключения сервиса [настройте маршрутизацию](../how-to-guides/advanced-router) L3 Static / BGP в своем проекте VK Cloud.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Организует команда VK Cloud)}
 
 {note:warn}
 
@@ -47,5 +45,6 @@
 1. Дождитесь, когда представитель VK Cloud уведомит вас, что каналы связи в инфраструктуре VK Cloud подключены.
 1. [Настройте маршрутизацию](../how-to-guides/advanced-router) L3 Static / BGP в своем проекте VK CLoud.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

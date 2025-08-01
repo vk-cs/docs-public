@@ -12,13 +12,9 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
+{tabs}
 
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Облачные вычисления** → **Диски**.
@@ -28,9 +24,9 @@
 
 1. Нажмите кнопку **Создать диск**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -62,8 +58,9 @@
    - `--property <Ключ=Значение>` — пользовательские свойства диска;
    - `--bootable` — создать загрузочный диск.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Увеличение размера диска с перезагрузкой ВМ)[id=change_disk_size]}
 
@@ -72,14 +69,9 @@
 - Размер диска нельзя уменьшить.
 - Если у дисков с типом High IOPS SSD и Low Latency NVME есть снимки, увеличить размер этих дисков нельзя.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -109,9 +101,9 @@
 4. Нажмите кнопку **Сохранить**.
 5. [Перезагрузите](../vm/vm-manage#start_stop_restart_vm) ВМ.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -141,29 +133,28 @@
 
 6. [Перезагрузите](../vm/vm-manage#start_stop_restart_vm) ВМ.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Увеличение размера диска без перезагрузки ВМ
 
 1. [Увеличьте](#change_disk_size) размер виртуального диска в личном кабинете VK Cloud или через Openstack CLI, но не перезагружайте ВМ. Это изменит размер диска, но не изменит размер разделов диска в ОС.
 1. Увеличьте размер разделов диска в операционной системе ВМ:
 
-   <tabs>
-   <tablist>
-   <tab>Windows</tab>
-   <tab>Linux</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Windows)}
+      
    1. Подключитесь к ВМ по [RDP](../vm/vm-connect/vm-connect-win) или через [консоль](../vm/vm-console).
    1. Откройте средство управления дисками (`diskmgmt.msc`) с правами администратора.
    1. В контекстном меню нужного раздела выберите **Расширить том**.
    1. [Увеличьте размер диска](https://learn.microsoft.com/ru-ru/windows-server/storage/disk-management/extend-a-basic-volume).
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Linux)}
+   
     1. Подключитесь к ВМ по [SSH](../vm/vm-connect/vm-connect-nix) или через [консоль](../vm/vm-console).
     1. Узнайте, какие на ВМ есть разделы диска и какие у них файловые системы. Для этого выполните команду:
     
@@ -182,40 +173,37 @@
 
     1. Увеличьте размер файловой системы до размера раздела. В зависимости от файловой системы каталога используйте команду:
     
-        <tabs>
-        <tablist>
-        <tab>Ext1, Ext2, Ext3, Ext4</tab>
-        <tab>XFS</tab>
-        </tablist>
-        <tabpanel>
-
+        {tabs}
+        
+        {tab(Ext1, Ext2, Ext3, Ext4)}
+                
         ```console
         sudo resize2fs /dev/vda1 # перед 1 не должно быть пробела
         ```
 
-        </tabpanel>
-        <tabpanel>
-       
+        {/tab}
+        
+        {tab(XFS)}
+               
         ```console
         sudo xfs_growfs -d /dev/vda1
         ```
     
-        </tabpanel>
-        </tabs>
+        {/tab}
+        
+        {/tabs}
     
     1. При помощи команды `df -Th` проверьте, что размер раздела изменился.
        
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Клонирование диска
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -243,8 +231,9 @@
 4. На открывшейся странице укажите параметры нового диска.
 5. Нажмите кнопку **Создать диск**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. [Определите](../../concepts/data-storage/disk-types#disk_types):
@@ -271,21 +260,17 @@
    openstack volume create --type <ID типа диска> --size <Размер> --availability-zone <Зона доступности диска> --source <ID диска> <Название диска>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Изменение типа диска)[id=change_disk_type]}
 
 Чтобы изменить тип диска на Low Latency NVME, [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm/cpu-generation) и дискам. Остальные [типы диска](../../concepts/data-storage/disk-types#disk_types) доступны по умолчанию во всех конфигурациях.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -319,9 +304,9 @@
 
 4. В открывшемся окне выберите **Тип диска** и нажмите кнопку **Подтвердить**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -345,8 +330,9 @@
    openstack volume set --type <ID типа> --retype-policy on-demand <ID диска>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Изменение атрибута «загрузочный»)[id=changing_bootable_attribute]}
 
@@ -354,14 +340,9 @@
 
 Чтобы исключить возможность случайной загрузки с диска, сделайте его незагрузочным.
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -389,9 +370,9 @@
 
 4. В открывшемся окне нажмите кнопку **Подтвердить**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -415,19 +396,15 @@
    openstack volume show <ID диска>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Подключение диска к ВМ)[id=mount_disk]}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Диски**.
@@ -448,9 +425,9 @@
 5. В открывшемся окне укажите виртуальную машину в поле **Выберите инстанс**.
 6. Нажмите кнопку **Подключить диск**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -478,8 +455,9 @@
    openstack volume show <ID диска>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Отключение диска от ВМ)[id=dismount_disk]}
 
@@ -489,14 +467,9 @@
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -524,9 +497,9 @@
 
 4. В открывшемся окне проверьте название диска и нажмите кнопку **Подтвердить**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -554,21 +527,17 @@
    openstack volume show <ID диска>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Замена основного (root) диска
 
 Перед заменой основного диска [остановите ВМ](../vm/vm-manage#start_stop_restart_vm).
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. [Отключите от ВМ](#dismount_disk) диск, который будет использован для замены основного.
@@ -604,9 +573,9 @@
 
    {/note}
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -642,18 +611,15 @@
 
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Перемещение дисков между проектами)[id=move_disk_to_another_project]}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -707,8 +673,9 @@
    openstack volume transfer request delete <ID запроса>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## {heading(Удаление диска)[id=delete_disk]}
 
@@ -720,14 +687,9 @@
 
 {/note}
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -760,9 +722,9 @@
 
 4. В открывшемся окне проверьте имя диска и нажмите кнопку **Подтвердить**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -776,8 +738,9 @@
       openstack volume delete <ID диска>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Снимки диска
 
@@ -785,14 +748,9 @@
 
 ### Создание снимка
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -825,9 +783,9 @@
 
 6. Нажмите **Создать снимок**.
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -853,19 +811,15 @@
          openstack volume snapshot create --force --volume <ID диска> <Название снимка>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Использование снимков
 
-<tabs>
+{tabs}
 
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-
-<tabpanel>
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Откройте страницу с нужным списком дисков.
@@ -902,9 +856,9 @@
 
       {/note}
 
-</tabpanel>
+{/tab}
 
-<tabpanel>
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -941,5 +895,6 @@
       openstack volume snapshot delete <ID снимка>
       ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

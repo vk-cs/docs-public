@@ -59,11 +59,9 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
 1. Get access to Kafka console clients on the host from which you plan to work with the service instance:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    1. Make sure that Java version 11 or higher is installed on the host:
 
@@ -108,8 +106,9 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
       This file contains the [setting](https://kafka.apache.org/documentation/#security_configclients), which requires the producer client and the consumer client to authenticate to the service instance using the SSL protocol.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Get the address of the bootstrap server to connect to the service instance:
 
@@ -130,11 +129,9 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
 ## 3. Send a message to the topic and receive it
 
-<tabs>
-<tablist>
-<tab>Linux (bash) / macOS (zsh)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash) / macOS (zsh))}
 
 1. Create a separate terminal session in which the console client will work.
 1. Run the client-consumer in this session and specify the `test` topic as the source. The client-consumer will connect to the Cloud Kafka instance using the previously received bootstrap server address and configuration file, and continuously read and output messages from the topic. A new topic will be created automatically the first time you access it.
@@ -176,8 +173,9 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
 1. Shut down the clients by pressing the keyboard shortcut CTRL+C in both terminal sessions.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Delete unused resources
 

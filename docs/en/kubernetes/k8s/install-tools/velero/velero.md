@@ -30,12 +30,9 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
 1. Install the server part of Velero in the Kubernetes cluster. In the command, specify the name of the bucket created for Velero and the path to the `s3_creds` file with the account data:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    velero install \
@@ -50,8 +47,9 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    velero install `
@@ -65,8 +63,9 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
      region=ru-msk,s3ForcePathStyle="true",s3Url=<DOMAIN>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Here `<DOMAIN>` is the Cloud Storage service domain corresponding to the account region:
 
@@ -81,12 +80,9 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
 1. Create a Kubernetes secret so that the server part of Velero can authorize in the VK Cloud:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl -n velero create secret generic openstack-cloud-credentials \
@@ -103,8 +99,9 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl -n velero create secret generic openstack-cloud-credentials `
@@ -120,8 +117,9 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
      -o yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Output should contain a similar information:
 

@@ -40,13 +40,9 @@ Please enter password:
 
 ## Взаимосвязь ролей личного кабинета и Kubernetes
 
-<tabs>
-<tablist>
-<tab>Аудитор Kubernetes</tab>
-<tab>Оператор Kubernetes</tab>
-<tab>Администратор Kubernetes</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Аудитор Kubernetes)}
 
 **Роль Kubernetes:** `view`.
 
@@ -59,8 +55,9 @@ Please enter password:
 
   Пользователь с доступом к секретам может получить доступ к учетным данным любого сервисного аккаунта в пространстве имен. Это позволит получить доступ к API от имени любого сервисного аккаунта в пространстве имен. Для роли с правами «только чтение» это будет расцениваться, как превышение привилегий (privilege escalation).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Оператор Kubernetes)}
 
 **Роль Kubernetes:** `edit`.
 
@@ -75,8 +72,9 @@ Please enter password:
 - Доступ на просмотр или изменение ролей и связывания ролей.
 - [Доступ на запись к эндпоинтам](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) кластеров Kubernetes версии 1.22 и выше.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Администратор Kubernetes)}
 
 **Роль Kubernetes:** `admin`.
 
@@ -98,8 +96,9 @@ Please enter password:
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Чтобы просмотреть список доступных ресурсов для роли, подключитесь к кластеру и выполните команду:
 

@@ -4,12 +4,9 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 {include(/ru/_includes/_open-cdn.md)}
 
@@ -21,8 +18,9 @@
     - **Свой сертификат** —  будет использоваться выбранный из выпадающего списка сертификат. Чтобы сертификат стал доступен для выбора, [добавьте его в хранилище сертификатов](../../manage-certificates).
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/ru/_includes/_api_cdn_create_change.md)}
 
@@ -50,5 +48,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

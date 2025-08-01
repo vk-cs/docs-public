@@ -41,21 +41,18 @@ Two options for VM configuration will be considered: without additional settings
 
    If necessary, adjust the values of the variables. First find out their acceptable values:
 
-   <tabs>
-   <tablist>
-   <tab>compute_flavor</tab>
-   <tab>key_pair_name</tab>
-   <tab>availability_zone_name</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(compute_flavor)}
 
    Using OpenStack CLI:
 
    ```console
    openstack flavor list
    ```
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(key_pair_name)}
 
    Use one of the methods:
 
@@ -81,13 +78,15 @@ Two options for VM configuration will be considered: without additional settings
 
       2. Copy the required key pair name from the list.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(availability_zone_name)}
 
    In the section about [availability zones](/en/intro/start/concepts/architecture#az).
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 1. Create file describing basic network infrastructure
 
@@ -118,12 +117,9 @@ Create a `main.tf` file.
 
 Depending on the required configuration option (a VM without additional settings or a VM with an additional disk), place the contents of one of the tabs below into the file.
 
-<tabs>
-<tablist>
-<tab>VM without additional settings</tab>
-<tab>VM with additional disk</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VM without additional settings)}
 
 The file describes:
 
@@ -187,8 +183,9 @@ output "instance_fip" {
   value = vkcs_networking_floatingip.fip.address
 }
 ```
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(VM with additional disk)}
 
 The file describes:
 
@@ -267,8 +264,9 @@ output "instance_fip" {
   value = vkcs_networking_floatingip.fip.address
 }
 ```
-  </tabpanel>
-  </tabs>
+  {/tab}
+
+  {/tabs}
 
 The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 

@@ -2,14 +2,9 @@
 
 ##  Подготовительные шаги
 
-<tabs>
-<tablist>
-<tab>Ubuntu, Debian</tab>
-<tab>CentOS</tab>
-<tab>macOS</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Ubuntu, Debian)}
 
 1. Установите Python 3, если он еще не установлен:
 
@@ -24,8 +19,9 @@
    sudo apt install python3-pip
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(CentOS)}
 
 {note:info}
 
@@ -52,8 +48,9 @@
    sudo pip3 install openstacksdk==1.0.1
    ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(macOS)}
 
 Установите Python 3 и pip3, если они еще не установлены:
 
@@ -61,8 +58,9 @@
 brew install python3
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 {note:info}
 
@@ -77,34 +75,34 @@ brew install python3
    - `Средства CMake C++ для Windows`. При выборе этого компонента автоматически будет выбран компонент `MSVC версии 143 — VS 2022 С++ x64/x86 Build Tools (последняя версия)`.
    - `Пакет SDK для Windows 10`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## 1. Установите клиент OpenStack
 
 1. Установите Openstack CLI:
 
-   <tabs>
-   <tablist>
-   <tab>Linux, maсOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux, maсOS)}
 
    ```console
    pip3 install python-openstackclient
    ```
-   
-   </tabpanel>
-   <tabpanel>
+
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    pip install python-openstackclient
    ```
-   
-   </tabpanel>
-   </tabs>
-   
+
+   {/tab}
+
+   {/tabs}
+
 1. Проверьте, что OpenStack CLI установлен:
 
    ```console
@@ -154,13 +152,9 @@ brew install python3
 5. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл с именем `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh`.
 6. Укажите в переменных среды учетные данные для аутентификации.
 
-   <tabs>
-   <tablist>
-   <tab>Ubuntu, Debian, CentOS, macOS</tab>
-   <tab>Windows (cmd)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Ubuntu, Debian, CentOS, macOS)}
 
    1. Запустите выполнение скрипта:
 
@@ -170,8 +164,9 @@ brew install python3
 
    2. Введите пароль пользователя проекта.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (cmd))}
 
    1. Скопируйте из файла `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` значения параметров без кавычек и выполните команды:
 
@@ -193,8 +188,9 @@ brew install python3
 
       Здесь `<ПАРОЛЬ>` — пароль пользователя проекта.
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    1. Скопируйте данные из файла `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` и выполните команды:
 
@@ -216,8 +212,9 @@ brew install python3
 
       Здесь `<ПАРОЛЬ>` — пароль пользователя проекта.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 ## 4. Проверьте готовность OpenStack CLI к работе
 
@@ -231,34 +228,33 @@ brew install python3
 
 2. Убедитесь, что переменные среды соответствуют проекту, выполнив команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows (cmd)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux)}
 
    ```console
    env | grep OS_
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (cmd))}
 
    ```console
    set | findstr OS_
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    gci env: | where name -like 'OS_*'
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    В переменных среды должны содержаться учетные данные для аутентификации, соответствующие проекту.
 

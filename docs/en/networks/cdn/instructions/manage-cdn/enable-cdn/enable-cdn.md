@@ -5,12 +5,9 @@ Use the **Access to content by end users** option to manage availability of the 
 
 To enable a CDN resource:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
@@ -18,8 +15,9 @@ To enable a CDN resource:
 1. Enable the **Access to content by end users** option.
 1. Click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
@@ -39,5 +37,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 }'
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

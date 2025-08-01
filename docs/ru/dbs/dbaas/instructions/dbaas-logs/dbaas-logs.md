@@ -24,15 +24,9 @@ VK Cloud поддерживает логирование для инстансо
 
 1. Выполните команду отображения логов в зависимости от типа СУБД:
 
-   <tabs>
-   <tablist>
-   <tab>PostgreSQL / PostgresPro</tab>
-   <tab>MySQL</tab>
-   <tab>Redis</tab>
-   <tab>MongoDB</tab>
-   <tab>ClickHouse</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(PostgreSQL / PostgresPro)}
 
    ```console
    journalctl -u postgresql
@@ -61,8 +55,9 @@ VK Cloud поддерживает логирование для инстансо
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(MySQL)}
 
    ```console
    journalctl -u mysqld
@@ -104,8 +99,9 @@ VK Cloud поддерживает логирование для инстансо
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Redis)}
 
    ```console
    journalctl -u redis
@@ -137,8 +133,9 @@ VK Cloud поддерживает логирование для инстансо
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(MongoDB)}
 
    ```console
    journalctl -u mongod
@@ -173,8 +170,9 @@ VK Cloud поддерживает логирование для инстансо
 
    {/cut}
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(ClickHouse)}
 
    ```console
    journalctl -u clickhouse-server
@@ -216,5 +214,6 @@ VK Cloud поддерживает логирование для инстансо
 
    {/cut}
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}

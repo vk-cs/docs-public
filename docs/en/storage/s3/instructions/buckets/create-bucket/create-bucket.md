@@ -22,12 +22,9 @@ There is a limit on the number of buckets in one project, for more information, 
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>VK Cloud panel</tab>
-<tab>S3 CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(VK Cloud panel)}
 
 ## Creation via VK Cloud Panel
 
@@ -58,8 +55,9 @@ After creating a bucket, its name cannot be changed.
 
 {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(S3 CLI)}
 
 ## Creation via AWS CLI
 
@@ -106,5 +104,6 @@ make_bucket: <make_bucket_name>
 
 A bucket with the appropriate storage type will be created. You can change its type in the VK Cloud panel.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

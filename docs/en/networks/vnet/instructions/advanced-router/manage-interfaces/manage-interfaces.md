@@ -2,11 +2,9 @@ To connect the router to subnets, you need to add interfaces. To connect the rou
 
 ## Adding interfaces of advanced router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {note:info}
 
@@ -34,16 +32,15 @@ As a result:
 - The added interface will appear in the list of interfaces.
 - The selected subnet will be connected to the router.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Removing interfaces of advanced router
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can remove several interfaces at once by selecting them using the checkboxes.
 
@@ -61,5 +58,6 @@ As a result:
 - The interface will be removed.
 - The interface subnet will be disconnected form the router.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

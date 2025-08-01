@@ -1,35 +1,34 @@
 1. [Install Fluent Bit](../../quick-start) if this has not been done before.
 1. Install the `vkcloudlogs-fluent-bit-plugin` plugin.
 
-   <tabs>
-   <tablist>
-   <tab>CentOS 7.X, CentOS 8.X, AlmaLinux 9</tab>
-   <tab>Ubuntu 22.X, Astra Linux SE 1.7.2 «Орел»</tab>
-   <tab>AltLinux Server p10</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+   
+   {tab(CentOS 7.X, CentOS 8.X, AlmaLinux 9)}
 
    ```console
    sudo rpm -i https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Ubuntu 22.X, Astra Linux SE 1.7.2 «Орел»)}
 
    ```console
    curl -sSLo vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
    sudo dpkg -i vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(AltLinux Server p10)}
 
    ```console
    sudo apt-get install https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    After installation, the `vkcloudlogs-fluent-bit.service` log collection agent will appear. It is disabled by default.
 

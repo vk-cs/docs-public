@@ -45,13 +45,9 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
 ## 4. Connect to VM
 
-<tabs>
-<tablist>
-<tab>Linux/macOS</tab>
-<tab>Windows 10/11</tab>
-<tab>Windows 7/8</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux/macOS)}
 
 1. (Optional) Configure access rights to the key file:
 
@@ -89,8 +85,9 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
       {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 10/11)}
 
 1. (Optional) Configure access rights to the private key file:
 
@@ -131,8 +128,9 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
 
       {/note}
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows 7/8)}
 
 In Windows 7/8, use the PuTTY application to connect via SSH.
 
@@ -168,8 +166,9 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
       {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:warn}
 

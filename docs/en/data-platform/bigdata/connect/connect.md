@@ -10,11 +10,9 @@
 
 ## Настройка доступа к веб-интерфейсу ADCM
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Большие данные** → **Кластеры**.
@@ -25,16 +23,15 @@
 1. Перейдите по адресу, указанному в **ADCM UI**. Откроется консоль ADCM.
 1. Введите имя пользователя `admin` и пароль, указанный при создании кластера.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Подключение к Head-узлу по SSH
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Большие данные** → **Кластеры**.
@@ -43,16 +40,15 @@
 1. Откройте страницу нужного кластера, нажав на его имя.
 1. [Подключитесь к Head-узлу](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) по IP-адресу, указанному в **ADCM UI** по SSH-ключу.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Подключение к Edge-узлу по SSH
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Большие данные** → **Кластеры**.
@@ -62,28 +58,28 @@
 1. Откройте страницу нужного кластера, нажав на его имя.
 1. [Подключитесь к Edge-узлу](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) по SSH-ключу.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка доступа к веб-интерфейсам компонентов кластера
 
 Чтобы настроить доступ к веб-интерфейсам компонентов в сети, воспользуйтесь одним из способов:
 
-<tabs>
-<tablist>
-<tab>Настройте VPN-доступа</tab>
-<tab>Настройте группы безопасности</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Настройте VPN-доступа)}
 
 1. [Создайте](/en/networks/vnet/instructions/net#creating_network) новую внутреннюю сеть и [маршрутизатор](/en/networks/vnet/instructions/router).
 1. Создайте кластер, указав созданную сеть.
 1. [Настройте VPN-подключение](/en/networks/vnet/how-to-guides/vpn-tunnel) к сервисам VK Cloud.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Настройте группы безопасности)}
 
 [Настройте](/en/networks/vnet/instructions/secgroups) группы безопасности нужным для вас образом, подробнее в статье [Ограничение трафика](/en/networks/vnet/concepts/traffic-limiting).
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

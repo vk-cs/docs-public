@@ -19,12 +19,9 @@ The VM settings available for configuration may vary depending on the operating 
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Verify that the account balance is positive and there are enough [quotas](/ru/tools-for-using-services/account/concepts/quotasandlimits) to create the virtual machine configuration you need.
@@ -86,8 +83,9 @@ The VM settings available for configuration may vary depending on the operating 
 1. Click the **Create instance** button.
 1. Wait for the VM to be created. This process may take some time. When the creation is completed, a page with VM characteristics and connection instructions will open.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Get ready to work with the OpenStack CLI:
 
@@ -190,8 +188,9 @@ Some features of creating a VM via the CLI:
 
 {/note}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## What's next?
 

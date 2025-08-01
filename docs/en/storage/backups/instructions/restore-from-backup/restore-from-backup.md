@@ -1,48 +1,41 @@
 ## Restoring instance from backup
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud Backup → Backup**.
 1. Open the required list of backup copies.
 
-   <tabs>
-   <tablist>
-   <tab>Copies created automatically</tab>
-   <tab>Copies created manually</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Copies created automatically)}
+      
       1. Go to the **Automatic** tab.
       1. Click the name of the required plan or click ![ ](/en/assets/more-icon.svg "inline") for the required plan and select **View backups**.
       1. For the required instance, click its name or the ![ ](/en/assets/right-arrow-icon.svg "inline") icon.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Copies created manually)}
+   
       1. Go to the **Manual** tab.
       1. Find the required instance in the list.
       1. Click the link in the **Restore points** column for the required instance.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
 1. Decide which backup copy to use for recovery.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup copy and select **Restore instance** or **Restore from backup**.
 1. Perform the following steps based on the instance type:
 
-    <tabs>
-    <tablist>
-    <tab>Virtual machine</tab>
-    <tab>Database</tab>
-    <tab>Analytical database</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Virtual machine)}
+        
     {note:warn}
 
     Restoring a VM is only available if the backup copy contains its configuration, i.e. the boot disk is saved.
@@ -52,6 +45,7 @@
     1. On the **Restoring instance from backup** page, select the **Restoring type**: `To the existing instance` or `To a new instance`.
 
          {tabs}
+
          {tab(To the existing instance)}
 
          To restore to the original VM, you do not need to specify any parameters.
@@ -65,6 +59,7 @@
          The restored VM will be rebooted.
 
          {/tab}
+
          {tab(To a new instance)}
 
          For restoring to a new instance, specify the required parameters. The remaining parameters will be restored from the backup copy.
@@ -76,6 +71,7 @@
          {/note}
 
          {/tab}
+         
          {/tabs}
 
     1. Click **Restore instance**.
@@ -86,9 +82,10 @@
     - Disk type — the [faster the disk](/en/computing/iaas/concepts/volume-sla) of the target VM, the faster the restoring will be.
     - Restoring type — restoring to the original VM takes less time.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
 
+    {tab(Database)}
+    
     1. Configure the parameters of the database instance [being created](/en/dbs/dbaas/instructions/create).
 
        {note:warn}
@@ -101,9 +98,10 @@
 
     The process of creating a new database instance will start.
 
-    </tabpanel>
-    <tabpanel>
+    {/tab}
 
+    {tab(Analytical database)}
+    
     1. Configure the parameters of the analytical database instance being created.
 
        {note:warn}
@@ -116,19 +114,19 @@
 
     The process of creating a new analytical database instance will start.
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Restoring VM disk from backup
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to the **Backup** section using one of the methods.
@@ -142,24 +140,23 @@
 
 1. Open the required list of backup copies.
 
-   <tabs>
-   <tablist>
-   <tab>Copies created automatically</tab>
-   <tab>Copies created manually</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Copies created automatically)}
+      
       1. Go to the **Automatic** tab.
       1. Click the name of the required plan or click ![ ](/en/assets/more-icon.svg "inline") for the required plan and select **View backups**.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Copies created manually)}
+   
       1. Go to the **Manual** tab.
       1. In the list of instances, click the link in the **Restore points** column for the required VM.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
 1. Decide which backup copy to use for recovery.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup copy and select **Restore Volume**.
@@ -176,8 +173,9 @@
 
 1. Click **Restore Volume**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 As a result of the recovery, a new disk will be created. It will be attached to a VM if the corresponding option has been selected. The old disk will not be deleted.
 

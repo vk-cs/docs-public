@@ -39,20 +39,18 @@ There are two types of load balancers in VK Cloud. You can [see](../../instructi
 
 Different types of balancers [are charged](../../../vnet/tariffication) differently.
 
-<tabs>
-<tablist>
-<tab>Standard balancer</tab>
-<tab>Service balancer</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Standard balancer)}
 
 This balancer is user-created and can be used to provide fault tolerance and flexible application scaling:
 
 - When working with [Cloud Servers service](/en/computing/iaas) to distribute incoming traffic between virtual servers.
 - When working with [container service](/en/kubernetes/k8s), such as when using [Ingress controllers](/en/kubernetes/k8s/how-to-guides/ingress) (including [the preconfigured one](/en/kubernetes/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_d11d1bb3)) or services like [Load Balancer](/en/kubernetes/k8s/how-to-guides/load-balancer).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Service balancer)}
 
 This balancer is created automatically to power services and is applied:
 
@@ -63,5 +61,6 @@ This balancer is created automatically to power services and is applied:
   - Postgres Pro Enterprise;
   - Postgres Pro Enterprise 1C.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

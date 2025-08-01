@@ -85,12 +85,9 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    This command installs a release named `cert-manager` in the `cert-manager` namespace. If such a namespace does not exist in the cluster, then it will be created automatically.
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    ```console
    helm install cert-manager jetstack/cert-manager \
@@ -99,8 +96,9 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
      --create-namespace
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm install cert-manager jetstack/cert-manager `
@@ -109,8 +107,9 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
      --create-namespace
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    On successful completion of the installation Helm will display the message with:
 
@@ -306,12 +305,9 @@ A backup of the `Issuer`, `ClusterIssuer` and `Certificate` reosurces will be cr
 
 To create a backup, execute the command:
 
-<tabs>
-<tablist>
-<tab>Linux (bash) / macOS (zsh)</tab>
-<tab>Windows (PowerShell)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash) / macOS (zsh))}
 
 ```console
 kubectl get -o yaml \
@@ -320,8 +316,9 @@ kubectl get -o yaml \
 > cert-manager-backup.yaml
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (PowerShell))}
 
 ```console
 kubectl get -o yaml `
@@ -330,8 +327,9 @@ kubectl get -o yaml `
 > cert-manager-backup.yaml
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Read about advanced backups and restoring from backup [in the official cert-manager documentation](https://cert-manager.io/docs/tutorials/backup).
 
@@ -381,12 +379,9 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
 1. Upgrade the `cert-manager` release to the selected version:
 
-   <tabs>
-   <tablist>
-   <tab>Linux (bash) / macOS (zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
 
    ```console
    helm upgrade cert-manager jetstack/cert-manager \
@@ -394,8 +389,9 @@ Read about advanced backups and restoring from backup [in the official cert-mana
      --namespace cert-manager
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows (PowerShell))}
 
    ```console
    helm upgrade cert-manager jetstack/cert-manager `
@@ -403,8 +399,9 @@ Read about advanced backups and restoring from backup [in the official cert-mana
      --namespace cert-manager
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    On successful completion of the upgrade, Helm will display the message with:
    - `Release "cert-manager" has been upgraded. Happy Helming!`.

@@ -72,12 +72,9 @@
 
 {caption(Пример запроса на загрузку манифеста)[align=left;position=above]}
 
-<tabs>
-<tablist>
-<tab>Linux (bash)</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash))}
 
 ```console
 curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
@@ -85,8 +82,9 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 --data-binary "@deploy.tf"
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
 curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
@@ -94,8 +92,9 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 --data-binary "@deploy.tf"
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/caption}
 
@@ -158,28 +157,27 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes)[text=�
 
 {caption(Пример запроса на проверку текущей конфигурации манифеста)[align=left;position=above]}
 
-<tabs>
-<tablist>
-<tab>Linux (bash)</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash))}
 
 ```console
 curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
 curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/caption}
 
@@ -256,12 +254,9 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes_after_c
 
 {caption(Пример запроса на создание инстанса сервиса)[align=left;position=above]}
 
-<tabs>
-<tablist>
-<tab>Linux (bash)</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash))}
 
 ```console
 curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object \
@@ -279,8 +274,9 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
   }'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
 curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object ^
@@ -289,8 +285,9 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 --data "{\"uuid\": \"675f6f08-XXXX-f02311f795d7\", \"config\": \"test_1.0\", \"vars\": {\"sub_network\": \"a793470c-XXXX-67af6c178c8e\", \"image_uuid\": \"163ff752-XXXX-b0001e3e65d3\", \"volume_type\": \"ceph-ssd\", \"flavor_uuid\": \"6e61564f-XXXX-08df5fd84514\"}}"
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 Здесь:
 
@@ -354,28 +351,27 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes_after_c
 
 {caption(Пример запроса на удаление инстанса сервиса)[align=left;position=above]}
 
-<tabs>
-<tablist>
-<tab>Linux (bash)</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash))}
 
 ```console
 curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
 curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/caption}
 
@@ -435,28 +431,27 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes_after_d
 
 {caption(Пример запроса на проверку состояния инстанса сервиса)[align=left;position=above]}
 
-<tabs>
-<tablist>
-<tab>Linux (bash)</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash))}
 
 ```console
 curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
 curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/caption}
 
@@ -563,28 +558,27 @@ HTTP-коды ответа  приведены в {linkto(#tab_http_codes_status
 
 {caption(Пример запроса на вывод лога инстанса сервиса)[align=left;position=above]}
 
-<tabs>
-<tablist>
-<tab>Linux (bash)</tab>
-<tab>Windows (cmd)</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux (bash))}
 
 ```console
 curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows (cmd))}
 
 ```console
 curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {/caption}
 

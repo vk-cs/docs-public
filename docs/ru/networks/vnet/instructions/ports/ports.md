@@ -9,12 +9,9 @@
 
 ## Просмотр списка портов и информации о них
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -28,8 +25,9 @@
 
    Будет отображена информация о нем.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -73,17 +71,15 @@ openstack subnet list --help
 openstack port show --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Добавление порта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -99,8 +95,9 @@ openstack port show --help
 
 1. Нажмите кнопку **Создать порт**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -116,19 +113,17 @@ openstack port show --help
 openstack port create --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Включение или выключение порта
 
 ### Включение порта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно включить сразу несколько выключенных портов, выбрав их с помощью флажков.
 
@@ -150,8 +145,9 @@ openstack port create --help
      1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного порта и выберите пункт **Включить порт**.
      1. Подтвердите выполнение операции.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -169,19 +165,17 @@ openstack port create --help
 openstack port set --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ### Выключение порта
 
 Выключенный порт не пропускает никакой трафик.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно выключить сразу несколько включенных портов, выбрав их с помощью флажков.
 
@@ -203,8 +197,9 @@ openstack port set --help
      1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного порта и выберите пункт **Выключить порт**.
      1. Подтвердите выполнение операции.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -222,17 +217,15 @@ openstack port set --help
 openstack port set --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Редактирование порта
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -248,8 +241,9 @@ openstack port set --help
 
 1. Нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -281,18 +275,17 @@ openstack port set --help
 openstack port set --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Настройка IP Source Guard для порта
 
 Этот механизм позволяет разрешать выход с порта только того трафика, для которого IP-адрес источника содержится в списке `allowed-address`.
 
-<tabs>
-<tablist>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -324,8 +317,9 @@ openstack port set --help
 openstack port unset --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление порта
 
@@ -335,12 +329,9 @@ openstack port unset --help
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько портов, выбрав их с помощью флажков.
 
@@ -362,8 +353,9 @@ openstack port unset --help
      1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного порта и выберите пункт **Удалить порт**.
      1. Подтвердите выполнение операции.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -381,5 +373,6 @@ openstack port unset --help
 openstack port delete --help
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

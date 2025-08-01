@@ -139,15 +139,10 @@
 
 5. Настройте сетевой интерфейс вручную:
 
-    <tabs>
-    <tablist>
-    <tab>Ubuntu</tab>
-    <tab>Debian</tab>
-    <tab>AlmaLinux, CentOS</tab>
-    <tab>openSUSE</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Ubuntu)}
+        
     1. Отредактируйте файл `/etc/netplan/50-cloud-init.yaml` и приведите его к следующему виду:
 
         ```yaml
@@ -178,9 +173,10 @@
         sudo netplan apply
         ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Debian)}
+    
     1. Отредактируйте файл `/etc/network/interfaces.d/50-cloud-init` и приведите его к следующему виду:
 
         ```ini
@@ -207,9 +203,10 @@
         sudo systemctl restart networking
         ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(AlmaLinux, CentOS)}
+    
     1. Отредактируйте файл `/etc/sysconfig/network-scripts/ifcfg-<имя интерфейса>` и приведите его к следующему виду:
 
         ```ini
@@ -244,9 +241,10 @@
         sudo nmcli con up "System eth0"
         ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(openSUSE)}
+    
     1. Отредактируйте файл `/etc/sysconfig/network/ifcfg-<имя интерфейса>` и приведите его к следующему виду:
 
        ```ini
@@ -281,8 +279,9 @@
         sudo systemctl restart network
         ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 6. Запретите вносить автоматические изменения в отредактированный конфигурационный файл:
 
@@ -313,13 +312,10 @@
 
 1. В зависимости от статуса сервиса SSH выполните следующие действия:
 
-    <tabs>
-    <tablist>
-    <tab>Если сервис SSH запущен</tab>
-    <tab>Если сервис SSH не запущен</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(Если сервис SSH запущен)}
+        
     1. Определите, на каком порте работает сервис SSH:
 
        ```console
@@ -342,9 +338,10 @@
 
     1. Проверьте наличие доступа по SSH к виртуальной машине. Если доступ не появился, [перейдите к проверке настроек файервола ВМ](#3_proverte_nastroyki_fayervola_virtualnoy_mashiny).
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(Если сервис SSH не запущен)}
+    
     1. Определите, на каком порте работает сервис SSH:
 
         ```console
@@ -375,26 +372,25 @@
 
         1. Установите утилиту `netstat`:
 
-            <tabs>
-            <tablist>
-            <tab>Debian, Ubuntu</tab>
-            <tab>AlmaLinux, CentOS<tab>
-            </tablist>
-            <tabpanel>
-
+            {tabs}
+            
+            {tab(Debian, Ubuntu)}
+                        
             ```console
             sudo apt install net-tools -y
             ```
 
-            </tabpanel>
-            <tabpanel>
-
+            {/tab}
+            
+            {tab(AlmaLinux, CentOS)}
+            
             ```console
             sudo yum install net-tools -y
             ```
 
-            </tabpanel>
-            </tabs>
+            {/tab}
+            
+            {/tabs}
 
         1. Выполните команду:
 
@@ -458,8 +454,9 @@
 
     1. Проверьте наличие доступа по SSH к виртуальной машине. Если доступ не появился, [перейдите к проверке настроек файервола ВМ](#3_proverte_nastroyki_fayervola_virtualnoy_mashiny).
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 ## 3. Проверьте настройки файервола виртуальной машины
 
@@ -479,28 +476,26 @@
 
 1. Отключите файервол:
 
-    <tabs>
-    <tablist>
-    <tab>ufw</tab>
-    <tab>firewalld</tab>
-    <tab>iptables</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(ufw)}
+        
     ```console
     sudo ufw disable
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(firewalld)}
+    
     ```console
     sudo systemctl stop firewalld
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(iptables)}
+    
     1. Сохраните существующие правила `iptables`:
 
         ```console
@@ -520,8 +515,9 @@
 
         ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+
+    {/tabs}
 
 1. Проверьте наличие доступа по SSH к виртуальной машине.
 
@@ -535,34 +531,33 @@
 
 1. Выполните команду:
 
-    <tabs>
-    <tablist>
-    <tab>ufw</tab>
-    <tab>firewalld</tab>
-    <tab>iptables</tab>
-    </tablist>
-    <tabpanel>
-
+    {tabs}
+    
+    {tab(ufw)}
+        
     ```console
     sudo ufw enable
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(firewalld)}
+    
     ```console
     sudo systemctl start firewalld
     ```
 
-    </tabpanel>
-    <tabpanel>
-
+    {/tab}
+    
+    {tab(iptables)}
+    
     ```console
     sudo iptables-restore < ~/iptables.rules
     ```
 
-    </tabpanel>
-    </tabs>
+    {/tab}
+    
+    {/tabs}
 
 ## 4. Проверьте настройки групп безопасности файервола VK Cloud
 

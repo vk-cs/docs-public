@@ -17,17 +17,9 @@ The way to connect to the cluster depends on its IP address:
 
    {/note}
 
-   <tabs>
-   <tablist>
-   <tab>Linux (curl)</tab>
-   <tab>Linux (apt)</tab>
-   <tab>Linux (yum)</tab>
-   <tab>macOS (curl)</tab>
-   <tab>macOS (Homebrew)</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   {tab(Linux (curl))}
+   
    1. Download the correct version of `kubectl`.
 
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
@@ -54,9 +46,9 @@ The way to connect to the cluster depends on its IP address:
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(Linux (apt))}
+   
    1. Add the Kubernetes repository:
 
       ```console
@@ -87,9 +79,9 @@ The way to connect to the cluster depends on its IP address:
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(Linux (yum))}
+   
    1. Add the Kubernetes repository:
 
       ```console
@@ -124,9 +116,9 @@ The way to connect to the cluster depends on its IP address:
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(macOS (curl))}
+   
    1. Download the correct version of `kubectl`.
 
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
@@ -153,9 +145,9 @@ The way to connect to the cluster depends on its IP address:
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(macOS (Homebrew))}
+   
    1. Run one of the installation commands:
 
       ```console
@@ -174,9 +166,9 @@ The way to connect to the cluster depends on its IP address:
       kubectl version --short
       ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   {tab(Windows)}
+   
    1. Download the correct version of `kubectl`.
 
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
@@ -207,8 +199,8 @@ The way to connect to the cluster depends on its IP address:
       kubectl version --short
       ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   {/tabs}
 
 1. Prepare everything you need to connect using [Single Sign-On (SSO)](../../concepts/access-management).
 
@@ -225,12 +217,8 @@ The way to connect to the cluster depends on its IP address:
 
 ## Checking connection to cluster
 
-<tabs>
-<tablist>
-<tab>Version of Kubernetes 1.23 and higher</tab>                                                        
-<tab>Version of Kubernetes 1.22 and lower</tab>
-</tablist>
-<tabpanel>
+{tabs}
+{tab(Version of Kubernetes 1.23 and higher)}                                                        
 
 On the host:
 
@@ -244,8 +232,8 @@ On the host:
 
    This is necessary for [authentication](../../concepts/access-management) when connecting to the cluster.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+{tab(Version of Kubernetes 1.22 and lower)}
 
 Run the command on the host:
 
@@ -253,8 +241,8 @@ Run the command on the host:
 kubectl cluster-info
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+{/tabs}
 
 If the cluster is in the nomal operation state and `kubectl` is configured to work with it, similar information will be dispalyed:
 

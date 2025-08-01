@@ -13,12 +13,9 @@
 
 Чтобы обновить инстанс БД PostgreSQL или PostgresPro:
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится нужный инстанс БД.
@@ -27,8 +24,9 @@
 1. Выберите нужную версию из списка.
 1. Нажмите кнопку **Изменить версию**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 1. [Получите URL для использования API сервиса Trove](/ru/tools-for-using-services/api/rest-api/endpoints#prosmotr_spiska_endpointov).
 
@@ -38,22 +36,16 @@
 
 1. Выполните обновление. Процедура обновления зависит от [конфигурации](../../concepts/work-configs):
 
-   <tabs>
-   <tablist>
-   <tab>Single и Master-Replica</tab>
-   <tab>Кластер</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Single и Master-Replica)}
+      
    1. Получите список инстансов БД:
 
-      <tabs>
-      <tablist>
-      <tab>cURL (Linux bash \ macOS zsh)</tab>
-      <tab>cURL (Windows PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(cURL (Linux bash \ macOS zsh))}
+            
       ```console
       curl \
         --request GET \
@@ -61,9 +53,10 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(cURL (Windows PowerShell))}
+      
       ```console
       curl `
         --request GET `
@@ -71,8 +64,9 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Из ответа на запрос к API определите идентификатор инстанса с ролью `Master`. В конфигурации **Master-Replica** обновление всех инстансов выполняется путем обновления инстанса БД с ролью `Master`. Выполнить обновление только для инстансов с ролью `Replica` невозможно.
 
@@ -155,13 +149,10 @@
 
    1. Запустите процесс обновления:
 
-      <tabs>
-      <tablist>
-      <tab>cURL (Linux bash \ macOS zsh)</tab>
-      <tab>cURL (Windows PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(cURL (Linux bash \ macOS zsh))}
+            
       ```console
       curl \
         --request PATCH \
@@ -175,9 +166,10 @@
          }'
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(cURL (Windows PowerShell))}
+      
       ```console
       curl `
         --request PATCH `
@@ -191,20 +183,18 @@
          }'
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       Начнется обновление, процесс может занять длительное время.
 
    1. Периодически проверяйте ход обновления для отдельных инстансов с ролью `Master` или `Replica` (при наличии):
 
-      <tabs>
-      <tablist>
-      <tab>cURL (Linux bash \ macOS zsh)</tab>
-      <tab>cURL (Windows PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(cURL (Linux bash \ macOS zsh))}
+            
       ```console
       curl \
         --request GET \
@@ -212,9 +202,10 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(cURL (Windows PowerShell))}
+      
       ```console
       curl `
         --request GET `
@@ -222,8 +213,9 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       Во время обновления значение поля `instance.status` будет последовательно изменяться на `BACKUP`, `UPGRADE`.
 
@@ -232,18 +224,16 @@
       - В поле `instance.status` значение изменится на `ACTIVE`.
       - В поле `instance.last_task_result` появится информация о результате последней выполненной операции. Значение при успешном обновлении — `MAJOR_UPGRADE_COMPLETED`.
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Кластер)}
+   
    1. Получите список кластеров БД:
 
-      <tabs>
-      <tablist>
-      <tab>cURL (Linux bash \ macOS zsh)</tab>
-      <tab>cURL (Windows PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(cURL (Linux bash \ macOS zsh))}
+            
       ```console
       curl \
         --request GET \
@@ -251,9 +241,10 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(cURL (Windows PowerShell))}
+      
       ```console
       curl `
         --request GET `
@@ -261,8 +252,9 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Из ответа на запрос к API определите идентификатор кластера, который нужно обновить, и версию, до которой можно обновить кластер:
 
@@ -297,13 +289,10 @@
 
    1. Запустите процесс обновления кластера БД:
 
-      <tabs>
-      <tablist>
-      <tab>cURL (Linux bash \ macOS zsh)</tab>
-      <tab>cURL (Windows PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(cURL (Linux bash \ macOS zsh))}
+            
       ```console
       curl \
         --request POST \
@@ -318,9 +307,10 @@
           }'
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(cURL (Windows PowerShell))}
+      
       ```console
       curl \
         --request POST `
@@ -335,20 +325,18 @@
           }'
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       Начнется обновление, процесс может занять длительное время.
 
    1. Периодически проверяйте ход обновления, запрашивая подробную информацию об обновляемом кластере БД:
 
-      <tabs>
-      <tablist>
-      <tab>cURL (Linux bash \ macOS zsh)</tab>
-      <tab>cURL (Windows PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(cURL (Linux bash \ macOS zsh))}
+            
       ```console
       curl \
         --request GET \
@@ -356,9 +344,10 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(cURL (Windows PowerShell))}
+      
       ```console
       curl `
         --request GET `
@@ -366,8 +355,9 @@
         --header 'X-Auth-Token: <токен>'
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       Во время обновления:
 
@@ -379,8 +369,10 @@
       - В поле `cluster.task.name` будет значение `NONE`.
       - В поле `cluster.last_task_result` появится информация о результате последней выполненной операции. Значение при успешном обновлении — `MAJOR_UPGRADE_COMPLETED`.
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}

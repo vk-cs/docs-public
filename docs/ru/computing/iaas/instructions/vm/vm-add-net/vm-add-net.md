@@ -8,12 +8,9 @@
 
 ## Подключение сети к ВМ
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -38,8 +35,9 @@
 
 7. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -142,17 +140,15 @@
    openstack port list --server <ID виртуальной машины>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление сети ВМ
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
@@ -166,8 +162,9 @@
 
 Подключение сети к ВМ будет удалено, но созданный ранее порт останется в статусе **Не подключен**. Подробнее об удалении портов в разделе [Управление портами](/ru/networks/vnet/instructions/ports).
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 2. Получите ID виртуальной машины:
@@ -188,5 +185,6 @@
    openstack port delete <имя или идентификатор порта>
    ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

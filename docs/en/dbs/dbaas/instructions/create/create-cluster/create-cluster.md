@@ -1,10 +1,8 @@
 ## OpenSearch
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create a cluster.
@@ -31,26 +29,25 @@
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
-      <tabs>
-      <tablist>
-      <tab>Disabled</tab>
-      <tab>Full</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Disabled)}
+            
       Select this option to not use backup for the cluster.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Full)}
+      
       Set the backup options:
 
       - Set the **Backup period**.
       - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Click the **Next step** button.
 
@@ -133,13 +130,10 @@
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 
-      <tabs>
-      <tablist>
-      <tab>New database</tab>
-      <tab>Restore from copy</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(New database)}
+            
       A new empty database will be created.
 
       Specify:
@@ -147,9 +141,10 @@
       - The name of the database.
       - A username and password.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Restore from copy)}
+      
       This option is inactive if there are no backups corresponding to the selected DBMS type and version.
 
       The databases will be restored from the backup.
@@ -166,15 +161,17 @@
 
       From the drop-down list **Backup** select the backup from which you want to restore.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Click the **Create database** button.
 
       Wait for the operation to complete. Creating a cluster can take a long time.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## MySQL, PostgreSQL, PostgresPro Enterprise, PostgresPro Enterprise 1C
 
@@ -186,11 +183,9 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create a cluster.
@@ -251,19 +246,16 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
-      <tabs>
-      <tablist>
-      <tab>Disabled</tab>
-      <tab>Point-in-time recovery</tab>
-      <tab>Full</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Disabled)}
+            
       Select this option to not use backup for the cluster.
 
-      </tabpanel>
-      <tabpanel>
+      {/tab}
 
+      {tab(Point-in-time recovery)}
+      
       This option allows you to perform Point-In-Time-Recovery (PITR) backups. This option is not available for MySQL.
 
       If the option is selected, set the backup options:
@@ -274,17 +266,19 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       - **Backup interval**: the frequency of creating backups.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Full)}
+      
       Set the backup options:
 
       - Set the **Backup period**.
       - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Click the **Next step** button.
 
@@ -292,13 +286,10 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 
-      <tabs>
-      <tablist>
-      <tab>New database</tab>
-      <tab>Restore from copy</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(New database)}
+            
       A new empty database will be created.
 
       Specify:
@@ -306,9 +297,10 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
       - The name of the database.
       - A username and password.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Restore from copy)}
+      
       This option is inactive if there are no backups corresponding to the selected DBMS type and version.
 
       The databases will be restored from the backup.
@@ -326,23 +318,23 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       - **Full:** from the drop-down list **Backup** select the backup from which you want to restore.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Click the **Create database** button.
 
       Wait for the operation to complete. Creating a cluster can take a long time.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Tarantool
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create a cluster.
@@ -407,33 +399,31 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       Only the **New database** type is available for Tarantool.
 
-      <tabs>
-      <tablist>
-      <tab>New database</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(New database)}
+            
       A new empty database will be created.
 
       Enter a username and password.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Click the **Create database** button.
 
       Wait for the operation to complete. Creating a cluster can take a long time.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Other types of DBMS
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create a cluster.
@@ -480,26 +470,25 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
-      <tabs>
-      <tablist>
-      <tab>Disabled</tab>
-      <tab>Full</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Disabled)}
+            
       Select this option to not use backup for the cluster.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Full)}
+      
       Set the backup options:
 
       - Set the **Backup period**.
       - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Select the option **Enable monitoring** if you need to monitor the cluster using the VK Cloud tools.
 
@@ -540,13 +529,10 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
    1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
 
-      <tabs>
-      <tablist>
-      <tab>New database</tab>
-      <tab>Restore from copy</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(New database)}
+            
       A new empty database will be created.
 
       There are no initialization parameters for Redis.
@@ -556,9 +542,10 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
       - The name of the database.
       - A username and password.
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Restore from copy)}
+      
       This option is inactive if there are no backups corresponding to the selected DBMS type and version.
 
       The databases will be restored from the backup.
@@ -575,12 +562,14 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       From the drop-down list **Backup** select the backup from which you want to restore.
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
    1. Click the **Create database** button.
 
       Wait for the operation to complete. Creating a cluster can take a long time.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

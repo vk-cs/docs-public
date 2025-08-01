@@ -30,12 +30,9 @@ Velero — это клиент-серверная утилита для резе
 
 1. Установите серверную часть Velero в кластер Kubernetes. В команде укажите имя бакета, созданного для Velero и путь к файлу `s3_creds` с данными аккаунта:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    velero install \
@@ -50,8 +47,9 @@ Velero — это клиент-серверная утилита для резе
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    velero install `
@@ -65,8 +63,9 @@ Velero — это клиент-серверная утилита для резе
      region=ru-msk,s3ForcePathStyle="true",s3Url=<ДОМЕН>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Здесь `<ДОМЕН>` — домен сервиса Cloud Storage, соответствующий региону аккаунта:
 
@@ -81,12 +80,9 @@ Velero — это клиент-серверная утилита для резе
 
 1. Создайте секрет Kubernetes, чтобы серверная часть Velero могла авторизоваться в облаке VK Cloud:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Linux/macOS)}
 
    ```console
    kubectl -n velero create secret generic openstack-cloud-credentials \
@@ -103,8 +99,9 @@ Velero — это клиент-серверная утилита для резе
 
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
 
    ```console
    kubectl -n velero create secret generic openstack-cloud-credentials `
@@ -120,8 +117,9 @@ Velero — это клиент-серверная утилита для резе
      -o yaml
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+
+   {/tabs}
 
    Должна быть выведена похожая информация:
 

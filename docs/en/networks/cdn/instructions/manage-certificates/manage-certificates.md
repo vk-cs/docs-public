@@ -6,11 +6,9 @@ To apply an SSL certificate to a CDN resource, follow the [instructions](../mana
 
 ## Creating an SSL certificate
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -24,8 +22,9 @@ To apply an SSL certificate to a CDN resource, follow the [instructions](../mana
 
 1. Click **Add SSL certificate**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing SSL certificate
 
@@ -35,11 +34,9 @@ You can edit the certificate's name only. To edit public and private key, create
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -48,16 +45,15 @@ You can edit the certificate's name only. To edit public and private key, create
 1. In the **SSL certificate name** field edit the certificate name.
 1. Click **Save changes**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting SSL certificate
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -65,5 +61,6 @@ You can edit the certificate's name only. To edit public and private key, create
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required certificate and select **Delete certificate**.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

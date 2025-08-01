@@ -19,35 +19,31 @@ To work with public DNS, configure [roles](/en/tools-for-using-services/account/
 
 ## Viewing a list of DNS zones
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the method `GET /v2/dns/` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating a zone
 
 DNS zone is a logical association of domain names of your resources, containing their resource records.
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -72,13 +68,15 @@ DNS zone is a logical association of domain names of your resources, containing 
 1. Click the button **Add zone**.
 1. Contact the owner of the [specified](https://msk.cloud.vk.com/app/services/dns/list) domain to delegate zone management to VK Cloud DNS servers.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the method `POST /v2/dns/` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 
@@ -88,12 +86,9 @@ For most providers, it is possible to delegate zone management independently. If
 
 ## Editing a zone
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -101,13 +96,15 @@ For most providers, it is possible to delegate zone management independently. If
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Edit**.
 1. Make the changes and click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the method `PUT /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Creating a subzone
 
@@ -136,12 +133,9 @@ After creating NS records, you can create a zone for a delegated subdomain.
 
 ## Deleting a zone
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can delete several zones at once by selecting them using the checkboxes.
 
@@ -151,13 +145,15 @@ This is a group operation: if necessary, you can delete several zones at once by
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Delete**.
 1. Confirm the action.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the method `DELETE /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Adding resource records
 
@@ -175,12 +171,9 @@ VK Cloud supports resource record types:
 
 To add a resource record:
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -282,22 +275,21 @@ To add a resource record:
 
 1. Click the button **Add record**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing resource records
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
@@ -306,22 +298,21 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required entry and select **Edit**.
 1. Make the changes and click **Save changes**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Deleting resource records
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: if necessary, you can delete several records at once by selecting them using the checkboxes.
 
@@ -332,10 +323,12 @@ This is a group operation: if necessary, you can delete several records at once 
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required entry and select **Delete**.
 1. Confirm the action.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(API)}
 
 Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

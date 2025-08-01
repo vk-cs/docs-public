@@ -7,12 +7,9 @@
 
 ## Просмотр списка VPN-туннелей и информации о них
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -24,8 +21,9 @@
 
    Откроется страница с подробной информацией о нем. Переходите между вкладками страницы для просмотра информации о параметрах IKE и IPsec, endpoint-групп и туннеля. На этой странице можно также редактировать параметры VPN-туннеля.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -76,17 +74,15 @@
      openstack vpn service show <идентификатор VPN-сервиса>
      ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Добавление VPN-туннеля
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -143,25 +139,24 @@
       1. Выберите из выпадающего списка пункт `Новая endpoint-группа`.
       1. Задайте настройки группы:
 
-         <tabs>
-         <tablist>
-         <tab>Neutron</tab>
-         <tab>Sprut</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(Neutron)}
+                  
          - **Имя** — имя локальной endpoint-группы.
          - **Подсети** — выберите одну или несколько подсетей, подключенных к выбранному ранее маршрутизатору. Эти подсети будут доступны через VPN-туннель.
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(Sprut)}
+         
          - **Имя** — имя локальной endpoint-группы.
          - **Адрес подсети** — укажите IP-адрес (CIDR) подсети, подключенной в выбранному ранее маршрутизатору. Эта подсеть будет доступна через VPN-туннель.
          - (Опционально) Для подключения дополнительной подсети нажмите **Добавить еще один CIDR** и укажите IP-адрес подсети, которая должна быть доступна через VPN-туннель.
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+         
+         {/tabs}
 
    1. **Remote Endpoint** — выберите удаленную (remote) endpoint-группу из выпадающего списка. Если нужной группы нет, создайте новую:
 
@@ -223,8 +218,9 @@
 
 1. Нажмите кнопку **Создать VPN-туннель**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -247,13 +243,10 @@
 
    1. Если подходящей IKE-политики на предыдущем шаге не нашлось, создайте ее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn ike policy create <имя политики> \
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
@@ -263,9 +256,10 @@
         --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn ike policy create <имя политики> `
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
@@ -275,8 +269,9 @@
         --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор политики (`id`), которая будет использоваться VPN-туннелем.
 
@@ -296,13 +291,10 @@
 
    1. Если подходящей IPsec-политики на предыдущем шаге не нашлось, создайте ее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn ipsec policy create <имя политики> \
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
@@ -311,9 +303,10 @@
         --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn ipsec policy create <имя политики> `
         --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
@@ -322,8 +315,9 @@
         --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор политики, которая будет использоваться VPN-туннелем.
 
@@ -345,30 +339,29 @@
 
    1. Создайте VPN-сервис, использующий этот маршрутизатор:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn service create <имя VPN-сервиса> \
         --router <идентификатор маршрутизатора, полученный на предыдущем шаге> \
         --enable
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn service create <имя VPN-сервиса> `
         --router <идентификатор маршрутизатора, полученный на предыдущем шаге> `
         --enable
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор VPN-сервиса, который будет использоваться VPN-туннелем.
 
@@ -393,13 +386,10 @@
 
    1. Если подходящей локальной endpoint-группы не нашлось, создайте ее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> \
         --type subnet \
@@ -408,9 +398,10 @@
         --value <идентификатор дополнительной подсети>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> `
         --type subnet `
@@ -419,20 +410,18 @@
         --value <идентификатор дополнительной подсети>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор локальной endpoint-группы, которая будет использоваться VPN-туннелем.
 
    1. Если подходящей удаленной endpoint-группы не нашлось, создайте ее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> \
         --type cidr \
@@ -441,9 +430,10 @@
         --value "<дополнительная удаленная подсеть>"
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> `
         --type cidr `
@@ -452,20 +442,18 @@
         --value "<дополнительная удаленная подсеть>"
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор удаленной endpoint-группы, которая будет использоваться VPN-туннелем.
 
 1. Создайте VPN-туннель:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack vpn ipsec site connection create <имя VPN-туннеля> \
      --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> \
@@ -481,9 +469,10 @@
      --enable
    ```
   
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack vpn ipsec site connection create <имя VPN-туннеля> `
      --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> `
@@ -499,20 +488,19 @@
      --enable
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}
 
 ## Редактирование VPN-туннеля
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -525,25 +513,24 @@
       1. Выберите из выпадающего списка пункт `Новая endpoint-группа`.
       1. Задайте настройки группы:
 
-         <tabs>
-         <tablist>
-         <tab>Neutron</tab>
-         <tab>Sprut</tab>
-         </tablist>
-         <tabpanel>
-
+         {tabs}
+         
+         {tab(Neutron)}
+                  
          - **Имя** — имя локальной endpoint-группы.
          - **Подсети** — выберите одну или несколько подсетей, подключенных к выбранному ранее маршрутизатору. Эти подсети будут доступны через VPN-туннель.
 
-         </tabpanel>
-         <tabpanel>
-
+         {/tab}
+         
+         {tab(Sprut)}
+         
          - **Имя** — имя локальной endpoint-группы.
          - **Адрес подсети** — укажите IP-адрес (CIDR) подсети, подключенной в выбранному ранее маршрутизатору. Эта подсеть будет доступна через VPN-туннель.
          - (Опционально) Для подключения дополнительной подсети нажмите **Добавить еще один CIDR** и укажите IP-адрес подсети, которая должна быть доступна через VPN-туннель.
 
-         </tabpanel>
-         </tabs>
+         {/tab}
+         
+         {/tabs}
 
    1. **Remote Endpoint** — выберите удаленную (remote) endpoint-группу из выпадающего списка. Если нужной группы нет, создайте новую:
 
@@ -604,8 +591,9 @@
 
 1. Нажмите кнопку **Сохранить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -635,13 +623,10 @@
 
    1. Если подходящей локальной endpoint-группы не нашлось, создайте ее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> \
         --type subnet \
@@ -650,9 +635,10 @@
         --value <идентификатор дополнительной подсети>
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn endpoint group create <имя локальной endpoint-группы> `
         --type subnet `
@@ -661,20 +647,18 @@
         --value <идентификатор дополнительной подсети>
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор локальной endpoint-группы, которая будет использоваться VPN-туннелем.
 
    1. Если подходящей удаленной endpoint-группы не нашлось, создайте ее:
 
-      <tabs>
-      <tablist>
-      <tab>Linux/macOS (bash, zsh)</tab>
-      <tab>Windows (PowerShell)</tab>
-      </tablist>
-      <tabpanel>
-
+      {tabs}
+      
+      {tab(Linux/macOS (bash, zsh))}
+            
       ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> \
         --type cidr \
@@ -683,9 +667,10 @@
         --value "<дополнительная удаленная подсеть>"
       ```
 
-      </tabpanel>
-      <tabpanel>
-
+      {/tab}
+      
+      {tab(Windows (PowerShell))}
+      
       ```console
       openstack vpn endpoint group create <имя удаленной endpoint-группы> `
         --type cidr `
@@ -694,20 +679,18 @@
         --value "<дополнительная удаленная подсеть>"
       ```
 
-      </tabpanel>
-      </tabs>
+      {/tab}
+      
+      {/tabs}
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор удаленной endpoint-группы, которая будет использоваться VPN-туннелем.
 
 1. Отредактируйте настройки VPN-туннеля:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack vpn ipsec site connection set <идентификатор VPN-туннеля> \
      --name <новое имя VPN-туннеля> \
@@ -720,9 +703,10 @@
      --enable
    ```
   
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack vpn ipsec site connection set <идентификатор VPN-туннеля> `
      --name <новое имя VPN-туннеля> `
@@ -735,11 +719,13 @@
      --enable
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Перезапуск VPN-туннеля
 
@@ -749,12 +735,9 @@
 
 {/note}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -763,8 +746,9 @@
 1. Прочитайте предупреждение.
 1. Нажмите кнопку **Перезагрузить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -775,38 +759,35 @@
 
 1. Выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack vpn service set <идентификатор VPN-сервиса> --disable && openstack vpn service set <идентификатор VPN-сервиса> --enable
    ```
   
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack vpn service set <идентификатор VPN-сервиса> --disable; openstack vpn service set <идентификатор VPN-сервиса> --enable
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
+   
+   {/tabs}
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Удаление VPN-туннеля
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>OpenStack CLI</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект.
@@ -822,8 +803,9 @@
 
 1. Нажмите кнопку **Подтвердить**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(OpenStack CLI)}
 
 1. Убедитесь, что:
 
@@ -850,13 +832,10 @@
 
 1. Чтобы удалить VPN-туннель и все связанные с ним объекты, выполните команду:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
+   {tabs}
+   
+   {tab(Linux/macOS (bash, zsh))}
+      
    ```console
    openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
    openstack vpn ike policy delete <идентификатор IKE-политики>
@@ -867,9 +846,10 @@
    
    ```
 
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows (PowerShell))}
+   
    ```console
    openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>; `
    openstack vpn ike policy delete <идентификатор IKE-политики>; `
@@ -879,8 +859,10 @@
    openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель>
    ```
 
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-</tabpanel>
-</tabs>
+   {/tabs}
+
+{/tab}
+
+{/tabs}

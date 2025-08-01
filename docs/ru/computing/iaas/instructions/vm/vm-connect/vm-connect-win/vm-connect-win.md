@@ -32,13 +32,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 ## 3. Подключитесь к ВМ
 
-<tabs>
-<tablist>
-<tab>Linux</tab>
-<tab>macOS</tab>
-<tab>Windows</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Linux)}
 
 В Linux для подключения по RDP используйте утилиту Remmina.
 
@@ -64,8 +60,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 4. Нажмите кнопку **Save and Connect** для подключения к ВМ. Новое подключение при этом сохранится в списке.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(macOS)}
 
 В macOS для подключения по RDP используйте программу Microsoft Remote Desktop. Укажите параметры подключения вручную или с помощью файла конфигурации RDP.
 
@@ -98,8 +95,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 3. Найдите новое подключение в списке и дважды кликните на него, чтобы подключиться к ВМ.
 
-</tabpanel>
-<tabpanel>
+{/tab}
+
+{tab(Windows)}
 
 Для подключения по RDP укажите параметры подключения вручную или с помощью файла конфигурации RDP.
 
@@ -137,8 +135,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
       4. Нажмите кнопку **Подключить** и повторно подтвердите подключение в открывшемся окне.
       5. В окне входа в операционную систему введите `<ПАРОЛЬ>`.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 {note:info}
 

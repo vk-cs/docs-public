@@ -2,11 +2,9 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 
 ## Adding DNAT rule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -26,16 +24,15 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 1. (Optional) Enter a description of the DNAT rule. You can only use numbers, Latin letters, spaces and characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
 1. Click **Add**.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
 
 ## Editing DNAT rule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 {include(/en/_includes/_open_advanced_router.md)}
 
@@ -59,13 +56,15 @@ To provide access to a private network from the Internet, configure _DNAT_— de
    - **Description**: the description of the DNAT rule. You can only use numbers, Latin letters, spaces and characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
 1. Click **Save changes**.
 
+{/tab}
+
+{/tabs}
+
 ## Deleting DNAT rule
 
-<tabs>
-<tablist>
-<tab>Management console</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Management console)}
 
 This is a group operation: you can delete several rules at once by setting the checkboxes.
 
@@ -78,5 +77,6 @@ This is a group operation: you can delete several rules at once by setting the c
    - Set the checkbox for the required rule, then click ![trash-icon](/en/assets/trash-icon.svg "inline") **Delete** above the table.
 1. Confirm the deletion.
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}
