@@ -457,7 +457,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 {/tabs}
 
-## Disconnecting disk from VM
+## {heading(Disconnecting disk from VM)[id=disconnect_disk]}
 
 {note:warn}
 
@@ -529,7 +529,7 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
 
 {/tabs}
 
-## Replacing root disk
+## {headind(Replacing root disk)[id=replace_disk]}
 
 Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_vm).
 
@@ -675,7 +675,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 {/tabs}
 
-## Deleting disk
+## {heading(Deleting disk)[id=delete_disk]}
 
 Before deleting [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
@@ -723,6 +723,12 @@ When you delete a disk, all its snapshots will be deleted.
 {/tab}
 
 {tab(OpenStack CLI)}
+
+{note:info}
+
+Note that a VM cannot operate without a root disk. To delete such a disk, first [replace the root disk](#replace_disk), [detach the old disk](#disconnect_disk) from the VM, and then [delete the old disk](#delete_disk).
+
+{/note}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
