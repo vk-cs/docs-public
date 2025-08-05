@@ -679,6 +679,8 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 Before deleting [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
+If the disk is the root disk, [replace it first](#replacing_root_disk).
+
 {note:err}
 
 When you delete a disk, all its snapshots will be deleted.
@@ -723,12 +725,6 @@ When you delete a disk, all its snapshots will be deleted.
 {/tab}
 
 {tab(OpenStack CLI)}
-
-{note:info}
-
-Note that a VM cannot operate without a root disk. To delete such a disk, first [replace the root disk](#replacing_root_disk), [disconnect the old disk](#disconnecting_disk_from_vm) from the VM, and then [delete the old disk](#deleting_disk).
-
-{/note}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
