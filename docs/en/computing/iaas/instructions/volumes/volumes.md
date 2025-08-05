@@ -457,7 +457,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 {/tabs}
 
-## {heading(Disconnecting disk from VM)[id=disconnect_disk]}
+## Disconnecting disk from VM
 
 {note:warn}
 
@@ -529,7 +529,7 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
 
 {/tabs}
 
-## {headind(Replacing root disk)[id=replace_disk]}
+## Replacing root disk
 
 Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_vm).
 
@@ -675,7 +675,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 {/tabs}
 
-## {heading(Deleting disk)[id=delete_disk]}
+## Deleting disk
 
 Before deleting [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
 
@@ -726,7 +726,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 {note:info}
 
-Note that a VM cannot operate without a root disk. To delete such a disk, first [replace the root disk](#replace_disk), [detach the old disk](#disconnect_disk) from the VM, and then [delete the old disk](#delete_disk).
+Note that a VM cannot operate without a root disk. To delete such a disk, first [replace the root disk](#replacing_root_disk), [disconnect the old disk](#disconnecting_disk_from_vm) from the VM, and then [delete the old disk](#deleting_disk).
 
 {/note}
 
