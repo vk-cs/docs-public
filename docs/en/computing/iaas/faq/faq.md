@@ -309,6 +309,13 @@ The VM disk size changes during operation, without restarting the VM.
 
 {/cut}
 
+{cut(Why is the Delete disk button missing?)}
+
+The **Delete disk** button is missing if the disk is connected to a VM.
+[Disconnect the disk](../instructions/volumes#disconnecting_disk_from_vm) from the VM, and the button will become available in the disk context menu and the disk page.
+
+{/cut}
+
 ## File storage
 
 {cut(What is file storage intended for?)}
