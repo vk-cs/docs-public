@@ -677,8 +677,6 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 ## Deleting disk
 
-Before deleting [disconnect the disk](#disconnecting_disk_from_vm) from the VM.
-
 {note:err}
 
 When you delete a disk, all its snapshots will be deleted.
@@ -689,8 +687,9 @@ When you delete a disk, all its snapshots will be deleted.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Open the page with the required list of disks.
+1. [Disconnect the disk](#disconnecting_disk_from_vm) from the VM.
+2. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+3. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Servers** → **Disks**.
 
@@ -700,7 +699,7 @@ When you delete a disk, all its snapshots will be deleted.
       2. In the list of virtual machines, click on the name of the VM whose disk you want to delete.
       3. On the VM page, go to the **Disks** tab.
 
-3. Delete the disk in one of the ways.
+4. Delete the disk in one of the ways.
 
    - Using group operations — for multiple disks:
 
@@ -718,19 +717,20 @@ When you delete a disk, all its snapshots will be deleted.
       2. On the disk page, go to the **General Information** tab.
       3. To the right above the table with the disk parameters, click on the trash icon.
 
-4. In the window that opens, check the disk name and click **Confirm**.
+5. In the window that opens, check the disk name and click **Confirm**.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. [Disconnect the disk](#disconnecting_disk_from_vm) from the VM.
+2. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting_disk_from_vm).
+3. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting_disk_from_vm).
 
-3. Copy the disk ID.
+4. Copy the disk ID.
 
-4. Delete the disk.
+5. Delete the disk.
 
    ```console
       openstack volume delete <disk ID>
