@@ -7,7 +7,7 @@ To connect to the object storage using the SDK:
    - [SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/index.html).
    - [SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/index.html).
    - [SDK for Ruby](https://docs.aws.amazon.com/sdk-for-ruby/index.html).
-   - [SDK for Python (Boto)](http://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
+   - [SDK for Python (Boto3)](http://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
    - [SDK for PHP](https://docs.aws.amazon.com/sdk-for-php/index.html).
    - [SDK for Go](https://docs.aws.amazon.com/sdk-for-go).
    - [Mobile SDK for iOS and Android](https://docs.amplify.aws).
