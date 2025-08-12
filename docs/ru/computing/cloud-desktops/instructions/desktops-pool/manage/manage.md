@@ -20,7 +20,7 @@
 
 После создания пула вы можете изменить любые его параметры, кроме имени, типа и зоны доступности.
 
-Чтобы изменить правила для группы безопасности пула, в личном кабинете или с помощью Openstack CLI [добавьте](/ru/networks/vnet/instructions/secgroups#dobavlenie_pravila) в группу новые правила и [удалите](/ru/networks/vnet/instructions/secgroups#udalenie_pravila) ненужные.
+Чтобы изменить правила для группы безопасности пула, в личном кабинете или с помощью Openstack CLI [добавьте](/ru/networks/vnet/instructions/secgroups#add_rule) в группу новые правила и [удалите](/ru/networks/vnet/instructions/secgroups#delete_rule) ненужные.
 
 Для изменения остальных параметров:
 
