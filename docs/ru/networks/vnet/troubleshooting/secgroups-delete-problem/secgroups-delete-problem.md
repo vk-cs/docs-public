@@ -18,7 +18,7 @@ Security Group f4ad1825-XXXX-XXXX-XXXX in use.
    ```console
    neutron port-list -c id -c name -c security_groups | grep <ID_ГРУППЫ_БЕЗОПАСНОСТИ> | awk '{print $2}'
    ```
-   Здесь `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — [идентификатор группы безопасности](/ru/networks/vnet/instructions/secgroups#prosmotr_spiska_grupp_bezopasnosti_i_informacii_o_nih), которую не получилось удалить.
+   Здесь `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — [идентификатор группы безопасности](/ru/networks/vnet/instructions/secgroups#view_secgroups), которую не получилось удалить.
 
 1. Отвяжите группу безопасности от каждого порта:
 
