@@ -1,6 +1,6 @@
 Вы можете управлять правилами балансировки выбранного балансировщика нагрузки: просматривать, добавлять, редактировать и удалять их.
 
-## Добавление правила
+## {heading(Добавление правила)[id=add_balancer_rule]}
 
 {tabs}
 
@@ -120,7 +120,7 @@ openstack loadbalancer <КОМАНДА> --help
 
 1. Чтобы создать правило балансировки:
 
-   1. [Получите идентификатор балансировщика нагрузки](#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih), для которого нужно создать правило.
+   1. [Получите идентификатор балансировщика нагрузки](/ru/networks/balancing/instructions/manage-lb#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih), для которого нужно создать правило.
 
    1. Создайте пул, в котором будут размещены потребители трафика:
 
@@ -155,7 +155,7 @@ openstack loadbalancer <КОМАНДА> --help
 
       Запишите идентификатор созданного пула (`id`).
 
-   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](../../../vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, в которой находятся виртуальные машины.
+   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, в которой находятся виртуальные машины.
 
       Эти виртуальные машины должны быть либо размещены в подсети, где находится балансировщик, для которого создается правило балансировки, либо доступны из этой подсети.
 
@@ -296,7 +296,7 @@ openstack loadbalancer <КОМАНДА> --help
 {/tab}
 {/tabs}
 
-## Редактирование правила
+## {heading(Редактирование правила)[id=edit_balancer_rule]}
 
 {tabs}
 
@@ -396,7 +396,7 @@ openstack loadbalancer <КОМАНДА> --help
 {/tab}
 {/tabs}
 
-## Удаление правила
+## {heading(Удаление правила)[id=delete_balancer_rule]}
 
 {tabs}
 

@@ -6,7 +6,7 @@
     - **Сеть**: имя целевой SDN Sprut.
     - Остальные параметры оставьте по умолчанию.
 
-1. [Создайте](/ru/networks/balancing/instructions/manage-lb#upravlenie_pravilami_balansirovki) правила балансировки и скопируйте их параметры с исходного балансировщика в SDN Neutron.
+1. [Создайте](/ru/networks/balancing/instructions/manage-rules#add_balancer_rule) правила балансировки и скопируйте их параметры с исходного балансировщика в SDN Neutron.
 1. [Удалите](/ru/networks/balancing/instructions/manage-lb#udalenie_balansirovshchika_nagruzki) исходный балансировщик нагрузки, если он вам больше не нужен.
 
 Также вы можете выполнить перенос балансировщиков следующими способами:
