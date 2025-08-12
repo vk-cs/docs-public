@@ -312,7 +312,7 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. В списке виртуальных машин нажмите на имя ВМ, которая была создана в качестве шлюза.
 1. Перейдите на вкладку **Сети**.
-1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ шлюза и [добавьте](/ru/networks/vnet/instructions/secgroups#dobavlenie_pravila) правила в группу безопасности для этой сети.
+1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ шлюза и [добавьте](/ru/networks/vnet/instructions/secgroups#add_rule) правила в группу безопасности для этой сети.
 
    {note:info}
 

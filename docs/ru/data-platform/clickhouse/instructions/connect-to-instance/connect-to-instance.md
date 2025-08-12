@@ -25,5 +25,5 @@
 
 * Проверьте корректность введенных данных при подключении.
 * [Убедитесь](/docs/ru/data-platform/clickhouse/instructions/manage#status), что экземпляр находится в статусе `Активно`.
-* [Убедитесь](/docs/networks/vnet/instructions/secgroups#prosmotr_spiska_grupp_bezopasnosti_i_informacii_o_nih), что [группы безопасности](/docs/ru/networks/vnet/instructions/secgroups), назначенные экземпляру, разрешают входящий трафик.
+* [Убедитесь](/docs/networks/vnet/instructions/secgroups#view_secgroups), что [группы безопасности](/docs/ru/networks/vnet/instructions/secgroups), назначенные экземпляру, разрешают входящий трафик.
 * [Ознакомьтесь с логами](/docs/ru/monitoring-services/logging/instructions/view-logs).
