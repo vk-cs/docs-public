@@ -30,22 +30,11 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
    Otherwise, click **Add**.
 
-1. In the **Configuration** step:
-
-   1. Select the cluster configuration **Dev environment** with the newest version of Kubernetes.
-
-      {note:info}
-
-      Note the version of Kubernetes selected. This is important for further installation of `kubectl`.
-
-      {/note}
-
-   1. Click the **Next Step** button.
-
 1. In the **Create cluster** step, set:
 
-   1. **Cluster name:** for example, `vk-cloud-k8s-quickstart`.
-   1. **Virtual machine type — Master:** `STD3-2-8`.
+   1. **Cluster name**: for example, `vk-cloud-k8s-quickstart`.
+   1. **Cluster type**: `Standard`.
+   1. **Kubernetes version**: the latest of the available versions.
    1. **Availability zone:** `Moscow (MS1)`.
 
       {note:info}
@@ -125,7 +114,7 @@ Install the following tools on the host:
 
   Download a version of `kubectl` that matches the version of the cluster, or differs by one minor version in any direction.
 
-  For example, for cluster version 1.23.6, `kubectl` versions 1.22, 1.23 and 1.24 are suitable.
+  For example, versions 1.31, 1.32, and 1.33 of `kubectl` are compatible with cluster version 1.32.1.
 
   See [Connecting to a cluster with kubectl](../connect/kubectl) for details.
 
