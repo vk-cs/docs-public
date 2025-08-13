@@ -98,13 +98,13 @@
 
       Успешный вывод версии свидетельствует о корректно работающих клиентах.
 
-   1. Создайте конфигурационный файл `client-ssl.properties` с содержимым:
+   1. Создайте конфигурационный файл `client-sasl-ssl.properties` с содержимым:
 
       ```ini
-      security.protocol=SSL
+      security.protocol=SASL_SSL
       ```
 
-      Этот файл содержит в себе [настройку](https://kafka.apache.org/documentation/#security_configclients), которая требует от клиента-производителя и клиента-потребителя аутентифицироваться в экземпляре сервиса с помощью протокола SSL.
+      Этот файл содержит в себе [настройку](https://kafka.apache.org/documentation/#security_sasl_scram), которая требует от клиента-производителя и клиента-потребителя аутентифицироваться в экземпляре сервиса с помощью протокола SASL_SSL.
 
    {/tab}
 
@@ -141,7 +141,7 @@
    ```console
    bin/kafka-console-consumer.sh \
      --bootstrap-server kafka-bootstrap.example.com:9093 \
-     --consumer.config client-ssl.properties \
+     --consumer.config client-sasl-ssl.properties \
      --topic test
    ```
 
@@ -153,7 +153,7 @@
    ```console
    bin/kafka-console-producer.sh \
      --broker-list kafka-bootstrap.example.com:9093 \
-     --producer.config client-ssl.properties
+     --producer.config client-sasl-ssl.properties
      --topic test
    ```
 
@@ -181,4 +181,4 @@
 
 Экземпляр Cloud Kafka [тарифицируется](../tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен, удалите его.
 
-Также вы можете удалить конфигурационный файл `client-ssl.properties` и загруженный дистрибутив Kafka.
+Также вы можете удалить конфигурационный файл `client-sasl-ssl.properties` и загруженный дистрибутив Kafka.
