@@ -114,7 +114,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
 
-      If there is no such group — [add it](../../../manage-node-group#add_worker_node_group).
+      If there is no such group — [add it](../../../manage-node-group#add_group).
 
    1. [Customise](../../../manage-node-group#labels_taints) for this node group, if it hasn't already been done:
 
@@ -315,7 +315,7 @@ The following uses the service name `ingress-nginx` and the `ingress-nginx` name
 
 {tab(kubectl)}
 
-1. [Make sure](../../../../connect/kubectl#checking_connection_to_cluster) that you can connect to the cluster using `kubectl`.
+1. [Make sure](../../../../connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.
 
 1. Run the command:
 

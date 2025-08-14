@@ -15,10 +15,10 @@
 
 Чтобы обеспечить работу с PV, в VK Cloud кластеры Kubernetes тесно интегрированы с платформой:
 
-- Кластер [поддерживает](#podderzhivaemye_tipy_hranilishch_vk_cloud) хранилища, предоставляемые платформой VK Cloud. Поддержка блочных хранилищ реализована с помощью [Cinder CSI](#rabota_s_container_storage_interface_csi).
-- В кластере доступны [преднастроенные классы хранения](#prednastroennye_klassy_hraneniya) (storage class) для блочного хранилища, которые реализуют различные [политики освобождения постоянных томов](#dostupnye_politiki_osvobozhdeniya_postoyannyh_tomov).
+- Кластер [поддерживает](#supported_storage_types) хранилища, предоставляемые платформой VK Cloud. Поддержка блочных хранилищ реализована с помощью [Cinder CSI](#csi).
+- В кластере доступны [преднастроенные классы хранения](#storage_classes) (storage class) для блочного хранилища, которые реализуют различные [политики освобождения постоянных томов](#reclaim_policies).
 
-## Поддерживаемые типы хранилищ VK Cloud
+## {heading(Поддерживаемые типы хранилищ VK Cloud)[id=supported_storage_types]}
 
 - Блочные хранилища:
 
@@ -28,7 +28,7 @@
 
 - [Файловые хранилища](https://www.snia.org/education/what-is-nas), подключаемые по протоколам [NFS](https://www.ibm.com/docs/en/aix/7.1?topic=management-network-file-system) и [CIFS](https://learn.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview).
 
-## Работа с Container Storage Interface (CSI)
+## {heading(Работа с Container Storage Interface (CSI))[id=csi]}
 
 В VK Cloud кластеры Kubernetes используют [OpenStack Cinder](https://docs.openstack.org/cinder/latest/) для интеграции с блочными хранилищами.
 
@@ -52,7 +52,7 @@
   - При динамической подготовке тома будет автоматически создан соответствующий этому тому диск в VK Cloud.
   - Если для тома задана политика освобождения `Delete`, то после удалении PVC будет удален связанный с ним том и соответствующий этому тому диск в VK Cloud.
 
-## Доступные политики освобождения постоянных томов
+## {heading(Доступные политики освобождения постоянных томов)[id=reclaim_policies]}
 
 Для PV можно задать [политику освобождения](../../reference/pvs-and-pvcs#4_osvobozhdenie_916d4ba3) (reclaim policy), которая сработает при удалении связанного с этим томом PVC:
 
@@ -70,7 +70,7 @@
 
   {/note}
 
-## Преднастроенные классы хранения
+## {heading(Преднастроенные классы хранения)[id=storage_classes]}
 
 При использовании [динамической подготовки](../../reference/pvs-and-pvcs#1_podgotovka_2a52d941) постоянного тома необходимо указать класс хранения. Класс хранения по умолчанию не настроен в кластерах Cloud Containers. Можно выбрать класс по умолчанию самостоятельно, или явно указывать нужный класс явно при создании PVC.
 
