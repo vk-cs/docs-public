@@ -47,21 +47,6 @@
 | Master-Replica 
 | Кластер
 
-| PostgresPro Enterprise
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
-
-| PostgresPro Enterprise 1C 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-
-| PostgresPro Standard
-| ![](/ru/assets/check.svg "inline") 
-| В разработке 
-| В разработке
-
 | MySQL
 | ![](/ru/assets/check.svg "inline") 
 | ![](/ru/assets/check.svg "inline") 
