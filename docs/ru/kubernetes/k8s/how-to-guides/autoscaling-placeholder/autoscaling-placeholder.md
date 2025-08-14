@@ -12,7 +12,7 @@
 
 1. [Создайте](../../instructions/create-cluster) кластер, если это еще не сделано.
 1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru) к кластеру при помощи `kubectl`.
+1. [Подключитесь](../../connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
 1. Подготовьте данные о CPU и RAM масштабируемого узла:
    
    1. В терминале с сессией подключения к кластеру выполните команду:

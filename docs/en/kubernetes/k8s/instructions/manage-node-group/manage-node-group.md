@@ -4,7 +4,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 {/note}
 
-## Add worker node group
+## {heading(Add worker node group)[id=add_group]}
 
 {tabs}
 
@@ -81,9 +81,9 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 {/tabs}
 
-## Customize scaling options
+## {heading(Customize scaling options)[id=scaling_options]}
 
-You can change the size of a group of worker nodes manually or configure auto scaling.
+You can change the size of a group of worker nodes manually or configure automatic scaling.
 
 These operations are described in detail in [Scaling cluster nodes](../scale) section.
 
@@ -200,7 +200,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 
 See [Labels and taints](../../reference/labels-and-taints) for details.
 
-## Configure update settings
+## {heading(Configure update settings)[id=configure_node_update]}
 
 To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update, specify the maximum percentage of unavailable nodes for the node group before [updating cluster](../update).
 
@@ -262,7 +262,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 
 More details about the update procedure in [Cluster version update](../../concepts/update).
 
-## Delete node group
+## {heading(Delete node group)[id=delete_node_group]}
 
 This operation can only be performed when the cluster is running.
 
