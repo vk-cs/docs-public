@@ -33,17 +33,11 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
   This approach saves up to 60% of computing resources.
 
-- Creating distributed installations within [VK Cloud regions](../../../../tools-for-using-services/account/concepts/regions): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
+- Creating distributed installations within [VK Cloud regions](../../../../tools-for-using-services/account/concepts/regions) via creating [regional clusters](/en/kubernetes/k8s/concepts/architecture#cluster_topologies): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
 
 - Integration with the [storage subsystem](../storage) and [networking subsystem](../network) of the VK Cloud platform.
 
 - One-click rolling update of clusters with no downtime. This applies to both minor and major versions of Kubernetes.
-
-  {note:info}
-
-  Cluster updates are available starting with cluster version `1.17` and higher.
-
-  {/note}
 
 - Ensuring security at all stages of cluster operation:
 
