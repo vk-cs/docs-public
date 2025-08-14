@@ -41,7 +41,7 @@
 
 Для динамической подготовки необходимо выполнение двух условий:
 
-- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Cloud Containers уже содержат [преднастроенные классы хранения](../../concepts/storage#prednastroennye_klassy_hraneniya).
+- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Cloud Containers уже содержат [преднастроенные классы хранения](../../concepts/storage#storage_classes).
 
 - Для PVC не должно быть найдено подходящих PV, которые уже существуют.
 
@@ -50,7 +50,7 @@
 - класс хранения, явно заданный в PVC;
 - класс хранения по умолчанию, если класс не задан в PVC явно.
 
-В кластерах Cloud Containers класс хранения по умолчанию [не настроен](../../concepts/storage#prednastroennye_klassy_hraneniya). Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
+В кластерах Cloud Containers класс хранения по умолчанию [не настроен](../../concepts/storage#storage_classes). Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
 
 ### 2. Связывание
 
@@ -111,15 +111,15 @@
   {note:warn}
 
   Используйте эту политику и реализующие ее классы хранения с осторожностью: возможна потеря данных.
-  В VK Cloud, благодаря [интеграции с Cinder CSI](../../concepts/storage#rabota_s_container_storage_interface_csi), при удалении PV также будет удален связанный облачный диск VK Cloud.
+  В VK Cloud, благодаря [интеграции с Cinder CSI](../../concepts/storage#csi), при удалении PV также будет удален связанный облачный диск VK Cloud.
 
   {/note}
 
-В кластерах Cloud Containers выбранный тип хранилища влияет на [доступные политики освобождения](../../concepts/storage#dostupnye_politiki_osvobozhdeniya_postoyannyh_tomov).
+В кластерах Cloud Containers выбранный тип хранилища влияет на [доступные политики освобождения](../../concepts/storage#reclaim_policies).
 
 ## Смотрите также
 
 - [Как устроено хранилище в Cloud Containers](../../concepts/storage).
-- [Список преднастроенных классов хранения](../../concepts/storage#prednastroennye_klassy_hraneniya).
+- [Список преднастроенных классов хранения](../../concepts/storage#storage_classes).
 - [Сценарий использования](../../how-to-guides/storage), демонстрирующий использование различных PVC.
 - [Официальную документацию Kubernetes](https://kubernetes.io/docs/concepts/storage/persistent-volumes) с более подробной информацией про PVC и PV.

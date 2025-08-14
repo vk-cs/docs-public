@@ -17,7 +17,7 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 1. Examine [update procedure](../../concepts/update).
 1. Back up the cluster you plan to update, for example, using Velero.
 1. Deploy the new cluster from the backup which is identical to the one you plan to update. Update it and verify that all cluster data and applications remain available, and applications behave as expected.
-1. [Set threshold](../manage-node-group#configure_update_settings) of the number of unavailable worker nodes in the node groups.
+1. [Set threshold](../manage-node-group#configure_node_update) of the number of unavailable worker nodes in the node groups.
 
 ## Do update
 

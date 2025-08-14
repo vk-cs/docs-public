@@ -16,7 +16,7 @@ Consider the total [maximum system requirements](../../../../concepts/addons-and
    1. Click the name of the cluster.
    1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which addons will be hosted. 
    
-      If there is no such group, [add it](../../../manage-node-group#add_worker_node_group).
+      If there is no such group, [add it](../../../manage-node-group#add_group).
 
    1. (Optional) If nodes with GPUs should only run processes that require GPU resources, [set](../../../manage-node-group#labels_taints) a taint for this node group:
 

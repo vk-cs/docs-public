@@ -26,7 +26,7 @@
 
 1. [Убедитесь](../instructions/addons/manage-addons#prosmotr_addonov), что аддон мониторинга (`kube-prometheus-stack`) [установлен](../instructions/addons/advanced-installation/install-advanced-monitoring) в кластере.
 
-1. [Убедитесь](../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. [Убедитесь](../connect/kubectl#check_connection), что вы можете подключиться к кластеру с помощью `kubectl`.
 
 1. Получите доступ к веб-интерфейсу Grafana:
 

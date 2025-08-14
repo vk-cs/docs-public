@@ -1,4 +1,4 @@
-These settings are set when [creating a cluster](../../create-cluster) or when [adding a worker node group](../../manage-node-group#add_worker_node_group) to an existing cluster:
+These settings are set when [creating a cluster](../../create-cluster) or when [adding a worker node group](../../manage-node-group#add_group) to an existing cluster:
 
 - **Name groups:** must start with a letter. Can only consist of lowercase Latin letters, numbers, and hyphens `-` as a separator.
 - Worker node settings:

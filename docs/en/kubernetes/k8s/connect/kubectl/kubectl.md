@@ -211,11 +211,11 @@ The way to connect to the cluster depends on its IP address:
    1. Check if you have the [required role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes) to work with Kubernetes clusters. If you do not have one, ask the project owner or superadmin to add it for you.
    1. [Activate](/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access) API access.
 
-## Connecting to cluster
+## {heading(Connecting to cluster)[id=connect]}
 
 {include(/en/_includes/_kubeconfig.md)}
 
-## Checking connection to cluster
+## {heading(Checking connection to cluster)[id=check_connection]}
 
 {tabs}
 {tab(Version of Kubernetes 1.23 and higher)}                                                        
