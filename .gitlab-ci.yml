@@ -15,7 +15,7 @@ variables:
   VKCS_STAGE_DEPLOY_MODE: auto
   VKCS_DEVINT_DEPLOY_MODE: auto
   VKCS_DEPLOY_DEVINT_PLAYBOOK: ansible-openstack/playbooks/helm-new-help.yml
-  VKCS_RELEASE_BRANCH: master
+  VKCS_RELEASE_BRANCH: VKCSDEV-21962
   VKCS_RELEASES_ENABLED: "true"
 
   # Github sync variables
