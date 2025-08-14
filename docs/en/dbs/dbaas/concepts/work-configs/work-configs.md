@@ -45,21 +45,6 @@ An instance in the **Cluster** configuration cannot be started, restarted, or st
 | Master-Replica 
 | Cluster
 
-| PostgresPro Enterprise
-| ![](/en/assets/check.svg "inline") 
-| ![](/en/assets/check.svg "inline") 
-| ![](/en/assets/check.svg "inline") 
-
-| PostgresPro Enterprise 1C 
-| ![](/en/assets/check.svg "inline") 
-| ![](/en/assets/check.svg "inline") 
-| ![](/en/assets/check.svg "inline") 
-
-| PostgresPro Standard
-| ![](/en/assets/check.svg "inline") 
-| In development
-| In development
-
 | MySQL
 | ![](/en/assets/check.svg "inline") 
 | ![](/en/assets/check.svg "inline") 
