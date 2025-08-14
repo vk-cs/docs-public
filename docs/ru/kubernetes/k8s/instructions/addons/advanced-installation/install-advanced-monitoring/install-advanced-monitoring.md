@@ -90,7 +90,7 @@
 
    1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-      Если такой группы нет — [добавьте ее](../../../manage-node-group#dobavit_gruppu_worker_uzlov).
+      Если такой группы нет — [добавьте ее](../../../manage-node-group#add_group).
 
    1. [Задайте](../../../manage-node-group#labels_taints) для этой группы узлов, если это еще не сделано:
 
@@ -348,7 +348,7 @@ grafana:
 
 {tab(kubectl)}
 
-1. [Убедитесь](../../../../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. [Убедитесь](../../../../connect/kubectl#check_connection), что вы можете подключиться к кластеру с помощью `kubectl`.
 
 1. Получите пароль для входа в Grafana из секрета Kubernetes:
 
