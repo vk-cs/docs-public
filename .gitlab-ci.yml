@@ -3,6 +3,7 @@ include:
   - project: infra/common/ci-templates
     file:
       - pipelines/docs-v2/pipe.gitlab-ci.yml
+    ref: VKCSDEV-21962
 
 
 variables:
