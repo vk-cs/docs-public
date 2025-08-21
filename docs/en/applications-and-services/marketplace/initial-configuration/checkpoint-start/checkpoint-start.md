@@ -29,7 +29,7 @@ By using the Check Point CloudGuard Network service, you agree to license agreem
 
 {note:warn}
 
-Check Point CloudGuard Network is provided under the BYOL (Bring Your Own License) model. Email the Check Point partner at [cpcloud@rrc.ru](mailto:cpcloud@rrc.ru) to purchase a license to use the service.
+Check Point CloudGuard Network is provided under the BYOL (Bring Your Own License) model. Email the Check Point partner at [cpcloud@proway.tech](mailto:cpcloud@proway.tech) to purchase a license to use the service.
 
 {/note}
 
