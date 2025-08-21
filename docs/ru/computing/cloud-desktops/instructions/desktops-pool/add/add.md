@@ -7,7 +7,7 @@
 ## {heading(Подготовительные шаги)[id=preparatory_steps]}
 
 1. Убедитесь, что [подключение к сервису](../../config) настроено.
-1. Если хотите использовать для создания ВМ пула собственный образ, [подготовьте](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) его.
+1. Если для создания пула виртуальных машин вы хотите использовать собственный образ, [подготовьте](/ru/computing/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/computing/cloud-desktops/how-to-guides/check-desktop-image) его.
 1. Если вам нужны рабочие столы с графическими процессорами GPU, оставьте заявку на подключение нужного шаблона конфигурации на [сайте VK Cloud](https://cloud.vk.com/cloud-gpu) или через [техническую поддержку](/ru/contacts):
 
     {include(/ru/_includes/_gpu_connect.md)}
