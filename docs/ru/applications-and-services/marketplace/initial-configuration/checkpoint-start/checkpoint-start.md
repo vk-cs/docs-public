@@ -29,7 +29,7 @@
 
 {note:warn}
 
-Check Point CloudGuard Network предоставляется по модели BYOL (Bring Your Own Licence). Напишите партнеру Check Point на почту cpcloud@proway.tech](mailto:cpcloud@proway.tech) для приобретения лицензии на использование сервиса.
+Check Point CloudGuard Network предоставляется по модели BYOL (Bring Your Own Licence). Напишите партнеру Check Point на почту [cpcloud@proway.tech](mailto:cpcloud@proway.tech) для приобретения лицензии на использование сервиса.
 
 {/note}
 
