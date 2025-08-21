@@ -1,6 +1,6 @@
 ## Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) на сайте в VK Cloud, если еще не сделали этого.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud на сайте или перейдите в [личный кабинет](https://msk.cloud.vk.com/app).
 1. Убедитесь, что баланс счета положительный, а [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) достаточно для развертывания шаблона конфигурации GPU в проекте.
 
 ## {heading(Подключение шаблона конфигурации)[id=connect_flavor]}
