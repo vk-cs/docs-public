@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/computing/cloud-desktops/concepts/glossary"
+                    "link": "/ru/computing/cloud-desktops/concepts/about"
                 },
                 {
-                    "link": "/ru/computing/cloud-desktops/concepts/about"
+                    "link": "/ru/computing/cloud-desktops/concepts/nets-config"
                 },
                 {
                     "link": "/ru/computing/cloud-desktops/tariffication"

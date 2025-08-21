@@ -92,7 +92,7 @@ After completing all the steps of the quick start, you will:
 
     In the example, the IP address is `99.166.240.100`.
 
-1. [Download and install](/ru/computing/cloud-desktops/connect/install-vk-client) the client for accessing remote desktops.
+1. [Download and install](/ru/computing/cloud-desktops/user-instructions#install_client) the client for accessing remote desktops.
 1. Connect to the pools:
 
    1. Open the installed client.
