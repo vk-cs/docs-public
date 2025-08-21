@@ -1,4 +1,4 @@
-Сетевую конфигурацию сервиса Cloud Desktop можно настроить [автоматически](../../../concepts/about#automatic_net_setup) или [вручную](../../../concepts/about#manual_net_setup).
+Сетевую конфигурацию сервиса Cloud Desktop можно настроить [автоматически](../../../concepts/about#automatic_net_setup) или [вручную](../../../concepts/nets-config#manual_net_setup).
 
 ## {heading(Подготовительные шаги)[id=preparatory_steps]}
 
@@ -9,7 +9,7 @@
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети. Если сети еще нет, [создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) ее.
-1. Нажмите на имя нужной подсети. Если нужной подсети еще нет, [создайте](/ru/networks/vnet/instructions/net#sozdanie_podseti) ее с учетом [требований к количеству портов](../../../concepts/about#ports_number).
+1. Нажмите на имя нужной подсети. Если нужной подсети еще нет, [создайте](/ru/networks/vnet/instructions/net#sozdanie_podseti) ее с учетом [требований к количеству портов](../../../concepts/nets-config#ports_number).
 1. На вкладке **Порты** скопируйте IP-адреса портов в зависимости от [SDN](/ru/networks/vnet/concepts/sdn) сети:
 
    - для `Neutron` — IP-адреса DHCP-портов;
