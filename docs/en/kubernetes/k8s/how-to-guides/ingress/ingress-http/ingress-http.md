@@ -351,7 +351,7 @@ The following will demonstrate how to create an Ingress resource that works excl
 
    Receiving such responses means that the Ingress controller is configured correctly:
 
-   - interacts with VK Cloud HTTP load balancer (which terminates SSL\TLS sessions);
+   - interacts with VK Cloud HTTP load balancer (which terminates SSL/TLS sessions);
    - provides access to services corresponding to the deployed applications.
 
    {/tab}
@@ -374,7 +374,7 @@ The following will demonstrate how to create an Ingress resource that works excl
 
    Receiving such responses means that the Ingress controller is configured correctly:
 
-   - interacts with VK Cloud HTTP load balancer (which terminates SSL\TLS sessions);
+   - interacts with VK Cloud HTTP load balancer (which terminates SSL/TLS sessions);
    - provides access to services corresponding to the deployed applications.
 
    {/tab}

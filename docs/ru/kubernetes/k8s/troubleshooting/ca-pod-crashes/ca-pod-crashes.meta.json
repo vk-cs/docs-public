@@ -1,0 +1,11 @@
+{
+  "title": "Агент автоматического масштабирования не может пройти аутентификацию в OpenStack или API Kubernetes",
+  "pageDescription": "Что делать, если у агента автоматического масштабирования под в статусе CrashLoopBackOff, из-за чего он не может пройти аутентификацию в OpenStack или API Kubernetes",
+  "shortDescription": "Что делать, если у агента автоматического масштабирования под в статусе CrashLoopBackOff, из-за чего он не может пройти аутентификацию в OpenStack или API Kubernetes",
+  "metaTitle": "Агент автоматического масштабирования не может пройти аутентификацию в OpenStack или API Kubernetes",
+  "metaDescription": "Что делать, если у агента автоматического масштабирования под в статусе CrashLoopBackOff, из-за чего он не может пройти аутентификацию в OpenStack или API Kubernetes",
+  "sectionTitle": "Агент автоматического масштабирования не может пройти аутентификацию в OpenStack или API Kubernetes",
+  "icon": "",
+  "weight": 4,
+  "uuid": ""
+}
