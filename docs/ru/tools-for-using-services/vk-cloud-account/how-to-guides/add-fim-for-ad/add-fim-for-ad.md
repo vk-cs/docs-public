@@ -17,7 +17,7 @@
 
 ## 1. Создайте федерацию удостоверений в VK Cloud
 
-Операции по созданию федерации удостоверений VK Cloud доступны только пользователям с [ролью](../../../account/concepts/rolesandpermissions) владельца проекта.
+Операции по созданию федерации удостоверений VK Cloud доступны только пользователям с [ролью](/ru/tools-for-using-services/account/concepts/rolesandpermissions) владельца проекта.
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений**.
@@ -36,36 +36,36 @@
 1. [Создайте отношение доверия](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata) с помощью метаданных федерации. Используйте XML-файл с метаданными, полученный при создании федерации.
 1. Настройте соответствие между атрибутами пользователя и типами исходящих утверждений AD FS (Claims Mapping), для этого [добавьте](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/checklist--creating-claim-rules-for-a-relying-party-trust) правила:
 
-   - Преобразование входящего утверждения ([Transform an Incoming Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-transform-an-incoming-claim)):
+    - Преобразование входящего утверждения ([Transform an Incoming Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-transform-an-incoming-claim)):
 
-      - **Type**: `Transform an Incoming Claim`.
-      - **Claim rule name**: `Name ID`.
-      - **Incomming claim type**: `Windows account name`.
-      - **Outgoing claim type**: `Name ID`.
-      - **Outgoing name ID format**: `Windows Qualified Domain Name`.
-   - Отправка атрибутов пользователя ([Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims)):
+        - **Type**: `Transform an Incoming Claim`.
+        - **Claim rule name**: `Name ID`.
+        - **Incomming claim type**: `Windows account name`.
+        - **Outgoing claim type**: `Name ID`.
+        - **Outgoing name ID format**: `Windows Qualified Domain Name`.
+    - Отправка атрибутов пользователя ([Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims)):
 
-      - **Type**: `Send LDAP Attributes as Claims`.
-      - **Claim rule name**: `Attributes`.
-      - **Attribute store**: `Active Directory`.
-      - **Mapping of LDAP attributes to outgoing claim types**: установите следующие соответствия:
+        - **Type**: `Send LDAP Attributes as Claims`.
+        - **Claim rule name**: `Attributes`.
+        - **Attribute store**: `Active Directory`.
+        - **Mapping of LDAP attributes to outgoing claim types**: установите следующие соответствия:
 
-         - `E-Mail-Adresses` → `E-Mail Address`.
-         - `SAM-Account-Name` → `Subject Name`.
-         - `Given-Name` → `Name`.
-         - `Surname` → `Surname`.
-         - `Telephone-Number` → `phone_number`.
-   - Отправка членства в группах ([Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim)):
+            - `E-Mail-Adresses` → `E-Mail Address`.
+            - `SAM-Account-Name` → `Subject Name`.
+            - `Given-Name` → `Name`.
+            - `Surname` → `Surname`.
+            - `Telephone-Number` → `phone_number`.
+    - Отправка членства в группах ([Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim)):
 
-      - **Type**: `Send Group Membership as a Claim`.
-      - **Claim rule name**: `<НАЗВАНИЕ_ГРУППЫ>` (например, `Domain Users`).
-      - **User’s group**: `<ДОМЕН>\<НАЗВАНИЕ_ГРУППЫ>`.
-      - **Outgoing claim type**: `Group`.
-      - **Outgoing claim value**: `<НАЗВАНИЕ_ГРУППЫ>`.
+        - **Type**: `Send Group Membership as a Claim`.
+        - **Claim rule name**: `<НАЗВАНИЕ_ГРУППЫ>` (например, `Domain Users`).
+        - **User’s group**: `<ДОМЕН>\<НАЗВАНИЕ_ГРУППЫ>`.
+        - **Outgoing claim type**: `Group`.
+        - **Outgoing claim value**: `<НАЗВАНИЕ_ГРУППЫ>`.
 
 ## 3. Настройте связь групп и ролей в VK Cloud
 
-Операции по настройке связи групп AD FS и ролей VK Cloud доступны только следующим [ролям](../../../account/concepts/rolesandpermissions) личного кабинета: владельцу, суперадминистратору и администратору пользователей (IAM). Просмотр связей доступен также администратору проекта и наблюдателю.
+Операции по настройке связи групп AD FS и ролей VK Cloud доступны только следующим [ролям](/ru/tools-for-using-services/account/concepts/rolesandpermissions) личного кабинета: владельцу, суперадминистратору и администратору пользователей (IAM). Просмотр связей доступен также администратору проекта и наблюдателю.
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений**.
@@ -73,16 +73,16 @@
 1. Нажмите на название проекта, для которого настраивается федерация удостоверений.
 1. Добавьте группы, которые используете в Active Directory:
 
-   1. Нажмите кнопку **Добавить**. Если на странице уже есть созданные группы, нажмите кнопку **Добавить группу**.
-   1. Настройте группу:
+    1. Нажмите кнопку **Добавить**. Если на странице уже есть созданные группы, нажмите кнопку **Добавить группу**.
+    1. Настройте группу:
 
-      - **Имя группы**: укажите название группы Active Directory, в которой состоит пользователь. Название должно совпадать с полем **Outgoing claim value** правил AD FS, настроенных ранее.
-      - **Разрешения**:
-         - Выберите **Проект**, чтобы связать группу и роли в рамках одного проекта. В разных проектах можно связать одну и ту же группу с разными ролями, что позволит разграничить уровень доступа федеративного пользователя к проектам.
-         - Выберите **Домен**, чтобы связать группу и роли во всех проектах одного владельца и предоставить федеративному пользователю единый уровень доступа к ним. Разрешение **Домен** доступно только владельцу проекта.
-      - **Роли группы**: выберите те [роли VK Cloud](../../../account/concepts/rolesandpermissions), которые соответствуют вашей матрице доступа для создаваемой группы.
+        - **Имя группы**: укажите название группы Active Directory, в которой состоит пользователь. Название должно совпадать с полем **Outgoing claim value** правил AD FS, настроенных ранее.
+        - **Разрешения**:
+            - Выберите **Проект**, чтобы связать группу и роли в рамках одного проекта. В разных проектах можно связать одну и ту же группу с разными ролями, что позволит разграничить уровень доступа федеративного пользователя к проектам.
+            - Выберите **Домен**, чтобы связать группу и роли во всех проектах одного владельца и предоставить федеративному пользователю единый уровень доступа к ним. Разрешение **Домен** доступно только владельцу проекта.
+        - **Роли группы**: выберите те [роли VK Cloud](/ru/tools-for-using-services/account/concepts/rolesandpermissions), которые соответствуют вашей матрице доступа для создаваемой группы.
 
-   1. Нажмите кнопку **Добавить**.
+    1. Нажмите кнопку **Добавить**.
 
 ## 4. Проверьте возможность входа через федерацию
 

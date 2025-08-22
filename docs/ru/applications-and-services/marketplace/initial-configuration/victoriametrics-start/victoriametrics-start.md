@@ -2,11 +2,11 @@
 
 Инструкция поможет развернуть сервис VictoriaMetrics (на примере версии 1.93.9) на ВМ в VK Cloud и настроить сбор метрик.
 
-Используя VictoriaMetrics, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/intro/start/legal/marketplace) и [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf).
+Используя VictoriaMetrics, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/start/legal/vk/marketplace) и [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf).
 
 Чтобы развернуть сервис VictoriaMetrics в проекте:
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть, если она не была создана ранее.
 1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещены один или несколько серверов с развернутым сервисом, отключите опцию **Приватный DNS**.
 1. [Разверните](../../instructions/pr-instance-add) сервис в проекте, выбрав подходящий тарифный план (**Single**, **Cluster Mini**, **Cluster Maxi**):

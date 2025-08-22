@@ -20,11 +20,11 @@
 1. Создадите резервную инфраструктуру с использованием плана резервного восстановления.
 1. Восстановите резервируемую инфраструктуру в VK Cloud.
 
-Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
+Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
 1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
 1. [Подключите](../../instructions/pr-instance-add) сервис Hystax Acura Disaster Recovery.

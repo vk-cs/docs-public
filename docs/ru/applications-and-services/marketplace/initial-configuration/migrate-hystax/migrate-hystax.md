@@ -12,11 +12,11 @@
 
 Данная инструкция поможет мигрировать ваши ресурсы в VK Cloud с помощью сервиса Hystax Acura Migration на примере ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
-Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use).
+Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use).
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
 1. [Подключите](/ru/applications-and-services/marketplace/instructions/pr-instance-add) сервис Hystax Acura Migration.
 
@@ -156,7 +156,7 @@
 
     - `<ИМЯ_ВМ>` — имя, которое будет присвоено виртуальной машине в VK Cloud.
     - `flavor` — имя или ID [шаблона конфигурации](/ru/computing/iaas/concepts/vm/flavor) для ВМ. Уточните название с помощью команды `openstack flavor list`.
-    - `availability_zone` — имя [зоны доступности](/ru/intro/start/concepts/architecture#az), в которой будет развернута ВМ.
+    - `availability_zone` — имя [зоны доступности](/ru/start/concepts/architecture#az), в которой будет развернута ВМ.
     - `security_groups` — список имен или ID [групп безопасности](/ru/networks/vnet/instructions/secgroups) для `Ubuntu-MR`.
     - `id` — внутренний ID виртуальной машины, сгенерированный Hystax на предыдущем шаге.
     - `custom_image_metadata` — пользовательские метаданные для ВМ.

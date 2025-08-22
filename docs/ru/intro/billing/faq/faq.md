@@ -2,13 +2,13 @@
 
 {cut(Как получить бонусы за регистрацию в личном кабинете?)}
 
-[Бонусы](../concepts/balance#bonuses) начисляются при регистрации новой учетной записи. Начисление бонусов происходит после прохождения всех этапов [регистрации](/ru/intro/start/account-registration).
+[Бонусы](../concepts/balance#bonuses) начисляются при регистрации новой учетной записи. Начисление бонусов происходит после прохождения всех этапов [регистрации](/ru/intro/onboarding/account).
 
 Бонусы не начисляются при создании новых проектов существующими пользователями и при входе нового пользователя в проект по приглашению.
 
 {note:warn}
 
-В некоторых случаях ранее начисленные бонусы могут быть аннулированы или в их начислении может быть отказано. Подробнее в [пункте 8.3 Условий использования платформы VK Cloud](/ru/intro/start/legal/digital-cloud/legal-terms#8_oplata_uslug_kompanii).
+В некоторых случаях ранее начисленные бонусы могут быть аннулированы или в их начислении может быть отказано. Подробнее в [пункте 8.3 Условий использования платформы VK Cloud](/ru/start/legal/digital-cloud/legal-terms#8_oplata_uslug_kompanii).
 
 {/note}
 
@@ -51,7 +51,7 @@ VK Cloud ежеминутно фиксирует потребление ресу
 [Баланс](../concepts/balance) отображается, если выполнены два условия:
 
 - Ваша [роль](/ru/tools-for-using-services/account/concepts/rolesandpermissions) в проекте — владелец, суперадминистратор или администратор биллинга.
-- Завершена [процедура регистрации](/ru/intro/start/account-registration) на платформе: привязаны телефон, почта и карта для оплаты.
+- Завершена [процедура регистрации](/ru/intro/onboarding/account) на платформе: привязаны телефон, почта и карта для оплаты.
 
 {/cut}
 
@@ -263,8 +263,8 @@ VK Cloud ежеминутно фиксирует потребление ресу
 
 При помощи VK Cloud вы можете работать с инфраструктурой сервисов, которая физически развернута:
 
-- На территории России — [зарегистрируйте](/ru/intro/start/account-registration) учетную запись в [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва по адресу https://cloud.vk.com.
-- На территории Казахстана — [зарегистрируйте](/ru/intro/start/account-registration) учетную запись в [регионе](/ru/tools-for-using-services/account/concepts/regions) Казахстан по адресу https://vkcloud.kz или https://kz.cloud.vk.com/.
+- На территории России — [зарегистрируйте](/ru/intro/onboarding/account) учетную запись в [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва по адресу https://cloud.vk.com.
+- На территории Казахстана — [зарегистрируйте](/ru/intro/onboarding/account) учетную запись в [регионе](/ru/tools-for-using-services/account/concepts/regions) Казахстан по адресу https://vkcloud.kz или https://kz.cloud.vk.com/.
 
 В каждом регионе для нерезидентов РФ есть свои особенности работы:
 

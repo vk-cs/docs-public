@@ -10,11 +10,11 @@ Qdrant — это универсальная векторная СУБД и API-
 
 Qdrant предоставляет RESTful API и клиентские библиотеки на популярных языках программирования, что упрощает интеграцию с приложениями.
 
-Используя Qdrant, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/intro/start/legal/marketplace) и [Qdrant](https://github.com/qdrant/qdrant/blob/master/LICENSE).
+Используя Qdrant, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/start/legal/vk/marketplace) и [Qdrant](https://github.com/qdrant/qdrant/blob/master/LICENSE).
 
 Чтобы развернуть сервис Qdrant в проекте:
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу Qdrant из интернета:
 
     1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
@@ -38,7 +38,7 @@ Qdrant предоставляет RESTful API и клиентские библи
     1. Укажите параметры виртуальной машины, на которой будет развернут инстанс сервиса:
 
         - **Сеть**: выберите сеть, где будет размещена ВМ с развернутым сервисом. Если вы указали тип размещения `external`, выберите сеть с доступом в интернет и подсеть, для которой отключена опция **Приватный DNS**.
-        - **Зона доступности**: выберите [ЦОД](/ru/intro/start/concepts/architecture#az), где будет запущена ВМ.
+        - **Зона доступности**: выберите [ЦОД](/ru/start/concepts/architecture#az), где будет запущена ВМ.
         - **Тип виртуальной машины**: выберите [предустановленную конфигурацию ВМ](/ru/computing/iaas/concepts/vm/flavor).
 
     1. Укажите параметры системного диска и диска с данными.

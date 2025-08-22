@@ -25,7 +25,7 @@
 1. Настроите политику безопасности.
 1. Ознакомитесь с вариантами резервного копирования.
 
-Используя сервис Check Point CloudGuard Network, вы соглашаетесь с лицензионным соглашением [магазина приложений](/ru/intro/start/legal/marketplace), а также с [лицензионным соглашением Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
+Используя сервис Check Point CloudGuard Network, вы соглашаетесь с лицензионным соглашением [магазина приложений](/ru/start/legal/vk/marketplace), а также с [лицензионным соглашением Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
 
 {note:warn}
 
@@ -35,7 +35,7 @@ Check Point CloudGuard Network предоставляется по модели 
 
 ## {heading(Подготовительные шаги)[id=preparatory_steps]}
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
 1. Спланируйте топологию сети и адресацию: продумайте, будут ли виртуальный шлюз и сервер управления находиться в одной сети или в разных. По умолчанию при развертывании шлюза и сервера управления используется одна и та же сеть.
 1. (Опционально) Оцените необходимый размер диска ВМ, на которой будет развернут сервер управления Check Point CloudGuard Network, в зависимости от приобретенных лицензий Check Point.
 

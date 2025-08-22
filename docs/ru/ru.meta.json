@@ -3,7 +3,7 @@
   "serviceGroupLinks": [],
   "intro": [
     {
-      "partialPath": "/ru/intro/start",
+      "partialPath": "/ru/intro/onboarding",
       "icon": "/ru/assets/start-icon.svg",
       "iconMobile": "/ru/assets/start-icon-mobile.svg"
     },

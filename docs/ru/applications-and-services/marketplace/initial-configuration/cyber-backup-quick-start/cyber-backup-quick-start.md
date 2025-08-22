@@ -15,7 +15,7 @@
 1. Создадите в сервисе резервную копию этой ВМ.
 1. Восстановите ВМ в VK Cloud из резервной копии, которая хранилась в сервисе.
 
-Используя сервис, вы соглашаетесь с [лицензионным соглашением](/ru/intro/start/legal/marketplace) сервиса Marketplace и с [пользовательским соглашением](https://cyberprotect.ru/static/pdf/Cyberprotect_EULA_RUS.pdf) вендора ООО «Киберпротект».
+Используя сервис, вы соглашаетесь с [лицензионным соглашением](/ru/start/legal/vk/marketplace) сервиса Marketplace и с [пользовательским соглашением](https://cyberprotect.ru/static/pdf/Cyberprotect_EULA_RUS.pdf) вендора ООО «Киберпротект».
 
 ## Подготовительные шаги
 

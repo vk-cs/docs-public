@@ -10,11 +10,11 @@ Milvus — это гибкая платформа для анализа нест
 
 Milvus предоставляет RESTful API и клиентские библиотеки для различных языков, упрощая интеграцию с вашими приложениями, и включает Attu — веб-интерфейс для взаимодействия с Milvus.
 
-Используя Milvus, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/intro/start/legal/marketplace) и [Milvus](https://github.com/milvus-io/milvus/blob/master/LICENSE).
+Используя Milvus, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/start/legal/vk/marketplace) и [Milvus](https://github.com/milvus-io/milvus/blob/master/LICENSE).
 
 Чтобы развернуть сервис Milvus в проекте VK Cloud:
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу Milvus из интернета:
 
     1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
@@ -38,7 +38,7 @@ Milvus предоставляет RESTful API и клиентские библи
     1. Укажите параметры виртуальной машины, на которой будет развернут инстанс сервиса:
 
         - **Сеть**: выберите сеть, где будет размещена ВМ с развернутым сервисом. Если вы указали тип размещения `external`, выберите сеть с доступом в интернет и подсеть, для которой отключена опция **Приватный DNS**.
-        - **Зона доступности**: выберите [ЦОД](/ru/intro/start/concepts/architecture#az), где будет запущена ВМ.
+        - **Зона доступности**: выберите [ЦОД](/ru/start/concepts/architecture#az), где будет запущена ВМ.
         - **Тип виртуальной машины**: выберите [предустановленную конфигурацию ВМ](/ru/computing/iaas/concepts/vm/flavor).
 
     1. Укажите параметры системного диска и диска с данными.
