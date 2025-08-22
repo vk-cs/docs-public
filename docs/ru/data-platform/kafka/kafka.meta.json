@@ -7,5 +7,6 @@
   "sectionTitle": "Cloud Kafka",
   "icon": "",
   "weight": 8,
+  "isBeta": true,
   "uuid": "1fe98b4c-147f-4af9-ab57-76a24debfbab"
 }
