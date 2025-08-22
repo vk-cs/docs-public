@@ -28774,5 +28774,11 @@
     "destination": "/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/intro/start/legal/digital-cloud/security-gate",
+    "destination": "/ru/start/legal/digital-cloud/security-gate",
+    "permanent": false,
+    "locale": false
   }
 ]
