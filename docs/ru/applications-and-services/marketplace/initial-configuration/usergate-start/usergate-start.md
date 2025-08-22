@@ -15,7 +15,7 @@
 
 Данная инструкция поможет развернуть сервис UserGate NGFW на ВМ в VK Cloud, подключиться к консоли UserGate NGFW и добавить новую сеть через консоль сервиса.
 
-Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
+Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
 
 {note:warn}
 
@@ -25,7 +25,7 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 
 ## Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
 1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
 1. [Разверните](../../instructions/pr-instance-add) сервис UserGate NGFW:

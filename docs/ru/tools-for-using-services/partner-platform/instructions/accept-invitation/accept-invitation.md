@@ -52,4 +52,4 @@
 
 [Ознакомьтесь](/ru/tools-for-using-services/partner-platform/concepts/client-account) с возможностями личного кабинета клиента партнера.
 
-[Ознакомьтесь](/ru/intro/start/support) с информацией о технической поддержке сервисов VK Cloud.
+[Ознакомьтесь](/ru/start/support) с информацией о технической поддержке сервисов VK Cloud.

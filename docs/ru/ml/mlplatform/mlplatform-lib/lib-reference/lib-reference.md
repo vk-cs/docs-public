@@ -321,7 +321,7 @@ get_external_networks(**kwargs
 
 - `size`: объем диска в ГБ (тип `int`).
 - `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
-- `availability_zone`: [зона доступности](/ru/intro/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
+- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -631,7 +631,7 @@ attach_s3_bucket_to_jh(
 
 - `size`: объем диска в ГБ (тип `int`).
 - `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
-- `availability_zone`: [зона доступности](/ru/intro/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
+- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -859,7 +859,7 @@ create_mlflow(instance_name: str,
 
 - `size`: объем диска в ГБ (тип `int`).
 - `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
-- `availability_zone`: [зона доступности](/ru/intro/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
+- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 {note:warn}
 

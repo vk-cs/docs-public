@@ -2,11 +2,11 @@
 
 Инструкция поможет развернуть сервис Grafana 10 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
 
-Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
+Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
 
 Чтобы развернуть сервис Grafana в проекте:
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть, если она не была создана ранее.
 1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
 1. [Разверните](../../instructions/pr-instance-add) сервис Grafana:

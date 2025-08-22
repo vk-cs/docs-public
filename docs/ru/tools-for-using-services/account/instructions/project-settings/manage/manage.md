@@ -79,7 +79,7 @@
 
 {note:info}
 
-Новому владельцу может потребоваться [привязать карту оплаты](/ru/intro/billing/instructions/add-card#privyazat_kartu), если у проекта нет привязанной карты, и [подтвердить номер телефона](/ru/intro/start/account-registration).
+Новому владельцу может потребоваться [привязать карту оплаты](/ru/intro/billing/instructions/add-card#privyazat_kartu), если у проекта нет привязанной карты, и [подтвердить номер телефона](/ru/intro/onboarding/account).
 
 {/note}
 

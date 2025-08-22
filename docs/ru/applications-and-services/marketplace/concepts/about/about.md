@@ -8,7 +8,7 @@ Marketplace — подсистема VK Cloud, которая предостав
 
 {note:warn}
 
-Используя сервисы из магазина приложений, вы соглашаетесь с [пользовательским соглашением](/ru/intro/start/legal/digital-cloud/marketplace).
+Используя сервисы из магазина приложений, вы соглашаетесь с [пользовательским соглашением](/ru/start/legal/digital-cloud/marketplace).
 
 {/note}
 

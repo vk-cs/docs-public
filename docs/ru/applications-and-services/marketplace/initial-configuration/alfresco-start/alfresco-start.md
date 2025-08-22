@@ -10,11 +10,11 @@ Alfresco — это система управления корпоративны
 - управление пользователями, ролями и правами доступа;  
 - поддержка многоканального доступа (веб-интерфейс, мобильные приложения, файловые протоколы).
 
-Используя Alfresco, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/intro/start/legal/digital-cloud/marketplace) и [Alfresco](https://github.com/Alfresco/acs-deployment/blob/master/LICENSE).
+Используя Alfresco, вы соглашаетесь с лицензионными соглашениями [Marketplace](/ru/start/legal/digital-cloud/marketplace) и [Alfresco](https://github.com/Alfresco/acs-deployment/blob/master/LICENSE).
 
 Чтобы развернуть сервис Alfresco в проекте VK Cloud:
 
-1. [Зарегистрируйтесь](/ru/intro/start/account-registration) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/onboarding/account) и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу Alfresco из интернета:
 
     1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
@@ -35,7 +35,7 @@ Alfresco — это система управления корпоративны
     1. Укажите параметры виртуальной машины, на которой будет развернут инстанс сервиса:
 
         - **Сеть**: выберите сеть, где будет размещена ВМ с развернутым сервисом. Если вы указали тип размещения `external`, выберите сеть с доступом в интернет и подсеть, для которой отключена опция **Приватный DNS**.
-        - **Зона доступности**: выберите [ЦОД](/ru/intro/start/concepts/architecture#az), где будет запущена ВМ.
+        - **Зона доступности**: выберите [ЦОД](/ru/start/concepts/architecture#az), где будет запущена ВМ.
         - **Тип виртуальной машины**: выберите [предустановленную конфигурацию ВМ](/ru/computing/iaas/concepts/vm/flavor).
 
     1. Укажите параметры системного диска и диска с данными.

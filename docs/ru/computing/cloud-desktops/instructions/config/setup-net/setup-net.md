@@ -65,7 +65,7 @@
 
       {/note}
 
-   - **Зона доступности**: выберите [зону доступности](/ru/intro/start/concepts/architecture#az) для сервиса Cloud Desktop из списка.
+   - **Зона доступности**: выберите [зону доступности](/ru/start/concepts/architecture#az) для сервиса Cloud Desktop из списка.
 
      {note:info}
 

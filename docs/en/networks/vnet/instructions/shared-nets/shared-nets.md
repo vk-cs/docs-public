@@ -106,7 +106,7 @@ To delete a shared network:
 
 {tab(Management console)}
 
-1. [Delete](../ports#deleting_a_port) all occupied shared network ports in your project. To remove some ports, you need to remove or disable the services that are connected to them: VMs, [PaaS services](/ru/intro/start/concepts/architecture), file storages, balancers, advanced router interfaces directed to the shared network.
+1. [Delete](../ports#deleting_a_port) all occupied shared network ports in your project. To remove some ports, you need to remove or disable the services that are connected to them: VMs, [PaaS services](/en/intro/start/concepts/architecture), file storages, balancers, advanced router interfaces directed to the shared network.
 1. Make sure that connected projects also have all services on the shared network removed or disabled.
 
  {note:warn}

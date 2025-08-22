@@ -82,7 +82,7 @@
 
    {tab(availability_zone_name)}
 
-   В статье о [зонах доступности](/ru/intro/start/concepts/architecture#az).
+   В статье о [зонах доступности](/ru/start/concepts/architecture#az).
 
    {/tab}
 

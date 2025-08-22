@@ -202,7 +202,7 @@ UserGate NGFW содержит все функции решений класса
 Услуга по технической поддержке UserGate NGFW приобретается вместе с лицензией на продукт. Поддержка осуществляется поставщиком на [Портале технической поддержки](https://support.usergate.com/ru) в соответствии с [Регламентом технической поддержки](https://support.usergate.com/ru/technical-support-regulations).
 По запросу [команда Professional Services](https://cloud.vk.com/professional-services/) VK Cloud осуществляет расширенную техническую поддержку UserGate NGFW.
 
-Команда VK Cloud осуществляет техническую поддержку по вопросам функционирования инфраструктуры VK Cloud. Информация об условиях оказания техподдержки и способах обращения находится на странице [Условия оказания поддержки](https://cloud.vk.com/docs/intro/start/support/support-info).
+Команда VK Cloud осуществляет техническую поддержку по вопросам функционирования инфраструктуры VK Cloud. Информация об условиях оказания техподдержки и способах обращения находится на странице [Условия оказания поддержки](/ru/start/support/support-info).
 ```
 {/caption}
 
@@ -212,7 +212,7 @@ UserGate NGFW содержит все функции решений класса
 
 * Ссылки:
 
-   * На [Пользовательское соглашение магазина приложений](/ru/intro/start/legal/digital-cloud/marketplace)
+   * На [Пользовательское соглашение магазина приложений](/ru/start/legal/digital-cloud/marketplace)
    * На пользовательское соглашение сервиса.
 
 * Для opensource-решений — дисклеймер об opensource-лицензиях.
@@ -221,7 +221,7 @@ UserGate NGFW содержит все функции решений класса
 ```markdown
 # Лицензионное соглашение
 Используя сервис UserGate NGFW, вы соглашаетесь с:
-- [Пользовательским соглашением магазина приложений](https://cloud.vk.com/docs/ru/intro/start/legal/digital-cloud/marketplace).
+- [Пользовательским соглашением магазина приложений](https://cloud.vk.com/docs/ru/start/legal/digital-cloud/marketplace).
 - [Лицензионным соглашением на использование UserGate NGFW](https://www.usergate.com/ru/usergate-eula).
 ```
 {/caption}
