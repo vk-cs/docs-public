@@ -220,7 +220,7 @@ To create an Ingress resource:
    Receiving such responses means that the Ingress controller is configured correctly:
 
    - interacts with VK Cloud TCP load balancer;
-   - terminates SSL\TLS sessions;
+   - terminates SSL/TLS sessions;
    - provides access to services corresponding to the deployed applications.
 
    {/tab}
@@ -244,7 +244,7 @@ To create an Ingress resource:
    Receiving such responses means that the Ingress controller is configured correctly:
 
    - interacts with VK Cloud TCP load balancer;
-   - terminates SSL\TLS sessions;
+   - terminates SSL/TLS sessions;
    - provides access to services corresponding to the deployed applications.
 
    {/tab}
