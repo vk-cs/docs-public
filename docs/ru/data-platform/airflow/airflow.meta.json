@@ -6,5 +6,6 @@
     "metaDescription": "Среда обработки потоков для приложений реального времени",
     "sectionTitle": "Cloud Airflow",
     "icon": "",
+    "isBeta": true,
     "weight": 5
   }
