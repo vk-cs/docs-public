@@ -1,11 +1,11 @@
 {
-    "title": "IP Source Guard",
-    "pageDescription": "Настройка разрешенных пар адресов при помощи IP Source Guard.",
-    "shortDescription": "Как настроить выход трафика с разрешенных IP-адресов с помощью IP Source Guard",
-    "metaTitle": "IP Source Guard",
-    "metaDescription": "Как настроить выход трафика с разрешенных IP-адресов при помощи IP Source Guard",
-    "sectionTitle": "IP Source Guard",
-    "icon": "",
-    "weight": 4,
-    "uuid": ""
+  "title": "IP Source Guard",
+  "pageDescription": "Настройка разрешенных пар адресов при помощи IP Source Guard.",
+  "shortDescription": "Как настроить выход трафика с разрешенных IP-адресов с помощью IP Source Guard",
+  "metaTitle": "IP Source Guard",
+  "metaDescription": "Как настроить выход трафика с разрешенных IP-адресов при помощи IP Source Guard",
+  "sectionTitle": "IP Source Guard",
+  "icon": "",
+  "weight": 4,
+  "uuid": "8d0e0b16-2ac6-44fd-8532-0059fc2efaeb"
 }

@@ -1,10 +1,11 @@
 {
-    "title": "Архитектура сервиса",
-    "pageDescription": "Архитектура сервиса Data LakeHouse в VK Cloud.",
-    "shortDescription": "Архитектура сервиса Data LakeHouse",
-    "metaTitle": "Архитектура сервиса",
-    "metaDescription": "Архитектура сервиса Data LakeHouse",
-    "sectionTitle": "Архитектура сервиса",
-    "icon": "",
-    "weight": 2
+  "title": "Архитектура сервиса",
+  "pageDescription": "Архитектура сервиса Data LakeHouse в VK Cloud.",
+  "shortDescription": "Архитектура сервиса Data LakeHouse",
+  "metaTitle": "Архитектура сервиса",
+  "metaDescription": "Архитектура сервиса Data LakeHouse",
+  "sectionTitle": "Архитектура сервиса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1eca4e9d-acdf-4077-9611-b6fd41635d53"
 }

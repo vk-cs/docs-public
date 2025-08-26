@@ -1,10 +1,11 @@
 {
-    "title": "Cloud Spark в архитектуре Data Lakehouse",
-    "pageDescription": "Назначение и функции компонента Cloud Spark в архитектуре Data Lakehouse в VK Cloud.",
-    "shortDescription": "Назначение и функции компонента Cloud Spark в архитектуре Data Lakehouse на платформе VK Cloud",
-    "metaTitle": "Cloud Spark в архитектуре Data Lakehouse",
-    "metaDescription": "Назначение и функции компонента Cloud Spark в архитектуре Data Lakehouse",
-    "sectionTitle": "Cloud Spark",
-    "icon": "",
-    "weight": 4
-  }
+  "title": "Cloud Spark в архитектуре Data Lakehouse",
+  "pageDescription": "Назначение и функции компонента Cloud Spark в архитектуре Data Lakehouse в VK Cloud.",
+  "shortDescription": "Назначение и функции компонента Cloud Spark в архитектуре Data Lakehouse на платформе VK Cloud",
+  "metaTitle": "Cloud Spark в архитектуре Data Lakehouse",
+  "metaDescription": "Назначение и функции компонента Cloud Spark в архитектуре Data Lakehouse",
+  "sectionTitle": "Cloud Spark",
+  "icon": "",
+  "weight": 4,
+  "uuid": "5021f2a4-df2b-4eb9-830b-74dce0354daf"
+}

@@ -1,11 +1,11 @@
 {
-    "title": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
-    "pageDescription": "Подробный обзор результатов тестов CIS Benchmarks для кластеров Kubernetes версий 1.28 – 1.31",
-    "shortDescription": "Обзор результатов тестов CIS Benchmarks для кластеров Kubernetes версий 1.28 – 1.31",
-    "metaTitle": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
-    "metaDescription": "",
-    "sectionTitle": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
-    "icon": "",
-    "weight": 12,
-    "uuid": ""
+  "title": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
+  "pageDescription": "Подробный обзор результатов тестов CIS Benchmarks для кластеров Kubernetes версий 1.28 – 1.31",
+  "shortDescription": "Обзор результатов тестов CIS Benchmarks для кластеров Kubernetes версий 1.28 – 1.31",
+  "metaTitle": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
+  "metaDescription": "",
+  "sectionTitle": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
+  "icon": "",
+  "weight": 12,
+  "uuid": "04a4416c-ea3b-4262-bca2-ed4aa0c3d9eb"
 }

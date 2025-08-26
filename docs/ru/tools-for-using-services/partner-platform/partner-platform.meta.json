@@ -1,13 +1,13 @@
 {
-    "title": "Платформа партнера VK Cloud",
-    "pageDescription": "Платформа партнера VK Cloud.",
-    "shortDescription": "Управление клиентами партнера VK Cloud и их проектами",
-    "metaTitle": "Платформа партнера VK Cloud",
-    "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud",
-    "sectionTitle": "Платформа партнера VK Cloud",
-    "icon": "",
-    "isBeta": false,
-    "hidden": false,
-    "weight": 4,
-    "uuid": ""
+  "title": "Платформа партнера VK Cloud",
+  "pageDescription": "Платформа партнера VK Cloud.",
+  "shortDescription": "Управление клиентами партнера VK Cloud и их проектами",
+  "metaTitle": "Платформа партнера VK Cloud",
+  "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud",
+  "sectionTitle": "Платформа партнера VK Cloud",
+  "icon": "",
+  "isBeta": false,
+  "hidden": false,
+  "weight": 4,
+  "uuid": "1cc994ec-a0ba-4f98-ade8-c1831f7c6d33"
 }

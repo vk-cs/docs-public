@@ -1,10 +1,11 @@
 {
-    "title": "Балансировщик возвращает ошибку 504 Gateway Timeout",
-    "pageDescription": "Что делать, если на балансировщике срабатывают тайм-ауты и возвращается ошибка «504 Gateway Timeout».",
-    "shortDescription": "Что делать, если на балансировщике срабатывают тайм-ауты и возвращается ошибка «504 Gateway Timeout»",
-    "metaTitle": "Балансировщик возвращает ошибку 504 Gateway Timeout",
-    "metaDescription": "",
-    "sectionTitle": "Балансировщик возвращает ошибку 504 Gateway Timeout",
-    "icon": "",
-    "weight": 1
+  "title": "Балансировщик возвращает ошибку 504 Gateway Timeout",
+  "pageDescription": "Что делать, если на балансировщике срабатывают тайм-ауты и возвращается ошибка «504 Gateway Timeout».",
+  "shortDescription": "Что делать, если на балансировщике срабатывают тайм-ауты и возвращается ошибка «504 Gateway Timeout»",
+  "metaTitle": "Балансировщик возвращает ошибку 504 Gateway Timeout",
+  "metaDescription": "",
+  "sectionTitle": "Балансировщик возвращает ошибку 504 Gateway Timeout",
+  "icon": "",
+  "weight": 1,
+  "uuid": "29d5c6d0-6dd5-47c5-81cf-5802850fdbb5"
 }

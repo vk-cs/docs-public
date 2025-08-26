@@ -1,10 +1,11 @@
 {
-    "title": "Роли и права пользователей Data Platform",
-    "pageDescription": "Ролевая модель в сервисе Data Platform.",
-    "shortDescription": "Ролевая модель в сервисе Data Platform",
-    "metaTitle": "Роли и права пользователей личного кабинетData Platform",
-    "metaDescription": "Ролевая модель в сервисе Data Platform.",
-    "sectionTitle": "Роли и права пользователей Data Platform",
-    "icon": "",
-    "weight": 2
+  "title": "Роли и права пользователей Data Platform",
+  "pageDescription": "Ролевая модель в сервисе Data Platform.",
+  "shortDescription": "Ролевая модель в сервисе Data Platform",
+  "metaTitle": "Роли и права пользователей личного кабинетData Platform",
+  "metaDescription": "Ролевая модель в сервисе Data Platform.",
+  "sectionTitle": "Роли и права пользователей Data Platform",
+  "icon": "",
+  "weight": 2,
+  "uuid": "887ad045-5fe6-40a7-88c0-7c4e53b07971"
 }

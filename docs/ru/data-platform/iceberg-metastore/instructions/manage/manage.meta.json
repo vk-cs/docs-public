@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Iceberg Metastore: управление компонентами экземпляра сервиса в проекте",
   "sectionTitle": "Работа с компонентами сервиса",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "b4af5c3a-a779-44ab-926a-8214afa572ea"
 }

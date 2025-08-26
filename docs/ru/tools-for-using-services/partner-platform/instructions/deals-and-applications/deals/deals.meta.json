@@ -1,11 +1,11 @@
 {
-    "title": "Сделки",
-    "pageDescription": "Описание работы со сделками на партнерской платформе VK Cloud.",
-    "shortDescription": "Как просматривать информацию по зарегистрированным сделкам",
-    "metaTitle": "Сделки",
-    "metaDescription": "Описание работы со сделками на Платформе партнера VK Cloud",
-    "sectionTitle": "Сделки",
-    "icon": "",
-    "weight": 2,
-    "uuid": ""
+  "title": "Сделки",
+  "pageDescription": "Описание работы со сделками на партнерской платформе VK Cloud.",
+  "shortDescription": "Как просматривать информацию по зарегистрированным сделкам",
+  "metaTitle": "Сделки",
+  "metaDescription": "Описание работы со сделками на Платформе партнера VK Cloud",
+  "sectionTitle": "Сделки",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f5d42073-a5de-4ca1-a00c-af499561d2bf"
 }

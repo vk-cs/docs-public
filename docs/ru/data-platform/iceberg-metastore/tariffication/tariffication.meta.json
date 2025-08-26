@@ -6,5 +6,6 @@
   "metaDescription": "Cloud Iceberg Metastore: особенности тарификации сервиса, расчет стоимости",
   "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "9a0e7959-f19e-4696-a30d-7acc9513cf87"
 }
