@@ -1,10 +1,11 @@
 {
-    "title": "ClickHouse в архитектуре Data Lakehouse",
-    "pageDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse в VK Cloud.",
-    "shortDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse на платформе VK Cloud",
-    "metaTitle": "ClickHouse в архитектуре Data Lakehouse",
-    "metaDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse",
-    "sectionTitle": "ClickHouse",
-    "icon": "",
-    "weight": 6
-  }
+  "title": "ClickHouse в архитектуре Data Lakehouse",
+  "pageDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse в VK Cloud.",
+  "shortDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse на платформе VK Cloud",
+  "metaTitle": "ClickHouse в архитектуре Data Lakehouse",
+  "metaDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse",
+  "sectionTitle": "ClickHouse",
+  "icon": "",
+  "weight": 6,
+  "uuid": "1d706c14-fdb4-4289-b9df-1dd5f6146cfb"
+}

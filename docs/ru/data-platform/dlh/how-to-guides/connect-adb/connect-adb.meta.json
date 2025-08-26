@@ -1,10 +1,11 @@
 {
-    "title": "Подключение ClickHouse в качестве аналитической БД",
-    "pageDescription": "Как развернуть экземпляр сервиса ClickHouse в качестве аналитической БД для сервиса Data Lakehouse.",
-    "shortDescription": "Как развернуть экземпляр сервиса ClickHouse в качестве аналитической БД для сервиса Data Lakehouse",
-    "metaTitle": "Подключение аналитической БД",
-    "metaDescription": "Как развернуть экземпляр сервиса ClickHouse.",
-    "sectionTitle": "Подключение аналитической БД",
-    "icon": "",
-    "weight": 1
+  "title": "Подключение ClickHouse в качестве аналитической БД",
+  "pageDescription": "Как развернуть экземпляр сервиса ClickHouse в качестве аналитической БД для сервиса Data Lakehouse.",
+  "shortDescription": "Как развернуть экземпляр сервиса ClickHouse в качестве аналитической БД для сервиса Data Lakehouse",
+  "metaTitle": "Подключение аналитической БД",
+  "metaDescription": "Как развернуть экземпляр сервиса ClickHouse.",
+  "sectionTitle": "Подключение аналитической БД",
+  "icon": "",
+  "weight": 1,
+  "uuid": "5dd21c0a-7a97-47d0-945f-4d445911f6cd"
 }

@@ -1,10 +1,11 @@
 {
-    "title": "Работа с данными",
-    "pageDescription": "Как загрузить данные из источников в Data LakeHouse.",
-    "shortDescription": "Как загрузить данные из источников в Data LakeHouse",
-    "metaTitle": "Работа с данными",
-    "metaDescription": "Как загрузить данные из источников в Data LakeHouse",
-    "sectionTitle": "Работа с данными",
-    "icon": "",
-    "weight": 3
+  "title": "Работа с данными",
+  "pageDescription": "Как загрузить данные из источников в Data LakeHouse.",
+  "shortDescription": "Как загрузить данные из источников в Data LakeHouse",
+  "metaTitle": "Работа с данными",
+  "metaDescription": "Как загрузить данные из источников в Data LakeHouse",
+  "sectionTitle": "Работа с данными",
+  "icon": "",
+  "weight": 3,
+  "uuid": "3e9acd2b-cffb-4c3e-be1f-f72b6b1f7844"
 }

@@ -1,10 +1,11 @@
 {
-    "title": "Сравнение технологий",
-    "pageDescription": "Эволюция хранилищ данных: причины перехода от Data Lake к Data LakeHouse.",
-    "shortDescription": "Эволюция хранилищ данных: причины перехода от Data Lake к Data LakeHouse",
-    "metaTitle": "Сравнение технологий",
-    "metaDescription": "Эволюция хранилищ данных: причины перехода от Data Lake к Data LakeHouse",
-    "sectionTitle": "Сравнение технологий",
-    "icon": "",
-    "weight": 3
-  }
+  "title": "Сравнение технологий",
+  "pageDescription": "Эволюция хранилищ данных: причины перехода от Data Lake к Data LakeHouse.",
+  "shortDescription": "Эволюция хранилищ данных: причины перехода от Data Lake к Data LakeHouse",
+  "metaTitle": "Сравнение технологий",
+  "metaDescription": "Эволюция хранилищ данных: причины перехода от Data Lake к Data LakeHouse",
+  "sectionTitle": "Сравнение технологий",
+  "icon": "",
+  "weight": 3,
+  "uuid": "0045b05a-fb3a-4794-9afc-6820c85e799f"
+}

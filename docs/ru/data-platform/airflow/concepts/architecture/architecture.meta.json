@@ -6,5 +6,6 @@
   "metaDescription": "Архитектура сервиса Cloud Airflow в VK Cloud",
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "0c246092-e6c8-47b6-a527-93766a17cd0d"
 }

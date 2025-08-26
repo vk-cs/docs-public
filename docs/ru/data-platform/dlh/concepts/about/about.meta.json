@@ -6,5 +6,6 @@
   "metaDescription": "Назначение, приемущества и ограничения применения архитектуры Data Lakehouse",
   "sectionTitle": "О сервисе",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "14a85b8e-c5aa-4e66-92a2-2b748402e57b"
 }

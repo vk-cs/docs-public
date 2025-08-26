@@ -52,7 +52,7 @@ export const config = {
             PublicAssetsPreparer, // Переносим статичные файлы из папок "assets" в публичную директорию
             LinktoCachePreparer, // Подготавливаем кэш для linkTo препроцессора
             SearchIndexPreparer, // Создаём индекс для поиска
-            ArticleDatesPreparer, // Актуализируем даты (создание/изменение) у статей
+            // ArticleDatesPreparer, // Актуализируем даты (создание/изменение) у статей
             ExternalFolderChecker, // Проверяем схему и корректность ссылок для файлов в папке external/sections
             LinksPreparer, // Подготовка служебных файлов для test:LinksChecker
             LinksChecker, // Подготовка служебных файлов для test:LinksChecker

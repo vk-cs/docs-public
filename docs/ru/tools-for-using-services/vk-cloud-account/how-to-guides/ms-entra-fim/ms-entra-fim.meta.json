@@ -1,11 +1,11 @@
 {
-    "title": "Настройка федерации удостоверений через MS Entra",
-    "pageDescription": "Как настроить аутентификацию в VK Cloud через MS Entra.",
-    "shortDescription": "Как настроить аутентификацию в VK Cloud через MS Entra",
-    "metaTitle": "Настройка федерации удостоверений через MS Entra",
-    "metaDescription": "Как настроить федеративный доступ в VK Cloud с помощью MS Entra в качестве identity provider",
-    "sectionTitle": "Настройка федерации удостоверений через MS Entra",
-    "icon": "",
-    "weight": 2,
-    "uuid": ""
-  }
+  "title": "Настройка федерации удостоверений через MS Entra",
+  "pageDescription": "Как настроить аутентификацию в VK Cloud через MS Entra.",
+  "shortDescription": "Как настроить аутентификацию в VK Cloud через MS Entra",
+  "metaTitle": "Настройка федерации удостоверений через MS Entra",
+  "metaDescription": "Как настроить федеративный доступ в VK Cloud с помощью MS Entra в качестве identity provider",
+  "sectionTitle": "Настройка федерации удостоверений через MS Entra",
+  "icon": "",
+  "weight": 2,
+  "uuid": "068f6edf-5e1f-4d48-bc6e-bbd1da627938"
+}

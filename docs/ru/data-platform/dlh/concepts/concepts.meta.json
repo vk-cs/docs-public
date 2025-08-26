@@ -6,5 +6,6 @@
   "metaDescription": "Как устроен сервис Data LakeHouse в VK Cloud: функциональные особенности и внутренняя архитектура",
   "sectionTitle": "Концепции",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "e3db020f-32d0-492c-a6f2-5ea2cf33f9cd"
 }

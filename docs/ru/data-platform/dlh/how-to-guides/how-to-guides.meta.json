@@ -1,10 +1,11 @@
 {
-    "title": "Практические руководства",
-    "pageDescription": "Развертывание Data Lakehouse на базе различных решений.",
-    "shortDescription": "Развертывание DLH на базе различных решений",
-    "metaTitle": "Практические руководства",
-    "metaDescription": "Развертывание Data Lakehouse на базе различных решений.",
-    "sectionTitle": "Практические руководства",
-    "icon": "",
-    "weight": 5
+  "title": "Практические руководства",
+  "pageDescription": "Развертывание Data Lakehouse на базе различных решений.",
+  "shortDescription": "Развертывание DLH на базе различных решений",
+  "metaTitle": "Практические руководства",
+  "metaDescription": "Развертывание Data Lakehouse на базе различных решений.",
+  "sectionTitle": "Практические руководства",
+  "icon": "",
+  "weight": 5,
+  "uuid": "8be8aa28-156d-42e9-afa0-ec8c8d0c1f4e"
 }

@@ -1,10 +1,11 @@
 {
-    "title": "Установка и настройка сервиса Мониторинг для Arenadata DB",
-    "pageDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud.",
-    "shortDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
-    "metaTitle": "Установка и настройка сервиса Мониторинг для Arenadata DB",
-    "metaDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
-    "sectionTitle": "Установка и настройка сервиса Мониторинг для Arenadata DB",
-    "icon": "",
-    "weight": 19
+  "title": "Установка и настройка сервиса Мониторинг для Arenadata DB",
+  "pageDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud.",
+  "shortDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
+  "metaTitle": "Установка и настройка сервиса Мониторинг для Arenadata DB",
+  "metaDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
+  "sectionTitle": "Установка и настройка сервиса Мониторинг для Arenadata DB",
+  "icon": "",
+  "weight": 19,
+  "uuid": "e1e0656b-1ec9-4bf3-9b00-e7fc34300c05"
 }
