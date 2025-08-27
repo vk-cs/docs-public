@@ -14,7 +14,7 @@
 
 1. Установите и настройте [AWS CLI](../connect/s3-cli), если он еще не установлен.
 
-1. Откройте консоль и выполните команду:
+1. В консоли выполните команду:
 
    ```console
    aws s3 ls s3://<ИМЯ_БАКЕТА> --summarize --human-readable --recursive --endpoint-url <URL_СЕРВИСА>
