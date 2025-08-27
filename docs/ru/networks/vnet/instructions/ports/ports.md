@@ -48,13 +48,13 @@
    1. Выполните команду:
 
       ```console
-      openstack port list --fixed-ip subnet=<имя или идентификатор подсети>
+      openstack port list --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>
       ```
 
 1. Чтобы посмотреть подробную информацию о порте, выполните команду, подставив идентификатор или имя порта, полученные ранее:
 
    ```console
-   openstack port show <идентификатор или имя порта>
+   openstack port show <ИМЯ_ИЛИ_ID_ПОРТА>
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь одной из команд:
@@ -104,7 +104,7 @@ openstack port show --help
 1. Выполните команду:
 
    ```console
-   openstack port create <имя порта> --network <имя или идентификатор сети> --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<IP-адрес порта>
+   openstack port create <ИМЯ_ПОРТА> --network <ИМЯ_ИЛИ_ID_СЕТИ> --mac-address <MAC-АДРЕС> --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<IP-АДРЕС_ПОРТА>
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
@@ -156,7 +156,7 @@ openstack port create --help
 1. Выполните команду:
 
    ```console
-   openstack port set <имя или идентификатор порта> --enable
+   openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --enable
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
@@ -208,7 +208,7 @@ openstack port set --help
 1. Выполните команду:
 
    ```console
-   openstack port set <имя или идентификатор порта> --disable
+   openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --disable
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
@@ -254,19 +254,19 @@ openstack port set --help
    - Имя порта:
 
      ```console
-     openstack port set <имя или идентификатор порта> --name <новое имя>
+     openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --name <НОВОЕ_ИМЯ>
      ```
 
    - DNS-имя порта:
 
      ```console
-     openstack port set <имя или идентификатор порта> --dns-name <новое доменное имя>
+     openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --dns-name <НОВОЕ_ДОМЕННОЕ_ИМЯ>
      ```
 
    - IP-адрес порта:
 
      ```console
-     openstack port set <имя или идентификатор порта> --no-fixed-ip --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<новый IP-адрес порта>
+     openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --no-fixed-ip --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<НОВЫЙ_IP-АДРЕС_ПОРТА>
      ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
@@ -294,7 +294,7 @@ openstack port set --help
 1. Чтобы добавить один IP-адрес источника, выполните команду:
 
    ```console
-   openstack port set <имя или идентификатор порта> --allowed-address ip-address=<IP-адрес>
+   openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --allowed-address ip-address=<IP-АДРЕС>
    ```
 
    Если необходимо добавить еще несколько IP-адресов, повторите эту команду для каждого из них.
@@ -302,7 +302,7 @@ openstack port set --help
 1. Чтобы удалить один IP-адрес источника, выполните команду:
 
    ```console
-   openstack port unset <имя или идентификатор порта> --allowed-address ip-address=<IP-адрес>,mac-address=<mac-address>
+   openstack port unset <ИМЯ_ИЛИ_ID_ПОРТА> --allowed-address ip-address=<IP-АДРЕС>,mac-address=<MAC_АДРЕС>
    ```
 
    Если необходимо удалить еще несколько IP-адресов, повторите эту команду для каждого их них.
@@ -364,7 +364,7 @@ openstack port unset --help
 1. Выполните команду:
 
    ```console
-   openstack port delete <имя или идентификатор порта>
+   openstack port delete <ИМЯ_ИЛИ_ID_ПОРТА>
    ```
 
 Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
