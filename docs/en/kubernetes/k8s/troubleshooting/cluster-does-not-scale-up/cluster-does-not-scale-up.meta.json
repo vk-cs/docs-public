@@ -1,0 +1,11 @@
+{
+  "title": "Cluster Autoscaler is enabled, but no new nodes are added",
+  "pageDescription": "What to do if new nodes are not added and the pods remain in the Pending state, even though Cluster Autoscaler is enabled",
+  "shortDescription": "What to do if new nodes are not added and the pods remain in the Pending state, even though Cluster Autoscaler is enabled",
+  "metaTitle": "Cluster Autoscaler is enabled, but no new nodes are added",
+  "metaDescription": "What to do if new nodes are not added and the pods remain in the Pending state, even though Cluster Autoscaler is enabled",
+  "sectionTitle": "Cluster Autoscaler is enabled, but no new nodes are added",
+  "icon": "",
+  "weight": 3,
+  "uuid": ""
+}
