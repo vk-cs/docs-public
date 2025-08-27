@@ -58,19 +58,19 @@
 1. Получите список доступных портов в нужной сети:
 
    ```console
-   openstack port list --network <имя или идентификатор сети>
+   openstack port list --network <ИМЯ_ИЛИ_ID_СЕТИ>
    ```
 
 1. Присоедините выбранный порт к ВМ:
 
    ```console
-   openstack server add port <ID виртуальной машины> <ID порта>
+   openstack server add port <ID_ВМ> <ID_ПОРТА>
    ```
 
 1. Убедитесь, что порт успешно подключен к ВМ:
 
    ```console
-   openstack port list --server <ID виртуальной машины>
+   openstack port list --server <ID_ВМ>
    ```
 
 ### Создание нового порта
@@ -84,7 +84,7 @@
 1. Получите список IP-адресов для подсети, к которой планируется выполнить подключение:
 
    ```console
-   openstack subnet list --network <имя или идентификатор сети>
+   openstack subnet list --network <ИМЯ_ИЛИ_ID_СЕТИ>
    ```
 
 1. Получите список групп безопасности:
@@ -98,16 +98,17 @@
    - В нужной сети и с группой безопасности `default`:
 
       ```console
-      openstack port create <имя порта> --network <имя или идентификатор сети>
+      openstack port create <ИМЯ_ПОРТА> --network <ИМЯ_ИЛИ_ID_СЕТИ>
       ```
 
    - С указанием параметров:
 
       ```console
-      openstack port create <имя порта> \
-                            --network <имя или идентификатор сети> \
-                            --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<IP-адрес порта> \
-                            --security-group <ID группы безопасности>
+      openstack port create <ИМЯ_ПОРТА> \
+                            --network <ИМЯ_ИЛИ_ID_СЕТИ> \
+                            --mac-address <MAC-АДРЕС> \
+                            --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<IP-АДРЕС_ПОРТА> \
+                            --security-group <ID_ГРУППЫ_БЕЗОПАСНОСТИ>
       ```
 
       Чтобы посмотреть полный перечень поддерживаемых параметров, выполните команду:
@@ -131,13 +132,13 @@
 1. Присоедините созданный порт к ВМ:
 
    ```console
-   openstack server add port <ID виртуальной машины> <ID порта>
+   openstack server add port <ID_ВМ> <ID_ПОРТА>
    ```
 
 1. Убедитесь, что порт успешно подключен к ВМ:
 
    ```console
-   openstack port list --server <ID виртуальной машины>
+   openstack port list --server <ID_ВМ>
    ```
 
 {/tab}
@@ -151,14 +152,14 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-2. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
-3. Выберите нужную ВМ и перейдите на вкладку **Сети**.
-4. Выполните одно из действий для нужной сети:
+1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
+1. Выберите нужную ВМ и перейдите на вкладку **Сети**.
+1. Выполните одно из действий для нужной сети:
 
    - Выберите с помощью флажка сеть, затем нажмите кнопку **Удалить**.
    - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для подключенной сети и выберите пункт **Удалить подключение**.
 
-5. В появившемся окне нажмите кнопку **Подтвердить**.
+1. В появившемся окне нажмите кнопку **Подтвердить**.
 
 Подключение сети к ВМ будет удалено, но созданный ранее порт останется в статусе **Не подключен**. Подробнее об удалении портов в разделе [Управление портами](/ru/networks/vnet/instructions/ports).
 
@@ -167,22 +168,22 @@
 {tab(OpenStack CLI)}
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-2. Получите ID виртуальной машины:
+1. Получите ID виртуальной машины:
 
    ```console
    openstack server list
    ```
 
-3. Получите список портов у ВМ:
+1. Получите список портов у ВМ:
 
    ```console
-   openstack port list --server <ID виртуальной машины>
+   openstack port list --server <ID_ВМ>
    ```
 
-4. Удалите ненужный порт:
+1. Удалите ненужный порт:
 
    ```console
-   openstack port delete <имя или идентификатор порта>
+   openstack port delete <ИМЯ_ИЛИ_ID_ПОРТА>
    ```
 
 {/tab}

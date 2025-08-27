@@ -172,6 +172,28 @@ VNC-консоль доступна на странице виртуальной
 
 {/cut}
 
+{cut(Как задать сетевому интерфейсу ВМ конкретный MAC-адрес?)}
+
+1. [Создайте новый порт](/ru/networks/vnet/instructions/ports#dobavlenie_porta) с указанием MAC-адреса:
+
+   ```console
+
+   openstack port create --network <ID_СЕТИ> <ИМЯ_ПОРТА> --mac-address <MAC-АДРЕС>
+
+   ```
+
+1. Присоедините созданный порт к ВМ:
+
+   ```console
+
+   openstack server add port <ID_ВМ> <ID_ПОРТА>
+   
+   ```
+   
+1. [Cконфигурируйте новый интерфейс](/ru/computing/iaas/how-to-guides/interface-settings-check) в операционной системе ВМ .
+
+{/cut}
+
 ## Диски и образы
 
 {cut(Как увеличить диск?)}
