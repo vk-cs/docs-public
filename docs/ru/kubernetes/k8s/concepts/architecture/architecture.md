@@ -41,7 +41,7 @@
 
 {note:info}
 
-До версии Kubernetes 1.19 для запуска контейнеров использовался Docker\\[Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/), который признан устаревшим (deprecated).
+До версии Kubernetes 1.19 для запуска контейнеров использовался [Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/), который признан устаревшим (deprecated).
 
 {/note}
 

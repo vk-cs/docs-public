@@ -41,7 +41,7 @@ The cluster runs containers via Kubernetes [Container Runtime Interface](https:/
 
 {note:info}
 
-Before Kubernetes 1.19, Docker\\[Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/) was used to run containers and is now deprecated.
+Before Kubernetes 1.19, [Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/) was used to run containers and is now deprecated.
 
 {/note}
 

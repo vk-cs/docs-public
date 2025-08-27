@@ -22,7 +22,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. Определите, какая версия Velero [совместима с версией кластера](https://github.com/vmware-tanzu/velero#velero-compatibility-matrix) Kubernetes, в который нужно установить Velero.
 1. [Загрузите нужную версию](https://github.com/vmware-tanzu/velero/releases) клиента Velero.
-1. Определите версию плагина aws, [соответствующую](https://github.com/vmware-tanzu/velero-plugin-for-aws#compatibility) используемой версии Velero.
+1. Определите версию плагина AWS, [соответствующую](https://github.com/vmware-tanzu/velero-plugin-for-aws#compatibility) используемой версии Velero.
 1. Добавьте путь до клиента в переменную среды окружения:
 
    - `Path` для Windows.
