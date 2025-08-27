@@ -8,6 +8,6 @@
 
 ### Решение
 
-1. [Очистите](/ru/storage/s3/instructions/buckets//manage-bucket#bucket_cleaning) бакет.
+1. [Удалите все объекты](/ru/storage/s3/instructions/objects/manage-object#udalenie_obektov) из бакета.
 
 1. [Удалите](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete) бакет.
