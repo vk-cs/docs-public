@@ -132,11 +132,7 @@ Quotas for the most frequently used resources are displayed on the main page of 
 
 To see a more complete list of quotas and find out detailed information about each quota from the list:
 
-1. Click on the user name in the header of the management console page, select from the drop-down list **Quotas management**. The quotas page opens.
-
-    The same page is available if you select **Project settings** and go to the **Quotas** tab.
-
-1. Click on the icon![Information](assets/i-icon.svg "inline") to the right of the required quota. Information will be displayed about which objects and in which services the quota is spent.
+{include(/en/_includes/_project_quotas.md)[tags=viewquotas]}
 
 An extended list of quotas for the project can be obtained through the OpenStack CLI. Information about all quotas and the possibilities of increasing them in the section [Quotas and limits](../../../concepts/quotasandlimits).
 
