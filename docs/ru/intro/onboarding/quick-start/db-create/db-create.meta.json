@@ -1,0 +1,11 @@
+{
+  "title": "Создайте управляемую базу данных PostgreSQL",
+  "pageDescription": "Создайте инстанс базы данных PostgreSQL, установите расширение TimescaleDB и подключитесь к созданному инстансу БД.",
+  "shortDescription": "Создайте инстанс базы данных PostgreSQL, установите расширение TimescaleDB и подключитесь к созданному инстансу БД",
+  "metaTitle": "Создайте управляемую базу данных PostgreSQL",
+  "metaDescription": "Создайте инстанс базы данных PostgreSQL, установите расширение TimescaleDB и подключитесь к созданному инстансу БД",
+  "sectionTitle": "Создайте управляемую базу данных PostgreSQL",
+  "icon": "",
+  "weight": 9,
+  "uuid": ""
+}
