@@ -62,9 +62,29 @@
 
 {/cut}
 
+{cut(Как изменить владельца проекта на другое юрлицо (перенос договора)?)}
+
+[Обратитесь в техническую поддержку](/ru/contacts), указав:
+
+- [PID проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta);
+- ИНН текущего и нового владельца.
+{/cut}
+
 {cut(Может ли участник программы GeekBrains запросить увеличение квот на платформе VK Cloud?)}
 
 Да, может. Для этого обратитесь к назначенному GeekBrains куратору.
+
+{/cut}
+
+{cut(Как увеличить квоты проекта VK Cloud, если недостаточно свободных ресурсов?)}
+
+Воспользуйтесь инструкцией из статьи [увеличение квот проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#uvelichenie_kvot_proekta).
+
+{/cut}
+
+{cut(Кто является менеджером проекта и как с ним связаться?)}
+
+[Обратитесь в техническую поддержку](/ru/contacts), указав ИНН вашей организации.
 
 {/cut}
 
