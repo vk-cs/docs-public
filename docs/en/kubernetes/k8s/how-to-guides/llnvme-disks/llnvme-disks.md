@@ -5,11 +5,11 @@ LL NVMe (Low Latency NVMe) disks are high-performance local disks available on t
 1. Contact [technical support](mailto:support@mcs.mail.ru) to get access to the configuration for connecting an LL NVMe disk to a worker node, which includes:
    
    - Disk type: `ef-nvme`
-   - [VM flavor](en/computing/iaas/concepts/about#flavors) for the node group based on this disk type.
+   - [VM flavor](/en/computing/iaas/concepts/about#flavors) for the node group based on this disk type.
    
    Wait for access to the configuration before proceeding to the next step.
    
-1. [Create](en/kubernetes/k8s/instructions/create-cluster) a cluster if not done so already.
+1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a cluster if not done so already.
 
 1. In your VK Cloud management console, [add](/en/kubernetes/k8s/instructions/manage-node-group#add_group) a worker node group with VMs based on the configuration for LL NVMe:
 

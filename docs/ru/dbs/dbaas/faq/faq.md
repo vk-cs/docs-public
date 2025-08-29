@@ -68,7 +68,7 @@
 
 Да, можно.
 
-При [восстановлении из резервной копии](/docs/ru/storage/backups/instructions/restore-from-backup/) — автоматической, ручной или [созданной в определенный момент времени (PITR)](/docs/ru/storage/backups/instructions/point-in-time-recovery-pitr/) — выбор новой версии доступен в интерфейсе, если для текущей версии инстанса есть обновление.
+При [восстановлении из резервной копии](/ru/storage/backups/instructions/restore-from-backup) — автоматической, ручной или [созданной в определенный момент времени (PITR)](/ru/storage/backups/instructions/point-in-time-recovery-pitr) — выбор новой версии доступен в интерфейсе, если для текущей версии инстанса есть обновление.
 
 {/cut}
 

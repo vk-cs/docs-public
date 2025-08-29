@@ -4,7 +4,7 @@ For more details on Cluster Autoscaler and how to use it, refer to its [official
 
 ## {heading(Preparatory steps)[id=prepare]}
 
-1. [Create](en/kubernetes/k8s/instructions/create-cluster) a cluster if not done so already.
+1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a cluster if not done so already.
 1. [Install and configure](../../connect/kubectl) `kubectl` if not done so already.
 1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
 
