@@ -24,7 +24,7 @@ Packer позволяет сконструировать новый образ �
 
     {tabs}
 
-    {tab(RHLE/Centos)}
+    {tab(RHEL/Centos)}
 
     ```console
     sudo yum install qemu-img

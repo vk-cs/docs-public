@@ -21,7 +21,7 @@ Use the utility `qemu-img`:
 
     {tabs}
 
-    {tab(RHLE/Centos)}
+    {tab(RHEL/Centos)}
 
     ```console
     sudo yum install qemu-img
