@@ -8,6 +8,6 @@
 
 ### Решение
 
+1. [Убедитесь](/ru/storage/s3/instructions/objects/manage-object#lock_object), что отключена блокировка удаления объектов.
 1. [Удалите все объекты](/ru/storage/s3/instructions/objects/manage-object#udalenie_obektov) из бакета.
-
 1. [Удалите](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete) бакет.

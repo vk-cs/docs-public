@@ -1,0 +1,11 @@
+{
+  "title": "Разрыв соединения в балансировщике нагрузки",
+  "pageDescription": "Что делать, если в сервисе Kubernetes типа LoadBalancer происходит разрыв соединения.",
+  "shortDescription": "Что делать, если в сервисе Kubernetes типа LoadBalancer происходит разрыв соединения",
+  "metaTitle": "Разрыв соединения в балансировщике нагрузки",
+  "metaDescription": "Что делать, если в сервисе Kubernetes типа LoadBalancer происходит разрыв соединения",
+  "sectionTitle": "Разрыв соединения в балансировщике нагрузки",
+  "icon": "",
+  "weight": 7,
+  "uuid": ""
+}
