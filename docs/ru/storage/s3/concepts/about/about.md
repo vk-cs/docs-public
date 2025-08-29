@@ -87,7 +87,7 @@ Cloud Storage отличает:
 
 - [изменение уровня доступа](../../instructions/objects/manage-object#manage_access) для объекта;
 - предоставление доступа к объекту по [подписанной ссылке](../../instructions/objects/manage-object#access_via_signed_link);
-- временная и постоянная [блокировка](../features#object_lock) объекта от удаления или перезаписи.
+- временная и постоянная [блокировка](/ru/storage/s3/concepts/objects-lock) объекта от удаления или перезаписи.
 
 ## {heading(Ключ объекта)[id=object_key]}
 

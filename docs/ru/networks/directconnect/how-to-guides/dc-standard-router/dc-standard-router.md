@@ -24,7 +24,7 @@ VK Cloud позволяет настроить разные [варианты п
 
 ## Подготовительные шаги
 
-1. [Активируйте доступ по API](ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api), если этого еще не сделано.
+1. [Активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api), если этого еще не сделано.
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что на вашем компьютере установлены пакеты [curl](https://curl.se/docs) и [jq](https://jqlang.org).
 1. Выберите или создайте в вашей локальной инфраструктуре клиентскую сеть.  Сеть может не иметь доступа к интернету, но должна быть подключена к маршрутизатору, который:
@@ -136,12 +136,12 @@ VK Cloud позволяет настроить разные [варианты п
 
 ## 5. Настройте сетевые интерфейсы продвинутого маршрутизатора
 
-1. [Добавьте](ru/networks/vnet/instructions/advanced-router/manage-interfaces#add) интерфейс продвинутого маршрутизатора, направленный в виртуальную сеть:
+1. [Добавьте](/ru/networks/vnet/instructions/advanced-router/manage-interfaces#add) интерфейс продвинутого маршрутизатора, направленный в виртуальную сеть:
 
    - **Название**: `transit-net-iface`;
    - **Подсеть**: `transit-subnet`;
    - **IP-адрес интерфейса**: `192.168.1.1`.
-1. [Добавьте](ru/networks/vnet/instructions/advanced-router/manage-interfaces#add) интерфейс продвинутого маршрутизатора, направленный в сеть Cloud Direct Connect:
+1. [Добавьте](/ru/networks/vnet/instructions/advanced-router/manage-interfaces#add) интерфейс продвинутого маршрутизатора, направленный в сеть Cloud Direct Connect:
 
    - **Название**: `dc-iface`;
    - **Подсеть**: `dc-subnet`;

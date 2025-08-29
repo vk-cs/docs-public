@@ -27,7 +27,7 @@
 {tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
-1. Откройте консоль и выполните одну из команд в зависимости от того, нужно ли включить для бакета возможность устанавливать [блокировку объектов](../../../concepts/features#object_lock):
+1. Откройте консоль и выполните одну из команд в зависимости от того, нужно ли включить для бакета возможность устанавливать [блокировку объектов](/ru/storage/s3/concepts/objects-lock):
 
    {tabs}
    
@@ -63,25 +63,10 @@
    {/tab}
    
    {tab(Бакет с возможностью блокировки)}
-   
-   ```console
-   aws s3api create-bucket --bucket <ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА> --region <КОД_РЕГИОНА> --object-lock-enabled-for-bucket
-   ```
 
-   Здесь:
+   {include(/ru/_includes/_s3-manage-bucket.md)[tags=create_bucket_block]}
 
-   - `<ИМЯ_БАКЕТА>` — имя бакета, соответствующее [рекомендуемым правилам](../../../concepts/about#bucket_naming).
-
-      После создания бакета изменить его имя будет невозможно.
-
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
-
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-
-   - `<КОД_РЕГИОНА>` — код региона аккаунта, например `ru-msk` для региона Москва. Доступные значения приведены в [описании API сервиса Cloud Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro#avtorizaciya_i_autentifikaciya).
-
-   Пример команды создания бакета c возможностью установить блокировку объектов от удаления и перезаписи:
+   Пример команды создания бакета с возможностью установить блокировку объектов от удаления и перезаписи:
 
    ```console
    aws s3api create-bucket --bucket my-bucket-with-lock --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --region ru-msk --object-lock-enabled-for-bucket

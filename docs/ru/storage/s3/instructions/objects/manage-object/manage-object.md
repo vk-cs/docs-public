@@ -164,18 +164,7 @@
 
 1. Выполните команду:
 
-   ```console
-   aws s3api get-object --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> <ИМЯ_ФАЙЛА> --endpoint-url <URL_СЕРВИСА>
-   ```
-
-   Здесь:
-
-   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
-   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<ИМЯ_ФАЙЛА>` — имя, которое будет присвоено скачанному файлу.
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   {include(/ru/_includes/_s3-manage-object.md)[tags=get_object]}
 
    {cut(Пример команды скачивания объекта)}
 
@@ -583,26 +572,7 @@
       
    Чтобы установить временную блокировку по умолчанию, выполните команду:
 
-   ```console
-   aws s3api put-object-lock-configuration 
-     --endpoint-url <URL_СЕРВИСА> 
-     --bucket <ИМЯ_БАКЕТА>
-     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule":
-       { "DefaultRetention": { "Mode": "<РЕЖИМ_БЛОКИРОВКИ>", "Days": <СРОК_БЛОКИРОВКИ> }}}'
-   ```
-
-   Здесь:
-
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-   - `<ИМЯ_БАКЕТА>` — имя бакета, для которого устанавливается блокировка по умолчанию.
-   - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
-
-     - `GOVERNANCE` — [управляемый режим](../../../concepts/features#temporary_lock);
-     - `COMPLIANCE` — [строгий режим](../../../concepts/features#temporary_lock).
-
-   - `<СРОК_БЛОКИРОВКИ>` — срок блокировки в днях (`Days`) или годах (`Years`) от момента загрузки объекта. Нельзя указать `Days` и `Years` одновременно.
+   {include(/ru/_includes/_s3-manage-object.md)[tags=configuration_lock_object]}
 
    {cut(Пример команды)}
 
@@ -680,7 +650,7 @@
 
 {/tabs}
 
-### Бессрочная блокировка
+### {heading(Бессрочная блокировка)[id=object_legal_hold]}
 
 Бессрочная блокировка (legal hold) может устанавливаться как при загрузке объекта в бакет, так и для объекта, уже находящегося в бакете. Устанавливать и снимать такую блокировку может только пользователь, обладающий [правами на запись WRITE](../../access-management/s3-acl#permissons).
 
@@ -745,21 +715,7 @@
    
    Чтобы установить бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
 
-   ```console
-   aws s3api put-object-legal-hold 
-     --endpoint-url <URL_СЕРВИСА>
-     --bucket <ИМЯ_БАКЕТА> 
-     --key <КЛЮЧ_ОБЪЕКТА>
-     --legal-hold Status=ON
-   ```
-
-   Здесь:
-
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
-   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   {include(/ru/_includes/_s3-manage-object.md)[tags=object_legal_hold]}
 
    {cut(Пример команды)}
 
@@ -775,7 +731,7 @@
    
    {tab(Снять)}
    
-   Чтобы установить бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
+   Чтобы снять бессрочную блокировку для объекта, находящегося в бакете, выполните команду:
 
    ```console
    aws s3api put-object-legal-hold 
@@ -809,19 +765,7 @@
    
    Чтобы узнать статус бессрочной блокировки объекта, выполните команду:
 
-   ```console
-   aws s3api get-object-legal-hold
-     --endpoint-url <URL_СЕРВИСА>
-     --bucket <ИМЯ_БАКЕТА> 
-     --key <КЛЮЧ_ОБЪЕКТА>
-   ```
-   Здесь:
-
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
-   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   {include(/ru/_includes/_s3-manage-object.md)[tags=object_state_legal_hold]}
 
    {cut(Пример команды)}
 
@@ -894,8 +838,8 @@
    - `<ПУТЬ_К_ФАЙЛУ>` — путь к локальному файлу.
    - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-     - `GOVERNANCE` — [управляемый режим](../../../concepts/features#temporary_lock);
-     - `COMPLIANCE` — [строгий режим](../../../concepts/features#temporary_lock).
+     - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/objects-lock#governance-lock);
+     - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
 
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
@@ -938,8 +882,8 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
    - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-     - `GOVERNANCE` — [управляемый режим](../../../concepts/features#temporary_lock);
-     - `COMPLIANCE` — [строгий режим](../../../concepts/features#temporary_lock).
+     - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/objects-lock#governance-lock);
+     - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
 
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
@@ -976,8 +920,8 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
    - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-     - `GOVERNANCE` — [управляемый режим](../../../concepts/features#temporary_lock);
-     - `COMPLIANCE` — [строгий режим](../../../concepts/features#temporary_lock).
+     - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/objects-lock#governance-lock);
+     - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
 
    - `<YYYY-MM-DD HH:MM:SS>` — новая более поздняя дата и время окончания блокировки.
 
@@ -994,22 +938,8 @@
    {/tab}
    
    {tab(Узнать статус)}
-   
-   Чтобы узнать статус временной блокировки объекта, выполните команду:
 
-   ```console
-   aws s3api get-object-retention
-     --endpoint-url <URL_СЕРВИСА>
-     --bucket <ИМЯ_БАКЕТА> 
-     --key <КЛЮЧ_ОБЪЕКТА>
-   ```
-   Здесь:
-
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
-   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   {include(/ru/_includes/_s3-manage-object.md)[tags=object_state]}
 
    {cut(Пример команды)}
 
@@ -1403,18 +1333,7 @@
 
 1. В консоли выполните команду:
 
-   ```console
-   aws s3 rm --recursive s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <URL_СЕРВИСА>
-   ```
-
-   Здесь:
-
-   - `--recursive` — параметр, при использовании которого команда выполнится для всех объектов, расположенных в бакете или в указанной директории.
-   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором расположены объекты.
-   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта или директории, включая путь до нее.
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   {include(/ru/_includes/_s3-manage-object.md)[tags=object_rm]}
 
    {cut(Пример команды удаления одного объекта)}
 
