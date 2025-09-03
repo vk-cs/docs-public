@@ -5,7 +5,7 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
   - **Node type:** [virtual machine template](../../../concepts/flavors#configuration_templates) for worker-nodes.
 
-    Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
+    Templates with high-performance CPUs are available upon request to [technical support](mailto:support@mcs.mail.ru). To use these templates, select the **High frequency CPU** option.
 
     See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
 

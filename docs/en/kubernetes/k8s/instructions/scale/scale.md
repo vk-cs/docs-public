@@ -29,16 +29,16 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start) that cluster needed is running.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Change type of master virtual machine**.
-   1. Select the required VM template from the drop-down list.
-
+   1. Select the VM category to filter the list of available configuration templates.
+      
       {note:info}
 
-      Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
+      Templates with high-performance CPUs are available upon request to [technical support](mailto:support@mcs.mail.ru). To use these templates, select the **High frequency CPU** option.
 
       See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
       {/note}
-
+   1. Select the required VM template.
    1. Click the **Save** button.
 
    {/tab}
@@ -134,16 +134,16 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. [Make sure](../manage-cluster#start) that cluster needed is running.
    1. Locate the necessary cluster and node group.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Change type of master virtual machine**.
-   1. Select the required VM template from the drop-down list.
-
+   1. Select the VM category to filter the list of available configuration templates.
+      
       {note:info}
 
-      Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
+      Templates with high-performance CPUs are available upon request to [technical support](mailto:support@mcs.mail.ru). To use these templates, select the **High frequency CPU** option.
 
       See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
       {/note}
-
+   1. Select the required VM template.
    1. Click the **Save** button.
 
    {/tab}

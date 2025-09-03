@@ -83,7 +83,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 ## {heading(Customize scaling options)[id=scaling_options]}
 
-You can change the size of a group of worker nodes manually or configure automatic scaling.
+You can change the size of a group of worker nodes manually or configure automatic scaling. You can also change the configuration template of VMs for an already existing group of worker nodes.
 
 These operations are described in detail in [Scaling cluster nodes](../scale) section.
 
