@@ -29,7 +29,9 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
   - **Enable autoscaling:** enable this option to allow [auto-scaling](../../../concepts/architecture#cluster_scaling_options) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling will be performed.
 
-  - **Percentage of unavailable nodes when updating the cluster version:** the percentage number of nodes that can be taken out of the node group when [cluster update procedure](../../update) is performed.
+  - **Percentage of unavailable nodes when updating the cluster version:**  the percentage of nodes that can be removed from the node group when [updating](../../update) the cluster.
+  
+    You can set the value of this setting both when [creating](/en/kubernetes/k8s/instructions/manage-node-group#add_group) the node group and before starting the cluster [update](/en/kubernetes/k8s/instructions/manage-node-group#configure_node_update). During the update process, Cloud Container redirects the load from the nodes that are being updated to other nodes, so you need to ensure there are [enough spare nodes available](/en/kubernetes/k8s/concepts/update#unavailable-nodes). Otherwise, applications that run on the nodes that are being updated may not have enough resources.
 
   - Kubernetes parameters: labels, taints and tolerations.
 
