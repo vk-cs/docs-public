@@ -2,7 +2,7 @@ For Kubernetes clusters with version 1.17.8 and higher, a Kubernetes version upd
 
 Clusters of versions 1.16 and lower can only be updated by transferring a backup of data to a new cluster of the required version, for example, using [Velero](https://velero.io/docs).
 
-During a cluster update the following entities also are updated:
+During the cluster update, the following entities also are updated:
 
 - Installed [add-ons](../versions/components).
 - Part of the cluster [components](../versions/components):
@@ -11,49 +11,63 @@ During a cluster update the following entities also are updated:
 
     When CoreDNS is updating, the current [Corefile](https://coredns.io/2017/07/23/corefile-explained/) is overwritten with the new one with default settings.
 
-    If the cluster uses a modified Corefile, then back it up prior to updating the cluster.
+    If the cluster uses a modified Corefile, back it up prior to updating the cluster.
 
   - Gatekeeper.
   - Shell Operator.
   - Kubernetes Dashboard.
 
-  If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
+  If a component, that is to be updated with the cluster, is deleted, it will be restored during the next cluster update.
 
-Updating is done as follows:
+## {heading(How master and worker nodes are updated)[id=update-process]}
 
-1. Master nodes are updated. The updating is performed according to the principle of rolling update (step-by-step):
+The cluster is updated as follows:
 
-   1. The first master node is updated: it is removed from the cluster, updated, checked for successful update, and returned back to the cluster.
-   1. As soon as the updated master node returned to the cluster, the next node is updated. Consequently, one node at a time, all cluster master nodes are updated.
+1. Master nodes are updated. The update is performed using the principle of a rolling update, meaning the process is carried out step-by-step:
+
+   1. The first master node is updated. This process involves removing the node from the cluster, updating the cluster, verifying that it was successful, and then adding the node back to the cluster.
+   1. As soon as the updated master node returns to the cluster, the next node in the cluster is updated. This process continues one node at a time until all the cluster's master nodes are updated.
+
+   We recommend creating clusters with 3-5 master nodes. This will ensure that the services function without interruption during cluster updates. 
 
 1. Worker nodes in groups are updated.
 
-   The procedure also follows the rolling update principle (step-by-step), but in one step updates not a single node but the maximum possible number of nodes. This number is calculated based on the node group setting **Percentage of unavailable nodes when updating the cluster**. The calculations use rounding to integers upwards.
+   This process is also performed using the rolling update principle. However, not one node is updated at a time, but the maximum number of nodes possible. This number is calculated based on the following [setting of the node group](/en/kubernetes/k8s/instructions/helpers/node-group-settings): **Percentage of unavailable nodes when updating the cluster version**. You can set the value of this setting both when [creating](/en/kubernetes/k8s/instructions/manage-node-group#add_group) the node group and before starting the cluster [update](/en/kubernetes/k8s/instructions/manage-node-group#configure_node_update). The calculations are rounded up to an integer.
 
-   **How to choose the value of the setting:**
+## {heading(How to calculate the percentage of unavailable nodes when updating clusters)[id=unavailable-nodes]}
 
-   Suppose:
-   - The cluster has a group of nine worker nodes that run business-critical workloads. These services and applications must be available throughout the upgrade process.
-   - The workload requires at least six nodes, i.e., three nodes can be allowed to update at the same time.
+During the update process, the nodes become unavailable, and Cloud Containers automatically redistributes the load from them to the free nodes. During the update process, the auto-scaling functions do not work, so you need to have a sufficient number of spare master and worker nodes in your cluster, where the workload from the nodes undergoing updates can be redirected.
 
-   To select the setting value:
+When selecting the value for the **Percentage of unavailable nodes when updating the cluster version** setting, consider not only the number of nodes that you want to be updated at the same time, but also the available resources in the cluster. During the update process, Cloud Container redirects the load from the nodes that are being updated to other nodes, so there must be enough spare nodes available. Otherwise, applications running on the updated nodes may not have enough resources. Additionally, make sure there are enough spare nodes available in case the load on the existing nodes increases due to the redirected traffic from the updated nodes. The recommended number is 1% of the total number of nodes.
 
-   1. Calculate what percentage of nodes are allowed to update. To do this, divide the maximum number of nodes that are allowed to update by the total number of nodes, and multiply by 100:
+So, if you plan to simultaneously update 10 nodes in a cluster of 30 nodes, and you set the respective value for the **Percentage of unavailable nodes when updating the cluster version** setting, you must have at least 10 spare nodes where the load can be directed to from the updated nodes, and one extra node in case the load increases.
 
-      `(3 / 9) x 100 = 33,33333...%`
+Let's look at an example of how to calculate the value for the **Percentage of unavailable nodes when updating the cluster version** setting. Let's assume that:
 
-   1. Round down the result. This will be the optimal setting:
+- The cluster has a group of nine worker nodes that run business-critical workloads. These services and applications must be available throughout the update process.
+- The workload requires at least six nodes, which means three nodes can be updated at the same time.
 
-      `9 x 33% = 2,97`
+To select the setting value:
 
-      The resulting fractional result will be rounded to a whole number upwards. Total you can update **three nodes out of nine at the same time, which satisfies the requirements**.
+1. Calculate what percentage of nodes is allowed to update. To do this, divide the maximum number of nodes that are allowed to update by the total number of nodes, and multiply it by 100:
 
-   1. Set the setting value:
+   `(3 / 9) x 100 = 33,33333...%`
 
-      - either strictly equal to the calculated percentage so that the maximum allowed number of nodes is updated;
-      - or less than the calculated percentage so that fewer nodes are updated.
+1. Round the result up. This will be the optimal setting:
 
-      In the example above:
-      - A setting of 33% will update three nodes at a time;
-      - Setting it to 20% will update two nodes at a time;
-      - A setting of 10% will update one node at a time.
+   `9 x 33% = 2,97`
+
+   In this case, in total, you can update three nodes out of nine at the same time, which satisfies the requirements.
+
+1. Make sure that you have enough worker nodes in your cluster so that Cloud Containers can transfer the load from the existing nodes to them. If you don't have enough worker nodes, [add](/en/kubernetes/k8s/instructions/manage-node-group#add_group) them.
+
+1. Set the value as either:
+
+   - Strictly equal to the calculated percentage so that the maximum allowed number of nodes is updated.
+   - Less than the calculated percentage so that fewer nodes are updated.
+
+In the example above:
+
+  - With the value set to 33%, Cloud Containers will update three nodes at a time.
+  - With the value set to 20%, Cloud Containers will update two nodes at a time.
+  - With the value set to 10%, Cloud Containers will update one node at a time.
