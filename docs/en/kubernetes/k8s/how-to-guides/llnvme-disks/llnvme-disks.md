@@ -13,7 +13,7 @@ LL NVMe (Low Latency NVMe) disks are high-performance local disks available on t
 
 1. In your VK Cloud management console, [add](/en/kubernetes/k8s/instructions/manage-node-group#add_group) a worker node group with VMs based on the configuration for LL NVMe:
 
-   - **Category of virtual machine**: `High frequency CPU`.
+   - **Category of virtual machine**: `VMs with local drives`.
    - **Node type**: a VM template for an LL NVMe disk (such templates have `NVME` in their names).
    - Leave the other settings unchanged. 
 
@@ -90,7 +90,7 @@ To learn how to connect LL NVMe disks to worker nodes, deploy the `coffee` test 
          storage: 1Gi
      storageClassName: "csi-ef-nvme"
    ---
-     apiVersion: apps/v1
+   apiVersion: apps/v1
    kind: StatefulSet
    metadata:
      name: coffee
