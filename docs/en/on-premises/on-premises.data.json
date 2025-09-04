@@ -6,14 +6,14 @@
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud/",
           "title": "Private Cloud documentation",
-          "description": "",
+          "description": "A platform for building a private cloud in a customer's data center",
           "icon": "/en/on-premises/assets/private-cloud-icon.svg",
           "iconMobile": "/en/on-premises/assets/private-cloud-mobile-icon.svg"
         },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud-knowledge-base/",
           "title": "Private Cloud knowledge base",
-          "description": "",
+          "description": "Instructions for solving typical tasks and how-to guides",
           "icon": "/en/on-premises/assets/knowledge-base-icon.svg",
           "iconMobile": "/en/on-premises/assets/knowledge-base-mobile-icon.svg"
         }
@@ -27,21 +27,21 @@
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/dev-platform/",
           "title": "Dev Platform",
-          "description": "",
+          "description": "A complete solution for building internal development platforms",
           "icon": "/en/on-premises/assets/dev-platform-icon.svg",
           "iconMobile": "/en/on-premises/assets/dev-platform-mobile-icon.svg"
         },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/data-platform/",
           "title": "VK Data Platform",
-          "description": "",
+          "description": "An universal platform for working with big data and machine learning",
           "icon": "/en/on-premises/assets/data-platform-icon.svg",
           "iconMobile": "/en/on-premises/assets/data-platform-mobile-icon.svg" 
         },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/s3/",
           "title": "Cloud Storage in private installation",
-          "description": "",
+          "description": "Fast and reliable S3-compatible object storage",
           "icon": "/en/on-premises/assets/cloud-storage-icon.svg",
           "iconMobile": "/en/on-premises/assets/cloud-storage-mobile-icon.svg" 
         }
