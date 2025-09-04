@@ -87,6 +87,12 @@
 | Quota-manager     | https://mcs.mail.ru/quota-manager                   | Просмотр [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) проекта |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Оркестрация облачных сервисов (эндпоинт устарел) |
 
+{note:info}
+
+В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.com/service-users/) — он позволяет управлять [сервисными учетными записями](/ru/tools-for-using-services/account/concepts/service-accounts).
+
+{/note}
+
 {/cut}
 
 ## Получение Project ID
