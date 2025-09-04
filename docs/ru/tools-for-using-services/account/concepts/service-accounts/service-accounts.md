@@ -13,7 +13,7 @@
 - [настраивать](../../instructions/project-settings/service-account-manage#authorize) окружение для доступа к API от имени СУЗ;
 - [удалять](../../instructions/project-settings/service-account-manage#delete) СУЗ.
 
-Эти же действия через API может выполнять программа, авторизованная с помощью СУЗ с соответствующей ролью.
+Эти же действия можно выполнять [через API](/ru/tools-for-using-services/api/api-spec/api-service-users).
 
 Права на управление СУЗ в зависимости от роли в проекте:
 
