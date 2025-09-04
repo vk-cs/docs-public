@@ -11,7 +11,7 @@
 1. [Создайте](../../instructions/create-cluster) кластер, если это еще не сделано.
 1. В личном кабинете VK Cloud [добавьте](/ru/kubernetes/k8s/instructions/manage-node-group#add_group) группу узлов с ВМ на основе конфигурации для LL NVMe:
 
-   - **Категория виртуальной машины**: `Высокопроизводительные CPU`.
+   - **Категория виртуальной машины**: `ВМ с локальными дисками`.
    - **Тип Node-узлов**: шаблон конфигурации ВМ для диска LL NVMe (в названии такого шаблона будет `NVME`).
    - Другие настройки оставьте без изменений.
 
@@ -86,7 +86,7 @@
          storage: 1Gi
      storageClassName: "csi-ef-nvme"
    ---
-     apiVersion: apps/v1
+   apiVersion: apps/v1
    kind: StatefulSet
    metadata:
      name: coffee
