@@ -5,6 +5,11 @@
     "metaTitle": "vGPU: Виртуализация GPU",
     "metaDescription": "Особенности работы vGPU: профили, лицензирование, отличия от физических GPU",
     "sectionTitle": "vGPU: Виртуализация GPU",
+    "build": {
+      "for": [
+        "dontbuild"
+      ]
+    },
     "icon": "",
     "weight": 2,
     "uuid": ""
