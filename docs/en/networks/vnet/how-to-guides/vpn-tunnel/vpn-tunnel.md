@@ -166,16 +166,16 @@ Select **Settings** - `Basic`, and set:
 
 - **Tunnel name**: `vkcloud-client-vpn`.
 - **Public IPv4 Peer IP address**: `192.0.2.200`.
-- **Shared Key (PSK)**: Any pre-shared key of your choice that satisfies the key requirements.
+- **Pre-shared Key (PSK)**: Any pre-shared key of your choice that satisfies the key requirements.
 
   The key must:
 
-  - be at least 16 characters long;
-  - contain at least one letter or number;
+  - be at least 16 characters long
+  - contain at least one letter or number
   - consist only of the following valid characters:
-    - uppercase and lowercase letters of the Latin alphabet;
-    - numbers;
-    - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
+    - uppercase and lowercase letters of the Latin alphabet
+    - numbers
+    - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`
 
 {/tab}
 
@@ -238,11 +238,23 @@ Select **Settings** - `Basic`, and set:
 
    {/note}
 
-1. Specify the shared key (PSK) in the `/etc/ipsec.secrets` file. The key must match the key specified [on the cloud side](#1_set_up_a_vpn_tunnel_on_the_cloud_side):
+1. Specify the pre-shared key (PSK) in the `/etc/ipsec.secrets` file. The key must match the key specified [on the cloud side](#1_set_up_a_vpn_tunnel_on_the_cloud_side):
 
    ```ini
-   192.0.2.200 192.0.2.100 : PSK "<PRE-SHARED_KEY_SPECIFIED_PREVIUOSLY>"
+   192.0.2.200 192.0.2.100 : PSK "<PRE-SHARED_KEY_SPECIFIED_PREVIOUSLY>"
    ```
+
+    {note:warn}
+
+    Some special characters, such as `#`, `&`, or `{`, can be interpreted by the operating system. In this case, the key will be invalid and the VPN tunnel will not work. Don't forget to escape the PSK using the `""` characters.
+
+    Example:
+
+    ```plaintext
+    192.0.2.200 192.0.2.100 : PSK "k7@Jm4Px&9Lq#Wn2!v5*Cz8$Ys3%Ft6^Rg1=Hd0+Bl9}Qw7{Ko5&Np3@Xr1*Mj4"
+    ```
+
+    {/note}
 
 1. Restart the StrongSwan service:
 

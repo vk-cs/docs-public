@@ -183,6 +183,7 @@
         {note:info}
 
         Допустимые символы:
+
         - заглавные и строчные буквы латинского алфавита;
         - цифры;
         - спецсимволы `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
@@ -194,7 +195,7 @@
    1. (Опционально) укажите расширенные настройки:
 
       - **Идентификатор маршрутизатора пира для аутентификации (Peer ID)** — по умолчанию совпадает с адресом пира.
-      - (Только для VPN в SDN Sprut) **Селектор потоков траффика**:
+      - (Только для VPN в SDN Sprut) **Селектор потоков трафика**:
          - **Объединить** — не расщеплять трафик-селекторы, то есть оборачивать все адресные префиксы в один туннель передачи данных;
          - **Разделить** — расщеплять трафик-селекторы, то есть для каждой пары адресных префиксов создавать отдельный туннель передачи данных.
       - **Состояние инициатора** — поведение при установке IPsec-соединения:
@@ -330,7 +331,7 @@
       ```
 
       ```console
-      openstack router show <идентификатор марщрутизатора>
+      openstack router show <идентификатор маршрутизатора>
       ```
 
       Запишите идентификатор маршрутизатора, чьи подсети нужно сделать доступными через VPN-туннель.
@@ -344,8 +345,8 @@
       {tab(Linux/macOS (bash, zsh))}
             
       ```console
-      openstack vpn service create <имя VPN-сервиса> \
-        --router <идентификатор маршрутизатора, полученный на предыдущем шаге> \
+      openstack vpn service create <ИМЯ_VPN-СЕРВИСА> \
+        --router <ИДЕНТИФИКАТОР_МАРШРУТИЗАТОРА_ПОЛУЧЕННЫЙ_НА_ПРЕДЫДУЩЕМ_ШАГЕ> \
         --enable
       ```
 
@@ -354,8 +355,8 @@
       {tab(Windows (PowerShell))}
       
       ```console
-      openstack vpn service create <имя VPN-сервиса> `
-        --router <идентификатор маршрутизатора, полученный на предыдущем шаге> `
+      openstack vpn service create <ИМЯ_VPN-СЕРВИСА> `
+        --router <ИДЕНТИФИКАТОР_МАРШРУТИЗАТОРА_ПОЛУЧЕННЫЙ_НА_ПРЕДЫДУЩЕМ_ШАГЕ> `
         --enable
       ```
 
@@ -374,7 +375,7 @@
       ```
 
       ```console
-      openstack vpn endpoint group show <идентификатор группы>
+      openstack vpn endpoint group show <ИДЕНТИФИКАТОР_ГРУППЫ>
       ```
 
       Запишите:
@@ -391,11 +392,11 @@
       {tab(Linux/macOS (bash, zsh))}
             
       ```console
-      openstack vpn endpoint group create <имя локальной endpoint-группы> \
+      openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
         --type subnet \
-        --value <идентификатор подсети, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
+        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> \
         ...
-        --value <идентификатор дополнительной подсети>
+        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -403,11 +404,11 @@
       {tab(Windows (PowerShell))}
       
       ```console
-      openstack vpn endpoint group create <имя локальной endpoint-группы> `
+      openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
         --type subnet `
-        --value <идентификатор подсети, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
+        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ,_ПОДКЛЮЧЕННОЙ_ _К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> `
         ...
-        --value <идентификатор дополнительной подсети>
+        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -423,11 +424,11 @@
       {tab(Linux/macOS (bash, zsh))}
             
       ```console
-      openstack vpn endpoint group create <имя удаленной endpoint-группы> \
+      openstack vpn endpoint group create <ИМЯ_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
         --type cidr \
-        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
+        --value "<УДАЛЕННАЯ_ПОДСЕТЬ_В_ФОРМАТЕ_10.0.0.0/24_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ>" \
         ...
-        --value "<дополнительная удаленная подсеть>"
+        --value "<ДОПОЛНИТЕЛЬНАЯ_УДАЛЕННАЯ_ПОДСЕТЬ>"
       ```
 
       {/tab}
@@ -435,11 +436,11 @@
       {tab(Windows (PowerShell))}
       
       ```console
-      openstack vpn endpoint group create <имя удаленной endpoint-группы> `
+      openstack vpn endpoint group create <ИМЯ_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
         --type cidr `
-        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
+        --value "<УДАЛЕННАЯ_ПОДСЕТЬ_В_ФОРМАТЕ_10.0.0.0/24_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ>" `
         ...
-        --value "<дополнительная удаленная подсеть>"
+        --value "<ДОПОЛНИТЕЛЬНАЯ_УДАЛЕННАЯ_ПОДСЕТЬ>"
       ```
 
       {/tab}
@@ -455,17 +456,17 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn ipsec site connection create <имя VPN-туннеля> \
-     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> \
-     --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
-     --peer-address "<адрес пира VPN>" \
-     --peer-id "<идентификатор пира VPN>" \
-     --ikepolicy <идентификатор IKE-политики> \
-     --ipsecpolicy <идентификатор IPsec-политики> \
-     --vpnservice <идентификатор VPN-сервиса> \
-     --local-endpoint-group <идентификатор локальной endpoint-группы> \
-     --peer-endpoint-group <идентификатор удаленной endpoint-группы> \
-     --psk "<ключ PSK>" \
+   openstack vpn ipsec site connection create <ИМЯ_VPN-ТУННЕЛЯ> \
+     --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> \
+     --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> \
+     --peer-address "<АДРЕС_ПИРА_VPN>" \
+     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" \
+     --ikepolicy <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ> \
+     --ipsecpolicy <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ> \
+     --vpnservice <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> \
+     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
+     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
+     --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" \
      --enable
    ```
   
@@ -474,23 +475,43 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn ipsec site connection create <имя VPN-туннеля> `
-     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> `
-     --initiator <поведение при установке IPsec-соединения> `
-     --peer-address "<адрес пира VPN>" `
-     --peer-id "<идентификатор пира VPN>" `
-     --ikepolicy <идентификатор IKE-политики> `
-     --ipsecpolicy <идентификатор IPsec-политики> `
-     --vpnservice <идентификатор VPN-сервиса> `
-     --local-endpoint-group <идентификатор локальной endpoint-группы> `
-     --peer-endpoint-group <идентификатор удаленной endpoint-группы> `
-     --psk "<ключ PSK>" `
+   openstack vpn ipsec site connection create <ИМЯ_VPN_ТУННЕЛЯ_> `
+     --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> `
+     --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> `
+     --peer-address "<АДРЕС_ПИРА_VPN>" `
+     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" `
+     --ikepolicy <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ> `
+     --ipsecpolicy <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ> `
+     --vpnservice <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> `
+     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
+     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
+     --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" `
      --enable
    ```
 
    {/tab}
 
    {/tabs}
+
+    Допустимые в ключе совместного использования символы:
+
+    - заглавные и строчные буквы латинского алфавита;
+    - цифры;
+    - спецсимволы `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
+
+    Ключ должен содержать хотя бы одну букву или цифру.
+
+    {note:warn}
+
+    Некоторые спецсимволы, например `#`, `&` или `{`, могут интерпретироваться операционной системой. В этом случае ключ совместного использования будет некорректным и VPN-туннель не заработает, поэтому обязательно экранируйте ключ с помощью символов `""`.
+
+    Пример:
+
+    ```console
+    --psk "k7@Jm4Px&9Lq#Wn2!v5*Cz8$Ys3%Ft6^Rg1=Hd0+Bl9}Qw7{Ko5&Np3@Xr1*Mj4"
+    ```
+
+   {/note}
 
 {/tab}
 
@@ -556,6 +577,7 @@
         {note:info}
 
         Допустимые символы:
+
         - заглавные и строчные буквы латинского алфавита;
         - цифры;
         - спецсимволы `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
@@ -567,7 +589,7 @@
    1. (Опционально) расширенные настройки:
 
       - **Идентификатор маршрутизатора пира для аутентификации (Peer ID)** — по умолчанию совпадает с адресом пира.
-      - (Только для VPN в SDN Sprut) **Селектор потоков траффика**:
+      - (Только для VPN в SDN Sprut) **Селектор потоков трафика**:
          - **Объединить** — не расщеплять трафик-селекторы, то есть оборачивать все адресные префиксы в один туннель передачи данных;
          - **Разделить** — расщеплять трафик-селекторы, то есть для каждой пары адресных префиксов создавать отдельный туннель передачи данных.
       - **Состояние инициатора** — поведение при установке IPsec-соединения:
@@ -628,11 +650,11 @@
       {tab(Linux/macOS (bash, zsh))}
             
       ```console
-      openstack vpn endpoint group create <имя локальной endpoint-группы> \
+      openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
         --type subnet \
-        --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
+        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ_ПЛАТФОРМЫ_VK_CLOUD,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> \
         ...
-        --value <идентификатор дополнительной подсети>
+        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -640,11 +662,11 @@
       {tab(Windows (PowerShell))}
       
       ```console
-      openstack vpn endpoint group create <имя локальной endpoint-группы> `
+      openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
         --type subnet `
-        --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
+        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ_ПЛАТФОРМЫ_VK_CLOUD,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> `
         ...
-        --value <идентификатор дополнительной подсети>
+        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -660,11 +682,11 @@
       {tab(Linux/macOS (bash, zsh))}
             
       ```console
-      openstack vpn endpoint group create <имя удаленной endpoint-группы> \
+      openstack vpn endpoint group create <ИМЯ_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
         --type cidr \
-        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
+        --value "<УДАЛЕННАЯ_ПОДСЕТЬ_В_ФОРМАТЕ_10.0.0.0/24,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ>" \
         ...
-        --value "<дополнительная удаленная подсеть>"
+        --value "<ДОПОЛНИТЕЛЬНАЯ_УДАЛЕННАЯ_ПОДСЕТЬ>"
       ```
 
       {/tab}
@@ -672,11 +694,11 @@
       {tab(Windows (PowerShell))}
       
       ```console
-      openstack vpn endpoint group create <имя удаленной endpoint-группы> `
+      openstack vpn endpoint group create <ИМЯ_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
         --type cidr `
-        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
+        --value "<УДАЛЕННАЯ_ПОДСЕТЬ_В_ФОРМАТЕ_10.0.0.0/24,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ>" `
         ...
-        --value "<дополнительная удаленная подсеть>"
+        --value "<ДОПОЛНИТЕЛЬНАЯ_УДАЛЕННАЯ_ПОДСЕТЬ>"
       ```
 
       {/tab}
@@ -692,14 +714,15 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn ipsec site connection set <идентификатор VPN-туннеля> \
-     --name <новое имя VPN-туннеля> \
-     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> \
-     --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
-     --peer-address "<адрес пира VPN>" \
-     --peer-id "<идентификатор пира VPN>" \
-     --local-endpoint-group <идентификатор локальной endpoint-группы> \
-     --peer-endpoint-group <идентификатор удаленной endpoint-группы> \
+   openstack vpn ipsec site connection set <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ> \
+     --name <НОВОЕ_ИМЯ_VPN-ТУННЕЛЯ> \
+     --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> \
+     --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> \
+     --peer-address "<АДРЕС_ПИРА_VPN>" \
+     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" \
+     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
+     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
+     --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" \
      --enable
    ```
   
@@ -708,20 +731,40 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn ipsec site connection set <идентификатор VPN-туннеля> `
-     --name <новое имя VPN-туннеля> `
-     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <тайм-аут проверки> `
-     --initiator <поведение при установке IPsec-соединения> `
-     --peer-address "<адрес пира VPN>" `
-     --peer-id "<идентификатор пира VPN>" `
-     --local-endpoint-group <идентификатор локальной endpoint-группы> `
-     --peer-endpoint-group <идентификатор удаленной endpoint-группы> `
+   openstack vpn ipsec site connection set <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ> `
+     --name <НОВОЕ_ИМЯ_VPN-ТУННЕЛЯ> `
+     --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> `
+     --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> `
+     --peer-address "<АДРЕС_ПИРА_VPN>" `
+     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" `
+     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
+     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
+     --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" \
      --enable
    ```
 
    {/tab}
    
    {/tabs}
+
+    Допустимые в ключе совместного использования символы:
+
+    - заглавные и строчные буквы латинского алфавита;
+    - цифры;
+    - спецсимволы `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
+
+    Ключ должен содержать хотя бы одну букву или цифру.
+
+    {note:warn}
+
+    Некоторые спецсимволы, например `#`, `&` или `{`, могут интерпретироваться операционной системой. В этом случае ключ совместного использования будет некорректным и VPN-туннель не заработает, поэтому обязательно экранируйте ключ с помощью символов `""`.
+
+    Пример:
+
+    ```console
+    --psk "k7@Jm4Px&9Lq#Wn2!v5*Cz8$Ys3%Ft6^Rg1=Hd0+Bl9}Qw7{Ko5&Np3@Xr1*Mj4"
+    ```
+    {/note}
 
 {/tab}
 
@@ -764,7 +807,7 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn service set <идентификатор VPN-сервиса> --disable && openstack vpn service set <идентификатор VPN-сервиса> --enable
+   openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --disable && openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --enable
    ```
   
    {/tab}
@@ -772,7 +815,7 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn service set <идентификатор VPN-сервиса> --disable; openstack vpn service set <идентификатор VPN-сервиса> --enable
+   openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --disable; openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --enable
    ```
 
    {/tab}
@@ -827,7 +870,7 @@
 1. Чтобы удалить только VPN-туннель, выполните команду:
 
    ```console
-   openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
+   openstack vpn ipsec site connection delete <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ>
    ```
 
 1. Чтобы удалить VPN-туннель и все связанные с ним объекты, выполните команду:
@@ -837,12 +880,12 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
-   openstack vpn ike policy delete <идентификатор IKE-политики>
-   openstack vpn ipsec policy delete <идентификатор IPsec-политики>
-   openstack vpn endpoint group delete <идентификатор локальной endpoint-группы>
-   openstack vpn endpoint group delete <идентификатор удаленной (peer) endpoint-группы>
-   openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель 
+   openstack vpn ipsec site connection delete <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ>
+   openstack vpn ike policy delete <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ>
+   openstack vpn ipsec policy delete <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ>
+   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ>
+   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ>
+   openstack vpn service delete <ИДЕНТИФИКАТОР_VPN-СЕРВИСА,_КОТОРЫЙ ОБСЛУЖИВАЕТ_ЭТОТ_VPN-ТУННЕЛЬ> 
    
    ```
 
@@ -851,12 +894,12 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>; `
-   openstack vpn ike policy delete <идентификатор IKE-политики>; `
-   openstack vpn ipsec policy delete <идентификатор IPsec-политики>; `
-   openstack vpn endpoint group delete <идентификатор локальной endpoint-группы>; `
-   openstack vpn endpoint group delete <идентификатор удаленной (peer) endpoint-группы>; `
-   openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель>
+   openstack vpn ipsec site connection delete <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ>; `
+   openstack vpn ike policy delete <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ>; `
+   openstack vpn ipsec policy delete <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ>; `
+   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ>; `
+   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_(PEER)_ENDPOINT-ГРУППЫ>; `
+   openstack vpn service delete <ИДЕНТИФИКАТОР_VPN-СЕРВИСА,_КОТОРЫЙ_ОБСЛУЖИВАЕТ_ЭТОТ_VPN-ТУННЕЛЬ>
    ```
 
    {/tab}

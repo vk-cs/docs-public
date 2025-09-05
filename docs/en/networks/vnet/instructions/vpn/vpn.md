@@ -175,16 +175,16 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
        - **Tunnel name**.
        - **Public IPv4 address of the peer (Peer IP)**.
-       - **Shared Key (PSK)**.
+       - **Pre-shared Key (PSK)**.
 
          If necessary, generate a key by clicking the corresponding button.
 
          {note:info}
 
-         Valid characters:
-         - uppercase and lowercase letters of the Latin alphabet;
-         - numbers;
-         - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
+          Valid characters:
+         - uppercase and lowercase letters of the Latin alphabet
+         - numbers
+         - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`
 
          The key must contain at least one letter or number.
 
@@ -451,47 +451,67 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 1. Create a VPN tunnel:
 
-   {tabs}
+    {tabs}
    
-   {tab(Linux/macOS (bash, zsh))}
+    {tab(Linux/macOS (bash, zsh))}
       
-   ```console
-    openstack vpn ipsec site connection create <VPN tunnel name> \
-      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
-      --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> \
-      --peer-address "<VPN peer address>" \
-      --peer-id "<VPN peer ID>" \
-      --ikepolicy <IKE policy identifier> \
-      --ipsecpolicy <ipsec policy id> \
-      --vpnservice <VPN Service ID> \
-      --local-endpoint-group <local endpoint-group id> \
-      --peer-endpoint-group <remote endpoint-group ID> \
-      --psk "<PSK key>" \
-      --enable
+    ```console
+     openstack vpn ipsec site connection create <VPN tunnel name> \
+       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
+       --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> \
+       --peer-address "<VPN peer address>" \
+       --peer-id "<VPN peer ID>" \
+       --ikepolicy <IKE policy ID> \
+       --ipsecpolicy <ipsec policy ID> \
+       --vpnservice <VPN Service ID> \
+       --local-endpoint-group <local endpoint-group ID> \
+       --peer-endpoint-group <remote endpoint-group ID> \
+       --psk "<pre-shared key>" \
+       --enable
+    ```
+
+    {/tab}
+
+    {tab(Windows (PowerShell))}
+
+    ```console
+     openstack vpn ipsec site connection create <VPN tunnel name> `
+       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
+       --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> `
+       --peer-address "<VPN peer address>" `
+       --peer-id "<VPN peer ID>" `
+       --ikepolicy <IKE policy ID> `
+       --ipsecpolicy <ipsec policy ID> `
+       --vpnservice <VPN service ID> `
+       --local-endpoint-group <local endpoint-group ID> `
+       --peer-endpoint-group <remote endpoint-group ID> `
+       --psk "<pre-shared key>" `
+       --enable
    ```
 
-   {/tab}
-   
-   {tab(Windows (PowerShell))}
-   
-   ```console
-    openstack vpn ipsec site connection create <VPN tunnel name> `
-      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
-      --initiator <behavior when establishing an IPsec connection> `
-      --peer-address "<VPN peer address>" `
-      --peer-id "<VPN peer ID>" `
-      --ikepolicy <IKE policy id> `
-      --ipsecpolicy <ipsec policy id> `
-      --vpnservice <VPN service id> `
-      --local-endpoint-group <local endpoint-group id> `
-      --peer-endpoint-group <remote endpoint-group id> `
-      --psk "<PSK key>" `
-      --enable
-   ```
+    {/tab}
 
-   {/tab}
+    {/tabs}
 
-   {/tabs}
+    Valid characters for use in the pre-shared key:
+
+    - uppercase and lowercase letters of the Latin alphabet
+    - numbers
+    - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`,  `>`, `{`, `}`, `/`
+
+    The key must contain at least one letter or number.
+
+    {note:warn}
+
+    Some special characters, such as `#` or `{`, can be interpreted by the operating system. In this case, the key will be invalid and the VPN tunnel will not work. Don't forget to escape the PSK using the `""` characters.
+
+    Example:
+
+    ```console
+    --psk "k7@Jm4Px&9Lq#Wn2!v5*Cz8$Ys3%Ft6^Rg1=Hd0+Bl9}Qw7{Ko5&Np3@Xr1*Mj4"
+    ```
+
+    {/note}
 
 {/tab}
 
@@ -550,22 +570,22 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
        - **Tunnel name**.
        - **Public IPv4 address of the peer (Peer IP)**.
-       - **Shared Key (PSK)**.
+       - **Pre-shared Key (PSK)**.
 
          If necessary, generate a key by clicking the corresponding button.
 
          {note:info}
 
          Valid characters:
-         - uppercase and lowercase Latin letters;
-         - numbers;
-         - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
+         - uppercase and lowercase letters of the Latin alphabet
+         - numbers
+         - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`
 
          The key must contain at least one letter or number.
 
          {/note}
 
-   1. (Optional) Аdvanced settings:
+   1. (Optional) Advanced settings:
 
       - **Peer Router ID for Authentication (Peer ID)** — by default matches the peer address.
       - (For VPN in Sprut SDN only) **Селектор потоков траффика**:
@@ -702,8 +722,9 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> \
       --peer-address "<VPN peer address>" \
       --peer-id "<VPN peer ID>" \
-      --local-endpoint-group <local endpoint-group id> \
+      --local-endpoint-group <local endpoint-group ID> \
       --peer-endpoint-group <remote endpoint-group ID> \
+      --psk "<pre-shared key>" \
       --enable
    ```
 
@@ -715,17 +736,37 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
     openstack vpn ipsec site connection set <VPN tunnel ID> `
       --name <new VPN tunnel name> `
       --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
-      --initiator <behavior when establishing an IPsec connection> `
+      --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> `
       --peer-address "<VPN peer address>" `
       --peer-id "<VPN peer ID>" `
-      --local-endpoint-group <local endpoint-group id> `
-      --peer-endpoint-group <remote endpoint-group id> `
+      --local-endpoint-group <local endpoint-group ID> `
+      --peer-endpoint-group <remote endpoint-group ID> `
+      --psk "<pre-shared key>" `
       --enable
    ```
 
    {/tab}
    
    {/tabs}
+
+    Valid characters for use in the pre-shared key:
+
+    - uppercase and lowercase letters of the Latin alphabet
+    - numbers
+    - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`,  `>`, `{`, `}`, `/`
+
+    The key must contain at least one letter or number.
+
+    {note:warn}
+
+    Some special characters, such as `#` or `{`, can be interpreted by the operating system. In this case, the key will be invalid and the VPN tunnel will not work. Don't forget to escape the PSK using the `""` characters.
+
+    Example:
+
+    ```console
+    --psk "k7@Jm4Px&9Lq#Wn2!v5*Cz8$Ys3%Ft6^Rg1=Hd0+Bl9}Qw7{Ko5&Np3@Xr1*Mj4"
+    ```
+    {/note}
 
 {/tab}
 
