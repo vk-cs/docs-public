@@ -70,7 +70,7 @@
         "parameters": [
           {
             "name": "tenant_id",
-            "description": "UUID пользователя VK Cloud",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "in": "path",
             "required": true,
             "type": "string"
@@ -137,7 +137,7 @@
         "parameters": [
           {
             "name": "tenant_id",
-            "description": "UUID пользователя VK Cloud",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "in": "path",
             "required": true,
             "type": "string"
@@ -202,7 +202,7 @@
         "parameters": [
           {
             "name": "tenant_id",
-            "description": "UUID пользователя VK Cloud",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "in": "path",
             "required": true,
             "type": "string"
@@ -262,7 +262,7 @@
       },
       "post": {
         "summary": "Создать сервисную учетную запись",
-        "description": "Создает новую сервисную учетную запись в рамках пользователя VK Cloud",
+        "description": "Создает новую сервисную учетную запись в рамках проекта",
         "operationId": "ServiceUsersService_CreateServiceUser",
         "responses": {
           "201": {
@@ -311,7 +311,7 @@
         "parameters": [
           {
             "name": "tenant_id",
-            "description": "UUID пользователя VK Cloud",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "in": "path",
             "required": true,
             "type": "string"
@@ -382,7 +382,7 @@
         "parameters": [
           {
             "name": "tenant_id",
-            "description": "UUID пользователя VK Cloud",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "in": "path",
             "required": true,
             "type": "string"
@@ -424,14 +424,31 @@
         },
         "tenant_id": {
           "type": "string",
-          "title": "UUID пользователя VK Cloud"
+          "title": "Значение параметра Project ID для проекта"
         },
         "role_names": {
           "type": "array",
+          "description": "Список <a href='https://cloud.vk.com/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions'>ролей</a> сервисной учетной записи. Возможные значения:\n\n``mcs_co_owner`` — суперадминистратор;\n``mcs_admin`` — администратор проекта;\n``mcs_admin_security`` — администратор пользователей (IAM);\n``mcs_admin_billing`` — администратор биллинга;\n``mcs_viewer`` — наблюдатель;\n``mcs_admin_vm`` — администратор ВМ;\n``mcs_admin_vm_junior`` — младший администратор ВМ;\n``mcs_operator_vm`` — оператор ВМ;\n``mcs_admin_network`` — администратор сети;\n``mcs_admin_network_security`` — администратор сетевой безопасности;\n``mcs_admin_network_objects`` — администратор внутренних сетей;\n``mcs_k8s_admin`` — администратор Kubernetes;\n``mcs_k8s_editor`` — оператор Kubernetes;\n``mcs_k8s_viewer`` — аудитор Kubernetes",
           "items": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "mcs_admin_network_security",
+              "mcs_k8s_viewer",
+              "mcs_co_owner",
+              "mcs_admin_billing",
+              "mcs_viewer",
+              "mcs_admin_network_objects",
+              "mcs_admin_security",
+              "mcs_k8s_editor",
+              "mcs_operator_vm",
+              "mcs_admin_vm_junior",
+              "mcs_admin",
+              "mcs_k8s_admin",
+              "mcs_admin_network",
+              "mcs_admin_vm"
+            ]
           },
-          "title": "Список имен назначаемых ролей"
+          "title": "Список ролей сервисной учетной записи"
         },
         "creator_name": {
           "type": "string",
@@ -507,7 +524,7 @@
         },
         "tenant_id": {
           "type": "string",
-          "title": "UUID пользователя VK Cloud"
+          "title": "Значение параметра Project ID для проекта"
         },
         "description": {
           "type": "string",
@@ -519,10 +536,27 @@
         },
         "role_names": {
           "type": "array",
+          "description": "Список <a href='https://cloud.vk.com/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions'>ролей</a> сервисной учетной записи. Возможные значения:\n\n``mcs_co_owner`` — суперадминистратор;\n``mcs_admin`` — администратор проекта;\n``mcs_admin_security`` — администратор пользователей (IAM);\n``mcs_admin_billing`` — администратор биллинга;\n``mcs_viewer`` — наблюдатель;\n``mcs_admin_vm`` — администратор ВМ;\n``mcs_admin_vm_junior`` — младший администратор ВМ;\n``mcs_operator_vm`` — оператор ВМ;\n``mcs_admin_network`` — администратор сети;\n``mcs_admin_network_security`` — администратор сетевой безопасности;\n``mcs_admin_network_objects`` — администратор внутренних сетей;\n``mcs_k8s_admin`` — администратор Kubernetes;\n``mcs_k8s_editor`` — оператор Kubernetes;\n``mcs_k8s_viewer`` — аудитор Kubernetes",
           "items": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "mcs_admin_network_security",
+              "mcs_k8s_viewer",
+              "mcs_co_owner",
+              "mcs_admin_billing",
+              "mcs_viewer",
+              "mcs_admin_network_objects",
+              "mcs_admin_security",
+              "mcs_k8s_editor",
+              "mcs_operator_vm",
+              "mcs_admin_vm_junior",
+              "mcs_admin",
+              "mcs_k8s_admin",
+              "mcs_admin_network",
+              "mcs_admin_vm"
+            ]
           },
-          "title": "Список имен назначаемых ролей"
+          "title": "Список ролей сервисной учетной записи"
         },
         "created_at": {
           "type": "string",
@@ -552,10 +586,27 @@
         },
         "role_names": {
           "type": "array",
+          "description": "Список <a href='https://cloud.vk.com/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions'>ролей</a> сервисной учетной записи. Возможные значения:\n\n``mcs_co_owner`` — суперадминистратор;\n``mcs_admin`` — администратор проекта;\n``mcs_admin_security`` — администратор пользователей (IAM);\n``mcs_admin_billing`` — администратор биллинга;\n``mcs_viewer`` — наблюдатель;\n``mcs_admin_vm`` — администратор ВМ;\n``mcs_admin_vm_junior`` — младший администратор ВМ;\n``mcs_operator_vm`` — оператор ВМ;\n``mcs_admin_network`` — администратор сети;\n``mcs_admin_network_security`` — администратор сетевой безопасности;\n``mcs_admin_network_objects`` — администратор внутренних сетей;\n``mcs_k8s_admin`` — администратор Kubernetes;\n``mcs_k8s_editor`` — оператор Kubernetes;\n``mcs_k8s_viewer`` — аудитор Kubernetes",
           "items": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "mcs_admin_network_security",
+              "mcs_k8s_viewer",
+              "mcs_co_owner",
+              "mcs_admin_billing",
+              "mcs_viewer",
+              "mcs_admin_network_objects",
+              "mcs_admin_security",
+              "mcs_k8s_editor",
+              "mcs_operator_vm",
+              "mcs_admin_vm_junior",
+              "mcs_admin",
+              "mcs_k8s_admin",
+              "mcs_admin_network",
+              "mcs_admin_vm"
+            ]
           },
-          "title": "Список имен назначаемых ролей"
+          "title": "Список ролей сервисной учетной записи"
         },
         "description": {
           "type": "string",
