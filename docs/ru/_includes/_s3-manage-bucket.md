@@ -33,7 +33,6 @@
 aws s3api put-bucket-versioning 
   --bucket <ИМЯ_БАКЕТА> 
   --endpoint-url <URL_СЕРВИСА>  
-  --versioning-configuration Status=Enabled    
 ```
 
 Здесь:
