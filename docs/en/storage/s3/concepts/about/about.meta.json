@@ -1,9 +1,9 @@
 {
     "title": "About the service",
     "pageDescription": "",
-    "shortDescription": "Description of the Cloud Storage service and its features",
+    "shortDescription": "Description of the Object Storage service and its features",
     "metaTitle": "About the service",
-    "metaDescription": "Description Object Storage can be used to store and retrieve any amount of data anytime from anywhere on the Internet. These tasks can be accomplishe",
+    "metaDescription": "Object Storage can be used to store and retrieve any amount of data anytime from anywhere on the Internet",
     "sectionTitle": "About the service",
     "icon": "",
     "weight": 0,

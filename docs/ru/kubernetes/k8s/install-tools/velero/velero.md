@@ -9,8 +9,8 @@ Velero — это клиент-серверная утилита для резе
 
 1. [Убедитесь](../../connect/kubectl#check_connection), что вы можете подключиться к кластеру с помощью `kubectl`.
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) OpenStack CLI, если он еще не установлен. [Убедитесь](/ru/tools-for-using-services/cli/openstack-cli), что вы можете авторизоваться в облаке с его помощью.
-1. [Создайте hotbox-бакет](../../../../storage/s3/instructions/buckets/create-bucket) для хранения резервных копий в сервисе [Cloud Storage](../../../../storage/s3).
-1. [Создайте аккаунт](../../../../storage/s3/instructions/access-management/access-keys) в сервисе [Cloud Storage](../../../../storage/s3).
+1. [Создайте hotbox-бакет](../../../../storage/s3/instructions/buckets/create-bucket) для хранения резервных копий в сервисе [Object Storage](../../../../storage/s3).
+1. [Создайте аккаунт](../../../../storage/s3/instructions/access-management/access-keys) в сервисе [Object Storage](../../../../storage/s3).
 
    Выведенные идентификатор ключа и секрет сохраните в файл `s3_creds`:
 
@@ -67,7 +67,7 @@ Velero — это клиент-серверная утилита для резе
 
    {/tabs}
 
-   Здесь `<ДОМЕН>` — домен сервиса Cloud Storage, соответствующий региону аккаунта:
+   Здесь `<ДОМЕН>` — домен сервиса Object Storage, соответствующий региону аккаунта:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва.
    - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.

@@ -8,7 +8,7 @@
 
 {note:err}
 
-Если ключ загружаемого файла совпадает с ключом объекта в бакете и этот объект не [защищен от перезаписи](/ru/storage/s3/concepts/objects-lock), Cloud Storage заменит существующий объект на новый.
+Если ключ загружаемого файла совпадает с ключом объекта в бакете и этот объект не [защищен от перезаписи](/ru/storage/s3/concepts/objects-lock), Object Storage заменит существующий объект на новый.
 
 {/note}
 
@@ -57,7 +57,7 @@
       - `<ПУТЬ>` — путь к локальному файлу.
       - `<ИМЯ_БАКЕТА>`  — имя бакета, в который нужно загрузить объект.
       - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него. Следуйте [рекомендациям](../../../concepts/about#object_key_rules) при выборе имен.
-      - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+      - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -99,7 +99,7 @@
 
 1. Создайте [бакет](../../buckets/create-bucket), если он еще не создан.
 
-1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса Cloud Storage.
+1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса Object Storage.
 
 1. [Сформируйте подпись](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro) запроса для аутентификации в API.
 
@@ -136,7 +136,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Cloud Storage
+	   // Подключение к сервису Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
@@ -248,7 +248,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, в который нужно загрузить объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, для создания которого инициируется составная загрузка, включая путь до него. Следуйте [рекомендациям](../../../concepts/about#object_key_rules) при выборе имен.
-   - `<URL_СЕРВИСА>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -459,7 +459,7 @@
 
 1. Инициируйте составную загрузку при помощи запроса [CreateMultipartUpload](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#initiate_multipart_upload). На этом этапе создается ключ будущего объекта и добавляются все его пользовательские метаданные. В ответе вернется идентификатор загрузки `UploadId`, который понадобится для следующих этапов составной загрузки.
 
-1. Загрузите в бакет все части файла. Для загрузки каждой части отправьте отдельный запрос [UploadPart](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#upload_part). Для каждой части укажите номер. Номера не должны повторяться, иначе последняя загруженная часть перезапишет предыдущую с таким же номером. Cloud Storage будет собирать все части объекта в порядке возрастания их номеров.
+1. Загрузите в бакет все части файла. Для загрузки каждой части отправьте отдельный запрос [UploadPart](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#upload_part). Для каждой части укажите номер. Номера не должны повторяться, иначе последняя загруженная часть перезапишет предыдущую с таким же номером. Object Storage будет собирать все части объекта в порядке возрастания их номеров.
 
    В каждом ответе на запрос вернется `ETag` загруженной части. Сохраните значение `ETag` и соответствующий ему номер части.
 
@@ -481,7 +481,7 @@
 	      S3Client *s3.Client
       }
 
-   // UploadLargeObject разделяет большой файл на части и загружает их Cloud Storage одновременно
+   // UploadLargeObject разделяет большой файл на части и загружает их Object Storage одновременно
    func (basics BucketBasics) UploadLargeObject(bucketName string, objectKey string, largeObject []byte) error {
 	largeBuffer := bytes.NewReader(largeObject)
 	var partMiBs int64 = 10
@@ -501,7 +501,7 @@
 	   return err
    }
 
-   // DownloadLargeObject разделяет большой объект на части и скачивает их независимо из Cloud Storage
+   // DownloadLargeObject разделяет большой объект на части и скачивает их независимо из Object Storage
    func (basics BucketBasics) DownloadLargeObject(bucketName string, objectKey string) ([]byte, error) {
 	   var partMiBs int64 = 10
 	   downloader := manager.NewDownloader(basics.S3Client, func(d *manager.Downloader) {

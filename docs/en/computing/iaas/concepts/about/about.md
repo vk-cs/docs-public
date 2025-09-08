@@ -231,7 +231,7 @@ VK Cloud allocates the following virtual resources to [supported availability zo
 - Disks: hosted on network block storage and automatically replicated within their availability zone.
 - Load balancers.
 
-There are resources for which there are no availability zones, such as Cloud Storage bucket or virtual network. For projects in the Moscow region, these resources are global (not tied to a zone).
+There are resources for which there are no availability zones, such as Object Storage bucket or virtual network. For projects in the Moscow region, these resources are global (not tied to a zone).
 
 {note:info}
 

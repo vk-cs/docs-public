@@ -11,7 +11,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 ## Before you start
 
 1. Make sure the [AWS CLI](/ru/tools-for-using-services/cli/aws-cli "change-lang") is installed.
-1. Create an account for the Cloud Storage service:
+1. Create an account for the Object Storage service:
 
    1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app).
    1. Select a project.

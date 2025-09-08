@@ -1,9 +1,9 @@
 {
     "title": "Deleting CDN resource",
-    "pageDescription": "How to delete a CDN resource in the CDN service or from the Cloud Storage bucket.",
-    "shortDescription": "How to delete a CDN resource in the CDN service or from the Cloud Storage bucket",
+    "pageDescription": "How to delete a CDN resource in the CDN service or from the Object Storage bucket.",
+    "shortDescription": "How to delete a CDN resource in the CDN service or from the Object Storage bucket",
     "metaTitle": "Deleting CDN resource",
-    "metaDescription": "How to delete a CDN resource in the CDN service or from the Cloud Storage bucket.",
+    "metaDescription": "How to delete a CDN resource in the CDN service or from the Object Storage bucket.",
     "sectionTitle": "Deleting CDN resource",
     "icon": "",
     "weight": 6,

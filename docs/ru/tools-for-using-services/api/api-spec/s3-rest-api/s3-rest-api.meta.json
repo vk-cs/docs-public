@@ -1,10 +1,10 @@
 {
-  "title": "Cloud Storage",
+  "title": "Object Storage",
   "pageDescription": "Операции API, структуры запросов и ответов, коды ошибок.",
   "shortDescription": "Операции API, структуры запросов и ответов, коды ошибок",
-  "metaTitle": "Cloud Storage",
+  "metaTitle": "Object Storage",
   "metaDescription": "Операции API, структуры запросов и ответов, коды ошибок.",
-  "sectionTitle": "Cloud Storage",
+  "sectionTitle": "Object Storage",
   "icon": "",
   "weight": 4,
   "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f"

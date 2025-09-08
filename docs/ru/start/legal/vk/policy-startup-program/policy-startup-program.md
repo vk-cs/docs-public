@@ -75,7 +75,7 @@
 
 **Ограничения применения специальных условий**:
 
-- Специальные условия распространяются на следующие Сервисы VK Cloud: Cloud Servers, Cloud Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Trino, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
+- Специальные условия распространяются на следующие Сервисы VK Cloud: Cloud Servers, Object Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Trino, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
 
   Оплата использования иных Сервисов осуществляется Пользователем на общих условиях на основании цен, указанных в Прайс-листе.
 

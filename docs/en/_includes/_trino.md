@@ -12,7 +12,7 @@
    - `PostgreSQL` — connection to the PostgreSQL database.
    - `Greenplum` — connection to the Greenplum database.
    - `Clickhouse` — connection to the Clickhouse database.
-   - `Apache Iceberg with S3 VK Cloud` — connection to Cloud Storage in the same project.
+   - `Apache Iceberg with S3 VK Cloud` — connection to Object Storage in the same project.
    - `Apache Iceberg with external S3` — connection to external S3 object storage.
 1. Configure the connection parameters to the source:
 
@@ -31,8 +31,8 @@
    {tab(S3 VK Cloud)}
 
    - **Name**: name of the connection.
-   - **S3_bucket**: name of the Cloud Storage buckets to which Trino will connect.
-   - **S3_folder**: the name of the directory in the Cloud Storage buckets to which Trino will connect.
+   - **S3_bucket**: name of the Object Storage buckets to which Trino will connect.
+   - **S3_folder**: the name of the directory in the Object Storage buckets to which Trino will connect.
    - **Parquet.small-file-threshold**: the threshold file size. A smaller file can be handled in a special way (e.g. merged with other files) to improve performance and reduce the number of files in the storage.
 
    {/tab}

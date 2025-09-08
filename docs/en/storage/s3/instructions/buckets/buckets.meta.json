@@ -1,9 +1,9 @@
 {
   "title": "Bucket",
-  "pageDescription": "Buckets in Cloud Storage.",
-  "shortDescription": "Buckets in Cloud Storage",
-  "metaTitle": "Buckets in Cloud Storage",
-  "metaDescription": "Buckets in Cloud Storage.",
+  "pageDescription": "Buckets in Object Storage.",
+  "shortDescription": "Buckets in Object Storage",
+  "metaTitle": "Buckets in Object Storage",
+  "metaDescription": "Buckets in Object Storage.",
   "sectionTitle": "Bucket",
   "icon": "",
   "weight": 2,

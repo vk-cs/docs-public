@@ -1,4 +1,4 @@
-В статье приведены примеры создания и настройки бакетов и объектов Cloud Storage при помощи Terraform.
+В статье приведены примеры создания и настройки бакетов и объектов Object Storage при помощи Terraform.
 
 При создании сетей используются ресурсы (resource):
 
@@ -47,7 +47,7 @@
 
         Здесь:
 
-        - `<РЕГИОН>` — регион размещения сервиса Cloud Storage. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+        - `<РЕГИОН>` — регион размещения сервиса Object Storage. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
             - `ru-msk` — регион Москва;
             - `kz-ast` — регион Казахстан.
@@ -166,7 +166,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
 
 {note:info}
 
-Невозможно указать ACL для отдельного [аккаунта](/ru/storage/s3/instructions/access-management/access-keys) Cloud Storage из другого проекта.
+Невозможно указать ACL для отдельного [аккаунта](/ru/storage/s3/instructions/access-management/access-keys) Object Storage из другого проекта.
 
 {/note}
 
@@ -281,7 +281,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 Убедитесь, что бакет и объекты были успешно созданы, конфигурация настроена:
 
-1. [Подключитесь](/ru/storage/s3/connect/s3-cli) к Cloud Storage через AWS CLI.
+1. [Подключитесь](/ru/storage/s3/connect/s3-cli) к Object Storage через AWS CLI.
 1. Проверьте, что бакет и объекты созданы. Выполните команду:
 
    ```console
@@ -291,7 +291,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
    Здесь:
 
      - `example-bucket` — имя бакета, который был создан через Terraform.
-     - `endpoint-url` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+     - `endpoint-url` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
        - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.

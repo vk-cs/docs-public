@@ -1,4 +1,4 @@
-This article provides examples of creating and configuring the Cloud Storage buckets and objects using Terraform.
+This article provides examples of creating and configuring the Object Storage buckets and objects using Terraform.
 
 The following resources are used to create networks:
 
@@ -47,7 +47,7 @@ A detailed description of the resources is in the [provider documentation](https
 
         Here:
 
-        - `<REGION>` — the region where the Cloud Storage service is hosted. The setting must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
+        - `<REGION>` — the region where the Object Storage service is hosted. The setting must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
 
             - `ru-msk` — the Moscow region.
             - `kz-ast` — the Kazakhstan region.
@@ -167,7 +167,7 @@ The example below will grant read permissions to a bucket ACL by user ID and PID
 
 {note:info}
 
-It is not possible to specify an ACL for a single Cloud Storage [account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") from another project.
+It is not possible to specify an ACL for a single Object Storage [account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") from another project.
 
 {/note}
 
@@ -283,7 +283,7 @@ Here:
 
 Make sure the bucket and objects have been created successfully, and the configuration has been set up:
 
-1. [Connect](/ru/storage/s3/connect/s3-cli "change-lang") to Cloud Storage via AWS CLI.
+1. [Connect](/ru/storage/s3/connect/s3-cli "change-lang") to Object Storage via AWS CLI.
 1. Verify that the bucket and objects have been created. Run the command:
 
     ```console
@@ -293,7 +293,7 @@ Make sure the bucket and objects have been created successfully, and the configu
     Here:
 
       - `example-bucket` is the name of the bucket that was created via Terraform.
-      - `endpoint-url` is the Cloud Storage service domain, must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
+      - `endpoint-url` is the Object Storage service domain, must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
 
          - `https://hb.ru-msk.vkcloud-storage.ru` — domain of the Moscow region.
          - `https://hb.kz-ast.bizmrg.com` — domain of the Kazakhstan region.

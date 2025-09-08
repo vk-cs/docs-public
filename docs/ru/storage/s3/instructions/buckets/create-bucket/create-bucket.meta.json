@@ -1,9 +1,9 @@
 {
     "title": "Создание бакета",
     "pageDescription": "",
-    "shortDescription": "Как создать бакет Cloud Storage через личный кабинет VK Cloud, AWS CLI, SDK",
+    "shortDescription": "Как создать бакет Object Storage через личный кабинет VK Cloud, AWS CLI, SDK",
     "metaTitle": "Создание бакета",
-    "metaDescription": "Как создать бакет Cloud Storage через личный кабинет VK Cloud, AWS CLI, SDK",
+    "metaDescription": "Как создать бакет Object Storage через личный кабинет VK Cloud, AWS CLI, SDK",
     "sectionTitle": "Создание бакета",
     "icon": "",
     "weight": 1,

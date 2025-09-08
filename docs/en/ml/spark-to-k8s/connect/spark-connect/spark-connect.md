@@ -13,9 +13,9 @@ Spark Connect allows to remotely connect to a Spark cluster and work with it via
     {/note}
 
 1. Save the domain name of the cluster for future use.
-1. Place the desired dataset in the Cloud Storage buckets tied to the cluster:
+1. Place the desired dataset in the Object Storage buckets tied to the cluster:
 
-    1. Go to **Object Storage** → **Buckets**.
+    1. Go to **Cloud Storage** → **Buckets**.
     1. Select the bucket tied to the cluster. The name of the bucket corresponds to the `<CLUSTER_NAME>-<DOMAIN_NAME>-bucket` mask.
     1. Go to the **datasets** directory and add the file with the data to it.
     1. Save the bucket name for future use.
@@ -90,12 +90,12 @@ To connect to a cluster and display the data loaded in the bucket, complete the 
 
     - `<CLUSTER_DOMAIN_NAME>` — DNS name of the cluster, for example: `k8s-3d3b7fddd30040.ml.bizmrg.com`.
     - `<APPLICATION_NAME>` — the name of the application to be displayed in the cluster interface.
-    - `<BACKET_NAME>` — the name of the Cloud Storage bucket associated with the Spark cluster.
-    - `<DATASET_NAME>` — the name of the dataset previously uploaded to the Cloud Storage bucket.
+    - `<BACKET_NAME>` — the name of the Object Storage bucket associated with the Spark cluster.
+    - `<DATASET_NAME>` — the name of the dataset previously uploaded to the Object Storage bucket.
 
 1. Open the script in your IDE and run the script execution.
 
-The result displays the dataset that was previously uploaded to the Cloud Storage bucket.
+The result displays the dataset that was previously uploaded to the Object Storage bucket.
 
 Other examples of remote work with Cloud Spark cluster can be downloaded at [link](assets/connect_demo.ipynb "download").
 

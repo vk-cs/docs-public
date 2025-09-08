@@ -7,7 +7,7 @@ After going through all the steps of the quickstart, you will:
 1. Become familiar with Kubernetes and [addons for it](../concepts/addons-and-settings/addons):
    1. Connect management and monitoring tools.
    1. Load the Docker images into the Docker registry.
-   1. Deploy simple applications based on the downloaded images, with the ability to use Cloud Storage.
+   1. Deploy simple applications based on the downloaded images, with the ability to use Object Storage.
    1. Provide access to the deployed applications using the Ingress controller.
    1. Make sure that these applications actually work.
 

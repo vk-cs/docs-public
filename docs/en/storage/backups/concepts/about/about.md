@@ -18,4 +18,4 @@ For scheduled backups, Cloud Backup offers a choice between two strategies for c
 
 For the PostgreSQL DBMS, a mechanism for continuous archiving and point-in-time recovery is also supported ([Point-in-Time Recovery, PITR](/en/storage/backups/instructions/point-in-time-recovery-pitr)).
 
-Backups are stored in the Cloud Storage object storage with the Backup storage class.
+Backups are stored in the Object Storage object storage with the Backup storage class.

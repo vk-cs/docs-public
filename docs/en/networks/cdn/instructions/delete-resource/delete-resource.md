@@ -2,7 +2,7 @@ You can delete a CDN resource in two ways:
 
 - [Through the CDN service interface](#deleting_resource_via_cdn_service_interface).
 
-- [Through the bucket interface](#deleting_resource_via_bucket_interface) in the [Cloud Storage](/en/storage/s3) service. Use this if the CDN resource [was created trough the bucket interface](../create-resource#creating_resource_via_bucket_interface).
+- [Through the bucket interface](#deleting_resource_via_bucket_interface) in the [Object Storage](/en/storage/s3) service. Use this if the CDN resource [was created trough the bucket interface](../create-resource#creating_resource_via_bucket_interface).
 
 ## Deleting resource via CDN service interface
 
@@ -35,7 +35,7 @@ To delete a CDN resource:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project with the bucket you need.
-1. Go to the **Cloud Storage → Buckets** section.
+1. Go to the **Object Storage → Buckets** section.
 1. Click the name of the bucket you need.
 1. Go to the **CDN** tab.
 1. Disable the **Use CDN for this bucket** option.

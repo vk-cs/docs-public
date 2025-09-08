@@ -1,9 +1,9 @@
 {
     "title": "SDK",
-    "pageDescription": "Подключение к Cloud Storage c помощью SDK",
-    "shortDescription": "Подключение к Cloud Storage c помощью SDK",
+    "pageDescription": "Подключение к Object Storage c помощью SDK",
+    "shortDescription": "Подключение к Object Storage c помощью SDK",
     "metaTitle": "SDK",
-    "metaDescription": "Подключение к Cloud Storage c помощью SDK",
+    "metaDescription": "Подключение к Object Storage c помощью SDK",
     "sectionTitle": "SDK",
     "icon": "",
     "weight": 3,

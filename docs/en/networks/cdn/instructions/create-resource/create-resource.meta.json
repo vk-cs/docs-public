@@ -1,9 +1,9 @@
 {
     "title": "Creating CDN resource",
-    "pageDescription": "How to create a CDN resource in the CDN service or in the Cloud Storage bucket.",
-    "shortDescription": "How to create a CDN resource in the CDN service or in the Cloud Storage bucket",
+    "pageDescription": "How to create a CDN resource in the CDN service or in the Object Storage bucket.",
+    "shortDescription": "How to create a CDN resource in the CDN service or in the Object Storage bucket",
     "metaTitle": "Creating CDN resource",
-    "metaDescription": "How to create a CDN resource in the CDN service or in the Cloud Storage bucket.",
+    "metaDescription": "How to create a CDN resource in the CDN service or in the Object Storage bucket.",
     "sectionTitle": "Creating CDN resource",
     "icon": "",
     "weight": 1,

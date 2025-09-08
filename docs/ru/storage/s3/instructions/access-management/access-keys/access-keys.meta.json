@@ -1,9 +1,9 @@
 {
     "title": "Аккаунт и ключи доступа",
-    "pageDescription": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры.",
-    "shortDescription": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры",
+    "pageDescription": "Доступ к Object Storage через AWS CLI, API и файловые менеджеры.",
+    "shortDescription": "Доступ к Object Storage через AWS CLI, API и файловые менеджеры",
     "metaTitle": "Аккаунт и ключи доступа",
-    "metaDescription": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры",
+    "metaDescription": "Доступ к Object Storage через AWS CLI, API и файловые менеджеры",
     "sectionTitle": "Аккаунт и ключи доступа",
     "icon": "",
     "weight": 1,

@@ -32,14 +32,14 @@ As a result, the user will be able to [sign in the JupyterHub instance](../conne
 
 ## {heading(Connecting S3 bucket)[id=add-s3]}
 
-The option allows you to add an S3 bucket to the instance to store data in it. The bucket will be available inside the instance as a directory, and the data stored in it will be available in [Cloud Storage](/en/storage/s3) even after the instance is deleted.
+The option allows you to add an S3 bucket to the instance to store data in it. The bucket will be available inside the instance as a directory, and the data stored in it will be available in [Object Storage](/en/storage/s3) even after the instance is deleted.
 
-To connect a Cloud Storage bucket to an instance:
+To connect an Object Storage bucket to an instance:
 
 1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Connect S3 bucket as disk**.
-1. In the window that opens, select the bucket that you want to connect to the instance. If there are no suitable buckets, select **Create a new bucket** — a new Cloud Storage bucket will be created and connected to the instance.
+1. In the window that opens, select the bucket that you want to connect to the instance. If there are no suitable buckets, select **Create a new bucket** — a new Object Storage bucket will be created and connected to the instance.
 1. Click the **Save** button.
 
 ## {heading(Stopping and starting instance)[id=pause]}
