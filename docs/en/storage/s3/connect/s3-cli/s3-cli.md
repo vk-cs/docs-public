@@ -1,6 +1,6 @@
-The AWS CLI, or AWS Command Line Interface, is a single tool for managing Cloud Storage service based on the AWS S3 toolkit. With just one tool downloaded, it is possible to control many Cloud Storage services from the command line and automate them with scripts.
+The AWS CLI, or AWS Command Line Interface, is a single tool for managing Object Storage service based on the AWS S3 toolkit. With just one tool downloaded, it is possible to control many Object Storage services from the command line and automate them with scripts.
 
-The AWS CLI introduces a new set of simple commands to efficiently receive and send files to Cloud Storage.
+The AWS CLI introduces a new set of simple commands to efficiently receive and send files to Object Storage.
 
 With minimal configuration, the AWS CLI allows you to run commands from the command line in a terminal program:
 
@@ -101,7 +101,7 @@ When you enter this command, the AWS CLI prompts for four pieces of information:
 
 - Access key identifier - the received key identifier data is used when adding an account.
 - Secret access key - the received secret key data is used when adding an account.
-- AWS region - the region where the Cloud Storage service is located, by default it is ru-msk.
+- AWS region - the region where the Object Storage service is located, by default it is ru-msk.
 - Output Format - Determines how to format the output of the command being used. If no output format is specified, it will use `json` by default. [Available options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html):
 
   - `json` – The output is formatted as a JSON string.
@@ -116,8 +116,8 @@ The AWS CLI stores this information in a profile (set of settings) called defaul
 
 When using the AWS CLI to work with Object Storage, there are a few things to keep in mind:
 
-- The AWS CLI treats Cloud Storage as a hierarchical file system and object keys are in the form of a file path.
-- When running the aws command to work with Cloud Storage, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
+- The AWS CLI treats Object Storage as a hierarchical file system and object keys are in the form of a file path.
+- When running the aws command to work with Object Storage, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
 - Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.ru-msk.vkcloud-storage.ru](http://hb.ru-msk.vkcloud-storage.ru).
 - Any operations cannot be performed using the CLI with the Backup bucket class.
 - When using the storage classes `--storage-class`, the `STANDARD` values for Hotbox and `STANDARD_IA` for Icebox apply.

@@ -1,4 +1,4 @@
-При интеграции с хранилищем Cloud Storage в MinIO появляется сообщение `Tier is already in use`.
+При интеграции с хранилищем Object Storage в MinIO появляется сообщение `Tier is already in use`.
 
 Это означает, что конфигурация для удаленного хранилища S3 (remote tier) уже существует.
 

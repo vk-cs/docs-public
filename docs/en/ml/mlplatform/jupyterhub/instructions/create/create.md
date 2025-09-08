@@ -18,8 +18,8 @@ To create a JupyterHub instance:
     - **Disk Size**: sets the size of the VM data disk in GB. The minimum value is 50 GB. When an instance is created, a root disk and an additional data disk are connected to it. The root disk size is fixed - 50 GB. You can only change the size of the data disk.
     - **Disk type**: [type](/en/computing/iaas/concepts/volume-sla) of the disk to be created.
     - **Choosing a domain name**: sets the DNS name of the instance.
-    - **Connect S3 bucket as disk**: enable the option to add an S3 bucket to the instance to store data in it. The bucket will be available inside the instance as a directory, and the data stored in it will be available in [Cloud Storage](/ru/storage/s3) even after the instance is deleted.
-    - **Bucket**: if the **Connect S3 bucket as disk** option is enabled, in the list, select the bucket that you want to connect to the instance. If there are no suitable buckets, select **Create new bucket** — a new Cloud Storage bucket will be created when creating the instance.
+    - **Connect S3 bucket as disk**: enable the option to add an S3 bucket to the instance to store data in it. The bucket will be available inside the instance as a directory, and the data stored in it will be available in [Object Storage](/ru/storage/s3) even after the instance is deleted.
+    - **Bucket**: if the **Connect S3 bucket as disk** option is enabled, in the list, select the bucket that you want to connect to the instance. If there are no suitable buckets, select **Create new bucket** — a new Object Storage bucket will be created when creating the instance.
     - **Username**: the administrator name for authorization in the instance OS. Only the administrator will be able to [create other accounts](../manage#create-users) to work on the instance.
 
         {note:err}

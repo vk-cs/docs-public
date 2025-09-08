@@ -638,9 +638,9 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 
 The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
 
-### Cloud Storage
+### Object Storage
 
-There are no quotas for the Cloud Storage service. The use of these services is limited only by technical limits.
+There are no quotas for the Object Storage service. The use of these services is limited only by technical limits.
 
 [cols="3,2,4,1", options="header"]
 |===

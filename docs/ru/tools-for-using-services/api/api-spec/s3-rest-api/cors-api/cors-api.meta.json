@@ -3,7 +3,7 @@
     "pageDescription": "",
     "shortDescription": "",
     "metaTitle": "CORS",
-    "metaDescription": "Сервис Cloud Storage позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
+    "metaDescription": "Сервис Object Storage позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
     "sectionTitle": "CORS",
     "icon": "",
     "weight": 7,

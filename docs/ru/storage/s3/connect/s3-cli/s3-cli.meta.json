@@ -1,9 +1,9 @@
 {
     "title": "CLI",
-    "pageDescription": "Подключение к Cloud Storage c помощью AWS CLI, s3cmd CLI",
-    "shortDescription": "Подключение к Cloud Storage c помощью AWS CLI, s3cmd CLI",
+    "pageDescription": "Подключение к Object Storage c помощью AWS CLI, s3cmd CLI",
+    "shortDescription": "Подключение к Object Storage c помощью AWS CLI, s3cmd CLI",
     "metaTitle": "CLI",
-    "metaDescription": "Подключение к Cloud Storage c помощью AWS CLI, s3cmd CLI",
+    "metaDescription": "Подключение к Object Storage c помощью AWS CLI, s3cmd CLI",
     "sectionTitle": "CLI",
     "icon": "",
     "weight": 1,

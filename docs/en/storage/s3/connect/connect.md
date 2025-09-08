@@ -1,1 +1,1 @@
-Connecting to Cloud Storage using CLI, File managers, SDK.
+Connecting to Object Storage using CLI, File managers, SDK.

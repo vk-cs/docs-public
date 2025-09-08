@@ -64,7 +64,7 @@
 
 {tab(Параметры расширения)}
 
-- `s3_bucket`: имя бакета [Cloud Storage](/ru/storage/s3), где будут храниться отчеты. Обязательный параметр.
+- `s3_bucket`: имя бакета [Object Storage](/ru/storage/s3), где будут храниться отчеты. Обязательный параметр.
 
   Если бакета с таким именем не существует — [создайте его](/ru/storage/s3/instructions/buckets/create-bucket).
 

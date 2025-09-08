@@ -1,10 +1,10 @@
 {
-    "title": "Справочник Cloud Storage",
-    "pageDescription": "Описание терминов Cloud Storage",
-    "shortDescription": "Основные понятия сервиса Cloud Storage",
-    "metaTitle": "Справочник Cloud Storage",
-    "metaDescription": "В статье описаны основные понятия сервиса Cloud Storage",
-    "sectionTitle": "Справочник Cloud Storage",
+    "title": "Справочник Object Storage",
+    "pageDescription": "Описание терминов Object Storage",
+    "shortDescription": "Основные понятия сервиса Object Storage",
+    "metaTitle": "Справочник Object Storage",
+    "metaDescription": "В статье описаны основные понятия сервиса Object Storage",
+    "sectionTitle": "Справочник Object Storage",
     "icon": "",
     "weight": 7,
     "uuid": "caa84291-594e-4eb7-a4b3-6963dadd8e54"

@@ -1,1 +1,1 @@
-Buckets in Cloud Storage.
+Buckets in Object Storage.

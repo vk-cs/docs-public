@@ -1,10 +1,10 @@
 {
-    "title": "API Cloud Storage",
+    "title": "API Object Storage",
     "pageDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов.",
     "shortDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов",
-    "metaTitle": "API Cloud Storage",
+    "metaTitle": "API Object Storage",
     "metaDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов.",
-    "sectionTitle": "API Cloud Storage",
+    "sectionTitle": "API Object Storage",
     "icon": "",
     "weight": 3,
     "uuid": "4801a6f5-5a82-4c45-81d4-5cada60392ab"

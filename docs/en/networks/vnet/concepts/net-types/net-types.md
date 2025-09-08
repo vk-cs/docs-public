@@ -97,7 +97,7 @@ It is not possible to edit or delete the subnets of that network. The following 
 
 ## {heading(Service network)[id=service_net]}
 
-_Service network_ provides network connection between VMs and VK Cloud internal resources. For example, using the service network, you can [connect](/en/networks/vnet/how-to-guides/s3-service-net) to Cloud Storage buckets from a VM without Internet access.
+_Service network_ provides network connection between VMs and VK Cloud internal resources. For example, using the service network, you can [connect](/en/networks/vnet/how-to-guides/s3-service-net) to Object Storage buckets from a VM without Internet access.
 
 The service network does not provide VM access to the Internet or to another VM.
 

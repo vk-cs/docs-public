@@ -74,7 +74,7 @@
 
 ## 4\. Ограничения применения специальных условий:
 
-4.1. Специальные условия в виде возможности оплаты бонусными баллами распространяются исключительно на следующие сервисы: Cloud Servers, Cloud Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse), Cloud ML Platform, Cloud Spark, Cloud Kafka, Cloud Trino, Cloud Flink, Vision, Voice, Cloud Backup. Оплата использования иных Сервисов осуществляется Заказчиком на общих условиях на основании цен, указанных в Прайс-листе Организатора [https://cloud.vk.com/pricelist](https://cloud.vk.com/pricelist).
+4.1. Специальные условия в виде возможности оплаты бонусными баллами распространяются исключительно на следующие сервисы: Cloud Servers, Object Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse), Cloud ML Platform, Cloud Spark, Cloud Kafka, Cloud Trino, Cloud Flink, Vision, Voice, Cloud Backup. Оплата использования иных Сервисов осуществляется Заказчиком на общих условиях на основании цен, указанных в Прайс-листе Организатора [https://cloud.vk.com/pricelist](https://cloud.vk.com/pricelist).
 
 Во избежание сомнений, бонусные баллы не могут быть использованы на оплату сервисов и продуктов, исключительные права на которые принадлежат третьим лицам (партнерам Организатора), в том числе, но не ограничиваясь, лицензионных продуктов, продуктов, доступных в Магазине приложений Платформы VK Cloud, сервиса CDN, сервиса Cloud GPU, и иных сервисов и продуктов, прямо не указанных в абзаце первом настоящего пункта.
 

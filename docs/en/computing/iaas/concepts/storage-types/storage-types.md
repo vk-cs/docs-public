@@ -1,7 +1,7 @@
 VK Cloud supports the following types of storages:
 
 - _Block-based_. It stores data in logical blocks, similar to hard disks. Block-based storage is suitable for storing VM and container data, as well as disk snapshots. In VK Cloud, the type is represented by [disks connected to VMs](https://cloud.vk.com/docs/en/computing/iaas/concepts/about#disks) and [disks in Kubernetes clusters](https://cloud.vk.com/docs/en/kubernetes/k8s/concepts/storage).
-- _Object-based_. It stores data as independent objects with metadata. It is suitable for storing large data volumes (backups, BigData, large media files, etc.) with predictably infrequent need to access them. In VK Cloud the type is represented by storage with S3 API [Cloud Storage](https://cloud.vk.com/docs/en/storage/s3) support.
+- _Object-based_. It stores data as independent objects with metadata. It is suitable for storing large data volumes (backups, BigData, large media files, etc.) with predictably infrequent need to access them. In VK Cloud the type is represented by storage with S3 API [Object Storage](https://cloud.vk.com/docs/en/storage/s3) support.
 - _File-based_. A virtual file system that can be connected to multiple virtual machines. It implements centralized file sharing between clients inside a private cloud network. File-based storage is suitable for regular tasks that require minimal latency when referring to data. For more information, see the [File storage](https://cloud.vk.com/docs/en/computing/iaas/concepts/about#file_storage) article.
 
 Each storage type has its own advantages and disadvantages. The choice of type depends on the needs of the application, as well as performance requirements, scalability, and data management.

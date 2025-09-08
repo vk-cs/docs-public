@@ -1,9 +1,9 @@
 {
   "title": "Connecting to storage",
-  "pageDescription": "Connecting to Cloud Storage using CLI, File managers, SDK.",
+  "pageDescription": "Connecting to Object Storage using CLI, File managers, SDK.",
   "shortDescription": "Connecting to object storage using CLI, File managers, SDK",
   "metaTitle": "Connecting to storage",
-  "metaDescription": "Connecting to Cloud Storage using CLI, File managers, SDK.",
+  "metaDescription": "Connecting to Object Storage using CLI, File managers, SDK.",
   "sectionTitle": "Connecting to storage",
   "icon": "",
   "weight": 3,

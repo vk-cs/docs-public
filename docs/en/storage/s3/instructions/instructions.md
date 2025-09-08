@@ -1,1 +1,1 @@
-Standard operations for managing Cloud Storage and its resources.
+Standard operations for managing Object Storage and its resources.

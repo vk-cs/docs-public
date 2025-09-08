@@ -59,11 +59,11 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 |-------------------|-----------------------------------------------------------|-------------------------------------|
 | Trove             | https://msk.cloud.vk.com/infra/database/v1.0/<project_id> | Managing [databases](/en/dbs/dbaas) |
 
-### Cloud Storage
+### Object Storage
 
 | Endpoint                  | Address                               | Purpose                                  |
 |---------------------------|---------------------------------------|------------------------------------------|
-| S3 domain                 | https://hb.ru-msk.vkcloud-storage.ru/ | Managing [Cloud storage](/en/storage/s3) |
+| S3 domain                 | https://hb.ru-msk.vkcloud-storage.ru/ | Managing [Object Storage](/en/storage/s3) |
 
 
 ### Cloud ML Platform
