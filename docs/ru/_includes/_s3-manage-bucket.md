@@ -3,12 +3,12 @@
 {includetag(create_bucket_block)}
 
 ```console
-   aws s3api create-bucket 
-     --bucket <ИМЯ_БАКЕТА> 
-     --endpoint-url <URL_СЕРВИСА> 
-     --region <КОД_РЕГИОНА> 
-     --object-lock-enabled-for-bucket
-   ```
+aws s3api create-bucket \
+  --bucket <ИМЯ_БАКЕТА> \
+  --object-lock-enabled-for-bucket \
+  --endpoint-url <URL_СЕРВИСА> \
+  --region <КОД_РЕГИОНА>
+```
 
 Здесь:
 
@@ -30,8 +30,8 @@
 {includetag(version_bucket)}
 
 ```console
-aws s3api put-bucket-versioning 
-  --bucket <ИМЯ_БАКЕТА> 
+aws s3api put-bucket-versioning \
+  --bucket <ИМЯ_БАКЕТА> \
   --endpoint-url <URL_СЕРВИСА>  
 ```
 

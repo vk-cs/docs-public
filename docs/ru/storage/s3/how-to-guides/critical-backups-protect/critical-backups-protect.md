@@ -39,7 +39,7 @@ Object Storage позволяет защитить объекты, [заблок
 1. Создайте объект:
 
    ```console
-   echo "CRITICAL_DATA" > <ИМЯ_ОБЪЕКТА>
+   echo "CRITICAL_DATA" > <ИМЯ_ОБЪЕКТА> \
    gzip <ИМЯ_ОБЪЕКТА>
    ```
 
