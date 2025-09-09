@@ -69,7 +69,11 @@
    Пример команды создания бакета с возможностью установить блокировку объектов от удаления и перезаписи:
 
    ```console
-   aws s3api create-bucket --bucket my-bucket-with-lock --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --region ru-msk --object-lock-enabled-for-bucket
+   aws s3api create-bucket \
+     --bucket my-bucket-with-lock \
+     --object-lock-enabled-for-bucket \
+     --endpoint-url https://hb.ru-msk.vkcloud-storage.ru \
+     --region ru-msk
    ```
 
    Пример ответа:
