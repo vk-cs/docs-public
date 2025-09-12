@@ -72,7 +72,7 @@ The following is a list of quotas and limits for the Moscow region.
 [cols="2,1,1,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
@@ -124,7 +124,55 @@ The limit on 4 GPUs per instance is related to the limitation of KVM technology,
 
 ### Cloud Containers
 
-There are no quotas for the Cloud Containers service. The use of this service is limited only by technical limits.
+#### Container resources for one project
+
+[cols="2,2,1,1", options="header"]
+|===
+| Parameter
+| Quota in management console
+| Basic quota
+| Limit
+
+| Number of Kubernetes clusters
+| **Kubernetes clusters**
+| 2 pcs.
+| not limited
+
+| Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies)
+| **Kubernetes nodes**
+| 10 pcs.
+| not limited
+
+| Number of worker node groups
+| **Kubernetes node-group**
+| 10 pcs.
+| not limited
+
+| Number of vCPUs of all nodes
+| **Kubernetes vCPU**
+| 20 pcs.
+| not limited
+
+| Total amount of RAM of all nodes
+| **Kubernetes RAM**
+| 64 GB
+| not limited
+
+| Number of disks of all nodes
+| **Kubernetes disks**
+| 30 pcs.
+| not limited
+
+| Total disk capacity of all nodes
+| **Kubernetes disk size**
+| 200 GB
+| not limited
+
+|=== 
+
+#### Limits without quotas
+
+Aside from the quotas listed above, Cloud Containers has specific technical limits.
 
 [cols="3,1,1", options="header"]
 |===
@@ -132,11 +180,11 @@ There are no quotas for the Cloud Containers service. The use of this service is
 |Limit
 |Hard
 
-|Length of a k8s cluster and node group name
+|Length of a Kubernetes cluster and node group name
 |24 characters
 |![](/en/assets/check.svg "inline")
 
-|Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) in a node group
+|Number of nodes in a node group
 |500 pcs.
 |![](/en/assets/check.svg "inline")
 
@@ -190,7 +238,7 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 [cols="3,2,2,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
@@ -344,7 +392,7 @@ If the **Use configuration disk** option is disabled or the `--use-config-drive`
 [cols="3,2,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Basic quota
 | Limit
 | Hard
@@ -396,7 +444,7 @@ The limits in this section are determined by the requirements of operation, they
 [cols="3,2,2,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
@@ -432,7 +480,7 @@ The limits in this section are determined by the requirements of operation, they
 [cols="3,2,2,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
@@ -476,7 +524,7 @@ Even if the quota for the total number of subnets in the project has been increa
 [cols="3,2,2,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
@@ -540,7 +588,7 @@ Even if the quota for the total number of subnets in the project has been increa
 [cols="3,2,2,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
@@ -556,8 +604,8 @@ Even if the quota for the total number of subnets in the project has been increa
 | Number of advanced routers
 | **Neutron routers**
 | `dc_router`
-| 3 шт.
-| 3 шт.
+| 3 pcs.
+| 3 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of security groups in the project
@@ -597,7 +645,7 @@ Even if the quota for the total number of subnets in the project has been increa
 [cols="2,1,1,1,1,1", options="header"]
 |===
 | Parameter
-| Quota in PA
+| Quota in management console
 | Quota in CLI
 | Basic quota
 | Limit
