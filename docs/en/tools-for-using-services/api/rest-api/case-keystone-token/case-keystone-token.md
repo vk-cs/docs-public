@@ -68,7 +68,7 @@ Get a token:
                 "password": {
                     "user": {
                         "domain": {
-                            "id": "'$OS_USER_DOMAIN_NAME'"
+                            "name": "'$OS_USER_DOMAIN_NAME'"
                         },
                         "name": "'$OS_USERNAME'",
                         "password": "'$OS_PASSWORD'"
@@ -93,7 +93,7 @@ Get a token:
     ``` bash
     curl -X POST ^
     -H "Content-Type: application/json" ^
-    -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
+    -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"name\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
     -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
     ```
     {/tab}
