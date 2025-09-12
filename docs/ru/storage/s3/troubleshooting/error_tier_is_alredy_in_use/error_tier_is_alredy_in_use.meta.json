@@ -1,10 +1,11 @@
 {
-    "title": "Ошибка при интеграции с S3",
-    "pageDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use.",
-    "shortDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
-    "metaTitle": "Ошибка при интеграции с S3",
-    "metaDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
-    "sectionTitle": "Ошибка при интеграции с S3",
-    "icon": "",
-    "weight": 4
+  "title": "Ошибка при интеграции с S3",
+  "pageDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use.",
+  "shortDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
+  "metaTitle": "Ошибка при интеграции с S3",
+  "metaDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
+  "sectionTitle": "Ошибка при интеграции с S3",
+  "icon": "",
+  "weight": 4,
+  "uuid": "ac789f88-ce8f-431a-9337-3bce60ea48e4"
 }

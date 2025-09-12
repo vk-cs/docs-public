@@ -6,5 +6,6 @@
   "metaDescription": "Развертывание Bitwarden для безопасного хранения и совместного управления учетными данными и секретами",
   "sectionTitle": "Развертывание Bitwarden",
   "icon": "",
-  "weight": 21
+  "weight": 21,
+  "uuid": "6fa28981-bc4c-4520-ac34-1665e0fbffb5"
 }

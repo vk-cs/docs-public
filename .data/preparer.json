@@ -1,0 +1,32 @@
+{
+  "partitions": [
+    {
+      "key": "ru",
+      "locale": "ru",
+      "version": null,
+      "current": true,
+      "partialPath": "/ru",
+      "variables": {
+        "system": "магазин приложений Marketplace",
+        "revdate": "18.07.2024"
+      }
+    },
+    {
+      "key": "en",
+      "locale": "en",
+      "version": null,
+      "current": true,
+      "partialPath": "/en",
+      "variables": {}
+    }
+  ],
+  "locales": [
+    "ru",
+    "en"
+  ],
+  "versions": [],
+  "buildPoints": [
+    "common"
+  ],
+  "createdAt": "2025-09-12T09:38:04.881Z"
+}

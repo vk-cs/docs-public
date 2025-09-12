@@ -1,16 +1,16 @@
 {
-    "title": "vGPU: Виртуализация GPU",
-    "pageDescription": "Особенности работы vGPU: профили, лицензирование, отличия от физических GPU.",
-    "shortDescription": "Особенности работы vGPU и отличия от физических GPU",
-    "metaTitle": "vGPU: Виртуализация GPU",
-    "metaDescription": "Особенности работы vGPU: профили, лицензирование, отличия от физических GPU",
-    "sectionTitle": "vGPU: Виртуализация GPU",
-    "build": {
-      "for": [
-        "dontbuild"
-      ]
-    },
-    "icon": "",
-    "weight": 2,
-    "uuid": ""
+  "title": "vGPU: Виртуализация GPU",
+  "pageDescription": "Особенности работы vGPU: профили, лицензирование, отличия от физических GPU.",
+  "shortDescription": "Особенности работы vGPU и отличия от физических GPU",
+  "metaTitle": "vGPU: Виртуализация GPU",
+  "metaDescription": "Особенности работы vGPU: профили, лицензирование, отличия от физических GPU",
+  "sectionTitle": "vGPU: Виртуализация GPU",
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "icon": "",
+  "weight": 2,
+  "uuid": "c41ecee6-3626-460b-ba15-c86a8e0137ba"
 }
