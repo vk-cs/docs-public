@@ -1356,8 +1356,8 @@
   },
   "k8s": {
     "number": null,
-    "full": "Контейнеры (Kubernetes)",
-    "text": "Контейнеры (Kubernetes)"
+    "full": "Cloud Containers (контейнеры Kubernetes)",
+    "text": "Cloud Containers (контейнеры Kubernetes)"
   },
   "images-volumes": {
     "number": null,
