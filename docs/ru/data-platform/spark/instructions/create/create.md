@@ -49,7 +49,7 @@
 
    1. Нажмите кнопку Следующий шаг.
 
-1. На шаге **Подключения** добавьте подключение `PostgreSQL` и одно из подключений: `S3 VK Cloud` или `S3 внешний`. Чтобы добавить подключение:
+1. На шаге **Подключения** добавьте подключение `PostgreSQL` и одно из подключений: `S3 VK Cloud` или `S3 внешний`. Чтобы добавить подключение к [источнику данных](/ru/data-platform/spark/concepts/parameters#parameters_data_sources):
 
     {include(/ru/_includes/_spark.md)[tags=connection]}
 
