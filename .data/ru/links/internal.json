@@ -4176,6 +4176,12 @@
     "hash": null
   },
   {
+    "src": "/home/node/app/docs/ru/networks/vnet/concepts/onpremise-connect/onpremise-connect.md",
+    "dst": "/ru/networks/directconnect/how-to-guides/dc-two-channels",
+    "link": "/docs/ru/networks/directconnect/how-to-guides/dc-two-channels",
+    "hash": null
+  },
+  {
     "src": "/home/node/app/docs/ru/networks/vnet/instructions/net/net.md",
     "dst": "/ru/networks/vnet/concepts/net-types",
     "link": "/docs/ru/networks/vnet/concepts/net-types",
@@ -6162,6 +6168,90 @@
     "hash": null
   },
   {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/concepts/ips-and-inet",
+    "link": "/docs/ru/networks/vnet/concepts/ips-and-inet",
+    "hash": "floating-ip"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/concepts/ips-and-inet",
+    "link": "/docs/ru/networks/vnet/concepts/ips-and-inet",
+    "hash": "pul_publichnyh_ip_adresov_vneshney_seti_internet"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/concepts/onpremise-connect",
+    "link": "/docs/ru/networks/vnet/concepts/onpremise-connect",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/tools-for-using-services/api/rest-api/enable-api",
+    "link": "/docs/ru/tools-for-using-services/api/rest-api/enable-api",
+    "hash": "aktivaciya_dostupa_po_api"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/tools-for-using-services/cli/openstack-cli",
+    "link": "/docs/ru/tools-for-using-services/cli/openstack-cli",
+    "hash": "3_proydite_autentifikaciyu"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "sozdanie_seti"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/computing/iaas/instructions/vm/vm-create",
+    "link": "/docs/ru/computing/iaas/instructions/vm/vm-create",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/directconnect/connect",
+    "link": "/docs/ru/networks/directconnect/connect",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/how-to-guides/custom-subnet",
+    "link": "/docs/ru/networks/vnet/how-to-guides/custom-subnet",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/instructions/advanced-router/manage-advanced-routers",
+    "link": "/docs/ru/networks/vnet/instructions/advanced-router/manage-advanced-routers",
+    "hash": "add"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "link": "/docs/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "hash": "add"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/computing/iaas/instructions/vm/vm-manage",
+    "link": "/docs/ru/computing/iaas/instructions/vm/vm-manage",
+    "hash": "delete_vm"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/instructions/router",
+    "link": "/docs/ru/networks/vnet/instructions/router",
+    "hash": "udalenie_marshrutizatora"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router/dc-advanced-router.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "udalenie_seti"
+  },
+  {
     "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-standard-router/dc-standard-router.md",
     "dst": "/ru/networks/directconnect/how-to-guides/dc-advanced-router",
     "link": "/docs/ru/networks/directconnect/how-to-guides/dc-advanced-router",
@@ -6307,6 +6397,126 @@
   },
   {
     "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/advanced-router/advanced-router.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "udalenie_seti"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/concepts/onpremise-connect",
+    "link": "/docs/ru/networks/vnet/concepts/onpremise-connect",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/tools-for-using-services/api/rest-api/enable-api",
+    "link": "/docs/ru/tools-for-using-services/api/rest-api/enable-api",
+    "hash": "aktivaciya_dostupa_po_api"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/tools-for-using-services/cli/openstack-cli",
+    "link": "/docs/ru/tools-for-using-services/cli/openstack-cli",
+    "hash": "3_proydite_autentifikaciyu"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "sozdanie_seti"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/computing/iaas/instructions/vm/vm-create",
+    "link": "/docs/ru/computing/iaas/instructions/vm/vm-create",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "sozdanie_seti"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/directconnect/connect",
+    "link": "/docs/ru/networks/directconnect/connect",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/net",
+    "link": "/docs/ru/networks/vnet/instructions/net",
+    "hash": "sozdanie_podseti"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/how-to-guides/custom-subnet",
+    "link": "/docs/ru/networks/vnet/how-to-guides/custom-subnet",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/how-to-guides/custom-subnet",
+    "link": "/docs/ru/networks/vnet/how-to-guides/custom-subnet",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/how-to-guides/custom-subnet",
+    "link": "/docs/ru/networks/vnet/how-to-guides/custom-subnet",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/router",
+    "link": "/docs/ru/networks/vnet/instructions/router",
+    "hash": "dobavlenie_marshrutizatora"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/advanced-router/manage-advanced-routers",
+    "link": "/docs/ru/networks/vnet/instructions/advanced-router/manage-advanced-routers",
+    "hash": "add"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "link": "/docs/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "hash": "add"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "link": "/docs/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "hash": "add"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "link": "/docs/ru/networks/vnet/instructions/advanced-router/manage-interfaces",
+    "hash": "add"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/computing/iaas/instructions/vm/vm-manage",
+    "link": "/docs/ru/computing/iaas/instructions/vm/vm-manage",
+    "hash": "delete_vm"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
+    "dst": "/ru/networks/vnet/instructions/router",
+    "link": "/docs/ru/networks/vnet/instructions/router",
+    "hash": "udalenie_marshrutizatora"
+  },
+  {
+    "src": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
     "dst": "/ru/networks/vnet/instructions/net",
     "link": "/docs/ru/networks/vnet/instructions/net",
     "hash": "udalenie_seti"

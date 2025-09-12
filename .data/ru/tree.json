@@ -2688,20 +2688,6 @@
     "tags": null
   },
   {
-    "uuid": "00861a2b-ce87-4b92-9d67-f6552fbafcd3",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/networks/vnet/how-to-guides/onpremise-connect/dc-advanced-router",
-    "metaFullPath": "/home/node/app/docs/ru/networks/vnet/how-to-guides/onpremise-connect/dc-advanced-router/dc-advanced-router.meta.json",
-    "mdFullPath": "/home/node/app/docs/ru/networks/vnet/how-to-guides/onpremise-connect/dc-advanced-router/dc-advanced-router.md",
-    "hidden": false,
-    "buildPoints": [
-      "common"
-    ],
-    "tags": null
-  },
-  {
     "uuid": "2cdd257c-378e-4d8c-afa1-81a5554c2b51",
     "lang": "ru",
     "type": "ARTICLE",
@@ -2709,6 +2695,20 @@
     "partialPath": "/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router",
     "metaFullPath": "/home/node/app/docs/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router/advanced-router.meta.json",
     "mdFullPath": "/home/node/app/docs/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router/advanced-router.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ],
+    "tags": null
+  },
+  {
+    "uuid": "00861a2b-ce87-4b92-9d67-f6552fbafcd3",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/networks/vnet/how-to-guides/onpremise-connect/dc-advanced-router",
+    "metaFullPath": "/home/node/app/docs/ru/networks/vnet/how-to-guides/onpremise-connect/dc-advanced-router/dc-advanced-router.meta.json",
+    "mdFullPath": "/home/node/app/docs/ru/networks/vnet/how-to-guides/onpremise-connect/dc-advanced-router/dc-advanced-router.md",
     "hidden": false,
     "buildPoints": [
       "common"
@@ -3437,6 +3437,20 @@
     "partialPath": "/ru/networks/directconnect/how-to-guides/advanced-router",
     "metaFullPath": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/advanced-router/advanced-router.meta.json",
     "mdFullPath": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/advanced-router/advanced-router.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ],
+    "tags": null
+  },
+  {
+    "uuid": "a4eb0139-ebc6-4aec-b3b2-938c300542f0",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/networks/directconnect/how-to-guides/dc-two-channels",
+    "metaFullPath": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.meta.json",
+    "mdFullPath": "/home/node/app/docs/ru/networks/directconnect/how-to-guides/dc-two-channels/dc-two-channels.md",
     "hidden": false,
     "buildPoints": [
       "common"
