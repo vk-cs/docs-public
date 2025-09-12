@@ -27,9 +27,9 @@ VK Cloud позволяет настроить разные [варианты п
 1. [Активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api), если этого еще не сделано.
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Убедитесь, что на вашем компьютере установлены пакеты [curl](https://curl.se/docs) и [jq](https://jqlang.org).
-1. Выберите или создайте в вашей локальной инфраструктуре клиентскую сеть.  Сеть может не иметь доступа к интернету, но должна быть подключена к маршрутизатору, который:
+1. Выберите или создайте сеть в вашей локальной инфраструктуре.  Сеть может не иметь доступа к интернету, но должна быть подключена к маршрутизатору, который:
     - поддерживает соединение по BGP-протоколу;
-    - (опционально) поддерживает BFD-протокол: это позволит сократить время сходимости протоколов маршрутизации;
+    - (опционально) поддерживает BFD-протокол: это позволит сократить время восстановления маршрутизации в случае сбоя;
     - может быть устройством или виртуальной машиной в клиентской сети.
 
      Запишите следующую информацию:
@@ -50,9 +50,9 @@ VK Cloud позволяет настроить разные [варианты п
 
 1. [Создайте виртуальную машину](/ru/computing/iaas/instructions/vm/vm-create) в выбранной сети. Запишите IP-адрес созданной ВМ.
 1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) транзитную виртуальную сеть в вашем проекте в VK Cloud. Сеть не должна быть подключена к маршрутизатору.
-1. [Узнайте UUID](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) созданной сети. В этом примере: `323d97cf-aaaa-bbbb-cccc-deaa6a11ab25`.
+1. [Узнайте UUID](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) транзитной сети. В этом примере: `323d97cf-aaaa-bbbb-cccc-deaa6a11ab25`.
 1. [Подключитесь](/ru/networks/directconnect/connect) к сервису [Cloud Direct Connect](/ru/networks/directconnect), если этого еще не сделано.
-1. Узнайте UUID подключенной сети сетевого стыка:
+1. Узнайте UUID подключенной сети сетевого стыка (Cloud Direct Connect):
 
     1. В [личном кабинете](https://msk.cloud.vk.com/app/) перейдите в раздел **Виртуальные сети** → **Сети**.
     1. В списке сетей найдите сеть сетевого стыка с именем `external-vni-10XXX`. Здесь `XXX` — индивидуальный порядковый номер вашего подключения.
@@ -65,7 +65,7 @@ VK Cloud позволяет настроить разные [варианты п
    |Клиентская сеть
    |Виртуальная сеть
    |Транзитная сеть
-   |Сеть Direct Connect
+   |Сеть Cloud Direct Connect
 
    |Сеть
    |`customer-net`
