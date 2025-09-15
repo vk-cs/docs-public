@@ -1,9 +1,6 @@
 {
     "title": "Creating a Spark cluster",
-    "pageDescription": "How to create a Spark cluster using Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Creating a Spark cluster",
-    "metaDescription": "How to create a Spark cluster using Terraform",
+        "shortDescription": "",
     "sectionTitle": "Creating a Spark cluster",
     "icon": "",
     "weight": 1,

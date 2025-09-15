@@ -1,9 +1,6 @@
 {
   "title": "Пошаговые инструкции",
-  "pageDescription": "Создание и управление инстансом JupyterHub.",
-  "shortDescription": "Создание инстанса JupyterHub и управление им",
-  "metaTitle": "Пошаговые инструкции",
-  "metaDescription": "Создание инстанса JupyterHub и управление им",
+    "shortDescription": "Создание инстанса JupyterHub и управление им",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 4,

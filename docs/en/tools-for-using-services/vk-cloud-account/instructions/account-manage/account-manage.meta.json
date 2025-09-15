@@ -1,9 +1,6 @@
 {
   "title": "Account management",
-  "pageDescription": "VK Cloud account management operations: viewing and changing profile data, 2FA and password, SSH key pairs and API access.",
-  "shortDescription": "VK Cloud account management operations: viewing and changing profile data, 2FA and password, SSH key pairs and API access",
-  "metaTitle": "Account management",
-  "metaDescription": "VK Cloud account management operations: viewing and changing profile data, 2FA and password, SSH key pairs and API access.",
+    "shortDescription": "VK Cloud account management operations: viewing and changing profile data, 2FA and password, SSH key pairs and API access",
   "sectionTitle": "Account management",
   "icon": "",
   "weight": 1,

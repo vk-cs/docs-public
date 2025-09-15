@@ -1,9 +1,6 @@
 {
     "title": "Tarantool",
-    "pageDescription": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
-    "shortDescription": "",
-    "metaTitle": "Tarantool",
-    "metaDescription": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
+        "shortDescription": "",
     "sectionTitle": "Tarantool",
     "icon": "",
     "weight": 6,

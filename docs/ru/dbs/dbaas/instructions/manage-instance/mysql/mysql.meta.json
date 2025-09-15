@@ -1,9 +1,6 @@
 {
     "title": "MySQL",
-    "pageDescription": "Управление инстансами MySQL.",
-    "shortDescription": "",
-    "metaTitle": "MySQL",
-    "metaDescription": "Базы данных VK Cloud: управление инстансами MySQL.",
+        "shortDescription": "",
     "sectionTitle": "MySQL",
     "icon": "",
     "weight": 3,

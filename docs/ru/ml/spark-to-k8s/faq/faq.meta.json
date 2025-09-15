@@ -1,9 +1,6 @@
 {
     "title": "Вопросы и ответы",
-    "pageDescription": "Ответы на часто задаваемые вопросы о кластере Spark.",
-    "shortDescription": "Ответы на часто задаваемые вопросы о кластере Spark",
-    "metaTitle": "Вопросы и ответы",
-    "metaDescription": "Ответы на часто задаваемые вопросы о кластере Spark",
+        "shortDescription": "Ответы на часто задаваемые вопросы о кластере Spark",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
     "weight": 10,

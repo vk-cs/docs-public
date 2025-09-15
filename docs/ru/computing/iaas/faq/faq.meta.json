@@ -1,9 +1,6 @@
 {
     "title": "Вопросы и ответы",
-    "pageDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Servers.",
-    "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Servers",
-    "metaTitle": "Вопросы и ответы",
-    "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Servers",
+        "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Servers",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
     "weight": 10,

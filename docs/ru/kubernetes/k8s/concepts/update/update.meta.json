@@ -1,9 +1,6 @@
 {
     "title": "Обновление версии кластера",
-    "pageDescription": "Как устроена процедура обновления кластера Kubernetes.",
-    "shortDescription": "Как устроена процедура обновления кластера Kubernetes",
-    "metaTitle": "Обновление версии кластера",
-    "metaDescription": "",
+        "shortDescription": "Как устроена процедура обновления кластера Kubernetes",
     "sectionTitle": "Обновление версии кластера",
     "icon": "",
     "weight": 8,

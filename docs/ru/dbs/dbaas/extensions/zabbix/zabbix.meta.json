@@ -1,9 +1,6 @@
 {
     "title": "Zabbix агент",
-    "pageDescription": "",
-    "shortDescription": "Функциональность и параметры агента мониторинга Zabbix",
-    "metaTitle": "Zabbix агент",
-    "metaDescription": "Развертывание Zabbix агента Zabbix — это ПО для мониторинга приложений, серверов и сетевых устройств. Многочисленные предустановленные шаблоны позволяют по",
+        "shortDescription": "Функциональность и параметры агента мониторинга Zabbix",
     "sectionTitle": "Zabbix агент",
     "icon": "",
     "weight": 8,

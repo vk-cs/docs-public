@@ -1,9 +1,6 @@
 {
   "title": "Настройка федерации удостоверений через Keycloak",
-  "pageDescription": "Как настроить аутентификацию в VK Cloud через Keycloak.",
-  "shortDescription": "Как настроить аутентификацию в VK Cloud через Keycloak",
-  "metaTitle": "Настройка федерации удостоверений через Keycloak",
-  "metaDescription": "Как настроить федеративный доступ в VK Cloud с помощью Keycloak в качестве identity provider",
+    "shortDescription": "Как настроить аутентификацию в VK Cloud через Keycloak",
   "sectionTitle": "Настройка федерации удостоверений через Keycloak",
   "icon": "",
   "weight": 2,

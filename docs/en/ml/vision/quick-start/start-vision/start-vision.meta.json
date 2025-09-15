@@ -1,9 +1,6 @@
 {
     "title": "Creation and connection to the service",
-    "pageDescription": "",
-    "shortDescription": "Ways to connect to service",
-    "metaTitle": "Creation and connection to the service",
-    "metaDescription": "Machine learning service is enabled by default in VK Cloud projects. You can connect to the service in two different ways, described below. API Endpoint API End",
+        "shortDescription": "Ways to connect to service",
     "sectionTitle": "Creation and connection to the service",
     "icon": "",
     "weight": 1,

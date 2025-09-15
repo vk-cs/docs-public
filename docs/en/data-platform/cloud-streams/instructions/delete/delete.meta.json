@@ -1,9 +1,6 @@
 {
     "title": "Delete Cloud Streams Cluster",
-    "pageDescription": "Delete Cloud Streams Cluster",
-    "shortDescription": "Description of the steps to remove the cluster",
-    "metaTitle": "Deleting an Cloud Streams cluster",
-    "metaDescription": "Delete Cloud Streams Cluster",
+        "shortDescription": "Description of the steps to remove the cluster",
     "sectionTitle": "Deleting an Cloud Streams cluster",
     "icon": "",
     "weight": 2,

@@ -1,9 +1,6 @@
 {
     "title": "MySQL",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "MySQL",
-    "metaDescription": "MySQL — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
+        "shortDescription": "",
     "sectionTitle": "MySQL",
     "icon": "",
     "weight": 3,

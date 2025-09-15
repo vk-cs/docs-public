@@ -1,9 +1,6 @@
 {
   "title": "Каналы уведомлений",
-  "pageDescription": "",
-  "shortDescription": "Инструкции по созданию и управлению каналами уведомлений в Cloud Alerting",
-  "metaTitle": "Каналы уведомлений",
-  "metaDescription": "",
+    "shortDescription": "Инструкции по созданию и управлению каналами уведомлений в Cloud Alerting",
   "sectionTitle": "Каналы уведомлений",
   "icon": "",
   "weight": 0,

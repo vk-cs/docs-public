@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Подробное описание принципов функционирования и устройства кластеров Cloud Containers в VK Cloud.",
-  "shortDescription": "Подробное описание принципов функционирования и устройства кластеров сервиса Cloud Containers",
-  "metaTitle": "Концепции",
-  "metaDescription": "Cloud Containers: подробное описание принципов функционирования и устройства кластеров Kubernetes",
+    "shortDescription": "Подробное описание принципов функционирования и устройства кластеров сервиса Cloud Containers",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

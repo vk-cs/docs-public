@@ -1,9 +1,6 @@
 {
   "title": "Creating cluster",
-  "pageDescription": "Different ways to create a Kubernetes cluster.",
-  "shortDescription": "The different ways to create a cluster.",
-  "metaTitle": "Creating cluster",
-  "metaDescription": "",
+    "shortDescription": "The different ways to create a cluster.",
   "sectionTitle": "Creating cluster",
   "icon": "",
   "weight": 1,

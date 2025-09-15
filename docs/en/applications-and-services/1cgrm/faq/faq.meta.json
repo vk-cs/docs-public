@@ -1,9 +1,6 @@
 {
     "title": "FAQ",
-    "pageDescription": "",
-    "shortDescription": "Answers to frequently asked questions about the 1C:GRM service",
-    "metaTitle": "FAQ",
-    "metaDescription": "What you need to run 1C: timing The launch of 1C: GRM applications is carried out with an activated account and confirmed credentials. Can I use a fat clie",
+        "shortDescription": "Answers to frequently asked questions about the 1C:GRM service",
     "sectionTitle": "FAQ",
     "icon": "",
     "weight": 4,

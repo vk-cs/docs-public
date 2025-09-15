@@ -1,9 +1,6 @@
 {
     "title": "Changing the status of an incident",
-    "pageDescription": "",
-    "shortDescription": "Incident lifecycle management, conditions for incident re-creation",
-    "metaTitle": "Changing the status of an incident",
-    "metaDescription": "",
+        "shortDescription": "Incident lifecycle management, conditions for incident re-creation",
     "sectionTitle": "Changing the status of an incident",
     "icon": "",
     "weight": 2,

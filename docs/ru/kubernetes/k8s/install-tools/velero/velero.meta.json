@@ -1,9 +1,6 @@
 {
     "title": "Установка Velero",
-    "pageDescription": "Как установить Velero в кластер Kubernetes.",
-    "shortDescription": "Как установить утилиту Velero",
-    "metaTitle": "Установка Velero",
-    "metaDescription": "",
+        "shortDescription": "Как установить утилиту Velero",
     "sectionTitle": "Установка Velero",
     "icon": "",
     "weight": 3,

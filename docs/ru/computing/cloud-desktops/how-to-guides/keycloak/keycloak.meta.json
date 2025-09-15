@@ -1,9 +1,6 @@
 {
   "title": "Интеграция с Keycloak",
-  "pageDescription": "Как настроить Keycloak в качестве поставщика удостоверений для сервиса Cloud Desktop.",
-  "shortDescription": "Как настроить Keycloak в качестве поставщика удостоверений для сервиса Cloud Desktop.",
-  "metaTitle": "Интеграция с Keycloak",
-  "metaDescription": "Как настроить Keycloak в качестве поставщика удостоверений для сервиса Cloud Desktop",
+    "shortDescription": "Как настроить Keycloak в качестве поставщика удостоверений для сервиса Cloud Desktop.",
   "sectionTitle": "Интеграция с Keycloak",
   "icon": "",
   "weight": 3,

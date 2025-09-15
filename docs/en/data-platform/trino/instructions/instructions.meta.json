@@ -1,9 +1,6 @@
 {
   "title": "Step-by-step instructions",
-  "pageDescription": "How to create an instance of Cloud Trino service in VK Cloud project, how to manage Cloud Trino components in VK Cloud.",
-  "shortDescription": "Creating a service instance and managing it's components",
-  "metaTitle": "Step-by-step instructions",
-  "metaDescription": "Cloud Trino in VK Cloud: creating a service instance, managing the instance and it's components",
+    "shortDescription": "Creating a service instance and managing it's components",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

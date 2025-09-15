@@ -1,9 +1,6 @@
 {
     "title": "Tarantool",
-    "pageDescription": "Управление инстансами Tarantool.",
-    "shortDescription": "",
-    "metaTitle": "Tarantool",
-    "metaDescription": "Базы данных VK Cloud: управление инстансами Tarantool.",
+        "shortDescription": "",
     "sectionTitle": "Tarantool",
     "icon": "",
     "weight": 6,

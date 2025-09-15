@@ -1,9 +1,6 @@
 {
     "title": "Arenadata Hadoop Licenses",
-    "pageDescription": "Community and corporate configuration of big data cloud clusters. User Community, Enterprise Full, Enterprise Limited, Enterprise Test.",
-    "shortDescription": "Presets and available ADH licenses in the project",
-    "metaTitle": "Arenadata Hadoop Licenses",
-    "metaDescription": "VK Cloud: presets and available ADH licenses in the project",
+        "shortDescription": "Presets and available ADH licenses in the project",
     "sectionTitle": "Arenadata Hadoop Licenses",
     "icon": "",
     "weight": 4,

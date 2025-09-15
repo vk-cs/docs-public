@@ -1,9 +1,6 @@
 {
   "title": "Cloud Backup",
-  "pageDescription": "Backup of virtual machines and databases to VK Cloud via the Cloud Backup service.",
-  "shortDescription": "Backup of virtual machines, database instances",
-  "metaTitle": "Cloud Backup",
-  "metaDescription": "Cloud Backup to VK Cloud: backup of virtual machines, databases",
+    "shortDescription": "Backup of virtual machines, database instances",
   "sectionTitle": "Cloud Backup",
   "icon": "",
 

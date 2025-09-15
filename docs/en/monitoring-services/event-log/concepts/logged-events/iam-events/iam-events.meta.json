@@ -1,9 +1,6 @@
 {
   "title": "IAM service events",
-  "pageDescription": "Events that IAM reports to Cloud Audit.",
-  "shortDescription": "Events that IAM reports to Cloud Audit",
-  "metaTitle": "IAM service events",
-  "metaDescription": "Events that IAM reports to Cloud Audit",
+    "shortDescription": "Events that IAM reports to Cloud Audit",
   "sectionTitle": "IAM service events",
   "icon": "",
   "weight": 1,

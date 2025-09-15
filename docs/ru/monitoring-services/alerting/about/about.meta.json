@@ -1,9 +1,6 @@
 {
     "title": "О сервисе",
-    "pageDescription": "",
-    "shortDescription": "Возможности сервиса Cloud Alerting",
-    "metaTitle": "О сервисе",
-    "metaDescription": "",
+        "shortDescription": "Возможности сервиса Cloud Alerting",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

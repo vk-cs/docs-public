@@ -1,9 +1,6 @@
 {
     "title": "Working with persistent volumes",
-    "pageDescription": "In the VK Cloud Kubernetes cluster, you can connect various types of persistent volumes. Here you will find information about the available connection options and limitations.",
-    "shortDescription": "How to use various types of persistent volumes in a cluster",
-    "metaTitle": "Working with persistent volumes",
-    "metaDescription": "",
+        "shortDescription": "How to use various types of persistent volumes in a cluster",
     "sectionTitle": "Working with persistent volumes",
     "icon": "",
     "weight": 2,

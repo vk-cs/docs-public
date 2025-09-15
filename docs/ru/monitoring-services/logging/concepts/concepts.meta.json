@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Раздел описывает возможности сервиса и язык для фильтрации логов.",
-  "shortDescription": "Основные понятия сервиса Cloud Logging",
-  "metaTitle": "Концепции",
-  "metaDescription": "",
+    "shortDescription": "Основные понятия сервиса Cloud Logging",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

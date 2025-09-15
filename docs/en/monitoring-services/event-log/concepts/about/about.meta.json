@@ -1,9 +1,6 @@
 {
   "title": "About service",
-  "pageDescription": "",
-  "shortDescription": "Description of the service features",
-  "metaTitle": "About service",
-  "metaDescription": "",
+    "shortDescription": "Description of the service features",
   "sectionTitle": "About service",
   "icon": "",
   "weight": 1,

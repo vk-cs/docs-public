@@ -1,9 +1,6 @@
 {
     "title": "Backup with Velero",
-    "pageDescription": "How to use Velero to back up and restore Kubernetes cluster resources.",
-    "shortDescription": "How to use Velero to back up and restore Kubernetes cluster resources",
-    "metaTitle": "Backup with Velero",
-    "metaDescription": "",
+        "shortDescription": "How to use Velero to back up and restore Kubernetes cluster resources",
     "sectionTitle": "Backup with Velero",
     "icon": "",
     "weight": 6,

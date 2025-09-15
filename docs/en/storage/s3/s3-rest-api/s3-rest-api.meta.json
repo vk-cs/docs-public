@@ -1,9 +1,6 @@
 {
   "title": "REST API",
-  "pageDescription": "Reference information about the application programming interface (API), API operations, corresponding request and response structures, and error codes.",
-  "shortDescription": "Reference information about the application programming interface (API), API operations, corresponding request and response structures, and error codes",
-  "metaTitle": "REST API",
-  "metaDescription": "Reference information about the application programming interface (API), API operations, corresponding request and response structures, and error codes.",
+    "shortDescription": "Reference information about the application programming interface (API), API operations, corresponding request and response structures, and error codes",
   "sectionTitle": "REST API",
   "icon": "",
   "weight": 7,

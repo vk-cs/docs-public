@@ -1,9 +1,6 @@
 {
   "title": "Obtaining access to buckets",
-  "pageDescription": "Obtaining access to buckets.",
-  "shortDescription": "How to obtain access to buckets for a Spark cluster",
-  "metaTitle": "Obtaining Access to Buckets",
-  "metaDescription": "Spark VK Cloud: obtain access to buckets for a Spark cluster",
+    "shortDescription": "How to obtain access to buckets for a Spark cluster",
   "sectionTitle": "Obtaining access to buckets",
   "icon": "",
   "weight": 9,

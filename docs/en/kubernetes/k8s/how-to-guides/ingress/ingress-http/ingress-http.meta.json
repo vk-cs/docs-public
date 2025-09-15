@@ -1,9 +1,6 @@
 {
     "title": "Deploying Ingress controller with HTTP load balancer",
-    "pageDescription": "Demonstration of Ingress controller interaction with VK Cloud platform HTTP load balancer.",
-    "shortDescription": "How to configure the Ingress controller in conjunction with HTTP load balancer",
-    "metaTitle": "Deploying Ingress controller with HTTP load balancer",
-    "metaDescription": "",
+        "shortDescription": "How to configure the Ingress controller in conjunction with HTTP load balancer",
     "sectionTitle": "Deploying Ingress controller with HTTP load balancer",
     "icon": "",
     "weight": 2,

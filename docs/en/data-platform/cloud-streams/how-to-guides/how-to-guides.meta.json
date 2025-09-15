@@ -1,9 +1,6 @@
 {
   "title": "How-to guides",
-  "pageDescription": "Scenarios for working with Cloud Streams clusters on the VK Cloud platform.",
-  "shortDescription": "Instructions for working with Cloud Streams in VK Cloud",
-  "metaTitle": "How-to guides",
-  "metaDescription": "How-to guides",
+    "shortDescription": "Instructions for working with Cloud Streams in VK Cloud",
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 4,

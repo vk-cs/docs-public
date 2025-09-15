@@ -1,10 +1,7 @@
 {
     "title": "Connecting to Windows VM",
     "sectionTitle": "Connecting to Windows VM",
-    "metaTitle": "Connecting to Windows VM",
-    "pageDescription": "How to connect to a Windows VM via RDP.",
-    "shortDescription": "How to connect to a Windows VM via RDP",
-    "metaDescription": "Connecting to a Windows VM",
+        "shortDescription": "How to connect to a Windows VM via RDP",
     "icon": "",
     "weight": 1,
     "uuid": "a6fcdab8-4551-43c3-9e2c-1e08674d6df9"

@@ -1,9 +1,6 @@
 {
   "title": "MLflow Deploy",
-  "pageDescription": "This section describes how to create and manage MLflow Deploy instances.",
-  "shortDescription": "The service builds ML-models in Docker-containers and makes them available via REST API",
-  "metaTitle": "MLflow Deploy",
-  "metaDescription": "The service builds ML-models in Docker-containers and makes them available via REST API",
+    "shortDescription": "The service builds ML-models in Docker-containers and makes them available via REST API",
   "sectionTitle": "MLflow Deploy",
   "icon": "",
   "weight": 4,

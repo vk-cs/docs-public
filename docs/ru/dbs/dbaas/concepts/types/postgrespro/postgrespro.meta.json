@@ -1,9 +1,6 @@
 {
   "title": "Postgres Pro",
-  "pageDescription": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud.",
-  "shortDescription": "",
-  "metaTitle": "Postgres Pro",
-  "metaDescription": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud",
+    "shortDescription": "",
   "sectionTitle": "Postgres Pro",
   "icon": "",
   "weight": 6,

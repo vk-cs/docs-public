@@ -1,9 +1,6 @@
 {
   "title": "CI/CD на базе GitLab",
-  "pageDescription": "Автоматизация развертывания приложений с помощью GitLab на базе виртуальных машин VK Cloud.",
-  "shortDescription": "Как автоматизировать развертывание приложения в кластер Kubernetes с использованием GitLab",
-  "metaTitle": "CI/CD на базе GitLab",
-  "metaDescription": "Сценарии использования: инструкции по автоматизации развертывания с помощью GitLab",
+    "shortDescription": "Как автоматизировать развертывание приложения в кластер Kubernetes с использованием GitLab",
   "sectionTitle": "CI/CD на базе GitLab",
   "icon": "",
   "weight": 4,

@@ -1,9 +1,6 @@
 {
     "title": "Создание",
-    "pageDescription": "",
-    "shortDescription": "Как создать инстанс аналитической БД",
-    "metaTitle": "Создание",
-    "metaDescription": "Для создания базы данных следует перейти в раздел личного кабинета",
+        "shortDescription": "Как создать инстанс аналитической БД",
     "sectionTitle": "Создание",
     "icon": "",
     "weight": 0,

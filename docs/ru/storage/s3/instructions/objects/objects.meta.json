@@ -1,9 +1,6 @@
 {
   "title": "Объекты",
-  "pageDescription": "Операции с объектами в объектном хранилище VK Cloud.",
-  "shortDescription": "Операции с объектами в объектном хранилище VK Cloud",
-  "metaTitle": "Объекты",
-  "metaDescription": "Операции с объектами в объектном хранилище VK Cloud.",
+    "shortDescription": "Операции с объектами в объектном хранилище VK Cloud",
   "sectionTitle": "Объекты",
   "icon": "",
   "weight": 3,

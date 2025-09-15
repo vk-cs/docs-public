@@ -1,9 +1,6 @@
 {
   "title": "Практические руководства",
-  "pageDescription": "Здесь приведены наиболее популярные сценарии использования Spark в Kubernetes.",
-  "shortDescription": "Наиболее популярные задачи, в решении которых помогает Spark в Kubernetes",
-  "metaTitle": "Практические руководства",
-  "metaDescription": "Наиболее популярные задачи, в решении которых помогает Spark в Kubernetes",
+    "shortDescription": "Наиболее популярные задачи, в решении которых помогает Spark в Kubernetes",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 5,

@@ -1,9 +1,6 @@
 {
   "title": "Cloud Databases",
-  "pageDescription": "OpenAPI-спецификация сервиса Cloud Databases.",
-  "shortDescription": "OpenAPI-спецификация сервиса Cloud Databases",
-  "metaTitle": "Cloud Databases",
-  "metaDescription": "VK Cloud: управление Cloud Databases с помощью API DBaaS.",
+    "shortDescription": "OpenAPI-спецификация сервиса Cloud Databases",
   "sectionTitle": "Cloud Databases",
   "hidden": false,
   "icon": "",

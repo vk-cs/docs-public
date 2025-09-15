@@ -1,9 +1,6 @@
 {
     "title": "Working with logical groups",
-    "pageDescription": "How to manage groups of service instances via Data Platform UI Console in the VK Cloud project.",
-    "shortDescription": "How to manage groups of service instances via Data Platform UI Console",
-    "metaTitle": "Working with logical groups",
-    "metaDescription": "How to manage groups of service instances via Data Platform UI Console in the VK Cloud project",
+        "shortDescription": "How to manage groups of service instances via Data Platform UI Console",
     "sectionTitle": "Working with logical groups",
     "icon": "",
     "weight": 2,

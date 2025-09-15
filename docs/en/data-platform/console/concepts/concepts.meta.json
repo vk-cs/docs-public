@@ -1,9 +1,6 @@
 {
   "title": "Concepts",
-  "pageDescription": "Description of the principles of operation and design of the Data Platform UI Console service.",
-  "shortDescription": "How the Data Platform UI Console service works in VK Cloud",
-  "metaTitle": "Concepts",
-  "metaDescription": "How the Data Platform UI Console service works in VK Cloud",
+    "shortDescription": "How the Data Platform UI Console service works in VK Cloud",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 1,

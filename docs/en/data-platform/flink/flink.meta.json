@@ -1,9 +1,6 @@
 {
   "title": "Cloud Flink",
-  "pageDescription": "A service for creating and managing Apache Flink clusters in the VK Cloud infrastructure.",
-  "shortDescription": "Stream processing and data transfer from sources to target systems",
-  "metaTitle": "Cloud Flink",
-  "metaDescription": "A service for creating and managing Apache Flink clusters in the VK Cloud infrastructure",
+    "shortDescription": "Stream processing and data transfer from sources to target systems",
   "sectionTitle": "Cloud Flink",
   "icon": "",
   "isBeta": true,

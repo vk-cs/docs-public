@@ -1,9 +1,6 @@
 {
     "title": "Installing Velero",
-    "pageDescription": "How to install Velero in the Kubernetes cluster.",
-    "shortDescription": "How to install Velero utility",
-    "metaTitle": "Installing Velero",
-    "metaDescription": "",
+        "shortDescription": "How to install Velero utility",
     "sectionTitle": "Installing Velero",
     "icon": "",
     "weight": 3,

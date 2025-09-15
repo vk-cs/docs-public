@@ -1,9 +1,6 @@
 {
   "title": "Не получается удалить подсеть",
-  "pageDescription": "Что делать, если при удалении подсети возникает ошибка «One or more ports have an IP allocation from this subnet».",
-  "shortDescription": "Что делать, если при удалении подсети возникает ошибка «One or more ports have an IP allocation from this subnet»",
-  "metaTitle": "Не получается удалить подсеть",
-  "metaDescription": "Что делать, если при удалении подсети возникает ошибка «One or more ports have an IP allocation from this subnet»",
+    "shortDescription": "Что делать, если при удалении подсети возникает ошибка «One or more ports have an IP allocation from this subnet»",
   "sectionTitle": "Не получается удалить подсеть",
   "icon": "",
   "weight": 1,

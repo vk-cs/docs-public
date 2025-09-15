@@ -1,9 +1,6 @@
 {
     "title": "Connecting the service",
-    "pageDescription": "Instructions for connecting the service via the Marketplace in VK Cloud.",
-    "shortDescription": "The procedure for connecting the service in the VK Cloud management console",
-    "metaTitle": "Connecting the service",
-    "metaDescription": "Marketplace VK Cloud: instructions for connecting the service through your management console",
+        "shortDescription": "The procedure for connecting the service in the VK Cloud management console",
     "sectionTitle": "Connecting the service",
     "icon": "",
     "weight": 1,

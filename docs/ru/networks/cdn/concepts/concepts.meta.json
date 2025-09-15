@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Подробное описание принципов работы и устройства сервиса CDN VK Cloud.",
-  "shortDescription": "Как устроен сервис CDN",
-  "metaTitle": "Концепции",
-  "metaDescription": "Концепции CDN VK Cloud: принципы работы и устройства сервиса",
+    "shortDescription": "Как устроен сервис CDN",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 1,

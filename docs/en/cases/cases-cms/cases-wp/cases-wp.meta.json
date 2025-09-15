@@ -1,9 +1,6 @@
 {
     "title": "Installing WordPress on Linux",
-    "pageDescription": "Installing WordPress on the AlmaLinux 9 operating system in VK Cloud.",
-    "shortDescription": "How to install WordPress latest version on AlmaLinux 9",
-    "metaTitle": "Installing WordPress on Linux",
-    "metaDescription": "VK Cloud: how to install WordPress latest version on AlmaLinux 9",
+        "shortDescription": "How to install WordPress latest version on AlmaLinux 9",
     "sectionTitle": "Installing WordPress on Linux",
     "icon": "",
     "weight": 11,

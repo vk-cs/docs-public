@@ -1,9 +1,6 @@
 {
     "title": "Creating JupyterHub instance",
-    "pageDescription": "How to create a JupyterHub instance.",
-    "shortDescription": "How to create a JupyterHub instance",
-    "metaTitle": "Creating JupyterHub instance",
-    "metaDescription": "Creating JupyterHub instance",
+        "shortDescription": "How to create a JupyterHub instance",
     "sectionTitle": "Creating JupyterHub instance",
     "icon": "",
     "weight": 1,

@@ -1,9 +1,6 @@
 {
     "title": "Создание инстанса БД",
-    "pageDescription": "Как создать инстанс БД с помощью Terraform в VK Cloud.",
-    "shortDescription": "Как развернуть инстанс БД и пользователей для нее",
-    "metaTitle": "Создание инстанса БД",
-    "metaDescription": "Cloud Databases: как создать инстанс БД с помощью Terraform в VK Cloud",
+        "shortDescription": "Как развернуть инстанс БД и пользователей для нее",
     "sectionTitle": "Создание инстанса БД",
     "icon": "",
     "weight": 1,

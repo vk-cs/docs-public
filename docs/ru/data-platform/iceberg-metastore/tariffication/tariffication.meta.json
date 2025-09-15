@@ -1,9 +1,6 @@
 {
   "title": "Тарификация",
-  "pageDescription": "Особенности тарификации экземпляров сервисов Cloud Iceberg Metastore, расчет стоимости.",
-  "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
-  "metaTitle": "Тарификация",
-  "metaDescription": "Cloud Iceberg Metastore: особенности тарификации сервиса, расчет стоимости",
+    "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
   "sectionTitle": "Тарификация",
   "icon": "",
   "weight": 4,

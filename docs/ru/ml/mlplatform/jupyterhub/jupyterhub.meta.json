@@ -1,9 +1,6 @@
 {
   "title": "JupyterHub",
-  "pageDescription": "Этот раздел описывает принципы работы с сервисом JupyterHub, создание инстансов JupyterHub и работу с ними.",
-  "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
-  "metaTitle": "JupyterHub",
-  "metaDescription": "",
+    "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
   "sectionTitle": "JupyterHub",
   "icon": "",
   "weight": 3,

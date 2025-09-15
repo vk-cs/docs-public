@@ -1,9 +1,6 @@
 {
     "title": "HTTP/2 support",
-    "pageDescription": "Overview of HTTP/2 support features.",
-    "shortDescription": "Overview of HTTP/2 support features",
-    "metaTitle": "HTTP/2 support",
-    "metaDescription": "Overview of HTTP/2 support features.",
+        "shortDescription": "Overview of HTTP/2 support features",
     "sectionTitle": "HTTP/2 support",
     "icon": "",
     "weight": 1,

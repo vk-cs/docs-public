@@ -1,9 +1,6 @@
 {
   "title": "How-to guides",
-  "pageDescription": "The Kubernetes cluster can be used for a wide variety of tasks and projects — it serves as a great platform for applications and helps ensure their interaction with end users. Here are the most popular use cases.",
-  "shortDescription": "The most popular tasks that Kubernetes helps with.",
-  "metaTitle": "How-to guides",
-  "metaDescription": "Cloud Containers: the most popular usage scenarios using Kubernetes clusters, using Ingress and Gatekeeper, working with persistent volumes, using load balancers, setting up a local DNS cache, backup using Velero",
+    "shortDescription": "The most popular tasks that Kubernetes helps with.",
   "sectionTitle": "How-to guides",
   "icon": "",
   "additionalUuids": [

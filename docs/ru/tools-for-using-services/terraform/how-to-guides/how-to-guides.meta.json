@@ -1,9 +1,6 @@
 {
   "title": "Практические руководства",
-  "pageDescription": "Использование Terraform в VK Cloud.",
-  "shortDescription": "Примеры использования Terraform в VK Cloud",
-  "metaTitle": "Практические руководства",
-  "metaDescription": "Использование Terraform в VK Cloud.",
+    "shortDescription": "Примеры использования Terraform в VK Cloud",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 1,

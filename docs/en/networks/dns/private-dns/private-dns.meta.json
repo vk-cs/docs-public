@@ -1,9 +1,6 @@
 {
     "title": "Private DNS",
-    "pageDescription": "",
-    "shortDescription": "Managing DNS zones deployed in private networks",
-    "metaTitle": "Private DNS",
-    "metaDescription": "Private DNS in VK Cloud is a functionality of a DNS server that operates in project networks and allows accessing instances by DNS names. The service supports c",
+        "shortDescription": "Managing DNS zones deployed in private networks",
     "sectionTitle": "Private DNS",
     "icon": "",
     "weight": 4,

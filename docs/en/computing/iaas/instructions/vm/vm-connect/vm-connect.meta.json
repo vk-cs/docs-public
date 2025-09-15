@@ -1,10 +1,7 @@
 {
   "title": "Connecting to VM",
   "sectionTitle": "Connecting to VM",
-  "metaTitle": "Connecting to VM",
-  "pageDescription": "How to connect to a VM.",
-  "shortDescription": "How to connect to a VM",
-  "metaDescription": "How to connect to a VM.",
+    "shortDescription": "How to connect to a VM",
   "icon": "",
   "weight": 1,
   "uuid": "960ad1a1-6a6a-4ba1-8c9b-dd82142f7e3c"

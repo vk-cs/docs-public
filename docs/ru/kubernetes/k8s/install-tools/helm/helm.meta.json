@@ -1,9 +1,6 @@
 {
     "title": "Установка Helm",
-    "pageDescription": "Как установить пакетный менеджер Helm в кластер Kubernetes.",
-    "shortDescription": "Как установить пакетный менеджер Helm",
-    "metaTitle": "Установка Helm",
-    "metaDescription": "",
+        "shortDescription": "Как установить пакетный менеджер Helm",
     "sectionTitle": "Установка Helm",
     "icon": "",
     "weight": 1,

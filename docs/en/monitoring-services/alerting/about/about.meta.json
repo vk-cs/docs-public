@@ -1,9 +1,6 @@
 {
     "title": "About the service",
-    "pageDescription": "",
-    "shortDescription": "Features of the Cloud Alerting service",
-    "metaTitle": "About the service",
-    "metaDescription": "",
+        "shortDescription": "Features of the Cloud Alerting service",
     "sectionTitle": "About the service",
     "icon": "",
     "weight": 0,

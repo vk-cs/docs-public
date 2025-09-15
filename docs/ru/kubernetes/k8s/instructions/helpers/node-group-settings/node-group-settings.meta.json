@@ -1,9 +1,6 @@
 {
     "title": "Настройки групп worker-узлов",
-    "pageDescription": "Перечень всех настроек групп worker-узлов.",
-    "shortDescription": "Перечень всех настроек групп worker-узлов",
-    "metaTitle": "Настройки групп worker-узлов",
-    "metaDescription": "",
+        "shortDescription": "Перечень всех настроек групп worker-узлов",
     "sectionTitle": "Настройки групп worker-узлов",
     "icon": "",
     "weight": 2,

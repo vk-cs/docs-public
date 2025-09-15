@@ -1,9 +1,6 @@
 {
     "title": "Billing",
-    "pageDescription": "",
-    "shortDescription": "The cost of the service and features of its billing",
-    "metaTitle": "Billing",
-    "metaDescription": "",
+        "shortDescription": "The cost of the service and features of its billing",
     "sectionTitle": "Billing",
     "icon": "",
     "weight": 2,

@@ -1,9 +1,6 @@
 {
     "title": "История изменений",
-    "pageDescription": "История изменений сервиса Vision.",
-    "shortDescription": "Release notes для сервиса",
-    "metaTitle": "История изменений",
-    "metaDescription": "Release notes для сервиса Vision.",
+        "shortDescription": "Release notes для сервиса",
     "sectionTitle": "История изменений",
     "weight": 6,
     "uuid": "48c59cb1-9d14-42b7-a033-2209a6af814a"

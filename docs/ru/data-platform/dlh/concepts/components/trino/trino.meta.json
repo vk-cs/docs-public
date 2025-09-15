@@ -1,9 +1,6 @@
 {
   "title": "Cloud Trino в архитектуре Data Lakehouse",
-  "pageDescription": "Назначение и функции компонента Cloud Trino в архитектуре Data Lakehouse в VK Cloud.",
-  "shortDescription": "Назначение и функции компонента Cloud Trino в архитектуре Data Lakehouse на платформе VK Cloud",
-  "metaTitle": "Cloud Trino в архитектуре Data Lakehouse",
-  "metaDescription": "Назначение и функции компонента Cloud Trino в архитектуре Data Lakehouse",
+    "shortDescription": "Назначение и функции компонента Cloud Trino в архитектуре Data Lakehouse на платформе VK Cloud",
   "sectionTitle": "Cloud Trino",
   "icon": "",
   "weight": 3,

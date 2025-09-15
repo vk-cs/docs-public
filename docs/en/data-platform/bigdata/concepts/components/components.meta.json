@@ -1,9 +1,6 @@
 {
     "title": "Components",
-    "pageDescription": "Available components for installation in the Cloud Big Data cluster, templates of component sets in the VK Cloud project.",
-    "shortDescription": "Available components for installation in the cluster, templates of component sets",
-    "metaTitle": "Components",
-    "metaDescription": "VK Cloud: available components for installation in the cluster, templates of component sets",
+        "shortDescription": "Available components for installation in the cluster, templates of component sets",
     "sectionTitle": "Components",
     "icon": "",
     "weight": 3,

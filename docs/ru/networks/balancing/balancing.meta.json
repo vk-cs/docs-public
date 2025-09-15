@@ -1,9 +1,6 @@
 {
   "title": "Load Balancing",
-  "pageDescription": "Балансировщик нагрузки автоматически распределяет входящий трафик между серверами, позволяя приложениям и сервисы оставаться досупными даже при высокой назгрузе или недоступности одного из серверов.",
-  "shortDescription": "Распределение нагрузки между серверами",
-  "metaTitle": "Load Balancing",
-  "metaDescription": "",
+    "shortDescription": "Распределение нагрузки между серверами",
   "sectionTitle": "Load Balancing",
   "icon": "",
   "weight": 2,

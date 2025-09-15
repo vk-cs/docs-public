@@ -1,9 +1,6 @@
 {
     "title": "Приватный DNS",
-    "pageDescription": "",
-    "shortDescription": "Управление DNS-зонами, развернутыми в приватных сетях",
-    "metaTitle": "Приватный DNS",
-    "metaDescription": "Приватный DNS в VK Cloud — функциональность DNS-сервера, работающего в проектных сетях платформы",
+        "shortDescription": "Управление DNS-зонами, развернутыми в приватных сетях",
     "sectionTitle": "Приватный DNS",
     "icon": "",
     "weight": 4,

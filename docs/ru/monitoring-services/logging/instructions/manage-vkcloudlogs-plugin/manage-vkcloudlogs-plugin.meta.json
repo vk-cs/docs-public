@@ -1,9 +1,6 @@
 {
     "title": "Управление агентом логирования",
-    "pageDescription": "Управление агентом vkcloudlogs-fluent-bit.service на виртуальной машине в VK Cloud.",
-    "shortDescription": "Как управлять агентом vkcloudlogs-fluent-bit.service на виртуальной машине",
-    "metaTitle": "Управление агентом логирования",
-    "metaDescription": "VK Cloud: как управлять агентом vkcloudlogs-fluent-bit.service",
+        "shortDescription": "Как управлять агентом vkcloudlogs-fluent-bit.service на виртуальной машине",
     "sectionTitle": "Управление агентом логирования",
     "icon": "",
     "weight": 3,

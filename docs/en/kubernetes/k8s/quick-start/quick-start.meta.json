@@ -1,9 +1,6 @@
 {
     "title": "Quick start",
-    "pageDescription": "Getting started with the Kubernetes cluster and getting acquainted with its main features.",
-    "shortDescription": "Getting started with Kubernetes",
-    "metaTitle": "Quick start",
-    "metaDescription": "Cloud Containers: quick start will help you get started with the service and get acquainted with its capabilities",
+        "shortDescription": "Getting started with Kubernetes",
     "sectionTitle": "Quick start",
     "icon": "",
     "weight": 1,

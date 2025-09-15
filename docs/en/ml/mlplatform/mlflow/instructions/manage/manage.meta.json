@@ -1,9 +1,6 @@
 {
     "title": "Managing MLflow instance",
-    "pageDescription": "How to change settings, stop, reboot, or delete instance.",
-    "shortDescription": "How to change settings, stop, reboot, or delete instance",
-    "metaTitle": "Managing MLflow instance",
-    "metaDescription": "How to change settings, stop, reboot, or delete instance",
+        "shortDescription": "How to change settings, stop, reboot, or delete instance",
     "sectionTitle": "Managing MLflow instance",
     "icon": "",
     "weight": 3,

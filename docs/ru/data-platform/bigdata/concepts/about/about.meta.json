@@ -1,9 +1,6 @@
 {
     "title": "О сервисе",
-    "pageDescription": "Преимущества Arenadata Hadoop",
-    "shortDescription": "Преимущества использования сервиса Cloud Big Data для больших данных",
-    "metaTitle": "О сервисе",
-    "metaDescription": "Преимущества Arenadata Hadoop",
+        "shortDescription": "Преимущества использования сервиса Cloud Big Data для больших данных",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

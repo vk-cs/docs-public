@@ -1,9 +1,6 @@
 {
     "title": "Add-ons",
-    "pageDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
-    "shortDescription": "Services to extend the functionality of the cluster",
-    "metaTitle": "Add-ons",
-    "metaDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
+        "shortDescription": "Services to extend the functionality of the cluster",
     "sectionTitle": "Add-ons",
     "icon": "",
     "weight": 1,

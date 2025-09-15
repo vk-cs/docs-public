@@ -1,9 +1,6 @@
 {
   "title": "CI/CD based on GitLab",
-  "pageDescription": "Automation of application deployment using GitLab based on VK Cloud virtual machines.",
-  "shortDescription": "How to set up automatic deployment of an application to a K8s cluster using GitLab",
-  "metaTitle": "CI/CD based on GitLab",
-  "metaDescription": "Use cases: Instructions for automating deployment using GitLab",
+    "shortDescription": "How to set up automatic deployment of an application to a K8s cluster using GitLab",
   "sectionTitle": "CI/CD based on GitLab",
   "icon": "",
   "weight": 4,

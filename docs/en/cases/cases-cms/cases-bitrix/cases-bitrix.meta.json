@@ -1,9 +1,6 @@
 {
     "title": "Installing 1C-Bitrix",
-    "pageDescription": "Installing 1C-Bitrix: Site Management on Ubuntu 22.04 operating system.",
-    "shortDescription": "How to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
-    "metaTitle": "Installing 1C-Bitrix",
-    "metaDescription": "VK Cloud: how to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
+        "shortDescription": "How to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
     "sectionTitle": "Installing 1C-Bitrix",
     "icon": "",
     "weight": 15,

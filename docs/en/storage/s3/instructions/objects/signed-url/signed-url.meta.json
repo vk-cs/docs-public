@@ -1,9 +1,6 @@
 {
     "title": "Signed URLs",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Signed URLs",
-    "metaDescription": "A pre-signed URL grants access to the object specified in the URL, provided that the creator of the pre-signed URL has permission to access that object. Pr",
+        "shortDescription": "",
     "sectionTitle": "Signed URLs",
     "icon": "",
     "weight": 6,

@@ -1,9 +1,6 @@
 {
     "title": "Установка LAMP на Linux",
-    "pageDescription": "Установка стека LAMP на Ubuntu 22.04 и MySQL 8.0 в VK Cloud.",
-    "shortDescription": "Как установить и настроить стек LAMP на Ubuntu 22.04",
-    "metaTitle": "Установка LAMP на Linux",
-    "metaDescription": "VK Cloud: как установить и настроить стек LAMP на Ubuntu 22.04",
+        "shortDescription": "Как установить и настроить стек LAMP на Ubuntu 22.04",
     "sectionTitle": "Установка LAMP на Linux",
     "icon": "",
     "weight": 5,

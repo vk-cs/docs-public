@@ -1,9 +1,6 @@
 {
   "title": "Add-ons and settings",
-  "pageDescription": "Each Cloud Containers cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as add-ons that can be installed in the cluster.",
-  "shortDescription": "Services to extend the functionality of the cluster and settings available with the Kubernetes Cloud Containers cluster",
-  "metaTitle": "Add-ons and settings",
-  "metaDescription": "Each Cloud Containers cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as add-ons that can be installed in the cluster.",
+    "shortDescription": "Services to extend the functionality of the cluster and settings available with the Kubernetes Cloud Containers cluster",
   "sectionTitle": "Add-ons and settings",
   "icon": "",
   "weight": 3,

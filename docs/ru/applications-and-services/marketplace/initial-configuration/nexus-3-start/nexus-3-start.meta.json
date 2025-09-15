@@ -1,9 +1,6 @@
 {
     "title": "Развертывание Nexus 3",
-    "pageDescription": "Шаги по развертыванию сервиса Sonatype Nexus 3 в целевой проект VK Cloud с помощью Marketplace.",
-    "shortDescription": "Развертывание сервиса Sonatype Nexus 3 в проекте",
-    "metaTitle": "Развертывание Nexus 3",
-    "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Sonatype Nexus 3 в целевой проект",
+        "shortDescription": "Развертывание сервиса Sonatype Nexus 3 в проекте",
     "sectionTitle": "Развертывание Nexus 3",
     "icon": "",
     "weight": 6,

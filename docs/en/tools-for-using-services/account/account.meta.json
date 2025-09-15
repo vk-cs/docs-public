@@ -1,9 +1,6 @@
 {
   "title": "Management Console",
-  "pageDescription": "The management console contains VK Cloud user infrastructure management tools.",
-  "shortDescription": "VK Cloud management console",
-  "metaTitle": "Management Console",
-  "metaDescription": "The management console contains VK Cloud user infrastructure management tools.",
+    "shortDescription": "VK Cloud management console",
   "sectionTitle": "Management Console",
   "icon": "",
   "weight": 2,

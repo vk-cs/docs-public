@@ -1,9 +1,6 @@
 {
   "title": "Вопросы и ответы",
-  "pageDescription": "Ответы на часто задаваемые вопросы о сервисе Object Storage.",
-  "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Object Storage",
-  "metaTitle": "Вопросы и ответы",
-  "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Object Storage",
+    "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Object Storage",
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 8,

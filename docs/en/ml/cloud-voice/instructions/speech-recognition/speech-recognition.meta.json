@@ -1,9 +1,6 @@
 {
     "title": "Speech recognition",
-    "pageDescription": "",
-    "shortDescription": "Methods for recognizing audio files and streaming audio",
-    "metaTitle": "Speech recognition",
-    "metaDescription": "",
+        "shortDescription": "Methods for recognizing audio files and streaming audio",
     "sectionTitle": "Speech recognition",
     "icon": "",
     "weight": 3,

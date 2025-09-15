@@ -1,9 +1,6 @@
 {
     "title": "Example integration on PHP",
-    "pageDescription": "",
-    "shortDescription": "Request for PHP recognition",
-    "metaTitle": "Example integration on PHP",
-    "metaDescription": "",
+        "shortDescription": "Request for PHP recognition",
     "sectionTitle": "Example integration on PHP",
     "icon": "",
     "weight": 1,

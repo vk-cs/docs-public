@@ -13,7 +13,6 @@ import {
     UuidSnapshotIntegrityChecker,
 } from '@vk-tech/d11n-preparer/checkers';
 import {
-    ArticleDatesPreparer,
     DocsConfigForNextPreparer,
     LaunchPreparer,
     LinksPreparer,
@@ -24,7 +23,11 @@ import {
     PublicAssetsPreparer,
     SearchIndexPreparer,
     UuidSnapshotPreparer,
+    SatoriIndexPreparer,
 } from '@vk-tech/d11n-preparer/preparers';
+
+const satoriSupportedEnvs = ['devint', 'stage', 'production'];
+const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
@@ -61,6 +64,14 @@ export const config = {
         // npx preparer start checkup
         checkup: [
             LinksWithHashChecker, // Проверка ссылок с хешем на портале
+            ...(satoriSupportedEnvs.includes(TARGET_ENV) ? [LaunchPreparer, FolderStructureChecker, MetaParamUuidPreparer, OriginalTreeCachePreparer, SatoriIndexPreparer]: [])
         ],
     },
+    settings: {
+        satoriIndexPreparer: {
+            apiBaseUrl: process.env.SATORI_API_URL ?? '',
+            baseUrl: process.env.SATORI_BASE_URL ?? '',
+            apiKey: process.env.SATORI_API_KEY || '',
+        },
+    }
 };

@@ -1,9 +1,6 @@
 {
     "title": "Managing load balancers",
-    "pageDescription": "Managing load balancers in the virtual networks service.",
-    "shortDescription": "Working with a load balancer, configuring balancing rules",
-    "metaTitle": "Managing load balancers",
-    "metaDescription": "",
+        "shortDescription": "Working with a load balancer, configuring balancing rules",
     "sectionTitle": "Managing load balancers",
     "icon": "",
     "weight": 4,

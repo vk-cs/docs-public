@@ -1,9 +1,6 @@
 {
   "title": "Extensions and plugins",
-  "pageDescription": "Extensions and plugins allow you to manage additional database functionality without having to make additional configuration changes to your instance.",
-  "shortDescription": "Supported extensions and plugins and their required parameters for different types of DB instances",
-  "metaTitle": "Extensions",
-  "metaDescription": "Extensions and plugins allow you to manage additional database functionality without having to make additional configuration changes to your instance.",
+    "shortDescription": "Supported extensions and plugins and their required parameters for different types of DB instances",
   "sectionTitle": "Extensions and plugins",
   "icon": "",
   "weight": 8,

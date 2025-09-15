@@ -1,9 +1,6 @@
 {
     "title": "DB instance configurations",
-    "pageDescription": "Available configurations of deployed database instances in VK Cloud.",
-    "shortDescription": "Available DB instance configurations in the cloud",
-    "metaTitle": "DB instance configurations",
-    "metaDescription": "Available configurations of deployed database instances in VK Cloud.",
+        "shortDescription": "Available DB instance configurations in the cloud",
     "sectionTitle": "DB instance configurations",
     "icon": "",
     "weight": 3,

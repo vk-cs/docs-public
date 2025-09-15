@@ -1,9 +1,6 @@
 {
     "title": "VM diagnostics",
-    "pageDescription": "Remote access to a Windows or Linux VM using a VNC console. VM diagnostics.",
-    "shortDescription": "How to connect to a VM via VNC console and view logs",
-    "metaTitle": "VM diagnostics",
-    "metaDescription": "OpenStack Console, VNC console, VM message log, VM message logs",
+        "shortDescription": "How to connect to a VM via VNC console and view logs",
     "sectionTitle": "VM diagnostics",
     "icon": "",
     "weight": 5,

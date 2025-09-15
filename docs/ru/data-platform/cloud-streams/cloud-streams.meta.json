@@ -1,9 +1,6 @@
 {
   "title": "Cloud Streams",
-  "pageDescription": "Cloud Streams на базе решения Arenadata Streaming.",
-  "shortDescription": "Кластеры Cloud Streams для работы с большими массивами данных",
-  "metaTitle": "Cloud Streams",
-  "metaDescription": "Cloud Streams",
+    "shortDescription": "Кластеры Cloud Streams для работы с большими массивами данных",
   "sectionTitle": "Cloud Streams",
   "icon": "",
   "weight": 2,

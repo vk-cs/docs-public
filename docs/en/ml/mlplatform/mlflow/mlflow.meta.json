@@ -1,9 +1,6 @@
 {
   "title": "MLflow",
-  "pageDescription": "This section describes how to create and work with Mlflow instances.",
-  "shortDescription": "MLflow is one of the main open source tools for solving MLOps problems",
-  "metaTitle": "MLflow",
-  "metaDescription": "MLflow is a service for creating and managing MLflow instances",
+    "shortDescription": "MLflow is one of the main open source tools for solving MLOps problems",
   "sectionTitle": "MLflow",
   "icon": "",
   "weight": 3,

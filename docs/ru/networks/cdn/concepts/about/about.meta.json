@@ -1,9 +1,6 @@
 {
     "title": "О сервисе",
-    "pageDescription": "Обзор сервиса CDN VK Cloud.",
-    "shortDescription": "Краткое описание устройства сервиса",
-    "metaTitle": "О сервисе",
-    "metaDescription": "Обзор устройства сервиса CDN VK Cloud",
+        "shortDescription": "Краткое описание устройства сервиса",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

@@ -1,9 +1,6 @@
 {
   "title": "Cloud Spark",
-  "pageDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных.",
-  "shortDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
-  "metaTitle": "Cloud Spark",
-  "metaDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
+    "shortDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
   "sectionTitle": "Cloud Spark",
   "icon": "",
   "weight": 3,

@@ -1,9 +1,6 @@
 {
   "title": "Using Ingress",
-  "pageDescription": "How to provide access to services deployed in a cluster via Ingress.",
-  "shortDescription": "How to provide access to services deployed in a cluster via Ingress",
-  "metaTitle": "Using Ingress",
-  "metaDescription": "",
+    "shortDescription": "How to provide access to services deployed in a cluster via Ingress",
   "sectionTitle": "Using Ingress",
   "icon": "",
   "weight": 1,

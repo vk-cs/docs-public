@@ -1,9 +1,6 @@
 {
     "title": "Monitoring PostgreSQL",
-    "pageDescription": "Monitoring the health of PostgreSQL instances with detailed metrics for individual hosts (both masters and replicas).",
-    "shortDescription": "Monitoring deployed PostgreSQL instances",
-    "metaTitle": "PostgreSQL Monitoring",
-    "metaDescription": "",
+        "shortDescription": "Monitoring deployed PostgreSQL instances",
     "sectionTitle": "Monitoring PostgreSQL",
     "icon": "",
     "uuid": "5df5a2ca-427b-48cc-8409-ce5c61490496"

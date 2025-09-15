@@ -1,9 +1,6 @@
 {
     "title": "Creating trigger",
-    "pageDescription": "",
-    "shortDescription": "How to add a rule for notification by metric value",
-    "metaTitle": "Creating trigger",
-    "metaDescription": "",
+        "shortDescription": "How to add a rule for notification by metric value",
     "sectionTitle": "Creating trigger",
     "icon": "",
     "weight": 1,

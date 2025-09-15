@@ -1,10 +1,7 @@
 {
     "title": "Включение множества очередей (multiqueue) на Linux",
     "sectionTitle": "Включение множества очередей (multiqueue)",
-    "metaTitle": "Включение множества очередей (multiqueue) на Linux",
-    "pageDescription": "Включение множества очередей (multiqueue) на Linux.",
-    "shortDescription": "Как настроить множества очередей для повышения производительности сети в ВМ с Linux",
-    "metaDescription": "Включение множества очередей (multiqueue) на Linux",
+        "shortDescription": "Как настроить множества очередей для повышения производительности сети в ВМ с Linux",
     "icon": "",
     "weight": 4,
     "uuid": "ea236dda-40ac-4e59-8908-74d1714074c8"

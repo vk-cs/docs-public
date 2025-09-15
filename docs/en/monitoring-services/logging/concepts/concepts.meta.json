@@ -1,9 +1,6 @@
 {
   "title": "Concepts",
-  "pageDescription": "This section describes the capabilities of the service and the language for filtering logs.",
-  "shortDescription": "Basic concepts of the Cloud Logging service",
-  "metaTitle": "Concepts",
-  "metaDescription": "",
+    "shortDescription": "Basic concepts of the Cloud Logging service",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

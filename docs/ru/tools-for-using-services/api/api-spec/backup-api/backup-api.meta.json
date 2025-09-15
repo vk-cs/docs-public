@@ -1,9 +1,6 @@
 {
     "title": "Cloud Backup",
-    "pageDescription": "",
-    "shortDescription": "OpenAPI-спецификация сервиса Cloud Backup",
-    "metaTitle": "Cloud Backup",
-    "metaDescription": "",
+        "shortDescription": "OpenAPI-спецификация сервиса Cloud Backup",
     "sectionTitle": "Cloud Backup",
     "icon": "",
     "weight": 0,

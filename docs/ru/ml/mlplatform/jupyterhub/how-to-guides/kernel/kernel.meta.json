@@ -1,9 +1,6 @@
 {
     "title": "Создание индивидуального kernel",
-    "pageDescription": "Описание процедуры создания индивидуального kernel на инстансе JupyterHub.",
-    "shortDescription": "Описание процедуры создания индивидуального kernel",
-    "metaTitle": "Создание индивидуального kernel",
-    "metaDescription": "Создание индивидуального kernel JupyterHub",
+        "shortDescription": "Описание процедуры создания индивидуального kernel",
     "sectionTitle": "Создание индивидуального kernel",
     "icon": "",
     "weight": 0,

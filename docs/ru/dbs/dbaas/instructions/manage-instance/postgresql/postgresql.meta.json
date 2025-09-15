@@ -1,9 +1,6 @@
 {
     "title": "PostgreSQL, Postgres Pro",
-    "pageDescription": "Управление инстансами PostgreSQL, Postgres Pro.",
-    "shortDescription": "",
-    "metaTitle": "PostgreSQL, Postgres Pro",
-    "metaDescription": "Базы данных VK Cloud: управление инстансами PostgreSQL, Postgres Pro.",
+        "shortDescription": "",
     "sectionTitle": "PostgreSQL, Postgres Pro",
     "icon": "",
     "weight": 4,

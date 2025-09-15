@@ -1,9 +1,6 @@
 {
   "title": "События компонента Octavia",
-  "pageDescription": "События, которые сервис балансировки нагрузки передает в Cloud Audit.",
-  "shortDescription": "События, которые сервис балансировки нагрузки передает в Cloud Audit",
-  "metaTitle": "События компонента Octavia",
-  "metaDescription": "События, которые сервис балансировки нагрузки передает в Cloud Audit",
+    "shortDescription": "События, которые сервис балансировки нагрузки передает в Cloud Audit",
   "sectionTitle": "События компонента Octavia",
   "icon": "",
   "weight": 4,

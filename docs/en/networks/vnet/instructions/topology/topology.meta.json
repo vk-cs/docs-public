@@ -1,9 +1,6 @@
 {
     "title": "Viewing Topology",
-    "pageDescription": "Viewing the topology of virtual networks using VK Cloud tools.",
-    "shortDescription": "Viewing the topology of virtual networks using VK Cloud tools",
-    "metaTitle": "Viewing Topology",
-    "metaDescription": "Description of the network topology",
+        "shortDescription": "Viewing the topology of virtual networks using VK Cloud tools",
     "sectionTitle": "Viewing Topology",
     "icon": "",
     "weight": 7,

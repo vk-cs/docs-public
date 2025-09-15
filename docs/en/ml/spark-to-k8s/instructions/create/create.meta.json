@@ -1,9 +1,6 @@
 {
     "title": "Creating a Spark cluster",
-    "pageDescription": "Creating a new Cloud Spark cluster.",
-    "shortDescription": "How to deploy a Spark cluster in VK Cloud",
-    "metaTitle": "Creating a Spark cluster",
-    "metaDescription": "Spark VK Cloud: creating a new cluster",
+        "shortDescription": "How to deploy a Spark cluster in VK Cloud",
     "sectionTitle": "Creating a Spark cluster",
     "icon": "",
     "weight": 0,

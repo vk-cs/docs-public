@@ -1,10 +1,7 @@
 {
     "title": "Connecting to Linux VM",
     "sectionTitle": "Connecting to Linux VM",
-    "metaTitle": "Connecting to Linux VM",
-    "pageDescription": "How to connect to a Linux VM via SSH.",
-    "shortDescription": "How to connect to a Linux VM via SSH",
-    "metaDescription": "Connecting to a Linux VM",
+        "shortDescription": "How to connect to a Linux VM via SSH",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

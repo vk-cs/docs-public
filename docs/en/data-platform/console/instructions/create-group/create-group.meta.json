@@ -1,9 +1,6 @@
 {
     "title": "Creating a logical group",
-    "pageDescription": "How to create a group of service instances via Data Platform UI Console in the VK Cloud project.",
-    "shortDescription": "How to create a group of service instances via Data Platform UI Console",
-    "metaTitle": "Creating a logical group",
-    "metaDescription": "How to create a group of service instances via Data Platform UI Console in the VK Cloud project",
+        "shortDescription": "How to create a group of service instances via Data Platform UI Console",
     "sectionTitle": "Creating a logical group",
     "icon": "",
     "weight": 1,

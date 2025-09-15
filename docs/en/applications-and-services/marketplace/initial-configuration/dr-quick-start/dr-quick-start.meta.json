@@ -1,9 +1,6 @@
 {
     "title": "Installing and configuring Hystax DR",
-    "pageDescription": "Deployment the Hystax Acura Disaster Recovery service, creating a plan and launching a disaster recovery.",
-    "shortDescription": "Deployment the Hystax Acura Disaster Recovery service, creating a plan and launching a disaster recovery",
-    "metaTitle": "Installing and configuring Hystax DR",
-    "metaDescription": "Hystax Acura Disaster Recovery in the Marketplace: Deploying the service, creating a plan and launching a disaster recovery",
+        "shortDescription": "Deployment the Hystax Acura Disaster Recovery service, creating a plan and launching a disaster recovery",
     "sectionTitle": "Installing and configuring Hystax DR",
     "icon": "",
     "weight": 1,

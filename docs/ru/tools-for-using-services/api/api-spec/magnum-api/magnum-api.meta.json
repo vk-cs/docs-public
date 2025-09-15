@@ -1,9 +1,6 @@
 {
     "title": "Cloud Containers",
-    "pageDescription": "",
-    "shortDescription": "OpenAPI-спецификация для управления кластерами K8s сервиса Cloud Containers",
-    "metaTitle": "Cloud Containers",
-    "metaDescription": "",
+        "shortDescription": "OpenAPI-спецификация для управления кластерами K8s сервиса Cloud Containers",
     "sectionTitle": "Cloud Containers",
     "icon": "",
     "weight": 8,

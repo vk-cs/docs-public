@@ -1,9 +1,6 @@
 {
     "title": "Monitoring Redis with Prometheus, Node exporter and Grafana",
-    "pageDescription": "Configuring monitoring of the Redis DBMS in VK Cloud using the Prometheus server, Node exporter extension and subsequent visualization in Grafana.",
-    "shortDescription": "How to set up monitoring for the Redis DBMS using a separate Prometheus server and visualize it in Grafana",
-    "metaTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
-    "metaDescription": "VK Cloud: configuring Redis DBMS monitoring in VK Cloud using Prometheus server, Node exporter extension and subsequent visualization in Grafana",
+        "shortDescription": "How to set up monitoring for the Redis DBMS using a separate Prometheus server and visualize it in Grafana",
     "sectionTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
     "icon": "",
     "weight": 4,

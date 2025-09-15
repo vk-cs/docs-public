@@ -1,9 +1,6 @@
 {
     "title": "Standard routers",
-    "pageDescription": "Managing standard routers in the virtual networks service.",
-    "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
-    "metaTitle": "Standard routers",
-    "metaDescription": "",
+        "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
     "sectionTitle": "Standard routers",
     "icon": "",
     "weight": 5,

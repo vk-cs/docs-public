@@ -1,9 +1,6 @@
 {
     "title": "Работа с логическими группами",
-    "pageDescription": "Как управлять группами экземпляров сервисов через Data Platform UI Console в проекте VK Cloud.",
-    "shortDescription": "Как управлять группами экземпляров сервисов через Data Platform UI Console",
-    "metaTitle": "Работа с логическими группами",
-    "metaDescription": "Как управлять группами экземпляров сервисов через Data Platform UI Console в проекте VK Cloud",
+        "shortDescription": "Как управлять группами экземпляров сервисов через Data Platform UI Console",
     "sectionTitle": "Работа с логическими группами",
     "icon": "",
     "weight": 2,

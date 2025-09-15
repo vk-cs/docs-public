@@ -1,9 +1,6 @@
 {
     "title": "Cluster version update",
-    "pageDescription": "How the Kubernetes Cloud Containers cluster update procedure is arranged.",
-    "shortDescription": "How the Kubernetes Cloud Containers cluster update procedure is arranged",
-    "metaTitle": "Cluster version update",
-    "metaDescription": "",
+        "shortDescription": "How the Kubernetes Cloud Containers cluster update procedure is arranged",
     "sectionTitle": "Cluster version update",
     "icon": "",
     "weight": 8,

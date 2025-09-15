@@ -1,9 +1,6 @@
 {
     "title": "Архитектура сервиса",
-    "pageDescription": "Детали архитектуры сервиса: топологии и окружение кластера Kubernetes, особенности интеграции с Kubernetes API и платформой VK Cloud.",
-    "shortDescription": "Топологии и окружение кластера Kubernetes, особенности интеграции с Kubernetes API и платформой VK Cloud",
-    "metaTitle": "Архитектура сервиса",
-    "metaDescription": "",
+        "shortDescription": "Топологии и окружение кластера Kubernetes, особенности интеграции с Kubernetes API и платформой VK Cloud",
     "sectionTitle": "Архитектура сервиса",
     "icon": "",
     "weight": 2,

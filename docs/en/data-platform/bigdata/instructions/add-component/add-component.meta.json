@@ -1,9 +1,6 @@
 {
     "title": "Installing components in a cluster",
-    "pageDescription": "How to install new components in a deployed big data cluster in VK Cloud.",
-    "shortDescription": "Installing new components in the cluster via the ADCM UI",
-    "metaTitle": "Installing components in a cluster",
-    "metaDescription": "Existing clusters can be expanded with new components",
+        "shortDescription": "Installing new components in the cluster via the ADCM UI",
     "sectionTitle": "Installing components in a cluster",
     "icon": "",
     "weight": 2,

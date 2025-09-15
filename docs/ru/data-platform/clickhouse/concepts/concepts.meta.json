@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Основные понятия и характеристики сервиса Cloud ClickHouse.",
-  "shortDescription": "Основные понятия и характеристики сервиса Cloud ClickHouse",
-  "metaTitle": "Концепции",
-  "metaDescription": "Основные понятия и характеристики сервиса Cloud ClickHouse",
+    "shortDescription": "Основные понятия и характеристики сервиса Cloud ClickHouse",
   "sectionTitle": "Концепции",
   "weight": 0,
   "uuid": "b79f363e-14c6-4e8a-9975-bc7fade78a90"

@@ -1,9 +1,6 @@
 {
     "title": "Setting DNAT rules",
-    "pageDescription": "Adding, editing and deleting rules for redirecting data from a public IP address to an IP address inside a private network.",
-    "shortDescription": "Adding, editing and deleting rules for redirecting data from a public IP address to an IP address inside a private network",
-    "metaTitle": "Setting DNAT rules",
-    "metaDescription": "",
+        "shortDescription": "Adding, editing and deleting rules for redirecting data from a public IP address to an IP address inside a private network",
     "sectionTitle": "Setting DNAT rules",
     "icon": "",
     "weight": 5,

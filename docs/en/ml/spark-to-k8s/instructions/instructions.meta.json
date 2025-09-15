@@ -1,9 +1,6 @@
 {
   "title": "Step-by-step instructions",
-  "pageDescription": "Standard operations for configuring and managing Spark clusters.",
-  "shortDescription": "Configuring and managing Spark clusters",
-  "metaTitle": "Step-by-step instructions",
-  "metaDescription": "Spark VK Cloud: standard cluster configuration and management operations.",
+    "shortDescription": "Configuring and managing Spark clusters",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 2,

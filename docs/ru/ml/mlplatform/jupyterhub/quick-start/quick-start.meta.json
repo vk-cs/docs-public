@@ -1,9 +1,6 @@
 {
     "title": "Быстрый старт",
-    "pageDescription": "Начало работы с JupyterHub.",
-    "shortDescription": "Начало работы с сервисом JupyterHub",
-    "metaTitle": "Быстрый старт",
-    "metaDescription": "Быстрый старт",
+        "shortDescription": "Начало работы с сервисом JupyterHub",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 1,

@@ -1,9 +1,6 @@
 {
     "title": "Creating MLflow instance",
-    "pageDescription": "How to create an MLflow instance.",
-    "shortDescription": "How to create an MLflow instance",
-    "metaTitle": "Creating MLflow instance",
-    "metaDescription": "Creating MLflow Instance",
+        "shortDescription": "How to create an MLflow instance",
     "sectionTitle": "Creating MLflow instance",
     "icon": "",
     "weight": 1,

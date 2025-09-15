@@ -1,9 +1,6 @@
 {
   "title": "Cloud Direct Connect",
-  "pageDescription": "Service for organizing dedicated connections between the client’s local network and the VK Cloud infrastructure.",
-  "shortDescription": "Dedicated connection between the local infrastructure and the project in the VK Cloud",
-  "metaTitle": "Cloud Direct Connect",
-  "metaDescription": "",
+    "shortDescription": "Dedicated connection between the local infrastructure and the project in the VK Cloud",
   "sectionTitle": "Cloud Direct Connect",
   "icon": "",
   "weight": 5,

@@ -1,9 +1,6 @@
 {
     "title": "Recognition of types of documents",
-    "pageDescription": "",
-    "shortDescription": "Determining the document and its type",
-    "metaTitle": "Recognition of types of documents",
-    "metaDescription": "This method allows you to determine whether the photograph is a document and a possible type of document.Request Authorization data is transmitted in the query line: p",
+        "shortDescription": "Determining the document and its type",
     "sectionTitle": "Recognition of types of documents",
     "icon": "",
     "uuid": "41bc6c1a-d825-42b2-b8e9-7a5deb74082a"

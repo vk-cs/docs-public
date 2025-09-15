@@ -1,9 +1,6 @@
 {
   "title": "Installing additional tools",
-  "pageDescription": "A variety of additional tools can be installed in the Kubernetes cluster to make it easier to work with.",
-  "shortDescription": "How to install additional tools in the Kubernetes cluster",
-  "metaTitle": "Installing additional tools",
-  "metaDescription": "",
+    "shortDescription": "How to install additional tools in the Kubernetes cluster",
   "sectionTitle": "Installing additional tools",
   "icon": "",
   "weight": 7,

@@ -1,9 +1,6 @@
 {
     "title": "Подключение к кластеру с помощью Kubernetes Dashboard",
-    "pageDescription": "Как подключиться к кластеру Kubernetes с помощью Kubernetes Dashboard.",
-    "shortDescription": "",
-    "metaTitle": "Подключение к кластеру с помощью Kubernetes Dashboard",
-    "metaDescription": "",
+        "shortDescription": "",
     "sectionTitle": "Подключение к кластеру (Kubernetes Dashboard)",
     "icon": "",
     "weight": 3,

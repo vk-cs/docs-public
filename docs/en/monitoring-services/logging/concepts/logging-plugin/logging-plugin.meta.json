@@ -1,9 +1,6 @@
 {
     "title": "Logging plugin",
-    "pageDescription": "",
-    "shortDescription": "Logging plugin authorization and configuration parameters",
-    "metaTitle": "Logging plugin",
-    "metaDescription": "",
+        "shortDescription": "Logging plugin authorization and configuration parameters",
     "sectionTitle": "Logging plugin",
     "icon": "",
     "weight": 2,

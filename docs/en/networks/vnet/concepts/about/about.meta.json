@@ -1,9 +1,6 @@
 {
     "title": "About service",
-    "pageDescription": "Overview of VK Cloud virtual network service.",
-    "shortDescription": "Brief description of the service's features",
-    "metaTitle": "About service",
-    "metaDescription": "",
+        "shortDescription": "Brief description of the service's features",
     "sectionTitle": "About service",
     "icon": "",
     "weight": 1,

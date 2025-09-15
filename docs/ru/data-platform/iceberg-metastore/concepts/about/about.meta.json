@@ -1,9 +1,6 @@
 {
   "title": "О сервисе",
-  "pageDescription": "Обзор сервиса Cloud Iceberg Metastore в VK Cloud.",
-  "shortDescription": "Обзор сервиса Cloud Iceberg Metastore",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Cloud Iceberg Metastore в VK Cloud: обзор сервиса",
+    "shortDescription": "Обзор сервиса Cloud Iceberg Metastore",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

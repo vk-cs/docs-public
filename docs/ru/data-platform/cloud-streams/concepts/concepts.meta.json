@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Описание основных понятий при работе с Cloud Streams.",
-  "shortDescription": "Архитектура и лицензии сервиса",
-  "metaTitle": "Концепции",
-  "metaDescription": "Концепции",
+    "shortDescription": "Архитектура и лицензии сервиса",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

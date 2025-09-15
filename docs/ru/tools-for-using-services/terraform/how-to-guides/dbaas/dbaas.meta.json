@@ -1,9 +1,6 @@
 {
   "title": "Cloud Databases",
-  "pageDescription": "Как использовать Terraform для управления объектами сервиса СУБД.",
-  "shortDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
-  "metaTitle": "Cloud Databases",
-  "metaDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
+    "shortDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 50,

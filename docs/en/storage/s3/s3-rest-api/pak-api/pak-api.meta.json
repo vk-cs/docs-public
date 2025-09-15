@@ -1,9 +1,6 @@
 {
     "title": "Prefix access keys",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Prefix access keys",
-    "metaDescription": "general information Prefix access keys allow you to create users for whom access is restricted to a specific path. These users are bound to buckets for whi",
+        "shortDescription": "",
     "sectionTitle": "Prefix access keys",
     "icon": "",
     "weight": 7,

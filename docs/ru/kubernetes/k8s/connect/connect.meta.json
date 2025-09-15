@@ -1,9 +1,6 @@
 {
   "title": "Подключение к кластеру",
-  "pageDescription": "К кластеру Cloud Containers и его компонентам можно подключиться несколькими способами. Здесь рассматриваются все доступные варианты подключения.",
-  "shortDescription": "Способы подключения к кластеру Cloud Containers",
-  "metaTitle": "Подключение к кластеру",
-  "metaDescription": "",
+    "shortDescription": "Способы подключения к кластеру Cloud Containers",
   "sectionTitle": "Подключение к кластеру",
   "icon": "",
   "weight": 3,

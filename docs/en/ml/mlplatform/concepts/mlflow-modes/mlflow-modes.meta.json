@@ -1,9 +1,6 @@
 {
     "title": "MLflow modes",
-    "pageDescription": "Joint with JupyterHub and separate operation of MLflow instance.",
-    "shortDescription": "Joint with JupyterHub and separate operation of MLflow instance",
-    "metaTitle": "MLflow modes",
-    "metaDescription": "Joint with JupyterHub and separate operation of MLflow instance",
+        "shortDescription": "Joint with JupyterHub and separate operation of MLflow instance",
     "sectionTitle": "MLflow modes",
     "icon": "",
     "weight": 2,

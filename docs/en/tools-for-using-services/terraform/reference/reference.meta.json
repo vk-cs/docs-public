@@ -1,9 +1,6 @@
 {
   "title": "Reference",
-  "pageDescription": "",
-  "shortDescription": "Basic Terraform commands and sample manifests",
-  "metaTitle": "Reference",
-  "metaDescription": "",
+    "shortDescription": "Basic Terraform commands and sample manifests",
   "sectionTitle": "Reference",
   "icon": "",
   "weight": 3,

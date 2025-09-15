@@ -1,9 +1,6 @@
 {
   "title": "Advanced routers",
-  "pageDescription": "Managing advanced routers in the Cloud Networks service.",
-  "shortDescription": "Creating and editing an advanced router, managing interfaces, static and dynamic routs",
-  "metaTitle": "Advanced routers",
-  "metaDescription": "",
+    "shortDescription": "Creating and editing an advanced router, managing interfaces, static and dynamic routs",
   "sectionTitle": "Advanced routers",
   "icon": "",
   "weight": 6,
