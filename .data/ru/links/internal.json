@@ -8095,9 +8095,63 @@
   },
   {
     "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/bucket-delete-problem/bucket-delete-problem.md",
+    "dst": "/ru/storage/s3/instructions/objects/manage-object",
+    "link": "/docs/ru/storage/s3/instructions/objects/manage-object",
+    "hash": "udalenie_chastey_zagruzhennogo_obekta"
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/bucket-delete-problem/bucket-delete-problem.md",
     "dst": "/ru/storage/s3/instructions/buckets/manage-bucket",
     "link": "/docs/ru/storage/s3/instructions/buckets/manage-bucket",
     "hash": "bucket_delete"
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.md",
+    "dst": "/ru/tools-for-using-services/account/concepts/regions",
+    "link": "/docs/ru/tools-for-using-services/account/concepts/regions",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.md",
+    "dst": "/ru/tools-for-using-services/account/concepts/regions",
+    "link": "/docs/ru/tools-for-using-services/account/concepts/regions",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.md",
+    "dst": "/ru/tools-for-using-services/account/concepts/regions",
+    "link": "/docs/ru/tools-for-using-services/account/concepts/regions",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.md",
+    "dst": "/ru/storage/s3/instructions/access-management/access-keys",
+    "link": "/docs/ru/storage/s3/instructions/access-management/access-keys",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.md",
+    "dst": "/ru/storage/s3/instructions/access-management/access-keys",
+    "link": "/docs/ru/storage/s3/instructions/access-management/access-keys",
+    "hash": null
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/cors-problem/cors-problem.md",
+    "dst": "/ru/storage/s3/reference",
+    "link": "/docs/ru/storage/s3/reference",
+    "hash": "cors"
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/cors-problem/cors-problem.md",
+    "dst": "/ru/storage/s3/reference",
+    "link": "/docs/ru/storage/s3/reference",
+    "hash": "cors"
+  },
+  {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/cors-problem/cors-problem.md",
+    "dst": "/ru/storage/s3/instructions/access-management/cors",
+    "link": "/docs/ru/storage/s3/instructions/access-management/cors",
+    "hash": null
   },
   {
     "src": "/home/node/app/docs/ru/storage/backups/concepts/about/about.md",
@@ -13794,6 +13848,12 @@
     "hash": null
   },
   {
+    "src": "/home/node/app/docs/ru/data-platform/spark/concepts/parameters/parameters.md",
+    "dst": "/ru/tools-for-using-services/account/concepts/regions",
+    "link": "/docs/ru/tools-for-using-services/account/concepts/regions",
+    "hash": null
+  },
+  {
     "src": "/home/node/app/docs/ru/data-platform/spark/instructions/create/create.md",
     "dst": "/ru/networks/vnet/concepts/sdn",
     "link": "/docs/ru/networks/vnet/concepts/sdn",
@@ -13804,6 +13864,12 @@
     "dst": "/ru/start/concepts/architecture",
     "link": "/docs/ru/start/concepts/architecture",
     "hash": "az"
+  },
+  {
+    "src": "/home/node/app/docs/ru/data-platform/spark/instructions/create/create.md",
+    "dst": "/ru/data-platform/spark/concepts/parameters",
+    "link": "/docs/ru/data-platform/spark/concepts/parameters",
+    "hash": "parameters_data_sources"
   },
   {
     "src": "/home/node/app/docs/ru/data-platform/spark/tariffication/tariffication.md",

@@ -1049,6 +1049,41 @@
     "full": "Восстановление экземпляра из резервной копии",
     "text": "Восстановление экземпляра из резервной копии"
   },
+  "parameters_spark_settings": {
+    "number": null,
+    "full": "Настройки Spark",
+    "text": "Настройки Spark"
+  },
+  "parameters_data_sources": {
+    "number": null,
+    "full": "Источники данных",
+    "text": "Источники данных"
+  },
+  "parameters_s3_int": {
+    "number": null,
+    "full": "Подключение к Cloud Storage",
+    "text": "Подключение к Cloud Storage"
+  },
+  "parameters_iceberg_int": {
+    "number": null,
+    "full": "Подключение к Cloud Iceberg Metastore",
+    "text": "Подключение к Cloud Iceberg Metastore"
+  },
+  "parameters_s3_ext": {
+    "number": null,
+    "full": "Подключение к внешнему S3-хранилищу",
+    "text": "Подключение к внешнему S3-хранилищу"
+  },
+  "parameters_iceberg_ext": {
+    "number": null,
+    "full": "Подключение к внешнему Iceberg Metastore",
+    "text": "Подключение к внешнему Iceberg Metastore"
+  },
+  "parameters_postgresql": {
+    "number": null,
+    "full": "Подключение к PostgreSQL",
+    "text": "Подключение к PostgreSQL"
+  },
   "rename": {
     "number": null,
     "full": "Переименование экземпляра сервиса",

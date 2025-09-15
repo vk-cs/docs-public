@@ -1960,6 +1960,10 @@
     "link": "https://cloud.vk.com/pricelist"
   },
   {
+    "src": "/home/node/app/docs/ru/storage/s3/troubleshooting/cors-problem/cors-problem.md",
+    "link": "https://msk.cloud.vk.com/app"
+  },
+  {
     "src": "/home/node/app/docs/ru/storage/backups/instructions/create-backup-plan/create-backup-plan.md",
     "link": "https://msk.cloud.vk.com/app/"
   },
@@ -4889,6 +4893,10 @@
   },
   {
     "src": "/home/node/app/docs/ru/data-platform/cloud-streams/instructions/delete/delete.md",
+    "link": "https://msk.cloud.vk.com/app/"
+  },
+  {
+    "src": "/home/node/app/docs/ru/data-platform/spark/concepts/parameters/parameters.md",
     "link": "https://msk.cloud.vk.com/app/"
   },
   {

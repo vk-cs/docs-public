@@ -4032,6 +4032,34 @@
     "tags": null
   },
   {
+    "uuid": "f2209861-2716-4738-849e-b556f8d0cd8e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/storage/s3/troubleshooting/no-such-bucket",
+    "metaFullPath": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.meta.json",
+    "mdFullPath": "/home/node/app/docs/ru/storage/s3/troubleshooting/no-such-bucket/no-such-bucket.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ],
+    "tags": null
+  },
+  {
+    "uuid": "ebf0aa2a-779c-4512-9c49-e1387412d423",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/storage/s3/troubleshooting/cors-problem",
+    "metaFullPath": "/home/node/app/docs/ru/storage/s3/troubleshooting/cors-problem/cors-problem.meta.json",
+    "mdFullPath": "/home/node/app/docs/ru/storage/s3/troubleshooting/cors-problem/cors-problem.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ],
+    "tags": null
+  },
+  {
     "uuid": "c5585342-538a-4fa5-862d-bce351c96daf",
     "lang": "ru",
     "type": "SECTION",
@@ -7329,6 +7357,20 @@
     "partialPath": "/ru/data-platform/spark/concepts/about",
     "metaFullPath": "/home/node/app/docs/ru/data-platform/spark/concepts/about/about.meta.json",
     "mdFullPath": "/home/node/app/docs/ru/data-platform/spark/concepts/about/about.md",
+    "hidden": false,
+    "buildPoints": [
+      "common"
+    ],
+    "tags": null
+  },
+  {
+    "uuid": "39b6f7ee-c4fa-4b19-b91d-74b3d0bde67d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/data-platform/spark/concepts/parameters",
+    "metaFullPath": "/home/node/app/docs/ru/data-platform/spark/concepts/parameters/parameters.meta.json",
+    "mdFullPath": "/home/node/app/docs/ru/data-platform/spark/concepts/parameters/parameters.md",
     "hidden": false,
     "buildPoints": [
       "common"
