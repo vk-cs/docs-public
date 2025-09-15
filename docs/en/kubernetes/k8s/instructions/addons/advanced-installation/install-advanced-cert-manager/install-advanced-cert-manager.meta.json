@@ -1,9 +1,6 @@
 {
     "title": "Cert-manager",
-    "pageDescription": "The configuration and installation of the cert-manager add-on is described here.",
-    "shortDescription": "",
-    "metaTitle": "Cert-manager",
-    "metaDescription": "The configuration and installation of the cert-manager add-on is described here.",
+        "shortDescription": "",
     "sectionTitle": "Cert-manager",
     "icon": "",
     "weight": 2,

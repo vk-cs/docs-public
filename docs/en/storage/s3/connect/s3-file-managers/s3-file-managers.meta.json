@@ -1,9 +1,6 @@
 {
     "title": "File managers",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "File managers",
-    "metaDescription": "Graphical tools such as file managers allow you to view objects in a bucket by simulating a hierarchical directory structure. Before starting work Before y",
+        "shortDescription": "",
     "sectionTitle": "File managers",
     "icon": "",
     "weight": 2,

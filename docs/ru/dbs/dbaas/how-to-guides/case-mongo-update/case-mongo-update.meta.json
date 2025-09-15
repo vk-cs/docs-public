@@ -1,9 +1,6 @@
 {
     "title": "Репликация и обновление MongoDB на Ubuntu",
-    "pageDescription": "Создание реплик СУБД MongoDB, обновление версии.",
-    "shortDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04",
-    "metaTitle": "Репликация и обновление MongoDB на Ubuntu",
-    "metaDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04.",
+        "shortDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04",
     "sectionTitle": "Репликация и обновление MongoDB на Ubuntu",
     "icon": "",
     "weight": 2,

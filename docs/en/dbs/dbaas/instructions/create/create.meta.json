@@ -1,9 +1,6 @@
 {
   "title": "Creating a DB instance",
-  "pageDescription": "How to create a DB instance in a Single configuration, how to create a DB instance in a Master-Replica configuration, how to create a DB instance in a Cluster configuration in VK Cloud.",
-  "shortDescription": "How to create a DB instance in a Single, Master-Replica, Cluster configuration",
-  "metaTitle": "Creating a DB instance",
-  "metaDescription": "Cloud Databases VK Cloud: creating a database instance in any of the available configurations — Single, Master-Replica, Cluster",
+    "shortDescription": "How to create a DB instance in a Single, Master-Replica, Cluster configuration",
   "sectionTitle": "Creating a DB instance",
   "icon": "",
   "additionalUuids": [

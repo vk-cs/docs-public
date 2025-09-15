@@ -1,9 +1,6 @@
 {
   "title": "Cloud Servers",
-  "pageDescription": "Working with the Cloud Servers service using Terraform.",
-  "shortDescription": "How to use Terraform to manage the Cloud Servers service objects",
-  "metaTitle": "Cloud Servers",
-  "metaDescription": "",
+    "shortDescription": "How to use Terraform to manage the Cloud Servers service objects",
   "sectionTitle": "Cloud Servers",
   "icon": "",
   "weight": 10,

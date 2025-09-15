@@ -1,9 +1,6 @@
 {
   "title": "Инструменты для работы с сервисами",
-  "pageDescription": "Основное управление ресурсами платформы выполняется через личный кабинет VK Cloud. Помимо веб-интерфейса, управление может производиться с использованием инструментов: OpenStack CLI, AWS CLI, REST API, Terraform.",
-  "shortDescription": "Управление ресурсами VK Cloud c помощью OpenStack CLI, AWS CLI, REST API, Terraform",
-  "metaTitle": "Инструменты для работы с сервисами",
-  "metaDescription": "Основное управление ресурсами платформы выполняется через личный кабинет VK Cloud. Помимо веб-интерфейса, управление может производиться с использованием инструментов: OpenStack CLI, REST API, Terraform.",
+    "shortDescription": "Управление ресурсами VK Cloud c помощью OpenStack CLI, AWS CLI, REST API, Terraform",
   "sectionTitle": "Инструменты для работы с сервисами",
   "icon": "",
   "weight": 12,

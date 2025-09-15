@@ -1,9 +1,6 @@
 {
     "title": "Создание кластера Spark",
-    "pageDescription": "Пример создания кластера Spark с использованием Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Создание кластера Spark",
-    "metaDescription": "Пример создания кластера Spark с использованием Terraform",
+        "shortDescription": "",
     "sectionTitle": "Создание кластера Spark",
     "icon": "",
     "weight": 1,

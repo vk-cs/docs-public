@@ -1,9 +1,6 @@
 {
   "title": "Развертывание H2O LLM Studio",
-  "pageDescription": "Развертывание H2O LLM Studio для обучения и настройки больших языковых моделей.",
-  "shortDescription": "Развертывание H2O LLM Studio для обучения и настройки больших языковых моделей",
-  "metaTitle": "Развертывание H2O LLM Studio",
-  "metaDescription": "Развертывание H2O LLM Studio для обучения и настройки больших языковых моделей",
+    "shortDescription": "Развертывание H2O LLM Studio для обучения и настройки больших языковых моделей",
   "sectionTitle": "Развертывание H2O LLM Studio",
   "icon": "",
   "weight": 20,

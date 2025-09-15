@@ -1,9 +1,6 @@
 {
     "title": "Справочник Object Storage",
-    "pageDescription": "Описание терминов Object Storage",
-    "shortDescription": "Основные понятия сервиса Object Storage",
-    "metaTitle": "Справочник Object Storage",
-    "metaDescription": "В статье описаны основные понятия сервиса Object Storage",
+        "shortDescription": "Основные понятия сервиса Object Storage",
     "sectionTitle": "Справочник Object Storage",
     "icon": "",
     "weight": 7,

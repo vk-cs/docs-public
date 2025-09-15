@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Подробное описание принципов функционирования и устройства сервиса баз данных VK Cloud.",
-  "shortDescription": "Как устроен сервис баз данных VK Cloud",
-  "metaTitle": "Концепции",
-  "metaDescription": "Cloud Databases в VK Cloud: подробное описание принципов функционирования и устройства сервиса.",
+    "shortDescription": "Как устроен сервис баз данных VK Cloud",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

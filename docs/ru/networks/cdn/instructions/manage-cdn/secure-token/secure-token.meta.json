@@ -1,9 +1,6 @@
 {
   "title": "Подключение Secure token",
-  "pageDescription": "Как защитить файлы CDN-ресурса от нежелательных загрузок с помощью технологии Secure token.",
-  "shortDescription": "Как защитить файлы CDN-ресурса от нежелательных загрузок с помощью опции Secure token",
-  "metaTitle": "Подключение Secure token",
-  "metaDescription": "Как защитить файлы CDN-ресурса от нежелательных загрузок с помощью технологии Secure token",
+    "shortDescription": "Как защитить файлы CDN-ресурса от нежелательных загрузок с помощью опции Secure token",
   "sectionTitle": "Подключение Secure token",
   "icon": "",
   "weight": 8,

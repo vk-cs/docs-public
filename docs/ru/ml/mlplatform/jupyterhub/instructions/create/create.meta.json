@@ -1,9 +1,6 @@
 {
     "title": "Создание инстанса JupyterHub",
-    "pageDescription": "Как создать новый инстанс JupyterHub.",
-    "shortDescription": "Как создать новый инстанс JupyterHub",
-    "metaTitle": "Создание инстанса JupyterHub",
-    "metaDescription": "Как создать новый инстанс JupyterHub",
+        "shortDescription": "Как создать новый инстанс JupyterHub",
     "sectionTitle": "Создание инстанса JupyterHub",
     "icon": "",
     "weight": 1,

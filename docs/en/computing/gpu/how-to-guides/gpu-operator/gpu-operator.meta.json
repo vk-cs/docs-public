@@ -1,9 +1,6 @@
 {
   "title": "GPU resource management in Cloud Containers",
-  "pageDescription": "How to create a Kubernetes cluster with a GPU and split the GPU into several pods using MPS and MIG technologies.",
-  "shortDescription": "How to create a Kubernetes cluster with a GPU and split the GPU into several pods using MPS and MIG technologies",
-  "metaTitle": "GPU resource management in Cloud Containers",
-  "metaDescription": "How to create a Kubernetes cluster with a GPU and split the GPU into several pods using MPS and MIG technologies.",
+    "shortDescription": "How to create a Kubernetes cluster with a GPU and split the GPU into several pods using MPS and MIG technologies",
   "sectionTitle": "GPU resource management in Cloud Containers",
   "icon": "",
   "weight": 1,

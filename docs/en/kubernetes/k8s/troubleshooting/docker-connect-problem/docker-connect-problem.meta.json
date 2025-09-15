@@ -1,9 +1,6 @@
 {
   "title": "Cannot connect to Docker",
-  "pageDescription": "What to do if the «x509: certificate signed by unknown authority» error occurs when connecting to the Docker registry",
-  "shortDescription": "What to do if the «x509: certificate signed by unknown authority» error occurs when connecting to the Docker registry",
-  "metaTitle": "Cannot connect to Docker",
-  "metaDescription": "What to do if the «x509: certificate signed by unknown authority» error occurs when connecting to the Docker registry",
+    "shortDescription": "What to do if the «x509: certificate signed by unknown authority» error occurs when connecting to the Docker registry",
   "sectionTitle": "Cannot connect to Docker",
   "icon": "",
   "weight": 2,

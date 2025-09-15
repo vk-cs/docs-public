@@ -1,9 +1,6 @@
 {
     "title": "Object Storage API",
-    "pageDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
-    "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
-    "metaTitle": "Object Storage API",
-    "metaDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
+        "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
     "sectionTitle": "Object Storage API",
     "icon": "",
     "weight": 2,

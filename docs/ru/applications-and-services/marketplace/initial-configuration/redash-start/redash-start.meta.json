@@ -1,9 +1,6 @@
 {
     "title": "Развертывание Redash 10.1",
-    "pageDescription": "Шаги по развертыванию сервиса Redash 10.1.0 в целевой проект VK Cloud с помощью Marketplace. Развертывание сервиса Redash для задач визуализации данных.",
-    "shortDescription": "Развертывание сервиса Redash для задач визуализации данных",
-    "metaTitle": "Развертывание Redash 10.1",
-    "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Redash 10.1.0 для задач визуализации данных в целевой проект",
+        "shortDescription": "Развертывание сервиса Redash для задач визуализации данных",
     "sectionTitle": "Развертывание Redash 10.1",
     "icon": "",
     "weight": 8,

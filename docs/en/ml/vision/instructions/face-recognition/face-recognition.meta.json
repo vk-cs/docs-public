@@ -1,9 +1,6 @@
 {
     "title": "Face recognition",
-    "pageDescription": "",
-    "shortDescription": "API methods for facial recognition",
-    "metaTitle": "Face recognition",
-    "metaDescription": "Four API methods are used for face recognition",
+        "shortDescription": "API methods for facial recognition",
     "sectionTitle": "Face recognition",
     "icon": "",
     "weight": 0,

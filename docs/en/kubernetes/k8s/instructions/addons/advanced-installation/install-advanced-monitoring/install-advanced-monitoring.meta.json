@@ -1,9 +1,6 @@
 {
     "title": "Kube Prometheus Stack",
-    "pageDescription": "It describes the configuration and installation of an add-on with monitoring tools.",
-    "shortDescription": "",
-    "metaTitle": "Kube Prometheus Stack",
-    "metaDescription": "Configuring and installing an add-on with monitoring tools",
+        "shortDescription": "",
     "sectionTitle": "Kube Prometheus Stack",
     "icon": "",
     "weight": 11,

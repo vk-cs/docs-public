@@ -1,9 +1,6 @@
 {
     "title": "About documentation portal",
-    "pageDescription": "Description of structural elements and design features specific to this portal.",
-    "shortDescription": "Structural elements and features of documentation design",
-    "metaTitle": "About documentation portal",
-    "metaDescription": "Description of structural elements and design features specific to this portal.",
+        "shortDescription": "Structural elements and features of documentation design",
     "sectionTitle": "About documentation portal",
     "icon": "",
     "weight": 8,

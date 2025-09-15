@@ -1,9 +1,6 @@
 {
   "title": "Cloud Servers",
-  "pageDescription": "Работа с сервисом Cloud Servers с использованием Terraform.",
-  "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Servers",
-  "metaTitle": "Cloud Servers",
-  "metaDescription": "",
+    "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Servers",
   "sectionTitle": "Cloud Servers",
   "icon": "",
   "weight": 10,

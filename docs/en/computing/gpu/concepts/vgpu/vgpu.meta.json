@@ -1,9 +1,6 @@
 {
   "title": "GPU Virtualization with vGPU",
-  "pageDescription": "Features of vGPU technology, including profiles, licensing, and a comparison with physical GPUs.",
-  "shortDescription": "Features of vGPU, and a comparison with physical GPUs",
-  "metaTitle": "GPU Virtualization with vGPU",
-  "metaDescription": "Features of vGPU technology, including profiles, licensing, and a comparison with physical GPUs",
+    "shortDescription": "Features of vGPU, and a comparison with physical GPUs",
   "sectionTitle": "GPU Virtualization with vGPU",
   "build": {
     "for": [

@@ -1,9 +1,6 @@
 {
   "title": "Scaling",
-  "pageDescription": "Scaling of Cloud Big Data cluster resources in VK Cloud projects.",
-  "shortDescription": "Horizontal and vertical scaling of cluster resources",
-  "metaTitle": "Scaling",
-  "metaDescription": "VK Cloud: scaling of Cloud Big Data cluster resources",
+    "shortDescription": "Horizontal and vertical scaling of cluster resources",
   "sectionTitle": "Scaling",
   "icon": "",
   "weight": 3,

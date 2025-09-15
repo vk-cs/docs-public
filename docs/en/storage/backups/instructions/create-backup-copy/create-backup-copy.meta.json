@@ -1,9 +1,6 @@
 {
     "title": "Creating backups manually",
-    "pageDescription": "How to manually create a backup copy of a VM, DB or analytical DB.",
-    "shortDescription": "How to manually create a backup copy of a VM, DB or analytical DB",
-    "metaTitle": "Creating backups manually",
-    "metaDescription": "How to manually create a backup copy of a VM, DB or analytical DB",
+        "shortDescription": "How to manually create a backup copy of a VM, DB or analytical DB",
     "sectionTitle": "Creating backups manually",
     "icon": "",
     "weight": 2,

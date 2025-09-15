@@ -1,9 +1,6 @@
 {
     "title": "Подключение к кластеру с помощью kubectl",
-    "pageDescription": "Как подключиться к кластеру Kubernetes с помощью kubectl.",
-    "shortDescription": "",
-    "metaTitle": "Подключение к кластеру с помощью kubectl",
-    "metaDescription": "",
+        "shortDescription": "",
     "sectionTitle": "Подключение к кластеру с помощью kubectl",
     "icon": "",
     "weight": 1,

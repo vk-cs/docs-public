@@ -1,9 +1,6 @@
 {
     "title": "Microsoft",
-    "pageDescription": "Licensing of Microsoft products used in VK Cloud virtual machines.",
-    "shortDescription": "Product licenses from Microsoft",
-    "metaTitle": "Microsoft",
-    "metaDescription": "Licensing of Microsoft products used in VK Cloud virtual machines",
+        "shortDescription": "Product licenses from Microsoft",
     "sectionTitle": "Microsoft",
     "weight": 0,
     "additionalUuids": [

@@ -1,9 +1,6 @@
 {
     "title": "Тарификация",
-    "pageDescription": "Особенности тарификации сервисов и приложений в Marketplace VK Cloud, расчет стоимости.",
-    "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
-    "metaTitle": "Тарификация",
-    "metaDescription": "Marketplace VK Cloud: особенности тарификации сервиса, расчет стоимости",
+        "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
     "sectionTitle": "Тарификация",
     "icon": "",
     "weight": 5,

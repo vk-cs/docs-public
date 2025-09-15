@@ -1,9 +1,6 @@
 {
     "title": "Router",
-    "pageDescription": "How to use a router to connect different networks with each other.",
-    "shortDescription": "How to connect different networks with each other",
-    "metaTitle": "Router",
-    "metaDescription": "",
+        "shortDescription": "How to connect different networks with each other",
     "sectionTitle": "Router",
     "icon": "",
     "weight": 3,

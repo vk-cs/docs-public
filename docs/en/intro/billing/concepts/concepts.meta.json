@@ -1,9 +1,6 @@
 {
   "title": "Concepts",
-  "pageDescription": "What are personal and bonus balances in VK Cloud, what payment methods are available to individuals and legal entities, how accounting documents are generated, the difference between working with individuals and legal entities in VK Cloud.",
-  "shortDescription": "Billing system: balance, payment methods, features for individuals and legal entities",
-  "metaTitle": "Concepts",
-  "metaDescription": "VK Cloud: the concept of balance in the platform, what payment methods are available to individuals and legal entities, how accounting documents are generated, the difference between working with individuals and legal entities in the platform",
+    "shortDescription": "Billing system: balance, payment methods, features for individuals and legal entities",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

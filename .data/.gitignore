@@ -1,0 +1,7 @@
+*
+!redirectNetwork.js
+!ru/redirects/*.json
+!ru/uuidSnapshot.json
+!en/redirects/*.json
+!en/uuidSnapshot.json
+!.gitignore

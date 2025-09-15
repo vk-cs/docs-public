@@ -1,10 +1,7 @@
 {
     "title": "Подключение к ВМ Windows",
     "sectionTitle": "Подключение к ВМ Windows",
-    "metaTitle": "Подключение к ВМ Windows",
-    "pageDescription": "Подключение к ВМ Windows",
-    "shortDescription": "Как подключиться к виртуальной машине по RDP",
-    "metaDescription": "Подключение к ВМ Windows",
+        "shortDescription": "Как подключиться к виртуальной машине по RDP",
     "icon": "",
     "weight": 1,
     "uuid": "f1ed1c54-61c1-4621-a180-e26c74d6e80e"

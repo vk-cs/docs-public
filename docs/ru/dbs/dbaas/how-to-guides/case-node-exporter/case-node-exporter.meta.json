@@ -1,9 +1,6 @@
 {
     "title": "Мониторинг Redis с помощью Prometheus, Node exporter и Grafana",
-    "pageDescription": "Настройка мониторинга СУБД Redis в VK Cloud с помощью сервера Prometheus, расширения Node exporter и последующей визуализации в Grafana.",
-    "shortDescription": "Как настроить мониторинг для СУБД Redis с использованием отдельного сервера Prometheus и визуализировать его в Grafana",
-    "metaTitle": "Мониторинг Redis с помощью Prometheus, Node exporter и Grafana",
-    "metaDescription": "VK Cloud: настройка мониторинга СУБД Redis в VK Cloud с помощью сервера Prometheus, расширения Node exporter и последующей визуализации в Grafana",
+        "shortDescription": "Как настроить мониторинг для СУБД Redis с использованием отдельного сервера Prometheus и визуализировать его в Grafana",
     "sectionTitle": "Мониторинг Redis с помощью Prometheus, Node exporter и Grafana",
     "icon": "",
     "weight": 5,

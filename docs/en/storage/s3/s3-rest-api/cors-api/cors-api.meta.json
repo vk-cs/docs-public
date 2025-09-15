@@ -1,9 +1,6 @@
 {
     "title": "CORS",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "CORS",
-    "metaDescription": "Object Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document. Li",
+        "shortDescription": "",
     "sectionTitle": "CORS",
     "icon": "",
     "weight": 6,

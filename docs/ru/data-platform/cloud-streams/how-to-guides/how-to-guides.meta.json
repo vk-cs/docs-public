@@ -1,9 +1,6 @@
 {
   "title": "Сценарии работы",
-  "pageDescription": "Сценарии работы с кластерами Cloud Streams на платформе VK Cloud.",
-  "shortDescription": "Инструкции по работе с Cloud Streams в VK Cloud",
-  "metaTitle": "Сценарии работы",
-  "metaDescription": "Сценарии работы",
+    "shortDescription": "Инструкции по работе с Cloud Streams в VK Cloud",
   "sectionTitle": "Сценарии работы",
   "icon": "",
   "weight": 4,

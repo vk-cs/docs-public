@@ -1,9 +1,6 @@
 {
   "title": "Managing Spark cluster",
-  "pageDescription": "Managing Spark cluster.",
-  "shortDescription": "How to manage a Spark cluster using your management console",
-  "metaTitle": "VK Cloud: Spark Cluster Management",
-  "metaDescription": "",
+    "shortDescription": "How to manage a Spark cluster using your management console",
   "sectionTitle": "Managing Spark cluster",
   "icon": "",
   "weight": 0,

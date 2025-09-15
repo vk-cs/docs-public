@@ -1,9 +1,6 @@
 {
     "title": "Запуск заданий в кластере Spark",
-    "pageDescription": "Запуск заданий в кластере Spark.",
-    "shortDescription": "Как запускать задания в кластере Spark в VK Cloud",
-    "metaTitle": "Запуск заданий в кластере Spark",
-    "metaDescription": "Spark VK Cloud: запуск приложений и заданий.",
+        "shortDescription": "Как запускать задания в кластере Spark в VK Cloud",
     "sectionTitle": "Запуск заданий в кластере Spark",
     "icon": "",
     "weight": 0,

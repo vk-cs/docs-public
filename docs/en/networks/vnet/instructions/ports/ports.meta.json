@@ -1,9 +1,6 @@
 {
     "title": "Ports",
-    "pageDescription": "Managing OpenStack ports in the virtual networks service.",
-    "shortDescription": "Basic operations with OpenStack ports",
-    "metaTitle": "Ports",
-    "metaDescription": "",
+        "shortDescription": "Basic operations with OpenStack ports",
     "sectionTitle": "Ports",
     "icon": "",
     "weight": 2,

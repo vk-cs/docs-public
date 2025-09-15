@@ -1,9 +1,6 @@
 {
   "title": "Cloud GPU",
-  "pageDescription": "Cloud computing powered by NVIDIA GPUs can accelerate petabytes of data up to ten times. Cloud GPU is suitable for deep learning, graphical visualization and high performance computing tasks.",
-  "shortDescription": "High performance cloud computing and neural network training with NVIDIA® Tesla",
-  "metaTitle": "Cloud GPU",
-  "metaDescription": "Cloud computing powered by NVIDIA GPUs can accelerate petabytes of data up to ten times. Cloud GPU is suitable for deep learning, graphical visualization and high performance computing tasks.",
+    "shortDescription": "High performance cloud computing and neural network training with NVIDIA® Tesla",
   "sectionTitle": "Cloud GPU",
   "icon": "",
   "weight": 2,

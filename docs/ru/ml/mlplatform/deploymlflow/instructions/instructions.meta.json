@@ -1,9 +1,6 @@
 {
   "title": "Пошаговые инструкции",
-  "pageDescription": "Создание инстанса MLflow Deploy и управление им.",
-  "shortDescription": "Создание инстанса MLflow Deploy и управление им",
-  "metaTitle": "Пошаговые инструкции",
-  "metaDescription": "Создание инстанса MLflow Deploy и управление им",
+    "shortDescription": "Создание инстанса MLflow Deploy и управление им",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 2,

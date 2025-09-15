@@ -1,9 +1,6 @@
 {
     "title": "Connecting to cluster using Kubernetes Dashboard",
-    "pageDescription": "How to connect to a Kubernetes cluster using Kubernetes Dashboard.",
-    "shortDescription": "",
-    "metaTitle": "Connecting to cluster using Kubernetes Dashboard",
-    "metaDescription": "",
+        "shortDescription": "",
     "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
     "icon": "",
     "weight": 3,

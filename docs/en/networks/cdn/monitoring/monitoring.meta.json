@@ -1,9 +1,6 @@
 {
     "title": "Statistics",
-    "pageDescription": "How to get statistics about CDN resource traffic and available metrics",
-    "shortDescription": "How to get statistics about CDN resource traffic and available metrics",
-    "metaTitle": "Statistics",
-    "metaDescription": "How to get statistics about CDN resource traffic and available metrics",
+        "shortDescription": "How to get statistics about CDN resource traffic and available metrics",
     "sectionTitle": "Statistics",
     "icon": "",
     "weight": 3,

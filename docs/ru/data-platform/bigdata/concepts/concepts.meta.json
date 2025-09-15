@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Как устроен сервис Cloud Big Data в VK Cloud.",
-  "shortDescription": "Принципы функционирования и устройство Cloud Big Data",
-  "metaTitle": "Концепции",
-  "metaDescription": "VK Cloud: устройство и особенности реализации сервиса Cloud Big Data",
+    "shortDescription": "Принципы функционирования и устройство Cloud Big Data",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

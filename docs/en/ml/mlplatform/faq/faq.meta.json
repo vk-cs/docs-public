@@ -1,9 +1,6 @@
 {
     "title": "FAQ",
-    "pageDescription": "Answers to the most frequently asked questions about Cloud ML Platform.",
-    "shortDescription": "Answers to the most frequently asked questions about Cloud ML Platform",
-    "metaTitle": "FAQ",
-    "metaDescription": "",
+        "shortDescription": "Answers to the most frequently asked questions about Cloud ML Platform",
     "sectionTitle": "FAQ",
     "icon": "",
     "weight": 5,

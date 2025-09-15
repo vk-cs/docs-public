@@ -1,9 +1,6 @@
 {
   "title": "События Public DNS",
-  "pageDescription": "События, которые Public DNS передает в Cloud Audit.",
-  "shortDescription": "События, которые Public DNS передает в Cloud Audit",
-  "metaTitle": "События Public DNS",
-  "metaDescription": "События, которые Public DNS передает в Cloud Audit",
+    "shortDescription": "События, которые Public DNS передает в Cloud Audit",
   "sectionTitle": "События Public DNS",
   "icon": "",
   "weight": 0,

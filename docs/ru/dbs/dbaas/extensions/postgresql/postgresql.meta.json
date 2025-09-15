@@ -1,9 +1,6 @@
 {
     "title": "Расширения PostgreSQL",
-    "pageDescription": "Перечень доступных расширений PostgreSQL и их параметров.",
-    "shortDescription": "Перечень доступных расширений PostgreSQL и их параметров",
-    "metaTitle": "Расширения PostgreSQL",
-    "metaDescription": "Cloud Databases в VK Cloud: перечень доступных расширений PostgreSQL и их параметров.",
+        "shortDescription": "Перечень доступных расширений PostgreSQL и их параметров",
     "sectionTitle": "Расширения PostgreSQL",
     "icon": "",
     "weight": 1,

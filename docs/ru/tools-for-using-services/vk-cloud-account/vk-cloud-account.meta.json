@@ -1,9 +1,6 @@
 {
   "title": "Аккаунт VK Cloud",
-  "pageDescription": "Аккаунт VK Cloud представляет собой интерфейс для управления аккаунтом пользователя.",
-  "shortDescription": "Аккаунт пользователя VK Cloud",
-  "metaTitle": "Аккаунт VK Cloud",
-  "metaDescription": "Аккаунт VK Cloud представляет собой интерфейс для управления аккаунтом пользователя.",
+    "shortDescription": "Аккаунт пользователя VK Cloud",
   "sectionTitle": "Аккаунт VK Cloud",
   "icon": "",
   "weight": 1,

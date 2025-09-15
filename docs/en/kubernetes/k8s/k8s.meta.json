@@ -1,9 +1,6 @@
 {
   "title": "Cloud Containers",
-  "pageDescription": "Kubernetes as a cloud service. The service is CNCF-certified and compatible with the standard Kubernetes API. Thanks to autoscaling, applications on Cloud Containers get extra capacity instantly when load peaks and reduce consumption when load drops. Autoscaling saves up to 60% on computation.",
-  "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads.",
-  "metaTitle": "Cloud Containers",
-  "metaDescription": "",
+    "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads.",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "relativeSections": [

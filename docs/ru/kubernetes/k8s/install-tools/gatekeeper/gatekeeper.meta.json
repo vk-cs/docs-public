@@ -1,9 +1,6 @@
 {
     "title": "Установка Gatekeeper",
-    "pageDescription": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
-    "shortDescription": "Как установить контроллер Gatekeeper",
-    "metaTitle": "Установка Gatekeeper",
-    "metaDescription": "",
+        "shortDescription": "Как установить контроллер Gatekeeper",
     "sectionTitle": "Установка Gatekeeper",
     "icon": "",
     "weight": 2,

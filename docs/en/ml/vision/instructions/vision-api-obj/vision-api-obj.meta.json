@@ -1,9 +1,6 @@
 {
     "title": "Object recognition",
-    "pageDescription": "",
-    "shortDescription": "API methods to search for objects in the photo",
-    "metaTitle": "Object recognition",
-    "metaDescription": "",
+        "shortDescription": "API methods to search for objects in the photo",
     "sectionTitle": "Object recognition",
     "icon": "",
     "uuid": "477cbf32-5880-47d9-8146-e8d5f46c6fae"

@@ -1,9 +1,6 @@
 {
     "title": "Webhooks",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Webhooks",
-    "metaDescription": "The Object Storage webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you mu",
+        "shortDescription": "",
     "sectionTitle": "Webhooks",
     "icon": "",
     "weight": 9,

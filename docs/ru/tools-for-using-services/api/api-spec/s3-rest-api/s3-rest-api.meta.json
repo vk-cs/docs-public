@@ -1,9 +1,6 @@
 {
   "title": "Object Storage",
-  "pageDescription": "Операции API, структуры запросов и ответов, коды ошибок.",
-  "shortDescription": "Операции API, структуры запросов и ответов, коды ошибок",
-  "metaTitle": "Object Storage",
-  "metaDescription": "Операции API, структуры запросов и ответов, коды ошибок.",
+    "shortDescription": "Операции API, структуры запросов и ответов, коды ошибок",
   "sectionTitle": "Object Storage",
   "icon": "",
   "weight": 4,

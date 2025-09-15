@@ -1,6 +1,5 @@
 {
-  "title": "Documentation",
-  "serviceGroupLinks": [],
+  "title": "VK Cloud Documentation",
   "intro": [
     {
       "partialPath": "/en/intro/start",
@@ -23,7 +22,6 @@
       "iconMobile": "/ru/assets/secure-icon-mobile.svg"
     }
   ],
-
   "uuid": "301ac9a0-a82e-406d-b707-702fa2154727",
   "additionalUuids": [
     "d86aa46e-f5eb-4f3e-b066-49cdda0b370b",
@@ -94,11 +92,7 @@
     "b15b9612-72e2-4173-a549-ea9c422e5d29",
     "eb14fbe8-b73c-4ecc-9bdc-28b9d223fba0",
     "9979a589-31ee-4e8f-8d5e-497fe0bb5cba"
-  ],
-  "default": {
-    "metaTitle": "Documentation",
-    "metaDescription": "VK Cloud Documentation helps you to find FAQ, how-to guides and step-by-step tutorials."
-  }
+  ]
 }
 
 

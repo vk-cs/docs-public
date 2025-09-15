@@ -1,9 +1,6 @@
 {
     "title": "Поды",
-    "pageDescription": "Общие сведения о подах в Kubernetes.",
-    "shortDescription": "Общие сведения о подах в Kubernetes",
-    "metaTitle": "Поды",
-    "metaDescription": "",
+        "shortDescription": "Общие сведения о подах в Kubernetes",
     "sectionTitle": "Поды",
     "icon": "",
     "weight": 1,

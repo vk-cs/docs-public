@@ -1,9 +1,6 @@
 {
     "title": "Pods",
-    "pageDescription": "General information about pods in Kubernetes.",
-    "shortDescription": "General information about pods in Kubernetes",
-    "metaTitle": "Pods",
-    "metaDescription": "",
+        "shortDescription": "General information about pods in Kubernetes",
     "sectionTitle": "Pods",
     "icon": "",
     "weight": 1,

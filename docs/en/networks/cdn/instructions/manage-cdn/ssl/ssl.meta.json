@@ -1,9 +1,6 @@
 {
     "title": "Using SSL certificate",
-    "pageDescription": "How to apply Let's Encrypt or custom SSL certificate to a CDN resource.",
-    "shortDescription": "How to apply Let's Encrypt or custom SSL certificate to a CDN resource",
-    "metaTitle": "Using SSL certificate",
-    "metaDescription": "How to apply Let's Encrypt or custom SSL certificate to a CDN resource",
+        "shortDescription": "How to apply Let's Encrypt or custom SSL certificate to a CDN resource",
     "sectionTitle": "Using SSL certificate",
     "icon": "",
     "weight": 3,

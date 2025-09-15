@@ -1,9 +1,6 @@
 {
   "title": "Масштабирование",
-  "pageDescription": "Масштабирование ресурсов кластера Cloud Big Data в проектах VK Cloud.",
-  "shortDescription": "Горизонтальное и вертикальное масштабирование ресурсов кластера",
-  "metaTitle": "Масштабирование",
-  "metaDescription": "VK Cloud: масштабирование ресурсов кластера Cloud Big Data в проектах",
+    "shortDescription": "Горизонтальное и вертикальное масштабирование ресурсов кластера",
   "sectionTitle": "Масштабирование",
   "icon": "",
   "weight": 3,

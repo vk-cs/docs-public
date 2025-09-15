@@ -1,10 +1,7 @@
 {
     "title": "Подключение сети к ВМ",
     "sectionTitle": "Подключение сети к ВМ",
-    "metaTitle": "Подключение сети к ВМ",
-    "pageDescription": "Подключение сети к ВМ.",
-    "shortDescription": "Как создать порт и подключить сеть к ВМ",
-    "metaDescription": "Подключение сети к ВМ",
+        "shortDescription": "Как создать порт и подключить сеть к ВМ",
     "icon": "",
     "weight": 4,
     "uuid": "329d46c7-5634-4b4a-bdf1-8ae89de072b8"

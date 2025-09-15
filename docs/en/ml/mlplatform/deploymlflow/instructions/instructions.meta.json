@@ -1,9 +1,6 @@
 {
   "title": "Working with MLflow Deploy instances",
-  "pageDescription": "Management options for created MLflow Deploy instances.",
-  "shortDescription": "",
-  "metaTitle": "Working with MLflow Deploy instances",
-  "metaDescription": "Working with MLflow Deploy instances",
+    "shortDescription": "",
   "sectionTitle": "Working with MLflow Deploy instances",
   "icon": "",
   "weight": 1,

@@ -1,9 +1,6 @@
 {
     "title": "Using Docker CE",
-    "pageDescription": "How to use installed Docker CE.",
-    "shortDescription": "",
-    "metaTitle": "Using Docker CE",
-    "metaDescription": "",
+        "shortDescription": "",
     "sectionTitle": "Using Docker CE",
     "icon": "",
     "weight": 2,

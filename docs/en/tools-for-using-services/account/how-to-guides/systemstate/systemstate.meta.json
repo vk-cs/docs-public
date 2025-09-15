@@ -1,9 +1,6 @@
 {
     "title": "Checking the system status",
-    "pageDescription": "Description of the process of obtaining information about the operation of user resources in real time.",
-    "shortDescription": "Getting information about the operation of user resources in real time",
-    "metaTitle": "Checking the system status",
-    "metaDescription": "Getting information about the operation of user resources in real time.",
+        "shortDescription": "Getting information about the operation of user resources in real time",
     "sectionTitle": "Checking the system status",
     "icon": "",
     "weight": 5,

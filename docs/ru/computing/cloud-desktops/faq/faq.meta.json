@@ -1,9 +1,6 @@
 {
     "title": "Вопросы и ответы",
-    "pageDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Desktop",
-    "shortDescription": "Ответы на часто задаваемые вопросы о сервисе",
-    "metaTitle": "Вопросы и ответы",
-    "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Desktop.",
+        "shortDescription": "Ответы на часто задаваемые вопросы о сервисе",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
     "weight": 7,

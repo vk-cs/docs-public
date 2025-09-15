@@ -1,9 +1,6 @@
 {
     "title": "Additional project configuration for legal entities",
-    "pageDescription": "Additional project configuration for the correct registration of legal and financial documents in VK Cloud.",
-    "shortDescription": "Additional project setup for the correct execution of legal and financial documents",
-    "metaTitle": "Additional project configuration for legal entities",
-    "metaDescription": "VK Cloud: additional project setup for the correct execution of legal and financial documents",
+        "shortDescription": "Additional project setup for the correct execution of legal and financial documents",
     "sectionTitle": "Additional project configuration for legal entities",
     "icon": "",
     "weight": 5,

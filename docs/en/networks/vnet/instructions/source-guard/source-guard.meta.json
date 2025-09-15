@@ -1,9 +1,6 @@
 {
   "title": "IP Source Guard",
-  "pageDescription": "Configuring allowed addresses list using IP Source Guard.",
-  "shortDescription": "How to configure traffic egress from allowed IP addresses using IP Source Guard",
-  "metaTitle": "IP Source Guard",
-  "metaDescription": "How to configure traffic egress from allowed IP addresses using IP Source Guard",
+    "shortDescription": "How to configure traffic egress from allowed IP addresses using IP Source Guard",
   "sectionTitle": "IP Source Guard",
   "icon": "",
   "weight": 4,

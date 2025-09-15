@@ -1,9 +1,6 @@
 {
     "title": "Язык поисковых запросов",
-    "pageDescription": "",
-    "shortDescription": "Инструмент поиска записей в журнале событий",
-    "metaTitle": "Язык поисковых запросов",
-    "metaDescription": "",
+        "shortDescription": "Инструмент поиска записей в журнале событий",
     "sectionTitle": "Язык поисковых запросов",
     "icon": "",
     "weight": 2,

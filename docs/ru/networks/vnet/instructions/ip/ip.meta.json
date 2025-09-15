@@ -1,9 +1,6 @@
 {
   "title": "IP-адреса",
-  "pageDescription": "Управление Floating и Anycast IP-адресами в сервисе виртуальных сетей.",
-  "shortDescription": "Управление Floating и Anycast IP-адресами в сервисе виртуальных сетей",
-  "metaTitle": "IP-адреса",
-  "metaDescription": "",
+    "shortDescription": "Управление Floating и Anycast IP-адресами в сервисе виртуальных сетей",
   "sectionTitle": "IP-адреса",
   "icon": "",
   "weight": 4,

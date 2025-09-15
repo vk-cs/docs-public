@@ -1,9 +1,6 @@
 {
     "title": "Trigger launch",
-    "pageDescription": "Solving the problem of turning off the trigger and starting it.",
-    "shortDescription": "Trigger launch after turning it off",
-    "metaTitle": "Trigger launch",
-    "metaDescription": "",
+        "shortDescription": "Trigger launch after turning it off",
     "sectionTitle": "Trigger launch",
     "icon": "",
     "weight": 3,

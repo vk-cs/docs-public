@@ -1,9 +1,6 @@
 {
     "title": "Creating backup plans",
-    "pageDescription": "How to create a backup plan for a VM, DB or analytical DB.",
-    "shortDescription": "How to create a backup plan for a VM, DB or analytical DB",
-    "metaTitle": "Creating backup plans",
-    "metaDescription": "How to create a backup plan for a VM, DB or analytical DB",
+        "shortDescription": "How to create a backup plan for a VM, DB or analytical DB",
     "sectionTitle": "Creating backup plans",
     "icon": "",
     "weight": 0,

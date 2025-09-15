@@ -1,9 +1,6 @@
 {
     "title": "Managing objects in a bucket",
-    "pageDescription": "View, download, edit access, copy and delete objects from the bucket.",
-    "shortDescription": "View, download, edit access, copy and delete objects from the bucket",
-    "metaTitle": "Managing objects in a bucket",
-    "metaDescription": "View, download, edit access, copy and delete objects from the bucket",
+        "shortDescription": "View, download, edit access, copy and delete objects from the bucket",
     "sectionTitle": "Managing objects in a bucket",
     "icon": "",
     "weight": 1,

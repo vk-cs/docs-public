@@ -1,9 +1,6 @@
 {
   "title": "MLflow",
-  "pageDescription": "Этот раздел описывает создание инстансов Mlflow и работу с ними.",
-  "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
-  "metaTitle": "MLflow",
-  "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
+    "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
   "sectionTitle": "MLflow",
   "icon": "",
   "weight": 4,

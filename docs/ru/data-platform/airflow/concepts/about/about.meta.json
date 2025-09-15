@@ -1,9 +1,6 @@
 {
   "title": "О сервисе",
-  "pageDescription": "Основные понятия и области применение сервиса Cloud Airflow от VK Cloud.",
-  "shortDescription": "Основные понятия и области применение сервиса Cloud Airflow",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Основные понятия и области применение сервиса Cloud Airflow",
+    "shortDescription": "Основные понятия и области применение сервиса Cloud Airflow",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

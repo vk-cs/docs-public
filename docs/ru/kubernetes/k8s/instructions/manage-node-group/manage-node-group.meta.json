@@ -1,9 +1,6 @@
 {
     "title": "Управление группой worker-узлов",
-    "pageDescription": "В этом разделе приведены операции, с помощью которых можно управлять группами worker-узлов Kubernetes. Каждая операция сопровождается пошаговой инструкцией.",
-    "shortDescription": "Как управлять группами worker-узлов Kubernetes с помощью личного кабинета или с помощью Terraform",
-    "metaTitle": "Управление группой worker-узлов",
-    "metaDescription": "",
+        "shortDescription": "Как управлять группами worker-узлов Kubernetes с помощью личного кабинета или с помощью Terraform",
     "sectionTitle": "Управление группой worker-узлов",
     "icon": "",
     "weight": 3,

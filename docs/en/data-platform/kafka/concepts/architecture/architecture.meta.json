@@ -1,9 +1,6 @@
 {
     "title": "Service architecture",
-    "pageDescription": "The architecture of the Cloud Kafka service in VK Cloud.",
-    "shortDescription": "How the Cloud Kafka service works at different levels",
-    "metaTitle": "Service architecture",
-    "metaDescription": "VK Cloud: Cloud Kafka service architecture at the message reading/writing level and at the service management level",
+        "shortDescription": "How the Cloud Kafka service works at different levels",
     "sectionTitle": "Service architecture",
     "icon": "",
     "weight": 2,

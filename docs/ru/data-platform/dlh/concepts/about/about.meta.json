@@ -1,9 +1,6 @@
 {
   "title": "О сервисе",
-  "pageDescription": "Назначение, приемущества и ограничения применения архитектуры Data Lakehouse в VK Cloud.",
-  "shortDescription": "Принципы функционирования и устройство сервиса Data Lakehouse",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Назначение, приемущества и ограничения применения архитектуры Data Lakehouse",
+    "shortDescription": "Принципы функционирования и устройство сервиса Data Lakehouse",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

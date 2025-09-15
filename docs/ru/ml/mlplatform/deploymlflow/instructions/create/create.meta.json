@@ -1,9 +1,6 @@
 {
     "title": "Создание инстанса MLflow Deploy",
-    "pageDescription": "Как создать новый инстанс MLflow Deploy.",
-    "shortDescription": "Как создать новый инстанс MLflow Deploy",
-    "metaTitle": "Создание инстанса MLflow Deploy",
-    "metaDescription": "Как создать новый инстанс MLflow Deploy",
+        "shortDescription": "Как создать новый инстанс MLflow Deploy",
     "sectionTitle": "Создание инстанса MLflow Deploy",
     "icon": "",
     "weight": 0,

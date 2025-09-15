@@ -1,9 +1,6 @@
 {
   "title": "Cloud ML Platform",
-  "pageDescription": "This section describes how to work with the Cloud ML Platform service, create and work with JupyterHub instances.",
-  "shortDescription": "Platform for the full cycle of ML development and collaboration of Data teams",
-  "metaTitle": "Cloud ML Platform",
-  "metaDescription": "Cloud ML Platform is a service for creating and managing JupyterHub instances",
+    "shortDescription": "Platform for the full cycle of ML development and collaboration of Data teams",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 1,

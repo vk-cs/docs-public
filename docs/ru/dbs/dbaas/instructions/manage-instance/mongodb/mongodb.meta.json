@@ -1,9 +1,6 @@
 {
     "title": "MongoDB",
-    "pageDescription": "Управление инстансами MongoDB.",
-    "shortDescription": "",
-    "metaTitle": "MongoDB",
-    "metaDescription": "Базы данных VK Cloud: управление инстансами MongoDB.",
+        "shortDescription": "",
     "sectionTitle": "MongoDB",
     "icon": "",
     "weight": 2,

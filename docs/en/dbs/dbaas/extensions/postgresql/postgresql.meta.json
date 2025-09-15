@@ -1,9 +1,6 @@
 {
     "title": "PostgreSQL extensions",
-    "pageDescription": "The list of available PostgreSQL extensions and their parameters.",
-    "shortDescription": "The list of available PostgreSQL extensions and their parameters",
-    "metaTitle": "PostgreSQL extensions",
-    "metaDescription": "Cloud Databases: the list of available PostgreSQL extensions and their parameters.",
+        "shortDescription": "The list of available PostgreSQL extensions and their parameters",
     "sectionTitle": "PostgreSQL extensions",
     "icon": "",
     "weight": 1,

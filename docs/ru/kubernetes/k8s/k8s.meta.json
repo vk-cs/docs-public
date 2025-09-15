@@ -1,9 +1,6 @@
 {
   "title": "Cloud Containers",
-  "pageDescription": "Kubernetes как облачный сервис. Сервис Cloud Containers имеет сертификацию CNCF и совместим со стандартным Kubernetes API. Благодаря автоматическому масштабированию (autoscaling), приложения на Cloud Containers моментально получают дополнительные мощности в момент пиковых нагрузки и снижают потребление при ее падении. Автомасштабирование позволяет экономить до 60% на вычислениях.",
-  "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Kubernetes",
-  "metaTitle": "Cloud Containers",
-  "metaDescription": "",
+    "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Kubernetes",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 4,

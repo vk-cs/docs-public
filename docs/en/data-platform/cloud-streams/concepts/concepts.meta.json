@@ -1,9 +1,6 @@
 {
   "title": "Concepts",
-  "pageDescription": "Description of the main concepts when working with Cloud Streams.",
-  "shortDescription": "Service architecture and licenses",
-  "metaTitle": "Concepts",
-  "metaDescription": "Concepts",
+    "shortDescription": "Service architecture and licenses",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

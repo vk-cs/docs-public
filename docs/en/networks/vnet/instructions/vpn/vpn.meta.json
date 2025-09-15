@@ -1,9 +1,6 @@
 {
     "title": "VPN tunnels",
-    "pageDescription": "Manage VPN tunnels in a virtual network service.",
-    "shortDescription": "Adding, deleting, editing VPN tunnels and other operations",
-    "metaTitle": "VPN tunnels",
-    "metaDescription": "",
+        "shortDescription": "Adding, deleting, editing VPN tunnels and other operations",
     "sectionTitle": "VPN tunnels",
     "icon": "",
     "weight": 6,

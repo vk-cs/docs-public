@@ -1,9 +1,6 @@
 {
     "title": "Создание кластера Kubernetes",
-    "pageDescription": "Пример создания кластера Kubernetes с использованием Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Создание кластера Kubernetes",
-    "metaDescription": "Пример создания кластера Kubernetes с использованием Terraform",
+        "shortDescription": "",
     "sectionTitle": "Создание кластера Kubernetes",
     "icon": "",
     "weight": 1,

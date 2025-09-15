@@ -1,9 +1,6 @@
 {
     "title": "Installing LAMP on Linux",
-    "pageDescription": "Installing the LAMP stack on Ubuntu 22.04 and MySQL 8.0 in VK Cloud.",
-    "shortDescription": "How to install and configure the LAMP stack on Ubuntu 22.04",
-    "metaTitle": "Installing LAMP on Linux",
-    "metaDescription": "VK Cloud: How to install and configure the LAMP stack on Ubuntu 22.04",
+        "shortDescription": "How to install and configure the LAMP stack on Ubuntu 22.04",
     "sectionTitle": "Installing LAMP on Linux",
     "icon": "",
     "weight": 5,

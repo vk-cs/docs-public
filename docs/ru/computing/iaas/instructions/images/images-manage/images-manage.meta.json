@@ -1,10 +1,7 @@
 {
     "title": "Управление образами",
     "sectionTitle": "Управление образами",
-    "metaTitle": "Управление образами",
-    "pageDescription": "Создание, импорт и экспорт образов.",
-    "shortDescription": "Создание, импорт и экспорт образов",
-    "metaDescription": "Управление образами",
+        "shortDescription": "Создание, импорт и экспорт образов",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

@@ -1,9 +1,6 @@
 {
     "title": "Installing Gatekeeper",
-    "pageDescription": "How to install a Gatekeeper controller in the Kubernetes cluster.",
-    "shortDescription": "How to install a Gatekeeper controller",
-    "metaTitle": "Installing Gatekeeper",
-    "metaDescription": "",
+        "shortDescription": "How to install a Gatekeeper controller",
     "sectionTitle": "Installing Gatekeeper",
     "icon": "",
     "weight": 2,

@@ -1,9 +1,6 @@
 {
     "title": "Deleting account",
-    "pageDescription": "Description of the process of deleting a VK Cloud user account.",
-    "shortDescription": "Deleting a user account",
-    "metaTitle": "Deleting account",
-    "metaDescription": "Deleting a VK Cloud user account.",
+        "shortDescription": "Deleting a user account",
     "sectionTitle": "Deleting account",
     "icon": "",
     "weight": 6,

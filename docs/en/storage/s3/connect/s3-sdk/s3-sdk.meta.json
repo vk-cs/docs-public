@@ -1,9 +1,6 @@
 {
     "title": "SDK",
-    "pageDescription": "Connecting to S3-compatible Object Storage using the SDK.",
-    "shortDescription": "",
-    "metaTitle": "SDK",
-    "metaDescription": "Connecting to S3-compatible Object Storage using the SDK",
+        "shortDescription": "",
     "sectionTitle": "SDK",
     "icon": "",
     "weight": 3,

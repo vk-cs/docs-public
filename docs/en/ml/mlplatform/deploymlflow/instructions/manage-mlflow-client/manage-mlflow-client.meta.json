@@ -1,9 +1,6 @@
 {
     "title": "Managing instances with MLflow Client",
-    "pageDescription": "How to manage ML-model deploy via MLflow Client.",
-    "shortDescription": "",
-    "metaTitle": "Managing instances with MLflow Client",
-    "metaDescription": "Managing instances with MLflow Client",
+        "shortDescription": "",
     "sectionTitle": "Managing instances with MLflow Client",
     "icon": "",
     "weight": 1,

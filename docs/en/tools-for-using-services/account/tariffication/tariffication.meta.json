@@ -1,9 +1,6 @@
 {
     "title": "Tariffication",
-    "pageDescription": "Features of VK Cloud management console billing.",
-    "shortDescription": "VK Cloud management console billing features",
-    "metaTitle": "Tariffication",
-    "metaDescription": "Features of VK Cloud management console billing.",
+        "shortDescription": "VK Cloud management console billing features",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 4,

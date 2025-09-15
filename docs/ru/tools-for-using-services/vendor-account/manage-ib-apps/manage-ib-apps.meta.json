@@ -1,9 +1,6 @@
 {
   "title": "Управление image-based приложениями",
-  "pageDescription": "Руководство по добавлению image-based приложений в Marketplace, их обновлению, архивированию и интеграции с сервисом Cloud Monitoring",
-  "shortDescription": "Добавление, обновление и архивирование image-based приложений в Marketplace, интеграция с сервисом Cloud Monitoring",
-  "metaTitle": "Управление image-based приложениями",
-  "metaDescription": "Руководство по добавлению image-based приложений в Marketplace, их обновлению, архивированию и интеграции с сервисом Cloud Monitoring",
+    "shortDescription": "Добавление, обновление и архивирование image-based приложений в Marketplace, интеграция с сервисом Cloud Monitoring",
   "sectionTitle": "Управление image-based приложениями",
   "weight": 3,
   "hidden": true,

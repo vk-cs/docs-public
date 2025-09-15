@@ -1,9 +1,6 @@
 {
     "title": "API keys",
-    "pageDescription": "Description of the process for generating access keys for the user.",
-    "shortDescription": "Generate access keys for user",
-    "metaTitle": "API keys",
-    "metaDescription": "Generate access keys for user",
+        "shortDescription": "Generate access keys for user",
     "sectionTitle": "API Keys",
     "icon": "",
     "weight": 0,

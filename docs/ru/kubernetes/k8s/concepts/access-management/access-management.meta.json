@@ -1,9 +1,6 @@
 {
     "title": "Управление доступом",
-    "pageDescription": "Как управлять доступом к кластеру Kubernetes, используя роли пользователей в личном кабинете VK Cloud.",
-    "shortDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes",
-    "metaTitle": "Управление доступом",
-    "metaDescription": "",
+        "shortDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes",
     "sectionTitle": "Управление доступом",
     "icon": "",
     "weight": 10,

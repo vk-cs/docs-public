@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Подробное описание принципов функционирования и устройства сервиса Airflow в VK Cloud.",
-  "shortDescription": "Как устроен сервис Airflow в VK Cloud: функциональные особенности и внутренняя архитектура",
-  "metaTitle": "Концепции",
-  "metaDescription": "Как устроен сервис Airflow в VK Cloud: функциональные особенности и внутренняя архитектура",
+    "shortDescription": "Как устроен сервис Airflow в VK Cloud: функциональные особенности и внутренняя архитектура",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

@@ -1,9 +1,6 @@
 {
   "title": "Cloud Streams",
-  "pageDescription": "",
-  "shortDescription": "Cloud Streams clusters for working with large datasets",
-  "metaTitle": "Cloud Streams",
-  "metaDescription": "Cloud Streams",
+    "shortDescription": "Cloud Streams clusters for working with large datasets",
   "sectionTitle": "Cloud Streams",
   "icon": "",
   "weight": 0,

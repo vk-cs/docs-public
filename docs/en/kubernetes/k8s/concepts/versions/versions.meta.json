@@ -1,9 +1,6 @@
 {
   "title": "About Kubernetes versions and components",
-  "pageDescription": "It contains information about the available versions of Kubernetes and components that can be deployed in VK Cloud. The version support policy is also provided.",
-  "shortDescription": "Support policy for available Kubernetes versions in VK Cloud clusters, available component versions, version change history",
-  "metaTitle": "About Kubernetes versions and components",
-  "metaDescription": "Kubernetes,K8S,version,components,history,policy,support",
+    "shortDescription": "Support policy for available Kubernetes versions in VK Cloud clusters, available component versions, version change history",
   "sectionTitle": "About Kubernetes versions and components",
   "icon": "",
   "weight": 9,

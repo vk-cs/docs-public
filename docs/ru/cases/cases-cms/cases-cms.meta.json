@@ -1,9 +1,6 @@
 {
   "title": "Установка CMS на Linux",
-  "pageDescription": "Установка Joomla на Almalinux в VK Cloud, установка OpenCart на Ubuntu в VK Cloud, установка WordPress на AlmaLinux в VK Cloud, установка 1С-Битрикс на Ubuntu в VK Cloud.",
-  "shortDescription": "Как установить и настроить различные CMS на операционные системы семейства Linux",
-  "metaTitle": "Установка CMS на Linux",
-  "metaDescription": "Сценарии использования: как установить Joomla, OpenCart, WordPress, 1С-Битрикс на базе ресурсов VK Cloud.",
+    "shortDescription": "Как установить и настроить различные CMS на операционные системы семейства Linux",
   "sectionTitle": "Установка CMS на Linux",
   "icon": "",
   "weight": 2,

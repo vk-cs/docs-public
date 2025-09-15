@@ -1,9 +1,6 @@
 {
     "title": "Connecting to MLflow",
-    "pageDescription": "Description of the process for connecting to an MLflow instance.",
-    "shortDescription": "How to connect to an MLflow instance",
-    "metaTitle": "Connecting to MLflow",
-    "metaDescription": "MLflow connection",
+        "shortDescription": "How to connect to an MLflow instance",
     "sectionTitle": "Connection to MLflow",
     "icon": "",
     "weight": 2,

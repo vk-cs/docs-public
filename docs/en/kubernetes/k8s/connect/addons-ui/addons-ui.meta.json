@@ -1,9 +1,6 @@
 {
     "title": "Connecting to add-on web interfaces",
-    "pageDescription": "If an add-on is installed in the Kubernetes cluster that has a web interface, then you can connect to it using the procedure described here.",
-    "shortDescription": "",
-    "metaTitle": "Connecting to add-on web interfaces",
-    "metaDescription": "VK Cloud Containers: connecting to add-on web interfaces",
+        "shortDescription": "",
     "sectionTitle": "Connecting to add-on web interfaces",
     "icon": "",
     "weight": 6,

@@ -1,10 +1,7 @@
 {
     "title": "Создание ВМ",
     "sectionTitle": "Создание ВМ",
-    "metaTitle": "Создание ВМ",
-    "pageDescription": "Создание ВМ",
-    "shortDescription": "Как создать и настроить ВМ",
-    "metaDescription": "Создание виртуальной машины на базе ОС Linux или Windows",
+        "shortDescription": "Как создать и настроить ВМ",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

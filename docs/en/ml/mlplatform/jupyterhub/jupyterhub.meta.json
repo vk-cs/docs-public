@@ -1,9 +1,6 @@
 {
   "title": "Jupyter Hub",
-  "pageDescription": "This section describes how to work with the JupyterHub service, create and work with JupyterHub instances.",
-  "shortDescription": "Platform for full cycle ML development and data team collaboration",
-  "metaTitle": "JupyterHub",
-  "metaDescription": "",
+    "shortDescription": "Platform for full cycle ML development and data team collaboration",
   "sectionTitle": "Jupyter Hub",
   "icon": "",
   "weight": 2,

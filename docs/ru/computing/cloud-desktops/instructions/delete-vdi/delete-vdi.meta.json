@@ -1,9 +1,6 @@
 {
     "title": "Удаление инфраструктуры сервиса",
-    "pageDescription": "Удаление инфраструктуры и настроек подключения сервиса Cloud Desktop.",
-    "shortDescription": "Безвозвратное удаление основной инфраструктуры и настроек Cloud Desktop",
-    "metaTitle": "Удаление инфраструктуры сервиса",
-    "metaDescription": "VK Cloud Desktop: удаление инфраструктуры VDI",
+        "shortDescription": "Безвозвратное удаление основной инфраструктуры и настроек Cloud Desktop",
     "sectionTitle": "Удаление инфраструктуры сервиса",
     "icon": "",
     "weight": 4,

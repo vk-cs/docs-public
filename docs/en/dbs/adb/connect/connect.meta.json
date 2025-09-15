@@ -1,9 +1,6 @@
 {
   "title": "Connect to ADB",
-  "pageDescription": "Description of ways to connect to Arenadata Databases.",
-  "shortDescription": "Description of ways to connect to Arenadata Databases",
-  "metaTitle": "Connect to ADB",
-  "metaDescription": "Description of ways to connect to Arenadata Databases.",
+    "shortDescription": "Description of ways to connect to Arenadata Databases",
   "sectionTitle": "Connect to ADB",
   "icon": "",
   "weight": 3,

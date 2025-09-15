@@ -1,9 +1,6 @@
 {
   "title": "События компонентов Neutron и Sprut",
-  "pageDescription": "События, которые сервис виртуальных сетей передает в Cloud Audit.",
-  "shortDescription": "События, которые сервис виртуальных сетей передает в Cloud Audit",
-  "metaTitle": "События компонентов Neutron и Sprut",
-  "metaDescription": "События, которые сервис виртуальных сетей передает в Cloud Audit",
+    "shortDescription": "События, которые сервис виртуальных сетей передает в Cloud Audit",
   "sectionTitle": "События компонентов Neutron и Sprut",
   "icon": "",
   "weight": 3,

@@ -1,9 +1,6 @@
 {
     "title": "Cloud Big Data",
-    "pageDescription": "Работа с кластерами больших данных с помощью API. Сервис Cloud Big Data поддерживает работу с кластерами через REST API.",
-    "shortDescription": "Управление кластерами с помощью API сервиса Cloud Big Data",
-    "metaTitle": "Cloud Big Data",
-    "metaDescription": "VK Cloud: управление кластерами с помощью API сервиса Cloud Big Data",
+        "shortDescription": "Управление кластерами с помощью API сервиса Cloud Big Data",
     "sectionTitle": "Cloud Big Data",
     "isBeta": true,
     "hidden": true,

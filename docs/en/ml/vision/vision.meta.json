@@ -1,9 +1,6 @@
 {
   "title": "Vision",
-  "pageDescription": "Vision is a machine learning based face and object recognition technology. Using computer vision, you can develop a system for recognizing faces, license plates and any other objects and images, organize image moderation, analyze photo and video recordings.",
-  "shortDescription": "Machine learning based face and object recognition technology",
-  "metaTitle": "Vision",
-  "metaDescription": "Vision is a machine learning based face and object recognition technology. Using computer vision, you can develop a system for recognizing faces, license p",
+    "shortDescription": "Machine learning based face and object recognition technology",
   "sectionTitle": "Vision",
   "icon": "",
   "weight": 4,

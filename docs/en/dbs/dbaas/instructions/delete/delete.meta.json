@@ -1,9 +1,6 @@
 {
     "title": "Deleting a DB instance",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Deleting a DB instance",
-    "metaDescription": "Для удаления инстанса достаточно в контекстном меню выбрать пункт",
+        "shortDescription": "",
     "sectionTitle": "Deleting a DB instance",
     "icon": "",
     "uuid": "393fd594-cb20-466a-9379-5f5aeb395fae"

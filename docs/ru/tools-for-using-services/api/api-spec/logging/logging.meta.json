@@ -1,9 +1,6 @@
 {
     "title": "Cloud Logging",
-    "pageDescription": "",
-    "shortDescription": "Просмотр логов с помощью API сервиса Cloud Logging",
-    "metaTitle": "Cloud Logging",
-    "metaDescription": "",
+        "shortDescription": "Просмотр логов с помощью API сервиса Cloud Logging",
     "sectionTitle": "Cloud Logging",
     "icon": "",
     "weight": 8,

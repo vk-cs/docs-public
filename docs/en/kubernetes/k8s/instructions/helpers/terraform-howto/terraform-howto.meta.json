@@ -1,9 +1,6 @@
 {
     "title": "Using Terraform",
-    "pageDescription": "How to use Terraform when performing basic operations.",
-    "shortDescription": "How to use Terraform when performing basic operations",
-    "metaTitle": "Using Terraform",
-    "metaDescription": "",
+        "shortDescription": "How to use Terraform when performing basic operations",
     "sectionTitle": "Using Terraform",
     "icon": "",
     "weight": 1,

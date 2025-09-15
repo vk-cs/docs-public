@@ -1,9 +1,6 @@
 {
   "title": "Configuring and installing add-ons",
-  "pageDescription": "It describes the configuration and installation of add-ons, including editing the add-on code.",
-  "shortDescription": "Setup and installation, including editing the add-on code",
-  "metaTitle": "Configuring and installing add-ons",
-  "metaDescription": "Configuring and installing add-ons, including editing the add-on code.",
+    "shortDescription": "Setup and installation, including editing the add-on code",
   "sectionTitle": "Configuring and installing add-ons",
   "icon": "",
   "weight": 2,

@@ -1,9 +1,6 @@
 {
   "title": "Concepts",
-  "pageDescription": "Detailed description of the principles of functioning and structure of the Cloud Databases service.",
-  "shortDescription": "How the Cloud Databases service works",
-  "metaTitle": "Concepts",
-  "metaDescription": "Cloud Databases: a detailed description of the principles of operation and the device of the service.",
+    "shortDescription": "How the Cloud Databases service works",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

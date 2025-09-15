@@ -1,9 +1,6 @@
 {
     "title": "Работа с ConfigMaps",
-    "pageDescription": "Список методов библиотеки Cloud ML Platform для работы с ConfigMaps.",
-    "shortDescription": "",
-    "metaTitle": "Работа с ConfigMaps",
-    "metaDescription": "Список методов библиотеки Cloud ML Platform для работы с ConfigMaps.",
+        "shortDescription": "",
     "sectionTitle": "Работа с ConfigMaps",
     "icon": "",
     "weight": 5,

@@ -1,9 +1,6 @@
 {
   "title": "API specification",
-  "pageDescription": "Public API specifications for VK Cloud.",
-  "shortDescription": "Public API specification for VK Cloud Services",
-  "metaTitle": "API specification",
-  "metaDescription": "",
+    "shortDescription": "Public API specification for VK Cloud Services",
   "sectionTitle": "API specification",
   "weight": 2,
   "uuid": "cf8c3131-91e3-469d-b04e-4f0107510de4"

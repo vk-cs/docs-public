@@ -1,9 +1,6 @@
 {
     "title": "Updating the PostgreSQL version",
-    "pageDescription": "Updating the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations.",
-    "shortDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations",
-    "metaTitle": "Updating the PostgreSQL version",
-    "metaDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations.",
+        "shortDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations",
     "sectionTitle": "Updating the PostgreSQL version",
     "icon": "",
     "isBeta": true,

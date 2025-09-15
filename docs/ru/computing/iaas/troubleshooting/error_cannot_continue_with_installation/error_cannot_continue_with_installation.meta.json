@@ -1,9 +1,6 @@
 {
   "title": "Ошибка Cannot continue with installation",
-  "pageDescription": "При создании ВМ появляется сообщение Cannot continue with installation, no valid storage devices detected.",
-  "shortDescription": "При создании ВМ появляется сообщение Cannot continue with installation, no valid storage devices detected",
-  "metaTitle": "Ошибка Cannot continue with installation",
-  "metaDescription": "При создании ВМ появляется сообщение Cannot continue with installation, no valid storage devices detected",
+    "shortDescription": "При создании ВМ появляется сообщение Cannot continue with installation, no valid storage devices detected",
   "sectionTitle": "Ошибка Cannot continue with installation",
   "icon": "",
   "weight": 24,

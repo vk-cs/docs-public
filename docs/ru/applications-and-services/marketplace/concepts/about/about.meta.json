@@ -1,9 +1,6 @@
 {
     "title": "О сервисе",
-    "pageDescription": "Описание возможностей сервиса Marketplace в VK Cloud.",
-    "shortDescription": "Возможности магазина приложений, типы сервисов и их ключевые различия",
-    "metaTitle": "О сервисе",
-    "metaDescription": "Описание возможностей сервиса Marketplace в VK Cloud.",
+        "shortDescription": "Возможности магазина приложений, типы сервисов и их ключевые различия",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

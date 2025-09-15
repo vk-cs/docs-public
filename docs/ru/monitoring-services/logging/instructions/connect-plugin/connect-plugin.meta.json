@@ -1,9 +1,6 @@
 {
     "title": "Установка плагина",
-    "pageDescription": "Как установить и настроить плагин vkcloudlogs-fluent-bit-plugin для отправки логов в VK Cloud.",
-    "shortDescription": "Как установить и настроить плагин vkcloudlogs-fluent-bit-plugin для отправки логов",
-    "metaTitle": "Установка плагина",
-    "metaDescription": "Как установить и настроить плагин vkcloudlogs-fluent-bit-plugin для отправки логов в VK Cloud.",
+        "shortDescription": "Как установить и настроить плагин vkcloudlogs-fluent-bit-plugin для отправки логов",
     "sectionTitle": "Установка плагина",
     "icon": "",
     "weight": 2,

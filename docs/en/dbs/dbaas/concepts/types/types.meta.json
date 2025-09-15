@@ -1,9 +1,6 @@
 {
   "title": "DBMS types",
-  "pageDescription": "DBMS types in the Cloud Databases service. A list of DBMS that can be deployed in VK Cloud.",
-  "shortDescription": "Supported DBMS types that can be used in the service",
-  "metaTitle": "DBMS types",
-  "metaDescription": "Cloud Databases: supported DBMS types in the service",
+    "shortDescription": "Supported DBMS types that can be used in the service",
   "sectionTitle": "DBMS types",
   "icon": "",
   "weight": 1,

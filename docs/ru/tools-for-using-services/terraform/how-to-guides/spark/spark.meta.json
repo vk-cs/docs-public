@@ -1,9 +1,6 @@
 {
   "title": "Cloud Spark",
-  "pageDescription": "Работа с сервисом Cloud Spark с использованием Terraform.",
-  "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Spark",
-  "metaTitle": "Cloud Spark",
-  "metaDescription": "Работа с сервисом Cloud Spark с использованием Terraform",
+    "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Spark",
   "sectionTitle": "Cloud Spark",
   "icon": "",
   "weight": 80,

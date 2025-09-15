@@ -1,9 +1,6 @@
 {
     "title": "OpenStack CLI",
-    "pageDescription": "Использование OpenStack CLI для управления ресурсами на платформе VK Cloud.",
-    "shortDescription": "Установка клиента OpenStack для управления ресурсами на платформе VK Cloud",
-    "metaTitle": "OpenStack CLI",
-    "metaDescription": "Использование OpenStack CLI для управления ресурсами на платформе VK Cloud.",
+        "shortDescription": "Установка клиента OpenStack для управления ресурсами на платформе VK Cloud",
     "sectionTitle": "OpenStack CLI",
     "weight": 1,
     "uuid": "c70f3615-8330-4f68-bba1-db3582b00d1d",

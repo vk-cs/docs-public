@@ -1,9 +1,6 @@
 {
   "title": "Changing DNS server addresses in cluster network",
-  "pageDescription": "How to change the IP addresses of DNS servers that are used to resolve domain names in a cluster network.",
-  "shortDescription": "How to change the IP addresses of DNS servers that are used to resolve domain names in a cluster network",
-  "metaTitle": "Changing DNS server addresses in cluster network",
-  "metaDescription": "How to change the IP addresses of DNS servers that are used to resolve domain names in a cluster network.",
+    "shortDescription": "How to change the IP addresses of DNS servers that are used to resolve domain names in a cluster network",
   "sectionTitle": "Changing DNS server addresses in cluster network",
   "icon": "",
   "weight": 4,

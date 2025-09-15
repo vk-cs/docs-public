@@ -1,9 +1,6 @@
 {
     "title": "Fluent Bit",
-    "pageDescription": "Здесь описана настройка и установка аддона Fluent Bit.",
-    "shortDescription": "",
-    "metaTitle": "Fluent Bit",
-    "metaDescription": "Здесь описана настройка и установка аддона Fluent Bit.",
+        "shortDescription": "",
     "sectionTitle": "Fluent Bit",
     "icon": "",
     "weight": 4,

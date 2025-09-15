@@ -1,9 +1,6 @@
 {
   "title": "Компоненты",
-  "pageDescription": "Назначение и функции каждого копонента Data Lakehouse в VK Cloud.",
-  "shortDescription": "Назначение и функции каждого копонента Data Lakehouse",
-  "metaTitle": "Компоненты",
-  "metaDescription": "Назначение и функции каждого копонента Data Lakehouse",
+    "shortDescription": "Назначение и функции каждого копонента Data Lakehouse",
   "sectionTitle": "Компоненты",
   "icon": "",
   "weight": 2,

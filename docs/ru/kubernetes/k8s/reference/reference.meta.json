@@ -1,9 +1,6 @@
 {
   "title": "Справочник Kubernetes",
-  "pageDescription": "Справочник, описывающий основные понятия и объекты Kubernetes. Более подробную информацию можно найти в официальной документации Kubernetes.",
-  "shortDescription": "Основные понятия и объекты Kubernetes, примеры взаимодействия с ними",
-  "metaTitle": "Справочник Kubernetes",
-  "metaDescription": "",
+    "shortDescription": "Основные понятия и объекты Kubernetes, примеры взаимодействия с ними",
   "sectionTitle": "Справочник Kubernetes",
   "icon": "",
   "weight": 8,

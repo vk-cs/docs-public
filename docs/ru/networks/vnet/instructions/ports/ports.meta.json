@@ -1,9 +1,6 @@
 {
     "title": "Порты",
-    "pageDescription": "Управление портами OpenStack в сервисе виртуальных сетей.",
-    "shortDescription": "Базовые операции с портами OpenStack",
-    "metaTitle": "Порты",
-    "metaDescription": "",
+        "shortDescription": "Базовые операции с портами OpenStack",
     "sectionTitle": "Порты",
     "icon": "",
     "weight": 2,

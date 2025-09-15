@@ -1,9 +1,6 @@
 {
     "title": "Floating IP addresses",
-    "pageDescription": "Managing floating IP addresses in the virtual networks service.",
-    "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
-    "metaTitle": "Floating IP addresses",
-    "metaDescription": "",
+        "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
     "sectionTitle": "Floating IP addresses",
     "icon": "",
     "weight": 1,

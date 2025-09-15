@@ -1,9 +1,6 @@
 {
     "title": "Плагин логирования",
-    "pageDescription": "",
-    "shortDescription": "Параметры авторизации и конфигурации плагина логирования",
-    "metaTitle": "Плагин логирования",
-    "metaDescription": "",
+        "shortDescription": "Параметры авторизации и конфигурации плагина логирования",
     "sectionTitle": "Плагин логирования",
     "icon": "",
     "weight": 2,

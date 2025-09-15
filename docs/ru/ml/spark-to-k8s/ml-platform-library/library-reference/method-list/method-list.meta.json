@@ -1,9 +1,6 @@
 {
     "title": "Список доступных методов",
-    "pageDescription": "Полный список методов библиотеки Cloud ML Platform для Cloud Spark.",
-    "shortDescription": "",
-    "metaTitle": "Список доступных методов",
-    "metaDescription": "Полный список методов библиотеки Cloud ML Platform для Cloud Spark.",
+        "shortDescription": "",
     "sectionTitle": "Список доступных методов",
     "icon": "",
     "weight": 1,

@@ -1,9 +1,6 @@
 {
   "title": "Создание кластера",
-  "pageDescription": "Различные способы создания кластера Kubernetes.",
-  "shortDescription": "Здесь перечислены различные способы создания кластера",
-  "metaTitle": "Создание кластера",
-  "metaDescription": "",
+    "shortDescription": "Здесь перечислены различные способы создания кластера",
   "sectionTitle": "Создание кластера",
   "icon": "",
   "weight": 1,

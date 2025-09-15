@@ -1,9 +1,6 @@
 {
   "title": "MLflow Deploy",
-  "pageDescription": "Этот раздел описывает как создать инстанс MLflow Deploy и управлять им.",
-  "shortDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
-  "metaTitle": "MLflow Deploy",
-  "metaDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
+    "shortDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
   "sectionTitle": "MLflow Deploy",
   "icon": "",
   "weight": 5,

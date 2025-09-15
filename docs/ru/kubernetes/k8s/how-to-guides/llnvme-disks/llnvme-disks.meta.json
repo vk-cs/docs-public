@@ -1,9 +1,6 @@
 {
   "title": "Подключение дисков LL NVMe к worker-узлам",
-  "pageDescription": "Как подключить LL NVMe диск к worker-узлам кластера Kubernetes",
-  "shortDescription": "Как подключить LL NVMe диск к worker-узлам кластера Kubernetes",
-  "metaTitle": "Подключение LL NVMe дисков к worker-узлам",
-  "metaDescription": "",
+    "shortDescription": "Как подключить LL NVMe диск к worker-узлам кластера Kubernetes",
   "sectionTitle": "Подключение LL NVMe дисков к worker-узлам",
   "icon": "",
   "weight": 12,

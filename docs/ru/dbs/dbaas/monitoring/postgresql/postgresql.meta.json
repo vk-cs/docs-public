@@ -1,9 +1,6 @@
 {
     "title": "Мониторинг PostgreSQL",
-    "pageDescription": "Мониторинг состояния инстансов PostgreSQL c предоставлением подробной информации о метриках отдельных хостов (как мастеров, так и реплик).",
-    "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
-    "metaTitle": "Мониторинг PostgreSQL",
-    "metaDescription": "",
+        "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
     "sectionTitle": "Мониторинг PostgreSQL",
     "icon": "",
     "uuid": "27d26b64-a0c0-495b-9d03-bff1068b8b15"

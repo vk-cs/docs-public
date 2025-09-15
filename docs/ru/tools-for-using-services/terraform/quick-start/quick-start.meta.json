@@ -1,9 +1,6 @@
 {
     "title": "Быстрый старт",
-    "pageDescription": "",
-    "shortDescription": "Начало работы с Terraform",
-    "metaTitle": "Быстрый старт",
-    "metaDescription": "",
+        "shortDescription": "Начало работы с Terraform",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 0,

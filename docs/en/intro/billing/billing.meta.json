@@ -1,9 +1,6 @@
 {
   "title": "Billing",
-  "pageDescription": "Principles of billing, management of funds, formation of accounting documents, work of legal entities with VK Cloud.",
-  "shortDescription": "A set of tools for accounting for the use of resources, generating reports, interacting with payment systems and obtaining financial documents",
-  "metaTitle": "Billing",
-  "metaDescription": "VK Cloud: the work of billing in the platform, balance management and the formation of accounting documents",
+    "shortDescription": "A set of tools for accounting for the use of resources, generating reports, interacting with payment systems and obtaining financial documents",
   "sectionTitle": "Billing",
   "icon": "",
   "weight": 3,

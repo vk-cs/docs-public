@@ -1,9 +1,6 @@
 {
     "title": "Tariffication",
-    "pageDescription": "Service tariffication rules and cost calculation.",
-    "shortDescription": "Service tariffication rules and cost calculation",
-    "metaTitle": "Tariffication",
-    "metaDescription": "Service tariffication rules and cost calculation",
+        "shortDescription": "Service tariffication rules and cost calculation",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 4,

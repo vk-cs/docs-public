@@ -1,9 +1,6 @@
 {
   "title": "События компонента Manila",
-  "pageDescription": "События, которые сервис файловых хранилищ передает в Cloud Audit.",
-  "shortDescription": "События, которые сервис файловых хранилищ передает в Cloud Audit",
-  "metaTitle": "События компонента Manila",
-  "metaDescription": "События, которые сервис файловых хранилищ передает в Cloud Audit",
+    "shortDescription": "События, которые сервис файловых хранилищ передает в Cloud Audit",
   "sectionTitle": "События компонента Manila",
   "icon": "",
   "weight": 2,

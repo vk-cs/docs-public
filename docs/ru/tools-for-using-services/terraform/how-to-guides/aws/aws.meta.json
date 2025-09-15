@@ -1,9 +1,6 @@
 {
   "title": "Object Storage",
-  "pageDescription": "Работа с сервисом Object Storage с использованием Terraform.",
-  "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса Object Storage",
-  "metaTitle": "Object Storage",
-  "metaDescription": "",
+    "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса Object Storage",
   "sectionTitle": "Object Storage",
   "icon": "",
   "weight": 40,

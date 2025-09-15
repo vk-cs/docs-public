@@ -1,9 +1,6 @@
 {
   "title": "Virtual networks",
-  "pageDescription": "Working with the Virtual network service using Terraform.",
-  "shortDescription": "How to use Terraform to manage the virtual network service objects",
-  "metaTitle": "Virtual networks",
-  "metaDescription": "",
+    "shortDescription": "How to use Terraform to manage the virtual network service objects",
   "sectionTitle": "Virtual networks",
   "icon": "",
   "weight": 7,

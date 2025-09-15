@@ -1,9 +1,6 @@
 {
   "title": "Step-by-step instructions",
-  "pageDescription": "Standard operations for managing Object Storage and its resources.",
-  "shortDescription": "Creating and managing object storage resources: accounts, buckets, objects",
-  "metaTitle": "Step-by-step instructions",
-  "metaDescription": "Creating an account. Creating and managing a bucket. Adding objects to the bucket. Configuring access to the bucket and bucket objects",
+    "shortDescription": "Creating and managing object storage resources: accounts, buckets, objects",
   "sectionTitle": "Step-by-step instructions",
   "weight": 4,
   "additionalUuids": [

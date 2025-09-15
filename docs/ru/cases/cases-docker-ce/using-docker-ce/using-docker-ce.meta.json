@@ -1,9 +1,6 @@
 {
     "title": "Использование Docker CE",
-    "pageDescription": "Как использовать установленный Docker CE.",
-    "shortDescription": "",
-    "metaTitle": "Использование Docker CE",
-    "metaDescription": "Сценарии использования: как применять Docker CE после его установки",
+        "shortDescription": "",
     "sectionTitle": "Использование Docker CE",
     "icon": "",
     "weight": 2,

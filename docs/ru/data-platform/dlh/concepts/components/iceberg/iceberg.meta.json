@@ -1,9 +1,6 @@
 {
   "title": "Cloud Iceberg Metastore в архитектуре Data Lakehouse",
-  "pageDescription": "Назначение и функции компонента Cloud Iceberg Metastore в архитектуре Data Lakehouse в VK Cloud.",
-  "shortDescription": "Назначение и функции компонента Cloud Iceberg Metastore в архитектуре Data Lakehouse на платформе VK Cloud",
-  "metaTitle": "Cloud Iceberg Metastore в архитектуре Data Lakehouse",
-  "metaDescription": "Назначение и функции компонента Cloud Iceberg Metastore в архитектуре Data Lakehouse",
+    "shortDescription": "Назначение и функции компонента Cloud Iceberg Metastore в архитектуре Data Lakehouse на платформе VK Cloud",
   "sectionTitle": "Cloud Iceberg Metastore",
   "icon": "",
   "weight": 2,

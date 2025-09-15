@@ -1,9 +1,6 @@
 {
     "title": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
-    "metaDescription": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
+        "shortDescription": "",
     "sectionTitle": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
     "icon": "",
     "weight": 2,

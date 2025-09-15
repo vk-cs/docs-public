@@ -1,9 +1,6 @@
 {
     "title": "Обновление кластера",
-    "pageDescription": "Кластер Kubernetes можно обновить двумя способами: с помощью личного кабинета или с помощью Terraform. В этом разделе подробно рассматриваются оба способа.",
-    "shortDescription": "Как обновить кластер Kubernetes с помощью личного кабинета или с помощью Terraform",
-    "metaTitle": "Обновление кластера",
-    "metaDescription": "",
+        "shortDescription": "Как обновить кластер Kubernetes с помощью личного кабинета или с помощью Terraform",
     "sectionTitle": "Обновление кластера",
     "icon": "",
     "weight": 8,

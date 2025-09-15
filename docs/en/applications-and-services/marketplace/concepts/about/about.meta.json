@@ -1,9 +1,6 @@
 {
     "title": "About the service",
-    "pageDescription": "Description of the capabilities of the Marketplace service in VK Cloud.",
-    "shortDescription": "Marketplace features, types of services and their key differences",
-    "metaTitle": "About the service",
-    "metaDescription": "Description of the capabilities of the Marketplace service in VK Cloud.",
+        "shortDescription": "Marketplace features, types of services and their key differences",
     "sectionTitle": "About the service",
     "icon": "",
     "weight": 1,

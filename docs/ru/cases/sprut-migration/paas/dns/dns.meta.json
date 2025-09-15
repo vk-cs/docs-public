@@ -1,9 +1,6 @@
 {
   "title": "Миграция DNS",
-  "pageDescription": "Как обновить A-записи публичного DNS при миграции в SDN Sprut.",
-  "shortDescription": "Обновление A-записи публичного DNS",
-  "metaTitle": "Миграция DNS",
-  "metaDescription": "Как обновить A-записи публичного DNS при миграции в SDN Sprut",
+    "shortDescription": "Обновление A-записи публичного DNS",
   "sectionTitle": "Миграция DNS",
   "icon": "",
   "weight": 3,

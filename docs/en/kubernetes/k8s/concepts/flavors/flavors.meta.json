@@ -1,9 +1,6 @@
 {
     "title": "Available computing resources",
-    "pageDescription": "When creating Cloud Containers cluster nodes, multiple virtual machine configurations with different compute resources can be used. This section lists available configuration templates and recommendations for selecting a cluster template.",
-    "shortDescription": "Available configuration templates and recommendations for selecting a cluster template.",
-    "metaTitle": "Available computing resources",
-    "metaDescription": "",
+        "shortDescription": "Available configuration templates and recommendations for selecting a cluster template.",
     "sectionTitle": "Available computing resources",
     "icon": "",
     "weight": 6,

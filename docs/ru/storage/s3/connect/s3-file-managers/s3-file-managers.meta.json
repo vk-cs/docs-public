@@ -1,9 +1,6 @@
 {
     "title": "Файловые менеджеры",
-    "pageDescription": "",
-    "shortDescription": "Подключение к Object Storage c помощью Cyberduck, WinSCP, Диск-О:, S3FS",
-    "metaTitle": "Файловые менеджеры",
-    "metaDescription": "Подключение к Object Storage c помощью Cyberduck, WinSCP, Диск-О:, S3FS",
+        "shortDescription": "Подключение к Object Storage c помощью Cyberduck, WinSCP, Диск-О:, S3FS",
     "sectionTitle": "Файловые менеджеры",
     "icon": "",
     "weight": 3,

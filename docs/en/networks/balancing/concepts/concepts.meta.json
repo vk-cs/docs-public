@@ -1,9 +1,6 @@
 {
   "title": "Concepts",
-  "pageDescription": "A detailed description of the principles of operation and design of the Load Balancing service.",
-  "shortDescription": "How the Load Balancing service is designed",
-  "metaTitle": "Concepts",
-  "metaDescription": "",
+    "shortDescription": "How the Load Balancing service is designed",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 10,

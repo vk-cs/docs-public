@@ -1,9 +1,6 @@
 {
   "title": "Типы СУБД",
-  "pageDescription": "Типы СУБД в сервисе Cloud Databases. Список СУБД, которые можно развернуть в VK Cloud.",
-  "shortDescription": "Поддерживаемые типы СУБД, которые можно использовать в сервисе",
-  "metaTitle": "Типы СУБД",
-  "metaDescription": "Cloud Databases: поддерживаемые типы СУБД в сервисе",
+    "shortDescription": "Поддерживаемые типы СУБД, которые можно использовать в сервисе",
   "sectionTitle": "Типы СУБД",
   "icon": "",
   "weight": 1,

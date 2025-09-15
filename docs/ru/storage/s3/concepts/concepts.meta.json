@@ -1,9 +1,6 @@
 {
   "title": "Концепции",
-  "pageDescription": "Подробное описание принципов функционирования и устройства объектного хранилища Object Storage.",
-  "shortDescription": "Принципы функционирования и устройство Object Storage",
-  "metaTitle": "Концепции",
-  "metaDescription": "Подробное описание принципов функционирования и устройства объектного хранилища Object Storage",
+    "shortDescription": "Принципы функционирования и устройство Object Storage",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,
