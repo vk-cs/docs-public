@@ -29,6 +29,8 @@ import {
 const satoriSupportedEnvs = ['devint', 'stage', 'production'];
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
+console.debug('TARGET_ENV', TARGET_ENV);
+
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
     dataRelativePath: './.data', // Абсолютный путь до папки с результатами подготовки файлами, если null, то ./preparationData
