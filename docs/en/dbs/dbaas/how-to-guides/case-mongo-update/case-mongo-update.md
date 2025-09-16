@@ -355,7 +355,7 @@ root@mongo1:~# apt-get update
 
 ```
 
-4. Based on [documentation](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), into the configuration file [/etc/mongod.conf](./assets/mongod.conf_4 "download") add the option `enableMajorityReadConcern: false` and replace `net:ssl` with `net:tls` (arbiter example):
+4. Based on [documentation](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), into the configuration file [/etc/mongod.conf](./assets/mongod.conf "download") add the option `enableMajorityReadConcern: false` and replace `net:ssl` with `net:tls` (arbiter example):
 
 ```yaml
 net:

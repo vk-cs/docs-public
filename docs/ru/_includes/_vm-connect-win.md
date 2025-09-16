@@ -24,9 +24,9 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/public
 
 ## {counter(vm_win)}. Подготовьте учетные данные
 
-1. [Узнайте](../../../../concepts/oper-system#default_account) имя созданного по умолчанию пользователя ОС.
-1. [Установите](../../vm-manage#password) пароль для входа в ОС и запишите имя пользователя и пароль.
-1. Если пароль был утрачен, [сбросьте](../../vm-manage#ustanovka_i_izmenenie_parolya) или [восстановите](../../vm-manage#vosstanovlenie_parolya) его.
+1. [Узнайте](/ru/computing/iaas/concepts/oper-system#default_account) имя созданного по умолчанию пользователя ОС.
+1. [Установите](/ru/computing/iaas/instructions/vm/vm-manage#password) пароль для входа в ОС и запишите имя пользователя и пароль.
+1. Если пароль был утрачен, [сбросьте](/ru/computing/iaas/instructions/vm/vm-manage#password) или [восстановите](/ru/computing/iaas/instructions/vm/vm-manage#vosstanovlenie_parolya) его.
 
 ## {counter(vm_win)}. Подключитесь к ВМ
 
