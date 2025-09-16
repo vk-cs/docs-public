@@ -45,8 +45,8 @@ aws s3api put-object-lock-configuration \
 - `<ИМЯ_БАКЕТА>` — имя бакета.
 - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-  - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/object-lock#governance-lock);
-  - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/object-lock#compliance-lock).
+  - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/objects-lock#governance-lock);
+  - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
 
 - `<СРОК_БЛОКИРОВКИ>` — срок блокировки в днях (`Days`) или годах (`Years`) от момента загрузки объекта. Нельзя указать `Days` и `Years` одновременно. Пример: `1825` дней (5 лет).
 - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
