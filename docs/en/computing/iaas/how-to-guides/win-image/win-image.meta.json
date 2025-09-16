@@ -1,6 +1,7 @@
 {
     "title": "Preparing VM image with Windows OS",
-        "shortDescription": "How to upload images of Windows Server 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 to VK Cloud",
+      "shortDescription": "How to upload images of Windows Server 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 to VK Cloud",
+      "metaDescription": "How to upload images of Windows Server 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 to VK Cloud.",
     "sectionTitle": "Preparing VM image with Windows OS",
     "weight": 5,
     "uuid": "877e667d-161d-4b48-a5ea-803a1f84111b"

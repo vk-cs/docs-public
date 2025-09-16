@@ -1,6 +1,7 @@
 {
   "title": "IP addresses",
-    "shortDescription": "Management of floating and anycast IP addresses in the cloud networks service",
+  "shortDescription": "Management of floating and anycast IP addresses in the cloud networks service",
+  "metaDescription": "Management of floating and anycast IP addresses in the cloud networks service",
   "sectionTitle": "IP addresses",
   "icon": "",
   "weight": 4,

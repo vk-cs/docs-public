@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Краткая информация об Arenadata DB as a Service",
+      "shortDescription": "Краткая информация об Arenadata DB as a Service",
+      "metaDescription": "Описание Arenadata DB (ADB) – распределенная СУБД, использующая концепцию MPP (massively parallel processing, массивно-параллельные вычисления) и основанна",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

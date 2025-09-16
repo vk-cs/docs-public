@@ -1,6 +1,7 @@
 {
   "title": "Cloud Spark in k8s",
-    "shortDescription": "Spark clusters in Kubernetes for big data processing",
+  "shortDescription": "Spark clusters in Kubernetes for big data processing",
+  "metaDescription": "Cloud Spark service in VK Cloud: Spark solution for big data processing",
   "sectionTitle": "Cloud Spark in k8s",
   "icon": "",
   "weight": 2,

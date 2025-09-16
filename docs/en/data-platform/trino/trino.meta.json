@@ -1,6 +1,7 @@
 {
   "title": "Cloud Trino",
-    "shortDescription": "SQL engine for processing big data from remote sources",
+  "shortDescription": "SQL engine for processing big data from remote sources",
+  "metaDescription": "Service for creating and managing Trino clusters in VK Cloud infrastructure",
   "sectionTitle": "Cloud Trino",
   "icon": "",
   "weight": 4,

@@ -1,6 +1,7 @@
 {
     "title": "Create",
-        "shortDescription": "Description of creating a DB Instance",
+      "shortDescription": "Description of creating a DB Instance",
+      "metaDescription": "To create a database, go to the",
     "sectionTitle": "Create",
     "icon": "",
     "weight": 0,

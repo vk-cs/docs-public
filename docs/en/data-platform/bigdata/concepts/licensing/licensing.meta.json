@@ -1,6 +1,7 @@
 {
     "title": "Arenadata Hadoop Licenses",
-        "shortDescription": "Presets and available ADH licenses in the project",
+      "shortDescription": "Presets and available ADH licenses in the project",
+      "metaDescription": "VK Cloud: presets and available ADH licenses in the project",
     "sectionTitle": "Arenadata Hadoop Licenses",
     "icon": "",
     "weight": 4,

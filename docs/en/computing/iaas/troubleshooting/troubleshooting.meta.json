@@ -1,6 +1,7 @@
 {
   "title": "Troubleshooting",
-    "shortDescription": "Methods for diagnosing and solving typical problems with virtual machines",
+  "shortDescription": "Methods for diagnosing and solving typical problems with virtual machines",
+  "metaDescription": "",
   "sectionTitle": "Troubleshooting",
   "icon": "",
   "weight": 9,

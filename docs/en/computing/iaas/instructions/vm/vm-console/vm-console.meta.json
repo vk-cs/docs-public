@@ -1,6 +1,7 @@
 {
     "title": "VM diagnostics",
-        "shortDescription": "How to connect to a VM via VNC console and view logs",
+      "shortDescription": "How to connect to a VM via VNC console and view logs",
+      "metaDescription": "OpenStack Console, VNC console, VM message log, VM message logs",
     "sectionTitle": "VM diagnostics",
     "icon": "",
     "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "MLflow",
-    "shortDescription": "MLflow is one of the main open source tools for solving MLOps problems",
+  "shortDescription": "MLflow is one of the main open source tools for solving MLOps problems",
+  "metaDescription": "MLflow is a service for creating and managing MLflow instances",
   "sectionTitle": "MLflow",
   "icon": "",
   "weight": 3,

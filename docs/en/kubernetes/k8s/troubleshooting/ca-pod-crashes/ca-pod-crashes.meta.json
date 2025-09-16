@@ -1,6 +1,7 @@
 {
   "title": "Cluster Autoscaler is unable to authenticate in OpenStack or Kubernetes API",
-    "shortDescription": "What to do if the Cluster Autoscaler pod has the CrashLoopBackOff status, causing it to fail authentication in OpenStack or the Kubernetes API",
+  "shortDescription": "What to do if the Cluster Autoscaler pod has the CrashLoopBackOff status, causing it to fail authentication in OpenStack or the Kubernetes API",
+  "metaDescription": "What to do if the Cluster Autoscaler pod has the CrashLoopBackOff status, causing it to fail authentication in OpenStack or the Kubernetes API",
   "sectionTitle": "Cluster Autoscaler is unable to authenticate in OpenStack or Kubernetes API",
   "icon": "",
   "weight": 4,

@@ -1,6 +1,7 @@
 {
   "title": "How-to guides",
-    "shortDescription": "The most popular tasks that Spark helps to solve in Kubernetes",
+  "shortDescription": "The most popular tasks that Spark helps to solve in Kubernetes",
+  "metaDescription": "The most popular tasks that Spark helps to solve in Kubernetes",
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 3,

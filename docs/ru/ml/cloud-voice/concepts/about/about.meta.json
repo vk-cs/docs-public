@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Для начала использования сервиса перейдите на страницу Cloud Voice: https://cloud.vk.com/cloud-voice/ Cloud Voice — сервис, который позволяет распознавать",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

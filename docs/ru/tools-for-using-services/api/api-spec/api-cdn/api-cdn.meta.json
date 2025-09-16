@@ -1,6 +1,7 @@
 {
     "title": "CDN",
-        "shortDescription": "OpenAPI-спецификация сервиса CDN",
+      "shortDescription": "OpenAPI-спецификация сервиса CDN",
+      "metaDescription": "OpenAPI-спецификация сервиса CDN",
     "sectionTitle": "CDN",
     "icon": "",
     "weight": 12,

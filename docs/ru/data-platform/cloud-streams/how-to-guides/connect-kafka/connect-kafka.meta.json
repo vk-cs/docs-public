@@ -1,6 +1,7 @@
 {
     "title": "Подключение к Kafka",
-        "shortDescription": "Инструкция по подключению к UI кластера NiFi",
+      "shortDescription": "Инструкция по подключению к UI кластера NiFi",
+      "metaDescription": "Подключение к Kafka",
     "sectionTitle": "Подключение к Kafka",
     "icon": "",
     "weight": 0,

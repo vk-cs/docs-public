@@ -1,6 +1,7 @@
 {
     "title": "File share",
-        "shortDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots",
+      "shortDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots",
+      "metaDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
     "sectionTitle": "File share",
     "icon": "",
     "weight": 4,

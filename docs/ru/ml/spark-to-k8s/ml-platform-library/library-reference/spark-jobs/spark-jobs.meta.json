@@ -1,6 +1,7 @@
 {
     "title": "Работа с заданиями Spark",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Список методов библиотеки Cloud ML Platform для работы с заданиями Spark.",
     "sectionTitle": "Работа с заданиями Spark",
     "icon": "",
     "weight": 3,

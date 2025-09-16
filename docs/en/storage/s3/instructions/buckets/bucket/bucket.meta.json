@@ -1,6 +1,7 @@
 {
     "title": "Bucket",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Buckets are containers for objects. A project can have one or more buckets. Access to each bucket can be controlled: specify which users can create and del",
     "sectionTitle": "Bucket",
     "icon": "",
     "weight": 1,

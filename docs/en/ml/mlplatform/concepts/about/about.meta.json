@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Description of ML Platform service and its capabilities",
+      "shortDescription": "Description of ML Platform service and its capabilities",
+      "metaDescription": "Description of ML Platform service and its capabilities",
     "sectionTitle": "About service",
     "icon": "",
     "weight": 1,

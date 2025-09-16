@@ -1,6 +1,7 @@
 {
   "title": "Конфигурация SaaS-приложения",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Конфигурация SaaS-приложения",
   "sectionTitle": "Конфигурация SaaS-приложения",
   "weight": 3,
   "uuid": "8b62e75b-d413-45fd-82ec-b7df9dab2fab"

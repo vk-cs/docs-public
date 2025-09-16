@@ -1,6 +1,7 @@
 {
   "title": "Triggers",
-    "shortDescription": "Instructions for creating and managing triggers in Cloud Alerting",
+  "shortDescription": "Instructions for creating and managing triggers in Cloud Alerting",
+  "metaDescription": "",
   "sectionTitle": "Triggers",
   "icon": "",
   "weight": 0,

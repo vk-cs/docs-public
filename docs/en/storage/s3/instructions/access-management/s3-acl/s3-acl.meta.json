@@ -1,6 +1,7 @@
 {
     "title": "Access Control List",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "general information Access Control List VK Cloud (ACL or Access Control List) allow you to control access to buckets and objects. Each bucket and object has its",
     "sectionTitle": "Access Control List",
     "icon": "",
     "weight": 2,

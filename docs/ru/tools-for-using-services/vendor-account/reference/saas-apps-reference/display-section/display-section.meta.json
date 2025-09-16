@@ -1,6 +1,7 @@
 {
   "title": "Секция display",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Секция display в JSON-файле конфигурации SaaS-приложения",
   "sectionTitle": "Секция display",
   "weight": 3,
   "uuid": "074a12c7-6bd7-4b78-adec-f3054d7f0403"

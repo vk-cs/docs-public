@@ -1,6 +1,7 @@
 {
     "title": "Cluster settings",
-        "shortDescription": "Pre-configured cluster settings",
+      "shortDescription": "Pre-configured cluster settings",
+      "metaDescription": "Pre-configured cluster settings.",
     "sectionTitle": "Cluster settings",
     "icon": "",
     "weight": 2,

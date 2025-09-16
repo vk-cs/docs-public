@@ -1,6 +1,7 @@
 {
     "title": "Refund",
-        "shortDescription": "Methods and conditions for returning funds from the main account of your VK Cloud project",
+      "shortDescription": "Methods and conditions for returning funds from the main account of your VK Cloud project",
+      "metaDescription": "VK Cloud: methods and conditions for returning funds from the main account of your project",
     "sectionTitle": "Refund",
     "icon": "",
     "weight": 4,

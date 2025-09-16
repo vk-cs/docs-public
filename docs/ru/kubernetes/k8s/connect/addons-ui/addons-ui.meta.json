@@ -1,6 +1,7 @@
 {
     "title": "Подключение к веб-интерфейсам аддонов",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Контейнеры VK Cloud: подключение к веб-интерфейсам аддонов",
     "sectionTitle": "Подключение к веб-интерфейсам аддонов",
     "icon": "",
     "weight": 6,

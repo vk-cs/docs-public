@@ -1,6 +1,7 @@
 {
     "title": "Managing cluster",
-        "shortDescription": "How to manage a Kubernetes cluster using a management console or Terraform",
+      "shortDescription": "How to manage a Kubernetes cluster using a management console or Terraform",
+      "metaDescription": "",
     "sectionTitle": "Managing cluster",
     "icon": "",
     "weight": 2,

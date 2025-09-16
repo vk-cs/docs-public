@@ -1,6 +1,7 @@
 {
   "title": "Cloud Containers",
-    "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads.",
+  "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads.",
+  "metaDescription": "",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "relativeSections": [

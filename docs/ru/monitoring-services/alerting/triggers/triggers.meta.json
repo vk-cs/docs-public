@@ -1,6 +1,7 @@
 {
   "title": "Триггеры",
-    "shortDescription": "Инструкции по созданию и управлению триггерами в Cloud Alerting",
+  "shortDescription": "Инструкции по созданию и управлению триггерами в Cloud Alerting",
+  "metaDescription": "",
   "sectionTitle": "Триггеры",
   "icon": "",
   "weight": 0,

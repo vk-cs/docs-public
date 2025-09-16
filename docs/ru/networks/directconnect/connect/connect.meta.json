@@ -1,6 +1,7 @@
 {
     "title": "Подключение к сервису",
-        "shortDescription": "Как подключить сервис Direct Connect",
+      "shortDescription": "Как подключить сервис Direct Connect",
+      "metaDescription": "",
     "sectionTitle": "Подключение к сервису",
     "icon": "",
     "weight": 3,

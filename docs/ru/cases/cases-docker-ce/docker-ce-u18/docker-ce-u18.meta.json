@@ -1,6 +1,7 @@
 {
     "title": "Установка Docker CE на операционную систему Ubuntu",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Docker CE (Community Edition) – это  платформа для быстрой сборки, отладки и развертывания приложений. Docker CE позволяет быстро разворачивать приложения",
     "sectionTitle": "Установка Docker CE на операционную систему Ubuntu",
     "icon": "",
     "weight": 1,

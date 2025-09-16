@@ -1,6 +1,7 @@
 {
   "title": "Практические руководства",
-    "shortDescription": "Примеры использования сервиса MLflow Deploy",
+  "shortDescription": "Примеры использования сервиса MLflow Deploy",
+  "metaDescription": "Примеры использования сервиса MLflow Deploy.",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 3,

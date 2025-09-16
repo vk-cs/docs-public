@@ -1,6 +1,7 @@
 {
   "title": "Cannot delete namespace",
-    "shortDescription": "What to do if a namespace is stuck in the terminating status and cannot be deleted",
+  "shortDescription": "What to do if a namespace is stuck in the terminating status and cannot be deleted",
+  "metaDescription": "What to do if a namespace is stuck in the terminating status and cannot be deleted",
   "sectionTitle": "Cannot delete namespace",
   "icon": "",
   "weight": 1,

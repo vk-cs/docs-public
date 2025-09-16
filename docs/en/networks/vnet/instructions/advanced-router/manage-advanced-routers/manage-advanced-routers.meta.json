@@ -1,6 +1,7 @@
 {
     "title": "Managing advanced routers",
-        "shortDescription": "Adding, editing, deleting advanced routers and viewing statistics",
+      "shortDescription": "Adding, editing, deleting advanced routers and viewing statistics",
+      "metaDescription": "",
     "sectionTitle": "Managing advanced routers",
     "icon": "",
     "weight": 1,

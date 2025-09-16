@@ -1,6 +1,7 @@
 {
   "title": "Connecting to Spark cluster",
-    "shortDescription": "How to connect to a Spark cluster",
+  "shortDescription": "How to connect to a Spark cluster",
+  "metaDescription": "How to connect to a Spark cluster",
   "sectionTitle": "Connecting to Spark cluster",
   "icon": "",
   "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "General information",
-        "shortDescription": "Instructions for working with Cloud Streams in VK Cloud",
+      "shortDescription": "Instructions for working with Cloud Streams in VK Cloud",
+      "metaDescription": "Connection",
     "sectionTitle": "Connection",
     "icon": "",
     "weight": 0,

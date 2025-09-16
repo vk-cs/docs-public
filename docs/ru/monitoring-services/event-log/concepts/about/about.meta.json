@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Информация о сервисе и его возможностях",
+      "shortDescription": "Информация о сервисе и его возможностях",
+      "metaDescription": "",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

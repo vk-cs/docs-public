@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Advantages of using the Cloud Big Data service for Big Data",
+      "shortDescription": "Advantages of using the Cloud Big Data service for Big Data",
+      "metaDescription": "Arenadata Hadoop Benefits",
     "sectionTitle": "About the service",
     "icon": "",
     "weight": 1,

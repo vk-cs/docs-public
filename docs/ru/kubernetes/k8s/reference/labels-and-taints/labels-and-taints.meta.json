@@ -1,6 +1,7 @@
 {
     "title": "Метки и ограничения",
-        "shortDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes",
+      "shortDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes",
+      "metaDescription": "",
     "sectionTitle": "Метки и ограничения",
     "icon": "",
     "weight": 3,

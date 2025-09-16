@@ -1,6 +1,7 @@
 {
   "title": "CDN",
-    "shortDescription": "CDN is a content delivery network that allows you to organize the transfer of content from your servers to users with minimal time delay",
+  "shortDescription": "CDN is a content delivery network that allows you to organize the transfer of content from your servers to users with minimal time delay",
+  "metaDescription": "CDN is a content delivery network that allows you to organize the transfer of content from your servers to users with minimal time delay.",
   "sectionTitle": "CDN",
   "icon": "",
   "weight": 3,

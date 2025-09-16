@@ -1,6 +1,7 @@
 {
   "title": "Step by step instructions",
-    "shortDescription": "How to perform basic operations in a service",
+  "shortDescription": "How to perform basic operations in a service",
+  "metaDescription": "",
   "sectionTitle": "Step by step instructions",
   "icon": "",
   "weight": 50,

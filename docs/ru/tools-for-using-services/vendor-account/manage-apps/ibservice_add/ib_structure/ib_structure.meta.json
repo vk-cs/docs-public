@@ -1,6 +1,7 @@
 {
   "title": "Структура сервисного пакета",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Структура сервисного пакета",
   "sectionTitle": "Структура сервисного пакета",
   "weight": 3,
   "uuid": "12e3dc5a-1363-4202-83b1-c16a60b06261"

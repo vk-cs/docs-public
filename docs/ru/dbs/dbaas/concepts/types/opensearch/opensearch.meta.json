@@ -1,6 +1,7 @@
 {
     "title": "OpenSearch",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Cloud Databases в VK Cloud: пакет поиска и аналитики с открытым исходным кодом OpenSearch",
     "sectionTitle": "OpenSearch",
     "icon": "",
     "weight": 4,

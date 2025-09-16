@@ -1,6 +1,7 @@
 {
     "title": "Быстрый старт",
-        "shortDescription": "Начало работы с Cloud Desktop",
+      "shortDescription": "Начало работы с Cloud Desktop",
+      "metaDescription": "Начало работы с сервисом Cloud Desktop и знакомство с его основными возможностями.",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 1,

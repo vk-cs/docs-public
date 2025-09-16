@@ -1,6 +1,7 @@
 {
     "title": "Working with persistent volumes",
-        "shortDescription": "How to use various types of persistent volumes in a cluster",
+      "shortDescription": "How to use various types of persistent volumes in a cluster",
+      "metaDescription": "",
     "sectionTitle": "Working with persistent volumes",
     "icon": "",
     "weight": 2,

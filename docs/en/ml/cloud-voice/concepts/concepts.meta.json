@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "How the Cloud Voice service works",
+  "shortDescription": "How the Cloud Voice service works",
+  "metaDescription": "The operating and design description of the Cloud Voice service",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 1,

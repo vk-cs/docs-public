@@ -1,6 +1,7 @@
 {
   "title": "Cloud Servers",
-    "shortDescription": "Rent a cloud server, file and block storage, unlimited support for applications and services",
+  "shortDescription": "Rent a cloud server, file and block storage, unlimited support for applications and services",
+  "metaDescription": "Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud",
   "sectionTitle": "Cloud Servers",
   "icon": "",
   "weight": 1,

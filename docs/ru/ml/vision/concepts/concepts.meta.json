@@ -1,6 +1,7 @@
 {
   "title": "Концепции",
-    "shortDescription": "Как устроен сервис Vision",
+  "shortDescription": "Как устроен сервис Vision",
+  "metaDescription": "Концепции Vision VK Cloud: принципы работы и устройства сервиса",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
   "title": "Tools for working with services",
-    "shortDescription": "IaC-tools for managing VK Cloud platform resources: OpenStack CLI, REST API, Terraform",
+  "shortDescription": "IaC-tools for managing VK Cloud platform resources: OpenStack CLI, REST API, Terraform",
+  "metaDescription": "The main management of platform resources is performed through the VK Account and VK Cloud Management Console. In addition to the web interface, management can be performed using tools: OpenStack CLI, REST API, Terraform.",
   "sectionTitle": "Tools for working with services",
   "icon": "",
   "weight": 11,

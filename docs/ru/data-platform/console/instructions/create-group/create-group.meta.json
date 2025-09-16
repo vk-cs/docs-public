@@ -1,6 +1,7 @@
 {
     "title": "Создание логической группы",
-        "shortDescription": "Как создать группу экземпляров сервисов через Data Platform UI Console",
+      "shortDescription": "Как создать группу экземпляров сервисов через Data Platform UI Console",
+      "metaDescription": "Как создать группу экземпляров сервисов через Data Platform UI Console в проекте VK Cloud",
     "sectionTitle": "Создание логической группы",
     "icon": "",
     "weight": 1,

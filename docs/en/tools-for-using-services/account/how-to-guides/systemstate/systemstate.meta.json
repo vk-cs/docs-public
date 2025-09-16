@@ -1,6 +1,7 @@
 {
     "title": "Checking the system status",
-        "shortDescription": "Getting information about the operation of user resources in real time",
+      "shortDescription": "Getting information about the operation of user resources in real time",
+      "metaDescription": "Getting information about the operation of user resources in real time.",
     "sectionTitle": "Checking the system status",
     "icon": "",
     "weight": 5,

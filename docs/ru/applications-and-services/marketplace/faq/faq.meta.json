@@ -1,6 +1,7 @@
 {
     "title": "Вопросы и ответы",
-        "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Marketplace",
+      "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Marketplace",
+      "metaDescription": "Marketplace VK Cloud: ответы на часто задаваемые вопросы о сервисе",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
     "weight": 6,

@@ -1,6 +1,7 @@
 {
   "title": "Устранение неполадок",
-    "shortDescription": "Способы диагностики и решения типовых проблем с Cloud Containers",
+  "shortDescription": "Способы диагностики и решения типовых проблем с Cloud Containers",
+  "metaDescription": "Способы диагностики и решения типовых проблем с Cloud Containers",
   "sectionTitle": "Устранение неполадок",
   "icon": "",
   "weight": 9,

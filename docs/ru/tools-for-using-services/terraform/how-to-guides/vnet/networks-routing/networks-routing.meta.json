@@ -1,6 +1,7 @@
 {
     "title": "Маршрутизация трафика между сетями",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Как настроить маршрутизацию трафика между сетями с использованием Terraform.",
     "sectionTitle": "Маршрутизация трафика между сетями",
     "icon": "",
     "weight": 4,

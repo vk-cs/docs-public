@@ -1,6 +1,7 @@
 {
   "title": "Тарификация",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Тарификация",
   "sectionTitle": "Тарификация",
   "weight": 2,
   "uuid": "b356c739-624f-45f5-b54f-3a4e279fb88e"

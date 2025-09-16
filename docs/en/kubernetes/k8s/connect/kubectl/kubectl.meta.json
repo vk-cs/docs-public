@@ -1,6 +1,7 @@
 {
     "title": "Connecting to cluster using kubectl",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Connecting to cluster using kubectl",
     "icon": "",
     "weight": 1,

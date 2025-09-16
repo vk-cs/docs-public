@@ -1,6 +1,7 @@
 {
   "title": "Подключение к хранилищу",
-    "shortDescription": "Подключение к Object Storage с использованием AWS CLI, файловых менеджеров, SDK",
+  "shortDescription": "Подключение к Object Storage с использованием AWS CLI, файловых менеджеров, SDK",
+  "metaDescription": "Подключение к Object Storage с использованием AWS CLI, файловых менеджеров, SDK.",
   "sectionTitle": "Подключение к хранилищу",
   "icon": "",
   "weight": 3,

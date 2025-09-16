@@ -1,6 +1,7 @@
 {
     "title": "Организация VPN-туннеля",
-        "shortDescription": "Как настроить VPN-туннель, соединяющий облачную сеть VK Cloud с клиентской сетью",
+      "shortDescription": "Как настроить VPN-туннель, соединяющий облачную сеть VK Cloud с клиентской сетью",
+      "metaDescription": "",
     "sectionTitle": "Организация VPN-туннеля",
     "icon": "",
     "weight": 1,

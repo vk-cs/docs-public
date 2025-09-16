@@ -1,6 +1,7 @@
 {
     "title": "Подключение к кластеру с помощью kubectl",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Подключение к кластеру с помощью kubectl",
     "icon": "",
     "weight": 1,

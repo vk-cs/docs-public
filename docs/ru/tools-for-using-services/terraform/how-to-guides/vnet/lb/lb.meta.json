@@ -1,6 +1,7 @@
 {
     "title": "Создание и настройка балансировщиков нагрузки",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Управление балансировщиками нагрузки",
     "icon": "",
     "weight": 3,

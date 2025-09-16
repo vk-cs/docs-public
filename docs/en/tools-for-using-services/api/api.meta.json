@@ -1,6 +1,7 @@
 {
   "title": "API",
-    "shortDescription": "Managing VK Cloud services via API. Specifics of connection and the description of endpoints",
+  "shortDescription": "Managing VK Cloud services via API. Specifics of connection and the description of endpoints",
+  "metaDescription": "Managing VK Cloud services via API. Specifics of connection and the description of endpoints",
   "sectionTitle": "API",
   "icon": "",
   "weight": 5,

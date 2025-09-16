@@ -1,6 +1,7 @@
 {
   "title": "Using GPU Operator",
-    "shortDescription": "How to create a cluster with a GPU and split the GPU into several pods using MPS and MIG technologies",
+  "shortDescription": "How to create a cluster with a GPU and split the GPU into several pods using MPS and MIG technologies",
+  "metaDescription": "How to create a cluster with a GPU and split the GPU into several pods using MPS and MIG technologies.",
   "sectionTitle": "Using GPU Operator",
   "icon": "",
   "weight": 8,

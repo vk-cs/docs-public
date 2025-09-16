@@ -1,6 +1,7 @@
 {
     "title": "Tariffication",
-        "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+      "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+      "metaDescription": "How the service is charged, cost calculation.",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 6,

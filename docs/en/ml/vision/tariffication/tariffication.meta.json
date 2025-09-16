@@ -1,6 +1,7 @@
 {
     "title": "Tariffication",
-        "shortDescription": "Tariffs and cost",
+      "shortDescription": "Tariffs and cost",
+      "metaDescription": "API Vision (фото) Первые 5000 транзакций и 1000 лиц — бесплатно для тестирования Уровень\nТранзакций в месяц\nЦена за транзакцию Уровень «Стандарт»\n1 — 1 000",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 7,

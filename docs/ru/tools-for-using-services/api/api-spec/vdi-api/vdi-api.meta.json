@@ -1,6 +1,7 @@
 {
     "title": "Cloud Desktop",
-        "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
+      "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
+      "metaDescription": "Справка по Cloud Desktop API",
     "sectionTitle": "Cloud Desktop",
     "icon": "",
     "weight": 15,

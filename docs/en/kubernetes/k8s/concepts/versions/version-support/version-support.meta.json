@@ -1,6 +1,7 @@
 {
     "title": "Kubernetes version support policy",
-        "shortDescription": "Which versions of Kubernetes are supported in VK Cloud clusters and under what policies.",
+      "shortDescription": "Which versions of Kubernetes are supported in VK Cloud clusters and under what policies.",
+      "metaDescription": "Kubernetes,K8S,version,policy,support",
     "sectionTitle": "Kubernetes version support policy",
     "icon": "",
     "weight": 1,

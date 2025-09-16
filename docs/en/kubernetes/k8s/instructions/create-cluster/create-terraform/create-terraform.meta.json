@@ -1,6 +1,7 @@
 {
     "title": "Creating a cluster with Terraform",
-        "shortDescription": "How to create a cluster using Terraform",
+      "shortDescription": "How to create a cluster using Terraform",
+      "metaDescription": "",
     "sectionTitle": "Creating a cluster with Terraform",
     "icon": "",
     "weight": 2,

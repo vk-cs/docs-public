@@ -1,6 +1,7 @@
 {
   "title": "Виртуальные сети",
-    "shortDescription": "Как использовать Terraform для управления объектами сервиса виртуальных сетей",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса виртуальных сетей",
+  "metaDescription": "",
   "sectionTitle": "Виртуальные сети",
   "icon": "",
   "weight": 20,

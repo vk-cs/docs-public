@@ -1,6 +1,7 @@
 {
   "title": "Cloud Direct Connect",
-    "shortDescription": "Выделенное подключение между локальной инфраструктурой и проектом в облаке VK Cloud",
+  "shortDescription": "Выделенное подключение между локальной инфраструктурой и проектом в облаке VK Cloud",
+  "metaDescription": "",
   "sectionTitle": "Cloud Direct Connect",
   "icon": "",
   "weight": 5,

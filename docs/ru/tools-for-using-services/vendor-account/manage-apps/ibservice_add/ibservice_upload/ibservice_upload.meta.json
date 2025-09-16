@@ -1,6 +1,7 @@
 {
   "title": "Загрузка image-based приложения в магазин",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Загрузка image-based приложения в магазин",
   "sectionTitle": "Загрузка image-based приложения в магазин",
   "weight": 6,
   "uuid": "562ef0d4-853d-4e63-8527-439643abbc10"

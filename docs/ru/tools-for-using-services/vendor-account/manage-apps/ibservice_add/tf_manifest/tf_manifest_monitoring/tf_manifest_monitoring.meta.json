@@ -1,6 +1,7 @@
 {
   "title": "Мониторинг",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Мониторинг",
   "sectionTitle": "Мониторинг",
   "weight": 6,
   "uuid": "30dccaac-0446-462f-a24a-56c33ff9d427"

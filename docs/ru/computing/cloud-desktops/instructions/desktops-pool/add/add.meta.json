@@ -1,6 +1,7 @@
 {
     "title": "Создание пула",
-        "shortDescription": "Создание нового пула рабочих столов",
+      "shortDescription": "Создание нового пула рабочих столов",
+      "metaDescription": "Создание нового пула рабочих столов в сервисе Cloud Desktop.",
     "sectionTitle": "Создание пула",
     "icon": "",
     "weight": 1,

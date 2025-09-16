@@ -1,6 +1,7 @@
 {
     "title": "Network in a Linux VM",
-        "shortDescription": "Diagnostics and assistance in troubleshooting typical network problems in Linux virtual machines",
+      "shortDescription": "Diagnostics and assistance in troubleshooting typical network problems in Linux virtual machines",
+      "metaDescription": "Diagnostics and elimination of typical network problems on Linux virtual machines.",
     "sectionTitle": "Network in a Linux VM",
     "icon": "",
     "weight": 1,

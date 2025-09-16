@@ -1,6 +1,7 @@
 {
   "title": "Cloud Backup",
-    "shortDescription": "Резервное копирование виртуальных машин, инстансов баз данных",
+  "shortDescription": "Резервное копирование виртуальных машин, инстансов баз данных",
+  "metaDescription": "Cloud Backup VK Cloud: резервное копирование виртуальных машин, баз данных",
   "sectionTitle": "Cloud Backup",
   "icon": "",
   "relativeSections": [

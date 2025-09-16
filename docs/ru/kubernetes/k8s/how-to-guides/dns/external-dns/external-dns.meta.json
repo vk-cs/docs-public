@@ -1,6 +1,7 @@
 {
     "title": "Установка и использование ExternalDNS",
-        "shortDescription": "Как установить ExternalDNS, интегрированный с VK Cloud DNS, и использовать этот инструмент в кластере",
+      "shortDescription": "Как установить ExternalDNS, интегрированный с VK Cloud DNS, и использовать этот инструмент в кластере",
+      "metaDescription": "Как установить ExternalDNS, интегрированный с VK Cloud DNS, и использовать этот инструмент в кластере.",
     "sectionTitle": "Установка и использование ExternalDNS",
     "icon": "",
     "weight": 1,

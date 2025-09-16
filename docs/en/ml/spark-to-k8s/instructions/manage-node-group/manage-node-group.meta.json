@@ -1,6 +1,7 @@
 {
   "title": "Managing a worker node group",
-    "shortDescription": "How to manage Spark worker node groups using your management console",
+  "shortDescription": "How to manage Spark worker node groups using your management console",
+  "metaDescription": "Spark VK Cloud: Worker Node Group Management",
   "sectionTitle": "Managing a worker node group",
   "icon": "",
   "weight": 3,

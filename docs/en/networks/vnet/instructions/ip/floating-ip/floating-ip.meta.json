@@ -1,6 +1,7 @@
 {
     "title": "Floating IP addresses",
-        "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
+      "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
+      "metaDescription": "",
     "sectionTitle": "Floating IP addresses",
     "icon": "",
     "weight": 1,

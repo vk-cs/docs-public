@@ -1,6 +1,7 @@
 {
   "title": "Практические руководства",
-    "shortDescription": "Установка LAMP, ELK, Docker CE на CentOS, Ubuntu и другие ОС на базе Linux",
+  "shortDescription": "Установка LAMP, ELK, Docker CE на CentOS, Ubuntu и другие ОС на базе Linux",
+  "metaDescription": "VK Cloud предоставляет инструменты и программные комплексы для реализации самых разных задач, стоящих перед системными администраторами: от использования базовы",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 13,

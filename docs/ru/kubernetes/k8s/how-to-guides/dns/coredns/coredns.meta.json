@@ -1,6 +1,7 @@
 {
   "title": "Добавление статических DNS-записей",
-    "shortDescription": "Как добавить домен и IP-адрес в DNS-сервис кластера, используя ресурс СoreDNS",
+  "shortDescription": "Как добавить домен и IP-адрес в DNS-сервис кластера, используя ресурс СoreDNS",
+  "metaDescription": "",
   "sectionTitle": "Добавление статических DNS-записей",
   "icon": "",
   "weight": 3,

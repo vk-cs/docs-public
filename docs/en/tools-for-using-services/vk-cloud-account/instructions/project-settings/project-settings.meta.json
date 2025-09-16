@@ -1,6 +1,7 @@
 {
   "title": "Project management",
-    "shortDescription": "Creating a new and renaming an existing project through the VK Cloud Account interface",
+  "shortDescription": "Creating a new and renaming an existing project through the VK Cloud Account interface",
+  "metaDescription": "Creating a new and renaming an existing project through the VK Cloud Account interface.",
   "sectionTitle": "Project management",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Quick start",
-        "shortDescription": "How to deploy an instance of the service, send a message to the topic and check its receipt",
+      "shortDescription": "How to deploy an instance of the service, send a message to the topic and check its receipt",
+      "metaDescription": "Cloud Kafka: deploy an instance of the service, send a message to the topic and check its receipt",
     "sectionTitle": "Quick start",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Installing Velero",
-        "shortDescription": "How to install Velero utility",
+      "shortDescription": "How to install Velero utility",
+      "metaDescription": "",
     "sectionTitle": "Installing Velero",
     "icon": "",
     "weight": 3,

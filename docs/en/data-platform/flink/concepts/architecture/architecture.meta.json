@@ -1,6 +1,7 @@
 {
   "title": "Service architecture",
-    "shortDescription": "How the Cloud Flink service works",
+  "shortDescription": "How the Cloud Flink service works",
+  "metaDescription": "Architecture of Cloud Flink service in VK Cloud",
   "sectionTitle": "Service architecture",
   "icon": "",
   "weight": 2,

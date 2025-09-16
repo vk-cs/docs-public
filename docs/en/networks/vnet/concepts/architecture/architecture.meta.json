@@ -1,6 +1,7 @@
 {
     "title": "Service architecture",
-        "shortDescription": "How the service is designed",
+      "shortDescription": "How the service is designed",
+      "metaDescription": "",
     "sectionTitle": "Service architecture",
     "icon": "",
     "weight": 2,

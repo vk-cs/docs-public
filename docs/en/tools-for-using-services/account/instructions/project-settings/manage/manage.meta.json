@@ -1,6 +1,7 @@
 {
     "title": "Project management",
-        "shortDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
+      "shortDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
+      "metaDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
     "sectionTitle": "Project management",
     "icon": "",
     "weight": 1,

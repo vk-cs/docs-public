@@ -1,6 +1,7 @@
 {
     "title": "Managing the logging agent",
-        "shortDescription": "How to manage the vkcloudlogs-fluent-bit.service agent on a virtual machine",
+      "shortDescription": "How to manage the vkcloudlogs-fluent-bit.service agent on a virtual machine",
+      "metaDescription": "VK Cloud: how to manage the vkcloudlogs-fluent-bit.service agent",
     "sectionTitle": "Managing the logging agent",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Cloud Spark",
-    "shortDescription": "How to use Terraform for managing Cloud Spark service",
+  "shortDescription": "How to use Terraform for managing Cloud Spark service",
+  "metaDescription": "Working with Cloud Spark using Terraform",
   "sectionTitle": "Cloud Spark",
   "icon": "",
   "weight": 80,

@@ -1,6 +1,7 @@
 {
     "title": "Управление кластером",
-        "shortDescription": "Масштабирование ресурсов кластера и удаление кластера ADB",
+      "shortDescription": "Масштабирование ресурсов кластера и удаление кластера ADB",
+      "metaDescription": "Arenadata DB as a Service VK Cloud: инструкции по управлению развернутым кластером",
     "sectionTitle": "Управление кластером",
     "icon": "",
     "weight": 2,

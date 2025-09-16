@@ -1,6 +1,7 @@
 {
   "title": "Cloud Databases",
-    "shortDescription": "How to use Terraform to manage the DBMS service objects",
+  "shortDescription": "How to use Terraform to manage the DBMS service objects",
+  "metaDescription": "How to use Terraform to manage the DBMS service objects",
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 50,

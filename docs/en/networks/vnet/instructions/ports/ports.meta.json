@@ -1,6 +1,7 @@
 {
     "title": "Ports",
-        "shortDescription": "Basic operations with OpenStack ports",
+      "shortDescription": "Basic operations with OpenStack ports",
+      "metaDescription": "",
     "sectionTitle": "Ports",
     "icon": "",
     "weight": 2,

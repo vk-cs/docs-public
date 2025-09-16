@@ -1,6 +1,7 @@
 {
   "title": "Cloud Voice",
-    "shortDescription": "Cloud Voice is a speech recognition and synthesis service based on Marusya voice assistant technologies",
+  "shortDescription": "Cloud Voice is a speech recognition and synthesis service based on Marusya voice assistant technologies",
+  "metaDescription": "Cloud Voice - the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
   "sectionTitle": "Cloud Voice",
   "icon": "",
   "weight": 3,

@@ -2,6 +2,7 @@
     "title": "Connecting network to VM",
     "sectionTitle": "Connecting network to VM",
         "shortDescription": "How to create a port and connect a network to a VM",
+    "metaDescription": "Connecting the network to the VM",
     "icon": "",
     "weight": 4,
     "uuid": "be312143-10d6-4d7a-88c9-f5414a131e07"

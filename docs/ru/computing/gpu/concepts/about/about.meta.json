@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
+      "shortDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
+      "metaDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

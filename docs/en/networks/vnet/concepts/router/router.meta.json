@@ -1,6 +1,7 @@
 {
     "title": "Router",
-        "shortDescription": "How to connect different networks with each other",
+      "shortDescription": "How to connect different networks with each other",
+      "metaDescription": "",
     "sectionTitle": "Router",
     "icon": "",
     "weight": 3,

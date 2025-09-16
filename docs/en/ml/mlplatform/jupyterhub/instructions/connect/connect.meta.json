@@ -1,6 +1,7 @@
 {
     "title": "Connecting to JupyterHub",
-        "shortDescription": "How to connect to a JupyterHub instance",
+      "shortDescription": "How to connect to a JupyterHub instance",
+      "metaDescription": "Connecting to JupyterHub",
     "sectionTitle": "Connecting to JupyterHub",
     "icon": "",
     "weight": 2,

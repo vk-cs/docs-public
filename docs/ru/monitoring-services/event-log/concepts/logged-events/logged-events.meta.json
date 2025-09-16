@@ -1,6 +1,7 @@
 {
   "title": "Регистрируемые события",
-    "shortDescription": "События, которые сервисы VK Cloud передают в Cloud Audit",
+  "shortDescription": "События, которые сервисы VK Cloud передают в Cloud Audit",
+  "metaDescription": "События, которые сервисы VK Cloud передают в Cloud Audit",
   "sectionTitle": "Регистрируемые события",
   "icon": "",
   "weight": 3,

@@ -1,6 +1,7 @@
 {
     "title": "Мониторинг кластера",
-        "shortDescription": "Как отслеживать состояние кластера Spark",
+      "shortDescription": "Как отслеживать состояние кластера Spark",
+      "metaDescription": "Как отслеживать состояние кластера Spark",
     "sectionTitle": "Мониторинг кластера",
     "icon": "",
     "weight": 6,

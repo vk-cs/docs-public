@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Basic information about tools for monitoring virtual machine services and platform applications",
+  "shortDescription": "Basic information about tools for monitoring virtual machine services and platform applications",
+  "metaDescription": "Основная информация об инструментах мониторинга сервисов виртуальных машин и платформенных приложений.",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

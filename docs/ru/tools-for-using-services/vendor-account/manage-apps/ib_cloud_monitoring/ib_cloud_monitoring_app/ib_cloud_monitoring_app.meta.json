@@ -1,6 +1,7 @@
 {
   "title": "Метрики image-based приложения",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Метрики image-based приложения",
   "sectionTitle": "Метрики image-based приложения",
   "weight": 3,
   "uuid": "7978fdef-cc6b-456d-887c-47d02638d3a8"

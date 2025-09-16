@@ -1,6 +1,7 @@
 {
     "title": "Resource limiting",
-        "shortDescription": "How to control the use of computing resources by containers.",
+      "shortDescription": "How to control the use of computing resources by containers.",
+      "metaDescription": "",
     "sectionTitle": "Resource limiting",
     "icon": "",
     "weight": 2,

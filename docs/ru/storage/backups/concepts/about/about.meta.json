@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Описание сервиса Cloud Backup и его возможностей",
+      "shortDescription": "Описание сервиса Cloud Backup и его возможностей",
+      "metaDescription": "Описание сервиса Cloud Backup и его возможностей",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

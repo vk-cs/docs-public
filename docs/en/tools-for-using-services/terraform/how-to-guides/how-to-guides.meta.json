@@ -1,6 +1,7 @@
 {
   "title": "How-to guides",
-    "shortDescription": "Examples of using Terraform in VK Cloud",
+  "shortDescription": "Examples of using Terraform in VK Cloud",
+  "metaDescription": "Using Terraform in VK Cloud",
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Deleting account",
-        "shortDescription": "Deleting a user account",
+      "shortDescription": "Deleting a user account",
+      "metaDescription": "Deleting a VK Cloud user account.",
     "sectionTitle": "Deleting account",
     "icon": "",
     "weight": 6,

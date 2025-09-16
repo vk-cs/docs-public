@@ -1,6 +1,7 @@
 {
     "title": "Routing traffic between networks",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "How to set up traffic routing between networks using Terraform.",
     "sectionTitle": "Routing traffic between networks",
     "icon": "",
     "weight": 4,

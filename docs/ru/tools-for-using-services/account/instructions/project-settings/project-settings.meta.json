@@ -1,6 +1,7 @@
 {
   "title": "Работа с проектами",
-    "shortDescription": "Управление проектами VK Cloud",
+  "shortDescription": "Управление проектами VK Cloud",
+  "metaDescription": "Управление проектами VK Cloud.",
   "sectionTitle": "Работа с проектами",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
   "title": "Управление лицензиями Microsoft RDS",
-    "shortDescription": "Как активировать лицензии на Remote Desktop Services, изменить их количество или тип",
+  "shortDescription": "Как активировать лицензии на Remote Desktop Services, изменить их количество или тип",
+  "metaDescription": "Как активировать лицензии на Remote Desktop Services, изменить их количество или тип",
   "sectionTitle": "Управление лицензиями Microsoft RDS",
   "icon": "",
   "weight": 7,

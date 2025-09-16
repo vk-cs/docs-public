@@ -1,6 +1,7 @@
 {
   "title": "Connecting to Object Storage without Internet",
-    "shortDescription": "How to connect to object storage a VM that is in a private network or connected to VK Cloud via Direct Connect",
+  "shortDescription": "How to connect to object storage a VM that is in a private network or connected to VK Cloud via Direct Connect",
+  "metaDescription": "How to connect to object storage a VM that is in a private network or connected to VK Cloud via Direct Connect",
   "sectionTitle": "Connecting to Object Storage without Internet",
   "icon": "",
   "weight": 4,

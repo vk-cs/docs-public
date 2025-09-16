@@ -1,6 +1,7 @@
 {
     "title": "Updating user profile",
-        "shortDescription": "Changing the user's password and personal data",
+      "shortDescription": "Changing the user's password and personal data",
+      "metaDescription": "How to change user profile data and password from VK Cloud account.",
     "sectionTitle": "Updating user profile",
     "icon": "",
     "weight": 1,

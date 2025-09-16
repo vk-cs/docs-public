@@ -1,6 +1,7 @@
 {
     "title": "Detailing expenses",
-        "shortDescription": "Statistics on resource consumption and balance changes",
+      "shortDescription": "Statistics on resource consumption and balance changes",
+      "metaDescription": "VK Cloud: viewing statistics of resource consumption and balance changes on projects",
     "sectionTitle": "Detailing expenses",
     "icon": "",
     "weight": 3,

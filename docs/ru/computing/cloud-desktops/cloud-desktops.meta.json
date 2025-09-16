@@ -1,6 +1,7 @@
 {
   "title": "Cloud Desktop",
-    "shortDescription": "Доставка пользователям рабочих столов на удаленном сервере по принципу VDI",
+  "shortDescription": "Доставка пользователям рабочих столов на удаленном сервере по принципу VDI",
+  "metaDescription": "Сервис Cloud Desktop для доставки пользователям рабочих столов на удаленном сервере",
   "sectionTitle": "Cloud Desktop",
   "icon": "",
   "weight": 3,

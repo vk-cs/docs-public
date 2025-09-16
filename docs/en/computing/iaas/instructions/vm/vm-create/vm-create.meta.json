@@ -2,6 +2,7 @@
     "title": "Creating VM",
     "sectionTitle": "Creating VM",
         "shortDescription": "How to create and configure a VM",
+    "metaDescription": "How to create and configure a VM",
     "icon": "",
     "weight": 0,
     "uuid": "946b9f5a-abf1-4214-8865-e01d6ea8755f",

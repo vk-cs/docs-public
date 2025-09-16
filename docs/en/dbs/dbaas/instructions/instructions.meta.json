@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Configuring and managing DB instances",
+  "shortDescription": "Configuring and managing DB instances",
+  "metaDescription": "Standard operations for managing VK Cloud DBMS instances and their resources.",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 4,

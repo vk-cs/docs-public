@@ -1,6 +1,7 @@
 {
     "title": "Capsule",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "The configuration and installation of the Capsule add-on is described here.",
     "sectionTitle": "Capsule",
     "icon": "",
     "weight": 1,

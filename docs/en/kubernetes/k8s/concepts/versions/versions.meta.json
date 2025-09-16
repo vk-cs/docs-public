@@ -1,6 +1,7 @@
 {
   "title": "About Kubernetes versions and components",
-    "shortDescription": "Support policy for available Kubernetes versions in VK Cloud clusters, available component versions, version change history",
+  "shortDescription": "Support policy for available Kubernetes versions in VK Cloud clusters, available component versions, version change history",
+  "metaDescription": "Kubernetes,K8S,version,components,history,policy,support",
   "sectionTitle": "About Kubernetes versions and components",
   "icon": "",
   "weight": 9,

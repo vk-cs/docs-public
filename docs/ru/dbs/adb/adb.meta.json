@@ -1,6 +1,7 @@
 {
   "title": "Arenadata DB as a Service",
-    "shortDescription": "Мощная распределенная аналитическая база данных для больших проектов на основе Greenplum",
+  "shortDescription": "Мощная распределенная аналитическая база данных для больших проектов на основе Greenplum",
+  "metaDescription": "Arenadata DB – мощная распределенная аналитическая база данных на основе Greenplum в виде управляемого сервиса. Это массивно-параллельная СУБД с линейной м",
   "sectionTitle": "Arenadata DB as a Service",
   "icon": "",
   "weight": 9,

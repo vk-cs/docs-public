@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Benefits, cost, and recommended software for Cloud GPU-enabled development",
+      "shortDescription": "Benefits, cost, and recommended software for Cloud GPU-enabled development",
+      "metaDescription": "Benefits, cost, and recommended software for Cloud GPU-enabled development",
     "sectionTitle": "About service",
     "icon": "",
     "weight": 1,

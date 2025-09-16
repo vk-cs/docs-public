@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "How to create a big data cluster, manage components in it, scale the cluster",
+  "shortDescription": "How to create a big data cluster, manage components in it, scale the cluster",
+  "metaDescription": "VK Cloud: basic operations for a big data cluster, as well as information on managing its components",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "additionalUuids": [

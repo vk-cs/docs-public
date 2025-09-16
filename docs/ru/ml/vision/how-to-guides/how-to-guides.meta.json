@@ -1,6 +1,7 @@
 {
   "title": "Интеграции",
-    "shortDescription": "Примеры интеграции на Python и PHP",
+  "shortDescription": "Примеры интеграции на Python и PHP",
+  "metaDescription": "",
   "sectionTitle": "Интеграции",
   "icon": "",
   "weight": 6,

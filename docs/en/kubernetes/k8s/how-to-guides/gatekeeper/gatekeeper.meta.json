@@ -1,6 +1,7 @@
 {
   "title": "Using Gatekeeper",
-    "shortDescription": "How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies",
+  "shortDescription": "How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies",
+  "metaDescription": "",
   "sectionTitle": "Using Gatekeeper",
   "icon": "",
   "weight": 3,

@@ -1,6 +1,7 @@
 {
     "title": "Управление кластером Spark",
-        "shortDescription": "Как управлять кластером Spark c помощью личного кабинета",
+      "shortDescription": "Как управлять кластером Spark c помощью личного кабинета",
+      "metaDescription": "",
     "sectionTitle": "Управление кластером Spark",
     "icon": "",
     "weight": 0,

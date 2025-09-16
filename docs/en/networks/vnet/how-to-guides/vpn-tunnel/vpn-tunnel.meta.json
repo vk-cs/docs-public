@@ -1,6 +1,7 @@
 {
     "title": "Setting up a VPN tunnel",
-        "shortDescription": "How to set up a VPN tunnel connecting the VK Cloud cloud network with the client network",
+      "shortDescription": "How to set up a VPN tunnel connecting the VK Cloud cloud network with the client network",
+      "metaDescription": "",
     "sectionTitle": "Setting up a VPN tunnel",
     "icon": "",
     "weight": 1,

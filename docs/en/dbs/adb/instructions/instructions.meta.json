@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Basic operations when working with analytical databases",
+  "shortDescription": "Basic operations when working with analytical databases",
+  "metaDescription": "Basic operations when working with analytical databases.",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 4,

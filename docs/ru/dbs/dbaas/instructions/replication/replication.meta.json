@@ -1,6 +1,7 @@
 {
     "title": "Репликации",
-        "shortDescription": "Как добавить реплику для развернутого инстанса БД в конфигурации Master-Replica",
+      "shortDescription": "Как добавить реплику для развернутого инстанса БД в конфигурации Master-Replica",
+      "metaDescription": "Добавление реплики БД",
     "sectionTitle": "Репликации",
     "icon": "",
     "weight": 3,

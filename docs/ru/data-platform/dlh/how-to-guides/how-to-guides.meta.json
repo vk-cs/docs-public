@@ -1,6 +1,7 @@
 {
   "title": "Практические руководства",
-    "shortDescription": "Развертывание DLH на базе различных решений",
+  "shortDescription": "Развертывание DLH на базе различных решений",
+  "metaDescription": "Развертывание Data Lakehouse на базе различных решений.",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 5,

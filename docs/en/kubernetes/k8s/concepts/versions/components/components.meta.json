@@ -1,6 +1,7 @@
 {
     "title": "Versions of Kubernetes components",
-        "shortDescription": "Which versions of components and add-ons are supported in VK Cloud clusters",
+      "shortDescription": "Which versions of components and add-ons are supported in VK Cloud clusters",
+      "metaDescription": "Container service: which versions of components and add-ons are supported in VK Cloud clusters",
     "sectionTitle": "Versions of Kubernetes components",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
     "title": "Redis",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Базы данных VK Cloud: управление инстансами Redis.",
     "sectionTitle": "Redis",
     "icon": "",
     "weight": 5,

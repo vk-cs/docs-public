@@ -1,6 +1,7 @@
 {
   "title": "Cloud Streams",
-    "shortDescription": "Кластеры Cloud Streams для работы с большими массивами данных",
+  "shortDescription": "Кластеры Cloud Streams для работы с большими массивами данных",
+  "metaDescription": "Cloud Streams",
   "sectionTitle": "Cloud Streams",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Managing instances with MLflow Client",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Managing instances with MLflow Client",
     "sectionTitle": "Managing instances with MLflow Client",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Roles and permissions of Management console users",
-        "shortDescription": "Role model in VK Cloud management console",
+      "shortDescription": "Role model in VK Cloud management console",
+      "metaDescription": "Role model in VK Cloud management console.",
     "sectionTitle": "Roles and permissions of Management console users",
     "icon": "",
     "weight": 1,

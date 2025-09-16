@@ -1,6 +1,7 @@
 {
   "title": "Marketplace",
-    "shortDescription": "XaaS-сервисы для работы в облаке на базе ресурсов VK Cloud",
+  "shortDescription": "XaaS-сервисы для работы в облаке на базе ресурсов VK Cloud",
+  "metaDescription": "Сервисы для работы в облаке на базе ресурсов VK Cloud",
   "sectionTitle": "Marketplace",
   "icon": "",
   "weight": 1,

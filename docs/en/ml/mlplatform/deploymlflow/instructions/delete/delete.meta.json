@@ -1,6 +1,7 @@
 {
     "title": "Removing an instance",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "How to remove an MLflow Deploy instance",
     "sectionTitle": "Removing an instance",
     "icon": "",
     "weight": 2,

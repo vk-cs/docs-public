@@ -1,6 +1,7 @@
 {
   "title": "Jupyter Hub",
-    "shortDescription": "Platform for full cycle ML development and data team collaboration",
+  "shortDescription": "Platform for full cycle ML development and data team collaboration",
+  "metaDescription": "",
   "sectionTitle": "Jupyter Hub",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Installing Gatekeeper",
-        "shortDescription": "How to install a Gatekeeper controller",
+      "shortDescription": "How to install a Gatekeeper controller",
+      "metaDescription": "",
     "sectionTitle": "Installing Gatekeeper",
     "icon": "",
     "weight": 2,

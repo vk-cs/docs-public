@@ -1,6 +1,7 @@
 {
   "title": "Logged events",
-    "shortDescription": "Events that VK Cloud services report to Cloud Audit",
+  "shortDescription": "Events that VK Cloud services report to Cloud Audit",
+  "metaDescription": "Events that VK Cloud services report to Cloud Audit",
   "sectionTitle": "Logged events",
   "icon": "",
   "weight": 3,

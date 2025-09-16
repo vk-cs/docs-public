@@ -1,6 +1,7 @@
 {
   "title": "Пошаговые инструкции",
-    "shortDescription": "Настройки кластеров Cloud Streams в личном кабинете",
+  "shortDescription": "Настройки кластеров Cloud Streams в личном кабинете",
+  "metaDescription": "Описание инструментов работы с кластерами Cloud Streams в личном кабинете VK Cloud.",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 3,

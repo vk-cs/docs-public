@@ -1,6 +1,7 @@
 {
     "title": "Fluent Bit",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "This section describes how to configure and install the Fluent Bit add-on.",
     "sectionTitle": "Fluent Bit",
     "icon": "",
     "weight": 4,

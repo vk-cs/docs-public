@@ -1,6 +1,7 @@
 {
     "title": "Installing and configuring GitLab",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "How to install and configure GitLab on an Ubuntu virtual machine in VK Cloud in order to configure auto-deployment of applications",
     "sectionTitle": "Installing and configuring GitLab",
     "icon": "",
     "weight": 2,

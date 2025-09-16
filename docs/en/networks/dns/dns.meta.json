@@ -1,6 +1,7 @@
 {
   "title": "DNS",
-    "shortDescription": "Public and private DNS, providing name resolution for VK Cloud platform services",
+  "shortDescription": "Public and private DNS, providing name resolution for VK Cloud platform services",
+  "metaDescription": "",
   "sectionTitle": "DNS",
   "icon": "",
   "weight": 4,

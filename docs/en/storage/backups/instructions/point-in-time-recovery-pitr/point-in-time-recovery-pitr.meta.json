@@ -1,6 +1,7 @@
 {
     "title": "Point-in-time recovery (PITR)",
-        "shortDescription": "Working with a point-in-time recovery (PITR) in PostgreSQL",
+      "shortDescription": "Working with a point-in-time recovery (PITR) in PostgreSQL",
+      "metaDescription": "Point-in-time-recovery (PITR) provides continuous backup of PostgreSQL table data.",
     "sectionTitle": "Point-in-time recovery (PITR)",
     "icon": "",
     "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Интеграция с Cloud Monitoring облачной платформы",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Интеграция с Cloud Monitoring облачной платформы",
   "sectionTitle": "Интеграция с Cloud Monitoring облачной платформы",
   "weight": 4,
   "uuid": "4d8744c8-8814-4c58-9b5d-e971ac52c8b2"

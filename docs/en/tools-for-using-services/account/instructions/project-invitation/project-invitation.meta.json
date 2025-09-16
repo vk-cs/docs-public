@@ -1,6 +1,7 @@
 {
     "title": "Join a project by invitation",
-        "shortDescription": "Sign in to a project by a link in the invitation email",
+      "shortDescription": "Sign in to a project by a link in the invitation email",
+      "metaDescription": "Sign in to a project by a link in the invitation email.",
     "sectionTitle": "Join a project by an invitation",
     "weight": 0,
     "uuid": "daf2b052-025f-4e82-bdb7-5a5bc08a1a37"

@@ -1,6 +1,7 @@
 {
     "title": "Вопросы и ответы",
-        "shortDescription": "Ответы на самые частые вопросы о Cloud ML Platform",
+      "shortDescription": "Ответы на самые частые вопросы о Cloud ML Platform",
+      "metaDescription": "",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
     "weight": 10,

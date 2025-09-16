@@ -1,6 +1,7 @@
 {
     "title": "Infrastructure protection with UserGate NGFW",
-        "shortDescription": "Deployment of the UserGate NGFW service, connecting a new network",
+      "shortDescription": "Deployment of the UserGate NGFW service, connecting a new network",
+      "metaDescription": "UserGate NGFW VK Cloud: deploying the service in your project, connecting a network",
     "sectionTitle": "Infrastructure protection with UserGate NGFW",
     "icon": "",
     "weight": 5,

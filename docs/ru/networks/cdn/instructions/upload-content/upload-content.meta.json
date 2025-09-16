@@ -1,6 +1,7 @@
 {
     "title": "Загрузка контента в CDN",
-        "shortDescription": "Как через личный кабинет загрузить контент в CDN",
+      "shortDescription": "Как через личный кабинет загрузить контент в CDN",
+      "metaDescription": "CDN VK Cloud: загрузка контента в CDN через личный кабинет.",
     "sectionTitle": "Загрузка контента в CDN",
     "icon": "",
     "weight": 3,

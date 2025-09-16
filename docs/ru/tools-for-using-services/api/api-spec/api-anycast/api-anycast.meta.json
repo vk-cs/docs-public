@@ -1,6 +1,7 @@
 {
   "title": "Anycast IP",
-    "shortDescription": "OpenAPI-спецификация сервиса Anycast IP",
+  "shortDescription": "OpenAPI-спецификация сервиса Anycast IP",
+  "metaDescription": "OpenAPI-спецификация сервиса Anycast IP",
   "sectionTitle": "Anycast IP",
   "icon": "",
   "weight": 15,

@@ -1,6 +1,7 @@
 {
   "title": "Cloud Big Data",
-    "shortDescription": "Scalable PaaS big data analytics service powered by Hadoop, Spark and NiFi",
+  "shortDescription": "Scalable PaaS big data analytics service powered by Hadoop, Spark and NiFi",
+  "metaDescription": "Cloud Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed te",
   "sectionTitle": "Cloud Big Data",
   "icon": "",
   "isBeta": true,

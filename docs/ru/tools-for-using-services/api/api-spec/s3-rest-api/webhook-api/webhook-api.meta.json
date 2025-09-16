@@ -1,6 +1,7 @@
 {
     "title": "Webhooks",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Webhooks для Object Storage - это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно: настроить обработку и конвер",
     "sectionTitle": "Webhooks",
     "icon": "",
     "weight": 9,

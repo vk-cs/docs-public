@@ -1,6 +1,7 @@
 {
     "title": "Создание кластера Spark",
-        "shortDescription": "Как развернуть кластер Spark в VK Cloud",
+      "shortDescription": "Как развернуть кластер Spark в VK Cloud",
+      "metaDescription": "Spark VK Cloud: создание нового кластера.",
     "sectionTitle": "Создание кластера Spark",
     "icon": "",
     "weight": 0,

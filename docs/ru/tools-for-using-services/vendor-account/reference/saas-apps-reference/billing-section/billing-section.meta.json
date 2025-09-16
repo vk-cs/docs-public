@@ -1,6 +1,7 @@
 {
   "title": "Секция billing",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Секция billing в JSON-файле конфигурации SaaS-приложения",
   "sectionTitle": "Секция billing",
   "weight": 4,
   "uuid": "22b24f9d-3e24-41f4-bd00-acffa2c5adcc"

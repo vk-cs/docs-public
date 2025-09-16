@@ -1,6 +1,7 @@
 {
   "title": "Cloud Desktop",
-    "shortDescription": "Providing users with desktops on a remote server",
+  "shortDescription": "Providing users with desktops on a remote server",
+  "metaDescription": "Providing users with desktops on a remote server",
   "sectionTitle": "Cloud Desktop",
   "icon": "",
   "weight": 3,

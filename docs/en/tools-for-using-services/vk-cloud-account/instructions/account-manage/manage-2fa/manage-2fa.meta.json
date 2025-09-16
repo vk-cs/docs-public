@@ -1,6 +1,7 @@
 {
     "title": "2FA management",
-        "shortDescription": "Managing two-factor authentication",
+      "shortDescription": "Managing two-factor authentication",
+      "metaDescription": "Enabling and disabling two-factor authentication in VK Cloud Account",
     "sectionTitle": "2FA management",
     "icon": "",
     "weight": 2,

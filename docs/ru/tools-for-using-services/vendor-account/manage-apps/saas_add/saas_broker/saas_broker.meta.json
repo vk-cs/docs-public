@@ -1,6 +1,7 @@
 {
   "title": "Брокер для SaaS-приложения",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Брокер для SaaS-приложения",
   "sectionTitle": "Брокер для SaaS-приложения",
   "weight": 2,
   "uuid": "c7282c7b-2c98-41ea-ad25-c959f05b5b3e"

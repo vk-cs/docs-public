@@ -1,6 +1,7 @@
 {
     "title": "Setting up a user directory connection",
-        "shortDescription": "Configuring and testing an AD or LDAP user directory connection",
+      "shortDescription": "Configuring and testing an AD or LDAP user directory connection",
+      "metaDescription": "Configuring and testing an AD or LDAP user directory connection.",
     "sectionTitle": "Setting up a user directory connection",
     "icon": "",
     "weight": 1,

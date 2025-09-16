@@ -1,6 +1,7 @@
 {
   "title": "Создание образа сервиса",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Создание образа сервиса",
   "sectionTitle": "Создание образа сервиса",
   "weight": 2,
   "uuid": "6893cb8f-b22f-45e9-a684-8423c7b9d1b8"

@@ -1,6 +1,7 @@
 {
     "title": "Управление бакетом",
-        "shortDescription": "Как выполнять рутинные операции над бакетом через личный кабинет VK Cloud, AWS CLI, SDK",
+      "shortDescription": "Как выполнять рутинные операции над бакетом через личный кабинет VK Cloud, AWS CLI, SDK",
+      "metaDescription": "Как выполнять рутинные операции над бакетом через личный кабинет VK Cloud, AWS CLI, SDK",
     "sectionTitle": "Управление бакетом",
     "icon": "",
     "weight": 2,

@@ -1,6 +1,7 @@
 {
   "title": "MLflow",
-    "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
+  "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
+  "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
   "sectionTitle": "MLflow",
   "icon": "",
   "weight": 4,

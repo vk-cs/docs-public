@@ -2,6 +2,7 @@
     "title": "Images management",
     "sectionTitle": "Images management",
         "shortDescription": "Creating, importing and exporting images",
+    "metaDescription": "Creating, importing and exporting images",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

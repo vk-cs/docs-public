@@ -1,6 +1,7 @@
 {
   "title": "Migration to VK Cloud",
-    "shortDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud",
+  "shortDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud",
+  "metaDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud",
   "sectionTitle": "Migration to VK Cloud",
   "icon": "",
   "weight": 2,

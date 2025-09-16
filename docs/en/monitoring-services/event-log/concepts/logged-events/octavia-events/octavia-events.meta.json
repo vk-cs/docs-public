@@ -1,6 +1,7 @@
 {
   "title": "Octavia component events",
-    "shortDescription": "Events that the load balancing service reports to Cloud Audit",
+  "shortDescription": "Events that the load balancing service reports to Cloud Audit",
+  "metaDescription": "Events that the load balancing service reports to Cloud Audit",
   "sectionTitle": "Octavia component events",
   "icon": "",
   "weight": 4,

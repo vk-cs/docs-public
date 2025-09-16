@@ -1,6 +1,7 @@
 {
   "title": "Search query language",
-    "shortDescription": "Event log search tool",
+  "shortDescription": "Event log search tool",
+  "metaDescription": "",
   "sectionTitle": "Search query language",
   "icon": "",
   "weight": 2,

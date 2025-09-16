@@ -1,6 +1,7 @@
 {
   "title": "Системные метрики ВМ",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Системные метрики ВМ",
   "sectionTitle": "Системные метрики ВМ",
   "weight": 2,
   "uuid": "4eb8d52a-8689-44e8-be61-e3d4d7c660f2"

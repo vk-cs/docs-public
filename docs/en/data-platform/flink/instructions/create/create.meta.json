@@ -1,6 +1,7 @@
 {
   "title": "Creating service instance",
-    "shortDescription": "How to create an instance of Cloud Flink in the configuration you need",
+  "shortDescription": "How to create an instance of Cloud Flink in the configuration you need",
+  "metaDescription": "How to create an instance of the service in the required configuration.",
   "sectionTitle": "Creating an instance of the service",
   "icon": "",
   "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Fluent Bit для Cloud Logging (logaas-integration)",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Здесь описана настройка и установка аддона Fluent Bit для Cloud Logging (logaas-integration).",
     "sectionTitle": "Fluent Bit для Cloud Logging (logaas-integration)",
     "icon": "",
     "weight": 5,

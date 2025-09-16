@@ -1,6 +1,7 @@
 {
   "title": "Мониторинг инстансов БД",
-    "shortDescription": "Мониторинг развернутых в VK Cloud инстансов баз данных",
+  "shortDescription": "Мониторинг развернутых в VK Cloud инстансов баз данных",
+  "metaDescription": "",
   "sectionTitle": "Мониторинг инстансов БД",
   "icon": "",
   "weight": 6,

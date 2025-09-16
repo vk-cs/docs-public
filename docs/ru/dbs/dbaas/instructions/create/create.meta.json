@@ -1,6 +1,7 @@
 {
   "title": "Создание инстанса БД",
-    "shortDescription": "Как создать инстанс БД в конфигурации Single, Master-Replica, Кластер",
+  "shortDescription": "Как создать инстанс БД в конфигурации Single, Master-Replica, Кластер",
+  "metaDescription": "Cloud Databases VK Cloud: создание инстанса БД в любой из доступных конфигураций — Single, Master-Replica, Кластер",
   "sectionTitle": "Создание инстанса БД",
   "icon": "",
   "weight": 0,

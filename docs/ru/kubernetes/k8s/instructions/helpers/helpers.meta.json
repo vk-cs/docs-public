@@ -1,6 +1,7 @@
 {
   "title": "Вспомогательная информация",
-    "shortDescription": "Дополнительные сведения о Terraform и настройках групп worker-узлов",
+  "shortDescription": "Дополнительные сведения о Terraform и настройках групп worker-узлов",
+  "metaDescription": "",
   "sectionTitle": "Вспомогательная информация",
   "icon": "",
   "weight": 50,

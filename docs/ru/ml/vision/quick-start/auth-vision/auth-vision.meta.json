@@ -1,6 +1,7 @@
 {
     "title": "Авторизация",
-        "shortDescription": "Получение токена доступа для Vision API",
+      "shortDescription": "Получение токена доступа для Vision API",
+      "metaDescription": "Статья описывает авторизацию в платформе для использования сервиса Vision API.",
     "sectionTitle": "Авторизация",
     "icon": "",
     "weight": 2,

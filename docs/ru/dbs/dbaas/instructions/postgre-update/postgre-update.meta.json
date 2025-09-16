@@ -1,6 +1,7 @@
 {
     "title": "Обновление версии PostgreSQL",
-        "shortDescription": "Как обновить версию PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер",
+      "shortDescription": "Как обновить версию PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер",
+      "metaDescription": "Обновление версии PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер.",
     "sectionTitle": "Обновление версии PostgreSQL",
     "icon": "",
     "weight": 3,

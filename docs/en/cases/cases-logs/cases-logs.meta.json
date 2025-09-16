@@ -1,6 +1,7 @@
 {
   "title": "Logging",
-    "shortDescription": "How to organize centralized log collection using Fluentd or the ELK stack",
+  "shortDescription": "How to organize centralized log collection using Fluentd or the ELK stack",
+  "metaDescription": "Usage scenarios: organization of log collection using Fluentd or ELK stack",
   "sectionTitle": "Logging",
   "icon": "",
   "weight": 6,

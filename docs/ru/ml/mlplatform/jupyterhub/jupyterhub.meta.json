@@ -1,6 +1,7 @@
 {
   "title": "JupyterHub",
-    "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
+  "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
+  "metaDescription": "",
   "sectionTitle": "JupyterHub",
   "icon": "",
   "weight": 3,

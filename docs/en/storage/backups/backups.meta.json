@@ -1,6 +1,7 @@
 {
   "title": "Cloud Backup",
-    "shortDescription": "Backup of virtual machines, database instances",
+  "shortDescription": "Backup of virtual machines, database instances",
+  "metaDescription": "Cloud Backup to VK Cloud: backup of virtual machines, databases",
   "sectionTitle": "Cloud Backup",
   "icon": "",
 

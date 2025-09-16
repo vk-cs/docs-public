@@ -1,6 +1,7 @@
 {
     "title": "Просмотр логов",
-        "shortDescription": "Как просмотреть логи",
+      "shortDescription": "Как просмотреть логи",
+      "metaDescription": "",
     "sectionTitle": "Просмотр логов",
     "icon": "",
     "weight": 4,

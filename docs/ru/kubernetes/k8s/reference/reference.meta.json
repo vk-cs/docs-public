@@ -1,6 +1,7 @@
 {
   "title": "Справочник Kubernetes",
-    "shortDescription": "Основные понятия и объекты Kubernetes, примеры взаимодействия с ними",
+  "shortDescription": "Основные понятия и объекты Kubernetes, примеры взаимодействия с ними",
+  "metaDescription": "",
   "sectionTitle": "Справочник Kubernetes",
   "icon": "",
   "weight": 8,

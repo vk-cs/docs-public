@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Service capabilities, role model, available peripherals",
+      "shortDescription": "Service capabilities, role model, available peripherals",
+      "metaDescription": "Overview of the Cloud Desktop VK Cloud service: capabilities, role model, available peripherals.",
     "sectionTitle": "About service",
     "icon": "",
     "weight": 1,

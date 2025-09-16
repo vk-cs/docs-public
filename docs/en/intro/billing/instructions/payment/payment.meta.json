@@ -1,6 +1,7 @@
 {
     "title": "Balance management",
-        "shortDescription": "How to view, top up the project balance and configure notifications",
+      "shortDescription": "How to view, top up the project balance and configure notifications",
+      "metaDescription": "VK Cloud: how to view, top up the project balance and configure notifications",
     "sectionTitle": "Balance management",
     "icon": "",
     "weight": 2,

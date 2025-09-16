@@ -1,6 +1,7 @@
 {
     "title": "Создание инстанса MLflow Deploy",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Пример создания инстанса MLflow Deploy с использованием Terraform",
     "sectionTitle": "Создание инстанса MLflow Deploy",
     "icon": "",
     "weight": 3,

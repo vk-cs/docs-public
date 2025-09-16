@@ -1,6 +1,7 @@
 {
     "title": "Platform architecture",
-        "shortDescription": "List of VK Cloud components and services, security and fault tolerance mechanisms",
+      "shortDescription": "List of VK Cloud components and services, security and fault tolerance mechanisms",
+      "metaDescription": "Description of VK Cloud architecture, security and fault tolerance of the platform, migration to VK Cloud",
     "sectionTitle": "Platform architecture",
     "icon": "",
     "weight": 2,

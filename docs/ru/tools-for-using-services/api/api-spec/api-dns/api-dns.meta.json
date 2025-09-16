@@ -1,6 +1,7 @@
 {
     "title": "Публичный DNS",
-        "shortDescription": "API публичного DNS",
+      "shortDescription": "API публичного DNS",
+      "metaDescription": "",
     "sectionTitle": "Публичный DNS",
     "icon": "",
     "weight": 11,

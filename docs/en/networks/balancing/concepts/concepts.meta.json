@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "How the Load Balancing service is designed",
+  "shortDescription": "How the Load Balancing service is designed",
+  "metaDescription": "",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 10,

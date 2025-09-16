@@ -1,6 +1,7 @@
 {
     "title": "Маршрутизаторы",
-        "shortDescription": "Назначение, типы и особенности маршрутизаторов в VK Cloud",
+      "shortDescription": "Назначение, типы и особенности маршрутизаторов в VK Cloud",
+      "metaDescription": "Назначение, типы и особенности маршрутизаторов в VK Cloud",
     "sectionTitle": "Маршрутизаторы",
     "icon": "",
     "weight": 3,

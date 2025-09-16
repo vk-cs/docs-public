@@ -2,6 +2,7 @@
     "title": "Управление образами",
     "sectionTitle": "Управление образами",
         "shortDescription": "Создание, импорт и экспорт образов",
+    "metaDescription": "Управление образами",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

@@ -1,6 +1,7 @@
 {
   "title": "Cloud ML Platform",
-    "shortDescription": "How to use Terraform for managing Cloud ML Platform service",
+  "shortDescription": "How to use Terraform for managing Cloud ML Platform service",
+  "metaDescription": "Working with Cloud ML Platform using Terraform",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 70,

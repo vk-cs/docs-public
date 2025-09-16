@@ -1,6 +1,7 @@
 {
     "title": "Creating a disk from a large OS image",
-        "shortDescription": "How to create a disk from an OS image with a volume of more than 500 GB in VK Cloud",
+      "shortDescription": "How to create a disk from an OS image with a volume of more than 500 GB in VK Cloud",
+      "metaDescription": "How to create a disk from a large OS image in VK Cloud.",
     "sectionTitle": "Creating a disk from a large OS image",
     "icon": "",
     "weight": 1,

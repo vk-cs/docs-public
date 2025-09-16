@@ -1,6 +1,7 @@
 {
     "title": "Creating and managing an account",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Description Access to the resources of the object storage VK Cloud",
     "sectionTitle": "Creating and managing an account",
     "icon": "",
     "weight": 1,

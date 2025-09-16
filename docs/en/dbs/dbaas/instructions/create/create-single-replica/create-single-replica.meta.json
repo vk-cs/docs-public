@@ -1,6 +1,7 @@
 {
     "title": "Single and Master-Replica configurations",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Cloud Databases VK Cloud: creating a DB instance in Single and Master-Replica configurations",
     "sectionTitle": "Single and Master-Replica configurations",
     "icon": "",
     "weight": 1,

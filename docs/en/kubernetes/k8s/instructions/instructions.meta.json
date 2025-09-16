@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Supported operations with the cluster and its nodes",
+  "shortDescription": "Supported operations with the cluster and its nodes",
+  "metaDescription": "Cloud Containers: operations that can be performed with the Kubernetes cluster and its nodes",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 4,

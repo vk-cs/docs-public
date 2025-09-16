@@ -1,6 +1,7 @@
 {
   "title": "Личный кабинет",
-    "shortDescription": "Личный кабинет пользователя VK Cloud",
+  "shortDescription": "Личный кабинет пользователя VK Cloud",
+  "metaDescription": "Личный кабинет содержит инструменты управления пользовательской инфраструктурой VK Cloud.",
   "sectionTitle": "Личный кабинет",
   "icon": "",
   "weight": 2,

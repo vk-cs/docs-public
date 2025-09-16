@@ -1,6 +1,7 @@
 {
   "title": "DNS",
-    "shortDescription": "Публичный и приватный DNS, обеспечивающий разрешение имен для сервисов платформы VK Cloud",
+  "shortDescription": "Публичный и приватный DNS, обеспечивающий разрешение имен для сервисов платформы VK Cloud",
+  "metaDescription": "",
   "sectionTitle": "DNS",
   "icon": "",
   "relativeSections": [

@@ -1,6 +1,7 @@
 {
     "title": "Установка и настройка Hystax DR",
-        "shortDescription": "Развертывание сервиса Hystax Acura Disaster Recovery, создание плана и запуск аварийного восстановления",
+      "shortDescription": "Развертывание сервиса Hystax Acura Disaster Recovery, создание плана и запуск аварийного восстановления",
+      "metaDescription": "Hystax Acura Disaster Recovery в Marketplace: развертывание сервиса, создание плана и запуск аварийного восстановления",
     "sectionTitle": "Установка и настройка Hystax DR",
     "icon": "",
     "weight": 1,

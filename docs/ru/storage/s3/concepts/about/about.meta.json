@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Описание сервиса Object Storage, его основных понятий и инструментария",
+      "shortDescription": "Описание сервиса Object Storage, его основных понятий и инструментария",
+      "metaDescription": "Описание сервиса Object Storage, его основных понятий и инструментария",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

@@ -1,6 +1,7 @@
 {
     "title": "Работа с кластерами Cloud Spark",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Список методов библиотеки Cloud ML Platform для работы с кластерами Cloud Spark.",
     "sectionTitle": "Работа с кластерами Cloud Spark",
     "icon": "",
     "weight": 2,

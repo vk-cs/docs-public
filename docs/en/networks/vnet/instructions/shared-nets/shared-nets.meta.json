@@ -1,6 +1,7 @@
 {
     "title": "Shared networks",
-        "shortDescription": "How to give other projects access to the network, how to manage a shared network",
+      "shortDescription": "How to give other projects access to the network, how to manage a shared network",
+      "metaDescription": "How to give other projects access to the network, how to manage a shared network",
     "sectionTitle": "Shared networks",
     "icon": "",
     "weight": 1,

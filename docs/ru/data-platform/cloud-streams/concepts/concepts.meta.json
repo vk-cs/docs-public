@@ -1,6 +1,7 @@
 {
   "title": "Концепции",
-    "shortDescription": "Архитектура и лицензии сервиса",
+  "shortDescription": "Архитектура и лицензии сервиса",
+  "metaDescription": "Концепции",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

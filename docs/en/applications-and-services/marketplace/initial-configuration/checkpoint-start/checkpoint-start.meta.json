@@ -1,6 +1,7 @@
 {
     "title": "Infrastructure protection with Check Point CloudGuard",
-        "shortDescription": "Deployment of Check Point CloudGuard Network service in the project",
+      "shortDescription": "Deployment of Check Point CloudGuard Network service in the project",
+      "metaDescription": "Deployment of the Check Point CloudGuard: gateways configuration and adding network interfaces",
     "sectionTitle": "Infrastructure protection with Check Point CloudGuard",
     "icon": "",
     "weight": 4,

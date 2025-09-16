@@ -1,6 +1,7 @@
 {
     "title": "Настройка федерации удостоверений через Active Directory",
-        "shortDescription": "Как настроить аутентификацию в VK Cloud Аккаунт через Active Directory",
+      "shortDescription": "Как настроить аутентификацию в VK Cloud Аккаунт через Active Directory",
+      "metaDescription": "Настройка федеративного доступа в VK Cloud Аккаунт через Active Directory",
     "sectionTitle": "Настройка федерации удостоверений через Active Directory",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Tariffication",
-        "shortDescription": "The cost of the service and the specifics of its billing",
+      "shortDescription": "The cost of the service and the specifics of its billing",
+      "metaDescription": "The cost of the Cloud Desktop service and its billing features.",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 5,

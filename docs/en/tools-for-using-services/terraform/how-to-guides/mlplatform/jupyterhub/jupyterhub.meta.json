@@ -1,6 +1,7 @@
 {
     "title": "Creating a JupyterHub instance",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "How to create a JupyterHub instance using Terraform",
     "sectionTitle": "Creating a JupyterHub instance",
     "icon": "",
     "weight": 1,

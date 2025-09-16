@@ -1,6 +1,7 @@
 {
     "title": "Interacting with origins",
-        "shortDescription": "How to change origins, an interaction protocol, a host header and how to protect the origins from high loads",
+      "shortDescription": "How to change origins, an interaction protocol, a host header and how to protect the origins from high loads",
+      "metaDescription": "How to change origins, an interaction protocol, a host header and how to protect the origins from high loads",
     "sectionTitle": "Interacting with origins",
     "icon": "",
     "weight": 2,

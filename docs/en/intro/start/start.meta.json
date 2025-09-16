@@ -1,6 +1,7 @@
 {
   "title": "Getting started",
-    "shortDescription": "How to register in VK Cloud or how to get technical support. Base information about the cloud, legal information, and requisites",
+  "shortDescription": "How to register in VK Cloud or how to get technical support. Base information about the cloud, legal information, and requisites",
+  "metaDescription": "VK Cloud (VK Cloud) platform provides the infrastructure for developing and operating applications",
   "sectionTitle": "Getting started",
   "icon": "",
   "weight": 1,

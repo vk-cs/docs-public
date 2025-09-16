@@ -1,6 +1,7 @@
 {
   "title": "API",
-    "shortDescription": "Управление сервисами VK Cloud через API. Особенности подключения и описание эндпоинтов",
+  "shortDescription": "Управление сервисами VK Cloud через API. Особенности подключения и описание эндпоинтов",
+  "metaDescription": "Управление сервисами VK Cloud через API. Особенности подключения и описание эндпоинтов",
   "sectionTitle": "API",
   "icon": "",
   "weight": 6,

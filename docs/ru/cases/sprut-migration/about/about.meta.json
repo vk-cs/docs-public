@@ -1,6 +1,7 @@
 {
   "title": "О миграции",
-    "shortDescription": "Зачем и как переносить проекты в SDN Sprut, какие преимущества у этой SDN",
+  "shortDescription": "Зачем и как переносить проекты в SDN Sprut, какие преимущества у этой SDN",
+  "metaDescription": "",
   "sectionTitle": "О миграции",
   "icon": "",
   "weight": 1,

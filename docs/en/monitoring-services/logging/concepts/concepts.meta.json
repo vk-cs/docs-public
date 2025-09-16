@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Basic concepts of the Cloud Logging service",
+  "shortDescription": "Basic concepts of the Cloud Logging service",
+  "metaDescription": "",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

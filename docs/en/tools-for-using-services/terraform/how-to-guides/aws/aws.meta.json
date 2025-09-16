@@ -1,6 +1,7 @@
 {
   "title": "Object Storage",
-    "shortDescription": "How to use Terraform to manage buckets and objects in the Object Storage service",
+  "shortDescription": "How to use Terraform to manage buckets and objects in the Object Storage service",
+  "metaDescription": "",
   "sectionTitle": "Object Storage",
   "icon": "",
   "weight": 40,

@@ -1,6 +1,7 @@
 {
   "title": "Object Storage в архитектуре Data Lakehouse",
-    "shortDescription": "Назначение и функции компонента Object Storage в архитектуре Data Lakehouse на платформе VK Cloud",
+  "shortDescription": "Назначение и функции компонента Object Storage в архитектуре Data Lakehouse на платформе VK Cloud",
+  "metaDescription": "Назначение и функции компонента Object Storage в архитектуре Data Lakehouse",
   "sectionTitle": "Object Storage",
   "icon": "",
   "weight": 1,

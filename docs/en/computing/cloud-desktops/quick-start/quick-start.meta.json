@@ -1,6 +1,7 @@
 {
     "title": "Quick start",
-        "shortDescription": "Getting started with Cloud Desktop",
+      "shortDescription": "Getting started with Cloud Desktop",
+      "metaDescription": "Getting started with the Cloud Desktop service and getting to know its main features.",
     "sectionTitle": "Quick start",
     "icon": "",
     "weight": 1,

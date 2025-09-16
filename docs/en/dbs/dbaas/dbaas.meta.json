@@ -1,6 +1,7 @@
 {
   "title": "Cloud Databases",
-    "shortDescription": "Managed and scalable cloud databases",
+  "shortDescription": "Managed and scalable cloud databases",
+  "metaDescription": "Cloud Databases are cloud databases (Database as a service). The service allows deploying solutions based on MySQL, PostgreSQL, MongoDB, Redis, Cli",
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 1,

@@ -1,6 +1,7 @@
 {
   "title": "VK Cloud Account",
-    "shortDescription": "VK Cloud user account",
+  "shortDescription": "VK Cloud user account",
+  "metaDescription": "VK Cloud Account is an interface for managing a user's account.",
   "sectionTitle": "VK Cloud Account",
   "icon": "",
   "weight": 1,

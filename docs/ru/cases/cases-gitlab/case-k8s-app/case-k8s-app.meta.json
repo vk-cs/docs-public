@@ -1,6 +1,7 @@
 {
     "title": "Настройка авторазвертывания приложения в кластер Kubernetes",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "В данной статье рассмотрим, как настроить авторазвертывание приложения в кластер Kubernetes. Перед этим: Установите и настройте Docker. Установите и настро",
     "sectionTitle": "Настройка авторазвертывания приложения в кластер Kubernetes",
     "icon": "",
     "additionalUuids": [

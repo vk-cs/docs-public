@@ -1,6 +1,7 @@
 {
     "title": "Мониторинг кластера",
-        "shortDescription": "Как отслеживать состояние кластера Kubernetes",
+      "shortDescription": "Как отслеживать состояние кластера Kubernetes",
+      "metaDescription": "Cloud Containers: мониторинг кластера Kubernetes, отслеживание состояния кластера, использование Grafana и Prometheus",
     "sectionTitle": "Мониторинг кластера",
     "icon": "",
     "weight": 6,

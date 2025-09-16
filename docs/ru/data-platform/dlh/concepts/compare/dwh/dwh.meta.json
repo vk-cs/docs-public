@@ -1,6 +1,7 @@
 {
   "title": "Data Warehouse",
-    "shortDescription": "Архитектура Data WareHouse в корпоративных хранилищах данных: преимущества и недостатки",
+  "shortDescription": "Архитектура Data WareHouse в корпоративных хранилищах данных: преимущества и недостатки",
+  "metaDescription": "Архитектура Data WareHouse в корпоративных хранилищах данных: преимущества и недостатки",
   "sectionTitle": "Data Warehouse",
   "icon": "",
   "weight": 1,

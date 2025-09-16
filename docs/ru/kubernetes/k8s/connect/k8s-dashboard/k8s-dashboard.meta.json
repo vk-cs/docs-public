@@ -1,6 +1,7 @@
 {
     "title": "Подключение к кластеру с помощью Kubernetes Dashboard",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Подключение к кластеру (Kubernetes Dashboard)",
     "icon": "",
     "weight": 3,

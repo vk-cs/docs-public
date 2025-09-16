@@ -1,6 +1,7 @@
 {
     "title": "Clickhouse",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Описание ClickHouse — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
     "sectionTitle": "Clickhouse",
     "icon": "",
     "uuid": "b1380eea-6206-4d65-8d88-22ed797aa48b"

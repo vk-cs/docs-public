@@ -1,6 +1,7 @@
 {
     "title": "Быстрый старт",
-        "shortDescription": "Начало работы с сервисом MLflow",
+      "shortDescription": "Начало работы с сервисом MLflow",
+      "metaDescription": "Начало работы с сервисом MLflow",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Connecting to Kafka",
-        "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+      "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+      "metaDescription": "Kafka connection",
     "sectionTitle": "Connecting to Kafka",
     "icon": "",
     "weight": 0,

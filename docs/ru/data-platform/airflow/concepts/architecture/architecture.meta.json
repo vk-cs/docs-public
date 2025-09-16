@@ -1,6 +1,7 @@
 {
   "title": "Архитектура сервиса",
-    "shortDescription": "Как устроен сервис Cloud Airflow",
+  "shortDescription": "Как устроен сервис Cloud Airflow",
+  "metaDescription": "Архитектура сервиса Cloud Airflow в VK Cloud",
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Хранилище в кластере",
-        "shortDescription": "Интеграция кластеров Kubernetes с сервисами хранения VK Cloud",
+      "shortDescription": "Интеграция кластеров Kubernetes с сервисами хранения VK Cloud",
+      "metaDescription": "",
     "sectionTitle": "Хранилище в кластере",
     "icon": "",
     "weight": 5,

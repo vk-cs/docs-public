@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Operating principles and design of the Cloud Desktop service",
+  "shortDescription": "Operating principles and design of the Cloud Desktop service",
+  "metaDescription": "Description of operating principles and design of the Cloud Desktop service in VK Cloud.",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

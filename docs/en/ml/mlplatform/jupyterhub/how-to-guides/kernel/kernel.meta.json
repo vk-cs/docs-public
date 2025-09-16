@@ -1,6 +1,7 @@
 {
     "title": "Creating a custom kernel",
-        "shortDescription": "Description of the procedure for creating an individual kernel",
+      "shortDescription": "Description of the procedure for creating an individual kernel",
+      "metaDescription": "Creating a custom JupyterHub kernel",
     "sectionTitle": "Creating a custom kernel",
     "icon": "",
     "weight": 0,

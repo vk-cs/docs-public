@@ -1,6 +1,7 @@
 {
   "title": "Data Lake",
-    "shortDescription": "Архитектура Data Lake в корпоративных хранилищах данных: преимущества и недостатки",
+  "shortDescription": "Архитектура Data Lake в корпоративных хранилищах данных: преимущества и недостатки",
+  "metaDescription": "Архитектура Data Lake в корпоративных хранилищах данных: преимущества и недостатки",
   "sectionTitle": "Data Lake",
   "icon": "",
   "weight": 2,

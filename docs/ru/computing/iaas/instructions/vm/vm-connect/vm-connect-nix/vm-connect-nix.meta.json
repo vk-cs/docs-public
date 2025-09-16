@@ -2,6 +2,7 @@
     "title": "Подключение к ВМ Linux",
     "sectionTitle": "Подключение к ВМ Linux",
         "shortDescription": "Как подключиться к виртуальной машине по SSH",
+    "metaDescription": "Подключение к ВМ Linux",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

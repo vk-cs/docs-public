@@ -1,6 +1,7 @@
 {
     "title": "Viewing notifications",
-        "shortDescription": "Viewing information about technical updates of the platform",
+      "shortDescription": "Viewing information about technical updates of the platform",
+      "metaDescription": "Viewing information about technical updates of the platform.",
     "sectionTitle": "Viewing notifications",
     "icon": "",
     "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "How VK Cloud network services are designed.",
+  "shortDescription": "How VK Cloud network services are designed.",
+  "metaDescription": "A detailed description of the principles of operation and design of VK Cloud network services",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

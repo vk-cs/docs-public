@@ -1,6 +1,7 @@
 {
     "title": "Политика поддержки версий Kubernetes",
-        "shortDescription": "Какие версии Kubernetes поддерживаются в кластерах VK Cloud и по каким принципам",
+      "shortDescription": "Какие версии Kubernetes поддерживаются в кластерах VK Cloud и по каким принципам",
+      "metaDescription": "Kubernetes,K8S,версия,политика,поддержка",
     "sectionTitle": "Политика поддержки версий Kubernetes",
     "icon": "",
     "weight": 1,

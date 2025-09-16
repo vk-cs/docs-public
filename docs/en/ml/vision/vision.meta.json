@@ -1,6 +1,7 @@
 {
   "title": "Vision",
-    "shortDescription": "Machine learning based face and object recognition technology",
+  "shortDescription": "Machine learning based face and object recognition technology",
+  "metaDescription": "Vision is a machine learning based face and object recognition technology. Using computer vision, you can develop a system for recognizing faces, license p",
   "sectionTitle": "Vision",
   "icon": "",
   "weight": 4,

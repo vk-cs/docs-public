@@ -1,6 +1,7 @@
 {
     "title": "MongoDB replication and update on Ubuntu",
-        "shortDescription": "How to replicate and update MongoDB on Ubuntu 18.04",
+      "shortDescription": "How to replicate and update MongoDB on Ubuntu 18.04",
+      "metaDescription": "Creating replicas of the MongoDB DBMS, updating the version.",
     "sectionTitle": "MongoDB replication and upgrade on Ubuntu",
     "icon": "",
     "weight": 3,

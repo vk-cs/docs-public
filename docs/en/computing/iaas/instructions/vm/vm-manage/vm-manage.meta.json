@@ -1,6 +1,7 @@
 {
     "title": "Managing VM",
-        "shortDescription": "How to manage VM, its settings and resources",
+      "shortDescription": "How to manage VM, its settings and resources",
+      "metaDescription": "How to manage VM, its settings and resources.",
     "sectionTitle": "Managing VM",
     "icon": "",
     "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Updating cluster",
-        "shortDescription": "How to update a Kubernetes cluster using a management console or using Terraform",
+      "shortDescription": "How to update a Kubernetes cluster using a management console or using Terraform",
+      "metaDescription": "",
     "sectionTitle": "Updating cluster",
     "icon": "",
     "weight": 7,

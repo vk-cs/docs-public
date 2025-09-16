@@ -2,6 +2,7 @@
     "title": "Connecting to Linux VM",
     "sectionTitle": "Connecting to Linux VM",
         "shortDescription": "How to connect to a Linux VM via SSH",
+    "metaDescription": "Connecting to a Linux VM",
     "icon": "",
     "weight": 0,
     "additionalUuids": [

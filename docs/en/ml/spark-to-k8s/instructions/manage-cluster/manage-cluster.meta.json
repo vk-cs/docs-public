@@ -1,6 +1,7 @@
 {
   "title": "Managing Spark cluster",
-    "shortDescription": "How to manage a Spark cluster using your management console",
+  "shortDescription": "How to manage a Spark cluster using your management console",
+  "metaDescription": "",
   "sectionTitle": "Managing Spark cluster",
   "icon": "",
   "weight": 0,

@@ -1,6 +1,7 @@
 {
     "title": "Сеть в кластере",
-        "shortDescription": "Интеграция кластеров Kubernetes с сетевыми сервисами VK Cloud",
+      "shortDescription": "Интеграция кластеров Kubernetes с сетевыми сервисами VK Cloud",
+      "metaDescription": "",
     "sectionTitle": "Сеть в кластере",
     "icon": "",
     "weight": 4,

@@ -1,6 +1,7 @@
 {
     "title": "Image processing methods",
-        "shortDescription": "Improving the quality of images",
+      "shortDescription": "Improving the quality of images",
+      "metaDescription": "The improve method is used to improve photos. Request Authorization data is passed in the request string: Parameter Value Type oauth_token string OAu",
     "sectionTitle": "Image processing methods",
     "icon": "",
     "additionalUuids": [

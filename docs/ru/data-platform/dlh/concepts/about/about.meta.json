@@ -1,6 +1,7 @@
 {
   "title": "О сервисе",
-    "shortDescription": "Принципы функционирования и устройство сервиса Data Lakehouse",
+  "shortDescription": "Принципы функционирования и устройство сервиса Data Lakehouse",
+  "metaDescription": "Назначение, приемущества и ограничения применения архитектуры Data Lakehouse",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

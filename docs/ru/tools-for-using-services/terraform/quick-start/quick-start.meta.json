@@ -1,6 +1,7 @@
 {
     "title": "Быстрый старт",
-        "shortDescription": "Начало работы с Terraform",
+      "shortDescription": "Начало работы с Terraform",
+      "metaDescription": "",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 0,

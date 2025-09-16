@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Architecture and description of the basic concepts of the service",
+  "shortDescription": "Architecture and description of the basic concepts of the service",
+  "metaDescription": "Description of the basic concepts when working with Cloud Spark in VK Cloud",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 1,

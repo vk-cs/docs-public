@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Description of the main features of the service 1C:GRM in VK Cloud",
+      "shortDescription": "Description of the main features of the service 1C:GRM in VK Cloud",
+      "metaDescription": "With the help of ready-made infrastructure solutions, VK Cloud, in partnership with 1C Firm, provides an opportunity to quickly connect the entire range of clou",
     "sectionTitle": "About service",
     "icon": "",
     "weight": 1,

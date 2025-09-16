@@ -1,6 +1,7 @@
 {
     "title": "Managing backup plans",
-        "shortDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
+      "shortDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
+      "metaDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
     "sectionTitle": "Managing backup plans",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
   "title": "Практические руководства",
-    "shortDescription": "Сценарии использования сервиса VK Cloud Аккаунт",
+  "shortDescription": "Сценарии использования сервиса VK Cloud Аккаунт",
+  "metaDescription": "Сценарии использования сервиса VK Cloud Аккаунт",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 3,

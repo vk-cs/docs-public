@@ -1,6 +1,7 @@
 {
   "title": "Monitoring DB instances",
-    "shortDescription": "Monitoring of database instances deployed in VK Cloud",
+  "shortDescription": "Monitoring of database instances deployed in VK Cloud",
+  "metaDescription": "",
   "sectionTitle": "Monitoring DB instances",
   "icon": "",
   "weight": 6,

@@ -1,6 +1,7 @@
 {
   "title": "Working with MLflow Deploy instances",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Working with MLflow Deploy instances",
   "sectionTitle": "Working with MLflow Deploy instances",
   "icon": "",
   "weight": 1,

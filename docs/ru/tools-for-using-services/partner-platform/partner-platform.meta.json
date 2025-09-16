@@ -1,6 +1,7 @@
 {
   "title": "Платформа партнера VK Cloud",
-    "shortDescription": "Управление клиентами партнера VK Cloud и их проектами",
+  "shortDescription": "Управление клиентами партнера VK Cloud и их проектами",
+  "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud",
   "sectionTitle": "Платформа партнера VK Cloud",
   "icon": "",
   "isBeta": false,

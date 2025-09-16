@@ -1,6 +1,7 @@
 {
   "title": "Концепции",
-    "shortDescription": "Принципы работы сервиса Cloud Backup",
+  "shortDescription": "Принципы работы сервиса Cloud Backup",
+  "metaDescription": "Описание принципов функционирования сервиса Cloud Backup в VK Cloud.",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 0,

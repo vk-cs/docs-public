@@ -1,6 +1,7 @@
 {
   "title": "Cloud Logging",
-    "shortDescription": "Сервис для сбора и анализа логов",
+  "shortDescription": "Сервис для сбора и анализа логов",
+  "metaDescription": "Cloud Logging: сбор, хранение и обработка логов в облаке VK Cloud",
   "sectionTitle": "Cloud Logging",
   "icon": "",
   "weight": 1,

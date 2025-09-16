@@ -1,6 +1,7 @@
 {
   "title": "Cloud Containers",
-    "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Containers",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Containers",
+  "metaDescription": "Работа с сервисом Cloud Containers с использованием Terraform",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 60,

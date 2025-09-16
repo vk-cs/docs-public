@@ -1,6 +1,7 @@
 {
     "title": "Установка LAMP на Linux",
-        "shortDescription": "Как установить и настроить стек LAMP на Ubuntu 22.04",
+      "shortDescription": "Как установить и настроить стек LAMP на Ubuntu 22.04",
+      "metaDescription": "VK Cloud: как установить и настроить стек LAMP на Ubuntu 22.04",
     "sectionTitle": "Установка LAMP на Linux",
     "icon": "",
     "weight": 5,

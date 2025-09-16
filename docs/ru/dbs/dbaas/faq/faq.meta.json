@@ -1,6 +1,7 @@
 {
     "title": "Вопросы и ответы",
-        "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Databases",
+      "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Databases",
+      "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Databases",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
     "weight": 9,

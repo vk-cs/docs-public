@@ -1,6 +1,7 @@
 {
     "title": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
-        "shortDescription": "Как настроить Ingress-контроллер в связке с HTTP-балансировщиком",
+      "shortDescription": "Как настроить Ingress-контроллер в связке с HTTP-балансировщиком",
+      "metaDescription": "",
     "sectionTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
     "icon": "",
     "weight": 2,

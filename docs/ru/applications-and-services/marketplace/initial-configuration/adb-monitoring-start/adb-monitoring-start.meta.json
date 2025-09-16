@@ -1,6 +1,7 @@
 {
   "title": "Установка и настройка сервиса Мониторинг для Arenadata DB",
-    "shortDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
+  "shortDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
+  "metaDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
   "sectionTitle": "Установка и настройка сервиса Мониторинг для Arenadata DB",
   "icon": "",
   "weight": 19,

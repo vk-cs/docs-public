@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "JHow to create and manage a JupyterHub instance",
+  "shortDescription": "JHow to create and manage a JupyterHub instance",
+  "metaDescription": "Step-by-step instructions",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 4,

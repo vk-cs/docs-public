@@ -1,6 +1,7 @@
 {
   "title": "Агент мониторинга",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Агент мониторинга",
   "sectionTitle": "Агент мониторинга",
   "weight": 1,
   "uuid": "54c68018-6da9-4e6d-b882-228fc9ddcbb4"

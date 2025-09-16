@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Информация о сервисе Cloud Kafka",
+      "shortDescription": "Информация о сервисе Cloud Kafka",
+      "metaDescription": "Cloud Kafka в VK Cloud: информация о сервисе",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
   "title": "Пошаговые инструкции",
-    "shortDescription": "Доступные операции с кластером и его узлами",
+  "shortDescription": "Доступные операции с кластером и его узлами",
+  "metaDescription": "Cloud Containers: операции, которые можно выполнить с кластером Kubernetes и его узлами",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 4,

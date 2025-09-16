@@ -1,6 +1,7 @@
 {
     "title": "Развертывание Ingress-контроллера с TCP-балансировщиком",
-        "shortDescription": "Как настроить Ingress-контроллер в связке с TCP-балансировщиком",
+      "shortDescription": "Как настроить Ingress-контроллер в связке с TCP-балансировщиком",
+      "metaDescription": "",
     "sectionTitle": "Развертывание Ingress-контроллера с TCP-балансировщиком",
     "icon": "",
     "weight": 1,

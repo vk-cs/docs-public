@@ -1,6 +1,7 @@
 {
   "title": "Cloud Networks",
-    "shortDescription": "Servers consolidation into local networks, private DNS, VPN, traffic balancing and filtering",
+  "shortDescription": "Servers consolidation into local networks, private DNS, VPN, traffic balancing and filtering",
+  "metaDescription": "Cloud Networks manages the network access of virtual machines, allows you to add load balancers to them, combine them in networks and subnets, conf",
   "sectionTitle": "Cloud Networks",
   "icon": "",
   "weight": 1,

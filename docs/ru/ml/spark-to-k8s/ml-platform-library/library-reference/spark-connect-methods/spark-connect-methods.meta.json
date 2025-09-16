@@ -1,6 +1,7 @@
 {
   "title": "Работа со Spark Connect",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Список методов библиотеки Cloud ML Platform для работы со Spark Connect.",
   "sectionTitle": "Работа со Spark Connect",
   "icon": "",
   "weight": 6,

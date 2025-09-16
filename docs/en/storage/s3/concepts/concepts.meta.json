@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "The principles of functioning and the device of the Object Storage",
+  "shortDescription": "The principles of functioning and the device of the Object Storage",
+  "metaDescription": "Detailed description of the principles of operation and device of the Object Storage",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

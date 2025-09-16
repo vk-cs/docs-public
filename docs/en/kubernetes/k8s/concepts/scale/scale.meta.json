@@ -1,6 +1,7 @@
 {
     "title": "Scaling cluster nodes",
-        "shortDescription": "How can the cluster adapt to the demands of the workload",
+      "shortDescription": "How can the cluster adapt to the demands of the workload",
+      "metaDescription": "How the cluster can adapt to the demands of the workload.",
     "sectionTitle": "Scaling cluster nodes",
     "icon": "",
     "weight": 7,

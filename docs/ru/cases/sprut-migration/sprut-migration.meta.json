@@ -1,6 +1,7 @@
 {
   "title": "Миграция в SDN Sprut",
-    "shortDescription": "Как перенести проект в SDN Sprut",
+  "shortDescription": "Как перенести проект в SDN Sprut",
+  "metaDescription": "Как перенести проект в SDN Sprut",
   "sectionTitle": "Миграция в SDN Sprut",
   "icon": "",
   "weight": 13,

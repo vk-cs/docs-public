@@ -1,6 +1,7 @@
 {
   "title": "Практические руководства",
-    "shortDescription": "Примеры использования сервиса JupyterHub",
+  "shortDescription": "Примеры использования сервиса JupyterHub",
+  "metaDescription": "Примеры использования сервиса JupyterHub.",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 5,

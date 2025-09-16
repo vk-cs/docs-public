@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "How the Flink service works in VK Cloud: functional features and internal architecture",
+  "shortDescription": "How the Flink service works in VK Cloud: functional features and internal architecture",
+  "metaDescription": "How the Flink service works in VK Cloud: functional features and internal architecture",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

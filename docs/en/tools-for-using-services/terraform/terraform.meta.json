@@ -1,6 +1,7 @@
 {
   "title": "Terraform",
-    "shortDescription": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests",
+  "shortDescription": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests",
+  "metaDescription": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests.",
   "sectionTitle": "Terraform",
   "icon": "",
   "weight": 4,

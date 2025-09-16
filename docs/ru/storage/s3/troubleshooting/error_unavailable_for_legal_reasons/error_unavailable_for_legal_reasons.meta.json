@@ -1,6 +1,7 @@
 {
   "title": "Ошибка 451 при загрузке данных в S3",
-    "shortDescription": "Что делать, если появилась ошибка 451 Unavailable For Legal Reasons",
+  "shortDescription": "Что делать, если появилась ошибка 451 Unavailable For Legal Reasons",
+  "metaDescription": "Что делать, если появилась ошибка 451 Unavailable For Legal Reasons",
   "sectionTitle": "Ошибка 451 при загрузке данных в S3",
   "icon": "",
   "weight": 3,

@@ -1,6 +1,7 @@
 {
     "title": "VPN",
-        "shortDescription": "Особенности использования VPN в VK Cloud",
+      "shortDescription": "Особенности использования VPN в VK Cloud",
+      "metaDescription": "",
     "sectionTitle": "VPN",
     "icon": "",
     "weight": 6,

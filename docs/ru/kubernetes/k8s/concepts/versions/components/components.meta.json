@@ -1,6 +1,7 @@
 {
     "title": "Версии компонентов Kubernetes",
-        "shortDescription": "Какие версии компонентов и аддонов поддерживаются в кластерах VK Cloud",
+      "shortDescription": "Какие версии компонентов и аддонов поддерживаются в кластерах VK Cloud",
+      "metaDescription": "Сервис Cloud Containers: какие версии компонентов и аддонов поддерживаются в кластерах VK Cloud",
     "sectionTitle": "Версии компонентов Kubernetes",
     "icon": "",
     "weight": 3,

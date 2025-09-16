@@ -1,6 +1,7 @@
 {
     "title": "Generation of credentials",
-        "shortDescription": "How to generate a user ID and password to connect to the Cloud Logging service",
+      "shortDescription": "How to generate a user ID and password to connect to the Cloud Logging service",
+      "metaDescription": "VK Cloud: how to generate a user ID and password to connect to the Cloud Logging service",
     "sectionTitle": "Generation of credentials",
     "icon": "",
     "weight": 1,

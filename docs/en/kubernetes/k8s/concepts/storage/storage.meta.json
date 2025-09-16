@@ -1,6 +1,7 @@
 {
     "title": "Storage in cluster",
-        "shortDescription": "Integration of Kubernetes clusters with storage services",
+      "shortDescription": "Integration of Kubernetes clusters with storage services",
+      "metaDescription": "",
     "sectionTitle": "Storage in cluster",
     "icon": "",
     "weight": 5,

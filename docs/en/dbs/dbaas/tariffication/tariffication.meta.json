@@ -1,6 +1,7 @@
 {
     "title": "Tariffication",
-        "shortDescription": "Rates for receiving VK Cloud services",
+      "shortDescription": "Rates for receiving VK Cloud services",
+      "metaDescription": "Rates for receiving VK Cloud services",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 7,

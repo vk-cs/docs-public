@@ -1,6 +1,7 @@
 {
   "title": "Приглашение клиента",
-    "shortDescription": "Как пригласить клиента в VK Cloud",
+  "shortDescription": "Как пригласить клиента в VK Cloud",
+  "metaDescription": "Описание процесса приглашения клиента в VK Cloud",
   "sectionTitle": "Приглашение клиента",
   "icon": "",
   "weight": 1,
