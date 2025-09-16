@@ -26,10 +26,19 @@ import {
     SatoriIndexPreparer,
 } from '@vk-tech/d11n-preparer/preparers';
 
-const satoriSupportedEnvs = ['devint', 'stage', 'production'];
+const satoriSupportedEnvs = ['production'];
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
 console.debug('TARGET_ENV', TARGET_ENV);
+console.debug('SETTINGS', {
+    settings: {
+        satoriIndexPreparer: {
+            apiBaseUrl: process.env.SATORI_API_URL ?? '',
+            baseUrl: process.env.SATORI_BASE_URL ?? '',
+            apiKey: (process.env?.SATORI_API_KEY || '').length,
+        },
+    }
+});
 
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
@@ -66,7 +75,7 @@ export const config = {
         // npx preparer start checkup
         checkup: [
             LinksWithHashChecker, // Проверка ссылок с хешем на портале
-            ...(satoriSupportedEnvs.includes(TARGET_ENV) ? [LaunchPreparer, FolderStructureChecker, MetaParamUuidPreparer, OriginalTreeCachePreparer, SatoriIndexPreparer]: [])
+            // ...(satoriSupportedEnvs.includes(TARGET_ENV) ? [LaunchPreparer, FolderStructureChecker, MetaParamUuidPreparer, OriginalTreeCachePreparer, SatoriIndexPreparer]: [])
         ],
     },
     settings: {
