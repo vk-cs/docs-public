@@ -1,6 +1,7 @@
 {
     "title": "Worker node group settings",
-        "shortDescription": "List of all worker node group settings",
+      "shortDescription": "List of all worker node group settings",
+      "metaDescription": "",
     "sectionTitle": "Worker node group settings",
     "icon": "",
     "weight": 2,

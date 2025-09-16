@@ -1,6 +1,7 @@
 {
   "title": "Quick start",
-    "shortDescription": "Description and basic information on using the object processing platform.",
+  "shortDescription": "Description and basic information on using the object processing platform.",
+  "metaDescription": "Description and basic information on using the object processing platform.",
   "sectionTitle": "Quick start",
   "icon": "",
   "weight": 2,

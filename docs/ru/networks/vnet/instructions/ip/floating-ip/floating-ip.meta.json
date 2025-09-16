@@ -1,6 +1,7 @@
 {
     "title": "Floating IP-адреса",
-        "shortDescription": "Добавление, удаление, привязка Floating IP-адресов и другие операции",
+      "shortDescription": "Добавление, удаление, привязка Floating IP-адресов и другие операции",
+      "metaDescription": "",
     "sectionTitle": "Floating IP-адреса",
     "icon": "",
     "weight": 1,

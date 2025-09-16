@@ -1,6 +1,7 @@
 {
     "title": "How to Set Up Centralized Logging for Docker Swarm with Fluentd",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Hardware configuration To run this monitoring scenario, install and configure servers using the following hardware: Docker on",
     "sectionTitle": "How to set up centralized logging for Docker Swarm using Fluentd",
     "icon": "",
     "weight": 0,

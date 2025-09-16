@@ -1,6 +1,7 @@
 {
     "title": "Мониторинг PostgreSQL",
-        "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
+      "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
+      "metaDescription": "",
     "sectionTitle": "Мониторинг PostgreSQL",
     "icon": "",
     "uuid": "27d26b64-a0c0-495b-9d03-bff1068b8b15"

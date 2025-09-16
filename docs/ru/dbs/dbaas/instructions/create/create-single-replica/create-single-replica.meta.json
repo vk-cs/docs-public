@@ -1,6 +1,7 @@
 {
     "title": "Конфигурации Single и Master-Replica",
-        "shortDescription": "Как развернуть инстанс БД в конфигурации Single или Master-Replica",
+      "shortDescription": "Как развернуть инстанс БД в конфигурации Single или Master-Replica",
+      "metaDescription": "Cloud Databases VK Cloud: создание инстанса БД в конфигурациях Single и Master-Replica",
     "sectionTitle": "Конфигурации Single и Master-Replica",
     "icon": "",
     "weight": 1,

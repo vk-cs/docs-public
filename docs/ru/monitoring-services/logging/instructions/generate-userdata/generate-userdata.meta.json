@@ -1,6 +1,7 @@
 {
     "title": "Генерация учетных данных",
-        "shortDescription": "Как сгенерировать ID пользователя и пароль для подключения к сервису Cloud Logging",
+      "shortDescription": "Как сгенерировать ID пользователя и пароль для подключения к сервису Cloud Logging",
+      "metaDescription": "VK Cloud: как сгенерировать ID пользователя и пароль для подключения к сервису Cloud Logging",
     "sectionTitle": "Генерация учетных данных",
     "icon": "",
     "weight": 1,

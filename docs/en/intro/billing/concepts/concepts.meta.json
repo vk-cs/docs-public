@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Billing system: balance, payment methods, features for individuals and legal entities",
+  "shortDescription": "Billing system: balance, payment methods, features for individuals and legal entities",
+  "metaDescription": "VK Cloud: the concept of balance in the platform, what payment methods are available to individuals and legal entities, how accounting documents are generated, the difference between working with individuals and legal entities in the platform",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

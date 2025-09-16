@@ -1,6 +1,7 @@
 {
   "title": "Quick start",
-    "shortDescription": "Getting started with the MLFlow Deploy service",
+  "shortDescription": "Getting started with the MLFlow Deploy service",
+  "metaDescription": "Quick start",
   "sectionTitle": "Quick start",
   "icon": "",
   "weight": 0,

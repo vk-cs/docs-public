@@ -1,6 +1,7 @@
 {
     "title": "Managing cluster resources",
-        "shortDescription": "How to manage cluster's Kubernetes resources via management console",
+      "shortDescription": "How to manage cluster's Kubernetes resources via management console",
+      "metaDescription": "VK Cloud containers: managing cluster's Kubernetes resources via management console.",
     "sectionTitle": "Managing cluster resources",
     "icon": "",
     "weight": 4,

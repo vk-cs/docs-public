@@ -1,6 +1,7 @@
 {
   "title": "Секция schemas",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Секция schemas в JSON-файле конфигурации SaaS-приложения",
   "sectionTitle": "Секция schemas",
   "weight": 5,
   "uuid": "4bdde308-3854-41d5-b242-131983dc0245"

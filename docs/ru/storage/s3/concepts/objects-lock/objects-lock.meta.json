@@ -1,6 +1,7 @@
 {
   "title": "Object Lock",
-    "shortDescription": "Блокировка объектов от удаления и перезаписи",
+  "shortDescription": "Блокировка объектов от удаления и перезаписи",
+  "metaDescription": "Блокировка объектов от удаления и перезаписи",
   "sectionTitle": "Object Lock",
   "icon": "",
   "weight": 4,

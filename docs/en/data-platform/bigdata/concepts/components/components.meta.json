@@ -1,6 +1,7 @@
 {
     "title": "Components",
-        "shortDescription": "Available components for installation in the cluster, templates of component sets",
+      "shortDescription": "Available components for installation in the cluster, templates of component sets",
+      "metaDescription": "VK Cloud: available components for installation in the cluster, templates of component sets",
     "sectionTitle": "Components",
     "icon": "",
     "weight": 3,

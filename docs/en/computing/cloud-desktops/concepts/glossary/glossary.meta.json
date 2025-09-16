@@ -1,6 +1,7 @@
 {
     "title": "Terminology",
-        "shortDescription": "Basic concepts and objects",
+      "shortDescription": "Basic concepts and objects",
+      "metaDescription": "Basic concepts and objects of the Cloud Desktop service.",
     "sectionTitle": "Terminology",
     "icon": "",
     "weight": 2,

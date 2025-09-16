@@ -1,6 +1,7 @@
 {
   "title": "Working with the event log",
-    "shortDescription": "Tools for viewing and searching event log entries",
+  "shortDescription": "Tools for viewing and searching event log entries",
+  "metaDescription": "Tools for viewing and searching event log entries",
   "sectionTitle": "Working with the event log",
   "icon": "",
   "weight": 2,

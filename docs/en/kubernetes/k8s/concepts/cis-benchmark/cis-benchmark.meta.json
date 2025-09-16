@@ -1,6 +1,7 @@
 {
   "title": "CIS Benchmarks test results for Kubernetes clusters",
-    "shortDescription": "Overview of CIS Benchmarks test results for Kubernetes clusters versions 1.28 – 1.31",
+  "shortDescription": "Overview of CIS Benchmarks test results for Kubernetes clusters versions 1.28 – 1.31",
+  "metaDescription": "",
   "sectionTitle": "CIS Benchmarks test results for Kubernetes clusters",
   "icon": "",
   "weight": 10,

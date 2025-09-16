@@ -1,6 +1,7 @@
 {
   "title": "Load Balancing",
-    "shortDescription": "Load distribution between servers",
+  "shortDescription": "Load distribution between servers",
+  "metaDescription": "",
   "sectionTitle": "Load Balancing",
   "icon": "",
   "weight": 2,

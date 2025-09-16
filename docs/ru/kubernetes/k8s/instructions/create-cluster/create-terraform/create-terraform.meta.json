@@ -1,6 +1,7 @@
 {
     "title": "Создание кластера с помощью Terraform",
-        "shortDescription": "Как создать кластер c помощью Terraform",
+      "shortDescription": "Как создать кластер c помощью Terraform",
+      "metaDescription": "",
     "sectionTitle": "Создание кластера с помощью Terraform",
     "icon": "",
     "weight": 2,

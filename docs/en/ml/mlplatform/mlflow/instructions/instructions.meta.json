@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "How to create and manage an MLflow instance",
+  "shortDescription": "How to create and manage an MLflow instance",
+  "metaDescription": "Step-by-step instructions",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 2,

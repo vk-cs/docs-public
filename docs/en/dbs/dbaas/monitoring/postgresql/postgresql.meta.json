@@ -1,6 +1,7 @@
 {
     "title": "Monitoring PostgreSQL",
-        "shortDescription": "Monitoring deployed PostgreSQL instances",
+      "shortDescription": "Monitoring deployed PostgreSQL instances",
+      "metaDescription": "",
     "sectionTitle": "Monitoring PostgreSQL",
     "icon": "",
     "uuid": "5df5a2ca-427b-48cc-8409-ce5c61490496"

@@ -1,6 +1,7 @@
 {
   "title": "Image recognition",
-    "shortDescription": "Methods and tools for recognizing objects, faces, videos and other objects using Vision.",
+  "shortDescription": "Methods and tools for recognizing objects, faces, videos and other objects using Vision.",
+  "metaDescription": "Methods and tools for recognizing objects, faces, videos and other objects using Vision.",
   "sectionTitle": "Image recognition",
   "icon": "",
   "weight": 3,

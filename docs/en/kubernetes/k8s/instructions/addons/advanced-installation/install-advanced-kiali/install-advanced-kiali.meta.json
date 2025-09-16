@@ -1,6 +1,7 @@
 {
     "title": "Kiali",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "VK Cloud containers service: configuring and installing the Kiali add-on.",
     "sectionTitle": "Kiali",
     "icon": "",
     "weight": 10,

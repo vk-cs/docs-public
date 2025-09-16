@@ -1,6 +1,7 @@
 {
   "title": "Cloud Flink",
-    "shortDescription": "Потоковая обработка и передача данных из источников в целевые системы",
+  "shortDescription": "Потоковая обработка и передача данных из источников в целевые системы",
+  "metaDescription": "Сервис для создания и управления кластерами Apache Flink в инфраструктуре VK Cloud",
   "sectionTitle": "Cloud Flink",
   "icon": "",
   "weight": 7,

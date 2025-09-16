@@ -1,6 +1,7 @@
 {
   "title": "Information security",
-    "shortDescription": "Solutions to improve the security of working with the VK Cloud",
+  "shortDescription": "Solutions to improve the security of working with the VK Cloud",
+  "metaDescription": "Solutions to improve the security of working with the VK Cloud",
   "sectionTitle": "Information security",
   "icon": "",
   "weight": 4,

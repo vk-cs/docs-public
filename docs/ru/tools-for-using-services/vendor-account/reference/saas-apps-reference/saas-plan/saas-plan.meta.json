@@ -1,6 +1,7 @@
 {
   "title": "Параметры тарифного плана",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Параметры тарифного плана в JSON-файле конфигурации SaaS-приложения",
   "sectionTitle": "Параметры тарифного плана",
   "weight": 2,
   "uuid": "5a65d7b2-8c93-401c-b7d5-3dcb209e4129"

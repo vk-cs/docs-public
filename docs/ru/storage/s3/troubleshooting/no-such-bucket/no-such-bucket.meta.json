@@ -1,6 +1,7 @@
 {
   "title": "При работе с бакетом через AWS CLI возникает ошибка NoSuchBucket",
   "shortDescription": "Что делать, если при выполнении команды для существующего бакета возвращается ошибка NoSuchBucket",
+  "metaDescription": "Что делать, если при выполнении команды для существующего бакета возвращается ошибка NoSuchBucket",
   "sectionTitle": "При работе с бакетом через AWS CLI возникает ошибка NoSuchBucket",
   "icon": "",
   "weight": 7,

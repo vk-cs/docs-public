@@ -1,6 +1,7 @@
 {
   "title": "Подключение к кластеру с помощью Lens",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Как подключиться к кластеру Kubernetes с помощью Lens",
   "sectionTitle": "Подключение к кластеру с помощью Lens",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Распознавание лиц",
-        "shortDescription": "Методы API для распознавания лиц",
+      "shortDescription": "Методы API для распознавания лиц",
+      "metaDescription": "Для распознавания лиц используются четыре метода API: Set\nRecognize\nDelete\nTruncate Рассмотрим каждый из них подробнее. Set Данный метод позволяет установи",
     "sectionTitle": "Распознавание лиц",
     "icon": "",
     "weight": 0,

@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "How the CDN service works",
+  "shortDescription": "How the CDN service works",
+  "metaDescription": "The operating and design description of the CDN VK Cloud service",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 1,

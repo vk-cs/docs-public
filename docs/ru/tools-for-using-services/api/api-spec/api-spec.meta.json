@@ -1,6 +1,7 @@
 {
   "title": "Спецификация API",
-    "shortDescription": "Спецификации публичных API платформы VK Cloud",
+  "shortDescription": "Спецификации публичных API платформы VK Cloud",
+  "metaDescription": "",
   "sectionTitle": "Спецификация API",
   "icon": "",
   "weight": 2,

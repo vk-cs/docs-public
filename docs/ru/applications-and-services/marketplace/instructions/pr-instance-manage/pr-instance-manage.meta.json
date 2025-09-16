@@ -1,6 +1,7 @@
 {
     "title": "Управление инстансом сервиса",
-        "shortDescription": "Управление подключенными инстансами сервисов (SaaS и image-based)",
+      "shortDescription": "Управление подключенными инстансами сервисов (SaaS и image-based)",
+      "metaDescription": "Marketplace VK Cloud: операции по управлению развернутыми SaaS и image-based инстансами сервисов",
     "sectionTitle": "Управление инстансом сервиса",
     "icon": "",
     "weight": 2,

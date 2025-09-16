@@ -1,6 +1,7 @@
 {
     "title": "Regions",
-        "shortDescription": "What is a region, what regions exist in VK Cloud",
+      "shortDescription": "What is a region, what regions exist in VK Cloud",
+      "metaDescription": "What is a region, what regions exist in VK Cloud.",
     "sectionTitle": "Regions",
     "icon": "",
     "weight": 4,

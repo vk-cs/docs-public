@@ -1,6 +1,7 @@
 {
   "title": "Terraform",
-    "shortDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов",
+  "shortDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов.",
   "sectionTitle": "Terraform",
   "icon": "",
   "weight": 6,

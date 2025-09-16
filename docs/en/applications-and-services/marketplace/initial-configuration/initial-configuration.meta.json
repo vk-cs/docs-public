@@ -1,6 +1,7 @@
 {
   "title": "Configuring marketplace services",
-    "shortDescription": "Deploying services in a project and getting started with them",
+  "shortDescription": "Deploying services in a project and getting started with them",
+  "metaDescription": "Marketplace VK Cloud: deployment and initial configuration of services",
   "sectionTitle": "Configuring marketplace services",
   "icon": "",
   "weight": 2,

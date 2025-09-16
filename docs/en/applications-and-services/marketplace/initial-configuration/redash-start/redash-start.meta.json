@@ -1,6 +1,7 @@
 {
     "title": "Redash 10.1 deployment",
-        "shortDescription": "Deploying the Redash service for data visualization tasks",
+      "shortDescription": "Deploying the Redash service for data visualization tasks",
+      "metaDescription": "Marketplace VK Cloud: steps to deploy the Redash 10.1.0 service for data visualization tasks to the target project",
     "sectionTitle": "Redash 10.1 deployment",
     "icon": "",
     "weight": 8,

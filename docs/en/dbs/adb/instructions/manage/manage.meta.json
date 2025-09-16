@@ -1,6 +1,7 @@
 {
   "title": "Managing cluster",
-    "shortDescription": "Scaling cluster resources and deleting an ADB cluster",
+  "shortDescription": "Scaling cluster resources and deleting an ADB cluster",
+  "metaDescription": "Arenadata DB as a Service VK Cloud: instructions for managing a deployed cluster",
   "sectionTitle": "Managing cluster",
   "icon": "",
   "weight": 2,

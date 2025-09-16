@@ -1,6 +1,7 @@
 {
     "title": "Установка Gatekeeper",
-        "shortDescription": "Как установить контроллер Gatekeeper",
+      "shortDescription": "Как установить контроллер Gatekeeper",
+      "metaDescription": "",
     "sectionTitle": "Установка Gatekeeper",
     "icon": "",
     "weight": 2,

@@ -1,6 +1,7 @@
 {
   "title": "Secure token",
-    "shortDescription": "Обзор особенностей технологии Secure token для защиты файлов CDN-ресурса от нежелательного скачивания",
+  "shortDescription": "Обзор особенностей технологии Secure token для защиты файлов CDN-ресурса от нежелательного скачивания",
+  "metaDescription": "CDN VK Cloud: обзор особенностей технологии Secure token для организации ограниченного, временного, платного доступа к контенту CDN-ресурса.",
   "sectionTitle": "Secure token",
   "icon": "",
   "weight": 3,

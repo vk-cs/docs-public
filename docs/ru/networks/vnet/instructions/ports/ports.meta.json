@@ -1,6 +1,7 @@
 {
     "title": "Порты",
-        "shortDescription": "Базовые операции с портами OpenStack",
+      "shortDescription": "Базовые операции с портами OpenStack",
+      "metaDescription": "",
     "sectionTitle": "Порты",
     "icon": "",
     "weight": 2,

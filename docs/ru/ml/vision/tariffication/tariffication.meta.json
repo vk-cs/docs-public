@@ -1,6 +1,7 @@
 {
     "title": "Тарификация",
-        "shortDescription": "Тарифы и стоимость",
+      "shortDescription": "Тарифы и стоимость",
+      "metaDescription": "Тарификация услуг сервиса.",
     "sectionTitle": "Тарификация",
     "icon": "",
     "weight": 7,

@@ -1,6 +1,7 @@
 {
     "title": "Traffic restriction",
-        "shortDescription": "How to restrict network traffic with IP Source Guard and firewall",
+      "shortDescription": "How to restrict network traffic with IP Source Guard and firewall",
+      "metaDescription": "",
     "sectionTitle": "Traffic restriction",
     "icon": "",
     "weight": 4,

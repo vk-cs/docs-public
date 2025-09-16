@@ -1,6 +1,7 @@
 {
     "title": "About the service",
-        "shortDescription": "Overview of the service capabilities and tasks to be solved",
+      "shortDescription": "Overview of the service capabilities and tasks to be solved",
+      "metaDescription": "Overview of Spark service capabilities in Kubernetes implemented on VK Cloud",
     "sectionTitle": "About the service",
     "icon": "",
     "weight": 0,

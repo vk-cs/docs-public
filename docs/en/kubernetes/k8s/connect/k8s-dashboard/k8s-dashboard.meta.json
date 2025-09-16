@@ -1,6 +1,7 @@
 {
     "title": "Connecting to cluster using Kubernetes Dashboard",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Cloud Logging",
-    "shortDescription": "Service for collecting and analyzing logs",
+  "shortDescription": "Service for collecting and analyzing logs",
+  "metaDescription": "Cloud Logging: collecting, storing, and processing logs in the cloud",
   "sectionTitle": "Cloud Logging",
   "icon": "",
   "weight": 1,

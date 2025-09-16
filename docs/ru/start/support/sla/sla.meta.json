@@ -1,6 +1,7 @@
 {
   "title": "SLA",
-    "shortDescription": "Соглашение об уровне обслуживания между VK Cloud и пользователями",
+  "shortDescription": "Соглашение об уровне обслуживания между VK Cloud и пользователями",
+  "metaDescription": "Договор об уровне предоставляемого сервиса между VK Cloud и организацией-клиентом",
   "sectionTitle": "SLA",
   "icon": "",
   "weight": 2,

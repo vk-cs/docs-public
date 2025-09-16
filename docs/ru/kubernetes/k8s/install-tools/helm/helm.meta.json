@@ -1,6 +1,7 @@
 {
     "title": "Установка Helm",
-        "shortDescription": "Как установить пакетный менеджер Helm",
+      "shortDescription": "Как установить пакетный менеджер Helm",
+      "metaDescription": "",
     "sectionTitle": "Установка Helm",
     "icon": "",
     "weight": 1,

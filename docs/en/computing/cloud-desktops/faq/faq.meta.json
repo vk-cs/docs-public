@@ -1,6 +1,7 @@
 {
     "title": "FAQ",
-        "shortDescription": "Answers to frequently asked questions about the service",
+      "shortDescription": "Answers to frequently asked questions about the service",
+      "metaDescription": "Answers to frequently asked questions about the Cloud Desktop service.",
     "sectionTitle": "FAQ",
     "icon": "",
     "weight": 6,

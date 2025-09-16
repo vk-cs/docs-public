@@ -1,6 +1,7 @@
 {
     "title": "Payment methods",
-        "shortDescription": "Available payment methods depending on the region",
+      "shortDescription": "Available payment methods depending on the region",
+      "metaDescription": "VK Cloud: available payment methods depending on the region",
     "sectionTitle": "Payment methods",
     "icon": "",
     "weight": 3,

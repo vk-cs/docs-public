@@ -1,6 +1,7 @@
 {
   "title": "How-to guides",
-    "shortDescription": "Cloud ML Platform scenarios",
+  "shortDescription": "Cloud ML Platform scenarios",
+  "metaDescription": "Description of scenarios for working with the Cloud ML Platform.",
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 5,

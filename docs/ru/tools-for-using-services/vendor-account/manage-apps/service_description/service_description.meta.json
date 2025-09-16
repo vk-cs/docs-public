@@ -1,6 +1,7 @@
 {
   "title": "Заполнение описания сервиса для магазина",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Заполнение описания сервиса для магазина",
   "sectionTitle": "Заполнение описания сервиса для магазина",
   "weight": 8,
   "uuid": "f43f54f2-6db1-42dc-8343-e82949c4de12"

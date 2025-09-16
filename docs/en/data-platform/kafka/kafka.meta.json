@@ -1,6 +1,7 @@
 {
   "title": "Cloud Kafka",
-    "shortDescription": "A distributed streaming platform for transferring data between applications",
+  "shortDescription": "A distributed streaming platform for transferring data between applications",
+  "metaDescription": "A service for creating and managing Apache Kafka clusters in the VK Cloud infrastructure",
   "sectionTitle": "Cloud Kafka",
   "icon": "",
   "isBeta": true,

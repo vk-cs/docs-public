@@ -1,6 +1,7 @@
 {
     "title": "Replication",
-        "shortDescription": "Managing database scaling by creating replicas",
+      "shortDescription": "Managing database scaling by creating replicas",
+      "metaDescription": "Managing database scaling by creating replicas",
     "sectionTitle": "Replication",
     "icon": "",
     "weight": 3,

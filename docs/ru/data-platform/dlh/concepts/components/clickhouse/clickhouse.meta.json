@@ -1,6 +1,7 @@
 {
   "title": "ClickHouse в архитектуре Data Lakehouse",
-    "shortDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse на платформе VK Cloud",
+  "shortDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse на платформе VK Cloud",
+  "metaDescription": "Назначение и функции компонента ClickHouse в архитектуре Data Lakehouse",
   "sectionTitle": "ClickHouse",
   "icon": "",
   "weight": 6,

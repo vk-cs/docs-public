@@ -1,6 +1,7 @@
 {
   "title": "Концепции",
-    "shortDescription": "Описание принципов функционирования и устройства Cloud GPU",
+  "shortDescription": "Описание принципов функционирования и устройства Cloud GPU",
+  "metaDescription": "Описание принципов функционирования и устройства Cloud GPU",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,

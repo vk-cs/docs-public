@@ -1,6 +1,7 @@
 {
   "title": "Личный кабинет партнера",
-    "shortDescription": "Пользовательский интерфейс платформы партнера VK Cloud",
+  "shortDescription": "Пользовательский интерфейс платформы партнера VK Cloud",
+  "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud",
   "sectionTitle": "Личный кабинет партнера",
   "icon": "",
   "disableGithub": false,

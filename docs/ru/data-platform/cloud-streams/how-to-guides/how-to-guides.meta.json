@@ -1,6 +1,7 @@
 {
   "title": "Сценарии работы",
-    "shortDescription": "Инструкции по работе с Cloud Streams в VK Cloud",
+  "shortDescription": "Инструкции по работе с Cloud Streams в VK Cloud",
+  "metaDescription": "Сценарии работы",
   "sectionTitle": "Сценарии работы",
   "icon": "",
   "weight": 4,

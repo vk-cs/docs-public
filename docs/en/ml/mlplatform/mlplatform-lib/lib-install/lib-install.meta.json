@@ -1,6 +1,7 @@
 {
   "title": "Installing the library",
-    "shortDescription": "How to prepare the environment for the library and install it",
+  "shortDescription": "How to prepare the environment for the library and install it",
+  "metaDescription": "How to prepare the environment for the library and install it",
   "sectionTitle": "Installing the library",
   "icon": "",
   "weight": 1,

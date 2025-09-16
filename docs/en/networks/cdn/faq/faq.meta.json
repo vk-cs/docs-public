@@ -1,6 +1,7 @@
 {
     "title": "FAQ",
-        "shortDescription": "Frequently asked questions about CDN service",
+      "shortDescription": "Frequently asked questions about CDN service",
+      "metaDescription": "Frequently asked questions about CDN service",
     "sectionTitle": "FAQ",
     "icon": "",
     "weight": 5,

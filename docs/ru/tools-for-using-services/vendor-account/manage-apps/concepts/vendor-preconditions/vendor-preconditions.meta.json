@@ -1,6 +1,7 @@
 {
   "title": "Требования к сервисам",
-    "shortDescription": "Требования к сервисам, размещаемым на платформе VK Cloud",
+  "shortDescription": "Требования к сервисам, размещаемым на платформе VK Cloud",
+  "metaDescription": "Требования к сервисам, размещаемым на платформе VK Cloud",
   "sectionTitle": "Требования к сервисам",
   "weight": 2,
   "uuid": "e0c7ee72-7250-4598-82c2-db92b4b2cb17"

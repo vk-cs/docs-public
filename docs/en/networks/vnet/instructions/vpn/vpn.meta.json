@@ -1,6 +1,7 @@
 {
     "title": "VPN tunnels",
-        "shortDescription": "Adding, deleting, editing VPN tunnels and other operations",
+      "shortDescription": "Adding, deleting, editing VPN tunnels and other operations",
+      "metaDescription": "",
     "sectionTitle": "VPN tunnels",
     "icon": "",
     "weight": 6,

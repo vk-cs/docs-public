@@ -1,6 +1,7 @@
 {
     "title": "Managing key pairs",
-        "shortDescription": "Available operations with SSH keys on the platform",
+      "shortDescription": "Available operations with SSH keys on the platform",
+      "metaDescription": "Available operations with SSH keys on the VK Cloud platform.",
     "sectionTitle": "Managing key pairs",
     "icon": "",
     "weight": 3,

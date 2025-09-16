@@ -1,6 +1,7 @@
 {
     "title": "Creating Kubernetes cluster",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Example of creating a Kubernetes cluster using Terraform",
     "sectionTitle": "Creating Kubernetes cluster",
     "icon": "",
     "weight": 1,

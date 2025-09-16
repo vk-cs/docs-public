@@ -1,6 +1,7 @@
 {
     "title": "Connecting to a database",
-        "shortDescription": "How to connect to the database via SSH or SDK",
+      "shortDescription": "How to connect to the database via SSH or SDK",
+      "metaDescription": "Connecting to databases via SSH or using the SDK.",
     "sectionTitle": "Connecting to a database",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Справочник Terraform",
-    "shortDescription": "Основные команды Terraform и примеры манифестов",
+  "shortDescription": "Основные команды Terraform и примеры манифестов",
+  "metaDescription": "Основные команды Terraform и примеры манифестов",
   "sectionTitle": "Справочник Terraform",
   "icon": "",
   "weight": 4,

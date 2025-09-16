@@ -1,6 +1,7 @@
 {
   "title": "Библиотека Cloud ML Platform",
-    "shortDescription": "Информация по работе с библиотекой и справочник методов, применимых к Cloud Spark",
+  "shortDescription": "Информация по работе с библиотекой и справочник методов, применимых к Cloud Spark",
+  "metaDescription": "Документация Python-библиотеки Cloud ML Platform (для Cloud Spark).",
   "sectionTitle": "Библиотека Cloud ML Platform",
   "icon": "",
   "weight": 50,

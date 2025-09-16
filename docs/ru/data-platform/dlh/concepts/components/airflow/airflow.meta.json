@@ -1,6 +1,7 @@
 {
   "title": "Cloud Airflow в архитектуре Data Lakehouse",
-    "shortDescription": "Назначение и функции компонента Cloud Airflow в архитектуре Data Lakehouse на платформе VK Cloud",
+  "shortDescription": "Назначение и функции компонента Cloud Airflow в архитектуре Data Lakehouse на платформе VK Cloud",
+  "metaDescription": "Назначение и функции компонента Cloud Airflow в архитектуре Data Lakehouse",
   "sectionTitle": "Cloud Airflow",
   "icon": "",
   "weight": 5,

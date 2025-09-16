@@ -1,6 +1,7 @@
 {
     "title": "Prefix access keys",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Общая информация Префиксные ключи (prefix access keys) позволяют создать пользователей, для которых доступ ограничен по определенному пути. Данные пользова",
     "sectionTitle": "Prefix access keys",
     "icon": "",
     "weight": 8,

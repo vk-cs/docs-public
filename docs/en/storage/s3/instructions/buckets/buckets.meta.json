@@ -1,6 +1,7 @@
 {
   "title": "Bucket",
-    "shortDescription": "Buckets in Object Storage",
+  "shortDescription": "Buckets in Object Storage",
+  "metaDescription": "Buckets in Object Storage.",
   "sectionTitle": "Bucket",
   "icon": "",
   "weight": 2,

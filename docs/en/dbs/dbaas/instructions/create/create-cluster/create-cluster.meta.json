@@ -1,6 +1,7 @@
 {
     "title": "Cluster configuration",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Cloud Databases VK Cloud: creating a DB instance in the Cluster configuration",
     "sectionTitle": "Cluster configuration",
     "icon": "",
     "weight": 2,

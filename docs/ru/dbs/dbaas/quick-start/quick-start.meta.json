@@ -1,6 +1,7 @@
 {
     "title": "Быстрый старт",
-        "shortDescription": "Как начать работу с сервисом",
+      "shortDescription": "Как начать работу с сервисом",
+      "metaDescription": "Cloud Databases в VK Cloud: как начать работу с сервисом.",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 1,

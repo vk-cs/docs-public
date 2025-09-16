@@ -1,6 +1,7 @@
 {
     "title": "Hosting static websites",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "The Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used",
     "sectionTitle": "Hosting static websites",
     "icon": "",
     "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Cloud ML Platform",
-    "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
+  "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
+  "metaDescription": "Cloud ML Platform это сервис по созданию и работе с инстансами JupyterHub, MLflow и MLflow Deploy",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 1,

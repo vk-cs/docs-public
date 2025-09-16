@@ -1,6 +1,7 @@
 {
     "title": "Диагностика ВМ",
-        "shortDescription": "Как подключиться к ВМ с помощью VNC-консоли и просмотреть логи сообщений",
+      "shortDescription": "Как подключиться к ВМ с помощью VNC-консоли и просмотреть логи сообщений",
+      "metaDescription": "VK Cloud – OpenStack Console, VNC-консоль, журнал сообщений ВМ, логи сообщений ВМ",
     "sectionTitle": "Диагностика ВМ",
     "icon": "",
     "weight": 5,

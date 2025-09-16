@@ -1,6 +1,7 @@
 {
   "title": "Источник данных ivkcs_monitoring_user",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Источник данных ivkcs_monitoring_user",
   "sectionTitle": "Источник данных ivkcs_monitoring_user",
   "uuid": "91a4c37e-7908-43c1-8dd3-8aa2acccc032",
   "weight": 3

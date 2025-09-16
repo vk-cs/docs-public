@@ -1,6 +1,7 @@
 {
   "title": "Файловое хранилище",
-    "shortDescription": "Файловое хранилище в VK Cloud",
+  "shortDescription": "Файловое хранилище в VK Cloud",
+  "metaDescription": "Файловое хранилище в VK Cloud",
   "sectionTitle": "Файловое хранилище",
   "weight": 3,
   "uuid": "d9f279a5-2235-4ff0-ad54-dc311f3884b6"

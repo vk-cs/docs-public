@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Description of the operating principles and structure of Cloud GPU",
+  "shortDescription": "Description of the operating principles and structure of Cloud GPU",
+  "metaDescription": "Description of the operating principles and structure of Cloud GPU",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

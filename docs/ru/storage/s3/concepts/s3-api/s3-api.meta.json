@@ -1,6 +1,7 @@
 {
     "title": "API Object Storage",
-        "shortDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов",
+      "shortDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов",
+      "metaDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов.",
     "sectionTitle": "API Object Storage",
     "icon": "",
     "weight": 3,

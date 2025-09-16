@@ -1,6 +1,7 @@
 {
     "title": "Удаление",
-        "shortDescription": "Как удалить кластер больших данных из проекта с помощью личного кабинета или с помощью REST API",
+      "shortDescription": "Как удалить кластер больших данных из проекта с помощью личного кабинета или с помощью REST API",
+      "metaDescription": "VK Cloud: как удалить кластер Cloud Big Data из проекта",
     "sectionTitle": "Удаление",
     "icon": "",
     "weight": 4,

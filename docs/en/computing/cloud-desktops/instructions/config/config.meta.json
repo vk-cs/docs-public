@@ -1,6 +1,7 @@
 {
     "title": "Setting up the service",
-        "shortDescription": "Configuring a network, a connection to an AD or LDAP user directory, and other service parameters",
+      "shortDescription": "Configuring a network, a connection to an AD or LDAP user directory, and other service parameters",
+      "metaDescription": "Configuring a network, a connection to an AD or LDAP user directory, and other service parameters.",
     "sectionTitle": "Setting up the service",
     "icon": "",
     "weight": 1,

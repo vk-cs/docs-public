@@ -1,6 +1,7 @@
 {
     "title": "Managing a desktop pool",
-        "shortDescription": "Viewing a list of desktop pools, managing pool desktops, deleting a pool",
+      "shortDescription": "Viewing a list of desktop pools, managing pool desktops, deleting a pool",
+      "metaDescription": "Managing a created desktop pool in VK Cloud.",
     "sectionTitle": "Managing a desktop pool",
     "icon": "",
     "weight": 2,

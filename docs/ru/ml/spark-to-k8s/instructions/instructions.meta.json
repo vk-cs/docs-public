@@ -1,6 +1,7 @@
 {
   "title": "Пошаговые инструкции",
-    "shortDescription": "Настройка и управление кластерами Spark",
+  "shortDescription": "Настройка и управление кластерами Spark",
+  "metaDescription": "Spark VK Cloud: стандартные операции по настройке и управлению кластерами.",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "relativeSections": [

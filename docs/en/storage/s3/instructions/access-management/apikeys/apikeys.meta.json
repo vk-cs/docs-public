@@ -1,6 +1,7 @@
 {
     "title": "API keys",
-        "shortDescription": "Generate access keys for user",
+      "shortDescription": "Generate access keys for user",
+      "metaDescription": "Generate access keys for user",
     "sectionTitle": "API Keys",
     "icon": "",
     "weight": 0,

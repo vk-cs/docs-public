@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Basic concepts related to virtual machines",
+      "shortDescription": "Basic concepts related to virtual machines",
+      "metaDescription": "Cloud Servers — virtual machines, disks, availability zone, operating system, image, file storage, backup, licenses",
     "sectionTitle": "About service",
     "weight": 0,
     "uuid": "2586c86d-9565-4346-ba85-17a52c1356b3",

@@ -1,6 +1,7 @@
 {
   "title": "Launching jobs in a Spark cluster",
-    "shortDescription": "How to launch jobs in a Spark cluster in VK Cloud",
+  "shortDescription": "How to launch jobs in a Spark cluster in VK Cloud",
+  "metaDescription": "Spark VK Cloud: Launching applications and jobs.",
   "sectionTitle": "Launching jobs in a Spark cluster",
   "icon": "",
   "weight": 0,

@@ -1,6 +1,7 @@
 {
   "title": "Ресурс ivkcs_ssh_keypair",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Ресурс ivkcs_ssh_keypair",
   "sectionTitle": "Ресурс ivkcs_ssh_keypair",
   "uuid": "eea31316-890f-4cb4-a624-0cda33dd9781",
   "weight": 8

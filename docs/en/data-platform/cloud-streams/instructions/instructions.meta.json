@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Settings for Cloud Streams clusters in your account",
+  "shortDescription": "Settings for Cloud Streams clusters in your account",
+  "metaDescription": "Manage Cloud Streams clusters from your VK Cloud account.",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Ошибка x-amz-content-sha256 при работе с AWS CLI v2",
-    "shortDescription": "При работе с объектным хранилищем появляется сообщение `x-amz-content-sha256 must be UNSIGNED-PAYLOAD`",
+  "shortDescription": "При работе с объектным хранилищем появляется сообщение `x-amz-content-sha256 must be UNSIGNED-PAYLOAD`",
+  "metaDescription": "При работе с объектным хранилищем появляется сообщение `x-amz-content-sha256 must be UNSIGNED-PAYLOAD`",
   "sectionTitle": "Ошибка x-amz-content-sha256 при работе с AWS CLI v2",
   "icon": "",
   "weight": 5,

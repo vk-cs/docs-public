@@ -1,6 +1,7 @@
 {
   "title": "Anycast IP-адреса",
-    "shortDescription": "Добавление, удаление, привязка Anycast IP-адресов и другие операции",
+  "shortDescription": "Добавление, удаление, привязка Anycast IP-адресов и другие операции",
+  "metaDescription": "",
   "sectionTitle": "Anycast IP-адреса",
   "icon": "",
   "weight": 2,

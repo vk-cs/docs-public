@@ -1,6 +1,7 @@
 {
   "title": "Quick start",
-    "shortDescription": "Basic operations when working with analytical databases",
+  "shortDescription": "Basic operations when working with analytical databases",
+  "metaDescription": "Basic operations when working with analytical databases.",
   "sectionTitle": "Quick start",
   "icon": "",
   "weight": 1,

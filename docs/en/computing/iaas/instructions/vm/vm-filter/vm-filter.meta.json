@@ -1,6 +1,7 @@
 {
   "title": "Searching and filtering VM",
-    "shortDescription": "How to find a VM you need by name or settings",
+  "shortDescription": "How to find a VM you need by name or settings",
+  "metaDescription": "How to find a VM you need by name or settings",
   "sectionTitle": "Searching and filtering VM",
   "icon": "",
   "weight": 6,

@@ -1,6 +1,7 @@
 {
     "title": "About the service",
-        "shortDescription": "Features of the Data Platform UI Console service",
+      "shortDescription": "Features of the Data Platform UI Console service",
+      "metaDescription": "Data Platform UI Console в VK Cloud: information about the service",
     "sectionTitle": "About the service",
     "icon": "",
     "weight": 1,

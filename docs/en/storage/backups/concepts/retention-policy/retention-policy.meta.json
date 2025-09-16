@@ -1,6 +1,7 @@
 {
   "title": "Backup storage policies",
-    "shortDescription": "Approaches to storing and deleting backups on the VK CLoud platform",
+  "shortDescription": "Approaches to storing and deleting backups on the VK CLoud platform",
+  "metaDescription": "",
   "sectionTitle": "Backup storage policies",
   "icon": "",
   "weight": 3,

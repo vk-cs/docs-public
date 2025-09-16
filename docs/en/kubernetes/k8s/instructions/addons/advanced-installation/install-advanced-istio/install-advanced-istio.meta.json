@@ -1,6 +1,7 @@
 {
     "title": "Istio",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "VK Cloud containers service: configuring and installing the Istio add-on.",
     "sectionTitle": "Istio",
     "icon": "",
     "weight": 8,

@@ -1,6 +1,7 @@
 {
     "title": "Example integration on Python",
-        "shortDescription": "Recognition of persons by adding a person to the database",
+      "shortDescription": "Recognition of persons by adding a person to the database",
+      "metaDescription": "Let's try to recognize the faces in the photo: Download the Smarty.PY file.Python ExamPles/Python/Smarty.py \\ -u",
     "sectionTitle": "Example integration on Python",
     "icon": "",
     "weight": 0,

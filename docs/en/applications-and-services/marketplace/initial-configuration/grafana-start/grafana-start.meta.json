@@ -1,6 +1,7 @@
 {
     "title": "Grafana deployment",
-        "shortDescription": "Deployment of Grafana 10 service in the project",
+      "shortDescription": "Deployment of Grafana 10 service in the project",
+      "metaDescription": "Marketplace VK Cloud: steps to deploy the Grafana 10 service to the target project",
     "sectionTitle": "Grafana deployment",
     "icon": "",
     "weight": 7,

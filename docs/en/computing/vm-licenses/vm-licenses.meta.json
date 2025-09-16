@@ -1,6 +1,7 @@
 {
   "title": "VM Licenses",
-    "shortDescription": "A set of licensed software products, as well as the terms of their use on the VK Cloud platform",
+  "shortDescription": "A set of licensed software products, as well as the terms of their use on the VK Cloud platform",
+  "metaDescription": "A set of licensed software products, as well as the terms of their use on the VK Cloud platform.",
   "sectionTitle": "VM Licenses",
   "icon": "",
   "weight": 4,

@@ -1,6 +1,7 @@
 {
     "title": "Быстрый старт",
-        "shortDescription": "Начало работы с виртуальными сетями через сервис Cloud Networks",
+      "shortDescription": "Начало работы с виртуальными сетями через сервис Cloud Networks",
+      "metaDescription": "Начало работы с сервисом Cloud Networks в VK Cloud.",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 1,

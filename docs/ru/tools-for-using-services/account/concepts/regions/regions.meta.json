@@ -1,6 +1,7 @@
 {
     "title": "Регионы",
-        "shortDescription": "Что такое регион, какие регионы существуют в VK Cloud",
+      "shortDescription": "Что такое регион, какие регионы существуют в VK Cloud",
+      "metaDescription": "Что такое регион, какие регионы существуют в VK Cloud.",
     "sectionTitle": "Регионы",
     "icon": "",
     "weight": 5,

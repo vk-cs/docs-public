@@ -1,6 +1,7 @@
 {
   "title": "CI/CD на базе GitLab",
-    "shortDescription": "Как автоматизировать развертывание приложения в кластер Kubernetes с использованием GitLab",
+  "shortDescription": "Как автоматизировать развертывание приложения в кластер Kubernetes с использованием GitLab",
+  "metaDescription": "Сценарии использования: инструкции по автоматизации развертывания с помощью GitLab",
   "sectionTitle": "CI/CD на базе GitLab",
   "icon": "",
   "weight": 4,

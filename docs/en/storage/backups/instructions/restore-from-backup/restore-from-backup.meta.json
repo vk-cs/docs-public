@@ -1,6 +1,7 @@
 {
     "title": "Restoring from backups",
-        "shortDescription": "Restoring a VM or DB instance from a backup",
+      "shortDescription": "Restoring a VM or DB instance from a backup",
+      "metaDescription": "Restoring a VM or DB instance from a backup",
     "sectionTitle": "Restoring from backups",
     "icon": "",
     "weight": 4,

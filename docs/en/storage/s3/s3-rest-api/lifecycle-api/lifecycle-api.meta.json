@@ -1,6 +1,7 @@
 {
     "title": "Lifecycle",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "All available methods for working with object lifecycle: Get Bucket Lifecycle Configuration - View the lifecycle configuration in a bucket\nConfigure Bucket L",
     "sectionTitle": "Lifecycle",
     "icon": "",
     "weight": 5,

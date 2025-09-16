@@ -1,6 +1,7 @@
 {
   "title": "Ошибка при интеграции с S3",
-    "shortDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
+  "shortDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
+  "metaDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
   "sectionTitle": "Ошибка при интеграции с S3",
   "icon": "",
   "weight": 4,

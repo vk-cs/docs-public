@@ -1,6 +1,7 @@
 {
   "title": "Updating identity federation certificate",
-    "shortDescription": "How to update federated access certificate in VK Cloud manually or set up automatic update",
+  "shortDescription": "How to update federated access certificate in VK Cloud manually or set up automatic update",
+  "metaDescription": "How to update federated access certificate in VK Cloud manually or set up automatic update",
   "sectionTitle": "Updating identity federation certificate",
   "icon": "",
   "weight": 2,

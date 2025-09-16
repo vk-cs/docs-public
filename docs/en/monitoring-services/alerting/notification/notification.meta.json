@@ -1,6 +1,7 @@
 {
   "title": "Notification channels",
-    "shortDescription": "Instructions for creating and managing notification channels in Cloud Alerting",
+  "shortDescription": "Instructions for creating and managing notification channels in Cloud Alerting",
+  "metaDescription": "",
   "sectionTitle": "Notification channels",
   "icon": "",
   "weight": 0,

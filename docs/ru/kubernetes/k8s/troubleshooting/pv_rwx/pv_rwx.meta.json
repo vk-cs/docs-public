@@ -1,6 +1,7 @@
 {
   "title": "Не работает режим RWX",
-    "shortDescription": "Проблемы при использовании режима доступа к тому ReadWriteMany (RWX)",
+  "shortDescription": "Проблемы при использовании режима доступа к тому ReadWriteMany (RWX)",
+  "metaDescription": "Проблемы при использовании режима доступа к тому ReadWriteMany (RWX)",
   "sectionTitle": "Не работает режим RWX",
   "icon": "",
   "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Ресурс ivkcs_agent_exec",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Ресурс ivkcs_agent_exec",
   "sectionTitle": "Ресурс ivkcs_agent_exec",
   "uuid": "f6b7940c-84ec-4b5c-8276-02bc8393efef",
   "weight": 3

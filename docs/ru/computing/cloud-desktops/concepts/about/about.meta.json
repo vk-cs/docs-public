@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Принцип работы и возможности сервиса",
+      "shortDescription": "Принцип работы и возможности сервиса",
+      "metaDescription": "Принцип работы и возможности сервиса.",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "VK Cloud Disk Performance",
-        "shortDescription": "Performance characteristics of different types of disks on the VK Cloud platform",
+      "shortDescription": "Performance characteristics of different types of disks on the VK Cloud platform",
+      "metaDescription": "SLA for VK Cloud platform disks. Disk Performance Characteristics",
     "sectionTitle": "VK Cloud Disk Performance",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Постоянные тома и PVC",
-        "shortDescription": "Как использовать Persistent Volume Claim разных типов для работы с постоянными томами",
+      "shortDescription": "Как использовать Persistent Volume Claim разных типов для работы с постоянными томами",
+      "metaDescription": "",
     "sectionTitle": "Постоянные тома и PVC",
     "icon": "",
     "weight": 5,

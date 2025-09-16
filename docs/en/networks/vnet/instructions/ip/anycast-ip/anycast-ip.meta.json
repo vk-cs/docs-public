@@ -1,6 +1,7 @@
 {
   "title": "Anycast IP addresses",
-    "shortDescription": "Adding, removing, binding anycast IP addresses and other operations",
+  "shortDescription": "Adding, removing, binding anycast IP addresses and other operations",
+  "metaDescription": "Adding, removing, binding anycast IP addresses and other operations",
   "sectionTitle": "Anycast IP addresses",
   "icon": "",
   "weight": 2,

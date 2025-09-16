@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Преимущества дистрибутива Cloud Streams",
+      "shortDescription": "Преимущества дистрибутива Cloud Streams",
+      "metaDescription": "Преимущества Cloud Streams",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

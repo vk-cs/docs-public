@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Обзор возможностей сервиса и решаемых задач",
+      "shortDescription": "Обзор возможностей сервиса и решаемых задач",
+      "metaDescription": "Обзор возможностей сервиса Spark в Kubernetes, реализованном на VK Cloud",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Creating a service instance and managing it's components",
+  "shortDescription": "Creating a service instance and managing it's components",
+  "metaDescription": "Cloud Trino in VK Cloud: creating a service instance, managing the instance and it's components",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

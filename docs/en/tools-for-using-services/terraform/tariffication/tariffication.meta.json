@@ -1,6 +1,7 @@
 {
     "title": "Billing",
-        "shortDescription": "The cost of the service and features of its billing",
+      "shortDescription": "The cost of the service and features of its billing",
+      "metaDescription": "",
     "sectionTitle": "Billing",
     "icon": "",
     "weight": 2,

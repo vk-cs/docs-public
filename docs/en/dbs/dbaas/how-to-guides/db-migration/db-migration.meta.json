@@ -1,6 +1,7 @@
 {
     "title": "Migration from local databases",
-        "shortDescription": "How to migrate a local database to a VK Cloud DBMS instance",
+      "shortDescription": "How to migrate a local database to a VK Cloud DBMS instance",
+      "metaDescription": "Migration of a local database to a deployed instance of the VK Cloud DBMS.",
     "sectionTitle": "Migration from local databases",
     "icon": "",
     "uuid": "48955f3f-64e0-4156-8b2d-c66e270d6d39"

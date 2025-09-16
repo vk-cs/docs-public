@@ -1,6 +1,7 @@
 {
     "title": "Static routing",
-        "shortDescription": "Adding and deleting static routes of advanced router",
+      "shortDescription": "Adding and deleting static routes of advanced router",
+      "metaDescription": "",
     "sectionTitle": "Static routing",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Возможности сервиса Cloud Databases и варианты его использования",
+      "shortDescription": "Возможности сервиса Cloud Databases и варианты его использования",
+      "metaDescription": "Возможности сервиса Cloud Databases и варианты его использования",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

@@ -1,6 +1,7 @@
 {
     "title": "Запуск триггера",
-        "shortDescription": "Запуск триггера после его отключения",
+      "shortDescription": "Запуск триггера после его отключения",
+      "metaDescription": "",
     "sectionTitle": "Запуск триггера",
     "icon": "",
     "weight": 3,

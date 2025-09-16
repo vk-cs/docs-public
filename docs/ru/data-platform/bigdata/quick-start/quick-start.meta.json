@@ -1,6 +1,7 @@
 {
     "title": "Быстрый старт",
-        "shortDescription": "Начало работы с сервисом Cloud Big Data",
+      "shortDescription": "Начало работы с сервисом Cloud Big Data",
+      "metaDescription": "VK Cloud: как начать работу с сервисом Cloud Big Data",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "additionalUuids": [

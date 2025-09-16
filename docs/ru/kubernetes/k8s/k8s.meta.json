@@ -1,6 +1,7 @@
 {
   "title": "Cloud Containers",
-    "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Kubernetes",
+  "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Kubernetes",
+  "metaDescription": "",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 4,

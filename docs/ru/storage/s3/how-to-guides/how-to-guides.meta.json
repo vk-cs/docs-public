@@ -1,6 +1,7 @@
 {
   "title": "Практические руководства",
-    "shortDescription": "Сценарии использования сервиса Object Storage",
+  "shortDescription": "Сценарии использования сервиса Object Storage",
+  "metaDescription": "Сценарии использования сервиса Object Storage VK Cloud.",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 5,

@@ -1,6 +1,7 @@
 {
     "title": "Network types",
-        "shortDescription": "Types of networks you can work with in the service",
+      "shortDescription": "Types of networks you can work with in the service",
+      "metaDescription": "VK Cloud virtual networks: types of networks you can work with in the service.",
     "sectionTitle": "Network types",
     "icon": "",
     "weight": 7,

@@ -1,6 +1,7 @@
 {
     "title": "Creating a cluster from management console",
-        "shortDescription": "How to create a cluster from management console",
+      "shortDescription": "How to create a cluster from management console",
+      "metaDescription": "",
     "sectionTitle": "Creating a cluster from management console",
     "icon": "",
     "weight": 1,

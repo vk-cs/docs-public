@@ -1,6 +1,7 @@
 {
   "title": "Kubernetes reference",
-    "shortDescription": "Basic Kubernetes concepts and objects, and examples of how to interact with them.",
+  "shortDescription": "Basic Kubernetes concepts and objects, and examples of how to interact with them.",
+  "metaDescription": "",
   "sectionTitle": "Kubernetes reference",
   "icon": "",
   "weight": 8,

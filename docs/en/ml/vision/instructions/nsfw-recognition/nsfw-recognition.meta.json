@@ -1,6 +1,7 @@
 {
     "title": "Content recognition 18+",
-        "shortDescription": "API methods for recognizing 18+ content in a photo",
+      "shortDescription": "API methods for recognizing 18+ content in a photo",
+      "metaDescription": "The method allows you to determine if there is NSFW content in the photo (18+)",
     "sectionTitle": "Content recognition 18+",
     "icon": "",
     "weight": 8,

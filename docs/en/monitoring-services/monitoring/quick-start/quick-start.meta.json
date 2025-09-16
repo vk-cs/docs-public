@@ -1,6 +1,7 @@
 {
     "title": "Quick start",
-        "shortDescription": "How to get started with the Cloud Monitoring service using the example of a new virtual machine",
+      "shortDescription": "How to get started with the Cloud Monitoring service using the example of a new virtual machine",
+      "metaDescription": "Пошаговая инструкция по созданию и подключению системы мониторинга, а также управлению версиями агентов.",
     "sectionTitle": "Quick start",
     "icon": "",
     "weight": 1,

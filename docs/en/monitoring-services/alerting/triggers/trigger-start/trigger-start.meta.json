@@ -1,6 +1,7 @@
 {
     "title": "Trigger launch",
-        "shortDescription": "Trigger launch after turning it off",
+      "shortDescription": "Trigger launch after turning it off",
+      "metaDescription": "",
     "sectionTitle": "Trigger launch",
     "icon": "",
     "weight": 3,

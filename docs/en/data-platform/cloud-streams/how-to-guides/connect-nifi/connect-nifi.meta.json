@@ -1,6 +1,7 @@
 {
     "title": "Connecting to NiFi",
-        "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+      "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+      "metaDescription": "Instructions for connecting to the NiFi cluster UI",
     "sectionTitle": "Connecting to NiFi",
     "icon": "",
     "weight": 0,

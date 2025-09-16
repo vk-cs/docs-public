@@ -1,6 +1,7 @@
 {
     "title": "Использование Curl",
-        "shortDescription": "Запрос на распознавание с использованием Curl",
+      "shortDescription": "Запрос на распознавание с использованием Curl",
+      "metaDescription": "1. Автономера: Запрос: curl -k -v",
     "sectionTitle": "Использование Curl",
     "icon": "",
     "weight": 2,

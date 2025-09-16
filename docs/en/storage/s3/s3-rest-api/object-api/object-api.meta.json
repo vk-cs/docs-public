@@ -1,6 +1,7 @@
 {
     "title": "Object",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Operations with Objects: Get - Download an object from a bucket\nUpload - Upload an object to a bucket\nCopy - Copy an object in the bucket\nHeadObject - Get",
     "sectionTitle": "Object",
     "icon": "",
     "weight": 2,

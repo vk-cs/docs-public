@@ -1,6 +1,7 @@
 {
     "title": "Terminology",
-        "shortDescription": "Terms specific to cloud infrastructure",
+      "shortDescription": "Terms specific to cloud infrastructure",
+      "metaDescription": "There are many cloud-specific terms that are often poorly defined. This article provides some details on terminology aspects as well as some concepts for b",
     "sectionTitle": "Terminology",
     "icon": "",
     "weight": 1,

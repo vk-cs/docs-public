@@ -1,6 +1,7 @@
 {
   "title": "Роли и права пользователей Data Platform",
-    "shortDescription": "Ролевая модель в сервисе Data Platform",
+  "shortDescription": "Ролевая модель в сервисе Data Platform",
+  "metaDescription": "Ролевая модель в сервисе Data Platform.",
   "sectionTitle": "Роли и права пользователей Data Platform",
   "icon": "",
   "weight": 2,

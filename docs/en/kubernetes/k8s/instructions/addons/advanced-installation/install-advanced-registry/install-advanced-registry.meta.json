@@ -1,6 +1,7 @@
 {
     "title": "Docker Registry",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Configuring and installing the Docker Registry add-on",
     "sectionTitle": "Docker Registry",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Не получается подключиться к Docker",
-    "shortDescription": "Что делать, если при подключении к Docker возникает ошибка «x509: certificate signed by unknown authority»",
+  "shortDescription": "Что делать, если при подключении к Docker возникает ошибка «x509: certificate signed by unknown authority»",
+  "metaDescription": "Что делать, если при подключении к Docker возникает ошибка «x509: certificate signed by unknown authority»",
   "sectionTitle": "Не получается подключиться к Docker",
   "icon": "",
   "weight": 2,

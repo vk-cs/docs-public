@@ -1,6 +1,7 @@
 {
   "title": "Tariffication",
-    "shortDescription": "Features of Cloud Trino service instances charging, cost calculation",
+  "shortDescription": "Features of Cloud Trino service instances charging, cost calculation",
+  "metaDescription": "Trino VK Cloud: features of service tariffication, cost calculation",
   "sectionTitle": "Tariffication",
   "icon": "",
   "weight": 4,

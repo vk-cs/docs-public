@@ -1,6 +1,7 @@
 {
     "title": "Quotas and limits",
-        "shortDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects",
+      "shortDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects",
+      "metaDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects.",
     "sectionTitle": "Quotas and limits",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Cloud Monitoring",
-    "shortDescription": "Efficient resource monitoring with a wide range of metrics",
+  "shortDescription": "Efficient resource monitoring with a wide range of metrics",
+  "metaDescription": "Cloud Monitoring — a unified monitoring service with which you monitor the status of your cloud applications, performance and more.",
   "sectionTitle": "Cloud Monitoring",
   "icon": "",
   "weight": 3,

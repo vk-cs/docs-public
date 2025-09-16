@@ -1,6 +1,7 @@
 {
     "title": "FAQ",
-        "shortDescription": "Answers to the most frequently asked questions about Cloud ML Platform",
+      "shortDescription": "Answers to the most frequently asked questions about Cloud ML Platform",
+      "metaDescription": "",
     "sectionTitle": "FAQ",
     "icon": "",
     "weight": 5,

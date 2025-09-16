@@ -1,6 +1,7 @@
 {
     "title": "Using Curl",
-        "shortDescription": "Corl recognition request",
+      "shortDescription": "Corl recognition request",
+      "metaDescription": "",
     "sectionTitle": "Using Curl",
     "icon": "",
     "weight": 2,

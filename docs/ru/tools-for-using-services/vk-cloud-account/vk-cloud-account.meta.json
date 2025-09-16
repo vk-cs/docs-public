@@ -1,6 +1,7 @@
 {
   "title": "Аккаунт VK Cloud",
-    "shortDescription": "Аккаунт пользователя VK Cloud",
+  "shortDescription": "Аккаунт пользователя VK Cloud",
+  "metaDescription": "Аккаунт VK Cloud представляет собой интерфейс для управления аккаунтом пользователя.",
   "sectionTitle": "Аккаунт VK Cloud",
   "icon": "",
   "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "CORS",
-        "shortDescription": "Scenarios using and creation of the CORS Rules",
+      "shortDescription": "Scenarios using and creation of the CORS Rules",
+      "metaDescription": "",
     "sectionTitle": "CORS",
     "icon": "",
     "uuid": "e99900d8-2e5c-487b-9c53-73d9e5e2c7ad"

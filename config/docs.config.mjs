@@ -27,7 +27,7 @@ export const config = {
                     '%article.title% – %chapter.title% | Документация %main.projectName%',
             },
             metaDescription: {
-                root: 'Документация %main.projectName% поможет вам с ответом на часто задаваемые вопросы. Здесь вы найдете практические руководства и пошаговые инструкции по работе с VK Cloud.',
+                root: 'Документация %main.projectName%',
                 chapter: '%chapter.title%',
                 section: '%section.title%, %chapter.title%',
                 article: '%article.title%, %chapter.title%',
@@ -44,7 +44,7 @@ export const config = {
                     '%article.title% – %chapter.title% | %main.projectName% Documentation',
             },
             metaDescription: {
-                root: '%main.projectName% Documentation helps you to find FAQ, how-to guides, and step-by-step tutorials.',
+                root: '%main.projectName% Documentation',
                 chapter: '%chapter.title%',
                 section: '%section.title%, %chapter.title%',
                 article: '%article.title%, %chapter.title%',

@@ -1,6 +1,7 @@
 {
   "title": "Connection via API",
-    "shortDescription": "Endpoints for connecting and generating an authentication token to the VK Cloud Services API",
+  "shortDescription": "Endpoints for connecting and generating an authentication token to the VK Cloud Services API",
+  "metaDescription": "Interaction with VK Cloud API is performed through endpoints. In some cases, a token will be required for authentication.",
   "sectionTitle": "Connection via API",
   "icon": "",
   "weight": 1,

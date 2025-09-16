@@ -1,6 +1,7 @@
 {
     "title": "Connecting to add-on web interfaces",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "VK Cloud Containers: connecting to add-on web interfaces",
     "sectionTitle": "Connecting to add-on web interfaces",
     "icon": "",
     "weight": 6,

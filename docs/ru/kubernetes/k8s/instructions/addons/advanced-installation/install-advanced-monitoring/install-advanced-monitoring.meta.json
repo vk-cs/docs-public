@@ -1,6 +1,7 @@
 {
     "title": "Kube Prometheus Stack",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Настройка и установка аддона со средствами мониторинга.",
     "sectionTitle": "Kube Prometheus Stack",
     "icon": "",
     "weight": 11,

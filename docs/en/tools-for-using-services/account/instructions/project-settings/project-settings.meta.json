@@ -1,6 +1,7 @@
 {
   "title": "Working with projects",
-    "shortDescription": "VK Cloud projects management",
+  "shortDescription": "VK Cloud projects management",
+  "metaDescription": "VK Cloud projects management",
   "sectionTitle": "Working with projects",
   "icon": "",
   "weight": 3,

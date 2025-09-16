@@ -1,6 +1,7 @@
 {
   "title": "Troubleshooting",
-    "shortDescription": "Methods for diagnosing and solving typical problems with Cloud Containers",
+  "shortDescription": "Methods for diagnosing and solving typical problems with Cloud Containers",
+  "metaDescription": "Methods for diagnosing and solving typical problems with Cloud Containers",
   "sectionTitle": "Troubleshooting",
   "icon": "",
   "weight": 9,

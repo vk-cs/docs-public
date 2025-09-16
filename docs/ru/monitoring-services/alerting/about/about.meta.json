@@ -1,6 +1,7 @@
 {
     "title": "О сервисе",
-        "shortDescription": "Возможности сервиса Cloud Alerting",
+      "shortDescription": "Возможности сервиса Cloud Alerting",
+      "metaDescription": "",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

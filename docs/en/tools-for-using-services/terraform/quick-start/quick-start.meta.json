@@ -1,6 +1,7 @@
 {
     "title": "Quick start",
-        "shortDescription": "Getting started with Terraform",
+      "shortDescription": "Getting started with Terraform",
+      "metaDescription": "",
     "sectionTitle": "Quick start",
     "icon": "",
     "weight": 0,

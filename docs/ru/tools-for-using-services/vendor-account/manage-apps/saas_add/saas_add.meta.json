@@ -1,6 +1,7 @@
 {
   "title": "Добавление SaaS-приложения в магазин",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Добавление SaaS-приложения в магазин",
   "sectionTitle": "Добавление SaaS-приложения в магазин",
   "weight": 6,
   "uuid": "949bc2f7-274d-48a3-b115-1ccdbd0e5c30"

@@ -1,6 +1,7 @@
 {
     "title": "Using Docker CE",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Using Docker CE",
     "icon": "",
     "weight": 2,

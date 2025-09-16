@@ -1,6 +1,7 @@
 {
     "title": "Подключение к NiFi",
-        "shortDescription": "Инструкция по подключению к UI кластера NiFi",
+      "shortDescription": "Инструкция по подключению к UI кластера NiFi",
+      "metaDescription": "Инструкция по подключению к UI кластера NiFi",
     "sectionTitle": "Подключение к NiFi",
     "icon": "",
     "weight": 0,

@@ -1,6 +1,7 @@
 {
     "title": "Тарификация",
-        "shortDescription": "Особенности тарификации личного кабинета VK Cloud",
+      "shortDescription": "Особенности тарификации личного кабинета VK Cloud",
+      "metaDescription": "Особенности тарификации личного кабинета VK Cloud.",
     "sectionTitle": "Тарификация",
     "icon": "",
     "weight": 4,

@@ -1,6 +1,7 @@
 {
   "title": "Агент",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Агент",
   "sectionTitle": "Агент",
   "weight": 2,
   "uuid": "09afdab5-7018-4002-9ed6-998d3fdef594"

@@ -1,6 +1,7 @@
 {
   "title": "Billing",
-    "shortDescription": "A set of tools for accounting for the use of resources, generating reports, interacting with payment systems and obtaining financial documents",
+  "shortDescription": "A set of tools for accounting for the use of resources, generating reports, interacting with payment systems and obtaining financial documents",
+  "metaDescription": "VK Cloud: the work of billing in the platform, balance management and the formation of accounting documents",
   "sectionTitle": "Billing",
   "icon": "",
   "weight": 3,

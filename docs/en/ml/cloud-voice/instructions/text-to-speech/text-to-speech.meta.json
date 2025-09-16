@@ -1,6 +1,7 @@
 {
     "title": "Speech synthesis",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Speech synthesis",
     "weight": 4,
     "uuid": "6efeac71-0667-448e-b932-2e039e3322ae"

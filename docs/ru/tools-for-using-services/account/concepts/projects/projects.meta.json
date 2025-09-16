@@ -1,6 +1,7 @@
 {
     "title": "Проекты",
-        "shortDescription": "Что такое проект в VK Cloud",
+      "shortDescription": "Что такое проект в VK Cloud",
+      "metaDescription": "Что такое проект в VK Cloud.",
     "sectionTitle": "Проекты",
     "icon": "",
     "weight": 0,

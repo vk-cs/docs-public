@@ -1,6 +1,7 @@
 {
     "title": "Jaeger",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Cloud Containers service in VK Cloud: configuring and installing the Jaeger add-on.",
     "sectionTitle": "Jaeger",
     "icon": "",
     "weight": 9,

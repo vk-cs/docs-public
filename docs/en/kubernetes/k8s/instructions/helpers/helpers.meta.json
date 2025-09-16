@@ -1,6 +1,7 @@
 {
   "title": "Additional information",
-    "shortDescription": "Additional information about Terraform and worker node group settings",
+  "shortDescription": "Additional information about Terraform and worker node group settings",
+  "metaDescription": "",
   "sectionTitle": "Additional information",
   "icon": "",
   "weight": 50,

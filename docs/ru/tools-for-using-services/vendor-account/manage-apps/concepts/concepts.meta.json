@@ -1,6 +1,7 @@
 {
   "title": "Концепции",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Общие характеристики сервисов, добавляемых в магазин приложений Marketplace, и предъявляемые к ним требования",
   "sectionTitle": "Концепции",
   "weight": 1,
   "uuid": "02752860-9094-4b4e-9cee-5cb59991cf53"

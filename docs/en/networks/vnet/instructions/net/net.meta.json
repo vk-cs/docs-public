@@ -1,6 +1,7 @@
 {
     "title": "Networks and subnets",
-        "shortDescription": "How to create, edit, delete networks and subnets",
+      "shortDescription": "How to create, edit, delete networks and subnets",
+      "metaDescription": "",
     "sectionTitle": "Networks and subnets",
     "icon": "",
     "weight": 0,

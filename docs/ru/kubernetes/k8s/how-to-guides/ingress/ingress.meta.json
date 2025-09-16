@@ -1,6 +1,7 @@
 {
   "title": "Использование Ingress",
-    "shortDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress",
+  "shortDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress",
+  "metaDescription": "",
   "sectionTitle": "Использование Ingress",
   "icon": "",
   "weight": 1,

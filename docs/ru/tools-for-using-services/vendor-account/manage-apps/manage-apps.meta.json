@@ -1,6 +1,7 @@
 {
   "title": "Руководство по добавлению сервисов в Marketplace",
-    "shortDescription": "Инструкции по добавлению и обновлению сервисов в Marketplace",
+  "shortDescription": "Инструкции по добавлению и обновлению сервисов в Marketplace",
+  "metaDescription": "Инструкции по добавлению и обновлению сервисов в Marketplace",
   "sectionTitle": "Руководство по добавлению сервисов в Marketplace",
   "weight": 6,
   "uuid": "425f829c-4e2e-400d-8213-6eac33a22253"

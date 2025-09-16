@@ -1,6 +1,7 @@
 {
     "title": "Installing OpenCart on Linux",
-        "shortDescription": "How to install and configure OpenCart 4.0.2.3 on Ubuntu 22.04",
+      "shortDescription": "How to install and configure OpenCart 4.0.2.3 on Ubuntu 22.04",
+      "metaDescription": "VK Cloud: How to install OpenCart 4.0.2.3 on Ubuntu 22.04 operating system",
     "sectionTitle": "Installing OpenCart on Linux",
     "icon": "",
     "weight": 14,

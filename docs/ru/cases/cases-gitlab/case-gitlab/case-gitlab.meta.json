@@ -1,6 +1,7 @@
 {
     "title": "Установка и настройка GitLab",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Как установить и настроить GitLab на виртуальную машину Ubuntu в VK Cloud для настройки авторазвертывания приложений",
     "sectionTitle": "Установка и настройка GitLab",
     "icon": "",
     "weight": 2,

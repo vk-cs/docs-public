@@ -1,6 +1,7 @@
 {
   "title": "About service",
-    "shortDescription": "Features and usage of Cloud Flink",
+  "shortDescription": "Features and usage of Cloud Flink",
+  "metaDescription": "Features and usage of Cloud Flink",
   "sectionTitle": "About service",
   "icon": "",
   "weight": 1,

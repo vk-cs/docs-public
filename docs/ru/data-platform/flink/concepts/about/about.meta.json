@@ -1,6 +1,7 @@
 {
   "title": "О сервисе",
-    "shortDescription": "Возможности и применение сервиса Cloud Flink",
+  "shortDescription": "Возможности и применение сервиса Cloud Flink",
+  "metaDescription": "Возможности и применение сервиса Cloud Flink",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

@@ -1,6 +1,7 @@
 {
   "title": "Cloud Kafka",
-    "shortDescription": "Распределенная потоковая платформа для передачи данных между приложениями",
+  "shortDescription": "Распределенная потоковая платформа для передачи данных между приложениями",
+  "metaDescription": "Сервис для создания и управления кластерами Apache Kafka в инфраструктуре VK Cloud",
   "sectionTitle": "Cloud Kafka",
   "icon": "",
   "weight": 8,

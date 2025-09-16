@@ -1,6 +1,7 @@
 {
   "title": "Diagnostics of desktop creation errors",
-    "shortDescription": "How to diagnose problems with virtual desktop creation",
+  "shortDescription": "How to diagnose problems with virtual desktop creation",
+  "metaDescription": "How to diagnose problems with virtual desktop creation",
   "sectionTitle": "Diagnostics of desktop creation errors",
   "icon": "",
   "weight": 0,

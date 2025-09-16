@@ -1,6 +1,7 @@
 {
     "title": "Vision",
-        "shortDescription": "OpenAPI-спецификация сервиса Vision",
+      "shortDescription": "OpenAPI-спецификация сервиса Vision",
+      "metaDescription": "",
     "sectionTitle": "Vision",
     "icon": "",
     "weight": 1,

@@ -1,6 +1,7 @@
 {
     "title": "Persistent volumes and PVCs",
-        "shortDescription": "How to use Persistent Volume Claim of different types to work with persistent volumes",
+      "shortDescription": "How to use Persistent Volume Claim of different types to work with persistent volumes",
+      "metaDescription": "",
     "sectionTitle": "Persistent volumes and PVCs",
     "icon": "",
     "weight": 5,

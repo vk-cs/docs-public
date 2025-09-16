@@ -1,6 +1,7 @@
 {
   "title": "Использование Gatekeeper",
-    "shortDescription": "Как накладывать ограничения Gatekeeper на ресурсы Kubernetes для соблюдения корпоративных политик",
+  "shortDescription": "Как накладывать ограничения Gatekeeper на ресурсы Kubernetes для соблюдения корпоративных политик",
+  "metaDescription": "",
   "sectionTitle": "Использование Gatekeeper",
   "icon": "",
   "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "Изменение домена для сервиса WordPress",
-    "shortDescription": "Изменение домена и настройка SSL-сертификатов для WordPress",
+  "shortDescription": "Изменение домена и настройка SSL-сертификатов для WordPress",
+  "metaDescription": "Изменение домена и настройка SSL-сертификатов для WordPress",
   "sectionTitle": "Изменение домена для сервиса WordPress",
   "icon": "",
   "weight": 16,

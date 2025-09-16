@@ -1,6 +1,7 @@
 {
   "title": "MLflow Deploy",
-    "shortDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
+  "shortDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
+  "metaDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
   "sectionTitle": "MLflow Deploy",
   "icon": "",
   "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Advanced routers",
-    "shortDescription": "Creating and editing an advanced router, managing interfaces, static and dynamic routs",
+  "shortDescription": "Creating and editing an advanced router, managing interfaces, static and dynamic routs",
+  "metaDescription": "",
   "sectionTitle": "Advanced routers",
   "icon": "",
   "weight": 6,

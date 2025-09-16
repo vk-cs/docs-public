@@ -1,6 +1,7 @@
 {
   "title": "DBMS types",
-    "shortDescription": "Supported DBMS types that can be used in the service",
+  "shortDescription": "Supported DBMS types that can be used in the service",
+  "metaDescription": "Cloud Databases: supported DBMS types in the service",
   "sectionTitle": "DBMS types",
   "icon": "",
   "weight": 1,

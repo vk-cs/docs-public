@@ -1,6 +1,7 @@
 {
     "title": "OpenStack CLI",
-        "shortDescription": "Installation of the OpenStack client and additional packages, authentication in the project",
+      "shortDescription": "Installation of the OpenStack client and additional packages, authentication in the project",
+      "metaDescription": "Using the OpenStack CLI to manage resources on the VK Cloud platform.",
     "sectionTitle": "OpenStack CLI",
     "weight": 1,
     "uuid": "aa7db855-805c-400d-b71a-30e1112121d1",

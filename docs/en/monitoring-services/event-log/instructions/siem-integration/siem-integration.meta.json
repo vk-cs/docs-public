@@ -1,6 +1,7 @@
 {
   "title": "Managing SIEM connections",
-    "shortDescription": "How to create and configure a connection to your SIEM system",
+  "shortDescription": "How to create and configure a connection to your SIEM system",
+  "metaDescription": "How to create and configure a connection to your SIEM system",
   "sectionTitle": "Managing SIEM connections",
   "icon": "",
   "weight": 1,

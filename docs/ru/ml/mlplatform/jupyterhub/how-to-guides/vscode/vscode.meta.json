@@ -1,6 +1,7 @@
 {
     "title": "Подключение к JupyterHub с помощью Visual Studio Code",
-        "shortDescription": "Подключение к серверу JupyterHub в облаке с использованием локального VS Code",
+      "shortDescription": "Подключение к серверу JupyterHub в облаке с использованием локального VS Code",
+      "metaDescription": "JupyterHub и Visual Studio Code.",
     "sectionTitle": "JupyterHub и Visual Studio Code",
     "icon": "",
     "weight": 1,

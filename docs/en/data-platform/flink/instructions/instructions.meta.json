@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Creating an instance of the service and managing its components",
+  "shortDescription": "Creating an instance of the service and managing its components",
+  "metaDescription": "Cloud Flink in VK Cloud: creating an instance of the service, managing the instance and its components",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

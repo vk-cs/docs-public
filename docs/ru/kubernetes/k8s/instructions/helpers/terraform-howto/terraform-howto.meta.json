@@ -1,6 +1,7 @@
 {
     "title": "Использование Terraform",
-        "shortDescription": "Как использовать Terraform при выполнении базовых операций",
+      "shortDescription": "Как использовать Terraform при выполнении базовых операций",
+      "metaDescription": "",
     "sectionTitle": "Использование Terraform",
     "icon": "",
     "weight": 1,

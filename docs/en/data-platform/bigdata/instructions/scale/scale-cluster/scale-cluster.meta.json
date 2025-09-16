@@ -1,6 +1,7 @@
 {
     "title": "Scaling the cluster",
-        "shortDescription": "How to reconfigure resources of a deployed cluster",
+      "shortDescription": "How to reconfigure resources of a deployed cluster",
+      "metaDescription": "Vertical and horizontal scaling of VK Cloud cluster nodes.",
     "sectionTitle": "Scaling the cluster",
     "weight": 1,
     "icon": "",

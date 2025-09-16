@@ -1,6 +1,7 @@
 {
     "title": "Подключение к реестру Docker",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Подключение к реестру Docker",
     "icon": "",
     "weight": 4,

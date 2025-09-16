@@ -1,6 +1,7 @@
 {
     "title": "Limits",
-        "shortDescription": "Important restrictions",
+      "shortDescription": "Important restrictions",
+      "metaDescription": "Service as a whole at the moment service",
     "sectionTitle": "Limits",
     "icon": "",
     "weight": 4,

@@ -1,6 +1,7 @@
 {
   "title": "Компоненты",
-    "shortDescription": "Назначение и функции каждого копонента Data Lakehouse",
+  "shortDescription": "Назначение и функции каждого копонента Data Lakehouse",
+  "metaDescription": "Назначение и функции каждого копонента Data Lakehouse",
   "sectionTitle": "Компоненты",
   "icon": "",
   "weight": 2,

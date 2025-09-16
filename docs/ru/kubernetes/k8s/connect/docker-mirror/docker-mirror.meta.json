@@ -1,6 +1,7 @@
 {
     "title": "Настройка зеркала Docker",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Настройка зеркала Docker",
     "icon": "",
     "weight": 5,

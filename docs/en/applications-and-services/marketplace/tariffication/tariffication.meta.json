@@ -1,6 +1,7 @@
 {
     "title": "Tariffication",
-        "shortDescription": "Features of service billing and cost calculation",
+      "shortDescription": "Features of service billing and cost calculation",
+      "metaDescription": "Marketplace VK Cloud: особенности тарификации сервиса, расчет стоимости",
     "sectionTitle": "Tariffication",
     "icon": "",
     "weight": 4,

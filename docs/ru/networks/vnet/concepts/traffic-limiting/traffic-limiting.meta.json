@@ -1,6 +1,7 @@
 {
     "title": "Ограничение трафика",
-        "shortDescription": "Как ограничивать сетевой трафик с помощью IP Source Guard и файервола",
+      "shortDescription": "Как ограничивать сетевой трафик с помощью IP Source Guard и файервола",
+      "metaDescription": "",
     "sectionTitle": "Ограничение трафика",
     "icon": "",
     "weight": 4,

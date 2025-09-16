@@ -1,6 +1,7 @@
 {
     "title": "Quick start",
-        "shortDescription": "Getting Started with MLflow Service",
+      "shortDescription": "Getting Started with MLflow Service",
+      "metaDescription": "Quick start",
     "sectionTitle": "Quick start",
     "icon": "",
     "weight": 0,

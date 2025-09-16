@@ -1,6 +1,7 @@
 {
     "title": "Язык поисковых запросов",
-        "shortDescription": "Инструменты поиска",
+      "shortDescription": "Инструменты поиска",
+      "metaDescription": "",
     "sectionTitle": "Язык поисковых запросов",
     "icon": "",
     "weight": 5,

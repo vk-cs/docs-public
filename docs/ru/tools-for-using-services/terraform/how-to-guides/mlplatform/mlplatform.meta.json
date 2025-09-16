@@ -1,6 +1,7 @@
 {
   "title": "Cloud ML Platform",
-    "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud ML Platform",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud ML Platform",
+  "metaDescription": "Работа с сервисом Cloud ML Platform с использованием Terraform",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 70,

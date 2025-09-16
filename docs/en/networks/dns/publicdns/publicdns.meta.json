@@ -1,6 +1,7 @@
 {
     "title": "Public DNS",
-        "shortDescription": "Managing DNS zones that are visible on the Internet",
+      "shortDescription": "Managing DNS zones that are visible on the Internet",
+      "metaDescription": "DNS as a service DNS is a hierarchical distributed database that allows you to store IP addresses and other data, as well as view information on",
     "sectionTitle": "Public DNS",
     "icon": "",
     "uuid": "0cc58071-0258-4726-89e5-2d3986a51f66"

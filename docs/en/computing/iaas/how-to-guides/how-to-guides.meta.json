@@ -1,7 +1,8 @@
 {
   "title": "How-to guides",
   "sectionTitle": "How-to guides",
-    "shortDescription": "Additional configuration and preparation of a virtual machine for working in the cloud",
+  "shortDescription": "Additional configuration and preparation of a virtual machine for working in the cloud",
+  "metaDescription": "How-to guides",
   "icon": "",
   "weight": 3,
   "uuid": "6175fd4b-6782-459c-93c3-bb112638254a"

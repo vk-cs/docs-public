@@ -1,6 +1,7 @@
 {
   "title": "Вопросы и ответы",
-    "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Containers",
+  "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Containers",
+  "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Containers",
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 9,

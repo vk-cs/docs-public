@@ -1,6 +1,7 @@
 {
     "title": "Available computing resources",
-        "shortDescription": "Available configuration templates and recommendations for selecting a cluster template.",
+      "shortDescription": "Available configuration templates and recommendations for selecting a cluster template.",
+      "metaDescription": "",
     "sectionTitle": "Available computing resources",
     "icon": "",
     "weight": 6,

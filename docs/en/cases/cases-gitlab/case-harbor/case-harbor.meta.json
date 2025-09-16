@@ -1,6 +1,7 @@
 {
     "title": "Installing and configuring Harbor",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "In this article, we'll see how to install and configure the Harbor repositories. After that, you can set up auto-deployment of the application in the cluster",
     "sectionTitle": "Installing and configuring Harbor",
     "icon": "",
     "weight": 3,

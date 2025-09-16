@@ -1,6 +1,7 @@
 {
     "title": "Network in cluster",
-        "shortDescription": "Kubernetes clusters integration with VK Cloud network services",
+      "shortDescription": "Kubernetes clusters integration with VK Cloud network services",
+      "metaDescription": "",
     "sectionTitle": "Network in cluster",
     "icon": "",
     "weight": 4,

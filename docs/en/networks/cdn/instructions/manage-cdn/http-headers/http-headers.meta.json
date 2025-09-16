@@ -1,6 +1,7 @@
 {
     "title": "HTTP headers setting",
-        "shortDescription": "How to add HTTP headers to requests and answers, configure CORS support",
+      "shortDescription": "How to add HTTP headers to requests and answers, configure CORS support",
+      "metaDescription": "How to add HTTP headers to requests and answers, configure CORS support",
     "sectionTitle": "HTTP headers setting",
     "icon": "",
     "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Operations with virtual desktops",
+  "shortDescription": "Operations with virtual desktops",
+  "metaDescription": "Managing desktop pools and desktops in a pool.",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

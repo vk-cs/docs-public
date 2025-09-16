@@ -1,6 +1,7 @@
 {
     "title": "Ограничения",
-        "shortDescription": "Важные ограничения",
+      "shortDescription": "Важные ограничения",
+      "metaDescription": "Сервис в целом В настоящий момент сервис",
     "sectionTitle": "Ограничения",
     "icon": "",
     "weight": 4,

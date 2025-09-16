@@ -1,6 +1,7 @@
 {
     "title": "Object",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Операции с Объектами: Get - Скачать объект из бакета\nUpload - Загрузить объект в бакет\nCopy - Скопировать объект, находящийся в бакете\nHeadObject - Получит",
     "sectionTitle": "Object",
     "icon": "",
     "weight": 3,

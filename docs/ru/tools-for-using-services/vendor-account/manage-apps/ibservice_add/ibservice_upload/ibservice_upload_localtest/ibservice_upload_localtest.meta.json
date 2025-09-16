@@ -1,6 +1,7 @@
 {
   "title": "Локальное тестирование манифеста Terraform",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Локальное тестирование манифеста Terraform",
   "sectionTitle": "Локальное тестирование манифеста Terraform",
   "weight": 3,
   "uuid": "83743852-9b4d-4c5d-8ca1-a46121992e18"

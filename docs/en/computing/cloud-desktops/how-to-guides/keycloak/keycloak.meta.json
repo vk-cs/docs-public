@@ -1,6 +1,7 @@
 {
   "title": "Keycloak integration",
-    "shortDescription": "How to set up Keycloak as an identity provider for Cloud Desktop.",
+  "shortDescription": "How to set up Keycloak as an identity provider for Cloud Desktop.",
+  "metaDescription": "How to set up Keycloak as an identity provider for Cloud Desktop",
   "sectionTitle": "Keycloak integration",
   "icon": "",
   "weight": 3,

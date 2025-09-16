@@ -1,6 +1,7 @@
 {
     "title": "Managing extensions",
-        "shortDescription": "Installing and managing DB instance extensions",
+      "shortDescription": "Installing and managing DB instance extensions",
+      "metaDescription": "Cloud Databases: how to manage DB instance extensions.",
     "sectionTitle": "Managing extensions",
     "icon": "",
     "weight": 4,

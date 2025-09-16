@@ -1,6 +1,7 @@
 {
     "title": "About service",
-        "shortDescription": "Brief description and opportunities of the CDN VK Cloud service",
+      "shortDescription": "Brief description and opportunities of the CDN VK Cloud service",
+      "metaDescription": "Description CDN stands for Content-Delivery Network and is a geographically distributed network infrastructure that optimizes the delivery and distribution",
     "sectionTitle": "About service",
     "icon": "",
     "weight": 0,

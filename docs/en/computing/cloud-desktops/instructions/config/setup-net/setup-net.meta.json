@@ -1,6 +1,7 @@
 {
     "title": "Setting up a network for the service infrastructure",
-        "shortDescription": "Selecting the service network parameters and checking the network connection",
+      "shortDescription": "Selecting the service network parameters and checking the network connection",
+      "metaDescription": "Selecting the service network parameters and checking the network connection.",
     "sectionTitle": "Setting up a network for the service infrastructure",
     "icon": "",
     "weight": 0,

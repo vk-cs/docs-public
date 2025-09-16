@@ -1,6 +1,7 @@
 {
     "title": "Creating a project",
-        "shortDescription": "Creating a project on the VK Cloud platform",
+      "shortDescription": "Creating a project on the VK Cloud platform",
+      "metaDescription": "Description of the procedure for creating a project on the VK Cloud platform.",
     "sectionTitle": "Creating a project",
     "icon": "",
     "weight": 1,

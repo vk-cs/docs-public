@@ -1,6 +1,7 @@
 {
     "title": "Project settings",
-        "shortDescription": "Obtaining the project identifier, renaming the project",
+      "shortDescription": "Obtaining the project identifier, renaming the project",
+      "metaDescription": "Obtaining the project identifier, renaming the project.",
     "sectionTitle": "Project settings",
     "icon": "",
     "weight": 2,

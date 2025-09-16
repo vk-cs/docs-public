@@ -1,6 +1,7 @@
 {
   "title": "VM emergency boot mode",
-    "shortDescription": "Recovering a virtual machine in emergency boot mode",
+  "shortDescription": "Recovering a virtual machine in emergency boot mode",
+  "metaDescription": "Recovering a virtual machine in emergency boot mode",
   "sectionTitle": "VM emergency boot mode",
   "icon": "",
   "weight": 2,

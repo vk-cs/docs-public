@@ -1,6 +1,7 @@
 {
     "title": "Disks",
-        "shortDescription": "Creating, deleting, and configuring disks. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots",
+      "shortDescription": "Creating, deleting, and configuring disks. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots",
+      "metaDescription": "Creating, deleting, and configuring disks. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots.",
     "sectionTitle": "Disks",
     "icon": "",
     "weight": 2,

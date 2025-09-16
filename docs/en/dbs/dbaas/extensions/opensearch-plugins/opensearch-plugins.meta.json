@@ -1,6 +1,7 @@
 {
     "title": "OpenSearch plugins",
-        "shortDescription": "Available OpenSearch plugins",
+      "shortDescription": "Available OpenSearch plugins",
+      "metaDescription": "Available OpenSearch plugins.",
     "sectionTitle": "OpenSearch plugins",
     "icon": "",
     "weight": 2,

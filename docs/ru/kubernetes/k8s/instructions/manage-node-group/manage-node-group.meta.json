@@ -1,6 +1,7 @@
 {
     "title": "Управление группой worker-узлов",
-        "shortDescription": "Как управлять группами worker-узлов Kubernetes с помощью личного кабинета или с помощью Terraform",
+      "shortDescription": "Как управлять группами worker-узлов Kubernetes с помощью личного кабинета или с помощью Terraform",
+      "metaDescription": "",
     "sectionTitle": "Управление группой worker-узлов",
     "icon": "",
     "weight": 3,

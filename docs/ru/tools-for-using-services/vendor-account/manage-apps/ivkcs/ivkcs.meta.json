@@ -1,6 +1,7 @@
 {
   "title": "Справочник по провайдеру VK CS Infra (iVK CS)",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Сведения об источниках данных и ресурсах провайдера VK CS Infra",
   "sectionTitle": "Справочник по провайдеру VK CS Infra (iVK CS)",
   "weight": 8,
   "uuid": "2c84e247-fa72-45f1-9ee1-484633accf2a"

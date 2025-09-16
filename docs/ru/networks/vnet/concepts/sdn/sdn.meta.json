@@ -1,6 +1,7 @@
 {
     "title": "Используемые SDN",
-        "shortDescription": "Какие SDN доступны в VK Cloud, в чем их отличия",
+      "shortDescription": "Какие SDN доступны в VK Cloud, в чем их отличия",
+      "metaDescription": "",
     "sectionTitle": "Используемые SDN",
     "icon": "",
     "weight": 2,

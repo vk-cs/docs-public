@@ -1,6 +1,7 @@
 {
   "title": "About service",
-    "shortDescription": "Specific features and application of the Cloud Trino service",
+  "shortDescription": "Specific features and application of the Cloud Trino service",
+  "metaDescription": "Cloud Trino in VK Cloud: features and application of the service  ",
   "sectionTitle": "About service",
   "icon": "",
   "weight": 1,

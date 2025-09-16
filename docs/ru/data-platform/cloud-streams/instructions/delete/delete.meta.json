@@ -1,6 +1,7 @@
 {
     "title": "Удаление кластера Cloud Streams",
-        "shortDescription": "Описание действий для удаления кластера",
+      "shortDescription": "Описание действий для удаления кластера",
+      "metaDescription": "Удаление кластера Cloud Streams",
     "sectionTitle": "Удаление кластера Cloud Streams",
     "icon": "",
     "weight": 3,

@@ -1,6 +1,7 @@
 {
   "title": "GPU Operator",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Здесь описана настройка и установка аддона GPU Operator.",
   "sectionTitle": "GPU Operator",
   "icon": "",
   "weight": 6,

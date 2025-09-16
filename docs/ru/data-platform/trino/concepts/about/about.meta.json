@@ -1,6 +1,7 @@
 {
   "title": "О сервисе",
-    "shortDescription": "Возможности и применение сервиса Cloud Trino",
+  "shortDescription": "Возможности и применение сервиса Cloud Trino",
+  "metaDescription": "Cloud Trino в VK Cloud: возможности и применение сервиса ",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

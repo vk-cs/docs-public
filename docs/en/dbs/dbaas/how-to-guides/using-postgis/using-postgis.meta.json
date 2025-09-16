@@ -1,6 +1,7 @@
 {
     "title": "Using the PostGIS extension in PostgreSQL and PostgresPro",
-        "shortDescription": "How to get started with the PostGIS extension",
+      "shortDescription": "How to get started with the PostGIS extension",
+      "metaDescription": "Cloud Databases: getting started with the PostGIS extension in PostgreSQL and PostgresPro.",
     "sectionTitle": "Using the PostGIS extension in PostgreSQL and PostgresPro",
     "icon": "",
     "weight": 1,

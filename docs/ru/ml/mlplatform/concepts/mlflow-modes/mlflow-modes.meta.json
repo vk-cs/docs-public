@@ -1,6 +1,7 @@
 {
     "title": "Режимы MLflow",
-        "shortDescription": "Совместное с JupyterHub и отдельное функционирование инстанса MLflow",
+      "shortDescription": "Совместное с JupyterHub и отдельное функционирование инстанса MLflow",
+      "metaDescription": "Совместное с JupyterHub и отдельное функционирование инстанса MLflow",
     "sectionTitle": "Режимы MLflow",
     "icon": "",
     "weight": 2,

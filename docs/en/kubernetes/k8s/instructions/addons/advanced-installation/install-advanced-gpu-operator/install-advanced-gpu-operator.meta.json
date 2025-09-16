@@ -1,6 +1,7 @@
 {
   "title": "GPU Operator",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "The configuration and installation of the GPU Operator add-on is described here.",
   "sectionTitle": "GPU Operator",
   "icon": "",
   "weight": 6,

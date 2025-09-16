@@ -1,6 +1,7 @@
 {
   "title": "Cloud Alerting",
-    "shortDescription": "Service of notifications about changes in key metrics of cloud services",
+  "shortDescription": "Service of notifications about changes in key metrics of cloud services",
+  "metaDescription": "",
   "sectionTitle": "Cloud Alerting",
   "icon": "",
   "weight": 2,

@@ -1,6 +1,7 @@
 {
   "title": "Поддержка VK Tech",
-    "shortDescription": "Как подключить и использовать Telegram-бот для работы с заявками в техническую поддержку VK Tech",
+  "shortDescription": "Как подключить и использовать Telegram-бот для работы с заявками в техническую поддержку VK Tech",
+  "metaDescription": "Как подключить и использовать Telegram-бот для работы с заявками в техническую поддержку VK Tech",
   "sectionTitle": "Поддержка VK Tech",
   "icon": "",
   "weight": 0,

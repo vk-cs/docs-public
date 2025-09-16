@@ -1,6 +1,7 @@
 {
     "title": "Installing Helm",
-        "shortDescription": "How to install the Helm package manager",
+      "shortDescription": "How to install the Helm package manager",
+      "metaDescription": "",
     "sectionTitle": "Installing Helm",
     "icon": "",
     "weight": 1,

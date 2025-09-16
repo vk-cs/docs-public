@@ -1,6 +1,7 @@
 {
     "title": "Microsoft",
-        "shortDescription": "Product licenses from Microsoft",
+      "shortDescription": "Product licenses from Microsoft",
+      "metaDescription": "Licensing of Microsoft products used in VK Cloud virtual machines",
     "sectionTitle": "Microsoft",
     "weight": 0,
     "additionalUuids": [

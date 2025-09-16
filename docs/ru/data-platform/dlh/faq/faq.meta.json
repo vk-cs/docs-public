@@ -1,6 +1,7 @@
 {
   "title": "Вопросы и ответы",
-    "shortDescription": "Ответы на часто задаваемые вопросы об архитектуре Data LakeHouse",
+  "shortDescription": "Ответы на часто задаваемые вопросы об архитектуре Data LakeHouse",
+  "metaDescription": "Data LakeHouse: ответы на часто задаваемые вопросы об архитектуре",
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 6,

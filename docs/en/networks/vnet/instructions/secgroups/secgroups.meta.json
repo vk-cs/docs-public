@@ -1,6 +1,7 @@
 {
     "title": "Firewall rules",
-        "shortDescription": "How to create and delete security groups and more",
+      "shortDescription": "How to create and delete security groups and more",
+      "metaDescription": "",
     "sectionTitle": "Firewall rules",
     "icon": "",
     "weight": 3,

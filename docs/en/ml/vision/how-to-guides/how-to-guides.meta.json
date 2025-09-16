@@ -1,6 +1,7 @@
 {
   "title": "Integration",
-    "shortDescription": "Examples of integration on Python and PHP",
+  "shortDescription": "Examples of integration on Python and PHP",
+  "metaDescription": "",
   "sectionTitle": "Integration",
   "icon": "",
   "weight": 5,

@@ -1,6 +1,7 @@
 {
   "title": "Диски блочного хранения",
-    "shortDescription": "Типы дисков блочного хранения в VK Cloud",
+  "shortDescription": "Типы дисков блочного хранения в VK Cloud",
+  "metaDescription": "Типы дисков блочного хранения в VK Cloud",
   "sectionTitle": "Диски блочного хранения",
   "weight": 1,
   "uuid": "5ff479bb-65a0-407e-b3cf-477981885a55"

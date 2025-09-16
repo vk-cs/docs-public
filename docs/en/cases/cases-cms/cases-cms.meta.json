@@ -1,6 +1,7 @@
 {
   "title": "Installing CMS on Linux",
-    "shortDescription": "How to install and configure various CMS on a family of Linux operating systems",
+  "shortDescription": "How to install and configure various CMS on a family of Linux operating systems",
+  "metaDescription": "Usage scenarios: how to install Joomla, OpenCart, WordPress, 1C-Bitrix based on VK Cloud resources",
   "sectionTitle": "Installing CMS on Linux",
   "icon": "",
   "weight": 2,

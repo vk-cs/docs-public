@@ -1,6 +1,7 @@
 {
     "title": "Connecting to Docker Registry",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "",
     "sectionTitle": "Connecting to Docker Registry",
     "icon": "",
     "weight": 4,

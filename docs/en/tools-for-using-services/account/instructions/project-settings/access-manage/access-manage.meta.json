@@ -1,6 +1,7 @@
 {
     "title": "Access management",
-        "shortDescription": "Adding and removing participants, viewing their roles, enabling mandatory 2FA in the project",
+      "shortDescription": "Adding and removing participants, viewing their roles, enabling mandatory 2FA in the project",
+      "metaDescription": "Adding and removing participants, viewing their roles, enabling mandatory 2FA in the project.",
     "sectionTitle": "Access management",
     "icon": "",
     "weight": 2,

@@ -1,6 +1,7 @@
 {
     "title": "Пример интеграции на Python",
-        "shortDescription": "Распознавание лиц с помощью добавления персоны в базу данных",
+      "shortDescription": "Распознавание лиц с помощью добавления персоны в базу данных",
+      "metaDescription": "Попробуем распознать лица на фотографии: Скачайте файл smarty.py. python examples/python/smarty.py \\ -u",
     "sectionTitle": "Пример интеграции на Python",
     "icon": "",
     "weight": 0,

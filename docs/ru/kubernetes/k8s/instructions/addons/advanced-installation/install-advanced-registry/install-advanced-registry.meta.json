@@ -1,6 +1,7 @@
 {
     "title": "Docker Registry",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Настройка и установка аддона реестра Docker.",
     "sectionTitle": "Docker Registry",
     "icon": "",
     "weight": 3,

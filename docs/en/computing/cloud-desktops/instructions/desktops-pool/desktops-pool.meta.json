@@ -1,6 +1,7 @@
 {
   "title": "Desktop pool",
-    "shortDescription": "Combining desktops in a single resource pool",
+  "shortDescription": "Combining desktops in a single resource pool",
+  "metaDescription": "Combining desktops in a single resource pool.",
   "sectionTitle": "Desktop pool",
   "icon": "",
   "weight": 2,

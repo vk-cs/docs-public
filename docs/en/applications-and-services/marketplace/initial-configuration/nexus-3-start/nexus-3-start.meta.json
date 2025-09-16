@@ -1,6 +1,7 @@
 {
     "title": "Nexus 3 deployment",
-        "shortDescription": "Deployment of Sonatype Nexus 3 service in the project",
+      "shortDescription": "Deployment of Sonatype Nexus 3 service in the project",
+      "metaDescription": "Marketplace VK Cloud: steps to deploy the Sonatype Nexus 3 to the target project",
     "sectionTitle": "Nexus 3 deployment",
     "icon": "",
     "weight": 6,

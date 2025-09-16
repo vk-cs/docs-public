@@ -1,6 +1,7 @@
 {
     "title": "Capsule",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Здесь описана настройка и установка аддона Capsule.",
     "sectionTitle": "Capsule",
     "icon": "",
     "weight": 1,

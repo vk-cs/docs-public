@@ -1,6 +1,7 @@
 {
   "title": "Архитектура сервиса",
-    "shortDescription": "Архитектура сервиса Data LakeHouse",
+  "shortDescription": "Архитектура сервиса Data LakeHouse",
+  "metaDescription": "Архитектура сервиса Data LakeHouse",
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 2,

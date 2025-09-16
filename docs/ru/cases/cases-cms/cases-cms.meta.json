@@ -1,6 +1,7 @@
 {
   "title": "Установка CMS на Linux",
-    "shortDescription": "Как установить и настроить различные CMS на операционные системы семейства Linux",
+  "shortDescription": "Как установить и настроить различные CMS на операционные системы семейства Linux",
+  "metaDescription": "Сценарии использования: как установить Joomla, OpenCart, WordPress, 1С-Битрикс на базе ресурсов VK Cloud.",
   "sectionTitle": "Установка CMS на Linux",
   "icon": "",
   "weight": 2,

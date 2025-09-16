@@ -1,6 +1,7 @@
 {
     "title": "Ingress NGINX",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Настройка и установка аддона Ingress-контроллера.",
     "sectionTitle": "Ingress NGINX",
     "icon": "",
     "weight": 7,

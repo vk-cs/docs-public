@@ -1,6 +1,7 @@
 {
     "title": "Working with service components",
-        "shortDescription": "How to manage service instance components in a project",
+      "shortDescription": "How to manage service instance components in a project",
+      "metaDescription": "Cloud Kafka: managing service instance components in a project",
     "sectionTitle": "Working with service components",
     "icon": "",
     "weight": 2,

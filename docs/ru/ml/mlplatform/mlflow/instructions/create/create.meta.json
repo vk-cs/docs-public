@@ -1,6 +1,7 @@
 {
     "title": "Создание инстанса MLflow",
-        "shortDescription": "Как создать новый инстанс MLflow",
+      "shortDescription": "Как создать новый инстанс MLflow",
+      "metaDescription": "Как создать новый инстанс MLflow",
     "sectionTitle": "Создание инстанса MLflow",
     "icon": "",
     "weight": 1,

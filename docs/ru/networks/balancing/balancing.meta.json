@@ -1,6 +1,7 @@
 {
   "title": "Load Balancing",
-    "shortDescription": "Распределение нагрузки между серверами",
+  "shortDescription": "Распределение нагрузки между серверами",
+  "metaDescription": "",
   "sectionTitle": "Load Balancing",
   "icon": "",
   "weight": 2,

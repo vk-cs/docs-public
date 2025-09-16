@@ -1,6 +1,7 @@
 {
   "title": "Ресурс ivkcs_dns",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Ресурс ivkcs_dns",
   "sectionTitle": "Ресурс ivkcs_dns",
   "uuid": "1945e626-9564-494b-8ff8-07867dca6fa6",
   "weight": 6

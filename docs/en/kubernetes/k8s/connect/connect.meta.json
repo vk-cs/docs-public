@@ -1,6 +1,7 @@
 {
   "title": "Connecting to cluster",
-    "shortDescription": "Ways to connect to a Cloud Containers cluster",
+  "shortDescription": "Ways to connect to a Cloud Containers cluster",
+  "metaDescription": "",
   "sectionTitle": "Connecting to cluster",
   "icon": "",
   "weight": 3,

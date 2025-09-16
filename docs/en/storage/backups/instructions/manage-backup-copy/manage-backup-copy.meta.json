@@ -1,6 +1,7 @@
 {
     "title": "Managing backups",
-        "shortDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
+      "shortDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
+      "metaDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
     "sectionTitle": "Managing backups",
     "icon": "",
     "weight": 3,

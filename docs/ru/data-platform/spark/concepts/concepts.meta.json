@@ -1,6 +1,7 @@
 {
   "title": "Концепции",
-    "shortDescription": "Основные понятия и характеристики сервиса Spark",
+  "shortDescription": "Основные понятия и характеристики сервиса Spark",
+  "metaDescription": "Основные понятия и характеристики сервиса Spark",
   "sectionTitle": "Концепции",
   "weight": 0,
   "uuid": "36aa99c3-f5e7-436a-a74f-26e069876a0b"

@@ -1,6 +1,7 @@
 {
   "title": "Cloud Databases",
-    "shortDescription": "Управляемые и масштабируемые облачные базы данных",
+  "shortDescription": "Управляемые и масштабируемые облачные базы данных",
+  "metaDescription": "Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Tarantool",
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 7,

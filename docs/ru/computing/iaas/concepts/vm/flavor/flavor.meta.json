@@ -1,6 +1,7 @@
 {
   "title": "Шаблоны конфигурации ВМ",
-    "shortDescription": "Шаблоны конфигурации виртуальных машин в VK Cloud",
+  "shortDescription": "Шаблоны конфигурации виртуальных машин в VK Cloud",
+  "metaDescription": "Шаблоны конфигурации виртуальных машин в VK Cloud",
   "sectionTitle": "Шаблоны конфигурации ВМ",
   "weight": 0,
   "uuid": "3f4ab7f5-3680-47a3-91c5-ee59006299e9"

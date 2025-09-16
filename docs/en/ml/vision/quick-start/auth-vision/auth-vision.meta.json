@@ -1,6 +1,7 @@
 {
     "title": "Authorization",
-        "shortDescription": "Authorization of the client on the VK Cloud platform",
+      "shortDescription": "Authorization of the client on the VK Cloud platform",
+      "metaDescription": "To authorize the client on the VK Cloud Vision platform, a token is used, which is transmitted in the request parameter: CURL -K -V",
     "sectionTitle": "Authorization",
     "icon": "",
     "uuid": "cf5fe676-6fa6-44cf-8ae9-3d9f36245521"

@@ -1,6 +1,7 @@
 {
     "title": "Accounting documents",
-        "shortDescription": "What financial documents are provided, in what time frame and how to get them",
+      "shortDescription": "What financial documents are provided, in what time frame and how to get them",
+      "metaDescription": "VK Cloud: financial documents provided, deadlines for their receipt",
     "sectionTitle": "Accounting documents",
     "icon": "",
     "weight": 4,

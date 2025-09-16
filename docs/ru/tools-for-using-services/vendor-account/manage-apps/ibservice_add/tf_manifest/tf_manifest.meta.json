@@ -1,6 +1,7 @@
 {
   "title": "Конфигурация инфраструктуры image-based приложения",
-    "shortDescription": "",
+  "shortDescription": "",
+  "metaDescription": "Конфигурация инфраструктуры image-based приложения",
   "sectionTitle": "Конфигурация инфраструктуры image-based приложения",
   "weight": 5,
   "uuid": "f8034592-6eb5-495b-bd9d-6a2fd03a1bf6"

@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Principles of functioning and design of Cloud Big Data",
+  "shortDescription": "Principles of functioning and design of Cloud Big Data",
+  "metaDescription": "VK Cloud: the design and features of the implementation of the Cloud Big Data service",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

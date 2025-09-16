@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Detailed description of the principles of functioning and structure of Cloud Containers clusters",
+  "shortDescription": "Detailed description of the principles of functioning and structure of Cloud Containers clusters",
+  "metaDescription": "Cloud Containers: a detailed description of the principles of functioning and device of Kubernetes clusters",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,

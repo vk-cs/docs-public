@@ -1,6 +1,7 @@
 {
   "title": "Manila component events",
-    "shortDescription": "Events that the service of file storages reports to Cloud Audit",
+  "shortDescription": "Events that the service of file storages reports to Cloud Audit",
+  "metaDescription": "Events that the service of file storages reports to Cloud Audit",
   "sectionTitle": "Manila component events",
   "icon": "",
   "weight": 2,

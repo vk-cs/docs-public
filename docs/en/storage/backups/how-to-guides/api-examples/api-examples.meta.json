@@ -1,6 +1,7 @@
 {
     "title": "API usage examples",
-        "shortDescription": "Examples of Karboii API requests for creating a backup plan",
+      "shortDescription": "Examples of Karboii API requests for creating a backup plan",
+      "metaDescription": "Examples of Karboii API requests for creating a backup plan.",
     "sectionTitle": "API usage examples",
     "icon": "",
     "weight": 5,

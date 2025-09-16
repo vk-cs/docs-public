@@ -1,6 +1,7 @@
 {
     "title": "Operations with a bank card",
-        "shortDescription": "How to link or unlink a card, set up auto-completion",
+      "shortDescription": "How to link or unlink a card, set up auto-completion",
+      "metaDescription": "VK Cloud: how to link or unlink a card, how to set up auto-completion",
     "sectionTitle": "Operations with a bank card",
     "icon": "",
     "weight": 1,

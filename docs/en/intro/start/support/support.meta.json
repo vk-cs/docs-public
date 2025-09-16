@@ -1,6 +1,7 @@
 {
   "title": "Technical support",
-    "shortDescription": "Information about technical support of services",
+  "shortDescription": "Information about technical support of services",
+  "metaDescription": "Information about technical support of services",
   "sectionTitle": "Technical support",
   "icon": "",
   "weight": 4,

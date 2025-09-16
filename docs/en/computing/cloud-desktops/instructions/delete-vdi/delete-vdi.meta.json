@@ -1,6 +1,7 @@
 {
     "title": "Removing the service infrastructure",
-        "shortDescription": "Permanent removal of the main infrastructure and Cloud Desktop settings",
+      "shortDescription": "Permanent removal of the main infrastructure and Cloud Desktop settings",
+      "metaDescription": "VK Cloud Desktop: Removing the VDI infrastructure",
     "sectionTitle": "Removing the service infrastructure",
     "icon": "",
     "weight": 4,

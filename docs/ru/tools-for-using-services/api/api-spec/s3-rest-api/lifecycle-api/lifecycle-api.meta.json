@@ -1,6 +1,7 @@
 {
     "title": "Lifecycle",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Все доступные методы для работы с жизненным циклом объектов: Get Bucket Lifecycle Configuration - Просмотр конфигурации жизненного цикла в бакете\nConfigure",
     "sectionTitle": "Lifecycle",
     "icon": "",
     "weight": 6,

@@ -1,6 +1,7 @@
 {
   "title": "Authentication and authorization",
-    "shortDescription": "How to get tokens of different types and use them when working with the library",
+  "shortDescription": "How to get tokens of different types and use them when working with the library",
+  "metaDescription": "How to get tokens of different types and use them when working with the library.",
   "sectionTitle": "Authentication and authorisation",
   "icon": "",
   "weight": 2,

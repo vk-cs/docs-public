@@ -1,6 +1,7 @@
 {
     "title": "Creating a pool",
-        "shortDescription": "Creating a new desktop pool",
+      "shortDescription": "Creating a new desktop pool",
+      "metaDescription": "Creating a new pool of desktops in the Cloud Desktop service.",
     "sectionTitle": "Creating a pool",
     "icon": "",
     "weight": 1,

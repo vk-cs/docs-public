@@ -1,6 +1,7 @@
 {
     "title": "CORS",
-        "shortDescription": "Сценарии использование и создание правила CORS",
+      "shortDescription": "Сценарии использование и создание правила CORS",
+      "metaDescription": "",
     "sectionTitle": "CORS",
     "icon": "",
     "weight": 2,

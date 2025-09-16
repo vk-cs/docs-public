@@ -1,6 +1,7 @@
 {
     "title": "Standard routers",
-        "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
+      "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
+      "metaDescription": "",
     "sectionTitle": "Standard routers",
     "icon": "",
     "weight": 5,

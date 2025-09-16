@@ -1,6 +1,7 @@
 {
     "title": "Пример интеграции на PHP",
-        "shortDescription": "Запрос на распознавание на PHP",
+      "shortDescription": "Запрос на распознавание на PHP",
+      "metaDescription": "Подробный пример смотрите в статье «Пример интеграции на Python». В этой статье мы выполним запросы persons/recognize, persons/set и persons/delete. Для эт",
     "sectionTitle": "Пример интеграции на PHP",
     "icon": "",
     "weight": 1,

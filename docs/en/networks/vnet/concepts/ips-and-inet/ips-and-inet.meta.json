@@ -1,6 +1,7 @@
 {
     "title": "Network addressing and internet access",
-        "shortDescription": "How IP addresses are assigned and Internet access is organized",
+      "shortDescription": "How IP addresses are assigned and Internet access is organized",
+      "metaDescription": "",
     "sectionTitle": "Network addressing and internet access",
     "icon": "",
     "weight": 8,

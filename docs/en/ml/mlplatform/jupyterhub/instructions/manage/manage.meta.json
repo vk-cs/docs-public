@@ -1,6 +1,7 @@
 {
     "title": "Managing JupyterHub instance",
-        "shortDescription": "How to add users, change settings, share data, stop, reboot, or delete instance",
+      "shortDescription": "How to add users, change settings, share data, stop, reboot, or delete instance",
+      "metaDescription": "Managing JupyterHub instance",
     "sectionTitle": "Managing JupyterHub instance",
     "icon": "",
     "weight": 4,

@@ -1,6 +1,7 @@
 {
   "title": "Neutron and Sprut components events",
-    "shortDescription": "Events that the service of virtual networks reports to Cloud Audit",
+  "shortDescription": "Events that the service of virtual networks reports to Cloud Audit",
+  "metaDescription": "Events that the service of virtual networks reports to Cloud Audit",
   "sectionTitle": "Neutron and Sprut components events",
   "icon": "",
   "weight": 3,

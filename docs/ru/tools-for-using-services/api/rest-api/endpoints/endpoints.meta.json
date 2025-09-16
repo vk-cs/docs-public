@@ -1,6 +1,7 @@
 {
     "title": "Эндпоинты API",
-        "shortDescription": "Список эндпоинтов VK Cloud API для текущего региона",
+      "shortDescription": "Список эндпоинтов VK Cloud API для текущего региона",
+      "metaDescription": "Список эндпоинтов VK Cloud API для текущего региона",
     "sectionTitle": "Эндпоинты API",
     "icon": "",
     "weight": 3,

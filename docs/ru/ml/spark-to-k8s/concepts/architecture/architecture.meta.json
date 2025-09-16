@@ -1,6 +1,7 @@
 {
     "title": "Архитектура сервиса",
-        "shortDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
+      "shortDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
+      "metaDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
     "sectionTitle": "Архитектура сервиса",
     "icon": "",
     "weight": 2,

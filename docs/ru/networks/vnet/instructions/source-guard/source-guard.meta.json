@@ -1,6 +1,7 @@
 {
   "title": "IP Source Guard",
-    "shortDescription": "Как настроить выход трафика с разрешенных IP-адресов с помощью IP Source Guard",
+  "shortDescription": "Как настроить выход трафика с разрешенных IP-адресов с помощью IP Source Guard",
+  "metaDescription": "Как настроить выход трафика с разрешенных IP-адресов при помощи IP Source Guard",
   "sectionTitle": "IP Source Guard",
   "icon": "",
   "weight": 4,

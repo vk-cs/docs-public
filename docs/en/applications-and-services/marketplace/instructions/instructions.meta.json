@@ -1,6 +1,7 @@
 {
   "title": "Step-by-step instructions",
-    "shortDescription": "Connecting services in your management console and managing service instances",
+  "shortDescription": "Connecting services in your management console and managing service instances",
+  "metaDescription": "Marketplace VK Cloud: standard operations for managing SaaS and image-based services",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

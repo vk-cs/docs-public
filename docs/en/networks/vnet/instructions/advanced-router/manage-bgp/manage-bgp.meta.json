@@ -1,6 +1,7 @@
 {
     "title": "Dynamic routing",
-        "shortDescription": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements",
+      "shortDescription": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements",
+      "metaDescription": "",
     "sectionTitle": "Dynamic routing",
     "icon": "",
     "weight": 4,

@@ -1,6 +1,7 @@
 {
     "title": "Шардирование инстанса БД",
-        "shortDescription": "Управление шардами в СУБД ClickHouse и MongoDB",
+      "shortDescription": "Управление шардами в СУБД ClickHouse и MongoDB",
+      "metaDescription": "Cloud Databases: управление шардами СУБД в VK Cloud",
     "sectionTitle": "Шардирование инстанса БД",
     "icon": "",
     "weight": 4,

@@ -1,6 +1,7 @@
 {
   "title": "О сервисе",
-    "shortDescription": "Обзор сервиса Cloud ClickHouse",
+  "shortDescription": "Обзор сервиса Cloud ClickHouse",
+  "metaDescription": "Обзор сервиса Cloud ClickHouse",
   "sectionTitle": "О сервисе",
   "weight": 0,
   "uuid": "88c4fcb6-f200-49a5-a982-d53c1b72dc0e"

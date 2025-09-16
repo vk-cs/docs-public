@@ -1,6 +1,7 @@
 {
     "title": "ClickHouse",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Базы данных VK Cloud: управление инстансами ClickHouse.",
     "sectionTitle": "ClickHouse",
     "icon": "",
     "weight": 1,

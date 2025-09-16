@@ -1,6 +1,7 @@
 {
   "title": "Вопросы и ответы",
-    "shortDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
+  "shortDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
+  "metaDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 10,

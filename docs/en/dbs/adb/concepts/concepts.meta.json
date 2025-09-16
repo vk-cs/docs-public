@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data",
+  "shortDescription": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data",
+  "metaDescription": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data.",
   "sectionTitle": "Concepts",
   "icon": "",
   "additionalUuids": [

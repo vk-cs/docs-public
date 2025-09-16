@@ -1,6 +1,7 @@
 {
   "title": "Secure token",
-    "shortDescription": "How to restrict access to CDN resource files using Secure token",
+  "shortDescription": "How to restrict access to CDN resource files using Secure token",
+  "metaDescription": "VK Cloud CDN: overview of the Secure token technology used for organizing limited, temporary, paid access to CDN resource content.",
   "sectionTitle": "Secure token",
   "icon": "",
   "weight": 3,

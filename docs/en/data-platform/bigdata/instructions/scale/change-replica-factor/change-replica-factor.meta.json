@@ -1,6 +1,7 @@
 {
     "title": "Configuring the Replication Factor",
-        "shortDescription": "How to configure the replication factor for individual files and the cluster as a whole",
+      "shortDescription": "How to configure the replication factor for individual files and the cluster as a whole",
+      "metaDescription": "VK Cloud: how to configure the replication factor for individual files and the cluster as a whole",
     "sectionTitle": "Configuring the Replication Factor",
     "weight": 2,
     "icon": "",

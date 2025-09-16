@@ -1,6 +1,7 @@
 {
     "title": "Cloud Big Data",
-        "shortDescription": "Управление кластерами с помощью API сервиса Cloud Big Data",
+      "shortDescription": "Управление кластерами с помощью API сервиса Cloud Big Data",
+      "metaDescription": "VK Cloud: управление кластерами с помощью API сервиса Cloud Big Data",
     "sectionTitle": "Cloud Big Data",
     "isBeta": true,
     "hidden": true,

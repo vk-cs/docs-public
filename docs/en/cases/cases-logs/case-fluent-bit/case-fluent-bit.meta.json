@@ -1,6 +1,7 @@
 {
     "title": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
-        "shortDescription": "",
+      "shortDescription": "",
+      "metaDescription": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
     "sectionTitle": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
     "icon": "",
     "weight": 2,

@@ -1,6 +1,7 @@
 {
   "title": "About service",
-    "shortDescription": "Description of the Cloud Backup service and its capabilities",
+  "shortDescription": "Description of the Cloud Backup service and its capabilities",
+  "metaDescription": "Description of the Cloud Backup service and its capabilities",
   "sectionTitle": "About service",
   "icon": "",
   "weight": 1,

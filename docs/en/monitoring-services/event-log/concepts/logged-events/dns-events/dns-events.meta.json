@@ -1,6 +1,7 @@
 {
   "title": "Public DNS events",
-    "shortDescription": "Events that Public DNS reports to Cloud Audit",
+  "shortDescription": "Events that Public DNS reports to Cloud Audit",
+  "metaDescription": "Events that Public DNS reports to Cloud Audit",
   "sectionTitle": "Public DNS events",
   "icon": "",
   "weight": 0,

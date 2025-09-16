@@ -1,6 +1,7 @@
 {
     "title": "Connecting the service",
-        "shortDescription": "Instructions for connecting the service",
+      "shortDescription": "Instructions for connecting the service",
+      "metaDescription": "Instructions for connecting the service",
     "sectionTitle": "Connecting the service",
     "icon": "",
     "weight": 2,

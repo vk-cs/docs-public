@@ -1,6 +1,7 @@
 {
   "title": "Concepts",
-    "shortDescription": "The operating and design description of the Cloud ML Platform service",
+  "shortDescription": "The operating and design description of the Cloud ML Platform service",
+  "metaDescription": "The operating and design description of the Cloud ML Platform service",
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 1,

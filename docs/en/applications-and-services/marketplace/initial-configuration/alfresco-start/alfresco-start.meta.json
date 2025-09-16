@@ -1,6 +1,7 @@
 {
   "title": "Alfresco deployment",
-    "shortDescription": "Deployment of Alfresco for enterprise content management and business process automation",
+  "shortDescription": "Deployment of Alfresco for enterprise content management and business process automation",
+  "metaDescription": "Marketplace VK Cloud: steps to deploy the Alfresco system for enterprise content management and business process automation",
   "sectionTitle": "Alfresco deployment",
   "icon": "",
   "weight": 11,
