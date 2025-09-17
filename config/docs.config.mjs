@@ -66,7 +66,7 @@ export const config = {
     search: {
         type: 'DEFAULT',
         satori: {
-            apiBaseUrl: 'https://satori.devint.vkc.devmail.ru',
+            apiBaseUrl: 'https://cloud.vk.com/search/api',
         },
         assistant: {
             sourceName: 'VK Cloud',

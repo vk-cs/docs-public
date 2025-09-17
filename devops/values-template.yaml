@@ -1,13 +1,13 @@
 env:
   TARGET_ENV: "{{ helm_fronapp_help_TARGET_ENV | default('development') }}"
-  SATORI_API_URL: "{{ helm_fronapp_help_SATORI_API_URL | default('') }}"
-  SATORI_BASE_URL: "{{ helm_fronapp_help_SATORI_BASE_URL | default('') }}"
+  # SATORI_API_URL: "{{ helm_fronapp_help_SATORI_API_URL | default('') }}"
+  # SATORI_BASE_URL: "{{ helm_fronapp_help_SATORI_BASE_URL | default('') }}"
 envSecret:
   MAILER_TOKEN: new-help-secret
   VKTEAMS_ALERT_TOKEN: new-help-secret
   GITHUB_BOT_TOKEN: new-help-secret
   AI_SEARCH_TOKEN: new-help-secret
-  SATORI_API_KEY: new-help-secret
+  # SATORI_API_KEY: new-help-secret
 
 components:
   - name: mcs-help

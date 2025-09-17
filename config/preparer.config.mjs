@@ -26,19 +26,31 @@ import {
     SatoriIndexPreparer,
 } from '@vk-tech/d11n-preparer/preparers';
 
-const satoriSupportedEnvs = ['production'];
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
 console.debug('TARGET_ENV', TARGET_ENV);
 console.debug('SETTINGS', {
     settings: {
         satoriIndexPreparer: {
-            apiBaseUrl: process.env.SATORI_API_URL ?? '',
-            baseUrl: process.env.SATORI_BASE_URL ?? '',
             apiKey: (process.env?.SATORI_API_KEY || '').length,
         },
     }
 });
+
+let checkup = [
+    LinksWithHashChecker, // Проверка ссылок с хешем на портале
+];
+
+if (['production'].includes(TARGET_ENV)) {
+    checkup = [
+        LinksWithHashChecker, // Проверка ссылок с хешем на портале
+        LaunchPreparer,
+        FolderStructureChecker,
+        MetaParamUuidPreparer,
+        OriginalTreeCachePreparer,
+        SatoriIndexPreparer, // Идексация для Satori
+    ];
+}
 
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
@@ -66,22 +78,18 @@ export const config = {
             PublicAssetsPreparer, // Переносим статичные файлы из папок "assets" в публичную директорию
             LinktoCachePreparer, // Подготавливаем кэш для linkTo препроцессора
             SearchIndexPreparer, // Создаём индекс для поиска
-            // ArticleDatesPreparer, // Актуализируем даты (создание/изменение) у статей
             ExternalFolderChecker, // Проверяем схему и корректность ссылок для файлов в папке external/sections
             LinksPreparer, // Подготовка служебных файлов для test:LinksChecker
             LinksChecker, // Подготовка служебных файлов для test:LinksChecker
         ],
         // Проверка портала после запуска
         // npx preparer start checkup
-        checkup: [
-            LinksWithHashChecker, // Проверка ссылок с хешем на портале
-            // ...(satoriSupportedEnvs.includes(TARGET_ENV) ? [LaunchPreparer, FolderStructureChecker, MetaParamUuidPreparer, OriginalTreeCachePreparer, SatoriIndexPreparer]: [])
-        ],
+        checkup,
     },
     settings: {
         satoriIndexPreparer: {
-            apiBaseUrl: process.env.SATORI_API_URL ?? '',
-            baseUrl: process.env.SATORI_BASE_URL ?? '',
+            apiBaseUrl: 'https://cloud.vk.com/search/api',
+            baseUrl: 'https://cloud.vk.com/docs',
             apiKey: process.env.SATORI_API_KEY || '',
         },
     }
