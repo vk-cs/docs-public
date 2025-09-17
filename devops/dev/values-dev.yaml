@@ -1,7 +1,7 @@
 env:
   TARGET_ENV: "branch"
   AI_SEARCH_TOKEN: '{{ requiredEnv "TEST_AI_SEARCH_TOKEN" }}'
-  SATORI_API_URL: "https://satori.devint.vkc.devmail.ru"
+  #SATORI_API_URL: "https://satori.devint.vkc.devmail.ru"
 
 components:
   - name: mcs-help
