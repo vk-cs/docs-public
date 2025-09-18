@@ -244,46 +244,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 ## Создание через интерфейс бакета
 
-{tabs}
-
-{tab(Личный кабинет)}
-
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится нужный бакет. Если у вас еще нет бакета, [создайте его](/ru/storage/s3/instructions/buckets/create-bucket).
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите на имя нужного бакета.
-1. Перейдите на вкладку **CDN**.
-1. Выберите опцию **Использовать CDN для данного бакета**.
-
-   Чтобы бакет мог выступать в качестве источника для CDN-ресурса, выбирайте ACL `public-read` при [добавлении объектов в этот бакет](/ru/storage/s3/instructions/objects/upload-object).
-
-1. В поле **Персональный домен** укажите персональный домен, который будет использоваться для CDN. При обращении к этому домену за контентом, контент будет доставлен с помощью CDN. Используйте полное квалифицированное имя домена (FQDN). Не добавляйте к нему корневое доменное имя: допустима запись вида `cdn.example.com`, но не `cdn.example.com.`.
-
-1. (Опционально) Нажмите кнопку ![plus-icon](./assets/plus-icon.svg "inline") **Добавить домен**, чтобы указать дополнительные персональные домены. Ненужные домены можно удалить, нажав на значок ![Удалить](./assets/trash-icon.svg "inline") рядом с ними.
-
-   {note:warn}
-
-   После создания CDN-ресурса изменить персональные домены невозможно.
-
-   {/note}
-
-1. Сохраните имя оригинального домена, которое нужно задать в CNAME-записи для указанных доменов.
-
-1. Выберите нужное время жизни кеша из выпадающего списка.
-
-   Этот параметр позволяет в течении заданного времени кешировать ответы со следующими статусами HTTP: [200](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200), [201](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201), [204](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204), [206](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/206), [301](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301), [302](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302), [303](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/303), [304](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304), [307](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/307), [308](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308).
-
-   Ответы с другими статусами не кешируются.
-
-   (Опционально) Можно полностью выключить кеширование, выбрав пункт **Не кешировать**.
-
-1. Нажмите кнопку **Сохранить изменения**.
-
-   Начнется создание группы источников и CDN-ресурса для бакета. Созданные объекты будут доступны в разделе **CDN** личного кабинета.
-
-{/tab}
-
-{/tabs}
+{include(/ru/_includes/_s3-create-cdn.md)}
 
 ## Подготовка CDN-ресурса к работе
 

@@ -1,9 +1,9 @@
 {
-    "title": "CORS",
-      "shortDescription": "Сценарии использование и создание правила CORS",
-      "metaDescription": "",
-    "sectionTitle": "CORS",
+    "title": "Кросс-доменные запросы",
+      "shortDescription": "Сценарии использования и создание правила CORS",
+      "metaDescription": "Инструкции по настройке политики CORS для Object Storage VK Cloud. Описание параметров для разрешения кросс-доменных запросов к объектному хранилищу. Как узнать текущую конфигурацию CORS, создать, изменить или удалить правило CORS",
+    "sectionTitle": "Кросс-доменные запросы",
     "icon": "",
-    "weight": 2,
+    "weight": 3,
     "uuid": "98b6d2c2-8cd6-4062-a2ea-1097f931d109"
 }

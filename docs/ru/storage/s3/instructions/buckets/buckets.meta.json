@@ -1,7 +1,7 @@
 {
   "title": "Бакеты",
-  "shortDescription": "Операции с бакетами в объектном хранилище VK Cloud",
-  "metaDescription": "Операции с бакетами в объектном хранилище VK Cloud.",
+    "shortDescription": "Операции с бакетами в объектном хранилище VK Cloud",
+    "metaDescription": "Инструкции по созданию, управлению и удалению бакетов в Object Storage VK Cloud. Примеры, описание параметров",
   "sectionTitle": "Бакеты",
   "icon": "",
   "weight": 2,

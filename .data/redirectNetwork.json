@@ -28303,7 +28303,7 @@
   },
   {
     "source": "/ru/storage/s3/service-management/buckets/bucket-keys",
-    "destination": "/ru/storage/s3/instructions/buckets/bucket-keys",
+    "destination": "/ru/storage/s3/instructions/access-management/bucket-keys",
     "permanent": false,
     "locale": false
   },

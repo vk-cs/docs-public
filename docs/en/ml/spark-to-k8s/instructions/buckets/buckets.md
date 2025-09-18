@@ -2,7 +2,7 @@ By default, a Spark cluster has access to an [Object Storage](/en/storage/s3) bu
 
 To grant the cluster access to other buckets:
 
-1. [Create an account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") or [prefix access keys](/ru/storage/s3/instructions/buckets/bucket-keys "change-lang") for Object Storage in the VK Cloud management console. Copy and save the key ID (**Access Key**) and secret key (**Secret Key**).
+1. [Create an account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") or [prefix access keys](/ru/storage/s3/instructions/access-management/bucket-keys "change-lang") for Object Storage in the VK Cloud management console. Copy and save the key ID (**Access Key**) and secret key (**Secret Key**).
 1. [Create](/ru/ml/spark-to-k8s/ml-platform-library/authz "change-lang") an access token with the `Administrator` role if it hasn't been done yet.
 1. Create the `s3_secret.yaml` file. Copy the following code into the file, specifying the obtained Object Storage access keys:
 
