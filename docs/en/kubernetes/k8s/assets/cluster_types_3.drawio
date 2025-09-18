@@ -1,0 +1,168 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Страница — 1" id="tZqP0mH2ytezIyetSWb5">
+    <mxGraphModel dx="946" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-1" value="&lt;font color=&quot;#212121&quot;&gt;Availability zone 3&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=10;verticalAlign=top;spacingTop=0;spacingLeft=0;spacingRight=0;fontStyle=1;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="808.75" y="305.5" width="190" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-2" value="Regional cluster with 3 or 5 master nodes" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#7C8A9A;strokeWidth=1;fontColor=#212121;fillColor=none;dashed=1;fontFamily=VK Sans Display;verticalAlign=top;spacing=10;fontStyle=1;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="647.5" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-3" value="&lt;font color=&quot;#212121&quot;&gt;Availability zone 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=10;verticalAlign=top;spacingTop=0;spacingLeft=0;spacingRight=0;fontStyle=1;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="368.75" y="305.5" width="190" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-4" value="&lt;font color=&quot;#212121&quot;&gt;Availility zone 2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=10;verticalAlign=top;spacingTop=0;spacingLeft=0;spacingRight=0;fontStyle=1;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="598.75" y="305.5" width="180" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="683.7499999999998" y="395.5" as="sourcePoint" />
+            <mxPoint x="683.75" y="425.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-6" value="&lt;font color=&quot;#212121&quot;&gt;Master node&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="355.5" width="136.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.569;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4vl7C5sdQap3fPeTFT-8-6" target="4vl7C5sdQap3fPeTFT-8-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="443.75" y="395" as="sourcePoint" />
+            <mxPoint x="443.7500000000002" y="425" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-8" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="386.25" y="409.5" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-9" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="396.25" y="419.5" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-10" value="&lt;font color=&quot;#212121&quot;&gt;Worker node group A&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="406.25" y="429.5" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-11" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="386.25" y="485" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-12" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="396.25" y="495" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-13" value="&lt;span style=&quot;color: rgb(33, 33, 33);&quot;&gt;Worker node group D&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="406.25" y="505" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-14" value="&lt;font color=&quot;#212121&quot;&gt;Availability zone 2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=10;verticalAlign=top;spacingTop=0;spacingLeft=0;spacingRight=0;fontStyle=1;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="588.75" y="305.5" width="190" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-15" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="606.25" y="410" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-16" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="616.25" y="420" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-17" value="&lt;font color=&quot;#212121&quot;&gt;Worker node group B&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="626.25" y="430" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-18" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.575;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4vl7C5sdQap3fPeTFT-8-19" target="4vl7C5sdQap3fPeTFT-8-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="663.75" y="395.5" as="sourcePoint" />
+            <mxPoint x="663.7500000000002" y="425.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-19" value="&lt;font color=&quot;#212121&quot;&gt;Master node&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="623.75" y="355.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-20" value="&lt;font color=&quot;#212121&quot;&gt;Master node&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="843.75" y="355.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-21" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.575;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4vl7C5sdQap3fPeTFT-8-20" target="4vl7C5sdQap3fPeTFT-8-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="883.75" y="395.5" as="sourcePoint" />
+            <mxPoint x="883.7500000000002" y="425.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-22" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="826.25" y="410" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-23" value="&lt;font color=&quot;#212121&quot;&gt;Node 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="836.25" y="420" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-24" value="&lt;font color=&quot;#212121&quot;&gt;Worker node group C&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7C8A9A;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="846.25" y="430" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-25" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.002;exitY=0.623;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="4vl7C5sdQap3fPeTFT-8-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="836.52" y="380.41999999999996" as="sourcePoint" />
+            <mxPoint x="778.75" y="455.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="798.75" y="380.5" />
+              <mxPoint x="798.75" y="450.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-26" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.002;exitY=0.378;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="836.52" y="370.62" as="sourcePoint" />
+            <mxPoint x="748.75" y="370.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-27" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4vl7C5sdQap3fPeTFT-8-15" target="4vl7C5sdQap3fPeTFT-8-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="611.25" y="438.2199999999999" as="sourcePoint" />
+            <mxPoint x="537.365" y="380.20000000000005" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="568.75" y="430" />
+              <mxPoint x="568.75" y="381" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-28" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.374;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="4vl7C5sdQap3fPeTFT-8-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="628.75" y="370.5" as="sourcePoint" />
+            <mxPoint x="528.75" y="370" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-29" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="4vl7C5sdQap3fPeTFT-8-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="628.75" y="380.5" as="sourcePoint" />
+            <mxPoint x="578.75" y="455.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="579" y="381" />
+              <mxPoint x="579" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-30" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4vl7C5sdQap3fPeTFT-8-22" target="4vl7C5sdQap3fPeTFT-8-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="821.25" y="430" as="sourcePoint" />
+            <mxPoint x="748.75" y="375.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="788.75" y="430.5" />
+              <mxPoint x="788.75" y="380.5" />
+              <mxPoint x="748.75" y="380.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-31" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#7C8A9A;strokeWidth=1;fontFamily=VK Sans Display;fontSize=16;fontColor=#212121;startArrow=none;startFill=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4vl7C5sdQap3fPeTFT-8-6" target="4vl7C5sdQap3fPeTFT-8-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402.5" y="375" as="sourcePoint" />
+            <mxPoint x="330" y="466.75" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="379.75" y="376" />
+              <mxPoint x="379.75" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-32" value="&lt;font color=&quot;#212121&quot;&gt;Master node&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="615.6300000000001" y="355.5" width="136.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4vl7C5sdQap3fPeTFT-8-33" value="&lt;font color=&quot;#212121&quot;&gt;Master node&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="835.6300000000001" y="355.5" width="136.25" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

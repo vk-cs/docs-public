@@ -1,26 +1,49 @@
-The VK Cloud platform is based on [OpenStack](https://www.openstack.org/). The Cloud Containers service architecture, based on OpenStack, gives users a wide range of capabilities, fault tolerance, scalability and integration with other services of the platform.
+Cloud Containers provides environment for working with Kubernetes clusters on the VK Cloud platform. With its architecture based on [OpenStack](https://www.openstack.org/), Cloud Containers offers extensive capabilities, fault tolerance, scalability, and integration with other platform services.
+
+{cut(How Cloud Containers interacts with other VK Cloud services)}
+
+Cloud Containers ensures the proper functioning of Kubernetes clusters, while:
+
+- [Cloud Servers](/en/computing/iaas) manages VMs on the nodes of the cluster.
+- [Cloud Networks](/en/networks/vnet) manages the network of the cluster.
+
+![Service architecture](/en/kubernetes/k8s/assets/k8s_arch.png){params[noBorder=true; width=50%]}
+
+{/cut}
 
 ## Cluster topologies
 
-A Kubernetes Cloud Containers cluster consists of two types of nodes, master nodes and worker nodes:
+A Kubernetes cluster in Cloud Containers consists of two types of nodes, master nodes and worker nodes:
 
-- Master nodes store cluster-wide state information and manage workload distribution across worker nodes.
+- Master nodes store cluster-wide state information and manage workload distribution across worker nodes. Users cannot manage cluster nodes, as they are managed by the VK Cloud platform.
 
-- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](/en/intro/start/concepts/architecture#az) to improve fault tolerance.
+- Worker nodes manage the [workload](https://kubernetes.io/docs/concepts/workloads/). Worker nodes can be organized into groups. It is best to place such groups in different [availability zones](/en/intro/start/concepts/architecture#az) to improve fault tolerance. Worker nodes are also managed by the VK Cloud platform, but have network connectivity with the users' projects.
 
-Cluster high availablity depends on the number of master nodes and their distribution across [availability zones](/en/intro/start/concepts/architecture#az). Possible configurations:
+High availability of a cluster depends on its number of master nodes and their distribution across availability zones. Possible configurations are:
 
-- Cluster of one master node.
+- Cluster with one master node.
 
-  Such a cluster is not high available: even if there are several worker nodes and they are organized in groups, the cluster will become inoperative if the single master node is lost.
+  Such clusters are not highly available: even if there are several worker nodes, and they are organized into groups, once the single master node fails, the whole cluster becomes inoperable.
 
-- Standard Cloud Containers cluster of 3 or 5 master nodes.
+  {cut(Node interaction scheme for a cluster with one master node)}
+  ![Cluster with one master node](/en/kubernetes/k8s/assets/cluster_types_1.png){params[noBorder=true; width=80%]}
+  {/cut}
 
-  Such a cluster is fault tolerant at the availability zone level: if the availability zone is stable and several master nodes are lost, it will remain operational as long as there is at least one working master node. The further level of fault tolerance depends on the number and configuration of worker node groups.
+- Standard cluster with 3 or 5 master nodes.
 
-- Regional Cloud Containers cluster of 3 or 5 master nodes.
+  Such clusters are highly available at the availability zone level. If the availability zone remains stable and some of the master nodes are lost, it will remain operational as long as more than half of the master nodes are operating. When there is only one master node left, the cluster stops working.
 
-  Master nodes of a regional cluster are distributed across all availability zones of a region. Such a cluster is maximally fault-tolerant: if one availability zone fails, the load will be distributed between the master nodes located in other availability zones.
+  {cut(Node interaction scheme for a standard cluster with 3 or 5 master node)}
+  ![Cluster with one master node](/en/kubernetes/k8s/assets/cluster_types_2.png){params[noBorder=true; width=80%]}
+  {/cut}   
+
+- Regional cluster with 3 or 5 master nodes.
+
+  Master nodes of a regional cluster are distributed across all availability zones of a region. Such clusters are as highly available as possible: if one availability zone fails, the workload will be distributed among the master nodes located in other availability zones. However, as in standard clusters, regional cluster remain operational while more than half of the master nodes are working, and stop working when only one master node remains.
+
+  {cut(Node interaction scheme for a regional cluster with 3 or 5 master node)}
+  ![Cluster with one master node](/en/kubernetes/k8s/assets/cluster_types_3.png){params[noBorder=true; width=80%]}
+  {/cut}
 
 Regardless of the cluster topology chosen, the master nodes use distributed key-value storage [etcd](https://etcd.io/) to store information about the state of the cluster:
 
@@ -32,18 +55,9 @@ For high availability at the worker node level, it is recommended to create seve
 
 ## Cluster environment
 
-The following operating systems are used on the master and worker nodes:
+Master and worker nodes use the AlmaLinux OS (starting with Kubernetes 1.31).
 
-- CentOS (up to Kubernetes 1.20).
-- AlmaLinux (starting with Kubernetes 1.21). AlmaLinux is a fork of CentOS.
-
-The cluster runs containers via Kubernetes [Container Runtime Interface](https://kubernetes.io/docs/concepts/architecture/cri/) (CRI) with CRI-O (starting with Kubernetes version 1.20).
-
-{note:info}
-
-Before Kubernetes 1.19, [Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/) was used to run containers and is now deprecated.
-
-{/note}
+The cluster runs containers via Kubernetes [Container Runtime Interface](https://kubernetes.io/docs/concepts/architecture/cri/) (CRI) with CRI-O.
 
 See [Available Kubernetes versions and version support policy](../versions) for details.
 
@@ -68,23 +82,17 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
   Every Cloud Containers cluster has a [Calico](https://projectcalico.docs.tigera.io/about/about-calico) plugin that supports this interface. This plugin provides:
 
-  - network connectivity between containers, [pods](../../reference/pods), and cluster nodes;
-  - application and enforcement of Kubernetes [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
+  - Network connectivity between containers, [pods](../../reference/pods), and cluster nodes
+  - Application and enforcement of Kubernetes [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
-  Calico integrates with VK Cloud platform using OpenStack Neutron API. See [Network in cluster](../network) for details.
+  Calico integrates with VK Cloud platform using SDN Sprut. See [Network in cluster](../network) for details.
 
 ## Built-in support for the Open Policy Agent
 
 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) can access various information and components of a Kubernetes cluster. With certain settings, pods themselves and the Kubernetes cluster in which they run can be vulnerable to attacks.
 
-Since Kubernetes version 1.21, [Open Policy Agent Gatekeeper](../../reference/gatekeeper) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
-
-These constraints are created based on constraint templates. Cloud Containers clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre_configured_gatekeeper_templates_and_constraints). You can create your own templates and constraints.
-
-For clusters below version 1.21 it is recommended to [install Gatekeeper](../../install-tools/gatekeeper) manually or upgrade the cluster to the current version.
+[Open Policy Agent Gatekeeper](../../reference/gatekeeper) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
 ## Cluster scaling options
 
-The Cloud Containers cluster has built-in [scaling capabilities for master nodes and worker nodes](../scale).
-
-Automatic scaling is also supported: if it is configured, the number of worker nodes in the cluster is automatically adjusted depending on the needs of the workload.
+Cloud Containers has built-in [scaling capabilities for master nodes and worker nodes](../scale) of Cluster Autoscaler that automatically adjusts the number of nodes depending on the workload requirements. Automatic scaling is enabled by default for master nodes, and you cannot disable it. For worker nodes, you need to manually enable it for each worker node group when [configuring their settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings).
