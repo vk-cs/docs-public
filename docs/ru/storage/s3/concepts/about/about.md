@@ -20,7 +20,7 @@ Object Storage отличает:
 
 В Object Storage поддерживаются:
 
-- [автоматическая очистка](../features#automatic_bucket_cleaning) бакета по заранее заданным правилам;
+- [автоматическое удаление](/ru/storage/s3/concepts/lifecycle) объектов из бакета по заданным правилам;
 - [настройка уведомлений](../features#bucket_event_notifications) о событиях в бакете;
 - [синхронизация](../../instructions/buckets/manage-bucket#sync_local_directory_and_bucket) содержимого бакета и локальной директории;
 -  кросс-доменные запросы ресурсов в бакете по технологии [CORS](../../instructions/access-management/cors).
