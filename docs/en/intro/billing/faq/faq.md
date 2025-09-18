@@ -415,6 +415,12 @@ VK Cloud can duplicate reporting documents in the form of scanned copies in PDF 
 
 {/cut}
 
+{cut(How to switch to electronic document management (EDM)?)}
+
+{include(/en/_includes//_edm.md)}
+
+{/cut}
+
 {cut(How do I get a reconciliation report for the required period?)}
 
 1. Write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
@@ -422,7 +428,6 @@ VK Cloud can duplicate reporting documents in the form of scanned copies in PDF 
 
    - Full name and details of the organization.
    - The period for which the act is required.
-
 {/cut}
 
 {cut(I have unloaded the invoice, it does not contain my details. How do I add them?)}

@@ -54,7 +54,7 @@ The composition of the accounting documents depends on the specific terms of the
   - Invoice
   - Certificate of completed works
 
-{note:info} 
+{note:info}
 
    If an invoice is provided, the universal transfer document is not provided. The certificate of completed works can be provided together with the universal transfer document.
 
@@ -106,17 +106,7 @@ VK Cloud never sends documents to a legal address without an explicit agreement 
 
 #### {heading(Electronic document management system (EDM))[id=edm]}
 
-VK Cloud works in the EDM system [Kontur.Diadoc](https://www.diadoc.ru/).
-
-If your organization or sole proprietor works with another EDI operator from the [register of the Federal Tax Service of the Russian Federation](https://www.nalog.gov.ru/rn77/oedo/search_edo/), set up roaming to exchange documents with VK LLC using its EDM participant ID — `2BM-7743001840-2012052807514600749280000000000`.
-
-You can configure EDM with VK Cloud yourself or send a request for configuration to the document management department of VK Cloud ([docs_vktech@vk.company](mailto:docs_vktech@vk.company)).
-
-{note:info}
-
-EDM work is only available for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) and only to organizations and sole proprietors registered in the Russian Federation.
-
-{/note}
+{include(/en/_includes/_edm.md)}
 
 #### {heading(Delivery of original documents)[id=delivery_of_original_documents]}
 
