@@ -9439,7 +9439,7 @@
   },
   {
     "source": "/ru/base/s3/access-management/s3-acl",
-    "destination": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/instructions/access-management/acl",
     "permanent": false,
     "locale": false
   },
@@ -17431,7 +17431,7 @@
   },
   {
     "source": "/ru/base/s3/instructions/access-management/s3-acl",
-    "destination": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/instructions/access-management/acl",
     "permanent": false,
     "locale": false
   },
@@ -28387,7 +28387,7 @@
   },
   {
     "source": "/ru/storage/s3/service-management/access-management/s3-acl",
-    "destination": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/instructions/access-management/acl",
     "permanent": false,
     "locale": false
   },
@@ -32618,6 +32618,18 @@
   {
     "source": "/en/tools-for-using-services/account/service-management/debugging",
     "destination": "/en/tools-for-using-services/account/instructions/debugging",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/instructions/access-management/acl",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/buckets/bucket-keys",
+    "destination": "/ru/storage/s3/instructions/access-management/bucket-keys",
     "permanent": false,
     "locale": false
   }
