@@ -86,7 +86,7 @@ Object Storage отличает:
 Наряду с операциями загрузки, скачивания, копирования и удаления объектов в Object Storage поддерживаются:
 
 - [изменение уровня доступа](../../instructions/objects/manage-object#manage_access) для объекта;
-- предоставление доступа к объекту по [подписанной ссылке](../../instructions/objects/manage-object#access_via_signed_link);
+- предоставление доступа к объекту по [подписанной ссылке](../../instructions/objects/signed-url);
 - временная и постоянная [блокировка](/ru/storage/s3/concepts/objects-lock) объекта от удаления или перезаписи.
 
 ## {heading(Ключ объекта)[id=object_key]}

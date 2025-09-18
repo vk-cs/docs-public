@@ -41,7 +41,7 @@
 {cut(Можно ли ограничить доступ к бакету?)}
 Да, можно. Чтобы выдать доступ только к содержимому отдельной директории в бакете, используйте [префиксные ключи](/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api). 
 
-Чтобы управлять операциями, доступными пользователю, используйте [ACL (Access Control List)](/ru/storage/s3/instructions/access-management/s3-acl).
+Чтобы управлять операциями, доступными пользователю, используйте [ACL (Access Control List)](/ru/storage/s3/concepts/s3-acl).
 
 Ограничить доступ к бакету по IP-адресу нельзя.
 {/cut}
@@ -161,7 +161,7 @@
 
 {cut(Как защитить данные в бакете от изменения при резервном копировании?)}
 
-Используйте механизм [блокировки удаления объектов](/ru/storage/s3/instructions/objects/manage-object#lock_object). Сервисному аккаунту для резервного копирования [выдайте права](/ru/storage/s3/instructions/access-management/s3-acl) только на запись данных.
+Используйте механизм [блокировки удаления объектов](/ru/storage/s3/instructions/objects/object-lock). Сервисному аккаунту для резервного копирования [выдайте права](/ru/storage/s3/instructions/access-management/acl) только на запись данных.
 {/cut}
 
 {cut(Oт чего зависит скорость загрузки в объектное хранилище S3?)}
