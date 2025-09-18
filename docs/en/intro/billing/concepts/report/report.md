@@ -68,7 +68,7 @@ The payment invoice is not provided. Organizations that work on prepayment [form
 
 - Main documents:
   - Universal transfer document
-  - Payment invoice received from VK CLoud
+  - Payment invoice received from VK Cloud
 
 - Additional documents, if required by the contract:
   - Invoice

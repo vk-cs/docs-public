@@ -155,7 +155,7 @@ Here:
 
 - `id` — the rule identifier. Only numbers, Latin letters and special characters `-`, `_`, `.` are allowed. The identifier must be unique within the bucket.
 - `prefix` — object key prefix: the rule will be applied only to objects with the specified prefix keys. The filter can contain only one key. Examples of prefix keys: `image/`, `pre/`, `image/photo`.
-- `expiration` — the parameter specifies the number of days after which objects will be deleted. Cleaning occurs at 00:00 UTC.
+- `expiration` — the parameter specifies the number of days after which objects will be deleted.
 - `status` — rule status:
 
   - `"Enabled"` — the rule is active;
