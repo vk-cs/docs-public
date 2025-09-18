@@ -4,14 +4,14 @@
       "title": "Частное облако",
       "items": [
         {
-          "absoluteLink": "https://vk.cc/cPz2ge",
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud",
           "title": "Документация Private Cloud",
           "description": "Платформа для построения частного облака в ЦОДе заказчика",
           "icon": "/ru/on-premises/assets/private-cloud-icon.svg",
           "iconMobile": "/ru/on-premises/assets/private-cloud-mobile-icon.svg"
         },
         {
-          "absoluteLink": "https://vk.cc/cPz2k5",
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud-knowledge-base",
           "title": "База знаний Private Cloud",
           "description": "Инструкции по решению типовых задач и практические руководства",
           "icon": "/ru/on-premises/assets/knowledge-base-icon.svg",
@@ -25,21 +25,21 @@
       "title": "Автономные продукты",
       "items": [
         {
-          "absoluteLink": "https://vk.cc/cPz2ou",
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/dev-platform",
           "title": "Dev Platform",
           "description": "Готовое решение для построения внутренних платформ разработки",
           "icon": "/ru/on-premises/assets/dev-platform-icon.svg",
           "iconMobile": "/ru/on-premises/assets/dev-platform-mobile-icon.svg"
         },
         {
-          "absoluteLink": "https://vk.cc/cPz2wx",
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/data-platform",
           "title": "VK Data Platform",
           "description": "Универсальная платформа для работы с большими данными и машинным обучением",
           "icon": "/ru/on-premises/assets/data-platform-icon.svg",
           "iconMobile": "/ru/on-premises/assets/data-platform-mobile-icon.svg" 
         },
         {
-          "absoluteLink": "https://vk.cc/cPz2Cw",
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/s3",
           "title": "Object Storage в частной инсталляции",
           "description": "Быстрое и надежное S3-совместимое объектное хранилище",
           "icon": "/ru/on-premises/assets/cloud-storage-icon.svg",
