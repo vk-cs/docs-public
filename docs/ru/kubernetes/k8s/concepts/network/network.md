@@ -6,11 +6,7 @@
 
 ## Работа с Container Network Interface (CNI)
 
-Кластеры Kubernetes используют [Calico](https://projectcalico.docs.tigera.io/about/about-calico) для организации внутрикластерной сети. Calico взаимодействует с платформой VK Cloud с помощью OpenStack Neutron API. Сама платформа использует программно-определяемую сеть (software-defined network) [Neutron](https://wiki.openstack.org/wiki/Neutron).
-
-При использовании OpenStack Neutron в больших облачных сетях (порядка десятка тысяч сетевых портов на сеть) есть проблемы со скоростью сходимости при выходе из строя хотя бы нескольких участников сети. Синхронизация изменений топологии сети такого размера занимает много времени, что негативно влияет на ее производительность.
-
-Поэтому в VK Cloud была разработана собственная программно-определяемая сеть Sprut. Она полностью совместима с Neutron API, но работает по другим принципам, что позволяет использовать ее совместно с Calico в облачных сетях большого размера, не испытывая при этом описанных проблем. Подробнее о Sprut читайте в статье [Как устроены облачные сети и чем они отличаются от On-premise](https://habr.com/ru/company/vk/blog/656797/) и в [видео на YouTube](https://www.youtube.com/watch?v=iqSXRZ8b_bk).
+Кластеры Kubernetes используют [Calico](https://projectcalico.docs.tigera.io/about/about-calico) для организации внутрикластерной сети. Calico взаимодействует с платформой VK Cloud с помощью программно-определяемой сети собственной разработки [SDN Sprut](/ru/networks/vnet/concepts/sdn#sprut).
 
 {note:info}
 

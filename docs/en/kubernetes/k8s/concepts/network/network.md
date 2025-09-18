@@ -6,11 +6,7 @@ CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheu
 
 ## Working with Container Network Interface (CNI)
 
-Cloud Containers clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize the intra-cluster network. Calico communicates with the VK Cloud platform using the OpenStack Neutron API. The platform itself uses a software-defined network [Neutron](https://wiki.openstack.org/wiki/Neutron).
-
-When using OpenStack Neutron in large cloud networks (about tens of thousands of network ports per network), there are problems with convergence speed if at least a few network members fail. Synchronization of topology changes in a network of this size takes a long time, which negatively affects its performance.
-
-Therefore, VK Cloud has developed its own software-defined network, Sprut. It is fully compatible with Neutron API but works on different principles, which allows to use it together with Calico in large cloud networks without experiencing the described issues. Read more about Sprut in [How cloud networks work and how they differ from On-premise](https://habr.com/ru/company/vk/blog/656797/) and in [YouTube video](https://www.youtube.com/watch?v=iqSXRZ8b_bk).
+Cloud Containers clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize intra-cluster networks. Calico communicates with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut.
 
 {note:info}
 
