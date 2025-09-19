@@ -15,42 +15,6 @@ export const config = {
         logoLink: 'https://cloud.vk.com',
         canonicalBaseUrl: 'https://cloud.vk.com/docs',
     },
-    definition: {
-        ru: {
-            pageTitle: {
-                root: 'Документация %main.projectName%',
-                chapter:
-                    '%chapter.title% | Документация %main.projectName%',
-                section:
-                    '%section.title% – %chapter.title% | Документация %main.projectName%',
-                article:
-                    '%article.title% – %chapter.title% | Документация %main.projectName%',
-            },
-            metaDescription: {
-                root: 'Документация %main.projectName%',
-                chapter: '%chapter.title%',
-                section: '%section.title%, %chapter.title%',
-                article: '%article.title%, %chapter.title%',
-            },
-        },
-        en: {
-            pageTitle: {
-                root: '%main.projectName% Documentation',
-                chapter:
-                    '%chapter.title% | %main.projectName% Documentation',
-                section:
-                    '%section.title% – %chapter.title% | %main.projectName% Documentation',
-                article:
-                    '%article.title% – %chapter.title% | %main.projectName% Documentation',
-            },
-            metaDescription: {
-                root: '%main.projectName% Documentation',
-                chapter: '%chapter.title%',
-                section: '%section.title%, %chapter.title%',
-                article: '%article.title%, %chapter.title%',
-            },
-        },
-    },
     breadcrumbs: {
         projectName: 'VK Cloud',
         docsName: 'Документация'
@@ -64,14 +28,15 @@ export const config = {
         }
     },
     search: {
-        type: 'DEFAULT',
+        type: 'SATORI',
         satori: {
             apiBaseUrl: 'https://cloud.vk.com/search/api',
+            suppliers: ['vkcloud/docs'],
         },
-        assistant: {
-            sourceName: 'VK Cloud',
-            apiUrl: 'https://185.241.193.47:443/ask',
-        },
+        // assistant: {
+        //     sourceName: 'VK Cloud',
+        //     apiUrl: 'https://185.241.193.47:443/ask',
+        // },
     },
     header: {
         relatedSites: {
@@ -168,9 +133,9 @@ export const config = {
         basePath: '/docs',
         policy: '/intro/start/legal',
     },
-    contentSecurityPolicy: {
-        connectSrc: ['https://satori.devint.vkc.devmail.ru'],
-    },
+    // contentSecurityPolicy: {
+    //     connectSrc: ['https://satori.devint.vkc.devmail.ru'],
+    // },
     enablers: {
         auth: true,
         likeDislike: true,
@@ -178,7 +143,7 @@ export const config = {
         suggester: true,
         editOnGitOps: true,
         dpp: true,
-        aiSearch: true,
+        // aiSearch: true,
     },
     translations: {
         en: {
