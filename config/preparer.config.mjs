@@ -48,7 +48,7 @@ if (['production'].includes(TARGET_ENV)) {
         FolderStructureChecker,
         MetaParamUuidPreparer,
         OriginalTreeCachePreparer,
-        SatoriIndexPreparer, // Идексация для Satori
+        SatoriIndexPreparer, // Индексация для Satori
     ];
 }
 
