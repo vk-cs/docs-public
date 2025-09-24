@@ -1,7 +1,7 @@
 {
     "title": "Ограничение трафика",
       "shortDescription": "Как ограничивать сетевой трафик с помощью IP Source Guard и файервола",
-      "metaDescription": "",
+      "metaDescription": "Сервис Cloud Network в VK Cloud. Использование IP Source Guard. Как ограничивать сетевой трафик с помощью файервола и групп безопасности",
     "sectionTitle": "Ограничение трафика",
     "icon": "",
     "weight": 4,

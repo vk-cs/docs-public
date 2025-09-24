@@ -1,7 +1,7 @@
 {
     "title": "Балансировщик нагрузки",
       "shortDescription": "Как распределять сетевой трафик между серверами",
-      "metaDescription": "",
+      "metaDescription": "Сервис балансировщиков нагрузки Load Balancing VK Cloud. Принципы работы, типы и основные возможности сервиса Load Balancing",
     "sectionTitle": "Балансировщик нагрузки",
     "icon": "",
     "weight": 1,

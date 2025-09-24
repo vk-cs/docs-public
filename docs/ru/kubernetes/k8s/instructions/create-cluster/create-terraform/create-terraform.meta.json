@@ -1,7 +1,7 @@
 {
     "title": "Создание кластера с помощью Terraform",
       "shortDescription": "Как создать кластер c помощью Terraform",
-      "metaDescription": "",
+      "metaDescription": "Узнайте, как создать кластер Kubernetes с помощью Terraform. Примеры конфигурационных файлов для создания разных кластеров",
     "sectionTitle": "Создание кластера с помощью Terraform",
     "icon": "",
     "weight": 2,

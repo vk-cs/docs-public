@@ -1,7 +1,7 @@
 {
     "title": "Быстрый старт",
       "shortDescription": "Начало работы с Terraform",
-      "metaDescription": "",
+      "metaDescription": "Как использовать Terraform-провайдер VK Cloud для управления платформой. Начало работы с Terraform: установка, инициализация, обновление Terraform",
     "sectionTitle": "Быстрый старт",
     "icon": "",
     "weight": 0,

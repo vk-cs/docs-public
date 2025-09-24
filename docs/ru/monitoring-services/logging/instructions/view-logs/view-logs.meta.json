@@ -1,7 +1,7 @@
 {
     "title": "Просмотр логов",
       "shortDescription": "Как просмотреть логи",
-      "metaDescription": "",
+      "metaDescription": "Как выполнять базовые операции в сервисе Cloud Logging. Просмотр логов в личном кабинете VK Cloud, с помощью API или сервиса Grafana",
     "sectionTitle": "Просмотр логов",
     "icon": "",
     "weight": 4,

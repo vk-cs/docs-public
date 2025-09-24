@@ -1,7 +1,7 @@
 {
     "title": "Начало работы",
       "shortDescription": "",
-      "metaDescription": "",
+      "metaDescription": "Спецификация публичного API для автоматизации управления облачного сервисами Object Storage в VK Cloud. Получение эндпоинта, авторизация и аутентификация",
     "sectionTitle": "Начало работы",
     "icon": "",
     "weight": 1,

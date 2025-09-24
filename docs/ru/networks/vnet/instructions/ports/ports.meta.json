@@ -1,7 +1,7 @@
 {
     "title": "Порты",
       "shortDescription": "Базовые операции с портами OpenStack",
-      "metaDescription": "",
+      "metaDescription": "Как настроить порты в сервисе Cloud Networks. Добавление, включение, отключение, редактирование порта, настройка IP Source Guard для порта",
     "sectionTitle": "Порты",
     "icon": "",
     "weight": 2,

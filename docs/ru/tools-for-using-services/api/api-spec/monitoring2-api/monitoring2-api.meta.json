@@ -1,7 +1,7 @@
 {
     "title": "Cloud Monitoring 2.0",
       "shortDescription": "OpenAPI-спецификация сервиса Cloud Monitoring 2.0",
-      "metaDescription": "",
+      "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Cloud Monitoring 2.0",
     "sectionTitle": "Cloud Monitoring 2.0",
     "icon": "",
     "weight": 16,

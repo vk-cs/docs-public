@@ -1,7 +1,7 @@
 {
     "title": "VPN-туннели",
       "shortDescription": "Добавление, удаление, редактирование VPN-туннелей и другие операции",
-      "metaDescription": "",
+      "metaDescription": "Как управлять VPN-туннелями в сервисе Cloud Networks. Добавление, удаление, редактирование и перезапуск VPN-туннелей в личном кабинете или с помощью OpenStack CLI",
     "sectionTitle": "VPN-туннели",
     "icon": "",
     "weight": 6,

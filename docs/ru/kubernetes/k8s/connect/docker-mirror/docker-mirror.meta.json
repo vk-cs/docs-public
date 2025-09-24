@@ -1,7 +1,7 @@
 {
     "title": "Настройка зеркала Docker",
       "shortDescription": "",
-      "metaDescription": "",
+      "metaDescription": "Как настроить зеркало Docker Hub для работы с Kubernetes в VK Cloud. Настройте приватный реестр с аддоном Docker Registry или Daemonset для Cloud Containers",
     "sectionTitle": "Настройка зеркала Docker",
     "icon": "",
     "weight": 5,

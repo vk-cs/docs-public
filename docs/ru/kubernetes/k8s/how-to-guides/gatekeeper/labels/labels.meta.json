@@ -1,7 +1,7 @@
 {
     "title": "Настройка обязательных меток",
       "shortDescription": "Как создать ограничение Gatekeeper, требующее наличия обязательных меток",
-      "metaDescription": "",
+      "metaDescription": "Узнайте, как создать ограничение Gatekeeper, требующее наличия обязательных меток у создаваемых ресурсов Kubernetes, в VK Cloud",
     "sectionTitle": "Настройка обязательных меток",
     "icon": "",
     "weight": 1,

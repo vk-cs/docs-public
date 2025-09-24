@@ -1,7 +1,7 @@
 {
     "title": "Создание NFS",
       "shortDescription": "",
-      "metaDescription": "",
+      "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform-провайдер VK Cloud для управления объектами сервиса Cloud Servers. Создание NFS",
     "sectionTitle": "Создание NFS",
     "icon": "",
     "weight": 5,

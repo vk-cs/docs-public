@@ -1,7 +1,7 @@
 {
   "title": "Cloud Servers",
   "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Servers",
-  "metaDescription": "",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers",
   "sectionTitle": "Cloud Servers",
   "icon": "",
   "weight": 10,

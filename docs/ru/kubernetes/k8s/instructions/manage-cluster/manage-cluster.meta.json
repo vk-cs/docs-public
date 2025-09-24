@@ -1,7 +1,7 @@
 {
     "title": "Управление кластером",
       "shortDescription": "Как управлять кластером Kubernetes с помощью личного кабинета или с помощью Terraform",
-      "metaDescription": "",
+      "metaDescription": "Узнайте, как управлять кластером Kubernetes в личном кабинете VK Cloud или с помощью Terraform. Запустить, остановить, удалить кластер Kubernetes",
     "sectionTitle": "Управление кластером",
     "icon": "",
     "weight": 2,

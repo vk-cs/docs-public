@@ -1,7 +1,7 @@
 {
     "title": "Организация VPN-туннеля",
       "shortDescription": "Как настроить VPN-туннель, соединяющий облачную сеть VK Cloud с клиентской сетью",
-      "metaDescription": "",
+      "metaDescription": "Как настроить сетевую связность между инфраструктурой on-premises и виртуальной сетью VK Cloud в SDN Neutron с помощью VPN-туннеля",
     "sectionTitle": "Организация VPN-туннеля",
     "icon": "",
     "weight": 1,

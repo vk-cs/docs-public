@@ -1,7 +1,7 @@
 {
     "title": "Развертывание Ingress-контроллера с TCP-балансировщиком",
       "shortDescription": "Как настроить Ingress-контроллер в связке с TCP-балансировщиком",
-      "metaDescription": "",
+      "metaDescription": "Узнайте, как в кластере Kubernetes развернуть Ingress-контроллер в связке с TCP-балансировщиком нагрузки платформы VK Cloud",
     "sectionTitle": "Развертывание Ingress-контроллера с TCP-балансировщиком",
     "icon": "",
     "weight": 1,
