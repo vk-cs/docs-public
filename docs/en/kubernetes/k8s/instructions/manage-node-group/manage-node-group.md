@@ -202,19 +202,19 @@ See [Labels and taints](../../reference/labels-and-taints) for details.
 
 ## {heading(Configure update settings)[id=configure_node_update]}
 
-To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update, specify the maximum percentage of unavailable nodes for the node group before [updating cluster](../update).
+To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update process, specify the maximum percentage of unavailable nodes for the node group before [updating the cluster](../update).
 
 {tabs}
 
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project where the required cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
-1. Locate the necessary cluster and node group.
+1. Locate the cluster with the node group that you want to change the update settings for.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Node update**.
-1. Specify the necessary percentage.
-1. Click the **Save changes** button.
+1. Change the percentage of unavailable nodes as necessary.
+1. Click the **Save settings** button.
 
 {/tab}
 
