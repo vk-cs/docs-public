@@ -1,7 +1,7 @@
 {
     "title": "Постоянные тома и PVC",
       "shortDescription": "Как использовать Persistent Volume Claim разных типов для работы с постоянными томами",
-      "metaDescription": "",
+      "metaDescription": "Узнайте, как использовать Persistent Volume Claim разных типов для работы с постоянными томами в Kubernetes. Режимы доступа к тому. Жизненный цикл PV и PVC",
     "sectionTitle": "Постоянные тома и PVC",
     "icon": "",
     "weight": 5,

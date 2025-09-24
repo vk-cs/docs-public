@@ -1,7 +1,7 @@
 {
     "title": "Управление группой worker-узлов",
       "shortDescription": "Как управлять группами worker-узлов Kubernetes с помощью личного кабинета или с помощью Terraform",
-      "metaDescription": "",
+      "metaDescription": "Доступные операции с кластером Kubernetes и его узлами. Узнайте, как управлять группами worker-узлов Kubernetes в личном кабинете VK Cloud или с помощью Terraform",
     "sectionTitle": "Управление группой worker-узлов",
     "icon": "",
     "weight": 3,

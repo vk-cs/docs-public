@@ -1,7 +1,7 @@
 {
     "title": "О сервисе",
       "shortDescription": "Возможности сервиса Cloud Alerting",
-      "metaDescription": "",
+      "metaDescription": "Cloud Alerting — это сервис уведомлений об изменении метрик, собираемых с ресурсов VK Cloud. Узнайте, как настроить систему оповещений в VK Cloud",
     "sectionTitle": "О сервисе",
     "icon": "",
     "weight": 0,

@@ -1,7 +1,7 @@
 {
     "title": "Сетевая адресация и доступ в интернет",
       "shortDescription": "Как назначаются IP-адреса и организуется доступ в интернет",
-      "metaDescription": "",
+      "metaDescription": "Сервис Cloud Networks в VK Cloud. Как назначаются Floating IP-адреса и Anycast IP-адреса и организуется доступ в интернет",
     "sectionTitle": "Сетевая адресация и доступ в интернет",
     "icon": "",
     "weight": 8,

@@ -1,7 +1,7 @@
 {
   "title": "Cloud Containers",
   "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Kubernetes",
-  "metaDescription": "",
+  "metaDescription": "Сервис Cloud Containers позволяет использовать кластеры Kubernetes. Узнайте, как создавать, управлять и поддерживать кластеры Kubernetes в VK Cloud",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 4,

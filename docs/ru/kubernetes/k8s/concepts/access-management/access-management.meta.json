@@ -1,7 +1,7 @@
 {
     "title": "Управление доступом",
       "shortDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes",
-      "metaDescription": "",
+      "metaDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes в VK Cloud. Описание процесса аутентификации. Взаимосвязь ролей личного кабинета и Kubernetes",
     "sectionTitle": "Управление доступом",
     "icon": "",
     "weight": 10,

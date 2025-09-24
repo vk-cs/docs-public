@@ -1,7 +1,7 @@
 {
     "title": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
       "shortDescription": "Как настроить Ingress-контроллер в связке с HTTP-балансировщиком",
-      "metaDescription": "",
+      "metaDescription": "Узнайте, как в кластере Kubernetes развернуть Ingress-контроллер в связке с HTTP-балансировщиком нагрузки платформы VK Cloud",
     "sectionTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
     "icon": "",
     "weight": 2,

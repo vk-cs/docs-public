@@ -1,7 +1,7 @@
 {
     "title": "Управление группой worker-узлов",
       "shortDescription": "Как управлять группами worker-узлов Spark с помощью личного кабинета",
-      "metaDescription": "",
+      "metaDescription": "Как управлять группами узлов в кластере Kubernetes. Инструкции по созданию и масштабированию группы worker-узлов в личном кабинете VK Cloud",
     "sectionTitle": "Управление группой worker-узлов",
     "icon": "",
     "weight": 3,

@@ -1,7 +1,7 @@
 {
   "title": "Load Balancing",
   "shortDescription": "Распределение нагрузки между серверами",
-  "metaDescription": "",
+  "metaDescription": "Сервис балансировщиков нагрузки Load Balancing VK Cloud. Концепции, инструкции, способы диагностики и устранения проблем с балансировщиками нагрузки",
   "sectionTitle": "Load Balancing",
   "icon": "",
   "weight": 2,

@@ -1,7 +1,7 @@
 {
     "title": "Подключение к кластеру с помощью Kubernetes Dashboard",
       "shortDescription": "",
-      "metaDescription": "",
+      "metaDescription": "Kubernetes Dashboard — это универсальный веб-интерфейс для кластеров Kubernetes, который доступен во всех кластерах VK Cloud. Как подключиться к кластеру Kubernetes с помощью Kubernetes Dashboard в VK Cloud",
     "sectionTitle": "Подключение к кластеру (Kubernetes Dashboard)",
     "icon": "",
     "weight": 3,

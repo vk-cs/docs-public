@@ -1,7 +1,7 @@
 {
   "title": "О миграции",
   "shortDescription": "Зачем и как переносить проекты в SDN Sprut, какие преимущества у этой SDN",
-  "metaDescription": "",
+  "metaDescription": "Причины и преимущества миграции с SDN Neutron в SDN Sprut. Описание шагов миграции на SDN Sprut. Перечень инструментов и используемых скриптов",
   "sectionTitle": "О миграции",
   "icon": "",
   "weight": 1,

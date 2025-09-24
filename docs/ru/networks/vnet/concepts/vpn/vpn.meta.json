@@ -1,7 +1,7 @@
 {
     "title": "VPN",
       "shortDescription": "Особенности использования VPN в VK Cloud",
-      "metaDescription": "",
+      "metaDescription": "VPN — технология, которая позволяет обеспечить одно или несколько защищенных сетевых соединений поверх других сетей. Функции и задачи VPN в VK Cloud. Параметры VPN в VK Cloud",
     "sectionTitle": "VPN",
     "icon": "",
     "weight": 6,

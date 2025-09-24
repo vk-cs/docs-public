@@ -1,7 +1,7 @@
 {
     "title": "Сеть в кластере",
       "shortDescription": "Интеграция кластеров Kubernetes с сетевыми сервисами VK Cloud",
-      "metaDescription": "",
+      "metaDescription": "Интеграция кластеров Kubernetes с сетевыми сервисами VK Cloud. Объекты сетевой инфраструктуры в кластере Kubernetes, балансировщики нагрузки, Ingress-контроллер",
     "sectionTitle": "Сеть в кластере",
     "icon": "",
     "weight": 4,

@@ -1,7 +1,7 @@
 {
     "title": "Создание ВМ",
       "shortDescription": "",
-      "metaDescription": "",
+      "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers. Создание ВМ",
     "sectionTitle": "Создание ВМ",
     "icon": "",
     "weight": 1,

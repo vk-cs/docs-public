@@ -1,7 +1,7 @@
 {
   "title": "Object Storage",
   "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса Object Storage",
-  "metaDescription": "",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления бакетами и объектами сервиса Object Storage",
   "sectionTitle": "Object Storage",
   "icon": "",
   "weight": 40,

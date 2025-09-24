@@ -1,7 +1,7 @@
 {
     "title": "Основные команды Terraform",
       "shortDescription": "",
-      "metaDescription": "",
+      "metaDescription": "Как использовать Terraform-провайдер VK Cloud для управления платформой. Перечень основных используемых команд Terraform",
     "sectionTitle": "Основные команды Terraform",
     "icon": "",
     "weight": 0,
