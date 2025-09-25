@@ -285,6 +285,7 @@
   "6cedb058-c927-4636-9e06-ddb100e2f32b": "/ru/computing/cloud-desktops/instructions/config/setup-net",
   "c878e25f-aff8-4c10-b139-dadfc9f47316": "/ru/computing/cloud-desktops/instructions/config/setup-ldap",
   "19c53be6-43cf-4082-9857-2ceca325ea0c": "/ru/computing/cloud-desktops/instructions/config/setup-saml",
+  "c86acee0-c81c-4cf3-8d55-76864e8198b8": "/ru/computing/cloud-desktops/instructions/config/ssl-certificates",
   "eac9027a-2cbe-412a-abc7-d38790f54809": "/ru/computing/cloud-desktops/instructions/group-policies",
   "b2ebc00a-ca8f-4e0e-8707-2ab300e3b106": "/ru/computing/cloud-desktops/instructions/desktops-pool",
   "ceaab455-86eb-487b-b8ad-d1fa2599ae73": "/ru/computing/cloud-desktops/instructions/desktops-pool/add",

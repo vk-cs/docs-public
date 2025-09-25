@@ -6,6 +6,9 @@
   "icon": "",
   "weight": 4,
   "build": {
-      "for":["dontbuild"]
-   }
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "235f9319-c3a3-4163-b549-23a8b63cf956"
 }
