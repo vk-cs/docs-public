@@ -5,5 +5,7 @@
   "sectionTitle": "Настройка SSL-сертификатов",
   "icon": "",
   "weight": 4,
-  "uuid": "c86acee0-c81c-4cf3-8d55-76864e8198b8"
+  "build": {
+      "for":["dontbuild"]
+   }
 }
