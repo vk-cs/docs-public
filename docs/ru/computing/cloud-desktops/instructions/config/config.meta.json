@@ -5,5 +5,8 @@
     "sectionTitle": "Настройка сервиса",
     "icon": "",
     "weight": 0,
-    "uuid": "844a8708-063c-4a23-ad1d-a277900eae1a"
+    "uuid": "844a8708-063c-4a23-ad1d-a277900eae1a",
+    "additionalUuids": [    
+      "c86acee0-c81c-4cf3-8d55-76864e8198b8"
+    ]  
 }
