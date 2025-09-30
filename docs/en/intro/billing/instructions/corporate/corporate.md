@@ -42,8 +42,11 @@ If the organization works with VK Cloud on [prepayment](../../concepts/physical-
 
 To complete additional registration:
 
-1. In your VK Cloud management console, go to [project settings](https://msk.cloud.vk.com/app/en/project/legal/) to the **General information** tab.
-1. Click the **Fill** button.
+1. [Go to](https://cloud.vk.com/app/en/) VK Cloud management console.
+1. Open **Pre-regiastration** window in one of the ways:
+
+    - Click the **For legal entities** button at the top of the page.
+    - [Go to](https://msk.cloud.vk.com/app/en/project/legal) project settings to the **General information** tab, then click the **Fill** button.
 1. In the **Pre-registration** window, enter the TIN of the organization in the field of the same name.
 
    If the TIN is found in the contractor database, most of the organization's details will be filled in automatically.
