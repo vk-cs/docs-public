@@ -1,9 +1,9 @@
 {
-    "title": "Управление виртуальными машинами",
-    "metaDescription": "VK Cloud: управление виртуальными машинами с помощью API IaaS.",
-    "shortDescription": "OpenAPI-спецификация для управления виртуальными машинами",
-    "sectionTitle": "Управление виртуальными машинами",
-    "icon": "",
-    "weight": 1,
-    "uuid": ""
+  "title": "Управление виртуальными машинами",
+  "metaDescription": "VK Cloud: управление виртуальными машинами с помощью API IaaS.",
+  "shortDescription": "OpenAPI-спецификация для управления виртуальными машинами",
+  "sectionTitle": "Управление виртуальными машинами",
+  "icon": "",
+  "weight": 1,
+  "uuid": "dce6de99-1e65-40de-bf6e-bf585ffeb3e4"
 }

@@ -1,9 +1,9 @@
 {
-    "title": "Cloud Servers",
-    "metaDescription": "VK Cloud: управление Cloud Servers с помощью API IaaS.",
-    "shortDescription": "OpenAPI-спецификации сервиса Cloud Servers",
-    "sectionTitle": "Cloud Servers",
-    "icon": "",
-    "weight": 0,
-    "uuid": ""
+  "title": "Cloud Servers",
+  "metaDescription": "VK Cloud: управление Cloud Servers с помощью API IaaS.",
+  "shortDescription": "OpenAPI-спецификации сервиса Cloud Servers",
+  "sectionTitle": "Cloud Servers",
+  "icon": "",
+  "weight": 0,
+  "uuid": "a880238a-2c53-40e8-9a2c-eaada29cebae"
 }

@@ -32632,11 +32632,5 @@
     "destination": "/ru/storage/s3/instructions/access-management/bucket-keys",
     "permanent": false,
     "locale": false
-  },
-  {
-    "source": "/ru/computing/cloud-desktops/instructions/config/ssl-certificates",
-    "destination": "/ru/computing/cloud-desktops/instructions/config",
-    "permanent": false,
-    "locale": false
   }
 ]
