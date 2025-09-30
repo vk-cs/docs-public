@@ -1,0 +1,2910 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Compute API",
+    "version": "1.0.0",
+    "description": "REST API для управления виртуальными машинами"
+  },
+  "tags": [
+    {
+      "name": "versions",
+      "description": "Версии API"
+    },
+    {
+      "name": "flavors",
+      "description": "Шаблоны конфигураций ВМ"
+    },
+    {
+      "name": "servers",
+      "description": "Виртуальные машины"
+    },
+    {
+      "name": "server-actions",
+      "description": "Действия с ВМ"
+    },
+    {
+      "name": "server-security-groups",
+      "description": "Группы безопасности ВМ"
+    },
+    {
+      "name": "volume-attachments",
+      "description": "Диски, подключенные к ВМ"
+    },
+    {
+      "name": "keypairs",
+      "description": "Ключевые пары для подключения к ВМ по SSH"
+    },
+    {
+      "name": "server-groups",
+      "description": "Группы серверов"
+    },
+    {
+      "name": "availability-zone",
+      "description": "Зоны доступности"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "versions"
+        ],
+        "summary": "Получить перечень поддерживаемых версий API",
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Versions"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2.1": {
+      "get": {
+        "tags": [
+          "versions"
+        ],
+        "summary": "Подтвердить наличие версии 2.1",
+        "description": "Метод позволяет подтвердить наличие версии 2.1.\n\nВозвращает код ``304 FOUND`` и пустое тело ответа",
+        "operationId": "api_confirm_v21_v2_1_get",
+        "responses": {
+          "304": {
+            "description": "ОК"
+          }
+        }
+      }
+    },
+    "/servers": {
+      "get": {
+        "summary": "Получить список ВМ",
+        "tags": [
+          "servers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/sortKeyVM"
+          },
+          {
+            "$ref": "#/components/parameters/sortDirVM"
+          },
+          {
+            "$ref": "#/components/parameters/changes-since"
+          },
+          {
+            "$ref": "#/components/parameters/image"
+          },
+          {
+            "$ref": "#/components/parameters/flavor"
+          },
+          {
+            "$ref": "#/components/parameters/nameVM"
+          },
+          {
+            "$ref": "#/components/parameters/statusVM"
+          },
+          {
+            "$ref": "#/components/parameters/ip"
+          },
+          {
+            "$ref": "#/components/parameters/reservation_id"
+          },
+          {
+            "$ref": "#/components/parameters/ip6"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/changes-before"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getServers"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать новую ВМ",
+        "tags": [
+          "servers"
+        ],
+        "requestBody": {
+          "description": "Объект данных новой ВМ в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "server": {
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "flavorRef",
+                      "imageRef",
+                      "adminPass"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "Имя ВМ"
+                      },
+                      "flavorRef": {
+                        "type": "string",
+                        "description": "Идентификатор шаблона конфигурации ВМ"
+                      },
+                      "imageRef": {
+                        "type": "string",
+                        "description": "Идентификатор образа, который будет использоваться для ВМ. Не требуется в случае загрузки с диска. Во всех остальных случаях параметр обязательный"
+                      },
+                      "security_groups": {
+                        "type": "array",
+                        "description": "Одна или несколько групп безопасности. Если параметр не задан, на ВМ будет создана группа безопасности ``default``. Запрошенные группы безопасности не применяются к уже существующим портам",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "Имя группы безопасности"
+                            }
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "string"
+                        },
+                        "description": "Метаданные ВМ. Пары ключ — значение. Максимальный размер ключа и значения метаданных составляет\n255 байт каждый"
+                      },
+                      "accessIPv4": {
+                        "type": "string",
+                        "description": "IP-адрес версии 4 для доступа к ВМ"
+                      },
+                      "accessIPv6": {
+                        "type": "string",
+                        "description": "IP-адрес версии 6 для доступа к ВМ"
+                      },
+                      "adminPass": {
+                        "type": "string",
+                        "description": "Административный пароль ВМ"
+                      },
+                      "user_data": {
+                        "type": "string",
+                        "description": "Информация о конфигурации или сценарии, которые будут использоваться при запуске. Должно быть закодировано в Base64"
+                      },
+                      "availability_zone": {
+                        "type": "string",
+                        "description": "Зона доступности ВМ"
+                      },
+                      "networks": {
+                        "type": "array",
+                        "description": "Массив ``networks``. Обязательный параметр, если в проекте несколько сетей. Если вы не указываете параметр ``networks``, ВМ подключается к единственной сети, созданной для текущего проекта",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "uuid": {
+                              "type": "string",
+                              "description": "Идентификатор сети"
+                            },
+                            "port": {
+                              "type": "string",
+                              "description": "Идентификатор порта"
+                            },
+                            "fixed_ip": {
+                              "type": "string",
+                              "description": "Фиксированный адрес IPv4 для сетевого адаптера. Действует для сетей ``neutron`` или ``nova-networks``"
+                            },
+                            "tag": {
+                              "type": "string",
+                              "description": "Тег роли устройства, который можно применить к сетевому интерфейсу"
+                            }
+                          }
+                        }
+                      },
+                      "personality": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        },
+                        "description": "Путь к файлу и текст содержимого для вставки на ВМ при запуске. Максимальный размер данных пути к файлу составляет 255 байт"
+                      },
+                      "block_device_mapping_v2": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "device_name",
+                            "source_type",
+                            "guest_format",
+                            "boot_index"
+                          ],
+                          "properties": {
+                            "device_name": {
+                              "type": "string",
+                              "description": "Путь к устройству диска, который вы хотите использовать для загрузки сервера"
+                            },
+                            "source_type": {
+                              "type": "string",
+                              "enum": [
+                                "blank",
+                                "snapshot",
+                                "volume",
+                                "image"
+                              ],
+                              "description": "Тип диска"
+                            },
+                            "destination_type": {
+                              "type": "string",
+                              "enum": [
+                                "local",
+                                "volume"
+                              ],
+                              "description": "Определяет, откуда берется диск"
+                            },
+                            "delete_on_termination": {
+                              "type": "boolean",
+                              "default": false,
+                              "description": "Чтобы удалить загрузочный диск при уничтожении сервера, укажите ``true``. В противном случае укажите ``false``. По умолчанию: ``false``"
+                            },
+                            "guest_format": {
+                              "type": "string",
+                              "enum": [
+                                "ephemeral",
+                                "swap"
+                              ],
+                              "description": "Формат файловой системы диска гостевого сервера"
+                            },
+                            "boot_index": {
+                              "type": "string",
+                              "default": "None",
+                              "description": "Порядок загрузки. Задайте каждому устройству уникальный индекс загрузки, начиная с ``0``. Чтобы запретить использование устройства для загрузки, установите отрицательное значение или используйте значение ``None``. Простой вариант использования: назначить устройству загрузки индекс ``0``, а для всех остальных оставить значение по умолчанию — ``None``.\n\nНекоторые гипервизоры могут не поддерживать загрузку с нескольких устройств, в этом случае учитываются только устройства с индексом 0. Другие гипервизоры поддерживают загрузку с нескольких устройств, но только если они разных типов (например, диск и CD-ROM)."
+                            },
+                            "uuid": {
+                              "type": "string",
+                              "description": "Идентификатор исходного ресурса. Его значение указывает на разные ресурсы в зависимости от параметра ``source_type``. Например, если ``source_type`` имеет значение ``image``, блочное устройство создается на основе указанного образа, полученного из сервиса образов"
+                            },
+                            "tag": {
+                              "type": "string",
+                              "description": "Тег роли устройства, который можно применить к блочному устройству"
+                            }
+                          }
+                        },
+                        "description": "Включает детальный контроль над сопоставлением блочных устройств для ВМ. Обычно это используется для загрузки серверов с дисков",
+                      },
+                      "key_name": {
+                        "type": "string",
+                        "description": "Имя ключевой пары"
+                      },
+                      "os:scheduler_hints": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "string"
+                        },
+                        "description": "Словарь данных для отправки в планировщик. ``OS-SCH-HNT:scheduler_hints``\nможно также указать в качестве строки"
+                      },
+                      "OS-DCF:diskConfig": {
+                        "type": "string",
+                        "enum": [
+                          "AUTO",
+                          "MANUAL"
+                        ],
+                        "description": "Конфигурация диска. Возможные значения:\n\n``AUTO`` — будет создана ВМ с одним разделом, размером с целевой диск. Файловая система автоматически настраивается, чтобы соответствовать всему разделу.\n\n``MANUAL`` — ВМ будет создана с использованием схемы разделов и файловую систему, которая находится в исходном образе, если целевой диск больше. Оставшееся дисковое пространство не будет разделено"
+                      },
+                      "description": {
+                        "type": "string",
+                        "maxLength": 255,
+                        "description": "Описание ВМ"
+                      },
+                      "tags": {
+                        "type": "array",
+                        "description": "Список тегов. Теги имеют следующие ограничения:\n\n- Тег — это Unicode-строка длиной не более 60 символов.\n\n- Тег не может быть пустой строкой.\n\n- Теги чувствительны к регистру.\n\n– Символы ``/`` и ``,`` запрещены в имени тега.\n\n- У каждой ВМ может быть не более 50 тегов."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getServerDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "413": {
+            "description": "Превышен размер запроса"
+          }
+        }
+      }
+    },
+    "/servers/detail": {
+      "get": {
+        "summary": "Получить список ВМ с подробной информацией",
+        "tags": [
+          "servers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/sortKeyVM"
+          },
+          {
+            "$ref": "#/components/parameters/sortDirVM"
+          },
+          {
+            "$ref": "#/components/parameters/changes-since"
+          },
+          {
+            "$ref": "#/components/parameters/image"
+          },
+          {
+            "$ref": "#/components/parameters/flavor"
+          },
+          {
+            "$ref": "#/components/parameters/nameVM"
+          },
+          {
+            "$ref": "#/components/parameters/statusVM"
+          },
+          {
+            "$ref": "#/components/parameters/ip"
+          },
+          {
+            "$ref": "#/components/parameters/reservation_id"
+          },
+          {
+            "$ref": "#/components/parameters/ip6"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/changes-before"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getListServerDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/servers/{server_id}": {
+      "get": {
+        "summary": "Получить информацию о ВМ",
+        "tags": [
+          "servers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getServerDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Обновить информацию о ВМ",
+        "tags": [
+          "servers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ServerUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getServerDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ОК"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить ВМ",
+        "tags": [
+          "servers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/flavors": {
+      "get": {
+        "summary": "Получить список шаблонов конфигураций ВМ",
+        "description": "Метод возвращает список шаблонов конфигураций ВМ по заданным фильтрам",
+        "tags": [
+          "flavors"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/sortKeyFlavor"
+          },
+          {
+            "$ref": "#/components/parameters/sortDirFlavor"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/minDisk"
+          },
+          {
+            "$ref": "#/components/parameters/minRam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getListFlavors"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    },
+    "/flavors/detail": {
+      "get": {
+        "summary": "Получить список шаблонов конфигураций ВМ с подробной информацией",
+        "tags": [
+          "flavors"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/sortKeyFlavor"
+          },
+          {
+            "$ref": "#/components/parameters/sortDirFlavor"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/minDisk"
+          },
+          {
+            "$ref": "#/components/parameters/minRam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getListFlavorDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    },
+    "/flavors/{flavor_id}": {
+      "get": {
+        "summary": "Получить информацию о шаблоне конфигурации ВМ",
+        "tags": [
+          "flavors"
+        ],
+        "parameters": [
+          {
+            "name": "flavor_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Идентификатор шаблона конфигурации ВМ"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getFlavorDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/flavors/{flavor_id}/os-extra_specs": {
+      "get": {
+        "tags": [
+          "flavors"
+        ],
+        "summary": "Вернуть все дополнительные параметры шаблона конфигурации ВМ",
+        "parameters": [
+          {
+            "name": "flavor_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "description": "UUID шаблона конфигурации ВМ"
+            },
+            "description": "UUID шаблона конфигурации ВМ"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExtraSpecNestedResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/flavors/{flavor_id}/os-extra_specs/{extra_spec_key}": {
+      "get": {
+        "tags": [
+          "flavors"
+        ],
+        "summary": "Получить значение дополнительного параметра шаблона конфигурации ВМ",
+        "parameters": [
+          {
+            "name": "flavor_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "description": "Идентификатор шаблона конфигурации ВМ"
+            }
+          },
+          {
+            "name": "extra_spec_key",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Название дополнительного параметра"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExtraSpecResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/servers/{server_id}/action": {
+      "post": {
+        "summary": "Выполнить действие с ВМ",
+        "description": "Метод позволяет управлять работой ВМ.\n\nУкажите желаемое действие в теле запроса.",
+        "tags": [
+          "server-actions"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstanceActionRequest"
+              },
+              "examples": {
+                "addFloatingIp": {
+                  "summary": "Добавить Floating IP-адрес к ВМ",
+                  "value": {
+                    "addFloatingIp": {
+                      "address": "10.10.10.10",
+                      "fixed_address": "192.168.0.3"
+                    }
+                  }
+                },
+                "addSecurityGroup": {
+                  "summary": "Добавить группу безопасности",
+                  "value": {
+                    "addSecurityGroup": {
+                      "name": "test"
+                    }
+                  }
+                },
+                "changePassword": {
+                  "summary": "Изменить пароль администратора",
+                  "value": {
+                    "adminPass": "foo"
+                  }
+                },
+                "confirmResize": {
+                  "summary": "Подтвердить изменение типа ВМ",
+                  "value": {
+                    "confirmResize": "null"
+                  }
+                },
+                "createImage": {
+                  "summary": "Создать образ из ВМ",
+                  "value": {
+                    "createImage": {
+                      "name": "foo-image",
+                      "metadata": {
+                        "meta_var": "meta_val"
+                      }
+                    }
+                  }
+                },
+                "lock": {
+                  "summary": "Заблокировать ВМ",
+                  "value": {
+                    "lock": "null"
+                  }
+                },
+                "pause": {
+                  "summary": "Поставить ВМ на паузу",
+                  "value": {
+                    "pause": "null"
+                  }
+                },
+                "hardReboot": {
+                  "summary": "Выполнить принудительную перезагрузку ВМ",
+                  "value": {
+                    "reboot": {
+                      "type": "HARD"
+                    }
+                  }
+                },
+                "softReboot": {
+                  "summary": "Выполнить стандартную перезагрузку ВМ",
+                  "value": {
+                    "reboot": {
+                      "type": "SOFT"
+                    }
+                  }
+                },
+                "rebuild": {
+                  "summary": "Пересобрать ВМ из исходной конфигурации",
+                  "value": {
+                    "rebuild": {
+                      "imageRef": "70a599e0-31e7-49b7-b260-868f441e862b",
+                      "name": "foobar",
+                      "adminPass": "seekr3t",
+                      "metadata": {
+                        "meta_var": "meta_val"
+                      },
+                      "personality": [
+                        {
+                          "path": "/etc/banner.txt",
+                          "contents": "..."
+                        }
+                      ],
+                      "preserve_ephemeral": true
+                    }
+                  }
+                },
+                "removeFloatingIp": {
+                  "summary": "Снять Floating IP-адрес с ВМ",
+                  "value": {
+                    "removeFloatingIp": {
+                      "address": "10.10.10.10"
+                    }
+                  }
+                },
+                "removeSecurityGroup": {
+                  "summary": "Снять группу безопасности с ВМ",
+                  "value": {
+                    "removeSecurityGroup": {
+                      "name": "test"
+                    }
+                  }
+                },
+                "rescue": {
+                  "summary": "Перевести ВМ в режим восстановления",
+                  "value": {
+                    "rescue": {
+                      "adminPass": "MySecretPass"
+                    }
+                  }
+                },
+                "resize": {
+                  "summary": "Изменить шаблон конфигурации ВМ",
+                  "value": {
+                    "resize": {
+                      "flavorRef": "2",
+                      "OS-DCF:diskConfig": "AUTO"
+                    }
+                  }
+                },
+                "resume": {
+                  "summary": "Вернуть ВМ в работу после паузы",
+                  "value": {
+                    "resume": "null"
+                  }
+                },
+                "revertResize": {
+                  "summary": "Откатить изменение шаблона конфигурации ВМ",
+                  "value": {
+                    "revertResize": "null"
+                  }
+                },
+                "os-start": {
+                  "summary": "Запустить остановленную ВМ",
+                  "value": {
+                    "os-start": "null"
+                  }
+                },
+                "os-stop": {
+                  "summary": "Остановить ВМ",
+                  "value": {
+                    "os-stop": "null"
+                  }
+                },
+                "suspend": {
+                  "summary": "Перевести ВМ в режим suspend",
+                  "value": {
+                    "suspend": "null"
+                  }
+                },
+                "unlock": {
+                  "summary": "Разблокировать ВМ",
+                  "value": {
+                    "unlock": "null"
+                  }
+                },
+                "unpause": {
+                  "summary": "Вывести ВМ из режима паузы",
+                  "value": {
+                    "unpause": "null"
+                  }
+                },
+                "unrescue": {
+                  "summary": "Вывести ВМ из режима восстановления",
+                  "value": {
+                    "unrescue": "null"
+                  }
+                },
+                "os-check-allocation": {
+                  "summary": "Произвести проверку аллокаций ВМ",
+                  "value": {
+                    "os-check-allocation": "null"
+                  }
+                },
+                "os-check-consistency": {
+                  "summary": "Произвести проверку целостности конфигурации ВМ",
+                  "value": {
+                    "os-check-consistency": "null"
+                  }
+                },
+                "addFixedIp": {
+                  "summary": "Добавить фиксированный IP-адрес к ВМ",
+                  "value": {
+                    "addFixedIp": {
+                      "networkId": 1
+                    }
+                  }
+                },
+                "removeFixedIp": {
+                  "summary": "Снять фиксированный IP-адрес с ВМ",
+                  "value": {
+                    "removeFixedIp": {
+                      "address": "10.0.0.4"
+                    }
+                  }
+                },
+                "forceDelete": {
+                  "summary": "Принудительно удалить ВМ",
+                  "value": {
+                    "forceDelete": "null"
+                  }
+                },
+                "restore": {
+                  "summary": "Восстановить удаленную ВМ",
+                  "value": {
+                    "restore": "null"
+                  }
+                },
+                "os-getConsoleOutput": {
+                  "summary": "Вывести содержимое консоли ВМ",
+                  "value": {
+                    "os-getConsoleOutput": {
+                      "length": 50
+                    }
+                  }
+                },
+                "os-getRDPConsole": {
+                  "summary": "Организовать RDP консоль для ВМ",
+                  "value": {
+                    "os-getRDPConsole": {
+                      "type": "rdp-html5"
+                    }
+                  }
+                },
+                "os-getSerialConsole": {
+                  "summary": "Организовать последовательную консоль для ВМ",
+                  "value": {
+                    "os-getSerialConsole": {
+                      "type": "serial"
+                    }
+                  }
+                },
+                "os-getSPICEConsole": {
+                  "summary": "Организовать SPICE консоль для ВМ",
+                  "value": {
+                    "os-getSPICEConsole": {
+                      "type": "spice-html5"
+                    }
+                  }
+                },
+                "os-getVNCConsole": {
+                  "summary": "Организовать VNC консоль для ВМ",
+                  "value": {
+                    "os-getVNCConsole": {
+                      "type": "novnc"
+                    }
+                  }
+                },
+                "shelve": {
+                  "summary": "Отложить ВМ",
+                  "value": {
+                    "shelve": "null"
+                  }
+                },
+                "shelveOffload": {
+                  "summary": "Отложить ВМ и очистить занимаемые ей ресурсы",
+                  "value": {
+                    "shelveOffload": "null"
+                  }
+                },
+                "unshelve": {
+                  "summary": "Восстановить отложенную ВМ",
+                  "value": {
+                    "unshelve": "null"
+                  }
+                },
+                "trigger_crash_dump": {
+                  "summary": "Сохранить аварийный дамп ВМ",
+                  "value": {
+                    "trigger_crash_dump": "null"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "501": {
+            "description": "Метод еще не реализован"
+          }
+        }
+      }
+    },
+    "/servers/{server_id}/os-security-groups": {
+      "get": {
+        "summary": "Получить список групп безопасности ВМ",
+        "tags": [
+          "server-security-groups"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "security_groups": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getServerSecurityGroups"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/servers/{server_id}/os-volume_attachments": {
+      "get": {
+        "summary": "Получить список дисков, подключенных к ВМ",
+        "tags": [
+          "volume-attachments"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumeAttachments": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getVolumesAttachments"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "post": {
+        "summary": "Подключить диск к ВМ",
+        "tags": [
+          "volume-attachments"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "volumeAttachment": {
+                    "type": "object",
+                    "required": [
+                      "volumeId"
+                    ],
+                    "properties": {
+                      "volumeId": {
+                        "type": "string",
+                        "description": "Идентификатор диска"
+                      },
+                      "device": {
+                        "type": "string",
+                        "example": "/dev/sdd",
+                        "description": "Имя устройства"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumeAttachments": {
+                      "$ref": "#/components/schemas/getVolumesAttachments"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/servers/{server_id}/os-volume_attachments/{attachment_id}": {
+      "get": {
+        "summary": "Получить информацию о подключении диска к ВМ",
+        "tags": [
+          "volume-attachments"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          },
+          {
+            "$ref": "#/components/parameters/attachment_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumeAttachments": {
+                      "$ref": "#/components/schemas/getVolumesAttachments"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Обновить информацию о подключении диска к ВМ",
+        "tags": [
+          "volume-attachments"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          },
+          {
+            "$ref": "#/components/parameters/attachment_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "volumeAttachment": {
+                    "type": "object",
+                    "required": [
+                      "volumeId"
+                    ],
+                    "properties": {
+                      "volumeId": {
+                        "type": "string",
+                        "description": "Идентификатор диска, который нужно подключить"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Отключить диск от ВМ",
+        "tags": [
+          "volume-attachments"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_id"
+          },
+          {
+            "$ref": "#/components/parameters/attachment_id"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/os-keypairs": {
+      "get": {
+        "summary": "Получить список ключевых пар",
+        "tags": [
+          "keypairs"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "keypairs"
+                  ],
+                  "properties": {
+                    "keypairs": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getKeypairs"
+                      }
+                    },
+                    "keypairs_links": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — `http:developer.openstack.org/api-guide/compute/links_and_references.html`"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать или импортировать ключевую пару",
+        "tags": [
+          "keypairs"
+        ],
+        "requestBody": {
+          "description": "Объект данных новой ключевой пары в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "keypair": {
+                    "type": "object",
+                    "required": [
+                      "name"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "Имя ключевой пары"
+                      },
+                      "public_key": {
+                        "type": "string",
+                        "description": "Публичный ключ. Если параметр не указан, то ключевая пара будет сгенерирована"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "ssh",
+                          "x509"
+                        ],
+                        "description": "Тип ключевой пары"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "keypair"
+                  ],
+                  "properties": {
+                    "keypair": {
+                      "$ref": "#/components/schemas/createKeypairs"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/os-keypairs/{keypair_name}": {
+      "get": {
+        "summary": "Получить информацию о ключевой паре",
+        "tags": [
+          "keypairs"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/keypair_name"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "keypair"
+                  ],
+                  "properties": {
+                    "keypair": {
+                      "$ref": "#/components/schemas/getKeypairs"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить ключевую пару",
+        "tags": [
+          "keypairs"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/keypair_name"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/os-server-groups": {
+      "get": {
+        "summary": "Получить список групп серверов",
+        "tags": [
+          "server-groups"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limitOffset"
+          },
+          {
+            "$ref": "#/components/parameters/offset"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "server_groups"
+                  ],
+                  "properties": {
+                    "server_groups": {
+                      "type": "array",
+                      "description": "Список групп серверов",
+                      "items": {
+                        "$ref": "#/components/schemas/getServerGroups"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать группу серверов",
+        "tags": [
+          "server-groups"
+        ],
+        "requestBody": {
+          "description": "Объект данных новой группы серверов в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "server_group": {
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "policies"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "Имя группы серверов"
+                      },
+                      "policies": {
+                        "type": "array",
+                        "description": "Список политик размещения группы серверов на вычислительных узлах",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "affinity",
+                            "anti-affinity",
+                            "soft-affinity",
+                            "soft-anti-affinity"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "server_group"
+                  ],
+                  "properties": {
+                    "server_group": {
+                      "$ref": "#/components/schemas/getServerGroups"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    },
+    "/os-server-groups/{server_group_id}": {
+      "get": {
+        "summary": "Получить информацию о группе серверов",
+        "tags": [
+          "server-groups"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_group_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "server_group"
+                  ],
+                  "properties": {
+                    "server_group": {
+                      "$ref": "#/components/schemas/getServerGroups"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить группу серверов",
+        "tags": [
+          "server-groups"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/server_group_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/os-availability-zone": {
+      "get": {
+        "summary": "Получить информацию о зонах доступности",
+        "tags": [
+          "availability-zone"
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "availabilityZoneInfo"
+                  ],
+                  "properties": {
+                    "availabilityZoneInfo": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getAvailabilityZone"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "server_id": {
+        "name": "server_id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор ВМ"
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Максимальное количество элементов, возвращаемых в одном ответе. В последующих запросах указывайте в параметре ``marker`` идентификатор последнего элемента из ответа, чтобы получить следующий набор элементов",
+        "required": false
+      },
+      "marker": {
+        "name": "marker",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Маркер пагинации для больших наборов данных",
+        "required": false
+      },
+      "limitOffset": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Максимальное количество элементов, возвращаемых в одном ответе. Используется совместно с параметром ``offset``, чтобы в последующих запросах получать следующий набор элементов",
+        "required": false
+      },
+      "offset": {
+        "name": "offset",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Порядковый номер элемента, с которого следует начать список",
+        "required": false
+      },
+      "sortKeyVM": {
+        "name": "sort_key",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "default": "created_at"
+        },
+        "description": "Атрибут, по которому сортируются ВМ в ответе",
+        "required": false
+      },
+      "sortKeyFlavor": {
+        "name": "sort_key",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "default": "flavorid"
+        },
+        "description": "Атрибут, по которому сортируются шаблоны конфигураций ВМ в ответе",
+        "required": false
+      },
+      "sortDirVM": {
+        "name": "sort_dir",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "default": "desc"
+        },
+        "description": "Направление сортировки. Возможные значения:\n\n``asc`` — по возрастанию;\n\n``desc`` — по убыванию",
+        "required": false
+      },
+      "sortDirFlavor": {
+        "name": "sort_dir",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "default": "asc"
+        },
+        "description": "Направление сортировки. Возможные значения:\n\n``asc`` — по возрастанию;\n\n``desc`` — по убыванию",
+        "required": false
+      },
+      "changes-since": {
+        "name": "changes-since",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "example": "2015-08-27T09:49:58-05:00",
+        "description": "Фильтр по дате и времени, когда ВМ последний раз меняла статус. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)",
+        "required": false
+      },
+      "image": {
+        "name": "image",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по идентификатору образа",
+        "required": false
+      },
+      "flavor": {
+        "name": "flavor",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по идентификатору шаблона конфигурации ВМ",
+        "required": false
+      },
+      "nameVM": {
+        "name": "name",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по имени ВМ",
+        "required": false
+      },
+      "statusVM": {
+        "name": "status",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "BUILDING",
+            "DELETED",
+            "ERROR",
+            "HARD_REBOOT",
+            "MIGRATING",
+            "PASSWORD",
+            "PAUSED",
+            "REBOOT",
+            "REBUILD",
+            "RESCUED",
+            "RESIZED",
+            "REVERT_RESIZE",
+            "SOFT_DELETED",
+            "STOPPED",
+            "SHUTOFF",
+            "SUSPENDED",
+            "UNKNOWN",
+            "VERIFY_RESIZE"
+          ]
+        },
+        "description": "Фильтр по статусу ВМ",
+        "example": "ACTIVE",
+        "required": false
+      },
+      "ip": {
+        "name": "ip",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по IP-адресу версии 4",
+        "required": false
+      },
+      "reservation_id": {
+        "name": "reservation_id",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор резервирования, возвращаемый множественным вызовом создания ВМ",
+        "required": false
+      },
+      "ip6": {
+        "name": "ip6",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по IP-адресу версии 6",
+        "required": false
+      },
+      "tags": {
+        "name": "tags",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ВМ, соответствующие всем тегам в списке. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "tags-any": {
+        "name": "tags-any",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ВМ, соответствующие любому тегу в списке. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "not-tags": {
+        "name": "not-tags",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ВМ, которые не соответствуют ни одному тегу в списке. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "not-tags-any": {
+        "name": "not-tags-any",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ВМ, которые не соответствуют любому тегу в списке. Теги в запросе должны быть разделены запятой ",
+        "required": false
+      },
+      "changes-before": {
+        "name": "changes-before",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "example": "2015-08-27T09:49:58-05:00"
+        },
+        "description": "Фильтр по дате и времени последнего изменения ВМ. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)",
+        "required": false,
+        "example": "2015-08-27T09:49:58-05:00"
+      },
+      "minDisk": {
+        "name": "minDisk",
+        "in": "query",
+        "schema": {
+          "type": "integer",
+          "example": 100
+        },
+        "description": "Фильтр по минимальному размеру диска в гигибайтах",
+        "required": false
+      },
+      "minRam": {
+        "name": "minRam",
+        "in": "query",
+        "schema": {
+          "type": "integer",
+          "example": 512
+        },
+        "description": "Фильтр по минимальному количеству RAM в мебибайтах",
+        "required": false
+      },
+      "attachment_id": {
+        "name": "attachment_id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор подключения диска к ВМ"
+      },
+      "keypair_name": {
+        "name": "keypair_name",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Имя ключевой пары"
+      },
+      "server_group_id": {
+        "name": "server_group_id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор группы серверов"
+      }
+    },
+    "schemas": {
+      "getServers": {
+        "type": "object",
+        "properties": {
+          "servers": {
+            "type": "array",
+            "description": "Список ВМ",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор ВМ"
+                },
+                "links": {
+                  "type": "object",
+                  "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — `http:developer.openstack.org/api-guide/compute/links_and_references.html`"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Имя ВМ"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ServerDetails": {
+        "description": "Детальная информация о ВМ",
+        "type": "object",
+        "properties": {
+          "addresses": {
+            "type": "object",
+            "description": "Адреса ВМ. Для получения дополнительной информации см. ``nova.conf`` параметры конфигурации http://docs.openstack.org/liberty/config-reference/content/list-of-compute-config-options.html"
+          },
+          "created": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "flavor": {
+            "type": "object",
+            "description": "Идентификатор и ссылки на шаблон конфигурации ВМ"
+          },
+          "hostId": {
+            "type": "string",
+            "description": "Идентификатор хоста"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор ВМ"
+          },
+          "image": {
+            "type": "object",
+            "description": "Идентификатор и ссылки на образ. Объект может быть пустой при загрузке ВМ с диска"
+          },
+          "key_name": {
+            "type": "string",
+            "description": "Имя связанной ключевой пары, если есть"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — `http:developer.openstack.orgapi-guidecomputelinksandreferences.html`"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные ВМ"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя ВМ"
+          },
+          "accessIPv4": {
+            "type": "string",
+            "description": "IP-адрес версии 4, который следует использовать для доступа к ВМ"
+          },
+          "accessIPv6": {
+            "type": "string",
+            "description": "IP-адрес версии 6, который следует использовать для доступа к ВМ"
+          },
+          "config_drive": {
+            "type": "boolean",
+            "description": "Указывает, использовался ли для этого сервера конфигурационный диск"
+          },
+          "OS-DCF:diskConfig": {
+            "type": "string",
+            "enum": [
+              "AUTO",
+              "MANUAL"
+            ],
+            "description": "Конфигурация диска. Возможные значения:\n\n``AUTO`` — будет создана ВМ с одним разделом, размером с целевой диск. Файловая система автоматически настраивается, чтобы соответствовать всему разделу.\n\n``MANUAL`` — ВМ будет создана с использованием схемы разделов и файловую систему, которая находится в исходном образе, если целевой диск больше. Оставшееся дисковое пространство не будет разделено"
+          },
+          "OS-EXT-AZ:availability_zone": {
+            "type": "string",
+            "description": "Имя зоны доступности"
+          },
+          "OS-EXT-STS:power_state": {
+            "type": "integer",
+            "enum": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            "x-enumDescriptions": {
+              "0": "NOSTATE",
+              "1": "RUNNING",
+              "3": "PAUSED",
+              "4": "SHUTDOWN",
+              "6": "CRASHED",
+              "7": "SUSPENDED"
+            },
+            "description": "Состояние питания ВМ"
+          },
+          "OS-EXT-STS:task_state": {
+            "type": "string",
+            "description": "Состояние задачи ВМ"
+          },
+          "OS-EXT-STS:vm_state": {
+            "type": "string",
+            "description": "Состояние ВМ"
+          },
+          "os-extended-volumes:volumes_attached": {
+            "type": "object",
+            "description": "Прикрепленные диски, если есть"
+          },
+          "OS-SRV-USG:launched_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время запуска ВМ. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "OS-SRV-USG:terminated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время удаления ВМ. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "progress": {
+            "type": "integer",
+            "description": "Процентное значение прогресса удаления"
+          },
+          "security_groups": {
+            "type": "array",
+            "description": "Группы безопасности",
+            "items": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Имя группы безопасности"
+                }
+              }
+            }
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "updated": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "user_id": {
+            "type": "string",
+            "description": "Идентификатор пользователя, которому принадлежит ВМ"
+          },
+          "OS-EXT-SERV-ATTR:hostname": {
+            "type": "string",
+            "description": "Имя хоста, заданное для ВМ при его загрузке"
+          },
+          "OS-EXT-SERV-ATTR:reservation_id": {
+            "type": "string",
+            "description": "Идентификатор резервирования для ВМ. Этот идентификатор может\nбыть полезен при отслеживании групп серверов, созданных множественным вызовом создания ВМ"
+          },
+          "OS-EXT-SERV-ATTR:launch_index": {
+            "type": "integer",
+            "description": "Последовательность запуска ВМ, созданных множественным вызовом создания ВМ"
+          },
+          "OS-EXT-SERV-ATTR:kernel_id": {
+            "type": "string",
+            "description": "Идентификатор образа ядра при использовании AMI"
+          },
+          "OS-EXT-SERV-ATTR:ramdisk_id": {
+            "type": "string",
+            "description": "Идентификатор образа виртуального диска при использовании AMI"
+          },
+          "OS-EXT-SERV-ATTR:root_device_name": {
+            "type": "string",
+            "description": "Имя корневого устройства для ВМ"
+          },
+          "OS-EXT-SERV-ATTR:user_data": {
+            "type": "string",
+            "description": "Пользовательские данные, с которыми была создана ВМ"
+          }
+        }
+      },
+      "getServerDetails":{
+        "type": "object",
+        "properties": {
+          "server": {
+            "$ref": "#/components/schemas/ServerDetails"
+          }
+        }
+      },
+      "getListServerDetails":{
+        "type": "object",
+        "properties": {
+          "servers": {
+            "type": "array",
+            "description": "Список ВМ с детальной информацией",
+            "items": {
+              "$ref": "#/components/schemas/ServerDetails"
+            }
+          }
+        }
+      },
+      "ServerUpdate": {
+        "type": "object",
+        "properties": {
+          "server": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Новое имя ВМ"
+              },
+              "description": {
+                "type": "string",
+                "description": "Новое описание ВМ"
+              },
+              "accessIPv4": {
+                "type": "string",
+                "description": "Новый IP-адрес версии 4, который следует использовать для доступа к ВМ"
+              },
+              "accessIPv6": {
+                "type": "string",
+                "description": "Новый IP-адрес версии 6, который следует использовать для доступа к ВМ"
+              },
+              "OS-DCF:diskConfig": {
+                "type": "string",
+                "enum": [
+                  "AUTO",
+                  "MANUAL"
+                ],
+                "description": "Конфигурация диска. Возможные значения:\n\n``AUTO`` — будет создана ВМ с одним разделом, размером с целевой диск. Файловая система автоматически настраивается, чтобы соответствовать всему разделу.\n\n``MANUAL`` — ВМ будет создана с использованием схемы разделов и файловую систему, которая находится в исходном образе, если целевой диск больше. Оставшееся дисковое пространство не будет разделено"
+              }
+            }
+          }
+        }
+      },
+      "getFlavors": {
+        "type": "object",
+        "properties": {
+          "flavors": {
+            "type": "array",
+            "description": "Список шаблонов конфигураций ВМ",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Идентификатор шаблона конфигурации ВМ"
+              },
+              "links": {
+                "type": "object",
+                "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — `http:developer.openstack.org/api-guide/compute/links_and_references.html`"
+              },
+              "name": {
+                "type": "string",
+                "description": "Имя шаблона конфигурации ВМ"
+              }
+            }
+          }
+        }
+      },
+      "getListFlavors": {
+        "type": "object",
+        "properties": {
+          "flavors": {
+            "type": "array",
+            "description": "Список шаблонов конфигураций ВМ",
+            "items": {
+              "$ref": "#/components/schemas/ServerDetails"
+            }
+          }
+        }
+      },
+      "FlavorDetails": {
+        "type": "object",
+        "required": [
+          "name",
+          "id",
+          "ram",
+          "disk",
+          "vcpus",
+          "links",
+          "OS-FLV-EXT-DATA:ephemeral",
+          "swap",
+          "rxtx_factor",
+          "os-flavor-access:is_public",
+          "extra_specs"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя шаблона конфигурации ВМ"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор шаблона конфигурации ВМ"
+          },
+          "ram": {
+            "type": "integer",
+            "description": "Количество RAM в мебибайтах"
+          },
+          "disk": {
+            "type": "integer",
+            "description": "Размер диска в гигибайтах"
+          },
+          "vcpus": {
+            "type": "integer",
+            "description": "Количество виртуальных процессоров"
+          },
+          "links": {
+            "type": "object",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — http:developer.openstack.org/api-guide/compute/links_and_references.html"
+          },
+          "OS-FLV-EXT-DATA:ephemeral": {
+            "type": "integer",
+            "default": 0,
+            "description": "Размер эфемерного диска"
+          },
+          "swap": {
+            "type": "integer",
+            "default": 0,
+            "description": "Размер swap-диска. Если ``0``, swap-диск не будет создан"
+          },
+          "rxtx_factor": {
+            "type": "number",
+            "default": 1.0,
+            "description": "Коэффициент приема/передачи, который будет установлен на портах, если поддерживается расширение QOS"
+          },
+          "os-flavor-access:is_public": {
+            "type": "boolean",
+            "default": true,
+            "description": "Указывает, является ли шаблон конфигурации ВМ общедоступным"
+          },
+          "extra_specs": {
+            "type": "object",
+            "description": "Дополнительные сведения о шаблоне конфигурации ВМ"
+          }
+        }
+      },
+      "getFlavorDetails": {
+        "$ref": "#/components/schemas/FlavorDetails"
+      },
+      "getListFlavorDetails": {
+        "type": "array",
+        "description": "Список шаблонов конфигураций ВМ с детальной информацией",
+        "items": {
+          "$ref": "#/components/schemas/FlavorDetails"
+        }
+      },
+      "addFloatingIp": {
+        "type": "object",
+        "description": "Присвоить ВМ Floating IP-адрес",
+        "required": [
+          "address"
+        ],
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "Floating IP-адрес"
+          },
+          "fixed_address": {
+            "type": "string",
+            "description": "IP-адрес, к которому будет привязан Floating IP-адрес"
+          }
+        }
+      },
+      "removeFloatingIp": {
+        "type": "object",
+        "description": "Удалить Floating IP-адрес",
+        "required": [
+          "address"
+        ],
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "Floating IP-адрес"
+          }
+        }
+      },
+      "addFixedIp": {
+        "type": "object",
+        "description": "Присвоить ВМ фиксированный IP-адрес",
+        "required": [
+          "network"
+        ],
+        "properties": {
+          "network": {
+            "type": "string",
+            "description": "Идентификатор сети"
+          }
+        }
+      },
+      "removeFixedIp": {
+        "type": "object",
+        "description": "Удалить фиксированный IP-адрес",
+        "required": [
+          "address"
+        ],
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "IP-адрес"
+          }
+        }
+      },
+      "addSecurityGroup": {
+        "type": "object",
+        "description": "Добавить ВМ группу безопасности",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя группы безопасности"
+          }
+        }
+      },
+      "removeSecurityGroup": {
+        "type": "object",
+        "description": "Удалить группу безопасности",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя группы безопасности"
+          }
+        }
+      },
+      "changePassword": {
+        "type": "object",
+        "description": "Изменить пароль <a href='https://cloud.vk.com/docs/ru/computing/iaas/concepts/oper-system#default_account'>учетной записи по умолчанию</a>",
+        "required": [
+          "adminPass"
+        ],
+        "properties": {
+          "adminPass": {
+            "type": "string",
+            "description": "Новый пароль учетной записи по умолчанию"
+          }
+        }
+      },
+      "createImage": {
+        "type": "object",
+        "description": "Создать образ из диска существующей ВМ",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя образа"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные образа"
+          }
+        }
+      },
+      "rebootVM": {
+        "type": "object",
+        "description": "Перезапустить ВМ",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Тип перезапуска ВМ. Значение ``SOFT`` применимо только к ВМ в статусе ``ACTIVE``. Значение ``HARD`` применимо к ВМ в статусах ``ACTIVE``, ``ERROR``, ``HARD_REBOOT``, ``PAUSED``, ``REBOOT``, ``SHUTOFF`` и ``SUSPENDED``",
+            "enum": [
+              "HARD",
+              "SOFT"
+            ]
+          }
+        }
+      },
+      "resizeVM": {
+        "type": "object",
+        "description": "Изменить шаблон конфигурации ВМ",
+        "required": [
+          "imageRef"
+        ],
+        "properties": {
+          "flavorRef": {
+            "type": "string",
+            "description": "Идентификатор шаблона конфигурации ВМ"
+          },
+          "OS-DCF:diskConfig": {
+            "type": "string",
+            "enum": [
+              "AUTO",
+              "MANUAL"
+            ],
+            "description": "Конфигурация диска. Возможные значения:\n\n``AUTO`` — будет создана ВМ с одним разделом, размером с целевой диск. Файловая система автоматически настраивается, чтобы соответствовать всему разделу.\n\n``MANUAL`` — ВМ будет создана с использованием схемы разделов и файловую систему, которая находится в исходном образе, если целевой диск больше. Оставшееся дисковое пространство не будет разделено"
+          }
+        }
+      },
+      "getServerSecurityGroups": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Описание группы безопасности"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор группы безопасности"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя группы безопасности"
+          },
+          "rules": {
+            "type": "array",
+            "description": "Правила группы безопасности",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          }
+        }
+      },
+      "getVolumesAttachments": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "example": "/dev/sdd",
+            "description": "Имя устройства"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор подключения диска"
+          },
+          "serverId": {
+            "type": "string",
+            "description": "Идентификатор ВМ"
+          },
+          "volumeId": {
+            "type": "string",
+            "description": "Идентификатор диска"
+          }
+        }
+      },
+      "getKeypairs": {
+        "type": "object",
+        "required": [
+          "name",
+          "public_key",
+          "fingerprint",
+          "type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя ключевой пары"
+          },
+          "public_key": {
+            "type": "string",
+            "description": "Публичный ключ"
+          },
+          "fingerprint": {
+            "type": "string",
+            "description": "Цифровой отпечаток ключевой пары"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "ssh",
+              "x509"
+            ],
+            "description": "Тип ключевой пары"
+          }
+        }
+      },
+      "createKeypairs": {
+        "type": "object",
+        "required": [
+          "name",
+          "public_key",
+          "fingerprint",
+          "type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя ключевой пары"
+          },
+          "public_key": {
+            "type": "string",
+            "description": "Публичный ключ"
+          },
+          "private_key": {
+            "type": "string",
+            "description": "Закрытый ключ. Возвращается, если в запросе не указан параметр ``public_key``. Сохраните закрытый ключ, получить его потом будет невозможно"
+          },
+          "fingerprint": {
+            "type": "string",
+            "description": "Цифровой отпечаток ключевой пары"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "ssh",
+              "x509"
+            ],
+            "description": "Тип ключевой пары"
+          }
+        }
+      },
+      "getServerGroups": {
+        "type": "object",
+        "description": "Группа серверов",
+        "required": [
+          "id",
+          "name",
+          "policies",
+          "members",
+          "metadata"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор группы серверов"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя группы серверов"
+          },
+          "policies": {
+            "type": "array",
+            "description": "Список политик размещения группы серверов на вычислительных узлах",
+            "items": {
+              "type": "string",
+              "enum": [
+                "affinity",
+                "anti-affinity",
+                "soft-affinity",
+                "soft-anti-affinity"
+              ]
+            }
+          },
+          "members": {
+            "type": "array",
+            "description": "Список ВМ, входящих в группу",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные группы серверов"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          }
+        }
+      },
+      "getAvailabilityZone": {
+        "type": "object",
+        "description": "Зона доступности",
+        "properties": {
+          "hosts": {
+            "type": "string",
+            "nullable": true,
+            "enum": [
+              null
+            ],
+            "description": ""
+          },
+          "zoneName": {
+            "type": "string",
+            "description": "Имя зоны доступности"
+          },
+          "zoneState": {
+            "type": "object",
+            "description": "Состояние зоны доступности",
+            "properties": {
+              "available": {
+                "type": "boolean",
+                "description": "Указывает, доступна ли зона доступности"
+              }
+            }
+          }
+        }
+      },
+      "InstanceActionRequest": {
+        "properties": {},
+        "type": "object",
+        "title": "InstanceActionRequest",
+        "description": "Запрос на выполнение действия с виртуальной машиной"
+      },
+      "Versions": {
+        "properties": {
+          "versions": {
+            "items": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "type": "array",
+            "title": "Versions"
+          }
+        },
+        "type": "object",
+        "required": [
+          "versions"
+        ],
+        "title": "Versions",
+        "description": "Коллекция версий",
+        "example": [
+          {
+            "versions": [
+              {
+                "id": "v2.1",
+                "links": [
+                  {
+                    "href": "http://openstack.example.com/v2.1/",
+                    "rel": "self"
+                  }
+                ],
+                "min_version": "2.1",
+                "status": "CURRENT",
+                "updated": "2013-07-23T11:33:21Z",
+                "version": "2.42"
+              }
+            ]
+          }
+        ]
+      },
+      "Version": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Имя версии. Не имеет реального семантического значения"
+          },
+          "links": {
+            "items": {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — `http:developer.openstack.org/api-guide/compute/links_and_references.html`"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "CURRENT",
+              "SUPPORTED",
+              "DEPRECATED"
+            ],
+            "description": "Статус версии"
+          },
+          "version": {
+            "type": "string",
+            "description": "Если эта версия API поддерживает микроверсии, максимальная поддерживаемая микроверсия. Если микроверсии не поддерживаются, пустая строка"
+          },
+          "min_version": {
+            "type": "string",
+            "description": "Если эта версия API поддерживает микроверсии, минимальная поддерживаемая микроверсия. Если микроверсии не поддерживаются, пустая строка"
+          },
+          "updated": {
+            "type": "string",
+            "description": "Дата и время обновления"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "links",
+          "status",
+          "version",
+          "min_version",
+          "updated"
+        ],
+        "title": "Version",
+        "description": "Одиночная запись о версии"
+      },
+      "ExtraSpecNestedResponse": {
+        "properties": {},
+        "type": "object",
+        "title": "ExtraSpecNestedResponse",
+        "description": "Пользовательская модель ответа для работы с дополнительные параметрами",
+        "example": [
+          {
+            "extra_specs": {
+              "key1": "value1"
+            }
+          }
+        ]
+      },
+      "ExtraSpecResponse": {
+        "properties": {},
+        "type": "object",
+        "title": "ExtraSpecResponse",
+        "description": "Пользовательская модель ответа для работы с дополнительные параметрами",
+        "example": [
+          {
+            "key1": "value1"
+          }
+        ]
+      }
+    }
+  }
+}
