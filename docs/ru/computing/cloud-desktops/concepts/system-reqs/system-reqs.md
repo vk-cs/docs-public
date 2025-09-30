@@ -21,6 +21,7 @@
 |- Microsoft Windows 10
 - Microsoft Windows 11
 - macOS Big Sur (версия 11) и выше
+- РЕД ОС версии 7.3 и выше
 
 |Браузер
 |Веб-браузер с поддержкой спецификации W3C HTML5:
