@@ -30,6 +30,20 @@
 {/note}
 
 {/tab}
+{tab(РЕД ОС)}
+
+1. Скачайте установочный файл [cloud-desktop-setup.rpm](https://hub.mcs.mail.ru/repository/client-agent-remoteclick/client/release/redos/cloud-desktop-setup.rpm).
+1. Запустите файл и дождитесь установки приложения Cloud Desktop Client.
+
+   {note:warn}
+
+   Для установки Cloud Desktop Client необходимы права администратора.
+
+   {/note}
+
+1. Перезагрузите компьютер.
+
+{/tab}
 {/tabs}
 
 ## {heading(Подключение к серверу Cloud Desktop и к рабочему столу)[id=connect]}
