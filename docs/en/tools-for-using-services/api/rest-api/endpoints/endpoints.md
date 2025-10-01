@@ -10,7 +10,7 @@ To see the list of endpoints for your region:
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
 1. Click on the user name in the header of the page and select **Project settings**.
-1. Go to **API endpoints** tab.
+1. Go to **API Endpoints** tab.
 
 ## Endpoints of the Moscow region
 
@@ -88,9 +88,15 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Quota-manager     | https://mcs.mail.ru/quota-manager             | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>    | Cloud services orchestration (deprecated)                                               |
 
+{note:info}
+
+The Service Users (https://msk.cloud.vk.com/service-users/) endpoint is not displayed in the management console. This endpoint is used to manage [service accounts](/en/tools-for-using-services/account/concepts/service-accounts).
+
+{/note}
+
 {/cut}
 
-## Getting Project ID
+## {heading(Getting Project ID)[id=getting_project_id]}
 
 The addresses of some endpoints contain the variable `<project_id>`. When creating a request, replace this variable with the Project ID of the current project.
 

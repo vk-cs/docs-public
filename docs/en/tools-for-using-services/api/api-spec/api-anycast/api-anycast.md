@@ -14,9 +14,8 @@
    1. Click the username in the page header and select **Security**.
    1. Turn on API access.
 
-1. Click the username in the page header and select **Project Settings**.
-1. Go to the **API Access** tab.
-1. Navigate to the **API Endpoints** tab.
+1. Click the username in the page header and select **Project settings**.
+1. Go to the **API Endpoints** tab.
 1. In the **OpenStack Service** block, find the **Neutron** endpoint.
 1. [Obtain](/en/tools-for-using-services/api/rest-api/case-keystone-token) the `X-Auth-Token` access token. Use the token in the header when sending requests.
 1. Use the URL `<OS_NEUTRON_URL>/v2.0/` in the request line. Here, `<OS_NEUTRON_URL>` is the **Neutron** endpoint.

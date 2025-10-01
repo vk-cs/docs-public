@@ -1,0 +1,9 @@
+{
+  "title": "Service accounts",
+  "shortDescription": "OpenAPI specification for managing service accounts",
+  "metaDescription": "Learn how to manage service accounts using the OpenAPI specification: HTTP requests for creating, deleting, editing service accounts, obtaining scripts to use for authentication as a service account, etc.",
+  "sectionTitle": "Service accounts",
+  "icon": "",
+  "weight": 2,
+  "uuid": "0033a554-67c9-4829-803b-6c01e457380a"
+}

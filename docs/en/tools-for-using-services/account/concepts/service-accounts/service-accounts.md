@@ -13,7 +13,7 @@ Depending on their role in the project, a user in the VK Cloud management consol
 - [configure](../../instructions/project-settings/service-account-manage#authorize) the environment for accessing the API on behalf of a service account
 - [delete](../../instructions/project-settings/service-account-manage#delete) a service account
 
-The same actions can be performed via API by a program that is authorized using a service account with a proper role.
+You can perform the same actions [via API](/en/tools-for-using-services/api/api-spec/api-service-users).
 
 Rights to manage the service accounts depending on the role in the project:
 
