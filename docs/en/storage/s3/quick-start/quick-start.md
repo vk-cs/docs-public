@@ -63,7 +63,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
    1. Make sure that the `private` ACL settings are selected.
 1. Click the **Select files** button and select the file to upload to the bucket.
 
-1. Provide access to the uploaded object via a temporary [signed link](../instructions/objects/signed-url):
+1. Provide access to the uploaded object via a temporary [signed link](../instructions/access-management/signed-url):
 
 1. Generate a temporary link to access the object with private ACL settings by running the command:
 
