@@ -5371,7 +5371,7 @@
   },
   {
     "source": "/en/base/s3/manage-s3/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -9337,7 +9337,7 @@
   },
   {
     "source": "/en/base/s3/objects/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -9511,7 +9511,7 @@
   },
   {
     "source": "/ru/base/s3/objects/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -13303,7 +13303,7 @@
   },
   {
     "source": "/ru/base/s3/references/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -14881,7 +14881,7 @@
   },
   {
     "source": "/en/base/s3/instructions/objects/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -17389,7 +17389,7 @@
   },
   {
     "source": "/ru/base/s3/instructions/objects/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -28351,7 +28351,7 @@
   },
   {
     "source": "/ru/storage/s3/service-management/objects/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -31039,7 +31039,7 @@
   },
   {
     "source": "/en/storage/s3/service-management/objects/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -32630,6 +32630,18 @@
   {
     "source": "/ru/storage/s3/instructions/buckets/bucket-keys",
     "destination": "/ru/storage/s3/instructions/access-management/bucket-keys",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/instructions/access-management/signed-url",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/instructions/access-management/signed-url",
     "permanent": false,
     "locale": false
   }
