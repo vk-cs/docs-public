@@ -1,11 +1,5 @@
 Gatekeeper — это контроллер, встраиваемый между Kubernetes API и движком политик Open Policy Agent (OPA) для проверки создаваемых, изменяемых и удаляемых ресурсов Kubernetes на соответствие политикам. Более подробная информация о Gatekeeper приведена в [справочнике Kubernetes](../../reference/gatekeeper) и в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/).
 
-{note:warn}
-
-Используйте эту инструкцию, если ваш кластер Cloud Containers версии 1.20 или ниже. Начиная с Kubernetes 1.21, Gatekeeper [уже установлен](../../concepts/architecture) в кластере вместе с [политиками безопасности по умолчанию](../../concepts/addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper).
-
-{/note}
-
 ## Установка
 
 1. [Установите Helm](../helm), если утилита еще не установлена.
@@ -55,13 +49,13 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 ## (Опционально) Настройка ограничений и шаблонов
 
-В кластерах Cloud Containers версий 1.21 и выше действуют [политики безопасности по умолчанию](../../concepts/addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper), которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
+В кластерах Kubernetes в сервисе Cloud Containers действуют [политики безопасности по умолчанию](../../concepts/addons-and-settings/settings#preconfigured_templates_and_limitations), которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
 
 {tabs}
 
 {tab(Ограничение host-namespaces)}
 
-Эта политика запрещает получать доступ к инструментам межпроцессной коммуникации (IPC) и процессам узла кластера Kubernetes c помощью параметров `hostIPC: true` и `hostPID: true`. Подробнее читайте в [описании политики](../../concepts/security-policies#ogranichenie_host_namespaces_7cf1c13b).
+Эта политика запрещает получать доступ к инструментам межпроцессной коммуникации (IPC) и процессам узла кластера Kubernetes c помощью параметров `hostIPC: true` и `hostPID: true`. Подробнее читайте в [описании политики](../../concepts/security-policies#host-namespaces).
 
 Чтобы настроить эту политику в кластере:
 
@@ -184,7 +178,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 {tab(Ограничение host-filesystem)}
 
-Запрещает монтировать в контейнер директории файловой системы узла кластера Kubernetes с помощью [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath). Подробнее читайте в [описании соответствующей политики безопасности](../../concepts/security-policies#ogranichenie_host_filesystem_14877f88).
+Запрещает монтировать в контейнер директории файловой системы узла кластера Kubernetes с помощью [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath). Подробнее читайте в [описании соответствующей политики безопасности](../../concepts/security-policies#host-filesystem).
 
 Чтобы настроить эту политику в кластере:
 
