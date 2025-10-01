@@ -4,6 +4,6 @@
   "metaDescription": "Проблемы при использовании режима доступа к тому ReadWriteMany (RWX)",
   "sectionTitle": "Не работает режим RWX",
   "icon": "",
-  "weight": 5,
+  "weight": 3,
   "uuid": "01bb5470-ac76-42d2-ae68-29cbd33ee8fc"
 }
