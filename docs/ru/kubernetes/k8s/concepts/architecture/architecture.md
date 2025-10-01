@@ -89,7 +89,7 @@ API-эндпоинт кластеров Cloud Containers размещен за [
 
 ## Встроенная поддержка Open Policy Agent
 
-В кластеры Cloud Containers встроен [Open Policy Agent Gatekeeper](../../reference/gatekeeper/). Он позволяет применять [политики безопасности](../security-policies) для ресурсов Kubernetes. Также в таких кластерах действуют [политики безопасности по умолчанию](../addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper).
+В кластеры Cloud Containers встроен [Open Policy Agent Gatekeeper](../../reference/gatekeeper/). Он позволяет применять [политики безопасности](../security-policies) для ресурсов Kubernetes. Также в таких кластерах действуют [политики безопасности по умолчанию](/ru/kubernetes/k8s/concepts/security-policies#default_policies).
 
 ## Возможности масштабирования кластера
 

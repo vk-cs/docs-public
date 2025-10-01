@@ -7,7 +7,7 @@
 
 {note:info}
 
-В кластерах Kubernetes VK Cloud версий 1.23 и выше можно [создать](../../../instructions/manage-security#dobavlenie_politiki_bezopasnosti) нужную [политику безопасности](../../../concepts/security-policies#razreshennye_repozitorii_bb3393ca) через личный кабинет.
+В кластерах Kubernetes VK Cloud версий 1.23 и выше можно [создать](../../../instructions/manage-security#dobavlenie_politiki_bezopasnosti) нужную [политику безопасности](../../../concepts/security-policies#allowed_repos) через личный кабинет.
 
 В этом случае работать с ресурсами Gatekeeper напрямую не обязательно.
 
@@ -20,10 +20,6 @@
    Параметры кластера выберите на свое усмотрение.
 
 1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
-
-1. Убедитесь, что [синхронизация политик безопасности](../../../concepts/security-policies#rabota_s_politikami_bezopasnosti_cherez_lichnyy_kabinet) с кластером [выключена](../../../instructions/manage-security#upravlenie_sinhronizaciey_politik_bezopasnosti_s_klasterom).
-
-   В противном случае созданные ограничения и шаблоны будут удалены при очередной синхронизации политик.
 
 ## Создайте ограничение, проверяющее репозитории
 
