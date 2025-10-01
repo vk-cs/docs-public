@@ -1,6 +1,6 @@
 {
   "title": "Cloud Servers",
-  "metaDescription": "VK Cloud: управление Cloud Servers с помощью API IaaS.",
+  "metaDescription": "Изучите спецификации IaaS API VK Cloud: описание методов, параметры, примеры запросов и ответов. Получите подробную документацию для интеграции и автоматизации облачных сервисов.",
   "shortDescription": "OpenAPI-спецификации сервиса Cloud Servers",
   "sectionTitle": "Cloud Servers",
   "icon": "",

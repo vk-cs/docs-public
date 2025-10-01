@@ -1,0 +1,2781 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "version": "",
+    "title": "Shared File Systems API",
+    "description": "Управление файловыми хранилищами"
+  },
+  "securityDefinitions": {
+    "keystone": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-Auth-Token"
+    }
+  },
+  "security": [
+    {
+      "keystone": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "versions",
+      "description": "Версии"
+    },
+    {
+      "name": "shares",
+      "description": "Файловые хранилища"
+    },
+    {
+      "name": "share-networks",
+      "description": "Сети"
+    },
+    {
+      "name": "share-snapshots",
+      "description": "Снимки"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Получить перечень поддерживаемых версий",
+        "tags": [
+          "versions"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "versions"
+                  ],
+                  "properties": {
+                    "versions": {
+                      "$ref": "#/components/schemas/Versions"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{api_version}": {
+      "get": {
+        "summary": "Получить информацию о версии",
+        "tags": [
+          "versions"
+        ],
+        "parameters": [
+          {
+            "name": "api_version",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Версия API, о которой нужно получить информацию",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "versions"
+                  ],
+                  "properties": {
+                    "versions": {
+                      "$ref": "#/components/schemas/Versions"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/shares": {
+      "get": {
+        "summary": "Получить список файловых хранилищ",
+        "description": "Метод возвращает список файловых хранилищ, соответствующих заданным фильтрам",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/name"
+          },
+          {
+            "$ref": "#/components/parameters/status"
+          },
+          {
+            "$ref": "#/components/parameters/share_server_id"
+          },
+          {
+            "$ref": "#/components/parameters/metadata"
+          },
+          {
+            "$ref": "#/components/parameters/extra_specs"
+          },
+          {
+            "$ref": "#/components/parameters/share_type_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id"
+          },
+          {
+            "$ref": "#/components/parameters/host"
+          },
+          {
+            "$ref": "#/components/parameters/share_network_id_query"
+          },
+          {
+            "$ref": "#/components/parameters/is_public"
+          },
+          {
+            "$ref": "#/components/parameters/consistency_group_id"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/SharesViewResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать файловое хранилище",
+        "description": "Метод создает файловое хранилище",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "requestBody": {
+          "description": "Объект ``ShareCreateRequest`` в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "share"
+                ],
+                "properties": {
+                  "share": {
+                    "$ref": "#/components/schemas/ShareCreateRequest"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/SharesCreateResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/shares/detail": {
+      "get": {
+        "summary": "Получить список файловых хранилищ с детальной информацией",
+        "description": "Метод возвращает список файловых хранилищ, соответствующих заданным фильтрам, с детальной информацией",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/name"
+          },
+          {
+            "$ref": "#/components/parameters/status"
+          },
+          {
+            "$ref": "#/components/parameters/share_server_id"
+          },
+          {
+            "$ref": "#/components/parameters/metadata"
+          },
+          {
+            "$ref": "#/components/parameters/extra_specs"
+          },
+          {
+            "$ref": "#/components/parameters/share_type_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id"
+          },
+          {
+            "$ref": "#/components/parameters/host"
+          },
+          {
+            "$ref": "#/components/parameters/share_network_id_query"
+          },
+          {
+            "$ref": "#/components/parameters/is_public"
+          },
+          {
+            "$ref": "#/components/parameters/consistency_group_id"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          }
+        ],
+        "responses": {
+          "202": {
+            "$ref": "#/components/responses/SharesDetailViewResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/shares/{share_id}": {
+      "get": {
+        "summary": "Получить данные файлового хранилища",
+        "description": "Метод возвращает информацию о файловом хранилище по его идентификатору",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/share_id"
+          },
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareDetailViewResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Запрошенный ресурс не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить данные файлового хранилища",
+        "description": "Метод изменяет информацию о файловом хранилище",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/share_id"
+          },
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "requestBody": {
+          "description": "Объект ``SharesEdit`` в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "share"
+                ],
+                "properties": {
+                  "share": {
+                    "$ref": "#/components/schemas/SharesEdit"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareDetailViewResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить файловое хранилище",
+        "description": "Метод удаляет файловое хранилище по его идентификатору",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/share_id"
+          },
+          {
+            "$ref": "#/components/parameters/consistency_group_id"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/shares/{share_id}/action": {
+      "post": {
+        "summary": "Действия с файловым хранилищем",
+        "description": "Метод позволяет выполнять действия с файловыми хранилищами:\n\n- добавить правило доступа;\n\n- удалить правило доступа;\n\n- получить список правил доступа;\n\n- изменить статус файлового хранилища;\n\n- принудительно удалить файловое хранилище;\n\n- увеличить или уменьшить размер файлового хранилища;\n\n- восстановить файловое хранилище из снимка;\n\n- отключить управление файловым хранилищем с помощью общей файловой системы",
+        "tags": [
+          "shares"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/share_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "allow_access": {
+                        "$ref": "#/components/schemas/SharesAllowAccess"
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "deny_access": {
+                        "$ref": "#/components/schemas/SharesDenyAccess"
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "access_list": {
+                        "type": "string",
+                        "description": "Параметр для получения списка правил доступа. Укажите значение ``null``",
+                        "enum": [
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "force_delete": {
+                        "type": "string",
+                        "description": "Параметр для принудительного удаления файлового хранилища в любом статусе. Укажите значение ``null``",
+                        "enum": [
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "extend": {
+                        "$ref": "#/components/schemas/SharesExtend"
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "shrink": {
+                        "$ref": "#/components/schemas/SharesShrink"
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "revert": {
+                        "$ref": "#/components/schemas/SharesRevert"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "access": {
+                          "$ref": "#/components/schemas/SharesAllowAccessResponse"
+                        }
+                      }
+                    },
+                    {
+                      "properties": {
+                        "access_list": {
+                          "$ref": "#/components/schemas/SharesAccessListResponse"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/share-networks": {
+      "get": {
+        "summary": "Получить список сетей файловых хранилищ",
+        "description": "Метод возвращает список сетей файловых хранилищ, соответствующих заданным фильтрам",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/name"
+          },
+          {
+            "$ref": "#/components/parameters/description"
+          },
+          {
+            "$ref": "#/components/parameters/created_since"
+          },
+          {
+            "$ref": "#/components/parameters/created_before"
+          },
+          {
+            "$ref": "#/components/parameters/security_service_id"
+          },
+          {
+            "$ref": "#/components/parameters/neutron_net_id"
+          },
+          {
+            "$ref": "#/components/parameters/neutron_subnet_id"
+          },
+          {
+            "$ref": "#/components/parameters/network_type"
+          },
+          {
+            "$ref": "#/components/parameters/segmentation_id"
+          },
+          {
+            "$ref": "#/components/parameters/cidr"
+          },
+          {
+            "$ref": "#/components/parameters/ip_version"
+          },
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareNetworksViewResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать сеть файлового хранилища",
+        "description": "Метод создает сеть файлового хранилища",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "requestBody": {
+          "description": "Объект ``ShareNetworksCreate`` в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "share_network"
+                ],
+                "properties": {
+                  "share_network": {
+                    "$ref": "#/components/schemas/ShareNetworksCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "$ref": "#/components/responses/ShareNetworksViewDetailResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "413": {
+            "description": "Размер запроса превышает лимит"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/share-networks/detail": {
+      "get": {
+        "summary": "Получить список сетей файловых хранилищ с детальной информацией",
+        "description": "Метод возвращает список сетей файловых хранилищ, соответствующих заданным фильтрам, с детальной информацией",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/name"
+          },
+          {
+            "$ref": "#/components/parameters/description"
+          },
+          {
+            "$ref": "#/components/parameters/created_since"
+          },
+          {
+            "$ref": "#/components/parameters/created_before"
+          },
+          {
+            "$ref": "#/components/parameters/security_service_id"
+          },
+          {
+            "$ref": "#/components/parameters/neutron_net_id"
+          },
+          {
+            "$ref": "#/components/parameters/neutron_subnet_id"
+          },
+          {
+            "$ref": "#/components/parameters/network_type"
+          },
+          {
+            "$ref": "#/components/parameters/segmentation_id"
+          },
+          {
+            "$ref": "#/components/parameters/cidr"
+          },
+          {
+            "$ref": "#/components/parameters/ip_version"
+          },
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareNetworksViewDetailResponse"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/share-networks/{share_network_id}": {
+      "get": {
+        "summary": "Получить данные сети файлового хранилища",
+        "description": "Метод возвращает информацию о сети по ее идентификатору",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/share_network_id_path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareNetworksViewDetailResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить данные сети файлового хранилища",
+        "description": "Метод изменяет информацию о сети по ее идентификатору",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/share_network_id_path"
+          }
+        ],
+        "requestBody": {
+          "description": "Объект ``ShareNetworksEdit`` в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "share_network"
+                ],
+                "properties": {
+                  "share_network": {
+                    "$ref": "#/components/schemas/ShareNetworksEdit"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareNetworksViewDetailResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить сеть файлового хранилища",
+        "description": "Метод удаляет сеть по ее идентификатору",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/share_network_id_path"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/share-networks/{share_network_id}/action": {
+      "post": {
+        "summary": "Действия с сетями файловых хранилищ",
+        "description": "Метод позволяет выполнять действия с сетями файловых хранилищ:\n\n- добавить службу безопасности;\n\n- удалить службу безопасности",
+        "tags": [
+          "share-networks"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/share_network_id_path"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NetworkActionRequest"
+              },
+              "examples": {
+                "add_security_service": {
+                  "summary": "Добавить службу безопасности",
+                  "value": {
+                    "add_security_service": {
+                      "security_service_id": "3c829734-0679-4c17-9637-801da48c0d5f"
+                    }
+                  }
+                },
+                "remove_security_service": {
+                  "summary": "Удалить службу безопасности",
+                  "value": {
+                    "remove_security_service": {
+                      "security_service_id": "3c829734-0679-4c17-9637-801da48c0d5f"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/ShareNetworksViewDetailResponse"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/snapshots": {
+      "get": {
+        "summary": "Получить список снимков",
+        "tags": [
+          "share-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshots": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getSnapshots"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать снимок",
+        "tags": [
+          "share-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "requestBody": {
+          "description": "Объект ``SnapshotCreate`` в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "snapshot"
+                ],
+                "properties": {
+                  "snapshot": {
+                    "$ref": "#/components/schemas/SnapshotCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshot": {
+                      "$ref": "#/components/schemas/getSnapshot"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/snapshots/detail": {
+      "get": {
+        "summary": "Получить список снимков с детальной информацией",
+        "tags": [
+          "share-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshots": {
+                      "type": "array",
+                      "description": "Список снимков",
+                      "items": {
+                        "$ref": "#/components/schemas/getSnapshot"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v2/{tenant_id}/snapshots/{snapshot_id}": {
+      "get": {
+        "summary": "Получить информацию о снимке",
+        "tags": [
+          "share-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id_path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshot": {
+                      "$ref": "#/components/schemas/getSnapshot"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить снимок",
+        "tags": [
+          "share-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id_path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "snapshot": {
+                    "type": "object",
+                    "properties": {
+                      "display_name": {
+                        "type": "string",
+                        "description": "Имя. Значение передается в параметр ``name``"
+                      },
+                      "display_description": {
+                        "type": "string",
+                        "description": "Описание. Значение передается в параметр ``description``"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshot": {
+                      "$ref": "#/components/schemas/getSnapshot"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить снимок",
+        "tags": [
+          "share-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/tenant_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id_path"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "tenant_id": {
+        "name": "tenant_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
+        "required": true
+      },
+      "share_id": {
+        "name": "share_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "description": "Идентификатор файлового хранилища",
+        "required": true
+      },
+      "share_network_id_path": {
+        "name": "share_network_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор сети",
+        "required": true
+      },
+      "snapshot_id_path": {
+        "name": "snapshot_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор снимка",
+        "required": true
+      },
+      "name": {
+        "name": "name",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Имя",
+        "required": false
+      },
+      "status": {
+        "name": "status",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "creating",
+            "error",
+            "available",
+            "deleting",
+            "error_deleting",
+            "manage_starting",
+            "manage_error",
+            "unmanage_starting",
+            "unmanage_error",
+            "unmanaged",
+            "extending",
+            "extending_error",
+            "shrinking",
+            "shrinking_error",
+            "shrinking_possible_data_loss_error"
+          ]
+        },
+        "description": "Статус файлового хранилища",
+        "required": false
+      },
+      "share_server_id": {
+        "name": "share_server_id",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор сервера файлового хранилища",
+        "required": false
+      },
+      "metadata": {
+        "name": "metadata",
+        "in": "query",
+        "schema": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "description": "Метаданные. Пары ключ — значение",
+        "required": false
+      },
+      "extra_specs": {
+        "name": "extra_specs",
+        "in": "query",
+        "schema": {
+          "type": "object"
+        },
+        "description": "Дополнительные характеристики файлового хранилища",
+        "required": false
+      },
+      "share_type_id": {
+        "name": "share_type_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "description": "Идентификатор типа файлового хранилища",
+        "required": false
+      },
+      "snapshot_id": {
+        "name": "snapshot_id",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "description": "Идентификатор снимка (снэпшота) файлового хранилища",
+        "required": false
+      },
+      "host": {
+        "name": "host",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Имя хоста файлового хранилища",
+        "required": false
+      },
+      "share_network_id_query": {
+        "name": "share_network_id",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "description": "Идентификатор сети файлового хранилища",
+        "required": false
+      },
+      "is_public": {
+        "name": "is_public",
+        "in": "query",
+        "schema": {
+          "type": "boolean",
+          "default": false
+        },
+        "description": "Параметр определяет видимость файлового хранилища. Возможные значения:\n\n ``true`` — файловое хранилище общедоступное.\n\n ``false`` — файловое хранилище частное",
+        "required": false
+      },
+      "consistency_group_id": {
+        "name": "consistency_group_id",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор группы консистентности, где было создано файловое хранилище",
+        "required": false
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Максимальное количество элементов, возвращаемых в одном ответе. Используется совместно с параметром ``offset``, чтобы в последующих запросах получать следующий набор элементов",
+        "required": false
+      },
+      "offset": {
+        "name": "offset",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Порядковый номер элемента, с которого следует начать список",
+        "required": false
+      },
+      "sort_key": {
+        "name": "sort_key",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "id",
+            "status",
+            "size",
+            "host",
+            "share_proto",
+            "export_location",
+            "availability_zone",
+            "user_id",
+            "project_id",
+            "created_at",
+            "updated_at",
+            "display_name",
+            "name",
+            "share_type_id",
+            "share_type",
+            "share_network_id",
+            "share_network",
+            "snapshot_id",
+            "snapshot"
+          ]
+        },
+        "description": "Ключ для сортировки списка файловых хранилищ",
+        "required": false
+      },
+      "sort_dir": {
+        "name": "sort_dir",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "asc",
+            "desc"
+          ]
+        },
+        "description": "Направление сортировки списка файловых хранилищ",
+        "required": false
+      },
+      "share_proto": {
+        "name": "share_proto",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "NFS",
+            "CIFS"
+          ]
+        },
+        "description": "Протокол сетевого доступа к файловому хранилищу",
+        "required": true
+      },
+      "size": {
+        "name": "size",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Размер файлового хранилища в ГБ. Значение не должно превышать разрешенную квоту в ГБ",
+        "required": true
+      },
+      "description": {
+        "name": "description",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "description": "Описание",
+        "required": false
+      },
+      "display_description": {
+        "name": "display_description",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Описание. Значение передается в параметр ``description``",
+        "required": false
+      },
+      "display_name": {
+        "name": "display_name",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Имя. Значение передается в параметр ``name``",
+        "required": false
+      },
+      "share_type": {
+        "name": "share_type",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Тип файлового хранилища. Если не указано, используется значение по умолчанию. Чтобы просмотреть тип файлового хранилища по умолчанию, установленный\nадминистратором, отправьте запрос на список типов файловых хранилищ по умолчанию",
+        "required": false
+      },
+      "availability_zone": {
+        "name": "availability_zone",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Зона доступности",
+        "required": false
+      },
+      "created_since": {
+        "name": "created_since",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "format": "date"
+        },
+        "description": "Фильтр по дате создания ресурса: отображает ресурсы, созданные после указанной даты",
+        "required": false
+      },
+      "created_before": {
+        "name": "created_before",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "format": "date"
+        },
+        "description": "Фильтр по дате создания ресурса: отображает ресурсы, созданные до указанной даты",
+        "required": false
+      },
+      "security_service_id": {
+        "name": "security_service_id",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор службы безопасности",
+        "required": false
+      },
+      "neutron_net_id": {
+        "name": "neutron_net_id",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор сети Neutron",
+        "required": false
+      },
+      "neutron_subnet_id": {
+        "name": "neutron_subnet_id",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор подсети Neutron",
+        "required": false
+      },
+      "network_type": {
+        "name": "network_type",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Тип сети",
+        "required": false
+      },
+      "cidr": {
+        "name": "cidr",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Сеть назначения (CIDR)",
+        "required": false
+      },
+      "segmentation_id": {
+        "name": "segmentation_id",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Идентификатор сегментации",
+        "required": false
+      },
+      "ip_version": {
+        "name": "ip_version",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Версия IP-адресов",
+        "required": false
+      }
+    },
+    "schemas": {
+      "Versions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Имя версии. Не имеет реального семантического значения"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "CURRENT",
+                "SUPPORTED",
+                "DEPRECATED"
+              ],
+              "x-enum-descriptions": [
+                "Предпочтительная для использования версия",
+                "Старая, но поддерживаемая версия",
+                "Устаревшая версия"
+              ],
+              "description": "Статус версии"
+            },
+            "links": {
+              "type": "array",
+              "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — http:developer.openstack.org/api-guide/compute/links_and_references.html",
+              "items": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            },
+            "media-types": {
+              "type": "array",
+              "description": "Форматы данных, поддерживаемые API",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "base": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "version": {
+              "type": "string",
+              "description": "Если эта версия API поддерживает микроверсии, максимальная поддерживаемая микроверсия. Если микроверсии не поддерживаются, пустая строка"
+            },
+            "min_version": {
+              "type": "string",
+              "description": "Если эта версия API поддерживает микроверсии, минимальная поддерживаемая микроверсия. Если микроверсии не поддерживаются, пустая строка"
+            }
+          }
+        }
+      },
+      "SharesViewRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 255,
+            "description": "Имя файлового хранилища"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "creating",
+              "error",
+              "available",
+              "deleting",
+              "error_deleting",
+              "manage_starting",
+              "manage_error",
+              "unmanage_starting",
+              "unmanage_error",
+              "unmanaged",
+              "extending",
+              "extending_error",
+              "shrinking",
+              "shrinking_error",
+              "shrinking_possible_data_loss_error"
+            ],
+            "description": "Статус файлового хранилища"
+          },
+          "share_server_id": {
+            "type": "string",
+            "description": "Идентификатор сервера файлового хранилища"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные файлового хранилища. Пары ключ — значение"
+          },
+          "extra_specs": {
+            "type": "object",
+            "description": "Дополнительные характеристики типа файлового хранилища"
+          },
+          "share_type_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор типа файлового хранилища"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор снимка (снэпшота) файлового хранилища"
+          },
+          "host": {
+            "type": "string",
+            "description": "Имя хоста файлового хранилища"
+          },
+          "share_network_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор сети файлового хранилища"
+          },
+          "is_public": {
+            "type": "boolean",
+            "default": false,
+            "description": "Параметр определяет видимость файлового хранилища. Возможные значения:\n\n ``true`` — файловое хранилище общедоступное.\n\n ``false`` — файловое хранилище частное"
+          },
+          "consistency_group_id": {
+            "type": "string",
+            "description": "Идентификатор группы консистентности"
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Максимальное количество элементов, возвращаемых в одном ответе"
+          },
+          "offset": {
+            "type": "integer",
+            "description": "Порядковый номер элемента, с которого начинается список"
+          },
+          "sort_key": {
+              "type": "string",
+              "enum": [
+                "id",
+                "status",
+                "size",
+                "host",
+                "share_proto",
+                "export_location",
+                "availability_zone",
+                "user_id",
+                "project_id",
+                "created_at",
+                "updated_at",
+                "display_name",
+                "name",
+                "share_type_id",
+                "share_type",
+                "share_network_id",
+                "share_network",
+                "snapshot_id",
+                "snapshot"
+              ],
+            "description": "Ключ для сортировки списка файловых хранилищ"
+          },
+          "sort_dir": {
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ],
+            "description": "Направление сортировки списка файловых хранилищ"
+          }
+        }
+      },
+      "SharesView": {
+        "type": "object",
+        "required": [
+          "shares"
+        ],
+        "properties": {
+          "shares": {
+            "type": "object",
+            "description": "Информация о файловом хранилище",
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "uuid",
+                "description": "Идентификатор файлового хранилища"
+              },
+              "links": {
+                "type": "array",
+                "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — http:developer.openstack.org/api-guide/compute/links_and_references.html",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "name": {
+                "type": "string",
+                "description": "Имя файлового хранилища"
+              }
+            }
+          }
+        }
+      },
+      "SharesDetailView": {
+        "type": "object",
+        "description": "Информация о файловом хранилище",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор файлового хранилища"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер файлового хранилища в ГБ"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности"
+          },
+          "share_type_name": {
+            "type": "string",
+            "description": "Тип файлового хранилища"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — http:developer.openstack.org/api-guide/compute/links_and_references.html",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "share_network_id": {
+            "type": "string",
+            "description": "Идентификатор общей сети"
+          },
+          "export_locations": {
+            "type": "object",
+            "description": "Местоположение экспорта. Например, если сервер имеет более одного сетевого интерфейса, он может иметь несколько мест экспорта"
+          },
+          "share_server_id": {
+            "type": "string",
+            "description": "Идентификатор сервера файлового хранилища"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "description": "Идентификатор снимка, который использовался для создания файлового хранилища"
+          },
+          "share_type": {
+            "type": "string",
+            "description": "Идентификатор типа файлового хранилища"
+          },
+          "export_location": {
+            "type": "string",
+            "description": "Местоположение экспорта"
+          },
+          "consistency_group_id": {
+            "type": "string",
+            "description": "Идентификатор группы консистентности, где было создано файлового хранилища"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Идентификатор проекта, в котором было создано файлового хранилища"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные файлового хранилища. Пары ключ — значение"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "creating",
+              "error",
+              "available",
+              "deleting",
+              "error_deleting",
+              "manage_starting",
+              "manage_error",
+              "unmanage_starting",
+              "unmanage_error",
+              "unmanaged",
+              "extending",
+              "extending_error",
+              "shrinking",
+              "shrinking_error",
+              "shrinking_possible_data_loss_error"
+            ],
+            "description": "Статус файлового хранилища"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание файлового хранилища"
+          },
+          "host": {
+            "type": "string",
+            "description": "Имя хоста файлового хранилища"
+          },
+          "access_rules_status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "error",
+              "syncing"
+            ],
+            "description": "Статус применения правил доступа к файловому хранилищу. В версиях ниже 2.28 статус ``syncing`` обозначался как ``out_of_sync``"
+          },
+          "is_public": {
+            "type": "boolean",
+            "description": "Параметр определяет видимость файлового хранилища. Возможные значения:\n\n ``true`` — файловое хранилище общедоступное.\n\n ``false`` — файловое хранилище частное"
+          },
+          "task_state": {
+            "type": "string",
+            "enum": [
+              "null",
+              "migration_starting",
+              "migration_error",
+              "migration_success",
+              "migration_completing",
+              "migrating"
+            ],
+            "description": "Состояние задачи миграции. Параметр принимает значение ``null``, когда нет задачи на миграцию файлового хранилища"
+          },
+          "snapshot_support": {
+            "type": "boolean",
+            "description": "Параметр определяет возможность создания снимка файлового хранилища"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя файлового хранилища"
+          },
+          "has_replicas": {
+            "type": "boolean",
+            "description": "Определяет наличие реплик файлового хранилища"
+          },
+          "replication_type": {
+            "type": "string",
+            "description": "Тип репликации файлового хранилища"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания файлового хранилища. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс как смещение от UTC"
+          },
+          "share_proto": {
+            "type": "string",
+            "enum": [
+              "NFS",
+              "CIFS"
+            ],
+            "description": "Протокол сетевого доступа к файловому хранилищу"
+          },
+          "volume_type": {
+            "type": "string",
+            "description": "Тип файлового хранилища. Параметр устарел, но поддерживается. Рекомендуется использовать параметр ``share_type``. Независимо от того, какой параметр используется в запросе, API создает и ``volume_type``, и``share_type``. Оба объекта имеют одинаковый идентификатор"
+          },
+          "source_cgsnapshot_member_id": {
+            "type": "string",
+            "nullable": true,
+            "description": "Идентификатор участника снимка группы консистентности. Дополнительная информация — https://docs.openstack.org/ocata/admin-guide/shared-file-systems-cgroups.html"
+          }
+        }
+      },
+      "ShareCreateRequest": {
+        "type": "object",
+        "required": [
+          "share_proto",
+          "size",
+          "metadata"
+        ],
+        "properties": {
+          "share_proto": {
+            "type": "string",
+            "enum": [
+              "NFS",
+              "CIFS"
+            ],
+            "description": "Протокол сетевого доступа к файловому хранилищу"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер файлового хранилища в ГБ"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя файлового хранилищ"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание файлового хранилищ"
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Имя файлового хранилища. Значение передается в параметр ``name``"
+          },
+          "display_description": {
+            "type": "string",
+            "description": "Описание файлового хранилища. Значение передается в параметр ``description``"
+          },
+          "share_type": {
+            "type": "string",
+            "description": "Идентификатор типа файлового хранилища"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "description": "Идентификатор снимка, который использовался для создания файлового хранилища"
+          },
+          "is_public": {
+            "type": "boolean",
+            "default": false,
+            "description": "Параметр определяет видимость файлового хранилища. Возможные значения:\n\n ``true`` — файловое хранилище общедоступное.\n\n ``false`` — файловое хранилище частное"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные файлового хранилища. Пары ключ — значение"
+          },
+          "share_network_id": {
+            "type": "string",
+            "description": "Идентификатор общей сети"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности"
+          },
+          "consistency_group_id": {
+            "type": "string",
+            "description": "Идентификатор группы консистентности"
+          }
+        }
+      },
+      "SharesCreate": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "links",
+          "project_id",
+          "share_proto",
+          "size",
+          "name",
+          "description",
+          "display_name",
+          "display_description",
+          "share_type",
+          "share_type_name",
+          "has_replicas",
+          "replication_type",
+          "volume_type",
+          "snapshot_id",
+          "is_public",
+          "metadata",
+          "share_network_id",
+          "availability_zone",
+          "export_location",
+          "export_locations",
+          "host",
+          "task_state",
+          "share_server_id",
+          "consistency_group_id",
+          "snapshot_support",
+          "source_cgsnapshot_member_id",
+          "created_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор файлового хранилища"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "creating",
+              "error",
+              "available",
+              "deleting",
+              "error_deleting",
+              "manage_starting",
+              "manage_error",
+              "unmanage_starting",
+              "unmanage_error",
+              "unmanaged",
+              "extending",
+              "extending_error",
+              "shrinking",
+              "shrinking_error",
+              "shrinking_possible_data_loss_error"
+            ],
+            "description": "Статус файлового хранилища"
+          },
+          "links": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — http:developer.openstack.org/api-guide/compute/links_and_references.html"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Идентификатор проекта, в котором было создано файловое хранилище"
+          },
+          "share_proto": {
+            "type": "string",
+            "enum": [
+              "NFS",
+              "CIFS"
+            ],
+            "description": "Протокол сетевого доступа к файловому хранилищу"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер файлового хранилища в ГБ. Запрошенный размер общего ресурса не может превышать разрешенную квоту"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя файлового хранилищ"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание файлового хранилищ"
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Имя файлового хранилища. Значение передается в параметр ``name``"
+          },
+          "display_description": {
+            "type": "string",
+            "description": "Описание файлового хранилища. Значение передается в параметр ``description``"
+          },
+          "share_type": {
+            "type": "string",
+            "description": "Идентификатор типа файлового хранилища"
+          },
+          "share_type_name": {
+            "type": "string",
+            "description": "Имя типа файлового хранилища"
+          },
+          "has_replicas": {
+            "type": "boolean",
+            "description": "Указывает, имеет ли файловое хранилище реплики"
+          },
+          "replication_type": {
+            "type": "string",
+            "description": "Тип репликации файлового хранилища"
+          },
+          "volume_type": {
+            "type": "string",
+            "description": "Тип файлового хранилища. Параметр устарел, но поддерживается. Рекомендуется использовать параметр ``share_type``. Независимо от того, какой параметр используется в запросе, API создает и ``volume_type``, и``share_type``. Оба объекта имеют одинаковый идентификатор"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "description": "Идентификатор снимка, который использовался для создания файлового хранилища"
+          },
+          "is_public": {
+            "type": "boolean",
+            "default": false,
+            "description": "Параметр определяет видимость файлового хранилища. Возможные значения:\n\n ``true`` — файловое хранилище общедоступное.\n\n ``false`` — файловое хранилище частное"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные файлового хранилища. Пары ключ — значение"
+          },
+          "share_network_id": {
+            "type": "string",
+            "description": "Идентификатор общей сети"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности"
+          },
+          "export_location": {
+            "type": "string",
+            "description": "Местоположение экспорта"
+          },
+          "export_locations": {
+            "type": "object",
+            "description": "Местоположение экспорта. Например, если сервер имеет более одного сетевого интерфейса, он может иметь несколько мест экспорта"
+          },
+          "host": {
+            "type": "string",
+            "description": "Имя общего хоста"
+          },
+          "task_state": {
+            "type": "string",
+            "nullable": true,
+            "enum": [
+              null,
+              "migration_starting",
+              "migration_error",
+              "migration_success",
+              "migration_completing",
+              "migrating"
+            ],
+            "description": "Состояние задачи миграции"
+          },
+          "share_server_id": {
+            "type": "string",
+            "description": "Идентификатор сервера файлового хранилища"
+          },
+          "consistency_group_id": {
+            "type": "string",
+            "description": "Идентификатор группы консистентности"
+          },
+          "snapshot_support": {
+            "type": "boolean",
+            "description": "Параметр определяет возможность создания снимка файлового хранилища"
+          },
+          "source_cgsnapshot_member_id": {
+            "type": "string",
+            "nullable": true,
+            "description": "Идентификатор участника снимка группы консистентности. Дополнительная информация — https://docs.openstack.org/ocata/admin-guide/shared-file-systems-cgroups.html"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания файлового хранилища. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс как смещение от UTC"
+          }
+        }
+      },
+      "SharesEdit": {
+        "type": "object",
+        "properties": {
+          "is_public": {
+            "type": "boolean",
+            "default": false,
+            "description": "Параметр определяет видимость файлового хранилища. Возможные значения:\n\n ``true`` — файловое хранилище общедоступное.\n\n ``false`` — файловое хранилище частное"
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Имя файлового хранилища. Значение передается в параметр ``name``"
+          },
+          "display_description": {
+            "type": "string",
+            "description": "Описание файлового хранилища. Значение передается в параметр ``description``"
+          }
+        }
+      },
+      "SharesAllowAccess": {
+        "type": "object",
+        "description": "Объект для добавления правила доступа",
+        "properties": {
+          "access_level": {
+            "type": "string",
+            "enum": [
+              "rw",
+              "ro"
+            ],
+            "x-enum-descriptions": [
+              "Чтение и запись",
+              "Только чтение"
+            ],
+            "description": "Уровень доступа"
+          },
+          "access_type": {
+            "type": "string",
+            "enum": [
+              "ip",
+              "cert",
+              "user"
+            ],
+            "x-enum-descriptions": [
+              "Аутентификация по IP-адресу",
+              "Аутентификация по TLS-сертификату",
+              "Аутентификация по имени пользователя или группы"
+            ],
+            "description": "Тип правила доступа. Возможные значения:\n\n``ip`` — аутентификация по IP-адресу, формат ``XX.XX.XX.XX`` или ``XX.XX.XX.XXXX``.\n\n``cert`` — аутентификация по TLS-сертификату. Укажите идентификатор TLS в качестве ``IDENTKEY``. Формат: любая строка длиной до 64 символов.\n\n``user`` — аутентификация по имени пользователя или группы. Формат: строка длиной от 4 до 32 символов"
+          },
+          "access_to": {
+            "type": "string",
+            "description": "Значение, определяющее доступ. Для IP-адреса формат — ``XX.XX.XX.XX`` или ``XX.XX.XX.XXXX``. Для TLS-сертификата формат — идентификатор TLS в качестве ``IDENTKEY``, любая строка длиной до 64 символов. Для имени пользователя или группы формат — строка длиной от 4 до 32 символов"
+          }
+        }
+      },
+      "SharesAllowAccessResponse": {
+        "type": "object",
+        "description": "Объект с информацией о созданном правиле доступа",
+        "properties": {
+          "share_id": {
+            "type": "string",
+            "description": "Идентификатор файлового хранилища"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания файлового хранилища. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс как смещение от UTC"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления файлового хранилища. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс как смещение от UTC"
+          },
+          "access_type": {
+            "type": "string",
+            "enum": [
+              "ip",
+              "cert",
+              "user"
+            ],
+            "x-enum-descriptions": [
+              "Аутентификация по IP-адресу",
+              "Аутентификация по TLS-сертификату",
+              "Аутентификация по имени пользователя или группы"
+            ],
+            "description": "Тип правила доступа. Возможные значения:\n\n``ip`` — аутентификация по IP-адресу, формат ``XX.XX.XX.XX`` или ``XX.XX.XX.XXXX``.\n\n``cert`` — аутентификация по TLS-сертификату. Укажите идентификатор TLS в качестве ``IDENTKEY``. Формат: любая строка длиной до 64 символов.\n\n``user`` — аутентификация по имени пользователя или группы. Формат: строка длиной от 4 до 32 символов"
+          },
+          "access_to": {
+            "type": "string",
+            "description": "Значение, определяющее доступ. Для IP-адреса формат — ``XX.XX.XX.XX`` или ``XX.XX.XX.XXXX``. Для TLS-сертификата формат — идентификатор TLS в качестве ``IDENTKEY``, любая строка длиной до 64 символов. Для имени пользователя или группы формат — строка длиной от 4 до 32 символов"
+          },
+          "access_key": {
+            "type": "string",
+            "description": "Учетные данные объекта, которому предоставлен доступ"
+          },
+          "access_level": {
+            "type": "string",
+            "enum": [
+              "rw",
+              "ro"
+            ],
+            "x-enum-descriptions": [
+              "Чтение и запись",
+              "Только чтение"
+            ],
+            "description": "Уровень доступа"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор правила доступа"
+          }
+        }
+      },
+      "SharesAccessListResponse": {
+        "type": "array",
+        "description": "Список правил доступа",
+        "items": {
+          "type": "object",
+          "properties": {
+            "access_type": {
+              "type": "string",
+              "enum": [
+                "ip",
+                "cert",
+                "user"
+              ],
+              "x-enum-descriptions": [
+                "Аутентификация по IP-адресу",
+                "Аутентификация по TLS-сертификату",
+                "Аутентификация по имени пользователя или группы"
+              ],
+              "description": "Тип правила доступа. Возможные значения:\n\n``ip`` — аутентификация по IP-адресу, формат ``XX.XX.XX.XX`` или ``XX.XX.XX.XXXX``.\n\n``cert`` — аутентификация по TLS-сертификату. Укажите идентификатор TLS в качестве ``IDENTKEY``. Формат: любая строка длиной до 64 символов.\n\n``user`` — аутентификация по имени пользователя или группы. Формат: строка длиной от 4 до 32 символов"
+            },
+            "access_key": {
+              "type": "string",
+              "description": "Учетные данные объекта, которому предоставлен доступ"
+            },
+            "access_to": {
+              "type": "string",
+              "description": "Значение, определяющее доступ. Для IP-адреса формат — ``XX.XX.XX.XX`` или ``XX.XX.XX.XXXX``. Для TLS-сертификата формат — идентификатор TLS в качестве ``IDENTKEY``, любая строка длиной до 64 символов. Для имени пользователя или группы формат — строка длиной от 4 до 32 символов"
+            },
+            "access_level": {
+              "type": "string",
+              "enum": [
+                "rw",
+                "ro"
+              ],
+              "x-enum-descriptions": [
+                "Чтение и запись",
+                "Только чтение"
+              ],
+              "description": "Уровень доступа"
+            },
+            "state": {
+              "type": "string",
+              "enum": [
+                "queuedtoapply",
+                "applying",
+                "active",
+                "error",
+                "queuedtodeny",
+                "denying"
+              ],
+              "description": "Состояние правила доступа. Новое правило запускается в состоянии ``queuedtoapply`` и успешно применяется при переходе в состояние ``active``"
+            },
+            "id": {
+              "type": "string",
+              "description": "Идентификатор правила доступа"
+            }
+          }
+        }
+      },
+      "SharesDenyAccess": {
+        "type": "object",
+        "description": "Объект для удаления правила доступа",
+        "properties": {
+          "access_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор правила доступа, которое нужно отозвать"
+          }
+        }
+      },
+      "SharesExtend": {
+        "type": "object",
+        "description": "Объект для увеличения размера файлового хранилища",
+        "properties": {
+          "new_size": {
+            "type": "integer",
+            "description": "Новый размер файлового хранилища в ГБ"
+          }
+        }
+      },
+      "SharesShrink": {
+        "type": "object",
+        "description": "Объект для уменьшения размера файлового хранилища",
+        "properties": {
+          "new_size": {
+            "type": "integer",
+            "description": "Новый размер файлового хранилища в ГБ"
+          }
+        }
+      },
+      "SharesRevert": {
+        "type": "object",
+        "description": "Объект для восстановления файлового хранилища из снимка",
+        "properties": {
+          "snapshot_id": {
+            "type": "string",
+            "description": "Идентификатор снимка файлового хранилища"
+          }
+        }
+      },
+      "ShareNetworksCreate": {
+        "description": "Данные новой сети",
+        "type": "object",
+        "properties": {
+          "neutron_net_id": {
+            "type": "string",
+            "description": "Идентификатор сети Neutron"
+          },
+          "neutron_subnet_id": {
+            "type": "string",
+            "description": "Идентификатор подсети Neutron"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности"
+          }
+        }
+      },
+      "ShareNetworksEdit": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя общей сети"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание общей сети"
+          },
+          "neutron_net_id": {
+            "type": "string",
+            "description": "Идентификатор сети Neutron"
+          },
+          "neutron_subnet_id": {
+            "type": "string",
+            "description": "Идентификатор подсети Neutron"
+          }
+        }
+      },
+      "ShareNetworksView": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор сети файлового хранилища"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя сети файлового хранилища"
+          }
+        }
+      },
+      "ShareNetworksViewDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор сети файлового хранилища"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Идентификатор проекта"
+          },
+          "neutron_net_id": {
+            "type": "string",
+            "description": "Идентификатор сети Neutron"
+          },
+          "neutron_subnet_id": {
+            "type": "string",
+            "description": "Идентификатор подсети Neutron"
+          },
+          "network_type": {
+            "type": "string",
+            "description": "Отметка даты и времени создания общей сети. Формат отметки даты и времени — CCYY-MM-DDThh:mm: sshh:mm. Значение ``hh:mm``, если оно включено, возвращает часовой пояс как смещение\nUTC.\n\nПример: ``2015-08-27T09:49:58-05:00``"
+          },
+          "segmentation_id": {
+            "type": "integer",
+            "description": "Идентификатор сегментации"
+          },
+          "cidr": {
+            "type": "string",
+            "description": "CIDR"
+          },
+          "ip_version": {
+            "type": "integer",
+            "description": "IP-версия сети. Допустимое значение: ``4`` или ``6``"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя общей сети"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание общей сети"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания сети файлового хранилища. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс как смещение от UTC"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления сети файлового хранилища. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс как смещение от UTC"
+          }
+        }
+      },
+      "getSnapshots": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор файлового хранилища"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — http:developer.openstack.org/api-guide/compute/links_and_references.html",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя снимка"
+          }
+        }
+      },
+      "SnapshotCreate": {
+        "type": "object",
+        "required": [
+          "share_id"
+        ],
+        "properties": {
+          "share_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор файлового хранилища, для которого создается снимок"
+          },
+          "force": {
+            "type": "boolean",
+            "default": false,
+            "description": "Принудительное создание снимка, когда файловое хранилище находится в статусе, отличном от ``available``"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя снимка"
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Имя снимка. Значение передается в параметр ``name``"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание снимка"
+          },
+          "display_description": {
+            "type": "string",
+            "description": "Описание снимка. Значение передается в параметр ``description``"
+          }
+        }
+      },
+      "getSnapshot": {
+        "type": "object",
+        "required": [
+          "id",
+          "share_id",
+          "name",
+          "description",
+          "created_at",
+          "share_proto",
+          "share_size",
+          "size"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор снимка"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "error",
+              "creating",
+              "deleting",
+              "manage_starting",
+              "manage_error",
+              "unmanage_starting",
+              "unmanage_error",
+              "error_deleting"
+            ],
+            "description": "Статус снимка"
+          },
+          "share_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор файлового хранилища"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя снимка"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание снимка"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "share_proto": {
+            "type": "string",
+            "enum": [
+              "NFS",
+              "CIFS"
+            ],
+            "description": "Протокол сетевого доступа к файловому хранилищу"
+          },
+          "share_size": {
+            "type": "integer",
+            "description": "Размер файлового хранилища в ГБ"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер снимка в ГБ"
+          }
+        }
+      },
+      "SnapshotActionRequest": {
+        "properties": {},
+        "type": "object",
+        "title": "SnapshotActionRequest",
+        "description": "Запрос на выполнение действия со снимком"
+      },
+      "NetworkActionRequest": {
+        "properties": {},
+        "type": "object",
+        "title": "NetworkActionRequest",
+        "description": "Запрос на выполнение действия с сетью"
+      },
+      "ShareActionRequest": {
+        "properties": {},
+        "type": "object",
+        "title": "ShareActionRequest",
+        "description": "Запрос на выполнение действия с файловым хранилищем"
+      }
+    },
+    "responses": {
+      "SharesViewResponse": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/SharesView"
+            }
+          }
+        }
+      },
+      "SharesDetailViewResponse": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "shares"
+              ],
+              "properties": {
+                "shares": {
+                  "$ref": "#/components/schemas/SharesDetailView"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ShareDetailViewResponse": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "share"
+              ],
+              "properties": {
+                "share": {
+                  "$ref": "#/components/schemas/SharesDetailView"
+                }
+              }
+            }
+          }
+        }
+      },
+      "SharesCreateResponse": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/SharesCreate"
+            }
+          }
+        }
+      },
+      "ShareNetworksViewResponse": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ShareNetworksView"
+            }
+          }
+        }
+      },
+      "ShareNetworksViewDetailResponse": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "share-networks"
+              ],
+              "properties": {
+                "share-networks": {
+                  "$ref": "#/components/schemas/ShareNetworksViewDetail"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
