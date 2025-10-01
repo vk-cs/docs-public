@@ -4,6 +4,6 @@
   "metaDescription": "Что делать, если в сервисе Kubernetes типа LoadBalancer происходит разрыв соединения",
   "sectionTitle": "Разрыв соединения в балансировщике нагрузки",
   "icon": "",
-  "weight": 7,
+  "weight": 5,
   "uuid": "0584bf4a-baa9-4e38-b810-9d49e2d7c3c0"
 }
