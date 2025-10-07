@@ -1,1 +1,1 @@
-{include(/ru/_includes/_partners.md)}
+{include(/ru/_includes/_partners.md)} 
