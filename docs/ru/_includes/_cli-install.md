@@ -6,17 +6,24 @@
 
 {tab(Ubuntu, Debian)}
 
-1. Установите Python 3, если он еще не установлен:
+1. Установите Python 3 и virtualenv, если они еще не установлены:
 
    ```console
    sudo apt update
-   sudo apt install python3
+   sudo apt install python3 virtualenv
    ```
 
 1. Установите pip3, если он еще не установлен:
 
    ```console
    sudo apt install python3-pip
+   ```
+   
+1. Создайте и активируйте виртуальную среду для работы с OpenStack:
+
+   ```console
+   virtualenv env
+   source env/bin/activate
    ```
 
 {/tab}
@@ -29,11 +36,12 @@
 
 {/note}
 
-1. Установите Python 3, если он еще не установлен:
+1. Установите Python 3 и virtualenv, если они еще не установлены:
 
    ```console
    sudo dnf update -y
    sudo dnf install python3 -y
+   sudo dnf install virtualenv -y
    ```
 
 1. Установите pip3, если он еще не установлен:
@@ -42,21 +50,21 @@
    sudo dnf install python3-pip -y
    ```
 
-1. Установите OpenStack SDK версии 1.0.1:
-
-   ```console
-   sudo pip3 install openstacksdk==1.0.1
-   ```
-
 {/tab}
 
 {tab(macOS)}
 
-Установите Python 3 и pip3, если они еще не установлены:
+1. Установите Python 3 и pip3, если они еще не установлены:
 
-```console
-brew install python3
-```
+   ```console
+   brew install python3
+   ```
+   
+1. Установите virtualenv, если он еще не установлен:
+
+   ```console
+   pip3 install virtualenv
+   ```
 
 {/tab}
 
@@ -68,7 +76,7 @@ brew install python3
 
 {/note}
 
-1. Скачайте и установите [Python3](https://www.python.org/downloads/windows/).
+1. Скачайте и установите [Python 3](https://www.python.org/downloads/windows/).
 1. Скачайте и запустите [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
 1. Перейдите на вкладку **Отдельные компоненты**, выберите в списке и установите:
 
@@ -85,12 +93,20 @@ brew install python3
 
    {tabs}
 
-   {tab(Linux, macOS)}
+   {tab(Ubuntu, Debian, CentOS)}
 
    ```console
    pip3 install python-openstackclient
    ```
 
+   {/tab}
+
+   {tab(macOS)}
+
+   ```console
+   brew install openstackclient
+   ```
+   
    {/tab}
 
    {tab(Windows)}

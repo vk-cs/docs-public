@@ -1,7 +1,7 @@
 {
   "title": "Установите OpenStack CLI и пройдите аутентификацию в нем",
   "shortDescription": "Работайте с сервисами платформы VK Cloud через консоль",
-  "metaDescription": "Работайте с сервисами платформы VK Cloud через консоль",
+  "metaDescription": "Установите и настройте OpenStack CLI для VK Cloud. Инструкция по установке клиента и аутентификации с помощью openrc-файла для Windows, macOS и Linux",
   "sectionTitle": "Установите OpenStack CLI и пройдите аутентификацию в нем",
   "icon": "",
   "weight": 1,
