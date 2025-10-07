@@ -151,7 +151,7 @@
       - `192.168.245.0/24` — сеть пользователя;
       - `10.254.254.18` — адрес локального маршрутизатора.
 
-   1. [Назначьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) для каждой из вышеуказанных ВМ группу безопасности `default` и группу со словом `vpn` в названии. При необходимости [добавьте](/ru/networks/vnet/instructions/secgroups#sozdanie_gruppy_bezopasnosti) эти группы безопасности в разделе **Настройки Firewall**.
+   1. [Назначьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_na_instans) для каждой из вышеуказанных ВМ группу безопасности `default` и группу со словом `vpn` в названии. При необходимости [добавьте](/ru/networks/vnet/instructions/secgroups#sozdanie_gruppy_bezopasnosti) эти группы безопасности в разделе **Настройки Firewall**.
 
 1. Добавьте на локальных машинах в файл `hosts` (либо в локальный DNS) записи, задающие соответствие имен виртуальных машин VK Cloud и их IP-адресов. Без этого невозможно подключиться к базе 1С, так как по умолчанию система 1С использует имена серверов в обращениях к сервису.
 

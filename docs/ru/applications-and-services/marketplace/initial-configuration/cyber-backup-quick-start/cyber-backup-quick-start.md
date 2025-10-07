@@ -32,7 +32,7 @@
       - Имеет внешний IP-адрес.
       - Ей назначена [группа безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups) `ssh`.
 
-         Если группа не назначена, [назначьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
+         Если группа не назначена, [назначьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_na_instans) ее.
 
       - У вас есть приватный SSH-ключ из [ключевой пары](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix#3_proverte_nalichie_klyuchevoy_pary), которая используется для доступа к ВМ. Имя ключевой пары отображается на странице ВМ в разделе **Облачные вычисления**.
 

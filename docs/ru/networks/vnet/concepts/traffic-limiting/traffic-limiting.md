@@ -89,7 +89,7 @@ OpenStack CLI и Terraform предоставляют более широкие 
 
 ## {heading(Пользовательские группы безопасности)[id=custom_sg]}
 
-Вы можете создавать любые другие ограничения трафика. Для этого [создайте](../../instructions/secgroups#sozdanie_gruppy_bezopasnosti) группы безопасности с определенными правилами файервола и [назначьте](../../instructions/secgroups#naznachenie_gruppy_pravil_na_instans) их на порты инстансов.
+Вы можете создавать любые другие ограничения трафика. Для этого [создайте](../../instructions/secgroups#sozdanie_gruppy_bezopasnosti) группы безопасности с определенными правилами файервола и [назначьте](../../instructions/secgroups#naznachenie_gruppy_na_instans) их на порты инстансов.
 
 Для корректной работы пользовательских групп безопасности:
 

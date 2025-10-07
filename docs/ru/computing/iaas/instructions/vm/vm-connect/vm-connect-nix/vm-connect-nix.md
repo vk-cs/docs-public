@@ -7,7 +7,7 @@
 Перед подключением убедитесь, что выполняются следующие условия:
 
 - виртуальная машина запущена и процесс загрузки ОС завершился;
-- в настройках сети ВМ разрешен удаленный доступ по протоколу SSH (TCP-порт `22`) — [добавьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) группу безопасности `ssh`;
+- в настройках сети ВМ разрешен удаленный доступ по протоколу SSH (TCP-порт `22`) — [добавьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_na_instans) группу безопасности `ssh`;
 - у ВМ есть внешний IP-адрес ([Floating IP](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)), доступный для подключения.
 
    {note:info}

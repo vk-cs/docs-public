@@ -84,7 +84,7 @@
          ```
 
      1. Завершите текущий сеанс подключения к ВМ.
-     1. [Добавьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_pravil_na_instans) ВМ в группу безопасности `rdp`.
+     1. [Добавьте](/ru/networks/vnet/instructions/secgroups#naznachenie_gruppy_na_instans) ВМ в группу безопасности `rdp`.
      1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
      1. Убедитесь, что подключение прошло успешно и открылся графический интерфейс пользователя.
 
