@@ -106,7 +106,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 ## 3. Split GPU using MPS technology
 
-1. [Add](/en/kubernetes/k8s/instructions/addons/manage-addons#editing_addon_code) NVIDIA device plugin configuration to GPU Operator add-on code:
+1. [Add](/en/kubernetes/k8s/instructions/addons/manage-addons#editing_addon_code) the [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin/tree/v0.17.0?tab=readme-ov-file#with-cuda-mps) configuration to GPU Operator add-on code:
 
    {note:warn}
 
@@ -235,7 +235,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
    Here the `nvidia.com/gpu:1` parameter indicates that the GPU is not shared.
 
-1. Get a ConfigMap describing the options for allocating GPU parts using MIG technology:
+1. Get a ConfigMap describing the options for allocating GPU parts using [MIG technology](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/24.9.0/gpu-operator-mig.html):
 
    ```console
    kubectl get configmaps default-mig-parted-config -o yaml
