@@ -19,7 +19,7 @@
       docker pull mirror.gcr.io/<имя_образа>
       ```
   
-  1. [Загрузите](../../../k8s/quick-start#3_zagruzite_nuzhnye_obrazy_v_reestr_docker) скачанный образ в приватный репозиторий.
+  1. [Загрузите](../../../k8s/quick-start#4_zagruzite_nuzhnye_obrazy_v_reestr_docker) скачанный образ в приватный репозиторий.
 
   {/tab}
 
