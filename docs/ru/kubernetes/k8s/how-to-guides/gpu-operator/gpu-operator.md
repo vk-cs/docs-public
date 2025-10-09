@@ -107,7 +107,7 @@ GPU может использоваться в кластере следующи
 
 ## 3. Разделите GPU по технологии MPS
 
-1. [Добавьте](/ru/kubernetes/k8s/instructions/addons/manage-addons#edit) конфигурацию NVIDIA device plugin в код аддона GPU Operator:
+1. [Добавьте](/ru/kubernetes/k8s/instructions/addons/manage-addons#edit) конфигурацию [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin/tree/v0.17.0?tab=readme-ov-file#with-cuda-mps) в код аддона GPU Operator:
 
    {note:warn}
 
@@ -236,7 +236,7 @@ GPU может использоваться в кластере следующи
    
    Здесь параметр `nvidia.com/gpu: 1` указывает, что GPU не разделен.
 
-1. Получите ConfigMap с описанием вариантов выделения частей GPU по технологии MIG:
+1. Получите ConfigMap с описанием вариантов выделения частей GPU по [технологии MIG](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/24.9.0/gpu-operator-mig.html):
 
    ```console
    kubectl get configmaps default-mig-parted-config -o yaml
