@@ -351,7 +351,7 @@ The following user roles are intended for working with the [Сontainers service]
 
 - Kubernetes administrator
 - Kubernetes operator
-- Kubernetes auditor.
+- Kubernetes auditor
 
 The operations available to Kubernetes administrator are also available to Project owner, Superadministrator, and Project administrator.
 
@@ -465,3 +465,19 @@ Some of the actions below are available only in the certain state of a cluster. 
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 |===
+
+## {heading(Permissions in Security Gate)[id=roles_security_gate]}
+
+The [Security Gate](https://cloud.vk.com/security-gate) service in the management console is available for the following roles:
+
+-   Project owner
+-   Superadministrator
+-   Project administrator
+-   Network security administrator
+-   Internal network administrator
+-   Virtual machine administrator
+-   Junior VM administrator
+-   Virtual machine operator
+-   Viewer
+
+The Security Gate service is not available for any other roles.
