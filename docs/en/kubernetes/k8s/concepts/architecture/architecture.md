@@ -15,9 +15,13 @@ Cloud Containers ensures the proper functioning of Kubernetes clusters, while:
 
 A Kubernetes cluster in Cloud Containers consists of two types of nodes, master nodes and worker nodes:
 
-- Master nodes store cluster-wide state information and manage workload distribution across worker nodes. Users cannot manage cluster nodes, as they are managed by the VK Cloud platform.
+- _Master nodes_ store cluster-wide state information and manage workload distribution across worker nodes. Users cannot manage cluster nodes, as they are managed by the VK Cloud platform.
 
-- Worker nodes manage the [workload](https://kubernetes.io/docs/concepts/workloads/). Worker nodes can be organized into groups. It is best to place such groups in different [availability zones](/en/intro/start/concepts/architecture#az) to improve fault tolerance. Worker nodes are also managed by the VK Cloud platform, but have network connectivity with the users' projects.
+  When you [create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster in Cloud Containers, it automatically selects the minimum appropriate [configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for its master nodes. By default, it is a VM with an Intel Cascade Lake processor, 2 CPUs, and 6 GB RAM. The default [disk type](/en/kubernetes/k8s/concepts/storage#storage_types) for master nodes is a 20 GB High-IOPS SSD.
+
+  [Automatic scaling](/en/kubernetes/k8s/concepts/scale#autoscaling) is enabled for all master nodes by default. When the workload of the cluster changes, the amount of the resources used by master nodes changes respectively.
+
+- _Worker nodes_ manage the [workload](https://kubernetes.io/docs/concepts/workloads/). Worker nodes can be organized into groups. It is best to place such groups in different [availability zones](/en/intro/start/concepts/architecture#az) to improve fault tolerance. Worker nodes are also managed by the VK Cloud platform, but have network connectivity with the users' projects.
 
 High availability of a cluster depends on its number of master nodes and their distribution across availability zones. Possible configurations are:
 

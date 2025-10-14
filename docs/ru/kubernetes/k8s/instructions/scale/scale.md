@@ -16,7 +16,7 @@
 
    В процессе масштабирования виртуальные машины, на которых размещены master-узлы, будут последовательно перезапущены.
 
-   Если кластер [содержит один master-узел](../../concepts/architecture#topologii_klastera), то Kubernetes API будет недоступен в ходе масштабирования.
+   Если кластер [содержит один master-узел](../../concepts/architecture#cluster_topology), то Kubernetes API будет недоступен в ходе масштабирования.
 
    {/note}
 

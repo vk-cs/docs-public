@@ -1,8 +1,7 @@
 {
-    "title": "Creating a cluster with Terraform",
-      "shortDescription": "How to create a cluster using Terraform",
-      "metaDescription": "",
-    "sectionTitle": "Creating a cluster with Terraform",
+    "title": "Creating a first-generation cluster with Terraform",
+      "metaDescription": "Step-by-step instructions for creating a Kubernetes cluster using Terraform in VK Cloud: preparation, configuration description, Kubernetes version selection, configuration of master nodes, groups of worker nodes, work with load balancers and addons",
+    "sectionTitle": "Creating a first-generation cluster with Terraform",
     "icon": "",
     "weight": 2,
     "uuid": "8f9de6cc-852b-4c03-928d-53f48a3f807a"

@@ -122,7 +122,7 @@ Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associa
 
 The limit on 4 GPUs per instance is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
-### Cloud Containers
+### {heading(Cloud Containers)[id=k8s]}
 
 #### Container resources for one project
 

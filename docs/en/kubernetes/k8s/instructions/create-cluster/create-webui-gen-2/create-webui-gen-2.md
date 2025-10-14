@@ -1,6 +1,6 @@
-The following describes how to create a first-generation cluster from your management console. We recommend [creating](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) second-generation clusters: they feature improved performance and stability. 
+The following describes how to create a second-generation cluster from your management console. For second-generation clusters, integration with the [VK Cloud monitoring service](/en/monitoring-services/monitoring) is enabled, and you cannot disable it.
 
-You can also create a first-generation cluster [with Terraform](../create-terraform).
+For the access to second-generation clusters, contact [technical support](mailto:support@mcs.mail.ru).
 
 {note:warn}
 
@@ -20,7 +20,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
    1. Select the [project](../../../../../tools-for-using-services/account/concepts/projects) to place the cluster in.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
-   1. Select the **Generation 1** option and click the **Continue** button.
+   1. Select the **Generation 2** option and click the **Continue** button.
 
 ## 1. Configure the cluster
 
@@ -35,54 +35,25 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
    
    - **Kubernetes version**: select one of the [supported Kubernetes versions](en/kubernetes/k8s/concepts/versions/version-support).
    - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for a regional cluster and cannot be changed.
-
-1. Specify the master node settings:
-
-   - **Category of virtual machine**: select the [VM category](/en/computing/iaas/concepts/about#flavors).
-
-   - **Virtual machine type - Master**: select the [VM configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for master nodes.
-
-      Templates with high-performance CPUs are available upon request to support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
-
-   - **Master disk type**: [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
-
    - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for the regional cluster is automatically set to `3`, but you can change it to `5`.
 
-      For more information about cluster topologies and possible configurations, see [Service architecture](../../../concepts/architecture#cluster_topologies).
-
-   - **Disk size on Master node**: the larger the disk size, the better its performance in some disk operations.
+      Master nodes are managed by the VK Cloud platform, so the rest of the master nodes settings are configured automatically. For more information about cluster topologies and possible configurations, see [Service architecture](../../../concepts/architecture#cluster_topologies).
 
 1. Specify the network settings:
 
-   - **Network**: select the network and subnet that will host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
-
-      {note:info}
-
-      To create a cluster without internet access, select the network with the connected [Shadow port](/en/networks/vnet/concepts/ips-and-inet#shadow_port) from the list.
-
-      {/note}
+   - **Network**: select the network and subnet that will host the load balancer and worker nodes of the cluster. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
 
    - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#creating_network) it. 
      
-      By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
+      By default, the option is disabled, and the load balancers use the same subnet as the cluster nodes.
 
    - **Use pod subnet**: enable this option to specify the subnet that the pods will use to communicate with each other.
 
       By default, the pods use the `10.100.0.0./16` subnet for communication. If such a subnet already exists in the cluster network, specify a different subnet that is not part of the cluster network to be used by the pods. This is necessary so that the address spaces do not overlap.
 
-   - **Assign external IP**: enable this option so that external IP addresses are assigned to the cluster API endpoint and the pre-installed Ingress controller (if selected in the previous step). Otherwise, IP addresses will be assigned from the cluster subnet.
+   - **Assign external IP**: enable this option so that external IP addresses are assigned to the cluster API endpoint. Otherwise, IP addresses will be assigned from the cluster subnet.
 
-      By default, the option is enabled, which allows access to the cluster and the Ingress controller from the Internet.
-
-1. Specify other settings:
-
-   - **Trusted Docker Registry**: add Docker Registry addresses to the trusted list to disable HTTPS connection check when connecting to them.
-
-      This can be useful if the Docker registry uses a self-signed SSL or TLS certificate that cannot be validated by the cluster. See the [Docker documentation](https://docs.docker.com/registry/insecure/#deploy-a-plain-http-registry) for more information on disabling the validation (see the description of the `insecure-registries` setting).
-
-   - **Enable monitoring**: enable this option to install a metrics collection agent in the cluster.
-
-      By default, the option is enabled and allows you to monitor the state of the cluster [using the Cloud Monitoring service](/en/monitoring-services/monitoring/instructions/mon-setup-new).
+      By default, the option is enabled, which allows access to the cluster from the Internet.
 
 1. Click the **Next step** button.
 

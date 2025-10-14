@@ -12,7 +12,7 @@ Recommendations for choosing CPU and RAM for clusters:
 
 The following templates becomes available upon request to [technical support](mailto:support@mcs.mail.ru):
 
-- *Templates with high-performance CPUs: from 16 vCPUs, from 64 GB RAM. These CPUs are more powerful.
+- Templates with high-performance CPUs: from 16 vCPUs, from 64 GB RAM. These CPUs are more powerful.
 
 - Customized configurations templates for special needs.
 

@@ -29,7 +29,7 @@
       - **Тип диска:** [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) для узла.
       - **Размер диска:** размер диска для узла.
 
-   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
+   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#cluster_topology) для размещения экземпляра Cloud Kafka.
 
       Если нужного кластера нет в списке:
 
@@ -90,7 +90,7 @@
 1. На шаге **Параметры**:
 
    1. Задайте для экземпляра название и описание.
-   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
+   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#cluster_topology) для размещения экземпляра Cloud Kafka.
 
       Если нужного кластера нет в списке:
 
