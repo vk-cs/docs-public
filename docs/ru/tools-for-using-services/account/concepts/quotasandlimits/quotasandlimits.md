@@ -139,7 +139,7 @@
 | 2 шт.
 | не ограничено
 
-| Количество [узлов](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera)
+| Количество [узлов](/ru/kubernetes/k8s/concepts/architecture#cluster_topology)
 | **Kubernetes ноды**
 | 10 шт.
 | не ограничено

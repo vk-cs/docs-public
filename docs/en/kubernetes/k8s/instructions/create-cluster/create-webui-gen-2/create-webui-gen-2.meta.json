@@ -1,8 +1,8 @@
 {
-    "title": "Creating a first-generation cluster from management console",
+    "title": "Creating a second-generation cluster from management console",
       "metaDescription": "Learn how to create a Kubernetes cluster using the Cloud Containers service on the VK Cloud platform. Recommendations for choosing the cluster configuration depending on the tasks",
-    "sectionTitle": "Creating a first-generation cluster from management console",
+    "sectionTitle": "Creating a second-generation cluster from management console",
     "icon": "",
-    "weight": 1,
-    "uuid": "43cacb8f-b9de-4108-9011-85e2bc24335b"
+    "weight": 3,
+    "uuid": ""
 }
