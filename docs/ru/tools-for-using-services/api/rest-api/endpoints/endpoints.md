@@ -45,7 +45,7 @@
 |-------------------------------------|-------------------------|-----------------|
 | Neutron           | https://infra.mail.ru:9696                          | Управление всеми объектами [сетевой инфраструктуры](/ru/networks/vnet), кроме публичных DNS-зон и балансировщиков нагрузки |
 | Octavia           | https://public.infra.mail.ru:9876                   | Управление [балансировщиками нагрузки](/ru/networks/balancing/instructions/manage-lb) |
-| Publicdns         | https://mcs.mail.ru/public-dns                      | Управление публичными [DNS-зонами](/ru/networks/dns/publicdns) |
+| Publicdns         | https://mcs.mail.ru/public-dns                      | Управление публичными [DNS-зонами](/ru/networks/dns/instructions/publicdns) |
 
 ### Cloud Big Data
 

@@ -26,7 +26,7 @@
 
    В примере внутренний IP созданного инстанса: `10.0.0.7`.
 
-1. [Создайте](/ru/networks/dns/publicdns#sozdanie_dns_zony) DNS-зону.
+1. [Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#add) DNS-зону.
 
    {note:warn}
 
@@ -34,7 +34,7 @@
 
    {/note}
 
-1. [Создайте](/ru/networks/dns/publicdns#dobavlenie_resursnyh_zapisey) запись в выделенной зоне:
+1. [Создайте](/ru/networks/dns/instructions/publicdns/records#add) запись в выделенной зоне:
 
    - тип записи: `A`;
    - имя: например, `site-bitrix.example.vk.cloud`;
@@ -137,4 +137,4 @@
 - [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ `Ubuntu_22_04_Bitrix`.
 - [Удалите](/ru/dbs/dbaas/instructions/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-1111`.
 - При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес `87.239.105.191`.
-- [Удалите](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey) созданную DNS-запись `site-bitrix.example.vk.cloud`.
+- [Удалите](/ru/networks/dns/instructions/publicdns/records#udalenie_resursnyh_zapisey) созданную DNS-запись `site-bitrix.example.vk.cloud`.

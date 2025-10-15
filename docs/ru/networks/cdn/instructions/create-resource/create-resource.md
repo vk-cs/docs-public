@@ -250,7 +250,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 1. Создайте CNAME-запись для CDN-ресурса. Это позволит изменить URL-адрес. Например, если вы используете CDN-ресурс для предоставления изображений своего веб-сайта, создайте CNAME-запись типа `images.example.com`, которая будет указывать на CDN-ресурс типа `cl-541e19d9.service.cdn.msk.vkcs.cloud`.
 
-   Если вы используете сервис DNS от VK Cloud, следуйте [инструкции](/ru/networks/dns/publicdns#dobavlenie_resursnyh_zapisey).
+   Если вы используете сервис DNS от VK Cloud, следуйте [инструкции](/ru/networks/dns/instructions/publicdns/records#add).
 
    Если вы не сохранили оригинальный домен при создании, вы можете найти его в информации об CDN-ресурсе:
 

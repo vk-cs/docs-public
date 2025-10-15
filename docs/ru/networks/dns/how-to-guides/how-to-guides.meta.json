@@ -3,7 +3,7 @@
   "shortDescription": "Сценарии использования сервиса виртуальных сетей",
   "metaDescription": "Публичный и приватный DNS, обеспечивающий разрешение имен для сервисов платформы VK Cloud. Как настроить и использовать DNS",
   "sectionTitle": "Практические руководства",
-  "hidden": true,
+  "hidden": false,
   "icon": "",
   "weight": 5,
   "uuid": "314bcd75-6b57-41e2-a8e8-5ff4b8ee1f6e"

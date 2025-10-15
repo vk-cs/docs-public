@@ -149,7 +149,7 @@ The creation of the origin group and CDN resource will start for the bucket. The
 
 1. Create a CNAME record for the CDN resource. This will change the URL address. For example, if you are using a CDN resource to serve images for your website, create a CNAME record like `images.example.com` that points to a CDN resource like `cl-541e19d9.service.cdn.msk.vkcs.cloud`.
 
-   If you use the DNS VK Cloud service, follow the [instructions](/ru/networks/dns/publicdns#dobavlenie_resursnyh_zapisey "change-lang").
+   If you use the DNS VK Cloud service, follow the [instructions](/ru/networks/dns/instructions/publicdns/records#add "change-lang").
 
    If you did not save the original domain when created, you can find it in the CDN resource information:
 

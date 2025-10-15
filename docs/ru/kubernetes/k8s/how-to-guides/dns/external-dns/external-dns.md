@@ -1,10 +1,10 @@
 [ExternalDNS](https://github.com/kubernetes-sigs/external-dns) позволяет автоматизировать управление DNS-записями при работе с ресурсами [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) или [Service](https://kubernetes.io/docs/concepts/services-networking/service/). Если эти ресурсы настроены согласно требованиям ExternalDNS, то они будут доступны по доменному имени сразу после создания.
 
-ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dns/publicdns) в VK Cloud с помощью плагина. Далее будет показано, как установить ExternalDNS в кластер, и как использовать этот инструмент с ресурсами `Ingress` и `Service`.
+ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dns/instructions/publicdns) в VK Cloud с помощью плагина. Далее будет показано, как установить ExternalDNS в кластер, и как использовать этот инструмент с ресурсами `Ingress` и `Service`.
 
 ## Подготовительные шаги
 
-1. [Создайте](/ru/networks/dns/publicdns#sozdanie_dns_zony) DNS-зону, с которой будет работать ExternalDNS, если этого еще не сделано.
+1. [Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#add) DNS-зону, с которой будет работать ExternalDNS, если этого еще не сделано.
 
    Для примера далее используется зона `example.com`.
 
@@ -451,7 +451,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Убедитесь, что ExternalDNS создал необходимые ресурсные записи:
 
-   1. [Получите список ресурсных записей](/ru/networks/dns/publicdns#prosmotr_spiska_resursnyh_zapisey) для зоны `example.com`.
+   1. [Получите список ресурсных записей](/ru/networks/dns/instructions/publicdns/records#prosmotr_spiska_resursnyh_zapisey) для зоны `example.com`.
    1. Найдите в списке записи, созданные ExternalDNS:
 
       - Одну A-запись `tea.example.com`.
@@ -670,7 +670,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Убедитесь, что ExternalDNS создал необходимые ресурсные записи:
 
-   1. [Получите список ресурсных записей](/ru/networks/dns/publicdns#prosmotr_spiska_resursnyh_zapisey) для зоны `example.com`.
+   1. [Получите список ресурсных записей](/ru/networks/dns/instructions/publicdns/records#prosmotr_spiska_resursnyh_zapisey) для зоны `example.com`.
    1. Найдите в списке записи, созданные ExternalDNS:
 
       - Одну CNAME-запись `cafe.example.com`.
@@ -716,7 +716,7 @@ ExternalDNS будет использовать реквизиты этого п
 
       Удаление аддона и связанных с ним ресурсов может занять длительное время.
 
-   1. [Удалите ресурсные записи](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey), созданные ExternalDNS.
+   1. [Удалите ресурсные записи](/ru/networks/dns/instructions/publicdns/dns-zone#delete), созданные ExternalDNS.
 
       Это необходимо сделать, если вы не изменяли файл `external-dns-vkcs-values.yaml` при [установке ExternalDNS](#2_ustanovite_externaldns): тогда ExternalDNS использует политику `upsert-only` и не удаляет ресурсные записи из DNS-зоны при удалении ресурсов Kubernetes. Если вы изменили этот файл и выбрали политику `sync`, то эти записи будут удалены автоматически.
 
@@ -752,4 +752,4 @@ ExternalDNS будет использовать реквизиты этого п
    - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
    - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.
 
-1. [Удалите DNS-зону](/ru/networks/dns/publicdns#udalenie_dns_zony) `example.com`, если она вам больше не нужна.
+1. [Удалите DNS-зону](/ru/networks/dns/instructions/publicdns/dns-zone#delete) `example.com`, если она вам больше не нужна.

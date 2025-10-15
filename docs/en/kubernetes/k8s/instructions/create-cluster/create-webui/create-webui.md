@@ -33,7 +33,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
      - **Standard**: all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). High availability is provided at the zone level.
      - **Regional**: cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
    
-   - **Kubernetes version**: select one of the [supported Kubernetes versions](en/kubernetes/k8s/concepts/versions/version-support).
+   - **Kubernetes version**: select one of the [supported Kubernetes versions](/en/kubernetes/k8s/concepts/versions/version-support).
    - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for a regional cluster and cannot be changed.
 
 1. Specify the master node settings:
