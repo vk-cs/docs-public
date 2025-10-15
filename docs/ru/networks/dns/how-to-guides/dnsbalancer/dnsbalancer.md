@@ -39,13 +39,13 @@ VK Cloud позволяет создавать отказоустойчивые 
 
     {tab(Ubuntu, Debian)}
 
-    Файл загрузки: [dnsbalancer](./assets/dnsbalancer "download")
+    Файл загрузки: [dnsbalancer](assets/dnsbalancer "download")
 
     {/tab}
 
     {tab(FreeBSD)}
 
-    Файл загрузки: [dnsbalancer](./assets/dnsbalancer_freebsd "download")
+    Файл загрузки: [dnsbalancer](assets/dnsbalancer_freebsd "download")
 
     После скачивания переименуйте файл в `dnsbalancer`.
 
@@ -53,7 +53,7 @@ VK Cloud позволяет создавать отказоустойчивые 
 
     {tab(RedOS)}
 
-    Файл загрузки: [dnsbalancer](./assets/dnsbalancer_redos "download")
+    Файл загрузки: [dnsbalancer](assets/dnsbalancer_redos "download")
 
     После скачивания переименуйте файл в `dnsbalancer`.
 

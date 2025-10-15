@@ -35,7 +35,7 @@
 
    1. Добавьте для каждого персонального домена CNAME-запись в настройках DNS-зоны. Используйте имя служебного домена в качестве псевдонима.
 
-      Если вы используете сервис DNS от VK Cloud, следуйте [инструкции](/ru/networks/dns/publicdns#dobavlenie_resursnyh_zapisey).
+      Если вы используете сервис DNS от VK Cloud, следуйте [инструкции](/ru/networks/dns/instructions/publicdns/records#add).
 
       Добавить CNAME-записи можно и после создания CDN-ресурса.
 
