@@ -4,5 +4,6 @@
   "metaDescription": "DNS-балансировка: как распределить трафик в VK Cloud между разными зонами доступности за счет DNS",
   "sectionTitle": "DNS-балансировка",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "2e9874a5-575b-426d-bd3b-55630adbc75d"
 }

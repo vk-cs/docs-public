@@ -639,6 +639,7 @@
   "ba93926b-b177-44ff-a5c0-b82cd844847e": "/ru/kubernetes/k8s/instructions/create-cluster",
   "db61615c-3775-442f-89df-21109f5a54c9": "/ru/kubernetes/k8s/instructions/create-cluster/create-webui",
   "6e16ec95-2a52-4036-9b81-0ad45b38e3fb": "/ru/kubernetes/k8s/instructions/create-cluster/create-terraform",
+  "4855bcfd-a913-430b-9737-b99a2d55f526": "/ru/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2",
   "b9d73e5e-a893-485e-82fd-68eea7a8acaa": "/ru/kubernetes/k8s/instructions/manage-cluster",
   "a8ed05dc-436e-49b2-be36-9bb7770dd3f8": "/ru/kubernetes/k8s/instructions/manage-node-group",
   "0c62be15-22cb-4c7d-9435-39b012da3aa0": "/ru/kubernetes/k8s/instructions/manage-resources",

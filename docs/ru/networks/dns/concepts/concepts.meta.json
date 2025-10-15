@@ -4,5 +4,6 @@
   "metaDescription": "Описание принципов функционирования и устройства сервиса DNS в VK Cloud.",
   "sectionTitle": "Концепции",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "825c0b3b-84a3-4a79-b01f-1b27dff7bfcc"
 }

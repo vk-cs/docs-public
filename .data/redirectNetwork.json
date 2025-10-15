@@ -2449,13 +2449,13 @@
   },
   {
     "source": "/ru/networks/vnet/networks/private-dns",
-    "destination": "/ru/networks/dns/private-dns",
+    "destination": "/ru/networks/dns/instructions/private-dns",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/networks/vnet/networks/publicdns",
-    "destination": "/ru/networks/dns/publicdns",
+    "destination": "/ru/networks/dns/instructions/publicdns",
     "permanent": false,
     "locale": false
   },
@@ -32642,6 +32642,18 @@
   {
     "source": "/en/storage/s3/instructions/objects/signed-url",
     "destination": "/en/storage/s3/instructions/access-management/signed-url",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/dns/private-dns",
+    "destination": "/ru/networks/dns/instructions/private-dns",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/dns/publicdns",
+    "destination": "/ru/networks/dns/instructions/publicdns",
     "permanent": false,
     "locale": false
   }
