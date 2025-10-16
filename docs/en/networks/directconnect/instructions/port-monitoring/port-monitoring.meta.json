@@ -1,0 +1,9 @@
+{
+    "title": "Viewing switch port status",
+    "shortDescription": "How to check the status of physical switch ports connected to Direct Connect",
+    "metaDescription": "How to check the status of physical switch ports in the Cloud Direct Connect service and get detailed information about them via the VK Cloud management console or API.",
+    "sectionTitle": "Viewing switch port status",
+    "icon": "",
+    "weight": 0,
+    "uuid": ""
+}
