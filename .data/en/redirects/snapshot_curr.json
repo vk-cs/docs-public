@@ -324,6 +324,8 @@
   "0cc58071-0258-4726-89e5-2d3986a51f66": "/en/networks/dns/publicdns",
   "ee5db9e5-1514-49f8-941e-b803b57b6b89": "/en/networks/dns/private-dns",
   "2d9082ac-4ac5-4444-bb80-1134c5d53ff8": "/en/networks/directconnect",
+  "c8b1dc90-256f-4753-a777-f854e55a7feb": "/en/networks/directconnect/instructions",
+  "996ec85f-9ed1-4fd5-9441-a6635fe2e2e1": "/en/networks/directconnect/instructions/port-monitoring",
   "9eba5e2c-f72c-4f31-ac23-7d6092d57aae": "/en/networks/directconnect/how-to-guides",
   "a0d46301-3354-48d9-af6d-5c88e961c3c9": "/en/networks/directconnect/how-to-guides/advanced-router",
   "2692b947-0329-45c1-987f-2085adcda679": "/en/storage",
