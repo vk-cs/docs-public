@@ -1,4 +1,4 @@
-Управление [Anycast IP-адресами](../../../concepts/ips-and-inet#anycast-ip) доступно в личном кабинете VK Cloud и через [API](/ru/tools-for-using-services/api/api-spec/api-anycast).
+Управление [Anycast IP-адресами](../../../concepts/ips-and-inet#anycast-ip) доступно в личном кабинете VK Cloud и через [API](/ru/tools-for-using-services/api/api-spec/network-api/neutron-sprut-api).
 
 ## {heading(Добавление Anycast IP-адреса)[id=add]}
 

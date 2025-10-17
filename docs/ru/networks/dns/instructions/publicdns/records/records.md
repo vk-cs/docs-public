@@ -33,7 +33,7 @@
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `GET /v2/dns/`.
 
 Пример запроса:
 
@@ -103,7 +103,7 @@ DNS-зона — логическое объединение доменных и
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `POST /v2/dns/`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `POST /v2/dns/`.
 
 Пример запроса:
 
@@ -171,7 +171,7 @@ content-length: 319
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `GET /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -223,7 +223,7 @@ content-length: 321
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `PUT /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `PUT /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -305,7 +305,7 @@ content-length: 330
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `DELETE /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `DELETE /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -451,7 +451,7 @@ VK Cloud поддерживает типы ресурсных записей:
 
 {tab(API)}
 
-Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -701,7 +701,7 @@ content-length: 167
 
 {tab(API)}
 
-Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -961,7 +961,7 @@ content-length: 169
 
 {tab(API)}
 
-Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -1181,7 +1181,7 @@ content-length: 167
 
 {tab(API)}
 
-Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -1410,7 +1410,7 @@ content-length: 171
 
 {tab(API)}
 
-Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) из спецификации API.
 
 {cut(A)}
 

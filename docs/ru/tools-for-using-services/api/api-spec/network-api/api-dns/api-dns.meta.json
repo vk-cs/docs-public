@@ -1,9 +1,9 @@
 {
-    "title": "Публичный DNS",
-      "shortDescription": "API публичного DNS",
+    "title": "Управление публичными DNS-зонами",
+      "shortDescription": "OpenAPI-спецификация для управления публичными DNS-зонами",
       "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API публичного DNS",
-    "sectionTitle": "Публичный DNS",
+    "sectionTitle": "Управление публичными DNS-зонами",
     "icon": "",
-    "weight": 11,
+    "weight": 3,
     "uuid": "828601c4-5d6f-433f-b162-f1c5f44bc7cf"
 }
