@@ -4,6 +4,6 @@
       "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. OpenAPI-спецификация сервиса Cloud Backup",
     "sectionTitle": "Cloud Backup",
     "icon": "",
-    "weight": 1,
+    "weight": 2,
     "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d"
 }

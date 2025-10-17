@@ -14,7 +14,7 @@
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `GET /v2/dns/`.
 
 Пример запроса:
 
@@ -85,7 +85,7 @@ DNS-зона — логическое объединение доменных и
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `POST /v2/dns/`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `POST /v2/dns/`.
 
 Пример запроса:
 
@@ -154,7 +154,7 @@ content-length: 319
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `GET /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -207,7 +207,7 @@ content-length: 321
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `PUT /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `PUT /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -290,7 +290,7 @@ content-length: 330
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `DELETE /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `DELETE /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 

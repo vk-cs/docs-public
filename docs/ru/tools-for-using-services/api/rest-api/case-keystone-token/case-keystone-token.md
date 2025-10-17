@@ -189,4 +189,4 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 Другие примеры использования токена:
 
 - [просмотр логов](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging;
-- [работа](/ru/tools-for-using-services/api/api-spec/api-dns) с публичным DNS.
+- [работа](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) с публичным DNS.

@@ -6,7 +6,7 @@
   "icon": "",
   "relativeSections": [
     {
-      "partialPath": "/ru/tools-for-using-services/api/api-spec/api-dns"
+      "partialPath": "/ru/tools-for-using-services/api/api-spec/network-api/api-dns"
     }
   ],
   "weight": 4,
