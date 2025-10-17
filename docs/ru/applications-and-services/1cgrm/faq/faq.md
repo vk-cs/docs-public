@@ -78,4 +78,6 @@ VK Cloud не ограничивает количество создаваемы
 
 {cut(Как отключить подписку от 1С:ГРМ?)}
 
-Для отключения подписки на 1С:ГРМ напишите письмо на почту [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
+Для отключения подписки на 1С:ГРМ напишите письмо на почту [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru) или [удалите](/ru/applications-and-services/1cgrm/instructions/app-manage#deleting-application) приложение, созданное на платформе VK Cloud.
+
+{/cut}
