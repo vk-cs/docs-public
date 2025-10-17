@@ -6,8 +6,13 @@ Up to 300 service accounts can be created in a project.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Go to **Manage access**.
-1. Go to the **Service users** tab. The tab is not displayed for users who do not have [permission to manage the service accounts](../../../concepts/service-accounts).
+1. Make sure your [project role](/en/tools-for-using-services/account/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/tools-for-using-services/account/concepts/service-accounts). Creating service accounts is available for the following roles:
+
+    - Project owner
+    - Superadministrator
+    - User access administrator
+
+1. Go to **Manage access**, then go to the **Service users** tab.
 1. Click the **Add** button.
 1. In the **Name** box, specify a name for the service account. Requirements for the name:
 
@@ -39,8 +44,8 @@ Up to 300 service accounts can be created in a project.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Go to **Manage access**.
-1. Go to the **Service users** tab. The tab is not displayed for users who do not have [permission to manage the service accounts](../../../concepts/service-accounts).
+1. Make sure your [project role](/en/tools-for-using-services/account/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/tools-for-using-services/account/concepts/service-accounts).
+1. Go to **Manage access**, then go to the **Service users** tab.
 
    The list of all service accounts in the project is displayed, sorted by name.
 
@@ -59,8 +64,8 @@ Information in a service account's card is not editable.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Go to **Manage access**.
-1. Go to the **Service users** tab. The tab is not displayed for users who do not have [permission to manage the service accounts](../../../concepts/service-accounts).
+1. Make sure your [project role](/en/tools-for-using-services/account/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/tools-for-using-services/account/concepts/service-accounts).
+1. Go to **Manage access**, then go to the **Service users** tab.
 
    The list of all service accounts in the project is displayed.
 
@@ -86,8 +91,8 @@ Information in a service account's card is not editable.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Go to **Manage access**.
-1. Go to the **Service users** tab. The tab is not displayed for users who do not have [permission to manage the service accounts](../../../concepts/service-accounts).
+1. Make sure your [project role](/en/tools-for-using-services/account/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/tools-for-using-services/account/concepts/service-accounts).
+1. Go to **Manage access**, then go to the **Service users** tab.
 
    The list of all service accounts in the project is displayed.
 
@@ -141,8 +146,13 @@ This is a group operation: if necessary, you can delete several service accounts
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Go to **Manage access**.
-1. Go to the **Service users** tab. The tab is not displayed for users who do not have [permission to manage the service accounts](../../../concepts/service-accounts).
+1. Make sure your [project role](/en/tools-for-using-services/account/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/tools-for-using-services/account/concepts/service-accounts). Deleteng service users is available for the following roles:
+
+- Project owner
+- Superadministrator
+- User access administrator
+
+1. Go to **Manage access**, then go to the **Service users** tab.
 
    The list of all service accounts in the project is displayed.
 
