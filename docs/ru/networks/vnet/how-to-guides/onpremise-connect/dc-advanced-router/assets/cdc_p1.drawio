@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="Ha8s6_4_4nTsxysomdbX">
-        <mxGraphModel dx="-170" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="-564" dy="1403" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="s1mG0tJND3tc6fStOFF7-114" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="860" y="-70" width="999" height="200" as="geometry"/>
+                    <mxGeometry x="859" y="-70" width="1000" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="s1mG0tJND3tc6fStOFF7-19" value="VK Cloud Infrastructure" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#7C8A9A;strokeWidth=1;fontColor=#212121;fillColor=none;dashed=1;fontFamily=VK Sans Display;verticalAlign=top;spacing=10;fontStyle=1;arcSize=12;absoluteArcSize=1;" parent="1" vertex="1">
                     <mxGeometry x="1600" y="-50" width="240" height="159" as="geometry"/>
