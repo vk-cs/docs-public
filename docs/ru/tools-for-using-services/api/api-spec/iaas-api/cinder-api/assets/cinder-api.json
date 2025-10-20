@@ -1,0 +1,1730 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "version": "3",
+    "title": "Block Storage API",
+    "description": "Управление дисками и их снимками"
+  },
+  "tags": [
+    {
+      "name": "versions",
+      "description": "Версии API"
+    },
+    {
+      "name": "volumes",
+      "description": "Диски"
+    },
+    {
+      "name": "volume-action",
+      "description": "Действия с дисками"
+    },
+    {
+      "name": "volume-snapshots",
+      "description": "Снимки дисков"
+    },
+    {
+      "name": "volume-transfer",
+      "description": "Перемещение дисков между проектами"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Получить перечень поддерживаемых версий API",
+        "tags": [
+          "versions"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "versions"
+                  ],
+                  "properties": {
+                    "versions": {
+                      "$ref": "#/components/schemas/Versions"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{api_version}": {
+      "get": {
+        "summary": "Получить информацию о версии",
+        "tags": [
+          "versions"
+        ],
+        "parameters": [
+          {
+            "name": "api_version",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Версия API, о которой нужно получить информацию",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "versions"
+                  ],
+                  "properties": {
+                    "versions": {
+                      "$ref": "#/components/schemas/Versions"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/volumes": {
+      "get": {
+        "summary": "Получить список дисков",
+        "description": "Возвращает список дисков, к которым у проекта есть доступ",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/sort"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumes": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/VolumesView"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать диск",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "volume": {
+                    "$ref": "#/components/schemas/createVolume"
+                  },
+                  "OS-SCH-HNT:scheduler_hints": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string"
+                    },
+                    "description": "Словарь данных для отправки в планировщик"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volume": {
+                      "$ref": "#/components/schemas/getVolume"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/volumes/detail": {
+      "get": {
+        "summary": "Получить список дисков с детальной информацией",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/sort"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumes": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getVolume"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/volumes/{volume_id}": {
+      "get": {
+        "summary": "Получить информацию о диске",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/volume_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumes": {
+                      "$ref": "#/components/schemas/getVolume"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить диск",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/volume_id"
+          }
+        ],
+        "requestBody": {
+          "description": "Объект ``volume`` в формате JSON",
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "volume": {
+                    "$ref": "#/components/schemas/editVolume"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volumes": {
+                      "$ref": "#/components/schemas/getVolume"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "ОК"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить диск",
+        "description": "Для успешного удаления диск должен быть в одном из статусов: ``available``, ``in-use``, ``error``, ``error_restoring``, ``error_extending`` или ``error_managing``.",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/volume_id"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/volumes/summary": {
+      "get": {
+        "summary": "Получить сводную информацию по дискам",
+        "tags": [
+          "volumes"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "volume-summary": {
+                      "type": "object",
+                      "properties": {
+                        "total_size": {
+                          "type": "integer",
+                          "example": 4,
+                          "description": "Общий размер дисков в ГБ"
+                        },
+                        "total_count": {
+                          "type": "integer",
+                          "example": 4,
+                          "description": "Общее количество дисков"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/volumes/{volume_id}/action": {
+      "post": {
+        "summary": "Выполнить действие с диском",
+        "description": "",
+        "tags": [
+          "volume-action"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/volume_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VolumeActionRequest"
+              },
+              "examples": {
+                "os-extend": {
+                  "summary": "Увеличить размер диска",
+                  "description": "Диск должен быть в статусе ``available``. В параметре ``new_size`` указывается новый размер диска в гибибайтах",
+                  "value": {
+                    "os-extend": {
+                      "new_size": 3
+                    }
+                  }
+                },
+                "os-attach": {
+                  "summary": "Прикрепить диск к ВМ",
+                  "description": "Диск должен быть в статусе ``available``",
+                  "value": {
+                    "os-attach": {
+                      "instance_uuid": "3c829734-0679-4c17-9637-801da48c0d5f",
+                      "mountpoint": "/dev/vdc"
+                    }
+                  }
+                },
+                "os-force_detach": {
+                  "summary": "Принудительное отключение диска от ВМ",
+                  "value": {
+                    "os-force_detach": {
+                      "attachment_id": "d8777f54-84cf-4809-a679-468ffed56cf1",
+                      "connector": {
+                        "initiator": "iqn.2012-07.org.fake:01"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/snapshots": {
+      "get": {
+        "summary": "Получить список снимков",
+        "tags": [
+          "volume-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshots": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getSnapshot"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать снимок",
+        "tags": [
+          "volume-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "snapshot": {
+                    "$ref": "#/components/schemas/createSnapshot"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshots": {
+                      "$ref": "#/components/schemas/getSnapshot"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/snapshots/detail": {
+      "get": {
+        "summary": "Получить список снимков с детальной информацией",
+        "tags": [
+          "volume-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshots": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getSnapshotDetail"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/snapshots/{snapshot_id}": {
+      "get": {
+        "summary": "Получить информацию о снимке",
+        "tags": [
+          "volume-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id_path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshot": {
+                      "$ref": "#/components/schemas/getSnapshotDetail"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить снимок",
+        "tags": [
+          "volume-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id_path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "snapshot": {
+                    "type": "object",
+                    "properties": {
+                      "description": {
+                        "type": "string",
+                        "description": "Новое описание снимка"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "Новое имя снимка"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "snapshots": {
+                      "$ref": "#/components/schemas/getSnapshot"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "422": {
+            "description": "Некорректный запрос"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить снимок",
+        "tags": [
+          "volume-snapshots"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/snapshot_id_path"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/os-volume-transfer": {
+      "post": {
+        "summary": "Создать запрос на перемещение диска",
+        "tags": [
+          "volume-transfer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id_transfer_from"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "transfer": {
+                    "$ref": "#/components/schemas/createTransfer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "transfer": {
+                      "$ref": "#/components/schemas/createTransferResponse"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Получить список перемещений дисков",
+        "tags": [
+          "volume-transfer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "transfers": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getTransfer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/os-volume-transfer/{transfer_id}/accept": {
+      "post": {
+        "summary": "Принять запрос на перемещение диска",
+        "tags": [
+          "volume-transfer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id_transfer_to"
+          },
+          {
+            "$ref": "#/components/parameters/transfer_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "accept": {
+                    "type": "object",
+                    "properties": {
+                      "auth_key": {
+                        "type": "string",
+                        "example": "9266c59563c84664",
+                        "description": "Ключ аутентификации для подтверждения перемещения диска"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "transfer": {
+                      "$ref": "#/components/schemas/getTransfer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/os-volume-transfer/detail": {
+      "get": {
+        "summary": "Получить список перемещений дисков с детальной информацией",
+        "tags": [
+          "volume-transfer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "transfers": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getTransferDetail"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v3/{project_id}/os-volume-transfer/{transfer_id}": {
+      "get": {
+        "summary": "Получить информацию о перемещении диска",
+        "tags": [
+          "volume-transfer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/transfer_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "transfer": {
+                      "$ref": "#/components/schemas/getTransferDetail"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить перемещение диска",
+        "tags": [
+          "volume-transfer"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/project_id"
+          },
+          {
+            "$ref": "#/components/parameters/transfer_id"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "project_id": {
+        "name": "project_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
+        "required": true
+      },
+      "project_id_transfer_from": {
+        "name": "project_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, из которого нужно переместить диск",
+        "required": true
+      },
+      "project_id_transfer_to": {
+        "name": "project_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, в который нужно переместить диск",
+        "required": true
+      },
+      "volume_id": {
+        "name": "volume_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор диска",
+        "required": true
+      },
+      "snapshot_id_path": {
+        "name": "snapshot_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор снимка",
+        "required": true
+      },
+      "transfer_id": {
+        "name": "transfer_id",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор перемещения диска",
+        "required": true
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Максимальное количество элементов, возвращаемых в одном ответе. В последующих запросах указывайте в параметре ``marker`` идентификатор последнего элемента из ответа, чтобы получить следующий набор элементов",
+        "required": false
+      },
+      "marker": {
+        "name": "marker",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Маркер пагинации для больших наборов данных",
+        "required": false
+      },
+      "sort": {
+        "name": "sort",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "example": "name:asc,id:desc"
+        },
+        "description": "Ключи сортировки по нескольким атрибутам и направлениям. Для разделения нескольких значений используйте ``,``. Возможные значения направления сортировки:\n\n``asc`` — по возрастанию;\n\n``desc`` — по убыванию",
+        "required": false
+      },
+      "sort_key": {
+        "name": "sort_key",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Атрибут, по которому сортируются снимки в ответе",
+        "required": false
+      },
+      "sort_dir": {
+        "name": "sort_dir",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "default": "desc"
+        },
+        "description": "Направление сортировки списка",
+        "required": false
+      }
+    },
+    "schemas": {
+      "Versions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Имя версии"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "CURRENT",
+                "SUPPORTED",
+                "DEPRECATED"
+              ],
+              "x-enum-descriptions": [
+                "Предпочтительная для использования версия",
+                "Старая, но поддерживаемая версия",
+                "Устаревшая версия"
+              ],
+              "description": "Статус версии"
+            },
+            "links": {
+              "type": "array",
+              "description": "Ссылки",
+              "items": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            },
+            "media-types": {
+              "type": "array",
+              "description": "Форматы данных, поддерживаемые API",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "base": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "version": {
+              "type": "string",
+              "description": "Если эта версия API поддерживает микроверсии, максимальная поддерживаемая микроверсия. Если микроверсии не поддерживаются, пустая строка"
+            },
+            "min_version": {
+              "type": "string",
+              "description": "Если эта версия API поддерживает микроверсии, минимальная поддерживаемая микроверсия. Если микроверсии не поддерживаются, пустая строка"
+            },
+            "updated": {
+              "type": "string",
+              "description": "Дата и время обновления"
+            }
+          }
+        }
+      },
+      "VolumesView": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор диска"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на диск",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя диска"
+          }
+        }
+      },
+      "createVolume": {
+        "type": "object",
+        "required": [
+          "size",
+          "description",
+          "name",
+          "consistencygroup_id"
+        ],
+        "properties": {
+          "size": {
+            "type": "integer",
+            "example": 10,
+            "description": "Размер диска в гибибайтах"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "Описание"
+          },
+          "imageRef": {
+            "type": "string",
+            "description": "Идентификатор образа, из которого нужно создать диск. Требуется для создания загрузочного диска"
+          },
+          "multiattach": {
+            "type": "boolean",
+            "default": false,
+            "description": "Признак возможности подключить диск к нескольким ВМ. Возможные значения:\n\n``true`` — диск можно подключить к нескольким ВМ;\n\n``false`` — диск нельзя подключить к нескольким ВМ"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности"
+          },
+          "source_volid": {
+            "type": "string",
+            "description": "Идентификатор исходного диска. Будет создан диск такого же размера, как исходный"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "consistencygroup_id": {
+            "type": "string",
+            "description": "Идентификатор группы консистентности"
+          },
+          "volume_type": {
+            "type": "string",
+            "description": "Идентификатор типа диска"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "description": "Идентификатор снимка диска, если нужно создать диск из снимка"
+          },
+          "source_replica": {
+            "type": "string",
+            "description": "Идентификатор основного диска, если нужно его клонировать"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные. Пары ключ — значение."
+          }
+        }
+      },
+      "getVolume": {
+        "type": "object",
+        "required": [
+          "migration_status",
+          "attachments",
+          "links",
+          "encrypted",
+          "updated_at",
+          "replication_status",
+          "id",
+          "size",
+          "metadata",
+          "status",
+          "description",
+          "consistencygroup_id",
+          "name",
+          "bootable",
+          "created_at"
+        ],
+        "properties": {
+          "migration_status": {
+            "type": "string",
+            "description": "Статус миграции"
+          },
+          "attachments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "description": "Список информации о прикреплении диска к ВМ"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              },
+              "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — в <a href='http:developer.openstack.org/api-guide/compute/links_and_references.html'>документации OpenStack</a>"
+            }
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности"
+          },
+          "encrypted": {
+            "type": "boolean",
+            "description": "Признак зашифрованного диска. Значение ``true``, если диск зашифрован"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "replication_status": {
+            "type": "string",
+            "description": "Статус репликации"
+          },
+          "snapshot_id": {
+            "type": "string",
+            "description": "Идентификатор снимка, из которого был создан диск"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор диска"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер диска в гибибайтах"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные диска"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["creating","available","attaching","in-use","deleting","error","error_deleting","backing-up","restoring-backup","error_restoring","error_extending"],
+            "description": "Статус диска"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "multiattach": {
+            "type": "boolean",
+            "description": "Признак возможности подключить диск к нескольким ВМ. Возможные значения:\n\n``true`` — диск можно подключить к нескольким ВМ;\n\n``false`` — диск нельзя подключить к нескольким ВМ"
+          },
+          "source_volid": {
+            "type": "string",
+            "description": "Идентификатор исходного диска, если он использовался при создании диска"
+          },
+          "consistencygroup_id": {
+            "type": "string",
+            "description": "Идентификатор группы консистентности"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "bootable": {
+            "type": "string",
+            "enum": [
+              "true",
+              "false"
+            ],
+            "description": "Атрибут «загрузочный»"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "volume_type": {
+            "type": "string",
+            "enum": [
+              "ceph-hdd",
+              "ceph-ssd",
+              "high-iops",
+              "high-iops-ha",
+              "ef-nvme"
+            ],
+            "description": "Тип диска"
+          }
+        }
+      },
+      "editVolume": {
+        "type": "object",
+        "required": [
+          "description",
+          "name",
+          "metadata"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные диска"
+          }
+        }
+      },
+      "VolumeActionRequest": {
+        "properties": {},
+        "type": "object",
+        "title": "VolumeActionRequest",
+        "description": "Запрос на выполнение действия с диском"
+      },
+      "getSnapshot": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "name",
+          "description",
+          "created_at",
+          "metadata",
+          "volume_id",
+          "size"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор снимка"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "creating",
+              "available",
+              "error",
+              "deleting",
+              "error_deleting"
+            ],
+            "description": "Статус снимка"
+          },
+          "volume_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор диска"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя снимка"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "Описание снимка"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер диска в гибибайтах"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные снимка"
+          }
+        }
+      },
+      "getSnapshotDetail": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "name",
+          "description",
+          "created_at",
+          "metadata",
+          "volume_id",
+          "size",
+          "os-extended-snapshot-attributes:progress"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор снимка"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "creating",
+              "available",
+              "error",
+              "deleting",
+              "error_deleting"
+            ],
+            "description": "Статус снимка"
+          },
+          "volume_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Идентификатор диска"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя снимка"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "Описание снимка"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер диска в гибибайтах"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "Метаданные снимка"
+          },
+          "os-extended-snapshot-attributes:progress": {
+            "type": "string",
+            "example": "100%",
+            "description": "Прогресс сборки в процентах"
+          }
+        }
+      },
+      "createSnapshot": {
+        "type": "object",
+        "required": [
+          "volume_id",
+          "description",
+          "name"
+        ],
+        "properties": {
+          "volume_id": {
+            "type": "string",
+            "description": "Идентификатор диска"
+          },
+          "force": {
+            "type": "boolean",
+            "default": false,
+            "description": "Указывает, следует ли выполнять резервное копирование, даже если том подключен"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание снимка"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя снимка"
+          }
+        }
+      },
+      "createTransfer": {
+        "type": "object",
+        "required": [
+          "volume_id",
+          "name"
+        ],
+        "properties": {
+          "volume_id": {
+            "type": "string",
+            "example": "c86b9af4-151d-4ead-b62c-5fb967af0e37",
+            "description": "Идентификатор диска, который нужно переместить в другой проект"
+          },
+          "name": {
+            "type": "string",
+            "example": "first volume",
+            "description": "Имя перемещения диска"
+          }
+        }
+      },
+      "createTransferResponse": {
+        "type": "object",
+        "required": [
+          "auth_key",
+          "links",
+          "created_at"
+        ],
+        "properties": {
+          "auth_key": {
+            "type": "string",
+            "description": "Ключ аутентификации для подтверждения перемещения диска. Сохраните его, чтобы использовать в методе ``POST /v3/{project_id}/os-volume-transfer/{transfer_id}/accept``"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — в <a href='http:developer.openstack.org/api-guide/compute/links_and_references.html'>документации OpenStack</a>",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "volume_id": {
+            "type": "string",
+            "example": "c86b9af4-151d-4ead-b62c-5fb967af0e37",
+            "description": "Идентификатор перемещаемого диска"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор перемещения диска"
+          },
+          "name": {
+            "type": "string",
+            "example": "first volume",
+            "description": "Имя перемещения диска"
+          }
+        }
+      },
+      "getTransfer": {
+        "type": "object",
+        "required": [
+          "volume_id",
+          "id",
+          "links",
+          "name"
+        ],
+        "properties": {
+          "volume_id": {
+            "type": "string",
+            "description": "Идентификатор диска"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор перемещения диска"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — в <a href='http:developer.openstack.org/api-guide/compute/links_and_references.html'>документации OpenStack</a>",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "name": {
+            "type": "string",
+            "example": "first volume",
+            "description": "Имя перемещения диска"
+          }
+        }
+      },
+      "getTransferDetail": {
+        "type": "object",
+        "required": [
+          "created_at",
+          "volume_id",
+          "id",
+          "links",
+          "name"
+        ],
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "volume_id": {
+            "type": "string",
+            "description": "Идентификатор диска"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор перемещения диска"
+          },
+          "links": {
+            "type": "array",
+            "description": "Ссылки на рассматриваемые ресурсы. Дополнительная информация — в <a href='http:developer.openstack.org/api-guide/compute/links_and_references.html'>документации OpenStack</a>",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "name": {
+            "type": "string",
+            "example": "first volume",
+            "description": "Имя перемещения диска"
+          }
+        }
+      }
+    }
+  }
+}
