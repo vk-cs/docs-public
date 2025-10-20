@@ -1,21 +1,17 @@
-New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the official release.
+New versions of Kubernetes aaS from VK Cloud are usually added one month after the official release.
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.33.1
 - 1.32.1
 - 1.31.4
 - 1.30.5
-- 1.29.7
-- 1.28.9
 
-When [creating a new cluster](../../../instructions/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../instructions/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
+When [creating a new cluster](../../../instructions/create-cluster), choose the latest available version of Kubernetes. If possible, [update the existing clusters](../../../instructions/update) to the latest available version. 
 
-If the cluster uses an outdated [version of Kubernetes](#kubernetes_version_support), then:
+If the cluster uses an outdated version of Kubernetes, its correct operation is not guaranteed. Technical support will not be able to help you resolve issues if they occur.
 
-- its correct operation is not guaranteed;
-- technical support will not be able to help you resolve issues if they occur.
-
-## Kubernetes version support <a id="k8s-versions-list"></a>
+## {heading(Kubernetes version support)[id=k8s-versions-list]}
 
 Kubernetes versions are supported for 14 months from the release date in Kubernetes aaS from VK Cloud.
 
@@ -28,90 +24,107 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
 
+|1.33.x
+|May 15, 2025
+|20.10.2025
+|20.12.2026
+
 |1.32.x
-|12 December 2024
+|December 12, 2024
 |28.05.2025
 |28.07.2026
 
 |1.31.x
-|10 December 2024
+|December 10, 2024
 |17.02.2025
 |17.04.2026
 
 |1.30.x
-|10 September 2024
+|September 10, 2024
 |10.12.2024
 |10.02.2026
 
 | 1.29.x
-| 17 July 2024
+| July 17, 2024
 | 30.08.2024
 | 30.10.2025
 
 | 1.28.x
-| 16 April 2024
+| April 16, 2024
 | 30.06.2024
 | 30.08.2025
+|===
+
+{cut(Previous versions)}
+
+[cols="1,2,1,1", options="header"]
+|===
+|Version of Kubernetes
+|Official release date
+|VK Kubernetes aaS release date
+|VK Kubernetes aaS end of support date
 
 | 1.27.x
-| 13 September 2023
+| September 13, 2023
 | 11.12.2023
 | 11.02.2025
 
 | 1.26.x
-| 17 May 2023
+| May 17, 2023
 | 14.08.2023
 | 17.10.2024
 
 | 1.25.x
-| 17 May 2023
+| May 17, 2023
 | 14.06.2023
 | 14.08.2024
 
 | 1.24.x
-| 8 December 2022
+| December 8, 2022
 | 06.03.2023
 | 06.05.2024
 
 | 1.23.x
-| 13 April 2022
+| April 13, 2022
 | 15.08.2022
 | 15.10.2023
 
 | 1.22.x
-| 19 January 2022
+| January 19, 2022
 | 18.02.2022
 | 18.04.2023
 
 | 1.21.4
-| 8 April 2021
+| April 8, 2021
 | 12.10.2021
 | 12.12.2022
 
 | 1.20.4
-| 8 December 2020
+| December 8, 2020
 | 01.03.2021
 | 01.05.2022
 
 | 1.19.4
-| 26 August 2020
+| August 26, 2020
 | 23.12.2020
 | 23.02.2022
 
 | 1.18.12
-| 23 March 2020
+| March 23, 2020
 | 23.12.2020
 | 23.02.2022
 
 | 1.17.8
-| 9 December 2019
+| December 9, 2019
 | 09.08.2020
 | 09.12.2021
 |===
 
-The version history can be viewed at [Kubernetes version history](#k8s_versions_history).
+{/cut}
 
-## Service feature matrix for Kubernetes <a id="k8s-features-list"></a>
+You can see the changelog in [Kubernetes version history](#k8s_versions_history).
+
+## {heading(Service feature matrix for Kubernetes)[id=k8s-features-list]}
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
@@ -121,7 +134,7 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.32.х
+|1.27.x–1.33.х
 
 |Node group scaling settings
 | ![](/en/assets/check.svg "inline")
@@ -177,7 +190,6 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/check.svg "inline")
 
-
 |GPU support
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
@@ -192,6 +204,14 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |Kubernetes version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
+
+|1.33.1
+|[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
+|Packages are updated:
+
+- CoreDNS is updated to version 1.12.3.
+- Calico is updated to version 3.30.2.
+- Helm is updated to version 3.18.4
 
 |1.32.1
 |[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
@@ -212,6 +232,15 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
 | ![](/en/assets/no.svg "inline")
+|===
+
+{cut(Previous versions)}
+
+[cols="1,1,2", options="header"]
+|===
+|Kubernetes version
+|Changes in Kubernetes
+|Changes in Kubernetes aaS service
 
 |1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
@@ -253,3 +282,5 @@ By default, a limit on the consumed computing resources ([limit ranges](https://
 
 [Log storage format](/en/cases/cases-logs/case-fluent-bit) has been changed
 |===
+
+{/cut}
