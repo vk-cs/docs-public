@@ -11,11 +11,7 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/monitoring-services/monitorin
 1. Убедитесь, что на проекте включен сервис Cloud Monitoring 2.0, при необходимости подключите его через [техническую поддержку](/ru/contacts).
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. [Включите](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
-1. Включите доступ по API, если это еще не сделано:
-
-   1. Нажмите на имя пользователя в шапке страницы и выберите **Безопасность**.
-   1. Нажмите кнопку **Активировать доступ по API**.
-
+1. [Включите](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api) доступ по API, если это еще не сделано.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
 1. Найдите эндпоинт для сервиса Cloud Monitoring 2.0. Если его нет в списке, используйте:
