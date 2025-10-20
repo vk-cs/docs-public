@@ -1,0 +1,1212 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Image Service API",
+    "version": "1.0.0",
+    "description": "REST API для управления образами ВМ"
+  },
+  "tags": [
+    {
+      "name": "schemas",
+      "description": "JSON-схемы ресурсов"
+    },
+    {
+      "name": "images",
+      "description": "Образы ВМ"
+    },
+    {
+      "name": "members",
+      "description": "Совместный доступ к образу ВМ"
+    }
+  ],
+  "paths": {
+    "/v2/schemas/images": {
+      "get": {
+        "summary": "Получить JSON-схему массива images",
+        "tags": [
+          "schemas"
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Схема массива ``images`` в формате JSON"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v2/schemas/image": {
+      "get": {
+        "summary": "Получить JSON-схему объекта image",
+        "tags": [
+          "schemas"
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Схема объекта ``image`` в формате JSON"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v2/schemas/members": {
+      "get": {
+        "summary": "Получить JSON-схему массива members",
+        "tags": [
+          "schemas"
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Схема массива ``members`` в формате JSON"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v2/schemas/member": {
+      "get": {
+        "summary": "Получить JSON-схему объекта member",
+        "tags": [
+          "schemas"
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "Схема объекта ``member`` в формате JSON"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          }
+        }
+      }
+    },
+    "/v2/images": {
+      "get": {
+        "summary": "Получить список образов ВМ",
+        "tags": [
+          "images"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/nameImage"
+          },
+          {
+            "$ref": "#/components/parameters/owner"
+          },
+          {
+            "$ref": "#/components/parameters/status"
+          },
+          {
+            "$ref": "#/components/parameters/tag"
+          },
+          {
+            "$ref": "#/components/parameters/visibility"
+          },
+          {
+            "$ref": "#/components/parameters/member_status"
+          },
+          {
+            "$ref": "#/components/parameters/size_max"
+          },
+          {
+            "$ref": "#/components/parameters/size_min"
+          },
+          {
+            "$ref": "#/components/parameters/created_at"
+          },
+          {
+            "$ref": "#/components/parameters/updated_at"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "images": {
+                      "type": "array",
+                      "description": "Список объектов с информацией об образах ВМ. Схему массива ``images`` можно получить с помощью ``GET /v2/schemas/images``",
+                      "items": {
+                        "$ref": "#/components/schemas/getImage"
+                      }
+                    },
+                    "first": {
+                      "type": "string",
+                      "description": "URI первой страницы ответа. Можно использовать в последующем HTTP-запросе, чтобы вернуться на первую страницу"
+                    },
+                    "next": {
+                      "type": "string",
+                      "description": "URI следующей страницы ответа. Можно использовать в последующем HTTP-запросе, чтобы получить следующую страницу. Отсутствует для последней страницы"
+                    },
+                    "schema": {
+                      "type": "string",
+                      "description": "URL схемы, описывающей список объектов с информацией об образах ВМ"
+                    }
+                  },
+                  "example": {
+                    "images": [
+                      {
+                        "status": "active",
+                        "name": "cirros-0.3.2-x86_64-disk",
+                        "tags": [],
+                        "container_format": "bare",
+                        "created_at": "2014-11-07T17:07:06Z",
+                        "disk_format": "qcow2",
+                        "updated_at": "2014-11-07T17:19:09Z",
+                        "visibility": "public",
+                        "self": "/v2/images/1bea47ed-f6a9-463b-b423-14b9cca9ad27",
+                        "min_disk": 0,
+                        "protected": false,
+                        "id": "1bea47ed-f6a9-463b-b423-14b9cca9ad27",
+                        "file": "/v2/images/1bea47ed-f6a9-463b-b423-14b9cca9ad27/file",
+                        "checksum": "64d7c1cd2b6f60c92c14662941cb7913",
+                        "owner": "5ef70662f8b34079a6eddb8da9d75fe8",
+                        "size": 13167616,
+                        "min_ram": 0,
+                        "schema": "/v2/schemas/image",
+                        "virtual_size": null
+                      },
+                      {
+                        "status": "active",
+                        "name": "F17-x86_64-cfntools",
+                        "tags": [],
+                        "container_format": "bare",
+                        "created_at": "2014-10-30T08:23:39Z",
+                        "disk_format": "qcow2",
+                        "updated_at": "2014-11-03T16:40:10Z",
+                        "visibility": "public",
+                        "self": "/v2/images/781b3762-9469-4cec-b58d-3349e5de4e9c",
+                        "min_disk": 0,
+                        "protected": false,
+                        "id": "781b3762-9469-4cec-b58d-3349e5de4e9c",
+                        "file": "/v2/images/781b3762-9469-4cec-b58d-3349e5de4e9c/file",
+                        "checksum": "afab0f79bac770d61d24b4d0560b5f70",
+                        "owner": "5ef70662f8b34079a6eddb8da9d75fe8",
+                        "size": 476704768,
+                        "min_ram": 0,
+                        "schema": "/v2/schemas/image",
+                        "virtual_size": null
+                      }
+                    ],
+                    "schema": "/v2/schemas/images",
+                    "first": "/v2/images"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать образ ВМ",
+        "tags": [
+          "images"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createImage"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ОК",
+            "headers": {
+              "Location": {
+                "description": "URL созданного образа ВМ",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getImage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "413": {
+            "description": "Превышен размер запроса"
+          },
+          "415": {
+            "description": "Неподдерживаемый формат"
+          }
+        }
+      }
+    },
+    "/v2/images/{image_id}": {
+      "get": {
+        "summary": "Получить информацию об образе ВМ",
+        "tags": [
+          "images"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getImage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Частично изменить образ ВМ",
+        "tags": [
+          "images"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/ContentType"
+          },
+          {
+            "$ref": "#/components/parameters/image_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "op": {
+                          "type": "string",
+                          "description": "Операция, которую нужно выполнить",
+                          "enum": [
+                            "add",
+                            "remove",
+                            "replace"
+                          ],
+                          "example": "replace"
+                        },
+                        "path": {
+                          "type": "string",
+                          "description": "JSON-указатель, который ссылается на место, где должна быть выполнена операция",
+                          "example": "/name"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "Значение, которое нужно добавить или заменить. Не указывается, если значение параметра ``op`` — ``remove``",
+                          "example": "Fedora 17"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "op": {
+                          "type": "string",
+                          "description": "Операция, которую нужно выполнить",
+                          "enum": [
+                            "add",
+                            "remove",
+                            "replace"
+                          ],
+                          "example": "replace"
+                        },
+                        "path": {
+                          "type": "string",
+                          "description": "JSON-указатель, который ссылается на место, где должна быть выполнена операция",
+                          "example": "/tags"
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "Значение, которое нужно добавить или заменить. Не указывается, если значение параметра ``op`` — ``remove``",
+                          "example": [
+                            "fedora",
+                            "beefy"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getImage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "413": {
+            "description": "Превышен размер запроса"
+          },
+          "415": {
+            "description": "Неподдерживаемый формат"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить образ ВМ",
+        "description": "Метод удаляет образ ВМ.\n\nОграничения:\n\n– нельзя удалить образ в статусе ``deleted``;\n\n– нельзя удалить образ, для которого атрибут ``protected`` равен ``true``.",
+        "tags": [
+          "images"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          }
+        }
+      }
+    },
+    "/v2/images/{image_id}/members": {
+      "description": "Управление совместным доступом к образу из нескольких проектов",
+      "get": {
+        "summary": "Получить список проектов, которым предоставлен доступ к образу",
+        "description": "Метод возвращает список проектов, которым был предоставлен доступ к указанному в запросе образу ВМ",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "members": {
+                      "type": "array",
+                      "description": "Список объектов с информацией об участниках. Схему массива ``members`` можно получить с помощью ``GET /v2/schemas/members``",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "schema": {
+                      "type": "string",
+                      "description": "URL схемы, описывающей список объектов с информацией об участниках"
+                    }
+                  },
+                  "example": {
+                    "members" :  [
+                      {
+                        "created_at" :  "2013-10-07T17:58:03Z" ,
+                        "image_id" :  "dbc999e3-c52f-4200-bedd-3b18fe7f87fe" ,
+                        "member_id" :  "123456789" ,
+                        "schema" :  "/v2/schemas/member" ,
+                        "status" :  "pending" ,
+                        "updated_at" :  "2013-10-07T17:58:03Z"
+                      },
+                      {
+                        "created_at" :  "2013-10-07T17:58:55Z" ,
+                        "image_id" :  "dbc999e3-c52f-4200-bedd-3b18fe7f87fe" ,
+                        "member_id" :  "987654321" ,
+                        "schema" :  "/v2/schemas/member" ,
+                        "status" :  "accepted" ,
+                        "updated_at" :  "2013-10-08T12:08:55Z"
+                      }
+                    ],
+                    "schema" :  "/v2/schemas/members"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "post": {
+        "summary": "Предоставить проекту доступ к образу",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createMember"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getMember"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "413": {
+            "description": "Превышен размер запроса"
+          }
+        }
+      }
+    },
+    "/v2/images/{image_id}/members/{member_id}": {
+      "get": {
+        "summary": "Получить информацию о проекте, которому предоставлен доступ к образу",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          },
+          {
+            "$ref": "#/components/parameters/member_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getMember"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "put": {
+        "summary": "Принять или отклонить приглашение к совместному доступу",
+        "description": "Метод изменяет статус приглашения к совместному доступу. Когда вашему проекту предоставляют доступ к образу ВМ, его ``member_status`` равен ``pending``. Пока вы не измените ``member_status`` на ``accepted``, вы не увидите его в списке своих образов (метод ``GET /v2/images``)",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          },
+          {
+            "$ref": "#/components/parameters/member_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/updateMember"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getMember"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить проект из совместного доступа",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/image_id"
+          },
+          {
+            "$ref": "#/components/parameters/member_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "ContentType": {
+        "name": "Content-Type",
+        "in": "header",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "example": "application/openstack-images-v2.1-json-patch",
+          "enum": [
+            "application/openstack-images-v2.1-json-patch"
+          ]
+        },
+        "description": "Заголовок запроса. Указывает, что в теле запроса передаются данные в формате JSON Patch. Подробнее — в <a href='https://specs.openstack.org/openstack/glance-specs/specs/api/v2/http-patch-image-api-v2.html'>документации OpenStack</a>"
+      },
+      "image_id": {
+        "name": "image_id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Идентификатор образа ВМ"
+      },
+      "member_id": {
+        "name": "member_id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, которому предоставляется доступ к образу ВМ"
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Максимальное количество элементов, возвращаемых в одном ответе. В последующих запросах указывайте в параметре ``marker`` идентификатор последнего элемента из ответа, чтобы получить следующий набор элементов",
+        "required": false
+      },
+      "marker": {
+        "name": "marker",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Маркер пагинации для больших наборов данных",
+        "required": false
+      },
+      "nameImage": {
+        "name": "name",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Имя образа ВМ",
+        "required": false
+      },
+      "owner": {
+        "name": "owner",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по параметру <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
+        "required": false
+      },
+      "status": {
+        "name": "status",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "active",
+            "queued",
+            "saving"
+          ]
+        },
+        "description": "Фильтр по статусу образа ВМ",
+        "required": false
+      },
+      "tag": {
+        "name": "tag",
+        "in": "query",
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": "Фильтр по тегам образа ВМ. Возвращаются только образы, содержащие все указанные теги",
+        "required": false
+      },
+      "visibility": {
+        "name": "visibility",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "shared",
+            "private"
+          ]
+        },
+        "description": "Фильтр по разрешению на доступ к образу ВМ",
+        "required": false
+      },
+      "member_status": {
+        "name": "member_status",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "accepted",
+            "pending",
+            "rejected",
+            "all"
+          ],
+          "default": "accepted"
+        },
+        "description": "Фильтр по статусу приглашения к совместному доступу к образу ВМ",
+        "required": false
+      },
+      "size_max": {
+        "name": "size_max",
+        "in": "query",
+        "schema": {
+          "type": "integer",
+          "example": 4194304
+        },
+        "description": "Максимальный размер образа ВМ в байтах",
+        "required": false
+      },
+      "size_min": {
+        "name": "size_min",
+        "in": "query",
+        "schema": {
+          "type": "integer",
+          "example": 1048576
+        },
+        "description": "Минимальный размер образа ВМ в байтах",
+        "required": false
+      },
+      "created_at": {
+        "name": "created_at",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "example": "gt:2016-04-18T21:38:54Z"
+        },
+        "description": "Фильтр по дате и времени создания ресурса. Формат: ``ОС:CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC).\n\nЗначение ``ОС`` указывает на оператор сравнения:\n\n``gt`` — возвращает результаты позже указанного времени;\n\n``gte`` — возвращает результаты, соответствующие указанному времени и более поздние;\n\n``eq`` — возвращает результаты, соответствующие указанному времени;\n\n``neq`` — возвращает результаты, не соответствующие указанному времени;\n\n``lt`` — возвращает результаты раньше указанного времени;\n\n``lte`` — возвращает результаты, соответствующие указанному времени и более ранние",
+        "required": false
+      },
+      "updated_at": {
+        "name": "updated_at",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "example": "gt:2016-04-18T21:38:54Z"
+        },
+        "description": "Фильтр по дате и времени изменения ресурса. Формат: ``ОС:CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC).\n\nЗначение ``ОС`` указывает на оператор сравнения:\n\n``gt`` — возвращает результаты позже указанного времени;\n\n``gte`` — возвращает результаты, соответствующие указанному времени и более поздние;\n\n``eq`` — возвращает результаты, соответствующие указанному времени;\n\n``neq`` — возвращает результаты, не соответствующие указанному времени;\n\n``lt`` — возвращает результаты раньше указанного времени;\n\n``lte`` — возвращает результаты, соответствующие указанному времени и более ранние",
+        "required": false
+      },
+      "sort_key": {
+        "name": "sort_key",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "default": "created_at"
+        },
+        "description": "Атрибут, по которому сортируются образы ВМ в ответе",
+        "required": false
+      },
+      "sort_dir": {
+        "name": "sort_dir",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "default": "desc",
+          "enum": [
+            "asc",
+            "desc"
+          ]
+        },
+        "description": "Направление сортировки. Возможные значения:\n\n``asc`` — по возрастанию;\n\n``desc`` — по убыванию",
+        "required": false
+      },
+      "sort": {
+        "name": "sort",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "example": "name:asc,status:desc"
+        },
+        "description": "Ключи сортировки по нескольким атрибутам и направлениям. Для разделения нескольких значений используйте ``,``. Направление сортировки по умолчанию — ``desc``",
+        "required": false
+      }
+    },
+    "schemas": {
+      "getImage": {
+        "type": "object",
+        "required": [
+          "checksum",
+          "container_format",
+          "created_at",
+          "disk_format",
+          "file",
+          "id",
+          "min_disk",
+          "min_ram",
+          "name",
+          "owner",
+          "protected",
+          "schema",
+          "self",
+          "size",
+          "status",
+          "tags",
+          "updated_at",
+          "virtual_size",
+          "visibility"
+        ],
+        "properties": {
+          "checksum": {
+            "type": "string",
+            "description": "Контрольная сумма. Применяется сервисом Glance для проверки",
+            "nullable": true
+          },
+          "container_format": {
+            "type": "string",
+            "description": "Формат контейнера. Возможные значения можно получить в методе ``GET /v2/schemas/image``",
+            "nullable": true
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "disk_format": {
+            "type": "string",
+            "description": "Формат диска. Возможные значения можно получить в методе ``GET /v2/schemas/image``",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "description": "URL-адрес файла образа ВМ"
+          },
+          "id": {
+            "type": "string",
+            "description": "Идентификатор образа ВМ"
+          },
+          "min_disk": {
+            "type": "integer",
+            "description": "Минимальный объем дискового пространства в ГБ, необходимый для запуска ВМ с этим образом",
+            "nullable": true,
+            "example": 100
+          },
+          "min_ram": {
+            "type": "integer",
+            "description": "Минимальный объем оперативной памяти в MБ, необходимый для запуска ВМ с этим образом",
+            "nullable": true,
+            "example": 512
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя образа ВМ",
+            "nullable": true
+          },
+          "owner": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
+            "nullable": true
+          },
+          "protected": {
+            "type": "boolean",
+            "description": "Защита от удаления. Возможные значения:\n\n``true`` — образ нельзя удалить;\n\n``false`` — образ можно удалить"
+          },
+          "schema": {
+            "type": "string",
+            "description": "URL-адрес схемы, описывающей объект ``image``"
+          },
+          "self": {
+            "type": "string",
+            "description": "URL-адрес образа ВМ"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер образа в байтах",
+            "nullable": true,
+            "example": 13167616
+          },
+          "status": {
+            "type": "string",
+            "description": "Статус образа",
+            "enum": [
+              "queued",
+              "saving",
+              "active",
+              "killed",
+              "deleted",
+              "pending_delete",
+              "deactivated"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов образа"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "virtual_size": {
+            "type": "integer",
+            "description": "Виртуальный размер образа",
+            "nullable": true
+          },
+          "visibility": {
+            "type": "string",
+            "description": "Разрешение на доступ к образу",
+            "enum": [
+              "shared",
+              "private"
+            ],
+            "example": "private"
+          }
+        }
+      },
+      "createImage": {
+        "type": "object",
+        "properties": {
+          "container_format": {
+            "type": "string",
+            "description": "Формат контейнера. Возможные значения можно получить в методе ``GET /v2/schemas/image``",
+            "nullable": true
+          },
+          "disk_format": {
+            "type": "string",
+            "description": "Формат диска. Возможные значения можно получить в методе ``GET /v2/schemas/image``",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "description": "Уникальный идентификатор образа ВМ. Если не указан, сервис присвоит значение автоматически"
+          },
+          "min_disk": {
+            "type": "integer",
+            "description": "Минимальный объем дискового пространства в ГБ, необходимый для запуска ВМ с этим образом",
+            "nullable": true,
+            "example": 100
+          },
+          "min_ram": {
+            "type": "integer",
+            "description": "Минимальный объем оперативной памяти в MБ, необходимый для запуска ВМ с этим образом",
+            "nullable": true,
+            "example": 512
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя образа ВМ",
+            "nullable": true
+          },
+          "visibility": {
+            "type": "string",
+            "description": "Разрешение на доступ к образу",
+            "enum": [
+              "shared",
+              "private"
+            ],
+            "example": "private"
+          },
+          "protected": {
+            "type": "boolean",
+            "description": "Защита от удаления. Возможные значения:\n\n``true`` — образ нельзя удалить;\n\n``false`` — образ можно удалить"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов образа"
+          }
+        }
+      },
+      "getMember": {
+        "type": "object",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "image_id": {
+            "type": "string",
+            "description": "Идентификатор образа ВМ"
+          },
+          "member_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, которому предоставлен доступ"
+          },
+          "schema": {
+            "type": "string",
+            "example": "v2/schemas/member",
+            "description": "URL-адрес схемы, описывающей объект ``member``"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "accepted",
+              "rejected"
+            ],
+            "description": "Статус приглашения к совместному доступу"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          }
+        }
+      },
+      "createMember": {
+        "type": "object",
+        "required": [
+          "member"
+        ],
+        "properties": {
+          "member": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, которому предоставляется доступ к образу ВМ"
+          }
+        }
+      },
+      "updateMember": {
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected",
+              "pending"
+            ],
+            "description": "Новый статус приглашения к совместному доступу"
+          }
+        }
+      }
+    }
+  }
+}
