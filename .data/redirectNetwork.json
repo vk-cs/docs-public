@@ -2461,7 +2461,7 @@
   },
   {
     "source": "/ru/networks/vnet/networks/publicdns/api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "destination": "/ru/tools-for-using-services/api/api-spec/network-api/api-dns",
     "permanent": false,
     "locale": false
   },
@@ -3319,7 +3319,7 @@
   },
   {
     "source": "/ru/networks/dns/publicdns/api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "destination": "/ru/tools-for-using-services/api/api-spec/network-api/api-dns",
     "permanent": false,
     "locale": false
   },
@@ -19873,7 +19873,7 @@
   },
   {
     "source": "/ru/additionals/api/api-dns",
-    "destination": "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "destination": "/ru/tools-for-using-services/api/api-spec/network-api/api-dns",
     "permanent": false,
     "locale": false
   },
@@ -32654,6 +32654,18 @@
   {
     "source": "/ru/networks/dns/publicdns",
     "destination": "/ru/networks/dns/instructions/publicdns",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/api/api-spec/api-anycast",
+    "destination": "/ru/tools-for-using-services/api/api-spec/network-api/neutron-sprut-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "destination": "/ru/tools-for-using-services/api/api-spec/network-api/api-dns",
     "permanent": false,
     "locale": false
   }
