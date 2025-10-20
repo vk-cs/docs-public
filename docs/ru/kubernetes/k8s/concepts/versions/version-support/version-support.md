@@ -2,20 +2,16 @@
 
 В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
 
+- 1.33.1
 - 1.32.1
 - 1.31.4
 - 1.30.5
-- 1.29.7
-- 1.28.9
 
-При [создании нового кластера](../../../instructions/create-cluster) выбирайте последнюю доступную [версию Kubernetes](#podderzhka_versiy_kubernetes). По возможности [обновляйте кластер](../../../instructions/update) до последней доступной версии. Процедура обновления описана в [соответствующем разделе концепций](../../update).
+При [создании нового кластера](../../../instructions/create-cluster) выбирайте последнюю доступную версию Kubernetes. По возможности [обновляйте существующие кластеры](../../../instructions/update) до последней доступной версии.
 
-Если кластер использует устаревшую [версию Kubernetes](#podderzhka_versiy_kubernetes), то:
+Если кластер использует устаревшую версию Kubernetes, его корректная работа не гарантируется. В случае возникновения проблем служба технической поддержки не сможет помочь с их решением.
 
-- его корректная работа не гарантируется;
-- служба технической поддержки не сможет помочь с решением возникающих проблем.
-
-## Поддержка версий Kubernetes <a id="k8s-versions-list"></a>
+## {heading(Поддержка версий Kubernetes)[id=k8s-versions-list]}
 
 Версии Kubernetes поддерживаются на протяжении 14 месяцев с даты релиза в Kubernetes aaS от VK Cloud.
 
@@ -27,6 +23,11 @@
 |Официальная дата релиза
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
+
+|1.33.x
+|15 мая 2025
+|20.10.2025
+|20.12.2026
 
 |1.32.x
 |12 декабря 2024
@@ -52,7 +53,16 @@
 | 16 апреля 2024
 | 30.06.2024
 | 30.08.2025
+|===
 
+{cut(Предыдущие версии)}
+
+[cols="1,2,1,1", options="header"]
+|===
+|Версия Kubernetes
+|Официальная дата релиза
+|Kubernetes aaS от VK релиз
+|Kubernetes aaS от VK завершение поддержки
 | 1.27.x  
 | 13 сентября 2023
 | 11.12.2023
@@ -109,9 +119,11 @@
 | 09.12.2021
 |===
 
+{/cut}
+
 Историю изменений версий можно посмотреть в разделе [История версий Kubernetes](#k8s_versions_history).
 
-## Поддержка функций сервиса в версиях Kubernetes <a id="k8s-features-list"></a>
+## {heading(Поддержка функций сервиса в версиях Kubernetes)[id=k8s-features-list]}
 
 Новые функции добавляются во все версии Kubernetes, за исключением случаев несовместимости функции и версии.
 
@@ -121,7 +133,7 @@
 |1.17.x–1.20.x
 |1.21.4–1.23.х
 |1.24.x–1.26.х
-|1.27.x–1.32.х
+|1.27.x–1.33.х
 
 |Настройки масштабирования групп узлов
 | ![](/ru/assets/check.svg "inline")
@@ -192,6 +204,14 @@
 |Изменения в Kubernetes
 |Изменения в сервисе Kubernetes aaS
 
+|1.33.1
+|[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
+|Обновление пакетов:
+
+- CoreDNS обновлено до 1.12.3.
+- Calico обновлено до 3.30.2.
+- Helm обновлен до 3.18.4
+
 |1.32.1
 |[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
 |![](/ru/assets/no.svg "inline")
@@ -211,6 +231,15 @@
 |1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
 | ![](/ru/assets/no.svg "inline")
+|===
+
+{cut(Предыдущие версии)}
+
+[cols="1,1,2", options="header"]
+|===
+|Версия Kubernetes
+|Изменения в Kubernetes
+|Изменения в сервисе Kubernetes aaS
 
 |1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
@@ -251,4 +280,6 @@
 |[Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
 
 Изменен [формат хранения логов](/ru/cases/cases-logs/case-fluent-bit)
+
 |===
+{/cut}
