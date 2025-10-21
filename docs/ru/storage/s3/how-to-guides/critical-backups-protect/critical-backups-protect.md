@@ -10,23 +10,15 @@ Object Storage позволяет защитить объекты, [заблок
 
 {tab(Для нового бакета)}
 
-1. Создайте новый бакет с возможностью блокировки объектов от удаления:
+Создайте новый бакет с возможностью блокировки объектов от удаления:
 
    {include(/ru/_includes/_s3-manage-bucket.md)[tags=create_bucket_block]}
-
-1. Включите версионирование:
-
-   {include(/ru/_includes/_s3-manage-bucket.md)[tags=version_bucket]}
 
 {/tab}
 
 {tab(Для существующего бакета)}
 
-1. В существующем бакете включите версионирование объектов:
-
-   {include(/ru/_includes/_s3-manage-bucket.md)[tags=version_bucket]}
-
-1. Сконфигурируйте блокировку объектов бакета:
+Сконфигурируйте блокировку объектов бакета:
 
    {include(/ru/_includes/_s3-manage-object.md)[tags=object_config_block]}
 
