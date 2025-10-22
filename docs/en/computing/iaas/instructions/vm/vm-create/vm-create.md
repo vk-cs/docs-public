@@ -35,6 +35,9 @@ The VM settings available for configuration may vary depending on the operating 
      - **Availability zone**: select the data center where the VM will be launched.
      - **Number of machines in configuration**: specify the required number of VM.
      - **Disk size**: specify the required VM disk size in gigabytes.
+
+         The maximum disk size is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152). To create a VM with a larger disk, use the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
+
      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](../../../concepts/about#disks).
      - **Operating system**: select the operating system or the image that you previously [created](../../images/images-manage#creating_an_image) or [imported](../../images/images-manage#importing_an_image) in VK Cloud.
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
@@ -95,13 +98,13 @@ The VM settings available for configuration may vary depending on the operating 
 
 2. Collect the data:
 
-   1. Get a list of available VM types and save the required `flavor_ID`:
+   1. Get a list of available VM types and save the required ID:
 
       ```console
       openstack flavor list
       ```
 
-   2. Get a list of available VM images and save the required `image_ID`:
+   2. Get a list of available VM images and save the required ID:
 
       ```console
       openstack image list
@@ -113,12 +116,12 @@ The VM settings available for configuration may vary depending on the operating 
       openstack security group list
       ```
 
-       - To create a Linux VM and connect to it via SSH, save the `security_group_ID` of the group `ssh` or `ssh+www`.
-       - To create a Windows VM and connect to it via RDP, save the `security_group_ID` of the group `rdp` or `rdp+www`.
+       - To create a Linux VM and connect to it via SSH, save the ID of the group `ssh` or `ssh+www`.
+       - To create a Windows VM and connect to it via RDP, save the ID of the group `rdp` or `rdp+www`.
 
       For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/instructions/secgroups).
 
-   4. Get a list of available networks and save the required `network_ID`:
+   4. Get a list of available networks and save the required ID:
 
       ```console
       openstack network list
@@ -127,7 +130,7 @@ The VM settings available for configuration may vary depending on the operating 
       - If the `ext-net` network is selected, an external IP address will be automatically assigned to the virtual machine.
       - If a private network is selected, then a floating [IP address can be assigned to the virtual machine after creation](/en/networks/vnet/instructions/ip/floating-ip).
 
-   5. Get a list of available key pairs and save `keypair_name`:
+   5. Get a list of available key pairs and save the required keypair name:
 
       ```console
       openstack keypair list
@@ -137,29 +140,37 @@ The VM settings available for configuration may vary depending on the operating 
          1. Generate a key:
 
             ```console
-            ssh-keygen -q -N ""
+            ssh-keygen -t rsa -b 2048 -f ~/.ssh/my_key -N ""
             ```
 
          2. Upload the key:
 
             ```console
-            openstack keypair create --public-key ~/.ssh/id_rsa.pub --type ssh <keypair_name>
+            openstack keypair create --public-key ~/.ssh/my_key.pub --type ssh <KEYPAIR_NAME>
             ```
 
 3. Create a boot disk:
 
    ```console
-   openstack volume create root-volume --size 10 --image <image_id> --availability-zone MS1 --bootable
+   openstack volume create root-volume --size <DISK_SIZE> --image <IMAGE_ID> --availability-zone MS1 --bootable
    ```
+
+   Here:
+
+   - `<DISK_SIZE>` — disk size in GB.
+
+      The maximum disk size is limited. For more information, see [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152).
+   
+   - `<IMAGE_ID>` — the image ID obtained earlier.
 
 4. Create a VM:
 
    ```console
-   openstack server create <VM_name>
-                           --volume <volume_id>
-                           --network <network_ID> \
-                           --flavor <flavor_ID> \
-                           --key-name <keypair_name> \
+   openstack server create <VM_NAME>
+                           --volume <VOLUME_ID>
+                           --network <NETWORK_ID> \
+                           --flavor <FLAVOR_ID> \
+                           --key-name <KEYPAIR_NAME> \
                            --availability-zone MS1
    ```
 
@@ -169,7 +180,7 @@ The VM settings available for configuration may vary depending on the operating 
 
    {/note}
 
-   After creating a VM, information about it will be displayed. Find the `adminPass` field and copy its value. You will need it to sign in to the server via the VNC console.
+   After creating a VM, information about it will be displayed. Find the `adminPass` field and save its value. You will need it to sign in to the server via the VNC console.
 
 5. Check the status of the created VM:
 

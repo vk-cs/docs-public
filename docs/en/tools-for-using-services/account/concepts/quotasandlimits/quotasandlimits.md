@@ -342,38 +342,44 @@ If the **Use configuration disk** option is disabled or the `--use-config-drive`
 | ![](/en/assets/check.svg "inline")
 
 |Size of one HDD
-|5 TB via VK Cloud management console.
+|5 TB via VK Cloud management console.
 
- 100 TB using OpenStack CLI
-|![](/ru/assets/no.svg "inline")
+ 100 TB using OpenStack CLI
+|Certain VK Cloud services may have their own disk size limits
 |![](/en/assets/check.svg "inline")
 
 |Size of one SSD
-|5 TB via VK Cloud management console.
+|5 TB via VK Cloud management console.
 
- 100 TB using OpenStack CLI
-|![](/ru/assets/no.svg "inline")
+ 100 TB using OpenStack CLI
+|Certain VK Cloud services may have their own disk size limits
 |![](/en/assets/check.svg "inline")
 
 |Size of one High-IOPS SSD disk
-|2 TB via VK Cloud management console.
+|2 TB via VK Cloud management console.
 
- 5 TB using OpenStack CLI
-|The limit (5 TB) is due to operational requirements. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
+ 10 TB using OpenStack CLI
+|A disk created over the limit (10 TB) is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
+
+Certain VK Cloud services may have their own disk size limits
 |![](/ru/assets/no.svg "inline")
 
 |Size of one High-IOPS HA SSD disk
-|2 TB via VK Cloud management console.
+|2 TB via VK Cloud management console.
 
- 5 TB using OpenStack CLI
-|The limit (5 TB) is due to operational requirements. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
+ 10 TB using OpenStack CLI
+|A disk created over the limit (10 TB) is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
+
+Certain VK Cloud services may have their own disk size limits
 |![](/ru/assets/no.svg "inline")
 
 |Size of one image
 |100 GB via VK Cloud management console.
 
  500 GB using OpenStack CLI
-|This is a hard limit for the Glance service. If you need to download a larger image, use the [instruction](/en/storage/s3/how-to-guides/load-large-image)
+|This is a hard limit for the Glance service.
+
+If you need to download a larger image, use the [instruction](/en/storage/s3/how-to-guides/load-large-image)
 |![](/ru/assets/no.svg "inline")
 
 |Total volume of images
@@ -684,7 +690,7 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 | Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
 | Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 
-The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
+The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
 
 ### Object Storage
 
@@ -714,7 +720,7 @@ There are no quotas for the Object Storage service. The use of these services is
 
 | Number of objects in the bucket
 | 32 GB, 320 TB
-| 32 GB for a regular file, 320 TB for a multipart
+| 32 GB for a regular file, 320 TB for a multipart
 | ![](/en/assets/check.svg "inline")
 
 | Size of one bucket
