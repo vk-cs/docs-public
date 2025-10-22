@@ -1,18 +1,18 @@
 [
   {
     "group": {
-      "title": "Private Cloud",
+      "title": " ",
       "items": [
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud",
-          "title": "Private Cloud documentation",
+          "title": "VK Private Cloud documentation",
           "description": "A platform for building a private cloud in a customer's data center",
           "icon": "/en/on-premises/assets/private-cloud-icon.svg",
           "iconMobile": "/en/on-premises/assets/private-cloud-mobile-icon.svg"
         },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud-knowledge-base",
-          "title": "Private Cloud knowledge base",
+          "title": "VK Private Cloud knowledge base",
           "description": "Instructions for solving typical tasks and how-to guides",
           "icon": "/en/on-premises/assets/knowledge-base-icon.svg",
           "iconMobile": "/en/on-premises/assets/knowledge-base-mobile-icon.svg"
@@ -22,11 +22,11 @@
   },
   {
     "group": {
-      "title": "Standalone products",
+      "title": " ",
       "items": [
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/dev-platform",
-          "title": "Dev Platform",
+          "title": "VK Dev Platform",
           "description": "A complete solution for building internal development platforms",
           "icon": "/en/on-premises/assets/dev-platform-icon.svg",
           "iconMobile": "/en/on-premises/assets/dev-platform-mobile-icon.svg"
@@ -40,7 +40,7 @@
         },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/s3",
-          "title": "Object Storage in private installation",
+          "title": "VK Object Storage",
           "description": "Fast and reliable S3-compatible object storage",
           "icon": "/en/on-premises/assets/cloud-storage-icon.svg",
           "iconMobile": "/en/on-premises/assets/cloud-storage-mobile-icon.svg"
