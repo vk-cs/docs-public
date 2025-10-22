@@ -48,6 +48,8 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
    openstack volume create --type <type disk ID> --size <size> --availability-zone <disk availability zone> <disk name>
    ```
 
+   The maximum disk size is limited. For more information, see [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152).
+
    Additional command parameters:
 
    - `--image <image ID>` — ID of the image from which the disk will be created;
@@ -137,7 +139,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 ## Increasing disk size without rebooting
 
-1. [Increase](#change_disk_size) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
+1. [Increase](#change_disk_size) the virtual disk size in your VK Cloud management console or via OpenStack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
 1. Increase the size of disk partitions in the VM operating system:
 
    {tabs}

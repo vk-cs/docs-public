@@ -37,6 +37,9 @@
      - **Зона доступности**: выберите дата-центр, где будет запущена ВМ.
      - **Количество машин в конфигурации**: укажите нужное число ВМ.
      - **Размер диска**: укажите нужный размер диска ВМ в гигабайтах.
+
+         Максимальный размер диска [ограничен](/ru/tools-for-using-services/account/concepts/quotasandlimits#limity_bez_kvot_b217dc78). Для создания ВМ с диском большего объема используйте [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+
      - **Тип диска**: выберите [тип диска](../../../concepts/data-storage/disk-types#disk_types).
      - **Операционная система**: выберите [версию операционной системы](../../../concepts/oper-system) или образ, который вы ранее [создали](../../images/images-manage#sozdanie_obraza) или [импортировали](../../images/images-manage#import_obraza) в VK Cloud.
      - **Теги**: при необходимости [укажите тег](../vm-manage#prisvoenie_tegov) для ВМ или создайте новый.
@@ -97,13 +100,13 @@
 
 2. Соберите данные:
 
-   1. Получите список доступных типов ВМ и сохраните нужный `flavor_ID`:
+   1. Получите список доступных типов ВМ и сохраните нужный идентификатор:
 
       ```console
       openstack flavor list
       ```
 
-   2. Получите список доступных образов ВМ и сохраните нужный `image_ID`:
+   2. Получите список доступных образов ВМ и сохраните нужный идентификатор:
 
       ```console
       openstack image list
@@ -115,12 +118,12 @@
       openstack security group list
       ```
 
-       - Для создания ВМ Linux и подключения к ней по SSH сохраните `security_group_ID` группы `ssh` или `ssh+www`.
-       - Для создания ВМ Windows и подключения к ней по RDP сохраните `security_group_ID` группы `rdp` или `rdp+www`.
+       - Для создания ВМ Linux и подключения к ней по SSH сохраните идентификатор группы `ssh` или `ssh+www`.
+       - Для создания ВМ Windows и подключения к ней по RDP сохраните идентификатор группы `rdp` или `rdp+www`.
 
       Подробнее про настройку правил сетевого доступа в разделе [Управление правилами файервола](/ru/networks/vnet/instructions/secgroups).
 
-   4. Получите список доступных сетей и сохраните нужный `network_ID`:
+   4. Получите список доступных сетей и сохраните нужный идентификатор:
 
       ```console
       openstack network list
@@ -129,7 +132,7 @@
       - Если выбрана сеть `ext-net`, то виртуальной машине будет автоматически назначен внешний IP-адрес.
       - Если выбрана приватная сеть, то виртуальной машине после создания можно [назначить Floating IP-адрес](/ru/networks/vnet/instructions/ip/floating-ip).
 
-   5. Получите список доступных ключевых пар и сохраните `keypair_name`:
+   5. Получите список доступных ключевых пар и сохраните имя нужной ключевой пары:
 
       ```console
       openstack keypair list
@@ -139,29 +142,38 @@
          1. Сгенерируйте ключ:
 
             ```console
-            ssh-keygen -q -N ""
+            ssh-keygen -t rsa -b 2048 -f ~/.ssh/my_key -N ""
             ```
 
          2. Загрузите ключ:
 
             ```console
-            openstack keypair create --public-key ~/.ssh/id_rsa.pub --type ssh <keypair_name>
+            openstack keypair create --public-key ~/.ssh/my_key.pub --type ssh <ИМЯ_КЛЮЧЕВОЙ_ПАРЫ>
             ```
 
 3. Создайте загрузочный диск:
 
    ```console
-   openstack volume create root-volume --size 10 --image <image_id> --availability-zone MS1 --bootable
+   openstack volume create root-volume --size <ОБЪЕМ_ДИСКА> --image <ID_ОБРАЗА> --availability-zone MS1 --bootable
    ```
+
+   Здесь:
+   
+   - `<ОБЪЕМ_ДИСКА>` — размер диска в ГБ.
+
+      Максимальный размер ограничен. Подробнее — в разделе [Квоты и лимиты](/ru/tools-for-using-services/account/concepts/quotasandlimits#limity_bez_kvot_b217dc78).
+   
+   - `<ID_ОБРАЗА>` — идентификатор образа, полученный ранее.
+
 
 4. Создайте ВМ:
 
    ```console
-   openstack server create <VM_name>
-                           --volume <volume_id>
-                           --network <network_ID> \
-                           --flavor <flavor_ID> \
-                           --key-name <keypair_name> \
+   openstack server create <ИМЯ_ВМ>
+                           --volume <ID_ДИСКА>
+                           --network <ID_СЕТИ> \
+                           --flavor <ID_ШАБЛОНА_КОНФИГУРАЦИИ> \
+                           --key-name <ИМЯ_КЛЮЧЕВОЙ_ПАРЫ> \
                            --availability-zone MS1
    ```
 
@@ -171,7 +183,7 @@
 
    {/note}
 
-   После создания виртуальной машины отобразится информация о ней. Найдите поле `adminPass` и скопируйте его значение. Оно понадобится для входа на сервер через консоль VNC.
+   После создания виртуальной машины отобразится информация о ней. Найдите поле `adminPass` и сохраните его значение. Оно понадобится для входа на сервер через консоль VNC.
 
 5. Проверьте состояние созданной ВМ:
 
