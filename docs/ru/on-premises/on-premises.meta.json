@@ -1,9 +1,9 @@
 {
-  "title": "Частные инсталляции",
+  "title": "VK Cloud (On-Premise)",
   "decorator": "group-tiles",
   "hidden": true,
   "sectionTitle": "",
-  "metaTitle": "Частные инсталляции | Документация VK Cloud",
-  "metaDescription": "Документация VK Cloud для частных инсталляций",
+  "metaTitle": "VK Cloud (On-Premise) | Документация VK Cloud",
+  "metaDescription": "Документация VK Cloud для поставки on-premise",
   "uuid": "da60d51a-abc5-42f6-b98e-57ccbf19e320"
 }

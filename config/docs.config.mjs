@@ -42,26 +42,26 @@ export const config = {
         relatedSites: {
             ru: [
                 {
-                    title: 'Публичное облако',
+                    title: 'On-Cloud',
                     fullLink: 'https://cloud.vk.com/docs',
                     selected: true,
                     iconPartialPath: '/ru/assets/public-cloud-icon.svg',
                 },
                 {
-                    title: 'Частные инсталляции',
+                    title: 'On-Premise',
                     asPath: '/on-premises',
                     iconPartialPath: '/ru/assets/private-cloud-icon.svg',
                 },
             ],
             en: [
                 {
-                    title: 'Public Cloud',
+                    title: 'On-Cloud',
                     fullLink: 'https://cloud.vk.com/docs',
                     selected: true,
                     iconPartialPath: '/ru/assets/public-cloud-icon.svg',
                 },
                 {
-                    title: 'Private installations',
+                    title: 'On-Premise',
                     asPath: '/on-premises',
                     iconPartialPath: '/ru/assets/private-cloud-icon.svg',
                 },
