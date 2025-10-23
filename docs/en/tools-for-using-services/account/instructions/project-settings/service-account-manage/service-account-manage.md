@@ -148,9 +148,9 @@ This is a group operation: if necessary, you can delete several service accounts
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Make sure your [project role](/en/tools-for-using-services/account/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/tools-for-using-services/account/concepts/service-accounts). Deleteng service users is available for the following roles:
 
-- Project owner
-- Superadministrator
-- User access administrator
+    - Project owner
+    - Superadministrator
+    - User access administrator
 
 1. Go to **Manage access**, then go to the **Service users** tab.
 
@@ -158,9 +158,9 @@ This is a group operation: if necessary, you can delete several service accounts
 
 1. Delete a service account in one of the ways:
 
-   - Click ![](/ru/assets/more-icon.svg "inline") for the required service account and select **Delete**.
-   - Select the required service account using its checkbox and click the **Delete** button.
-   - Click the name of the required service account, click ![](/ru/assets/more-icon.svg "inline") in the service account details and select **Delete**.
+    - Click ![](/ru/assets/more-icon.svg "inline") for the required service account and select **Delete**.
+    - Select the required service account using its checkbox and click the **Delete** button.
+    - Click the name of the required service account, click ![](/ru/assets/more-icon.svg "inline") in the service account details and select **Delete**.
 
 1. Confirm the deletion.
 
