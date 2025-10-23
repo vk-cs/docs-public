@@ -6,41 +6,49 @@ In addition to users, [service accounts](../service-accounts) can be added to a 
 
 You can [view](../../instructions/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the management console.
 
+Each role has a technical name that is used to manage the project and services via [API](../../../api) and [Terraform](../../../terraform).
+
 ## General project management roles
 
 [cols="1,3", options="header"]
 |===
 
 | Role
+| Technical name
 | Description
 
 | Project owner
+| `mcs_owner`
 | A user with the widest set of permissions.
 
 A Project owner is a user who created the project or for whom it was created automatically by the platform during the account registration.
 
-There can be only one Project owner in a project. This role cannot be assigned to an existing user or to a member that is being invited.
+There can be only one Project owner in a project. This role cannot be assigned to an existing user or to a member that is being invited
 
 | Superadministrator
-| A user with the same permissions as the Project owner, including linking a card and making payments.
+| `mcs_co_owner`
+| A user with the same permissions as the Project owner, including linking a card and making payments
 
 | Project administrator
+| `mcs_admin`
 | A user who can create and edit objects in all services.
 
 A Project administrator cannot:
 
 - activate services
 - make payments (can only view the project balance)
-- invite members to the project.
+- invite members to the project
 
 | User access administrator
+| `mcs_admin_security`
 | A role intended for [working with project members](../../instructions/project-settings/access-manage) on the access management page.
 
 A User access administrator can invite, delete project members, and change the roles assigned to them.
 
-This role has no access to services and to project balance information.
+This role has no access to services and to project balance information
 
 | Billing administrator
+| `mcs_admin_billing`
 | A role intended for project balance management.
 
 A billing administrator can:
@@ -48,12 +56,13 @@ A billing administrator can:
 - [link](/en/intro/billing/instructions/add-card) a card to the project, if not linked yet;
 - make a [payment](/en/intro/billing/instructions/payment) or configure balance auto-completion.
 
-This role has no access to services and to the list of project members.
+This role has no access to services and to the list of project members
 
 | Viewer
+| `mcs_viewer`
 | A user who has read access to all project information, including the members list, services, project balance, and expenses details.
 
-A viewer cannot create any objects or edit any settings, except the settings of their account.
+A viewer cannot create any objects or edit any settings, except the settings of their account
 
 |===
 
@@ -74,9 +83,11 @@ All operations available to specialized roles are also available to Project owne
 |===
 
 | Role
+| Technical name
 | Description
 
 | Virtual machine administrator
+| `mcs_admin_vm`
 | A user with this role can perform basic operations in the Cloud Servers service.
 
 However, this role has only read permissions for:
@@ -84,12 +95,14 @@ However, this role has only read permissions for:
 - backup plans
 - file storages.
 
-This user can also create and edit rule groups (firewalls) in the Virtual networks service.
+This user can also create and edit security groups in the Virtual networks service
 
 | Junior VM administrator
-| A user with this role can perform the same operations as the virtual machine administrator, except for creating, editing, and deleting rule groups in the firewall settings.
+| `mcs_admin_vm_junior`
+| A user with this role can perform the same operations as the virtual machine administrator, except for creating, editing, and deleting security groups
 
 | Virtual machine operator
+| `mcs_operator_vm`
 | A user with this role can work on a virtual machine, but cannot manage its settings.
 
 The VM operator can:
@@ -99,25 +112,37 @@ The VM operator can:
 - Connect to a VM via [SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) or [RDP](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
 - View a VM configuration and network settings.
 
-The VM operator cannot create backups.
+The VM operator cannot create backups
 
 | Network administrator
-| A user with this role can perform a full set of operations in the Virtual networks and DNS services.
+| `mcs_admin_network`
+| A user with this role can perform a full set of operations in the Virtual networks and DNS services
 
 | Network security administrator
+| `mcs_admin_network_security`
 | A user with this role has read access to the Virtual networks and DNS services.
 
-He can create and edit only rule groups (firewalls).
+Network security administrators can create and edit only security rules and groups
 
 | Internal network administrator
+| `mcs_admin_network_objects`
 | A user with this role:
 
 - has read access to the Virtual networks and DNS services
 - can create and edit virtual networks and subnets, routers
-- can add floating IP addresses to the project.
+- can add floating IP addresses to the project
 
-| Kubernetes administrator, operator, and auditor
-| For detailed information about the permissions of these roles, see [Roles for the Cloud Containers service and their permissions](#roles_permissions_kubernetes).
+| Kubernetes administrator
+| `mcs_k8s_admin`
+| For detailed information about the permissions of the role, see [Roles for the Cloud Containers service and their permissions](#roles_permissions_kubernetes)
+
+| Kubernetes operator
+| `mcs_k8s_editor`
+| For detailed information about the permissions of the role, see [Roles for the Cloud Containers service and their permissions](#roles_permissions_kubernetes)
+
+| Kubernetes auditor
+| `mcs_k8s_viewer`
+| For detailed information about the permissions of the role, see [Roles for the Cloud Containers service and their permissions](#roles_permissions_kubernetes)
 
 |===
 
