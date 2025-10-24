@@ -24889,49 +24889,49 @@
   },
   {
     "source": "/ru/manage/alerting/notification",
-    "destination": "/ru/monitoring-services/alerting/notification",
+    "destination": "/ru/monitoring-services/alerting/instructions/notification",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/notification/notification-add",
-    "destination": "/ru/monitoring-services/alerting/notification",
+    "destination": "/ru/monitoring-services/alerting/instructions/notification",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/notification/notification-edit",
-    "destination": "/ru/monitoring-services/alerting/notification",
+    "destination": "/ru/monitoring-services/alerting/instructions/notification",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/triggers",
-    "destination": "/ru/monitoring-services/alerting/triggers",
+    "destination": "/ru/monitoring-services/alerting/instructions/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/triggers/triggers-add",
-    "destination": "/ru/monitoring-services/alerting/triggers",
+    "destination": "/ru/monitoring-services/alerting/instructions/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/triggers/trigger-edit",
-    "destination": "/ru/monitoring-services/alerting/triggers",
+    "destination": "/ru/monitoring-services/alerting/instructions/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/triggers/trigger-start",
-    "destination": "/ru/monitoring-services/alerting/triggers",
+    "destination": "/ru/monitoring-services/alerting/instructions/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/incidents",
-    "destination": "/ru/monitoring-services/alerting/incidents",
+    "destination": "/ru/monitoring-services/alerting/instructions/incidents",
     "permanent": false,
     "locale": false
   },
@@ -32666,6 +32666,24 @@
   {
     "source": "/ru/tools-for-using-services/api/api-spec/api-dns",
     "destination": "/ru/tools-for-using-services/api/api-spec/network-api/api-dns",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/monitoring-services/alerting/notification",
+    "destination": "/ru/monitoring-services/alerting/instructions/notification",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/monitoring-services/alerting/triggers",
+    "destination": "/ru/monitoring-services/alerting/instructions/triggers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/monitoring-services/alerting/incidents",
+    "destination": "/ru/monitoring-services/alerting/instructions/incidents",
     "permanent": false,
     "locale": false
   }
