@@ -32,8 +32,8 @@
 
 Чтобы получать уведомления о работе кластера:
 
-1. [Создайте](/ru/monitoring-services/alerting/notification/notification-add) канал уведомлений.
-1. [Настройте](/ru/monitoring-services/alerting/triggers/triggers-add) правила, при каких условиях будут отправляться уведомления по созданному каналу связи.
+1. [Создайте](/ru/monitoring-services/alerting/instructions/notification#notification_add) канал уведомлений.
+1. [Настройте](/ru/monitoring-services/alerting/instructions/triggers#triggers_add) правила, при каких условиях будут отправляться уведомления по созданному каналу связи.
 
 ## Использование журнала событий
 

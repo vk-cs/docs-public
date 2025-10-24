@@ -9,13 +9,13 @@
                     "link": "/ru/monitoring-services/alerting/about"
                 },
                 {
-                    "link": "/ru/monitoring-services/alerting/notification"
+                    "link": "/ru/monitoring-services/alerting/instructions/notification"
                 },
                 {
-                    "link": "/ru/monitoring-services/alerting/triggers"
+                    "link": "/ru/monitoring-services/alerting/instructions/triggers"
                 },
                 {
-                    "link": "/ru/monitoring-services/alerting/incidents"
+                    "link": "/ru/monitoring-services/alerting/instructions/incidents"
                 }
             ]
         }

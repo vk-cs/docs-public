@@ -24895,13 +24895,13 @@
   },
   {
     "source": "/ru/manage/alerting/notification/notification-add",
-    "destination": "/ru/monitoring-services/alerting/notification/notification-add",
+    "destination": "/ru/monitoring-services/alerting/notification",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/notification/notification-edit",
-    "destination": "/ru/monitoring-services/alerting/notification/notification-edit",
+    "destination": "/ru/monitoring-services/alerting/notification",
     "permanent": false,
     "locale": false
   },
@@ -24913,19 +24913,19 @@
   },
   {
     "source": "/ru/manage/alerting/triggers/triggers-add",
-    "destination": "/ru/monitoring-services/alerting/triggers/triggers-add",
+    "destination": "/ru/monitoring-services/alerting/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/triggers/trigger-edit",
-    "destination": "/ru/monitoring-services/alerting/triggers/trigger-edit",
+    "destination": "/ru/monitoring-services/alerting/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/alerting/triggers/trigger-start",
-    "destination": "/ru/monitoring-services/alerting/triggers/trigger-start",
+    "destination": "/ru/monitoring-services/alerting/triggers",
     "permanent": false,
     "locale": false
   },

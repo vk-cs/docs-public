@@ -12,6 +12,6 @@
 
 После развертывания инстанса БД останется создать на нем необходимые базы данных, наполнить их содержимым, подключить к ним свои приложения, настроить доступы.
 
-Для PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C автоматически подключается встроенный [мониторинг](../../monitoring/postgresql) VK Cloud.
+Для PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C автоматически подключается встроенный [мониторинг](/ru/dbs/dbaas/monitoring/postgresql) VK Cloud.
 
 Для некоторых типов СУБД доступны [расширения](../extensions), их можно установить через личный кабинет.
