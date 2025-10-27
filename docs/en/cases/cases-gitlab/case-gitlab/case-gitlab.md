@@ -55,7 +55,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
     {note:info}
 
-    There is no need for the operating system firewall, since the [VK Cloud firewall controls](/en/networks/vnet/concepts/traffic-limiting) the incoming and outbound traffic on the VM.
+    There is no need for the operating system firewall, since the [VK Cloud security groups](/en/networks/vnet/concepts/traffic-limiting) control the incoming and outbound traffic on the VM.
 
     {/note}
 
@@ -102,7 +102,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
     {note:info}
 
-    The number `35242` is used as an example. If you are going to use a different number, open it for SSH connections in the VM firewall settings. More details in the [Managing firewall rules](/en/networks/vnet/instructions/secgroups) section.
+    The number `35242` is used as an example. If you are going to use a different number, open it for SSH connections in the VM security groups settings. More details in the [Security groups](/en/networks/vnet/instructions/secgroups) section.
 
     {/note}
 

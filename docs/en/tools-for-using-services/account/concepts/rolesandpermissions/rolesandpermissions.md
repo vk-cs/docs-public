@@ -10,7 +10,7 @@ Each role has a technical name that is used to manage the project and services v
 
 ## General project management roles
 
-[cols="1,3", options="header"]
+[cols="1,1,3", options="header"]
 |===
 
 | Role
@@ -79,7 +79,7 @@ For detailed information about the permissions of these roles, see [Permissions 
 
 All operations available to specialized roles are also available to Project owner, Superadministrator, and Project administrator.
 
-[cols="1,3", options="header"]
+[cols="1,1,3", options="header"]
 |===
 
 | Role

@@ -199,9 +199,9 @@ The DB instance is charged and consumes computational resources. After completin
    - **Network:** `Create new network`.
    - **Subnet address:** `10.0.1.0/24`.
    - **Assign external IP:** make sure that this option is enabled.
-   - **Настройки Firewall:** select `ssh` from the drop-down list.
+   - **Firewall Settings:** select `ssh` from the drop-down list.
 
-     The resulting list of the secrity groups should look like: `default`, `ssh`.
+     The resulting list of the security groups should look like: `default`, `ssh`.
 
    - **Create replica:** make sure that this option is disabled.
    - **SSH access key:** `Create a new key`.

@@ -12,7 +12,7 @@ This instruction will help you deploy 1C-Bitrix: Site management of the latest v
    - operating system: Ubuntu 22.04;
    - network: `network1` with subnet `10.0.0.0/24`;
    - assign a public IP address. The example will use `87.239.105.191`;
-   - security groups (firewall settings): `default`, `ssh+www`.
+   - security groups: `default`, `ssh+www`.
 
 1. [Create DB instance](/en/dbs/dbaas/instructions/create):
 

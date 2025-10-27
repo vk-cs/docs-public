@@ -54,7 +54,7 @@ The VM settings available for configuration may vary depending on the operating 
 
    - **Firewall settings**: select the appropriate security groups.
 
-      To connect via SSH, add the group `ssh` or `ssh+www`. For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/instructions/secgroups).
+      To connect via SSH, add the group `ssh` or `ssh+www`. For more information about configuring network access rules, see [Security groups](/en/networks/vnet/instructions/secgroups).
 
    - (Optional) **Assign external IP**: enable the option and specify the IP to be able to connect to the VM from the Internet. The option is available if the VM is on a network with an Internet connection. The option is enabled and automatically configured the IP address if the VM is located on an external network (ext-net).
 
@@ -119,7 +119,7 @@ The VM settings available for configuration may vary depending on the operating 
        - To create a Linux VM and connect to it via SSH, save the ID of the group `ssh` or `ssh+www`.
        - To create a Windows VM and connect to it via RDP, save the ID of the group `rdp` or `rdp+www`.
 
-      For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/instructions/secgroups).
+      For more information about configuring network access rules, see [Security groups](/en/networks/vnet/instructions/secgroups).
 
    4. Get a list of available networks and save the required ID:
 

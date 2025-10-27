@@ -109,7 +109,7 @@ Once you bind IP addresses of load balancers to an anycast IP address, a health 
 
 {/note}
 
-For the virtual machines specified in the check, [allow](../../secgroups) incoming traffic from the IP address `169.254.169.100/32` on the specified port. This is a technical VK Cloud address for service availability checks. If the firewall restricts access to the VM port from this address, the anycast IP service will mark the VM as unavailable and stop routing traffic to it.
+For the virtual machines specified in the check, [allow](../../secgroups) incoming traffic from the IP address `169.254.169.100/32` on the specified port. This is a technical VK Cloud address for service availability checks. If a security group rule restricts access to the VM port from this address, the anycast IP service will mark the VM as unavailable and stop routing traffic to it.
 
 ## {heading(Modifying a health check rule)[id=edit-healthcheck]}
 

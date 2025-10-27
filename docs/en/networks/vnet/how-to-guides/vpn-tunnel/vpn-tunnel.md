@@ -302,7 +302,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
     To do this, open the VPN page `vkcloud-client-vpn` in your management console and go to the **Tunnel Settings** tab. The VPN must be in `ACTIVE` status.
 
-1. Create a firewall rule group `icmp` to allow ICMP traffic.
+1. Create a security group `icmp` to allow ICMP traffic.
 
     In this group, create an inbound rule:
 
@@ -317,12 +317,12 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
       - in the network `clientNet`, subnet `clientSubnet`;
       - with a floating IP address to connect to it via SSH;
-      - with firewall rule groups `default`, `ssh`, `icmp`.
+      - with security groups `default`, `ssh`, `icmp`.
 
     - `vkcloudVM`:
       - in the network `vkcloudNet`, subnet `vkcloudSubnet`;
       - with a floating IP address to connect to it via SSH;
-      - with firewall rule groups `default`, `ssh`, `icmp`.
+      - with security groups `default`, `ssh`, `icmp`.
 
 1. Determine the private IP addresses of the virtual machines on the respective subnets. Let be:
 
