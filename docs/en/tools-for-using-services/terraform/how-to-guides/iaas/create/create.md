@@ -109,7 +109,7 @@ The resources arguments are described in the [Terraform provider documentation](
 
 To connect to the VM via SSH, assign the `ssh` [preset security group](/ru/networks/vnet/concepts/traffic-limiting#secgroups) to the VM. This group is in the project if VMs on Linux OS with SSH access were previously created.
 
-If the project does not have the `ssh` security group, describe it in the configuration file: [create](../../vnet/secgroups) the `secgroup.tf` file and add the description of the `ssh` security group with firewall rules to it.
+If the project does not have the `ssh` security group, describe it in the configuration file: [create](../../vnet/secgroups) the `secgroup.tf` file and add the description of the `ssh` security group with rules to it.
 
 ## 3. Create file with VM description
 

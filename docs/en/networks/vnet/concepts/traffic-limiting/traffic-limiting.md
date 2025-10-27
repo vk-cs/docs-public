@@ -8,9 +8,9 @@ For example, you can allow:
 - Only traffic from the virtual machine that uses the OpenStack port.
 - All traffic that passes through the virtual machine (`0.0.0.0.0\0`). This can be useful when the virtual machine is involved in processing traffic and is an intermediate network node (such as a router, firewall or VPN gateway).
 
-## {heading(Firewall and security groups)[id=secgroups]}
+## {heading(Security groups)[id=secgroups]}
 
-The firewall limits traffic in virtual networks according to specified security groups. These groups contain rules for processing incoming and outgoing traffic and work on the principle "everything that is not allowed is prohibited".
+Security groups are assigned to instance ports and restrict traffic in virtual networks. These groups contain rules for processing incoming and outgoing traffic and work on the principle "everything that is not allowed is prohibited".
 
 When creating entities in your mamagement console, a security group is assigned to each port. This ensures traffic security within the platform.
 
@@ -43,7 +43,7 @@ In your management console, you can use preset security groups with the followin
 |===
 |Group name
 |Description
-|Firewall rules
+|Security group rules
 
 |**ssh**
 |Allows SSH traffic
@@ -89,7 +89,7 @@ There are no preset groups when working via OpenStack CLI and Terraform. You can
 
 ## {heading(Custom security groups)[id=custom_sg]}
 
-You can create any other traffic restrictions. To do this, [create](../../instructions/secgroups#create_a_security_group) security groups with specific firewall rules and [assign](../../instructions/secgroups#assign-rule) them to ports.
+You can create any other traffic restrictions. To do this, [create](../../instructions/secgroups#create_a_security_group) security groups with specific security group rules and [assign](../../instructions/secgroups#assign-rule) them to ports.
 
 For custom security groups to work correctly:
 

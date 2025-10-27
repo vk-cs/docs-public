@@ -4,7 +4,7 @@ After completing all the quick start steps, you will:
 
 1. Set up Internet access.
 1. Organize the basic network connectivity of several virtual machines.
-1. Learn how to assign groups of firewall rules.
+1. Learn how to assign security group rules.
 
 ## Step 1: Create a network and subnet
 

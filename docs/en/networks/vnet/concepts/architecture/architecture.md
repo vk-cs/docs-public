@@ -15,7 +15,7 @@ On the NFV layer, the following entities are implemented with SDN:
 
 - [Standard routers](../router) to connect multiple private networks to each other and to provide internet access.
 - [Load balancers](/en/networks/balancing/concepts/load-balancer) to distribute incoming traffic across multiple instances of VK Cloud platform services.
-- [Firewall](../traffic-limiting) with rule groups to restrict traffic to specific platform services. Rule groups are assigned at the individual port level.
+- [Security groups](../traffic-limiting) with rules to restrict traffic to specific platform services. Rule groups are assigned at the individual port level.
 - [VPN](../vpn) for connecting VK Cloud subnets with the client subnets.
 
 [Advanced routers](../router) are implemented using specialized virtual machines without SDN involvement.

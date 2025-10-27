@@ -31,7 +31,7 @@ Learn more about networks and ports in the sections [Managing networks and subne
       - **DNS-name**: the name by which you can access the VM via [private DNS](/en/networks/dns/private-dns).
       - **Set IP-address**: enable to set a specific IP address from the subnet address pool.
 
-   3. **Firewall settings**: specify the necessary security groups. For more information, see [Managing firewall rules](/en/networks/vnet/instructions/secgroups).
+   3. **Firewall settings**: specify the necessary security groups. For more information, see [Security groups](/en/networks/vnet/instructions/secgroups).
 
 7. Click **Save**.
 

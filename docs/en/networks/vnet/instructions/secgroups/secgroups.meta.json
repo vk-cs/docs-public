@@ -1,8 +1,8 @@
 {
-    "title": "Firewall rules",
+    "title": "Security groups",
       "shortDescription": "How to create and delete security groups and more",
-      "metaDescription": "",
-    "sectionTitle": "Firewall rules",
+      "metaDescription": "How to create, edit and delete security groups and assign security group rules to ports and instances in VK Cloud",
+    "sectionTitle": "Security groups",
     "icon": "",
     "weight": 3,
     "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",

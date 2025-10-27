@@ -55,7 +55,7 @@ When a Kubernetes cluster is created, several network objects are created for it
 
 A dedicated TCP load balancer is created for each cluster, which handles incoming requests to the Kubernetes API for all master nodes. This load balancer is used to connect to and manage the cluster.
 
-### Firewall rules
+### Security group rules
 
 Three groups of rules are created for each cluster:
 

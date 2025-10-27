@@ -13,7 +13,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
    - operating system: Ubuntu 22.04;
    - network: `network1` with subnet `10.0.0.0/24`;
    - assign a public IP address. The example will use `211.243.95.137`;
-   - security groups (firewall settings): `default`, `ssh+www`.
+   - security groups: `default`, `ssh+www`.
 
 1. [Create DB instance](/ru/dbs/dbaas/instructions/create/create-single-replica):
 

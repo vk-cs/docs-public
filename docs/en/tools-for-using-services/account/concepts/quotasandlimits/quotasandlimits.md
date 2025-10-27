@@ -623,7 +623,7 @@ Even if the quota for the total number of subnets in the project has been increa
 
 | Number of security rules in the project
 | **Neutron firewall rules**
-| `ecurity_group_rule`
+| `security_group_rule`
 | 200 pcs.
 | not limited
 | ![](/en/assets/no.svg "inline")

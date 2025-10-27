@@ -1,8 +1,8 @@
 {note:info}
 
-The ability to exchange traffic in subnets is affected not only by network topology, but also by firewall security groups.
+The ability to exchange traffic in subnets is affected not only by network topology, but also by [security groups](/en/networks/vnet/concepts/traffic-limiting#secgroups).
 
-To make it easier to explain how routers work, it is further assumed that the firewall lets all traffic through.
+To make it easier to explain how routers work, it is further assumed that the security groups let all traffic through.
 
 {/note}
 

@@ -523,7 +523,7 @@ To check the firewall settings:
 
    If access has appeared, adjust the firewall rules and enable it again.
 
-   If access does not appear, turn on the firewall again and [check the settings of the VK Cloud firewall security groups](#4_check_the_settings_of_the_vk_cloud_firewall_security_groups).
+   If access does not appear, turn on the firewall again and [check the settings of the VK Cloud_security groups](#4_check_the_settings_of_the_vk_cloud_security_groups).
 
 To turn on the firewall again:
 
@@ -559,19 +559,19 @@ To turn on the firewall again:
     
     {/tabs}
 
-## 4. Check the settings of the VK Cloud firewall security groups
+## 4. Check the settings of the VK Cloud security groups
 
 Incorrectly configured security groups can prevent SSH connection, even if there are no obstacles at the VM level.
 
-Next, it will be shown how to temporarily configure the firewall rules so as to allow all traffic. This will help to make sure that the problem is in the firewall.
+Next, it will be shown how to temporarily configure the security group rules so as to allow all traffic. This will help to make sure that the problem is in the security group.
 
 {note:warn}
 
-After the SSH connection problem is localized, re-configure the firewall rules (with the necessary adjustments). If all traffic is allowed, the security of the VM will decrease.
+After the SSH connection problem is localized, re-configure the security group rules (with the necessary adjustments). If all traffic is allowed, the security of the VM will decrease.
 
 {/note}
 
-To check the firewall settings:
+To check the security group settings:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the necessary VM is located.
@@ -590,11 +590,11 @@ To check the firewall settings:
 
 1. Check for SSH access to the VM.
 
-    If access has appeared, adjust the firewall security groups and add them again instead of the `all` group.
+    If access has appeared, adjust the security groups and add them again instead of the `all` group.
 
-    If access does not appear, go back to the original firewall settings and [contact technical support](#5_contact_technical_support).
+    If access does not appear, go back to the original security group settings and [contact technical support](#5_contact_technical_support).
 
-To configure firewall rules again:
+To configure security group rules again:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the necessary VM is located.
@@ -611,7 +611,7 @@ To configure firewall rules again:
 
     {note:info}
 
-    In order for the firewall to pass the traffic of an SSH service running on the standard port `22`, it is enough to select the rules `default` and `ssh` («only ssh allowed»).
+    In order for the rules to pass the traffic of an SSH service running on the standard port `22`, it is enough to select the rules `default` and `ssh` («only ssh allowed»).
 
     {/note}
 
