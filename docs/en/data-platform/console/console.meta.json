@@ -1,8 +1,8 @@
 {
-  "title": "Data Platform UI Console",
-  "shortDescription": "Service to simplify work with Data Platform in the VK Cloud infrastructure",
-  "metaDescription": "Service to simplify work with Data Platform in the VK Cloud infrastructure",
-  "sectionTitle": "Data Platform UI Console",
+  "title": "VK Data Platform UI Console",
+  "shortDescription": "Service to simplify work with VK Data Platform in the VK Cloud infrastructure",
+  "metaDescription": "Service to simplify work with VK Data Platform in the VK Cloud infrastructure",
+  "sectionTitle": "VK Data Platform UI Console",
   "icon": "",
   "weight": 9,
   "uuid": "72405ea3-c208-49eb-a10b-c7873e46e997"

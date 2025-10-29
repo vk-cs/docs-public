@@ -1,4 +1,4 @@
-To make it easier to find and manage Data Platform service instances, organize them into logical groups.
+To make it easier to find and manage VK Data Platform service instances, organize them into logical groups.
 
 To create a logical group:
 
