@@ -20,7 +20,7 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 1. In the cluster you are planning to update, ensure there are [enough spare nodes available](/en/kubernetes/k8s/concepts/update#unavailable-nodes) for Cloud Containers to redirect the workload to. Otherwise, applications that run on the nodes that are being updated may not have enough resources.
 1. [Set threshold](../manage-node-group#configure_node_update) of the number of unavailable worker nodes in the node groups.
 
-## Do update
+## 1. Perform update
 
 {tabs}
 
@@ -37,3 +37,12 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 {/tab}
 
 {/tabs}
+
+## 2. (Optional) Reconfigure the IP addresses of the nodes for file shares
+
+Once the cluster is updated, the IP addresses of its nodes change, which can lead to issues when accessing [file shares](/en/computing/iaas/instructions/fs-manage), if used.
+
+To solve this issue:
+
+1. Learn the new IP addresses of the nodes. They are available in the VK Cloud [management console](https://msk.cloud.vk.com/app/en/) in the **Cloud Servers** → **Virtual machines** section in the **Kubernetes instances** block.
+1. [Add](/en/computing/iaas/instructions/fs-manage#adding_an_access_rule) these IP addresses to the file share access rules. 
