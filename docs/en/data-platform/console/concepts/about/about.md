@@ -1,6 +1,6 @@
-Data Platform UI Console (DP Console) is a service to simplify working with Data Platform.
+VK Data Platform UI Console (DP Console) is a service to simplify working with VK Data Platform.
 
-The service provides an additional user interface for centralized management and grouping of data services in Data Platform.
+The service provides an additional user interface for centralized management and grouping of data services in VK Data Platform.
 
 With the service you can:
 

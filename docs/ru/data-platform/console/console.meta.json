@@ -1,8 +1,8 @@
 {
-  "title": "Data Platform UI Console",
+  "title": "VK Data Platform UI Console",
   "shortDescription": "Сервис для оптимизации работы с платформой данных в инфраструктуре VK Cloud",
   "metaDescription": "Сервис для оптимизации работы с платформой данных в инфраструктуре VK Cloud",
-  "sectionTitle": "Data Platform UI Console",
+  "sectionTitle": "VK Data Platform UI Console",
   "icon": "",
   "weight": 9,
   "uuid": "58eb5560-944a-4887-8699-f1a7dfc08a28"
