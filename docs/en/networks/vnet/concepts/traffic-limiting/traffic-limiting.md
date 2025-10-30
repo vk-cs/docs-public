@@ -6,7 +6,7 @@ Only traffic whose source IP address is on this list will pass through the port.
 For example, you can allow:
 
 - Only traffic from the virtual machine that uses the OpenStack port.
-- All traffic that passes through the virtual machine (`0.0.0.0.0\0`). This can be useful when the virtual machine is involved in processing traffic and is an intermediate network node (such as a router, firewall or VPN gateway).
+- All traffic that passes through the virtual machine (`0.0.0.0/0`). This can be useful when the virtual machine is involved in processing traffic and is an intermediate network node (such as a router, firewall or VPN gateway).
 
 ## {heading(Security groups)[id=secgroups]}
 
