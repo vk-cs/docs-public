@@ -34,7 +34,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
    To add multiple IP addresses, repeat this command for each one.
 
-   To allow all traffic from the port passing through the virtual machine, use IP address `0.0.0.0\0`. This option is used for network intermediary nodes (e.g., routers, firewalls, or VPN gateways). Use this option with caution, as it may expose your network to attacks.
+   To allow all traffic from the port passing through the virtual machine, use IP address `0.0.0.0/0`. This option is used for network intermediary nodes (e.g., routers, firewalls, or VPN gateways). Use this option with caution, as it may expose your network to attacks.
 
 {/tab}
 
