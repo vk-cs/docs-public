@@ -1,0 +1,9 @@
+{
+  "title": "Автоматическое масштабирование worker-узлов с помощью Cluster Autoscaler",
+  "shortDescription": "Как устроен процесс автоматического масштабирования worker-узлов в кластерах Kubernetes в сервисе Cloud Containers",
+  "metaDescription": "Процесс автоматического масштабирования worker-узлов кластера Kubernetes с помощью Cluster Autoscaler на платформе VK Cloud в сервисе Cloud Containers: условия увеличения и уменьшения количества узлов, настройки, время простоя подов.",
+  "sectionTitle": "Автоматическое масштабирование worker-узлов с помощью Cluster Autoscaler",
+  "icon": "",
+  "weight": 8,
+  "uuid": ""
+}
