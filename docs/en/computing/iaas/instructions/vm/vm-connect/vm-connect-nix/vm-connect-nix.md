@@ -69,21 +69,13 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
       ssh -i <KEY_PATH> <USERNAME>@<FQDN_OF_VM>
       ```
 
-3. If this is the first connection to the VM, a confirmation request will appear:
+   {include(/en/_includes/_ssh-warning.md)[tags=new-host]}
 
-      ```console
-      The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
-      ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
-      Are you sure you want to continue connecting (yes/no)?
-      ```
+   {note:info}
 
-      Type `yes` in the terminal and press _Enter_.
+   The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
 
-      {note:info}
-
-      The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
-
-      {/note}
+   {/note}
 
 {/tab}
 
@@ -112,21 +104,13 @@ If one or both of the keys from the pair are lost, follow the [recovery instruct
       ssh -i <KEY_PATH> <USERNAME>@<FQDN_OF_VM>
       ```
 
-3. If this is the first connection to the VM, a confirmation request will appear:
+   {include(/en/_includes/_ssh-warning.md)[tags=new-host]}
 
-      ```shell
-      The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
-      ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
-      Are you sure you want to continue connecting (yes/no)?
-      ```
+   {note:info}
 
-     Type `yes` in the command prompt and press ENTER.
+   The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
 
-      {note:info}
-
-      The first time you connect to a VM created from a Bitrix VK Cloud image, a request to change the password for the `root` user will appear in the console. Enter the current `bitrix` password and enter the new password twice.
-
-      {/note}
+   {/note}
 
 {/tab}
 

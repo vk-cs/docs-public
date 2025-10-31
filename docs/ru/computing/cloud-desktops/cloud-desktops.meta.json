@@ -4,7 +4,7 @@
   "metaDescription": "Сервис Cloud Desktop для доставки пользователям рабочих столов на удаленном сервере",
   "sectionTitle": "Cloud Desktop",
   "icon": "",
-  "weight": 3,
+  "weight": 4,
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/api/api-spec/vdi-api"

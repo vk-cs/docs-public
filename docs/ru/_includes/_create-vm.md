@@ -46,15 +46,7 @@ ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 
 Внешний IP-адрес ВМ можно посмотреть в [личном кабинете](https://msk.cloud.vk.com/app/) VK Cloud в разделе **Облачные вычисления → Виртуальные машины**.
 
-При первом подключении к ВМ появится запрос подтверждения подключения к неизвестному ранее хосту:
-
-```txt
-The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
-ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
-Are you sure you want to continue connecting (yes/no)?
-```
-
-Введите в терминале `yes` и нажмите ENTER.
+{include(/ru/_includes/_ssh-warning.md)[tags=new-host]}
 
 {/tab}
 
@@ -74,15 +66,7 @@ ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 
 Внешний IP-адрес ВМ можно посмотреть в [личном кабинете](https://msk.cloud.vk.com/app/) VK Cloud в разделе **Облачные вычисления → Виртуальные машины**.
 
-При первом подключении к ВМ появится запрос подтверждения подключения к неизвестному ранее хосту:
-
-```txt
-The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
-ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
-Are you sure you want to continue connecting (yes/no)?
-```
-
-Введите в командной строке `yes` и нажмите ENTER.
+{include(/ru/_includes/_ssh-warning.md)[tags=new-host]}
 
 {/tab}
 

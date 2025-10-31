@@ -69,21 +69,13 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/instru
       ssh -i <ПУТЬ_К_КЛЮЧУ> <ИМЯ_ПОЛЬЗОВАТЕЛЯ>@<ПОЛНОЕ_ДОМЕННОЕ_ИМЯ_ВМ>
       ```
 
-3. Если это первое подключение к ВМ, появится запрос подтверждения:
+   {include(/ru/_includes/_ssh-warning.md)[tags=new-host]}
 
-      ```console
-      The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
-      ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
-      Are you sure you want to continue connecting (yes/no)?
-      ```
+   {note:info}
 
-      Введите в терминале `yes` и нажмите ENTER.
+   При первом подключении к виртуальной машине, созданной из образа Bitrix VK Cloud, в консоли появится запрос на изменение пароля для пользователя `root`. Укажите текущий пароль `bitrix` и дважды введите новый пароль.
 
-      {note:info}
-
-      При первом подключении к виртуальной машине, созданной из образа Bitrix VK Cloud, в консоли появится запрос на изменение пароля для пользователя `root`. Укажите текущий пароль `bitrix` и дважды введите новый пароль.
-
-      {/note}
+   {/note}
 
 {/tab}
 
@@ -112,21 +104,13 @@ VK Cloud предоставляет [DNS-серверы](/ru/networks/dns/instru
       ssh -i <ПУТЬ_К_КЛЮЧУ> <ИМЯ_ПОЛЬЗОВАТЕЛЯ>@<ПОЛНОЕ_ДОМЕННОЕ_ИМЯ_ВМ>
       ```
 
-3. Если это первое подключение к ВМ, появится запрос подтверждения:
+   {include(/ru/_includes/_ssh-warning.md)[tags=new-host]}
 
-      ```shell
-      The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
-      ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
-      Are you sure you want to continue connecting (yes/no)?
-      ```
+   {note:info}
 
-     Введите в командной строке `yes` и нажмите _Enter_.
+   При первом подключении к виртуальной машине, созданной из образа Bitrix VK Cloud, в консоли появится запрос на изменение пароля для пользователя `root`. Укажите текущий пароль `bitrix` и дважды введите новый пароль.
 
-      {note:info}
-
-      При первом подключении к виртуальной машине, созданной из образа Bitrix VK Cloud, в консоли появится запрос на изменение пароля для пользователя `root`. Укажите текущий пароль `bitrix` и дважды введите новый пароль.
-
-      {/note}
+   {/note}
 
 {/tab}
 
