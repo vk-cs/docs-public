@@ -1,0 +1,9 @@
+{
+    "title": "Быстрый старт",
+    "shortDescription": "Как начать работу с сервером Bare Metal",
+    "metaDescription": "Пошаговое руководство по быстрому запуску Bare Metal в VK Cloud: начальная настройка, создание сети, заказ сервера, установка Linux, подключение по SSH через промежуточный хост для Linux и Windows.",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "weight": 1,
+    "uuid": ""
+}
