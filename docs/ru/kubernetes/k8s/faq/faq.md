@@ -30,7 +30,7 @@ annotations:
 
 {cut(Можно ли отключить автоматическую подстановку ограничений для подов через Limit Range?)}
 
-Limit Range — это политика, которая применяется при создании пода. Отключить ее нельзя, но вы можете [установить](/ru/kubernetes/k8s/concepts/addons-and-settings/settings#nastroyki_limitov_dlya_podov) собственные значения `requests` и `limits` в конфигурационных файлах контейнеров, входящих в под.
+Limit Range — это политика, которая применяется при создании пода. Отключить ее нельзя, но вы можете [установить](/ru/kubernetes/k8s/concepts/addons-and-settings/settings#requests_and_limits) собственные значения `requests` и `limits` в конфигурационных файлах контейнеров, входящих в под.
 {/cut}
 
 {cut(Есть ли возможность добавлять узлы с ОС Windows в управляемый кластер?)}

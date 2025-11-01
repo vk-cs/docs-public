@@ -156,12 +156,26 @@
 |2.2.2
 |2.2.2
 
+|[Fluent Bit](https://github.com/fluent/fluent-bit)
+|0.43.0
+|0.43.0
+|0.48.5
+|0.48.5
+|0.48.5
+
 |[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
 |0.34.2
 |0.34.2
 |0.34.2
 |0.34.2
 |0.34.2
+
+|[GPU Operator](https://github.com/NVIDIA/gpu-operator)
+|24.9.0
+|24.9.0
+|24.9.0
+|24.9.0
+|24.9.0
 
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
 |4.12.1
@@ -214,19 +228,14 @@
 
 |68.3.4-vk.1
 
-|[Fluent Bit](https://github.com/fluent/fluent-bit)
-|0.43.0
-|0.43.0
-|0.48.5
-|0.48.5
-|0.48.5
+|[Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 
-|[GPU Operator](https://github.com/NVIDIA/gpu-operator)
-|24.9.0
-|24.9.0
-|24.9.0
-|24.9.0
-|24.9.0
+|4.8.0
+|4.8.0
+|4.8.0
+|4.8.0
+|4.8.0
+
 |===
 
 {cut(Предыдущие версии)}
@@ -257,11 +266,23 @@
 |2.2.2
 |2.2.2
 
+|[Fluent Bit](https://github.com/fluent/fluent-bit)
+|
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+|0.43.0
+
 |[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
 | ![](/ru/assets/no.svg "inline")
 |0.34.2
 |0.34.2
 |0.34.2
+
+|[GPU Operator](https://github.com/NVIDIA/gpu-operator)
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+|24.9.0
 
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
 |4.1.4
@@ -301,17 +322,13 @@
 
 54.2.3-vk.1
 
-|[Fluent Bit](https://github.com/fluent/fluent-bit)
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-|0.43.0
+|[Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 
-|[GPU Operator](https://github.com/NVIDIA/gpu-operator)
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-|24.9.0
+|![](/ru/assets/no.svg "inline")
+|![](/ru/assets/no.svg "inline")
+|![](/ru/assets/no.svg "inline")
+|![](/ru/assets/no.svg "inline")
+
 |===
 
 {/cut}
