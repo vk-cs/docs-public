@@ -1,9 +1,9 @@
 {
- "title": "Создание кластера Spark",
- "shortDescription": "",
- "metaDescription": "Создание экземпляра сервиса Spark на платформе VK Data Platform с помощью Terraform. Описание параметров кластера Spark, сетевой инфраструктуры и источников данных.",
- "sectionTitle": "Создание кластера Spark",
- "icon": "",
- "weight": 1,
- "uuid": ""
+  "title": "Создание кластера Spark",
+  "shortDescription": "",
+  "metaDescription": "Создание экземпляра сервиса Spark на платформе VK Data Platform с помощью Terraform. Описание параметров кластера Spark, сетевой инфраструктуры и источников данных.",
+  "sectionTitle": "Создание кластера Spark",
+  "icon": "",
+  "weight": 1,
+  "uuid": "18d78c74-179d-4c75-ac65-1f5e8170add3"
 }

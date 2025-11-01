@@ -24469,13 +24469,13 @@
   },
   {
     "source": "/ru/tools-for-using-services/terraform/use-cases/spark",
-    "destination": "/ru/tools-for-using-services/terraform/how-to-guides/spark",
+    "destination": "/ru/tools-for-using-services/terraform/how-to-guides/dataplatform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/terraform/use-cases/spark/create",
-    "destination": "/ru/tools-for-using-services/terraform/how-to-guides/spark/create",
+    "destination": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/spark-k8s",
     "permanent": false,
     "locale": false
   },
@@ -32684,6 +32684,18 @@
   {
     "source": "/ru/monitoring-services/alerting/incidents",
     "destination": "/ru/monitoring-services/alerting/instructions/incidents",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/terraform/how-to-guides/spark/create",
+    "destination": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/spark-k8s",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/terraform/how-to-guides/spark",
+    "destination": "/ru/tools-for-using-services/terraform/how-to-guides/dataplatform",
     "permanent": false,
     "locale": false
   }

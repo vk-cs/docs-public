@@ -1,9 +1,9 @@
 {
-    "title": "Vertical Pod Autoscaler",
-      "shortDescription": "",
-      "metaDescription": "Установка аддона Vertical Pod Autoscaler (VPA) в Kubernetes: пошаговая инструкция для VK Cloud, Terraform, выделенных worker-узлов и быстрой установки",
-    "sectionTitle": "Vertical Pod Autoscaler",
-    "icon": "",
-    "weight": 12,
-    "uuid": ""
+  "title": "Vertical Pod Autoscaler",
+  "shortDescription": "",
+  "metaDescription": "Установка аддона Vertical Pod Autoscaler (VPA) в Kubernetes: пошаговая инструкция для VK Cloud, Terraform, выделенных worker-узлов и быстрой установки",
+  "sectionTitle": "Vertical Pod Autoscaler",
+  "icon": "",
+  "weight": 12,
+  "uuid": "04b3ce0d-c361-4398-8889-2bbc5f26353c"
 }
