@@ -6,6 +6,7 @@ VK Cloud позволяет создавать отказоустойчивые 
 
 ## Подготовительные шаги
 
+1. Получите доступ к [DNS-балансировке](/ru/networks/dns/concepts/global-balancer), обратившись в [техническую поддержку](/ru/contacts), если этого не было сделано ранее.
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 1. Выберите или [создайте](/ru/computing/iaas/instructions/vm/vm-create) три ВМ с доступом в интернет в разных [зонах доступности](/ru/start/concepts/architecture#az).
 1. Запишите внешние IP-адреса этих ВМ. В этом примере:
@@ -19,21 +20,17 @@ VK Cloud позволяет создавать отказоустойчивые 
 1. Зарегистрируйте ваш домен у доменного регистратора и делегируйте его на NS-серверы VK Cloud, если этого еще не сделано. Дождитесь обновления DNS-записей: обычно занимает 10–30 минут.
 1. Установите утилиту `dig` на ваш компьютер для проверки работы DNS-балансировки:
 
-   <tabs>
-   <tablist>
-   <tab>Ubuntu, Debian</tab>
-   <tab>Red Hat, CentOS, Fedora</tab>
-   <tab>macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+   {tabs}
+
+   {tab(Ubuntu, Debian)}
 
    ```bash
    sudo apt update && sudo apt install dnsutils
    ```
    
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+   
+   {tab(Red Hat, CentOS, Fedora)}
    
    ```bash
    # Для старых версий (yum):
@@ -43,27 +40,30 @@ VK Cloud позволяет создавать отказоустойчивые 
    sudo dnf install bind-utils
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(macOS)}
    
    ```bash
    brew install bind
    ```
 
-   </tabpanel>
-   <tabpanel>
+   {/tab}
+
+   {tab(Windows)}
    
    ```bash
    choco install bind-toolsonly
    ```
-   </tabpanel>
-   </tabs>
+   {/tab}
 
-   <info>
+   {/tabs}
+
+   {note:info}
 
    Вы можете использовать аналоги утилиты `dig` для проверки DNS-балансировки. Комады проверки при этом будут отличаться.
 
-   </info>
+   {/note}
 
 ## 1. Добавьте A-записи в DNS-зону
 
