@@ -6,7 +6,7 @@
   "icon": "",
   "relativeSections": [
     {
-      "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/spark/create",
+      "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/spark-k8s",
       "title": "Создание кластера Spark с помощью Terraform"
     }
   ],

@@ -22,11 +22,13 @@
   - [vkcs_networking_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_router.md);
   - [vkcs_networking_port](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_port.md).
 
+Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
+
 ## Подготовительные шаги
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать инстанс. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей. Для разных регионов могут быть настроены разные квоты.
 
-   Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 
@@ -176,7 +178,7 @@
 
 ## Удалите неиспользуемые ресурсы
 
-Если созданные с помощью Terraform ресурсы вам больше не нужны, удалите их:
+Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:

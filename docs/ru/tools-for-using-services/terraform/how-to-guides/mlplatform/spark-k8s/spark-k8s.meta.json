@@ -1,0 +1,9 @@
+{
+    "title": "Создание кластера Spark",
+    "shortDescription": "",
+    "metaDescription": "Как с помощью Terraform развернуть Spark на платформе VK Cloud, используя образ из Docker Registry. Пошаговая инструкция с примером конфигурации.",
+    "sectionTitle": "Создание кластера Spark",
+    "icon": "",
+    "weight": 4,
+    "uuid": "331c85e4-68d6-4184-a972-9a3bdf6b46e4"
+}
