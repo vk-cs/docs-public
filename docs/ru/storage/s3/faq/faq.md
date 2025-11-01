@@ -195,3 +195,8 @@
 
 {/cut}
 
+{cut(Какое время жизни у ключей доступа аккаунта Object Storage?)}
+
+Время жизни обоих ключей в паре — публичного (Access Key) и секретного (Secret Key) — не ограничено. Ключи действуют до тех пор, пока вы их не [деактивируете](/ru/storage/s3/instructions/access-management/access-keys#deaktivaciya_klyucha_dostupa) или не [удалите](/ru/storage/s3/instructions/access-management/access-keys#udalenie_klyucha_dostupa) вручную. В целях безопасности рекомендуется периодически проводить ротацию ключей.
+
+{/cut}
