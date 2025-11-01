@@ -2,11 +2,13 @@
 
 Будет рассмотрено два варианта конфигурации ВМ: без дополнительных настроек и с подключенным дополнительным диском.
 
+Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
+
 ## Подготовительные шаги
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать ВМ. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания ВМ. Для разных регионов могут быть настроены разные квоты.
 
-    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+    Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
 1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
@@ -100,8 +102,6 @@
    - `vkcs_networking_subnet`,
    - `vkcs_networking_router`,
    - `vkcs_networking_router_interface`.
-
-Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs/data-sources).
 
 ## 2. (Опционально) Создайте группы безопасности
 

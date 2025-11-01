@@ -13,11 +13,13 @@
 
 ![Инфраструктура примера](assets/infrastructure-scheme.png){params[noBorder=true]}
 
+Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
+
 ## Перед началом работы
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей и виртуальных машин. Для разных регионов могут быть настроены разные квоты.
 
-   Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -445,7 +447,7 @@ output "common-instance-private-ip" {
 
 ## Удалите неиспользуемые ресурсы
 
-Если созданные с помощью Terraform ресурсы вам больше не нужны, удалите их:
+Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
 

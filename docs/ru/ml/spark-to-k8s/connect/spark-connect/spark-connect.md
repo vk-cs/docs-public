@@ -8,7 +8,7 @@ Spark Connect позволяет удаленно подключиться к к
 
     {note:info}
 
-    Вы также можете [создать кластер через Terraform](/ru/tools-for-using-services/terraform/how-to-guides/spark/create).
+    Вы также можете [создать кластер через Terraform](/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/spark-k8s).
 
     {/note}
 

@@ -1,11 +1,13 @@
 Далее приведены примеры создания разных кластеров Kubernetes с помощью Terraform.
 Подробно процедура создания кластера описана в разделе [Создание кластера с помощью Terraform](/ru/kubernetes/k8s/instructions/create-cluster/create-terraform).
 
+Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
+
 ## Перед созданием кластера
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания кластера. Для разных регионов могут быть настроены разные квоты.
 
-   Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
 1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/instructions/helpers/terraform-howto) в сервисе Cloud Containers.
 
@@ -313,7 +315,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 ## Удалите неиспользуемые ресурсы
 
-Если созданные с помощью Terraform ресурсы вам больше не нужны, удалите их:
+Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:

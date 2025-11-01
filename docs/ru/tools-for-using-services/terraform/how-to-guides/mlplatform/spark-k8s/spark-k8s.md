@@ -1,4 +1,4 @@
-В статье приведен пример создания кластера Cloud Spark при помощи Terraform.
+В статье приведен пример создания кластера Spark на платформе VK Cloud при помощи Terraform.
 
 При создании кластера используются:
 
@@ -8,15 +8,17 @@
 - источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
 - источник данных [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md).
 
-## Перед созданием инстанса
+Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать инстанс. Для разных регионов могут быть настроены разные квоты.
+## Перед созданием кластера
 
-   Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания кластера. Для разных регионов могут быть настроены разные квоты.
+
+   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
 1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-1. Для работы потребуется провайдер версии 0.7.0 или выше. Убедитесь, что версия провайдера в файле `vkcs_provider.tf` не ниже. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
+1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.7.0 или выше. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
 
 ## 1. Создайте файл с описанием кластера
 
@@ -276,7 +278,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 ## Удалите неиспользуемые ресурсы
 
-Если созданные с помощью Terraform ресурсы вам больше не нужны, удалите их:
+Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:

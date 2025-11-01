@@ -1,0 +1,9 @@
+{
+  "title": "VK Data Platform",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса VK Data Platform",
+  "metaDescription": "Узнайте, как использовать Terraform для управления экземплярами сервисов VK Data Platform. Ознакомьтесь с примером создания кластера Spark.",
+  "sectionTitle": "VK Data Platform",
+  "icon": "",
+  "weight": 80,
+  "uuid": "c0247f4e-312f-4e33-9880-b8e4f5efbb85"
+}

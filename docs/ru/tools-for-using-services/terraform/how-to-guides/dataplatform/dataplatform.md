@@ -1,0 +1,1 @@
+Работа с [VK Data Platform](/ru/data-platform) с использованием Terraform.

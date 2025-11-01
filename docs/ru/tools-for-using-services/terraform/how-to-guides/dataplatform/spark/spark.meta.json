@@ -1,0 +1,9 @@
+{
+ "title": "Создание кластера Spark",
+ "shortDescription": "",
+ "metaDescription": "Создание экземпляра сервиса Spark на платформе VK Data Platform с помощью Terraform. Описание параметров кластера Spark, сетевой инфраструктуры и источников данных.",
+ "sectionTitle": "Создание кластера Spark",
+ "icon": "",
+ "weight": 1,
+ "uuid": ""
+}
