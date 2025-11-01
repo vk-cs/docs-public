@@ -38,13 +38,13 @@ The disk to create the image must be disconnected from the VM and have the statu
 2. Create an image:
 
    ```console
-   openstack image create --volume <disk ID> <image name>
+   openstack image create --volume <DISK_ID> <IMAGE_NAME>
    ```
 
 3. Check the image creation:
 
    ```console
-   openstack image list --name <image name>
+   openstack image list --name <IMAGE_NAME>
    ```
 
    The successfully created image must have the status `active`.
@@ -57,19 +57,15 @@ The disk to create the image must be disconnected from the VM and have the statu
 
 The VK Cloud service supports uploading your own virtual machine images with [some restrictions](../../../concepts/about#operating_system) by operating systems.
 
-{note:info}
+{note:warn}
 
 Only RAW images are supported. If your image is in a different format, [convert it](../../../how-to-guides/packer#1_convert_image_to_raw_format).
 
 {/note}
 
-{note:warn}
-
 The recommended way to import an image is using the CLI.
 
 When downloading through your VK Cloud management console, the size of the downloaded file is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes).
-
-{/note}
 
 {tabs}
 
@@ -94,7 +90,7 @@ The parameters of the image import command depend on the need for backup support
 - If support is not needed, run the command:
 
    ```console
-   openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <image file path> <image name>
+   openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <IMAGE_FILE> <IMAGE_NAME>
    ```
 
 - If support is needed, add parameters `--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes` to the command above.
@@ -109,28 +105,38 @@ The parameters of the image import command depend on the need for backup support
 
 {tab(OpenStack CLI)}
 
-1. Get the `ID` of the image from the list:
+1. Get the `ID` and `Disk Format` of the image from the list:
 
    ```console
-   openstack image list
+   openstack image list --long
    ```
 
 2. Export the image:
 
    ```console
-   openstack image save --file <image file path>.raw <image ID>
+   openstack image save --file <FILE_NAME>.<DISK_FORMAT> <IMAGE_ID>
    ```
+
+If the exported image is not in RAW format and you plan to use it to create a VM on the VK Cloud platform, [convert the image](../../../how-to-guides/packer#1_convert_image_to_raw_format).
 
 {/tab}
 
 {tab(cURL)}
 
 1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token) the access token `X-Auth-Token`.
-1. Run the command:
+1. Get the `id` and `disk_format` of the image from the list:
 
    ```console
-   curl -H "X-Auth-Token:{token}" "https://infra.mail.ru:9292/v2/images/{image ID}/file" --output <image file path>.raw
+   curl -H "X-Auth-Token:<TOKEN>" "https://infra.mail.ru:9292/v2/images"
    ```
+
+1. Download the image:
+
+   ```console
+   curl -H "X-Auth-Token:<TOKEN>" "https://infra.mail.ru:9292/v2/images/<IMAGE_ID>/file" --output <FILE_NAME>.<DISK_FORMAT>
+   ```
+
+If the exported image is not in RAW format and you plan to use it to create a VM on the VK Cloud platform, [convert the image](../../../how-to-guides/packer#1_convert_image_to_raw_format).
 
 {/tab}
 
@@ -152,12 +158,6 @@ By default, all images have the `private` status. To share an image with other p
 {tabs}
 
 {tab(Management console)}
-
-{note:info}
-
-Through your VK Cloud management console, you can allow access to the image only for certain projects.
-
-{/note}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Go to **Cloud Servers → Images**.
@@ -184,38 +184,36 @@ Through your VK Cloud management console, you can allow access to the image only
    openstack image list
    ```
 
-2. Display detailed information about the individual image:
+1. Display detailed information about the individual image:
 
    ```console
-   openstack image show <image ID>
+   openstack image show <IMAGE_ID>
    ```
 
    The visibility status of the image is displayed in the `visibility` line.
 
-3. Change the image status:
+1. Change the image status:
 
    ```console
-   openstack image set --<status> <image ID>
+   openstack image set --shared <IMAGE_ID>
    ```
-
-To share an image in the status `shared`:
 
 1. Add an image to the project:
 
    ```console
-   openstack image add project <image ID> <project ID>
+   openstack image add project <IMAGE_ID> <PROJECT_ID>
    ```
 
-2. Confirm adding the image to the project:
+1. Confirm adding the image to the project. To do this, the user of the receiving project must run the command:
 
    ```console
-   openstack image set --accept <image ID>
+   openstack image set --accept <IMAGE_ID>
    ```
 
 To view the projects that have access to the image, run the command:
 
 ```console
-openstack image member list <image ID>
+openstack image member list <IMAGE_ID>
 ```
 
 {/tab}
@@ -244,13 +242,13 @@ openstack image member list <image ID>
 To delete an image that is not attached to projects:
 
 ```console
-openstack image delete <image ID>
+openstack image delete <IMAGE_ID>
 ```
 
 To delete an image from a project:
 
 ```console
-openstack image remove project <image ID> <project ID>
+openstack image remove project <IMAGE_ID> <PROJECT_ID>
 ```
 
 {/tab}
