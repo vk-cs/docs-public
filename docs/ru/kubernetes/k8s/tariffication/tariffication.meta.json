@@ -1,0 +1,9 @@
+{
+    "title": "Тарификация",
+      "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
+      "metaDescription": "Особенности тарификации сервиса Cloud Containers: принцип «pay as you go», детализация расходов по master- и worker-узлам за CPU, RAM, диски, балансировщики и Floating IP",
+    "sectionTitle": "Тарификация",
+    "icon": "",
+    "weight": 9,
+    "uuid": ""
+}

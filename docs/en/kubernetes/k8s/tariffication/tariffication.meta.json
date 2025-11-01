@@ -1,0 +1,9 @@
+{
+    "title": "Tariffication",
+      "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+      "metaDescription": "How the Cloud Containers services are charged, cost calculation: «pay as you go» principle, cost details for master and worker nodes for CPU, RAM, disks, load balancers and Floating IP",
+    "sectionTitle": "Tariffication",
+    "icon": "",
+    "weight": 9,
+    "uuid": ""
+}
