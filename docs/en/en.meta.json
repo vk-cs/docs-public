@@ -1,5 +1,6 @@
 {
   "title": "VK Cloud Documentation",
+  "decorator": "list",
   "intro": [
     {
       "partialPath": "/en/intro/start",
