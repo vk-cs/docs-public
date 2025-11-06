@@ -1,5 +1,6 @@
 {
   "title": "Документация VK Cloud",
+  "decorator": "list",
   "intro": [
     {
       "partialPath": "/ru/intro/onboarding",

@@ -22,11 +22,6 @@ export const config = {
     leftMenu: {
         startLevel: 3,
     },
-    layout: {
-        main: {
-            schema: 'LIST',
-        }
-    },
     search: {
         type: 'SATORI',
         satori: {
