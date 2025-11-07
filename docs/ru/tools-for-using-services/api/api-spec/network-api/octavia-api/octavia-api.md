@@ -5,15 +5,15 @@
 1. [Включите](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api) доступ по API, если это еще не сделано.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
-1. Найдите эндпоинт **Neutron** в блоке **Сервис OpenStack**.
+1. Найдите эндпоинт **Octavia** в блоке **Сервис OpenStack**.
 1. [Получите токен доступа](../../../rest-api/case-keystone-token) `X-Auth-Token`.
 
 {/cut}
 
 {note:info}
 
-Исходная спецификация в формате JSON доступна по [ссылке](./assets/neutron-sprut-api.json "download").
+Исходная спецификация в формате JSON доступна по [ссылке](./assets/octavia-api.json "download").
 
 {/note}
 
-![{swagger}](assets/neutron-sprut-api.json)
+![{swagger}](assets/octavia-api.json)

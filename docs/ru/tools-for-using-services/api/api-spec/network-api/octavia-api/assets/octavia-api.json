@@ -1,0 +1,3569 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Octavia API",
+    "version": "1.0.0",
+    "description": "REST API для управления балансировщиками нагрузки"
+  },
+  "tags": [
+    {
+      "name": "load-balancers",
+      "description": "Балансировщики нагрузки"
+    },
+    {
+      "name": "listeners",
+      "description": "Прослушиватели. Обрабатывают входящие соединения"
+    },
+    {
+      "name": "pools",
+      "description": "Пулы. Распределяют нагрузку между доступными участниками пула"
+    },
+    {
+      "name": "members",
+      "description": "Участники пула. Виртуальные машины, которые являются бэкендами для балансировщика"
+    },
+    {
+      "name": "health-monitors",
+      "description": "Healthcheck-объекты. Проверяют состояние и доступность участников пула"
+    }
+  ],
+  "paths": {
+    "/v2/lbaas/loadbalancers": {
+      "get": {
+        "summary": "Получить список балансировщиков нагрузки",
+        "description": "Метод возвращает список балансировщиков нагрузки по заданным фильтрам. В качестве фильтров можно указывать верхнеуровневые атрибуты балансировщиков нагрузки, например ``name``. Если задано несколько фильтров, к ним применяется операция «И».",
+        "tags": [
+          "load-balancers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/page_reverse"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Loadbalancers"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать балансировщик нагрузки",
+        "description": "Метод создает балансировщик нагрузки. В ответе возвращается объект, содержащий уникальный идентификатор созданного балансировщика нагрузки и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_CREATE`` или ``ERROR``. Балансировщик нагрузки в статусе ``ACTIVE`` готов к дальнейшей настройке. Если он находится в статусе ``PENDING_CREATE``, дождитесь, когда он перейдет в статус ``ACTIVE``. Чтобы проверить статус балансировщика нагрузки, используйте метод  ``GET /v2/lbaas/loadbalancers/{loadbalancer_id}``.",
+        "tags": [
+          "load-balancers"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "loadbalancer": {
+                    "$ref": "#/components/schemas/LoadbalancerCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "loadbalancer": {
+                      "$ref": "#/components/schemas/Loadbalancer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "503": {
+            "description": "Сервис временно недоступен"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/loadbalancers/{loadbalancer_id}": {
+      "get": {
+        "summary": "Получить информацию о балансировщике нагрузки",
+        "tags": [
+          "load-balancers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/loadbalancer_id"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "loadbalancer": {
+                      "$ref": "#/components/schemas/Loadbalancer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить балансировщик нагрузки",
+        "description": "Метод изменяет балансировщик нагрузки. В ответе возвращается объект, содержащий уникальный идентификатор измененного балансировщика нагрузки и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_UPDATE`` или ``ERROR``. Если балансировщик нагрузки находится в статусе ``PENDING_UPDATE``, дождитесь, когда он перейдет в статус ``ACTIVE`` для дальнейшей работы с ним. Чтобы проверить статус балансировщика нагрузки, используйте метод  ``GET /v2/lbaas/loadbalancers/{loadbalancer_id}``.",
+        "tags": [
+          "load-balancers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/loadbalancer_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "loadbalancer": {
+                    "$ref": "#/components/schemas/LoadbalancerUpdate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "loadbalancer": {
+                      "$ref": "#/components/schemas/Loadbalancer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить балансировщик нагрузки",
+        "tags": [
+          "load-balancers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/loadbalancer_id"
+          },
+          {
+            "$ref": "#/components/parameters/cascade"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/loadbalancers/{loadbalancer_id}/stats": {
+      "get": {
+        "summary": "Получить статистику балансировщика нагрузки",
+        "tags": [
+          "load-balancers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/loadbalancer_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stats"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/loadbalancers/{loadbalancer_id}/status": {
+      "get": {
+        "summary": "Получить статусы балансировщика нагрузки",
+        "description": "Метод возвращает статусы балансировщика нагрузки и всех его ресурсов: прослушивателей, пулов, участников пулов и healthcheck-объектов.",
+        "tags": [
+          "load-balancers"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/loadbalancer_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoadbalancerStatuses"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/listeners": {
+      "get": {
+        "summary": "Получить список прослушивателей",
+        "description": "Метод возвращает список прослушивателей по заданным фильтрам. В качестве фильтров можно указывать верхнеуровневые атрибуты прослушивателей, например ``name``. Если задано несколько фильтров, к ним применяется операция «И».",
+        "tags": [
+          "listeners"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/page_reverse"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Listeners"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать прослушиватель",
+        "description": "Метод создает прослушиватель для балансировщика нагрузки. В ответе возвращается объект, содержащий уникальный идентификатор созданного прослушивателя и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_CREATE`` или ``ERROR``. Прослушиватель в статусе ``ACTIVE`` готов к дальнейшей настройке. Если он находится в статусе ``PENDING_CREATE``, дождитесь, когда он перейдет в статус ``ACTIVE``. Чтобы проверить статус прослушивателя, используйте метод  ``GET /v2/lbaas/listeners/{listener_id}``.",
+        "tags": [
+          "listeners"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "listener": {
+                    "$ref": "#/components/schemas/ListenerCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "listener": {
+                      "$ref": "#/components/schemas/Listener"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "503": {
+            "description": "Сервис временно недоступен"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/listeners/{listener_id}": {
+      "get": {
+        "summary": "Получить информацию о прослушивателе",
+        "tags": [
+          "listeners"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/listener_id"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "listener": {
+                      "$ref": "#/components/schemas/Listener"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить прослушиватель",
+        "description": "Метод изменяет прослушиватель. В ответе возвращается объект, содержащий уникальный идентификатор измененного прослушивателя и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_UPDATE`` или ``ERROR``. Если прослушиватель находится в статусе ``PENDING_UPDATE``, дождитесь, когда он перейдет в статус ``ACTIVE`` для дальнейшей работы с ним. Чтобы проверить статус прослушивателя, используйте метод  ``GET /v2/lbaas/listeners/{listener_id}``.",
+        "tags": [
+          "listeners"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/listener_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "listener": {
+                    "$ref": "#/components/schemas/ListenerUpdate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "listener": {
+                      "$ref": "#/components/schemas/Listener"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить прослушиватель",
+        "tags": [
+          "listeners"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/listener_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/listeners/{listener_id}/stats": {
+      "get": {
+        "summary": "Получить статистику прослушивателя",
+        "tags": [
+          "listeners"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/listener_id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stats"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/pools": {
+      "get": {
+        "summary": "Получить список пулов",
+        "description": "Метод возвращает список пулов по заданным фильтрам. В качестве фильтров можно указывать верхнеуровневые атрибуты пулов, например ``name``. Если задано несколько фильтров, к ним применяется операция «И».",
+        "tags": [
+          "pools"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/page_reverse"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pools"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать пул",
+        "description": "Метод создает пул для балансировщика нагрузки. В ответе возвращается объект, содержащий уникальный идентификатор созданного пула и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_CREATE`` или ``ERROR``. Пул в статусе ``ACTIVE`` готов к дальнейшей настройке. Если он находится в статусе ``PENDING_CREATE``, дождитесь, когда он перейдет в статус ``ACTIVE``. Чтобы проверить статус пула, используйте метод  ``GET /v2/lbaas/pools/{pool_id}``.",
+        "tags": [
+          "pools"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "pool": {
+                    "$ref": "#/components/schemas/PoolCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "pool": {
+                      "$ref": "#/components/schemas/Pool"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "503": {
+            "description": "Сервис временно недоступен"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/pools/{pool_id}": {
+      "get": {
+        "summary": "Получить информацию о пуле",
+        "tags": [
+          "pools"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "pool": {
+                      "$ref": "#/components/schemas/Pool"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить пул",
+        "description": "Метод изменяет пул. В ответе возвращается объект, содержащий уникальный идентификатор измененного пула и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_UPDATE`` или ``ERROR``. Если пул находится в статусе ``PENDING_UPDATE``, дождитесь, когда он перейдет в статус ``ACTIVE`` для дальнейшей работы с ним. Чтобы проверить статус пула, используйте метод  ``GET /v2/lbaas/pools/{pool_id}``.",
+        "tags": [
+          "pools"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "pool": {
+                    "$ref": "#/components/schemas/PoolUpdate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "pool": {
+                      "$ref": "#/components/schemas/Pool"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить пул",
+        "tags": [
+          "pools"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/pools/{pool_id}/members": {
+      "get": {
+        "summary": "Получить список участников пула",
+        "description": "Метод возвращает список участников пула по заданным фильтрам. В качестве фильтров можно указывать верхнеуровневые атрибуты участников пула, например ``name``. Если задано несколько фильтров, к ним применяется операция «И».",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/page_reverse"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Members"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать участника пула",
+        "description": "Метод создает участника пула. В ответе возвращается объект, содержащий уникальный идентификатор созданного участника и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_CREATE`` или ``ERROR``. Участник в статусе ``ACTIVE`` готов к дальнейшей настройке. Если он находится в статусе ``PENDING_CREATE``, дождитесь, когда он перейдет в статус ``ACTIVE``. Чтобы проверить статус участника, используйте метод  ``GET /v2/lbaas/pools/{pool_id}/members/{member_id}``.",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "member": {
+                    "$ref": "#/components/schemas/MemberCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "member": {
+                      "$ref": "#/components/schemas/Member"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "503": {
+            "description": "Сервис временно недоступен"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить, удалить или создать участников пула",
+        "description": "Метод позволяет массово изменять или удалять существующих участников пула, а также создавать новых.\n\nВ теле запроса передается список объектов с информацией об участниках пула. Существующий участник пула однозначно определяется комбинацией значений параметров ``address`` и ``protocol_port``.\n\nДля изменения участника укажите объект с существующей комбинацией значений ``address`` и ``protocol_port`` и с новыми значениями других параметров.\n\nДля создания нового участника укажите объект с новой комбинацией значений ``address`` и ``protocol_port``, другие параметры заполните при необходимости.\n\nДля удаления участника не указывайте объект с его комбинацией значений ``address`` и ``protocol_port``. Если в параметре ``additive_only`` передано значение ``true``, такие участники не будут удалены.\n\nПример:\n\nПул состоит из участников с комбинациями ``192.0.2.15:80`` и ``192.0.2.16:80``. Отправлен запрос PUT для участников с комбинациями ``192.0.2.16:80`` и ``192.0.2.17:80``. После выполнения запроса:\n\n- Участник ``192.0.2.15:80`` удален, так как его не было в запросе.\n\n- Участник ``192.0.2.16:80`` изменен в соответствии с данными из запроса.\n\n- Участник ``192.0.2.17:80`` создан, так как его не было в пуле до выполнения запроса.\n\nПри успешном выполнении запроса тело ответа не возвращается. Для проверки изменений используйте метод ``GET /v2/lbaas/pools/{pool_id}/members``.",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          },
+          {
+            "$ref": "#/components/parameters/additive_only"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MembersUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "503": {
+            "description": "Сервис временно недоступен"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/pools/{pool_id}/members/{member_id}": {
+      "get": {
+        "summary": "Получить информацию об участнике пула",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          },
+          {
+            "$ref": "#/components/parameters/member_id"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "member": {
+                      "$ref": "#/components/schemas/Member"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить участника пула",
+        "description": "Метод изменяет участника пула. В ответе возвращается объект, содержащий уникальный идентификатор измененного участника пула и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_UPDATE`` или ``ERROR``. Если участник пула находится в статусе ``PENDING_UPDATE``, дождитесь, когда он перейдет в статус ``ACTIVE`` для дальнейшей работы с ним. Чтобы проверить статус участника пула, используйте метод  ``GET /v2/lbaas/pools/{pool_id}/members/{member_id}``.",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          },
+          {
+            "$ref": "#/components/parameters/member_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "member": {
+                    "$ref": "#/components/schemas/MemberUpdate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "member": {
+                      "$ref": "#/components/schemas/Member"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить участника пула",
+        "tags": [
+          "members"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pool_id"
+          },
+          {
+            "$ref": "#/components/parameters/member_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/healthmonitors": {
+      "get": {
+        "summary": "Получить список healthcheck-объектов",
+        "description": "Метод возвращает список healthcheck-объектов по заданным фильтрам. В качестве фильтров можно указывать верхнеуровневые атрибуты healthcheck-объектов, например ``name``. Если задано несколько фильтров, к ним применяется операция «И».",
+        "tags": [
+          "health-monitors"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/marker"
+          },
+          {
+            "$ref": "#/components/parameters/page_reverse"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          },
+          {
+            "$ref": "#/components/parameters/sort_key"
+          },
+          {
+            "$ref": "#/components/parameters/sort_dir"
+          },
+          {
+            "$ref": "#/components/parameters/tags"
+          },
+          {
+            "$ref": "#/components/parameters/tags-any"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags"
+          },
+          {
+            "$ref": "#/components/parameters/not-tags-any"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Healthmonitors"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать healthcheck-объект",
+        "description": "Метод создает healthcheck-объект. В ответе возвращается объект, содержащий уникальный идентификатор созданного healthcheck-объекта и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_CREATE`` или ``ERROR``. Healthcheck-объект в статусе ``ACTIVE`` готов к дальнейшей настройке. Если он находится в статусе ``PENDING_CREATE``, дождитесь, когда он перейдет в статус ``ACTIVE``. Чтобы проверить статус healthcheck-объекта, используйте метод  ``GET /v2/lbaas/healthmonitors/{healthmonitor_id}``.",
+        "tags": [
+          "health-monitors"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "healthmonitor": {
+                    "$ref": "#/components/schemas/HealthmonitorCreate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "healthmonitor": {
+                      "$ref": "#/components/schemas/Healthmonitor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "503": {
+            "description": "Сервис временно недоступен"
+          }
+        }
+      }
+    },
+    "/v2/lbaas/healthmonitors/{healthmonitor_id}": {
+      "get": {
+        "summary": "Получить информацию о healthcheck-объекте",
+        "tags": [
+          "health-monitors"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/healthmonitor_id"
+          },
+          {
+            "$ref": "#/components/parameters/fields"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "healthmonitor": {
+                      "$ref": "#/components/schemas/Healthmonitor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить healthcheck-объект",
+        "description": "Метод изменяет healthcheck-объект. В ответе возвращается объект, содержащий уникальный идентификатор измененного healthcheck-объекта и его статус ``provisioning_status``, который может быть равен ``ACTIVE``, ``PENDING_UPDATE`` или ``ERROR``. Если healthcheck-объект находится в статусе ``PENDING_UPDATE``, дождитесь, когда он перейдет в статус ``ACTIVE`` для дальнейшей работы с ним. Чтобы проверить статус healthcheck-объекта, используйте метод  ``GET /v2/lbaas/healthmonitors/{healthmonitor_id}``.",
+        "tags": [
+          "health-monitors"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/healthmonitor_id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "healthmonitor": {
+                    "$ref": "#/components/schemas/HealthmonitorUpdate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "healthmonitor": {
+                      "$ref": "#/components/schemas/Healthmonitor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить healthcheck-объект",
+        "tags": [
+          "health-monitors"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/healthmonitor_id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "400": {
+            "description": "Некорректный запрос"
+          },
+          "401": {
+            "description": "Ошибка аутентификации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "409": {
+            "description": "Конфликт"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "tags": {
+        "name": "tags",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ресурсы, у которых есть все теги из списка. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "tags-any": {
+        "name": "tags-any",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ресурсы, у которых есть любой тег из списка. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "not-tags": {
+        "name": "not-tags",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ресурсы, у которых нет ни одного тега из списка. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "not-tags-any": {
+        "name": "not-tags-any",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Фильтр по тегам. Возвращает ресурсы, у которых нет хотя бы одного тега из списка. Теги в запросе должны быть разделены запятой",
+        "required": false
+      },
+      "sort_key": {
+        "name": "sort_key",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Атрибут, по которому сортируются ВМ в ответе",
+        "required": false
+      },
+      "sort_dir": {
+        "name": "sort_dir",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "asc",
+            "desc"
+          ]
+        },
+        "description": "Направление сортировки. Возможные значения:\n\n``asc`` — по возрастанию;\n\n``desc`` — по убыванию",
+        "required": false
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "schema": {
+          "type": "integer"
+        },
+        "description": "Максимальное количество элементов, возвращаемых в одном ответе. В последующих запросах указывайте в параметре ``marker`` идентификатор последнего элемента из ответа, чтобы получить следующий набор элементов",
+        "required": false
+      },
+      "marker": {
+        "name": "marker",
+        "in": "query",
+        "schema": {
+          "type": "string"
+        },
+        "description": "Маркер пагинации для больших наборов данных",
+        "required": false
+      },
+      "page_reverse": {
+        "name": "page_reverse",
+        "in": "query",
+        "schema": {
+          "type": "boolean"
+        },
+        "description": "Направление отображения элементов в ответе"
+      },
+      "fields": {
+        "name": "fields",
+        "in": "query",
+        "schema": {
+          "type": "string",
+          "example": "name"
+        },
+        "description": "Атрибут, возвращаемый в ответе. Можно указать несколько параметров ``fields``, если нужно вернуть несколько атрибутов в ответе, например ``fields=id&fields=name``",
+        "required": false
+      },
+      "loadbalancer_id": {
+        "name": "loadbalancer_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "UUID"
+        },
+        "description": "Идентификатор балансировщика нагрузки",
+        "required": true
+      },
+      "cascade": {
+        "name": "cascade",
+        "in": "query",
+        "schema": {
+          "type": "boolean"
+        },
+        "description": "Если ``true``, будут удалены все дочерние ресурсы балансировщика нагрузки",
+        "required": false
+      },
+      "listener_id": {
+        "name": "listener_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "UUID"
+        },
+        "description": "Идентификатор прослушивателя",
+        "required": true
+      },
+      "pool_id": {
+        "name": "pool_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "UUID"
+        },
+        "description": "Идентификатор пула",
+        "required": true
+      },
+      "member_id": {
+        "name": "member_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "UUID"
+        },
+        "description": "Идентификатор участника пула",
+        "required": true
+      },
+      "additive_only": {
+        "name": "additive_only",
+        "in": "query",
+        "schema": {
+          "type": "boolean",
+          "default": false
+        },
+        "description": "Если ``true``, участники пула, которые не были указаны в теле запроса, не будут удалены",
+        "required": false
+      },
+      "healthmonitor_id": {
+        "name": "healthmonitor_id",
+        "in": "path",
+        "schema": {
+          "type": "string",
+          "format": "UUID"
+        },
+        "description": "Идентификатор healthcheck-объекта",
+        "required": true
+      }
+    },
+    "schemas": {
+      "Loadbalancers": {
+        "type": "object",
+        "properties": {
+          "loadbalancers": {
+            "type": "array",
+            "description": "Список балансировщиков нагрузки",
+            "items": {
+              "$ref": "#/components/schemas/Loadbalancer"
+            }
+          }
+        }
+      },
+      "Loadbalancer": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор балансировщика нагрузки"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Имя зоны доступности"
+          },
+          "listeners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор прослушивателя"
+                }
+              }
+            },
+            "description": "Список идентификаторов прослушивателей"
+          },
+          "operating_status": {
+            "type": "string",
+            "description": "Статус работы ресурса",
+            "enum": [
+              "ONLINE",
+              "DRAINING",
+              "OFFLINE",
+              "DEGRADED",
+              "ERROR",
+              "NO_MONITOR"
+            ]
+          },
+          "provisioning_status": {
+            "type": "string",
+            "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится ресурс",
+            "enum": [
+              "ACTIVE",
+              "ERROR",
+              "PENDING_CREATE",
+              "PENDING_UPDATE",
+              "PENDING_DELETE"
+            ]
+          },
+          "pools": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор пула"
+                }
+              }
+            },
+            "description": "Список идентификаторов пулов"
+          },
+          "provider": {
+            "type": "string",
+            "example": "amphora",
+            "enum": [
+              "amphora"
+            ],
+            "description": "Название программного компонента драйвера, реализующего механизмы управлениями балансировщиками"
+          },
+          "purpose": {
+            "type": "object",
+            "nullable": true,
+            "description": "Тип балансировщика нагрузки: стандартный или сервисный. Для стандартного балансировщика в параметре ``purpose`` возвращается значение ``null``",
+            "required": [
+              "sid",
+              "cluster_id"
+            ],
+            "properties": {
+              "sid": {
+                "type": "string",
+                "description": "Сервис, который использует балансировщик нагрузки"
+              },
+              "cluster_id": {
+                "type": "string",
+                "format": "UUID",
+                "description": "Идентификатор ресурса, к которому относится балансировщик нагрузки"
+              }
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "vip_address": {
+            "type": "string",
+            "description": "Виртуальный IP-адрес"
+          },
+          "vip_network_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор сети для виртуального IP-адреса"
+          },
+          "vip_port_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор порта для виртуального IP-адреса"
+          },
+          "vip_subnet_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор подсети для виртуального IP-адреса"
+          }
+        }
+      },
+      "LoadbalancerCreate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Имя зоны доступности"
+          },
+          "listeners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор прослушивателя"
+                }
+              }
+            },
+            "description": "Список идентификаторов прослушивателей"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "vip_address": {
+            "type": "string",
+            "description": "Виртуальный IP-адрес"
+          },
+          "vip_network_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор сети для виртуального IP-адреса. Должен быть указать хотя бы один из параметров ``vip_network_id``, ``vip_port_id``, ``vip_subnet_id``. Если указан ``vip_network_id``, но не указан ``vip_subnet_id`` или ``vip_address``, подсеть будет выбрана автоматически из указанной сети"
+          },
+          "vip_port_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор порта для виртуального IP-адреса. Должен быть указать хотя бы один из параметров ``vip_network_id``, ``vip_port_id``, ``vip_subnet_id``. Если указанный порт имеет несколько подсетей, необходимо указать ``vip_subnet_id`` или ``vip_address``, чтобы уточнить, какой адрес следует использовать для виртуального IP"
+          },
+          "vip_subnet_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор подсети для виртуального IP-адреса. Должен быть указать хотя бы один из параметров ``vip_network_id``, ``vip_port_id``, ``vip_subnet_id``. Если указан ``vip_subnet_id``, но не указан ``vip_address``, в указанной подсети будет создан порт Neutron и выделен IP-адрес"
+          }
+        }
+      },
+      "LoadbalancerUpdate": {
+        "type": "object",
+        "properties": {
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          }
+        }
+      },
+      "Stats": {
+        "type": "object",
+        "required": [
+          "stats"
+        ],
+        "properties": {
+          "stats": {
+            "type": "object",
+            "required": [
+              "active_connections",
+              "bytes_in",
+              "bytes_out",
+              "request_errors",
+              "total_connections"
+            ],
+            "properties": {
+              "active_connections": {
+                "type": "integer",
+                "description": "Количество активных подключений"
+              },
+              "bytes_in": {
+                "type": "integer",
+                "description": "Количество полученный байтов"
+              },
+              "bytes_out": {
+                "type": "integer",
+                "description": "Количество отправленных байтов"
+              },
+              "request_errors": {
+                "type": "integer",
+                "description": "Количество запросов, которые не удалось выполнить"
+              },
+              "total_connections": {
+                "type": "integer",
+                "description": "Общее количество подключений"
+              }
+            }
+          }
+        }
+      },
+      "LoadbalancerStatuses": {
+        "type": "object",
+        "required": [
+          "statuses"
+        ],
+        "properties": {
+          "statuses": {
+            "type": "object",
+            "description": "Состояния балансировщика нагрузки и его ресурсов",
+            "required": [
+              "loadbalancer"
+            ],
+            "properties": {
+              "loadbalancer": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "id",
+                  "operating_status",
+                  "provisioning_status",
+                  "listeners",
+                  "pools"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Имя балансировщика нагрузки"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "Идентификатор балансировщика нагрузки"
+                  },
+                  "operating_status": {
+                    "type": "string",
+                    "description": "Статус работы балансировщика нагрузки",
+                    "enum": [
+                      "ONLINE",
+                      "DRAINING",
+                      "OFFLINE",
+                      "DEGRADED",
+                      "ERROR",
+                      "NO_MONITOR"
+                    ]
+                  },
+                  "provisioning_status": {
+                    "type": "string",
+                    "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится балансировщик нагрузки",
+                    "enum": [
+                      "ACTIVE",
+                      "ERROR",
+                      "PENDING_CREATE",
+                      "PENDING_UPDATE",
+                      "PENDING_DELETE"
+                    ]
+                  },
+                  "listeners": {
+                    "description": "Список статусов прослушивателей",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Имя прослушивателя"
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "Идентификатор прослушивателя"
+                        },
+                        "operating_status": {
+                          "type": "string",
+                          "description": "Статус работы прослушивателя",
+                          "enum": [
+                            "ONLINE",
+                            "DRAINING",
+                            "OFFLINE",
+                            "DEGRADED",
+                            "ERROR",
+                            "NO_MONITOR"
+                          ]
+                        },
+                        "provisioning_status": {
+                          "type": "string",
+                          "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится прослушиватель",
+                          "enum": [
+                            "ACTIVE",
+                            "ERROR",
+                            "PENDING_CREATE",
+                            "PENDING_UPDATE",
+                            "PENDING_DELETE"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "pools": {
+                    "description": "Список статусов пулов",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "Имя пуля"
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "Идентификатор пула"
+                        },
+                        "operating_status": {
+                          "type": "string",
+                          "description": "Статус работы пула",
+                          "enum": [
+                            "ONLINE",
+                            "DRAINING",
+                            "OFFLINE",
+                            "DEGRADED",
+                            "ERROR",
+                            "NO_MONITOR"
+                          ]
+                        },
+                        "provisioning_status": {
+                          "type": "string",
+                          "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится пул",
+                          "enum": [
+                            "ACTIVE",
+                            "ERROR",
+                            "PENDING_CREATE",
+                            "PENDING_UPDATE",
+                            "PENDING_DELETE"
+                          ]
+                        },
+                        "healthmonitor": {
+                          "type": "object",
+                          "description": "",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "Имя healthcheck-объекта"
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "Идентификатор healthcheck-объекта"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "TCP",
+                                "HTTP"
+                              ],
+                              "description": "Тип проверки"
+                            },
+                            "provisioning_status": {
+                              "type": "string",
+                              "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится healthcheck-объект",
+                              "enum": [
+                                "ACTIVE",
+                                "ERROR",
+                                "PENDING_CREATE",
+                                "PENDING_UPDATE",
+                                "PENDING_DELETE"
+                              ]
+                            }
+                          }
+                        },
+                        "members": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "description": "Имя участника пуля"
+                              },
+                              "id": {
+                                "type": "string",
+                                "description": "Идентификатор участника пула"
+                              },
+                              "address": {
+                                "type": "string",
+                                "description": "IP-адрес виртуальной машины, которая является участником пула"
+                              },
+                              "protocol_port": {
+                                "type": "integer",
+                                "description": "Номер порта назначения"
+                              },
+                              "operating_status": {
+                                "type": "string",
+                                "description": "Статус работы участника пула",
+                                "enum": [
+                                  "ONLINE",
+                                  "DRAINING",
+                                  "OFFLINE",
+                                  "DEGRADED",
+                                  "ERROR",
+                                  "NO_MONITOR"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Listeners": {
+        "type": "object",
+        "properties": {
+          "listeners": {
+            "type": "array",
+            "description": "Список прослушивателей",
+            "items": {
+              "$ref": "#/components/schemas/Listener"
+            }
+          }
+        }
+      },
+      "Listener": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор прослушивателя"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "operating_status": {
+            "type": "string",
+            "description": "Статус работы ресурса",
+            "enum": [
+              "ONLINE",
+              "DRAINING",
+              "OFFLINE",
+              "DEGRADED",
+              "ERROR",
+              "NO_MONITOR"
+            ]
+          },
+          "provisioning_status": {
+            "type": "string",
+            "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится ресурс",
+            "enum": [
+              "ACTIVE",
+              "ERROR",
+              "PENDING_CREATE",
+              "PENDING_UPDATE",
+              "PENDING_DELETE"
+            ]
+          },
+          "allowed_cidrs": {
+            "type": "array",
+            "description": "Список CIDR, с которых разрешены подключения к балансировщику. Если параметр не задан, разрешено подключение с любых IP-адресов, что эквивалентно CIDR ``0.0.0.0/0``",
+            "items": {
+              "type": "string"
+            }
+          },
+          "client_authentication": {
+            "type": "string",
+            "enum": [
+              "NONE",
+              "OPTIONAL",
+              "MANDATORY"
+            ],
+            "description": "Режим аутентификации TLS"
+          },
+          "client_ca_tls_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с SSL-сертификатом в сервисе Barbican. Сертификат должен быть в формате PEM. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "client_crl_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с отозванными SSL-сертификатами в сервисе Barbican. Сертификаты должен быть в формате PEM. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "connection_limit": {
+            "type": "integer",
+            "default": -1,
+            "description": "Максимальное количество подключений, разрешенных для этого прослушивателя. Значение ``-1`` соответствует бесконечному количеству подключений"
+          },
+          "default_pool_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор пула"
+          },
+          "default_tls_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с SSL-сертификатом в сервисе Barbican. Сертификат должен быть в формате PKCS12. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "insert_headers": {
+            "type": "object",
+            "description": "Параметр включает отправку на бэкенд указанных HTTP-заголовков",
+            "example": {
+              "X-Forwarded-For": "true"
+            }
+          },
+          "l7policies": {
+            "type": "array",
+            "description": "Список идентификаторов политик L7",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор политики L7"
+                }
+              }
+            }
+          },
+          "loadbalancers": {
+            "type": "array",
+            "description": "Список идентификаторов балансировщиков нагрузки",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор балансировщика нагрузки"
+                }
+              }
+            }
+          },
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "HTTP",
+              "HTTPS",
+              "TCP",
+              "UDP"
+            ],
+            "description": "Протокол балансировки"
+          },
+          "protocol_port": {
+            "type": "integer",
+            "description": "Номер порта"
+          },
+          "sni_container_refs": {
+            "type": "array",
+            "description": "Список ссылок на контейнеры с SSL-сертификатами в сервисе Barbican. Сертификаты должны быть в формате PKCS12. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timeout_client_data": {
+            "type": "integer",
+            "description": "Тайм-аут неактивности клиента в миллисекундах",
+            "default": 50000
+          },
+          "timeout_member_connect": {
+            "type": "integer",
+            "description": "Тайм-аут установки соединения с бэкендом в миллисекундах",
+            "default": 5000
+          },
+          "timeout_member_data": {
+            "type": "integer",
+            "description": "Тайм-аут неактивности бэкенда в миллисекундах",
+            "default": 50000
+          },
+          "timeout_tcp_inspect": {
+            "type": "integer",
+            "description": "Тайм-аут ожидания дополнительных TCP-сегментов при инспекции контента в миллисекундах",
+            "default": 0
+          }
+        }
+      },
+      "ListenerCreate": {
+        "type": "object",
+        "required": [
+          "loadbalancer_id"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "loadbalancer_id": {
+            "type": "string",
+            "description": "Идентификатор балансировщика нагрузки"
+          },
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "HTTP",
+              "HTTPS",
+              "TCP",
+              "UDP"
+            ],
+            "description": "Протокол балансировки"
+          },
+          "protocol_port": {
+            "type": "integer",
+            "description": "Номер порта"
+          },
+          "allowed_cidrs": {
+            "type": "array",
+            "description": "Список CIDR, с которых разрешены подключения к балансировщику. Если параметр не задан, разрешено подключение с любых IP-адресов, что эквивалентно CIDR ``0.0.0.0/0``",
+            "items": {
+              "type": "string"
+            }
+          },
+          "client_authentication": {
+            "type": "string",
+            "enum": [
+              "NONE",
+              "OPTIONAL",
+              "MANDATORY"
+            ],
+            "description": "Режим аутентификации TLS"
+          },
+          "client_ca_tls_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с SSL-сертификатом в сервисе Barbican. Сертификат должен быть в формате PEM. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "client_crl_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с отозванными SSL-сертификатами в сервисе Barbican. Сертификаты должен быть в формате PEM. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "connection_limit": {
+            "type": "integer",
+            "default": -1,
+            "description": "Максимальное количество подключений, разрешенных для этого прослушивателя. Значение ``-1`` соответствует бесконечному количеству подключений"
+          },
+          "default_pool_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор пула"
+          },
+          "default_tls_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с SSL-сертификатом в сервисе Barbican. Сертификат должен быть в формате PKCS12. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "insert_headers": {
+            "type": "object",
+            "description": "Параметр включает отправку на бэкенд указанных HTTP-заголовков. Заголовки задаются формате ключ — значение, где ключ — название заголовка, а в качестве значения указывается ``true``",
+            "example": {
+              "X-Forwarded-For": "true"
+            },
+            "properties": {
+              "X-Forwarded-For": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ],
+                "description": ""
+              }
+            }
+          },
+          "l7policies": {
+            "type": "array",
+            "description": "Список идентификаторов политик L7",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор политики L7"
+                }
+              }
+            }
+          },
+          "sni_container_refs": {
+            "type": "array",
+            "description": "Список ссылок на контейнеры с SSL-сертификатами в сервисе Barbican. Сертификаты должны быть в формате PKCS12. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timeout_client_data": {
+            "type": "integer",
+            "description": "Тайм-аут неактивности клиента в миллисекундах",
+            "default": 50000
+          },
+          "timeout_member_connect": {
+            "type": "integer",
+            "description": "Тайм-аут установки соединения с бэкендом в миллисекундах",
+            "default": 5000
+          },
+          "timeout_member_data": {
+            "type": "integer",
+            "description": "Тайм-аут неактивности бэкенда в миллисекундах",
+            "default": 50000
+          },
+          "timeout_tcp_inspect": {
+            "type": "integer",
+            "description": "Тайм-аут ожидания дополнительных TCP-сегментов при инспекции контента в миллисекундах",
+            "default": 0
+          }
+        }
+      },
+      "ListenerUpdate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "allowed_cidrs": {
+            "type": "array",
+            "description": "Список CIDR, с которых разрешены подключения к балансировщику. Если параметр не задан, разрешено подключение с любых IP-адресов, что эквивалентно CIDR ``0.0.0.0/0``",
+            "items": {
+              "type": "string"
+            }
+          },
+          "client_authentication": {
+            "type": "string",
+            "enum": [
+              "NONE",
+              "OPTIONAL",
+              "MANDATORY"
+            ],
+            "description": "Режим аутентификации TLS"
+          },
+          "client_ca_tls_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с SSL-сертификатом в сервисе Barbican. Сертификат должен быть в формате PEM. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "client_crl_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с отозванными SSL-сертификатами в сервисе Barbican. Сертификаты должен быть в формате PEM. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "connection_limit": {
+            "type": "integer",
+            "default": -1,
+            "description": "Максимальное количество подключений, разрешенных для этого прослушивателя. Значение ``-1`` соответствует бесконечному количеству подключений"
+          },
+          "default_pool_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор пула"
+          },
+          "default_tls_container_ref": {
+            "type": "string",
+            "description": "Ссылка на контейнер с SSL-сертификатом в сервисе Barbican. Сертификат должен быть в формате PKCS12. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>"
+          },
+          "insert_headers": {
+            "type": "object",
+            "description": "Параметр включает отправку на бэкенд указанных HTTP-заголовков. Заголовки задаются формате ключ — значение, где ключ — название заголовка, а в качестве значения указывается ``true``",
+            "example": {
+              "X-Forwarded-For": "true"
+            },
+            "properties": {
+              "X-Forwarded-For": {
+                "type": "string",
+                "enum": [
+                  "true"
+                ],
+                "description": ""
+              }
+            }
+          },
+          "sni_container_refs": {
+            "type": "array",
+            "description": "Список ссылок на контейнеры с SSL-сертификатами в сервисе Barbican. Сертификаты должны быть в формате PKCS12. Дополнительная информация — в <a href='https://docs.openstack.org/api-guide/key-manager/'>документации OpenStack</a>",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timeout_client_data": {
+            "type": "integer",
+            "description": "Тайм-аут неактивности клиента в миллисекундах",
+            "default": 50000
+          },
+          "timeout_member_connect": {
+            "type": "integer",
+            "description": "Тайм-аут установки соединения с бэкендом в миллисекундах",
+            "default": 5000
+          },
+          "timeout_member_data": {
+            "type": "integer",
+            "description": "Тайм-аут неактивности бэкенда в миллисекундах",
+            "default": 50000
+          },
+          "timeout_tcp_inspect": {
+            "type": "integer",
+            "description": "Тайм-аут ожидания дополнительных TCP-сегментов при инспекции контента в миллисекундах",
+            "default": 0
+          }
+        }
+      },
+      "Pools": {
+        "type": "object",
+        "properties": {
+          "pools": {
+            "type": "array",
+            "description": "Список пулов",
+            "items": {
+              "$ref": "#/components/schemas/Pool"
+            }
+          }
+        }
+      },
+      "Pool": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор пула"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "lb_algorithm": {
+            "type": "string",
+            "description": "Метод балансировки",
+            "enum": [
+              "LEAST_CONNECTIONS",
+              "ROUND_ROBIN",
+              "SOURCE_IP"
+            ]
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "ca_tls_container_ref": {
+
+          },
+          "crl_container_ref": {
+
+          },
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "HTTP",
+              "HTTPS",
+              "TCP",
+              "UDP",
+              "PROXY"
+            ],
+            "description": "Протокол назначения"
+          },
+          "loadbalancers": {
+            "type": "array",
+            "description": "Список идентификаторов балансировщиков нагрузки",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор балансировщика нагрузки"
+                }
+              }
+            }
+          },
+          "listeners": {
+            "type": "array",
+            "description": "Список идентификаторов прослушивателей",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор прослушивателя"
+                }
+              }
+            }
+          },
+          "members": {
+            "type": "array",
+            "description": "Список идентификаторов участников пула",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор участника пула"
+                }
+              }
+            }
+          },
+          "operating_status": {
+            "type": "string",
+            "description": "Статус работы ресурса",
+            "enum": [
+              "ONLINE",
+              "DRAINING",
+              "OFFLINE",
+              "DEGRADED",
+              "ERROR",
+              "NO_MONITOR"
+            ]
+          },
+          "provisioning_status": {
+            "type": "string",
+            "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится ресурс",
+            "enum": [
+              "ACTIVE",
+              "ERROR",
+              "PENDING_CREATE",
+              "PENDING_UPDATE",
+              "PENDING_DELETE"
+            ]
+          },
+          "session_persistence": {
+            "default": null,
+            "type": "object",
+            "description": "Опция, которая обеспечивает длительные сессии соединения с сервером c сохранением данных на протяжении всей сессии.\n\nЕсли опция включена, запросы распределяются между серверами по выбранному методу балансировки, но после соединения сессия закрепляется за выбранным сервером. Все последующие запросы этой сессии будут направляться на тот же сервер без учета метода балансировки. Сессия не прекращается, пока пользователь сам не завершит ее или пока сервер не станет недоступным. В таком случае запросы будут отправляться к другому серверу по правилам балансировки",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "APP_COOKIE",
+                  "HTTP_COOKIE",
+                  "SOURCE_IP"
+                ],
+                "description": "Тип сессии.\n\nВозможные значения:\n\n``APP_COOKIE`` — сессия определяется по cookie, заданной в коде приложения. Если выбрано это значение, в параметре ``cookie_name`` укажите cookie, по которой определяется сессия.\n\n``HTTP_COOKIE`` — сессия определяется по cookie, которую балансировщик нагрузки создает во время соединения с сервером и прикрепляет к сессии.\n\n``SOURCE_IP`` — для привязки сессии к серверу используется IP-адрес клиента. Используйте этот тип только если IP-адрес клиента не изменяется за время сессии"
+              },
+              "cookie_name": {
+                "type": "string",
+                "description": "Cookie, по которой определяется сессия"
+              },
+              "persistence_timeout": {
+                "type": "integer",
+                "default": 360,
+                "description": "Тайм-аут, по истечении которого поток UDP может быть перенаправлен другому участнику. Только для значения ``SOURCE_IP`` в параметре ``type``"
+              },
+              "persistence_granularity": {
+                "type": "string",
+                "default": "255.255.255.255",
+                "description": "Маска сети, используемая для определения устойчивости UDP-сеанса. Только для значения ``SOURCE_IP`` в параметре ``type``"
+              }
+            }
+          },
+          "tls_enabled": {
+            "type": "boolean",
+            "default": false,
+            "description": ""
+          },
+          "tls_container_ref": {
+
+          },
+          "allbackups": {
+            "type": "boolean",
+            "default": true,
+            "description": ""
+          },
+          "shutdown_sessions": {
+            "type": "boolean",
+            "default": false,
+            "description": "Если ``true``, все подключения к бэкенду будут немедленно разорваны после того, как healthcheck-объект отметит бэкенд как неработающий"
+          }
+        }
+      },
+      "PoolCreate": {
+        "type": "object",
+        "required": [
+          "protocol",
+          "lb_algorithm"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "lb_algorithm": {
+            "type": "string",
+            "description": "Метод балансировки",
+            "enum": [
+              "LEAST_CONNECTIONS",
+              "ROUND_ROBIN",
+              "SOURCE_IP"
+            ]
+          },
+          "listener_id": {
+            "type": "string",
+            "description": "Идентификатор прослушивателя. Должен быть указан либо ``listener_id``, либо ``loadbalancer_id``"
+          },
+          "loadbalancer_id": {
+            "type": "string",
+            "description": "Идентификатор балансировщика. Должен быть указан либо ``listener_id``, либо ``loadbalancer_id``"
+          },
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "HTTP",
+              "HTTPS",
+              "TCP",
+              "UDP",
+              "PROXY"
+            ],
+            "description": "Протокол назначения"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "ca_tls_container_ref": {
+
+          },
+          "crl_container_ref": {
+
+          },
+          "session_persistence": {
+            "default": null,
+            "type": "object",
+            "description": "Опция, которая обеспечивает длительные сессии соединения с сервером c сохранением данных на протяжении всей сессии.\n\nЕсли опция включена, запросы распределяются между серверами по выбранному методу балансировки, но после соединения сессия закрепляется за выбранным сервером. Все последующие запросы этой сессии будут направляться на тот же сервер без учета метода балансировки. Сессия не прекращается, пока пользователь сам не завершит ее или пока сервер не станет недоступным. В таком случае запросы будут отправляться к другому серверу по правилам балансировки",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "APP_COOKIE",
+                  "HTTP_COOKIE",
+                  "SOURCE_IP"
+                ],
+                "description": "Тип сессии.\n\nВозможные значения:\n\n``APP_COOKIE`` — сессия определяется по cookie, заданной в коде приложения. Если выбрано это значение, в параметре ``cookie_name`` укажите cookie, по которой определяется сессия.\n\n``HTTP_COOKIE`` — сессия определяется по cookie, которую балансировщик нагрузки создает во время соединения с сервером и прикрепляет к сессии.\n\n``SOURCE_IP`` — для привязки сессии к серверу используется IP-адрес клиента. Используйте этот тип только если IP-адрес клиента не изменяется за время сессии"
+              },
+              "cookie_name": {
+                "type": "string",
+                "description": "Cookie, по которой определяется сессия"
+              },
+              "persistence_timeout": {
+                "type": "integer",
+                "default": 360,
+                "description": "Тайм-аут, по истечении которого поток UDP может быть перенаправлен другому участнику. Только для значения ``SOURCE_IP`` в параметре ``type``"
+              },
+              "persistence_granularity": {
+                "type": "string",
+                "default": "255.255.255.255",
+                "description": "Маска сети, используемая для определения устойчивости UDP-сеанса. Только для значения ``SOURCE_IP`` в параметре ``type``"
+              }
+            }
+          },
+          "tls_enabled": {
+            "type": "boolean",
+            "default": false,
+            "description": ""
+          },
+          "tls_container_ref": {
+
+          },
+          "allbackups": {
+            "type": "boolean",
+            "default": true,
+            "description": ""
+          },
+          "shutdown_sessions": {
+            "type": "boolean",
+            "default": false,
+            "description": "Если ``true``, все подключения к бэкенду будут немедленно разорваны после того, как сервис проверки доступности бэкендов (healthcheck) отметит бэкенд как неработающий"
+          }
+        }
+      },
+      "PoolUpdate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "lb_algorithm": {
+            "type": "string",
+            "description": "Метод балансировки",
+            "enum": [
+              "LEAST_CONNECTIONS",
+              "ROUND_ROBIN",
+              "SOURCE_IP"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "ca_tls_container_ref": {
+
+          },
+          "crl_container_ref": {
+
+          },
+          "session_persistence": {
+            "default": null,
+            "type": "object",
+            "description": "Опция, которая обеспечивает длительные сессии соединения с сервером c сохранением данных на протяжении всей сессии.\n\nЕсли опция включена, запросы распределяются между серверами по выбранному методу балансировки, но после соединения сессия закрепляется за выбранным сервером. Все последующие запросы этой сессии будут направляться на тот же сервер без учета метода балансировки. Сессия не прекращается, пока пользователь сам не завершит ее или пока сервер не станет недоступным. В таком случае запросы будут отправляться к другому серверу по правилам балансировки",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "APP_COOKIE",
+                  "HTTP_COOKIE",
+                  "SOURCE_IP"
+                ],
+                "description": "Тип сессии.\n\nВозможные значения:\n\n``APP_COOKIE`` — сессия определяется по cookie, заданной в коде приложения. Если выбрано это значение, в параметре ``cookie_name`` укажите cookie, по которой определяется сессия.\n\n``HTTP_COOKIE`` — сессия определяется по cookie, которую балансировщик нагрузки создает во время соединения с сервером и прикрепляет к сессии.\n\n``SOURCE_IP`` — для привязки сессии к серверу используется IP-адрес клиента. Используйте этот тип только если IP-адрес клиента не изменяется за время сессии"
+              },
+              "cookie_name": {
+                "type": "string",
+                "description": "Cookie, по которой определяется сессия"
+              },
+              "persistence_timeout": {
+                "type": "integer",
+                "default": 360,
+                "description": "Тайм-аут, по истечении которого поток UDP может быть перенаправлен другому участнику. Только для значения ``SOURCE_IP`` в параметре ``type``"
+              },
+              "persistence_granularity": {
+                "type": "string",
+                "default": "255.255.255.255",
+                "description": "Маска сети, используемая для определения устойчивости UDP-сеанса. Только для значения ``SOURCE_IP`` в параметре ``type``"
+              }
+            }
+          },
+          "tls_enabled": {
+            "type": "boolean",
+            "default": false,
+            "description": ""
+          },
+          "tls_container_ref": {
+
+          },
+          "allbackups": {
+            "type": "boolean",
+            "default": true,
+            "description": ""
+          },
+          "shutdown_sessions": {
+            "type": "boolean",
+            "default": false,
+            "description": "Если ``true``, все подключения к бэкенду будут немедленно разорваны после того, как сервис проверки доступности бэкендов (healthcheck) отметит бэкенд как неработающий"
+          }
+        }
+      },
+      "Members": {
+        "type": "object",
+        "properties": {
+          "members": {
+            "type": "array",
+            "description": "Список участников пула",
+            "items": {
+              "$ref": "#/components/schemas/Member"
+            }
+          }
+        }
+      },
+      "Member": {
+        "type": "object",
+        "required": [
+          ""
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор пула"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "address": {
+            "type": "string",
+            "description": "IP-адрес виртуальной машины, которая является участником пула"
+          },
+          "subnet_id": {
+            "type": "string",
+            "description": "Идентификатор подсети, в которой находится виртуальная машина"
+          },
+          "protocol_port": {
+            "type": "integer",
+            "description": "Номер порта назначения"
+          },
+          "backup": {
+            "type": "boolean",
+            "description": "Параметр определяет, является ли участник пула резервным. Резервные участники получают трафик только тогда, когда все остальные участники отключены"
+          },
+          "monitor_address": {
+            "type": "string",
+            "default": null,
+            "description": "Альтернативный IP-адрес, используемый для мониторинга состояния виртуальной машины"
+          },
+          "monitor_port": {
+            "type": "integer",
+            "default": null,
+            "description": "Альтернативный номер порта назначения, используемый для мониторинга состояния виртуальной машины"
+          },
+          "operating_status": {
+            "type": "string",
+            "description": "Статус работы ресурса",
+            "enum": [
+              "ONLINE",
+              "DRAINING",
+              "OFFLINE",
+              "DEGRADED",
+              "ERROR",
+              "NO_MONITOR"
+            ]
+          },
+          "provisioning_status": {
+            "type": "string",
+            "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится ресурс",
+            "enum": [
+              "ACTIVE",
+              "ERROR",
+              "PENDING_CREATE",
+              "PENDING_UPDATE",
+              "PENDING_DELETE"
+            ]
+          },
+          "weight": {
+            "type": "integer",
+            "default": 1,
+            "minimum": 0,
+            "maximum": 256,
+            "description": "Вес участника пула. Определяет количество соединений, которые он обслуживает по сравнению с другими участниками пула. Например, участник с весом ``10`` получает в пять раз больше запросов, чем участник с весом ``2``. Значение ``0`` означает, что участник не получает новых соединений, но продолжает обслуживать существующие"
+          }
+        }
+      },
+      "MemberCreate": {
+        "type": "object",
+        "required": [
+          "address",
+          "protocol_port"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "address": {
+            "type": "string",
+            "description": "IP-адрес виртуальной машины, которая является участником пула. Эта виртуальная машина должна быть либо размещена в подсети, где находится балансировщик, либо доступна из этой подсети"
+          },
+          "subnet_id": {
+            "type": "string",
+            "description": "Идентификатор подсети, в которой находится виртуальная машина. Если не указано, будет использовано значение параметра ``vip_subnet_id`` балансировщика нагрузки"
+          },
+          "protocol_port": {
+            "type": "integer",
+            "description": "Номер порта назначения"
+          },
+          "backup": {
+            "type": "boolean",
+            "default": false,
+            "description": "Параметр определяет, является ли участник пула резервным. Резервные участники получают трафик только тогда, когда все остальные участники отключены"
+          },
+          "monitor_address": {
+            "type": "string",
+            "default": null,
+            "description": "Альтернативный IP-адрес, используемый для мониторинга состояния виртуальной машины"
+          },
+          "monitor_port": {
+            "type": "integer",
+            "default": null,
+            "description": "Альтернативный номер порта назначения, используемый для мониторинга состояния виртуальной машины"
+          },
+          "weight": {
+            "type": "integer",
+            "default": 1,
+            "minimum": 0,
+            "maximum": 256,
+            "description": "Вес участника пула. Определяет количество соединений, которые он обслуживает по сравнению с другими участниками пула. Например, участник с весом ``10`` получает в пять раз больше запросов, чем участник с весом ``2``. Значение ``0`` означает, что участник не получает новых соединений, но продолжает обслуживать существующие"
+          }
+        }
+      },
+      "MembersUpdate": {
+        "type": "object",
+        "properties": {
+          "members": {
+            "type": "array",
+            "description": "Список участников пула",
+            "items": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string",
+                  "description": "IP-адрес виртуальной машины, которая является участником пула. Существующий участник пула однозначно определяется комбинацией значений параметров ``address`` и ``protocol_port``"
+                },
+                "protocol_port": {
+                  "type": "integer",
+                  "description": "Номер порта назначения. Существующий участник пула однозначно определяется комбинацией значений параметров ``address`` и ``protocol_port``"
+                },
+                "subnet_id": {
+                  "type": "string",
+                  "description": "Новый идентификатор подсети, в которой находится виртуальная машина. Если не указано, будет использовано значение параметра ``vip_subnet_id`` балансировщика нагрузки"
+                },
+                "admin_state_up": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+                },
+                "backup": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Параметр определяет, является ли участник пула резервным. Резервные участники получают трафик только тогда, когда все остальные участники отключены"
+                },
+                "monitor_address": {
+                  "type": "string",
+                  "default": null,
+                  "description": "Новый альтернативный IP-адрес, используемый для мониторинга состояния виртуальной машины"
+                },
+                "monitor_port": {
+                  "type": "integer",
+                  "default": null,
+                  "description": "Новый альтернативный номер порта назначения, используемый для мониторинга состояния виртуальной машины"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Новое имя"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Новый список тегов"
+                },
+                "weight": {
+                  "type": "integer",
+                  "default": 1,
+                  "minimum": 0,
+                  "maximum": 256,
+                  "description": "Новый вес участника пула. Определяет количество соединений, которые он обслуживает по сравнению с другими участниками пула. Например, участник с весом ``10`` получает в пять раз больше запросов, чем участник с весом ``2``. Значение ``0`` означает, что участник не получает новых соединений, но продолжает обслуживать существующие"
+                }
+              }
+            }
+          }
+        }
+      },
+      "MemberUpdate": {
+        "type": "object",
+        "properties": {
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "backup": {
+            "type": "boolean",
+            "default": false,
+            "description": "Параметр определяет, является ли участник пула резервным. Резервные участники получают трафик только тогда, когда все остальные участники отключены"
+          },
+          "monitor_address": {
+            "type": "string",
+            "default": null,
+            "description": "Новый альтернативный IP-адрес, используемый для мониторинга состояния виртуальной машины"
+          },
+          "monitor_port": {
+            "type": "integer",
+            "default": null,
+            "description": "Новый альтернативный номер порта назначения, используемый для мониторинга состояния виртуальной машины"
+          },
+          "name": {
+            "type": "string",
+            "description": "Новое имя"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Новый список тегов"
+          },
+          "weight": {
+            "type": "integer",
+            "default": 1,
+            "minimum": 0,
+            "maximum": 256,
+            "description": "Новый вес участника пула. Определяет количество соединений, которые он обслуживает по сравнению с другими участниками пула. Например, участник с весом ``10`` получает в пять раз больше запросов, чем участник с весом ``2``. Значение ``0`` означает, что участник не получает новых соединений, но продолжает обслуживать существующие"
+          }
+        }
+      },
+      "Healthmonitors": {
+        "type": "object",
+        "properties": {
+          "healthmonitors": {
+            "type": "array",
+            "description": "Список healthcheck-объектов",
+            "items": {
+              "$ref": "#/components/schemas/Healthmonitor"
+            }
+          }
+        }
+      },
+      "Healthmonitor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор healthcheck-объекта"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "created_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время создания ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "updated_at": {
+            "type": "string",
+            "example": "2015-08-27T09:49:58-05:00",
+            "description": "Дата и время обновления ресурса. Формат: ``CCYY-MM-DDThh:mm:ss±hh:mm``. Значение ``±hh:mm`` указывает на часовой пояс (смещение от UTC)"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "pools": {
+            "type": "array",
+            "description": "Список идентификаторов пулов",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Идентификатор пула"
+                }
+              }
+            }
+          },
+          "delay": {
+            "type": "integer",
+            "description": "Задержка в секундах. Интервал между проверками"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "TCP",
+              "HTTP"
+            ],
+            "description": "Тип проверки"
+          },
+          "http_method": {
+            "type": "string",
+            "description": "Метод, который используется для проверки доступности. Только для типа проверки ``HTTP``"
+          },
+          "http_version": {
+            "type": "number",
+            "default": 1.0,
+            "enum": [
+              1.0,
+              1.1
+            ],
+            "description": "Версия HTTP. Только для типа проверки ``HTTP``"
+          },
+          "expected_codes": {
+            "type": "string",
+            "default": "200",
+            "description": "HTTP-статус, при получении которого проверка доступности считается успешной. Только для типа проверки ``HTTP``"
+          },
+          "url_path": {
+            "type": "string",
+            "default": "/",
+            "description": "Путь, по которому обращается healthcheck-объект для проверки доступности. Только для типа проверки ``HTTP``"
+          },
+          "domain_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "Доменное имя. Только для типа проверки ``HTTP``"
+          },
+          "max_retries": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Количество успешных проверок, после которого статус ``operating_status`` участника пула будет изменен на ``ONLINE``"
+          },
+          "max_retries_down": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Количество неуспешных проверок после которого статус ``operating_status`` участника пула будет изменен на ``ERROR``"
+          },
+          "operating_status": {
+            "type": "string",
+            "description": "Статус работы ресурса",
+            "enum": [
+              "ONLINE",
+              "DRAINING",
+              "OFFLINE",
+              "DEGRADED",
+              "ERROR",
+              "NO_MONITOR"
+            ]
+          },
+          "provisioning_status": {
+            "type": "string",
+            "description": "Статус, обозначающий на каком этапе своего жизненного цикла находится ресурс",
+            "enum": [
+              "ACTIVE",
+              "ERROR",
+              "PENDING_CREATE",
+              "PENDING_UPDATE",
+              "PENDING_DELETE"
+            ]
+          },
+          "timeout": {
+            "type": "integer",
+            "description": "Тайм-аут в секундах, после истечения которого считается, что бэкенд не отвечает на проверку. Значение должно быть меньше значения параметра ``delay``"
+          }
+        }
+      },
+      "HealthmonitorCreate": {
+        "type": "object",
+        "required": [
+          "delay",
+          "max_retries",
+          "pool_id",
+          "timeout",
+          "type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "pool_id": {
+            "type": "string",
+            "format": "UUID",
+            "description": "Идентификатор пула"
+          },
+          "delay": {
+            "type": "integer",
+            "description": "Задержка в секундах. Интервал между проверками"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "TCP",
+              "HTTP"
+            ],
+            "description": "Тип проверки"
+          },
+          "http_method": {
+            "type": "string",
+            "default": "GET",
+            "description": "Метод, который используется для проверки доступности. Только для типа проверки ``HTTP``"
+          },
+          "http_version": {
+            "type": "number",
+            "default": 1.0,
+            "enum": [
+              1.0,
+              1.1
+            ],
+            "description": "Версия HTTP. Только для типа проверки ``HTTP``"
+          },
+          "expected_codes": {
+            "type": "string",
+            "default": "200",
+            "description": "HTTP-статус, при получении которого проверка доступности считается успешной. Только для типа проверки ``HTTP``"
+          },
+          "url_path": {
+            "type": "string",
+            "description": "Путь, по которому обращается healthcheck-объект для проверки доступности. Только для типа проверки ``HTTP``"
+          },
+          "domain_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "Доменное имя. Только для типа проверки ``HTTP``"
+          },
+          "timeout": {
+            "type": "integer",
+            "description": "Тайм-аут в секундах, после истечения которого считается, что бэкенд не отвечает на проверку. Значение должно быть меньше значения параметра ``delay``"
+          },
+          "max_retries": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Количество успешных проверок, после которого статус ``operating_status`` участника пула будет изменен на ``ONLINE``"
+          },
+          "max_retries_down": {
+            "type": "integer",
+            "default": 3,
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Количество неуспешных проверок после которого статус ``operating_status`` участника пула будет изменен на ``ERROR``"
+          }
+        }
+      },
+      "HealthmonitorUpdate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя"
+          },
+          "admin_state_up": {
+            "type": "boolean",
+            "default": true,
+            "description": "Административный статус ресурса. Возможные значения:\n\n``true`` — включен,\n\n``false`` — выключен"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Список тегов"
+          },
+          "delay": {
+            "type": "integer",
+            "description": "Задержка в секундах. Интервал между проверками"
+          },
+          "http_method": {
+            "type": "string",
+            "description": "Метод, который используется для проверки доступности. Только для типа проверки ``HTTP``"
+          },
+          "http_version": {
+            "type": "number",
+            "enum": [
+              1.0,
+              1.1
+            ],
+            "description": "Версия HTTP. Только для типа проверки ``HTTP``"
+          },
+          "expected_codes": {
+            "type": "string",
+            "description": "HTTP-статус, при получении которого проверка доступности считается успешной. Только для типа проверки ``HTTP``"
+          },
+          "url_path": {
+            "type": "string",
+            "description": "Путь, по которому обращается healthcheck-объект для проверки доступности. Только для типа проверки ``HTTP``"
+          },
+          "domain_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "Доменное имя. Только для типа проверки ``HTTP``"
+          },
+          "timeout": {
+            "type": "integer",
+            "description": "Тайм-аут в секундах, после истечения которого считается, что бэкенд не отвечает на проверку. Значение должно быть меньше значения параметра ``delay``"
+          },
+          "max_retries": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Количество успешных проверок, после которого статус ``operating_status`` участника пула будет изменен на ``ONLINE``"
+          },
+          "max_retries_down": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Количество неуспешных проверок после которого статус ``operating_status`` участника пула будет изменен на ``ERROR``"
+          }
+        }
+      }
+    }
+  }
+}
