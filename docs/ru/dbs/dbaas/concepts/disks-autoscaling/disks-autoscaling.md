@@ -16,9 +16,10 @@ VK Cloud поддерживает автоматическое масштаби�
 |Максимальный размер диска, ГБ
 |[Задается](../../instructions/manage-instance/postgresql#nastroyka_avtomasshtabirovaniya_razmera_diska_s_dannymi) вручную и не может превышать:
 
-- 2048 ГБ — для High-IOPS SSD;
-- 5120 ГБ — для SSD-дисков
-|Не может быть задан пользователем и равен 2048 ГБ для любого типа дисков
+- 10 ТБ — для High-IOPS SSD;
+- 10 ТБ — для High-IOPS HA SSD;
+- 25 ТБ — для SSD-дисков
+|Рассчитывается автоматически и не может быть задан пользователем
 
 |Пороговое значение, ГБ
 |Вычисляется по формуле: `2` + `текущий размер data-диска` / `25`.
@@ -86,30 +87,10 @@ VK Cloud поддерживает автоматическое масштаби�
 | Master-Replica 
 | Кластер
 
-| PostgresPro Enterprise (все версии)    
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
-
-| PostgresPro Enterprise 1C (все версии) 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-
-| PostgresPro Standard (все версии)      
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-
 | MySQL (все версии)
 | ![](/ru/assets/check.svg "inline") 
 | ![](/ru/assets/check.svg "inline") 
 | ![](/ru/assets/check.svg "inline") 
-
-| Tarantool
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
 
 | PostgreSQL (все версии)
 | ![](/ru/assets/check.svg "inline") 
@@ -133,11 +114,6 @@ VK Cloud поддерживает автоматическое масштаби�
 
 | MongoDB 4.0
 | ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-
-| MongoDB 6
-| ![](/ru/assets/no.svg "inline") 
 | ![](/ru/assets/no.svg "inline") 
 | ![](/ru/assets/no.svg "inline") 
 
