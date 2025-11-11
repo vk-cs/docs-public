@@ -1,7 +1,7 @@
 {
   "title": "Секция billing",
-  "shortDescription": "",
-  "metaDescription": "Секция billing в JSON-файле конфигурации SaaS-приложения",
+  "shortDescription": "Параметры для настройки стоимости тарифного плана и его опций в мастере подключения SaaS-приложения",
+  "metaDescription": "Секция billing в JSON-файле конфигурации SaaS-приложения: параметры для настройки пользователем стоимости тарифного плана и его опций при подключении SaaS-приложения в Marketplace.",
   "sectionTitle": "Секция billing",
   "weight": 4,
   "uuid": "22b24f9d-3e24-41f4-bd00-acffa2c5adcc"
