@@ -589,6 +589,7 @@
   "5e66fee9-dff5-4386-8833-4d697dd09008": "/en/kubernetes/k8s/troubleshooting/terminating-status-namespace",
   "f9c75547-107c-4c3e-8107-1c77fd251ad3": "/en/kubernetes/k8s/troubleshooting/docker-connect-problem",
   "1c0ea971-1a42-4bd7-a2b5-3b4056a46a6f": "/en/kubernetes/k8s/troubleshooting/cluster-does-not-scale-up",
+  "c5beed1a-3cd5-4551-bfd8-bd89c988fcf3": "/en/kubernetes/k8s/troubleshooting/cluster-does-not-scale-down",
   "a73cec27-4ee0-4431-a908-14a5b5418606": "/en/kubernetes/k8s/troubleshooting/ca-pod-crashes",
   "def25faf-5c88-41b1-987d-a1ba8d84cfdd": "/en/data-platform",
   "6d4b888e-d8d4-4129-ba88-d592d96a4862": "/en/data-platform",
