@@ -1,6 +1,6 @@
 New nodes are not added and the pods remain in the `Pending` state, even though [Cluster Autoscaler](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) is enabled. 
 
-There may be several possible reasons for this issue. Follow the instructions below one by one until the issue is resolved.
+There might be several possible reasons for this issue. Follow the instructions below one by one until the issue is resolved.
 
 {cut(The pod has no requests for the required resources)}
 

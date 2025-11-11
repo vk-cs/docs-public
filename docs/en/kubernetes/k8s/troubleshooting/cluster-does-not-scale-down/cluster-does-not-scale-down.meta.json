@@ -1,0 +1,9 @@
+{
+  "title": "Cluster Autoscaler is enabled, but underloaded nodes do not get removed",
+  "shortDescription": "What to do if nodes do not get removed even though Cluster Autoscaler is enabled",
+  "metaDescription": "Why nodes of a Kubernetes cluster are not removed automatically even if they are underloaded and can be safely removed. Detailed instructions on analyzing and solving the issues related to PodDisruptionBudget, system pods, workload controllers, annotations, and timeout settings",
+  "sectionTitle": "Cluster Autoscaler is enabled, but underloaded nodes do not get removed",
+  "icon": "",
+  "weight": 4,
+  "uuid": ""
+}
