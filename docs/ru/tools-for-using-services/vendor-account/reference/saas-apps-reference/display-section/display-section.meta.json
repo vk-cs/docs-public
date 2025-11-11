@@ -1,7 +1,7 @@
 {
   "title": "Секция display",
-  "shortDescription": "",
-  "metaDescription": "Секция display в JSON-файле конфигурации SaaS-приложения",
+  "shortDescription": "Параметры отображения страниц в мастере подключения SaaS-приложения",
+  "metaDescription": "Секция display в JSON-файле конфигурации SaaS-приложения: параметры отображения страниц в мастере подключения SaaS-приложения в Marketplace.",
   "sectionTitle": "Секция display",
   "weight": 3,
   "uuid": "074a12c7-6bd7-4b78-adec-f3054d7f0403"

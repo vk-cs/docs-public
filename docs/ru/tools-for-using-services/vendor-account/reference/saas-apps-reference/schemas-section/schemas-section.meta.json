@@ -1,7 +1,7 @@
 {
   "title": "Секция schemas",
-  "shortDescription": "",
-  "metaDescription": "Секция schemas в JSON-файле конфигурации SaaS-приложения",
+  "shortDescription": "Параметры опций тарифного плана в мастере подключения SaaS-приложения",
+  "metaDescription": "Секция schemas в JSON-файле конфигурации SaaS-приложения: параметры опций тарифного плана в мастере подключения SaaS-приложения в Marketplace.",
   "sectionTitle": "Секция schemas",
   "weight": 5,
   "uuid": "4bdde308-3854-41d5-b242-131983dc0245"
