@@ -6,7 +6,7 @@ Two types of scaling are supported:
 
 - _Vertical scaling_: The [virtual machine templates](../flavors) that are used by the master and worker nodes of the cluster are being changed. In this way, you can manage the computing resources of the cluster without affecting the number of nodes.
 
-  Scaling of worker nodes is performed within the framework of the [worker node group](../architecture#cluster_topologies).
+  Scaling of worker nodes is performed within the framework of the [worker node group](../architecture#cluster_topologies) via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler).
 
 - _Horizontal scaling_: The number of worker nodes within a separate node group is changed. In this way, you can manage the computing resources of the cluster without affecting the virtual machine templates that are used by the nodes.
 
@@ -80,7 +80,7 @@ If at least one of the thresholds is exceeded, a request will be sent to the [Cl
 
 You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../instructions/scale#scale_master_nodes).
 
-You can [configure](../../instructions/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes. The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
+You can [configure](../../instructions/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler). The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
 ## {heading(Kubernetes cluster scaling alert)[id=alerting]}
 

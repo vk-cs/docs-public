@@ -1,4 +1,4 @@
-The cluster has nodes that are underloaded, but they are not automatically removed, even though [Cluster Autoscaler](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) is enabled. By default, Cluster Autoscaler must remove nodes with no running pods or nodes whose pods can be safely evicted. 
+The cluster has nodes that are underloaded, but they are not automatically removed, even though [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler) is enabled. By default, Cluster Autoscaler must remove nodes with no running pods or nodes whose pods can be safely evicted. 
 
 There might be several possible reasons for this issue. Follow the instructions below one by one until the issue is resolved.
 
