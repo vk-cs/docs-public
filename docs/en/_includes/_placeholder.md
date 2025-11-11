@@ -1,4 +1,4 @@
-When the cluster runs out of resources, the autoscaler creates a new node and adds it to the cluster. This takes 4–7 minutes, during which time your application may be overloaded with traffic.
+When the cluster runs out of resources, the [autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler) creates a new node and adds it to the cluster. This takes 4–7 minutes, during which time your application may be overloaded with traffic.
 
 To reduce scaling time, set up overprovisioning. This will reserve resources on nodes to be available for high-priority tasks.
 

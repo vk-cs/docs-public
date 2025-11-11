@@ -1,4 +1,4 @@
-When trying to connect to OpenStack or the Kubernetes API, the [Cluster Autoscaler](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) pod has the `CrashLoopBackOff` status, causing it to fail authentication.
+When trying to connect to OpenStack or the Kubernetes API, the [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler) pod has the `CrashLoopBackOff` status, causing it to fail authentication.
 
 This problem occurs if the manifest of the Cluster Autoscaler pod does not specify the parameters required for authentication. The manifest is generated automatically, and there might be several reasons why it does not have the required parameters. Do not modify the manifest manually. Instead, provide technical support with detailed information about the errors that occur, as described further.
 

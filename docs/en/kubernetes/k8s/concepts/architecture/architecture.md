@@ -99,4 +99,7 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 ## Cluster scaling options
 
-Cloud Containers has built-in [scaling capabilities for master nodes and worker nodes](../scale) of Cluster Autoscaler that automatically adjusts the number of nodes depending on the workload requirements. Automatic scaling is enabled by default for master nodes, and you cannot disable it. For worker nodes, you need to manually enable it for each worker node group when [configuring their settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings).
+Cloud Containers has built-in [scaling capabilities for master nodes and worker nodes](../scale) that automatically adjusts the number of nodes depending on the workload requirements:
+
+- For master nodes, automatic scaling is enabled by default, and you cannot disable it. 
+- For worker nodes, automatic scaling is performed via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler), and you need to manually enable it for each worker node group when [configuring its settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings).

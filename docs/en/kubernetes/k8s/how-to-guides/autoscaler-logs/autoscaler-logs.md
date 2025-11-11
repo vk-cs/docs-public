@@ -1,4 +1,4 @@
-[Cluster Autoscaler](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) is a tool that monitors the load on Kubernetes nodes and adjusts the number of nodes in the cluster accordingly. It can be used to reduce or increase the number of nodes based on the current workload. You can check the logs of the Cluster Autoscaler to [troubleshoot](/en/kubernetes/k8s/troubleshooting/cluster-does-not-scale-up) any issues with the scaling process.
+[Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler) is a tool that monitors the load on worker nodes of a Kubernetes cluster and adjusts their number accordingly. It can be used to reduce or increase the number of nodes based on the current workload. You can check the logs of the Cluster Autoscaler to troubleshoot any issues with the scaling process.
 
 For more details on Cluster Autoscaler and how to use it, refer to its [official documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md). 
 

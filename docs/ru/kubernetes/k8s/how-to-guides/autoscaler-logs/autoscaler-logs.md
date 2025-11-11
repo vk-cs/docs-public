@@ -1,4 +1,4 @@
-[Агент автоматического масштабирования](/ru/kubernetes/k8s/concepts/cluster-autoscaler) кластера Kubernetes (Cluster Autoscaler) отслеживает нагрузку на worker-узлы кластера, при необходимости уменьшая или увеличивая их количество. Вы можете просматривать логи [автоматического масштабирования](/ru/kubernetes/k8s/concepts/scale#autoscaling) для [диагностики проблем](/ru/kubernetes/k8s/troubleshooting/cluster-does-not-scale-up).
+[Агент автоматического масштабирования](/ru/kubernetes/k8s/concepts/cluster-autoscaler) кластера Kubernetes (Cluster Autoscaler) отслеживает нагрузку на worker-узлы кластера, при необходимости уменьшая или увеличивая их количество. Вы можете просматривать логи [автоматического масштабирования](/ru/kubernetes/k8s/concepts/scale#autoscaling) для диагностики проблем.
 
 Подробнее об агенте автоматического масштабирования и работе с ним в [официальной документации](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md) Cluster Autoscaler. 
 
