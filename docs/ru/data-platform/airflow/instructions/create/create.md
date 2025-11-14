@@ -2,6 +2,8 @@
 
 {include(/ru/_includes/_airflow.md)[tags=conf]}
 
+{include(/ru/_includes/_dp_mpl_user_warn.md)}
+
 ## {heading(Создание экземпляра сервиса в конфигурации Single)[id=single]}
 
 {tabs}

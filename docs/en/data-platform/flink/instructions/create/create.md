@@ -3,6 +3,8 @@ You can create a Cloud Flink instance in one of two configurations:
 - [Single](#single): the configuration runs the Job Manager and Task Manager components on a single node. The solution is suitable for development and testing, reduces the cost of deploying a test infrastructure. Does not provide fault tolerance: a node failure stops all the work.
 - [Cluster](#cluster): a fault-tolerant configuration of several nodes. The solution is suitable for processing large amounts of data and provides high performance and fault tolerance (a failure of one node does not stop all the work).
 
+{include(/en/_includes/_dp_mpl_user_warn.md)}
+
 ## {heading(Creating instance in Single configuration)[id=single]}
 
 {tabs}

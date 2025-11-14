@@ -1,3 +1,5 @@
+{include(/ru/_includes/_dp_mpl_user_warn.md)}
+
 {tabs}
 
 {tab(Личный кабинет)}
