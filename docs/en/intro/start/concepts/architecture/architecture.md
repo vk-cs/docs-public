@@ -58,7 +58,7 @@ You can use VK Cloud to deploy virtualization, monitoring, container, and data s
 
    {cut(List of IaaS services)}
 
-  - [Cloud Servers](/en/computing/iaas) — provides virtual machines with the ability to allocate public IPs and unlimited traffic of 1 GBit/s (NVIDIA GPU virtual machines are also available). It is responsible for virtualization and resource integration, and uses KVM hypervisor.
+  - [Cloud Servers](/en/computing/iaas) — provides virtual machines with the ability to allocate public IPs and a 1 GBit/s connection with unlimited traffic (NVIDIA GPU virtual machines are also available). It is responsible for virtualization and resource integration, and uses KVM hypervisor.
   - [Object Storage](/en/storage/s3) — provides S3-compatible object storage. The storage workload is shared across all storage nodes. You can deploy storage with a customizable architecture.
   - [Cloud Networks](/en/networks/vnet) — provides networking within the selected [project](/en/tools-for-using-services/account/concepts/projects) using SDN (Software Defined Network) technology. It is built on OpenStack Neutron and custom-developed software — Sprut. The service includes the following components:
 
