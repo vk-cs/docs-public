@@ -148,7 +148,7 @@ Object Storage отличает:
 - [Интерфейсы командной строки](../../connect/s3-cli): AWS CLI, s3cmd CLI.
 - [Файловые менеджеры](../../connect/s3-file-managers): CyberDuck, WinSCP, Диск-О:, s3fs.
 - [Наборы инструментов разработчика](../../connect/s3-sdk): SDK для Java, .NET., Javascript, Ruby, Python (Boto), PHP, Go, AWS-инструменты для Powershell, Mobile SDK для iOS и Android.
-- [API Object Storage](../s3-api).
+- [API Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api).
 
 ## {heading(Классы хранения)[id=storage_class]}
 
