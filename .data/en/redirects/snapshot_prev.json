@@ -508,6 +508,7 @@
   "00d84a35-fd8d-49cc-87bc-20e6347bfb84": "/en/kubernetes/k8s/concepts/storage",
   "8ee899cb-8b9f-45bb-96a9-51125bffa3f0": "/en/kubernetes/k8s/concepts/flavors",
   "19cc448f-598e-4092-b0f3-0f9222305133": "/en/kubernetes/k8s/concepts/scale",
+  "a089ab9f-7f3f-4fc1-b27c-2a0f36a8f258": "/en/kubernetes/k8s/concepts/cluster-autoscaler",
   "4c3df781-0296-4176-a968-28af79bf14f3": "/en/kubernetes/k8s/concepts/update",
   "872011f0-e0fc-42b7-a2bf-e0c0c4c6907a": "/en/kubernetes/k8s/concepts/versions",
   "2b68d53f-6843-41ab-98be-f9e078644aca": "/en/kubernetes/k8s/concepts/versions/version-support",

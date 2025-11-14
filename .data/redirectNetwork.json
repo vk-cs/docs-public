@@ -3547,7 +3547,7 @@
   },
   {
     "source": "/ru/base/s3/dev/s3-rest-api/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/s3-api",
+    "destination": "/ru/storage/s3/concepts/features",
     "permanent": false,
     "locale": false
   },
@@ -5425,7 +5425,7 @@
   },
   {
     "source": "/ru/additionals/api/s3-rest-api/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/s3-api",
+    "destination": "/ru/storage/s3/concepts/features",
     "permanent": false,
     "locale": false
   },
@@ -9409,7 +9409,7 @@
   },
   {
     "source": "/ru/base/s3/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/s3-api",
+    "destination": "/ru/storage/s3/concepts/features",
     "permanent": false,
     "locale": false
   },
@@ -17269,7 +17269,7 @@
   },
   {
     "source": "/ru/base/s3/concepts/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/s3-api",
+    "destination": "/ru/storage/s3/concepts/features",
     "permanent": false,
     "locale": false
   },
@@ -27601,7 +27601,7 @@
   },
   {
     "source": "/ru/storage/s3/concepts/about-s3-api",
-    "destination": "/ru/storage/s3/concepts/s3-api",
+    "destination": "/ru/storage/s3/concepts/features",
     "permanent": false,
     "locale": false
   },
@@ -32696,6 +32696,12 @@
   {
     "source": "/ru/tools-for-using-services/terraform/how-to-guides/spark",
     "destination": "/ru/tools-for-using-services/terraform/how-to-guides/dataplatform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/concepts/s3-api",
+    "destination": "/ru/storage/s3/concepts/features",
     "permanent": false,
     "locale": false
   }
