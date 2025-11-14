@@ -119,6 +119,14 @@ The member cannot delete:
 
 Only the project owner can delete the superadministrator.
 
+{note:warn}
+
+Do not delete service users whose names begin with `mpl_user_`. They are required for VK Data Platform services and are used to create and renew certificates.
+
+Deleting these users will make the service inoperable.
+
+{/note}
+
 {tabs}
 
 {tab(Management console)}
