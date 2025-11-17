@@ -10,6 +10,12 @@ Jaeger add-on [system requirements](../../../../concepts/addons-and-settings/add
 
 If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for groups of worker nodes or [configure automatic scaling](../../../scale#autoscale_worker_nodes) before install.
 
+{note:info}
+
+This addon is only available for the first-generation clusters.
+
+{/note}
+
 {tabs}
 
 {tab(Standard installation)}
