@@ -4,6 +4,12 @@ The [GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator)
 
 Consider the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on worker node groups. If necessary, [manually scale](../../../scale#scale_worker_nodes) worker node groups or [configure autoscale](../../../scale#autoscale_worker_nodes) before installation.
 
+{note:info}
+
+This addon is only available for the first-generation clusters.
+
+{/note}
+
 1. Prepare a dedicated group of worker nodes for installing the addon, if it is not already done:
 
    {tabs}
