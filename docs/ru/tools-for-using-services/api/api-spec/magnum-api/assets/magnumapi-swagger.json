@@ -9,10 +9,6 @@
     {
       "url": "https://infra.mail.ru:9511/v1",
       "description": "prod"
-    },
-    {
-      "url": "https://stage.infra.devmail.ru:9511/v1",
-      "description": "omega"
     }
   ],
   "paths": {
