@@ -1,4 +1,4 @@
-{include(/ru/_includes/_clickhouse.md)[tags=intro]}
+{include(/ru/_includes/_clickhouse.md)[tags=intro-dp]}
 
 Список версий ClickHouse, которые поддерживаются в VK Cloud, доступен при [создании экземпляра](../../instructions/create) этого сервиса.
 
