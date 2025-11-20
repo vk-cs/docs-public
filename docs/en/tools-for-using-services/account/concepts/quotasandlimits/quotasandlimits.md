@@ -690,11 +690,11 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 | Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
 | Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 
-The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
+The limit on the backup size (320 TB) is due to the limit on the file size in the VK Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
 
-### Object Storage
+### VK Object Storage
 
-There are no quotas for the Object Storage service. The use of these services is limited only by technical limits.
+There are no quotas for the VK Object Storage service. The use of these services is limited only by technical limits.
 
 [cols="3,2,4,1", options="header"]
 |===

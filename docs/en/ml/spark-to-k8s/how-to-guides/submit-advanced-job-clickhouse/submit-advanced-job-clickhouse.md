@@ -1,7 +1,7 @@
 Spark jobs can be submitted to the cluster in a variety of ways:
 
 - For Spark applications that have no dependencies, it is sufficient to pass the application code in the job manifest. This approach is shown [in the example of calculating the number π](../submit-basic-job-pi).
-- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Object Storage](/en/storage/s3) bucket and edit the job manifest. This approach will be shown below.
+- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [VK Object Storage](/en/storage/s3) bucket and edit the job manifest. This approach will be shown below.
 
 As an example, an application that executes an SQL query against a ClickHouse deployed as a [Cloud Databases](/en/dbs/dbaas) instance will be used.
 
@@ -152,7 +152,7 @@ All mentioned environment variables [will be set up later](#3_send_the_spark_job
 
 ## 2. Upload the necessary files to the bucket
 
-1. Find out the name of the Object Storage bucket used by the cluster:
+1. Find out the name of the VK Object Storage bucket used by the cluster:
 
    1. Run the script to get information about Spark clusters in the project:
 
@@ -170,7 +170,7 @@ All mentioned environment variables [will be set up later](#3_send_the_spark_job
    1. Find out the information you need:
 
       - cluster identifier (contained in the `id` field);
-      - Object Storage bucket name (contained in the `s3_bucket_name` field).
+      - VK Object Storage bucket name (contained in the `s3_bucket_name` field).
 
 1. [Upload](/en/storage/s3/instructions/objects/upload-object) files to the `spark-files` directory of this bucket:
 

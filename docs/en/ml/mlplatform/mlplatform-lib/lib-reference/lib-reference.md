@@ -362,9 +362,9 @@ If a nonexistent name is specified, a new bucket with the specified name will be
 
 Requirements for the new bucket name:
 
-- Must be unique for the Object Storage service as a whole (not only within the project).
+- Must be unique for the VK Object Storage service as a whole (not only within the project).
 - Must contain from 4 to 63 characters.
-- Man contain only numbers, lowercase Latin letters and special characters `.`, `-`.
+- Can contain only numbers, lowercase Latin letters and special characters `.`, `-`.
 - Must begin and end with lowercase Latin letters or numbers only
 |===
 
@@ -513,7 +513,7 @@ If a nonexistent name is specified, a new bucket with the specified name will be
 
 Requirements for the new bucket name:
 
-- Must be unique for the Object Storage service as a whole (not only within the project).
+- Must be unique for the VK Object Storage service as a whole (not only within the project).
 - Must contain from 4 to 63 characters.
 - Can contain only numbers, lowercase Latin letters and special characters `.`, `-`.
 - Must begin and end with lowercase Latin letters or numbers only

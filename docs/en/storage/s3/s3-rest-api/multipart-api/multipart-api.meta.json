@@ -1,7 +1,7 @@
 {
     "title": "Multipart",
       "shortDescription": "",
-      "metaDescription": "Composite or multipart loading allows you to save objects in Object Storage in parts. This can be useful when loading or copying large objects. We r",
+      "metaDescription": "Composite or multipart loading allows you to save objects in VK Object Storage in parts. This can be useful when loading or copying large objects. We r",
     "sectionTitle": "Multipart",
     "icon": "",
     "weight": 4,

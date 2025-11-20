@@ -1,4 +1,4 @@
-When registering on the VK Cloud platform and activating the account, the user gets full access to the Object Storage service.
+When registering on the VK Cloud platform and activating the account, the user gets full access to the VK Object Storage service.
 
 Before uploading an object to the storage, you should create a bucket for its placement.
 
@@ -30,7 +30,7 @@ There is a limit on the number of buckets in one project, for more information, 
 
 To create it, you should:
 
-1. Go to the **Buckets** tab of the Object Storage service in the VK Cloud panel.
+1. Go to the **Buckets** tab of the VK Object Storage service in the VK Cloud panel.
 2. Click the **Add** button.
 3. Select the type of bucket to be created and enter a DNS-compatible name.
 
@@ -65,7 +65,7 @@ After creating a bucket, its name cannot be changed.
 
 Before creating a bucket, you need to create a user who will be granted access to manage operations in the AWS CLI.
 
-To do this, on the **Accounts** tab of the Object Storage service, create an account by clicking the **Add Account** button, specify any required name and save the API keys received.
+To do this, on the **Accounts** tab of the VK Object Storage service, create an account by clicking the **Add Account** button, specify any required name and save the API keys received.
 
 2. Sign in to AWS CLI
 

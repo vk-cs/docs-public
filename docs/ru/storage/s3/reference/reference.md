@@ -35,7 +35,7 @@
 
 ## API-ключи
 
-API-ключи — это ключи доступа для работы с Object Storage через API.
+API-ключи — это ключи доступа для работы с VK Object Storage через API.
 
 ## ACL
 

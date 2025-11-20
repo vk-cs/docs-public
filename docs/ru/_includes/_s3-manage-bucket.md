@@ -16,12 +16,12 @@ aws s3api create-bucket \
 
    После создания бакета изменить его имя будет невозможно.     
 
-- `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+- `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
-- `<КОД_РЕГИОНА>` — код региона аккаунта, например `ru-msk` для региона Москва. Доступные значения приведены в [описании API сервиса Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro#avtorizaciya_i_autentifikaciya).
+- `<КОД_РЕГИОНА>` — код региона аккаунта, например `ru-msk` для региона Москва. Доступные значения приведены в [описании API сервиса VK Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro#avtorizaciya_i_autentifikaciya).
 
 {/includetag}
 
@@ -38,7 +38,7 @@ aws s3api put-bucket-versioning \
 Здесь:
 
 - `<ИМЯ_БАКЕТА>` — имя бакета.
-- `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+- `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.

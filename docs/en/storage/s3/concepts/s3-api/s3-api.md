@@ -8,9 +8,9 @@ SOAP over HTTP support has been deprecated but is still available over HTTPS. Ho
 
 ## S3 compatible
 
-The Object Storage API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL `hb.ru-msk.vkcloud-storage.ru` and creating the Object Storage key pair will allow the Object Storage service.
+The VK Object Storage API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL `hb.ru-msk.vkcloud-storage.ru` and creating the VK Object Storage key pair will allow the VK Object Storage service.
 
-Object Storage provides support for create, read, update, and delete operations for both buckets and objects, as well as the ability to define access control lists (ACLs). Some S3 features are not supported, as shown in the table below:
+VK Object Storage provides support for create, read, update, and delete operations for both buckets and objects, as well as the ability to define access control lists (ACLs). Some S3 features are not supported, as shown in the table below:
 
 |Function|Support|Note|
 |--- |--- |--- |
@@ -51,7 +51,7 @@ API requests for S3 functions that are not currently supported by VK Cloud will 
 ```python
 import boto3
 from botocore.client import Config
-# Initialize session to Object Storage.
+# Initialize session to VK Object Storage.
 session = boto3.session.Session ()
 client = session.client ('s3',
 region_name = 'ru-msk',
@@ -87,7 +87,7 @@ ssl: = true
 if accessKey == "" || secKey == "" {
 log.Fatal ("Must provide VK Cloud_KEY and VK Cloud_SECRET environment variables!")
 }
-// Connect to Object Storage
+// Connect to VK Object Storage
 client, err: = minio.New (endpoint, & minio.Options {
 Creds: credentials.NewStaticV4 (accessKey, secKey, ""),
 Secure: ssl,
@@ -114,9 +114,9 @@ fmt.Println (bucket.Name)
 
 ## Authentication
 
-Requests to the Object Storage APIs must include the HTTP-Authorization header. The AWS v4 signature type is supported, as well as the AWS v2 signature type for compatibility with legacy customers. The examples below use v4 signatures. When using the client library, signatures will be generated automatically.
+Requests to the VK Object Storage APIs must include the HTTP-Authorization header. The AWS v4 signature type is supported, as well as the AWS v2 signature type for compatibility with legacy customers. The examples below use v4 signatures. When using the client library, signatures will be generated automatically.
 
-You can create the required access key and secret key in the "Accounts" menu of the "Object Storage" service of the graphical interface of the VK Cloud panel.
+You can create the required access key and secret key on the **Cloud storage** tab of your VK Cloud management console by clicking the **Create account** button.
 
 When creating an account, an Access Key ID and Secret Key values will be generated that are required for use.
 

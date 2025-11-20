@@ -1,7 +1,7 @@
 {
     "title": "CLI",
-      "shortDescription": "Подключение к Object Storage c помощью AWS CLI, s3cmd CLI",
-      "metaDescription": "Подключение к Object Storage c помощью AWS CLI, s3cmd CLI",
+      "shortDescription": "Подключение к VK Object Storage c помощью AWS CLI, s3cmd CLI",
+      "metaDescription": "Подключение к VK Object Storage c помощью AWS CLI, s3cmd CLI",
     "sectionTitle": "CLI",
     "icon": "",
     "weight": 1,

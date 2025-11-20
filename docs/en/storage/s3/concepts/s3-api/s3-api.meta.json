@@ -1,8 +1,8 @@
 {
-    "title": "Object Storage API",
+    "title": "VK Object Storage API",
       "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
       "metaDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
-    "sectionTitle": "Object Storage API",
+    "sectionTitle": "VK Object Storage API",
     "icon": "",
     "weight": 2,
     "uuid": "cbb6aafe-ab11-47de-a5f2-9f2d2cee8cf4"

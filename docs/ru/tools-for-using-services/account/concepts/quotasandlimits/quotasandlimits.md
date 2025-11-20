@@ -690,11 +690,11 @@
 | Размер одной резервной копии                  | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 320 ТБ        | ![](/ru/assets/no.svg "inline") |
 | Общий объем образов                           | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 2 ТБ          | ![](/ru/assets/no.svg "inline") |
 
-Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе Object Storage, этот сервис используется для хранения резервных копий. Этот лимит можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
+Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе VK Object Storage, этот сервис используется для хранения резервных копий. Этот лимит можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
 
-### {heading(Object Storage)[id=object_storage_limits]}
+### {heading(VK Object Storage)[id=object_storage_limits]}
 
-Для сервиса Object Storage квоты не предусмотрены. Использование этих сервисов ограничивается только техническими лимитами.
+Для сервиса VK Object Storage квоты не предусмотрены. Использование этих сервисов ограничивается только техническими лимитами.
 
 [cols="3,2,4,1", options="header"]
 |===

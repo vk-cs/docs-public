@@ -1,4 +1,4 @@
-Access to the resources of the "Object Storage" service when using the VK Cloud Panel is carried out without hindrance, if you have a registered and active account and VK Cloud project.
+Access to the resources of the VK Object Storage service when using the VK Cloud Panel is carried out without hindrance, if you have a registered and active account and VK Cloud project.
 
 However, if you need to access resources through tools such as AWS CLI, S3 API, as well as any other software, you must create an additional account in the service and use the account key for access. This mechanism allows you to delimit access for the most comfortable and safe work with the service.
 
@@ -10,7 +10,7 @@ The number of created accounts is not limited and their names should not be uniq
 
 ## Create an account
 
-To create an account, go to the **Accounts** tab of the **Object Storage** service and click the **Add account** button. In the window that appears, enter the account name and confirm the entry.
+To create an account, go to **Cloud storage** and click the **Add account** button. In the window that appears, enter the account name and confirm the entry.
 
 {note:warn}
 

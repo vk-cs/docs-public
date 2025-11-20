@@ -1,7 +1,7 @@
 {
     "title": "Uploading objects to bucket",
       "shortDescription": "",
-      "metaDescription": "The created bucket can be loaded with files that are saved as an Object Storage object. Objects are composed of file data and metadata describing the object. The bucke",
+      "metaDescription": "The created bucket can be loaded with files that are saved as an VK Object Storage object. Objects are composed of file data and metadata describing the object. The bucke",
     "sectionTitle": "Uploading objects to bucket",
     "icon": "",
     "weight": 0,

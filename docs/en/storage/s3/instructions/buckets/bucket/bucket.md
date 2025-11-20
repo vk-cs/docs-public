@@ -4,7 +4,7 @@ Buckets are containers for objects. A project can have one or more buckets. Acce
 
 The bucket name is used to access data and will be seen by other users when granting access.
 
-Bucket names must be unique for all projects of the Object Storage service, ie. you cannot create two buckets with the same names even in different projects.
+Bucket names must be unique for all projects of the VK Object Storage service, ie. you cannot create two buckets with the same names even in different projects.
 
 The bucket name must meet the following conditions:
 
@@ -32,13 +32,13 @@ It is recommended to avoid using personal information such as project number or 
 
 To create a bucket in the VK Cloud panel:
 
-1.  Go to the **Buckets** tab of the Object Storage service in the VK Cloud panel.
+1.  Go to the **Buckets** tab of the VK Object Storage service in the VK Cloud panel.
 2.  Press the **Add** button.
 3.  Select the type of bucket to create and enter a DNS-compatible name.
 
 ## Removing a bucket
 
-Deleting a bucket after cleaning it is possible in the general list of buckets of the Object Storage service. To delete one bucket, you can use the delete button against the bucket, and to delete several elements, you can select using the checkbox to the left of the buckets.
+Deleting a bucket after cleaning it is possible in the general list of buckets of the VK Object Storage service. To delete one bucket, you can use the delete button against the bucket, and to delete several elements, you can select using the checkbox to the left of the buckets.
 
 {note:warn}
 
@@ -46,4 +46,4 @@ The bucket with the Backup storage class cannot be deleted. You can delete the o
 
 {/note}
 
-After deleting backups, the **Backup** bucket may be empty. It is required by Object Storage for further work with backup plans in the project.
+After deleting backups, the **Backup** bucket may be empty. It is required by VK Object Storage for further work with backup plans in the project.

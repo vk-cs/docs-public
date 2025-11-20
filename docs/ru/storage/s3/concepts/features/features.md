@@ -1,4 +1,4 @@
-Сервис Object Storage поддерживает следующие возможности для работы с бакетами и объектами на платформе VK Cloud:
+Сервис VK Object Storage поддерживает следующие возможности для работы с бакетами и объектами на платформе VK Cloud:
 
 <!-- исправить ссылки: на управлениями версиями после выкатки 2341, на управление доступом после выкатки 1865 -->
 - [стандартная и составная загрузка](#object_uploading) объектов в бакет;
@@ -11,7 +11,7 @@
 
 ## {heading(Стандартная и составная загрузка объектов)[id=object_uploading]}
 
-В бакет Object Storage можно загружать файлы любого типа, например, изображения, резервные копии, видео.
+В бакет VK Object Storage можно загружать файлы любого типа, например, изображения, резервные копии, видео.
 
 В зависимости от объема файла рекомендованы различные способы загрузки:
 
@@ -40,7 +40,7 @@
 
 ## {heading(Копирование объектов)[id=objects_copying]}
 
-Object Storage позволяет создавать копии хранимых объектов. Копирование выполняется [с помощью CLI, SDK, файлового менеджера](../../instructions/objects/manage-object#copy_object) или [API](/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api#copy).
+VK Object Storage позволяет создавать копии хранимых объектов. Копирование выполняется [с помощью CLI, SDK, файлового менеджера](../../instructions/objects/manage-object#copy_object) или [API](/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api#copy).
 
 С помощью копирования вы можете:
 
@@ -55,7 +55,7 @@ Object Storage позволяет создавать копии хранимых
 
 ## {heading(Уведомления о событиях в бакете)[id=bucket_event_notifications]}
 
-Object Storage позволяет настроить отправку уведомлений о событиях в бакете с помощью вебхуков (webhooks). В каждом вебхуке указывается тип события и URL-адрес, на который приходит сообщение или HTTP/HTTPS-запрос, когда в бакете происходит событие указанного типа. Можно создать вебхуки для следующих типов событий:
+VK Object Storage позволяет настроить отправку уведомлений о событиях в бакете с помощью вебхуков (webhooks). В каждом вебхуке указывается тип события и URL-адрес, на который приходит сообщение или HTTP/HTTPS-запрос, когда в бакете происходит событие указанного типа. Можно создать вебхуки для следующих типов событий:
 
 - создание объекта;
 - копирование объекта;
@@ -73,149 +73,228 @@ Object Storage позволяет настроить отправку уведо
 
 ## {heading(Использование API)[id=s3_api]}
 
-Object Storage предоставляет RESTful XML [API](/ru/tools-for-using-services/api/api-spec/s3-rest-api) для программного управления бакетами и объектами с помощью стандартных HTTP-запросов. Object Storage API предназначен для взаимодействия с [Amazon Web Service S3 API](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) и имеет совместимый с ним интерфейс. Для доступа к Object Storage API используется протокол, созданный для сервиса AWS S3.
+VK Object Storage предоставляет RESTful XML [API](/ru/tools-for-using-services/api/api-spec/s3-rest-api) для программного управления бакетами и объектами с помощью стандартных HTTP-запросов. VK Object Storage API предназначен для взаимодействия с [Amazon Web Service S3 API](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) и имеет совместимый с ним интерфейс. Для доступа к VK Object Storage API используется протокол, созданный для сервиса AWS S3.
 
 Запросы к API вы можете передавать через [AWS CLI](../../connect/s3-cli), [SDK](../../connect/s3-sdk) или [файловые менеджеры](../../connect/s3-file-managers).
 
-Object Storage API поддерживает операции создания, чтения, обновления и удаления как для бакетов, так и для объектов, а также возможность определять списки управления доступом (ACL). Некоторые методы AWS S3 API не поддерживаются.
+Некоторые методы AWS S3 API в сервисе VK Object Storage не реализованы. Запросы для таких методов возвращают S3-совместимый ответ об ошибке `NotImplemented` в формате XML.
 
-{cut(Поддержка методов AWS S3 API в Object Storage)}
+{cut(Реализованные в VK Object Storage методы AWS S3 API)}
 
-[cols="2,2,3",options="header"]
+### Бакет
+
+[cols="1,2",options="header"]
 |===
-|Методы AWS S3 API
-|Поддержка в Object Storage API
-|Примечание
+|Метод
+|Описание
 
-|Bucket Create, Head, Delete
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`CreateBucket`
+|Создает новый бакет
 
-|Object Get, Head, Put, Copy, Delete
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`DeleteBucket`
+|Удаляет бакет
 
-|Multipart Uploads
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`HeadBucket`
+|Проверяет, существует ли бакет и есть ли у пользователя права доступа к нему
 
-|Pre-Signed URLs
-| ![Да](/ru/assets/check.svg "inline")
-| Поддерживаются типы подписи v2 и v4
+|`ListBuckets`
+|Возвращает список бакетов
 
-|Bucket ACLs
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`GetBucketLocation`
+|Возвращает [регион](/ru/tools-for-using-services/account/concepts/regions) бакета
+|===
 
-|Object ACLs
-| ![Да](/ru/assets/check.svg "inline")
-|
+### Объект
 
-|Bucket CORS
-| ![Да](/ru/assets/check.svg "inline")
-|
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
 
-|Prefix Keys
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`CopyObject`
+|Создает копию существующего объекта (в том же или в другом бакете)
 
-|Identity and Access Management (IAM)
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`DeleteObject`
+|Удаляет объект из бакета
 
-|Security Token Service (STS)
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`DeleteObjects`
+|Удаляет несколько объектов одним запросом
 
-|Multi-factor Authentication
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`GetObject`
+|Возвращает содержимое объекта
 
-|Public Access Block
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`HeadObject`
+|Возвращает метаданные объекта
 
-|Bucket Policies
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`ListObjects`
+|Возвращает до 1000 объектов. Это устаревший метод, поддерживается для совместимости
 
-|Object Policies
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`ListObjectsV2`
+|Возвращает до 1000 объектов. Актуальный метод
 
-|Bucket Versioning
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`PutObject`
+|Добавляет объект в бакет
 
-|Bucket Replication
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`GetObjectRange`
+|Возвращает только указанный байтовый диапазон объекта (range-запрос)
 
-|Bucket Notifications
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`OptionsObject`
+|Обрабатывает предварительный CORS-запрос (метод `OPTIONS`) к объекту. Возвращает заголовки разрешений
+|===
 
-|Bucket Notification Configuration
-| ![Да](/ru/assets/check.svg "inline")
-|Реализовано альтернативно методам AWS S3 API.
+### Блокировка объектов (object lock)
 
-Использование этих методов в AWS CLI не поддерживается
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
 
-|Bucket Tagging
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`GetObjectLegalHold`
+|Возвращает текущее состояние бессрочной (legal hold) блокировки для объекта
 
-|Object Tagging
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`GetObjectRetention`
+|Возвращает информацию о текущей временной блокировке (retention) объекта
 
-|Request Payment
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`PutObjectLegalHold`
+|Устанавливает или снимает бессрочную (legal hold) блокировку объекта
 
-|Bucket Lifecycle
-| ![Да](/ru/assets/check.svg "inline")
-|Поддерживается удаление объекта по истечении его времени жизни и удаление неполных составных загрузок.
+|`PutObjectLockConfiguration`
+|Создает или изменяет настройки блокировок по умолчанию в бакете
 
-Политики жизненного цикла, основанные на маркировке объектов, не поддерживаются
+|`PutObjectRetention`
+|Устанавливает или обновляет временную блокировку (retention) для объекта
+|===
 
-|Bucket Inventory
-| ![Нет](/ru/assets/no.svg "inline")
-|
+### Управление доступом
 
-|Bucket Access Logging
-| ![Нет](/ru/assets/no.svg "inline")
-|
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
 
-|Bucket Metrics
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`GetObjectACL`
+|Возвращает ACL (список контроля доступа) объекта
 
-|Bucket Analytics
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`PutObjectACL`
+|Устанавливает ACL объекта
 
-|Bucket Accelerate
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`GetBucketAcl`
+|Возвращает ACL бакета
 
-|Bucket Encryption Configuration
-| ![Нет](/ru/assets/no.svg "inline")
-|
+|`PutBucketAcl`
+|Устанавливает ACL бакета
+|===
 
-|Bucket Website
-| ![Да](/ru/assets/check.svg "inline")
-|
+### Жизненный цикл объектов (lifecycle)
 
-|Object Torrent
-| ![Нет](/ru/assets/no.svg "inline")
-|
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
 
-|Object Lock
-| ![Да](/ru/assets/check.svg "inline")
-|
+|`GetBucketLifecycleConfiguration`
+|Возвращает конфигурацию жизненного цикла бакета
+
+|`PutBucketLifecycleConfiguration`
+|Создает или полностью заменяет конфигурацию жизненного цикла бакета
+
+|`DeleteBucketLifecycle`
+|Удаляет конфигурацию жизненного цикла бакета
+|===
+
+### Составная загрузка (multipart)
+
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
+
+|`AbortMultipartUpload`
+|Прерывает незавершенную составную загрузку и освобождает ресурсы
+
+|`CompleteMultipartUpload`
+|Завершает составную загрузку, собирая части в финальный объект
+
+|`CreateMultipartUpload`
+|Инициирует составную загрузку объекта
+
+|`ListMultipartUploads`
+|Возвращает список текущих незавершенных составных загрузок в бакете
+
+|`ListParts`
+|Возвращает список загруженных частей объекта
+
+|`UploadPart`
+|Загружает часть объекта
+
+|`UploadPartCopy`
+|Загружает часть объекта, скопировав данные из существующего объекта
+|===
+
+### Политики владения объектами (ownership controls)
+
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
+
+|`PutBucketOwnershipControls`
+|Устанавливает или обновляет правила, определяющие владельца загружаемых в бакет объектов
+
+|`DeleteBucketOwnershipControls`
+|Удаляет политики по управлению владельцем объектов в бакете
+|===
+
+### Маркировка объектов тегами (tagging)
+
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
+
+|`GetObjectTagging`
+|Возвращает теги, назначенные объекту
+
+|`PutObjectTagging`
+|Присваивает или обновляет теги объекта
+
+|`DeleteObjectTagging`
+|Удаляет теги объекта
+|===
+
+### Кросс-доменные запросы (CORS)
+
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
+
+|`GetBucketCors`
+|Возвращает текущую конфигурацию CORS бакета
+
+|`PutBucketCors`
+|Устанавливает или заменяет конфигурацию CORS бакета
+
+|`DeleteBucketCors`
+|Удаляет конфигурацию CORS бакета
+|===
+
+### Уведомления
+
+[cols="1,2",options="header"]
+|===
+|Метод
+|Описание
+
+|`GetBucketNotificationConfiguration`
+|Возвращает текущую конфигурацию уведомлений для бакета
+
+|`PutBucketNotificationConfiguration`
+|Устанавливает или обновляет конфигурацию уведомлений
+
+|`DeleteBucketNotificationConfiguration`
+|Удаляет конфигурацию уведомлений у бакета
 |===
 
 {/cut}
 
-Запросы для методов AWS S3 API, которые не поддерживаются сервисом Object Storage, возвращают S3-совместимый ответ об ошибке `NotImplemented` в формате XML.

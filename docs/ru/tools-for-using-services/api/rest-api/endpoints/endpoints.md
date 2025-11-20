@@ -59,11 +59,11 @@
 |-------------------------------------|-------------------------|-----------------|
 | Trove             | https://msk.cloud.vk.com/infra/database/v1.0/<project_id>        | Управление [базами данных](/ru/dbs/dbaas) |
 
-### Object Storage
+### VK Object Storage
 
 | Эндпоинт                            | Адрес                            | Назначение |
 |-------------------------------------|----------------------------------| -----------------|
-| Домен S3                            | https://hb.ru-msk.vkcloud-storage.ru/    | Управление [Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api) |
+| Домен S3                            | https://hb.ru-msk.vkcloud-storage.ru/    | Управление [VK Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api) |
 
 ### Cloud ML Platform
 

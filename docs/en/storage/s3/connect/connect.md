@@ -1,1 +1,1 @@
-Connecting to Object Storage using CLI, File managers, SDK.
+Connecting to VK Object Storage using CLI, File managers, SDK.

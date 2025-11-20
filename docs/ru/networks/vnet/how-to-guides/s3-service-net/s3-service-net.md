@@ -1,6 +1,6 @@
-[Сервисная сеть](/ru/networks/vnet/concepts/net-types#service_net) позволяет работать с объектным хранилищем Object Storage без доступа в интернет. Вы можете подключить к объектному хранилищу серверы, которые находятся в приватной облачной сети или подключены к VK Cloud через [Direct Connect](/ru/networks/directconnect/connect).
+[Сервисная сеть](/ru/networks/vnet/concepts/net-types#service_net) позволяет работать с объектным хранилищем VK Object Storage без доступа в интернет. Вы можете подключить к объектному хранилищу серверы, которые находятся в приватной облачной сети или подключены к VK Cloud через [Direct Connect](/ru/networks/directconnect/connect).
 
-В статье показан пример настройки сервисной сети для доступа к Object Storage из ВМ.
+В статье показан пример настройки сервисной сети для доступа к VK Object Storage из ВМ.
 
 Для простоты настройки ВМ будет подключена к публичной сети, чтобы иметь доступ по SSH. Подключение к сервисной сети может быть настроено и без доступа по SSH. В этом случае все настройки производятся через VNC-консоль.
 
@@ -16,9 +16,9 @@
 
     Запишите имя и IP-адрес сети. В этом примере — `s3-ephn` и `198.18.0.0/20`.
 
-1. [Создайте бакет](/ru/storage/s3/instructions/buckets/create-bucket) в сервисе Object Storage, если этого еще не сделано.
-1. [Создайте аккаунт](/ru/storage/s3/instructions/access-management/access-keys) в сервисе Object Storage, если этого еще не сделано. Сохраните идентификатор ключа и секретный ключ.
-1. Подготовьте ВМ, из которой нужно подключить доступ к Object Storage:
+1. [Создайте бакет](/ru/storage/s3/instructions/buckets/create-bucket) в сервисе VK Object Storage, если этого еще не сделано.
+1. [Создайте аккаунт](/ru/storage/s3/instructions/access-management/access-keys) в сервисе VK Object Storage, если этого еще не сделано. Сохраните идентификатор ключа и секретный ключ.
+1. Подготовьте ВМ, из которой нужно подключить доступ к VK Object Storage:
 
     1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create) со следующими параметрами:
 
@@ -39,7 +39,7 @@
         ```
 
     1. (Опционально) Установите утилиту [Netplan](https://www.altlinux.org/Netplan) для работы с сетевыми настройками. В виртуальных машинах с ОС Ubuntu 18 и выше эта утилита установлена по умолчанию.
-    1. [Настройте AWS CLI](/ru/storage/s3/connect/s3-cli) для работы с Object Storage.
+    1. [Настройте AWS CLI](/ru/storage/s3/connect/s3-cli) для работы с VK Object Storage.
 
 ## 1. Настройте подключение к сервисной сети
 
@@ -101,7 +101,7 @@
     netplan apply
     ```
 
-1. Перенаправьте трафик Object Storage через сервисную сеть. Для этого укажите соответствие между доменом сервиса и его IP-адресом в сервисной сети:
+1. Перенаправьте трафик VK Object Storage через сервисную сеть. Для этого укажите соответствие между доменом сервиса и его IP-адресом в сервисной сети:
 
     1. Откройте файл `hosts`:
 
@@ -115,7 +115,7 @@
         198.18.0.1   hb.ru-msk.vkcloud-storage.ru
         ```
 
-1. Проверьте, что подключение к Object Storage устанавливается через сервисную сеть:
+1. Проверьте, что подключение к VK Object Storage устанавливается через сервисную сеть:
 
     ```console
     curl hb.ru-msk.vkcloud-storage.ru -v
@@ -131,7 +131,7 @@
 
 Если доступ к ВМ по SSH вам больше не нужен, [отключите](/ru/computing/iaas/instructions/vm/vm-add-net#udalenie_seti_vm) сеть с доступом в интернет, которая была добавлена при создании ВМ.
 
-## 3. Проверьте подключение к сервису Object Storage
+## 3. Проверьте подключение к сервису VK Object Storage
 
 1. Подключитесь к ВМ:
    
@@ -143,12 +143,12 @@
     aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```
 
-    Здесь `--endpoint-url` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта. Возможные значения:
+    Здесь `--endpoint-url` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта. Возможные значения:
 
       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
-    В ответе должен вернуться список бакетов Object Storage.
+    В ответе должен вернуться список бакетов VK Object Storage.
 
 ## Удалите неиспользуемые ресурсы
 

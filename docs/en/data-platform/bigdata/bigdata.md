@@ -1,4 +1,4 @@
-Cloud Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed template or define your own configuration by installing the necessary components via the web interface. Integration with Object Storage, virtual machines, Kubernetes clusters, GPU computing, cloud machine learning services is supported.
+Cloud Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed template or define your own configuration by installing the necessary components via the web interface. Integration with VK Object Storage, virtual machines, Kubernetes clusters, GPU computing, cloud machine learning services is supported.
 
 {note:warn}
 

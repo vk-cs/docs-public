@@ -4,7 +4,7 @@ The Cloud Spark service includes the following components:
 
 - [a Cloud Spark cluster](#cluster_spark)
 - [a virtual machine with Docker Registry](#vm_docker_registry)
-- [Object Storage](#object_storage)
+- [VK Object Storage](#object_storage)
 - [the Cloud ML Platform service](#service_ml_platform)
 
 ## {heading(Cloud Spark cluster)[id=cluster_spark]}
@@ -24,9 +24,9 @@ A Cloud Spark cluster is a K8s cluster deployed on the Cloud Containers service.
 
 If necessary, the user can upload their own Docker images to Docker Registry and then use them in the service.
 
-## {heading(Object Storage)[id=object_storage]}
+## {heading(VK Object Storage)[id=object_storage]}
 
-[Object Storage](/en/storage/s3) is the VK Cloud object storage with the S3 support. When deploying the Cloud Spark service, a bucket integrated with the service is automatically created. It is used by default to store the Spark History Server logs, to download dependencies, files with user application code, and other artifacts required to complete user jobs.
+[VK Object Storage](/en/storage/s3) is the VK Cloud object storage with the S3 support. When deploying the Cloud Spark service, a bucket integrated with the service is automatically created. It is used by default to store the Spark History Server logs, to download dependencies, files with user application code, and other artifacts required to complete user jobs.
 
 You can also connect additional buckets to the Cloud Spark service.
 

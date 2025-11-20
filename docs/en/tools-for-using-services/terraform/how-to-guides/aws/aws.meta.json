@@ -1,8 +1,8 @@
 {
-  "title": "Object Storage",
-  "shortDescription": "How to use Terraform to manage buckets and objects in the Object Storage service",
+  "title": "VK Object Storage",
+  "shortDescription": "How to use Terraform to manage buckets and objects in the VK Object Storage service",
   "metaDescription": "",
-  "sectionTitle": "Object Storage",
+  "sectionTitle": "VK Object Storage",
   "icon": "",
   "weight": 40,
   "uuid": "318b32c9-9810-43fe-9142-56c9391b9524"

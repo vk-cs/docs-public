@@ -65,7 +65,7 @@ To deploy the VictoriaMetrics service in a project:
 
    1. At the **Настройки VictoriaMetrics** step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the object storage [Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Резервное копирование**: select the `no` option to not save data to the object storage [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
@@ -89,7 +89,7 @@ To deploy the VictoriaMetrics service in a project:
 
    1. At the **Настройки VictoriaMetrics** step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the [Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Резервное копирование**: select the `no` option to not save data to the [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
@@ -115,7 +115,7 @@ To deploy the VictoriaMetrics service in a project:
 
    1. На шаге **Настройки Кластера**:
 
-      - **Резервное копирование**: select the `no` option to not save data to the [Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Резервное копирование**: select the `no` option to not save data to the [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.

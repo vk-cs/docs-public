@@ -10,14 +10,14 @@ Check your key and signing method`.
 
 ### Решение
 
-1. Убедитесь, что в параметре `--endpoint-url` для вызываемой команды домен сервиса указан верно и соответствует [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта Object Storage:
+1. Убедитесь, что в параметре `--endpoint-url` для вызываемой команды домен сервиса указан верно и соответствует [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта VK Object Storage:
 
     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 1. Убедитесь, что **Access Key ID** и **Secret Access Key** заданы в файле конфигурации `~/.aws/credentials` без опечаток, лишних пробелов или других символов. Также проверьте, не переопределяют ли переменные окружения (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`) значения из файла конфигурации. 
    
-   Чтобы исключить ошибку в ключах доступа, создайте новую пару **Access Key ID** и **Secret Access Key** для вашего [аккаунта Object Storage](/ru/storage/s3/instructions/access-management/access-keys).
+   Чтобы исключить ошибку в ключах доступа, создайте новую пару **Access Key ID** и **Secret Access Key** для вашего [аккаунта VK Object Storage](/ru/storage/s3/instructions/access-management/access-keys).
 
 1. Убедитесь, что системное время синхронизировано с сервером точного времени (NTP). 
 

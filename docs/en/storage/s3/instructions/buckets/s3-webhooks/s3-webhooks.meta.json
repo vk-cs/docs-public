@@ -1,7 +1,7 @@
 {
     "title": "Webhooks",
       "shortDescription": "",
-      "metaDescription": "The Object Storage webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you mu",
+      "metaDescription": "The VK Object Storage webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you mu",
     "sectionTitle": "Webhooks",
     "icon": "",
     "weight": 9,

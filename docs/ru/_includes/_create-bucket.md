@@ -2,7 +2,7 @@
 
 1. Убедитесь, что [AWS CLI](/ru/tools-for-using-services/cli/aws-cli) установлен.
 
-1. Создайте аккаунт для сервиса Object Storage:
+1. Создайте аккаунт для сервиса VK Object Storage:
 
    1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
    1. Выберите проект.
