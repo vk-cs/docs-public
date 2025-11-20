@@ -1,1 +1,1 @@
-Detailed description of the principles of operation and device of the Object Storage.
+Detailed description of the principles of operation and device of the VK Object Storage service.

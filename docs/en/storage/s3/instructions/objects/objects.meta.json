@@ -1,7 +1,7 @@
 {
   "title": "Object",
   "shortDescription": "",
-  "metaDescription": "Object Storage is a simple key and value store designed to store any number of objects. These objects are stored in one or more buckets, and each objec",
+  "metaDescription": "VK Object Storage is a simple key and value store designed to store any number of objects. These objects are stored in one or more buckets, and each objec",
   "sectionTitle": "Object",
   "icon": "",
   "weight": 3,

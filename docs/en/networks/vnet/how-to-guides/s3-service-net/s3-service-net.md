@@ -1,6 +1,6 @@
-[Service network](/en/networks/vnet/concepts/net-types#service_net) allows you to work with the Object Storage service without Internet access. You can connect servers to object storage that are in a private network or connected to VK Cloud via [Direct Connect](/en/networks/directconnect).
+[Service network](/en/networks/vnet/concepts/net-types#service_net) allows you to work with the VK Object Storage service without Internet access. You can connect servers to object storage that are in a private network or connected to VK Cloud via [Direct Connect](/en/networks/directconnect).
 
-The article shows an example of setting up a service network to access Object Storage from a VM.
+The article shows an example of setting up a service network to access VK Object Storage from a VM.
 
 To simplify the setup, the VM will be connected to a public network to have access via SSH. Connection to the service network can be configured without SSH access. In this case, all settings are made via the VNC console.
 
@@ -16,9 +16,9 @@ If you configure a connection to the service network via Direct Connect, access 
 
    Write down the network name and IP address. In this example, `s3-ephn` and `198.18.0.0/20`.
 
-1. [Create a bucket](/en/storage/s3/instructions/buckets/create-bucket) in the Object Storage service, if you haven't  done it already.
-1. [Create an account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") in the Object Storage service, if you haven't done it already. Save the key ID and secret key.
-1. Prepare the VM you want to connect to Object Storage:
+1. [Create a bucket](/en/storage/s3/instructions/buckets/create-bucket) in the VK Object Storage service, if you haven't  done it already.
+1. [Create an account](/ru/storage/s3/instructions/access-management/access-keys "change-lang") in the VK Object Storage service, if you haven't done it already. Save the key ID and secret key.
+1. Prepare the VM you want to connect to VK Object Storage:
 
    1. [Create a VM](/en/computing/iaas/instructions/vm/vm-create) with the following parameters:
 
@@ -39,7 +39,7 @@ If you configure a connection to the service network via Direct Connect, access 
       ```
 
    1. (Optional) Install the [Netplan](https://www.altlinux.org/Netplan) utility to work with network settings. In virtual machines with Ubuntu 18 and above, this utility is installed by default.
-   1. [Configure AWS CLI](/en/storage/s3/connect/s3-cli) to work with Object Storage.
+   1. [Configure AWS CLI](/en/storage/s3/connect/s3-cli) to work with VK Object Storage.
 
 ## 1. Configure connection to service network
 
@@ -101,7 +101,7 @@ To configure the VM network interface directed to the service network:
     netplan apply
     ```
 
-1. Redirect the Object Storage traffic through the service network. To do this, specify the correspondence between the service domain and its IP address in the service network:
+1. Redirect the VK Object Storage traffic through the service network. To do this, specify the correspondence between the service domain and its IP address in the service network:
 
    1. Open the `hosts` file:
 
@@ -115,7 +115,7 @@ To configure the VM network interface directed to the service network:
       198.18.0.1 hb.ru-msk.vkcloud-storage.ru
       ```
 
-   1. Check that the connection to Object Storage is established via the service network:
+   1. Check that the connection to VK Object Storage is established via the service network:
 
       ```console
       curl hb.ru-msk.vkcloud-storage.ru -v
@@ -131,7 +131,7 @@ To configure the VM network interface directed to the service network:
 
 If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/instructions/vm/vm-add-net#deleting_a_vm_network) the network with Internet access that was added when creating the VM.
 
-## 3. Check connection to Object Storage
+## 3. Check connection to VK Object Storage
 
 1. Connect to the VM:
 
@@ -144,12 +144,12 @@ If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/ins
     aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```
 
-    Here `--endpoint-url` is the Object Storage service domain, it should match the [region](/en/tools-for-using-services/account/concepts/regions) of the account. Possible values:
+    Here `--endpoint-url` is the VK Object Storage service domain, it should match the [region](/en/tools-for-using-services/account/concepts/regions) of the account. Possible values:
 
       - `https://hb.ru-msk.vkcloud-storage.ru` is the Moscow region domain.
       - `https://hb.kz-ast.bizmrg.com` is the Kazakhstan region domain.
 
-The response should return a list of the Object Storage buckets.
+The response should return a list of the VK Object Storage buckets.
 
 ## Delete unused resources
 

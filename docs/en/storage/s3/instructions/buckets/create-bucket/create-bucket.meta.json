@@ -1,7 +1,7 @@
 {
     "title": "Creating an bucket",
       "shortDescription": "",
-      "metaDescription": "When registering on the VK Cloud platform and activating an account, the user gets full access to the Object Storage service. Before uploading an object to stor",
+      "metaDescription": "When registering on the VK Cloud platform and activating an account, the user gets full access to the VK Object Storage service. Before uploading an object to stor",
     "sectionTitle": "Creating an bucket",
     "icon": "",
     "weight": 0,

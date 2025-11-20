@@ -77,7 +77,7 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 - [Container Storage Interface](https://kubernetes-csi.github.io/docs/) (CSI): integration with storage services.
 
-  Allows to use Object Storage in clusters as [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+  Allows to use VK Object Storage in clusters as [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
   Persistent Volume Claim (PVC) is available.
 
   Integration is achieved using OpenStack Cinder API. See [Storage in cluster](../storage) for details.

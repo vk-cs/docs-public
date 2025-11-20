@@ -1,16 +1,16 @@
-The Object Storage webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you must first add a notification configuration that specifies the events that Object Storage should publish and the destinations where Object Storage should send notifications. This configuration is saved in the Webhooks menu, which is tied to the bucket.
+The VK Object Storage webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you must first add a notification configuration that specifies the events that VK Object Storage should publish and the destinations where VK Object Storage should send notifications. This configuration is saved in the Webhooks menu, which is tied to the bucket.
 
 {note:info}
 
-Object Storage event notifications are designed to be delivered at least once. Usually, event notifications are delivered in seconds, but sometimes it can take a minute or more.
+VK Object Storage event notifications are designed to be delivered at least once. Usually, event notifications are delivered in seconds, but sometimes it can take a minute or more.
 
 {/note}
 
 ## List of notifications
 
-Currently, Object Storage can publish notifications for the following events:
+Currently, VK Object Storage can publish notifications for the following events:
 
-- New Object Creation Events - Object Storage supports several APIs for object creation. You can request notification when only a specific API is used (for example, s3: ObjectCreated: Put), or you can use a wildcard (for example, s3: ObjectCreated: \*) to request notification when an object is created, regardless of the API used.
+- New Object Creation Events - VK Object Storage supports several APIs for object creation. You can request notification when only a specific API is used (for example, s3: ObjectCreated: Put), or you can use a wildcard (for example, s3: ObjectCreated: \*) to request notification when an object is created, regardless of the API used.
 - Object removal events - support for object removal. You can request notification when an object has been deleted using the s3: ObjectRemoved: Delete event type. You can also use the s3: ObjectRemoved: \* wildcard to request a notification whenever an object is deleted.
 
 ## Turn on notification
@@ -25,9 +25,9 @@ In the window that appears, enter the required parameters and confirm with the "
 
 **Using the AWS SDK Programmatically**
 
-Internally, both the VK Cloud panel and the SDK call the Object Storage REST API to manage the notification subresources associated with the bucket.
+Internally, both the VK Cloud panel and the SDK call the VK Object Storage REST API to manage the notification subresources associated with the bucket.
 
-Regardless of which method is used, Object Storage stores the notification configuration as XML on the notification subresources associated with the bucket.
+Regardless of which method is used, VK Object Storage stores the notification configuration as XML on the notification subresources associated with the bucket.
 
 By default, notifications are not enabled for any events. Thus, initially, the notification sub-resource stores an empty configuration.
 
@@ -36,4 +36,4 @@ By default, notifications are not enabled for any events. Thus, initially, the n
 </NotificationConfiguration>
 ```
 
-To enable notifications for certain types of events, replace the XML with the appropriate configuration that defines the types of events that Object Storage should publish and the destination where the events should be published.
+To enable notifications for certain types of events, replace the XML with the appropriate configuration that defines the types of events that VK Object Storage should publish and the destination where the events should be published.

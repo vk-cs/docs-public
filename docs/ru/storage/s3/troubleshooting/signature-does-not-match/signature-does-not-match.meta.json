@@ -1,6 +1,6 @@
 {
   "title": "Ошибка SignatureDoesNotMatch при обращении к объектному хранилищу",
-  "metaDescription": "Как исправить ошибку SignatureDoesNotMatch в Object Storage? Проверьте правильность домена сервиса, ключей доступа и синхронизируйте системное время с NTP для устранения проблемы.",
+  "metaDescription": "Как исправить ошибку SignatureDoesNotMatch в VK Object Storage? Проверьте правильность домена сервиса, ключей доступа и синхронизируйте системное время с NTP для устранения проблемы.",
   "shortDescription": "Что делать, если при обращении к объектному хранилищу по API или с помощью AWS CLI возвращается ошибка SignatureDoesNotMatch",
   "sectionTitle": "Ошибка SignatureDoesNotMatch при обращении к объектному хранилищу",
   "icon": "",

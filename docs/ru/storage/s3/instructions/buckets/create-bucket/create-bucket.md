@@ -43,7 +43,7 @@
 
       После создания бакета изменить его имя будет невозможно.
 
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.

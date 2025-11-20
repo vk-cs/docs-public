@@ -15,7 +15,7 @@
 
 #### Таблица стандартных Namespace
 
-<table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Название сервиса</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Название Namespace</strong></p></td></tr><tr><td>Cloud Servers</td><td>mcs/vm</td></tr><tr><td>Cloud Networks</td><td>mcs/network</td></tr><tr><td>Object Storage</td><td>mcs/cloudstorage</td></tr><tr><td>Cloud Containers</td><td>mcs/containers</td></tr><tr><td>Cloud Databases</td><td>mcs/databases</td></tr><tr><td>Cloud Big Data</td><td>mcs/bigdata</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Arenadata DB as a Service</td><td>mcs/dwh</td></tr><tr><td>Cloud Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
+<table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Название сервиса</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Название Namespace</strong></p></td></tr><tr><td>Cloud Servers</td><td>mcs/vm</td></tr><tr><td>Cloud Networks</td><td>mcs/network</td></tr><tr><td>VK Object Storage</td><td>mcs/cloudstorage</td></tr><tr><td>Cloud Containers</td><td>mcs/containers</td></tr><tr><td>Cloud Databases</td><td>mcs/databases</td></tr><tr><td>Cloud Big Data</td><td>mcs/bigdata</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Arenadata DB as a Service</td><td>mcs/dwh</td></tr><tr><td>Cloud Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
 
 ## Метки (Labels)
 

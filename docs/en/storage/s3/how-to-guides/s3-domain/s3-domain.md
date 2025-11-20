@@ -1,4 +1,4 @@
-The Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used to forward requests.
+The VK Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used to forward requests.
 
 {note:warn}
 

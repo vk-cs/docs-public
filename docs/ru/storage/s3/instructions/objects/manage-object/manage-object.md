@@ -34,7 +34,7 @@
    - `<ИМЯ_БАКЕТА>` — имя целевого бакета.
    - `<ПУТЬ>` — путь до директории. Укажите путь, чтобы вывести список объектов, расположенных в определенной директории. Пример: если у вас есть доступ только к объектам, расположенным в определенной директории.
    - `--recursive` — параметр, при использовании которого команда выполнится для всех объектов, расположенных в бакете или в указанной директории.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -67,7 +67,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -89,7 +89,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
@@ -121,7 +121,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -205,7 +205,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -229,7 +229,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
@@ -345,7 +345,7 @@
    - `<НАСТРОЙКА_ACL>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -378,7 +378,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, доступ к объектам в котором нужно изменить.
    - `<ПУТЬ>` — путь до директории, доступ к объектам в которой нужно изменить.
    - `<НАСТРОЙКА_ACL>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -474,7 +474,7 @@
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого снимается блокировка по умолчанию.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -493,7 +493,7 @@
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого запрашивается конфигурация блокировки по умолчанию.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -565,7 +565,7 @@
    - `<ПУТЬ_К_ФАЙЛУ>` — путь к локальному файлу.
    - `<ИМЯ_БАКЕТА>` — имя бакета, в который будет загружен новый объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -630,7 +630,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -729,7 +729,7 @@
      - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/objects-lock#governance-lock);
      - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -781,7 +781,7 @@
      - `GOVERNANCE` — [управляемый режим](/ru/storage/s3/concepts/objects-lock#governance-lock);
      - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -829,7 +829,7 @@
      - `COMPLIANCE` — [строгий режим](/ru/storage/s3/concepts/objects-lock#compliance-lock).
 
    - `<YYYY-MM-DD HH:MM:SS>` — новая более поздняя дата и время окончания блокировки.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -934,7 +934,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -971,7 +971,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -1013,7 +1013,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
    - `<YYYY-MM-DD HH:MM:SS>` — новая более ранняя дата и время окончания блокировки.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -1058,7 +1058,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
    - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -1112,7 +1112,7 @@
    - `<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>` — полное имя копируемого объекта или директории, из которой копируются объекты, включая путь до нее.
    - `<БАКЕТ_ПРИЕМНИК>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
    - `<КЛЮЧ_ОБЪЕКТА_ПРИЕМНИКА>` — полное имя объекта или директории, в которую копируются объекты, включая путь до нее.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -1161,7 +1161,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -1186,7 +1186,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   // Копирование объекта из одного бакета в другой
@@ -1221,7 +1221,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -1330,7 +1330,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -1356,7 +1356,7 @@
 	   if err != nil {
 		   log.Fatalf("Unable to create session, %v", err)
 	   }
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   // Удаление объекта из бакета
@@ -1406,7 +1406,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -1468,7 +1468,7 @@
    Здесь:
 
     - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно удалить незавершенные загрузки.
-    - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -1550,7 +1550,7 @@
     - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно удалить незавершенные загрузки.
     - `<КЛЮЧ_ОБЪЕКТА>` — значение в поле **Название** на вкладке **Multipart** в личном кабинете или значение параметра `Key` в ответе AWS CLI.
     - `<ID_ЗАГРУЗКИ>` — значение в поле **ID** на вкладке **Multipart** в личном кабинете или значение параметра `UploadId` в ответе AWS CLI.
-    - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.

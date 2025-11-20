@@ -2,7 +2,7 @@ A pre-signed URL grants access to the object specified in the URL, provided that
 
 Pre-signed URLs are useful when you want a user / client to be able to upload a specific object to a bucket, but don't need them to have VK Cloud credentials or security permissions.
 
-Using pre-signed URLs, any user can perform operations in Object Storage, for example:
+Using pre-signed URLs, any user can perform operations in VK Object Storage, for example:
 
 - Download object
 - Upload object

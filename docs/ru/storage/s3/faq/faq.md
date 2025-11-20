@@ -1,4 +1,4 @@
-{cut(Какой лимит запросов в Object Storage?)}
+{cut(Какой лимит запросов в VK Object Storage?)}
 Ограничение на количество запросов к бакету:
 
 * не более 500 запросов в секунду;
@@ -6,10 +6,10 @@
 
 Лимит запросов установлен отдельно для каждого бакета. Если количество запросов превысило лимит, сервис вернет HTTP-код ответа `503`.
 
-Подробнее о [лимитах сервиса Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
 {/cut}
 
-{cut(Как посмотреть общий размер бакета Object Storage?)}
+{cut(Как посмотреть общий размер бакета VK Object Storage?)}
 Общий размер бакета можно посмотреть с помощью AWS CLI:
 
 1. Установите и настройте [AWS CLI](../connect/s3-cli), если он еще не установлен.
@@ -22,7 +22,7 @@
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, общий размер которого нужно посмотреть.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -49,7 +49,7 @@
 {cut(Можно ли сделать резервную копию объектов бакета?)}
 Да, можно. Чтобы сделать резервную копию объектов бакета, создайте еще один бакет и скопируйте в него все объекты исходного бакета, например, с помощью [AWS CLI](/ru/storage/s3/instructions/objects/manage-object#kopirovanie_vseh_obektov_baketa) или [файлового менеджера](/ru/storage/s3/connect/s3-file-managers).
 
-Резервное копирование данных S3 выполняется с помощью функций Object Storage и не предоставляется как отдельный сервис.
+Резервное копирование данных S3 выполняется с помощью функций VK Object Storage и не предоставляется как отдельный сервис.
 {/cut}
 
 {cut(Как установить SSL-сертификат на бакет?)}
@@ -94,21 +94,21 @@
 {cut(Сколько бакетов можно создать в одном проекте?)}
 В одном проекте можно создать не более 100 бакетов.
 
-Подробнее о [лимитах сервиса Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
 {/cut}
 
 {cut(Сколько объектов может содержать бакет?)}
 На количество объектов в бакете ограничений нет.
 
-Подробнее о [лимитах сервиса Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
 
 {/cut}
 
-{cut(Сколько объектов из бакета можно запросить в одном запросе к Object Storage?)}
+{cut(Сколько объектов из бакета можно запросить в одном запросе к VK Object Storage?)}
 
 1000 объектов.
 
-Подробнее о [лимитах сервиса Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
 
 {/cut}
 
@@ -118,10 +118,10 @@
 
 {/cut}
 
-{cut(Сколько аккаунтов можно создать в Object Storage?)}
+{cut(Сколько аккаунтов можно создать в VK Object Storage?)}
 В одном проекте можно создать не более 25 аккаунтов.
 
-Подробнее о [лимитах сервиса Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
 {/cut}
 
 {cut(Какие есть типы хранения?)}
@@ -138,7 +138,7 @@
 Такой зависимости нет. Скорость загрузки зависит только от пропускной способности провайдера.
 {/cut}
 
-{cut(Какая в Object Storage скорость загрузки объектов в бакет?)}
+{cut(Какая в VK Object Storage скорость загрузки объектов в бакет?)}
 
 Скорость загрузки объектов в бакет зависит от пропускной способности провайдера. В общем случае можно ориентироваться на следующие значения в рамках потока:
 
@@ -195,7 +195,7 @@
 
 {/cut}
 
-{cut(Какое время жизни у ключей доступа аккаунта Object Storage?)}
+{cut(Какое время жизни у ключей доступа аккаунта VK Object Storage?)}
 
 Время жизни обоих ключей в паре — публичного (Access Key) и секретного (Secret Key) — не ограничено. Ключи действуют до тех пор, пока вы их не [деактивируете](/ru/storage/s3/instructions/access-management/access-keys#deaktivaciya_klyucha_dostupa) или не [удалите](/ru/storage/s3/instructions/access-management/access-keys#udalenie_klyucha_dostupa) вручную. В целях безопасности рекомендуется периодически проводить ротацию ключей.
 

@@ -1,7 +1,7 @@
 {
   "title": "Connecting to storage",
   "shortDescription": "Connecting to object storage using CLI, File managers, SDK",
-  "metaDescription": "Connecting to Object Storage using CLI, File managers, SDK.",
+  "metaDescription": "Connecting to VK Object Storage using CLI, File managers, SDK.",
   "sectionTitle": "Connecting to storage",
   "icon": "",
   "weight": 3,

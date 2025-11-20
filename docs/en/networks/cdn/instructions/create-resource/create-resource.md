@@ -2,7 +2,7 @@ You can create a CDN resource in two ways:
 
 - [Through the CDN service interface](#creating_resource_via_cdn_service_interface). Use this option if you need to specify third-party [content origins](../../concepts/about) or configure SSL certificates manually.
 
-- [Through the bucket interface](#creating_resource_via_bucket_interface) in the Object Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
+- [Through the bucket interface](#creating_resource_via_bucket_interface) in the VK Object Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
 
 ## Creating resource via CDN service interface
 
@@ -109,7 +109,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/storage/s3/instructions/buckets/create-bucket "change-lang").
-1. Go to the **Object Storage → Buckets** section.
+1. Go to the **Cloud storage → Buckets** section.
 1. Click the name of the bucket you need.
 1. Go to the **CDN** tab.
 1. Enable the **Use CDN for this bucket** option.

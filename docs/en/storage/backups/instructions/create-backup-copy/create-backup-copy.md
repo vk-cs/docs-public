@@ -7,7 +7,7 @@ Use the manual mode to create backups before operations associated with the risk
 
 {note:info}
 
-Backups are stored in the Object Storage object storage with the Backup storage class.
+Backups are stored in the VK Object Storage with the Backup storage class.
 
 {/note}
 

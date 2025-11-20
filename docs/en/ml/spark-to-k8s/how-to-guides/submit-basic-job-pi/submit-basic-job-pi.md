@@ -1,7 +1,7 @@
 Spark jobs can be submitted to the cluster in different ways:
 
 - For Spark applications that do not have dependencies, it is sufficient to pass the application code in the job manifest. This approach will be demonstrated below.
-- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Object Storage](/en/storage/s3) bucket and edit the job manifest. This approach is illustrated [using the example of working with ClickHouse](../submit-advanced-job-clickhouse).
+- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [VK Object Storage](/en/storage/s3) bucket and edit the job manifest. This approach is illustrated [using the example of working with ClickHouse](../submit-advanced-job-clickhouse).
 
 As an example, an application will be used to calculate an approximate value of the number π.
 
@@ -152,7 +152,7 @@ By default, the Spark manifest job does not contain a location of the files need
 
 The application that calculates the number π requires [only one executable file](#1_create_a_file_with_the_spark_application_code), no additional artifacts are used.
 
-In this simple case, you don't need to host the Spark application executable in an Object Storage bucket and then edit the default manifest to add the required information to it.
+In this simple case, you don't need to host the Spark application executable in an VK Object Storage bucket and then edit the default manifest to add the required information to it.
 
 It is enough to pass the name of the executable file when sending a job to the cluster:
 

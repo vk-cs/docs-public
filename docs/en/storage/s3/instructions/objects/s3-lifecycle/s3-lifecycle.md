@@ -1,6 +1,6 @@
 ## Description
 
-The Object Storage service allows you to use an automated mechanism for cleaning objects at specified intervals.
+The VK Object Storage service allows you to use an automated mechanism for cleaning objects at specified intervals.
 
 Lifecycle configuration allows you to specify rules for managing the lifecycle of objects in a bucket. A configuration is a set of one or more rules. Each rule specifies the actions to be applied to the service for a group of objects after a specified period.
 

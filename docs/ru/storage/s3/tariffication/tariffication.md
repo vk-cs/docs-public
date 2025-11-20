@@ -8,7 +8,7 @@
 
 ## Тарифицируется
 
-Тарификация услуг в Object Storage зависит от [класса хранения](../concepts/about#storage_class) данных.
+Тарификация услуг в VK Object Storage зависит от [класса хранения](../concepts/about#storage_class) данных.
 
 В Hotbox и Icebox тарифицируется:
 

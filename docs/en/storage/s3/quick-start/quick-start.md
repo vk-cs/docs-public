@@ -11,11 +11,11 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 ## Before you start
 
 1. Make sure the [AWS CLI](/ru/tools-for-using-services/cli/aws-cli "change-lang") is installed.
-1. Create an account for the Object Storage service:
+1. Create an account for the VK Object Storage service:
 
    1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app).
    1. Select a project.
-   1. Go to the **Object Storage → Accounts** section.
+   1. Go to the **Cloud storage → Accounts** section.
    1. Click the **Add account** or **Add** button.
    1. Specify an account name.
    1. Click the **Create** button.
@@ -46,7 +46,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 1. Go to your VK Cloud [management console](https://cloud.vk.com/app).
 1. Select a project.
-1. Go to **Object Storage → Buckets**.
+1. Go to **Cloud storage → Buckets**.
 1. Click the **Create bucket** or **Add** button.
 1. Specify a name for the bucket.
 1. Select the `Hotbox` storage class.

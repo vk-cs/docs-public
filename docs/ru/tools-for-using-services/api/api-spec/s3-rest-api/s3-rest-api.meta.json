@@ -1,8 +1,8 @@
 {
-  "title": "Object Storage",
+  "title": "VK Object Storage",
   "shortDescription": "Операции API, структуры запросов и ответов, коды ошибок",
   "metaDescription": "Операции API, структуры запросов и ответов, коды ошибок.",
-  "sectionTitle": "Object Storage",
+  "sectionTitle": "VK Object Storage",
   "icon": "",
   "weight": 5,
   "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f"

@@ -1,8 +1,8 @@
 {
-  "title": "Object Storage",
+  "title": "VK Object Storage",
   "shortDescription": "Объектное хранилище, обеспечивает хранение и стабильную скорость раздачи любых объектов независимо от числа одновременных обращений",
-  "metaDescription": "Object Storage — объектное хранилище с поддержкой S3 API, которое обеспечивает надежное масштабируемое хранение и стабильную скорость раздачи любых",
-  "sectionTitle": "Object Storage",
+  "metaDescription": "VK Object Storage — объектное хранилище с поддержкой S3 API, которое обеспечивает надежное масштабируемое хранение и стабильную скорость раздачи любых",
+  "sectionTitle": "VK Object Storage",
   "icon": "",
   "weight": 1,
   "relativeSections": [

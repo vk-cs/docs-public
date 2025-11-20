@@ -23,7 +23,7 @@
 
       Здесь:
 
-      - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+      - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -56,7 +56,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -78,7 +78,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
@@ -110,7 +110,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -169,7 +169,7 @@
 
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<имя_загруженного файла>` — имя, которое будет присвоено скаченному объекту.
-   - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -200,7 +200,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -224,7 +224,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
@@ -258,7 +258,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -329,7 +329,7 @@
 
       - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
       - `<настройка_acl>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
-      - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+      - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
          - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -370,7 +370,7 @@
    Здесь:
 
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    - `<время_действия>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
@@ -397,7 +397,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -465,7 +465,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -531,7 +531,7 @@
    - `<бакет_источник>` — имя бакета, из которого копируется объект.
    - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -557,7 +557,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -582,7 +582,7 @@
 	   // Создание сессии
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   // Копирование объекта из одного бакета в другой
@@ -617,7 +617,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -669,7 +669,7 @@
 
    - `<бакет_источник>` — имя бакета, из которого копируется объект.
    - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
-   - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -732,7 +732,7 @@
    Здесь:
 
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -758,7 +758,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -784,7 +784,7 @@
 	   if err != nil {
 		   log.Fatalf("Unable to create session, %v", err)
 	   }
-	   // Подключение к сервису Object Storage
+	   // Подключение к сервису VK Object Storage
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   // Удаление объекта из бакета
@@ -834,7 +834,7 @@
 
 1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 
 1. Добавьте код в свой проект:
 
@@ -895,7 +895,7 @@
 
     - `<имя_бакета>` — имя бакета, для которого нужно удалить незавершенные загрузки.
 
-    - `<endpoint-url>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<endpoint-url>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -974,7 +974,7 @@
 
     - `<UploadId>` — **ID** объекта на вкладке **Multipart** в личном кабинете или значение параметра `UploadId` в ответе AWS CLI.
 
-    - `<endpoint-url>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<endpoint-url>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.

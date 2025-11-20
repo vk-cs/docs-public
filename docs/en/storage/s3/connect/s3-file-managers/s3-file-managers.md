@@ -4,13 +4,13 @@ Graphical tools such as file managers allow you to view objects in a bucket by s
 
 Before you start working with file managers, you need to create an authorized account or make sure it exists, as well as the availability of data on the key ID and secret key.
 
-You can create an account in the "Accounts" menu of the "Object Storage" service using the "Add account" button.
+You can create an account in the "Accounts" menu of the "VK Object Storage" service using the "Add account" button.
 
 When you create an account, you will be provided with data that you want to save. After closing the window, it will be impossible to restore the Secret Key, however, if you lose it, you can create a new account or add a new secret key to an existing account.
 
 ## CyberDuck
 
-Cyberduck is a free cloud storage browser for Mac and Windows with support for Object Storage as well as many other cloud platforms.
+Cyberduck is a free cloud storage browser for Mac and Windows with support for VK Object Storage as well as many other cloud platforms.
 
 Installation is performed using [the product distribution kit](https://cyberduck.io/download) from the official website, as well as the classic user interface of the operating system.
 
@@ -20,12 +20,12 @@ To connect, specify:
 
 - Connection type: `Amazon S3`
 - Server and Port: `hb.ru-msk.vkcloud-storage.ru:443`
-- Access Key ID: Key identifier obtained when creating an Object Storage account
-- Secret access key: the secret key obtained when creating an Object Storage account
+- Access Key ID: Key identifier obtained when creating an VK Object Storage account
+- Secret access key: the secret key obtained when creating an VK Object Storage account
 
 {note:info}
 
-CyberDuck works with Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
+CyberDuck works with VK Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
 {/note}
 
@@ -38,18 +38,18 @@ To configure, enter the following data:
 - Transfer protocol: `Amazon S3`
 - Hostname: `hb.ru-msk.vkcloud-storage.ru`
 - Port: `443`
-- Access Key ID: Key ID obtained when creating an Object Storage account
-- Secret Access Key: The secret key obtained when creating an Object Storage account
+- Access Key ID: Key ID obtained when creating an VK Object Storage account
+- Secret Access Key: The secret key obtained when creating an VK Object Storage account
 
 {note:info}
 
-CyberDuck works with Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
+CyberDuck works with VK Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
 {/note}
 
 ## S3FS
 
-s3fs allows Linux and macOS to mount an Object Storage bucket via FUSE. s3fs maintains its own object format for files, allowing you to use other tools such as the AWS CLI.
+s3fs allows Linux and macOS to mount an VK Object Storage bucket via FUSE. s3fs maintains its own object format for files, allowing you to use other tools such as the AWS CLI.
 
 **Installation**
 
@@ -126,22 +126,22 @@ To mount a bucket in an operating system, you should:
 
 ## Disk-O:
 
-Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with Object Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
+Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with VK Object Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
 
 The program should be installed using the standard user interface of the operating system, as well as the installation file from the [official website](https://disk-o.cloud/ru) .
 
 **Connection**
 
-To connect, add the Object Storage service, then enter the account and bucket data:
+To connect, add the VK Object Storage service, then enter the account and bucket data:
 
 ![](./assets/1598241269853-1598241269853.png)![](./assets/1598241303899-1598241303899.png)![](./assets/1598241345195-1598241345195.png)
 
 Where:
 
-- Storage: predefined storage class of the Object Storage service - Cold data or Hot data
+- Storage: predefined storage class of the VK Object Storage service - Cold data or Hot data
 - Bucket: the name of the existing bucket
-- Access Key: Key identifier obtained when creating an Object Storage account
-- Secret Key: the secret key obtained when creating an Object Storage account
+- Access Key: Key identifier obtained when creating an VK Object Storage account
+- Secret Key: the secret key obtained when creating an VK Object Storage account
 
 As a result, the bucket will be mounted as an additional disk in the operating system and will not use local space.
 

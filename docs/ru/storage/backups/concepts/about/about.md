@@ -18,4 +18,4 @@ Cloud Backup позволяет:
 
 Для СУБД PostgreSQL также поддерживается механизм непрерывного архивирования и восстановления на момент времени ([Point-in-Time Recovery, PITR](/ru/storage/backups/instructions/point-in-time-recovery-pitr)).
 
-Резервные копии хранятся в объектном хранилище Object Storage с классом хранения Backup.
+Резервные копии хранятся в объектном хранилище VK Object Storage с классом хранения Backup.

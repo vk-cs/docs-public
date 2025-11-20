@@ -1,8 +1,8 @@
 {
-  "title": "Object Storage",
+  "title": "VK Object Storage",
   "shortDescription": "Storing and transferring data in its original form via S3 API and UI",
-  "metaDescription": "Object Storage is an object storage with support for S3 API, which provides reliable scalable storage and a stable speed of distribution of any obje",
-  "sectionTitle": "Object Storage",
+  "metaDescription": "VK Object Storage is an object storage with support for S3 API, which provides reliable scalable storage and a stable speed of distribution of any obje",
+  "sectionTitle": "VK Object Storage",
   "icon": "",
   "weight": 1,
   "uuid": "7ad8c56f-b8e0-4e78-ae24-3abb0bac4df9"

@@ -1,1 +1,1 @@
-Standard operations for managing Object Storage and its resources.
+Standard operations for managing VK Object Storage and its resources.

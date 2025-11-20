@@ -1,1 +1,1 @@
-Buckets in Object Storage.
+Buckets in VK Object Storage.

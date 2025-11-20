@@ -13,7 +13,7 @@
    Здесь:
 
     - `<ИМЯ_БАКЕТА>` — имя бакета, ACL которого нужно получить.
-    - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -55,7 +55,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно установить ACL.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -97,7 +97,7 @@
 
     - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно установить ACL.
     - `<ИМЯ_ФАЙЛА>` — имя файла с конфигурацией ACL.
-    - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
@@ -161,7 +161,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором расположен объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, для которого нужно установить ACL, включая путь до него.
    - `<ИМЯ_ФАЙЛА>` — имя файла с конфигурацией ACL.
-   - `<URL_СЕРВИСА>` — домен сервиса Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
