@@ -19,7 +19,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 1. Click the **Создать экземпляр** button.
 1. At the **Configuration** step:
 
-   1. Select the type of service **Kafka**.
+   1. Select the type of service **Cloud Kafka**.
    1. Select version **3.5.0**.
    1. Select the configuration **Single**.
    1. Click the **Next step** button.
@@ -35,7 +35,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
    1. **Кластер Kubernetes**: choose **Создать новый кластер**.
    1. **Network**: choose **Create new network**.
-   1. Choose **Neutron** as SDN.
+   1. Choose **Sprut** as SDN.
    1. **Subnet address**: type `10.0.1.0/24`.
    1. **Availability zone**: `Москва (GZ1)`.
    1. Click the **Next step** button.
