@@ -20,39 +20,38 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
    1. Select the [project](../../../../../tools-for-using-services/account/concepts/projects) to place the cluster in.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
-   1. Select the **Generation 1** option and click the **Continue** button.
+   1. Select the **Previous generation** option and click the **Continue** button.
 
-## 1. Configure the cluster
+## Configure the cluster
 
-1. Specify the cluster settings:
+1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/k8s/concepts/versions/version-support).
+
+1. In the **Master nodes** block, click the **Set up** button and specify the basic cluster settings:
 
    - **Cluster name**: must start with a letter. It can only contain lowercase Latin letters, numbers, and hyphens `-` as a separator.
 
    - **Cluster type**:
 
      - **Standard**: all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). High availability is provided at the zone level.
-     - **Regional**: cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
-   
-   - **Kubernetes version**: select one of the [supported Kubernetes versions](/en/kubernetes/k8s/concepts/versions/version-support).
-   - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for a regional cluster and cannot be changed.
+     - **Fault-tolerant**: cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or 5.
+     
+   - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for fault-tolerant clusters is automatically set to `3`, but you can change it to `5`.
 
-1. Specify the master node settings:
+      For more information about cluster topologies and possible configurations, see [Service architecture](../../../concepts/architecture#cluster_topologies).
+
+   - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for fault-tolerant clusters and cannot be changed.
 
    - **Category of virtual machine**: select the [VM category](/en/computing/iaas/concepts/about#flavors).
 
    - **Virtual machine type - Master**: select the [VM configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for master nodes.
 
-      Templates with high-performance CPUs are available upon request to support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
+      Templates with high-performance CPUs are available upon request to technical support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
 
    - **Master disk type**: [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
 
-   - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for the regional cluster is automatically set to `3`, but you can change it to `5`.
-
-      For more information about cluster topologies and possible configurations, see [Service architecture](../../../concepts/architecture#cluster_topologies).
-
    - **Disk size on Master node**: the larger the disk size, the better its performance in some disk operations.
 
-1. Specify the network settings:
+1. In the **Network and settings** block, click the **Set up** button and specify the network settings:
 
    - **Network**: select the network and subnet that will host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
 
@@ -74,8 +73,6 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
       By default, the option is enabled, which allows access to the cluster and the Ingress controller from the Internet.
 
-1. Specify other settings:
-
    - **Trusted Docker Registry**: add Docker Registry addresses to the trusted list to disable HTTPS connection check when connecting to them.
 
       This can be useful if the Docker registry uses a self-signed SSL or TLS certificate that cannot be validated by the cluster. See the [Docker documentation](https://docs.docker.com/registry/insecure/#deploy-a-plain-http-registry) for more information on disabling the validation (see the description of the `insecure-registries` setting).
@@ -84,19 +81,17 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
       By default, the option is enabled and allows you to monitor the state of the cluster [using the Cloud Monitoring service](/en/monitoring-services/monitoring/instructions/mon-setup-new).
 
-1. Click the **Next step** button.
+1. In the **Node group** block, click the **Set up** button and specify the [settings](../../helpers/node-group-settings) for the worker node group.
 
-## 2. Configure the node groups
+   1. (Optionally) Add one or more worker-node groups by clicking the **Add node group** button, and [configure](../../helpers/node-group-settings) them.
 
-1. Set the [settings](../../helpers/node-group-settings) for the worker node group.
+   1. (Optionally) Delete a node group you no longer need by clicking the **Delete node group** button in the respective group.
 
-1. (Optionally) Add one or more worker-node groups by clicking the **Add node group** button, and [configure](../../helpers/node-group-settings) them.
-
-1. (Optionally) Delete a node group you no longer need by clicking the **Delete node group** button under the respective group.
-
-1. Click the **Create cluster** button.
+1. Click the **Create** button.
 
    This will start the process of creating the Kubernetes cluster. This process might take a long time depending on the size of the cluster.
+
+   Once the cluster is created, its [configuration file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) (kubeconfig) will be automatically downloaded to your machine with the name in the following format: `<CLUSTER NAME>_kubeconfig.yaml`. You will need this file to [connect](/en/kubernetes/k8s/connect) to the cluster.
 
 ## What's next?
 

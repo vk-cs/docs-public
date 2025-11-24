@@ -38,15 +38,15 @@ High availability of a cluster depends on its number of master nodes and their d
   Such clusters are highly available at the availability zone level. If the availability zone remains stable and some of the master nodes are lost, it will remain operational as long as more than half of the master nodes are operating. When there is only one master node left, the cluster stops working.
 
   {cut(Node interaction scheme for a standard cluster with 3 or 5 master node)}
-  ![Cluster with one master node](/en/kubernetes/k8s/assets/cluster_types_2.png){params[noBorder=true; width=80%]}
+  ![Standard cluster with 3 or 5 master nodes](/en/kubernetes/k8s/assets/cluster_types_2.png){params[noBorder=true; width=80%]}
   {/cut}   
 
-- Regional cluster with 3 or 5 master nodes.
+- Fault-tolerant cluster with 3 or 5 master nodes.
 
-  Master nodes of a regional cluster are distributed across all availability zones of a region. Such clusters are as highly available as possible: if one availability zone fails, the workload will be distributed among the master nodes located in other availability zones. However, as in standard clusters, regional cluster remain operational while more than half of the master nodes are working, and stop working when only one master node remains.
+  Master nodes of fault-tolerant clusters are distributed across all availability zones of a region. Such clusters are as highly available as possible: if one availability zone fails, the workload will be distributed among the master nodes located in other availability zones. However, as in standard clusters, fault-tolerant clusters remain operational while more than half of the master nodes are working, and stop working when only one master node remains.
 
-  {cut(Node interaction scheme for a regional cluster with 3 or 5 master node)}
-  ![Cluster with one master node](/en/kubernetes/k8s/assets/cluster_types_3.png){params[noBorder=true; width=80%]}
+  {cut(Node interaction scheme for a fault-tolerant cluster with 3 or 5 master node)}
+  ![Fault-tolerant cluster with 3 or 5 master nodes](/en/kubernetes/k8s/assets/cluster_types_3.png){params[noBorder=true; width=80%]}
   {/cut}
 
 Regardless of the cluster topology chosen, the master nodes use distributed key-value storage [etcd](https://etcd.io/) to store information about the state of the cluster:
