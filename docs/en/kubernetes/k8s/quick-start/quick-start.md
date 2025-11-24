@@ -23,18 +23,21 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 ### 1.1. Create a cluster
 
-1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
-1. Select [project](../../../tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/).
+1. Select the [project](../../../tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. If there are no clusters in the selected project yet, click **Create cluster**.
 
    Otherwise, click **Add**.
 
-1. In the **Create cluster** step, set:
+1. Select the **Previous generation** option and click the **Continue** button.
+
+1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/k8s/concepts/versions/version-support).
+
+1. In the **Master nodes** block, click the **Set up** button and specify the following:
 
    1. **Cluster name**: for example, `vk-cloud-k8s-quickstart`.
    1. **Cluster type**: `Standard`.
-   1. **Kubernetes version**: the latest of the available versions.
    1. **Availability zone:** `Moscow (MS1)`.
 
       {note:info}
@@ -44,13 +47,16 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
       If you choose another zone, adjust configuration files.
 
       {/note}
+   
+   1. Leave the other settings unchanged.
+
+1. In the **Network and settings** block, click the **Set up** button and specify the following:
 
    1. **Network:** `Create new network`.
    1. **Assign external IP:** make sure this option is selected.
    1. Leave the other settings unchanged.
-   1. Press the **Next step** button.
 
-1. In the **Node group** step, set:
+1. In the **Node group** block, click the **Set up** button and specify the following:
 
    1. **Node type:** `STD3-4-8`.
    1. **Availability zone:** `Moscow (MS1)`.
@@ -64,7 +70,8 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
       {/note}
 
    1. Leave the other settings unchanged.
-   1. Click the **Create cluster** button.
+
+1. Click the **Create** button.
 
 Wait for the cluster to complete, this process may take a while.
 
