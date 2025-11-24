@@ -1,8 +1,7 @@
 # {heading(Ресурс ivkcs_agent_init)[id=ivkcs_agent_init]}
 
-Аргументы ресурса `ivkcs_agent_init` приведены в {linkto(#tab_arguments)[text=таблице %number]}.
+## Аргументы ресурса
 
-{caption(Таблица {counter(table)[id=numb_tab_arguments]} — Аргументы ресурса ivkcs_agent_init)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
 |Имя
@@ -13,7 +12,7 @@
 
 |
 `uuid`
-|Идентификатор развертывания сервиса
+|Идентификатор инстанса сервиса
 |string
 | ![](/ru/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
@@ -27,14 +26,14 @@
 
 |
 `options`
-|Опции агента
-|set, аргументы списка — в {linkto(#tab_options)[text=таблице %number]}.
+|Опции инициализации агента
+|set, аргументы списка — в [таблице](#agent_init_options).
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 |===
-{/caption}
 
-{caption(Таблица {counter(table)[id=numb_tab_options]} — Опции инициализации агента)[align=right;position=above;id=tab_options;number={const(numb_tab_options)}]}
+### {heading(Опции инициализации агента)[id=agent_init_options]}
+
 [cols="2,5,2,2", options="header"]
 |===
 |Имя
@@ -50,7 +49,6 @@
 integer
 |256
 |===
-{/caption}
 
 {note:info}
 
@@ -58,20 +56,29 @@ integer
 
 {/note}
 
+## Возвращаемые параметры
+
 Ресурс `ivkcs_agent_init` возвращает атрибут `agent` в формате списка строк. Индекс в списке соответствует индексу хоста, переданного в аргументе `hosts`. Значением является bash-скрипт. Функции bash-скрипта:
 
 * Запрашивает агент у сервиса управления конфигурациями.
 * Скачивает агент и устанавливает его на хосты.
 * Выдает хостам ключи доступа в сервис управления конфигурациями.
 
-{caption(Пример ресурса `ivkcs_agent_init`)[align=left;position=above]}
+## Пример описания ресурса
+
 ```hcl
 resource "ivkcs_agent_init" "init" {
 	uuid = "<UUID>"
-	hosts = ["HOST"]
+	hosts = ["<СПИСОК_ИМЕН_ХОСТОВ>"]
 	options {
 		memory_limit = 512
 	}
 }
 ```
-{/caption}
+
+Здесь:
+
+* `<UUID>` — идентификатор инстанса сервиса.
+* `<СПИСОК_ИМЕН_ХОСТОВ>` — список имен хостов, на которых будет выполняться мониторинг. Имена хостов должны в точности соответствовать именам ВМ, определенным в вашей конфигурации Terraform (обычно в ресурсе `vkcs_compute_instance`).
+
+{include(/ru/_includes/_tf_hosts.md)}
