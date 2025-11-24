@@ -1,8 +1,7 @@
 # {heading(Ресурс ivkcs_agent_check)[id=ivkcs_agent_check]}
 
-Аргументы ресурса `ivkcs_agent_check` приведены в {linkto(#tab_arguments)[text=таблице %number]}.
+## Аргументы ресурса
 
-{caption(Таблица {counter(table)[id=numb_tab_arguments]} — Аргументы ресурса ivkcs_agent_check)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
 |Имя
@@ -13,7 +12,7 @@
 
 |
 `uuid`
-|Идентификатор развертывания сервиса
+|Идентификатор инстанса сервиса
 |string
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
@@ -25,42 +24,19 @@
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 |===
-{/caption}
 
 В ресурсе указывается один или несколько способов мониторинга состояния инстансов сервиса. Поддерживаются следующие способы мониторинга:
 
-* Проверка доступности порта — описывается в блоке {linkto(#port_health)[text=%text]}.
-* Проверка доступности адреса — описывается в блоке {linkto(#http_health)[text=%text]}.
-* Проверка доступности инстансов сервиса с использованием скриптов — описывается в блоке {linkto(#script_health)[text=%text]}.
+* Проверка доступности порта — описывается в [блоке port_health](#port_health).
+* Проверка доступности адреса — описывается в [блоке http_health](#http_health).
+* Проверка доступности инстансов сервиса с использованием скриптов — описывается в [блоке script_health](#script_health).
 
-Ресурс `ivkcs_agent_check` возвращает атрибут `hash` (формат string), который содержит хеш результата мониторинга для передачи в сервис управления конфигурациями.
-
-{caption(Пример ресурса `ivkcs_agent_check`)[align=left;position=above]}
-```hcl
-resource "ivkcs_agent_check" "check1" {
-    uuid = "<UUID>"
-	hosts = ["HOST"]
-
-	http_health {
-		protocol = "http"
-		method = "GET"
-		host = "127.0.0.1"
-		path = "status"
-		period = "1m"
-		port = 11012
-		http_codes = [200]
-	}
-}
-```
-{/caption}
-
-## {heading(Блок port_health)[id=port_health]}
+### {heading(Блок port_health)[id=port_health]}
 
 Каждый порт описывается отдельным блоком `port_health`.
 
-Аргументы для блока `port_health` приведены в {linkto(#tab_port_health)[text=таблице %number]}.
+{cut(Аргументы для блока port_health)}
 
-{caption(Таблица {counter(table)[id=numb_tab_port_health]} — Аргументы блока port_health)[align=right;position=above;id=tab_port_health;number={const(numb_tab_port_health)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
 |Имя
@@ -98,15 +74,15 @@ IP-адрес или DNS-имя хоста
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 |===
-{/caption}
 
-## {heading(Блок http_health)[id=http_health]}
+{/cut}
+
+### {heading(Блок http_health)[id=http_health]}
 
 Каждая проверка адреса описывается отдельным блоком `http_health`.
 
-Аргументы для блока `http_health` приведены в {linkto(#tab_http_health)[text=таблице %number]}.
+{cut(Аргументы для блока http_health)}
 
-{caption(Таблица {counter(table)[id=numb_tab_http_health]} — Аргументы блока http_health)[align=right;position=above;id=tab_http_health;number={const(numb_tab_http_health)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
 |Имя
@@ -200,21 +176,21 @@ IP-адрес или DNS-имя хоста
 | ![](/en/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 |===
-{/caption}
 
 {note:warn}
 
-Если указан аргумент `url`, то его значение будет иметь приоритет над значениями в аргументах `host`, `path` и `port`.
+Если указан аргумент `url`, его значение будет иметь приоритет над значениями в аргументах `host`, `path` и `port`.
 
 {/note}
 
-## {heading(Блок script_health)[id=script_health]}
+{/cut}
+
+### {heading(Блок script_health)[id=script_health]}
 
 Каждый скрипт описывается отдельным блоком `script_health`.
 
-Аргументы для блока `script_health` приведены в {linkto(#tab_script_health)[text=таблице %number]}.
+{cut(Аргументы для блока script_health)}
 
-{caption(Таблица {counter(table)[id=numb_tab_script_health]} — Аргументы блока script_health)[align=right;position=above;id=tab_script_health;number={const(numb_tab_script_health)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
 |Имя
@@ -254,4 +230,34 @@ string
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 |===
-{/caption}
+{/cut}
+
+## Возвращаемые параметры
+
+Ресурс `ivkcs_agent_check` возвращает атрибут `hash` (формат string), который содержит хеш результата мониторинга для передачи в сервис управления конфигурациями.
+
+## Пример описания ресурса
+
+```hcl
+resource "ivkcs_agent_check" "check1" {
+    uuid = "<UUID>"
+	hosts = ["<СПИСОК_ИМЕН_ХОСТОВ>"]
+
+	http_health {
+		protocol = "http"
+		method = "GET"
+		host = "127.0.0.1"
+		path = "status"
+		period = "1m"
+		port = 11012
+		http_codes = [200]
+	}
+}
+```
+
+Здесь:
+
+* `<UUID>` — идентификатор инстанса сервиса.
+* `<СПИСОК_ИМЕН_ХОСТОВ>` — список имен хостов, на которых будет выполняться мониторинг. Имена хостов должны в точности соответствовать именам ВМ, определенным в вашей конфигурации Terraform (обычно в ресурсе `vkcs_compute_instance`).
+
+{include(/ru/_includes/_tf_hosts.md)}
