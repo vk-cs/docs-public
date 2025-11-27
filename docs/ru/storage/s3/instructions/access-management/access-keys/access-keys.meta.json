@@ -1,8 +1,8 @@
 {
-    "title": "Аккаунт и его ключи доступа",
+    "title": "Аккаунт VK Object Storage и его ключи доступа",
       "shortDescription": "Доступ к VK Object Storage через AWS CLI, API и файловые менеджеры",
-      "metaDescription": "Создание и удаление аккаунта Object Storage. Управление привязанными к аккаунту ключами для доступа к VK Object Storage через AWS CLI, API и файловые менеджеры.",
-    "sectionTitle": "Аккаунт и его ключи доступа",
+      "metaDescription": "Создание и удаление аккаунта VK Object Storage. Управление привязанными к аккаунту ключами для доступа к VK Object Storage через AWS CLI, API и файловые менеджеры.",
+    "sectionTitle": "Аккаунт VK Object Storage и его ключи доступа",
     "icon": "",
     "weight": 1,
     "uuid": "fd4db123-373a-481e-b547-770e3ca58c87",

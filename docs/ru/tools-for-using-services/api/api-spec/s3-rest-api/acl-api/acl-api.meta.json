@@ -1,7 +1,7 @@
 {
     "title": "ACL",
       "shortDescription": "",
-      "metaDescription": "ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL может стоять как и на уровне всего бакета, так и на у",
+      "metaDescription": "ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL есть как у всего бакета, так и у каждого объекта",
     "sectionTitle": "ACL",
     "icon": "",
     "weight": 4,
