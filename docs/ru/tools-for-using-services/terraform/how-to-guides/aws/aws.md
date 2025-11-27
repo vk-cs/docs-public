@@ -124,7 +124,7 @@ resource "aws_s3_object" "object-two" {
 - (Опционально) `force_destroy` — параметр разрешает удаление бакета, даже если в нем будут объекты. Доступные значения `true` и `false`. По умолчанию — `false`.
 - `key`— ключ объекта. Имя объекта, когда он будет загружен в бакет.
 - `source` — путь на вашем устройстве до файла, который нужно загрузить в бакет.
-- `acl` — [настройки ACL](/ru/storage/s3/concepts/s3-acl#fiksirovannyy_acl) для объекта. Доступные значения: `private`, `public-read`, `auth-read`.
+- `acl` — [настройки ACL](/ru/storage/s3/concepts/access/s3-acl#standard_acl) для объекта. Доступные значения: `private`, `public-read`, `auth-read`.
 - `etag` — идентификатор версии объекта. Устанавливается с помощью `filemd5("path/to/source")`. Используйте этот параметр только для объектов меньше 16 МБ. Для объектов больше 16 МБ используйте `source_hash`, потому что они будут загружаться методом составной загрузки (multipart).
 - `source_hash` — идентификатор версии объекта. Параметр аналогичен `etag`, но без ограничений по размеру объекта. Устанавливается с помощью `filemd5("path/to/source")`.
 
@@ -216,13 +216,13 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 Здесь:
 
 - `data "aws_canonical_user_id" "current" {}` — источник данных получает канонический идентификатор (Canonical User ID) текущего пользователя.
-- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. [Как узнать канонический идентификатор пользователя](/ru/storage/s3/concepts/s3-acl#user-id).
+- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. [Как узнать канонический идентификатор пользователя](/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#user_id).
 - `email_address = "mcs1234567890"` — PID (идентификатор проекта), которому выдаются права доступа к бакету. [Как узнать PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
-- `permission` — [тип прав доступа](/ru/storage/s3/concepts/s3-acl#permissons). Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `permission` — [тип прав доступа](/ru/storage/s3/concepts/access/s3-acl#permissons). Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Настройте правила CORS для бакета
 
-В примере ниже будут настроены правила [CORS](https://cloud.vk.com/docs/storage/s3/reference#cors).
+В примере ниже будут настроены правила [CORS](/ru/storage/s3/concepts/access/s3-cors).
 
 Добавьте следующее содержимое в файл `main.tf`:
 

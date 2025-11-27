@@ -87,7 +87,7 @@
 {tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](/ru/storage/s3/connect/s3-cli), если он еще не установлен.
-1. Подготовьте файл с [конфигурацией ACL](/ru/storage/s3/concepts/s3-acl#config_file).
+1. Подготовьте файл с [конфигурацией ACL](/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#acl_config_file).
 1. В консоли выполните команду:
 
    ```console
@@ -150,7 +150,7 @@
 {tab(AWS CLI)}
 
 1. Установите и настройте [AWS CLI](/ru/storage/s3/connect/s3-cli), если он еще не установлен.
-1. Подготовьте файл с [конфигурацией ACL](/ru/storage/s3/concepts/s3-acl#config_file).
+1. Подготовьте файл с [конфигурацией ACL](/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#acl_config_file).
 1. В консоли выполните команду:
 
    ```console

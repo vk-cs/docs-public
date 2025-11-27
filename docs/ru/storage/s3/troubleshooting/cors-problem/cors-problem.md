@@ -1,10 +1,10 @@
-Веб-приложение пытается загрузить файл в бакет VK Object Storage, но запрос блокируется браузером. В консоли разработчика отображается ошибка, связанная с правилами [CORS](/ru/storage/s3/reference#cors), например, `Access to XMLHttpRequest at '...' from origin '...' has been blocked by CORS policy`.
+Веб-приложение пытается загрузить файл в бакет VK Object Storage, но запрос блокируется браузером. В консоли разработчика отображается ошибка, связанная с правилами [CORS](/ru/storage/s3/concepts/access/s3-cors), например, `Access to XMLHttpRequest at '...' from origin '...' has been blocked by CORS policy`.
 
 Проблема возникает из-за механизма безопасности веб-браузера Same-Origin Policy (SOP). Этот механизм запрещает скрипту на одном источнике (origins) делать запросы к другому источнику, если это не разрешено в явном виде. Для разрешения такого взаимодействия VK Object Storage должен вернуть специальные HTTP-заголовки.
 
 ### Решение
 
-Проверьте и исправьте правила [CORS](/ru/storage/s3/reference#cors):
+Проверьте и исправьте правила [CORS](/ru/storage/s3/concepts/access/s3-cors):
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
 

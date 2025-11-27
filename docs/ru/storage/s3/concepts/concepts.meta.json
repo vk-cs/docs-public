@@ -5,5 +5,8 @@
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,
-  "uuid": "724b7ee6-2d30-4e0f-a9ce-1c29572f21a5"  
+  "uuid": "724b7ee6-2d30-4e0f-a9ce-1c29572f21a5",
+  "additionalUuids": [
+    "caa84291-594e-4eb7-a4b3-6963dadd8e54"
+  ]
 }
