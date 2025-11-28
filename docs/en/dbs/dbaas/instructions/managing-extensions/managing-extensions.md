@@ -26,6 +26,12 @@ You can install extensions for DB instances and change extension parameters. Dep
 
 ## Installing the extension
 
+{note:warn}
+
+Deleting extensions is not available in the VK Cloud platform. Deleting them using alternative methods does not guarantee database instance stability.
+
+{/note}
+
 {tabs}
 
 {tab(OpenSearch)}
@@ -90,3 +96,13 @@ To change the extension settings:
 1. Click on the icon ![Pencil](./assets/pencil-icon.svg "inline") in the extension line whose parameters you want to change.
 1. Change the extension settings.
 1. Click the **Save** button.
+
+## Deleting the extension
+
+Deleting extensions is not available in the VK Cloud platform.
+
+{note:warn}
+
+Deleting extensions using alternative methods does not guarantee database instance stability.
+
+{/note}
