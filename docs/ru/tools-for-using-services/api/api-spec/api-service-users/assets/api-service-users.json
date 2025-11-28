@@ -337,7 +337,7 @@
         },
         "tenant_id": {
           "type": "string",
-          "title": "Значение параметра Project ID для проекта"
+          "title": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
         },
         "role_names": {
           "type": "array",
@@ -437,7 +437,7 @@
         },
         "tenant_id": {
           "type": "string",
-          "title": "Значение параметра Project ID для проекта"
+          "title": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
         },
         "description": {
           "type": "string",

@@ -7728,7 +7728,7 @@
                 "id": "d9735126-dddd-eeee-ffff-eb28cf64c809"
               }
             ],
-            "name": "Example Anicast IP",
+            "name": "Example Anycast IP",
             "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
             "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
             "created_at": "2025-01-30T09:04:24",
