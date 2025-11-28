@@ -25,7 +25,7 @@ Marketplace — подсистема VK Cloud, которая предостав
 
 {cut(Что делать, если сервис не запустился при подключении?)}
 
-1. Проверьте, достаточно ли в проекте квот для разворачивания сервиса. Освободите ресурсы или увеличьте квоты через [техническую поддержку](/ru/contacts).
+1. [Проверьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta), достаточно ли в проекте квот для развертывания сервиса. Освободите ресурсы или [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
 1. При [предоплатной системе оплаты](../tariffication): проверьте, достаточно ли средств на счете проекта.
 1. [Обновите](../instructions/pr-instance-manage#peresozdanie_ili_povtornoe_obnovlenie_instansa_servisa) инстанс сервиса.
 

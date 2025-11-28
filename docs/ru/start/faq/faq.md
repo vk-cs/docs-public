@@ -129,7 +129,7 @@
 
 {cut(У меня не хватает квот)}
 
-Запросите расширение квот через [техническую поддержку](/ru/contacts).  
+[Запросите](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) увеличение квот в личном кабинете.
 
 {/cut}
 

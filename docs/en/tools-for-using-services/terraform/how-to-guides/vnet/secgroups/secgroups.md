@@ -22,7 +22,7 @@ When creating and setting security groups the following is used:
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create security groups and rules. Different regions may have different quotas configured.
 
-   To increase your quotas, please contact [technical support](mailto:support@mcs.mail.ru).
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project if necessary.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 

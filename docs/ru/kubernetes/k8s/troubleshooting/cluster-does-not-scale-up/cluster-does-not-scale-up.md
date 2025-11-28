@@ -93,7 +93,7 @@
 1. Если квоты исчерпаны и проекту требуются дополнительные, выберите один из вариантов:
 
    - Удалите неиспользуемые ресурсы, чтобы освободить квоты.
-   - [Отправьте запрос](/ru/tools-for-using-services/account/instructions/project-settings/manage#uvelichenie_kvot_proekta) на увеличение квот в техническую поддержку. 
+   - [Увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты. 
 
 Подробнее о квотах в статье [Квоты и лимиты](/ru/tools-for-using-services/account/concepts/quotasandlimits).
 

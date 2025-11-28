@@ -14,7 +14,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create the cluster. Different quotas may be configured for different regions.
 
-   If you want to increase the quotas, write to [technical support](mailto:support@mcs.mail.ru).
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas if necessary.
 
 1. Read about [Terraform features](../../helpers/terraform-howto) in the container service.
 

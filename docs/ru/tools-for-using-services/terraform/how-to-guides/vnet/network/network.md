@@ -28,7 +28,7 @@
 
 1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей. Для разных регионов могут быть настроены разные квоты.
 
-   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 

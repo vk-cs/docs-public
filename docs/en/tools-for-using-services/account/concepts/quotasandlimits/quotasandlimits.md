@@ -30,7 +30,7 @@ Other limits are not related to physical limitations and are based on the operat
 
 There are no corresponding quotas for some technical limits.
 
-Quotas can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) within the technical limits by contacting technical support.
+Quotas can be [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) within the technical limits.
 
 Non-rigid limits can be exceeded — either also through [technical support](mailto:support@mcs.mail.ru), or independently. However, exceeding these limits can negatively affect the stability of work.
 
@@ -101,7 +101,7 @@ The following is a list of quotas and limits for the Moscow region.
 
 |===
 
-The limit on the number of instances in the project can be exceeded if the corresponding quota is increased upon request to [technical support](mailto:support@mcs.mail.ru).
+The limit on the number of instances in the project can be exceeded if the corresponding quota is [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
 
 {note:info}
 
@@ -274,7 +274,7 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | not limited
 |===
 
-Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](mailto:support@mcs.mail.ru) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
+Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
 
 #### Number of disks
 
@@ -318,7 +318,7 @@ Quotas for the total volume of disks in the project take into account all types 
 
 |===
 
-Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](mailto:support@mcs.mail.ru) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
+Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
 
 #### Limits without quotas
 
@@ -439,7 +439,7 @@ Quota for the number of file storage networks (**NFS / CIFS file storage network
 
 ### {heading(Cloud networks)[id=nets]}
 
-The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to request quotas exceeding the corresponding limits via [technical support](mailto:support@mcs.mail.ru).
+The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas exceeding the corresponding limits.
 
 #### Networks, subnets and IP addresses
 
@@ -519,7 +519,7 @@ The limits in this section are determined by the requirements of operation, they
 
 {/tabs}
 
-Even if the quota for the total number of subnets in the project has been increased through technical support, it is not recommended to create more than 20 subnets in one network.
+Even if the quota for the total number of subnets in the project has been [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota), it is not recommended to create more than 20 subnets in one network.
 
 #### Other parameters
 
@@ -690,7 +690,7 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 | Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
 | Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 
-The limit on the backup size (320 TB) is due to the limit on the file size in the VK Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
+The limit on the backup size (320 TB) is due to the limit on the file size in the VK Object Storage service (S3), this service is used to store backups. This limit can be increased by contacting [technical support](mailto:support@mcs.mail.ru).
 
 ### VK Object Storage
 
@@ -745,4 +745,4 @@ There are no quotas for the VK Object Storage service. The use of these services
 
 |===
 
-The rate limits can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
+The rate limits can be increased by contacting [technical support](mailto:support@mcs.mail.ru).
