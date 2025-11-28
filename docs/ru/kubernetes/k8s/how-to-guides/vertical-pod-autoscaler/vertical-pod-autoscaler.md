@@ -16,6 +16,8 @@
    {cut(Метрики для конфигурации дашбордов VPA)}
    
    ```yaml
+   # to kube-state-metrics
+   # begin
      rbac:
        extraRules:
          - apiGroups: ["autoscaling.k8s.io"]
@@ -146,6 +148,7 @@
                      unit: "core"
      selfMonitor:
        enabled: true
+   # end
    ```
    {/cut}
 
