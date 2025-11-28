@@ -64,7 +64,7 @@ If the message does not appear, and the creation wizard reports an error, contac
 
 {cut(There are not enough quotas when creating a VM)}
 
-Free up resources on the project or contact [technical support](mailto:support@mcs.mail.ru), by informing the project, account details, as well as the amount of resources needed to add to the project.
+Free up resources or [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas.
 
 {/cut}
 

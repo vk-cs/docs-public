@@ -26,7 +26,7 @@ The example use:
 1. Read the [VK Cloud CDN documentation](/en/networks/cdn/concepts) to know how the service works.
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create the CDN resource. Different quotas may be configured for different regions.
 
-   If you want to increase your quotas, please contact [technical support](mailto:support@mcs.mail.ru).
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas if necessary.
 
 1. [Install Terraform and configure the provider](../../quick-start) if you have not already done.
 

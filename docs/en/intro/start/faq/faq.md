@@ -69,7 +69,7 @@ Bonus points are awarded when the first project is created in VK Cloud; this opt
 
 {cut(I do not have enough quotas)}
 
-The expansion of resource quotas is performed upon request to [technical support](mailto:support@mcs.mail.ru).
+[Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project.
 
 {/cut}
 

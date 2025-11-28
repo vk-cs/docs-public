@@ -19,7 +19,7 @@
 
 1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей и виртуальных машин. Для разных регионов могут быть настроены разные квоты.
 
-   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 

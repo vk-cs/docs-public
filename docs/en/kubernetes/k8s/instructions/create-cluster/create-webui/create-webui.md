@@ -12,7 +12,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#k8s) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the cluster. Different quotas may be configured for different regions.
 
-   If you want to increase the quotas, contact [technical support](mailto:support@mcs.mail.ru).
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas if necessary.
 
 1. Run the cluster creation wizard:
 

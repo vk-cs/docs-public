@@ -7,7 +7,7 @@
 
 1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания кластера. Для разных регионов могут быть настроены разные квоты.
 
-   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
 
 1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/instructions/helpers/terraform-howto) в сервисе Cloud Containers.
 

@@ -12,7 +12,7 @@
 
 1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits#k8s) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
-   Если вы хотите увеличить квоты, напишите в [техническую поддержку](/ru/contacts).
+   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
 
 1. Запустите мастер создания кластера:
 

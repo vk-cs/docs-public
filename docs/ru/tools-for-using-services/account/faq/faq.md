@@ -78,7 +78,7 @@
 
 {cut(Как увеличить квоты проекта VK Cloud, если недостаточно свободных ресурсов?)}
 
-Воспользуйтесь инструкцией из статьи [увеличение квот проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#uvelichenie_kvot_proekta).
+Воспользуйтесь [инструкцией по увеличению квот проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
 
 {/cut}
 

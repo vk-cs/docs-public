@@ -286,12 +286,30 @@ To get an extended list of quotas for a project:
 
 {/tabs}
 
-## Increasing project quotas
+## {heading(Increasing project quotas)[id=increase-quota]}
 
-If the project lacks [quotas](../../../concepts/quotasandlimits), contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner and provide the information:
+Increasing quotas must be performed on behalf of a user with the project owner [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) using a special web form in the management console:
 
-- [project id](#getting-the-project-id) (PID) and [region](../../../concepts/regions);
-- which quotas need to be increased (for example, the number of CPUs, the available amount of RAM) and by how much.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud Management Console.
+1. Click on the user name in the header of the management console and select **Quotas management**.
+1. Click the **Add Quotas** button. The quota increase window will appear.
+1. If automatic quota increase is available for a project, you will be able to select a request type. Choose one of them:
+
+    - **Automatic quota increase** — quotas will be expanded automatically, without requesting technical support. The maximum available value for each quota is limited.
+    - **Additional resources** — the request will be sent to technical support. Use this if automatic quota increase is not sufficient.
+
+    If there is no request type selection, the quota increase request will be sent to technical support.
+
+1. Select the resource for which you want to increase quotas. To increase quotas for several resource types, click the **Add more** button.
+
+    To remove a resource from the quota increase request, click the ![delete-icon](/en/assets/delete-icon.svg "inline") icon.
+
+1. Confirm your choice using one of the available methods:
+
+    - Click the **Send request** button. A technical support request will be created. Once the request is approved, the user with the project owner role will receive a notification via the linked email address.
+
+    - Click the **Increase** button. Quotas will be increased automatically. This option is only available for projects with automatic quota increases enabled.
+
 
 {note:info}
 

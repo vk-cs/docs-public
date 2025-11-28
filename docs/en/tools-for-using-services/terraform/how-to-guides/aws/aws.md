@@ -14,7 +14,7 @@ A detailed description of the resources is in the [provider documentation](https
 
 1. Learn the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you plan to create the instance. Different regions may have different quotas configured.
 
-    If you want to increase the quotas, contact [technical support](mailto:support@mcs.mail.ru).
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas if necessary.
 
 1. [Install Terraform](../../quick-start) if it is not already done.
 1. Set up the provider:
