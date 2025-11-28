@@ -4,5 +4,6 @@
   "metaDescription": "Способы управления доступом пользователей к бакетам и объектам: аккаунт VK Object Storage, ключи доступа аккаунта и бакета, доступ по presigned URL, поддержка ACL и CORS.",
   "sectionTitle": "Управление доступом",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "e29cd283-22fb-4ed1-9c9c-276e2a71ce65"
 }

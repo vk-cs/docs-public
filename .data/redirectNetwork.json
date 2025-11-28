@@ -17275,7 +17275,7 @@
   },
   {
     "source": "/ru/base/s3/references",
-    "destination": "/ru/storage/s3/reference",
+    "destination": "/ru/storage/s3/concepts",
     "permanent": false,
     "locale": false
   },
@@ -24607,7 +24607,7 @@
   },
   {
     "source": "/ru/storage/s3/references",
-    "destination": "/ru/storage/s3/reference",
+    "destination": "/ru/storage/s3/concepts",
     "permanent": false,
     "locale": false
   },
@@ -32702,6 +32702,18 @@
   {
     "source": "/ru/storage/s3/concepts/s3-api",
     "destination": "/ru/storage/s3/concepts/features",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/reference",
+    "destination": "/ru/storage/s3/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/concepts/s3-acl",
+    "destination": "/ru/storage/s3/concepts/access/s3-acl",
     "permanent": false,
     "locale": false
   }
