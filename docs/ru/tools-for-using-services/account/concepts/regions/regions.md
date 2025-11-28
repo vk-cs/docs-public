@@ -25,6 +25,8 @@
 `MS1`
 
 `ME1`
+
+`PA2`
 | https://cloud.vk.com
 | Рубли
 

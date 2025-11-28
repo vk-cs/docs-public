@@ -145,7 +145,7 @@ Each availability zone has one or more data processing centers (data centers) wh
 | Data center
 | Data center address
 
-.3+|Moscow
+.4+|Moscow
 |`GZ1`
 |[Goznak](https://tech.goznak.ru/dc-goznak-moscow)
 |Moscow, Mira avenue, 105, building 6
@@ -155,8 +155,12 @@ Each availability zone has one or more data processing centers (data centers) wh
 |Moscow, Korovinskoe highway, 41
 
 |`ME1`
-|Medvedkovo Rostelecom Data Centre.
+|Medvedkovo Rostelecom Data Centre
 |Moscow, Chermyanskaya st., 4
+
+|`PA2`
+|«Pahra»
+|Moscow Region, Domodedovo, Severniy Subdistrict, Krasnodarskaya Street, 12с1, 142000
 
 |Kazakhstan
 |`QAZ`
@@ -172,6 +176,8 @@ Availability zones within a region are connected using a redundant dedicated hig
 ## Security
 
 VK Cloud security is ensured by constant monitoring of VK Cloud services, conducting external audits. VK Cloud participates in the security audit program [HackerOne](https://www.hackerone.com). Infrastructure [certified](https://cloud.vk.com/cloud-platform/certificates/) FSTEC of Russia for working with personal data.
+
+The infrastructure of all VK Cloud availability zones is protected in accordance with the Federal Law No. 152-FZ on Personal Data.
 
 For more information, see the section [Platform security](/en/intro/it-security).
 

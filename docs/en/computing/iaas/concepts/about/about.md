@@ -169,17 +169,17 @@ The VK Cloud platform supports various types of disks:
 
 | Network HDD
 | ceph-hdd
-| MS1, GZ1, ME1
+| MS1, GZ1, ME1, PA2
 | An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different servers of DSS (data storage system)
 
 | Network SSD
 | ceph-ssd
-| MS1, GZ1, ME1
+| MS1, GZ1, ME1, PA2
 | Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different servers of DSS
 
 | Network<br/>High-IOPS SSD
 | high-iops
-| MS1, GZ1, ME1
+| MS1, GZ1, ME1, PA2
 | SSD with increased speed of operation. Double replication: both copies are on the same server of DSS. In case of a failure of the DSS, it will be necessary to prepare a new server and transfer physical disks with user data to the new server. Recovery time is not regulated
 
 | Local <br/>Low Latency NVME
