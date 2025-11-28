@@ -357,6 +357,7 @@
     | MS1       | available   |
     | GZ1       | available   |
     | ME1       | available   |
+    | PA2       | available   |
     +-----------+-------------+
     ```
 

@@ -330,7 +330,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    openstack availability zone list
    ```
 
-   {cut(The example result of running the command)}
+   {cut(Example of the command output (shortened))}
 
     ```console
     +-----------+-------------+
@@ -339,6 +339,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
     | MS1       | available   |
     | GZ1       | available   |
     | ME1       | available   |
+    | PA2       | available   |
     +-----------+-------------+
     ```
 
