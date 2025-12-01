@@ -8,7 +8,7 @@
 
 - CPU (vCPU) — за каждое ядро. 1 vCPU соответствует 1 физическому ядру сервера виртуализации.
 - Оперативная память (RAM) — за каждый 1 ГБ оперативной памяти.
-- Диски — за каждый 1 ГБ дискового пространства, цена зависит от [типа диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) (SSD, HDD, High-IOPS, Low Latency NVME).
+- Диски — за каждый 1 ГБ дискового пространства, цена зависит от [типа диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) (SSD, HDD, High-IOPS, Low Latency NVMe).
 - [Сервисные балансировщики нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 - [Floating IP-адреса](/ru/networks/vnet/concepts/ips-and-inet#floating-ip). 
 - [GPU и vGPU](/ru/computing/gpu/concepts/about) (только для кластеров первого поколения).

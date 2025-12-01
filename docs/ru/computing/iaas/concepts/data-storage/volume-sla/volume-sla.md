@@ -4,7 +4,7 @@
 - SSD;
 - High-IOPS SSD;
 - High-IOPS HA SSD;
-- Low Latency NVME.
+- Low Latency NVMe.
 
 Подробнее — в разделе о [дисках блочного хранения](../disk-types) в VK Cloud.
 
@@ -12,7 +12,7 @@
 
 {note:info}
 
-Значение задержки (latency) гарантируется только для дисков Low Latency NVME.<br/>
+Значение задержки (latency) гарантируется только для дисков Low Latency NVMe.<br/>
 Для остальных типов дисков величина задержки является приблизительной и указана для справки.
 
 {/note}
@@ -23,7 +23,7 @@
 | Сетевой SSD-диск<br/>(ceph-ssd)     | 1000–16000  | 30 | 500–8000   | 15 | 3    |
 | High-IOPS SSD<br/>(high-iops)       | 10000–45000 | 30 | 5000–30000 | 25 | 1    |
 | High-IOPS HA SSD<br/>(high-iops-ha) | 7500–35000  | 25 | 2000–12000 | 15 | 1    |
-| Low Latency NVME<br/>(ef-nvme)      | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
+| Low Latency NVMe<br/>(ef-nvme)      | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
 
 {note:info}
 
@@ -99,9 +99,9 @@
 
 Здесь `bs` и `iodepth` — параметры [тестирования производительности](#testirovanie_proizvoditelnosti_diskov).
 
-## Low Latency NVME
+## Low Latency NVMe
 
-Ниже даны подробные характеристики производительности для локальных дисков Low Latency NVME разного объема.
+Ниже даны подробные характеристики производительности для локальных дисков Low Latency NVMe разного объема.
 
 | Размер, ГБ | Чтение, IOPS<br/>bs=4k,<br/>iodepth=32 | Чтение, МБ/с<br/>bs=1M,<br/>iodepth=16 | Запись, IOPS<br/>bs=4k,<br/>iodepth=32 | Запись, МБ/с<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|
