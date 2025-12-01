@@ -274,6 +274,8 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | not limited
 |===
 
+For Low Latency NVMe disks, there are no quotas or limits on the total disk size.
+
 Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
 
 #### Number of disks
@@ -317,6 +319,8 @@ Quotas for the total volume of disks in the project take into account all types 
 | not limited
 
 |===
+
+For Low Latency NVMe disks, there are no quotas or limits on the total number of disks.
 
 Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
 
@@ -369,6 +373,15 @@ Certain VK Cloud services may have their own disk size limits
 
  10 TB using OpenStack CLI
 |A disk created over the limit (10 TB) is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
+
+Certain VK Cloud services may have their own disk size limits
+|![](/ru/assets/no.svg "inline")
+
+|Size of one Low Latency NVMe disk
+|2 TB via VK Cloud management console.
+
+ 10 TB using OpenStack CLI
+|The limit (10 TB) can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
 Certain VK Cloud services may have their own disk size limits
 |![](/ru/assets/no.svg "inline")

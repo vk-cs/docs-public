@@ -12,7 +12,7 @@
 1. В личном кабинете VK Cloud [добавьте](/ru/kubernetes/k8s/instructions/manage-node-group#add_group) группу узлов с ВМ на основе конфигурации для LL NVMe:
 
    - **Категория виртуальной машины**: `ВМ с локальными дисками`.
-   - **Тип Node-узлов**: шаблон конфигурации ВМ для диска LL NVMe (в названии такого шаблона будет `NVME`).
+   - **Тип Node-узлов**: шаблон конфигурации ВМ для диска Low Latency NVMe (в названии такого шаблона будет `NVME`).
    - Другие настройки оставьте без изменений.
 
 1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
@@ -116,7 +116,7 @@
              command: ["/bin/sh", "-c"]
              args:
                [
-                 'echo "The coffee pod says Hello World to everyone! This file is located on NVME volume." > /usr/share/nginx/html/index.html',
+                 'echo "The coffee pod says Hello World to everyone! This file is located on NVMe volume." > /usr/share/nginx/html/index.html',
                ]
          containers:
            - name: coffee

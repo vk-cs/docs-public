@@ -2,7 +2,7 @@ The data storage system on the VK Cloud platform is organized using network driv
 
 ## {heading(Creating disk)[id=create_disk]}
 
-Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
+Creating HDD and SSD drives is available by default in all configurations. To create Low Latency NVMe disks [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
 
 {note:info}
 
@@ -67,7 +67,7 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
 Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 - The disk size cannot be reduced.
-- If disks with the High IOPS SSD and Low Latency NVME type have snapshots, you cannot increase the size of these disks.
+- If disks with the High IOPS SSD and Low Latency NVMe type have snapshots, you cannot increase the size of these disks.
 
 {tabs}
 
@@ -266,7 +266,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 ## {heading(Changing disk type)[id=change_disk_type]}
 
-Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
+Creating HDD and SSD drives is available by default in all configurations. To use Low Latency NVMe disks [contact technical support](mailto:support@mcs.mail.ru) and request access to [high-performance configurations](../../concepts/about#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/about#disks) — to the article [Cloud Servers overview](../../concepts/about).
 
 {tabs}
 

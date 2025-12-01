@@ -4,7 +4,7 @@ Various types of disks are used in the data storage system on the VK Cloud platf
 - SSD
 - High-IOPS SSD
 - High-IOPS HA SSD
-- Low Latency NVME
+- Low Latency NVMe
 
 Read more in the article [Cloud Servers overview](../about#disks).
 
@@ -12,7 +12,7 @@ Certain performance characteristics are guaranteed for each type of disk. Quotas
 
 {note:info}
 
-The latency value is guaranteed only for Low Latency NVME disks.<br/>
+The latency value is guaranteed only for Low Latency NVMe disks.<br/>
 For other types of disks, the delay value is approximate and is indicated for reference.
 
 {/note}
@@ -23,7 +23,7 @@ For other types of disks, the delay value is approximate and is indicated for re
 | Network SSD<br/>(ceph-ssd)          | 1000–16000  | 30 | 500–8000   | 15 | 3    |
 | High-IOPS SSD<br/>(high-iops)       | 10000–45000 | 30 | 5000–30000 | 25 | 1    |
 | High-IOPS HA SSD<br/>(high-iops-ha) | 7500–35000  | 25 | 2000–12000 | 15 | 1    |
-| Low Latency NVME<br/>(ef-nvme)      | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
+| Low Latency NVMe<br/>(ef-nvme)      | 10000–75000 | 75 | 5000–50000 | 35 | 0,5  |
 
 {note:info}
 
@@ -99,9 +99,9 @@ Below are detailed performance characteristics for network High-IOPS SSD HA driv
 
 Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) parameters.
 
-## Low Latency NVME
+## Low Latency NVMe
 
-Below are detailed performance characteristics for local Low Latency NVME drives of different sizes.
+Below are detailed performance characteristics for local Low Latency NVMe drives of different sizes.
 
 | Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|

@@ -144,7 +144,7 @@ The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuou
 
 Network drives can be partitioned and formatted in the same way as regular locally connected drives. The advantage of network drives: they can be “moved” between VMs located in the same data center.
 
-Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](mailto:support@mcs.mail.ru).
+Low Latency NVMe local disks are available in high-performance configurations. To create such a configuration [contact technical support](mailto:support@mcs.mail.ru).
 
 After creating a disk, you can change its size, type, and availability zone. The disk can be renamed, connected or disconnected from the VM, cloned or deleted. The boot disk can be made non-bootable and vice versa.
 
@@ -182,7 +182,7 @@ The VK Cloud platform supports various types of disks:
 | MS1, GZ1, ME1, PA2
 | SSD with increased speed of operation. Double replication: both copies are on the same server of DSS. In case of a failure of the DSS, it will be necessary to prepare a new server and transfer physical disks with user data to the new server. Recovery time is not regulated
 
-| Local <br/>Low Latency NVME
+| Local <br/>Low Latency NVMe
 | ef-nvme
 | MS1, GZ1, ME1
 | SSD, which is located on the same hypervisor as the VM. High speed and fast response. Dual replication: both copies are on the same hypervisor

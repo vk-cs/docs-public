@@ -7,7 +7,7 @@ The cost of platform services is given in [price list](https://cloud.vk.com/pric
 - CPU (vCPU) — for each core. 1 vCPU corresponds to 1 physical core of the virtualization server.
 - Random access memory (RAM) — for each 1 GB of RAM.
 - License (for example, on Windows OS).
-- Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVME).
+- Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVMe).
 - File storages (NFS/CIFS) — for each 1 GB of disk space.
 - Disk snapshots (backups) — for each 1 GB of snapshot size.
 - [Public IP addresses](/en/networks/vnet/tariffication#what_is_charged).
