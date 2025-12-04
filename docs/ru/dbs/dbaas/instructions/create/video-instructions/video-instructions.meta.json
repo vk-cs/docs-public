@@ -1,0 +1,8 @@
+{
+  "title": "Видеоинструкции",
+  "shortDescription": "Инструкции по созданию инстансов БД в формате видео",
+  "metaDescription": "Cloud Databases VK Cloud: пошаговые видеоинструкции по развертыванию инстансов баз данных — PostgreSQL, MySQL, MongoDB, Redis, ClickHouse и OpenSearch",
+  "sectionTitle": "Видеоинструкции",
+  "icon": "",
+  "weight": 3
+}
