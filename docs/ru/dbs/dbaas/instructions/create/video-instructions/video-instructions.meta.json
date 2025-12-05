@@ -4,5 +4,6 @@
   "metaDescription": "Cloud Databases VK Cloud: пошаговые видеоинструкции по развертыванию инстансов баз данных — PostgreSQL, MySQL, MongoDB, Redis, ClickHouse и OpenSearch",
   "sectionTitle": "Видеоинструкции",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "841ea734-f8e3-4570-9f34-7dbd4ae4ed1a"
 }

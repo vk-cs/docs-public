@@ -4,5 +4,6 @@
   "metaDescription": "Cloud Databases VK Cloud: подробная видеоинструкция по созданию и настройке инстанса ClickHouse для аналитики больших данных в облаке",
   "sectionTitle": "ClickHouse",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "def1b862-a3c0-4c6d-b18d-11f18706fd28"
 }

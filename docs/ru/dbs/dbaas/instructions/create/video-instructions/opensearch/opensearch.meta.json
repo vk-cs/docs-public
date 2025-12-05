@@ -4,5 +4,6 @@
   "metaDescription": "Cloud Databases VK Cloud: видеоинструкция по созданию и настройке инстанса OpenSearch для поиска и аналитики данных в облаке",
   "sectionTitle": "OpenSearch",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "uuid": "2a391c66-1850-4afc-90fb-55c5ca716b73"
 }

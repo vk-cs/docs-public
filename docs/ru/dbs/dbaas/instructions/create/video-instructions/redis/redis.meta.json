@@ -4,5 +4,6 @@
   "metaDescription": "Cloud Databases VK Cloud: подробная видеоинструкция по созданию и настройке инстанса Redis для быстрого хранения и извлечения данных в облаке",
   "sectionTitle": "Redis",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "48bf7345-17dd-4246-b945-eeb2bbb70555"
 }
