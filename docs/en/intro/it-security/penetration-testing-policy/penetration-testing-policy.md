@@ -1,60 +1,55 @@
-## Introduction
+Data and infrastructure security is a priority for VK Cloud. Consumers of cloud services can independently or with the help of contractors test the security of their applications and resources hosted in VK Cloud.
 
-Data and infrastructure security is a priority for VK Cloud. VK Tech company supports and encourages penetration testing to ensure the security of services and protection of user data. The penetration testing policy describes the conditions and procedures for conducting penetration tests.
+Penetration testing allows you to identify vulnerabilities, assess the effectiveness of protection, predict risks, create an incident response plan, and confirm compliance with security standards. The penetration testing policy describes the conditions and procedures for conducting such tests.
 
-## Area of application
+To conduct penetration tests, review the [test conditions](#conditions) and [submit a testing request](#request_procedure).
 
-This policy applies to all public VK Cloud services and infrastructure. It is intended for clients, who wish to conduct security testing of their applications and resources hosted in VK Cloud.
-
-## Conditions for conducting penetration tests
-
-1. **Pre-notification and approval:**
-
-    * Before starting penetration tests, notify VK Cloud at least 10 working days in advance in accordance with [request submission procedure](#request_procedure).
-    * VK Cloud reserves the right to approve or deny the request for testing.
-
-1. **Areas allowed for testing:**
-
-    * Clients may only conduct testing on their own resources and data.
-    * Testing of common infrastructure components of VK Cloud such as networks, databases, storage and management systems is prohibited.
-    * Testing of services provided by VK Cloud as SaaS solutions is prohibited.
-
-1. **Testing methods:**
-
-    * Only testing methods that do not harm the infrastructure and data of other clients are allowed.
-    * Methods that may cause a denial of service (DoS/DDoS), disrupt cloud services, or compromise other client's data are prohibited.
-    * Clients are required to comply with all applicable laws and regulations while conducting tests.
-
-1. **Responsibility and accountability:**
-
-    * Clients are fully responsible for the consequences of penetration tests.
-    * If vulnerabilities in VK Cloud's public services or infrastructure are identified as part of the testing, client agrees to notify VK Cloud immediately by email at [CloudSecurity@vkteam.ru](mailto:CloudSecurity@vkteam.ru).
-
-1. **Data privacy and security:**
-
-    * All information obtained during testing shall be treated as confidential.
-    * Clients undertake not to disclose information regarding VK Cloud's infrastructure and security to third parties.
-
-## {heading(Request submission procedure)[id=request_procedure]}
-
-1. Send an email to [CloudSecurity@vkteam.ru](mailto:CloudSecurity@vkteam.ru) and specify:
-    * a description of the purpose and scope of the testing
-    * a list of IP addresses, domain names, and other resources to be tested
-    * anticipated testing methods and tools
-    * contact information for the team conducting the testing
-
-1. Receive confirmation and approval of the request from the VK Cloud team.
-
-## Contact information
-
-For more information or advice on penetration testing, contact our security team at [CloudSecurity@vkteam.ru](mailto:CloudSecurity@vkteam.ru).
-
-## Conclusion
-
-VK Cloud strives to provide a high level of security for it's services and client data. Performing penetration tests is an important part of this process. We thank you for your cooperation and contribution to improving the security of our cloud.
+For additional advice, contact the VK Cloud security team at [CloudSecurity@vkteam.ru](mailto:CloudSecurity@vkteam.ru).
 
 {note:info}
 
-This policy is subject to update. Check regularly for up-to-date information on the [official VK Cloud website](https://cloud.vk.com).
+This policy may be updated. Check for policy updates before you conduct testing.
 
 {/note}
+
+## Scope
+
+This policy applies to all public VK Cloud services and infrastructure. It is intended for customers (consumers of cloud services) who wish to conduct security testing of their applications and resources hosted in VK Cloud.
+
+## {heading(Penetration testing conditions)[id=conditions]}
+
+1. **Prior notification and approval:**
+
+    * [Submit a request](#request_procedure) to conduct penetration testing. Preparing for testing will take at least 10 business days.
+    * VK Cloud reserves the right to approve or reject the request to conduct tests.
+
+1. **Areas allowed for testing:**
+
+    * Customers may only conduct testing on their own resources and data.
+    * Testing of shared VK Cloud infrastructure components such as networks, databases, storage, and management systems is prohibited. Testing such components may affect other users.
+    * Testing of services provided by VK Cloud as [SaaS solutions](/en/intro/start/concepts/architecture#cloud_service_delivery_models) is prohibited.
+
+1. **Testing methods:**
+
+    * Only testing methods that do not harm the infrastructure and data of other customers are allowed.
+    * The use of methods that may cause denial of service (DoS/DDoS), cloud service disruptions, or compromise of other customers' data is prohibited.
+    * Customers are required to comply with all applicable laws and regulations during testing.
+
+1. **Responsibility and accountability:**
+
+    * Customers bear full responsibility for the consequences of conducting penetration tests.
+    * If testing reveals vulnerabilities in VK Cloud public services or infrastructure, the customer is obligated to notify VK Cloud immediately at [CloudSecurity@vkteam.ru](mailto:CloudSecurity@vkteam.ru).
+
+1.  **Data privacy and security:**
+
+    * All information obtained during testing shall be treated as confidential.
+    * Customers agree not to disclose information concerning VK Cloud's infrastructure and security to third parties.
+
+## {heading(Submitting a testing request)[id=request_procedure]}
+
+1. Write to [CloudSecurity@vkteam.ru](mailto:CloudSecurity@vkteam.ru) and specify:
+    * goals and scope of the testing
+    * a list of IP addresses, domain names, and other resources to be tested
+    * anticipated testing methods and tools
+    * contact details for the team conducting the testing on your side
+1. Receive confirmation and approval of the request from the VK Cloud team.
