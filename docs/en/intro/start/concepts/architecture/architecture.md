@@ -49,7 +49,6 @@ VK Cloud offers the following deployment models:
 | You configure your desired security level using certified VK Cloud products
 |===
 
- 
 ## Cloud service delivery models
 
 You can use VK Cloud to deploy virtualization, monitoring, container, and data storage services. The architecture is based on four groups of services:
