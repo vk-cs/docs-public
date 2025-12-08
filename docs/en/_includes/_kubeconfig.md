@@ -38,7 +38,7 @@ Follow the steps on the host from which you plan to connect to the cluster:
 {/includetag}
 {includetag(variables)}
 
-1. Put the path to the config file in the `$KUBECONFIG` environment variable:
+1. Specify the path to the config file in the `$KUBECONFIG` environment variable:
 
    {tabs}
    {tab(Windows (PowerShell))}

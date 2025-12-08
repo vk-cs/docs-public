@@ -6,7 +6,7 @@
 1. Выберите [проект](../../../tools-for-using-services/account/concepts/projects), где будет размещен кластер.
 1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
 1. Если в выбранном проекте пока нет ни одного кластера, нажмите кнопку **Создать кластер**. Иначе нажмите кнопку **Добавить**.
-1. Выберите опцию **Предыдущее поколение** и нажмите кнопку **Продолжить**.
+1. Выберите опцию **Новое поколение** и нажмите кнопку **Продолжить**.
 
 1. В блоке **Конфигурация** выберите последнюю из доступных версий Kubernetes.
 1. Нажмите кнопку **Настроить** в блоке **Мастер узлы** и задайте:
@@ -89,7 +89,7 @@
 Установите на хост следующие инструменты:
 
 - Браузер.
-- Утилиту [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl).
+- Утилиту `kubectl`. Подробнее в разделе [Подключение к кластеру с помощью kubectl](/ru/kubernetes/k8s/connect/kubectl#podgotovitelnye_shagi) и [официальной документации](https://kubernetes.io/docs/tasks/tools/#kubectl).
 
   {note:warn}
 
@@ -97,12 +97,10 @@
 
   Например, для кластера версии 1.32.1 подходит `kubectl` версий 1.31, 1.32 и 1.33.
 
-  Подробнее в разделе [Подключение к кластеру с помощью kubectl](/ru/kubernetes/k8s/connect/kubectl).
-
   {/note}
 
-- Утилиту [kauthproxy](https://github.com/int128/kauthproxy/releases). Подробнее в разделе [Подключение к кластеру с помощью Kubernetes Dashboard](/ru/kubernetes/k8s/connect/k8s-dashboard).
 - Утилиту `client-keystone-auth`. Подробнее в разделе [Подключение к кластеру с помощью kubectl](/ru/kubernetes/k8s/connect/kubectl).
+- Утилиту [kauthproxy](https://github.com/int128/kauthproxy/releases). Подробнее в разделе [Подключение к кластеру с помощью Kubernetes Dashboard](/ru/kubernetes/k8s/connect/k8s-dashboard).
 - Утилиту [curl](https://curl.se/download.html).
 - [Docker Engine](https://docs.docker.com/engine/install/):
     - Для Windows и macOS: Docker Desktop.
@@ -146,6 +144,28 @@
    ```console
    mkdir ~/.kube; `
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Укажите путь к kubeconfig в переменной среды окружения `$KUBECONFIG`:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+   ```console
+   export KUBECONFIG=/home/user/.kube/mycluster_kubeconfig.yaml
+   ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   ```console
+   $env:KUBECONFIG = 'C:\Users\user\.kube\mycluster_kubeconfig.yaml'
    ```
 
    {/tab}
