@@ -41,7 +41,7 @@
       {/caption}
 
    1. Установите ПО image-based приложения на ВМ.
-   1. Если требуется отправлять метрики в сервис Cloud Monitoring, установите агент мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm#ib_cloud_monitoring_telegraf_image)[text=%text]}).
+   1. Если требуется отправлять метрики в сервис Cloud Monitoring, установите агент мониторинга (подробнее — в разделе [Системные метрики ВМ](../../../ib_cloud_monitoring/ib_cloud_monitoring_vm)).
 
 1. Очистите ВМ от чувствительных данных:
 

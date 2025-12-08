@@ -140,7 +140,7 @@
 
       {note:info}
 
-      Если требуется отправлять метрики в сервис Cloud Monitoring, в конфигурации ВМ опишите установку агента мониторинга (подробнее — в разделе {linkto(../../../ib_cloud_monitoring/ib_cloud_monitoring_vm#ib_cloud_monitoring_telegraf_image)[text=%text]}).
+      Если требуется отправлять метрики в сервис Cloud Monitoring, в конфигурации ВМ опишите установку агента мониторинга (подробнее — в разделе [Системные метрики ВМ](../../../ib_cloud_monitoring/ib_cloud_monitoring_vm)).
 
       {/note}
 
