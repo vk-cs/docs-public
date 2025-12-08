@@ -30,7 +30,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
    Otherwise, click **Add**.
 
-1. Select the **Previous generation** option and click the **Continue** button.
+1. Select the **New generation** option and click the **Continue** button.
 
 1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/k8s/concepts/versions/version-support).
 
@@ -114,8 +114,8 @@ This can be a real computer or a virtual machine.
 
 Install the following tools on the host:
 
-- Browser.
-- The [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl) utility.
+- A browser.
+- The `kubectl` utility. For the details, refer to [Connecting to cluster using kubectl](../connect/kubectl) and the [official documentation](https://kubernetes.io/docs/tasks/tools/#kubectl).
 
   {note:warn}
 
@@ -123,12 +123,10 @@ Install the following tools on the host:
 
   For example, versions 1.31, 1.32, and 1.33 of `kubectl` are compatible with cluster version 1.32.1.
 
-  See [Connecting to a cluster with kubectl](../connect/kubectl) for details.
-
   {/note}
 
-- The [kauthproxy] utility (https://github.com/int128/kauthproxy/releases). See [Connecting to the cluster with Kubernetes Dashboard](../connect/k8s-dashboard) for details.
-- The `client-keystone-auth` utility. See [Connecting to the cluster with kubectl](../connect/kubectl) for details.
+- The `client-keystone-auth` utility. See [Connecting to cluster using kubectl](../connect/kubectl) for details.
+- The [kauthproxy](https://github.com/int128/kauthproxy/releases) utility. See [Connecting to the cluster with Kubernetes Dashboard](../connect/k8s-dashboard) for details.
 - The [curl](https://curl.se/download.html) utility.
 - [Docker Engine](https://docs.docker.com/engine/install/):
   - For Windows and macOS: Docker Desktop.
@@ -173,6 +171,28 @@ Install the following tools on the host:
    mkdir ~/.kube; `
    mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
    ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Specify the path to kubeconfig in the `$KUBECONFIG` environment variable:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+      ```console
+      export KUBECONFIG=/home/user/.kube/mycluster_kubeconfig.yaml
+      ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+      ```console
+      $env:KUBECONFIG = 'C:\Users\user\.kube\mycluster_kubeconfig.yaml'
+      ```
 
    {/tab}
 
