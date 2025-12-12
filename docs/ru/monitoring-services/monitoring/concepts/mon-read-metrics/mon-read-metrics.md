@@ -33,3 +33,5 @@ SUM BY(host) (cpu:Minimum{instance="server1", app!="system"})
 ```promql
 SUM BY(job) (cpu:Average{host="server1", job!="system"}[12h] offset 24h)
 ```
+
+Полный синтаксис и возможности языка запросов описаны в [официальной документации Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/).
