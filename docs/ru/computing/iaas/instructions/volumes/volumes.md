@@ -47,17 +47,17 @@
 5. Создайте диск определенного типа и размера в выбранной зоне доступности:
 
    ```console
-   openstack volume create --type <ID типа диска> --size <Размер> --availability-zone <Зона доступности диска> <Название диска>
+   openstack volume create --type <ID_ТИПА_ДИСКА> --size <РАЗМЕР> --availability-zone <ЗОНА_ДОСТУПНОСТИ> <НАЗВАНИЕ>
    ```
 
    Максимальный размер ограничен. Подробнее — в разделе [Квоты и лимиты](/ru/tools-for-using-services/account/concepts/quotasandlimits#limity_bez_kvot_b217dc78).
 
    Дополнительные параметры команды:
 
-   - `--image <ID образа>` — ID образа, из которого будет создан диск;
-   - `--snapshot <ID снимка>` — ID снимка, из которого будет создан диск;
-   - `--description <Описание>` — произвольное описание диска;
-   - `--property <Ключ=Значение>` — пользовательские свойства диска;
+   - `--image <ID_ОБРАЗА>` — ID образа, из которого будет создан диск;
+   - `--snapshot <ID_СНИМКА>` — ID снимка, из которого будет создан диск;
+   - `--description <ОПИСАНИЕ>` — произвольное описание диска;
+   - `--property <КЛЮЧ>=<ЗНАЧЕНИЕ>` — пользовательские свойства диска;
    - `--bootable` — создать загрузочный диск.
 
 {/tab}
@@ -124,13 +124,13 @@
    - Если диск отключен от ВМ (`Status`: `available`):
 
       ```console
-         openstack volume set --size <Размер> <ID диска>
+         openstack volume set --size <РАЗМЕР> <ID_ДИСКА>
       ```
 
    - Если диск подключен к ВМ (`Status`: `in-use`):
 
       ```console
-         cinder extend <ID диска> <Размер>
+         cinder extend <ID_ДИСКА> <РАЗМЕР>
       ```
 
 6. [Перезагрузите](../vm/vm-manage#start_stop_restart_vm) ВМ.
@@ -259,7 +259,7 @@
 1. Клонируйте диск на основе существующего:
 
    ```console
-   openstack volume create --type <ID типа диска> --size <Размер> --availability-zone <Зона доступности диска> --source <ID диска> <Название диска>
+   openstack volume create --type <ID_ТИПА_ДИСКА> --size <РАЗМЕР> --availability-zone <ЗОНА_ДОСТУПНОСТИ> --source <ID_ДИСКА> <НАЗВАНИЕ>
    ```
 
 {/tab}
@@ -329,7 +329,7 @@
 5. Измените тип диска:
 
    ```console
-   openstack volume set --type <ID типа> --retype-policy on-demand <ID диска>
+   openstack volume set --type <ID_ТИПА_ДИСКА> --retype-policy on-demand <ID_ДИСКА>
    ```
 
 {/tab}
@@ -383,19 +383,19 @@
    - Сделать диск загрузочным:
 
       ```console
-      openstack volume set --bootable <ID диска>
+      openstack volume set --bootable <ID_ДИСКА>
       ```
 
    - Сделать диск незагрузочным:
 
       ```console
-      openstack volume set --non-bootable <ID диска>
+      openstack volume set --non-bootable <ID_ДИСКА>
       ```
 
 3. Проверьте результат:
 
    ```console
-   openstack volume show <ID диска>
+   openstack volume show <ID_ДИСКА>
    ```
 
 {/tab}
@@ -410,7 +410,7 @@
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 2. Перейдите в раздел **Облачные вычисления → Диски**.
-3. Найдите в списке диск, не подключенный к ВМ: значок слева от названия диска — синий, при наведении на него появляется надпись **Не подключен к инстансу**.
+3. Найдите в списке диск, не подключенный к ВМ: значок слева от названия диска — серый, при наведении на него появляется надпись **Не подключен к инстансу**.
 4. Используйте один из способов, чтобы открыть окно выбора виртуальной машины для подключения диска.
 
    - Через контекстное меню диска:
@@ -433,28 +433,36 @@
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-2. Выведите список дисков и скопируйте ID диска:
+1. Выведите список дисков и скопируйте ID диска:
 
    ```console
    openstack volume list
    ```
 
-2. Выведите список виртуальных машин и скопируйте ID виртуальной машины, к которой нужно подключить диск:
+1. Проверьте состояние диска:
+
+   ```console
+   openstack volume show <ID_ДИСКА>
+   ```
+
+   Подключить диск можно, если параметр `status` имеет значение `available`. Если значение статуса `maintenance` — дождитесь его перехода в `available`.
+
+1. Выведите список виртуальных машин и скопируйте ID виртуальной машины, к которой нужно подключить диск:
 
    ```console
    openstack server list
    ```
 
-3. Подключите диск:
+1. Подключите диск:
 
    ```console
-   openstack server add volume <ID виртуальной машины> <ID диска>
+   openstack server add volume <ID_ВИРТУАЛЬНОЙ_МАШИНЫ> <ID_ДИСКА>
    ```
 
-4. Просмотрите информацию о диске, чтобы проверить результат (поле `attachments`):
+1. Просмотрите информацию о диске, чтобы проверить результат (поле `attachments`):
 
    ```console
-   openstack volume show <ID диска>
+   openstack volume show <ID_ДИСКА>
    ```
 
 {/tab}
@@ -520,13 +528,13 @@
 3. Отключите диск:
 
    ```console
-   openstack server remove volume <ID виртуальной машины> <ID диска>
+   openstack server remove volume <ID_ВИРТУАЛЬНОЙ_МАШИНЫ> <ID_ДИСКА>
    ```
 
 4. Просмотрите информацию о диске, чтобы проверить результат (поле `attachments`):
 
    ```console
-   openstack volume show <ID диска>
+   openstack volume show <ID_ДИСКА>
    ```
 
 {/tab}
@@ -600,18 +608,42 @@
    - Диск является загрузочным (`Bootable`: `true`). Если нет, [сделайте загрузочным](#changing_bootable_attribute).
 
 5. Скопируйте ID выбранного диска.
-6. Выполните команду для замены основного диска:
+6. Замените основной диск:
+
+   {tabs}
+
+   {tab(Linux)}
+
+   Выполните команду:
 
    ```console
-
-   curl -g -i -X POST https://infra.mail.ru:8774/v2.1/servers/<ID виртуальной машины>/action \
+   curl -g -i -X POST https://infra.mail.ru:8774/v2.1/servers/<ID_ВИРТУАЛЬНОЙ_МАШИНЫ>/action \
    -H "Accept: application/json" \
    -H "Content-Type: application/json" \
    -H "User-Agent: python-cinderclient" \
-   -H "X-Auth-Token: <Токен доступа>" \
-   -d '{"replaceRoot": {"volume_id": "<ID заменяющего диска>"}}'
-
+   -H "X-Auth-Token: <ТОКЕН>" \
+   -d '{"replaceRoot": {"volume_id": "<ID_ЗАМЕНЯЮЩЕГО_ДИСКА>"}}'
    ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   В PowerShell выполните команду:
+
+   ```console
+   curl.exe -g -i -X POST "https://infra.mail.ru:8774/v2.1/servers/<ID_ВИРТУАЛЬНОЙ_МАШИНЫ>/action" `
+   -H "Accept: application/json" `
+   -H "Content-Type: application/json" `
+   -H "User-Agent: python-cinderclient" `
+   -H "X-Auth-Token: <ТОКЕН>" `
+   -d "{\"replaceRoot\": {\"volume_id\": \"<ID_ЗАМЕНЯЮЩЕГО_ДИСКА>\"}}"
+   ```
+
+   {/tab}
+
+   {/tabs}
+
 
 {/tab}
 
@@ -638,10 +670,10 @@
 7. Создайте запрос на перемещение диска:
 
    ```console
-   openstack volume transfer request create <ID диска>
+   openstack volume transfer request create <ID_ДИСКА>
    ```
 
-8. Скопируйте значения `auth_key` и `id`.
+8. Скопируйте ключ авторизации `auth_key` и идентификатор запроса `id`.
 9. Просмотрите список дисков и убедитесь, что статус перемещаемого диска изменился на `awaiting-transfer`:
 
    ```console
@@ -649,16 +681,16 @@
    ```
 
 10. Авторизуйтесь в проекте, в который нужно переместить диск.
-11. Переместите диск:
+11. Примите запрос на перемещение диска, указав ключ авторизации `auth_key` и идентификатор `id`:
 
       ```console
-      openstack volume transfer request accept --auth-key <auth_key> <id>
+      openstack volume transfer request accept --auth-key <КЛЮЧ_АВТОРИЗАЦИИ> <ID_ЗАПРОСА>
       ```
 
 12. Убедитесь, что диск появился в проекте:
 
       ```console
-      openstack volume show <ID диска>
+      openstack volume show <ID_ДИСКА>
       ```
 
 **Дополнительные команды для работы с запросами на перенос диска**
@@ -672,7 +704,7 @@
 - Удалить запрос на перенос:
 
    ```console
-   openstack volume transfer request delete <ID запроса>
+   openstack volume transfer request delete <ID_ЗАПРОСА>
    ```
 
 {/tab}
@@ -737,7 +769,7 @@
 5. Удалите диск.
 
    ```console
-      openstack volume delete <ID диска>
+      openstack volume delete <ID_ДИСКА>
    ```
 
 {/tab}
@@ -804,13 +836,13 @@
    - Если диск отключен от ВМ (`Status`: `available`):
 
       ```console
-         openstack volume snapshot create --volume <ID диска> <Название снимка>
+         openstack volume snapshot create --volume <ID_ДИСКА> <НАЗВАНИЕ>
       ```
 
    - Если диск подключен к ВМ (`Status`: `in-use`):
 
       ```console
-         openstack volume snapshot create --force --volume <ID диска> <Название снимка>
+         openstack volume snapshot create --force --volume <ID_ДИСКА> <НАЗВАНИЕ>
       ```
 
 {/tab}
@@ -869,19 +901,19 @@
    - Вывести список снимков диска:
 
       ```console
-      openstack volume snapshot list --volume <ID диска> 
+      openstack volume snapshot list --volume <ID_ДИСКА> 
       ```
 
    - Вывести список снимков дисков всего проекта:
 
       ```console
-      openstack volume snapshot list --project <ID проекта>
+      openstack volume snapshot list --project <ID_ПРОЕКТА>
       ```
 
    - Изменить свойства снимка:
 
       ```console
-      openstack volume snapshot set <свойство> <ID снимка>
+      openstack volume snapshot set <СВОЙСТВО> <ID_СНИМКА>
       ```
 
       Доступные свойства:
@@ -894,7 +926,7 @@
    - Удалить снимок диска:
 
       ```console
-      openstack volume snapshot delete <ID снимка>
+      openstack volume snapshot delete <ID_СНИМКА>
       ```
 
 {/tab}

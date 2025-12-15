@@ -45,17 +45,17 @@ Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) 
 5. Create a disk of a certain type and size in the selected availability zone:
 
    ```console
-   openstack volume create --type <type disk ID> --size <size> --availability-zone <disk availability zone> <disk name>
+   openstack volume create --type <DISK_TYPE_ID> --size <SIZE> --availability-zone <AVAILABILITY_ZONE> <DISK_NAME>
    ```
 
    The maximum disk size is limited. For more information, see [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152).
 
    Additional command parameters:
 
-   - `--image <image ID>` — ID of the image from which the disk will be created;
-   - `--snapshot <snapshot ID>` — ID of the snapshot from which the disk will be created;
-   - `--description <description>` — custom disk description;
-   - `--property <key=value>` — custom disk properties;
+   - `--image <IMAGE_ID>` — ID of the image from which the disk will be created;
+   - `--snapshot <SNAPSHOT_ID>` — ID of the snapshot from which the disk will be created;
+   - `--description <DESCRIPTION>` — custom disk description;
+   - `--property <KEY>=<VALUE>` — custom disk properties;
    - `--bootable` — create a boot disk.
 
 {/tab}
@@ -122,13 +122,13 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
    - If the disk is disconnected from the VM (`Status`: `available`):
 
       ```console
-         openstack volume set --size <new size> <disk ID>
+         openstack volume set --size <NEW_SIZE> <DISK_ID>
       ```
 
    - If the disk is connected to the VM (`Status`: `in-use`):
 
       ```console
-         cinder extend <disk ID> <new size>
+         cinder extend <DISK_ID> <NEW_SIZE>
       ```
 
 6. [Reboot](../vm/vm-manage#start_stop_restart_vm) the VM.
@@ -257,7 +257,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 1. Clone a disk based on an existing one:
 
    ```console
-   openstack volume create --type <type disk ID> --size <disk size> --availability-zone <availability zone> --source <disk ID> <disk name>
+   openstack volume create --type <DISK_TYPE_ID> --size <DISK_SIZE> --availability-zone <AVAILABILITY_ZONE> --source <DISK_ID> <DISK_NAME>
    ```
 
 {/tab}
@@ -327,7 +327,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 5. Change the disk type:
 
    ```console
-   openstack volume set --type <type ID> --retype-policy on-demand <disk ID>
+   openstack volume set --type <DISK_TYPE_ID> --retype-policy on-demand <DISK_ID>
    ```
 
 {/tab}
@@ -381,19 +381,19 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
    - Make a disk bootable:
 
       ```console
-      openstack volume set --bootable <disk ID>
+      openstack volume set --bootable <DISK_ID>
       ```
 
    - Make the disk non-bootable:
 
       ```console
-      openstack volume set --non-bootable <disk ID>
+      openstack volume set --non-bootable <DISK_ID>
       ```
 
 3. Check the result:
 
    ```console
-   openstack volume show <disk ID>
+   openstack volume show <DISK_ID>
    ```
 
 {/tab}
@@ -408,7 +408,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Servers** → **Disks**.
-3. Find a disk in the list that is not connected to the VM: the icon to the left of the disk name is blue, when you hover over it, the inscription appears **Не подключен к инстансу**.
+3. Find a disk in the list that is not connected to the VM: the icon to the left of the disk name is grey, when you hover over it, the inscription appears **Not connected to instance**.
 4. Use one of the methods to open the virtual machine selection window to attach the disk.
 
    - Via the disk context menu:
@@ -431,28 +431,36 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Output a list of disks and copy the disk ID:
+1. Output a list of disks and copy the disk ID:
 
    ```console
    openstack volume list
    ```
 
-2. Print the list of virtual machines and copy the ID of the virtual machine to which you want to connect the disk:
+1. Check disk status:
+
+   ```console
+   openstack volume show <DISK_ID>
+   ```
+
+   You can connect the disk if the `state` parameter is `available`. If the status is `maintenance`, wait until it changes to `available`.
+
+1. Print the list of virtual machines and copy the ID of the virtual machine to which you want to connect the disk:
 
    ```console
    openstack server list
    ```
 
-3. Connect the disk:
+1. Connect the disk:
 
    ```console
-   openstack server add volume <virtual machine ID> <disk ID>
+   openstack server add volume <VIRTUAL_MACHINE_ID> <DISK_ID>
    ```
 
-4. View the disk information to check the result (the `attachments` field):
+1. View the disk information to check the result (the `attachments` field):
 
    ```console
-   openstack volume show <disk ID>
+   openstack volume show <DISK_ID>
    ```
 
 {/tab}
@@ -518,13 +526,13 @@ To disable the main (root) disk of the VM, use the [Replacing the root disk](#re
 3. Disconnect the disk:
 
    ```console
-   openstack server remove volume <virtual machine ID> <disk ID>
+   openstack server remove volume <virtual machine ID> <DISK_ID>
    ```
 
 4. View the disk information to check the result (the `attachments` field):
 
    ```console
-   openstack volume show <disk ID>
+   openstack volume show <DISK_ID>
    ```
 
 {/tab}
@@ -598,18 +606,43 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
    - The disk is bootable (`Bootable`: `true`). If not, [make it bootable](#changing_bootable_attribute).
 
 5. Copy the ID of the selected disk.
-6. Run the command to replace the main disk:
+6. Replace the primary disk:
+
+   {tabs}
+
+   {tab(Linux)}
+
+   Run the command:
 
    ```console
 
-   curl -g -i -X POST https://infra.mail.ru:8774/v2.1/servers/<virtual machine ID>/action \
+   curl -g -i -X POST https://infra.mail.ru:8774/v2.1/servers/<VIRTUAL_MACHINE_ID>/action \
    -H "Accept: application/json" \
    -H "Content-Type: application/json" \
    -H "User-Agent: python-cinderclient" \
-   -H "X-Auth-Token: <access token>" \
-   -d '{"replaceRoot": {"volume_id": "<ID of the replacement disk>"}}'
+   -H "X-Auth-Token: <TOKEN>" \
+   -d '{"replaceRoot": {"volume_id": "<ID_OF_REPLACEMENT_DISK>"}}'
 
    ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   In PowerShell, run the command:
+
+   ```console
+   curl.exe -g -i -X POST "https://infra.mail.ru:8774/v2.1/servers/<VIRTUAL_MACHINE_ID>/action" `
+   -H "Accept: application/json" `
+   -H "Content-Type: application/json" `
+   -H "User-Agent: python-cinderclient" `
+   -H "X-Auth-Token: <TOKEN>" `
+   -d "{\"replaceRoot\": {\"volume_id\": \"<ID_OF_REPLACEMENT_DISK>\"}}"
+   ```
+
+   {/tab}
+
+   {/tabs}
 
 {/tab}
 
@@ -636,10 +669,10 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 7. Create a request to move the disk:
 
    ```console
-   openstack volume transfer request create <disk ID>
+   openstack volume transfer request create <DISK_ID>
    ```
 
-8. Copy the `auth_key` and `id` values.
+8. Copy the authorization key `auth_key` and the request identifier `id`.
 9. Review the list of disks and make sure that the status of the disk being moved has changed to `awaiting-transfer`:
 
    ```console
@@ -647,16 +680,16 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
    ```
 
 10. Sign in to the project you want to move the disk to.
-11. Move the disk:
+11. Accept the disk move request by specifying the authorization key `auth_key` and identifier `id`:
 
       ```console
-      openstack volume transfer request accept --auth-key <auth_key> <id>
+      openstack volume transfer request accept --auth-key <AUTHORIZATION_KEY> <REQUEST_ID>
       ```
 
 12. Make sure that the disk appears in the project:
 
       ```console
-      openstack volume show <disk ID>
+      openstack volume show <DISK_ID>
       ```
 
 **Additional commands for working with disk transfer requests**
@@ -670,7 +703,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 - Delete a transfer request:
 
    ```console
-   openstack volume transfer request delete <request ID>
+   openstack volume transfer request delete <REQUEST_ID>
    ```
 
 {/tab}
@@ -735,7 +768,7 @@ When you delete a disk, all its snapshots will be deleted.
 5. Delete the disk.
 
    ```console
-      openstack volume delete <disk ID>
+      openstack volume delete <DISK_ID>
    ```
 
 {/tab}
@@ -802,13 +835,13 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
    - If the disk is disconnected from the VM (`Status`: `available`):
 
       ```console
-         openstack volume snapshot create --volume <disk ID> <snapshot name>
+         openstack volume snapshot create --volume <DISK_ID> <NAME>
       ```
 
    - If the disk is connected to the VM (`Status`: `in-use`):
 
       ```console
-         openstack volume snapshot create --force --volume <disk ID> <snapshot name>
+         openstack volume snapshot create --force --volume <DISK_ID> <NAME>
       ```
 
 {/tab}
@@ -867,19 +900,19 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
    - Display a list of disk snapshots:
 
       ```console
-      openstack volume snapshot list --volume <disk ID> 
+      openstack volume snapshot list --volume <DISK_ID> 
       ```
 
    - Display a list of disk snapshots of the entire project:
 
       ```console
-      openstack volume snapshot list --project <project ID>
+      openstack volume snapshot list --project <PROJECT_ID>
       ```
 
    - Change snapshot properties:
 
       ```console
-      openstack volume snapshot set <property> <snapshot ID>
+      openstack volume snapshot set <PROPERTY> <SNAPSHOT_ID>
       ```
 
       Available properties:
@@ -892,7 +925,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
    - Delete a disk snapshot:
 
       ```console
-      openstack volume snapshot delete <snapshot ID>
+      openstack volume snapshot delete <SNAPSHOT_ID>
       ```
 
 {/tab}
