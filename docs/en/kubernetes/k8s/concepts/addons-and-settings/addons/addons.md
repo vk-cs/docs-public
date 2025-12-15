@@ -173,7 +173,7 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from the Cloud Containers cluster to the [Cloud Logging](/en/monitoring-services/logging) service for further analysis of these logs.
 
-The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the [section about installing it](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration).
+The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the sections on [installing the add-on for first-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration) and [second-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2) clusters.
 
 {/tab}
 

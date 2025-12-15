@@ -1,8 +1,8 @@
 {
-    "title": "Fluent Bit for Cloud Logging (logaas-integration)",
+    "title": "Fluent Bit for Cloud Logging (logaas-integration) in first-generation clusters",
       "shortDescription": "",
-      "metaDescription": "This section describes how to configure and install the Fluent Bit add-on for Cloud Logging (logaas-integration).",
-    "sectionTitle": "Fluent Bit for Cloud Logging (logaas-integration)",
+      "metaDescription": "This section describes how to configure and install the Fluent Bit add-on for Cloud Logging (logaas-integration) in first-generation clusters in the Cloud Containers service",
+    "sectionTitle": "Fluent Bit for Cloud Logging (logaas-integration) in first-generation clusters",
     "icon": "",
     "weight": 5,
     "uuid": "e772a76c-16b6-4280-8feb-f25a907a5631"

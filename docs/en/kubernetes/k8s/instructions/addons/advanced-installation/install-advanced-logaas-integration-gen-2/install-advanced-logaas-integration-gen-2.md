@@ -1,138 +1,67 @@
-## Preparatory steps
+## {heading(Preparatory steps)[id=preparation]}
 
-Enable the [Cloud Logging](/en/monitoring-services/logging) service for the project, if not done so already. To do this, [contact technical support](mailto:support@mcs.mail.ru).
+1. Enable the [Cloud Logging](/en/monitoring-services/logging) service for the project, if not done so already. To do this, [contact technical support](mailto:support@mcs.mail.ru).
+
+1. [Create](/en/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) a service account with the rights to write logs to the Cloud Logging service. You can find such roles in the **Creating service users and names** column in the [Permissions in Cloud Logging](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_logging) section. The recommended role for this service account is `Kubernetes auditor`.
+
+   Use the login and password you receive after creating the service account when installing the add-on.  
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on:
+For this add-on, only the [standard installation option](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) via the VK Cloud management console is available.
 
-- standard installation;
-- quick installation.
-
-Regardless of the selected installation option, the add-on will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
+The add-on will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
 
 Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
-{tabs}
-
-{tab(Standard installation)}
-
 1. Install the add-on:
 
    {tabs}
-   
+
    {tab(Management console)}
-      
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
-   1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click the **Add addon** button.
-   1. Click the **Install addon** button on the `logaas-integration` add-on card.
-   1. Select the required add-on version from the drop-down list.
-   1. Edit if necessary:
 
-      - the selected version;
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+    1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+    1. Go to **Containers** → **Kubernetes clusters**.
+    1. Click the name of the required cluster.
+    1. Go to **Addons** tab.
+    1. If there are already installed add-ons in the cluster, click the **Add addon** button.
+    1. Click the **Install addon** button on the `logaas-integration` add-on card.
+    1. Select the required add-on version from the drop-down list and click the **Install addon** button.
+    1. Edit if necessary:
 
-        {note:warn}
+       - the selected version
+       - the application name
+       - the name of the namespace where the add-on will be installed
+    1. Add the login and password of the service account you created to the `credentials` section of the add-on settings code: 
 
-        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+       ```yaml
+       credentials:
+         username: "<SERVICE_ACCOUNT_LOGIN>"
+         password: "<SERVICE_ACCOUNT_PASSWORD>"
+         secretName: "logaas-credentials"
 
-        {/note}
+    1. If necessary, add other changes to the [add-on settings code](#edit-code).
 
-   1. Click the **Install addon** button.
+       {note:warn}
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+       An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
-   {/tab}
-   
-   {tab(Terraform)}
-   
-   [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single add-on. Data sources related to add-ons are also documented:
+       {/note}
 
-   - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-   - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
+    1. Click the **Install addon** button.
 
-   For more information about working with the provider, see [Terraform](/en/tools-for-using-services/terraform).
+       The installation of the add-on in the cluster will begin. This process can take a long time.
 
    {/tab}
-   
+
    {/tabs}
 
 1. (Optional) [View logs](/en/monitoring-services/logging/instructions/view-logs) in the Cloud Logging service to make sure that the add-on is working properly.
 
-{/tab}
+## {heading(Editing add-on settings code during installation)[id=edit-code]}
 
-{tab(Quick installation)}
-
-{note:info}
-
-During quick installation, the add-on settings code is not edited.
-
-If this does not suit you, perform the **standard installation**.
-
-{/note}
-
-1. Install the add-on:
-
-   {tabs}
-   
-   {tab(Management console)}
-      
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-   1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
-   1. Click the **Install** button on the `logaas-integration` add-on card.
-   1. Select the necessary add-on version from the drop-down list.
-   1. Click the **Install addon** button.
-   1. Edit if necessary:
-
-      - selected version;
-      - application name;
-      - the name of the namespace where the add-on will be installed.
-
-   1. Click the **Install addon** button.
-
-      The installation of the add-on in the cluster will begin. This process can take a long time.
-
-   {/tab}
-   
-   {tab(Terraform)}
-   
-   [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single add-on. Data sources related to add-ons are also documented:
-
-   - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-   - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
-
-   For more information about working with the provider, see [Terraform](/en/tools-for-using-services/terraform).
-
-   {/tab}
-   
-   {/tabs}
-
-1. (Optional) [View logs](/en/monitoring-services/logging/instructions/view-logs) in the Cloud Logging service to make sure that the add-on is working properly.
-
-{/tab}
-
-{/tabs}
-
-## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
-
-Editing the add-on code is applicable for a standard installation.
-
-The full add-on settings code along with the description of the fields is available:
-
-- in your management console;
-- in the `configuration_values` attribute from the data source [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) if Terraform is used.
-
-Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this add-on.
+The full add-on settings code along with the description of the fields is available in your management console when installing the add-on. Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this add-on.
 
 {note:warn}
 
@@ -156,7 +85,7 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
 
    <!-- prettier-ignore -->
    | Level | The numerical equivalent | Decoding                     |
-   | ------- | ------------------- | ------------------------------- |
+      | ------- | ------------------- | ------------------------------- |
    | `DEBUG` | 4                   | Debugging messages            |
    | `INFO`  | 3                   | Informational messages        |
    | `WARN`  | 2                   | Warning messages       |
@@ -171,40 +100,40 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
 
    For each log entry, identifiers are set that allow you to determine the source of logs when using Cloud Logging:
 
-   - Resource group ID (`group-id`): the name of the cluster.
-   - The resource ID (`stream-id`) in one of the formats:
+    - Resource group ID (`group-id`): the name of the cluster.
+    - The resource ID (`stream-id`) in one of the formats:
 
-     - For [kubelet component](https://kubernetes.io/docs/concepts/overview/components/#kubelet): `<cluster node name>.<full component name>`.
+        - For [kubelet component](https://kubernetes.io/docs/concepts/overview/components/#kubelet): `<cluster node name>.<full component name>`.
 
-       **Example:**
+          **Example:**
 
-       ```text
-       my-cluster-node-0.kubelet.service
-       ```
+          ```text
+          my-cluster-node-0.kubelet.service
+          ```
 
-     - For [pod](../../../../reference/pods): `<namespace>.<name>`.
+        - For [pod](../../../../reference/pods): `<namespace>.<name>`.
 
-       First, the name is searched in the following labels:
+          First, the name is searched in the following labels:
 
-       - `app.kubernetes.io/instance` ([more about label](https://kubernetes.io/docs/reference/labels-annotations-taints/#app-kubernetes-io-instance));
-       - `app.kubernetes.io/name` ([more about label](https://kubernetes.io/docs/reference/labels-annotations-taints/#app-kubernetes-io-name));
-       - `app`;
-       - `k8s-app`.
+            - `app.kubernetes.io/instance` ([more about label](https://kubernetes.io/docs/reference/labels-annotations-taints/#app-kubernetes-io-instance));
+            - `app.kubernetes.io/name` ([more about label](https://kubernetes.io/docs/reference/labels-annotations-taints/#app-kubernetes-io-name));
+            - `app`;
+            - `k8s-app`.
 
-       If there are no such labels, then the name of the pod is used.
+          If there are no such labels, then the name of the pod is used.
 
-       **Example:**
+          **Example:**
 
-       Let:
+          Let:
 
-       - In the namespace `kube-system` there is a pod named `kube-controller-manager-my-cluster-master-0`.
-       - The label `k8s-app=kube-controller-manager` is set for this pod.
+            - In the namespace `kube-system` there is a pod named `kube-controller-manager-my-cluster-master-0`.
+            - The label `k8s-app=kube-controller-manager` is set for this pod.
 
-       Then the resource identifier will look like:
+          Then the resource identifier will look like:
 
-       ```text
-       kube-system.kube-controller-manager
-       ```
+          ```text
+          kube-system.kube-controller-manager
+          ```
 
    {/cut}
 
@@ -212,10 +141,10 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
 
    Metadata fields with additional information about the logged event are added to log entries, which allows you to search in Cloud Logging, including by log metadata:
 
-   - `node_name`: the name of the cluster node where the kubelet service or pod is located.
-   - `severity`: the severity level of the logged event in text form.
-   - `severity_num`: the severity level of the logged event in number form.
-   - All fields of the JSON message: if logs are written in JSON format, then all fields of the JSON message, except `msg`, are added as metadata.
+    - `node_name`: the name of the cluster node where the kubelet service or pod is located.
+    - `severity`: the severity level of the logged event in text form.
+    - `severity_num`: the severity level of the logged event in number form.
+    - All fields of the JSON message: if logs are written in JSON format, then all fields of the JSON message, except `msg`, are added as metadata.
 
    {/cut}
 
@@ -264,8 +193,8 @@ It is the prefix that is configured for the pods so that you can receive logs fr
 
    Only the listed logs will be included in Cloud Logging:
 
-   - Logs from the namespace that do not belong to pods with the prefix `example-pod` and have a severity level of `ERROR` or higher (`FATAL`).
-   - Logs from the pods with the prefix `example-pod`, which have a severity level of `WARN` or higher (`ERROR`, `FATAL`).
+    - Logs from the namespace that do not belong to pods with the prefix `example-pod` and have a severity level of `ERROR` or higher (`FATAL`).
+    - Logs from the pods with the prefix `example-pod`, which have a severity level of `WARN` or higher (`ERROR`, `FATAL`).
 
 <!-- prettier-ignore -->
 ```yaml
@@ -347,8 +276,8 @@ It is the prefix that is configured for the pods so that you can receive logs fr
 
    The severity levels will be assigned according to the following rules:
 
-   - If a part of the log record from this namespace (which does not belong to the pods with the prefix `example-pod`) matches the specified pattern `[Ww]%s+`, then this record will be assigned the `ERROR` severity level.
-   - If a part of the log record from the pods with the prefix `example-pod` matches the specified pattern `Debug trace`, then this record will be assigned the `DEBUG` severity level.
+    - If a part of the log record from this namespace (which does not belong to the pods with the prefix `example-pod`) matches the specified pattern `[Ww]%s+`, then this record will be assigned the `ERROR` severity level.
+    - If a part of the log record from the pods with the prefix `example-pod` matches the specified pattern `Debug trace`, then this record will be assigned the `DEBUG` severity level.
 
 If no part of the log record matches the specified patterns, then such a record is assigned a severity level determined using Fluent Bit parsers.
 
@@ -357,24 +286,24 @@ If no part of the log record matches the specified patterns, then such a record 
 customRegexp:
   - namespace: kube-system
     rules:
-    - levels:
-      - level: ERROR
-        reg_exp: "[Ww]%d%d%d%d%s+"
+      - levels:
+          - level: ERROR
+            reg_exp: "[Ww]%d%d%d%d%s+"
   - namespace: default
     rules:
-    - podprefix: test-pod
-      levels:
-      - level: WARN
-        reg_exp: "this is a plain text message"
+      - podprefix: test-pod
+        levels:
+          - level: WARN
+            reg_exp: "this is a plain text message"
   - namespace: my-namespace
     rules:
-    - levels:
-      - level: ERROR
-        reg_exp: "[Ww]%s+"
-    - podprefix: example-pod
-      levels:
-      - level: DEBUG
-        reg_exp: "Debug trace"
+      - levels:
+          - level: ERROR
+            reg_exp: "[Ww]%s+"
+      - podprefix: example-pod
+        levels:
+          - level: DEBUG
+            reg_exp: "Debug trace"
 ```
 
 {/cut}
