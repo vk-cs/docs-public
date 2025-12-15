@@ -3,7 +3,7 @@
 ```text
 Unable to complete operation on subnet: One or more ports have an IP allocation from this subnet. 1 of 1 subnets failed to delete
 ```
- 
+
 Все доступные порты в подсети удалены, но есть порты, которые не получается удалить.
 
 Проблема возникает, если была удалена виртуальная машина, а порт остался и все еще считается подключенным к этой ВМ. Поэтому при попытке удалить подсеть с таким портом возникает ошибка.
@@ -27,4 +27,4 @@ Unable to complete operation on subnet: One or more ports have an IP allocation 
    ```
    Здесь `<ИДЕНТИФИКАТОР_ПОДСЕТИ>` — [идентификатор подсети](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih), которую нужно удалить.
 
-1. Если проблема сохраняется, [обратитесь в техническую поддержку](/ru/contacts). 
+1. Если проблема сохраняется, [обратитесь в техническую поддержку](/ru/contacts).
