@@ -1,170 +1,67 @@
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=preparation]}
 
-Подключите в проект сервис [Cloud Logging](/ru/monitoring-services/logging), если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+1. Подключите сервис [Cloud Logging](/ru/monitoring-services/logging) в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+
+1. [Cоздайте](/ru/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе [Права в сервисе Cloud Logging](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_logging). Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
+
+   Используйте логин и пароль для доступа к СУЗ, полученные после ее создания, при установке аддона.  
 
 ## Установка аддона
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov):
+Для аддона доступен только [стандартный вариант установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov) через личный кабинет VK Cloud.
 
-- стандартная установка;
-- быстрая установка.
-
-Вне зависимости от выбранного варианта установки аддон будет установлен в виде [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
+Аддон будет установлен в виде контроллера [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
 
 Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
-{tabs}
-
-{tab(Стандартная установка)}
-
 1. Установите аддон:
 
    {tabs}
-   
+
    {tab(Личный кабинет)}
-      
+
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
    1. Перейдите на вкладку **Аддоны**.
-   1. Если в кластере уже есть установленные аддоны, нажмите на кнопку **Добавить аддон**.
+   1. Если в кластере уже есть установленные аддоны, нажмите кнопку **Добавить аддон**.
    1. Нажмите кнопку **Установить** на карточке аддона `logaas-integration`.
-   1. Выберите нужную версию аддона из выпадающего списка.
-   1. При необходимости отредактируйте:
-
-      - выбранную версию;
-      - название приложения;
-      - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
-
-        {note:warn}
-
-        Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
-        {/note}
-
-   1. Нажмите кнопку **Установить аддон**.
-
-      Начнется установка аддона в кластер. Этот процесс может занять длительное время.
-
-   {/tab}
-   
-   {tab(Terraform)}
-   
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
-   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
-
-      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
-      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
-
-      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform. Например, вы можете отредактировать код настройки аддона, изменив ресурс `vkcs_kubernetes_addon`.
-
-      {note:warn}
-      Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-      {/note}
-
-   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
-
-      ```console
-      terraform validate && terraform plan
-      ```
-
-   1. Примените изменения:
-
-      ```console
-      terraform apply
-      ```
-
-   {/tab}
-   
-   {/tabs}
-
-1. (Опционально) [Просмотрите логи](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
-
-{/tab}
-
-{tab(Быстрая установка)}
-
-{note:info}
-
-При быстрой установке код настройки аддона не редактируется.
-
-Если это вам не подходит, выполните **стандартную установку**.
-
-{/note}
-
-1. Установите аддон:
-
-   {tabs}
-   
-   {tab(Личный кабинет)}
-      
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-   1. Выберите проект, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
-   1. Нажмите на имя нужного кластера.
-   1. Перейдите на вкладку **Аддоны**.
-   1. Если в кластере уже есть установленные аддоны, нажмите на кнопку **Добавить аддон**.
-   1. Нажмите кнопку **Установить** на карточке аддона `logaas-integration`.
-   1. Выберите нужную версию аддона из выпадающего списка.
-   1. Нажмите кнопку **Установить аддон**.
+   1. Выберите нужную версию аддона из выпадающего списка и нажмите кнопку **Установить аддон**.
    1. При необходимости отредактируйте:
 
       - выбранную версию;
       - название приложения;
       - название пространства имен, куда будет установлен аддон.
 
+   1. Добавьте логин и пароль созданной СУЗ в код настройки аддона в блок `credentials`:
+
+      ```yaml
+      credentials:
+        username: "<ЛОГИН_СУЗ>"
+        password: "<ПАРОЛЬ_СУЗ>"
+        secretName: "logaas-credentials"
+      ```
+
+   1. При необходимости [внесите](#edit-code) дополнительные изменения в код настройки аддона.
+
+      {note:warn}
+      Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
+      {/note}
+
    1. Нажмите кнопку **Установить аддон**.
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
-
-   {/tab}
-   
-   {tab(Terraform)}
-   
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
-   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
-
-      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
-      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
-
-      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform.
-
-   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
-
-      ```console
-      terraform validate && terraform plan
-      ```
-
-   1. Примените изменения:
-
-      ```console
-      terraform apply
-      ```
-
-   {/tab}
-   
-   {/tabs}
-
-1. (Опционально) [Просмотрите логи](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 {/tab}
 
 {/tabs}
 
-## Редактирование кода настройки аддона при установке
+1. (Опционально) [Просмотрите логи](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
-Редактирование кода аддона применимо для стандартной установки.
+## {heading(Редактирование кода настройки аддона при установке)[id=edit-code]}
 
-Полный код настройки аддона вместе с описанием полей доступен:
-
-- в личном кабинете;
-- в атрибуте `configuration_values` из источника данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md), если используется Terraform.
-
-Также на [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml) доступен код настройки Fluent Bit, который служит основой для этого аддона.
+Полный код настройки аддона вместе с описанием полей доступен в личном кабинете при установке аддона. Также на [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml) доступен код настройки Fluent Bit, который служит основой для этого аддона.
 
 {note:warn}
 

@@ -172,7 +172,7 @@
 
 Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Cloud Containers в сервис [Cloud Logging](/ru/monitoring-services/logging) для дальнейшего анализа этих логов.
 
-Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и [поды](../../../reference/pods) (pods), расположенные на узлах кластера. Подробнее о том, как работает аддон, читайте в [разделе про его установку](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration).
+Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и [поды](../../../reference/pods) (pods), расположенные на узлах кластера. Подробнее о том, как работает аддон, читайте в разделах про его [установку для кластеров первого](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration) и [кластеров второго](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2) поколений.
 
 {/tab}
 
