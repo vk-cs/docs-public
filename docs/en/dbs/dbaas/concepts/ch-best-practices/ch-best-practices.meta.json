@@ -1,0 +1,8 @@
+{
+  "title": "Recommendations for working with data in ClickHouse",
+  "shortDescription": "Best practices for optimizing working with data in ClickHouse",
+  "metaDescription": "Best practices for efficient work with Cloud ClickHouse on the VK Cloud platform: configuration, query optimization, and data management for maximum performance.",
+  "sectionTitle": "Recommendations for working with data in ClickHouse",
+  "weight": 6,
+  "uuid": ""
+}
