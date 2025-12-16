@@ -10,7 +10,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 {note:info}
 
-This addon is only available for the first-generation clusters.
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
 
 {/note}
 

@@ -12,7 +12,7 @@ If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for gr
 
 {note:info}
 
-This addon is only available for the first-generation clusters.
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
 
 {/note}
 
