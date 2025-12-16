@@ -4,5 +4,6 @@
       "metaDescription": "Cloud Databases – это сервис для создания облачных баз данных. Перенесите базу данных в облако, избавьтесь от рутинной поддержки инфраструктуры и",
     "sectionTitle": "About the service",
     "icon": "",
+    "weight": 0,
     "uuid": "09846f16-d910-4ec9-b5ba-bafd3c7ec201"
 }
