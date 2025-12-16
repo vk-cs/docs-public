@@ -8,10 +8,10 @@
 - резервное копирование;
 - масштабирование дисков по мере роста объемов данных.
 
-В [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва для некоторых типов СУБД вы можете создать геораспределенные конфигурации с хостами в разных [зонах доступности](/ru/start/concepts/architecture#az), чтобы дополнительно повысить отказоустойчивость.
+В [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва для [PostgreSQL](/ru/dbs/dbaas/concepts/types/postgresql) версии 16 вы можете создать геораспределенные конфигурации с хостами в разных [зонах доступности](/ru/start/concepts/architecture#az), чтобы дополнительно повысить отказоустойчивость.
 
 После развертывания инстанса БД останется создать на нем необходимые базы данных, наполнить их содержимым, подключить к ним свои приложения, настроить доступы.
 
-Для PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C автоматически подключается встроенный [мониторинг](/ru/dbs/dbaas/monitoring/postgresql) VK Cloud.
+Для PostgreSQL автоматически подключается встроенный [мониторинг](/ru/dbs/dbaas/monitoring/postgresql) VK Cloud.
 
 Для некоторых типов СУБД доступны [расширения](../extensions), их можно установить через личный кабинет.

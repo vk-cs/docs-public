@@ -60,7 +60,7 @@
       - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
-        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
       - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
 
@@ -94,7 +94,7 @@
 
       - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
-        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
       - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
 
@@ -112,7 +112,7 @@
 
       - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
-        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
       - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
 
@@ -173,7 +173,7 @@
 
 {/tabs}
 
-## MySQL, PostgreSQL, PostgresPro Enterprise, PostgresPro Enterprise 1C
+## PostgreSQL
 
 {note:warn}
 
@@ -193,14 +193,22 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 1. Click the **Create database** or **Add** button.
 1. On the **Configuration** step:
 
-   1. Select one of the database types: `MySQL`, `PostgreSQL`, `PostgresPro Enterprise` or `PostgresPro Enterprise 1C`.
+   1. Select the `PostgreSQL` database type.
    1. Select the required version.
-   1. Select the configuration **Cluster**.
+   1. Select configuration:
+   
+      - **Cluster** — for creating a standard cluster;
+      * **Multizone Cluster** — for creating a cluster with [multizone replication](../../../concepts/work-configs#multi-az).
+
    1. Click the **Next step** button.
 
 1. On the **Create instance** step:
 
    1. Set the general cluster parameters:
+
+      {tabs}
+
+      {tab(Cluster)}
 
       - **Database cluster name**: it can contain only Latin letters, numbers, and characters `.`, `-`, `_`.
 
@@ -210,7 +218,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
-        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
       - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
 
@@ -220,13 +228,21 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         The larger the disk size, the higher its performance in some disk operations.
 
+        The `WAL Disk` parameter is calculated automatically as `Main disk size` × `0.2`.
+
+        {note:warn}
+
+        PostgreSQL instances running version 14 and later automatically switch to read-only mode when free space on the primary or WAL disk reaches 5% of the disk capacity or 4 GB, whichever is less.
+
+        {/note}
+
       - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
+
+         The **Maximum WAL Disk Size** parameter is calculated automatically as `Maximum volume size` × `0.2`.
 
       - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/instructions/net#creating_network).
 
-      - **Assign an external IP:** select this option to assign a floating IP address to the cluster.
-
-        Such a cluster will be accessible from the Internet.
+      - **Assign an external IP:** select this option to assign a floating IP address to the cluster. Such a cluster will be accessible from the Internet.
 
         {note:warn}
 
@@ -243,6 +259,72 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
       - **SSH access key**: select an existing key or create a new one.
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+
+      {/tab}
+
+      {tab(Multizone Cluster)}
+
+      - **Database cluster name**: it can contain only Latin letters, numbers, and characters `.`, `-`, `_`.
+
+        Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
+
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
+
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
+
+      - **Availability zone for Master**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
+
+      - **Количество синхронных реплик** and **Количество асинхронных реплик**: Select the number of synchronous and asynchronous replicas that will be automatically deployed to other zones.
+
+          {note:warn}
+
+          When creating a multizone cluster, the total number of nodes must be odd. The sum of all nodes is calculated as: `1 master node` + `the number of asynchronous replicas` + `the number of synchronous replicas`.
+
+          This is necessary for the proper execution of the data consistency algorithm of a [multizone cluster](/ru/dbs/dbaas/concepts/work-configs#multi-az).
+
+          {/note}
+
+      - **Disk size, GB:** disk size (in gigabytes).
+
+        The larger the disk size, the higher its performance in some disk operations.
+
+        The `WAL Disk` parameter is calculated automatically as `Main disk size` × `0.2`.
+
+        {note:warn}
+
+        PostgreSQL instances running version 14 and later automatically switch to read-only mode when free space on the primary or WAL disk reaches 5% of the disk capacity or 4 GB, whichever is less.
+
+        {/note}
+
+      - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
+
+         The **Maximum WAL Disk Size** parameter is calculated automatically as `Maximum volume size` × `0.2`.
+
+      - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/instructions/net#creating_network).
+
+      - **Assign an external IP:** select this option to assign a floating IP address to the cluster. Such a cluster will be accessible from the Internet.
+
+        {note:warn}
+
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
+
+        {/note}
+
+      - **Firewall settings**: a list of security groups for the cluster.
+
+        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+
+      - **SSH access key**: select an existing key or create a new one.
+
+        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+
+      {/tab}
+
+      {/tabs}
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
@@ -305,9 +387,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       The databases will be restored from the backup.
 
-      For MySQL: from the drop-down list **Backup** select the backup from which you want to restore.
-
-      For PostreSQL, PostgresPro Enterprise and PostgresPro Enterprise 1C select **Backup type**:
+      Select **Backup type**:
 
       - **Point-in-time recovery:**
 
@@ -406,6 +486,136 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
       A new empty database will be created.
 
       Enter a username and password.
+
+      {/tab}
+      
+      {/tabs}
+
+   1. Click the **Create database** button.
+
+      Wait for the operation to complete. Creating a cluster can take a long time.
+
+{/tab}
+
+{/tabs}
+
+## MySQL
+
+{note:warn}
+
+When creating a cluster of the listed DBMS types, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
+
+Using a load balancer [charged](/en/networks/vnet/tariffication).
+
+{/note}
+
+{tabs}
+
+{tab(Management console)}
+
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. Select the project where you want to create a cluster.
+1. Go to **Databases → Database instances**.
+1. Click the **Create database** or **Add** button.
+1. On the **Configuration** step:
+
+   1. Select the `MySQL` database type.
+   1. Select the required version.
+   1. Select the configuration **Cluster**.
+   1. Click the **Next step** button.
+
+1. On the **Create instance** step:
+
+   1. Set the general cluster parameters:
+
+      - **Database cluster name**: it can contain only Latin letters, numbers, and characters `.`, `-`, `_`.
+
+        Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
+
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
+
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
+
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
+
+      - **Disk size, GB:** disk size (in gigabytes).
+
+        The larger the disk size, the higher its performance in some disk operations.
+
+      - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **Maximum volume size**.
+
+      - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/instructions/net#creating_network).
+
+      - **Assign an external IP:** select this option to assign a floating IP address to the cluster. Such a cluster will be accessible from the Internet.
+
+        {note:warn}
+
+        The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
+
+        {/note}
+
+      - **Firewall settings**: a list of security groups for the cluster.
+
+        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+
+      - **Number of nodes:** the number of hosts in the cluster.
+
+      - **SSH access key**: select an existing key or create a new one.
+
+        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+
+   1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
+
+      {tabs}
+      
+      {tab(Disabled)}
+            
+      Select this option to not use backup for the cluster.
+
+      {/tab}
+      
+      {tab(Full)}
+      
+      Set the backup options:
+
+      - Set the **Backup period**.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
+      - If GFS backup is not enabled, set the maximum number of full backups.
+
+      {/tab}
+      
+      {/tabs}
+
+   1. Click the **Next step** button.
+
+1. On the **Initialization** step:
+
+   1. Specify the database initialization parameters. The available parameters depend on the **Creation type** selected:
+
+      {tabs}
+      
+      {tab(New database)}
+            
+      A new empty database will be created.
+
+      Specify:
+
+      - The name of the database.
+      - A username and password.
+
+      {/tab}
+      
+      {tab(Restore from copy)}
+      
+      This option is inactive if there are no backups corresponding to the selected DBMS type and version.
+
+      The databases will be restored from the backup.
+
+      From the drop-down list **Backup** select the backup from which you want to restore.
 
       {/tab}
       
