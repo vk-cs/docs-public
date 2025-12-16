@@ -14,27 +14,20 @@
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud-knowledge-base",
           "title": "VK Private Cloud knowledge base",
           "description": "Instructions for solving typical tasks and how-to guides",
-          "icon": "/en/on-premises/assets/knowledge-base-icon.svg",
-          "iconMobile": "/en/on-premises/assets/knowledge-base-mobile-icon.svg"
-        }
-      ]
-    }
-  },
-  {
-    "group": {
-      "title": " ",
-      "items": [
+          "icon": "/en/on-premises/assets/private-cloud-kb-icon.svg",
+          "iconMobile": "/en/on-premises/assets/private-cloud-kb-mobile-icon.svg"
+        },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/dev-platform",
           "title": "VK Dev Platform",
-          "description": "A complete solution for building internal development platforms",
+          "description": "Complete solution for building internal development platforms",
           "icon": "/en/on-premises/assets/dev-platform-icon.svg",
           "iconMobile": "/en/on-premises/assets/dev-platform-mobile-icon.svg"
         },
         {
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/data-platform",
           "title": "VK Data Platform",
-          "description": "An universal platform for working with big data and machine learning",
+          "description": "Universal platform for working with big data and machine learning",
           "icon": "/en/on-premises/assets/data-platform-icon.svg",
           "iconMobile": "/en/on-premises/assets/data-platform-mobile-icon.svg"
         },
@@ -42,11 +35,17 @@
           "absoluteLink": "https://cloud.vk.com/docs/on-premises/s3",
           "title": "VK Object Storage",
           "description": "Fast and reliable S3-compatible object storage",
-          "icon": "/en/on-premises/assets/cloud-storage-icon.svg",
-          "iconMobile": "/en/on-premises/assets/cloud-storage-mobile-icon.svg"
+          "icon": "/en/on-premises/assets/object-storage-icon.svg",
+          "iconMobile": "/en/on-premises/assets/object-storage-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://docs.vktech.team/artifactory",
+          "title": "Artifactory",
+          "description": "Specialized repository for managing binary artifacts",
+          "icon": "en/on-premises/assets/artifactory-icon.svg",
+          "iconMobile": "en/on-premises/assets/artifactory-mobile-icon.svg"
         }
       ]
     }
   }
 ]
-

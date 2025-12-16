@@ -37,6 +37,13 @@
           "description": "Быстрое и надежное S3-совместимое объектное хранилище",
           "icon": "/ru/on-premises/assets/object-storage-icon.svg",
           "iconMobile": "/ru/on-premises/assets/object-storage-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://docs.vktech.team/artifactory",
+          "title": "Artifactory",
+          "description": "Специализированное хранилище для управления бинарными артефактами",
+          "icon": "ru/on-premises/assets/artifactory-icon.svg",
+          "iconMobile": "ru/on-premises/assets/artifactory-mobile-icon.svg"
         }
       ]
     }
