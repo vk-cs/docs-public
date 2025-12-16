@@ -1,4 +1,4 @@
-The following describes how to create a second-generation cluster from your management console. For second-generation clusters, integration with the [VK Cloud monitoring service](/en/monitoring-services/monitoring) is enabled, and you cannot disable it.
+The following describes how to create a [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster from your management console. For second-generation clusters, integration with the [VK Cloud monitoring service](/en/monitoring-services/monitoring) is enabled, and you cannot disable it.
 
 {note:warn}
 

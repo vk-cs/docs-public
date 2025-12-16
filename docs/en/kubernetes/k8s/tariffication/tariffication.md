@@ -11,7 +11,7 @@ The cost details are displayed separately for master and worker nodes.
 - Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVMe).
 - [Service load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers).
 - [Floating IP addresses](/en/networks/vnet/concepts/ips-and-inet#floating-ip).
-- GPU and vGPU.
+- GPU and vGPU (available only for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters).
 
 ## What is not charged
 

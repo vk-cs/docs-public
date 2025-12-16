@@ -1,4 +1,4 @@
-The following describes how to create a first-generation cluster from your management console. We recommend [creating](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) second-generation clusters: they feature improved performance and stability. 
+The following describes how to create a [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster from your management console. We recommend [creating](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) second-generation clusters: they feature improved performance and stability. 
 
 You can also create a first-generation cluster [with Terraform](../create-terraform).
 

@@ -1,4 +1,4 @@
-Description of how to create a first-generation cluster using Terraform is provided below. It is also possible to create a first-generation cluster [via VK Cloud management console](../create-webui).
+Description of how to create a [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster using Terraform is provided below. It is also possible to create a first-generation cluster [via VK Cloud management console](../create-webui).
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 

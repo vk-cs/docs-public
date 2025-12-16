@@ -11,7 +11,7 @@
 - Диски — за каждый 1 ГБ дискового пространства, цена зависит от [типа диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) (SSD, HDD, High-IOPS, Low Latency NVMe).
 - [Сервисные балансировщики нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 - [Floating IP-адреса](/ru/networks/vnet/concepts/ips-and-inet#floating-ip). 
-- [GPU и vGPU](/ru/computing/gpu/concepts/about) (только для кластеров первого поколения).
+- [GPU и vGPU](/ru/computing/gpu/concepts/about) (только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations)).
 
 ## Не тарифицируется
 

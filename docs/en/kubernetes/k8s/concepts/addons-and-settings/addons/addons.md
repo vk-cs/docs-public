@@ -28,23 +28,19 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
 ## {heading(Available add-ons)[id=available_addons]}
 
-{note:info}
-
 The availability of specific add-ons depends on the [region](/en/tools-for-using-services/account/concepts/regions) in which the cluster is planned to be placed.
 
-{/note}
-
 ### Capsule
+
+{note:info}
+
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+
+{/note}
 
 {tabs}
 
 {tab(Description)}
-
-{note:info}
-
-This addon is only available for the first-generation clusters.
-
-{/note}
 
 Kubernetes clusters allow you to organize the logical division of Kubernetes resources at the level of individual namespaces. However, this may not be enough to achieve resource separation and isolation in complex scenarios. For example, let's say you want to provide isolated sets of resources to multiple development teams so that they are not accessible to each other. A typical solution to this problem is to create several separate clusters for each team. With this approach, as the number of teams increases, the number of clusters also increases, which complicates the administration of these clusters.
 
@@ -141,15 +137,15 @@ See [Connecting to the Docker registry](../../../connect/docker-registry) for de
 
 ### Fluent Bit
 
+{note:info}
+
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+
+{/note}
+
 {tabs}
 
 {tab(Description)}
-
-{note:info}
-
-This addon is only available for the first-generation clusters.
-
-{/note}
 
 [Fluent Bit](https://docs.fluentbit.io/manual) allows you to flexibly configure log collection in Cloud Containers clusters and analyze them in the [Cloud Logging](/en/monitoring-services/logging) service, for example, using Elasticsearch or Loki plugins.
 
@@ -187,15 +183,15 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 ### {heading(GPU Operator)[id=gpu_operator]}
 
+{note:info}
+
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+
+{/note}
+
 {tabs}
 
 {tab(Description)}
-
-{note:info}
-
-This addon is only available for the first-generation clusters.
-
-{/note}
 
 GPU Operator allows you to manage [GPUs on cluster nodes](../../flavors#gpu) to perform machine learning or big data processing.
 
@@ -279,15 +275,15 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 
 ### {heading(Istio)[id=istio]}
 
+{note:info}
+
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+
+{/note}
+
 {tabs}
 
 {tab(Description)}
-
-{note:info}
-
-This addon is only available for the first-generation clusters.
-
-{/note}
 
 [Istio](https://istio.io/latest/) is a framework that implements the [service mesh](https://istio.io/latest/about/service-mesh/#what-is-a-service-mesh) concept, which allocates a separate layer for interaction between application services. Using Istio provides traffic management for services without changing the code of the services (sidecar containers are used). Istio benefits:
 
@@ -312,15 +308,15 @@ This addon is only available for the first-generation clusters.
 
 ### {heading(Jaeger)[id=jaeger]}
 
+{note:info}
+
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+
+{/note}
+
 {tabs}
 
 {tab(Description)}
-
-{note:info}
-
-This addon is only available for the first-generation clusters.
-
-{/note}
 
 In distributed systems based on microservices, requests are constantly exchanged. The [Jaeger](https://www.jaegertracing.io) platform created for distributed query tracing. Jaeger tracks the flow of requests through microservices and allows you to:
 
@@ -382,15 +378,15 @@ To ensure stable operation of Jaeger, it is recommended to install it on a dedic
 
 ### Kiali
 
+{note:info}
+
+This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+
+{/note}
+
 {tabs}
 
 {tab(Description)}
-
-{note:info}
-
-This addon is only available for the first-generation clusters.
-
-{/note}
 
 [Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio). It allows to manage, monitor and visualize a service mesh.
 
