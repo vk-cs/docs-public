@@ -10,6 +10,8 @@ PostgreSQL — это объектно-реляционная СУБД с отк
 
 Список версий PostgreSQL, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
 
+В [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва для [PostgreSQL](/ru/dbs/dbaas/concepts/types/postgresql) версии 16 вы можете создать геораспределенные конфигурации с хостами в разных [зонах доступности](/ru/start/concepts/architecture#az), чтобы дополнительно повысить отказоустойчивость.
+
 ## Что дальше?
 
 - [Создайте](../../../instructions/create) инстанс базы данных.

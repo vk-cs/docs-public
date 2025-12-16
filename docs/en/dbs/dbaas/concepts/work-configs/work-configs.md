@@ -6,17 +6,17 @@ The replica can be converted to a master. In this case, replication will stop, a
 
 By default, replicas and the master are placed in the same data center. To transfer one of the instances to another data center, contact [technical support](mailto:support@mcs.mail.ru).
 
-## Single
+## {heading(Single)[id=single]}
 
-One virtual machine with a DBMS server of the selected type installed. An instance in the **Single** configuration can be stopped, started, and restarted.
+One virtual machine with a DBMS server of the selected type installed. An instance of such a configuration can be stopped, started, and restarted.
 
-## Master-Replica
+## {heading(Master-Replica)[id=master-replica]}
 
 Two virtual machines with installed DBMS servers of the selected type. Instances support synchronous replication in the `master-replica` (active-passive) mode and scale separately.
 
-An instance in the **Master-Replica** configuration can be stopped, started, and restarted.
+An instance of such a configuration can be stopped, started, and restarted.
 
-## Cluster
+## {heading(Cluster)[id=cluster]}
 
 {note:info}
 
@@ -26,17 +26,32 @@ The principle of operation of the PostgreSQL cluster is described.
 
 A group of virtual machines with installed DBMS servers of the selected type that support synchronous and asynchronous data replication, with a load balancer. If the master instance is unavailable, automatic switching will work: one of the replicas will be converted to the master, and another replica will be created instead.
 
+To increase the fault tolerance of a PostgreSQL cluster, synchronous and asynchronous replicas can be deployed across different zones using a [multizone cluster](#multi-az) configuration. High availability of the PostgreSQL cluster is provided by the [Patroni](https://patroni.readthedocs.io/en/latest/index.html). service.
+
 When increasing the disk size or scaling vertically, the changes are applied to all instances of the cluster.
+
+An instance of this configuration cannot be started, restarted, or stopped.
+
+## {heading(Multizone cluster)[id=multi-az]}
 
 {note:info}
 
-To ensure high availability of the PostgreSQL cluster, the [Patroni](https://patroni.readthedocs.io/en/latest/index.html) service is used.
+The multizone cluster configuration is only available for PostgreSQL version 16 instances.
 
 {/note}
 
-An instance in the **Cluster** configuration cannot be started, restarted, or stopped.
+A fault-tolerant solution similar to the [Cluster](#cluster) configuration, but a group of virtual machines with installed DBMS servers are deployed between [availability zones](/en/intro/start/concepts/architecture#az).
 
-## Available configurations for DBMS types
+This configuration provides maximum availability and automatic recovery even in the event of a data center failure, which is critical for high-load projects and data security.
+
+For high fault tolerance, a cluster must contain an odd number of nodes, including the master node. This is necessary for the proper execution of the data consistency algorithm (Raft). According to this algorithm, if a data center fails, the remaining nodes should be in the majority:
+
+- If the number of remaining nodes is less than or equal to the number of failed nodes, a majority cannot be formed. As a result, a new master node cannot be appointed, meaning the cluster cannot accept new transactions. The cluster goes into read-only mode to preserve data.
+- If the number of remaining nodes is greater than the number of failed nodes, a majority is formed. A new master node is appointed, and the cluster continues to operate.
+
+An odd number of nodes helps to minimize the possibility of a situation where a majority cannot be formed.
+
+## {heading(Available configurations for DBMS types)[id=available-configs]}
 
 [cols="1,1,1,1", options="header"]
 |===
