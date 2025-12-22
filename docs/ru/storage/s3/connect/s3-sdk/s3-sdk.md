@@ -19,7 +19,7 @@
    {tab(Регион Москва)}
 
    - Endpoint URL: `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru`.
-   - Access Key ID: полученный при создании аккаунта идентификатор ключа.
+   - Access Key ID: полученный при создании аккаунта идентификатор ключа доступа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `ru-msk`.
 
@@ -28,7 +28,7 @@
    {tab(Регион Казахстан)}
 
    - Endpoint URL: `https://hb.kz-ast.vkcloud-storage.ru`.
-   - Access Key ID: полученный при создании аккаунта идентификатор ключа.
+   - Access Key ID: полученный при создании аккаунта идентификатор ключа доступа.
    - Secret Key: полученный при создании аккаунта секретный ключ.
    - Default region name: `kz-ast`.
 
