@@ -93,11 +93,13 @@ Load on the disk subsystem:
 
 - High CPU and memory utilization rates, disk subsystem load, and heavy or uneven database load may indicate high load on hosts or suboptimal indexes and queries.
 
-  In this case, it is recommended to use the built-in PostgreSQL performance diagnostic tools on behalf of the _DB administrator, for example:
+  In this case, it is recommended to use the built-in PostgreSQL performance diagnostic tools, for example:
 
   1. Run queries against the [pg_stat_activity](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ACTIVITY-VIEW) system table to collect statistics on running queries.
 
      It is recommended to pay attention to queries that take the longest to complete.
+
+     This information is only for the database to which the user is connected and for which he has been granted access.
 
   1. Use the [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) command to find bottlenecks in such slow queries.
 
