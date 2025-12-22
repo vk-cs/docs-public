@@ -30,7 +30,9 @@ Other limits are not related to physical limitations and are based on the operat
 
 There are no corresponding quotas for some technical limits.
 
-Quotas can be [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) within the technical limits.
+Quotas can be [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) within the technical limits. By default, confirmation for increasing quotas is requested from technical support, but you can automatically add up to 30% of the current quota value if the following conditions are met:
+
+{include(/en/_includes/_quotas.md)[tags=autoquota-conditions]}
 
 Non-rigid limits can be exceeded — either also through [technical support](mailto:support@mcs.mail.ru), or independently. However, exceeding these limits can negatively affect the stability of work.
 

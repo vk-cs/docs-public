@@ -295,7 +295,14 @@ Increasing quotas must be performed on behalf of a user with the project owner [
 1. Click the **Add Quotas** button. The quota increase window will appear.
 1. If automatic quota increase is available for a project, you will be able to select a request type. Choose one of them:
 
-    - **Automatic quota increase** — quotas will be expanded automatically, without requesting technical support. The maximum available value for each quota is limited.
+    - **Automatic quota increase** — quotas will be expanded automatically, without requesting technical support. The value of each quota can be increased by no more than 30% of the current value.
+
+        {cut(Conditions for automatic increase of quotas)}
+
+        {include(/en/_includes/_quotas.md)[tags=autoquota-conditions]}
+
+        {/cut}
+
     - **Additional resources** — the request will be sent to technical support. Use this if automatic quota increase is not sufficient.
 
     If there is no request type selection, the quota increase request will be sent to technical support.
