@@ -1,8 +1,8 @@
 {
-    "title": "Access setting",
-      "shortDescription": "How to restrict HTTP methods of requests to a CDN resource, how to restrict access to content by country, domain and IP address",
-      "metaDescription": "How to restrict HTTP methods of requests to a CDN resource, how to restrict access to content by country, domain and IP address",
-    "sectionTitle": "Access setting",
+    "title": "Access and security settings",
+      "shortDescription": "How to restrict HTTP methods of requests to a CDN resource, how to restrict access to content by country, domain and IP address, how to manage TLS versions",
+      "metaDescription": "How to restrict HTTP methods of requests to a CDN resource, how to restrict access to content by country, domain and IP address, how to manage TLS versions",
+    "sectionTitle": "Access and security settings",
     "icon": "",
     "weight": 7,
     "uuid": "c63e3589-b838-4a0a-8421-8cf636a7f9a9"

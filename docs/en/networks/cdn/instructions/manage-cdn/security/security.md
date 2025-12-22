@@ -231,3 +231,30 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 {/tab}
 
 {/tabs}
+
+## {heading(Selecting TLS protocol versions)[id=tls-versions]}
+
+The option allows you to select specific TLS protocol versions that will be used for encrypting HTTPS traffic received by the end user via the CDN. If the option is disabled, all the available versions are used:
+
+- SSL 3.0
+- TLS 1.0
+- TLS 1.1
+- TLS 1.2
+- TLS 1.3
+
+To configure TLS protocol versions:
+
+{tabs}
+
+{tab(Management console)}
+
+{include(/en/_includes/_open-cdn.md)}
+
+1. Go to the **Security** tab.
+1. Enable the **Configure allowed TLS versions** option.
+1. Select the required versions from the list or remove unnecessary ones. At least one TLS protocol version must be selected.
+1. Click the **Save Changes** button.
+
+{/tab}
+
+{/tabs}
