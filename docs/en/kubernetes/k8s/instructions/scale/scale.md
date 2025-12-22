@@ -45,6 +45,10 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {tab(Terraform)}
 
+   {note:info}
+   Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+   {/note}
+
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
@@ -150,6 +154,10 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {tab(Terraform)}
 
+   {note:info}
+   Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+   {/note}
+
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
@@ -240,6 +248,10 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    {tab(Terraform)}
 
+   {note:info}
+   Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+   {/note}
+
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
    1. [Make sure](../manage-cluster#start) that cluster needed is running.
@@ -315,6 +327,10 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    {/tab}
 
    {tab(Terraform)}
+
+   {note:info}
+   Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+   {/note}
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 

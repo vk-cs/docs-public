@@ -44,7 +44,11 @@
    {/tab}
 
    {tab(Terraform)}
-
+   
+   {note:info}
+   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   {/note}
+ 
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
@@ -150,6 +154,10 @@
    {/tab}
 
    {tab(Terraform)}
+   
+   {note:info}
+   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   {/note}
 
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
@@ -241,6 +249,10 @@
 
    {tab(Terraform)}
 
+   {note:info}
+   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   {/note}
+
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
@@ -316,6 +328,10 @@
    {/tab}
 
    {tab(Terraform)}
+
+   {note:info}
+   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   {/note}
 
    1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
