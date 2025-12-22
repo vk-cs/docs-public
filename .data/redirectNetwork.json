@@ -17593,25 +17593,25 @@
   },
   {
     "source": "/ru/manage/backups/retention-policy",
-    "destination": "/ru/storage/backups/concepts/retention-policy",
+    "destination": "/ru/storage/backups/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy/forward-incremental",
-    "destination": "/ru/storage/backups/concepts/retention-policy/forward-incremental",
+    "destination": "/ru/storage/backups/concepts/forward-incremental",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy/gfs-backup",
-    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy/gfs-backup",
-    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/gfs-backup",
     "permanent": false,
     "locale": false
   },
@@ -26299,25 +26299,25 @@
   },
   {
     "source": "/ru/storage/backups/retention-policy",
-    "destination": "/ru/storage/backups/concepts/retention-policy",
+    "destination": "/ru/storage/backups/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/backups/retention-policy/forward-incremental",
-    "destination": "/ru/storage/backups/concepts/retention-policy/forward-incremental",
+    "destination": "/ru/storage/backups/concepts/forward-incremental",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/backups/retention-policy/gfs-backup",
-    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/backups/retention-policy/gfs-backup",
-    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/gfs-backup",
     "permanent": false,
     "locale": false
   },
@@ -32714,6 +32714,30 @@
   {
     "source": "/ru/storage/s3/concepts/s3-acl",
     "destination": "/ru/storage/s3/concepts/access/s3-acl",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/concepts/retention-policy",
+    "destination": "/ru/storage/backups/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/concepts/retention-policy/forward-incremental",
+    "destination": "/ru/storage/backups/concepts/forward-incremental",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/gfs-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/gfs-backup",
     "permanent": false,
     "locale": false
   }
