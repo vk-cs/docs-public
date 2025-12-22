@@ -1,9 +1,12 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Описание сервиса Cloud Backup и его возможностей",
-      "metaDescription": "Описание сервиса Cloud Backup и его возможностей",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "uuid": "9217ccc4-edc2-4409-bce8-9601576008b9"
+  "title": "О сервисе",
+  "shortDescription": "Описание сервиса Cloud Backup и его возможностей",
+  "metaDescription": "Описание сервиса Cloud Backup и его возможностей",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "9217ccc4-edc2-4409-bce8-9601576008b9",
+  "additionalUuids": [
+    "79e62e19-4e0f-4703-8170-57e06d783f43"
+  ]
 }

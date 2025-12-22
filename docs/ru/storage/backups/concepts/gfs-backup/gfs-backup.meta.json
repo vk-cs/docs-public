@@ -4,7 +4,7 @@
       "metaDescription": "Статья описывает стратегию долгосрочного хранения бекапов GFS.",
     "sectionTitle": "Резервное копирование по стратегии GFS",
     "icon": "",
-    "weight": 1,
+    "weight": 3,
     "additionalUuids": [
         "32918039-cfc5-49f5-9300-a6b2422af0f5"
     ],
