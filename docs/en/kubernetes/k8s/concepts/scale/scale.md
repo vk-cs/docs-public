@@ -14,16 +14,9 @@ Both types of scaling are performed manually. [Autoscaling](#autoscaling) also w
 
 ## {heading(Autoscaling)[id=autoscaling]}
 
+### Vertical autoscaling
+
 _Vertical autoscaling_ of master nodes works for all clusters, you cannot disable it.
-
-The vertical scaling scheme depends on the cluster creation date:
-
-- The new scaling scheme is applicable to clusters created on or after 2024-12-06.
-- The old scaling scheme is applicable to clusters created before 2024-12-06.
-
-{tabs}
-
-{tab(New scheme)}
 
 The vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
 
@@ -62,9 +55,9 @@ Examples:
 - `STD3-2-6` will change to `STD3-2-8`.
 |===
 
-{/tab}
+You can change the flavor of the master node VM to one with smaller CPU and RAM only [in manual mode](../../instructions/scale#scale_master_nodes) and only for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
 
-{tab(Old scheme)}
+{cut(Scheme of vertical autoscaling for clusters created before Dec 6, 2024)}
 
 Vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
 
@@ -74,11 +67,9 @@ Vertical autoscaling agent evaluates the master node load by CPU and RAM, monito
 
 If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-6` will be changed to `STD2-4-12`.
 
-{/tab}
+{/cut}
 
-{/tabs}
-
-You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../instructions/scale#scale_master_nodes).
+### Horizontal autoscaling
 
 You can [configure](../../instructions/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler). The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
@@ -97,7 +88,7 @@ When a trigger occurs, you will receive a notification on the selected channel.
 ## Current restrictions
 
 - Vertical scaling capabilities are limited by [current quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) and available [virtual machine templates](../flavors#configuration_templates).
-- Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 100 nodes.
+- Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 500 nodes.
 - It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](../../instructions/scale#scaling_groups_of_worker_nodes_c172481b).
 
 ## Ensuring accessibility with vertical scaling
