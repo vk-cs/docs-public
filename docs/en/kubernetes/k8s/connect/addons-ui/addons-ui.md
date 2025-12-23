@@ -24,9 +24,30 @@ A browser must be installed on the host to connect.
       - at `/usr/local/bin` for Linux/macOS;
       - at `C:\` for Windows.
 
-## Connecting to the add-on web interface
+## {heading(Connecting to the add-on web interface)[id=web-ui]}
 
 {tabs}
+
+{tab(Jaeger)}
+
+1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that `jaeger` add-on [is installed](../../instructions/addons/advanced-installation/install-advanced-jaeger) to the cluster.
+1. On the host, in a separate terminal session, run the command:
+
+   ```console
+   kauthproxy -n jaeger http://jaeger-query.svc
+   ```
+
+   If you selected a service name other than `jaeger` or a namespace other than `jaeger` when adding the add-on, adjust the command.
+
+   A browser will open and you will be directed to the Query UI web interface. The web interface is available only via HTTP.
+
+   {note:warn}
+
+   Do not close this terminal session, otherwise access to the web interface will be lost.
+
+   {/note}
+
+{/tab}
 
 {tab(Kiali)}
 
@@ -51,24 +72,18 @@ Kiali is a web interface for working with Istio. To connect to it:
 
 {/tab}
 
-{tab(Jaeger)}
+{tab(Kube Prometheus Stack (Grafana))}
 
-1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that `jaeger` add-on [is installed](../../instructions/addons/advanced-installation/install-advanced-jaeger) to the cluster.
+The Kube Prometheus Stack addon includes [Grafana](https://grafana.com/) — a tool for visualizing metrics and the status of clusters. To connect to it:
+
+1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that the `kube-prometheus-stack` addon [is installed](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring) in the cluster.
 1. On the host, in a separate terminal session, run the command:
 
    ```console
-   kauthproxy -n jaeger http://jaeger-query.svc
-   ```
-
-   If you selected a service name other than `jaeger` or a namespace other than `jaeger` when adding the add-on, adjust the command.
-
-   A browser will open and you will be directed to the Query UI web interface. The web interface is available only via HTTP.
-
-   {note:warn}
-
-   Do not close this terminal session, otherwise access to the web interface will be lost.
-
-   {/note}
+   kubectl -n <NAMESPACE> port-forward service/kube-prometheus-stack-grafana 8001:80
+   ``` 
+   where `<NAMESPACE>` is the namespace where the addon is installed.
+1. In a browser, open the address: http://127.0.0.1:8001.
 
 {/tab}
 
