@@ -6,6 +6,10 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
 ### {heading(Scaling of master nodes)[id=scale_master_nodes]}
 
+{note:info}
+This operation is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
 1. [Learn how the vertical scaling mechanism works](../../concepts/scale).
 
 1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
@@ -44,10 +48,6 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    {/tab}
 
    {tab(Terraform)}
-
-   {note:info}
-   Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-   {/note}
 
    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 

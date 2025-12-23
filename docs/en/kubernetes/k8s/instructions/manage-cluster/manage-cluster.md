@@ -6,6 +6,10 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 ## Start or stop cluster
 
+{note:info}
+These operations are only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
 ### {heading(Start cluster)[id=start]}
 
 {tabs}
@@ -61,11 +65,13 @@ Different information is available for running and stopped clusters. Terraform a
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click on the name of the necessary cluster. A page with information will open.
 
-   General information about the cluster and the event log are available on the corresponding tab at the beginning of the page. Information about connecting to and managing the cluster is available on the corresponding tab at the end of the page.
-
 {/tab}
 
 {tab(Terraform)}
+
+{note:info}
+Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
 
 1. Run the command:
 
@@ -88,42 +94,13 @@ Available props:
 
 The operations to get these props are described in detail in [Connecting](../../connect) section.
 
-## Invalidate cluster key pair
-
-When creating clusters of versions 1.22.9 and lower, you can specify a key pair to connect to the cluster hosts directly.
-
-If the private part of the specified key pair has been compromised or lost, you can revoke the cluster key pair by performing the invalidate procedure.
-
-The operation can only be performed when the cluster is running.
-
-{note:warn}
-
-After performing this operation, the existing public keys on the cluster will be removed.
-
-{/note}
-
-{tabs}
-
-{tab(Management console)}
-
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select the project where the necessary cluster is located.
-1. Go to **Containers** → **Kubernetes Clusters**.
-1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Invalidate**.
-1. In the window that appears, perform one of the following actions:
-   - Upload the public part of the new key pair, if you have created it yourself;
-   - Create a new key pair using the service;
-   - Select another existing key pair.
-
-{/tab}
-
-{/tabs}
-
 ## Change virtual machine type for master nodes
 
-This operation is described in detail in [Cluster node scaling](../scale).
+This operation is described in detail in [Cluster node scaling](../scale). You can only perform it when the cluster is running.
 
-The operation can be performed only when the cluster is running.
+{note:info}
+This operation is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
 
 ## Delete cluster
 
