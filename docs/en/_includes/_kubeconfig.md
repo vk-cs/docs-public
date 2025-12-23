@@ -15,6 +15,15 @@ Follow the steps on the host from which you plan to connect to the cluster:
 1. The configuration file contains sensitive information that should not be accessible to other users. So restrict access rights to this file:
 
    {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
+   ```
+
+   {/tab}
+
    {tab(Windows (PowerShell))}
    
    ```console
@@ -24,15 +33,9 @@ Follow the steps on the host from which you plan to connect to the cluster:
      /Remove:g BUILTIN\Administrators Everyone Users `
      /Grant:r ${env:UserName}:RW
    ```
-
-   {/tab}
-   {tab(Linux (bash)/macOS (zsh))}
    
-   ```console
-   sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
-   ```
-
    {/tab}
+
    {/tabs}
 
 {/includetag}
@@ -41,13 +44,7 @@ Follow the steps on the host from which you plan to connect to the cluster:
 1. Specify the path to the config file in the `$KUBECONFIG` environment variable:
 
    {tabs}
-   {tab(Windows (PowerShell))}
-   
-   ```console
-   $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
-   ```
 
-   {/tab}
    {tab(Linux (bash)/macOS (zsh))}
    
    ```console
@@ -55,5 +52,15 @@ Follow the steps on the host from which you plan to connect to the cluster:
    ```
 
    {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
+   ```
+
+   {/tab}
+
    {/tabs}
+
 {/includetag}   

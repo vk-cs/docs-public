@@ -11,21 +11,22 @@ The way to connect to the cluster depends on its IP address:
 
    {note:warn}
 
-   Make sure that the minor version of `kubectl` differs by no more than one from the minor version of the cluster you are connecting to. For example, `kubectl` version 1.23 works correctly with clusters of versions 1.**22**, 1.**23** and 1.**24**.
+   Make sure that the minor version of `kubectl` differs by no more than one from the minor version of the cluster you are connecting to. For example, `kubectl` version 1.33 works correctly with clusters of versions 1.**31**, 1.**32**, and 1.**33**.
 
    See [official Kubernetes documentation](https://kubernetes.io/releases/version-skew-policy/#kubectl) for more details.
 
    {/note}
 
    {tabs}
+
    {tab(Linux (curl))}
    
    1. Download the correct version of `kubectl`.
 
-      An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
+      An example command to download the `kubectl` utility which is compatible with cluster version 1.33.0:
 
       ```console
-      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/linux/amd64/kubectl
+      curl -LO https://dl.k8s.io/release/v1.33.0/bin/linux/amd64/kubectl
       ```
 
    1. Make the `kubectl` binary file executable:
@@ -43,89 +44,107 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```console
-      kubectl version --short
+      kubectl version
       ```
 
    {/tab}
+
    {tab(Linux (apt))}
    
    1. Add the Kubernetes repository:
 
+      1. Install packages required for using `apt`:
+
+           ```console
+           sudo apt-get update
+           sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
+           ```
+
+      1. Create a file with the repository configuration. Examples of the commands for clusters of version 1.33.0:
+
+         ```console
+         curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+         sudo chmod 644 /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+         echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+         sudo chmod 644 /etc/apt/sources.list.d/kubernetes.list
+         ```
+
+      1. Update the list of the packages:
+
+         ```console
+         sudo apt-get update
+         ```
+   1. Install `kubectl`:
+
       ```console
-      sudo apt-get update && sudo apt-get install -y apt-transport-https
-      curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-      echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
-      sudo apt-get update
-
-      ```
-
-   1. Install the correct version of `kubectl`.
-
-      An example command to install the `kubectl` utility which is compatible with cluster version 1.23.6:
-
-      ```console
-      sudo apt-get install -y kubectl=1.23.6-00
+      sudo apt-get install -y kubectl
       ```
 
       {note:info}
 
-      You can get a list of all available versions by using the command `sudo apt-cache policy kubectl`.
+      You can get the list of all available versions by using the command `sudo apt-cache policy kubectl`.
 
       {/note}
 
    1. Check the `kubectl` version by running the command:
 
       ```console
-      kubectl version --short
+      kubectl version
       ```
 
    {/tab}
+
    {tab(Linux (yum))}
    
-   1. Add the Kubernetes repository:
+   1. Add the Kubernetes repository. Examples of the commands for clusters of version 1.33.0:
 
       ```console
-      cat << EOF > /etc/yum.repos.d/kubernetes.repo
+      cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
       [kubernetes]
       name=Kubernetes
-      baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+      baseurl=https://pkgs.k8s.io/core:/stable:/v1.33/rpm/
       enabled=1
       gpgcheck=1
-      repo_gpgcheck=1
-      gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+      gpgkey=https://pkgs.k8s.io/core:/stable:/v1.33/rpm/repodata/repomd.xml.key
       EOF
       ```
-
-   1. Install the correct version of `kubectl`.
-
-      An example command to install the `kubectl` utility which is compatible with cluster version 1.23.6:
+      
+   1. Install `kubectl`:
 
       ```console
-      yum install -y kubectl-1.23.6-0
+      sudo yum install -y kubectl
       ```
 
       {note:info}
 
-      You can get a list of all available versions by using the command `yum --showduplicates list kubectl`.
+      You can get the list of all available versions by using the command `yum --showduplicates list kubectl`.
 
       {/note}
 
    1. Check the `kubectl` version by running the command:
 
       ```console
-      kubectl version --short
+      kubectl version
       ```
 
    {/tab}
+
    {tab(macOS (curl))}
    
    1. Download the correct version of `kubectl`.
 
-      An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
+      Examples of the commands to download the `kubectl` utility which is compatible with cluster version 1.33.0:
 
-      ```console
-      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/darwin/amd64/kubectl
-      ```
+      - Intel:
+
+        ```console
+        curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/amd64/kubectl
+        ```
+
+      - Apple Silicon:
+        ```console
+        curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/arm64/kubectl
+        ```
 
    1. Make the `kubectl` binary file executable:
 
@@ -142,10 +161,11 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```console
-      kubectl version --short
+      kubectl version
       ```
 
    {/tab}
+
    {tab(macOS (Homebrew))}
    
    1. Run one of the installation commands:
@@ -163,7 +183,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```console
-      kubectl version --short
+      kubectl version
       ```
 
    {/tab}
@@ -171,35 +191,34 @@ The way to connect to the cluster depends on its IP address:
    
    1. Download the correct version of `kubectl`.
 
-      An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
+      An example command to download the `kubectl` utility which is compatible with cluster version 1.33.0:
 
       ```console
-      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe
+      curl -LO https://dl.k8s.io/release/v1.33.0/bin/windows/amd64/kubectl.exe
       ```
 
    1. In the `PATH` environment variable, specify the directory where the `kubectl.exe` file was downloaded:
 
-      1. Go to **Start -> This Computer -> Properties -> Advanced System Settings -> Environment Variables -> System Variables**.
-      1. Change the value of the `Path` variable by appending the path to the directory with the file `kubectl.exe` to it.
+      1. Go to **Start → This Computer → Properties → Advanced System Settings → Environment Variables → System Variables**.
+      1. Change the value of the `PATH` variable by appending the path to the directory with the file `kubectl.exe` to it.
 
       {note:info}
 
-      **Note**
+      Docker Desktop for Windows adds its own version of `kubectl` to the `PATH` environment variable. If Docker Desktop is installed, select one of the options:
 
-      Docker Desktop for Windows adds its own version of `kubectl` to the `PATH` environment variable. If Docker Desktop is installed:
-
-      - either specify the path to the downloaded file before the entry added by the Docker Desktop installer;
-      - or remove the `kubectl` shipped with Docker Desktop.
+      - Specify the path to the downloaded file before the entry added by the Docker Desktop installer.
+      - Remove the `kubectl` utility provided with Docker Desktop.
 
       {/note}
 
    1. Check the `kubectl` version by running the command:
 
       ```console
-      kubectl version --short
+      kubectl version
       ```
 
    {/tab}
+
    {/tabs}
 
 1. Prepare everything you need to connect using [Single Sign-On (SSO)](../../concepts/access-management).
@@ -218,6 +237,7 @@ The way to connect to the cluster depends on its IP address:
 ## {heading(Checking connection to cluster)[id=check_connection]}
 
 {tabs}
+
 {tab(Version of Kubernetes 1.23 and higher)}                                                        
 
 On the host:
@@ -233,6 +253,7 @@ On the host:
    This is necessary for [authentication](../../concepts/access-management) when connecting to the cluster.
 
 {/tab}
+
 {tab(Version of Kubernetes 1.22 and lower)}
 
 Run the command on the host:
@@ -242,9 +263,10 @@ kubectl cluster-info
 ```
 
 {/tab}
+
 {/tabs}
 
-If the cluster is in the nomal operation state and `kubectl` is configured to work with it, similar information will be dispalyed:
+If the cluster is operating normally and `kubectl` is configured to work with it, similar information will be displayed:
 
 ```text
 Kubernetes control plane is running at...
