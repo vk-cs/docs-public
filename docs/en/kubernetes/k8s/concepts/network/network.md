@@ -6,13 +6,7 @@ CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheu
 
 ## Working with Container Network Interface (CNI)
 
-Cloud Containers clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize intra-cluster networks. Calico communicates with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut.
-
-{note:info}
-
-Sprut is in the beta testing phase. Contact [technical support](mailto:support@mcs.mail.ru) to get access to the new SDN service.
-
-{/note}
+Cloud Containers clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize intra-cluster networks. Calico communicates with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut. To get access to the Sprut SDN, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## Integration with load balancers
 

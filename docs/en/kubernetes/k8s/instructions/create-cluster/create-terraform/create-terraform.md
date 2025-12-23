@@ -122,8 +122,15 @@ Here:
 
 - `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](../../../concepts/architecture) section.
 - `cluster_node_volume_type` — the volume type for [storage](../../../concepts/storage#storage_types) that will be used by nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
-- `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `GZ1`.
-- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "GZ1"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones will be set up automatically.
+- `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `PA2`.
+
+   {note:info}
+
+   You can only select the `PA2` availability zone for the projects that use the [Sprut SDN](/en/networks/vnet/concepts/architecture#sdns_used).
+
+   {/note}
+
+- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "PA2"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones will be set up automatically.
 - `network_id` and `subnet_id` are the network and subnet identifiers, respectively. They can be specified in different ways:
 
   {tabs}

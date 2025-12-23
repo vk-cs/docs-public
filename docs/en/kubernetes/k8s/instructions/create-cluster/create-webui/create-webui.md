@@ -41,15 +41,21 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
    - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for fault-tolerant clusters and cannot be changed.
 
-   - **Category of virtual machine**: select the [VM category](/en/computing/iaas/concepts/about#flavors).
+     {note:info}
 
-   - **Virtual machine type - Master**: select the [VM configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for master nodes.
+     You can only select the `PA2` availability zone for the projects that use the [Sprut SDN](/en/networks/vnet/concepts/architecture#sdns_used).
 
-      Templates with high-performance CPUs are available upon request to technical support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
+     {/note}
 
-   - **Master disk type**: [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
+  - **Category of virtual machine**: select the [VM category](/en/computing/iaas/concepts/about#flavors).
 
-   - **Disk size on Master node**: the larger the disk size, the better its performance in some disk operations.
+  - **Virtual machine type - Master**: select the [VM configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for master nodes.
+
+     Templates with high-performance CPUs are available upon request to technical support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
+
+  - **Master disk type**: [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
+
+  - **Disk size on Master node**: the larger the disk size, the better its performance in some disk operations.
 
 1. In the **Network and settings** block, click the **Set up** button and specify the network settings:
 
