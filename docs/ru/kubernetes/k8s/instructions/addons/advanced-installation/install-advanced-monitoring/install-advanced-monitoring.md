@@ -72,6 +72,7 @@
 
 1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
 1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
+1. При необходимости в браузере [поключитесь к веб-интерфейсу Grafana](/ru/kubernetes/k8s/connect/addons-ui#web-ui), входящему в состав аддона Kube Prometheus Stack.
 
 {/tab}
 

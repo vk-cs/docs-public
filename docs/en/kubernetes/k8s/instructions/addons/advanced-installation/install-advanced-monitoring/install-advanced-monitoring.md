@@ -87,8 +87,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    
    {/tabs}
 
-1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
-1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
+1. If necessary, [change the Prometheus disk size](#changing_prometheus_disk_size).
+1. If necessary, [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
+1. If necessary, in your browser, [connect to the Grafana web interface](/en/kubernetes/k8s/connect/addons-ui#web-ui) included in the Kube Prometheus Stack addon.
 
 {/tab}
 
