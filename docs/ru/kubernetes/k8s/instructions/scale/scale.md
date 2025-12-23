@@ -6,6 +6,10 @@
 
 ### {heading(Масштабирование master-узлов)[id=scale_master_nodes]}
 
+{note:info}
+Эта операция доступна только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+{/note}
+
 1. [Изучите, как работает механизм вертикального масштабирования](../../concepts/scale).
 
 1. [Убедитесь](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
@@ -44,10 +48,6 @@
    {/tab}
 
    {tab(Terraform)}
-   
-   {note:info}
-   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
-   {/note}
  
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
