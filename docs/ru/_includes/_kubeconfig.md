@@ -16,6 +16,14 @@
 
    {tabs}
 
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
+   ```
+
+   {/tab}
+
    {tab(Windows (PowerShell))}
 
    ```console
@@ -24,14 +32,6 @@
      /Inheritance:d `
      /Remove:g BUILTIN\Administrators Everyone Users `
      /Grant:r ${env:UserName}:RW
-   ```
-
-   {/tab}
-
-   {tab(Linux (bash)/macOS (zsh))}
-
-   ```console
-   sudo chmod 0600 /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
    {/tab}
@@ -45,18 +45,18 @@
 
    {tabs}
 
-   {tab(Windows (PowerShell))}
-
-   ```console
-   $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
-   ```
-
-   {/tab}
-
    {tab(Linux (bash)/macOS (zsh))}
 
    ```console
    export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   $env:KUBECONFIG = 'C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml'
    ```
 
    {/tab}
