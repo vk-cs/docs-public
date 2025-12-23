@@ -6,13 +6,7 @@
 
 ## Работа с Container Network Interface (CNI)
 
-Кластеры Kubernetes используют [Calico](https://projectcalico.docs.tigera.io/about/about-calico) для организации внутрикластерной сети. Calico взаимодействует с платформой VK Cloud с помощью программно-определяемой сети собственной разработки [SDN Sprut](/ru/networks/vnet/concepts/sdn#sprut).
-
-{note:info}
-
-Sprut находится на этапе beta-тестирования. Для получения доступа к новому сервису SDN обратитесь в [службу технической поддержки](/ru/contacts).
-
-{/note}
+Кластеры Kubernetes используют [Calico](https://projectcalico.docs.tigera.io/about/about-calico) для организации внутрикластерной сети. Calico взаимодействует с платформой VK Cloud с помощью программно-определяемой сети собственной разработки [SDN Sprut](/ru/networks/vnet/concepts/sdn#sprut). Для получения доступа к SDN Sprut, обратитесь в [службу технической поддержки](/ru/contacts).
 
 ## Интеграция с балансировщиками нагрузки
 
