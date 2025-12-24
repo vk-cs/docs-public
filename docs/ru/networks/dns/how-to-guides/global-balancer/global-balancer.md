@@ -20,48 +20,45 @@ VK Cloud позволяет создавать отказоустойчивые 
 1. Зарегистрируйте ваш домен у доменного регистратора и делегируйте его на NS-серверы VK Cloud, если этого еще не сделано. Дождитесь обновления DNS-записей: обычно занимает 10–30 минут.
 1. Установите утилиту `dig` на ваш компьютер для проверки работы DNS-балансировки:
 
-   {tabs}
+{tabs}
 
    {tab(Ubuntu, Debian)}
 
-   ```bash
-   sudo apt update && sudo apt install dnsutils
+   ```console
+   $ sudo apt update && sudo apt install dnsutils
    ```
    
    {/tab}
    
    {tab(Red Hat, CentOS, Fedora)}
    
-   ```bash
-   # Для старых версий (yum):
-   sudo yum install bind-utils
-
-   # Для новых версий (dnf):
-   sudo dnf install bind-utils
+   ```console
+   $ sudo yum install bind-utils
    ```
 
    {/tab}
 
    {tab(macOS)}
    
-   ```bash
-   brew install bind
-   ```
+   Утилита `dig` встроена в систему и доступна через Терминал.
 
    {/tab}
 
    {tab(Windows)}
    
-   ```bash
+   Используйте встроенную утилиту `nslookup` или установите BIND Tools:
+
+   ```console
    choco install bind-toolsonly
    ```
+
    {/tab}
 
    {/tabs}
 
    {note:info}
 
-   Вы можете использовать аналоги утилиты `dig` для проверки DNS-балансировки. Комады проверки при этом будут отличаться.
+   Вы можете использовать аналоги утилиты `dig` для проверки DNS-балансировки. Команды проверки при этом будут отличаться.
 
    {/note}
 
@@ -81,9 +78,27 @@ VK Cloud позволяет создавать отказоустойчивые 
 
 1. На компьютере выполните команду:
 
-   ```bash
+   {tabs}
+
+   {tab(dig)}
+
+   ```console
    for i in {1..100}; do dig www.example.dns.com  A @ns4.msc.mail.ru +short; done | sort | uniq -c
    ```
+
+   {/tab}
+
+   {tab(nslookup)}
+
+   ```console
+   for i in {1..100}; do 
+       nslookup -type=A www.example.dns.com ns4.msc.mail.ru | grep -A1 "Name:" | tail -1
+   done | sort | uniq -c
+   ```
+
+   {/tab}
+
+   {/tabs}
 
    Ожидаемый ответ:
 
@@ -98,9 +113,27 @@ VK Cloud позволяет создавать отказоустойчивые 
 1. В личном кабинете [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) две из трех ВМ. Это имитирует отказ сервера или недоступность дата-центра.
 1. На компьютере повторите команду:
 
-   ```bash
+   {tabs}
+
+   {tab(dig)}
+
+   ```console
    for i in {1..100}; do dig www.example.dns.com  A @ns4.msc.mail.ru +short; done | sort | uniq -c
    ```
+
+   {/tab}
+
+   {tab(nslookup)}
+
+   ```console
+   for i in {1..100}; do 
+       nslookup -type=A www.example.dns.com ns4.msc.mail.ru | grep -A1 "Name:" | tail -1
+   done | sort | uniq -c
+   ```
+
+   {/tab}
+
+   {/tabs}
 
    Ожидаемый ответ:
 
