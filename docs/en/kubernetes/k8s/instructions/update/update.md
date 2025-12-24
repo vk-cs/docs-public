@@ -1,6 +1,4 @@
-If the cluster uses not the latest [supported](../../concepts/versions/version-support) version of Kubernetes, it can be upgraded. At this, installed add-ons and a part of its components are also [upgraded](../../concepts/update).
-
-You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters of versions 1.16 and below can only be upgraded by transferring a backup of data to a new cluster of the correct version, for example [using Velero](../../how-to-guides/velero-backup).
+If the cluster uses not the latest [supported](../../concepts/versions/version-support) version of Kubernetes, it can be upgraded. At this, a part of its components is also [upgraded](../../concepts/update).
 
 {note:warn}
 
@@ -11,6 +9,10 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
   If the cluster uses a modified Corefile, then back it up prior to updating the cluster.
 
 {/note}
+
+You cannot downgrade to a lower version of Kubernetes when upgrading.
+
+Add-ons do not get updated with cluster updates. If necessary, you can [update](/en/kubernetes/k8s/instructions/addons/manage-addons#updating_addon_version) them separately after the cluster update.
 
 ## Before updating
 
