@@ -42,8 +42,15 @@
           "absoluteLink": "https://docs.vktech.team/artifactory",
           "title": "Artifactory",
           "description": "Specialized repository for managing binary artifacts",
-          "icon": "en/on-premises/assets/artifactory-icon.svg",
-          "iconMobile": "en/on-premises/assets/artifactory-mobile-icon.svg"
+          "icon": "/en/on-premises/assets/artifactory-icon.svg",
+          "iconMobile": "/en/on-premises/assets/artifactory-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/security-gate",
+          "title": "VK Security Gate",
+          "description": "Automation of secure software development: CI/CD checks and GitLab scans",
+          "icon": "/en/on-premises/assets/security-gate-icon.svg",
+          "iconMobile": "/en/on-premises/assets/security-gate-mobile-icon.svg"
         }
       ]
     }
