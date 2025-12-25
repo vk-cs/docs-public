@@ -6,8 +6,7 @@ Possible scenarios for using the service:
 
 - data loading bus, including in data streaming scenarios;
 - buffer for collecting metrics, logs and other types of messages from application systems;
-- queue service for interaction of distributed applications;
-- data transfer between the service and external systems (Kafka Connect).
+- queue service for interaction of distributed applications.
 
 Cloud Kafka service automates processes:
 
@@ -15,4 +14,11 @@ Cloud Kafka service automates processes:
 - efficient allocation of cluster resources;
 - scaling the resources of the service instance.
 
-The user can manage Cloud Kafka resources through the VK Cloud management console, while the standard Apache Kafka tool is available — [Kafka UI](https://docs.kafka-ui.provectus.io/overview/readme).
+You can also add the [Kafka UI](https://ui.docs.kafbat.io/) tool to use with the instance. Its features include:
+
+- Viewing topic information: number of partitions and replicas, current configuration.
+- Managing topics: creation, configuration changes, deletion.
+- Viewing and managing messages: reading, filtering, and searching.
+- Working with consumers: offset management and lag tracking.
+- Managing schemas: viewing schema details, adding new schemas, modifying or deleting existing ones.
+- Monitoring cluster performance and health: tracking lag, errors, and other metrics.
