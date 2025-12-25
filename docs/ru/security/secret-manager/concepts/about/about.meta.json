@@ -1,0 +1,9 @@
+{
+    "title": "О сервисе",
+      "shortDescription": "Что такое Secret Manager и как он устроен",
+      "metaDescription": "Как устроен сервис Secret Manager от VK Cloud, какие у него особенности: что такое секреты и какие у них типы, как работают версии секретов.",
+    "sectionTitle": "О сервисе",
+    "icon": "",
+    "weight": 2,
+    "uuid": ""
+}
