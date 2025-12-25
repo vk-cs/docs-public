@@ -79,7 +79,5 @@ Alfresco — это система управления корпоративны
     - `/solr/` — панель управления поисковым сервисом Alfresco (настройка индексации, поиска и мониторинг).
 
     Пример использования интерфейса для доступа в панель администрирования Alfresco через адресную строку: `http://<ВАШ_ДОМЕН_ИЛИ_IP>/admin/`.
-    
+
 1. (Опционально) Воспользуйтесь [руководством](https://support.hyland.com/r/Alfresco/Alfresco-Content-Services-Community-Edition/23.3/Alfresco-Content-Services-Community-Edition/Install/Install-with-zip/Install-additional-software/Test-installation/Post-installation-checks), чтобы начать работу с сервисом. При необходимости изучите [официальную документацию Alfresco](https://support.hyland.com/r/Alfresco/Alfresco-Content-Services-Community-Edition/23.3/Alfresco-Content-Services-Community-Edition).
-
-
