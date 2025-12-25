@@ -39,7 +39,7 @@
 1. Выберите проект.
 1. Перейдите в раздел **Объектное хранилище → Бакеты**.
 1. Нажмите кнопку **Создать**.
-1. Задайте название бакета.
+1. Задайте имя бакета.
 1. Выберите класс хранения `Hotbox`.
 1. Нажмите кнопку **Создать бакет**.
 
@@ -55,14 +55,18 @@
    1. Убедитесь, что выбрана настройка ACL `Private`.
    1. Нажмите кнопку **Выбрать файлы** и выберите файл, который нужно загрузить в бакет.
 
-   <!--- на слова "подписанной ссылке" прикрепить ссылку на раздел "Разграничение доступа", когда он будет написан--->
-1. Предоставьте доступ к загруженному объекту по временной подписанной ссылке:
+1. Предоставьте доступ к загруженному объекту по временной [подписанной ссылке](/ru/storage/s3/concepts/access/signed-url):
 
    1. Сгенерируйте временную ссылку для доступа к объекту с приватными настройками ACL, выполнив команду:
 
       ```console
-      aws s3 presign s3://<название бакета>/<имя объекта> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+      aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
+
+      Здесь:
+
+      - `<ИМЯ_БАКЕТА>` — имя бакета, в который загружен файл.
+      - `<КЛЮЧ_ОБЪЕКТА>` — [ключ объекта](/ru/storage/s3/concepts/about#object_key). В этом сценарии ключ совпадает с именем загруженного объекта.
 
       {cut(Пример)}
 
@@ -81,7 +85,7 @@
       Ссылка имеет следующий вид:
 
       ```https
-      https://hb.ru-msk.vkcloud-storage.ru/<название бакета>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
+      https://hb.ru-msk.vkcloud-storage.ru/<ИМЯ_БАКЕТА>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
       ```
 
       {note:info}
@@ -114,7 +118,7 @@
       Ссылка имеет следующий вид:
 
       ```https
-      https://<название бакета>.hb.ru-msk.vkcloud-storage.ru/...
+      https://<ИМЯ_БАКЕТА>.hb.ru-msk.vkcloud-storage.ru/...
       ```
 
 ## {counter(bucket)}. Проверьте наличие доступа к объектам
