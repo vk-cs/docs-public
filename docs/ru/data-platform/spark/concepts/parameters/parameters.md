@@ -34,7 +34,7 @@
 
 |`S3 VK Cloud`
 |`s3_int`
-|{linkto(#parameters_s3_int)[text=Подключение]} к облачному хранилищу Cloud Storage в том же проекте
+|{linkto(#parameters_s3_int)[text=Подключение]} к облачному хранилищу VK Object Storage в том же проекте
 
 |`Iceberg Metastore VK Cloud`
 |`iceberg_int`
@@ -53,7 +53,7 @@
 |{linkto(#parameters_postgresql)[text=Подключение]} к базе данных PostgreSQL
 |===
 
-## {heading(Подключение к Cloud Storage)[id=parameters_s3_int]}
+## {heading(Подключение к VK Object Storage)[id=parameters_s3_int]}
 
 Параметры для подключения источника данных `S3 VK Cloud` к экземпляру Spark:
 
@@ -65,7 +65,7 @@
 
 |Имя внутреннего подключения S3
 |`name`
-|Имя подключения к Cloud Storage, отображаемое в личном кабинете
+|Имя подключения к VK Object Storage, отображаемое в личном кабинете
 
 |S3 URL
 |`s3_endpoint`
@@ -77,7 +77,7 @@
 
 |Бакет
 |`s3_bucket`
-|Уникальное имя бакета Cloud Storage
+|Уникальное имя бакета VK Object Storage
 
 |Путь в бакете S3
 |`s3_folder`
@@ -108,7 +108,7 @@
 
 |Имя бакета в S3 VK Cloud
 |`s3_bucket`
-|Уникальное имя бакета Cloud Storage, который используется только для хранения внутренних данных приложений
+|Уникальное имя бакета VK Object Storage. Этот бакет используется только для хранения внутренних данных приложений
 
 |Путь в бакете Iceberg Metastore S3
 |`s3_folder`

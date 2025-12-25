@@ -63,7 +63,7 @@
 
 | Эндпоинт                            | Адрес                            | Назначение |
 |-------------------------------------|----------------------------------| -----------------|
-| Домен S3                            | https://hb.ru-msk.vkcloud-storage.ru/    | Управление [VK Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api) |
+| Домен VK Object Storage             | https://hb.ru-msk.vkcloud-storage.ru/    | Управление [VK Object Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api) |
 
 ### Cloud ML Platform
 

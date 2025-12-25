@@ -14,7 +14,7 @@
 |
 `name`
 |
-Уникальное имя бакета S3.
+Уникальное имя бакета VK Object Storage.
 
 {note:info}
 

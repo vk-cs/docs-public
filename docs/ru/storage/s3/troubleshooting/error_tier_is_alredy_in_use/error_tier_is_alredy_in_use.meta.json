@@ -1,8 +1,8 @@
 {
-  "title": "Ошибка при интеграции с S3",
-  "shortDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
-  "metaDescription": "При интеграции MinIO с S3 появляется сообщение Tier is already in use",
-  "sectionTitle": "Ошибка при интеграции с S3",
+  "title": "Ошибка при интеграции с VK Object Storage",
+  "shortDescription": "При интеграции MinIO с VK Object Storage появляется сообщение Tier is already in use",
+  "metaDescription": "При интеграции MinIO с VK Object Storage появляется сообщение Tier is already in use",
+  "sectionTitle": "Ошибка при интеграции с VK Object Storage",
   "icon": "",
   "weight": 4,
   "uuid": "ac789f88-ce8f-431a-9337-3bce60ea48e4"
