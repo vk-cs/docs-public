@@ -1,9 +1,9 @@
 {
   "title": "Регистрируемые события",
   "shortDescription": "События, которые сервисы VK Cloud передают в Cloud Audit",
-  "metaDescription": "События, которые сервисы VK Cloud передают в Cloud Audit",
+  "metaDescription": "События, которые сервисы VK Cloud передают в Cloud Audit: какие регистрируемые события передаются в сервис аудита VK Cloud из других сервисов платформы.",
   "sectionTitle": "Регистрируемые события",
   "icon": "",
-  "weight": 3,
+  "weight": 2,
   "uuid": "ad430907-d135-4acc-afb8-cb8e70146a14"
 }
