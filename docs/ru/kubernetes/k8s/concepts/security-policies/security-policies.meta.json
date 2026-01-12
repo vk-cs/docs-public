@@ -4,6 +4,6 @@
       "metaDescription": "Контейнеры VK Cloud: инструменты для повышения безопасности кластера при работе с ресурсами Kubernetes.",
     "sectionTitle": "Политики безопасности",
     "icon": "",
-    "weight": 11,
+    "weight": 12,
     "uuid": "2a3bbee5-3cc0-43a5-b000-39f849b25fc8"
 }

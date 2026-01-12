@@ -4,6 +4,6 @@
       "metaDescription": "Шаблоны конфигураций виртуальных машин (flavors) для кластеров Kubernetes в VK Cloud. Расчет подходящей конфигурации и доступных вычислительных ресурсов CPU и RAM",
     "sectionTitle": "Доступные вычислительные ресурсы",
     "icon": "",
-    "weight": 6,
+    "weight": 7,
     "uuid": "830c46fa-6aeb-412a-92e5-827dece3ec6a"
 }

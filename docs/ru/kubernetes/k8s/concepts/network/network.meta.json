@@ -4,6 +4,6 @@
       "metaDescription": "Интеграция кластеров Kubernetes с сетевыми сервисами VK Cloud. Объекты сетевой инфраструктуры в кластере Kubernetes, балансировщики нагрузки, Ingress-контроллер",
     "sectionTitle": "Сеть в кластере",
     "icon": "",
-    "weight": 4,
+    "weight": 5,
     "uuid": "ad006f6f-fac5-41eb-b752-302298e20eab"
 }

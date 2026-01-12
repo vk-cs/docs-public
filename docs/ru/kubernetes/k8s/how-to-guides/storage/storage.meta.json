@@ -1,8 +1,8 @@
 {
-    "title": "Работа с постоянными томами",
-      "shortDescription": "Как использовать в кластере разные виды постоянных томов",
-      "metaDescription": "Узнайте, как использовать разные виды постоянных томов (persistent volumes) в кластере Kubernetes. Как подключить постоянные тома с помощью Persistent Volume Claims (PVC)",
-    "sectionTitle": "Работа с постоянными томами",
+    "title": "Работа с постоянными томами (PV)",
+      "shortDescription": "Как использовать в кластере разные виды постоянных томов (PV)",
+      "metaDescription": "Узнайте, как использовать разные виды постоянных томов (Persistent Volumes, PV) в кластере Kubernetes. Как подключить постоянные тома с помощью Persistent Volume Claims (PVC)",
+    "sectionTitle": "Работа с постоянными томами (PV)",
     "icon": "",
     "weight": 2,
     "uuid": "3a4b27d4-7812-45e3-8486-d1bdd897dc4d"

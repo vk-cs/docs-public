@@ -4,6 +4,6 @@
   "metaDescription": "The process of automatic scaling of worker nodes in Kubernetes clusters in the Cloud Containers service: conditions for increasing and decreasing the number of worker nodes, settings, unneeded time for pods",
   "sectionTitle": "Automatic scaling of worker nodes via Cluster Autoscaler",
   "icon": "",
-  "weight": 8,
+  "weight": 9,
   "uuid": "a089ab9f-7f3f-4fc1-b27c-2a0f36a8f258"
 }

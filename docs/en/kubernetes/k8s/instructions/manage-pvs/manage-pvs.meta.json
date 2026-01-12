@@ -1,0 +1,9 @@
+{
+  "title": "Managing persistent volumes (PVs)",
+  "shortDescription": "How to move and delete PVs",
+  "metaDescription": "Instructions for managing PVs in second-generation Kubernetes clusters in the Cloud Containers service on the VK Cloud platform: how to move PVs between service and user projects and how to delete them",
+  "sectionTitle": "Managing persistent volumes (PVs)",
+  "icon": "",
+  "weight": 9,
+  "uuid": ""
+}

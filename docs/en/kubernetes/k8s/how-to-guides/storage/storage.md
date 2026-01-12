@@ -1,4 +1,4 @@
-Persistent volumes can be connected to simple demo applications in various ways. Next, Persistent Volume Claims (PVCs) will be used to connect them. An Ingress resource will be created to test the functionality of the applications and the volumes connected to them.
+[Persistent volumes (PVs)](/en/kubernetes/k8s/reference/pvs-and-pvcs) can be connected to simple demo applications in various ways. Next, Persistent Volume Claims (PVCs) will be used to connect them. An Ingress resource will be created to test the functionality of the applications and the volumes connected to them.
 
 ## 1. Preparatory steps
 
@@ -27,12 +27,12 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
 1. Install [curl](https://curl.se/docs/) if the utility is not already installed.
 
-## 2. Create demo applications and connect persistent volumes to them
+## 2. Create demo applications and connect PVs to them
 
-The following will demonstrate how to create several NGINX-based web applications to display web pages written to the persistent volumes connected to those applications.
-The NGINX `nginxdemos/nginx-hello` image is used, which displays web pages from the `/usr/share/nginx/html` directory, so all persistent volumes will be mounted in the application pods via this path.
+The following will demonstrate how to create several NGINX-based web applications to display web pages written to the PVs connected to those applications.
+The NGINX `nginxdemos/nginx-hello` image is used, which displays web pages from the `/usr/share/nginx/html` directory, so all PVs will be mounted in the application pods via this path.
 
-You can create one or more demo applications, depending on which way you want to connect the persistent volumes.
+You can create one or more demo applications, depending on which way you want to connect the PVs.
 
 ### Connecting block storages
 
@@ -47,16 +47,20 @@ When using this type of storage:
 
 {tab(Connecting via static PVC)}
 
+{note:info}
+This scenario is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
 This example will create:
 
 1. Disk in the cloud compute service of the VK Cloud platform.
-1. A persistent volume corresponding to this disk.
-1. Static PVC, using a persistent volume that has already been created.
+1. A PV corresponding to this disk.
+1. Static PVC, using a PV that has already been created.
 1. Application `tea` as a single pod deployment, and its corresponding service.
 
-   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the persistent volume.
+   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the PV.
 
-To connect a persistent volume using static PVC:
+To connect a PV using static PVC:
 
 1. [Create a network HDD](/en/computing/iaas/instructions/volumes).
 
@@ -77,7 +81,7 @@ To connect a persistent volume using static PVC:
    1. The storage sizes specified in the parameters `spec.capacity.storage` for the PersistentVolume resource and `spec.resources.requests.storage` for the PersistentVolumeClaim resource must match the size of the corresponding disk. In this example it is 1 GB.
    1. For the PersistentVolumeClaim resource, use an empty value in the `storageClassName` storage class parameter.
    1. The storage access mode is specified in the `spec.accessModes` parameter for the PersistentVolume resource.
-   1. The availability zones of the disk and the worker node on which the pod (application) will be located must match. Otherwise an attempt to mount a persistent volume corresponding to the disk on this node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use a disk from the same zone.
+   1. The availability zones of the disk and the worker node on which the pod (application) will be located must match. Otherwise an attempt to mount a PV corresponding to the disk on this node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use a disk from the same zone.
    1. ReclaimPolicy `Retain` is used for the permanent volume. The `Delete` policy is not used so that you can monitor the state of the disk manually and not accidentally delete it.
 
 1. Create a manifest for the `tea` application.
@@ -187,16 +191,16 @@ This example will create:
 1. A dynamic PVC that will create a permanent volume based on the given parameters.
 1. A `coffee` application as a single pod deployment, and its corresponding service.
 
-   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the persistent volume.
+   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the PV.
 
-To connect a persistent volume using dynamic PVC:
+To connect a PV using dynamic PVC:
 
 1. Examine the connection features:
 
    1. The required storage size is specified in the `spec.resources.requests.storage` parameter of the PersistentVolumeClaim resource. In this example it is 1 GB.
-   1. For the PersistentVolumeClaim resource, specify the storage class in the `spec.storageClassName` parameter. The storage class must use the same availability zone as the worker node on which the pod (application) will reside. Otherwise, an attempt to connect a persistent volume corresponding to the PVC to the pod on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
+   1. For the PersistentVolumeClaim resource, specify the storage class in the `spec.storageClassName` parameter. The storage class must use the same availability zone as the worker node on which the pod (application) will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pod on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
    1. The storage access mode is set in the `spec.accessModes` parameter for the PersistentVolumeClaim resource.
-   1. ReclaimPolicy `Delete` is used for persistent volume (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the persistent volume will automatically be deleted.
+   1. ReclaimPolicy `Delete` is used for PV (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the PV will automatically be deleted.
 
 1. Create a manifest for the `coffee` application.
 
@@ -287,25 +291,25 @@ This example will create:
 
 1. Application `juice` as a StatefulSet of two pods, as well as the corresponding services.
 
-   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the persistent volume.
+   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the PV.
 
-1. A dynamic PVC that will create persistent volumes based on the parameters you specify.
+1. A dynamic PVC that will create PVs based on the parameters you specify.
 
-To connect a persistent volume to multiple pods using dynamic PVC:
+To connect a PV to multiple pods using dynamic PVC:
 
 1. Examine the connection features:
 
    1. When you use a StatefulSet PVC, it is not configured separately as in the other examples, but as part of the StatefulSet resource.
-   1. The PVC will create one persistent volume for each StatefulSet replica, and these replicas will be numbered in order.
+   1. The PVC will create one PV for each StatefulSet replica, and these replicas will be numbered in order.
 
       {note:info}
 
-      When deploying an application of multiple replicas as a Deployment resource, you must also ensure that a persistent volume is created for each replica using the PVC. Such volumes will have random identifiers instead of sequential numbers.
+      When deploying an application of multiple replicas as a Deployment resource, you must also ensure that a PV is created for each replica using the PVC. Such volumes will have random identifiers instead of sequential numbers.
 
       {/note}
 
    1. The required storage size is specified in the `spec.volumeClaimTemplates.spec.resources.requests.storage` parameter of the StatefulSet resource. In this example it is 1 GB.
-   1. The storage class is specified in the `spec.volumeClaimTemplates.spec.storageClassName` parameter of the StatefulSet resource. The storage class must use the same availability zone as the worker node on which the sub-application will reside. Otherwise, an attempt to connect a persistent volume corresponding to the PVC to the pad on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
+   1. The storage class is specified in the `spec.volumeClaimTemplates.spec.storageClassName` parameter of the StatefulSet resource. The storage class must use the same availability zone as the worker node on which the sub-application will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pad on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
    1. The storage access mode is set in the `spec.volumeClaimTemplates.spec.accessModes` parameter of the StatefulSet resource.
    1. ReclaimPolicy `Delete` is used for permanent volume (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the permanent volume will be automatically deleted.
 
@@ -419,7 +423,7 @@ To connect a persistent volume to multiple pods using dynamic PVC:
 
 ### Connecting file storages
 
-File storages are connected to the cluster using a persistent volume that is configured to use the existing storage via the required protocol, such as NFS.
+File storages are connected to the cluster using a PV that is configured to use the existing storage via the required protocol, such as NFS.
 
 When using this type of storage:
 
@@ -433,11 +437,11 @@ When using this type of storage:
 This example will create:
 
 1. NFS file storage in the Cloud Servers service.
-1. A persistent volume corresponding to this storage.
-1. Static PVC using an already created persistent volume.
+1. A PV corresponding to this storage.
+1. Static PVC using an already created PV.
 1. Application `milkshake` as a StatefulSet of two pods, as well as the corresponding services.
 
-To connect an NFS persistent volume using a static PVC:
+To connect an NFS PV using a static PVC:
 
 1. [Create file storage](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage).
 
@@ -462,9 +466,9 @@ To connect an NFS persistent volume using a static PVC:
       1. The storage access mode is specified in the `spec.accessModes` parameter for the PersistentVolume resource.
       1. The `spec.mountOptions` parameter set must contain an `nfsvers` entry with version `4.0`.
 
-   1. Instead of an initialization container to write a web page to a persistent volume, a single-run Kubernetes task (job) is used. This approach works because in this case all pods will have access to the same persistent volume.
+   1. Instead of an initialization container to write a web page to a PV, a single-run Kubernetes task (job) is used. This approach works because in this case all pods will have access to the same PV.
 
-   1. ReclaimPolicy `Retain` is used for the persistent volume because the `Recycle` policy will not allow instant removal of the volume when it becomes unnecessary. Clearing a volume of data takes a long time. The `Delete` policy is not used so that you can monitor the state of the storage manually and not accidentally delete it.
+   1. ReclaimPolicy `Retain` is used for the PV because the `Recycle` policy will not allow instant removal of the volume when it becomes unnecessary. Clearing a volume of data takes a long time. The `Delete` policy is not used so that you can monitor the state of the storage manually and not accidentally delete it.
 
 1. Create a manifest for the `milkshake` application.
 
@@ -622,7 +626,7 @@ To connect an NFS persistent volume using a static PVC:
 
 {/tabs}
 
-## 3. Check the functionality of demo applications and persistent volumes
+## 3. Check the functionality of demo applications and PVs
 
 1. Create a manifest for the Ingress resource through which application requests will go.
 
@@ -729,7 +733,7 @@ To connect an NFS persistent volume using a static PVC:
    A response should be displayed:
 
    ```text
-   The tea pod says Hello World to everyone! This file is located on the statically claimed persistent volume.
+   The tea pod says Hello World to everyone! This file is located on the statically claimed PV.
    ```
 
    {/tab}
@@ -745,7 +749,7 @@ To connect an NFS persistent volume using a static PVC:
    A response should be displayed:
 
    ```text
-   The coffee pod says Hello World to everyone! This file is located on the statically claimed persistent volume.
+   The coffee pod says Hello World to everyone! This file is located on the statically claimed PV.
    ```
 
    {/tab}
@@ -763,7 +767,7 @@ To connect an NFS persistent volume using a static PVC:
    The same response should be output for the application and each of its replicas:
 
    ```text
-   The juice StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
+   The juice StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce PV.
    ```
 
    {/tab}
@@ -781,7 +785,7 @@ To connect an NFS persistent volume using a static PVC:
    The same response should be output for the application and each of its replicas:
 
    ```text
-   The milkshake StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed NFS ReadWriteMany persistent volume.
+   The milkshake StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed NFS ReadWriteMany PV.
    ```
 
    {/tab}
