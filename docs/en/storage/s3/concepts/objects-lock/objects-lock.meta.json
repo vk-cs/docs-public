@@ -1,0 +1,9 @@
+{
+  "title": "Locking objects with object lock",
+  "shortDescription": "Preventing objects from being deleted and overwritten",
+  "metaDescription": "Preventing objects from being deleted and overwritten in the VK Object Storage service. Retention period: GOVERNANCE and COMPLIANCE modes. Legal hold. How versioning and locking objects are connected",
+  "sectionTitle": "Locking objects with object lock",
+  "icon": "",
+  "weight": 4,
+  "uuid": ""
+}
