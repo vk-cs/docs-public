@@ -1,4 +1,4 @@
-Постоянный том ([persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/), PV) предоставляет возможности для длительного хранения данных в кластерах Kubernetes. Данные, хранящиеся на PV, не теряются при сбое отдельного контейнера или пода целиком.
+Постоянный том ([Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/), PV) предоставляет возможности для длительного хранения данных в кластерах Kubernetes. Данные, хранящиеся на PV, не теряются при сбое отдельного контейнера или пода целиком.
 
 В рабочих нагрузках ([workloads](https://kubernetes.io/docs/concepts/workloads/)) нельзя использовать PV напрямую. Необходимо дополнительно создать [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) (PVC), который позволяет запросить постоянный том с нужными параметрами и затем использовать его в рабочих нагрузках. Самые распространенные параметры, которые можно указать в PVC:
 
