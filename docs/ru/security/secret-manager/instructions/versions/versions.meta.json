@@ -3,6 +3,11 @@
   "shortDescription": "Просмотр существующих версий и создание новых",
   "metaDescription": "Подробные пошаговые инструкции по основным операциям при работе с Secret Manager от VK Cloud: создание и просмотр версий секретов.",
   "sectionTitle": "Управление версиями секрета",
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
   "icon": "",
   "weight": 1,
   "uuid": "a86aa13f-2f9b-4cb5-95e9-a4a2f0baff59"
