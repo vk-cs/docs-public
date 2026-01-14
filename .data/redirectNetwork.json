@@ -32740,5 +32740,41 @@
     "destination": "/ru/storage/backups/concepts/gfs-backup",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/security/secret-manager",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/security/secret-manager/concepts",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/security/secret-manager/instructions/manage-secret",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/security/secret-manager/instructions/versions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/security/secret-manager/instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/security/secret-manager/concepts/about",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
   }
 ]
