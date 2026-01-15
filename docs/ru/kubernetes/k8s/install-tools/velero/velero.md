@@ -37,13 +37,13 @@ Velero — это клиент-серверная утилита для резе
    ```console
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
+     velero/velero-plugin-for-aws:v1.13.1,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
    --provider aws \
    --bucket <ИМЯ_БАКЕТА_VELERO> \
    --secret-file <ПУТЬ_К_ФАЙЛУ_S3_CREDS> \
    --use-volume-snapshots=false \
    --backup-location-config \
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<ДОМЕН>
+     region=ru-msk,s3ForcePathStyle="true",checksumAlgorithm="",s3Url=<ДОМЕН>
 
    ```
 
@@ -54,13 +54,13 @@ Velero — это клиент-серверная утилита для резе
    ```console
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
+     velero/velero-plugin-for-aws:v1.13.1,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
    --provider aws `
    --bucket <ИМЯ_БАКЕТА_VELERO> `
    --secret-file <ПУТЬ_К_ФАЙЛУ_S3_CREDS> `
    --use-volume-snapshots=false `
    --backup-location-config `
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<ДОМЕН>
+     region=ru-msk,s3ForcePathStyle="true",checksumAlgorithm="",s3Url=<ДОМЕН>
    ```
 
    {/tab}
