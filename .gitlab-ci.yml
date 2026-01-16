@@ -2,19 +2,18 @@
 include:
   - project: infra/common/ci-templates
     file:
-      - pipelines/docs-v2/pipe.gitlab-ci.yml
+      - pipelines/docs-v3/pipe.gitlab-ci.yml
 
 variables:
   # pipeline parameters
-  VKCS_D11N_VERSION: '5.2.6'
+  VKCS_D11N_VERSION: '5.2.9'
   VKCS_DOCKERFILE_PATH: devops/Dockerfile
   VKCS_DEV_DEPLOY_MODE: auto
   VKCS_PROD_DEPLOY_MODE: auto
   VKCS_STAGE_DEPLOY_MODE: auto
-  VKCS_DEVINT_DEPLOY_MODE: auto
-  VKCS_DEPLOY_DEVINT_PLAYBOOK: ansible-openstack/playbooks/helm-new-help.yml
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
+  VKCS_K8S_DEV_INGRESS_PATH: /docs
 
   # Github sync variables
   VKCS_GITHUB_REPO: vk-cs/docs-public

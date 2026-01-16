@@ -27,9 +27,10 @@ components:
         failureThreshold: 3
         successThreshold: 1
     ingress:
+      className: "nginx-vk-docs-share"
       rules:
         - hostname: {{ .Release.Store.ingressHostname }}
           paths:
-          - path: /
+          - path: /docs
       tls:
         - secretName: front-wildcard-tls-secret
