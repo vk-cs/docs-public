@@ -1,0 +1,45 @@
+envSecret:
+  MAILER_TOKEN: new-help-secret
+  VKTEAMS_ALERT_TOKEN: new-help-secret
+  GITHUB_BOT_TOKEN: new-help-secret
+  AI_SEARCH_TOKEN: new-help-secret
+  # SATORI_API_KEY: new-help-secret
+
+components:
+  - name: common
+    replicas: 1
+    ports:
+      - port: 3000
+        headlessOnly: true
+    probes:
+      startup:
+        path: docs/api/healthz
+        port: 3000
+        initialDelaySeconds: 30
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 60
+      liveness:
+        path: docs/api/healthz
+        port: 3000
+        initialDelaySeconds: 30
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+      readiness:
+        path: docs/api/healthz
+        port: 3000
+        initialDelaySeconds: 30
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+    ingress:
+      className: "nginx-vk-docs-share"
+      rules:
+        - hostname: public-portal.docs.prod.vktechinfra.devmail.ru
+          paths:
+            - path: /docs
+      tls:
+        - secretName: wildcard-tls-secret
