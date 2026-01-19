@@ -2,8 +2,11 @@ envSecret:
   MAILER_TOKEN: new-help-secret
   VKTEAMS_ALERT_TOKEN: new-help-secret
   GITHUB_BOT_TOKEN: new-help-secret
-  AI_SEARCH_TOKEN: new-help-secret
-  # SATORI_API_KEY: new-help-secret
+
+env:
+  TARGET_ENV : "stage"
+  SATORI_API_KEY_2: "stage_satori_api_key"
+  SATORI_API_BASE_URL: "stage_api_url"
 
 components:
   - name: common
