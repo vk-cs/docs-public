@@ -29,6 +29,8 @@ import {
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
 console.debug('TARGET_ENV', TARGET_ENV);
+console.debug('SATORI_API_KEY_2', process.env.SATORI_API_KEY_2);
+console.debug('SATORI_API_BASE_URL', process.env.SATORI_API_BASE_URL);
 console.debug('SETTINGS', {
     settings: {
         satoriIndexPreparer: {
