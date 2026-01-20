@@ -9,15 +9,11 @@ variables:
   VKCS_D11N_VERSION: '5.2.9'
   VKCS_DOCKERFILE_PATH: devops/Dockerfile
   VKCS_DEV_DEPLOY_MODE: auto
-  VKCS_PROD_DEPLOY_MODE: auto
+  VKCS_PROD_DEPLOY_MODE: manual
   VKCS_STAGE_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
   VKCS_K8S_DEV_INGRESS_PATH: /docs
-
-  # Test satori
-  BUILD_ARG_001: SATORI_API_KEY_2
-  BUILD_ARG_002: SATORI_API_BASE_URL
 
   # Github sync variables
   VKCS_GITHUB_REPO: vk-cs/docs-public
