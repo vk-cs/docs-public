@@ -1,30 +1,30 @@
-Cloud Monitoring предоставляет API для получения значения метрик. Реализована поддержка подмножества языка PromQL для работы с метриками на основе запросов.
+Cloud Monitoring provides API for receiving metrics values. It has support for a subset of the PromQL language for working with query-based metrics.
 
-Можно составлять и выполнять запрос на чтение метрик со следующим синтаксисом:
+You can create and execute a query for reading metrics with the following syntax:
 
-- Название метрики и функция агрегации
+- The name of the metric and the aggregation operation:
 
   - `cpu:Minimum`
 
-- Фильтрация по значению `Label`:
+- Filtering by the `Label` value:
 
-  - `\=` — метки, которые точно соответствуют предоставленной строке;
-  - `!=` — метки, не совпадающие с указанной строкой;
-  - `\=~` — метки, регулярное выражение которых соответствует указанной строке;
-  - `!~` — метки, которые не соответствуют регулярному выражению указанной строке.
+  - `\=` — labels that exactly match the specified string
+  - `!=` — labels that don't match the specified string
+  - `\=~` — labels with regular expressions that match the specified string
+  - `!~` — labels that do not match the regular expression of the specified string
 
-- Группировки:
+- Grouping by:
 
-  - `SUM` — сумма по размерностям;
-  - `MIN` — минимум по размерностям;
-  - `MAX` — максимум по размерностям;
-  - `AVG` — среднее по размерностям;
-  - `STDDEV` — стандартное отклонение совокупности по размерностям;
-  - `STDVAR` — стандартная дисперсия генеральной совокупности по измерениям;
-  - `COUNT` — количество элементов в векторе;
-  - `QUANTILE` — φ-квантиль (`0 ≤ φ ≤ 1`) по измерениям.
+  - `SUM` — sum over dimensions
+  - `MIN` — minimum over dimensions
+  - `MAX` — maximum over dimensions
+  - `AVG` — average over dimensions
+  - `STDDEV` — standard deviation of the population over dimensions
+  - `STDVAR` — standard variance of the general population over dimensions
+  - `COUNT` — number of elements in the vector
+  - `QUANTILE` — calculate φ-quantile (`0 ≤ φ ≤ 1`) over dimensions
 
-Примеры запросов:
+Query examples:
 
 ```promql
 SUM BY(host) (cpu:Minimum{instance="server1", app!="system"})
@@ -33,3 +33,5 @@ SUM BY(host) (cpu:Minimum{instance="server1", app!="system"})
 ```promql
 SUM BY(job) (cpu:Average{host="server1", job!="system"}[12h] offset 24h)
 ```
+
+For the full syntax and functions of the query language, refer to the [official Prometheus documentation](https://prometheus.io/docs/prometheus/latest/querying/basics/).
