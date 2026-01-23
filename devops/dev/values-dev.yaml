@@ -11,7 +11,7 @@ components:
         headlessOnly: true
     probes:
       liveness:
-        path: /docs/api/healthz
+        path: docs/api/healthz
         port: 3000
         initialDelaySeconds: 20
         periodSeconds: 30
@@ -19,7 +19,7 @@ components:
         failureThreshold: 3
         successThreshold: 1
       readiness:
-        path: /docs/api/healthz
+        path: docs/api/healthz
         port: 3000
         initialDelaySeconds: 20
         periodSeconds: 15
@@ -33,4 +33,4 @@ components:
           paths:
           - path: /docs
       tls:
-        - secretName: front-wildcard-tls-secret
+        - secretName: wildcard-tls-secret
