@@ -18,7 +18,9 @@ You can select the required configuration type when [creating a DB instance](../
 
 {cut(Can I change the DB instance configuration file myself?)}
 
-No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../instructions/db-config).
+Direct access to the configuration file is not provided, but some parameters can be [changed](/ru/dbs/dbaas/instructions/db-config "change-lang") through the management console.
+
+If the required parameter is not listed in the management console, please contact [technical support](mailto:support@mcs.mail.ru) to consider making configuration changes. Some parameters are critical to the operation of the database instance and cannot be changed.
 
 {/cut}
 
