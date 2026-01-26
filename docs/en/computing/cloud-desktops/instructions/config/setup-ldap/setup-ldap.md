@@ -15,9 +15,11 @@ Cloud Desktop cannot work without the AD/LDAP user directory service. If your ne
    - **Host**: specify the IP address or FQDN of the external account directory server.
    - **Port**: specify the port number for protocol access (`389` for LDAP).
    - **Base DN**: set the root directory to search for objects in AD or LDAP.
-   - **User DN**: specify the full path to the account in the OpenLDAP database which will be used for synchronization with the account directory.
-   - **Password**: set the password for the AD account specified in **User DN** through which the synchronization will take place.
-   - **Selection field**: set a unique user attribute in the LDAP directory by which the user will be selected from the database (for example, `UID` or `sAMAccountName`).
+   - **User DN for connecting to LDAP directory**: specify the full path to a certain account in the OpenLDAP database. The account will be used for synchronization with the account directory.
+
+     Such an account must be a member of the **Domain Admins** group for Active Directory, or a member of the **Computers Administrators** group for ALD Pro.
+   - **Password**: set the password for the account specified in **User DN for connecting to LDAP directory**.
+   - **Selection field**: set a unique user attribute in the LDAP directory by which the user will be selected from the database (for example, `UID` or `SamAccountName`).
 
 1. CLick the **Save** button.
 
