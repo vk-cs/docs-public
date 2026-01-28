@@ -135,7 +135,7 @@
 
 {/tabs}
 
-## {heading(Просмотр подключения)[id=view_connect]}
+## {heading(Просмотр подключения)[id=view-connect]}
 
 {tabs}
 
