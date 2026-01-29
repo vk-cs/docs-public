@@ -17191,7 +17191,7 @@
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   },
@@ -19711,7 +19711,7 @@
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   },
@@ -25471,7 +25471,7 @@
   },
   {
     "source": "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "destination": "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/en/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   },
@@ -25993,7 +25993,7 @@
   },
   {
     "source": "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   },
@@ -32738,6 +32738,18 @@
   {
     "source": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
     "destination": "/ru/storage/backups/concepts/gfs-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/en/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   }
