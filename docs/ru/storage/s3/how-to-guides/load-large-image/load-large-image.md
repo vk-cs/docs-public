@@ -33,7 +33,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
-1. [Создайте](/ru/computing/iaas/instructions/volumes#create_disk) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/instructions/volumes#mount_disk) его к ВМ.
+1. [Создайте](/ru/computing/iaas/instructions/volumes/volumes-create) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/instructions/volumes/volumes-connect#mount_disk) его к ВМ.
 
 ## 1. Загрузите образ из локальной машины в объектное хранилище
 
@@ -137,11 +137,11 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. [Пометьте](/ru/computing/iaas/instructions/volumes#changing_bootable_attribute) диск с помещенным на него образом ОС как загрузочный.
-1. [Замените основной диск](/ru/computing/iaas/instructions/volumes#zamena_osnovnogo_root_diska) ВМ на диск с помещенным на него образом ОС.
+1. [Пометьте](/ru/computing/iaas/instructions/volumes/volumes-manage#changing_bootable_attribute) диск с помещенным на него образом ОС как загрузочный.
+1. [Замените root-диск](/ru/computing/iaas/instructions/vm/vm-root-replace) ВМ на диск с помещенным на него образом ОС.
 1. [Запустите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
 
-Вы также можете [отключить](/ru/computing/iaas/instructions/volumes#mount_disk) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену основного диска](/ru/computing/iaas/instructions/volumes#zamena_osnovnogo_root_diska) другой ВМ.  
+Вы также можете [отключить](/ru/computing/iaas/instructions/volumes/volumes-connect#mount_disk) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену root-диска](/ru/computing/iaas/instructions/vm/vm-root-replace) другой ВМ.  
 
 ## Удалите неиспользуемые ресурсы
 
@@ -149,4 +149,4 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 - [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ.
 - [Удалите](../../instructions/buckets/manage-bucket#bucket_delete) бакет `uc_bucket`.
-- [Удалите](/ru/computing/iaas/instructions/volumes#delete_disk) диск.
+- [Удалите](/ru/computing/iaas/instructions/volumes/volumes-manage#delete_volume) диск.

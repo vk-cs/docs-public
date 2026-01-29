@@ -19,6 +19,6 @@
 
    {note:info}
    
-   Чтобы увеличить производительность, можно [увеличить размер](../../instructions/volumes#change_disk_size) или [изменить тип](../../instructions/volumes#change_disk_type) диска.
+   Чтобы увеличить производительность, можно [увеличить размер](../../instructions/volumes/volumes-manage#change_disk_size) или [изменить тип](../../instructions/volumes/volumes-manage#change_disk_type) диска.
    
    {/note}

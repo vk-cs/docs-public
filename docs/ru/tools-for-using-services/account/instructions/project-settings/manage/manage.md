@@ -112,7 +112,7 @@
 
 ## Передача объектов между проектами
 
-Вы можете [переносить диски](/ru/computing/iaas/instructions/volumes#move_disk_to_another_project) из проекта в проект. Это позволяет переносить между проектами виртуальные машины.
+Вы можете [переносить диски](/ru/computing/iaas/instructions/volumes/volumes-transfer) из проекта в проект. Это позволяет переносить между проектами виртуальные машины.
 
 Перенос дисков возможен только в рамках одного региона. Если проекты находятся в разных регионах, [выгрузите](/ru/computing/iaas/instructions/images/images-manage#eksport_obraza) локально образ диска и [загрузите](/ru/computing/iaas/instructions/images/images-manage#import_obraza) его в новый проект.
 
