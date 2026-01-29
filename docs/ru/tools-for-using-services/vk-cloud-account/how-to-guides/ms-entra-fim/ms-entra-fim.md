@@ -2,7 +2,11 @@
 
 Для работы в режиме федерации поставщик удостоверений должен поддерживать стандарт SAML 2.0.
 
-Далее будет показана настройка федерации удостоверений c [Microsoft Entra](https://www.microsoft.com/en-in/security/business/microsoft-entra) в качестве поставщика удостоверений.
+Далее будет показана настройка федерации удостоверений для входа в VK Cloud c [Microsoft Entra](https://www.microsoft.com/en-in/security/business/microsoft-entra) в качестве поставщика удостоверений.
+
+{note:info}
+Чтобы настроить вход на портал технической поддержки VK Cloud с помощью федерации удостоверений, ознакомьтесь с [инструкцией](/ru/tools-for-using-services/vk-cloud-account/instructions/support-fim).
+{/note}
 
 ## Подготовительные шаги
 
@@ -10,11 +14,9 @@
 
 ## 1. Создайте федерацию удостоверений в VK Cloud
 
-<info>
-
+{note:info}
 Операции по созданию федерации удостоверений VK Cloud доступны только пользователям с [ролью](../../../account/concepts/rolesandpermissions) владельца проекта.
-
-</info>
+{/note}
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений**.
