@@ -144,7 +144,7 @@
 1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/computing/iaas/instructions/vm/vm-create).
 2. Добавьте драйвер VirtIO HBA в загрузку Windows.
 
-   1. [Создайте диск](/ru/computing/iaas/instructions/volumes#create_disk) минимального размера и [подключите](/ru/computing/iaas/instructions/volumes#mount_disk) его к ВМ.
+   1. [Создайте диск](/ru/computing/iaas/instructions/volumes/volumes-create) минимального размера и [подключите](/ru/computing/iaas/instructions/volumes/volumes-connect#mount_disk) его к ВМ.
    2. [Запустите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) виртуальную машину.
    3. Запустите установщик VirtIO в режиме `repair`.
    4. [Остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) виртуальную машину.

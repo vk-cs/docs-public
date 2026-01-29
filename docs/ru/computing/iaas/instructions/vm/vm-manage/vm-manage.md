@@ -174,7 +174,7 @@
 
 ## {heading(Удаление ВМ)[id=delete_vm]}
 
-На платформе VK Cloud виртуальная машина по умолчанию удаляется вместе с основным диском (root-диск). Удаление дополнительных дисков зависит от настроек соответствующей политики.
+На платформе VK Cloud виртуальная машина по умолчанию удаляется вместе с root-диском. Удаление дополнительных дисков зависит от настроек соответствующей политики.
 
 {note:err}
 
@@ -184,9 +184,9 @@
 
 1. Подготовьте виртуальную машину к удалению.
 
-   - Если нужно сохранить основной диск, клонируйте его или [замените на ненужный](../../volumes#zamena_osnovnogo_root_diska).
+   - Если нужно сохранить root-диск, клонируйте его или [замените на ненужный](../vm-root-replace).
 
-   - [Отключите от ВМ](../../volumes#dismount_disk) дополнительные диски, которые нужно сохранить.
+   - [Отключите от ВМ](../../volumes/volumes-connect#dismount_disk) дополнительные диски, которые нужно сохранить.
 
       Дополнительные диски, для которых в политике удаления установлено свойство `delete_on_termination`: `False`, можно не отключать от ВМ.
 
@@ -572,9 +572,9 @@ systemctl status qemu-guest-agent
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Создайте диск](/ru/computing/iaas/instructions/volumes#create_disk), если он еще не создан. Сохраните его ID.
+1. [Создайте диск](/ru/computing/iaas/instructions/volumes/volumes-create), если он еще не создан. Сохраните его ID.
 
-1. [Подключите диск](/ru/computing/iaas/instructions/volumes#mount_disk) к ВМ.
+1. [Подключите диск](/ru/computing/iaas/instructions/volumes/volumes-connect#mount_disk) к ВМ.
 
 {/tab}
 

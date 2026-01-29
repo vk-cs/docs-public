@@ -4,8 +4,8 @@
 
 ### Решение
 
-1. Убедитесь, что диск [отключен](../../instructions/volumes#dismount_disk) от ВМ и [удалены](../../instructions/volumes#snimki_diska) его снимки. 
+1. Убедитесь, что диск [отключен](../../instructions/volumes/volumes-connect#dismount_disk) от ВМ и [удалены](../../instructions/volumes/volumes-snapshots) его снимки. 
 
-1. Попробуйте [удалить](../../instructions/volumes#delete_disk) диск.
+1. Попробуйте [удалить](../../instructions/volumes/volumes-manage) диск.
 
 1. Если проблема сохраняется, [обратитесь в техническую поддержку](/ru/contacts).
