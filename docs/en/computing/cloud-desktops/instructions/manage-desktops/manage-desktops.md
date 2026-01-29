@@ -42,43 +42,6 @@ The **Start** button is active only if all VMs for the selected tables are disab
 
 {/note}
 
-## Ending the user session
-
-The state of the desktop after the end of the session is determined by the **Actions at the end of session** option, set when [creating](../desktops-pool/add) the pool.
-
-To end the user session, log out of the system:
-
-{tabs}
-
-{tab(Astra Linux)}
-
-1. On the desktop, go to **Пуск**.
-1. Click the **Завершение работы...**.
-1. In the window that opens, click **Выход из сессии**.
-
-{/tab}
-
-{tab(Windows)}
-
-1. On the desktop, go to **Пуск**.
-1. Click the name of the current user and select **Выход**.
-
-{note:info}
-
-You can also use the [logoff](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/logoff) command to end the session.
-
-{/note}
-
-{/tab}
-
-{/tabs}
-
-{note:warn}
-
-If the session has been terminated in another way, the disconnection will occur according to the time-out set when creating the pool.
-
-{/note}
-
 ## Deleting the desktop
 
 This is a group operation: if necessary, you can delete multiple pool desktops by selecting them using checkboxes.
