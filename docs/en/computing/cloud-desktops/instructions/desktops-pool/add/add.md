@@ -7,7 +7,9 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 ## {heading(Preparatory steps)[id=preparatory_steps]}
 
 1. Make sure that your [connection to the service](../../config) is configured.
-1. If you want to use your own image to create desktops, [prepare](/en/computing/cloud-desktops/concepts/desktop-image) and [check](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) it.
+1. If you want to use your own image to create desktops, make sure that is meets [custom image requirements](/en/computing/cloud-desktops/concepts/desktop-image#custom-image-requirements).
+
+   You can prepare an image in any convenient way, for example, by using one of the [how-to guides](/en/computing/iaas/how-to-guides).
 1. If you need desktops with GPU graphics processors, leave a request to connect the required flavors on the VK Cloud website or via technical support:
 
     {include(/en/_includes/_gpu_connect.md)}
@@ -86,7 +88,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
       If you [applied](#preparatory_steps) to include GPU flavors in your project, the corresponding images will also be available for selection.
 
-      If necessary, click **Upload your image** and upload the [previously prepared](/en/computing/cloud-desktops/concepts/desktop-image) and [checked](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
+      If necessary, click **Upload your image** and upload the previously prepared image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
 
       {note:info}
 

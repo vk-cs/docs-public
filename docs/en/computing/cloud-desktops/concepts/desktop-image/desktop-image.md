@@ -2,7 +2,7 @@ A desktop image is an image of a virtual machine on which, in addition to standa
 
 You can prepare a custom desktop image in any available way, for example, using one of the [How-to guides](/en/computing/iaas/how-to-guides) of the Cloud Servers service.
 
-## Requirements for a custom desktop image
+## {heading(Requirements for a custom desktop image)[id=custom-image-requirements]}
 
 The following software must be installed on the image:
 
@@ -31,7 +31,3 @@ For more information, see the guide for [configuring a VM with vGPU](/ru/computi
 ## Recommendations for preparing a custom desktop image
 
 For Astra Linux, it is recommended to install additional software to support the RDP protocol and the AD service. This will speed up the deployment of desktops in a pool.
-
-## What's next?
-
-[Learn](/en/computing/cloud-desktops/how-to-guides/check-desktop-image) how to check your own desktop image for compatibility with the Cloud Desktop service.
