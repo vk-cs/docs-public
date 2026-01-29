@@ -1,9 +1,9 @@
 {
-    "title": "Создание диска",
-      "shortDescription": "Как создать и настроить диск",
-      "metaDescription": "Создание диска в VK Cloud через личный кабинет и OpenStack CLI. Выбор типа, размера и зоны доступности диска.",
-    "sectionTitle": "Создание диска",
-    "icon": "",
-    "weight": 1,
-    "uuid": ""
+  "title": "Создание диска",
+  "shortDescription": "Как создать и настроить диск",
+  "metaDescription": "Создание диска в VK Cloud через личный кабинет и OpenStack CLI. Выбор типа, размера и зоны доступности диска.",
+  "sectionTitle": "Создание диска",
+  "icon": "",
+  "weight": 1,
+  "uuid": "919a2ae9-e566-4cc1-9b84-a502870f63a0"
 }
