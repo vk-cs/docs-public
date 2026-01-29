@@ -65,7 +65,7 @@ Cloud Containers следит за корректной работой клас�
 
 Подробнее в разделе [Доступные версии Kubernetes и политика поддержки версий](../versions).
 
-## Интеграция с Kubernetes API
+## {heading(Интеграция с Kubernetes API)[id=kubernetes-api-integration]}
 
 Все взаимодействие с кластером происходит через [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 
