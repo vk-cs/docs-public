@@ -49,22 +49,42 @@ Use the utility `qemu-img`:
 
 ## 2. Upload the base image to the cloud
 
-Import the image according to [instructions](../../instructions/images/images-manage#importing_an_image).
+Import the image according to the [instructions](../../instructions/images/images-manage#importing_an_image).
 
 ## 3. Create a Packer configuration file
 
-1. Determine the details of the network and the downloaded image:
+1. Run the command to search for networks and copy the ID of the required external network:
 
-    1. [Get](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
-    1. Copy the name of the downloaded image, getting a list of images using the command `openstack image list`.
-    1. Write the received values into variables:
+    ```console
+    openstack network list
+    ```
 
-        ```console
-        export SOURCE_IMAGE=8b64c09b-7141-41ad-XXXX-9f5a8dbbd87e
-        export NETWORK_ID=f19e1e54-bce9-4c25-XXXX-e0f40e2cff14
-        ```
+1. Run the command to search for images and copy the ID of the required image:
 
-1. Create the file `altlinux.pkr.hcl`:
+    ```console
+    openstack image list
+    ```
+
+1. Specify the copied IDs in the following variables:
+
+    ```console
+    export NET_ID=<NETWORK_ID>
+    export SOURCE_IMAGE=<IMAGE_ID>
+    ```
+
+   Here:
+   * `<NETWORK_ID>` — ID of the external network that you got in the previous step.
+   * `<IMAGE_ID>` —ID of the image that you got in the previous step.
+
+1. Select a configuration template for the new image of the VM, for example, `STD3-2-6`.
+
+   {note:info}
+
+   You can see all the available configuration templates in the **Type of virtual machine** list when [creating a VM](https://msk.cloud.vk.com/app/en/services/infra/servers/add) in the VK Cloud management console.
+
+   {/note}
+
+1. Create the `altlinux.pkr.hcl` file. In the `flavor` attribute, specify the configuration template you selected in the previous step. In this example, it is `STD3-2-6`.
 
     {cut(altlinux.pkr.hcl)}
 
@@ -118,7 +138,7 @@ Import the image according to [instructions](../../instructions/images/images-ma
 
       {note:info}
 
-      When creating a VM, specify the availability zone in which the disk should be created. Detailed information about the syntax of the configuration file in the [official Packer documentation](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
+      When creating a VM, specify the availability zone in which the disk must be created. Detailed information about the syntax of the configuration file in the [official Packer documentation](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
 
       {/note}
 
