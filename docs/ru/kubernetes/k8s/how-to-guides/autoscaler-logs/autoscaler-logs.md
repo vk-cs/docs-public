@@ -16,7 +16,7 @@
 
 {tab(Личный кабинет)}
 
-[Просмотрите](/ru/kubernetes/k8s/instructions/manage-resources#prosmotr_informacii_o_resursah_klastera) список подов кластера в личном кабинете VK Cloud.
+[Просмотрите](/ru/kubernetes/k8s/instructions/manage-resources#view-resources) список подов кластера в личном кабинете VK Cloud.
 
 {/tab}
 
