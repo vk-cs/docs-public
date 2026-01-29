@@ -166,8 +166,8 @@ The VM settings available for configuration may vary depending on the operating 
 4. Create a VM:
 
    ```console
-   openstack server create <VM_NAME>
-                           --volume <VOLUME_ID>
+   openstack server create <VM_NAME> \
+                           --volume <VOLUME_ID> \
                            --network <NETWORK_ID> \
                            --flavor <FLAVOR_ID> \
                            --key-name <KEYPAIR_NAME> \

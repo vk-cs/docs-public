@@ -169,8 +169,8 @@
 4. Создайте ВМ:
 
    ```console
-   openstack server create <ИМЯ_ВМ>
-                           --volume <ID_ДИСКА>
+   openstack server create <ИМЯ_ВМ> \
+                           --volume <ID_ДИСКА> \
                            --network <ID_СЕТИ> \
                            --flavor <ID_ШАБЛОНА_КОНФИГУРАЦИИ> \
                            --key-name <ИМЯ_КЛЮЧЕВОЙ_ПАРЫ> \
