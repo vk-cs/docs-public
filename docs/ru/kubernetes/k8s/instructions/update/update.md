@@ -47,4 +47,4 @@
 Чтобы это исправить: 
 
 1. Узнайте новые IP-адреса узлов. Они доступны в [личном кабинете](https://msk.cloud.vk.com/app/) VK Cloud в разделе **Облачные вычисления → Виртуальные машины** в блоке **Инстансы Kubernetes**.
-1. [Добавьте](/ru/computing/iaas/instructions/fs-manage#adding_an_access_rule) эти IP-адреса в правила доступа к файловому хранилищу. 
+1. [Добавьте](/ru/computing/iaas/instructions/fs-manage/fs-access-rules#adding_an_access_rule) эти IP-адреса в правила доступа к файловому хранилищу. 
