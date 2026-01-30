@@ -1307,7 +1307,7 @@
             "enabled": true,
             "value": true
           },
-          "hostHeader": {
+          "host_header": {
             "enabled": true,
             "value": "host.com"
           },
@@ -1646,7 +1646,7 @@
             "enabled": true,
             "value": true
           },
-          "hostHeader": {
+          "host_header": {
             "enabled": true,
             "value": "example.hb.ru-msk.vkcloud-storage.ru"
           },
@@ -2183,7 +2183,7 @@
           },
           "x-nullable": true
         },
-        "hostHeader": {
+        "host_header": {
           "type": "object",
           "description": "Добавление заголовков ответов",
           "required": [
