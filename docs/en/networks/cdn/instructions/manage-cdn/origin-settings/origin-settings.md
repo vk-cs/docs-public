@@ -145,7 +145,7 @@ To change the header:
 
 Specify the parameters in a request body:
 
-- To have the first resource CNAME as the Host header (by default), set `forward_host_header` and `hostHeader` parameters to `"enabled": false`.
+- To have the first resource CNAME as the Host header (by default), set `forward_host_header` and `host_header` parameters to `"enabled": false`.
 - To have the name of the first configured personal domain as the Host header, set the parameters:
 
     ```json
@@ -153,7 +153,7 @@ Specify the parameters in a request body:
         "enabled": true,
         "value": true
     },
-    "hostHeader": {
+    "host_header": {
         "enabled": false
     }
     ```
@@ -165,7 +165,7 @@ Specify the parameters in a request body:
         "enabled": false,
         "value": false
     },
-    "hostHeader": {
+    "host_header": {
         "enabled": true,
         "value": "<header>"
     }
@@ -183,7 +183,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
             "enabled": false,
             "value": false
         },
-        "hostHeader": {
+        "host_header": {
             "enabled": true,
             "value": "content-source.example.org"
         }
