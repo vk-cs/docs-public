@@ -4,7 +4,7 @@
 
 1. Подготовьте предварительный план развития с VK Cloud (pipeline): перечень потенциальных сделок, который включает все текущие и планируемые проекты от первичного контакта до завершения сделки.
 
-    Если вы готовы [зарегистрировать сделку](docs/ru/start/partners/about-partners/#deal_check_in) с первым потенциальным клиентом, вместо плана развития будьте готовы [отправить заявку](/ru/tools-for-using-services/partner-platform/instructions/deals-and-applications/registration) на регистрацию сделки.
+    Если вы готовы [зарегистрировать сделку](/ru/start/partners/about-partners/#deal_check_in) с первым потенциальным клиентом, вместо плана развития будьте готовы [отправить заявку](/ru/tools-for-using-services/partner-platform/instructions/deals-and-applications/registration) на регистрацию сделки.
 
 1. Заполните заявку на [сайте](https://cloud.vk.com/partner), указав данные вашей компании. Менеджер по работе с партнерами VK Cloud свяжется с вами и расскажет о дальнейших шагах.
 1. Обсудите с менеджером подходящую вам [модель сотрудничества](/ru/start/partners/cooperation-models) и предварительный план развития с VK Cloud (pipeline).
