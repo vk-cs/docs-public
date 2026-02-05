@@ -25,20 +25,6 @@
           "iconMobile": "/en/on-premises/assets/dev-platform-mobile-icon.svg"
         },
         {
-          "absoluteLink": "https://cloud.vk.com/docs/on-premises/data-platform",
-          "title": "VK Data Platform",
-          "description": "Universal platform for working with big data and machine learning",
-          "icon": "/en/on-premises/assets/data-platform-icon.svg",
-          "iconMobile": "/en/on-premises/assets/data-platform-mobile-icon.svg"
-        },
-        {
-          "absoluteLink": "https://cloud.vk.com/docs/on-premises/s3",
-          "title": "VK Object Storage",
-          "description": "Fast and reliable S3-compatible object storage",
-          "icon": "/en/on-premises/assets/object-storage-icon.svg",
-          "iconMobile": "/en/on-premises/assets/object-storage-mobile-icon.svg"
-        },
-        {
           "absoluteLink": "https://docs.vktech.team/artifactory",
           "title": "Artifactory",
           "description": "Specialized repository for managing binary artifacts",
