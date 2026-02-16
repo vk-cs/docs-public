@@ -5,10 +5,5 @@
   "sectionTitle": "Managing persistent volumes (PVs)",
   "icon": "",
   "weight": 9,
-  "build": {
-    "for": [
-      "dontbuild"
-    ]
-  },
   "uuid": "151a9c40-89b4-4291-b9b8-de4835c6149a"
 }

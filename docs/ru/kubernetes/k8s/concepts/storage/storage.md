@@ -18,13 +18,11 @@
 - Кластер [поддерживает](#supported_storage_types) хранилища, предоставляемые платформой VK Cloud. Поддержка блочных хранилищ реализована с помощью [Cinder CSI](#csi).
 - В кластере доступны [преднастроенные классы хранения](#storage_classes) (storage class) для блочного хранилища, которые реализуют различные [политики освобождения постоянных томов](#reclaim_policies).
 
-<!--
 ## {heading(Управление постоянными томами (PV))[id=pv-disks]}
 
 В сервисе Cloud Containers можно [управлять](/ru/kubernetes/k8s/instructions/manage-pvs) PV, созданными для кластеров Kubernetes [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations). Такие PV находятся в [сервисном проекте](/ru/kubernetes/k8s/concepts/cluster-generations#service-projects), которым управляет платформа VK Cloud. Чтобы при удалении или перемещении кластера не потерять доступ к данным, расположенным на таких PV, вы можете переместить их в свой проект из сервисного.
 
 Переместить или удалить PV можно, только если он не подключен к группе узлов.
--->
 
 ## {heading(Поддерживаемые типы хранилищ VK Cloud)[id=supported_storage_types]}
 

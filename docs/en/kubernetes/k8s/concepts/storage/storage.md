@@ -18,13 +18,11 @@ Cloud Containers clusters are tightly integrated with the VK Cloud platform to h
 - The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
 - [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](../../reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
 
-<!--
 ## {heading(Managing persistent volumes (PVs))[id=pv-disks]}
 
 In the Cloud Containers service, you can [manage](/ru/kubernetes/k8s/instructions/manage-pvs) PVs created for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) Kubernetes clusters. Such PVs are located in the [service project](/en/kubernetes/k8s/concepts/cluster-generations#service-projects) managed by the VK Cloud platform. If you want to keep access to the data located on these PVs when deleting or moving the cluster, you can move the PVs from the service project to yours.
 
 You can only move or delete a PV if it is not connected to a node group.
--->
 
 ## {heading(Supported VK Cloud storage types)[id=storage_types]}
 
