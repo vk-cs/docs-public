@@ -14,7 +14,7 @@ Once you move a PV to your project, you cannot move it back to the [service](/en
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the required second-generation cluster is located.
-1. Go to **Containers** → **PV disks**.
+1. Go to **Kubernetes clusters** → **PV disks**.
 1. Move a PV to your project using one of the following options: 
 
    - Click ![ ](/ru/assets/more-icon.svg "inline") for the required PV and select the **Move disk to project** option.
@@ -28,7 +28,7 @@ Once you move the PV, it will no longer be available in the **Kubernetes cluster
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the required second-generation cluster is located.
-1. Go to **Containers** → **PV disks**.
+1. Go to **Kubernetes clusters** → **PV disks**.
 1. Delete a PV using one of the following options:
 
    - Click ![ ](/ru/assets/more-icon.svg "inline") for the required PV and select the **Delete disk** option.
