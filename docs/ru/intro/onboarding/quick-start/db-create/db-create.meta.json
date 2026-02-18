@@ -1,9 +1,9 @@
 {
-  "title": "Создайте управляемую базу данных PostgreSQL",
+  "title": "Cloud Databases: создайте первую управляемую базу данных",
   "shortDescription": "Создайте инстанс базы данных PostgreSQL, установите расширение TimescaleDB и подключитесь к созданному инстансу БД",
-  "metaDescription": "Создайте инстанс базы данных PostgreSQL, установите расширение TimescaleDB и подключитесь к созданному инстансу БД",
-  "sectionTitle": "Создайте управляемую базу данных PostgreSQL",
+  "metaDescription": "Познакомьтесь с возможностями сервиса Cloud Databases. Создайте инстанс базы данных PostgreSQL, установите расширение TimescaleDB и подключитесь к созданному инстансу БД.",
+  "sectionTitle": "Cloud Databases: создайте первую управляемую базу данных",
   "icon": "",
-  "weight": 9,
+  "weight": 3,
   "uuid": "d1183c66-d968-4c35-b96f-5aa6de03fa6c"
 }

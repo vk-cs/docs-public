@@ -7,5 +7,6 @@
 1. [Зарегистрируйтесь на платформе](/ru/intro/onboarding/account/create-account).
 1. [Настройте оплату](/ru/intro/onboarding/account/billing-settings).
 1. [Попробуйте сервисы VK Cloud](/ru/intro/onboarding/quick-start).
+1. [Перенесите свои ресурсы в VK Cloud](/ru/intro/migration).
 
 Столкнулись со сложностями? [Обратитесь в техническую поддержку](/ru/intro/onboarding/contact_support).

@@ -1,1 +1,0 @@
-{include(/ru/_includes/_cli-install.md)}

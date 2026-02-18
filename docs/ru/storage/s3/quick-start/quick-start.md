@@ -4,8 +4,8 @@
 
 {note:warn}
 
-Загруженные в бакет объекты [тарифицируются](../tariffication). После прохождения быстрого старта [удалите эти объекты и бакет](#udalite_neispolzuemye_resursy), если они вам больше не нужны.
+Загруженные в бакет объекты [тарифицируются](../tariffication). После прохождения быстрого старта [удалите эти объекты и бакет](#delete_unused), если они вам больше не нужны.
 
 {/note}
 
-{include(/ru/_includes/_create-bucket.md)}
+{include(/ru/_includes/_create-bucket.md)[tags=not_bucket_onboarding]}
