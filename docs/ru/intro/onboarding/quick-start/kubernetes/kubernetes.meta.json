@@ -4,6 +4,7 @@
   "metaDescription": "Начните работу с сервисом Cloud Containers от VK Cloud. Создайте кластер Kubernetes, подключитесь к нему и разверните простые приложения на основе Docker-образов, загруженных в реестр Docker.",
   "sectionTitle": "Создайте кластер Kubernetes и разверните в нем приложение",
   "icon": "",
-  "weight": 10,
+  "hidden": true,
+  "weight": 8,
   "uuid": "ad9d4872-7faa-46fc-9d64-319cc5f1ec30"
 }

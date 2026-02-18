@@ -1,7 +1,0 @@
-- [Перенесите](/ru/intro/migration) отдельные виртуальные машины или инфраструктуру в целом в VK Cloud.
-- Создайте инстанс базы данных с помощью сервиса [Cloud Databases](/ru/dbs/dbaas/quick-start) и [подключите](/ru/dbs/dbaas/connect) к нему ваше приложение.
-- Настройте резервное копирование виртуальных машин и инстансов баз данных с помощью сервиса [Cloud Backup](/ru/storage/backups/instructions).
-- Отслеживайте состояние ваших облачных приложений и оптимизируйте их потребление ресурсов с помощью сервиса [Cloud Monitoring](/ru/monitoring-services/monitoring/quick-start).
-- Создайте кластеры Kubernetes и запускайте в них различные сервисы и приложения с помощью сервиса [Cloud Containers](/ru/kubernetes/k8s/quick-start).
-- [Организуйте](/ru/networks/directconnect/how-to-guides) передачу данных между On-premices инфраструктурой и платформой VK Cloud.
-- Присоединяйтесь к бета-тестированию [Security Gate](https://cloud.vk.com/security-gate/) — платформы для безопасной разработки ПО.

@@ -1,7 +1,7 @@
 {
     "title": "Миграция с использованием Hystax Migration",
-      "shortDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с помощью Hystax Acura Migration",
-      "metaDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием [Hystax Acura](https://hystax.com/documentation/live-migration)",
+    "shortDescription": "Как перенести инфраструктуру клиента в целевой проект VK Cloud с помощью Hystax Acura Migration",
+    "metaDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием [Hystax Acura](https://hystax.com/documentation/live-migration)",
     "sectionTitle": "Миграция с использованием Hystax Migration",
     "icon": "",
     "weight": 1,

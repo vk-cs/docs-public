@@ -5,6 +5,6 @@
   "sectionTitle": "Подключите блочный диск к виртуальной машине",
   "icon": "",
   "hidden": true,
-  "weight": 6,
+  "weight": 10,
   "uuid": "dc5a167d-6ad2-4e3a-a1bc-fabea016e290"
 }

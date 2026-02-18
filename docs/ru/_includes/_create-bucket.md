@@ -1,23 +1,29 @@
-## Подготовительные шаги
+{includetag(not_bucket_onboarding)}
+## {heading(Подготовительные шаги)[id=preparation]}
 
 1. Убедитесь, что [AWS CLI](/ru/tools-for-using-services/cli/aws-cli) установлен.
-
 1. Создайте аккаунт для сервиса VK Object Storage:
+{/includetag}
+
+{includetag(bucket_onboarding_only)}
+## {heading({counter(bucket)}. Создайте аккаунт для сервиса VK Object Storage)[id=create_account]}
+{/includetag}
 
    1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+{includetag(not_bucket_onboarding)}
    1. Выберите проект.
-   1. Перейдите в раздел **Объектное хранилище → Аккаунты**.
+{/includetag}
+   1. Перейдите в раздел **Object Storage → Аккаунты**.
    1. Нажмите кнопку **Добавить аккаунт** или **Добавить**.
    1. Задайте имя аккаунта.
    1. Нажмите кнопку **Создать**.
    1. В открывшемся окне скопируйте и сохраните идентификатор ключа доступа (**Access Key ID**) и секретный ключ (**Secret Key**).
 
       {note:warn}
-
       После закрытия окна восстановить секретный ключ будет невозможно. Если ключ утерян, создайте новый.
-
       {/note}
 
+{includetag(not_bucket_onboarding)}
 1. Настройте AWS CLI на работу с созданным аккаунтом:
 
    1. Выполните команду:
@@ -32,24 +38,30 @@
       1. `AWS Secret Access Key`: введите сохраненное ранее значение **Secret Key**.
       1. `Default region name`: введите `ru-msk`.
       1. `Default output format`: введите `json`.
+{/includetag}
 
-## {counter(bucket)}. Создайте бакет
+## {heading({counter(bucket)}. Создайте бакет)[id=create_bucket]}
 
+{includetag(not_bucket_onboarding)}
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. Выберите проект.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
+{/includetag}
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите кнопку **Создать**.
-1. Задайте имя бакета.
-1. Выберите класс хранения `Hotbox`.
+1. Введите имя бакета, соответствующее [рекомендуемым правилам](/ru/storage/s3/concepts/about#bucket_naming).
+
+   После создания бакета изменить его имя будет невозможно.
+
+1. Выберите [класс хранения](/ru/storage/s3/concepts/about#storage_class). Вы сможете [изменить его](/ru/storage/s3/instructions/change-storage-class) позже.
 1. Нажмите кнопку **Создать бакет**.
 
-## {counter(bucket)}. Добавьте объект с приватными настройками ACL и предоставьте доступ к нему
+{includetag(not_bucket_onboarding)}
+## {heading({counter(bucket)}. Добавьте объект с приватными настройками ACL и предоставьте доступ к нему)[id=create_private_object]}
 
 1. Добавьте объект:
 
    1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
    1. Выберите проект, где находится созданный бакет.
-   1. Перейдите в раздел **Объектное хранилище → Бакеты**.
+   1. Перейдите в раздел **Object Storage → Бакеты**.
    1. Нажмите на имя созданного бакета.
    1. Нажмите кнопку **Добавить файл**.
    1. Убедитесь, что выбрана настройка ACL `Private`.
@@ -89,29 +101,32 @@
       ```
 
       {note:info}
-
       Такая ссылка действует ограниченное время (по умолчанию 1 час). По истечении этого времени нужно будет сгенерировать новую ссылку на объект.
-
       {/note}
+{/includetag}
 
-## {counter(bucket)}. Добавьте объект с публичными настройками ACL и предоставьте доступ к нему
+## {heading({counter(bucket)}. Добавьте объект с публичными настройками ACL и предоставьте доступ к нему)[id=create_public_object]}
 
 1. Добавьте объект:
 
+{includetag(not_bucket_onboarding)}
    1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
    1. Выберите проект, где находится созданный бакет.
-   1. Перейдите в раздел **Объектное хранилище → Бакеты**.
+   1. Перейдите в раздел **Object Storage → Бакеты**.
+{/includetag}
    1. Нажмите на имя созданного бакета.
    1. Нажмите кнопку **Добавить файл**.
    1. Выберите настройку ACL `Public-read`.
-   1. Нажмите кнопку **Выбрать файлы** и выберите файл, который нужно загрузить в бакет.
+   1. Нажмите кнопку **Выбрать файлы** и выберите любой файл для загрузки в бакет.
 
 1. Предоставьте доступ к загруженному объекту по прямой ссылке:
 
+{includetag(not_bucket_onboarding)}
    1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
    1. Выберите проект, где находится созданный бакет.
-   1. Перейдите в раздел **Объектное хранилище → Бакеты**.
+   1. Перейдите в раздел **Object Storage → Бакеты**.
    1. Нажмите на имя созданного бакета.
+{/includetag}
    1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для загруженного ранее объекта и выберите пункт **Доступ к файлу**.
    1. Сохраните сгенерированную прямую ссылку.
 
@@ -121,12 +136,16 @@
       https://<ИМЯ_БАКЕТА>.hb.ru-msk.vkcloud-storage.ru/...
       ```
 
-## {counter(bucket)}. Проверьте наличие доступа к объектам
+## {heading({counter(bucket)}. Проверьте доступ к объекту)[id=access_check]}
 
-1. Перейдите в браузере по сгенерированной временной ссылке. Должен загрузиться объект, [добавленный ранее с приватными настройками ACL](#2_dobavte_obekt_s_privatnymi_nastroykami_acl_i_predostavte_dostup_k_nemu).
-1. Перейдите в браузере по сгенерированной прямой ссылке. Должен загрузиться объект, [добавленный ранее с публичными настройками ACL](#3_dobavte_obekt_s_publichnymi_nastroykami_acl_i_predostavte_dostup_k_nemu).
+{includetag(not_bucket_onboarding)}
+1. Перейдите в браузере по сгенерированной временной ссылке. Должен загрузиться объект, [добавленный ранее с приватными настройками ACL](#create_private_object).
 
-## Удалите неиспользуемые ресурсы
+1. {/includetag}Перейдите в браузере по сгенерированной прямой ссылке. Должен загрузиться объект, [добавленный ранее с публичными настройками ACL](#create_public_object).
 
-1. Загруженные в бакет объекты [тарифицируются](/ru/storage/s3/tariffication). Если они вам больше не нужны, [удалите их](/ru/storage/s3/instructions/objects/manage-object#udalenie_obekta).
-1. Если бакет вам больше не нужен, [удалите его](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
+## {heading(Удалите неиспользуемые ресурсы)[id=delete_unused]}
+
+Бакет и загруженные в него объекты [тарифицируются](/ru/storage/s3/tariffication). Если они вам больше не нужны:
+
+1. [Удалите объекты](/ru/storage/s3/instructions/objects/manage-object#udalenie_obekta).
+1. [Удалите бакет](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete).

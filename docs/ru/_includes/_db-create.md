@@ -1,3 +1,4 @@
+{includetag(not_db_onboarding)}
 ## Подготовительные шаги
 
 1. Убедитесь, что утилита `psql` установлена. Для этого посмотрите версию утилиты:
@@ -20,134 +21,135 @@
 
    {tab(Linux (APT))}
 
-    1. Подключите репозиторий PostgreSQL:
+   1. Подключите репозиторий PostgreSQL:
 
-       ```console
-       sudo apt install curl ca-certificates gnupg
-       curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
-       sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-       sudo apt update
- 
-       ```
+      ```console
+      sudo apt install curl ca-certificates gnupg
+      curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
+      sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+      sudo apt update
+      ```
 
-    1. Установите утилиту `psql`:
+   1. Установите утилиту `psql`:
 
-       ```console
-       sudo apt install -y postgresql-client
-       ```
+      ```console
+      sudo apt install -y postgresql-client
+      ```
 
    {/tab}
 
    {tab(Linux (RPM))}
 
-    1. Подключите репозиторий PostgreSQL:
+   1. Подключите репозиторий PostgreSQL:
 
-        1. Заполните опросник на [странице загрузки PostgreSQL для Linux семейства RedHat](https://www.postgresql.org/download/linux/redhat/):
+      1. Заполните опросник на [странице загрузки PostgreSQL для Linux семейства RedHat](https://www.postgresql.org/download/linux/redhat/):
 
-            1. **Select version**: выберите самую актуальную версию.
-            1. **Select platform**: выберите дистрибутив операционной системы.
-            1. **Select architecture**: выберите архитектуру. Если вы не знаете, какую архитектуру выбрать, выберите `x86_64`.
+         1. **Select version**: выберите самую актуальную версию.
+         1. **Select platform**: выберите дистрибутив операционной системы.
+         1. **Select architecture**: выберите архитектуру. Если вы не знаете, какую архитектуру выбрать, выберите `x86_64`.
 
-           Появится текст установочного скрипта.
+         Появится текст установочного скрипта.
 
-        1. Скопируйте команду из скрипта под комментарием `Install the repository RPM`. Ее вид зависит от выбранного дистрибутива:
+      1. Скопируйте команду из скрипта под комментарием `Install the repository RPM`. Ее вид зависит от выбранного дистрибутива:
 
-           {tabs}
+         {tabs}
 
-           {tab(yum)}
+         {tab(yum)}
 
-           ```console
-           sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
-           ```
+         ```console
+         sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
 
-           {/tab}
+         {/tab}
 
-           {tab(dnf)}
+         {tab(dnf)}
 
-           ```console
-           sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
-           ```
+         ```console
+         sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
 
-           {/tab}
+         {/tab}
 
-           {/tabs}
+         {/tabs}
 
-        1. Выполните скопированную команду.
+      1. Выполните скопированную команду.
 
-        1. Если использовалась команда вида `sudo dnf...`, отключите встроенный модуль PostgreSQL:
+      1. Если использовалась команда вида `sudo dnf...`, отключите встроенный модуль PostgreSQL:
 
-           ```console
-           sudo dnf -qy module disable postgresql
-           ```
+         ```console
+         sudo dnf -qy module disable postgresql
+         ```
 
-    1. Установите утилиту `psql`:
+   1. Установите утилиту `psql`:
 
-       {tabs}
+      {tabs}
 
-       {tab(yum)}
+      {tab(yum)}
 
-       ```console
-       sudo yum install -y postgresql
-       ```
+      ```console
+      sudo yum install -y postgresql
+      ```
 
-       {/tab}
+      {/tab}
 
-       {tab(dnf)}
+      {tab(dnf)}
 
-       ```console
-       sudo dnf install -y postgresql
-       ```
+      ```console
+      sudo dnf install -y postgresql
+      ```
 
-       {/tab}
+      {/tab}
 
-       {/tabs}
+      {/tabs}
 
    {/tab}
 
    {tab(macOS (Homebrew))}
 
-    1. Установите утилиту `psql`:
+   1. Установите утилиту `psql`:
 
-       ```zsh
-       brew install libpq
-       ```
+      ```zsh
+      brew install libpq
+      ```
 
-    1. Создайте символические ссылки на исполняемые файлы `libpq`:
+   1. Создайте символические ссылки на исполняемые файлы `libpq`:
 
-       ```zsh
-       brew link --force libpq
-       ```
+      ```zsh
+      brew link --force libpq
+      ```
 
-       Это необходимо, чтобы запускать утилиту `psql`, не указывая полный путь к ее исполняемому файлу.
+      Это необходимо, чтобы запускать утилиту `psql`, не указывая полный путь к ее исполняемому файлу.
 
    {/tab}
 
    {tab(Windows)}
 
-    1. [Загрузите инсталлятор от EDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) для самой актуальной версии PostgreSQL.
+   1. [Загрузите инсталлятор от EDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) для самой актуальной версии PostgreSQL.
 
-    1. Выполните установку.
+   1. Выполните установку.
 
-       При установке:
-        1. На шаге **Installation Directory** запишите путь, куда будет выполнена установка.
-        1. На шаге **Select Components** снимите выбор со всех компонентов, кроме **Command Line Tools**.
+      При установке:
+      1. На шаге **Installation Directory** запишите путь, куда будет выполнена установка.
+      1. На шаге **Select Components** снимите выбор со всех компонентов, кроме **Command Line Tools**.
 
-    1. Добавьте путь к исполняемым файлам утилит командной строки PostgreSQL в переменную среды окружения `Path`:
+   1. Добавьте путь к исполняемым файлам утилит командной строки PostgreSQL в переменную среды окружения `Path`:
 
-        1. Откройте **Пуск → Этот компьютер → Свойства → Дополнительные параметры системы → Переменные среды**.
-        1. В списке **Системные переменные** измените значение переменной `Path`, добавив к существующему значению путь к директории с исполняемыми файлами утилит командной строки PostgreSQL.
+      1. Откройте **Пуск → Этот компьютер → Свойства → Дополнительные параметры системы → Переменные среды**.
+      1. В списке **Системные переменные** измените значение переменной `Path`, добавив к существующему значению путь к директории с исполняемыми файлами утилит командной строки PostgreSQL.
 
-           Пример пути при установке PostgreSQL с параметрами по умолчанию:
+         Пример пути при установке PostgreSQL с параметрами по умолчанию:
 
-           ```text
-           C:\Program Files\PostgreSQL\15\bin\
-           ```
+         ```text
+         C:\Program Files\PostgreSQL\15\bin\
+         ```
 
    {/tab}
 
    {/tabs}
 
-## {counter(db)}. Создайте инстанс БД PostgreSQL
+{/includetag}
+
+## {heading({counter(db)}. Создайте инстанс БД PostgreSQL)[id=instance_create]}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects), в котором будет размещен инстанс БД.
@@ -212,7 +214,7 @@
 
    Дождитесь завершения создания инстанса БД, этот процесс может занять длительное время.
 
-## {counter(db)}. Получите внешний IP-адрес инстанса БД
+## {heading({counter(db)}. Получите внешний IP-адрес инстанса БД)[id=instance_ip]}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится инстанс БД.
@@ -222,9 +224,9 @@
 
    В параметре **Внешний IP-адрес** будет указан нужный адрес.
 
-## {counter(db)}. (Опционально) Посмотрите логи инстанса БД
+## {heading({counter(db)}. (Опционально) Посмотрите логи инстанса БД)[id=instance_logs]}
 
-1. Подключитесь к инстансу БД по SSH, используя приватный SSH-ключ, полученный при [создании инстанса БД](#1_sozdayte_instans_bd_postgresql):
+1. Подключитесь к инстансу БД по SSH, используя приватный SSH-ключ, полученный при [создании инстанса БД](#instance_create):
 
    {tabs}
 
@@ -278,9 +280,9 @@
 
    {/cut}
 
-   Из приведенного фрагмента вывода можно сделать заключение, что PostgreSQL запущен, работает и готов принимать входящие соединения.
+   По приведенному фрагменту вывода можно заключить, что PostgreSQL запущен, работает и готов принимать входящие соединения.
 
-## {counter(db)}. Установите расширение TimescaleDB
+## {heading({counter(db)}. Установите расширение TimescaleDB)[id=install_timescaledb]}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Выберите проект, где находится инстанс БД.
@@ -293,23 +295,157 @@
 
    Дождитесь завершения установки расширения: оно должно перейти из состояния `Создается` в состояние `Активное`.
 
-## {counter(db)}. Подключитесь к базе данных
+## {heading({counter(db)}. Подключитесь к базе данных)[id=db_connect]}
 
-Подключитесь к базе данных `tsdb1` с помощью утилиты `psql`:
+{includetag(db_onboarding)}
+1. Установите утилиту `psql`:
 
-1. Выполните команду:
+   {tabs}
+   
+   {tab(Linux (APT))}
+   
+   1. Подключите репозиторий PostgreSQL:
+   
+      ```console
+      sudo apt install curl ca-certificates gnupg
+      curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
+      sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+      sudo apt update
+      ```
+   
+   1. Установите утилиту `psql`:
+   
+      ```console
+      sudo apt install -y postgresql-client
+      ```
+   
+   {/tab}
+   
+   {tab(Linux (RPM))}
+   
+   1. Подключите репозиторий PostgreSQL:
+   
+      1. Заполните опросник на [странице загрузки PostgreSQL для Linux семейства RedHat](https://www.postgresql.org/download/linux/redhat/):
+   
+         * **Select version**: выберите самую актуальную версию.
+         * **Select platform**: выберите дистрибутив операционной системы.
+         * **Select architecture**: выберите архитектуру. Если вы не знаете, какую архитектуру выбрать, выберите `x86_64`.
+   
+         Появится текст установочного скрипта.
+   
+      1. Скопируйте команду из скрипта под комментарием `Install the repository RPM`. Ее вид зависит от выбранного дистрибутива:
+   
+         {tabs}
+   
+         {tab(yum)}
+   
+         ```console
+         sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
+   
+         {/tab}
+   
+         {tab(dnf)}
+   
+         ```console
+         sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
+   
+         {/tab}
+   
+         {/tabs}
+   
+      1. Выполните скопированную команду.
+   
+      1. Если использовалась команда вида `sudo dnf...`, отключите встроенный модуль PostgreSQL:
+   
+         ```console
+         sudo dnf -qy module disable postgresql
+         ```
+   
+   1. Установите утилиту `psql`:
+   
+      {tabs}
+   
+      {tab(yum)}
+   
+      ```console
+      sudo yum install -y postgresql
+      ```
+   
+      {/tab}
+   
+      {tab(dnf)}
+   
+      ```console
+      sudo dnf install -y postgresql
+      ```
+   
+      {/tab}
+   
+      {/tabs}
+   
+   {/tab}
+   
+   {tab(macOS (Homebrew))}
+   
+   1. Установите утилиту `psql`:
+   
+      ```zsh
+      brew install libpq
+      ```
+   
+   1. Создайте символические ссылки на исполняемые файлы `libpq`:
+   
+      ```zsh
+      brew link --force libpq
+      ```
+   
+      Это необходимо, чтобы запускать утилиту `psql`, не указывая полный путь к ее исполняемому файлу.
+   
+   {/tab}
+   
+   {tab(Windows)}
+   
+   1. [Загрузите инсталлятор от EDB](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) для самой актуальной версии PostgreSQL.
+   
+   1. Выполните установку.
+   
+      При установке:
+      1. На шаге **Installation Directory** запишите путь, куда будет выполнена установка.
+      1. На шаге **Select Components** снимите выбор со всех компонентов, кроме **Command Line Tools**.
+   
+   1. Добавьте путь к исполняемым файлам утилит командной строки PostgreSQL в переменную среды окружения `Path`:
+   
+      1. Откройте **Пуск → Этот компьютер → Свойства → Дополнительные параметры системы → Переменные среды**.
+      1. В списке **Системные переменные** измените значение переменной `Path`, добавив к существующему значению путь к директории с исполняемыми файлами утилит командной строки PostgreSQL.
+   
+         Пример пути при установке PostgreSQL с параметрами по умолчанию:
+   
+         ```text
+         C:\Program Files\PostgreSQL\15\bin\
+         ```
+   
+   {/tab}
+   
+   {/tabs}
+   {/includetag}
+
+1. Подключитесь к базе данных `tsdb1` с помощью утилиты `psql`:
+
+   1. Выполните команду:
+
+      ```console
+      psql -h <внешний IP-адрес инстанса БД> -d tsdb1 -U tsuser1
+      ```
+
+   1. Введите пароль пользователя `tsuser1`, заданный при [создании инстанса БД](#instance_create).
+
+   При успешном подключении должно отобразиться приглашение:
 
    ```console
-   psql -h <внешний IP-адрес инстанса БД> -d tsdb1 -U tsuser1
+   tsdb1=>
    ```
-
-1. Введите пароль пользователя `tsuser1`, заданный при [создании инстанса БД](#1_sozdayte_instans_bd_postgresql).
-
-При успешном подключении должно отобразиться приглашение:
-
-```console
-tsdb1=>
-```
 
 {note:warn}
 
@@ -317,7 +453,7 @@ tsdb1=>
 
 {/note}
 
-## {counter(db)}. Создайте необходимые таблицы
+## {heading({counter(db)}. Создайте необходимые таблицы)[id=tables_create]}
 
 1. Активируйте расширение TimescaleDB:
 
@@ -393,7 +529,7 @@ tsdb1=>
 
    {/cut}
 
-## {counter(db)}. Наполните таблицы данными
+## {heading({counter(db)}. Наполните таблицы данными)[id=tables_fill]}
 
 {note:info}
 
@@ -467,7 +603,7 @@ tsdb1=>
 
    {/cut}
 
-## {counter(db)}. Выполните тестовые запросы
+## {heading({counter(db)}. Выполните тестовые запросы)[id=db_select]}
 
 {note:info}
 
@@ -541,7 +677,7 @@ tsdb1=>
 
 Вывод результатов запросов, похожих на приведенные, свидетельствует о корректной работе PostgreSQL и расширения TimescaleDB.
 
-## {counter(db)}. (Опционально) Познакомьтесь с данными мониторинга инстанса БД
+## {heading({counter(db)}. (Опционально) Познакомьтесь с данными мониторинга инстанса БД)[id=db_monitoring]}
 
 Для PostgreSQL доступен мониторинг. Познакомьтесь с собранными данными мониторинга:
 
