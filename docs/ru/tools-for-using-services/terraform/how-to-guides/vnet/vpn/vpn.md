@@ -14,16 +14,20 @@
 
 Создайте сеть со следующими объектами:
 
+{tabs}
+
+{tab(Neutron)}
+
 - Ресурсы (resource):
 
-  - `vkcs_networking_network`: сеть, в которой будет создана ВМ. В примере ниже создается сеть с именем `extnet`.
+  - `vkcs_networking_network`: сеть, в которой будет создана ВМ. В примере: `network`.
   - `vkcs_networking_subnet`: подсеть из сети. В примере: `subnet`.
-  - `vkcs_networking_router`: роутер для внешней сети и взаимодействия с внешним миром. В примере: `router`.
+  - `vkcs_networking_router`: роутер соединяющий приватную сеть с внешним миром. В примере: `router`.
   - `vkcs_networking_router_interface`: подключает роутер к внутренней сети.
 
 - Источники данных (data source):
 
-  - `vkcs_networking_network`: внешняя сеть для получения Floating IP (floating IP).
+  - `vkcs_networking_network`: внешняя сеть для получения публичного IP-адреса роутером, а так же выделения Floating IP сущностям приватной сети.
 
 ```hcl
 data "vkcs_networking_network" "extnet" {
@@ -35,7 +39,7 @@ resource "vkcs_networking_network" "network" {
 }
 
 resource "vkcs_networking_subnet" "subnet" {
-  network_id = "${vkcs_networking_network.network.id}"
+  network_id = vkcs_networking_network.network.id
   cidr = "192.168.199.0/24"
 }
 
@@ -45,10 +49,62 @@ resource "vkcs_networking_router" "router" {
 }
 
 resource "vkcs_networking_router_interface" "router_interface" {
-  router_id = "${vkcs_networking_router.router.id}"
-  subnet_id = "${vkcs_networking_subnet.subnet.id}"
+  router_id = vkcs_networking_router.router.id
+  subnet_id = vkcs_networking_subnet.subnet.id
 }
 ```
+
+{/tab}
+
+{tab(Sprut)}
+
+- Ресурсы (resource):
+
+  - `vkcs_networking_network`: сеть, в которой будет создана ВМ. В примере: `network`.
+  - `vkcs_networking_subnet`: подсеть из сети. В примере: `subnet`.
+  - `vkcs_dc_router`: роутер соединяющий приватную сеть с внешним миром. В примере: `router`.
+  - `vkcs_dc_interface`: подключает роутер к внутренней и внешней сети.
+
+- Источники данных (data source):
+
+  - `vkcs_networking_network`: внешняя сеть для получения публичного IP-адреса.
+
+```hcl
+data "vkcs_networking_network" "extnet" {
+  name = "internet"
+}
+
+resource "vkcs_networking_network" "network" {
+  name = "vpnaas_network"
+}
+
+resource "vkcs_networking_subnet" "subnet" {
+  network_id = vkcs_networking_network.network.id
+  cidr = "192.168.199.0/24"
+}
+
+resource "vkcs_dc_router" "router" {
+  name = "router"
+}
+
+resource "vkcs_dc_interface" "interface_1" {
+  name         = "LAN"
+  dc_router_id = vkcs_dc_router.router.id
+  network_id   = vkcs_networking_network.network.id
+  subnet_id    = vkcs_networking_subnet.subnet.id
+  ip_address   = vkcs_networking_subnet.subnet.gateway_ip
+}
+
+resource "vkcs_dc_interface" "interface_2" {
+  name         = "WAN"
+  dc_router_id = vkcs_dc_router.router.id
+  network_id   = data.vkcs_networking_network.extnet.id
+}
+```
+
+{/tab}
+
+{/tabs]
 
 ## Создание VPN-соединения
 
@@ -98,7 +154,7 @@ resource "vkcs_networking_router_interface" "router_interface" {
 
 ```hcl
 resource "vkcs_vpnaas_service" "service" {
-    router_id = "${vkcs_networking_router.router.id}"
+    router_id = vkcs_networking_router.router.id
 }
 
 resource "vkcs_vpnaas_ipsec_policy" "policy_1" {
@@ -115,25 +171,25 @@ resource "vkcs_vpnaas_endpoint_group" "group_1" {
 }
 resource "vkcs_vpnaas_endpoint_group" "group_2" {
 	type = "subnet"
-	endpoints = [ "${vkcs_networking_subnet.subnet.id}" ]
+	endpoints = [ vkcs_networking_subnet.subnet.id ]
 }
 
 resource "vkcs_vpnaas_site_connection" "connection" {
 	name = "connection"
-	ikepolicy_id = "${vkcs_vpnaas_ike_policy.policy_2.id}"
-	ipsecpolicy_id = "${vkcs_vpnaas_ipsec_policy.policy_1.id}"
-	vpnservice_id = "${vkcs_vpnaas_service.service.id}"
+	ikepolicy_id = vkcs_vpnaas_ike_policy.policy_2.id
+	ipsecpolicy_id = vkcs_vpnaas_ipsec_policy.policy_1.id
+	vpnservice_id = vkcs_vpnaas_service.service.id
 	psk = "secret"
 	peer_address = "192.168.10.1"
 	peer_id = "192.168.10.1"
-	local_ep_group_id = "${vkcs_vpnaas_endpoint_group.group_2.id}"
-	peer_ep_group_id = "${vkcs_vpnaas_endpoint_group.group_1.id}"
+	local_ep_group_id = vkcs_vpnaas_endpoint_group.group_2.id
+	peer_ep_group_id = vkcs_vpnaas_endpoint_group.group_1.id
 	dpd {
 		action   = "restart"
 		timeout  = 42
 		interval = 21
 	}
-	depends_on = ["vkcs_networking_router_interface.router_interface"]
+	depends_on = [vkcs_networking_router_interface.router_interface]
 }
 ```
 
