@@ -2,10 +2,10 @@
 
 В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
 
-- 1.33.1
+- 1.34.2
+- 1.33.3
 - 1.32.1
 - 1.31.4
-- 1.30.5
 
 При [создании нового кластера](../../../instructions/create-cluster) выбирайте последнюю доступную версию Kubernetes. По возможности [обновляйте существующие кластеры](../../../instructions/update) до последней доступной версии.
 
@@ -24,6 +24,11 @@
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
 
+|1.34.2
+|27 августа 2025
+|10.02.2026
+|10.11.2026
+
 |1.33.x
 |15 мая 2025
 |20.10.2025
@@ -38,6 +43,16 @@
 |10 декабря 2024
 |17.02.2025
 |17.04.2026
+|===
+
+{cut(Предыдущие версии)}
+
+[cols="1,2,1,1", options="header"]
+|===
+|Версия Kubernetes
+|Официальная дата релиза
+|Kubernetes aaS от VK релиз
+|Kubernetes aaS от VK завершение поддержки
 
 |1.30.x
 |10 сентября 2024
@@ -53,16 +68,7 @@
 | 16 апреля 2024
 | 30.06.2024
 | 30.08.2025
-|===
 
-{cut(Предыдущие версии)}
-
-[cols="1,2,1,1", options="header"]
-|===
-|Версия Kubernetes
-|Официальная дата релиза
-|Kubernetes aaS от VK релиз
-|Kubernetes aaS от VK завершение поддержки
 | 1.27.x  
 | 13 сентября 2023
 | 11.12.2023
@@ -130,10 +136,10 @@
 [cols="2,1,1,1,1", options="header"]
 |===
 |Название
-|1.17.x–1.20.x
-|1.21.4–1.23.х
-|1.24.x–1.26.х
-|1.27.x–1.33.х
+|1.34.х–1.27.x
+|1.26.x–1.24.x
+|1.23.x–1.21.4
+|1.20.x–1.17.x
 
 |Настройки масштабирования групп узлов
 | ![](/ru/assets/check.svg "inline")
@@ -142,10 +148,10 @@
 | ![](/ru/assets/check.svg "inline")
 
 |Инвалидация ключевой пары
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 |Изменение размера диска Prometheus
 | ![](/ru/assets/check.svg "inline")
@@ -172,28 +178,28 @@
 | ![](/ru/assets/check.svg "inline")
 
 |Узлы кластера на AlmaLinux
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
 
 |Интеграция с IAM облака VK Cloud
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |Автоматическое масштабирование master-узлов кластера
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |Поддержка GPU
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 |===
 
 ## {heading(История версий Kubernetes)[id=k8s_versions_history]}
@@ -203,6 +209,10 @@
 |Версия Kubernetes
 |Изменения в Kubernetes
 |Изменения в сервисе Kubernetes aaS
+
+|1.34.2
+|[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
+|![](/ru/assets/no.svg "inline")
 
 |1.33.1
 |[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
@@ -220,6 +230,16 @@
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
 |Добавлена возможность [использовать и управлять GPU](../../../how-to-guides/gpu-operator) в кластерах Kubernetes
 
+|===
+
+{cut(Предыдущие версии)}
+
+[cols="1,1,2", options="header"]
+|===
+|Версия Kubernetes
+|Изменения в Kubernetes
+|Изменения в сервисе Kubernetes aaS
+
 |1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
 |![](/ru/assets/no.svg "inline")
@@ -231,15 +251,6 @@
 |1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
 | ![](/ru/assets/no.svg "inline")
-|===
-
-{cut(Предыдущие версии)}
-
-[cols="1,1,2", options="header"]
-|===
-|Версия Kubernetes
-|Изменения в Kubernetes
-|Изменения в сервисе Kubernetes aaS
 
 |1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)

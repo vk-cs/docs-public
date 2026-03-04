@@ -2,14 +2,14 @@ New versions of Kubernetes aaS from VK Cloud are usually added one month after t
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
-- 1.33.1
+- 1.34.2
+- 1.33.3
 - 1.32.1
 - 1.31.4
-- 1.30.5
 
-When [creating a new cluster](../../../instructions/create-cluster), choose the latest available version of Kubernetes. If possible, [update the existing clusters](../../../instructions/update) to the latest available version. 
+When [creating a new cluster](../../../instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](../../../instructions/update) to the latest available version. 
 
-If the cluster uses an outdated version of Kubernetes, its correct operation is not guaranteed. Technical support will not be able to help you resolve issues if they occur.
+If the cluster uses an outdated Kubernetes version, its correct operation is not guaranteed. Technical support will not be able to help you resolve issues if they occur.
 
 ## {heading(Kubernetes version support)[id=k8s-versions-list]}
 
@@ -19,10 +19,15 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 
 [cols="1,2,1,1", options="header"]
 |===
-|Version of Kubernetes
+|Kubernetes version
 |Official release date
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
+
+|1.34.2
+|August 27, 2025
+|10.02.2026
+|10.11.2026
 
 |1.33.x
 |May 15, 2025
@@ -38,6 +43,16 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |December 10, 2024
 |17.02.2025
 |17.04.2026
+|===
+
+{cut(Previous versions)}
+
+[cols="1,2,1,1", options="header"]
+|===
+|Kubernetes version
+|Official release date
+|VK Kubernetes aaS release date
+|VK Kubernetes aaS end of support date
 
 |1.30.x
 |September 10, 2024
@@ -53,16 +68,6 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 | April 16, 2024
 | 30.06.2024
 | 30.08.2025
-|===
-
-{cut(Previous versions)}
-
-[cols="1,2,1,1", options="header"]
-|===
-|Version of Kubernetes
-|Official release date
-|VK Kubernetes aaS release date
-|VK Kubernetes aaS end of support date
 
 | 1.27.x
 | September 13, 2023
@@ -126,15 +131,15 @@ You can see the changelog in [Kubernetes version history](#k8s_versions_history)
 
 ## {heading(Service feature matrix for Kubernetes)[id=k8s-features-list]}
 
-New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
+New features are added to all Kubernetes versions, unless a feature and version are incompatible.
 
 [cols="2,1,1,1,1", options="header"]
 |===
 |Feature
-|1.17.x–1.20.x
-|1.21.4–1.23.х
-|1.24.x–1.26.х
-|1.27.x–1.33.х
+|1.34.х–1.27.x
+|1.26.x–1.24.x
+|1.23.x–1.21.4
+|1.20.x–1.17.x
 
 |Node group scaling settings
 | ![](/en/assets/check.svg "inline")
@@ -143,18 +148,18 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 | ![](/en/assets/check.svg "inline")
 
 |Key pair invalidation
-| ![](/en/assets/check.svg "inline")
-| ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
-
-|Change the size of the Prometheus disk
-| ![](/en/assets/check.svg "inline")
-| ![](/en/assets/check.svg "inline")
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/check.svg "inline")
 
-|Change the type of Master virtual machine
+|Changing the size of a Prometheus disk
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Changing the type of the master virtual machine
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/check.svg "inline")
@@ -173,28 +178,28 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 | ![](/en/assets/check.svg "inline")
 
 |Cluster nodes on AlmaLinux
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
-| ![](/en/assets/check.svg "inline")
-| ![](/en/assets/check.svg "inline")
-| ![](/en/assets/check.svg "inline")
 
 |Integration with VK Cloud IAM
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
-|Autoscaling of cluster master
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+|Autoscaling of master nodes
 | ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |GPU support
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
 | ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 |===
 
 ## {heading(Kubernetes version history)[id=k8s_versions_history]}
@@ -204,6 +209,10 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |Kubernetes version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
+
+|1.34.2
+|[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
+|![](/en/assets/no.svg "inline")
 
 |1.33.1
 |[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
@@ -215,11 +224,21 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 
 |1.32.1
 |[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
-|![](/ru/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 
 |1.31.4
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
 |Added the ability to [use and manage](../../../how-to-guides/gpu-operator) GPUs in Kubernetes clusters
+
+|===
+
+{cut(Previous versions)}
+
+[cols="1,1,2", options="header"]
+|===
+|Kubernetes version
+|Changes in Kubernetes
+|Changes in Kubernetes aaS service
 
 |1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
@@ -232,15 +251,6 @@ New features are added to all versions of Kubernetes, unless a feature and versi
 |1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
 | ![](/en/assets/no.svg "inline")
-|===
-
-{cut(Previous versions)}
-
-[cols="1,1,2", options="header"]
-|===
-|Kubernetes version
-|Changes in Kubernetes
-|Changes in Kubernetes aaS service
 
 |1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
