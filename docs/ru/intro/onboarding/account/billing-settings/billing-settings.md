@@ -2,7 +2,7 @@
 
 Пройдя все шаги этой инструкции, вы первый раз пополните лицевой счет проекта. 
 
-{include(/ru/_includes/_billing-settings.md)[tags=billing_onboarding]}
+{include(/ru/_includes/_billing-settings.md)[tags=billing_onboarding,notifications]}
 
 ## Что дальше?
 
