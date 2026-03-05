@@ -43,6 +43,7 @@ To make a payment:
       When this option is selected, it is not necessary to enter the card details.
 
    - **Bank card**: for paying with a card that is not linked to the project.
+   - **Payment by invoice for legal entities**: for paying by bank transfer by the generated invoice. Before generating the invoice, you can [add](/en/intro/billing/instructions/corporate#additional_registration_of_legal_entities) or [edit](/en/intro/billing/instructions/corporate#edit_company) your company details.
 
    {note:info}
 

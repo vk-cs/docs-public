@@ -86,7 +86,7 @@ By default, all users work under public offer contracts. On the part of VK Cloud
 
 ### Individual agreement
 
-If a legal entity or a sole proprietor is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../instructions/corporate#conclusion_of_an_individual_contract) with VK Cloud.
+If a legal entity or a sole proprietor is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../instructions/corporate#individual_contract) with VK Cloud.
 
 {/tab}
 
