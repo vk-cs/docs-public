@@ -2,11 +2,17 @@ When connecting to the Docker registry, the following error occurs: `x509: certi
 
 The problem occurs if it is not possible to verify the authenticity of the digital certificate used to [connect to the Docker registry](/en/kubernetes/k8s/connect/docker-registry). For example, if the default connection uses a self-signed certificate created by the system.
 
+{note:info}
+
+When [creating](/en/kubernetes/k8s/instructions/create-cluster) a cluster, you can add addresses of trusted Docker registries to download and run container images without having to verify the authenticity of the digital certificate.
+
+{/note}
+
 ### Solution
 
 1. Add the `insecure-registries` parameter to the Docker configuration file `daemon.json`. In it, specify the address of the Docker registry endpoint.
 
-   Format of the address is as follows: `<DOCKER_REGISTRY_URL>:<DOCKER_REGISTRY_PORT>`.
+   Format of the address is as follows: `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`.
 
    Following as an example of this parameter for the `daemon.json` file:
 

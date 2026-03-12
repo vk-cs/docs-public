@@ -53,6 +53,20 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
       By default, the pods use the `10.100.0.0./16` subnet for communication. If such a subnet already exists in the cluster network, specify a different subnet that is not part of the cluster network to be used by the pods. This is necessary so that the address spaces do not overlap.
 
+   - **Trusted Docker Registry**: add the address of a trusted Docker registry to download and run container images without having to verify the authenticity of the HTTPS connection. This can be useful if the image registry uses a self-signed certificate or a certificate from a private root certificate authority that cannot be validated by the cluster.
+
+     Possible address formats:
+
+     - `<DOCKER_REGISTRY_IP_ADDRESS>`. For example, `172.24.4.3`.
+     - `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`. For example, `172.24.4.3:5000`.
+     - An arbitrary domain. For example, `example.com`.
+
+     The address you add will be set for all nodes of the cluster, including those that you add after it is created. For more details on disabling the validation, refer to the [official Docker documentation](http://docs.docker.com/reference/cli/dockerd/#insecure-registries).
+
+     {note:warn}
+     Do not add addresses of the registries that you are unsure of, as it can reduce the security of your connection.
+     {/note}
+
    - **Assign external IP**: enable this option so that external IP addresses are assigned to the cluster API endpoint. Otherwise, IP addresses will be assigned from the cluster subnet.
 
       By default, the option is enabled, which allows access to the cluster from the Internet.

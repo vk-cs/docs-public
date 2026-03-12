@@ -20,7 +20,7 @@ On the host from which you plan to connect to the registry:
 
    1. Add the `insecure-registries` parameter with the address of the Docker registry endpoint to the Docker `daemon.json` configuration file.
 
-      The address is specified in the format `<URL of Docker registry>:<Docker Registry port>`.
+      The address is specified in the format `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`.
 
       ```json
       {
@@ -73,7 +73,7 @@ On the host from which you plan to connect to the registry:
 1. Sign in into the registry:
 
    ```console
-   docker login <URL of Docker registry> --username <login for Docker registry>
+   docker login <DOCKER_REGISTRY_IP_ADDRESS> --username <DOCKER_REGISTRY_USERNAME>
    ```
 
    Enter the password for the Docker registry.
@@ -101,11 +101,11 @@ In order to deploy workloads in a cluster using images from the Docker registry:
    {tab(Linux (bash) / macOS (zsh))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds \ 
-     --docker-server=<registry IP address>:5000 \
-     --docker-username=<login> \
-     --docker-password=<password> \
-     --namespace=<namespace>
+   kubectl create secret docker-registry k8s-registry-creds \
+     --docker-server=<DOCKER_REGISTRY_IP_ADDRESS>:5000 \
+     --docker-username=<USERNAME> \
+     --docker-password=<PASSWORD> \
+     --namespace=<NAMESPACE>
    ```
 
    {/tab}
@@ -113,11 +113,11 @@ In order to deploy workloads in a cluster using images from the Docker registry:
    {tab(Windows (PowerShell))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds ` 
-     --docker-server=<registry IP address>:5000 `
-     --docker-username=<login> `
-     --docker-password=<password> `
-     --namespace=<namespace>
+   kubectl create secret docker-registry k8s-registry-creds `
+     --docker-server=<DOCKER_REGISTRY_IP_ADDRESS>:5000 \ `
+     --docker-username=<USERNAME> \ `
+     --docker-password=<PASSWORD> \ `
+     --namespace=<NAMESPACE> 
    ```
 
    {/tab}
@@ -130,7 +130,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
 
    - Path to the image from the registry in the `containers.image` parameter.
 
-     The path should be specified in the `<registry IP address>:5000/<image directory>/<image name>:<tag>` format.
+     The path should be specified in the `<DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>` format.
 
    Examples of manifests:
 
@@ -148,7 +148,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
      - name: k8s-registry-creds
      containers:
      - name: my-app
-       image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+       image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
    ```
 
    {/tab}
@@ -167,7 +167,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+           image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
 
    ```
 
@@ -187,7 +187,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+           image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
    ```
 
    {/tab}
@@ -206,7 +206,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+           image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
    ```
 
    {/tab}
@@ -225,7 +225,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+           image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
    ```
 
    {/tab}
@@ -244,7 +244,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+           image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
    ```
 
    {/tab}
@@ -265,7 +265,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
              - name: k8s-registry-creds
              containers:
              - name: my-app
-               image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+               image: <DOCKER_REGISTRY_IP_ADDRESS>:5000/<IMAGE_DIRECTORY>/<IMAGE_NAME>:<TAG>
    ```
 
    {/tab}
