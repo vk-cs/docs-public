@@ -79,9 +79,19 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
       By default, the option is enabled, which allows access to the cluster and the Ingress controller from the Internet.
 
-   - **Trusted Docker Registry**: add Docker Registry addresses to the trusted list to disable HTTPS connection check when connecting to them.
+   - **Trusted Docker Registry**: add the address of a trusted Docker registry to download and run container images without having to verify the authenticity of the HTTPS connection. This can be useful if the image registry uses a self-signed certificate or a certificate from a private root certificate authority that cannot be validated by the cluster. 
+   
+     Possible address formats:
 
-      This can be useful if the Docker registry uses a self-signed SSL or TLS certificate that cannot be validated by the cluster. See the [Docker documentation](https://docs.docker.com/registry/insecure/#deploy-a-plain-http-registry) for more information on disabling the validation (see the description of the `insecure-registries` setting).
+       - `<DOCKER_REGISTRY_IP_ADDRESS>`. For example, `172.24.4.3`.
+       - `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`. For example, `172.24.4.3:5000`.
+       -  An arbitrary domain. For example, `example.com`.
+
+     The address you add will be set for all nodes of the cluster, including those that you add after it is created. For more details on disabling the validation, refer to the [official Docker documentation](http://docs.docker.com/reference/cli/dockerd/#insecure-registries).
+
+      {note:warn}
+      Do not add addresses of the registries that you are unsure of, as it can reduce the security of your connection.
+      {/note}
 
    - **Enable monitoring**: enable this option to install a metrics collection agent in the cluster.
 

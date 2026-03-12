@@ -20,7 +20,7 @@
 
    1. Добавьте в конфигурационный файл Docker `daemon.json` параметр `insecure-registries` с адресом эндпоинта реестра Docker.
 
-      Адрес задается в формате `<URL реестра Docker>:<порт реестра Docker>`.
+      Адрес задается в формате `<IP_АДРЕС_РЕЕСТРА_DOCKER>:<ПОРТ_РЕЕСТРА_DOCKER>`.
 
       ```json
       {
@@ -73,7 +73,7 @@
 1. Войдите в реестр:
 
    ```console
-   docker login <URL реестра Docker> --username <логин для реестра Docker>
+   docker login <IP_АДРЕС_РЕЕСТРА_DOCKER> --username <ЛОГИН_ДЛЯ_РЕЕСТРА_DOCKER>
    ```
 
    Введите пароль для реестра Docker.
@@ -101,11 +101,11 @@
    {tab(Linux (bash) / macOS (zsh))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds \ 
-     --docker-server=<IP-адрес реестра>:5000 \
-     --docker-username=<логин> \
-     --docker-password=<пароль> \
-     --namespace=<пространство имен>
+   kubectl create secret docker-registry k8s-registry-creds \
+     --docker-server=<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000 \
+     --docker-username=<ЛОГИН> \
+     --docker-password=<ПАРОЛЬ> \
+     --namespace=<ПРОСТРАНСТВО_ИМЕН>
    ```
 
    {/tab}
@@ -113,11 +113,11 @@
    {tab(Windows (PowerShell))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds ` 
-     --docker-server=<IP-адрес реестра>:5000 `
-     --docker-username=<логин> `
-     --docker-password=<пароль> `
-     --namespace=<пространство имен>
+   kubectl create secret docker-registry k8s-registry-creds `
+     --docker-server=<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000 `
+     --docker-username=<ЛОГИН> `
+     --docker-password=<ПАРОЛЬ> `
+     --namespace=<ПРОСТРАНСТВО_ИМЕН>
    ```
 
    {/tab}
@@ -130,7 +130,7 @@
 
    - Путь к образу из реестра в параметре `containers.image`.
 
-     Путь задается в формате `<IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>`.
+     Путь задается в формате `<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>`.
 
    Примеры манифестов:
 
@@ -148,7 +148,7 @@
      - name: k8s-registry-creds
      containers:
      - name: my-app
-       image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+       image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    ```
 
    {/tab}
@@ -167,7 +167,7 @@
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+           image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    
    ```
 
@@ -187,7 +187,7 @@
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+           image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    ```
 
    {/tab}
@@ -206,7 +206,7 @@
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+           image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    ```
 
    {/tab}
@@ -225,7 +225,7 @@
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+           image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    ```
 
    {/tab}
@@ -244,7 +244,7 @@
          - name: k8s-registry-creds
          containers:
          - name: my-app
-           image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+           image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    ```
 
    {/tab}
@@ -265,7 +265,7 @@
              - name: k8s-registry-creds
              containers:
              - name: my-app
-               image: <IP-адрес реестра>:5000/<директория с образом>/<имя образа>:<тег>
+               image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
    ```
 
    {/tab}
