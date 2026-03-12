@@ -1,0 +1,8 @@
+{
+  "title": "Ошибка Volume status is in-use при пересоздании пода",
+  "shortDescription": "Что делать, если возникла ошибка Volume status is in-use при повтроном монтировании PVC через Cinder CSI",
+  "metaDescription": "Что делать, если возникла ошибка Volume status is in-use при повтроном монтировании PVC через Cinder CSI",
+  "sectionTitle": "Ошибка Volume status is in-use при пересоздании пода",
+  "icon": "",
+  "weight": 9
+}

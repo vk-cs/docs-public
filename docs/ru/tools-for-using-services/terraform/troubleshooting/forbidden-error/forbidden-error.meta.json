@@ -1,0 +1,8 @@
+{
+  "title": "Ошибка 403 при создании сервера",
+  "shortDescription": "Что делать, если при создании сервера через Terrafom появилась ошибка 403 Working with SDN=NEUTRON is not allowed",
+  "metaDescription": "Что делать, если при создании сервера через Terrafom появилась ошибка 403 Working with SDN=NEUTRON is not allowed",
+  "sectionTitle": "Ошибка 403 при создании сервера",
+  "icon": "",
+  "weight": 1
+}
