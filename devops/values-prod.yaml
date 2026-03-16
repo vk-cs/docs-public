@@ -5,7 +5,7 @@ envSecret:
 
 components:
   - name: common
-    replicas: 1
+    replicas: 2
     ports:
       - port: 3000
         headlessOnly: true
