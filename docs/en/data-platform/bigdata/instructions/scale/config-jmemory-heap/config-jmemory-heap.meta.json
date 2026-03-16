@@ -1,9 +1,0 @@
-{
-    "title": "Configuring Java Memory Heap parameters",
-      "shortDescription": "How to configure Java memory settings for cluster components",
-      "metaDescription": "The optimal parameters of the Java virtual machine are selected automatically when installing and configuring the cluster, depending on the type of virtual machine.",
-    "sectionTitle": "Configuring Java Memory Heap parameters",
-    "weight": 3,
-    "icon": "",
-    "uuid": "70b872db-0eb3-4d98-ba2e-2ce3a288fd43"
-}

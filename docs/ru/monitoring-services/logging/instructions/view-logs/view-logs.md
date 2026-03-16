@@ -57,7 +57,6 @@
     - `default` — идентификатор, который не имеет привязанных к нему сервисов и предназначен для тестирования и отладки.
     - `containers` — Cloud Containers.
     - `databases` — Cloud Databases.
-    - `bigdata` — Cloud Big Data.
     - `vdi` — Cloud Desktop.
     - `mlplatform` — Cloud ML Platform.
 

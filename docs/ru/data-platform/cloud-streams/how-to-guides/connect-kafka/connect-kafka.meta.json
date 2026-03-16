@@ -1,9 +1,0 @@
-{
-    "title": "Подключение к Kafka",
-      "shortDescription": "Инструкция по подключению к UI кластера NiFi",
-      "metaDescription": "Подключение к Kafka",
-    "sectionTitle": "Подключение к Kafka",
-    "icon": "",
-    "weight": 0,
-    "uuid": "5bb8e5de-8489-402d-93d3-f6b663e3a5c6"
-}

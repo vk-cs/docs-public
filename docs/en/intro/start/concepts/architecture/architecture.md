@@ -75,7 +75,6 @@ You can use VK Cloud to deploy virtualization, monitoring, container, and data s
 
   - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters where you can run services and applications. 
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMSs: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB powered by Greenplum.
-  - [Cloud Big Data](/en/data-platform/bigdata) — used for analyzing big data based on Arenadata Hadoop, supports scaling. 
   - [Cloud Spark](/en/ml/spark-to-k8s) — supports distributed batch and stream data processing, machine learning and analytics.
   - [Cloud ML Platform](/en/ml/mlplatform) — supports services for full-cycle ML development.
   - [Cloud Voice](/en/ml/cloud-voice) — provides REST API for speech recognition and synthesis based on machine learning.

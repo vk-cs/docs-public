@@ -87,7 +87,6 @@ Accounts generated for the Cloud Logging service have only the right to record l
 
 * `databases` — the Cloud Databases service
 * `containers` — the Cloud Containers service
-* `bigdata` — the Cloud Big Data service
 * `vdi` — the Cloud Desktop service
 
 If not specified, the `default` value will be assigned.
