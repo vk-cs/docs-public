@@ -202,6 +202,14 @@ The operation of creating and deleting resources can be performed an unlimited n
 
 {/cut}
 
+{cut(Can I restore the VM?)}
+
+You can try to restore the VM, for example, in case of a file system failure, loss of access, or OS bootloader failure.
+
+To restore the VM, contact [technical support](mailto:support@mcs.mail.ru).
+
+{/cut}
+
 ## Disks and images
 
 {cut(How do I increase the disk?)}
