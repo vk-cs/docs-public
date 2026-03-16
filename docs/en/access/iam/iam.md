@@ -1,0 +1,1 @@
+VK Cloud IAM (Identity and Access Management) is an identity and access management service that allows for flexible control of user access rights to the services and resources of the VK Cloud platform. IAM provides secure, convenient, and controlled user access to the platform and ensures that all operations on resources are performed only by users with the necessary permissions.
