@@ -105,7 +105,7 @@
 
 Пользователь с этой ролью может удалять компоненты, которые отвечают за работу биллинга и управление балансом.
 
-Описание компонентов приведено для разрешения {linkto(#billing_modify)[text=billing_modify]}.
+Описание компонентов приведено для роли {linkto(#billing_modify)[text=billing_modify]}.
 
 {cut(Полный список компонентов биллинга)}
 
@@ -133,7 +133,7 @@
 
 Пользователь с этой ролью может просматривать данные компонентов, которые отвечают за работу биллинга и управление балансом.
 
-Описание компонентов приведено для разрешения {linkto(#billing_modify)[text=billing_modify]}.
+Описание компонентов приведено для роли {linkto(#billing_modify)[text=billing_modify]}.
 
 {cut(Полный список компонентов биллинга)}
 
@@ -183,7 +183,7 @@
 
 Пользователь с этой ролью может удалять компоненты сервиса аудита.
 
-Описание компонентов приведено для разрешения {linkto(#audit_modify)[text=audit_modify]}.
+Описание компонентов приведено для роли {linkto(#audit_modify)[text=audit_modify]}.
 
 ### {heading(audit_view)[id=audit_view]}
 
@@ -193,7 +193,7 @@
 
 Пользователь с этой ролью может просматривать данные компонентов аудита.
 
-Описание компонентов приведено для разрешения {linkto(#audit_modify)[text=audit_modify]}.
+Описание компонентов приведено для роли {linkto(#audit_modify)[text=audit_modify]}.
 
 ### {heading(horizon_modify)[id=horizon_modify]}
 
@@ -221,7 +221,7 @@
 
 Пользователь с этой ролью может удалять компоненты, которые отвечают за состав и работу графического интерфейса личного кабинета: все компоненты с префиксом `horizon_*`.
 
-Описание компонентов приведено для разрешения {linkto(#horizon_modify)[text=horizon_modify]}.
+Описание компонентов приведено для роли {linkto(#horizon_modify)[text=horizon_modify]}.
 
 ### {heading(horizon_view)[id=horizon_view]}
 
@@ -231,7 +231,7 @@
 
 Пользователь с этой ролью может просматривать компоненты, которые отвечают за состав и работу веб-интерфейса личного кабинета: все компоненты с префиксом `horizon_*`.
 
-Описание компонентов приведено для разрешения {linkto(#horizon_modify)[text=horizon_modify]}.
+Описание компонентов приведено для роли {linkto(#horizon_modify)[text=horizon_modify]}.
 
 ### {heading(logging_modify)[id=logging_modify]}
 
@@ -272,7 +272,7 @@
 
 Пользователь с этой ролью может удалять компоненты сервиса логирования.
 
-Описание компонентов приведено для разрешения {linkto(#logging_modify)[text=logging_modify]}.
+Описание компонентов приведено для роли {linkto(#logging_modify)[text=logging_modify]}.
 
 {cut(Полный список компонентов логирования)}
 
@@ -289,7 +289,7 @@
 
 Пользователь с этой ролью может просматривать данные компонентов сервиса логирования.
 
-Описание компонентов приведено для разрешения {linkto(#logging_modify)[text=logging_modify]}.
+Описание компонентов приведено для роли {linkto(#logging_modify)[text=logging_modify]}.
 
 {cut(Полный список компонентов логирования)}
 
@@ -345,7 +345,7 @@
 
 Пользователь с этой ролью может удалять данные компонентов мониторинга.
 
-Описание компонентов приведено для разрешения {linkto(#monitoring_modify)[text=monitoring_modify]}.
+Описание компонентов приведено для роли {linkto(#monitoring_modify)[text=monitoring_modify]}.
 
 {cut(Полный список компонентов мониторинга)}
 
@@ -367,7 +367,7 @@
 
 Пользователь с этой ролью может просматривать данные компонентов мониторинга.
 
-Описание компонентов приведено для разрешения {linkto(#monitoring_modify)[text=monitoring_modify]}.
+Описание компонентов приведено для роли {linkto(#monitoring_modify)[text=monitoring_modify]}.
 
 {cut(Полный список компонентов мониторинга)}
 
@@ -413,7 +413,7 @@
 
 Пользователь с этой ролью может удалять компоненты, которые отвечают за работу API-оркестраторов.
 
-Описание компонентов приведено для разрешения {linkto(#orchestration_modify)[text=orchestration_modify]}.
+Описание компонентов приведено для роли {linkto(#orchestration_modify)[text=orchestration_modify]}.
 
 ### {heading(orchestration_view)[id=orchestration_view]}
 
@@ -423,7 +423,7 @@
 
 Пользователь с этой ролью может просматривать данные компонентов, которые отвечают за работу API-оркестраторов.
 
-Описание компонентов приведено для разрешения {linkto(#orchestration_modify)[text=orchestration_modify]}.
+Описание компонентов приведено для роли {linkto(#orchestration_modify)[text=orchestration_modify]}.
 
 ### {heading(organization_access_modify)[id=organization_access_modify]}
 
@@ -487,7 +487,7 @@
 
 Пользователь с этой ролью может удалять компоненты, которые отвечают за управление организацией.
 
-Описание компонентов приведено для разрешения {linkto(/ru/access/iam/concepts/roles-reference/#organization_access_modify)[text=organization_access_modify]}.
+Описание компонентов приведено для роли {linkto(/ru/access/iam/concepts/roles-reference/#organization_access_modify)[text=organization_access_modify]}.
 
 {cut(Полный список компонентов организации)}
 
@@ -520,7 +520,7 @@
 
 Пользователь с этой ролью может просматривать данные компонентов, которые отвечают за управление организацией.
 
-Описание компонентов приведено для разрешения {linkto(/ru/access/iam/concepts/roles-reference/#organization_access_modify)[text=organization_access_modify]}.
+Описание компонентов приведено для роли {linkto(/ru/access/iam/concepts/roles-reference/#organization_access_modify)[text=organization_access_modify]}.
 
 {cut(Полный список компонентов организации)}
 
