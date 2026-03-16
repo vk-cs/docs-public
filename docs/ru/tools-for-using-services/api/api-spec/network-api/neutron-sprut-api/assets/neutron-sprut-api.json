@@ -7698,7 +7698,7 @@
           }
         },
         "example": {
-          "name": "Example Anicast IP",
+          "name": "Example Anycast IP",
           "anycastip": {
             "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
             "associations": {
