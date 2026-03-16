@@ -12,7 +12,6 @@
    - `default` — значение по умолчанию.
    - `databases` — логирование ресурсов сервиса Cloud Databases.
    - `containers` — логирование ресурсов сервиса Cloud Containers.
-   - `bigdata` — логирование ресурсов сервиса Cloud Big Data.
    - `vdi` — логирование ресурсов сервиса Cloud Desktop.
 
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.

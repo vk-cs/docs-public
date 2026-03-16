@@ -1,1 +1,0 @@
-Basic operations for a big data cluster, as well as information on managing its components.

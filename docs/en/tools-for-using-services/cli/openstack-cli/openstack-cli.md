@@ -126,7 +126,6 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
    - `neutron` — network API;
    - `nova` — cloud computing (VM) and extensions API;
    - `octavia` — load balancer API;
-   - `sahara` — Cloud Big Data processing API.
 
 2. Install the Shared File System API client (the Manila CLI) using the command:
 

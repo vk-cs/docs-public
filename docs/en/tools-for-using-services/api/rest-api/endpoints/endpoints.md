@@ -47,12 +47,6 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Octavia           | https://public.infra.mail.ru:9876 | Managing [load balancers](/en/networks/balancing/instructions)                                               |
 | Publicdns         | https://mcs.mail.ru/public-dns    | Managing [public DNS zones](/en/networks/dns/publicdns)                                                      |
 
-### Cloud Big Data
-
-| Endpoint          | Address                                      | Purpose                                                                    |
-|-------------------|----------------------------------------------|----------------------------------------------------------------------------|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id> | Managing [Cloud Big Data](/en/data-platform/bigdata/instructions) clusters |
-
 ### Cloud Databases
 
 | Endpoint          | Address                                                   | Purpose                             |

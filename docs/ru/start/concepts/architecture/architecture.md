@@ -75,7 +75,6 @@ VK Cloud предлагает следующие модели развертыв
 
   - [Cloud Containers](/ru/kubernetes/k8s) — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
   - [Cloud Databases](/ru/dbs/dbaas) — предоставляет масштабируемые СУБД: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB на базе Greenplum.
-  - [Cloud Big Data](/ru/data-platform/bigdata) — применяется для анализа больших данных на базе Arenadata Hadoop, поддерживает масштабирование.
   - [Cloud Spark](/ru/ml/spark-to-k8s) — обладает распределенной пакетной и потоковой обработки данных, работы с Machine Learning и аналитикой.
   - [Cloud ML Platform](/ru/ml/mlplatform) — поддерживает сервисы для полного цикла ML-разработки.
   - [Cloud Voice](/ru/ml/cloud-voice) — предоставляет REST API для распознавания и синтеза речи на базе машинного обучения.

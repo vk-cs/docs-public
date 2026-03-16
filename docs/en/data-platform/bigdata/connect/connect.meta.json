@@ -1,9 +1,0 @@
-{
-    "title": "Connecting to cluster nodes",
-      "shortDescription": "Connection to cluster nodes, its individual components via SSH and web interface",
-      "metaDescription": "VK Cloud: connecting to Cloud Big Data cluster nodes, its individual components via SSH and web interface",
-    "sectionTitle": "Connecting to cluster nodes",
-    "icon": "",
-    "weight": 4,
-    "uuid": "d4800688-e762-41e3-9150-33d763ddc529"
-}

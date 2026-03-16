@@ -1,9 +1,0 @@
-{
-    "title": "Installing components in a cluster",
-      "shortDescription": "Installing new components in the cluster via the ADCM UI",
-      "metaDescription": "Existing clusters can be expanded with new components",
-    "sectionTitle": "Installing components in a cluster",
-    "icon": "",
-    "weight": 2,
-    "uuid": "83229542-621a-4c5d-ad04-17b820ff8db8"
-}

@@ -1,1 +1,0 @@
-This section contains information about the architecture of the service, as well as a list of available components that can be deployed in big data clusters.

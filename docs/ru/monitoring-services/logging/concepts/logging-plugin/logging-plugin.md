@@ -87,7 +87,6 @@
 
 * `databases` — сервис Cloud Databases.
 * `containers` — сервис Cloud Containers.
-* `bigdata` — сервис Cloud Big Data.
 * `vdi` — сервис Cloud Desktop.
 
 Если не указан, будет присвоено значение `default`.

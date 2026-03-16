@@ -56,7 +56,6 @@ Examples of search expressions:
     - `default` — an identifier that has no services associated with it and is intended for testing and debugging.
     - `containers` — Cloud Containers.
     - `databases` — Cloud Databases.
-    - `bigdata` — Cloud Big Data.
     - `vdi` — Cloud Desktop.
     - `mlplatform` — Cloud ML Platform.
 

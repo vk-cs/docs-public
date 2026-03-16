@@ -47,12 +47,6 @@
 | Octavia           | https://public.infra.mail.ru:9876                   | Управление [балансировщиками нагрузки](/ru/networks/balancing/instructions/manage-lb) |
 | Publicdns         | https://mcs.mail.ru/public-dns                      | Управление публичными [DNS-зонами](/ru/networks/dns/instructions/publicdns) |
 
-### Cloud Big Data
-
-| Эндпоинт                            | Адрес                   | Назначение |
-|-------------------------------------|-------------------------|-----------------|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Управление кластерами [Cloud Big Data](/ru/tools-for-using-services/api/api-spec/bigdata-api) |
-
 ### Cloud Databases
 
 | Эндпоинт                            | Адрес                   | Назначение |
