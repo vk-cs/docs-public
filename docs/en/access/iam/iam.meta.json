@@ -1,0 +1,8 @@
+{
+  "title": "IAM",
+  "shortDescription": "Identity and Access Management — a service for managing identity and access to VK Cloud resources",
+  "metaDescription": "Access and role management: how to configure user access to VK Cloud resources and grant them the necessary roles, rights, and permissions",
+  "sectionTitle": "IAM",
+  "weight": 1,
+  "uuid": ""
+}
