@@ -39,7 +39,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 1. To see detailed information about the network, run the command:
 
    ```console
-   openstack network show <network ID>
+   openstack network show <NETWORK_ID>
    ```
 
 1. To see a list of all subnets and their identifiers, run the command:
@@ -51,13 +51,13 @@ In addition to the cloud network, you can create subnets. By default, one networ
 1. To see a list of all subnets belonging to a particular network and their IDs, run the command:
 
    ```console
-   openstack subnet list --network <network ID>
+   openstack subnet list --network <NETWORK_ID>
    ```
 
 1. To see detailed information about a subnet, execute the command:
 
    ```console
-   openstack subnet show <subnet ID>
+   openstack subnet show <SUBNET_ID>
    ```
 
 {/tab}
@@ -73,6 +73,14 @@ In addition to the cloud network, you can create subnets. By default, one networ
 1. In management console, go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
 1. Set the network name.
+1. Select SDN: `Sprut` (default) or `Neutron`. The choice is available for projects where both SDN types are enabled.
+
+    {note:info}
+   
+    SDN Neutron in VK Cloud is being deprecated and cannot be enabled for new projects. Also, SDN Neutron is not used in the [availability zone](/en/intro/start/concepts/architecture#az) `PA2`.
+   
+    {/note}
+
 1. (Optional) Enable the **Internet access** option to access the VM in the network from the Internet. Internet access is required for VPN, SNAT.
 1. (Optional) Enable the **Access to VK Cloud services** option to connect [Shadow port](../../concepts/ips-and-inet#shadow_port) to the network. This option allows you to locate Kubernetes clusters in private networks without internet access. This option is available if the Shadow port is added to the project and internet access is disabled for the network.
 
@@ -81,7 +89,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
    To connect the Shadow port to your project, contact [technical support](mailto:support@mcs.mail.ru).
 
    {/note}
-   
+
 1. Select the [router](../../concepts/router) from the list. If the **Internet access** option is enabled, only routers connected to the [external network](../../concepts/net-types#external_net) will be listed.
 1. Specify the [zone](../../../dns/private-dns) for private DNS.
 1. By default, the subnet is already created, but you can add more. If you need to add subnets later, skip this step.
@@ -98,7 +106,7 @@ Once a network is created, it will appear in the list of networks.
 1. Run the command:
 
    ```console
-   openstack network create <network name>
+   openstack network create <NETWORK_NAME>
    ```
 
 {/tab}
@@ -140,9 +148,9 @@ Once a network is created, it will appear in the list of networks.
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack network set <network ID> \
-     --name <new network name> \
-     --dns-domain <new DNS domain>
+   openstack network set <NETWORK_ID> \
+     --name <NEW_NETWORK_NAME> \
+     --dns-domain <NEW_DNS_DOMAIN>
    ```
 
    {/tab}
@@ -150,9 +158,9 @@ Once a network is created, it will appear in the list of networks.
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack network set <network ID> `
-     --name <new network name> `
-     --dns-domain <new DNS domain>
+   openstack network set <NETWORK_ID> `
+     --name <NEW_NETWORK_NAME> `
+     --dns-domain <NEW_DNS_DOMAIN>
    ```
 
    {/tab}
@@ -188,7 +196,7 @@ All the network subnets and ports will be deleted along with the network.
 1. Run the command:
 
    ```console
-   openstack network delete <network ID>
+   openstack network delete <NETWORK_ID>
    ```
 
 {/tab}
@@ -235,11 +243,11 @@ All the network subnets and ports will be deleted along with the network.
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack subnet create <name> \
-     --subnet-range <subnet address> \
-     --network <network ID> \
-     --dns-nameserver <DNS server address> \
-     --gateway <gateway address>
+   openstack subnet create <SUBNET_NAME> \
+     --subnet-range <SUBNET_ADDRESS> \
+     --network <NETWORK_ID> \
+     --dns-nameserver <DNS_SERVER_ADDRESS> \
+     --gateway <GATEWAY_ADDRESS>
    ```
 
    {/tab}
@@ -247,11 +255,11 @@ All the network subnets and ports will be deleted along with the network.
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack subnet create <name> `
-     --subnet-range <subnet address> `
-     --network <network ID> `
-     --dns-nameserver <DNS server address> `
-     --gateway <gateway address>
+   openstack subnet create <SUBNET_NAME> `
+     --subnet-range <SUBNET_ADDRESS> `
+     --network <NETWORK_ID> `
+     --dns-nameserver <DNS_SERVER_ADDRESS> `
+     --gateway <GATEWAY_ADDRESS>
    ```
 
    {/tab}
@@ -294,7 +302,7 @@ All the network subnets and ports will be deleted along with the network.
       openstack subnet unset --help
       ```
 
-      Below are just the basic arguments of the commands.
+      Below is an example of editing subnet by changing DHCP pool, DNS server and static route.
 
    1. Run the command:
 
@@ -303,10 +311,10 @@ All the network subnets and ports will be deleted along with the network.
       {tab(Linux/macOS (bash, zsh))}
             
       ```console
-      openstack subnet <set or unset> <subnet ID> \
-        --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> \
-        --dns-nameserver <DNS server address> \
-        --host-route destination=<route destination network address>,gateway=<route gateway address>
+      openstack subnet <SET_OR_UNSET> <SUBNET_ID> \
+        --allocation-pool start=<INITIAL_IP_ADDRESS_FOR_DHCP>,end=<END_IP_ADDRESS_FOR_DHCP> \
+        --dns-nameserver <DNS_SERVER_ADDRESS> \
+        --host-route destination=<ROUTE_DESTINATION_NETWORK_ADDRESS>,gateway=<ROUTE_GATEWAY_ADDRESS>
       ```
 
       {/tab}
@@ -314,15 +322,25 @@ All the network subnets and ports will be deleted along with the network.
       {tab(Windows (PowerShell))}
       
       ```console
-      openstack subnet <set or unset> <subnet ID> `
-        --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> `
-        --dns-nameserver < DNS server address> `
-        --host-route destination=<destination network address>,gateway=<route gateway address>
+      openstack subnet <SET_OR_UNSET> <SUBNET_ID> `
+        --allocation-pool start=<INITIAL_IP_ADDRESS_FOR_DHCP>,end=<END_IP_ADDRESS_FOR_DHCP> `
+        --dns-nameserver <DNS_SERVER_ADDRESS> `
+        --host-route destination=<ROUTE_DESTINATION_NETWORK_ADDRESS>,gateway=<ROUTE_GATEWAY_ADDRESS>
       ```
 
       {/tab}
 
       {/tabs}
+
+      Here:
+
+      - `<SET_OR_UNSET>` — command to apply (`set`) or cancel (`unset`) settings.
+      - `<SUBNET_ID>` — ID of the subnet that you want to edit.
+      - `<INITIAL_IP_ADDRESS_FOR_DHCP>` — initial IP address of a DHCP pool.
+      - `<END_IP_ADDRESS_FOR_DHCP>` — end IP address of a DHCP pool.
+      - `<DNS_SERVER_ADDRESS>` — address of a DNS server used by subnet.
+      - `<ROUTE_DESTINATION_NETWORK_ADDRESS>` — destination network address in a static route.
+      - `<ROUTE_GATEWAY_ADDRESS>` — gateway address in a static route.
 
 {/tab}
 
@@ -357,7 +375,7 @@ Once a subnet is deleted, it cannot be restored.
 1. Run the command:
 
    ```console
-   openstack subnet delete <subnet ID>
+   openstack subnet delete <SUBNET_ID>
    ```
 
 {/tab}
