@@ -594,7 +594,7 @@ Even if the quota for the total number of subnets in the project has been [incre
 | ![](/en/assets/no.svg "inline")
 
 | Number of Anycast IP addresses
-| **—**
+| ![](/en/assets/no.svg "inline")
 | `anycastip`
 | 5 pcs.
 | 50 pcs.
