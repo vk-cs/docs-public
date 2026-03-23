@@ -47,6 +47,10 @@ Floating IP addresses are used for:
 
 - Flexible network reconfiguration — in environments with frequently changing requirements, floating IP addresses allow you to quickly redistribute resources without the need to change IP addressing and associated settings.
 
+The number of floating IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#networks_subnets_and_ip_addresses_f2e7d7e5).
+
+The maximum number of floating IP addresses not attached to virtual machines is 1.
+
 ## {heading(Anycast IP address)[id=anycast-ip]}
 
 {note:warn}
@@ -97,7 +101,9 @@ An anycast IP address can be bound to the following IP addresses:
 
 Up to 8 IP addresses can be bound to a single anycast IP address, and all IP addresses must be of the same type.
 
-The number of anycast IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#nets).
+The number of anycast IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#other_parameters_2e315f40).
+
+The maximum number of anycast IP addresses not attached to virtual machines is 1.
 
 ## Public IP address pool of the internet external network
 
