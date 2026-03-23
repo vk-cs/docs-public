@@ -438,12 +438,6 @@ There are no discounts on licensing.
 
 {/cut}
 
-{cut(Can I use my license?)}
-
-Yes, learn more about [using your own licenses](/en/computing/vm-licenses/ms-lic#migrate_own_licenses).
-
-{/cut}
-
 {cut(Can I buy a license on an indefinite basis?)}
 
 VK Cloud provides license rentals on a monthly basis. The purchase of a license for permanent use, both on the VK Cloud platform and outside it, is not possible.
