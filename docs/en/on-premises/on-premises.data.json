@@ -25,8 +25,8 @@
           "iconMobile": "/en/on-premises/assets/dev-platform-mobile-icon.svg"
         },
         {
-          "absoluteLink": "https://docs.vktech.team/artifactory",
-          "title": "Artifactory",
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/registry",
+          "title": "VK Registry",
           "description": "Specialized repository for managing binary artifacts",
           "icon": "/en/on-premises/assets/artifactory-icon.svg",
           "iconMobile": "/en/on-premises/assets/artifactory-mobile-icon.svg"
