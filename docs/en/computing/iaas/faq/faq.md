@@ -166,12 +166,6 @@ Yes, you can. This process is accompanied by a reboot of the virtual machine.
 
 {/cut}
 
-{cut(Is it possible to place a VM and a disk in different data centers to increase fault tolerance?)}
-
-It is highly not recommended to place a virtual machine and disks to it in different data centers, as this may affect the stability and performance of the VM as a whole. When creating a VM, place the disk and VM in the same availability zone.
-
-{/cut}
-
 {cut(Why do write-offs continue, even though the VM is stopped?)}
 
 If the VM is stopped, then write-offs continue for the following services:
