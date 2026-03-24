@@ -6,8 +6,8 @@
 
 {include(/en/_includes/_open-cdn.md)}
 
-1. Go to the **General settings** tab
-1. Select the option in the **Source interaction protocol** parameter:
+1. Go to the **General settings** tab.
+1. In the **Setting up access and protocol** box select the option in the **Source interaction protocol** parameter:
 
     {include(/en/_includes/_cdn_origin.md)[tags=http]}
 
@@ -55,7 +55,8 @@ To change an origin:
 
 {include(/en/_includes/_open-cdn.md)}
 
-1. Go to the **General settings** tab
+1. Go to the **General settings** tab.
+1. Expand the **Configuration of sources and domains** box.
 1. Select a group from the **Source group** list.
 
     If there is no group you need in the list:
@@ -130,7 +131,8 @@ To change the header:
 
 {include(/en/_includes/_open-cdn.md)}
 
-1. Go to the **General settings** tab
+1. Go to the **General settings** tab.
+1. Expand the **Configuration of sources and domains** box.
 1. In the **Changing the Host header** parameter, select whether to change the value of the Host HTTP header when requesting from origins or not.
 
     {include(/en/_includes/_cdn_origin.md)[tags=host]}
@@ -219,7 +221,8 @@ To enable origin shielding:
 
 {include(/en/_includes/_open-cdn.md)}
 
-1. Go to the **General settings** tab
+1. Go to the **General settings** tab.
+1. Expand the **Configuration of sources and domains** box.
 1. Enable the **Activate origin shielding** option.
 1. Read the warning and confirm the enabling.
 1. Select the data center, located closer to your origin server.
