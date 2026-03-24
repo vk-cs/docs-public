@@ -155,9 +155,11 @@ VK Cloud предоставляет [техническую поддержку](
 |`PA2`
 |«Пахра»
 
-|Казахстан
+.2+|Казахстан
 |`QAZ`
-|[QazCloud](https://qazcloud.kz)
+.2+.^|[QazCloud](https://qazcloud.kz)
+
+|`KTP`
 
 |===
 

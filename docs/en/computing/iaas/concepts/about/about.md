@@ -229,7 +229,7 @@ There are resources for which there are no availability zones, such as VK Object
 
 {note:info}
 
-A network established in a QAZ availability zone cannot be interconnected by standard methods with networks from other availability zones because the QAZ zone is in a different [region](../../../../tools-for-using-services/account/concepts/regions). In this case, network connectivity can be provided by [VPN](/en/networks/vnet/how-to-guides/vpn-tunnel) means.
+A network established in a QAZ and KTP availability zone cannot be interconnected by standard methods with networks from other availability zones because they are in a different [region](../../../../tools-for-using-services/account/concepts/regions). In this case, network connectivity can be provided by [VPN](/en/networks/vnet/how-to-guides/vpn-tunnel) means.
 
 {/note}
 
