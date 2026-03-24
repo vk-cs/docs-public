@@ -403,169 +403,169 @@
   },
   {
     "source": "/en/base/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-info",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-info/airflow-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-info/bigdata-architecture",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-info/dataflow-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-info/hadoop-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-info/spark-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-integrate",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-integrate/bigdata-api",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-integrate/components-versions",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-integrate/dmart",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-integrate/esb",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-limits",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-limits/bigdata-perf",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-scale",
-    "destination": "/en/data-platform/bigdata/instructions/scale",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-scale/add-bigdata-component",
-    "destination": "/en/data-platform/bigdata/instructions/add-component",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-scale/bigdata-replica-factor",
-    "destination": "/en/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-scale/config-jmemory-heap",
-    "destination": "/en/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-scale/scale-bigdata-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-start/create-bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-start/delete-bigdata",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/bigdata-start/scale-bigdata",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/launch-bigdata",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/launch-bigdata/access-bigdata-web",
-    "destination": "/en/data-platform/bigdata/connect",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/launch-bigdata/airflow-launch",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/launch-bigdata/dataflow-launch",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/bigdata/launch-bigdata/spark-launch",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -577,163 +577,163 @@
   },
   {
     "source": "/ru/base/bigdata/bigdata-api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-info",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-info/airflow-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-info/bigdata-architecture",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-info/dataflow-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-info/hadoop-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-info/spark-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-integrate",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-integrate/components-versions",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-integrate/dmart",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-integrate/esb",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-limits",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-limits/bigdata-perf",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-scale",
-    "destination": "/ru/data-platform/bigdata/instructions/scale",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-scale/add-bigdata-component",
-    "destination": "/ru/data-platform/bigdata/instructions/add-component",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-scale/bigdata-replica-factor",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-scale/config-jmemory-heap",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-scale/scale-bigdata-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-start/create-bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-start/delete-bigdata",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/bigdata-start/scale-bigdata",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/launch-bigdata",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/launch-bigdata/access-bigdata-web",
-    "destination": "/ru/data-platform/bigdata/connect",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/launch-bigdata/airflow-launch",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/launch-bigdata/dataflow-launch",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/bigdata/launch-bigdata/spark-launch",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -3397,7 +3397,7 @@
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -8317,229 +8317,229 @@
   },
   {
     "source": "/en/bigdata/arenadata/start/configure",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/concepts",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/start/about",
-    "destination": "/en/data-platform/cloud-streams/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/concepts/types",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/manage",
-    "destination": "/en/data-platform/cloud-streams/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/manage/info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/manage/instances",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/manage/logs",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/manage/state",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/start/create",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/start/delete",
-    "destination": "/en/data-platform/cloud-streams/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/start",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/scenarios",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/scenarios/connect-kafka",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/scenarios/connect-nifi",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/scenarios/kafka",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/scenarios/kafka-nifi",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/ads/scenarios/nifi",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/start/configure",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/concepts",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/start/about",
-    "destination": "/ru/data-platform/cloud-streams/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/concepts/types",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/manage",
-    "destination": "/ru/data-platform/cloud-streams/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/manage/info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/manage/instances",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/manage/logs",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/manage/state",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/start/create",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/start/delete",
-    "destination": "/ru/data-platform/cloud-streams/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/start",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/scenarios",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/scenarios/connect-kafka",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/scenarios/connect-nifi",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/scenarios/kafka",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/scenarios/kafka-nifi",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/ads/scenarios/nifi",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -8827,13 +8827,13 @@
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-start/scale-bigdata",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-start/scale-bigdata",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -9997,73 +9997,73 @@
   },
   {
     "source": "/en/bigdata/cloud-streams/quick-start",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions/create",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/use-cases/kafka",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/use-cases/kafka-nifi",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/use-cases/nifi",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/concepts/types",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/quick-start",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions/create",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/use-cases/kafka",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/use-cases/kafka-nifi",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/use-cases/nifi",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/concepts/types",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -12529,433 +12529,433 @@
   },
   {
     "source": "/en/bigdata/arenadata/integration",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-info",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-info/bigdata-architecture",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/concepts/architecture",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-limits/bigdata-perf",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-limits",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/start/about",
-    "destination": "/en/data-platform/bigdata/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-integrate/components-versions",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-integrate/esb",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-info/airflow-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-info/dataflow-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-info/hadoop-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-info/spark-info",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/concepts/enterprise",
-    "destination": "/en/data-platform/bigdata/concepts/licensing",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/launch-bigdata/access-bigdata-web",
-    "destination": "/en/data-platform/bigdata/connect",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/launch-bigdata",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-integrate/bigdata-api",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-integrate/dmart",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-integrate",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-scale/add-bigdata-component",
-    "destination": "/en/data-platform/bigdata/instructions/add-component",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-start/create-bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/start/create",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/launch-bigdata/airflow-launch",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/launch-bigdata/dataflow-launch",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/launch-bigdata/spark-launch",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-start/delete-bigdata",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/start/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-scale",
-    "destination": "/en/data-platform/bigdata/instructions/scale",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-scale/bigdata-replica-factor",
-    "destination": "/en/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-scale/config-jmemory-heap",
-    "destination": "/en/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-scale/scale-bigdata-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-scale/scale-bigdata-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/bigdata-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/arenadata/start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-info",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-info/bigdata-architecture",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/concepts/architecture",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-limits/bigdata-perf",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-limits",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/start/about",
-    "destination": "/ru/data-platform/bigdata/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-integrate/components-versions",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-integrate/esb",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-info/airflow-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-info/dataflow-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-info/hadoop-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-info/spark-info",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/concepts/enterprise",
-    "destination": "/ru/data-platform/bigdata/concepts/licensing",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/launch-bigdata/access-bigdata-web",
-    "destination": "/ru/data-platform/bigdata/connect",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/launch-bigdata",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-integrate/dmart",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/integration",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-integrate",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-scale/add-bigdata-component",
-    "destination": "/ru/data-platform/bigdata/instructions/add-component",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-start/create-bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/start/create",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/launch-bigdata/airflow-launch",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/launch-bigdata/dataflow-launch",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/launch-bigdata/spark-launch",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-start/delete-bigdata",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/start/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-scale",
-    "destination": "/ru/data-platform/bigdata/instructions/scale",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-scale/bigdata-replica-factor",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-scale/config-jmemory-heap",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-scale/scale-bigdata-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-scale/scale-bigdata-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/bigdata-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/arenadata/start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -13207,61 +13207,61 @@
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/create",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/create",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/create",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/create",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/create",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/create",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/create",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/create",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/create",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/create",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -15523,343 +15523,343 @@
   },
   {
     "source": "/en/bigdata/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/concepts",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/concepts",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/concepts/about",
-    "destination": "/en/data-platform/cloud-streams/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions",
-    "destination": "/en/data-platform/cloud-streams/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/instructions/delete",
-    "destination": "/en/data-platform/cloud-streams/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/use-cases",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/use-cases/connect-kafka",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/cloud-streams/use-cases/connect-nifi",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/about",
-    "destination": "/en/data-platform/bigdata/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/concepts/licensing",
-    "destination": "/en/data-platform/bigdata/concepts/licensing",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/add-component",
-    "destination": "/en/data-platform/bigdata/instructions/add-component",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/scale",
-    "destination": "/en/data-platform/bigdata/instructions/scale",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/scale/change-replica-factor",
-    "destination": "/en/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/scale/config-jmemory-heap",
-    "destination": "/en/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/instructions/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/connect",
-    "destination": "/en/data-platform/bigdata/connect",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/bigdata/hortonworks/tariffication",
-    "destination": "/en/data-platform/bigdata/tariffication",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -18091,331 +18091,331 @@
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/quick-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/quick-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/about",
-    "destination": "/ru/data-platform/bigdata/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/concepts/licensing",
-    "destination": "/ru/data-platform/bigdata/concepts/licensing",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/add-component",
-    "destination": "/ru/data-platform/bigdata/instructions/add-component",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/scale",
-    "destination": "/ru/data-platform/bigdata/instructions/scale",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/scale/change-replica-factor",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/scale/config-jmemory-heap",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/instructions/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/connect",
-    "destination": "/ru/data-platform/bigdata/connect",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/hortonworks/tariffication",
-    "destination": "/ru/data-platform/bigdata/tariffication",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/concepts",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/concepts",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/concepts/about",
-    "destination": "/ru/data-platform/cloud-streams/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions",
-    "destination": "/ru/data-platform/cloud-streams/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/instructions/delete",
-    "destination": "/ru/data-platform/cloud-streams/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/use-cases",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/use-cases/connect-kafka",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata/cloud-streams/use-cases/connect-nifi",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -19795,7 +19795,7 @@
   },
   {
     "source": "/ru/additionals/api/bigdata-api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -20239,55 +20239,55 @@
   },
   {
     "source": "/en/data-processing/cloud-streams/instructions",
-    "destination": "/en/data-platform/cloud-streams/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/instructions/delete",
-    "destination": "/en/data-platform/cloud-streams/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/use-cases",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/use-cases/connect-kafka",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/use-cases/connect-nifi",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -20329,235 +20329,235 @@
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/about",
-    "destination": "/en/data-platform/bigdata/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/concepts/licensing",
-    "destination": "/en/data-platform/bigdata/concepts/licensing",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/add-component",
-    "destination": "/en/data-platform/bigdata/instructions/add-component",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/scale",
-    "destination": "/en/data-platform/bigdata/instructions/scale",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/scale/change-replica-factor",
-    "destination": "/en/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/scale/config-jmemory-heap",
-    "destination": "/en/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/instructions/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/connect",
-    "destination": "/en/data-platform/bigdata/connect",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/hortonworks/tariffication",
-    "destination": "/en/data-platform/bigdata/tariffication",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -21313,277 +21313,277 @@
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/quick-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/quick-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/about",
-    "destination": "/ru/data-platform/bigdata/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/concepts/licensing",
-    "destination": "/ru/data-platform/bigdata/concepts/licensing",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/add-component",
-    "destination": "/ru/data-platform/bigdata/instructions/add-component",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/scale",
-    "destination": "/ru/data-platform/bigdata/instructions/scale",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/scale/scale-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/scale/change-replica-factor",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/scale/config-jmemory-heap",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/instructions/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/connect",
-    "destination": "/ru/data-platform/bigdata/connect",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/hortonworks/tariffication",
-    "destination": "/ru/data-platform/bigdata/tariffication",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/instructions",
-    "destination": "/ru/data-platform/cloud-streams/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/instructions/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/instructions/delete",
-    "destination": "/ru/data-platform/cloud-streams/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/use-cases",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/use-cases/connect-kafka",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/use-cases/connect-nifi",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -21817,7 +21817,7 @@
   },
   {
     "source": "/ru/vendors-products/marketplace/initial-configuration/1c-digilabs",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -28921,331 +28921,331 @@
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata",
-    "destination": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/quick-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/quick-start",
-    "destination": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts",
-    "destination": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/about",
-    "destination": "/ru/data-platform/bigdata/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/components",
-    "destination": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/concepts/licensing",
-    "destination": "/ru/data-platform/bigdata/concepts/licensing",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management",
-    "destination": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/add-component",
-    "destination": "/ru/data-platform/bigdata/instructions/add-component",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/scale",
-    "destination": "/ru/data-platform/bigdata/instructions/scale",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/scale/scale-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/scale/scale-cluster",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/scale/change-replica-factor",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/scale/config-jmemory-heap",
-    "destination": "/ru/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/service-management/delete",
-    "destination": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/connect",
-    "destination": "/ru/data-platform/bigdata/connect",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/bigdata/tariffication",
-    "destination": "/ru/data-platform/bigdata/tariffication",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams",
-    "destination": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/concepts",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/concepts",
-    "destination": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/concepts/about",
-    "destination": "/ru/data-platform/cloud-streams/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/service-management",
-    "destination": "/ru/data-platform/cloud-streams/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/service-management/delete",
-    "destination": "/ru/data-platform/cloud-streams/instructions/delete",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/how-to-guides",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/how-to-guides/connect-kafka",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/cloud-streams/how-to-guides/connect-nifi",
-    "destination": "/ru/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -31555,109 +31555,109 @@
   },
   {
     "source": "/en/data-processing/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams",
-    "destination": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/concepts",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/concepts",
-    "destination": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/concepts/about",
-    "destination": "/en/data-platform/cloud-streams/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/service-management",
-    "destination": "/en/data-platform/cloud-streams/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/service-management/cluster-info",
-    "destination": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/service-management/delete",
-    "destination": "/en/data-platform/cloud-streams/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/how-to-guides",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/how-to-guides/connect-kafka",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/cloud-streams/how-to-guides/connect-nifi",
-    "destination": "/en/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -31711,235 +31711,235 @@
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata",
-    "destination": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/quick-start",
-    "destination": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts",
-    "destination": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/about",
-    "destination": "/en/data-platform/bigdata/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/components",
-    "destination": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/concepts/licensing",
-    "destination": "/en/data-platform/bigdata/concepts/licensing",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management",
-    "destination": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/add-component",
-    "destination": "/en/data-platform/bigdata/instructions/add-component",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/scale",
-    "destination": "/en/data-platform/bigdata/instructions/scale",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/scale/scale-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/scale/scale-cluster",
-    "destination": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/scale/change-replica-factor",
-    "destination": "/en/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/scale/config-jmemory-heap",
-    "destination": "/en/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/service-management/delete",
-    "destination": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/connect",
-    "destination": "/en/data-platform/bigdata/connect",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/bigdata/tariffication",
-    "destination": "/en/data-platform/bigdata/tariffication",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -32750,6 +32750,702 @@
   {
     "source": "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
     "destination": "/en/computing/cloud-desktops",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/iaas/troubleshooting/vm-rescue-mode",
+    "destination": "/ru/computing/iaas/troubleshooting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/quick-start",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/about",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/components",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/concepts/licensing",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/add-component",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/scale",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/instructions/delete",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/connect",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/bigdata/tariffication",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/concepts/about",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/instructions",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/instructions/delete",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/how-to-guides",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/iaas/troubleshooting/vm-rescue-mode",
+    "destination": "/en/computing/iaas/troubleshooting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/concepts/about",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/instructions",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/instructions/cluster-info",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/instructions/delete",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/how-to-guides",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/how-to-guides/connect-kafka",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/cloud-streams/how-to-guides/connect-nifi",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/quick-start",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/about",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/components",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/concepts/licensing",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/add-component",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/scale",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/scale/scale-cluster",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/scale/change-replica-factor",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/scale/config-jmemory-heap",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/instructions/delete",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/connect",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/bigdata/tariffication",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   }

@@ -4,5 +4,6 @@
   "metaDescription": "Что делать, если возникает ошибка Port is still in use при привязке порта",
   "sectionTitle": "Ошибка при привязке порта",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "88a24399-f12d-4d18-b1ff-26eb5c161604"
 }

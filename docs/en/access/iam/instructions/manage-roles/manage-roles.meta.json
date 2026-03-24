@@ -1,9 +1,9 @@
 {
-    "title": "Configuring access rights",
-    "shortDescription": "How to set up a role for accessing VK Cloud resources",
-    "metaDescription": "Configuring a role: how to set up a role for accessing VK Cloud resources by granting specific permissions. The ability to extend or restrict permissions of a specific base role.",
-    "sectionTitle": "Configuring access rights",
-    "icon": "",
-    "weight": 0,
-    "uuid": ""
+  "title": "Configuring access rights",
+  "shortDescription": "How to set up a role for accessing VK Cloud resources",
+  "metaDescription": "Configuring a role: how to set up a role for accessing VK Cloud resources by granting specific permissions. The ability to extend or restrict permissions of a specific base role.",
+  "sectionTitle": "Configuring access rights",
+  "icon": "",
+  "weight": 0,
+  "uuid": "a928f0c4-bcb2-4c32-8140-e0528b6a79c5"
 }

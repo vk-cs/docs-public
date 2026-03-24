@@ -4,5 +4,6 @@
   "metaDescription": "Что делать, если возникла ошибка Volume status is in-use при повтроном монтировании PVC через Cinder CSI",
   "sectionTitle": "Ошибка Volume status is in-use при пересоздании пода",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "uuid": "2f20f768-a892-493c-a23a-7e24dfdd0567"
 }

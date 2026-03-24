@@ -4,5 +4,6 @@
   "metaDescription": "Что делать, если не добавляется Floating IP-адрес из конкретной подсети",
   "sectionTitle": "Ограничена выдача Floating IP-адресов в конкретной подсети",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "uuid": "00ff4f0e-825c-4826-b40a-147f3d71fc85"
 }

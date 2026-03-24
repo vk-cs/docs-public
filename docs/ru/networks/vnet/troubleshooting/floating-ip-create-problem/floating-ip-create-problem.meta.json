@@ -4,5 +4,6 @@
   "metaDescription": "Что делать, если при добавлении Floating IP-адреса возникает ошибка",
   "sectionTitle": "Не удается добавить Floating IP-адрес",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "908183ca-7947-4b9f-85c4-04a2bfcb1b7a"
 }

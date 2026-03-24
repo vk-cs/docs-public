@@ -4,5 +4,6 @@
   "metaDescription": "Что делать, если при создании сервера через Terrafom появилась ошибка 403 Working with SDN=NEUTRON is not allowed",
   "sectionTitle": "Ошибка 403 при создании сервера",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "12f00889-ee12-46b2-adba-426a33a990b5"
 }
