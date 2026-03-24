@@ -150,12 +150,6 @@ After creating a disk, you can change its size, type, and availability zone. The
 
 Multiple disks can be attached to a VM, but at least one of them must be bootable and contain the installed operating system.
 
-{note:info}
-
-If the VM and disk are located in different availability zones, the disk access speed may be reduced.
-
-{/note}
-
 ### Disks types
 
 The VK Cloud platform supports various types of disks:
