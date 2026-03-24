@@ -182,12 +182,6 @@ Fluent Bit в комбинации со [специальными фильтра
 
 ### {heading(GPU Operator)[id=gpu_operator]}
 
-{note:info}
-
-Этот аддон доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
-
-{/note}
-
 {tabs}
 
 {tab(Описание)}

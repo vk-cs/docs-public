@@ -1,6 +1,6 @@
 ## Basic Roles
 
-Basic roles allow users to perform actions across all Yandex Cloud services. These roles, except for the `mcs_owner` role, are used for [configuring access rights](en/access/iam/instenctions/manage-roles) in combination with [permissions](en/access/iam/concepts/permissions-reference).
+Basic roles allow users to perform actions across all Yandex Cloud services. These roles, except for the `mcs_owner` role, are used for [configuring access rights](/en/access/iam/instenctions/manage-roles) in combination with [permissions](/en/access/iam/concepts/permissions-reference).
 
 ### mcs_owner
 

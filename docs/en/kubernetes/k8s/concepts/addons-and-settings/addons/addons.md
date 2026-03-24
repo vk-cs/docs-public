@@ -183,12 +183,6 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 ### {heading(GPU Operator)[id=gpu_operator]}
 
-{note:info}
-
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-
-{/note}
-
 {tabs}
 
 {tab(Description)}
