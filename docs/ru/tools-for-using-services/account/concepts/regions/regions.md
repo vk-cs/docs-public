@@ -32,6 +32,8 @@
 
 | Казахстан
 | `QAZ`
+
+`KTP`
 | https://vkcloud.kz
 
 https://kz.cloud.vk.com

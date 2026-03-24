@@ -12,6 +12,6 @@ VK Cloud распределяет по [поддерживаемым зонам 
 
 {note:info}
 
-Сеть, созданную в зоне доступности QAZ, невозможно объединить стандартными способами с сетями из других зон доступности, так как зона QAZ находится в другом [регионе](/ru/tools-for-using-services/account/concepts/regions). В этом случае сетевую связность можно обеспечить средствами [VPN](/ru/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel).
+Сеть, созданную в зонах доступности QAZ и KTP, невозможно объединить стандартными способами с сетями из других зон доступности, так как они находятся в другом [регионе](/ru/tools-for-using-services/account/concepts/regions). В этом случае сетевую связность можно обеспечить средствами [VPN](/ru/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel).
 
 {/note}
