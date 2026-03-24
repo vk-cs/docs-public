@@ -8,10 +8,10 @@
    - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
    - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
 
-   Examples:
-
-   - `example.org`
-   - `images.example.com`
+       {cut(Examples)}
+       - `example.org`
+       - `images.example.com`
+       {/cut}
 
 1. Specify the type of origin in the **Source type** parameter. It can be active or reserve.
 
@@ -58,10 +58,10 @@
    - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
    - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
 
-   Examples:
-
-   - `example.org`
-   - `images.example.com`
+       {cut(Examples)}
+       - `example.org`
+       - `images.example.com`
+       {/cut}
 
 {/includetag}
 
@@ -74,10 +74,10 @@ In the **Content Source** parameter, specify the URL that CDN servers will acces
 - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
 - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
 
-Examples:
-
-- `203.0.113.222:8080`
-- `images.example.com`
+    {cut(Examples)}
+    - `203.0.113.222:8080`
+    - `images.example.com`
+    {/cut}
 
 {/includetag}
 
@@ -105,7 +105,7 @@ Select the option:
 {tab(Do not change)}
 The domain name or IP address of the first origin from the origin group will be used as the header value.
 
-Example:
+{cut(Example)}
 
 Let there is a group of two origins configured:
 
@@ -113,13 +113,14 @@ Let there is a group of two origins configured:
 - `images.example.com`
 
 Then the `Host: 203.0.113.222:8080` header is used, when CDN servers request any of these origins.
+{/cut}
 
 {/tab}
 {tab(Custom)}
 
 The specified domain name or IP address value will be used as the header.
 
-Example:
+{cut(Example)}
 
 Let there is a group of two origins configured:
 
@@ -129,12 +130,13 @@ Let there is a group of two origins configured:
 Also let the parameter has the `content-source.example.org` value.
 
 Then the `Host: content-source.example.org` header is used, when CDN servers request any of these origins.
+{/cut}
 
 {/tab}
 {tab((By default) Forward)}
 The name of the first configured personal domain will be used as the header.
 
-Example:
+{cut(Example)}
 
 Let there is a group of two origins configured:
 
@@ -147,6 +149,7 @@ Also let two personal domains are configured for CDN:
 - `cdn.example.org`
 
 Then the `Host: cdn.contoso.com` header is used, when CDN servers request any of these origins.
+{/cut}
 
 {/tab}
 {/tabs}

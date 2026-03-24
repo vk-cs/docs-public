@@ -1,81 +1,88 @@
 You can create a CDN resource in two ways:
 
-- [Through the CDN service interface](#creating_resource_via_cdn_service_interface). Use this option if you need to specify third-party [content origins](../../concepts/about) or configure SSL certificates manually.
+- [Through the CDN service interface](#creating_resource_via_cdn_service_interface). Use this option if you need to specify third-party [content origins](../../concepts/origin-groups) or configure SSL certificates manually.
 
 - [Through the bucket interface](#creating_resource_via_bucket_interface) in the VK Object Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
 
-## Creating resource via CDN service interface
+## Creating resource via CDN interface
 
 {tabs}
-{tab(M)}
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)[tags=resources]}
 
 1. Click **Create resource**.
-1. Enable the option **Access to content by end users** to manage availability of the CDN resource:
+1. In the **Setting up access and protocol** box:
+    1. Enable the option **Access to content by end users** to make the created CDN resource availabile.
 
-   - (By default) If the option is disabled, the CDN resource goes into `Suspended` state after creation. Content will not be [delivered to users](../../concepts/about).
-   - If the option is enabled, the CDN resource goes into `Active` state after creation. Сontent will be delivered to users.
+        If the option is disabled, the CDN resource goes into `Suspended` state after creation. Content will not be delivered to users. You can [enable or disable](../manage-cdn/enable-cdn) access to content after creating the CDN resource as well.
 
-   You can [enable or disable](../manage-cdn/enable-cdn) access to content after creating the CDN resource as well.
-
-1. Set up the interaction of the CDN resource with origins:
-
-   - **Source interaction protocol**: select the protocol that [CDN servers](../../concepts/about) will use to request content from the origins:
+    1. Set up interaction of the CDN resource with origins. Select the protocol that [CDN servers](../../concepts/about) will use to request content from the origins:
 
        {include(/en/_includes/_cdn_origin.md)[tags=http]}
+1. Expand the **Configuration of sources and domains** and set up content origins:
+    
+    1. Via the **Content request** option select the type of origins that CDN servers will request content from:
 
-   - **Content request**: select the type of origins that CDN servers will request content from:
+        {tabs}
+        {tab(From one origin)}
 
-     {tabs}
-     {tab((By default) From one origin)}
+        {include(/en/_includes/_cdn_origin.md)[tags=content_source]}
 
-     {include(/en/_includes/_cdn_origin.md)[tags=content_source]}
+        An origin group with a single origin will be automatically created after the CDN resource is set up.
 
-     An origin group with a single origin will be automatically created after the CDN resource is set up.
+        {/tab}
+        {tab(From group of origins)}
 
-     {/tab}
-     {tab(From group of origin)}
+        Select an origin group from the drop-down list.
 
-     Select an origin group from the drop-down list.
+        If the required group is not in the list, click **Add source group** and add [new origin group](../manage-origin-groups).
 
-     If the required group is not in the list, click **Add source group** and add [new origin group](../manage-origin-groups).
+        {/tab}
+        {/tabs}
 
-     {/tab}
-     {/tabs}
+    1. In the **Personal domain** field, specify the personal domain that will be used for the CDN. When users request this domain, content will be delivered using the CDN. Use the Fully Qualified Domain Name (FQDN). Do not add a root domain name: you can use `cdn.example.com`, but not `cdn.example.com.`.
 
-1. In the **Personal domain** field, specify the personal domain that will be used for the CDN. When users request this domain, content will be delivered using the CDN. Use the Fully Qualified Domain Name (FQDN). Do not add a root domain name: you can use `cdn.example.com`, but not `cdn.example.com.`.
+    1. (Optional) Click ![plus-icon](/en/assets/plus-icon.svg "inline") **Add domain** to specify additional personal domains.
 
-1. (Optional) Click ![plus-icon](/en/assets/plus-icon.svg "inline") **Add domain** to specify additional personal domains.
+    1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to remove the domain you no longer need.
 
-1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to remove the domain you no longer need.
+       {note:warn}
 
-   {note:warn}
+       You cannot change personal domains after creating a CDN resource.
 
-   You cannot change personal domains after creating a CDN resource.
+       {/note}
 
-   {/note}
+    1. Save the original domain name that needs to be set in the CNAME record for the specified domains.
 
-1. Save the original domain name that needs to be set in the CNAME record for the specified domains.
+    1. Select whether to [change the Host HTTP header](/en/networks/cdn/instructions/manage-cdn/origin-settings#changing_host_header) value when accessing the previously configured origins.
 
-1. Specify the **SSL-certificate** parameter. SSL will be used to access the previously configured personal domains via HTTPS:
+        CDN servers specify the mandatory [Host](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host) header in HTTP when request content from origins. This header allows you to address the appropriate virtual host on the origins.
 
-   - **Do not use**: the certificate is not used, personal domains are only accessible via HTTP.
-   - (By default) **Let's Encrypt**: [Let's Encrypt](https://letsencrypt.org) certificate is used. The certificate will be created after the CDN resource is created. It needs available origin servers and the DNS changes related to CNAME records for personal domains. This typically takes up to 30 minutes.
+       {include(/en/_includes/_cdn_origin.md)[tags=host]}
+
+1. Expand the **Encryption settings** box and specify the **SSL-certificate** parameter. SSL will be used to access the previously configured personal domains via HTTPS:
+
+   {tabs}
+   
+   {tab(Do not use)}
+
+   The certificate is not used, personal domains are only accessible via HTTP.
+   {/tab}
+   {tab(Let's Encrypt)}
+   [Let's Encrypt](https://letsencrypt.org) certificate is used. The certificate will be created after the CDN resource is created. It needs available origin servers and the DNS changes related to CNAME records for personal domains. This typically takes up to 30 minutes.
 
    {note:warn}
 
    The option needs the **Access to content by end users** option to be enabled.
 
    {/note}
+   {/tab}
+   {tab(User's certificate)}
 
-   - **User's certificate**: you can select your SSL certificate from the list. To make the certificate available for selection, add it to the [certificate store](../manage-certificates).
-
-1. Select whether to alter the `host` HTTP header value when accessing the previously configured origins.
-
-   CDN servers specify the mandatory [Host](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host) header in HTTP when request content from origins. This header allows you to address the appropriate virtual host on the origins.
-
-   {include(/en/_includes/_cdn_origin.md)[tags=host]}
+   Select your SSL certificate from the list. To make the certificate available for selection, add it to the [certificate store](../manage-certificates).
+   {/tab}
+   {/tabs}
 
 1. Click **Create resource**.
 
@@ -124,7 +131,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
    {note:warn}
 
-   You cannont change personal domains after creating a CDN resource.
+   You cannot change personal domains after creating a CDN resource.
 
    {/note}
 

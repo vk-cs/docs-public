@@ -3,7 +3,7 @@ Use the **Access to content by end users** option to manage availability of the 
 - If the option is disabled, the CDN resource goes into `Suspended` state. Content will not be [delivered to users](../../../concepts/about).
 - If the option is enabled, the CDN resource goes into `Active` state. Сontent will be delivered to users.
 
-To enable a CDN resource:
+To enable or disable a CDN resource:
 
 {tabs}
 
@@ -12,7 +12,7 @@ To enable a CDN resource:
 {include(/en/_includes/_open-cdn.md)}
 
 1. Go to the **General settings** tab.
-1. Enable the **Access to content by end users** option.
+1. In the **Setting up access and protocol** box enable or disable the **Access to content by end users** option.
 1. Click **Save changes**.
 
 {/tab}
