@@ -33,6 +33,13 @@ export const config = {
         //     apiUrl: 'https://185.241.193.47:443/ask',
         // },
     },
+    helpmate: {
+        consumerAlias: 'd11n_cloud_public',
+    },
+    plugins: {
+        authProvider: '@vk-tech/d11n-auth:CloudAuthProvider',
+    },
+
     header: {
         relatedSites: {
             ru: [
@@ -138,7 +145,7 @@ export const config = {
         suggester: true,
         editOnGitOps: true,
         dpp: true,
-        // aiSearch: true,
+        helpmate: true,
     },
     translations: {
         en: {
