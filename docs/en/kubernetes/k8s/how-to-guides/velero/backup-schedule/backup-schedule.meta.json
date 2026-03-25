@@ -1,0 +1,9 @@
+{
+    "title": "Performing backups on a schedule",
+      "shortDescription": "How to use Velero to backup and restore Kubernetes cluster resources based on s schedule",
+      "metaDescription": "Set up a scheduled backup of the Kubernetes cluster using Velero in the cron format. Make a copy of the required namespace, check the schedules, and restore the data if necessary",
+    "sectionTitle": "Performing backups on a schedule",
+    "icon": "",
+    "weight": 2,
+    "uuid": ""
+}

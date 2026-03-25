@@ -1,0 +1,9 @@
+{
+  "title": "Using Velero",
+  "shortDescription": "How to use Velero to back up cluster data manually and based on a schedule",
+  "metaDescription": "Learn how to back up first-generation clusters in the Cloud Containers service using Velero, as well as how to set up scheduled backups in the cron format",
+  "sectionTitle": "Using Velero",
+  "icon": "",
+  "weight": 6,
+  "uuid": ""
+}

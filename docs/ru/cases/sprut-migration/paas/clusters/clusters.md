@@ -9,7 +9,7 @@
 Чтобы перенести кластер в SDN Sprut:
 
 1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster) кластер, аналогичный исходному. В параметре, отвечающем за выбор подключенной к кластеру сети, выберите нужную SDN Sprut.
-1. [Перенесите](/ru/kubernetes/k8s/how-to-guides/velero-backup) нагрузку (в том числе постоянные тома) при помощи средства резервного копирования Velero.
+1. [Перенесите](/ru/kubernetes/k8s/how-to-guides/velero/velero-backup) нагрузку (в том числе постоянные тома) при помощи средства резервного копирования Velero.
 1. [Настройте](/ru/kubernetes/k8s/connect/kubectl#connect) подключение к новому кластеру.
 1. (Опционально) Настройте сетевую связанность сетей Sprut и Neutron:
 

@@ -46,7 +46,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
   - You can [apply](../architecture#built_in_support_for_the_open_policy_agent) Gatekeeper [constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
   - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](../../concepts/access-management).
 
-- [Backup](../../how-to-guides/velero-backup) Cloud Containers clusters with Velero.
+- [Backup](../../how-to-guides/velero/velero-backup) Kubernetes clusters in the Cloud Containers service with Velero.
 
 - Migration of other Kubernetes clusters to Cloud Containers using Velero.
 

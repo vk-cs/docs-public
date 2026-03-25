@@ -1,0 +1,9 @@
+{
+    "title": "Performing backups manually",
+      "shortDescription": "How to use Velero to backup and restore Kubernetes cluster resources manually",
+      "metaDescription": "Backup and restore a Kubernetes cluster using Velero: create a backup, simulate an application failure, restore resources",
+    "sectionTitle": "Performing backups manually",
+    "icon": "",
+    "weight": 1,
+    "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312"
+}

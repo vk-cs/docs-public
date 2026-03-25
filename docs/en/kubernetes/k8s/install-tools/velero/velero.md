@@ -37,13 +37,13 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```console
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.13.1 \
    --provider aws \
    --bucket <VELERO_BUCKET_NAME> \
    --secret-file <PATH_TO_S3_CREDS_FILE> \
    --use-volume-snapshots=false \
    --backup-location-config \
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<DOMAIN>
+     region=ru-msk,s3ForcePathStyle="true",checksumAlgorithm="",s3Url=<DOMAIN>
 
    ```
 
@@ -54,13 +54,13 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```console
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.13.1 `
    --provider aws `
    --bucket <VELERO_BUCKET_NAME> `
    --secret-file <PATH_TO_S3_CREDS_FILE> `
    --use-volume-snapshots=false `
    --backup-location-config `
-     region=ru-msk,s3ForcePathStyle="true",s3Url=<DOMAIN>
+     region=ru-msk,s3ForcePathStyle="true",checksumAlgorithm="",s3Url=<DOMAIN>
    ```
 
    {/tab}
@@ -121,7 +121,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
    {/tabs}
 
-   Output should contain a similar information:
+   The output should contain similar information:
 
    ```yaml
    apiVersion: v1
@@ -216,7 +216,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    velero backup-location get
    ```
 
-   A similar information should be displayed:
+   The output should contain similar information:
 
    ```text
    NAME      PROVIDER   BUCKET/PREFIX   PHASE       LAST VALIDATED                  ACCESS MODE   DEFAULT
@@ -229,7 +229,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    velero snapshot-location get
    ```
 
-   A similar information should be displayed:
+   The output should contain similar information:
 
    ```text
    NAME      PROVIDER
