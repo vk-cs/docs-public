@@ -189,3 +189,60 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 {/tab}
 
 {/tabs}
+
+## Настройка разрешенных HTTP-методов
+
+Опция **Разрешенные HTTP-методы** позволяет управлять разрешенными HTTP-методами запросов к CDN-ресурсу. По умолчанию разрешены методы: GET, POST, HEAD, OPTIONS, PUT, PATCH, DELETE.
+
+Чтобы настроить разрешенные методы:
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(/ru/_includes/_open-cdn.md)}
+
+1. Перейдите на вкладку **HTTP-заголовки**.
+1. Включите опцию **Разрешенные HTTP-методы**.
+1. Выберите методы, которые CDN-ресурс должен обрабатывать.
+1. Нажмите кнопку **Сохранить изменения**.
+
+{/tab}
+
+{tab(API)}
+
+{include(/ru/_includes/_api_cdn_create_change.md)}
+
+В теле запроса в блоке `options` пропишите параметры `allowedHttpMethods`:
+
+- для подключения опции укажите `"enabled": true`, для отключения  — `"enabled": false`;
+- в параметре `value` пропишите методы, которые должны быть доступны.
+
+Пример запроса:
+
+```json
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "allowedHttpMethods": {
+            "enabled": true,
+            "value": [
+                "GET",
+                "HEAD"
+            ]
+        },
+    }
+}'
+```
+
+{/tab}
+
+{/tabs}
+
+Если сервер не распознал указанный метод, вернется ответ с кодом 501 (Not Implemented). Если серверу метод известен, но он не разрешен на CDN-ресурсе, вернется ответ с кодом 405 (Method Not Allowed).

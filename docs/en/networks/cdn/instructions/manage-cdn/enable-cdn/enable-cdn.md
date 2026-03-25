@@ -24,9 +24,9 @@ To enable or disable a CDN resource:
 Specify the `active` parameter in the request body:
 
 - `true` — resource is active, content is delivered.
-- `false` — resource is suspend, content is not delivered.
+- `false` — resource is suspended, content is not delivered.
 
-Example request to suspent the CDN resource:
+Example request to suspend the CDN resource:
 
 ```json
 curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
