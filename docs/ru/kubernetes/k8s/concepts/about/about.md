@@ -46,7 +46,7 @@
   - Можно применять [ограничительные политики](../architecture#vstroennaya_podderzhka_open_policy_agent) ([constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto)) Gatekeeper.
   - Доступна интеграция [ролевой модели безопасности Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) с ролями платформы VK Cloud. Подробнее читайте в разделе [Управление доступом](../../concepts/access-management).
 
-- [Резервное копирование](../../how-to-guides/velero-backup) кластеров Cloud Containers с помощью Velero.
+- [Резервное копирование](../../how-to-guides/velero/velero-backup) кластеров Cloud Containers с помощью Velero.
 
 - Миграция других кластеров Kubernetes в Cloud Containers с помощью Velero.
 

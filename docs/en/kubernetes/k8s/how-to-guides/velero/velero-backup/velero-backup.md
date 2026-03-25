@@ -1,20 +1,22 @@
-With [Velero](https://velero.io/docs/main/) you can back up and restore cluster data.
+Use [Velero](https://velero.io/docs/main/) to manually create backups of cluster data and restore them.
+
+{note:info}
+Using Velero for backups is supported only in [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
 
 ## Preparatory steps
 
-1. [Create a cluster](../../instructions/create-cluster) Kubernetes of the most current version.
+1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster of the latest version, if not done so already.
 
-   Place one or more groups of worker nodes in the `GZ1` availability area.
+   Place one or more groups of worker nodes in the `ME1` availability zone. Specify the rest of the cluster parameters at your discretion.
 
-   The rest of the cluster parameters are at your discretion.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster via `kubectl`.
+1. [Install and configure](/en/kubernetes/k8s/install-tools/velero) Velero, if not done so already.
+1. [Install](/en/tools-for-using-services/cli/openstack-cli) OpenStack CLI, if not done so already. Make sure you can authorize in the cloud using it.
 
-1. Make sure that you can [connect to the cluster](../../connect/kubectl) with `kubectl`.
-1. Make sure that [Velero is installed and configured](../../install-tools/velero).
-1. [Install](/en/tools-for-using-services/cli/openstack-cli) OpenStack CLI if it is not already installed. Make sure you can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the cloud using it.
+## 1. Deploy an application
 
-## 1. Deploy application
-
-To get familiar with creating a backup and restoring from it, deploy a demo application `coffee`. A persistent volume will be attached to this application.
+To get familiar with creating a backup and using it to restore cluster data, deploy a demo application `coffee`. A persistent volume will be attached to this application.
 
 1. Create a manifest file:
 
@@ -99,13 +101,13 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
    {/cut}
 
-1. Create the necessary Kubernetes resources based on the manifest:
+1. Create the required Kubernetes resources based on the manifest:
 
    ```console
    kubectl apply -f coffee.yaml
    ```
 
-   All the Kubernetes resources needed for the application will be placed in a separate namespace `example-app`.
+   All the Kubernetes resources required for the application will be placed in a separate `example-app` namespace.
 
 1. Make sure that a disk is created for the persistent volume:
 
@@ -115,21 +117,21 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
       kubectl get pv -n example-app
       ```
 
-       In the table displayed, find the ID of the persistent volume for which `example-app/coffee-pvc` is listed in the `CLAIM` column:
+      In the table displayed, find the ID of the persistent volume for which `example-app/coffee-pvc` is listed in the `CLAIM` column:
 
       ```text
       NAME                                       ...   STATUS   CLAIM                    ...
       ...                                        ...   ...      ...                      ...
-      <persistent volume ID>                     ...   Bound    example-app/coffee-pvc   ...
+      <PV_ID>                     ...   Bound    example-app/coffee-pvc   ...
       ```
 
    1. Get the disk ID for the permanent volume created:
 
       ```console
-      kubectl describe pv <persistent volume ID> -n example-app
+      kubectl describe pv <PV_ID> -n example-app
       ```
 
-      The output of the command will contain the disk ID in the ``VolumeHandle`` parameter:
+      The output of the command will contain the disk ID in the `VolumeHandle` parameter:
 
       ```text
       ...
@@ -137,33 +139,33 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
           Type:              CSI (a Container Storage Interface (CSI) volume source)
           Driver:            cinder.csi.openstack.org
           FSType:            ...
-          VolumeHandle:      <disk ID>
+          VolumeHandle:      <DISK_ID>
           ...
       ```
 
    1. Get detailed information about the disk with this ID using the OpenStack CLI:
 
       ```console
-      openstack volume show <disk ID> --fit-width
+      openstack volume show <DISK_ID> --fit-width
       ```
 
 1. Wait until the load balancer is assigned a public IP address.
 
-    Check the status of the load balancer periodically:
+   Check the status of the load balancer periodically:
 
    ```console
    kubectl get svc -n example-app
    ```
 
-   The `EXTERNAL-IP` column should show the public IP address assigned to the load balancer.
+   The `EXTERNAL-IP` column should display the public IP address assigned to the load balancer.
 
 1. Make sure that NGINX is responding to requests:
 
    ```console
-   curl <public IP address assigned to the load balancer>
+   curl <PUBLIC_IP_ADDRESS_OF_LOAD_BALANCER>
    ```
 
-   The following should be output:
+   The following text should display:
 
    ```text
    The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
@@ -189,21 +191,17 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
    {/note}
 
-1. Check the logs of the backup operation (if necessary):
+1. (Optionally) Check the logs of the backup operation:
 
    ```console
    velero backup logs coffee-backup
    ```
 
-It's also possible to do automatic scheduled backups. For more information about scheduled backups, see Velero's help:
-
-```console
-velero help
-```
+1. (Optionally) [Configure](/en/kubernetes/k8s/how-to-guides/velero/backup-schedule) automatic scheduled backups.
 
 ## 3. Restore the application from the backup
 
-1. Simulate application failure. To do this, delete the `example-app` namespace, which contains the resources needed for the application to work:
+1. Simulate application failure. To do this, delete the `example-app` namespace which contains the resources needed for the application to work:
 
    ```console
    kubectl delete ns example-app
@@ -217,9 +215,9 @@ velero help
 
    The command will restore the data to the same cluster that was backed up. If you need to restore data to a new cluster:
 
-   1. [Create cluster](../../instructions/create-cluster).
-   1. [Install Velero](../../install-tools/velero) in the cluster.
-   1. Run the above command.
+   1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a cluster.
+   1. [Install Velero](/en/kubernetes/k8s/install-tools/velero) in the cluster.
+   1. Run the command above.
 
 1. Wait until the load balancer is assigned a public IP address.
 
@@ -234,10 +232,10 @@ velero help
 1. Make sure that NGINX is responding to requests:
 
    ```console
-   curl <public IP address assigned to the load balancer>
+   curl <PUBLIC_IP_ADDRESS_OF_LOAD_BALANCER>
    ```
 
-   The following should be output:
+   The following text should display:
 
    ```text
    The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
@@ -245,8 +243,10 @@ velero help
 
 ## Delete unused resources
 
-1. If the Kubernetes resources you created are no longer needed, delete them.
+A running cluster consumes computing resources and is charged accordingly. If you no longer need the Velero tool and the Kubernetes resources you created to test the backup process, delete them:
 
+1. Delete the created `example-app` namespace and the resources associated with it, as well as the created backup:
+   
    {tabs}
 
    {tab(Linux/macOS)}
@@ -270,17 +270,14 @@ velero help
 
    {/tabs}
 
-1. If you no longer need Velero, delete it:
+1. Delete Velero:
 
    ```console
    velero uninstall
    ```
 
-1. If you don't need the backups anymore, delete them from the bucket that Velero used.
+1. [Delete](/ru/storage/s3/instructions/objects/manage-object#udalenie_obektov "change-lang") the backups from the bucket that Velero used.
 
-   If necessary, also [delete the bucket itself](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket).
+   If necessary, also [delete](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket) the bucket itself.
 
-1. A running cluster consumes computing resources. If you no longer need it:
-
-   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../instructions/manage-cluster#delete_cluster) it permanently.
+1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#start_or_stop_cluster) the cluster you created to use it later or [delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.

@@ -127,7 +127,7 @@
 
    - Cloud Containers (кластеры Kubernetes нового поколения);
    - Cloud Spark на ML Platform;
-   - [VK Data Platform](ru/data-platform) (все сервисы).
+   - [VK Data Platform](/ru/data-platform) (все сервисы).
    {/cut}
 
    Полный список параметров сервисов можно уточнить в [прайс-листе](https://cloud.vk.com/pricelist/).
