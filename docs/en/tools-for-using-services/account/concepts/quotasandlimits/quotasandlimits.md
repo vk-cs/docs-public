@@ -170,7 +170,7 @@ The limit on 4 GPUs per instance is related to the limitation of KVM technology,
 | 200 GB
 | not limited
 
-|=== 
+|===
 
 #### Limits without quotas
 
@@ -596,7 +596,7 @@ Even if the quota for the total number of subnets in the project has been [incre
 | Number of Anycast IP addresses
 | ![](/en/assets/no.svg "inline")
 | `anycastip`
-| 5 pcs.
+| 1 pcs.
 | 50 pcs.
 | ![](/en/assets/no.svg "inline")
 
