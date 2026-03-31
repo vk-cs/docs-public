@@ -14,6 +14,6 @@ The total cost will be displayed in the line **Final calculation**.
 
 {note:warn}
 
-The total cost is rounded to **two decimal places**. A similar principle applies for [detailing](../instructions/detail) and  [accounting documents](../concepts/report).
+Amounts less than a kopeck are rounded up to one kopeck, including when calculating the total cost for [detailed reports](../instructions/detail) and [accounting documents](../concepts/report).
 
 {/note}
