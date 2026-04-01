@@ -50,9 +50,6 @@
                     "link": "/en/computing/iaas/how-to-guides/packer"
                 },
                 {
-                    "link": "/en/computing/iaas/how-to-guides/vm-multiqueue"
-                },
-                {
                     "link": "/en/computing/iaas/how-to-guides/managing-node"
                 }
             ]

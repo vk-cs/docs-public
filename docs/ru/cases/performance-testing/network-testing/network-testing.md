@@ -5,8 +5,6 @@
 - дополнительная ВМ в той же зоне доступности, что и тестовая ВМ — сервер;
 - дополнительная ВМ в другой зоне доступности  — еще один сервер.
 
-Чтобы оценить максимальную производительность сети, включите механизм множества очередей (multiqueue), а также используйте SDN [Sprut](/ru/networks/vnet/concepts/sdn#sprut).
-
 ## Подготовительные шаги
 
 {include(/ru/_includes/_testing_preparatory.md)}
@@ -46,7 +44,6 @@
     sudo apt install iperf3
     ```
 
-1. На тестовой ВМ [подключите](/ru/computing/iaas/how-to-guides/vm-multiqueue) механизм множества очередей самостоятельно, либо обратитесь в [техническую поддержку](/ru/contacts), указав в обращении [ID виртуальной машины](/ru/computing/iaas/instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
 1. На дополнительных ВМ выполните команду для запуска серверной части утилиты iPerf:
 
     ```console
