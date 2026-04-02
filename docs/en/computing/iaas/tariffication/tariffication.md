@@ -13,7 +13,8 @@ The cost of platform services is given in [price list](https://cloud.vk.com/pric
 - [Public IP addresses](/en/networks/vnet/tariffication#what_is_charged).
 - [Disk images](../concepts/about#image) that you created or imported to VK Cloud. The price depends on the storage location:
 
-  - Storing in [VK Object Storage](/en/storage/s3) (by default) — at the [Hotbox rate](/en/storage/s3/tariffication) for each 1 GB of image volume and for each 1 GB of image download, for example, when creating a VM.
+  - Storing in [VK Object Storage](/en/storage/s3) (by default) — at the [Icebox](/en/storage/s3/instructions/change-storage-class) rate for each 1 GB of the image volume and for each 1 GB of the downloaded image, for example, when creating a VM. For more details on how data storage classes are charged, refer to the [Tariffication](/en/storage/s3/tariffication) section of the VK Cloud Storage service.
+  
   - Storing in a block storage — at the price of an HDD disk for each 1 GB of image volume.
 
 CPU (vCPU) and RAM are charged only when the virtual machine is running. When the VM is stopped, funds continue to be charged:
