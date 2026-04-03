@@ -488,7 +488,7 @@ The limits in this section are determined by the requirements of operation, they
 | Number of floating IP addresses
 | **Sprut floating IP addresses**
 | `floatingip`
-| 12 pcs.
+| 0 pcs.
 | 50 pcs.
 | ![](/en/assets/no.svg "inline")
 
@@ -554,14 +554,14 @@ Even if the quota for the total number of subnets in the project has been [incre
 | Number of routers
 | **Sprut routers**
 | `router`
-| 12 pcs.
+| 1 pcs.
 | 20 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of advanced routers
 | **Advanced routers**
 | `dc_router`
-| 3 pcs.
+| 0 pcs.
 | 3 pcs.
 | ![](/en/assets/no.svg "inline")
 
@@ -589,14 +589,14 @@ Even if the quota for the total number of subnets in the project has been [incre
 | Number of external Neutron or Sprut ports in the project
 | **Sprut external network ports**
 | `external_port`
-| 12 pcs.
+| 0 pcs.
 | 12 pcs.
 | ![](/en/assets/no.svg "inline")
 
 | Number of Anycast IP addresses
 | ![](/en/assets/no.svg "inline")
 | `anycastip`
-| 1 pcs.
+| 0 pcs.
 | 50 pcs.
 | ![](/en/assets/no.svg "inline")
 

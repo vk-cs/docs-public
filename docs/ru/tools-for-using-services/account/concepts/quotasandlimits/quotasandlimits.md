@@ -488,7 +488,7 @@
 | Количество Floating IP-адресов
 | **IP-адреса Sprut**
 | `floatingip`
-| 12 шт.
+| 0 шт.
 | 50 шт.
 | ![](/ru/assets/no.svg "inline")
 
@@ -554,14 +554,14 @@
 | Количество маршрутизаторов
 | **Маршрутизаторы Sprut**
 | `router`
-| 12 шт.
+| 1 шт.
 | 20 шт.
 | ![](/ru/assets/no.svg "inline")
 
 | Количество продвинутых маршрутизаторов
 | **Маршрутизаторы Sprut**
 | `dc_router`
-| 3 шт.
+| 0 шт.
 | 3 шт.
 | ![](/ru/assets/no.svg "inline")
 
@@ -589,14 +589,14 @@
 | Количество портов с адресами во внешней сети в проекте
 | **Порты во внешней сети Sprut**
 | `external_port`
-| 12 шт.
+| 0 шт.
 | 12 шт.
 | ![](/ru/assets/no.svg "inline")
 
 | Количество Anycast IP-адресов
 | ![](/ru/assets/no.svg "inline")
 | `anycastip`
-| 1 шт.
+| 0 шт.
 | 50 шт.
 | ![](/ru/assets/no.svg "inline")
 
