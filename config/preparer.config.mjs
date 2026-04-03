@@ -88,7 +88,7 @@ export const config = {
     },
     settings: {
         satoriIndexPreparer: {
-            apiBaseUrl: 'https://cloud.vk.com/search/api',
+            apiBaseUrl: process.env.SATORI_API_URL || '',
             baseUrl: 'https://cloud.vk.com/docs',
             apiKey: process.env.SATORI_API_KEY || '',
         },
