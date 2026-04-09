@@ -1,8 +1,8 @@
 {
-  "title": "Desktop pool",
+  "title": "Managing a desktop pool",
   "shortDescription": "Combining desktops in a single resource pool",
   "metaDescription": "Combining desktops in a single resource pool.",
-  "sectionTitle": "Desktop pool",
+  "sectionTitle": "Managing a desktop pool",
   "icon": "",
   "weight": 2,
   "uuid": "db8ef26d-92b9-4016-9fed-bdfd2fed5dec"
