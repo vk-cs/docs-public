@@ -6,7 +6,7 @@ You can migrate your resources to VK Cloud using the [Hystax Acura Migration](ht
 
 **Supported Applications**: SAP, Microsoft Active Directory, PostgreSQL, Oracle, NGINX, Red Hat Jboss Enterprise, IBM WebSphere, Apache, VMware vSphere, MySQL, MongoDB, Hadoop, Spark.
 
-**Supported operating systems**: Windows, RHEL, CentOS, Debian, Ubuntu, Astra Linux, AltLinux, Red OS. The full list of OS and their versions available for migration is provided on the [VM creation](/en/computing/iaas/instructions/vm/vm-create#create_a_vm) page in your management console.
+**Supported operating systems**: Windows, RHEL, CentOS, Debian, Ubuntu, Astra Linux, AltLinux, Red OS. The full list of OS and their versions available for migration is provided on the [VM creation](/en/computing/iaas/instructions/vm/vm-create) page in your management console.
 
 {/cut}
 
