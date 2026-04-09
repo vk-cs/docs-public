@@ -11,8 +11,21 @@ When a pool is successfully created, desktops are created in it automatically.
      1. Go to **Cloud Desktop** → **Desktop pools**.
      1. In the list of pools, click the name of the required pool.
      1. Go to the **Desktops** tab.
+     1. (Optional) Click the **Filters** button and filter the desktops of this pool by their status, IP address, or connection type.
 
-The desktop status is displayed in the **Availability** column. Column **Connection** (`Active`/`Inactive`) shows whether the user is currently connected to the desktop.
+1. Review the desktop status. Possible values are:
+
+    - `Being Created` — the desktop is starting but not yet ready for work.
+    - `Ready` — the desktop is ready for users to connect.
+    - `In Progress` — a user is in the process of connecting to the desktop.
+    - `In Use` — a user is connected to the desktop.
+    - `Manually Stopped` — the desktop is stopped by an administrator. Users cannot connect to this desktop until an administrator restarts it.
+    - `Automatically Stopped` — the desktop is stopped by the system according to the specified rules.
+    - `Error` — the desktop has failed. Contact [technical support](mailto:support@mcs.mail.ru).
+    - `Deleted` — the desktop is deleted.
+    - `Deleting` — the desktop is being deleted.
+    - `Stopped by User` — the user stopped using the desktop.
+    - `Udpating` — the desktop is being updated.
 
 ## Starting or stopping the desktop
 
