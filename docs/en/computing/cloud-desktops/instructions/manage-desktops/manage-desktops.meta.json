@@ -1,9 +1,9 @@
 {
-    "title": "Desktops management",
-      "shortDescription": "Starting, stopping and deleting desktops, working with a user session",
-      "metaDescription": "Starting, stopping and deleting cloud desktops, working with a user session.",
-    "sectionTitle": "Desktops management",
-    "icon": "",
-    "weight": 3,
-    "uuid": "61305639-bf12-4684-9827-1200de0f59d9"
+  "title": "Managing desktops",
+  "shortDescription": "Starting, stopping and deleting desktops, working with a user session",
+  "metaDescription": "Starting, stopping and deleting cloud desktops, working with a user session.",
+  "sectionTitle": "Managing desktops",
+  "icon": "",
+  "weight": 3,
+  "uuid": "61305639-bf12-4684-9827-1200de0f59d9"
 }
