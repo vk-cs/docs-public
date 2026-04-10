@@ -103,7 +103,7 @@ Select the option:
 
 {tabs}
 {tab(Do not change)}
-The domain name or IP address of the first origin from the origin group will be used as the header value.
+The first CNAME i.e. the first configured personal domain name will be used as the header value.
 
 {cut(Example)}
 
@@ -112,7 +112,12 @@ Let there is a group of two origins configured:
 - `203.0.113.222:8080`
 - `images.example.com`
 
-Then the `Host: 203.0.113.222:8080` header is used, when CDN servers request any of these origins.
+Also let two personal domains are configured for CDN:
+
+- `cdn.contoso.com`
+- `cdn.example.org`
+
+Then the `Host: cdn.contoso.com` header is used, when CDN servers request any of these origins.
 {/cut}
 
 {/tab}
@@ -148,7 +153,11 @@ Also let two personal domains are configured for CDN:
 - `cdn.contoso.com`
 - `cdn.example.org`
 
-Then the `Host: cdn.contoso.com` header is used, when CDN servers request any of these origins.
+Then the Host header will be:
+
+- when accessing `cdn.contoso.com`  — `Host: cdn.contoso.com`;
+- when accessing `cdn.example.org` — `Host: cdn.example.org`.
+
 {/cut}
 
 {/tab}
