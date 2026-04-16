@@ -21,8 +21,8 @@ If the payment account balance of the project becomes negative, the project is f
 - Running objects (for example, virtual machines) are stopped.
 - Objects are placed in the deletion queue. Such objects will be deleted without possibility of recovery:
 
-  - If there was no cash flow in the project for the entire period of existence — 3 days after freezing.
-  - If payment was made — 30 days after freezing.
+  - If there has been no cash flow in the project for the entire time it exists — 3 days after freezing.
+  - If there have been any payments — 7 days after freezing.
 
   Some of the objects remain readable, making it possible to transfer data from them.
 
@@ -44,7 +44,7 @@ A number of services may have their own terms for freezing and deleting objects.
 
 - If the payment account balance of the project does not become positive within 30 days, the objects are blocked.
 
-    When objects are blocked, write-offs for them stop. There is no access to objects, including read access. 30 days after switching to this state, if the payment account balance does not become positive, the objects are deleted.
+    When objects are blocked, write-offs for them stop. There is no access to objects, including read access. 7 days after switching to this state, if the payment account balance does not become positive, the objects are deleted.
 
 For more information about the service, see [Object storage](/en/storage/s3).
 
