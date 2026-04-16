@@ -86,10 +86,6 @@
 - Cloud Databases;
 - [Marketplace](https://msk.cloud.vk.com/app/mcs1798875946/services/marketplace) (все сервисы).
 
-{/tab}
-
-{/tabs}
-
 {/cut}
 
 {cut(Параметры, доступные в отчете с 31.10.25)}

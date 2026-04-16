@@ -87,10 +87,6 @@ VM parameters that are created in the services::
 - Cloud Databases
 - [Marketplace](https://msk.cloud.vk.com/app/mcs1798875946/services/marketplace) (all services)
 
-{/tab}
-
-{/tabs}
-
 {/cut}
 
 {cut(Parameters available in the report starting Oct 31, 2025)}
