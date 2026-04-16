@@ -62,3 +62,62 @@ Bonuses are credited:
 In some cases, previously accrued bonuses may be canceled or denied. See more in the [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal)
 
 {/note}
+
+## {heading(Resource consumption report)[id=consumption-report]}
+
+In VK Cloud, you can [download](/en/intro/billing/instructions/detail#download-report) a resource consumption report in two formats:
+
+- A general report that shows the total amount of expenses for the specified period.
+
+- A granular report. It shows the amount of expenses for each parameter of cloud resources that are consumed by VK Cloud services (for example, RAM, CPU, HDDs, load balancers). For these parameters, the **Resource ID** column displays the resource IDs to which the specified expenses relate.
+
+  The granular report also shows custom labels set for the resources. Labels that are inherited by the related services are also displayed in the report. For example, a VM's label might be inherited by its disks. You configure whether it can be inherited when setting the label.
+
+  The data in the report is grouped by day.
+
+{cut(Parameters available in the report starting Oct 1, 2025)}
+
+VM parameters that are created in the services::
+
+- Cloud Servers
+- Cloud Containers (Kubernetes clusters of the previous generation)
+- Cloud Desktop (servers and desktops)
+- Arenadata DB as a Service
+- ML Platform (services of JupyterHub, MLflow, and MLflow Deploy)
+- Cloud Databases
+- [Marketplace](https://msk.cloud.vk.com/app/mcs1798875946/services/marketplace) (all services)
+
+{/tab}
+
+{/tabs}
+
+{/cut}
+
+{cut(Parameters available in the report starting Oct 31, 2025)}
+
+Parameters of the following services:
+
+- CDN
+- Cloud Monitoring
+- DNS
+- Cloud Voice
+- Vision
+
+Other parameters:
+
+- Licenses for the software of Microsoft, Astra Linux SE 1.7 «Воронеж», Astra Linux SE 1.7 «Орел», ALT Server 10, RED OS
+- Standard load balancers (the service ones are not included)
+- Public IP addresses
+- File storages
+  {/cut}
+
+{cut(Parameters available in the report starting Mar 25, 2026)}
+
+Parameters of the following services:
+
+- Cloud Containers (Kubernetes clusters of the new generation)
+- Cloud Spark on ML Platform
+- [VK Data Platform](/ru/data-platform) (all services)
+  {/cut}
+
+You can see the full list of parameters in the [price list](https://cloud.vk.com/pricelist/).
