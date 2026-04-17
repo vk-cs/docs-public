@@ -45,7 +45,7 @@ The storage types available in a Kubernetes cluster via Cinder CSI correlate wit
 
 Using Cinder CSI allows you to:
 
-- Statically and dynamically [provision](../../reference/pvs-and-pvcs#1_provisioning_6b9e088d) PV that is based on block storage.
+- Statically and dynamically [provision](../../reference/pvs-and-pvcs#dynamic-provisioning) PV that is based on block storage.
 
 - Automatically remount persistent volumes:
   - When the pod using the volume or the worker node hosting the pod fails (assuming the pod is restored to that node or another node).
@@ -75,42 +75,167 @@ A [reclaim policy](../../reference/pvs-and-pvcs#4_reclaiming_830589dc) can be se
 
 ## Pre-configured storage classes
 
-When using [dynamic provisioning](../../reference/pvs-and-pvcs#1_provisioning_6b9e088d) of a persistent volume, a storage class should be specified. The default storage class is not configured in VK Cloud Kubernetes clusters. It is possible either to set the default class manually, or explicitly specify the required class when creating a PVC.
+When using [dynamic provisioning](../../reference/pvs-and-pvcs#dynamic-provisioning) of a persistent volume, a storage class must be specified. The default storage class is not configured in Kubernetes clusters you create in the Cloud Containers service. You can either set the default class manually, or explicitly specify the required class when creating a PVC.
 
-There are preconfigured storage classes that use Cinder CSI for block storage.
+In Cloud Containers, there are pre-configured storage classes that use Cinder CSI for block storage. They provide different storage types that you can use when configuring dynamic provisioning of a PV:
 
-The classes provide different types of storage in [multiple regions](../../../../tools-for-using-services/account/concepts/regions) and availability zones.
-Each storage class has a distinct reclaim policy confugured for it.
+- For a specific [region](../../../../tools-for-using-services/account/concepts/regions) indicating the required availability zone.
+- For any region and availability zone. Such storage classes are called multi-zone ones. Multi-zone storage classes are only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters. For more details on working with them, refer to the [Using multi-zone storage classes](/en/kubernetes/k8s/how-to-guides/multiaz-storage-class) section.
+
+Each storage class has a reclaim policy configured for it.
 
 {tabs}
 
 {tab(Moscow region)}
 
-| Storage class<br>name           | Cinder CSI<br>storage type  | Availability<br>zone | Reclaim<br>Policy |
-|---------------------------------|-----------------------------| ------------------- |-------------------|
-| csi-ceph-ssd-gz1                | `ceph-ssd`                  | GZ1                 | Delete            |
-| csi-ceph-ssd-gz1-retain         | `ceph-ssd`                  | GZ1                 | Retain            |
-| csi-ceph-ssd-ms1                | `ceph-ssd`                  | MS1                 | Delete            |
-| csi-ceph-ssd-ms1-retain         | `ceph-ssd`                  | MS1                 | Retain            |
-| csi-ceph-ssd-me1                | `ceph-ssd`                  | ME1                 | Delete            |
-| csi-ceph-ssd-me1-retain         | `ceph-ssd`                  | ME1                 | Retain            |
-| csi-ceph-hdd-me1                | `ceph-hdd`                  | ME1                 | Delete            |
-| csi-ceph-hdd-me1-retain         | `ceph-hdd`                  | ME1                 | Retain            |
-| csi-high-iops-gz1               | `high-iops`                 | GZ1                 | Delete            |
-| csi-high-iops-gz1-retain        | `high-iops`                 | GZ1                 | Retain            |
-| csi-high-iops-ms1               | `high-iops`                 | MS1                 | Delete            |
-| csi-high-iops-ms1-retain        | `high-iops`                 | MS1                 | Retain            |
-| csi-high-iops-me1               | `high-iops`                 | ME1                 | Delete            |
-| csi-high-iops-me1-retain        | `high-iops`                 | ME1                 | Retain            |
+[cols="1,1,1,1", options="header"]
+|===
+
+| Storage class name
+| Cinder CSI storage type
+| Availability zone
+| Reclaim policy
+
+| csi-ceph-ssd-gz1                
+| `ceph-ssd`
+| GZ1                 
+| Delete
+
+| csi-ceph-ssd-gz1-retain         
+| `ceph-ssd`
+| GZ1                 
+| Retain
+
+| csi-ceph-ssd-ms1                
+| `ceph-ssd`
+| MS1                 
+| Delete
+
+| csi-ceph-ssd-ms1-retain         
+| `ceph-ssd`
+| MS1                 
+| Retain
+
+| csi-ceph-ssd-me1                
+|`ceph-ssd`
+| ME1                 
+| Delete
+
+| csi-ceph-ssd-me1-retain         
+| `ceph-ssd`
+| ME1                 
+| Retain
+
+| csi-ceph-hdd-gz1                
+| `ceph-hdd`
+| GZ1                 
+| Delete
+
+| csi-ceph-hdd-gz1-retain                
+| `ceph-hdd`
+| GZ1                 
+| Retain
+
+| csi-ceph-hdd-me1                
+| `ceph-hdd`
+| ME1                 
+| Delete
+
+| csi-ceph-hdd-me1-retain         
+|`ceph-hdd`
+| ME1                 
+| Retain
+
+| csi-ceph-hdd-ms1                
+| `ceph-hdd`
+| MS1                 
+| Delete
+
+| csi-ceph-hdd-ms1-retain                
+| `ceph-hdd`
+| MS1                 
+| Retain
+
+| csi-high-iops-gz1               
+|`high-iops`
+| GZ1                 
+| Delete
+
+| csi-high-iops-gz1-retain        
+| `high-iops`
+| GZ1                 
+| Retain
+
+| csi-high-iops-ms1               
+| `high-iops`
+| MS1                 
+| Delete
+
+| csi-high-iops-ms1-retain        
+| `high-iops`
+| MS1                 
+| Retain
+
+| csi-high-iops-me1               
+| `high-iops`
+| ME1                 
+| Delete
+
+| csi-high-iops-me1-retain        
+| `high-iops`
+| ME1                 
+| Retain
+|===
+
+All the storage classes listed:
+
+- Allow for volume expansion (`allowVolumeExpansion: true`).
+- Use immediate volume provisioning and binding (`volumeBindingMode: Immediate`).
+
+{/tab}
+
+{tab(Any region and availability zone)}
+
+[cols="1,1,1",options="header"]
+|===
+
+| Storage class name
+| Cinder CSI storage type
+| Reclaim policy
+
+| csi-ceph-ssd                    
+| `ceph-ssd`
+| Delete
+
+| csi-ceph-ssd-retain             
+| `ceph-ssd`
+| Retain
+
+| csi-ceph-hdd                    
+| `ceph-hdd`
+| Delete
+
+| csi-ceph-hdd-retain             
+| `ceph-hdd`
+| Retain
+
+| csi-high-iops                   
+| `high-iops`
+| Delete
+
+| csi-high-iops-retain            
+|`high-iops`
+| Retain
+|===
+
+All the storage classes listed:
+
+- Allow for volume expansion (`allowVolumeExpansion: true`).
+- Allow Kubernetes to delay creating and binding a [persistent volume](/en/kubernetes/k8s/reference/pvs-and-pvcs) until the first pod that uses the respective [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) is created (`volumeBindingMode: WaitForFirstConsumer`).
 
 {/tab}
 
 {/tabs}
-
-All storage classes listed:
-
-- Allow volume expansion (`allowVolumeExpansion: true`).
-- Use immediate volume provisioning and binding (`volumeBindingMode: Immediate`).
 
 ## See also
 

@@ -32,7 +32,7 @@ The PV and PVC life cycle is independent of the pod life cycle and [consists of]
 1. Using.
 1. Reclaiming.
 
-### 1. Provisioning
+### {heading(1. Provisioning)[id=dynamic-provisioning]}
 
 A PV must be prepared prior to requesting the PV via PVC. It can be done in one of the following ways:
 
