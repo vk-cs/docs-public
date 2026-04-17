@@ -1,0 +1,9 @@
+{
+  "title": "Using multi-zone storage classes",
+  "shortDescription": "How to use multi-zone storage classes to distribute workload in the cluster",
+  "metaDescription": "Use multi-zone storage classes in Kubernetes to dynamically create persistent volumes (PV) in the same availability zone as the pod. How to set up StorageClass, deploy the application, and check the correct distribution of PVs between zones to increase the cluster's fault tolerance and high availability.",
+  "sectionTitle": "Using multi-zone storage classes",
+  "icon": "",
+  "weight": 12,
+  "uuid": ""
+}

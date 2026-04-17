@@ -78,42 +78,167 @@
 
 ## {heading(Преднастроенные классы хранения)[id=storage_classes]}
 
-При использовании [динамической подготовки](../../reference/pvs-and-pvcs#1_podgotovka_2a52d941) постоянного тома необходимо указать класс хранения. Класс хранения по умолчанию не настроен в кластерах Cloud Containers. Можно выбрать класс по умолчанию самостоятельно, или явно указывать нужный класс явно при создании PVC.
+При использовании [динамической подготовки](../../reference/pvs-and-pvcs#1_podgotovka_2a52d941) постоянного тома необходимо указать класс хранения. Класс хранения по умолчанию не настроен в кластерах Cloud Containers. Можно выбрать класс по умолчанию самостоятельно, или указывать нужный класс явно при создании PVC.
 
-Есть преднастроенные классы хранения, использующие Cinder CSI для блочных хранилищ.
+В Cloud Containers есть преднастроенные классы хранения, использующие Cinder CSI для блочных хранилищ. Они предоставляют разные типы хранилищ, которые вы можете использовать при динамической подготовке постоянного тома:
 
-Классы предоставляют разные типы хранилищ в [нескольких регионах](../../../../tools-for-using-services/account/concepts/regions) и зонах доступности.
+- Для определенного [региона](../../../../tools-for-using-services/account/concepts/regions) с указанием зоны доступности.
+- Для любого региона и зоны доступности. Такие классы хранения называются мультизональными. Мультизональные классы хранения доступны только для кластеров [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations). Подробнее о работе с ними в разделе [Использование мультизональных классов хранения](/ru/kubernetes/k8s/how-to-guides/multiaz-storage-class).
+
 Каждому классу хранения соответствует своя политика освобождения постоянных томов.
 
 {tabs}
 
 {tab(Регион: Москва)}
 
-| Наименование<br>класса хранения | Тип хранилища<br>Cinder CSI | Зона<br>доступности | Reclaim<br>Policy |
-|---------------------------------|-----------------------------| ------------------- |-------------------|
-| csi-ceph-ssd-gz1                | `ceph-ssd`                  | GZ1                 | Delete            |
-| csi-ceph-ssd-gz1-retain         | `ceph-ssd`                  | GZ1                 | Retain            |
-| csi-ceph-ssd-ms1                | `ceph-ssd`                  | MS1                 | Delete            |
-| csi-ceph-ssd-ms1-retain         | `ceph-ssd`                  | MS1                 | Retain            |
-| csi-ceph-ssd-me1                | `ceph-ssd`                  | ME1                 | Delete            |
-| csi-ceph-ssd-me1-retain         | `ceph-ssd`                  | ME1                 | Retain            |
-| csi-ceph-hdd-me1                | `ceph-hdd`                  | ME1                 | Delete            |
-| csi-ceph-hdd-me1-retain         | `ceph-hdd`                  | ME1                 | Retain            |
-| csi-high-iops-gz1               | `high-iops`                 | GZ1                 | Delete            |
-| csi-high-iops-gz1-retain        | `high-iops`                 | GZ1                 | Retain            |
-| csi-high-iops-ms1               | `high-iops`                 | MS1                 | Delete            |
-| csi-high-iops-ms1-retain        | `high-iops`                 | MS1                 | Retain            |
-| csi-high-iops-me1               | `high-iops`                 | ME1                 | Delete            |
-| csi-high-iops-me1-retain        | `high-iops`                 | ME1                 | Retain            |
+[cols="1,1,1,1", options="header"]
+|===
 
-{/tab}
+| Наименование класса хранения
+| Тип хранилища Cinder CSI
+| Зона доступности
+| Reclaim Policy
 
-{/tabs}
+| csi-ceph-ssd-gz1                
+| `ceph-ssd`
+| GZ1                 
+| Delete
+
+| csi-ceph-ssd-gz1-retain         
+| `ceph-ssd`
+| GZ1                 
+| Retain
+
+| csi-ceph-ssd-ms1                
+| `ceph-ssd`
+| MS1                 
+| Delete
+
+| csi-ceph-ssd-ms1-retain         
+| `ceph-ssd`
+| MS1                 
+| Retain
+
+| csi-ceph-ssd-me1                
+|`ceph-ssd`
+| ME1                 
+| Delete
+
+| csi-ceph-ssd-me1-retain         
+| `ceph-ssd`
+| ME1                 
+| Retain
+
+| csi-ceph-hdd-gz1                
+| `ceph-hdd`
+| GZ1                 
+| Delete
+
+| csi-ceph-hdd-gz1-retain                
+| `ceph-hdd`
+| GZ1                 
+| Retain
+
+| csi-ceph-hdd-me1                
+| `ceph-hdd`
+| ME1                 
+| Delete
+
+| csi-ceph-hdd-me1-retain         
+|`ceph-hdd`
+| ME1                 
+| Retain
+
+| csi-ceph-hdd-ms1                
+| `ceph-hdd`
+| MS1                 
+| Delete
+
+| csi-ceph-hdd-ms1-retain                
+| `ceph-hdd`
+| MS1                 
+| Retain
+
+| csi-high-iops-gz1               
+|`high-iops`
+| GZ1                 
+| Delete
+
+| csi-high-iops-gz1-retain        
+| `high-iops`
+| GZ1                 
+| Retain
+
+| csi-high-iops-ms1               
+| `high-iops`
+| MS1                 
+| Delete
+
+| csi-high-iops-ms1-retain        
+| `high-iops`
+| MS1                 
+| Retain
+
+| csi-high-iops-me1               
+| `high-iops`
+| ME1                 
+| Delete
+
+| csi-high-iops-me1-retain        
+| `high-iops`
+| ME1                 
+| Retain
+|===
 
 Все перечисленные классы хранения:
 
 - Разрешают увеличение тома (`allowVolumeExpansion: true`).
 - Используют немедленное выделение и привязку тома (`volumeBindingMode: Immediate`).
+
+{/tab}
+
+{tab(Для любого региона и зоны доступности)}
+
+[cols="1,1,1",options="header"]
+|===
+
+| Наименование класса хранения
+| Тип хранилища Cinder CSI
+| Reclaim Policy
+
+| csi-ceph-ssd                    
+| `ceph-ssd`
+| Delete
+
+| csi-ceph-ssd-retain             
+| `ceph-ssd`
+| Retain
+
+| csi-ceph-hdd                    
+| `ceph-hdd`
+| Delete
+
+| csi-ceph-hdd-retain             
+| `ceph-hdd`
+| Retain
+
+| csi-high-iops                   
+| `high-iops`
+| Delete
+
+| csi-high-iops-retain            
+|`high-iops`
+| Retain
+|===
+
+Все перечисленные классы хранения:
+
+- Разрешают увеличение тома (`allowVolumeExpansion: true`).
+- Откладывают создание и привязку тома до момента, когда будет создан первый под, использующий соответствующий [PersistentVolumeClaim](/ru/kubernetes/k8s/reference/pvs-and-pvcs) (`volumeBindingMode: WaitForFirstConsumer`).
+
+{/tab}
+
+{/tabs}
 
 ## Смотрите также
 
