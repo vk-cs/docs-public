@@ -1,0 +1,9 @@
+{
+    "title": "Bandwidth for virtual desktop operation",
+      "shortDescription": "Communication channel load when operating virtual desktops via RemoteClick and RDP protocols",
+      "metaDescription": "Channel load table for virtual desktop operation: bandwidth estimation for VDI using RemoteClick and RDP protocols",
+    "sectionTitle": "Bandwidth for virtual desktop operation",
+    "icon": "",
+    "weight": 7,
+    "uuid": ""
+}
