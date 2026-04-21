@@ -71,7 +71,7 @@ In VK Cloud, you can [download](/en/intro/billing/instructions/detail#download-r
 
 - A granular report. It shows the amount of expenses for each parameter of cloud resources that are consumed by VK Cloud services (for example, RAM, CPU, HDDs, load balancers). For these parameters, the **Resource ID** column displays the resource IDs to which the specified expenses relate.
 
-  The granular report also shows custom labels set for the resources. Labels that are inherited by the related services are also displayed in the report. For example, a VM's label might be inherited by its disks. You configure whether it can be inherited when setting the label.
+  The granular report also shows custom labels set for the resources. These labels are displayed in the strings with a resource itself and any related services that inherit this label from the resource. For example, a VM's label might be inherited by its disks. You configure whether it can be inherited when setting the label.
 
   The data in the report is grouped by day.
 
