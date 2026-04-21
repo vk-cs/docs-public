@@ -3,7 +3,7 @@
 Проблема может возникать, если бакет содержит объекты.
 
 {note:warn}
-Бакет с классом хранения `Backup` удалить нельзя, но через сервис Cloud Backup можно [удалить содержащиеся в бакете объекты](/ru/storage/backups/instructions/manage-backup-copy#delete_backup_copy).
+Бакет с классом хранения `Backup` удалить нельзя, но через сервис Cloud Backup можно [удалить содержащиеся в бакете объекты](/ru/storage/backups/instructions/manage-backup-copy#delete).
 {/note}
 
 ### Решение
