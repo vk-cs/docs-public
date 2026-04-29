@@ -1,0 +1,8 @@
+{
+  "title": "VK Cloud платформасындағы Spark",
+  "shortDescription": "Үлкен деректерді өңдеуге арналған Kubernetes-тегі Spark кластерлері",
+  "metaDescription": "VK Cloud платформасындағы Spark сервисі: үлкен деректерді өңдеуге арналған Apache Spark Operator және PaaS Kubernetes негізіндегі шешім",
+  "sectionTitle": "VK Cloud платформасындағы Spark",
+  "icon": "",
+  "weight": 2
+}

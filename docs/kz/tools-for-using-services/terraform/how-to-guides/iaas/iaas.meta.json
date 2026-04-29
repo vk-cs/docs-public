@@ -1,0 +1,8 @@
+{
+  "title": "Cloud Servers",
+  "shortDescription": "Cloud Servers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "sectionTitle": "Cloud Servers",
+  "icon": "",
+  "weight": 10
+}

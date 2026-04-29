@@ -1,0 +1,44 @@
+[
+  {
+    "group": {
+      "title": "",
+      "items": [
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud",
+          "title": "Документация VK Private Cloud",
+          "description": "Платформа для построения частного облака в ЦОДе заказчика",
+          "icon": "/kz/on-premises/assets/private-cloud-icon.svg",
+          "iconMobile": "/kz/on-premises/assets/private-cloud-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud-knowledge-base",
+          "title": "База знаний VK Private Cloud",
+          "description": "Инструкции по решению типовых задач и практические руководства",
+          "icon": "/kz/on-premises/assets/private-cloud-kb-icon.svg",
+          "iconMobile": "/kz/on-premises/assets/private-cloud-kb-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/dev-platform",
+          "title": "VK Dev Platform",
+          "description": "Готовое решение для построения внутренних платформ разработки",
+          "icon": "/kz/on-premises/assets/dev-platform-icon.svg",
+          "iconMobile": "/kz/on-premises/assets/dev-platform-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/artifactory",
+          "title": "Artifactory",
+          "description": "Специализированное хранилище для управления бинарными артефактами",
+          "icon": "/kz/on-premises/assets/artifactory-icon.svg",
+          "iconMobile": "/kz/on-premises/assets/artifactory-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/security-gate",
+          "title": "VK Security Gate",
+          "description": "Автоматизация безопасной разработки ПО: проверки в CI/CD и сканирование GitLab",
+          "icon": "/kz/on-premises/assets/security-gate-icon.svg",
+          "iconMobile": "/kz/on-premises/assets/security-gate-mobile-icon.svg"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "title": "MLflow",
+  "shortDescription": "MLflow — MLOps міндеттерін шешуге арналған негізгі open source құралдардың бірі",
+  "metaDescription": "MLflow — MLflow инстанстарын жасау және олармен жұмыс істеу сервисі",
+  "sectionTitle": "MLflow",
+  "icon": "",
+  "weight": 4,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+      "title": "Terraform көмегімен MLflow инстансын жасау"
+    },
+    {
+      "partialPath": "/kz/ml/mlplatform/mlplatform-lib",
+      "title": "Cloud ML Platform кітапханасымен жұмыс істеу"
+    }
+  ]
+}

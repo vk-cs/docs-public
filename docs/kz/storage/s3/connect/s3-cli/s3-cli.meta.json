@@ -1,0 +1,8 @@
+{
+  "title": "CLI",
+  "shortDescription": "VK Object Storage қоймасына AWS CLI, s3cmd CLI арқылы қосылу",
+  "metaDescription": "AWS CLI-ді VK Object Storage қоймасына кезең-кезеңімен баптау және қосу: AWS CLI орнату, қатынау кілттерін жасау және қосу, профильді конфигурациялау (region, output), S3 endpoint URL пайдалану, қосылымды тексеру және негізгі командалар.",
+  "sectionTitle": "CLI",
+  "icon": "",
+  "weight": 1
+}

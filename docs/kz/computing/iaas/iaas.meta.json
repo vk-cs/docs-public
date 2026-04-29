@@ -1,0 +1,13 @@
+{
+  "title": "Cloud Servers",
+  "shortDescription": "Бұлтты серверді, файлдық және блоктық қойманы жалға алу, қосымшалар мен сервистерге шектеусіз қолдау",
+  "metaDescription": "Cloud Servers — бұл виртуалды машиналарды оңай жасауға, әкімшілендіруге және масштабтауға мүмкіндік беретін VK Cloud бұлтты есептеулер сервисі. Cloud Servers сервисін веб-қосымшаларды, дерекқорларды, ойын серверлерін және есептеу ресурстарын қажет ететін басқа да міндеттерді іске қосу үшін пайдаланыңыз.",
+  "sectionTitle": "Cloud Servers",
+  "icon": "",
+  "weight": 1,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/iaas/create"
+    }
+  ]
+}

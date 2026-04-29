@@ -1,0 +1,13 @@
+{
+  "title": "Cloud Desktop",
+  "shortDescription": "Пайдаланушыларға VDI қағидаты бойынша қашықтағы сервердегі жұмыс үстелдерін ұсыну",
+  "metaDescription": "Пайдаланушыларға қашықтағы сервердегі жұмыс үстелдерін ұсынуға арналған Cloud Desktop сервисі",
+  "sectionTitle": "Cloud Desktop",
+  "icon": "",
+  "weight": 4,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/vdi-api"
+    }
+  ]
+}

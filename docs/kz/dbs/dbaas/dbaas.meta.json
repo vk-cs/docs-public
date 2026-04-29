@@ -1,0 +1,34 @@
+{
+  "title": "Cloud Databases",
+  "shortDescription": "Басқарылатын және ауқымдалатын бұлттық дерекқорлар",
+  "metaDescription": "Cloud Databases — бұлттық дерекқорлар (Database as a service). Сервис бұлтта MySQL, PostgreSQL, MongoDB, Tarantool негізіндегі шешімдерді өрістетуге мүмкіндік береді",
+  "sectionTitle": "Cloud Databases",
+  "icon": "",
+  "weight": 7,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/clickhouse"
+    },
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/mongodb"
+    },
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/mysql"
+    },
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/opensearch"
+    },
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/postgresql"
+    },
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/redis"
+    },
+    {
+      "partialPath": "/kz/dbs/dbaas/concepts/types/tarantool"
+    },
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance"
+    }
+  ]
+}

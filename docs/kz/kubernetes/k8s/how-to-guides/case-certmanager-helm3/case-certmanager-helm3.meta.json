@@ -1,0 +1,8 @@
+{
+  "title": "Helm 3 көмегімен cert-manager-пен жұмыс істеу",
+  "shortDescription": "cert-manager-ді қалай орнатуға және жаңартуға болады",
+  "metaDescription": "Пайдалану сценарийлері: Kubernetes кластерлерінде Helm 3 көмегімен cert-manager-ді орнату және жаңарту.",
+  "sectionTitle": "Helm 3 көмегімен cert-manager-пен жұмыс істеу",
+  "icon": "",
+  "weight": 9
+}

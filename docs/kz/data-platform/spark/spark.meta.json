@@ -1,0 +1,8 @@
+{
+  "title": "VK Data Platform платформасындағы Spark",
+  "shortDescription": "Үлкен деректерді үлестірілген өңдеуге арналған Apache Spark негізіндегі сервис",
+  "metaDescription": "VK Data Platform платформасындағы Spark сервисімен жұмыс: сервис данасының параметрлері, дананы жасау және онымен жұмыс, тарификация",
+  "sectionTitle": "VK Data Platform платформасындағы Spark",
+  "icon": "",
+  "weight": 3
+}

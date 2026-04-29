@@ -1,0 +1,247 @@
+{include(/kz/_includes/_translated_by_ai.md)}
+
+[Docker CE](https://docs.docker.com/get-started/overview/) (Community Edition) — контейнерленген қолданбалармен жұмыс істеуге арналған платформа. Мұндай қолданбалар қолданбаның жұмыс істеуі үшін қажеттіның бәрін қамтитын контейнерлер түрінде жеткізіледі. Бұл қолданбаларды жылдам құрастыруға, өрістетуге және жөндеуге мүмкіндік береді.
+
+Контейнерлер виртуалды машиналарға ұқсас, бірақ олар анағұрлым жеңіл. Контейнерленген қолданбаның ресурстарын оқшаулау үшін контейнерлер өздері іске қосылған операциялық жүйенің құралдарын пайдаланады.
+
+## Дайындық қадамдары
+
+Мыналарға көз жеткізіңіз:
+
+- Сізде Docker CE орнату жоспарланған Ubuntu жүйесі бар хост терминалына қолжетімділік бар.
+- Бұл хостта командаларды суперпайдаланушы (`root`) атынан орындау үшін `sudo` пайдалана аласыз.
+
+## 1. Docker CE орнатыңыз
+
+1. Терминалға қосылыңыз.
+
+   Барлық келесі әрекеттер осы терминалда орындалады.
+
+1. Әрі қарай орнатуға қажет пакеттерді орнатыңыз:
+
+   ```console
+   sudo apt update && \
+   sudo apt install -y \
+     apt-transport-https \
+     ca-certificates \
+     curl \
+     software-properties-common
+   ```
+
+1. Docker репозиторийінің GPG кілтін кілттер қоймасына қосыңыз:
+
+   ```console
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   ```
+
+1. GPG кілтінің сәтті қосылғанына көз жеткізіңіз:
+
+   ```console
+   apt-key list
+   ```
+
+   Команда нәтижесінде Docker репозиторийінің GPG кілті туралы ақпарат көрсетілуі тиіс.
+
+   {cut(Шығыс мысалы)}
+
+   ```text
+   /etc/apt/trusted.gpg
+   --------------------
+   pub   rsa4096 2017-02-22 [SCEA]
+         9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+   uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
+   sub   rsa4096 2017-02-22 [S]
+
+   ...
+   ```
+
+   {/cut}
+
+1. Docker репозиторийін қосыңыз:
+
+   ```console
+   sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   ```
+1. Репозиторийді жаңартыңыз:
+
+   ```console
+   sudo apt update
+   ```
+
+1. Репозиторийдің сәтті қосылғанына көз жеткізіңіз:
+
+   ```console
+   apt-cache policy docker-ce
+   ```
+
+   Команда нәтижесінде орнатуға қолжетімді `docker-ce` пакетінің нұсқалары туралы ақпарат көрсетілуі тиіс.
+
+   {cut(Шығыс мысалы)}
+
+   ```text
+   docker-ce:
+     Installed: (none)
+     Candidate: 5:23.0.1-1~ubuntu.18.04~bionic
+     Version table:
+        5:23.0.1-1~ubuntu.18.04~bionic 500
+           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+        5:23.0.0-1~ubuntu.18.04~bionic 500
+           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+        5:20.10.23~3-0~ubuntu-bionic 500
+           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+        5:20.10.22~3-0~ubuntu-bionic 500
+           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+        5:20.10.21~3-0~ubuntu-bionic 500
+           500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+        5:20.10.20~3-0~ubuntu-bionic 500
+
+       ...
+   ```
+
+   {/cut}
+
+1. Docker CE орнатыңыз:
+
+   ```console
+   sudo apt install docker-ce -y
+   ```
+
+## 2. Орнатудың дұрыстығын тексеріңіз
+
+1. Терминалға қосылыңыз.
+
+   Барлық келесі әрекеттер осы терминалда орындалады.
+
+1. Docker CE орнатылғанына және іске қосылғанына көз жеткізіңіз:
+
+   ```console
+   sudo systemctl status docker --no-pager -l
+   ```
+
+   Команда нәтижесінде сервистің `active (running)` күйінде екені туралы ақпарат көрсетілуі тиіс.
+
+   {cut(Шығыс мысалы)}
+
+   ```text
+   ● docker.service - Docker Application Container Engine
+      Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+      Active: active (running) since Thu 2023-03-23 10:32:23 UTC; 1min 59s ago
+        Docs: https://docs.docker.com
+    Main PID: 8981 (dockerd)
+       Tasks: 7
+      CGroup: /system.slice/docker.service
+              └─8981 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+   Mar 23 10:32:20 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:20.707940356Z" level=info msg="[core] [Channel #4] Channel Connectivity change to READY" module=grpc
+   Mar 23 10:32:22 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:22.407748502Z" level=info msg="Loading containers: start."
+   Mar 23 10:32:22 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:22.569711943Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+   Mar 23 10:32:22 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:22.648337609Z" level=info msg="Loading containers: done."
+   Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.214584382Z" level=warning msg="WARNING: No swap limit support"
+   Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.215205554Z" level=info msg="Docker daemon" commit=bc3805a graphdriver=overlay2 version=23.0.1
+   Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.215556611Z" level=info msg="Daemon has completed initialization"
+   Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.343812634Z" level=info msg="[core] [Server #7] Server created" module=grpc
+   Mar 23 10:32:23 ubuntu18 systemd[1]: Started Docker Application Container Engine.
+   Mar 23 10:32:23 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:23.360190638Z" level=info msg="API listen on /run/docker.sock"
+   ```
+
+   {/cut}
+
+1. Орнатылған Docker CE туралы жалпы ақпаратты қараңыз:
+
+   ```console
+   sudo docker info
+   ```
+
+   {cut(Шығыс мысалы)}
+
+   ```text
+   Client:
+    Context:    default
+    Debug Mode: false
+
+   Server:
+    Containers: 0
+     Running: 0
+     Paused: 0
+     Stopped: 0
+    Images: 0
+    Server Version: 23.0.1
+    Storage Driver: overlay2
+     Backing Filesystem: extfs
+     Supports d_type: true
+     Using metacopy: false
+     Native Overlay Diff: true
+     userxattr: false
+    Logging Driver: json-file
+    Cgroup Driver: cgroupfs
+    Cgroup Version: 1
+    Plugins:
+     Volume: local
+     Network: bridge host ipvlan macvlan null overlay
+     Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+    Swarm: inactive
+    Runtimes: io.containerd.runc.v2 runc
+    Default Runtime: runc
+    Init Binary: docker-init
+    containerd version: 2456e983eb9e37e47538f59ea18f2043c9a73640
+    runc version: v1.1.4-0-g5fd4c4d
+    init version: de40ad0
+    Security Options:
+     apparmor
+     seccomp
+      Profile: builtin
+    Kernel Version: 4.15.0-88-generic
+    Operating System: Ubuntu 18.04.4 LTS
+    OSType: linux
+    Architecture: x86_64
+    CPUs: 1
+    Total Memory: 1.946GiB
+    Name: ubuntu18
+    ID: 999b21f9-7ff7-4fde-ac59-xxxxxxxxxxxx
+    Docker Root Dir: /var/lib/docker
+    Debug Mode: false
+    Registry: https://index.docker.io/v1/
+    Experimental: false
+    Insecure Registries:
+     127.0.0.0/8
+    Live Restore Enabled: false
+
+   WARNING: No swap limit support
+   ```
+
+   {/cut}
+
+1. `hello-world` тестілік контейнерін іске қосыңыз:
+
+   ```console
+   sudo docker run --rm hello-world
+   ```
+
+   Контейнер сәлемдесу хабарламасын шығарып, жұмысын аяқтайды.
+
+   {cut(Шығыс мысалы)}
+
+   ```text
+   Hello from Docker!
+   This message shows that your installation appears to be working correctly.
+
+   To generate this message, Docker took the following steps:
+    1. The Docker client contacted the Docker daemon.
+    2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+       (amd64)
+    3. The Docker daemon created a new container from that image which runs the
+       executable that produces the output you are currently reading.
+    4. The Docker daemon streamed that output to the Docker client, which sent it
+       to your terminal.
+
+   To try something more ambitious, you can run an Ubuntu container with:
+    $ docker run -it ubuntu bash
+
+   Share images, automate workflows, and more with a free Docker ID:
+    https://hub.docker.com/
+
+   For more examples and ideas, visit:
+    https://docs.docker.com/get-started/
+   ```
+
+   {/cut}

@@ -1,0 +1,8 @@
+{
+  "title": "Кластер мониторингі",
+  "shortDescription": "Kubernetes кластерінің күйін қалай бақылауға болады",
+  "metaDescription": "Cloud Containers: Kubernetes кластерінің мониторингі, кластер күйін бақылау, Grafana және Prometheus пайдалану",
+  "sectionTitle": "Кластер мониторингі",
+  "icon": "",
+  "weight": 6
+}

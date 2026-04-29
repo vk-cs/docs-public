@@ -10,7 +10,7 @@ export const config = {
                 content: '6c9a89c60e5f8e06',
             },
         ],
-        locales: ['ru', 'en'],
+        locales: ['ru', 'en', 'kz'],
         defaultLocale: 'ru',
         logoLink: 'https://cloud.vk.com',
         canonicalBaseUrl: 'https://cloud.vk.com/docs',
@@ -108,6 +108,28 @@ export const config = {
                     absoluteLink: 'https://cloud.vk.com/en/',
                     iconPartialPath: '/ru/assets/web-site.svg',
                 },
+            ],
+            kz: [
+                {
+                    title: 'Техникалық қолдау порталы',
+                    absoluteLink: 'https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud',
+                    iconPartialPath: '/ru/assets/portal-support.svg',
+                },
+                {
+                    title: 'Техникалық қолдау Telegram-боты',
+                    absoluteLink: 'https://t.me/vk_tech_support_bot',
+                    iconPartialPath: '/ru/assets/telegram-icon.svg',
+                },
+                {
+                    title: 'Telegram-дағы AI кеңесшісі',
+                    absoluteLink: 'https://t.me/vk_cloud_support_bot',
+                    iconPartialPath: '/ru/assets/ai-bot.svg',
+                },
+                {
+                    title: 'VK Cloud сайты',
+                    absoluteLink: 'https://cloud.vk.com/',
+                    iconPartialPath: '/ru/assets/web-site.svg',
+                },
             ]
         }
     },
@@ -153,6 +175,9 @@ export const config = {
         },
         ru: {
             'LeftMenu.BackLink': 'На главную',
+        },
+        kz: {
+            'LeftMenu.BackLink': 'Басты бетке',
         },
     },
 };

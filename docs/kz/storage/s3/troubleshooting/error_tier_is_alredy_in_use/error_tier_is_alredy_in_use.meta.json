@@ -1,0 +1,8 @@
+{
+  "title": "VK Object Storage-пен интеграция кезіндегі қате",
+  "shortDescription": "MinIO-ны VK Object Storage-пен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
+  "metaDescription": "MinIO-ны VK Object Storage-пен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
+  "sectionTitle": "VK Object Storage-пен интеграция кезіндегі қате",
+  "icon": "",
+  "weight": 4
+}

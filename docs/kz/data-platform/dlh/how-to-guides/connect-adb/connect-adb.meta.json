@@ -1,0 +1,8 @@
+{
+  "title": "ClickHouse-ты аналитикалық ДҚ ретінде қосу",
+  "shortDescription": "Data Lakehouse сервисі үшін аналитикалық ДҚ ретінде ClickHouse сервисі данасын қалай өрістетуге болады",
+  "metaDescription": "ClickHouse сервисі данасын қалай өрістетуге болады.",
+  "sectionTitle": "Аналитикалық ДҚ-ны қосу",
+  "icon": "",
+  "weight": 1
+}

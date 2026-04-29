@@ -8,7 +8,7 @@
 
 ## {heading(Базовые роли)[id=iam-roles-reference-basic]}
 
-Базовые роли, кроме роли `mcs_owner`, используются для [настройки прав доступа](ru/access/iam/instructions/manage-roles) в сочетании с [разрешениями](ru/access/iam/concepts/permissions-reference).
+Базовые роли, кроме роли `mcs_owner`, используются для [настройки прав доступа](/ru/access/iam/instructions/manage-roles) в сочетании с [разрешениями](/ru/access/iam/concepts/permissions-reference).
 
 ### {heading(mcs_owner)[id=mcs_owner]}
 

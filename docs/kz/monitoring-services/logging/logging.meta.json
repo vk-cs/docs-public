@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Logging",
+  "shortDescription": "Логтарды жинау және талдау сервисі",
+  "metaDescription": "Cloud Logging: VK Cloud бұлтында логтарды жинау, сақтау және өңдеу",
+  "sectionTitle": "Cloud Logging",
+  "icon": "",
+  "weight": 1,
+  "isBeta": true,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/logging"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Lifecycle",
+  "shortDescription": "",
+  "metaDescription": "VK Object Storage жүйесіндегі объектілердің өмірлік циклімен жұмыс істеуге арналған барлық қолжетімді әдістер: Get Bucket Lifecycle Configuration - бакеттегі өмірлік цикл конфигурациясын қарау\nConfigure",
+  "sectionTitle": "Lifecycle",
+  "icon": "",
+  "weight": 6
+}

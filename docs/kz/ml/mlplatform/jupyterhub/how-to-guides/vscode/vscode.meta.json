@@ -1,0 +1,8 @@
+{
+  "title": "Visual Studio Code көмегімен JupyterHub-қа қосылу",
+  "shortDescription": "Жергілікті VS Code пайдаланып, бұлттағы JupyterHub серверіне қосылу",
+  "metaDescription": "JupyterHub мен Visual Studio Code.",
+  "sectionTitle": "JupyterHub мен Visual Studio Code",
+  "icon": "",
+  "weight": 1
+}

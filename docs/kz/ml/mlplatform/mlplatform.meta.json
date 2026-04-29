@@ -1,0 +1,8 @@
+{
+  "title": "Cloud ML Platform",
+  "shortDescription": "ML әзірлеудің толық циклі мен Data-командалардың бірлескен жұмысына арналған платформа",
+  "metaDescription": "Cloud ML Platform — JupyterHub, MLflow және MLflow Deploy инстанстарын жасау және олармен жұмыс істеу сервисі",
+  "sectionTitle": "Cloud ML Platform",
+  "icon": "",
+  "weight": 1
+}

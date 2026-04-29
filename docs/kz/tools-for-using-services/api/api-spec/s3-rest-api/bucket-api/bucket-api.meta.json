@@ -1,0 +1,8 @@
+{
+  "title": "Bucket",
+  "shortDescription": "",
+  "metaDescription": "Бакеттермен операциялар: Create - бакет құру\nListBuckets - бакеттер тізімін алу\nHeadBucket - бакеттің бар-жоғын және оған қолжетімділікті тексеру \nListObjects - алу",
+  "sectionTitle": "Bucket",
+  "icon": "",
+  "weight": 2
+}

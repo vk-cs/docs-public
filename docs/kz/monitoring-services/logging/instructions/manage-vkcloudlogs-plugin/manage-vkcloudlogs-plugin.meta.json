@@ -1,0 +1,8 @@
+{
+  "title": "Логтау агентін басқару",
+  "shortDescription": "Виртуалды машинада vkcloudlogs-fluent-bit.service агентін қалай басқаруға болады",
+  "metaDescription": "VK Cloud: vkcloudlogs-fluent-bit.service агентін қалай басқаруға болады",
+  "sectionTitle": "Логтау агентін басқару",
+  "icon": "",
+  "weight": 3
+}

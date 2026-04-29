@@ -1,0 +1,18 @@
+{
+  "title": "JupyterHub",
+  "shortDescription": "ML-әзірлеудің толық цикліне және Data-командалардың бірлескен жұмысына арналған платформа",
+  "metaDescription": "JupyterHub сервисімен қалай жұмыс істеуге болатынын біліңіз — бұл ML-әзірлеудің толық цикліне және Data-командалардың бірлескен жұмысына арналған платформа",
+  "sectionTitle": "JupyterHub",
+  "icon": "",
+  "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
+      "title": "Terraform көмегімен JupiterHub инстансын жасау"
+    },
+    {
+      "partialPath": "/kz/ml/mlplatform/mlplatform-lib",
+      "title": "Cloud ML Platform кітапханасымен жұмыс істеу"
+    }
+  ]
+}

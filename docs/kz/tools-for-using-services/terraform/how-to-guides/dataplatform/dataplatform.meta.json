@@ -1,0 +1,8 @@
+{
+  "title": "VK Data Platform",
+  "shortDescription": "VK Data Platform сервисінің объектілерін басқару үшін Terraform қалай пайдаланылады",
+  "metaDescription": "VK Data Platform сервистерінің даналарын басқару үшін Terraform қалай пайдаланылатынын біліңіз. Spark кластерін құру мысалымен танысыңыз.",
+  "sectionTitle": "VK Data Platform",
+  "icon": "",
+  "weight": 80
+}

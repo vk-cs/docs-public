@@ -1,0 +1,9 @@
+{
+  "title": "Cloud Databases",
+  "shortDescription": "Cloud Databases сервисінің OpenAPI спецификациясы",
+  "metaDescription": "VK Cloud: API DBaaS көмегімен Cloud Databases басқару.",
+  "sectionTitle": "Cloud Databases",
+  "hidden": false,
+  "icon": "",
+  "weight": 4
+}

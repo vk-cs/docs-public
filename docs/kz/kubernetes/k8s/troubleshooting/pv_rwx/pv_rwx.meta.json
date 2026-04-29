@@ -1,0 +1,8 @@
+{
+  "title": "RWX режимі жұмыс істемейді",
+  "shortDescription": "ReadWriteMany (RWX) томына қол жеткізу режимін пайдалану кезіндегі мәселелер",
+  "metaDescription": "ReadWriteMany (RWX) томына қол жеткізу режимін пайдалану кезіндегі мәселелер",
+  "sectionTitle": "RWX режимі жұмыс істемейді",
+  "icon": "",
+  "weight": 3
+}

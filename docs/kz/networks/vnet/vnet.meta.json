@@ -1,0 +1,13 @@
+{
+  "title": "Cloud Networks",
+  "shortDescription": "Серверлерді жергілікті желілерге біріктіру, трафикті теңгеру және сүзгілеу",
+  "metaDescription": "Cloud Networks виртуалды машиналардың желілік қолжетімділігін басқарады, оларға жүктеме теңгергіштерін қосуға, оларды желілер мен ішкі желілерге біріктіруге, ба",
+  "sectionTitle": "Cloud Networks",
+  "icon": "",
+  "weight": 1,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/vnet/network"
+    }
+  ]
+}

@@ -1,0 +1,696 @@
+{includetag(not_db_onboarding)}
+## Дайындық қадамдары
+
+1. `psql` утилитасы орнатылғанына көз жеткізіңіз. Ол үшін утилитаның нұсқасын қараңыз:
+
+   ```console
+   psql --version
+   ```
+
+   Егер утилита орнатылған болса, оның нұсқасы көрсетіледі:
+
+   ```text
+   psql (PostgreSQL) 14.7
+   ```
+
+   Егер утилита орнатылмаған болса, `psql` командасы табылмағаны туралы ақпарат көрсетіледі.
+
+1. Егер `psql` утилитасы орнатылмаған болса, оны орнатыңыз:
+
+   {tabs}
+
+   {tab(Linux (APT))}
+
+   1. PostgreSQL репозиторийін қосыңыз:
+
+      ```console
+      sudo apt install curl ca-certificates gnupg
+      curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
+      sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+      sudo apt update
+      ```
+
+   1. `psql` утилитасын орнатыңыз:
+
+      ```console
+      sudo apt install -y postgresql-client
+      ```
+
+   {/tab}
+
+   {tab(Linux (RPM))}
+
+   1. PostgreSQL репозиторийін қосыңыз:
+
+      1. [RedHat тектес Linux үшін PostgreSQL жүктеу бетінде](https://www.postgresql.org/download/linux/redhat/) сауалнаманы толтырыңыз:
+
+         1. **Select version**: ең өзекті нұсқаны таңдаңыз.
+         1. **Select platform**: операциялық жүйе дистрибутивін таңдаңыз.
+         1. **Select architecture**: архитектураны таңдаңыз. Қай архитектураны таңдау керегін білмесеңіз, `x86_64` таңдаңыз.
+
+         Орнату скриптінің мәтіні пайда болады.
+
+      1. Скрипттегі `Install the repository RPM` түсіндірмесінің астындағы команданы көшіріңіз. Оның түрі таңдалған дистрибутивке байланысты:
+
+         {tabs}
+
+         {tab(yum)}
+
+         ```console
+         sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
+
+         {/tab}
+
+         {tab(dnf)}
+
+         ```console
+         sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
+
+         {/tab}
+
+         {/tabs}
+
+      1. Көшірілген команданы орындаңыз.
+
+      1. Егер `sudo dnf...` түріндегі команда қолданылса, PostgreSQL кірістірілген модулін өшіріңіз:
+
+         ```console
+         sudo dnf -qy module disable postgresql
+         ```
+
+   1. `psql` утилитасын орнатыңыз:
+
+      {tabs}
+
+      {tab(yum)}
+
+      ```console
+      sudo yum install -y postgresql
+      ```
+
+      {/tab}
+
+      {tab(dnf)}
+
+      ```console
+      sudo dnf install -y postgresql
+      ```
+
+      {/tab}
+
+      {/tabs}
+
+   {/tab}
+
+   {tab(macOS (Homebrew))}
+
+   1. `psql` утилитасын орнатыңыз:
+
+      ```zsh
+      brew install libpq
+      ```
+
+   1. `libpq` орындалатын файлдарына символдық сілтемелер жасаңыз:
+
+      ```zsh
+      brew link --force libpq
+      ```
+
+      Бұл `psql` утилитасын оның орындалатын файлына толық жолды көрсетпей іске қосу үшін қажет.
+
+   {/tab}
+
+   {tab(Windows)}
+
+   1. PostgreSQL-дің ең өзекті нұсқасына арналған [EDB орнатқышын жүктеп алыңыз](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
+
+   1. Орнатуды орындаңыз.
+
+      Орнату кезінде:
+      1. **Installation Directory** қадамында орнату орындалатын жолды жазып алыңыз.
+      1. **Select Components** қадамында **Command Line Tools** компонентінен басқасының барлығынан таңдауды алып тастаңыз.
+
+   1. PostgreSQL пәрмен жолы утилиталарының орындалатын файлдарына дейінгі жолды `Path` орта айнымалысына қосыңыз:
+
+      1. **Пуск → Этот компьютер → Свойства → Дополнительные параметры системы → Переменные среды** тармағын ашыңыз.
+      1. **Системные переменные** тізімінде `Path` айнымалысының мәнін өзгертіп, оған PostgreSQL пәрмен жолы утилиталарының орындалатын файлдары орналасқан директорияға дейінгі жолды қосыңыз.
+
+         Әдепкі параметрлермен орнатылғандағы жолдың мысалы:
+
+         ```text
+         C:\Program Files\PostgreSQL\15\bin\
+         ```
+
+   {/tab}
+
+   {/tabs}
+
+{/includetag}
+
+## {heading({counter(db)}. PostgreSQL БД инстансын жасаңыз)[id=instance_create]}
+
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. БД инстансы орналастырылатын [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
+1. **Базы данных → Инстансы баз данных** бөліміне өтіңіз.
+1. Егер таңдалған жобада бірде-бір БД инстансы болмаса, **Создать базу данных** батырмасын басыңыз.
+
+   Әйтпесе **Добавить** батырмасын басыңыз.
+
+1. **Конфигурация** қадамында мыналарды таңдаңыз:
+
+    - **PostgreSQL** дерекқор түрін және СУБД-ның ең өзекті нұсқасын.
+    - **Single** конфигурациясын.
+
+1. **Следующий шаг** батырмасын басыңыз.
+
+1. **Создание инстанса** қадамында мыналарды орнатыңыз:
+
+    - **Имя инстанса базы данных:** мысалы, `vk-cloud-dbaas-quickstart`.
+    - **Тип виртуальной машины:** `STD3-2-8`.
+    - **Зону доступности:** `Москва (GZ1)`.
+    - **Тип диска:** `SSD`.
+    - **Размер диска, GB:** `10`.
+    - **Включить автомасштабирование диска:** бұл опция таңдалмағанына көз жеткізіңіз.
+    - **Сеть:** `Создать новую сеть`.
+    - **Адрес подсети:** `10.0.1.0/24`.
+    - **Назначить внешний IP:** бұл опция таңдалғанына көз жеткізіңіз.
+    - **Настройки Firewall:** ашылмалы тізімнен `ssh` таңдаңыз.
+
+      Қауіпсіздік топтарының қорытынды тізімі мынадай болуы тиіс: `default`, `ssh`.
+
+    - **Создать реплику:** бұл опция таңдалмағанына көз жеткізіңіз.
+    - **Ключ для доступа по SSH:** `Создать новый ключ`.
+
+      {note:info}
+
+      Бұл опцияны таңдағанда компьютеріңізге жеке SSH кілті жүктеледі. Оны сақтап қойыңыз.
+
+      Бұл кілт инстансқа SSH арқылы қосылғанда, мысалы [инстанс логтарын қарау](#instance_logs) үшін қажет болады.
+
+      {/note}
+
+    - **Резервное копирование:** `Отключено`.
+
+1. **Следующий шаг** батырмасын басыңыз.
+
+1. **Инициализация** қадамында мыналарды орнатыңыз:
+
+    - **Тип создания:** `Новая база данных`.
+    - **Имя базы данных для создания:** `tsdb1`.
+    - **Имя пользователя:** `tsuser1`.
+    - **Пароль пользователя:** пароль орнатыңыз немесе оны жасаңыз.
+
+      {note:info}
+
+      Пароль жеткілікті түрде күрделі екеніне көз жеткізіңіз.
+
+      Парольдің жоғары сенімділігі маңызды, себебі бұл БД инстансы интернеттен қолжетімді болады.
+
+      {/note}
+
+1. **Создать базу данных** батырмасын басыңыз.
+
+   БД инстансын жасау аяқталғанша күтіңіз, бұл процесс ұзақ уақыт алуы мүмкін.
+
+## {heading({counter(db)}. БД инстансының сыртқы IP-мекенжайын алыңыз)[id=instance_ip]}
+
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. БД инстансы орналасқан жобаны таңдаңыз.
+1. **Базы данных → Инстансы баз данных** бөліміне өтіңіз.
+1. БД инстансының атауын басыңыз. Ақпарат беті ашылады.
+1. **Информация** қойындысына өтіңіз.
+
+   Қажетті мекенжай **Внешний IP-адрес** параметрінде көрсетіледі.
+
+## {heading({counter(db)}. (Қосымша) БД инстансының логтарын қараңыз)[id=instance_logs]}
+
+1. [БД инстансын жасау](#instance_create) кезінде алынған жеке SSH кілтін пайдаланып, БД инстансына SSH арқылы қосылыңыз:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+   ```console
+   chmod 0600 <путь/к/ключу/ключ.pem>
+   ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
+
+   ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   ```console
+   ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Инстанс логтарын қараңыз:
+
+   ```console
+   journalctl -u postgresql
+   ```
+
+   {cut(Шығыс фрагментінің мысалы)}
+
+   ```text
+   -- Logs begin at Fri 2023-05-19 10:28:34 UTC, end at Mon 2023-05-22 06:08:42 UTC. --
+   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Starting PostgreSQL 14 database server...
+   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal postmaster[1096]: 2023-05-19 10:28:41.800 UTC [1096] LOG:  redirecting log output to logging collector process
+   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal postmaster[1096]: 2023-05-19 10:28:41.800 UTC [1096] HINT:  Future log output will appear in directory "log".
+   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Started PostgreSQL 14 database server.
+   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Stopping PostgreSQL 14 database server...
+   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: postgresql.service: Succeeded.
+   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Stopped PostgreSQL 14 database server.
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Starting PostgreSQL 14 database server...
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  starting PostgreSQL 14.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-16), 64-bit
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  listening on IPv6 address "::", port 5432
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.725 GMT [1978] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1980]: 2023-05-19 10:29:33.735 GMT [1980] LOG:  database system was shut down at 2023-05-19 10:29:18 GMT
+   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.828 GMT [1978] LOG:  database system is ready to accept connections
+
+   ...
+   ```
+
+   {/cut}
+
+   Келтірілген шығыс фрагменті бойынша PostgreSQL іске қосылғанын, жұмыс істеп тұрғанын және кіріс қосылымдарды қабылдауға дайын екенін қорытындылауға болады.
+
+## {heading({counter(db)}. TimescaleDB кеңейтімін орнатыңыз)[id=install_timescaledb]}
+
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. БД инстансы орналасқан жобаны таңдаңыз.
+1. **Базы данных → Инстансы баз данных** бөліміне өтіңіз.
+1. БД инстансының атауын басыңыз. Ақпарат беті ашылады.
+1. **Расширения** қойындысына өтіңіз.
+1. **Добавить** батырмасын басыңыз.
+1. **Доступные расширения** ашылмалы тізімінен `Расширение с открытым исходным кодом для хранения данных временного ряда (timescaledb)` таңдаңыз.
+1. **Добавить** батырмасын басыңыз.
+
+   Кеңейтімді орнату аяқталғанша күтіңіз: оның күйі `Создается` күйінен `Активное` күйіне ауысуы тиіс.
+
+## {heading({counter(db)}. Дерекқорға қосылыңыз)[id=db_connect]}
+
+{includetag(db_onboarding)}
+1. `psql` утилитасын орнатыңыз:
+
+   {tabs}
+
+   {tab(Linux (APT))}
+
+   1. PostgreSQL репозиторийін қосыңыз:
+
+      ```console
+      sudo apt install curl ca-certificates gnupg
+      curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg > /dev/null
+      sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+      sudo apt update
+      ```
+
+   1. `psql` утилитасын орнатыңыз:
+
+      ```console
+      sudo apt install -y postgresql-client
+      ```
+
+   {/tab}
+
+   {tab(Linux (RPM))}
+
+   1. PostgreSQL репозиторийін қосыңыз:
+
+      1. [RedHat тектес Linux үшін PostgreSQL жүктеу бетінде](https://www.postgresql.org/download/linux/redhat/) сауалнаманы толтырыңыз:
+
+         * **Select version**: ең өзекті нұсқаны таңдаңыз.
+         * **Select platform**: операциялық жүйе дистрибутивін таңдаңыз.
+         * **Select architecture**: архитектураны таңдаңыз. Қай архитектураны таңдау керегін білмесеңіз, `x86_64` таңдаңыз.
+
+         Орнату скриптінің мәтіні пайда болады.
+
+      1. Скрипттегі `Install the repository RPM` түсіндірмесінің астындағы команданы көшіріңіз. Оның түрі таңдалған дистрибутивке байланысты:
+
+         {tabs}
+
+         {tab(yum)}
+
+         ```console
+         sudo yum install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
+
+         {/tab}
+
+         {tab(dnf)}
+
+         ```console
+         sudo dnf install -y https://download.postgresql.org/pub/repos/yum/...
+         ```
+
+         {/tab}
+
+         {/tabs}
+
+      1. Көшірілген команданы орындаңыз.
+
+      1. Егер `sudo dnf...` түріндегі команда қолданылса, PostgreSQL кірістірілген модулін өшіріңіз:
+
+         ```console
+         sudo dnf -qy module disable postgresql
+         ```
+
+   1. `psql` утилитасын орнатыңыз:
+
+      {tabs}
+
+      {tab(yum)}
+
+      ```console
+      sudo yum install -y postgresql
+      ```
+
+      {/tab}
+
+      {tab(dnf)}
+
+      ```console
+      sudo dnf install -y postgresql
+      ```
+
+      {/tab}
+
+      {/tabs}
+
+   {/tab}
+
+   {tab(macOS (Homebrew))}
+
+   1. `psql` утилитасын орнатыңыз:
+
+      ```zsh
+      brew install libpq
+      ```
+
+   1. `libpq` орындалатын файлдарына символдық сілтемелер жасаңыз:
+
+      ```zsh
+      brew link --force libpq
+      ```
+
+      Бұл `psql` утилитасын оның орындалатын файлына толық жолды көрсетпей іске қосу үшін қажет.
+
+   {/tab}
+
+   {tab(Windows)}
+
+   1. PostgreSQL-дің ең өзекті нұсқасына арналған [EDB орнатқышын жүктеп алыңыз](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
+
+   1. Орнатуды орындаңыз.
+
+      Орнату кезінде:
+      1. **Installation Directory** қадамында орнату орындалатын жолды жазып алыңыз.
+      1. **Select Components** қадамында **Command Line Tools** компонентінен басқасының барлығынан таңдауды алып тастаңыз.
+
+   1. PostgreSQL пәрмен жолы утилиталарының орындалатын файлдарына дейінгі жолды `Path` орта айнымалысына қосыңыз:
+
+      1. **Пуск → Этот компьютер → Свойства → Дополнительные параметры системы → Переменные среды** тармағын ашыңыз.
+      1. **Системные переменные** тізімінде `Path` айнымалысының мәнін өзгертіп, оған PostgreSQL пәрмен жолы утилиталарының орындалатын файлдары орналасқан директорияға дейінгі жолды қосыңыз.
+
+         Әдепкі параметрлермен орнатылғандағы жолдың мысалы:
+
+         ```text
+         C:\Program Files\PostgreSQL\15\bin\
+         ```
+
+   {/tab}
+
+   {/tabs}
+{/includetag}
+
+1. `tsdb1` дерекқорына `psql` утилитасының көмегімен қосылыңыз:
+
+   1. Команданы орындаңыз:
+
+      ```console
+      psql -h <внешний IP-адрес инстанса БД> -d tsdb1 -U tsuser1
+      ```
+
+   1. [БД инстансын жасау](#instance_create) кезінде орнатылған `tsuser1` пайдаланушысының паролін енгізіңіз.
+
+   Қосылу сәтті болған жағдайда келесі шақыру көрсетілуі тиіс:
+
+   ```console
+   tsdb1=>
+   ```
+
+{note:warn}
+
+Барлық келесі қадамдар `psql` пәрмен жолында орындалуы тиіс.
+
+{/note}
+
+## {heading({counter(db)}. Қажетті кестелерді жасаңыз)[id=tables_create]}
+
+1. TimescaleDB кеңейтімін белсендіріңіз:
+
+   ```sql
+   CREATE EXTENSION timescaledb;
+   ```
+
+   `tsdb1=>` шақыруы пайда болғанша күтіңіз.
+
+1. `sensors` кестесін жасаңыз:
+
+   ```sql
+   CREATE TABLE sensors(
+     id SERIAL PRIMARY KEY,
+     type VARCHAR(50),
+     location VARCHAR(50)
+   );
+   ```
+
+1. `sensor_data` кестесін жасаңыз:
+
+   ```sql
+   CREATE TABLE sensor_data (
+     time TIMESTAMPTZ NOT NULL,
+     sensor_id INTEGER,
+     temperature DOUBLE PRECISION,
+     cpu DOUBLE PRECISION,
+     FOREIGN KEY (sensor_id) REFERENCES sensors (id)
+   );
+   ```
+
+1. Кестелердің сәтті жасалғанына көз жеткізіңіз:
+
+   ```sql
+   SELECT tablename
+   FROM pg_catalog.pg_tables
+   WHERE tablename LIKE 'sensor%';
+   ```
+
+   {cut(Сұрау нәтижесі)}
+
+   ```text
+     tablename
+   -------------
+    sensor_data
+    sensors
+   (2 rows)
+   ```
+
+   {/cut}
+
+1. PostgreSQL `sensor_data` кестесін TimescaleDB гиперкестесіне ([hypertable](https://docs.timescale.com/use-timescale/latest/hypertables/)) түрлендіріңіз:
+
+   ```sql
+   SELECT create_hypertable('sensor_data', 'time');
+   ```
+
+1. `sensor_data` гиперкестесінің сәтті жасалғанына көз жеткізіңіз:
+
+   ```sql
+   SELECT hypertable_name
+   FROM timescaledb_information.hypertables;
+   ```
+
+   {cut(Сұрау нәтижесі)}
+
+   ```text
+    hypertable_name
+   -----------------
+    sensor_data
+   (1 row)
+   ```
+
+   {/cut}
+
+## {heading({counter(db)}. Кестелерді деректермен толтырыңыз)[id=tables_fill]}
+
+{note:info}
+
+`sensor_data` кестесі кездейсоқ жасалған деректер жиынтығымен толтырылады, сондықтан сіздің кестеңіздегі деректер келтірілген мысалдардан өзгеше болады.
+
+{/note}
+
+1. `sensors` кестесін деректермен толтырыңыз:
+
+   ```sql
+   INSERT INTO sensors (type, location) VALUES
+   ('a','floor'),
+   ('a', 'ceiling'),
+   ('b','floor'),
+   ('b', 'ceiling');
+   ```
+
+1. Деректердің кестеге сәтті енгізілгеніне көз жеткізіңіз:
+
+   ```sql
+   SELECT * FROM sensors;
+   ```
+
+   {cut(Сұрау нәтижесі)}
+
+   ```text
+    id | type | location
+   ----+------+----------
+     1 | a    | floor
+     2 | a    | ceiling
+     3 | b    | floor
+     4 | b    | ceiling
+   (4 rows)
+   ```
+
+   {/cut}
+
+1. `sensor_data` кестесін кездейсоқ жасалған деректермен толтырыңыз:
+
+   ```sql
+   INSERT INTO sensor_data (time, sensor_id, cpu, temperature)
+   SELECT
+     time,
+     sensor_id,
+     random() AS cpu,
+     random()*100 AS temperature
+   FROM generate_series(now() - interval '24 hour', now(), interval '5 minute') AS g1(time), generate_series(1,4,1) AS g2(sensor_id);
+   ```
+
+1. Кестенің алғашқы бірнеше жолын шығарып, деректердің сәтті енгізілгеніне көз жеткізіңіз:
+
+   ```sql
+   SELECT * FROM sensor_data ORDER BY time LIMIT 8;
+   ```
+
+   {cut(Сұрау нәтижесінің мысалы)}
+
+   ```text
+                time              | sensor_id |    temperature     |         cpu
+   -------------------------------+-----------+--------------------+---------------------
+    2023-05-21 07:43:52.133888+00 |         4 | 34.633736865959364 |  0.5569185687389719
+    2023-05-21 07:43:52.133888+00 |         3 | 56.905440887294034 | 0.07377927779113236
+    2023-05-21 07:43:52.133888+00 |         1 |  56.63560698774681 |  0.5716904026292013
+    2023-05-21 07:43:52.133888+00 |         2 | 36.502832944119135 |  0.6536441978766803
+    2023-05-21 07:48:52.133888+00 |         4 |   76.2173939498279 |  0.6182606187228714
+    2023-05-21 07:48:52.133888+00 |         3 |  71.45127267625107 | 0.27642300219178395
+    2023-05-21 07:48:52.133888+00 |         1 | 49.732367773230024 |   0.770096500403703
+    2023-05-21 07:48:52.133888+00 |         2 |  31.10197931398453 |  0.8426620901373241
+   (8 rows)
+   ```
+
+   {/cut}
+
+## {heading({counter(db)}. Тест сұрауларын орындаңыз)[id=db_select]}
+
+{note:info}
+
+Бұрын `sensor_data` кестесі кездейсоқ жасалған деректер жиынтығымен толтырылған, сондықтан сіздің кестеңізге жасалған сұраулардың нәтижелері келтірілген мысалдардан өзгеше болады.
+
+{/note}
+
+1. Отыз минуттық интервалдар бойынша температура мен CPU жүктемесінің орташа мәндерін шығарыңыз:
+
+   ```sql
+   SELECT
+     time_bucket('30 minutes', time) AS period,
+     AVG(temperature) AS avg_temp,
+     AVG(cpu) AS avg_cpu
+   FROM sensor_data
+   GROUP BY period
+   ORDER BY period;
+   ```
+
+   {cut(Сұрау нәтижесінің бір бөлігінің мысалы)}
+
+   ```text
+            period         |      avg_temp      |       avg_cpu
+   ------------------------+--------------------+---------------------
+    2023-05-21 07:30:00+00 |  53.61763620602069 |  0.5413570794268665
+    2023-05-21 08:00:00+00 | 45.105700825199456 |  0.5967307199039785
+    2023-05-21 08:30:00+00 | 49.534870531748844 |  0.5244548233136944
+    2023-05-21 09:00:00+00 |  48.11141443258068 | 0.40274852600539646
+    2023-05-21 09:30:00+00 | 52.020211415250266 | 0.41570437093237916
+    2023-05-21 10:00:00+00 |  56.50992475543965 |  0.5744052407007274
+    2023-05-21 10:30:00+00 | 46.664477309117196 |  0.6187918344821526
+    2023-05-21 11:00:00+00 |  47.68186282450759 |  0.5020627643634109
+
+   ...
+
+   ```
+
+   {/cut}
+
+1. Отыз минуттық интервалдар бойынша температура мен CPU жүктемесінің орташа мәндерін, сондай-ақ интервал бойынша тіркелген температураның соңғы мәнін шығарыңыз:
+
+   ```sql
+   SELECT
+     time_bucket('30 minutes', time) AS period,
+     AVG(temperature) AS avg_temp,
+     last(temperature, time) AS last_temp,
+     AVG(cpu) AS avg_cpu
+   FROM sensor_data
+   GROUP BY period
+   ORDER BY period;
+   ```
+
+   {cut(Сұрау нәтижесінің бір бөлігінің мысалы)}
+
+   ```text
+            period         |      avg_temp      |     last_temp      |       avg_cpu
+   ------------------------+--------------------+--------------------+---------------------
+    2023-05-21 07:30:00+00 |  53.61763620602069 | 24.940269958716854 |  0.5413570794268665
+    2023-05-21 08:00:00+00 | 45.105700825199456 | 14.089769297588717 |  0.5967307199039785
+    2023-05-21 08:30:00+00 | 49.534870531748844 | 15.675718258720295 |  0.5244548233136944
+    2023-05-21 09:00:00+00 |  48.11141443258068 | 54.914047493504725 | 0.40274852600539646
+    2023-05-21 09:30:00+00 | 52.020211415250266 |  90.50501566182483 | 0.41570437093237916
+    2023-05-21 10:00:00+00 |  56.50992475543965 |  17.26290517165019 |  0.5744052407007274
+    2023-05-21 10:30:00+00 | 46.664477309117196 |  58.94930860972387 |  0.6187918344821526
+    2023-05-21 11:00:00+00 |  47.68186282450759 | 62.973228176266005 |  0.5020627643634109
+
+   ...
+   ```
+
+   {/cut}
+
+Келтірілгендерге ұқсас сұрау нәтижелерінің шығарылуы PostgreSQL және TimescaleDB кеңейтімінің дұрыс жұмыс істейтінін көрсетеді.
+
+## {heading({counter(db)}. (Қосымша) БД инстансының мониторинг деректерімен танысыңыз)[id=db_monitoring]}
+
+PostgreSQL үшін мониторинг қолжетімді. Жиналған мониторинг деректерімен танысыңыз:
+
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. БД инстансы орналасқан жобаны таңдаңыз.
+1. **Базы данных → Инстансы баз данных** бөліміне өтіңіз.
+1. БД инстансының атауын басыңыз. Ақпарат беті ашылады.
+1. **Мониторинг** қойындысына өтіңіз.
+1. Қажетті уақыт аралығын таңдап, жиналған деректерді қараңыз.
+
+## Пайдаланылмайтын ресурстарды жойыңыз
+
+БД инстансы [тарифтелмейді](/kz/dbs/dbaas/tariffication) және есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
+
+1. БД инстансын жойыңыз.
+1. Қажет болса, БД инстансына тағайындалған [Floating IP мекенжайын жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete). Жобада бар Floating IP мекенжайлары [тарифтелмейді](/kz/networks/vnet/tariffication).

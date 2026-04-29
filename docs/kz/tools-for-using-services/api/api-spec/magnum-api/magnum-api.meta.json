@@ -1,0 +1,8 @@
+{
+  "title": "Cloud Containers",
+  "shortDescription": "Cloud Containers сервисінің K8s кластерлерін басқаруға арналған OpenAPI спецификациясы",
+  "metaDescription": "Бұлттық сервистерді басқаруды автоматтандыруға және VK Cloud-пен жұмыс істеуге арналған жеке құралдарды әзірлеуге арналған жария API спецификациялары. Cloud Containers сервисінің API-і",
+  "sectionTitle": "Cloud Containers",
+  "icon": "",
+  "weight": 8
+}

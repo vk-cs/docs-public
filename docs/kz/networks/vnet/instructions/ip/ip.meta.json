@@ -1,0 +1,8 @@
+{
+  "title": "IP-адрестер",
+  "shortDescription": "Виртуалды желілер сервисінде IP-адрестерін басқару",
+  "metaDescription": "Cloud Networks сервисінде IP-адрестерін қалай баптауға болады. VK Cloud-та виртуалды желілер сервисінде Floating және Anycast IP-адрестерін басқару",
+  "sectionTitle": "IP-адрестер",
+  "icon": "",
+  "weight": 4
+}

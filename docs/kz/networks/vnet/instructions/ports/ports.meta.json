@@ -1,0 +1,8 @@
+{
+  "title": "Порттар",
+  "shortDescription": "OpenStack порттарымен негізгі операциялар",
+  "metaDescription": "Cloud Networks сервисінде порттарды қалай баптауға болады. Портты қосу, қосу, өшіру, өңдеу, порт үшін IP Source Guard баптау",
+  "sectionTitle": "Порттар",
+  "icon": "",
+  "weight": 2
+}

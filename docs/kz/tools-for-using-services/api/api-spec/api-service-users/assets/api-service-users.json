@@ -1,0 +1,549 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "HTTP-запросы для управления сервисными учетными записями",
+    "title": "Service Users API",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "ServiceUsersService",
+      "description": "Операции над сервисными учетными записями"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/public/v1/tenants/{tenant_id}/service-users/{id}": {
+      "get": {
+        "summary": "Получить информацию о сервисной учетной записи",
+        "description": "Возвращает информацию о сервисной учетной записи по ее идентификатору",
+        "operationId": "ServiceUsersService_GetServiceUser",
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса",
+            "schema": {
+              "$ref": "#/definitions/ServiceUser"
+            }
+          },
+          "400": {
+            "description": "Отсутствуют или неверно заданы параметры запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "504": {
+            "description": "Истекло время ожидания ответа сервера"
+          }
+        },
+        "parameters": [
+          {
+            "name": "tenant_id",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "description": "Идентификатор сервисной учетной записи",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "tags": [
+          "ServiceUsersService"
+        ]
+      },
+      "delete": {
+        "summary": "Удалить сервисную учетную запись",
+        "description": "Удаляет сервисную учетную запись по его идентификатору",
+        "operationId": "ServiceUsersService_DeleteServiceUser",
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса",
+            "schema": {}
+          },
+          "400": {
+            "description": "Отсутствуют или неверно заданы параметры запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "504": {
+            "description": "Истекло время ожидания ответа сервера"
+          }
+        },
+        "parameters": [
+          {
+            "name": "tenant_id",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "description": "Идентификатор сервисной учетной записи",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "tags": [
+          "ServiceUsersService"
+        ]
+      }
+    },
+    "/public/v1/tenants/{tenant_id}/service-users": {
+      "get": {
+        "summary": "Список сервисных учетных записей",
+        "description": "Возвращает список всех сервисных учетных записей, принадлежащих указанному пользователю VK Cloud",
+        "operationId": "ServiceUsersService_ListServiceUsers",
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса",
+            "schema": {
+              "$ref": "#/definitions/ListServiceUsersResponse"
+            }
+          },
+          "400": {
+            "description": "Отсутствуют или неверно заданы параметры запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "504": {
+            "description": "Истекло время ожидания ответа сервера"
+          }
+        },
+        "parameters": [
+          {
+            "name": "tenant_id",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "description": "Смещение",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "uint64",
+            "default": "0"
+          },
+          {
+            "name": "limit",
+            "description": "Максимальное количество выводимых записей. Максимальное значение — 200",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "uint64",
+            "default": "200"
+          },
+          {
+            "name": "order_by",
+            "description": "Тип сортировки. Возможные значения:\n\n ``NAME`` — сортировка по имени сервисной учетной записи",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "enum": [
+              "NAME"
+            ],
+            "default": "NAME"
+          },
+          {
+            "name": "order_direction",
+            "description": "Направление сортировки. Возможные значения:\n\n ``ASC`` — по возрастанию (от A до Z);\n ``DESC`` — по убыванию (от Z до A)",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "enum": [
+              "ASC",
+              "DESC"
+            ],
+            "default": "ASC"
+          },
+          {
+            "name": "name",
+            "description": "Имя сервисной учетной записи",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ServiceUsersService"
+        ]
+      },
+      "post": {
+        "summary": "Создать сервисную учетную запись",
+        "description": "Создает новую сервисную учетную запись в рамках проекта",
+        "operationId": "ServiceUsersService_CreateServiceUser",
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса",
+            "schema": {
+              "$ref": "#/definitions/CreateServiceUserResponse"
+            }
+          },
+          "400": {
+            "description": "Отсутствуют или неверно заданы параметры запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "504": {
+            "description": "Истекло время ожидания ответа сервера"
+          }
+        },
+        "parameters": [
+          {
+            "name": "tenant_id",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ServiceUsersServiceCreateServiceUserBody"
+            }
+          }
+        ],
+        "tags": [
+          "ServiceUsersService"
+        ]
+      }
+    },
+    "/public/v1/tenants/{tenant_id}/service-users/{id}/auth-script": {
+      "get": {
+        "summary": "Получить скрипт для аутентификации под сервисной учетной записью",
+        "description": "Возвращает OpenStack RC-файл, предназначенный для аутентификации под сервисной учетной записью",
+        "operationId": "ServiceUsersService_AuthScriptServiceUser",
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса",
+            "schema": {
+              "format": "binary"
+            }
+          },
+          "400": {
+            "description": "Отсутствуют или неверно заданы параметры запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "403": {
+            "description": "Недостаточно прав"
+          },
+          "404": {
+            "description": "Объект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          },
+          "504": {
+            "description": "Истекло время ожидания ответа сервера"
+          }
+        },
+        "parameters": [
+          {
+            "name": "tenant_id",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "description": "Идентификатор сервисной учетной записи",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "tags": [
+          "ServiceUsersService"
+        ],
+        "produces": [
+          "application/x-sh"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "CreateServiceUserResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Идентификатор сервисной учетной записи"
+        },
+        "name": {
+          "type": "string",
+          "title": "Имя сервисной учетной записи"
+        },
+        "description": {
+          "type": "string",
+          "title": "Описание сервисной учетной записи"
+        },
+        "tenant_id": {
+          "type": "string",
+          "title": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+        },
+        "role_names": {
+          "type": "array",
+          "description": "Список <a href='https://cloud.vk.com/docs/kz/tools-for-using-services/account/concepts/rolesandpermissions'>ролей</a> сервисной учетной записи. Возможные значения:\n\n``mcs_co_owner`` — суперадминистратор;\n``mcs_admin`` — администратор проекта;\n``mcs_admin_security`` — администратор пользователей (IAM);\n``mcs_admin_billing`` — администратор биллинга;\n``mcs_viewer`` — наблюдатель;\n``mcs_admin_vm`` — администратор ВМ;\n``mcs_admin_vm_junior`` — младший администратор ВМ;\n``mcs_operator_vm`` — оператор ВМ;\n``mcs_admin_network`` — администратор сети;\n``mcs_admin_network_security`` — администратор сетевой безопасности;\n``mcs_admin_network_objects`` — администратор внутренних сетей;\n``mcs_k8s_admin`` — администратор Kubernetes;\n``mcs_k8s_editor`` — оператор Kubernetes;\n``mcs_k8s_viewer`` — аудитор Kubernetes",
+          "items": {
+            "type": "string",
+            "enum": [
+              "mcs_admin_network_security",
+              "mcs_k8s_viewer",
+              "mcs_co_owner",
+              "mcs_admin_billing",
+              "mcs_viewer",
+              "mcs_admin_network_objects",
+              "mcs_admin_security",
+              "mcs_k8s_editor",
+              "mcs_operator_vm",
+              "mcs_admin_vm_junior",
+              "mcs_admin",
+              "mcs_k8s_admin",
+              "mcs_admin_network",
+              "mcs_admin_vm"
+            ]
+          },
+          "title": "Список ролей сервисной учетной записи"
+        },
+        "creator_name": {
+          "type": "string",
+          "title": "Имя пользователя VK Cloud, который создал эту сервисную учетную запись"
+        },
+        "password": {
+          "type": "string",
+          "title": "Сгенерированный пароль. Используется для аутентификации"
+        },
+        "login": {
+          "type": "string",
+          "title": "Логин сервисной учетной записи. Используется для аутентификации"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "title": "Дата и время создания сервисной учетной записи"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "tenant_id",
+        "role_names",
+        "creator_name",
+        "password",
+        "login",
+        "created_at"
+      ]
+    },
+    "ListServiceUsersResponse": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/ServiceUser"
+          }
+        }
+      }
+    },
+    "OrderBy": {
+      "type": "string",
+      "enum": [
+        "NAME"
+      ],
+      "default": "NAME",
+      "description": "Тип сортировки. Возможные значения:\n\n ``NAME`` — сортировка по имени сервисной учетной записи",
+      "title": "Тип сортировки"
+    },
+    "OrderDirection": {
+      "type": "string",
+      "enum": [
+        "ASC",
+        "DESC"
+      ],
+      "default": "ASC",
+      "description": "Направление сортировки. Возможные значения:\n\n ``ASC`` — по возрастанию (от A до Z);\n ``DESC`` — по убыванию (от Z до A)",
+      "title": "Направление сортировки"
+    },
+    "ServiceUser": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Идентификатор сервисной учетной записи"
+        },
+        "name": {
+          "type": "string",
+          "title": "Имя сервисной учетной записи"
+        },
+        "tenant_id": {
+          "type": "string",
+          "title": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+        },
+        "description": {
+          "type": "string",
+          "title": "Описание сервисной учетной записи"
+        },
+        "creator_name": {
+          "type": "string",
+          "title": "Имя пользователя VK Cloud, который создал эту сервисную учетную запись"
+        },
+        "role_names": {
+          "type": "array",
+          "description": "Список <a href='https://cloud.vk.com/docs/kz/tools-for-using-services/account/concepts/rolesandpermissions'>ролей</a> сервисной учетной записи. Возможные значения:\n\n``mcs_co_owner`` — суперадминистратор;\n``mcs_admin`` — администратор проекта;\n``mcs_admin_security`` — администратор пользователей (IAM);\n``mcs_admin_billing`` — администратор биллинга;\n``mcs_viewer`` — наблюдатель;\n``mcs_admin_vm`` — администратор ВМ;\n``mcs_admin_vm_junior`` — младший администратор ВМ;\n``mcs_operator_vm`` — оператор ВМ;\n``mcs_admin_network`` — администратор сети;\n``mcs_admin_network_security`` — администратор сетевой безопасности;\n``mcs_admin_network_objects`` — администратор внутренних сетей;\n``mcs_k8s_admin`` — администратор Kubernetes;\n``mcs_k8s_editor`` — оператор Kubernetes;\n``mcs_k8s_viewer`` — аудитор Kubernetes",
+          "items": {
+            "type": "string",
+            "enum": [
+              "mcs_admin_network_security",
+              "mcs_k8s_viewer",
+              "mcs_co_owner",
+              "mcs_admin_billing",
+              "mcs_viewer",
+              "mcs_admin_network_objects",
+              "mcs_admin_security",
+              "mcs_k8s_editor",
+              "mcs_operator_vm",
+              "mcs_admin_vm_junior",
+              "mcs_admin",
+              "mcs_k8s_admin",
+              "mcs_admin_network",
+              "mcs_admin_vm"
+            ]
+          },
+          "title": "Список ролей сервисной учетной записи"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "title": "Дата и время создания сервисной учетной записи"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "tenant_id",
+        "creator_name",
+        "role_names",
+        "created_at"
+      ]
+    },
+    "ServiceUsersServiceCreateServiceUserBody": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "creator_vm",
+          "title": "Имя сервисной учетной записи",
+          "maxLength": 32,
+          "minLength": 3,
+          "pattern": "^[0-9a-zA-Z_-]+$"
+        },
+        "role_names": {
+          "type": "array",
+          "description": "Список <a href='https://cloud.vk.com/docs/kz/tools-for-using-services/account/concepts/rolesandpermissions'>ролей</a> сервисной учетной записи. Возможные значения:\n\n``mcs_co_owner`` — суперадминистратор;\n``mcs_admin`` — администратор проекта;\n``mcs_admin_security`` — администратор пользователей (IAM);\n``mcs_admin_billing`` — администратор биллинга;\n``mcs_viewer`` — наблюдатель;\n``mcs_admin_vm`` — администратор ВМ;\n``mcs_admin_vm_junior`` — младший администратор ВМ;\n``mcs_operator_vm`` — оператор ВМ;\n``mcs_admin_network`` — администратор сети;\n``mcs_admin_network_security`` — администратор сетевой безопасности;\n``mcs_admin_network_objects`` — администратор внутренних сетей;\n``mcs_k8s_admin`` — администратор Kubernetes;\n``mcs_k8s_editor`` — оператор Kubernetes;\n``mcs_k8s_viewer`` — аудитор Kubernetes",
+          "items": {
+            "type": "string",
+            "enum": [
+              "mcs_admin_network_security",
+              "mcs_k8s_viewer",
+              "mcs_co_owner",
+              "mcs_admin_billing",
+              "mcs_viewer",
+              "mcs_admin_network_objects",
+              "mcs_admin_security",
+              "mcs_k8s_editor",
+              "mcs_operator_vm",
+              "mcs_admin_vm_junior",
+              "mcs_admin",
+              "mcs_k8s_admin",
+              "mcs_admin_network",
+              "mcs_admin_vm"
+            ]
+          },
+          "title": "Список ролей сервисной учетной записи"
+        },
+        "description": {
+          "type": "string",
+          "example": "Роль для управления ВМ",
+          "title": "Описание сервисной учетной записи",
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "name",
+        "role_names"
+      ]
+    }
+  },
+  "securityDefinitions": {
+    "AuthTokenAuth": {
+      "type": "apiKey",
+      "name": "X-Auth-Token",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "AuthTokenAuth": []
+    }
+  ]
+}

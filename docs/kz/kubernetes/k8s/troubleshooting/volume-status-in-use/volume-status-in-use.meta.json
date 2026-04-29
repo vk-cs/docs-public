@@ -1,0 +1,8 @@
+{
+  "title": "Под қайта жасалған кезде Volume status is in-use қатесі",
+  "shortDescription": "PVC қайта Cinder CSI арқылы монталған кезде Volume status is in-use қатесі пайда болса, не істеу керек",
+  "metaDescription": "PVC қайта Cinder CSI арқылы монталған кезде Volume status is in-use қатесі пайда болса, не істеу керек",
+  "sectionTitle": "Под қайта жасалған кезде Volume status is in-use қатесі",
+  "icon": "",
+  "weight": 9
+}

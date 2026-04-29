@@ -1,0 +1,16 @@
+{
+  "title": "Cloud Backup",
+  "shortDescription": "Виртуалды машиналар мен дерекқор инстанстарын сақтық көшірмелеу",
+  "metaDescription": "Cloud Backup VK Cloud: виртуалды машиналар мен дерекқорлардың сақтық көшірмесін жасау",
+  "sectionTitle": "Cloud Backup",
+  "icon": "",
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/backup-api"
+    },
+    {
+      "partialPath": "/kz/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start"
+    }
+  ],
+  "weight": 2
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Cloud Trino",
+  "shortDescription": "Қашықтағы дереккөздерден үлкен деректерді өңдеуге арналған SQL-қозғалтқыш",
+  "metaDescription": "VK Data Platform-та Cloud Trino қалай жұмыс істейтінін біліңіз — үлкен деректер аналитикасына арналған таратылған SQL-қозғалтқыш: жұмыс қағидаттары мен негізгі артықшылықтары",
+  "sectionTitle": "Cloud Trino",
+  "icon": "",
+  "weight": 4
+}
