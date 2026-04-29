@@ -2,8 +2,6 @@ export const config = {
     main: {
         projectName: 'VK Cloud',
         copyright: '© %year% VK Cloud',
-        analytics: '(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(46889073,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});',
-        scriptManager: 'https://vkcs-scripts.mrgcdn.ru/master/help.js',
         metaTags: [
             {
                 name: 'yandex-verification',
@@ -15,6 +13,41 @@ export const config = {
         logoLink: 'https://cloud.vk.com',
         canonicalBaseUrl: 'https://cloud.vk.com/docs',
     },
+    trackers: [
+        {
+            enabled: true,
+            id: 'yandex',
+            type: 'script',
+            code: '(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(46889073,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});',
+        },
+        {
+            enabled: true,
+            id: 'google',
+            type: 'script',
+            src: 'https://vkcs-scripts.mrgcdn.ru/master/help.js',
+        },
+        {
+            enabled: true,
+            id: 'my-tracker',
+            type: 'script',
+            code:
+                'var _tmr = window._tmr || (window._tmr = []);\n' +
+                '_tmr.push({id: "3118070", type: "pageView", start: (new Date()).getTime()});\n' +
+                '(function (d, w, id) {\n' +
+                '  if (d.getElementById(id)) return;\n' +
+                '  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;\n' +
+                '  ts.src = "https://top-fwz1.mail.ru/js/code.js";\n' +
+                '  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};\n' +
+                '  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }\n' +
+                '})(document, window, "tmr-code");',
+        },
+        {
+            enabled: true,
+            id: 'my-top-noscript',
+            type: 'noscript',
+            code: '<div><img src="https://top-fwz1.mail.ru/counter?id=3118070;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div>',
+        },
+    ],
     breadcrumbs: {
         projectName: 'VK Cloud',
         docsName: 'Документация'

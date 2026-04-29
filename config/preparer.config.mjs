@@ -24,6 +24,7 @@ import {
     SearchIndexPreparer,
     UuidSnapshotPreparer,
     SatoriIndexPreparer,
+    SitemapPreparer,
 } from '@vk-tech/d11n-preparer/preparers';
 
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
@@ -55,7 +56,7 @@ if (['production'].includes(TARGET_ENV)) {
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
     dataRelativePath: './.data', // Абсолютный путь до папки с результатами подготовки файлами, если null, то ./preparationData
-    publicAssetsRelativePath: null, // Абсолютный путь до папки со "статикой", если null, то ./public/_docs
+    publicRelativePath: null, // Путь до папки со 'статикой', если null, то ./public/_docs
     commands: {
         // Подготовка документации к запуску портала
         // npx preparer start prepare
@@ -81,6 +82,7 @@ export const config = {
             ExternalFolderChecker, // Проверяем схему и корректность ссылок для файлов в папке external/sections
             LinksPreparer, // Подготовка служебных файлов для test:LinksChecker
             LinksChecker, // Подготовка служебных файлов для test:LinksChecker
+            SitemapPreparer, // Создаём sitemap.xml ил robots.txt
         ],
         // Проверка портала после запуска
         // npx preparer start checkup
@@ -91,6 +93,16 @@ export const config = {
             apiBaseUrl: process.env.SATORI_API_URL || '',
             baseUrl: 'https://cloud.vk.com/docs',
             apiKey: process.env.SATORI_API_KEY || '',
+        },
+        sitemapPreparer: {
+            useIndex: true,
+            sitemaps: [
+                'https://cloud.vk.com/docs/sitemap.xml',
+                'https://cloud.vk.com/docs/on-premises/private-cloud/sitemap.xml',
+                'https://cloud.vk.com/docs/on-premises/dev-platform/sitemap.xml',
+                'https://cloud.vk.com/docs/on-premises/registry/sitemap.xml',
+                'https://cloud.vk.com/docs/on-premises/security-gate/sitemap.xml',
+            ],
         },
     }
 };
