@@ -1,0 +1,8 @@
+{
+  "title": "Кластерге арналған DNS баптаулары",
+  "shortDescription": "Kubernetes-кластеріңіздің DNS конфигурациясын қалай баптау және басқару керек",
+  "metaDescription": "VK Cloud-тағы Kubernetes кластерінің DNS конфигурациясын қалай баптау және басқару керек. ExternalDNS, CoreDNS құралдарын пайдалану",
+  "sectionTitle": "Кластерге арналған DNS баптаулары",
+  "icon": "",
+  "weight": 7
+}

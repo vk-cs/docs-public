@@ -1,0 +1,8 @@
+{
+  "title": "Multipart",
+  "shortDescription": "",
+  "metaDescription": "Құрамдас жүктеу объектілерді VK Object Storage жүйесінде бөліктер бойынша сақтауға мүмкіндік береді. Бұл үлкен объектілерді жүктеу немесе көшіру кезінде пайдалы болуы мүмкін",
+  "sectionTitle": "Multipart",
+  "icon": "",
+  "weight": 5
+}

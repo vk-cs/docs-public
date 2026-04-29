@@ -1,0 +1,14 @@
+{
+  "title": "Қадамдық нұсқаулықтар",
+  "shortDescription": "Spark кластерлерін баптау және басқару",
+  "metaDescription": "Spark VK Cloud: кластерлерді баптау және басқару бойынша стандартты операциялар.",
+  "sectionTitle": "Қадамдық нұсқаулықтар",
+  "icon": "",
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/mlplatform/spark-k8s",
+      "title": "Terraform көмегімен Spark кластерін құру"
+    }
+  ],
+  "weight": 4
+}

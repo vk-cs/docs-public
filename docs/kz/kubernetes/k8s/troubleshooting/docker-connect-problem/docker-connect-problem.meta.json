@@ -1,0 +1,8 @@
+{
+  "title": "Docker-ге қосылу мүмкін емес",
+  "shortDescription": "Егер Docker-ге қосылу кезінде «x509: certificate signed by unknown authority» қатесі пайда болса, не істеу керек",
+  "metaDescription": "Егер Docker-ге қосылу кезінде «x509: certificate signed by unknown authority» қатесі пайда болса, не істеу керек",
+  "sectionTitle": "Docker-ге қосылу мүмкін емес",
+  "icon": "",
+  "weight": 2
+}

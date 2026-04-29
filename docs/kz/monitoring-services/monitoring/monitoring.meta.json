@@ -1,0 +1,13 @@
+{
+  "title": "Cloud Monitoring",
+  "shortDescription": "Метрикалардың кең ауқымы арқылы ресурстарды тиімді бақылау",
+  "metaDescription": "Cloud Monitoring — бұл бірыңғай мониторинг сервисі, оның көмегімен сіз бұлттық қолданбаларыңыздың күйін, өнімділігін бақылайсыз, оңтайландыр",
+  "sectionTitle": "Cloud Monitoring",
+  "icon": "",
+  "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/monitoring2-api"
+    }
+  ]
+}

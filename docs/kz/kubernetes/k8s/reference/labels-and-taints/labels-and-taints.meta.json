@@ -1,0 +1,8 @@
+{
+  "title": "Белгілер мен шектеулер",
+  "shortDescription": "Kubernetes-тегі белгілер (labels) мен шектеулер (taints) туралы жалпы мәліметтер",
+  "metaDescription": "VK Cloud-тағы Cloud Containers сервисінің негізгі ұғымдары мен объектілері. Kubernetes-тегі белгілер (labels) мен шектеулер (taints) туралы біліңіз",
+  "sectionTitle": "Белгілер мен шектеулер",
+  "icon": "",
+  "weight": 3
+}

@@ -1,0 +1,8 @@
+{
+  "title": "GitLab негізіндегі CI/CD",
+  "shortDescription": "GitLab пайдаланып қолданбаны Kubernetes кластеріне өрістетуді қалай автоматтандыруға болады",
+  "metaDescription": "Пайдалану сценарийлері: GitLab көмегімен өрістетуді автоматтандыру бойынша нұсқаулықтар",
+  "sectionTitle": "GitLab негізіндегі CI/CD",
+  "icon": "",
+  "weight": 4
+}

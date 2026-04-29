@@ -8,7 +8,7 @@
 
 ## Платформенные компоненты
 
-Управление основными компонентами VK Cloud, обеспечивающими работу [PaaS и IaaS-сервисов](ru/start/concepts/architecture).
+Управление основными компонентами VK Cloud, обеспечивающими работу [PaaS и IaaS-сервисов](/ru/start/concepts/architecture).
 
 ### cdn_delete
 

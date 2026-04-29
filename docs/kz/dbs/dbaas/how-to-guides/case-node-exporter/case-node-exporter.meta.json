@@ -1,0 +1,8 @@
+{
+  "title": "Prometheus, Node exporter және Grafana көмегімен Redis мониторингі",
+  "shortDescription": "Жеке Prometheus серверін пайдаланып Redis ДҚБЖ үшін мониторингті қалай баптауға және оны Grafana жүйесінде визуализациялауға болады",
+  "metaDescription": "VK Cloud: VK Cloud ішінде Redis ДҚБЖ мониторингін Prometheus сервері, Node exporter кеңейтімі және кейінгі Grafana визуализациясы көмегімен баптау",
+  "sectionTitle": "Prometheus, Node exporter және Grafana көмегімен Redis мониторингі",
+  "icon": "",
+  "weight": 5
+}

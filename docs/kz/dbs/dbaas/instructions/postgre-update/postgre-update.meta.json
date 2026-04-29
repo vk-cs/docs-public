@@ -1,0 +1,8 @@
+{
+  "title": "PostgreSQL нұсқасын жаңарту",
+  "shortDescription": "Single, Master-Replica, Кластер конфигурацияларындағы инстанстарда PostgreSQL нұсқасын қалай жаңартуға болады",
+  "metaDescription": "Single, Master-Replica, Кластер конфигурацияларындағы инстанстарда PostgreSQL нұсқасын жаңарту.",
+  "sectionTitle": "PostgreSQL нұсқасын жаңарту",
+  "icon": "",
+  "weight": 3
+}

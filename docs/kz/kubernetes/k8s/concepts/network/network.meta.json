@@ -1,0 +1,8 @@
+{
+  "title": "Кластердегі желі",
+  "shortDescription": "Kubernetes кластерлерінің VK Cloud желілік сервистерімен интеграциясы",
+  "metaDescription": "Kubernetes кластерлерінің VK Cloud желілік сервистерімен интеграциясы. Kubernetes кластеріндегі желілік инфрақұрылым нысандары, жүктеме теңгергіштері, Ingress-контроллер",
+  "sectionTitle": "Кластердегі желі",
+  "icon": "",
+  "weight": 5
+}

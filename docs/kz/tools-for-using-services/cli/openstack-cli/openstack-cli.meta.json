@@ -1,0 +1,7 @@
+{
+  "title": "OpenStack CLI",
+  "shortDescription": "VK Cloud платформасындағы ресурстарды басқару үшін OpenStack клиентін орнату",
+  "metaDescription": "VK Cloud-ты пәрмен жолынан басқаруды бастаңыз. Бұл қадамдық нұсқаулық Windows, macOS, Linux жүйелерінде OpenStack CLI орнатуға және аутентификациядан өтуге көмектеседі.",
+  "sectionTitle": "OpenStack CLI",
+  "weight": 1
+}

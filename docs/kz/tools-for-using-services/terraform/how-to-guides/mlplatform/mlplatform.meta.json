@@ -1,0 +1,8 @@
+{
+  "title": "Cloud ML Platform",
+  "shortDescription": "Cloud ML Platform сервисінің объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "metaDescription": "Cloud ML Platform сервисімен Terraform көмегімен жұмыс істеу",
+  "sectionTitle": "Cloud ML Platform",
+  "icon": "",
+  "weight": 70
+}

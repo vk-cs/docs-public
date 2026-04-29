@@ -1,0 +1,8 @@
+{
+  "title": "AWS CLI арқылы бакетпен жұмыс істегенде NoSuchBucket қатесі пайда болады",
+  "shortDescription": "Бар бакет үшін команданы орындағанда NoSuchBucket қатесі қайтарылса не істеу керек",
+  "metaDescription": "Бар бакет үшін команданы орындағанда NoSuchBucket қатесі қайтарылса не істеу керек",
+  "sectionTitle": "AWS CLI арқылы бакетпен жұмыс істегенде NoSuchBucket қатесі пайда болады",
+  "icon": "",
+  "weight": 7
+}

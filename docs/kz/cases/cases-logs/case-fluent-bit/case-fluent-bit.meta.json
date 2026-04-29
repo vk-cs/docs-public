@@ -1,0 +1,8 @@
+{
+  "title": "docker-runtime және crio-runtime бар нодтардан Fluent Bit көмегімен логтар жинау",
+  "shortDescription": "",
+  "metaDescription": "docker-runtime және crio-runtime бар нодтардан Fluent Bit көмегімен логтар жинау",
+  "sectionTitle": "docker-runtime және crio-runtime бар нодтардан Fluent Bit көмегімен логтар жинау",
+  "icon": "",
+  "weight": 2
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Өзгерістер тарихы",
+  "shortDescription": "",
+  "metaDescription": "Өзгерістер тарихы",
+  "sectionTitle": "Өзгерістер тарихы",
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  }
+}

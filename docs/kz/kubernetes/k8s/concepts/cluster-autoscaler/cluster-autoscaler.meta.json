@@ -1,0 +1,8 @@
+{
+  "title": "Cluster Autoscaler көмегімен worker-түйіндерін автоматты масштабтау",
+  "shortDescription": "Cloud Containers сервисіндегі Kubernetes кластерлерінде worker-түйіндерін автоматты масштабтау процесі қалай құрылған",
+  "metaDescription": "VK Cloud платформасындағы Cloud Containers сервисінде Cluster Autoscaler көмегімен Kubernetes кластерінің worker-түйіндерін автоматты масштабтау процесі: түйіндер санын арттыру және азайту шарттары, баптаулар, подтардың бос тұру уақыты.",
+  "sectionTitle": "Cluster Autoscaler көмегімен worker-түйіндерін автоматты масштабтау",
+  "icon": "",
+  "weight": 9
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Webhooks",
+  "shortDescription": "",
+  "metaDescription": "VK Object Storage үшін Webhooks — бұл API көмегімен бакет оқиғалары бойынша HTTP/S сұрауларын жіберуді баптау мүмкіндігі. Мысалы, мыналарды жасауға болады: өңдеуді және түрлендіруді баптау",
+  "sectionTitle": "Webhooks",
+  "icon": "",
+  "weight": 9
+}

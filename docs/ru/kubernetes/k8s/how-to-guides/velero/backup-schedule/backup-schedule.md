@@ -126,4 +126,4 @@ velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-sch
 
    При необходимости также [удалите сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
 
-1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](/ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.

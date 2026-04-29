@@ -1,0 +1,8 @@
+{
+  "title": "Docker айнасын баптау",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud жүйесіндегі Kubernetes-пен жұмыс істеу үшін Docker Hub айнасын қалай баптауға болады. Docker Registry аддонымен бірге жеке реестрді немесе Cloud Containers үшін Daemonset-ті баптаңыз",
+  "sectionTitle": "Docker айнасын баптау",
+  "icon": "",
+  "weight": 5
+}

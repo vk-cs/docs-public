@@ -1,0 +1,8 @@
+{
+  "title": "Docker реестріне қосылу",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud жүйесіндегі Kubernetes үшін docker-registry аддоны арқылы Docker реестріне қалай қосылуға болады. Қосылу жөніндегі нұсқаулық және Kubernetes кластерінде Docker пайдалану мысалдары",
+  "sectionTitle": "Docker реестріне қосылу",
+  "icon": "",
+  "weight": 4
+}

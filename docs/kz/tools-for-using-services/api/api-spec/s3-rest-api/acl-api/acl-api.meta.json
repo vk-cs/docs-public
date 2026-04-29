@@ -1,0 +1,8 @@
+{
+  "title": "ACL",
+  "shortDescription": "",
+  "metaDescription": "ACL (Access Control List) қандай операциялар қандай пайдаланушыларға рұқсат етілгенін басқаруға мүмкіндік береді. ACL бүкіл бакетте де, әрбір объектіде де бар",
+  "sectionTitle": "ACL",
+  "icon": "",
+  "weight": 4
+}

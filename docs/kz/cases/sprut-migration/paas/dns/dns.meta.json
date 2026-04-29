@@ -1,0 +1,8 @@
+{
+  "title": "DNS көші-қоны",
+  "shortDescription": "Қоғамдық DNS-тің A-жазбасын жаңарту",
+  "metaDescription": "SDN Sprut-қа көшу кезінде қоғамдық DNS-тің A-жазбаларын қалай жаңартуға болады",
+  "sectionTitle": "DNS көші-қоны",
+  "icon": "",
+  "weight": 3
+}

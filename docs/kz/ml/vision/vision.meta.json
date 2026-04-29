@@ -1,0 +1,13 @@
+{
+  "title": "Vision",
+  "shortDescription": "Машиналық оқыту негізіндегі беттер мен объектілерді тану технологиясы",
+  "metaDescription": "Vision — машиналық оқыту негізіндегі беттер мен объектілерді тану технологиясы. Vision пайдалана отырып, беттерді тану жүйесін әзірлеуге, ав",
+  "sectionTitle": "Vision",
+  "icon": "",
+  "weight": 4,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/vision-api"
+    }
+  ]
+}

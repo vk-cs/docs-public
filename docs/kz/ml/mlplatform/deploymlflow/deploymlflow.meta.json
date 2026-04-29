@@ -1,0 +1,18 @@
+{
+  "title": "MLflow Deploy",
+  "shortDescription": "ML-модельдерді Docker-контейнерлерге орауға және оларға REST API арқылы қолжеткізуге арналған құрал",
+  "metaDescription": "ML-модельдерді Docker-контейнерлерге орауға және оларға REST API арқылы қолжеткізуге арналған құрал",
+  "sectionTitle": "MLflow Deploy",
+  "icon": "",
+  "weight": 5,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
+      "title": "Terraform көмегімен MLflow Deploy инстансын жасау"
+    },
+    {
+      "partialPath": "/kz/ml/mlplatform/mlplatform-lib",
+      "title": "Cloud ML Platform кітапханасымен жұмыс істеу"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Кластерді басқару",
+  "shortDescription": "Kubernetes кластерін жеке кабинет немесе Terraform көмегімен қалай басқаруға болады",
+  "metaDescription": "VK Cloud жеке кабинетінде немесе Terraform көмегімен Kubernetes кластерін қалай басқаруға болатынын біліңіз. Kubernetes кластерін іске қосу, тоқтату, жою",
+  "sectionTitle": "Кластерді басқару",
+  "icon": "",
+  "weight": 2
+}

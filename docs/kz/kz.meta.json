@@ -1,0 +1,31 @@
+{
+  "title": "VK Cloud құжаттамасы",
+  "decorator": "list",
+  "intro": [
+    {
+      "partialPath": "/kz/intro/onboarding",
+      "icon": "/kz/assets/start-icon.svg",
+      "iconMobile": "/kz/assets/start-icon-mobile.svg"
+    },
+    {
+      "partialPath": "/kz/intro/billing",
+      "icon": "/kz/assets/billing-icon.svg",
+      "iconMobile": "/kz/assets/billing-icon-mobile.svg"
+    },
+    {
+      "partialPath": "/kz/intro/migration",
+      "icon": "/kz/assets/migration-icon.svg",
+      "iconMobile": "/kz/assets/migration-icon-mobile.svg"
+    },
+    {
+      "partialPath": "/kz/intro/it-security",
+      "icon": "/kz/assets/secure-icon.svg",
+      "iconMobile": "/kz/assets/secure-icon-mobile.svg"
+    }
+  ],
+  "variables": {
+    "system": "магазин приложений Marketplace",
+    "revdate": "18.07.2024"
+  },
+  "metaDescription": "VK Cloud құжаттамасы жиі қойылатын сұрақтарға жауап беруге көмектеседі. Мұнда сіз Vk Cloud-пен жұмыс істеу бойынша нұсқаулықтар мен қадамдық нұсқаулықтарды таба аласыз."
+}

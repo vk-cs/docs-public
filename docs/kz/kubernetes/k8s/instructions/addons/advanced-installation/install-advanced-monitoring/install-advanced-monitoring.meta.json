@@ -1,0 +1,8 @@
+{
+  "title": "Kube Prometheus Stack",
+  "shortDescription": "",
+  "metaDescription": "Мониторинг құралдары бар аддонды баптау және орнату.",
+  "sectionTitle": "Kube Prometheus Stack",
+  "icon": "",
+  "weight": 12
+}

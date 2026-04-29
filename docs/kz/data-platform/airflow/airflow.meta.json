@@ -1,0 +1,9 @@
+{
+  "title": "Cloud Airflow",
+  "shortDescription": "Нақты уақыттағы жоғары өнімді қолданбаларға арналған ағындық өңдеу",
+  "metaDescription": "Нақты уақыттағы қолданбаларға арналған ағындарды өңдеу ортасы",
+  "sectionTitle": "Cloud Airflow",
+  "icon": "",
+  "isBeta": true,
+  "weight": 5
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Curl пайдалану",
+  "shortDescription": "Curl пайдаланып тануға арналған сұрау",
+  "metaDescription": "1. Автонөмірлер: Сұрау: curl -k -v",
+  "sectionTitle": "Curl пайдалану",
+  "icon": "",
+  "weight": 2
+}

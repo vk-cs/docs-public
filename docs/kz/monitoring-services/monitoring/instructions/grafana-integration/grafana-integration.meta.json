@@ -1,0 +1,9 @@
+{
+  "title": "Grafana қосу",
+  "shortDescription": "Жиналған мониторинг метрикаларын визуализациялау үшін Grafana сервисін қалай қосуға болады",
+  "metaDescription": "Жиналған мониторинг метрикаларын визуализациялау үшін Grafana сервисін қалай қосуға болады",
+  "sectionTitle": "Grafana қосу",
+  "icon": "",
+  "weight": 4,
+  "isBeta": true
+}

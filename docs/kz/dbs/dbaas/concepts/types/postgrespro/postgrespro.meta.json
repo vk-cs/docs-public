@@ -1,0 +1,13 @@
+{
+  "title": "Postgres Pro",
+  "shortDescription": "",
+  "metaDescription": "Postgres Pro ДҚБЖ және оның VK Cloud-та қолжетімді нұсқалары туралы",
+  "sectionTitle": "Postgres Pro",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  }
+}

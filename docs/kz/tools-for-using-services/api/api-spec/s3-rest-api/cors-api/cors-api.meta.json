@@ -1,0 +1,8 @@
+{
+  "title": "CORS",
+  "shortDescription": "",
+  "metaDescription": "VK Object Storage сервисі бакеттің CORS конфигурациясын басқаруға мүмкіндік береді. CORS конфигурациясын жүктеу үшін XML құжатын құру қажет. Тізім",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 7
+}

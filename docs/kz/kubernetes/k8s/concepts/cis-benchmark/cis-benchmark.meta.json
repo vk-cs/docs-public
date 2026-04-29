@@ -1,0 +1,8 @@
+{
+  "title": "Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелері",
+  "shortDescription": "1.28 – 1.31 нұсқаларындағы Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелеріне шолу",
+  "metaDescription": "VK Cloud платформасындағы Kubernetes кластерлері CIS Benchmarks ұсынымдарына сәйкес келеді. 1.28 – 1.31 нұсқаларындағы Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелеріне шолу",
+  "sectionTitle": "Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелері",
+  "icon": "",
+  "weight": 14
+}

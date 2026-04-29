@@ -1,0 +1,8 @@
+{
+  "title": "Ingress пайдалану",
+  "shortDescription": "Кластерде жайылған сервистерге Ingress көмегімен қолжетімділікті қалай ұсынуға болады",
+  "metaDescription": "Кластерде жайылған Kubernetes сервистеріне Ingress-контроллері немесе Canary Deployment Ingress көмегімен қолжетімділікті қалай баптау керегін біліңіз",
+  "sectionTitle": "Ingress пайдалану",
+  "icon": "",
+  "weight": 1
+}

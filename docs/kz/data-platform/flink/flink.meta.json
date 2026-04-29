@@ -1,0 +1,9 @@
+{
+  "title": "Cloud Flink",
+  "shortDescription": "Деректерді көздерден мақсатты жүйелерге ағындық өңдеу және тасымалдау",
+  "metaDescription": "VK Data Platform инфрақұрылымында Apache Flink кластерлерін құруға және басқаруға арналған сервис",
+  "sectionTitle": "Cloud Flink",
+  "icon": "",
+  "weight": 7,
+  "isBeta": true
+}

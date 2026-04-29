@@ -1,0 +1,15 @@
+{
+  "title": "VK Cloud ұсынған VK Mini Apps сервистерін әзірлеушілерді қолдау бағдарламасы",
+  "shortDescription": "",
+  "metaDescription": "VK Mini Apps сервистерін әзірлеушілерді қолдау бағдарламасын (бұдан әрі — «Бағдарлама») ООО «ВК» (ОГРН: 1027739850962) әзірлеген және ол «VK Cloud» платформасына компанияларды тартуға арналған",
+  "sectionTitle": "VK Cloud ұсынған VK Mini Apps сервистерін әзірлеушілерді қолдау бағдарламасы",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 14,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  }
+}

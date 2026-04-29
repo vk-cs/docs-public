@@ -1,0 +1,8 @@
+{
+  "title": "Canary Deployment Ingress баптауы",
+  "shortDescription": "VK Cloud жобасында Kubernetes кластерін қалай жайып орналастыруға және онда Nginx Ingress Annotations көмегімен Canary Deployment қалай баптауға болады",
+  "metaDescription": "Бұл мақала Kubernetes кластерін жайып орналастыруға және онда Nginx Ingress Annotations көмегімен Canary Deployment баптауға көмектеседі",
+  "sectionTitle": "Canary Deployment Ingress баптауы",
+  "icon": "",
+  "weight": 7
+}

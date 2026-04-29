@@ -1,0 +1,13 @@
+{
+  "title": "VK Object Storage",
+  "shortDescription": "Объектілік хранилище, бір уақытта жасалатын сұраулар санына қарамастан кез келген объектілерді сақтауды және тұрақты тарату жылдамдығын қамтамасыз етеді",
+  "metaDescription": "VK Object Storage — S3 API қолдауы бар объектілік хранилище, ол сенімді масштабталатын сақтауды және кез келген объектілерді тұрақты тарату жылдамдығын қамтамасыз етеді",
+  "sectionTitle": "VK Object Storage",
+  "icon": "",
+  "weight": 1,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/s3-rest-api/intro"
+    }
+  ]
+}
