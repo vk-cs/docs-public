@@ -1,7 +1,7 @@
 {
   "title": "Terraform пайдалану",
   "shortDescription": "Негізгі операцияларды орындау кезінде Terraform-ды қалай пайдалану керек",
-  "metaDescription": "Cloud Containers сервисімен жұмыс істеу үшін Terraform пайдаланудың қандай ерекшеліктері бар екенін біліңіз. Kubernetes кластерлерін Terraform көмегімен қалай басқаруға болады",
+  "metaDescription": "Cloud Containers сервисімен жұмыс істеу үшін Terraform пайдаланудың қандай ерекшеліктері бар екенін біліңіз. Kubernetes кластерлерін Terraform көмегімен қалай басқаруғал болады",
   "sectionTitle": "Terraform пайдалану",
   "icon": "",
   "weight": 1

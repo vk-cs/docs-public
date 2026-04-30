@@ -8,7 +8,7 @@ Redash 10.1.0 сервисін пайдалану арқылы сіз [Marketpla
 
 1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account).
 1. Егер ол бұрын жасалмаған болса, интернетке қолжетімді [желі жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau).
-1. Өрістетілген сервисі бар ВМ орналастырылатын [ішкі желі баптауларында](/kz/networks/vnet/instructions/net#zhelini_redakciyalau) **Приватный DNS** опциясын өшіріңіз.
+1. Өрістетілген сервисі бар ВМ орналастырылатын [ішкі желі баптауларында](/kz/networks/vnet/instructions/net#zhelini_redakciyalau) **Жеке DNS** опциясын өшіріңіз.
 1. Жобада сервисті [өрістетіңіз](../../instructions/pr-instance-add):
 
    - Бұрын жасалған интернетке қолжетімді желіні және ішкі желіні таңдаңыз. Сыртқы IP-мекенжай автоматты түрде тағайындалады.

@@ -32,8 +32,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Желілер тізімін және олардың идентификаторларын көру үшін пәрменді орындаңыз:
 
@@ -109,8 +109,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Пәрменді орындаңыз:
 
@@ -140,8 +140,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Редакциялау қажет желінің [идентификаторын алыңыз](#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau).
 
@@ -199,8 +199,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Жою қажет желінің [идентификаторын алыңыз](#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau).
 
@@ -237,8 +237,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Ішкі желі жасалуы керек желінің [идентификаторын алыңыз](#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau).
 
@@ -302,8 +302,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Редакциялау қажет ішкі желінің [идентификаторын алыңыз](#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau).
 
@@ -386,8 +386,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) мүмкін.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. OpenStack CLI-де [авторлануыңыз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) мүмкін.
 
 1. Жою қажет ішкі желінің [идентификаторын алыңыз](#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau).
 

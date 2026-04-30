@@ -17,8 +17,8 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
     ```console
@@ -48,8 +48,8 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
     ```console
@@ -79,8 +79,8 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
     ```console
@@ -118,8 +118,8 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
     ```console

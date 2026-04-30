@@ -9,7 +9,7 @@
 
 ## Дайындық қадамдары
 
-1. OpenStack клиентінің [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиентінің [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
 1. Локалдық инфрақұрылымыңыздағы клиенттік желіні таңдаңыз:
 

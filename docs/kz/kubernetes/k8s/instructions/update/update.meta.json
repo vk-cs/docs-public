@@ -1,7 +1,7 @@
 {
   "title": "Кластерді жаңарту",
-  "shortDescription": "Kubernetes кластерін жеке кабинет немесе Terraform арқылы қалай жаңартуға болады",
-  "metaDescription": "Kubernetes кластері және оның түйіндері үшін қолжетімді операциялар. Kubernetes кластерін VK Cloud жеке кабинетінде немесе Terraform арқылы қалай жаңартуға болатынын біліңіз",
+  "shortDescription": "Kubernetes кластерін жеке кабинет немесе Terraform арқылы қалай жаңартуғал болады",
+  "metaDescription": "Kubernetes кластері және оның түйіндері үшін қолжетімді операциялар. Kubernetes кластерін VK Cloud жеке кабинетінде немесе Terraform арқылы қалай жаңартуғал болатынын біліңіз",
   "sectionTitle": "Кластерді жаңарту",
   "icon": "",
   "weight": 8

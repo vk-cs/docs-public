@@ -1,7 +1,7 @@
 {
   "title": "Тұрақты томдармен (PV) жұмыс істеу",
   "shortDescription": "Кластерде әртүрлі тұрақты томдар (PV) түрлерін қалай пайдалану керек",
-  "metaDescription": "Kubernetes кластерінде әртүрлі тұрақты томдар (Persistent Volumes, PV) түрлерін қалай пайдалану керектігін біліңіз. Тұрақты томдарды Persistent Volume Claims (PVC) көмегімен қалай қосуға болады",
+  "metaDescription": "Kubernetes кластерінде әртүрлі тұрақты томдар (Persistent Volumes, PV) түрлерін қалай пайдалану керектігін біліңіз. Тұрақты томдарды Persistent Volume Claims (PVC) көмегімен қалай қосуғал болады",
   "sectionTitle": "Тұрақты томдармен (PV) жұмыс істеу",
   "icon": "",
   "weight": 2

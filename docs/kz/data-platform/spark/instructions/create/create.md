@@ -53,7 +53,7 @@
 
    1. **Келесі қадам** түймесін басыңыз.
 
-1. **Қосылымдар** қадамында `PostgreSQL` қосылымын және мына қосылымдардың бірін қосыңыз: `S3 VK Cloud` немесе `S3 внешний`.  [деректер көзіне](/kz/data-platform/spark/concepts/parameters#parameters_data_sources)   қосылым қосу үшін:
+1. **Қосылымдар** қадамында `PostgreSQL` қосылымын және мына қосылымдардың бірін қосыңыз: `S3 VK Cloud` немесе `S3 сыртқы`.  [деректер көзіне](/kz/data-platform/spark/concepts/parameters#parameters_data_sources)   қосылым қосу үшін:
 
     {include(/kz/_includes/_spark.md)[tags=connection]}
 

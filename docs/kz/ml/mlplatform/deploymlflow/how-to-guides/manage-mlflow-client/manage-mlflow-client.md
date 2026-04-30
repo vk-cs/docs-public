@@ -2,7 +2,7 @@
 
 VK Cloud ұсынған JupyterHub-та алдын ала орнатылған python-кітапхана — MLflow Deployment Client көмегімен MLflow Deploy инстанстарын басқарыңыз.
 
-## Перед началом работы
+## Жұмысты бастамас бұрын
 
 1. [Құрыңыз](../../../jupyterhub/instructions/create) JupyterHub инстансын.
 2. [Құрыңыз](../../../mlflow/instructions/create) MLflow инстансын.
@@ -16,7 +16,7 @@ JupyterHub, MLflow және MLflow Deploy инстанстары бір желі
 
 {/note}
 
-## Подготовка ML-модели
+## ML-модельді дайындау
 
 1. [Қосылыңыз](../../../jupyterhub/instructions/connect) JupyterHub инстансына.
 2. **tutorials** директориясына өтіңіз.
@@ -28,7 +28,7 @@ JupyterHub, MLflow және MLflow Deploy инстанстары бір желі
    2. Ашылған терезеде код мысалы бар ұяшықты басып, мәзірден **Run → Run Selected Cells** таңдаңыз.
    3. Код бар барлық ұяшықтар үшін әрекетті қайталаңыз.
 
-## Управление инстансом
+## Инстансты басқару
 
 Оқытуға арналған Jupyter ноутбугының бүкіл сценарийін орындау үшін:
 
@@ -62,7 +62,7 @@ from mlflow.deployments import get_deploy_client
 client = get_deploy_client('vk-cloud-mlplatform')
 ```
 
-### Создание endpoint
+### Endpoint жасау
 
 `endpoint` VK Cloud MLflow Deploy терминологиясында — орналастыру сервері ретінде бапталған ВМ.
 
@@ -81,7 +81,7 @@ client.create_endpoint(name=deploy_server_name)
 - `mid — advanced 8-8` (8 ядро, 8 гигабайт RAM);
 - `high — advanced 16-16` (16 ядро, 16 гигабайт RAM).
 
-### Получение списка и статуса серверов
+### Серверлер тізімін және мәртебесін алу
 
 Орналастыру сервері `CREATING` мәртебесі `RUNNING` мәртебесіне ауысқаннан кейін жұмысқа дайын болады. Әдетте орналастыру серверін дайындау шамамен бес-он минутты алады.
 
@@ -95,7 +95,7 @@ client.list_endpoints()
 client.get_endpoint(deploy_server_name)
 ```
 
-### deployment жасау
+### Deployment жасау
 
 `deployment` VK Cloud MLflow Deploy терминологиясында — орналастыру серверіндегі ML-модельі бар іске қосылған docker-контейнер.
 
@@ -106,7 +106,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 `port_out` параметрін көрсету міндетті емес, `62000`-нан `65000`-ға дейінгі ауқымнан бірінші бос порт таңдалады. ML-модельді іске қосу әдетте бір минуттан аз уақыт алады.
 
-### Получение списка и статуса deployment
+### Deployment тізімін және мәртебесін алу
 
 1. Орналастыру серверіндегі іске қосылған ML-модельдердің тізімін шығарыңыз:
 
@@ -127,7 +127,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    client.predict(deploy_server_name, deployment_name, data)
    ```
 
-### Создание deployment, доступного по публичному DNS
+### Жария DNS бойынша қолжетімді deployment жасау
 
 1. Пайдаланушы атын және құпиясөзді орнатыңыз.
 
@@ -185,7 +185,7 @@ client.delete_deployment(deploy_server_name, deployment_name)
 client.delete_endpoint(deploy_server_name)
 ```
 
-### Краткий список методов
+### Әдістердің қысқаша тізімі
 
 ```python
 from mlflow.deployments import get_deploy_client

@@ -6,9 +6,9 @@
 
 Қолжетімді дискілік кеңістікті ұлғайту үшін:
 
-1. [Қажетті диск өлшемі бар жаңа worker-түйіндер тобын жасаңыз](https://cloud.vk.com/docs/kubernetes/k8s/instructions/manage-node-group#add_group).
-1. Жүктемені жаңа түйіндер тобына көшіріңіз. Толығырақ Kubernetes [ресми құжаттамасында](https://kubernetes.io/docs/home/) берілген.
-1. Сервистердің жұмысқа қабілеттілігін тексеріңіз.
+1. [Қажетті диск өлшемі бар жаңал worker-түйіндер тобын жасаңыз](https://cloud.vk.com/docs/kubernetes/k8s/instructions/manage-node-group#add_group).
+1. Жүктемені жаңал түйіндер тобына көшіріңіз. Толығырақ Kubernetes [ресми құжаттамасында](https://kubernetes.io/docs/home/) берілген.
+1. Сервистердің жұмысқал қабілеттілігін тексеріңіз.
 1. [Ескі worker-түйіндер тобын жойыңыз](https://cloud.vk.com/docs/kubernetes/k8s/instructions/manage-node-group#udalit_gruppu_uzlov).
 
 {/cut}
@@ -19,14 +19,14 @@
 
 [ingress-nginx](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress) аддонын пайдаланыңыз. Аддонды орнату кезінде бұл баптау әдепкі бойынша қосылады.
 
-Егер сіз ingress-nginx аддонын орнатпай-ақ Ingress NGINX компонентін пайдалансаңыз, Ingress конфигурациясында (ConfigMap) `use-proxy-protocol` аннотациясын қолданыңыз:
+Егер сіз ingress-nginx аддонын орнатпай-алқ Ingress NGINX компонентін пайдалансаңыз, Ingress конфигурациясында (ConfigMap) `use-proxy-protocol` аннотациясын қолданыңыз:
 
 ```console
 annotations:
      nginx.ingress.kubernetes.io/use-proxy-protocol: "true"
 ```
 
-`use-proxy-protocol` аннотациясы proxy protocol-ды қосады. Бұл прокси-серверлер мен жүктеме теңгергіштері арқылы берілетін клиенттердің IP мекенжайларын алуға мүмкіндік береді.
+`use-proxy-protocol` аннотациясы proxy protocol-ды қосады. Бұл прокси-серверлер мен жүктеме теңгергіштері арқылы берілетін клиенттердің IP мекенжайларын алуғал мүмкіндік береді.
 
 {/cut}
 
@@ -37,5 +37,5 @@ Limit Range — под жасалған кезде қолданылатын са
 
 {cut(Басқарылатын кластерге Windows ОЖ негізіндегі түйіндерді қосуға бола ма?)}
 
-Windows ОЖ негізіндегі түйіндерді қосуға қолдау көрсетілмейді.
+Windows ОЖ негізіндегі түйіндерді қосуғал қолдау көрсетілмейді.
 {/cut}

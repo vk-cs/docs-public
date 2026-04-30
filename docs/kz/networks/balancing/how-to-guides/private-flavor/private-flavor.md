@@ -11,12 +11,12 @@ VK Cloud жүйесінде инфрақұрылымыңызға арнайы с
 1. Егер бұл әлі жасалмаса, жеке үлгіні жасау туралы сұраумен VK Cloud менеджеріне немесе пресейл-архитекторына хабарласыңыз. Келісуден кейін сіз өзіңіз үшін жасалған конфигурация үлгісі туралы ақпарат аласыз.
 1. Егер балансировщикті жасау немесе оның жұмысқа қабілеттілігін тексеру үшін OpenStack CLI пайдалануды жоспарласаңыз:
 
-    1. және `octavia` пакеттері бар OpenStack клиенті `neutron` [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-    1. [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+    1. және `octavia` пакеттері бар OpenStack клиенті `neutron` [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
+    1. [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 1. Егер әлі орнатылмаса [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md), утилитасын орнатыңыз.
 1. [алыңыз](/kz/tools-for-using-services/api/rest-api/endpoints) Осы мысалда: `https://public.infra.mail.ru:9876`.
 1. [алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token) API-ге қол жеткізу токені `X-Auth-Token`.
-1. [біліңіз](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) идентификаторы сети и подсети, в которых вы хотите создать балансировщик.
+1. [біліңіз](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) теңгерімдеуші жасағыңыз келетін желі мен ішкі желінің идентификаторларын.
 
 ## {heading(1. Үлгілер туралы ақпарат алыңыз)[id=get_info]}
 
@@ -45,7 +45,7 @@ VK Cloud жүйесінде инфрақұрылымыңызға арнайы с
 {/tab}
 {/tabs}
 
-{cut(Подробнее об именах шаблонов)}
+{cut(Үлгі атаулары туралы толығырақ)}
 Балансировщикке арналған үлгі атауы келесі түрде қалыптастырылады:
 
 ```plaintext
@@ -81,7 +81,7 @@ curl -X POST -H "Content-Type: application/json" -H "X-Auth-Token: <ТОКЕН>"
 - `<ЗОНА_ДОСТУПНОСТИ>` — балансировщикті орналастырғыңыз келетін [қолжетімділік аймағының](/kz/computing/iaas/concepts/avail-zone), атауы.
 - `<ТЕГ>` — балансировщикті белгілегіңіз келетін тег.
 
-{cut(Пример ответа)}
+{cut(Жауап мысалы)}
 
 ```json
 {

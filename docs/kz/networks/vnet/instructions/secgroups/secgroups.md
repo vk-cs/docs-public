@@ -22,7 +22,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Қауіпсіздік топтарының тізімін көру үшін келесі команданы орындаңыз:
 
@@ -70,7 +70,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Жобадағы қауіпсіздік топтарын қарап шығыңыз:
 
@@ -117,7 +117,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Қауіпсіздік тобының сипаттамасы мен атауын өзгерту үшін келесі команданы орындаңыз:
 
@@ -182,7 +182,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Топ ережелерінің тізімін қарап шығыңыз:
 
@@ -224,15 +224,15 @@
 1. Бөлімге өтіңіз **Виртуалды желілер** → **Firewall баптаулары**.
 1. Қауіпсіздік тобының атауын басыңыз.
 1. Қажетті ереже тағайындалған ВМ бар жолдағы қоқыс жәшігі белгішесін басыңыз.
-1. батырмасын басыңыз **Подтвердить**.
+1. батырмасын басыңыз **Растау**.
 1. Жойылуы керек ереже үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып **Жою**.
-1. батырмасын басыңыз **Подтвердить**.
+1. батырмасын басыңыз **Растау**.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Ереже туралы толық ақпаратты көру үшін келесі команданы орындаңыз:
 
@@ -268,7 +268,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Келесі команданы орындаңыз:
 
@@ -296,13 +296,13 @@
 1. Қауіпсіздік тобының атауын басыңыз.
 1. В разделе **Ережелер тобы бар виртуалды машиналар** бөлімінде инстанс жолының үстіне меңзерді апарыңыз.
 1. Қоқыс жәшігі белгішесін басыңыз.
-1. батырмасын басыңыз **Подтвердить**.
+1. батырмасын басыңыз **Растау**.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Келесі команданы орындаңыз:
 
@@ -341,7 +341,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Келесі команданы орындаңыз:
 

@@ -51,13 +51,13 @@
 
    {tab(Terraform)}
  
-   1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+   1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобағал [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
    1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
 
-   1. Кластердің master-түйіндері үшін пайдаланылатын жаңа виртуалды машина түрін анықтаңыз:
+   1. Кластердің master-түйіндері үшін пайдаланылатын жаңал виртуалды машина түрін анықтаңыз:
 
       1. Команданы орындаңыз:
 
@@ -112,7 +112,7 @@
 
 1. [Тік масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз](../../concepts/scale).
 
-1. Масштабтауға дайындалыңыз:
+1. Масштабтауғал дайындалыңыз:
 
    1. [Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau).
    1. Егер есептеу ресурстарының көлемін азайтуды жоспарласаңыз, worker-түйіндер тобындағы ресурстардың қорытынды көлемі жұмыс жүктемесін орналастыру үшін жеткілікті болатынына көз жеткізіңіз.
@@ -161,13 +161,13 @@
    Terraform арқылы басқару тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
    {/note}
 
-   1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+   1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобағал [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
    1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
 
-   1. Кластер түйіндері тобындағы worker-түйіндер үшін пайдаланылатын жаңа виртуалды машина түрін анықтаңыз:
+   1. Кластер түйіндері тобындағы worker-түйіндер үшін пайдаланылатын жаңал виртуалды машина түрін анықтаңыз:
 
       1. Команданы орындаңыз:
 
@@ -244,7 +244,7 @@
    1. Пайда болған терезеде:
 
       1. **Автомасштабтауды қосу** опциясының өшірулі екеніне көз жеткізіңіз.
-      1. Қажетті түйіндер санын орнатыңыз. Оны көбейтуге де, азайтуға да болады.
+      1. Қажетті түйіндер санын орнатыңыз. Оны көбейтуге де, азайтуғал да болады.
       1. **Өзгерістерді сақтау** түймесін басыңыз.
 
    {/tab}

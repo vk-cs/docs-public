@@ -2,12 +2,12 @@
 
 Кластерде сәйкес [аддон](../../concepts/addons-and-settings/addons) орнатылған болса, Docker реестріне қосыла аласыз.
 
-Аддонды [орнату кезінде](../../instructions/addons/advanced-installation/install-advanced-registry) ол үшін Floating IP-мекенжайы бар стандартты жүктеме теңгергіші жасалады. Сондықтан Docker реестріне интернетке қолжетімділігі бар кез келген хосттан қосылуға болады.
+Аддонды [орнату кезінде](../../instructions/addons/advanced-installation/install-advanced-registry) ол үшін Floating IP-мекенжайы бар стандартты жүктеме теңгергіші жасалады. Сондықтан Docker реестріне интернетке қолжетімділігі бар кез келген хосттан қосылуғал болады.
 
 ## Дайындық қадамдары
 
-1. Кластерде Docker реестрінің (`docker-registry`) аддоны орнатылғанына [көз жеткізіңіз](../../instructions/addons/manage-addons#addondardy_karau).
-1. `kubectl` көмегімен кластерге қосыла алатыныңызға [көз жеткізіңіз](../kubectl#check_connection).
+1. Кластерде Docker реестрінің (`docker-registry`) аддондар орнатылғанына [көз жеткізіңіз](../../instructions/addons/manage-addons#addondardy_karau).
+1. `kubectl` көмегімен кластерге қосыла алатыныңызғал [көз жеткізіңіз](../kubectl#check_connection).
 1. Docker реестріне қол жеткізу үшін [деректерді алыңыз](../../instructions/addons/advanced-installation/install-advanced-registry#tizilimge_kosylu).
 
 ## Docker реестріне қосылу
@@ -20,7 +20,7 @@
 
 1. Docker реестрін сенімді реестрлер тізіміне қосыңыз:
 
-   1. Docker конфигурациялық файлы `daemon.json` ішіне Docker реестрінің эндпоинт мекенжайы бар `insecure-registries` параметрін қосыңыз.
+   1. Docker конфигурациялық файлдар `daemon.json` ішіне Docker реестрінің эндпоинт мекенжайы бар `insecure-registries` параметрін қосыңыз.
 
       Мекенжай `<IP_АДРЕС_РЕЕСТРА_DOCKER>:<ПОРТ_РЕЕСТРА_DOCKER>` форматында беріледі.
 
@@ -130,7 +130,7 @@ Docker реестріндегі образдарды пайдаланып кла
 
    - `ìmagePullSecrets` параметрінде жасалған құпияның атауын.
 
-   - `containers.image` параметрінде реестрдегі образға жолды.
+   - `containers.image` параметрінде реестрдегі образғал жолды.
 
      Жол `<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>` форматында беріледі.
 

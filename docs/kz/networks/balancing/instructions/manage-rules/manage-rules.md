@@ -20,7 +20,7 @@
       - Теңгергіш пайдаланатын теңгеру протоколы және порт.
       - Тағайындалу протоколы мен порты.
 
-      При выборе протокола балансировки `TCP` теңгеру протоколын таңдағанда, екі тағайындалу протоколы қолжетімді болады: `TCP` немесе `PROXY`. Proxy protocol балансировщиктің артында тұрған серверлер оны қолдаса, пайдаланылуы мүмкін.
+            `TCP` теңгеру протоколын таңдағанда, екі тағайындалу протоколы қолжетімді болады: `TCP` немесе `PROXY`. Proxy protocol теңгерімдеушінің артында тұрған серверлер оны қолдаса, пайдаланылуы мүмкін.
 
    - **Теңгеру әдісі**:
 
@@ -117,12 +117,12 @@ openstack loadbalancer <КОМАНДА> --help
 
 1. Мыналарға көз жеткізіңіз:
 
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
 
 1. OpenStack CLI-ге қосылыңыз:
 
-   1. [Получите идентификатор балансировщика нагрузки](/kz/networks/balancing/instructions/manage-lb#zhukteme_tengergishterinin_tizimin_zhne_olar_turaly_akparatty_karau), для которого нужно создать правило.
+   1. Ереже жасау қажет [жүктеме теңгерімдеушісінің идентификаторын алыңыз](/kz/networks/balancing/instructions/manage-lb#zhukteme_tengergishterinin_tizimin_zhne_olar_turaly_akparatty_karau).
 
    1. Теңгеру ережесін жасау үшін:
 
@@ -157,7 +157,7 @@ openstack loadbalancer <КОМАНДА> --help
 
       Жасалған пулдың идентификаторын (`id`).
 
-   1. Пулдың қатысушылары (members) болатын виртуалды машиналардың IP-мекенжайларын анықтаңыз. Сондай-ақ виртуалды машиналар орналасқан ішкі желінің [идентификаторын анықтаңыз](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) подсети, в которой находятся виртуальные машины.
+   1. Пулдың қатысушылары (members) болатын виртуалды машиналардың IP-мекенжайларын анықтаңыз. Сондай-ақ виртуалды машиналар орналасқан ішкі желінің [идентификаторын анықтаңыз](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau).
 
       Бұл виртуалды машиналар не теңгеру ережесі жасалатын теңгергіш орналасқан ішкі желіде орналасуы, не осы ішкі желіден қолжетімді болуы тиіс.
 
@@ -328,8 +328,8 @@ openstack loadbalancer <КОМАНДА> --help
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-    1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+    1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
 
 1. Жүктеме теңгергішінің идентификаторын анықтаңыз. Ол үшін теңгергіштер тізімін шығарыңыз:
 
@@ -427,8 +427,8 @@ openstack loadbalancer <КОМАНДА> --help
 
 1. Мыналарға көз жеткізіңіз:
 
-    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-    1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+    1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
    
 1. Жүктеме теңгергішінің идентификаторын анықтаңыз. Ол үшін теңгергіштер тізімін шығарыңыз:
 

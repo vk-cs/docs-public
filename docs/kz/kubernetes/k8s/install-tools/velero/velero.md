@@ -1,15 +1,15 @@
 {include(/kz/_includes/_translated_by_ai.md)}
-Velero — Kubernetes кластері ресурстарының резервтік көшірмесін жасауға және оларды қалпына келтіруге арналған клиент-серверлік утилита.
+Velero — Kubernetes кластері ресурстарының резервтік көшірмесін жасауғал және оларды қалпына келтіруге арналған клиент-серверлік утилита.
 
 ## Орнату
 
-1. Мыналарға көз жеткізіңіз:
+1. Мыналарғал көз жеткізіңіз:
 
    - не worker-түйіндер топтарында кемінде 2 бос vCPU бар;
    - не [автоматты масштабтау қосылған](../../instructions/scale#autoscale_worker_nodes).
 
-1. [Көз жеткізіңіз](../../connect/kubectl#check_connection), кластерге `kubectl` көмегімен қосыла алатыныңызға.
-1. Егер әлі орнатылмаған болса, OpenStack CLI [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli). Оның көмегімен бұлтта авторизациялана алатыныңызға [көз жеткізіңіз](/kz/tools-for-using-services/cli/openstack-cli).
+1. [Көз жеткізіңіз](../../connect/kubectl#check_connection), кластерге `kubectl` көмегімен қосыла алатыныңызғал.
+1. Егер әлі орнатылмаған болса, OpenStack CLI [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli). Оның көмегімен бұлтта авторизациялана алатыныңызғал [көз жеткізіңіз](/kz/tools-for-using-services/cli/openstack-cli).
 1. [VK Object Storage](../../../../storage/s3/instructions/buckets/create-bucket) сервисінде резервтік көшірмелерді сақтау үшін [hotbox-бакет жасаңыз](../../../../storage/s3).
 1. [VK Object Storage](../../../../storage/s3/instructions/access-management/access-keys) сервисінде [аккаунт жасаңыз](../../../../storage/s3).
 
@@ -122,7 +122,7 @@ Velero — Kubernetes кластері ресурстарының резервт
 
    {/tabs}
 
-   Ұқсас ақпарат шығуы керек:
+   Ұқсас алқпарат шығуы керек:
 
    ```yaml
    apiVersion: v1
@@ -144,7 +144,7 @@ Velero — Kubernetes кластері ресурстарының резервт
 1. Кластердегі Velero deployment-ын патчтаңыз. Бұл үшін қажет:
 
    - Velero-ның AWS және VK Cloud плагиндері тұтынатын ресурстарды шектеу;
-   - VK Cloud бұлтында авторизациялануға арналған айнымалылары бар құпияны көрсету.
+   - VK Cloud бұлтында авторизациялануғал арналған айнымалылары бар құпияны көрсету.
 
    1. Патч файлын жасаңыз:
 
@@ -194,7 +194,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    velero snapshot-location create default --provider openstack --config region=ru-msk
    ```
 
-## Жұмысқа қабілеттілігін тексеру
+## Жұмысқал қабілеттілігін тексеру
 
 1. Бапталған плагиндерді тексеру үшін команданы орындаңыз:
 
@@ -217,7 +217,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    velero backup-location get
    ```
 
-   Ұқсас ақпарат шығуы керек:
+   Ұқсас алқпарат шығуы керек:
 
    ```text
    NAME      PROVIDER   BUCKET/PREFIX   PHASE       LAST VALIDATED                  ACCESS MODE   DEFAULT
@@ -230,7 +230,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    velero snapshot-location get
    ```
 
-   Ұқсас ақпарат шығуы керек:
+   Ұқсас алқпарат шығуы керек:
 
    ```text
    NAME      PROVIDER

@@ -2,7 +2,7 @@
 
 ## Қызмет қандай міндеттерге жарамды
 
-Cloud Containers қызметі Kubernetes кластерлерін құруға және олардың ішінде әртүрлі сервистер мен қолданбаларды іске қосуға мүмкіндік береді. Kubernetes үшін барлық үйреншікті құралдар қолжетімді, мысалы:
+Cloud Containers қызметі Kubernetes кластерлерін құруғал және олардың ішінде әртүрлі сервистер мен қолданбаларды іске қосуғал мүмкіндік береді. Kubernetes үшін барлық үйреншікті құралдар қолжетімді, мысалы:
 
 - Контейнерлерде serverless-функцияларды сақтау және өңдеу: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
@@ -15,11 +15,11 @@ Cloud Containers қызметі Kubernetes кластерлерін құруға
 
   - Үлкен есептеу жүктемелеріне төтеп беруге мүмкіндік беретін кластерлерді автомасштабтау.
   - Оқиғалық (event-triggered) деректер өңдегіштерін жасау.
-  - Kubernetes кластерлері мен деректерін [машиналық оқытуға арналған VK Cloud платформасының басқа сервистерімен](/kz/ml) интеграциялау.
+  - Kubernetes кластерлері мен деректерін [машиналық оқытуғал арналған VK Cloud платформасының басқал сервистерімен](/kz/ml) интеграциялау.
 
 {note:info}
 
-VK Cloud ұсынатын Kubernetes дистрибутиві CNCF ([Cloud Native Computing Foundation](https://www.cncf.io/certification/software-conformance/#logos)) тарапынан [Certified Kubernetes — Hosted](https://www.cncf.io/) сертификатын алды. Бұл дистрибутивтің сенімділік пен стандарттарға сәйкестікке тексерілгенін, қауымдастықтың барлық функционалдық талаптарына сай келетінін және стандартты [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/) интерфейсімен үйлесімді екенін білдіреді. VK Cloud — осындай сертификатты алған Ресейдегі жалғыз бұлттық провайдер.
+VK Cloud ұсынатын Kubernetes дистрибутиві CNCF ([Cloud Native Computing Foundation](https://www.cncf.io/certification/software-conformance/#logos)) тарапынан [Certified Kubernetes — Hosted](https://www.cncf.io/) сертификатын алды. Бұл дистрибутивтің сенімділік пен стандарттарғал сәйкестікке тексерілгенін, қауымдастықтың барлық функционалдық талаптарына сай келетінін және стандартты [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/) интерфейсімен үйлесімді екенін білдіреді. VK Cloud — осындай сертификатты алған Ресейдегі жалғыз бұлттық провайдер.
 
 {/note}
 
@@ -31,11 +31,11 @@ VK Cloud ұсынатын Kubernetes дистрибутиві CNCF ([Cloud Nativ
 
 - Кластерді автоматты және қолмен [масштабтау](../../instructions/scale) (cluster autoscaling).
 
-  Автоматты масштабтау қосулы болғанда, қолданбалар шекті жүктеме сәтінде бірден қосымша есептеу қуатын алады. Жүктеме төмендегенде, қолданбаға қолжетімді ресурстар саны азаяды.
+  Автоматты масштабтау қосулы болғанда, қолданбалар шекті жүктеме сәтінде бірден қосымша есептеу қуатын алады. Жүктеме төмендегенде, қолданбағал қолжетімді ресурстар саны азаяды.
   
   Мұндай тәсіл есептеу ресурстарының 60%-ына дейін үнемдеуге мүмкіндік береді.
 
-- VK Cloud-тың бір [өңірі](../../../../tools-for-using-services/account/concepts/regions) шегінде [өңірлік кластер](/kz/kubernetes/k8s/concepts/architecture#cluster_topology) құру арқылы үлестірілген инсталляцияларды жасау: істен шығуға төзімділікті қамтамасыз ету үшін бір кластердің әртүрлі тораптары әртүрлі қолжетімділік аймақтарында (әртүрлі деректерді өңдеу орталықтарында) орналаса алады. Сондай-ақ қолданба репликаларын да осы тораптарға репликалар әртүрлі қолжетімділік аймақтарында болатындай етіп орналастыру ұсынылады.
+- VK Cloud-тың бір [өңірі](../../../../tools-for-using-services/account/concepts/regions) шегінде [өңірлік кластер](/kz/kubernetes/k8s/concepts/architecture#cluster_topology) құру арқылы үлестірілген инсталляцияларды жасау: істен шығуғал төзімділікті қамтамасыз ету үшін бір кластердің әртүрлі тораптары әртүрлі қолжетімділік аймақтарында (әртүрлі деректерді өңдеу орталықтарында) орналаса алады. Сондай-алқ қолданба репликаларын да осы тораптарғал репликалар әртүрлі қолжетімділік аймақтарында болатындай етіп орналастыру ұсынылады.
 
 - VK Cloud платформасының [деректерді сақтау жүйесімен](../storage) және [желілік ішкі жүйесімен](../network) интеграция.
 
@@ -44,22 +44,22 @@ VK Cloud ұсынатын Kubernetes дистрибутиві CNCF ([Cloud Nativ
 - Кластермен жұмыс істеудің барлық кезеңдерінде қауіпсіздікті қамтамасыз ету:
 
   - Кластер ішіндегі желілік өзара әрекеттесу кезінде барлық қосылыстар шифрланады, сертификаттар пайдаланылады.
-  - Calico-ның [желілік саясаттарын](../network#container_network_interface_cni_men_zhumys) ([network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)) қолдануға болады.
-  - Gatekeeper-дің [шектеуші саясаттарын](../architecture#open_policy_agent_ti_kiriktirilgen_koldau) ([constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto)) қолдануға болады.
+  - Calico-ның [желілік саясаттарын](../network#container_network_interface_cni_men_zhumys) ([network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)) қолдануғал болады.
+  - Gatekeeper-дің [шектеуші саясаттарын](../architecture#open_policy_agent_ti_kiriktirilgen_koldau) ([constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto)) қолдануғал болады.
   - Kubernetes-тің [рөлдік қауіпсіздік моделін](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) VK Cloud платформасының рөлдерімен интеграциялау қолжетімді. Толығырақ [Қатынасты басқару](../../concepts/access-management) бөлімінен оқыңыз.
 
 - Velero көмегімен Cloud Containers кластерлерін [резервтік көшіру](../../how-to-guides/velero/velero-backup).
 
-- Velero көмегімен басқа Kubernetes кластерлерін Cloud Containers-ке көшіру.
+- Velero көмегімен басқал Kubernetes кластерлерін Cloud Containers-ке көшіру.
 
-- [Terraform көмегімен кластерді құру кезінде](../addons-and-settings/addons) таңдауға немесе қолданыстағы кластерге [орнатуға](../../instructions/create-cluster) болатын [дайын аддондар жиынтығы](../../instructions/addons/manage-addons), бұл оларды қолмен жайып орналастыруға кететін уақытты үнемдейді.
-- Кластер жұмысының тұрақтылығы мен қауіпсіздігін арттыруға көмектесетін [дайын баптаулар жиынтығы](../addons-and-settings/settings).
+- [Terraform көмегімен кластерді құру кезінде](../addons-and-settings/addons) таңдауғал немесе қолданыстағы кластерге [орнатуғал](../../instructions/create-cluster) болатын [дайын аддондар жиынтығы](../../instructions/addons/manage-addons), бұл оларды қолмен жайып орналастыруғал кететін уақытты үнемдейді.
+- Кластер жұмысының тұрақтылығы мен қауіпсіздігін арттыруғал көмектесетін [дайын баптаулар жиынтығы](../addons-and-settings/settings).
 
 - Prometheus көмегімен кластер күйін мониторингтеу. Мониторинг деректерін [бірнеше тәсілмен](../../monitoring) көруге болады.
 
-- Мониторинг деректері негізінде кластер ресурстарының [тұтынылуын болжау](../../monitoring#forecast_consumption). VK Tech тарапынан жетілдірілген `kube-prometheus-stack` мониторинг аддоны [Grafana](../../monitoring#connect_grafana) ішінде алдын ала бапталған қосымша мүмкіндіктерді ұсынады:
+- Мониторинг деректері негізінде кластер ресурстарының [тұтынылуын болжау](../../monitoring#forecast_consumption). VK Tech тарапынан жетілдірілген `kube-prometheus-stack` мониторинг аддондар [Grafana](../../monitoring#connect_grafana) ішінде алдын ала бапталған қосымша мүмкіндіктерді ұсынады:
   
-  - кластер тораптарындағы ресурстар тұтынылуының ағымдағы болжамдарын көрсететін дашбордтар;
+  - кластер тораптарындағы ресурстар тұтынылуының алғымдағы болжамдарын көрсететін дашбордтар;
   - егер белгілі бір уақыттан кейін нақты ресурстардың сарқылуы болжанса, хабарламалар жіберуге арналған алерттер.
 
 ## Келесі не істеу керек

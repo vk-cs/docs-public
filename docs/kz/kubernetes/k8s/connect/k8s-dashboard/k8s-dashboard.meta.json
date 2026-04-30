@@ -1,7 +1,7 @@
 {
   "title": "Kubernetes Dashboard көмегімен кластерге қосылу",
   "shortDescription": "",
-  "metaDescription": "Kubernetes Dashboard — барлық VK Cloud кластерлерінде қолжетімді Kubernetes кластерлеріне арналған әмбебап веб-интерфейс. VK Cloud-та Kubernetes Dashboard көмегімен Kubernetes кластеріне қалай қосылуға болады",
+  "metaDescription": "Kubernetes Dashboard — барлық VK Cloud кластерлерінде қолжетімді Kubernetes кластерлеріне арналған әмбебап веб-интерфейс. VK Cloud-та Kubernetes Dashboard көмегімен Kubernetes кластеріне қалай қосылуғал болады",
   "sectionTitle": "Кластерге қосылу (Kubernetes Dashboard)",
   "icon": "",
   "weight": 3

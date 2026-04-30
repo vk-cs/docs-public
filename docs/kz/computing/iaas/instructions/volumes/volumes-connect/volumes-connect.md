@@ -5,7 +5,7 @@
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Жеке кабинет)}
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне өтіңіз.
 1. **Бұлттық есептеулер → Дискілер** бөліміне өтіңіз.
@@ -30,7 +30,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
 1. Дискілер тізімін шығарып, дискінің ID мәнін көшіріп алыңыз:
 
@@ -78,7 +78,7 @@
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Жеке кабинет)}
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне өтіңіз.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
@@ -110,7 +110,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
 1. Дискілер тізімін шығарып, дискінің ID мәнін көшіріп алыңыз:
 

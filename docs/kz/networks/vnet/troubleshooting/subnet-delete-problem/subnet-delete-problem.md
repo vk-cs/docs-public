@@ -27,6 +27,6 @@ Unable to complete operation on subnet: One or more ports have an IP allocation 
    ```console
    openstack subnet delete <ИДЕНТИФИКАТОР_ПОДСЕТИ>
    ```
-   Мұнда `<ИДЕНТИФИКАТОР_ПОДСЕТИ>` — [ішкі желінің идентификаторы](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau), которую нужно удалить.
+   Мұнда `<ИДЕНТИФИКАТОР_ПОДСЕТИ>` — [ішкі желінің идентификаторы](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau), оны жою қажет.
 
 1. Егер мәселе сақталса, [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts).

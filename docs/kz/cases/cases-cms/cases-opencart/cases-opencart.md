@@ -111,10 +111,10 @@
    1. `/var/www/html/opencart/config.php` және `/var/www/html/opencart/admin/config.php` конфигурациялық файлдарында мына жолды ауыстырыңыз:
 
       ```console
-      // исходная строка
+      // бастапқы жол
       define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 
-      // заменяемая строка
+      // ауыстырылатын жол
       define('DIR_STORAGE', '/var/www/storage/');
       ```
 

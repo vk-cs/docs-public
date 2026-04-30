@@ -54,13 +54,13 @@ worker-түйіндер топтарына орналастырылатын ад
    {tab(Terraform)}
       
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -88,7 +88,7 @@ worker-түйіндер топтарына орналастырылатын ад
 
 {tab(Бөлінген worker-түйіндерге орнату)}
 
-1. Егер бұл әлі жасалмаса, аддонды орнатуға арналған бөлінген worker-түйіндер тобын дайындаңыз:
+1. Егер бұл әлі жасалмаса, аддонды орнатуғал арналған бөлінген worker-түйіндер тобын дайындаңыз:
 
    {tabs}
    
@@ -177,13 +177,13 @@ worker-түйіндер топтарына орналастырылатын ад
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
 
    1. Конфигурациялық файлдардың дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -242,13 +242,13 @@ worker-түйіндер топтарына орналастырылатын ад
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
 
    1. Конфигурациялық файлдардың дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 

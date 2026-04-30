@@ -18,7 +18,7 @@
 
 {tab(Жеке кабинет)}
 
-[қараңыз](/kz/kubernetes/k8s/instructions/manage-resources#view-resources) список подов кластера в личном кабинете VK Cloud.
+[қараңыз](/kz/kubernetes/k8s/instructions/manage-resources#view-resources) тізім подтардың кластера жеке кабинетте VK Cloud.
 
 {/tab}
 
@@ -48,21 +48,21 @@ kubectl logs <ИМЯ_ПОДА> -n kube-system
 kubectl logs -f <ИМЯ_ПОДА> -n kube-system
 ```
 
-## 3. Кластер оқиғаларын қараңыз
+## 3. Кластер оқжәнеғаларын қараңыз
 
-1. Кластерде болып жатқан оқиғалар туралы ақпаратты алыңыз:
+1. Кластерде болып жатқан оқжәнеғалар туралы алқпаратты алыңыз:
    
    ```console
    kubectl get events -n kube-system
    ```
 
-1. Оқиғаларды автоматты масштабтау агенті подының атауы бойынша сүзіңіз (әдетте под атауында `cluster-autoscaler` болады):
+1. Оқжәнеғаларды автоматты масштабтау агенті подының атауы бойынша сүзіңіз (әдетте под атауында `cluster-autoscaler` болады):
 
    ```console
    kubectl get events -n kube-system | grep cluster-autoscaler
    ```
 
-Оқиғалармен жұмыс істеу туралы толығырақ [ресми құжаттамада](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
+Оқжәнеғалармен жұмыс істеу туралы толығырақ [ресми құжаттамада](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=delete]}
 

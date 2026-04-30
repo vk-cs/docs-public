@@ -121,7 +121,7 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 
    Команда шығысында `active` күйі болуы керек.
 
-   {cut(Пример ожидаемого вывода)}
+   {cut(Күтілетін шығару мысалы)}
 
     ```console
     prometheus.service - Prometheus
@@ -171,7 +171,7 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 
 1. `Redis-5` ВМ-не өзіңізге ыңғайлы тәсілмен сынақ жүктемесін жасаңыз.
 
-   {cut(Пример с утилитой sysbench)}
+   {cut(sysbench утилитасымен мысал)}
 
    ```console
    sysbench cpu  --cpu-max-prime=2000000 --time=60 run

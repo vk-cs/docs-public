@@ -1,7 +1,7 @@
 {
   "title": "Cloud Containers",
   "shortDescription": "Kubernetes негізінде жүктеме кезінде сервистер мен қолданбаларды автоматты түрде масштабтау",
-  "metaDescription": "Cloud Containers сервисі Kubernetes кластерлерін пайдалануға мүмкіндік береді. VK Cloud жүйесінде Kubernetes кластерлерін құру, басқару және қолдау жолдарын біліңіз",
+  "metaDescription": "Cloud Containers сервисі Kubernetes кластерлерін пайдалануғал мүмкіндік береді. VK Cloud жүйесінде Kubernetes кластерлерін құру, басқару және қолдау жолдарын біліңіз",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 4,

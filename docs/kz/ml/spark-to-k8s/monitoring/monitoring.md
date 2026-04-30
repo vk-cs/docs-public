@@ -26,7 +26,7 @@
 
 [Cloud Monitoring](/kz/monitoring-services/monitoring) сервисі кластердің күйін берілген метрикалар бойынша нақты уақыт режимінде бақылауға және талдауға мүмкіндік береді. Сервис метрикаларды жинау деректерін графиктерде көрсетеді, оларды кластер жұмысы туралы тек қажетті ақпаратты алатындай етіп баптауға болады.
 
-Кластер мониторингі графигін қосу үшін [нұсқаулықты](/kz/monitoring-services/monitoring/instructions/manage-dashboards#create-custom-chart) пайдаланыңыз. **Тип ресурса** өрісінде **Сервис Spark в k8s** нұсқасын таңдаңыз.
+Кластер мониторингі графигін қосу үшін [нұсқаулықты](/kz/monitoring-services/monitoring/instructions/manage-dashboards#create-custom-chart) пайдаланыңыз. **Ресурс түрі** өрісінде **Сервис Spark в k8s** нұсқасын таңдаңыз.
 
 ## Cloud Alerting пайдалану
 

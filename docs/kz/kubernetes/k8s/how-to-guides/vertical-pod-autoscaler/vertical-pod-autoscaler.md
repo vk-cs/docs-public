@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Vertical Pod Autoscaler](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#vpa) (VPA) — Kubernetes контейнерлері үшін ресурстарды (CPU және RAM) автоматты түрде баптауға арналған құрал. Оның жұмысын толық көлемде зерделеу үшін оны Updater компонентімен `Recreate` режимінде пайдаланыңыз. Бұл режимде VPA:
+[Vertical Pod Autoscaler](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#vpa) (VPA) — Kubernetes контейнерлері үшін ресурстарды (CPU және RAM) автоматты түрде баптауғал арналған құрал. Оның жұмысын толық көлемде зерделеу үшін оны Updater компонентімен `Recreate` режимінде пайдаланыңыз. Бұл режимде VPA:
 
 1. Бар подтар үшін [ресурстар сұрауы](/kz/kubernetes/k8s/reference/resource-limiting) бойынша ұсынымдар жасайды.
 1. Осы подтарды жояды және оларды ұсынылған мәндермен қайта жасайды.
@@ -13,7 +13,7 @@
 1. [VPA аддонын орнатыңыз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-vpa), егер бұл әлі жасалмаса.
 1. (Опционалды) [Kube Prometheus Stack аддонын орнатыңыз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring), егер бұл әлі жасалмаса. Оны VPA дашбордтарын қарау үшін пайдалана аласыз.
 
-   Аддонды орнату кезінде [өңдеңіз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring#ornatu_kezinde_addondy_baptau_kodyn_ondeu) оның кодын, `kube-state-metrics` компонентіне VPA дашбордтарын баптауға арналған метрикаларды қосып:
+   Аддонды орнату кезінде [өңдеңіз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring#ornatu_kezinde_addondy_baptau_kodyn_ondeu) оның кодын, `kube-state-metrics` компонентіне VPA дашбордтарын баптауғал арналған метрикаларды қосып:
 
    {cut(VPA дашбордтарын баптауға арналған метрикалар)}
 
@@ -211,7 +211,7 @@
 
 ## {heading(2. Recreate режиміндегі Updater компоненті бар VPA аддонының объектісін жасаңыз және тестілеуді іске қосыңыз)[id=create_vpa]}
 
-1. `Recreate` жұмыс режиміндегі Updater компоненті бар VPA аддоны үшін манифест файлын жасаңыз (`updateMode: "Recreate"`):
+1. `Recreate` жұмыс режиміндегі Updater компоненті бар VPA аддондар үшін манифест файлын жасаңыз (`updateMode: "Recreate"`):
 
    ```console
    kubectl apply -f -
@@ -310,7 +310,7 @@
 
    Мұнда `Recommendation` блогында:
 
-   - `Lower Bound` (төменгі шекара) — подтың жұмысқа қабілеттілігін кепілдендіруге болатын ресурстардың ең төменгі ұсынылған мәні. Төменгі шекара подты ресурстардың жетіспеуінен қорғайды, бұл тұрақсыз жұмысқа немесе қателерге әкелуі мүмкін.
+   - `Lower Bound` (төменгі шекара) — подтың жұмысқал қабілеттілігін кепілдендіруге болатын ресурстардың ең төменгі ұсынылған мәні. Төменгі шекара подты ресурстардың жетіспеуінен қорғайды, бұл тұрақсыз жұмысқал немесе қателерге әкелуі мүмкін.
    - `Target` (мақсат) — ресурстарды нақты тұтынуды көрсететін мән. 
    - `Uncapped Target` (көрсетілген шектеулерсіз мақсат) — VPA подтың нақты тұтынуы негізінде есептеген ресурстың оңтайлы мәні. `Target` мәнімен сәйкес келуі мүмкін. 
    - `Upper Bound` (жоғарғы шекара) — под үшін ұсынылатын ресурстардың ең жоғары мүмкін мәні. Жоғарғы шекара бөлінген ресурстардың шамадан тыс артуын болдырмайды.
@@ -326,7 +326,7 @@
    kubectl get po --watch
    ```
 
-   Команда шығысында `updateMode: "Recreate"` параметрімен VPA жұмысының нәтижесін көресіз: VPA ресурс сұрауына арналған ұсынымдарды өзгертті, соның нәтижесінде `Deployment` объектісі ескі подты жойып, оны жаңа параметрлермен қайта жасады. Шығыс мысалы:
+   Команда шығысында `updateMode: "Recreate"` параметрімен VPA жұмысының нәтижесін көресіз: VPA ресурс сұрауына арналған ұсынымдарды өзгертті, соның нәтижесінде `Deployment` объектісі ескі подты жойып, оны жаңал параметрлермен қайта жасады. Шығыс мысалы:
 
    ```console
    NAME                                        READY   STATUS              RESTARTS   AGE  
@@ -352,7 +352,7 @@
    nginx-76894897bc-mskzl                      1/1     Running             0          11s
    ```
 
-1. Updater компоненті жойған под қайта жасалған кезде Admission Controller компоненті қосатын мета-ақпаратты қараңыз. Ол үшін келесі команданы орындаңыз:
+1. Updater компоненті жойған под қайта жасалған кезде Admission Controller компоненті қосатын мета-алқпаратты қараңыз. Ол үшін келесі команданы орындаңыз:
 
    ```console
    kubectl describe po nginx-76894897bc-mskzl
@@ -380,7 +380,7 @@
 
 1. (Опционалды) Аддон жұмысының нәтижелерін Grafana дашбордында қараңыз:
 
-   1. [Қосылыңыз](/kz/kubernetes/k8s/connect/addons-ui#web-ui) Kube Prometheus Stack аддоны құрамына кіретін Grafana веб-интерфейсіне. 
+   1. [Қосылыңыз](/kz/kubernetes/k8s/connect/addons-ui#web-ui) Kube Prometheus Stack аддондар құрамына кіретін Grafana веб-интерфейсіне. 
    1. **Home → Dashboards → General → VPA Recommendations** бөліміндегі дашбордтарды қараңыз. 
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

@@ -24,8 +24,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
 
 1. Жүктеме теңгергіштерінің тізімін және олардың идентификаторларын көру үшін команданы орындаңыз:
 
@@ -110,8 +110,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
 
 1. Теңгергіш орналастырылатын желі мен ішкі желіні таңдаңыз. Ішкі желінің. [идентификаторын алыңыз](../../../vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) ішкі желісінде.
 
@@ -157,7 +157,7 @@
 
    1. Теңгергіштің ағымдағы атауының жанындағы қарындаш белгішесін басыңыз.
    1. Жаңа атауды орнатыңыз.
-   1. батырмасын басыңыз **Переименовать**.
+    1. батырмасын басыңыз **Атауын өзгерту**.
 
 {/tab}
 
@@ -165,8 +165,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
 
 1. [идентификаторын алыңыз](#zhukteme_tengergishterinin_tizimin_zhne_olar_turaly_akparatty_karau) OpenStack CLI-ге қосылыңыз.
 
@@ -215,24 +215,24 @@
 
    - Қажетті теңгергіштің атауын басыңыз.
 
-     Теңгергіш туралы толық ақпараты бар бетте **Сыртқы** блогында **Тағайындау** → **Внешний**.
+      Теңгергіш туралы толық ақпараты бар бетте **Сыртқы** блогында **Тағайындау** → **Сыртқы**.
 
    - Қажетті теңгергіш үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып **Сыртқы IP тағайындау**.
 
 1. Тізімнен қажетті жария IP-мекенжайын таңдаңыз немесе жаңасын жасаңыз.
-1. батырмасын басыңыз **Подтвердить**.
-
-{/tab}
-
-{tab(OpenStack CLI)}
-
-1. Мыналарға көз жеткізіңіз:
-
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
-
-1. [Получите идентификатор порта](../../../vnet/instructions/ports#porttar_tizimin_zhne_olar_turaly_akparatty_karau) Қажетті жүктеме теңгергіші үшін Virtual IP бар порттың.
-1. [Floating IP-мекенжайын ажыратыңыз](../../../vnet/instructions/ip/floating-ip#associate) к порту с этим идентификатором.
+ 1. батырмасын басыңыз **Растау**.
+ 
+ {/tab}
+ 
+ {tab(OpenStack CLI)}
+ 
+ 1. Мыналарға көз жеткізіңіз:
+ 
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+    1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
+ 
+ 1. Қажетті жүктеме теңгергіші үшін Virtual IP бар порттың [идентификаторын алыңыз](../../../vnet/instructions/ports#porttar_tizimin_zhne_olar_turaly_akparatty_karau).
+ 1. Осы идентификаторы бар портқа [Floating IP-мекенжайын ажыратыңыз](../../../vnet/instructions/ip/floating-ip#associate).
 
 {/tab}
 
@@ -257,19 +257,19 @@
 
    - Қажетті теңгергіш үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып **Сыртқы IP ажырату**.
 
-1. батырмасын басыңыз **Подтвердить**.
-
-{/tab}
-
-{tab(OpenStack CLI)}
-
-1. Мыналарға көз жеткізіңіз:
-
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
-
-1. [Получите идентификатор порта](../../../vnet/instructions/ports#porttar_tizimin_zhne_olar_turaly_akparatty_karau) Қажетті жүктеме теңгергіші үшін Virtual IP бар порттың.
-1. [Floating IP-мекенжайын ажыратыңыз](../../../vnet/instructions/ip/floating-ip#disassociate) от порта с этим идентификатором.
+ 1. батырмасын басыңыз **Растау**.
+ 
+ {/tab}
+ 
+ {tab(OpenStack CLI)}
+ 
+ 1. Мыналарға көз жеткізіңіз:
+ 
+    1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+    1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
+ 
+ 1. Қажетті жүктеме теңгергіші үшін Virtual IP бар порттың [идентификаторын алыңыз](../../../vnet/instructions/ports#porttar_tizimin_zhne_olar_turaly_akparatty_karau).
+ 1. Осы идентификаторы бар порттан [Floating IP-мекенжайын ажыратыңыз](../../../vnet/instructions/ip/floating-ip#disassociate).
 
 {/tab}
 
@@ -301,8 +301,8 @@
 
 1. Мыналарға көз жеткізіңіз:
 
-   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
-   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) аласыз.
+   1. OpenStack CLI [орнатылған](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz)  [қосымша пакетімен](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) `python-octaviaclient`.
+   1. OpenStack CLI ішінде [авторизациялана](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) аласыз.
 
 1. [идентификаторын алыңыз](#zhukteme_tengergishterinin_tizimin_zhne_olar_turaly_akparatty_karau) OpenStack CLI-ге қосылыңыз.
 

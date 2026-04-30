@@ -81,7 +81,7 @@
 
 {note:info}
 
-Новому владельцу может потребоваться [привязать карту оплаты](/kz/intro/billing/instructions/add-card#kartany_baylanystyru), если у проекта нет привязанной карты, и [подтвердить номер телефона](/kz/intro/onboarding/account).
+Жаңа иесіне [төлем картасын байланыстыру](/kz/intro/billing/instructions/add-card#kartany_baylanystyru) қажет болуы мүмкін, егер жобада байланыстырылған карта болмаса, және [телефон нөмірін растау](/kz/intro/onboarding/account).
 
 {/note}
 
@@ -145,7 +145,7 @@
 
 Жоба үшін кеңейтілген квоталар тізімін алу үшін:
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жоба ішінде [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жоба ішінде [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 1. Консольде келесі команданы енгізіңіз:
 
     ```console
@@ -283,7 +283,7 @@
     
     {/tabs}
 
-    OpenStack-тің басқа компоненттері бойынша квоталарды көру үшін сәйкес OpenStack клиент пакеттерін (`manila`, `neutron` және басқалары) [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) және пакетке тән команданы пайдаланыңыз. Команда синтаксисін білу үшін тиісті пакетті орнатып, `<component> help quota-show` командасын орындаңыз, мысалы, `manila help quota-show`.
+    OpenStack-тің басқа компоненттері бойынша квоталарды көру үшін сәйкес OpenStack клиент пакеттерін (`manila`, `neutron` және басқалары) [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) және пакетке тән команданы пайдаланыңыз. Команда синтаксисін білу үшін тиісті пакетті орнатып, `<component> help quota-show` командасын орындаңыз, мысалы, `manila help quota-show`.
 
 {/tab}
 

@@ -42,11 +42,11 @@ Spark данасына дереккөздерді қосуға арналған 
 |`iceberg_int`
 |{linkto(#parameters_iceberg_int)[text=Қосылым]} Cloud Iceberg Metastore бұлттық қоймасына
 
-|`S3 внешний`
+|`S3 сыртқы`
 |`s3_ext`
 |{linkto(#parameters_s3_ext)[text=Қосылым]} сыртқы бұлттық S3 қоймасына
 
-|`Iceberg Metastore внешний`
+|`Iceberg Metastore сыртқы`
 |`iceberg_ext`
 |{linkto(#parameters_iceberg_ext)[text=Қосылым]} сыртқы бұлттық Iceberg Metastore қоймасына
 
@@ -139,7 +139,7 @@ Spark данасына дереккөздерді қосуға арналған 
 
 ## {heading(Сыртқы S3 қоймасына қосылу)[id=parameters_s3_ext]}
 
-`S3 внешний` дереккөзін Spark данасына қосуға арналған параметрлер:
+`S3 сыртқы` дереккөзін Spark данасына қосуға арналған параметрлер:
 
 [cols="1,1,2", options="header"]
 |===
@@ -178,7 +178,7 @@ Spark данасына дереккөздерді қосуға арналған 
 
 ## {heading(Сыртқы Iceberg Metastore-ге қосылу)[id=parameters_iceberg_ext]}
 
-`Iceberg Metastore внешний` дереккөзін Spark данасына қосуға арналған параметрлер:
+`Iceberg Metastore сыртқы` дереккөзін Spark данасына қосуға арналған параметрлер:
 
 [cols="1,1,2", options="header"]
 |===

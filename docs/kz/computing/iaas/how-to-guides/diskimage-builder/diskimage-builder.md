@@ -66,7 +66,7 @@ RAW форматындағы ВМ образы бар `opensuse-15.3.raw` фай
 
 ## 3. Образды VK Cloud ішіне жүктеңіз
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және VK Cloud жобаңызда [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және VK Cloud жобаңызда [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 1. `opensuse-15.3.raw` образын VK Cloud ішіне `Opensuse` атауымен жүктеңіз:
 
     ```console

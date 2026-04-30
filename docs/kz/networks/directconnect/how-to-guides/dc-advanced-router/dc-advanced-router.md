@@ -25,7 +25,7 @@ VK Cloud қашықтағы инфрақұрылымға қосудың әртү
 ## Дайындық қадамдары
 
 1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api#api_arkyly_kolzhetimdilikti_belsendiru).
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 1. Компьютеріңізде [curl](https://curl.se/docs) және [jq](https://jqlang.org) пакеттері орнатылғанына көз жеткізіңіз.
 1. Жергілікті инфрақұрылымыңызда желіні таңдаңыз немесе жасаңыз. Желінің интернетке қолжетімділігі болмауы мүмкін, бірақ ол мынадай маршрутизаторға қосылған болуы керек:
     - BGP протоколы бойынша қосылымды қолдайтын;
