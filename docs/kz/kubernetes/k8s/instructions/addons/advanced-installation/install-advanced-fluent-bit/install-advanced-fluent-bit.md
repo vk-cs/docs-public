@@ -49,13 +49,13 @@ Worker-түйіндер топтарында орналастырылатын а
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -125,7 +125,7 @@ Worker-түйіндер топтарында орналастырылатын а
          Trace_Output Off
          Replace_Dots On
    ```
-   Elasticsearch параметрлері туралы толық ақпаратты [ресми құжаттаманың бөлімінен](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch) оқыңыз.
+   Elasticsearch параметрлері туралы толық алқпаратты [ресми құжаттаманың бөлімінен](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch) оқыңыз.
 
    {/cut}
 
@@ -147,20 +147,20 @@ Worker-түйіндер топтарында орналастырылатын а
          labels source=systemd, host=$_HOSTNAME, service=$_SYSTEMD_UNIT
    ```
 
-   Loki параметрлері туралы толық ақпаратты [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/pipeline/outputs/loki) оқыңыз.
+   Loki параметрлері туралы толық алқпаратты [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/pipeline/outputs/loki) оқыңыз.
 
    {/cut}
 
-1. (Опционалды түрде) Баптау кодының басқа параметрлерін өңдеңіз. Конфигурация файлының параметрлері туралы толығырақ [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) оқыңыз. Сондай-ақ [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml)-та Fluent Bit баптау кодының мысалы қолжетімді.
+1. (Опционалды түрде) Баптау кодының басқал параметрлерін өңдеңіз. Конфигурация файлының параметрлері туралы толығырақ [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) оқыңыз. Сондай-алқ [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml)-та Fluent Bit баптау кодының мысалы қолжетімді.
 
    {note:warn}
 
    Аддонды дұрыс орнату және оның жұмыс істеуі үшін қажет өрістерді немесе сол өрістерде берілген мәндерді өшірмеңіз.
 
-   Аддонды баптау кодында мұндай өрістерді табуға мүмкіндік беретін түсіндірмелер бар.
+   Аддонды баптау кодында мұндай өрістерді табуғал мүмкіндік беретін түсіндірмелер бар.
 
    {/note}
 
 1. По завершении редактирования кода [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
 
-Пайплайн туралы толығырақ [ресми құжаттамадан](https://docs.fluentbit.io/manual/pipeline) оқуға болады.
+Пайплайн туралы толығырақ [ресми құжаттамадан](https://docs.fluentbit.io/manual/pipeline) оқуғал болады.

@@ -11,7 +11,7 @@ Packer көмегімен сервис образын жасау үшін:
    1. Packer сәтті орнатылғанына көз жеткізу үшін `packer` командасын орындаңыз.
 
    Егжей-тегжейлі нұсқаулық [Packer ресми құжаттамасында](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) берілген.
-1. OpenStack CLI-ді [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack CLI-ді [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 1. Бұлтты платформалармен жұмыс істеуді қолдайтын ОС-тің базалық образын жүктеп алыңыз.
 
    ОС {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=сервис образына қойылатын талаптарға]} сәйкес келуі керек.

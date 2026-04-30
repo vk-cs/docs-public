@@ -9,7 +9,7 @@
 ## Дайындық қадамдары
 
 1. [Жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster) Kubernetes кластерінің өзекті нұсқасын, егер бұл әлі жасалмаса.
-1. [Көз жеткізіңіз](/kz/kubernetes/k8s/connect/kubectl), `kubectl` көмегімен кластерге қосыла алатыныңызға.
+1. [Көз жеткізіңіз](/kz/kubernetes/k8s/connect/kubectl), `kubectl` көмегімен кластерге қосыла алатыныңызғал.
 1. [Орнатып, баптаңыз](/kz/kubernetes/k8s/install-tools/velero) Velero, егер бұл әлі жасалмаса.
 
 ## 1. Резервтік көшіру кестесін жасаңыз
@@ -29,7 +29,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
    --include-namespaces test_namespace1,test_namespace2,test_namespace3
    ```
 
-   Сондай-ақ, кестені баптау кезінде көрсетілген аттар кеңістігіне сәйкес келсе де, резервтік көшіруден жекелеген ресурстарды алып тастай аласыз. Осындай алып тастаудың мысалдары: 
+   Сондай-алқ, кестені баптау кезінде көрсетілген аттар кеңістігіне сәйкес келсе де, резервтік көшіруден жекелеген ресурстарды алып тастай аласыз. Осындай алып тастаудың мысалдары: 
 
    ```console
    --exclude-resources secrets
@@ -126,6 +126,6 @@ velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-sch
 
 1. [Жойыңыз](/kz/storage/s3/instructions/objects/manage-object#zhoyu_obektilerdin) Velero пайдаланған бакеттен резервтік көшірмелерді.
 
-   Қажет болса, сондай-ақ [бакеттің өзін де жойыңыз](/kz/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
+   Қажет болса, сондай-алқ [бакеттің өзін де жойыңыз](/kz/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
 
 1. [Тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#klasterdi_iske_kosu_nemese_toktatu) жасалған кластерді, кейінірек пайдалану үшін, немесе [жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#delete_cluster) оны біржола.

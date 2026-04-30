@@ -52,13 +52,13 @@ Worker-түйіндер топтарында орналастырылатын а
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -181,7 +181,7 @@ Worker-түйіндер топтарында орналастырылатын а
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
@@ -228,7 +228,7 @@ Worker-түйіндер топтарында орналастырылатын а
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
       {/note}
 
-   1. (Опционалды түрде) Егер жоғарыдағы сілтемелердегі мысалдарды қолдансаңыз, оларды өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
+   1. (Опционалды түрде) Егер жоғарыдағы сілтемелердегі мысалдарды қолдансаңыз, оларды өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
 
    1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -287,13 +287,13 @@ Worker-түйіндер топтарында орналастырылатын а
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
 
    1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -321,7 +321,7 @@ Worker-түйіндер топтарында орналастырылатын а
 
 {note:info}
 
-- Аддон кодын өңдеу стандартты орнатуға және бөлінген worker-түйіндерге орнатуға қолданылады.
+- Аддон кодын өңдеу стандартты орнатуғал және бөлінген worker-түйіндерге орнатуғал қолданылады.
 - Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml)-та қолжетімді.
 
 {/note}
@@ -344,9 +344,9 @@ service:
 
 Кодты өңдегеннен кейін [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
 
-### Autoscaler модулі арқылы Ingress-контроллер түйінін жоюға тыйым салу
+### Autoscaler модулі арқылы Ingress-контроллер түйінін жоюғал тыйым салу
 
-Autoscaler модулі кластерді автоматты түрде масштабтайды: жүктеме артқанда түйіндерді қосады, азайғанда — жояды. Модульге аддон поды жұмыс істеп тұрған түйінді жоюға тыйым салу үшін под аннотациясында жоюға тыйым көрсету керек:
+Autoscaler модулі кластерді автоматты түрде масштабтайды: жүктеме артқанда түйіндерді қосады, азайғанда — жояды. Модульге аддон подтар жұмыс істеп тұрған түйінді жоюғал тыйым салу үшін под аннотациясында жоюғал тыйым көрсету керек:
 
 ```yaml
 controller:
@@ -360,7 +360,7 @@ controller:
 
 {note:info}
 
-Төменде `ingress-nginx` сервисінің атауы және `ingress-nginx` атаулар кеңістігі пайдаланылады. Егер аддонды қосу кезінде басқа параметрлер таңдалған болса, командаларды түзетіңіз.
+Төменде `ingress-nginx` сервисінің атауы және `ingress-nginx` атаулар кеңістігі пайдаланылады. Егер аддонды қосу кезінде басқал параметрлер таңдалған болса, командаларды түзетіңіз.
 
 {/note}
 
@@ -379,7 +379,7 @@ controller:
 
 {tab(kubectl)}
 
-1. [kubectl](../../../../connect/kubectl#check_connection) көмегімен кластерге қосыла алатыныңызға `kubectl`.
+1. [kubectl](../../../../connect/kubectl#check_connection) көмегімен кластерге қосыла алатыныңызғал `kubectl`.
 
 1. Команданы орындаңыз:
 

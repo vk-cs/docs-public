@@ -13,7 +13,7 @@
 
 ## 1. Дайындық қадамдары
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. Виртуалды машиналар мен виртуалды IP мекенжайы орналастырылатын ішкі желіні таңдаңыз. Олар бір ішкі желіде орналасуы керек.
 
@@ -188,7 +188,7 @@
 
    1. Виртуалды машинаға қосылыңыз `kld-jumphost-vm` виртуалды машинасына SSH арқылы қосылыңыз.
    1. Виртуалды машинаға қосылыңыз `kld-vm-1` виртуалды машинасына SSH арқылы қосылыңыз.
-   1. Отредактируйте файл `/etc/keepalived/keepalived.conf`, файлын өңдеп, оның мазмұнын келесімен ауыстырыңыз:
+   1. `/etc/keepalived/keepalived.conf` файлын өңдеп, оның мазмұнын келесімен ауыстырыңыз:
 
       ```conf
       global_defs
@@ -223,7 +223,7 @@
 
    1. Виртуалды машинаға қосылыңыз `kld-jumphost-vm` виртуалды машинасына SSH арқылы қосылыңыз.
    1. Виртуалды машинаға қосылыңыз `kld-vm-2` виртуалды машинасына SSH арқылы қосылыңыз.
-   1. Отредактируйте файл `/etc/keepalived/keepalived.conf`, файлын өңдеп, оның мазмұнын келесімен ауыстырыңыз:
+   1. `/etc/keepalived/keepalived.conf` файлын өңдеп, оның мазмұнын келесімен ауыстырыңыз:
 
       ```conf
       global_defs

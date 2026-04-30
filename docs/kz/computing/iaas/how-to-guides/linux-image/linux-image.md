@@ -72,7 +72,7 @@
 
    RAW форматындағы ВМ образы бар `Arch.raw` файлы жасалады.
 
-1. Жергілікті ВМ-ге OpenStack клиентін [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) және VK Cloud жобаңызда [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. Жергілікті ВМ-ге OpenStack клиентін [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) және VK Cloud жобаңызда [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 1. `Arch.raw` образын VK Cloud ішіне `Arch` атауымен жүктеңіз:
 
     ```console

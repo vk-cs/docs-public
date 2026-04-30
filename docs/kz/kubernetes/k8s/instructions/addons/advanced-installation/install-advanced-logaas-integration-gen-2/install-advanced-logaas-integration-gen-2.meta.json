@@ -1,7 +1,7 @@
 {
   "title": "Екінші буындағы кластерлерде Cloud Logging (logaas-integration) үшін Fluent Bit",
   "shortDescription": "",
-  "metaDescription": "Cloud Containers сервисіндегі екінші буындағы кластерлерге арналған Cloud Logging (logaas-integration) үшін Fluent Bit аддонын қалай орнатуға және баптауға болатынын біліңіз",
+  "metaDescription": "Cloud Containers сервисіндегі екінші буындағы кластерлерге арналған Cloud Logging (logaas-integration) үшін Fluent Bit аддонын қалай орнатуғал және баптауғал болатынын біліңіз",
   "sectionTitle": "Екінші буындағы кластерлерде Cloud Logging (logaas-integration) үшін Fluent Bit",
   "icon": "",
   "weight": 6

@@ -27,7 +27,7 @@
         sudo apt-get install -y jq
         ```
 
-    1. [OpenStack клиентін](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) орнатып, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+    1. [OpenStack клиентін](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) орнатып, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
     1. Көшіруді орындауға арналған скрипттері бар репозиторийді көшіріңіз:
 

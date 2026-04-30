@@ -7,7 +7,7 @@
 ## Дайындық қадамдары
 
 1. [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api#api_arkyly_kolzhetimdilikti_belsendiru), егер бұл әлі жасалмаған болса.
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 1. Компьютеріңізде curl және jq пакеттері орнатылғанына көз жеткізіңіз.
 1. VK Cloud жобаңызда желіні таңдаңыз немесе [құрыңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau) Осы желіде пайдаланушы параметрлері бар ішкі желі құрылады. Осы желінің UUID мәнін жазып алыңыз. Бұл мысалда желінің UUID мәні — `b2b8468e-aaaa-bbbb-cccc-327c8c2670d4`.
 

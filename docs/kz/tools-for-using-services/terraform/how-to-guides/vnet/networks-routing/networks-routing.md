@@ -13,7 +13,7 @@
 
   Бұл машиналар [желілер арасындағы бағдарлаудың бапталуын тексеру](#5_mysaldyn_zhumyska_kabilettiligin_tekseriniz) үшін пайдаланылады: олардың арасындағы сәтті ping дұрыс баптауды білдіреді.
 
-![Инфраструктура примера](assets/infrastructure-scheme.png){params[noBorder=true]}
+![Мысал инфрақұрылымы](assets/infrastructure-scheme.png){params[noBorder=true]}
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
@@ -23,7 +23,7 @@
 
    Қажет болса, [квоталарды](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) ұлғайтыңыз.
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жоба ішінде [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жоба ішінде [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
 1. Бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 

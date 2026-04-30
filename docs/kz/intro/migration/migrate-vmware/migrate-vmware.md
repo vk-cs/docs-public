@@ -83,7 +83,7 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
 
 Үлкен файлдарды веб-интерфейс өңдеу кезінде туындауы мүмкін қателерді болдырмау үшін виртуалды машина образын жүктеу үшін OpenStack CLI пайдаланыңыз.
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 2. Диск файлын VMDK форматынан RAW форматына түрлендіріңіз:
 
    ```console

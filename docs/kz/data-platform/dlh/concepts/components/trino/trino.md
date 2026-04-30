@@ -7,7 +7,7 @@
 
 Cloud Trino аналитикалық жүктемені қызмет көрсетуі қымбат және ауқымдау қиын [корпоративтік қоймалардан](/kz/data-platform/dlh/concepts/compare/dwh) (мысалы, Greenplum негізіндегі) арзанырақ [деректер көлдеріне](/kz/data-platform/dlh/concepts/compare/data-lake) және [DLH](/kz/data-platform/dlh/concepts/compare/dlh) жүйесіне көшіруге мүмкіндік береді.
 
- компонент келесі функцияларды орындайды:[архитектуре Data Lakehouse](/kz/data-platform/dlh/concepts/architecture) компонент выполняет следующие функции:
+[Data Lakehouse архитектурасында](/kz/data-platform/dlh/concepts/architecture) компонент келесі функцияларды орындайды:
 
 - Көздерден деректерді [PULL-моделі](../../architecture#data_processing_models) бойынша сұрату (қарапайым сценарийлер үшін).
 - Apache Iceberg API арқылы объектілік S3 қоймасында деректерді оқу және жазу операцияларын орындау.

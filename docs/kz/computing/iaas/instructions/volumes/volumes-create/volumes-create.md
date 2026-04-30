@@ -24,7 +24,7 @@ Low Latency NVMe түріндегі дискіні жасау үшін [техн
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
 1. Дискінің [түрін таңдаңыз](../../../concepts/data-storage/disk-types#disk_types), оның API-дегі атауын және орналастыруға қолайлы қолжетімділік аймағын анықтаңыз.
 

@@ -18,7 +18,7 @@ SDN [Sprut](/kz/networks/vnet/concepts/sdn#sprut) бар желілерде VK C
 
 ## Дайындық қадамдары
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) жобада.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
 
 1. [Желілерді жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau) желілер.
 
@@ -39,7 +39,7 @@ SDN [Sprut](/kz/networks/vnet/concepts/sdn#sprut) бар желілерде VK C
    - **Желі атауы**: `clientNet`.
    - **SDN**: `Neutron`. Әдепкі бойынша SDN Sprut жасалады.
    - **Интернетке қолжетімділік**: бұл опцияның таңдалғанына көз жеткізіңіз. Ол осы желідегі виртуалды машиналарға жария Floating IP мекенжайларын тағайындауға мүмкіндік береді.
-   - **Маршрутизатор**: `Создать новый`.
+   - **Маршрутизатор**: `Жаңасын жасау`.
    - **Ішкі желілер тізімі**: тізімдегі жалғыз ішкі желіні өңдеңіз. Ішкі желі үшін келесі параметрлерді орнатыңыз:
 
      - **Атауы**: `clientSubnet`.
@@ -60,7 +60,7 @@ SDN [Sprut](/kz/networks/vnet/concepts/sdn#sprut) бар желілерде VK C
    - **Желі атауы**: `vkcloudNet`.
    - **SDN**: `Neutron`. Әдепкі бойынша SDN Sprut жасалады.
    - **Интернетке қолжетімділік**: бұл опцияның таңдалғанына көз жеткізіңіз. Ол VPN-туннелінің жұмысын қамтамасыз етуге және осы желідегі виртуалды машиналарға жария Floating IP мекенжайларын тағайындауға мүмкіндік береді.
-   - **Маршрутизатор**: `Создать новый`.
+   - **Маршрутизатор**: `Жаңасын жасау`.
    - **Ішкі желілер тізімі**: тізімдегі жалғыз ішкі желіні өңдеңіз. Ішкі желі үшін келесі параметрлерді орнатыңыз:
 
      - **Атауы**: `vkcloudSubnet`.

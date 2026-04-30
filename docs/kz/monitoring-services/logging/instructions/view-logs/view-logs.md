@@ -18,7 +18,7 @@
 
 {tab(API)}
 
-Воспользуйтесь [методами API](/kz/tools-for-using-services/api/api-spec/logging).
+[API әдістерін](/kz/tools-for-using-services/api/api-spec/logging) пайдаланыңыз.
 
 Іздеу нәтижелерін нақтылау үшін `like` параметрінде `message` өрісінен іздеуге арналған өрнекті көрсетіңіз. Іздеу өрнегін жазу үшін [іздеу сұрауларының тілін](../../concepts/search-tools) пайдаланыңыз.
 

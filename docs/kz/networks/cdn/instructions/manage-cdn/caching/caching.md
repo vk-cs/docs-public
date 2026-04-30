@@ -241,7 +241,7 @@ CDN-ресурс HTTP-сұраулардағы параметрлерді еле
 - көрсетілген параметрлерді елемеу үшін — `ignoreQueryString` (`value`=`false`), `query_params_blacklist`;
 - көрсетілгендерден басқа барлық параметрлерді елемеу үшін — `ignoreQueryString` (`value`=`false`), `query_params_whitelist`.
 
-{cut(Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах)}
+{cut(CDN-ресурсты HTTP-сұрауларындағы барлық query-параметрлерді елемейтіндей баптауға арналған сұрау мысалы)}
 
 ```json
 curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -262,7 +262,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 ```
 
 {/cut}
-{cut(Пример запроса для настройки CDN-ресурса на игнорирование указанных query-параметров в HTTP-запросах)}
+{cut(CDN-ресурсты HTTP-сұрауларындағы көрсетілген query-параметрлерді елемейтіндей баптауға арналған сұрау мысалы)}
 
 ```json
 curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
@@ -290,7 +290,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 ```
 
 {/cut}
-{cut(Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах, кроме указанных)}
+{cut(CDN-ресурсты HTTP-сұрауларындағы көрсетілгендерден басқа барлық query-параметрлерді елемейтіндей баптауға арналған сұрау мысалы)}
 
 ```json
 curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\

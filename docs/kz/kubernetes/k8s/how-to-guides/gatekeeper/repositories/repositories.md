@@ -1,15 +1,15 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Gatekeeper](../../../reference/gatekeeper) көмегімен образдарды жүктеу үшін тек рұқсат етілген репозиторийлерді пайдалануды талап ететін шектеуді орнатуға болады. Мысалы, бұл шектеу компания саясаттары тек сенімді репозиторийлерден образ жүктеуді талап етсе, кластер операторлары тексерілмеген көзден сенімсіз қолданбаны кездейсоқ іске қоспауы үшін пайдалы болуы мүмкін.
+[Gatekeeper](../../../reference/gatekeeper) көмегімен образдарды жүктеу үшін тек рұқсат етілген репозиторийлерді пайдалануды талап ететін шектеуді орнатуғал болады. Мысалы, бұл шектеу компания саясаттары тек сенімді репозиторийлерден образ жүктеуді талап етсе, кластер операторлары тексерілмеген көзден сенімсіз қолданбаны кездейсоқ іске қоспауы үшін пайдалы болуы мүмкін.
 
 Gatekeeper жұмысын көрсету үшін мыналар жасалады:
 
 * Шектеу үлгісі және оған сәйкес келетін шектеу. Ол образдарды тек Docker Hub репозиторийінен жүктеуге рұқсат береді.
-* Шектеудің жұмысын тексеруге арналған бірнеше Kubernetes ресурсы.
+* Шектеудің жұмысын тексеруге арналған бірнеше Kubernetes ресурстар.
 
 {note:info}
 
-VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kubernetes кластерлерінде қажетті [қауіпсіздік саясатын](../../../instructions/manage-security#kauipsizdik_sayasatyn_kosu) жеке кабинет арқылы [жасауға](../../../concepts/security-policies#allowed_repos) болады.
+VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kubernetes кластерлерінде қажетті [қауіпсіздік саясатын](../../../instructions/manage-security#kauipsizdik_sayasatyn_kosu) жеке кабинет арқылы [жасауғал](../../../concepts/security-policies#allowed_repos) болады.
 
 Бұл жағдайда Gatekeeper ресурстарымен тікелей жұмыс істеу міндетті емес.
 
@@ -21,7 +21,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
 
    Кластер параметрлерін өз қалауыңыз бойынша таңдаңыз.
 
-1. `kubectl` көмегімен кластерге қосыла алатыныңызға [көз жеткізіңіз](../../../connect/kubectl).
+1. `kubectl` көмегімен кластерге қосыла алатыныңызғал [көз жеткізіңіз](../../../connect/kubectl).
 
 ## Репозиторийлерді тексеретін шектеуді жасаңыз
 
@@ -29,7 +29,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
 
    1. Шектеу үлгісінің манифесін жасаңыз.
 
-      Воспользуйтесь [Осы файлдың мазмұнын](https://github.com/open-policy-agent/gatekeeper-library/blob/master/library/general/allowedrepos/template.yaml). Это уже готовый шаблон `K8sAllowedRepos` из [Gatekeeper кітапханасындағы](https://github.com/open-policy-agent/gatekeeper-library), который проверяет, что образы загружаются только из доверенных репозиториев.
+      Пайдаланыңыз [Осы файлдың мазмұнын](https://github.com/open-policy-agent/gatekeeper-library/blob/master/library/general/allowedrepos/template.yaml). Бұл уже готовый шаблон `K8sAllowedRepos` из [Gatekeeper кітапханасындағы](https://github.com/open-policy-agent/gatekeeper-library), ол проверяет, что образы загружаются тек из доверенных репозиториев.
 
    1. Үлгі манифесі негізінде шектеу үлгісін жасаңыз:
 
@@ -74,7 +74,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
    kubectl get constraints,constrainttemplates
    ```
 
-   Ұқсас ақпарат көрсетілуі керек:
+   Ұқсас алқпарат көрсетілуі керек:
 
    ```text
    NAME                                                          ENFORCEMENT-ACTION TOTAL-VIOLATIONS
@@ -121,7 +121,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
       kubectl get pod allowed-pod
       ```
 
-      Ұқсас ақпарат көрсетілуі керек:
+      Ұқсас алқпарат көрсетілуі керек:
 
       ```text
       NAME          READY   STATUS    RESTARTS   AGE
@@ -167,7 +167,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
       kubectl get pod disallowed-pod
       ```
 
-      Ұқсас ақпарат көрсетілуі керек:
+      Ұқсас алқпарат көрсетілуі керек:
 
       ```text
       Error from server (NotFound): pods "disallowed-pod" not found

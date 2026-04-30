@@ -1,7 +1,7 @@
 {
   "title": "Gatekeeper пайдалану",
-  "shortDescription": "Корпоративтік саясаттарды сақтау үшін Gatekeeper шектеулерін Kubernetes ресурстарына қалай қолдануға болады",
-  "metaDescription": "Корпоративтік саясаттарды сақтау үшін Gatekeeper шектеулерін Kubernetes ресурстарына қалай қолдануға болатынын біліңіз",
+  "shortDescription": "Корпоративтік саясаттарды сақтау үшін Gatekeeper шектеулерін Kubernetes ресурстарына қалай қолдануғал болады",
+  "metaDescription": "Корпоративтік саясаттарды сақтау үшін Gatekeeper шектеулерін Kubernetes ресурстарына қалай қолдануғал болатынын біліңіз",
   "sectionTitle": "Gatekeeper пайдалану",
   "icon": "",
   "weight": 3

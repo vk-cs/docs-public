@@ -2,7 +2,7 @@
 
 ## Аддонды орнату
 
-[GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator) аддоны GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек [бөлінген түйіндерге орнату](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.com/cloud-gpu/).
+[GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator) аддондар GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек [бөлінген түйіндерге орнату](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.com/cloud-gpu/).
 
 Worker-түйіндер топтарында орналастырылатын аддондардың жиынтық [максималды жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-түйіндер топтарын [қолмен масштабтаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
 
@@ -25,7 +25,7 @@ Worker-түйіндер топтарында орналастырылатын а
 
       - эффект `NoSchedule`;
       - ключ `nvidia.com`;
-      - значение `gpu`.
+      - мән `gpu`.
 
    {/tab}
 
@@ -69,13 +69,13 @@ Worker-түйіндер топтарында орналастырылатын а
    {tab(Terraform)}
    
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
 
    1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -103,7 +103,7 @@ Worker-түйіндер топтарында орналастырылатын а
 
 `"mcs.mail.ru/gpu-exists"` өрісін және оның `true` мәнін өшірмеңіз.
 
-Бұл өріс nfd-worker плагинін тек GPU бар түйіндерге орнатуға жауап береді. Егер өріс пен мән өшірілсе, nfd-worker және онымен байланысты плагиндер кластердің барлық түйіндеріне орнатылады, бұл ресурстарды көбірек тұтынуға әкеледі.
+Бұл өріс nfd-worker плагинін тек GPU бар түйіндерге орнатуғал жауап береді. Егер өріс пен мән өшірілсе, nfd-worker және онымен байланысты плагиндер кластердің барлық түйіндеріне орнатылады, бұл ресурстарды көбірек тұтынуғал әкеледі.
 
 {/note}
 

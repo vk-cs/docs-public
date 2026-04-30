@@ -91,8 +91,8 @@ VK Cloud VK Object Storage сервистерін басқару және ола
 Мұнда:
 
 - `<URL_СЕРВИСА>` — аккаунттың [аймағына](../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
+  - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағы үшін.
-  - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
 
 {note:warn}
 

@@ -300,7 +300,7 @@
      Normal  UPDATE  5s    nginx-ingress-controller  Ingress default/myapp-ingress
    ```
 
-1. Қосымшаның жұмысын тексеріңіз. Ingress-контроллермен байланыстырылған сыртқы IP-мекенжайды [кластер бетінде](/kz/kubernetes/k8s/instructions/manage-cluster#klaster_turaly_akparat_alu) көруге болады. Ол Ingress Controller үшін жүктеме теңгергішінің IP-мекенжайы деп аталады. Оны `<INGRESS_EXTERNAL_IP>` деп белгілейік.
+1. Қосымшаның жұмысын тексеріңіз. Ingress-контроллермен байланыстырылған сыртқы IP-мекенжайды [кластер бетінде](/kz/kubernetes/k8s/instructions/manage-cluster#klaster_turaly_alkparat_alu) көруге болады. Ол Ingress Controller үшін жүктеме теңгергішінің IP-мекенжайы деп аталады. Оны `<INGRESS_EXTERNAL_IP>` деп белгілейік.
 
    ```console
    ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/handler

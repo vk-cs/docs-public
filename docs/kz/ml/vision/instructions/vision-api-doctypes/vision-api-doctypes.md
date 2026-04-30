@@ -94,32 +94,32 @@ curl -X 'POST' \
 | Eng белгісі       | Rus белгісі         |
 |-------------------|--------------------|
 | Akt               | Акт                |
-| Akt_sverky        | Акт сверки         |
+| Akt_sverky        | Салыстыру актісі   |
 | Diplom            | Диплом             |
-| Doc               | Документ           |
-| Dogovor           | Договор            |
-| Doverennost       | Доверенность       |
+| Doc               | Құжат              |
+| Dogovor           | Шарт               |
+| Doverennost       | Сенімхат           |
 | Inn               | ИНН                |
 | Logotip           | Логотип            |
 | Pasport           | Паспорт            |
-| Prais_list        | Прайс-лист         |
-| Prikaz            | Приказ             |
-| Protocol          | Протокол           |
+| Prais_list        | Прайс-парақ        |
+| Prikaz            | Бұйрық             |
+| Protocol          | Хаттама            |
 | Pts               | ПТС                |
-| Registraciya_ts   | Регистрация ТС     |
-| Rekvizity         | Реквизиты          |
-| Rezyume           | Резюме             |
-| Schet             | Счет               |
+| Registraciya_ts   | КҚ тіркеу          |
+| Rekvizity         | Деректемелер       |
+| Rezyume           | Түйіндеме          |
+| Schet             | Шот                |
 | Sertifikat        | Сертификат         |
 | Snils             | Снилс              |
-| Spravka           | Справка            |
-| Svidetelstvo      | Свидетельство      |
+| Spravka           | Анықтама           |
+| Svidetelstvo      | Куәлік             |
 | Tabel             | Табель             |
-| Ustav             | Устав              |
-| Voditelskye_prava | Водительские права |
-| Vypiska           | Выписка            |
-| Zagranpasport     | Загранпаспорт      |
-| Zayavlenie        | Заявление          |
+| Ustav             | Жарғы              |
+| Voditelskye_prava | Жүргізуші куәлігі  |
+| Vypiska           | Үзінді             |
+| Zagranpasport     | Шетелдік паспорт   |
+| Zayavlenie        | Өтініш             |
 
 ## Жауап үлгісі
 

@@ -110,7 +110,7 @@
 {tabs}
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз.
 1. Бұрын [жүктеп алынған OpenStack RC-файлы](#download_rc_file) бар <ФАЙЛ_ЖОЛЫ> директориясына өтіңіз:
 
    ```console

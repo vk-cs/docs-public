@@ -17,7 +17,7 @@
 1. **Табу** түймесін басыңыз.
 1. Іздеу нәтижелері тізімінде қажетті оқиғасы бар жолды басыңыз.
 
-    Оқиға туралы деректері бар терезе ашылады. Қатенің сипаттамасы **Сообщение** өрісінде болады. Мысал:
+    Оқиға туралы деректері бар терезе ашылады. Қатенің сипаттамасы **Хабарлама** өрісінде болады. Мысал:
 
     ```json
     Server error detected. Code: 500; Message: "Build of instance bcb5e979-XXXX-1d57281a282f aborted: Failed to allocate the network(s) with error No fixed IP addresses available for network: 070b51d8-XXXX-7a786c779c9e, not rescheduling."

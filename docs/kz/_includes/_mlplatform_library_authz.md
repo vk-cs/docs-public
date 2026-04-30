@@ -1,5 +1,3 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 {includetag(intro_part)}
 
 Python-библиотека Cloud ML Platform ұсынатын әдістердің көпшілігін пайдалану үшін _қолжеткізу токені_ арқылы авторизациядан өту қажет.

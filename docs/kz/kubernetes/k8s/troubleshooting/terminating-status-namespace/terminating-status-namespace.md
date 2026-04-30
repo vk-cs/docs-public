@@ -33,7 +33,7 @@
 
 1. Атау кеңістігін API-сұрау немесе `kubectl replace` пәрмені арқылы жойыңыз.
    
-   `test.json` файлы арқылы жою мысалдары:
+   `test.json` файлдар арқылы жою мысалдары:
 
    {tabs}
    {tab(API-сұрау)}
@@ -42,7 +42,7 @@
    ```
    {/tab}
    {tab(Команда kubectl replace)}
-   Бұл тәсіл жалпыға қолжетімді Kubernetes API пайдаланған жағдайда қолайлы.
+   Бұл тәсіл жалпығал қолжетімді Kubernetes API пайдаланған жағдайда қолайлы.
 
    ```console
    kubectl replace --raw "/api/v1/namespaces//finalize" -f test.json
