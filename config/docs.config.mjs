@@ -67,6 +67,7 @@ export const config = {
         // },
     },
     helpmate: {
+        apiUrl: 'https://cloud.vk.com/helpmate/widget/api',
         consumerAlias: 'd11n_cloud_public',
     },
     plugins: {
