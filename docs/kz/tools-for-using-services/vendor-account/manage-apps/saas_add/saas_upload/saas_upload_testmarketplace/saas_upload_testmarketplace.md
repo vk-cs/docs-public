@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Дүкенде сервисті тестілеу)[id=saas_upload_testmarketplace]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Жарияланғанға дейін сервис сервис конфигурациясындағы `metadata` параметрінде көрсетілген дүкеннің тестілік атау кеңістіктерінде қолжетімді.
 

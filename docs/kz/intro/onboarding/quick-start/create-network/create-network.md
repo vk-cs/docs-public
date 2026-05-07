@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Cloud Network: виртуалды желі жасаңыз және қауіпсіздік тобын баптаңыз)[id=onboarding-create-network]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 [Cloud Network](/kz/networks/vnet) — VK Cloud ішіндегі желілік байланысты басқаруға арналған сервистер тобы. Бұл сервистер виртуалды желіге қосылған ресурстар арасында деректер алмасуды қамтамасыз етеді.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(VK Object Storage: объектілік қоймада бакет жасаңыз және оған деректерді жүктеңіз)[id=onboarding-create-bucket]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 [VK Object Storage](/kz/storage/s3/concepts/about) — S3 API қолдауы бар объектілік қойма, ол кез келген объектілерді бір мезгілдегі сұраулар санына қарамастан сенімді масштабталатын сақтауды және тұрақты тарату жылдамдығын қамтамасыз етеді. VK Object Storage мультимедианы ағынмен тарату, сайттарды хостингтеу және сан алуан деректерді сақтау үшін пайдаланылуы мүмкін.
 

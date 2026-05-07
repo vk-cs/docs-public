@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Манифесттерді орналастыру жүйесімен тестілеу)[id=ibservice_upload_deploysystemtest]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Terraform манифесттерін жергілікті түрде тестілегеннен кейін және сервистік пакетті дүкенге жүктеу алдында `plans/<PLAN_NAME>/deployment/deploy.tf` манифесттерін орналастыру жүйесімен тестілеу ұсынылады. Бұл орналастыру жүйесі сипатталған барлық ресурстарды жасай алатынына көз жеткізуге мүмкіндік береді.
 

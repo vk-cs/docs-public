@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_monitoring_user деректер көзі)[id=ivkcs_monitoring_user]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `ivkcs_monitoring_user` деректер көзі {linkto(#tab_attributes)[text=%number кестеде]} келтірілген атрибуттарды қайтарады. Атрибуттар метрикаларды Cloud Monitoring сервисіне жіберу үшін мониторинг агентінің output-плагинін (Telegraf) баптауға мүмкіндік береді (толығырақ — [Бұлтты платформаның Cloud Monitoring сервисімен интеграция](../../../ib_cloud_monitoring) бөлімінде).
 

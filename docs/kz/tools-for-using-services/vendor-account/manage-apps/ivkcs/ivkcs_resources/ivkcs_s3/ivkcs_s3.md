@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_s3 ресурсы)[id=ivkcs_s3]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `ivkcs_s3` ресурсының аргументі {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(preview секциясы)[id=saas_preview]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `preview` секциясы тарифтік жоспарлар матрицасында қандай тарифтік опциялар көрсетілетінін анықтайды (толығырақ {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix)[text=%text]} бөлімінде).
 

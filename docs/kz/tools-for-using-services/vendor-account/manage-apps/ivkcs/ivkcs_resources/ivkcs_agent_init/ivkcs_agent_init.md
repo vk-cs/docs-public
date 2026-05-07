@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_agent_init ресурсы)[id=ivkcs_agent_init]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 ## Ресурстың аргументтері
 

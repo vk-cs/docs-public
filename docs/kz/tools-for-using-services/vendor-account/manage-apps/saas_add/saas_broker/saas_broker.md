@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(SaaS-қосымшасына арналған брокер)[id=saas_broker]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Дүкен сервиспен брокердің көмегімен өзара әрекеттеседі.
 

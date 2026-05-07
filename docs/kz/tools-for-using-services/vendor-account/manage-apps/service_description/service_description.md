@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Дүкен үшін сервис сипаттамасын толтыру)[id=service_description]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервис сипаттамасы мыналарды қамтиды:
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Сервистік пакетті дүкенге жүктеу)[id=ibservice_upload_package]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Жүктеу сызбасы)[id=upload_scheme]}
 

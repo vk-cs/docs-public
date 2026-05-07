@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Әрекеттер тәртібі)[id=saas_add_steps]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 SaaS-қосымшасын дүкенге қосу үшін:
 

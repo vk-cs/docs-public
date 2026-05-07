@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Бұлтты платформаның ЖК арқылы жасау)[id=ib_image_create_cloud]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервис образын бұлтты платформаның ЖК арқылы жасау үшін:
 

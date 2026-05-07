@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(plan.yaml файлы)[id=ibplan]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `plans/<PLAN_NAME>/plan.yaml` файлында нақты тарифтік жоспардың параметрлері сипатталады. Сервистік пакетті жүктеп, сервисті жариялағаннан кейін тарифтік жоспар сервистік кілтте көрсетілген дүкеннің ашық атаулар кеңістіктерінде (`namespace_public`) қолжетімді болады (толығырақ — [Image-based қолданбаны дүкенге жүктеу](../../ibservice_upload) бөлімінде).
 

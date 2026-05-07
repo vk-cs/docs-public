@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Дайындық операциялары)[id=ibservice_upload_prepare]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Дүкенге сервистік пакетті жүктейтін пайдаланушыда бұлтты платформада тіркелгі (жеке кабинет) болуы тиіс. Тіркелу нұсқаулығы [VK Cloud жүйесінде тіркелу](/kz/intro/onboarding/account) бөлімінде берілген.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Қызметті жариялау)[id=ibservice_upload_publish]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Тұтынушыларға қызмет жарияланғаннан кейін ғана қолжетімді болады.
 

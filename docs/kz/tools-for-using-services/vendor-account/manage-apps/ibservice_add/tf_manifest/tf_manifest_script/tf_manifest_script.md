@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Скрипттерді пайдалану)[id=tf_manifest_script]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Скрипттер сервисті жайылту процесінде әртүрлі операцияларды орындауға мүмкіндік береді, мысалы, кластерге біріктіру кезінде тораптарды синхрондау.
 

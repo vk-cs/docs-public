@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Ресурстар тізімі)[id=ivkcs_resources_list]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 iVK CS провайдерінің ресурстары {linkto(#tab_provider_resources)[text=%number кестеде]} келтірілген.
 

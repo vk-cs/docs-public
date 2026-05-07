@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_agent_script_result деректер көзі)[id=ivkcs_agent_script_result]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `ivkcs_agent_script_result` деректер көзінің аргументтері {linkto(#tab_source_args)[text=%number кестеде]} келтірілген.
 

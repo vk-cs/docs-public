@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Инфрақұрылым сипаттамасы)[id=tf_manifest_image]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервистің жүктеу образынан ВМ жасау үшін:
 

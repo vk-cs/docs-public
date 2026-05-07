@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Ресурстар конфигурациясына арналған кіріс айнымалылары)[id=tf_manifest_variable]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Ресурстар конфигурациясына арналған кіріс айнымалыларын сипаттаңыз. Айнымалыларды шартты түрде {linkto(#tab_tf_variables)[text=%number кестеде]} келтірілген топтарға бөлуге болады.
 

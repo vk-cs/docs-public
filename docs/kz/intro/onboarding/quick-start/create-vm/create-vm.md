@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Cloud Servers: алғашқы виртуалды машинаны жасаңыз)[id=onboarding-create-vm]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 [Cloud Servers](/kz/computing/iaas/concepts/about) — виртуалды машиналармен жұмыс істеуге мүмкіндік беретін сервис. Виртуалды машиналар қосымшаларды, дерекқорларды, жұмыс станцияларын және тұрақты жұмыс істейтін кез келген басқа сервистерді орналастыру және іске қосу үшін пайдаланылады.
 

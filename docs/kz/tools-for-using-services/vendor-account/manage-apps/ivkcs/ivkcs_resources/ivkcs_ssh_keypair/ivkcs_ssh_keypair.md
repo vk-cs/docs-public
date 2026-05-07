@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_ssh_keypair ресурсы)[id=ivkcs_ssh_keypair]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `ivkcs_ssh_keypair` ресурсының аргументі {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 

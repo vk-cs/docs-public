@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Қызмет түрлері)[id=service]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Қызметтер орналастырылатын жүйенің толық атауы: {var(system)}.
 

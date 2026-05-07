@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Terraform манифесін жергілікті тестілеу)[id=ibservice_upload_localtest]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Жергілікті тестілеу алдында OpenStack PID жеткізушілер тізіміне енгізілгеніне көз жеткізіңіз (толығырақ — {linkto(../ibservice_upload_prepare#ibservice_upload_prepare)[text=%text]} бөлімінде).
 

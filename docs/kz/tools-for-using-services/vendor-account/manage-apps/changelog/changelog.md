@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Өзгерістер тарихы)[id=changelog]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 {caption(Кесте {counter(table)[id=numb_tab_changelog]} — Өзгерістер тарихы)[align=right;position=above;id=tab_changelog;number={const(numb_tab_changelog)}]}
 [cols="1,6", options="header"]

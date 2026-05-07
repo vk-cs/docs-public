@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(service.yaml файлы)[id=ibservice_param]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `service.yaml` файлында {linkto(#tab_ibservice_param)[text=%number кестесінде]} келтірілген параметрлер мен секцияларды көрсетіңіз.
 

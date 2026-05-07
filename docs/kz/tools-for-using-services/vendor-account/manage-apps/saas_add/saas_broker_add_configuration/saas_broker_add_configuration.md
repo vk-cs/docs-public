@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Сервис конфигурациясын брокерге жүктеу)[id=saas_broker_add_configuration]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервис конфигурациясын брокерге жүктеңіз. Егер SaaS-брокер шаблон бойынша жасалған болса, келесі әрекеттерді орындаңыз:
 

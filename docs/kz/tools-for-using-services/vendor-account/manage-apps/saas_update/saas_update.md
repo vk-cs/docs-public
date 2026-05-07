@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(SaaS-қолданбаны жаңарту)[id=saas_update]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 SaaS-қолданбаның конфигурациясын жаңарту мыналарды қамтуы мүмкін:
 
