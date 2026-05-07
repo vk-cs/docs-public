@@ -1,0 +1,9 @@
+{
+  "title": "Using Jaeger",
+  "shortDescription": "How to use Jaeger with the HotROD demo application",
+  "metaDescription": "Learn how distributed tracing works in a cluster using Jaeger and the HotROD demo application. Configure manifests, run the service, generate the load, and view the traces in the Jaeger interface",
+  "sectionTitle": "Using Jaeger",
+  "icon": "",
+  "weight": 12,
+  "uuid": ""
+}

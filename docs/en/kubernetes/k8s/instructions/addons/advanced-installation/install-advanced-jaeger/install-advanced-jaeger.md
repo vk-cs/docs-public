@@ -10,12 +10,6 @@ Jaeger add-on [system requirements](../../../../concepts/addons-and-settings/add
 
 If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for groups of worker nodes or [configure automatic scaling](../../../scale#autoscale_worker_nodes) before install.
 
-{note:info}
-
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-
-{/note}
-
 {tabs}
 
 {tab(Standard installation)}
@@ -57,11 +51,7 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {/tabs}
 
-1. (Optional) [Connect to the Query UI](../../../../connect/addons-ui).
-1. (Optional) [Get to know the practical guide](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) for using Jaeger with the Hot R.O.D. microservice application, the manual shows:
-
-   - Integration of OpenTelemetry into a microservice application so that it sends the data needed for query tracing to Jaeger.
-   - Visualization and interpretation of the data collected by Jaeger using the Query UI.
+{include(/en/_includes/_jaeger_install_optional.md)}
 
 {/tab}
 
@@ -169,11 +159,7 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {/tabs}
 
-1. (Optional) [Connect to the Query UI](../../../../connect/addons-ui).
-1. (Optional) [Get to know the practical guide](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) for using Jaeger with the Hot R.O.D. microservice application, the manual shows:
-
-   - Integration of OpenTelemetry into a microservice application so that it sends the data needed for query tracing to Jaeger.
-   - Visualization and interpretation of the data collected by Jaeger using the Query UI.
+{include(/en/_includes/_jaeger_install_optional.md)}
 
 {/tab}
 
@@ -215,11 +201,7 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {/tabs}
 
-1. (Optional) [Connect to the Query UI](../../../../connect/addons-ui).
-1. (Optional) [Get to know the practical guide](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) for using Jaeger with the Hot R.O.D. microservice application, the manual shows:
-
-   - Integration of OpenTelemetry into a microservice application so that it sends the data needed for query tracing to Jaeger.
-   - Visualization and interpretation of the data collected by Jaeger using the Query UI.
+{include(/en/_includes/_jaeger_install_optional.md)}
 
 {/tab}
 
@@ -243,7 +225,7 @@ To set the required number of replicas, change the value of the field in the add
 
 ```yaml
 elasticsearch:
-  replicas: <number of replicas>
+  replicas: <NUMBER_OF_REPLICAS>
 ```
 
 {note:warn}
@@ -254,7 +236,7 @@ Make sure that the number of worker nodes in the cluster is not less than the se
 
 ### Changing Elasticsearch storage settings
 
-Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](../../../../reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/concepts/architecture#az) in which the cluster's master nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes will not be able to work with volumes.
+Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](../../../../reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/concepts/architecture#az) in which the cluster's worker nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes will not be able to work with volumes.
 
 To ensure that persistent volumes work with Elasticsearch replicas, set the [storage class](../../../../concepts/storage#pre_configured_storage_classes), the availability zone of which coincides with the availability zone of worker nodes:
 
@@ -263,7 +245,7 @@ elasticsearch:
   volumeClaimTemplate:
     accessModes:
     - ReadWriteOnce
-    storageClassName: "<name of the storage class>"
+    storageClassName: "<STORAGE_CLASS_NAME>"
 ```
 
 After editing the add-on code [continue installing the add-on](#installing_addon).

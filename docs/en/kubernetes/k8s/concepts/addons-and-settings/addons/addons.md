@@ -302,12 +302,6 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
 
 ### {heading(Jaeger)[id=jaeger]}
 
-{note:info}
-
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-
-{/note}
-
 {tabs}
 
 {tab(Description)}
@@ -319,7 +313,7 @@ In distributed systems based on microservices, requests are constantly exchanged
 
 Such a tool is necessary because query-related factors can significantly affect the behavior and performance of these systems as a whole. It is not enough to provide monitoring only for individual microservices.
 
-Jaeger performs query tracing based on the data it receives from microservices. Therefore, it is necessary to integrate [into microservices](https://www.jaegertracing.io/docs/latest/architecture/#tracing-sdks) tool stack [OpenTelemetry](https://opentelemetry.io) to send data about requests. You can get acquainted with the integration of OpenTelemetry into a microservice application using the example of [Hot R.O.D](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod).
+Jaeger performs query tracing based on the data it receives from microservices. Therefore, it is necessary to integrate [into microservices](https://www.jaegertracing.io/docs/latest/architecture/#tracing-sdks) tool stack [OpenTelemetry](https://opentelemetry.io) to send data about requests. You can get acquainted with the integration of OpenTelemetry into a microservice application using the example of [HotROD](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) in the [Using Jaeger](/en/kubernetes/k8s/how-to-guides/jaeger) section.
 
 {/tab}
 
@@ -335,8 +329,8 @@ Add-on requirements:
 
 - Worker nodes must use the configuration of computing resources:
 
-  - `STD2-4-4` or better (for a test environment);
-  - `STD2-6-6` or better (for a production environment).
+  - `STD3-4-4` or better (for a test environment);
+  - `STD3-6-6` or better (for a production environment).
 
 Requirements of individual add-on components:
 
