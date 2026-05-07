@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Сервис параметрлері)[id=saas_param]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 JSON-файлда {linkto(#tab_params)[text=%number кестесінде]} келтірілген сервис параметрлерін көрсетіңіз.
 

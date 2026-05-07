@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Cloud Databases: алғашқы басқарылатын дерекқорды жасаңыз)[id=onboarding-db-create]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 [Cloud Databases](/kz/dbs/dbaas/concepts/about) — басқарылатын дерекқорлармен жұмыс істеуге мүмкіндік беретін сервис.
 

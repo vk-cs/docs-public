@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Агент)[id=ib_image_agent]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Агент — бұл сервисті өрістету барысында ВМ-ге орнатылатын бағдарламалық қамтамасыз ету. Негізгі функциялары:
 

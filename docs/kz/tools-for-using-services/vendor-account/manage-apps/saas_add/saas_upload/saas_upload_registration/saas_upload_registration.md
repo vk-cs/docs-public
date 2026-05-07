@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Брокерді тіркеу)[id=saas_upload_registration]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Брокерді тіркеу үшін [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com) мекенжайына хат жіберіңіз. Хатта мыналарды көрсетіңіз:
 

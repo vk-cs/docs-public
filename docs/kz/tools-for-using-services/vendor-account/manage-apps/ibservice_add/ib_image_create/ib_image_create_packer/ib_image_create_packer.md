@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Packer көмегімен жасау)[id=ib_image_create_packer]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Packer көмегімен сервис образын жасау үшін:
 

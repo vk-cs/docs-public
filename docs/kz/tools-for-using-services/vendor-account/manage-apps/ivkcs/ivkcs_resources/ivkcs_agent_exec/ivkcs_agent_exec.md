@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_agent_exec ресурсы)[id=ivkcs_agent_exec]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `ivkcs_agent_exec` ресурсының аргументтері {linkto(#tab_arguments)[text=%number кестесінде]} берілген.
 

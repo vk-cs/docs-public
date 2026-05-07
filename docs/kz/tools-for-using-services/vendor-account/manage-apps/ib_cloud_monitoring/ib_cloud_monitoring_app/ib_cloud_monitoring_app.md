@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Image-based қолданбаның метрикалары)[id=ib_cloud_monitoring_app]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Метрикаларды жинау)[id=collect_metrics]}
 

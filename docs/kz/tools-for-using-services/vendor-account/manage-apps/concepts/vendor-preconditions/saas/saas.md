@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Талаптар API SaaS-қосымшаларына)[id=saas]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 SaaS-қосымшасын дүкенге қосуға болу үшін SaaS-қосымшасының API-і келесі әрекеттерді орындауға мүмкіндік беруі тиіс:
 

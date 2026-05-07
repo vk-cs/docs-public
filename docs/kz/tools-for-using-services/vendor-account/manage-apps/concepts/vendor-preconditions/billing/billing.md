@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Тарификация)[id=billing]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Marketplace тарификацияның келесі түрлерін қолдайды:
 

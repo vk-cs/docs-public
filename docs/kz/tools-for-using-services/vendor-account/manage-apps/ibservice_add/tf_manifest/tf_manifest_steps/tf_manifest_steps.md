@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Terraform манифесі)[id=tf_manifest_steps]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Image-based қосымшаның инфрақұрылым конфигурациясы `plans/<PLAN_NAME>/deployment/deploy.tf` тіліндегі `HashiCorp Configuration Language (HCL)` Terraform манифесінің көмегімен сипатталады (синтаксисі — [ресми сайтта](https://developer.hashicorp.com/terraform/language/syntax/configuration)).
 

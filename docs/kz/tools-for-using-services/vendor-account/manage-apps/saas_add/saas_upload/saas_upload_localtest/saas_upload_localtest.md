@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Брокерді жергілікті тестілеу)[id=saas_upload_localtest]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Брокерді жергілікті түрде тестілеңіз.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(settings.yaml файлы)[id=tf_manifest_settings]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `settings.yaml` файлында {linkto(#tab_setting)[text=%number кестеде]} келтірілген параметрлерді көрсетіңіз.
 

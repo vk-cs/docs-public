@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Шығыс параметрлерінің сипаттамасы)[id=tf_manifest_output]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Пайдаланушыға манифест орындалып, сервис deployed болғаннан кейін email арқылы жіберу үшін шығыс параметрлерін сипаттаңыз.
 

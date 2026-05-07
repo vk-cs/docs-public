@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Әрекеттер реті)[id=ibservice_add_steps]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Дүкенге image-based қолданбасын қосу үшін:
 

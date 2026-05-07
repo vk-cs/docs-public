@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(display.yaml файлы)[id=ib_display]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_wizard)[text=%text]} сипаттау үшін `plans/<PLAN_NAME>/display.yaml` файлында {linkto(#tab_plans)[text=%number кестесінде]} келтірілген параметрлерді көрсетіңіз.
 

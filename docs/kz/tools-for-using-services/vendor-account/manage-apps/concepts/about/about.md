@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Жалпы ақпарат)[id=index]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервистер орналастырылатын жүйенің толық атауы: VK Cloud (XaaS).
 

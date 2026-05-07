@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Сервис образына қойылатын талаптар)[id=ib_image_requirements]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервис образында келесі бағдарламалық пакеттер болуы керек:
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(JSON-файл құрылымы)[id=saas_json]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Брокерге арналған SaaS-қосымша конфигурациясын сипаттаңыз. Егер SaaS-брокер үлгі бойынша жасалған болса, келесі әрекеттерді орындаңыз:
 

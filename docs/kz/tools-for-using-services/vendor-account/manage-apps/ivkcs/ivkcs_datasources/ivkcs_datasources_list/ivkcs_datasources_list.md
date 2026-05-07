@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Деректер көздерінің тізімі)[id=ivkcs_datasources_list]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 iVK CS провайдерінің деректер көздері {linkto(#tab_sources)[text=%number кестеде]} келтірілген.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Терминдер мен қысқартулар)[id=glossary]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 [cols="1,3", options="header"]
 |===

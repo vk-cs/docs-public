@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(YAML тарифтік опциялар файлдарын толтыру)[id=IB_option_fill_in]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `parameters/<OPTION_NAME>.yaml` файлдарында кемінде бір тарифтік жоспарда қолданылатын барлық тарифтік опцияларды сипаттаңыз (толығырақ — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types)[text=%text]} бөлімінде).
 

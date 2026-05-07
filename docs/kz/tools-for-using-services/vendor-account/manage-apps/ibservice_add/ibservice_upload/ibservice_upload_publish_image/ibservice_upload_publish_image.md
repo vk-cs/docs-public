@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Қызмет образын жариялау)[id=ibservice_upload_publish_image]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Бұлтты платформада қызмет образын жариялау үшін:
 

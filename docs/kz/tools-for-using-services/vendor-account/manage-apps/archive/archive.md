@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(image-based қолданбасын архивке көшіру)[id=archive]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Архивке test атаулар кеңістігінде орналастырылған image-based қолданбасының нақты ревизиясы көшіріледі.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Талаптар image-based қосымшаларына)[id=image_based]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Image-based қосымшасы келесі талаптарға сай болуы тиіс:
 

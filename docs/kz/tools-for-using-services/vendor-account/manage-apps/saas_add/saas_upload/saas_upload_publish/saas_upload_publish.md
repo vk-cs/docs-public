@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Сервисті жариялау)[id=saas_upload_publish]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервис тұтынушыларға тек жарияланғаннан кейін ғана қолжетімді болады.
 

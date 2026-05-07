@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Ортада брокерді өрістету)[id=saas_upload_env]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Брокері бар образды ортада өрістетіңіз.
 

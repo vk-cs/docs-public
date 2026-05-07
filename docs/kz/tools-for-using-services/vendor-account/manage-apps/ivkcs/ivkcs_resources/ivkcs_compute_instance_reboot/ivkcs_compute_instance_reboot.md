@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_compute_instance_reboot ресурсы)[id=ivkcs_compute_instance_reboot]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `ivkcs_compute_instance_reboot` ресурсының аргументі {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 

@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Сервисті жүктеу кезеңдері)[id=saas_upload_phases]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Сервисті дүкенге жүктейтін пайдаланушының бұлттық платформада тіркелгісі (жеке кабинеті) болуы тиіс. Тіркелу нұсқаулығы [Регистрация в VK Cloud](/kz/intro/onboarding/account) бөлімінде берілген.
 

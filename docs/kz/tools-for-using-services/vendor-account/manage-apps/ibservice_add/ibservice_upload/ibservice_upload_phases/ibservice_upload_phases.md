@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(Қызметті жүктеу кезеңдері)[id=ibservice_upload_phases]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 image-based қолданбасын жүктеу кезеңдері ({linkto(#pic_upload_phases)[text=%number сурет]}):
 

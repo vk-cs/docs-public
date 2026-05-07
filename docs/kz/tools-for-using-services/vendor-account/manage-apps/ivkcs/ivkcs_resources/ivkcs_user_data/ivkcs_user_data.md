@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ivkcs_user_data ресурсы)[id=ivkcs_user_data]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 {note:warn}
 

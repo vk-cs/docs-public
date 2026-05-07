@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # {heading(ВМ жүйелік метрикалары)[id=ib_cloud_monitoring_vm]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 ВМ жүйелік метрикаларын жинап, оларды Cloud Monitoring-ке жіберу үшін:
 
