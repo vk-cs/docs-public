@@ -32,6 +32,7 @@ aws s3api create-bucket \
 ```console
 aws s3api put-bucket-versioning \
   --bucket <ИМЯ_БАКЕТА> \
+  --versioning-configuration Status=Enabled \
   --endpoint-url <URL_СЕРВИСА>  
 ```
 
