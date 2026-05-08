@@ -1,22 +1,22 @@
-Webhooks для VK Object Storage — это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно:
+Вебхуки (webhooks) для VK Object Storage — это возможность настраивать отправку HTTP(S)-запросов по событиям бакета, используя API. Например, вы можете настроить:
 
-- настроить обработку и конвертирование файлов после загрузки;
-- интегрироваться с любыми внешними системами;
-- настроить логирование для объектного хранилища.
+- обработку и конвертирование файлов после загрузки;
+- интеграцию с любыми внешними системами;
+- логирование для объектного хранилища.
 
-Перечень событий (Event), для которых возможно настроить конфигурацию Webjook:
+Перечень событий (event), для которых возможно настроить конфигурацию вебхуков:
 
-- s3:ObjectCreated:\* — PutObject, PutObjectCopy, CompleteMultipartUpload.
-- s3:ObjectCreated:Put — PutObject.
-- s3:ObjectCreated:Copy — PutObjectCopy.
-- s3:ObjectCreated:CompleteMultipartUpload — CompleteMultipartUpload.
-- s3:ObjectRemoved:\* — DeleteObject.
-- s3:ObjectRemoved:Delete — DeleteObject.
+- `s3:ObjectCreated:*` — `PutObject`, `PutObjectCopy`, `CompleteMultipartUpload`.
+- `s3:ObjectCreated:Put` — `PutObject`.
+- `s3:ObjectCreated:Copy` — `PutObjectCopy`.
+- `s3:ObjectCreated:CompleteMultipartUpload` — `CompleteMultipartUpload`.
+- `s3:ObjectRemoved:*` — `DeleteObject`.
+- `s3:ObjectRemoved:Delete` — `DeleteObject`.
 
-Доступны следующие методы для работы с WebHooks:
+Доступны следующие методы для работы с вебхуками:
 
-- PutBucketNotificationConfiguration;
-- GetBucketNotificationConfiguration.
+- `PutBucketNotificationConfiguration`;
+- `GetBucketNotificationConfiguration`.
 
 ## Общая XML-конфигурация
 
@@ -45,13 +45,15 @@ Host: Bucket.hb.ru-msk.vkcloud-storage.ru
 </NotificationConfiguration>
 ```
 
-## Put Bucket Notification Configuration
+## Метод PutBucketNotificationConfiguration
 
-Метод PUT позволяет включить уведомление о некотором событии (PutObject, DeleteObject и т.д) в бакете.
+Метод позволяет включить уведомление о некотором событии в бакете (`PutObject` — добавление объекта, `DeleteObject` — удаление объекта и т.д).
 
-На данный момент поддерживается 1 тип событий - SimpleTopicConfiguration - запрос на url, предоставленный пользователем.
+Поддерживается только один тип событий: `SimpleTopicConfiguration` — запрос на URL, предоставленный пользователем.
 
-Пример: Требуется, чтобы выполнялся запрос на url http://test.com при PutObject в бакет bucketA объектов, имена которых подходят под маску image/\*.png.
+Пример:
+
+Требуется, чтобы выполнялся запрос на URL `http://test.com` при добавлении (`PutObject`) в бакет `bucketA` объектов, имена которых подходят под маску `image/*.png`.
 
 Запрос:
 
@@ -97,9 +99,9 @@ Content-Type: application/xml
 Connection: close
 ```
 
-## GetBucketNotificationConfiguration
+## Метод GetBucketNotificationConfiguration
 
-Возвращает текущую конфигурацию правил (SimpleNotificationConfiguration) бакета. Если правила не были установлены для данного бакета, будет возращен пустой элемент NotificationConfiguration.
+Возвращает текущую конфигурацию правил (`SimpleNotificationConfiguration`) бакета. Если правила не были установлены для этого бакета, будет возращен пустой элемент `NotificationConfiguration`.
 
 Запрос:
 
@@ -162,12 +164,12 @@ Connection: close
 </NotificationConfiguration>
 ```
 
-## Пример выполнения Webhook
+## Пример выполнения вебхука
 
-Для примера установленных правил, при загрузке объектов в бакет bucketA с именами image/\*.png, будет приходить следующий запрос:
+Для установленных выше правил при загрузке в бакет `bucketA` объектов с именами, подходящими под маску `image/*.png`, будет приходить следующий запрос в формате JSON:
 
 ```json
-POST <url> HTTP/1.1
+POST <URL> HTTP/1.1
 X-Amz-Sns-Message-Type: Notification
 
 { "Records":
@@ -206,7 +208,7 @@ X-Amz-Sns-Message-Type: Notification
 }
 ```
 
-В момент выполнения этого запроса сервис VK Object Storage валидирует URL, выполняя на него следующий запрос (2):
+В момент выполнения этого запроса сервис VK Object Storage валидирует URL, отправляя следующий запрос в формате XML:
 
 ```xml
 POST http://test.com HTTP/1.1
@@ -223,7 +225,7 @@ content-type: application/json
 }
 ```
 
-для подтверждения url необходимо в ответ отправить подпись:
+Для подтверждения URL необходимо в ответ отправить подпись. Пример:
 
 ```json
 content-type: application/json
@@ -231,21 +233,21 @@ content-type: application/json
 {"signature":"ea3fce4bb15c6de4fec365d36bcebbc34ccddf54616d5ca12e1972f82b6d37af"}
 ```
 
-Сигнатура вычисляется по формуле:
+Подпись вычисляется по формуле:
 
----
+```text
 
-signature = hmac*sha256(\_url*, hmac*sha256(\_TopicArn*, hmac*sha256(\_Timestamp*, *Token*)))
+signature = hmac_sha256_hex(<URL>, hmac_sha256(<TopicArn>, hmac_sha256(<Timestamp>, <Token>)))
 
----
+```
 
-в нашем примере:
+Для рассматриваемого примера:
 
 ```text
 signature = hmac_sha256_hex(“http://test.com”, hmac_sha256(“mcs2883541269|bucketA|s3:ObjectCreated:Put”, hmac_sha256(“2019-12-26T19:29:12+03:00”, “RPE5UuG94rGgBH6kHXN9FUPugFxj1hs2aUQc99btJp3E49tA”)))
 ```
 
-При успешном подтверждении url, в ответ на запрос (1) будет отправлен response:
+При успешном подтверждении URL в ответ на JSON-запрос будет получен ответ:
 
 ```http
 HTTP/1.1 200
