@@ -49,7 +49,7 @@ Floating IP addresses are used for:
 
 The number of floating IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#networks_subnets_and_ip_addresses_f2e7d7e5).
 
-The maximum number of floating IP addresses not attached to virtual machines is 1.
+If the floating IP addresses quota in your project is higher than 0, the maximum number of floating IP addresses not attached to virtual machines is 1.
 
 ## {heading(Anycast IP address)[id=anycast-ip]}
 
@@ -103,7 +103,7 @@ Up to 8 IP addresses can be bound to a single anycast IP address, and all IP add
 
 The number of anycast IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#other_parameters_2e315f40).
 
-The maximum number of anycast IP addresses not attached to virtual machines is 1.
+If the anycast IP addresses quota in your project is higher than 0, the maximum number of anycast IP addresses not attached to virtual machines is 1.
 
 ## Public IP address pool of the internet external network
 
