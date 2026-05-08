@@ -22,9 +22,9 @@ variables:
   # GITHUB_TOKEN: secret
   # GITLAB_TOKEN: secret
 
-  VKCS_AUDIT_ENABLED: "true"
-  VKCS_AUDIT_CHECK_URL_STAGE: "https://mcstest.mail.ru"
-  VKCS_AUDIT_CHECK_URL_PROD: "https://cloud.vk.com"
+  VKCS_PREPARE_ENABLED: "true"
+  VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"
+  VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.com"
 
   # NOTE: override variables to reuse ansible playbooks after changes in MCSAD-1045
   HELM_CHART_NAME: new-help
