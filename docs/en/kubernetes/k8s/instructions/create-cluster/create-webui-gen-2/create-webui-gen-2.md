@@ -44,6 +44,8 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 1. In the **Network and settings** block, click the **Set up** button and specify the network settings:
 
    - **Network**: select the network and subnet that will host the load balancer and worker nodes of the cluster. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
+   
+   - **CNI**: select a [Container Network Interface (CNI)](/en/kubernetes/k8s/concepts/network#supported-cni).
 
    - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#creating_network) it. 
      
