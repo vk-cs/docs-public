@@ -84,7 +84,9 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI): integration with network services.
 
-  Every Cloud Containers cluster has a [Calico](https://projectcalico.docs.tigera.io/about/about-calico) plugin that supports this interface. This plugin provides:
+  Every Kubernetes cluster that you create in Cloud Containers has plugins that support this interface: [Calico](https://projectcalico.docs.tigera.io/about/about-calico) and [Cilium](https://docs.cilium.io/en/stable/index.html) (only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters).
+
+  These plugins provide:
 
   - Network connectivity between containers, [pods](../../reference/pods), and cluster nodes
   - Application and enforcement of Kubernetes [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)

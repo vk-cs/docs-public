@@ -4,9 +4,18 @@ The [CoreDNS](https://coredns.io/) intra-cluster server is used as a replacement
 
 CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheus, which allows you to monitor its performance through cluster monitoring tools.
 
-## Working with Container Network Interface (CNI)
+## {heading(Working with Container Network Interface (CNI))[id=supported-cni]}
 
-Cloud Containers clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize intra-cluster networks. Calico communicates with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut. To get access to the Sprut SDN, contact [technical support](mailto:support@mcs.mail.ru).
+To organize intra-cluster networks, the Cloud Containers service supports two CNIs:
+
+- [Calico](https://projectcalico.docs.tigera.io/about/about-calico) implements network routing at the L3 level using standard network protocols and iptables. Calico scales well and provides optimal performance for medium and large clusters.
+- [Cilium](https://docs.cilium.io/en/stable/index.html ) uses eBPF (Linux eXpress Data Path) to implement network policies and routing directly in the OS kernel, bypassing iptables. Cilium supports traffic filtering at the L3, L4, and L7 levels (for example, by HTTP headers), and provides advanced monitoring capabilities (for example, through the built-in Hubble tool). Cilium is best suited for very large and high-load clusters, as well as microservice architectures.
+
+  {note:info}
+  Cilium is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+  {/note}
+
+Both CNIs communicate with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut. To get access to the Sprut SDN, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## Integration with load balancers
 
@@ -34,7 +43,7 @@ To allow a pod that is placed behind the Ingress controller to see the user's re
 
   The [NGINX-based Ingress Controller](../addons-and-settings/addons) provided by VK Cloud supports the proxy protocol and is already configured to work with it.
 
-- [Separate HTTP\HTTPS balancer with additional settings](../../how-to-guides/ingress/ingress-http):
+- [Separate HTTP(S) balancer with additional settings](../../how-to-guides/ingress/ingress-http):
 
   - If you plan to handle HTTPS traffic, configure SSL connection termination on this balancer.
   - Activate the `ExternalTrafficPolicy: Local` policy on the Ingress controller.
@@ -53,9 +62,9 @@ A dedicated TCP load balancer is created for each cluster, which handles incomin
 
 Three groups of rules are created for each cluster:
 
-- `<cluster name>-base`: allow communication between master nodes and groups of worker nodes.
-- `<cluster name>-master`: allow communication with the master nodes.
-- `<cluster name>-minion`: provide communication between groups of worker nodes.
+- `<CLUSTER_NAME>-base`: allow communication between master nodes and groups of worker nodes.
+- `<CLUSTER_NAME>-master`: allow communication with the master nodes.
+- `<CLUSTER_NAME>-minion`: provide communication between groups of worker nodes.
 
 {note:warn}
 

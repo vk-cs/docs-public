@@ -42,8 +42,8 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 - Ensuring security at all stages of cluster operation:
 
   - During network communication in the cluster, all connections are encrypted and certificates are used.
-  - You can [apply](../network#working_with_container_network_interface_cni) Calico [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
-  - You can [apply](../architecture#built_in_support_for_the_open_policy_agent) Gatekeeper [constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
+  - You can [apply](../network#supported-cni) network policies: Calico or Cilium. For more details on network policies, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
+  - You can [apply](../architecture#built_in_support_for_the_open_policy_agent) Gatekeeper constraint policies. For more details, refer to the [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
   - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](../../concepts/access-management).
 
 - [Backup](../../how-to-guides/velero/velero-backup) Kubernetes clusters in the Cloud Containers service with Velero.

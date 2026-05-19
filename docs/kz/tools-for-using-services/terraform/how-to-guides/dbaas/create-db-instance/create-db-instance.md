@@ -340,7 +340,7 @@ resource "vkcs_db_user" "db-user" {
 
 - [ДҚ инстансы](/kz/dbs/dbaas/instructions/manage-instance/mysql#bd_instansy_zhne_onyn_hosttary_turaly_akparat_alu).
 - Инстанс үшін сыртқы IP мекенжайы — инстанс бетінде көрсетіледі.
-- [Prometheus Node exporter](/kz/dbs/dbaas/instructions/managing-extensions#271-tabpanel-1) кеңейтімі (егер орнатылған болса) — инстанс бетіндегі **Кеңейтімдер** қойындысында көрсетіледі.
+- [Prometheus Node exporter](/kz/dbs/dbaas/instructions/managing-extensions) кеңейтімі (егер орнатылған болса) — инстанс бетіндегі **Кеңейтімдер** қойындысында көрсетіледі.
 - Инстанстағы ДҚ (егер жасалған болса) — инстанс бетіндегі **Дерекқорлар тізімі** қойындысында көрсетіледі.
 - [ДҚ пайдаланушысы](/kz/dbs/dbaas/instructions/users#paydalanushylar_tizimin_karau) (егер жасалған болса) — инстанс бетіндегі **Пайдаланушылар** қойындысында көрсетіледі.
 
