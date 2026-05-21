@@ -6,10 +6,6 @@
 
 ## Запустить или остановить кластер
 
-{note:info}
-Эти операции доступны только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
-{/note}
-
 ### {heading(Запустить кластер)[id=start]}
 
 {tabs}

@@ -172,4 +172,4 @@ A running cluster consumes computing resources and is charged accordingly. If yo
 
 1. [Delete](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) the created PVs.
 
-1. [Delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) the cluster you created.
+1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#start_or_stop_cluster) the cluster you created to use it later or [delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.
