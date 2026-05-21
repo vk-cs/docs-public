@@ -171,4 +171,4 @@
 
 1. [Удалите](/ru/kubernetes/k8s/concepts/storage#reclaim_policies) созданные PV.
 
-1. [Удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) созданный кластер.
+1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.

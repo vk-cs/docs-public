@@ -8,10 +8,6 @@ Terraform арқылы кластермен кез келген операция
 
 ## Кластерді іске қосу немесе тоқтату
 
-{note:info}
-Бұл операциялар тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
-{/note}
-
 ### {heading(Кластерді іске қосу)[id=start]}
 
 {tabs}

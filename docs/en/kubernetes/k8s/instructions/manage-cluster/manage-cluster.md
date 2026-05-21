@@ -6,10 +6,6 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 ## Start or stop cluster
 
-{note:info}
-These operations are only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
 ### {heading(Start cluster)[id=start]}
 
 {tabs}
