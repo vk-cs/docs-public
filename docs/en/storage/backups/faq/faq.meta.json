@@ -3,7 +3,7 @@
       "shortDescription": "Answers to questions about the time of creation of backups, their total number, distribution by availability zones",
       "metaDescription": "Answers to questions about the time of creation of backups, their total number, distribution by availability zones",
     "sectionTitle": "FAQ",
-    "weight": 3,
+    "weight": 10,
     "additionalUuids": [
         "7bfec1bd-a446-49d2-978f-dda353ddfd5d"
     ],

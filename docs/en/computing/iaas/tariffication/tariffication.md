@@ -9,7 +9,7 @@ The cost of platform services is given in [price list](https://cloud.vk.com/pric
 - License (for example, on Windows OS).
 - Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVMe).
 - File storages (NFS/CIFS) — for each 1 GB of disk space.
-- Disk snapshots (backups) — for each 1 GB of snapshot size.
+- Disk snapshots — for each 1 GB of the snapshot size.
 - [Public IP addresses](/en/networks/vnet/tariffication#what_is_charged).
 - [Disk images](../concepts/about#image) that you created or imported to VK Cloud. The price depends on the storage location:
 
