@@ -12,41 +12,97 @@ To create a VPN connection, you need a virtual network with a router. If you alr
 
 Create a network with the following objects:
 
+{tabs}
+
+{tab(Neutron)}
+
 - Resources:
 
-  - `vkcs_networking_network`: a network where a VM will be created. In the example below, the network named `extnet` is created.
+  - `vkcs_networking_network`: a network where a VM will be created. In the example `network`.
   - `vkcs_networking_subnet`: a subnet from the network. In the example: `subnet`.
-  - `vkcs_networking_router`: a router for an external network and interaction with the outside world. In the example: `router`.
+  - `vkcs_networking_router`: a router that connects a private network with the outside world. In the example: `router`.
   - `vkcs_networking_router_interface`: connects the router to the internal network.
 
 - Data sources:
 
-  - `vkcs_networking_network`: an external network for obtaining a floating IP address.
+  - `vkcs_networking_network`: an external network for obtaining a public IP address by a router, as well as assigning Floating IPs to entities on a private network.
 
 ```hcl
 data "vkcs_networking_network" "extnet" {
-   name="internet"
+  name = "internet"
 }
 
 resource "vkcs_networking_network" "network" {
-   name="vpnaas_network"
+  name = "vpnaas_network"
 }
 
 resource "vkcs_networking_subnet" "subnet" {
-  network_id = "${vkcs_networking_network.network.id}"
-  cidr="192.168.199.0/24"
+  network_id = vkcs_networking_network.network.id
+  cidr = "192.168.199.0/24"
 }
 
 resource "vkcs_networking_router" "router" {
-   name="router"
-   external_network_id = data.vkcs_networking_network.extnet.id
+  name = "router"
+  external_network_id = data.vkcs_networking_network.extnet.id
 }
 
 resource "vkcs_networking_router_interface" "router_interface" {
-  router_id = "${vkcs_networking_router.router.id}"
-  subnet_id = "${vkcs_networking_subnet.subnet.id}"
+  router_id = vkcs_networking_router.router.id
+  subnet_id = vkcs_networking_subnet.subnet.id
 }
 ```
+
+{/tab}
+
+{tab(Sprut)}
+
+- Resources:
+
+  - `vkcs_networking_network`: a network where a VM will be created. In the example `network`.
+  - `vkcs_networking_subnet`: a subnet from the network. In the example: `subnet`.
+  - `vkcs_dc_router`: a router that connects a private network with the outside world. In the example: `router`.
+  - `vkcs_dc_interface`: connects the router to the internal and external networks.
+
+- Data sources:
+
+  - `vkcs_networking_network`: an external network for obtaining a public IP address by a router.
+
+```hcl
+data "vkcs_networking_network" "extnet" {
+  name = "internet"
+}
+
+resource "vkcs_networking_network" "network" {
+  name = "vpnaas_network"
+}
+
+resource "vkcs_networking_subnet" "subnet" {
+  network_id = vkcs_networking_network.network.id
+  cidr = "192.168.199.0/24"
+}
+
+resource "vkcs_dc_router" "router" {
+  name = "router"
+}
+
+resource "vkcs_dc_interface" "interface_1" {
+  name         = "LAN"
+  dc_router_id = vkcs_dc_router.router.id
+  network_id   = vkcs_networking_network.network.id
+  subnet_id    = vkcs_networking_subnet.subnet.id
+  ip_address   = vkcs_networking_subnet.subnet.gateway_ip
+}
+
+resource "vkcs_dc_interface" "interface_2" {
+  name         = "WAN"
+  dc_router_id = vkcs_dc_router.router.id
+  network_id   = data.vkcs_networking_network.extnet.id
+}
+```
+
+{/tab}
+
+{/tabs]
 
 ## Create a VPN connection
 
@@ -88,7 +144,7 @@ data "vkcs_networking_router" "router" {
 
 ```hcl
 resource "vkcs_vpnaas_service" "service" {
-   router_id = "${vkcs_networking_router.router.id}"
+   router_id = vkcs_networking_router.router.id
 }
 
 resource "vkcs_vpnaas_ipsec_policy" "policy_1" {
@@ -105,25 +161,25 @@ resource "vkcs_vpnaas_endpoint_group" "group_1" {
 }
 resource "vkcs_vpnaas_endpoint_group" "group_2" {
 	type = "subnet"
-	endpoints = [ "${vkcs_networking_subnet.subnet.id}" ]
+	endpoints = [ vkcs_networking_subnet.subnet.id ]
 }
 
 resource "vkcs_vpnaas_site_connection" "connection" {
 	name = "connection"
-	ikepolicy_id = "${vkcs_vpnaas_ike_policy.policy_2.id}"
-	ipsecpolicy_id = "${vkcs_vpnaas_ipsec_policy.policy_1.id}"
-	vpnservice_id = "${vkcs_vpnaas_service.service.id}"
+	ikepolicy_id = vkcs_vpnaas_ike_policy.policy_2.id
+	ipsecpolicy_id = vkcs_vpnaas_ipsec_policy.policy_1.id
+	vpnservice_id = vkcs_vpnaas_service.service.id
 	psk = "secret"
 	peer_address = "192.168.10.1"
 	peer_id = "192.168.10.1"
-	local_ep_group_id = "${vkcs_vpnaas_endpoint_group.group_2.id}"
-	peer_ep_group_id = "${vkcs_vpnaas_endpoint_group.group_1.id}"
+	local_ep_group_id = vkcs_vpnaas_endpoint_group.group_2.id
+	peer_ep_group_id = vkcs_vpnaas_endpoint_group.group_1.id
 	dpd {
 		action   = "restart"
 		timeout  = 42
 		interval = 21
 	}
-	depends_on = ["vkcs_networking_router_interface.router_interface"]
+	depends_on = [vkcs_networking_router_interface.router_interface]
 }
 ```
 
