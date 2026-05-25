@@ -31,6 +31,7 @@ export const config = {
             id: 'my-tracker',
             type: 'script',
             code:
+                'var _tmrId = 3118070;\n' +
                 'var _tmr = window._tmr || (window._tmr = []);\n' +
                 '_tmr.push({id: "3118070", type: "pageView", start: (new Date()).getTime()});\n' +
                 '(function (d, w, id) {\n' +
