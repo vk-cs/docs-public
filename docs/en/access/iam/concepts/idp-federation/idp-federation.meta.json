@@ -1,0 +1,9 @@
+{
+  "title": "Identity federation",
+  "shortDescription": "What is identity federation in VK Cloud",
+  "metaDescription": "Identity federation in VK Cloud: single sign-on and access to VK Cloud resources using identity federation in your IdP.",
+  "sectionTitle": "Identity federation",
+  "icon": "",
+  "weight": 5,
+  "uuid": ""
+}
