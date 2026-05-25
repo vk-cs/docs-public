@@ -196,10 +196,9 @@
 {tab(Организациям и предпринимателям)}
 {include(/ru/_includes/_invite-user.md)}
 
-Вы можете подключить к VK Cloud вашего поставщика удостоверений (Identity Provider). Это позволит вашим сотрудникам заходить в VK Cloud без ввода логина и пароля, используя корпоративные аутентификационные данные. Такой режим называется федерация удостоверений. Доступна настройка федерации удостоверений через [Active Directory](/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad), [Keycloak](/ru/tools-for-using-services/vk-cloud-account/how-to-guides/keycloak-to-fim) и [Microsoft Entra](/ru/tools-for-using-services/vk-cloud-account/how-to-guides/ms-entra-fim).
+Вы можете подключить к VK Cloud вашего поставщика удостоверений (Identity Provider). Это позволит вашим сотрудникам заходить в VK Cloud без ввода логина и пароля, используя корпоративные аутентификационные данные. Такой режим называется федерация удостоверений. Доступна настройка федерации удостоверений через [Active Directory](/ru/access/iam/how-to-guides/federations/add-fim-for-ad), [Keycloak](/ru/access/iam/how-to-guides/federations/keycloak-to-fim) и [Microsoft Entra](/ru/access/iam/how-to-guides/federations/ms-entra-fim).
 {/tab}
 {/tabs}
-
 
 ## Что дальше?
 
