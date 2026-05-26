@@ -1,0 +1,9 @@
+{
+  "title": "Использование Kgateway",
+  "shortDescription": "Как использовать Kgateway для перенаправления входящего HTTP-трафика к тестовому приложению",
+  "metaDescription": "Как настроить аддон Kgateway в Cloud Containers: создание Gateway и HTTPRoute, маршрутизация трафика и проверка сервиса httpbin",
+  "sectionTitle": "Использование Kgateway",
+  "icon": "",
+  "weight": 13,
+  "uuid": ""
+}

@@ -1,0 +1,2 @@
+1. Review the [system requirements](/en/kubernetes/k8s/concepts/addons-and-settings/addons#available_addons) of the add-on to make sure you have enough resources to install it.
+1. (Optional) Perform [manual scaling](/en/kubernetes/k8s/instructions/scale#scale_worker_nodes) of worker node groups or set up [automatic scaling](/en/kubernetes/k8s/instructions/scale#autoscale_worker_nodes).
