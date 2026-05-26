@@ -338,55 +338,70 @@ Quotas for the total number of disks in the project take into account all types 
 |Number of disks per instance
 |25 pcs. when configuration disk is enabled.
 
- 26 pcs. when configuration disk is disabled
+26 pcs. when configuration disk is disabled
 |The limit is associated with PCI bus limitations.
 
-If, while [creating VM](/ru/computing/iaas/instructions/vm/vm-create), the **Use configuration disk** option is enabled in VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
+If, while [creating VM](/en/computing/iaas/instructions/vm/vm-create), the **Use configuration disk** option is enabled in VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
 
 If the **Use configuration disk** option is disabled or the `--use-config-drive` parameter is not used, the maximum number of disks is 26
 
-| ![](/en/assets/check.svg "inline")
+|![](/en/assets/check.svg "inline")
 
 |Size of one HDD
-|5 TB via VK Cloud management console.
+|5 TB via VK Cloud management console
+(1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
- 100 TB using OpenStack CLI
-|Certain VK Cloud services may have their own disk size limits
+100 TB using OpenStack CLI
+|Certain VK Cloud services may have their own disk size limits.
+
+[Antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions can be removed by contacting [technical support](mailto:support@mcs.mail.ru)
 |![](/en/assets/check.svg "inline")
 
 |Size of one SSD
-|5 TB via VK Cloud management console.
+|5 TB via VK Cloud management console
+(1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
- 100 TB using OpenStack CLI
-|Certain VK Cloud services may have their own disk size limits
+100 TB using OpenStack CLI
+|Certain VK Cloud services may have their own disk size limits.
+
+[Antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions can be removed by contacting [technical support](mailto:support@mcs.mail.ru)
 |![](/en/assets/check.svg "inline")
 
 |Size of one High-IOPS SSD disk
-|2 TB via VK Cloud management console.
+|2 TB via VK Cloud management console
+(1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
- 10 TB using OpenStack CLI
+10 TB using OpenStack CLI
 |A disk created over the limit (10 TB) is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
+[Antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions can be removed by contacting [technical support](mailto:support@mcs.mail.ru).
+
 Certain VK Cloud services may have their own disk size limits
-|![](/ru/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 
 |Size of one High-IOPS HA SSD disk
-|2 TB via VK Cloud management console.
+|2 TB via VK Cloud management console
+(1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
- 10 TB using OpenStack CLI
+10 TB using OpenStack CLI
 |A disk created over the limit (10 TB) is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks. The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
+[Antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions can be removed by contacting [technical support](mailto:support@mcs.mail.ru).
+
 Certain VK Cloud services may have their own disk size limits
-|![](/ru/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 
 |Size of one Low Latency NVMe disk
-|2 TB via VK Cloud management console.
+|2 TB via VK Cloud management console
+(1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
- 10 TB using OpenStack CLI
+10 TB using OpenStack CLI
 |The limit (10 TB) can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
+[Antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions can be removed by contacting [technical support](mailto:support@mcs.mail.ru).
+
 Certain VK Cloud services may have their own disk size limits
-|![](/ru/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 
 |Size of one image
 |100 GB via VK Cloud management console.
@@ -395,12 +410,12 @@ Certain VK Cloud services may have their own disk size limits
 |This is a hard limit for the Glance service.
 
 If you need to download a larger image, use the [instruction](/en/storage/s3/how-to-guides/load-large-image)
-|![](/ru/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 
 |Total volume of images
 |2 TB
 |The limit can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru)
-|![](/ru/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 
 |Total number of disks snapshots
 |200 pcs.
