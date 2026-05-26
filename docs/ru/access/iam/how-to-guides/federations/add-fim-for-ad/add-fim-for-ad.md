@@ -57,7 +57,9 @@
 
 ## 3. Настройте связь групп и ролей в VK Cloud
 
+{note:info}
 Операции по настройке связи групп AD FS и ролей VK Cloud доступны только следующим [ролям](/ru/access/iam/concepts/roles-reference) личного кабинета: владельцу, суперадминистратору и администратору пользователей (IAM). Просмотр связей доступен также администратору проекта и наблюдателю.
+{/note}
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений**.
@@ -87,6 +89,6 @@
 
 {note:warn}
 
-Active Directory автоматически не синхронизируется с VK Cloud. После блокировки пользователя в Active Directory [удалите](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#udalenie_uchastnika) его из проектов в личном кабинете VK Cloud.
+Active Directory автоматически не синхронизируется с VK Cloud. После блокировки пользователя в Active Directory [удалите](/ru/access/iam/instructions/access-manage#udalenie_uchastnika) его из проектов в личном кабинете VK Cloud.
 
 {/note}

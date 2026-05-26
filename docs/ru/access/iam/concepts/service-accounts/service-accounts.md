@@ -6,12 +6,12 @@
 
 В зависимости от роли в проекте пользователь в личном кабинете может:
 
-- [создавать](../../instructions/project-settings/service-account-manage#create) СУЗ;
-- [просматривать](../../instructions/project-settings/service-account-manage#view_list) список СУЗ проекта;
-- [просматривать](../../instructions/project-settings/service-account-manage#view_card) карточку СУЗ;
-- [скачивать](../../instructions/project-settings/service-account-manage#download_rc_file) на свое устройство OpenStack RC-файл, необходимый для использования API;
-- [настраивать](../../instructions/project-settings/service-account-manage#authorize) окружение для доступа к API от имени СУЗ;
-- [удалять](../../instructions/project-settings/service-account-manage#delete) СУЗ.
+- [создавать](../../instructions/service-account-manage#create) СУЗ;
+- [просматривать](../../instructions/service-account-manage#view_list) список СУЗ проекта;
+- [просматривать](../../instructions/service-account-manage#view_card) карточку СУЗ;
+- [скачивать](../../instructions/service-account-manage#download_rc_file) на свое устройство OpenStack RC-файл, необходимый для использования API;
+- [настраивать](../../instructions/service-account-manage#authorize) окружение для доступа к API от имени СУЗ;
+- [удалять](../../instructions/service-account-manage#delete) СУЗ.
 
 Эти же действия можно выполнять [через API](/ru/tools-for-using-services/api/api-spec/api-service-users).
 

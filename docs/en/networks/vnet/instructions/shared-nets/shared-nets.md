@@ -10,7 +10,7 @@ Network sharing is available by default in projects with the Sprut [SDN](../../c
 
 {cut(Who can share a network with other projects?)}
 
-Users with the following [roles](/ru/tools-for-using-services/account/concepts/rolesandpermissions) can share a network with other projects:
+Users with the following [roles](/ru/access/iam/concepts/rolesandpermissions "change-lang") can share a network with other projects:
 
 - project owner
 - superadministrator

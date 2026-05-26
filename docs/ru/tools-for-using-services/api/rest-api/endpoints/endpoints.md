@@ -4,7 +4,7 @@
 
 ## Просмотр списка эндпоинтов
 
-Список доступен всем пользователям, вне зависимости от их [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions).
+Список доступен всем пользователям, вне зависимости от их [роли](/ru/access/iam/concepts/rolesandpermissions).
 
 Чтобы увидеть список эндпоинтов для вашего региона:
 
@@ -83,7 +83,7 @@
 
 {note:info}
 
-В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.com/service-users/) — он позволяет управлять [сервисными учетными записями](/ru/tools-for-using-services/account/concepts/service-accounts).
+В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.com/service-users/) — он позволяет управлять [сервисными учетными записями](/ru/access/iam/concepts/service-accounts).
 
 {/note}
 

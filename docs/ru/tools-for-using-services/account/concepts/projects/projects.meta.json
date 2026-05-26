@@ -5,5 +5,8 @@
     "sectionTitle": "Проекты",
     "icon": "",
     "weight": 0,
-    "uuid": "85a4309a-60d7-4576-b594-a311c112ec08"
+    "uuid": "85a4309a-60d7-4576-b594-a311c112ec08",
+    "additionalUuids": [
+        "fe46098d-ea5c-4fd9-a534-4942858cb4bc"
+    ]
 }

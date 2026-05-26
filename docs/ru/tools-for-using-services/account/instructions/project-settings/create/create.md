@@ -24,4 +24,4 @@
 
    Подробнее о стоимости сервисов в [статье о тарификации](../../../tariffication).
 
-1. [Настройте](/ru/tools-for-using-services/account/instructions/project-settings/access-manage) доступы для проекта.
+1. [Настройте](/ru/access/iam/instructions/access-manage) доступы для проекта.

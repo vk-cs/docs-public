@@ -50,17 +50,17 @@ ExternalDNS будет использовать реквизиты этого п
 
 Подготовьте пользователя и получите все необходимые реквизиты:
 
-1. [Выберите](/tools-for-using-services/account/instructions/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
+1. [Выберите](/tools-for-using-services/account/instructions/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/access/iam/instructions/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
 
    Требования к пользователю:
 
    - Должен быть [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
-   - Должна быть [назначена](/ru/tools-for-using-services/account/instructions/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
+   - Должна быть [назначена](/ru/access/iam/instructions/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
-     - Администратор сети (минимально необходимая [роль](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions)).
-     - Администратор проекта.
-     - Суперадминистратор.
-     - Владелец проекта.
+     - [Администратор сети](/ru/access/iam/concepts/roles-reference#mcs_admin_network) (минимально необходимая [роль](/ru/access/iam/concepts/rolesandpermissions)).
+     - [Администратор проекта](/ru/access/iam/concepts/roles-reference#mcs_admin).
+     - [Суперадминистратор](/ru/access/iam/concepts/roles-reference#mcs_co_owner).
+     - [Владелец проекта](/ru/access/iam/concepts/roles-reference#mcs_owner).
 
      {note:info}
 

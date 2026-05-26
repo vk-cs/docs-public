@@ -1,4 +1,4 @@
-Вы можете создавать собственные [проекты](/ru/tools-for-using-services/account/concepts/projects) в VK Cloud. Создав проект, вы становитесь его [владельцем](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom).
+Вы можете создавать собственные [проекты](/ru/tools-for-using-services/account/concepts/projects) в VK Cloud. Создав проект, вы становитесь его [владельцем](/ru/access/iam/concepts/roles-reference#mcs_owner).
 
 {note:info}
 

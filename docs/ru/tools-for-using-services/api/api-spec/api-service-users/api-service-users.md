@@ -1,4 +1,4 @@
-REST API Service Users поддерживает управление [сервисными учетными записями](/ru/tools-for-using-services/account/concepts/service-accounts):
+REST API Service Users поддерживает управление [сервисными учетными записями](/ru/access/iam/concepts/service-accounts):
 
 - просмотр списка сервисных учетных записей;
 - просмотр, создание и удаление сервисных учетных записей;
