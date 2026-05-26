@@ -227,7 +227,7 @@
 
        {include(/ru/_includes/_client-keystone-auth.md)}
 
-    1. Проверьте, что у вас есть [необходимая роль](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes) для работы с кластерами Kubernetes. Если такой роли нет, попросите владельца или суперадминистратора проекта добавить ее вам.
+    1. Проверьте, что у вас есть [необходимая роль](/ru/access/iam/concepts/rolesandpermissions#roles_permissions_kubernetes) для работы с кластерами Kubernetes. Если такой роли нет, попросите владельца или суперадминистратора проекта добавить ее вам.
     1. [Активируйте](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api) доступ по API.
 
 ## {heading(Подключение к кластеру)[id=connect]}

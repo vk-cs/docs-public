@@ -48,7 +48,7 @@
 
 ## Что дальше?
 
-После входа вы перейдете в автоматически созданный для вас проект с [ролью](/ru/tools-for-using-services/account/concepts/rolesandpermissions) владельца проекта.
+После входа вы перейдете в автоматически созданный для вас проект с [ролью](/ru/access/iam/concepts/rolesandpermissions) владельца проекта.
 
 [Ознакомьтесь](/ru/tools-for-using-services/partner-platform/concepts/client-account) с возможностями личного кабинета клиента партнера.
 

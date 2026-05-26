@@ -2,6 +2,6 @@
 
 {note:info}
 
-Изменить имя проекта могут только пользователи с [ролью](/ru/tools-for-using-services/account/concepts/rolesandpermissions) владельца проекта или суперадминистратора.
+Изменить имя проекта могут только пользователи с [ролью](/ru/access/iam/concepts/rolesandpermissions) владельца проекта или суперадминистратора.
 
 {/note}

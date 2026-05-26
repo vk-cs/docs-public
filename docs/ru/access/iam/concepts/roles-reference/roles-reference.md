@@ -547,24 +547,6 @@
 
 ## {heading(Специализированные роли)[id=iam-roles-reference-special]}
 
-### {heading(dataplatform_delete)[id=dataplatform_delete]}
-
-Название в личном кабинете: `Удаление Data Platform`.
-
-Позволяет полностью удалять все ресурсы и сервисы Data Platform.
-
-### {heading(dataplatform_modify)[id=dataplatform_modify]}
-
-Название в личном кабинете: `Управление Data Platform`.
-
-Позволяет управлять всеми сервисами и инфраструктурой Data Platform.
-
-### {heading(dataplatform_view)[id=dataplatform_view]}
-
-Название в личном кабинете: `Просмотр Data Platform`.
-
-Позволяет просматривать список и статусы всех компонентов Data Platform.
-
 ### {heading(mcs_admin_network)[id=mcs_admin_network]}
 
 Название в личном кабинете: `Администратор сети`.

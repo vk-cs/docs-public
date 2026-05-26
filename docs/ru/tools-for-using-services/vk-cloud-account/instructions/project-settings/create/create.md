@@ -25,4 +25,4 @@
 ## Что дальше?
 
 - Узнайте подробнее об [управлении проектом](/ru/tools-for-using-services/account/instructions/project-settings/manage).
-- Ознакомьтесь с возможностями [настройки доступа](/ru/tools-for-using-services/account/instructions/project-settings/access-manage) к проекту.
+- Ознакомьтесь с возможностями [настройки доступа](/ru/access/iam/instructions/access-manage) к проекту.

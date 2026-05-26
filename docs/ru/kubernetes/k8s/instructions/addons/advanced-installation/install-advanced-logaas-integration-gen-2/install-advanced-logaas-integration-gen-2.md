@@ -2,7 +2,7 @@
 
 1. Подключите сервис [Cloud Logging](/ru/monitoring-services/logging) в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
-1. [Cоздайте](/ru/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе [Права в сервисе Cloud Logging](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_logging). Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
+1. [Cоздайте](/ru/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе [Права в сервисе Cloud Logging](/ru/access/iam/concepts/rolesandpermissions#roles_logging). Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
 
    Используйте логин и пароль для доступа к СУЗ, полученные после ее создания, при установке аддона.  
 

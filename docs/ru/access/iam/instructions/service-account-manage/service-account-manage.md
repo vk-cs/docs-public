@@ -6,7 +6,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom) имеет [права на управление СУЗ](../../../concepts/service-accounts). Создание СУЗ доступно для ролей:
+1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts). Создание СУЗ доступно для ролей:
 
     - владелец проекта,
     - суперадминистратор,
@@ -44,7 +44,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom) имеет [права на управление СУЗ](../../../concepts/service-accounts).
+1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts).
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте, упорядоченный по названию.
@@ -64,7 +64,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom) имеет [права на управление СУЗ](../../../concepts/service-accounts).
+1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts).
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте.
@@ -91,7 +91,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom) имеет [права на управление СУЗ](../../../concepts/service-accounts).
+1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts).
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте.
@@ -146,7 +146,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom) имеет [права на управление СУЗ](../../../concepts/service-accounts). Удаление СУЗ доступно для ролей:
+1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts). Удаление СУЗ доступно для ролей:
 
     - владелец проекта,
     - суперадминистратор,
