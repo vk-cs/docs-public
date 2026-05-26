@@ -1,0 +1,3 @@
+1. Ознакомьтесь с [системными требованиями](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#dostupnye_addony) аддона, чтобы убедиться, что у вас достаточно ресурсов для его установки.
+
+1. (Опционально) [Выполните ручное масштабирование](/ru/kubernetes/k8s/instructions/scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](/ru/kubernetes/k8s/instructions/scale#autoscale_worker_nodes).

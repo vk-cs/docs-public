@@ -50,8 +50,8 @@ Kubernetes clusters allow you to organize the logical division of Kubernetes res
 
 {tab(System requirements)}
 
-- **CPU**: 200m.
-- **RAM**: 128Mi.
+- **CPU**: 200m
+- **RAM**: 128Mi
 
 {/tab}
 
@@ -86,18 +86,18 @@ The requirements of the individual add-on components:
 
 - cert-manager:
 
-  - **CPU**: 10m.
-  - **RAM**: 32Mi.
+  - **CPU**: 10m
+  - **RAM**: 32Mi
 
 - [cert-manager-cainjector](https://cert-manager.io/docs/concepts/ca-injector/):
 
-  - **CPU**: 10m.
-  - **RAM**: 32Mi.
+  - **CPU**: 10m
+  - **RAM**: 32Mi
 
 - [cert-manager-webhook](https://cert-manager.io/docs/concepts/webhook/):
 
-  - **CPU**: 10m.
-  - **RAM**: 32Mi.
+  - **CPU**: 10m
+  - **RAM**: 32Mi
 
 {/tab}
 
@@ -125,11 +125,11 @@ See [Connecting to the Docker registry](../../../connect/docker-registry) for de
 
 {tab(System requirements)}
 
-- **CPU**: 100m.
-- **RAM**: 128Mi–512 Mi.
-- **S3 object storage capacity**: depends on the size and number of images that are planned to be placed in the registry.
-- **Standard load balancer**: one piece.
-- **Floating IP**: one piece.
+- **CPU**: 100m
+- **RAM**: 128Mi — 512 Mi
+- **S3 object storage capacity**: depends on the size and number of images that are planned to be placed in the registry
+- **Standard load balancer**: one piece
+- **Floating IP**: one piece
 
 {/tab}
 
@@ -216,17 +216,17 @@ Read more about the add-on and its components: [NVIDIA GPU Operator](https://doc
 The add-on components requirements:
 
 - NVIDIA GPU Operator:
-  - **CPU**: 200–500m
-  - **RAM**: 64–512Mi
+  - **CPU**: 200 — 500m
+  - **RAM**: 64 — 512Mi
 - NFD-Master:
-  - **CPU**: 100–500m
-  - **RAM**: 128Mi–4Gi
+  - **CPU**: 100 — 500m
+  - **RAM**: 128Mi — 4Gi
 - NFD Garbage-Collector:
-  - **CPU**: 10–500m
-  - **RAM**: 128Mi–1Gi
+  - **CPU**: 10 — 500m
+  - **RAM**: 128Mi — 1Gi
 - NFD-Worker (on each GPU node):
-  - **CPU**: 205–2000m
-  - **RAM**: 192Mi–2Gi
+  - **CPU**: 205 — 2000m
+  - **RAM**: 192Mi — 2Gi
 
 If the add-on is installed on several worker nodes, then NFD-Worker will be installed on each of these nodes and will require the specified amount of RAM for each node. The remaining components are installed on one node only.
 
@@ -258,10 +258,10 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 
 {tab(System requirements)}
 
-- **CPU**: 210m–610m.
-- **RAM**: 238Mi–660Mi.
-- **Standard load balancer**: one piece.
-- **Floating IP**: one piece. (when installed with [default settings](../../../instructions/addons/advanced-installation/install-advanced-ingress#installing_addon)).
+- **CPU**: 210m — 610m
+- **RAM**: 238Mi — 660Mi
+- **Standard load balancer**: one piece
+- **Floating IP**: one piece (when installed with [default settings](../../../instructions/addons/advanced-installation/install-advanced-ingress#installing_addon))
 
 {/tab}
 
@@ -293,8 +293,8 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
 
 {tab(System requirements)}
 
-- **CPU**: 500m.
-- **RAM**: 2Gi.
+- **CPU**: 500m
+- **RAM**: 2Gi
 
 {/tab}
 
@@ -336,29 +336,64 @@ Requirements of individual add-on components:
 
 - [Elasticsearch](https://www.jaegertracing.io/docs/latest/deployment/#elasticsearch):
 
-  - **CPU**: 100m–1000m.
-  - **RAM**: 512M.
+  - **CPU**: 100m — 1000m
+  - **RAM**: 512M
 
 - [Agent](https://www.jaegertracing.io/docs/latest/architecture/#agent):
 
-  - **CPU**: 250m–500m.
-  - **RAM**: 128M–512M.
+  - **CPU**: 250m — 500m
+  - **RAM**: 128M — 512M
 
 - [Collector](https://www.jaegertracing.io/docs/latest/architecture/#collector):
 
-  - **CPU**: 500m–1000m.
-  - **RAM**: 512M–1024M.
+  - **CPU**: 500m — 1000m
+  - **RAM**: 512M — 1024M
 
 - [Query](https://www.jaegertracing.io/docs/latest/architecture/#query):
 
-  - **CPU**: 250m–500m.
-  - **RAM**: 128M–512M.
+  - **CPU**: 250m — 500m
+  - **RAM**: 128M — 512M
 
 {note:info}
 
 To ensure stable operation of Jaeger, it is recommended to install it on a dedicated group of worker nodes that meets the above requirements.
 
 {/note}
+
+{/tab}
+
+{/tabs}
+
+### {heading(Kgateway)[id=kgateway]}
+
+{note:info}
+This add-on is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
+{tabs}
+
+{tab(Description)}
+
+[Kgateway](https://kgateway.dev/) is a tool for routing and traffic management in Kubernetes via [Gateway API](https://gateway-api.sigs.k8s.io/). The add-on:
+
+- Provides publication of Kubernetes services and proxying requests to external services.
+- Automatically scales to the load.
+- Reduces the startup time of applications and services.
+- Allows to centrally set entry points, TLS, routes, and access policies.
+
+For more details on working with the add-on, refer to the [Using Kgateway](../../../how-to-guides/kgateway) section.
+
+{/tab}
+
+{tab(System requirements)}
+
+- **CPU**: 5m — 50m
+- **RAM**: 40Mi — 512Mi
+
+If a Gateway resource that accepts external traffic is also created:
+
+- **Standard load balancer**: one piece
+- **Floating IP**: one piece
 
 {/tab}
 
@@ -382,8 +417,8 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
 
 {tab(System requirements)}
 
-- **CPU**: 10m—500m.
-- **RAM**: 64Mi—1Gi.
+- **CPU**: 10m — 500m
+- **RAM**: 64Mi — 1Gi
 
 {/tab}
 
@@ -403,10 +438,10 @@ See [Cluster Monitoring](../../../monitoring#using_grafana) for details.
 
 {tab(System requirements)}
 
-- **CPU**: 850m–2500m.
-- **RAM**: 968Mi–3804Mi.
-- **HDD**: 2GB.
-- **SSD**: 10GB.
+- **CPU**: 850m — 2500m
+- **RAM**: 968Mi — 3804Mi
+- **HDD**: 2GB
+- **SSD**: 10GB
 
 {/tab}
 

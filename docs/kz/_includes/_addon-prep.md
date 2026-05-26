@@ -1,0 +1,3 @@
+1. Аддонды орнату үшін жеткілікті ресурстарыңыз бар екеніне көз жеткізу мақсатында оның [жүйелік талаптарымен](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#kolzhetimdi_addondar) танысыңыз.
+
+1. (Қосымша) worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](/kz/kubernetes/k8s/instructions/scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](/kz/kubernetes/k8s/instructions/scale#koldenen_masshtabtau).

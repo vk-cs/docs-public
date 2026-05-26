@@ -1,0 +1,9 @@
+{
+  "title": "Using Kgateway",
+  "shortDescription": "How to use Kgateway to redirect incoming HTTP traffic to a test application",
+  "metaDescription": "How to set up the Kgateway addon in Cloud Containers: creating a Gateway and HttpRoute, routing traffic, and verifying the httpbin service",
+  "sectionTitle": "Using Kgateway",
+  "icon": "",
+  "weight": 13,
+  "uuid": ""
+}
