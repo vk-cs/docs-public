@@ -339,53 +339,69 @@
 |Количество дисков у одного инстанса
 |25 шт. при подключенном конфигурационном диске.
 
- 26 шт., если конфигурационный диск отключен
+26 шт., если конфигурационный диск отключен
 |Лимит связан с ограничениями шины PCI.
 
 Если при [создании виртуальной машины](/ru/computing/iaas/instructions/vm/vm-create) в личном кабинете включена опция **Использовать конфигурационный диск** или в OpenStack CLI задействован параметр `--use-config-drive`, то максимальное количество дисков — 25 штук. Используйте конфигурационный диск в сетях без [DHCP-сервера](/ru/networks/vnet/concepts/ips-and-inet#setevaya_adresaciya).
 
 Если опция **Использовать конфигурационный диск** отключена или параметр `--use-config-drive` не задействован, то максимальное количество дисков — 26 штук
-| ![](/ru/assets/check.svg "inline")
+|![](/ru/assets/check.svg "inline")
 
 |Размер одного диска HDD
-|5 ТБ через личный кабинет.
+|5 ТБ через личный кабинет
+(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
 
- 100 ТБ при помощи OpenStack CLI
-|В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
+100 ТБ при помощи OpenStack CLI
+|В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения.
+
+[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts)
 |![](/ru/assets/check.svg "inline")
 
 |Размер одного диска SSD
-|5 ТБ через личный кабинет.
+|5 ТБ через личный кабинет
+(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
 
- 100 ТБ при помощи OpenStack CLI
-|В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
+100 ТБ при помощи OpenStack CLI
+|В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения.
+
+[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts)
 |![](/ru/assets/check.svg "inline")
 
 |Размер одного диска High-IOPS SSD
-|2 ТБ через личный кабинет.
+|2 ТБ через личный кабинет
+(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
 
- 10 ТБ при помощи OpenStack CLI
+10 ТБ при помощи OpenStack CLI
 |Диск, созданный с превышением лимита (10 ТБ), ничем не отличается по производительности, но восстановление или миграция такого диска займут значительное время и будут сопряжены с рисками. Лимит можно превысить, обратившись в [техническую поддержку](/ru/contacts).
+
+[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts).
 
 В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
 |![](/ru/assets/no.svg "inline")
 
 |Размер одного диска High-IOPS HA SSD
-|2 ТБ через личный кабинет.
+|2 ТБ через личный кабинет
+(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
 
- 10 ТБ при помощи OpenStack CLI
+10 ТБ при помощи OpenStack CLI
 |Диск, созданный с превышением лимита (10 ТБ), ничем не отличается по производительности, но восстановление или миграция такого диска займут значительное время и будут сопряжены с рисками. Лимит можно превысить, обратившись в [техническую поддержку](/ru/contacts).
+
+[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts).
 
 В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
 |![](/ru/assets/no.svg "inline")
 
 |Размер одного диска Low Latency NVMe
-|2 ТБ через личный кабинет.
+|2 ТБ через личный кабинет
+(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
 
- 10 ТБ при помощи OpenStack CLI
+10 ТБ при помощи OpenStack CLI
 |Лимит (10 ТБ) можно превысить, обратившись в [техническую поддержку](/ru/contacts).
 
+[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts).
+
 В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
+
 |![](/ru/assets/no.svg "inline")
 
 |Размер одного образа

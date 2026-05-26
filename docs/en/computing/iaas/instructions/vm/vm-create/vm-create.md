@@ -1,6 +1,7 @@
 In Cloud Servers, you can create virtual machines through your management console, OpenStack CLI or Terraform. To create a VM using Terraform, follow the [instructions in the Terraform section](/en/tools-for-using-services/terraform/how-to-guides/iaas/create).
 
 The VK Cloud team has prepared images of several operating systems. A list of prepared images is available in the management console [when creating a new VM](https://msk.cloud.vk.com/app/en/services/infra/servers/add). You can also [import](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) your own OS image.
+
 {note:info}
 
 The VM settings available for configuration may vary depending on the operating system.
@@ -14,7 +15,7 @@ To create VM:
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-1. Verify that the account balance is positive and there are enough [quotas](/ru/tools-for-using-services/account/concepts/quotasandlimits) to create the virtual machine configuration you need.
+1. Verify that the account balance is positive and there are enough [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) to create the virtual machine configuration you need.
 1. Go to **Cloud Servers → Virtual machines**.
 1. Click the **Create Instance** or **Add** button.
 1. Set the VM parameters in the **Configuration** box:   

@@ -341,51 +341,66 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 |Бір инстанстағы дисктер саны
 |25 дана, егер конфигурациялық диск қосылған болса.
 
- 26 дана, егер конфигурациялық диск өшірілген болса
+26 дана, егер конфигурациялық диск өшірілген болса
 |Лимит PCI шинасының шектеулерімен байланысты.
 
 Егер [виртуалды машинаны жасау](/kz/computing/iaas/instructions/vm/vm-create) кезінде жеке кабинетте **Конфигурациялық дискіні пайдалану** опциясы қосылған болса немесе OpenStack CLI-де `--use-config-drive` параметрі пайдаланылса, онда дисктердің ең көп саны — 25 дана. Конфигурациялық дискіні [DHCP-сервері](/kz/networks/vnet/concepts/ips-and-inet#zhelilik_adresteu) жоқ желілерде пайдаланыңыз.
 
 Егер **Конфигурациялық дискіні пайдалану** опциясы өшірілген болса немесе `--use-config-drive` параметрі қолданылмаса, онда дисктердің ең көп саны — 26 дана
-| ![](/kz/assets/check.svg "inline")
+|![](/kz/assets/check.svg "inline")
 
 |Бір HDD дискінің өлшемі
-|5 ТБ жеке кабинет арқылы.
+|5 ТБ жеке кабинет арқылы
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
 
- 100 ТБ OpenStack CLI көмегімен
-|Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
+100 ТБ OpenStack CLI көмегімен
+|Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін.
+
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады
 |![](/kz/assets/check.svg "inline")
 
 |Бір SSD дискінің өлшемі
-|5 ТБ жеке кабинет арқылы.
+|5 ТБ жеке кабинет арқылы
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
 
- 100 ТБ OpenStack CLI көмегімен
-|Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
+100 ТБ OpenStack CLI көмегімен
+|Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін.
+
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады
 |![](/kz/assets/check.svg "inline")
 
 |Бір High-IOPS SSD дискінің өлшемі
-|2 ТБ жеке кабинет арқылы.
+|2 ТБ жеке кабинет арқылы
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
 
- 10 ТБ OpenStack CLI көмегімен
+10 ТБ OpenStack CLI көмегімен
 |Лимиттен (10 ТБ) асатын етіп жасалған диск өнімділігі жағынан еш айырмашылығы жоқ, бірақ мұндай дискіні қалпына келтіру немесе көшіру едәуір уақыт алады және тәуекелдермен байланысты болады. Лимитті [техникалық қолдауға](/kz/contacts) хабарласу арқылы асыруға болады.
+
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
 
 Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
 |![](/kz/assets/no.svg "inline")
 
 |Бір High-IOPS HA SSD дискінің өлшемі
-|2 ТБ жеке кабинет арқылы.
+|2 ТБ жеке кабинет арқылы
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
 
- 10 ТБ OpenStack CLI көмегімен
+10 ТБ OpenStack CLI көмегімен
 |Лимиттен (10 ТБ) асатын етіп жасалған диск өнімділігі жағынан еш айырмашылығы жоқ, бірақ мұндай дискіні қалпына келтіру немесе көшіру едәуір уақыт алады және тәуекелдермен байланысты болады. Лимитті [техникалық қолдауға](/kz/contacts) хабарласу арқылы асыруға болады.
+
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
 
 Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
 |![](/kz/assets/no.svg "inline")
 
 |Бір Low Latency NVMe дискінің өлшемі
-|2 ТБ жеке кабинет арқылы.
+|2 ТБ жеке кабинет арқылы
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
 
- 10 ТБ OpenStack CLI көмегімен
+10 ТБ OpenStack CLI көмегімен
 |Лимитті (10 ТБ) [техникалық қолдауға](/kz/contacts) хабарласу арқылы асыруға болады.
+
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
 
 Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
 |![](/kz/assets/no.svg "inline")
