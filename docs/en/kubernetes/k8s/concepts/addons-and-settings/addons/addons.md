@@ -30,12 +30,40 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
 The availability of specific add-ons depends on the [region](/en/tools-for-using-services/account/concepts/regions) in which the cluster is planned to be placed.
 
+### {heading(Argo CD)[id=argo-cd]}
+
+{note:info}
+This add-on is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
+{tabs}
+
+{tab(Description)}
+
+[Argo CD](https://argoproj.github.io/cd/) is a continuous delivery (CD) tool for Kubernetes that uses the GitOps approach. It automatically deploys and updates applications in the cluster based on their configuration in the Git repository. Argo CD helps to:
+
+- Accelerate and simplify GitOps processes: it reduces the time needed to launch, scale, and deploy changes, as well as the complexity of implementing them.
+- Improve the reliability and manageability of clusters: it minimizes manual steps and errors when changing cluster configurations. Argo CD automatically detects the differences and returns the cluster to the state described in its Git repository.
+- Ensure actions in clusters are more transparent and improve cluster security by controlling and auditing all changes through Git.
+
+For Argo CD to work correctly, it needs stable access to Git repositories that contain cluster configurations. The add-on must also have the rights to create applications in clusters that you specify through the Kubernetes [Role-Based Access Control (RBAC)](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) model. Otherwise, it might result in errors when attempting to synchronize the state of the cluster with its repository.
+
+{/tab}
+
+{tab(System requirements)}
+
+- **CPU**: 512m
+- **RAM**: 1024Mi
+- **Standard load balancer**: one piece (when configuring external access to the cluster, for example using the [Ingress Controller](#ingress))
+
+{/tab}
+
+{/tabs}
+
 ### Capsule
 
 {note:info}
-
 This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-
 {/note}
 
 {tabs}
@@ -106,11 +134,7 @@ The requirements of the individual add-on components:
 ### Docker Registry
 
 {note:warn}
-
-When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
-
-Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
-
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
 {/note}
 
 {tabs}
@@ -234,14 +258,10 @@ If the add-on is installed on several worker nodes, then NFD-Worker will be inst
 
 {/tabs}
 
-### Ingress Controller (NGINX)
+### {heading(Ingress Controller (NGINX))[id=ingress]}
 
 {note:warn}
-
-When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
-
-Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
-
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
 {/note}
 
 {tabs}

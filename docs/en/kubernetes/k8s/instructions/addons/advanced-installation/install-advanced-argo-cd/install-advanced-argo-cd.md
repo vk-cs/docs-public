@@ -23,22 +23,22 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
     1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
     1. Select the project that contains the required cluster.
     1. Go to **Containers** → **Kubernetes clusters**.
-    1. Click on the name of the required cluster.
-    1. Go to **Addons** tab.
+    1. Click the name of the required cluster.
+    1. Go to the **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.
-    1. Click the **Install** button on the `kgateway` add-on card.
+    1. Click the **Install** button on the `argocd` add-on card.
     1. Select the required version from the drop-down list.
     1. Click the **Install addon** button.
-    1. Edit if necessary:
-   
-       - selected version 
-       - application name
-       - the name of the namespace where the add-on will be installed
-       - [add-on settings code](#editing_addon_settings_code_during_installation)
+    1. If necessary, edit the following:
 
-         {note:warn}
-         An incorrectly set settings code can lead to errors during installation or the add-on becoming inoperable.
-         {/note}
+        - selected version
+        - application name
+        - the name of the namespace where the add-on will be installed
+        - [add-on settings code](#editing_addon_settings_code_during_installation)
+
+          {note:warn}
+          An incorrectly set settings code can lead to errors during installation or the add-on becoming inoperable.
+          {/note}
 
     1. Click the **Install addon** button.
 
@@ -48,8 +48,7 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 
    {/tabs}
 
-1. (Optional) Learn more about Kgateway in its [official documentation](https://kgateway.dev/docs/).
-1. (Optional) Review the [Using Kgateway](/en/kubernetes/k8s/how-to-guides/kgateway) section for the details on working with Kgateway.
+{include(/en/_includes/_argo-cd-install.md)}
 
 {/tab}
 
@@ -88,18 +87,18 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
     1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
     1. Select the project that contains the required cluster.
     1. Go to **Containers** → **Kubernetes clusters**.
-    1. Click on the name of the required cluster.
-    1. Go to **Addons** tab.
+    1. Click the name of the required cluster.
+    1. Go to the **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.
-    1. Click the **Install** button on the `kgateway` add-on card.
+    1. Click the **Install** button on the `argocd` add-on card.
     1. Select the required version from the drop-down list.
     1. Click the **Install addon** button.
-    1. Edit if necessary:
+    1. If necessary, edit the following:
 
-       - selected version
-       - application name
-       - the name of the namespace where the add-on will be installed
-       - [add-on settings code](#editing_addon_settings_code_during_installation)
+        - selected version
+        - application name
+        - the name of the namespace where the add-on will be installed
+        - [add-on settings code](#editing_addon_settings_code_during_installation)
 
     1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
@@ -144,19 +143,16 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 
    {/tabs}
 
-1. (Optional) Learn more about Kgateway in its [official documentation](https://kgateway.dev/docs/).
-1. (Optional) Review the [Using Kgateway](/en/kubernetes/k8s/how-to-guides/kgateway) section for the details on working with Kgateway.
+{include(/en/_includes/_argo-cd-install.md)}
 
 {/tab}
 
 {tab(Quick installation)}
 
 {note:info}
-
 When installing the add-on this way, its code cannot be edited.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
-
 {/note}
 
 1. Install the add-on:
@@ -168,17 +164,17 @@ If this does not suit you, perform a **standard installation** or **installation
     1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
     1. Select the project that contains the required cluster.
     1. Go to **Containers** → **Kubernetes clusters**.
-    1. Click on the name of the required cluster.
-    1. Go to **Addons** tab.
+    1. Click the name of the required cluster.
+    1. Go to the **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.
-    1. Click the **Install** button on the `kgateway` add-on card.
+    1. Click the **Install** button on the `argocd` add-on card.
     1. Select the required version from the drop-down list.
     1. Click the **Install addon** button.
-    1. Edit if necessary:
+    1. If necessary, edit the following:
 
-       - selected version
-       - application name
-       - the name of the namespace where the add-on will be installed
+        - selected version
+        - application name
+        - the name of the namespace where the add-on will be installed
 
     1. Click the **Install addon** button.
 
@@ -188,8 +184,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
    {/tabs}
 
-1. (Optional) Learn more about Kgateway in its [official documentation](https://kgateway.dev/docs/).
-1. (Optional) Review the [Using Kgateway](/en/kubernetes/k8s/how-to-guides/kgateway) section for the details on working with Kgateway.
+{include(/en/_includes/_argo-cd-install.md)}
 
 {/tab}
 
@@ -199,6 +194,6 @@ If this does not suit you, perform a **standard installation** or **installation
 
 Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
 
-The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/kgateway-dev/kgateway/blob/v2.2.2/install/helm/kgateway/values.yaml).
+The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/values.yaml).
 
 After editing the add-on code continue installing the add-on.
