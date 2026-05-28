@@ -1,6 +1,8 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(Дайындық кезеңдері)[id=preparation]}
+## Дайындық қадамдары
+
+{include(/kz/_includes/_addon-prep.md)}
 
 1. Жобада [Cloud Logging](/kz/monitoring-services/logging) сервисін қосыңыз, егер бұл әлі жасалмаған болса. Ол үшін [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts).
 
@@ -13,8 +15,6 @@
 Аддон үшін тек VK Cloud жеке кабинеті арқылы [стандартты орнату нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
 
 Аддон кластердің барлық тораптарына, соның ішінде master-тораптарғал [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) контроллері түрінде орнатылады.
-
-worker-тораптар топтарына орналастырылатын аддондардың [жиынтық ең жоғары жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-тораптар топтарын [қолмен масштабтауды орындаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
 
 1. Аддонды орнатыңыз:
 

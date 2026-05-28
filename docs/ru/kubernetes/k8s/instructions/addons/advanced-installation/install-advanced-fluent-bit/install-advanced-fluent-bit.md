@@ -1,16 +1,16 @@
+{note:info}
+Этот аддон доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+{/note}
+
+## Подготовительные шаги
+
+{include(/ru/_includes/_addon-prep.md)}
+
 ## Установка аддона
 
 Для аддона доступен только [стандартный вариант установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
 
 Аддон будет установлен в виде контроллера [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
-
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
-
-{note:info}
-
-Этот аддон доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
-
-{/note}
 
    {tabs}
    

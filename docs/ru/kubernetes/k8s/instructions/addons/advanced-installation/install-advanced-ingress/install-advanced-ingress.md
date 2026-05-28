@@ -1,16 +1,14 @@
+## Подготовительные шаги
+
+{include(/ru/_includes/_addon-prep.md)}
+
 ## Установка аддона
 
 {note:warn}
-
-При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
-
-Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
-
+При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
 {/note}
 
 Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
-
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
 {tabs}
 

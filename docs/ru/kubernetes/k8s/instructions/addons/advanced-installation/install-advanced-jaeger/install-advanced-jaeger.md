@@ -1,14 +1,16 @@
 В составе [аддона](../../../../concepts/addons-and-settings/addons#jaeger_6f817a95) есть [коллектор Jaeger](https://www.jaegertracing.io/docs/latest/architecture/#collector), для работы которого необходимо хранилище. В качестве бэкенда для хранилища ([storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends)) в аддоне Jaeger от VK Cloud используется Elasticsearch, который разворачивается в виде нескольких реплик.
 
+## Подготовительные шаги
+
+1. Ознакомьтесь с [системными требованиями](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#dostupnye_addony) аддона, чтобы убедиться, что у вас достаточно ресурсов для его установки.
+
+   Системные требования аддона Jaeger зависят от выбранного количества реплик Elasticsearch и окружения кластера. Минимальное количество реплик — две, по умолчанию — три. Их количество можно изменить во время стандартной установки или установки на выделенные worker-узлы.
+
+1. (Опционально) [Выполните ручное масштабирование](/ru/kubernetes/k8s/instructions/scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](/ru/kubernetes/k8s/instructions/scale#autoscale_worker_nodes).
+
 ## Установка аддона
 
 Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
-
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов.
-
-[Системные требования](../../../../concepts/addons-and-settings/addons#jaeger_6f817a95) аддона Jaeger зависят от выбранного количества реплик Elasticsearch и окружения кластера. Минимальное количество реплик — две, по умолчанию — три. Их количество можно изменить во время стандартной установки или установки на выделенные worker-узлы.
-
-При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
 {tabs}
 

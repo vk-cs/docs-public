@@ -1,10 +1,12 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
+## Дайындық қадамдары
+
+{include(/kz/_includes/_addon-prep.md)}
+
 ## Аддонды орнату
 
 [GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator) аддондар GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек [бөлінген түйіндерге орнату](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.com/cloud-gpu/).
-
-Worker-түйіндер топтарында орналастырылатын аддондардың жиынтық [максималды жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-түйіндер топтарын [қолмен масштабтаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
 
 1. Егер бұл әлі жасалмаса, аддонды орнату үшін бөлінген worker-түйіндер тобын дайындаңыз:
 

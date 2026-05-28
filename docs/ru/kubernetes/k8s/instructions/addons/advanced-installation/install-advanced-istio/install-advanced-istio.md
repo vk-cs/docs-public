@@ -1,18 +1,15 @@
+{note:info}
+Этот аддон доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+{/note}
+
 ## Подготовительные шаги
 
-[Установите аддон](../install-advanced-monitoring) `kube-prometheus-stack`.
+{include(/ru/_includes/_addon-prep.md)}
+1. [Установите аддон](../install-advanced-monitoring) `kube-prometheus-stack`.
 
 ## Установка аддона
 
 Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
-
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
-
-{note:info}
-
-Этот аддон доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
-
-{/note}
 
 {tabs}
 

@@ -1,8 +1,10 @@
+## {heading(Preparatory steps)[id=prep]}
+
+{include(/en/_includes/_addon-prep.md)}
+
 ## {heading(Installing add-on)[id=installing_addon]}
 
 The [GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator) addon works on worker nodes with GPU, so only [installation on dedicated nodes](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) is available for it. To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service.
-
-Consider the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on worker node groups. If necessary, [manually scale](../../../scale#scale_worker_nodes) worker node groups or [configure autoscale](../../../scale#autoscale_worker_nodes) before installation.
 
 1. Prepare a dedicated group of worker nodes for installing the addon, if it is not already done:
 

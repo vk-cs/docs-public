@@ -1,8 +1,10 @@
 ## {heading(Подготовительные шаги)[id=preparation]}
 
+{include(/ru/_includes/_addon-prep.md)}
+
 1. Подключите сервис [Cloud Logging](/ru/monitoring-services/logging) в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
-1. [Cоздайте](/ru/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе [Права в сервисе Cloud Logging](/ru/access/iam/concepts/rolesandpermissions#roles_logging). Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
+1. [Создайте](/ru/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе [Права в сервисе Cloud Logging](/ru/access/iam/concepts/rolesandpermissions#roles_logging). Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
 
    Используйте логин и пароль для доступа к СУЗ, полученные после ее создания, при установке аддона.  
 
@@ -11,8 +13,6 @@
 Для аддона доступен только [стандартный вариант установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov) через личный кабинет VK Cloud.
 
 Аддон будет установлен в виде контроллера [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
-
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
 1. Установите аддон:
 

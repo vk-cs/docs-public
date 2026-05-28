@@ -1,16 +1,16 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
+{note:info}
+Бұл аддон тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+{/note}
+
+## Дайындық қадамдары
+
+{include(/kz/_includes/_addon-prep.md)}
+
 ## Аддонды орнату
 
 Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
-
-Worker-түйіндер топтарында орналастырылатын аддондардың жиынтық [ең жоғары жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
-
-{note:info}
-
-Бұл аддон тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
-
-{/note}
 
 {tabs}
 

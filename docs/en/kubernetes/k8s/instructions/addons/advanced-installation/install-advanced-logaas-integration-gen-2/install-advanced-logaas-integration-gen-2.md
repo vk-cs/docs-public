@@ -1,5 +1,7 @@
 ## {heading(Preparatory steps)[id=preparation]}
 
+{include(/en/_includes/_addon-prep.md)}
+
 1. Enable the [Cloud Logging](/en/monitoring-services/logging) service for the project, if not done so already. To do this, [contact technical support](mailto:support@mcs.mail.ru).
 
 1. [Create](/en/tools-for-using-services/account/instructions/project-settings/service-account-manage#create) a service account with the rights to write logs to the Cloud Logging service. You can find such roles in the **Creating service users and names** column in the [Permissions in Cloud Logging](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_logging) section. The recommended role for this service account is `Kubernetes auditor`.
@@ -11,8 +13,6 @@
 For this add-on, only the [standard installation option](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) via the VK Cloud management console is available.
 
 The add-on will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
-
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
 1. Install the add-on:
 
