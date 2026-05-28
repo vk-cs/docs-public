@@ -2,15 +2,17 @@
 
 [Аддон құрамында](../../../../concepts/addons-and-settings/addons#jaeger_2f2714fa) жұмысы үшін сақтау қоймасы қажет болатын [Jaeger коллекторы](https://www.jaegertracing.io/docs/latest/architecture/#collector) бар. Сақтау қоймасы үшін бэкенд ([storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends)) ретінде VK Cloud ұсынған Jaeger аддонында бірнеше реплика түрінде орналастырылатын Elasticsearch пайдаланылады.
 
+## Дайындық қадамдары
+
+1. Аддонды орнату үшін жеткілікті ресурстарыңыз бар екеніне көз жеткізу мақсатында оның [жүйелік талаптарымен](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#kolzhetimdi_addondar) танысыңыз.
+
+   Jaeger аддонының жүйелік талаптары таңдалған Elasticsearch репликаларының санына және кластер ортасына байланысты. Репликалардың ең аз саны — екі, әдепкі бойынша — үш. Олардың санын стандартты орнату кезінде немесе бөлінген worker-түйіндерге орнату кезінде өзгертуге болады.
+
+1. (Қосымша) worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](/kz/kubernetes/k8s/instructions/scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](/kz/kubernetes/k8s/instructions/scale#koldenen_masshtabtau).
+
 ## Аддонды орнату
 
 Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
-
-worker-түйіндер топтарына орналастырылатын аддондардың жиынтық [ең жоғары жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз.
-
-Jaeger аддонының [жүйелік талаптары](../../../../concepts/addons-and-settings/addons#jaeger_2f2714fa) таңдалған Elasticsearch репликаларының санына және кластер ортасына байланысты. Репликалардың ең аз саны — екі, әдепкі бойынша — үш. Олардың санын стандартты орнату кезінде немесе бөлінген worker-түйіндерге орнату кезінде өзгертуге болады.
-
-Қажет болса, орнату алдында worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
 
 {tabs}
 

@@ -1,10 +1,11 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Бірінші буындағы кластерлерде Cloud Logging (logaas-integration) үшін Fluent Bit
+## Дайындық кезеңдері
 
-Жобада [Cloud Logging](/kz/monitoring-services/logging) сервисін қосыңыз, егер бұл әлі жасалмаған болса. Ол үшін [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts).
+{include(/kz/_includes/_addon-prep.md)}
+1. Жобада [Cloud Logging](/kz/monitoring-services/logging) сервисін қосыңыз, егер бұл әлі жасалмаған болса. Ол үшін [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts).
 
-## Дайындық қадамдары
+## Аддонды орнату
 
 Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді:
 
@@ -12,8 +13,6 @@
 - жылдам орнату.
 
 Таңдалған орнату нұсқасына қарамастан, аддон кластердің барлық тораптарына, соның ішінде master-тораптарғал [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) түрінде орнатылады.
-
-worker-тораптар топтарына орналастырылатын аддондардың [жиынтық ең жоғары жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-тораптар топтарын [қолмен масштабтауды орындаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
 
 {tabs}
 

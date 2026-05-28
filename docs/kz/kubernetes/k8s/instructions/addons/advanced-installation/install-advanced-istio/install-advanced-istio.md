@@ -1,20 +1,17 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Аддонды орнату
+{note:info}
+Бұл аддон тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+{/note}
 
-[Аддонды орнатыңыз](../install-advanced-monitoring) `kube-prometheus-stack`.
+## Дайындық қадамдары
+
+{include(/kz/_includes/_addon-prep.md)}
+1. [Аддонды орнатыңыз](../install-advanced-monitoring) `kube-prometheus-stack`.
 
 ## Аддонды орнату
 
 Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
-
-worker-түйіндер топтарына орналастырылатын аддондардың жиынтық [ең жоғары жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
-
-{note:info}
-
-Бұл аддон тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
-
-{/note}
 
 {tabs}
 

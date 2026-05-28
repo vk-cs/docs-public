@@ -1,6 +1,7 @@
 ## Подготовительные шаги
 
-Подключите в проект сервис [Cloud Logging](/ru/monitoring-services/logging), если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+{include(/ru/_includes/_addon-prep.md)}
+1. Подключите в проект сервис [Cloud Logging](/ru/monitoring-services/logging), если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
 ## Установка аддона
 
@@ -10,8 +11,6 @@
 - быстрая установка.
 
 Вне зависимости от выбранного варианта установки аддон будет установлен в виде [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
-
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#scale_worker_nodes) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#autoscale_worker_nodes) перед установкой.
 
 {tabs}
 

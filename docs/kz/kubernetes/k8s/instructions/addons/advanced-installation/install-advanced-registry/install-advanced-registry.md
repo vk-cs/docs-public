@@ -2,6 +2,8 @@
 
 ## Дайындық кезеңдері
 
+{include(/kz/_includes/_addon-prep.md)}
+
 1. Docker-образдарды сақтау үшін пайдаланылатын VK Object Storage бакетін [жасаңыз](/kz/storage/s3/instructions/buckets/create-bucket).
 
    Жасау кезінде мыналарды таңдаңыз:
@@ -48,19 +50,13 @@
 ## Аддонды орнату
 
 {note:warn}
-
-Аддонды орнату кезінде ол үшін [стандартты жүктеме теңгергіші](/kz/networks/balancing/concepts/load-balancer#zhukteme_tengergishterinin_turleri) жасалады.
-
-Теңгергішті пайдалану [тарифтеледі](/kz/networks/vnet/tariffication).
-
+Аддонды орнату кезінде ол үшін [стандартты жүктеме теңгергіші](/kz/networks/balancing/concepts/load-balancer#zhukteme_tengergishterinin_turleri) жасалады. Теңгергішті пайдалану [тарифтеледі](/kz/networks/vnet/tariffication).
 {/note}
 
 Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді:
 
 - стандартты орнату;
 - бөлінген worker-түйіндерге орнату.
-
-Worker-түйіндер топтарында орналастырылатын аддондардың жиынтық [ең жоғары жүйелік талаптарын](../../../../concepts/addons-and-settings/addons) ескеріңіз. Қажет болса, орнату алдында worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](../../../scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](../../../scale#autoscale_worker_nodes).
 
 {tabs}
 

@@ -1,5 +1,7 @@
 ## Preparatory steps
 
+{include(/en/_includes/_addon-prep.md)}
+
 1. [Create](/en/storage/s3/instructions/buckets/create-bucket) in the object storage bucket, which will be used to store Docker images.
 
    When creating, select:
@@ -46,19 +48,13 @@
 ## {heading(Installing add-on)[id=installing_addon]}
 
 {note:warn}
-
-When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
-
-Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
-
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get [charged](/en/networks/vnet/tariffication) for using them.
 {/note}
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on:
 
 - standard installation;
 - installation on dedicated worker nodes.
-
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
 {tabs}
 

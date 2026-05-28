@@ -1,14 +1,16 @@
 As part of the [add-on](../../../../concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
 
+## Preparatory steps
+
+1. Review the [system requirements](/en/kubernetes/k8s/concepts/addons-and-settings/addons#available_addons) of the add-on to make sure you have enough resources to install it.
+
+   Jaeger add-on system requirements depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
+
+1. (Optional) Perform [manual scaling](/en/kubernetes/k8s/instructions/scale#scale_worker_nodes) of worker node groups or set up [automatic scaling](/en/kubernetes/k8s/instructions/scale#autoscale_worker_nodes).
+
 ## {heading(Installing add-on)[id=installing_addon]}
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
-
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes.
-
-Jaeger add-on [system requirements](../../../../concepts/addons-and-settings/addons#jaeger) depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
-
-If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for groups of worker nodes or [configure automatic scaling](../../../scale#autoscale_worker_nodes) before install.
 
 {tabs}
 
