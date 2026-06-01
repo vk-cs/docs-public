@@ -8,7 +8,7 @@
 
 {/note}
 
-Сервистерді пайдаланғаны үшін қаражаттың есептен шығарылуын тоқтату үшін есептік жазбаны жою міндетті емес. Ол үшін ресурстарды тұтынатын жобаларды [консервациялау](../../../account/instructions/project-settings/manage#zhobany_konservaciyalau) немесе [жою](../../../account/instructions/project-settings/manage#zhobany_zhoyu) жеткілікті.
+Сервистерді пайдаланғаны үшін қаражаттың есептен шығарылуын тоқтату үшін есептік жазбаны жою міндетті емес. Ол үшін ресурстарды тұтынатын жобаларды [консервациялау](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhobany_konservaciyalau) немесе [жою](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhobany_zhoyu) жеткілікті.
 
 Есептік жазбаны жою үшін:
 

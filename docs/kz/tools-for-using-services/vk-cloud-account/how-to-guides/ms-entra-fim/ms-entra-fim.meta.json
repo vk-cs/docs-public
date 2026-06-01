@@ -1,8 +1,0 @@
-{
-  "title": "MS Entra арқылы куәліктер федерациясын баптау",
-  "shortDescription": "VK Cloud жүйесінде MS Entra арқылы аутентификацияны қалай баптау керек",
-  "metaDescription": "Identity provider ретінде MS Entra көмегімен VK Cloud-та федеративті қолжетімділікті қалай баптау керек",
-  "sectionTitle": "MS Entra арқылы куәліктер федерациясын баптау",
-  "icon": "",
-  "weight": 2
-}

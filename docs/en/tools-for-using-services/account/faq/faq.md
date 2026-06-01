@@ -71,6 +71,6 @@ Yes, they can. To do this, contact the designated GeekBrains curator.
 
 {cut(How do I delete an account?)}
 
-Contact technical support, read more in the article [Deleting an account](/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete).
+Contact technical support, read more in the article [Deleting an account](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/account-delete).
 
 {/cut}

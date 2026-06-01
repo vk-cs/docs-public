@@ -90,6 +90,6 @@
 
 {cut(Как удалить учетную запись?)}
 
-Обратитесь в техническую поддержку, подробнее в статье [Удаление учетной записи](/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete).
+Обратитесь в техническую поддержку, подробнее в статье [Удаление учетной записи](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/account-delete).
 
 {/cut}
