@@ -31,7 +31,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 ## {heading(JSON-конфигурация статического сайта)[id=config]}
 
-Конфигурация предоставляется в формате JSON и используется при {linkto(../../instructions/manage-static-site)[text=управлении конфигурацией]} через AWS CLI.
+Конфигурация предоставляется в формате JSON и используется при [управлении конфигурацией](../../instructions/manage-static-site) через AWS CLI.
 
 Общая структура конфигурации:
 

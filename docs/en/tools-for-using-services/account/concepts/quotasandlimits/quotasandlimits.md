@@ -22,9 +22,7 @@ Quotas are closely related to [technical limits](#quotas_and_technical_limits).
 
 ## Quotas and technical limits
 
-Technical limits are the limitations of the platform due to the features of the VK Cloud architecture.
-
-Some of the limits are strict, they cannot be exceeded physically. For example, the limit on [4 GPUs per instance](#virtual_machines_9c2b1861) is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
+Technical limits are restrictions related to the specifics of the VK Cloud architecture. These limits cannot be exceeded.
 
 Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#nets) are introduced to ensure optimal network performance and stable operation.
 
@@ -113,16 +111,35 @@ No more than 1000 virtual machines can be displayed in the management console.
 
 #### Limits without quotas
 
-| Parameter                                       | Limit         | Hard |
-|-------------------------------------|-------|-----------------------|
-| Number of vCPUs per instance           | 32 pcs.  | ![](/en/assets/no.svg "inline")          |
-| Number of High-Freq vCPUs per instance | 24 pcs.      | ![](/en/assets/no.svg "inline") |
-| Number of GPUs per instance            | 4 pcs.       | ![](/en/assets/check.svg "inline") |
-| The amount of RAM per instance         | 1024 GB     | ![](/en/assets/no.svg "inline") |
+[cols="3,1,1", options="header"]
+|===
+|Parameter
+|Limit
+|Hard
+
+|Number of vCPUs per instance 
+|32 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of High-Freq vCPUs per instance
+|24 pcs.
+|![](/en/assets/no.svg "inline")
+
+|Number of GPUs per instance
+|4 pcs.
+
+(8 pcs. for [Tesla H200](/en/computing/gpu/concepts/about))
+|![](/en/assets/check.svg "inline")
+
+|The amount of RAM per instance
+|1024 GB
+|![](/en/assets/no.svg "inline")
+
+|===
 
 Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associated with the limitations of standard hypervisors. If you need more vCPUs or High-Freq vCPUs, contact [technical support](mailto:support@mcs.mail.ru) and order a dedicated hypervisor with the necessary characteristics.
 
-The limit on 4 GPUs per instance is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
+The GPU limit for a single instance is a limitation of KVM technology, which does not allow connecting more than one video card to a single virtual machine.
 
 ### {heading(Cloud Containers)[id=k8s]}
 
