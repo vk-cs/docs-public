@@ -82,7 +82,7 @@ Keystone токені кейбір VK Cloud сервистерімен және 
             }
         }
     }' \
-    -i "https://infra.mail.ru:35357/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
+    -i "https://infra.mail.ru:5000/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
     ```
     {/tab}
 
@@ -92,7 +92,7 @@ Keystone токені кейбір VK Cloud сервистерімен және 
     curl -X POST ^
     -H "Content-Type: application/json" ^
     -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"name\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
-    -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
+    -i "https://infra.mail.ru:5000/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
     ```
     {/tab}
 

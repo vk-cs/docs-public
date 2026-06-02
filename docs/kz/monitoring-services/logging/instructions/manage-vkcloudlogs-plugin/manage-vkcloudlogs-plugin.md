@@ -56,7 +56,7 @@
    [OUTPUT]
       Name              vkcloudlogs
       Match             vkcloudlogs.tail.*
-      auth_url          https://infra.mail.ru:35357/v3/
+      auth_url          https://infra.mail.ru:5000/v3/
       server_host_port  cloudlogs.mcs.mail.ru:443
       user_id           user1
       password          pwd12345

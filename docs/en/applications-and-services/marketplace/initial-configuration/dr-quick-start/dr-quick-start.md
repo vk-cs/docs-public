@@ -218,7 +218,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 1. At the **Select target environment** step, select the **New OpenStack** option and specify the parameters:
 
    - **Cloud name**: `VK Cloud`.
-   - **Keystone API endpoint**: Keystone value from [endpoints list](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:35357/v3/` for VK Cloud.
+   - **Keystone API endpoint**: Keystone value from [endpoints list](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:5000/v3/` for VK Cloud.
    - **User domain**: value **User Domain Name** of [project settings](https://msk.cloud.vk.com/app/project/keys).
    - **Username**: user name with [API access](/en/tools-for-using-services/api/rest-api/enable-api) and a role not lower than the Project administrator.
    - **Password**: the user's password.
