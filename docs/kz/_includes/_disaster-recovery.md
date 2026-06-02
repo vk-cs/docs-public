@@ -201,7 +201,7 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
 1. **Select target environment** қадамында **New OpenStack** опциясын таңдап, параметрлерді көрсетіңіз:
 
    - **Cloud name**: `VK Cloud`.
-   - **Keystone API endpoint**: [эндпоинттер тізімінен](https://kz.cloud.vk.com/app/mcs3723876490/project/endpoints) Keystone мәні, VK Cloud үшін — `https://infra.mail.ru:35357/v3/`.
+   - **Keystone API endpoint**: [эндпоинттер тізімінен](https://kz.cloud.vk.com/app/mcs3723876490/project/endpoints) Keystone мәні, VK Cloud үшін — `https://infra.mail.ru:5000/v3/`.
    - **User domain**: [жоба баптауларындағы](https://kz.cloud.vk.com/app/project/keys) **User Domain Name** мәні.
    - **Username**: [API арқылы қолжетімділігі](/kz/tools-for-using-services/api/rest-api/enable-api) бар және Жоба әкімшісінен төмен емес рөлдегі пайдаланушының аты.
    - **Password**: пайдаланушының құпиясөзі.

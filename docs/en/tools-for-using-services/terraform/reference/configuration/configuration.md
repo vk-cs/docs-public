@@ -63,8 +63,8 @@ The file consists of the following sections:
 
   - `auth_url`:
 
-    - for Moscow region: `https://infra.mail.ru:35357/v3/`;
-    - for Kazakhstan region: `https://kz.infra.mail.ru:35357/v3/`.
+    - for Moscow region: `https://infra.mail.ru:5000/v3/`;
+    - for Kazakhstan region: `https://kz.infra.mail.ru:5000/v3/`.
 
 ## Resources configuration files
 

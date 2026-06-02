@@ -78,7 +78,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 |-------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------|
 | Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id> | Collecting the statistics of users' actions in the project                              |
 | Barbican          | https://public.infra.mail.ru:9311             | A protected storage for secrets (SSH keys, Keystone tokens, TLS certificates)           |
-| Keystone          | https://infra.mail.ru:35357/v3/               | Managing project users, user authentication via [tokens](../case-keystone-token)        |
+| Keystone          | https://infra.mail.ru:5000/v3/                | Managing project users, user authentication via [tokens](../case-keystone-token)        |
 | Quota-manager     | https://mcs.mail.ru/quota-manager             | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>    | Cloud services orchestration (deprecated)                                               |
 

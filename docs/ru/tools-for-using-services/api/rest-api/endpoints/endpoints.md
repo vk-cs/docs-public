@@ -77,7 +77,7 @@
 |-------------------------------------|-------------------------|-----------------|
 | Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id>       | Сбор статистики действий пользователей в проекте |
 | Barbican          | https://public.infra.mail.ru:9311                   | Защищенное хранение секретов (SSH-ключей, токенов Keystone, сертификатов TLS) |
-| Keystone          | https://infra.mail.ru:35357/v3/                     | Управление пользователями проекта, авторизация пользователей на основе [токенов](../case-keystone-token) |
+| Keystone          | https://infra.mail.ru:5000/v3/                      | Управление пользователями проекта, авторизация пользователей на основе [токенов](../case-keystone-token) |
 | Quota-manager     | https://mcs.mail.ru/quota-manager                   | Просмотр [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) проекта |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Оркестрация облачных сервисов (эндпоинт устарел) |
 
