@@ -192,9 +192,13 @@ export const config = {
         basePath: '/docs',
         policy: '/intro/start/legal',
     },
-    // contentSecurityPolicy: {
-    //     connectSrc: ['https://satori.devint.vkc.devmail.ru'],
-    // },
+    contentSecurityPolicy: {
+        connectSrc: [
+            'https://cloud.vk.com',
+            'https://mcstest.mail.ru',
+            'https://satori.devint.vkc.devmail.ru',
+        ],
+    },
     enablers: {
         auth: true,
         likeDislike: true,

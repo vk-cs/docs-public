@@ -7,7 +7,7 @@ include:
 variables:
   # pipeline parameters
   VKCS_PREPARE_ENABLED: 'true'
-  VKCS_D11N_VERSION: '5.5.1'
+  VKCS_D11N_VERSION: '5.5.2'
   VKCS_DOCKERFILE_PATH: devops/Dockerfile
   VKCS_DEV_DEPLOY_MODE: auto
   VKCS_PROD_DEPLOY_MODE: manual
@@ -22,10 +22,23 @@ variables:
   # GITHUB_TOKEN: secret
   # GITLAB_TOKEN: secret
 
-  VKCS_PREPARE_ENABLED: "true"
   VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"
   VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.com"
 
   # NOTE: override variables to reuse ansible playbooks after changes in MCSAD-1045
   HELM_CHART_NAME: new-help
   VKCS_AWX_JOB_TEMPLATE_LABEL: ${HELM_CHART_NAME}-helm
+
+preparer Dev:
+  variables:
+    SATORI_API_KEY: $SATORI_API_KEY_DEVINT
+    SATORI_API_URL: https://satori.devint.vkc.devmail.ru
+    D11N_PORTAL_URL: https://$CI_COMMIT_REF_SLUG.$VKCS_K8S_DEV_INGRESS_BASE_DOMAIN
+
+preparer Stage:
+  variables:
+    SATORI_API_KEY: $SATORI_API_KEY_STAGE
+
+preparer Prod:
+  variables:
+    SATORI_API_KEY: $SATORI_API_KEY_PROD
