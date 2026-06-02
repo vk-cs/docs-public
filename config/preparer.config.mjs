@@ -27,6 +27,10 @@ import {
     SitemapPreparer,
 } from '@vk-tech/d11n-preparer/preparers';
 
+import { config as docsConfig } from './docs.config.mjs';
+
+const satoriBaseUrl = `${(process.env.D11N_PORTAL_URL || '')}${docsConfig.paths.basePath}`;
+
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
 console.debug('TARGET_ENV', TARGET_ENV);
@@ -34,24 +38,19 @@ console.debug('SETTINGS', {
     settings: {
         satoriIndexPreparer: {
             apiKey: (process.env?.SATORI_API_KEY || '').length,
+            baseUrl: satoriBaseUrl,
         },
     }
 });
 
-let checkup = [
+const checkup = [
     LinksWithHashChecker, // Проверка ссылок с хешем на портале
+    LaunchPreparer,
+    FolderStructureChecker,
+    MetaParamUuidPreparer,
+    OriginalTreeCachePreparer,
+    SatoriIndexPreparer, // Индексация для Satori
 ];
-
-if (['production'].includes(TARGET_ENV)) {
-    checkup = [
-        LinksWithHashChecker, // Проверка ссылок с хешем на портале
-        LaunchPreparer,
-        FolderStructureChecker,
-        MetaParamUuidPreparer,
-        OriginalTreeCachePreparer,
-        SatoriIndexPreparer, // Индексация для Satori
-    ];
-}
 
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
@@ -91,7 +90,7 @@ export const config = {
     settings: {
         satoriIndexPreparer: {
             apiBaseUrl: process.env.SATORI_API_URL || '',
-            baseUrl: 'https://cloud.vk.com/docs',
+            baseUrl: satoriBaseUrl,
             apiKey: process.env.SATORI_API_KEY || '',
         },
         sitemapPreparer: {

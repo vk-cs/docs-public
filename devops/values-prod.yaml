@@ -1,3 +1,6 @@
+env:
+  SATORI_API_URL: https://cloud.vk.com/search/api
+
 envSecret:
   MAILER_TOKEN: new-help-secret
   VKTEAMS_ALERT_TOKEN: new-help-secret

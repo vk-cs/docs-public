@@ -1,3 +1,6 @@
+env:
+  SATORI_API_URL: https://mcstest.mail.ru/search/api
+
 envSecret:
   MAILER_TOKEN: new-help-secret
   VKTEAMS_ALERT_TOKEN: new-help-secret
