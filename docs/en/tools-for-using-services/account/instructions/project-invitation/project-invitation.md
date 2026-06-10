@@ -23,7 +23,7 @@ The authorization procedure depends on whether an account with your email is reg
 
 {note:info}
 
-If the **Enable two-factor authentication** page opens, [configure](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication to access VK Cloud Management Console.
+If the **Enable two-factor authentication** page opens, [configure](/en/access/iam/instructions/manage-2fa) two-factor authentication to access VK Cloud Management Console.
 
 {/note}
 
@@ -37,7 +37,7 @@ If the **Enable two-factor authentication** page opens, [configure](/en/tools-fo
 
 1. On the authorization page, enter your email as login and your password.
 
-1. If mandatory two-factor authentication is enabled in the project, you will be requested to authenticate yourself via a code or to [configure](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication in your VK Cloud account.
+1. If mandatory two-factor authentication is enabled in the project, you will be requested to authenticate yourself via a code or to [configure](/en/access/iam/instructions/manage-2fa) two-factor authentication in your VK Cloud account.
 
 1. After logging in, switch to the project to which you were invited:
 

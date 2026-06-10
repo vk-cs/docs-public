@@ -5,7 +5,7 @@ Keystone токені кейбір VK Cloud сервистерімен және 
 ## Дайындық қадамдары
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. Екі факторлы аутентификация [қосылғанына](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
+1. Екі факторлы аутентификация [қосылғанына](/kz/access/iam/instructions/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
 1. Жеке кабинет бетінің жоғарғы жағында токенді пайдалануды жоспарлап отырған жобаны таңдаңыз.
 
 ## Токенді генерациялау

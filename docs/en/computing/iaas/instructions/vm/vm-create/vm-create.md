@@ -124,7 +124,7 @@ To create VM:
 
 1. Get ready to work with the OpenStack CLI:
 
-   1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication.
+   1. [Enable](/en/access/iam/instructions/manage-2fa) two-factor authentication.
    2. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
    3. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 

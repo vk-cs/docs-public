@@ -1,8 +1,8 @@
 {
-    "title": "Configuring Identity Federation",
+    "title": "Configuring Identity Federation via AD",
       "shortDescription": "How to configure authentication in VK Cloud via Active Directory",
       "metaDescription": "Configuring federated access to VK Cloud via Active Directory",
-    "sectionTitle": "Configuring Identity Federation",
+    "sectionTitle": "Configuring Identity Federation via AD",
     "icon": "",
     "weight": 1,
     "additionalUuids": [

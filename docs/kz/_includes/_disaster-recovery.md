@@ -10,7 +10,7 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
 {/includetag}
 
 {includetag(dr_onboarding_2)}
-1. Қалпына келтірілген инфрақұрылым атынан жайылдырылатын аккаунт үшін екі факторлы аутентификацияны (2FA) [баптаңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa).
+1. Қалпына келтірілген инфрақұрылым атынан жайылдырылатын аккаунт үшін екі факторлы аутентификацияны (2FA) [баптаңыз](/kz/access/iam/instructions/manage-2fa).
 1. Қалпына келтіру қолданылатын ВМ-ді [жасаңыз](/kz/computing/iaas/instructions/vm/vm-create#create_vm). Жылдам бастау шеңберінде Ubuntu 18.04 операциялық жүйесі бар `Ubuntu-DR` ВМ-і пайдаланылады.
 1. Hystax Acura Disaster Recovery сервисін [қосыңыз](/kz/applications-and-services/marketplace/instructions/pr-instance-add).
 

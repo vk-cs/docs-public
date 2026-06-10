@@ -20,7 +20,7 @@ Terraform `plans/<PLAN_NAME>/deployment/deploy.tf` манифесін жергі
    1. Архивті шығарып, `Path` орта айнымалысында шығарылған файлға жолды көрсетіңіз.
    1. Terraform сәтті орнатылғанына көз жеткізу үшін `terraform -help` пәрменін орындаңыз.
 
-1. Бұлтты платформаның ЖК-сінде екі факторлы аутентификацияны (2FA) және API арқылы қолжетімділікті қосыңыз (толығырақ — [2FA басқару](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) бөлімінде).
+1. Бұлтты платформаның ЖК-сінде екі факторлы аутентификацияны (2FA) және API арқылы қолжетімділікті қосыңыз (толығырақ — [2FA басқару](/kz/access/iam/instructions/manage-2fa) бөлімінде).
 1. Terraform үшін CLI конфигурациясы бар файлды өңдеңіз: Windows үшін — `terraform.rc`, басқа ОЖ үшін — `.terraformrc` (толығырақ — [Terraform ресми құжаттамасында](https://developer.hashicorp.com/terraform/cli/config/config-file)):
 
    1. Terraform айналармен және жергілікті провайдерлермен бір уақытта жұмыс істеуі үшін келесі ақпаратты қосыңыз:

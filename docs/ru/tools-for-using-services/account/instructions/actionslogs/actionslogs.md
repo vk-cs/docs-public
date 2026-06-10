@@ -49,7 +49,7 @@
 
 {tab(API)}
 
-1. [Включите](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+1. [Включите](/ru/access/iam/instructions/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:

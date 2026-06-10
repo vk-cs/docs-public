@@ -4,7 +4,7 @@ A separate service — an *Identity Provider (IdP)* — is responsible for authe
 
 You can connect your identity provider to VK Cloud. Identity federation can be configured via:
 
-- [Active Directory](/en/access/iam/how-to-guides/add-fim-for-ad),
+- [Active Directory](/en/access/iam/how-to-guides/federations/add-fim-for-ad),
 - Keycloak,
 - Microsoft Entra.
 

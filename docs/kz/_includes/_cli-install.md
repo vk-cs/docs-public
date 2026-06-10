@@ -162,7 +162,7 @@ OpenStack пәрмен жолы интерфейсі (OpenStack CLI) VK Cloud п
 ## {counter(cli)}. Аутентификациядан өтіңіз
 
 1. VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app/) өтіңіз.
-2. Екі факторлы аутентификация [қосылғанын](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) және API арқылы қатынау [белсендірілгенін](/kz/tools-for-using-services/api/rest-api/enable-api) тексеріңіз.
+2. Екі факторлы аутентификация [қосылғанын](/kz/access/iam/instructions/manage-2fa) және API арқылы қатынау [белсендірілгенін](/kz/tools-for-using-services/api/rest-api/enable-api) тексеріңіз.
 3. Жобаны таңдаңыз.
 4. **Жоба баптаулары** бетінде **API арқылы қатынау** [қойындысына өтіңіз](https://kz.cloud.vk.com/app/project/keys/).
 5. **openrc 3-нұсқасын жүктеп алу** түймесін басыңыз. `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` атауы бар файл жүктеледі.

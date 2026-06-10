@@ -40,7 +40,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 For security reasons, you can make two-factor authentication (2FA) mandatory for project members:
 
-1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) 2FA for your account, if it is not already enabled.
+1. [Enable](/en/access/iam/instructions/manage-2fa) 2FA for your account, if it is not already enabled.
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, enable the option **Mandatory two-factor authentication**.

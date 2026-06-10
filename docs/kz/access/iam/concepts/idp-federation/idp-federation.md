@@ -6,8 +6,8 @@
 
 Сіз VK Cloud-қа өзіңіздің Куәліктер провайдеріңізді қоса аласыз. Федерация Куәліктерді келесі арқылы баптауға болады:
 
-- [Active Directory](/kz/access/iam/how-to-guides/add-fim-for-ad),
-- [Keycloak](/kz/access/iam/how-to-guides/keycloak-to-fim),
-- [Microsoft Entra](/kz/access/iam/how-to-guides/ms-entra-fim).
+- [Active Directory](/kz/access/iam/how-to-guides/federations/add-fim-for-ad),
+- [Keycloak](/kz/access/iam/how-to-guides/federations/keycloak-to-fim),
+- [Microsoft Entra](/kz/access/iam/how-to-guides/federations/ms-entra-fim).
 
 Куәліктер провайдері SAML 2.0 стандартын қолдауы керек.

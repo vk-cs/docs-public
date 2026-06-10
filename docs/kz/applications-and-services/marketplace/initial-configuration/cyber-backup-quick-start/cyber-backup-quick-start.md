@@ -24,7 +24,7 @@
 Жобада деректерін Кибер Бэкап Облачный сервисі арқылы қорғауды жоспарлап отырған виртуалды машина (ВМ) бар деп болжанады.
 
 1. VK Cloud [жеке кабинетіне өтіңіз](https://kz.cloud.vk.com/app).
-1. Егер әлі бапталмаған болса, тіркелгі үшін екі факторлы аутентификацияны (2FA) [баптаңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa).
+1. Егер әлі бапталмаған болса, тіркелгі үшін екі факторлы аутентификацияны (2FA) [баптаңыз](/kz/access/iam/instructions/manage-2fa).
 1. Сервисте тіркелетін ВМ-нің мына талаптарға сәйкес келетініне көз жеткізіңіз:
 
    - Оның [жүйелік талаптарына](https://docs.cyberprotect.ru/ru-RU/CyberBackupCloud/21.06/user/#supported-operating-systems-and-environments.html) сәйкес келеді.

@@ -26,7 +26,7 @@
 
 {note:info}
 
-Егер VK Cloud-қа кіргеннен кейін **Екі факторлы аутентификацияны қосу** беті ашылса, жеке кабинетке қол жеткізу үшін осы опцияны [баптаңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa).
+Егер VK Cloud-қа кіргеннен кейін **Екі факторлы аутентификацияны қосу** беті ашылса, жеке кабинетке қол жеткізу үшін осы опцияны [баптаңыз](/kz/access/iam/instructions/manage-2fa).
 
 {/note}
 

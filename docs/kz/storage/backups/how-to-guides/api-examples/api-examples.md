@@ -4,7 +4,7 @@
 
 Келтірілген мысалдарды орындау үшін:
 
-1. Екі факторлы аутентификация [қосылғанына](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
+1. Екі факторлы аутентификация [қосылғанына](/kz/access/iam/instructions/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
 1. `X-Subject-Token` [қатынау токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
 1. Karboii сервисі үшін эндпоинтті [біліңіз](https://kz.cloud.vk.com/app/project/endpoints).
 
