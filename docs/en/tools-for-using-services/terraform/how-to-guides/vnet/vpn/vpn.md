@@ -1,137 +1,261 @@
-{note:warn}
+After completing the steps in this guide, you will:
 
-Make sure you [installed and configured Terraform](../../../quick-start).
+1. [Create](#create-file) a configuration file.
+1. [Add](#add-net) resources and data sources for a virtual network.
+1. [Add](#add-vpn) a resource for a VPN connection.
+1. [Create](#create-connection) the added resources.
 
-{/note}
+For a full description of parameters, see the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-To create a VPN connection, create a file `vpn.tf`, which describes the configuration of the connection to be created. Add the text from the examples below and correct the arguments values for your connection.
+## Prerequisites
 
-## Create a virtual network
+1. Check the [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits). Make sure the selected [region](/en/tools-for-using-services/account/concepts/regions) has enough resources to create networks. Different regions may have different quotas.
 
-To create a VPN connection, you need a virtual network with a router. If you already have a network and a router, skip this section and go to [Creating a VPN connection](#create_a_vpn_connection).
+   If necessary, [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quotas.
 
-Create a network with the following objects:
+1. [Install Terraform and configure the provider](../../../quick-start) if you have not already done so.
+1. Place the provider settings file in the directory from which you will work with the project, and from that directory run the command:
 
-- Resources:
+    ```console
+    terraform init
+    ```
+    Wait for Terraform initialization to complete.
 
-  - `vkcs_networking_network`: a network where a VM will be created. In the example below, the network named `extnet` is created.
-  - `vkcs_networking_subnet`: a subnet from the network. In the example: `subnet`.
-  - `vkcs_networking_router`: a router for an external network and interaction with the outside world. In the example: `router`.
-  - `vkcs_networking_router_interface`: connects the router to the internal network.
+## {heading({counter(vpn)}. Create a configuration file)[id=create-file]}
 
-- Data sources:
+In the directory from which you will work with the project, create the `vpn.tf` file. This file will describe the configuration of the connection being created.
 
-  - `vkcs_networking_network`: an external network for obtaining a floating IP address.
+## {heading({counter(vpn)}. Add a virtual network)[id=add-net]}
 
-```hcl
-data "vkcs_networking_network" "extnet" {
-   name="internet"
-}
+1. Depending on the [SDN](/ru/networks/vnet/concepts/sdn) you use, copy the contents of one of the tabs below into the `vpn.tf` file.
 
-resource "vkcs_networking_network" "network" {
-   name="vpnaas_network"
-}
+    {tabs}
 
-resource "vkcs_networking_subnet" "subnet" {
-  network_id = "${vkcs_networking_network.network.id}"
-  cidr="192.168.199.0/24"
-}
+    {tab(Neutron)}
 
-resource "vkcs_networking_router" "router" {
-   name="router"
-   external_network_id = data.vkcs_networking_network.extnet.id
-}
+    ```hcl
+    data "vkcs_networking_network" "extnet" {
+      name = "ext-net"
+    }
 
-resource "vkcs_networking_router_interface" "router_interface" {
-  router_id = "${vkcs_networking_router.router.id}"
-  subnet_id = "${vkcs_networking_subnet.subnet.id}"
-}
-```
+    resource "vkcs_networking_network" "network" {
+      name = "vpnaas_network"
+      sdn  = "neutron"
+    }
 
-## Create a VPN connection
+    resource "vkcs_networking_subnet" "subnet" {
+      name = "vpnaas_subnet"
+      network_id = vkcs_networking_network.network.id
+      cidr = "192.168.199.0/24"
+    }
 
-- `vkcs_vpnaas_service`: manages the VPN service inside VK Cloud. The resource supports a `router_id` argument, which is the router ID. Changing the value of this argument creates a new service. If you need to use an existing router, specify its ID (`data.vkcs_networking_router.router.id`) using the data source:
+    resource "vkcs_networking_router" "router" {
+      name = "router"
+      sdn  = "neutron"
+      external_network_id = data.vkcs_networking_network.extnet.id
+    }
 
-```hcl
-data "vkcs_networking_router" "router" {
-   name="router_1"
-}
-```
+    resource "vkcs_networking_router_interface" "router_interface" {
+      router_id = vkcs_networking_router.router.id
+      subnet_id = vkcs_networking_subnet.subnet.id
+    }
+    ```
 
-- `vkcs_vpnaas_ipsec_policy`: controls the IPSec policy of the resource inside VK Cloud. The resource supports a `name` argument, which is the name of the policy to be created. Changing the value of this argument changes the name of the existing policy.
+    To create the network, you will need the following objects:
 
-- `vkcs_vpnaas_ike_policy`: controls the IKE policy of the resource inside VK Cloud. The resource supports a `name` argument, which is the name of the policy to be created. Changing the value of this argument changes the name of the existing policy.
+    - Resources (resource):
 
-- `vkcs_vpnaas_endpoint_group`: manages the "endpoint group" resource inside VK Cloud. The following arguments are supported:
+      - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) — the network in which the ВМ will be created.
+      - [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_subnet.md) — a subnet in this network.
+      - [vkcs_networking_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router.md) — a router that connects the private network to external networks.
+      - [vkcs_networking_router_interface](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router_interface.md) — an interface that connects the router to the internal network.
 
-  - `type`: the type of endpoints in the group. The following types are acceptable: `subnet`, `cidr`, `network`, `router`, or `vlan`. Changing the value of this argument creates a new group.
-  - `endpoints`: the list of endpoints of the same type included in the endpoint group. The type of the list items is determined by the `type` argument. Changing the value of the `endpoints` argument creates a new group.
+    - Data source (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — an external network for assigning a public IP address to the router, as well as allocating a Floating IP address to entities in the private network.
 
-- `vkcs_vpnaas_site_connection`: manages the site IPSec connection resource inside VK Cloud. The following arguments are supported:
+    {/tab}
 
-  - `name`: the connection name. Changing the value of this argument changes the name of the existing connection.
-  - `ikepolicy_id`: the ID of the IKE policy. Changing the value of this argument creates a new connection.
-  - `ipsecpolicy_id`: the ID of the IPsec policy. Changing the value of this argument creates a new connection.
-  - `vpnservice_id`: the VPN service ID. Changing the value of this argument creates a new connection.
-  - `psk`: the public key. Any value of type `string` is acceptable.
-  - `peer_address`: the public IPv4 or IPv6 address of the peer gateway, or FQDN.
-  - `peer_id`: the peer router ID for authentication. The acceptable type values are `IPv4 address`, `IPv6 address`, `e-mail`, `key ID`, `FQDN`. Typically, the value of this argument is the same as the value of the `peer_address` argument. Changing the value of the `peer_id` argument changes the policy of the existing connection.
-  - `local_ep_group_id`: the ID of the endpoint group, which includes the private subnets of the local connection. Requires the `peer_ep_group_id` argument to be specified unless backward compatibility mode is enabled, where the `peer_cidrs` values are already provided with the `subnet_id` value of the VPN service. Changing the value of this paraargumentmeter changes the existing connection.
-  - `peer_ep_group_id`: the ID of the endpoint group, which includes the private CIDR addresses of the peer connection in the format `<net_adress>/<prefix>`. Requires `local_ep_group_id` to be specified unless backward compatibility mode is enabled, where the `peer_cidrs` values are already provided with the `subnet_id` value of the VPN service.
-  - `dpd`: the settings dictionary for the Dead Peer Detection (DPD) protocol. The following arguments are supported:
+    {tab(Sprut)}
 
-    - `action`: the DPD action. Possible values: `clear`, `hold`, `restart`, `disabled`, `restart-by-peer`. Default value: `hold`.
-    - `timeout`: the DPD time-out in seconds. Must be a positive integer, which is greater than the `interval` argument value. Default value: `120`.
-    - `interval`: the DPD interval in seconds. Must be a positive integer. Default value: `30`.
+    ```hcl
+    data "vkcs_networking_network" "extnet" {
+      name = "internet"
+    }
 
-  - `depends_on`: the VPN connection will start after creating the specified resources.
+    resource "vkcs_networking_network" "network" {
+      name = "vpnaas_network"
+      sdn  = "sprut"
+    }
 
-```hcl
-resource "vkcs_vpnaas_service" "service" {
-   router_id = "${vkcs_networking_router.router.id}"
-}
+    resource "vkcs_networking_subnet" "subnet" {
+      name = "vpnaas_subnet"
+      network_id = vkcs_networking_network.network.id
+      cidr = "192.168.199.0/24"
+    }
 
-resource "vkcs_vpnaas_ipsec_policy" "policy_1" {
-   name = "ipsec-policy"
-}
+    resource "vkcs_dc_router" "router" {
+      name = "router"
+      sdn  = "sprut"
+    }
 
-resource "vkcs_vpnaas_ike_policy" "policy_2" {
-   name = "ike-policy"
-}
+    resource "vkcs_dc_interface" "interface_1" {
+      name         = "LAN"
+      dc_router_id = vkcs_dc_router.router.id
+      network_id   = vkcs_networking_network.network.id
+      subnet_id    = vkcs_networking_subnet.subnet.id
+      ip_address   = vkcs_networking_subnet.subnet.gateway_ip
+    }
 
-resource "vkcs_vpnaas_endpoint_group" "group_1" {
-	type = "cidr"
-	endpoints = ["10.0.0.24/24", "10.0.0.25/24"]
-}
-resource "vkcs_vpnaas_endpoint_group" "group_2" {
-	type = "subnet"
-	endpoints = [ "${vkcs_networking_subnet.subnet.id}" ]
-}
+    resource "vkcs_dc_interface" "interface_2" {
+      name         = "WAN"
+      dc_router_id = vkcs_dc_router.router.id
+      network_id   = data.vkcs_networking_network.extnet.id
+    }
+    ```
 
-resource "vkcs_vpnaas_site_connection" "connection" {
-	name = "connection"
-	ikepolicy_id = "${vkcs_vpnaas_ike_policy.policy_2.id}"
-	ipsecpolicy_id = "${vkcs_vpnaas_ipsec_policy.policy_1.id}"
-	vpnservice_id = "${vkcs_vpnaas_service.service.id}"
-	psk = "secret"
-	peer_address = "192.168.10.1"
-	peer_id = "192.168.10.1"
-	local_ep_group_id = "${vkcs_vpnaas_endpoint_group.group_2.id}"
-	peer_ep_group_id = "${vkcs_vpnaas_endpoint_group.group_1.id}"
-	dpd {
-		action   = "restart"
-		timeout  = 42
-		interval = 21
-	}
-	depends_on = ["vkcs_networking_router_interface.router_interface"]
-}
-```
+    To create the network, you will need the following objects:
 
-Add both parts of the example to the `vpn.tf` file and run the following commands:
+    - Resources (resource):
 
-```console
-terraform init
-```
-```console
-terraform apply
-```
+      - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) — the network in which the ВМ will be created.
+      - [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_subnet.md) — a subnet in this network.
+      - [vkcs_dc_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dc_router.md) — a router that connects the private network to external networks.
+      - [vkcs_dc_interface](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dc_interface.md) — an interface that connects the router to the internal and external network.
+
+    - Data source (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — an external network for obtaining a public IP address.
+
+    {/tab}
+
+    {/tabs}
+
+1. Edit the settings values for your connection.
+
+For more information about creating virtual networks using Terraform, see the hands-on guide [Creating networks](/en/tools-for-using-services/terraform/how-to-guides/vnet/network).
+
+## {heading({counter(vpn)}. Add a VPN connection)[id=add-vpn]}
+
+1. Copy the VPN connection settings into the `vpn.tf` file:
+
+    ```hcl
+    resource "vkcs_vpnaas_service" "service" {
+        router_id = vkcs_networking_router.router.id
+    }
+
+    resource "vkcs_vpnaas_ipsec_policy" "policy_1" {
+        name = "ipsec-policy"
+    }
+
+    resource "vkcs_vpnaas_ike_policy" "policy_2" {
+        name = "ike-policy"
+    }
+
+    resource "vkcs_vpnaas_endpoint_group" "group_1" {
+      type = "cidr"
+      endpoints = ["10.0.0.24/24", "10.0.0.25/24"]
+    }
+    resource "vkcs_vpnaas_endpoint_group" "group_2" {
+      type = "subnet"
+      endpoints = [ vkcs_networking_subnet.subnet.id ]
+    }
+
+    resource "vkcs_vpnaas_site_connection" "connection" {
+      name = "connection"
+      ikepolicy_id = vkcs_vpnaas_ike_policy.policy_2.id
+      ipsecpolicy_id = vkcs_vpnaas_ipsec_policy.policy_1.id
+      vpnservice_id = vkcs_vpnaas_service.service.id
+      psk = "secret"
+      peer_address = "192.168.10.1"
+      peer_id = "192.168.10.1"
+      local_ep_group_id = vkcs_vpnaas_endpoint_group.group_2.id
+      peer_ep_group_id = vkcs_vpnaas_endpoint_group.group_1.id
+      dpd {
+        action   = "restart"
+        timeout  = 42
+        interval = 21
+      }
+      depends_on = [vkcs_networking_router_interface.router_interface]
+    }
+    ```
+
+    The following resources are used to add a VPN connection:
+
+    - [vkcs_vpnaas_service](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_service.md) — manages the VPN service within VK Cloud. Includes the `router_id` parameter — the router ID. By changing the value of this parameter, you will create a new service. If you need to use an existing router, specify its ID (`data.vkcs_networking_router.router.id` or `data.vkcs_dc_router.router.id`) using a data source.
+      
+      {cut(Example)}
+
+      ```hcl
+      data "vkcs_networking_router" "router" {
+        name = "router_1"
+      }
+      ```
+      {/cut}
+
+    - [vkcs_vpnaas_ipsec_policy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_ipsec_policy.md) — manages the IPSec policy of the resource within VK Cloud. Includes the `name` parameter — the name of the policy being created. By changing the value of this parameter, you will change the name of an existing policy.
+
+    - [vkcs_vpnaas_ike_policy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_ike_policy.md) — manages the IKE policy of the resource within VK Cloud. Includes the `name` parameter — the name of the policy being created. By changing the value of this parameter, you will change the name of an existing policy.
+
+    - [vkcs_vpnaas_endpoint_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_endpoint_group.md) — manages an endpoint group within VK Cloud. Includes the following parameters:
+
+      - `type` — the type of endpoints in the group. Can be `subnet`, `cidr`, `network`, `router`, or `vlan`. By changing the value of this parameter, you will create a new group.
+      - `endpoints` — a list of endpoints of the same type included in the endpoint group. The type of list elements is determined by the `type` parameter. By changing the value of the `endpoints` parameter, you will create a new group.
+
+    - [vkcs_vpnaas_site_connection](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_site_connection.md) — manages the IPSec site connection resource within VK Cloud. Includes the following parameters:
+
+      - `name` — the connection name. By changing the value of this parameter, you will change the name of an existing connection.
+      - `ikepolicy_id` — the IKE policy ID. By changing the value of this parameter, you will create a new connection.
+      - `ipsecpolicy_id` — the IPsec policy ID. By changing the value of this parameter, you will create a new connection.
+      - `vpnservice_id` — the VPN service ID. By changing the value of this parameter, you will create a new connection.
+      - `psk` — the public key. Accepts any `string` values.
+      - `peer_address` — the FQDN or public IP address (IPv4 or IPv6) of the peer gateway.
+      - `peer_id` — the peer router ID for authentication. Can be of types `<АДРЕС_IPv4>`, `<АДРЕС_IPv6>`, `<EMAIL>`, `<KEY_ID>`, `<FQDN>`. Typically, the value of this parameter matches the value of the `peer_address` parameter. By changing the value of this parameter, you will change the policy of an existing connection.
+      - `local_ep_group_id` — the endpoint group ID that includes the private subnets of the local connection. Requires specifying the `peer_ep_group_id` parameter if backward compatibility mode is not enabled, where `peer_cidrs` values are already provided together with the `subnet_id` value of the VPN service. By changing the value of this parameter, you will modify an existing connection.
+      - `peer_ep_group_id` — the endpoint group ID that includes the private CIDR addresses of the peer connection in the `<IP-АДРЕС>/<ПРЕФИКС>` format. Requires specifying the `local_ep_group_id` parameter if backward compatibility mode is not enabled, where `peer_cidrs` values are already provided together with the `subnet_id` value of the VPN service.
+      - `dpd` — a map of settings for the Dead Peer Detection (DPD) protocol. Includes the following resources:
+
+        - `action` — the DPD action. Possible values: `clear`, `hold`, `restart`, `disabled`, `restart-by-peer`. Default value: `hold`.
+        - `timeout` — the DPD timeout in seconds. Accepts `positive integer` values that are greater than `interval`. Default value: `120`.
+        - `interval` — the DPD interval in seconds. Accepts `positive integer` values. Default value: `30`.
+
+      - `depends_on` — the VPN connection will start after the specified resources are created.
+
+1. Edit the settings values for your connection.
+
+## {heading({counter(vpn)}. Create a VPN connection)[id=create-connection]}
+
+1. Go to the directory containing the `vpn.tf` file.
+1. Make sure the configuration files are correct and contain the required changes:
+
+    ```console
+    terraform validate && terraform plan
+    ```
+
+1. Apply the changes:
+
+    ```console
+    terraform apply
+    ```
+
+    When prompted for confirmation, enter `yes`.
+
+1. Wait for the operation to complete.  
+
+## {heading({counter(vpn)}. Verify configuration application)[id=check]}
+
+Make sure that the network and infrastructure were created successfully:
+
+1. [Go to](https://cloud.vk.com/app/) the VK Cloud management console.
+1. Go to **Virtual networks** → **VPN**. Make sure the VPN connection is created and includes all resources added in the example.
+
+## Delete unused resources
+
+If the resources created with Terraform are no longer needed, delete them:
+
+1. Go to the directory with the Terraform configuration files.
+1. Run the command:
+
+    ```console
+    terraform destroy
+    ```
+
+   When prompted for confirmation, enter `yes`.
+
+1. Wait for the operation to complete.
