@@ -14,7 +14,7 @@
 
 Егер **Мониторингті баптау** қойындысы болмаса:
 
-1. [қосылғанына](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) екі факторлы аутентификацияның және API арқылы қолжетімділіктің [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
+1. [Қосылғанына](/kz/access/iam/instructions/manage-2fa) екі факторлы аутентификацияның және API арқылы қолжетімділіктің [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
 1. [Қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
 1. [Project ID алыңыз](/kz/tools-for-using-services/api/rest-api/endpoints#project_id_alu), бұл сервистермен жұмыс істеуге арналған арнайы идентификатор. Мысалы: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
 1. [Виртуалды машинаның ID-сін алыңыз](/kz/computing/iaas/instructions/vm/vm-manage#virtualdy_mashinanyn_id_alu).

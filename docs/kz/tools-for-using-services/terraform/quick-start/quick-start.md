@@ -4,7 +4,7 @@
 
 1. Terraform-ды VK Cloud ресми [айнасынан](https://hashicorp-releases.mcs.mail.ru/terraform) орнатыңыз.
 1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
-1. Егер бұл әлі жасалмаған болса, [екі факторлы аутентификацияны баптаңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) және [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api).
+1. Егер бұл әлі жасалмаған болса, [екі факторлы аутентификацияны баптаңыз](/kz/access/iam/instructions/manage-2fa) және [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api).
 
 1. Беттің жоғарғы бөлігіндегі пайдаланушы атына басып, ашылмалы тізімнен **Жоба баптаулары** тармағын таңдаңыз.
 

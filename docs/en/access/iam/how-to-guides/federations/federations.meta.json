@@ -1,0 +1,9 @@
+{
+  "title": "Configuring identity federation",
+  "shortDescription": "How to configure federated login to VK Cloud using different identity providers",
+  "metaDescription": "Configuring federated login to VK Cloud using different identity providers: how to set up identity federations with various IdPs.",
+  "sectionTitle": "Configuring identity federation",
+  "icon": "",
+  "weight": 1,
+  "uuid": ""
+}

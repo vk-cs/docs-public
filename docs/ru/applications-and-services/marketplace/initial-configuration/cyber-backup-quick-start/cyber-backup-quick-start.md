@@ -22,7 +22,7 @@
 Предполагается, что в проекте уже существует виртуальная машина (ВМ), данные которой вы планируете защитить при помощи сервиса Кибер Бэкап Облачный.
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для учетной записи, если она еще не настроена.
+1. [Настройте](/ru/access/iam/instructions/manage-2fa) двухфакторную аутентификацию (2FA) для учетной записи, если она еще не настроена.
 1. Убедитесь, что ВМ, которая будет зарегистрирована в сервисе:
 
    - Отвечает его [системным требованиям](https://docs.cyberprotect.ru/ru-RU/CyberBackupCloud/21.06/user/#supported-operating-systems-and-environments.html).

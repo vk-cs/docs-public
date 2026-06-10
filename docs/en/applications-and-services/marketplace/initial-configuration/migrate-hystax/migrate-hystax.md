@@ -17,7 +17,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 ## 1. Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Configure](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
+1. [Configure](/en/access/iam/instructions/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
 1. [Create a VM](/en/computing/iaas/instructions/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](/en/applications-and-services/marketplace/instructions/pr-instance-add) Hystax Acura Migration service.
 

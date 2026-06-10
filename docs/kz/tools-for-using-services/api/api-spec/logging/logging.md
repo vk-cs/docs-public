@@ -4,7 +4,7 @@
 
 1. Жобада Cloud Logging сервисі қосылғанына көз жеткізіңіз, қажет болса оны [техникалық қолдау](/kz/contacts) арқылы қосыңыз.
 1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
-1. [Қосыңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#vk-cloud-account-manage-2fa-on), егер бұл әлі жасалмаса, екі факторлы аутентификацияны.
+1. [Қосыңыз](/kz/access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on), егер бұл әлі жасалмаса, екі факторлы аутентификацияны.
 1. [Қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#api_arkyly_kolzhetimdilikti_belsendiru), егер бұл әлі жасалмаса, API арқылы қолжетімділікті.
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба параметрлері** бөлімін таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.

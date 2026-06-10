@@ -4,7 +4,7 @@ API арқылы қолжетімділікті белсендіру VK Cloud п
 
 ## API арқылы қолжетімділікті белсендіру
 
-1. [Қосыңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) екі факторлы аутентификацияны.
+1. [Қосыңыз](/kz/access/iam/instructions/manage-2fa) екі факторлы аутентификацияны.
 1. Бет үстіндегі пайдаланушы атына басып, API арқылы қолжетімділікті келесі тәсілдердің бірімен қосыңыз:
 
       {tabs}
@@ -28,6 +28,6 @@ API арқылы қолжетімділікті белсендіру VK Cloud п
 
 ## API арқылы қолжетімділікті өшіру
 
-1. Егер ол өшірілген болса, [қосыңыз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#vk-cloud-account-manage-2fa-off) екі факторлы аутентификацияны.
+1. Егер ол өшірілген болса, [қосыңыз](/kz/access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-off) екі факторлы аутентификацияны.
 1. Бет үстіндегі пайдаланушы атына басып, **Аккаунт баптаулары** тармағын таңдаңыз.
 1. **Қауіпсіздік** бөлімінде **API арқылы қолжетімділік** опциясын өшіріңіз.

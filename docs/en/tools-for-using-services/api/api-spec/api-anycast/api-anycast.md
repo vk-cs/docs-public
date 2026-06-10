@@ -8,7 +8,7 @@
 {cut(Obtaining an endpoint, authorization, and authentication)}
 
 1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
-1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
+1. [Enable](/en/access/iam/instructions/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
 1. Enable API access if it hasn't been done yet:
 
    1. Click the username in the page header and select **Security**.

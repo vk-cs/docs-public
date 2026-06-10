@@ -25,7 +25,7 @@ Hystax Acura Migration сервисін пайдалану арқылы сіз [
 ## Дайындық қадамдары
 
 1. [Тіркеліңіз](/kz/intro/onboarding/account) в VK Cloud.
-1. Көшірілетін инфрақұрылым орналастырылатын аккаунт үшін [екі факторлы аутентификацияны (2FA)](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) баптаңыз.
+1. Көшірілетін инфрақұрылым орналастырылатын аккаунт үшін [екі факторлы аутентификацияны (2FA)](/kz/access/iam/instructions/manage-2fa) баптаңыз.
 1. [Hystax Acura Migration](/kz/applications-and-services/marketplace/instructions/pr-instance-add) сервисін қосыңыз.
 
    Орнату аяқталғанша күтіңіз — поштаңызға логин мен құпиясөз көрсетілген сілтеме келеді. Сервис https://migration.mcs-cloud.ru мекенжайында орналастырылады (Hystax Acura жеке кабинеті).

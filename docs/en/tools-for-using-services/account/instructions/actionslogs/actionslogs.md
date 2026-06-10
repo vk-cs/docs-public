@@ -49,7 +49,7 @@ To open detailed information about an individual record, click on the icon ![Inf
 
 {tab(API)}
 
-1. [Enable](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa) two-factor authentication (2FA) for your account.
+1. [Enable](/en/access/iam/instructions/manage-2fa) two-factor authentication (2FA) for your account.
 1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token "change-lang") the `X-Auth-Token`.
 1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the address of the `Audit` endpoint.
 1. Run the request:

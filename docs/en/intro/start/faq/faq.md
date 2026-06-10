@@ -51,7 +51,7 @@ The services become available after you have completed the [registration](../acc
 
 {cut(How do I enable two-factor authentication?)}
 
-Use the instruction [Enabling 2FA](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa).
+Use the instruction [Enabling 2FA](/en/access/iam/instructions/manage-2fa).
 
 {/cut}
 
