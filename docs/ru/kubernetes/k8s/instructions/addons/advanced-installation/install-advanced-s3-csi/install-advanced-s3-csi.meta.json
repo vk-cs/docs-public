@@ -1,0 +1,9 @@
+{
+  "title": "Container Storage Interface для S3 (S3-CSI)",
+  "shortDescription": "",
+  "metaDescription": "Установка аддона Container Storage Interface для S3 (S3-CSI) в Kubernetes: пошаговая инструкция для VK Cloud, выделенных worker-узлов и быстрой установки",
+  "sectionTitle": "Container Storage Interface для S3 (S3-CSI)",
+  "icon": "",
+  "weight": 4,
+  "uuid": ""
+}

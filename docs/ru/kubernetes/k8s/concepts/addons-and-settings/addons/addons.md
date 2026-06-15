@@ -132,6 +132,43 @@
 
 {/tabs}
 
+
+### {heading(Container Storage Interface (CSI) для S3)[id=k8s-addons-s3]}
+
+{note:info}
+Этот аддон доступен только для кластеров [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+{/note}
+
+{tabs}
+
+{tab(Описание)}
+
+[Container Storage Interface для S3 (S3-CSI)](https://github.com/yandex-cloud/k8s-csi-s3) — драйвер [Container Storage Interface](https://kubernetes-csi.github.io/docs/) для Kubernetes, который позволяет монтировать S3-совместимые объектные хранилища ([VK Object Storage](/ru/storage/s3/concepts/about), AWS S3, MinIO и другие) как [постоянные тома](/ru/kubernetes/k8s/reference/pvs-and-pvcs) (Persistent Volumes, PV).
+
+S3-CSI основан на высокопроизводительной файловой системе [GeeseFS](https://github.com/yandex-cloud/geesefs), которая работает на базе FUSE. Аддон имеет почти полную [POSIX-совместимость](https://github.com/yandex-cloud/geesefs#posix-compatibility-matrix) и поддерживает следующие действия с объектами:
+
+- чтение и запись;
+- блокировка;
+- переименование и удаление.
+
+S3-CSI работает на уровне [бакетов](/ru/storage/s3/concepts/about#bucket) объектного хранилища и может функционировать в двух режимах:
+
+- Динамическое создание бакетов (dynamic provisioning). При создании PersistentVolumeClaim (PVC) с указанным [классом хранения](/ru/kubernetes/k8s/concepts/storage#storage_classes) (StorageClass) аддон автоматически создает новый бакет в целевом S3-совместимом хранилище. После создания PVC этот бакет сразу готов к использованию как PV.
+- Использование существующих бакетов (static provisioning). Вы можете использовать заранее созданный бакет в любом S3-совместимом хранилище. Для этого аддон создает PV с указанием имени существующего бакета, и затем PVC связывается с этим PV.
+
+S3-CSI может создавать бакеты в любом S3-совместимом хранилище, которое вы укажете при [установке](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-s3-csi).
+
+{/tab}
+
+{tab(Системные требования)}
+
+- **CPU**: 50m;
+- **RAM**: 200Mi.
+
+{/tab}
+
+{/tabs}
+
 ### Docker Registry
 
 {note:warn}
