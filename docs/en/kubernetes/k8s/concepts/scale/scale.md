@@ -55,7 +55,7 @@ Examples:
 - `STD3-2-6` will change to `STD3-2-8`.
 |===
 
-You can change the flavor of the master node VM to one with smaller CPU and RAM only [in manual mode](../../instructions/scale#scale_master_nodes) and only for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+You can change the flavor of the master node VM to one with smaller CPU and RAM only in [manual mode](../../instructions/scale#scale_master_nodes).
 
 {cut(Scheme of vertical autoscaling for clusters created before Dec 6, 2024)}
 

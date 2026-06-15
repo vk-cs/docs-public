@@ -8,10 +8,6 @@
 
 ### {heading(Master-түйіндерді масштабтау)[id=scale_master_nodes]}
 
-{note:info}
-Бұл операция тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
-{/note}
-
 1. [Тік масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз](../../concepts/scale).
 
 1. [Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau).
@@ -50,6 +46,10 @@
    {/tab}
 
    {tab(Terraform)}
+
+   {note:info}
+   Terraform арқылы басқару тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+   {/note}
  
    1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобағал [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
 
