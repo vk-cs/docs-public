@@ -3,5 +3,15 @@
   "shortDescription": "Өрістетілген PostgreSQL инстанстарының мониторингі",
   "metaDescription": "VK Cloud-та жеке хосттардың метрикалары туралы толық ақпарат бере отырып, PostgreSQL инстанстарының күйін мониторингтеу. Қолжетімді метрикалардың сипаттамасы, мониторинг мәліметтерін талдау және пайдалану",
   "sectionTitle": "PostgreSQL мониторингі",
-  "icon": ""
+  "icon": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

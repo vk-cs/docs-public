@@ -1,0 +1,1 @@
+# {heading(Подключение)[id=bare-metal-connect]}

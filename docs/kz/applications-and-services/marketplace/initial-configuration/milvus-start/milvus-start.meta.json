@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: құрылымдалмаған деректерді жылдам іздеу және талдау міндеттері үшін Milvus сервисін өрістету қадамдары",
   "sectionTitle": "Milvus өрістету",
   "icon": "",
-  "weight": 13
+  "weight": 13,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

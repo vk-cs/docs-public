@@ -1,3 +1,5 @@
+# {heading(jq орнату)[id=rest-api-jq]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 JSON форматындағы деректер шығысын сүзгілеу үшін [jq](https://jqlang.github.io/jq/) утилитасын пайдаланыңыз. Ол платформадан алынатын API және OpenStack деректеріне қолданылады.
@@ -105,7 +107,7 @@ jq жүйеңізде алдын ала орнатылған болуы кере
 
 {/cut}
 
-## Орнату
+## {heading(Орнату)[id=rest-api-jq-install]}
 
 {tabs}
 
@@ -129,7 +131,7 @@ yum install jq -y
 
 {tab(Windows)}
 
-1. Егер әлі орнатылмаған болса, [Chocolatey](https://community.chocolatey.org/courses/installation/installing) пакет менеджерін [орнатыңыз](https://chocolatey.org).
+1. Егер әлі орнатылмаған болса, [Chocolatey](https://chocolatey.org) пакет менеджерін [орнатыңыз](https://community.chocolatey.org/courses/installation/installing).
 1. PowerShell ашып, команданы орындаңыз:
 
    ```console
@@ -164,9 +166,9 @@ yum install jq -y
 
 {/tabs}
 
-## Пайдалану мысалы
+## {heading(Пайдалану мысалы)[id=rest-api-jq-example]}
 
-Karboii API арқылы [жоспарлар тізімін алу](/kz/storage/backups/how-to-guides/api-examples#zhasalgan_rezervtik_koshiru_zhosparlarynyn_tizimin_alu) және оны пішімделген JSON түрінде шығару.
+Karboii API арқылы [жоспарлар тізімін алу](/kz/storage/backups/how-to-guides/api-examples#backup-api-examples-get-plan) және оны пішімделген JSON түрінде шығару.
 
 Команда:
 

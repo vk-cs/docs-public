@@ -4,5 +4,10 @@
   "metaDescription": "CDN-ресурсының файлдарын Secure token технологиясының көмегімен қалаусыз жүктеулерден қалай қорғауға болады",
   "sectionTitle": "Secure token қосуды орнату",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

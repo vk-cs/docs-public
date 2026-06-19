@@ -1,12 +1,17 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Getting started with Terraform",
-      "metaDescription": "",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 0,
-    "additionalUuids": [
-        "11fe476e-2d5e-4bae-8500-4b2e53113bdb"
-    ],
-    "uuid": "f8a5e198-6044-4223-acd1-ff924eefe3d2"
+  "title": "Quick start",
+  "shortDescription": "Getting started with Terraform",
+  "metaDescription": "",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 0,
+  "additionalUuids": [
+    "11fe476e-2d5e-4bae-8500-4b2e53113bdb"
+  ],
+  "uuid": "f8a5e198-6044-4223-acd1-ff924eefe3d2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

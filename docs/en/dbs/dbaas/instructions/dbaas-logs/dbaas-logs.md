@@ -5,7 +5,7 @@
 В настоящее время реализована возможность получения логов для следующих баз данных:
 
 - MySQL
-- PostgreSQL/PostgresPro
+- PostgreSQL
 - ClickHouse
 - Redis
 - MongoBD
@@ -57,7 +57,7 @@ Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start\[867\]: 2020-12-25 08:3
 lines 1-29
 ```
 
-## PostgreSQL/PostgresPro
+## PostgreSQL
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 

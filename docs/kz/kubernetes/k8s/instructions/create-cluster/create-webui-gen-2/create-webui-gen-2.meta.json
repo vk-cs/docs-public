@@ -3,5 +3,15 @@
   "metaDescription": "VK Cloud платформасындағы Cloud Containers сервисін пайдаланып Kubernetes кластерін қалай құру керектігін біліңіз. Міндеттерге қарай кластер конфигурациясын таңдау бойынша ұсынымдар",
   "sectionTitle": "Жеке кабинетте екінші буындағы кластерді құру",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

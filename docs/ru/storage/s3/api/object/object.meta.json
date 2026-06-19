@@ -1,0 +1,16 @@
+{
+  "title": "Object",
+  "shortDescription": "Загрузка, копирование, удаление, проверка наличия объекта и скачивание его содержимого",
+  "metaDescription": "Все доступные методы для работы с объектами в VK Object Storage: скачать объект из бакета (GetObject), загрузить объект в бакет (PutObject), скопировать объект (CopyObject), получить информацию об объекте (HeadObject), удалить объект (DeleteObject) или группу объектов (DeleteMultipleObjects)",
+  "sectionTitle": "Object",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

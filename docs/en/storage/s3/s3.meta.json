@@ -5,5 +5,19 @@
   "sectionTitle": "VK Object Storage",
   "icon": "",
   "weight": 1,
-  "uuid": "7ad8c56f-b8e0-4e78-ae24-3abb0bac4df9"
+  "uuid": "7ad8c56f-b8e0-4e78-ae24-3abb0bac4df9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

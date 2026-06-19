@@ -1,9 +1,14 @@
 {
-    "title": "SLA",
-      "shortDescription": "Service level agreement between VK Cloud and users",
-      "metaDescription": "Agreement on the level of service provided between VK Cloud and the client organization",
-    "sectionTitle": "SLA",
-    "icon": "",
-    "weight": 1,
-    "uuid": "061d2442-574c-4d2e-827a-be03375571f8"
+  "title": "SLA",
+  "shortDescription": "Service level agreement between VK Cloud and users",
+  "metaDescription": "Agreement on the level of service provided between VK Cloud and the client organization",
+  "sectionTitle": "SLA",
+  "icon": "",
+  "weight": 1,
+  "uuid": "061d2442-574c-4d2e-827a-be03375571f8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

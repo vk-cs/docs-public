@@ -4,5 +4,10 @@
   "metaDescription": "Көшеде түсірілген кескіндегі мәтінді (scene_text) және қолжазба мәтінді анықтау.",
   "sectionTitle": "Фотосуреттердегі мәтінді тану",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

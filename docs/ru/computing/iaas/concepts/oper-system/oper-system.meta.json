@@ -4,5 +4,15 @@
   "metaDescription": "Информация об ОС, поддерживаемых в VK Cloud, учетных записях по умолчанию и лицензиях",
   "sectionTitle": "Операционные системы",
   "weight": 4,
-  "uuid": "0a7dbeea-377f-4135-8670-8b25c7398416"
+  "uuid": "0a7dbeea-377f-4135-8670-8b25c7398416",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

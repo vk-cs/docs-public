@@ -5,5 +5,10 @@
   "sectionTitle": "Billing",
   "icon": "",
   "weight": 3,
-  "uuid": "3434e2b1-217e-4b66-9d2e-53c6dd1f5f67"
+  "uuid": "3434e2b1-217e-4b66-9d2e-53c6dd1f5f67",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

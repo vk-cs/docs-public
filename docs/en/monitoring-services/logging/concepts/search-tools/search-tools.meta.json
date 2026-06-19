@@ -1,9 +1,14 @@
 {
-    "title": "The language of search queries",
-      "shortDescription": "Search tools",
-      "metaDescription": "",
-    "sectionTitle": "The language of search queries",
-    "icon": "",
-    "weight": 5,
-    "uuid": "6694b5c1-0cf4-4005-8cdb-61877a9e813e"
+  "title": "The language of search queries",
+  "shortDescription": "Search tools",
+  "metaDescription": "",
+  "sectionTitle": "The language of search queries",
+  "icon": "",
+  "weight": 5,
+  "uuid": "6694b5c1-0cf4-4005-8cdb-61877a9e813e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

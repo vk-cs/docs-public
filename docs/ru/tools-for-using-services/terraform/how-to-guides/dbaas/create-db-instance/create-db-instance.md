@@ -1,33 +1,33 @@
+# {heading(Создание инстанса БД)[id=terraform-create-db-instance]}
+
 В статье приведены примеры создания при помощи Terraform инстансов БД c различными настройками.
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=terraform-create-db-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания инстанса БД. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
-    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
+   Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-## 1. Создайте файл с описанием инстанса БД
+## {heading({counter(tf-db)}. Создайте файл с описанием инстанса БД)[id=terraform-create-db-file]}
 
 Во всех примерах ниже инстансы БД создаются со следующими свойствами:
 
-- [Регион](/ru/tools-for-using-services/account/concepts/regions): по умолчанию (совпадает с регионом проекта).
-- [Зона доступности](/ru/start/concepts/architecture#az): по умолчанию (для региона Москва — `GZ1`).
+- {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=Регион]}: по умолчанию (совпадает с регионом проекта).
+- [Зона доступности](../../../../../start/concepts/architecture#architecture-az): по умолчанию (для региона Москва — `GZ1`).
 - Тип СУБД и версия: MySQL 8.0.
-- [Конфигурация](/ru/dbs/dbaas/concepts/work-configs) инстанса БД: **Single**.
+- {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=Конфигурация]} инстанса БД: **Single**.
 - Внешний IP-адрес: назначен.
 
 {note:warn}
+При создании инстансов БД MySQL или PostgreSQL в {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурации]} **Кластер** будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
 
-При создании инстансов БД MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1С в [конфигурации](/ru/dbs/dbaas/concepts/work-configs) **Кластер** будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
-
-Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
-
+Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
 Выберите один из примеров создания кластера и создайте файл конфигурации Terraform `main.tf` с нужным содержимым:
@@ -36,7 +36,7 @@
 
 {tab(Без дополнительных настроек)}
 
-[Шаблон конфигурации](/ru/computing/iaas/concepts/vm/flavor) для ВМ инстанса задается через переменную `db-instance-flavor`.
+{linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=Шаблон конфигурации]} для ВМ инстанса задается через переменную `db-instance-flavor`.
 
 ```hcl
 variable "db-instance-flavor" {
@@ -184,47 +184,45 @@ variable "db_user_password" {
 
 - Создайте файл `secret.tfvars`, запишите в него `db_user_password="YOUR_DB_PASSWORD"` и передайте его в качестве аргумента в команду `terraform apply`:
 
-   ```console
-   terraform apply -var-file="secret.tfvars"
-   ```
+  ```console
+  terraform apply -var-file="secret.tfvars"
+  ```
 
-    Конфиденциальные данные будут храниться отдельно от конфигурации.
+  Конфиденциальные данные будут храниться отдельно от конфигурации.
 
 - В сеансе оболочки, из которого вы планируете работать с Terraform, установите значение через переменную окружения с префиксом `TF_VAR`:
 
-   {tabs}
+  {tabs}
    
-   {tab(Linux, macOS)}
+  {tab(Linux, macOS)}
       
-   ```console
-   export TF_VAR_db_user_password=YOUR_DB_PASSWORD
-   ```
-   {/tab}
+  ```console
+  export TF_VAR_db_user_password=YOUR_DB_PASSWORD
+  ```
+  {/tab}
    
-   {tab(Windows (cmd))}
+  {tab(Windows (cmd))}
    
-    ```console
-    set TF_VAR_db_user_password=YOUR_DB_PASSWORD
-    ```
+  ```console
+  set TF_VAR_db_user_password=YOUR_DB_PASSWORD
+  ```
 
-   {/tab}
+  {/tab}
    
-   {tab(Windows (PowerShell))}
+  {tab(Windows (PowerShell))}
    
-    ```console
-    $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
-    ```
+  ```console
+  $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
+  ```
 
-   {/tab}
+  {/tab}
    
-   {/tabs}
+  {/tabs}
 
   При применении конфигурации значение пароля автоматически загрузится из окружения.
 
 {note:info}
-
 Если не установить значение пароля, при применении конфигурации Terraform потребует ввести его в консоли.
-
 {/note}
 
 {/cut}
@@ -310,49 +308,49 @@ resource "vkcs_db_user" "db-user" {
 
 {/tabs}
 
-## 2. Создайте ресурсы при помощи Terraform
+## {heading({counter(tf-db)}. Создайте ресурсы при помощи Terraform)[id=terraform-create-db-resource]}
 
 1. Поместите файлы конфигурации Terraform `terraform.rc`, `vkcs_provider.tf`, `main.tf` и `secret.tfvars` (если был создан) в одну директорию.
 1. Перейдите в эту директорию.
 1. Выполните команду:
 
-    ```console
-    terraform init
-    ```
+   ```console
+   terraform init
+   ```
 
-    Дождитесь завершения инициализации Terraform.
+   Дождитесь завершения инициализации Terraform.
 
 1. Выполните команду:
 
-    ```console
-    terraform apply
-    ```
+   ```console
+   terraform apply
+   ```
 
-    При запросе подтверждения введите `yes`.
+   При запросе подтверждения введите `yes`.
 
 1. Дождитесь завершения операции.
 
-## 3. Проверьте применение конфигурации
+## {heading({counter(tf-db)}. Проверьте применение конфигурации)[id=terraform-create-db-check]}
 
-[Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud, в раздел **Базы данных** → **Инстансы баз данных**. Убедитесь, что все описанные в конфигурации объекты были успешно созданы:
+[Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}, в раздел **Базы данных** → **Инстансы баз данных**. Убедитесь, что все описанные в конфигурации объекты были успешно созданы:
 
-- [Инстанс БД](/ru/dbs/dbaas/instructions/manage-instance/mysql#poluchenie_informacii_ob_instanse_bd_i_ego_hostah).
+- {linkto(../../../../../dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-get-info)[text=Инстанс БД]}.
 - Внешний IP-адрес для инстанса — отображается на странице инстанса.
-- Расширение [Prometheus Node exporter](/ru/dbs/dbaas/instructions/managing-extensions#192-tabpanel-1) (если было установлено) — отображается на странице инстанса на вкладке **Расширения**.
+- Расширение linkto(../../../../../dbs/dbaas/instructions/managing-extensions)[text=Prometheus Node exporter]}{ (если было установлено) — отображается на странице инстанса на вкладке **Расширения**.
 - БД на инстансе (если была создана) — отображается на странице инстанса на вкладке **Список баз данных**.
-- [Пользователь БД](/ru/dbs/dbaas/instructions/users#prosmotr_spiska_polzovateley) (если был создан) — отображается на странице инстанса на вкладке **Пользователи**.
+- {linkto(../../../../../dbs/dbaas/instructions/users#dbaas-users-list)[text=Пользователь БД]} (если был создан) — отображается на странице инстанса на вкладке **Пользователи**.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-create-db-delete]}
 
 Некоторые объекты, созданные в этом сценарии, потребляют ресурсы. Если они вам больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
 1. Выполните команду:
 
-    ```console
-    terraform destroy
-    ```
+   ```console
+   terraform destroy
+   ```
 
-    При запросе подтверждения введите `yes`.
+   При запросе подтверждения введите `yes`.
 
 1. Дождитесь завершения операции.

@@ -4,5 +4,20 @@
   "metaDescription": "Жобаны SDN Sprut жүйесіне қалай көшіруге болады",
   "sectionTitle": "SDN Sprut жүйесіне көшу",
   "icon": "",
-  "weight": 13
+  "weight": 13,
+  "uuid": "69b94b27-1e6b-40e9-ae24-33d5cd44b1b9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

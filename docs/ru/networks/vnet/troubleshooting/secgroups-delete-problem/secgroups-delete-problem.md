@@ -1,3 +1,5 @@
+# {heading(Не получается удалить группу безопасности)[id=vnet-secgroups-delete-problem]}
+
 При удалении группы безопасности возникает ошибка:
 
 ```text
@@ -9,16 +11,16 @@ Security Group f4ad1825-XXXX-XXXX-XXXX in use.
 
 Проблема возникает, если группа безопасности используется и привязана к портам.
 
-### Решение
+### {heading(Решение)[id=vnet-secgroups-delete-problem-resolve]}
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. Убедитесь, что дополнительный пакет `neutron` [установлен](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety).
+1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
+1. Убедитесь, что дополнительный пакет `neutron` {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=установлен]}.
 1. Получите список идентификаторов портов, связанных с группой безопасности:
 
    ```console
    neutron port-list -c id -c name -c security_groups | grep <ID_ГРУППЫ_БЕЗОПАСНОСТИ> | awk '{print $2}'
    ```
-   Здесь `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — [идентификатор группы безопасности](/ru/networks/vnet/instructions/secgroups#view_secgroups), которую не получилось удалить.
+   Здесь `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=идентификатор группы безопасности]}, которую не получилось удалить.
 
 1. Отвяжите группу безопасности от каждого порта:
 
@@ -27,8 +29,8 @@ Security Group f4ad1825-XXXX-XXXX-XXXX in use.
    ```
    Здесь:
 
-   * `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — идентификатор группы безопасности, которую не получилось удалить.
-   * `<ID_ПОРТА>` — идентификатор порта из списка, полученного ранее.
+   - `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — идентификатор группы безопасности, которую не получилось удалить.
+   - `<ID_ПОРТА>` — идентификатор порта из списка, полученного ранее.
 
 1. Удалите группу безопасности:
 
@@ -36,4 +38,4 @@ Security Group f4ad1825-XXXX-XXXX-XXXX in use.
    openstack security group delete <ID_ГРУППЫ_БЕЗОПАСНОСТИ>
    ```
 
-1. Если проблема сохраняется, [обратитесь в техническую поддержку](/ru/contacts). 
+1. Если проблема сохраняется, обратитесь {ifdef(public)}в [техническую поддержку](/ru/contacts){/ifdef}{ifdef(private,private-pg)}к администратору {var(cloud)}{/ifdef}. 

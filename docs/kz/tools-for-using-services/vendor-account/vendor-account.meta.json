@@ -4,5 +4,10 @@
   "metaDescription": "Жеткізушілердің Marketplace-пен жұмыс істеуіне арналған толық құралдар жиынтығы.",
   "sectionTitle": "Жеткізуші кабинеті",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

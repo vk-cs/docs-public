@@ -1,0 +1,18 @@
+{
+  "title": "Шығыстарды егжей-тегжейлеу",
+  "shortDescription": "Ресурстарды тұтыну және баланс өзгеруі бойынша статистика",
+  "metaDescription": "VK Cloud: жобалардағы ресурстарды тұтыну және баланс өзгеруі статистикасын қарау",
+  "sectionTitle": "Шығыстарды егжей-тегжейлеу",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

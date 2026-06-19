@@ -1,0 +1,14 @@
+{
+  "title": "Концепции",
+  "shortDescription": "Основные понятия и характеристики сервиса Cloud PostgreSQL",
+  "metaDescription": "Узнайте об основных понятиях и характеристиках сервиса Cloud PostgreSQL в VK Data Platform",
+  "sectionTitle": "Концепции",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

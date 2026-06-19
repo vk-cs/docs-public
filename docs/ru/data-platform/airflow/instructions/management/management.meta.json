@@ -1,9 +1,15 @@
 {
-  "title": "Работа с компонентами сервиса",
+  "title": "Работа с экземпляром сервиса",
   "shortDescription": "Как управлять компонентами сервиса Cloud Airflow в проекте",
-  "metaDescription": "Cloud AirFlow: управление компонентами экземпляра сервиса в проекте",
-  "sectionTitle": "Работа с компонентами сервиса",
+  "metaDescription": "Пошаговая инструкция по работе с экземпляром Cloud Airflow VK Data Platform: просмотр информации, настройка подключений и управление учетными записями",
+  "sectionTitle": "Работа с экземпляром сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "27424daf-3eb9-4d50-9b6f-fcc2d26a5ebd"
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

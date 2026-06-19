@@ -1,3 +1,5 @@
+# {heading(Сөйлеуді тану)[id=cloud_voice-instructions-speech_recognition]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Сөйлеуді танудың екі түрі қолжетімді:
@@ -5,7 +7,7 @@
 - аудиофайлдарды тану;
 - ағындық аудионы тану.
 
-## Аудиофайлдарды тану
+## {heading(Аудиофайлдарды тану)[id=cloud_voice-instructions-speech_recognition-audiofiles]}
 
 Аудиофайлдан сөйлеуді тану үшін [https://voice.mcs.mail.ru/asr](https://voice.mcs.mail.ru/asr) мекенжайына POST сұрауының денесінде аудиофайлды жіберіп, тақырыпта дұрыс `Content-Type` көрсетіңіз.
 
@@ -42,14 +44,14 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 {/note}
 
 
-### Қолдау көрсетілетін аудио форматтары
+### {heading(Қолдау көрсетілетін аудио пішімдері)[id=cloud_voice-instructions-speech_recognition-audiofiles-formats]}
 
 | Контейнер | Кодек | Content-type           |
 | --------- | ----- | ---------------------- |
 | WAV       | ![](/en/assets/no.svg "inline")     | audio/wave             |
 | OGG       | Opus  | audio/ogg; codecs=opus |
 
-### Шектеулер
+### {heading(Шектеулер)[id=cloud_voice-instructions-speech_recognition-audiofiles-restrictions]}
 
 | Шектеу                         | Мәні     |
 | ------------------------------- | -------- |
@@ -57,7 +59,7 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 | Аудионың максималды ұзақтығы   | 5 мин    |
 | Арналардың максималды саны     | 1        |
 
-### Қате кодтары
+### {heading(Қате кодтары)[id=cloud_voice-instructions-speech_recognition-audiofiles-error-codes]}
 
 | Код  | Күйі  | Сипаттамасы                                  |
 | ---- | ------ | --------------------------------------------- |
@@ -70,11 +72,11 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 | 4048 | 400    | Жарамсыз токен                               |
 | 4049 | 400    | VK Cloud жобасы белсенді емес                |
 
-## Ағындық аудионы тану
+## {heading(Ағындық аудионы тану)[id=cloud_voice-instructions-speech_recognition-audiostream]}
 
 Чанкты (сөйлеудің шағын бөлігін) тану үшін тапсырма жасауға сұрау жіберу керек. Осыдан кейін чанктарды жіберіп, соңғы нәтижені алу мүмкіндігі пайда болады.
 
-### Тапсырма құруға арналған сұрау
+### {heading(Тапсырма жасауға сұрау)[id=cloud_voice-instructions-speech_recognition-audiostream-request_task]}
 
 Тапсырма жасау үшін `access_token` бар авторизация тақырыбымен https://voice.mcs.mail.ru/asr_stream/create_task мекенжайына POST сұрауын жіберу жеткілікті, жауапта `task_id`, `task_token` келеді.
 
@@ -98,7 +100,7 @@ curl --request POST \
 }
 ```
 
-### Чанк жіберуге арналған сұрау
+### {heading(Чанк жіберуге сұрау)[id=cloud_voice-instructions-speech_recognition-audiostream-request_send]}
 
 Чанк таңдалған пішімдегі аудиофрагмент болып табылады, сондықтан әр чанкта тақырыптар болуы тиіс.
 
@@ -144,14 +146,14 @@ curl --request POST \
 
 {/note}
 
-#### Қолдау көрсетілетін аудио форматтары
+#### {heading(Қолдау көрсетілетін аудио пішімдері)[id=cloud_voice-instructions-speech_recognition-audiostream-request_send-formats]}
 
 | Контейнер | Кодек | Content-type          |
 | --------- | ----- | --------------------- |
 | WAV       | ![](/en/assets/no.svg "inline")     | audio/wave            |
 | OGG       | Opus  | audio/ogg codecs=opus |
 
-## Шектеулер
+## {heading(Шектеулер)[id=cloud_voice-instructions-speech_recognition-restrictions]}
 
 | Шектеу                         | Мәні     |
 | ------------------------------- | -------- |
@@ -166,7 +168,7 @@ curl --request POST \
 
 {/note}
 
-### Тапсырманың соңғы нәтижесін алуға арналған сұрау
+### {heading(Тапсырманың соңғы нәтижесін алуға сұрау)[id=cloud_voice-instructions-speech_recognition-restrictions-request_task]}
 
 Чанктар жіберілгеннен кейін кез келген уақытта нәтижені алуға болады, ол үшін тақырыпта `Authorization- task_token`, ал GET параметрлерінде `task_id` мәнін беріп, https://voice.mcs.mail.ru/asr_stream/get_result мекенжайына GET сұрауын жіберу қажет.
 

@@ -1,0 +1,14 @@
+{
+  "title": "DLH жүйесінде жұмыс істеу",
+  "shortDescription": "Cloud Iceberg Metastore және S3-пен жұмыс істеу үшін JupyterHub-ты DLH жүйесінде қалай баптауға болады",
+  "metaDescription": "JupyterHub-ты DLH жүйесінде Cloud Iceberg Metastore және S3-пен жұмыс істеуге қалай баптауға болатынын біліңіз. Jupyter-ноутбуктерді пайдаланып қосылу, баптау және деректерді басқару бойынша қадамдық нұсқаулық",
+  "sectionTitle": "DLH жүйесінде жұмыс істеу",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

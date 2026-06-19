@@ -5,5 +5,12 @@
   "sectionTitle": "Ошибка Cannot continue with installation",
   "icon": "",
   "weight": 24,
-  "uuid": "0247a301-39c8-4173-8a11-c221c8f5dd21"
+  "uuid": "0247a301-39c8-4173-8a11-c221c8f5dd21",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

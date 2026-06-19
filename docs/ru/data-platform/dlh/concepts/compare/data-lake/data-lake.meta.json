@@ -5,5 +5,10 @@
   "sectionTitle": "Data Lake",
   "icon": "",
   "weight": 2,
-  "uuid": "f392001c-bb17-40b3-bb12-7f98cb33a232"
+  "uuid": "f392001c-bb17-40b3-bb12-7f98cb33a232",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

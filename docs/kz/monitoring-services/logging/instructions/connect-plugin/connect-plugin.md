@@ -1,11 +1,18 @@
+# {heading(Плагинді орнату)[id=logging-connect-plugin]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-1. ВМ-ге 2.1.9 нұсқасындағы [Fluent Bit](../../quick-start) орнатыңыз:
+1. ВМ-ге 2.1.9 нұсқасындағы [Fluent Bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu) орнатыңыз:
+
+   ```console
+   curl https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
+   ```
+
 1. `vkcloudlogs-fluent-bit-plugin` плагинін орнатыңыз.
 
    {tabs}
 
-   {tab(CentOS 7.X, CentOS 8.X, AlmaLinux 9)}
+   {tab(РЕД ОС 7.3, CentOS 7.X, CentOS 8.X, AlmaLinux 9.X)}
 
    ```console
    sudo rpm -i https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
@@ -13,7 +20,7 @@
 
    {/tab}
 
-   {tab(Ubuntu 22.X, Astra Linux SE 1.7.2 «Орел»)}
+   {tab(Ubuntu 22.X, Ubuntu 24.X, Astra Linux SE 1.7.X)}
 
    ```console
    curl -sSLo vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
@@ -35,17 +42,15 @@
    Орнатудан кейін `vkcloudlogs-fluent-bit.service` лог жинау агенті пайда болады. Әдепкі бойынша ол өшірілген.
 
    {note:info}
-
    `vkcloudlogs-fluent-bit.service` агенті келесі файлдармен жұмыс істейді:
 
-   - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit.conf` — логтау үшін көздер мен тағайындау жолдарының сипаттамалары бар агенттің негізгі конфигурация файлы. Толығырақ [Логтау плагині](../../concepts/logging-plugin) бөлімінде және [Fluent Bit ресми құжаттамасында](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode).
+   - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit.conf` — логтау үшін көздер мен тағайындау жолдарының сипаттамалары бар агенттің негізгі конфигурация файлы. Толығырақ {linkto(../../concepts/logging-plugin#logging-logging-plugin)[text=%text]} бөлімінде және [Fluent Bit ресми құжаттамасында](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode).
    - `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugins.conf` — плагинді қосу конфигурациясы.
-
    {/note}
 
 1. Плагинді Cloud Logging сервисіне логтар жіберуге баптаңыз.
 
-   1. Жобаңыз үшін плагинді авторизациялау параметрлерін [біліңіз](../../concepts/logging-plugin#auth_parameters).
+   1. Жобаңыз үшін плагинді авторизациялау параметрлерін {linkto(../../concepts/logging-plugin#logging-auth-parameters)[text=біліңіз]}.
    1. `vkcloudlogs-fluent-bit.conf` файлында плагинді қосу параметрлерін көрсетіңіз:
 
       {cut(vkcloudlogs-fluent-bit.conf)}
@@ -80,4 +85,4 @@
    ```
 
 1. Деректер жиналуы үшін бірнеше минут күтіңіз.
-1. [жеке кабинетте](https://kz.cloud.vk.com/app/services/monitoring/logging) VK Cloud **Мониторинг** → **Логтау** бөлімінде логтардың бар-жоғын тексеріңіз.
+1. {ifdef(public)}[жеке кабинетте](https://kz.cloud.vk.com/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=жеке кабинетте]}{/ifndef} {var(cloud)} **Мониторинг** → **Логтау** бөлімінде логтардың бар-жоғын тексеріңіз.

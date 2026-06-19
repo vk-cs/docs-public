@@ -5,5 +5,14 @@
   "sectionTitle": "Подключение к кластеру",
   "icon": "",
   "weight": 3,
-  "uuid": "101359d7-f040-4eaf-9d19-9ea857e064ca"
+  "uuid": "101359d7-f040-4eaf-9d19-9ea857e064ca",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

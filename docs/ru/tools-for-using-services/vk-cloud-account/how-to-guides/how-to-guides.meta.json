@@ -1,0 +1,14 @@
+{
+  "title": "Практические руководства",
+  "shortDescription": "Сценарии использования сервиса {var(cloud)} Аккаунт",
+  "metaDescription": "Сценарии использования сервиса VK Cloud Аккаунт",
+  "sectionTitle": "Практические руководства",
+  "icon": "",
+  "weight": 2,
+  "uuid": "46b40d1d-5c26-454c-a10f-2242b5e2a502",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

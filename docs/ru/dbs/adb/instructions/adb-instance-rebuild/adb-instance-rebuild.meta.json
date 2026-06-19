@@ -1,0 +1,18 @@
+{
+  "title": "Восстановление инстанса ADB",
+  "shortDescription": "Восстановление инстанса аналитической БД из резервной копии",
+  "metaDescription": "Arenadata DB as a Service: восстановление инстанса аналитической базы данных из резервной копии в VK Cloud",
+  "sectionTitle": "Восстановление инстанса ADB",
+  "icon": "",
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

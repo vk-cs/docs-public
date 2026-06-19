@@ -5,5 +5,10 @@
     "sectionTitle": "Взаимодействие с источником",
     "icon": "",
     "weight": 2,
-    "uuid": "80d0321a-05ec-4022-8a81-ffdcda2d4996"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "80d0321a-05ec-4022-8a81-ffdcda2d4996"
 }

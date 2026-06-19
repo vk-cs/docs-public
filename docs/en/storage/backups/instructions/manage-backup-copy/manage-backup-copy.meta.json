@@ -1,9 +1,14 @@
 {
-    "title": "Managing backups",
-      "shortDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
-      "metaDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
-    "sectionTitle": "Managing backups",
-    "icon": "",
-    "weight": 3,
-    "uuid": "8716bac2-88ee-4edc-8cb9-4bf6eca3c4b9"
+  "title": "Managing backups",
+  "shortDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
+  "metaDescription": "Instructions for working with backup copies of a VM, DB or analytical DB",
+  "sectionTitle": "Managing backups",
+  "icon": "",
+  "weight": 3,
+  "uuid": "8716bac2-88ee-4edc-8cb9-4bf6eca3c4b9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

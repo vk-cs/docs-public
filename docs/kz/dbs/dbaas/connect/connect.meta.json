@@ -4,5 +4,15 @@
   "metaDescription": "SDK көмегімен VK Cloud дерекқорларына қосылу.",
   "sectionTitle": "БД-ге қосылу",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

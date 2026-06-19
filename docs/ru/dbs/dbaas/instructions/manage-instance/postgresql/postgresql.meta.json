@@ -1,9 +1,18 @@
 {
-    "title": "PostgreSQL",
-      "shortDescription": "",
-      "metaDescription": "Базы данных VK Cloud: управление инстансами PostgreSQL.",
-    "sectionTitle": "PostgreSQL",
-    "icon": "",
-    "weight": 4,
-    "uuid": "e13af8aa-1db2-40af-969e-e392f362a873"
+  "title": "PostgreSQL",
+  "shortDescription": "",
+  "metaDescription": "Базы данных VK Cloud: управление инстансами PostgreSQL.",
+  "sectionTitle": "PostgreSQL",
+  "icon": "",
+  "weight": 4,
+  "uuid": "e13af8aa-1db2-40af-969e-e392f362a873",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

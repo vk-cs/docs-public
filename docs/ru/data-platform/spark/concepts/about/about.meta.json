@@ -1,8 +1,15 @@
 {
   "title": "О сервисе",
   "shortDescription": "Обзор сервиса Spark",
-  "metaDescription": "Обзор сервиса Spark",
+  "metaDescription": "Узнайте возможности сервиса Cloud Spark в VK Data Platform и для каких задач он подходит",
   "sectionTitle": "О сервисе",
   "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
   "uuid": "11741763-878a-491b-90d5-b35c13a41e33"
 }

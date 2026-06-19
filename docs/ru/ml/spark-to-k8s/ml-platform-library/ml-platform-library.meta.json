@@ -5,5 +5,10 @@
   "sectionTitle": "Библиотека Cloud ML Platform",
   "icon": "",
   "weight": 50,
-  "uuid": "0f090db7-9ad5-4355-a129-658d588ad894"
+  "uuid": "0f090db7-9ad5-4355-a129-658d588ad894",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

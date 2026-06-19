@@ -5,5 +5,14 @@
   "sectionTitle": "Управление файловыми хранилищами",
   "icon": "",
   "weight": 3,
-  "uuid": "f4ed330e-e87e-4095-8969-52aef044a839"
+  "uuid": "f4ed330e-e87e-4095-8969-52aef044a839",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

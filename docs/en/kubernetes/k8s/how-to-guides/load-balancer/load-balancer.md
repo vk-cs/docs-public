@@ -17,7 +17,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
 ## Preparatory steps
 
-1. Create a Kubernetes cluster with the most current version.
+{include(/en/_includes/_create-test-cluster.md)}
 
    Select the cluster parameters at your own discretion.
 
@@ -354,11 +354,13 @@ The tabs below describe different scenarios for testing load balancers:
 
 ## Delete unused resources
 
-1. If the Kubernetes resources you created are no longer needed, delete them.
+{include(/en/_includes/_remove-k8s-resources.md)} load balancers, delete them:
+
+1. Delete the created services and StatefulSet:
 
    {note:warn}
 
-   Together with the services, their respective balancers will be removed. This process can take a long time.
+   Along with the services, their respective balancers will be deleted. This process might take a long time.
 
    {/note}
 
@@ -391,9 +393,6 @@ The tabs below describe different scenarios for testing load balancers:
 
    {/tabs}
 
-1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project).
+1. Delete the static public IP address that was assigned to the `coffee-svc-public-static-ip` service.
 
-1. A running cluster consumes computing resources. If you no longer need it:
-
-   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

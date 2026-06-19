@@ -1,0 +1,16 @@
+{
+  "title": "Управление подами",
+  "shortDescription": "",
+  "metaDescription": "Управление подами",
+  "sectionTitle": "Управление подами",
+  "weight": 12,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": ""
+}

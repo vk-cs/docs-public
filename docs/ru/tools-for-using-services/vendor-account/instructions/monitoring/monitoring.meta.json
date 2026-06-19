@@ -5,5 +5,10 @@
   "sectionTitle": "Просмотр статистики по сервисам",
   "icon": "",
   "weight": 3,
-  "uuid": "b7d4e485-914c-4f1b-aadf-dc164487c265"
+  "uuid": "b7d4e485-914c-4f1b-aadf-dc164487c265",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

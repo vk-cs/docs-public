@@ -1,110 +1,150 @@
-VK Object Storage поддерживает технологию кросс-доменных запросов ([CORS](../../../concepts/access/s3-cors)).
+# {heading(Кросс-доменные запросы)[id=s3-instructions-cors]}
 
-В личном кабинете можно задать каждое правило по отдельности, а с помощью [API](/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api) — настроить конфигурацию правил CORS. Под настройкой конфигурации правил подразумевается, что все правила CORS для бакета передаются в VK Object Storage в формате XML в одном запросе.
+{var(s3)} поддерживает технологию кросс-доменных запросов ({linkto(../../../concepts/access/s3-cors#s3-concepts-cors)[text=CORS]}).
 
-## Просмотр конфигурации правил CORS
+В личном кабинете можно задать каждое правило по отдельности, а с помощью {linkto(../../../api/cors#s3-api-cors)[text=API]} — настроить конфигурацию правил CORS. Под настройкой конфигурации правил подразумевается, что все правила CORS для бакета передаются в {var(s3)} в формате XML в одном запросе.
+
+## {heading(Просмотр конфигурации правил CORS)[id=s3-instructions-cors-view]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
 1. Выберите проект.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите ![more-icon](/ru/assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Нажмите ![more-icon](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
 1. Перейдите на вкладку **CORS**.
 
 {/tab}
 
 {tab(API)}
 
-Воспользуйтесь методом `GET /?cors` [REST API сервиса](/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api#get_bucket_cors).
+Воспользуйтесь методом `GET /?cors` {linkto(../../../api/cors#api-spec-s3-get-bucket-cors)[text=REST API сервиса]}.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Добавление правила CORS)[id=add_rule_cors]}
+## {heading(Добавление правил CORS)[id=s3-instructions-cors-add]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
 1. Выберите проект.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите ![more-icon](/ru/assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Нажмите ![more-icon](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
 1. Перейдите на вкладку **CORS**.
-1. Нажмите кнопку **Добавить правило** или ![plus-icon](/ru/assets/plus-icon.svg "inline") **Добавить новое правило**, если в бакете уже есть добавленные правила CORS.
+1. Нажмите кнопку **Добавить правило** или ![plus-icon](../../../assets/plus-icon.svg "inline") **Добавить новое правило**, если в бакете уже есть добавленные правила CORS.
 
-{include(/ru/_includes/_cors.md)}
+{include(../../../_includes/_cors.md)}
 
 1. Нажмите кнопку **Добавить правило**.
 
 {/tab}
 
+{tab(API)}
+
+{note:warn}
+Добавление новой конфигурации правил удаляет текущую конфигурацию, в том числе правила, заданные в личном кабинете.
+{/note}
+
+Воспользуйтесь методом `PUT /?cors` {linkto(../../../api/cors#api-spec-s3-put-bucket-cors)[text=REST API сервиса]}.
+
+{/tab}
+
 {/tabs}
 
-## Редактирование правила CORS
+## {heading(Редактирование правил CORS)[id=s3-instructions-cors-edit]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
 1. Выберите проект.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите ![more-icon](/ru/assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Нажмите ![more-icon](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
 1. Перейдите на вкладку **CORS**.
-1. Нажмите на значок ![pencil-icon](/ru/assets/pencil-icon.svg "inline"), чтобы отредактировать правило.
-{include(/ru/_includes/_cors.md)}
+1. Нажмите на значок ![pencil-icon](../../../assets/pencil-icon.svg "inline"), чтобы отредактировать правило.
+
+{include(../../../_includes/_cors.md)}
+
 1. Нажмите кнопку **Сохранить**.
 
 {/tab}
 
 {/tabs}
 
-## Удаление правила CORS
+## {heading(Удаление правил CORS)[id=s3-instructions-cors-delete]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
 1. Выберите проект.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите ![more-icon](/ru/assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Нажмите ![more-icon](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
 1. Перейдите на вкладку **CORS**.
-1. Нажмите на значок ![trash-icon](/ru/assets/trash-icon.svg "inline"), чтобы удалить правило.
+1. Нажмите на значок ![trash-icon](../../../assets/trash-icon.svg "inline"), чтобы удалить правило.
 1. Подтвердите удаление.
 
 {/tab}
 
-{/tabs}
-
-## Установка конфигурации правил CORS
-
-{note:warn}Добавление новой конфигурации правил удаляет текущую конфигурацию, в том числе правила, заданные в личном кабинете.{/note}
-
-{tabs}
-
 {tab(API)}
 
-Воспользуйтесь методом `PUT /?cors` [REST API сервиса](/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api#set_bucket_cors).
+{note:warn}
+Операция полностью удаляет текущую конфигурацию правил CORS, в том числе правила, заданные в личном кабинете.
+{/note}
 
-{/tab}
-
-{/tabs}
-
-## Удаление конфигурации правил CORS
-
-{note:warn}Операция полностью удаляет текущую конфигурацию правил CORS, в том числе правила, заданные в личном кабинете.{/note}
-
-{tabs}
-
-{tab(API)}
-
-Воспользуйтесь методом `DELETE /?cors` [REST API сервиса](/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api#delete_bucket_cors).
+Воспользуйтесь методом `DELETE /?cors` {linkto(../../../api/cors#api-spec-s3-delete-bucket-cors)[text=REST API сервиса]}.
 
 {/tab}
 

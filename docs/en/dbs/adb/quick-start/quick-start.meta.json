@@ -5,5 +5,19 @@
   "sectionTitle": "Quick start",
   "icon": "",
   "weight": 1,
-  "uuid": "c313ff4c-7737-41cf-8414-acf1f436ff98"
+  "uuid": "c313ff4c-7737-41cf-8414-acf1f436ff98",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

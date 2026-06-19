@@ -1,12 +1,14 @@
+# {heading(Kubernetes компоненттерінің нұсқалары)[id=k8s-components]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers ішіндегі Kubernetes кластерінің нұсқасына қарай компоненттердің және [аддондардың](../../addons-and-settings/addons) қолдау көрсетілетін нұсқалары тәуелді болады.
+Cloud Containers ішіндегі Kubernetes кластерінің нұсқасына қарай компоненттердің және {linkto(../../addons-and-settings/addons#k8s-addons)[text=аддондардың]} қолдау көрсетілетін нұсқалары тәуелді болады.
 
-Кластерді [жаңарту](../../update) кезінде компоненттердің бір бөлігі де жаңартылады. Егер кластермен бірге жаңартылатын компонент жойылған болса, кластер жаңартылған кезде ол қайта қалпына келтіріледі.
+Кластерді {linkto(../../update#k8s-update)[text=жаңарту]} кезінде компоненттердің бір бөлігі де жаңартылады. Егер кластермен бірге жаңартылатын компонент жойылған болса, кластер жаңартылған кезде ол қайта қалпына келтіріледі.
 
-Аддондар кластермен бірге жаңартылмайды. Егер аддон үшін жаңал нұсқал қолжетімді болса, оларды [өз бетіңізше жаңарта аласыз](../../../instructions/addons/manage-addons#addon_nuskasyn_zhanartu).
+Аддондар кластермен бірге жаңартылмайды. Егер аддон үшін жаңа нұсқа қолжетімді болса, оларды {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-update)[text=өз бетіңізше жаңарта аласыз]}.
 
-## Компоненттер
+## {heading(Компоненттер)[id=k8s-components-supported-versions]}
 
 Кестеде Kubernetes кластерлерінің әртүрлі нұсқалары үшін компоненттердің қолдау көрсетілетін нұсқалары берілген.
 
@@ -124,9 +126,9 @@ Cloud Containers ішіндегі Kubernetes кластерінің нұсқас
 
 {/cut}
 
-## Аддондар
+## {heading(Аддондар)[id=k8s-components-addons]}
 
-Қажетті аддондар кластерге бөлек [орнатылуы](../../../instructions/addons/manage-addons#addondy_ornatu) мүмкін. Кестеде Kubernetes кластерлерінің әртүрлі нұсқалары үшін аддондардың қолдау көрсетілетін нұсқалары берілген.
+Қажетті аддондар кластерге бөлек {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-install)[text=орнатылуы]} мүмкін. Кестеде Kubernetes кластерлерінің әртүрлі нұсқалары үшін аддондардың қолдау көрсетілетін нұсқалары берілген.
 
 [cols="2,1,1,1,1,1", options="header"]
 |===
@@ -165,7 +167,7 @@ Cloud Containers ішіндегі Kubernetes кластерінің нұсқас
 |0.43.0
 |0.43.0
 
-|[Cloud Logging үшін Fluent Bit (logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2
@@ -246,14 +248,14 @@ Cloud Containers ішіндегі Kubernetes кластерінің нұсқас
 |[Capsule](https://github.com/projectcapsule/capsule)
 |0.4.6
 |0.4.6
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[cert-manager](https://github.com/cert-manager/cert-manager)
 |1.12.2/1.14.2
 |1.12.2
 |1.12.2
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Docker Registry](https://github.com/twuni/docker-registry.helm)
 |2.2.2
@@ -263,21 +265,21 @@ Cloud Containers ішіндегі Kubernetes кластерінің нұсқас
 
 |[Fluent Bit](https://github.com/fluent/fluent-bit)
 |0.43.0
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
-|[Cloud Logging үшін Fluent Bit (logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[GPU Operator](https://github.com/NVIDIA/gpu-operator)
 |24.9.0
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
 |4.7.1
@@ -289,25 +291,25 @@ Cloud Containers ішіндегі Kubernetes кластерінің нұсқас
 |1.19.3
 |1.16.4
 |1.16.4
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Istio Gateaway](https://github.com/istio/gateway-api)
 |1.19.3
 |1.16.4
 |1.16.4
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Jaeger](https://github.com/jaegertracing/jaeger)
 |0.71.4
 |0.71.4
 |0.71.4
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Kiali](https://github.com/kiali/kiali)
 |1.75.0
 |1.59.1
 |1.59.1
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
 |54.2.2
@@ -316,15 +318,14 @@ Cloud Containers ішіндегі Kubernetes кластерінің нұсқас
 |36.2.0
 
 |[Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
-|![](/kz/assets/no.svg "inline")
-|![](/kz/assets/no.svg "inline")
-|![](/kz/assets/no.svg "inline")
-|![](/kz/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 |===
 
 {/cut}
 
-`vk` жұрнағы бар Kube Prometheus Stack аддондар нұсқаларында [Kubernetes кластері ресурстарын тұтынуды болжау](../../../monitoring#forecast_consumption) кірістірілген. Бұл — VK Tech жасаған, аддонның базалық нұсқасында қолжетімді емес жетілдіру.
+`vk` жұрнағы бар Kube Prometheus Stack аддоны нұсқаларында {linkto(../../../monitoring#k8s-monitoring-forecast-consumption)[text=Kubernetes кластері ресурстарын тұтынуды болжау]} кірістірілген. Бұл — VK Tech жасаған, аддонның базалық нұсқасында қолжетімді емес жетілдіру.
 
-Болжау мүмкіндіктерін пайдалану үшін аддонды базалық нұсқадан VK Tech нұсқасына дейін [жаңартыңыз](../../../how-to-guides/update-monitoring-addon).
-
+Болжау мүмкіндіктерін пайдалану үшін аддонды базалық нұсқадан VK Tech нұсқасына дейін {linkto(../../../how-to-guides/update-monitoring-addon#k8s-update-monitoring-addon)[text=жаңартыңыз]}.

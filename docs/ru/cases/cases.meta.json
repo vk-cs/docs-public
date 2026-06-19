@@ -13,5 +13,10 @@
     "07bb9aa2-fbb1-49a9-8e3b-c1f0eebe6c6f",
     "93dbf37b-0efc-4e07-8700-ad0f9c568f0e",
     "d9c808a9-c21f-4fab-a684-8e155da7b409"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

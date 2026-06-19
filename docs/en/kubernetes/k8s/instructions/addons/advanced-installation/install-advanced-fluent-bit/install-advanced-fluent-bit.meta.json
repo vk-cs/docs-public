@@ -1,9 +1,23 @@
 {
-    "title": "Fluent Bit",
-      "shortDescription": "",
-      "metaDescription": "This section describes how to configure and install the Fluent Bit add-on.",
-    "sectionTitle": "Fluent Bit",
-    "icon": "",
-    "weight": 4,
-    "uuid": "52f24096-a851-44f9-b485-6591f743b784"
+  "title": "Fluent Bit",
+  "shortDescription": "",
+  "metaDescription": "This section describes how to configure and install the Fluent Bit add-on.",
+  "sectionTitle": "Fluent Bit",
+  "icon": "",
+  "weight": 4,
+  "uuid": "52f24096-a851-44f9-b485-6591f743b784",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

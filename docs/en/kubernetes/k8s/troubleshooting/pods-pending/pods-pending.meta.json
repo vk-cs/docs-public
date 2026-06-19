@@ -1,0 +1,14 @@
+{
+  "title": "Pods are stuck in the Pending state",
+  "shortDescription": "What to do if pods in a cluster do not transition from the Pending state to the Running state for too long",
+  "metaDescription": "How to diagnose and troubleshoot issues with Pending Kubernetes pods. How to solve problems with lack of resources, pod limits, PV/PVC problems, port conflicts, and others",
+  "sectionTitle": "Pods are stuck in the Pending state",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

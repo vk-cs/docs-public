@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud виртуалды желілік инфрақұрылымының мүмкіндіктерінің сипаттамасы: қауіпсіздік топтары, желілер, ішкі желілер, маршрутизаторлар, жүктеме теңгергіштері және VPN. Cloud Networks негізгі функцияларына теориялық шолу",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

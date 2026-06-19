@@ -1,15 +1,17 @@
-Это руководство поможет вам завершить перенос своей рабочей нагрузки (workload) после того, как сотрудники VK Cloud завершат [работы по миграции](/ru/kubernetes/k8s/concepts/az-migration-magnum) ресурсов кластера [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations) между [зонами доступности](/ru/start/concepts/architecture#az). Вы выполните следующие шаги:
+# {heading(Перенос рабочей нагрузки после миграции ресурсов)[id=k8s-post-migration]}
+
+Это руководство поможет вам завершить перенос своей рабочей нагрузки (workload) после того, как сотрудники {var(cloud)} завершат {linkto(/ru/kubernetes/k8s/concepts/az-migration-magnum#k8s-az-migration)[text=работы по миграции]} ресурсов кластера {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} между {linkto(/ru/start/concepts/architecture#architecture-az)[text=зонами доступности]}. Вы выполните следующие шаги:
 
 1. Определите, зависит ли ваша рабочая нагрузка (workload) от старой зоны доступности, так как в таком случае метаданные вашей рабочей нагрузки продолжат ссылаться на нее.
 1. Адаптируете рабочую нагрузку на уже смигрированных группах worker-узлов под новую зону доступности.
-1. Перенесете [stateful-нагрузку](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) на новые [PVC](/ru/kubernetes/k8s/reference/pvs-and-pvcs).
+1. Перенесете [stateful-нагрузку](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) на новые {linkto(/ru/kubernetes/k8s/reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=PVC]}.
 1. Если привязка к зоне доступности была установлена в helm-чартах или при настройке аддонов, обновите эти значения на новую зону доступности.
 
 {include(/ru/_includes/_az-migration-magnum.md)[tags=warn]}
 
 ## {heading(Подготовительные шаги)[id=k8s-post-migration-prepare]}
 
-1. Перейдите в кластер [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations), ресурсы которого были перенесены на другую зону доступности.
+1. Перейдите в кластер {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}, ресурсы которого были перенесены на другую зону доступности.
 {include(/ru/_includes/_az-migration-magnum.md)[tags=prep]}
 
 ## {heading({counter(az)}. Определите зависимость рабочей нагрузки от зоны доступности)[id=k8s-post-migration-check]}
@@ -20,9 +22,9 @@
 
 ## {heading({counter(az)}. Обновите конфигурации смигрированных групп узлов)[id=k8s-post-migration-update]}
 
-1. Дождитесь окончания работ по миграции ресурсов со стороны VK Cloud.
+1. Дождитесь окончания работ по миграции ресурсов со стороны {var(cloud)}.
 
-   Узлы смигрированных групп worker-узлов (то есть тех, которые были созданы до миграции) будут иметь следующие [метки](/ru/kubernetes/k8s/reference/labels-and-taints), указывающие на старую зону доступности:
+   Узлы смигрированных групп worker-узлов (то есть тех, которые были созданы до миграции) будут иметь следующие {linkto(/ru/kubernetes/k8s/reference/labels-and-taints#k8s-labels-and-taints)[text=метки]}, указывающие на старую зону доступности:
 
     - `topology.kubernetes.io/zone`,
     - `failure-domain.beta.kubernetes.io/zone`.
@@ -69,7 +71,7 @@
 
 ## {heading({counter(az)}. Перенесите stateful-нагрузку на новый PVC)[id=k8s-post-migration-stateful]}
 
-Так как работы по [миграции ресурсов](/ru/kubernetes/k8s/concepts/az-migration-magnum) со стороны VK Cloud уже завершены, диски, на которых расположены PV, уже физически изменили свою зону. Теперь вам нужно актуализировать их метаданные в кластере. 
+Так как работы по {linkto(/ru/kubernetes/k8s/concepts/az-migration-magnum#k8s-az-migration)[text=миграции ресурсов]} со стороны {var(cloud)} уже завершены, диски, на которых расположены PV, уже физически изменили свою зону. Теперь вам нужно актуализировать их метаданные в кластере. 
 
 Чтобы перенести stateful-нагрузку на PVC в новой зоне доступности,
 
@@ -84,7 +86,7 @@
 
 Доступны несколько способов переноса PVC:
 
-- с помощью снимка диска (через личный кабинет VK Cloud или через плагин Cinder CSI);
+- с помощью снимка диска (через личный кабинет {var(cloud)} или через плагин Cinder CSI);
 - с помощью утилиты `pv-migrate`;
 - с помощью ID диска.
 

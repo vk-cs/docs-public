@@ -4,5 +4,15 @@
   "metaDescription": "Шаблоны конфигурации виртуальных машин в VK Cloud",
   "sectionTitle": "Шаблоны конфигурации ВМ",
   "weight": 0,
-  "uuid": "3f4ab7f5-3680-47a3-91c5-ee59006299e9"
+  "uuid": "3f4ab7f5-3680-47a3-91c5-ee59006299e9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

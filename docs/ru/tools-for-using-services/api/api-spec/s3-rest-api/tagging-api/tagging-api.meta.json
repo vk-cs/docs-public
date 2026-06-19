@@ -1,0 +1,14 @@
+{
+  "title": "Tagging",
+  "shortDescription": "Установка, просмотр и удаление тегов объектов",
+  "metaDescription": "Все доступные методы для работы с маркировкой объектов тегами в VK Object Storage: добавить или изменить тег объекта (PutObjectTagging), получить тег объекта (GetObjectTagging), удалить все теги объекта (DeleteObjectTagging)",
+  "sectionTitle": "Tagging",
+  "icon": "",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

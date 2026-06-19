@@ -1,9 +1,23 @@
 {
-    "title": "Tariffication",
-      "shortDescription": "Rates for receiving VK Cloud services",
-      "metaDescription": "Rates for receiving VK Cloud services",
-    "sectionTitle": "Tariffication",
-    "icon": "",
-    "weight": 7,
-    "uuid": "f00a4006-6500-4ad7-951c-9e8e0f225139"
+  "title": "Tariffication",
+  "shortDescription": "Rates for receiving VK Cloud services",
+  "metaDescription": "Rates for receiving VK Cloud services",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 7,
+  "uuid": "f00a4006-6500-4ad7-951c-9e8e0f225139",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

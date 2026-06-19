@@ -1,8 +1,18 @@
 {
   "title": "worker-түйіндер топтарының баптаулары",
   "shortDescription": "worker-түйіндер топтарының барлық баптауларының тізімі",
-  "metaDescription": "Kubernetes кластерін құру кезінде немесе кластерге worker-түйіндер тобын қосу кезінде қандай баптауларды орнатуғал болатынын біліңіз",
+  "metaDescription": "Kubernetes кластерін құру кезінде немесе кластерге worker-түйіндер тобын қосу кезінде қандай баптауларды орнатуға болатынын біліңіз",
   "sectionTitle": "worker-түйіндер топтарының баптаулары",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

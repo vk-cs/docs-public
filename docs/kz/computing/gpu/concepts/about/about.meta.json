@@ -4,5 +4,14 @@
   "metaDescription": "Cloud GPU сервисінің мақсаты, ерекшеліктері мен мүмкіндіктері",
   "sectionTitle": "Қызмет туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

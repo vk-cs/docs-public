@@ -4,5 +4,12 @@
   "metaDescription": "Файлдық қойманы виртуалды машинаға қосу кезінде туындайтын «mount.nfs: No route to host» қатесін қалай түзетуге болады",
   "sectionTitle": "NFS файлдық қоймасы ВМ-ға қосылмайды",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

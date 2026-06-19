@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: веб-сайттарды жасау және басқару үшін Joomla сервисін өрістету қадамдары",
   "sectionTitle": "Joomla өрістету",
   "icon": "",
-  "weight": 17
+  "weight": 17,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

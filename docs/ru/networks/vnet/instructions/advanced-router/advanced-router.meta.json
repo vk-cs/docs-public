@@ -5,5 +5,10 @@
   "sectionTitle": "Продвинутые маршрутизаторы",
   "icon": "",
   "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "5598de38-c1b8-40e3-a7f8-14bad208e4b1"
 }

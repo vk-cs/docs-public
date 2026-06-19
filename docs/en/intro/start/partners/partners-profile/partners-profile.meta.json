@@ -1,10 +1,15 @@
 {
-    "title": "Partner's management console",
-      "shortDescription": "",
-      "metaDescription": "How to become a partner of the VK Cloud platform",
-    "sectionTitle": "Partner's management console",
-    "icon": "",
-    "disableGithub": true,
-    "weight": 1,
-    "uuid": "f191556a-8c40-459a-829a-2f44bc1d6785"
+  "title": "Partner's management console",
+  "shortDescription": "",
+  "metaDescription": "How to become a partner of the VK Cloud platform",
+  "sectionTitle": "Partner's management console",
+  "icon": "",
+  "disableGithub": true,
+  "weight": 1,
+  "uuid": "f191556a-8c40-459a-829a-2f44bc1d6785",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,14 @@
 {
-    "title": "Vision",
-      "shortDescription": "OpenAPI-спецификация сервиса Vision",
-      "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Vision",
-    "sectionTitle": "Vision",
-    "icon": "",
-    "weight": 3,
-    "uuid": "698924fa-a36b-44d0-ab12-5ace5ee33ed7"
+  "title": "Vision",
+  "shortDescription": "OpenAPI-спецификация сервиса Vision",
+  "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Vision",
+  "sectionTitle": "Vision",
+  "icon": "",
+  "weight": 3,
+  "uuid": "698924fa-a36b-44d0-ab12-5ace5ee33ed7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

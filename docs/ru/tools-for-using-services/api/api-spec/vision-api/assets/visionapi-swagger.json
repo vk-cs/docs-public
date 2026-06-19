@@ -93,7 +93,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/persons_set_request"
+                    "$ref": "#/components/schemas/persons_set_request"
                   }
                 ]
               }
@@ -144,7 +144,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/persons_delete_request"
+                    "$ref": "#/components/schemas/persons_delete_request"
                   }
                 ]
               }
@@ -195,13 +195,13 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/persons_truncate_request"
+                    "$ref": "#/components/schemas/persons_truncate_request"
                   }
                 ]
               }
             }
-           }
-         },
+          }
+        },
         "responses": {
           "200": {
             "description": "Операция выполнена успешно",
@@ -246,10 +246,10 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/persons_recognize_request"
+                    "$ref": "#/components/schemas/persons_recognize_request"
                   }
                 ]
-              } 
+              }
             }
           }
         },
@@ -297,7 +297,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/objects_detect_request"
+                    "$ref": "#/components/schemas/objects_detect_request"
                   }
                 ]
               }
@@ -348,7 +348,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/docs_detect_request"
+                    "$ref": "#/components/schemas/docs_detect_request"
                   }
                 ]
               }
@@ -399,7 +399,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/docs_recognize_request"
+                    "$ref": "#/components/schemas/docs_recognize_request"
                   }
                 ]
               }
@@ -450,7 +450,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/text_recognize_request"
+                    "$ref": "#/components/schemas/text_recognize_request"
                   }
                 ]
               }
@@ -501,7 +501,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/scene_text_recognize_request"
+                    "$ref": "#/components/schemas/scene_text_recognize_request"
                   }
                 ]
               }
@@ -552,7 +552,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/photo_improve_request"
+                    "$ref": "#/components/schemas/photo_improve_request"
                   }
                 ]
               }
@@ -603,7 +603,7 @@
               "schema": {
                 "oneOf": [
                   {
-                  "$ref": "#/components/schemas/adult_detect_request"
+                    "$ref": "#/components/schemas/adult_detect_request"
                   }
                 ]
               }
@@ -1972,7 +1972,24 @@
               "minItems": 4,
               "maxItems": 4
             },
-            "example": [[0, 0], [0, 5], [5, 5], [5, 0]]
+            "example": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                0
+              ]
+            ]
           },
           "text": {
             "type": "string",

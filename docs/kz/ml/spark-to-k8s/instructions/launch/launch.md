@@ -1,8 +1,10 @@
+# {heading(Spark кластерінде тапсырмаларды іске қосу)[id=mlspark-instructions-launch]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Құрылған](/kz/ml/spark-to-k8s/instructions/create) Cloud Spark кластерінде тапсырманы іске қосу үшін:
+{linkto(../create#mlspark-instructions-create)[text=Құрылған]} Cloud Spark кластерінде тапсырманы іске қосу үшін:
 
-1. Cloud ML Platform кітапханасында [авторизациядан өтіңіз](../../ml-platform-library/authz).
+1. Cloud ML Platform кітапханасында {linkto(../../ml-platform-library/authz#mlspark-library-authz)[text=авторизациядан өтіңіз]}.
 
     {cut(Python скриптінің мысалы)}
 
@@ -17,18 +19,18 @@
 
 1. `job_manifest` манифестін келесі тәсілдердің бірімен жасаңыз:
 
-    - [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#get_default_manifest) әдісі арқылы стандартты манифест алыңыз.
-    - YAML-файлдан манифесті [get_manifest_from_yaml_file](../../ml-platform-library/library-reference/spark-jobs#get_manifest_from_yaml_file) әдісі арқылы жүктеңіз.
+    - [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-get_default_manifest) әдісі арқылы стандартты манифест алыңыз.
+    - YAML-файлдан манифесті {linkto(../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file)[text=get_manifest_from_yaml_file]} әдісі арқылы жүктеңіз.
 
 1. (Опционалды) Файлдарды немесе тәуелділіктерді сақтау үшін қосымша бакеттер [жасаңыз](/kz/storage/s3/instructions/buckets/create-bucket).
 
     {note:info}
 
-    Әдепкі бойынша Cloud Spark кластері аты `s3_bucket_name` параметрінде көрсетілген бакетке қолжетімділікке ие. Бұл атауды [get_clusters](../../ml-platform-library/library-reference/clusters#get_clusters) әдісі арқылы немесе VK Cloud жеке кабинетінің **ML Platform → Spark в k8s** бөлімінде Cloud Spark кластері қасиеттері бетінде алуға болады.
+    Әдепкі бойынша Cloud Spark кластері аты `s3_bucket_name` параметрінде көрсетілген бакетке қолжетімділікке ие. Бұл атауды {linkto(../../ml-platform-library/library-reference/clusters#mlspark-library-reference-clusters-get_clusters)[text=get_clusters]} әдісі арқылы немесе {var(cloud)} жеке кабинетінің **ML Platform → Spark в k8s** бөлімінде Cloud Spark кластері қасиеттері бетінде алуға болады.
 
     {/note}
 
-1. (Опционалды) Қосымша жасалған бакеттерге Cloud Spark кластеріне [қолжетімділік беріңіз](../../instructions/buckets).
+1. (Опционалды) Қосымша жасалған бакеттерге Cloud Spark кластеріне {linkto(../../instructions/buckets#mlspark-instructions-buckets)[text=қолжетімділік беріңіз]}.
 1. (Опционалды) Spark тапсырмасын орындау үшін қажет файлдар мен тәуелділіктерді бакеттерге [жүктеңіз](/kz/storage/s3/instructions/objects/upload-object).
 
     {cut(Python скриптінің мысалы)}
@@ -55,7 +57,7 @@
       CLUSTER_ID = clusters[0].id
       BUCKET_NAME = clusters[0].s3_bucket_name
       JOB_NAME = "sample-spark-job"
-        
+
       #Задать переменные окружения для драйвера Spark
       job_manifest.add_driver_env(
           [{"name": "S3_INPUT_PATH", "value": "s3a://{BUCKET_NAME}/input"},
@@ -92,13 +94,13 @@
 
       {/cut}
 
-    Манифесті баптаудың көбірек мысалдары [get_default_manifest-signature](../../ml-platform-library/library-reference/spark-jobs#get_default_manifest_additional_info) әдісінің сипаттамасында келтірілген.
+    Манифесті баптаудың көбірек мысалдары {linkto(../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-get_default_manifest-signature)[text=get_default_manifest-signature]} әдісінің сипаттамасында келтірілген.
 
-1. Spark тапсырмасын кластерге [spark_submit_job](../../ml-platform-library/library-reference/spark-jobs#spark_submit_job) әдісі арқылы жіберіңіз. Қолданба коды бар файлға жолды көрсету үшін тәсілдердің бірін пайдаланыңыз:
+1. Spark тапсырмасын кластерге {linkto(../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-spark_submit_job)[text=spark_submit_job]} әдісі арқылы жіберіңіз. Қолданба коды бар файлға жолды көрсету үшін тәсілдердің бірін пайдаланыңыз:
 
     {tabs}
-    
-    {tab(Жергілікті файл)}
+
+    {tab(Локальный файл)}
     `spark_submit_job` әдісінің `pycode_file_path` аргументінде Python қолданбасы файлына жергілікті жолды көрсетіңіз.
 
     Python скриптінің мысалы:
@@ -108,9 +110,9 @@
     ```
 
     {/tab}
-    
-    {tab(Docker-образындағы файл)}
-        
+
+    {tab(Файл в Docker-образе)}
+
     Қолданба манифестінің `main_app_file` өрісінде Cloud Spark кластерінің Docker-образына кірістірілген қолданба файлына жолды көрсетіңіз.
 
     Python скриптінің мысалы:
@@ -121,17 +123,17 @@
     ```
 
     {/tab}
-    
-    {tab(Бакеттегі файл)}
-    
+
+    {tab(Файл в бакете)}
+
     Қолданба манифестінің `main_app_file` өрісінде бакетке жүктелген қолданба файлына жолды көрсетіңіз.
 
     Әртүрлі тілдерге арналған скрипт мысалы:
 
     {tabs}
-    
+
     {tab(Scala)}
-        
+
     ```scala
     job_manifest.spec_type = "Scala"
     job_manifest.main_class = "org.apache.spark.examples.<имя главного класса>"
@@ -141,9 +143,9 @@
     ```
 
     {/tab}
-    
+
     {tab(Java)}
-    
+
     ```java
     job_manifest.spec_type = "Java"
     job_manifest.main_class = "org.apache.spark.examples.<имя главного класса>"
@@ -153,9 +155,9 @@
     ```
 
     {/tab}
-    
+
     {tab(Python)}
-    
+
     ```python
     job_manifest.main_app_file = f"s3a://{BUCKET_NAME}/spark-files/<ИМЯ_ПРИЛОЖЕНИЯ>.py"
 
@@ -174,6 +176,6 @@
 
 {note:info}
 
-Spark тапсырмаларын іске қосудың толық мысалдары [Spark тапсырмаларымен базалық жұмыс](../../how-to-guides/submit-basic-job-pi) және [Spark тапсырмаларымен кеңейтілген жұмыс](../../how-to-guides/submit-advanced-job-clickhouse) бөлімдерінде келтірілген.
+Spark тапсырмаларын іске қосудың толық мысалдары {linkto(../../how-to-guides/submit-basic-job-pi#mlspark-htg-basic)[text=Spark тапсырмаларымен базалық жұмыс]} және {linkto(../../how-to-guides/submit-advanced-job-clickhouse#mlspark-htg-advanced)[text=Spark тапсырмаларымен кеңейтілген жұмыс]} бөлімдерінде келтірілген.
 
 {/note}

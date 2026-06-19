@@ -1,0 +1,18 @@
+{
+  "title": "Множественные очереди (Multiqueue)",
+  "shortDescription": "Множественные очереди (Multiqueue): условия для включения, сценарии использования, ограничения",
+  "metaDescription": "Множественные очереди (Multiqueue): условия для включения, сценарии использования, ограничения.",
+  "sectionTitle": "Множественные очереди (Multiqueue)",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

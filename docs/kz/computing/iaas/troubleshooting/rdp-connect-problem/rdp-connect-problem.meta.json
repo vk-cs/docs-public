@@ -4,5 +4,12 @@
   "metaDescription": "Барлық қолжетімді сеанстар бос емес болса, виртуалды машинаға RDP арқылы қалай қосылуға болады",
   "sectionTitle": "RDP арқылы ВМ-ге қосылу мәселесі",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

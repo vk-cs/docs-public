@@ -1,31 +1,33 @@
+# {heading(MLflow Deploy инстансын басқару)[id=mlflowdeploy-instructions-manage]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-MLflow Deploy инстансын басқару VK Cloud жеке кабинеті арқылы қолжетімді. Инстансты [Cloud ML Platform](../../../mlplatform-lib/lib-reference) кітапханасы немесе [MLflow Deployment Client](../../how-to-guides/manage-mlflow-client) көмегімен де жоюға болады.
+MLflow Deploy инстансын басқару {var(cloud)} жеке кабинеті арқылы қолжетімді. Инстансты [Cloud ML Platform](../../../mlplatform-lib/lib-reference) кітапханасы немесе [MLflow Deployment Client](../../how-to-guides/manage-mlflow-client) көмегімен де жоюға болады.
 
-## {heading(Виртуалды машина түрін өзгерту)[id=change-vm-type]}
+## {heading(Виртуалды машина түрін өзгерту)[id=mlflowdeploy-instructions-manage-change-vm-type]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Қажетті инстанс үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Виртуалды машина түрін өзгерту** тармағын таңдаңыз.
 1. Ашылған терезеде ВМ конфигурациялары тізімін сүзу үшін виртуалды машиналардың [санатын](/kz/computing/iaas/concepts/vm/flavor) таңдаңыз.
 1. **Виртуалды машина түрі** өрісінде ВМ-нің алдын ала орнатылған конфигурациясын (CPU және RAM) таңдаңыз.
 1. **Сақтау** батырмасын басыңыз.
 
-## {heading(Диск өлшемін өзгерту)[id=change-disk-size]}
+## {heading(Диск өлшемін өзгерту)[id=mlflowdeploy-instructions-manage-change-disk-size]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Қажетті инстанс үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Диск өлшемін өзгерту** тармағын таңдаңыз.
 1. Ашылған терезеде диск өлшемін өзгертіңіз. Ең аз мәні — 50 ГБ.
 1. **Сақтау** батырмасын басыңыз.
 
-## {heading(Инстансты тоқтату және іске қосу)[id=pause]}
+## {heading(Инстансты тоқтату және іске қосу)[id=mlflowdeploy-instructions-manage-pause]}
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірден бірнеше инстансты тоқтатуға немесе іске қосуға болады.
 
 Инстансты тоқтату үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Инстансты келесі тәсілдердің бірімен тоқтатыңыз:
 
@@ -35,7 +37,7 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
 
 Инстансты іске қосу үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Инстансты келесі тәсілдердің бірімен іске қосыңыз:
 
@@ -43,7 +45,7 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
     - Жалауша арқылы инстансты таңдап, содан кейін **Іске қосу** батырмасын басыңыз.
 1. Әрекетті растаңыз.
 
-## {heading(Инстансты қайта жүктеу)[id=reload]}
+## {heading(Инстансты қайта жүктеу)[id=mlflowdeploy-instructions-manage-reload]}
 
 {note:info}
 Қайта жүктеу инстанс ВМ-інің операциялық жүйесінің жұмысын дұрыс аяқтауды (graceful shutdown) білдіреді.
@@ -53,7 +55,7 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
 
 Инстансты қайта жүктеу үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Инстансты келесі тәсілдердің бірімен қайта жүктеңіз:
 
@@ -61,7 +63,7 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
     - Жалауша арқылы инстансты таңдап, содан кейін **Қайта жүктеу** батырмасын басыңыз.
 1. Әрекетті растаңыз.
 
-## {heading(Инстансты мәжбүрлі түрде қайта іске қосу)[id=force-reload]}
+## {heading(Инстансты мәжбүрлі түрде қайта іске қосу)[id=mlflowdeploy-instructions-manage-force-reload]}
 
 Егер инстанс жауап бермесе, мәжбүрлі қайта іске қосуды пайдаланыңыз.
 
@@ -71,26 +73,26 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
 
 {/note}
 
-Инстансқа сілтемемен бөлісу үшін:
+Инстансты мәжбүрлі түрде қайта іске қосу үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
-1. Қажетті инстанс үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **MLflow-ке сілтемені көшіру** тармағын таңдаңыз.
+1. Қажетті инстанс үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Мәжбүрлі түрде қайта іске қосу** тармағын таңдаңыз.
 1. Әрекетті растаңыз.
 
-## {heading(Инстансқа сілтемені көшіру)[id=copy-link]}
+## {heading(Инстансқа сілтемені көшіру)[id=mlflowdeploy-instructions-manage-copy-link]}
 
-Инстансқа сілтемені басқа пайдаланушылармен бөлісе аласыз. Осы сілтеме арқылы пайдаланушылар инстанс консолін ашып, онымен жұмыс істей алады.
+Сіз инстансқа сілтемені басқа пайдаланушылармен бөлісе аласыз. Осы сілтеме арқылы пайдаланушылар инстанс консолін ашып, онымен жұмыс істей алады.
 
 Инстансқа сілтемемен бөлісу үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
-1. Қажетті инстанс үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып, **MLflow сілтемесін көшіру** тармағын таңдаңыз.
+1. Қажетті инстанс үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **MLflow-ке сілтемені көшіру** тармағын таңдаңыз.
 
 Сілтеме алмасу буферіне көшіріледі, ол инстанстың DNS-атына сәйкес келеді.
 
-## {heading(Инстансты жою)[id=delete]}
+## {heading(Инстансты жою)[id=mlflowdeploy-instructions-manage-delete]}
 
 {tabs}
 
@@ -98,7 +100,7 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірден бірнеше инстансты жоюға болады.
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Инстансты келесі тәсілдердің бірімен жойыңыз:
 
@@ -110,13 +112,13 @@ MLflow Deploy инстансын басқару VK Cloud жеке кабинет
 
 {tab(Cloud ML Platform кітапханасы)}
 
-[delete_instance](../../../mlplatform-lib/lib-reference#delete_instance) әдісін пайдаланыңыз.
+[delete_instance](../../../mlplatform-lib/lib-reference#mllib-lib-reference-delete_instance) әдісін пайдаланыңыз.
 
 {/tab}
 
 {tab(Deployment Client кітапханасы)}
 
-[delete_endpoint](../../how-to-guides/manage-mlflow-client#delete_deploy_server) әдісін пайдаланыңыз.
+[delete_endpoint](../../how-to-guides/manage-mlflow-client#mlflowdeploy-htg-manage-ml-instance-manage-delete_deploy_server) әдісін пайдаланыңыз.
 
 {/tab}
 

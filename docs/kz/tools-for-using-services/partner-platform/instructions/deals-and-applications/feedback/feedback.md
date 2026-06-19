@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 # Кері байланыс
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 Серіктестік бағдарлама шарттарына сәйкес серіктес айына кемінде 1 рет VK Cloud-қа тіркелген мәмілелер бойынша кері байланыс жібереді.
 

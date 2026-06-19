@@ -1,9 +1,14 @@
 {
-    "title": "Настройка Canary Deployment Ingress",
-      "shortDescription": "Как развернуть кластер Kubernetes в проекте VK Cloud и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations",
-      "metaDescription": "Эта статья поможет вам развернуть кластер Kubernetes и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations Canary Deployment — это спос",
-    "sectionTitle": "Настройка Canary Deployment Ingress",
-    "icon": "",
-    "weight": 7,
-    "uuid": "40e7fd57-2b57-4a5c-9496-77ad0d9f2992"
+  "title": "Настройка Canary Deployment Ingress",
+  "shortDescription": "Как развернуть кластер Kubernetes в проекте {var(cloud)} и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations",
+  "metaDescription": "Эта статья поможет вам развернуть кластер Kubernetes и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations Canary Deployment — это спос",
+  "sectionTitle": "Настройка Canary Deployment Ingress",
+  "icon": "",
+  "weight": 7,
+  "uuid": "40e7fd57-2b57-4a5c-9496-77ad0d9f2992",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

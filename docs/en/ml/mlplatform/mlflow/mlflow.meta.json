@@ -10,5 +10,19 @@
       "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow"
     }
   ],
-  "uuid": "18fe60a7-f606-4dec-92ff-2fea19521c86"
+  "uuid": "18fe60a7-f606-4dec-92ff-2fea19521c86",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,19 @@
   "sectionTitle": "Image recognition",
   "icon": "",
   "weight": 3,
-  "uuid": "fb860238-5298-476a-bf85-4ba4d8768aba"
+  "uuid": "fb860238-5298-476a-bf85-4ba4d8768aba",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

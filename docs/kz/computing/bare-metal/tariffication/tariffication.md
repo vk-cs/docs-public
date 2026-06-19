@@ -1,24 +1,26 @@
+# {heading(Тарификация)[id=bare-metal-tariffication]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Bare Metal сервисін пайдалану кезіндегі тарификация таңдалған конфигурация құнына, сондай-ақ егер пайдаланылса, қосымша сервистердің құнына байланысты.
 
-Бағалар [прайс-парақта](https://cloud.vk.com/pricelist) келтірілген. Платформа сервистерінің төлемі туралы толығырақ [Биллинг](/kz/intro/billing) бөлімінде оқыңыз.
+Бағалар [прайс-парақта](https://cloud.vk.com/pricelist) келтірілген. Платформа сервистерінің төлемі туралы толығырақ {linkto(../../../intro/billing#billing)[text=Биллинг]} бөлімінде оқыңыз.
 
-## {heading(Тарифтеледі)[id=paid-resources]}
+## {heading(Тарифицируется)[id=bare-metal-tariffication-paid-resources]}
 
 - Bare Metal сервері: таңдалған конфигурацияның айлық құны негізінде әр сағат сайын.
 
   Жалға алудың келесі сағатын төлеуге баланс жеткіліксіз болған жағдайда, сервердің жұмысы тоқтатылады.
 
-- [Виртуалды машина](/kz/computing/iaas/tariffication): аралық хост ретінде (егер пайдаланылса).
-- [Жария IP-адрес](/kz/networks/vnet/tariffication): аралық хост үшін (егер пайдаланылса).
+- {linkto(../../../computing/iaas/tariffication#tariffication)[text=Виртуальная машина]}: аралық хост ретінде (егер пайдаланылса).
+- {linkto(../../../networks/vnet/tariffication#tariffication)[text=Публичный IP-адрес]}: аралық хост үшін (егер пайдаланылса).
 
-## {heading(Тарифтелмейді)[id=non-tariffed-resources]}
+## {heading(Не тарифицируется)[id=bare-metal-non-tariffed-resources]}
 
 - Кіріс және шығыс трафик.
-- Қосымша лицензияны қажет етпейтін VK Cloud ұсынатын Bare Metal образдары.
+- Қосымша лицензияны қажет етпейтін {var(cloud)} ұсынатын Bare Metal образдары.
 
-## {heading(Жалға алу құнын есептеу мысалы)[id=billing-example]}
+## {heading(Жалға алу құнын есептеу мысалы)[id=bare-metal-billing-example]}
 
 Сервер жалға берілген сәттен бастап дербес шоттан айына 720 сағат есебімен әр пайдалану сағаты үшін жалдау құны есептен шығарылады.
 

@@ -1,16 +1,18 @@
+# {heading(Кластер түйіндерін масштабтау)[id=k8s-instructions-scale]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Сіз Cloud Containers [кластерін масштабтауды](../../concepts/scale) қолмен орындай аласыз немесе кластерді жұмыс жүктемелерінің ([workloads](https://kubernetes.io/docs/concepts/workloads/)) өзгеріп отыратын қажеттіліктеріне бейімдеу үшін автоматты масштабтауды баптай аласыз.
+Сіз Cloud Containers {linkto(../../concepts/scale#k8s-scale)[text=кластерін масштабтауды]} қолмен орындай аласыз немесе кластерді жұмыс жүктемелерінің ([workloads](https://kubernetes.io/docs/concepts/workloads/)) өзгеріп отыратын қажеттіліктеріне бейімдеу үшін автоматты масштабтауды баптай аласыз.
 
-## Тік масштабтау
+## {heading(Тік масштабтау)[id=k8s-instructions-scale-vertical]}
 
-Масштабтаудың бұл түрі master-түйіндерге және worker-түйіндер топтарына қолданылады. Масштабтау барысында кластер түйіндері үшін [виртуалды машиналар шаблондары](../../concepts/flavors) өзгереді, ал түйіндер саны өзгеріссіз қалады. Егер топтағы worker-түйіндер санын өзгерту қажет болса, [көлденең масштабтауды орындаңыз](#koldenen_masshtabtau).
+Масштабтаудың бұл түрі master-түйіндерге және worker-түйіндер топтарына қолданылады. Масштабтау барысында кластер түйіндері үшін {linkto(../../concepts/flavors#k8s-flavors)[text=виртуалды машиналар шаблондары]} өзгереді, ал түйіндер саны өзгеріссіз қалады. Егер топтағы worker-түйіндер санын өзгерту қажет болса, {linkto(k8s-instructions-scale-horizontal)[text=көлденең масштабтауды орындаңыз]}.
 
-### {heading(Master-түйіндерді масштабтау)[id=scale_master_nodes]}
+### {heading(Master-түйіндерді масштабтау)[id=k8s-instructions-scale-vertical-master-nodes]}
 
-1. [Тік масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз](../../concepts/scale).
+1. {linkto(../../concepts/scale#k8s-scale)[text=Тік масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз]}.
 
-1. [Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau).
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз]}.
 
 1. Масштабтауды орындаңыз.
 
@@ -18,7 +20,7 @@
 
    Масштабтау барысында master-түйіндер орналасқан виртуалды машиналар кезекпен қайта іске қосылады.
 
-   Егер кластер [бір master-түйінді қамтыса](../../concepts/architecture#cluster_topology), масштабтау кезінде Kubernetes API қолжетімсіз болады.
+   Егер кластер {linkto(../../concepts/architecture#k8s-architecture-topology)[text=бір master-түйінді қамтыса]}, масштабтау кезінде Kubernetes API қолжетімсіз болады.
 
    {/note}
 
@@ -29,15 +31,15 @@
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер** → **Kubernetes кластерлері** бөліміне өтіңіз.
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
-   1. Қажетті кластер үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып, **Master виртуалды машинасының түрін өзгерту** тармағын таңдаңыз.
-   1. Қолжетімді [конфигурация үлгілерінің](/kz/computing/iaas/concepts/vm/flavor) тізімін сүзу үшін виртуалды машина санатын таңдаңыз.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
+   1. Қажетті кластер үшін ![](../../../../assets/more-icon.svg "inline") белгішесін басып, **Master виртуалды машинасының түрін өзгерту** тармағын таңдаңыз.
+   1. Қолжетімді {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=конфигурация үлгілерінің]} тізімін сүзу үшін виртуалды машина санатын таңдаңыз.
 
       {note:info}
 
       Жоғары өнімді CPU бар үлгілер [техникалық қолдау](/kz/contacts) қызметіне сұрау бойынша қолжетімді. Бұл үлгілерді пайдалану үшін **Жоғары өнімді CPU** опциясын таңдаңыз.
 
-      Толығырақ [Қолжетімді есептеу ресурстары](../../concepts/flavors#konfiguraciya_kalyptary) бөлімінде.
+      Толығырақ {linkto(../../concepts/flavors#k8s-flavors-vm-flavor)[text=Қолжетімді есептеу ресурстары]} бөлімінде.
 
       {/note}
    1. Ашылмалы тізімнен қажетті виртуалды машина шаблонын таңдаңыз.
@@ -48,16 +50,16 @@
    {tab(Terraform)}
 
    {note:info}
-   Terraform арқылы басқару тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
    {/note}
  
-   1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобағал [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+   1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобаға {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
 
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
 
-   1. Кластердің master-түйіндері үшін пайдаланылатын жаңал виртуалды машина түрін анықтаңыз:
+   1. Кластердің master-түйіндері үшін пайдаланылатын жаңа виртуалды машина түрін анықтаңыз:
 
       1. Команданы орындаңыз:
 
@@ -72,12 +74,12 @@
    1. Terraform конфигурациясы файлында қажетті [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) дереккөзін өзгертіңіз:
 
       ```hcl
-      # Уже существующий источник данных с типом виртуальной машины для кластера
+      # Кластер үшін виртуалды машина түрі бар бұрыннан бар дереккөз
       data "vkcs_compute_flavor" "k8s-master-flavor" {
          name = "<имя нового типа виртуальной машины>"
       }
 
-      # Уже описанная конфигурация для кластера
+      # Кластер үшін бұрыннан сипатталған конфигурация
       resource "vkcs_kubernetes_cluster" "k8s-cluster" {
          name                = "k8s-cluster"
          master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
@@ -108,17 +110,17 @@
 
    {/tabs}
 
-### {heading(Worker-түйіндер топтарын масштабтау)[id=scale_worker_nodes]}
+### {heading(Worker-түйіндер топтарын масштабтау)[id=k8s-instructions-scale-vertical-worker-nodes]}
 
-1. [Тік масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз](../../concepts/scale).
+1. {linkto(../../concepts/scale#k8s-scale)[text=Тік масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз]}.
 
-1. Масштабтауғал дайындалыңыз:
+1. Масштабтауға дайындалыңыз:
 
-   1. [Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau).
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз]}.
    1. Егер есептеу ресурстарының көлемін азайтуды жоспарласаңыз, worker-түйіндер тобындағы ресурстардың қорытынды көлемі жұмыс жүктемесін орналастыру үшін жеткілікті болатынына көз жеткізіңіз.
    1. Жұмыс жүктемесі үшін репликация бапталғанына және репликалар түйіндер тобындағы бірнеше worker-түйінге бөлінгеніне көз жеткізіңіз.
 
-      Егер түйіндер тобында тек бір ғана worker-түйін болса, [топтағы түйіндер санын арттырыңыз](#koldenen_masshtabtau) және мүмкін болса, репликацияны баптаңыз.
+      Егер түйіндер тобында тек бір ғана worker-түйін болса, {linkto(k8s-instructions-scale-horizontal)[text=топтағы түйіндер санын арттырыңыз]} және мүмкін болса, репликацияны баптаңыз.
 
 1. Масштабтауды орындаңыз.
 
@@ -137,16 +139,16 @@
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер** → **Kubernetes кластерлері** бөліміне өтіңіз.
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
    1. Осы кластердегі қажетті түйіндер тобын табыңыз.
-   1. Осы түйіндер тобы үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып, **Виртуалды машина түрін өзгерту** тармағын таңдаңыз.
-   1. Қолжетімді [конфигурация үлгілерінің](/kz/computing/iaas/concepts/vm/flavor) тізімін сүзу үшін виртуалды машина санатын таңдаңыз. 
+   1. Осы түйіндер тобы үшін ![](../../../../assets/more-icon.svg "inline") белгішесін басып, **Виртуалды машина түрін өзгерту** тармағын таңдаңыз.
+   1. Қолжетімді {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=конфигурация үлгілерінің]} тізімін сүзу үшін виртуалды машина санатын таңдаңыз. 
 
       {note:info}
 
       Жоғары өнімді CPU бар үлгілер [техникалық қолдау](/kz/contacts) қызметіне сұрау бойынша қолжетімді. Бұл үлгілерді пайдалану үшін **Жоғары өнімді CPU** опциясын таңдаңыз.
 
-      Толығырақ [Қолжетімді есептеу ресурстары](../../concepts/flavors#konfiguraciya_kalyptary) бөлімінде.
+      Толығырақ {linkto(../../concepts/flavors#k8s-flavors-vm-flavor)[text=Қолжетімді есептеу ресурстары]} бөлімінде.
 
       {/note}
 
@@ -158,16 +160,16 @@
    {tab(Terraform)}
    
    {note:info}
-   Terraform арқылы басқару тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
    {/note}
 
-   1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобағал [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+   1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобаға {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
 
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
 
-   1. Кластер түйіндері тобындағы worker-түйіндер үшін пайдаланылатын жаңал виртуалды машина түрін анықтаңыз:
+   1. Кластер түйіндері тобындағы worker-түйіндер үшін пайдаланылатын жаңа виртуалды машина түрін анықтаңыз:
 
       1. Команданы орындаңыз:
 
@@ -182,12 +184,12 @@
    1. Terraform конфигурациясы файлында қажетті [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) дереккөзін өзгертіңіз:
 
       ```hcl
-      # Уже существующий источник данных с типом виртуальной машины для группы worker-узлов
+      # Түйіндер тобындағы worker-түйіндер үшін виртуалды машина түрі бар бұрыннан бар дереккөз
       data "vkcs_compute_flavor" "k8s-node-group-flavor" {
          name = "<имя нового типа виртуальной машины>"
       }
 
-      # Уже описанная конфигурация для группы узлов
+      # Түйіндер тобы үшін бұрыннан сипатталған конфигурация
       resource "vkcs_kubernetes_node_group" "k8s-node-group" {
         name = "k8s-node-group"
         cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
@@ -219,15 +221,15 @@
 
    {/tabs}
 
-## Көлденең масштабтау
+## {heading(Көлденең масштабтау)[id=k8s-instructions-scale-horizontal]}
 
-Масштабтаудың бұл түрі worker-түйіндер топтарына қолданылады. Масштабтау барысында топтағы worker-түйіндер саны өзгереді, ал worker-түйіндер үшін [виртуалды машиналар шаблондары](../../concepts/flavors) өзгеріссіз қалады. Егер осы шаблондарды master-түйіндер немесе worker-түйіндер үшін өзгерту қажет болса, [тік масштабтауды орындаңыз](#tik_masshtabtau).
+Масштабтаудың бұл түрі worker-түйіндер топтарына қолданылады. Масштабтау барысында топтағы worker-түйіндер саны өзгереді, ал worker-түйіндер үшін {linkto(../../concepts/flavors#k8s-flavors)[text=виртуалды машиналар шаблондары]} өзгеріссіз қалады. Егер осы шаблондарды master-түйіндер немесе worker-түйіндер үшін өзгерту қажет болса, {linkto(#k8s-instructions-scale-vertical)[text=тік масштабтауды орындаңыз]}.
 
-### Worker-түйіндер топтарын масштабтау
+### {heading(Worker-түйіндер топтарын масштабтау)[id=k8s-instructions-scale-horizontal-worker-nodes]}
 
-1. [Көлденең масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз](../../concepts/scale).
+1. {linkto(../../concepts/scale#k8s-scale)[text=Көлденең масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз]}.
 
-1. [Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau).
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз]}.
 
 1. Масштабтауды орындаңыз:
 
@@ -238,13 +240,13 @@
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер** → **Kubernetes кластерлері** бөліміне өтіңіз.
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
    1. Осы кластердегі қажетті түйіндер тобын табыңыз.
-   1. Осы түйіндер тобы үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып, **Масштабтау баптаулары** тармағын таңдаңыз.
+   1. Осы түйіндер тобы үшін ![](../../../../assets/more-icon.svg "inline") белгішесін басып, **Масштабтау баптаулары** тармағын таңдаңыз.
    1. Пайда болған терезеде:
 
       1. **Автомасштабтауды қосу** опциясының өшірулі екеніне көз жеткізіңіз.
-      1. Қажетті түйіндер санын орнатыңыз. Оны көбейтуге де, азайтуғал да болады.
+      1. Қажетті түйіндер санын орнатыңыз. Оны көбейтуге де, азайтуға да болады.
       1. **Өзгерістерді сақтау** түймесін басыңыз.
 
    {/tab}
@@ -252,25 +254,25 @@
    {tab(Terraform)}
 
    {note:info}
-   Terraform арқылы басқару тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
    {/note}
 
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
 
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
 
    1. Terraform конфигурациясы файлында қажетті [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) ресурсін өзгертіңіз:
 
       ```hcl
       ...
 
-      # Уже описанная конфигурация для группы узлов
+      # Түйіндер тобы үшін бұрыннан сипатталған конфигурация
       resource "vkcs_kubernetes_node_group" "k8s-node-group" {
         name = "k8s-node-group"
 
         ...
 
-        # Убедитесь, что опция, отвечающая за автомасштабирование, выключена (false).
+        # Автомасштабтауға жауап беретін опцияның өшірулі екеніне көз жеткізіңіз (false).
         autoscaling_enabled = false
 
         node_count = <нужное количество узлов>
@@ -303,11 +305,11 @@
 
    {/tabs}
 
-### {heading(Worker-түйіндер топтарын автоматты масштабтауды баптау)[id=autoscale_worker_nodes]}
+### {heading(Worker-түйіндер топтарын автоматты масштабтауды баптау)[id=k8s-instructions-scale-horizontal-autoscaling-worker-nodes]}
 
-1. [Көлденең масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз](../../concepts/scale).
+1. {linkto(../../concepts/scale#k8s-scale)[text=Көлденең масштабтау механизмі қалай жұмыс істейтінін оқып шығыңыз]}.
 
-1. [Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau).
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Масштабтау үшін квоталардың жеткілікті екеніне көз жеткізіңіз]}.
 
 1. Автоматты масштабтауды баптаңыз:
 
@@ -318,9 +320,9 @@
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер** → **Kubernetes кластерлері** бөліміне өтіңіз.
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
    1. Осы кластердегі қажетті түйіндер тобын табыңыз.
-   1. Осы түйіндер тобы үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып, **Масштабтау баптаулары** тармағын таңдаңыз.
+   1. Осы түйіндер тобы үшін ![](../../../../assets/more-icon.svg "inline") белгішесін басып, **Масштабтау баптаулары** тармағын таңдаңыз.
    1. Пайда болған терезеде:
 
       1. **Автомасштабтауды қосу** опциясының қосулы екеніне көз жеткізіңіз.
@@ -332,28 +334,28 @@
    {tab(Terraform)}
 
    {note:info}
-   Terraform арқылы басқару тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
    {/note}
 
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
 
-   1. [Қажетті кластердің іске қосылғанына көз жеткізіңіз](../manage-cluster#start).
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
 
    1. Terraform конфигурациясы файлында қажетті [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) ресурсін өзгертіңіз:
 
       ```hcl
       ...
 
-      # Уже описанная конфигурация для группы узлов
+      # Түйіндер тобы үшін бұрыннан сипатталған конфигурация
       resource "vkcs_kubernetes_node_group" "k8s-node-group" {
         name = "k8s-node-group"
 
         ...
 
-        # Убедитесь, что опция, отвечающая за автомасштабирование, включена (true)
+        # Автомасштабтауға жауап беретін опцияның қосулы екеніне көз жеткізіңіз (true)
         autoscaling_enabled = true
 
-        # Задайте количество узлов, в пределах которого будет выполняться масштабирование
+        # Масштабтау орындалатын шектердегі түйіндер санын орнатыңыз
         min_nodes = <минимальное количество узлов>
         max_nodes = <максимальное количество узлов>
 

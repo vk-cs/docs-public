@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud DNS-пен интеграцияланған ExternalDNS-ті қалай орнату және бұл құралды кластерде пайдалану керек.",
   "sectionTitle": "ExternalDNS орнату және пайдалану",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

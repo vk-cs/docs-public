@@ -1,0 +1,17 @@
+{
+  "title": "Сетевая модель Kubernetes",
+  "shortDescription": "",
+  "metaDescription": "Описание сетевой модели Kubernetes и особенностей использования сети приложениями в Cloud Containers платформы VK Private Cloud",
+  "sectionTitle": "Сетевая модель Kubernetes",
+  "icon": "",
+  "weight": 16,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

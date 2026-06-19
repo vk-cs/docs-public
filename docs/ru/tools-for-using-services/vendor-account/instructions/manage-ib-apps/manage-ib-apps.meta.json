@@ -1,0 +1,14 @@
+{
+  "title": "Управление image-based приложениями",
+  "shortDescription": "Как добавить image-based приложение в Marketplace, как его обновить, заархивировать или интегрировать с сервисом Cloud Monitoring",
+  "metaDescription": "Руководство по добавлению image-based приложений в Marketplace, их обновлению, архивированию. Инструкция по интеграции image-based приложения с сервисом Cloud Monitoring",
+  "sectionTitle": "Управление image-based приложениями",
+  "weight": 4,
+  "isBeta": true,
+  "uuid": "3283eb56-f740-47a3-aae2-3812231a7a63",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

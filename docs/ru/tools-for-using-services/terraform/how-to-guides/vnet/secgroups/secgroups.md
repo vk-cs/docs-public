@@ -1,3 +1,5 @@
+# {heading(Создание и настройка групп безопасности)[id=terraform-secgroups]}
+
 В статье приведены примеры создания и настройки групп безопасности в сервисе Cloud Network при помощи Terraform:
 
 - разрешение трафика по определенному протоколу для отдельных портов;
@@ -20,22 +22,22 @@
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=terraform-secgroups-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сети и групп безопасности. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
-## 1. Создайте файл с описанием сети
+## {heading({counter(tf-secgroups)}. Создайте файл с описанием сети)[id=terraform-secgroups-net-file]}
 
-[Создайте](../network) файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры:
+{linkto(../network#terraform-network)[text=Создайте]} файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры:
 
 - создайте сеть с доступом в интернет, если ограничение нужно настроить для всех портов;
 - создайте сеть с доступом в интернет и портом, если нужно настроить ограничение трафика для конкретного порта.
 
-## 2. Создайте файл с описанием групп безопасности
+## {heading({counter(tf-secgroups)}. Создайте файл с описанием групп безопасности)[id=terraform-secgroups-file]}
 
 Создайте файл конфигурации Terraform `secgroup.tf`. Содержание зависит от нужных правил ограничения трафика:
 
@@ -45,11 +47,11 @@
 
 В файле описана следующая конфигурация правил безопасности:
 
-  1. Создается группа безопасности `security_group`.
-  1. В группе создается правило, которое разрешает входящий трафик по протоколу TCP для порта 22.
-  1. Правило связывается с портом, добавленным в `network.tf`.
+1. Создается группа безопасности `security_group`.
+1. В группе создается правило, которое разрешает входящий трафик по протоколу TCP для порта 22.
+1. Правило связывается с портом, добавленным в `network.tf`.
 
-  {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
+{include(../../../../../_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
 
 {/tab}
 
@@ -57,10 +59,10 @@
 
 В файле описана следующая конфигурация правил безопасности:
 
-  1. Создается группа безопасности `security_group`.
-  1. В группе создается правило, которое разрешает входящий трафик по протоколу UDP для всех портов.
+1. Создается группа безопасности `security_group`.
+1. В группе создается правило, которое разрешает входящий трафик по протоколу UDP для всех портов.
 
-  {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
+{include(../../../../../_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
 
 {/tab}
 
@@ -68,22 +70,22 @@
 
 В файле описана следующая конфигурация правил безопасности:
 
-  1. Создается группа безопасности `security_group`.
-  1. В группе создается правило, которое разрешает весь входящий трафик.
+1. Создается группа безопасности `security_group`.
+1. В группе создается правило, которое разрешает весь входящий трафик.
 
-  {include(/ru/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
+{include(../../../../../_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
 
 {/tab}
 
 {tab(Преднастроенные группы)}
 
-В файле описана конфигурация для добавления в проект [преднастроенных групп безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups).
+В файле описана конфигурация для добавления в проект {linkto(../../../../../networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups)[text=преднастроенных групп безопасности]}.
 
 {note:warn}
 Не изменяйте правила и не создавайте преднастроенные группы безопасности через Terraform, если они уже есть в проекте.
 {/note}
 
-  {include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
+{include(../../../../../_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
 {/tab}
 
@@ -97,38 +99,33 @@
   - (по умолчанию) `false` — группы безопасности, которые уже есть у порта, не будут удаляться. Новые группы будут добавлены.
 
 - `direction` — направление траффика: входящий `ingress` или исходящий `egress`.
-
 - `port_id` — идентификатор порта, с которым будет связан Floating IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
   {cut(Примеры)}
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор порта будет получен после создания ресурса `vkcs_networking_port`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор порта будет получен из источника данных `vkcs_networking_port`.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка портов](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/ports#vnet-ports-view)[text=списка портов]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
 - `port_range_max` — верхняя граница разрешенного диапазона портов, целое число от 1 до 65535. Чтобы выбрать все порты, не указывайте аргументы `port_range_min` и `port_range_max`.
-
 - `port_range_min`— нижняя граница разрешенного диапазона портов, целое число от 1 до 65535. Чтобы выбрать все порты, не указывайте аргументы `port_range_min` и `port_range_max`.
-
 - `protocol` — протокол передачи данных. Возможные значения: `tcp`, `udp`, `icmp`, `ah`, `dccp`, `egp`, `esp`, `gre`, `igmp`, `ospf`, `pgm`, `rsvp`, `sctp`, `udplite`, `vrrp`.
-
 - `remote_ip_prefix` — удаленный CIDR, значение должно быть действительным.
-
 - `security_group_id` — идентификатор группы безопасности, для которой создается правило. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
   {cut(Примеры)}
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор группы безопасности будет получен после создания ресурса `vkcs_networking_secgroup`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор группы безопасности будет получен из источника данных `vkcs_networking_secgroup`.
-  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка групп безопасности](/ru/networks/vnet/instructions/secgroups#view_secgroups) в личном кабинете VK Cloud или через Openstack CLI.
+  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указан идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=списка групп безопасности]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
 - `security_group_ids` — массив идентификаторов групп безопасности.
 
-## 3. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-secgroups)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-secgroups-create-resource]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -153,14 +150,14 @@
 
 1. Дождитесь завершения операции.
 
-## 4. Проверьте применение конфигурации
+## {heading({counter(tf-secgroups)}. Проверьте применение конфигурации)[id=terraform-secgroups-check]}
 
 Убедитесь, что сеть и инфраструктура были успешно созданы:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Виртуальные сети** → **Настройки firewall**. Убедитесь, что группа безопасности создана и содержит все добавленные в примере правила.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-secgroups-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

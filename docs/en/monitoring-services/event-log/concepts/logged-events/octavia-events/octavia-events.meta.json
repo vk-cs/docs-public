@@ -5,5 +5,10 @@
   "sectionTitle": "Octavia component events",
   "icon": "",
   "weight": 4,
-  "uuid": "4fc41d71-8a88-473e-a220-e7ce8c08a147"
+  "uuid": "4fc41d71-8a88-473e-a220-e7ce8c08a147",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

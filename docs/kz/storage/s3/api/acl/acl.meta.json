@@ -1,0 +1,16 @@
+{
+  "title": "ACL",
+  "shortDescription": "Бакеттер мен объектілер үшін қол жеткізуді басқару тізімдері (ACL) ережелерінің конфигурациясын басқару",
+  "metaDescription": "VK Object Storage бакеттері мен объектілері үшін қол жеткізуді басқару тізімдерімен (ACL) жұмыс істеуге арналған барлық қолжетімді әдістер: бакет (PutBucketACL) немесе объект (PutObjectACL) ACL-ін орнату; бакет (GetBucketACL) немесе объект (GetObjectACL) ACL-ін алу",
+  "sectionTitle": "ACL",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

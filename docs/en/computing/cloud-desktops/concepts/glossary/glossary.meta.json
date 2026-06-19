@@ -1,9 +1,14 @@
 {
-    "title": "Terminology",
-      "shortDescription": "Basic concepts and objects",
-      "metaDescription": "Basic concepts and objects of the Cloud Desktop service.",
-    "sectionTitle": "Terminology",
-    "icon": "",
-    "weight": 2,
-    "uuid": "57bd6b7a-10bb-4d21-8012-4d45e33ef94a"
+  "title": "Terminology",
+  "shortDescription": "Basic concepts and objects",
+  "metaDescription": "Basic concepts and objects of the Cloud Desktop service.",
+  "sectionTitle": "Terminology",
+  "icon": "",
+  "weight": 2,
+  "uuid": "57bd6b7a-10bb-4d21-8012-4d45e33ef94a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

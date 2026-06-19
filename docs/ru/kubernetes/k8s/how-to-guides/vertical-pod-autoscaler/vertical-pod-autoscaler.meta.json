@@ -5,5 +5,10 @@
   "sectionTitle": "Использование Vertical Pod Autoscaler",
   "icon": "",
   "weight": 14,
-  "uuid": "d8d9eaa5-0408-45f7-a590-9d0590739620"
+  "uuid": "d8d9eaa5-0408-45f7-a590-9d0590739620",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

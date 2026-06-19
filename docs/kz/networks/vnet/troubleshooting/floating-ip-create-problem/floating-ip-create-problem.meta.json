@@ -4,5 +4,10 @@
   "metaDescription": "Floating IP мекенжайын қосу кезінде қате пайда болса, не істеу керек",
   "sectionTitle": "Floating IP мекенжайын қосу мүмкін емес",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

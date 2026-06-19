@@ -1,3 +1,5 @@
+# {heading(События Public DNS)[id=event-log-dns]}
+
 События, которые Public DNS передает в Cloud Audit:
 
 [cols="2,2,2", options="header"]

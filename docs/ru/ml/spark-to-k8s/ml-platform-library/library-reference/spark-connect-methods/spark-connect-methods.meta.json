@@ -5,5 +5,10 @@
   "sectionTitle": "Работа со Spark Connect",
   "icon": "",
   "weight": 6,
-  "uuid": "9495a81f-5ecc-4ab5-8591-f4be706fef2c"
+  "uuid": "9495a81f-5ecc-4ab5-8591-f4be706fef2c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

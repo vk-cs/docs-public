@@ -1,9 +1,19 @@
 {
   "title": "IP-адреса",
-  "shortDescription": "Управление Floating и Anycast IP-адресами в сервисе виртуальных сетей",
+  "shortDescription": "Управление IP-адресами в сервисе виртуальных сетей",
   "metaDescription": "Как настроить IP-адреса в сервисе Cloud Networks. Управление Floating и Anycast IP-адресами в сервисе виртуальных сетей в VK Cloud",
   "sectionTitle": "IP-адреса",
   "icon": "",
   "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
   "uuid": "ef241aff-cce8-4a28-88dc-cff3375102fb"
 }

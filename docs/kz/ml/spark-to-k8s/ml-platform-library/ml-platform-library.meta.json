@@ -4,5 +4,10 @@
   "metaDescription": "Cloud ML Platform Python кітапханасының құжаттамасы (Cloud Spark үшін).",
   "sectionTitle": "Cloud ML Platform кітапханасы",
   "icon": "",
-  "weight": 50
+  "weight": 50,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

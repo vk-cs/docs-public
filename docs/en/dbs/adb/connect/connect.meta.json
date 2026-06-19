@@ -5,5 +5,19 @@
   "sectionTitle": "Connect to ADB",
   "icon": "",
   "weight": 3,
-  "uuid": "2f5be58e-9d03-45fc-b306-5bf43892680b"
+  "uuid": "2f5be58e-9d03-45fc-b306-5bf43892680b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

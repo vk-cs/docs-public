@@ -1,0 +1,17 @@
+{
+  "title": "Подключение постоянного хранилища",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Подключение постоянного хранилища",
+  "icon": "",
+  "weight": 14,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

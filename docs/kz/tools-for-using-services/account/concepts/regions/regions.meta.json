@@ -1,8 +1,13 @@
 {
   "title": "Аймақтар",
-  "shortDescription": "Аймақ деген не, VK Cloud ішінде қандай аймақтар бар",
+  "shortDescription": "Аймақ деген не, {var(cloud)} ішінде қандай аймақтар бар",
   "metaDescription": "Аймақ деген не, VK Cloud ішінде қандай аймақтар бар.",
   "sectionTitle": "Аймақтар",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

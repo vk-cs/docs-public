@@ -5,5 +5,10 @@
   "sectionTitle": "Working with projects",
   "icon": "",
   "weight": 3,
-  "uuid": "9c43e4db-6076-4978-8d41-e81cb36e4bf6"
+  "uuid": "9c43e4db-6076-4978-8d41-e81cb36e4bf6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

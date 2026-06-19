@@ -5,5 +5,10 @@
   "sectionTitle": "Управление клиентами и их проектами",
   "icon": "",
   "weight": 2,
-  "uuid": "f91a598c-54bc-45d0-8893-c9278552cdb0"
+  "uuid": "f91a598c-54bc-45d0-8893-c9278552cdb0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

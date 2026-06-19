@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Параметры сервиса",
   "sectionTitle": "Параметры сервиса",
-  "uuid": "63208c45-e118-45c2-96e1-12088c1bbcc3"
+  "uuid": "63208c45-e118-45c2-96e1-12088c1bbcc3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

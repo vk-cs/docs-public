@@ -1,0 +1,1 @@
+# {heading(Қосымша ақпарат)[id=additional_info]}

@@ -1,8 +1,10 @@
+# {heading(ДҚ конфигурацияларының конфигурациялары)[id=dbaas-work-configs]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 VK Cloud платформасында ДҚБЖ инстанстары конфигурацияларының үш түрі қолжетімді. Конфигурация түрі қандай мөлшерде ДҚ инстанстары жасалатынын және олардың архитектурасын анықтайды.
 
-Кез келген конфигурация түрі үшін [репликацияға](../../instructions/replication) арналған қосымша инстанс — реплика жасалуы мүмкін. Реплика дискінің түрі мен оның өлшемі мастерден өзгеше болуы мүмкін және бөлек беріледі.
+Кез келген конфигурация түрі үшін {linkto(../../instructions/replication#dbaas-replication)[text=репликацияға]} арналған қосымша инстанс — реплика жасалуы мүмкін. Реплика дискінің түрі мен оның өлшемі мастерден өзгеше болуы мүмкін және бөлек беріледі.
 
 Реплика мастерге түрлендірілуі мүмкін. Бұл жағдайда репликация тоқтатылады, ал инстанс оқу мен жазуға қолжетімді тәуелсіз мастер-инстансқа айналады. Жаңа мастер-инстанс мастерге түрлендірілгенге дейін репликада болған сол деректерді қамтиды.
 
@@ -18,17 +20,17 @@ VK Cloud платформасында ДҚБЖ инстанстары конфи
 
 Master-Replica конфигурациясындағы инстансты тоқтатуға, іске қосуға және қайта іске қосуға болады.
 
-## {heading(Кластер)[id=cluster]}
+## {heading(Кластер)[id=dbaas-work-configs-cluster]}
 
 Таңдалған типтегі ДҚБЖ серверлері орнатылған, жүктеме теңгергіші бар, деректердің синхронды және асинхронды репликациясын қолдайтын виртуалды машиналар тобы. Мастер-инстанс қолжетімсіз болған кезде автоматты ауысу іске қосылады: репликалардың бірі мастерге түрлендіріледі, ал оның орнына тағы бір реплика жасалады.
 
-PostgreSQL кластерінің істен шығуға төзімділігін арттыру үшін синхронды және асинхронды репликаларды басқа аймақтарға бөлуге болады, ол үшін [көпаймақты конфигурацияны](#multi-az) таңдау керек. PostgreSQL кластерінің жоғары қолжетімділігін қамтамасыз ету үшін [Patroni](https://patroni.readthedocs.io/en/latest/index.html) қызметі қолданылады.
+PostgreSQL кластерінің істен шығуға төзімділігін арттыру үшін синхронды және асинхронды репликаларды басқа аймақтарға бөлуге болады, ол үшін {linkto(#dbaas-work-configs-multi-az)[text=көпаймақты конфигурацияны]} таңдау керек. PostgreSQL кластерінің жоғары қолжетімділігін қамтамасыз ету үшін [Patroni](https://patroni.readthedocs.io/en/latest/index.html) қызметі қолданылады.
 
 Диск өлшемін ұлғайтқанда немесе тік масштабтауда өзгерістер кластердің барлық инстанстарына қолданылады.
 
 Бұл конфигурацияда инстансты іске қосуға, қайта іске қосуға немесе тоқтатуға болмайды.
 
-## {heading(Көпаймақты кластер)[id=multi-az]}
+## {heading(Көпаймақты кластер)[id=dbaas-work-configs-multi-az]}
 
 {note:info}
 
@@ -36,8 +38,8 @@ PostgreSQL кластерінің істен шығуға төзімділігі
 
 {/note}
 
-[Кластер](#cluster) конфигурациясына ұқсас істен шығуға төзімді шешім. ДҚБЖ серверлері орнатылған виртуалды машиналар тобы
-[қолжетімділік аймақтары](/kz/start/concepts/architecture#az) арасында бөлінген.
+{linkto(#dbaas-work-configs-cluster)[text=Кластер]} конфигурациясына ұқсас істен шығуға төзімді шешім. ДҚБЖ серверлері орнатылған виртуалды машиналар тобы
+[қолжетімділік аймақтары](../../../../start/concepts/architecture#az) арасында бөлінген.
 
 Мұндай конфигурация бүкіл ЦОД істен шыққан жағдайда да максималды қолжетімділікті және автоматты қалпына келтіруді қамтамасыз етеді, бұл жоғары жүктемелі жобалар мен деректердің сақталуы үшін аса маңызды.
 
@@ -51,7 +53,7 @@ PostgreSQL кластерінің істен шығуға төзімділігі
 
 Түйіндердің тақ саны көпшілік құрылмайтын жағдайдың туындау ықтималдығын азайтуға мүмкіндік береді.
 
-## {heading(ДҚБЖ түрлері үшін қолжетімді конфигурациялар)[id=available-configs]}
+## {heading(ДҚБЖ түрлері үшін қолжетімді конфигурациялар)[id=dbaas-work-configs-available-configs]}
 
 [cols="1,1,1,1", options="header"]
 |===
@@ -61,37 +63,37 @@ PostgreSQL кластерінің істен шығуға төзімділігі
 | Кластер
 
 | MySQL
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Tarantool
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | PostgreSQL
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | ClickHouse
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Redis
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | MongoDB
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | OpenSearch
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 |===

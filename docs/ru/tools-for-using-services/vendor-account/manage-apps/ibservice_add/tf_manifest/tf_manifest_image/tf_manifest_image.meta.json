@@ -4,5 +4,10 @@
   "metaDescription": "Описание инфраструктуры",
   "sectionTitle": "Описание инфраструктуры",
   "weight": 4,
-  "uuid": "a9fb21d6-44df-478a-8945-7c6c3a3c355d"
+  "uuid": "a9fb21d6-44df-478a-8945-7c6c3a3c355d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

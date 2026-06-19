@@ -5,5 +5,19 @@
   "sectionTitle": "Connecting to cluster",
   "icon": "",
   "weight": 3,
-  "uuid": "c8059744-4842-443c-8b70-0f3ad8630d7d"
+  "uuid": "c8059744-4842-443c-8b70-0f3ad8630d7d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

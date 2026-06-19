@@ -1,7 +1,7 @@
 {
   "title": "Cloud Containers",
-  "shortDescription": "Kubernetes негізінде жүктеме кезінде сервистер мен қолданбаларды автоматты түрде масштабтау",
-  "metaDescription": "Cloud Containers сервисі Kubernetes кластерлерін пайдалануғал мүмкіндік береді. VK Cloud жүйесінде Kubernetes кластерлерін құру, басқару және қолдау жолдарын біліңіз",
+  "shortDescription": "Kubernetes негізінде жүктемелер кезінде сервистер мен қолданбаларды автоматты масштабтау",
+  "metaDescription": "Cloud Containers сервисі Kubernetes кластерлерін пайдалануға мүмкіндік береді. VK Cloud-та Kubernetes кластерлерін қалай құруға, басқаруға және қолдауға болатынын біліңіз",
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 4,
@@ -9,5 +9,14 @@
     {
       "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/k8s/create"
     }
-  ]
+  ],
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

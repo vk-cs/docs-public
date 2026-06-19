@@ -1,8 +1,8 @@
-Extensions specific to [PostgreSQL](../../types/postgresql) and [PostgresPro](../../types/postgrespro) are described. Read about extensions for monitoring DB instances in [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) and [zabbix](../zabbix).
+Extensions specific to [PostgreSQL](../../types/postgresql) are described. Read about extensions for monitoring DB instances in [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) and [zabbix](../zabbix).
 
 {note:info}
 
-Availability of the extensions depends on selected version of PostgreSQL and PostgresPro, as well as the PostgresPro edition.
+Availability of the extensions depends on selected version of PostgreSQL.
 
 {/note}
 
@@ -247,7 +247,7 @@ The extension [pg_stat_statements](https://www.postgresql.org/docs/current/pgsta
 
 The [PostGIS](http://postgis.net/) extension adds capabilities of working with geographic data into PostgreSQL. It implements several geospatial data types, as well supports storing, indexing and processing geographic data.
 
-For more information abount using the extension, see [Using the PostGIS extension in PostgreSQL and PostgresPro](../../how-to-guides/using-postgis).
+For more information abount using the extension, see [Using the PostGIS extension in PostgreSQL](../../how-to-guides/using-postgis).
 
 {/tab}
 

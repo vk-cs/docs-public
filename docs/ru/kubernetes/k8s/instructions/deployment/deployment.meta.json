@@ -1,0 +1,17 @@
+{
+  "title": "Работа с Deployment",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Работа с Deployment",
+  "icon": "",
+  "weight": 13,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

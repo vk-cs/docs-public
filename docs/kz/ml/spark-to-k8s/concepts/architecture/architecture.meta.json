@@ -4,5 +4,10 @@
   "metaDescription": "Сервис жұмысының қағидаты және ML Platform-пен интеграция ерекшеліктері",
   "sectionTitle": "Сервис архитектурасы",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

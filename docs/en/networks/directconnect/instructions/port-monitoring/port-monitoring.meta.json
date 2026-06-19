@@ -5,5 +5,10 @@
   "sectionTitle": "Viewing switch port status",
   "icon": "",
   "weight": 0,
-  "uuid": "996ec85f-9ed1-4fd5-9441-a6635fe2e2e1"
+  "uuid": "996ec85f-9ed1-4fd5-9441-a6635fe2e2e1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

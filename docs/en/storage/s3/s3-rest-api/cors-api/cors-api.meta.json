@@ -1,9 +1,23 @@
 {
-    "title": "CORS",
-      "shortDescription": "",
-      "metaDescription": "VK Object Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document. Li",
-    "sectionTitle": "CORS",
-    "icon": "",
-    "weight": 6,
-    "uuid": "70a24c0b-3150-4e5b-989f-1670c7956d05"
+  "title": "CORS",
+  "shortDescription": "",
+  "metaDescription": "VK Object Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document. Li",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 6,
+  "uuid": "70a24c0b-3150-4e5b-989f-1670c7956d05",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config).
+Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../instructions/manage-saas-apps/saas-add#service_config).
 
 [cols="2,4,1,1", options="header"]
 |===
@@ -34,13 +34,16 @@
 
 |`short_description`
 |
-Краткое описание сервиса, которое будет отображаться в его карточке в магазине
+Краткое описание сервиса, которое будет отображаться в его карточке:
+
+- в каталоге Marketplace;
+- на вкладке **Описание сервиса** на странице сервиса
 |string, до 120 символов
 | ![](/ru/assets/check.svg "inline")
 
 |`full_description`
 |
-[Полное описание сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/service_description), которое будет отображаться на его странице
+[Полное описание сервиса](../../ib-apps-full-description), которое будет отображаться на его странице в Marketplace
 |string
 | ![](/ru/assets/check.svg "inline")
 
@@ -58,9 +61,7 @@
 
 |`icon`
 |
-URL [иконки сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/service_description#service_description_icon).
-
-Размер файла с иконкой не должен превышать 1 МБ. Размер изображения должен быть не менее 62 × 62 пикселя
+URL иконки сервиса, [полученный от Marketplace](../../../instructions/manage-saas-apps/saas-add#preparatory_steps)
 |string, до 512 символов
 | ![](/ru/assets/check.svg "inline")
 

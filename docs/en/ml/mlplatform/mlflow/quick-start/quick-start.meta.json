@@ -1,9 +1,23 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Getting Started with MLflow Service",
-      "metaDescription": "Quick start",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 0,
-    "uuid": "331ea3bf-b0b0-4022-953b-102b4ad1567e"
+  "title": "Quick start",
+  "shortDescription": "Getting Started with MLflow Service",
+  "metaDescription": "Quick start",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 0,
+  "uuid": "331ea3bf-b0b0-4022-953b-102b4ad1567e",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

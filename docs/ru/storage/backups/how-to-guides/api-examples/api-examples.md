@@ -1,10 +1,12 @@
-Далее приведены некоторые примеры использования [API Karboii](/ru/tools-for-using-services/api/api-spec/backup-api) от VK Cloud.
+# {heading(Примеры использования API)[id=backup-api-examples]}
+
+Далее приведены некоторые примеры использования {linkto(../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=API Karboii]} от {var(cloud)}.
 
 Чтобы выполнить приведенные примеры:
 
-1. Убедитесь, что [включена](/ru/access/iam/instructions/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
-1. [Получите токен доступа](/ru/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
-1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса Karboii.
+1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите токен доступа]} `X-Subject-Token`.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=Узнайте]} эндпоинт для сервиса Karboii.
 
 В примерах запросов будут использоваться:
 
@@ -32,7 +34,7 @@
   +-----------------------------+-----------------------------------------------------------+
   ```
 
-## Получить список созданных планов резервного копирования
+## {heading(Получить список созданных планов резервного копирования)[id=backup-api-examples-get-plan]}
 
 Пример запроса:
 
@@ -68,15 +70,15 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 
 {/cut}
 
-## Создать новый план резервного копирования для ВМ
+## {heading(Создать новый план резервного копирования для ВМ)[id=backup-api-examples-create-plan]}
 
 Чтобы создать план резервного копирования:
 
-1. [Получите идентификатор](#get_provider_id) сервиса (`provider_id`), который обеспечивает резервное копирование.
-1. [Создайте объект](#create_plan) `plan`, в котором задаются основные настройки плана резервного копирования.
-1. [Создайте триггер](#create_trigger), задающий расписание запусков резервного копирования.
+1. {linkto(#backup-api-examples-get-provider-id)[text=Получите идентификатор]} сервиса (`provider_id`), который обеспечивает резервное копирование.
+1. {linkto(#backup-api-examples-post-plan)[text=Создайте объект]} `plan`, в котором задаются основные настройки плана резервного копирования.
+1. {linkto(#backup-api-examples-post-trigger)[text=Создайте триггер]}, задающий расписание запусков резервного копирования.
 
-### {heading(1. Получить идентификатор провайдера)[id=get_provider_id]}
+### {heading({counter(backup-api)}. Получить идентификатор провайдера)[id=backup-api-examples-get-provider-id]}
 
 Пример запроса:
 
@@ -104,7 +106,7 @@ curl -X GET \
 
 {/cut}
 
-### {heading(2. Создать план резервного копирования)[id=create_plan]}
+### {heading({counter(backup-api)}. Создать план резервного копирования)[id=backup-api-examples-post-plan]}
 
 Будет использоваться `provider_id` = `37997f75-0637-XXXX-bf7e-49ff2ff11fa5`, поскольку создается план для виртуальной машины, а не инстанса БД.
 
@@ -157,7 +159,7 @@ curl -X POST \
 
 {/cut}
 
-### {heading(3. Создать триггер)[id=create_trigger]}
+### {heading({counter(backup-api)}. Создать триггер)[id=backup-api-examples-post-trigger]}
 
 Пример запроса:
 

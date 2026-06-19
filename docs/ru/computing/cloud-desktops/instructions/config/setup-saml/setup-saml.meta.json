@@ -5,5 +5,10 @@
   "sectionTitle": "Настройка двухфакторной аутентификации",
   "icon": "",
   "weight": 3,
-  "uuid": "19c53be6-43cf-4082-9857-2ceca325ea0c"
+  "uuid": "19c53be6-43cf-4082-9857-2ceca325ea0c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

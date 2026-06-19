@@ -5,5 +5,10 @@
   "sectionTitle": "Изменение адресов DNS-серверов в сети кластера",
   "icon": "",
   "weight": 4,
-  "uuid": "f03667c0-c97c-437c-abc0-d9578352d406"
+  "uuid": "f03667c0-c97c-437c-abc0-d9578352d406",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

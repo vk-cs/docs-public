@@ -1,0 +1,14 @@
+{
+  "title": "О сервисе",
+  "shortDescription": "Информация о сервисе MLflow",
+  "metaDescription": "MLflow в VK Data Platform: информация о сервисе",
+  "sectionTitle": "О сервисе",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

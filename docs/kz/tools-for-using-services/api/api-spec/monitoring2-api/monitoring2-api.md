@@ -1,3 +1,5 @@
+# {heading(Cloud Monitoring 2.0)[id=api-spec-monitoring2]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Cloud Monitoring 2.0](/kz/monitoring-services/monitoring) сервисінің REST API-ы мониторинг агенті жинаған метрикаларды оқуды қолдайды:
@@ -11,9 +13,9 @@
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
 1. Жобада Cloud Monitoring 2.0 сервисі қосылғанына көз жеткізіңіз, қажет болса оны [техникалық қолдау](/kz/contacts) арқылы қосыңыз.
-1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.com/app) {var(cloud)} жеке кабинетіне.
 1. Егер бұл әлі жасалмаса, екі факторлы аутентификацияны [қосыңыз](/kz/access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on).
-1. Егер бұл әлі жасалмаса, API арқылы қолжетімділікті [қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#api_arkyly_kolzhetimdilikti_belsendiru).
+1. Егер бұл әлі жасалмаса, API арқылы қолжетімділікті [қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
 1. Cloud Monitoring 2.0 сервисі үшін эндпоинтті табыңыз. Егер ол тізімде болмаса, мынаны пайдаланыңыз:

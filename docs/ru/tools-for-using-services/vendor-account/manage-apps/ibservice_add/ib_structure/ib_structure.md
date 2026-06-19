@@ -44,9 +44,34 @@
 
 {/note}
 
-{caption(Рисунок {counter(pic)[id=numb_pic_structure]} — Структура файлов сервисного пакета для генератора JSON-файла 0.0.1)[align=center;position=under;id=pic_structure;number={const(numb_pic_structure)} ]}
-![pic1](../../assets/IBstructure.png){params[width=40%]}
-{/caption}
+{cut(Структура файлов сервисного пакета для генератора JSON-файла 0.0.1)}
+
+```text
+image_based_service
+├── images
+│   └── icon.png
+├── parameters
+│   ├── api_requests_daily_limit.yaml
+│   ├── checklists_per_product.yaml
+│   ├── export_issues.yaml
+│   ├── groups.yaml
+│   ├── members.yaml
+│   └── report_notifications.yaml
+├── plans
+│   ├── advanced
+│   ├── basic
+│   └── free
+│       └── deployment
+│           ├── deploy.tf
+│           ├── settings.yaml
+│       ├── display.yaml
+│       └── plan.yaml
+├── full_description.md
+├── service.yaml
+└── version.yaml
+```
+
+{/cut}
 
 {note:info}
 

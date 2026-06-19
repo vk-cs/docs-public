@@ -1,0 +1,14 @@
+{
+  "title": "Метрикалар анықтамалығы",
+  "shortDescription": "VK Data Platform сервистерінің метрикалары",
+  "metaDescription": "VK Data Platform сервисінің әрбір өрістетілген данасы үшін қандай метрикалар жиналатынын біліңіз",
+  "sectionTitle": "Метрикалар анықтамалығы",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

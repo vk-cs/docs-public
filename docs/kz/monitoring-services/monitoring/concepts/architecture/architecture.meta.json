@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Monitoring бірнеше бөліктен тұрады: Метрикаларды қабылдауға арналған масштабталатын API\nМетрикалардың үлестірілген қоймасы\nОқуға ар",
   "sectionTitle": "Сервис архитектурасы",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

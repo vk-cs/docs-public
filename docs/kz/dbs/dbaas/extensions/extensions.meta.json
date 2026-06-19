@@ -4,5 +4,15 @@
   "metaDescription": "Кеңейтімдер мен плагиндер ДҚ инстансының конфигурациясына қосымша өзгерістер енгізбей-ақ дерекқордың қосымша функционалдығын басқарады.",
   "sectionTitle": "Кеңейтімдер мен плагиндер",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,14 +1,19 @@
 {
   "title": "Cloud Servers",
   "shortDescription": "Аренда облачного сервера, файлового и блочного хранилища, неограниченная поддержка приложений и сервисов",
-  "metaDescription": "Cloud Servers – это сервис облачных вычислений VK Cloud, который позволяет легко создавать, администрировать и масштабировать виртуальные машины. Используйте Cloud Servers для запуска веб–приложений, баз данных, игровых серверов и других задач, требующих вычислительных ресурсов.",
+  "metaDescription": "Cloud Servers — это сервис облачных вычислений VK Cloud, который позволяет легко создавать, администрировать и масштабировать виртуальные машины. Используйте Cloud Servers для запуска веб–приложений, баз данных, игровых серверов и других задач, требующих вычислительных ресурсов.",
   "sectionTitle": "Cloud Servers",
   "icon": "",
   "weight": 1,
-  "relativeSections": [
-    {
-      "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create"
-    }
-  ],
-  "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060"
+  "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

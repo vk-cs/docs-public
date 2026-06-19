@@ -1,11 +1,16 @@
 {
-    "title": "Правила акции «Мигрируй на облачную платформу VK Cloud бесплатно»",
-      "shortDescription": "",
-      "metaDescription": "Акция предназначена для привлечения внимания потребителей к Сервисам платформы и повышения узнаваемости продуктов VK Cloud",
-    "sectionTitle": "Правила акции «Мигрируй на облачную платформу VK Cloud бесплатно»",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 16,
-    "uuid": "d8a2b4c5-7966-45e4-b38c-1b11187472e2"
+  "title": "Правила акции «Мигрируй на облачную платформу VK Cloud бесплатно»",
+  "shortDescription": "",
+  "metaDescription": "Акция предназначена для привлечения внимания потребителей к Сервисам платформы и повышения узнаваемости продуктов VK Cloud",
+  "sectionTitle": "Правила акции «Мигрируй на облачную платформу VK Cloud бесплатно»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 16,
+  "uuid": "d8a2b4c5-7966-45e4-b38c-1b11187472e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

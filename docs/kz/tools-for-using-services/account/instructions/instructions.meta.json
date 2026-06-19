@@ -1,8 +1,18 @@
 {
   "title": "Қадамдық нұсқаулықтар",
-  "shortDescription": "VK Cloud жеке кабинетімен жұмыс",
+  "shortDescription": "{var(cloud)} жеке кабинетімен жұмыс",
   "metaDescription": "VK Cloud жеке кабинетімен жұмыс.",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

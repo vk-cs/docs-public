@@ -1,6 +1,8 @@
+# {heading(Вопросы и ответы)[id=dlh_faq]}
+
 {cut(Какие инструменты использовать для сбора данных?)}
 
-Выбор инструментов зависит от выбранной [модели получения данных](/ru/data-platform/dlh/concepts/architecture#data_processing_models).
+Выбор инструментов зависит от выбранной {linkto(../concepts/architecture#dlh_data_processing_models)[text=модели получения данных]}
 
 [cols="1,1", options="header"]
 |===
@@ -8,10 +10,10 @@
 |Инструменты
 
 |PULL-модель
-|[Cloud Airflow](../concepts/components/airflow), [Cloud Spark](../concepts/components/spark) (пакетная обработка), [Cloud Trino](../concepts/components/trino)
+|{linkto(../concepts/components/airflow#dlh_airflow)[text=Cloud Airflow]}, {linkto(../concepts/components/spark#dlh_spark)[text=Cloud Spark]} (пакетная обработка), {linkto(../concepts/components/trino#dlh_trino)[text=Cloud Trino]}
 
 |PUSH-модель
-|[Cloud Spark](../concepts/components/spark) (потоковая обработка)
+|{linkto(../concepts/components/spark#dlh_spark)[text=Cloud Spark]} (потоковая обработка)
 
 |===
 
@@ -26,7 +28,7 @@
 - Задержка доставки данных в хранилище, так как данные обновляются только по расписанию или вручную.
 - Риск перегрузить источник, так как постоянные запросы данных могут замедлять работу системы.
 
-Подробнее об особенностях PULL-модели в [статье по архитектуре DLH](/ru/data-platform/dlh/concepts/architecture#data_processing_models).
+Подробнее об особенностях PULL-модели в {linkto(../concepts/architecture#dlh_data_processing_models)[text=статье по архитектуре DLH]}.
 
 {/cut}
 
@@ -36,7 +38,7 @@
 
 Основной недостаток — необходимость разработки компонента для отправки данных (Producer API) при подключении нового источника данных к хранилищу. Это увеличивает затраты на интеграцию.
 
-Подробнее об особенностях PUSH-модели в [статье по архитектуре DLH](/ru/data-platform/dlh/concepts/architecture#data_processing_models).
+Подробнее об особенностях PUSH-модели в {linkto(../concepts/architecture#dlh_data_processing_models)[text=статье по архитектуре DLH]}.
 
 {/cut}
 
@@ -72,6 +74,6 @@
 
 |===
 
-В Data Lakehouse компоненты [Cloud Spark](../concepts/components/spark) и [Cloud Trino](../concepts/components/trino) дополняют друг друга: Spark готовит данные, Trino обеспечивает быстрый доступ к ним.
+В Data Lakehouse компоненты {linkto(../concepts/components/spark#dlh_spark)[text=Cloud Spark]} и {linkto(../concepts/components/trino#dlh_trino)[text=Cloud Trino]} дополняют друг друга: Spark готовит данные, Trino обеспечивает быстрый доступ к ним.
 
 {/cut}

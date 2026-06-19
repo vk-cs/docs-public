@@ -4,5 +4,12 @@
   "metaDescription": "VK Object Storage қолжетімділік кілттері: Access Key ID және Secret Key арқылы жұмыс қалай ұйымдастырылған, қандай шектеулер бар және оларды қай сценарийлерде пайдалану керек — AWS CLI, SDK және S3 API интеграциясы.",
   "sectionTitle": "Кілттерді пайдалану арқылы қолжетімділік",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

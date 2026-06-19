@@ -4,5 +4,10 @@
   "shortDescription": "ВМ образдарын басқаруға арналған OpenAPI спецификациясы",
   "sectionTitle": "ВМ образдарын басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

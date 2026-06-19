@@ -1,0 +1,14 @@
+{
+  "title": "DLH-пен жұмыс істеуге арналған кітапханалар",
+  "shortDescription": "Data Lakehouse-та Cloud Airflow-пен жұмыс істеуге арналған Python кітапханалары",
+  "metaDescription": "DLH (Data Lakehouse) жүйесінде Cloud Airflow-пен жұмыс істеу үшін қандай Python кітапханаларын пайдалану қажет екенін біліңіз",
+  "sectionTitle": "DLH-пен жұмыс істеуге арналған кітапханалар",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -1,17 +1,19 @@
+# {heading(Kiali)[id=k8s-install-advanced-kiali]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
-Бұл аддон тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+Бұл аддон тек {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
 {/note}
 
-## Дайындық кезеңдері
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-kiali-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
-1. [`istio` аддонын орнатыңыз](../install-advanced-istio).
+1. {linkto(../install-advanced-istio#k8s-install-advanced-istio)[text=`istio` аддонын орнатыңыз]}.
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-kiali-install]}
 
-Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
+Аддон үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді.
 
 {tabs}
 
@@ -20,9 +22,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -34,7 +36,7 @@
 
       - қолданба атауы;
       - аддон орнатылатын атаулар кеңістігінің атауы;
-      - [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu).
+      - {linkto(#k8s-install-advanced-kiali-edit-code)[text=аддонды баптау кодын]}.
 
         {note:warn}
 
@@ -47,17 +49,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -76,21 +78,21 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
-1. [Kiali-ге қосылыңыз](../../../../connect/addons-ui).
+1. {linkto(../../../../connect/addons-ui#k8s-addons-ui)[text=Kiali-ге қосылыңыз]}.
 
 {/tab}
 
 {tab(Бөлінген worker-түйіндерге орнату)}
 
-1. Егер бұл әлі жасалмаса, аддонды орнатуғал арналған бөлінген worker-түйіндер тобын дайындаңыз:
+1. Егер бұл әлі жасалмаса, аддонды орнатуға арналған бөлінген worker-түйіндер тобын дайындаңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -98,23 +100,23 @@
 
    1. Кластерде аддондар орналастырылатын бөлінген worker-түйіндер тобы бар екеніне көз жеткізіңіз.
 
-      Егер мұндай топ болмаса — [оны қосыңыз](../../../manage-node-group#add_group).
+      Егер мұндай топ болмаса — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=оны қосыңыз]}.
 
-   1. Егер бұл әлі жасалмаса, осы түйіндер тобы үшін [мыналарды орнатыңыз](../../../manage-node-group#labels_taints):
+   1. Егер бұл әлі жасалмаса, осы түйіндер тобы үшін {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=мыналарды орнатыңыз]}:
 
       - **Белгі (label)**: кілт `addonNodes`, мәні `dedicated`.
       - **Шектеу (taint)**: әсері `NoSchedule`, кілт `addonNodes`, мәні `dedicated`.
 
    {/tab}
-   
+
    {/tabs}
 
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -126,14 +128,14 @@
 
       - қолданба атауы;
       - аддон орнатылатын атаулар кеңістігінің атауы;
-      - [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu).
+      - {linkto(#k8s-install-advanced-kiali-edit-code)[text=аддонды баптау кодын]}.
 
    1. Аддонды баптау кодында қажетті ерекшеліктерді (tolerations) және түйін селекторларын (nodeSelector) орнатыңыз:
 
       {tabs}
-      
+
       {tab(Ерекшеліктер)}
-            
+
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -145,9 +147,9 @@
       Бұл ерекшелікті `tolerations` өрісі үшін орнатыңыз.
 
       {/tab}
-      
+
       {tab(Түйін селекторлары)}
-      
+
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -156,7 +158,7 @@
       Бұл селекторды `nodeSelector` өрісі үшін орнатыңыз.
 
       {/tab}
-      
+
       {/tabs}
 
       {note:warn}
@@ -170,17 +172,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
 
    1. Конфигурациялық файлдардың дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -195,10 +197,10 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
-1. [Kiali-ге қосылыңыз](../../../../connect/addons-ui).
+1. {linkto(../../../../connect/addons-ui#k8s-addons-ui)[text=Kiali-ге қосылыңыз]}.
 
 {/tab}
 
@@ -215,9 +217,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -235,17 +237,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
 
    1. Конфигурациялық файлдардың дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -260,24 +262,24 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
-1. [Kiali-ге қосылыңыз](../../../../connect/addons-ui).
+1. {linkto(../../../../connect/addons-ui#k8s-addons-ui)[text=Kiali-ге қосылыңыз]}.
 
 {/tab}
 
 {/tabs}
 
-## Орнату кезінде аддонды баптау кодын өңдеу
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-kiali-edit-code]}
 
 {note:info}
 
-Аддон кодын өңдеу стандартты орнатуғал және бөлінген worker-түйіндерге орнатуғал қолданылады.
+Аддон кодын өңдеу стандартты орнатуға және бөлінген worker-түйіндерге орнатуға қолданылады.
 
 {/note}
 
-### Grafana-мен интеграция үшін құпиясөз орнату
+### {heading(Grafana-мен интеграция үшін құпиясөз орнату)[id=k8s-install-advanced-kiali-set-password]}
 
 Әдепкі параметрлермен аддонды орнатқанда Grafana-мен интеграция қолжетімсіз болады.
 
@@ -290,4 +292,4 @@ external_services:
       password: "<пароль пользователя admin Grafana>"
 ```
 
-Кодты өңдегеннен кейін [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
+Кодты өңдегеннен кейін {linkto(#k8s-install-advanced-kiali-install)[text=аддонды орнатуды жалғастырыңыз]}.

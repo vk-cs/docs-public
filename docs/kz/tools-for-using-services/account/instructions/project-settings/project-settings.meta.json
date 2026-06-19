@@ -1,8 +1,17 @@
 {
   "title": "Жобалармен жұмыс",
-  "shortDescription": "VK Cloud жобаларын басқару",
+  "shortDescription": "{var(cloud)} жобаларын басқару",
   "metaDescription": "VK Cloud жобаларын басқару.",
   "sectionTitle": "Жобалармен жұмыс",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

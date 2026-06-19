@@ -1,9 +1,19 @@
 {
   "title": "Пошаговые инструкции",
-  "shortDescription": "Работа с личным кабинетом",
+  "shortDescription": "Работа с личным кабинетом {var(cloud)}",
   "metaDescription": "Работа с личным кабинетом VK Cloud.",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 2,
-  "uuid": "515257f2-43c4-4c9f-bdf4-67cae67618f4"
+  "uuid": "515257f2-43c4-4c9f-bdf4-67cae67618f4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

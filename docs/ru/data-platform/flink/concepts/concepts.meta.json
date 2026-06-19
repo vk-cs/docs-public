@@ -1,9 +1,16 @@
 {
   "title": "Концепции",
-  "shortDescription": "Как устроен сервис Flink в VK Cloud: функциональные особенности и внутренняя архитектура",
-  "metaDescription": "Как устроен сервис Flink в VK Cloud: функциональные особенности и внутренняя архитектура",
+  "shortDescription": "Как устроен сервис Flink в VK Data Platform: функциональные особенности и внутренняя архитектура",
+  "metaDescription": "Как устроен сервис Flink в VK Data Platform: функциональные особенности и внутренняя архитектура",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,
-  "uuid": "753c078e-1fb6-4ba0-9b05-024cf849629a"
+  "uuid": "753c078e-1fb6-4ba0-9b05-024cf849629a",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

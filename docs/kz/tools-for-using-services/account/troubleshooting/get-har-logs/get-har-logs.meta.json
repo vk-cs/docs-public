@@ -4,5 +4,12 @@
   "metaDescription": "Техникалық қолдау үшін логтарды HAR-файлға жазу бойынша көмек",
   "sectionTitle": "Жеке кабинетте ресурстардың көрсетілу мәселесі",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

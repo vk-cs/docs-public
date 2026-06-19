@@ -5,5 +5,19 @@
   "sectionTitle": "Launching jobs in a Spark cluster",
   "icon": "",
   "weight": 0,
-  "uuid": "23b5fdc6-c538-4475-9406-7f5c0dfd2f37"
+  "uuid": "23b5fdc6-c538-4475-9406-7f5c0dfd2f37",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

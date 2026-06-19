@@ -5,5 +5,10 @@
   "sectionTitle": "Working with the event log",
   "icon": "",
   "weight": 2,
-  "uuid": "9bd4d7e9-c1fb-4621-b049-6b998e726e4a"
+  "uuid": "9bd4d7e9-c1fb-4621-b049-6b998e726e4a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

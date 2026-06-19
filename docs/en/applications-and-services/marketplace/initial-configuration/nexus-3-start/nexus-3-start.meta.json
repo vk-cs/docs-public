@@ -1,9 +1,14 @@
 {
-    "title": "Nexus 3 deployment",
-      "shortDescription": "Deployment of Sonatype Nexus 3 service in the project",
-      "metaDescription": "Marketplace VK Cloud: steps to deploy the Sonatype Nexus 3 to the target project",
-    "sectionTitle": "Nexus 3 deployment",
-    "icon": "",
-    "weight": 6,
-    "uuid": "6c17dbdd-c35c-4253-8a71-3aa2f79034db"
+  "title": "Nexus 3 deployment",
+  "shortDescription": "Deployment of Sonatype Nexus 3 service in the project",
+  "metaDescription": "Marketplace VK Cloud: steps to deploy the Sonatype Nexus 3 to the target project",
+  "sectionTitle": "Nexus 3 deployment",
+  "icon": "",
+  "weight": 6,
+  "uuid": "6c17dbdd-c35c-4253-8a71-3aa2f79034db",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

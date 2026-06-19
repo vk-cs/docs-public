@@ -4,5 +4,10 @@
   "metaDescription": "Жоба идентификаторын алу, жобаның атауын өзгерту.",
   "sectionTitle": "Жоба баптаулары",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

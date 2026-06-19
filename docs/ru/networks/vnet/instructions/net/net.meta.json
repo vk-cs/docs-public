@@ -1,9 +1,19 @@
 {
-    "title": "Сети и подсети",
-      "shortDescription": "Как создавать, редактировать, удалять сети и подсети",
-      "metaDescription": "В личном кабинете раздел",
-    "sectionTitle": "Сети и подсети",
-    "icon": "",
-    "weight": 0,
-    "uuid": "636bde86-a655-4a24-84e7-680e5a77fb31"
+  "title": "Сети и подсети",
+  "shortDescription": "Как создавать, редактировать, удалять сети и подсети",
+  "metaDescription": "В личном кабинете раздел",
+  "sectionTitle": "Сети и подсети",
+  "icon": "",
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "636bde86-a655-4a24-84e7-680e5a77fb31"
 }

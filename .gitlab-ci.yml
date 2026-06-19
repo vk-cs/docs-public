@@ -6,39 +6,85 @@ include:
 
 variables:
   # pipeline parameters
-  VKCS_PREPARE_ENABLED: 'true'
   VKCS_D11N_VERSION: '5.5.2'
-  VKCS_DOCKERFILE_PATH: devops/Dockerfile
-  VKCS_DEV_DEPLOY_MODE: auto
-  VKCS_PROD_DEPLOY_MODE: manual
-  VKCS_STAGE_DEPLOY_MODE: auto
+  VKCS_DEV_MATRIX_DEPLOY_MODE: auto
+  VKCS_STAGE_MATRIX_DEPLOY_MODE: auto
+  VKCS_PROD_MATRIX_DEPLOY_MODE: manual
+  VKCS_DEV_MASTER_MATRIX_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
-  VKCS_K8S_DEV_INGRESS_PATH: /docs
+  VKCS_FILEGEN_VERSION: "5.5.1"
 
-  # Github sync variables
+
+# Github sync variables
   VKCS_GITHUB_REPO: vk-cs/docs-public
   # must be defined in Project CI/CD
   # GITHUB_TOKEN: secret
   # GITLAB_TOKEN: secret
 
-  VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"
-  VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.com"
 
   # NOTE: override variables to reuse ansible playbooks after changes in MCSAD-1045
   HELM_CHART_NAME: new-help
   VKCS_AWX_JOB_TEMPLATE_LABEL: ${HELM_CHART_NAME}-helm
 
-preparer Dev:
-  variables:
-    SATORI_API_KEY: $SATORI_API_KEY_DEVINT
-    SATORI_API_URL: https://satori.devint.vkc.devmail.ru
-    D11N_PORTAL_URL: https://$CI_COMMIT_REF_SLUG.$VKCS_K8S_DEV_INGRESS_BASE_DOMAIN
+.docker-images:
+  parallel:
+    matrix:
+      - DOCKERFILE_PATH: devops/public.Dockerfile
+        IMAGE_NAME_SUFFIX: public
+        VKCS_PREPARE_ENABLED: "true"
+        VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"
+        VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.com"
+        SATORI_API_URL_STAGE: https://mcstest.mail.ru/search/api
+        SATORI_API_URL_PROD: https://cloud.vk.com/search/api
+        SATORI_API_URL_DEV: https://satori.devint.vkc.devmail.ru
+        VKCS_K8S_DEV_INGRESS_PATH: /docs
+      - DOCKERFILE_PATH: devops/private.Dockerfile
+        IMAGE_NAME_SUFFIX: private
+        VKCS_PREPARE_ENABLED: "false"
+        VKCS_K8S_DEV_INGRESS_PATH: /private-cloud
+      - DOCKERFILE_PATH: devops/data-p.Dockerfile
+        IMAGE_NAME_SUFFIX: data-p
+        VKCS_PREPARE_ENABLED: "false"
+        VKCS_K8S_DEV_INGRESS_PATH: /data-platform
+      - DOCKERFILE_PATH: devops/s3.Dockerfile
+        IMAGE_NAME_SUFFIX: s3
+        VKCS_PREPARE_ENABLED: "false"
+        VKCS_K8S_DEV_INGRESS_PATH: /s3
 
-preparer Stage:
-  variables:
-    SATORI_API_KEY: $SATORI_API_KEY_STAGE
+# preparer-settings
+preparer Dev Matrix:
+  script:
+    - cd /home/node/app
+    - BUILD_POINTS=public npx preparer start checkup
 
-preparer Prod:
-  variables:
-    SATORI_API_KEY: $SATORI_API_KEY_PROD
+preparer Stage Matrix:
+  script:
+    - cd /home/node/app
+    - BUILD_POINTS=public npx preparer start checkup
+
+preparer Prod Matrix:
+  script:
+    - cd /home/node/app
+    - BUILD_POINTS=public npx preparer start checkup
+#    - BUILD_POINTS=public npx preparer start forTraining
+
+# filegen-settings
+.filegen-dest:
+  parallel:
+    matrix:
+      - VKCS_FILEGEN_KEYS: user-guide-private
+      - VKCS_FILEGEN_KEYS: user-guide-private-pg
+      - VKCS_FILEGEN_KEYS: user-guide-private-cert
+      - VKCS_FILEGEN_KEYS: user-guide-s3
+      - VKCS_FILEGEN_KEYS: user-guide-data-p
+
+# check_links
+check_links:
+  stage: test
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  script:
+    - bash ./check-md-links.sh docs/ru
+  when: manual

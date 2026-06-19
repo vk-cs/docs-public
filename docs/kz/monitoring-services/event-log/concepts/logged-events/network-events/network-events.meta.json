@@ -4,5 +4,10 @@
   "metaDescription": "Виртуалды желілер сервисі Cloud Audit-ке жіберетін оқиғалар",
   "sectionTitle": "Neutron және Sprut компоненттерінің оқиғалары",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

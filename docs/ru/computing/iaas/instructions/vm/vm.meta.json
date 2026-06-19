@@ -5,6 +5,16 @@
   "sectionTitle": "Виртуальные машины",
   "icon": "",
   "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-cert",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
   "additionalUuids": [
     "000c02b8-7278-4d7b-9c0b-22806efa68a5"
   ],

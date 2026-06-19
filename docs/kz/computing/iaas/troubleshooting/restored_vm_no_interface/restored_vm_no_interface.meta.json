@@ -4,5 +4,12 @@
   "metaDescription": "Резервтік көшірмеден қалпына келтірілген ВМ-де интерфейс бапталмаған",
   "sectionTitle": "ВМ интерфейсі бапталмаған",
   "icon": "",
-  "weight": 20
+  "weight": 20,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

@@ -1,0 +1,16 @@
+{
+  "title": "IAM Only басқару",
+  "shortDescription": "Жеке кабинетте аккаунт пен жоба баптауларын қалай басқаруға болады",
+  "metaDescription": "IAM Only — VK Object Storage үшін веб‑интерфейс. Мақалада аккаунтты қалай басқару және жобаны қалай баптау керектігі сипатталған.",
+  "sectionTitle": "IAM Only басқару",
+  "weight": 1,
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "",
+  "createdAt": "",
+  "updatedAt": ""
+}

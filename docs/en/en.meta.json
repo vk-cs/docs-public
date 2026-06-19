@@ -23,7 +23,6 @@
       "iconMobile": "/ru/assets/secure-icon-mobile.svg"
     }
   ],
-
   "uuid": "301ac9a0-a82e-406d-b707-702fa2154727",
   "additionalUuids": [
     "d86aa46e-f5eb-4f3e-b066-49cdda0b370b",
@@ -96,9 +95,13 @@
     "9979a589-31ee-4e8f-8d5e-497fe0bb5cba",
     "af045b12-cc39-4584-8702-f2057e9b0ab1",
     "2c9e7e21-0415-407a-ac7d-967f004674d9"
-  ], 
-  
-  "metaDescription": "VK Cloud Documentation helps you to find FAQ, how-to guides and step-by-step tutorials."
+  ],
+  "metaDescription": "VK Cloud Documentation helps you to find FAQ, how-to guides and step-by-step tutorials.",
+  "build": {
+    "points": [
+      "public"
+    ]
+  }
 }
 
 

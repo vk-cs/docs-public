@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 ## {heading(Құрылым)[id=saas_plan_structure]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 `plans` секциясында сервис тарифтік жоспарларын келесі құрылым бойынша сипаттаңыз:
 

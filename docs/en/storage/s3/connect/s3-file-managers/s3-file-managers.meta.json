@@ -1,9 +1,23 @@
 {
-    "title": "File managers",
-      "shortDescription": "",
-      "metaDescription": "Graphical tools such as file managers allow you to view objects in a bucket by simulating a hierarchical directory structure. Before starting work Before y",
-    "sectionTitle": "File managers",
-    "icon": "",
-    "weight": 2,
-    "uuid": "f598e9bb-7761-4b67-be7a-d02ef39081fe"
+  "title": "File managers",
+  "shortDescription": "",
+  "metaDescription": "Graphical tools such as file managers allow you to view objects in a bucket by simulating a hierarchical directory structure. Before starting work Before y",
+  "sectionTitle": "File managers",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f598e9bb-7761-4b67-be7a-d02ef39081fe",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,5 +4,14 @@
   "metaDescription": "ВМ сервистері мен платформалық қосымшаларды мониторингтеу құралдары. Cloud Monitoring сервисінде telegraf мониторинг агентін және қосымша плагиндерді қалай қосуға және өшіруге болатынын біліңіз",
   "sectionTitle": "telegraf және оның плагиндерін басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

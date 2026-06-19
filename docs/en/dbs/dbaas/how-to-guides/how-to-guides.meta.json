@@ -5,5 +5,19 @@
   "metaDescription": "Scenarios for using the cloud DBMS service",
   "icon": "",
   "weight": 5,
-  "uuid": "b3c821b0-90c9-4ea9-be7e-361e5a571f29"
+  "uuid": "b3c821b0-90c9-4ea9-be7e-361e5a571f29",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

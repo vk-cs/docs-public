@@ -1,0 +1,15 @@
+{
+  "title": "Веб-интерфейс Trino",
+  "shortDescription": "Веб-интерфейс Cloud Trino для мониторинга запросов и состояния кластера",
+  "metaDescription": "Узнайте о веб-интерфейсе Cloud Trino VK Data Platform: назначение, основные разделы, статусы запросов и типовые сценарии использования",
+  "sectionTitle": "Веб-интерфейс Trino",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

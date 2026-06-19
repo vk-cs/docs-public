@@ -1,0 +1,14 @@
+{
+  "title": "Подключение к OpenStack CLI",
+  "shortDescription": "Установка клиента OpenStack для управления ресурсами {var(cloud)}",
+  "metaDescription": "Начните управлять VK Cloud из командной строки. Это пошаговое руководство поможет установить OpenStack CLI на Windows, macOS, Linux и пройти аутентификацию.",
+  "sectionTitle": "Подключение к OpenStack CLI",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

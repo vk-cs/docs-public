@@ -1,12 +1,26 @@
 {
-    "title": "Установка и настройка Harbor",
-      "shortDescription": "",
-      "metaDescription": "В данной статье рассмотрим, как установить и настроить хранилища репозиториев Harbor. После этого вы можете настроить авторазвертывание приложения в класте",
-    "sectionTitle": "Установка и настройка Harbor",
-    "icon": "",
-    "weight": 3,
-    "additionalUuids": [
-        "bb7df308-0c05-4316-9905-070d644215b8"
-    ],
-    "uuid": "6bd17c92-1ae8-447b-a65e-1e4b017e81cb"
+  "title": "Установка и настройка Harbor",
+  "shortDescription": "",
+  "metaDescription": "В данной статье рассмотрим, как установить и настроить хранилища репозиториев Harbor. После этого вы можете настроить авторазвертывание приложения в класте",
+  "sectionTitle": "Установка и настройка Harbor",
+  "icon": "",
+  "weight": 3,
+  "additionalUuids": [
+    "bb7df308-0c05-4316-9905-070d644215b8"
+  ],
+  "uuid": "6bd17c92-1ae8-447b-a65e-1e4b017e81cb",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

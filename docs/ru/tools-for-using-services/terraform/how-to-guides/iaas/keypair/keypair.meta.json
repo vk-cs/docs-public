@@ -1,9 +1,14 @@
 {
-    "title": "Создание ключевых пар",
-      "shortDescription": "",
-      "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers. Создание ключевых пар",
-    "sectionTitle": "Создание ключевых пар",
-    "icon": "",
-    "weight": 3,
-    "uuid": "42e0bc44-a89a-4bc8-820a-8f1ddeaa0a37"
+  "title": "Создание ключевых пар",
+  "shortDescription": "",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers. Создание ключевых пар",
+  "sectionTitle": "Создание ключевых пар",
+  "icon": "",
+  "weight": 3,
+  "uuid": "42e0bc44-a89a-4bc8-820a-8f1ddeaa0a37",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,12 @@
   "sectionTitle": "Ошибка x-amz-content-sha256 при работе с AWS CLI v2",
   "icon": "",
   "weight": 5,
-  "uuid": "62741a81-bc29-4192-be1e-fcc6647b94fa"
+  "uuid": "62741a81-bc29-4192-be1e-fcc6647b94fa",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

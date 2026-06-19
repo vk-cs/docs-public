@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud-та CDN-ресурсын тікелей немесе бакет интерфейсі арқылы қалай құруға болады.",
   "sectionTitle": "CDN-ресурсын құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

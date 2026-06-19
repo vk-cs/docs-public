@@ -1,12 +1,14 @@
+# {heading(Қол жеткізу ережелерін басқару)[id=iaas-fs-access-rules]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(Қол жеткізу ережесін қосу)[id=adding_an_access_rule]}
+## {heading(Қол жеткізу ережесін қосу)[id=iaas-fs-access-rules-adding]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық қойма орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлттық есептеулер** → **Файлдық қойма** бөліміне өтіңіз.
 1. Қажетті файлдық қойманың атауын басыңыз.
@@ -19,13 +21,13 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) көз жеткізіңіз.
 1. Қол жеткізу ережесін пәрмен арқылы қосыңыз:
 
-    ```console
-    openstack share access create <ХРАНИЛИЩЕ> ip <IP_СЕТИ> --access-level <РЕЖИМ_ДОСТУПА>
-    ```
+   ```console
+   openstack share access create <ХРАНИЛИЩЕ> ip <IP_СЕТИ> --access-level <РЕЖИМ_ДОСТУПА>
+   ```
 
    Мұнда:
 
@@ -35,9 +37,9 @@
 
 1. Қол жеткізу ережелерінің тізімін сұратып, ереженің сәтті жасалғанын тексеріңіз:
 
-    ```console
-    openstack share access list <ХРАНИЛИЩЕ>
-    ```
+   ```console
+   openstack share access list <ХРАНИЛИЩЕ>
+   ```
 
    Мұнда `<ХРАНИЛИЩЕ>` — файлдық қойманың атауы немесе идентификаторы.
 
@@ -45,13 +47,13 @@
 
 {/tabs}
 
-## {heading(Қол жеткізу ережесін жою)[id=deleting_an_access_rule]}
+## {heading(Қол жеткізу ережесін жою)[id=iaas-fs-access-rules-deleting]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық қойма орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлттық есептеулер** → **Файлдық қойма** бөліміне өтіңіз.
 1. Қажетті файлдық қойманың атауын басыңыз.
@@ -63,21 +65,21 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) көз жеткізіңіз.
 1. Қол жеткізу ережелерінің тізімін сұратып, қажетті ереженің идентификаторын алыңыз:
 
-    ```console
-    openstack share access list <ХРАНИЛИЩЕ>
-    ```
+   ```console
+   openstack share access list <ХРАНИЛИЩЕ>
+   ```
 
    Мұнда `<ХРАНИЛИЩЕ>` — файлдық қойманың атауы немесе идентификаторы.
 
 1. Қол жеткізу ережесін пәрмен арқылы жойыңыз:
 
-    ```console
-    openstack share access delete <ХРАНИЛИЩЕ> <ID_ПРАВИЛА>
-    ```
+   ```console
+   openstack share access delete <ХРАНИЛИЩЕ> <ID_ПРАВИЛА>
+   ```
 
    Мұнда:
 

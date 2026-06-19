@@ -5,5 +5,10 @@
   "sectionTitle": "Разрыв соединения в балансировщике нагрузки",
   "icon": "",
   "weight": 5,
-  "uuid": "0584bf4a-baa9-4e38-b810-9d49e2d7c3c0"
+  "uuid": "0584bf4a-baa9-4e38-b810-9d49e2d7c3c0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "MySQL",
   "icon": "",
   "weight": 3,
-  "uuid": "443d76fe-af87-4c4d-b6f3-7eb629012a84"
+  "uuid": "443d76fe-af87-4c4d-b6f3-7eb629012a84",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

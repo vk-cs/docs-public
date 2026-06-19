@@ -4,5 +4,15 @@
   "metaDescription": "DNS сұрауларын өңдеу жылдамдығы мен тұрақтылығын арттыру үшін Kubernetes кластерінің әрбір торабында жергілікті DNS-кэшті қалай баптау керектігін біліңіз",
   "sectionTitle": "Жергілікті DNS-кэшті баптау",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

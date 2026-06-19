@@ -4,5 +4,20 @@
   "metaDescription": "Kubernetes жүйесінде лог жүргізу үшін неге арнайы шешім қажет Контейнерлерге лог жазу қолайсыз, себебі: контейнерлендірілген қолданбаларда жасалатын деректер",
   "sectionTitle": "Fluentd көмегімен Kubernetes жүйесінен орталықтандырылған лог жүргізуді қалай баптауға болады",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "a5a42168-c69c-4835-93c3-97df526e24f5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

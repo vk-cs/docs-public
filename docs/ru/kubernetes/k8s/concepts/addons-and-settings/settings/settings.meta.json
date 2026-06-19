@@ -1,9 +1,14 @@
 {
-    "title": "Настройки кластера",
-      "shortDescription": "Предустановленные настройки кластера",
-      "metaDescription": "Предустановленные настройки кластера.",
-    "sectionTitle": "Настройки кластера",
-    "icon": "",
-    "weight": 2,
-    "uuid": "3aabfc62-0226-408f-b27d-fb0c00f72f0a"
+  "title": "Настройки кластера",
+  "shortDescription": "Предустановленные настройки кластера",
+  "metaDescription": "Предустановленные настройки кластера.",
+  "sectionTitle": "Настройки кластера",
+  "icon": "",
+  "weight": 2,
+  "uuid": "3aabfc62-0226-408f-b27d-fb0c00f72f0a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

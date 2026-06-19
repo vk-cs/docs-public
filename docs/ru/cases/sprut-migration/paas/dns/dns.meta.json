@@ -5,5 +5,19 @@
   "sectionTitle": "Миграция DNS",
   "icon": "",
   "weight": 3,
-  "uuid": "4494dc30-0e95-43a7-86c3-bbdd29eca119"
+  "uuid": "4494dc30-0e95-43a7-86c3-bbdd29eca119",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

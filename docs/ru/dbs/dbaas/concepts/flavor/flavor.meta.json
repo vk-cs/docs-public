@@ -1,0 +1,16 @@
+{
+  "title": "Шаблон конфигурации инстансов БД",
+  "shortDescription": "",
+  "metaDescription": "Шаблон конфигурации инстансов БД",
+  "sectionTitle": "Шаблон конфигурации инстансов БД",
+  "weight": 9,
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": ""
+}

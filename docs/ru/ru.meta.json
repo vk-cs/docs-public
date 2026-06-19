@@ -24,8 +24,120 @@
     }
   ],
   "variables": {
-    "system": "магазин приложений Marketplace",
-    "revdate": "18.07.2024"
+    "marketplace": "магазин приложений Marketplace",
+    "revdate": "18.07.2024",
+    "vendor": "VK Tech",
+    "cloud": [
+      {
+        "buildPoint": "public",
+        "value": "VK Cloud"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-cert",
+        "value": "Private Cloud от VK"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Cloud"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Cloud"
+      }
+    ],
+    "s3": [
+      {
+        "buildPoint": "public",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Object Storage"
+      }
+    ],
+    "data-p": [
+      {
+        "buildPoint": "public",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Data Platform"
+      }
+    ]
+
   },
   "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
   "additionalUuids": [
@@ -131,9 +243,17 @@
     "88990f49-0ef8-456a-8127-f0cb658e40bf",
     "72b9a9bf-a337-4603-8983-9e586fe69691",
     "ea236dda-40ac-4e59-8908-74d1714074c8",
-    "887ad045-5fe6-40a7-88c0-7c4e53b07971",
-    "46b40d1d-5c26-454c-a10f-2242b5e2a502"
-      ],
-
-  "metaDescription": "Документация VK Cloud поможет вам с ответом на часто задаваемые вопросы. Здесь вы найдете практические руководства и пошаговые инструкции по работе с VK Cloud."
+    "887ad045-5fe6-40a7-88c0-7c4e53b07971"
+  ],
+  "metaDescription": "Документация VK Cloud поможет вам с ответом на часто задаваемые вопросы. Здесь вы найдете практические руководства и пошаговые инструкции по работе с VK Cloud.",
+  "build": {
+    "points": [
+      "public",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3-pdf",
+      "data-p-pdf"
+    ]
+  }
 }

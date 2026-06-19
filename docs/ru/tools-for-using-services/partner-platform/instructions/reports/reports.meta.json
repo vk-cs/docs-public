@@ -5,5 +5,10 @@
   "sectionTitle": "Детализация и отчеты",
   "icon": "",
   "weight": 3,
-  "uuid": "12db9c00-8268-4785-b152-1befba3b6ab0"
+  "uuid": "12db9c00-8268-4785-b152-1befba3b6ab0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

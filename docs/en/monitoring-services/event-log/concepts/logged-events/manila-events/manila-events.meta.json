@@ -5,5 +5,10 @@
   "sectionTitle": "Manila component events",
   "icon": "",
   "weight": 2,
-  "uuid": "73a08f7d-98b5-46af-8504-3463767ccffa"
+  "uuid": "73a08f7d-98b5-46af-8504-3463767ccffa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

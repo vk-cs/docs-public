@@ -1,0 +1,14 @@
+{
+  "title": "Ошибка при подключение к Spark через SparkSession",
+  "shortDescription": "",
+  "metaDescription": "Узнайте почему при подключение к Cloud Spark VK Data Platform через SparkSession возникает ошибка и как ее исправить",
+  "sectionTitle": "Ошибка при подключение к Spark через SparkSession",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

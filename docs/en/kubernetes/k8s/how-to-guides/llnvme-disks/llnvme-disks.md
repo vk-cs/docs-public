@@ -8,8 +8,8 @@ LL NVMe (Low Latency NVMe) disks are high-performance local disks available on t
    - [VM flavor](/en/computing/iaas/concepts/about#flavors) for the node group based on this disk type.
    
    Wait for access to the configuration before proceeding to the next step.
-   
-1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a cluster if not done so already.
+
+{include(/en/_includes/_create-test-cluster.md)}
 
 1. In your VK Cloud management console, [add](/en/kubernetes/k8s/instructions/manage-node-group#add_group) a worker node group with VMs based on the configuration for LL NVMe:
 
@@ -175,33 +175,24 @@ To learn how to connect LL NVMe disks to worker nodes, deploy the `coffee` test 
 
 ## Delete unused resources
 
-1. If the Kubernetes resources you created are no longer needed, delete them.
+{include(/en/_includes/_remove-k8s-resources.md)} LL NVMe disks, delete them:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+1. Delete the `example-app` namespace and the resources associated with it:
 
+   {tabs}
+   {tab(Linux/macOS)}
    ```console
    kubectl delete ns example-app
-
    ```
+   {/tab}
 
-   </tabpanel>
-   <tabpanel>
-
+   {tab(Windows)}
    ```console
    kubectl delete ns example-app; `
    ```
+   {/tab}
+   {/tabs}
 
-   </tabpanel>
-   </tabs>
+1. [Delete](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) the persistent volume that was created.
 
-1. [Remove](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) the persistent volume that was created.
-
-1. A running cluster consumes computing resources. If you no longer need it:
-
-   - [Stop](/en/kubernetes/k8s/instructions/manage-cluster#stop) it to use it later.
-   - [Delete](../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

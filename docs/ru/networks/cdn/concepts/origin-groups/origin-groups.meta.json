@@ -5,5 +5,10 @@
     "sectionTitle": "Группы источников",
     "icon": "",
     "weight": 3,
-    "uuid": "4d80c594-56ad-4c04-a6d6-c205b066c7a2"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "4d80c594-56ad-4c04-a6d6-c205b066c7a2"
 }

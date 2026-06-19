@@ -1,0 +1,17 @@
+{
+  "title": "Fluent Bit",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, как установить и настроить аддон Fluent Bit для Cloud Logging (logaas-integration) в кластеры VK Private Cloud",
+  "sectionTitle": "Fluent Bit",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

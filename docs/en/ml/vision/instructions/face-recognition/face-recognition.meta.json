@@ -1,9 +1,23 @@
 {
-    "title": "Face recognition",
-      "shortDescription": "API methods for facial recognition",
-      "metaDescription": "Four API methods are used for face recognition",
-    "sectionTitle": "Face recognition",
-    "icon": "",
-    "weight": 0,
-    "uuid": "809f0eb5-52d7-4776-97f3-0b6e047b5af2"
+  "title": "Face recognition",
+  "shortDescription": "API methods for facial recognition",
+  "metaDescription": "Four API methods are used for face recognition",
+  "sectionTitle": "Face recognition",
+  "icon": "",
+  "weight": 0,
+  "uuid": "809f0eb5-52d7-4776-97f3-0b6e047b5af2",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

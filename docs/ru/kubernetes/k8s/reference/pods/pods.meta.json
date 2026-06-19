@@ -1,9 +1,18 @@
 {
-    "title": "Поды",
-      "shortDescription": "Общие сведения о подах в Kubernetes",
-      "metaDescription": "Основные понятия и объекты сервиса Cloud Containers в VK Cloud. Узнайте, что такое поды и как они используются в Kubernetes",
-    "sectionTitle": "Поды",
-    "icon": "",
-    "weight": 1,
-    "uuid": "f8756c03-74b7-4ba5-ae5d-6da215a6dee7"
+  "title": "Поды",
+  "shortDescription": "Общие сведения о подах в Kubernetes",
+  "metaDescription": "Основные понятия и объекты сервиса Cloud Containers в VK Cloud. Узнайте, что такое поды и как они используются в Kubernetes",
+  "sectionTitle": "Поды",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f8756c03-74b7-4ba5-ae5d-6da215a6dee7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

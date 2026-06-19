@@ -1,0 +1,13 @@
+{
+  "title": "Кіріспе",
+  "shortDescription": "",
+  "metaDescription": "Кіріспе",
+  "sectionTitle": "Кіріспе",
+  "build": {
+    "for": [
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "",
+  "weight": 1
+}

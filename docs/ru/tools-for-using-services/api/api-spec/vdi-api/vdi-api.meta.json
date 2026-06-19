@@ -1,9 +1,14 @@
 {
-    "title": "Cloud Desktop",
-      "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
-      "metaDescription": "Справка по Cloud Desktop API",
-    "sectionTitle": "Cloud Desktop",
-    "icon": "",
-    "weight": 15,
-    "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd"
+  "title": "Cloud Desktop",
+  "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
+  "metaDescription": "Справка по Cloud Desktop API",
+  "sectionTitle": "Cloud Desktop",
+  "icon": "",
+  "weight": 15,
+  "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

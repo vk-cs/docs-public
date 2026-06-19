@@ -1,9 +1,18 @@
 {
   "title": "Пошаговые инструкции",
-  "shortDescription": "Инструкции по работе с журналом событий и подключению вашей SIEM-системы к платформе VK Cloud",
+  "shortDescription": "Инструкции по работе с журналом событий и подключению вашей SIEM-системы к платформе {var(cloud)}",
   "metaDescription": "Как просматривать и анализировать журнал событий безопасности Cloud Audit. Инструкции по работе с журналом событий и подключению вашей SIEM-системы к платформе VK Cloud",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 2,
-  "uuid": "05c63c12-7cac-4249-83ca-edad70ea85c7"
+  "uuid": "05c63c12-7cac-4249-83ca-edad70ea85c7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

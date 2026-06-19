@@ -1,10 +1,12 @@
-## Запуск кластера
+# {heading(Управление кластером Spark)[id=mlspark-instructions-manage-cluster]}
+
+## {heading(Запуск кластера)[id=mlspark-instructions-manage-cluster-launch]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
 1. Выполните одно из действий:
@@ -16,13 +18,13 @@
 
 {/tabs}
 
-## Остановка кластера
+## {heading(Остановка кластера)[id=mlspark-instructions-manage-cluster-stop]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
 1. Выполните одно из действий:
@@ -34,13 +36,13 @@
 
 {/tabs}
 
-## Получение информации о кластере
+## {heading(Получение информации о кластере)[id=mlspark-instructions-manage-cluster-get-info]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
 1. Нажмите на имя нужного кластера.
@@ -49,25 +51,25 @@
 
 {/tabs}
 
-## Изменение типа виртуальной машины для master-узлов
+## {heading(Изменение типа виртуальной машины для master-узлов)[id=mlspark-instructions-manage-cluster-change-vmtype]}
 
 {note:warn}Изменить тип виртуальной машины можно, только когда кластер запущен.{/note}
 
 Процесс изменения подробно описан в разделе [Масштабирование узлов кластера](/ru/kubernetes/k8s/concepts/scale).
 
-## Подключение к кластеру
+## {heading(Подключение к кластеру)[id=mlspark-instructions-manage-cluster-connect]}
 
 {note:warn}Не используйте для подключения к кластеру файл конфигурации kubectl и ключевую пару.{/note}
 
-Чтобы подключиться к кластеру, используйте токены доступа в личном кабинете VK Cloud или библиотеке Cloud ML Platform. Процесс создания токенов подробно описан в разделе [Аутентификация и авторизация](/ru/ml/spark-to-k8s/ml-platform-library/authz).
+Чтобы подключиться к кластеру, используйте токены доступа в личном кабинете {var(cloud)} или библиотеке Cloud ML Platform. Процесс создания токенов подробно описан в разделе [Аутентификация и авторизация](/ru/ml/spark-to-k8s/ml-platform-library/authz).
 
-## Удаление кластера
+## {heading(Удаление кластера)[id=mlspark-instructions-manage-cluster-delete]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
 1. Выполните одно из действий:

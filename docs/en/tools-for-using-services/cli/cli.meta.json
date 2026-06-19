@@ -4,5 +4,10 @@
   "metaDescription": "Command line interface to manage VK Cloud resources.",
   "sectionTitle": "Command line interface to manage VK Cloud resources.",
   "weight": 3,
-  "uuid": "a1e4c1aa-3948-440d-8925-da927354742d"
+  "uuid": "a1e4c1aa-3948-440d-8925-da927354742d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

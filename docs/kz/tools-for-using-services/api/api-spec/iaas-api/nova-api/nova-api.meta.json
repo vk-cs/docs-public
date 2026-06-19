@@ -4,5 +4,10 @@
   "shortDescription": "Виртуалды машиналарды басқаруға арналған OpenAPI спецификациясы",
   "sectionTitle": "Виртуалды машиналарды басқару",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

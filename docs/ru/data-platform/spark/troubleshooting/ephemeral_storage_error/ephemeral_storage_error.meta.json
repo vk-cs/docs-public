@@ -1,0 +1,14 @@
+{
+  "title": "Ошибка при запуске Spark-задачи: The node was low on resource: ephemeral-storage",
+  "shortDescription": "",
+  "metaDescription": "Узнайте почему при запуске Spark-задачи в Cloud Spark VK Data Platform возникает ошибка: The node was low on resource: ephemeral-storage",
+  "sectionTitle": "Ошибка при запуске Spark-задачи: The node was low on resource: ephemeral-storage",
+  "weight": 5,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

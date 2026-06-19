@@ -1,9 +1,23 @@
 {
-    "title": "Persistent volumes and PVCs",
-      "shortDescription": "How to use Persistent Volume Claim of different types to work with persistent volumes",
-      "metaDescription": "",
-    "sectionTitle": "Persistent volumes and PVCs",
-    "icon": "",
-    "weight": 5,
-    "uuid": "e7e0a184-d730-4593-80fe-af2bd453ddeb"
+  "title": "Persistent volumes and PVCs",
+  "shortDescription": "How to use Persistent Volume Claim of different types to work with persistent volumes",
+  "metaDescription": "",
+  "sectionTitle": "Persistent volumes and PVCs",
+  "icon": "",
+  "weight": 5,
+  "uuid": "e7e0a184-d730-4593-80fe-af2bd453ddeb",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

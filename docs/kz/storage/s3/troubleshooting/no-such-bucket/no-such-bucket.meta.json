@@ -4,5 +4,12 @@
   "metaDescription": "Бар бакет үшін команданы орындағанда NoSuchBucket қатесі қайтарылса не істеу керек",
   "sectionTitle": "AWS CLI арқылы бакетпен жұмыс істегенде NoSuchBucket қатесі пайда болады",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

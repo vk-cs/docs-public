@@ -4,5 +4,12 @@
   "metaDescription": "Объектілік қоймамен жұмыс істеу кезінде `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` хабарламасы пайда болады",
   "sectionTitle": "AWS CLI v2-пен жұмыс істеу кезіндегі x-amz-content-sha256 қатесі",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

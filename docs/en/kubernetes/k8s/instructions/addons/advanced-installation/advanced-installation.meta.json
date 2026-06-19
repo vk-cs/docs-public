@@ -5,5 +5,19 @@
   "sectionTitle": "Configuring and installing add-ons",
   "icon": "",
   "weight": 2,
-  "uuid": "44642c87-461e-41f1-8a70-2c5224bb2037"
+  "uuid": "44642c87-461e-41f1-8a70-2c5224bb2037",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

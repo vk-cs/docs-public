@@ -5,5 +5,10 @@
   "sectionTitle": "Search query language",
   "icon": "",
   "weight": 2,
-  "uuid": "048b98ab-c6ea-4a4c-93e4-b2664477dc03"
+  "uuid": "048b98ab-c6ea-4a4c-93e4-b2664477dc03",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Spark Connect қатесі: 404 unimplemented",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Spark сервисінде localhost-қа дейін бапталған SSH-туннель арқылы Spark Connect-ке қосылған кезде туындайтын 404 unimplemented қатесін қалай түзетуге болатынын біліңіз",
+  "sectionTitle": "Spark Connect қатесі: 404 unimplemented",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

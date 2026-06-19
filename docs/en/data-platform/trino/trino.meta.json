@@ -5,5 +5,19 @@
   "sectionTitle": "Cloud Trino",
   "icon": "",
   "weight": 4,
-  "uuid": "1648f6d7-10a9-4177-bd9b-125ce015a7fe"
+  "uuid": "1648f6d7-10a9-4177-bd9b-125ce015a7fe",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

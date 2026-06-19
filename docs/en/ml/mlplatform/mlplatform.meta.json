@@ -5,5 +5,19 @@
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 1,
-  "uuid": "0261e568-6e32-47f8-8184-13dfbb04a298"
+  "uuid": "0261e568-6e32-47f8-8184-13dfbb04a298",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

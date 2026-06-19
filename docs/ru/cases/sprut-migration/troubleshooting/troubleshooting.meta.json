@@ -5,5 +5,19 @@
   "sectionTitle": "Устранение неполадок",
   "icon": "",
   "weight": 11,
-  "uuid": "25dac540-b3c0-4b97-87d5-5d7e132cfd66"
+  "uuid": "25dac540-b3c0-4b97-87d5-5d7e132cfd66",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

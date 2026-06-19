@@ -4,5 +4,15 @@
   "metaDescription": "Мұнда Capsule аддонын баптау және орнату сипатталған.",
   "sectionTitle": "Capsule",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

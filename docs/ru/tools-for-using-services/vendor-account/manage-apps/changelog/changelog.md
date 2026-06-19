@@ -43,12 +43,12 @@
 * Обновлено:
 
    * Версия генератора JSON-файла — раздел {linkto(../ibservice_add/ib_structure#ib_structure)[text=%text]}.
-   * Требования к образу сервиса — раздел {linkto(../ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=%text]}.
+   * Требования к образу сервиса — раздел [Агент Marketplace](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based#image_based_req_image).
    * Использование SSH-ключей и установка агента на ВМ. Разделы:
 
       * {linkto(../ibservice_add/tf_manifest/tf_manifest_image#tf_manifest_image)[text=%text]}.
       * {linkto(../ibservice_add/tf_manifest/tf_manifest_output#tf_manifest_output)[text=%text]}.
-      * {linkto(../tf_manifest_example#tf_manifest_example)[text=%text]}.
+      * {linkto(../ibservice_add/tf_manifest/tf_manifest_steps#tf_manifest_example)[text=%text]}.
 
    * Мониторинг — раздел {linkto(../ibservice_add/tf_manifest/tf_manifest_monitoring#tf_manifest_monitoring)[text=%text]}.
    * Описание ресурса `ivkcs_compute_instance_reboot` — раздел {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot#ivkcs_compute_instance_reboot)[text=%text]}.

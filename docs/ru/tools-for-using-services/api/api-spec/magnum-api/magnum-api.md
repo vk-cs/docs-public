@@ -1,19 +1,19 @@
+# {heading(Cloud Containers)[id=api-spec-magnum]}
+
 {cut(Получение эндпоинта, авторизация и аутентификация)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. [Включите](/ru/access/iam/instructions/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
-1. [Включите](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api) доступ по API, если это еще не сделано.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если это еще не сделано.
+1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Включите]} доступ по API, если это еще не сделано.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
 1. Найдите в блоке **Сервис OpenStack** эндпоинт **Magnum**.
-1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите]} токен доступа `X-Auth-Token`.
 
 {/cut}
 
 {note:info}
-
 Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/magnumapi-swagger.json "download").
-
 {/note}
 
 ![{swagger}](assets/magnumapi-swagger.json)

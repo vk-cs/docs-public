@@ -1,3 +1,5 @@
+# {heading(Жергілікті PostgreSQL-ден миграция)[id=dbaas-db-migration]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) және [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) дамп құралдарының көмегімен миграцияны қолдайды.
@@ -17,7 +19,7 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
     3 | c    |  3
   ```
 
-Қабылдаушы ретінде VK Cloud жобасында жайылған, [конфигурация түрі](../../concepts/work-configs) Single болатын ДБ инстансы пайдаланылады.
+Қабылдаушы ретінде VK Cloud жобасында жайылған, {linkto(../../concepts/work-configs#dbaas-work-configs)[text=конфигурация түрі]} Single болатын ДБ инстансы пайдаланылады.
 
 Нұсқаулықтағы барлық әрекеттерді жергілікті машинадан орындау қажет.
 
@@ -26,13 +28,13 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
 Миграция кезінде дереккөз кластері мен қабылдаушы кластерде мыналар сәйкес келуі тиіс:
 
 - PostgreSQL нұсқасы;
-- орнатылған [кеңейтімдер](../../extensions).
+- орнатылған {linkto(../../extensions#dbaas-extensions)[text=кеңейтімдер]}.
 
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=dbaas-db-migration-prepare]}
 
-1. VK Cloud-та PostgreSQL ДБ инстансын [жайыңыз](../../instructions/create/create-single-replica):
+1. VK Cloud-та PostgreSQL ДБ инстансын {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=жайыңыз]}:
 
    - ДББЖ нұсқасы: 13;
    - ДБ инстансының атауы: `PostgreSQL-7313`;
@@ -41,10 +43,10 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
    - пайдаланушы аты: `user`;
    - пайдаланушы құпиясөзі: `AN0r25e0ae4d626p!`.
 
-1. Жергілікті ДБ-да [кеңейтімдердің](../../extensions) орнатылғанын тексеріңіз. Жайылған инстанста дәл сондай кеңейтімдер жиынын орнатыңыз.
+1. Жергілікті ДБ-да {linkto(../../extensions#dbaas-extensions)[text=кеңейтімдердің]} орнатылғанын тексеріңіз. Жайылған инстанста дәл сондай кеңейтімдер жиынын орнатыңыз.
 1. Дереккөз ДБ-дағы `pg_restore` нұсқасы қабылдаушы ДБ-дағы `pg_dump` нұсқасына сәйкес келетініне көз жеткізіңіз.
 
-## 1. Дереккөз ДБ дампын жасаңыз
+## {heading(1. Дереккөз ДБ дампын жасаңыз)[id=dbaas-db-migration-create-dump]}
 
 1. Дереккөз ДБ-ға `postgres` пайдаланушысы атынан қосылыңыз:
 
@@ -75,11 +77,11 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
    alter database "PostgreSQL-7313" set default_transaction_read_only=off;
    ```
 
-## 2. Дамптан деректерді қабылдаушы ДБ-ға қалпына келтіріңіз
+## {heading(2. Дамптан деректерді қабылдаушы ДБ-ға қалпына келтіріңіз)[id=dbaas-db-migration-restore]}
 
 1. (Қосымша) Қабылдаушы ДББЖ-де `PostgreSQL-7313` ДБ-сы жасалғанына көз жеткізіңіз:
 
-   1. `PostgreSQL-7313` пайдаланушысы атынан `postgres` ДБ-сына қосылыңыз:
+   1. `postgres` пайдаланушысы атынан `PostgreSQL-7313` ДБ-сына қосылыңыз:
 
       ```console
       psql -h 212.212.12.212 -p 5432 -U postgres -d PostgreSQL-7313
@@ -100,9 +102,9 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
    pg_restore --host=212.212.12.212 --username=user --dbname=PostgreSQL-7313 --port=5432 --verbose db_dump --single-transaction --no-privileges
    ```
 
-1. Пайда болған жолда `AN0r25e0ae4d626p!` пайдаланушысы үшін `user` құпиясөзін енгізіңіз.
+1. Пайда болған жолда `user` пайдаланушысы үшін `AN0r25e0ae4d626p!` құпиясөзін енгізіңіз.
 
-   {cut(Ожидаемый вывод команды)}
+   {cut(Команданың күтілетін шығысы)}
 
       ```console
        pg_restore: creating TABLE "public.test-db"
@@ -111,7 +113,6 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
        pg_restore: creating SEQUENCE "public.test-db_number_seq"
        pg_restore: creating SEQUENCE OWNED BY "public.test-db_number_seq"
        pg_restore: creating DEFAULT "public.test-db id"
-       pg_restore: creating DEFAULT "public.test-db number"
        pg_restore: processing data for table "public.test-db"
        pg_restore: executing SEQUENCE SET test-db_id_seq
        pg_restore: executing SEQUENCE SET test-db_number_seq
@@ -120,7 +121,7 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
 
    {/cut}
 
-## 3. VK Cloud-та жүктелген деректерді тексеріңіз
+## {heading(3. VK Cloud-та жүктелген деректерді тексеріңіз)[id=dbaas-db-migration-check-data]}
 
 1. Қабылдаушы инстанстағы `PostgreSQL-7313` ДБ-сына `user` пайдаланушысы атынан қосылыңыз:
 
@@ -161,9 +162,9 @@ VK Cloud сыртқы ДББЖ-ден Cloud Databases сервисіне [pg_dum
    (3 rows)
    ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=dbaas-db-migration-delete-resources]}
 
-Жайылған ДБ инстансы [тарифтеледі](../../tariffication) және есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
+Жайылған ДБ инстансы {linkto(../../tariffication#dbaas-tariffication)[text=тарифтеледі]} және есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
 
-- ДБ инстансын [жойыңыз](../../instructions/manage-instance/postgresql#derekteri_bar_disk_olshemin_ulgaytu).
-- Қажет болса, ДБ инстансына тағайындалған Floating IP мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
+- ДБ инстансын {linkto(../../instructions/manage-instance/postgresql#dbaas-postgresql-disk-delete)[text=жойыңыз]}.
+- Қажет болса, ДБ инстансына тағайындалған Floating IP мекенжайын [жойыңыз](../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).

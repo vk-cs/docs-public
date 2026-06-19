@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Әрекеттер тәртібі",
   "sectionTitle": "Әрекеттер тәртібі",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

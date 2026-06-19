@@ -1,9 +1,14 @@
 {
-    "title": "MongoDB",
-      "shortDescription": "",
-      "metaDescription": "MongoDB — документоориентированная СУБД NoSQL-типа с открытым исходным кодом, написанная на языке С++. Для чего можно использовать MongoDB в VK Cloud",
-    "sectionTitle": "MongoDB",
-    "icon": "",
-    "weight": 2,
-    "uuid": "23d45a44-5ed3-45db-aff1-322c8cf07c79"
+  "title": "MongoDB",
+  "shortDescription": "",
+  "metaDescription": "MongoDB — документоориентированная СУБД NoSQL-типа с открытым исходным кодом, написанная на языке С++. Для чего можно использовать MongoDB в VK Cloud",
+  "sectionTitle": "MongoDB",
+  "icon": "",
+  "weight": 2,
+  "uuid": "23d45a44-5ed3-45db-aff1-322c8cf07c79",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

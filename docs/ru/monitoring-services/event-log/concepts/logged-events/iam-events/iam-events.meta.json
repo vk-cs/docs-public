@@ -5,5 +5,10 @@
   "sectionTitle": "События сервиса IAM",
   "icon": "",
   "weight": 1,
-  "uuid": "163317ce-ff2d-4ffd-98e5-e8a3194f8700"
+  "uuid": "163317ce-ff2d-4ffd-98e5-e8a3194f8700",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

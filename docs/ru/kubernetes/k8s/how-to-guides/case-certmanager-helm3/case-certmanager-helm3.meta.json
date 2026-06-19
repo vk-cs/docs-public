@@ -1,9 +1,14 @@
 {
-    "title": "Работа с cert-manager с помощью Helm 3",
-      "shortDescription": "Как установить и обновить cert-manager",
-      "metaDescription": "Сценарии использования: установка и обновление cert-manager с помощью Helm 3 в кластерах Kubernetes.",
-    "sectionTitle": "Работа с cert-manager с помощью Helm 3",
-    "icon": "",
-    "weight": 9,
-    "uuid": "bfdb0c8a-d705-440e-9f92-6fcd946d01d7"
+  "title": "Работа с cert-manager с помощью Helm 3",
+  "shortDescription": "Как установить и обновить cert-manager",
+  "metaDescription": "Сценарии использования: установка и обновление cert-manager с помощью Helm 3 в кластерах Kubernetes.",
+  "sectionTitle": "Работа с cert-manager с помощью Helm 3",
+  "icon": "",
+  "weight": 9,
+  "uuid": "bfdb0c8a-d705-440e-9f92-6fcd946d01d7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

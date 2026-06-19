@@ -5,5 +5,9 @@
   "sectionTitle": "Неравномерное распределение трафика",
   "icon": "",
   "weight": 2,
-  "uuid": "f7d6cc0f-4344-46a5-96a9-e8afebe73783"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

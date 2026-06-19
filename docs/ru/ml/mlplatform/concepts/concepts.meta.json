@@ -1,9 +1,14 @@
 {
-    "title": "Концепции",
-      "shortDescription": "Принципы функционирования и устройство Cloud ML Platform",
-      "metaDescription": "Концепции",
-    "sectionTitle": "Концепции",
-    "icon": "",
-    "weight": 2,
-    "uuid": "1cd95bde-349c-48a8-8741-e850a897bf8b"
+  "title": "Концепции",
+  "shortDescription": "Принципы функционирования и устройство Cloud ML Platform",
+  "metaDescription": "Концепции",
+  "sectionTitle": "Концепции",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1cd95bde-349c-48a8-8741-e850a897bf8b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -8,5 +8,19 @@
   "uuid": "e9c0e367-1682-4de6-b858-b01cd359b35e",
   "additionalUuids": [
     "3eefe365-4d48-4ba4-ba5e-14a26bddfc85"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

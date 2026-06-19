@@ -1,3 +1,5 @@
+# {heading(Қызмет туралы)[id=vision-concepts-about]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:warn}
@@ -14,13 +16,12 @@ Vision — бұл машиналық оқыту мен жасанды нейро
 
 Vision технологиялары үнемі кеңейтіліп отыратын API бағдарламалық интерфейстері арқылы қолжетімді. Олардың тізімі осы анықтамалық орталықта қолжетімді. API көмегімен сіз келесі кейстерді шеше аласыз:
 
-- [Тұлғаларды тану](../../instructions/face-recognition);
-- [Сахналар мен объектілерді анықтау](../../instructions/vision-api-obj);
-- [Құжаттарды жіктеу](../../instructions/vision-api-doctypes);
-- [Құжат өрістерін тану](../../instructions/docs-recognition);
+- {linkto(../../instructions/face-recognition#vision-instructions-face-recognition)[text=Тұлғаларды тану]};
+- {linkto(../../instructions/vision-api-obj#vision-instructions-vision-api-obj)[text=Сахналар мен объектілерді анықтау]};
+- {linkto(../../instructions/vision-api-doctypes#vision-instructions-vision-api-doctypes)[text=Құжаттарды жіктеу]};
+- {linkto(../../instructions/docs-recognition#vision-instructions-docs-recognition)[text=Құжат өрістерін тану]};
 - Атақты адамдарды тану;
-- [Суреттердегі мәтінді тану](../../instructions/vision-api-txt);
-- [Обнаружение автомобилей и их номеров](../../instructions/plate-recognition);
-- [Автомобильдер мен олардың нөмірлерін анықтау](../../instructions/plate-recognition);
-- [Ажыратымдылықты арттыру](../../instructions/vision-image-api);
+- {linkto(../../instructions/vision-api-txt#vision-instructions-vision-api-txt)[text=Суреттердегі мәтінді тану]};
+- {linkto(../../instructions/plate-recognition#vision-instructions-plate-recognition)[text=Автомобильдер мен олардың нөмірлерін анықтау]};
+- {linkto(../../instructions/vision-image-api#vision-instructions-vision-image-api)[text=Ажыратымдылықты арттыру]};
 - Өндірістегі ақауды анықтау.

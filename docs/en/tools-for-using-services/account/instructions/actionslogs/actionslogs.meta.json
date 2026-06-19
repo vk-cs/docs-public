@@ -1,9 +1,14 @@
 {
-    "title": "Working with the action log",
-      "shortDescription": "Viewing records and uploading data from the log",
-      "metaDescription": "Basic operations with the log of user actions: viewing records, selecting a range, unloading records from the log.",
-    "sectionTitle": "Working with the action log",
-    "icon": "",
-    "weight": 6,
-    "uuid": "1983f0c6-f588-4088-bbbe-2213de48628c"
+  "title": "Working with the action log",
+  "shortDescription": "Viewing records and uploading data from the log",
+  "metaDescription": "Basic operations with the log of user actions: viewing records, selecting a range, unloading records from the log.",
+  "sectionTitle": "Working with the action log",
+  "icon": "",
+  "weight": 6,
+  "uuid": "1983f0c6-f588-4088-bbbe-2213de48628c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

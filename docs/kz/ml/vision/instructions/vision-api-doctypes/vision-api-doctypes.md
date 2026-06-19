@@ -1,3 +1,5 @@
+# {heading(Құжат түрлерін тану)[id=vision-instructions-vision-api-doctypes]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл әдіс фотосуреттің құжат болып табылатынын және құжаттың ықтимал түрін анықтауға мүмкіндік береді.
@@ -6,7 +8,7 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/docs/detect`
 
-## Сұрау
+## {heading(Сұрау)[id=vision-instructions-vision-api-doctypes-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
@@ -19,7 +21,7 @@ ENDPOINT: `/api/v1/docs/detect`
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаланы қараңыз](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаланы қараңыз]}|
 
 Сұрау параметрлері сұрау денесінде `name="meta"` параметрімен JSON форматында беріледі:
 
@@ -37,12 +39,12 @@ ENDPOINT: `/api/v1/docs/detect`
 
 {note:warn}
 
-Бұл әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Бұл әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-## Сұрау үлгісі
-  
+## {heading(Сұрау үлгісі)[id=vision-instructions-vision-api-doctypes-request-example]}
+
 ```curl
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
@@ -58,10 +60,10 @@ curl -X 'POST' \
 }'
 ```
 
-## Жауап
+## {heading(Жауап)[id=vision-instructions-vision-api-doctypes-answer]}
 
 | Параметр | Түрі     | Мәні                                                      |
-|----------|----------|----------------------------------------------------------|
+|----------|----------|-----------------------------------------------------------|
 | status   | int      | Vision серверлерімен өзара әрекеттесу сәтті болған жағдайда `200` |
 | body     | string   | Жауап денесі                                              |
 
@@ -94,34 +96,34 @@ curl -X 'POST' \
 | Eng белгісі       | Rus белгісі         |
 |-------------------|--------------------|
 | Akt               | Акт                |
-| Akt_sverky        | Салыстыру актісі   |
+| Akt_sverky        | Акт сверки         |
 | Diplom            | Диплом             |
-| Doc               | Құжат              |
-| Dogovor           | Шарт               |
-| Doverennost       | Сенімхат           |
+| Doc               | Документ           |
+| Dogovor           | Договор            |
+| Doverennost       | Доверенность       |
 | Inn               | ИНН                |
 | Logotip           | Логотип            |
 | Pasport           | Паспорт            |
-| Prais_list        | Прайс-парақ        |
-| Prikaz            | Бұйрық             |
-| Protocol          | Хаттама            |
+| Prais_list        | Прайс-лист         |
+| Prikaz            | Приказ             |
+| Protocol          | Протокол           |
 | Pts               | ПТС                |
-| Registraciya_ts   | КҚ тіркеу          |
-| Rekvizity         | Деректемелер       |
-| Rezyume           | Түйіндеме          |
-| Schet             | Шот                |
+| Registraciya_ts   | Регистрация ТС     |
+| Rekvizity         | Реквизиты          |
+| Rezyume           | Резюме             |
+| Schet             | Счет               |
 | Sertifikat        | Сертификат         |
 | Snils             | Снилс              |
-| Spravka           | Анықтама           |
-| Svidetelstvo      | Куәлік             |
+| Spravka           | Справка            |
+| Svidetelstvo      | Свидетельство      |
 | Tabel             | Табель             |
-| Ustav             | Жарғы              |
-| Voditelskye_prava | Жүргізуші куәлігі  |
-| Vypiska           | Үзінді             |
-| Zagranpasport     | Шетелдік паспорт   |
-| Zayavlenie        | Өтініш             |
+| Ustav             | Устав              |
+| Voditelskye_prava | Водительские права |
+| Vypiska           | Выписка            |
+| Zagranpasport     | Загранпаспорт      |
+| Zayavlenie        | Заявление          |
 
-## Жауап үлгісі
+## {heading(Жауап үлгісі)[id=vision-instructions-vision-api-doctypes-answer-example]}
 
 ```json
 {
@@ -152,9 +154,9 @@ curl -X 'POST' \
 }
 ```
 
-## Қосымша мысалдар
+## {heading(Қосымша мысалдар)[id=vision-instructions-vision-api-doctypes-extra-examples]}
 
-### Жүргізуші куәлігін тану
+### {heading(Жүргізуші куәлігін тану)[id=vision-instructions-vision-api-doctypes-extra-examples-driver-id]}
 
 Сұрау үлгісі:
 
@@ -204,7 +206,7 @@ curl -X 'POST' \
 }
 ```
 
-### Кескінде құжат жоқ
+### {heading(Кескінде құжат жоқ)[id=vision-instructions-vision-api-doctypes-extra-examples-no-doc]}
 
 Сұрау үлгісі:
 
@@ -248,7 +250,7 @@ curl -X 'POST' \
 }
 ```
 
-### JSON қалыптастыру қатесі (meta мен кескіндегі атау сәйкес келмейді)
+### {heading(JSON қалыптастыру қатесі (meta мен кескіндегі атаудың сәйкес келмеуі))[id=vision-instructions-vision-api-doctypes-extra-examples-json-error]}
 
 Сұрау үлгісі:
 

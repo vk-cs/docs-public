@@ -5,5 +5,10 @@
   "sectionTitle": "Alfresco deployment",
   "icon": "",
   "weight": 11,
-  "uuid": "657e3447-613d-418f-a33a-48b1b9d2a292"
+  "uuid": "657e3447-613d-418f-a33a-48b1b9d2a292",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

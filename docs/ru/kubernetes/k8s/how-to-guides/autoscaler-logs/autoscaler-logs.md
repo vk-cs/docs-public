@@ -1,14 +1,16 @@
-[Агент автоматического масштабирования](/ru/kubernetes/k8s/concepts/cluster-autoscaler) кластера Kubernetes (Cluster Autoscaler) отслеживает нагрузку на worker-узлы кластера, при необходимости уменьшая или увеличивая их количество. Вы можете просматривать логи [автоматического масштабирования](/ru/kubernetes/k8s/concepts/scale#autoscaling) для диагностики проблем.
+# {heading(Просмотр логов агента автоматического масштабирования)[id=k8s-autoscaler-logs]}
+
+{linkto(../../concepts/cluster-autoscaler#k8s-cluster-autoscaler)[text=Агент автоматического масштабирования]} кластера Kubernetes (Cluster Autoscaler) отслеживает нагрузку на worker-узлы кластера, при необходимости уменьшая или увеличивая их количество. Вы можете просматривать логи {linkto(../../concepts/scale#k8s-scale-autoscaling)[text=автоматического масштабирования]} для диагностики проблем.
 
 Подробнее об агенте автоматического масштабирования и работе с ним в [официальной документации](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md) Cluster Autoscaler. 
 
-## {heading(Подготовительные шаги)[id=prepare]}
+## {heading(Подготовительные шаги)[id=k8s-autoscaler-logs-prepare]}
 
-1. [Создайте](../../instructions/create-cluster) кластер, если это еще не сделано.
-1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](../../connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
+{include(/ru/_includes/_create-test-cluster.md)}
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 
-## {heading(1. Определите имя пода агента автоматического масштабирования)[id=review]}
+## {heading(1. Определите имя пода агента автоматического масштабирования)[id=k8s-autoscaler-logs-review]}
 
 Имя пода агента автоматического масштабирования, как правило, начинается с `cluster-autoscaler`. Чтобы определить его, воспользуйтесь одним из способов:
 
@@ -16,7 +18,7 @@
 
 {tab(Личный кабинет)}
 
-[Просмотрите](/ru/kubernetes/k8s/instructions/manage-resources#view-resources) список подов кластера в личном кабинете VK Cloud.
+{linkto(../../instructions/manage-resources#k8s-manage-resources-view-resources)[text=Просмотрите]} список подов кластера в личном кабинете {var(cloud)}.
 
 {/tab}
 
@@ -25,14 +27,14 @@
 Просмотрите список подов в пространстве `kube-system` с помощью команды:
 
 ```console
-   kubectl get pods -n kube-system | grep cluster-autoscaler
+kubectl get pods -n kube-system | grep cluster-autoscaler
 ```
 
 {/tab}
 
 {/tabs}
 
-## 2. Просмотрите логи пода агента автоматического масштабирования
+## {heading(2. Просмотрите логи пода агента автоматического масштабирования)[id=k8s-autoscaler-logs-autoscaling-agent]}
 
 Выполните команду: 
 
@@ -46,10 +48,10 @@ kubectl logs <ИМЯ_ПОДА> -n kube-system
 kubectl logs -f <ИМЯ_ПОДА> -n kube-system
 ```
 
-## 3. Просмотрите события кластера
+## {heading(3. Просмотрите события кластера)[id=k8s-autoscaler-logs-cluster-events]}
 
 1. Получите информацию о событиях, происходящих в кластере:
-   
+
    ```console
    kubectl get events -n kube-system
    ```
@@ -62,9 +64,6 @@ kubectl logs -f <ИМЯ_ПОДА> -n kube-system
 
 Подробнее о работе с событиями в [официальной документации Kubernetes](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
 
-## {heading(Удалите неиспользуемые ресурсы)[id=delete]}
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-autoscaler-logs-delete]}
 
-Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-- [остановите](/ru/kubernetes/k8s/instructions/manage-cluster#stop) его, чтобы воспользоваться им позже;
-- [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster.md)}

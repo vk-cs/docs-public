@@ -1,9 +1,18 @@
 {
-    "title": "Ingress NGINX",
-      "shortDescription": "",
-      "metaDescription": "Настройка и установка аддона Ingress-контроллера.",
-    "sectionTitle": "Ingress NGINX",
-    "icon": "",
-    "weight": 8,
-    "uuid": "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4"
+  "title": "Ingress NGINX",
+  "shortDescription": "",
+  "metaDescription": "Настройка и установка аддона Ingress-контроллера.",
+  "sectionTitle": "Ingress NGINX",
+  "icon": "",
+  "weight": 9,
+  "uuid": "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

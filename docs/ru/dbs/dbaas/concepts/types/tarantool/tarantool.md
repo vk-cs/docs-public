@@ -1,3 +1,5 @@
+# {heading(Tarantool)[id=dbaas-concepts-tarantool]}
+
 [Tarantool](https://www.tarantool.io/ru/) — это платформа in-memory вычислений, включающая в себя СУБД NoSQL-типа и встроенный Lua-сервер приложений.
 
 Основные преимущества Tarantool:
@@ -23,7 +25,7 @@ Tarantool хорошо подходит для задач создания:
 
 Для конфигурации Enterprise используется [Tarantool Enterprise Edition](https://www.tarantool.io/ru/enterprise_doc/), для конфигурации Data Grid — система интеграции данных [Tarantool Data Grid](https://www.tarantool.io/ru/datagrid/).
 
-## Что дальше
+## {heading(Что дальше)[id=dbaas-concepts-tarantool-whats-next]}
 
-- [Создайте](../../../instructions/create) инстанс СУБД.
-- [Подключитесь](../../../connect) к СУБД.
+- {linkto(../../../instructions/create#dbaas-create)[text=Создайте]} инстанс СУБД.
+- {linkto(../../../connect#dbaas-connect)[text=Подключитесь]} к СУБД.

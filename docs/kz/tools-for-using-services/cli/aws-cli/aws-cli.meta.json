@@ -1,7 +1,14 @@
 {
   "title": "AWS CLI",
-  "shortDescription": "VK Cloud платформасындағы ресурстарды басқару үшін AWS клиентін орнату",
+  "shortDescription": "{var(cloud)} платформасындағы ресурстарды басқару үшін AWS клиентін орнату",
   "metaDescription": "VK Cloud платформасындағы ресурстарды басқару үшін AWS клиентін орнату",
   "sectionTitle": "AWS CLI",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

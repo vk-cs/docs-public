@@ -26,7 +26,7 @@
     1. **Тапсырыс беруші тарапынан шешім қабылдайтын тұлғаның байланысы** бөлімінде мәмілелер жасасуға жауапты тапсырыс беруші қызметкердің деректерін көрсетіңіз.
 1. **Мәміле туралы ақпарат** блогын ашып, тіркегіңіз келетін мәміленің параметрлерін көрсетіңіз:
 
-    1. **MCS ID** өрісіне клиенттер туралы ақпараттан [PID](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#zhoba_identifikatoryn_alu) [көруге](/kz/tools-for-using-services/partner-platform/instructions/client-management/client-information#klient_zhobalarynyn_tizimin_karau) болатын тапсырыс беруші жобасының идентификаторын енгізіңіз.
+    1. **MCS ID** өрісіне клиенттер туралы ақпараттан [көруге](/kz/tools-for-using-services/partner-platform/instructions/client-management/client-information#prosmotr_spiska_proektov_klienta) болатын тапсырыс беруші жобасының [PID](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage) енгізіңіз.
     1. (Опционалды) Бірнеше жобаның PID қосу үшін **Тағы бір жоба** батырмасын басыңыз.
     1. ҚҚС-ты есепке алмағанда, тапсырыс берушімен мәміле сомасын көрсетіңіз.
     1. Тізімнен мәміленің күтілетін жылын және тоқсанын таңдаңыз.

@@ -5,5 +5,19 @@
   "sectionTitle": "Cloud Voice",
   "icon": "",
   "weight": 3,
-  "uuid": "6d2017d0-06e7-4f61-a11a-43f1faca036f"
+  "uuid": "6d2017d0-06e7-4f61-a11a-43f1faca036f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

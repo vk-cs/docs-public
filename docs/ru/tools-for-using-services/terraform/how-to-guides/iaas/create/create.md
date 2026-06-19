@@ -1,21 +1,22 @@
+# {heading(Создание ВМ)[id=terraform-iaas-create]}
+
 С помощью Terraform можно создавать виртуальные машины. В качестве примера будет создана ВМ, доступная из внешней сети. Для доступа к ВМ будет использоваться уже существующая в проекте пара SSH-ключей.
 
 Будет рассмотрено два варианта конфигурации ВМ: без дополнительных настроек и с подключенным дополнительным диском.
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=terraform-iaas-create-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания ВМ. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-    При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
-    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
+   Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-
+1. Убедитесь, что клиент OpenStack {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=установлен]}, и {linkto(../../../../cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 
    ```hcl
@@ -60,10 +61,8 @@
 
     - Через личный кабинет:
 
-      1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-
+      1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
       1. Нажмите на имя пользователя в шапке страницы.
-
       1. Из выпадающего списка выберите **Ключевые пары**.
 
         Откроется вкладка **Ключевые пары** страницы **Информация об аккаунте**.
@@ -78,38 +77,38 @@
         openstack keypair list
         ```
 
-      2. Скопируйте имя нужной ключевой пары из списка.
+      1. Скопируйте имя нужной ключевой пары из списка.
 
    {/tab}
 
    {tab(availability_zone_name)}
 
-   В статье о [зонах доступности](/ru/start/concepts/architecture#az).
+   В статье о [зонах доступности](../../../../../start/concepts/architecture#architecture-az).
 
    {/tab}
 
    {/tabs}
 
-## 1. Создайте файл с описанием базовой сетевой инфраструктуры
+## {heading({counter(tf-vm)}. Создайте файл с описанием базовой сетевой инфраструктуры)[id=terraform-iaas-create-net-file]}
 
-1. [Создайте файл `network.tf`](../../vnet/network).
+1. {linkto(../../vnet/network#terraform-network)[text=Создайте файл]} `network.tf`.
 
-    В файле описаны ресурсы виртуальной сети, в которой будет работать ВМ.
+   В файле описаны ресурсы виртуальной сети, в которой будет работать ВМ.
 
-2. Убедитесь, что в `network.tf` присутствуют следующие ресурсы:
+1. Убедитесь, что в `network.tf` присутствуют следующие ресурсы:
 
    - `vkcs_networking_network`,
    - `vkcs_networking_subnet`,
    - `vkcs_networking_router`,
    - `vkcs_networking_router_interface`.
 
-## 2. (Опционально) Создайте группы безопасности
+## {heading({counter(tf-vm)}. (Опционально) Создайте группы безопасности)[id=terraform-iaas-create-secgroup-file]}
 
-Для подключения к ВМ по SSH назначьте ей [преднастроенную группу безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups) `ssh`. Эта группа есть в проекте, если ранее создавались ВМ на ОС Linux с доступом по SSH.
+Для подключения к ВМ по SSH назначьте ей {linkto(../../../../../networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups)[text=преднастроенную группу безопасности]} `ssh`. Эта группа есть в проекте, если ранее создавались ВМ на ОС Linux с доступом по SSH.
 
-Если в проекте нет группы безопасности `ssh`, опишите ее в конфигурационном файле: [создайте файл `secgroup.tf`](../../vnet/secgroups) и добавьте в него описание группы безопасности `ssh` с правилами прохождения трафика.
+Если в проекте нет группы безопасности `ssh`, опишите ее в конфигурационном файле: {linkto(../../vnet/secgroups#terraform-secgroups)[text=создайте файл]} `secgroup.tf` и добавьте в него описание группы безопасности `ssh` с правилами прохождения трафика.
 
-## 3. Создайте файл с описанием ВМ
+## {heading({counter(tf-vm)}. Создайте файл с описанием ВМ)[id=terraform-iaas-create-vm-file]}
 
 Создайте файл `main.tf`.
 
@@ -123,6 +122,7 @@
 
 - параметры ВМ;
 - присваиваемые ВМ ресурсы, необходимые для доступа из внешней сети:
+
   - Floating IP-адрес;
   - пара SSH-ключей, которая будет использоваться для доступа;
   - группы безопасности: `default` и `ssh`.
@@ -189,9 +189,11 @@ output "instance_fip" {
 
 - параметры ВМ;
 - присваиваемые ВМ ресурсы, необходимые для доступа из внешней сети:
+
   - Floating IP-адрес;
   - пара SSH-ключей, которая будет использоваться для доступа;
   - группы безопасности: `default` и `ssh`;
+
 - дополнительное блочное устройство размером 50 ГБ;
 - синтетический ресурс `vkcs_compute_volume_attach` для подключения блочного устройства к ВМ.
 
@@ -268,76 +270,74 @@ output "instance_fip" {
 
 Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 
-## 4. (Опционально) Настройте мониторинг на ВМ
+## {heading({counter(tf-vm)}. (Опционально) Настройте мониторинг на ВМ)[id=terraform-iaas-create-monitoring]}
 
 Это позволит при создании ВМ автоматически включить передачу ее метрик в сервис Cloud Monitoring.
 
 {note:info}
-
 Мониторинг невозможно подключить для ВМ, недоступных из внешней сети.
-
 {/note}
 
 1. Укажите в файле `provider.tf` версию провайдера 0.9.0 или выше. Пример:
 
-    ```hcl
-    terraform {
-      required_providers {
-        vkcs = {
-          source = "vk-cs/vkcs"
-          version = "0.9.0"
-        }
-      }
-    }
-    ```
+   ```hcl
+   terraform {
+     required_providers {
+       vkcs = {
+         source = "vk-cs/vkcs"
+         version = "0.9.0"
+       }
+     }
+   }
+   ```
 
 1. Создайте файл `monitoring.tf` и поместите в него содержимое:
 
-    ```hcl
-    resource "vkcs_cloud_monitoring" "basic" {
-      image_id = data.vkcs_images_image.compute.id
-    }
-    ```
+   ```hcl
+   resource "vkcs_cloud_monitoring" "basic" {
+     image_id = data.vkcs_images_image.compute.id
+   }
+   ```
 
 1. Добавьте блок `cloud_monitoring` в описание ресурса `vkcs_compute_instance` в файле `main.tf`. Пример:
 
-    ```hcl
-    resource "vkcs_compute_instance" "compute" {
-      name                    = "compute-instance"
-      flavor_id               = data.vkcs_compute_flavor.compute.id
-      key_pair                = var.key_pair_name
-      security_groups         = ["default","ssh"]
-      availability_zone       = var.availability_zone_name
+   ```hcl
+   resource "vkcs_compute_instance" "compute" {
+     name                    = "compute-instance"
+     flavor_id               = data.vkcs_compute_flavor.compute.id
+     key_pair                = var.key_pair_name
+     security_groups         = ["default","ssh"]
+     availability_zone       = var.availability_zone_name
 
-      block_device {
-        uuid                  = data.vkcs_images_image.compute.id
-        source_type           = "image"
-        destination_type      = "volume"
-        volume_type           = "ceph-ssd"
-        volume_size           = 8
-        boot_index            = 0
-        delete_on_termination = true
-      }
+     block_device {
+       uuid                  = data.vkcs_images_image.compute.id
+       source_type           = "image"
+       destination_type      = "volume"
+       volume_type           = "ceph-ssd"
+       volume_size           = 8
+       boot_index            = 0
+       delete_on_termination = true
+     }
 
-      network {
-        uuid = vkcs_networking_network.example.id
-      }
+     network {
+       uuid = vkcs_networking_network.example.id
+     }
 
-      cloud_monitoring {
-        service_user_id = vkcs_cloud_monitoring.basic.service_user_id
-        script          = vkcs_cloud_monitoring.basic.script
-      }
+     cloud_monitoring {
+       service_user_id = vkcs_cloud_monitoring.basic.service_user_id
+       script          = vkcs_cloud_monitoring.basic.script
+     }
 
-      depends_on = [
-        vkcs_networking_network.example,
-        vkcs_networking_subnet.example
-      ]
-    }
-    ```
+     depends_on = [
+       vkcs_networking_network.example,
+       vkcs_networking_subnet.example
+     ]
+   }
+   ```
 
 Описание параметров подключения к сервису Cloud Monitoring приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/compute_instance.md).
 
-## 5. Создайте ресурсы при помощи Terraform
+## {heading({counter(tf-vm)}. Создайте ресурсы при помощи Terraform)[id=terraform-iaas-create-resource]}
 
 1. Поместите в одну директорию все файлы конфигурации Terraform:
 
@@ -349,28 +349,27 @@ output "instance_fip" {
    - `monitoring.tf`.
 
 1. Перейдите в эту директорию.
+1. Выполните команду:
+
+   ```console
+   terraform init
+   ```
 
 1. Выполните команду:
 
-    ```console
-    terraform init
-    ```
+   ```console
+   terraform apply
+   ```
 
-1. Выполните команду:
-
-    ```console
-    terraform apply
-    ```
-
-    При запросе подтверждения введите `yes`.
+   При запросе подтверждения введите `yes`.
 
 1. Дождитесь завершения операции.
 
 После завершения создания ресурсов в выводе Terraform `instance_fip` будет показан Floating IP-адрес, назначенный ВМ.
 
-## 6. Проверьте работоспособность примера
+## {heading({counter(tf-vm)}. Проверьте работоспособность примера)[id=terraform-iaas-create-check]}
 
-[Подключитесь по SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `compute-instance`.
+{linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь по SSH]} к виртуальной машине `compute-instance`.
 
 Для подключения используйте:
 
@@ -395,18 +394,17 @@ Swap usage: 0%
 ...
 ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-iaas-create-delete]}
 
 Некоторые объекты, созданные в этом сценарии, потребляют ресурсы. Если они вам больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
-
 1. Выполните команду:
 
-    ```console
-    terraform destroy
-    ```
+   ```console
+   terraform destroy
+   ```
 
-    При запросе подтверждения введите `yes`.
+   При запросе подтверждения введите `yes`.
 
 1. Дождитесь завершения операции.

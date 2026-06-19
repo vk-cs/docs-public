@@ -5,5 +5,10 @@
   "sectionTitle": "Практикалық нұсқаулықтар",
   "hidden": false,
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

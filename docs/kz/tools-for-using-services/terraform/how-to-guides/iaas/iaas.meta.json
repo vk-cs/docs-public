@@ -4,5 +4,12 @@
   "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
   "sectionTitle": "Cloud Servers",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

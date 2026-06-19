@@ -1,9 +1,14 @@
 {
-    "title": "Создание индивидуального kernel",
-      "shortDescription": "Описание процедуры создания индивидуального kernel",
-      "metaDescription": "Создание индивидуального kernel JupyterHub",
-    "sectionTitle": "Создание индивидуального kernel",
-    "icon": "",
-    "weight": 0,
-    "uuid": "4377b18b-f61d-4f29-aa0c-d6db0d945cf5"
+  "title": "Создание индивидуального kernel",
+  "shortDescription": "Описание процедуры создания индивидуального kernel",
+  "metaDescription": "Создание индивидуального kernel JupyterHub",
+  "sectionTitle": "Создание индивидуального kernel",
+  "icon": "",
+  "weight": 0,
+  "uuid": "4377b18b-f61d-4f29-aa0c-d6db0d945cf5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

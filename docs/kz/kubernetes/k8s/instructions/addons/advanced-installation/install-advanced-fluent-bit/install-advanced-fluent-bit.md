@@ -1,16 +1,18 @@
+# {heading(Fluent Bit)[id=k8s-install-advanced-fluent-bit]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
-Бұл аддон тек [бірінші буындағы](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлер үшін қолжетімді.
+Бұл аддон тек {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буындағы]} кластерлер үшін қолжетімді.
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-fluent-bit-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-fluent-bit-install]}
 
-Аддон үшін тек [стандартты орнату нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
+Аддон үшін тек {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=стандартты орнату нұсқасы]} қолжетімді.
 
 Аддон master-түйіндерді қоса алғанда, кластердің барлық түйіндеріне [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) контроллері түрінде орнатылады.
 
@@ -32,7 +34,7 @@
       - таңдалған нұсқаны;
       - қолданба атауын;
       - аддон орнатылатын атаулар кеңістігінің атауын.
-   1. [Аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu) өңдеңіз: `Output` бөлімінде журналдарды таңдалған сервиске жеткізу параметрлерін орнатыңыз. Қалған параметрлерді өз қалауыңыз бойынша қалдырыңыз.
+   1. {linkto(#k8s-install-advanced-fluent-bit-edit-code)[text=Аддонды баптау кодын]} өңдеңіз: `Output` бөлімінде журналдарды таңдалған сервиске жеткізу параметрлерін орнатыңыз. Қалған параметрлерді өз қалауыңыз бойынша қалдырыңыз.
 
         {note:warn}
 
@@ -48,14 +50,14 @@
    
    {tab(Terraform)}
    
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -77,12 +79,12 @@
    
    {/tabs}
 
-## Орнату кезінде аддонды баптау кодын өңдеу
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-fluent-bit-edit-code]}
 
 Өрістер сипаттамасымен бірге аддонды баптаудың толық коды мына жерлерде қолжетімді:
 
 - жеке кабинетте;
-- егер Terraform қолданылса, `configuration_values` дереккөзіндегі [configuration_values](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) атрибутында.
+- егер Terraform қолданылса, [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзіндегі `configuration_values` атрибутында.
 
 Аддонды баптау кодын өңдемей орнату мүмкін емес — журналдарды жеткізу параметрлерін міндетті түрде орнату керек:
 
@@ -125,7 +127,7 @@
          Trace_Output Off
          Replace_Dots On
    ```
-   Elasticsearch параметрлері туралы толық алқпаратты [ресми құжаттаманың бөлімінен](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch) оқыңыз.
+   Elasticsearch параметрлері туралы толық ақпаратты [ресми құжаттаманың бөлімінен] оқыңыз(https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch).
 
    {/cut}
 
@@ -147,20 +149,20 @@
          labels source=systemd, host=$_HOSTNAME, service=$_SYSTEMD_UNIT
    ```
 
-   Loki параметрлері туралы толық алқпаратты [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/pipeline/outputs/loki) оқыңыз.
+   Loki параметрлері туралы толық ақпаратты [Fluent Bit ресми құжаттамасынан] оқыңыз(https://docs.fluentbit.io/manual/pipeline/outputs/loki).
 
    {/cut}
 
-1. (Опционалды түрде) Баптау кодының басқал параметрлерін өңдеңіз. Конфигурация файлының параметрлері туралы толығырақ [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) оқыңыз. Сондай-алқ [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml)-та Fluent Bit баптау кодының мысалы қолжетімді.
+1. (Опционалды түрде) Баптау кодының басқа параметрлерін өңдеңіз. Конфигурация файлының параметрлері туралы толығырақ [Fluent Bit ресми құжаттамасынан](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) оқыңыз. Сондай-ақ [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml)-та Fluent Bit баптау кодының мысалы қолжетімді.
 
    {note:warn}
 
    Аддонды дұрыс орнату және оның жұмыс істеуі үшін қажет өрістерді немесе сол өрістерде берілген мәндерді өшірмеңіз.
 
-   Аддонды баптау кодында мұндай өрістерді табуғал мүмкіндік беретін түсіндірмелер бар.
+   Аддонды баптау кодында мұндай өрістерді табуға мүмкіндік беретін түсіндірмелер бар.
 
    {/note}
 
-1. По завершении редактирования кода [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
+1. По завершении редактирования кода {linkto(k8s-install-advanced-fluent-bit-install)[text=аддонды орнатуды жалғастырыңыз]}.
 
-Пайплайн туралы толығырақ [ресми құжаттамадан](https://docs.fluentbit.io/manual/pipeline) оқуғал болады.
+Пайплайн туралы толығырақ [ресми құжаттамадан](https://docs.fluentbit.io/manual/pipeline) оқуға болады.

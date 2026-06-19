@@ -8,8 +8,8 @@
 
 {includetag(prep)}
 
-1. [Установите и настройте](/ru/kubernetes/k8s/connect/kubectl#connect) `kubectl`, если это еще не сделано.
-1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
+1. {linkto(/ru/kubernetes/k8s/connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(/ru/kubernetes/k8s/connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 1. (Опционально) [Установите](https://github.com/stackitcloud/rename-pvc) утилиту для переименования PVC `rename-pvc`.
 
 {/includetag}
@@ -18,9 +18,9 @@
 
 - в [правилах планирования](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/) пода:
    - в параметрах `nodeAffinity`, `topologySpreadConstraints` или `nodeSelector`;
-   - в [метках](/ru/kubernetes/k8s/reference/labels-and-taints) `topology.kubernetes.io/zone`,`failure-domain.beta.kubernetes.io/zone` и `topology.cinder.csi.openstack.org/zone`.
+   - в {linkto(/ru/kubernetes/k8s/reference/labels-and-taints#k8s-labels-and-taints)[text=метках]} `topology.kubernetes.io/zone`,`failure-domain.beta.kubernetes.io/zone` и `topology.cinder.csi.openstack.org/zone`.
 
-- в [классе хранения](/ru/kubernetes/k8s/concepts/storage#storage_classes) (`StorageClass`) для подов [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/).
+- в {linkto(/ru/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes)[text=классе хранения]} (`StorageClass`) для подов [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/).
 
 Если зона доступности не указана, миграция на другую зону доступности никак не повлияет на вашу рабочую нагрузку и дополнительных действий по переносу от вас не потребуется.
 
@@ -30,7 +30,7 @@
 
 Чтобы предотвратить случайное удаление данных с PVC при переносе нагрузки:
 
-1. Поменяйте [политику освобождения](/ru/kubernetes/k8s/concepts/storage#reclaim_policies) (reclaim policy) PV на `Retain`:
+1. Поменяйте {linkto(/ru/kubernetes/k8s/concepts/storage#k8s-storage-reclaim-policies)[text=политику освобождения]} (reclaim policy) PV на `Retain`:
 
    ```console
    pv_name=$(kubectl get pvc <ИМЯ_PVC> -n <ПРОСТРАНСТВО_ИМЕН_PVC> -o jsonpath='{.spec.volumeName}') 
@@ -42,7 +42,7 @@
     - `<ИМЯ_PVC>` — имя PVC, который вы хотите перенести.
     - `<ПРОСТРАНСТВО_ИМЕН_PVC>` — пространство имен, в котором PVC расположен.
 
-1. [Клонируйте](/ru/computing/iaas/instructions/volumes/volumes-manage#clone_volume) диск, связанный с PVC.
+1. {linkto(/ru/computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-clone-volume)[text=Клонируйте]} диск, связанный с PVC.
 
 1. (Опционально) Сохраните старый PVC до окончания работ по миграции, переименовав его в `<ИМЯ_PVC>-old`, чтобы иметь возможность вернуться к нему при необходимости.
 
@@ -60,14 +60,14 @@
 
 {tab(Снимок диска (личный кабинет))}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. [Создайте снимок диска](/ru/computing/iaas/instructions/volumes/volumes-snapshots#sozdanie_snimka), связанного с PVC.
-1. [Создайте новый диск](/ru/computing/iaas/instructions/volumes/volumes-create) на основе этого снимка, указав следующие параметры:
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. {linkto(/ru/computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-create)[text=Создайте снимок диска]}, связанного с PVC.
+1. {linkto(/ru/computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=Создайте новый диск]} на основе этого снимка, указав следующие параметры:
     - **Источник**: снимок диска, созданный на предыдущем шаге;
     - **Зона доступности**: зона доступности, куда выполняется миграция.
     - Остальные параметры укажите по своему усмотрению.
 1. Дождитесь создания диска и запомните его ID.
-1. [Создайте](/ru/kubernetes/k8s/instructions/manage-resources#create-resources) PV, ссылающийся на ID созданного из снимка диска, и PVC на его основе:
+1. {linkto(/ru/kubernetes/k8s/instructions/manage-resources#k8s-manage-resources-create-resources)[text=Создайте]} PV, ссылающийся на ID созданного из снимка диска, и PVC на его основе:
 
    {cut(Пример манифеста PV)}
    ```yaml
@@ -279,7 +279,7 @@
 
 {tab(pv-migrate)}
 
-1. Убедитесь, что в обеих зонах доступности есть подходящие группы worker-узлов, или [добавьте](/ru/kubernetes/k8s/instructions/manage-node-group#add_group) их. Это нужно, чтобы запустить на них поды утилиты `pv-migrate`, так как к одному из них будет привязан PVC из старой зоны, а к другому — из новой.
+1. Убедитесь, что в обеих зонах доступности есть подходящие группы worker-узлов, или {linkto(/ru/kubernetes/k8s/instructions/manage-node-group#k8s-manage-node-group-add-group)[text=добавьте]} их. Это нужно, чтобы запустить на них поды утилиты `pv-migrate`, так как к одному из них будет привязан PVC из старой зоны, а к другому — из новой.
 1. [Установите](https://github.com/utkuozdemir/pv-migrate/blob/main/docs/install.md) утилиту `pv-migrate`.
 1. Создайте PVC, на который будет переноситься нагрузка, в новой зоне доступности:
 
@@ -340,7 +340,7 @@
 
 Используемый диск уже переведен в новую зону доступности, но в его метаданных в Kubernetes указана старая зона. Чтобы это исправить, создайте новые PV и PVC, которые будут указывать на тот же диск в новой зоне и при этом иметь метаданные в новой зоне.
 
-1. Убедитесь, что у PV указана [политика освобождения](/ru/kubernetes/k8s/concepts/storage#reclaim_policies) (reclaim policy) `Retain`, иначе диск будет удален при удалении PV.
+1. Убедитесь, что у PV указана {linkto(/ru/kubernetes/k8s/concepts/storage#k8s-storage-reclaim-policies)[text=политика освобождения]} (reclaim policy) `Retain`, иначе диск будет удален при удалении PV.
 
 1. Узнайте ID диска, на котором создан PVC:
 
@@ -425,7 +425,7 @@
 
 {includetag(helm-addons)}
 
-1. Проверьте, была ли привязка к зонам доступности дополнительно установлена через Helm-чарты или при [редактировании кода аддона](/ru/kubernetes/k8s/instructions/addons/manage-addons#edit) в личном кабинете VK Cloud. 
+1. Проверьте, была ли привязка к зонам доступности дополнительно установлена через Helm-чарты или при {linkto(/ru/kubernetes/k8s/instructions/addons/manage-addons#k8s-manage-addons-edit-code)[text=редактировании кода аддона]} в личном кабинете {var(cloud)}. 
 1. Если да, вручную укажите для них зону доступности, куда была выполнена миграция. Это нужно, чтобы при следующем обновлении манифестов результаты миграции не были перезаписаны.
 
    {tabs}
@@ -461,7 +461,7 @@
 
 Работающие ресурсы в кластере тарифицируются и потребляют вычислительные ресурсы. Если вы не планируете использовать PVC и снимки диска, оставшиеся после миграции, а также саму зону доступности, удалите их и связанные с ними ресурсы:
 
-1. Удалите [старый PVC](/ru/kubernetes/k8s/concepts/storage#reclaim_policies) и [снимки диска](/ru/computing/iaas/instructions/volumes/volumes-manage#delete_volume).
+1. Удалите {linkto(/ru/kubernetes/k8s/concepts/storage#k8s-storage-reclaim-policies)[text=старый PVC]} и {linkto(/ru/computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=снимки диска]}.
 
 1. Удалите класс хранения (StorageClass) старой зоны доступности:
 

@@ -14,15 +14,15 @@
 `uuid`
 |Идентификатор инстанса сервиса
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `hosts`
 |Список имен хостов
 |list, элементы списка — string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 
 В ресурсе указывается один или несколько способов мониторинга состояния инстансов сервиса. Поддерживаются следующие способы мониторинга:
@@ -50,8 +50,8 @@
 |
 IP-адрес или DNS-имя хоста
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `period`
@@ -63,16 +63,16 @@ IP-адрес или DNS-имя хоста
 * `1h`
 
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `port`
 |
 Проверяемый порт
 |integer
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 
 {/cut}
@@ -100,8 +100,8 @@ IP-адрес или DNS-имя хоста
 * `https`
 
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `method`
@@ -115,24 +115,24 @@ IP-адрес или DNS-имя хоста
 * `OPTIONS`
 
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `host`
 |
 IP-адрес или DNS-имя хоста
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `path`
 |
 Путь запроса (конечная точка (endpoint) метода)
 |string
-| ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `period`
@@ -144,24 +144,24 @@ IP-адрес или DNS-имя хоста
 * `1h`
 
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `port`
 |
 Проверяемый порт
 |integer
-| ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `http_codes`
 |
 Ожидаемые коды ответа
 |list, элементы списка — integer
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `url`
@@ -173,8 +173,8 @@ IP-адрес или DNS-имя хоста
 * Путь запроса (конечная точка (endpoint) метода)
 
 |string
-| ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 
 {note:warn}
@@ -209,8 +209,8 @@ IP-адрес или DNS-имя хоста
 
 |
 string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `options`
@@ -218,8 +218,8 @@ string
 Параметры выполнения скрипта
 |
 set, аргументы списка — в таблице {linkto(../ivkcs_agent_exec/#tab_script_options)[text=Опции скрипта]}
-| ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `script`
@@ -227,8 +227,8 @@ set, аргументы списка — в таблице {linkto(../ivkcs_agen
 Тело скрипта
 |
 string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/cut}
 
@@ -260,4 +260,4 @@ resource "ivkcs_agent_check" "check1" {
 * `<UUID>` — идентификатор инстанса сервиса.
 * `<СПИСОК_ИМЕН_ХОСТОВ>` — список имен хостов, на которых будет выполняться мониторинг. Имена хостов должны в точности соответствовать именам ВМ, определенным в вашей конфигурации Terraform (обычно в ресурсе `vkcs_compute_instance`).
 
-{include(/ru/_includes/_tf_hosts.md)}
+{include(../../../../../../_includes/_tf_hosts.md)}

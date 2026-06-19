@@ -5,5 +5,10 @@
   "sectionTitle": "Terraform",
   "icon": "",
   "weight": 4,
-  "uuid": "6013dc5c-4d5e-45b5-bc10-191f02848c3d"
+  "uuid": "6013dc5c-4d5e-45b5-bc10-191f02848c3d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,13 +1,13 @@
-Для интеграции управления объектным хранилищем в приложения и DevOps-процессы используется программный доступ через SDK. Boto3, официальный SDK для Python, полностью поддерживается благодаря S3-совместимости VK Object Storage.
+# {heading(Интеграция управления объектным хранилищем в код приложения)[id=s3-integration]}
+
+Для интеграции управления объектным хранилищем в приложения и DevOps-процессы используется программный доступ через SDK. Boto3, официальный SDK для Python, полностью поддерживается благодаря S3-совместимости {var(s3)}.
 
 ## Подготовительные шаги
 
-Чтобы подключиться к VK Object Storage с помощью SDK, [настройте Boto3](/ru/storage/s3/connect/s3-sdk).
+Чтобы подключиться к {var(s3)} с помощью SDK, {linkto(../../connect/s3-sdk#s3-connect-sdk)[text=настройте Boto3]}.
 
 {note:info}
-
 Чтобы избежать попыток SDK подключиться к стандартным эндпоинтам AWS, явно укажите `endpoint_url` и `region_name`.
-
 {/note}
 
 Пример инициализации клиента Boto3 на Python:
@@ -37,7 +37,7 @@ s3_client = boto3.client(
 
 Чтобы интегрировать управление объектным хранилищем в код приложения, создайте скрипт на Python.
 
-Пример скрипта, который автоматизирует процесс [защиты критических резервных копий](/ru/storage/s3/how-to-guides/critical-backups-protect), демонстрируя программное управление блокировками:
+Пример скрипта, который автоматизирует процесс {linkto(../../how-to-guides/critical-backups-protect#s3-critical-backups-protect)[text=защиты критических резервных копий]}, демонстрируя программное управление блокировками:
 
 ```python
 import boto3
@@ -92,7 +92,7 @@ except Exception as e:
 print(f"A general error occurred: {e}")
 ```
 
-Пример фрагмента скрипта, который автоматизирует процесс загрузки [со строгой блокировкой](/ru/storage/s3/how-to-guides/regulatory-requirements) (`COMPLIANCE`):
+Пример фрагмента скрипта, который автоматизирует процесс загрузки {linkto(../../how-to-guides/regulatory-requirements#s3-regulatory-requirements)[text=со строгой блокировкой]} (`COMPLIANCE`):
 
 ```python
 import datetime

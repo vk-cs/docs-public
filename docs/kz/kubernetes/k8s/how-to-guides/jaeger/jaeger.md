@@ -6,12 +6,12 @@ Kubernetes кластерлеріндегі [Jaeger](https://www.jaegertracing.i
 
 ## {heading(Дайындық қадамдары)[id=k8s-jaeger-prepare]}
 
-1. [Жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster) Kubernetes кластерінің өзекті нұсқасын, егер бұл әлі жасалмаса.
-1. Егер бұл әлі жасалмаған болса, `kubectl` [орнатып, баптаңыз](../../connect/kubectl).
-1. `kubectl` көмегімен кластерге [қосылыңыз](../../connect/kubectl#connect).
-1. Егер бұл әлі жасалмаған болса, [Jaeger аддонын орнатыңыз](../../instructions/addons/advanced-installation/install-advanced-jaeger).
+{include(/kz/_includes/_create-test-cluster.md)}
+1. Егер бұл әлі жасалмаған болса, {linkto(../../connect/kubectl#k8s-kubectl)[text=`kubectl` орнатып, баптаңыз]}.
+1. `kubectl` көмегімен кластерге {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=қосылыңыз]}.
+1. Егер бұл әлі жасалмаған болса, {linkto(../../instructions/addons/advanced-installation/install-advanced-jaeger#k8s-install-advanced-jaeger)[text=Jaeger аддонын орнатыңыз]}.
 
-## {heading({counter(jaeger)}. HotROD үшін қосымша жасаңыз)[id=k8s-jaeger-prepare]}
+## {heading({counter(jaeger)}. HotROD үшін қосымша жасаңыз)[id=k8s-jaeger-app]}
 
 1. `example-hotrod` сынақ қосымшасының ресурстары орналасатын `example-hotrod` атаулар кеңістігін жасаңыз:
 
@@ -127,4 +127,6 @@ Kubernetes кластерлеріндегі [Jaeger](https://www.jaegertracing.i
    kubectl delete ns example-hotrod
    ```
 
-1. [Тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#stop) жасалған кластерді, оны кейінірек пайдалану үшін, немесе [жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#delete_cluster) оны біржола.
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

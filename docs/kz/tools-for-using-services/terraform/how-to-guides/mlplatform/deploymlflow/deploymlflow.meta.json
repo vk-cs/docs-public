@@ -4,5 +4,10 @@
   "metaDescription": "Terraform пайдаланып MLflow Deploy инстансын жасау мысалы",
   "sectionTitle": "MLflow Deploy инстансын жасау",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

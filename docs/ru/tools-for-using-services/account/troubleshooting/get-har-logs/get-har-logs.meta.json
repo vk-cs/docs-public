@@ -5,5 +5,12 @@
   "sectionTitle": "Проблема с отображением ресурсов в ЛК",
   "icon": "",
   "weight": 1,
-  "uuid": "04dd7891-21b7-4663-a9d6-df41650e95db"
+  "uuid": "04dd7891-21b7-4663-a9d6-df41650e95db",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

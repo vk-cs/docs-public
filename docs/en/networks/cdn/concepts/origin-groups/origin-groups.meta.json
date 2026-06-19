@@ -1,9 +1,14 @@
 {
-    "title": "Origin groups",
-      "shortDescription": "How CDN servers deal with origin groups",
-      "metaDescription": "How CDN servers deal with origin groups.",
-    "sectionTitle": "Origin groups",
-    "icon": "",
-    "weight": 2,
-    "uuid": "703d54e8-2b8a-4773-b862-7a38b3501c2f"
+  "title": "Origin groups",
+  "shortDescription": "How CDN servers deal with origin groups",
+  "metaDescription": "How CDN servers deal with origin groups.",
+  "sectionTitle": "Origin groups",
+  "icon": "",
+  "weight": 3,
+  "uuid": "703d54e8-2b8a-4773-b862-7a38b3501c2f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

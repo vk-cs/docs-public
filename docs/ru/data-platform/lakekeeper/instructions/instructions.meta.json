@@ -1,0 +1,14 @@
+{
+  "title": "Пошаговые инструкции",
+  "shortDescription": "Создание экземпляра сервиса и управление его компонентами",
+  "metaDescription": "Пошаговые инструкции по работе с Lakekeeper VK Data Platform: создание экземпляра и управление им",
+  "sectionTitle": "Пошаговые инструкции",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

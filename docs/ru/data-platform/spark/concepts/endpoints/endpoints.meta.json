@@ -1,0 +1,14 @@
+{
+  "title": "Эндпоинты",
+  "shortDescription": "Эндпоинты для работы с Cloud Spark",
+  "metaDescription": "Узнайте, какие эндпоинты предоставляет Cloud Spark в VK Data Platform: Spark Connect для подключения из Python-скрипта и Spark Service для просмотра логов и запуска задач",
+  "sectionTitle": "Эндпоинты",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

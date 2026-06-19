@@ -1,8 +1,18 @@
 {
   "title": "Аддондармен жұмыс",
-  "shortDescription": "Kubernetes кластеріне аддондарды қалай орнатуғал және оларды қалай басқаруғал болады",
-  "metaDescription": "Kubernetes кластеріне аддондарды қалай орнатуғал және оларды қалай басқаруғал болады.",
+  "shortDescription": "Kubernetes кластеріне аддондарды қалай орнатуға және оларды қалай басқаруға болады",
+  "metaDescription": "Kubernetes кластеріне аддондарды қалай орнатуға және оларды қалай басқаруға болады.",
   "sectionTitle": "Аддондармен жұмыс",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

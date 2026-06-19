@@ -1,16 +1,18 @@
+# {heading(Docker реестріне қосылу)[id=k8s-docker-registry]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Кластерде сәйкес [аддон](../../concepts/addons-and-settings/addons) орнатылған болса, Docker реестріне қосыла аласыз.
+Кластерде сәйкес {linkto(../../concepts/addons-and-settings/addons#k8s-addons)[text=аддон]} орнатылған болса, Docker реестріне қосыла аласыз.
 
-Аддонды [орнату кезінде](../../instructions/addons/advanced-installation/install-advanced-registry) ол үшін Floating IP-мекенжайы бар стандартты жүктеме теңгергіші жасалады. Сондықтан Docker реестріне интернетке қолжетімділігі бар кез келген хосттан қосылуғал болады.
+Аддонды {linkto(../../instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry)[text=орнату кезінде]} ол үшін Floating IP-мекенжайы бар стандартты жүктеме теңгергіші жасалады. Сондықтан Docker реестріне интернетке қолжетімділігі бар кез келген хосттан қосылуға болады.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-docker-registry-before-work]}
 
-1. Кластерде Docker реестрінің (`docker-registry`) аддондар орнатылғанына [көз жеткізіңіз](../../instructions/addons/manage-addons#addondardy_karau).
-1. `kubectl` көмегімен кластерге қосыла алатыныңызғал [көз жеткізіңіз](../kubectl#check_connection).
-1. Docker реестріне қол жеткізу үшін [деректерді алыңыз](../../instructions/addons/advanced-installation/install-advanced-registry#tizilimge_kosylu).
+1. Кластерде Docker реестрінің (`docker-registry`) аддоны орнатылғанына {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-view)[text=көз жеткізіңіз]}.
+1. `kubectl` көмегімен кластерге қосыла алатыныңызға {linkto(../kubectl#k8s-kubectl-check-connection)[text=көз жеткізіңіз]}.
+1. Docker реестріне қол жеткізу үшін {linkto(../../instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry-connect)[text=деректерді алыңыз]}.
 
-## Docker реестріне қосылу
+## {heading(Docker реестріне қосылу)[id=k8s-docker-registry-connect]}
 
 Реестрге қосылу жоспарланған хостта:
 
@@ -20,7 +22,7 @@
 
 1. Docker реестрін сенімді реестрлер тізіміне қосыңыз:
 
-   1. Docker конфигурациялық файлдар `daemon.json` ішіне Docker реестрінің эндпоинт мекенжайы бар `insecure-registries` параметрін қосыңыз.
+   1. Docker конфигурациялық файлы `daemon.json` ішіне Docker реестрінің эндпоинт мекенжайы бар `insecure-registries` параметрін қосыңыз.
 
       Мекенжай `<IP_АДРЕС_РЕЕСТРА_DOCKER>:<ПОРТ_РЕЕСТРА_DOCKER>` форматында беріледі.
 
@@ -44,7 +46,7 @@
 
       {tab(Linux)}
 
-      - Docker Engine серверлік нұсқасы үшін қайта іске қосу мақсатында келесі командалардың бірін орындаңыз:
+      * Docker Engine серверлік нұсқасы үшін қайта іске қосу мақсатында келесі командалардың бірін орындаңыз:
 
         ```console
         sudo systemd restart docker
@@ -54,7 +56,7 @@
         sudo service docker restart
         ```
 
-      - Docker Desktop үшін [графикалық интерфейсті](https://docs.docker.com/desktop/settings/linux/#docker-engine) пайдаланыңыз.
+      * Docker Desktop үшін [графикалық интерфейсті](https://docs.docker.com/desktop/settings/linux/#docker-engine) пайдаланыңыз.
 
       {/tab}
 
@@ -84,7 +86,7 @@
 
 Реестрмен жұмыс туралы толығырақ [Docker ресми құжаттамасында](https://docs.docker.com/desktop/).
 
-## Kubernetes кластерінде Docker реестрін пайдалану
+## {heading(Kubernetes кластерінде Docker реестрін пайдалану)[id=k8s-docker-registry-using]}
 
 Docker реестріндегі образдарды пайдаланып кластерде жұмыс жүктемелерін (workloads) жаю үшін:
 
@@ -128,9 +130,9 @@ Docker реестріндегі образдарды пайдаланып кла
 
 1. Жұмыс жүктемесінің манифестінде мыналарды көрсетіңіз:
 
-   - `ìmagePullSecrets` параметрінде жасалған құпияның атауын.
+   * `ìmagePullSecrets` параметрінде жасалған құпияның атауын.
 
-   - `containers.image` параметрінде реестрдегі образғал жолды.
+   * `containers.image` параметрінде реестрдегі образға жолды.
 
      Жол `<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>` форматында беріледі.
 
@@ -170,7 +172,7 @@ Docker реестріндегі образдарды пайдаланып кла
          containers:
          - name: my-app
            image: <IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>
-   
+
    ```
 
    {/tab}

@@ -4,5 +4,10 @@
   "metaDescription": "VK Object Storage сервисінің мүмкіндіктерімен танысыңыз: VK Object Storage сервисі үшін аккаунт жасаңыз, объектіні бакетке жүктеңіз және оған сілтеме арқылы қолжетімділік беріңіз",
   "sectionTitle": "VK Object Storage: объектілік қоймада бакет жасаңыз және файлды жүктеңіз",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

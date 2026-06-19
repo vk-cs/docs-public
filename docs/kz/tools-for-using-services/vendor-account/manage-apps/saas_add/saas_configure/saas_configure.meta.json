@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "SaaS-қосымшасын конфигурациялау",
   "sectionTitle": "SaaS-қосымшасын конфигурациялау",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

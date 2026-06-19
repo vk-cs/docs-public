@@ -1,13 +1,14 @@
-## {heading(Дискіні ВМ-ге қосу)[id=mount_disk]}
+# {heading(Дискіні қосу және ажырату)[id=iaas-volumes-connect]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
+## {heading(Дискіні ВМ-ге қосу)[id=iaas-volumes-connect-mount-disk]}
 
 {tabs}
 
-{tab(Жеке кабинет)}
+{tab(Личный кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Перейдите](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Перейдите]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Бұлттық есептеулер → Дискілер** бөліміне өтіңіз.
 1. Тізімнен ВМ-ге қосылмаған дискіні табыңыз: диск атауының сол жағындағы белгіше сұр түсті, оған меңзерді апарғанда **Инстансқа қосылмаған** деген жазу пайда болады.
 1. Дискіні қосу үшін виртуалды машинаны таңдау терезесін ашу үшін тәсілдердің бірін қолданыңыз.
@@ -30,8 +31,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Дискілер тізімін шығарып, дискінің ID мәнін көшіріп алыңыз:
 
    ```console
@@ -68,7 +68,7 @@
 
 {/tabs}
 
-## {heading(Дискіні ВМ-ден ажырату)[id=dismount_disk]}
+## {heading(Дискіні ВМ-ден ажырату)[id=iaas-volumes-connect-dismount-disk]}
 
 {note:warn}
 
@@ -78,13 +78,12 @@
 
 {tabs}
 
-{tab(Жеке кабинет)}
+{tab(Личный кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Перейдите](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Перейдите]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлттық есептеулер** → **Дискілер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дискілері:
 
      1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
@@ -110,8 +109,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Дискілер тізімін шығарып, дискінің ID мәнін көшіріп алыңыз:
 
    ```console

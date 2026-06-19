@@ -1,12 +1,14 @@
+# {heading(Стандартные маршрутизаторы)[id=vnet-router]}
+
 Вы можете управлять маршрутизаторами: просматривать, редактировать и удалять их.
 
-## Просмотр списка маршрутизаторов и информации о них
+## {heading(Просмотр списка маршрутизаторов и информации о них)[id=vnet-router-view]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Маршрутизаторы**.
 
@@ -14,7 +16,7 @@
 
 1. Нажмите на имя нужного маршрутизатора.
 
-   Откроется страница с подробной информацией о нем. На этой странице можно также [редактировать](#redaktirovanie_marshrutizatora) параметры маршрутизатора.
+   Откроется страница с подробной информацией о нем. На этой странице можно также {linkto(#vnet-router-edit)[text=редактировать]} параметры маршрутизатора.
 
 {/tab}
 
@@ -22,8 +24,8 @@
 
 1. Убедитесь, что:
 
-    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
-    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Чтобы посмотреть список маршрутизаторов и их идентификаторы, выполните команду:
 
@@ -34,35 +36,39 @@
 1. Чтобы посмотреть детальную информацию о маршрутизаторе, выполните команду:
 
    ```console
-   openstack router show <идентификатор маршрутизатора>
+   openstack router show <ID_МАРШРУТИЗАТОРА>
    ```
 
    В выводе команды:
 
    - `id` — идентификатор маршрутизатора.
    - `external_gateway_info` — информация о подключении к внешней сети. Пустое поле означает, что подключение к внешней сети не настроено.
-   - `interfaces_info` — информация об [интерфейсах маршрутизатора](#upravlenie_interfeysami). Пустое поле означает, что интерфейсы не добавлены.
-   - `routes` — информация о [статических маршрутах маршрутизатора](#upravlenie_staticheskimi_marshrutami). Пустое поле означает, что статические маршруты не добавлены.
+   - `interfaces_info` — информация об {linkto(#vnet-router-interfaces-manage)[text=интерфейсах маршрутизатора]}. Пустое поле означает, что интерфейсы не добавлены.
+   - `routes` — информация о {linkto(#vnet-router-interfaces-manage)[text=статических маршрутах маршрутизатора]}. Пустое поле означает, что статические маршруты не добавлены.
 
 {/tab}
 
 {/tabs}
 
-## Добавление маршрутизатора
+## {heading(Добавление маршрутизатора)[id=vnet-router-add]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Маршрутизаторы**.
 1. Нажмите кнопку **Добавить маршрутизатор**.
-1. Если к вашему проекту подключена [SDN Sprut](../../concepts/sdn), в поле **Тип маршрутизатора** выберите `Стандартный`. Если SDN Sprut не подключена, в проекте доступны только стандартные маршрутизаторы, поле не отображается.
+{ifdef(public)}
+1. Если к вашему проекту подключена {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN Sprut]}, в поле **Тип маршрутизатора** выберите `Стандартный`. Если SDN Sprut не подключена, в проекте доступны только стандартные маршрутизаторы, поле не отображается.
+{/ifdef}
 1. Задайте параметры маршрутизатора:
 
    - **Название**. Допустимы только цифры, латинские буквы, пробелы и спецсимволы: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
-   - **SDN**: выберите [SDN](../../concepts/sdn), в которой будет создан маршрутизатор. Поле отображается, если к проекту подключены SDN Sprut и Neutron.
+   {ifdef(public)}
+   - **SDN**: выберите {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]}, в которой будет создан маршрутизатор. Поле отображается, если к проекту подключены SDN Sprut и Neutron.
+   {/ifdef}
    - **Подключение к внешней сети**: если эта опция выбрана, то маршрутизатор будет иметь доступ в интернет и публичный IP-адрес.
 
      Выберите эту опцию, если планируется назначать Floating IP-адреса портам в подсетях, подключенных к маршрутизатору, и обеспечивать доступ в интернет из этих подсетей.
@@ -77,8 +83,8 @@
 
 1. Убедитесь, что:
 
-    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
-    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Создайте маршрутизатор нужного типа:
 
@@ -87,7 +93,7 @@
    {tab(С подключением к внешней сети)}
       
    ```console
-   openstack router create <имя маршрутизатора> --external-gateway ext-net
+   openstack router create <ИМЯ_МАРШРУТИЗАТОРА> --external-gateway ext-net
    ```
 
    {/tab}
@@ -95,7 +101,7 @@
    {tab(Без подключения к внешней сети)}
    
    ```console
-   openstack router create <имя маршрутизатора>
+   openstack router create <ИМЯ_МАРШРУТИЗАТОРА>
    ```
 
    {/tab}
@@ -104,25 +110,25 @@
 
    Маршрутизатор с подключением к внешней сети будет иметь доступ в интернет и публичный IP-адрес. Создайте маршрутизатор такого типа, если планируется назначать Floating IP-адреса портам в подсетях, подключенных к маршрутизатору, и обеспечивать доступ в интернет из этих подсетей.
 
-1. О том, как подключить один или несколько интерфейсов к маршрутизатору, читайте далее. Это можно сделать либо путем [редактирования маршрутизатора](#redaktirovanie_marshrutizatora) либо [работой с его интерфейсами](#upravlenie_interfeysami) напрямую.
+1. О том, как подключить один или несколько интерфейсов к маршрутизатору, читайте далее. Это можно сделать либо путем {linkto(#vnet-router-edit)[text=редактирования маршрутизатора]} либо {linkto(#vnet-router-interfaces-manage)[text=работой с его интерфейсами]} напрямую.
 
 {/tab}
 
 {/tabs}
 
-## Редактирование маршрутизатора
+## {heading(Редактирование маршрутизатора)[id=vnet-router-edit]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Маршрутизаторы**.
 1. Выполните одно из действий для маршрутизатора, который нужно отредактировать:
 
    - Нажмите на название маршрутизатора и затем на вкладке **Общая информация** нажмите кнопку **Редактировать маршрутизатор**.
-   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для маршрутизатора и выберите пункт **Редактировать маршрутизатор**.
+   - Нажмите ![ ](../../../../assets/more-icon.svg "inline") для маршрутизатора и выберите пункт **Редактировать маршрутизатор**.
 
 1. Выполните одно из доступных действий:
 
@@ -134,9 +140,7 @@
    - Управляйте подсетями, подключенными к маршрутизатору. Вы можете добавить новые подсети к маршрутизатору, выбрав их из списка, либо отключить уже добавленные подсети.
 
      {note:info}
-
      Добавить или удалить подсеть также можно, изменив интерфейс маршрутизатора.
-
      {/note}
 
 1. После редактирования маршрутизатора нажмите кнопку **Сохранить**.
@@ -147,15 +151,16 @@
 
 1. Убедитесь, что:
 
-    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
-    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
-1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
+
+1. {linkto(#vnet-router-view)[text=Получите идентификатор]} нужного маршрутизатора.
 1. Выполните одно из доступных действий:
 
    - Измените имя маршрутизатора:
 
      ```console
-     openstack router set <идентификатор маршрутизатора> --name <новое имя>
+     openstack router set <ID_МАРШРУТИЗАТОРА> --name <НОВОЕ_ИМЯ>
      ```
 
    - Управляйте подключением к внешней сети:
@@ -165,7 +170,7 @@
      {tab(Включить подключение к внешней сети)}
           
      ```console
-     openstack router set <идентификатор маршрутизатора> --external-gateway ext-net
+     openstack router set <ID_МАРШРУТИЗАТОРА> --external-gateway ext-net
      ```
 
      {/tab}
@@ -173,7 +178,7 @@
      {tab(Отключить подключение к внешней сети)}
      
      ```console
-     openstack router unset <идентификатор маршрутизатора> --external-gateway
+     openstack router unset <ID_МАРШРУТИЗАТОРА> --external-gateway
      ```
 
      {/tab}
@@ -192,7 +197,7 @@
      1. Выполните команду:
 
         ```console
-        openstack router add subnet <идентификатор маршрутизатора> <идентификатор подсети>
+        openstack router add subnet <ID_МАРШРУТИЗАТОРА> <ID_ПОДСЕТИ>
         ```
 
      В результате:
@@ -205,7 +210,7 @@
      {tab(Отключить подсеть)}
      
      ```console
-     openstack router remove subnet <идентификатор маршрутизатора> <идентификатор подсети>
+     openstack router remove subnet <ID_МАРШРУТИЗАТОРА> <ID_ПОДСЕТИ>
      ```
 
      В результате:
@@ -221,25 +226,22 @@
      {/tabs}
 
      {note:info}
-
-     Добавить или удалить подсеть также можно, [изменив интерфейс](#upravlenie_interfeysami) маршрутизатора.
-
+     Добавить или удалить подсеть также можно, {linkto(#vnet-router-interfaces-manage)[text=изменив интерфейс]} маршрутизатора.
      {/note}
 
 {/tab}
 
 {/tabs}
 
-## Управление интерфейсами
+## {heading(Управление интерфейсами)[id=vnet-router-interfaces-manage]}
 
-Управление интерфейсами маршрутизатора — альтернативный способ [управления подсетями](#redaktirovanie_marshrutizatora), которые подключены к нему.
+Управление интерфейсами маршрутизатора — альтернативный способ {linkto(#vnet-router-edit)[text=управления подсетями]}, которые подключены к нему.
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) на страницу маршрутизатора, затем выберите вкладку **Интерфейсы**.
-
+1. {linkto(#vnet-router-view)[text=Перейдите]} на страницу маршрутизатора, затем выберите вкладку **Интерфейсы**.
 1. Чтобы добавить интерфейс:
 
    1. Нажмите кнопку **Добавить интерфейс**.
@@ -253,7 +255,7 @@
 
 1. Чтобы удалить интерфейс:
 
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для интерфейса и выберите пункт **Удалить интерфейс**.
+   1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для интерфейса и выберите пункт **Удалить интерфейс**.
    1. Подтвердите удаление.
 
    В результате:
@@ -267,18 +269,18 @@
 
 1. Убедитесь, что:
 
-    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
-    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
+1. {linkto(#vnet-router-view)[text=Получите идентификатор]} нужного маршрутизатора.
 
 1. Чтобы добавить интерфейс:
 
-   1. [Получите идентификатор порта OpenStack](../ports#prosmotr_spiska_portov_i_informacii_o_nih), находящегося в подсети, которую нужно подключить к маршрутизатору. Этот порт не должен использоваться никакими объектами (балансировщиками нагрузки, виртуальными машинами и т. д.) Если такого порта нет, [создайте его](../ports#dobavlenie_porta).
+   1. {linkto(../ports#vnet-ports-view)[text=Получите идентификатор порта OpenStack]}, находящегося в подсети, которую нужно подключить к маршрутизатору. Этот порт не должен использоваться никакими объектами (балансировщиками нагрузки, виртуальными машинами и т. д.) Если такого порта нет, {linkto(../ports#vnet-ports-add)[text=создайте его]}.
    1. Выполните команду:
 
       ```console
-      openstack router add port <идентификатор маршрутизатора> <идентификатор порта>
+      openstack router add port <ID_МАРШРУТИЗАТОРА> <ID_ПОРТА>
       ```
 
    В результате:
@@ -287,23 +289,22 @@
    - В списке интерфейсов появятся интерфейсы `INTERFACE_DISTRIBUTED` и (если маршрутизатора подключен к внешней сети) `SNAT`, относящиеся к этой подсети.
 
    {note:info}
-
-   Чтобы получить список интерфейсов, [посмотрите детальную информацию о маршрутизаторе](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) с помощью OpenStack CLI.
-
+   Чтобы получить список интерфейсов, {linkto(#vnet-router-view)[text=посмотрите детальную информацию о маршрутизаторе]} с помощью OpenStack CLI.
    {/note}
 
 1. Чтобы удалить интерфейс:
 
-   1. [Посмотрите интерфейсы (порты)](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih), настроенные на маршрутизаторе.
+   1. {linkto(#vnet-router-view)[text=Посмотрите интерфейсы (порты)]}, настроенные на маршрутизаторе.
    1. Выполните команду:
 
       ```console
-      openstack router remove port <идентификатор маршрутизатора> <идентификатор порта>
+      openstack router remove port <ID_МАРШРУТИЗАТОРА> <ID_ПОРТА>
       ```
 
    В результате:
 
    - Будут также удалены:
+
      - порт, соответствующий удаляемому интерфейсу.
      - интерфейс `SNAT` (если он есть) и соответствующий ему порт.
 
@@ -313,14 +314,13 @@
 
 {/tabs}
 
-## Управление статическими маршрутами
+## {heading(Управление статическими маршрутами)[id=vnet-router-static-routs-manage]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) на страницу маршрутизатора, затем выберите вкладку **Статические маршруты**.
-
+1. {linkto(#vnet-router-view)[text=Перейдите]} на страницу маршрутизатора, затем выберите вкладку **Статические маршруты**.
 1. Чтобы добавить статический маршрут:
 
    1. Нажмите кнопку **Добавить статический маршрут** или **Добавить**.
@@ -328,7 +328,7 @@
    1. Укажите промежуточный узел (next hop).
    1. Нажмите кнопку **Добавить маршрут**.
 
-1. Чтобы удалить статический маршрут, Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного маршрута и выберите пункт **Удалить маршрут**.
+1. Чтобы удалить статический маршрут, нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного маршрута и выберите пункт **Удалить маршрут**.
 
 {/tab}
 
@@ -336,42 +336,39 @@
 
 1. Убедитесь, что:
 
-    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
-    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
-
+1. {linkto(#vnet-router-view)[text=Получите идентификатор]} нужного маршрутизатора.
 1. Чтобы добавить статический маршрут, выполните команду:
 
    ```console
-   openstack router set <идентификатор маршрутизатора> --route destination=<сеть назначения с префиксом>,gateway=<адрес next hop>
+   openstack router set <ID_МАРШРУТИЗАТОРА> --route destination=<СЕТЬ_НАЗНАЧЕНИЯ_С_ПРЕФИКСОМ>,gateway=<АДРЕС_NEXT_HOP>
    ```
 
 1. Чтобы удалить статический маршрут:
 
-   1. [Посмотрите статические маршруты](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih), настроенные на маршрутизаторе.
+   1. {linkto(#vnet-router-view)[text=Посмотрите статические маршруты]}, настроенные на маршрутизаторе.
    1. Выполните команду:
 
       ```console
-      openstack router unset <идентификатор маршрутизатора> --route destination=<сеть назначения с префиксом>,gateway=<адрес next hop>
+      openstack router unset <ID_МАРШРУТИЗАТОРА> --route destination=<СЕТЬ_НАЗНАЧЕНИЯ_С_ПРЕФИКСОМ>,gateway=<АДРЕС_NEXT_HOP>
       ```
 
 1. Чтобы удалить все статические маршруты, выполните команду:
 
    ```console
-   openstack router set <идентификатор маршрутизатора> --no-route
+   openstack router set <ID_МАРШРУТИЗАТОРА> --no-route
    ```
 
 {/tab}
 
 {/tabs}
 
-## Удаление маршрутизатора
+## {heading(Удаление маршрутизатора)[id=vnet-router-delete]}
 
 {note:warn}
-
-Перед удалением маршрутизатора последовательно удалите [статические маршруты](#upravlenie-staticheskimi-marshrutami) и настроенные [интерфейсы](#upravlenie_interfeysami) (если они есть).
-
+Перед удалением маршрутизатора последовательно удалите {linkto(#vnet-router-static-routs-manage)[text=статические маршруты]} и настроенные {linkto(#vnet-router-interfaces-manage)[text=интерфейсы]} (если они есть).
 {/note}
 
 {tabs}
@@ -382,13 +379,13 @@
 
 Для удаления маршрутизатора:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный балансировщик.
 1. Перейдите в раздел **Виртуальные сети** → **Маршрутизаторы**.
 1. Выполните одно из действий для нужного маршрутизатора:
 
    - Выберите с помощью флажка маршрутизатор, затем нажмите кнопку **Удалить маршрутизатор**.
-   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для маршрутизатора и выберите пункт **Удалить маршрутизатор**.
+   - Нажмите ![ ](../../../../assets/more-icon.svg "inline") для маршрутизатора и выберите пункт **Удалить маршрутизатор**.
    - Нажмите на имя маршрутизатора, затем на вкладке **Общая информация** нажмите кнопку **Удалить маршрутизатор**.
 
 1. Подтвердите удаление маршрутизатора.
@@ -399,15 +396,14 @@
 
 1. Убедитесь, что:
 
-    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
-    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
-
+1. {linkto(#vnet-router-view)[text=Получите идентификатор]} нужного маршрутизатора.
 1. Выполните команду:
 
    ```console
-   openstack router delete <идентификатор маршрутизатора>
+   openstack router delete <ID_МАРШРУТИЗАТОРА>
    ```
 
 {/tab}

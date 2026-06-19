@@ -4,5 +4,12 @@
   "metaDescription": "Егер виртуалды машина әдеттегіден ұзағырақ жасалса, не істеу керек",
   "sectionTitle": "ВМ жасау кезіндегі кідірістер",
   "icon": "",
-  "weight": 26
+  "weight": 26,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

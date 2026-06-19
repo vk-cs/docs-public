@@ -1,8 +1,22 @@
 {
-    "title": "Speech synthesis",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Speech synthesis",
-    "weight": 4,
-    "uuid": "6efeac71-0667-448e-b932-2e039e3322ae"
+  "title": "Speech synthesis",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Speech synthesis",
+  "weight": 4,
+  "uuid": "6efeac71-0667-448e-b932-2e039e3322ae",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

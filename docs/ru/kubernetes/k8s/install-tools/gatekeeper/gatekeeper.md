@@ -1,8 +1,10 @@
-Gatekeeper — это контроллер, встраиваемый между Kubernetes API и движком политик Open Policy Agent (OPA) для проверки создаваемых, изменяемых и удаляемых ресурсов Kubernetes на соответствие политикам. Более подробная информация о Gatekeeper приведена в [справочнике Kubernetes](../../reference/gatekeeper) и в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/).
+# {heading(Установка Gatekeeper)[id=k8s-gatekeeper]}
 
-## Установка
+Gatekeeper — это контроллер, встраиваемый между Kubernetes API и движком политик Open Policy Agent (OPA) для проверки создаваемых, изменяемых и удаляемых ресурсов Kubernetes на соответствие политикам. Более подробная информация о Gatekeeper приведена в {linkto(../../reference/gatekeeper#k8s-gatekeeper)[text=справочнике Kubernetes]} и в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/).
 
-1. [Установите Helm](../helm), если утилита еще не установлена.
+## {heading(Установка)[id=k8s-gatekeeper-install]}
+
+1. {linkto(../helm#k8s-helm)[text=Установите Helm]}, если утилита еще не установлена.
 
 1. Выполните команды:
 
@@ -29,7 +31,7 @@ Gatekeeper — это контроллер, встраиваемый между 
 
    {/tabs}
 
-## Проверка работоспособности
+## {heading(Проверка работоспособности)[id=k8s-gatekeeper-check]}
 
 Проверьте, что поды Gatekeeper создались и работают, выполнив команду:
 
@@ -47,15 +49,15 @@ gatekeeper-audit-...                             1/1     Running   0          ..
 gatekeeper-controller-manager-...                1/1     Running   0          ...
 ```
 
-## (Опционально) Настройка ограничений и шаблонов
+## {heading((Опционально) Настройка ограничений и шаблонов)[id=k8s-gatekeeper-set-constraint]}
 
-В кластерах Kubernetes в сервисе Cloud Containers действуют [политики безопасности по умолчанию](../../concepts/addons-and-settings/settings#preconfigured_templates_and_limitations), которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
+В кластерах Kubernetes в сервисе Cloud Containers действуют {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=политики безопасности по умолчанию]}, которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
 
 {tabs}
 
 {tab(Ограничение host-namespaces)}
 
-Эта политика запрещает получать доступ к инструментам межпроцессной коммуникации (IPC) и процессам узла кластера Kubernetes c помощью параметров `hostIPC: true` и `hostPID: true`. Подробнее читайте в [описании политики](../../concepts/security-policies#host-namespaces).
+Эта политика запрещает получать доступ к инструментам межпроцессной коммуникации (IPC) и процессам узла кластера Kubernetes c помощью параметров `hostIPC: true` и `hostPID: true`. Подробнее читайте в {linkto(../../concepts/security-policies#k8s-security-policies-host-namespaces)[text=описании политики]}.
 
 Чтобы настроить эту политику в кластере:
 
@@ -178,7 +180,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 {tab(Ограничение host-filesystem)}
 
-Запрещает монтировать в контейнер директории файловой системы узла кластера Kubernetes с помощью [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath). Подробнее читайте в [описании соответствующей политики безопасности](../../concepts/security-policies#host-filesystem).
+Запрещает монтировать в контейнер директории файловой системы узла кластера Kubernetes с помощью [hostPath](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath). Подробнее читайте в {linkto(../../concepts/security-policies#k8s-security-policies-host-filesystem)[text=описании соответствующей политики безопасности]}.
 
 Чтобы настроить эту политику в кластере:
 
@@ -405,7 +407,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 {/tabs}
 
-## Удаление
+## {heading(Удаление)[id=k8s-gatekeeper-delete]}
 
 1. Чтобы удалить Gatekeeper, выполните команду:
 
@@ -420,7 +422,5 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
    ```
 
    {note:warn}
-
    Эта операция приведет к удалению ограничений и их шаблонов.
-
    {/note}

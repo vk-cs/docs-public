@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: сервис туралы жиі қойылатын сұрақтарға жауаптар",
   "sectionTitle": "Сұрақтар мен жауаптар",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

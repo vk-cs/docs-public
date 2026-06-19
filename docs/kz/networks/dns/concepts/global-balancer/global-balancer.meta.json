@@ -4,5 +4,10 @@
   "metaDescription": "DNS-теңгерімдеу: VK Cloud ішінде трафикті DNS арқылы әртүрлі қолжетімділік аймақтары арасында қалай бөлуге болады",
   "sectionTitle": "DNS-теңгерімдеу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

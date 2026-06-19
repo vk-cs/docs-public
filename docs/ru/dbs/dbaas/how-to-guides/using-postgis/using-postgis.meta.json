@@ -1,9 +1,14 @@
 {
-    "title": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
-      "shortDescription": "Как начать работу с расширением PostGIS: построение пространственного запроса, вставка объектов ГИС в БД",
-      "metaDescription": "Cloud Databases в VK Cloud: начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
-    "sectionTitle": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
-    "icon": "",
-    "weight": 3,
-    "uuid": "9e674494-e182-45df-b5b6-7cfa14b2e916"
+  "title": "Использование расширения PostGIS в PostgreSQL",
+  "shortDescription": "Как начать работу с расширением PostGIS: построение пространственного запроса, вставка объектов ГИС в БД",
+  "metaDescription": "Cloud Databases в VK Cloud: начало работы с расширением PostGIS в PostgreSQL.",
+  "sectionTitle": "Использование расширения PostGIS в PostgreSQL",
+  "icon": "",
+  "weight": 3,
+  "uuid": "9e674494-e182-45df-b5b6-7cfa14b2e916",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

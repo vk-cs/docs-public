@@ -1,6 +1,8 @@
+# {heading(Резервтік көшіру жоспарын жасау)[id=backup-plan-create]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Резервтік көшіру жоспары виртуалды машинаның немесе дерекқордың резервтік көшірмелерін автоматты режимде жүйелі түрде жасауға арналған.
+Резервтік көшіру жоспары виртуалды машинаның{ifndef(private-cert)} немесе дерекқордың{/ifndef} резервтік көшірмелерін автоматты режимде жүйелі түрде жасауға арналған.
 
 Резервтік көшіру жоспары мыналарды қамтиды:
 
@@ -10,8 +12,8 @@
 
 Резервтік көшіру жоспарын келесі жолдармен жасай аласыз:
 
-- ВМ немесе БД инстансын жасау кезінде резервтік көшіру опциясын қосып, автоматты түрде;
-- VK Cloud жеке кабинетінде немесе [Cloud Backup сервисінің API көмегімен](/kz/tools-for-using-services/api/api-spec/backup-api) қолмен.
+- ВМ{ifndef(private-cert)} немесе БД инстансын{/ifndef} жасау кезінде резервтік көшіру опциясын қосып, автоматты түрде;
+- {var(cloud)} жеке кабинетінде{ifdef(public)} немесе {linkto(../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=Cloud Backup сервисінің API көмегімен]}{/ifdef} қолмен.
 
 {note:info}
 
@@ -19,20 +21,21 @@
 
 {/note}
 
-## {heading(Виртуалды машина үшін резервтік көшіру жоспарын жасау)[id=create_vm_backup_plan]}
+## {heading(Виртуалды машина үшін резервтік көшіру жоспарын жасау)[id=backup-plan-create-vm]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup** бөліміне өтіңіз.
 1. **Кесте жасау** батырмасын басыңыз.
 1. Резервтік көшіру жоспарының **Жоспар атауын** енгізіңіз.
-1. Ресурс түрін таңдаңыз: `Виртуальная машина`.
+1. Ресурс түрін таңдаңыз: `Виртуалды машина`.
+   {ifdef(public)}
 1. **Қосу** батырмасы арқылы қажетті ВМ-дерді таңдаңыз.
-
-Төменде жоспарды жасау бетінде VK Cloud үздік тәжірибелеріне сәйкес келетін әдепкі баптаулар көрсетілген:
+   {/ifdef}
+    Төменде жоспарды жасау бетінде {var(cloud)} үздік тәжірибелеріне сәйкес келетін әдепкі баптаулар көрсетілген:
 
    - **Инкременттік бэкаптарды қосу**: опция өшірілген.
    - **Толық бэкап жасау күндері**: аптаның барлық күндері таңдалған, іске қосу уақыты 09:00-ден 18:00-ге дейінгі аралықтан таңдалған.
@@ -43,7 +46,9 @@
 
 1. Егер бұл баптаулар жоспарыңызға сәйкес келмесе, оларды өзгертіңіз:
 
-   {include(/kz/_includes/_backup_plan_create_change.md)[tags=vm]}
+   {include(../../../../_includes/_backup_plan_create_change.md)[tags=vm]}
+
+1. **Жоспар жасау** батырмасын басыңыз.
 
    Жасалған резервтік көшіру жоспары тізімде пайда болады.
 
@@ -51,42 +56,47 @@
 
 {/tabs}
 
-## {heading(Дерекқор инстансы үшін резервтік көшіру жоспарын жасау)[id=create_db_backup_plan]}
+{ifndef(private-cert)}
+## {heading(Дерекқор инстансы үшін резервтік көшіру жоспарын жасау)[id=backup-plan-create-db]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
-
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+{/ifndef}
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+   {ifndef(private-cert)}
 1. **Cloud Backup** бөліміне өтіңіз.
 1. **Кесте жасау** батырмасын басыңыз.
 1. Резервтік көшіру жоспарының **Жоспар атауын** енгізіңіз.
-1. Ресурс түрін таңдаңыз: `База данных`.
+1. Ресурс түрін таңдаңыз: `Дерекқор`.
 
-{include(/kz/_includes/_backup_plan_create_change.md)[tags=db]}
+{include(../../../../_includes/_backup_plan_create_change.md)[tags=db]}
 
 Жасалған резервтік көшіру жоспары тізімде пайда болады.
 
 {/tab}
 
 {/tabs}
+{/ifndef}
 
-## Аналитикалық дерекқор инстансы үшін резервтік көшіру жоспарын жасау
+{ifdef(public)}
+## {heading(Аналитикалық дерекқор инстансы үшін резервтік көшіру жоспарын жасау)[id=backup-plan-create-analytic-db]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup** бөліміне өтіңіз.
 1. **Кесте жасау** батырмасын басыңыз.
 1. Резервтік көшіру жоспарының **Жоспар атауын** енгізіңіз.
-1. Ресурс түрін таңдаңыз: `Аналитическая база данных`.
+1. Ресурс түрін таңдаңыз: `Аналитикалық дерекқор`.
 
-{include(/kz/_includes/_backup_plan_create_change.md)[tags=adb]}
+{include(../../../../_includes/_backup_plan_create_change.md)[tags=adb]}
 
 Жасалған резервтік көшіру жоспары тізімде пайда болады.
 
 {/tab}
 
 {/tabs}
+{/ifdef}

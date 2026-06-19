@@ -1,0 +1,14 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "JupyterHub сервисі туралы ақпарат",
+  "metaDescription": "Сервис туралы",
+  "sectionTitle": "VK Data Platform жүйесіндегі JupyterHub: сервис туралы ақпарат",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -4,6 +4,16 @@
   "metaDescription": "Основные команды Terraform и примеры манифестов",
   "sectionTitle": "Справочник Terraform",
   "icon": "",
-  "weight": 4,
-  "uuid": "7765e74c-eb74-45cb-a87d-ee2c47617abc"
+  "weight": 5,
+  "uuid": "7765e74c-eb74-45cb-a87d-ee2c47617abc",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Standalone ішіндегі лог жүргізу",
+  "shortDescription": "Standalone ішінде сервис данасының логтарын қалай қарауға болады",
+  "metaDescription": "Cloud Kafka сервисінің орналастырылған данасының жұмыс логтарын VK Data Platform жүйесінің Standalone нұсқасында қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
+  "sectionTitle": "Standalone ішіндегі лог жүргізу",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

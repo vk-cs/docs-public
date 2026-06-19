@@ -1,9 +1,14 @@
 {
-    "title": "Методы для работы с компонентами Cloud ML Platform",
-      "shortDescription": "Справочник методов, позволяющих работать с JupyterHub, MLflow, MLflow Deploy",
-      "metaDescription": "Справочник методов, позволяющих работать с JupyterHub, MLflow, MLflow Deploy.",
-    "sectionTitle": "Методы для работы с компонентами Cloud ML Platform",
-    "icon": "",
-    "weight": 3,
-    "uuid": "ea439e70-58b7-4f25-a735-fad7e12a6312"
+  "title": "Методы для работы с компонентами Cloud ML Platform",
+  "shortDescription": "Справочник методов, позволяющих работать с JupyterHub, MLflow, MLflow Deploy",
+  "metaDescription": "Справочник методов, позволяющих работать с JupyterHub, MLflow, MLflow Deploy.",
+  "sectionTitle": "Методы для работы с компонентами Cloud ML Platform",
+  "icon": "",
+  "weight": 3,
+  "uuid": "ea439e70-58b7-4f25-a735-fad7e12a6312",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

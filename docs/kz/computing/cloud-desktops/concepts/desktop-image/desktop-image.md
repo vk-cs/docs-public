@@ -1,19 +1,28 @@
+# {heading(Жұмыс үстелдерінің жеке образдары)[id=desktops-image]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жұмыс үстелінің образы — бұл стандартты бағдарламалық компоненттерге қосымша VDI технологиясын қолдауға арналған БҚ, сондай-ақ соңғы пайдаланушының жұмысына қажетті қолданбалар орнатылған виртуалды машинаның образы. Cloud Desktop сервисі жұмыс үстелдерін өрістетуге арналған пайдалануға дайын образдарды ұсынады. Сондай-ақ сервиске өз образдарыңызды жүктеп, пайдалана аласыз.
 
-Жұмыс үстелінің образын кез келген қолжетімді тәсілмен дайындауға болады, мысалы Cloud Servers сервисінің [Практикалық нұсқаулықтар](/kz/computing/iaas/how-to-guides) бөліміндегі нұсқаулықтардың бірін пайдалану арқылы.
+Жұмыс үстелінің образын кез келген қолжетімді тәсілмен дайындауға болады, мысалы Cloud Servers сервисінің {ifdef(public,private,private-pg)}[Практикалық нұсқаулықтар](../../../../computing/iaas/how-to-guides){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/how-to-guides#iaas-how-to-guides)[text=Практикалық нұсқаулықтар]}{/ifdef} бөліміндегі нұсқаулықтардың бірін пайдалану арқылы.
 
-## {heading(Жеке образға қойылатын талаптар)[id=custom-image-requirements]}
+## {heading(Жеке образға қойылатын талаптар)[id=desktops-image-custom-requirements]}
 
 Образда келесі БҚ орнатылуы тиіс:
 
 - Операциялық жүйе:
 
+  {ifdef(public)}
   - Active Directory каталог қызметіне қосылуды қолдайтын кез келген нұсқадағы Windows.
   - Графикалық интерфейсі орнатылған Astra Linux «Орел».
+  {/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+  - Windows 10 немесе 11.
+  - Windows Server 2019 немесе 2022.
+  - РЕД ОС 7.3.
+  - Astra Linux 1.7.
+  {/ifdef}
 
-  Басқа операциялық жүйелерді пайдалану үшін [техникалық қолдауға](/kz/contacts) хабарласыңыз.
+  Басқа операциялық жүйелерді пайдалану үшін {ifdef(public)}[техникалық қолдауға](/kz/contacts){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{var(cloud)} әкімшісіне{/ifdef} хабарласыңыз.
 
 - [QEMU қонақ агенті](https://pve.proxmox.com/wiki/Qemu-guest-agent).
 - Виртуалды машинаны бұлттық инициализациялауға арналған БҚ:
@@ -23,13 +32,15 @@
 
 - Cloud Desktop Client қолданбасының пайдаланушыларына қажет қолданбалар.
 
-Образдан жасалған ВМ [графикалық үдеткіштердің](/kz/computing/gpu/concepts/about) (GPU) мүмкіндіктерін пайдалана алуы үшін образда мыналар болуы тиіс:
+{ifdef(public)}
+Образдан жасалған ВМ {linkto(../../../../computing/cloud-desktops/gpu/concepts/about#gpu-about)[text=графикалық үдеткіштердің]} (GPU) мүмкіндіктерін пайдалана алуы үшін образда мыналар болуы тиіс:
 
 - GPU драйверлері орнатылған;
-- егер [виртуалды графикалық үдеткіштер](/kz/computing/gpu/concepts/vgpu#licensing) (vGPU) пайдаланылса, лицензиялау токені бапталған.
+- егер {linkto(../../../../computing/cloud-desktops/gpu/concepts/vgpu#vgpu-licensing)[text=виртуалды графикалық үдеткіштер]} (vGPU) пайдаланылса, лицензиялау токені бапталған.
 
-Толығырақ [vGPU бар ВМ баптау](/kz/computing/gpu/how-to-guides/vgpu-setup) нұсқаулығында.
+Толығырақ {linkto(../../../../computing/cloud-desktops/gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=vGPU бар ВМ баптау]} нұсқаулығында.
+{/ifdef}.
 
-## Жеке образды дайындау бойынша ұсыныстар
+## {heading(Жеке образды дайындау бойынша ұсыныстар)[id=desktops-image-recommend]}
 
 Astra Linux ОС үшін RDP протоколын және AD каталог қызметін қолдауға арналған қосымша БҚ-ны образға орнату ұсынылады. Бұл пулда жұмыс үстелдерін өрістетуді жеделдетуге мүмкіндік береді.

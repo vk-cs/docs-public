@@ -1,9 +1,14 @@
 {
-    "title": "Creating and setting security groups",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Creating and setting security groups",
-    "icon": "",
-    "weight": 20,
-    "uuid": "ac1ac684-b859-4221-b95e-fbdec0d78213"
+  "title": "Creating and setting security groups",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Creating and setting security groups",
+  "icon": "",
+  "weight": 20,
+  "uuid": "ac1ac684-b859-4221-b95e-fbdec0d78213",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

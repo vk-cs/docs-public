@@ -5,5 +5,10 @@
   "sectionTitle": "Вспомогательная информация",
   "icon": "",
   "weight": 50,
-  "uuid": "20c56de0-2e2c-4d0d-aa49-afe12a1de281"
+  "uuid": "20c56de0-2e2c-4d0d-aa49-afe12a1de281",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

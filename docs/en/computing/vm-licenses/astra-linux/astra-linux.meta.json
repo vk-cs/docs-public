@@ -1,8 +1,13 @@
 {
-    "title": "Astra Linux",
-      "shortDescription": "Product licenses from Astra Linux",
-      "metaDescription": "Licensing of products from the domestic company Astra Linux",
-    "sectionTitle": "Astra Linux",
-    "weight": 3,
-    "uuid": "33d32be8-3626-4794-8a8f-943178a7333c"
+  "title": "Astra Linux",
+  "shortDescription": "Product licenses from Astra Linux",
+  "metaDescription": "Licensing of products from the domestic company Astra Linux",
+  "sectionTitle": "Astra Linux",
+  "weight": 3,
+  "uuid": "33d32be8-3626-4794-8a8f-943178a7333c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

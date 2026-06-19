@@ -1,16 +1,18 @@
+# {heading(Vertical Pod Autoscaler)[id=k8s-install-advanced-vpa]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
-Бұл аддон тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+Бұл аддон тек {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-vpa-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-vpa-install]}
 
-Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
+Аддон үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді.
 
 {tabs}
 
@@ -36,7 +38,7 @@
         - таңдалған нұсқаны;
         - қосымша атауын;
         - аддон орнатылатын аттар кеңістігінің атауын;
-        - [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu).
+        - {linkto(#k8s-install-advanced-vpa-edit-code)[text=аддонды баптау кодын]}.
 
           {note:warn}
 
@@ -52,14 +54,14 @@
 
    {tab(Terraform)}
 
-    1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+    1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
         - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
         - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
         - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-       Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+       Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
        {note:warn}
        Дұрыс берілмеген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -100,9 +102,9 @@
 
     1. Кластерде аддондар орналастырылатын бөлінген worker-түйіндер тобы бар екеніне көз жеткізіңіз.
 
-       Егер мұндай топ жоқ болса — [оны қосыңыз](../../../manage-node-group#add_group).
+       Егер мұндай топ жоқ болса — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=оны қосыңыз]}.
 
-    1. Егер әлі жасалмаса, осы түйіндер тобы үшін [мыналарды орнатыңыз](../../../manage-node-group#labels_taints):
+    1. Егер әлі жасалмаса, осы түйіндер тобы үшін {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=мыналарды орнатыңыз]}:
 
         - **Белгі (label)**: `addonNodes` кілті, `dedicated` мәні.
         - **Шектеу (taint)**: `NoSchedule` әсері, `addonNodes` кілті, `dedicated` мәні.
@@ -131,7 +133,7 @@
         - таңдалған нұсқаны;
         - қосымша атауын;
         - аддон орнатылатын аттар кеңістігінің атауын;
-        - [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu).
+        - {linkto(#k8s-install-advanced-vpa-edit-code)[text=аддонды баптау кодын]}.
 
     1. Аддонды баптау кодында қажетті ерекшеліктерді (tolerations) және түйін селекторларын (nodeSelector) орнатыңыз:
 
@@ -178,14 +180,14 @@
 
    {tab(Terraform)}
 
-    1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+    1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
         - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
         - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
         - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-       Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
+       Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
 
     1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -246,14 +248,14 @@
 
    {tab(Terraform)}
 
-    1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+    1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
         - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
         - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
         - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-       Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
+       Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
 
     1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -277,11 +279,10 @@
 
 {/tabs}
 
-## Орнату кезінде аддонды баптау кодын өңдеу
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-vpa-edit-code]}
 
 Аддон кодын өңдеу стандартты орнату және бөлінген worker-түйіндерге орнату үшін қолданылады.
 
 Өрістер сипаттамасымен бірге аддонды баптау кодының толық нұсқасы [GitHub](https://github.com/kubernetes/autoscaler/blob/master/vertical-pod-autoscaler/docs/flags.md) сайтында қолжетімді.
 
-Кодты өңдегеннен кейін [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
-
+Кодты өңдегеннен кейін {linkto(#k8s-install-advanced-vpa-install)[text=аддонды орнатуды жалғастырыңыз]}.

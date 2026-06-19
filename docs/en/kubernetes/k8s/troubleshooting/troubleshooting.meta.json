@@ -5,5 +5,19 @@
   "sectionTitle": "Troubleshooting",
   "icon": "",
   "weight": 10,
-  "uuid": "cda4ba1f-dbd2-45e9-9c9b-8b0d8135670f"
+  "uuid": "cda4ba1f-dbd2-45e9-9c9b-8b0d8135670f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

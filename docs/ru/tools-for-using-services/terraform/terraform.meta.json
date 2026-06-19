@@ -1,9 +1,19 @@
 {
   "title": "Terraform",
-  "shortDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов",
+  "shortDescription": "Использование Terraform-провайдера для управления {var(cloud)}",
   "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов.",
   "sectionTitle": "Terraform",
   "icon": "",
   "weight": 6,
-  "uuid": "409caeaa-b3cf-4fb3-a690-0a262c0383da"
+  "uuid": "409caeaa-b3cf-4fb3-a690-0a262c0383da",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

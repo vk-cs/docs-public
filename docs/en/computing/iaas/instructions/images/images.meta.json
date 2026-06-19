@@ -5,5 +5,10 @@
   "sectionTitle": "Images",
   "icon": "",
   "weight": 3,
-  "uuid": "b56990b4-b5b1-4145-af2a-711787ef5bc7"
+  "uuid": "b56990b4-b5b1-4145-af2a-711787ef5bc7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "shortDescription": "Жүктеме теңгергіштерін басқаруға арналған OpenAPI спецификациясы",
   "sectionTitle": "Жүктеме теңгергіштерін басқару",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

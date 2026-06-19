@@ -4,5 +4,12 @@
   "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисі объектілерін басқару үшін VK Cloud Terraform-провайдерін қалай пайдалану керек. NFS жасау",
   "sectionTitle": "NFS жасау",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

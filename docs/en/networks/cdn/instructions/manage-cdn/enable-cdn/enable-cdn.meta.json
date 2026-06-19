@@ -1,9 +1,14 @@
 {
-    "title": "Enabling and disabling CDN resource",
-      "shortDescription": "How to activate or suspend content delivery via CDN resource",
-      "metaDescription": "How to activate or suspend content delivery via CDN resource",
-    "sectionTitle": "Enabling and disabling CDN resource",
-    "icon": "",
-    "weight": 1,
-    "uuid": "63d0185d-7c37-4015-b7bd-cf6beb187327"
+  "title": "Enabling and disabling CDN resource",
+  "shortDescription": "How to activate or suspend content delivery via CDN resource",
+  "metaDescription": "How to activate or suspend content delivery via CDN resource",
+  "sectionTitle": "Enabling and disabling CDN resource",
+  "icon": "",
+  "weight": 1,
+  "uuid": "63d0185d-7c37-4015-b7bd-cf6beb187327",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

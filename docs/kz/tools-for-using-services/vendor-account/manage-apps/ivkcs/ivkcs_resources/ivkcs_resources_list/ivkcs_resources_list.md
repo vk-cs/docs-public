@@ -1,4 +1,4 @@
-# {heading(Ресурстар тізімі)[id=ivkcs_resources_list]}
+# {heading(Список ресурсов)[id=ivkcs_resources_list]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 

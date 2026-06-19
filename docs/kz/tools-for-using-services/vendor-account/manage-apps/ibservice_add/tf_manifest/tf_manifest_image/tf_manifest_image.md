@@ -21,26 +21,26 @@
 
       {caption(Қауіпсіздік тобын жасау мысалы)[align=left;position=above]}
        ```hcl
-      resource "vkcs_networking_secgroup" "secgroup" {
-        name = "security_group"
-        description = "terraform security group"
-        # Тип SDN
-        sdn  = data.vkcs_networking_subnet.subnet.sdn
-      }
-
-      resource "vkcs_networking_secgroup_rule" "rules" {
-        # Определение направления применения правил — для входящих (ingress) или исходящих (egress) соединений
-        direction = "ingress"
-        # Диапазон портов доступа
-        port_range_max = 22
-        port_range_min = 22
-        # Протокол доступа
-        protocol = "tcp"
-        # Индентификатор группы безопасности, для которой создано правило
-        security_group_id = vkcs_networking_secgroup.secgroup.id
-        description = "secgroup_rule"
-      }
-      ```
+       resource "vkcs_networking_secgroup" "secgroup" {
+         name = "security_group"
+         description = "terraform security group"
+         # Тип SDN
+         sdn  = data.vkcs_networking_subnet.subnet.sdn
+       }
+ 
+       resource "vkcs_networking_secgroup_rule" "rules" {
+         # Определение направления применения правил — для входящих (ingress) или исходящих (egress) соединений
+         direction = "ingress"
+         # Диапазон портов доступа
+         port_range_max = 22
+         port_range_min = 22
+         # Протокол доступа
+         protocol = "tcp"
+         # Индентификатор группы безопасности, для которой создано правило
+         security_group_id = vkcs_networking_secgroup.secgroup.id
+         description = "secgroup_rule"
+       }
+       ```
       {/caption}
 
    SDN туралы толығырақ — {linkto(#tf_manifest_image_sdn)[text=%text]} бөлімінде.
@@ -107,60 +107,60 @@
 
       {caption(Сервистің жүктеу образынан ВМ жасау мысалы)[align=left;position=above]}
        ```hcl
-      # Идентификатор развертывания сервиса
-      variable "instance_uuid" {
-        type = string
-      }
-
-      # Создание cloud-config конфигурации. Получение данных для инициализации агента на хосте
-      resource "ivkcs_user_data" "init" {
-        # Идентификатор развертывания сервиса
-        uuid      = var.instance_uuid
-        # Имена хостов, для которых необходимо сгенерировать cloud-config и где будет установлен агент
-        hosts     = ["compute-instance"]
-        # Целевая ОС
-        target_os = "almalinux9"
-
-        # Ключи для доступа по SSH
-        ssh_authorized_keys = [
-          ivkcs_ssh_keypair.keypair.public_key,
-        ]
-      }
-
-      resource "vkcs_compute_instance" "compute" {
-        name              = "compute-instance"
-        # Идентификатор типа ВМ
-        flavor_id         = var.ds-flavor
-        # Перечень имен групп безопасности для ВМ
-        security_groups   = [vkcs_networking_secgroup.secgroup.name]
-        # Зона доступности ВМ
-        availability_zone = "GZ1"
-        # Метаданные
-        metadata          = { "sid" : "xaas", "product" : "test service" }
-        # Root-диск
-        block_device {
-          # Идентификатор образа сервиса
-          uuid                  = vkcs_blockstorage_volume.boot.id
-          # Источник загрузки
-          source_type           = "volume"
-          # Тип диска. Укажите volume (постоянный)
-          destination_type      = "volume"
-          # Тип тома диска
-          boot_index            = 0
-          # Если указано значение true, диск будет удален при удалении ВМ
-          delete_on_termination = true
-        }
-        # Применение cloud-config конфигурации для настройки ВМ. Установка агента
-        # В [] укажите номер хоста. Если сервис развертывается на одной ВМ, значение должно быть 0
-        user_data           = ivkcs_user_data.init.user_data[0]
-        # Попытка остановить ВМ перед удалением
-        stop_before_destroy = true
-        # Тайм-аут создания ВМ
-        timeouts {
-          create = "10m"
-        }
-      }
-      ```
+       # Идентификатор развертывания сервиса
+       variable "instance_uuid" {
+         type = string
+       }
+ 
+       # Создание cloud-config конфигурации. Получение данных для инициализации агента на хосте
+       resource "ivkcs_user_data" "init" {
+         # Идентификатор развертывания сервиса
+         uuid      = var.instance_uuid
+         # Имена хостов, для которых необходимо сгенерировать cloud-config и где будет установлен агент
+         hosts     = ["compute-instance"]
+         # Целевая ОС
+         target_os = "almalinux9"
+ 
+         # Ключи для доступа по SSH
+         ssh_authorized_keys = [
+           ivkcs_ssh_keypair.keypair.public_key,
+         ]
+       }
+ 
+       resource "vkcs_compute_instance" "compute" {
+         name              = "compute-instance"
+         # Идентификатор типа ВМ
+         flavor_id         = var.ds-flavor
+         # Перечень имен групп безопасности для ВМ
+         security_groups   = [vkcs_networking_secgroup.secgroup.name]
+         # Зона доступности ВМ
+         availability_zone = "GZ1"
+         # Метаданные
+         metadata          = { "sid" : "xaas", "product" : "test service" }
+         # Root-диск
+         block_device {
+           # Идентификатор образа сервиса
+           uuid                  = vkcs_blockstorage_volume.boot.id
+           # Источник загрузки
+           source_type           = "volume"
+           # Тип диска. Укажите volume (постоянный)
+           destination_type      = "volume"
+           # Тип тома диска
+           boot_index            = 0
+           # Если указано значение true, диск будет удален при удалении ВМ
+           delete_on_termination = true
+         }
+         # Применение cloud-config конфигурации для настройки ВМ. Установка агента
+         # В [] укажите номер хоста. Если сервис развертывается на одной ВМ, значение должно быть 0
+         user_data           = ivkcs_user_data.init.user_data[0]
+         # Попытка остановить ВМ перед удалением
+         stop_before_destroy = true
+         # Тайм-аут создания ВМ
+         timeouts {
+           create = "10m"
+         }
+       }
+       ```
       {/caption}
 
       {note:info}

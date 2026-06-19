@@ -693,4 +693,4 @@
 Инстанс БД [тарифицируется](/ru/dbs/dbaas/tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
 1. Удалите инстанс БД.
-1. При необходимости [удалите Floating IP-адрес](/ru/networks/vnet/instructions/ip/floating-ip#delete), назначенный инстансу БД. Присутствующие в проекте Floating IP-адреса [тарифицируются](/ru/networks/vnet/tariffication).
+1. При необходимости [удалите Floating IP-адрес](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete), назначенный инстансу БД. Присутствующие в проекте Floating IP-адреса [тарифицируются](/ru/networks/vnet/tariffication).

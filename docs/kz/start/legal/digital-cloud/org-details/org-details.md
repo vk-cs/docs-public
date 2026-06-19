@@ -1,6 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 ## Шарттар жасау және шоттар ұсыну үшін деректемелер
+
+{include(/kz/_includes/_translated_by_ai.md)}
 
 [cols="1,2", options="header"]
 |===

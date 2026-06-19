@@ -4,5 +4,10 @@
   "metaDescription": "Cloud ML Platform — JupyterHub, MLflow және MLflow Deploy инстанстарын жасау және олармен жұмыс істеу сервисі",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

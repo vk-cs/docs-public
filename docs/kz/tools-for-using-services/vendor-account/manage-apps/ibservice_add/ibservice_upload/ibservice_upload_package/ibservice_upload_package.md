@@ -50,7 +50,7 @@ Image-based брокер
 Қызметті орналастыру процесінде ВМ-ға орнатылатын бағдарламалық қамтамасыз ету (толығырақ — {linkto(../../ib_image_create/ib_image_agent#ib_image_agent)[text=%text]} бөлімінде)
 
 |
-Сервистік пакет (VK Cloud product package)
+Сервистік пакет ({var(cloud)} product package)
 |
 YAML-файлдар мен Terraform манифестерінің құрылымдалған жиынтығы
 |===
@@ -70,9 +70,9 @@ YAML-файлдар мен Terraform манифестерінің құрылым
 
    {tabs}
 
-   {tab(Жеткізуші кабинеті)}
+   {tab(Кабинет поставщика)}
 
-   1. [Бұлтты платформаның VK Cloud ЖК-сіне өтіңіз](https://kz.cloud.vk.com/app/).
+   1. [Бұлтты платформаның {var(cloud)} ЖК-сіне өтіңіз](https://kz.cloud.vk.com/app/).
    1. **Қолданбалар дүкені** бөлімінде **Жеткізуші кабинетіне өту** түймесін басыңыз.
    1. **Қызметтерді басқару** қойындысында **Қызмет қосу** түймесін басыңыз.
    1. Жүйеге жүктеу үшін құрылғыңыздан zip-архивті таңдаңыз.
@@ -100,9 +100,7 @@ YAML-файлдар мен Terraform манифестерінің құрылым
       {tab(Linux (bash))}
 
       ```console
-      curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product \
-      -H 'x-service-token: <SERVICE_TOKEN>' \
-      -F "upload=@/home/VKservice.zip"
+      curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product       -H 'x-service-token: <SERVICE_TOKEN>'       -F "upload=@/home/VKservice.zip"
       ```
 
       {/tab}
@@ -152,7 +150,7 @@ YAML-файлдар мен Terraform манифестерінің құрылым
 
 {/note}
 
-1. [Бұлтты платформаның VK Cloud ЖК-сіне өтіңіз](https://kz.cloud.vk.com/app/).
+1. [Бұлтты платформаның {var(cloud)} ЖК-сіне өтіңіз](https://kz.cloud.vk.com/app/).
 1. Әрбір тарифтік жоспардың конфигурация шебері дұрыс көрсетілетініне көз жеткізіңіз.
 1. Қызметті қосыңыз. Қызмет инстансын орналастыру сәтті орындалғанына көз жеткізіңіз.
 
@@ -194,7 +192,7 @@ YAML-файлдар мен Terraform манифестерінің құрылым
 
 ## {heading(Қызмет инстансының логтарын қарау)[id=ibservice_upload_package_log]}
 
-1. [Бұлтты платформаның VK Cloud ЖК-сіне өтіңіз](https://kz.cloud.vk.com/app/).
+1. [Бұлтты платформаның {var(cloud)} ЖК-сіне өтіңіз](https://kz.cloud.vk.com/app/).
 1. **Қолданбалар дүкені** бөліміне өтіңіз.
 1. Консольді ашып, дүкенде авторизациялауға арналған JWT-токенді алыңыз:
 
@@ -203,8 +201,7 @@ YAML-файлдар мен Terraform манифестерінің құрылым
    {tab(Linux (bash))}
 
    ```console
-   curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid \
-   --cookie 'sid=<SID>'
+   curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid    --cookie 'sid=<SID>'
    ```
 
    {/tab}
@@ -230,8 +227,7 @@ YAML-файлдар мен Terraform манифестерінің құрылым
    {tab(Linux (bash))}
 
    ```console
-   curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
-   -H 'Authorization: Bearer <JWT_TOKEN>'
+   curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID>    -H 'Authorization: Bearer <JWT_TOKEN>'
    ```
 
    {/tab}

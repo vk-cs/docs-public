@@ -5,5 +5,14 @@
   "sectionTitle": "Работа со снимками",
   "icon": "",
   "weight": 4,
-  "uuid": "ed4993da-0dc4-4e2a-b82b-78c3dc8af34c"
+  "uuid": "ed4993da-0dc4-4e2a-b82b-78c3dc8af34c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

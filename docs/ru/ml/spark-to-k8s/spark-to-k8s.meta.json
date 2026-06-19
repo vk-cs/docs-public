@@ -5,5 +5,10 @@
   "sectionTitle": "Spark на платформе VK Cloud",
   "icon": "",
   "weight": 2,
-  "uuid": "2d96870f-547b-41f4-b9f6-9407cc5317c9"
+  "uuid": "2d96870f-547b-41f4-b9f6-9407cc5317c9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

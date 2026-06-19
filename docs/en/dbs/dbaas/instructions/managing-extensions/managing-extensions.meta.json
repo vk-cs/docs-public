@@ -1,9 +1,23 @@
 {
-    "title": "Managing extensions",
-      "shortDescription": "Installing and managing DB instance extensions",
-      "metaDescription": "Cloud Databases: how to manage DB instance extensions.",
-    "sectionTitle": "Managing extensions",
-    "icon": "",
-    "weight": 4,
-    "uuid": "fed2a654-c8d8-42bb-84cc-480cb7cba587"
+  "title": "Managing extensions",
+  "shortDescription": "Installing and managing DB instance extensions",
+  "metaDescription": "Cloud Databases: how to manage DB instance extensions.",
+  "sectionTitle": "Managing extensions",
+  "icon": "",
+  "weight": 4,
+  "uuid": "fed2a654-c8d8-42bb-84cc-480cb7cba587",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

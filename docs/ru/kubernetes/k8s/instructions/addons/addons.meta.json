@@ -5,5 +5,14 @@
   "sectionTitle": "Работа с аддонами",
   "icon": "",
   "weight": 6,
-  "uuid": "82a8ef45-8d98-4cfc-8d76-5f590d67b698"
+  "uuid": "82a8ef45-8d98-4cfc-8d76-5f590d67b698",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

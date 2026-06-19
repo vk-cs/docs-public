@@ -1,9 +1,14 @@
 {
   "title": "Вопросы и ответы",
   "shortDescription": "Ответы на часто задаваемые вопросы о сервисе VK Object Storage",
-  "metaDescription": "Ответы на часто задаваемые вопросы о сервисе VK Object Storage",
+  "metaDescription": "FAQ по VK Object Storage: ответы на частые вопросы о лимитах, правилах, настройках безопасности, а также рекомендации по частным случаям",
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 8,
-  "uuid": "956cf291-bf62-4692-91c1-fc5185e7b6af"
+  "uuid": "956cf291-bf62-4692-91c1-fc5185e7b6af",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

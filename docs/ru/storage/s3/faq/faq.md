@@ -1,31 +1,37 @@
-{cut(Какой лимит запросов в VK Object Storage?)}
+# {heading(Вопросы и ответы)[id=s3-faq]}
+
+{cut(Какой лимит запросов в {var(s3)}?)}
 Ограничение на количество запросов к бакету:
 
-* Обычные запросы — не более 1000 запросов в секунду.
-* Запросы на листинг — не более 250 запросов в секунду.
+- Обычные запросы — не более 1000 запросов в секунду.
+- Запросы на листинг — не более 250 запросов в секунду.
 
 Лимит запросов установлен отдельно для каждого бакета. Если количество запросов превысило лимит, сервис вернет HTTP-код ответа `503`.
 
-Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=лимитах сервиса {var(s3)}]}.
 {/cut}
 
-{cut(Как посмотреть общий размер бакета VK Object Storage?)}
+{cut(Как посмотреть общий размер бакета {var(s3)}?)}
 Общий размер бакета можно посмотреть с помощью AWS CLI:
 
-1. Установите и настройте [AWS CLI](../connect/s3-cli), если он еще не установлен.
-
+1. Установите и настройте {linkto(../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
 1. В консоли выполните команду:
 
    ```console
-   aws s3 ls s3://<ИМЯ_БАКЕТА> --summarize --human-readable --recursive --endpoint-url <URL_СЕРВИСА>
+   aws s3 ls s3://<ИМЯ_БАКЕТА> --summarize --human-readable --recursive --endpoint-url <ENDPOINT_URL>
    ```
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, общий размер которого нужно посмотреть.
-   - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое было указано при установке сервиса.
+     {/ifdef}
 
    Общий размер бакета будет указан в ответе команды в поле `Total Size`.
 {/cut}
@@ -35,21 +41,21 @@
 {/cut}
 
 {cut(Поддерживается ли версионирование объектов?)}
-Да, поддерживается. [Подробнее о деталях версионирования объектов в VK Cloud](../concepts/versioning).
+Да, поддерживается. {linkto(../concepts/versioning#s3-concepts-versioning)[text=Подробнее о версионировании объектов в бакетах {var(s3)}]}.
 {/cut}
 
 {cut(Можно ли ограничить доступ к бакету?)}
-Да, можно. Чтобы выдать доступ только к содержимому отдельной директории в бакете, используйте [префиксные ключи](/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api). 
+Да, можно. Чтобы выдать доступ только к содержимому отдельной директории в бакете, используйте {linkto(../../../tools-for-using-services/api/api-spec/s3-rest-api/pak-api#api-spec-s3-pak)[text=префиксные ключи]}. 
 
-Чтобы управлять операциями, доступными пользователю, используйте [ACL (Access Control List)](/ru/storage/s3/concepts/access/s3-acl).
+Чтобы управлять операциями, доступными пользователю, используйте {linkto(../concepts/access/s3-acl#s3-concepts-acl)[text=ACL (Access Control List)]}.
 
 Ограничить доступ к бакету по IP-адресу нельзя.
 {/cut}
 
 {cut(Можно ли сделать резервную копию объектов бакета?)}
-Да, можно. Чтобы сделать резервную копию объектов бакета, создайте еще один бакет и скопируйте в него все объекты исходного бакета, например, с помощью [AWS CLI](/ru/storage/s3/instructions/objects/manage-object#kopirovanie_vseh_obektov_baketa) или [файлового менеджера](/ru/storage/s3/connect/s3-file-managers).
+Да, можно. Чтобы сделать резервную копию объектов бакета, создайте еще один бакет и скопируйте в него все объекты исходного бакета, например, с помощью {linkto(../instructions/objects/manage-object#s3-instructions-manage-object-copy)[text=AWS CLI]} или {linkto(../connect/s3-file-managers#s3-connect-file-managers)[text=файлового менеджера]}.
 
-Резервное копирование данных выполняется с помощью функций VK Object Storage и не предоставляется как отдельный сервис.
+Резервное копирование данных выполняется с помощью функций {var(s3)} и не предоставляется как отдельный сервис.
 {/cut}
 
 {cut(Как установить SSL-сертификат на бакет?)}
@@ -58,7 +64,7 @@
 - Для установки сертификата [Let’s Encrypt](https://letsencrypt.org/ru) укажите в запросе имя или идентификатор бакета и домен, к которому он привязан. 
 - Для установки своего SSL-сертификата укажите в запросе имя или идентификатор бакета, домен, к которому он привязан, и добавьте к запросу архив с сертификатом и приватным ключом. Имя домена, к которому привязан бакет, должно быть в формате RFC 1123.
 
-  [Как просмотреть информацию о бакете](/ru/storage/s3/instructions/buckets/manage-bucket).
+  {linkto(../instructions/buckets/manage-bucket#s3-instructions-manage-bucket)[text=Как просмотреть информацию о бакете]}.
 
 {/cut}
 
@@ -74,10 +80,10 @@
 {cut(Какие файловые менеджеры можно использовать для управления объектным хранилищем?)}
 Поддерживаемые файловые менеджеры:
 
-- [CyberDuck](/ru/storage/s3/connect/s3-file-managers#cyberduck),
-- [WinSCP](/ru/storage/s3/connect/s3-file-managers#winscp),
-- [Диск-О:](/ru/storage/s3/connect/s3-file-managers#disk_o),
-- [s3fs](/ru/storage/s3/connect/s3-file-managers#s3fs).
+- {linkto(../connect/s3-file-managers#s3-connect-file-managers-cyberduck)[text=CyberDuck]},
+- {linkto(../connect/s3-file-managers#s3-connect-file-managers-winscp)[text=WinSCP]},
+- {linkto(../connect/s3-file-managers#s3-connect-file-managers-disk-o)[text=Диск-О:]},
+- {linkto(../connect/s3-file-managers#s3-connect-file-managers-s3fs)[text=s3fs]}.
 {/cut}
 
 {cut(От чего зависит стоимость объектного хранилища?)}
@@ -88,57 +94,57 @@
 
 Входящий трафик и пустые бакеты не тарифицируются. Оплата рассчитывается посекундно и снимается за каждый текущий расчетный период.
 
-Чтобы оптимизировать расходы, выберите наиболее подходящий [класс хранения](/ru/storage/s3/concepts/about#storage_class). Если к объектам бакета нужен частый доступ, используйте класс хранения `Hotbox`. Если же нужно хранить значительный объем данных с редким доступом к ним, используйте класс хранения `Icebox`. Актуальные цены размещены в [прайс-листе](https://cloud.vk.com/pricelist).
+Чтобы оптимизировать расходы, выберите наиболее подходящий {linkto(../concepts/about#s3-concepts-about-storage-class)[text=класс хранения]}. Если к объектам бакета нужен частый доступ, используйте класс хранения `Hotbox`. Если же нужно хранить значительный объем данных с редким доступом к ним, используйте класс хранения `Icebox`. Актуальные цены размещены в [прайс-листе](https://cloud.vk.com/pricelist).
 {/cut}
 
 {cut(Сколько бакетов можно создать в одном проекте?)}
 В одном проекте можно создать не более 100 бакетов.
 
-Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=лимитах сервиса {var(s3)}]}.
 {/cut}
 
 {cut(Сколько объектов может содержать бакет?)}
 На количество объектов в бакете ограничений нет.
 
-Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=лимитах сервиса {var(s3)}]}.
 
 {/cut}
 
-{cut(Сколько объектов из бакета можно запросить в одном запросе к VK Object Storage?)}
+{cut(Сколько объектов из бакета можно запросить в одном запросе к {var(s3)}?)}
 
 1000 объектов.
 
-Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=лимитах сервиса {var(s3)}]}.
 
 {/cut}
 
 {cut(Есть ли ограничения на количество потоков при составной загрузке объектов?)}
 
-При [составной загрузке объектов](/ru/storage/s3/concepts/features#object_uploading) таких ограничений нет, но не рекомендуется разделять объект на части максимального размера (32 ГБ). Разделяйте объекты на части по 20–200 МБ.
+При {linkto(../concepts/features#s3-concepts-features-object-uploading)[text=составной загрузке объектов]} таких ограничений нет, но не рекомендуется разделять объект на части максимального размера (32 ГБ). Разделяйте объекты на части по 20–200 МБ.
 
 {/cut}
 
-{cut(Сколько аккаунтов можно создать в VK Object Storage?)}
+{cut(Сколько аккаунтов можно создать в {var(s3)}?)}
 В одном проекте можно создать не более 25 аккаунтов.
 
-Подробнее о [лимитах сервиса VK Object Storage](../../../tools-for-using-services/account/concepts/quotasandlimits#object_storage_limits).
+Подробнее о {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=лимитах сервиса {var(s3)}]}.
 {/cut}
 
 {cut(Какие есть типы хранения?)}
 Поддерживается три класса хранения: `Hotbox`, `Icebox` и `BackupBucket`.
 
-Подробнее о [классах хранения бакета](/ru/storage/s3/concepts/about#storage_class).
+Подробнее о {linkto(../concepts/about#s3-concepts-about-storage-class)[text=классах хранения бакета]}.
 {/cut}
 
 {cut(Можно ли загружать объекты более 2 ТБ?)}
-Да, но только с помощью [составной загрузки](/ru/storage/s3/instructions/objects/upload-object#multipart_upload). Для объектов, размер которых больше 32 ГБ, другие способы загрузки в бакет недоступны.
+Да, но только с помощью {linkto(../instructions/objects/upload-object#s3-instructions-upload-object-multipart)[text=составной загрузки]}. Для объектов, размер которых больше 32 ГБ, другие способы загрузки в бакет недоступны.
 {/cut}
 
 {cut(Есть ли зависимость между количеством объектов в бакете и скоростью загрузки туда новых объектов?)}
 Такой зависимости нет. Скорость загрузки зависит только от пропускной способности провайдера.
 {/cut}
 
-{cut(Какая в VK Object Storage скорость загрузки объектов в бакет?)}
+{cut(Какая в {var(s3)} скорость загрузки объектов в бакет?)}
 
 Скорость загрузки объектов в бакет зависит от пропускной способности провайдера. В общем случае можно ориентироваться на следующие значения в рамках потока:
 
@@ -153,46 +159,46 @@
 
 {cut(Наследует ли объект права доступа от бакета?)}
 
-Нет, в сервисе VK Object Storage нет наследования прав доступа от бакета к объекту.
+Нет, в сервисе {var(s3)} нет наследования прав доступа от бакета к объекту.
 
-Подробнее о [назначении прав доступа к объекту](/ru/storage/s3/concepts/access/s3-acl).
+Подробнее о {linkto(../concepts/access/s3-acl#s3-concepts-acl)[text=назначении прав доступа к объекту]}.
 
 {/cut}
 
 {cut(Как изменить уровень доступа ко всем объектам в бакете?)}
-Чтобы [изменить](/ru/storage/s3/instructions/objects/manage-object#manage_access) уровень доступа ко всем объектам в бакете или в его директории:
+Чтобы {linkto(../instructions/objects/manage-object#s3-instructions-manage-object-access)[text=изменить]} уровень доступа ко всем объектам в бакете или в его директории:
 
-- В личном кабинете VK Cloud: выберите все объекты или директории с помощью флажков.
+- В личном кабинете {var(cloud)}: выберите все объекты или директории с помощью флажков.
 - С помощью AWS CLI: используйте параметр `--recursive`.
 
 {/cut}
 
 {cut(Как защитить данные в бакете от изменения при резервном копировании?)}
 
-Используйте механизм [блокировки удаления объектов](/ru/storage/s3/instructions/objects/object-lock). Сервисному аккаунту для резервного копирования [выдайте права](/ru/storage/s3/instructions/access-management/acl) только на запись данных.
+Используйте механизм {linkto(../instructions/objects/object-lock#s3-instructions-object-lock)[text=блокировки удаления объектов]}. Сервисному аккаунту для резервного копирования {linkto(../instructions/access-management/acl#s3-instructions-acl)[text=выдайте права]} только на запись данных.
 {/cut}
 
-{cut(Oт чего зависит скорость загрузки в объектное хранилище VK Object Storage?)}
+{cut(Oт чего зависит скорость загрузки в объектное хранилище {var(s3)}?)}
 
-Скорость зависит от пропускной способности вашего канала и способа загрузки. Чтобы ускорить загрузку больших файлов или множества небольших файлов, используйте [составную загрузку](/ru/storage/s3/instructions/objects/upload-object#multipart_upload).
+Скорость зависит от пропускной способности вашего канала и способа загрузки. Чтобы ускорить загрузку больших файлов или множества небольших файлов, используйте {linkto(../instructions/objects/upload-object#s3-instructions-upload-object-multipart)[text=составную загрузку]}.
 
 {/cut}
 
-{cut(Как скачать объекты VK Object Storage не заходя в личный кабинет?)}
+{cut(Как скачать объекты {var(s3)} не заходя в личный кабинет?)}
 
 - Используйте S3-клиенты. Пример: AWS CLI, Cyberduck, S3 Browser и другие.
-- [Сгенерируйте](/ru/storage/s3/instructions/access-management/signed-url) Pre-signed URL на объект. Это временная ссылка, которая позволяет получить доступ к объекту в VK Object Storage без необходимости аутентификации.
-- [Настройте](/ru/storage/s3/instructions/manage-static-site) статический хостинг. Это делает объекты в бакете доступными через HTTP(S), как если бы они были частью веб-сайта.
+- {linkto(../instructions/access-management/signed-url#s3-instructions-signed-url)[text=Сгенерируйте]} Pre-signed URL на объект. Это временная ссылка, которая позволяет получить доступ к объекту в {var(s3)} без необходимости аутентификации.
+- {linkto(../instructions/manage-static-site#s3-instructions-manage-static-site)[text=Настройте]} статический хостинг. Это делает объекты в бакете доступными через HTTP(S), как если бы они были частью веб-сайта.
 
 {/cut}
 
 {cut(Какой максимальный размер метаданных объекта?)}
-Максимальный размер [метаданных объекта](/ru/storage/s3/concepts/about#metadata) — 2048 байт. Подробнее о метаданных и работе с ними в [официальной документации Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html).
+Максимальный размер {linkto(../concepts/about#s3-concepts-about-object-key-rules)[text=метаданных объекта]} — 2048 байт. Подробнее о метаданных и работе с ними в [официальной документации Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html).
 {/cut}
 
 {cut(Я установил правила жизненного цикла объектов в бакете. Как часто будет проходить очистка?)}
 
-Правила [жизненного цикла](/ru/storage/s3/concepts/lifecycle) применяются ежедневно. Для объекта правило жизненного цикла устанавливается:
+Правила {linkto(../concepts/lifecycle#s3-concepts-lifecycle)[text=жизненного цикла]} применяются ежедневно. Для объекта правило жизненного цикла устанавливается:
 
 - при его добавлении в бакет с уже указанным жизненным циклом;
 - при добавлении правил жизненного цикла для бакета, в котором объект расположен.
@@ -203,8 +209,8 @@
 
 {/cut}
 
-{cut(Какое время жизни у ключей доступа аккаунта VK Object Storage?)}
+{cut(Какое время жизни у ключей доступа аккаунта {var(s3)}?)}
 
-Время жизни ключа доступа не ограничено. Ключ действует до тех пор, пока вы его не [деактивируете](/ru/storage/s3/instructions/access-management/access-keys#deaktivaciya_klyucha_dostupa) или не [удалите](/ru/storage/s3/instructions/access-management/access-keys#udalenie_klyucha_dostupa) вручную. В целях безопасности рекомендуется периодически проводить ротацию ключей.
+Время жизни ключа доступа не ограничено. Ключ действует до тех пор, пока вы его не {linkto(../instructions/access-management/access-keys#s3-instructions-access-keys-deactivate-access-key)[text=деактивируете]} или не {linkto(../instructions/access-management/access-keys#s3-instructions-access-keys-delete-access-key)[text=удалите]} вручную. В целях безопасности рекомендуется периодически проводить ротацию ключей.
 
 {/cut}

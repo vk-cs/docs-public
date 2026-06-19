@@ -1,8 +1,22 @@
 {
-    "title": "Release notes",
-      "shortDescription": "Release notes for the service",
-      "metaDescription": "Release notes for Vision.",
-    "sectionTitle": "Release notes",
-    "weight": 6,
-    "uuid": "06d9d61f-758a-45da-9f75-c947b3dec47f"
+  "title": "Release notes",
+  "shortDescription": "Release notes for the service",
+  "metaDescription": "Release notes for Vision.",
+  "sectionTitle": "Release notes",
+  "weight": 6,
+  "uuid": "06d9d61f-758a-45da-9f75-c947b3dec47f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

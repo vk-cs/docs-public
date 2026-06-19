@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: мақсатты жобада деректерді визуализациялау тапсырмалары үшін Redash 10.1.0 сервисін өрістету қадамдары",
   "sectionTitle": "Redash 10.1 өрістету",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

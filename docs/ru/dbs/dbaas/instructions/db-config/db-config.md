@@ -1,12 +1,16 @@
-Сервис Cloud Databases дает возможность задавать параметры инстансов БД, позволяя влиять на их работу. Для каждого [типа СУБД](../../concepts/types) есть свой набор параметров.
+# {heading(Изменение параметров инстанса БД)[id=dbaas-db-config]}
+
+Сервис Cloud Databases дает возможность задавать параметры инстансов БД, позволяя влиять на их работу. Для каждого {linkto(../../concepts/types#dbaas-types)[text=типа СУБД]} есть свой набор параметров.
 
 Чтобы добавить, изменить или удалить параметры:
 
+{ifdef(public)}
 {tabs}
 
 {tab(Личный кабинет)}
+{/ifdef}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Убедитесь, что нужный инстанс баз данных запущен.
@@ -31,6 +35,8 @@
      1. Нажмите на значок ![Корзина](./assets/trash-icon.svg "inline") в строке параметра.
      1. Нажмите кнопку **Сохранить**.
 
+{ifdef(public)}
 {/tab}
 
 {/tabs}
+{/ifdef}

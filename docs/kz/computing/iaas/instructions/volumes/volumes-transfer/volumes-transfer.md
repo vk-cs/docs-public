@@ -1,13 +1,14 @@
+# {heading(Дискіні жобалар арасында жылжыту)[id=iaas-volumes-transfer]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {tabs}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Дискіні жылжыту қажет жобада авторизациядан өтіңіз.
-1. Жылжыту қажет дискіні [ВМ-ден ажыратыңыз](../../../instructions/volumes/volumes-connect#dismount_disk).
+1. Жылжыту қажет дискіні [ВМ-ден ажыратыңыз](../../../instructions/volumes/volumes-connect#iaas-volumes-connect-dismount-disk).
 1. Дискілер тізімін қараңыз:
 
    ```console
@@ -32,29 +33,29 @@
 1. Дискіні жылжыту қажет жобаға авторизациядан өтіңіз.
 1. `auth_key` авторизация кілтін және `id` идентификаторын көрсетіп, дискіні жылжытуға сұрауды қабылдаңыз:
 
-      ```console
-      openstack volume transfer request accept --auth-key <КЛЮЧ_АВТОРИЗАЦИИ> <ID_ЗАПРОСА>
-      ```
+   ```console
+   openstack volume transfer request accept --auth-key <КЛЮЧ_АВТОРИЗАЦИИ> <ID_ЗАПРОСА>
+   ```
 
 1. Дискінің жобада пайда болғанына көз жеткізіңіз:
 
-      ```console
-      openstack volume show <ID_ДИСКА>
-      ```
+   ```console
+   openstack volume show <ID_ДИСКА>
+   ```
 
 **Дискіні көшіру сұрауларымен жұмыс істеуге арналған қосымша командалар**
 
 - Көшіру сұрауларының тізімін қарау:
 
-   ```console
-   openstack volume transfer request list
-   ```
+  ```console
+  openstack volume transfer request list
+  ```
 
 - Көшіру сұрауын жою:
 
-   ```console
-   openstack volume transfer request delete <ID_ЗАПРОСА>
-   ```
+  ```console
+  openstack volume transfer request delete <ID_ЗАПРОСА>
+  ```
 
 {/tab}
 

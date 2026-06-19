@@ -1,12 +1,21 @@
 {
-    "title": "Подключение к БД",
-      "shortDescription": "Как подключиться к БД с помощью SDK",
-      "metaDescription": "Подключение к базам данных VK Cloud с помощью SDK.",
-    "sectionTitle": "Подключение к БД",
-    "icon": "",
-    "weight": 3,
-    "uuid": "8b46516f-0525-45e9-a7e5-22cbd740be41",
-    "additionalUuids": [
-        "18b34048-85c5-4386-915c-893adc5977ad"
+  "title": "Подключение к БД",
+  "shortDescription": "Как подключиться к БД с помощью SDK",
+  "metaDescription": "Подключение к базам данных VK Cloud с помощью SDK.",
+  "sectionTitle": "Подключение к БД",
+  "icon": "",
+  "weight": 3,
+  "uuid": "8b46516f-0525-45e9-a7e5-22cbd740be41",
+  "additionalUuids": [
+    "18b34048-85c5-4386-915c-893adc5977ad"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
     ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Перенос рабочей нагрузки до миграции ресурсов",
   "icon": "",
   "weight": 1,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

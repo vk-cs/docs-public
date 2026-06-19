@@ -1,0 +1,14 @@
+{
+  "title": "Ошибка Spark Connect: 404 unimplemented",
+  "shortDescription": "",
+  "metaDescription": "Узнайте как в сервисе Cloud Spark VK Data Platform исправить ошибку при подключении к Spark Connect по SSH-тунелю, настроенному до localhost: 404 unimplemented",
+  "sectionTitle": "Ошибка Spark Connect: 404 unimplemented",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

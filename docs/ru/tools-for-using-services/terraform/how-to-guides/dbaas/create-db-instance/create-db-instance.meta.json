@@ -1,12 +1,17 @@
 {
-    "title": "Создание инстанса БД",
-      "shortDescription": "Как развернуть инстанс БД и пользователей для нее",
-      "metaDescription": "Cloud Databases: как создать инстанс БД с помощью Terraform в VK Cloud",
-    "sectionTitle": "Создание инстанса БД",
-    "icon": "",
-    "weight": 1,
-    "uuid": "05965f87-b66c-4650-b368-a0355f7a353d",
-    "additionalUuids": [
-        "c6332d21-771e-4916-a8b5-2496ac480960"
+  "title": "Создание инстанса БД",
+  "shortDescription": "Как развернуть инстанс БД и пользователей для нее",
+  "metaDescription": "Cloud Databases: как создать инстанс БД с помощью Terraform в VK Cloud",
+  "sectionTitle": "Создание инстанса БД",
+  "icon": "",
+  "weight": 1,
+  "uuid": "05965f87-b66c-4650-b368-a0355f7a353d",
+  "additionalUuids": [
+    "c6332d21-771e-4916-a8b5-2496ac480960"
+  ],
+  "build": {
+    "for": [
+      "public"
     ]
+  }
 }

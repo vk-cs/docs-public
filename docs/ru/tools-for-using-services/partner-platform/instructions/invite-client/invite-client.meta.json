@@ -1,9 +1,14 @@
 {
   "title": "Приглашение клиента",
-  "shortDescription": "Как пригласить клиента в VK Cloud",
+  "shortDescription": "Как пригласить клиента в {var(cloud)}",
   "metaDescription": "Как пригласить клиента в VK Cloud: описание процесса приглашения партнером клиента в VK Cloud с помощью личного кабинета",
   "sectionTitle": "Приглашение клиента",
   "icon": "",
   "weight": 1,
-  "uuid": "b000b9ed-e2d6-4f8a-9172-9a3562d63ce3"
+  "uuid": "b000b9ed-e2d6-4f8a-9172-9a3562d63ce3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

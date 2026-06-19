@@ -4,5 +4,14 @@
   "metaDescription": "NVIDIA GPU негізіндегі бұлттық есептеулер петабайт деректерді өңдеуді он есеге дейін жеделдетуге мүмкіндік береді. Cloud GPU сервисі терең оқыту, графикалық визуализация және жоғары өнімді есептеулер міндеттеріне сай келеді.",
   "sectionTitle": "Cloud GPU",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

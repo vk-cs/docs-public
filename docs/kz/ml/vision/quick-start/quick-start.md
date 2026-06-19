@@ -1,3 +1,5 @@
+# {heading(Жылдам бастау)[id=vision-quick-start]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Объектілерді өңдеу платформасын пайдалану бойынша сипаттама және негізгі ақпарат.

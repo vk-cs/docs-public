@@ -1,4 +1,6 @@
-В статье приведен пример создания кластера Spark на платформе VK Data Platform при помощи Terraform.
+# {heading(Создание кластера Spark)[id=terraform-spark]}
+
+В статье приведен пример создания кластера Spark на платформе {var(data-p)} при помощи Terraform.
 
 При создании кластера используются:
 
@@ -13,17 +15,16 @@
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## {heading(Подготовительные шаги)[id=preparation]}
+## {heading(Подготовительные шаги)[id=terraform-spark-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания кластера. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   Чтобы увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте окружение]}, если это еще не сделано.
+1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.7.0 или выше. Если версия провайдера ниже, {linkto(../../../quick-start#terraform-quick-start-update)[text=обновите провайдер]}.
 
-1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.7.0 или выше. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
-
-## {heading(1. Создайте файл с описанием кластера)[id=cluster_config]}
+## {heading(1. Создайте файл с описанием кластера)[id=terraform-spark-cluster-file]}
 
 Создайте файл конфигурации Terraform `main.tf` с содержимым:
 
@@ -131,46 +132,43 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
   - `network_id = vkcs_networking_network.default.id`: кластер будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: кластер будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-- `product_name` — имя сервиса Spark на платформе VK Data Platform.
+- `product_name` — имя сервиса Spark на платформе {var(data-p)}.
   
   {cut(Примеры)}
 
   - `product_name = "spark"`: имя сервиса будет указано непосредственно в конфигурации кластера.
-  - `product_name = data.vkcs_dataplatform_product.spark.product_name`: имя сервиса будет указано в другом конфигурационном файле, оно берется из источника данных `vkcs_dataplatform_product`. Источник будет [сформирован](#product) далее.
+  - `product_name = data.vkcs_dataplatform_product.spark.product_name`: имя сервиса будет указано в другом конфигурационном файле, оно берется из источника данных `vkcs_dataplatform_product`. Источник будет {linkto(#terraform-spark-product)[text=сформирован]} далее.
 
   {/cut}
 
-- `product_version` — версия сервиса Spark на платформе VK Data Platform.
+- `product_version` — версия сервиса Spark на платформе {var(data-p)}.
 
    {cut(Примеры)}
 
    - `product_version = "3.5.1"`: версия сервиса будет указана непосредственно в конфигурации кластера.
-   - `product_version = data.vkcs_dataplatform_product.spark.product_version`: версия сервиса будет указана в другом конфигурационном файле, она берется из источника данных `vkcs_dataplatform_product`. Источник будет [сформирован](#product) далее.
+   - `product_version = data.vkcs_dataplatform_product.spark.product_version`: версия сервиса будет указана в другом конфигурационном файле, она берется из источника данных `vkcs_dataplatform_product`. Источник будет {linkto(#terraform-spark-product)[text=сформирован]} далее.
 
    {/cut}
 
-- `availability_zone` — [зона доступности](/ru/start/concepts/architecture#az), в которой создается кластер.
-
+- `availability_zone` — [зона доступности](../../../../../start/concepts/architecture#architecture-az), в которой создается кластер.
 - `configs` — параметры конфигурацию кластера:
   
   - `settings` — общие параметры. Параметр `sparkproxy.spark_version` определяет версию Spark для выполнения задач.
-  
   - `maintenance` — время начала технического обслуживания в формате Cron.
-
-  - `warehouses` — подключения к [источникам данных](https://cloud.vk.com/docs/ru/data-platform/spark/concepts/parameters#parameters_data_sources).
+  - `warehouses` — подключения к {linkto(../../../../../data-platform/spark/concepts/parameters#parameters_data_sources)[text=источникам данных]}.
          
 - `pod_groups` — группы вычислительных ресурсов кластера:
 
   - `sparkconnect` — ресурсы для интерактивной обработки данных.
   - `sparkhistory` — ресурсы для хранения истории задач Spark.
 
-## {heading(2. (Опционально) Определите сервис Spark на платформе VK Data Platform через источник данных)[id=product]}
+## {heading(2. (Опционально) Определите сервис Spark на платформе {var(data-p)} через источник данных)[id=terraform-spark-product]}
 
-Создайте файл конфигурации Terraform `product.tf` c описанием сервиса Spark на платформе VK Data Platform:
+Создайте файл конфигурации Terraform `product.tf` c описанием сервиса Spark на платформе {var(data-p)}:
 
 ```hcl
 data "vkcs_dataplatform_product" "spark" {
@@ -184,7 +182,7 @@ data "vkcs_dataplatform_product" "spark" {
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/dataplatform_product.md).
 
-## {heading(3. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера)[id=network]}
+## {heading(3. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера)[id=terraform-spark-net-file]}
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для кластера:
 
@@ -221,7 +219,7 @@ resource "vkcs_networking_subnet" "db" {
 
 {/tabs}
 
-## {heading(4. (Опционально) Создайте файл с описанием базы данных для подключения к Spark)[id=db]}
+## {heading(4. (Опционально) Создайте файл с описанием базы данных для подключения к Spark)[id=terraform-spark-db-file]}
 
 Создайте файл конфигурации Terraform `db.tf` для описания базы данных, к которой подключается Spark:
 
@@ -254,7 +252,7 @@ resource "vkcs_db_user" "postgres_user" {
 }
 ```
 
-## {heading(5. Создайте необходимые ресурсы с помощью Terraform)[id=terraform_apply]}
+## {heading(5. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-spark-resource]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -281,14 +279,14 @@ resource "vkcs_db_user" "postgres_user" {
 
 1. Дождитесь завершения операции.
 
-## {heading(6. Проверьте применение конфигурации)[id=check_deployment]}
+## {heading(6. Проверьте применение конфигурации)[id=terraform-spark-check]}
 
 Убедитесь, что кластер Spark был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**. Убедитесь, что кластер Spark создан и активен.
 
-## {heading(Удалите неиспользуемые ресурсы)[id=cleanup]}
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-spark-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

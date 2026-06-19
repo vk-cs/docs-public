@@ -1,8 +1,10 @@
+# {heading(Gatekeeper)[id=k8s-gatekeeper]}
+
 [Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/) — это [контроллер](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/), который обеспечивает создание ограничений (constraints) на языке Rego и контроль за их выполнением. Набор ограничений формирует политику, основанную на CRD (CRD-based policy). Gatekeeper проверяет все CRD-операции для ресурсов Kubernetes (создание, изменение, удаление) на соответствие заданным ограничениям и принимает решение о запрете или разрешении определенного действия.
 
 За применение ограничений (в виде политик) отвечает [Open Policy Agent](https://www.openpolicyagent.org/) (OPA).
 
-## Принцип работы Gatekeeper
+## {heading(Принцип работы Gatekeeper)[id=k8s-gatekeeper-about]}
 
 Соблюдение политик контролируется с помощью ограничений (constraints). Эти ограничения создаются на основе шаблонов ограничений (constraint templates) и определяют:
 
@@ -11,9 +13,9 @@
 
 Шаблон ограничений, в свою очередь, проверяет соблюдение описанных в нем правил при заданных в ограничении области действия и параметрах. Эти правила описываются прямо в YAML-файле шаблона ограничений с использованием [языка Rego](https://www.openpolicyagent.org/docs/latest/policy-language/). Также проводится проверка корректности параметров, переданных из ограничения.
 
-## Устройство ресурсов для Gatekeeper
+## {heading(Устройство ресурсов для Gatekeeper)[id=k8s-gatekeeper-resources]}
 
-### Структура ограничения
+### {heading(Структура ограничения)[id=k8s-gatekeeper-constraints]}
 
 Пример ограничения:
 
@@ -68,7 +70,7 @@ spec:
 
 Подробнее об ограничениях в [документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/howto#constraints).
 
-### Структура шаблона ограничения
+### {heading(Структура шаблона ограничения)[id=k8s-gatekeeper-template]}
 
 Пример шаблона ограничения:
 
@@ -95,7 +97,7 @@ spec:
 
 Подробнее о шаблонах в [документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/howto#constraint-templates).
 
-## Как использовать Gatekeeper
+## {heading(Как использовать Gatekeeper)[id=k8s-gatekeeper-how-to-use]}
 
 Чтобы использовать Gatekeeper:
 
@@ -103,4 +105,4 @@ spec:
 1. Создайте ресурс шаблона ограничения на основе манифеста.
 1. Создайте манифест ограничения на основе созданного шаблона ограничения. Для ограничения задайте область действия и параметры.
 
-Примеры использования ограничений Gatekeeper приведены в [сценариях использования](../../how-to-guides/gatekeeper).
+Примеры использования ограничений Gatekeeper приведены в {linkto(../../how-to-guides/gatekeeper#k8s-gatekeeper)[text=сценариях использования]}.

@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание Joomla",
   "icon": "",
   "weight": 17,
-  "uuid": "999ad2ff-7acb-49c5-8232-fa1f2cd6cf39"
+  "uuid": "999ad2ff-7acb-49c5-8232-fa1f2cd6cf39",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

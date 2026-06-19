@@ -4,5 +4,10 @@
   "metaDescription": "MLflow Deploy инстансының веб-интерфейсіне қалай қосылуға болады",
   "sectionTitle": "MLflow Deploy-ке қосылу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

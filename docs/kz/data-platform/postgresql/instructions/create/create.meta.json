@@ -1,0 +1,14 @@
+{
+  "title": "Қызмет экземплярын жасау",
+  "shortDescription": "Cloud PostgreSQL экземплярын қажетті конфигурацияда қалай жасауға болады",
+  "metaDescription": "VK Data Platform жүйесінде Cloud PostgreSQL қызметі экземплярын қажетті конфигурацияда қалай жасауға болады",
+  "sectionTitle": "Қызмет экземплярын жасау",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

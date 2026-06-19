@@ -1,17 +1,19 @@
-Cloud Containers позволяет создавать [кластеры с GPU (графическими процессорами)](/ru/kubernetes/k8s/concepts/flavors#gpu) для выполнения машинного обучения или обработки больших данных.
+# {heading(Использование GPU Operator)[id=k8s-gpu-operator]}
+
+Cloud Containers позволяет создавать {linkto(/ru/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu)[text=кластеры с GPU (графическими процессорами)]} для выполнения машинного обучения или обработки больших данных.
 
 GPU может использоваться в кластере следующими способами:
 
 - Один под использует один или несколько GPU. В этом случае каждый задействованный GPU одновременно выполняет один процесс.
-- Ресурсы GPU распределены несколькими подами по стратегии [MPS](/ru/kubernetes/k8s/concepts/flavors#gpu-sharing). Каждый процесс получает выделенный набор ресурсов GPU, и они взаимодействуют друг с другом через межпроцессное взаимодействие (IPC).
-- Ресурсы GPU распределены несколькими подами по стратегии [MIG](/ru/kubernetes/k8s/concepts/flavors#gpu-sharing). При этом каждая часть имеет собственные ресурсы (память, вычислительные блоки) и может работать изолированно от других.
+- Ресурсы GPU распределены несколькими подами по стратегии {linkto(/ru/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu-sharing)[text=MPS]}. Каждый процесс получает выделенный набор ресурсов GPU, и они взаимодействуют друг с другом через межпроцессное взаимодействие (IPC).
+- Ресурсы GPU распределены несколькими подами по стратегии {linkto(/ru/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu-sharing)[text=MIG]}. При этом каждая часть имеет собственные ресурсы (память, вычислительные блоки) и может работать изолированно от других.
 
 В статье показано, как создать кластер с узлом GPU и проверить его работу, как разделить использование GPU между отдельными подами по технологиям MPS или MIG и как переключиться с одного варианта разделения на другой.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-gpu-operator-prepare]}
 
-1. [Подключите](/ru/computing/gpu/connect) сервис Cloud GPU, если он еще не подключен.
-1. [Создайте кластер](/ru/kubernetes/k8s/instructions/create-cluster) с GPU, если такой кластер еще не создан. Укажите следующие параметры:
+1. {linkto(/ru/computing/gpu/connect#gpu-connect)[text=Подключите]} сервис Cloud GPU, если он еще не подключен.
+1. {linkto(/ru/kubernetes/k8s/instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер с GPU, если это еще не сделано. Укажите следующие параметры:
 
    - Выберите сеть с доступом в интернет.
    - Оставьте опцию **Назначить внешний IP** включенной.
@@ -20,20 +22,18 @@ GPU может использоваться в кластере следующи
    - Остальные параметры укажите на свой выбор или оставьте по умолчанию.
 
    {note:err}
-
    В параметрах **Количество узлов Node** и **Максимальное количество узлов** не указывайте значение больше, чем количество подключенных у вас GPU. Это может привести к неработоспособности кластера.
-
    {/note}
 
    В качестве примера далее будет создан кластер `my-kubernetes-cluster` с узлом `my-kubernetes-cluster-gpu-group-0` на шаблоне с GPU. При использовании других имен сделайте соответствующие замены в командах.
 
-1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру через kubectl.
+1. {linkto(/ru/kubernetes/k8s/connect/kubectl#k8s-kubectl)[text=Подключитесь]} к кластеру через kubectl.
 
-## 1. Установите аддон GPU-operator
+## {heading(1. Установите аддон GPU-operator)[id=k8s-gpu-operator-install]}
 
-Воспользуйтесь [инструкцией по установке](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-gpu-operator).
+Воспользуйтесь {linkto(/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-gpu-operator#k8s-install-advanced-gpu-operator)[text=инструкцией по установке]}.
 
-## 2. Проверьте работу кластера 
+## {heading(2. Проверьте работу кластера)[id=k8s-gpu-operator-check]}
 
 Для проверки работы GPU-узла будет запущен образец CUDA, который суммирует два вектора.
 
@@ -56,9 +56,7 @@ GPU может использоваться в кластере следующи
    Здесь параметр `nvidia.com/gpu: 1` указывает на количество ресурсов GPU, запрашиваемых у соответствующего вендора (в этом случае — `nvidia.com`). Подробнее о ресурсах и лимитах в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/).
 
    {note:warn}
-
    Обязательно указывайте параметр `nvidia.com/gpu: 1` для каждого пода.
-
    {/note}
 
    
@@ -105,14 +103,12 @@ GPU может использоваться в кластере следующи
    pod "cuda-vectoradd" deleted
    ```
 
-## 3. Разделите GPU по технологии MPS
+## {heading(3. Разделите GPU по технологии MPS)[id=k8s-gpu-operator-mps]}
 
-1. [Добавьте](/ru/kubernetes/k8s/instructions/addons/manage-addons#edit) конфигурацию [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin/tree/v0.17.0?tab=readme-ov-file#with-cuda-mps) в код аддона GPU Operator:
+1. {linkto(/ru/kubernetes/k8s/instructions/addons/manage-addons#k8s-manage-addons-edit-code)[text=Добавьте]} конфигурацию [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin/tree/v0.17.0?tab=readme-ov-file#with-cuda-mps) в код аддона GPU Operator:
 
    {note:warn}
-
    Соблюдайте отступы при редактировании кода, иначе аддон не будет отредактирован или будет работать неправильно.
-
    {/note}
 
    ```yaml
@@ -179,9 +175,7 @@ GPU может использоваться в кластере следующи
    ```
    
    {note:info}
-
-   Вы можете [добавить метку](/ru/kubernetes/k8s/instructions/manage-node-group#labels_taints) для всех узлов в группе через личный кабинет.
-
+   Вы можете {linkto(/ru/kubernetes/k8s/instructions/manage-node-group#k8s-manage-node-group-labels-taints)[text=добавить метку]} для всех узлов в группе через личный кабинет.
    {/note}
    
 1. Подождите несколько минут, пока применятся настройки, после чего проверьте их:
@@ -204,8 +198,8 @@ GPU может использоваться в кластере следующи
    ```
 
    Здесь параметр `nvidia.com/gpu: 4` указывает, что GPU разделен на 4 части.
-  
-## 4. Разделите GPU по технологии MIG
+
+## {heading(4. Разделите GPU по технологии MIG)[id=k8s-gpu-operator-mig]}
 
 1. Добавьте метку (label) для узла с GPU, которая отменит разделение GPU на части по технологии MPS:
 
@@ -283,9 +277,6 @@ GPU может использоваться в кластере следующи
    kubectl label nodes my-kubernetes-cluster-gpu-group-0 nvidia.com/mig.config=all-disabled --overwrite
    ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-gpu-operator-delete]}
 
-Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-- [остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](/ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster.md)}

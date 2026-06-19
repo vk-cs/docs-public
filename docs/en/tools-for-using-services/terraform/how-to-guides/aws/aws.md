@@ -218,7 +218,7 @@ Here:
 
 - `data "aws_canonical_user_id" "current" {}` — the data source gets the canonical identifier (Canonical User ID) of the current user.
 - `id = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — the canonical identifier of the user (Canonical User ID) that is granted access rights to the bucket. [How to find out the canonical identifier of the user](/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#user-id "change-lang").
-- `email_address = "mcs1234567890"` — the PID (project identifier) ​​that is granted access rights to the bucket. [How to find out the PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
+- `email_address = "mcs1234567890"` — the PID (project identifier) ​​that is granted access rights to the bucket. [How to find out the PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
 - `permission` — [type of access rights](/ru/storage/s3/concepts/s3-acl#permissons "change-lang"). Available values: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Set up CORS rules for the bucket

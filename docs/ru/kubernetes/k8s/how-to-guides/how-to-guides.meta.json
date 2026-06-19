@@ -8,5 +8,14 @@
     "fc237f8f-c2f3-481e-b540-81355c0b2e91"
   ],
   "weight": 5,
-  "uuid": "853366b6-a93b-4b26-a4fa-773c16f8ac4d"
+  "uuid": "853366b6-a93b-4b26-a4fa-773c16f8ac4d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -1,12 +1,22 @@
 {
-    "title": "Создание резервной копии вручную",
-      "shortDescription": "Как вручную создать резервную копию ВМ, БД или аналитической БД",
-      "metaDescription": "Как вручную создать резервную копию ВМ, БД или аналитической БД",
-    "sectionTitle": "Создание резервной копии вручную",
-    "icon": "",
-    "weight": 2,
-    "uuid": "bbc248e5-d82c-4b86-b7de-9ec8a43c76d9",
-    "additionalUuids": [
-        "93b68cce-b5d1-431b-8b26-030b5effd7ac"
+  "title": "Создание резервной копии вручную",
+  "shortDescription": "Как вручную создать резервную копию ВМ, БД или аналитической БД",
+  "metaDescription": "Как вручную создать резервную копию ВМ, БД или аналитической БД",
+  "sectionTitle": "Создание резервной копии вручную",
+  "icon": "",
+  "weight": 2,
+  "uuid": "bbc248e5-d82c-4b86-b7de-9ec8a43c76d9",
+  "additionalUuids": [
+    "93b68cce-b5d1-431b-8b26-030b5effd7ac"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
+  }
 }

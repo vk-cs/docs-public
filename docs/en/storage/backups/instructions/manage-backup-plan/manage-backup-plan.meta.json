@@ -1,9 +1,14 @@
 {
-    "title": "Managing backup plans",
-      "shortDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
-      "metaDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
-    "sectionTitle": "Managing backup plans",
-    "icon": "",
-    "weight": 1,
-    "uuid": "cabba409-63b3-48f9-9c68-bd3e9700fc46"
+  "title": "Managing backup plans",
+  "shortDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
+  "metaDescription": "Instructions for working with a backup plan for a VM, DB or analytical DB",
+  "sectionTitle": "Managing backup plans",
+  "icon": "",
+  "weight": 1,
+  "uuid": "cabba409-63b3-48f9-9c68-bd3e9700fc46",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

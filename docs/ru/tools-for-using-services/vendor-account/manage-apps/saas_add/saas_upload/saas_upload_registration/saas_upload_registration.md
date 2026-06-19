@@ -23,25 +23,25 @@
 |
 Имя брокера
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |url
 |
 URL, на который будут отправляться запросы от магазина
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |description
 |
 Описание брокера
 |string
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |osb_version
 |
 Версия протокола VK OSB
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |username
 |
@@ -49,7 +49,7 @@ URL, на который будут отправляться запросы от
 
 Должно совпадать со значением переменной окружения в файле `.env`
 |string
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |password
 |
@@ -57,7 +57,7 @@ URL, на который будут отправляться запросы от
 
 Должно совпадать со значением переменной окружения в файле `.env`
 |string
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 

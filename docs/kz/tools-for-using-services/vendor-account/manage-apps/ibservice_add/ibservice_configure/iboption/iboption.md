@@ -1,7 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-
 ## {heading(Құрылымы)[id=iboption_structure]}
 
+{include(/kz/_includes/_translated_by_ai.md)}
 
 {note:warn}
 
@@ -106,7 +105,7 @@
 |unit.size
 |Тарифтік опция мәнін өзгертуге болатын қадам өлшемін анықтайды.
 
-Осы параметрде көрсетілген мән `billig.cost` параметрінде берілген құнға сәйкес тарифтелмейді
+Осы параметрде көрсетілген мән `billig.cost` параметрінде берілген құнға сәйкес тарификацияланады
 |integer, > 0
 | ![](/kz/assets/check.svg "inline")
 

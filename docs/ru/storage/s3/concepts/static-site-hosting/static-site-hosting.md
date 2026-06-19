@@ -1,4 +1,6 @@
-*Хостинг статических сайтов* (static site hosting) — дополнительная опция для {linkto(../about#bucket)[text=бакета]} VK Object Storage, которая расширяет возможности доступа к статическому контенту. Без этой опции для получения содержания {linkto(../about#object)[text=объекта]} используется URL, соответствующий его {linkto(../about#object_key)[text=ключу]}. Хостинг статических сайтов позволяет комбинировать статический контент с правилами перенаправления, а также задавать индексную страницу (например, `index.html`) и страницу ошибки, возвращаемую при ошибках запроса (например, `404`).
+# {heading(Хостинг статических сайтов)[id=s3-concepts-static-site-hosting]}
+
+*Хостинг статических сайтов* (static site hosting) — дополнительная опция для {linkto(../about#s3-concepts-about-bucket)[text=бакета]} {var(s3)}, которая расширяет возможности доступа к статическому контенту. Без этой опции для получения содержания {linkto(../about#s3-concepts-about-object)[text=объекта]} используется URL, соответствующий его {linkto(../about#s3-concepts-about-object-key)[text=ключу]}. Хостинг статических сайтов позволяет комбинировать статический контент с правилами перенаправления, а также задавать индексную страницу (например, `index.html`) и страницу ошибки, возвращаемую при ошибках запроса (например, `404`).
 
 Примеры использования:
 
@@ -8,30 +10,44 @@
 - перенаправление запросов,
 - документация.
 
-Статический сайт на основе VK Object Storage может состоять из:
+Статический сайт на основе {var(s3)} может состоять из:
 
 - статического контента: HTML, CSS, файлы медиа (изображения, аудио, видео), документы (PDF, TXT) и другие форматы, доступные для просмотра в браузере.
 - файлов сценариев (скриптов) на JavaScript, не требующих серверной обработки: раскрывающиеся меню, табы, аккордеоны и др.
 
-После {linkto(../../instructions/manage-static-site#setup)[text=установки]} конфигурации, cтатический сайт доступен по адресу:
+После {linkto(../../instructions/manage-static-site#s3-instructions-manage-static-site-setup)[text=установки]} конфигурации, cтатический сайт доступен по адресу:
 
 ```text
 https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 ```
 
+{ifdef(s3,s3-pdf)}
+
+{note:info}
+
+Формат ссылки может отличаться. Для уточнения обратитесь к администратору.
+
+{/note}
+
+{/ifdef}
+
 Здесь:
 
 - `<ИМЯ_БАКЕТА>` — имя бакета, для которого была установлена конфигурация статического сайта;
-- `<ENDPOINT_HOSTNAME>` — имя хоста сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+{ifdef(public)}
+- `<ENDPOINT_HOSTNAME>` — имя хоста сервиса {var(s3)}, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-
+  - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+  - `hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+  {/ifdef}
+  {ifdef(s3,s3-pdf)}
+- `<ENDPOINT_HOSTNAME>` — имя хоста, которое используется в вашей инсталляции {var(s3)}.
+  {/ifdef}
 - `<PREFIX>` — префикс ключа объекта индексной страницы. Может быть пустым.
 
-## {heading(JSON-конфигурация статического сайта)[id=config]}
+## {heading(JSON-конфигурация статического сайта)[id=s3-concepts-static-site-hosting-config]}
 
-Конфигурация предоставляется в формате JSON и используется при [управлении конфигурацией](../../instructions/manage-static-site) через AWS CLI.
+Конфигурация предоставляется в формате JSON и используется при {linkto(../../instructions/manage-static-site#s3-instructions-manage-static-site)[text=управлении конфигурацией]} через AWS CLI.
 
 Общая структура конфигурации:
 
@@ -66,11 +82,17 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 }
 ```
 
-### {heading(Параметры конфигурации индексной страницы)[id=indexdocument]}
+### {heading(Параметры конфигурации индексной страницы)[id=s3-concepts-static-site-hosting-indexdocument]}
 
 `IndexDocument` — элемент конфигурации, который задает индексную страницу.
 
+{ifdef(public)}
 Совместимость `IndexDocument` с другими элементами конфигурации:
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость IndexDocument с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 
 [cols="2,1,3", options="header"]
 |===
@@ -80,19 +102,27 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 |`ErrorDocument`
 |![](../../assets/check.svg "inline")
-|{linkto(#errordocument)[text=Страница ошибки]}
+|{linkto(#s3-concepts-static-site-hosting-errordocument)[text=Страница ошибки]}
 
 |`RoutingRules`
 |![](../../assets/check.svg "inline")
-|{linkto(#routingrules)[text=Правила перенаправления]}
+|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Правила перенаправления]}
 
 |`RedirectAllRequestsTo`
 |![](../../assets/no.svg "inline")
-|{linkto(#redirectallrequeststo)[text=Безусловное перенаправление]}
+|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Безусловное перенаправление]}
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
+{ifdef(public)}
 Параметры `IndexDocument`:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры IndexDocument)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="1,5", options="header"]
 |===
 |Имя
@@ -112,26 +142,34 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 Полный путь: `IndexDocument` → `Suffix`
 
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
 {cut(Как обрабатываются запросы индексной страницы)}
 
-Например, ваша индексная страница — это объект с именем `index.html`. В зависимости от конструкции запрашиваемого URL, VK Object Storage по-разному обработает запрос.
+Например, ваша индексная страница — это объект с именем `index.html`{ifdef(s3,s3-pdf)}, а URL вашей инсталляции имеет формат `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>`{/ifdef}. В зависимости от конструкции запрашиваемого URL, {var(s3)} по-разному обработает запрос.
 
 - При обращении к домашней странице, например `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>` или `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/`, будет загружаться содержание объекта с ключом `index.html`.
 - Если путь в URL заканчивается на `/`, будет загружаться содержание объекта с ключом `<СУФФИКС>index.html`. Например, при обращении по `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/images/photos/`, `<СУФФИКС>` имеет значение `images/photos/`. В итоге будет загружено содержимое объекта с ключом `images/photos/index.html`.
-- Если путь в URL заканчивается не на `/`, сначала ссылка интерпретируется как запрос к конкретному объекту и VK Object Storage попытается вернуть его содержимое. Если такого объекта нет, будет выполнено перенаправление на путь с `/` в конце. Например, при обращении к `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing` сначала будет запрошено содержимое объекта `docs/billing`. Если такого объекта нет, запрос будет перенаправлен на `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing/`.
-- Если индексную страницу не удалось обнаружить или к ней нет доступа, будут возвращены HTTP коды ошибки `404` и `403` соответственно.
+- Если путь в URL заканчивается не на `/`, сначала ссылка интерпретируется как запрос к конкретному объекту и {var(s3)} попытается вернуть его содержимое. Если такого объекта нет, будет выполнено перенаправление на путь с `/` в конце. Например, при обращении к `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing` сначала будет запрошено содержимое объекта `docs/billing`. Если такого объекта нет, запрос будет перенаправлен на `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing/`.
+- Если индексную страницу не удалось обнаружить или к ней нет доступа, будут возвращены HTTP-коды ошибки `404` и `403` соответственно.
 
 {/cut}
 
-### {heading(Параметры конфигурации страницы ошибки)[id=errordocument]}
+### {heading(Параметры конфигурации страницы ошибки)[id=s3-concepts-static-site-hosting-errordocument]}
 
-`ErrorDocument` — элемент конфигурации, который задает страницу ошибки. Используется вместе с элементом конфигурации `IndexDocument`, который задает {linkto(#indexdocument)[text=индексную страницу]}.
+`ErrorDocument` — элемент конфигурации, который задает страницу ошибки. Используется вместе с элементом конфигурации `IndexDocument`, который задает {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индексную страницу]}.
 
 Например, при открытии несуществующей страницы возникнет ошибка `404`. Вместо несуществующей страницы загрузится содержание указанного объекта, например `errordoc/file.html`.
 
+{ifdef(public)}
 Совместимость `ErrorDocument` с другими элементами конфигурации:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость ErrorDocument с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="2,1,3", options="header"]
 |===
 |Элемент конфигурации
@@ -141,19 +179,27 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 |`IndexDocument`
 (обязательный)
 |![](../../assets/check.svg "inline")
-|{linkto(#indexdocument)[text=Индексная страница]}
+|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексная страница]}
 
 |`RoutingRules`
 |![](../../assets/check.svg "inline")
-|{linkto(#routingrules)[text=Правила перенаправления]}
+|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Правила перенаправления]}
 
 |`RedirectAllRequestsTo`
 |![](../../assets/no.svg "inline")
-|{linkto(#redirectallrequeststo)[text=Безусловное перенаправление]}
+|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Безусловное перенаправление]}
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
+{ifdef(public)}
 Параметры `ErrorDocument`:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры ErrorDocument)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="1,5", options="header"]
 |===
 |Имя
@@ -166,22 +212,30 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 Формат: `string`.
 
-При HTTP-ответе `4XX`, для которого в `RoutingRules` нет {linkto(#routingrules)[text=правила перенаправления]}, будет загружаться содержание из объекта с указанным ключом. Перенаправление не выполняется.
+При HTTP-ответе `4XX`, для которого в `RoutingRules` нет {linkto(#s3-concepts-static-site-hosting-routingrules)[text=правила перенаправления]}, будет загружаться содержание из объекта с указанным ключом. Перенаправление не выполняется.
 
 Полный путь: `ErrorDocument` → `Key`
 
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
-### {heading(Параметры конфигурации правил перенаправления)[id=routingrules]}
+### {heading(Параметры конфигурации правил перенаправления)[id=s3-concepts-static-site-hosting-routingrules]}
 
-`RoutingRules` — элемент конфигурации, который задает правила перенаправления. Используется вместе с элементом конфигурации `IndexDocument`, который задает {linkto(#indexdocument)[text=индексную страницу]}.
+`RoutingRules` — элемент конфигурации, который задает правила перенаправления. Используется вместе с элементом конфигурации `IndexDocument`, который задает {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индексную страницу]}.
 
 {note:warn}
-При составлении конфигурации следует избегать правил, способных образовать бесконечный цикл перенаправления. Например, после перенаправления по правилу `RoutingRules[1]` новый запрос удовлетворяет `Condition` из `RoutingRules[2]`, которое перенаправляет на изначальный адрес, который соответствует `Condition` из `RoutingRules[1]`.
+При составлении конфигурации избегайте правил, способных образовать бесконечный цикл перенаправления. Например, после перенаправления по правилу `RoutingRules[1]` новый запрос удовлетворяет `Condition` из `RoutingRules[2]`, которое перенаправляет на изначальный адрес, который соответствует `Condition` из `RoutingRules[1]`.
 {/note}
 
+{ifdef(public)}
 Совместимость `RoutingRules` с другими элементами конфигурации:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость RoutingRules с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="2,1,3", options="header"]
 |===
 |Элемент конфигурации
@@ -191,19 +245,27 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 |`IndexDocument`
 (обязательный)
 |![](../../assets/check.svg "inline")
-|{linkto(#indexdocument)[text=Индексная страница]}
+|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексная страница]}
 
 |`ErrorDocument`
 |![](../../assets/check.svg "inline")
-|{linkto(#errordocument)[text=Страница ошибки]}
+|{linkto(#s3-concepts-static-site-hosting-errordocument)[text=Страница ошибки]}
 
 |`RedirectAllRequestsTo`
 |![](../../assets/no.svg "inline")
-|{linkto(#redirectallrequeststo)[text=Безусловное перенаправление]}
+|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Безусловное перенаправление]}
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
+{ifdef(public)}
 Параметры `RoutingRules`:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры RoutingRules)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="3,8", options="header"]
 |===
 |Имя
@@ -308,8 +370,11 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 Полный путь: `RoutingRules[i]` → `Redirect` → `ReplaceKeyWith`
 
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
-### {heading(Параметры конфигурации безусловного перенаправления)[id=redirectallrequeststo]}
+### {heading(Параметры конфигурации безусловного перенаправления)[id=s3-concepts-static-site-hosting-redirectallrequeststo]}
 
 `RedirectAllRequestsTo` — элемент конфигурации, который задает безусловные правила перенаправления для всех запросов сайта.
 
@@ -319,8 +384,13 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 {/note}
 
+{ifdef(public)}
 Совместимость `RedirectAllRequestsTo` с другими элементами конфигурации:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость RedirectAllRequestsTo с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="2,1,3", options="header"]
 |===
 |Элемент конфигурации
@@ -329,19 +399,27 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 |`IndexDocument`
 |![](../../assets/no.svg "inline")
-|{linkto(#indexdocument)[text=Индексная страница]}
+|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексная страница]}
 
 |`ErrorDocument`
 |![](../../assets/no.svg "inline")
-|{linkto(#errordocument)[text=Страница ошибки]}
+|{linkto(#s3-concepts-static-site-hosting-errordocument)[text=Страница ошибки]}
 
 |`RoutingRules`
 |![](../../assets/no.svg "inline")
-|{linkto(#routingrules)[text=Правила перенаправления]}
+|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Правила перенаправления]}
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
+{ifdef(public)}
 Параметры `RedirectAllRequestsTo`:
+{/ifdef}
 
+{ifdef(s3,s3-pdf)}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры RedirectAllRequestsTo)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{/ifdef}
 [cols="1,5", options="header"]
 |===
 |Имя
@@ -370,12 +448,15 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 Полный путь: `RedirectAllRequestsTo` → `Protocol`
 
 |===
+{ifdef(s3,s3-pdf)}
+{/caption}
+{/ifdef}
 
-## {heading(Примеры конфигураций)[id=examples]}
+## {heading(Примеры конфигураций)[id=s3-concepts-static-site-hosting-examples]}
 
 Некоторые параметры несовместимы друг с другом, поэтому число их комбинаций ограничено. 
 
-- Только {linkto(#indexdocument)[text=индексная страница]} `IndexDocument`:
+- Только {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индексная страница]} `IndexDocument`:
 
     ```json
     {
@@ -385,7 +466,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-- {linkto(#indexdocument)[text=Индексная страница]} `IndexDocument` и {linkto(#errordocument)[text=страница ошибки]} `ErrorDocument`:
+- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексная страница]} `IndexDocument` и {linkto(#s3-concepts-static-site-hosting-errordocument)[text=страница ошибки]} `ErrorDocument`:
 
     ```json
     {
@@ -398,7 +479,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-- {linkto(#indexdocument)[text=Индексная страница]} `IndexDocument` и {linkto(#routingrules)[text=правила перенаправления]} `RoutingRules`:
+- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексная страница]} `IndexDocument` и {linkto(#s3-concepts-static-site-hosting-routingrules)[text=правила перенаправления]} `RoutingRules`:
 
     ```json
     {
@@ -421,7 +502,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
     В приведенном примере все запросы с префиксом `docs/` будут перенаправляться на `documents/` и возвращать HTTP-код ответа `301`.
 
-- {linkto(#indexdocument)[text=Индексная страница]} `IndexDocument`, {linkto(#errordocument)[text=страница ошибки]} `ErrorDocument` и {linkto(#routingrules)[text=правила перенаправления]} `RoutingRules`:
+- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексная страница]} `IndexDocument`, {linkto(#s3-concepts-static-site-hosting-errordocument)[text=страница ошибки]} `ErrorDocument` и {linkto(#s3-concepts-static-site-hosting-routingrules)[text=правила перенаправления]} `RoutingRules`:
 
     ```json
     {
@@ -447,7 +528,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
     В приведенном примере при HTTP-ошибке `404` запрос перенаправляется на `index.html`, при других ошибках возвращается содержимое `error.html`.
 
-- {linkto(#redirectallrequeststo)[text=Безусловное перенаправление]} `RedirectAllRequestsTo` для всех запросов: 
+- {linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Безусловное перенаправление]} `RedirectAllRequestsTo` для всех запросов: 
 
     ```json
     {

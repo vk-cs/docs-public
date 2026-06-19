@@ -5,5 +5,10 @@
   "sectionTitle": "CDN",
   "icon": "",
   "weight": 3,
-  "uuid": "4b4f2f78-08c9-4479-986b-45db3747f709"
+  "uuid": "4b4f2f78-08c9-4479-986b-45db3747f709",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

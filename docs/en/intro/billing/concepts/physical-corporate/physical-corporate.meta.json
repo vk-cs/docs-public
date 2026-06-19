@@ -1,9 +1,14 @@
 {
-    "title": "Billing of individuals and legal entities",
-      "shortDescription": "Differences in payment and document management procedures",
-      "metaDescription": "VK Cloud: differences in payment and document management procedures",
-    "sectionTitle": "Billing of individuals and legal entities",
-    "icon": "",
-    "weight": 2,
-    "uuid": "2574e73f-bfa9-4800-b532-a6aeb9009d8c"
+  "title": "Billing of individuals and legal entities",
+  "shortDescription": "Differences in payment and document management procedures",
+  "metaDescription": "VK Cloud: differences in payment and document management procedures",
+  "sectionTitle": "Billing of individuals and legal entities",
+  "icon": "",
+  "weight": 2,
+  "uuid": "2574e73f-bfa9-4800-b532-a6aeb9009d8c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

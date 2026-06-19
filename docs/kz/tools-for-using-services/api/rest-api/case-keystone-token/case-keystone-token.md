@@ -1,14 +1,16 @@
+# {heading(Keystone қатынау токенін алу)[id=rest-api-keystone-token]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Keystone токені кейбір VK Cloud сервистерімен және компоненттерімен олардың API-ы арқылы жұмыс істеу үшін қажет — мысалы, Cloud Servers сервисіндегі виртуалды желілер сервисімен (Neutron) және сақтық көшірмелеу ішкі жүйесімен (Karboii).
+Keystone токені кейбір {var(cloud)} сервистерімен және компоненттерімен олардың API-ы арқылы жұмыс істеу үшін қажет — мысалы, Cloud Servers сервисіндегі виртуалды желілер сервисімен (Neutron) және сақтық көшірмелеу ішкі жүйесімен (Karboii).
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=rest-api-keystone-token-prepare]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 1. Екі факторлы аутентификация [қосылғанына](/kz/access/iam/instructions/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
 1. Жеке кабинет бетінің жоғарғы жағында токенді пайдалануды жоспарлап отырған жобаны таңдаңыз.
 
-## Токенді генерациялау
+## {heading(Токенді генерациялау)[id=rest-api-keystone-token-gen]}
 
 {note:warn}
 
@@ -26,9 +28,9 @@ Keystone токені кейбір VK Cloud сервистерімен және 
 
     Бет ашылған кезде жаңа токен автоматты түрде генерацияланады. Егер бет ашық күйде қалса, әр сағат сайын жаңа токен генерацияланады.
 
-1. Беттің төменгі жағынан **API-ға қол жеткізуге арналған токен** параметрін тауып, оның жанындағы ![Копировать](assets/copy-icon.svg "inline") белгішесін басыңыз. Токен көшіріледі.
+1. Беттің төменгі жағынан **API-ға қол жеткізуге арналған токен** параметрін тауып, оның жанындағы ![Көшіру](assets/copy-icon.svg "inline") белгішесін басыңыз. Токен көшіріледі.
 
-    Токеннің жарамдылық мерзімі ![Копировать](assets/copy-icon.svg "inline") белгішесіне меңзерді апарғанда көрсетіледі. Егер токеннің мерзімі жақында бітсе, **Қайта шығару** түймесін пайдаланыңыз.
+    Токеннің жарамдылық мерзімі ![Көшіру](assets/copy-icon.svg "inline") белгішесіне меңзерді апарғанда көрсетіледі. Егер токеннің мерзімі жақында бітсе, **Қайта шығару** түймесін пайдаланыңыз.
 
 {/tab}
 
@@ -56,9 +58,7 @@ Keystone токені кейбір VK Cloud сервистерімен және 
     {tab(Linux)}
 
     ```console
-    curl -X POST \
-    -H "Content-Type: application/json" \
-    -d '{
+    curl -X POST     -H "Content-Type: application/json"     -d '{
         "auth": {
             "identity": {
                 "methods": [
@@ -81,8 +81,7 @@ Keystone токені кейбір VK Cloud сервистерімен және 
                 }
             }
         }
-    }' \
-    -i "https://infra.mail.ru:5000/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
+    }'     -i "https://infra.mail.ru:5000/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
     ```
     {/tab}
 
@@ -91,7 +90,7 @@ Keystone токені кейбір VK Cloud сервистерімен және 
     ```console
     curl -X POST ^
     -H "Content-Type: application/json" ^
-    -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"name\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
+    -d "{"auth": {"identity": {"methods": ["password"], "password": {"user": {"domain": {"name": "%OS_USER_DOMAIN_NAME%"}, "name": "%OS_USERNAME%","password": "%OS_PASSWORD%"}}}, "scope": {"project": {"id": "%OS_PROJECT_ID%"}}}}" ^
     -i "https://infra.mail.ru:5000/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
     ```
     {/tab}
@@ -136,12 +135,12 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 
 {/tabs}
 
-## Токенді пайдалану мысалы
+## {heading(Токенді пайдалану мысалы)[id=rest-api-keystone-token-example]}
 
 Міндет: REST API арқылы желілер тізімін алу (Neutron сервисі).
 
 1. Жеке кабинетте Neutron сервисіне сұрау жіберілетін эндпоинтті [қараңыз](https://kz.cloud.vk.com/app/project/endpoints). Бұл мысалда: `https://infra.mail.ru:9696`.
-1. [Токенді алыңыз](#tokendi_generaciyalau): жаңа токен генерациялаңыз немесе қолданыстағы токеннің мәнін көшіріп алыңыз.
+1. [Токенді алыңыз](#rest-api-keystone-token-gen): жаңа токен генерациялаңыз немесе қолданыстағы токеннің мәнін көшіріп алыңыз.
 1. Команданы cURL утилитасының көмегімен орындаңыз:
 
    ```console

@@ -4,5 +4,10 @@
   "metaDescription": "Terraform пайдаланып JupyterHub инстансын жасау мысалы",
   "sectionTitle": "JupyterHub инстансын жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

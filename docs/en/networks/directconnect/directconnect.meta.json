@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Direct Connect",
   "icon": "",
   "weight": 5,
-  "uuid": "2d9082ac-4ac5-4444-bb80-1134c5d53ff8"
+  "uuid": "2d9082ac-4ac5-4444-bb80-1134c5d53ff8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

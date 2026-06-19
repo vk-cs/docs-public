@@ -4,5 +4,14 @@
   "metaDescription": "Сервисті баптау, бұлтты жұмыс үстелдері пулдарын жасау, пулдар мен жұмыс үстелдерін басқару.",
   "sectionTitle": "Әкімшіге арналған қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

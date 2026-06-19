@@ -1,0 +1,13 @@
+{
+  "title": "Создание образа image-based приложения",
+  "sectionTitle": "Создание образа image-based приложения",
+  "shortDescription": "Создание образа ВМ, на которой установлен инстанс image-based приложения, и загрузка его в VK Cloud",
+  "metaDescription": "Создание образа ВМ, на которой установлен инстанс image-based приложения, и загрузка его в VK Cloud. Описано два способа: с помощью Packer (рекомендуемый) и через личный кабинет VK Cloud.",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

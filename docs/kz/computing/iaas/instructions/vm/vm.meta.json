@@ -4,5 +4,19 @@
   "metaDescription": "Linux және Windows виртуалды машиналарын құру. SSH және RDP арқылы ВМ-ге қосылу, виртуалды машинаның ресурстары мен күйін басқару. ВМ диагностикасы. VNC-консоль.",
   "sectionTitle": "Виртуалды машиналар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

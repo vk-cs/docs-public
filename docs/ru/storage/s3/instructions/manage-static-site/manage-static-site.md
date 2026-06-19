@@ -1,22 +1,10 @@
-VK Object Storage позволяет использовать {linkto(../../concepts/about#bucket)[text=бакет]} для [хостинга статического сайта](../../concepts/static-site-hosting).
+# {heading(Хостинг статических сайтов)[id=s3-instructions-manage-static-site]}
 
-После {linkto(#setup)[text=установки]} конфигурации, cтатический сайт доступен по адресу:
+{var(s3)} позволяет использовать {linkto(../../concepts/about#s3-concepts-about-bucket)[text=бакет]} для {linkto(../../concepts/static-site-hosting#s3-concepts-static-site-hosting)[text=хостинга статического сайта]}.
 
-```text
-https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
-```
+## {heading(Получить конфигурацию статического сайта)[id=s3-instructions-manage-static-site-view]}
 
-Здесь:
-
-- `<ИМЯ_БАКЕТА>` — имя бакета, для которого была установлена конфигурация статического сайта;
-- `<ENDPOINT_HOSTNAME>` — имя хоста сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-
-   - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-
-## {heading(Получить конфигурацию статического сайта)[id=view]}
-
-1. Установите и настройте [AWS CLI](../../connect/s3-cli), если он еще не установлен.
+1. Установите и настройте {linkto(../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
 1. Получите конфигурацию с помощью команды:
 
    ```console
@@ -26,24 +14,29 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо получить конфигурацию статического сайта.
-   - `<ENDPOINT_URL>` — должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, который используется в вашей инсталляции {var(s3)}.
+     {/ifdef}
 
-## {heading(Установка новой конфигурации статического сайта)[id=setup]}
+## {heading(Установка новой конфигурации статического сайта)[id=s3-instructions-manage-static-site-setup]}
 
 {note:warn}
 
-Установка новой {linkto(../../concepts/static-site-hosting#config)[text=конфигурации]} перезаписывает существующую. Чтобы изменить параметры уже существующей конфигурации, {linkto(#edit)[text=отредактируйте]} ее.
+Установка новой {linkto(../../concepts/static-site-hosting#s3-concepts-static-site-hosting-config)[text=конфигурации]} перезаписывает существующую. Чтобы изменить параметры уже существующей конфигурации, {linkto(#s3-instructions-manage-static-site-edit)[text=отредактируйте]} ее.
 
 {/note}
 
-1. Установите и настройте [AWS CLI](../../connect/s3-cli), если он еще не установлен.
-1. [Создайте](../buckets/create-bucket) новый бакет.
-1. [Установите](../access-management/acl#ustanovka_acl_dlya_baketa) для бакета конфигурацию ACL `public-read`, если этого не было сделано ранее. Это необходимо для публичного доступа к объектам, иначе запросы будут завершаться ошибкой `403`.
+1. Установите и настройте {linkto(../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
+1. {linkto(../buckets/create-bucket#s3-instructions-create-bucket)[text=Создайте]} новый бакет.
+1. {linkto(../access-management/acl#s3-instructions-object-acl-add-preset)[text=Установите]} для бакета конфигурацию ACL `public-read`, если этого не было сделано ранее. Это необходимо для публичного доступа к объектам, иначе запросы будут завершаться ошибкой `403`.
 1. Создайте новый файл конфигурации `<КОНФИГУРАЦИЯ>.json`.
-1. В файле укажите {linkto(../../concepts/static-site-hosting#config)[text=конфигурацию]} статического сайта.
+1. В файле укажите {linkto(../../concepts/static-site-hosting#s3-concepts-static-site-hosting-config)[text=конфигурацию]} статического сайта.
 1. Загрузите новую конфигурацию с помощью команды:
 
    ```console
@@ -54,10 +47,15 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо установить конфигурацию статического сайта.
    - `<КОНФИГУРАЦИЯ>` — имя файла конфигурации статического сайта в формате JSON.
-   - `<ENDPOINT_URL>` — должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, который используется в вашей инсталляции {var(s3)}.
+     {/ifdef}
 
 1. Перейдите на страницу статического сайта:
 
@@ -65,19 +63,35 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
    https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
    ```
 
+   {ifdef(s3,s3-pdf)}
+
+   {note:info}
+
+   Формат ссылки может отличаться. Для уточнения обратитесь к администратору.
+
+   {/note}
+
+   {/ifdef}
+
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого была установлена конфигурация статического сайта;
-   - `<ENDPOINT_HOSTNAME>` — имя хоста сервиса VK Object Storage, должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   {ifdef(public)}
 
+   - `<ENDPOINT_HOSTNAME>` — имя хоста сервиса {var(s3)}, должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+
+     - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_HOSTNAME>` — имя хоста, которое используется в вашей инсталляции {var(s3)}.
+     {/ifdef}
    - `<PREFIX>` — префикс ключа объекта индексной страницы. Может быть пустым.
 
-## {heading(Редактирование конфигурации статического сайта)[id=edit]}
+## {heading(Редактирование конфигурации статического сайта)[id=s3-instructions-manage-static-site-edit]}
 
-1. Установите и настройте [AWS CLI](../../connect/s3-cli), если он еще не установлен.
+1. Установите и настройте {linkto(../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
 1. Сохраните конфигурацию локально в файл `<КОНФИГУРАЦИЯ>.json` с помощью команды:
 
    ```console
@@ -88,12 +102,17 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо отредактировать конфигурацию статического сайта.
    - `<КОНФИГУРАЦИЯ>` — имя файла конфигурации статического сайта в формате JSON.
-   - `<ENDPOINT_URL>` — должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, который используется в вашей инсталляции {var(s3)}.
+     {/ifdef}
 
-1. Внесите необходимые изменения в файле `<КОНФИГУРАЦИЯ>.json`. При необходимости задайте другие параметры {linkto(../../concepts/static-site-hosting#config)[text=конфигурации]}.
+1. Внесите необходимые изменения в файл `<КОНФИГУРАЦИЯ>.json`. При необходимости задайте другие параметры {linkto(../../concepts/static-site-hosting#s3-concepts-static-site-hosting-config)[text=конфигурации]}.
 1. Установите новую конфигурацию:
 
    ```shell
@@ -104,14 +123,20 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо установить конфигурацию статического сайта.
    - `<КОНФИГУРАЦИЯ>` — имя файла конфигурации статического сайта в формате JSON.
-   - `<ENDPOINT_URL>` — должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, который используется в вашей инсталляции {var(s3)}.
+     {/ifdef}
 
-## {heading(Удаление конфигурации статического сайта)[id=delete]}
 
-1. Установите и настройте [AWS CLI](../../connect/s3-cli), если он еще не установлен.
+## {heading(Удаление конфигурации статического сайта)[id=s3-instructions-manage-static-site-delete]}
+
+1. Установите и настройте {linkto(../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
 1. Удалите конфигурацию с помощью команды:
 
    ```shell
@@ -121,7 +146,12 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо удалить конфигурацию статического сайта.
-   - `<ENDPOINT_URL>` — должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, который используется в вашей инсталляции {var(s3)}.
+     {/ifdef}

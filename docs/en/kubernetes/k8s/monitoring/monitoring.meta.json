@@ -1,9 +1,23 @@
 {
-    "title": "Cluster monitoring",
-      "shortDescription": "How to track the state of a Kubernetes cluster",
-      "metaDescription": "Cloud Containers: Kubernetes cluster monitoring, cluster status tracking, using Grafana and Prometheus",
-    "sectionTitle": "Cluster monitoring",
-    "icon": "",
-    "weight": 6,
-    "uuid": "d54d6b63-3d4f-43d3-93c4-e2f3f4cbcb19"
+  "title": "Cluster monitoring",
+  "shortDescription": "How to track the state of a Kubernetes cluster",
+  "metaDescription": "Cloud Containers: Kubernetes cluster monitoring, cluster status tracking, using Grafana and Prometheus",
+  "sectionTitle": "Cluster monitoring",
+  "icon": "",
+  "weight": 6,
+  "uuid": "d54d6b63-3d4f-43d3-93c4-e2f3f4cbcb19",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Тарификация",
   "icon": "",
   "weight": 4,
-  "uuid": "197c8f03-802a-4d06-bd8d-a5563d1c579d"
+  "uuid": "197c8f03-802a-4d06-bd8d-a5563d1c579d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

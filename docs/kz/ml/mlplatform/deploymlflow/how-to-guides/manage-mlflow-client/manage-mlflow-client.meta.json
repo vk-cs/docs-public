@@ -4,5 +4,10 @@
   "metaDescription": "MLflow Client көмегімен ML-модельдерді орналастыруды қалай басқаруға болады",
   "sectionTitle": "MLflow Client көмегімен ML-модельдерді орналастыру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

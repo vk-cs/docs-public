@@ -1,10 +1,15 @@
 {
-    "title": "Cloud Logging",
-      "shortDescription": "Просмотр логов с помощью API сервиса Cloud Logging",
-      "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Cloud Logging",
-    "sectionTitle": "Cloud Logging",
-    "icon": "",
-    "weight": 8,
-    "isBeta": true,
-    "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62"
+  "title": "Cloud Logging",
+  "shortDescription": "Просмотр логов с помощью API сервиса Cloud Logging",
+  "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Cloud Logging",
+  "sectionTitle": "Cloud Logging",
+  "icon": "",
+  "weight": 8,
+  "isBeta": true,
+  "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,8 +1,17 @@
 {
   "title": "Қадамдық нұсқаулықтар",
-  "shortDescription": "VK Cloud платформасындағы Cloud Alerting хабарландыру сервисімен жұмыс істеу нұсқаулықтары",
+  "shortDescription": "{var(cloud)} платформасындағы Cloud Alerting хабарландыру сервисімен жұмыс істеу нұсқаулықтары",
   "metaDescription": "VK Cloud бұлттық ресурстарының күйі туралы хабарландыру алу үшін триггерлер мен арналарды қалай баптауға болады. Cloud Alerting хабарландыру сервисімен жұмыс істеу нұсқаулықтары",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

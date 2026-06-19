@@ -5,10 +5,14 @@
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 4,
-  "relativeSections": [
-    {
-      "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create"
-    }
-  ],
-  "uuid": "61da57b5-e215-4762-9f78-46e7445560da"
+  "uuid": "61da57b5-e215-4762-9f78-46e7445560da",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

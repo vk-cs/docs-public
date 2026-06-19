@@ -1,6 +1,8 @@
-## Очистка кеша
+# {heading(Управление контентом)[id=cdn-content-settings]}
 
-При некорректной работе CDN-ресурса или в случае обновления данных на источника может потребоваться частичная или полная очистка кеша.
+## {heading(Очистка кеша)[id=cdn-content-settings-cache-clearing]}
+
+При некорректной работе CDN-ресурса или в случае обновления данных на источнике может потребоваться частичная или полная очистка кеша.
 
 Чтобы очистить кеш CDN-ресурса:
 
@@ -8,16 +10,16 @@
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. В блоке **Очистка кеша** выберите тип очистки:
 
-    - `Полная` — полностью удаляет все файлы из кеша CDN-ресурса. При полной очистке кеша CDN-серверы будут запрашивать контент у серверов-источников, что повысит нагрузку на источники и может дестабилизировать работу сервиса. Если нужно удалить большой объем контента из кеша, используйте выборочную очистку кеша.
-    - `Выборочная` — позволяет удалить отдельные файлы из кеша CDN-ресурса. В поле ввода укажите путь или шаблон пути до файлов, которые нужно удалить. Используйте следующие символы для шаблона:
+   - `Полная` — полностью удаляет все файлы из кеша CDN-ресурса. При полной очистке кеша CDN-серверы будут запрашивать контент у серверов-источников, что повысит нагрузку на источники и может дестабилизировать работу сервиса. Если нужно удалить большой объем контента из кеша, используйте выборочную очистку кеша.
+   - `Выборочная` — позволяет удалить отдельные файлы из кеша CDN-ресурса. В поле ввода укажите путь или шаблон пути до файлов, которые нужно удалить. Используйте следующие символы для шаблона:
 
-        - в начале пути используйте `/` или `*`;
-        - для замены любого количества символов в пути используйте `*`.
+     - в начале пути используйте `/` или `*`;
+     - для замены любого количества символов в пути используйте `*`.
 
 1. Нажмите кнопку **Очистить кеш**.
 
@@ -25,7 +27,7 @@
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/purge`.
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/api-cdn#api-spec-cdn)[text=методом]} `POST /projects/{project_id}/resources/{resources_id}/purge`.
 
 В теле запроса пропишите:
 
@@ -57,14 +59,12 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {/tabs}
 
-## Наполнение кеша
+## {heading(Наполнение кеша)[id=cdn-content-settings-cache-filling]}
 
 Наполнение (предзагрузка) кеша позволяет поместить контент в кеш CDN-ресурса до получения запроса пользователя. Так можно сократить время на передачу контента по первому запросу к CDN-ресурсу. Наполнение актуально для файлов больше 200 МБ.
 
 {note:warn}
-
-Чтобы обновить файлы на CDN, сначала выполните [очистку](#ochistka_kesha) кеша CDN-ресурса, а затем наполнение.
-
+Чтобы обновить файлы на CDN, сначала выполните {linkto(#cdn-content-settings-cache-clearing)[text=очистку]} кеша CDN-ресурса, а затем наполнение.
 {/note}
 
 Чтобы наполнить кеш CDN-ресурса:
@@ -73,7 +73,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. В блоке **Наполнение кеша** укажите путь к файлам на источнике без указания домена и по одному на строку.
@@ -83,7 +83,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {tab(API)}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/prefetch`.
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/api-cdn#api-spec-cdn)[text=методом]} `POST /projects/{project_id}/resources/{resources_id}/prefetch`.
 
 В теле запроса пропишите пути к файлам, которые нужно загрузить, без указания домена.
 
@@ -105,7 +105,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {/tabs}
 
-## Настройка кода ответа HTTP
+## {heading(Настройка кода ответа HTTP)[id=cdn-content-settings-http-response]}
 
 Опция **Включить возврат кода ответа HTTP** позволяет задать HTTP-код ответа для контента, размещенного на CDN-ресурсе. Например, можно настроить перенаправление на другой URL или отправить конечным пользователям код 403 при запросе определенных файлов.
 
@@ -115,7 +115,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. Включите опцию **Включить возврат кода ответа HTTP**.
@@ -127,7 +127,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В блоке `options` пропишите параметры `force_return`:
 
@@ -160,11 +160,11 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Сжатие GZip
+## {heading(Сжатие GZip)[id=cdn-content-settings-gzip-compression]}
 
 Поступающие на CDN-ресурс файлы можно сжимать методом GZip. Средняя степень сжатия этим методом составляет 70%, иногда достигает 90%. Минимальный размер файла для сжатия — 128 байт.
 
-При использовании метода сжатия GZip с источника запрашиваются несжатые файлы, поэтому опция не работает совместно со [сжатием на источнике](#szhatie_na_istochnike) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
+При использовании метода сжатия GZip с источника запрашиваются несжатые файлы, поэтому опция не работает совместно со {linkto(#cdn-content-settings-source-compression)[text=сжатием на источнике]} и {linkto(#cdn-content-settings-large-files-optimizing)[text=оптимизацией доставки больших файлов]}.
 
 Чтобы подключить сжатие GZip:
 
@@ -172,7 +172,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. Включите опцию **Включить сжатие GZip**.
@@ -182,7 +182,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `gzipOn`.
 
@@ -210,13 +210,13 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Сжатие Brotli
+## {heading(Сжатие Brotli)[id=cdn-content-settings-brotli-compression]}
 
 Поступающие на CDN-ресурс файлы можно сжимать методом Brotli. Этот метод позволяет сжимать файлы сильнее, чем GZip. Например, для текстовых файлов степень сжатия Brotli превышает GZip в среднем на 20%. Минимальный размер файла для сжатия — 128 байт.
 
 При использовании метода сжатия Brotli с источника запрашиваются несжатые файлы, а сжатие происходит на специальном прекеш-сервере. Прекеш-сервер встает между сервером-источником и CDN-серверами и защищает сервер-источник от высокой нагрузки. Защита сервера-источника с помощью прекеш-сервера (shielding) — платная опция, для ее подключения обратитесь в [техническую поддержку](/ru/contacts).
 
-Опция не работает совместно со [сжатием на источнике](#szhatie_na_istochnike) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
+Опция не работает совместно со {linkto(#cdn-content-settings-source-compression)[text=сжатием на источнике]} и {linkto(#cdn-content-settings-large-files-optimizing)[text=оптимизацией доставки больших файлов]}.
 
 Чтобы подключить сжатие Brotli:
 
@@ -224,7 +224,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. Включите опцию **Включить сжатие Brotli**.
@@ -235,7 +235,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `brotli_compression`.
 
@@ -267,11 +267,11 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Сжатие на источнике
+## {heading(Сжатие на источнике)[id=cdn-content-settings-source-compression]}
 
 Сжатие контента на источнике ускоряет доставку контента: контент передается на CDN-сервер уже в сжатом виде, что сокращает время передачи данных. Для корректной работы опции источник должен поддерживать сжатие.
 
-Опция не работает совместно со [сжатием GZip](#szhatie_gzip), [Brotli](#szhatie_brotli) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
+Опция не работает совместно со {linkto(#cdn-content-settings-gzip-compression)[text=сжатием GZip]}, {linkto(#cdn-content-settings-brotli-compression)[text=Brotli]} и {linkto(#cdn-content-settings-large-files-optimizing)[text=оптимизацией доставки больших файлов]}.
 
 Чтобы CDN-ресурс запрашивал сжатый контент с источника:
 
@@ -279,7 +279,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. Включите опцию **Запрашивать сжатие на источнике**.
@@ -289,7 +289,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `fetch_compressed`.
 
@@ -317,7 +317,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Оптимизация доставки больших файлов
+## {heading(Оптимизация доставки больших файлов)[id=cdn-content-settings-large-files-optimizing]}
 
 Для оптимизации доставки большие файлы передаются с источника на CDN-ресурс и хранятся в кеше не целиком, а частями по 10 МБ. CDN-ресурс раньше начнет передавать файл пользователю, а также сможет передавать файл частями одновременно нескольким пользователям.
 
@@ -326,12 +326,10 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 После включения или выключения опции изменятся ключи кеширования, контент будет заново запрошен с источника.
 
 {note:warn}
-
 Чтобы снизить нагрузку на источник, управляйте опцией в часы наименьшей нагрузки и обратитесь в [техническую поддержку](/ru/contacts) для защиты источника с помощью прекеш-сервера.
-
 {/note}
 
-Опция не работает совместно со [сжатием GZip](#szhatie_gzip), [Brotli](#szhatie_brotli) и [сжатием на источнике](#szhatie_na_istochnike).
+Опция не работает совместно со {linkto(#cdn-content-settings-gzip-compression)[text=сжатием GZip]}, {linkto(#cdn-content-settings-brotli-compression)[text=Brotli]} и {linkto(#cdn-content-settings-source-compression)[text=сжатием на источнике]}.
 
 Чтобы подключить оптимизацию доставки больших файлов:
 
@@ -339,7 +337,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Контент**.
 1. Включите опцию **Включить оптимизацию доставки больших файлов**.
@@ -349,7 +347,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `slice`.
 

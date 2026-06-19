@@ -1,10 +1,12 @@
-## Подготовительные шаги
+# {heading(Cert-manager)[id=k8s-install-advanced-cert-manager]}
+
+## {heading(Подготовительные шаги)[id=k8s-install-advanced-cert-manager-prep]}
 
 {include(/ru/_includes/_addon-prep.md)}
 
-## Установка аддона
+## {heading(Установка аддона)[id=k8s-install-advanced-cert-manager-install]}
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
+Для аддона доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}.
 
 {tabs}
 
@@ -16,7 +18,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -30,12 +32,10 @@
       - выбранную версию;
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
+      - {linkto(#k8s-install-advanced-cert-manager-edit-code)[text=код настройки аддона]}.
 
         {note:warn}
-
         Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
         {/note}
 
    1. Нажмите кнопку **Установить аддон**.
@@ -46,7 +46,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -87,16 +87,16 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Найдите в списке нужный кластер.
 
    1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-      Если такой группы нет — [добавьте ее](../../../manage-node-group#add_group).
+      Если такой группы нет — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=добавьте ее]}.
 
-   1. [Задайте](../../../manage-node-group#labels_taints) для этой группы узлов, если это еще не сделано:
+   1. {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=Задайте]} для этой группы узлов, если это еще не сделано:
 
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.
@@ -111,7 +111,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -125,7 +125,7 @@
       - выбранную версию;
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
+      - {linkto(#k8s-install-advanced-cert-manager-edit-code)[text=код настройки аддона]}.
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -167,9 +167,7 @@
       {/tabs}
 
       {note:warn}
-
       Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
       {/note}
 
    1. Нажмите кнопку **Установить аддон**.
@@ -180,7 +178,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -212,11 +210,9 @@
 {tab(Быстрая установка)}
 
 {note:info}
-
 При быстрой установке код настройки аддона не редактируется.
 
 Если это вам не подходит, выполните **стандартную установку** или **установку на выделенные worker-узлы**.
-
 {/note}
 
 1. Установите аддон:
@@ -225,7 +221,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -248,7 +244,7 @@
 
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -279,16 +275,14 @@
 
 {/tabs}
 
-## Редактирование кода настройки аддона при установке
+## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-advanced-cert-manager-edit-code]}
 
 Редактирование кода аддона применимо для стандартной установки и установки на выделенные worker-узлы.
 
 Полный код настройки аддона вместе с описанием полей доступен на [GitHub](https://github.com/cert-manager/cert-manager/blob/master/deploy/charts/cert-manager/values.yaml).
 
 {note:err}
-
 Не удаляйте поля `podAnnotations.timestamp` или заданные в них значения. Эти поля требуются для корректной установки и работы аддона.
-
 {/note}
 
-После редактирования кода [продолжите установку аддона](#ustanovka_addona).
+После редактирования кода {linkto(#k8s-install-advanced-cert-manager-install)[text=продолжите установку аддона]}.

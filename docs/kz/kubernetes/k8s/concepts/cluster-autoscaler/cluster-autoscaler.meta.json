@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud платформасындағы Cloud Containers сервисінде Cluster Autoscaler көмегімен Kubernetes кластерінің worker-түйіндерін автоматты масштабтау процесі: түйіндер санын арттыру және азайту шарттары, баптаулар, подтардың бос тұру уақыты.",
   "sectionTitle": "Cluster Autoscaler көмегімен worker-түйіндерін автоматты масштабтау",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

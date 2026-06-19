@@ -4,5 +4,14 @@
   "metaDescription": "Соңғы пайдаланушыларға Windows ОС басқаруындағы виртуалды жұмыс үстелдеріне қосылуға рұқсат беру үшін AD домен контроллерінің топтық саясаттарын баптау",
   "sectionTitle": "AD топтық саясаттарын баптау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -4,5 +4,12 @@
   "shortDescription": "API арқылы немесе AWS CLI көмегімен объектілік хранилищеге жүгінгенде SignatureDoesNotMatch қатесі қайтарылса не істеу керек",
   "sectionTitle": "Объектілік хранилищеге жүгінгенде SignatureDoesNotMatch қатесі",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

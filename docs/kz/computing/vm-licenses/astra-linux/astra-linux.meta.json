@@ -3,5 +3,10 @@
   "shortDescription": "Astra Linux өнімдерінің лицензиялары",
   "metaDescription": "Отандық Astra Linux компаниясының өнімдерін лицензиялау",
   "sectionTitle": "Astra Linux",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Что нового",
+  "shortDescription": "Что нового в релизе VK Private Cloud версии 4.3, дата релиза: ноябрь 2025",
+  "metaDescription": "Что нового в VK Private Cloud",
+  "sectionTitle": "Что нового",
+  "weight": 0,
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": ""
+}

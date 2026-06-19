@@ -1,8 +1,18 @@
 {
   "title": "Қадамдық нұсқаулықтар",
   "shortDescription": "Кластермен және оның түйіндерімен орындалатын қолжетімді операциялар",
-  "metaDescription": "Cloud Containers: Kubernetes кластерімен және оның түйіндерімен орындауғал болатын операциялар",
+  "metaDescription": "Cloud Containers: Kubernetes кластерімен және оның түйіндерімен орындауға болатын операциялар",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

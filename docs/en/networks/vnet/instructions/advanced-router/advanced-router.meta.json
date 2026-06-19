@@ -5,5 +5,10 @@
   "sectionTitle": "Advanced routers",
   "icon": "",
   "weight": 6,
-  "uuid": "c8a75c4d-ba9c-40cf-9103-81016972a878"
+  "uuid": "c8a75c4d-ba9c-40cf-9103-81016972a878",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

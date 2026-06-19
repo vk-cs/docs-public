@@ -1,0 +1,14 @@
+{
+  "title": "Быстрый старт",
+  "shortDescription": "Начало работы с Terraform",
+  "metaDescription": "Как использовать Terraform-провайдер VK Cloud для управления VK Data Platform. Начало работы с Terraform: установка, инициализация, обновление Terraform",
+  "sectionTitle": "Быстрый старт",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

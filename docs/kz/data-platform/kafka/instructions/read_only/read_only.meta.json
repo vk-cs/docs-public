@@ -1,0 +1,15 @@
+{
+  "title": "Экземплярды тек оқу режимінен шығару",
+  "shortDescription": "Cloud Kafka данасын тек оқу режимінен қалай шығаруға болады",
+  "metaDescription": "VK Data Platform жүйесінде Cloud Kafka данасын тек оқу режимінен (read-only) қалай шығаруға болатынын біліңіз",
+  "sectionTitle": "Экземплярды тек оқу режимінен шығару",
+  "icon": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": ""
+}

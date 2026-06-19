@@ -123,7 +123,7 @@ Information in a service account's card is not editable.
 
    Here, `<FILE_NAME>` is the name of the OpenStack RC file.
 
-1. Enter the password obtained when [creating the service account](#create).
+1. Enter the password obtained when [creating the service account]().
 
    {note:warn}
    No notification about the password verification result is displayed.

@@ -3,5 +3,15 @@
   "shortDescription": "Сервистің мақсаты",
   "metaDescription": "Cloud Servers — виртуалды машиналар, дискілер, қолжетімділік аймағы, операциялық жүйе, образ, файлдық сақтау қоймасы, резервтік көшірме, лицензиялар",
   "sectionTitle": "Сервис туралы",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-cert",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

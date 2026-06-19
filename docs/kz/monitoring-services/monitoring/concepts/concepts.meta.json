@@ -4,5 +4,14 @@
   "metaDescription": "Виртуалды машиналар сервистері мен платформалық қолданбаларды мониторингтеу құралдары туралы негізгі ақпарат.",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

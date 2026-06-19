@@ -5,5 +5,10 @@
   "sectionTitle": "Working with a desktop pool",
   "icon": "",
   "weight": 2,
-  "uuid": "88c3b9cf-e41f-45be-a8a0-edff404981a3"
+  "uuid": "88c3b9cf-e41f-45be-a8a0-edff404981a3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

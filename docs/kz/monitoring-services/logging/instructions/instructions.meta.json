@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Logging сервисінде базалық операцияларды қалай орындауға болады. Логтау плагинін орнату, логтау агентін қосу, баптау, өшіру және жою, тіркелгі деректерін жасау, логтарды қарау",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Public DNS Cloud Audit-ке жіберетін оқиғалар",
   "sectionTitle": "Public DNS оқиғалары",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

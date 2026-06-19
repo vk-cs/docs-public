@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Containers сервисінің негізгі ұғымдары мен объектілері. Подтардың не екенін және олардың Kubernetes-те қалай қолданылатынын біліңіз",
   "sectionTitle": "Подтар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

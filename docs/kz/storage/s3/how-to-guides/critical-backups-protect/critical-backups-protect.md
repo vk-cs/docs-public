@@ -1,34 +1,28 @@
+# {heading(Сындарлы деректерді қорғау)[id=s3-critical-backups-protect]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-VK Object Storage объектілерді [оларды жоюды немесе қайта жазуды бұғаттау](/kz/storage/s3/concepts/objects-lock) (Object Lock) арқылы қорғауға мүмкіндік береді. Объектілерді бұғаттауды сыни деректер, мысалы, резервтік көшірмелер немесе аудит пен заңдық маңыздылықты қамтамасыз ету үшін белгіленген мерзім ішінде өзгермейтін түрде сақталуы тиіс деректер үшін пайдаланыңыз.
+{var(s3)} объектілерді {linkto(../../concepts/objects-lock#s3-concepts-object-lock)[text=олардың жойылуын немесе қайта жазылуын бұғаттау]} (Object Lock) арқылы қорғауға мүмкіндік береді. Объектілерді бұғаттауды сындарлы деректер үшін пайдаланыңыз, мысалы резервтік көшірмелер немесе аудит пен заңдық маңыздылықты қамтамасыз ету үшін белгіленген мерзімдер ішінде өзгермейтін түрде сақталуы тиіс деректер үшін.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=s3-critical-backups-protect-prepare]}
 
-AWS CLI [орнатылған және бапталғанына](/kz/storage/s3/connect/s3-cli) көз жеткізіңіз.
+AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған және бапталған]} екеніне көз жеткізіңіз.
 
-## 1. Бакетті дайындаңыз
+## {heading(1. Бакетті дайындаңыз)[id=s3-critical-backups-protect-create]}
 
-{tabs}
+1. Жаңа бакет жасаңыз:
 
-{tab(Жаңа бакет үшін)}
+   {include(../../_includes/_s3-manage-bucket.md)[tags=create_bucke,create_bucket_guide]}
 
-Объектілерді жоюдан бұғаттау мүмкіндігі бар жаңа бакет жасаңыз:
+1. {linkto(../../concepts/versioning#s3-concepts-versioning)[text=Нұсқалауды]} қосыңыз:
 
-   {include(/kz/_includes/_s3-manage-bucket.md)[tags=create_bucket_block]}
+   {include(../../_includes/_s3-manage-bucket.md)[tags=version_bucket]}
 
-{/tab}
+1. {linkto(../../concepts/objects-lock#s3-concepts-object-lock)[text=Объектілерді бұғаттауды]} қосыңыз:
 
-{tab(Бар бакет үшін)}
+   {include(../../_includes/_s3-manage-object.md)[tags=object_config_block]}
 
-Бакет объектілерін бұғаттауды конфигурациялаңыз:
-
-   {include(/kz/_includes/_s3-manage-object.md)[tags=object_config_block]}
-
-{/tab}
-
-{/tabs}
-
-## 2. Объектіні жүктеп, оған бұғаттауды орнатыңыз
+## {heading(2. Объектіні жүктеп, оған бұғаттауды орнатыңыз)[id=s3-critical-backups-protect-download]}
 
 1. Объект жасаңыз:
 
@@ -37,28 +31,28 @@ AWS CLI [орнатылған және бапталғанына](/kz/storage/s3/
    gzip <ИМЯ_ОБЪЕКТА>
    ```
 
-1. [Қатаң режимде](/kz/storage/s3/concepts/objects-lock#compliance-lock) (`COMPLIANCE`) уақытша бұғаттауды орнатып, объектіні жүктеңіз:
+1. Объектіні уақытша бұғаттауды {linkto(../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=қатаң режимде]} (`COMPLIANCE`) орната отырып жүктеңіз:
 
-   {include(/kz/_includes/_s3-manage-object.md)[tags=put_object]}
+   {include(../../_includes/_s3-manage-object.md)[tags=put_object]}
 
-## 3. Бұғаттаудың қолданылғанына көз жеткізіңіз
+## {heading(3. Бұғаттаудың қолданылғанына көз жеткізіңіз)[id=s3-critical-backups-protect-block-on]}
 
-{include(/kz/_includes/_s3-manage-object.md)[tags=object_state]}
+{include(../../_includes/_s3-manage-object.md)[tags=object_state]}
 
-Жауапта бұғаттау режимі мен аяқталу күнін растайтын JSON құрылымы болуы керек.
+Жауапта бұғаттау режимін және аяқталу күнін растайтын JSON-құрылым болуы тиіс.
 
-## 4. Объектіні жою мүмкін еместігін тексеріңіз
+## {heading(4. Объектіні жою мүмкін емес екеніне көз жеткізіңіз)[id=s3-critical-backups-protect-not-delete]}
 
-Объектіні жойып көріңіз:
+Объектіні жоюға әрекет жасап көріңіз:
 
-{include(/kz/_includes/_s3-manage-object.md)[tags=object_rm]}
+{include(../../_includes/_s3-manage-object.md)[tags=object_rm-single]}
 
-Жауап ретінде `Access Denied` қатесі келуі керек. Бұл белсенді WORM қорғанысын растайды.
+Жауап ретінде `Access Denied` қатесі келуі тиіс. Бұл белсенді WORM-қорғауды растайды.
 
-## 5. Объектіге қолжетімділікті тексеріңіз
+## {heading(5. Объектіге қолжетімділікті тексеріңіз)[id=s3-critical-backups-protect-access]}
 
 Объектіні жүктеп алыңыз:
 
-{include(/kz/_includes/_s3-manage-object.md)[tags=get_object]}
+{include(../../_includes/_s3-manage-object.md)[tags=get_object]}
 
 Объект оқу және жүктеп алу үшін қолжетімді болып қалады, бұл оны қалпына келтіру үшін пайдалануға мүмкіндік береді.

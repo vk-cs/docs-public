@@ -4,5 +4,12 @@
   "metaDescription": "СУБД сервисі объектілерін басқару үшін Terraform қалай пайдаланылады",
   "sectionTitle": "Cloud Databases",
   "icon": "",
-  "weight": 50
+  "weight": 50,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

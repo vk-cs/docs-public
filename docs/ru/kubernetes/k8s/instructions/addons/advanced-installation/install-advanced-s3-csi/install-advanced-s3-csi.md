@@ -1,17 +1,19 @@
+# {heading(Container Storage Interface для S3 (S3-CSI))[id=k8s-install-advanced-s3-csi]}
+
 {note:info}
-Этот аддон доступен только для кластеров [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Этот аддон доступен только для кластеров {linkto(../../cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
 {/note}
 
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-s3-csi-prep]}
 
 {include(/ru/_includes/_addon-prep.md)}
-1. [Создайте](/ru/storage/s3/instructions/access-management/access-keys#create_account_and_access_key) аккаунт VK Object Storage и сохраните на своем устройстве идентификатор ключа (**Access Key ID**) и секретный ключ (**Secret Key**). Используйте эти значения при установке аддона, чтобы у него был доступ к нужному хранилищу VK Object Storage.
+1. {linkto(/ru/storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=Создайте]} аккаунт {var(s3)} и сохраните на своем устройстве идентификатор ключа (**Access Key ID**) и секретный ключ (**Secret Key**). Используйте эти значения при установке аддона, чтобы у него был доступ к нужному хранилищу {var(s3)}.
 
    Если вы хотите использовать другое S3-совместимое хранилище, получите для него аналогичные данные авторизации у вашего поставщика.
 
 ## {heading(Установка аддона)[id=k8s-install-advanced-s3-csi-install]}
 
-Для аддона [S3-CSI](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-s3) доступно [несколько вариантов установки](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
+Для аддона {linkto(/ru/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-s3)[text=S3-CSI]} доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}.
 
 {tabs}
 
@@ -23,7 +25,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -55,16 +57,16 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Найдите в списке нужный кластер.
 
    1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-      Если такой группы нет — [добавьте ее](/ru/kubernetes/k8s/instructions/manage-node-group#add_group).
+      Если такой группы нет — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=добавьте ее]}.
 
-   1. [Задайте](/ru/kubernetes/k8s/instructions/manage-node-group#labels_taints) для этой группы узлов, если это еще не сделано:
+   1. {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=Задайте]} для этой группы узлов, если это еще не сделано:
 
       - Метку (label): ключ `addonNodes`, значение `dedicated`.
       - Ограничение (taint): эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.
@@ -79,7 +81,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -152,7 +154,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -181,7 +183,7 @@
 
 {/tabs}
 
-## {heading(Редактирование кода настройки аддона при установке)[id=edit-code]}
+## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-advanced-s3-csi-edit-code]}
 
 Редактирование кода аддона применимо для стандартной установки и установки на выделенные worker-узлы.
 

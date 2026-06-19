@@ -5,5 +5,12 @@
   "sectionTitle": "Объекты",
   "icon": "",
   "weight": 3,
-  "uuid": "be7ac214-48cf-402d-b42a-a8cfc8ab93ed"
+  "uuid": "be7ac214-48cf-402d-b42a-a8cfc8ab93ed",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

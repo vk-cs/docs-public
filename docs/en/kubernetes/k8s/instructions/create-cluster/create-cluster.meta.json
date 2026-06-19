@@ -5,5 +5,19 @@
   "sectionTitle": "Creating cluster",
   "icon": "",
   "weight": 1,
-  "uuid": "42a7cde9-fe73-4ffd-8589-b880148af9b0"
+  "uuid": "42a7cde9-fe73-4ffd-8589-b880148af9b0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

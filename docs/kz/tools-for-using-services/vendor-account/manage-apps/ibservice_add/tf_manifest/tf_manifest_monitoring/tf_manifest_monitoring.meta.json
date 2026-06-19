@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Мониторинг",
   "sectionTitle": "Мониторинг",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

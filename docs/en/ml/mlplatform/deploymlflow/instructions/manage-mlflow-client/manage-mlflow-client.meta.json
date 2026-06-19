@@ -1,9 +1,23 @@
 {
-    "title": "Managing instances with MLflow Client",
-      "shortDescription": "",
-      "metaDescription": "Managing instances with MLflow Client",
-    "sectionTitle": "Managing instances with MLflow Client",
-    "icon": "",
-    "weight": 1,
-    "uuid": "9b3a5770-12b3-4204-a10f-0cd6aad136d9"
+  "title": "Managing instances with MLflow Client",
+  "shortDescription": "",
+  "metaDescription": "Managing instances with MLflow Client",
+  "sectionTitle": "Managing instances with MLflow Client",
+  "icon": "",
+  "weight": 1,
+  "uuid": "9b3a5770-12b3-4204-a10f-0cd6aad136d9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

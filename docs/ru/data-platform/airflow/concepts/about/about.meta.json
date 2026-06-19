@@ -5,5 +5,11 @@
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,
-  "uuid": "b6886ba7-ec8b-4252-b2b8-8446ea362ab1"
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

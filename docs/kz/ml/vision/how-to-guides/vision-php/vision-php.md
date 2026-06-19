@@ -1,3 +1,5 @@
+# {heading(PHP тіліндегі интеграция мысалы)[id=vision-htg-vision-php]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Толық мысалды «[Python тіліндегі интеграция мысалы](../vision-py)» мақаласынан қараңыз. Бұл мақалада біз `persons/recognize`, `persons/set` және `persons/delete` сұрауларын орындаймыз. Ол үшін мыналар қажет болады:
@@ -7,15 +9,12 @@ sudo apt-get install php5-cli
 sudo apt-get install php5-curl
 ```
 
-## Тану сұрауы
+## {heading(Тану сұрауы)[id=vision-htg-vision-php-recondition-request]}
 
 [smarty.php](https://cloud.mail.ru/public/HqA7/ck6NPjotF) файлын жүктеп алыңыз.
 
 ```php
-php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" \
-examples/friends1.jpg \
-'{"space":"1", "images":[{"name":"examples/friends1.jpg"}]}'
+php examples/php/smarty.php "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" examples/friends1.jpg '{"space":"1", "images":[{"name":"examples/friends1.jpg"}]}'
 ```
 
 Жауап:
@@ -44,13 +43,10 @@ examples/friends1.jpg \
 }
 ```
 
-## Дерекқорға қосу сұрауы
+## {heading(Дерекқорға қосу сұрауы)[id=vision-htg-vision-php-add-db-request]}
 
 ```php
-php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" \
-examples/rachel-green.jpg \
-'{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
+php examples/php/smarty.php "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" examples/rachel-green.jpg '{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
 ```
 
 Егер сұрау дұрыс болса, жауап мынадай болады:
@@ -68,15 +64,12 @@ examples/rachel-green.jpg \
 }
 ```
 
-## Дерекқордан жою сұрауы
+## {heading(Дерекқордан жою сұрауы)[id=vision-htg-vision-php-delete-db-request]}
 
 Бұл сұрау үшін файл қажет емес, сондықтан жолдың орнына бос жолды береміз:
 
 ```php
-php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" \
-"" \
-'{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
+php examples/php/smarty.php "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="<ЗНАЧЕНИЕ_ТОКЕНА>" "" '{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
 ```
 
 Егер сұрау дұрыс болса, жауап мынадай болады:

@@ -5,6 +5,10 @@
   "sectionTitle": "Справочники по работе с приложениями",
   "weight": 6,
   "isBeta": true,
-  "hidden": true,
-  "uuid": "f134c654-09fa-4235-8e25-dbe1801058ee"
+  "uuid": "f134c654-09fa-4235-8e25-dbe1801058ee",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

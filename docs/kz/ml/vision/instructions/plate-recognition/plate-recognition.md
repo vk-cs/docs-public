@@ -1,33 +1,35 @@
+# {heading(Автомобиль нөмірлерін тану)[id=vision-instructions-plate-recognition]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Автомобиль нөмірлерін тану — `detect` әдісін қолданудың жеке жағдайы — бұл әдіс фотосуреттен әртүрлі объектілерді табуға мүмкіндік береді.
 
-## Сұрау
+## {heading(Сұрау)[id=vision-instructions-plate-recognition-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
-| Параметр   | Тип | Мәні                                         |
+| Параметр   | Тип | Значение                                         |
 | -------------- | ------- | ---------------------------------------- |
 | oauth_token    | string  | OAuth2 access token (required non-empty) |
 | oauth_provider | string  | OAuth2 провайдері (required non-empty)    |
 
 Қолдау көрсетілетін OAuth2 провайдерлері:
 
-| Провайдер | Мәні `oauth_provider` | Токенді алу                                    |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаланы](../../quick-start/auth-vision) қараңыз|
-| VK Cloud  | mr                        | [мақаланы](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаланы]} қараңыз|
+| {var(cloud)}  | mr                        | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаланы]} қараңыз|
 
 Сұрау параметрлері `name="meta"` параметрімен сұрау денесінде JSON форматында беріледі:
 
-| Параметр     | Тип          | Мәні                    |
+| Параметр     | Тип          | Значение                    |
 | ------------ | ------------ | --------------------------- |
 | mode         | []string     | Берілген кескіндерден іздеу қажет объектілер түрлері (required non-empty) |
 | images       | []image_meta | Берілетін кескіндердің метадеректері (required non-empty)                        |
 
 `mode` мүмкін мәндері:
 
-| Параметр    | Мәні                                   |
+| Параметр    | Значение                                   |
 |-------------|--------------------------------------------|
 | object      | Кескіннен объектілерді іздеу              |
 | scene       | Кескіннен сахналарды іздеу                |
@@ -43,7 +45,7 @@
 
 `image_meta` параметрлері:
 
-| Параметр | Тип     | Мәні                      |
+| Параметр | Тип     | Значение                      |
 | -------- | ------- | ----------------------------- |
 | name     | string  | Сұраудағы және жауаптағы файлдарды сәйкестендіруге арналған файл атаулары (required non-empty) |
 
@@ -51,19 +53,14 @@
 
 {note:warn}
 
-Әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-## Сұрау үлгісі
+## {heading(Сұрау үлгісі)[id=vision-instructions-plate-recognition-request-example]}
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@objects_detect_ok_car_number.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@objects_detect_ok_car_number.jpg;type=image/jpeg'   -F 'meta={
   "mode": [
     "car_number"
 
@@ -76,16 +73,16 @@ curl -X 'POST' \
 }'
 ```
 
-## Жауап
+## {heading(Жауап)[id=vision-instructions-plate-recognition-request-answer]}
 
-| Параметр     | Тип     | Мәні                                                |
+| Параметр     | Тип     | Значение                                                |
 | ------------ | ------- | ------------------------------------------------------- |
 | status       | int     | Сәтті болған жағдайда `200`, әйтпесе қате сипаттамасы `body` ішінде болады |
 | body         | string  | Жауап денесі |
 
 `response` параметрлері:
 
-| Параметр           | Тип      | Мәні                |
+| Параметр           | Тип      | Значение                |
 | ------------------ | -------- | ----------------------- |
 | scene_labels       | []object | Сахналары бар әрбір файл үшін жауаптар массиві (болмауы мүмкін)                                            |
 | object_labels      | []object | Объектілері бар әрбір файл үшін жауаптар массиві (болмауы мүмкін)                                            |
@@ -95,7 +92,7 @@ curl -X 'POST' \
 
 `object` параметрлері:
 
-| Параметр  | Тип      | Мәні                                              |
+| Параметр  | Тип      | Значение                                              |
 | --------- | -------- | ----------------------------------------------------- |
 | status    | enum     | Орындау нәтижесі:<br>- `0` — сәтті;<br>- `1` — беттен табылған құжат түрлерінің массиві;<br>- `2` — уақытша қате                                  |
 | error     | string   | Қатенің мәтіндік сипаттамасы (optional)                  |
@@ -105,7 +102,7 @@ curl -X 'POST' \
 
 `label` параметрлері:
 
-| Параметр       | Мәні                                                                  |
+| Параметр       | Значение                                                                  |
 | -------------- | ------------------------------------------------------------------------- |
 | eng            | Табылған объектіге арналған белгі (атауы) ағылшын тілінде                     |
 | rus            | Табылған объектінің белгісі (атауы) орыс тілінде                            |
@@ -115,7 +112,7 @@ curl -X 'POST' \
 | coord          | Табылған объектінің координаттары (optional)                                  |
 | types_prob     | Нөмірлік белгілер түрлерінің ықтималдықтар массиві. Қазіргі уақытта келесі түрлерге қолдау көрсетіледі: `rus` — Ресей нөмірлерінің барлық түрлері, `cis` — ТМД нөмірлері (жеке және украиналық әскери нөмірлерден басқа), `eu` — Еуропаның бірқабатты нөмірлері (optional, only for car_number mode) |
 
-## Жауап үлгісі
+## {heading(Жауап үлгісі)[id=vision-instructions-plate-recognition-request-answer-example]}
 
 {cut(JSON форматындағы жауап)}
 
@@ -189,19 +186,14 @@ curl -X 'POST' \
 
 {/cut}
 
-## Қосымша мысалдар
+## {heading(Қосымша мысалдар)[id=vision-instructions-plate-recognition-request-extra-example]}
 
-### Номера автомобиля нет на изображении
+### {heading(Кескінде автомобиль нөмірі жоқ)[id=vision-instructions-plate-recognition-request-extra-example-no-plate]}
 
 Сұрау үлгісі:
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg'   -F 'meta={
   "mode": [
     "car_number"
   ],
@@ -231,17 +223,12 @@ curl -X 'POST' \
 }
 ```
 
-### Бос кескін
+### {heading(Бос кескін)[id=vision-instructions-plate-recognition-request-extra-example-empty-img]}
 
 Сұрау үлгісі:
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@empty.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@empty.jpg;type=image/jpeg'   -F 'meta={
   "mode": [
     "car_number"
 
@@ -265,17 +252,12 @@ curl -X 'POST' \
 }
 ```
 
-### Невалидный JSON (несовпадение имени файлов с формой)
+### {heading(Жарамсыз JSON (файл атауларының формамен сәйкес келмеуі))[id=vision-instructions-plate-recognition-request-extra-example-invalid-json]}
 
 Сұрау үлгісі:
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@persons_set_ok.jpg;type=image/jpeg'   -F 'meta={
   "mode": [
     "car_number"
 

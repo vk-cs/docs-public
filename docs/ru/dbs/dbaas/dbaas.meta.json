@@ -5,31 +5,14 @@
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 7,
-  "relativeSections": [
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/clickhouse"
-    },
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/mongodb"
-    },
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/mysql"
-    },
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/opensearch"
-    },
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/postgresql"
-    },
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/redis"
-    },
-    {
-      "partialPath": "/ru/dbs/dbaas/concepts/types/tarantool"
-    },
-    {
-      "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance"
-    }
-  ],
-  "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
+  "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

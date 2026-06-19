@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud қолдайтын деректерді сақтау түрлерінің артықшылықтары мен кемшіліктері",
   "metaDescription": "Объектілік сақтау орындары, блоктық сақтау орындары, файлдық сақтау орындары",
   "sectionTitle": "Деректерді сақтау түрлері",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

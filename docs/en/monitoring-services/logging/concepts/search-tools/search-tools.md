@@ -7,9 +7,9 @@ To filter logs, use the filter parameters in the search field:
 
 [cols="1,1,3,2", options="header"]
 |===
-| Parameter 
-| Format 
-| Description 
+| Parameter
+| Format
+| Description
 | Example
 
 | `message`
@@ -58,7 +58,7 @@ If you do not specify an expression with fields in the search, then by default t
 
 [cols="1,2", options="header"]
 |===
-| Operator 
+| Operator
 | Decoding
 
 | `=`
@@ -96,5 +96,5 @@ You can combine several conditions in one filter using logical operators:
 Use parentheses to specify a specific order of calculations:
 
 ```sql
-<PARAMETER_1>: "<VALUE_1>" AND (<PARAMETER_2> = "<VALUE_2>" OR <PARAMETER_3> < "<VALUE_3>")
+PARAMETER_1: "VALUE_1" AND (PARAMETER_2 = "VALUE_2" OR PARAMETER_3 < "VALUE_3")
 ```

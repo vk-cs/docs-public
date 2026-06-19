@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение к кластеру Spark",
   "icon": "",
   "weight": 3,
-  "uuid": "b23acce5-bb06-4289-a10b-f28290cf9dda"
+  "uuid": "b23acce5-bb06-4289-a10b-f28290cf9dda",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

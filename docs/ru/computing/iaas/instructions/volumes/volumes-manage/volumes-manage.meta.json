@@ -5,5 +5,15 @@
   "sectionTitle": "Управление дисками",
   "icon": "",
   "weight": 3,
-  "uuid": "7807031a-32a5-4fb9-9e0f-965f8993b16b"
+  "uuid": "7807031a-32a5-4fb9-9e0f-965f8993b16b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

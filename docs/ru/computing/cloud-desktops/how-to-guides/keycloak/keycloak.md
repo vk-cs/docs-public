@@ -1,8 +1,10 @@
+# {heading(Интеграция с Keycloak)[id=desktops-keycloak]}
+
 [Keycloak](https://www.keycloak.org/) — это система идентификации и управления доступом. Вы можете использовать Keycloak в сервисе Cloud Desktop в качестве поставщика удостоверений SAML.
 
 Далее показано, как подготовить Keycloak к работе с сервисом Cloud Desktop.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=desktops-keycloak-preparatory-steps]}
 
 1. Установите Keycloak, следуя указаниям [официальной документации](https://www.keycloak.org/getting-started/getting-started-docker).
 1. Авторизуйтесь в консоли администратора Keycloak.
@@ -11,7 +13,7 @@
    1. Раскройте список римлов в левом боковом меню и нажмите кнопку **Create realm**.
    1. Задайте имя нового рилма в поле **Realm name** и нажмите кнопку **Create**.
 
-## 1. Добавьте и настройте LDAP-провайдера
+## {heading(1. Добавьте и настройте LDAP-провайдера)[id=desktops-keycloak-ldap-add]}
 
 1. В боковом меню перейдите в раздел **User federation**.
 1. Нажмите кнопку **Add Ldap providers**.
@@ -52,7 +54,7 @@
 1. В блоке **Advanced settings** для всех параметров выберите значение `Off`.
 1. Сохраните настройки.
 
-## 2. Настройте мапперы (mapper)
+## {heading(2. Настройте мапперы (mapper))[id=desktops-keycloak-mapper-settings]}
 
 1. В разделе **User federation** нажмите на имя созданного LDAP-провайдера и перейдите на вкладку **Mappers**.
 1. Нажмите кнопку **Add mapper**.
@@ -91,7 +93,7 @@
 1. В списке **Action** выберите пункт **Sync LDAP groups to Keycloak**.
 1. В боковом меню перейдите в раздел **Groups** и убедитесь, что группы загружены и содержат пользователей.
 
-## 3. Создайте клиента для Keycloak
+## {heading(3. Создайте клиента для Keycloak)[id=desktops-keycloak-client-create]}
 
 1. В боковом меню перейдите в раздел **Clients**.
 1. Нажмите кнопку **Create client** и задайте параметры:
@@ -105,7 +107,7 @@
 1. Для параметра **Valid redirect URIs** укажите значение `*`, остальные поля оставьте пустыми.
 1. Сохраните настройки.
 
-## 4. Настройте мапперы для клиента
+## {heading(4. Настройте мапперы для клиента)[id=desktops-keycloak-mapper-client-settings]}
 
 1. На странице созданного клиента перейдите на вкладку **Keys**.
 1. Для параметра **Client signature required** установите значение `Off`.
@@ -134,11 +136,11 @@
 
 1. Сохраните настройки.
 
-## 5. Завершите настройку Keycloak
+## {heading(5. Завершите настройку Keycloak)[id=desktops-keycloak-settings-end]}
 
 1. В боковом меню перейдите в раздел **Realm Settings**.
 1. Для параметра **Require SSL** установите значение `None`.
-1. В блоке **Endpoints** скопируйте ссылку **SAML 2.0 Identity Provider Metadata**. При настройке [двухфакторной аутентификации с помощью сервиса SAML](../../instructions/config/setup-saml) ее нужно указать в качестве значения параметра **URL метаданных**.
+1. В блоке **Endpoints** скопируйте ссылку **SAML 2.0 Identity Provider Metadata**. При настройке {linkto(../../../../computing/cloud-desktops/instructions/config/setup-saml#desktops-setup-saml)[text=двухфакторной аутентификации с помощью сервиса SAML]} ее нужно указать в качестве значения параметра **URL метаданных**.
 1. В боковом меню перейдите в раздел **User Federation** и нажмите на имя созданного LDAP-провайдера.
 1. В списке **Action** выберите пункт **Sync all users**.
 

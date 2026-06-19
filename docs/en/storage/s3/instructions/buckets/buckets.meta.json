@@ -5,5 +5,19 @@
   "sectionTitle": "Bucket",
   "icon": "",
   "weight": 2,
-  "uuid": "90bfea23-c2fc-4d29-8ec8-be1265ef8623"
+  "uuid": "90bfea23-c2fc-4d29-8ec8-be1265ef8623",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

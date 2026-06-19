@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud ішіндегі Cloud Backup сервисінің жұмыс істеу қағидаттарының сипаттамасы.",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

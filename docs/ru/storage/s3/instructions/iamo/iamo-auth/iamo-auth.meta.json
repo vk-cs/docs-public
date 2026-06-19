@@ -1,0 +1,16 @@
+{
+  "title": "Вход в личный кабинет IAM Only",
+  "shortDescription": "Как авторизоваться в личном кабинете",
+  "metaDescription": "IAM Only — веб‑интерфейс для VK Object Storage. В статье описана авторизация в IAM Only: как открыть страницу входа, какие существуют особенности и ограничения.",
+  "sectionTitle": "Вход в личный кабинет IAM Only",
+  "weight": 1,
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "",
+  "createdAt": "",
+  "updatedAt": ""
+}

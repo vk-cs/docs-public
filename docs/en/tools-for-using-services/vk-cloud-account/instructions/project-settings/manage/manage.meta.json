@@ -1,9 +1,14 @@
 {
-    "title": "Project settings",
-      "shortDescription": "Obtaining the project identifier, renaming the project",
-      "metaDescription": "Obtaining the project identifier, renaming the project.",
-    "sectionTitle": "Project settings",
-    "icon": "",
-    "weight": 2,
-    "uuid": "d136cd53-e630-4903-b5ae-95ea30791480"
+  "title": "Project settings",
+  "shortDescription": "Obtaining the project identifier, renaming the project",
+  "metaDescription": "Obtaining the project identifier, renaming the project.",
+  "sectionTitle": "Project settings",
+  "icon": "",
+  "weight": 2,
+  "uuid": "d136cd53-e630-4903-b5ae-95ea30791480",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

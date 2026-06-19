@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание Meilisearch",
   "icon": "",
   "weight": 12,
-  "uuid": "fd9c7f36-0cfc-4d21-b99a-f2d2d46385de"
+  "uuid": "fd9c7f36-0cfc-4d21-b99a-f2d2d46385de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

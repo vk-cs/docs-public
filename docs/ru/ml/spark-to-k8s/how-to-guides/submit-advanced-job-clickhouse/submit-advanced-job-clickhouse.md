@@ -1,14 +1,16 @@
+# {heading(Продвинутая работа с заданиями Spark)[id=mlspark-htg-advanced]}
+
 Задания Spark можно отправлять на кластер разными способами:
 
-- Для приложений Spark, у которых нет зависимостей, достаточно передать код приложения в манифесте задания. Этот подход показан [на примере вычисления числа π](../submit-basic-job-pi).
+- Для приложений Spark, у которых нет зависимостей, достаточно передать код приложения в манифесте задания. Этот подход показан {linkto(../submit-basic-job-pi#mlspark-htg-basic)[text=на примере вычисления числа π]}.
 - Для приложений Spark, которые требуют дополнительные артефакты для своей работы, необходимо вручную добавить нужные артефакты в бакет [VK Object Storage](/ru/storage/s3) и отредактировать манифест задания. Этот подход будет показан далее.
 
 Для примера будет использоваться приложение, которое выполняет SQL-запрос к ClickHouse, развернутому в виде инстанса [Cloud Databases](/ru/dbs/dbaas).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=mlspark-htg-advanced-prerequirements]}
 
-1. [Установите библиотеку](../../ml-platform-library/install), если это еще не сделано.
-1. [Создайте токен доступа](../../ml-platform-library/authz) с ролью `Администратор`, если это еще не сделано. Этот токен нужен для работы с библиотекой.
+1. {linkto(../../ml-platform-library/install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../ml-platform-library/authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано. Этот токен нужен для работы с библиотекой.
 
    {note:err}
 
@@ -18,7 +20,7 @@
 
    {/note}
 
-1. [Создайте](../../instructions/create) кластер Cloud Spark.
+1. {linkto(../../instructions/create#mlspark-instructions-create)[text=Создайте]} кластер Cloud Spark.
 
    Параметры кластера выберите на свое усмотрение.
 
@@ -49,13 +51,13 @@
 
 1. Узнайте IP-адрес, назначенный созданному инстансу ClickHouse:
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится инстанс БД.
    1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
    1. Нажмите на имя инстанса и перейдите на вкладку **Информация**.
    1. Запишите внешний IP-адрес инстанса.
 
-## 1. Создайте файл с кодом приложения Spark
+## {heading(1. Создайте файл с кодом приложения Spark)[id=mlspark-htg-advanced-create-spark-file]}
 
 Создайте файл `query-clickhouse.py` со следующим содержимым:
 
@@ -99,11 +101,11 @@ spark.stop()
 - Подключение к ClickHouse выполняется по IP-адресу `CH_IP` с помощью драйвера, который хранится в JAR-файле `CH_DRIVER_JAR`. Файл драйвера будет загружен позднее.
 - Аутентификация в ClickHouse выполняется с помощью реквизитов `CH_USER` и `CH_PASSWORD`. Такой подход позволяет избежать размещения чувствительных данных непосредственно в коде.
 
-Все упомянутые переменные среды окружения [будут заданы позднее](#3_otpravte_zadanie_spark_na_klaster) при отправке задания Spark на кластер.
+Все упомянутые переменные среды окружения [будут заданы позднее](#mlspark-htg-advanced-send-to-cluster) при отправке задания Spark на кластер.
 
-## 2. Загрузите необходимые файлы в бакет
+## {heading(2. Загрузите необходимые файлы в бакет)[id=mlspark-htg-advanced-upload-to-bucket]}
 
-1. Определите имя бакета VK Object Storage, который используется кластером:
+1. Определите имя бакета {var(s3)}, который используется кластером:
 
    1. Получите информацию о кластерах Spark в проекте, выполнив скрипт:
 
@@ -121,9 +123,9 @@ spark.stop()
    1. Найдите необходимую информацию:
 
       - идентификатор кластера (содержится в поле `id`);
-      - имя бакета VK Object Storage (содержится в поле `s3_bucket_name`).
+      - имя бакета {var(s3)} (содержится в поле `s3_bucket_name`).
 
-1. [Загрузите](/ru/storage/s3/instructions/objects/upload-object#standard_upload) файлы в директорию `spark-files` этого бакета:
+1. [Загрузите](/ru/storage/s3/instructions/objects/upload-object#s3-instructions-upload-object-standard) файлы в директорию `spark-files` этого бакета:
 
    - `query-clickhouse.py` с кодом приложения Spark.
    - [clickhouse-jdbc-0.5.0-shaded.jar](https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/0.5.0/clickhouse-jdbc-0.5.0-shaded.jar) с JDBC-драйвером для ClickHouse.
@@ -140,7 +142,7 @@ spark.stop()
 
 При отправке задания Spark будут указаны пути к файлам, загруженным в бакет. Кластер Cloud Spark уже имеет доступ к объектам из этого бакета, дополнительные настройки не нужны.
 
-## 3. Отправьте задание Spark на кластер
+## {heading(3. Отправьте задание Spark на кластер)[id=mlspark-htg-advanced-send-to-cluster]}
 
 1. Создайте файл `clickhouse-secret.yaml` со следующим содержимым:
 
@@ -207,9 +209,9 @@ spark.stop()
    - Путь к исполняемому файлу приложения Spark в `spark_job_manifest.main_app_file`;
    - Список путей к JAR-файлам, необходимых приложению (в данном случае нужен один файл с JDBC-драйвером). Для добавления путей к этим файлам используется функция `spark_job_manifest.add_jars()`.
 
-   Также в манифест добавлены значения [необходимых переменных среды окружения](#1_sozdayte_fayl_s_kodom_prilozheniya_spark). Переменные `CH_USER` и `CH_PASSWORD` используются для аутентификации в ClickHouse, поэтому их значения извлекаются из секрета Kubernetes `clickhouse-secret`. Этот секрет был предварительно создан из файла `clickhouse-secret.yaml`.
+   Также в манифест добавлены значения [необходимых переменных среды окружения](#mlspark-htg-advanced-create-spark-file). Переменные `CH_USER` и `CH_PASSWORD` используются для аутентификации в ClickHouse, поэтому их значения извлекаются из секрета Kubernetes `clickhouse-secret`. Этот секрет был предварительно создан из файла `clickhouse-secret.yaml`.
 
-## 4. Отслеживайте состояние задания Spark
+## {heading(4. Отслеживайте состояние задания Spark)[id=mlspark-htg-advanced-check-jobs]}
 
 1. Убедитесь, что в логах задания появился результат выполнения SQL-запроса к ClickHouse. Если результат не появился, запустите скрипт для получения логов еще раз: могут быть выведены промежуточные логи работы на момент, когда задание еще не завершилось.
 
@@ -279,12 +281,12 @@ spark.stop()
    print(events)
    ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=mlspark-htg-advanced-delete-unused-resources]}
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. Удалите кластер Cloud Spark.
 1. Удалите реестр Docker для этого кластера.
-1. Удалите [объекты из бакета](/ru/storage/s3/instructions/objects/manage-object#udalenie_obektov) и [сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete), который использовался этим кластером.
+1. Удалите [объекты из бакета](/ru/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete) и [сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete), который использовался этим кластером.
 1. [Удалите токен доступа](../../ml-platform-library/authz#udalenie_tokena_dostupa).
-1. [Удалите инстанс ClickHouse](/ru/dbs/dbaas/instructions/manage-instance/clickhouse#udalenie_instansa_bd).
+1. [Удалите инстанс ClickHouse](/ru/dbs/dbaas/instructions/manage-instance/clickhouse#dbaas-clickhouse-delete-instance).

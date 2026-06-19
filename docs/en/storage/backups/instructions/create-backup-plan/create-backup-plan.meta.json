@@ -1,13 +1,18 @@
 {
-    "title": "Creating backup plans",
-      "shortDescription": "How to create a backup plan for a VM, DB or analytical DB",
-      "metaDescription": "How to create a backup plan for a VM, DB or analytical DB",
-    "sectionTitle": "Creating backup plans",
-    "icon": "",
-    "weight": 0,
-    "uuid": "7b5a792a-8914-4833-a171-b10bce981fed",
-    "additionalUuids": [
-        "87f6b148-a068-4ac5-b0b4-021bbb720797",
-        "5ede036c-195a-43fb-9205-fa6a8b9912a4"
-    ] 
+  "title": "Creating backup plans",
+  "shortDescription": "How to create a backup plan for a VM, DB or analytical DB",
+  "metaDescription": "How to create a backup plan for a VM, DB or analytical DB",
+  "sectionTitle": "Creating backup plans",
+  "icon": "",
+  "weight": 0,
+  "uuid": "7b5a792a-8914-4833-a171-b10bce981fed",
+  "additionalUuids": [
+    "87f6b148-a068-4ac5-b0b4-021bbb720797",
+    "5ede036c-195a-43fb-9205-fa6a8b9912a4"
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

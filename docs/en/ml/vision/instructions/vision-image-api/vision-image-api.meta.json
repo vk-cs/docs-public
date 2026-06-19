@@ -1,11 +1,25 @@
 {
-    "title": "Image processing methods",
-      "shortDescription": "Improving the quality of images",
-      "metaDescription": "The improve method is used to improve photos. Request Authorization data is passed in the request string: Parameter Value Type oauth_token string OAu",
-    "sectionTitle": "Image processing methods",
-    "icon": "",
-    "additionalUuids": [
-        "5dcafd7d-4268-42ba-8724-dc787501dd61"
-    ],
-    "uuid": "6a8f8a26-ae07-4da4-8948-126a7acb0344"
+  "title": "Image processing methods",
+  "shortDescription": "Improving the quality of images",
+  "metaDescription": "The improve method is used to improve photos. Request Authorization data is passed in the request string: Parameter Value Type oauth_token string OAu",
+  "sectionTitle": "Image processing methods",
+  "icon": "",
+  "additionalUuids": [
+    "5dcafd7d-4268-42ba-8724-dc787501dd61"
+  ],
+  "uuid": "6a8f8a26-ae07-4da4-8948-126a7acb0344",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

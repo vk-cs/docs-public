@@ -14,22 +14,22 @@
 `uuid`
 |Идентификатор инстанса сервиса
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |
 `hosts`
 |Список имен хостов для инициализации агента
 |list, элементы списка — string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `options`
 |Опции инициализации агента
 |set, аргументы списка — в [таблице](#agent_init_options).
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 
 ### {heading(Опции инициализации агента)[id=agent_init_options]}
@@ -81,4 +81,4 @@ resource "ivkcs_agent_init" "init" {
 * `<UUID>` — идентификатор инстанса сервиса.
 * `<СПИСОК_ИМЕН_ХОСТОВ>` — список имен хостов, на которых будет выполняться мониторинг. Имена хостов должны в точности соответствовать именам ВМ, определенным в вашей конфигурации Terraform (обычно в ресурсе `vkcs_compute_instance`).
 
-{include(/ru/_includes/_tf_hosts.md)}
+{include(../../../../../../_includes/_tf_hosts.md)}

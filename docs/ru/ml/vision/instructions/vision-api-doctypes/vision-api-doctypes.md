@@ -1,10 +1,12 @@
+# {heading(Распознавание типов документов)[id=vision-instructions-vision-api-doctypes]}
+
 Данный метод позволяет определить является ли фотография документом и возможный тип документа.
 
 HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/docs/detect`
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-vision-api-doctypes-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -17,7 +19,7 @@ ENDPOINT: `/api/v1/docs/detect`
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -35,11 +37,11 @@ ENDPOINT: `/api/v1/docs/detect`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-vision-api-doctypes-request-example]}
   
 ```curl
 curl -X 'POST' \
@@ -56,7 +58,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-vision-api-doctypes-answer]}
 
 | Параметр | Тип      | Значение                                                 |
 |----------|----------|----------------------------------------------------------|
@@ -119,7 +121,7 @@ curl -X 'POST' \
 | Zagranpasport     | Загранпаспорт      |
 | Zayavlenie        | Заявление          |
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-vision-api-doctypes-answer-example]}
 
 ```json
 {
@@ -150,9 +152,9 @@ curl -X 'POST' \
 }
 ```
 
-## Дополнительные примеры
+## {heading(Дополнительные примеры)[id=vision-instructions-vision-api-doctypes-extra-examples]}
 
-### Распознавание водительского удостоверения
+### {heading(Распознавание водительского удостоверения)[id=vision-instructions-vision-api-doctypes-extra-examples-driver-id]}
 
 Пример запроса:
 
@@ -202,7 +204,7 @@ curl -X 'POST' \
 }
 ```
 
-### На изображении нет документа
+### {heading(На изображении нет документа)[id=vision-instructions-vision-api-doctypes-extra-examples-no-doc]}
 
 Пример запроса:
 
@@ -246,7 +248,7 @@ curl -X 'POST' \
 }
 ```
 
-### Ошибка в формировании JSON (несовпадение имени в meta и изображении)
+### {heading(Ошибка в формировании JSON (несовпадение имени в meta и изображении))[id=vision-instructions-vision-api-doctypes-extra-examples-json-error]}
 
 Пример запроса:
 

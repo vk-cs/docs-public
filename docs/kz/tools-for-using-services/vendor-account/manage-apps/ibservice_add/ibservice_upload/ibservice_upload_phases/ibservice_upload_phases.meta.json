@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Қызметті жүктеу кезеңдері",
   "sectionTitle": "Қызметті жүктеу кезеңдері",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

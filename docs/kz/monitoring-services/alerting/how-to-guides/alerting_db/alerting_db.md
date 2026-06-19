@@ -1,16 +1,18 @@
+# {heading(PostgreSQL дерекқорлары метрикаларындағы өзгерістер туралы хабарландыруларды баптау)[id=alerting-alerting-db]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұлттық қосымшалардың тұрақты жұмысын қолдау үшін PostgreSQL дерекқорлары метрикаларының мониторингін және олардағы өзгерістер туралы хабарландыруларды баптаңыз.
 
-## {heading(Дайындық қадамдары)[id=prepare]}
+## {heading(Дайындық қадамдары)[id=alerting-db-prepare]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. [Құрыңыз](/kz/dbs/dbaas/instructions/create/create-single-replica) PostgreSQL БД инстансын, егер бұл әлі жасалмаған болса.
+1. {linkto(../../../../dbs/dbaas/instructions/create/create-single-replica#dbaas-create-single-replica)[text=Құрыңыз]} PostgreSQL БД инстансын, егер бұл әлі жасалмаған болса.
 
-## {counter(alerting-db)}. БД бетіндегі мониторинг деректерін қараңыз
+## {heading({counter(alerting-db)}. БД бетіндегі мониторинг деректерін қараңыз)[id=alerting-db-view]}
 
-1. [Қараңыз](/kz/dbs/dbaas/monitoring/postgresql) БД инстансы бетіндегі мониторинг деректерін. Келесі метрикаларға назар аударыңыз:
+1. {linkto(../../../../dbs/dbaas/monitoring/postgresql#dbaas-monitoring-postgresql-monitoring-data)[text=Қараңыз]} БД инстансы бетіндегі мониторинг деректерін. Келесі метрикаларға назар аударыңыз:
 
    [cols="1,3"]
    |===
@@ -30,12 +32,12 @@
    |Түйіндегі жалпы көлемнен пайдаланылған диск кеңістігінің пайызы
    |===
 
-1. [Қосыңыз](/kz/dbs/dbaas/monitoring/postgresql#bd_monitoringi_derekterin_oz_grafikterinizge_kosu) оларға жылдам қол жеткізу үшін мониторинг деректерін өз графиктеріңізге.
+1. {linkto(../../../../dbs/dbaas/monitoring/postgresql#dbaas-monitoring-postgresql-add-monitoring-data)[text=Қосыңыз]} оларға жылдам қол жеткізу үшін мониторинг деректерін өз графиктеріңізге.
 
-## {counter(alerting-db)}. Хабарландыруларды баптаңыз
+## {heading({counter(alerting-db)}. Хабарландыруларды баптаңыз)[id=alerting-db-notifications]}
 
-1. [Құрыңыз](/kz/monitoring-services/alerting/instructions/notification#notification_add) бір немесе бірнеше хабарландыру арнасын.
-1. [Құрыңыз](/kz/monitoring-services/alerting/instructions/triggers#triggers_add) келесі параметрлері бар триггерлерді:
+1. {linkto(../../instructions/notification#alerting-notification-add)[text=Құрыңыз]} бір немесе бірнеше хабарландыру арнасын.
+1. {linkto(../../instructions/triggers#alerting-triggers-add)[text=Құрыңыз]} келесі параметрлері бар триггерлерді:
 
    [cols="1,1,1", options="header"]
    |===
@@ -70,7 +72,7 @@
 
 Шекті мәнге жеткен кезде инцидент жасалып, көрсетілген хабарландыру арнасына хабарлама жіберіледі.
 
-## {counter(alerting-db)}. Мониторинг деректерін пайдаланыңыз
+## {heading({counter(alerting-db)}. Мониторинг деректерін пайдаланыңыз)[id=alerting-db-use]}
 
 CPU (**Current CPU**) және жедел жад (**RAM Used**) утилизациясының жоғары көрсеткіштері, диск ішкі жүйесіне түсетін жүктеме (**Disk used**), сондай-ақ дерекқорға түсетін қарқынды немесе біркелкі емес жүктеме (**Current IOWait**) түйіндерге жоғары жүктеме түскенін немесе индекстер мен сұраулардың оңтайландырылмағанын көрсетеді.
 
@@ -82,16 +84,16 @@ CPU (**Current CPU**) және жедел жад (**RAM Used**) утилизац
 
 - Осындай баяу сұраулардағы тар орындарды табу үшін [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) пәрменін пайдаланыңыз.
 
-  Индекстерді пайдаланбайтын сұрауларға (`Seq Scan`). [ ішіндегі жолдар саны көп) назар аударыңыз. Қажетті индекстерді ](https://www.postgresql.org/docs/current/sql-createindex.html)құрыңыз[ немесе ](https://www.postgresql.org/docs/current/sql-reindex.html)жаңартыңыз
+  Индекстерді пайдаланбайтын сұрауларға (`Seq Scan` ішіндегі жолдар саны көп) назар аударыңыз. Қажетті индекстерді [құрыңыз](https://www.postgresql.org/docs/current/sql-createindex.html) немесе [жаңартыңыз](https://www.postgresql.org/docs/current/sql-reindex.html).
 
 Бос қосылымдардың төмен пайызы (**Free connections**) бір мезгілде қосылған клиенттердің көп екенін де, ашық қосылымды тым ұзақ пайдаланатын ұзақ транзакциялар бар екенін де көрсетуі мүмкін.
 
 Ресурстарды пайдалануды оңтайландырыңыз:
 
-- [Параметр мәнін арттырыңыз](/kz/dbs/dbaas/instructions/db-config) `max_connections`.
+- {linkto(../../../../dbs/dbaas/instructions/db-config#dbaas-db-config)[text=Параметр мәнін арттырыңыз]} `max_connections`.
 - Ұзақ транзакциялар болмауы үшін сұрауларды оңтайландырыңыз.
 - Серверге түсетін жүктемені азайту және ресурстарды пайдалануды оңтайландыру үшін [PgBouncer](https://www.pgbouncer.org/) пайдаланыңыз.
 
-## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=delete]}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=alerting-db-delete]}
 
-Жайылған БД инстансы [тарифтелмейді](/kz/dbs/dbaas/tariffication) және есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса, [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/postgresql#dk_danasyn_nemese_onyn_hosttaryn_zhoyu) оны.
+Жайылған БД инстансы {ifdef(public)}{linkto(../../../../dbs/dbaas/tariffication#dbaas-tariffication)[text=тарификацияланады]} және {/ifdef}есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса, {linkto(../../../../dbs/dbaas/instructions/manage-instance/postgresql#dbaas-postgresql-disk-delete)[text=жойыңыз]} оны.

@@ -1,9 +1,14 @@
 {
-    "title": "Создание проекта",
-      "shortDescription": "Создание проекта на платформе VK Cloud",
-      "metaDescription": "Описание создания проекта на платформе VK Cloud.",
-    "sectionTitle": "Создание проекта",
-    "icon": "",
-    "weight": 0,
-    "uuid": "53317561-3b7f-4a60-86e4-4913f3aa8d99"
+  "title": "Создание проекта",
+  "shortDescription": "Создание проекта на платформе {var(cloud)}",
+  "metaDescription": "Описание создания проекта на платформе VK Cloud.",
+  "sectionTitle": "Создание проекта",
+  "icon": "",
+  "weight": 0,
+  "uuid": "53317561-3b7f-4a60-86e4-4913f3aa8d99",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,12 +1,26 @@
 {
-    "title": "Настройка авторазвертывания приложения в кластер Kubernetes",
-      "shortDescription": "",
-      "metaDescription": "В данной статье рассмотрим, как настроить авторазвертывание приложения в кластер Kubernetes. Перед этим: Установите и настройте Docker. Установите и настро",
-    "sectionTitle": "Настройка авторазвертывания приложения в кластер Kubernetes",
-    "icon": "",
-    "additionalUuids": [
-        "a9770e9c-920f-4422-94ed-0609208df70a"
-    ],
-    "weight": 0,
-    "uuid": "5af3f82b-3d23-4167-a4c3-bd129dc2cf18"
+  "title": "Настройка авторазвертывания приложения в кластер Kubernetes",
+  "shortDescription": "",
+  "metaDescription": "В данной статье рассмотрим, как настроить авторазвертывание приложения в кластер Kubernetes. Перед этим: Установите и настройте Docker. Установите и настро",
+  "sectionTitle": "Настройка авторазвертывания приложения в кластер Kubernetes",
+  "icon": "",
+  "additionalUuids": [
+    "a9770e9c-920f-4422-94ed-0609208df70a"
+  ],
+  "weight": 0,
+  "uuid": "5af3f82b-3d23-4167-a4c3-bd129dc2cf18",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

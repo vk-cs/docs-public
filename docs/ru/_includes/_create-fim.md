@@ -1,4 +1,4 @@
-Создавать федерации удостоверений VK Cloud могут только пользователи с [ролью](/ru/access/iam/concepts/rolesandpermissions) владельца проекта.
+Создавать федерации удостоверений VK Cloud могут только пользователи с {linkto(../../../account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролью]} владельца проекта.
 
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений** на вкладку **Федерации**.

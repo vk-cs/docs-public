@@ -5,5 +5,19 @@
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 4,
-  "uuid": "d2fde7ba-e4e9-4b28-8b1a-f47b6deb7780"
+  "uuid": "d2fde7ba-e4e9-4b28-8b1a-f47b6deb7780",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

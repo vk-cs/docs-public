@@ -4,5 +4,20 @@
   "metaDescription": "Kubernetes кластерлерін SDN Sprut-қа қалай көшіруге болады",
   "sectionTitle": "Кластерлердің көші-қоны",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "uuid": "ea85d4d4-b628-45f7-8e9a-95d4100281ba",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

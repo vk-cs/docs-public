@@ -1,12 +1,26 @@
 {
-  "title": "ИИ-консультант VK Cloud",
-  "shortDescription": "Как устроен ИИ-консультант VK Cloud и как его наиболее эффективно использовать",
+  "title": "ИИ-консультант {var(cloud)}",
+  "shortDescription": "Как устроен ИИ-консультант {var(cloud)} и как его наиболее эффективно использовать",
   "metaDescription": "Как устроен ИИ-консультант VK Cloud и как его наиболее эффективно использовать",
-  "sectionTitle": "ИИ-консультант VK Cloud",
+  "sectionTitle": "ИИ-консультант {var(cloud)}",
   "icon": "",
   "weight": 1,
   "additionalUuids": [
     "b44f31e2-8836-480e-bd58-e7ae74d8ce33"
   ],
-  "uuid": "9c6ea3e1-2573-4430-b994-c9eae6717dd9"
+  "uuid": "9c6ea3e1-2573-4430-b994-c9eae6717dd9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

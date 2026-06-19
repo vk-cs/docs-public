@@ -1,19 +1,21 @@
-Сервисные учетные записи (СУЗ) — специальные учетные записи, предназначенные для программ. От имени СУЗ программы могут управлять ресурсами VK Cloud и взаимодействовать друг с другом без участия человека. СУЗ помогают автоматизировать такое взаимодействие.
+# {heading(Сервисные учетные записи)[id=tools-account-concepts-service-accounts]}
 
-Как и обычные учетные записи, СУЗ позволяют пройти авторизацию в API и CLI с помощью логина и пароля. Однако авторизоваться с помощью СУЗ в личном кабинете VK Cloud нельзя.
+Сервисные учетные записи (СУЗ) — специальные учетные записи, предназначенные для программ. От имени СУЗ программы могут управлять ресурсами {var(cloud)} и взаимодействовать друг с другом без участия человека. СУЗ помогают автоматизировать такое взаимодействие.
 
-Доступ программ к ресурсам VK Cloud ограничивается рамками роли, назначенной СУЗ. Для СУЗ можно назначить [любую пользовательскую роль](../rolesandpermissions), кроме роли `Владелец проекта`.
+Как и обычные учетные записи, СУЗ позволяют пройти авторизацию в API и CLI с помощью логина и пароля. Однако авторизоваться с помощью СУЗ в личном кабинете {var(cloud)} нельзя.
+
+Доступ программ к ресурсам {var(cloud)} ограничивается рамками роли, назначенной СУЗ. Для СУЗ можно назначить {linkto(../rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=любую пользовательскую роль]}, кроме роли `Владелец проекта`.
 
 В зависимости от роли в проекте пользователь в личном кабинете может:
 
-- [создавать](../../instructions/service-account-manage#create) СУЗ;
-- [просматривать](../../instructions/service-account-manage#view_list) список СУЗ проекта;
-- [просматривать](../../instructions/service-account-manage#view_card) карточку СУЗ;
-- [скачивать](../../instructions/service-account-manage#download_rc_file) на свое устройство OpenStack RC-файл, необходимый для использования API;
-- [настраивать](../../instructions/service-account-manage#authorize) окружение для доступа к API от имени СУЗ;
-- [удалять](../../instructions/service-account-manage#delete) СУЗ.
+- {linkto(../../instructions/project-settings/service-account-manage#service-account-create)[text=создавать]} СУЗ;
+- {linkto(../../instructions/project-settings/service-account-manage#service-account-view-list)[text=просматривать]} список СУЗ проекта;
+- {linkto(../../instructions/project-settings/service-account-manage#service-account-view-card)[text=просматривать]} карточку СУЗ;
+- {linkto(../../instructions/project-settings/service-account-manage#service-account-download-rc-file)[text=скачивать]} на свое устройство OpenStack RC-файл, необходимый для использования API;
+- {linkto(../../instructions/project-settings/service-account-manage#service-account-authorize)[text=настраивать]} окружение для доступа к API от имени СУЗ;
+- {linkto(../../instructions/project-settings/service-account-manage#service-account-delete)[text=удалять]} СУЗ.
 
-Эти же действия можно выполнять [через API](/ru/tools-for-using-services/api/api-spec/api-service-users).
+Эти же действия можно выполнять {linkto(../../../api/api-spec/api-service-users#api-spec-service-users)[text=через API]}.
 
 Права на управление СУЗ в зависимости от роли в проекте:
 
@@ -24,24 +26,24 @@
 |Просмотр списка и карточек СУЗ, скачивание OpenStack RC-файла
 
 |Владелец проекта
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Суперадминистратор
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Администратор пользователей (IAM)
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Администратор проекта
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Наблюдатель
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 |===
 
 Список всех СУЗ в проекте доступен в разделе личного кабинета **Управление доступами** на вкладке **Сервисные пользователи**. Эта вкладка отображается только для пользователей с ролью из таблицы выше и верифицированными почтой и номером телефона.

@@ -1,9 +1,23 @@
 {
-    "title": "Cluster configuration",
-      "shortDescription": "",
-      "metaDescription": "Cloud Databases VK Cloud: creating a DB instance in the Cluster configuration",
-    "sectionTitle": "Cluster configuration",
-    "icon": "",
-    "weight": 2,
-    "uuid": "33138913-cb67-4741-9f73-061cd6fe1faa"
+  "title": "Cluster configuration",
+  "shortDescription": "",
+  "metaDescription": "Cloud Databases VK Cloud: creating a DB instance in the Cluster configuration",
+  "sectionTitle": "Cluster configuration",
+  "icon": "",
+  "weight": 2,
+  "uuid": "33138913-cb67-4741-9f73-061cd6fe1faa",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

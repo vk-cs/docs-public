@@ -4,5 +4,12 @@
   "metaDescription": "Cloud Alerting бұлт ресурстарынан жиналатын метрикалардағы өзгерістер туралы хабарландырулар алуға мүмкіндік береді. Cloud Alerting шешуге көмектесетін ең танымал тапсырмалар",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

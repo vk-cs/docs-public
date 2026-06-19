@@ -4,5 +4,12 @@
   "metaDescription": "VK Object Storage CORS: бакетке арналған браузерлік сұраулардың кросс-домендік ережелері деген не, оларды қалай орнатуға болады (жеке кабинет, S3 API/SDK немесе AWS CLI арқылы), конфигурацияға қандай параметрлер кіреді (AllowedOrigins/Methods/Headers, ExposeHeaders, MaxAgeSeconds және т.б.) және CORS іс жүзінде қалай жұмыс істейді.",
   "sectionTitle": "Кросс-домендік сұраулар (CORS)",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

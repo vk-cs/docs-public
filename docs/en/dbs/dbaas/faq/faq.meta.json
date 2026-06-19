@@ -1,12 +1,26 @@
 {
-    "title": "FAQ",
-      "shortDescription": "Answers to frequently asked questions about the Cloud Databases service",
-      "metaDescription": "Answers to frequently asked questions about the Cloud Databases service",
-    "sectionTitle": "FAQ",
-    "icon": "",
-    "weight": 9,
-    "additionalUuids": [
-        "40bb6f6c-ad98-4bc1-bf44-af0deb0bb77e"
-    ],
-    "uuid": "a9e6ebc0-8753-4013-8893-02804358b808"
+  "title": "FAQ",
+  "shortDescription": "Answers to frequently asked questions about the Cloud Databases service",
+  "metaDescription": "Answers to frequently asked questions about the Cloud Databases service",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 9,
+  "additionalUuids": [
+    "40bb6f6c-ad98-4bc1-bf44-af0deb0bb77e"
+  ],
+  "uuid": "a9e6ebc0-8753-4013-8893-02804358b808",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

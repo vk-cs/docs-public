@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Audit-ке идентификация мен қолжетімділікті басқару сервисі жіберетін оқиғалар",
   "sectionTitle": "IAM сервисінің оқиғалары",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

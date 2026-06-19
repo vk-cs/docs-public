@@ -1,8 +1,13 @@
 {
   "title": "Қолданылатын SDN",
-  "shortDescription": "VK Cloud ішінде қандай SDN қолжетімді және олардың айырмашылықтары қандай",
+  "shortDescription": "{var(cloud)} ішінде қандай SDN қолжетімді және олардың айырмашылықтары қандай",
   "metaDescription": "VK Cloud ішіндегі Cloud Network сервисі. SDN (Software Defined Network) деген не. VK Cloud ішінде қандай SDN қолжетімді және олардың айырмашылықтары қандай",
   "sectionTitle": "Қолданылатын SDN",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

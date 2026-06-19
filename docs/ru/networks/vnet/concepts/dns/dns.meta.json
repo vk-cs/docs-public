@@ -1,0 +1,14 @@
+{
+  "title": "DNS",
+  "shortDescription": "Приватный DNS",
+  "metaDescription": "Приватный DNS",
+  "sectionTitle": "DNS",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "private"
+    ]
+  },
+  "uuid": ""
+}

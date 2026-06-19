@@ -1,18 +1,20 @@
+# {heading(Jaeger)[id=k8s-install-advanced-jaeger]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Аддон құрамында](../../../../concepts/addons-and-settings/addons#jaeger_2f2714fa) жұмысы үшін сақтау қоймасы қажет болатын [Jaeger коллекторы](https://www.jaegertracing.io/docs/latest/architecture/#collector) бар. Сақтау қоймасы үшін бэкенд ([storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends)) ретінде VK Cloud ұсынған Jaeger аддонында бірнеше реплика түрінде орналастырылатын Elasticsearch пайдаланылады.
+{linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-jaeger)[text=Аддон құрамында]} жұмысы үшін сақтау қоймасы қажет болатын [Jaeger коллекторы](https://www.jaegertracing.io/docs/latest/architecture/#collector) бар. Сақтау қоймасы үшін бэкенд ([storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends)) ретінде VK Cloud ұсынған Jaeger аддонында бірнеше реплика түрінде орналастырылатын Elasticsearch пайдаланылады.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-jaeger-prepare]}
 
-1. Аддонды орнату үшін жеткілікті ресурстарыңыз бар екеніне көз жеткізу мақсатында оның [жүйелік талаптарымен](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#kolzhetimdi_addondar) танысыңыз.
+1. Аддонды орнату үшін жеткілікті ресурстарыңыз бар екеніне көз жеткізу мақсатында оның {linkto(/kz/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-available)[text=жүйелік талаптарымен]} танысыңыз.
 
    Jaeger аддонының жүйелік талаптары таңдалған Elasticsearch репликаларының санына және кластер ортасына байланысты. Репликалардың ең аз саны — екі, әдепкі бойынша — үш. Олардың санын стандартты орнату кезінде немесе бөлінген worker-түйіндерге орнату кезінде өзгертуге болады.
 
-1. (Қосымша) worker-түйіндер топтарын [қолмен масштабтауды орындаңыз](/kz/kubernetes/k8s/instructions/scale#scale_worker_nodes) немесе [автоматты масштабтауды баптаңыз](/kz/kubernetes/k8s/instructions/scale#koldenen_masshtabtau).
+1. (Қосымша) worker-түйіндер топтарын {linkto(/kz/kubernetes/k8s/instructions/scale#k8s-instructions-scale-vertical-worker-nodes)[text=қолмен масштабтауды орындаңыз]} немесе {linkto(/kz/kubernetes/k8s/instructions/scale#k8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=автоматты масштабтауды баптаңыз]}.
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-jaeger-install]}
 
-Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
+Аддон үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді.
 
 {tabs}
 
@@ -21,9 +23,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -36,7 +38,7 @@
       - қолданба атауы;
       - аддон орнатылатын атаулар кеңістігінің атауы.
 
-   1. Егер төмендегілер қажет болса, [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu) өңдеңіз:
+   1. Егер төмендегілер қажет болса, {linkto(#k8s-install-advanced-jaeger-edit-code)[text=аддонды баптау кодын]} өңдеңіз:
 
       - Elasticsearch репликаларының стандартты емес саны;
       - master-түйіндер мен worker-түйіндер әртүрлі қолжетімділік аймақтарында орналасса.
@@ -52,17 +54,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -81,7 +83,7 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
 {include(/kz/_includes/_jaeger_install_optional.md)}
@@ -90,12 +92,12 @@
 
 {tab(Бөлінген worker-түйіндерге орнату)}
 
-1. Егер бұл әлі жасалмаса, аддонды орнатуғал арналған бөлінген worker-түйіндер тобын дайындаңыз:
+1. Егер бұл әлі жасалмаса, аддонды орнатуға арналған бөлінген worker-түйіндер тобын дайындаңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -103,9 +105,9 @@
 
    1. Кластерде аддондар орналастырылатын бөлінген worker-түйіндер тобы бар екеніне көз жеткізіңіз.
 
-      Егер мұндай топ болмаса — [оны қосыңыз](../../../manage-node-group#add_group).
+      Егер мұндай топ болмаса — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=оны қосыңыз]}.
 
-   1. Егер бұл әлі жасалмаса, осы түйіндер тобы үшін [мыналарды орнатыңыз](../../../manage-node-group#labels_taints):
+   1. Егер бұл әлі жасалмаса, осы түйіндер тобы үшін {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=мыналарды орнатыңыз]}:
 
       - **Белгі (label)**: кілт `addonNodes`, мәні `dedicated`.
       - **Шектеу (taint)**: әсері `NoSchedule`, кілт `addonNodes`, мәні `dedicated`.
@@ -117,9 +119,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -132,7 +134,7 @@
       - қолданба атауы;
       - аддон орнатылатын атаулар кеңістігінің атауы.
 
-   1. Егер төмендегілер қажет болса, [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu) өңдеңіз:
+   1. Егер төмендегілер қажет болса, {linkto(#k8s-install-advanced-jaeger-edit-code)[text=аддонды баптау кодын]} өңдеңіз:
 
       - Elasticsearch репликаларының стандартты емес саны;
       - master-түйіндер мен worker-түйіндер әртүрлі қолжетімділік аймақтарында орналасса.
@@ -140,9 +142,9 @@
    1. Аддонды баптау кодында қажетті ерекшеліктерді (tolerations) және түйін селекторларын (nodeSelector) орнатыңыз:
 
       {tabs}
-      
+
       {tab(Ерекшеліктер)}
-            
+
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -159,9 +161,9 @@
       - `query.tolerations`.
 
       {/tab}
-      
+
       {tab(Түйін селекторлары)}
-      
+
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -189,17 +191,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -240,9 +242,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -260,17 +262,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурациялық файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
 
    1. Конфигурациялық файлдардың дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -285,7 +287,7 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
 {include(/kz/_includes/_jaeger_install_optional.md)}
@@ -294,9 +296,9 @@
 
 {/tabs}
 
-## Орнату кезінде аддонды баптау кодын өңдеу
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-jaeger-edit-code]}
 
-Аддон кодын өңдеу стандартты орнатуғал және бөлінген worker-түйіндерге орнатуғал қолданылады.
+Аддон кодын өңдеу стандартты орнатуға және бөлінген worker-түйіндерге орнатуға қолданылады.
 
 Өрістер сипаттамасымен бірге аддонды баптау кодының толық нұсқасы [GitHub](https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml) сайтында қолжетімді.
 
@@ -321,11 +323,11 @@ elasticsearch:
 
 {/note}
 
-### Elasticsearch сақтау қоймасының баптауларын өзгерту
+### {heading(Elasticsearch сақтау қоймасының баптауларын өзгерту)[id=k8s-install-advanced-jaeger-edit-elasticsearch]}
 
-Elasticsearch репликалары кластердің worker-түйіндерінде орналастырылады және сақтау қоймасы ретінде [тұрақты томдарды](../../../../reference/pvs-and-pvcs) пайдаланады. Әдепкі бойынша бұл тұрақты томдар кластердің worker-түйіндері орналасқан [қолжетімділік аймағында](/kz/start/concepts/architecture#az) орналастырылады. Егер кластердің worker-түйіндері мен тұрақты томдары әртүрлі қолжетімділік аймақтарында орналасса, онда осы түйіндердегі репликалар томдармен жұмыс істей алмайды.
+Elasticsearch репликалары кластердің worker-түйіндерінде орналастырылады және сақтау қоймасы ретінде {linkto(../../../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=тұрақты томдарды]} пайдаланады. Әдепкі бойынша бұл тұрақты томдар кластердің worker-түйіндері орналасқан {linkto(../../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағында]} орналастырылады. Егер кластердің worker-түйіндері мен тұрақты томдары әртүрлі қолжетімділік аймақтарында орналасса, онда осы түйіндердегі репликалар томдармен жұмыс істей алмайды.
 
-Elasticsearch репликаларымен тұрақты томдардың жұмысын қамтамасыз ету үшін қолжетімділік аймағы worker-түйіндердің қолжетімділік аймағымен сәйкес келетін [сақтау класын](../../../../concepts/storage#storage_classes) орнатыңыз:
+Elasticsearch репликаларымен тұрақты томдардың жұмысын қамтамасыз ету үшін қолжетімділік аймағы worker-түйіндердің қолжетімділік аймағымен сәйкес келетін {linkto(../../../../concepts/storage#k8s-storage-storage-classes)[text=сақтау класын]} орнатыңыз:
 
 ```yaml
 elasticsearch:
@@ -335,4 +337,4 @@ elasticsearch:
     storageClassName: "<САҚТАУ_КЛАСЫНЫҢ_АТАУЫ>"
 ```
 
-Кодты өңдегеннен кейін [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
+Кодты өңдегеннен кейін {linkto(#k8s-install-advanced-jaeger-install)[text=аддонды орнатуды жалғастырыңыз]}.

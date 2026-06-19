@@ -1,9 +1,23 @@
 {
-    "title": "Network in cluster",
-      "shortDescription": "Kubernetes clusters integration with VK Cloud network services",
-      "metaDescription": "",
-    "sectionTitle": "Network in cluster",
-    "icon": "",
-    "weight": 5,
-    "uuid": "25f0d71c-4e77-4597-83ae-9fb455a189f0"
+  "title": "Network in cluster",
+  "shortDescription": "Kubernetes clusters integration with VK Cloud network services",
+  "metaDescription": "",
+  "sectionTitle": "Network in cluster",
+  "icon": "",
+  "weight": 5,
+  "uuid": "25f0d71c-4e77-4597-83ae-9fb455a189f0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

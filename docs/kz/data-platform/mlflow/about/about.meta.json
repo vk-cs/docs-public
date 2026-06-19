@@ -1,0 +1,14 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "MLflow сервисі туралы ақпарат",
+  "metaDescription": "VK Data Platform-тағы MLflow: сервис туралы ақпарат",
+  "sectionTitle": "Сервис туралы",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

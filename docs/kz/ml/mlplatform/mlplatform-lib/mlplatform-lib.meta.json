@@ -4,5 +4,10 @@
   "metaDescription": "Cloud ML Platform Python кітапханасының құжаттамасы (JupyterHub, MLflow, MLflow Deploy үшін).",
   "sectionTitle": "Cloud ML Platform кітапханасы",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

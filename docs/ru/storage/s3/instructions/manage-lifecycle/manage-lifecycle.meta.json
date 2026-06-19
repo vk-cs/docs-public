@@ -5,5 +5,12 @@
   "sectionTitle": "Жизненный цикл объектов в бакете",
   "icon": "",
   "weight": 5,
-  "uuid": "9a518e5b-61ab-4af5-af83-c625dada3796"
+  "uuid": "9a518e5b-61ab-4af5-af83-c625dada3796",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

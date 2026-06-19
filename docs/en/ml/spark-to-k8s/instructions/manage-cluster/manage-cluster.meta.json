@@ -5,5 +5,19 @@
   "sectionTitle": "Managing Spark cluster",
   "icon": "",
   "weight": 0,
-  "uuid": "3bd0a0e1-2a8f-458b-a051-f9900faa0110"
+  "uuid": "3bd0a0e1-2a8f-458b-a051-f9900faa0110",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

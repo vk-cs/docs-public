@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_compute_instance_reboot ресурсы",
   "sectionTitle": "ivkcs_compute_instance_reboot ресурсы",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

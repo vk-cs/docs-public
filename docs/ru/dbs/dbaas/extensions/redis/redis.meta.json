@@ -1,0 +1,17 @@
+{
+  "title": "Расширения Redis",
+  "shortDescription": "Перечень доступных расширений Redis и их параметров",
+  "metaDescription": "Cloud Databases в VK Cloud: перечень доступных расширений Redis и их параметров.",
+  "sectionTitle": "Расширения Redis",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

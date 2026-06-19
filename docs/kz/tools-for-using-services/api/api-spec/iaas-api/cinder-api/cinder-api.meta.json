@@ -4,5 +4,10 @@
   "shortDescription": "Дискілер мен олардың снапшоттарын басқаруға арналған OpenAPI спецификациясы",
   "sectionTitle": "Дискілерді басқару",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

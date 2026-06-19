@@ -4,5 +4,19 @@
   "metaDescription": "ООО «ВК»-мен жеке қолданыстағы шарты бар тұлғаларды қоспағанда, 2025 жылғы 01 ақпаннан бастап барлық клиенттер үшін қолданыста болатын келісімдер мен құжаттар",
   "sectionTitle": "«Цифровое Облако» ЖШҚ құқықтық құжаттары",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Resource limiting",
-      "shortDescription": "How to control the use of computing resources by containers.",
-      "metaDescription": "",
-    "sectionTitle": "Resource limiting",
-    "icon": "",
-    "weight": 2,
-    "uuid": "479cf863-74f7-4abf-bd1a-b91bab0b111d"
+  "title": "Resource limiting",
+  "shortDescription": "How to control the use of computing resources by containers.",
+  "metaDescription": "",
+  "sectionTitle": "Resource limiting",
+  "icon": "",
+  "weight": 2,
+  "uuid": "479cf863-74f7-4abf-bd1a-b91bab0b111d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,19 @@
   "sectionTitle": "About service",
   "icon": "",
   "weight": 1,
-  "uuid": "741bf51c-3460-4d1a-b4ec-b20faa8e72e1"
+  "uuid": "741bf51c-3460-4d1a-b4ec-b20faa8e72e1",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

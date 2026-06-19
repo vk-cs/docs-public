@@ -1,36 +1,34 @@
-Далее описывается создание кластера [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations) с помощью Terraform. Также вы можете создать кластер первого поколения [в личном кабинете VK Cloud](../create-webui).
+# {heading(Создание кластера первого поколения с помощью Terraform)[id=k8s-create-terraform]}
 
-Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](/ru/tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
+Далее описывается создание кластера {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} с помощью Terraform. Также вы можете создать кластер первого поколения {linkto(../create-webui#k8s-create-webui)[text=в личном кабинете {var(cloud)}]}.
+
+Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 
 {note:warn}
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. При выборе {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддона]} NGINX Ingress Controller для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
 
-При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
-
-Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
-
+Использование балансировщиков {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
-## Перед созданием кластера
+## {heading(Перед созданием кластера)[id=k8s-create-terraform-prepare]}
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квотами]} для {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]}, в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. Ознакомьтесь с [особенностями использования Terraform](../../helpers/terraform-howto) в сервисе Cloud Containers.
+1. Ознакомьтесь с {linkto(../../helpers/terraform-howto#k8s-terraform-howto)[text=особенностями использования Terraform]} в сервисе Cloud Containers.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. [Установите Terraform и настройте окружение](../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-1. [Установите OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli) и [пройдите авторизацию](/ru/tools-for-using-services/cli/openstack-cli), если этого еще не сделано.
+1. {linkto(../../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=Установите OpenStack CLI]} и {linkto(../../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=пройдите авторизацию]}, если этого еще не сделано.
 
 1. Создайте конфигурационный файл Terraform.
 
    {note:info}
-
    В следующих шагах перечислены только основные параметры ресурсов Terraform, которые нужно указать в этом файле. Полный список параметров приведен в [документации](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) Terraform-провайдера для [кластера Kubernetes](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md).
-
    {/note}
 
-## 1. Подготовьте необходимые источники данных
+## {heading(1. Подготовьте необходимые источники данных)[id=k8s-create-terraform-prepare-data-sources]}
 
 1. Определите, какой тип виртуальной машины будет использоваться для master-узлов кластера:
 
@@ -74,7 +72,7 @@
 
 1. Добавьте в конфигурационный файл источники данных:
 
-   1. [Шаблон виртуальной машины](../../../concepts/flavors#shablony_konfiguracii) для master-узлов. Пример:
+   1. {linkto(../../../concepts/flavors#k8s-flavors-vm-flavor)[text=Шаблон виртуальной машины]} для master-узлов. Пример:
 
       ```hcl
       data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -94,7 +92,7 @@
 
       В качестве версии укажите номер версии, полученный ранее.
 
-## 2. Опишите конфигурацию кластера
+## {heading(2. Опишите конфигурацию кластера)[id=k8s-create-terraform-describe-conf]}
 
 Добавьте в конфигурационный файл ресурс кластера:
 
@@ -117,17 +115,15 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - `cluster_type` — тип кластера:
 
-  - `standart` (по умолчанию) — все master-узлы кластера будут располагаться в одной [зоне доступности](/ru/start/concepts/architecture#az). Отказоустойчивость обеспечиваетcя на уровне зоны.
+  - `standart` (по умолчанию) — все master-узлы кластера будут располагаться в одной {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]}. Отказоустойчивость обеспечиваетcя на уровне зоны.
   - `regional` — master-узлы кластера будут располагаться в каждой из трех зон доступности, что позволяет сохранить управление даже при отказе одной из зон. Общее количество master-узлов — 3 или более.
 
-- `master_count` — количество master-узлов. Должно быть нечетным числом. Для стандартного кластера количество master-узлов должно быть `1`, `3` или `5`. Для регионального — `3` или `5`. Подробнее в разделе [Архитектура сервиса](../../../concepts/architecture).
-- `cluster_node_volume_type` — тип диска для [хранения данных](../../../concepts/storage#supported_storage_types), который будет использоваться узлами. Выбранный тип диска влияет на производительность кластера. Доступные значения: `ceph-ssd` (по умолчанию) и `high-iops`.
+- `master_count` — количество master-узлов. Должно быть нечетным числом. Для стандартного кластера количество master-узлов должно быть `1`, `3` или `5`. Для регионального — `3` или `5`. Подробнее в разделе {linkto(../../../concepts/architecture#k8s-architecture)[text=Архитектура сервиса]}.
+- `cluster_node_volume_type` — тип диска для {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=хранения данных]}, который будет использоваться узлами. Выбранный тип диска влияет на производительность кластера. Доступные значения: `ceph-ssd` (по умолчанию) и `high-iops`.
 - `availability_zone` — зона доступности кластера. Используйте параметр, если тип кластера — стандартный. Для региона `Москва` укажите одну из трех зон доступности: `ME1`, `MS1` или `PA2`.
   
    {note:info}
-
-   Зону доступности `PA2` можно выбрать только для проектов, использующих [SDN Sprut](/ru/networks/vnet/concepts/sdn#sprut).
-
+   Зону доступности `PA2` можно выбрать только для проектов, использующих {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]}.
    {/note}
 
 - `availability_zones` — зоны доступности кластера. Используйте параметр, если тип кластера — региональный. Для региона `Москва` укажите три зоны доступности: `["ME1", "MS1", "PA2"]`. Если кластер региональный и параметр `availability_zones` не указан, зоны доступности будут подставлены автоматически.
@@ -210,30 +206,26 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   {/tabs}
 
     {note:info}
-       
-    Чтобы создать кластер без доступа в интернет, укажите сеть с подключенным [Shadow port](/ru/networks/vnet/concepts/ips-and-inet#shadow_port).
-       
+    Чтобы создать кластер без доступа в интернет, укажите сеть с подключенным {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-shadow-port)[text=Shadow port]}.
     {/note}
 
 - `floating_ip_enabled` — назначить публичный IP-адрес для API-кластера:
 
-  - `true` — при создании кластера ему будет назначен [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip) для доступа к кластеру из интернета. Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
+  - `true` — при создании кластера ему будет назначен {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]} для доступа к кластеру из интернета. Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-internet-access)[text=подключена]} к маршрутизатору c доступом к внешней сети.
   - `false` — кластеру не будет назначен Floating IP-адрес.
 
-Чтобы установить аддоны в кластер с помощью Terraform, [получите список доступных аддонов](../../addons/manage-addons#348-tabpanel-1) и [установите нужные](../../addons/advanced-installation).
+Чтобы установить аддоны в кластер с помощью Terraform, {linkto(../../addons/manage-addons#k8s-manage-addons-available)[text=получите список доступных аддонов]} и {linkto(../../addons/advanced-installation#k8s-advanced-installation)[text=установите нужные]}.
 
-## 3. Опишите конфигурацию одной или нескольких групп worker-узлов
+## {heading(3. Опишите конфигурацию одной или нескольких групп worker-узлов)[id=k8s-create-terraform-describe-workers]}
 
 {note:info}
-
 Это необязательный шаг.
 С помощью Terraform можно создать кластер только из master-узлов, а группы worker-узлов добавить позднее.
-
 {/note}
 
-Эта операция подробно описана в разделе [Управление группой worker-узлов](../../manage-node-group).
+Эта операция подробно описана в разделе {linkto(../../manage-node-group#k8s-manage-node-group)[text=Управление группой worker-узлов]}.
 
-## 4. Запустите процедуру создания кластера
+## {heading(4. Запустите процедуру создания кластера)[id=k8s-create-terraform-apply]}
 
 1. Проверьте конфигурационный файл Terraform на корректность:
 
@@ -255,8 +247,8 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
    Начнется создание кластера Kubernetes. Этот процесс может занять длительное время, в зависимости от размера кластера.
 
-## Что дальше?
+## {heading(Что дальше?)[id=k8s-create-terraform-what-next]}
 
-- [Настройте окружение](../../../connect) на хосте, с которого планируется подключаться к кластеру.
-- [Познакомьтесь со сценариями использования](../../../how-to-guides) кластера.
-- [Познакомьтесь с концепциями](../../../concepts) сервиса Cloud Containers.
+- {linkto(../../../connect#k8s-connect)[text=Настройте окружение]} на хосте, с которого планируется подключаться к кластеру.
+- {linkto(../../../how-to-guides#k8s-how-to-guides)[text=Познакомьтесь со сценариями использования]} кластера.
+- {linkto(../../../concepts#k8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Cloud Containers.

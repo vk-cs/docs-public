@@ -1,28 +1,28 @@
-При [подключении с помощью kubectl](../../connect/kubectl) к кластеру Cloud Containers используется [kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/), файл конфигурации кластера. Обычно для работы с кластером используется kubeconfig из личного кабинета VK Cloud, который настроен на использование [технологии единого входа](../../concepts/access-management). Поэтому при работе с `kubectl` периодически нужно вводить пароль пользователя.
+# {heading(Создание файла kubeconfig для сервисного аккаунта)[id=k8s-sa-kubeconfig]}
+
+При {linkto(../../connect/kubectl#k8s-kubectl)[text=подключении с помощью kubectl]} к кластеру Cloud Containers используется [kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/), файл конфигурации кластера. Обычно для работы с кластером используется kubeconfig из личного кабинета {var(cloud)}, который настроен на использование {linkto(../../concepts/access-management#k8s-access-management)[text=технологии единого входа]}. Поэтому при работе с `kubectl` периодически нужно вводить пароль пользователя.
 
 Такой процесс аутентификации неудобен при работе с автоматизированными инструментами, которым нужен доступ к кластеру. Для работы с ними удобнее использовать файл kubeconfig для сервисного аккаунта. Этот kubeconfig позволяет аутентифицироваться с помощью токена с бесконечным временем жизни, без ввода пароля.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-sa-kubeconfig-prepare]}
 
-1. [Создайте](../../instructions/create-cluster) кластер Cloud Containers самой актуальной версии.
+{include(/ru/_includes/_create-test-cluster.md)}
 
    При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../connect/kubectl), что вы можете подключиться к созданному кластеру с помощью `kubectl`.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к созданному кластеру с помощью `kubectl`.
 
-   При этом будет использоваться kubeconfig, загруженный из личного кабинета VK Cloud.
+   При этом будет использоваться kubeconfig, загруженный из личного кабинета {var(cloud)}.
 
 1. Задайте переменные среды окружения, указывающие на kubeconfig:
 
-   - `VKCLOUD_KUBECONFIG`: путь к kubeconfig, загруженному из личного кабинета VK Cloud.
+   - `VKCLOUD_KUBECONFIG`: путь к kubeconfig, загруженному из личного кабинета {var(cloud)}.
    - `SA_KUBECONFIG`: путь к kubeconfig для сервисного аккаунта (сам файл будет создан позднее).
 
    Это упростит дальнейшую работу с `kubectl`.
 
    {note:info}
-
    Путь к вашим файлам kubeconfig может отличаться от примера ниже.
-
    {/note}
 
    {tabs}
@@ -60,11 +60,11 @@
 
    Для каждой из команд должен быть выведен ответ `yes`.
 
-   Если нет прав на создание любого из этих ресурсов (ответ `no`), [скорректируйте роль пользователя VK Cloud](/ru/access/iam/instructions/access-manage#izmenenie_roli_uchastnika), от имени которого выполняется подключение к кластеру.
+   Если нет прав на создание любого из этих ресурсов (ответ `no`), {linkto(../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-user-role-edit)[text=скорректируйте роль пользователя {var(cloud)}]}, от имени которого выполняется подключение к кластеру.
 
-   Подробнее о ролевой модели и доступных ролях читайте в разделе [Управление доступом](../../concepts/access-management).
+   Подробнее о ролевой модели и доступных ролях читайте в разделе {linkto(../../concepts/access-management#k8s-access-management)[text=Управление доступом]}.
 
-## 1. Создайте сервисный аккаунт и свяжите его с ролью
+## {heading(1. Создайте сервисный аккаунт и свяжите его с ролью)[id=k8s-sa-kubeconfig-create-sa]}
 
 1. Создайте сервисный аккаунт `example-sa` в пространстве имен `kube-system`:
 
@@ -108,7 +108,7 @@
 
    При выборе роли следуйте [принципу наименьших привилегий](https://ru.wikipedia.org/wiki/Принцип_минимальных_привилегий), чтобы повысить безопасность при работе с кластером. Подробнее о ролевой модели читайте в [официальной документации Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 
-   В качестве примера далее будет назначена роль `edit`. Она [соответствует](../../concepts/access-management#vzaimosvyaz_roley_lichnogo_kabineta_i_kubernetes) роли `Оператор Kubernetes` в личном кабинете.
+   В качестве примера далее будет назначена роль `edit`. Она {linkto(../../concepts/access-management#k8s-access-management-kubernetes-roles)[text=соответствует]} роли `Оператор Kubernetes` в личном кабинете.
 
 1. Свяжите созданный сервисный аккаунт с выбранной кластерной ролью. Для этого создайте ресурс `ClusterRoleBinding` с именем `example-binding`.
 
@@ -147,7 +147,7 @@
    clusterrolebinding.rbac.authorization.k8s.io/example-binding created
    ```
 
-## 2. Получите токен для сервисного аккаунта
+## {heading(2. Получите токен для сервисного аккаунта)[id=k8s-sa-kubeconfig-get-token]}
 
 1. Создайте секрет `example-token`, содержащий токен для сервисного аккаунта:
 
@@ -265,14 +265,12 @@
    Будет выведено значение токена. Сохраните его.
 
    {note:err}
-
-   Значение токена — конфиденциальная информация. При его компрометации [отзовите токен](#otzovite_skomprometirovannyy_token).
-
+   Значение токена — конфиденциальная информация. При его компрометации {linkto(#k8s-sa-kubeconfig-revoke-token)[text=отзовите токен]}.
    {/note}
 
-## 4. Создайте kubeconfig для сервисного аккаунта
+## {heading(4. Создайте kubeconfig для сервисного аккаунта)[id=k8s-sa-kubeconfig-create]}
 
-1. Создайте основу для этого kubeconfig путем копирования kubeconfig, загруженного из личного кабинета VK Cloud.
+1. Создайте основу для этого kubeconfig путем копирования kubeconfig, загруженного из личного кабинета {var(cloud)}.
 
    ```console
    cp $VKCLOUD_KUBECONFIG $SA_KUBECONFIG
@@ -330,7 +328,7 @@
 
    1. Удалите существующего пользователя.
 
-      Этот пользователь соответствует пользователю VK Cloud и не должен фигурировать в kubeconfig, который будет использоваться автоматизированными инструментами.
+      Этот пользователь соответствует пользователю {var(cloud)} и не должен фигурировать в kubeconfig, который будет использоваться автоматизированными инструментами.
 
       1. Получите список пользователей:
 
@@ -490,7 +488,7 @@
 
    {/cut}
 
-## 5. Проверьте работу созданного kubeconfig
+## {heading(5. Проверьте работу созданного kubeconfig)[id=k8s-sa-kubeconfig-check]}
 
 Используйте команды `kubectl` и созданный ранее kubeconfig для сервисного аккаунта, чтобы получить информацию о кластере и его ресурсах, например:
 
@@ -527,14 +525,12 @@
 Если при выполнении команд пароль не был запрошен, то полученный kubeconfig можно использовать в комбинации с автоматизированными инструментами для доступа к кластеру Cloud Containers.
 
 {note:err}
-
 Обеспечьте необходимые меры по защите файла kubeconfig. Он содержит конфиденциальную информацию: значение токена в открытом виде.
 
-При компрометации kubeconfig [отзовите токен](#otzovite_skomprometirovannyy_token).
-
+При компрометации kubeconfig {linkto(#k8s-sa-kubeconfig-revoke-token)[text=отзовите токен]}.
 {/note}
 
-## Отзовите скомпрометированный токен
+## {heading(Отзовите скомпрометированный токен)[id=k8s-sa-kubeconfig-revoke-token]}
 
 Если созданный ранее токен или содержащий его kubeconfig были скомпрометированы, отзовите токен, чтобы предотвратить несанкционированный доступ к кластеру.
 
@@ -544,9 +540,11 @@
 kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-system
 ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-sa-kubeconfig-revoke-delete]}
 
-1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их:
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы kubeconfig, вам больше не нужны, удалите их: 
+
+1. Удалите ресурс `example-binding`, секрет `example-token` и сервисный аккаунт `example-sa`:
 
    {tabs}
 
@@ -580,7 +578,4 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    {/tabs}
 
-1. Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-   - [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster-short.md)}

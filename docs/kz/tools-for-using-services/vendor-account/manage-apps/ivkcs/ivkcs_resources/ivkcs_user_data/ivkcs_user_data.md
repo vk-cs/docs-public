@@ -1,4 +1,4 @@
-# {heading(ivkcs_user_data ресурсы)[id=ivkcs_user_data]}
+# {heading(Ресурс ivkcs_user_data)[id=ivkcs_user_data]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -153,14 +153,14 @@
 
 {/note}
 
-`ivkcs_user_data` ресурсы `user_data` атрибутын жолдар тізімі пішімінде қайтарады. Тізімдегі индекс `hosts` аргументінде берілген хост индексіне сәйкес келеді. Мәні — MIME архиві пішіміндегі cloud-config конфигурациясы. Алынған мәнді `user_data` ресурсының `vkcs_compute_instance` аргументінде пайдаланыңыз.
+`ivkcs_user_data` ресурсы `user_data` атрибутын жолдар тізімі пішімінде қайтарады. Тізімдегі индекс `hosts` аргументінде берілген хост индексіне сәйкес келеді. Мәні — MIME архиві пішіміндегі cloud-config конфигурациясы. Алынған мәнді `vkcs_compute_instance` ресурсының `user_data` аргументінде пайдаланыңыз.
 
 {caption(`ivkcs_user_data` ресурсын пайдалану мысалы)[align=left;position=above]}
 ```hcl
-# Создание ключевой пары
+# Кілт жұбын жасау
 resource "ivkcs_ssh_keypair" "test" {}
 
-# Создание cloud-config конфигурации. Получение данных для инициализации агента на хосте
+# cloud-config конфигурациясын жасау. Хостта агентті инициализациялауға арналған деректерді алу
 resource "ivkcs_user_data" "test" {
   uuid                = var.instance_uuid
   hosts               = ["host1"]
@@ -174,15 +174,15 @@ resource "ivkcs_user_data" "test" {
 resource "vkcs_compute_instance" "single" {
   name              = "host1"
   ...
-  # Применение cloud-config конфигурации для настройки ВМ. Установка агента
-  # В [] укажите номер хоста. Если сервис развертывается на одной ВМ, значение должно быть 0
+  # ВМ-ді баптауға арналған cloud-config конфигурациясын қолдану. Агентті орнату
+  # [] ішінде хост нөмірін көрсетіңіз. Егер сервис бір ВМ-де орналастырылса, мән 0 болуы керек
   user_data = ivkcs_user_data.test.user_data[0]
   ...
 }
 ```
 {/caption}
 
-## {heading(target_os аргументі)[id=target_os]}
+## {heading(Аргумент target_os)[id=target_os]}
 
 `target_os` аргументінің ықтимал мәндері {linkto(#tab_target_os)[text=%number кестеде]} келтірілген. Әрбір мән бұлтты платформаның нақты базалық образына және оның белгілі бір конфигурациясына (ОЖ мен Cloud-init нұсқасының үйлесімі) сәйкес келеді.
 
@@ -260,9 +260,9 @@ resource "vkcs_compute_instance" "single" {
 
 {/note}
 
-`target_os` мәніне сәйкес келетін VK Cloud базалық образының ID-сін [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) ішінде `openstack image list` командасын орындау арқылы білуге болады. Команда жобада қолжетімді ВМ образдарының толық тізімін шығарады. Әрбір образ үшін оның ID-і, `target_os` мәні және күйі көрсетіледі.
+`target_os` мәніне сәйкес келетін {var(cloud)} базалық образының ID-сін [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) ішінде `openstack image list` командасын орындау арқылы білуге болады. Команда жобада қолжетімді ВМ образдарының толық тізімін шығарады. Әрбір образ үшін оның ID-і, `target_os` мәні және күйі көрсетіледі.
 
-## {heading(packages аргументі)[id=packages]}
+## {heading(Аргумент packages)[id=packages]}
 
 `packages` аргументтері {linkto(#tab_packages)[text=%number кестеде]} келтірілген.
 
@@ -334,7 +334,7 @@ resource "ivkcs_user_data" "user_data" {
 ```
 {/caption}
 
-## {heading(user_script аргументі)[id=user_script]}
+## {heading(Аргумент user_script)[id=user_script]}
 
 `user_script` аргументтері {linkto(#tab_userscript)[text=%number кестеде]} келтірілген.
 
@@ -390,7 +390,7 @@ resource "ivkcs_user_data" "user_data" {
 |===
 {/caption}
 
-{caption(`ivkcs_user_data` бар `user_script` ресурсының мысалы)[align=left;position=above]}
+{caption(`user_script` бар `ivkcs_user_data` ресурсының мысалы)[align=left;position=above]}
 ```hcl
 
 resource "ivkcs_user_data" "init" {

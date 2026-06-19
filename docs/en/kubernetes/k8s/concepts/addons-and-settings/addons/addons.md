@@ -46,7 +46,7 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 - Improve the reliability and manageability of clusters: it minimizes manual steps and errors when changing cluster configurations. Argo CD automatically detects the differences and returns the cluster to the state described in its Git repository.
 - Ensure actions in clusters are more transparent and improve cluster security by controlling and auditing all changes through Git.
 
-For Argo CD to work correctly, it needs stable access to Git repositories that contain cluster configurations. The add-on must also have the rights to create applications in clusters that you specify through the Kubernetes [Role-Based Access Control (RBAC)](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) model. Otherwise, it might result in errors when attempting to synchronize the state of the cluster with its repository.
+For Argo CD to work correctly, it needs stable access to Git repositories that contain cluster configurations. The add-on must also have the rights to create applications in clusters that you specify through the Kubernetes [Role-Based Access Control (RBAC)](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) model. Otherwise, it might result in errors when attempting to synchronize the state of the cluster with its repository. 
 
 {/tab}
 
@@ -211,7 +211,7 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 {tab(Description)}
 
-GPU Operator allows you to manage [GPUs on cluster nodes](../../flavors#gpu) to perform machine learning or big data processing.
+GPU Operator allows you to manage [GPUs on cluster nodes](../../flavors) to perform machine learning or big data processing.
 
 The following options for using GPUs in a cluster are available:
 
@@ -333,7 +333,7 @@ In distributed systems based on microservices, requests are constantly exchanged
 
 Such a tool is necessary because query-related factors can significantly affect the behavior and performance of these systems as a whole. It is not enough to provide monitoring only for individual microservices.
 
-Jaeger performs query tracing based on the data it receives from microservices. Therefore, it is necessary to integrate [into microservices](https://www.jaegertracing.io/docs/latest/architecture/#tracing-sdks) tool stack [OpenTelemetry](https://opentelemetry.io) to send data about requests. You can get acquainted with the integration of OpenTelemetry into a microservice application using the example of [HotROD](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) in the [Using Jaeger](/en/kubernetes/k8s/how-to-guides/jaeger) section.
+Jaeger performs query tracing based on the data it receives from microservices. Therefore, it is necessary to integrate [into microservices](https://www.jaegertracing.io/docs/latest/architecture/#tracing-sdks) tool stack [OpenTelemetry](https://opentelemetry.io) to send data about requests. You can get learn about the integration of OpenTelemetry into a microservice application using the example of [Hot ROD](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) in the [Using Jaeger](/en/kubernetes/k8s/how-to-guides/jaeger) section.
 
 {/tab}
 
@@ -357,22 +357,22 @@ Requirements of individual add-on components:
 - [Elasticsearch](https://www.jaegertracing.io/docs/latest/deployment/#elasticsearch):
 
   - **CPU**: 100m — 1000m
-  - **RAM**: 512M
+  - **RAM**: 512Mi
 
 - [Agent](https://www.jaegertracing.io/docs/latest/architecture/#agent):
 
   - **CPU**: 250m — 500m
-  - **RAM**: 128M — 512M
+  - **RAM**: 128Mi — 512Mi
 
 - [Collector](https://www.jaegertracing.io/docs/latest/architecture/#collector):
 
   - **CPU**: 500m — 1000m
-  - **RAM**: 512M — 1024M
+  - **RAM**: 512Mi — 1024Mi
 
 - [Query](https://www.jaegertracing.io/docs/latest/architecture/#query):
 
   - **CPU**: 250m — 500m
-  - **RAM**: 128M — 512M
+  - **RAM**: 128Mi — 512Mi
 
 {note:info}
 
@@ -394,7 +394,7 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 
 {tab(Description)}
 
-[Kgateway](https://kgateway.dev/) is a tool for routing and traffic management in Kubernetes via [Gateway API](https://gateway-api.sigs.k8s.io/). The add-on:
+[Kgateway](https://kgateway.dev/) is a tool for routing and traffic management in Kubernetes via the [Gateway API](https://gateway-api.sigs.k8s.io/). The add-on:
 
 - Provides publication of Kubernetes services and proxying requests to external services.
 - Automatically scales to the load.
@@ -422,9 +422,7 @@ If a Gateway resource that accepts external traffic is also created:
 ### Kiali
 
 {note:info}
-
 This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-
 {/note}
 
 {tabs}

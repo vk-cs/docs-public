@@ -1,3 +1,5 @@
+# {heading(Terraform-дың негізгі командалары)[id=tools-terraform-commands]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Terraform командалық жолы](https://www.terraform.io/cli/commands) — бұл көптеген ішкі командаларды қабылдайтын `terraform` командасы.

@@ -4,5 +4,15 @@
   "metaDescription": "Уақытша немесе мерзімсіз жоюдан блоктауы орнатылған резервтік көшірмелерді жасау. Уақытша (`retention period`) және мерзімсіз блоктау (`legal hold`). Уақытша блоктаудың басқарылатын (`GOVERNANCE`) және қатаң (`COMPLIANCE`) режимдері.",
   "sectionTitle": "Жоюдан қорғалған резервтік көшірмелер",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

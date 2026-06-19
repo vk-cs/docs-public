@@ -4,5 +4,20 @@
   "metaDescription": "Пайдалану сценарийлері: VK Cloud ресурстары негізінде Joomla, OpenCart, WordPress, 1С-Битрикс жүйелерін орнату жолы.",
   "sectionTitle": "Linux жүйесінде CMS орнату",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "bf523a1c-a6cf-4197-90b4-c7b966445081",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

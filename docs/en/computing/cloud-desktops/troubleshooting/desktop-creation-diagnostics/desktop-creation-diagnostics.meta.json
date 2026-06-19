@@ -5,5 +5,10 @@
   "sectionTitle": "Diagnostics of desktop creation errors",
   "icon": "",
   "weight": 0,
-  "uuid": "c45adc91-161b-4a3e-a24b-6dba27e56357"
+  "uuid": "c45adc91-161b-4a3e-a24b-6dba27e56357",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

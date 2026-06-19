@@ -1,24 +1,26 @@
+# {heading(Terraform пайдалану)[id=k8s-terraform-howto]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Terraform пайдалануды қалай бастау керек
+## {heading(Terraform пайдалануды қалай бастау керек)[id=k8s-terraform-howto-begin]}
 
-1. [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start), егер бұл әлі жасалмаса.
-1. [Бір немесе бірнеше worker-түйіндер тобы бар жаңал кластер құрыңыз](../../create-cluster/create-terraform).
+1. [Terraform орнатып, ортаны баптаңыз](../../../../../tools-for-using-services/terraform/quick-start), егер бұл әлі жасалмаса.
+1. {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=Бір немесе бірнеше worker-түйіндер топтары бар]} жаңа кластер {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=құрыңыз]}.
 1. Жасалған ресурстарды Terraform көмегімен басқарыңыз.
 
-Cloud Containers сервисімен жұмыс туралы толық алқпарат [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) келтірілген.
+Cloud Containers сервисімен жұмыс туралы толық ақпарат [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) келтірілген.
 
-## Cloud Containers сервисін басқару үшін Terraform пайдаланудың ерекшеліктері
+## {heading(Cloud Containers сервисін басқару үшін Terraform пайдаланудың ерекшеліктері)[id=k8s-terraform-howto-features]}
 
-- Кластермен кейбір операциялар тек [жеке кабинетте](../../../../../tools-for-using-services/account) орындалады. Әр операция үшін [қадамдық нұсқаулықтарда](../../../instructions) оны Terraform көмегімен де орындауғал болатыны көрсетілген.
+- Кластермен кейбір операциялар тек {linkto(../../../../../tools-for-using-services/account#tools-account)[text=жеке кабинетте]} орындалады. Әр операция үшін {linkto(../../../instructions#k8s-instructions)[text=қадамдық нұсқаулықтарда]} оны Terraform көмегімен де орындауға болатыны көрсетілген.
 
-- Бар кластердің кейбір параметрлерін өзгерту **жаңал кластердің** жасалуына әкеледі. Cloud Containers сервисінің құжаттамасында жаңал кластер құрмай, бар кластерге орындауғал болатын операциялар ғана келтірілген.
+- Бар кластердің кейбір параметрлерін өзгерту **жаңа кластердің** жасалуына әкеледі. Cloud Containers сервисінің құжаттамасында жаңа кластер құрмай, бар кластерге орындауға болатын операциялар ғана келтірілген.
 
   Толығырақ [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference).
 
 - Егер Terraform көмегімен басқарылатын кластердің баптауларын жеке кабинетте өзгертсеңіз, бұл өзгерістер Terraform конфигурация файлында көрсетілмейді.
 
-  Бұл жағдайда алғымдағы Terraform конфигурациясы ескіреді, ал оны `terraform apply` көмегімен қолдану жасалған баптаулардың кері қайтарылуына немесе тіпті кластердің жұмысқал жарамсыз болуына әкеледі.
+  Бұл жағдайда ағымдағы Terraform конфигурациясы ескіреді, ал оны `terraform apply` көмегімен қолдану жасалған баптаулардың кері қайтарылуына немесе тіпті кластердің жұмысқа жарамсыз болуына әкеледі.
 
   Мұндай кластерді қайтадан Terraform көмегімен басқару үшін:
 

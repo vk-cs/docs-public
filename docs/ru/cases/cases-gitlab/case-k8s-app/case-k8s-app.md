@@ -298,7 +298,7 @@
      Normal  UPDATE  5s    nginx-ingress-controller  Ingress default/myapp-ingress
    ```
 
-1. Протестируйте работу приложения. Внешний IP-адрес, связанный с ingress-контроллером, можно на [странице кластера](/ru/kubernetes/k8s/instructions/manage-cluster#poluchit_informaciyu_o_klastere). Он называется IP-адрес балансировщика нагрузки для Ingress Controller. Обозначим его как `<INGRESS_EXTERNAL_IP>`.
+1. Протестируйте работу приложения. Внешний IP-адрес, связанный с ingress-контроллером, можно на [странице кластера](/ru/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-get-info). Он называется IP-адрес балансировщика нагрузки для Ingress Controller. Обозначим его как `<INGRESS_EXTERNAL_IP>`.
 
    ```console
    ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/handler

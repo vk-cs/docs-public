@@ -5,5 +5,10 @@
   "metaDescription": "How to check for VirtIO drivers in a virtual machine OS and install them if they are missing",
   "icon": "",
   "weight": 4,
-  "uuid": "d95dc3bb-e720-4f04-848b-954560e5f6e4"
+  "uuid": "d95dc3bb-e720-4f04-848b-954560e5f6e4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

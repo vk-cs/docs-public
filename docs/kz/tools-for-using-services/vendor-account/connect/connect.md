@@ -1,9 +1,9 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Қолданбалар дүкеніне](https://cloud.vk.com/docs/ru/applications-and-services/marketplace) қолданбаларды қоса алу үшін:
+[Қолданбалар дүкеніне](https://cloud.vk.com/docs/kz/applications-and-services/marketplace) қолданбаларды қоса алу үшін:
 
-1. Егер мұны әлі жасамаған болсаңыз, [VK Cloud жүйесінде](/kz/intro/onboarding/account) тіркеліңіз. Тіркелу кезінде барлық жаңа пайдаланушылар үшін жоба автоматты түрде жасалады. Сіз бұл жобаны сервистік пакеттерді тестілеу және оларды қолданбалар дүкеніне жүктеу үшін пайдалана аласыз.
-1. Қолданбаның [сервистік пакетін тестілеу](/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_localtest) орындалатын жобаның OpenStack PID мәнін [алыңыз](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu).
+1. Егер мұны әлі жасамаған болсаңыз, [{var(cloud)} жүйесінде](/kz/intro/onboarding/account) тіркеліңіз. Тіркелу кезінде барлық жаңа пайдаланушылар үшін жоба автоматты түрде жасалады. Сіз бұл жобаны сервистік пакеттерді тестілеу және оларды қолданбалар дүкеніне жүктеу үшін пайдалана аласыз.
+1. Қолданбаның [сервистік пакетін тестілеу](/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_upload/ibservice_upload_localtest) орындалатын жобаның OpenStack PID мәнін [алыңыз](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id).
 1. [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com) поштасына хат жіберіңіз. Хатта мыналарды көрсетіңіз: 
 
     - компания атауы;

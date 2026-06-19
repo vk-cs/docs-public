@@ -5,5 +5,10 @@
   "sectionTitle": "Виртуалды машинаның пайдаланушылық бейнесін жасаңыз",
   "icon": "",
   "hidden": true,
-  "weight": 7
+  "weight": 7,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

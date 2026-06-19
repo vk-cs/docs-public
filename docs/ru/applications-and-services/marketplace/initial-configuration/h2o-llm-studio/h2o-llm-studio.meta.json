@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание H2O LLM Studio",
   "icon": "",
   "weight": 20,
-  "uuid": "f5431ebe-e70d-4349-83cf-ba1bda4077d8"
+  "uuid": "f5431ebe-e70d-4349-83cf-ba1bda4077d8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,8 +1,13 @@
 {
-    "title": "AWS CLI",
-      "shortDescription": "Установка клиента AWS для управления ресурсами на платформе VK Cloud",
-      "metaDescription": "Установка клиента AWS для управления ресурсами на платформе VK Cloud",
-    "sectionTitle": "AWS CLI",
-    "weight": 2,
-    "uuid": "857b60cf-d946-4021-acfb-bbc63b88a762"
+  "title": "Установка AWS CLI",
+  "shortDescription": "Установка клиента AWS для управления ресурсами на платформе {var(cloud)}",
+  "metaDescription": "Установка клиента AWS для управления ресурсами на платформе VK Cloud",
+  "sectionTitle": "Установка AWS CLI",
+  "weight": 2,
+  "uuid": "857b60cf-d946-4021-acfb-bbc63b88a762",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

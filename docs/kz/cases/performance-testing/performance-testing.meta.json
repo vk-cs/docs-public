@@ -4,5 +4,20 @@
   "metaDescription": "VK Cloud өнімділігін қалай тестілеуге болады",
   "sectionTitle": "Өнімділікті тестілеу",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "uuid": "50bf0fdd-9fe8-45a4-a331-b3a1c97bf90f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

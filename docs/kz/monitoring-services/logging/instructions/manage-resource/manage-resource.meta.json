@@ -1,0 +1,16 @@
+{
+  "title": "Оқиғалар журналдары ресурстарын басқару",
+  "shortDescription": "",
+  "metaDescription": "Оқиғалар журналдары ресурстарын басқару",
+  "sectionTitle": "Оқиғалар журналдары ресурстарын басқару",
+  "weight": 6,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": ""
+}

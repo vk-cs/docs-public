@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Сервис образына қойылатын талаптар",
   "sectionTitle": "Сервис образына қойылатын талаптар",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

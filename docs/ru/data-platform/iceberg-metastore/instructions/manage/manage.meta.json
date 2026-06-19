@@ -5,5 +5,12 @@
   "sectionTitle": "Работа с компонентами сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "b4af5c3a-a779-44ab-926a-8214afa572ea"
+  "uuid": "b4af5c3a-a779-44ab-926a-8214afa572ea",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

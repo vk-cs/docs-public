@@ -1,0 +1,16 @@
+{
+  "title": "MLflow",
+  "shortDescription": "Платформа для управления полным жизненным циклом моделей машинного обучения",
+  "metaDescription": "Сервис MLflow для управления полным жизненным циклом моделей машинного обучения в инфраструктуре VK Data Platform",
+  "sectionTitle": "MLflow",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 14,
+  "isBeta": true,
+  "hidden": true,
+  "uuid": ""
+}

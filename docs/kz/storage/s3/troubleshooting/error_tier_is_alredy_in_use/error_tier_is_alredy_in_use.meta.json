@@ -4,5 +4,12 @@
   "metaDescription": "MinIO-ны VK Object Storage-пен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
   "sectionTitle": "VK Object Storage-пен интеграция кезіндегі қате",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

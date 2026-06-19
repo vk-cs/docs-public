@@ -5,5 +5,10 @@
     "sectionTitle": "Управление SSL-сертификатами",
     "icon": "",
     "weight": 5,
-    "uuid": "c31fdbdc-51ec-4127-9c8f-7313ad0957bc"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "c31fdbdc-51ec-4127-9c8f-7313ad0957bc"
 }

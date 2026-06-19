@@ -1,22 +1,24 @@
+# {heading(Установка и использование ExternalDNS)[id=k8s-external-dns]}
+
 [ExternalDNS](https://github.com/kubernetes-sigs/external-dns) позволяет автоматизировать управление DNS-записями при работе с ресурсами [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) или [Service](https://kubernetes.io/docs/concepts/services-networking/service/). Если эти ресурсы настроены согласно требованиям ExternalDNS, то они будут доступны по доменному имени сразу после создания.
 
-ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dns/instructions/publicdns) в VK Cloud с помощью плагина. Далее будет показано, как установить ExternalDNS в кластер, и как использовать этот инструмент с ресурсами `Ingress` и `Service`.
+ExternalDNS интегрируется с {linkto(../../../../../networks/dns/instructions/publicdns#dns-publicdns)[text=сервисом DNS]} в {var(cloud)} с помощью плагина. Далее будет показано, как установить ExternalDNS в кластер, и как использовать этот инструмент с ресурсами `Ingress` и `Service`.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-external-dns-prepare]}
 
-1. [Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#add) DNS-зону, с которой будет работать ExternalDNS, если этого еще не сделано.
+1. {linkto(../../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add)[text=Создайте]} DNS-зону, с которой будет работать ExternalDNS, если этого еще не сделано.
 
    Для примера далее используется зона `example.com`.
 
-1. [Создайте](../../../instructions/create-cluster) кластер Cloud Containers самой актуальной версии, который имеет внешний IP-адрес и доступен из интернета.
+1. {linkto(../../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер Kubernetes актуальной версии, который имеет внешний IP-адрес и доступен из интернета.
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
-   Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета VK Cloud.
+   Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета {var(cloud)}.
 
-1. [Установите](../../../install-tools/helm) Helm версии 3.0.0 или выше, если утилита еще не установлена.
+1. {linkto(../../../install-tools/helm#k8s-helm)[text=Установите]} Helm версии 3.0.0 или выше, если утилита еще не установлена.
 
    Выберите для установки версию Helm, которая [совместима](https://helm.sh/docs/topics/version_skew/) с кластером.
 
@@ -44,33 +46,31 @@ ExternalDNS интегрируется с [сервисом DNS](/ru/networks/dn
 
    {/tabs}
 
-## 1. Подготовьте пользователя для ExternalDNS
+## {heading(1. Подготовьте пользователя для ExternalDNS)[id=k8s-external-dns-prepare-user]}
 
-ExternalDNS будет использовать реквизиты этого пользователя VK Cloud, чтобы взаимодействовать с API VK Cloud и управлять ресурсными записями DNS.
+ExternalDNS будет использовать реквизиты этого пользователя {var(cloud)}, чтобы взаимодействовать с API {var(cloud)} и управлять ресурсными записями DNS.
 
 Подготовьте пользователя и получите все необходимые реквизиты:
 
-1. [Выберите](/tools-for-using-services/account/instructions/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/access/iam/instructions/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-view-user)[text=Выберите]} существующего пользователя или {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-invite-user)[text=пригласите в проект]} нового пользователя.
 
    Требования к пользователю:
 
-   - Должен быть [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
-   - Должна быть [назначена](/ru/access/iam/instructions/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
+   - Должен быть {linkto(../../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
+   - Должна быть {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-user-role-edit)[text=назначена]} одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
-     - [Администратор сети](/ru/access/iam/concepts/roles-reference#mcs_admin_network) (минимально необходимая [роль](/ru/access/iam/concepts/rolesandpermissions)).
-     - [Администратор проекта](/ru/access/iam/concepts/roles-reference#mcs_admin).
-     - [Суперадминистратор](/ru/access/iam/concepts/roles-reference#mcs_co_owner).
-     - [Владелец проекта](/ru/access/iam/concepts/roles-reference#mcs_owner).
+     - Администратор сети (минимально необходимая {linkto(../../../../../tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-permissions)[text=роль]}).
+     - Администратор проекта.
+     - Суперадминистратор.
+     - Владелец проекта.
 
      {note:info}
-
      Для работы с ExternalDNS рекомендуется выделить отдельного пользователя с ролью Администратор сети. Это минимизирует возможный ущерб, если злоумышленник получит доступ к реквизитам этого пользователя.
-
      {/note}
 
-1. Получите реквизиты, нужные для доступа к API VK Cloud:
+1. Получите реквизиты, нужные для доступа к API {var(cloud)}:
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud, используя реквизиты пользователя, выделенного для ExternalDNS.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}, используя реквизиты пользователя, выделенного для ExternalDNS.
    1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
    1. Перейдите на вкладку **Доступ по API** и запишите значения следующих параметров:
 
@@ -82,7 +82,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Запишите пароль этого пользователя: он также необходим для доступа к API.
 
-## 2. Установите ExternalDNS
+## {heading(2. Установите ExternalDNS)[id=k8s-external-dns-install]}
 
 1. Создайте пространство имен, в которое будет установлен ExternalDNS:
 
@@ -90,7 +90,7 @@ ExternalDNS будет использовать реквизиты этого п
    kubectl create ns external-dns
    ```
 
-1. Создайте в этом пространстве имен секрет, который содержит в себе реквизиты для доступа к API VK Cloud, [полученные при подготовке пользователя](#1_podgotovte_polzovatelya_dlya_externaldns):
+1. Создайте в этом пространстве имен секрет, который содержит в себе реквизиты для доступа к API {var(cloud)}, {linkto(#k8s-external-dns-prepare-user)[text=полученные при подготовке пользователя]}:
 
    {tabs}
 
@@ -201,12 +201,10 @@ ExternalDNS будет использовать реквизиты этого п
 
    {/cut}
 
-   На поведение Helm-чарта (chart) ExternalDNS влияет множество значений. В созданном файле задан минимальный набор значений, достаточный для начала работы с ExternalDNS. Ниже описаны наиболее важные значения, которые влияют на работу ExternalDNS с DNS VK Cloud. Описания значений, которые не относятся к плагину VK Cloud (все значения, кроме `sidecars[]`), приведены в [README.md](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#values) для чарта.
+   На поведение Helm-чарта (chart) ExternalDNS влияет множество значений. В созданном файле задан минимальный набор значений, достаточный для начала работы с ExternalDNS. Ниже описаны наиболее важные значения, которые влияют на работу ExternalDNS с DNS {var(cloud)}. Описания значений, которые не относятся к плагину {var(cloud)} (все значения, кроме `sidecars[]`), приведены в [README.md](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns#values) для чарта.
 
    {note:warn}
-
    Не изменяйте и не удаляйте обязательные значения, приведенные ниже. Это может привести к некорректной работе ExternalDNS.
-
    {/note}
 
    {cut(Описание важных значений, влияющих на поведение ExternalDNS)}
@@ -231,17 +229,15 @@ ExternalDNS будет использовать реквизиты этого п
 
    {/cut}
 
-   Плагин для ExternalDNS, который обеспечивает интеграцию с DNS VK Cloud, имеет множество настроек, влияющих на поведение плагина. Настройки задаются с помощью переменных среды окружения в `sidecars[].env`. В созданном файле заданы только обязательные настройки. При необходимости вы можете задать дополнительные настройки для плагина, добавив соответствующие переменные среды окружения.
+   Плагин для ExternalDNS, который обеспечивает интеграцию с DNS {var(cloud)}, имеет множество настроек, влияющих на поведение плагина. Настройки задаются с помощью переменных среды окружения в `sidecars[].env`. В созданном файле заданы только обязательные настройки. При необходимости вы можете задать дополнительные настройки для плагина, добавив соответствующие переменные среды окружения.
 
    {note:warn}
-
    Не изменяйте и не удаляйте обязательные настройки плагина, перечисленные ниже. Это может привести к некорректной работе ExternalDNS.
-
    {/note}
 
    {cut(Описание значений, влияющих на поведение плагина)}
 
-   - (**Обязательные настройки**) Настройки, соответствующие переменным с префиксом `OS_` используются для аутентификации плагина при взаимодействии с API VK Cloud.
+   - (**Обязательные настройки**) Настройки, соответствующие переменным с префиксом `OS_` используются для аутентификации плагина при взаимодействии с API {var(cloud)}.
 
      Значения этих переменных хранятся в секрете Kubernetes, который был создан ранее.
 
@@ -310,11 +306,11 @@ ExternalDNS будет использовать реквизиты этого п
 
    {/cut}
 
-## 3. Проверьте работу External DNS
+## {heading(3. Проверьте работу External DNS)[id=k8s-external-dns-check]}
 
 Далее будет развернуто несколько демо-приложений, основанных на [примере Cafe от NGINX](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example). Эти приложения будут опубликованы (сделаны доступными из интернета) с использованием `Service` и `Ingress`, настроенных на работу с ExternalDNS.
 
-### 3.1. Опубликуйте приложение, используя сервис типа LoadBalancer
+### {heading(3.1. Опубликуйте приложение, используя сервис типа LoadBalancer)[id=k8s-external-dns-publish-loadbalancer]}
 
 1. Создайте манифест для приложения `tea`:
 
@@ -409,12 +405,10 @@ ExternalDNS будет использовать реквизиты этого п
    - Указана обязательная аннотация `external-dns.alpha.kubernetes.io/hostname`: доменное имя, которое нужно использовать для сервиса.
    - Указана опциональная аннотация `external-dns.alpha.kubernetes.io/ttl`: TTL в секундах для ресурсной записи, которая будет создана ExternalDNS.
 
-   - Выбран тип сервиса `LoadBalancer`. Для такого сервиса будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). Поскольку балансировщик по умолчанию создается с публичным IP-адресом, то связанное с сервисом приложение будет доступно из интернета.
+   - Выбран тип сервиса `LoadBalancer`. Для такого сервиса будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}. Поскольку балансировщик по умолчанию создается с публичным IP-адресом, то связанное с сервисом приложение будет доступно из интернета.
 
      {note:warn}
-
-     Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
-
+     Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
      {/note}
 
 1. Примените этот манифест в кластере для создания сервиса:
@@ -451,7 +445,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Убедитесь, что ExternalDNS создал необходимые ресурсные записи:
 
-   1. [Получите список ресурсных записей](/ru/networks/dns/instructions/publicdns/records#prosmotr_spiska_resursnyh_zapisey) для зоны `example.com`.
+   1. {linkto(../../../../../networks/dns/instructions/publicdns/records#dns-records-list)[text=Получите список ресурсных записей]} для зоны `example.com`.
    1. Найдите в списке записи, созданные ExternalDNS:
 
       - Одну A-запись `tea.example.com`.
@@ -460,11 +454,9 @@ ExternalDNS будет использовать реквизиты этого п
         Эти TXT-записи — служебные и используются ExternalDNS для отслеживания состояния созданной для сервиса `tea-svc` A-записи.
 
         {note:info}
-
         Такие записи легко отличить по префиксу `externaldns-` в имени. Их значения имеют стандартную структуру вида `heritage=.../owner=.../resource=...`.
 
-        Если [при установке ExternalDNS](#2_ustanovite_externaldns) вы задали другое значение префикса, то имена служебных TXT-записей будут отличаться.
-
+        Если {linkto(#k8s-external-dns-install)[text=при установке ExternalDNS]} вы задали другое значение префикса, то имена служебных TXT-записей будут отличаться.
         {/note}
 
       Если нужных ресурсных записей нет, подождите еще несколько минут. ExternalDNS начнет создание ресурсных записей после того, как сервису будет назначен IP-адрес. На это потребуется некоторое время.
@@ -483,9 +475,9 @@ ExternalDNS будет использовать реквизиты этого п
 
    Успешное взаимодействие с приложением по этому адресу свидетельствует о корректной работе ExternalDNS c сервисом типа `LoadBalancer`.
 
-### 3.2. Опубликуйте приложение, используя Ingress
+### {heading(3.2. Опубликуйте приложение, используя Ingress)[id=k8s-external-dns-publish-ingress]}
 
-1. [Установите](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress) в кластер аддон Ingress NGINX самой актуальной версии.
+1. {linkto(../../../instructions/addons/advanced-installation/install-advanced-ingress#k8s-install-advanced-ingress)[text=Установите]} в кластер аддон Ingress NGINX самой актуальной версии.
 
    Выполните **стандартную установку**. Не изменяйте никакие параметры, только отредактируйте код настройки аддона:
 
@@ -570,7 +562,7 @@ ExternalDNS будет использовать реквизиты этого п
 
    {/cut}
 
-   Здесь для сервиса задан тип [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip), его достаточно, поскольку приложение будет опубликовано с помощью Ingress. Такой сервис доступен только изнутри кластера и не имеет выделенного балансировщика нагрузки в отличие от сервиса, [созданного ранее](#31_opublikuyte_prilozhenie_ispolzuya_servis_tipa_loadbalancer_5cacf8cb).
+   Здесь для сервиса задан тип [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip), его достаточно, поскольку приложение будет опубликовано с помощью Ingress. Такой сервис доступен только изнутри кластера и не имеет выделенного балансировщика нагрузки в отличие от сервиса, {linkto(#k8s-external-dns-publish-loadbalancer)[text=созданного ранее]}.
 
 1. Примените эти манифесты в кластере для создания всех необходимых ресурсов:
 
@@ -670,7 +662,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 1. Убедитесь, что ExternalDNS создал необходимые ресурсные записи:
 
-   1. [Получите список ресурсных записей](/ru/networks/dns/instructions/publicdns/records#prosmotr_spiska_resursnyh_zapisey) для зоны `example.com`.
+   1. {linkto(../../../../../networks/dns/instructions/publicdns/records#dns-records-list)[text=Получите список ресурсных записей]} для зоны `example.com`.
    1. Найдите в списке записи, созданные ExternalDNS:
 
       - Одну CNAME-запись `cafe.example.com`.
@@ -694,40 +686,39 @@ ExternalDNS будет использовать реквизиты этого п
 
    Успешное взаимодействие с приложением по этому адресу свидетельствует о корректной работе ExternalDNS c ресурсом Ingress.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-external-dns-delete]}
 
-1. Если созданные ресурсы Kubernetes, предназначенные для проверки работоспособности ExternalDNS, вам больше не нужны, удалите их:
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы ExternalDNS, вам больше не нужны, удалите их:
 
-   1. Удалите все ресурсы, связанные с приложением `tea`:
+1. Удалите все ресурсы, связанные с приложением `tea`:
 
-      ```console
-      kubectl delete -f cafe-ingress.yaml -f coffee-service.yaml -f coffee-app.yaml
-      ```
+   ```console
+   kubectl delete -f cafe-ingress.yaml -f coffee-service.yaml -f coffee-app.yaml
+   ```
+   Удаление связанного с сервисом балансировщика нагрузки может занять длительное время.
 
-      Удаление связанного с сервисом балансировщика нагрузки может занять длительное время.
+1. Удалите все ресурсы, связанные с приложением `coffee`:
 
-   1. Удалите все ресурсы, связанные с приложением `coffee`:
-
-      ```console
-      kubectl delete -f tea-service.yaml -f tea-app.yaml
-      ```
+   ```console
+   kubectl delete -f tea-service.yaml -f tea-app.yaml
+   ```
   
-   1. [Удалите аддон Ingress NGINX](../../../instructions/addons/manage-addons#udalenie_addona).
+1. {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-delete)[text=Удалите аддон Ingress NGINX]}.
 
-      Удаление аддона и связанных с ним ресурсов может занять длительное время.
+   Удаление аддона и связанных с ним ресурсов может занять длительное время.
 
-   1. [Удалите ресурсные записи](/ru/networks/dns/instructions/publicdns/dns-zone#delete), созданные ExternalDNS.
+1. {linkto(../../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-delete)[text=Удалите ресурсные записи]}, созданные ExternalDNS.
 
-      Это необходимо сделать, если вы не изменяли файл `external-dns-vkcs-values.yaml` при [установке ExternalDNS](#2_ustanovite_externaldns): тогда ExternalDNS использует политику `upsert-only` и не удаляет ресурсные записи из DNS-зоны при удалении ресурсов Kubernetes. Если вы изменили этот файл и выбрали политику `sync`, то эти записи будут удалены автоматически.
+   Это необходимо сделать, если вы не изменяли файл `external-dns-vkcs-values.yaml` при {linkto(#k8s-external-dns-install)[text=установке ExternalDNS]}: тогда ExternalDNS использует политику `upsert-only` и не удаляет ресурсные записи из DNS-зоны при удалении ресурсов Kubernetes. Если вы изменили этот файл и выбрали политику `sync`, то эти записи будут удалены автоматически.
 
-      Перечень ресурсных записей:
+   Перечень ресурсных записей:
 
-      - A-запись `tea.example.com`.
-      - TXT-записи `externaldns-tea.example.com` и `externaldns-a-tea.example.com`.
-      - CNAME-запись `cafe.example.com`.
-      - TXT-записи `externaldns-cafe.example.com` и `externaldns-cname-cafe.example.com`.
+   - A-запись `tea.example.com`.
+   - TXT-записи `externaldns-tea.example.com` и `externaldns-a-tea.example.com`.
+   - CNAME-запись `cafe.example.com`.
+   - TXT-записи `externaldns-cafe.example.com` и `externaldns-cname-cafe.example.com`.
 
-1. Если ExternalDNS вам больше не нужен, удалите его:
+1. Удалите ExternalDNS:
 
    1. Удалите Helm-чарт с ExternalDNS:
 
@@ -738,18 +729,15 @@ ExternalDNS будет использовать реквизиты этого п
    1. Удалите пространство имен `external-dns`.
 
       {note:warn}
-
-      Также будет удален секрет `vkcs-auth`, который содержит в себе реквизиты для доступа к API VK Cloud.
-
+      Также будет удален секрет `vkcs-auth`, который содержит в себе реквизиты для доступа к API {var(cloud)}.
       {/note}
 
       ```console
       kubectl delete ns external-dns
       ```
 
-1. Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если он вам больше не нужен:
+{ifdef(public)}
+{include(/ru/_includes/_delete-test-cluster-short.md)}
+{/ifdef}
 
-   - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.
-
-1. [Удалите DNS-зону](/ru/networks/dns/instructions/publicdns/dns-zone#delete) `example.com`, если она вам больше не нужна.
+1. {linkto(../../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-delete)[text=Удалите DNS-зону]} `example.com`.

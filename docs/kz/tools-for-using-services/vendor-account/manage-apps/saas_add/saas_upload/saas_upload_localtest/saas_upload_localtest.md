@@ -43,11 +43,11 @@
 
    Брокерді орнатқаннан кейін `http://0.0.0.0:8000/docs` мекенжайында swagger UI редакторындағы API қолжетімді болады ({linkto(#pic_saas_swagger_broker)[text=сурет %number]}, {linkto(#pic_saas_swagger_resourceusage)[text=сурет %number]}).
 
-   {caption(Сурет {counter(pic)[id=numb_pic_saas_swagger_broker]} — API swagger UI мысалы)[align=center;position=under;id=pic_saas_swagger_broker;number={const(numb_pic_saas_swagger_broker)} ]}
+   {caption(Рисунок {counter(pic)[id=numb_pic_saas_swagger_broker]} — API swagger UI мысалы)[align=center;position=under;id=pic_saas_swagger_broker;number={const(numb_pic_saas_swagger_broker)} ]}
    ![pic1](../../../assets/SaaS_swagger_broker.png)
    {/caption}
 
-   {caption(Сурет {counter(pic)[id=numb_pic_saas_swagger_resourceusage]} — Кейін төленетін тарифтік опциялар үшін сұрауларды қамтитын API swagger UI мысалы)[align=center;position=under;id=pic_saas_swagger_resourceusage;number={const(numb_pic_saas_swagger_resourceusage)} ]}
+   {caption(Рисунок {counter(pic)[id=numb_pic_saas_swagger_resourceusage]} — Кейін төленетін тарифтік опциялар үшін сұрауларды қамтитын API swagger UI мысалы)[align=center;position=under;id=pic_saas_swagger_resourceusage;number={const(numb_pic_saas_swagger_resourceusage)} ]}
    ![pic1](../../../assets/SaaS_swagger_resourceusage.png)
    {/caption}
 1. Swagger UI API-де сипатталған сұрауларды орындаңыз.
@@ -55,5 +55,5 @@
    Сұрауларда мыналарды пайдаланыңыз:
 
    * `x-broker-api-version` VK OSB протоколы нұсқасының мәні (мысалы, `"0.1"`).
-   * `BROKER_USERNAME` файлындағы `.env` мәні.
-   * `BROKER_PASSWORD` файлындағы `.env` мәні.
+   * `.env` файлындағы `BROKER_USERNAME` мәні.
+   * `.env` файлындағы `BROKER_PASSWORD` мәні.

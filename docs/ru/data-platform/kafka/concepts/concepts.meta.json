@@ -1,10 +1,16 @@
 {
   "title": "Концепции",
-  "shortDescription": "Как устроен сервис Kafka в VK Cloud: функциональные особенности и внутренняя архитектура",
-  "metaDescription": "Как устроен сервис Kafka в VK Cloud: функциональные особенности и внутренняя архитектура",
+  "shortDescription": "Как устроен сервис Kafka в VK Data Platform: функциональные особенности и внутренняя архитектура",
+  "metaDescription": "Как устроен сервис Kafka в VK Data Platform: функциональные особенности и внутренняя архитектура",
   "sectionTitle": "Концепции",
   "icon": "",
-
   "weight": 2,
-  "uuid": "6a6c03d7-092b-4be7-9d9a-3fd1b23c849c"
+  "uuid": "6a6c03d7-092b-4be7-9d9a-3fd1b23c849c",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

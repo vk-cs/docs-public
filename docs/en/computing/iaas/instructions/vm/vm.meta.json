@@ -8,5 +8,10 @@
   "additionalUuids": [
     "979bea50-9f58-4fcf-b1ec-72b24c9a7150"
   ],
-  "uuid": "ad5abab0-a5c8-4a81-928b-5dbe4d81fdb2"
+  "uuid": "ad5abab0-a5c8-4a81-928b-5dbe4d81fdb2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

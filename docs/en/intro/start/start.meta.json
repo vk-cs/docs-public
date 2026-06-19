@@ -5,5 +5,10 @@
   "sectionTitle": "Getting started",
   "icon": "",
   "weight": 1,
-  "uuid": "bc47c6b5-472d-40ac-9d11-74f975e16814"
+  "uuid": "bc47c6b5-472d-40ac-9d11-74f975e16814",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

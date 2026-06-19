@@ -4,5 +4,25 @@
   "metaDescription": "VK Cloud: 1С-Битрикс: Управление сайтом жүйесін Ubuntu 22.04 жүйесіне орнату және баптау жолы",
   "sectionTitle": "Linux жүйесінде 1С-Битрикс орнату",
   "icon": "",
-  "weight": 15
+  "weight": 15,
+  "uuid": "38d2071a-3794-4806-bc94-a920057e1e5a",
+  "additionalUuids": [
+    "4a63fc6f-2931-4577-bf94-11047a260151",
+    "ddd0623e-5e69-4176-baef-284cf7b5873f",
+    "f867592f-c272-4779-adc1-8772255e37c7"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Audit",
   "icon": "",
   "weight": 4,
-  "uuid": "be8efc1d-9cf8-4e11-8ed5-89c3eba2925c"
+  "uuid": "be8efc1d-9cf8-4e11-8ed5-89c3eba2925c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

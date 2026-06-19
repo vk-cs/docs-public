@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Файл service.yaml",
   "sectionTitle": "Файл service.yaml",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

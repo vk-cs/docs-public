@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_ssh_keypair ресурсы",
   "sectionTitle": "ivkcs_ssh_keypair ресурсы",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

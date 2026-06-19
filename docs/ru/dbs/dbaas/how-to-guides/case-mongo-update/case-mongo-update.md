@@ -1,22 +1,20 @@
+# {heading(Репликация и обновление MongoDB на Ubuntu)[id=dbaas-case-mongo-update]}
+
 В данной статье рассмотрим, как реплицировать и обновить MongoDB на Ubuntu 18.04.
 
 {note:info}
-
-О конфигурации оборудования, а также о том, как установить и настроить MongoDB, вы можете узнать в статье [Установка и настройка MongoDB на Ubuntu](../../instructions/create/create-single-replica).
-
+О конфигурации оборудования, а также о том, как установить и настроить MongoDB, вы можете узнать в статье {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=Установка и настройка MongoDB на Ubuntu]}.
 {/note}
 
 {note:info}
-
 В описании далее используем следующие имена и IP-адреса серверов:
 
 - сервер 1 - mongo1.testdomain.com (10.0.0.2);
 - сервер 2 - mongo2.testdomain.com (10.0.0.3);
 - сервер 3 - mongo1.testdomain.com (10.0.0.4).
-
 {/note}
 
-## Настройка ReplicaSet MongoDB
+## {heading(Настройка ReplicaSet MongoDB)[id=dbaas-case-mongo-update-settings]}
 
 Replicaset  - это несколько серверов, которые содержат один и тот же набор данных, обеспечивают защиту от сбоев и высокую доступность данных. В Replicaset MongoDB  есть одна primary нода для  записи и чтения и одна или несколько secondary нод, синхронизированных с primary нодой и предоставляющих возможность чтения данных для снижения нагрузки. В случае сбоя в работе primary ноды одна из secondary нод автоматически назначается primary нодой. Для ускорения выбора новой primary ноды предназначена нода - арбитр, которая не содержит данных. Также преимуществом Replicaset  является возможность обновления кластера без необходимости останова его работы.
 
@@ -85,7 +83,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7.  Авторизуйтесь на сервере `mongo2`, импортируйте ключ репозитория MongoDB, добавьте репозиторий MongoDB и установите MongoDB (как это сделать, читайте в статье [Установка и настройка MongoDB на Ubuntu](../../instructions/create/create-single-replica)).
+7.  Авторизуйтесь на сервере `mongo2`, импортируйте ключ репозитория MongoDB, добавьте репозиторий MongoDB и установите MongoDB (как это сделать, читайте в статье {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=Установка и настройка MongoDB на Ubuntu]}).
 8.  Если вы правили файл `/etc/hosts` на сервере `mongo1`, на текущем сервере сделайте то же самое.
 9.  С сервера mongo1 скопируйте конфигурационный файл `/etc/mongod.conf` на текущий сервер, поменяйте в файле название ключа `PEMKeyFile:` с `/etc/ssl/mongo1.pem` на `PEMKeyFile: /etc/ssl/mongo2.pem`.
 10. На текущий сервер скопируйте ключ `/etc/ssl/mongoCA.pem`.
@@ -306,7 +304,7 @@ rs0:PRIMARY> rs.status()
 
 В результате мы получили `primary` ноду, `secondary` ноду и `arbiter` ноду. `Repliset` синхронизирован и находится в работоспособном состоянии.
 
-## Обновление Replicaset MongoDB
+## {heading(Обновление ReplicaSet MongoDB)[id=dbaas-case-mongo-update-update]}
 
 Рассмотрим обновление на примере перехода с версии 4.0 на версию 4.2. Чтобы понимать, какие изменения могут привести к неработоспособности текущей схемы данных, ознакомьтесь с [документом](https://docs.mongodb.com/manual/release-notes/4.2-upgrade-replica-set/).
 

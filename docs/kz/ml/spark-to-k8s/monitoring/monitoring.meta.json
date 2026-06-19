@@ -5,5 +5,10 @@
   "sectionTitle": "Кластер мониторингі",
   "icon": "",
   "weight": 6,
-  "uuid": " "
+  "uuid": " ",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

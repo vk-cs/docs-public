@@ -5,5 +5,10 @@
   "sectionTitle": "Медленно работает диск",
   "icon": "",
   "weight": 4,
-  "uuid": "d421e98a-24b5-4c98-b96e-a5112f249839"
+  "uuid": "d421e98a-24b5-4c98-b96e-a5112f249839",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

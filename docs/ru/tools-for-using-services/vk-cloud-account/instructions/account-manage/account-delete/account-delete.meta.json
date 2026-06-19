@@ -5,6 +5,11 @@
     "sectionTitle": "Удаление учетной записи",
     "icon": "",
     "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
     "additionalUuids": [
         "b2af87a5-29a6-4a35-bb27-3ceb22d11532"
     ],

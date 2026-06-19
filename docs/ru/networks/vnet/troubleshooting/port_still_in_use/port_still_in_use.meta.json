@@ -5,5 +5,9 @@
   "sectionTitle": "Ошибка при привязке порта",
   "icon": "",
   "weight": 5,
-  "uuid": "88a24399-f12d-4d18-b1ff-26eb5c161604"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

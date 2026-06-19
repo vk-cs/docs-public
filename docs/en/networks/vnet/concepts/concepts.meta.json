@@ -5,5 +5,10 @@
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,
-  "uuid": "5a9d7251-3f93-4756-b16c-a2d2ec1d91eb"
+  "uuid": "5a9d7251-3f93-4756-b16c-a2d2ec1d91eb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

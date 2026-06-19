@@ -1,0 +1,16 @@
+{
+  "title": "API",
+  "shortDescription": "API операциялары, сұраулар мен жауаптардың құрылымдары, VK Object Storage үшін API әдістерін пайдалану кезіндегі қате кодтары",
+  "metaDescription": "API VK Object Storage: бакеттермен және объектілермен жұмыс істеу, ACL, CORS, өмірлік цикл (lifecycle), объектілерді бұғаттау (object lock) конфигурациясын басқару, құрамдас (multipart) жүктеу, PAK (префикс бойынша қол жеткізу кілттері), тегтеу (tagging) және webhook-хабарландырулар.",
+  "sectionTitle": "API",
+  "icon": "",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

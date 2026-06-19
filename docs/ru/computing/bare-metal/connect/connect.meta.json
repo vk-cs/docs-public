@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение",
   "icon": "",
   "weight": 3,
-  "uuid": "ea40d0e7-dc76-4ac0-bb1c-fc2f7a4440f6"
+  "uuid": "ea40d0e7-dc76-4ac0-bb1c-fc2f7a4440f6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

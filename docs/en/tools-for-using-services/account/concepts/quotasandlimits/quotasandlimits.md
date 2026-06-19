@@ -118,22 +118,22 @@ No more than 1000 virtual machines can be displayed in the management console.
 |Hard
 
 |Number of vCPUs per instance 
-|32 pcs.
-|![](/en/assets/no.svg "inline")
+|32 pcs.
+|![](../../../../assets/no.svg "inline")
 
 |Number of High-Freq vCPUs per instance
-|24 pcs.
-|![](/en/assets/no.svg "inline")
+|24 pcs.
+|![](../../../../assets/no.svg "inline")
 
 |Number of GPUs per instance
-|4 pcs.
+|4 pcs.
 
-(8 pcs. for [Tesla H200](/en/computing/gpu/concepts/about))
-|![](/en/assets/check.svg "inline")
+(8 pcs. for [Tesla H200](/en/computing/gpu/concepts/about))
+|![](../../../../assets/check.svg "inline")
 
 |The amount of RAM per instance
-|1024 GB
-|![](/en/assets/no.svg "inline")
+|1024 GB
+|![](../../../../assets/no.svg "inline")
 
 |===
 
@@ -628,7 +628,7 @@ Even if the quota for the total number of subnets in the project has been [incre
 | Number of Anycast IP addresses
 | ![](/en/assets/no.svg "inline")
 | `anycastip`
-| 0 pcs.
+| 0 pcs.
 | 50 pcs.
 | ![](/en/assets/no.svg "inline")
 

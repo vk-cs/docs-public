@@ -103,7 +103,7 @@ Use the instructions in the article [Replication](../instructions/replication).
 
 Installing extensions is described in detail in the section [Managing extensions](../instructions/managing-extensions).
 
-The monitoring service is enabled by default for PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C.
+The monitoring service is enabled by default for PostgreSQL.
 
 {/cut}
 
@@ -112,7 +112,7 @@ The monitoring service is enabled by default for PostgreSQL, PostgresPro Standar
 When using a database cluster, if the wizard is unavailable, switching to other nodes will be configured automatically. When using [configuration](../concepts/work-configs) **Master-Replica** switching will need to be done manually:
 
 - MySQL;
-- PostgreSQL, Postgres Pro.
+- PostgreSQL.
 
 {/cut}
 

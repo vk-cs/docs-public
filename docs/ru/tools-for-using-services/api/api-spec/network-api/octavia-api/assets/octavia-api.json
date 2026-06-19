@@ -2650,12 +2650,8 @@
             },
             "description": "Список тегов"
           },
-          "ca_tls_container_ref": {
-
-          },
-          "crl_container_ref": {
-
-          },
+          "ca_tls_container_ref": {},
+          "crl_container_ref": {},
           "protocol": {
             "type": "string",
             "enum": [
@@ -2767,9 +2763,7 @@
             "default": false,
             "description": ""
           },
-          "tls_container_ref": {
-
-          },
+          "tls_container_ref": {},
           "allbackups": {
             "type": "boolean",
             "default": true,
@@ -2837,12 +2831,8 @@
             },
             "description": "Список тегов"
           },
-          "ca_tls_container_ref": {
-
-          },
-          "crl_container_ref": {
-
-          },
+          "ca_tls_container_ref": {},
+          "crl_container_ref": {},
           "session_persistence": {
             "default": null,
             "type": "object",
@@ -2881,9 +2871,7 @@
             "default": false,
             "description": ""
           },
-          "tls_container_ref": {
-
-          },
+          "tls_container_ref": {},
           "allbackups": {
             "type": "boolean",
             "default": true,
@@ -2928,12 +2916,8 @@
             },
             "description": "Список тегов"
           },
-          "ca_tls_container_ref": {
-
-          },
-          "crl_container_ref": {
-
-          },
+          "ca_tls_container_ref": {},
+          "crl_container_ref": {},
           "session_persistence": {
             "default": null,
             "type": "object",
@@ -2972,9 +2956,7 @@
             "default": false,
             "description": ""
           },
-          "tls_container_ref": {
-
-          },
+          "tls_container_ref": {},
           "allbackups": {
             "type": "boolean",
             "default": true,
@@ -3345,9 +3327,9 @@
           },
           "http_version": {
             "type": "number",
-            "default": 1.0,
+            "default": 1,
             "enum": [
-              1.0,
+              1,
               1.1
             ],
             "description": "Версия HTTP. Только для типа проверки ``HTTP``"
@@ -3458,9 +3440,9 @@
           },
           "http_version": {
             "type": "number",
-            "default": 1.0,
+            "default": 1,
             "enum": [
-              1.0,
+              1,
               1.1
             ],
             "description": "Версия HTTP. Только для типа проверки ``HTTP``"
@@ -3528,7 +3510,7 @@
           "http_version": {
             "type": "number",
             "enum": [
-              1.0,
+              1,
               1.1
             ],
             "description": "Версия HTTP. Только для типа проверки ``HTTP``"

@@ -1,9 +1,14 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Краткое описание возможностей сервиса и примеры задач, которые можно решить с его помощью",
-      "metaDescription": "Сервис Cloud Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Инструменты и возможности сервиса Cloud Containers в VK Cloud",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "uuid": "f723bcfc-ae94-42c5-8e11-d400649e7cef"
+  "title": "О сервисе",
+  "shortDescription": "Краткое описание возможностей сервиса и примеры задач, которые можно решить с его помощью",
+  "metaDescription": "Сервис Cloud Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Инструменты и возможности сервиса Cloud Containers в VK Cloud",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f723bcfc-ae94-42c5-8e11-d400649e7cef",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Cloud ML Platform сервисімен Terraform көмегімен жұмыс істеу",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
-  "weight": 70
+  "weight": 70,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

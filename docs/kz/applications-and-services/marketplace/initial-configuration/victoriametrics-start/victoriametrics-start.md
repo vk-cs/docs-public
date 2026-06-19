@@ -9,8 +9,8 @@ VictoriaMetrics пайдалану арқылы сіз [Marketplace](/kz/start/l
 Жобада VictoriaMetrics сервисін өрістету үшін:
 
 1. [Тіркеліңіз](/kz/intro/onboarding/account) VK Cloud-та.
-1. Егер желі бұрын жасалмаған болса, [желі жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau).
-1. Өрістетілген сервисі бар бір немесе бірнеше сервер орналастырылатын [ішкі желі баптауларында](/kz/networks/vnet/instructions/net#zhelini_redakciyalau) **Жеке DNS** опциясын өшіріңіз.
+1. Егер желі бұрын жасалмаған болса, [желі жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).
+1. Өрістетілген сервисі бар бір немесе бірнеше сервер орналастырылатын [ішкі желі баптауларында](/kz/networks/vnet/instructions/net#vnet-net-subnet-edit) **Жеке DNS** опциясын өшіріңіз.
 1. Тиісті тарифтік жоспарды (**Single**, **Cluster Mini**, **Cluster Maxi**) таңдап, жобада сервисті [өрістетіңіз](../../instructions/pr-instance-add):
 
    {cut(Тарифтік жоспарлар конфигурациялары туралы толығырақ)}
@@ -80,7 +80,7 @@ VictoriaMetrics пайдалану арқылы сіз [Marketplace](/kz/start/l
       - Жүйелік диск пен деректер дискісі үшін:
 
         - **Диск өлшемі**: ВМ дискісінің қажетті өлшемін гигабайтпен көрсетіңіз.
-        - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types#disk_types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
+        - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
 
    1. **Келесі қадам** түймесін басыңыз.
    1. **Растау** қадамында сервистің есептелген құнымен танысып, **Тарифті қосу** түймесін басыңыз.
@@ -106,7 +106,7 @@ VictoriaMetrics пайдалану арқылы сіз [Marketplace](/kz/start/l
       - Жүйелік диск пен деректер дискісі үшін:
 
         - **Диск өлшемі**: ВМ дискісінің қажетті өлшемін гигабайтпен көрсетіңіз.
-        - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types#disk_types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
+        - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
 
    1. **Келесі қадам** түймесін басыңыз.
    1. **Растау** қадамында сервистің есептелген құнымен танысып, **Тарифті қосу** түймесін басыңыз.
@@ -128,7 +128,7 @@ VictoriaMetrics пайдалану арқылы сіз [Marketplace](/kz/start/l
       - **Желі**: бұрын жасалған желі мен ішкі желіні таңдаңыз.
       - **Қолжетімділік аймағы**: ВМ қай деректерді өңдеу орталығында іске қосылатынын таңдаңыз.
       - **Диск өлшемі**: ВМ дискісінің қажетті өлшемін гигабайтпен көрсетіңіз.
-      - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types#disk_types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
+      - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
 
    1. **Келесі қадам** түймесін басыңыз.
    1. **Компоненттер параметрлері** қадамында:
@@ -137,7 +137,7 @@ VictoriaMetrics пайдалану арқылы сіз [Marketplace](/kz/start/l
       - `vmstorage` үшін деректер дискісі бойынша:
 
         - **Диск өлшемі**: ВМ дискісінің қажетті өлшемін гигабайтпен көрсетіңіз.
-        - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types#disk_types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
+        - **Диск түрі**: [диск түрлерінің бірін](/kz/computing/iaas/concepts/data-storage/disk-types) таңдаңыз — HDD, SSD немесе High-IOPS SSD.
 
    1. **Растау** қадамында сервистің есептелген құнымен танысып, **Тарифті қосу** түймесін басыңыз.
 

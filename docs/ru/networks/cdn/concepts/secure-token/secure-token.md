@@ -1,9 +1,11 @@
-*Secure token* — это [подключаемая в личном кабинете](/ru/networks/cdn/instructions/manage-cdn/secure-token) опция, которая позволяет вам защитить файлы CDN-ресурса от нежелательных загрузок.
+# {heading(Secure token)[id=cdn-secure-token]}
+
+*Secure token* — это {linkto(../../../../networks/cdn/instructions/manage-cdn/secure-token#cdn-secure-token)[text=подключаемая в личном кабинете]} опция, которая позволяет вам защитить файлы CDN-ресурса от нежелательных загрузок.
 С помощью Secure token можно организовать временный доступ к контенту и обеспечить безопасность ваших данных.
 
 Если включена опция Secure token, доступ к файлам, которые раздаются через CDN, осуществляется только по подписанным ссылкам, содержащим специальный код (secure token). Когда пользователь переходит по ссылке, CDN сверяет полученный secure token с хешем, вычисленным из секретного ключа ресурса и параметров запроса, и в зависимости от результата разрешает или запрещает доступ к контенту.
 
-Чтобы организовать доступ к части контента по обычным ссылкам, [создайте](/ru/networks/cdn/instructions/create-resource) для него еще один ресурс с отдельным [источником](/ru/networks/cdn/concepts/origin-groups).
+Чтобы организовать доступ к части контента по обычным ссылкам, {linkto(../../../../networks/cdn/instructions/create-resource#cdn-create-resource)[text=создайте]} для него еще один ресурс с отдельным {linkto(../../../../networks/cdn/concepts/origin-groups#cdn-origin-groups)[text=источником]}.
 
 Подписанная ссылка имеет следующий вид:
 
@@ -24,9 +26,9 @@ http://cdn.example.com/files/image.jpg?md5=CUQ1rzAvtQCxwLS&expires=1301605293
 
 Подписанная ссылка генерируется вашим сайтом, на который для этого должен быть предварительно добавлен специальный скрипт.
 
-## {heading(Примеры скриптов)[id=scripts]}
+## {heading(Примеры скриптов)[id=cdn-secure-token-scripts]}
 
-### {heading(Скрипты для создания подписанной ссылки без ограничения доступа по IP-адресу)[id=standardscripts]}
+### {heading(Скрипты для создания подписанной ссылки без ограничения доступа по IP-адресу)[id=cdn-secure-token-standardscripts]}
 
 {tabs}
 {tab(PHP)}
@@ -108,7 +110,7 @@ echo $HOSTNAME$FILEPATH'?md5='$TOKEN'&expires='$EXPIRES
 {/tab}
 {/tabs}
 
-### {heading(Скрипты для создания подписанной ссылки с ограничением доступа по IP-адресу)[id=ipscripts]}
+### {heading(Скрипты для создания подписанной ссылки с ограничением доступа по IP-адресу)[id=cdn-secure-token-ipscripts]}
 
 {tabs}
 {tab(PHP)}

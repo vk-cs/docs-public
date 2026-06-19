@@ -4,5 +4,11 @@
   "metaDescription": "VK Data Platform-тағы Airflow сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
   "sectionTitle": "Концепциялар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

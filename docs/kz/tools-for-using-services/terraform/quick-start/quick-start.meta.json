@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud платформасын басқару үшін Terraform-провайдерді қалай пайдалану керек. Terraform-пен жұмысты бастау: орнату, инициализациялау, Terraform-ды жаңарту",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

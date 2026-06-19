@@ -1,8 +1,15 @@
 {
-  "title": "Қолжетімділік кілттері",
-  "shortDescription": "VK Object Storage үшін қолжетімділік кілттерін қалай жасауға, қосуға, өшіруге және жоюға болады",
-  "metaDescription": "VK Object Storage үшін қолжетімділік кілттерін қалай жасауға, қосуға, өшіруге және жоюға болады",
-  "sectionTitle": "Қолжетімділік кілттері",
+  "title": "VK Object Storage аккаунты және оған қол жеткізу кілттері",
+  "shortDescription": "AWS CLI, API және файл менеджерлері арқылы VK Object Storage қызметіне қол жеткізу",
+  "metaDescription": "VK Object Storage аккаунтын жасау және жою. AWS CLI, API және файл менеджерлері арқылы VK Object Storage қызметіне қол жеткізу үшін аккаунтқа байланыстырылған кілттерді басқару.",
+  "sectionTitle": "VK Object Storage аккаунты және оған қол жеткізу кілттері",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

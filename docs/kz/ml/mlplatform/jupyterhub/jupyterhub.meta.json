@@ -14,5 +14,10 @@
       "partialPath": "/kz/ml/mlplatform/mlplatform-lib",
       "title": "Cloud ML Platform кітапханасымен жұмыс істеу"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

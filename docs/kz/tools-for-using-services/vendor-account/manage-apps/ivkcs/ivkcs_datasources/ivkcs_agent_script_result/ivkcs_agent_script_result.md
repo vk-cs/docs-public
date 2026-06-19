@@ -22,21 +22,21 @@
 |
 `host`
 |
-Скрипт орындалған хост атауы. `hosts` ресурсының `ivkcs_agent_exec` аргументінде көрсетілген атауға сәйкес келеді
+Скрипт орындалған хост атауы. `ivkcs_agent_exec` ресурсының `hosts` аргументінде көрсетілген атауға сәйкес келеді
 |string
 | ![](/kz/assets/check.svg "inline")
 
 |
 `group`
 |
-Скрипттер тобының атауы. `name` ресурсының `ivkcs_agent_exec` аргументінің мәніне сәйкес келеді
+Скрипттер тобының атауы. `ivkcs_agent_exec` ресурсының `name` аргументінің мәніне сәйкес келеді
 |string
 | ![](/kz/assets/check.svg "inline")
 
 |
 `index`
 |
-Скрипт индексі. `step.index` ресурсының `ivkcs_agent_exec` аргументінің мәніне сәйкес келеді
+Скрипт индексі. `ivkcs_agent_exec` ресурсының `step.index` аргументінің мәніне сәйкес келеді
 |integer
 | ![](/kz/assets/check.svg "inline")
 |===

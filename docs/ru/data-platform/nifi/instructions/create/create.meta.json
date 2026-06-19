@@ -1,0 +1,14 @@
+{
+  "title": "Создание экземпляра сервиса",
+  "shortDescription": "Как создать экземпляр NiFi в нужной конфигурации",
+  "metaDescription": "Как создать экземпляр сервиса NiFi в нужной конфигурации в VK Data Platform",
+  "sectionTitle": "Создание экземпляра сервиса",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -5,5 +5,10 @@
   "sectionTitle": "VM Licenses",
   "icon": "",
   "weight": 4,
-  "uuid": "31cd1a32-110f-4bf0-aede-1bbbf0f0b136"
+  "uuid": "31cd1a32-110f-4bf0-aede-1bbbf0f0b136",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

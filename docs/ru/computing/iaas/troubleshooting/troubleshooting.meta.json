@@ -8,5 +8,12 @@
   "additionalUuids": [
     "1dc54ecb-febf-429b-bed9-48b3fc50e7cd"
   ],
-  "uuid": "04eef649-bdc6-430a-b90f-f131b420c1d8"
+  "uuid": "04eef649-bdc6-430a-b90f-f131b420c1d8",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

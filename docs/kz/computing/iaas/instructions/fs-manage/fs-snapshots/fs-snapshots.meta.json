@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-та файлдық қойма снэпшоттарын жасау, снэпшоттар тізімін қарау, файлдық қойманы снэпшоттан қалпына келтіру және снэпшоттарды жою.",
   "sectionTitle": "Снэпшоттармен жұмыс",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

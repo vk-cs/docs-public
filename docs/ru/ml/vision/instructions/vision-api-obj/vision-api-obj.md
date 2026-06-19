@@ -1,10 +1,12 @@
+# {heading(Распознавание объектов)[id=vision-instructions-vision-api-obj]}
+
 Данный метод позволяет найти различные объекты на фотографии.
 
 HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/objects/detect`
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-vision-api-obj-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -17,7 +19,7 @@ ENDPOINT: `/api/v1/objects/detect`
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -53,11 +55,11 @@ ENDPOINT: `/api/v1/objects/detect`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-vision-api-obj-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -79,7 +81,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-vision-api-obj-request-answer]}
 
 | Параметр      | Тип      | Значение                                                 |
 | ------------- | -------- | -------------------------------------------------------- |
@@ -118,7 +120,7 @@ curl -X 'POST' \
 | coord          | Координаты найденного объекта (optional)                         |
 | types_prob     | Массив вероятностей типов номерных знаков. на данный момент поддерживаются следующие типы: <br>"rus" — все типы Российских номеров; <br>"cis" — номера СНГ (кроме индивидуальных и военных украинских); <br>"eu" — одноэтажные номера Европы (optional, only for car_number mode) |
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-vision-api-obj-request-answer-example]}
 
 {cut(Ответ в формате JSON)}
 
@@ -755,9 +757,9 @@ curl -X 'POST' \
 
 {/cut}
 
-## Дополнительные примеры
+## {heading(Дополнительные примеры)[id=vision-instructions-vision-api-obj-request-extra-examples]}
 
-### Поиск объектов на изображении с растениями
+### {heading(Поиск объектов на изображении с растениями)[id=vision-instructions-vision-api-obj-request-extra-examples-search-plants]}
 
 Пример запроса:
 
@@ -873,7 +875,7 @@ curl -X 'POST' \
 
 {/cut}
 
-### Невалидный JSON или изображение (нет допустимых mode)
+### {heading(Невалидный JSON или изображение (нет допустимых mode))[id=vision-instructions-vision-api-obj-request-extra-examples-invalid-json]}
 
 Пример запроса (невалидный JSON):
 

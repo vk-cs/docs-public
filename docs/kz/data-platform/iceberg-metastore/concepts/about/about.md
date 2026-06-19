@@ -1,3 +1,5 @@
+# {heading(Сервис туралы)[id=iceberg_info]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Iceberg Metastore — Apache Iceberg форматындағы кестелерге арналған метадеректерді басқару жүйесінің компоненті. 
@@ -18,10 +20,10 @@ Cloud Iceberg Metastore:
 
 1. Деректер қоймаларының келесі түрлерін құру кезінде компонент ретінде:
 
-   - Деректер көлі ([Data Lakehouse](/kz/data-platform/dlh/concepts/about)). Сервис S3 қоймасында үлкен көлемдегі құрылымдалған және құрылымдалмаған деректерді ұйымдастыру және басқару үшін пайдаланылады.
+   - Деректер көлі {ifdef(public)} ([Data Lakehouse](/kz/data-platform/dlh/concepts/about)){/ifdef}{ifndef(public)} Data Lakehouse {/ifndef}. Сервис S3 қоймасында үлкен көлемдегі құрылымдалған және құрылымдалмаған деректерді ұйымдастыру және басқару үшін пайдаланылады.
    - Аналитикалық деректер қоймасы (Data Warehouse). Сервис ықшамдау (тығыздау) және партициялау (partitioning) арқылы оңтайландырылған құрылымдалған деректерге аналитикалық сұраулар орындайды.
    - Бұлттық қойма. Сервис S3 қоймасымен және VK Data Platform сервистерімен біріктіріледі.
 
 1. ETL-процестерін ұйымдастыру. Сервис schema evolution және транзакциялылықты қолдау есебінен процестерді жеделдетеді.
 
-Басқа сервистер ([Cloud Spark](/kz/data-platform/spark/concepts/about), [Cloud Trino](/kz/data-platform/trino/concepts/about), [Cloud Flink](/kz/data-platform/flink/concepts/about) және т.б.) Apache Iceberg кестелерін іздеу және интерпретациялау үшін Cloud Iceberg Metastore пайдаланады.
+Басқа сервистер ({linkto(../../../spark/concepts/about#spark_info)[text=Cloud Spark]}, {linkto(../../../trino/concepts/about#trino_info)[text=Cloud Trino]}, {linkto(../../../flink/concepts/about#flink_info)[text=Cloud Flink]} және т.б.) Apache Iceberg кестелерін іздеу және интерпретациялау үшін Cloud Iceberg Metastore пайдаланады.

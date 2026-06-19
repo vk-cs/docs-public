@@ -4,5 +4,12 @@
   "metaDescription": "Жеке кабинетте немесе OpenStack CLI көмегімен дискіні неге жою мүмкін емес",
   "sectionTitle": "Дискіні жою мүмкін емес",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

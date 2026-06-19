@@ -9,5 +9,14 @@
     {
       "partialPath": "/kz/tools-for-using-services/api/api-spec/vdi-api"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

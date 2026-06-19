@@ -1,0 +1,14 @@
+{
+  "title": "Cloud PostgreSQL",
+  "shortDescription": "Объектно-реляционная СУБД для хранения и управления данными",
+  "metaDescription": "Сервис Cloud PostgreSQL для хранения и управления данными в инфраструктуре VK Data Platform",
+  "sectionTitle": "Cloud PostgreSQL",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 11,
+  "uuid": ""
+}

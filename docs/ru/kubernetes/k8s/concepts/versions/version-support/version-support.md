@@ -1,19 +1,21 @@
-В Kubernetes aaS от VK Cloud новые версии обычно добавляются через 1 месяц после официального релиза.
+# {heading(Политика поддержки версий Kubernetes)[id=k8s-version-support]}
 
-В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
+В Kubernetes aaS от {var(cloud)} новые версии обычно добавляются через 1 месяц после официального релиза.
+
+В данный момент в Kubernetes aaS от {var(cloud)} доступны следующие версии Kubernetes:
 
 - 1.34.2
 - 1.33.3
 - 1.32.1
 - 1.31.4
 
-При [создании нового кластера](../../../instructions/create-cluster) выбирайте последнюю доступную версию Kubernetes. По возможности [обновляйте существующие кластеры](../../../instructions/update) до последней доступной версии.
+При {linkto(../../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=создании нового кластера]} выбирайте последнюю доступную версию Kubernetes. По возможности {linkto(../../../instructions/update#k8s-update)[text=обновляйте существующие кластеры]} до последней доступной версии.
 
 Если кластер использует устаревшую версию Kubernetes, его корректная работа не гарантируется. В случае возникновения проблем служба технической поддержки не сможет помочь с их решением.
 
-## {heading(Поддержка версий Kubernetes)[id=k8s-versions-list]}
+## {heading(Поддержка версий Kubernetes)[id=k8s-version-support-list]}
 
-Версии Kubernetes поддерживаются на протяжении 14 месяцев с даты релиза в Kubernetes aaS от VK Cloud.
+Версии Kubernetes поддерживаются на протяжении 14 месяцев с даты релиза в Kubernetes aaS от {var(cloud)}.
 
 За 30 дней до прекращения поддержки версии Kubernetes пользователи получат сообщение об этом по электронной почте и в центре уведомлений личного кабинета.
 
@@ -127,9 +129,9 @@
 
 {/cut}
 
-Историю изменений версий можно посмотреть в разделе [История версий Kubernetes](#k8s_versions_history).
+Историю изменений версий можно посмотреть в разделе {linkto(#k8s-version-support-version-history)[text=История версий Kubernetes]}.
 
-## {heading(Поддержка функций сервиса в версиях Kubernetes)[id=k8s-features-list]}
+## {heading(Поддержка функций сервиса в версиях Kubernetes)[id=k8s-version-support-features-list]}
 
 Новые функции добавляются во все версии Kubernetes, за исключением случаев несовместимости функции и версии.
 
@@ -142,67 +144,67 @@
 |1.20.x–1.17.x
 
 |Настройки масштабирования групп узлов
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
 
 |Инвалидация ключевой пары
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
 
 |Изменение размера диска Prometheus
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
 
 |Изменение типа виртуальной машины Master
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
 
 |Обновление версии кластера
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
 
 |Метки и ограничения
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
 
 |Узлы кластера на AlmaLinux
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
-|Интеграция с IAM облака VK Cloud
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+|Интеграция с IAM облака {var(cloud)}
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |Автоматическое масштабирование master-узлов кластера
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |Поддержка GPU
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 |===
 
-## {heading(История версий Kubernetes)[id=k8s_versions_history]}
+## {heading(История версий Kubernetes)[id=k8s-version-support-version-history]}
 
 [cols="1,1,2", options="header"]
 |===
@@ -212,7 +214,7 @@
 
 |1.34.2
 |[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
-|![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |1.33.1
 |[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
@@ -224,11 +226,11 @@
 
 |1.32.1
 |[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
-|![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |1.31.4
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
-|Добавлена возможность [использовать и управлять GPU](../../../how-to-guides/gpu-operator) в кластерах Kubernetes
+|Добавлена возможность {linkto(../../../how-to-guides/gpu-operator#k8s-gpu-operator)[text=использовать и управлять GPU]} в кластерах Kubernetes
 
 |===
 
@@ -242,19 +244,19 @@
 
 |1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
-|![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |1.29.7
 |[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
-| ![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |1.28.9
 |[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
-| ![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |1.27.6
 |[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
-|Реализовано [автоматическое масштабирование](/ru/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера
+|Реализовано {linkto(../../scale#k8s-scale-autoscaling)[text=автоматическое масштабирование]} master-узлов кластера
 
 |1.26.5
 |[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
@@ -266,7 +268,7 @@
 
 |1.25.1
 |[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
-| ![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |1.24.9
 |[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
@@ -274,7 +276,7 @@
 
 |1.23.6
 |[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
-|Добавлена [интеграция с IAM облака VK Cloud](/ru/kubernetes/k8s/concepts/access-management)
+|Добавлена {linkto(../../access-management#k8s-access-management)[text=интеграция с IAM облака {var(cloud)}]}
 
 |1.22.6
 |[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
@@ -290,7 +292,7 @@
 |[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
 |[Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
 
-Изменен [формат хранения логов](/ru/cases/cases-logs/case-fluent-bit)
+Изменен [формат хранения логов](../../../../../cases/cases-logs/case-fluent-bit)
 
 |===
 {/cut}

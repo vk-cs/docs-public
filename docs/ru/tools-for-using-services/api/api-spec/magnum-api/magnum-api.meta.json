@@ -1,9 +1,14 @@
 {
-    "title": "Cloud Containers",
-      "shortDescription": "OpenAPI-спецификация для управления кластерами K8s сервиса Cloud Containers",
-      "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Cloud Containers",
-    "sectionTitle": "Cloud Containers",
-    "icon": "",
-    "weight": 8,
-    "uuid": "8575f65f-409e-4cec-b5f6-38cf3dcd9e6e"
+  "title": "Cloud Containers",
+  "shortDescription": "OpenAPI-спецификация для управления кластерами K8s сервиса Cloud Containers",
+  "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Cloud Containers",
+  "sectionTitle": "Cloud Containers",
+  "icon": "",
+  "weight": 8,
+  "uuid": "8575f65f-409e-4cec-b5f6-38cf3dcd9e6e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

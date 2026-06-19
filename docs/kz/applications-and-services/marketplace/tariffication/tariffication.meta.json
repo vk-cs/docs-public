@@ -1,8 +1,22 @@
 {
-  "title": "Тарифтеу",
+  "title": "Тарификация",
   "shortDescription": "Сервис тарификациясының ерекшеліктері және құнды есептеу",
   "metaDescription": "Marketplace VK Cloud: сервис тарификациясының ерекшеліктері, құнды есептеу",
-  "sectionTitle": "Тарифтеу",
+  "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

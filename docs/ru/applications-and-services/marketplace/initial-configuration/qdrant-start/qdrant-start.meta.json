@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание Qdrant",
   "icon": "",
   "weight": 14,
-  "uuid": "29b1eacd-1629-4b14-8750-416818a76195"
+  "uuid": "29b1eacd-1629-4b14-8750-416818a76195",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

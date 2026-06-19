@@ -4,5 +4,15 @@
   "metaDescription": "Мониторинг құралдары бар аддонды баптау және орнату.",
   "sectionTitle": "Kube Prometheus Stack",
   "icon": "",
-  "weight": 13
+  "weight": 13,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

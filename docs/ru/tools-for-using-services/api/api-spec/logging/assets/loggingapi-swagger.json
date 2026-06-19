@@ -17,9 +17,7 @@
   },
   "security": [
     {
-      "key": [
-
-      ]
+      "key": []
     }
   ],
   "host": "mcs.mail.ru",
@@ -31,9 +29,7 @@
           "swagger"
         ],
         "summary": "Получить спецификацию в формате Swagger",
-        "security": [
-
-        ],
+        "security": [],
         "description": "",
         "operationId": "getSwaggerJSON",
         "produces": [
@@ -58,9 +54,7 @@
           "health"
         ],
         "summary": "Проверить работоспособность сервиса (healthcheck)",
-        "security": [
-
-        ],
+        "security": [],
         "operationId": "healthz",
         "responses": {
           "200": {
@@ -78,9 +72,7 @@
           "health"
         ],
         "summary": "Проверить готовность сервиса",
-        "security": [
-
-        ],
+        "security": [],
         "operationId": "readyz",
         "responses": {
           "200": {

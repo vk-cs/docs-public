@@ -101,7 +101,7 @@ In order to deploy workloads in a cluster using images from the Docker registry:
    {tab(Linux (bash) / macOS (zsh))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds \
+   kubectl create secret docker-registry k8s-registry-creds \ 
      --docker-server=<DOCKER_REGISTRY_IP_ADDRESS>:5000 \
      --docker-username=<USERNAME> \
      --docker-password=<PASSWORD> \
@@ -113,11 +113,11 @@ In order to deploy workloads in a cluster using images from the Docker registry:
    {tab(Windows (PowerShell))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds `
-     --docker-server=<DOCKER_REGISTRY_IP_ADDRESS>:5000 \ `
-     --docker-username=<USERNAME> \ `
-     --docker-password=<PASSWORD> \ `
-     --namespace=<NAMESPACE> 
+   kubectl create secret docker-registry k8s-registry-creds ` 
+     --docker-server=<DOCKER_REGISTRY_IP_ADDRESS>:5000 `
+     --docker-username=<USERNAME> `
+     --docker-password=<PASSWORD> `
+     --namespace=<NAMESPACE>
    ```
 
    {/tab}

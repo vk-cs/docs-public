@@ -1,8 +1,13 @@
 {
-  "title": "Тарифтеу",
-  "shortDescription": "VK Cloud жеке кабинетінің тарификация ерекшеліктері",
+  "title": "Тарификация",
+  "shortDescription": "{var(cloud)} жеке кабинетінің тарификация ерекшеліктері",
   "metaDescription": "VK Cloud жеке кабинетінің тарификация ерекшеліктері.",
-  "sectionTitle": "Тарифтеу",
+  "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

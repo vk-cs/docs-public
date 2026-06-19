@@ -5,5 +5,10 @@
   "sectionTitle": "Изменение домена для сервиса WordPress",
   "icon": "",
   "weight": 16,
-  "uuid": "2d022a37-6df2-4776-b20f-ff4fa7773caa"
+  "uuid": "2d022a37-6df2-4776-b20f-ff4fa7773caa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

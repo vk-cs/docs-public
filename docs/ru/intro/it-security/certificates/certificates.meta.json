@@ -5,5 +5,10 @@
   "sectionTitle": "Сертификаты, лицензии и аттестаты",
   "icon": "",
   "weight": 5,
-  "uuid": "b413687f-a50f-4d21-b1e5-988e2cbf985b"
+  "uuid": "b413687f-a50f-4d21-b1e5-988e2cbf985b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

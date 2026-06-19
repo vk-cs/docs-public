@@ -5,5 +5,10 @@
   "sectionTitle": "DNS теңестіру",
   "icon": "",
   "hidden": true,
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

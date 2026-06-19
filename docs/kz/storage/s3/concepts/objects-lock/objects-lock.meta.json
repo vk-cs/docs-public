@@ -4,5 +4,12 @@
   "metaDescription": "VK Object Storage сервисіндегі объектілерді жоюдан және қайта жазудан бұғаттау. Уақытша бұғаттау (retention period): басқарылатын (GOVERNANCE) және қатаң (COMPLIANCE) режимдер. Мерзімсіз бұғаттау (legal hold). Нұсқалау мен объектілерді бұғаттау арасындағы байланыс.",
   "sectionTitle": "Объектілерді бұғаттау (object lock)",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

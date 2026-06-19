@@ -1,3 +1,5 @@
+# {heading(Стандартты метрикалар)[id=monitoring-mon-metrics]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Әдепкі бойынша стандартты мониторинг агенті операциялық жүйеден келесі ақпаратты жинайды:

@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "SaaS-қолданбаны дүкенге жүктеу",
   "sectionTitle": "SaaS-қолданбаны дүкенге жүктеу",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

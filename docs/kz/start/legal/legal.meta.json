@@ -4,5 +4,19 @@
   "metaDescription": "VK Cloud-тың негізгі келісімдері мен жария оферталары",
   "sectionTitle": "Құқықтық ақпарат",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

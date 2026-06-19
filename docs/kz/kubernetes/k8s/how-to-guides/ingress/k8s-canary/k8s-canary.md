@@ -1,14 +1,16 @@
+# {heading(Canary Deployment Ingress баптауы)[id=k8s-k8s-canary]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Бұл мақала Kubernetes кластерін жайып орналастыруғал және онда [Canary Deployment](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#canary) баптауғал Nginx Ingress Annotations көмегімен көмектеседі: echo-сервер үшін Canary Deployment сценарийін орындауғал және трафиктің конфигурациялық файлғал сәйкес бөлінетініне көз жеткізуге мүмкіндік береді.
+Бұл мақала Kubernetes кластерін жайып орналастыруға және онда [Canary Deployment](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#canary) баптауға Nginx Ingress Annotations көмегімен көмектеседі: echo-сервер үшін Canary Deployment сценарийін орындауға және трафиктің конфигурациялық файлға сәйкес бөлінетініне көз жеткізуге мүмкіндік береді.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-k8s-canary-prepare]}
 
-1. [Жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster/create-webui) VK Cloud-та Kubernetes кластерін.
-1. [қосылыңыз](/kz/kubernetes/k8s/connect/kubectl) кластерге `kubectl` көмегімен.
+{include(/kz/_includes/_create-test-cluster.md)}
+1. `kubectl` көмегімен кластерге {linkto(../../../connect/kubectl#k8s-kubectl)[text=қосылыңыз]}.
 1. Тесттік қосымша жасаңыз:
 
-   1. Жоба үшін жаңал аттар кеңістігін жасаңыз:
+   1. Жоба үшін жаңа аттар кеңістігін жасаңыз:
 
       ```console
       kubectl create ns echo-production
@@ -20,7 +22,7 @@
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-production
    ```
 
-## 1. Ingress ресурсін жасаңыз
+## {heading(1. Ingress ресурсін жасаңыз)[id=k8s-k8s-canary-create-ingress]}
 
 1. `http-svc.ingress` манифест файлын келесі мазмұнмен жасаңыз:
 
@@ -51,9 +53,9 @@
    kubectl apply -f http-svc.ingress -n echo-production
    ```
 
-   Нәтижесінде қосымша жасалады және сервер `echo.com` адресінен келетін барлық сұрауларғал жауап бере бастайды.
+   Нәтижесінде қосымша жасалады және сервер `echo.com` адресінен келетін барлық сұрауларға жауап бере бастайды.
 
-## 2. Жайып орналастырылған қосымшаның көшірмесін жасаңыз
+## {heading(2. Жайып орналастырылған қосымшаның көшірмесін жасаңыз)[id=k8s-k8s-canary-create-copy-app]}
 
 1. Қосымша үшін аттар кеңістігінің Canary-нұсқасын жасаңыз:
 
@@ -103,9 +105,9 @@
    kubectl apply -f http-svc.ingress.canary -n echo-canary
    ```
 
-## 3. Трафиктің бөлінуінің жұмысқал қабілеттілігін тексеріңіз
+## {heading(3. Трафиктің бөлінуінің жұмысқа қабілеттілігін тексеріңіз)[id=k8s-k8s-canary-check-traffic]}
 
-1. [қосылыңыз](../../../connect/k8s-dashboard) көмегімен Kubernetes Dashboard.
+1. Kubernetes Dashboard көмегімен кластерге {linkto(../../../connect/k8s-dashboard#k8s-k8s-dashboard)[text=қосылыңыз]}.
 1. **Namespaces** бөліміне өтіңіз.
 1. **Namespace** сүзгісін `All` мәніне ауыстырыңыз.
 1. Бүйірлік мәзірдің төменгі бөлігінде **Ingresses** таңдаңыз.
@@ -113,7 +115,7 @@
    Барлық қолжетімді Ingresses тізімі көрсетіледі.
 
 1. `http-svc` үшін **Endpoints** бағанында бір IP-мекенжай көрсетілгеніне көз жеткізіңіз.
-1. Орнатылған конфигурацияғал сәйкес сұраулардың бөлінуін `count.rb` скриптін орындап тексеріңіз:
+1. Орнатылған конфигурацияға сәйкес сұраулардың бөлінуін `count.rb` скриптін орындап тексеріңіз:
 
    {cut(count.rb)}
 
@@ -138,9 +140,8 @@
 {"echo-production"=>896, "echo-canary"=>104}
 ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+{ifdef(public)}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-k8s-canary-delete]}
 
-Жұмыс істеп тұрған кластер есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
-
-- [тоқтатыңыз](../../../instructions/manage-cluster#klasterdi_iske_kosu_nemese_toktatu), кейінірек пайдалану үшін;
-- [жойыңыз](../../../instructions/manage-cluster#delete_cluster) оны біржола.
+{include(/kz/_includes/_delete-test-cluster.md)}
+{/ifdef}

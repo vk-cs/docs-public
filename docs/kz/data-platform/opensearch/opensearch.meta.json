@@ -1,0 +1,14 @@
+{
+  "title": "OpenSearch",
+  "shortDescription": "Іздеу жүйелері мен талдау шешімдерін құруға арналған бағдарламалық кешен",
+  "metaDescription": "VK Data Platform инфрақұрылымындағы іздеу жүйелері мен талдау шешімдерін құруға арналған OpenSearch сервисі",
+  "sectionTitle": "OpenSearch",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 16,
+  "uuid": ""
+}

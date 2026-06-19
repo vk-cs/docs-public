@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Файл display.yaml",
   "sectionTitle": "Файл display.yaml",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,4 +1,6 @@
-## Настройка политики доступа по странам
+# {heading(Настройка доступа и параметров безопасности)[id=cdn-security]}
+
+## {heading(Настройка политики доступа по странам)[id=cdn-security-access-policy-country]}
 
 Настройка позволяет защитить контент от несанкционированного доступа из определенных стран.
 
@@ -8,7 +10,7 @@
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Безопасность**.
 1. Включите опцию **Настроить политику доступа по странам**.
@@ -24,7 +26,7 @@
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `country_acl`.
 
@@ -56,7 +58,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Настройка политики доступа по домену
+## {heading(Настройка политики доступа по домену)[id=cdn-security-access-policy-domain]}
 
 Настройка позволяет защитить контент от публикации на других сайтах.
 
@@ -66,7 +68,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Безопасность**.
 1. Включите опцию **Настроить политику доступа по домену**.
@@ -83,7 +85,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `referrer_acl`.
 
@@ -114,7 +116,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Настройка политики доступа по IP-адресам
+## {heading(Настройка политики доступа по IP-адресам)[id=cdn-security-access-policy-ip]}
 
 Настройка позволяет запретить доступ к контенту для определенных IP-адресов.
 
@@ -124,7 +126,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Безопасность**.
 1. Включите опцию **Настроить политику доступа по IP-адресам**.
@@ -140,7 +142,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `ip_address_acl`.
 
@@ -173,7 +175,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## {heading(Выбор версий протокола TLS)[id=tls-versions]}
+## {heading(Выбор версий протокола TLS)[id=cdn-security-tls-versions]}
 
 Настройка позволяет выбрать определенные версии протокола TLS, которые будут использоваться для шифрования HTTPS-трафика, получаемого конечным пользователем через CDN. Если опция отключена, используются все доступные версии:
 
@@ -189,7 +191,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Безопасность**.
 1. Включите опцию **Настроить разрешенные версии TLS**.

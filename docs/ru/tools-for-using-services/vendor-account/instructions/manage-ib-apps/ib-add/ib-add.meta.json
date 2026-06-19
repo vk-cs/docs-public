@@ -1,0 +1,12 @@
+{
+  "title": "Добавление image-based приложения",
+  "shortDescription": "Добавление image-based приложения поставщика в Marketplace",
+  "metaDescription": "Руководство по добавлению image-based приложений в Marketplace: создание образа приложения, подготовка сервисного пакета с описанием конфигурации сервиса (тарифные планы, опции) и его инфраструктуры, загрузка и публикация сервиса в Marketplace",
+  "sectionTitle": "Добавление image-based приложения",
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

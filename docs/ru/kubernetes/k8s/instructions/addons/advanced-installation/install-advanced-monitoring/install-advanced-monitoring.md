@@ -1,11 +1,21 @@
-## Подготовительные шаги
+# {heading(Kube Prometheus Stack)[id=k8s-install-advanced-monitoring]}
+
+{ifndef(public)}
+Аддон позволяет добавить систему мониторинга для кластера Kubernetes на базе Prometheus, Alertmanager и Grafana. Prometheus — собирает метрики ресурсов кластера Kubernetes и хранит на высокоскоростном диске pvc подключенного к кластеру. Grafana — имеет предустановленные дашборды для полноценного мониторинга всего кластера. Alertmanager — обрабатывает оповещения от Prometheus.
+{/ifndef}
+
+{ifdef(public)}
+## {heading(Подготовительные шаги)[id=k8s-install-advanced-monitoring-prep]}
 
 {include(/ru/_includes/_addon-prep.md)}
 
-## Установка аддона
+## {heading(Установка аддона)[id=k8s-install-advanced-monitoring-install]}
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
+Для аддона доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}.
 
+{/ifdef}
+
+{ifdef(public)}
 {tabs}
 
 {tab(Стандартная установка)}
@@ -13,37 +23,50 @@
 1. Установите аддон:
 
    {tabs}
-   
+
    {tab(Личный кабинет)}
-      
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+{/ifdef}
+
+   {ifdef(public)}
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   {/ifdef}
+   {ifndef(public)}
+   1. {linkto(../../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
+   {/ifndef}
    1. Выберите проект, где находится нужный кластер.
+   {ifdef(public)}
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
+   {/ifdef}
+   {ifndef(public)}
+   1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+   {/ifndef}
    1. Нажмите на имя нужного кластера.
    1. Перейдите на вкладку **Аддоны**.
    1. Если в кластере уже есть установленные аддоны, нажмите кнопку **Добавить аддон**.
-   1. Нажмите кнопку **Установить аддон** на карточке аддона `kube-prometheus-stack`.
+   1. Нажмите кнопку **Установить аддон** на карточке аддона **kube-prometheus-stack**.
+   {ifndef(public)}
+   1. В поле **Версия** выберите необходимую версию аддона и нажмите **Установить аддон**.
+   {/ifndef}
    1. При необходимости отредактируйте:
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
+      - {linkto(#k8s-install-advanced-monitoring-edit-code)[text=код настройки аддона]}.
 
         {note:warn}
-
         Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
         {/note}
 
    1. Нажмите кнопку **Установить аддон**.
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
+{ifdef(public)}
    {/tab}
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -72,9 +95,9 @@
    
    {/tabs}
 
-1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
-1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
-1. При необходимости в браузере [поключитесь к веб-интерфейсу Grafana](/ru/kubernetes/k8s/connect/addons-ui#web-ui), входящему в состав аддона Kube Prometheus Stack.
+1. При необходимости {linkto(#k8s-install-advanced-monitoring-disk-change)[text=измените размер диска Prometheus]}.
+1. При необходимости {linkto(#k8s-install-advanced-monitoring-get-password)[text=получите пароль для Grafana из секрета Kubernetes]}.
+1. При необходимости в браузере {linkto(../../../../connect/addons-ui#k8s-addons-ui-web-ui)[text=подключитесь к веб-интерфейсу Grafana]}, входящему в состав аддона Kube Prometheus Stack.
 
 {/tab}
 
@@ -86,16 +109,16 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Найдите в списке нужный кластер.
 
    1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-      Если такой группы нет — [добавьте ее](../../../manage-node-group#add_group).
+      Если такой группы нет — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=добавьте ее]}.
 
-   1. [Задайте](../../../manage-node-group#labels_taints) для этой группы узлов, если это еще не сделано:
+   1. {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=Задайте]} для этой группы узлов, если это еще не сделано:
 
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.
@@ -110,7 +133,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -121,7 +144,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
+      - {linkto(#k8s-install-advanced-monitoring-edit-code)[text=код настройки аддона]}.
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -169,9 +192,7 @@
       {/tabs}
 
       {note:warn}
-
       Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
       {/note}
 
    1. Нажмите кнопку **Установить аддон**.
@@ -182,7 +203,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -207,19 +228,17 @@
    
    {/tabs}
 
-1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
-1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
+1. При необходимости {linkto(#k8s-install-advanced-monitoring-disk-change)[text=измените размер диска Prometheus]}.
+1. При необходимости {linkto(#k8s-install-advanced-monitoring-get-password)[text=получите пароль для Grafana из секрета Kubernetes]}.
 
 {/tab}
 
 {tab(Быстрая установка)}
 
 {note:info}
-
 При быстрой установке код настройки аддона не редактируется. Будет создан секрет Kubernetes, содержащий постоянный пароль для входа в веб-интерфейс Grafana.
 
 Если это вам не подходит, выполните **стандартную установку** или **установку на выделенные worker-узлы**.
-
 {/note}
 
 1. Установите аддон:
@@ -228,7 +247,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -248,7 +267,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -273,23 +292,22 @@
    
    {/tabs}
 
-1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
-1. [Получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
+1. При необходимости {linkto(#k8s-install-advanced-monitoring-disk-change)[text=измените размер диска Prometheus]}.
+1. {linkto(#k8s-install-advanced-monitoring-get-password)[text=Получите пароль для Grafana из секрета Kubernetes]}.
 
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## Редактирование кода настройки аддона при установке
+## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-advanced-monitoring-edit-code]}
 
 {note:info}
-
 - Редактирование кода аддона применимо для стандартной установки и установки на выделенные worker-узлы.
 - Полный код настройки аддона вместе с описанием полей доступен на [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
-
 {/note}
 
-### Установка временного пароля для веб-интерфейса Grafana
+### {heading(Установка временного пароля для веб-интерфейса Grafana)[id=k8s-install-advanced-monitoring-temp-password]}
 
 При установке аддона с параметрами по умолчанию будет создан секрет Kubernetes, содержащий постоянный пароль для входа в веб-интерфейс Grafana.
 
@@ -297,14 +315,15 @@
 
 ```yaml
 grafana:
-  adminPassword: "<временный пароль>"
+  adminPassword: "<ВРЕМЕННЫЙ_ПАРОЛЬ>"
 ```
 
-После редактирования кода [продолжите установку аддона](#ustanovka_addona).
+{ifdef(public)}
+После редактирования кода {linkto(#k8s-install-advanced-monitoring-install)[text=продолжите установку аддона]}.
 
-## Изменение размера диска Prometheus
+## {heading(Изменение размера диска Prometheus)[id=k8s-install-advanced-monitoring-disk-change]}
 
-Эта операция доступна, если в кластере [установлен](#ustanovka_addona) аддон мониторинга `kube-prometheus-stack`.
+Эта операция доступна, если в кластере {linkto(#k8s-install-advanced-monitoring-install)[text=установлен]} аддон мониторинга `kube-prometheus-stack`.
 
 На диске Prometheus хранятся данные мониторинга кластера. Если для них недостаточно места, или вы хотите увеличить производительность диска Prometheus, увеличьте размер диска.
 
@@ -312,12 +331,12 @@ grafana:
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
 1. Нажмите на имя нужного кластера.
 1. Перейдите на вкладку **Аддоны**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для аддона `kube-prometheus-stack` и выберите пункт **Изменить размер диска Prometheus**.
+1. Нажмите ![](../../../../../../assets/more-icon.svg "inline") для аддона `kube-prometheus-stack` и выберите пункт **Изменить размер диска Prometheus**.
 1. Задайте нужный размер диска. Операция работает только в сторону увеличения.
 1. Нажмите кнопку **Подтвердить**.
 
@@ -325,21 +344,19 @@ grafana:
 
 {/tabs}
 
-## Получение пароля для Grafana из секрета Kubernetes
+## {heading(Получение пароля для Grafana из секрета Kubernetes)[id=k8s-install-advanced-monitoring-get-password]}
 
 Если аддон был установлен без указания временного пароля, значение пароля для входа в веб-интерфейс Grafana можно получить из секрета Kubernetes.
 
 {note:info}
-
 Далее используется имя сервиса `kube-prometheus-stack` и пространство имен `prometheus-monitoring`. Если при добавлении аддона были выбраны другие параметры, скорректируйте шаги и команды.
-
 {/note}
 
 {tabs}
 
 {tab(Kubernetes Dashboard)}
 
-1. [Подключитесь к кластеру](../../../../connect/k8s-dashboard) с помощью Kubernetes Dashboard.
+1. {linkto(../../../../connect/k8s-dashboard#k8s-k8s-dashboard)[text=Подключитесь к кластеру]} с помощью Kubernetes Dashboard.
 1. В выпадающем списке рядом слева от строки поиска выберите пространство имен `prometheus-monitoring`.
 1. Перейдите в раздел меню **Config and Storage → Secrets**.
 1. Найдите в списке секретов `kube-prometheus-stack-grafana` и нажмите на имя секрета.
@@ -351,7 +368,7 @@ grafana:
 
 {tab(kubectl)}
 
-1. [Убедитесь](../../../../connect/kubectl#check_connection), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. {linkto(../../../../connect/kubectl#k8s-kubectl-check-connection)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
 1. Получите пароль для входа в Grafana из секрета Kubernetes:
 
@@ -380,14 +397,12 @@ grafana:
 
 {/tabs}
 
-## {heading(Сброс пароля для Grafana)[id=reset_grafana_password]}
+## {heading(Сброс пароля для Grafana)[id=k8s-install-advanced-monitoring-reset-password]}
 
 Если аддон был установлен без указания временного пароля, значение пароля для входа в веб-интерфейс Grafana хранится в секрете Kubernetes. Если этот секрет был утерян, вы можете сбросить пароль, чтобы снова получить доступ к Grafana.
 
 {note:info}
-
 Далее используется имя сервиса `kube-prometheus-stack` и пространство имен `prometheus-monitoring`. Если при добавлении аддона были выбраны другие параметры, скорректируйте команды.
-
 {/note}
 
 1. Получите имя пода Grafana:
@@ -405,7 +420,8 @@ grafana:
 1. Сбросьте пароль, выполнив команду внутри пода Grafana:
 
    ```console
-   kubectl -n prometheus-monitoring exec <имя пода Grafana> -- sh -c "grafana cli --debug admin reset-admin-password <новый пароль>"
+   kubectl -n prometheus-monitoring exec <ИМЯ_ПОДА_GRAFANA> -- sh -c "grafana cli --debug admin reset-admin-password <НОВЫЙ_ПАРОЛЬ>"
    ```
 
    Если пароль успешно сброшен, в выводе команды будет сообщение `Admin password changed successfully ✔`.
+{/ifdef}

@@ -5,5 +5,19 @@
   "sectionTitle": "REST API",
   "icon": "",
   "weight": 7,
-  "uuid": "c52a3b85-277f-419c-94b7-cf19c446dfa3"
+  "uuid": "c52a3b85-277f-419c-94b7-cf19c446dfa3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

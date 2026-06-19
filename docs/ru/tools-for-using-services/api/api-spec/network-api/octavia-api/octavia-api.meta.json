@@ -5,5 +5,10 @@
   "sectionTitle": "Управление балансировщиками нагрузки",
   "icon": "",
   "weight": 2,
-  "uuid": "be0d1369-dd32-4804-95ba-0d67d0e64a5e"
+  "uuid": "be0d1369-dd32-4804-95ba-0d67d0e64a5e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

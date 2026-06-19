@@ -1,0 +1,1 @@
+# {heading(Құралдарды баптау)[id=prerequisites]}

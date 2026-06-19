@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud пайдаланушысының есептік жазбасын жою.",
   "sectionTitle": "Есептік жазбаны жою",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

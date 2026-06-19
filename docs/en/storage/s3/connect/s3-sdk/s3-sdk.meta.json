@@ -1,9 +1,23 @@
 {
-    "title": "SDK",
-      "shortDescription": "",
-      "metaDescription": "Connecting to S3-compatible VK Object Storage using the SDK",
-    "sectionTitle": "SDK",
-    "icon": "",
-    "weight": 3,
-    "uuid": "483b4c17-d93f-4c69-936b-4cf65ea1d4a1"
+  "title": "SDK",
+  "shortDescription": "",
+  "metaDescription": "Connecting to S3-compatible VK Object Storage using the SDK",
+  "sectionTitle": "SDK",
+  "icon": "",
+  "weight": 3,
+  "uuid": "483b4c17-d93f-4c69-936b-4cf65ea1d4a1",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

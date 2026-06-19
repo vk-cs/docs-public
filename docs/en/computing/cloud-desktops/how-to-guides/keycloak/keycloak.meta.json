@@ -5,5 +5,10 @@
   "sectionTitle": "Keycloak integration",
   "icon": "",
   "weight": 3,
-  "uuid": "14917a9e-af75-4766-9733-452b2c3e50a0"
+  "uuid": "14917a9e-af75-4766-9733-452b2c3e50a0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

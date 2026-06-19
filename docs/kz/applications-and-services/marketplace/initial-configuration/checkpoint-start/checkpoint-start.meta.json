@@ -4,5 +4,19 @@
   "metaDescription": "Check Point CloudGuard Network өрістету: шлюздерді баптау және желілік интерфейстерді қосу",
   "sectionTitle": "Check Point CloudGuard Network көмегімен инфрақұрылымды қорғау",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

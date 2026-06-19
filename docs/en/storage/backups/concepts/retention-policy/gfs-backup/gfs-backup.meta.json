@@ -1,12 +1,17 @@
 {
-    "title": "Backup by GFS strategy",
-      "shortDescription": "GFS strategy for long-term storage of backups",
-      "metaDescription": "The article describes the GFS strategy of long-term storage of backups.",
-    "sectionTitle": "Backup by GFS strategy",
-    "icon": "",
-    "weight": 1,
-    "additionalUuids": [
-        "829593e2-da2b-4fe9-89fb-1d11d8006038"
-    ],
-    "uuid": "22e28394-c473-4865-ba9b-5a92eaff3bfd"
+  "title": "Backup by GFS strategy",
+  "shortDescription": "GFS strategy for long-term storage of backups",
+  "metaDescription": "The article describes the GFS strategy of long-term storage of backups.",
+  "sectionTitle": "Backup by GFS strategy",
+  "icon": "",
+  "weight": 1,
+  "additionalUuids": [
+    "829593e2-da2b-4fe9-89fb-1d11d8006038"
+  ],
+  "uuid": "22e28394-c473-4865-ba9b-5a92eaff3bfd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: мақсатты жобаға деректерді іздеу және сүзгілеу міндеттері үшін Meilisearch сервисін өрістету қадамдары",
   "sectionTitle": "Meilisearch өрістету",
   "icon": "",
-  "weight": 12
+  "weight": 12,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

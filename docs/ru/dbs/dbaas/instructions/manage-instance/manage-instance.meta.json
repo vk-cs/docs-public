@@ -4,10 +4,19 @@
   "metaDescription": "Базы данных VK Cloud: основные операции с инстансами различных типов СУБД.",
   "sectionTitle": "Управление инстансом БД",
   "icon": "",
-  "weight": 2,
+  "weight": 3,
   "additionalUuids": [
     "3a8feb8c-b4cc-48ef-bce8-a3b1788d23e6",
     "bf7fe0ce-0c14-46b4-a6fe-3abb3c51c8a2"
   ],
-  "uuid": "54dbccbd-4729-43b3-8aee-032815ef60f4"
+  "uuid": "54dbccbd-4729-43b3-8aee-032815ef60f4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

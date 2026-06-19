@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Spark",
+  "shortDescription": "Үлкен деректерді үлестірілген өңдеуге арналған Apache Spark негізіндегі сервис",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Spark сервисімен жұмыс: сервис данасының параметрлері, дананы жасау және онымен жұмыс, тарификация",
+  "sectionTitle": "Cloud Spark",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

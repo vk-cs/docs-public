@@ -5,5 +5,19 @@
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 5,
-  "uuid": "dc4925e1-dda7-48d5-aa14-dc261360f004"
+  "uuid": "dc4925e1-dda7-48d5-aa14-dc261360f004",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

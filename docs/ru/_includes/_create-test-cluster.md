@@ -1,0 +1,1 @@
+1. {linkto(/ru/kubernetes/k8s/instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер Kubernetes актуальной версии, если это еще не сделано.

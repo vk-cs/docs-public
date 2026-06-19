@@ -5,5 +5,10 @@
   "sectionTitle": "Nova component events",
   "icon": "",
   "weight": 5,
-  "uuid": "91db1032-a2cf-425b-a0ac-260f6182f2ed"
+  "uuid": "91db1032-a2cf-425b-a0ac-260f6182f2ed",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

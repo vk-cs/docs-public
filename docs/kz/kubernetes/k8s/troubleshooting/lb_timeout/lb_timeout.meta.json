@@ -4,5 +4,15 @@
   "metaDescription": "Егер LoadBalancer түріндегі Kubernetes сервисінде байланыс үзілуі орын алса, не істеу керек",
   "sectionTitle": "Жүктеме теңгергішіндегі байланыс үзілуі",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

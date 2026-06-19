@@ -2,5 +2,10 @@
   "title": "Ортаныда брокерді өрістету",
   "shortDescription": "",
   "metaDescription": "Ортаныда брокерді өрістету",
-  "sectionTitle": "Ортаныда брокерді өрістету"
+  "sectionTitle": "Ортаныда брокерді өрістету",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

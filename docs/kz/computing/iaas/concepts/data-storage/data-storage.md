@@ -1,0 +1,1 @@
+# {heading(Деректерді сақтау орны)[id=iaas-concepts-data-storage]}

@@ -343,7 +343,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) virtual machines.
+1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) virtual machines.
 1. [Delete](../../instructions/vpn#removing_a_vpn_tunnel) VPN tunnel.
 1. [Delete](../../instructions/router#managing_static_routes) static routes defined on the side of the client network.
 

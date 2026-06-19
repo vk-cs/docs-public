@@ -4,5 +4,12 @@
   "metaDescription": "Неліктен VK Cloud жүйесіндегі виртуалды машина сыртқы желіні көрмейді",
   "sectionTitle": "ВМ сыртқы желіні көрмейді",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

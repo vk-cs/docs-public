@@ -1,12 +1,14 @@
+# {heading(Жылдам бастау)[id=mlplatform-jupyterhub-instructions-quickstart]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жылдам бастау сізге JupyterHub сервисімен жұмысты бастауға және оның мүмкіндіктерімен танысуға көмектеседі.
 
 Жылдам бастаудың барлық қадамдарынан өтіп, сіз JupyterHub инстансын жасауды және оған қосылуды үйренесіз.
 
-## 1. JupyterHub инстансын жасаңыз
+## {heading(1. JupyterHub инстансын жасаңыз)[id=mlplatform-jupyterhub-instructions-quickstart-1_create-instance]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 1. **ML Platform** бөліміне өтіңіз.
 1. **JupyterHub** карточкасындағы **Инстанс жасау** батырмасын басыңыз.
 1. **Конфигурация** қадамында инстанс әкімшісі үшін құпиясөзді орнатыңыз. Пайдаланушы атын және құпиясөзді сақтаңыз.
@@ -21,13 +23,13 @@
 1. **Желіні таңдау** қадамында әдепкі желіні қалдырып, **Инстанс жасау** батырмасын басыңыз.
 1. Инстанстың жасалуын күтіңіз. Әдетте бұл 10–15 минутты алады. Инстанс жасалғаннан кейін оның сипаттамалары бар бет ашылады.
 
-## 2. Инстансқа қосылыңыз
+## {heading(2. Инстансқа қосылыңыз)[id=mlplatform-jupyterhub-instructions-quickstart-2_connect_instance]}
 
 1. Жасалған инстанс үшін **DNS-атауы** бағанындағы сілтемені басыңыз.
 1. Есептік деректерді пайдаланып, инстанста авторизациялаңыз.
 
 JupyterHub инстансының жұмыс үстелі ашылады.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=mlplatform-jupyterhub-instructions-quickstart-delete-unused]}
 
-JupyterHub инстанстары тарифтелмейді. Егер инстанс енді қажет болмаса, оны [жойыңыз](../instructions/manage#delete).
+JupyterHub инстанстары тарификацияланады. Егер инстанс енді қажет болмаса, оны [жойыңыз](../instructions/manage#mlplatform-jupyterhub-instructions-manage-delete).

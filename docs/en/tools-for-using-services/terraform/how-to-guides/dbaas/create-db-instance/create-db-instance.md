@@ -22,7 +22,7 @@ In all the examples below, DB instances are created with the following propertie
 
 {note:warn}
 
-When creating MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1C database instances in **Cluster** [configuration](/en/dbs/dbaas/concepts/work-configs) a [service load balancer](/en/networks/balancing/concepts/load-balancer) will be created.
+When creating MySQL or PostgreSQL database instances in **Cluster** [configuration](/en/dbs/dbaas/concepts/work-configs) a [service load balancer](/en/networks/balancing/concepts/load-balancer) will be created.
 
 Using a load balancer is [charged](/en/networks/vnet/tariffication).
 

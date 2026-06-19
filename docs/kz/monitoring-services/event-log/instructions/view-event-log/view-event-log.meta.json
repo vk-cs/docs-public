@@ -4,5 +4,14 @@
   "metaDescription": "Оқиғалар журналындағы жазбаларды қарау және іздеу құралдары",
   "sectionTitle": "Оқиғалар журналымен жұмыс",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -7,7 +7,7 @@
 ## Дайындық қадамдары
 
 1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account).
-1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau).
+1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).
 1. [ВМ жасаңыз](/kz/computing/iaas/instructions/vm/vm-create):
 
    - атауы: `Ubuntu_22_04_Bitrix`;
@@ -28,7 +28,7 @@
 
    Мысалда жасалған инстанстың ішкі IP-мекенжайы: `10.0.0.7`.
 
-1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#add).
+1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add).
 
    {note:warn}
 
@@ -36,7 +36,7 @@
 
    {/note}
 
-1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#add):
+1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-zone-add):
 
    - жазба түрі: `A`;
    - атауы: мысалы, `site-bitrix.example.vk.cloud`;
@@ -111,32 +111,32 @@
 
 1. Браузерде ВМ-нің жария мекенжайын енгізіңіз (осы нұсқаулықта бұл `site-bitrix.example.vk.cloud`).
 1. Орнату шеберінде CMS орнату процесін бастаңыз.
-1. **Лицензиялық келісім** қадамында Bitrix CMS лицензиялық келісімінің шарттарын қабылдаңыз.
-1. **Тіркеу** қадамында өнімді [тіркеңіз](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=32&LESSON_ID=2043&LESSON_PATH=3903.4862.4888.4538.2043).
-1. **Алдын ала тексеру** қадамында барлық параметрлердің талаптарға сәйкес келетінін тексеріңіз (жасыл түспен белгіленген).
-1. **Дерекқорды жасау** қадамында ДҚ үшін `MySQL-1111` параметрлерін көрсетіңіз:
+1. **Лицензионное соглашение** қадамында Bitrix CMS лицензиялық келісімінің шарттарын қабылдаңыз.
+1. **Регистрация** қадамында өнімді [тіркеңіз](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=32&LESSON_ID=2043&LESSON_PATH=3903.4862.4888.4538.2043).
+1. **Предварительная проверка** қадамында барлық параметрлердің талаптарға сәйкес келетінін тексеріңіз (жасыл түспен белгіленген).
+1. **Создание базы данных** қадамында ДҚ үшін `MySQL-1111` параметрлерін көрсетіңіз:
 
    - **Сервер**: `10.0.0.7`.
-   - **Дерекқор пайдаланушысы**: **Бар**.
-   - **Пайдаланушы аты**: `user`.
-   - **Дерекқор пайдаланушысының құпиясөзі**: `AN0r25e0ae4d626p`.
-   - **Дерекқор**: **Бар**.
-   - **Дерекқор атауы**: `MySQL-1111`.
+   - **Пользователь базы данных**: `Существующий`.
+   - **Имя пользователя**: `user`.
+   - **Пароль пользователя базы данных**: `AN0r25e0ae4d626p`.
+   - **База данных**: `Существующая`.
+   - **Имя базы данных**: `MySQL-1111`.
 
-1. **Өнімді орнату** қадамында өнімнің орнатылуын күтіңіз, бұл біраз уақыт алуы мүмкін.
+1. **Установка продукта** қадамында өнімнің орнатылуын күтіңіз, бұл біраз уақыт алуы мүмкін.
 1. [Пайда болған терезеде](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=32&LESSON_ID=2059&LESSON_PATH=3903.4862.4888.4538.2059) әкімшінің тіркелгі деректерін көрсетіңіз.
 
 ## 2. Bitrix жұмыс қабілеттілігін тексеріңіз
 
-[Әкімшінің тіркелгі деректерін көрсеткеннен кейін](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=32&LESSON_ID=2059&LESSON_PATH=3903.4862.4888.4538.2059) **Сайтқа өту** түймесін басыңыз. Bitrix CMS-тің бастапқы беті ашылады.
+[Әкімшінің тіркелгі деректерін көрсеткеннен кейін](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=32&LESSON_ID=2059&LESSON_PATH=3903.4862.4888.4538.2059) **Перейти на сайт** түймесін басыңыз. Bitrix CMS-тің бастапқы беті ашылады.
 
 ![](assets/bitrix_main.png)
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Өрістетілген виртуалды ресурстар тарифтелмейді. Егер олар енді қажет болмаса:
+Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар енді қажет болмаса:
 
-- `Ubuntu_22_04_Bitrix` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
-- `MySQL-1111` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#bd_instansyn_nemese_onyn_hosttaryn_zhoyu).
-- Қажет болса, `87.239.105.191` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
-- Жасалған `site-bitrix.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#resurstyk_zhazbalardy_zhoyu).
+- `Ubuntu_22_04_Bitrix` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `MySQL-1111` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance).
+- Қажет болса, `87.239.105.191` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).
+- Жасалған `site-bitrix.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-delete).

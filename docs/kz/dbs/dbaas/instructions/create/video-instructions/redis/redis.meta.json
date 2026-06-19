@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Databases VK Cloud: бұлттағы реляциялық дерекқорлармен жұмыс істеуге арналған Redis инстансын жайылту бойынша бейне-нұсқаулық",
   "sectionTitle": "Redis",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

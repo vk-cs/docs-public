@@ -1,8 +1,13 @@
 {
   "title": "VPN-туннелін SDN Neutron арқылы ұйымдастыру",
-  "shortDescription": "VK Cloud бұлттық желісін клиенттік желімен байланыстыратын VPN-туннелін қалай баптауға болады",
+  "shortDescription": "{var(cloud)} бұлттық желісін клиенттік желімен байланыстыратын VPN-туннелін қалай баптауға болады",
   "metaDescription": "VPN-туннелі арқылы SDN Neutron ішіндегі on-premises инфрақұрылымы мен VK Cloud виртуалды желісі арасында желілік байланыс қалай орнатылады",
   "sectionTitle": "VPN-туннелін SDN Neutron арқылы ұйымдастыру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

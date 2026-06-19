@@ -1,8 +1,10 @@
-[Постоянные тома](/ru/kubernetes/k8s/reference/pvs-and-pvcs) (Persistent Volumes, PV) можно подключать к простым демо-приложениям различными способами. Далее для подключения будут использованы Persistent Volume Claims (PVC). Для проверки работоспособности приложений и подключенных к ним PV будет создан ресурс Ingress.
+# {heading(Работа с постоянными томами (PV))[id=k8s-storage]}
 
-## Подготовительные шаги
+{linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=Постоянные тома]} (Persistent Volumes, PV) можно подключать к простым демо-приложениям различными способами. Далее для подключения будут использованы Persistent Volume Claims (PVC). Для проверки работоспособности приложений и подключенных к ним PV будет создан ресурс Ingress.
 
-1. [Создайте](../../instructions/create-cluster) кластер Kubernetes самой актуальной версии.
+## {heading(Подготовительные шаги)[id=k8s-storage-prepare]}
+
+{include(/ru/_includes/_create-test-cluster.md)}
 
    При создании кластера:
 
@@ -13,30 +15,28 @@
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../instructions/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../instructions/addons/advanced-installation/install-advanced-ingress) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
+1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-view)[text=Убедитесь]}, что аддон NGINX Ingress (`ingress-nginx`) {linkto(../../instructions/addons/advanced-installation/install-advanced-ingress#k8s-install-advanced-ingress)[text=установлен]} в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
 
     {note:warn}
+    При установке аддона для него будет создан {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
 
-    При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
-
-    Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffication).
-
+    Использование балансировщика {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
     {/note}
 
-1. [Убедитесь](../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
 1. Установите [curl](https://curl.se/docs/), если утилита еще не установлена.
 
-## 1. Создайте демо-приложения и подключите к ним PV
+## {heading(1. Создайте демо-приложения и подключите к ним PV)[id=k8s-storage-create-demo]}
 
 Далее будет продемонстрировано, как создать несколько веб-приложений на базе NGINX для отображения веб-страниц, записанных на подключенные к этим приложениям PV.
 Используется образ NGINX `nginxdemos/nginx-hello`, который отображает веб-страницы из директории `/usr/share/nginx/html`, поэтому все PV будут монтироваться в поды приложений именно по этому пути.
 
 Можно создать одно или несколько демо-приложений, в зависимости от того, с какими способами подключения PV нужно познакомиться.
 
-### Подключение блочных хранилищ
+### {heading(Подключение блочных хранилищ)[id=k8s-storage-connect-block-storage]}
 
-Блочные хранилища подключаются к кластеру [с помощью Cinder CSI](../../concepts/storage).
+Блочные хранилища подключаются к кластеру {linkto(../../concepts/storage#k8s-storage)[text=с помощью Cinder CSI]}.
 
 При использовании хранилищ такого типа:
 
@@ -48,12 +48,12 @@
 {tab(Подключение с помощью статического PVC)}
 
 {note:info}
-Этот сценарий доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Этот сценарий доступен только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
 {/note}
 
 В этом примере будут созданы:
 
-1. Диск в разделе **Облачные вычисления** платформы VK Cloud.
+1. Диск в разделе **Облачные вычисления** платформы {var(cloud)}.
 1. PV, соответствующий этому диску.
 1. Статический PVC, использующий уже созданный PV.
 1. Приложение `tea` в виде развертывания (deployment) из одного пода и соответствующего ему сервиса (service).
@@ -62,7 +62,7 @@
 
 Чтобы подключить PV с помощью статического PVC:
 
-1. [Создайте сетевой HDD-диск](/ru/computing/iaas/instructions/volumes).
+1. {linkto(../../../../computing/iaas/instructions/volumes#iaas-volumes)[text=Создайте сетевой HDD-диск]}.
 
    При создании укажите:
 
@@ -303,9 +303,7 @@
    1. PVC создаст по одному PV для каждой реплики StatefulSet, причем эти реплики будут пронумерованы по порядку.
 
       {note:info}
-
       При развертывании приложения из нескольких реплик в виде ресурса Deployment также нужно обеспечить создание PV для каждой реплики с помощью PVC. Такие PV будут иметь случайные идентификаторы вместо порядковых номеров.
-
       {/note}
 
    1. Необходимый размер хранилища указывается в параметре `spec.volumeClaimTemplates.spec.resources.requests.storage` ресурса StatefulSet. В данном примере — 1 ГБ.
@@ -421,7 +419,7 @@
 
 {/tabs}
 
-### Подключение файловых хранилищ
+### {heading(Подключение файловых хранилищ)[id=k8s-storage-connect-file-storage]}
 
 Файловые хранилища подключаются к кластеру с помощью PV, который настроен на использование существующего хранилища по нужному протоколу, например, NFS.
 
@@ -436,14 +434,14 @@
 
 В этом примере будут созданы:
 
-1. Файловое NFS-хранилище в разделе **Облачные вычисления** платформы VK Cloud.
+1. Файловое NFS-хранилище в разделе **Облачные вычисления** платформы {var(cloud)}.
 1. PV, соответствующий этому хранилищу.
 1. Статический PVC, использующий уже созданный PV.
 1. Приложение `milkshake` в виде StatefulSet из двух подов, а также соответствующие сервисы (service).
 
 Чтобы подключить PV NFS с помощью статического PVC:
 
-1. [Создайте файловое хранилище](/ru/computing/iaas/instructions/fs-manage/fs-create).
+1. {linkto(../../../../computing/iaas/instructions/fs-manage/fs-create#iaas-fs-create)[text=Создайте файловое хранилище]}.
 
    При создании укажите:
 
@@ -453,7 +451,7 @@
    - **Cеть:** сеть и подсеть, в которых размещен кластер Kubernetes. Эту информацию можно узнать на странице кластера.
    - **Cеть файлового хранилища:** существующая сеть. Если подходящей сети нет в списке, выберите пункт `Создать новую сеть`.
 
-1. [Посмотрите информацию](/ru/computing/iaas/instructions/fs-manage/fs-operations#prosmotr_informacii_o_faylovom_hranilishche) о созданном файловом хранилище.
+1. {linkto(../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations)[text=Посмотрите информацию]} о созданном файловом хранилище.
 
    Сохраните значение параметра **Точка подключения**.
 
@@ -626,7 +624,7 @@
 
 {/tabs}
 
-## 2. Проверьте работоспособность демо-приложений и PV
+## {heading(2. Проверьте работоспособность демо-приложений и PV)[id=k8s-storage-check]}
 
 1. Создайте манифест для ресурса Ingress, через который будут проходить запросы к приложениям.
 
@@ -710,14 +708,12 @@
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Определите](../../instructions/addons/advanced-installation/install-advanced-ingress#poluchenie_ip_adresa_balansirovshchika) публичный IP-адрес Ingress-контроллера.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-ingress#k8s-install-advanced-ingress-get-ip)[text=Определите]} публичный IP-адрес Ingress-контроллера.
 
 1. Проверьте доступность приложений с помощью `curl`, используя IP-адрес Ingress-контроллера.
 
    {note:info}
-
    Если какое-то из приложений не было развернуто, то для него будет выведено сообщение `Service Unavailable`.
-
    {/note}
 
    {tabs}
@@ -727,7 +723,7 @@
    Выполните команду:
 
    ```console
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/tea
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/tea
    ```
 
    Должен быть выведен ответ:
@@ -743,7 +739,7 @@
    Выполните команду:
 
    ```console
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/coffee
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/coffee
    ```
 
    Должен быть выведен ответ:
@@ -759,9 +755,9 @@
    Выполните команды:
 
    ```console
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/juice
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/juice/0
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/juice/1
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/juice
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/juice/0
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/juice/1
    ```
 
    Должен быть выведен один и тот же ответ для приложения и каждой его реплики:
@@ -777,9 +773,9 @@
    Выполните команды:
 
    ```console
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/milkshake
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/milkshake/0
-   curl --resolve cafe.example.com:80:<IP-адрес Ingress> http://cafe.example.com/milkshake/1
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/milkshake
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/milkshake/0
+   curl --resolve cafe.example.com:80:<IP-АДРЕС_INGRESS> http://cafe.example.com/milkshake/1
    ```
 
    Должен быть выведен один и тот же ответ для приложения и каждой его реплики:
@@ -792,9 +788,11 @@
 
    {/tabs}
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-storage-delete]}
 
-1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их.
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы постоянных томов, вам больше не нужны, удалите их:
+
+1. Удалите ресурсы, описанные в файлах манифестов: 
 
    {tabs}
 
@@ -827,13 +825,11 @@
 
 1. Удалите неиспользуемые хранилища:
 
-   1. Если диск, который использовался приложением `tea`, вам больше не нужен — удалите его.
-
-   1. Если NFS-хранилище, которое использовалось приложением `milkshake`, вам больше не нужно — удалите его.
+   - диск, который использовался приложением `tea`; 
+   - NFS-хранилище, которое использовалось приложением `milkshake`.
 
    Все другие хранилища Cinder, созданные с помощью динамических PVC, будут удалены автоматически.
 
-1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-   - [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.
+{ifdef(public)}
+{include(/ru/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

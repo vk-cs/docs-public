@@ -1,8 +1,15 @@
 {
-  "title": "Object Lock",
-  "shortDescription": "Объектілерді жоюдан және қайта жазудан қорғауды баптау және басқару",
-  "metaDescription": "Объектілерді жоюдан және қайта жазудан қорғауды баптау және басқару",
-  "sectionTitle": "Object Lock",
+  "title": "Объектілерді бұғаттау",
+  "shortDescription": "Object Lock көмегімен объектілерді жоюдан қорғау",
+  "metaDescription": "AWS CLI арқылы VK Object Storage ішіндегі Object Lock қызметін басқару бойынша қадамдық нұсқаулық: бакетте әдепкі уақытша бұғаттауды баптау (default retention), объектінің мерзімсіз бұғаттауын қосу/алып тастау (legal hold), нақты объекті үшін уақытша бұғаттауды орнату/өзгерту (retention period / retain-until-date), сондай-ақ уақытша бұғаттауды `bypass-governance-retention` арқылы айналып өту шарттары мен тәртібі (құқықтар болған жағдайда) және бұғаттаулардың ағымдағы күйін тексеру.",
+  "sectionTitle": "Объектілерді бұғаттау",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

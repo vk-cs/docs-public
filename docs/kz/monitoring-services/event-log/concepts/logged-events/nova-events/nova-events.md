@@ -1,4 +1,9 @@
+# {heading(Nova компонентінің оқиғалары)[id=event-log-nova]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
+
+
+{ifndef(private-pdf,private-pg-pdf)}[Есептеу ресурстарын басқару сервисі](/kz/computing/iaas/instructions/vm){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../../computing/iaas/instructions/vm#iaas-vm)[text=есептеу ресурстарын басқару сервисі]}{/ifdef} Cloud Audit-ке жіберетін оқиғалар.
 
 [cols="2,3", options="header"]
 |===
@@ -138,7 +143,7 @@
 |Қауіпсіздік тобының ережесі жойылды
 
 |`create-floating-ip`
-Floating IP мекенжайы[ құрылды](/kz/networks/vnet/concepts/ips-and-inet#floating-ip)
+|{linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP мекенжайы]} құрылды
 
 |`delete-floating-ip`
 |Floating IP мекенжайы жойылды

@@ -1,9 +1,14 @@
 {
-    "title": "Refund",
-      "shortDescription": "Methods and conditions for returning funds from the main account of your VK Cloud project",
-      "metaDescription": "VK Cloud: methods and conditions for returning funds from the main account of your project",
-    "sectionTitle": "Refund",
-    "icon": "",
-    "weight": 4,
-    "uuid": "70f4757d-306b-40d8-bd91-415b601ed4f9"
+  "title": "Refund",
+  "shortDescription": "Methods and conditions for returning funds from the main account of your VK Cloud project",
+  "metaDescription": "VK Cloud: methods and conditions for returning funds from the main account of your project",
+  "sectionTitle": "Refund",
+  "icon": "",
+  "weight": 4,
+  "uuid": "70f4757d-306b-40d8-bd91-415b601ed4f9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

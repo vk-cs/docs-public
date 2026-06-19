@@ -5,5 +5,19 @@
   "sectionTitle": "Obtaining access to buckets",
   "icon": "",
   "weight": 9,
-  "uuid": "2798724f-0fa1-4f06-848d-d13e61844243"
+  "uuid": "2798724f-0fa1-4f06-848d-d13e61844243",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

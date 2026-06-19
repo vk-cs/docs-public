@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Бұлттық платформаның Cloud Monitoring сервисімен интеграция",
   "sectionTitle": "Бұлттық платформаның Cloud Monitoring сервисімен интеграция",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

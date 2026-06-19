@@ -1,14 +1,16 @@
+# {heading(Сервистік есептік жазбаларды басқару)[id=tools-account-service-account-manage]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(Сервистік есептік жазбаны жасау)[id=create]}
+## {heading(Сервистік есептік жазбаны жасау)[id=service-account-create]}
 
 Жобада 300-ге дейін сервистік есептік жазба (СТЖ) жасауға болады.
 
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#zhobany_zhalpy_baskaruga_arnalgan_rolder) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз. СТЖ жасау мына рөлдер үшін қолжетімді:
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-general) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз. СТЖ жасау мына рөлдер үшін қолжетімді:
 
     - жоба иесі,
     - суперадминистратор,
@@ -40,13 +42,13 @@
 {/tab}
 {/tabs}
 
-## {heading(Жобаның сервистік есептік жазбалары тізімін қарау)[id=view_list]}
+## {heading(Жобаның сервистік есептік жазбалары тізімін қарау)[id=service-account-view-list]}
 
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#zhobany_zhalpy_baskaruga_arnalgan_rolder) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-general) {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=СТЖ басқару құқықтарына]} ие екеніне көз жеткізіңіз.
 1. **Қолжетімділікті басқару** бөліміне өтіп, **Сервистік пайдаланушылар** қойындысын ашыңыз.
 
    Жобадағы барлық СТЖ тізімі атауы бойынша сұрыпталып көрсетіледі.
@@ -56,7 +58,7 @@
 {/tab}
 {/tabs}
 
-## {heading(Сервистік есептік жазба карточкасын қарау)[id=view_card]}
+## {heading(Сервистік есептік жазба карточкасын қарау)[id=service-account-view-card]}
 
 {note:warn}
 Карточкадағы деректерді редакциялау қолжетімсіз.
@@ -65,8 +67,8 @@
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#zhobany_zhalpy_baskaruga_arnalgan_rolder) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-general) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз.
 1. **Қолжетімділікті басқару** бөліміне өтіп, **Сервистік пайдаланушылар** қойындысын ашыңыз.
 
    Жобадағы барлық СТЖ тізімі көрсетіледі.
@@ -87,13 +89,13 @@
 {/tab}
 {/tabs}
 
-## {heading(API-мен жұмыс істеу үшін OpenStack RC-файлын жүктеп алу)[id=download_rc_file]}
+## {heading(API-мен жұмыс істеу үшін OpenStack RC-файлын жүктеп алу)[id=service-account-download-rc-file]}
 
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#zhobany_zhalpy_baskaruga_arnalgan_rolder) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-general) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз.
 1. **Қолжетімділікті басқару** бөліміне өтіп, **Сервистік пайдаланушылар** қойындысын ашыңыз.
 
    Жобадағы барлық СТЖ тізімі көрсетіледі.
@@ -105,27 +107,27 @@
 {/tab}
 {/tabs}
 
-## {heading(Сервистік есептік жазба көмегімен OpenStack CLI-де авторизациялау)[id=authorize]}
+## {heading(Сервистік есептік жазба көмегімен OpenStack CLI-де авторизациялау)[id=service-account-authorize]}
 
 {tabs}
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз.
-1. Бұрын [жүктеп алынған OpenStack RC-файлы](#download_rc_file) бар <ФАЙЛ_ЖОЛЫ> директориясына өтіңіз:
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install) көз жеткізіңіз.
+1. Бұрын [жүктеп алынған OpenStack RC-файлы](#service-account-download-rc-file) бар <ФАЙЛ_ЖОЛЫ> директориясына өтіңіз:
 
    ```console
-   cd <ПУТЬ_К_ФАЙЛУ>
+   cd <ФАЙЛ_ЖОЛЫ>
    ```
 
 1. API-мен жұмыс істеуге қажетті орта айнымалыларының мәндерін орнатыңыз. Ол үшін мына команданы орындаңыз:
 
    ```console
-   source <ИМЯ_ФАЙЛА>
+   source <ФАЙЛ_АТЫ>
    ```
 
    Мұндағы <ФАЙЛ_АТЫ> — OpenStack RC-файлының атауы.
 
-1. [СТЖ жасау](#create) кезінде алынған парольді енгізіңіз.
+1. [СТЖ жасау](#service-account-create) кезінде алынған парольді енгізіңіз.
 
    {note:warn}
    Парольді тексеру нәтижесі туралы хабарлама шығарылмайды.
@@ -140,15 +142,15 @@
 {/tab}
 {/tabs}
 
-## {heading(Сервистік есептік жазбаны жою)[id=delete]}
+## {heading(Сервистік есептік жазбаны жою)[id=service-account-delete]}
 
 Бұл топтық операция: қажет болса, бірнеше СТЖ-ді бірден белгілер арқылы таңдап, жоюға болады.
 
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#zhobany_zhalpy_baskaruga_arnalgan_rolder) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз. СТЖ жою мына рөлдер үшін қолжетімді:
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-general) [СТЖ басқару құқықтарына](../../../concepts/service-accounts) ие екеніне көз жеткізіңіз. СТЖ жою мына рөлдер үшін қолжетімді:
 
     - жоба иесі,
     - суперадминистратор,

@@ -1,9 +1,16 @@
 {
-    "title": "Файловые менеджеры",
-      "shortDescription": "Подключение к VK Object Storage c помощью Cyberduck, WinSCP, Диск-О:, S3FS",
-      "metaDescription": "Подключение к VK Object Storage c помощью Cyberduck, WinSCP, Диск-О:, S3FS",
-    "sectionTitle": "Файловые менеджеры",
-    "icon": "",
-    "weight": 3,
-    "uuid": "298773d4-f51d-43d3-8a4a-9f915f54f35b"
+  "title": "Файловые менеджеры",
+  "shortDescription": "Подключение к VK Object Storage c помощью Cyberduck, WinSCP, Диск-О:, S3FS",
+  "metaDescription": "Пошаговое подключение VK Object Storage в файловых менеджерах: настройка доступа (Access/Secret Key), указание endpoint и региона, проверка соединения и типовые операции в отдельных инструкциях для Cyberduck, WinSCP, Диск‑О: и S3FS",
+  "sectionTitle": "Файловые менеджеры",
+  "icon": "",
+  "weight": 3,
+  "uuid": "298773d4-f51d-43d3-8a4a-9f915f54f35b",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

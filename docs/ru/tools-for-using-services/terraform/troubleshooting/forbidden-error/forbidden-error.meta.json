@@ -5,5 +5,9 @@
   "sectionTitle": "Ошибка 403 при создании сервера",
   "icon": "",
   "weight": 1,
-  "uuid": "12f00889-ee12-46b2-adba-426a33a990b5"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

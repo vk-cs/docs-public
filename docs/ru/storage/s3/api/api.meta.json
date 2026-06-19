@@ -1,0 +1,16 @@
+{
+  "title": "API",
+  "shortDescription": "Операции API, структуры запросов и ответов, коды ошибок при использовании методов API для VK Object Storage",
+  "metaDescription": "API VK Object Storage: работа с бакетами и объектами, управление конфигурацией ACL, CORS, жизненного цикла (lifecycle), блокировки объектов (object lock), составная (multipart) загрузка, PAK (ключи доступа по префиксам), тегирование (tagging) и webhook‑уведомления.",
+  "sectionTitle": "API",
+  "icon": "",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

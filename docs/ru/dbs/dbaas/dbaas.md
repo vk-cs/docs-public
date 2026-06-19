@@ -1,1 +1,5 @@
+# {heading(Cloud Databases)[id=dbaas-dbaas]}
+
+{ifdef(public)}
 Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool. Базы доступны в конфигурациях Single, Master-Replica и Кластер. Использование сервиса снимает с вас нагрузку по администрированию баз данных.
+{/ifdef}

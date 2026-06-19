@@ -4,5 +4,23 @@
   "metaDescription": "Қолданбаларды автоөрістетуді баптау үшін GitLab-ты VK Cloud жүйесіндегі Ubuntu виртуалды машинасына қалай орнатуға және баптауға болады",
   "sectionTitle": "GitLab орнату және баптау",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "additionalUuids": [
+    "76cc0587-25ac-4d04-a007-a04c3c05b7b1"
+  ],
+  "uuid": "f567fe9d-d591-42a8-9ad5-03f8ab880273",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

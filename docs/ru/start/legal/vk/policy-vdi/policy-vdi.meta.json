@@ -1,11 +1,16 @@
 {
-    "title": "Пользовательское соглашение для сервиса «Cloud Desktop»",
-      "shortDescription": "",
-      "metaDescription": "Настоящий документ является официальным предложением ООО «ВК» (далее — «Компания») заключить пользовательское соглашение (далее — «Соглашение») с Вами",
-    "sectionTitle": "Пользовательское соглашение для сервиса «Cloud Desktop»",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 17,
-    "uuid": "cae807a6-e74f-4f86-9851-f8a2cd4f68c9"
+  "title": "Пользовательское соглашение для сервиса «Cloud Desktop»",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ является официальным предложением ООО «ВК» (далее — «Компания») заключить пользовательское соглашение (далее — «Соглашение») с Вами",
+  "sectionTitle": "Пользовательское соглашение для сервиса «Cloud Desktop»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 17,
+  "uuid": "cae807a6-e74f-4f86-9851-f8a2cd4f68c9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

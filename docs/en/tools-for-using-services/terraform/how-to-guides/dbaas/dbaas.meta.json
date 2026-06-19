@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 50,
-  "uuid": "eb5034ac-f26d-4abb-a050-74cdc3ab8018"
+  "uuid": "eb5034ac-f26d-4abb-a050-74cdc3ab8018",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

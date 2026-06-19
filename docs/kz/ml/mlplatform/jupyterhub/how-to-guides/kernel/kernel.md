@@ -1,3 +1,5 @@
+# {heading(Жеке kernel жасау)[id=mlplatform-jupyterhub-htg-kernel]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жеке kernel жасау үшін JupyterHub терминалында келесі командаларды орындау қажет:

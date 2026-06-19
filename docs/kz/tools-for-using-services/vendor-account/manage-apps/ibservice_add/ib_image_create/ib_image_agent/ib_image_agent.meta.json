@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Агент",
   "sectionTitle": "Агент",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

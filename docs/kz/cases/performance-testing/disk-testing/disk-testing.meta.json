@@ -4,5 +4,20 @@
   "metaDescription": "Дискілік ішкі жүйенің өнімділігін тестілеу жөніндегі нұсқаулық",
   "sectionTitle": "Дискілік ішкі жүйені қалай тестілеуге болады",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "b99c6125-0612-4b6f-85f0-229f82eec78f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,12 +1,17 @@
 {
-    "title": "Deleting account",
-      "shortDescription": "Deleting a user account",
-      "metaDescription": "Deleting a VK Cloud user account.",
-    "sectionTitle": "Deleting account",
-    "icon": "",
-    "weight": 6,
-    "additionalUuids": [
-        "8a3f8d22-34bc-4785-985d-9426fa41a5ff"
-    ],
-    "uuid": "5836351d-8ef8-437a-ab03-5cf1fc3282e2"
+  "title": "Deleting account",
+  "shortDescription": "Deleting a user account",
+  "metaDescription": "Deleting a VK Cloud user account.",
+  "sectionTitle": "Deleting account",
+  "icon": "",
+  "weight": 6,
+  "additionalUuids": [
+    "8a3f8d22-34bc-4785-985d-9426fa41a5ff"
+  ],
+  "uuid": "5836351d-8ef8-437a-ab03-5cf1fc3282e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

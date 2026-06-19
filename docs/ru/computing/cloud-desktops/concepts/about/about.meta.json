@@ -1,9 +1,18 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Принцип работы и возможности сервиса",
-      "metaDescription": "Принцип работы и возможности сервиса.",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "uuid": "78d76382-ce05-4e6b-953e-192ed33d486a"
+  "title": "О сервисе",
+  "shortDescription": "Принцип работы и возможности сервиса",
+  "metaDescription": "Принцип работы и возможности сервиса.",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "78d76382-ce05-4e6b-953e-192ed33d486a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

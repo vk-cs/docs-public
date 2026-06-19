@@ -5,5 +5,10 @@
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 6,
-  "uuid": "38fb5cd6-588b-48f5-9978-87e780470413"
+  "uuid": "38fb5cd6-588b-48f5-9978-87e780470413",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

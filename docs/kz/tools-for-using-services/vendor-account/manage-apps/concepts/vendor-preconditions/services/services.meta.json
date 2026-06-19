@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Қызмет түрлері",
   "sectionTitle": "Қызмет түрлері",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

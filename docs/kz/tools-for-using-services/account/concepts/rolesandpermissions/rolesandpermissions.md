@@ -1,6 +1,8 @@
+# {heading(Пайдаланушының жеке кабинеттегі рөлдері мен құқықтары)[id=tools-account-concepts-rolesandpermissions]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Жоба](../projects) жасалғаннан кейін онда бір ғана пайдаланушы болады — оның иесі. Иесі жобаға басқа қатысушыларды шақырып, оларға рөлдер тағайындай алады. Рөл жеке кабинет функционалымен және бұлтты сервистермен жұмыс істеу кезінде қолжетімді [құқықтар](#zhobany_zhalpy_baskaruga_arnalgan_rolder) тізімін анықтайды.
+[жоба](../projects) жасалғаннан кейін онда бір ғана пайдаланушы болады — оның иесі. Иесі жобаға басқа қатысушыларды шақырып, оларға рөлдер тағайындай алады. Рөл жеке кабинет функционалымен және бұлтты сервистермен жұмыс істеу кезінде қолжетімді [құқықтар](#rolesandpermissions-permissions) тізімін анықтайды.
 
 Бір пайдаланушы бірнеше жобаның қатысушысы бола алады және олардың әрқайсысында әртүрлі рөлдерге ие болуы мүмкін. Бір қатысушыға бір жобада бірнеше рөл тағайындалуы мүмкін, бұл жағдайда рөлдердің құқықтары жинақталады.
 
@@ -15,7 +17,7 @@
 - [Рөлдер анықтамалығы](../../../../access/iam/concepts/roles-reference).
 - [Рұқсаттар анықтамалығы](../../../../access/iam/concepts/permissions-reference).
 
-## Жобаны жалпы басқаруға арналған рөлдер
+## {heading(Жобаны жалпы басқаруға арналған рөлдер)[id=rolesandpermissions-general]}
 
 [cols="1,1,3", options="header"]
 |===
@@ -73,7 +75,7 @@
 
 |===
 
-## Мамандандырылған рөлдер
+## {heading(Мамандандырылған рөлдер)[id=rolesandpermissions-special]}
 
 Төмендегі рөлдердің әрқайсысы платформа сервистерінің біреуімен жұмыс істеуге арналған. Бұл рөлдерге мыналар қолжетімді:
 
@@ -82,7 +84,7 @@
 
 Бұл рөлдердің барлығында жоба қатысушыларының тізіміне және теңгерім туралы ақпаратқа қолжетімділік жоқ.
 
-Осы рөлдердің рұқсаттары туралы толық мәлімет [Барлық рөлдерге арналған құқықтар](#zhobany_zhalpy_baskaruga_arnalgan_rolder) бөлімінде берілген.
+Осы рөлдердің рұқсаттары туралы толық мәлімет [Барлық рөлдерге арналған құқықтар](#rolesandpermissions-permissions) бөлімінде берілген.
 
 Мамандандырылған рөлдерге қолжетімді барлық операциялар жоба иесіне, суперадминистраторға және жоба әкімшісіне де қолжетімді.
 
@@ -141,25 +143,25 @@
 
 | Kubernetes әкімшісі
 | `mcs_k8s_admin`
-| Рөл туралы толық ақпарат [Cloud Containers сервисі рөлдерінің рұқсаттары](#zhobany_zhalpy_baskaruga_arnalgan_rolder) бөлімінде берілген
+| Рөл туралы толық ақпарат [Cloud Containers сервисі рөлдерінің рұқсаттары](#rolesandpermissions-k8s) бөлімінде берілген
 
 | Kubernetes операторы
 | `mcs_k8s_editor`
-| Рөл туралы толық ақпарат [Cloud Containers сервисі рөлдерінің рұқсаттары](#zhobany_zhalpy_baskaruga_arnalgan_rolder) бөлімінде берілген
+| Рөл туралы толық ақпарат [Cloud Containers сервисі рөлдерінің рұқсаттары](#rolesandpermissions-k8s) бөлімінде берілген
 
 | Kubernetes аудиторы
 | `mcs_k8s_viewer`
-| Рөл туралы толық ақпарат [Cloud Containers сервисі рөлдерінің рұқсаттары](#zhobany_zhalpy_baskaruga_arnalgan_rolder) бөлімінде берілген
+| Рөл туралы толық ақпарат [Cloud Containers сервисі рөлдерінің рұқсаттары](#rolesandpermissions-k8s) бөлімінде берілген
 
 |===
 
-## Барлық рөлдерге арналған құқықтар
+## {heading(Барлық рөлдерге арналған құқықтар)[id=rolesandpermissions-permissions]}
 
 Әр рөлге операцияларды орындауға арналған белгілі бір құқықтар жиынтығы сәйкес келеді.
 
 ![Рөлдер мен рұқсаттар сызбасы](assets/roles_and_permissions_full.png){params[noBorder=true]}
 
-## Cloud Logging сервисіндегі құқықтар
+## {heading(Cloud Logging сервисіндегі құқықтар)[id=rolesandpermissions-logging]}
 
 [cols="2,1,1,1", options="header"]
 |===
@@ -224,7 +226,7 @@
 | ![](/kz/assets/check.svg "inline")
 |===
 
-## Cloud Monitoring сервисіндегі құқықтар
+## {heading(Cloud Monitoring сервисіндегі құқықтар)[id=rolesandpermissions-monitoring]}
 
 [cols="2,1,1,1,1", options="header"]
 |===
@@ -307,7 +309,7 @@
 | ![](/kz/assets/check.svg "inline")
 |===
 
-## Cloud Audit сервисіндегі құқықтар
+## {heading(Cloud Audit сервисіндегі құқықтар)[id=rolesandpermissions-audit]}
 
 [cols="2,2,1,1", options="header"]
 |===
@@ -377,7 +379,7 @@
 | ![](/kz/assets/no.svg "inline")
 |===
 
-## Cloud Containers сервисі рөлдеріне арналған құқықтар
+## {heading(Cloud Containers сервисі рөлдеріне арналған құқықтар)[id=rolesandpermissions-k8s]}
 
 Жеке кабинетте [Cloud Containers сервисімен](/kz/kubernetes/k8s) жұмыс істеуге арналған мамандандырылған рөлдер қолжетімді:
 
@@ -389,7 +391,7 @@ Kubernetes әкімшісіне қолжетімді операциялар жо
 
 Қалған рөлдер үшін бұл операциялар қолжетімсіз.
 
-1.23 және одан жоғары нұсқадағы Kubernetes кластерлері үшін Kubernetes әкімшісі, операторы немесе аудиторы рөлі пайдаланушыға қолжетімді ішкі [Kubernetes рөлін](/kz/kubernetes/k8s/concepts/access-management#zheke_kabinet_pen_kubernetes_rolderinin_ozara_baylanysy) де анықтайды.
+1.23 және одан жоғары нұсқадағы Kubernetes кластерлері үшін Kubernetes әкімшісі, операторы немесе аудиторы рөлі пайдаланушыға қолжетімді ішкі [Kubernetes рөлін](/kz/kubernetes/k8s/concepts/access-management#k8s-access-management-kubernetes-roles) де анықтайды.
 
 {note:info}
 
@@ -498,7 +500,7 @@ Kubernetes әкімшісіне қолжетімді операциялар жо
 | ![](/kz/assets/no.svg "inline")
 |===
 
-## Security Gate сервисіндегі құқықтар
+## {heading(Security Gate сервисіндегі құқықтар)[id=rolesandpermissions-security-gate]}
 
 Жеке кабинеттегі [Security Gate](https://cloud.vk.com/security-gate) сервисі келесі рөлдер үшін қолжетімді:
 

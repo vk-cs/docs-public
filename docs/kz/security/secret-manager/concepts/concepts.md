@@ -1,0 +1,1 @@
+# {heading(Тұжырымдамалар)[id=sm-concepts]}

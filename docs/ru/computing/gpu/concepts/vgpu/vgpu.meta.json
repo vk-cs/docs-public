@@ -5,5 +5,14 @@
   "sectionTitle": "vGPU: Виртуализация GPU",
   "icon": "",
   "weight": 2,
-  "uuid": "c41ecee6-3626-460b-ba15-c86a8e0137ba"
+  "uuid": "c41ecee6-3626-460b-ba15-c86a8e0137ba",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

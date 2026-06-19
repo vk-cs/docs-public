@@ -1354,7 +1354,19 @@
           },
           "status": {
             "type": "string",
-            "enum": ["creating","available","attaching","in-use","deleting","error","error_deleting","backing-up","restoring-backup","error_restoring","error_extending"],
+            "enum": [
+              "creating",
+              "available",
+              "attaching",
+              "in-use",
+              "deleting",
+              "error",
+              "error_deleting",
+              "backing-up",
+              "restoring-backup",
+              "error_restoring",
+              "error_extending"
+            ],
             "description": "Статус диска"
           },
           "description": {

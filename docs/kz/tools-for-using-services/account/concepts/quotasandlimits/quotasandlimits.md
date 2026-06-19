@@ -1,6 +1,8 @@
+# {heading(Квоталар мен лимиттер)[id=tools-account-concepts-quotasandlimits]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Квоталар
+## {heading(Квоталар)[id=quotasandlimits-quotas]}
 
 Квоталар — бұл жобаға қолданылатын шектеулер:
 
@@ -13,24 +15,24 @@
 
 Сервистер белсендірілгеннен кейін жобаға базалық квоталар қолжетімді болады. Олар үшін әдепкі мәндер орнатылған, олар өңірдің барлық жаңа жобаларына қолданылады.
 
-Квоталарды [көруге](../../instructions/project-settings/manage#zhoba_kvotalaryn_karau) болады:
+Квоталарды [көруге](../../instructions/project-settings/manage#project-view-quotas) болады:
 
-- қысқаша тізім — [жеке кабинетте](../../instructions/project-settings/manage#zhoba_kvotalaryn_karau);
+- қысқаша тізім — [жеке кабинетте](../../instructions/project-settings/manage#project-view-quotas);
 - кеңейтілген тізім — OpenStack CLI арқылы.
 
-Ешбір тәсілмен көруге болмайтын жасырын квоталар бар, олар жаңа объект жасау әрекеті кезінде қате хабарламалары түрінде көрінеді. Жасырын квотаға мысал ретінде бір пайдаланушы жасай алатын [жобалар санына арналған квота](#zhalpy_d4cd95e0) жатады.
+Ешбір тәсілмен көруге болмайтын жасырын квоталар бар, олар жаңа объект жасау әрекеті кезінде қате хабарламалары түрінде көрінеді. Жасырын квотаға мысал ретінде бір пайдаланушы жасай алатын [жобалар санына арналған квота](#quotasandlimits-general) жатады.
 
-Квоталар [техникалық лимиттермен](#kvotalar_zhne_tehnikalyk_limitter) тығыз байланысты.
+Квоталар [техникалық лимиттермен](#quotasandlimits-quotas) тығыз байланысты.
 
-## Квоталар және техникалық лимиттер
+## {heading(Квоталар және техникалық лимиттер)[id=quotasandlimits-tech-limits]}
 
-Техникалық лимиттер — VK Cloud архитектурасының ерекшеліктеріне байланысты болатын, асып кету мүмкін емес шектеулер.
+Техникалық лимиттер — {var(cloud)} архитектурасының ерекшеліктеріне байланысты болатын, асып кету мүмкін емес шектеулер.
 
-Басқа лимиттер физикалық шектеулерге байланысты емес және сервистердің пайдалану талаптарына негізделеді. Мысалы, [желілік шектеулер](#nets) желілердің оңтайлы өнімділігі мен тұрақты жұмысын қамтамасыз ету үшін енгізіледі.
+Басқа лимиттер физикалық шектеулерге байланысты емес және сервистердің пайдалану талаптарына негізделеді. Мысалы, [желілік шектеулер](#quotasandlimits-nets) желілердің оңтайлы өнімділігі мен тұрақты жұмысын қамтамасыз ету үшін енгізіледі.
 
 Кейбір техникалық лимиттерге сәйкес келетін квоталар болмайды.
 
-Квоталарды [ұлғайтуға](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) болады, бірақ техникалық лимиттер шегінде. Әдепкі бойынша квоталарды ұлғайтуды техникалық қолдау келіседі, алайда келесі міндетті шарттар орындалған жағдайда квоталардың ағымдағы мәнінен 30%-ға дейін автоматты түрде қоса аласыз:
+Квоталарды [ұлғайтуға](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) болады, бірақ техникалық лимиттер шегінде. Әдепкі бойынша квоталарды ұлғайтуды техникалық қолдау келіседі, алайда келесі міндетті шарттар орындалған жағдайда квоталардың ағымдағы мәнінен 30%-ға дейін автоматты түрде қоса аласыз:
 
 {include(/kz/_includes/_quotas.md)[tags=autoquota-conditions]}
 
@@ -38,7 +40,7 @@
 
 Төменде Мәскеу өңірі үшін квоталар мен лимиттердің тізімі берілген.
 
-### Жалпы
+### {heading(Жалпы)[id=quotasandlimits-general]}
 
 [cols="2,1,1,1,1", options="header"]
 |===
@@ -68,9 +70,9 @@
 
 |===
 
-### Виртуалды машиналар
+### {heading(Виртуалды машиналар)[id=quotasandlimits-vm]}
 
-#### ВМ және vCPU жалпы саны
+#### {heading(ВМ және vCPU жалпы саны)[id=quotasandlimits-vm-vcpu]}
 
 [cols="2,1,1,1,1,1", options="header"]
 |===
@@ -104,7 +106,7 @@
 
 |===
 
-Жобадағы инстанстар санына арналған лимитті тиісті квотаны [ұлғайту](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) арқылы асыруға болады.
+Жобадағы инстанстар санына арналған лимитті тиісті квотаны [ұлғайту](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) арқылы асыруға болады.
 
 {note:info}
 
@@ -112,7 +114,7 @@
 
 {/note}
 
-#### {heading(Квотасыз лимиттер)[id=no_quotas_limits]}
+#### {heading(Квотасыз лимиттер)[id=quotasandlimits-vm-no-quotas-limits]}
 
 [cols="3,1,1", options="header"]
 |===
@@ -121,22 +123,22 @@
 |Қатаң
 
 |Бір инстанстағы vCPU саны
-|32 дана
-|![](/kz/assets/no.svg "inline")
+|32 дана
+|![](../../../../assets/no.svg "inline")
 
 |Бір инстанстағы High-Freq vCPU саны
-|24 дана
-|![](/kz/assets/no.svg "inline")
+|24 дана
+|![](../../../../assets/no.svg "inline")
 
 |Бір инстанстағы GPU саны
-|4 дана
+|4 дана
 
-([Tesla H200](/kz/computing/gpu/concepts/about#flavors) үшін 8 дана)
-|![](/kz/assets/check.svg "inline")
+([Tesla H200](/kz/computing/gpu/concepts/about#gpu-about-flavors) үшін 8 дана)
+|![](../../../../assets/check.svg "inline")
 
 |Бір инстанстағы RAM көлемі
-|1024 ГБ
-|![](/kz/assets/no.svg "inline")
+|1024 ГБ
+|![](../../../../assets/no.svg "inline")
 
 |===
 
@@ -144,9 +146,9 @@
 
 Бір инстанс үшін GPU лимиті KVM технологиясының шектеуімен байланысты, ол бір виртуалды машинаға көбірек видеокарта қосуды мүмкін етпейді.
 
-### {heading(Cloud Containers (контейнерлері Kubernetes))[id=k8s]}
+### {heading(Cloud Containers (Kubernetes контейнерлері))[id=quotasandlimits-k8s]}
 
-#### Бір жобаға арналған контейнер ресурстары
+#### {heading(Бір жобаға арналған контейнер ресурстары)[id=quotasandlimits-k8s-one-project]}
 
 [cols="2,2,1,1", options="header"]
 |===
@@ -160,7 +162,7 @@
 | 2 дана
 | шектелмеген
 
-| [түйіндер](/kz/kubernetes/k8s/concepts/architecture#cluster_topology) саны
+| [түйіндер](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) саны
 | **Kubernetes түйіндері**
 | 10 дана
 | шектелмеген
@@ -192,7 +194,7 @@
 
 |===
 
-#### Квотасыз лимиттер
+#### {heading(Квотасыз лимиттер)[id=quotasandlimits-k8s-no-quotas-limits]}
 
 Жоғарыда көрсетілген квоталардан бөлек, Cloud Containers сервисін пайдалану да белгілі бір техникалық лимиттермен шектеледі. 
 
@@ -250,11 +252,11 @@
 |![](/kz/assets/no.svg "inline")
 |===
 
-Қатаң емес лимиттерді техникалық қолдауға жүгінбей-ақ асыруға болады. Осы және басқа параметрлер бойынша ұсынымдар [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/setup/best-practices/cluster-large/) берілген. Түйіндер тобындағы түйіндер санына арналған лимит Kubernetes талаптарына байланысты емес, шектеу VK Cloud деңгейінде енгізіледі.
+Қатаң емес лимиттерді техникалық қолдауға жүгінбей-ақ асыруға болады. Осы және басқа параметрлер бойынша ұсынымдар [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/setup/best-practices/cluster-large/) берілген. Түйіндер тобындағы түйіндер санына арналған лимит Kubernetes талаптарына байланысты емес, шектеу {var(cloud)} деңгейінде енгізіледі.
 
-### {heading(Дисктер мен образдар)[id=images-volumes]}
+### {heading(Дисктер мен образдар)[id=quotasandlimits-images-volumes]}
 
-#### Дисктер көлемі
+#### {heading(Дисктер көлемі)[id=quotasandlimits-images-volumes-size]}
 
 [cols="3,2,2,1,1", options="header"]
 |===
@@ -298,9 +300,9 @@
 
 Low Latency NVMe дисктерінің жалпы көлемі квоталанбайды және лимиттермен шектелмейді.
 
-Жобадағы дисктердің жалпы көлеміне арналған квоталар дисктердің барлық түрлерін, соның ішінде High-IOPS SSD-ті де ескереді. High-IOPS SSD дисктерінің жалпы көлеміне арналған квоталар екі қолжетімділік аймағында жасалған дисктерді ескереді. Егер басқа квотаға кіретін квотаны [ұлғайтуды сұрасаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota), жоғары деңгейдегі квота пропорционалды түрде ұлғайтылады.
+Жобадағы дисктердің жалпы көлеміне арналған квоталар дисктердің барлық түрлерін, соның ішінде High-IOPS SSD-ті де ескереді. High-IOPS SSD дисктерінің жалпы көлеміне арналған квоталар екі қолжетімділік аймағында жасалған дисктерді ескереді. Егер басқа квотаға кіретін квотаны [ұлғайтуды сұрасаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota), жоғары деңгейдегі квота пропорционалды түрде ұлғайтылады.
 
-#### Дисктер саны
+#### {heading(Дисктер саны)[id=quotasandlimits-images-volumes-number]}
 
 [cols="3,2,2,1,1", options="header"]
 |===
@@ -344,9 +346,9 @@ Low Latency NVMe дисктерінің жалпы көлемі квоталан
 
 Low Latency NVMe дисктерінің саны квоталанбайды және лимиттермен шектелмейді.
 
-Жобадағы дисктердің жалпы санына арналған квоталар дисктердің барлық түрлерін, соның ішінде High-IOPS SSD-ті де ескереді. High-IOPS SSD дисктерінің жалпы санына арналған квоталар екі қолжетімділік аймағында жасалған дисктерді ескереді. Егер басқа квотаға кіретін квотаны [ұлғайтуды сұрасаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota), жоғары деңгейдегі квота пропорционалды түрде ұлғайтылады.
+Жобадағы дисктердің жалпы санына арналған квоталар дисктердің барлық түрлерін, соның ішінде High-IOPS SSD-ті де ескереді. High-IOPS SSD дисктерінің жалпы санына арналған квоталар екі қолжетімділік аймағында жасалған дисктерді ескереді. Егер басқа квотаға кіретін квотаны [ұлғайтуды сұрасаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota), жоғары деңгейдегі квота пропорционалды түрде ұлғайтылады.
 
-#### Квотасыз лимиттер
+#### {heading(Квотасыз лимиттер)[id=quotasandlimits-images-volumes-no-quotas-limits]}
 
 [cols="2,2,3,1", options="header"]
 |===
@@ -361,65 +363,65 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 26 дана, егер конфигурациялық диск өшірілген болса
 |Лимит PCI шинасының шектеулерімен байланысты.
 
-Егер [виртуалды машинаны жасау](/kz/computing/iaas/instructions/vm/vm-create) кезінде жеке кабинетте **Конфигурациялық дискіні пайдалану** опциясы қосылған болса немесе OpenStack CLI-де `--use-config-drive` параметрі пайдаланылса, онда дисктердің ең көп саны — 25 дана. Конфигурациялық дискіні [DHCP-сервері](/kz/networks/vnet/concepts/ips-and-inet#zhelilik_adresteu) жоқ желілерде пайдаланыңыз.
+Егер [виртуалды машинаны жасау](/kz/computing/iaas/instructions/vm/vm-create) кезінде жеке кабинетте **Конфигурациялық дискіні пайдалану** опциясы қосылған болса немесе OpenStack CLI-де `--use-config-drive` параметрі пайдаланылса, онда дисктердің ең көп саны — 25 дана. Конфигурациялық дискіні [DHCP-сервері](/kz/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-network-addressing) жоқ желілерде пайдаланыңыз.
 
 Егер **Конфигурациялық дискіні пайдалану** опциясы өшірілген болса немесе `--use-config-drive` параметрі қолданылмаса, онда дисктердің ең көп саны — 26 дана
 |![](/kz/assets/check.svg "inline")
 
 |Бір HDD дискінің өлшемі
 |5 ТБ жеке кабинет арқылы
-(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) кезінде 1 ТБ).
 
 100 ТБ OpenStack CLI көмегімен
-|Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін.
+|Кейбір {var(cloud)} сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін.
 
-[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады
 |![](/kz/assets/check.svg "inline")
 
 |Бір SSD дискінің өлшемі
 |5 ТБ жеке кабинет арқылы
-(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) кезінде 1 ТБ).
 
 100 ТБ OpenStack CLI көмегімен
-|Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін.
+|Кейбір {var(cloud)} сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін.
 
-[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады
 |![](/kz/assets/check.svg "inline")
 
 |Бір High-IOPS SSD дискінің өлшемі
 |2 ТБ жеке кабинет арқылы
-(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) кезінде 1 ТБ).
 
 10 ТБ OpenStack CLI көмегімен
 |Лимиттен (10 ТБ) асатын етіп жасалған диск өнімділігі жағынан еш айырмашылығы жоқ, бірақ мұндай дискіні қалпына келтіру немесе көшіру едәуір уақыт алады және тәуекелдермен байланысты болады. Лимитті [техникалық қолдауға](/kz/contacts) хабарласу арқылы асыруға болады.
 
-[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
 
-Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
+Кейбір {var(cloud)} сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
 |![](/kz/assets/no.svg "inline")
 
 |Бір High-IOPS HA SSD дискінің өлшемі
 |2 ТБ жеке кабинет арқылы
-(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) кезінде 1 ТБ).
 
 10 ТБ OpenStack CLI көмегімен
 |Лимиттен (10 ТБ) асатын етіп жасалған диск өнімділігі жағынан еш айырмашылығы жоқ, бірақ мұндай дискіні қалпына келтіру немесе көшіру едәуір уақыт алады және тәуекелдермен байланысты болады. Лимитті [техникалық қолдауға](/kz/contacts) хабарласу арқылы асыруға болады.
 
-[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
 
-Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
+Кейбір {var(cloud)} сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
 |![](/kz/assets/no.svg "inline")
 
 |Бір Low Latency NVMe дискінің өлшемі
 |2 ТБ жеке кабинет арқылы
-(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) кезінде 1 ТБ).
+(Орнатылған [антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) кезінде 1 ТБ).
 
 10 ТБ OpenStack CLI көмегімен
 |Лимитті (10 ТБ) [техникалық қолдауға](/kz/contacts) хабарласу арқылы асыруға болады.
 
-[Антифрод-шектеулер](/kz/intro/it-security/platform-security#shabuyldardy_bakylau_zhne_olarga_karsy_is_kimyl) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
+[Антифрод-шектеулер](/kz/intro/it-security/platform-security#it-security-platform-security-attacks-countering) алып тастау үшін [техникалық қолдауға](/kz/contacts) жүгінуге болады.
 
-Кейбір VK Cloud сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
+Кейбір {var(cloud)} сервистерінде диск өлшеміне жеке шектеулер орнатылуы мүмкін
 |![](/kz/assets/no.svg "inline")
 
 |Бір образдың өлшемі
@@ -442,7 +444,7 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 |![](/kz/assets/no.svg "inline")
 |===
 
-### Файлдық қоймалар
+### {heading(Файлдық қоймалар)[id=quotasandlimits-fs]}
 
 [cols="3,2,1,1,1", options="header"]
 |===
@@ -486,11 +488,11 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 
 Файлдық қоймалар желілерінің санына арналған квота (**NFS/CIFS файлдық қоймаларының желілері**) ішкі пайдалану үшін арналған квота болып табылады.
 
-### {heading(Желілер)[id=nets]}
+### {heading(Желілер)[id=quotasandlimits-nets]}
 
 Бұл бөлімдегі лимиттер пайдалану талаптарына байланысты, олар желілердің тұрақты жұмысын қамтамасыз ету үшін қолданылады. Тиісті лимиттерден асатын квоталарды [техникалық қолдау](/kz/contacts) арқылы сұрату ұсынылмайды.
 
-#### Желілер, ішкі желілер және IP-адрестер
+#### {heading(Желілер, ішкі желілер және IP-адрестер)[id=quotasandlimits-nets-subnets-ips]}
 
 {tabs}
 
@@ -570,7 +572,7 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 
 Жобадағы ішкі желілердің жалпы санына арналған квота ұлғайтылған болса да, бір желіде 20-дан артық ішкі желі жасау ұсынылмайды.
 
-#### Басқа параметрлер
+#### {heading(Басқа параметрлер)[id=quotasandlimits-nets-other]}
 
 {tabs}
 
@@ -730,7 +732,7 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 
 Жеке кабинетте көрсетілетін **Neutron жүктеме теңгергіштері** квотасы пайдаланылмайды.
 
-### Cloud Backup
+### {heading(Cloud Backup)[id=quotasandlimits-backup]}
 
 | Параметр                                      | CLI-дегі квота | Базалық квота  | Лимит | Қатаң |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
@@ -739,11 +741,11 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 | Бір резервтік көшірменің өлшемі                  | ![](/kz/assets/no.svg "inline") | ![](/kz/assets/no.svg "inline") | 320 ТБ        | ![](/kz/assets/no.svg "inline") |
 | Образдардың жалпы көлемі                           | ![](/kz/assets/no.svg "inline") | ![](/kz/assets/no.svg "inline") | 2 ТБ          | ![](/kz/assets/no.svg "inline") |
 
-Резервтік көшірме өлшеміне арналған лимит (320 ТБ) VK Object Storage сервисіндегі файл өлшемі лимитіне байланысты, бұл сервис резервтік көшірмелерді сақтау үшін пайдаланылады. Бұл лимитті [техникалық қолдауға](/kz/contacts) хабарласу арқылы ұлғайтуға болады.
+Резервтік көшірме өлшеміне арналған лимит (320 ТБ) {var(s3)} сервисіндегі файл өлшемі лимитіне байланысты, бұл сервис резервтік көшірмелерді сақтау үшін пайдаланылады. Бұл лимитті [техникалық қолдауға](/kz/contacts) хабарласу арқылы ұлғайтуға болады.
 
-### {heading(VK Object Storage)[id=object_storage_limits]}
+### {heading({var(s3)})[id=quotasandlimits-s3]}
 
-VK Object Storage сервисі үшін квоталар қарастырылмаған. Бұл сервистерді пайдалану тек техникалық лимиттермен шектеледі.
+{var(s3)} сервисі үшін квоталар қарастырылмаған. Бұл сервистерді пайдалану тек техникалық лимиттермен шектеледі.
 
 [cols="3,2,4,1", options="header"]
 |===

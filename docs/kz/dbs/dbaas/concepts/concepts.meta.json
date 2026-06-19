@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Databases: сервистің жұмыс істеу қағидаттары мен құрылымы туралы толық сипаттама.",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

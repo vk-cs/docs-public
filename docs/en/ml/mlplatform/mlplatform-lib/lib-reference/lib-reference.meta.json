@@ -5,5 +5,19 @@
   "sectionTitle": "Methods for working with Cloud ML Platform components",
   "icon": "",
   "weight": 3,
-  "uuid": "1966e483-ac64-429d-8028-b04d1719e0fe"
+  "uuid": "1966e483-ac64-429d-8028-b04d1719e0fe",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

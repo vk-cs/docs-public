@@ -4,5 +4,14 @@
   "metaDescription": "Әртүрлі режимдердегі виртуалды жұмыс үстелінің жұмыс істеу ерекшеліктері.",
   "sectionTitle": "Жұмыс үстелінің режимдері",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

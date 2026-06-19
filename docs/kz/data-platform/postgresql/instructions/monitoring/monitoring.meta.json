@@ -1,0 +1,14 @@
+{
+  "title": "Standalone жүйесіндегі мониторинг",
+  "shortDescription": "Standalone жүйесіндегі метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform жүйесінің Standalone нұсқасында жайылған Cloud PostgreSQL қызметі экземплярлары жұмысының метрикаларын қалай қарауға болатынын біліңіз",
+  "sectionTitle": "Standalone жүйесіндегі мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

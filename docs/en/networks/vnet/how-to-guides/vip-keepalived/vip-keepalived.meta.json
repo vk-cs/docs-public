@@ -1,9 +1,14 @@
 {
-    "title": "Organizing a virtual IP address",
-      "shortDescription": "How to create a failover clustered virtual IP address for multiple virtual machines using keepalived and VRRP",
-      "metaDescription": "Failover Highly Available (HA) Clustered Virtual IP (VIP) for VM with keepalived and VRRP",
-    "sectionTitle": "Organizing a virtual IP address",
-    "icon": "",
-    "weight": 2,
-    "uuid": "390f8cce-a9c2-4b65-91d2-3e0990a63a12"
+  "title": "Organizing a virtual IP address",
+  "shortDescription": "How to create a failover clustered virtual IP address for multiple virtual machines using keepalived and VRRP",
+  "metaDescription": "Failover Highly Available (HA) Clustered Virtual IP (VIP) for VM with keepalived and VRRP",
+  "sectionTitle": "Organizing a virtual IP address",
+  "icon": "",
+  "weight": 2,
+  "uuid": "390f8cce-a9c2-4b65-91d2-3e0990a63a12",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

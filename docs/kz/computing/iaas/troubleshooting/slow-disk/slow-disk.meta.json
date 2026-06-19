@@ -4,5 +4,12 @@
   "metaDescription": "Диск өнімділігіне қатысты мәселелерді жою",
   "sectionTitle": "Диск баяу жұмыс істейді",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

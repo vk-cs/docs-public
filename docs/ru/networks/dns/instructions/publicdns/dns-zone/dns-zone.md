@@ -1,20 +1,20 @@
-## Просмотр списка DNS-зон
+# {heading(DNS-зоны)[id=dns-dns-zone]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+## {heading(Просмотр списка DNS-зон)[id=dns-dns-zone-list]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+{tabs}
+
+{tab(Личный кабинет)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `GET /v2/dns/`.
+{tab(API)}
+
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/api-dns#api-spec-dns)[text=методом]} `GET /v2/dns/`.
 
 Пример запроса:
 
@@ -45,47 +45,45 @@ content-length: 329
     "status": "pending"
 }]
 ```
-</tabpanel>
-</tabs>
 
-## {heading(Создание DNS-зоны)[id=add]}
+{/tab}
+
+{/tabs}
+
+## {heading(Создание DNS-зоны)[id=dns-dns-zone-add]}
 
 DNS-зона — логическое объединение доменных имен ваших ресурсов, содержащее их ресурсные записи.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+{tab(Личный кабинет)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите кнопку **Добавить зону**.
 1. Задайте параметры DNS-зоны:
 
-    - **DNS-зона**: имя создаваемой зоны, например, домен, который был ранее приобретен.
+   - **DNS-зона**: имя создаваемой зоны, например, домен, который был ранее приобретен.
 
-      <info>
+     {note:info}
+     Имя DNS-зоны должно содержать минимум одну точку, не должно оканчиваться точкой или цифрами.
+     {/note}
 
-      Имя DNS-зоны должно содержать минимум одну точку, не должно оканчиваться точкой или цифрами.
-
-      </info>
-
-    - **Контактный email**: почта администратора зоны.
-    - **Time to expire**: время (в секундах), после которого вторичный NS-сервер перестает отвечать на запросы для этой зоны, если первичный NS-сервер не отвечает. Значение должно быть больше, чем сумма в полях **Time to refresh** и **Time to retry**.
-    - **Time to refresh**: время (в секундах), по истечении которого вторичный NS-сервер должен запросить SOA-запись у первичного, чтобы поддержать изменения в зоне.
-    - **Time to retry**: время (в секундах), по истечении которого вторичный NS-сервер вновь запросит SOA-запись у первичного, если первичный NS-сервер не ответил. Значение должно быть меньше указанного в **Time to refresh**.
-    - **Time to live (TTL)**: время жизни кеша при отрицательном ответе на запрос в зоне.
+   - **Контактный email**: почта администратора зоны.
+   - **Time to expire**: время (в секундах), после которого вторичный NS-сервер перестает отвечать на запросы для этой зоны, если первичный NS-сервер не отвечает. Значение должно быть больше, чем сумма в полях **Time to refresh** и **Time to retry**.
+   - **Time to refresh**: время (в секундах), по истечении которого вторичный NS-сервер должен запросить SOA-запись у первичного, чтобы поддержать изменения в зоне.
+   - **Time to retry**: время (в секундах), по истечении которого вторичный NS-сервер вновь запросит SOA-запись у первичного, если первичный NS-сервер не ответил. Значение должно быть меньше указанного в **Time to refresh**.
+   - **Time to live (TTL)**: время жизни кеша при отрицательном ответе на запрос в зоне.
 
 1. Нажмите кнопку **Добавить зону**.
-1. Обратитесь к владельцу [указанного](https://msk.cloud.vk.com/app/services/dns/list) домена, чтобы делегировать управление зоной на DNS-сервера VK Cloud.
+1. Обратитесь к владельцу [указанного](https://msk.cloud.vk.com/app/services/dns/list) домена, чтобы делегировать управление зоной на DNS-сервера {var(cloud)}.
 
-</tabpanel>
-<tabpanel>
+{/tab}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `POST /v2/dns/`.
+{tab(API)}
+
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/api-dns#api-spec-dns)[text=методом]} `POST /v2/dns/`.
 
 Пример запроса:
 
@@ -112,8 +110,7 @@ HTTP/1.1 201 Created
 location: http://mcs.mail.ru/v2/dns/bfce6153-XXXX-XXXX-XXXX-6788b25a1b6a
 content-type: application/json
 content-length: 319
-
-{
+        
     "uuid": "bfce6153-XXXX-XXXX-XXXX-6788b25a1b6a",
     "tenant": "b5b7ffd4-XXXX-XXXX-XXXX-f44555df8f67",
     "soa_primary_dns": "ns1.mcs.mail.ru",
@@ -128,33 +125,30 @@ content-length: 319
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
 
-<info>
+{/tabs}
 
+{note:info}
 У большинства провайдеров возможно самостоятельно делегировать управление зоной. Если у вас возникли вопросы, как это сделать, обратитесь за помощью к владельцу [указанного](https://msk.cloud.vk.com/app/services/dns/list) домена.
+{/note}
 
-</info>
+## {heading(Просмотр DNS-зоны)[id=dns-dns-zone-view]}
 
-## Просмотр DNS-зоны
+{tabs}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
+1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `GET /v2/dns/<dns-uuid>`.
+{tab(API)}
+
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/api-dns#api-spec-dns)[text=методом]} `GET /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -186,28 +180,27 @@ content-length: 321
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
 
-## Редактирование DNS-зоны
+{/tabs}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+## {heading(Редактирование DNS-зоны)[id=dns-dns-zone-edit]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+{tabs}
+
+{tab(Личный кабинет)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
+1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
 1. Внесите изменения и нажмите кнопку **Сохранить изменения**.
 
-</tabpanel>
-<tabpanel>
+{/tab}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `PUT /v2/dns/<dns-uuid>`.
+{tab(API)}
+
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/api-dns#api-spec-dns)[text=методом]} `PUT /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -242,10 +235,11 @@ content-length: 330
 }
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
 
-## Создание подзоны DNS
+{/tabs}
+
+## {heading(Создание подзоны DNS)[id=dns-dns-zone-subzone-add]}
 
 Подзона — это зона DNS, которая находится уровнем ниже текущей. Например, для домена `example.com` подзоной будет `subzone.example.com`.
 
@@ -254,43 +248,37 @@ content-length: 330
 - В том же проекте, где размещается основная зона. Этот подход применяется для отделения ресурсных записей подзоны от записей основной зоны.
 - У стороннего DNS-провайдера.
 
-<warn>
-
+{note:warn}
 Создать подзону для зоны в другом проекте нельзя.
+{/note}
 
-</warn>
+Чтобы создать подзону в проекте {var(cloud)}, [создайте](#dns-dns-zone-add) две ресурсные NS-записи с именем подзоны, повторно делегирующие подзону на DNS-сервера {var(cloud)}.
 
-Чтобы создать подзону в проекте VK Cloud, [создайте](#add) две ресурсные NS-записи с именем подзоны, повторно делегирующие подзону на DNS-сервера VK Cloud.
-
-<info>
-
+{note:info}
 Если вы хотите создать подзону у стороннего провайдера, то созданные NS-записи должны будут указывать на DNS-сервера стороннего провайдера.
-
-</info>
+{/note}
 
 После создания NS-записей вы можете создать зону для делегированного поддомена.
 
-## {heading(Удаление DNS-зоны)[id=delete]}
+## {heading(Удаление DNS-зоны)[id=dns-dns-zone-delete]}
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>API</tab>
-</tablist>
-<tabpanel>
+{tabs}
+
+{tab(Личный кабинет)}
 
 Это групповая операция: при необходимости можно удалить сразу несколько зон, выбрав их с помощью флажков.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Удалить**.
+1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Удалить**.
 1. Подтвердите действие.
 
-</tabpanel>
-<tabpanel>
+{/tab}
 
-Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/network-api/api-dns) `DELETE /v2/dns/<dns-uuid>`.
+{tab(API)}
+
+Воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/api-dns#api-spec-dns)[text=методом]} `DELETE /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -306,5 +294,6 @@ curl --location --request DELETE 'https://mcs.mail.ru/public-dns/v2/dns/6f981b26
 HTTP/1.1 204 No Content
 ```
 
-</tabpanel>
-</tabs>
+{/tab}
+
+{/tabs}

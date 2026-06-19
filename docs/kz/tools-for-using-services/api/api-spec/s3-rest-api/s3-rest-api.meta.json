@@ -1,8 +1,13 @@
 {
-  "title": "VK Object Storage",
+  "title": "{var(s3)}",
   "shortDescription": "API операциялары, сұраулар мен жауаптар құрылымдары, қате кодтары",
   "metaDescription": "API операциялары, сұраулар мен жауаптар құрылымдары, қате кодтары.",
-  "sectionTitle": "VK Object Storage",
+  "sectionTitle": "{var(s3)}",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

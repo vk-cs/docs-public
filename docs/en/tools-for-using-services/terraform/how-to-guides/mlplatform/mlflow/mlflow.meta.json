@@ -1,9 +1,14 @@
 {
-    "title": "Creating an MLflow instance",
-      "shortDescription": "",
-      "metaDescription": "How to create an MLflow instance using Terraform",
-    "sectionTitle": "Creating an MLflow instance",
-    "icon": "",
-    "weight": 2,
-    "uuid": "5dfc3087-4fb6-4912-8c0e-7eac46234c7d"
+  "title": "Creating an MLflow instance",
+  "shortDescription": "",
+  "metaDescription": "How to create an MLflow instance using Terraform",
+  "sectionTitle": "Creating an MLflow instance",
+  "icon": "",
+  "weight": 2,
+  "uuid": "5dfc3087-4fb6-4912-8c0e-7eac46234c7d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

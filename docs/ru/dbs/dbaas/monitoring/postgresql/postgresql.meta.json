@@ -1,8 +1,18 @@
 {
-    "title": "Мониторинг PostgreSQL",
-      "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
-      "metaDescription": "Мониторинг состояния инстансов PostgreSQL c предоставлением подробной информации о метриках отдельных хостов в VK Cloud. Описание доступных метрик, анализ и использование сведений мониторинга",
-    "sectionTitle": "Мониторинг PostgreSQL",
-    "icon": "",
-    "uuid": "27d26b64-a0c0-495b-9d03-bff1068b8b15"
+  "title": "Мониторинг PostgreSQL",
+  "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
+  "metaDescription": "Мониторинг состояния инстансов PostgreSQL c предоставлением подробной информации о метриках отдельных хостов в VK Cloud. Описание доступных метрик, анализ и использование сведений мониторинга",
+  "sectionTitle": "Мониторинг PostgreSQL",
+  "icon": "",
+  "weight": 1,
+  "uuid": "27d26b64-a0c0-495b-9d03-bff1068b8b15",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

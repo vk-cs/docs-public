@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-та мониторинг",
+  "shortDescription": "Standalone-та метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform-тың Standalone нұсқасындағы Cloud Iceberg Metastore сервисінің жайылған даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "sectionTitle": "Standalone-та мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

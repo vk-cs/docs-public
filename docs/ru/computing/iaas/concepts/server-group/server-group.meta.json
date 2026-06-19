@@ -4,5 +4,14 @@
   "metaDescription": "Управление размещением виртуальных ресурсов в VK Cloud через создание групп серверов",
   "sectionTitle": "Группы серверов",
   "weight": 2,
-  "uuid": "3d2f7d42-ddb7-4feb-a38f-97128ef7963b"
+  "uuid": "3d2f7d42-ddb7-4feb-a38f-97128ef7963b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

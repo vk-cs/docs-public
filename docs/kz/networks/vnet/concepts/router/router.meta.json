@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud ішіндегі маршрутизаторлардың мақсаты, түрлері және ерекшеліктері",
   "sectionTitle": "Маршрутизаторлар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание Milvus",
   "icon": "",
   "weight": 13,
-  "uuid": "9478781f-896c-4b5e-ad73-844a4d5af1aa"
+  "uuid": "9478781f-896c-4b5e-ad73-844a4d5af1aa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

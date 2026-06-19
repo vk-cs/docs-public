@@ -6,7 +6,7 @@ Access to VK Cloud resources by programs is limited by the scope of the role tha
 
 Depending on their role in the project, a user in the VK Cloud management console can:
 
-- [create](../../instructions/project-settings/service-account-manage#create) a service account
+- [create](../../instructions/project-settings/service-account-manage) a service account
 - [view](../../instructions/project-settings/service-account-manage#view_list) the list of the project service accounts
 - [view](../../instructions/project-settings/service-account-manage#view_card) a service account details
 - [download](../../instructions/project-settings/service-account-manage#download_rc_file) an OpenStack RC file to their device, which is required to use the API

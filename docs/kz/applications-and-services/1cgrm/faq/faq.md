@@ -1,3 +1,5 @@
+# {heading(Сұрақтар мен жауаптар)[id=1cgrm-faq]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {cut(Қандай мәселелер бойынша техникалық қолдау қызметіне жүгіне аламын?)}
@@ -79,6 +81,6 @@ VK Cloud жасалатын 1С:ГРМ қолданбаларының санын
 
 {cut(1С:ГРМ жазылымын қалай өшіруге болады?)}
 
-1С:ГРМ жазылымын өшіру үшін [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru) поштасына хат жазыңыз немесе [жойыңыз](/kz/applications-and-services/1cgrm/instructions/app-manage#deleting-application) VK Cloud ішінде жасалған қолданбаны.
+1С:ГРМ жазылымын өшіру үшін [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru) поштасына хат жазыңыз немесе {linkto(../../../applications-and-services/1cgrm/instructions/app-manage#1cgrm-app-manage-deleting)[text=жойыңыз]} VK Cloud ішінде жасалған қолданбаны.
 
 {/cut}

@@ -1,9 +1,14 @@
 {
   "title": "Практические руководства",
-  "shortDescription": "Сценарии использования сервиса IAM",
-  "metaDescription": "Сценарии использования сервиса IAM: как управлять доступом с помощью Identity and Access Management в VK Cloud",
+  "shortDescription": "Сценарии использования сервиса {var(cloud)} Аккаунт",
+  "metaDescription": "Сценарии использования сервиса VK Cloud Аккаунт",
   "sectionTitle": "Практические руководства",
   "icon": "",
-  "weight": 3,
-  "uuid": ""
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

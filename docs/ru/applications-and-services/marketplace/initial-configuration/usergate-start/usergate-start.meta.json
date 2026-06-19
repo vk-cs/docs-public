@@ -1,9 +1,14 @@
 {
-    "title": "Защита инфраструктуры с помощью UserGate NGFW",
-      "shortDescription": "Развертывание сервиса UseGate NGFW в проекте, подключение новой сети",
-      "metaDescription": "UseGate NGFW VK Cloud: развертывание сервиса в проекте, подключение сети",
-    "sectionTitle": "Защита инфраструктуры с помощью UserGate NGFW",
-    "icon": "",
-    "weight": 5,
-    "uuid": "dda61b4d-856d-4eb2-8362-5a6c52c820b2"
+  "title": "Защита инфраструктуры с помощью UserGate NGFW",
+  "shortDescription": "Развертывание сервиса UseGate NGFW в проекте, подключение новой сети",
+  "metaDescription": "UseGate NGFW VK Cloud: развертывание сервиса в проекте, подключение сети",
+  "sectionTitle": "Защита инфраструктуры с помощью UserGate NGFW",
+  "icon": "",
+  "weight": 5,
+  "uuid": "dda61b4d-856d-4eb2-8362-5a6c52c820b2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

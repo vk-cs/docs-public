@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_monitoring_user деректер көзі",
   "sectionTitle": "ivkcs_monitoring_user деректер көзі",
-  "weight": 3
+    "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

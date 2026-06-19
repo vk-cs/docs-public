@@ -4,5 +4,12 @@
   "metaDescription": "Terraform пайдалана отырып Cloud Containers сервисімен жұмыс істеу",
   "sectionTitle": "Cloud Containers",
   "icon": "",
-  "weight": 60
+  "weight": 60,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

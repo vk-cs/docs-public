@@ -2,13 +2,13 @@
 
 ## Дайындық қадамдары
 
-1. Terraform-ды VK Cloud ресми [айнасынан](https://hashicorp-releases.mcs.mail.ru/terraform) орнатыңыз.
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. Terraform-ды {var(cloud)} ресми [айнасынан](https://hashicorp-releases.mcs.mail.ru/terraform) орнатыңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. Егер бұл әлі жасалмаған болса, [екі факторлы аутентификацияны баптаңыз](/kz/access/iam/instructions/manage-2fa) және [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api).
 
 1. Беттің жоғарғы бөлігіндегі пайдаланушы атына басып, ашылмалы тізімнен **Жоба баптаулары** тармағын таңдаңыз.
 
-1. **Terraform** қойындысына өтіңіз. Аттас батырмаларды басып, негізгі [Terraform конфигурация файлын](../reference/configuration#terraform_provayderinin_konfiguraciya_fayly) және [Terraform айнасының конфигурация файлын](../reference/configuration#terraform_aynasynyn_konfiguraciya_fayly) жүктеп алыңыз.
+1. **Terraform** қойындысына өтіңіз. Аттас батырмаларды басып, негізгі [Terraform конфигурация файлын](../reference/configuration#fayl_konfiguracii_provaydera_terraform) және [Terraform айнасының конфигурация файлын](../reference/configuration#terraform-mirror-config) жүктеп алыңыз.
 
     `vkcs_provider.tf` және `terraform.rc` атаулары бар файлдар жүктеледі.
 
@@ -21,7 +21,7 @@
     1. Windows Explorer мекенжай жолағына `%APPDATA%` енгізіп, ашылған директорияға `terraform.rc` файлын көшіріңіз.
     1. `vkcs_provider.tf` файлын платформамен жұмыс істеуді жоспарлап отырған жұмыс директориясына көшіріңіз.
 
-        VK Cloud әрбір жобасы үшін бөлек жұмыс директориясын жасау ұсынылады.
+        {var(cloud)} әрбір жобасы үшін бөлек жұмыс директориясын жасау ұсынылады.
 
    {/tab}
 
@@ -31,7 +31,7 @@
     1. `.terraformrc` файлын пайдаланушының үй директориясының түбіріне көшіріңіз.
     1. `vkcs_provider.tf` файлын платформамен жұмыс істеуді жоспарлап отырған жұмыс директориясына көшіріңіз.
 
-        VK Cloud әрбір жобасы үшін бөлек жұмыс директориясын жасау ұсынылады.
+        {var(cloud)} әрбір жобасы үшін бөлек жұмыс директориясын жасау ұсынылады.
 
    {/tab}
 

@@ -4,7 +4,7 @@ For more details on Cluster Autoscaler and how to use it, refer to its [official
 
 ## {heading(Preparatory steps)[id=prepare]}
 
-1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a cluster if not done so already.
+{include(/en/_includes/_create-test-cluster.md)}
 1. [Install and configure](../../connect/kubectl) `kubectl` if not done so already.
 1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
 
@@ -16,7 +16,7 @@ To identify which pod is the Cluster Autoscaler pod, use one of the following me
 
 {tab(Management console)}
 
-[View](/en/kubernetes/k8s/instructions/manage-resources#viewing_information_about_cluster_resources) the list of pods in your cluster via your VK Cloud management console.
+[View](/en/kubernetes/k8s/instructions/manage-resources#view-resources) the list of pods in your cluster via your VK Cloud management console.
 
 {/tab}
 
@@ -64,7 +64,4 @@ For more details on working with events, refer to the [official Kubernetes docum
 
 ## {heading(Delete unused resources)[id=delete]}
 
-A running cluster consumes computing resources. If you no longer need it:
-
-   - [Stop](/en/kubernetes/k8s/instructions/manage-cluster#stop) it to use it later.
-   - [Delete](../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster.md)}

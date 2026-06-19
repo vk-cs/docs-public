@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: жоғары өлшемді векторлармен жұмыс істеуге арналған Qdrant сервисін өрістету қадамдары.",
   "sectionTitle": "Qdrant өрістету",
   "icon": "",
-  "weight": 14
+  "weight": 14,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Виртуалды машинаның метрикаларын мониторингтеу үшін график жасаңыз",
   "icon": "",
   "hidden": true,
-  "weight": 9
+  "weight": 9,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

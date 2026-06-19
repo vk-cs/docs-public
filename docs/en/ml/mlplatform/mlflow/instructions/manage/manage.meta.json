@@ -1,9 +1,23 @@
 {
-    "title": "Managing MLflow instance",
-      "shortDescription": "How to change settings, stop, reboot, or delete instance",
-      "metaDescription": "How to change settings, stop, reboot, or delete instance",
-    "sectionTitle": "Managing MLflow instance",
-    "icon": "",
-    "weight": 3,
-    "uuid": "0492cf8a-2c61-4e7e-a0b0-2e0031324764"
+  "title": "Managing MLflow instance",
+  "shortDescription": "How to change settings, stop, reboot, or delete instance",
+  "metaDescription": "How to change settings, stop, reboot, or delete instance",
+  "sectionTitle": "Managing MLflow instance",
+  "icon": "",
+  "weight": 3,
+  "uuid": "0492cf8a-2c61-4e7e-a0b0-2e0031324764",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,0 +1,1 @@
+A running cluster consumes computing resources and is charged accordingly. If you no longer need the Kubernetes resources you created to test

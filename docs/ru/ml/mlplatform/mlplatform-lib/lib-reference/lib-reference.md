@@ -1,3 +1,5 @@
+# {heading(Аутентификация и авторизация)[id=mllib-lib-reference]}
+
 Эти методы позволяют выполнять следующие операции:
 
 - Получать информацию, необходимую для создания инстансов JupyterHub, MLflow и MLflow Deploy.
@@ -5,17 +7,17 @@
 - Развертывать на инстансах MLflow Deploy ML-модели и проверять их работоспособность.
 - Получать предсказания ML-моделей.
 
-## get_flavors
+## {heading(get_flavors)[id=mllib-lib-reference-get_flavors]}
 
 Получить список всех [шаблонов конфигурации ВМ](/ru/computing/iaas/concepts/vm/flavor), доступных для создания инстансов JupyterHub, MLflow, MLflow Deploy.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-get_flavors-arguments]}
 
 Аргументов нет.
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-get_flavors-payloads]}
 
 Список доступных шаблонов конфигурации ВМ. Каждый элемент списка содержит следующую информацию:
 
@@ -25,7 +27,7 @@
 - количество ядер CPU;
 - дополнительные спецификации.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-get_flavors-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -99,21 +101,21 @@ get_flavors(**kwargs
 
 {/cut}
 
-## get_internal_networks
+## {heading(get_internal_networks)[id=mllib-lib-reference-get_internal_networks]}
 
-Получить список всех [стандартных сетей](/ru/networks/vnet/concepts/net-types#standartnaya_set), доступных в проекте.
+Получить список всех [стандартных сетей](/ru/networks/vnet/concepts/net-types#vnet-net-types-standard-net), доступных в проекте.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-get_internal_networks-arguments]}
 
 Аргументов нет.
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-get_internal_networks-payloads]}
 
 Список стандартных сетей проекта. Каждый элемент списка содержит ID, имя, [SDN](/ru/networks/vnet/concepts/sdn) и другие параметры сети.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-get_internal_networks-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -179,21 +181,21 @@ get_internal_networks(**kwargs
 
 {/cut}
 
-## get_external_networks
+## {heading(get_external_networks)[id=mllib-lib-reference-get_external_networks]}
 
-Получить список всех [внешних сетей](/ru/networks/vnet/concepts/net-types#external_net), доступных в проекте.
+Получить список всех [внешних сетей](/ru/networks/vnet/concepts/net-types#vnet-net-types-external-net), доступных в проекте.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-get_external_networks-arguments]}
 
 Аргументов нет.
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-get_external_networks-payloads]}
 
 Список внешних сетей проекта. Каждый элемент списка содержит ID, имя, [SDN](/ru/networks/vnet/concepts/sdn) и другие параметры сети.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-get_external_networks-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -248,7 +250,7 @@ get_external_networks(**kwargs
 
 {/cut}
 
-## create_jupyter_hub
+## {heading(create_jupyter_hub)[id=mllib-lib-reference-create_jupyter_hub]}
 
 Создать инстанс JupyterHub.
 
@@ -260,7 +262,7 @@ get_external_networks(**kwargs
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-create_jupyter_hub-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -309,7 +311,7 @@ get_external_networks(**kwargs
 |`str`
 |Идентификатор шаблона конфигурации для создания ВМ инстанса.
 
-Список шаблонов конфигурации и их идентификаторов можно получить с помощью метода [get_flavors](#get_flavors)
+Список шаблонов конфигурации и их идентификаторов можно получить с помощью метода [get_flavors](#mllib-lib-reference-get_flavors)
 
 |`volumes`
 
@@ -320,8 +322,8 @@ get_external_networks(**kwargs
 Каждый диск описывается объектом класса `MLPlatformVolumeIn` с полями:
 
 - `size`: объем диска в ГБ (тип `int`).
-- `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
-- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
+- `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
+- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#architecture-az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -344,7 +346,7 @@ MLPlatformVolumeIn(
 |`MLPlatformNetworkIn`
 |Сеть, к которой будет подключен инстанс.
 
-Сеть описывается объектом класса `MLPlatformVolumeIn` с полем `network_id`, содержащим идентификатор сети. Списки стандартных и внешних сетей проекта и их идентификаторов можно получить с помощью методов [get_internal_networks](#get_internal_networks) и [get_external_networks](#get_external_networks).
+Сеть описывается объектом класса `MLPlatformVolumeIn` с полем `network_id`, содержащим идентификатор сети. Списки стандартных и внешних сетей проекта и их идентификаторов можно получить с помощью методов [get_internal_networks](#mllib-lib-reference-get_internal_networks) и [get_external_networks](#mllib-lib-reference-get_external_networks).
 
 Пример описания сети:
 
@@ -362,17 +364,17 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 Требования к имени нового бакета:
 
-- должно быть уникальным для сервиса VK Object Storage в целом (не только в рамках проекта);
+- должно быть уникальным для сервиса {var(s3)} в целом (не только в рамках проекта);
 - должно содержать от 4 до 63 символов;
 - может содержать только цифры, строчные латинские буквы и спецсимволы `.`, `-`;
 - должно начинаться и оканчиваться только строчными латинскими буквами или цифрами
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-create_jupyter_hub-payloads]}
 
 Объект класса `VmDetailInfo` с информацией о созданном инстансе JupyterHub.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-create_jupyter_hub-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -475,7 +477,7 @@ create_jupiter_hub(instance_name: str,
 
 {/cut}
 
-## attach_s3_bucket_to_jh
+## {heading(attach_s3_bucket_to_jh)[id=mllib-lib-reference-attach_s3_bucket_to_jh]}
 
 Подключить бакет к инстансу JupyterHub.
 
@@ -487,7 +489,7 @@ create_jupiter_hub(instance_name: str,
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-attach_s3_bucket_to_jh-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -501,7 +503,7 @@ create_jupiter_hub(instance_name: str,
 |`str`
 |Идентификатор инстанса JupyterHub.
 
-Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`s3fs_bucket`
 
@@ -513,17 +515,17 @@ create_jupiter_hub(instance_name: str,
 
 Требования к имени нового бакета:
 
-- должно быть уникальным для сервиса VK Object Storage в целом (не только в рамках проекта);
+- должно быть уникальным для сервиса {var(s3)} в целом (не только в рамках проекта);
 - должно содержать от 4 до 63 символов;
 - может содержать только цифры, строчные латинские буквы и спецсимволы `.`, `-`;
 - должно начинаться и оканчиваться только строчными латинскими буквами или цифрами
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-attach_s3_bucket_to_jh-payloads]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-attach_s3_bucket_to_jh-signatures]}
 
 {cut(Сигнатура метода)}
 
@@ -567,7 +569,7 @@ attach_s3_bucket_to_jh(
 
 {/cut}
 
-## create_mlflow
+## {heading(create_mlflow)[id=mllib-lib-reference-create_mlflow]}
 
 Создать инстанс MLflow, подключенный к существующему инстансу JupyterHub.
 
@@ -579,7 +581,7 @@ attach_s3_bucket_to_jh(
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-create_mlflow-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -599,7 +601,7 @@ attach_s3_bucket_to_jh(
 |`str`
 |Идентификатор существующего инстанса JupyterHub, к которому будет подключен инстанс MLflow.
 
-Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`domain_name`
 
@@ -619,7 +621,7 @@ attach_s3_bucket_to_jh(
 |`str`
 |Идентификатор шаблона конфигурации для создания ВМ инстанса.
 
-Список шаблонов конфигурации и их идентификаторов можно получить с помощью метода [get_flavors](#get_flavors)
+Список шаблонов конфигурации и их идентификаторов можно получить с помощью метода [get_flavors](#mllib-lib-reference-get_flavors)
 
 |`volumes`
 
@@ -630,8 +632,8 @@ attach_s3_bucket_to_jh(
 Каждый диск описывается объектом класса `MLPlatformVolumeIn` с полями:
 
 - `size`: объем диска в ГБ (тип `int`).
-- `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
-- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
+- `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
+- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#architecture-az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -654,7 +656,7 @@ MLPlatformVolumeIn(
 |`MLPlatformNetworkIn`
 |Сеть, к которой будет подключен инстанс. Должна совпадать с сетью инстанса JupyterHub, к которому будет подключен инстанс MLflow.
 
-Сеть описывается объектом класса `MLPlatformVolumeIn` с полем `network_id`, содержащим идентификатор сети. Списки стандартных и внешних сетей проекта и их идентификаторов можно получить с помощью методов [get_internal_networks](#get_internal_networks) и [get_external_networks](#get_external_networks).
+Сеть описывается объектом класса `MLPlatformVolumeIn` с полем `network_id`, содержащим идентификатор сети. Списки стандартных и внешних сетей проекта и их идентификаторов можно получить с помощью методов [get_internal_networks](#mllib-lib-reference-get_internal_networks) и [get_external_networks](#mllib-lib-reference-get_external_networks).
 
 Пример описания сети:
 
@@ -679,11 +681,11 @@ MLPlatformNetworkIn(network_id="net-12345")
 {/note}
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-create_mlflow-payloads]}
 
 Объект класса `VmDetailInfo` с информацией о созданном инстансе MLflow.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-create_mlflow-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -783,9 +785,9 @@ create_mlflow(instance_name: str,
 
 {/cut}
 
-## create_deploy
+## {heading(create_deploy)[id=mllib-lib-reference-create_deploy]}
 
-Создать инстанс MLflow Deploy, подключенный к существующему инстансу MLflow или [MLflow Standalone](../../concepts/mlflow-modes#standalone).
+Создать инстанс MLflow Deploy, подключенный к существующему инстансу MLflow или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone).
 
 {note:info}
 
@@ -795,7 +797,7 @@ create_mlflow(instance_name: str,
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-create_deploy-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -813,21 +815,21 @@ create_mlflow(instance_name: str,
 
 (обязательный)
 |`str`
-|Идентификатор существующего инстанса MLflow или [MLflow Standalone](../../concepts/mlflow-modes#standalone), к которому будет подключен инстанс MLflow Deploy.
+|Идентификатор существующего инстанса MLflow или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), к которому будет подключен инстанс MLflow Deploy.
 
-Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`username`
 
 (обязательный)
 |`str`
-|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone)
+|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone)
 
 |`password`
 
 (обязательный)
 |`str`
-|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone)
+|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone)
 
 |`domain_name`
 
@@ -847,7 +849,7 @@ create_mlflow(instance_name: str,
 |`str`
 |Идентификатор шаблона конфигурации для создания ВМ инстанса.
 
-Список шаблонов конфигурации и их идентификаторов можно получить с помощью метода [get_flavors](#get_flavors)
+Список шаблонов конфигурации и их идентификаторов можно получить с помощью метода [get_flavors](#mllib-lib-reference-get_flavors)
 
 |`volumes`
 
@@ -858,8 +860,8 @@ create_mlflow(instance_name: str,
 Каждый диск описывается объектом класса `MLPlatformVolumeIn` с полями:
 
 - `size`: объем диска в ГБ (тип `int`).
-- `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
-- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
+- `volume_type`: [тип диска](/ru/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list). Допустимые значения — `VolumeType.ceph_ssd` и `VolumeType.high_iops`.
+- `availability_zone`: [зона доступности](/ru/start/concepts/architecture#architecture-az). Допустимые значения — `AvailabilityZone.GZ1` и `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -880,9 +882,9 @@ MLPlatformVolumeIn(
 
 (обязательный)
 |`MLPlatformNetworkIn`
-|Сеть, к которой будет подключен инстанс. Должна совпадать с сетью инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), к которому будет подключен инстанс MLflow Deploy.
+|Сеть, к которой будет подключен инстанс. Должна совпадать с сетью инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), к которому будет подключен инстанс MLflow Deploy.
 
-Сеть описывается объектом класса `MLPlatformVolumeIn` с полем `network_id`, содержащим идентификатор сети. Списки стандартных и внешних сетей проекта и их идентификаторов можно получить с помощью методов [get_internal_networks](#get_internal_networks) и [get_external_networks](#get_external_networks).
+Сеть описывается объектом класса `MLPlatformVolumeIn` с полем `network_id`, содержащим идентификатор сети. Списки стандартных и внешних сетей проекта и их идентификаторов можно получить с помощью методов [get_internal_networks](#mllib-lib-reference-get_internal_networks) и [get_external_networks](#mllib-lib-reference-get_external_networks).
 
 Пример описания сети:
 
@@ -902,16 +904,16 @@ MLPlatformNetworkIn(network_id="net-12345")
 
 {note:warn}
 
-Режим работы инстанса MLflow Deploy должен совпадать с режимом работы инстанса MLflow или [MLflow Standalone](../../concepts/mlflow-modes#standalone), к которому он будет подключен.
+Режим работы инстанса MLflow Deploy должен совпадать с режимом работы инстанса MLflow или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), к которому он будет подключен.
 
 {/note}
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-create_deploy-arguments-payloads]}
 
 Объект класса `VmDetailInfo` с информацией о созданном инстансе MLflow Deploy.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-create_deploy-arguments-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1016,21 +1018,21 @@ create_deploy(instance_name: str,
 
 {/cut}
 
-## get_all_instances_info
+## {heading(get_all_instances_info)[id=mllib-lib-reference-get_all_instances_info]}
 
 Получить список всех инстансов Cloud ML Platform: JupyterHub, MLflow и MLflow Deploy.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-get_all_instances_info-arguments]}
 
 Аргументов нет.
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-get_all_instances_info-payloads]}
 
 Список объектов класса `VmDetailInfo` с информацией обо всех имеющихся в проекте инстансах JupyterHub, MLflow и MLflow Deploy.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-get_all_instances_info-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1107,13 +1109,13 @@ get_all_instances_info(**kwargs
 
 {/cut}
 
-## get_instance_info
+## {heading(get_instance_info)[id=mllib-lib-reference-get_instance_info]}
 
 Получить информацию об инстансе Cloud ML Platform (JupyterHub, MLflow, MLflow Deploy) по его идентификатору.
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-get_instance_info-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1127,14 +1129,14 @@ get_all_instances_info(**kwargs
 |`str`
 |Идентификатор инстанса Cloud ML Platform.
 
-Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-get_instance_info-payloads]}
 
 Объект класса `VmDetailInfo` с информацией об инстансе Cloud ML Platform с указанным идентификатором.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-get_instance_info-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1215,13 +1217,13 @@ get_instance_info(instance_id: str,
 
 {/cut}
 
-## delete_instance
+## {heading(delete_instance)[id=mllib-lib-reference-delete_instance]}
 
 Удалить инстанс Cloud ML Platform (JupyterHub, MLflow или MLflow Deploy).
 
 Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-delete_instance-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1235,14 +1237,14 @@ get_instance_info(instance_id: str,
 |`str`
 |Идентификатор инстанса Cloud ML Platform.
 
-Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их идентификаторов можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-delete_instance-payloads]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-delete_instance-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1297,7 +1299,7 @@ delete_instance(instance_id: str,
 
 {/cut}
 
-## create_deployment
+## {heading(create_deployment)[id=mllib-lib-reference-create_deployment]}
 
 Создать развертывание удаленной ML-модели.
 
@@ -1309,7 +1311,7 @@ delete_instance(instance_id: str,
 
 Необходимая роль токена: `Пользователь` или `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-create_deployment-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1323,7 +1325,7 @@ delete_instance(instance_id: str,
 |`str`
 |Имя инстанса MLflow Deploy, на котором будет развернута удаленная ML-модель.
 
-Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`deployment_name`
 
@@ -1341,19 +1343,19 @@ delete_instance(instance_id: str,
 
 (обязательный)
 |`str`
-|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 
 |`password`
 
 (обязательный)
 |`str`
-|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 
 |`model_username`
 
 (обязательный)
 |`str`
-|Логин пользователя для доступа к методам удаленной ML-модели, т.е. к методам [predict_model](#predict_model) и [ping_model](#ping_model)
+|Логин пользователя для доступа к методам удаленной ML-модели, т.е. к методам [predict_model](#mllib-lib-reference-predict_model) и [ping_model](#mllib-lib-reference-ping_model)
 
 |`model_password`
 
@@ -1370,11 +1372,11 @@ delete_instance(instance_id: str,
 Если указано значение `None`, будет выбран первый свободный порт в диапазоне 62000–65000
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-create_deployment-payloads]}
 
 Объект класса `DeployOut` с информацией о созданном развертывании ML-модели: его имени, статусе и других параметрах.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-create_deployment-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1457,13 +1459,13 @@ create_deployment(deploy_server_name: str,
 
 {/cut}
 
-## list_deployments
+## {heading(list_deployments)[id=mllib-lib-reference-list_deployments]}
 
 Получить список всех развертываний ML-моделей, доступных на инстансе MLflow Deploy.
 
 Необходимая роль токена: `Пользователь` или `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-list_deployments-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1477,26 +1479,26 @@ create_deployment(deploy_server_name: str,
 |`str`
 |Имя инстанса MLflow Deploy.
 
-Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`username`
 
 (обязательный)
 |`str`
-|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 
 |`password`
 
 (обязательный)
 |`str`
-|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-list_deployments-payloads]}
 
 Список объектов класса `DeployOut` с информацией о доступных на указанном инстансе развертываниях ML-моделей: их именах, статусах и других параметрах.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-list_deployments-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1567,13 +1569,13 @@ list_deployments(deploy_server_name: str,
 
 {/cut}
 
-## get_deployment
+## {heading(get_deployment)[id=mllib-lib-reference-get_deployment]}
 
 Получить информацию о развертывании ML-модели по его имени.
 
 Необходимая роль токена: `Пользователь` или `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-get_deployment-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1587,7 +1589,7 @@ list_deployments(deploy_server_name: str,
 |`str`
 |Имя инстанса MLflow Deploy.
 
-Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`deployment_name`
 
@@ -1595,26 +1597,26 @@ list_deployments(deploy_server_name: str,
 |`str`
 |Имя развертывания удаленной ML-модели.
 
-Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#list_deployments)
+Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#mllib-lib-reference-list_deployments)
 
 |`username`
 
 (обязательный)
 |`str`
-|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 
 |`password`
 
 (обязательный)
 |`str`
-|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-get_deployment-payloads]}
 
 Объект класса `DeployOut` с информацией об указанном развертывании ML-модели: его имени, статусе и других параметрах.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-get_deployment-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1687,13 +1689,13 @@ get_deployment(deploy_server_name: str,
 
 {/cut}
 
-## delete_deployment
+## {heading(delete_deployment)[id=mllib-lib-reference-delete_deployment]}
 
 Удалить развертывание ML-модели.
 
 Необходимая роль токена: `Пользователь` или `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-delete_deployment-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1707,7 +1709,7 @@ get_deployment(deploy_server_name: str,
 |`str`
 |Имя инстанса MLflow Deploy.
 
-Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`deployment_name`
 
@@ -1715,26 +1717,26 @@ get_deployment(deploy_server_name: str,
 |`str`
 |Имя развертывания ML-модели.
 
-Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#list_deployments)
+Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#mllib-lib-reference-list_deployments)
 
 |`username`
 
 (обязательный)
 |`str`
-|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Логин администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 
 |`password`
 
 (обязательный)
 |`str`
-|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#standalone), с которым связан инстанс MLflow Deploy
+|Пароль администратора инстанса JupyterHub или [MLflow Standalone](../../concepts/mlflow-modes#mlplatform-standalone), с которым связан инстанс MLflow Deploy
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-delete_deployment-payloads]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-delete_deployment-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1808,13 +1810,13 @@ delete_deployment(deploy_server_name: str,
 
 {/cut}
 
-## ping_model
+## {heading(ping_model)[id=mllib-lib-reference-ping_model]}
 
 Проверить готовность удаленной ML-модели к работе.
 
 Необходимая роль токена: `Пользователь` или `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-ping_model-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1828,7 +1830,7 @@ delete_deployment(deploy_server_name: str,
 |`str`
 |Имя инстанса MLflow Deploy, на котором развернута ML-модель.
 
-Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`deployment_name`
 
@@ -1836,26 +1838,26 @@ delete_deployment(deploy_server_name: str,
 |`str`
 |Имя развертывания удаленной ML-модели.
 
-Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#list_deployments)
+Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#mllib-lib-reference-list_deployments)
 
 |`model_username`
 
 (обязательный)
 |`str`
-|Логин пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#create_deployment)
+|Логин пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#mllib-lib-reference-create_deployment)
 
 |`model_password`
 
 (обязательный)
 |`str`
-|Пароль пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#create_deployment)
+|Пароль пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#mllib-lib-reference-create_deployment)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-ping_model-payloads]}
 
 Символ новой строки `\n`, если модель готова к работе.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-ping_model-signatures]}
 
 {cut(Сигнатура метода)}
 
@@ -1896,7 +1898,7 @@ ping_model(deploy_server_name: str,
 1. [Создайте](../../mlflow/instructions/create) инстанс MLflow, если это еще не сделано.
 1. Создайте и обучите ML-модель, если это еще не сделано.
 1. [Создайте](../../deploymlflow/instructions/create) инстанс MLflow Deploy, если это еще не сделано.
-1. Разверните ML-модель на инстансе MLflow Deploy с помощью метода [create_deployment](#create_deployment).
+1. Разверните ML-модель на инстансе MLflow Deploy с помощью метода [create_deployment](#mllib-lib-reference-create_deployment).
 1. Выполните скрипт Python:
 
    ```python
@@ -1915,13 +1917,13 @@ ping_model(deploy_server_name: str,
 
 {/cut}
 
-## predict_model
+## {heading(predict_model)[id=mllib-lib-reference-predict_model]}
 
 Получить предсказание ML-модели для заданных входных данных.
 
 Необходимая роль токена: `Пользователь` или `Администратор`. [Подробнее о ролях токенов](../lib-authz).
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mllib-lib-reference-predict_model-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1941,7 +1943,7 @@ ping_model(deploy_server_name: str,
 |`str`
 |Имя инстанса MLflow Deploy, на котором развернута ML-модель.
 
-Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#get_all_instances_info)
+Список всех инстансов Cloud ML Platform и их имен можно получить с помощью метода [get_all_instances_info](#mllib-lib-reference-get_all_instances_info)
 
 |`deployment_name`
 
@@ -1949,26 +1951,26 @@ ping_model(deploy_server_name: str,
 |`str`
 |Имя развертывания удаленной ML-модели.
 
-Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#list_deployments)
+Список всех развертываний и их имен можно получить с помощью метода [list_deployments](#mllib-lib-reference-list_deployments)
 
 |`model_username`
 
 (обязательный)
 |`str`
-|Логин пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#create_deployment)
+|Логин пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#mllib-lib-reference-create_deployment)
 
 |`model_password`
 
 (обязательный)
 |`str`
-|Пароль пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#create_deployment)
+|Пароль пользователя для доступа к методам удаленной ML-модели, который был указан в вызове метода [create_deployment](#mllib-lib-reference-create_deployment)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mllib-lib-reference-predict_model-payloads]}
 
 Предсказание ML-модели для заданных входных данных в формате `Dict[str, Any]`.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mllib-lib-reference-predict_model-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -2010,7 +2012,7 @@ predict_model(data: Dict,
 1. [Создайте](../../mlflow/instructions/create) инстанс MLflow, если это еще не сделано.
 1. Создайте и обучите ML-модель, если это еще не сделано.
 1. [Создайте](../../deploymlflow/instructions/create) инстанс MLflow Deploy, если это еще не сделано.
-1. Разверните ML-модель на инстансе MLflow Deploy с помощью метода [create_deployment](#create_deployment).
+1. Разверните ML-модель на инстансе MLflow Deploy с помощью метода [create_deployment](#mllib-lib-reference-create_deployment).
 1. Выполните скрипт Python:
 
    ```python

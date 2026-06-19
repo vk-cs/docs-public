@@ -5,5 +5,9 @@
   "sectionTitle": "Ошибка при добавлении маршрута",
   "icon": "",
   "weight": 7,
-  "uuid": "69c559d1-cdbf-4ede-bb91-f3df21534090"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,3 +1,5 @@
+# {heading(Құпия нұсқаларын басқару)[id=sm-versions]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
@@ -6,13 +8,13 @@
 
 {/note}
 
-## {heading(Құпияның жаңа нұсқасын жасау)[id=create]}
+## {heading(Құпияның жаңа нұсқасын жасау)[id=sm-versions-create]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Құпиялар тізімінде қажетті құпияның атауын басыңыз.
 1. **Нұсқалар тарихы** қойындысына өтіңіз.
@@ -60,13 +62,13 @@
 
 {/tabs}
 
-## {heading(Құпия нұсқаларын қарау)[id=view]}
+## {heading(Құпия нұсқаларын қарау)[id=sm-versions-view]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Құпиялар тізімінде қажетті құпияның атауын басыңыз.
 1. **Нұсқалар тарихы** қойындысына өтіңіз.
@@ -75,7 +77,7 @@
     - **Кілт** — жұптың бірегей идентификаторы.
     - **Мән** — сезімтал деректер. Жасырылған түрде көрсетілетін жол немесе файл болуы мүмкін.
 
-        Мәнді шифрдан шығару үшін ![ ](/kz/assets/eye-icon.svg "inline") белгішесін басыңыз.
+        Мәнді шифрдан шығару үшін ![ ](../../../../assets/eye-icon.svg "inline") белгішесін басыңыз.
 
 {/tab}
 

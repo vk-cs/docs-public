@@ -1,14 +1,16 @@
+# {heading(Fluent Bit)[id=k8s-install-advanced-fluent-bit]}
+
 {note:info}
-Этот аддон доступен только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Этот аддон доступен только для кластеров {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-install-advanced-fluent-bit-prep]}
 
 {include(/ru/_includes/_addon-prep.md)}
 
-## Установка аддона
+## {heading(Установка аддона)[id=k8s-install-advanced-fluent-bit-install]}
 
-Для аддона доступен только [стандартный вариант установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
+Для аддона доступен только {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=стандартный вариант установки]}.
 
 Аддон будет установлен в виде контроллера [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
 
@@ -16,7 +18,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -30,12 +32,10 @@
       - выбранную версию;
       - название приложения;
       - название пространства имен, куда будет установлен аддон.
-   1. Отредактируйте [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke): в секции `Output` задайте параметры доставки логов в выбранный сервис. Другие параметры оставьте на свое усмотрение.
+   1. Отредактируйте {linkto(#k8s-install-advanced-fluent-bit-edit-code)[text=код настройки аддона]}: в секции `Output` задайте параметры доставки логов в выбранный сервис. Другие параметры оставьте на свое усмотрение.
 
         {note:warn}
-
         Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
         {/note}
 
    1. Нажмите кнопку **Установить аддон**.
@@ -46,7 +46,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -75,7 +75,7 @@
    
    {/tabs}
 
-## Редактирование кода настройки аддона при установке
+## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-advanced-fluent-bit-edit-code]}
 
 Полный код настройки аддона вместе с описанием полей доступен:
 
@@ -152,13 +152,11 @@
 1. (Опционально) Отредактируйте другие параметры кода настройки. Подробнее о параметрах  конфигурационного файла читайте в [официальной документации Fluent Bit](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file). Также на [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml) доступен пример кода настройки Fluent Bit.
 
    {note:warn}
-
    Не удаляйте поля, которые требуются для корректной установки и работы аддона, или заданные в этих полях значения.
 
    В коде настройки аддона есть комментарии, позволяющие найти такие поля.
-
    {/note}
 
-1. По завершении редактирования кода [продолжите установку аддона](#ustanovka_addona).
+1. По завершении редактирования кода {linkto(k8s-install-advanced-fluent-bit-install)[text=продолжите установку аддона]}.
 
 Подробнее о пайплайне можно прочитать в [официальной документации](https://docs.fluentbit.io/manual/pipeline).

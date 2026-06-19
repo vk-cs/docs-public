@@ -1,9 +1,14 @@
 {
-    "title": "Получение логов БД",
-      "shortDescription": "Получение и просмотр логов базы данных на инстансе БД",
-      "metaDescription": "Получение и просмотр логов базы данных на инстансе БД VK Cloud.",
-    "sectionTitle": "Получение логов БД",
-    "icon": "",
-    "weight": 16,
-    "uuid": "1feb61b9-7f0c-45dc-80b5-b8be0d54ed8e"
+  "title": "Получение логов БД",
+  "shortDescription": "Получение и просмотр логов базы данных на инстансе БД",
+  "metaDescription": "Получение и просмотр логов базы данных на инстансе БД VK Cloud.",
+  "sectionTitle": "Получение логов БД",
+  "icon": "",
+  "weight": 9,
+  "uuid": "1feb61b9-7f0c-45dc-80b5-b8be0d54ed8e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

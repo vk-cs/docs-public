@@ -1,9 +1,14 @@
 {
-    "title": "Архитектура сервиса",
-      "shortDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
-      "metaDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
-    "sectionTitle": "Архитектура сервиса",
-    "icon": "",
-    "weight": 2,
-    "uuid": "6e0e1581-8cce-45c4-8fac-808654c36595"
+  "title": "Архитектура сервиса",
+  "shortDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
+  "metaDescription": "Принцип работы сервиса и особенности интеграции с ML Platform",
+  "sectionTitle": "Архитектура сервиса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "6e0e1581-8cce-45c4-8fac-808654c36595",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

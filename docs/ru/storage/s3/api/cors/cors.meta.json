@@ -1,0 +1,16 @@
+{
+  "title": "CORS",
+  "shortDescription": "Установка, удаление и просмотр конфигурации механизма кросс-доменных запросов (CORS) в бакетах",
+  "metaDescription": "Все доступные методы для работы с конфигурацией механизма кросс-доменных запросов (CORS) в бакетах VK Object Storage: получить текущую конфигурацию (GetBucketCORS), установить конфигурацию (PutBucketCORS), удалить конфигурацию (DeleteBucketCORS)",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

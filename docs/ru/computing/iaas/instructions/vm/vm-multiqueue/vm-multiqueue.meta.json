@@ -1,0 +1,18 @@
+{
+  "title": "Включение множественных очередей (Multiqueue)",
+  "shortDescription": "Как управлять включить и проверить работоспособность множественных очередей",
+  "metaDescription": "Как управлять включить и проверить работоспособность множественных очередей (Multiqueue).",
+  "sectionTitle": "Включение множественных очередей (Multiqueue)",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

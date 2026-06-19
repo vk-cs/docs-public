@@ -5,5 +5,10 @@
   "sectionTitle": "Группы балансировки",
   "icon": "",
   "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "270faea8-a943-4790-adde-d58bfb7eb40a"
 }

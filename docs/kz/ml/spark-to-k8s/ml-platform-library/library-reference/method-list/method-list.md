@@ -1,43 +1,45 @@
+# {heading(Қолжетімді әдістер тізімі)[id=mlspark-library-reference-method-list]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Cloud Spark кластерлерімен жұмыс істеу
+## {heading(Cloud Spark кластерлерімен жұмыс істеу)[id=mlspark-library-reference-method-list-clusters]}
 
-- [get_clusters](../clusters#get_clusters)
-- [get_cluster_info](../clusters#get_cluster_info)
-- [set_cluster_delete_time](../clusters#set_cluster_delete_time)
-- [remove_cluster_delete_time](../clusters#remove_cluster_delete_time)
-- [set_cluster_suspend_time](../clusters#set_cluster_suspend_time)
-- [remove_cluster_suspend_time](../clusters#remove_cluster_suspend_time)
-- [stop](../clusters#stop)
-- [wake_up_cluster](../clusters#wake_up_cluster)
+- {linkto(../clusters#mlspark-library-reference-clusters-get_clusters)[text=get_clusters]}
+- {linkto(../clusters#mlspark-library-reference-clusters-get_cluster_info)[text=get_cluster_info]}
+- {linkto(../clusters#mlspark-library-reference-clusters-set_cluster_delete_time)[text=set_cluster_delete_time]}
+- {linkto(../clusters#mlspark-library-reference-clusters-remove_cluster_delete_time)[text=remove_cluster_delete_time]}
+- {linkto(../clusters#mlspark-library-reference-clusters-set_cluster_suspend_time)[text=set_cluster_suspend_time]}
+- {linkto(../clusters#mlspark-library-reference-clusters-remove_cluster_suspend_time)[text=remove_cluster_suspend_time]}
+- {linkto(../clusters#mlspark-library-reference-clusters-stop)[text=stop]}
+- {linkto(../clusters#mlspark-library-reference-clusters-wake_up_cluster)[text=wake_up_cluster]}
 
-## Spark тапсырмаларымен жұмыс істеу
+## {heading(Spark тапсырмаларымен жұмыс істеу)[id=mlspark-library-reference-method-list-spark_jobs]}
 
-- [get_default_manifest](../spark-jobs#get_default_manifest)
-- [get_manifest_from_yaml_file](../spark-jobs#get_manifest_from_yaml_file)
-- [save_yaml](../spark-jobs#save_yaml)
-- [spark_submit_job](../spark-jobs#spark_submit_job)
-- [spark_jobs_list](../spark-jobs#spark_jobs_list)
-- [spark_job_info](../spark-jobs#spark_job_info)
-- [spark_job_logs](../spark-jobs#spark_job_logs)
-- [describe_spark_job](../spark-jobs#describe_spark_job)
-- [spark_delete_job](../spark-jobs#spark_delete_job)
-- [spark_events](../spark-jobs#spark_events)
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-get_default_manifest)[text=get_default_manifest]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file)[text=get_manifest_from_yaml_file]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-save_yaml)[text=save_yaml]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-spark_submit_job)[text=spark_submit_job]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-spark_jobs_list)[text=spark_jobs_list]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-spark_job_info)[text=spark_job_info]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-spark_job_logs)[text=spark_job_logs]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-describe_spark_job)[text=describe_spark_job]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-spark_delete_job)[text=spark_delete_job]}
+- {linkto(../spark-jobs#mlspark-library-reference-spark-jobs-spark_events)[text=spark_events]}
 
-## Құпиялармен жұмыс істеу
+## {heading(Құпиялармен жұмыс істеу)[id=mlspark-library-reference-method-list-secrets]}
 
-- [create_secret_from_yaml](../secrets#create_secret_from_yaml)
-- [list_secrets](../secrets#list_secrets)
-- [get_secret_detail](../secrets#get_secret_detail)
-- [delete_secret](../secrets#delete_secret)
+- {linkto(../secrets#mlspark-library-reference-secrets-create_secret_from_yaml)[text=create_secret_from_yaml]}
+- {linkto(../secrets#mlspark-library-reference-secrets-list_secrets)[text=list_secrets]}
+- {linkto(../secrets#mlspark-library-reference-secrets-get_secret_detail)[text=get_secret_detail]}
+- {linkto(../secrets#mlspark-library-reference-secrets-delete_secret)[text=delete_secret]}
 
-## ConfigMaps-пен жұмыс істеу
+## {heading(ConfigMaps-пен жұмыс істеу)[id=mlspark-library-reference-method-list-configmaps]}
 
-- [create_configmap_from_yaml](../configmaps#create_configmap_from_yaml)
-- [list_configmaps](../configmaps#list_configmaps)
-- [get_configmap_detail](../configmaps#get_configmap_detail)
-- [delete_configmap](../configmaps#delete_configmap)
+- {linkto(../configmaps#mlspark-library-reference-configmaps-create_configmap_from_yaml)[text=create_configmap_from_yaml]}
+- {linkto(../configmaps#mlspark-library-reference-configmaps-list_configmaps)[text=list_configmaps]}
+- {linkto(../configmaps#mlspark-library-reference-configmaps-get_configmap_detail)[text=get_configmap_detail]}
+- {linkto(../configmaps#mlspark-library-reference-configmaps-delete_configmap)[text=delete_configmap]}
 
-## Spark Connect-пен жұмыс істеу
+## {heading(Spark Connect-пен жұмыс істеу)[id=mlspark-library-reference-method-list-spark_connect]}
 
-- [add_spark_connect_jars](../spark-connect-methods#add_spark_connect_jars)
+- {linkto(../spark-connect-methods#mlspark-library-reference-spark-connect-add_spark_connect_jars)[text=add_spark_connect_jars]}

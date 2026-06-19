@@ -1,9 +1,23 @@
 {
-    "title": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
-      "shortDescription": "",
-      "metaDescription": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
-    "sectionTitle": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
-    "icon": "",
-    "weight": 2,
-    "uuid": "f0c8b67f-c0ce-4eed-9601-05fda772f53d"
+  "title": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
+  "shortDescription": "",
+  "metaDescription": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
+  "sectionTitle": "Сбор логов с нод с docker-runtime и crio-runtime с помощью Fluent Bit",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f0c8b67f-c0ce-4eed-9601-05fda772f53d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
-      "shortDescription": "",
-      "metaDescription": "Конфигурация оборудования Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:  Docker на",
-    "sectionTitle": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
-    "icon": "",
-    "weight": 0,
-    "uuid": "79579cc4-796e-4249-a142-4f1a4ebcd0f0"
+  "title": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
+  "shortDescription": "",
+  "metaDescription": "Конфигурация оборудования Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:  Docker на",
+  "sectionTitle": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
+  "icon": "",
+  "weight": 0,
+  "uuid": "79579cc4-796e-4249-a142-4f1a4ebcd0f0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,5 +4,20 @@
   "metaDescription": "Автор: Михаил Волынов Бұл мақала ELK мониторинг серверін орнатуға және оған Nginx қолданбасының логтары үшін filebeat-агенттерін қосуға, сондай-ақ таныс",
   "sectionTitle": "Бұлтта ELK мониторингін қосу және қашықтағы тораптарды баптау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "d6d94f5b-0274-4420-b91a-f7b2c488469f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud: VK Cloud-та биллингтің жұмысы, теңгерімді басқару және есептік құжаттарды қалыптастыру",
   "sectionTitle": "Биллинг",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

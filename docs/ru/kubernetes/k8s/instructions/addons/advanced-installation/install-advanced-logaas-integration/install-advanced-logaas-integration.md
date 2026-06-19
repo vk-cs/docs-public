@@ -1,11 +1,13 @@
-## Подготовительные шаги
+# {heading(Fluent Bit для Cloud Logging (logaas-integration) в кластерах первого поколения)[id=k8s-install-advanced-logaas-integration]}
+
+## {heading(Подготовительные шаги)[id=k8s-install-advanced-logaas-integration-prepare]}
 
 {include(/ru/_includes/_addon-prep.md)}
-1. Подключите в проект сервис [Cloud Logging](/ru/monitoring-services/logging), если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+1. Подключите в проект сервис {linkto(../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]}, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
-## Установка аддона
+## {heading(Установка аддона)[id=k8s-install-advanced-logaas-integration-install]}
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov):
+Для аддона доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}:
 
 - стандартная установка;
 - быстрая установка.
@@ -22,7 +24,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -35,12 +37,10 @@
       - выбранную версию;
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
+      - {linkto(#k8s-install-advanced-logaas-integration-edit-code)[text=код настройки аддона]}.
 
         {note:warn}
-
         Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
         {/note}
 
    1. Нажмите кнопку **Установить аддон**.
@@ -51,7 +51,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -80,18 +80,16 @@
    
    {/tabs}
 
-1. (Опционально) [Просмотрите логи](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) {linkto(../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 {/tab}
 
 {tab(Быстрая установка)}
 
 {note:info}
-
 При быстрой установке код настройки аддона не редактируется.
 
 Если это вам не подходит, выполните **стандартную установку**.
-
 {/note}
 
 1. Установите аддон:
@@ -100,7 +98,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
@@ -123,7 +121,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -148,13 +146,13 @@
    
    {/tabs}
 
-1. (Опционально) [Просмотрите логи](/ru/monitoring-services/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) {linkto(../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 {/tab}
 
 {/tabs}
 
-## Редактирование кода настройки аддона при установке
+## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-advanced-logaas-integration-edit-code]}
 
 Редактирование кода аддона применимо для стандартной установки.
 
@@ -166,16 +164,14 @@
 Также на [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml) доступен код настройки Fluent Bit, который служит основой для этого аддона.
 
 {note:warn}
-
 Не удаляйте поля, которые требуются для корректной установки и работы аддона, или заданные в этих полях значения.
 
 В коде настройки аддона есть комментарии, позволяющие найти такие поля.
-
 {/note}
 
 Подробнее о [пайплайне](https://docs.fluentbit.io/manual/pipeline) (pipeline) и [настройках конфигурационного файла](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) читайте в официальной документации Fluent Bit.
 
-### Тонкая настройка поведения аддона при работе с разными уровнями критичности
+### {heading(Тонкая настройка поведения аддона при работе с разными уровнями критичности)[id=k8s-install-advanced-logaas-integration-settings]}
 
 Перед отправкой логов в сервис Cloud Logging аддон выполняет следующие действия:
 
@@ -213,7 +209,7 @@
        my-cluster-node-0.kubelet.service
        ```
 
-     - Для [пода](../../../../reference/pods) (pod): `<имя пространства имен (namespace)>.<имя>`.
+     - Для {linkto(../../../../reference/pods#k8s-pods)[text=пода]} (pod): `<имя пространства имен (namespace)>.<имя>`.
 
        Сначала имя ищется в следующих метках (labels):
 

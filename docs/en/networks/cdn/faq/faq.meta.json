@@ -1,9 +1,14 @@
 {
-    "title": "FAQ",
-      "shortDescription": "Frequently asked questions about CDN service",
-      "metaDescription": "Frequently asked questions about CDN service",
-    "sectionTitle": "FAQ",
-    "icon": "",
-    "weight": 5,
-    "uuid": "97b0ce4e-1d17-4ac1-8220-4f1866453fc5"
+  "title": "FAQ",
+  "shortDescription": "Frequently asked questions about CDN service",
+  "metaDescription": "Frequently asked questions about CDN service",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 5,
+  "uuid": "97b0ce4e-1d17-4ac1-8220-4f1866453fc5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

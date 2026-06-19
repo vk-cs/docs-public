@@ -5,5 +5,10 @@
   "sectionTitle": "Data Lakehouse",
   "icon": "",
   "weight": 1,
-  "uuid": "aacac787-08b3-46f8-b4ae-caf9e59d8b9f"
+  "uuid": "aacac787-08b3-46f8-b4ae-caf9e59d8b9f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

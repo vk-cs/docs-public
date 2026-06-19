@@ -1,8 +1,13 @@
 {
-  "title": "Тарифтеу",
+  "title": "Тарификация",
   "shortDescription": "Сервисті тарификациялау ережелері, сервисті пайдалану құнын қалай есептеу керек",
   "metaDescription": "VK Cloud-тағы Cloud Network сервисін пайдалану құнын қалай есептеу керек. Тарификация «pay as you go» қағидаты бойынша жүргізіледі",
-  "sectionTitle": "Тарифтеу",
+  "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

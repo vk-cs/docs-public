@@ -1,0 +1,14 @@
+{
+  "title": "Standalone режиміндегі мониторинг",
+  "shortDescription": "Standalone режимінде метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform платформасының Standalone нұсқасында жайылған Cloud Trino сервисі даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "sectionTitle": "Standalone режиміндегі мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": ""
+}

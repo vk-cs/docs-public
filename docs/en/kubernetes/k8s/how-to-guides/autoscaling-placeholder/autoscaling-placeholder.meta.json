@@ -4,6 +4,20 @@
   "metaDescription": "How to set up overprovisioning resources for cluster scaling",
   "sectionTitle": "Reserving nodes in a group",
   "icon": "",
-  "weight": 10,
-  "uuid": "609f7a4e-fb3c-4ffd-a033-e04f243573c0"
+  "weight": 7,
+  "uuid": "609f7a4e-fb3c-4ffd-a033-e04f243573c0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

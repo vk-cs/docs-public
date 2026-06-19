@@ -1,14 +1,16 @@
+# {heading(Не создается ВМ)[id=iaas-vm-create-problem]}
+
 В процессе создания виртуальной машины в личном кабинете возникает ошибка.
 
-### Решение
+### {heading(Решение)[id=iaas-vm-create-problem-decision]}
 
-При создании ВМ обратите внимание на всплывающее окно в правом верхнем углу личного кабинета VK Cloud. В нем отображается сообщение об ошибке. Проанализируйте описание ошибки.
+При создании ВМ обратите внимание на всплывающее окно в правом верхнем углу личного кабинета {var(cloud)}. В нем отображается сообщение об ошибке. Проанализируйте описание ошибки.
 
 {cut(Проблема с интернет-соединением)}
 
 1. Очистите кеш браузера.
 1. Отключите VPN и расширения (блокировщики рекламы).
-1. Попробуйте использовать режим инкогнито. Если ошибка сохраняется, [обратитесь в техническую поддержку](/ru/contacts).
+1. Попробуйте использовать режим инкогнито. Если ошибка сохраняется, обратитесь {ifdef(public)}в [техническую поддержку](/ru/contacts){/ifdef}{ifdef(private,private-pg)}к администратору {var(cloud)}{/ifdef}.
 
 {/cut}
 
@@ -23,17 +25,19 @@
 
 Это инфраструктурный сбой.
 
-1. Принудительно [перезагрузите](/ru/computing/iaas/instructions/vm/vm-manage#prinuditelnyy_perezapusk_vm) ВМ через некоторое время.
-2. Если ошибка сохраняется, [обратитесь в техническую поддержку](/ru/contacts).
+1. Принудительно {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-restart)[text=перезагрузите]} ВМ через некоторое время.
+2. Если ошибка сохраняется, обратитесь {ifdef(public)}в [техническую поддержку](/ru/contacts){/ifdef}{ifdef(private,private-pg)}к администратору {var(cloud)}{/ifdef}.
 
 {/cut}
 
 {cut(Сетевые пакеты не доходят до сервера)}
 
-1. [Проверьте](/ru/networks/vnet/instructions/ip/floating-ip#view), назначен ли ВМ Floating IP-адрес.
-1. [Проверьте](/ru/networks/vnet/instructions/secgroups#view_secgroups), разрешен ли входящий трафик на порт `22` в группах безопасности.
-1. [Проверьте](/ru/computing/iaas/troubleshooting/linux-vm-network#3_proverte_nastroyki_fayervola_virtualnoy_mashiny), не блокируется ли соединение локальным фаерволом или провайдером.
+1. {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-view)[text=Проверьте]}, назначен ли ВМ Floating IP-адрес.
+1. {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=Проверьте]}, разрешен ли входящий трафик на порт `22` в группах безопасности.
+   {ifdef(public)}
+1. {linkto(../../../../computing/iaas/troubleshooting/linux-vm-network#iaas-linux-vm-network-flavor-check)[text=Проверьте]}, не блокируется ли соединение локальным фаерволом или провайдером.
+   {/ifdef}
 
 {/cut}
 
-Если исправить ошибку не получается или сообщение не появляется, хотя мастер создания сообщает об ошибке, [обратитесь в техническую поддержку](/ru/contacts).
+Если исправить ошибку не получается или сообщение не появляется, хотя мастер создания сообщает об ошибке, обратитесь {ifdef(public)}в [техническую поддержку](/ru/contacts){/ifdef}{ifdef(private,private-pg)}к администратору {var(cloud)}{/ifdef}.

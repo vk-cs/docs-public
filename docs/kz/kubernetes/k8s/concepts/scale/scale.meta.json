@@ -4,5 +4,15 @@
   "metaDescription": "Кластердің жұмыс жүктемесінің талаптарына қалай бейімделетіні.",
   "sectionTitle": "Кластер түйіндерін масштабтау",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

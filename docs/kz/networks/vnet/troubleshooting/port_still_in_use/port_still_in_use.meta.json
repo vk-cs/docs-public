@@ -4,5 +4,10 @@
   "metaDescription": "Портты байланыстыру кезінде Port is still in use қатесі туындаса не істеу керек",
   "sectionTitle": "Портты байланыстыру кезіндегі қате",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

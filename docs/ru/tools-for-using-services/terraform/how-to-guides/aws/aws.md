@@ -1,4 +1,6 @@
-В статье приведены примеры создания и настройки бакетов и объектов VK Object Storage при помощи Terraform.
+# {heading(Создание кластера Spark)[id=terraform-aws]}
+
+В статье приведены примеры создания и настройки бакетов и объектов {var(s3)} при помощи Terraform.
 
 При создании сетей используются ресурсы (resource):
 
@@ -10,62 +12,63 @@
 
 Подробное описание ресурсов — в [документации провайдера](https://docs.comcloud.xyz/modules/terraform-aws-modules/s3-bucket/aws/latest).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=terraform-aws-prepare]}
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать инстанс. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и {linkto(../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квотами]} для {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=региона]}, в котором планируется создать инстанс. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform](../../quick-start), если это еще не сделано.
+1. {linkto(../../quick-start#terraform-quick-start)[text=Установите Terraform]}, если это еще не сделано.
 1. Настройте провайдер:
 
-    1. Создайте директорию, из которой будете работать с платформой, и перейдите в нее.
-    1. Создайте файл `aws_provider.tf` и добавьте в него содержимое:
+   1. Создайте директорию, из которой будете работать с платформой, и перейдите в нее.
+   1. Создайте файл `aws_provider.tf` и добавьте в него содержимое:
 
-        ```hcl
-        terraform {
-            required_providers {
-                aws = {
-            source = "hashicorp/aws"
-            version = "< 5.85.0"
-                }
-            }
-        }
-        provider "aws" {
-            region                      = "<РЕГИОН>"
-            access_key                  = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>"
-            secret_key                  = "<СЕКРЕТНЫЙ_КЛЮЧ>"
-            skip_credentials_validation = true
-            skip_metadata_api_check     = true
-            skip_requesting_account_id  = true
-            skip_region_validation      = true
-            endpoints {
-                s3 = "<ДОМЕН>"
-            }
-        }
-        ```
+      ```hcl
+      terraform {
+          required_providers {
+              aws = {
+          source = "hashicorp/aws"
+          version = "< 5.85.0"
+              }
+          }
+      }
+      provider "aws" {
+          region                      = "<РЕГИОН>"
+          access_key                  = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>"
+          secret_key                  = "<СЕКРЕТНЫЙ_КЛЮЧ>"
+          skip_credentials_validation = true
+          skip_metadata_api_check     = true
+          skip_requesting_account_id  = true
+          skip_region_validation      = true
+          endpoints {
+              s3 = "<ДОМЕН>"
+          }
+      }
+      ```
 
-        Здесь:
+      Здесь:
 
-        - `<РЕГИОН>` — регион размещения сервиса VK Object Storage. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+      - `<РЕГИОН>` — регион размещения сервиса {var(s3)}. Настройка должна соответствовать {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-            - `ru-msk` — регион Москва;
-            - `kz-ast` — регион Казахстан.
-        - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — [идентификатор ключа и секретный ключ](/ru/storage/s3/instructions/access-management/access-keys) доступа к объектному хранилищу.
-        - `<ДОМЕН>` — URL для доступа к хранилищу, который зависит от региона аккаунта. Возможные значения:
+        - `ru-msk` — регион Москва;
+        - `kz-ast` — регион Казахстан.
 
-            - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-            - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+      - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — {linkto(../../../../storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys)[text=идентификатор ключа и секретный ключ]} доступа к объектному хранилищу.
+      - `<ДОМЕН>` — URL для доступа к хранилищу, который зависит от региона аккаунта. Возможные значения:
+
+        - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 1. Выполните команду для инициализации Terraform:
 
-    ```console
-    terraform init
-    ```
+   ```console
+   terraform init
+   ```
 
-    Будут созданы дополнительные файлы, необходимые для работы Terraform.
+   Будут созданы дополнительные файлы, необходимые для работы Terraform.
 
-## 1. Создайте файл с описанием бакета и объектов в нем
+## {heading(1. Создайте файл с описанием бакета и объектов в нем)[id=terraform-aws-file]}
 
 В примере ниже создается бакет `example-bucket`, в который будут добавлены объекты `object-one` и `object-two`.
 
@@ -106,7 +109,7 @@ resource "aws_s3_object" "object-two" {
     - содержит от 4 до 63 символов;
     - начинается и заканчивается буквой или цифрой;
     - состоит только из латинских букв нижнего регистра (строчных), цифр и символов: `.`, `-`;
-    - уникально в рамках всей платформы VK Cloud во всех регионах.
+    - уникально в рамках всей платформы {var(cloud)} во всех регионах.
 
     Имя бакета содержится в URL-адресах находящихся в нем объектов, поэтому не используйте в имени конфиденциальную информацию.
 
@@ -124,13 +127,13 @@ resource "aws_s3_object" "object-two" {
 - (Опционально) `force_destroy` — параметр разрешает удаление бакета, даже если в нем будут объекты. Доступные значения `true` и `false`. По умолчанию — `false`.
 - `key`— ключ объекта. Имя объекта, когда он будет загружен в бакет.
 - `source` — путь на вашем устройстве до файла, который нужно загрузить в бакет.
-- `acl` — [настройки ACL](/ru/storage/s3/concepts/access/s3-acl#standard_acl) для объекта. Доступные значения: `private`, `public-read`, `auth-read`.
+- `acl` — {linkto(../../../../storage/s3/concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=настройки ACL]} для объекта. Доступные значения: `private`, `public-read`, `auth-read`.
 - `etag` — идентификатор версии объекта. Устанавливается с помощью `filemd5("path/to/source")`. Используйте этот параметр только для объектов меньше 16 МБ. Для объектов больше 16 МБ используйте `source_hash`, потому что они будут загружаться методом составной загрузки (multipart).
 - `source_hash` — идентификатор версии объекта. Параметр аналогичен `etag`, но без ограничений по размеру объекта. Устанавливается с помощью `filemd5("path/to/source")`.
 
-## 2. Настройте автоматическую очистку бакета
+## {heading(2. Настройте автоматическую очистку бакета)[id=terraform-aws-clean]}
 
-В примере ниже будет добавлено [правило автоматического удаления](/ru/storage/s3/instructions/manage-lifecycle) (lifecycle) объектов с префиксом `tmp` из бакета через один день.
+В примере ниже будет добавлено {linkto(../../../../storage/s3/instructions/manage-lifecycle#s3-instructions-manage-lifecycle)[text=правило автоматического удаления]} (lifecycle) объектов с префиксом `tmp` из бакета через один день.
 
 Добавьте следующее содержимое в файл `main.tf`:
 
@@ -160,14 +163,12 @@ resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
   - `"Enabled"` — правило действует;
   - `"Disabled"` — правило не действует.
 
-## 3. Предоставьте права доступа к бакету другим пользователям или проектам
+## {heading(3. Предоставьте права доступа к бакету другим пользователям или проектам)[id=terraform-aws-acl]}
 
 В примере ниже будут предоставлены права на чтение ACL бакета по ID пользователя и ID проекта.
 
 {note:info}
-
-Невозможно указать ACL для отдельного [аккаунта](/ru/storage/s3/instructions/access-management/access-keys) VK Object Storage из другого проекта.
-
+Невозможно указать ACL для отдельного {linkto(../../../../storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys)[text=аккаунта]} {var(s3)} из другого проекта.
 {/note}
 
 Добавьте следующее содержимое в файл `main.tf`:
@@ -216,13 +217,13 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 Здесь:
 
 - `data "aws_canonical_user_id" "current" {}` — источник данных получает канонический идентификатор (Canonical User ID) текущего пользователя.
-- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. [Как узнать канонический идентификатор пользователя](/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#user_id).
-- `email_address = "mcs1234567890"` — PID (идентификатор проекта), которому выдаются права доступа к бакету. [Как узнать PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
-- `permission` — [тип прав доступа](/ru/storage/s3/concepts/access/s3-acl#permissons). Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. Чтобы узнать канонический идентификатор пользователя, {linkto(../../../../storage/s3/instructions/access-management/acl#s3-instructions-acl)[text=получите ACL]} бакета или объекта, к которому пользователь уже имеет права доступа.
+- `email_address = "mcs1234567890"` — PID (идентификатор проекта), которому выдаются права доступа к бакету. {linkto(../../../account/instructions/project-settings/manage#project-pid-view)[text=Как узнать PID]}.
+- `permission` — {linkto(../../../../storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissons)[text=тип прав доступа]}. Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
-## 4. Настройте правила CORS для бакета
+## {heading(4. Настройте правила CORS для бакета)[id=terraform-aws-cors]}
 
-В примере ниже будут настроены правила [CORS](/ru/storage/s3/concepts/access/s3-cors).
+В примере ниже будут настроены правила {linkto(../../../../storage/s3/concepts/access/s3-cors#s3-concepts-cors)[text=CORS]}.
 
 Добавьте следующее содержимое в файл `main.tf`:
 
@@ -253,7 +254,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 - (Опционально) `expose_headers` — список заголовков в ответе, к которому пользователи смогут получить доступ из своих приложений. Указывается в нижнем регистре.
 - (Опционально) `max_age_seconds` — время в секундах, в течение которого ваш браузер кеширует ответ для указанного URL.
 
-## 5. Создайте необходимые ресурсы с помощью Terraform
+## {heading(5. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-aws-resource]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
 
@@ -277,11 +278,11 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 1. Дождитесь завершения операции.
 
-## 6. Проверьте применение конфигурации
+## {heading(6. Проверьте применение конфигурации)[id=terraform-aws-check]}
 
 Убедитесь, что бакет и объекты были успешно созданы, конфигурация настроена:
 
-1. [Подключитесь](/ru/storage/s3/connect/s3-cli) к VK Object Storage через AWS CLI.
+1. [Подключитесь](/ru/storage/s3/connect/s3-cli) к {var(s3)} через AWS CLI.
 1. Проверьте, что бакет и объекты созданы. Выполните команду:
 
    ```console
@@ -290,11 +291,11 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
    Здесь:
 
-     - `example-bucket` — имя бакета, который был создан через Terraform.
-     - `endpoint-url` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   - `example-bucket` — имя бакета, который был создан через Terraform.
+   - `endpoint-url` — домен сервиса {var(s3)}, должен соответствовать {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-       - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+     - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    В ответе вернется созданный бакет и список добавленных в него объектов.
 
@@ -322,7 +323,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
     --bucket example-bucket
    ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-aws-delete]}
 
 Если созданные с помощью Terraform ресурсы вам больше не нужны, удалите их:
 

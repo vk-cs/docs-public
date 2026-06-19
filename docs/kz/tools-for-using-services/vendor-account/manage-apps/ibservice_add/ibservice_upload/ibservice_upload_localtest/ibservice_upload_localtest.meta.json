@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Terraform манифесін жергілікті тестілеу",
   "sectionTitle": "Terraform манифесін жергілікті тестілеу",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

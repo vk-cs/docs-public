@@ -1,0 +1,14 @@
+{
+  "title": "Қызмет данасын жасау",
+  "shortDescription": "Қажетті конфигурациядағы Redis данасын қалай жасауға болады",
+  "metaDescription": "VK Data Platform-та қажетті конфигурациядағы Redis сервисінің данасын қалай жасауға болады",
+  "sectionTitle": "Қызмет данасын жасау",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

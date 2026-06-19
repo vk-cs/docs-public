@@ -5,5 +5,12 @@
   "sectionTitle": "Доступ к бакетам и объектам",
   "icon": "",
   "weight": 5,
-  "uuid": "59de41cb-3949-4ac1-b40e-129e90e32492"
+  "uuid": "59de41cb-3949-4ac1-b40e-129e90e32492",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

@@ -1,0 +1,16 @@
+{
+  "title": "Перенос image-based приложения в архив",
+  "shortDescription": "",
+  "metaDescription": "Перенос image-based приложения в архив",
+  "sectionTitle": "Перенос image-based приложения в архив",
+  "weight": 5,
+  "uuid": "",
+  "additionalUuids": [
+    "8e4826bf-2b38-407c-ae63-782c8ed4e78e"
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

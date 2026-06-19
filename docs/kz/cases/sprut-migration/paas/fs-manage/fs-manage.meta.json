@@ -4,5 +4,20 @@
   "metaDescription": "Файлдық қоймаларды SDN Sprut-қа қалай көшіруге болады",
   "sectionTitle": "Файлдық қоймалардың көші-қоны",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "9b117d40-44af-4923-b1b0-884a1d15cb08",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

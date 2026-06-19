@@ -3,5 +3,10 @@
   "shortDescription": "SaaS-қосымшасын қосу шеберіндегі беттерді көрсету параметрлері",
   "metaDescription": "SaaS-қосымшасы конфигурациясының JSON-файлындағы display секциясы: Marketplace-те SaaS-қосымшасын қосу шеберіндегі беттерді көрсету параметрлері.",
   "sectionTitle": "Display секциясы",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

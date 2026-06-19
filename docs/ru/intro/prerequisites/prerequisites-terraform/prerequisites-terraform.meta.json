@@ -1,0 +1,15 @@
+{
+  "title": "Установка и инициализация Terraform",
+  "shortDescription": "Как установить Terraform c помощью конфигурационного файла",
+  "metaDescription": "Как установить Terraform-провайдер VK Cloud c помощью конфигурационного файла. Начало работы с Terraform: установка и инициализация.",
+  "sectionTitle": "Установка и инициализация Terraform",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

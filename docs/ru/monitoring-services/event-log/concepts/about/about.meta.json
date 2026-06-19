@@ -1,9 +1,18 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Информация о сервисе и его возможностях",
-      "metaDescription": "Сервис Cloud Audit предназначен для интеграции вашей системы управления информационной безопасностью и событиями безопасности (SIEM) с платформой VK Cloud",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "uuid": "100b041f-6db3-466b-8618-9d7068141b2d"
+  "title": "О сервисе",
+  "shortDescription": "Информация о сервисе и его возможностях",
+  "metaDescription": "Сервис Cloud Audit предназначен для интеграции вашей системы управления информационной безопасностью и событиями безопасности (SIEM) с платформой VK Cloud",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "100b041f-6db3-466b-8618-9d7068141b2d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

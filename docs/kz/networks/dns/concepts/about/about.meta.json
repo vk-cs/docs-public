@@ -1,8 +1,13 @@
 {
   "title": "Қызмет туралы",
-  "shortDescription": "DNS сервисінің VK Cloud ішіндегі негізгі мүмкіндіктері",
+  "shortDescription": "DNS сервисінің {var(cloud)} ішіндегі негізгі мүмкіндіктері",
   "metaDescription": "VK Cloud ішіндегі DNS сервисінің негізгі мүмкіндіктері",
   "sectionTitle": "Қызмет туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

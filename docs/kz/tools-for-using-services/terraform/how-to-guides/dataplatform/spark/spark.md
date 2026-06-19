@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Мақалада VK Data Platform платформасында Terraform көмегімен Spark кластерін жасау мысалы келтірілген.
+Мақалада {var(data-p)} платформасында Terraform көмегімен Spark кластерін жасау мысалы келтірілген.
 
 Кластерді жасау кезінде мыналар пайдаланылады:
 
@@ -23,7 +23,7 @@
 
 1. Егер әлі орындалмаса, [Terraform-ды орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
-1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start#terraform_dy_zhanartu).
+1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
 
 ## {heading(1. Кластер сипаттамасы бар файлды жасаңыз)[id=cluster_config]}
 
@@ -133,11 +133,11 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
     - `network_id = vkcs_networking_network.default.id`: кластер `vkcs_networking_network` ресурсы жасайтын жаңа желіде орналастырылады. Ресурс төменде жасалады.
     - `network_id = data.vkcs_networking_network.default.id`: кластер бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде жасалады.
-    - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. Оның идентификаторы VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған түрде көрсетіледі.
+    - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған түрде көрсетіледі.
 
   {/cut}
 
-- `product_name` — VK Data Platform платформасындағы Spark сервисінің атауы.
+- `product_name` — {var(data-p)} платформасындағы Spark сервисінің атауы.
 
   {cut(Мысалдар)}
 
@@ -146,14 +146,14 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
   {/cut}
 
-- `product_version` — VK Data Platform платформасындағы Spark сервисінің нұсқасы.
+- `product_version` — {var(data-p)} платформасындағы Spark сервисінің нұсқасы.
 
-   {cut(Мысалдар)}
+  {cut(Мысалдар)}
 
     - `product_version = "3.5.1"`: сервис нұсқасы тікелей кластер конфигурациясында көрсетіледі.
     - `product_version = data.vkcs_dataplatform_product.spark.product_version`: сервис нұсқасы басқа конфигурациялық файлда көрсетіледі, ол `vkcs_dataplatform_product` деректер көзінен алынады. Деректер көзі төменде [жасалады](#product).
 
-   {/cut}
+  {/cut}
 
 - `availability_zone` — кластер жасалатын [қолжетімділік аймағы](/kz/start/concepts/architecture#az).
 
@@ -163,16 +163,16 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
     - `maintenance` — Cron пішіміндегі техникалық қызмет көрсету басталатын уақыт.
 
-    - `warehouses` — [деректер көздеріне](https://cloud.vk.com/docs/ru/data-platform/spark/concepts/parameters#parameters_data_sources) қосылымдар.
+    - `warehouses` — [деректер көздеріне](https://cloud.vk.com/docs/kz/data-platform/spark/concepts/parameters#parameters_data_sources) қосылымдар.
 
 - `pod_groups` — кластердің есептеу ресурстары топтары:
 
     - `sparkconnect` — деректерді интерактивті өңдеуге арналған ресурстар.
     - `sparkhistory` — Spark тапсырмаларының тарихын сақтауға арналған ресурстар.
 
-## {heading(2. (Опционалды) VK Data Platform платформасындағы Spark сервисін деректер көзі арқылы анықтаңыз)[id=product]}
+## {heading(2. (Опционалды) {var(data-p)} платформасындағы Spark сервисін деректер көзі арқылы анықтаңыз)[id=product]}
 
-VK Data Platform платформасындағы Spark сервисін сипаттау үшін Terraform конфигурациясының `product.tf` файлын жасаңыз:
+{var(data-p)} платформасындағы Spark сервисін сипаттау үшін Terraform конфигурациясының `product.tf` файлын жасаңыз:
 
 ```hcl
 data "vkcs_dataplatform_product" "spark" {
@@ -287,7 +287,7 @@ resource "vkcs_db_user" "postgres_user" {
 
 Spark кластерінің сәтті жасалғанына көз жеткізіңіз:
 
-1. VK Cloud [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз. Spark кластерінің жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=cleanup]}

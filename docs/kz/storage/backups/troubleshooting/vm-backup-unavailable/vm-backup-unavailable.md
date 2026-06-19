@@ -1,3 +1,5 @@
+# {heading(ВМ сақтық көшірмесін жасау жұмыс істемейді)[id=backup-vm-backup-unavailable]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ВМ сақтық көшірмесін жасау мүмкін емес:
@@ -7,7 +9,7 @@
 
 Мәселе сақтық көшірмелеуге қажет метадеректер ВМ-де болмаған жағдайда туындауы мүмкін. Мысал: ВМ жүктелген образдан жасалған немесе Hystax көмегімен миграцияланған.
 
-### Шешім
+### {heading(Шешім)[id=backup-vm-backup-unavailable-solution]}
 
 {tabs}
 
@@ -23,23 +25,23 @@
 1. ВМ-ге QEMU guest agent орнатыңыз (`qemu-guest-agent` пакеті):
 
    {tabs}
-   
+
    {tab(Ubuntu, Debian)}
-         
+
    ```console
    apt-get install qemu-guest-agent
    ```
-   
+
    {/tab}
-   
+
    {tab(CentOS)}
-      
+
    ```console
    yum install qemu-guest-agent
    ```
-   
+
    {/tab}
-   
+
    {/tabs}
 
 1. ВМ сақтық көшірмелеуінің жұмыс істейтінін тексеріңіз. Егер мәселе сақталса, [техникалық қолдауға](/kz/contacts) хабарласыңыз.
@@ -72,21 +74,21 @@
 1. ВМ-ге QEMU guest agent орнатыңыз (`qemu-guest-agent` пакеті):
 
    {tabs}
-   
+
    {tab(Ubuntu, Debian)}
-         
+
    ```console
    apt-get install qemu-guest-agent
    ```
    {/tab}
-   
+
    {tab(CentOS)}
-      
+
    ```console
    yum install qemu-guest-agent
    ```
    {/tab}
-   
+
    {/tabs}
 
 1. ВМ сақтық көшірмелеуінің жұмыс істейтінін тексеріңіз. Егер мәселе сақталса, [техникалық қолдауға](/kz/contacts) хабарласыңыз.

@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Networks сервисінде VPN-туннельдерін қалай басқаруға болады. VPN-туннельдерін жеке кабинетте немесе OpenStack CLI көмегімен қосу, жою, өңдеу және қайта іске қосу",
   "sectionTitle": "VPN-туннельдері",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

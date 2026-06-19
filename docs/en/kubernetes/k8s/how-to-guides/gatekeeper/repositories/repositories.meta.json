@@ -1,9 +1,23 @@
 {
-    "title": "Configuring allowed repositories",
-      "shortDescription": "How to create a Gatekeeper constraint that checks that images are downloaded only from allowed repositories",
-      "metaDescription": "",
-    "sectionTitle": "Configuring allowed repositories",
-    "icon": "",
-    "weight": 2,
-    "uuid": "9aad2849-1640-4016-9dcb-d588c5d27e90"
+  "title": "Configuring allowed repositories",
+  "shortDescription": "How to create a Gatekeeper constraint that checks that images are downloaded only from allowed repositories",
+  "metaDescription": "",
+  "sectionTitle": "Configuring allowed repositories",
+  "icon": "",
+  "weight": 2,
+  "uuid": "9aad2849-1640-4016-9dcb-d588c5d27e90",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

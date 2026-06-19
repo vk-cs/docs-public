@@ -3,5 +3,14 @@
   "sectionTitle": "Мониторинг сервистері",
   "metaDescription": "VK Cloud мониторинг сервистері",
   "weight": 10,
-  "icon": ""
+  "icon": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

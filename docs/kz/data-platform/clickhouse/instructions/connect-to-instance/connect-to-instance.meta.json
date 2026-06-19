@@ -4,5 +4,12 @@
   "metaDescription": "VK Data Platform жүйесіндегі басқарылатын ClickHouse дерекқор данасының қолжетімділігін тексеру және оған қосылу нұсқаулығы, пәрмендер мысалдарымен",
   "sectionTitle": "Сервис данасына қосылу",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

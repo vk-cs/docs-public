@@ -1,9 +1,14 @@
 {
-    "title": "Способы оплаты",
-      "shortDescription": "Доступные способы оплаты в зависимости от региона",
-      "metaDescription": "VK Cloud: доступные способы оплаты в зависимости от региона",
-    "sectionTitle": "Способы оплаты",
-    "icon": "",
-    "weight": 3,
-    "uuid": "bb424e88-9392-41b1-ade7-defbfe252d9e"
+  "title": "Способы оплаты",
+  "shortDescription": "Доступные способы оплаты в зависимости от региона",
+  "metaDescription": "VK Cloud: доступные способы оплаты в зависимости от региона",
+  "sectionTitle": "Способы оплаты",
+  "icon": "",
+  "weight": 3,
+  "uuid": "bb424e88-9392-41b1-ade7-defbfe252d9e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

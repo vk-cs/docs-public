@@ -4,5 +4,12 @@
   "metaDescription": "Cloud Flink: жобадағы сервис данасының компоненттерін басқару",
   "sectionTitle": "Сервис данасымен жұмыс",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

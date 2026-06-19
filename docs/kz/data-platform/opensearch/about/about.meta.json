@@ -1,0 +1,14 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "OpenSearch сервисі туралы ақпарат",
+  "metaDescription": "VK Data Platform жүйесіндегі OpenSearch: сервис туралы ақпарат",
+  "sectionTitle": "Сервис туралы",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

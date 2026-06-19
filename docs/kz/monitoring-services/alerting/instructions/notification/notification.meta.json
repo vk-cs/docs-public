@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Alerting жүйесінде хабарландыруларды қалай баптауға болады. VK Cloud-та оқиғалар туралы уақтылы хабарлау үшін хабарландыру арналарын құру және өңдеу бойынша қадамдық нұсқаулық",
   "sectionTitle": "Хабарландыру арналары",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

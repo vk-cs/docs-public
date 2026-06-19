@@ -1,9 +1,14 @@
 {
-    "title": "Ограничения",
-      "shortDescription": "Важные ограничения",
-      "metaDescription": "Сервис в целом В настоящий момент сервис",
-    "sectionTitle": "Ограничения",
-    "icon": "",
-    "weight": 4,
-    "uuid": "1c45f062-3e56-459b-a44f-baab69905080"
+  "title": "Ограничения",
+  "shortDescription": "Важные ограничения",
+  "metaDescription": "Сервис в целом В настоящий момент сервис",
+  "sectionTitle": "Ограничения",
+  "icon": "",
+  "weight": 4,
+  "uuid": "1c45f062-3e56-459b-a44f-baab69905080",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

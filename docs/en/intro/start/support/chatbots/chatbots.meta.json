@@ -5,5 +5,10 @@
   "sectionTitle": "Chatbots",
   "icon": "",
   "weight": 2,
-  "uuid": "7b86cfc7-3b70-4bd7-8b35-ed35351218d1"
+  "uuid": "7b86cfc7-3b70-4bd7-8b35-ed35351218d1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

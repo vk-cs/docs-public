@@ -5,5 +5,10 @@
   "sectionTitle": "Проблема с подключением к ВМ по RDP",
   "icon": "",
   "weight": 8,
-  "uuid": "3bb50477-a6df-4881-ac3e-d14fa1e5803c"
+  "uuid": "3bb50477-a6df-4881-ac3e-d14fa1e5803c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,49 +1,51 @@
+# {heading(Настройки проекта)[id=vk-cloud-account-project-manage]}
+
 {note:info}
 
-Дополнительные настройки проекта доступны в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/instructions/project-settings/manage).
+Дополнительные настройки проекта доступны в {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text=личном кабинете {var(cloud)}]}.
 
 {/note}
 
-## Получение идентификатора проекта
+## {heading(Получение идентификатора проекта)[id=vk-cloud-account-project-pid]}
 
-{include(/ru/_includes/_project_pid_common.md)}
+{include(../../../../../_includes/_project_pid_common.md)}
 
 Чтобы получить идентификатор проекта:
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-{include(/ru/_includes/_project_pid_tab_account.md)}
+{include(../../../../../_includes/_project_pid_tab_account.md)}
 
 {/tab}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_project_pid_tab_lk.md)}
+{include(../../../../../_includes/_project_pid_tab_lk.md)}
 
 {/tab}
 
 {/tabs}
 
-## Изменение имени проекта
+## {heading(Изменение имени проекта)[id=vk-cloud-account-project-name]}
 
 Имя проекта можно изменить на любом этапе жизни проекта.
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-{include(/ru/_includes/_project_rename_tab_account.md)}
+{include(../../../../../_includes/_project_rename_tab_account.md)}
 
 {/tab}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_project_rename_tab_lk.md)}
+{include(../../../../../_includes/_project_rename_tab_lk.md)}
 
 {/tab}
 
 {/tabs}
 
-{include(/ru/_includes/_project_rename_common.md)}
+{include(../../../../../_includes/_project_rename_common.md)}

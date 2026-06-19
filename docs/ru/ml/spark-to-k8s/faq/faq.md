@@ -1,3 +1,4 @@
+# {heading(Вопросы и ответы)[id=mlspark-faq]}
 
 {cut(Какая конфигурация используется для master-узла?)}
 
@@ -10,7 +11,7 @@
 
 {cut(Можно ли подключиться к кластеру с помощью kubectl или библиотеки?)}
 
-Чтобы подключиться к кластеру, используйте токены доступа в личном кабинете VK Cloud или библиотеке Cloud ML Platform. Процесс создания токенов подробно описан в разделе [Аутентификация и авторизация](/ru/ml/spark-to-k8s/ml-platform-library/authz).
+Чтобы подключиться к кластеру, используйте токены доступа в личном кабинете {var(cloud)} или библиотеке Cloud ML Platform. Процесс создания токенов подробно описан в разделе {linkto(../ml-platform-library/authz#mlspark-library-authz)[text=Аутентификация и авторизация]}.
 
 {note:err}
 
@@ -24,13 +25,13 @@
 
 {cut(Как получить доступ к Spark History Server?)}
 
-Воспользуйтесь [инструкцией](/ru/ml/spark-to-k8s/monitoring#ispolzovanie_spark_history_server).
+Воспользуйтесь {linkto(../monitoring#mlspark-monitoring-spark-history-server)[text=инструкцией]}.
 
 {/cut}
 
 {cut(Как получить доступ к бакету?)}
 
-По умолчанию у кластера Spark есть доступ к бакету [VK Object Storage](/ru/storage/s3), который автоматически создается вместе с кластером. Чтобы получить доступ к другим бакетам, воспользуйтесь [инструкцией](/ru/ml/spark-to-k8s/instructions/buckets).
+По умолчанию у кластера Spark есть доступ к бакету [VK Object Storage](/ru/storage/s3), который автоматически создается вместе с кластером. Чтобы получить доступ к другим бакетам, воспользуйтесь {linkto(../instructions/buckets#mlspark-instructions-buckets)[text=инструкцией]}.
 
 {/cut}
 
@@ -39,9 +40,9 @@
 Кластеры Spark по умолчанию подключены к сервисам:
 
 - [Cloud Logging](/ru/monitoring-services/logging) — сбор и анализ логов.
-- [Cloud Alerting](/ru/monitoring-services/alerting) — отправка уведомлений об изменении ключевых метрик сервисов VK Cloud.
+- [Cloud Alerting](/ru/monitoring-services/alerting) — отправка уведомлений об изменении ключевых метрик сервисов {var(cloud)}.
 - [Cloud Monitoring](/ru/monitoring-services/monitoring) — отслеживание состояния ресурсов с использованием широкого набора метрик.
 
-Подробнее — в статье [Мониторинг кластера](/ru/ml/spark-to-k8s/monitoring).
+Подробнее — в статье {linkto(../monitoring#mlspark-monitoring)[text=Мониторинг кластера]}.
 
 {/cut}

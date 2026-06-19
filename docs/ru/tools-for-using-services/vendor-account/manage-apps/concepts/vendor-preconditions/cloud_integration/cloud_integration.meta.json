@@ -3,6 +3,11 @@
   "shortDescription": "",
   "metaDescription": "Функционирование сервиса в облачной платформе",
   "sectionTitle": "Функционирование сервиса в облачной платформе",
-  "weight": 5,
-  "uuid": "b45e2901-e587-4973-89a2-dc64cf1a6f67"
+  "weight": 6,
+  "uuid": "b45e2901-e587-4973-89a2-dc64cf1a6f67",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

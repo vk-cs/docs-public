@@ -4,5 +4,15 @@
   "metaDescription": "Cloud Containers: Kubernetes кластерлерін қолдану арқылы ең танымал пайдалану сценарийлері, Ingress және Gatekeeper пайдалану, тұрақты томдармен жұмыс, жүктеме теңгергіштерін пайдалану, жергілікті DNS-кэшті баптау, Velero көмегімен резервтік көшіру",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

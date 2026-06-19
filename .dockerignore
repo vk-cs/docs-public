@@ -2,7 +2,7 @@
 /LICENSE
 /CONTRIBUTING.md
 /devops/
-/configs/devops/
+/config/devops/
 Dockerfile
 .dockerignore
 docker-compose.yml

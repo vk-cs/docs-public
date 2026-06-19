@@ -1,4 +1,6 @@
-События, которые [сервис виртуальных сетей](/ru/networks/vnet) передает в Cloud Audit:
+# {heading(События компонентов Neutron и Sprut)[id=event-log-network]}
+
+События, которые {linkto(../../../../../networks/vnet#vnet)[text=сервис виртуальных сетей]} передает в Cloud Audit:
 
 [cols="2,3", options="header"]
 |===
@@ -198,7 +200,7 @@
 |Создано ограничение пропускной способности
 
 |`create-floating-ip`
-|Создан [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)
+|Создан {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}
 
 |`update-floating-ip`
 |Обновлен Floating IP-адрес
@@ -373,7 +375,7 @@
 
 <!-- direct_connect actions -->
 |`create-dc-router`
-|Создан [продвинутый маршрутизатор](/ru/networks/vnet/concepts/router#advanced)
+|Создан {linkto(../../../../../networks/vnet/concepts/router#vnet-router-advanced)[text=продвинутый маршрутизатор]}
 
 |`update-dc-router`
 |Обновлен продвинутый маршрутизатор
@@ -391,7 +393,7 @@
 |Удален интерфейс продвинутого маршрутизатора
 
 |`create-dc-bgp`
-|Создан [BGP-ресурс](/ru/networks/vnet/instructions/advanced-router/manage-bgp#dobavlenie_bgp_marshrutizatora) на продвинутом маршрутизаторе
+|Создан {linkto(../../../../../networks/vnet/instructions/advanced-router/manage-bgp#vnet-manage-bgp-add)[text=BGP-ресурс]} на продвинутом маршрутизаторе
 
 |`update-dc-bgp`
 |Обновлен BGP-ресурс на продвинутом маршрутизаторе
@@ -400,7 +402,7 @@
 |Удален BGP-ресурс на продвинутом маршрутизаторе
 
 |`create-dc-static-route`
-|Создан статический маршрут через [сеть Direct Connect](/ru/networks/directconnect)
+|Создан статический маршрут через {linkto(../../../../../networks/directconnect#directconnect)[text=сеть Direct Connect]}
 
 |`update-dc-static-route`
 |Обновлен статический маршрут через сеть Direct Connect
@@ -473,7 +475,7 @@
 
 <!--  anycastips-->
 |`create-anycastips`
-|Создан [Anycast IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#anycast-ip)
+|Создан {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-anycast-ip)[text=Anycast IP-адрес]}
 
 |`update-anycastips`
 |Обновлен Anycast IP-адрес

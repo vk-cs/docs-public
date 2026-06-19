@@ -5,5 +5,10 @@
   "sectionTitle": "Partners",
   "icon": "",
   "weight": 5,
-  "uuid": "952f96ac-f2ec-4bbd-bfba-643832bb0d2b"
+  "uuid": "952f96ac-f2ec-4bbd-bfba-643832bb0d2b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

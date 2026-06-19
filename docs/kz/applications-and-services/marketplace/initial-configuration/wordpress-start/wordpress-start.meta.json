@@ -4,5 +4,19 @@
   "metaDescription": "Веб-сайт контентін басқаруға арналған WordPress жүйесін қосу және баптау",
   "sectionTitle": "WordPress сервисін орнату және баптау",
   "icon": "",
-  "weight": 15
+  "weight": 15,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

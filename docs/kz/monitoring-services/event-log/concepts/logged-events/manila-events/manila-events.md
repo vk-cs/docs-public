@@ -1,6 +1,8 @@
+# {heading(Manila компонентінің оқиғалары)[id=event-log-manila]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/iaas/concepts/data-storage/file-share) жіберетін оқиғалар:
+Cloud Audit-ке {linkto(../../../../../computing/iaas/concepts/data-storage/file-share#iaas-file-share)[text=файлдық қоймалар сервисі]} жіберетін оқиғалар:
 
 [cols="1,4", options="header"]
 |===
@@ -12,7 +14,7 @@ Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/
 |POST
 |`/v2/shares/`
 
-[Жасалған](/kz/computing/iaas/instructions/fs-manage/fs-create) файлдық қойма
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-create#iaas-fs-create)[text=Жасалған]} файлдық қойма
 
 |POST
 |`/v2/shares/manage`
@@ -27,7 +29,7 @@ Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/
 |DELETE
 |`/v2/shares/{share_id}`
 
-[Жойылған](/kz/computing/iaas/instructions/fs-manage/fs-operations#deleting_a_file_storage_and_its_network) файлдық қойма
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations-delete)[text=Жойылған]} файлдық қойма
 
 2+^|[Файлдық қоймалардың метадеректерімен операциялар](https://docs.openstack.org/api-ref/shared-file-system/index.html#delete-share-metadata-item)
 
@@ -52,16 +54,16 @@ Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/
 |POST
 |`/v2/shares/{share_id}/action`
 
-* [Берілген](/kz/computing/iaas/instructions/fs-manage/fs-access-rules#adding_an_access_rule) файлдық қоймаға қолжетімділік.
-* [Қайтарып алынған](/kz/computing/iaas/instructions/fs-manage/fs-access-rules#deleting_an_access_rule) файлдық қоймаға қолжетімділік.
-* [Өлшемі өзгертілген](/kz/computing/iaas/instructions/fs-manage/fs-operations#increasing_file_storage_size) файлдық қойма
+* {linkto(../../../../../computing/iaas/instructions/fs-manage/fs-access-rules#iaas-fs-access-rules-adding)[text=Берілген]} файлдық қоймаға қолжетімділік.
+* {linkto(../../../../../computing/iaas/instructions/fs-manage/fs-access-rules#iaas-fs-access-rules-deleting)[text=Қайтарып алынған]} файлдық қоймаға қолжетімділік.
+* {linkto(../../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations-size)[text=Өлшемі өзгертілген]} файлдық қойма
 
 2+^|[Файлдық қойма снапшоттарымен операциялар](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-snapshots)
 
 |POST
 |`/v2/snapshots`
 
-[Жасалған](/kz/computing/iaas/instructions/fs-manage/fs-snapshots#creating_a_snapshot) файлдық қойма снапшоты
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-snapshots#iaas-fs-snapshots-creating)[text=Жасалған]} файлдық қойма снапшоты
 
 |POST
 |`/v2/snapshots/manage`
@@ -81,7 +83,7 @@ Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/
 |DELETE
 |`/v2/snapshots/{snapshot_id}`
 
-[Жойылған](/kz/computing/iaas/instructions/fs-manage/fs-snapshots#deleting_a_snapshot) файлдық қойма снапшоты
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-snapshots#iaas-fs-snapshots-deleting)[text=Жойылған]} файлдық қойма снапшоты
 
 2+^|[Файлдық қойма снапшоттарының метадеректерімен операциялар](https://docs.openstack.org/api-ref/shared-file-system/index.html#snapshot-metadata-since-api-v2-73)
 
@@ -106,7 +108,7 @@ Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/
 |POST
 |`/v2/share-networks`
 
-[Жасалған](/kz/computing/iaas/instructions/fs-manage/fs-create) файлдық қойма желісі
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-create#iaas-fs-create)[text=Жасалған]} файлдық қойма желісі
 
 |POST
 |`/v2/share-networks/{share_network_id}/action`
@@ -124,7 +126,7 @@ Cloud Audit-ке [файлдық қоймалар сервисі](/kz/computing/
 |DELETE
 |`/v2/share-networks/{share_network_id}`
 
-[Жойылған](/kz/computing/iaas/instructions/fs-manage/fs-operations#deleting_a_file_storage_and_its_network) файлдық қойма желісі
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations-delete)[text=Жойылған]} файлдық қойма желісі
 
 2+^|[Файлдық қойма желілеріндегі ішкі желілерді басқару](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-network-subnets-since-api-v2-51)
 

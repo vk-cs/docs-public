@@ -1,4 +1,4 @@
-# {heading(ivkcs_s3 ресурсы)[id=ivkcs_s3]}
+# {heading(Ресурс ivkcs_s3)[id=ivkcs_s3]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -16,7 +16,7 @@
 |
 `name`
 |
-VK Object Storage бакетінің бірегей атауы.
+{var(s3)} бакетінің бірегей атауы.
 
 {note:info}
 

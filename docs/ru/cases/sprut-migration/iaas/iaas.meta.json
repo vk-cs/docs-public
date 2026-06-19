@@ -5,5 +5,19 @@
   "sectionTitle": "Миграция сетевой инфраструктуры",
   "icon": "",
   "weight": 3,
-  "uuid": "3c6a9fb4-8768-48df-ad9b-09388930e44d"
+  "uuid": "3c6a9fb4-8768-48df-ad9b-09388930e44d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

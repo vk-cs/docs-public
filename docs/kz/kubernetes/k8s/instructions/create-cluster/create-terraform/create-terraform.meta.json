@@ -3,5 +3,15 @@
   "metaDescription": "VK Cloud-та Terraform көмегімен Kubernetes кластерін құру бойынша қадамдық нұсқаулық: дайындық, конфигурацияны сипаттау, Kubernetes нұсқасын таңдау, master-түйіндерді, worker-түйіндер тобын баптау, балансировщиктермен және аддондармен жұмыс",
   "sectionTitle": "Terraform көмегімен бірінші буындағы кластерді құру",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

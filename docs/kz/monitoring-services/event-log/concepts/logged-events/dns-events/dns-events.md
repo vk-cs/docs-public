@@ -1,3 +1,5 @@
+# {heading(Public DNS оқиғалары)[id=event-log-dns]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Public DNS Cloud Audit-ке жіберетін оқиғалар:

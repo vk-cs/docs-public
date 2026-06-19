@@ -1,4 +1,4 @@
-Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) в секции `plans`.
+Параметры, приведенные в таблице, указываются в [JSON-файле конфигурации сервиса](../../../instructions/manage-saas-apps/saas-add#service_config) в секции `plans`.
 
 [cols="2,4,2,1,2", options="header"]
 |===

@@ -1,9 +1,11 @@
+# {heading(telegraf және оның плагиндерін басқару)[id=monitoring-telegraf-manage]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Агент күйін қарау
+## {heading(Агент күйін қарау)[id=monitoring-telegraf-status]}
 
-1. [telegraf мониторинг агенті орнатылғанына көз жеткізіңіз](../mon-setup-current).
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {linkto(../mon-setup-current#monitoring-mon-setup-current)[text=telegraf мониторинг агенті орнатылғанына көз жеткізіңіз]}.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 1. Команданы орындаңыз:
 
    {tabs}
@@ -18,10 +20,10 @@
 
    {/tabs}
 
-## Агентті қосу немесе өшіру
+## {heading(Агентті қосу немесе өшіру)[id=monitoring-telegraf-on-off]}
 
-1. [telegraf мониторинг агенті орнатылғанына көз жеткізіңіз](../mon-setup-current).
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {linkto(../mon-setup-current#monitoring-mon-setup-current)[text=telegraf мониторинг агенті орнатылғанына көз жеткізіңіз]}.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 
 - Агентті қосу үшін команданы орындаңыз:
 
@@ -51,10 +53,10 @@
 
   {/tabs}
 
-## Метрикаларды қосу немесе өшіру
+## {heading(Метрикаларды қосу немесе өшіру)[id=monitoring-telegraf-metrics]}
 
-1. [telegraf мониторинг агенті орнатылғанына көз жеткізіңіз](../mon-setup-current).
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {linkto(../mon-setup-current#monitoring-mon-setup-current)[text=telegraf мониторинг агенті орнатылғанына көз жеткізіңіз]}.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 1. `/etc/telegraf/telegraf.conf` файлын тауып, оған өзгерістер енгізіңіз: мониторинг параметрлерін қосыңыз немесе жойыңыз.
 
    Linux-та CPU мониторингіне арналған мысал:
@@ -82,10 +84,10 @@
 
    {/tabs}
 
-## Қосымша метрикаларды баптау үшін плагинді қосу немесе өшіру
+## {heading(Қосымша метрикаларды баптау үшін плагинді қосу немесе өшіру)[id=monitoring-telegraf-plugin]}
 
-1. [telegraf мониторинг агенті орнатылғанына көз жеткізіңіз](../mon-setup-current).
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {linkto(../mon-setup-current#monitoring-mon-setup-current)[text=telegraf мониторинг агенті орнатылғанына көз жеткізіңіз]}.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 1. `/etc/telegraf/telegraf.conf` файлын тауып, оған өзгерістер енгізіңіз: [қажетті плагинді](https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#input-plugins) қосыңыз немесе жойыңыз.
 
    Linux-та `mysql` плагинін қосудың мысалы:
@@ -110,10 +112,10 @@
 
    {/tabs}
 
-## Агент логтарын қарау
+## {heading(Агент логтарын қарау)[id=monitoring-telegraf-logs]}
 
-1. [telegraf мониторинг агенті орнатылғанына көз жеткізіңіз](../mon-setup-current).
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {linkto(../mon-setup-current#monitoring-mon-setup-current)[text=telegraf мониторинг агенті орнатылғанына көз жеткізіңіз]}.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 1. Команданы орындаңыз:
 
    {tabs}
@@ -128,10 +130,10 @@
 
    {/tabs}
 
-## Агентті жою
+## {heading(Агентті жою)[id=monitoring-telegraf-delete]}
 
-1. [telegraf мониторинг агенті орнатылғанына көз жеткізіңіз](../mon-setup-current).
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {linkto(../mon-setup-current#monitoring-mon-setup-current)[text=telegraf мониторинг агенті орнатылғанына көз жеткізіңіз]}.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 1. Команданы орындаңыз:
 
    {tabs}

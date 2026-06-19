@@ -4,5 +4,15 @@
   "metaDescription": "Жергілікті PostgreSQL ДББЖ-ден деректерді VK Cloud-та жайылған ДБ инстансына қалай көшіруге болады",
   "sectionTitle": "Жергілікті PostgreSQL-ден миграция",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

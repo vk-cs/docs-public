@@ -4,5 +4,14 @@
   "metaDescription": "Көрсетілетін ақпаратты басқару дашбордтар арқылы жүзеге асырылады, онда график қосып, оны метрикалармен толтырып, жүйе көрсеткіштерін қадағалауға болады.",
   "sectionTitle": "Cloud Alerting",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

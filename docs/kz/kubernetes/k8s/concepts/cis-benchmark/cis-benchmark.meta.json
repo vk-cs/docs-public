@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud платформасындағы Kubernetes кластерлері CIS Benchmarks ұсынымдарына сәйкес келеді. 1.28 – 1.31 нұсқаларындағы Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелеріне шолу",
   "sectionTitle": "Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелері",
   "icon": "",
-  "weight": 14
+  "weight": 14,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

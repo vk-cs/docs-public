@@ -1,0 +1,14 @@
+{
+  "title": "Cоздание ETL-конвейера для обработки CSV-файлов из S3 в Cloud Iceberg Metastore",
+  "shortDescription": "Как создать ETL-конвейер для обработки CSV-файлов из S3 в Cloud Iceberg Metastore",
+  "metaDescription": "Узнайте как в VK Data Platform создать ETL-конвейер для обработки CSV-файлов из S3 в Cloud Iceberg Metastore с использованием Cloud Spark",
+  "sectionTitle": "Cоздание ETL-конвейера для обработки CSV-файлов из S3 в Cloud Iceberg Metastore",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

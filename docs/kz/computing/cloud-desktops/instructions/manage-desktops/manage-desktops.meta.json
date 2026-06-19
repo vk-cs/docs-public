@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Desktop жұмыс үстелдерін іске қосу, тоқтату және жою, пайдаланушы сессиясымен жұмыс істеу.",
   "sectionTitle": "Жұмыс үстелдерін басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

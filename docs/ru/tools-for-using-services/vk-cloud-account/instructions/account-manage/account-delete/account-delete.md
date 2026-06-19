@@ -6,7 +6,7 @@
 
 {/note}
 
-Чтобы прекратить списание средств за использование сервисов, удалять учетную запись не обязательно. Достаточно [законсервировать](/ru/tools-for-using-services/account/instructions/project-settings/manage#konservaciya_proekta) или [удалить](/ru/tools-for-using-services/account/instructions/project-settings/manage#udalenie_proekta) проекты, которые потребляют ресурсы.
+Чтобы прекратить списание средств за использование сервисов, удалять учетную запись не обязательно. Достаточно [законсервировать](/ru/tools-for-using-services/account/instructions/project-settings/manage#konservaciya_proekta) или [удалить](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-delete) проекты, которые потребляют ресурсы.
 
 Чтобы удалить учетную запись:
 

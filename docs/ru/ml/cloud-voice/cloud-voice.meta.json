@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Voice",
   "icon": "",
   "weight": 3,
-  "uuid": "9c03c68b-f617-413a-95ea-9ff76218f969"
+  "uuid": "9c03c68b-f617-413a-95ea-9ff76218f969",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

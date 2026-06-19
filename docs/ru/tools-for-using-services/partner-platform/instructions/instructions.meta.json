@@ -1,9 +1,14 @@
 {
   "title": "Пошаговые инструкции",
-  "shortDescription": "Работа с платформой партнера VK Cloud",
+  "shortDescription": "Работа с платформой партнера {var(cloud)}",
   "metaDescription": "Работа с партнерской платформой VK Cloud: как приглашать клиентов в VK Cloud, регистрировать сделки и управлять клиентами и их проектами в личном кабинете партнера VK Cloud",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 2,
-  "uuid": "d17cd43e-9574-4382-b1d0-41be32b4c62f"
+  "uuid": "d17cd43e-9574-4382-b1d0-41be32b4c62f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

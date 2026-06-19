@@ -4,5 +4,11 @@
   "metaDescription": "Cloud Airflow сервисінің негізгі ұғымдары мен қолданылу салалары",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

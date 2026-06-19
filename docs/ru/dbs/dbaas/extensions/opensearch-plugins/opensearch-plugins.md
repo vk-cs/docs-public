@@ -1,4 +1,6 @@
-VK Cloud поддерживает установку плагинов OpenSearch на уже развернутые инстансы БД:
+# {heading(Плагины OpenSearch)[id=dbaas-opensearch-plugins]}
+
+{var(cloud)} поддерживает установку плагинов OpenSearch на уже развернутые инстансы БД:
 
 - `analysis-icu`
 
@@ -70,7 +72,7 @@ VK Cloud поддерживает установку плагинов OpenSearch
 
 - `repository-s3`
 
-    Позволяет использовать [S3](/ru/storage/s3) для хранения данных.
+    Позволяет использовать [S3](../../../../storage/s3) для хранения данных.
 
 - `store-smb`
 
@@ -80,4 +82,4 @@ VK Cloud поддерживает установку плагинов OpenSearch
 
     Реализует транспортный слой, используя NIO-подход. [NIO Transport](https://activemq.apache.org/nio-transport-reference) обеспечивает асинхронную неблокирующую обработку ввода-вывода, что повышает производительность и масштабируемость системы.
 
-Подробнее о работе с расширениями и плагинами в VK Cloud в статье [Управление расширениями](../../instructions/managing-extensions).
+Подробнее о работе с расширениями и плагинами в {var(cloud)} в статье {linkto(../../instructions/managing-extensions#dbaas-managing-extensions)[text=Управление расширениями]}.

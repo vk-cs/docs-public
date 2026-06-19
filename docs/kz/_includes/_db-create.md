@@ -690,7 +690,7 @@ PostgreSQL үшін мониторинг қолжетімді. Жиналған 
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-БД инстансы [тарифтелмейді](/kz/dbs/dbaas/tariffication) және есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
+БД инстансы [тарификацияланады](/kz/dbs/dbaas/tariffication) және есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
 
 1. БД инстансын жойыңыз.
-1. Қажет болса, БД инстансына тағайындалған [Floating IP мекенжайын жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete). Жобада бар Floating IP мекенжайлары [тарифтелмейді](/kz/networks/vnet/tariffication).
+1. Қажет болса, БД инстансына тағайындалған [Floating IP мекенжайын жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete). Жобада бар Floating IP мекенжайлары [тарификацияланады](/kz/networks/vnet/tariffication).

@@ -5,5 +5,15 @@
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 10,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
   "uuid": "fa9230c2-cd83-42ca-aa3e-f46cc7763e75"
 }

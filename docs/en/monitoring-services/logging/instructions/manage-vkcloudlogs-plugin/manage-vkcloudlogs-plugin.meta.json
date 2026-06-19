@@ -1,9 +1,14 @@
 {
-    "title": "Managing the logging agent",
-      "shortDescription": "How to manage the vkcloudlogs-fluent-bit.service agent on a virtual machine",
-      "metaDescription": "VK Cloud: how to manage the vkcloudlogs-fluent-bit.service agent",
-    "sectionTitle": "Managing the logging agent",
-    "icon": "",
-    "weight": 3,
-    "uuid": "3a21752e-98e0-42e9-846e-e0984d3a2077"
+  "title": "Managing the logging agent",
+  "shortDescription": "How to manage the vkcloudlogs-fluent-bit.service agent on a virtual machine",
+  "metaDescription": "VK Cloud: how to manage the vkcloudlogs-fluent-bit.service agent",
+  "sectionTitle": "Managing the logging agent",
+  "icon": "",
+  "weight": 3,
+  "uuid": "3a21752e-98e0-42e9-846e-e0984d3a2077",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

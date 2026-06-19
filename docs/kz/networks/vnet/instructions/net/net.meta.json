@@ -4,5 +4,14 @@
   "metaDescription": "Жеке кабинетте бөлім",
   "sectionTitle": "Желілер мен ішкі желілер",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

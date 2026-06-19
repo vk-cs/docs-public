@@ -1,0 +1,14 @@
+{
+  "title": "Авторизация токенінсіз Spark Connect-ке қосылу мүмкін емес",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Spark сервисінде Spark Connect үшін Basic Auth форматындағы авторизация токенін қалай алуға болатынын біліңіз",
+  "sectionTitle": "Авторизация токенінсіз Spark Connect-ке қосылу мүмкін емес",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

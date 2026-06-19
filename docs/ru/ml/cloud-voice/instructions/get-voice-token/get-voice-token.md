@@ -1,4 +1,6 @@
-## Типы токенов
+# {heading(Получение токена доступа)[id=cloud_voice-instructions-get_voice_token]}
+
+## {heading(Типы токенов)[id=cloud_voice-instructions-get_voice_token-types]}
 
 Токен выдается на:
 
@@ -12,7 +14,7 @@
 
 2. **Сервисный токен** — менее предпочтительный сценарий. Токен выдается один раз и может работать без ограничения времени. Если сервисный токен скомпрометирован, злоумышленник сможет неограниченно использовать сервис, что повлечет большие траты. Когда средства на лицевом счете закончатся, сервис будет приостановлен.
 
-## OAuth токен
+## {heading(OAuth токен)[id=cloud_voice-instructions-get_voice_token-oauth]}
 
 Пример запроса для генерации токена:
 
@@ -81,7 +83,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 {/note}
 
-## Сервисный токен
+## {heading(Сервисный токен)[id=cloud_voice-instructions-get_voice_token-service]}
 
 Чтобы получить сервисный токен:
 
@@ -93,6 +95,6 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 ### Смотрите также
 
-[Распознавание речи](../speech-recognition)
+{linkto(../speech-recognition#cloud_voice-instructions-speech_recognition)[text=Распознавание речи]}
 
-[Синтез речи](../text-to-speech)
+{linkto(../text-to-speech#cloud_voice-instructions-text_to_speech)[text=Синтез речи]}

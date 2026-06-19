@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_s3 ресурсы",
   "sectionTitle": "ivkcs_s3 ресурсы",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

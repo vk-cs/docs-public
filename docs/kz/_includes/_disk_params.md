@@ -11,7 +11,7 @@
 
    - **Диск өлшемі**: диск өлшемін гигабайтпен көрсетіңіз.
 
-     Дискінің ең үлкен өлшемі [шектелген](/kz/tools-for-using-services/account/concepts/quotasandlimits#no_quotas_limits). Көлемі үлкенірек дискісі бар ВМ жасау үшін [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) пайдаланыңыз.
+     Дискінің ең үлкен өлшемі [шектелген](/kz/tools-for-using-services/account/concepts/quotasandlimits#limity_bez_kvot_b217dc78). Көлемі үлкенірек дискісі бар ВМ жасау үшін [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) пайдаланыңыз.
 
    - **Жүктелетін диск**: дискіні жүктелетін ету қажет болса, осы опцияны қосыңыз.
 

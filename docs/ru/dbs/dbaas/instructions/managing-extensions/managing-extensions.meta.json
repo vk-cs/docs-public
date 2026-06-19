@@ -1,9 +1,18 @@
 {
-    "title": "Управление расширениями",
-      "shortDescription": "Установка и управление расширениями инстансов БД",
-      "metaDescription": "Базы данных VK Cloud: как управлять расширениями инстансов БД.",
-    "sectionTitle": "Управление расширениями",
-    "icon": "",
-    "weight": 4,
-    "uuid": "2bf6a054-32d9-4404-b21b-7fb5275d9067"
+  "title": "Управление расширениями",
+  "shortDescription": "Установка и управление расширениями инстансов БД",
+  "metaDescription": "Базы данных VK Cloud: как управлять расширениями инстансов БД.",
+  "sectionTitle": "Управление расширениями",
+  "icon": "",
+  "weight": 8,
+  "uuid": "2bf6a054-32d9-4404-b21b-7fb5275d9067",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

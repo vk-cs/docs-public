@@ -1,9 +1,23 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Getting started with the MLPlatform service",
-      "metaDescription": "Quick start",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 1,
-    "uuid": "e985d8ac-1fe1-4430-9204-67569ffd32b2"
+  "title": "Quick start",
+  "shortDescription": "Getting started with the MLPlatform service",
+  "metaDescription": "Quick start",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "e985d8ac-1fe1-4430-9204-67569ffd32b2",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

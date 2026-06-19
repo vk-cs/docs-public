@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Redis",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, какие метрики Redis в формате Prometheus собираются и отображаются на дашбордах для мониторинга экземпляров Cloud Redis в VK Data Platform.",
+  "sectionTitle": "Cloud Redis",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

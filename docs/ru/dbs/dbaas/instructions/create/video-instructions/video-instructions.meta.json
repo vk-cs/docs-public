@@ -5,5 +5,10 @@
   "sectionTitle": "Видеоинструкции",
   "icon": "",
   "weight": 3,
-  "uuid": "841ea734-f8e3-4570-9f34-7dbd4ae4ed1a"
+  "uuid": "841ea734-f8e3-4570-9f34-7dbd4ae4ed1a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Trino",
+  "shortDescription": "",
+  "metaDescription": "Узнайте какие метрики Trino собираются для каждого развернутого экземпляра сервиса Cloud Trino в VK Data Platform для мониторинга: состояния кластера, взаимодействия между компонентами, результатов выполнения SQL-запросов и задач, использования ресурсов",
+  "sectionTitle": "Cloud Trino",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -5,5 +5,10 @@
     "sectionTitle": "Кеширование",
     "icon": "",
     "weight": 4,
-    "uuid": "8adb110b-4589-4627-b099-a5d73f21b7a6"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "8adb110b-4589-4627-b099-a5d73f21b7a6"
 }

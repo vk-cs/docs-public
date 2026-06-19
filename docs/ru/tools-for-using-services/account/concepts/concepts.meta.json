@@ -1,9 +1,19 @@
 {
   "title": "Концепции",
-  "shortDescription": "Концепции работы с платформой VK Cloud",
+  "shortDescription": "Концепции работы с платформой {var(cloud)}",
   "metaDescription": "Концепции работы с платформой VK Cloud",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 1,
-  "uuid": "083e0a40-14ee-4a2e-9253-bedaf3bad3cb"
+  "uuid": "083e0a40-14ee-4a2e-9253-bedaf3bad3cb",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

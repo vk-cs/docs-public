@@ -1,14 +1,16 @@
+# {heading(Настройка уведомлений об изменениях метрик баз данных PostgreSQL)[id=alerting-alerting-db]}
+
 Настройте мониторинг метрик баз данных PostgreSQL и уведомления об их изменениях, чтобы поддерживать стабильную работу облачных приложений.
 
-## {heading(Подготовительные шаги)[id=prepare]}
+## {heading(Подготовительные шаги)[id=alerting-db-prepare]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
-1. [Создайте](/ru/dbs/dbaas/instructions/create/create-single-replica) инстанс БД PostgreSQL, если это еще не сделано.
+1. {linkto(../../../../dbs/dbaas/instructions/create/create-single-replica#dbaas-create-single-replica)[text=Создайте]} инстанс БД PostgreSQL, если это еще не сделано.
 
-## 1. Посмотрите данные мониторинга на странице БД
+## {heading({counter(alerting-db)}. Посмотрите данные мониторинга на странице БД)[id=alerting-db-view]}
 
-1. [Посмотрите](/ru/dbs/dbaas/monitoring/postgresql) данные мониторинга на странице инстанса БД. Обратите внимание на следующие метрики:
+1. {linkto(../../../../dbs/dbaas/monitoring/postgresql#dbaas-monitoring-postgresql-monitoring-data)[text=Посмотрите]} данные мониторинга на странице инстанса БД. Обратите внимание на следующие метрики:
 
    [cols="1,3"]
    |===
@@ -28,12 +30,12 @@
    |Процент использованного дискового пространства от общего объема на узле
    |===
 
-1. [Добавьте](/ru/dbs/dbaas/monitoring/postgresql#dobavlenie_dannyh_monitoringa_bd_v_svoi_grafiki) данные мониторинга в свои графики, чтобы иметь быстрый доступ к ним.
+1. {linkto(../../../../dbs/dbaas/monitoring/postgresql#dbaas-monitoring-postgresql-add-monitoring-data)[text=Добавьте]} данные мониторинга в свои графики, чтобы иметь быстрый доступ к ним.
 
-## 2. Настройте оповещения
+## {heading({counter(alerting-db)}. Настройте оповещения)[id=alerting-db-notifications]}
 
-1. [Создайте](/ru/monitoring-services/alerting/instructions/notification#notification_add) один или несколько каналов уведомлений.
-1. [Создайте](/ru/monitoring-services/alerting/instructions/triggers#triggers_add) триггеры со следующими параметрами:
+1. {linkto(../../instructions/notification#alerting-notification-add)[text=Создайте]} один или несколько каналов уведомлений.
+1. {linkto(../../instructions/triggers#alerting-triggers-add)[text=Создайте]} триггеры со следующими параметрами:
 
    [cols="1,1,1", options="header"]
    |===
@@ -68,7 +70,7 @@
 
 При достижении порогового значения будет создан инцидент и на указанный канал уведомлений будет отправлено сообщение.
 
-## 3. Используйте данные мониторинга
+## {heading({counter(alerting-db)}. Используйте данные мониторинга)[id=alerting-db-use]}
 
 Высокие показатели утилизации CPU (**Current CPU**) и оперативной памяти (**RAM Used**), нагрузки на дисковую подсистему (**Disk used**), а также интенсивная или неравномерная нагрузка на базу данных (**Current IOWait**) свидетельствуют о высокой нагрузке на узлы или о неоптимальных индексах и запросах.
 
@@ -86,10 +88,10 @@
 
 Оптимизируйте использование ресурсов:
 
-- [Увеличите значение параметра](/ru/dbs/dbaas/instructions/db-config) `max_connections`.
+- {linkto(../../../../dbs/dbaas/instructions/db-config#dbaas-db-config)[text=Увеличите значение параметра]} `max_connections`.
 - Оптимизируйте запросы так, чтобы не было длинных транзакций.
 - Используйте [PgBouncer](https://www.pgbouncer.org/) для уменьшения нагрузки на сервер и оптимизации использование ресурсов.
 
-## {heading(Удалите неиспользуемые ресурсы)[id=delete]}
+## {heading(Удалите неиспользуемые ресурсы)[id=alerting-db-delete]}
 
-Развернутый инстанс БД [тарифицируется](/ru/dbs/dbaas/tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен, [удалите](/ru/dbs/dbaas/instructions/manage-instance/postgresql#udalenie_instansa_bd_ili_ego_hostov) его.
+Развернутый инстанс БД {ifdef(public)}{linkto(../../../../dbs/dbaas/tariffication#dbaas-tariffication)[text=тарифицируется]} и {/ifdef}потребляет вычислительные ресурсы. Если он вам больше не нужен, {linkto(../../../../dbs/dbaas/instructions/manage-instance/postgresql#dbaas-postgresql-disk-delete)[text=удалите]} его.

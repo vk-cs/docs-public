@@ -9,5 +9,15 @@
     {
       "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/vnet/network"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

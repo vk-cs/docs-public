@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание Alfresco",
   "icon": "",
   "weight": 18,
-  "uuid": "7575bb07-b3e5-44bd-a883-0af28fa80e9d"
+  "uuid": "7575bb07-b3e5-44bd-a883-0af28fa80e9d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

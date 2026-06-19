@@ -5,5 +5,10 @@
     "sectionTitle": "Удаление CDN-ресурса",
     "icon": "",
     "weight": 6,
-    "uuid": "20319574-91f1-4565-aad5-fe8dbdaea22b"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "20319574-91f1-4565-aad5-fe8dbdaea22b"
 }

@@ -4,5 +4,15 @@
   "metaDescription": "Неліктен Redis? Redis (Remote Dictionary Server) – бұл кластерде пайдалану үшін ашық бастапқы коды бар жадтағы «кілт-мән» түріндегі жылдам деректер қоймасы",
   "sectionTitle": "Redis",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

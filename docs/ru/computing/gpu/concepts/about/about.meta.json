@@ -1,9 +1,18 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
-      "metaDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "uuid": "27066880-3429-4ed7-a142-a5cd51125b85"
+  "title": "О сервисе",
+  "shortDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
+  "metaDescription": "Назначение, особенности и возможности сервиса Cloud GPU",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "27066880-3429-4ed7-a142-a5cd51125b85",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

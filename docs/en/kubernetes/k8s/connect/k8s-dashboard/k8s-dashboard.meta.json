@@ -1,9 +1,23 @@
 {
-    "title": "Connecting to cluster using Kubernetes Dashboard",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
-    "icon": "",
-    "weight": 3,
-    "uuid": "a7d4320e-5761-4af2-9551-6d41244bb0db"
+  "title": "Connecting to cluster using Kubernetes Dashboard",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
+  "icon": "",
+  "weight": 3,
+  "uuid": "a7d4320e-5761-4af2-9551-6d41244bb0db",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

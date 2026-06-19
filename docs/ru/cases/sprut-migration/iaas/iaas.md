@@ -1,7 +1,7 @@
 ## Подготовительные шаги
 
 1. Выберите проект для миграции.
-1. [Посмотрите](/ru/tools-for-using-services/account/instructions/project-settings/manage#sdn_view), какие SDN подключены в вашем проекте. Если SDN Sprut не подключена, обратитесь в [техническую поддержку](/ru/contacts).
+1. [Посмотрите](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-sdn-view), какие SDN подключены в вашем проекте. Если SDN Sprut не подключена, обратитесь в [техническую поддержку](/ru/contacts).
 1. Подготовьте рабочее место администратора для выполнения миграции:
 
     1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create) в подсети с доступом к интернету. Укажите следующие параметры:
@@ -25,7 +25,7 @@
         sudo apt-get install -y jq
         ```
 
-    1. Установите [клиент OpenStack](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+    1. Установите [клиент OpenStack](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#openstack-authorize) в проекте.
 
     1. Скопируйте репозиторий со скриптами для выполнения миграции:
 
@@ -96,8 +96,8 @@
    - `<МАРШРУТИЗАТОР_1>`, `<МАРШРУТИЗАТОР_2>` — идентификаторы маршрутизаторов.
    - `<ТИП_КОПИИ>` — тип копии маршрутизатора в SDN Sprut:
 
-      - `std` — копия будет создана в виде [стандартного](/ru/networks/vnet/concepts/router#standard) маршрутизатора.
-      - `adv` — копия будет создана в виде [продвинутого](/ru/networks/vnet/concepts/router#advanced) маршрутизатора. Укажите этот параметр, если маршрутизатор в вашем проекте используется для построения IPsec-туннеля.
+      - `std` — копия будет создана в виде [стандартного](/ru/networks/vnet/concepts/router#vnet-router-standard) маршрутизатора.
+      - `adv` — копия будет создана в виде [продвинутого](/ru/networks/vnet/concepts/router#vnet-router-advanced) маршрутизатора. Укажите этот параметр, если маршрутизатор в вашем проекте используется для построения IPsec-туннеля.
 
     Пример конфигурационного файла для копирования маршрутизаторов:
 
@@ -172,8 +172,8 @@
 
 Туннели с одинаковыми селекторами (исходными и целевыми диапазонами подсетей) не могут существовать одновременно, даже если они находятся в разных SDN. Поэтому нельзя заранее создать туннель в SDN Sprut, аналогичный туннелю в SDN Neutron, так как это приведет к проблемам в работе исходного туннеля.
 
-1. [Удалите](/ru/networks/vnet/instructions/vpn#udalenie_vpn_tunnelya) исходный туннель в SDN Neutron.
-1. [Добавьте](/ru/networks/vnet/instructions/vpn#dobavlenie_vpn_tunnelya) новый VPN-туннель для продвинутого маршрутизатора, настроенного в SDN Sprut, и задайте параметры IPsec-политики.
+1. [Удалите](/ru/networks/vnet/instructions/vpn#vnet-vpn-delete) исходный туннель в SDN Neutron.
+1. [Добавьте](/ru/networks/vnet/instructions/vpn#vnet-vpn-add) новый VPN-туннель для продвинутого маршрутизатора, настроенного в SDN Sprut, и задайте параметры IPsec-политики.
 
 ## 6. Скопируйте группы безопасности в SDN Sprut
 
@@ -224,7 +224,7 @@
 
 ## 8. (Опционально) Создайте Floating IP-адрес в SDN Sprut
 
-Floating IP-адреса нельзя перенести в другую SDN. Если в инфраструктуре вашего проекта есть Floating IP-адреса, [создайте новые](/ru/networks/vnet/instructions/ip/floating-ip#add) в SDN Sprut и запишите их.
+Floating IP-адреса нельзя перенести в другую SDN. Если в инфраструктуре вашего проекта есть Floating IP-адреса, [создайте новые](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) в SDN Sprut и запишите их.
 
 ## 9. Переключите сетевые интерфейсы ВМ в SDN Sprut
 
@@ -238,7 +238,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 - Одну ВМ можно переключить выполнением отдельного скрипта. Такой способ подойдет, если в вашем проекте есть ВМ, которая имеет несколько сетевых интерфейсов, то есть выступает в роли маршрутизатора, прокси или пограничного файервола.
 - Если в вашей конфигурации ВМ подключена напрямую к внешней сети `ext-net`, перенесите ее в SDN Sprut любым удобным способом:
 
-  - [Добавьте](/ru/networks/vnet/instructions/ip/floating-ip#add) Floating IP-адрес в SDN Sprut и подключите к нему ВМ.
+  - [Добавьте](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) Floating IP-адрес в SDN Sprut и подключите к нему ВМ.
   - [Пересоздайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ в SDN Sprut и подключите ее к внешней сети `internet`.
 
 {tabs}
@@ -389,7 +389,7 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 Если ресурсы SDN Neutron вам больше не нужны, удалите их:
 
-1. [Уберите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адреса из проекта.
-1. [Удалите](/ru/networks/vnet/instructions/secgroups#udalenie_gruppy_bezopasnosti) группы безопасности.
-1. Удалите [сети](/ru/networks/vnet/instructions/net#udalenie_seti) и [подсети](/ru/networks/vnet/instructions/net#udalenie_podseti).
-1. [Удалите](/ru/networks/vnet/instructions/router#udalenie_marshrutizatora) маршрутизаторы.
+1. [Уберите](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адреса из проекта.
+1. [Удалите](/ru/networks/vnet/instructions/secgroups#vnet-secgroups-delete) группы безопасности.
+1. Удалите [сети](/ru/networks/vnet/instructions/net#udalenie_seti) и [подсети](/ru/networks/vnet/instructions/net#vnet-net-subnet-delete).
+1. [Удалите](/ru/networks/vnet/instructions/router#vnet-router-delete) маршрутизаторы.

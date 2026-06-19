@@ -5,5 +5,19 @@
   "sectionTitle": "Manage features",
   "icon": "",
   "weight": 5,
-  "uuid": "b66dc9a5-807e-443c-85b1-0370c9cdcee8"
+  "uuid": "b66dc9a5-807e-443c-85b1-0370c9cdcee8",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

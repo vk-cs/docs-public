@@ -1,0 +1,14 @@
+{
+  "title": "Биллинг",
+  "shortDescription": "Биллинг сервисінің OpenAPI спецификациясы",
+  "metaDescription": "Биллинг сервисінің OpenAPI спецификациясы",
+  "sectionTitle": "Биллинг",
+  "icon": "",
+  "weight": 20,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

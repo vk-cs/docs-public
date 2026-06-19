@@ -1,3 +1,5 @@
+# {heading(Постоянные тома и PVC)[id=k8s-pvs-and-pvcs]}
+
 Постоянный том ([Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/), PV) предоставляет возможности для длительного хранения данных в кластерах Kubernetes. Данные, хранящиеся на PV, не теряются при сбое отдельного контейнера или пода целиком.
 
 В рабочих нагрузках ([workloads](https://kubernetes.io/docs/concepts/workloads/)) нельзя использовать PV напрямую. Необходимо дополнительно создать [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) (PVC), который позволяет запросить постоянный том с нужными параметрами и затем использовать его в рабочих нагрузках. Самые распространенные параметры, которые можно указать в PVC:
@@ -18,12 +20,10 @@
   - либо примонтировать этот PV в режиме RWX несколькими узлами кластера.
 
 {note:info}
-
-В Cloud Containers доступ к PVC в режиме RWX не реализован. Чтобы организовать общий доступ к данным из нескольких подов на разных узлах, разверните [NFS-сервер](/ru/computing/iaas/instructions/fs-manage) на отдельной виртуальной машине.
-
+В Cloud Containers доступ к PVC в режиме RWX не реализован. Чтобы организовать общий доступ к данным из нескольких подов на разных узлах, разверните {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=NFS-сервер]} на отдельной виртуальной машине.
 {/note}
 
-## Жизненный цикл PV и PVC
+## {heading(Жизненный цикл PV и PVC)[id=k8s-pvs-and-pvcs-life-cycle]}
 
 Жизненный цикл PV и PVC не зависит от жизненного цикла подов и [состоит](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#lifecycle-of-a-volume-and-claim) из четырех последовательных этапов:
 
@@ -32,7 +32,7 @@
 1. Использование (using).
 1. Освобождение (reclaiming).
 
-### 1. Подготовка
+### {heading(1. Подготовка)[id=k8s-pvs-and-pvcs-prepare]}
 
 Чтобы PV можно было запросить с помощью PVC, его нужно заранее подготовить одним из способов:
 
@@ -41,7 +41,7 @@
 
 Для динамической подготовки необходимо выполнение двух условий:
 
-- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Cloud Containers уже содержат [преднастроенные классы хранения](../../concepts/storage#storage_classes).
+- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Cloud Containers уже содержат {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=преднастроенные классы хранения]}.
 
 - Для PVC не должно быть найдено подходящих PV, которые уже существуют.
 
@@ -50,9 +50,9 @@
 - класс хранения, явно заданный в PVC;
 - класс хранения по умолчанию, если класс не задан в PVC явно.
 
-В кластерах Cloud Containers класс хранения по умолчанию [не настроен](../../concepts/storage#storage_classes). Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
+В кластерах Cloud Containers класс хранения по умолчанию {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=не настроен]}. Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
 
-### 2. Связывание
+### {heading(2. Связывание)[id=k8s-pvs-and-pvcs-bound]}
 
 Для использования в рабочих нагрузках PV и PVC связываются по принципу «один к одному». Уже связанный PV нельзя использовать с другими PVC.
 
@@ -85,11 +85,11 @@
 
 1. PVC, с которым не удалось связать ни один PV, находится в состоянии `Unbound`. Рабочие нагрузки не могут работать с таким PVC в качестве тома. Kubernetes будет периодически пытаться связать такой PVC с новыми PV, если они появятся в кластере.
 
-### 3. Использование
+### {heading(3. Использование)[id=k8s-pvs-and-pvcs-using]}
 
 После того, как Kubernetes связал PVC с PV, этот PVC может использоваться рабочей нагрузкой как обычный том.
 
-### 4. Освобождение
+### {heading(4. Освобождение)[id=k8s-pvs-and-pvcs-release]}
 
 Когда PVC больше не нужен и удаляется, то к PV, связанному с этим PVC, применяется заданная политика освобождения (reclaim policy).
 
@@ -109,17 +109,15 @@
   В зависимости от выбранного типа PV также может быть удалено связанное с PV нижележащее хранилище.
 
   {note:warn}
-
   Используйте эту политику и реализующие ее классы хранения с осторожностью: возможна потеря данных.
-  В VK Cloud, благодаря [интеграции с Cinder CSI](../../concepts/storage#csi), при удалении PV также будет удален связанный облачный диск VK Cloud.
-
+  В {var(cloud)}, благодаря {linkto(../../concepts/storage#k8s-storage-csi)[text=интеграции с Cinder CSI]}, при удалении PV также будет удален связанный облачный диск {var(cloud)}.
   {/note}
 
-В кластерах Cloud Containers выбранный тип хранилища влияет на [доступные политики освобождения](../../concepts/storage#reclaim_policies).
+В кластерах Cloud Containers выбранный тип хранилища влияет на {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=доступные политики освобождения]}.
 
-## Смотрите также
+## {heading(Смотрите также)[id=k8s-pvs-and-pvcs-see-also]}
 
-- [Как устроено хранилище в Cloud Containers](../../concepts/storage).
-- [Список преднастроенных классов хранения](../../concepts/storage#storage_classes).
-- [Сценарий использования](../../how-to-guides/storage), демонстрирующий использование различных PVC.
+- {linkto(../../concepts/storage#k8s-storage)[text=Как устроено хранилище в Cloud Containers]}.
+- {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=Список преднастроенных классов хранения]}.
+- {linkto(../../how-to-guides/storage#k8s-storage)[text=Сценарий использования]}, демонстрирующий использование различных PVC.
 - [Официальную документацию Kubernetes](https://kubernetes.io/docs/concepts/storage/persistent-volumes) с более подробной информацией про PVC и PV.

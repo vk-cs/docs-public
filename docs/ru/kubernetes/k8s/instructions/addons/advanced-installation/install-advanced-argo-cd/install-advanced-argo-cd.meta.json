@@ -1,9 +1,14 @@
 {
   "title": "Argo CD",
   "shortDescription": "",
-  "metaDescription": "Установка аддона Argo CD в Cloud Containers: пошаговая инструкция для VK Cloud, выделенных worker-узлов и быстрой установки",
+  "metaDescription": "Установка аддона Argo CD в Cloud Containers: пошаговая инструкция для VK Cloud, Terraform, выделенных worker-узлов и быстрой установки",
   "sectionTitle": "Argo CD",
   "icon": "",
   "weight": 1,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

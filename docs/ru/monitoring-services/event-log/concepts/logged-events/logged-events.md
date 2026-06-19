@@ -1,1 +1,3 @@
-События, которые сервисы VK Cloud передают в Cloud Audit.
+# {heading(Регистрируемые события)[id=event-log-logged-events]}
+
+События, которые сервисы {var(cloud)} передают в Cloud Audit.

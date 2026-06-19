@@ -4,5 +4,14 @@
   "metaDescription": "Теңгеру ережелерін баптау",
   "sectionTitle": "Теңгеру ережелерін басқару",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

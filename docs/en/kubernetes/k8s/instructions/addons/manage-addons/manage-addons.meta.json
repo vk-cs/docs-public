@@ -1,9 +1,23 @@
 {
-    "title": "Add-ons management",
-      "shortDescription": "How to view, install and remove add-ons in a Kubernetes cluster",
-      "metaDescription": "How to view, install and remove add-ons in a Kubernetes cluster",
-    "sectionTitle": "Add-ons management",
-    "icon": "",
-    "weight": 1,
-    "uuid": "90b8ebf7-4164-4e6f-b389-8fd206b357b4"
+  "title": "Add-ons management",
+  "shortDescription": "How to view, install and remove add-ons in a Kubernetes cluster",
+  "metaDescription": "How to view, install and remove add-ons in a Kubernetes cluster",
+  "sectionTitle": "Add-ons management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "90b8ebf7-4164-4e6f-b389-8fd206b357b4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

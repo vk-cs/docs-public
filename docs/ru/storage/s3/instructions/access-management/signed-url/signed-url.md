@@ -1,4 +1,6 @@
-[Подписанный URL](../../../concepts/access/signed-url) предоставляет стороннему пользователю ограниченный по времени доступ на скачивание объекта.
+# {heading(Составление подписанного URL)[id=s3-instructions-signed-url]}
+
+{linkto(../../../concepts/access/signed-url#s3-concepts-signed-url)[text=Подписанный URL]} предоставляет стороннему пользователю ограниченный по времени доступ на скачивание объекта.
 
 Чтобы сгенерировать подписанный URL:
 
@@ -6,22 +8,27 @@
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
-
+1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
 1. В консоли выполните команду:
 
    ```console
-   aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <URL_СЕРВИСА> --expires-in <СРОК_ДЕЙСТВИЯ>
+   aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <ENDPOINT_URL> --expires-in <СРОК_ДЕЙСТВИЯ>
    ```
 
    Здесь:
 
-    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
-    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
-    - `<URL_СЕРВИСА>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-    - `<СРОК_ДЕЙСТВИЯ>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+     {/ifdef}
+   - `<СРОК_ДЕЙСТВИЯ>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
 
    {cut(Пример команды формирования подписанного URL)}
 
@@ -43,12 +50,28 @@
 
 {/tab}
 
+{ifdef(s3,s3-pdf)}
+
+{tab(Файловый менеджер)}
+
+{note:warn}
+Здесь и далее мы используем файловый менеджер «CloudBerry Explorer for Amazon S3». Если вы используете другой файловый менеджер, интерфейс и названия его элементов могут отличаться от используемых в данной инструкции.
+{/note}
+
+1. Выберите в бакете нужный файл и вызовите для него контекстное меню правой кнопкой мыши.
+
+   Или выберите нужный файл и нажмите кнопку **Web URL** на панели инструментов файлового менеджера.
+
+1. Далее в открывшемся диалогом окне задайте срок окончания действия URL и нажмите кнопку **Generate**.
+
+{/tab}
+
+{/ifdef}
+
 {tab(Golang SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
-
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
-
+1. Установите и настройте {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} для Go, если он еще не установлен.
+1. Добавьте {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=реквизиты подключения]} к {var(s3)} в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 1. Добавьте код в свой проект:
 
    ```go
@@ -104,19 +127,19 @@
 	   fmt.Printf("%s", request.URL)
    }
    ```
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   {ifdef(public)}
+   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   {/ifdef}
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
-
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
-
+1. Установите и настройте {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} для Python, если он еще не установлен.
+1. Добавьте {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=реквизиты подключения]} к {var(s3)} в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
 1. Добавьте код в свой проект:
 
    ```python
@@ -150,11 +173,12 @@
    else:
       print("Error creating link")
    ```
+   {ifdef(public)}
+   Значение переменной `endpoint_url` должно соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-
-    - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-    - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   {/ifdef}
 
 {/tab}
 

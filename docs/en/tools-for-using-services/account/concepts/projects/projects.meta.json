@@ -1,9 +1,14 @@
 {
-    "title": "Projects",
-      "shortDescription": "What is a project in VK Cloud",
-      "metaDescription": "What is a project in VK Cloud.",
-    "sectionTitle": "Projects",
-    "icon": "",
-    "weight": 0,
-    "uuid": "350799e2-5faf-4714-a678-7fa97dce86d9"
+  "title": "Projects",
+  "shortDescription": "What is a project in VK Cloud",
+  "metaDescription": "What is a project in VK Cloud.",
+  "sectionTitle": "Projects",
+  "icon": "",
+  "weight": 0,
+  "uuid": "350799e2-5faf-4714-a678-7fa97dce86d9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

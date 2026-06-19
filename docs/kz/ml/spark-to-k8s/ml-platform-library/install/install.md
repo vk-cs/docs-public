@@ -1,3 +1,5 @@
+# {heading(Кітапхананы орнату)[id=mlspark-library-install]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(/kz/_includes/_mlplatform_library_install.md)}
+{include(../../../_includes/_mlplatform_library_install.md)}

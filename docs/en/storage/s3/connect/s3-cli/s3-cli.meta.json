@@ -1,9 +1,23 @@
 {
-    "title": "S3 CLI",
-      "shortDescription": "Connecting to VK Object Storage using AWS CLI, s3cmd CLI",
-      "metaDescription": "The AWS CLI, or AWS Command Line Interface, is a single tool for managing VK Object Storage service based on the AWS S3 toolkit. With just one tool downloaded, it is possi",
-    "sectionTitle": "S3 CLI",
-    "icon": "",
-    "weight": 1,
-    "uuid": "a7f311a0-c1a7-4fe0-b1e9-1d20e540176e"
+  "title": "S3 CLI",
+  "shortDescription": "Connecting to VK Object Storage using AWS CLI, s3cmd CLI",
+  "metaDescription": "The AWS CLI, or AWS Command Line Interface, is a single tool for managing VK Object Storage service based on the AWS S3 toolkit. With just one tool downloaded, it is possi",
+  "sectionTitle": "S3 CLI",
+  "icon": "",
+  "weight": 1,
+  "uuid": "a7f311a0-c1a7-4fe0-b1e9-1d20e540176e",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

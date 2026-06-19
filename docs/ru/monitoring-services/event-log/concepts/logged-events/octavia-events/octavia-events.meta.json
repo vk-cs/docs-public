@@ -5,5 +5,10 @@
   "sectionTitle": "События компонента Octavia",
   "icon": "",
   "weight": 4,
-  "uuid": "20d56066-38fb-452c-8867-6dc8e7a72a15"
+  "uuid": "20d56066-38fb-452c-8867-6dc8e7a72a15",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

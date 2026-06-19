@@ -1,9 +1,14 @@
 {
   "title": "1С:Готовое рабочее место",
-  "shortDescription": "Приложения 1С в виде SaaS-приложений VK Cloud",
+  "shortDescription": "Приложения 1С в виде SaaS-приложений {var(cloud)}",
   "metaDescription": "Облачный сервис 1С:Готовое рабочее место позволяет подключить приложения 1С на платформе VK Cloud",
   "sectionTitle": "1С:Готовое рабочее место",
   "icon": "",
   "weight": 2,
-  "uuid": "47102bf1-c9a0-48cb-bdba-13f6ea234eb4"
+  "uuid": "47102bf1-c9a0-48cb-bdba-13f6ea234eb4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

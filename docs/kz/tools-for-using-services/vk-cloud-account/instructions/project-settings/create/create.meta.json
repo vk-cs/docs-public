@@ -1,8 +1,13 @@
 {
   "title": "Жоба құру",
-  "shortDescription": "VK Cloud платформасында жоба құру",
+  "shortDescription": "{var(cloud)} платформасында жоба құру",
   "metaDescription": "VK Cloud платформасында жоба құру сипаттамасы.",
   "sectionTitle": "Жоба құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -3,5 +3,19 @@
   "shortDescription": "Интерфейсте және құжаттамада қолданылатын терминдер",
   "metaDescription": "Бұлттық инфрақұрылымға тән терминдер",
   "sectionTitle": "Терминдер",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

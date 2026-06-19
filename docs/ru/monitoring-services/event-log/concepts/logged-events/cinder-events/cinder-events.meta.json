@@ -5,5 +5,10 @@
   "sectionTitle": "События компонента Cinder",
   "icon": "",
   "weight": 5,
-  "uuid": "5e977c7c-5fe7-4041-a585-1b664fff1599"
+  "uuid": "5e977c7c-5fe7-4041-a585-1b664fff1599",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

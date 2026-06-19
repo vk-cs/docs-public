@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Image-based қолданбаның конфигурациялық файлдарының тізімі",
   "sectionTitle": "Image-based қолданбаның конфигурациялық файлдарының тізімі",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

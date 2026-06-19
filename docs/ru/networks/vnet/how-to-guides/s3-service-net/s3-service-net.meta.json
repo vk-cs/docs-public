@@ -1,9 +1,14 @@
 {
-  "title": "Подключение к VK Object Storage без интернета",
-  "shortDescription": "Как подключить к объектному хранилищу ВМ, которая находится в приватной облачной сети или подключена к VK Cloud через Direct Connect",
+  "title": "Подключение к {var(s3)} без интернета",
+  "shortDescription": "Как подключить к объектному хранилищу ВМ, которая находится в приватной облачной сети или подключена к {var(cloud)} через Direct Connect",
   "metaDescription": "Как подключить к объектному хранилищу ВМ, которая находится в приватной облачной сети или подключена к VK Cloud через Direct Connect",
-  "sectionTitle": "Подключение к VK Object Storage без интернета",
+  "sectionTitle": "Подключение к {var(s3)} без интернета",
   "icon": "",
   "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "feca3736-7230-4b69-b75d-bec056cd896b"
 }

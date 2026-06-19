@@ -4,5 +4,12 @@
   "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse сервис данасын қажетті конфигурацияда қалай жасауға болатынын біліңіз",
   "sectionTitle": "Сервис данасын жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

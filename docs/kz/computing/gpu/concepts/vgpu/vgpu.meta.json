@@ -4,5 +4,14 @@
   "metaDescription": "vGPU жұмысының ерекшеліктері: профильдер, лицензиялау, физикалық GPU-ден айырмашылықтары",
   "sectionTitle": "vGPU: GPU виртуализациясы",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

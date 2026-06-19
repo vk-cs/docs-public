@@ -5,5 +5,12 @@
   "sectionTitle": "Не работает резервное копирование ВМ",
   "icon": "",
   "weight": 1,
-  "uuid": "1869540d-01f0-4be8-9c37-526ce4fd4b15"
+  "uuid": "1869540d-01f0-4be8-9c37-526ce4fd4b15",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

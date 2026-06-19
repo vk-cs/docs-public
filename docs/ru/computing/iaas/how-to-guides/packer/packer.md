@@ -1,238 +1,237 @@
-Packer позволяет сконструировать новый образ ВМ на основе базового образа с желаемой гостевой ОС и любого из предустановленных в VK Cloud [шаблонов конфигурации](../../concepts/vm/flavor). Параметры нового образа задаются при помощи конфигурационного файла Packer. В качестве примера будут использованы:
+# {heading(Создание образа с помощью Packer)[id=iaas-packer]}
 
-- образ ОС Alt Linux P9 в формате QCOW2;
-- шаблон конфигурации `STD3-2-6`.
+Packer позволяет сконструировать новый образ ВМ на основе базового образа с желаемой гостевой ОС и любого из предустановленных в {var(cloud)} {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблонов конфигурации]}. Параметры нового образа задаются при помощи конфигурационного файла Packer. 
 
-## Подготовительные шаги
+В качестве примера будет использован образ ОС Alt Linux P9 в формате QCOW2.
+
+## {heading(Подготовительные шаги)[id=iaas-packer-preparatory-steps]}
 
 1. [Установите](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) последнюю версию Packer.
 
    {note:info}
-
-   Вы можете скачать Packer с [зеркала](https://hashicorp-releases.mcs.mail.ru/packer/) VK Cloud.
-
+   Вы можете скачать Packer с [зеркала](https://hashicorp-releases.mcs.mail.ru/packer/) {var(cloud)}.
    {/note}
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
 
-## 1. Конвертируйте образ в формат RAW
+## {heading(1. Конвертируйте образ в формат RAW)[id=iaas-packer-convert-image]}
 
 Используйте утилиту `qemu-img`:
 
 1. Установите `qemu-img`, если это не сделано ранее:
 
-    {tabs}
+   {tabs}
 
-    {tab(RHEL/Centos)}
+   {tab(RHEL/Centos)}
 
-    ```console
-    sudo yum install qemu-img
-    ```
+   ```console
+   sudo yum install qemu-img
+   ```
 
-    {/tab}
+   {/tab}
 
-    {tab(Ubuntu)}
+   {tab(Ubuntu)}
 
-    ```console
-    sudo apt install qemu-utils
-    ```
+   ```console
+   sudo apt install qemu-utils
+   ```
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
 1. Запустите конвертацию файла с помощью команды:
 
-    ```console
-    qemu-img convert -f qcow2 -O raw alt-p9-cloud-x86_64.qcow2 alt-p9-cloud-x86_64.raw
-    ```
+   ```console
+   qemu-img convert -f qcow2 -O raw alt-p9-cloud-x86_64.qcow2 alt-p9-cloud-x86_64.raw
+   ```
 
-    Синтаксис команды конвертации приведен в [официальной документации QEMU](https://www.qemu.org/docs/master/tools/qemu-img.html).
+   Синтаксис команды конвертации приведен в [официальной документации QEMU](https://www.qemu.org/docs/master/tools/qemu-img.html).
 
-## 2. Загрузите базовый образ в облако
+## {heading(2. Загрузите базовый образ в облако)[id=iaas-packer-download-base-image]}
 
-Импортируйте образ по [инструкции](../../instructions/images/images-manage#import_obraza).
+Импортируйте образ по {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=инструкции]}.
 
-## 3. Создайте конфигурационный Packer-файл
+## {heading(3. Создайте конфигурационный Packer-файл)[id=iaas-packer-create-config-file]}
 
-1. Выполните команду поиска сетей и скопируйте ID нужной внешней сети:
+1. Выполните команду поиска сетей и скопируйте идентификатор нужной внешней сети:
 
-    ```console
-    openstack network list
-    ```
+   ```console
+   openstack network list
+   ```
 
-1. Выполните команду поиска образов и скопируйте ID нужного образа:
+1. Выполните команду поиска образов и скопируйте идентификатор нужного образа:
 
-    ```console
-    openstack image list
-    ```
+   ```console
+   openstack image list
+   ```
 
 1. Запишите полученные значения в переменные:
 
-    ```console
-    export NET_ID=<ID_СЕТИ>
-    export SOURCE_IMAGE=<ID_ОБРАЗА>
-    ```
+   ```console
+   export NET_ID=<ID_СЕТИ>
+   export SOURCE_IMAGE=<ID_ОБРАЗА>
+   ```
 
-    Здесь:
-    * `<ID_СЕТИ>` — идентификатор внешней сети, полученный на предыдущем шаге.
-    * `<ID_ОБРАЗА>` — идентификатор образа, полученный на предыдущем шаге.
+   Здесь:
 
-1. Выберите желаемый шаблон конфигурации для нового образа ВМ. В примере — `STD3-2-6`.
+   - `<ID_СЕТИ>` — идентификатор внешней сети, полученный на предыдущем шаге.
+   - `<ID_ОБРАЗА>` — идентификатор образа, полученный на предыдущем шаге.
 
-    {note:info}
+1. Выберите желаемый шаблон конфигурации для нового образа ВМ.
 
-    Актуальные шаблоны конфигурации представлены на [странице создания ВМ](https://msk.cloud.vk.com/app/services/infra/servers/add) личного кабинета VK Cloud в списке **Тип виртуальной машины**.
-
-    {/note}
+   {note:info}
+   Актуальные шаблоны конфигурации представлены {ifdef(public)}на [странице создания ВМ](https://msk.cloud.vk.com/app/services/infra/servers/add) личного кабинета {var(cloud)} в списке **Тип виртуальной машины**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}в разделе {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=%text]}{/ifdef}.
+   {/note}
 
 1. Создайте файл `altlinux.pkr.hcl`. Укажите имя выбранного шаблона конфигурации в параметре `flavor`.
 
-    {cut(altlinux.pkr.hcl)}
+   {cut(altlinux.pkr.hcl)}
 
-      ```hcl
-      variable "network_id" {
-        type = string
-        default = "${env("NETWORK_ID")}"
-        validation {
-          condition     = length(var.network_id) > 0
-          error_message = <<EOF
-      The NETWORK_ID environment variable must be set.
-      EOF
-        }
-      }
+   ```hcl
+   variable "network_id" {
+     type = string
+     default = "${env("NETWORK_ID")}"
+     validation {
+       condition     = length(var.network_id) > 0
+       error_message = <<EOF
+   The NETWORK_ID environment variable must be set.
+   EOF
+     }
+   }
 
-      variable "source_image" {
-        type = string
-        default = "${env("SOURCE_IMAGE")}"
-        validation {
-          condition     = length(var.source_image) > 0
-          error_message = <<EOF
-      The SOURCE_IMAGE environment variable must be set.
-      EOF
-        }
-      }
+   variable "source_image" {
+     type = string
+     default = "${env("SOURCE_IMAGE")}"
+     validation {
+       condition     = length(var.source_image) > 0
+       error_message = <<EOF
+   The SOURCE_IMAGE environment variable must be set.
+   EOF
+     }
+   }
 
-      source "openstack" "altlinux" {
-        flavor       = "STD3-2-6"
-        image_name   = "Alt-Linux-P9-Starter-Kit"
-        source_image = "${var.source_image}"
-        config_drive            = "true"
-        networks = ["${var.network_id}"]
-        security_groups = ["default-sprut", "ssh"]
-        ssh_username = "altlinux"
-        use_blockstorage_volume = "true"
-        volume_availability_zone = "MS1"
-      }
+   source "openstack" "altlinux" {
+     flavor       = "<ШАБЛОН_КОНФИГУРАЦИИ_ВМ>"
+     image_name   = "Alt-Linux-P9-Starter-Kit"
+     source_image = "${var.source_image}"
+     config_drive            = "true"
+     networks = ["${var.network_id}"]
+     security_groups = ["default-sprut", "ssh"]
+     ssh_username = "altlinux"
+     use_blockstorage_volume = "true"
+     volume_availability_zone = "MS1"
+   }
 
-      build {
-        sources = ["source.openstack.altlinux"]
-        provisioner "shell" {
-          execute_command = "sudo {{ .Path }}"
-          inline = [
-            "apt-get update",
-            "apt-get install -y irqbalance bash-completion bind-utils qemu-guest-agent cloud-utils-growpart",
-            "systemctl enable qemu-guest-agent"
-            ]
-        }
-      }
-      ```
+   build {
+     sources = ["source.openstack.altlinux"]
+     provisioner "shell" {
+       execute_command = "sudo {{ .Path }}"
+       inline = [
+         "apt-get update",
+         "apt-get install -y irqbalance bash-completion bind-utils qemu-guest-agent cloud-utils-growpart",
+         "systemctl enable qemu-guest-agent"
+         ]
+     }
+   }
+   ```
 
-      {note:info}
+   {note:info}
+   При создании ВМ указывайте зону доступности, в которой должен быть создан диск. Подробная информация о синтаксисе конфигурационного файла в [официальной документации Packer](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
+   {/note}
 
-      При создании ВМ указывайте зону доступности, в которой должен быть создан диск. Подробная информация о синтаксисе конфигурационного файла в [официальной документации Packer](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
-
-      {/note}
-
-    {/cut}
+   {/cut}
 
 1. Проверьте созданную конфигурацию с помощью команды:
 
-    ```console
-    packer validate altlinux.pkr.hcl
-    ```
+   ```console
+   packer validate altlinux.pkr.hcl
+   ```
 
-## 4. Загрузите подготовленный образ в облако
+## {heading(4. Загрузите подготовленный образ в облако)[id=iaas-packer-download-prepare-image]}
 
 1. Запустите создание образа с помощью команды:
 
-    ```console
-    packer build altlinux.pkr.hcl
-    ```
+   ```console
+   packer build altlinux.pkr.hcl
+   ```
 
 1. Дождитесь появления сообщения об успешной загрузке:
 
-    ```console
-    ==> Builds finished. The artifacts of successful builds are:
-    --> openstack.altlinux: An image was created: c6320138-035f-40d8-XXXX-e814edb2ce5f
-    ```
+   ```console
+   ==> Builds finished. The artifacts of successful builds are:
+   --> openstack.altlinux: An image was created: c6320138-035f-40d8-XXXX-e814edb2ce5f
+   ```
 
 1. Запишите идентификатор `c6320138-035f-40d8-XXXX-e814edb2ce5f` — он понадобится на следующем шаге.
 
-## 5. Завершите настройку образа
+## {heading(5. Завершите настройку образа)[id=iaas-packer-settings-end]}
 
-1. Установите [метатеги](../../instructions/images/image-metadata) созданному образу с помощью команды:
+1. Установите {ifdef(public)}{linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=метатеги]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}метатеги{/ifdef} созданному образу с помощью команды:
 
-    ```console
-    openstack image set \
-        --property hw_qemu_guest_agent=True \
-        --property os_require_quiesce=yes \
-        --property mcs_name='Alt Linux P9 Starter Kit' \
-        c6320138-035f-40d8-XXXX-e814edb2ce5f
-    ```
+   ```console
+   openstack image set \
+       --property hw_qemu_guest_agent=True \
+       --property os_require_quiesce=yes \
+       --property mcs_name='Alt Linux P9 Starter Kit' \
+       c6320138-035f-40d8-XXXX-e814edb2ce5f
+   ```
+   Используйте идентификатор, скопированный на {linkto(#iaas-packer-download-prepare-image)[text=шаге 4]}.
 
 1. Убедитесь, что образ корректно отображается.
 
-    {tabs}
+   {tabs}
 
-    {tab(Личный кабинет)}
+   {tab(Личный кабинет)}
 
-    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-    1. Перейдите в раздел **Облачные вычисления → Образы**.
-    1. Найдите образ в списке и нажмите на него. Откроется страница образа.
+   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+   1. Перейдите в раздел **Облачные вычисления** → **Образы**.
+   1. Найдите образ в списке и нажмите на него. Откроется страница образа.
 
-      Образ также станет доступен при создании ВМ.
+   Образ также станет доступен при создании ВМ.
 
-    {/tab}
+   {/tab}
 
-    {tab(OpenStack CLI)}
+   {tab(OpenStack CLI)}
 
-    ```console
-    openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
-    ```
+   ```console
+   openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
+   ```
 
-    Результат выполнения команды:
+   {ifdef(public)}
+   Результат выполнения команды:
 
-    ```console
-    +------------------+------------------------------------------------------+
-    | Field            | Value                                                |
-    +------------------+------------------------------------------------------+
-    | checksum         | 896ea37e28d82a548cedf1e0aa92XXXX                     |
-    | container_format | bare                                                 |
-    | created_at       | 2023-03-29T14:06:44Z                                 |
-    | disk_format      | raw                                                  |
-    | file             | /v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f/file |
-    | id               | c6320138-035f-40d8-XXXX-e814edb2ce5f                 |
-    | min_disk         | 0                                                    |
-    | min_ram          | 0                                                    |
-    | name             | Alt-Linux-P9-Starter-Kit                             |
-    | owner            | b5b7ffd4ef0547e5b222f44555dfXXXX                     |
-    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', os_require_quiesce='True', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
-    | protected        | False                                                |
-    | schema           | /v2/schemas/image                                    |
-    | size             | 1653604352                                           |
-    | status           | active                                               |
-    | tags             |                                                      |
-    | updated_at       | 2023-03-29T14:08:15Z                                 |
-    | visibility       | private                                              |
-    +------------------+------------------------------------------------------+
-    ```
+   ```console
+   +------------------+------------------------------------------------------+
+   | Field            | Value                                                |
+   +------------------+------------------------------------------------------+
+   | checksum         | 896ea37e28d82a548cedf1e0aa92XXXX                     |
+   | container_format | bare                                                 |
+   | created_at       | 2023-03-29T14:06:44Z                                 |
+   | disk_format      | raw                                                  |
+   | file             | /v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f/file |
+   | id               | c6320138-035f-40d8-XXXX-e814edb2ce5f                 |
+   | min_disk         | 0                                                    |
+   | min_ram          | 0                                                    |
+   | name             | Alt-Linux-P9-Starter-Kit                             |
+   | owner            | b5b7ffd4ef0547e5b222f44555dfXXXX                     |
+   | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', os_require_quiesce='True', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
+   | protected        | False                                                |
+   | schema           | /v2/schemas/image                                    |
+   | size             | 1653604352                                           |
+   | status           | active                                               |
+   | tags             |                                                      |
+   | updated_at       | 2023-03-29T14:08:15Z                                 |
+   | visibility       | private                                              |
+   +------------------+------------------------------------------------------+
+   ```
+   {/ifdef}
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=iaas-packer-image-delete]}
 
-Если образ вам больше не нужен, [удалите его](../../instructions/images/images-manage#udalenie_obraza).
+Если образ вам больше не нужен, {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-delete)[text=удалите его]}.

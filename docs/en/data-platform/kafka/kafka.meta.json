@@ -6,5 +6,19 @@
   "icon": "",
   "isBeta": true,
   "weight": 8,
-  "uuid": "5a98aa95-afb4-4a0e-bcef-8545cf0d9e5b"
+  "uuid": "5a98aa95-afb4-4a0e-bcef-8545cf0d9e5b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,8 +4,8 @@
 
 Существует два способа использования скриптов:
 
-- через [Cloud-init](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements);
-- через [агент](/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent).
+- через [cloud-init](https://cloudinit.readthedocs.io/en/latest);
+- через [агента Marketplace](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/ib_image_agent).
 
 ## {heading(Выполнение скриптов через Cloud-init)[id=tf_script_userdata]}
 

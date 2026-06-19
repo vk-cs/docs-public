@@ -1,8 +1,18 @@
 {
   "title": "worker-түйіндер тобын басқару",
-  "shortDescription": "Kubernetes worker-түйіндер топтарын жеке кабинет немесе Terraform көмегімен қалай басқаруғал болады",
-  "metaDescription": "Kubernetes кластерімен және оның түйіндерімен орындалатын қолжетімді операциялар. VK Cloud жеке кабинетінде немесе Terraform көмегімен Kubernetes worker-түйіндер топтарын қалай басқаруғал болатынын біліңіз",
+  "shortDescription": "Kubernetes worker-түйіндер топтарын жеке кабинет немесе Terraform көмегімен қалай басқаруға болады",
+  "metaDescription": "Kubernetes кластерімен және оның түйіндерімен орындалатын қолжетімді операциялар. VK Cloud жеке кабинетінде немесе Terraform көмегімен Kubernetes worker-түйіндер топтарын қалай басқаруға болатынын біліңіз",
   "sectionTitle": "worker-түйіндер тобын басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

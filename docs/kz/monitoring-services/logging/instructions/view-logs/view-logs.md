@@ -1,3 +1,5 @@
+# {heading(Логтарды қарау)[id=logging-view-logs]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Логтарды қарау үшін ыңғайлы тәсілді пайдаланыңыз:
@@ -6,31 +8,32 @@
 
 {tab(Жеке кабинет)}
 
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Логтау** бөліміне өтіңіз.
 1. (Опционалды түрде) Сүзгілер үшін мәндерді таңдаңыз.
-1. (Опционалды түрде) Іздеу үшін мән енгізіңіз немесе [іздеу сұрауларының тілін](../../concepts/search-tools) пайдаланып сұрау құрастырыңыз.
+1. (Опционалды түрде) Іздеу үшін мән енгізіңіз немесе {linkto(../../concepts/search-tools#logging-search-tools)[text=іздеу сұрауларының тілін]} пайдаланып сұрау құрастырыңыз.
 
     Іздеу өрнектерінің мысалдары:
 
-      {include(/kz/_includes/_logs_query.md)}
+      {include(../../../../_includes/_logs_query.md)}
 
 {/tab}
 
 {tab(API)}
 
-[API әдістерін](/kz/tools-for-using-services/api/api-spec/logging) пайдаланыңыз.
+{ifdef(public)}{linkto(../../../../tools-for-using-services/api/api-spec/logging#api-spec-logging)[text=API әдістерін]}{/ifdef}{ifndef(public)}Cloud Logging API әдістерін{/ifndef} пайдаланыңыз.
 
-Іздеу нәтижелерін нақтылау үшін `like` параметрінде `message` өрісінен іздеуге арналған өрнекті көрсетіңіз. Іздеу өрнегін жазу үшін [іздеу сұрауларының тілін](../../concepts/search-tools) пайдаланыңыз.
+Іздеу нәтижелерін нақтылау үшін `like` параметрінде `message` өрісінен іздеуге арналған өрнекті көрсетіңіз. Іздеу өрнегін жазу үшін {linkto(../../concepts/search-tools#logging-search-tools)[text=іздеу сұрауларының тілін]} пайдаланыңыз.
 
 Іздеу өрнектерінің мысалдары:
 
-  {include(/kz/_includes/_logs_query.md)}
+  {include(../../../../_includes/_logs_query.md)}
 
 {/tab}
 
 {tab(Grafana)}
 
-1. Жобаңызда [Қолданбалар дүкенінен](/kz/applications-and-services/marketplace/initial-configuration/grafana-start) Grafana сервисін [орналастырыңыз](https://kz.cloud.vk.com/app/services/marketplace).
+1. Жобаңызда [Қолданбалар дүкенінен](https://kz.cloud.vk.com/app/services/marketplace) Grafana сервисін {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=орналастырыңыз]}.
 
     Сервис орналастырылған кезде ол Cloud Logging-пен автоматты түрде біріктіріледі:
 
@@ -39,7 +42,7 @@
 
 1. Grafana консоліне өтіп, онда авторизациядан өтіңіз.
 1. Дашборд жасап, оған визуализация қосыңыз.
-1. `VK Cloud Logging`-пен байланысты дереккөзді таңдаңыз.
+1. `{var(cloud)} Logging`-пен байланысты дереккөзді таңдаңыз.
 1. Оң жақ жоғарғы бұрыштағы тізімнен `Logs` визуализациясын таңдаңыз.
 1. (Опционалды түрде) Визуализация параметрлерін баптаңыз:
 
@@ -50,7 +53,7 @@
    - **Prettify JSON**: JSON форматындағы логтардың визуализациясын жақсартуды қосу.
    - **Enable log details**: логтың егжей-тегжейлі мазмұны бар кеңейтілетін аймақты көрсету.
 
-1. **Service** өрісінде логтарын дашбордта көрсеткіңіз келетін сервистің идентификаторын көрсетіңіз. VK Cloud логтау жүйесінде алдын ала бапталған сервис идентификаторларын немесе [жеке идентификаторларды](../../concepts/logging-plugin#conf_parameters) пайдаланыңыз.
+1. **Service** өрісінде логтарын дашбордта көрсеткіңіз келетін сервистің идентификаторын көрсетіңіз. {var(cloud)} логтау жүйесінде алдын ала бапталған сервис идентификаторларын немесе {linkto(../../concepts/logging-plugin#logging-conf-parameters)[text=жеке идентификаторларды]} пайдаланыңыз.
 
     {tabs}
 
@@ -73,8 +76,8 @@
     {/tabs}
 
 1. **Apply** батырмасын басыңыз.
-1. (Опционалды түрде) **Group** өрісінде логтар тобының идентификаторын (`group_id`) көрсетіңіз. Оны орнату кезінде [логтау плагинінің баптауларында](../../concepts/logging-plugin#conf_parameters) көрсетілген `group_id` мәнін пайдаланыңыз. Егер **Unique Labels** опциясы қосылған болса, `group_id` жасалып жатқан дашбордтағы қажетті сервистің логтарында көрсетіледі.
-1. (Опционалды түрде) **Stream** өрісінде логтар көзінің идентификаторын (`stream_id`) көрсетіңіз. Оны орнату кезінде [логтау плагинінің баптауларында](../../concepts/logging-plugin#conf_parameters) көрсетілген `stream_id` мәнін пайдаланыңыз. Егер **Unique Labels** опциясы қосылған болса, `stream_id` жасалып жатқан дашбордтағы қажетті сервистің логтарында көрсетіледі.
+1. (Опционалды түрде) **Group** өрісінде логтар тобының идентификаторын (`group_id`) көрсетіңіз. Оны орнату кезінде {linkto(../../concepts/logging-plugin#logging-conf-parameters)[text=логтау плагинінің баптауларында]} көрсетілген `group_id` мәнін пайдаланыңыз. Егер **Unique Labels** опциясы қосылған болса, `group_id` жасалып жатқан дашбордтағы қажетті сервистің логтарында көрсетіледі.
+1. (Опционалды түрде) **Stream** өрісінде логтар көзінің идентификаторын (`stream_id`) көрсетіңіз. Оны орнату кезінде {linkto(../../concepts/logging-plugin#logging-conf-parameters)[text=логтау плагинінің баптауларында]} көрсетілген `stream_id` мәнін пайдаланыңыз. Егер **Unique Labels** опциясы қосылған болса, `stream_id` жасалып жатқан дашбордтағы қажетті сервистің логтарында көрсетіледі.
 1. Енгізілген өзгерістерді сақтаңыз.
 
 {/tab}

@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Alerting",
   "icon": "",
   "weight": 2,
-  "uuid": "449faa85-bd7e-4d8e-aca5-a1d1fc138263"
+  "uuid": "449faa85-bd7e-4d8e-aca5-a1d1fc138263",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

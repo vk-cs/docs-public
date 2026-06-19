@@ -2,5 +2,10 @@
   "title": "Дүкенде сервисті тестілеу",
   "shortDescription": "",
   "metaDescription": "Дүкенде сервисті тестілеу",
-  "sectionTitle": "Дүкенде сервисті тестілеу"
+  "sectionTitle": "Дүкенде сервисті тестілеу",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

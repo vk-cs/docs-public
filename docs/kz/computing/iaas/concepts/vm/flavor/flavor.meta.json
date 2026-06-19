@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud-тағы виртуалды машиналар конфигурациясының қалыптары",
   "metaDescription": "VK Cloud-тағы виртуалды машиналар конфигурациясының қалыптары",
   "sectionTitle": "ВМ конфигурация қалыптары",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

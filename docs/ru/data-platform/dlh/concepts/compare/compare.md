@@ -1,0 +1,1 @@
+# {heading(Сравнение технологий)[id=dlh_compare]}

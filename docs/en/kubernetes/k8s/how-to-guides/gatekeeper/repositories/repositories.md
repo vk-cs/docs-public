@@ -7,7 +7,7 @@ To demostrate how Gatekeeper works several objects will be created:
 
 ## Preparatory steps
 
-1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the most current version.
+{include(/en/_includes/_create-test-cluster.md)}
 
    Choose the cluster parameters at your own discretion.
 
@@ -169,7 +169,9 @@ To demostrate how Gatekeeper works several objects will be created:
 
 ## Delete unused resources
 
-1. If the Kubernetes resources you created are no longer needed, delete them.
+{include(/en/_includes/_remove-k8s-resources.md)} constraints, delete them:
+
+1. Delete the created `allowed-pod` pod, the constraint template, and the constraint itself:
 
    {tabs}
 
@@ -196,7 +198,4 @@ To demostrate how Gatekeeper works several objects will be created:
 
    {/tabs}
 
-1. A running cluster consumes computing resources. If you no longer need it:
-
-   - [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

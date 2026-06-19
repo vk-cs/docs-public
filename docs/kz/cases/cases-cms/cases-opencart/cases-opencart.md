@@ -7,7 +7,7 @@
 ## Дайындық қадамдары
 
 1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account).
-1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau).
+1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).
 1. [ВМ жасаңыз](/kz/computing/iaas/instructions/vm/vm-create):
 
    - атауы: `Ubuntu_22_04_OpenCart`;
@@ -28,7 +28,7 @@
 
    Мысалда жасалған инстанстың ішкі IP-мекенжайы: `10.0.0.7`.
 
-1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#add).
+1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add).
 
    {note:warn}
 
@@ -36,7 +36,7 @@
 
    {/note}
 
-1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#add):
+1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-zone-add):
 
    - жазба түрі: `A`;
    - атауы: мысалы, `site-opencart.example.vk.cloud`;
@@ -111,10 +111,10 @@
    1. `/var/www/html/opencart/config.php` және `/var/www/html/opencart/admin/config.php` конфигурациялық файлдарында мына жолды ауыстырыңыз:
 
       ```console
-      // бастапқы жол
+      // исходная строка
       define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 
-      // ауыстырылатын жол
+      // заменяемая строка
       define('DIR_STORAGE', '/var/www/storage/');
       ```
 
@@ -126,9 +126,9 @@
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Өрістетілген виртуалды ресурстар тарифтелмейді. Егер олар енді қажет болмаса:
+Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар енді қажет болмаса:
 
-- `Ubuntu_22_04_OpenCart` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
-- `MySQL-9341` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#bd_instansyn_nemese_onyn_hosttaryn_zhoyu).
-- Қажет болса, `87.239.106.48` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
-- Жасалған `site-opencart.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#resurstyk_zhazbalardy_zhoyu).
+- `Ubuntu_22_04_OpenCart` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `MySQL-9341` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance).
+- Қажет болса, `87.239.106.48` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).
+- Жасалған `site-opencart.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-delete).

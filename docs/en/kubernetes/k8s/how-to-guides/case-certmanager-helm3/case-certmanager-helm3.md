@@ -17,13 +17,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
 ## Preparatory steps
 
-1. If you do not already have a Kubernetes cluster, then create one.
-
-   {note:info}
-
-   To save time, you can [create a Kubernetes cluster](../../../../kubernetes/k8s/instructions/create-cluster) in a few minutes on the VK Cloud platform.
-
-   {/note}
+{include(/en/_includes/_create-test-cluster.md)}
 
 1. Determine the cluster's version.
 
@@ -440,7 +434,9 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
 ## Delete unused resources
 
-1. If the Kubernetes resources, created to [confirm cert-manager operability](#3_confirm_cert_manager_operability), are the test ones and you no longer need them, then delete them:
+A running cluster consumes computing resources and is charged accordingly. If you no longer need the `cert-manager` tool and the Kubernetes resources you created to test it, delete them:
+
+1. Delete the resources described in the `cert-manager-test-resources.yaml` manifest:
 
    ```console
    kubectl delete -f cert-manager-test-resources.yaml
@@ -448,11 +444,11 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
    {note:warn}
 
-   The `cert-manager-test` namespace with all contents, including additional resources automatically created by `cert-manager`, will be deleted.
+   This deleted the `cert-manager-test` namespace with all its contents, including additional resources automatically created by `cert-manager`.
 
    {/note}
 
-1. If `cert-manager` has been [installed](#2_install_cert_manager) for testing purposes and you no longer need it, then delete all resources associated with it:
+1. Delete `cert-manager` and all resources associated with it:
 
    1. Make sure that there are no resources created by `cert-manager` in the cluster:
 
@@ -460,7 +456,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
       kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges --all-namespaces
       ```
 
-      If there are such resources, delete them.
+      If there are any, delete them.
 
    1. Delete the `cert-manager` release:
 
@@ -479,3 +475,5 @@ Read about advanced backups and restoring from backup [in the official cert-mana
       ```console
       kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
       ```
+
+{include(/en/_includes/_delete-test-cluster-short.md)}

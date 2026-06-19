@@ -5,5 +5,10 @@
     "sectionTitle": "Публичный DNS",
     "icon": "",
     "weight": 2,
-    "uuid": "d6699635-506c-4076-9c9e-a5d5c9dd9150"
+      "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "d6699635-506c-4076-9c9e-a5d5c9dd9150"
 }

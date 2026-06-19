@@ -1,4 +1,6 @@
-## Концепции
+# {heading(Архитектура сервиса)[id=monitoring-architecture]}
+
+## {heading(Концепции)[id=monitoring-architecture-concepts]}
 
 Сервис Cloud Monitoring состоит из нескольких частей:
 
@@ -9,17 +11,90 @@
 - Пользовательский интерфейс с возможностью строить дашборды и графики.
 - Сервис централизованного обновления агентов мониторинга.
 
-## Пространства имен (namespace)
+## {heading(Пространства имен (namespace))[id=monitoring-namespace]}
 
-Каждый сервис пишет данные в свое пространство имен. Стандартные названия для пространств имен, формируемые сервисами VK Cloud, имеют вид: `mcs/servicename`. Если необходимо писать пользовательские метрики, то название для пространства имен не должно начинаться с символов `mcs/`.
+Каждый сервис пишет данные в свое пространство имен. Стандартные названия для пространств имен, формируемые сервисами {var(cloud)}, имеют вид: `mcs/servicename`. Если необходимо писать пользовательские метрики, то название для пространства имен не должно начинаться с символов `mcs/`.
 
-#### Стандартные пространства имен
+#### {heading(Стандартные пространства имен)[id=monitoring-standard-namespace]}
 
-<table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Название сервиса</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Название пространства имен</strong></p></td></tr><tr><td>Cloud Servers</td><td>mcs/vm</td></tr><tr><td>Cloud Networks</td><td>mcs/network</td></tr><tr><td>VK Object Storage</td><td>mcs/cloudstorage</td></tr><tr><td>Cloud Containers</td><td>mcs/containers</td></tr><tr><td>Cloud Databases</td><td>mcs/databases</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Arenadata DB as a Service</td><td>mcs/dwh</td></tr><tr><td>Cloud Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
+{ifdef(public)}
+[cols="1,1", options="header"]
+|===
+|Название сервиса
+|Название пространства имен
 
-## Метки (label)
+|Cloud Servers
+|`mcs/vm`
 
-В метках передается дополнительная метаинформация, которая может идентифицировать целевой ресурс, который мы мониторим, т.е. в случае ВМ — это название или идентификатор ВМ.
+|Cloud Networks
+|`mcs/network`
+
+|{var(s3)}
+|`mcs/cloudstorage`
+
+|Cloud Containers
+|`mcs/containers`
+
+|Cloud Databases
+|`mcs/databases`
+
+|SQS
+|`mcs/managedqueue`
+
+|Marketplace
+|`mcs/marketplace`
+
+|CDN
+|`mcs/cdn`
+
+|Arenadata DB as a Service
+|`mcs/dwh`
+
+|Cloud Monitoring
+|`mcs/monitoring`
+|===
+{/ifdef}
+
+{ifdef(private-pdf,private-pg-pdf)}
+В {linkto(#tab_comparison_operators)[text=таблице %number]} приведены стандартные названия пространств имен, используемые в {var(cloud)}.
+
+<!--- //todo Таблицу ниже необходимо актуализировать для релиза 4.3 -->
+
+{caption(Таблица {counter(table)[id=numb_tab_comparison_operators]} — Пространства имен для ресурсов)[align=right;position=above;id=tab_comparison_operators;number={const(numb_tab_comparison_operators)}]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+[cols="1,1", options="header"]
+|===
+|Название ресурса
+|Название пространства имен
+
+|Виртуальные машины
+|`mcs/vm`
+
+|Базы данных
+|`mcs/dbaas`
+
+|Кластеры Kubernetes
+|`mcs/kubernetes`
+
+|Резервные копии
+|`mcs/backup`
+
+|Магазин приложений
+|`mcs/marketplace`
+|===
+{/ifdef}{ifdef(private-pdf,private-pg-pdf)}
+{/caption}{/ifdef}
+{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+Пространство имен задается в процессе интеграции сторонней системы с {var(cloud)}.
+
+{note:info}
+Если указать несуществующее название пространства имен, график нельзя будет создать из-за отсутствия параметров для ресурса.
+{/note}
+
+{/ifdef}
+
+## {heading(Метки (label))[id=monitoring-label]}
+
+В метках передается дополнительная метаинформация, которая может идентифицировать целевой ресурс, например для ВМ это могут быть название или идентификатор ВМ.
 
 Для каждой метрики, которая отправляется в хранилище, можно указать произвольный набор меток, т.е. пар ключ/значение. Например, вы вместе со значением метрики `cpu_total` хотите передать имя хоста виртуальной машины и название зоны доступности, в которой она находится. Тогда вам необходимо заполнить значения для меток `host` и `availability_zone`.
 
@@ -35,7 +110,7 @@ SUM BY(host) (cpu:Minimum{instance="<"span >"server1", app!="<"span >"system"})
 SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h)
 ```
 
-## Агрегирование
+## {heading(Агрегирование)[id=monitoring-aggregation]}
 
 Основные характеристики процесса агрегирования:
 
@@ -51,7 +126,7 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 - Агрегированные метрики хранятся в течение 30 дней.
 - Пользователь может получить значения агрегированных метрик с фильтрацией по необходимым значениям меток.
 
-## Единицы измерения
+## {heading(Единицы измерения)[id=monitoring-units-of-measurement]}
 
 В Cloud Monitoring есть стандартные единицы измерений, которые можно передавать и по которым можно агрегировать:
 

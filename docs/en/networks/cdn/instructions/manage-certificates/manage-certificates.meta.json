@@ -1,9 +1,14 @@
 {
-    "title": "Managing SSL certificates",
-      "shortDescription": "How to create, edit and delete SSL certificates via VK Cloud management console",
-      "metaDescription": "How to create, edit and delete SSL certificates via VK Cloud management console",
-    "sectionTitle": "Managing SSL certificates",
-    "icon": "",
-    "weight": 5,
-    "uuid": "6c0e065c-3c46-4e0a-8ded-f41b5eb27edc"
+  "title": "Managing SSL certificates",
+  "shortDescription": "How to create, edit and delete SSL certificates via VK Cloud management console",
+  "metaDescription": "How to create, edit and delete SSL certificates via VK Cloud management console",
+  "sectionTitle": "Managing SSL certificates",
+  "icon": "",
+  "weight": 5,
+  "uuid": "6c0e065c-3c46-4e0a-8ded-f41b5eb27edc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,8 +1,18 @@
 {
-  "title": "Қосымша алқпарат",
+  "title": "Қосымша ақпарат",
   "shortDescription": "Terraform және worker-түйіндер топтарының баптаулары туралы қосымша мәліметтер",
   "metaDescription": "Cloud Containers сервисін басқару үшін Terraform-ды қалай пайдалану керегін біліңіз. Kubernetes кластерінің worker-түйіндер топтары баптауларының толық тізімі",
-  "sectionTitle": "Қосымша алқпарат",
+  "sectionTitle": "Қосымша ақпарат",
   "icon": "",
-  "weight": 50
+  "weight": 50,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

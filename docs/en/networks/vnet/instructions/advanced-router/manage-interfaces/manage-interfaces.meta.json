@@ -1,9 +1,14 @@
 {
-    "title": "Managing interfaces",
-      "shortDescription": "Adding and deleting interfaces of advanced router",
-      "metaDescription": "",
-    "sectionTitle": "Managing interfaces",
-    "icon": "",
-    "weight": 2,
-    "uuid": "51df0506-57ab-4ded-ab7f-88743d6d3f03"
+  "title": "Managing interfaces",
+  "shortDescription": "Adding and deleting interfaces of advanced router",
+  "metaDescription": "",
+  "sectionTitle": "Managing interfaces",
+  "icon": "",
+  "weight": 2,
+  "uuid": "51df0506-57ab-4ded-ab7f-88743d6d3f03",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

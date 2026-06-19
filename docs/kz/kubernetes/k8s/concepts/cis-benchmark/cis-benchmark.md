@@ -1,10 +1,12 @@
+# {heading(Kubernetes кластерлері үшін CIS Benchmarks тест нәтижелері)[id=k8s-cis-benchmark]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[CIS Benchmarks](https://learn.cisecurity.org/benchmarks), немесе CIS бақылау көрсеткіштері, — бұл жүйелерді, сервистер мен қолданбаларды киберқауіптерден барынша жақсы қорғауды қамтамасыз етуге арналған мұқият әзірленген және үнемі жаңартылып отыратын ұсынымдар жүйесі. Бұл ұсынымдарды киберқауіпсіздікке маманданған коммерциялық емес [Center for Internet Security (CIS)](https://www.cisecurity.org/) ұйымы әзірлеп, қолдап отырады. CIS стандарттарын ұстану компанияларғал ықтимал осалдықтарды барынша азайтуғал, киберинциденттерді анықтау және оларғал ден қою мүмкіндіктерін жақсартуғал, осылайша өздерінің қауіпсіздік жүйесінің сенімділігін арттыруғал мүмкіндік береді.
+[CIS Benchmarks](https://learn.cisecurity.org/benchmarks), немесе CIS бақылау көрсеткіштері, — бұл жүйелерді, сервистер мен қолданбаларды киберқауіптерден барынша жақсы қорғауды қамтамасыз етуге арналған мұқият әзірленген және үнемі жаңартылып отыратын ұсынымдар жүйесі. Бұл ұсынымдарды киберқауіпсіздікке маманданған коммерциялық емес [Center for Internet Security (CIS)](https://www.cisecurity.org/) ұйымы әзірлеп, қолдап отырады. CIS стандарттарын ұстану компанияларға ықтимал осалдықтарды барынша азайтуға, киберинциденттерді анықтау және оларға ден қою мүмкіндіктерін жақсартуға, осылайша өздерінің қауіпсіздік жүйесінің сенімділігін арттыруға мүмкіндік береді.
 
-CIS бақылау көрсеткіштері көптеген IT жүйелер үшін, соның ішінде [Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/) үшін де қолжетімді. Жүйелер мен ұсынымдардың толық тізімін [ресми құжаттамадан](https://learn.cisecurity.org/benchmarks) табуғал болады. 
+CIS бақылау көрсеткіштері көптеген IT жүйелер үшін, соның ішінде [Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/) үшін де қолжетімді. Жүйелер мен ұсынымдардың толық тізімін [ресми құжаттамадан](https://learn.cisecurity.org/benchmarks) табуға болады. 
 
-VK Cloud платформасында қолжетімді [1.28 – 1.31 нұсқаларындағы](../../concepts/versions/version-support) Kubernetes кластерлері үшін Kubernetes-ке арналған CIS бақылау көрсеткіштеріне тесттер жүргізілді. Тестілеу барысында Kubernetes кластерінің CIS бақылау көрсеткіштеріне сәйкестігін тексеретін ашық бастапқы коды бар [kube-bench](https://github.com/aquasecurity/kube-bench) құралы пайдаланылды. Тестілеудің негізі ретінде тестілеудің әр кезеңі, ұсынымдар мен күтілетін нәтижелер сипатталған [CIS Kubernetes Benchmark v.1.10](https://www.cisecurity.org/benchmark/kubernetes/) ресми құжаты алынды. 
+VK Cloud платформасында қолжетімді {linkto(../../concepts/versions/version-support#k8s-version-support)[text=1.28 – 1.31 нұсқаларындағы]} Kubernetes кластерлері үшін Kubernetes-ке арналған CIS бақылау көрсеткіштеріне тесттер жүргізілді. Тестілеу барысында Kubernetes кластерінің CIS бақылау көрсеткіштеріне сәйкестігін тексеретін ашық бастапқы коды бар [kube-bench](https://github.com/aquasecurity/kube-bench) құралы пайдаланылды. Тестілеудің негізі ретінде тестілеудің әр кезеңі, ұсынымдар мен күтілетін нәтижелер сипатталған [CIS Kubernetes Benchmark v.1.10](https://www.cisecurity.org/benchmark/kubernetes/) ресми құжаты алынды. 
 
 VK Cloud платформасы master-түйіндердің қорғалуын қамтамасыз етеді, бірақ қалған бөлігінде кластерлердің пайдаланушылық баптаулары әртүрлі болуы мүмкін. Мұндай баптаулар тестілеуде ескерілмейді және пайдаланушының жауапкершілік аймағында болады, сондықтан тесттердің бір бөлігінде тиісті түсініктемелері бар `WARN` немесе `FAIL` нәтижелері кездеседі. Kubernetes кластерлеріңіздің барынша жоғары қауіпсіздігін қамтамасыз ету үшін CIS бақылау көрсеткіштеріне өз тестілеуіңізді жүргізе аласыз.
 
@@ -517,7 +519,7 @@ VK Cloud платформасы master-түйіндердің қорғалуын
 | FAIL
 | 4.3.1. Ensure that the kube-proxy metrics service is bound to localhost
 | Automated
-| Талапқал сәйкестік Kube Prometheus Stack аддонының жұмысына әсер етеді
+| Талапқа сәйкестік Kube Prometheus Stack аддонының жұмысына әсер етеді
 
 4+| **5. Kubernetes Policies**
 
@@ -862,8 +864,8 @@ VK Cloud платформасы master-түйіндердің қорғалуын
 |
 
 | PASS
-| 1.2.7. Ensure that the `--authorization-mode` argument includes `Node
-| Automated`
+| 1.2.7. Ensure that the `--authorization-mode` argument includes `Node`
+| Automated
 |
 
 | PASS
@@ -1219,7 +1221,7 @@ VK Cloud платформасы master-түйіндердің қорғалуын
 | FAIL
 | 4.3.1. Ensure that the kube-proxy metrics service is bound to localhost
 | Automated
-| Kube Prometheus Stack аддондар мен kube-proxy жүйелік компонентінің интеграциясына әсер етеді
+| Kube Prometheus Stack аддоны мен kube-proxy жүйелік компонентінің интеграциясына әсер етеді
 
 4+| **5. Kubernetes Policies**
 

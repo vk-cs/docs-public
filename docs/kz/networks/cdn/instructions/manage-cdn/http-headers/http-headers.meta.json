@@ -4,5 +4,10 @@
   "metaDescription": "Сұраулар мен жауаптарға HTTP тақырыптарын қалай қосуға және CORS қолдауын қалай баптауға болады",
   "sectionTitle": "HTTP тақырыптарын баптау",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "IP addresses",
   "icon": "",
   "weight": 4,
-  "uuid": "3c65462b-7026-4f5c-8596-524a6bd7fc82"
+  "uuid": "3c65462b-7026-4f5c-8596-524a6bd7fc82",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

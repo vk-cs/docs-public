@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: жайылған SaaS және image-based сервис инстанстарын басқару операциялары",
   "sectionTitle": "Сервис инстансын басқару",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

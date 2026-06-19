@@ -1,4 +1,4 @@
-# {heading(plan.yaml файлы)[id=ibplan]}
+# {heading(Файл plan.yaml)[id=ibplan]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -113,7 +113,7 @@
 |
 Тарификация үшін есептік кезеңнің ұзақтығын анықтайды.
 
-Жазылу форматы: `<КОЛИЧЕСТВО_МЕСЯЦЕВ> mons <КОЛИЧЕСТВО_ДНЕЙ> days`. Мысалы, `1 mons 15 days`, `30 days`.
+Жазылу форматы: `<АЙЛАР_САНЫ> mons <КҮНДЕР_САНЫ> days`. Мысалы, `1 mons 15 days`, `30 days`.
 
 {note:info}
 
@@ -136,7 +136,7 @@ billing:
 ```
 {/caption}
 
-{caption(Сурет {counter(pic)[id=numb_pic_plan_billing]} — Тарифтік жоспар құны)[align=center;position=under;id=pic_plan_billing;number={const(numb_pic_plan_billing)} ]}
+{caption(Рисунок {counter(pic)[id=numb_pic_plan_billing]} — Тарифтік жоспар құны)[align=center;position=under;id=pic_plan_billing;number={const(numb_pic_plan_billing)} ]}
 ![pic1](../../../assets/plan_billing.png)
 {/caption}
 
@@ -154,7 +154,7 @@ billing:
 
 {/note}
 
-## {heading(parameters_patch секциясы)[id=plan_options]}
+## {heading(Секция parameters_patch)[id=plan_options]}
 
 Нақты тарифтік жоспар үшін тарифтік опциялардың параметрлерін қайта анықтау немесе YAML-файлдарда берілмеген жаңаларын қосу үшін:
 
@@ -215,7 +215,7 @@ billing:
 
 {/note}
 
-## {heading(plan.yaml мысалдары файлы)[id=ibexample_plan]}
+## {heading(Файл plan.yaml мысалдары)[id=ibexample_plan]}
 
 {caption(Тарифтік опция параметрлерін қайта анықтайтын тарифтік жоспар мысалы)[align=left;position=above]}
 ```yaml

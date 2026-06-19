@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud ДҚ инстансындағы дерекқор журналдарын алу және қарау.",
   "sectionTitle": "ДҚ журналдарын алу",
   "icon": "",
-  "weight": 16
+  "weight": 16,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

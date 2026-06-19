@@ -1,10 +1,12 @@
+# {heading(Быстрый старт)[id=mlplatform-jupyterhub-instructions-quickstart]}
+
 Быстрый старт поможет вам начать работу с сервисом JupyterHub и познакомиться с его возможностями.
 
 Пройдя все шаги быстрого старта, вы научитесь создавать инстанс JupyterHub и подключаться к нему.
 
-## 1. Создайте инстанс JupyterHub
+## {heading(1. Создайте инстанс JupyterHub)[id=mlplatform-jupyterhub-instructions-quickstart-1_create-instance]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform**.
 1. Нажмите кнопку **Создать инстанс** в карточке **JupyterHub**.
 1. На шаге **Конфигурация** задайте пароль для администратора инстанса. Сохраните имя пользователя и пароль.
@@ -19,13 +21,13 @@
 1. На шаге **Выбор сети** оставьте сеть по умолчанию и нажмите кнопку **Создать инстанс**.
 1. Дождитесь создания инстанса. Обычно это занимает 10–15 минут. Когда инстанс будет создан, откроется страница с его характеристиками.
 
-## 2. Подключитесь к инстансу
+## {heading(2. Подключитесь к инстансу)[id=mlplatform-jupyterhub-instructions-quickstart-2_connect_instance]}
 
 1. Нажмите на ссылку в столбце **DNS-имя** для созданного инстанса.
 1. Авторизуйтесь на инстансе, используя учетные данные.
 
 Откроется рабочий стол инстанса JupyterHub.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=mlplatform-jupyterhub-instructions-quickstart-delete-unused]}
 
-Инстансы JupyterHub тарифицируются. Если инстанс вам больше не нужен, [удалите](../instructions/manage#delete) его.
+Инстансы JupyterHub тарифицируются. Если инстанс вам больше не нужен, [удалите](../instructions/manage#mlplatform-jupyterhub-instructions-manage-delete) его.

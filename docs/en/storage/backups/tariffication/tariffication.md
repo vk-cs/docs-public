@@ -10,8 +10,8 @@ The cost of using [backups](/en/storage/backups/concepts/about) in Cloud Backup 
 
    Depending on the type of files on the disk, different compression levels are applied to them:
 
-    - High for text documents, databases
-    - Low for already compressed formats (images, videos, archives)
+      - High for text documents, databases
+      - Low for already compressed formats (images, videos, archives)
 
    The exact data compression ratio is unknown in advance, so the total volume of data can only be determined after the backup is completed.
    {/cut}
@@ -25,11 +25,11 @@ To calculate the total price for the services, use the [calculator](https://clou
 ## What is charged
 
 - Disk snapshots for each 1 GB of the disk space. The price is the same for all disk types and is available in the [price list](https://cloud.vk.com/pricelist)  in the **Виртуальные серверы** section.
-- Volume of the data stored for each 1 GB by the VK Object Storage [tariffs](/en/storage/s3/tariffication) for the `BackupBucket` storage class.
+- Volume of the data stored for each 1 GB by the VK Object Storage [tariffs](/en/storage/s3/tariffication) for the `BackupBucket` storage class. 
 
 ## What is not charged
 
-- Requests to VK Object Storage
-- Operations of creating backup copies
-- Incoming and outgoing traffic
-- Monitoring
+- Requests to VK Object Storage.
+- Operations of creating backup copies.
+- Incoming and outgoing traffic.
+- Monitoring.

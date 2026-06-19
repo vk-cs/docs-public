@@ -1,0 +1,1 @@
+# {heading(Пошаговые инструкции)[id=bare-metal-instructions]}

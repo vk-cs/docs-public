@@ -14,43 +14,43 @@
 |
 Идентификатор сервиса UUID4 (ID), сформированный с помощью генератора UUID4
 |string (UUID4)
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |revision
 |
 Ревизия сервиса. Сочетание ревизии и ID сервиса определяет его уникальность в магазине. Остальные параметры описывают характеристики конкретной ревизии сервиса
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |name
 |
 Имя сервиса
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |short_description
 |
 Краткое описание сервиса, которое будет отображаться в его карточке в магазине
 |string, до 120 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |full_description
 |
 Полное описание сервиса, которое будет отображаться на его странице (подробнее — в разделе {linkto(/ru/tools-for-using-services/vendor-account/manage-apps/service_description#service_description_full)[text=%text]})
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |singleton
 |
 Определяет, есть ли ограничение в один инстанс сервиса на один проект облачной платформы
 |boolean
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |auto_bind
 |
 Определяет, нужно ли после развертывания сервиса автоматически создавать сервисную привязку
 |boolean
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |icon
 |
@@ -58,19 +58,19 @@ URL иконки сервиса (подробнее — в разделе {linkt
 
 Размер файла с иконкой не должен превышать 1 МБ. Размер изображения должен быть не менее 62×62 пикселя
 |string, до 512 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |help
 |
 URL документации сервиса
 |string, до 512 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |bindable
 |
 Определяет, можно ли создавать сервисные привязки для этого сервиса
 |boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |plan_updateable
 |
@@ -80,25 +80,25 @@ URL документации сервиса
 
 Значение можно переопределить для конкретного плана (подробнее в разделе — {linkto(../saas_plan#saas_plan_param)[text=%text]})
 |boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |deactivatable
 |
 Определяет, можно ли временно приостановить использование сервиса
 |boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |bindings_retrievable
 |
 Определяет, нужно ли повторять попытку создания сервисной привязки в течение определенного времени, если предыдущая попытка не удалась
 |boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |instances_retrievable
 |
 Определяет, нужно ли повторять попытку создания инстанса сервиса в течение определенного времени, если предыдущая попытка не удалась
 |boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |metadata
 |
@@ -120,7 +120,7 @@ URL документации сервиса
 
 {/note}
 |map, ключи — string
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 

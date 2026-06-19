@@ -5,5 +5,10 @@
   "sectionTitle": "Проблема с лицензиями RDS",
   "icon": "",
   "weight": 12,
-  "uuid": "80186aa5-d37c-4243-8c3b-e90c8463785a"
+  "uuid": "80186aa5-d37c-4243-8c3b-e90c8463785a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

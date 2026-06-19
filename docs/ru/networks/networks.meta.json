@@ -4,5 +4,16 @@
   "metaDescription": "Сети и доставка контента VK Cloud",
   "weight": 2,
   "icon": "",
-  "uuid": "3bb620d1-0133-4f22-bad6-cf8bf448998d"
+  "uuid": "3bb620d1-0133-4f22-bad6-cf8bf448998d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }
+

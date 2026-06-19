@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Packer көмегімен жасау",
   "sectionTitle": "Packer көмегімен жасау",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

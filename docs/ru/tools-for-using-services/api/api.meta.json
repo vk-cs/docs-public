@@ -1,9 +1,19 @@
 {
   "title": "API",
-  "shortDescription": "Управление сервисами VK Cloud через API. Особенности подключения и описание эндпоинтов",
+  "shortDescription": "Управление сервисами {var(cloud)} через API. Особенности подключения и описание эндпоинтов",
   "metaDescription": "Управление сервисами VK Cloud через API. Особенности подключения и описание эндпоинтов",
   "sectionTitle": "API",
   "icon": "",
   "weight": 6,
-  "uuid": "35bf307f-d896-4c37-9267-8fc7d90c3587"
+  "uuid": "35bf307f-d896-4c37-9267-8fc7d90c3587",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

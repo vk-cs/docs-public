@@ -1,9 +1,14 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Setting up a project for the convenience of paying for services and the first transfer of funds",
-      "metaDescription": "VK Cloud: setting up a project for the convenience of paying for services and the first transfer of funds",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 1,
-    "uuid": "e4fa8b6f-a9cb-4025-9a49-4105c440542d"
+  "title": "Quick start",
+  "shortDescription": "Setting up a project for the convenience of paying for services and the first transfer of funds",
+  "metaDescription": "VK Cloud: setting up a project for the convenience of paying for services and the first transfer of funds",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "e4fa8b6f-a9cb-4025-9a49-4105c440542d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

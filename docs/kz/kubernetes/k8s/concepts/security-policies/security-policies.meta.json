@@ -1,8 +1,18 @@
 {
   "title": "Қауіпсіздік саясаттары",
-  "shortDescription": "Kubernetes ресурстарымен жұмыс істеу кезінде кластер қауіпсіздігін арттыруғал арналған құралдар",
-  "metaDescription": "VK Cloud контейнерлері: Kubernetes ресурстарымен жұмыс істеу кезінде кластер қауіпсіздігін арттыруғал арналған құралдар.",
+  "shortDescription": "Kubernetes ресурстарымен жұмыс істеу кезінде кластер қауіпсіздігін арттыруға арналған құралдар",
+  "metaDescription": "VK Cloud контейнерлері: Kubernetes ресурстарымен жұмыс істеу кезінде кластер қауіпсіздігін арттыруға арналған құралдар.",
   "sectionTitle": "Қауіпсіздік саясаттары",
   "icon": "",
-  "weight": 12
+  "weight": 12,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

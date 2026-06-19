@@ -4,5 +4,20 @@
   "metaDescription": "Жедел жад өнімділігін тестілеу жөніндегі нұсқаулық",
   "sectionTitle": "Жедел жадты қалай тестілеуге болады",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "bb5bf8f7-5fd3-46eb-8fa1-29a151320bb0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

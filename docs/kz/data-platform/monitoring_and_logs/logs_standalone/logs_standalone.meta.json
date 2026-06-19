@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-тағы логтау",
+  "shortDescription": "Standalone-та логтарды жинау және талдау",
+  "metaDescription": "VK Data Platform-ның Standalone нұсқасында жайылған сервис данасының жұмыс логтарын қалай қарап, олармен жұмыс істеуге болатынын біліңіз",
+  "sectionTitle": "Standalone-тағы логтау",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 2,
+  "uuid": ""
+}

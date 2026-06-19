@@ -1,0 +1,14 @@
+{
+  "title": "Управление доступом",
+  "shortDescription": "Как в Cloud Trino с помощью IAM распределяются права доступа между участниками проекта, примеры ролевых моделей",
+  "metaDescription": "",
+  "sectionTitle": "Управление доступом",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

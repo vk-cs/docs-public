@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Containers сервисінің негізгі ұғымдары мен объектілері. Kubernetes-тегі белгілер (labels) мен шектеулер (taints) туралы біліңіз",
   "sectionTitle": "Белгілер мен шектеулер",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

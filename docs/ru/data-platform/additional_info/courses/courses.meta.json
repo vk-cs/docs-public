@@ -1,0 +1,14 @@
+{
+  "title": "Обучающие курсы",
+  "shortDescription": "Курсы по основам работы с {var(data-p)}",
+  "metaDescription": "Узнайте как получить доступ к курсам по основам работы с {var(data-p)} на обучающей платформе VK Tech",
+  "sectionTitle": "Обучающие курсы",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

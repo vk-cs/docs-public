@@ -1,0 +1,14 @@
+{
+  "title": "MLflow",
+  "shortDescription": "Машиналық оқыту модельдерінің толық өмірлік циклін басқаруға арналған платформа",
+  "metaDescription": "VK Data Platform инфрақұрылымындағы машиналық оқыту модельдерінің толық өмірлік циклін басқаруға арналған MLflow сервисі",
+  "sectionTitle": "MLflow",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 12,
+  "uuid": ""
+}

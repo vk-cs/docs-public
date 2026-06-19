@@ -1,79 +1,17 @@
-## Подготовительные шаги
+# {heading(Быстрый старт)[id=terraform-quick-start]}
 
-1. Установите Terraform c официального [зеркала](https://hashicorp-releases.mcs.mail.ru/terraform) от VK Cloud.
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. [Настройте двухфакторную аутентификацию](/ru/access/iam/instructions/manage-2fa) и [активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api), если это еще не сделано.
+## {heading(Подготовительные шаги)[id=terraform-quick-start-prepare]}
 
-1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Настройки проекта**.
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-prepare]}
 
-1. Перейдите на вкладку **Terraform**. Скачайте основной [файл конфигурации Terraform](../reference/configuration#fayl_konfiguracii_provaydera_terraform) и [файл конфигурации зеркала Terraform](../reference/configuration#fayl_konfiguracii_zerkala_terraform), нажав одноименные кнопки.
+## {heading(Инициализация Terraform)[id=terraform-quick-start-init]}
 
-    Будут скачаны файлы с именами  `vkcs_provider.tf` и  `terraform.rc`.
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-init]}
 
-1. Выполните с файлами следующие действия:
+## {heading(Создание ресурсов с помощью Terraform)[id=terraform-quick-start-create]}
 
-   {tabs}
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-create]}
 
-   {tab(Windows)}
+## {heading(Обновление Terraform)[id=terraform-quick-start-update]}
 
-    1. Вставьте `%APPDATA%` в адресную строку проводника Windows и скопируйте в открывшуюся директорию `terraform.rc`.
-    1. Скопируйте файл `vkcs_provider.tf` в рабочую директорию, из которой вы планируете работать с платформой.
-
-        Под каждый проект VK Cloud рекомендуется создавать отдельную рабочую директорию.
-
-   {/tab}
-
-   {tab(Другие ОС)}
-
-    1. Переименуйте файл конфигурации зеркала Terraform из `terraform.rc` в `.terraformrc`.
-    1. Скопируйте файл `.terraformrc` в корень домашней директории пользователя.
-    1. Скопируйте файл `vkcs_provider.tf` в рабочую директорию, из которой вы планируете работать с платформой.
-
-        Под каждый проект VK Cloud рекомендуется создавать отдельную рабочую директорию.
-
-   {/tab}
-
-   {/tabs}
-
-    {note:info}
-
-    Вы можете создать оба конфигурационных файла самостоятельно. Вы также можете отредактировать скачанные файлы — например, чтобы добавить дополнительного Terraform-провайдера. Содержимое файлов описано в статье [Файлы конфигурации](../reference/configuration).
-
-    {/note}
-
-## Инициализация Terraform
-
-В директории, из которой вы планируете работать с проектом, выполните команду:
-
-```console
-terraform init
-```
-
-Будут созданы дополнительные файлы, необходимые для работы Terraform.
-
-## Создание ресурсов с помощью Terraform
-
-1. Создайте конфигурацию ресурсов в рабочей директории — например, конфигурацию для [создания виртуальной машины](../how-to-guides/iaas/create).
-
-1. Выполните команду:
-
-    ```console
-    terraform apply
-    ```
-
-    При запросе подтверждения введите `yes`.
-
-1. Дождитесь завершения операции.
-
-Созданные ресурсы появятся в вашем личном кабинете.
-
-## Обновление Terraform
-
-Если версия провайдера в файле `vkcs_provider.tf` ниже той, которая нужна для создания ресурса, при валидации конфигурации возникнет ошибка. Чтобы ее избежать, обновите провайдер до [последней версии](https://github.com/vk-cs/terraform-provider-vkcs) или версии, указанной в описании ресурса:
-
-1. Откройте файл `vkcs_provider.tf` и измените версию на нужную, например: `version = "~> 0.8.0"`.
-1. В терминале выполните команду:
-
-  ```console
-  terraform init --upgrade
-  ```
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-update]}

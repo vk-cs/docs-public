@@ -1,9 +1,14 @@
 {
-    "title": "Tariffication",
-      "shortDescription": "VK Cloud management console billing features",
-      "metaDescription": "Features of VK Cloud management console billing.",
-    "sectionTitle": "Tariffication",
-    "icon": "",
-    "weight": 4,
-    "uuid": "315854c0-1f37-4cd4-b572-edc1a4e8615a"
+  "title": "Tariffication",
+  "shortDescription": "VK Cloud management console billing features",
+  "metaDescription": "Features of VK Cloud management console billing.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "315854c0-1f37-4cd4-b572-edc1a4e8615a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

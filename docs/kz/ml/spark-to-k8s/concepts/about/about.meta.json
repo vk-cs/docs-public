@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud-та іске асырылған Kubernetes ішіндегі Spark сервисінің мүмкіндіктеріне шолу",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

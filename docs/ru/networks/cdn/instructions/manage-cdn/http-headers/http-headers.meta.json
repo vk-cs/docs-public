@@ -5,5 +5,10 @@
     "sectionTitle": "Настройка HTTP-заголовков",
     "icon": "",
     "weight": 5,
-    "uuid": "ded4cff5-ff35-4c4d-b6b7-aee456e92b6b"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ded4cff5-ff35-4c4d-b6b7-aee456e92b6b"
 }

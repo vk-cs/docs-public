@@ -1,3 +1,5 @@
+# {heading(Фотосуреттердегі мәтінді тану)[id=vision-instructions-scene-text-recognition]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл әдіс мыналарды тануға мүмкіндік береді:
@@ -9,24 +11,24 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/scene_text/recognize`
 
-## Сұрау
+## {heading(Сұрау)[id=vision-instructions-scene-text-recognition-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
-| Параметр         | Тип    | Мәні                                 |
+| Параметр         | Тип    | Значение                                 |
 | ---------------- | ------ | ---------------------------------------- |
 | oauth_token      | string | OAuth2 access token (required non-empty) |
 | oauth_provider   | string | OAuth2 провайдері (required non-empty)    |
 
 Қолдау көрсетілетін OAuth2 провайдерлері:
 
-| Провайдер | Мәні `oauth_provider` | Токенді алу                                    |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаланы](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаланы]} қараңыз|
 
 Сұрау параметрлері сұрау денесінде JSON форматында беріледі:
 
-| Параметр | Тип    | Міндетті | Сипаттама                                                 |
+| Параметр | Тип    | Обязательный | Описание                                                 |
 |----------| ------ | -------------- | -------------------------------------------------------- |
 | file | string | ![](/kz/assets/check.svg "inline")   | Файлдар массиві. Файл атаулары әртүрлі болуы тиіс            |
 | meta | object | ![](/kz/assets/check.svg "inline")   | Сұрау денесі                                             |
@@ -37,8 +39,8 @@ ENDPOINT: `/api/v1/scene_text/recognize`
 |===
 | Параметр
 | Тип
-| Міндетті
-| Сипаттама
+| Обязательный
+| Описание
 
 | images
 | `[]image_meta`
@@ -58,25 +60,20 @@ ENDPOINT: `/api/v1/scene_text/recognize`
 
 `image_meta` параметрлері:
 
-| Параметр  | Тип    | Міндетті                      | Сипаттама                                               |
+| Параметр  | Тип    | Обязательный                      | Описание                                               |
 |-----------| ------ |-------------------------------------| ------------------------------------------------------ |
 | name      | string | ![](/kz/assets/check.svg "inline")  | Сұраудағы және жауаптағы файлдарды сәйкестендіруге арналған файл атаулары |
 
 {note:warn}
 
-Әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-## Сұрау үлгісі
+## {heading(Сұрау үлгісі)[id=vision-instructions-scene-text-recognition-request-example]}
 
 ```curl
-curl -X 'POST' \
-curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
- -H "Accept: application/json" \
- -H "Content-Type: multipart/form-data" \
- -F "file=@image3.jpg" \
- -F "meta={
+curl -X 'POST' curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs"  -H "Accept: application/json"  -H "Content-Type: multipart/form-data"  -F "file=@image3.jpg"  -F "meta={
   "images": [
     {
       "name": "file",
@@ -86,9 +83,9 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 }"
 ```
 
-## Жауап
+## {heading(Жауап)[id=vision-instructions-scene-text-recognition-answer]}
 
-| Параметр      | Тип      | Сипаттама                                                 |
+| Параметр      | Тип      | Описание                                                 |
 | ------------- | -------- | -------------------------------------------------------- |
 | status        | int      | Орындалған операцияның күй коды                         |
 | body          | object   | Жауап денесі                                              |
@@ -103,7 +100,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 
 `objects` параметрлері:
 
-| Параметр      | Тип      | Міндетті | Сипаттама                                                 |
+| Параметр      | Тип      | Обязательный | Описание                                                 |
 | ------------- | -------- |--------------- | -------------------------------------------------------- |
 | status        | int      | ![](/kz/assets/check.svg "inline")             | Орындалған операцияның күй коды: `0` — сәтті, `1` — тұрақты қате, `2` — уақытша қате |
 | name          | string   | ![](/kz/assets/check.svg "inline")             | Сұраудағы және жауаптағы файлдарды сәйкестендіруге арналған файл атауы    |
@@ -111,13 +108,13 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 
 `words` параметрлері:
 
-| Параметр      | Тип      | Міндетті | Сипаттама                                                 |
+| Параметр      | Тип      | Обязательный | Описание                                                 |
 | ------------- | -------- |--------------- | -------------------------------------------------------- |
 | prob          | float    | ![](/kz/assets/check.svg "inline")             | Жолды тану сенімділігі                         |
 | coord         | [][]int64| ![](/kz/assets/check.svg "inline")             | Сөз координаттары — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] |
 | text          | string   | ![](/kz/assets/check.svg "inline")             | Жауаптың танылған сөзі                                |
 
-## Жауап үлгісі
+## {heading(Жауап үлгісі)[id=vision-instructions-scene-text-recognition-answer-example]}
 
 ```json
 {
@@ -157,18 +154,14 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 }
 ```
 
-## Қосымша мысалдар
+## {heading(Қосымша мысалдар)[id=vision-instructions-scene-text-recognition-extra-examples]}
 
 {cut(Кескінде мәтін жоқ)}
 
 Сұрау үлгісі:
 
 ```console
-curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
- -H "Accept: application/json" \
- -H "Content-Type: multipart/form-data" \
- -F "file=@image.jpg" \
- -F "meta={
+curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs"  -H "Accept: application/json"  -H "Content-Type: multipart/form-data"  -F "file=@image.jpg"  -F "meta={
   "images": [
     {
       "name": "file"
@@ -193,11 +186,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 Сұрау үлгісі:
 
 ```console
-curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
- -H "Accept: application/json" \
- -H "Content-Type: multipart/form-data" \
- -F "file=@image3.jpg" \
- -F "meta={
+curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs"  -H "Accept: application/json"  -H "Content-Type: multipart/form-data"  -F "file=@image3.jpg"  -F "meta={
   "images": [
     {
       "name": "file1"

@@ -1,8 +1,18 @@
 {
   "title": "Kube Prometheus Stack аддонын жаңарту",
-  "shortDescription": "Нұсқалары арасында үлкен айырмашылық болғанда аддонды қолмен қалай жаңартуғал болады",
-  "metaDescription": "Нұсқалары арасында үлкен айырмашылық болғанда аддонды қолмен қалай жаңартуғал болады.",
+  "shortDescription": "Нұсқалары арасында үлкен айырмашылық болғанда аддонды қолмен қалай жаңартуға болады",
+  "metaDescription": "Нұсқалары арасында үлкен айырмашылық болғанда аддонды қолмен қалай жаңартуға болады.",
   "sectionTitle": "Kube Prometheus Stack аддонын жаңарту",
   "icon": "",
-  "weight": 9
+  "weight": 14,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

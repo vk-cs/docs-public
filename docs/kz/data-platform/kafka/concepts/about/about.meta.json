@@ -1,8 +1,15 @@
 {
   "title": "Сервис туралы",
   "shortDescription": "Cloud Kafka сервисі туралы ақпарат",
-  "metaDescription": "VK Cloud-тағы Cloud Kafka: сервис туралы ақпарат",
+  "metaDescription": "VK Data Platform жүйесіндегі Cloud Kafka: сервис туралы ақпарат",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

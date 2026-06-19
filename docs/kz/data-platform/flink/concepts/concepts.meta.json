@@ -1,8 +1,15 @@
 {
-  "title": "Концепции",
+  "title": "Тұжырымдамалар",
   "shortDescription": "VK Data Platform ішіндегі Flink сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
   "metaDescription": "VK Data Platform ішіндегі Flink сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
-  "sectionTitle": "Концепции",
+  "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

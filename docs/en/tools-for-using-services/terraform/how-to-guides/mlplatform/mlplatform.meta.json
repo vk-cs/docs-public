@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 70,
-  "uuid": "89340d10-bfea-4c2c-a96a-eebaa42abb5c"
+  "uuid": "89340d10-bfea-4c2c-a96a-eebaa42abb5c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

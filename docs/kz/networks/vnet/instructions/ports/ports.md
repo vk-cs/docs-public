@@ -1,25 +1,25 @@
+# {heading(Порттар)[id=vnet-ports]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Сіз OpenStack порттарын басқара аласыз: порттарды қарау, қосу, өңдеу және жою.
 
 {note:warn}
-
 - Төменде көрсетілген барлық операциялар сыртқы желіде қолжетімсіз.
-- құрылғысының порттарын басқаруға болмайды `SNAT`.
+- `SNAT` құрылғысының порттарын басқаруға болмайды.
+  {/note}
 
-{/note}
-
-## Порттар тізімін және олар туралы ақпаратты қарау
+## {heading(Порттар тізімін және олар туралы ақпаратты қарау)[id=vnet-ports-view]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желілер**.
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
-1. қойындысына өтіңіз **Порты**.
+1. **Порттар** қойындысына өтіңіз.
 
    Порттар тізімі көрсетіледі.
 
@@ -31,7 +31,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
 1. Барлық порттардың тізімін көру үшін пәрменді орындаңыз:
 
@@ -41,17 +41,17 @@
 
 1. Ішкі желідегі барлық порттардың тізімін көру үшін:
 
-   1. Ішкі желілердің идентификаторлары мен атауларын алу үшін пәрменді орындаңыз:
+    1. Ішкі желілердің идентификаторлары мен атауларын алу үшін пәрменді орындаңыз:
 
-      ```console
-      openstack subnet list
-      ```
+       ```console
+       openstack subnet list
+       ```
 
-   1. Пәрменді орындаңыз:
+    1. Пәрменді орындаңыз:
 
-      ```console
-      openstack port list --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>
-      ```
+       ```console
+       openstack port list --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>
+       ```
 
 1. Порт туралы толық ақпаратты көру үшін бұрын алынған порт идентификаторын немесе атауын қойып, пәрменді орындаңыз:
 
@@ -77,31 +77,31 @@ openstack port show --help
 
 {/tabs}
 
-## Портты қосу
+## {heading(Портты қосу)[id=vnet-ports-add]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желілер**.
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
-1. қойындысына өтіңіз **Порты**.
-1. батырмасын басыңыз **Добавить порт**.
+1. **Порттар** қойындысына өтіңіз.
+1. **Порт қосу** батырмасын басыңыз.
 1. Порт параметрлерін орнатыңыз:
 
-   - порт атауы,
-   - (опционалды) порттың DNS атауы,
-   - порттың IP мекенжайы.
+    - порт атауы,
+    - (опционалды) порттың DNS атауы,
+    - порттың IP мекенжайы.
 
-1. батырмасын басыңыз **Портты жасау**.
+1. **Портты жасау** батырмасын басыңыз.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
 1. Пәрменді орындаңыз:
 
@@ -119,9 +119,9 @@ openstack port create --help
 
 {/tabs}
 
-## Портты қосу немесе өшіру
+## {heading(Портты қосу немесе өшіру)[id=vnet-ports-on-off]}
 
-### Портты қосу
+### {heading(Портты қосу)[id=vnet-ports-on]}
 
 {tabs}
 
@@ -129,31 +129,31 @@ openstack port create --help
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірнеше өшірілген портты бірден қоса аласыз.
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желілер**.
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
-1. қойындысына өтіңіз **Порты**.
+1. **Порттар** қойындысына өтіңіз.
 1. Портты тәсілдердің бірімен қосыңыз:
 
-   - Жалаушалар арқылы:
+    - Жалаушалар арқылы:
 
-     1. Жалауша арқылы қажетті портты таңдаңыз.
-     1. батырмасын басыңыз **Портты қосу**.
-     1. Операцияның орындалуын растаңыз.
+        1. Жалауша арқылы қажетті портты таңдаңыз.
+        1. **Портты қосу** батырмасын басыңыз.
+        1. Операцияның орындалуын растаңыз.
 
-   - Мәзір арқылы:
+    - Мәзір арқылы:
 
-     1. Қажетті порт үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып **Портты қосу**.
-     1. Операцияның орындалуын растаңыз.
+        1. Қажетті порт үшін ![ ](../../../../assets/more-icon.svg "inline") белгішесін басып, **Портты қосу** тармағын таңдаңыз.
+        1. Операцияның орындалуын растаңыз.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-1. [Қажетті порттың атауын немесе идентификаторын алыңыз](#porttar_tizimin_zhne_olar_turaly_akparatty_karau) қажетті порттың.
+1. {linkto(#vnet-ports-view)[text=Қажетті порттың атауын немесе идентификаторын алыңыз]}.
 
 1. Пәрменді орындаңыз:
 
@@ -171,7 +171,7 @@ openstack port set --help
 
 {/tabs}
 
-### Портты өшіру
+### {heading(Портты өшіру)[id=vnet-ports-off]}
 
 Өшірілген порт ешқандай трафикті өткізбейді.
 
@@ -181,31 +181,31 @@ openstack port set --help
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірнеше қосылған портты бірден өшіре аласыз.
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желілер**.
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
-1. қойындысына өтіңіз **Порты**.
+1. **Порттар** қойындысына өтіңіз.
 1. Портты тәсілдердің бірімен өшіріңіз:
 
-   - Жалаушалар арқылы:
+    - Жалаушалар арқылы:
 
-     1. Жалауша арқылы қажетті портты таңдаңыз.
-     1. батырмасын басыңыз **Портты өшіру**.
-     1. Операцияның орындалуын растаңыз.
+        1. Жалауша арқылы қажетті портты таңдаңыз.
+        1. **Портты өшіру** батырмасын басыңыз.
+        1. Операцияның орындалуын растаңыз.
 
-   - Мәзір арқылы:
+    - Мәзір арқылы:
 
-     1. Қажетті порт үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып **Портты өшіру**.
-     1. Операцияның орындалуын растаңыз.
+        1. Қажетті порт үшін ![ ](../../../../assets/more-icon.svg "inline") белгішесін басып, **Портты өшіру** тармағын таңдаңыз.
+        1. Операцияның орындалуын растаңыз.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-1. [Қажетті порттың атауын немесе идентификаторын алыңыз](#porttar_tizimin_zhne_olar_turaly_akparatty_karau) қажетті порттың.
+1. {linkto(#vnet-ports-view)[text=Қажетті порттың атауын немесе идентификаторын алыңыз]}.
 
 1. Пәрменді орындаңыз:
 
@@ -223,53 +223,53 @@ openstack port set --help
 
 {/tabs}
 
-## Портты өңдеу
+## {heading(Портты өңдеу)[id=vnet-ports-edit]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желілер**.
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін — қажетті ішкі желінің атауын басыңыз.
-1. қойындысына өтіңіз **Порты**.
-1. Қажетті порт үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып **Өңдеу**.
+1. **Порттар** қойындысына өтіңіз.
+1. Қажетті порт үшін ![ ](../../../../assets/more-icon.svg "inline") белгішесін басып, **Өңдеу** тармағын таңдаңыз.
 1. Порт параметрлерін орнатыңыз:
 
-   - порт атауы,
-   - порттың DNS атауы,
-   - порттың IP мекенжайы.
+    - порт атауы,
+    - порттың DNS атауы,
+    - порттың IP мекенжайы.
 
-1. батырмасын басыңыз **Өзгерістерді сақтау**.
+1. **Өзгерістерді сақтау** батырмасын басыңыз.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-1. [Қажетті порттың атауын немесе идентификаторын алыңыз](#porttar_tizimin_zhne_olar_turaly_akparatty_karau) қажетті порттың.
+1. {linkto(#vnet-ports-view)[text=Қажетті порттың атауын немесе идентификаторын алыңыз]}.
 
 1. Порт параметрлерін өзгертіңіз:
 
-   - Порт атауы:
+    - Порт атауы:
 
-     ```console
-     openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --name <НОВОЕ_ИМЯ>
-     ```
+      ```console
+      openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --name <НОВОЕ_ИМЯ>
+      ```
 
-   - Порттың DNS атауы:
+    - Порттың DNS атауы:
 
-     ```console
-     openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --dns-name <НОВОЕ_ДОМЕННОЕ_ИМЯ>
-     ```
+      ```console
+      openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --dns-name <НОВОЕ_ДОМЕННОЕ_ИМЯ>
+      ```
 
-   - Порттың IP мекенжайы:
+    - Порттың IP мекенжайы:
 
-     ```console
-     openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --no-fixed-ip --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<НОВЫЙ_IP-АДРЕС_ПОРТА>
-     ```
+      ```console
+      openstack port set <ИМЯ_ИЛИ_ID_ПОРТА> --no-fixed-ip --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<НОВЫЙ_IP-АДРЕС_ПОРТА>
+      ```
 
 Қолдау көрсетілетін параметрлер туралы толық ақпаратты алу үшін пәрменді пайдаланыңыз:
 
@@ -281,27 +281,29 @@ openstack port set --help
 
 {/tabs}
 
-## Порт үшін қауіпсіздік топтарын баптау
+## {heading(Порт үшін қауіпсіздік топтарын баптау)[id=vnet-ports-sg-manage]}
 
-### Топты портқа тағайындау
+### {heading(Топты портқа тағайындау)[id=vnet-ports-sg-set]}
 
-{include(/kz/_includes/_sg-port-set.md)}
+{include(../../../../_includes/_sg-port-set.md)}
 
-### Топты порттан ажырату
+### {heading(Топты порттан ажырату)[id=vnet-ports-sg-unset]}
 
-{include(/kz/_includes/_sg-port-unset.md)}
+{include(../../../../_includes/_sg-port-unset.md)}
 
-## Порт үшін IP Source Guard баптау
+{ifdef(public)}
 
-тізімінде қамтылған трафиктің ғана порттан шығуына рұқсат береді `allowed-address`.
+## {heading(Порт үшін IP Source Guard баптау)[id=vnet-ports-ip-source-guard-manage]}
+
+Бұл механизм бастапқы IP мекенжайы `allowed-address` тізімінде қамтылған трафиктің ғана порттан шығуына рұқсат береді.
 
 {tabs}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-1. [Қажетті порттың атауын немесе идентификаторын алыңыз](#porttar_tizimin_zhne_olar_turaly_akparatty_karau) қажетті порттың.
+1. {linkto(#vnet-ports-view)[text=Қажетті порттың атауын немесе идентификаторын алыңыз]}.
 
 1. Бір бастапқы IP мекенжайын қосу үшін пәрменді орындаңыз:
 
@@ -333,12 +335,12 @@ openstack port unset --help
 
 {/tabs}
 
-## Портты жою
+{/ifdef}
+
+## {heading(Портты жою)[id=vnet-ports-delete]}
 
 {note:info}
-
 Егер портты маршрутизатор пайдаланып тұрса, оны жою мүмкін емес.
-
 {/note}
 
 {tabs}
@@ -347,31 +349,31 @@ openstack port unset --help
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірнеше портты бірден жоя аласыз.
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желілер**.
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
-1. қойындысына өтіңіз **Порты**.
+1. **Порттар** қойындысына өтіңіз.
 1. Портты тәсілдердің бірімен жойыңыз:
 
-   - Жалаушалар арқылы:
+    - Жалаушалар арқылы:
 
-     1. Жалауша арқылы қажетті портты таңдаңыз.
-     1. батырмасын басыңыз **Портты жою**.
-     1. Операцияның орындалуын растаңыз.
+        1. Жалауша арқылы қажетті портты таңдаңыз.
+        1. **Портты жою** батырмасын басыңыз.
+        1. Операцияның орындалуын растаңыз.
 
-   - Мәзір арқылы:
+    - Мәзір арқылы:
 
-     1. Қажетті порт үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып **Портты жою**.
-     1. Операцияның орындалуын растаңыз.
+        1. Қажетті порт үшін ![ ](../../../../assets/more-icon.svg "inline") белгішесін басып, **Портты жою** тармағын таңдаңыз.
+        1. Операцияның орындалуын растаңыз.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-1. [Қажетті порттың атауын немесе идентификаторын алыңыз](#porttar_tizimin_zhne_olar_turaly_akparatty_karau) қажетті порттың.
+1. {linkto(#vnet-ports-view)[text=Қажетті порттың атауын немесе идентификаторын алыңыз]}.
 
 1. Пәрменді орындаңыз:
 

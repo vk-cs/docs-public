@@ -149,8 +149,8 @@ schema:
         * Әдепкі мән `n` және стандартты мән негізінде формула бойынша есептелуі үшін `n` көрсетіңіз ({linkto(#pic_option_int_with_user_step_free1)[text=%number-сурет]}, {linkto(#pic_option_int_with_user_step_free2)[text=%number-сурет]}):
 
            ```txt
-         billing.base + n * billing.unit.size
-         ```
+           billing.base + n * billing.unit.size
+           ```
 
           {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free1]} — integer типті тегін тарифтік опция, пайдаланушы анықтайтын өзгерту қадамымен (billing.base = 25, schema.default = 1, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free1;number={const(numb_pic_option_int_with_user_step_free1)} ]}
           ![pic1](../../../assets/Option_int_with_user_step_free1.png)
@@ -202,12 +202,12 @@ schema:
 
       {caption(`billing` секциясын толтыру мысалы)[align=left;position=above]}
        ```yaml
-      billing:
-        base: 25
-        cost: 150
-        unit:
-           size: 100
-      ```
+       billing:
+         base: 25
+         cost: 150
+         unit:
+            size: 100
+       ```
       {/caption}
 
       Жоғарыдағы мысалда опцияның стандартты мәнінен асатын әрбір қосымша 100 бірлік 150 ақша бірлігі тұрады.
@@ -634,7 +634,7 @@ schema:
 
 Дискіні сипаттау үшін:
 
-1. `datasource` файлында бұлттық платформадан диск типтері туралы деректерді алатын `parameters/<OPTION_NAME>.yaml` типті тарифтік опцияны сипаттаңыз:
+1. `parameters/<OPTION_NAME>.yaml` файлында бұлттық платформадан диск типтері туралы деректерді алатын `datasource` типті тарифтік опцияны сипаттаңыз:
 
     1. `actions` параметрін көрсетіңіз.
     1. `schema` секциясында келесі параметрлерді беріңіз:

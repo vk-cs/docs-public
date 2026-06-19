@@ -1,9 +1,18 @@
 {
-    "title": "Просмотр логов",
-      "shortDescription": "Как просмотреть логи",
-      "metaDescription": "Как выполнять базовые операции в сервисе Cloud Logging. Просмотр логов в личном кабинете VK Cloud, с помощью API или сервиса Grafana",
-    "sectionTitle": "Просмотр логов",
-    "icon": "",
-    "weight": 4,
-    "uuid": "411c861c-495c-4379-83f4-93939715c7c0"
+  "title": "Просмотр логов",
+  "shortDescription": "Как просмотреть логи",
+  "metaDescription": "Как выполнять базовые операции в сервисе Cloud Logging. Просмотр логов в личном кабинете VK Cloud, с помощью API или сервиса Grafana",
+  "sectionTitle": "Просмотр логов",
+  "icon": "",
+  "weight": 4,
+  "uuid": "411c861c-495c-4379-83f4-93939715c7c0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

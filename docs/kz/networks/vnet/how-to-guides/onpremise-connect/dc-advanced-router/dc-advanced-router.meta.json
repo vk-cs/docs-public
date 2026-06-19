@@ -1,8 +1,13 @@
 {
-  "title": "VK Cloud жүйесіне Cloud Direct Connect желісі арқылы қосылу",
-  "shortDescription": "Бөлінген қосылым мен продвинутый маршрутизаторды пайдаланып, On-premises инфрақұрылымы мен VK Cloud платформасы арасында деректерді қалай ұйымдастыруға болады",
+  "title": "{var(cloud)} жүйесіне Cloud Direct Connect желісі арқылы қосылу",
+  "shortDescription": "Бөлінген қосылым мен продвинутый маршрутизаторды пайдаланып, On-premises инфрақұрылымы мен {var(cloud)} платформасы арасында деректерді қалай ұйымдастыруға болады",
   "metaDescription": "Бөлінген қосылым мен продвинутый маршрутизаторды пайдаланып, On-premises инфрақұрылымы мен VK Cloud платформасы арасында деректерді қалай ұйымдастыруға болады",
-  "sectionTitle": "VK Cloud жүйесіне Cloud Direct Connect желісі арқылы қосылу",
+  "sectionTitle": "{var(cloud)} жүйесіне Cloud Direct Connect желісі арқылы қосылу",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,12 +1,17 @@
 {
-    "title": "Security groups",
-      "shortDescription": "How to create and delete security groups and more",
-      "metaDescription": "How to create, edit and delete security groups and assign security group rules to ports and instances in VK Cloud",
-    "sectionTitle": "Security groups",
-    "icon": "",
-    "weight": 3,
-    "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
-    "additionalUuids": [
-        "267a104a-7b16-4295-b009-7aca075dcf17"
+  "title": "Security groups",
+  "shortDescription": "How to create and delete security groups and more",
+  "metaDescription": "How to create, edit and delete security groups and assign security group rules to ports and instances in VK Cloud",
+  "sectionTitle": "Security groups",
+  "icon": "",
+  "weight": 3,
+  "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
+  "additionalUuids": [
+    "267a104a-7b16-4295-b009-7aca075dcf17"
+  ],
+  "build": {
+    "for": [
+      "public"
     ]
+  }
 }

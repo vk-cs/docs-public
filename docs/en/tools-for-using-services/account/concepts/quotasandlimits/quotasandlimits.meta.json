@@ -1,12 +1,17 @@
 {
-    "title": "Quotas and limits",
-      "shortDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects",
-      "metaDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects.",
-    "sectionTitle": "Quotas and limits",
-    "icon": "",
-    "weight": 3,
-    "additionalUuids": [
-        "a4384e87-9aef-4953-9b4a-c9763dd8e3cd"
-    ],
-    "uuid": "7d9ca829-6fd1-4121-b3ae-5479ed770b65"
+  "title": "Quotas and limits",
+  "shortDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects",
+  "metaDescription": "Listing quotas and technical restrictions that apply in VK Cloud projects.",
+  "sectionTitle": "Quotas and limits",
+  "icon": "",
+  "weight": 3,
+  "additionalUuids": [
+    "a4384e87-9aef-4953-9b4a-c9763dd8e3cd"
+  ],
+  "uuid": "7d9ca829-6fd1-4121-b3ae-5479ed770b65",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

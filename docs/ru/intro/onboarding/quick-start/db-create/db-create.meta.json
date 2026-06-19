@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Databases: создайте первую управляемую базу данных",
   "icon": "",
   "weight": 3,
-  "uuid": "d1183c66-d968-4c35-b96f-5aa6de03fa6c"
+  "uuid": "d1183c66-d968-4c35-b96f-5aa6de03fa6c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

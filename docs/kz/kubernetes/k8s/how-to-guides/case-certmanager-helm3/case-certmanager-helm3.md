@@ -1,44 +1,39 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-[cert-manager](https://cert-manager.io/) құралының көмегімен Kubernetes кластерлеріндегі сертификаттарды басқаруғал болады:
+# {heading(Helm 3 көмегімен cert-manager-пен жұмыс істеу)[id=k8s-case-certmanager-helm3]}
 
-- Сертификаттау орталығы (certificate authority, CA) рөлін атқаратын көздерге сұраулар жіберу арқылы сертификаттарды, соның ішінде өздігінен қол қойылған (self-signed) сертификаттарды шығару.
+{include(/kz/_includes/_translated_by_ai.md)}
+
+[cert-manager](https://cert-manager.io/) құралының көмегімен Kubernetes кластерлеріндегі сертификаттарды басқаруға болады:
+
+* Сертификаттау орталығы (certificate authority, CA) рөлін атқаратын көздерге сұраулар жіберу арқылы сертификаттарды, соның ішінде өздігінен қол қойылған (self-signed) сертификаттарды шығару.
 
   Көздер мысалдары:
 
-  - [Venafi](https://www.venafi.com/) сияқты киберқауіпсіздік шешімдерінің провайдерлері;
-  - [Let’s Encrypt](https://letsencrypt.org/) сияқты сертификаттар провайдерлері;
-  - [HashiCorp Vault](https://www.vaultproject.io/) сияқты құпиялар қоймалары;
-  - ішінде сертификаттың ашық бөлігі мен жеке кілті бар жергілікті контейнерлер.
+  * [Venafi](https://www.venafi.com/) сияқты киберқауіпсіздік шешімдерінің провайдерлері;
+  * [Let’s Encrypt](https://letsencrypt.org/) сияқты сертификат провайдерлері;
+  * [HashiCorp Vault](https://www.vaultproject.io/) сияқты құпиялар қоймалары;
+  * ішінде сертификаттың ашық бөлігі мен жеке кілті бар жергілікті контейнерлер.
 
-- Қолданылу мерзімі аяқталып жатқан сертификаттарды автоматты түрде қайта шығару.
+* Қолданылу мерзімі аяқталып жатқан сертификаттарды автоматты түрде қайта шығару.
 
-`cert-manager` көмегімен шығарылған сертификат басқал Kubernetes ресурстарына қолжетімді болады. Мысалы, оны Ingress үшін пайдалануғал болады.
+`cert-manager` көмегімен шығарылған сертификат басқа Kubernetes ресурстарына қолжетімді болады. Мысалы, оны Ingress үшін пайдалануға болады.
 
-Төменде [Helm 3](https://helm.sh/) көмегімен Kubernetes кластерлерінде `cert-manager` орнату және жаңарту қалай орындалатыны көрсетіледі. Сондай-алқ `cert-manager` жұмысқал қабілеттілігін тексеру үшін өздігінен қол қойылған сертификат шығарылады.
+Төменде [Helm 3](https://helm.sh/) көмегімен Kubernetes кластерлерінде `cert-manager` орнату және жаңарту қалай орындалатыны көрсетіледі. Сондай-ақ `cert-manager` жұмысқа қабілеттілігін тексеру үшін өздігінен қол қойылған сертификат шығарылады.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-case-certmanager-helm3-prepare]}
 
-1. Егер сізде әлі Kubernetes кластеры болмаса, оны жасаңыз.
-
-   {note:info}
-
-   Уақытты үнемдеу үшін VK Cloud-та бірнеше минут ішінде [Kubernetes кластерін](../../../../kubernetes/k8s/instructions/create-cluster) жасай аласыз.
-
-   {/note}
+{include(/kz/_includes/_create-test-cluster.md)}
 
 1. Кластер нұсқасын анықтаңыз.
 
-1. Кластерге қосылу жоспарланған хостта, егер утилита әлі орнатылмаса, `kubectl` [орнатыңыз](https://kubernetes.io/docs/tasks/tools/#kubectl).
+1. Кластерге қосылу жоспарланған хостта, егер бұл әлі жасалмаса, `kubectl` утилитасын {linkto(../../connect/kubectl#k8s-kubectl)[text=орнатып, баптаңыз]}.
 
-   Орнату үшін кластермен [үйлесімді](https://kubernetes.io/releases/version-skew-policy/#kubectl) `kubectl` нұсқасын таңдаңыз.
-
-1. `kubectl` көмегімен кластерге қосыла алатыныңызғал көз жеткізіңіз.
+1. `kubectl` көмегімен кластерге {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=қосылыңыз]}.
 
 1. Кластерге қосылу жоспарланған хостта, егер утилита әлі орнатылмаса, 3.0.0 немесе одан жоғары нұсқадағы Helm-ді [орнатыңыз](https://helm.sh/docs/intro/install/).
 
    Орнату үшін кластермен [үйлесімді](https://helm.sh/docs/topics/version_skew/) Helm нұсқасын таңдаңыз.
 
-## 1. Репозиторийді қосып, орнату үшін нұсқаны таңдаңыз
+## {heading(1. Репозиторийді қосып, орнату үшін нұсқаны таңдаңыз)[id=k8s-case-certmanager-helm3-add-repo]}
 
 1. `cert-manager` репозиторийін қосыңыз:
 
@@ -60,21 +55,21 @@
 
 1. Кластерге орнатылатын `cert-manager` нұсқасын таңдаңыз.
 
-   `cert-manager` және Kubernetes нұсқаларының үйлесімділік кестесі [cert-manager ресми құжаттамасында](https://cert-manager.io/docs/installation/supported-releases/) берілген.
+   `cert-manager` және Kubernetes нұсқаларының үйлесімділік кестесі [cert-manager ресми құжаттамасында](https://cert-manager.io/docs/installation/supported-releases/) келтірілген.
 
    {note:info}
 
-   Төменде `1.12.3` нұсқасына дейінгі [жаңартуды](#5_cert_manager_zhanartynyz) қосымша көрсету үшін `1.11.3` нұсқасындағы `cert-manager` орнатылады.
+   Төменде қосымша түрде `1.12.3` нұсқасына дейінгі {linkto(#k8s-case-certmanager-helm3-upd-cm)[text=жаңартуды]} көрсету үшін `1.11.3` нұсқасындағы `cert-manager` орнатылады.
 
-   Сіз өзіңізге қолайлы кез келген нұсқаны таңдай аласыз. Төменде келтірілген пәрмендерді таңдалған нұсқалғал сәйкес түзетіңіз.
+   Сіз өзіңізге қолайлы кез келген нұсқаны таңдай аласыз. Төменде келтірілген пәрмендерді таңдалған нұсқаға сәйкес түзетіңіз.
 
    {/note}
 
-## 2. cert-manager орнатыңыз
+## {heading(2. cert-manager орнатыңыз)[id=k8s-case-certmanager-helm3-install-cm]}
 
 1. `cert-manager` жұмысына қажетті Custom Resource Definitions (CRDs) орнатыңыз.
 
-   CRD-лер `kubectl` көмегімен қолмен орнатылады. Бұл әдіс ең қауіпсіз болғандықтан, оны [пайдалану ұсынылады](https://cert-manager.io/docs/installation/helm/#crd-considerations).
+   CRDs `kubectl` көмегімен қолмен орнатылады. Бұл әдісті қолдану [ұсынылады](https://cert-manager.io/docs/installation/helm/#crd-considerations), өйткені ол ең қауіпсіз.
 
    Пәрменді орындаңыз:
 
@@ -114,10 +109,10 @@
 
    Орнату сәтті аяқталса, Helm хабарламасында мыналар көрсетіледі:
 
-   - `STATUS`: `deployed`;
-   - `NOTES`: `cert-manager v1.11.3 has been deployed successfully!`.
+   * `STATUS`: `deployed`;
+   * `NOTES`: `cert-manager v1.11.3 has been deployed successfully!`.
 
-   {cut(Команда шығысының мысалы)}
+   {cut(Пәрмен шығысының мысалы)}
 
    ```text
    NAME: cert-manager
@@ -128,25 +123,25 @@
    TEST SUITE: None
    NOTES:
    cert-manager v1.11.3 has been deployed successfully!
-   
+
    In order to begin issuing certificates, you will need to set up a ClusterIssuer
    or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
-   
+
    More information on the different types of issuers and how to configure them
    can be found in our documentation:
-   
+
    https://cert-manager.io/docs/configuration/
-   
+
    For information on how to configure cert-manager to automatically provision
    Certificates for Ingress resources, take a look at the `ingress-shim`
    documentation:
-   
+
    https://cert-manager.io/docs/usage/ingress/
    ```
 
    {/cut}
 
-## 3. cert-manager жұмысқал қабілеттілігін тексеріңіз
+## {heading(3. cert-manager жұмысқа қабілеттілігін тексеріңіз)[id=k8s-case-certmanager-helm3-check-cm]}
 
 1. `cert-manager` аттар кеңістігінде қажетті подтардың сәтті жасалғанын және олардың `Running` күйінде тұрғанын тексеріңіз:
 
@@ -154,7 +149,7 @@
    kubectl get pods -n cert-manager
    ```
 
-   {cut(Команда шығысының мысалы)}
+   {cut(Пәрмен шығысының мысалы)}
 
    ```text
    NAME                                       READY   STATUS    RESTARTS   AGE
@@ -202,9 +197,9 @@
 
       Бұл манифесте мыналар сипатталған:
 
-      - `Issuer` және `Certificate` ресурстары орналастырылатын `cert-manager-test` аттар кеңістігі;
-      - өздігінен қол қойылған сертификаттарды шығаруғал жауап беретін `Issuer` ресурстар;
-      - өздігінен қол қойылған сертификат параметрлері бар `Certificate` ресурстар.
+      * `Issuer` және `Certificate` ресурстары орналастырылатын `cert-manager-test` аттар кеңістігі;
+      * өздігінен қол қойылған сертификаттарды шығаруға жауап беретін `Issuer` ресурсы;
+      * өздігінен қол қойылған сертификат параметрлері бар `Certificate` ресурсы.
 
    1. Манифест файлын қолданыңыз.
 
@@ -212,7 +207,7 @@
       kubectl apply -f cert-manager-test-resources.yaml
       ```
 
-      Манифесте сипатталған ресурстар жасалады. Сондай-алқ `cert-manager` басқал қажетті ресурстарды автоматты түрде жасайды.
+      Манифесте сипатталған ресурстар жасалады. Сондай-ақ `cert-manager` басқа қажетті ресурстарды автоматты түрде жасайды.
 
    1. Барлық қажетті ресурстардың жасалғанын тексеріңіз:
 
@@ -221,22 +216,23 @@
       ```
 
       Шығыста мыналар болуы керек:
-      - манифесте сипатталған конфигурациясы бар `Issuer` және `Certificate`, `READY: True` күйінде;
-      - `CertificateRequest`, `READY: True` күйінде;
-      - сертификат деректерін қамтитын `Secret`.
 
-      {cut(Команда шығысының мысалы)}
+      * манифесте сипатталған конфигурациясы бар `Issuer` және `Certificate`, `READY: True` күйінде;
+      * `CertificateRequest`, `READY: True` күйінде;
+      * сертификат деректерін қамтитын `Secret`.
+
+      {cut(Пәрмен шығысының мысалы)}
 
       ```text
       NAME                                     READY   AGE
       issuer.cert-manager.io/test-selfsigned   True    39m
-      
+
       NAME                                          READY   SECRET                AGE
       certificate.cert-manager.io/selfsigned-cert   True    selfsigned-cert-tls   39m
-      
+
       NAME                                                       APPROVED   DENIED   READY   ISSUER            REQUESTOR                                         AGE
       certificaterequest.cert-manager.io/selfsigned-cert-...     True                True    test-selfsigned   system:serviceaccount:cert-manager:cert-manager   39m
-      
+
       NAME                         TYPE                DATA   AGE
       secret/selfsigned-cert-tls   kubernetes.io/tls   3      39m
       ```
@@ -250,10 +246,10 @@
 
       Сертификат сәтті шығарылған жағдайда:
 
-      - Күй туралы алқпаратта (`Status`) `Certificate is up to date and has not expired` жолы болады.
-      - Оқжәнеғалар тізімінде (`Events`) `The certificate has been successfully issued` хабарламасы бар оқжәнеғал болады.
+      * Күй туралы ақпаратта (`Status`) `Certificate is up to date and has not expired` жолы болады.
+      * Оқиғалар тізімінде (`Events`) `The certificate has been successfully issued` хабарламасы бар оқиға болады.
 
-      {cut(Команда шығысының бір бөлігінің мысалы)}
+      {cut(Пәрмен шығысының бір бөлігінің мысалы)}
 
       ```text
       ...
@@ -283,23 +279,23 @@
 
    Егер сертификат сәтті шығарылса, онда `cert-manager` дұрыс орнатылған және жұмыс істеп тұр.
 
-## 4. (Опционалды) cert-manager ресурстарының резервтік көшірмесін жасаңыз
+## {heading(4. (Опционалды) cert-manager ресурстарының резервтік көшірмесін жасаңыз)[id=k8s-case-certmanager-helm3-create-backup]}
 
 {note:info}
 
-Қауіпсіздік мақсатында `cert-manager` [жаңартуының](#5_cert_manager_zhanartynyz) алдында сақтық көшірмені жасау [ұсынылады](https://cert-manager.io/docs/tutorials/backup).
+`cert-manager` құралын {linkto(#k8s-case-certmanager-helm3-upd-cm)[text=жаңарту]} алдында қауіпсіздік мақсатында резервтік көшірме жасау [ұсынылады](https://cert-manager.io/docs/tutorials/backup).
 
 {/note}
 
 `Issuer`, `ClusterIssuer` және `Certificate` ресурстарының резервтік көшірмесі жасалады. Оған мыналар кірмейді:
 
-- `CertificateRequests` ресурстары. Мұндай ресурстарды сақтық көшірмеге қосу [ұсынылмайды](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration), өйткені бұл сақтық көшірмеден қалпына келтіруді қиындатуы мүмкін.
+* `CertificateRequests` ресурстары. Мұндай ресурстарды резервтік көшірмеге қосу [ұсынылмайды](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration), өйткені бұл резервтік көшірмеден қалпына келтіруді қиындатуы мүмкін.
 
-- Тікелей сертификат деректерін сақтайтын және соның ішінде жеке кілтті қамтитын құпиялар.
+* Тікелей сертификат деректерін сақтайтын және соның ішінде жеке кілтті қамтитын құпиялар.
 
   {note:warn}
 
-  Егер сақтық көшірмеден қалпына келтіру кезінде `Cerificate` ресурстар үшін сәйкес құпия табылмаса, онда [сертификат қайта шығарылады](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration).
+  Егер резервтік көшірмеден қалпына келтіру кезінде `Cerificate` ресурсы үшін сәйкес құпия табылмаса, онда [сертификат қайта шығарылады](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration).
 
   {/note}
 
@@ -333,7 +329,7 @@ kubectl get -o yaml `
 
 Кеңейтілген резервтік көшіру және резервтік көшірмеден қалпына келтіру туралы [cert-manager ресми құжаттамасынан](https://cert-manager.io/docs/tutorials/backup) оқыңыз.
 
-## 5. cert-manager жаңартыңыз
+## {heading(5. cert-manager жаңартыңыз)[id=k8s-case-certmanager-helm3-upd-cm]}
 
 1. Орнатылған `cert-manager` релизінің нұсқасын қараңыз:
 
@@ -353,31 +349,31 @@ kubectl get -o yaml `
    helm search repo jetstack -l
    ```
 
-1. Жаңартуғал арналған `cert-manager` ресми құжаттамасын оқып шығыңыз. Онда жаңарту бойынша ұсынымдар, критикалық өзгерістер (breaking changes) тізімі және басқал да пайдалы алқпарат бар.
+1. Жаңартуға арналған `cert-manager` ресми құжаттамасын оқып шығыңыз. Онда жаңарту бойынша ұсынымдар, критикалық өзгерістер (breaking changes) тізімі және басқа да пайдалы ақпарат бар.
 
-   Атап айтқанда, әр жолы бір минорлық нұсқалғал ғана жаңарту [ұсынылады](https://cert-manager.io/docs/installation/upgrading/) (мысалы, 1.**11**.3 → 1.**12**.3).
+   Атап айтқанда, бір уақытта бір минорлық нұсқаға ғана жаңарту [ұсынылады](https://cert-manager.io/docs/installation/upgrading/) (мысалы, 1.**11**.3 → 1.**12**.3).
 
 1. Жаңартылатын нұсқаны таңдаңыз.
 
-   `cert-manager` және Kubernetes нұсқаларының үйлесімділік кестесі [cert-manager ресми құжаттамасында](https://cert-manager.io/docs/installation/supported-releases/) берілген.
+   `cert-manager` және Kubernetes нұсқаларының үйлесімділік кестесі [cert-manager ресми құжаттамасында](https://cert-manager.io/docs/installation/supported-releases/) келтірілген.
 
    {note:info}
 
    Төменде `1.11.3` нұсқасынан `1.12.3` нұсқасына дейін жаңарту орындалады.
 
-   Егер бұған дейін `cert-manager`-дің басқал нұсқасы орнатылған болса, жоғарыдағы ұсынымдарды ескере отырып, жаңарту үшін қажетті нұсқаны таңдаңыз.
+   Егер бұған дейін `cert-manager`-дің басқа нұсқасы орнатылған болса, жоғарыдағы ұсынымдарды ескере отырып, жаңарту үшін қажетті нұсқаны таңдаңыз.
 
    {/note}
 
 1. Кластерде орнатылған CRDs жаңартыңыз.
 
-   Бұл CRD-лер бұрын [қолмен орнатылғандықтан](#2_cert_manager_ornatynyz), `cert-manager` өзі жаңартылар алдында оларды да қолмен жаңартыңыз.
+   Бұл CRDs бұрын {linkto(#k8s-case-certmanager-helm3-install-cm)[text=қолмен орнатылғандықтан]}, оларды `cert-manager` құралының өзін жаңартпас бұрын да қолмен жаңартыңыз.
 
    ```console
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
    ```
 
-1. Таңдалған нұсқалғал дейін `cert-manager` релизін жаңартыңыз:
+1. Таңдалған нұсқаға дейін `cert-manager` релизін жаңартыңыз:
 
    {tabs}
 
@@ -404,11 +400,12 @@ kubectl get -o yaml `
    {/tabs}
 
    Жаңарту сәтті аяқталса, Helm хабарламасында мыналар көрсетіледі:
-   - `Release "cert-manager" has been upgraded. Happy Helming!`;
-   - `STATUS`: `deployed`;
-   - `NOTES`: `cert-manager v1.12.3 has been deployed successfully!`.
 
-   {cut(Команда шығысының мысалы)}
+   * `Release "cert-manager" has been upgraded. Happy Helming!`;
+   * `STATUS`: `deployed`;
+   * `NOTES`: `cert-manager v1.12.3 has been deployed successfully!`.
+
+   {cut(Пәрмен шығысының мысалы)}
 
    ```text
    Release "cert-manager" has been upgraded. Happy Helming!
@@ -420,25 +417,27 @@ kubectl get -o yaml `
    TEST SUITE: None
    NOTES:
    cert-manager v1.12.3 has been deployed successfully!
-   
+
    In order to begin issuing certificates, you will need to set up a ClusterIssuer
    or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
-   
+
    More information on the different types of issuers and how to configure them
    can be found in our documentation:
-   
+
    https://cert-manager.io/docs/configuration/
-   
+
    For information on how to configure cert-manager to automatically provision
    Certificates for Ingress resources, take a look at the `ingress-shim`
    documentation:
-   
+
    https://cert-manager.io/docs/usage/ingress/
    ```
 
    {/cut}
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-case-certmanager-helm3-delete]}
+
+Жұмыс істеп тұрған кластер тарификацияланады және есептеу ресурстарын тұтынады. Егер `cert-manager` құралы мен оның жұмысын тексеру үшін жасалған Kubernetes ресурстары енді қажет болмаса, оларды жойыңыз:
 
 1. `cert-manager-test-resources.yaml` манифестінде сипатталған ресурстарды жойыңыз:
 
@@ -479,3 +478,7 @@ kubectl get -o yaml `
       ```console
       kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
       ```
+
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

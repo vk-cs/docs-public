@@ -1,12 +1,17 @@
 {
-    "title": "Standard routers",
-      "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
-      "metaDescription": "",
-    "sectionTitle": "Standard routers",
-    "icon": "",
-    "weight": 5,
-    "uuid": "f0ebf594-b4a4-4290-8574-bab3ef7fa9fe",
-    "additionalUuids": [
-        "5eb605a5-9b1f-46c5-95b3-5d10206de632"
+  "title": "Standard routers",
+  "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
+  "metaDescription": "",
+  "sectionTitle": "Standard routers",
+  "icon": "",
+  "weight": 5,
+  "uuid": "f0ebf594-b4a4-4290-8574-bab3ef7fa9fe",
+  "additionalUuids": [
+    "5eb605a5-9b1f-46c5-95b3-5d10206de632"
+  ],
+  "build": {
+    "for": [
+      "public"
     ]
+  }
 }

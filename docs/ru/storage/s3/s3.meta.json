@@ -10,5 +10,12 @@
       "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro"
     }
   ],
-  "uuid": "b4b73ce5-4e87-4159-b682-67b0fa2c0457"
+  "uuid": "b4b73ce5-4e87-4159-b682-67b0fa2c0457",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

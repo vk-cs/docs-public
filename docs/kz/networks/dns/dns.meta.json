@@ -1,7 +1,7 @@
 {
   "title": "DNS",
-  "shortDescription": "VK Cloud платформасының сервистері үшін атауларды шешуді қамтамасыз ететін жария және жеке DNS",
-  "metaDescription": "VK Cloud платформасының сервистері үшін атауларды шешуді қамтамасыз ететін жария және жеке DNS. DNS-ті қалай баптау және пайдалану жолдары",
+  "shortDescription": "{var(cloud)} платформасының сервистері үшін атауларды шешуді қамтамасыз ететін публичный және приватный DNS",
+  "metaDescription": "VK Cloud платформасының сервистері үшін атауларды шешуді қамтамасыз ететін публичный және приватный DNS. DNS-ті қалай баптау және пайдалану керек",
   "sectionTitle": "DNS",
   "icon": "",
   "relativeSections": [
@@ -9,5 +9,10 @@
       "partialPath": "/kz/tools-for-using-services/api/api-spec/network-api/api-dns"
     }
   ],
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

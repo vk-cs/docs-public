@@ -1,12 +1,26 @@
 {
-    "title": "Connecting to add-on web interfaces",
-      "shortDescription": "",
-      "metaDescription": "VK Cloud Containers: connecting to add-on web interfaces",
-    "sectionTitle": "Connecting to add-on web interfaces",
-    "icon": "",
-    "weight": 6,
-    "additionalUuids": [
-        "134eb80d-6ee7-4b57-ad87-4d00080c521e"
-    ],
-    "uuid": "1db777eb-c3bf-4d9f-8ce3-2e94811b74a0"
+  "title": "Connecting to add-on web interfaces",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud Containers: connecting to add-on web interfaces",
+  "sectionTitle": "Connecting to add-on web interfaces",
+  "icon": "",
+  "weight": 6,
+  "additionalUuids": [
+    "134eb80d-6ee7-4b57-ad87-4d00080c521e"
+  ],
+  "uuid": "1db777eb-c3bf-4d9f-8ce3-2e94811b74a0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

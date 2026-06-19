@@ -4,5 +4,12 @@
   "metaDescription": "Создание экземпляра сервиса и управление экземпляром и его компонентами",
   "sectionTitle": "Пошаговые инструкции",
   "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
   "uuid": "674d1dd0-a615-47da-9ae0-a4483c7139f7"
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Getting started with Kubernetes",
-      "metaDescription": "Cloud Containers: quick start will help you get started with the service and get acquainted with its capabilities",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 1,
-    "uuid": "b601c190-7aaf-4419-a976-ecd52f7c7caf"
+  "title": "Quick start",
+  "shortDescription": "Getting started with Kubernetes",
+  "metaDescription": "Cloud Containers: quick start will help you get started with the service and get acquainted with its capabilities",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b601c190-7aaf-4419-a976-ecd52f7c7caf",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "VK Object Storage",
   "icon": "",
   "weight": 1,
-  "uuid": "934bf4e1-ef60-4db0-bb23-3943dca290d6"
+  "uuid": "934bf4e1-ef60-4db0-bb23-3943dca290d6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

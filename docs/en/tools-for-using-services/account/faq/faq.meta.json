@@ -1,9 +1,14 @@
 {
-    "title": "FAQ",
-      "shortDescription": "Answers to frequently asked questions about working in the VK Cloud management console",
-      "metaDescription": "Answers to frequently asked questions about VK Cloud management console.",
-    "sectionTitle": "FAQ",
-    "icon": "",
-    "weight": 5,
-    "uuid": "d1de9952-9fa7-411f-a846-cdf596729e0c"
+  "title": "FAQ",
+  "shortDescription": "Answers to frequently asked questions about working in the VK Cloud management console",
+  "metaDescription": "Answers to frequently asked questions about VK Cloud management console.",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 5,
+  "uuid": "d1de9952-9fa7-411f-a846-cdf596729e0c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

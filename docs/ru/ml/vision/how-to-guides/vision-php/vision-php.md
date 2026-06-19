@@ -1,3 +1,5 @@
+# {heading(Пример интеграции на PHP)[id=vision-htg-vision-php]}
+
 Подробный пример смотрите в статье «[Пример интеграции на Python](../vision-py)». В этой статье мы выполним запросы `persons/recognize`, `persons/set` и `persons/delete`. Для этого потребуется:
 
 ```console
@@ -5,7 +7,7 @@ sudo apt-get install php5-cli
 sudo apt-get install php5-curl
 ```
 
-## Запрос на распознавание
+## {heading(Запрос на распознавание)[id=vision-htg-vision-php-recondition-request]}
 
 Скачайте файл [smarty.php](https://cloud.mail.ru/public/HqA7/ck6NPjotF).
 
@@ -42,7 +44,7 @@ examples/friends1.jpg \
 }
 ```
 
-## Запрос на добавление в базу данных
+## {heading(Запрос на добавление в базу данных)[id=vision-htg-vision-php-add-db-request]}
 
 ```php
 php examples/php/smarty.php \
@@ -66,7 +68,7 @@ examples/rachel-green.jpg \
 }
 ```
 
-## Запрос на удаление из базы данных
+## {heading(Запрос на удаление из базы данных)[id=vision-htg-vision-php-delete-db-request]}
 
 Для этого запроса файл не требуется, поэтому передаем пустую строку вместо пути:
 

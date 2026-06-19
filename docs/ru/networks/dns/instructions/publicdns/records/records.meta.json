@@ -5,5 +5,10 @@
   "sectionTitle": "Ресурсные записи",
   "icon": "",
   "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "c83d3bb0-e63c-4228-8ff3-161e70a99643"
 }

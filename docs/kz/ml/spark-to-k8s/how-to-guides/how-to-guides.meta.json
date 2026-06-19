@@ -4,5 +4,10 @@
   "metaDescription": "Kubernetes жүйесіндегі Spark шешуге көмектесетін ең танымал міндеттер",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "metaDescription": "ВМ, БД немесе аналитикалық БД резервтік көшіру жоспарымен жұмыс істеу жөніндегі нұсқаулықтар",
   "sectionTitle": "Резервтік көшіру жоспарын басқару",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

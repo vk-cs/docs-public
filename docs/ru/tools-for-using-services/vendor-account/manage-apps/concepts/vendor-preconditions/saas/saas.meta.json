@@ -4,5 +4,10 @@
   "metaDescription": "Требования к API SaaS-приложений",
   "sectionTitle": "Требования к API SaaS-приложений",
   "weight": 3,
-  "uuid": "00251bc3-7915-47ab-aeb1-9d66b86953eb"
+  "uuid": "00251bc3-7915-47ab-aeb1-9d66b86953eb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Spark",
   "icon": "",
   "weight": 80,
-  "uuid": "0f7b601d-9c0f-4955-9512-404d97eb539b"
+  "uuid": "0f7b601d-9c0f-4955-9512-404d97eb539b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Alerting жүйесінде ескерту триггерлерін қалай құруға және баптауға болады. VK Cloud-та инциденттерге уақтылы әрекет ету үшін триггерлерді қосу, өңдеу және іске қосу бойынша қадамдық нұсқаулық",
   "sectionTitle": "Триггерлер",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "metaDescription": "ДҚ инстансы үшін параметрлерді қалай қосуға, өңдеуге немесе жоюға болады? VK Cloud-тағы Cloud Databases сервисінің ДҚ инстанстары параметрлерін баптау жөніндегі нұсқаулық",
   "sectionTitle": "ДҚ инстансының параметрлерін өзгерту",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

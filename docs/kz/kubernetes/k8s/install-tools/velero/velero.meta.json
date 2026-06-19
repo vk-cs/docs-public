@@ -1,8 +1,18 @@
 {
   "title": "Velero орнату",
-  "shortDescription": "Velero утилитасын қалай орнатуғал болады",
-  "metaDescription": "Velero көмегімен Kubernetes кластері деректерінің резервтік көшірмелерін жасап, оларды қалпына келтіруге болады. Velero-ны қалай орнатуғал, жұмысқал қабілеттілігін тексеруге және жоюғал болатынын біліңіз",
+  "shortDescription": "Velero утилитасын қалай орнатуға болады",
+  "metaDescription": "Velero көмегімен Kubernetes кластері деректерінің резервтік көшірмелерін жасап, оларды қалпына келтіруге болады. Velero-ны қалай орнатуға, жұмысқа қабілеттілігін тексеруге және жоюға болатынын біліңіз",
   "sectionTitle": "Velero орнату",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

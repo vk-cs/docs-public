@@ -1,9 +1,14 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Steps to perform before starting work",
-      "metaDescription": "",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 1,
-    "uuid": "66721e11-9a49-45b8-9f69-5ba973d437c8"
+  "title": "Quick start",
+  "shortDescription": "Steps to perform before starting work",
+  "metaDescription": "",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "66721e11-9a49-45b8-9f69-5ba973d437c8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

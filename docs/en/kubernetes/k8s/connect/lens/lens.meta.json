@@ -5,5 +5,19 @@
   "sectionTitle": "Connecting to cluster using Lens",
   "icon": "",
   "weight": 2,
-  "uuid": "daa5c3bc-3c1f-4629-9e48-9aae243dda87"
+  "uuid": "daa5c3bc-3c1f-4629-9e48-9aae243dda87",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

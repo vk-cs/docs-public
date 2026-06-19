@@ -5,5 +5,10 @@
   "sectionTitle": "Virtual networks",
   "icon": "",
   "weight": 7,
-  "uuid": "533d83cb-42fb-40ec-aa5f-2edc18ccea46"
+  "uuid": "533d83cb-42fb-40ec-aa5f-2edc18ccea46",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

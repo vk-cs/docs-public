@@ -4,5 +4,20 @@
   "metaDescription": "Жабдық конфигурациясы Осы сценарийді орындау үшін Ubuntu 18.04 LTS x86_64 ОЖ-де ELK үшін орнатылған және бапталған сервер қажет. Назар аударыңыз!\nКей",
   "sectionTitle": "ELK орнату және баптау, логтарды жинау, талдау және визуализациялау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "a2bd57cb-84ec-47b0-96c3-200b02875dac",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

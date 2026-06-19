@@ -1,9 +1,14 @@
 {
-    "title": "Basic Terraform commands",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Basic Terraform commands",
-    "icon": "",
-    "weight": 0,
-    "uuid": "db00c548-d487-4e90-b438-a69ce9785116"
+  "title": "Basic Terraform commands",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Basic Terraform commands",
+  "icon": "",
+  "weight": 0,
+  "uuid": "db00c548-d487-4e90-b438-a69ce9785116",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

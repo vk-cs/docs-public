@@ -4,5 +4,10 @@
   "metaDescription": "Data LakeHouse: архитектура туралы жиі қойылатын сұрақтарға жауаптар",
   "sectionTitle": "Сұрақтар мен жауаптар",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

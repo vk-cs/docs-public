@@ -4,5 +4,10 @@
   "metaDescription": "CDN-ресурсын тікелей немесе бакет интерфейсі арқылы қалай жоюға болады.",
   "sectionTitle": "CDN-ресурсын жою",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

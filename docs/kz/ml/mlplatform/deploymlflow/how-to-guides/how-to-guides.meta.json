@@ -4,5 +4,10 @@
   "metaDescription": "MLflow Deploy сервисін пайдалану мысалдары.",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

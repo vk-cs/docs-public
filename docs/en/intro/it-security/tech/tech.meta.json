@@ -1,9 +1,14 @@
 {
-    "title": "Technical solutions",
-      "shortDescription": "Description of technical solutions to improve the security of working with the platform",
-      "metaDescription": "Description of technical solutions to improve the security of working with the VK Cloud platform",
-    "sectionTitle": "Technical solutions",
-    "icon": "",
-    "weight": 2,
-    "uuid": "203e71ab-3f67-4de7-b069-3e53b42c482e"
+  "title": "Technical solutions",
+  "shortDescription": "Description of technical solutions to improve the security of working with the platform",
+  "metaDescription": "Description of technical solutions to improve the security of working with the VK Cloud platform",
+  "sectionTitle": "Technical solutions",
+  "icon": "",
+  "weight": 2,
+  "uuid": "203e71ab-3f67-4de7-b069-3e53b42c482e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

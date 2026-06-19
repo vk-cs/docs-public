@@ -1,7 +1,9 @@
+# {heading(Сервис туралы)[id=clickhouse_info]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(/kz/_includes/_clickhouse.md)[tags=intro-dp]}
+{include(../../../_includes/_clickhouse.md)[tags=intro-dp]}
 
-VK Cloud жүйесінде қолдау көрсетілетін ClickHouse нұсқаларының тізімі осы сервистің [данасын жасау](../../instructions/create) кезінде қолжетімді.
+{var(cloud)} жүйесінде қолдау көрсетілетін ClickHouse нұсқаларының тізімі осы сервистің {linkto(../../instructions/create#clickhouse_create)[text=данасын жасау]} кезінде қолжетімді.
 
-ClickHouse туралы толығырақ — [ресми құжаттамада](../../instructions/create).
+ClickHouse туралы толығырақ — [ресми құжаттамада](https://clickhouse.com/docs/ru).

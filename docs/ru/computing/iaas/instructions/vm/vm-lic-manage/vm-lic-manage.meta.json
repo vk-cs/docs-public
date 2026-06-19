@@ -5,5 +5,10 @@
   "sectionTitle": "Управление лицензиями Microsoft RDS",
   "icon": "",
   "weight": 8,
-  "uuid": "f29fd844-7f88-4012-9c86-9040be405e3d"
+  "uuid": "f29fd844-7f88-4012-9c86-9040be405e3d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

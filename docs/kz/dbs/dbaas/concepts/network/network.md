@@ -1,6 +1,8 @@
+# {heading(Желімен жұмыс)[id=dbaas-network]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Жүктеме теңгергішін пайдалану
+## {heading(Жүктеме теңгергішін пайдалану)[id=dbaas-network-using]}
 
 Әрбір PG/MySQL кластері үшін 3 порты бар TCP-теңгергіш жасалады. Олар келесілерге көрсетеді:
 
@@ -8,6 +10,6 @@
 - синхронды репликаға;
 - асинхронды репликаға.
 
-## Қауіпсіздік топтарын баптау
+## {heading(Қауіпсіздік топтарын баптау)[id=dbaas-network-sg-settings]}
 
-Қауіпсіздік топтарын ДҚ инстансын [жасау](../../instructions/create) кезінде де, оны өрістеткеннен кейін де [Виртуалды желілер](/kz/networks/vnet/instructions/secgroups) → **Firewall баптаулары** бөлімі арқылы баптай аласыз.
+Қауіпсіздік топтарын ДҚ инстансын {linkto(../../instructions/create#dbaas-create)[text=жасау]} кезінде де, оны өрістеткеннен кейін де {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups)[text=Виртуалды желілер]} → **Firewall баптаулары** бөлімі арқылы баптай аласыз.

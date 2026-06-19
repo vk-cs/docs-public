@@ -1,14 +1,16 @@
-## Как начать пользоваться Terraform
+# {heading(Использование Terraform)[id=k8s-terraform-howto]}
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
-1. [Создайте](../../create-cluster/create-terraform) новый кластер с одной или несколькими группами worker-узлов.
+## {heading(Как начать пользоваться Terraform)[id=k8s-terraform-howto-begin]}
+
+1. {linkto(../../../../../tools-for-using-services/terraform/quick-start#terraform-quick-start)[text=Установите Terraform и настройте окружение]}, если это еще не сделано.
+1. {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=Создайте]} новый кластер с одной или несколькими группами worker-узлов.
 1. Управляйте созданными ресурсами с помощью Terraform.
 
 Подробная информация о работе с сервисом Cloud Containers приведена в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Особенности использования Terraform для управления сервисом Cloud Containers
+## {heading(Особенности использования Terraform для управления сервисом Cloud Containers)[id=k8s-terraform-howto-features]}
 
-- Некоторые операции с кластером выполняются только в [личном кабинете](../../../../../tools-for-using-services/account). Для каждой операции в [пошаговых инструкциях](../../../instructions) указано, можно ли ее выполнить также с помощью Terraform.
+- Некоторые операции с кластером выполняются только в {linkto(../../../../../tools-for-using-services/account#tools-account)[text=личном кабинете]}. Для каждой операции в {linkto(../../../instructions#k8s-instructions)[text=пошаговых инструкциях]} указано, можно ли ее выполнить также с помощью Terraform.
 
 - Изменение некоторых параметров уже существующего кластера приведет к созданию **нового кластера**. В документации сервиса Cloud Containers приводятся только те операции, которые можно выполнить над существующим кластером, не создавая при этом новый.
 

@@ -4,5 +4,10 @@
   "metaDescription": "Деректер қоймаларының эволюциясы: Data Lake-тен Data LakeHouse-қа өтудің себептері",
   "sectionTitle": "Технологияларды салыстыру",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

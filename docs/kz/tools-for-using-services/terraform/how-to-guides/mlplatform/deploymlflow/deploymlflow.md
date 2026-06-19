@@ -16,11 +16,11 @@
 
 1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) инстансты жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Егер бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
-1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start#terraform_dy_zhanartu).
+1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
 
 ## 1. MLflow Deploy инстансының сипаттамасы бар файлды жасаңыз
 
@@ -72,7 +72,7 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
   {cut(Мысалдар)}
 
   - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: жаңа MLflow инстансы жасалады, инстанс идентификаторы `vkcs_mlplatform_mlflow` ресурсы жасалғаннан кейін алынады. Ресурс кейінірек жасалады.
-  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [VK Cloud жеке кабинетінде](https://cloud.vk.com/app) MLflow инстансы бетінде қолжетімді.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетінде](https://cloud.vk.com/app) MLflow инстансы бетінде қолжетімді.
 
   {/cut}
 
@@ -82,7 +82,7 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы жасайтын жаңа желіде орналастырылады. Ресурс кейінірек жасалады.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек жасалады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
@@ -162,7 +162,7 @@ resource "vkcs_networking_router_interface" "app" {
 ## 5. Terraform көмегімен қажетті ресурстарды жасаңыз
 
 1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
-
+  
    - `vkcs_provider.tf`;
    - `main.tf`;
    - `flavor.tf` (егер жасалған болса);
@@ -191,7 +191,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 MLflow Deploy инстансының сәтті жасалғанына көз жеткізіңіз:
 
-1. VK Cloud [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
 1. **ML Platform** → **Инстансы** бөліміне өтіңіз. MLflow Deploy инстансының жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

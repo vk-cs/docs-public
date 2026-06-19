@@ -4,5 +4,15 @@
   "metaDescription": "ВМ, БД немесе аналитикалық БД резервтік көшірмелерімен жұмыс істеу жөніндегі нұсқаулықтар",
   "sectionTitle": "Резервтік көшірмелерді басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -43,7 +43,7 @@
 
 1. Configure the plugin to send logs to the Cloud Logging service.
 
-   1. [Find out](../../concepts/logging-plugin#auth_parameters) the authorization parameters for your project.
+   1. [Find out](../../concepts/logging-plugin#logging_auth_parameters) the authorization parameters for your project.
    1. Specify the connection parameters for the plugin in the `vkcloudlogs-fluent-bit.conf` file:
 
       {cut(vkcloudlogs-fluent-bit.conf)}

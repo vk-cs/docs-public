@@ -4,5 +4,15 @@
   "metaDescription": "Zabbix агентін өрістету. Zabbix — қолданбаларды, серверлерді және желілік құрылғыларды мониторингтеуге арналған БҚ. Көптеген алдын ала орнатылған шаблондар мү",
   "sectionTitle": "Zabbix агенті",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

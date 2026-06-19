@@ -11,7 +11,7 @@
 
       {note:warn}
 
-      ОС должна удовлетворять {linkto(../ib_image_requirements#ib_image_requirements)[text=требованиям к образу сервиса]}.
+      ОС должна удовлетворять [требованиям к образу сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based#image_based_req_image).
 
       {/note}
    1. Подтвердите создание ВМ.
@@ -32,7 +32,7 @@
       * `<USER_NAME>` — имя пользователя ОС. Укажите имя в зависимости от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
       * `<FLOATING_IP>` — внешний IP-адрес ВМ.
 
-   1. Если на ВМ не установлены программные пакеты, указанные в {linkto(../ib_image_requirements#ib_image_requirements)[text=требованиях к образу сервиса]}, установите их.
+   1. Если на ВМ не установлены программные пакеты, указанные в [требованиях к образу сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based#image_based_req_image), установите их.
 
       {caption(Пример команды, чтобы установить `curl` на ОС Ubuntu)[align=left;position=above]}
       ```console

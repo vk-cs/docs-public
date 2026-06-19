@@ -4,5 +4,12 @@
   "metaDescription": "VK Object Storage қоймасына SDK арқылы кезең-кезеңімен қосылу: қатынау кілттері мен endpoint параметрлерін баптау, region таңдау, клиентті инициализациялау және қатынауды тексеру; танымал SDK-лар (Python boto3, Go) үшін код мысалдары мен типтік операциялар.",
   "sectionTitle": "SDK",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

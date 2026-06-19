@@ -4,5 +4,12 @@
   "metaDescription": "Cloud Databases: VK Cloud-та Terraform көмегімен ДБ инстансын қалай құруға болады",
   "sectionTitle": "ДБ инстансын құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

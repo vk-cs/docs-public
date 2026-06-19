@@ -4,5 +4,15 @@
   "metaDescription": "Егер атау кеңістігі жойылмаса және terminating күйінде қалса, не істеу керек",
   "sectionTitle": "Атау кеңістігін жою мүмкін болмай тұр",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,16 +1,18 @@
+# {heading(Автоматты масштабтау агентінің журналдарын қарау)[id=k8s-autoscaler-logs]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Kubernetes кластерінің автоматты масштабтау агенті](/kz/kubernetes/k8s/concepts/cluster-autoscaler) (Cluster Autoscaler) кластердің worker-түйіндеріне түсетін жүктемені бақылайды және қажет болған жағдайда олардың санын азайтады немесе арттырады. Ақауларды диагностикалау үшін [автоматты масштабтау](/kz/kubernetes/k8s/concepts/scale#autoscaling) журналдарын қарай аласыз.
+{linkto(../../concepts/cluster-autoscaler#k8s-cluster-autoscaler)[text=Kubernetes кластерінің]} {linkto(../../concepts/cluster-autoscaler#k8s-cluster-autoscaler)[text=автоматты масштабтау агенті]} (Cluster Autoscaler) кластердің worker-түйіндеріне түсетін жүктемені бақылайды және қажет болған жағдайда олардың санын азайтады немесе арттырады. Ақауларды диагностикалау үшін {linkto(../../concepts/scale#k8s-scale-autoscaling)[text=автоматты масштабтау]} журналдарын қарай аласыз.
 
-Автоматты масштабтау агенті және онымен жұмыс істеу туралы толығырақ Cluster Autoscaler [ресми құжаттамасында](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md). 
+Автоматты масштабтау агенті және онымен жұмыс істеу туралы толығырақ Cluster Autoscaler-дің [ресми құжаттамасында](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md). 
 
-## {heading(Дайындық қадамдары)[id=prepare]}
+## {heading(Дайындық қадамдары)[id=k8s-autoscaler-logs-prepare]}
 
-1. Егер бұл әлі жасалмаса, [кластерді](../../instructions/create-cluster) жасаңыз.
-1. Егер бұл әлі жасалмаса, `kubectl` [орнатып, баптаңыз](../../connect/kubectl).
-1. [қосылыңыз](../../connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
+{include(/kz/_includes/_create-test-cluster.md)}
+1. Егер бұл әлі жасалмаса, `kubectl` утилитасын {linkto(../../connect/kubectl#k8s-kubectl)[text=орнатып, баптаңыз]}.
+1. `kubectl` көмегімен кластерге {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=қосылыңыз]}.
 
-## {heading(1. Автоматты масштабтау агенті подының атын анықтаңыз)[id=review]}
+## {heading(1. Автоматты масштабтау агенті подының атын анықтаңыз)[id=k8s-autoscaler-logs-review]}
 
 Автоматты масштабтау агенті подының атауы, әдетте, `cluster-autoscaler` деп басталады. Оны анықтау үшін тәсілдердің бірін пайдаланыңыз:
 
@@ -18,7 +20,7 @@
 
 {tab(Жеке кабинет)}
 
-[қараңыз](/kz/kubernetes/k8s/instructions/manage-resources#view-resources) тізім подтардың кластера жеке кабинетте VK Cloud.
+VK Cloud жеке кабинетінен кластер подтарының тізімін {linkto(../../instructions/manage-resources#k8s-manage-resources-view-resources)[text=қараңыз]}.
 
 {/tab}
 
@@ -34,39 +36,38 @@
 
 {/tabs}
 
-## 2. Автоматты масштабтау агенті подының журналдарын қараңыз
+## {heading(2. Автоматты масштабтау агенті подының журналдарын қараңыз)[id=k8s-autoscaler-logs-autoscaling-agent]}
 
 Пәрменді орындаңыз: 
 
 ```console
 kubectl logs <ИМЯ_ПОДА> -n kube-system
 ```
-   
+
 Журналдарды нақты уақыт режимінде бақылау үшін под атауының алдына `-f` опциясын қосыңыз:
 
 ```console
 kubectl logs -f <ИМЯ_ПОДА> -n kube-system
 ```
 
-## 3. Кластер оқжәнеғаларын қараңыз
+## {heading(3. Кластер оқиғаларын қараңыз)[id=k8s-autoscaler-logs-cluster-events]}
 
-1. Кластерде болып жатқан оқжәнеғалар туралы алқпаратты алыңыз:
-   
+1. Кластерде болып жатқан оқиғалар туралы ақпаратты алыңыз:
+
    ```console
    kubectl get events -n kube-system
    ```
 
-1. Оқжәнеғаларды автоматты масштабтау агенті подының атауы бойынша сүзіңіз (әдетте под атауында `cluster-autoscaler` болады):
+1. Оқиғаларды автоматты масштабтау агенті подының атауы бойынша сүзіңіз (әдетте под атауында `cluster-autoscaler` болады):
 
    ```console
    kubectl get events -n kube-system | grep cluster-autoscaler
    ```
 
-Оқжәнеғалармен жұмыс істеу туралы толығырақ [ресми құжаттамада](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
+Оқиғалармен жұмыс істеу туралы толығырақ Kubernetes-тің [ресми құжаттамасында](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
 
-## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=delete]}
+{ifdef(public)}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-autoscaler-logs-delete]}
 
-Жұмыс істеп тұрған кластер есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
-
-- оны кейінірек пайдалану үшін [тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#stop);
-- оны біржола [жойыңыз](../../instructions/manage-cluster#delete_cluster).
+{include(/kz/_includes/_delete-test-cluster.md)}
+{/ifdef}

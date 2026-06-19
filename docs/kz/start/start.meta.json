@@ -4,5 +4,19 @@
   "metaDescription": "VK Cloud платформасы (VK Cloud) қосымшаларды әзірлеу және пайдалану үшін инфрақұрылым ұсынады",
   "sectionTitle": "Бұлт туралы негізгі және құқықтық ақпарат",
   "icon": "",
-  "weight": 100
+  "weight": 100,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

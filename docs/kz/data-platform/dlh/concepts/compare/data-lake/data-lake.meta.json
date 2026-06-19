@@ -4,5 +4,10 @@
   "metaDescription": "Корпоративтік деректер қоймаларындағы Data Lake архитектурасы: артықшылықтары мен кемшіліктері",
   "sectionTitle": "Data Lake",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

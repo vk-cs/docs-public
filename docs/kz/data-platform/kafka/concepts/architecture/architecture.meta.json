@@ -1,8 +1,15 @@
 {
   "title": "Сервис архитектурасы",
   "shortDescription": "Cloud Kafka сервисі әртүрлі деңгейлерде қалай құрылған",
-  "metaDescription": "VK Cloud: хабарламаларды оқу / жазу деңгейіндегі және сервисті басқару деңгейіндегі Cloud Kafka сервисінің архитектурасы",
+  "metaDescription": "VK Data Platform: Cloud Kafka сервисінің хабарламаларды оқу / жазу деңгейіндегі және сервисті басқару деңгейіндегі архитектурасы",
   "sectionTitle": "Сервис архитектурасы",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Remote Desktop Services лицензияларын қалай белсендіруге, олардың санын немесе түрін өзгертуге болады",
   "sectionTitle": "Microsoft RDS лицензияларын басқару",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

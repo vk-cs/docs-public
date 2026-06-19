@@ -1,19 +1,21 @@
+# {heading(Vertical Pod Autoscaler пайдалану)[id=k8s-vertical-pod-autoscaler]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Vertical Pod Autoscaler](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#vpa) (VPA) — Kubernetes контейнерлері үшін ресурстарды (CPU және RAM) автоматты түрде баптауғал арналған құрал. Оның жұмысын толық көлемде зерделеу үшін оны Updater компонентімен `Recreate` режимінде пайдаланыңыз. Бұл режимде VPA:
+{linkto(../../concepts/addons-and-settings/addons#k8s-addons-vpa)[text=Vertical Pod Autoscaler]} (VPA) — Kubernetes контейнерлері үшін ресурстарды (CPU және RAM) автоматты түрде баптауға арналған құрал. Оның жұмысын толық көлемде зерделеу үшін оны Updater компонентімен `Recreate` режимінде пайдаланыңыз. Бұл режимде VPA:
 
-1. Бар подтар үшін [ресурстар сұрауы](/kz/kubernetes/k8s/reference/resource-limiting) бойынша ұсынымдар жасайды.
+1. Бар подтар үшін {linkto(../../reference/resource-limiting#k8s-resource-limiting)[text=ресурстар сұрауы]} бойынша ұсынымдар жасайды.
 1. Осы подтарды жояды және оларды ұсынылған мәндермен қайта жасайды.
 
-## {heading(Дайындық қадамдары)[id=prepare]}
+## {heading(Дайындық қадамдары)[id=k8s-vertical-pod-autoscaler-prepare]}
 
-1. [Жасаңыз](../../instructions/create-cluster) кластерді, егер бұл әлі жасалмаса.
-1. [Орнатып, баптаңыз](../../connect/kubectl) `kubectl`, егер бұл әлі жасалмаса.
-1. [Қосылыңыз](../../connect/kubectl#check_connection) `kubectl` көмегімен кластерге.
-1. [VPA аддонын орнатыңыз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-vpa), егер бұл әлі жасалмаса.
-1. (Опционалды) [Kube Prometheus Stack аддонын орнатыңыз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring), егер бұл әлі жасалмаса. Оны VPA дашбордтарын қарау үшін пайдалана аласыз.
+{include(/kz/_includes/_create-test-cluster.md)}
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Орнатып, баптаңыз]} `kubectl`, егер бұл әлі жасалмаса.
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Қосылыңыз]} `kubectl` көмегімен кластерге.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-vpa#k8s-install-advanced-vpa)[text=VPA аддонын орнатыңыз]}, егер бұл әлі жасалмаса.
+1. (Опционалды) {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring)[text=Kube Prometheus Stack аддонын орнатыңыз]}, егер бұл әлі жасалмаса. Оны VPA дашбордтарын қарау үшін пайдалана аласыз.
 
-   Аддонды орнату кезінде [өңдеңіз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring#ornatu_kezinde_addondy_baptau_kodyn_ondeu) оның кодын, `kube-state-metrics` компонентіне VPA дашбордтарын баптауғал арналған метрикаларды қосып:
+   Аддонды орнату кезінде {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring-edit-code)[text=өңдеңіз]} оның кодын, `kube-state-metrics` компонентіне VPA дашбордтарын баптауға арналған метрикаларды қосып:
 
    {cut(VPA дашбордтарын баптауға арналған метрикалар)}
 
@@ -154,7 +156,7 @@
    ```
    {/cut}
 
-## {heading(1. Deployment жұмыс жүктемесі контроллерін жасаңыз)[id=create_deployment]}
+## {heading(1. Deployment жұмыс жүктемесі контроллерін жасаңыз)[id=k8s-vertical-pod-autoscaler-create-deployment]}
 
 1. `nginx` қосымшасы үшін `Deployment` түріндегі [жұмыс жүктемесі](https://kubernetes.io/docs/concepts/workloads/) контроллеріне арналған манифест файлын жасаңыз: 
 
@@ -188,7 +190,7 @@
              cpu: 100m
              memory: 100Mi
    ```
-   Мұнда подтар үшін `resources` блогында [50 мебибайт RAM және 50m CPU сұралады](/kz/kubernetes/k8s/reference/resource-limiting), ал шектеу 100 мебибайт RAM және 100m CPU болып орнатылады. 
+   Мұнда подтар үшін `resources` блогында {linkto(../../reference/resource-limiting#k8s-resource-limiting)[text=50 мебибайт RAM және 50m CPU сұралады]}, ал шектеу 100 мебибайт RAM және 100m CPU болып орнатылады. 
 
 1. `Deployment` контроллері үшін `LoadBalancer` түрін көрсетіңіз:
 
@@ -209,9 +211,9 @@
    nginx    LoadBalancer     ...          100.70.146.28           ...
    ```
 
-## {heading(2. Recreate режиміндегі Updater компоненті бар VPA аддонының объектісін жасаңыз және тестілеуді іске қосыңыз)[id=create_vpa]}
+## {heading(2. Recreate режиміндегі Updater компоненті бар VPA аддонының объектісін жасаңыз және тестілеуді іске қосыңыз)[id=k8s-vertical-pod-autoscaler-create-vpa]}
 
-1. `Recreate` жұмыс режиміндегі Updater компоненті бар VPA аддондар үшін манифест файлын жасаңыз (`updateMode: "Recreate"`):
+1. `Recreate` жұмыс режиміндегі Updater компоненті бар VPA аддоны үшін манифест файлын жасаңыз (`updateMode: "Recreate"`):
 
    ```console
    kubectl apply -f -
@@ -243,7 +245,7 @@
    hey -z 300s -c 1000 http://100.70.146.28
    ```
 
-## {heading(3. Нәтижелерді қараңыз)[id=create_vpa]}
+## {heading(3. Нәтижелерді қараңыз)[id=k8s-vertical-pod-autoscaler-results]}
 
 1. VPA ұсынымдарын келесі командамен қараңыз:
 
@@ -310,7 +312,7 @@
 
    Мұнда `Recommendation` блогында:
 
-   - `Lower Bound` (төменгі шекара) — подтың жұмысқал қабілеттілігін кепілдендіруге болатын ресурстардың ең төменгі ұсынылған мәні. Төменгі шекара подты ресурстардың жетіспеуінен қорғайды, бұл тұрақсыз жұмысқал немесе қателерге әкелуі мүмкін.
+   - `Lower Bound` (төменгі шекара) — подтың жұмысқа қабілеттілігін кепілдендіруге болатын ресурстардың ең төменгі ұсынылған мәні. Төменгі шекара подты ресурстардың жетіспеуінен қорғайды, бұл тұрақсыз жұмысқа немесе қателерге әкелуі мүмкін.
    - `Target` (мақсат) — ресурстарды нақты тұтынуды көрсететін мән. 
    - `Uncapped Target` (көрсетілген шектеулерсіз мақсат) — VPA подтың нақты тұтынуы негізінде есептеген ресурстың оңтайлы мәні. `Target` мәнімен сәйкес келуі мүмкін. 
    - `Upper Bound` (жоғарғы шекара) — под үшін ұсынылатын ресурстардың ең жоғары мүмкін мәні. Жоғарғы шекара бөлінген ресурстардың шамадан тыс артуын болдырмайды.
@@ -326,7 +328,7 @@
    kubectl get po --watch
    ```
 
-   Команда шығысында `updateMode: "Recreate"` параметрімен VPA жұмысының нәтижесін көресіз: VPA ресурс сұрауына арналған ұсынымдарды өзгертті, соның нәтижесінде `Deployment` объектісі ескі подты жойып, оны жаңал параметрлермен қайта жасады. Шығыс мысалы:
+   Команда шығысында `updateMode: "Recreate"` параметрімен VPA жұмысының нәтижесін көресіз: VPA ресурс сұрауына арналған ұсынымдарды өзгертті, соның нәтижесінде `Deployment` объектісі ескі подты жойып, оны жаңа параметрлермен қайта жасады. Шығыс мысалы:
 
    ```console
    NAME                                        READY   STATUS              RESTARTS   AGE  
@@ -352,7 +354,7 @@
    nginx-76894897bc-mskzl                      1/1     Running             0          11s
    ```
 
-1. Updater компоненті жойған под қайта жасалған кезде Admission Controller компоненті қосатын мета-алқпаратты қараңыз. Ол үшін келесі команданы орындаңыз:
+1. Updater компоненті жойған под қайта жасалған кезде Admission Controller компоненті қосатын мета-ақпаратты қараңыз. Ол үшін келесі команданы орындаңыз:
 
    ```console
    kubectl describe po nginx-76894897bc-mskzl
@@ -380,12 +382,11 @@
 
 1. (Опционалды) Аддон жұмысының нәтижелерін Grafana дашбордында қараңыз:
 
-   1. [Қосылыңыз](/kz/kubernetes/k8s/connect/addons-ui#web-ui) Kube Prometheus Stack аддондар құрамына кіретін Grafana веб-интерфейсіне. 
+   1. {linkto(../../connect/addons-ui#k8s-addons-ui-web-ui)[text=Қосылыңыз]} Kube Prometheus Stack аддоны құрамына кіретін Grafana веб-интерфейсіне. 
    1. **Home → Dashboards → General → VPA Recommendations** бөліміндегі дашбордтарды қараңыз. 
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+{ifdef(public)}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-vertical-pod-autoscaler-delete]}
 
-Жұмыс істеп тұрған кластер есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
-
-- [тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#stop) оны, кейінірек пайдалану үшін;
-- [жойыңыз](../../instructions/manage-cluster#delete_cluster) оны біржола.
+{include(/kz/_includes/_delete-test-cluster.md)}
+{/ifdef}

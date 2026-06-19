@@ -1,8 +1,22 @@
 {
-    "title": "Object recognition",
-      "shortDescription": "API methods to search for objects in the photo",
-      "metaDescription": "",
-    "sectionTitle": "Object recognition",
-    "icon": "",
-    "uuid": "477cbf32-5880-47d9-8146-e8d5f46c6fae"
+  "title": "Object recognition",
+  "shortDescription": "API methods to search for objects in the photo",
+  "metaDescription": "",
+  "sectionTitle": "Object recognition",
+  "icon": "",
+  "uuid": "477cbf32-5880-47d9-8146-e8d5f46c6fae",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

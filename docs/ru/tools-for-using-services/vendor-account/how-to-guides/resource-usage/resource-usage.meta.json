@@ -5,5 +5,10 @@
   "metaDescription": "Marketplace VK Cloud: передача метрик использования ресурсов",
   "icon": "",
   "weight": 0,
-  "uuid": "33ac4c7e-d65d-478d-be93-314d96a53b5b"
+  "uuid": "33ac4c7e-d65d-478d-be93-314d96a53b5b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Connecting to MLflow",
-      "shortDescription": "How to connect to an MLflow instance",
-      "metaDescription": "MLflow connection",
-    "sectionTitle": "Connection to MLflow",
-    "icon": "",
-    "weight": 2,
-    "uuid": "a6b42ffc-f03e-4bfc-9f59-f01001b6a4dd"
+  "title": "Connecting to MLflow",
+  "shortDescription": "How to connect to an MLflow instance",
+  "metaDescription": "MLflow connection",
+  "sectionTitle": "Connection to MLflow",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a6b42ffc-f03e-4bfc-9f59-f01001b6a4dd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

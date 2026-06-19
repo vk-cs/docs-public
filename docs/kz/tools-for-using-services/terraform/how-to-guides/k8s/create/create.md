@@ -9,7 +9,7 @@
 
 1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [өңірде](/kz/tools-for-using-services/account/concepts/regions) кластер құру үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі өңірлер үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Cloud Containers сервисіндегі [Terraform пайдалану ерекшеліктерімен](/kz/kubernetes/k8s/instructions/helpers/terraform-howto) танысыңыз.
 
@@ -145,7 +145,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {tab(Под ішкі желісін қайта анықтаумен)}
 
-Под желісін қайта анықтауға `labels = { calico_ipv4pool }` ресурсының `vkcs_kubernetes_cluster` баптауы жауап береді.
+Под желісін қайта анықтауға `vkcs_kubernetes_cluster` ресурсының `labels = { calico_ipv4pool }` баптауы жауап береді.
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -220,7 +220,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {tab(Docker Registry орнатумен)}
 
-[Сервисті](/kz/kubernetes/k8s/concepts/addons-and-settings/addons) орнатуға `labels = { docker_registry_enabled }` ресурсының `vkcs_kubernetes_cluster` баптауы жауап береді.
+[Сервисті](/kz/kubernetes/k8s/concepts/addons-and-settings/addons) орнатуға `vkcs_kubernetes_cluster` ресурсының `labels = { docker_registry_enabled }` баптауы жауап береді.
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {

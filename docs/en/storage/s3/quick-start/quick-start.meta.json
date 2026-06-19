@@ -1,9 +1,23 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Getting started with the service",
-      "metaDescription": "VK Object Storage: getting started with the service.",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 1,
-    "uuid": "421ea5fc-afe0-4cdb-b1ab-535c1c648e77"
+  "title": "Quick start",
+  "shortDescription": "Getting started with the service",
+  "metaDescription": "VK Object Storage: getting started with the service.",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "421ea5fc-afe0-4cdb-b1ab-535c1c648e77",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

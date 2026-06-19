@@ -10,5 +10,19 @@
       "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow"
     }
   ],
-  "uuid": "42b8d343-7992-4dfb-b3a8-47f1eb65f94b"
+  "uuid": "42b8d343-7992-4dfb-b3a8-47f1eb65f94b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

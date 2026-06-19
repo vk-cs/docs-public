@@ -1,16 +1,18 @@
+# {heading(Argo CD)[id=k8s-install-advanced-argo-cd]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
-Бұл аддон тек [екінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлері үшін қолжетімді.
+Бұл аддон тек {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін қолжетімді.
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-argo-cd-prep]}
 
 {include(/kz/_includes/_addon-prep.md)}
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-argo-cd-install]}
 
-Аддон үшін [орнатудың бірнеше нұсқасы](/kz/kubernetes/k8s/concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді.
+Аддон үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді.
 
 {tabs}
 
@@ -22,7 +24,7 @@
 
    {tab(Жеке кабинет)}
 
-    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+    1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
     1. Қажетті кластер орналасқан жобаны таңдаңыз.
     1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
     1. Қажетті кластердің атауын басыңыз.
@@ -36,7 +38,7 @@
         - таңдалған нұсқаны;
         - қолданба атауын;
         - аддон орнатылатын атаулар кеңістігінің атауын;
-        - [аддонды баптау кодын](#edit-code).
+        - {linkto(#k8s-install-advanced-argo-cd-edit-code)[text=аддонды баптау кодын]}.
 
           {note:warn}
           Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -62,16 +64,16 @@
 
    {tab(Жеке кабинет)}
 
-    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+    1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
     1. Қажетті кластер орналасқан жобаны таңдаңыз.
     1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
     1. Тізімнен қажетті кластерді табыңыз.
 
     1. Кластерде аддондар орналастырылатын бөлінген worker-түйіндер тобы бар екеніне көз жеткізіңіз.
 
-       Егер мұндай топ болмаса — оны [қосыңыз](/kz/kubernetes/k8s/instructions/manage-node-group#add_group).
+       Егер мұндай топ болмаса, {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=оны қосыңыз]}.
 
-    1. Егер әлі жасалмаса, осы түйіндер тобы үшін [орнатыңыз](/kz/kubernetes/k8s/instructions/manage-node-group#labels_taints):
+    1. Егер әлі жасалмаған болса, осы түйіндер тобы үшін {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=орнатыңыз]}:
 
         - Белгі (label): `addonNodes` кілті, `dedicated` мәні.
         - Шектеу (taint): `NoSchedule` әсері, `addonNodes` кілті, `dedicated` мәні.
@@ -86,7 +88,7 @@
 
    {tab(Жеке кабинет)}
 
-    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+    1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
     1. Қажетті кластер орналасқан жобаны таңдаңыз.
     1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
     1. Қажетті кластердің атауын басыңыз.
@@ -100,7 +102,7 @@
         - таңдалған нұсқаны;
         - қолданба атауын;
         - аддон орнатылатын атаулар кеңістігінің атауын;
-        - [аддонды баптау кодын](#edit-code).
+        - {linkto(#k8s-install-advanced-argo-cd-edit-code)[text=аддонды баптау кодын]}.
 
     1. Аддонды баптау кодында қажетті tolerations ерекшеліктері мен nodeSelector түйін селекторларын орнатыңыз:
 
@@ -163,7 +165,7 @@
 
    {tab(Жеке кабинет)}
 
-    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+    1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
     1. Қажетті кластер орналасқан жобаны таңдаңыз.
     1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
     1. Қажетті кластердің атауын басыңыз.
@@ -192,7 +194,7 @@
 
 {/tabs}
 
-## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=edit-code]}
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-argo-cd-edit-code]}
 
 Аддон кодын өңдеу стандартты орнату және бөлінген worker-түйіндерге орнату үшін қолданылады.
 

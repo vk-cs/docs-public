@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Desktop сервисінің құны және оны тарифтеудің ерекшеліктері.",
   "sectionTitle": "Тарифтеу",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

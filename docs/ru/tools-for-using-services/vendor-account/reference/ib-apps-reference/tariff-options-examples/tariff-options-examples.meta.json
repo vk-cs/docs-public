@@ -1,0 +1,12 @@
+{
+  "title": "Примеры тарифных опций",
+  "shortDescription": "Примеры тарифных опций",
+  "metaDescription": "Примеры тарифных опций",
+  "sectionTitle": "Примеры тарифных опций",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

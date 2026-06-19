@@ -5,5 +5,10 @@
   "sectionTitle": "Управление образами ВМ",
   "icon": "",
   "weight": 3,
-  "uuid": "f177a864-dbac-4662-bb30-fd453720724d"
+  "uuid": "f177a864-dbac-4662-bb30-fd453720724d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

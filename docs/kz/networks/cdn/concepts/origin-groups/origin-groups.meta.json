@@ -4,5 +4,10 @@
   "metaDescription": "CDN серверлері топтағы бастаулармен қалай өзара әрекеттеседі.",
   "sectionTitle": "Бастауыштар топтары",
   "icon": "",
-  "weight": 3
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

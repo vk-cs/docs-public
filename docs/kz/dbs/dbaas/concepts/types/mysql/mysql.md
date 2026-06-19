@@ -1,3 +1,5 @@
+# {heading(MySQL)[id=dbaas-concepts-mysql]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 MySQL — Open Source қауымдастығының қолдауымен Oracle компаниясы әзірлейтін, бастапқы коды ашық реляциялық СУБД.
@@ -10,10 +12,10 @@ MySQL мына жағдайларда оңтайлы шешім болады, е
 - деректер қорынан жақсы көлденең масштабталу және бір уақытта көптеген оқу сұрауларына төтеп беру қабілеті талап етілсе;
 - шешімнің өрістету мен баптауда қарапайым болуы маңызды болса.
 
-VK Cloud-та қолдау көрсетілетін MySQL нұсқаларының тізімі осы деректер қоры инстансын [құру](../../../instructions/create) кезінде қолжетімді.
+VK Cloud-та қолдау көрсетілетін MySQL нұсқаларының тізімі осы деректер қоры инстансын {linkto(../../../instructions/create#dbaas-create)[text=құру]} кезінде қолжетімді.
 
-## Әрі қарай не істеу керек?
+## {heading(Әрі қарай не істеу керек?)[id=dbaas-concepts-mysql-whats-next]}
 
 - MySQL ресми құжаттамасын [оқыңыз](https://dev.mysql.com/doc/).
 - MySQL 5.7 және 8.0 нұсқаларының айырмашылығы неде екенін [біліңіз](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html).
-- VK Cloud-та осы СУБД инстанстары үшін қолжетімді негізгі операциялармен [танысыңыз](../../../instructions/manage-instance/mysql).
+- VK Cloud-та осы СУБД инстанстары үшін қолжетімді негізгі операциялармен {linkto(../../../instructions/manage-instance/mysql#dbaas-mysql)[text=танысыңыз]}.

@@ -1,6 +1,8 @@
+# {heading(Сервис архитектурасы)[id=monitoring-architecture]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Тұжырымдамалар
+## {heading(Тұжырымдамалар)[id=monitoring-architecture-concepts]}
 
 Cloud Monitoring сервисі бірнеше бөліктен тұрады:
 
@@ -11,15 +13,88 @@ Cloud Monitoring сервисі бірнеше бөліктен тұрады:
 - Дашбордтар мен графиктерді құру мүмкіндігі бар пайдаланушы интерфейсі.
 - Мониторинг агенттерін орталықтандырылған түрде жаңарту сервисі.
 
-## Атаулар кеңістіктері (namespace)
+## {heading(Атаулар кеңістіктері (namespace))[id=monitoring-namespace]}
 
-Әр сервис деректерді өз атаулар кеңістігіне жазады. VK Cloud сервистері қалыптастыратын атаулар кеңістіктерінің стандартты атаулары `mcs/servicename` түрінде болады. Егер пайдаланушы метрикаларын жазу қажет болса, атаулар кеңістігінің атауы `mcs/` таңбаларынан басталмауы керек.
+Әр сервис деректерді өз атаулар кеңістігіне жазады. {var(cloud)} сервистері қалыптастыратын атаулар кеңістіктерінің стандартты атаулары `mcs/servicename` түрінде болады. Егер пайдаланушы метрикаларын жазу қажет болса, атаулар кеңістігінің атауы `mcs/` таңбаларынан басталмауы керек.
 
-#### Стандартты атаулар кеңістіктері
+#### {heading(Стандартты атаулар кеңістіктері)[id=monitoring-standard-namespace]}
 
-<table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Сервис атауы</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Атаулар кеңістігінің атауы</strong></p></td></tr><tr><td>Cloud Servers</td><td>mcs/vm</td></tr><tr><td>Cloud Networks</td><td>mcs/network</td></tr><tr><td>VK Object Storage</td><td>mcs/cloudstorage</td></tr><tr><td>Cloud Containers</td><td>mcs/containers</td></tr><tr><td>Cloud Databases</td><td>mcs/databases</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Arenadata DB as a Service</td><td>mcs/dwh</td></tr><tr><td>Cloud Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
+{ifdef(public)}
+[cols="1,1", options="header"]
+|===
+|Сервис атауы
+|Атаулар кеңістігінің атауы
 
-## Белгілер (label)
+|Cloud Servers
+|`mcs/vm`
+
+|Cloud Networks
+|`mcs/network`
+
+|{var(s3)}
+|`mcs/cloudstorage`
+
+|Cloud Containers
+|`mcs/containers`
+
+|Cloud Databases
+|`mcs/databases`
+
+|SQS
+|`mcs/managedqueue`
+
+|Marketplace
+|`mcs/marketplace`
+
+|CDN
+|`mcs/cdn`
+
+|Arenadata DB as a Service
+|`mcs/dwh`
+
+|Cloud Monitoring
+|`mcs/monitoring`
+|===
+{/ifdef}
+
+{ifdef(private-pdf,private-pg-pdf)}
+{var(cloud)} жүйесінде пайдаланылатын атаулар кеңістіктерінің стандартты атаулары {linkto(#tab_comparison_operators)[text=%number кестесінде]} берілген.
+
+<!--- //todo Таблицу ниже необходимо актуализировать для релиза 4.3 -->
+
+{caption(Кесте {counter(table)[id=numb_tab_comparison_operators]} — Ресурстарға арналған атаулар кеңістіктері)[align=right;position=above;id=tab_comparison_operators;number={const(numb_tab_comparison_operators)}]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+[cols="1,1", options="header"]
+|===
+|Ресурс атауы
+|Атаулар кеңістігінің атауы
+
+|Виртуалды машиналар
+|`mcs/vm`
+
+|Дерекқорлар
+|`mcs/dbaas`
+
+|Kubernetes кластерлері
+|`mcs/kubernetes`
+
+|Резервтік көшірмелер
+|`mcs/backup`
+
+|Қолданбалар дүкені
+|`mcs/marketplace`
+|===
+{/ifdef}{ifdef(private-pdf,private-pg-pdf)}
+{/caption}{/ifdef}
+{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+Атаулар кеңістігі үшінші тарап жүйесін {var(cloud)} жүйесімен интеграциялау процесінде беріледі.
+
+{note:info}
+Егер жоқ атаулар кеңістігінің атауы көрсетілсе, ресурс үшін параметрлер болмағандықтан графикті құру мүмкін болмайды.
+{/note}
+
+{/ifdef}
+
+## {heading(Белгілер (label))[id=monitoring-label]}
 
 Белгілерде мақсатты ресурсты сәйкестендіре алатын қосымша метаақпарат беріледі, мысалы, ВМ үшін бұл ВМ атауы немесе идентификаторы болуы мүмкін.
 
@@ -37,7 +112,7 @@ SUM BY(host) (cpu:Minimum{instance="<"span >"server1", app!="<"span >"system"})
 SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h)
 ```
 
-## Агрегаттау
+## {heading(Агрегаттау)[id=monitoring-aggregation]}
 
 Агрегаттау процесінің негізгі сипаттамалары:
 
@@ -53,7 +128,7 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 - Агрегатталған метрикалар 30 күн бойы сақталады.
 - Пайдаланушы қажетті белгі мәндері бойынша сүзгілеп, агрегатталған метрикалардың мәндерін ала алады.
 
-## Өлшем бірліктері
+## {heading(Өлшем бірліктері)[id=monitoring-units-of-measurement]}
 
 Cloud Monitoring жүйесінде беруге және олар бойынша агрегаттауға болатын стандартты өлшем бірліктері бар:
 

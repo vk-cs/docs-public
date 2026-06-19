@@ -4,5 +4,10 @@
   "metaDescription": "Бұлтты сервистерді басқаруды автоматтандыруға және VK Cloud-пен жұмыс істеуге арналған меншікті құралдарды әзірлеуге арналған жария API спецификациялары. Cloud Monitoring 2.0 сервисінің API-ы",
   "sectionTitle": "Cloud Monitoring 2.0",
   "icon": "",
-  "weight": 16
+  "weight": 16,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,3 +1,5 @@
+# {heading(Жылдам бастау)[id=vnet-quick-start]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жылдам бастау сервиспен жұмысты бастауға және оның мүмкіндіктерімен танысуға көмектеседі.
@@ -9,4 +11,4 @@
 1. Қауіпсіздік топтарын тағайындауды үйренесіз.
 1. Жасалған ВМ-ден интернетке қолжеткізуді тексересіз.
 
-{include(/kz/_includes/_create-network.md)}
+{include(../../../_includes/_create-network.md)}

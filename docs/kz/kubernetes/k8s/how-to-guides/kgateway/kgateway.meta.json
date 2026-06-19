@@ -1,9 +1,14 @@
 {
   "title": "Kgateway пайдалану",
-  "shortDescription": "Кіріс HTTP-трафикті тестілік қолданбаға қайта бағыттау үшін Kgateway пайдалану жолы",
-  "metaDescription": "Cloud Containers ішінде Kgateway аддонын қалай баптауға болады: Gateway және HTTPRoute жасау, трафикті маршруттау және httpbin сервисін тексеру",
+  "shortDescription": "Кіріс HTTP-трафигін тестілік қолданбаға қайта бағыттау үшін Kgateway қалай пайдалану керек",
+  "metaDescription": "Cloud Containers ішіндегі Kgateway аддонын қалай баптау керек: Gateway және HTTPRoute жасау, трафикті бағыттау және httpbin сервисін тексеру",
   "sectionTitle": "Kgateway пайдалану",
   "icon": "",
   "weight": 13,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

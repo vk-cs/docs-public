@@ -1,3 +1,3 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Тұжырымдамалар)[id=bare-metal-concepts]}
 
-VK Cloud жүйесіндегі Bare Metal сервисінің жұмыс істеу және құрылу қағидаттарының сипаттамасы.
+{var(cloud)} жүйесіндегі Bare Metal сервисінің жұмыс істеу және құрылу қағидаттарының сипаттамасы.

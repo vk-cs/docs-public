@@ -1,3 +1,5 @@
+# {heading(Метрикалардың функциялары мен топтаулары)[id=monitoring-mon-read-metrics]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Monitoring метрика мәндерін алу үшін API ұсынады. Сұраулар негізінде метрикалармен жұмыс істеуге арналған PromQL тілінің ішкі жиынын қолдау іске асырылған.

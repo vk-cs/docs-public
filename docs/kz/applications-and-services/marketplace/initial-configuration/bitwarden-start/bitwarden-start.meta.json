@@ -4,5 +4,19 @@
   "metaDescription": "Тіркелгі деректері мен құпияларды қауіпсіз сақтау және оларды бірлесіп басқару үшін Bitwarden орналастыру",
   "sectionTitle": "Bitwarden орналастыру",
   "icon": "",
-  "weight": 21
+  "weight": 21,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,43 +1,58 @@
-Вы можете выполнить [масштабирование кластера Cloud Containers](../../concepts/scale) вручную или настроить автоматическое масштабирование, чтобы адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
+# {heading(Масштабирование узлов кластера)[id=k8s-instructions-scale]}
 
-## Вертикальное масштабирование
+{ifdef(public)}
+Вы можете выполнить {linkto(../../concepts/scale#k8s-scale)[text=масштабирование кластера Cloud Containers]} вручную или настроить автоматическое масштабирование, чтобы адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
+{/ifdef}
 
-Такой тип масштабирования применим для master-узлов и групп worker-узлов. В процессе масштабирования изменяются [шаблоны виртуальных машин](../../concepts/flavors) для узлов кластера, количество узлов остается прежним. Если необходимо изменить количество worker-узлов в группе, [выполните горизонтальное масштабирование](#gorizontalnoe_masshtabirovanie).
+## {heading(Вертикальное масштабирование)[id=k8s-instructions-scale-vertical]}
 
-### {heading(Масштабирование master-узлов)[id=scale_master_nodes]}
+{ifdef(public)}
+Такой тип масштабирования применим для master-узлов и групп worker-узлов. В процессе масштабирования изменяются {linkto(../../concepts/flavors#k8s-flavors)[text=шаблоны виртуальных машин]} для узлов кластера, количество узлов остается прежним. Если необходимо изменить количество worker-узлов в группе, {linkto(#k8s-instructions-scale-horizontal)[text=выполните горизонтальное масштабирование]}.
+{/ifdef}
 
-1. [Изучите, как работает механизм вертикального масштабирования](../../concepts/scale).
+{ifndef(public)}
+Вертикальное масштабирование доступно только для master-узла кластера.
 
-1. [Убедитесь](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+Чтобы выполнить вертикальное масштабирование кластера:
+
+1. {linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
+1. Укажите новый шаблон конфигурации ВМ и нажмите кнопку **Сохранить**.
+{/ifndef}
+
+{ifdef(public)}
+### {heading(Масштабирование master-узлов)[id=k8s-instructions-scale-vertical-master-nodes]}
+
+1. {linkto(../../concepts/scale#k8s-scale)[text=Изучите, как работает механизм вертикального масштабирования]}.
+
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Убедитесь]}, что хватает квот для масштабирования.
 
 1. Выполните масштабирование.
 
    {note:warn}
-
    В процессе масштабирования виртуальные машины, на которых размещены master-узлы, будут последовательно перезапущены.
 
-   Если кластер [содержит один master-узел](../../concepts/architecture#cluster_topology), то Kubernetes API будет недоступен в ходе масштабирования.
-
+   Если кластер {linkto(../../concepts/architecture#k8s-architecture-topology)[text=содержит один master-узел]}, то Kubernetes API будет недоступен в ходе масштабирования.
    {/note}
 
    {tabs}
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
-   1. Выберите категорию виртуальной машины, чтобы отфильтровать список доступных [шаблонов конфигураций](/ru/computing/iaas/concepts/vm/flavor).
+   1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
+   1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
+   1. Выберите категорию виртуальной машины, чтобы отфильтровать список доступных {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблонов конфигураций]}.
 
       {note:info}
-
       Шаблоны с высокопроизводительными CPU доступны по запросу в [техническую поддержку](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Высокопроизводительные CPU**.
 
-      Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony_konfiguracii).
-
+      Подробнее в разделе {linkto(../../concepts/flavors#k8s-flavors-vm-flavor)[text=Доступные вычислительные ресурсы]}.
       {/note}
+
    1. Выберите нужный шаблон виртуальной машины из выпадающего списка.
    1. Нажмите кнопку **Сохранить**.
 
@@ -46,14 +61,14 @@
    {tab(Terraform)}
 
    {note:info}
-   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
    {/note}
  
-   1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+   1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
 
    1. Определите новый тип виртуальной машины, который будет использоваться для master-узлов кластера:
 
@@ -106,46 +121,42 @@
 
    {/tabs}
 
-### {heading(Масштабирование групп worker-узлов)[id=scale_worker_nodes]}
+### {heading(Масштабирование групп worker-узлов)[id=k8s-instructions-scale-vertical-worker-nodes]}
 
-1. [Изучите, как работает механизм вертикального масштабирования](../../concepts/scale).
+1. {linkto(../../concepts/scale#k8s-scale)[text=Изучите, как работает механизм вертикального масштабирования]}.
 
 1. Подготовьтесь к масштабированию:
 
-   1. [Убедитесь](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Убедитесь]}, что хватает квот для масштабирования.
    1. Если вы планируете сократить объем вычислительных ресурсов, то убедитесь, что итогового объема ресурсов в группе worker-узлов будет достаточно для размещения рабочей нагрузки.
    1. Убедитесь, что для рабочей нагрузки настроена репликация и реплики распределены по нескольким worker-узлам из группы узлов.
 
-      Если в группе узлов есть только один worker-узел, [увеличьте количество узлов в группе](#gorizontalnoe_masshtabirovanie) и настройте репликацию, если это возможно.
+      Если в группе узлов есть только один worker-узел, {linkto(k8s-instructions-scale-horizontal)[text=увеличьте количество узлов в группе]} и настройте репликацию, если это возможно.
 
 1. Выполните масштабирование.
 
    {note:warn}
-
    В процессе масштабирования виртуальные машины, на которых размещены worker-узлы, будут последовательно перезапущены.
 
    Рабочие нагрузки, для которых не была настроена репликация, будут недоступны в ходе масштабирования.
-
    {/note}
 
    {tabs}
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Найдите нужную группу узлов в этом кластере.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для этой группы узлов и выберите пункт **Изменить тип виртуальной машины**.
-   1. Выберите категорию виртуальной машины, чтобы отфильтровать список доступных [шаблонов конфигураций](/ru/computing/iaas/concepts/vm/flavor). 
+   1. Нажмите ![](../../../../assets/more-icon.svg "inline") для этой группы узлов и выберите пункт **Изменить тип виртуальной машины**.
+   1. Выберите категорию виртуальной машины, чтобы отфильтровать список доступных {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблонов конфигураций]}. 
 
       {note:info}
-
       Шаблоны с высокопроизводительными CPU доступны по запросу в [техническую поддержку](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Высокопроизводительные CPU**.
 
-      Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony_konfiguracii).
-
+      Подробнее в разделе {linkto(../../concepts/flavors#k8s-flavors-vm-flavor)[text=Доступные вычислительные ресурсы]}.
       {/note}
 
    1. Выберите нужный шаблон виртуальной машины из выпадающего списка.
@@ -156,14 +167,14 @@
    {tab(Terraform)}
    
    {note:info}
-   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
    {/note}
 
-   1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+   1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
 
    1. Определите новый тип виртуальной машины, который будет использоваться для worker-узлов в группе узлов кластера:
 
@@ -216,16 +227,41 @@
    {/tab}
 
    {/tabs}
+{/ifdef}
 
-## Горизонтальное масштабирование
+## {heading(Горизонтальное масштабирование)[id=k8s-instructions-scale-horizontal]}
 
-Такой тип масштабирования применим для групп worker-узлов. В процессе масштабирования изменяется количество worker-узлов в группе, [шаблоны виртуальных машин](../../concepts/flavors) для worker-узлов остаются прежними. Если необходимо изменить эти шаблоны для master-узлов или worker-узлов, [выполните вертикальное масштабирование](#vertikalnoe_masshtabirovanie).
+{ifdef(public)}
+Такой тип масштабирования применим для групп worker-узлов. В процессе масштабирования изменяется количество worker-узлов в группе, {linkto(../../concepts/flavors#k8s-flavors)[text=шаблоны виртуальных машин]} для worker-узлов остаются прежними. Если необходимо изменить эти шаблоны для master-узлов или worker-узлов, {linkto(#k8s-instructions-scale-vertical)[text=выполните вертикальное масштабирование]}.
+{/ifdef}
 
-### Масштабирование групп worker-узлов
+{ifndef(public)}
+Горизонтальное масштабирование применяется при планировании динамической нагрузки на кластер. В случае повышенной нагрузки на сервер кластер автоматически увеличит количество нод, а при отсутствии нагрузки — автоматически уменьшит.
 
-1. [Изучите, как работает механизм горизонтального масштабирования](../../concepts/scale).
+При использовании автоматического горизонтального масштабирования учтите факторы:
 
-1. [Убедитесь](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+* Гарантируется, что у всех модулей в кластере есть место для запуска, независимо от уровня нагрузки на процессор, и что в кластере нет ненужных узлов.
+* Необходимость масштабирования регистрируется примерно через 30 секунд.
+* После того как узел становится ненужным, масштабирование кластера выполняется через 5 минут.
+* Ответственно применяйте опцию `cluster-autoscaler.kubernetes.io/safe-to-evict (true)`. Если установить много подов или если многие из них будут разбросаны по всем узлам, можно потерять возможность уменьшать масштаб кластера.
+* Используйте [PodDisruptionBudgets](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/), чтобы предотвратить удаление пода, из-за чего часть приложения может полностью выйти из строя.
+
+Чтобы настроить параметры для горизонтального масштабирования:
+
+1. {linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужной группы узлов и выберите пункт **Настройки масштабирования**.
+1. Активируйте переключатель **Включить автомасштабирование**.
+1. Укажите минимальное и максимальное количество узлов в одноименных полях.
+1. Нажмите кнопку **Сохранить изменения**.
+{/ifndef}
+
+{ifdef(public)}
+### {heading(Масштабирование групп worker-узлов)[id=k8s-instructions-scale-horizontal-worker-nodes]}
+
+1. {linkto(../../concepts/scale#k8s-scale)[text=Изучите, как работает механизм горизонтального масштабирования]}.
+
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Убедитесь]}, что хватает квот для масштабирования.
 
 1. Выполните масштабирование:
 
@@ -233,12 +269,12 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Найдите нужную группу узлов в этом кластере.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для этой группы узлов и выберите пункт **Настройки масштабирования**.
+   1. Нажмите ![](../../../../assets/more-icon.svg "inline") для этой группы узлов и выберите пункт **Настройки масштабирования**.
    1. В появившемся окне:
 
       1. Убедитесь, что опция **Включить автомасштабирование** выключена.
@@ -250,12 +286,12 @@
    {tab(Terraform)}
 
    {note:info}
-   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
    {/note}
 
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
 
    1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform:
 
@@ -301,11 +337,11 @@
 
    {/tabs}
 
-### {heading(Настройка автоматического масштабирования групп worker-узлов)[id=autoscale_worker_nodes]}
+### {heading(Настройка автоматического масштабирования групп worker-узлов)[id=k8s-instructions-scale-horizontal-autoscaling-worker-nodes]}
 
-1. [Изучите, как работает механизм горизонтального масштабирования](../../concepts/scale).
+1. {linkto(../../concepts/scale#k8s-scale)[text=Изучите, как работает механизм горизонтального масштабирования]}.
 
-1. [Убедитесь](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=Убедитесь]}, что хватает квот для масштабирования.
 
 1. Настройте автоматическое масштабирование:
 
@@ -313,12 +349,12 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Найдите нужную группу узлов в этом кластере.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для этой группы узлов и выберите пункт **Настройки масштабирования**.
+   1. Нажмите ![](../../../../assets/more-icon.svg "inline") для этой группы узлов и выберите пункт **Настройки масштабирования**.
    1. В появившемся окне:
 
       1. Убедитесь, что опция **Включить автомасштабирование** включена.
@@ -330,12 +366,12 @@
    {tab(Terraform)}
 
    {note:info}
-   Управление через Terraform доступно только для кластеров [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+   Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
    {/note}
 
-   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-   1. [Убедитесь](../manage-cluster#start), что нужный кластер запущен.
+   1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
 
    1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform:
 
@@ -382,3 +418,4 @@
    {/tab}
 
    {/tabs}
+{/ifdef}

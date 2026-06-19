@@ -7,5 +7,19 @@
   "disableGithub": true,
   "disableDateInformation": true,
   "weight": 20,
-  "uuid": "VK Cloud академиялық жобалар мен зерттеулерді қолдау бағдарламасының қағидалары"
+  "uuid": "VK Cloud академиялық жобалар мен зерттеулерді қолдау бағдарламасының қағидалары",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

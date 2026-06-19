@@ -1,0 +1,14 @@
+{
+  "title": "Object Lock",
+  "shortDescription": "Установка бессрочной (legal hold) и временной (retention) блокировки удаления объектов, а также настройка временной блокировки по умолчанию",
+  "metaDescription": "Все доступные методы для работы с блокировкой объектов в VK Object Storage: установить или снять бессрочную блокировку (PutObjectLegalHold), получить статус бессрочной блокировки (GetObjectLegalHold), установить, настроить или снять временную блокировку (PutObjectRetention), получить статус временной блокировки (GetObjectRetention), установить, настроить или снять временную блокировку по умолчанию (PutObjectLockConfiguration) или получить статус временной блокировки по умолчанию (GetObjectLockConfiguration)",
+  "sectionTitle": "Object Lock",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

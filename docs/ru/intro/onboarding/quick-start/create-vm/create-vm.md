@@ -1,37 +1,36 @@
 # {heading(Cloud Servers: создайте первую виртуальную машину)[id=onboarding-create-vm]}
 
-[Cloud Servers](/ru/computing/iaas/concepts/about) — сервис, позволяющий работать с виртуальными машинами. Виртуальные машины применяются для развертывания и запуска приложений, баз данных, рабочих станций и любых других сервисов, работающих постоянно.
+{linkto(../../../../computing/iaas/concepts/about#iaas-about)[text=Cloud Servers]} — сервис, позволяющий работать с виртуальными машинами. Виртуальные машины применяются для развертывания и запуска приложений, баз данных, рабочих станций и любых других сервисов, работающих постоянно.
 
 Начните работу с сервисом [Cloud Servers](/ru/computing/iaas) любым удобным способом:
 
-- Воспользуйтесь [инструкцией](#create_linux_vm) и создайте первую виртуальную машину на базе Linux из образа `Ubuntu 22.04` и подключитесь к ней.
-- Посмотрите {linkto(#video_create_vm)[text=видео]}, в котором будет создана виртуальная машина, выбраны диски, настроены резервное копирование и мониторинг.
+- Воспользуйтесь [инструкцией](#onboarding-create-vm-linux) и создайте первую виртуальную машину на базе Linux из образа `Ubuntu 22.04` и подключитесь к ней.
+- Посмотрите {linkto(#onboarding-create-vm-video)[text=видео]}, в котором будет создана виртуальная машина, выбраны диски, настроены резервное копирование и мониторинг.
 - Пройдите [бесплатный обучающий курс](https://cloud.vk.com/cloud-native-courses/advanced/virtualnye-mashiny/). В теоретической части курса объясняется, что такое виртуальная машина, какие есть типы ВМ и дисков. В практической части курса вы создадите виртуальную машину, воспроизведете на ней неисправность, а затем устраните эту неисправность восстановлением ВМ из резервной копии.
 
-{note:info}Работающая ВМ потребляет вычислительные ресурсы и [тарифицируется](/ru/computing/iaas/tariffication).{/note}
+{note:info}Работающая ВМ потребляет вычислительные ресурсы и {linkto(../../../../computing/iaas/tariffication#iaas-tariffication)[text=тарифицируется]}.{/note}
 
-## {heading(Создайте ВМ на базе Linux)[id=create_linux_vm]}
+## {heading(Создайте ВМ на базе Linux)[id=onboarding-create-vm-linux]}
 
 Пройдя все шаги этой инструкции, вы создадите новую виртуальную машину из образа `Ubuntu 22.04` и подключитесь к ней по протоколу SSH.
 
-{include(/ru/_includes/_create-vm.md)[tags=vm_onboarding]}
+{include(../../../../_includes/_create-vm.md)[tags=vm_onboarding]}
 
-## Видеоинструкция
+## {heading(Видеоинструкция)[id=onboarding-create-vm-video]}
 
-В этом видео будет создана виртуальная машина, выбраны диски, настроены резервное копирование и мониторинг через личный кабинет VK Cloud.
+В этом видео будет создана виртуальная машина, выбраны диски, настроены резервное копирование и мониторинг через личный кабинет {var(cloud)}.
 
 {caption()[id=position=above;align=right;id=video_create_vm]}
 {video(https://vkvideo.ru/video_ext.php?oid=-164978780&id=456239692&hash=816c5b89636647fc&hd=3)[type=vkvideo]}
 {/caption}
 
-## {heading(Обучающий курс)[id=courses_vm]}
+## {heading(Обучающий курс)[id=onboarding-create-vm-courses]}
 
 Пройдите [бесплатный обучающий курс](https://cloud.vk.com/cloud-native-courses/advanced/virtualnye-mashiny/). В теоретической части курса объясняется, что такое виртуальная машина, какие есть типы ВМ и дисков. В практической части курса вы создадите виртуальную машину, воспроизведете на ней неисправность, а затем устраните эту неисправность восстановлением ВМ из резервной копии.
 
+## {heading(Вопросы и ответы)[id=onboarding-create-vm-faq]}
 
-## Вопросы и ответы
-
-{cut(Какие операционные системы доступны для виртуальных машин в VK Cloud?)}
+{cut(Какие операционные системы доступны для виртуальных машин в {var(cloud)}?)}
 
 Полный список готовых образов доступен в личном кабинете в [окне создания новой виртуальной машины](https://msk.cloud.vk.com/app/services/infra/servers/add).
 
@@ -53,20 +52,16 @@
 |Windows Server
 |===
 
-При необходимости вы можете [импортировать образ](/ru/computing/iaas/instructions/images/images-manage#import_obraza) ОС самостоятельно.
+При необходимости вы можете {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировать образ]} ОС самостоятельно.
 {/cut}
 
 {cut(Как масштабировать виртуальную машину?)}
 Для вертикального масштабирования виртуальной машины:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-
-1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
-
-1. В списке виртуальных машин нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной ВМ.
-
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
+1. В списке виртуальных машин нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужной ВМ.
 1. Выберите действие **Изменить тип ВМ**.
-
 1. Выберите новый тип виртуальной машины и нажмите кнопку **Сохранить**.
 
    {note:info}ВМ будет перезапущена.{/note}
@@ -79,15 +74,15 @@
 1. Обе ВМ подключены к одной приватной подсети и связаны по внутренним IP-адресам.
 1. ВМ подключены к разным подсетям одной сети, а подсети связаны через маршрутизатор.
 
-Оба способа требуют настройки [групп безопасности](/ru/networks/vnet/concepts/traffic-limiting#secgroups). Например, обе ВМ можно добавить в группу безопасности `default` — для нее разрешен любой входящий и исходящий трафик в рамках самой группы.
+Оба способа требуют настройки {linkto(../../../../networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups)[text=групп безопасности]}. Например, обе ВМ можно добавить в группу безопасности `default` — для нее разрешен любой входящий и исходящий трафик в рамках самой группы. 
 
 {/cut}
 
 {cut(Как загрузить свой образ ОС?)}
 
-Вы можете [импортировать образ](/ru/computing/iaas/instructions/images/images-manage#import_obraza) из файла через личный кабинет в [окне создания нового образа](https://msk.cloud.vk.com/app/services/infra/images) или с использованием CLI.
+Вы можете {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировать образ]} из файла через личный кабинет в [окне создания нового образа](https://msk.cloud.vk.com/app/services/infra/images) или с использованием CLI.
 
-{note:warn} Поддерживаются только образы в формате RAW. Если ваш образ в другом формате, [выполните его конвертацию](/ru/computing/iaas/how-to-guides/packer#1_konvertiruyte_obraz_v_format_raw). {/note}
+{note:warn} Поддерживаются только образы в формате RAW. Если ваш образ в другом формате, {linkto(../../../../computing/iaas/how-to-guides/packer#iaas-packer-convert-image)[text=выполните его конвертацию]}.{/note}
 
 {/cut}
 
@@ -95,10 +90,10 @@
 
 Рекомендуемые способы подключения к виртуальным машинам:
 
-- по [SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) для ВМ на базе Linux;
-- по [RDP](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win) для ВМ на базе Windows.
+- по {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH]} для ВМ на базе Linux;
+- по {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-win#iaas-vm-connect-win)[text=RDP]} для ВМ на базе Windows.
 
-Если рекомендованные способы не работают, или ВМ не имеет внешнего IP-адреса, воспользуйтесь [VNC-консолью](/ru/computing/iaas/instructions/vm/vm-console#vnc_konsol).
+Если рекомендованные способы не работают, или ВМ не имеет внешнего IP-адреса, воспользуйтесь {linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=VNC-консолью]}.
 
 {/cut}
 

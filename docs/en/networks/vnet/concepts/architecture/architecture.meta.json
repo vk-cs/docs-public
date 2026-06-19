@@ -1,9 +1,14 @@
 {
-    "title": "Service architecture",
-      "shortDescription": "How the service is designed",
-      "metaDescription": "",
-    "sectionTitle": "Service architecture",
-    "icon": "",
-    "weight": 2,
-    "uuid": "388502f4-a8ea-4588-907e-03b419422690"
+  "title": "Service architecture",
+  "shortDescription": "How the service is designed",
+  "metaDescription": "",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "388502f4-a8ea-4588-907e-03b419422690",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

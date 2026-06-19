@@ -1,14 +1,16 @@
-Вы можете подключиться к реестру Docker, если в кластере установлен соответствующий [аддон](../../concepts/addons-and-settings/addons).
+# {heading(Подключение к реестру Docker)[id=k8s-docker-registry]}
 
-При [установке](../../instructions/addons/advanced-installation/install-advanced-registry) аддона для него создается стандартный балансировщик нагрузки с Floating IP-адресом. Поэтому к реестру Docker можно подключиться с любого хоста, имеющего доступ в интернет.
+Вы можете подключиться к реестру Docker, если в кластере установлен соответствующий {linkto(../../concepts/addons-and-settings/addons#k8s-addons)[text=аддон]}.
 
-## Подготовительные шаги
+При {linkto(../../instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry)[text=установке]} аддона для него создается стандартный балансировщик нагрузки с Floating IP-адресом. Поэтому к реестру Docker можно подключиться с любого хоста, имеющего доступ в интернет.
 
-1. [Убедитесь](../../instructions/addons/manage-addons#prosmotr_addonov), что аддон реестра Docker (`docker-registry`) установлен в кластере.
-1. [Убедитесь](../kubectl#check_connection), что вы можете подключаться к кластеру с помощью `kubectl`.
-1. [Получите данные](../../instructions/addons/advanced-installation/install-advanced-registry#podklyuchenie_k_reestru) для доступа к реестру Docker.
+## {heading(Подготовительные шаги)[id=k8s-docker-registry-before-work]}
 
-## Подключение к реестру Docker
+1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-view)[text=Убедитесь]}, что аддон реестра Docker (`docker-registry`) установлен в кластере.
+1. {linkto(../kubectl#k8s-kubectl-check-connection)[text=Убедитесь]}, что вы можете подключаться к кластеру с помощью `kubectl`.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry-connect)[text=Получите данные]} для доступа к реестру Docker.
+
+## {heading(Подключение к реестру Docker)[id=k8s-docker-registry-connect]}
 
 На хосте, с которого планируется подключаться к реестру:
 
@@ -42,7 +44,7 @@
 
       {tab(Linux)}
 
-      - Для серверного варианта Docker Engine выполните одну из команд для перезапуска:
+      * Для серверного варианта Docker Engine выполните одну из команд для перезапуска:
 
         ```console
         sudo systemd restart docker
@@ -52,7 +54,7 @@
         sudo service docker restart
         ```
 
-      - Для Docker Desktop воспользуйтесь [графическим интерфейсом](https://docs.docker.com/desktop/settings/linux/#docker-engine).
+      * Для Docker Desktop воспользуйтесь [графическим интерфейсом](https://docs.docker.com/desktop/settings/linux/#docker-engine).
 
       {/tab}
 
@@ -82,7 +84,7 @@
 
 Подробнее о работе с реестром в [официальной документации Docker](https://docs.docker.com/desktop/).
 
-## Использование реестра Docker в кластере Kubernetes
+## {heading(Использование реестра Docker в кластере Kubernetes)[id=k8s-docker-registry-using]}
 
 Чтобы разворачивать рабочие нагрузки (workloads) в кластере, используя образы из реестра Docker:
 
@@ -91,9 +93,7 @@
    Если не указывать параметр `--namespace`, то секрет будет создан в пространстве имен (namespace) по умолчанию (`default`).
 
    {note:warn}
-
    Секрет должен располагаться в том же пространстве имен, в котором планируется развернуть рабочую нагрузку.
-
    {/note}
 
    {tabs}
@@ -101,7 +101,7 @@
    {tab(Linux (bash) / macOS (zsh))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds \
+   kubectl create secret docker-registry k8s-registry-creds \ 
      --docker-server=<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000 \
      --docker-username=<ЛОГИН> \
      --docker-password=<ПАРОЛЬ> \
@@ -113,7 +113,7 @@
    {tab(Windows (PowerShell))}
 
    ```console
-   kubectl create secret docker-registry k8s-registry-creds `
+   kubectl create secret docker-registry k8s-registry-creds ` 
      --docker-server=<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000 `
      --docker-username=<ЛОГИН> `
      --docker-password=<ПАРОЛЬ> `
@@ -126,9 +126,9 @@
 
 1. Укажите в манифесте для рабочей нагрузки:
 
-   - Имя созданного секрета в параметре `ìmagePullSecrets`.
+   * Имя созданного секрета в параметре `ìmagePullSecrets`.
 
-   - Путь к образу из реестра в параметре `containers.image`.
+   * Путь к образу из реестра в параметре `containers.image`.
 
      Путь задается в формате `<IP_АДРЕС_РЕЕСТРА_DOCKER>:5000/<ДИРЕКТОРИЯ_С_ОБРАЗОМ>/<ИМЯ_ОБРАЗА>:<ТЕГ>`.
 

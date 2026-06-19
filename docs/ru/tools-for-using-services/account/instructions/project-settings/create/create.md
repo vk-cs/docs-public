@@ -1,27 +1,31 @@
-{include(/ru/_includes/_project_create_header.md)}
+# {heading(Создание проекта)[id=tools-account-project-create]}
+
+{include(../../../../../_includes/_project_create_header.md)}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_project_create_tab_lk.md)}
+{include(../../../../../_includes/_project_create_tab_lk.md)}
 
 {/tab}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-{include(/ru/_includes/_project_create_tab_account.md)}
+{include(../../../../../_includes/_project_create_tab_account.md)}
 
 {/tab}
 
 {/tabs}
 
+{ifdef(public)}
 ## Что дальше?
 
-1. [Пополните](/ru/intro/billing/instructions/payment) баланс проекта, чтобы начать пользоваться сервисами.
+1. {linkto(../../../../../intro/billing/instructions/payment#billing-payment)[text=Пополните]} баланс проекта, чтобы начать пользоваться сервисами.
 
-    У проектов, созданных пользователями, [баланс](/ru/intro/billing/concepts/balance) изначально составляет 0 рублей. [Приветственные бонусы](/ru/intro/billing/concepts/balance) для таких проектов не начисляются.
+    У проектов, созданных пользователями, {linkto(../../../../../intro/billing/concepts/balance#billing-balance)[text=баланс]} изначально составляет 0 рублей. {linkto(../../../../../intro/billing/concepts/balance#billing-balance-bonuses)[text=Приветственные бонусы]} для таких проектов не начисляются.
 
-   Подробнее о стоимости сервисов в [статье о тарификации](../../../tariffication).
+   Подробнее о стоимости сервисов в {linkto(../../../tariffication#tools-account-tariffication)[text=статье о тарификации]}.
 
-1. [Настройте](/ru/access/iam/instructions/access-manage) доступы для проекта.
+1. {linkto(../access-manage#tools-account-project-access-manage)[text=Настройте]} доступы для проекта.
+{/ifdef}

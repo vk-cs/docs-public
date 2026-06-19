@@ -1,6 +1,8 @@
-{cut(Как зарегистрироваться в VK Cloud?)}
+# {heading(Вопросы и ответы)[id=tools-account-faq]}
 
-Перейдите на [страницу VK Cloud](https://cloud.vk.com) и нажмите **Регистрация**. Заполните все необходимые поля, чтобы начать использовать учетную запись. Подробнее в статье [Регистрация в VK Cloud](/ru/intro/onboarding/account).
+{cut(Как зарегистрироваться в {var(cloud)}?)}
+
+Перейдите на [страницу {var(cloud)}](https://cloud.vk.com) и нажмите **Регистрация**. Заполните все необходимые поля, чтобы начать использовать учетную запись. Подробнее в статье [Регистрация в {var(cloud)}](../../../intro/onboarding/account).
 
 {/cut}
 
@@ -10,7 +12,7 @@
 
 {note:warn}
 
-Через личный кабинет VK Cloud можно зарегистрировать только номера телефона, которые начинаются на `+7`.
+Через личный кабинет {var(cloud)} можно зарегистрировать только номера телефона, которые начинаются на `+7`.
 
 {/note}
 
@@ -18,19 +20,19 @@
 
 {cut(Я зарегистрировался, но сервисы в личном кабинете все еще недоступны)}
 
-Сервисы становятся доступны после того, как вы до конца прошли процедуру [регистрации](/ru/intro/onboarding/account): привязали телефон, почту и карту для оплаты.
+Сервисы становятся доступны после того, как вы до конца прошли процедуру {linkto(../../../intro/onboarding/account#onboarding-account)[text=регистрации]}: привязали телефон, почту и карту для оплаты.
 
 {/cut}
 
 {cut(Какие права есть у участников проекта?)}
 
-Ролевая модель участников проекта описана в статье [Ролевая модель управления доступом](/ru/access/iam/concepts/rolesandpermissions).
+Ролевая модель участников проекта описана в статье {linkto(../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=Роли и права пользователей личного кабинета]}.
 
 {/cut}
 
 {cut(Как добавить дополнительного участника в проект?)}
 
-Процедура описана в статье [Приглашение участника в проект](/ru/tools-for-using-services/account/instructions/project-settings/invite). При добавлении укажите роли или разрешения, ориентируясь на [ролевую модель управления доступом](/ru/access/iam/concepts/rolesandpermissions).
+Процедура описана в статье {linkto(../instructions/project-settings/access-manage#project-access-invite-user)[text=Управление доступами]}. При добавлении укажите роль, ориентируясь на {linkto(../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=матрицу ролей]}.
 
 {/cut}
 
@@ -39,7 +41,7 @@
 1. Нажмите **Забыли пароль?** на экране входа в личный кабинет.
 1. Введите почту в поле **Email, указанный при регистрации**.
 1. Нажмите кнопку **Отправить пароль**. Письмо с инструкцией для восстановления пароля будет отправлено на указанную почту.
-1. Пройдите по ссылке в письме о восстановлении пароля от личного кабинета VK Cloud.
+1. Пройдите по ссылке в письме о восстановлении пароля от личного кабинета {var(cloud)}.
 1. Введите новый пароль в одноименное поле.
 1. Нажмите кнопку **Сохранить**.
 
@@ -56,9 +58,9 @@
 
 {/cut}
 
-{cut(Как сменить владельца учетной записи VK Cloud?)}
+{cut(Как сменить владельца учетной записи {var(cloud)}?)}
 
-Воспользуйтесь инструкцией из статьи [Управление проектом](../instructions/project-settings/manage#smena_vladelca_proekta).
+Воспользуйтесь инструкцией из статьи {linkto(../instructions/project-settings/manage#project-owner-edit)[text=Управление проектом]}.
 
 {/cut}
 
@@ -66,19 +68,19 @@
 
 [Обратитесь в техническую поддержку](/ru/contacts), указав:
 
-- [PID проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta);
+- {linkto(../instructions/project-settings/manage#project-pid-view)[text=PID проекта]};
 - ИНН текущего и нового владельца.
 {/cut}
 
-{cut(Может ли участник программы GeekBrains запросить увеличение квот на платформе VK Cloud?)}
+{cut(Может ли участник программы GeekBrains запросить увеличение квот на платформе {var(cloud)}?)}
 
 Да, может. Для этого обратитесь к назначенному GeekBrains куратору.
 
 {/cut}
 
-{cut(Как увеличить квоты проекта VK Cloud, если недостаточно свободных ресурсов?)}
+{cut(Как увеличить квоты проекта {var(cloud)}, если недостаточно свободных ресурсов?)}
 
-Воспользуйтесь [инструкцией по увеличению квот проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+Воспользуйтесь {linkto(../instructions/project-settings/manage#project-increase-quota)[text=инструкцией по увеличению квот проекта]}.
 
 {/cut}
 
@@ -90,6 +92,6 @@
 
 {cut(Как удалить учетную запись?)}
 
-Обратитесь в техническую поддержку, подробнее в статье [Удаление учетной записи](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/account-delete).
+Обратитесь в техническую поддержку, подробнее в статье {linkto(../../vk-cloud-account/instructions/account-manage/account-delete#vk-cloud-account-delete)[text=Удаление учетной записи]}.
 
 {/cut}

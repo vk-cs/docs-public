@@ -1,9 +1,14 @@
 {
-    "title": "Setting DNAT rules",
-      "shortDescription": "Adding, editing and deleting rules for redirecting data from a public IP address to an IP address inside a private network",
-      "metaDescription": "",
-    "sectionTitle": "Setting DNAT rules",
-    "icon": "",
-    "weight": 5,
-    "uuid": "eff338e4-5490-45a2-a503-1ac88c728cbf"
+  "title": "Setting DNAT rules",
+  "shortDescription": "Adding, editing and deleting rules for redirecting data from a public IP address to an IP address inside a private network",
+  "metaDescription": "",
+  "sectionTitle": "Setting DNAT rules",
+  "icon": "",
+  "weight": 5,
+  "uuid": "eff338e4-5490-45a2-a503-1ac88c728cbf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

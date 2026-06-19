@@ -4,5 +4,10 @@
   "metaDescription": "Создание с помощью Packer",
   "sectionTitle": "Создание с помощью Packer",
   "weight": 3,
-  "uuid": "5d817899-60d8-4f9f-82b1-81e2c66c0cce"
+  "uuid": "5d817899-60d8-4f9f-82b1-81e2c66c0cce",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

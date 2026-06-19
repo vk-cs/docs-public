@@ -1,9 +1,14 @@
 {
-    "title": "Вопросы и ответы",
-      "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Marketplace",
-      "metaDescription": "Marketplace VK Cloud: ответы на часто задаваемые вопросы о сервисе",
-    "sectionTitle": "Вопросы и ответы",
-    "icon": "",
-    "weight": 6,
-    "uuid": "e8d2e143-7675-4c0e-a201-bd6d89d6ef1e"
+  "title": "Вопросы и ответы",
+  "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Marketplace",
+  "metaDescription": "Marketplace VK Cloud: ответы на часто задаваемые вопросы о сервисе",
+  "sectionTitle": "Вопросы и ответы",
+  "icon": "",
+  "weight": 6,
+  "uuid": "e8d2e143-7675-4c0e-a201-bd6d89d6ef1e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

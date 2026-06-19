@@ -3,5 +3,12 @@
   "shortDescription": "Spark сервисіне шолу",
   "metaDescription": "VK Data Platform платформасындағы Cloud Spark сервисінің мүмкіндіктерін және оның қандай міндеттерге сай келетінін біліңіз",
   "sectionTitle": "Қызмет туралы",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

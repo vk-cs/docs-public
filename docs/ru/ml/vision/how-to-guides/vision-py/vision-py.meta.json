@@ -1,9 +1,14 @@
 {
-    "title": "Пример интеграции на Python",
-      "shortDescription": "Распознавание лиц с помощью добавления персоны в базу данных",
-      "metaDescription": "Попробуем распознать лица на фотографии: Скачайте файл smarty.py. python examples/python/smarty.py \\ -u",
-    "sectionTitle": "Пример интеграции на Python",
-    "icon": "",
-    "weight": 0,
-    "uuid": "2754f036-3c6d-4654-bda5-5d3c20bacbb0"
+  "title": "Пример интеграции на Python",
+  "shortDescription": "Распознавание лиц с помощью добавления персоны в базу данных",
+  "metaDescription": "Попробуем распознать лица на фотографии: Скачайте файл smarty.py. python examples/python/smarty.py \\ -u",
+  "sectionTitle": "Пример интеграции на Python",
+  "icon": "",
+  "weight": 0,
+  "uuid": "2754f036-3c6d-4654-bda5-5d3c20bacbb0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

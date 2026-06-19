@@ -5,5 +5,19 @@
   "sectionTitle": "Managing a worker node group",
   "icon": "",
   "weight": 3,
-  "uuid": "1c75813c-8671-49fc-a288-658b7ac3ca32"
+  "uuid": "1c75813c-8671-49fc-a288-658b7ac3ca32",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,12 @@
   "sectionTitle": "При работе с бакетом через AWS CLI возникает ошибка NoSuchBucket",
   "icon": "",
   "weight": 7,
-  "uuid": "f2209861-2716-4738-849e-b556f8d0cd8e"
+  "uuid": "f2209861-2716-4738-849e-b556f8d0cd8e",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

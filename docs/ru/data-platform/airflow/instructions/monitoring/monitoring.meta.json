@@ -1,0 +1,14 @@
+{
+  "title": "Мониторинг в Standalone",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, как просматривать метрики работы развернутых экземпляров сервиса Cloud Airflow в VK Data Platform версии Standalone",
+  "sectionTitle": "Мониторинг в Standalone",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

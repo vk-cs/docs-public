@@ -5,5 +5,12 @@
   "sectionTitle": "Cloud Flink",
   "icon": "",
   "weight": 7,
-  "isBeta": true
+  "isBeta": true,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

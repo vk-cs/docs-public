@@ -5,5 +5,10 @@
   "sectionTitle": "Блоктық дискіні виртуалды машинаға қосыңыз",
   "icon": "",
   "hidden": true,
-  "weight": 10
+  "weight": 10,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

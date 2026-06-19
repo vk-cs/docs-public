@@ -1,12 +1,14 @@
+# {heading(Виртуалды машинаға статикалық жария IP-мекенжайды тағайындаңыз)[id=onboarding-vm-add-ip]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=onboarding-vm-add-ip-prepare]}
 
-Linux негізіндегі виртуалды машинаны [жасаңыз](/kz/intro/onboarding/quick-start/create-vm#1_sozdayte_vm).
+{linkto(../../../../intro/onboarding/quick-start/create-vm#onboarding-create-vm)[text=Linux негізіндегі виртуалды машинаны]} жасаңыз.
 
-## {counter(add-ip)}. ВМ-ге сыртқы желіні қосыңыз
+## {heading({counter(add-ip)}. ВМ-ге сыртқы желіні қосыңыз)[id=onboarding-vm-add-ip-add-ext-net]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/)
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті ВМ-ді таңдап, **Желілер** қойындысына өтіңіз.
 1. **Қосылым қосу** түймесін басыңыз.
@@ -18,9 +20,9 @@ Linux негізіндегі виртуалды машинаны [жасаңыз
 
 1. **Сақтау** түймесін басыңыз.
 
-## {counter(add-ip)}. ВМ желілік интерфейсінің конфигурациясы туралы ақпарат алыңыз
+## {heading({counter(add-ip)}. ВМ желілік интерфейсінің конфигурациясы туралы ақпарат алыңыз)[id=onboarding-vm-add-ip-net-config]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/)
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті виртуалды машинаның атауын басыңыз.
 1. **Желілер** қойындысына өтіңіз.
@@ -32,9 +34,9 @@ Linux негізіндегі виртуалды машинаны [жасаңыз
    - IP-мекенжайы, мысалы `90.156.216.96`;
    - MAC-мекенжайы, мысалы `fa:16:3e:dd:cc:9b`.
 
-## {counter(add-ip)}. ВМ операциялық жүйесінде желілік интерфейсті баптаңыз
+## {heading({counter(add-ip)}. ВМ операциялық жүйесінде желілік интерфейсті баптаңыз)[id=onboarding-vm-add-ip-net-interface]}
 
-1. [Виртуалды машинаның консоліне қосылып](/kz/intro/onboarding/quick-start/create-vm#2_podklyuchites_k_vm), авторизацияланыңыз.
+1. {linkto(../../../../intro/onboarding/quick-start/create-vm#2_podklyuchites_k_vm)[text=Виртуалды машинаның консоліне қосылып]}, авторизацияланыңыз.
 
 1. `/etc/netplan/50-cloud-init.yaml` файлын өңдеп, оны келесі түрге келтіріңіз:
 
@@ -72,9 +74,9 @@ Linux негізіндегі виртуалды машинаны [жасаңыз
     echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
     ```
 
-## {counter(add-ip)}. Желілік интерфейс баптауларын тексеріңіз
+## {heading({counter(add-ip)}. Желілік интерфейс баптауларын тексеріңіз)[id=onboarding-vm-add-ip-check]}
 
-1. [Виртуалды машинаның консоліне қосылып](/kz/intro/onboarding/quick-start/create-vm#2_podklyuchites_k_vm), авторизацияланыңыз.
+1. {linkto(../../../../intro/onboarding/quick-start/create-vm#2_podklyuchites_k_vm)[text=Виртуалды машинаның консоліне қосылып]}, авторизацияланыңыз.
 
 1. Команданы орындаңыз:
 
@@ -138,9 +140,9 @@ Linux негізіндегі виртуалды машинаны [жасаңыз
 
    Егер `ip address show` және `ip route show` командаларының шығысында көрсетілген мәліметтер болса, онда желілік интерфейс баптаулары дұрыс. 
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=onboarding-vm-add-ip-delete]}
 
 Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
 
-- оны кейінірек пайдалану үшін [тоқтатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm);
-- оны біржола [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
+- оны кейінірек пайдалану үшін {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]};
+- оны біржола {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.

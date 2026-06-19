@@ -1,9 +1,14 @@
 {
-    "title": "Распознавание лиц",
-      "shortDescription": "Методы API для распознавания лиц",
-      "metaDescription": "Для распознавания лиц используются четыре метода API: Set\nRecognize\nDelete\nTruncate Рассмотрим каждый из них подробнее. Set Данный метод позволяет установи",
-    "sectionTitle": "Распознавание лиц",
-    "icon": "",
-    "weight": 0,
-    "uuid": "ad0b4b96-b750-4f22-9bfe-046759415890"
+  "title": "Распознавание лиц",
+  "shortDescription": "Методы API для распознавания лиц",
+  "metaDescription": "Для распознавания лиц используются четыре метода API: Set\nRecognize\nDelete\nTruncate Рассмотрим каждый из них подробнее. Set Данный метод позволяет установи",
+  "sectionTitle": "Распознавание лиц",
+  "icon": "",
+  "weight": 0,
+  "uuid": "ad0b4b96-b750-4f22-9bfe-046759415890",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

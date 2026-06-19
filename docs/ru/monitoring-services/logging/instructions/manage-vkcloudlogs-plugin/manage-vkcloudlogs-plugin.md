@@ -1,7 +1,9 @@
-## Включение или выключение агента
+# {heading(Управление агентом логирования)[id=logging-manage-plugin]}
 
-1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
-1. [Убедитесь](../connect-plugin), что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
+## {heading(Включение или отключение агента)[id=logging-plugin-on-off]}
+
+1. {ifdef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]}{/ifdef}{ifndef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=Подключитесь]}{/ifndef} к виртуальной машине.
+1. {linkto(../connect-plugin#logging-connect-plugin)[text=Убедитесь]}, что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
 
 - Чтобы включить агент, выполните команду:
 
@@ -18,7 +20,7 @@
 
   {/tabs}
 
-- Чтобы выключить агент, выполните команду:
+- Чтобы отключить агент, выполните команду:
 
   {tabs}
 
@@ -33,15 +35,16 @@
 
   {/tabs}
 
-## {heading(Настройка агента для сбора логов из дополнительных текстовых файлов)[id=configure_agent]}
+## {heading(Настройка агента для сбора логов из дополнительных текстовых файлов)[id=logging-configure-agent]}
 
-1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
-1. [Убедитесь](../connect-plugin), что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
+1. {ifdef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]}{/ifdef}{ifndef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=Подключитесь]}{/ifndef} к виртуальной машине.
+1. {linkto(../connect-plugin#logging-connect-plugin)[text=Убедитесь]}, что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
 1. Скорректируйте файл `vkcloudlogs-fluent-bit.conf` нужным образом:
 
    - в секции `[INPUT]` укажите путь к файлу-источнику логов в параметре `Path` и тег в параметре `Tag`;
    - в секции `[OUTPUT]` укажите установленный тег, чтобы записи попадали в логи.
 
+   {ifdef(public)}
    {cut(Пример подключения файла /var/log/auth.log)}
 
    ```ini
@@ -60,13 +63,33 @@
       password          pwd12345
       project_id        XXXX000XXXX00
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   {cut(Пример подключения файла /var/log/auth.log)}
+
+   ```ini
+   [INPUT]
+      Name             tail
+      Path             /var/log/auth.log
+      Skip_Empty_Lines On
+      Tag              vkcloudlogs.tail.auth.log
+
+   [OUTPUT]
+      Name              vkcloudlogs
+      Match             vkcloudlogs.tail.*
+      auth_url          https://infra.mail.ru:5000/v3/
+      server_host_port  cloudlogs.mcs.mail.ru:443
+      user_id           user1
+      password          pwd12345
+      project_id        XXXX000XXXX00
+   ```
+   {/ifndef}
 
    {/cut}
 
    {note:info}
-
    Чтобы удалить источник сбора логов, уберите соответствующие записи из файла `vkcloudlogs-fluent-bit.conf`.
-
    {/note}
 
 1. Перезапустите агент:
@@ -83,9 +106,9 @@
 
    {/tabs}
 
-## Удаление агента и плагина
+## {heading(Удаление агента и плагина)[id=logging-plugin-delete]}
 
-1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
+1. {ifdef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]}{/ifdef}{ifndef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=Подключитесь]}{/ifndef} к виртуальной машине.
 1. Выполните команду:
 
    {tabs}

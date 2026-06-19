@@ -1,7 +1,12 @@
 {
-  "title": "Тарифтеу",
+  "title": "Тарификация",
   "shortDescription": "",
-  "metaDescription": "Тарифтеу",
-  "sectionTitle": "Тарифтеу",
-  "weight": 2
+  "metaDescription": "Тарификация",
+  "sectionTitle": "Тарификация",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,6 +1,8 @@
+# {heading(Hyper-V ВМ-ді {var(cloud)} ішіне көшіру)[id=migration-migrate-hyperv]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## 1. Көшіру мүмкіндігін тексеріңіз
+## {heading(1. Көшіру мүмкіндігін тексеріңіз)[id=migration-migrate-hyperv-check]}
 
 Hyper-V виртуалды машинасы келесі талаптарға сай болуы керек:
 
@@ -10,19 +12,17 @@ Hyper-V виртуалды машинасы келесі талаптарға с
 - ВМ BIOS эмуляциясын пайдалануы керек.
 
 {note:info}
-
 UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../migrate-hystax-mr) пайдаланыңыз немесе деректерді BIOS эмуляциясы бар жаңа Hyper-V виртуалды машинасына көшіріңіз.
-
 {/note}
 
-## 2. ВМ-ді көшіруге дайындаңыз
+## {heading(2. ВМ-ді көшіруге дайындаңыз)[id=migration-migrate-hyperv-vm-prepare]}
 
 {tabs}
 
 {tab(Linux)}
 
 1. Жүйеде VirtIO драйверлерінің бар-жоғын [тексеріңіз](../check-virtio).
-2. QEMU Guest Agent бар-жоғын тексеріңіз:
+1. QEMU Guest Agent бар-жоғын тексеріңіз:
 
    ```console
    systemctl status qemu-guest-agent
@@ -35,34 +35,34 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
 {tab(Windows)}
 
 1. [Орнатыңыз](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) VirtIO драйверлерін.
-2. [Орнатыңыз](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
-3. Windows тізіліміне драйверлер туралы ақпаратты қосыңыз:
+1. [Орнатыңыз](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
+1. Windows тізіліміне драйверлер туралы ақпаратты қосыңыз:
 
    1. [Жүктеп алыңыз](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) Virtio Registry File.
-   2. Файлды іске қосып, тізілімге өзгерістер енгізуге рұқсат беріңіз.
+   1. Файлды іске қосып, тізілімге өзгерістер енгізуге рұқсат беріңіз.
 
 {/tab}
 
 {/tabs}
 
-## 3. Виртуалды машинаны экспорттаңыз
+## {heading(3. Виртуалды машинаны экспорттаңыз)[id=migration-migrate-hyperv-export]}
 
 {tabs}
 
 {tab(Hyper-V диспетчері)}
 
 1. Виртуалды машинаны тоқтатыңыз.
-2. Hyper-V диспетчерін іске қосыңыз.
-3. Қажетті виртуалды машинаны тінтуірдің оң жақ батырмасымен шертіп, **Экспорт** тармағын таңдаңыз.
-4. ВМ файлдарын орналастыратын орынды таңдап, **Экспорт** батырмасын басыңыз.
+1. Hyper-V диспетчерін іске қосыңыз.
+1. Қажетті виртуалды машинаны тінтуірдің оң жақ батырмасымен шертіп, **Экспорт** тармағын таңдаңыз.
+1. ВМ файлдарын орналастыратын орынды таңдап, **Экспорт** батырмасын басыңыз.
 
 {/tab}
 
 {tab(PowerShell)}
 
 1. Виртуалды машинаны тоқтатыңыз.
-2. PowerShell-ды әкімші атынан іске қосыңыз.
-3. Келесі команданы орындаңыз:
+1. PowerShell-ды әкімші атынан іске қосыңыз.
+1. Келесі команданы орындаңыз:
 
    ```shell
    Export-VM -Name <имя виртуальной машины> -Path <путь для экспорта файлов>
@@ -72,13 +72,13 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
 
 {/tabs}
 
-## 4. ВМ образын VK Cloud ішіне импорттаңыз
+## {heading(4. ВМ образын {var(cloud)} ішіне импорттаңыз)[id=migration-migrate-hyperv-image-import]}
 
 Үлкен файлдарды веб-интерфейс өңдеу кезінде туындауы мүмкін қателерді болдырмау үшін виртуалды машина образын жүктеу үшін OpenStack CLI пайдаланыңыз.
 
-1. Клиент OpenStack [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Экспорт нәтижесінде алынған `.vhdx` файлын RAW форматына [түрлендіріңіз](/kz/computing/iaas/how-to-guides/packer#1_obrazdy_raw_formatyna_turlendiriniz).
-1. Файлды бар VK Cloud жобасына жүктеңіз:
+1. OpenStack клиенті {linkto(../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. Экспорт нәтижесінде алынған `.vhdx` файлын RAW форматына {linkto(../../../computing/iaas/how-to-guides/packer#iaas-packer-convert-image)[text=түрлендіріңіз]}.
+1. Файлды {var(cloud)} ішіндегі бар жобаға жүктеңіз:
 
    ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь_к_файлу.raw> <название_образа>
@@ -90,7 +90,7 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
    openstack image create --private --container-format bare --disk-format raw --file <путь_к_файлу.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <название_образа>
    ```
 
-1. Образдың [жеке кабинетінде](https://kz.cloud.vk.com/app/) VK Cloud бөлімінде **Бұлттық есептеулер → Образдар** немесе CLI арқылы жүктелгенін тексеріңіз:
+1. Образдың {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/) **Бұлттық есептеулер → Образдар** бөлімінде немесе CLI арқылы жүктелгенін тексеріңіз:
 
    ```console
    openstack image list
@@ -99,7 +99,5 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
    Образ тізімде пайда болып, `ACTIVE` мәртебесіне ие болуы керек.
 
 {note:warn}
-
 Жүктелген образдан ВМ жасағанда, диск өлшемін образ өлшемінен 25%-ға үлкен етіп таңдаңыз, себебі ол сығылған түрде сақталады.
-
 {/note}

@@ -1,3 +1,5 @@
+# {heading(Стандартные метрики)[id=monitoring-mon-metrics]}
+
 По умолчанию стандартный агент мониторинга собирает следующую информацию из операционной системы:
 
 - Потребление CPU (плагин [cpu](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu)):

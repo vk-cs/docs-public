@@ -1,9 +1,14 @@
 {
-    "title": "Creating trigger",
-      "shortDescription": "How to add a rule for notification by metric value",
-      "metaDescription": "",
-    "sectionTitle": "Creating trigger",
-    "icon": "",
-    "weight": 1,
-    "uuid": "50192b5c-7e36-44d5-bfca-10284414836b"
+  "title": "Creating trigger",
+  "shortDescription": "How to add a rule for notification by metric value",
+  "metaDescription": "",
+  "sectionTitle": "Creating trigger",
+  "icon": "",
+  "weight": 1,
+  "uuid": "50192b5c-7e36-44d5-bfca-10284414836b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

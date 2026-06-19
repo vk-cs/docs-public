@@ -1,0 +1,16 @@
+{
+  "title": "Управление ресурсами журналов событий",
+  "shortDescription": "",
+  "metaDescription": "Управление ресурсами журналов событий",
+  "sectionTitle": "Управление ресурсами журналов событий",
+  "weight": 6,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": ""
+}

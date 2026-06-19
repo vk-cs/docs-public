@@ -30,5 +30,15 @@
     {
       "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,20 +1,20 @@
+# {heading(Создание NFS)[id=terraform-nfs]}
+
 {note:warn}
-
-Убедитесь, что вы [установили и сконфигурировали Terraform](../../../quick-start).
-
+Убедитесь, что вы {linkto(../../../quick-start#terraform-quick-start)[text=установили и сконфигурировали Terraform]}.
 {/note}
 
 Чтобы создать NFS, создайте файл `nfs.tf`, где будет описана конфигурация создаваемого NFS. В данном примере создаётся NFS и предоставляется доступ на чтение и запись с двух IP адресов. Добавьте текст из примера ниже и исправьте значения настроек для вашего NFS.
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Создание виртуальной сети для NFS
+## {heading(Создание виртуальной сети для NFS)[id=terraform-nfs-net-create]}
 
-При создании NFS необходимо указать сеть и подсеть, в которой будет создан этот ресурс. Вы можете создать сеть и подсеть в соответствии с [инструкцией](../create) и указать их в ресурсах `vkcs_networking_network` и `vkcs_networking_subnet` в примере внизу.
+При создании NFS необходимо указать сеть и подсеть, в которой будет создан этот ресурс. Вы можете создать сеть и подсеть в соответствии с {linkto(../create#terraform-iaas-create)[text=инструкцией]} и указать их в ресурсах `vkcs_networking_network` и `vkcs_networking_subnet` в примере внизу.
 
 Если вы хотите использовать сеть и подсеть созданные другим путём, укажите их в качестве data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) и [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_subnet.md) вместо соответствующих ресурсов.
 
-## Создание NFS
+## {heading(Создание NFS)[id=terraform-nfs-create]}
 
 Для создания NFS вам потребуются следующие объекты:
 
@@ -88,7 +88,7 @@ resource "vkcs_sharedfilesystem_share_access" "share_access_2" {
 }
 ```
 
-## Применение изменений
+## {heading(Применение изменений)[id=terraform-nfs-apply]}
 
 Добавьте текст примера в файл `nfs.tf` и выполните следующие команды:
 

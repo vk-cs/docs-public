@@ -1,9 +1,14 @@
 {
-    "title": "Продвинутая работа с заданиями Spark",
-      "shortDescription": "Как создать задание с нестандартным манифестом на примере работы с ClickHouse",
-      "metaDescription": "Как создать задание с нестандартным манифестом на примере работы с ClickHouse.",
-    "sectionTitle": "Продвинутая работа с заданиями Spark",
-    "icon": "",
-    "weight": 2,
-    "uuid": "6d55d132-bc9b-44c5-a6a8-687294e08baa"
+  "title": "Продвинутая работа с заданиями Spark",
+  "shortDescription": "Как создать задание с нестандартным манифестом на примере работы с ClickHouse",
+  "metaDescription": "Как создать задание с нестандартным манифестом на примере работы с ClickHouse.",
+  "sectionTitle": "Продвинутая работа с заданиями Spark",
+  "icon": "",
+  "weight": 2,
+  "uuid": "6d55d132-bc9b-44c5-a6a8-687294e08baa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

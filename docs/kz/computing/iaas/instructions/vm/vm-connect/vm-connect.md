@@ -1,3 +1,3 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(ВМ-ге қосылу)[id=iaas-vm-connect]}
 
 Құрылған виртуалды машиналарға қосылу тәсілдері мен құралдарының сипаттамасы.

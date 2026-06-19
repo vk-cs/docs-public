@@ -5,5 +5,14 @@
   "sectionTitle": "Создание файлового хранилища",
   "icon": "",
   "weight": 1,
-  "uuid": "17e93910-3c28-4f06-b63d-684f43720038"
+  "uuid": "17e93910-3c28-4f06-b63d-684f43720038",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

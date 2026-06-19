@@ -1,4 +1,4 @@
-## Changing orogon interaction protocol
+## Changing origin interaction protocol
 
 {tabs}
 

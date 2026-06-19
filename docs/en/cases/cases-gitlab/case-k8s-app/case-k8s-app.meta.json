@@ -1,12 +1,26 @@
 {
-    "title": "Configuring Application Auto-Deployment to a Kubernetes Cluster",
-      "shortDescription": "",
-      "metaDescription": "This article will show you how to auto-deploy an application to a Kubernetes cluster. Before that: Install and configure Docker. Install and configure",
-    "sectionTitle": "Configuring application auto-deployment to Kubernetes cluster",
-    "icon": "",
-    "additionalUuids": [
-        "549f68fc-be39-44cf-a2f1-7cf7729bde23"
-    ],
-    "weight": 0,
-    "uuid": "1b4993c3-fe71-48ed-be6e-6c226c9eef19"
+  "title": "Configuring Application Auto-Deployment to a Kubernetes Cluster",
+  "shortDescription": "",
+  "metaDescription": "This article will show you how to auto-deploy an application to a Kubernetes cluster. Before that: Install and configure Docker. Install and configure",
+  "sectionTitle": "Configuring application auto-deployment to Kubernetes cluster",
+  "icon": "",
+  "additionalUuids": [
+    "549f68fc-be39-44cf-a2f1-7cf7729bde23"
+  ],
+  "weight": 0,
+  "uuid": "1b4993c3-fe71-48ed-be6e-6c226c9eef19",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,5 +4,14 @@
   "metaDescription": "Қызмет желісінің параметрлерін таңдау және желіге қосылуды тексеру.",
   "sectionTitle": "Қызмет инфрақұрылымы үшін желіні баптау",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

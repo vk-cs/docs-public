@@ -5,5 +5,10 @@
   "sectionTitle": "Managing desktops",
   "icon": "",
   "weight": 3,
-  "uuid": "61305639-bf12-4684-9827-1200de0f59d9"
+  "uuid": "61305639-bf12-4684-9827-1200de0f59d9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

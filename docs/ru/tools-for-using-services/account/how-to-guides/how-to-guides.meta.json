@@ -1,9 +1,14 @@
 {
   "title": "Практические руководства",
-  "shortDescription": "Сценарии использования сервиса личного кабинета VK Cloud",
+  "shortDescription": "Сценарии использования сервиса личного кабинета {var(cloud)}",
   "metaDescription": "Сценарии использования сервиса личного кабинета VK Cloud",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 3,
-  "uuid": "1bfc458b-282a-4efb-a87a-65256f6308a9"
+  "uuid": "1bfc458b-282a-4efb-a87a-65256f6308a9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

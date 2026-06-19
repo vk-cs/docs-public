@@ -5,5 +5,10 @@
   "sectionTitle": "Обработка изображений",
   "icon": "",
   "weight": 3,
-  "uuid": "a9048134-3a84-471f-a502-4ed24e747ffe"
+  "uuid": "a9048134-3a84-471f-a502-4ed24e747ffe",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

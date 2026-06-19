@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение Secure token",
   "icon": "",
   "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "3f101e4c-70d6-4744-b86a-79685367e0ad"
 }

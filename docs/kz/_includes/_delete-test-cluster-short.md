@@ -1,0 +1,1 @@
+1. {linkto(/kz/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-stop)[text=Тоқтатыңыз]} жасалған кластерді, оны кейінірек пайдалану үшін, немесе {linkto(/kz/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete)[text=жойыңыз]} оны біржола.

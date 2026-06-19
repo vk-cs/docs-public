@@ -1,0 +1,14 @@
+{
+  "title": "Сервис данасын жасау",
+  "shortDescription": "Қажетті конфигурацияда MLflow данасын қалай жасауға болады",
+  "metaDescription": "VK Data Platform-та қажетті конфигурацияда MLflow сервис данасын қалай жасауға болады",
+  "sectionTitle": "Сервис данасын жасау",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

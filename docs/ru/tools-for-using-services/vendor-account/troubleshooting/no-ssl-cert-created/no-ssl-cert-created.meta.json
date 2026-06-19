@@ -5,5 +5,10 @@
   "sectionTitle": "Не создается SSL-сертификат",
   "icon": "",
   "weight": 0,
-  "uuid": "aa7b9ce1-a0ff-4d02-ab88-549622c6ebaa"
+  "uuid": "aa7b9ce1-a0ff-4d02-ab88-549622c6ebaa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

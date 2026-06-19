@@ -1,8 +1,17 @@
 {
   "title": "Қызмет туралы",
   "shortDescription": "Қызмет мүмкіндіктерінің қысқаша сипаттамасы және оның көмегімен шешуге болатын міндеттердің мысалдары",
-  "metaDescription": "Cloud Containers қызметі Kubernetes кластерлерін құруғал және олардың ішінде әртүрлі сервистер мен қолданбаларды іске қосуғал мүмкіндік береді. VK Cloud-тағы Cloud Containers қызметінің құралдары мен мүмкіндіктері",
+  "metaDescription": "Cloud Containers қызметі Kubernetes кластерлерін құруға және олардың ішінде әртүрлі сервистер мен қолданбаларды іске қосуға мүмкіндік береді. VK Cloud-тағы Cloud Containers қызметінің құралдары мен мүмкіндіктері",
   "sectionTitle": "Қызмет туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

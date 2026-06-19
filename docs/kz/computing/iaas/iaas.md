@@ -1,4 +1,4 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Cloud Servers)[id=iaas]}
 
 Cloud Servers — пайдаланушыларға бұлтты серверлер мен деректерді сақтау жүйелерін (СХД) ұсынатын бұлтты есептеулер сервисі.
 

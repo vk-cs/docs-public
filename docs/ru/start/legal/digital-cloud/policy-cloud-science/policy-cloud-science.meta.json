@@ -7,5 +7,10 @@
   "disableGithub": true,
   "disableDateInformation": true,
   "weight": 20,
-  "uuid": "Правила программы поддержки академических проектов и исследований VK Cloud"
+  "uuid": "Правила программы поддержки академических проектов и исследований VK Cloud",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

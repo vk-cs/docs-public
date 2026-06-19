@@ -1,4 +1,6 @@
-## API Vision (фото)
+# {heading(Тарификация)[id=vision-tarrification]}
+
+## {heading(API Vision (фото))[id=vision-tarrification-api-vision]}
 
 | Уровень        | Изображений в месяц | Цена за изображение |
 |----------------|--------------------|--------------------|

@@ -1,13 +1,27 @@
 {
-    "title": "Users management",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Users management",
-    "icon": "",
-    "weight": 1,
-    "additionalUuids": [
-        "c6b88de7-4d48-4fff-9ab3-ded191130fc9",
-        "2ce4c8c6-ac3c-4c55-a594-777796756ce4"
-    ],
-    "uuid": "a0a3d85d-1d1b-41b7-90bb-59019b6910a7"
+  "title": "Users management",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Users management",
+  "icon": "",
+  "weight": 1,
+  "additionalUuids": [
+    "c6b88de7-4d48-4fff-9ab3-ded191130fc9",
+    "2ce4c8c6-ac3c-4c55-a594-777796756ce4"
+  ],
+  "uuid": "a0a3d85d-1d1b-41b7-90bb-59019b6910a7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

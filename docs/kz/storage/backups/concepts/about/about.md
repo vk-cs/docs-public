@@ -1,24 +1,38 @@
+# {heading(Қызмет туралы)[id=backup-about]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
+{ifndef(private-cert)}
 Cloud Backup — резервтік көшірмелерді жасауды орталықтандырылған түрде басқаруға және олардан әртүрлі бұлттық объектілерді қалпына келтіруге болатын сервис:
 
 - виртуалды машиналар;
+  {/ifndef}
+  {ifdef(public)}
 - аналитикалық дерекқорлар инстанстары;
+  {/ifdef}
+  {ifndef(private-cert)}
 - дерекқорлар инстанстары.
+  {/ifndef}
+
+{ifdef(private-cert)}
+Cloud Backup — виртуалды машиналардың резервтік көшірмелерін жасауды орталықтандырылған түрде басқаруға және олардан ВМ қалпына келтіруге болатын сервис.
+{/ifdef}
 
 Cloud Backup мыналарға мүмкіндік береді:
 
-- [резервтік көшіруді қолмен іске қосуға](/kz/storage/backups/instructions/create-backup-copy), мысалы, деректердің жоғалу қаупімен байланысты операциялардың алдында;
-- [резервтік көшірмелерді автоматты түрде жасауға](/kz/storage/backups/instructions/create-backup-plan) алдын ала бапталған кесте бойынша.
+- {linkto(../../instructions/create-backup-copy#backup-copy-create)[text=резервтік көшіруді қолмен іске қосуға]}, мысалы, деректердің жоғалу қаупімен байланысты операциялардың алдында;
+- {linkto(../../instructions/create-backup-plan#backup-plan-create)[text=резервтік көшірмелерді автоматты түрде жасауға]} алдын ала бапталған кесте бойынша.
 
 Виртуалды машиналардың резервтік көшіруін баптау кезінде ВМ-ге қосылған қандай дискілер оның резервтік көшірмесінде сақталатынын таңдауға болады. Резервтік көшірмеден дискілердің бір бөлігін, мысалы үлкен data-дискілерді, алып тастау арқылы резервтік көшіру уақытын қысқартып, көшірме көлемін азайта аласыз. Дискілерді таңдау резервтік көшірудің қолмен де, автоматты да режимінде қолжетімді.
 
 Кесте бойынша көшіру үшін Cloud Backup резервтік көшірмелерді жасау және сақтау стратегияларының арасынан таңдауды ұсынады:
 
-- Сақталатын толық көшірмелердің [ең көп саны бойынша шектеу](/kz/storage/backups/concepts/forward-incremental) стратегиясы.
-- [GFS-стратегиясы](/kz/storage/backups/concepts/gfs-backup).
-- [жоюдан блоктаумен (қорғаумен) резервтік көшірмелер жасау](/kz/storage/backups/concepts//blocked-backup).
+- Сақталатын толық көшірмелердің {linkto(../forward-incremental#backup-forward-incremental)[text=ең көп саны бойынша шектеу]} стратегиясы.
+- {linkto(../gfs-backup#backup-gfs)[text=GFS-стратегиясы]}.
+  {ifdef(public)}
+- {linkto(../blocked-backup#backup-blocked)[text=жоюдан блоктаумен (қорғаумен) резервтік көшірмелер жасау]}.
 
-PostgreSQL СУБД үшін сондай-ақ нақты уақыт сәтіне қалпына келтірудің үздіксіз архивтеу механизмі ([Point-in-Time Recovery, PITR](/kz/storage/backups/instructions/point-in-time-recovery-pitr)) қолдау табады.
+PostgreSQL СУБД үшін сондай-ақ нақты уақыт сәтіне қалпына келтірудің үздіксіз архивтеу механизмі ({linkto(../../instructions/point-in-time-recovery-pitr#backup-pitr)[text=Point-in-Time Recovery, PITR]}) қолдау табады.
+{/ifdef}
 
-Резервтік көшірмелер объектілік сақтау қоймасында VK Object Storage автоматты түрде жасалатын, [сақтау класы](/kz/storage/s3/concepts/about#storage_class) `BackupBucket` болатын бакеттерде сақталады.
+Резервтік көшірмелер объектілік сақтау қоймасында {ifdef(public)}{var(s3)} автоматты түрде жасалатын, {linkto(../../../s3/concepts/about#s3-concepts-about)[text=сақтау класы]} `BackupBucket` болатын бакеттерде{/ifdef}{ifndef(public)}(немесе баптауларға байланысты басқа жерде){/ifndef} сақталады.

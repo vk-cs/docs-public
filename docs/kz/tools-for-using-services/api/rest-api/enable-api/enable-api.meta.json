@@ -1,7 +1,12 @@
 {
   "title": "API арқылы қолжетімділікті басқару",
-  "shortDescription": "VK Cloud API-на қолжетімділікті қалай қосуға немесе өшіруге болады",
+  "shortDescription": "{var(cloud)} API-на қолжетімділікті қалай қосуға немесе өшіруге болады",
   "metaDescription": "Мақалада VK Cloud API-на қолжетімділікті қалай белсендіру керектігі сипатталған.",
   "sectionTitle": "API арқылы қолжетімділікті басқару",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

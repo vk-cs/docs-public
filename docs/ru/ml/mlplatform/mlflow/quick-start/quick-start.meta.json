@@ -1,9 +1,23 @@
 {
-    "title": "Быстрый старт",
-      "shortDescription": "Начало работы с сервисом MLflow",
-      "metaDescription": "Начало работы с сервисом MLflow",
-    "sectionTitle": "Быстрый старт",
-    "icon": "",
-    "weight": 1,
-    "uuid": "35cb6871-45e1-4e27-8c2c-300cb6357b11"
+  "title": "Быстрый старт",
+  "shortDescription": "Начало работы с сервисом MLflow",
+  "metaDescription": "Начало работы с сервисом MLflow",
+  "sectionTitle": "Быстрый старт",
+  "icon": "",
+  "weight": 1,
+  "uuid": "35cb6871-45e1-4e27-8c2c-300cb6357b11",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -5,5 +5,19 @@
   "sectionTitle": "Service architecture",
   "icon": "",
   "weight": 2,
-  "uuid": "ea54a9fc-ecf9-4823-967f-f9368949c7f3"
+  "uuid": "ea54a9fc-ecf9-4823-967f-f9368949c7f3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

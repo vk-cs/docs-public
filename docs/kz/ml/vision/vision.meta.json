@@ -9,5 +9,10 @@
     {
       "partialPath": "/kz/tools-for-using-services/api/api-spec/vision-api"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

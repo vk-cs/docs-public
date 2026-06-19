@@ -5,5 +5,10 @@
   "sectionTitle": "События Public DNS",
   "icon": "",
   "weight": 0,
-  "uuid": "42261b89-65a9-4074-9e70-24d957b58d08"
+  "uuid": "42261b89-65a9-4074-9e70-24d957b58d08",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

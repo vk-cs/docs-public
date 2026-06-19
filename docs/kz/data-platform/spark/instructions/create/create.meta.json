@@ -4,5 +4,12 @@
   "metaDescription": "VK Data Platform платформасында Cloud Spark сервисі данасын қалай жасауға болатынын біліңіз.",
   "sectionTitle": "Қызмет данасын жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "title": "Обновление Terraform",
+  "shortDescription": "Как изменить версию Terraform",
+  "metaDescription": "Как изменить версию Terraform-провайдера VK Cloud. Работа с Terraform: создание ресурсов и обновление провайдера.",
+  "sectionTitle": "Обновление Terraform",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

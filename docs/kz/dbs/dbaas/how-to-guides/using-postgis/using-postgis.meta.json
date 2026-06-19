@@ -1,8 +1,18 @@
 {
-  "title": "PostgreSQL және PostgresPro-да PostGIS кеңейтімін пайдалану",
+  "title": "PostgreSQL жүйесінде PostGIS кеңейтімін пайдалану",
   "shortDescription": "PostGIS кеңейтімімен жұмысты қалай бастау керек: кеңістіктік сұрау құру, ГАЖ объектілерін ДБ-ға енгізу",
-  "metaDescription": "VK Cloud-тағы Cloud Databases: PostgreSQL және PostgresPro-да PostGIS кеңейтімімен жұмысты бастау.",
-  "sectionTitle": "PostgreSQL және PostgresPro-да PostGIS кеңейтімін пайдалану",
+  "metaDescription": "VK Cloud жүйесіндегі Cloud Databases: PostgreSQL жүйесінде PostGIS кеңейтімімен жұмысты бастау.",
+  "sectionTitle": "PostgreSQL жүйесінде PostGIS кеңейтімін пайдалану",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

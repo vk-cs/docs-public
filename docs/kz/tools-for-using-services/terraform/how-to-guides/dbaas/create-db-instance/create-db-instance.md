@@ -8,7 +8,7 @@
 
 1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) ДҚ инстансын жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Егер әлі орындалмаса, [Terraform-ды орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
@@ -26,7 +26,7 @@
 
 {note:warn}
 
-MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1С ДҚ инстанстарын **Кластер** [конфигурациясында](/kz/dbs/dbaas/concepts/work-configs) жасау кезінде [қызметтік жүктеме теңгергіші](/kz/networks/balancing/concepts/load-balancer#zhukteme_tengergishterinin_turleri) жасалады.
+{linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурация]} ішінде MySQL немесе PostgreSQL ДБ инстанстарын жасау кезінде **Кластер** үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервистік жүктеме теңгерімдеушісі]} құрылады.
 
 Теңгергішті пайдалану [тарифтеледі](/kz/networks/vnet/tariffication).
 
@@ -101,7 +101,7 @@ resource "vkcs_db_instance" "db-instance" {
 
 {tab(Кеңейтіммен)}
 
-Кеңейтімдерді қосуға `capabilities` ресурсының `vkcs_db_instance` баптауы жауап береді.
+Кеңейтімдерді қосуға `vkcs_db_instance` ресурсының `capabilities` баптауы жауап береді.
 
 ```hcl
 variable "db-instance-flavor" {
@@ -194,32 +194,32 @@ variable "db_user_password" {
 
 - Terraform-пен жұмыс істеуді жоспарлаған shell сеансында мәнді `TF_VAR` префиксі бар орта айнымалысы арқылы орнатыңыз:
 
-   {tabs}
+  {tabs}
 
-   {tab(Linux, macOS)}
+  {tab(Linux, macOS)}
 
    ```console
    export TF_VAR_db_user_password=YOUR_DB_PASSWORD
    ```
-   {/tab}
+  {/tab}
 
-   {tab(Windows (cmd))}
+  {tab(Windows (cmd))}
 
     ```console
     set TF_VAR_db_user_password=YOUR_DB_PASSWORD
     ```
 
-   {/tab}
+  {/tab}
 
-   {tab(Windows (PowerShell))}
+  {tab(Windows (PowerShell))}
 
     ```console
     $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
     ```
 
-   {/tab}
+  {/tab}
 
-   {/tabs}
+  {/tabs}
 
   Конфигурацияны қолданған кезде құпиясөз мәні ортадан автоматты түрде жүктеледі.
 
@@ -336,13 +336,13 @@ resource "vkcs_db_user" "db-user" {
 
 ## 3. Конфигурацияның қолданылуын тексеріңіз
 
-[Жеке кабинеттегі](https://kz.cloud.vk.com/app/) VK Cloud **Дерекқорлар** → **Дерекқор инстанстары** бөліміне өтіңіз. Конфигурацияда сипатталған барлық объектілердің сәтті жасалғанына көз жеткізіңіз:
+[Жеке кабинеттегі](https://kz.cloud.vk.com/app/) {var(cloud)} **Дерекқорлар** → **Дерекқор инстанстары** бөліміне өтіңіз. Конфигурацияда сипатталған барлық объектілердің сәтті жасалғанына көз жеткізіңіз:
 
-- [ДҚ инстансы](/kz/dbs/dbaas/instructions/manage-instance/mysql#bd_instansy_zhne_onyn_hosttary_turaly_akparat_alu).
+- [ДҚ инстансы](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-get-info).
 - Инстанс үшін сыртқы IP мекенжайы — инстанс бетінде көрсетіледі.
 - [Prometheus Node exporter](/kz/dbs/dbaas/instructions/managing-extensions) кеңейтімі (егер орнатылған болса) — инстанс бетіндегі **Кеңейтімдер** қойындысында көрсетіледі.
 - Инстанстағы ДҚ (егер жасалған болса) — инстанс бетіндегі **Дерекқорлар тізімі** қойындысында көрсетіледі.
-- [ДҚ пайдаланушысы](/kz/dbs/dbaas/instructions/users#paydalanushylar_tizimin_karau) (егер жасалған болса) — инстанс бетіндегі **Пайдаланушылар** қойындысында көрсетіледі.
+- [ДҚ пайдаланушысы](/kz/dbs/dbaas/instructions/users#dbaas-users-list) (егер жасалған болса) — инстанс бетіндегі **Пайдаланушылар** қойындысында көрсетіледі.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 

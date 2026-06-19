@@ -1,3 +1,4 @@
+# {heading(Redis)[id=dbaas-concepts-redis]}
 
 Redis (Remote Dictionary Server) — высокоэффективная СУБД NoSQL-типа с открытым исходным кодом, которая хранит данные в оперативной памяти в виде пар ключ/значение. Главное преимущество Redis — у нее нет конкурентов по производительности, даже среди ее аналогов.
 
@@ -5,10 +6,12 @@ Redis оптимальна для задач, в которых приорите
 
 Подробнее в [официальной документации Redis](https://redis.io/docs/).
 
-Список версий Redis, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
+Список версий Redis, которые поддерживаются в {var(cloud)}, доступен при {linkto(../../../instructions/create#dbaas-create)[text=создании]} инстанса этой базы данных.
 
-## Что дальше
+{ifdef(public)}
+## {heading(Что дальше)[id=dbaas-concepts-redis-whats-next]}
 
-- [Создайте](../../../instructions/create) инстанс базы данных.
-- [Подключитесь](../../../connect) к базе данных.
-- [Ознакомьтесь](../../extensions) с доступными расширениями баз данных.
+- {linkto(../../../instructions/create#dbaas-create)[text=Создайте]} инстанс базы данных.
+- {linkto(../../../connect#dbaas-connect)[text=Подключитесь]} к базе данных.
+- {linkto(../../extensions#dbaas-concepts-extensions)[text=Ознакомьтесь]} с доступными расширениями баз данных.
+{/ifdef}

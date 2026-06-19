@@ -4,5 +4,10 @@
   "metaDescription": "Мақалада Vision API сервисін пайдалану үшін платформадағы авторизация сипатталған.",
   "sectionTitle": "Авторизация",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,19 @@
   "sectionTitle": "Working with service components",
   "icon": "",
   "weight": 2,
-  "uuid": "6ba1f1ff-92a8-444b-aad7-3d54a394141a"
+  "uuid": "6ba1f1ff-92a8-444b-aad7-3d54a394141a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

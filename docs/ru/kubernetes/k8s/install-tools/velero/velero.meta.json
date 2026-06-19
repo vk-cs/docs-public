@@ -1,9 +1,18 @@
 {
-    "title": "Установка Velero",
-      "shortDescription": "Как установить утилиту Velero",
-      "metaDescription": "С помощью Velero можно создавать резервные копии данных кластера Kubernetes и восстанавливать их. Узнайте, как установить, проверить работоспособность и удалить Velero",
-    "sectionTitle": "Установка Velero",
-    "icon": "",
-    "weight": 3,
-    "uuid": "b8d2816e-dc8a-4e6e-97d2-c8296a9f71b0"
+  "title": "Установка Velero",
+  "shortDescription": "Как установить утилиту Velero",
+  "metaDescription": "С помощью Velero можно создавать резервные копии данных кластера Kubernetes и восстанавливать их. Узнайте, как установить, проверить работоспособность и удалить Velero",
+  "sectionTitle": "Установка Velero",
+  "icon": "",
+  "weight": 3,
+  "uuid": "b8d2816e-dc8a-4e6e-97d2-c8296a9f71b0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

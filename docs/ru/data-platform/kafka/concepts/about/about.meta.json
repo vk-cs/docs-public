@@ -1,9 +1,16 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Информация о сервисе Cloud Kafka",
-      "metaDescription": "Cloud Kafka в VK Cloud: информация о сервисе",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "uuid": "e078c66a-efe9-4d34-9df7-6919dee12cee"
+  "title": "О сервисе",
+  "shortDescription": "Информация о сервисе Cloud Kafka",
+  "metaDescription": "Cloud Kafka в VK Data Platform: информация о сервисе",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "e078c66a-efe9-4d34-9df7-6919dee12cee",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

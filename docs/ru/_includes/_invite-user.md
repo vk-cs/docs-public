@@ -15,10 +15,18 @@
 
 На указанную почту будет выслано приглашение, оно действительно в течение 24 часов.
 
-После [входа в проект](/ru/tools-for-using-services/account/instructions/project-invitation) нового участника его статус в колонке **Активирован** изменится на **Да**.
+{includetag(access-manage)}
+После {linkto(../../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
 
 {note:info}
-
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, [удалите](/ru/access/iam/instructions/access-manage#udalenie_uchastnika) участника и пригласите его снова.
-
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-delete-user)[text=удалите]} участника и пригласите его снова.
 {/note}
+{/includetag}
+
+{includetag(create-account)}
+После {linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
+
+{note:info}
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-delete-user)[text=удалите]} участника и пригласите его снова.
+{/note}
+{/includetag}

@@ -1,6 +1,8 @@
+# {heading(Тарифтау)[id=vision-tarrification]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Тарифтау
+## {heading(API Vision (фото))[id=vision-tarrification-api-vision]}
 
 | Деңгей        | Айына кескіндер саны | Бір кескіннің бағасы |
 |----------------|--------------------|--------------------|

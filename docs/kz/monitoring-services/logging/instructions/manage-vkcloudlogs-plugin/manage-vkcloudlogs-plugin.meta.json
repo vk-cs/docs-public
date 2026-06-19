@@ -4,5 +4,14 @@
   "metaDescription": "VK Cloud: vkcloudlogs-fluent-bit.service агентін қалай басқаруға болады",
   "sectionTitle": "Логтау агентін басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

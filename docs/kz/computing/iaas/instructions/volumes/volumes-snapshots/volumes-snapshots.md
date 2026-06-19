@@ -1,18 +1,19 @@
+# {heading(Суреттермен жұмыс істеу)[id=iaas-volumes-snapshots]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Диск суреті — бұл дискінің белгілі бір уақыт мезетінде жасалған көшірмесі сақталатын файл. Суретті жаңа виртуалды машинаны немесе жаңа дискіні жасау үшін пайдалануға болады.
 
-## Сурет жасау
+## {heading(Сурет жасау)[id=iaas-volumes-snapshots-create]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) жеке кабинетке VK Cloud өтіңіз.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} жеке кабинетке {var(cloud)} өтіңіз.
 1. Қажетті дисктер тізімі бар бетті ашыңыз.
 
    - Барлық дисктер: **Бұлтты есептеулер** → **Дисктер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дисктері:
 
      1. **Бұлтты есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
@@ -43,8 +44,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Дисктер тізімін шығарыңыз:
 
    ```console
@@ -52,36 +52,34 @@
    ```
 
 1. Қажетті диск идентификаторын көшіріп алыңыз.
-
 1. Диск суретін жасаңыз.
 
    - Егер диск ВМ-ден ажыратылған болса (`Status`: `available`):
 
-      ```console
-         openstack volume snapshot create --volume <ID_ДИСКА> <НАЗВАНИЕ>
-      ```
+     ```console
+     openstack volume snapshot create --volume <ID_ДИСКА> <НАЗВАНИЕ>
+     ```
 
    - Егер диск ВМ-ге қосылған болса (`Status`: `in-use`):
 
-      ```console
-         openstack volume snapshot create --force --volume <ID_ДИСКА> <НАЗВАНИЕ>
-      ```
+     ```console
+     openstack volume snapshot create --force --volume <ID_ДИСКА> <НАЗВАНИЕ>
+     ```
 
 {/tab}
 
 {/tabs}
 
-## {heading(Суреттерді пайдалану)[id=use_snapshots]}
+## {heading(Суреттерді пайдалану)[id=iaas-volumes-snapshots-use]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) жеке кабинетке VK Cloud өтіңіз.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} жеке кабинетке {var(cloud)} өтіңіз.
 1. Қажетті дисктер тізімі бар бетті ашыңыз.
 
    - Барлық дисктер: **Бұлтты есептеулер** → **Дисктер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дисктері:
 
      1. **Бұлтты есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
@@ -106,37 +104,34 @@
    - **Диск жасау** — дискіні жасау бетіне өту үшін.
    - **Суретті жою** — суретті жою үшін.
 
-      {note:info}
-
+     {note:info}
      Бірнеше суретті жою үшін суреттерді жалаушалармен таңдап, **Суретті жою** түймесін басыңыз.
-
-      {/note}
+     {/note}
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Қажетті пәрменді орындаңыз.
 
    - Диск суреттерінің тізімін шығару:
 
-      ```console
-      openstack volume snapshot list --volume <ID_ДИСКА> 
-      ```
+     ```console
+     openstack volume snapshot list --volume <ID_ДИСКА> 
+     ```
 
    - Бүкіл жоба дисктерінің суреттері тізімін шығару:
 
-      ```console
-      openstack volume snapshot list --project <ID_ПРОЕКТА>
-      ```
+     ```console
+     openstack volume snapshot list --project <ID_ПРОЕКТА>
+     ```
 
    - Сурет қасиеттерін өзгерту:
 
-      ```console
-      openstack volume snapshot set <СВОЙСТВО> <ID_СНИМКА>
-      ```
+     ```console
+     openstack volume snapshot set <СВОЙСТВО> <ID_СНИМКА>
+     ```
 
      Қолжетімді қасиеттер:
 
@@ -147,9 +142,9 @@
 
    - Диск суретін жою:
 
-      ```console
-      openstack volume snapshot delete <ID_СНИМКА>
-      ```
+     ```console
+     openstack volume snapshot delete <ID_СНИМКА>
+     ```
 
 {/tab}
 

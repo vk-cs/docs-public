@@ -1,12 +1,14 @@
+# {heading(API пайдалану мысалдары)[id=backup-api-examples]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Төменде VK Cloud платформасындағы [API Karboii](/kz/tools-for-using-services/api/api-spec/backup-api) пайдалану бойынша кейбір мысалдар келтірілген.
+Төменде {var(cloud)} платформасындағы {linkto(../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=API Karboii]} пайдалану бойынша кейбір мысалдар келтірілген.
 
 Келтірілген мысалдарды орындау үшін:
 
-1. Екі факторлы аутентификация [қосылғанына](/kz/access/iam/instructions/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
-1. `X-Subject-Token` [қатынау токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
-1. Karboii сервисі үшін эндпоинтті [біліңіз](https://kz.cloud.vk.com/app/project/endpoints).
+1. Екі факторлы аутентификация {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=қосылғанына]} және API арқылы қолжетімділік {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=белсендірілгеніне]} көз жеткізіңіз.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=`X-Subject-Token` қатынау токенін алыңыз]}.
+1. Karboii сервисі үшін эндпоинтті {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=біліңіз]}.
 
 Сұрау мысалдарында мыналар қолданылады:
 
@@ -34,15 +36,12 @@
   +-----------------------------+-----------------------------------------------------------+
   ```
 
-## Жасалған резервтік көшіру жоспарларының тізімін алу
+## {heading(Жасалған резервтік көшіру жоспарларының тізімін алу)[id=backup-api-examples-get-plan]}
 
 Сұрау мысалы:
 
 ```console
-curl -X GET \
--H "Accept: application/json" \
--H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
-https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
+curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
 {cut(Жауап мысалы)}
@@ -70,23 +69,20 @@ https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 
 {/cut}
 
-## ВМ үшін жаңа резервтік көшіру жоспарын жасау
+## {heading(ВМ үшін жаңа резервтік көшіру жоспарын жасау)[id=backup-api-examples-create-plan]}
 
 Резервтік көшіру жоспарын жасау үшін:
 
-1. Резервтік көшіруді қамтамасыз ететін сервистің (`provider_id`) [идентификаторын алыңыз](#get_provider_id).
-1. Резервтік көшіру жоспарының негізгі баптаулары берілетін `plan` [объектісін жасаңыз](#create_plan).
-1. Резервтік көшіру іске қосылу кестесін беретін [триггерді жасаңыз](#create_trigger).
+1. Резервтік көшіруді қамтамасыз ететін сервистің (`provider_id`) {linkto(#backup-api-examples-get-provider-id)[text=идентификаторын алыңыз]}.
+1. Резервтік көшіру жоспарының негізгі баптаулары берілетін `plan` {linkto(#backup-api-examples-post-plan)[text=объектісін жасаңыз]}.
+1. Резервтік көшіру іске қосылу кестесін беретін {linkto(#backup-api-examples-post-trigger)[text=триггерді жасаңыз]}.
 
-### {heading({counter(backup-api)}. Провайдер идентификаторын алу)[id=get_provider_id]}
+### {heading({counter(backup-api)}. Провайдер идентификаторын алу)[id=backup-api-examples-get-provider-id]}
 
 Сұрау мысалы:
 
 ```console
-curl -X GET \
-    -H "Accept: application/json" \
-    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
-    https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
+curl -X GET     -H "Accept: application/json"     -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
 {cut(Жауап мысалы)}
@@ -106,18 +102,14 @@ curl -X GET \
 
 {/cut}
 
-### {heading({counter(backup-api)}. Резервтік көшіру жоспарын жасау)[id=create_plan]}
+### {heading({counter(backup-api)}. Резервтік көшіру жоспарын жасау)[id=backup-api-examples-post-plan]}
 
 `provider_id` = `37997f75-0637-XXXX-bf7e-49ff2ff11fa5` пайдаланылады, себебі жоспар БД инстансы үшін емес, виртуалды машина үшін жасалады.
 
 Сұрау мысалы:
 
 ```console
-curl -X POST \
-    -H "Accept: application/json" \
-    -H "Content-type: application/json" \
-    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
-    -d '{
+curl -X POST     -H "Accept: application/json"     -H "Content-type: application/json"     -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"     -d '{
       "plan": {
         "name": "example-plan",
         "resources": [
@@ -131,8 +123,7 @@ curl -X POST \
         "full_day": null,
         "retention_type": "max_backups"
       }
-    }' \
-        https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
+    }'         https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
 {cut(Жауап мысалы)}
@@ -159,16 +150,12 @@ curl -X POST \
 
 {/cut}
 
-### {heading({counter(backup-api)}. Триггер жасау)[id=create_trigger]}
+### {heading({counter(backup-api)}. Триггер жасау)[id=backup-api-examples-post-trigger]}
 
 Сұрау мысалы:
 
 ```console
-curl -s -X POST \
-    -H "Accept: application/json" \
-    -H "Content-type: application/json" \
-    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
-    -d '{
+curl -s -X POST     -H "Accept: application/json"     -H "Content-type: application/json"     -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"     -d '{
       "trigger_info": {
         "name": "example-plan",
         "plan_id": "17f09168-62c3-419b-XXXX-8889aac8fb0f",
@@ -178,8 +165,7 @@ curl -s -X POST \
           "next_time": 0
         }
       }
-    }' \
-    https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/triggers
+    }'     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/triggers
 ```
 
 {cut(Жауап мысалы)}

@@ -5,5 +5,15 @@
   "sectionTitle": "Управление правилами балансировки",
   "icon": "",
   "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
   "uuid": "b5e8a951-c30d-4804-baea-61d839376542"
 }

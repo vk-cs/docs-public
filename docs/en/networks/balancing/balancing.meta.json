@@ -5,5 +5,10 @@
   "sectionTitle": "Load Balancing",
   "icon": "",
   "weight": 2,
-  "uuid": "b2c0678e-a608-423e-8839-b72109532a11"
+  "uuid": "b2c0678e-a608-423e-8839-b72109532a11",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

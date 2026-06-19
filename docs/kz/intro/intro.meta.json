@@ -3,5 +3,12 @@
   "sectionTitle": "Неден бастау керек",
   "metaDescription": "Неден бастау керек",
   "weight": 0,
-  "hidden": true
+  "hidden": true,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

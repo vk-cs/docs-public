@@ -1,9 +1,14 @@
 {
-    "title": "Creating NFS",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Creating NFS",
-    "icon": "",
-    "weight": 2,
-    "uuid": "2ffd7c4d-09b0-4260-81bb-2e3d7cc5be95"
+  "title": "Creating NFS",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Creating NFS",
+  "icon": "",
+  "weight": 2,
+  "uuid": "2ffd7c4d-09b0-4260-81bb-2e3d7cc5be95",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

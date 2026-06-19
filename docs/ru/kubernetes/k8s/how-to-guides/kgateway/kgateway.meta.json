@@ -5,5 +5,10 @@
   "sectionTitle": "Использование Kgateway",
   "icon": "",
   "weight": 13,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

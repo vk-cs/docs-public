@@ -1,9 +1,23 @@
 {
-    "title": "Service architecture",
-      "shortDescription": "How the Cloud Kafka service works at different levels",
-      "metaDescription": "VK Cloud: Cloud Kafka service architecture at the message reading/writing level and at the service management level",
-    "sectionTitle": "Service architecture",
-    "icon": "",
-    "weight": 2,
-    "uuid": "f06f9912-b825-4f1b-8bb1-0021d6f75c1f"
+  "title": "Service architecture",
+  "shortDescription": "How the Cloud Kafka service works at different levels",
+  "metaDescription": "VK Cloud: Cloud Kafka service architecture at the message reading/writing level and at the service management level",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f06f9912-b825-4f1b-8bb1-0021d6f75c1f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

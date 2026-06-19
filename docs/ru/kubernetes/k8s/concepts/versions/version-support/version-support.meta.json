@@ -1,10 +1,17 @@
 {
-    "title": "Политика поддержки версий Kubernetes",
-      "shortDescription": "Какие версии Kubernetes поддерживаются в кластерах VK Cloud и по каким принципам",
-      "metaDescription": "Kubernetes,K8S,версия,политика,поддержка",
-    "sectionTitle": "Политика поддержки версий Kubernetes",
-    "icon": "",
-    "weight": 1,
-    "uuid": "7b243c33-d7e4-4de1-bead-1c69d8ed2589",
-    "additionalUuids": ["f720464c-349b-4ca7-a04e-9d7ee5149215"]    
+  "title": "Политика поддержки версий Kubernetes",
+  "shortDescription": "Какие версии Kubernetes поддерживаются в кластерах {var(cloud)} и по каким принципам",
+  "metaDescription": "Kubernetes,K8S,версия,политика,поддержка",
+  "sectionTitle": "Политика поддержки версий Kubernetes",
+  "icon": "",
+  "weight": 1,
+  "uuid": "7b243c33-d7e4-4de1-bead-1c69d8ed2589",
+  "additionalUuids": [
+    "f720464c-349b-4ca7-a04e-9d7ee5149215"
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

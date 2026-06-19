@@ -1,9 +1,14 @@
 {
   "title": "О версиях и компонентах Kubernetes",
-  "shortDescription": "Политика поддержки доступных версий Kubernetes в кластерах VK Cloud, доступные версии компонентов, история изменений версий",
+  "shortDescription": "Политика поддержки доступных версий Kubernetes в кластерах {var(cloud)}, доступные версии компонентов, история изменений версий",
   "metaDescription": "Kubernetes,K8S,версия,компоненты,история,политика,поддержка",
   "sectionTitle": "О версиях и компонентах Kubernetes",
   "icon": "",
   "weight": 10,
-  "uuid": "fb66c4cd-8cb7-429e-a503-eb5d39e5c20e"
+  "uuid": "fb66c4cd-8cb7-429e-a503-eb5d39e5c20e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

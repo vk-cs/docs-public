@@ -5,5 +5,12 @@
   "sectionTitle": "Утрачен приватный ключ",
   "icon": "",
   "weight": 3,
-  "uuid": "4ce27709-2f55-48e8-8eea-58ed3826a7d6"
+  "uuid": "4ce27709-2f55-48e8-8eea-58ed3826a7d6",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

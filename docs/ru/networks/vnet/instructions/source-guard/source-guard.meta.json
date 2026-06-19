@@ -5,5 +5,10 @@
   "sectionTitle": "IP Source Guard",
   "icon": "",
   "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "8d0e0b16-2ac6-44fd-8532-0059fc2efaeb"
 }

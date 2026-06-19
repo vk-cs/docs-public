@@ -1,9 +1,11 @@
+# {heading(Распознавание речи)[id=cloud_voice-instructions-speech_recognition]}
+
 Доступно два вида распознания речи:
 
 - распознавание аудиофайлов;
 - распознавание потокового аудио.
 
-## Распознавание аудиофайлов
+## {heading(Распознавание аудиофайлов)[id=cloud_voice-instructions-speech_recognition-audiofiles]}
 
 Для того чтобы распознать речь из аудиофайла, отправьте аудиофайл в теле POST запроса к [https://voice.mcs.mail.ru/asr](https://voice.mcs.mail.ru/asr), указав правильный `Content-Type` в заголовке.
 
@@ -40,14 +42,14 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 {/note}
 
 
-### Поддерживаемые форматы аудио
+### {heading(Поддерживаемые форматы аудио)[id=cloud_voice-instructions-speech_recognition-audiofiles-formats]}
 
 | Контейнер | Кодек | Content-type           |
 | --------- | ----- | ---------------------- |
 | WAV       | ![](/en/assets/no.svg "inline")     | audio/wave             |
 | OGG       | Opus  | audio/ogg; codecs=opus |
 
-### Ограничения
+### {heading(Ограничения)[id=cloud_voice-instructions-speech_recognition-audiofiles-restrictions]}
 
 | Ограничение                     | Значение |
 | ------------------------------- | -------- |
@@ -55,7 +57,7 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 | Максимальная длительность аудио | 5 мин    |
 | Максимальное количество каналов | 1        |
 
-### Коды ошибок
+### {heading(Коды ошибок)[id=cloud_voice-instructions-speech_recognition-audiofiles-error-codes]}
 
 | Код  | Статус | Описание                                      |
 | ---- | ------ | --------------------------------------------- |
@@ -68,11 +70,11 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 | 4048 | 400    | Невалидный токен                              |
 | 4049 | 400    | Неактивный проект VK Cloud                       |
 
-## Распознавание потокового аудио
+## {heading(Распознавание потокового аудио)[id=cloud_voice-instructions-speech_recognition-audiostream]}
 
 Чтобы распознать чанк (маленький кусочек речи), нужно отправить запрос на создание задачи. После этого появится возможность отправлять чанки и получать конечный результат.
 
-### Запрос на создание задачи
+### {heading(Запрос на создание задачи)[id=cloud_voice-instructions-speech_recognition-audiostream-request_task]}
 
 Для того, чтобы создать задачу, достаточно отправить POST запрос на https://voice.mcs.mail.ru/asr_stream/create_task с заголовком авторизации с `access_token`, в ответ придет `task_id`, `task_token`.
 
@@ -96,7 +98,7 @@ curl --request POST \
 }
 ```
 
-### Запрос на отправку чанка
+### {heading(Запрос на отправку чанка)[id=cloud_voice-instructions-speech_recognition-audiostream-request_send]}
 
 Чанк представляет из себя аудиофрагмент выбранного формата, соответственно, в каждом чанке должны присутствовать заголовки.
 
@@ -142,14 +144,14 @@ curl --request POST \
 
 {/note}
 
-#### Поддерживаемые форматы аудио
+#### {heading(Поддерживаемые форматы аудио)[id=cloud_voice-instructions-speech_recognition-audiostream-request_send-formats]}
 
 | Контейнер | Кодек | Content-type          |
 | --------- | ----- | --------------------- |
 | WAV       | ![](/en/assets/no.svg "inline")     | audio/wave            |
 | OGG       | Opus  | audio/ogg codecs=opus |
 
-## Ограничения
+## {heading(Ограничения)[id=cloud_voice-instructions-speech_recognition-restrictions]}
 
 | Ограничение                     | Значение |
 | ------------------------------- | -------- |
@@ -164,7 +166,7 @@ curl --request POST \
 
 {/note}
 
-### Запрос на получение конечного результата задачи
+### {heading(Запрос на получение конечного результата задачи)[id=cloud_voice-instructions-speech_recognition-restrictions-request_task]}
 
 В любой момент после отправки чанков можно получить результат, для этого необходимо отправить GET-запрос на https://voice.mcs.mail.ru/asr_stream/get_result, передав в заголовке `Authorization- task_token`, в GET параметрах — `task_id`.
 

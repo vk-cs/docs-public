@@ -1,9 +1,14 @@
 {
-    "title": "Тарификация",
-      "shortDescription": "Тарифы и стоимость",
-      "metaDescription": "Тарификация услуг сервиса.",
-    "sectionTitle": "Тарификация",
-    "icon": "",
-    "weight": 7,
-    "uuid": "fb11ff41-83cf-47e4-b5b4-5f1dd26f0c3c"
+  "title": "Тарификация",
+  "shortDescription": "Тарифы и стоимость",
+  "metaDescription": "Тарификация услуг сервиса.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 7,
+  "uuid": "fb11ff41-83cf-47e4-b5b4-5f1dd26f0c3c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

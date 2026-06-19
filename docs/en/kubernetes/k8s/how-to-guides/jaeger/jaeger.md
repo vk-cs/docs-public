@@ -2,7 +2,7 @@ Learn how the [Jaeger](https://www.jaegertracing.io/) add-on works in Kubernetes
 
 ## Preparatory steps
 
-1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster of the latest version, if not done so already.
+{include(/en/_includes/_create-test-cluster.md)}
 1. [Install and configure](../../connect/kubectl) `kubectl`, if not done so already.
 1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
 1. [Install the Jaeger add-on](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-jaeger), if not done so already.
@@ -115,7 +115,7 @@ As a result of this manifest, a pod with the `example-hotrod` application will b
 
 ## Delete unused resources
 
-A running cluster consumes computing resources and is charged accordingly. If you no longer need the Velero tool and the Kubernetes resources you created to test the Jaeger add-on, delete them:
+{include(/en/_includes/_remove-k8s-resources.md)} the Jaeger add-on, delete them:
 
 1. Delete the `example-hotrod` namespace and the resources associated with it:
 
@@ -123,4 +123,4 @@ A running cluster consumes computing resources and is charged accordingly. If yo
    kubectl delete ns example-hotrod
    ```
 
-1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#start_or_stop_cluster) the cluster you created to use it later or [delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

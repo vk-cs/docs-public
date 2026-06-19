@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение к MLflow Deploy",
   "icon": "",
   "weight": 2,
-  "uuid": "1e7875a6-a9d5-4b45-8f9f-7d3809239407"
+  "uuid": "1e7875a6-a9d5-4b45-8f9f-7d3809239407",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

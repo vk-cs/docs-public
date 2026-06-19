@@ -4,5 +4,14 @@
   "metaDescription": "VK Cloud: Cloud Logging сервисіне қосылу үшін пайдаланушы ID-ін және құпиясөзді қалай жасауға болады",
   "sectionTitle": "Тіркелгі деректерін жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

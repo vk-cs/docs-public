@@ -1,28 +1,29 @@
+# {heading(Настройка ВМ с vGPU)[id=vgpu-setup]}
+
 Если для работы с vGPU вы создали виртуальную машину из собственного образа, нужно выполнить дополнительную настройку ОС: установить драйверы GPU и токен лицензирования.
 
-Если вы создали ВМ под управлением ОС Windows из образа от VK Cloud, перезагрузите ВМ после первого запуска и [подключения](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm) к ней, чтобы полностью инициализировать все драйверы и службы GPU. Для остальных ОС дополнительные действия не требуются.
+Если вы создали ВМ под управлением ОС Windows из образа от VK Cloud, перезагрузите ВМ после первого запуска и {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-win#iaas-vm-connect-win-vm)[text=подключения]} к ней, чтобы полностью инициализировать все драйверы и службы GPU. Для остальных ОС дополнительные действия не требуются.
 
-## {heading(Подготовительные шаги)[id=preparatory_steps]}
+## {heading(Подготовительные шаги)[id=vgpu-setup-preparatory-steps]}
 
-1. [Подключите](/ru/computing/gpu/connect) сервис Cloud GPU, если он еще не подключен.
+1. {linkto(../../../../computing/gpu/connect#gpu-connect)[text=Подключите]} сервис Cloud GPU, если он еще не подключен.
 1. Запросите в [технической поддержке](/ru/contacts) квоты на шаблон конфигурации ВМ на базе vGPU.
-1. Подготовьте [образ](/ru/computing/iaas/concepts/image-vm) одним из способов:
+1. Подготовьте {linkto(../../../../computing/iaas/concepts/image-vm#iaas-image-vm)[text=образ]} одним из способов:
 
-    - [Создайте](/ru/computing/iaas/instructions/images/images-manage#sozdanie_obraza) из уже существующей [виртуальной машины](/ru/computing/iaas/concepts/vm).
+   - {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=Создайте]} из уже существующей {linkto(../../../../computing/iaas/concepts/vm#iaas-concepts-vm)[text=виртуальной машины]}.
+   - {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=Импортируйте]} из файла образа.
 
-    - [Импортируйте](/ru/computing/iaas/instructions/images/images-manage#import_obraza) из файла образа.
+   Рекомендуется использовать [подготовленный образ](https://docs.openstack.org/image-guide/obtain-images.html) с поддержкой [cloud-init](https://cloudinit.readthedocs.io/) (Linux) или [Cloudbase-Init](https://cloudbase.it/cloudbase-init/) (Windows). Это позволяет автоматизировать настройку параметров ОС, связанных с облачной платформой.
 
-        Рекомендуется использовать [подготовленный образ](https://docs.openstack.org/image-guide/obtain-images.html) с поддержкой [cloud-init](https://cloudinit.readthedocs.io/) (Linux) или [Cloudbase-Init](https://cloudbase.it/cloudbase-init/) (Windows). Это позволяет автоматизировать настройку параметров ОС, связанных с облачной платформой.
+   Некоторые способы создания таких образов приведены в {linkto(../../../../computing/iaas/how-to-guides#iaas-how-to-guides)[text=практических руководств Cloud Servers]}.
 
-        Некоторые способы создания таких образов приведены в [практических руководствах Cloud Servers](/ru/computing/iaas/how-to-guides).
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=Создайте]} виртуальную машину на базе {linkto(../../../../computing/gpu/concepts/about#gpu-about-vgpu-flavors)[text=шаблонов конфигурации vGPU]} и созданного образа.
 
-1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create#create_vm) виртуальную машину на базе [шаблонов конфигурации vGPU](/ru/computing/gpu/concepts/about#vgpu_flavors) и созданного образа.
+   Виртуальная машина должна иметь подключение к интернету.
 
-    Виртуальная машина должна иметь подключение к интернету.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]} к ВМ.
 
-1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к ВМ.
-
-## {heading({counter(toc-counter)}. Установите драйвер GPU)[id=driver-install]}
+## {heading({counter(toc-counter)}. Установите драйвер GPU)[id=vgpu-setup-driver-install]}
 
 {tabs}
 
@@ -30,80 +31,78 @@
 
 1. Выполните предварительную настройку ОС:
 
-    {tabs}
+   {tabs}
 
-    {tab(apt)}
+   {tab(apt)}
 
-    1. Обновите системные компоненты:
+   1. Обновите системные компоненты:
 
-        ```shell
-        sudo apt update &&
-        sudo apt upgrade -y
-        ```
+      ```shell
+      sudo apt update &&
+      sudo apt upgrade -y
+      ```
 
-    1. Перезагрузите ВМ.
+   1. Перезагрузите ВМ.
+   1. Установите дополнительные пакеты, необходимые для установки драйвера:
 
-    1. Установите дополнительные пакеты, необходимые для установки драйвера:
+      ```shell
+      sudo apt install linux-headers-$(uname -r) gcc make
+      ```
 
-        ```shell
-        sudo apt install linux-headers-$(uname -r) gcc make
-        ```
+   {/tab}
 
-    {/tab}
+   {tab(dnf)}
 
-    {tab(dnf)}
+   1. Обновите системные компоненты:
 
-    1. Обновите системные компоненты:
+      ```shell
+      sudo dnf update
+      ```
 
-        ```shell
-        sudo dnf update
-        ```
+   1. Перезагрузите ВМ.
+   1. Установите дополнительные пакеты, необходимые для установки драйвера:
 
-    1. Перезагрузите ВМ.
+      ```shell
+      sudo dnf install -y kernel-devel kernel-headers gcc make
+      ```
 
-    1. Установите дополнительные пакеты, необходимые для установки драйвера:
+   {/tab}
 
-        ```shell
-        sudo dnf install -y kernel-devel kernel-headers gcc make
-        ```
-
-    {/tab}
-
-    {/tabs}
+   {/tabs}
 
 1. Загрузите драйвер NVIDIA® GRID одним из способов:
 
-    {tabs}
+   {tabs}
 
-    {tab(wget)}
+   {tab(wget)}
 
-    ```shell
-    wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
-    ```
+   ```shell
+   wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
+   ```
 
-    {/tab}
+   {/tab}
 
-    {tab(curl)}
+   {tab(curl)}
 
-    ```shell
-    curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
-    ```
+   ```shell
+   curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
+   ```
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
 1. Выдайте права на исполнение для скачанного файла:
 
-    ```shell
-    chmod +x NVIDIA-Linux-x86_64-535.247.01-grid.run
-    ```
+   ```shell
+   chmod +x NVIDIA-Linux-x86_64-535.247.01-grid.run
+   ```
 
 1. Запустите установку:
 
-    ```shell
-    sudo ./NVIDIA-Linux-x86_64-535.247.01-grid.run
-    ```
+   ```shell
+   sudo ./NVIDIA-Linux-x86_64-535.247.01-grid.run
+   ```
 
 1. Следуйте инструкциям установщика.
 1. Перезапустите ВМ.
@@ -117,16 +116,14 @@
 1. Перезагрузите ВМ.
 
 {note:warn}
-
 После установки драйверов VNC-консоль будет недоступна для управления ВМ. Для дальнейшей работы используйте RDP-подключение либо установите альтернативное ПО для удаленного управления.
-
 {/note}
 
 {/tab}
 
 {/tabs}
 
-## {heading({counter(toc-counter)}. Настройте лицензирование)[id=license-setup]}
+## {heading({counter(toc-counter)}. Настройте лицензирование)[id=vgpu-setup-license-setup]}
 
 {tabs}
 
@@ -134,93 +131,93 @@
 
 1. Загрузите скрипт лицензирования одним из способов:
 
-    {tabs}
+   {tabs}
 
-    {tab(wget)}
+   {tab(wget)}
 
-    ```shell
-    wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/nvidia-token-fetcher/latest/nvidia_token_fetcher
-    ```
+   ```shell
+   wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/nvidia-token-fetcher/latest/nvidia_token_fetcher
+   ```
 
-    {/tab}
+   {/tab}
 
-    {tab(curl)}
+   {tab(curl)}
 
-    ```shell
-    curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/nvidia-token-fetcher/latest/nvidia_token_fetcher
-    ```
+   ```shell
+   curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/nvidia-token-fetcher/latest/nvidia_token_fetcher
+   ```
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
 1. Выдайте права на исполнение скрипта:
 
-    ```shell
-    chmod +x nvidia_token_fetcher
-    ```
+   ```shell
+   chmod +x nvidia_token_fetcher
+   ```
 
 1. Запустите скрипт:
 
-    ```shell
-    sudo ./nvidia_token_fetcher
-    ```
+   ```shell
+   sudo ./nvidia_token_fetcher
+   ```
 
 1. (Опционально) Настройте автоматическую проверку токена лицензирования при запуске системы. Порядок действий зависит от поддержки [cloud-init](https://cloudinit.readthedocs.io/) в образе, из которого создана ВМ.
 
-    {tabs}
+   {tabs}
 
-    {tab(Образ с поддержкой cloud-init)}
+   {tab(Образ с поддержкой cloud-init)}
 
-    Скопируйте файл скрипта в специальную директорию: 
+   Скопируйте файл скрипта в специальную директорию: 
 
-    ```shell
-    sudo cp nvidia_token_fetcher /var/lib/cloud/scripts/per-boot/
-    ```
+   ```shell
+   sudo cp nvidia_token_fetcher /var/lib/cloud/scripts/per-boot/
+   ```
 
-    {/tab}
+   {/tab}
 
-    {tab(Образ без поддержки cloud-init)}
+   {tab(Образ без поддержки cloud-init)}     
 
-    1. Сохраните файл скрипта в общедоступной директории:
+   1. Сохраните файл скрипта в общедоступной директории:
 
-        ```shell
-        sudo cp nvidia_token_fetcher /usr/local/bin/
-        ```
+      ```shell
+      sudo cp nvidia_token_fetcher /usr/local/bin/
+      ```
 
-    1. Создайте новый unit-файл для подсистемы systemd:
+   1. Создайте новый unit-файл для подсистемы systemd:
 
-        ```shell
-        sudo nano /etc/systemd/system/nvidia-token.service
-        ```
+      ```shell
+      sudo nano /etc/systemd/system/nvidia-token.service
+      ```
 
-        В указанном примере используется текстовый редактор `nano`, но вы также можете использовать любой другой, например `vi`.
+      В указанном примере используется текстовый редактор `nano`, но вы также можете использовать любой другой, например `vi`. 
 
-    1. Скопируйте содержимое в файл и сохраните:
+   1. Скопируйте содержимое в файл и сохраните:
 
-        ```txt
-        [Unit]
-        Description=NVIDIA Licensing Script
-        After=network.target
+      ```txt
+      [Unit]
+      Description=NVIDIA Licensing Script
+      After=network.target
 
-        [Service]
-        Type=oneshot
-        ExecStart=/usr/local/bin/nvidia_token_fetcher
-        TimeoutStartSec=15
-        RemainAfterExit=false
+      [Service]
+      Type=oneshot
+      ExecStart=/usr/local/bin/nvidia_token_fetcher
+      TimeoutStartSec=15
+      RemainAfterExit=false
 
-        [Install]
-        WantedBy=multi-user.target
-        ```
+      [Install]
+      WantedBy=multi-user.target
+      ```
 
-    1. Включите сервис, чтобы он запускался при старте системы:
+   1. Включите сервис, чтобы он запускался при старте системы:
 
-        ```shell
-        sudo systemctl enable nvidia-token.service
-        ```
-    {/tab}
+      ```shell
+      sudo systemctl enable nvidia-token.service
+      ```
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
 {/tab}
 
@@ -228,70 +225,70 @@
 
 1. [Скачайте](https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/nvidia-token-fetcher/latest/nvidia_token_fetcher.exe) скрипт лицензирования и запустите его.
 
-    Появится окно с командным интерфейсом, которое почти сразу же закроется. На этом работа скрипта завершена.
+   Появится окно с командным интерфейсом, которое почти сразу же закроется. На этом работа скрипта завершена.
 
 1. (Опционально) Настройте автоматическую проверку токена лицензирования при запуске системы. Порядок действий зависит от поддержки [Cloudbase-Init](https://cloudbase.it/cloudbase-init/) в образе, из которого создана ВМ.
 
-    {tabs}
+   {tabs}
 
-    {tab(Образ с поддержкой Cloudbase-Init)}
+   {tab(Образ с поддержкой Cloudbase-Init)}
 
-    1. Скопируйте файл скрипта в специальную директорию:
+   1. Скопируйте файл скрипта в специальную директорию:
 
-        ```plaintext
-        C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts
-        ```
+      ```plaintext
+      C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts
+      ```
 
-    1. Откройте в текстовом редакторе файл конфигурации `cloudbase-init.conf`:
+   1. Откройте в текстовом редакторе файл конфигурации `cloudbase-init.conf`:
 
-        ```plaintext
-        C:\Program Files\Cloudbase Solutions\Cloudbase-Init\conf\cloudbase-init.conf
-        ```
+      ```plaintext
+      C:\Program Files\Cloudbase Solutions\Cloudbase-Init\conf\cloudbase-init.conf
+      ```
 
-    1. Проверьте, что в поле `plugins` присутствует плагин локальных скриптов:
+   1. Проверьте, что в поле `plugins` присутствует плагин локальных скриптов:
 
-        ```plaintext
-        plugins = cloudbaseinit.plugins.windows.localscripts.LocalScriptsPlugin
-        ```
+      ```plaintext
+      plugins = cloudbaseinit.plugins.windows.localscripts.LocalScriptsPlugin
+      ```
 
-        Если его нет, добавьте. Если плагинов несколько, они перечисляются через запятую.
+      Если его нет, добавьте. Если плагинов несколько, они перечисляются через запятую.
 
-    1. Сохраните файл и перезапустите службу `cloudbase-init`. Для этого в командной строке или PowerShell выполните команду:
+   1. Сохраните файл и перезапустите службу `cloudbase-init`. Для этого в командной строке или PowerShell выполните команду:
 
-        ```shell
-        net stop cloudbase-init
-        net start cloudbase-init
-        ```
+      ```shell
+      net stop cloudbase-init
+      net start cloudbase-init
+      ```
 
-    {/tab}
+   {/tab}
 
-    {tab(Образ без поддержки Cloudbase-Init)}
+   {tab(Образ без поддержки Cloudbase-Init)}
 
-    1. Сохраните файл в доступном месте. Пример:
+   1. Сохраните файл в доступном месте. Пример:
 
-        ```plaintext
-        C:\NVIDIA Token
-        ```
+      ```plaintext
+      C:\NVIDIA Token
+      ```
 
-    1. Нажмите правой кнопкой мыши на файл скрипта и выберите **Создать ярлык**.
+   1. Нажмите правой кнопкой мыши на файл скрипта и выберите **Создать ярлык**.
 
-        Будет создан файл с названием в формате `<НАЗВАНИЕ_ФАЙЛА> - ярлык`.
+      Будет создан файл с названием в формате `<НАЗВАНИЕ_ФАЙЛА> - ярлык`.
 
-    1. Скопируйте полученный файл в директорию:
+   1. Скопируйте полученный файл в директорию:
 
-        ```plaintext
-        C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
-        ```
+      ```plaintext
+      C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+      ```
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
 {/tab}
 
 {/tabs}
 
-## {heading({counter(toc-counter)}. Проверьте работоспособность)[id=diagnostics]}
+## {heading({counter(toc-counter)}. Проверьте работоспособность)[id=vgpu-setup-diagnostics]}
 
 {tabs}
 
@@ -299,40 +296,40 @@
 
 1. Проверьте подключенные устройства:
 
-    ```shell
-    lspci | grep -i nvidia
-    ```
+   ```shell
+   lspci | grep -i nvidia
+   ```
 
-    Будет выведено название GPU вашей конфигурации.
+   Будет выведено название GPU вашей конфигурации.
 
 1. Узнайте статус драйвера:
     
-    ```shell
-    nvidia-smi
-    ```
+   ```shell
+   nvidia-smi
+   ```
 
-    Если драйвер работает корректно, в выводе будет GPU вашей конфигурации.
+   Если драйвер работает корректно, в выводе будет GPU вашей конфигурации.
 
 1. Проверьте настройки лицензирования:
 
-    1. Убедитесь в наличии файла токена лицензирования:
+   1. Убедитесь в наличии файла токена лицензирования:
 
-        ```shell
-        sudo ls /etc/nvidia/ClientConfigToken/
-        ```
+      ```shell
+      sudo ls /etc/nvidia/ClientConfigToken/
+      ```
 
-    1. Узнайте статус лицензии:
+   1. Узнайте статус лицензии:
 
-        ```shell
-        nvidia-smi -q | grep -i license
-        ```
+      ```shell
+      nvidia-smi -q | grep -i license
+      ```
 
-        Вывод при корректной настройке лицензирования:
+      Вывод при корректной настройке лицензирования:
 
-        ```shell
-        vGPU Software Licensed Product
-            License Status: Licensed
-        ```
+      ```shell
+      vGPU Software Licensed Product
+          License Status: Licensed
+      ```
     
 {/tab}
 
@@ -340,39 +337,39 @@
 
 1. Проверьте, что GPU отображается в диспетчере устройств:
 
-    1. Нажмите сочетание клавиш WIN + X.
-    1. Выберите **Диспетчер устройств**.
-    1. Дважды щелкните по пункту **Видеоадаптеры**.
-    1. Убедитесь, что устройство GPU отображается.
+   1. Нажмите сочетание клавиш WIN + X.
+   1. Выберите **Диспетчер устройств**.
+   1. Дважды щелкните по пункту **Видеоадаптеры**.
+   1. Убедитесь, что устройство GPU отображается.
 
 1. Проверьте работу драйвера. Для этого в командной строке или PowerShell выполните команду:
 
-    ```shell
-    nvidia-smi
-    ```
+   ```shell
+   nvidia-smi
+   ```
 
-    Если драйвер работает корректно, в выводе будет GPU вашей конфигурации.
+   Если драйвер работает корректно, в выводе будет GPU вашей конфигурации.
 
 1. Проверьте настройки лицензирования:
 
-    1. Убедитесь в наличии файла токена лицензирования. Для этого в командной строке или PowerShell выполните команду:
+   1. Убедитесь в наличии файла токена лицензирования. Для этого в командной строке или PowerShell выполните команду:
     
-        ```shell
-        dir "C:\Program Files\NVIDIA Corporation\vGPU Licensing\ClientConfigToken\"
-        ```
+      ```shell
+      dir "C:\Program Files\NVIDIA Corporation\vGPU Licensing\ClientConfigToken\"
+      ```
 
-    1. Проверьте статус лицензии:
+   1. Проверьте статус лицензии:
 
-        ```shell
-        nvidia-smi -q | grep -i license
-        ```
+      ```shell
+      nvidia-smi -q | grep -i license
+      ```
 
-        Вывод при корректной настройке лицензирования:
+      Вывод при корректной настройке лицензирования:
 
-        ```shell
-        vGPU Software Licensed Product
-            License Status: Licensed
-        ```
+      ```shell
+      vGPU Software Licensed Product
+          License Status: Licensed
+      ```
 
 {/tab}
 

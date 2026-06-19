@@ -4,5 +4,12 @@
   "metaDescription": "AWS CLI-ді VK Object Storage қоймасына кезең-кезеңімен баптау және қосу: AWS CLI орнату, қатынау кілттерін жасау және қосу, профильді конфигурациялау (region, output), S3 endpoint URL пайдалану, қосылымды тексеру және негізгі командалар.",
   "sectionTitle": "CLI",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

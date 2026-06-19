@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Мониторинг агенті",
   "sectionTitle": "Мониторинг агенті",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,14 +1,28 @@
 {
-    "title": "Installing 1C-Bitrix",
-      "shortDescription": "How to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
-      "metaDescription": "VK Cloud: how to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
-    "sectionTitle": "Installing 1C-Bitrix",
-    "icon": "",
-    "weight": 15,
-    "uuid": "4d820acb-a00c-4bcc-a317-25561340f982",
-    "additionalUuids": [
-        "51c2d6cf-ad3a-414d-9263-18b7a0a284c2",
-        "890a4148-d056-43df-8a1a-036ee9977de5",
-        "bc0aeac1-e431-44b8-86f9-1e039e005e63"
+  "title": "Installing 1C-Bitrix",
+  "shortDescription": "How to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
+  "metaDescription": "VK Cloud: how to install and configure 1C-Bitrix: Site Management on Ubuntu 22.04",
+  "sectionTitle": "Installing 1C-Bitrix",
+  "icon": "",
+  "weight": 15,
+  "uuid": "4d820acb-a00c-4bcc-a317-25561340f982",
+  "additionalUuids": [
+    "51c2d6cf-ad3a-414d-9263-18b7a0a284c2",
+    "890a4148-d056-43df-8a1a-036ee9977de5",
+    "bc0aeac1-e431-44b8-86f9-1e039e005e63"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
     ]
+  }
 }

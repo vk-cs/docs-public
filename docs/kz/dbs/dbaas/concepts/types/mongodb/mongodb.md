@@ -1,3 +1,5 @@
+# {heading(MongoDB)[id=dbaas-concepts-mongodb]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 MongoDB — C++ тілінде жазылған, бастапқы коды ашық, NoSQL түріндегі құжатқа бағдарланған СУБД. Бұл СУБД деректерді JSON-ға ұқсас пішімі бар құжаттар топтамалары түрінде сақтайды. MongoDB мына жағдайларда тиімді:
@@ -9,10 +11,10 @@ MongoDB, мысалы, тауар каталогтарын, геоаналити
 
 Толығырақ [MongoDB ресми құжаттамасында](https://docs.mongodb.com/).
 
-VK Cloud-та қолдау көрсетілетін MongoDB нұсқаларының тізімі осы деректер қоры инстансын [құру](../../../instructions/create) кезінде қолжетімді.
+VK Cloud-та қолдау көрсетілетін MongoDB нұсқаларының тізімі осы деректер қоры инстансын {linkto(../../../instructions/create#dbaas-create)[text=құру]} кезінде қолжетімді.
 
-## Әрі қарай не істеу керек?
+## {heading(Әрі қарай не істеу керек?)[id=dbaas-mongodb-whats-next]}
 
-- Деректер қоры инстансын [құрыңыз](../../../instructions/create).
-- Деректер қорына [қосылыңыз](../../../connect).
-- Қолжетімді деректер қоры кеңейтімдерімен [танысыңыз](../../extensions).
+- Деректер қоры инстансын {linkto(../../../instructions/create#dbaas-create)[text=құрыңыз]}.
+- Деректер қорына {linkto(../../../connect#dbaas-connect)[text=қосылыңыз]}.
+- Қолжетімді деректер қоры кеңейтімдерімен {linkto(../../extensions#dbaas-concepts-extensions)[text=танысыңыз]}.

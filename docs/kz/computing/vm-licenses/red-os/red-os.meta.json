@@ -3,5 +3,10 @@
   "shortDescription": "РЕД ОС өнімдерінің лицензиялары",
   "metaDescription": "Отандық РЕД ОС компаниясы өнімдерін лицензиялау",
   "sectionTitle": "РЕД ОС",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

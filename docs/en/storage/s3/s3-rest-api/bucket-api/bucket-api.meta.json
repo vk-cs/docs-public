@@ -1,9 +1,23 @@
 {
-    "title": "Bucket",
-      "shortDescription": "",
-      "metaDescription": "Operations with Buckets: Create - Create bucket\nListBuckets - Get a list of buckets\nHeadBucket - Check if a bucket exists and has access to it\nListObjects",
-    "sectionTitle": "Bucket",
-    "icon": "",
-    "weight": 1,
-    "uuid": "778f3c6c-dec5-4978-9c11-0fe9e71b43fa"
+  "title": "Bucket",
+  "shortDescription": "",
+  "metaDescription": "Operations with Buckets: Create - Create bucket\nListBuckets - Get a list of buckets\nHeadBucket - Check if a bucket exists and has access to it\nListObjects",
+  "sectionTitle": "Bucket",
+  "icon": "",
+  "weight": 1,
+  "uuid": "778f3c6c-dec5-4978-9c11-0fe9e71b43fa",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

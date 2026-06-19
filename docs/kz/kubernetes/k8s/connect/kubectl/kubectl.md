@@ -1,13 +1,15 @@
+# {heading(kubectl көмегімен кластерге қосылу)[id=k8s-kubectl]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-`kubectl` утилитасы Kubernetes кластерін пәрмен жолынан басқару бойынша барлық операциялар спектрін орындауғал мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/reference/kubectl/).
+`kubectl` утилитасы Kubernetes кластерін пәрмен жолынан басқару бойынша барлық операциялар спектрін орындауға мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/reference/kubectl/).
 
 Кластерге қосылу тәсілі оның IP мекенжайына байланысты:
 
-- Егер кластерге сыртқы IP мекенжайы тағайындалса, оған интернетке қолжетімділігі бар кез келген хосттан қосылуғал болады.
-- Егер кластерге тек ішкі IP мекенжайы тағайындалса, оған тек VK Cloud ішіндегі хосттан — кластермен бір ішкі желіде орналасқан виртуалды машинадан қосылуғал болады.
+* Егер кластерге сыртқы IP мекенжайы тағайындалса, оған интернетке қолжетімділігі бар кез келген хосттан қосылуға болады.
+* Егер кластерге тек ішкі IP мекенжайы тағайындалса, оған тек VK Cloud ішіндегі хосттан — кластермен бір ішкі желіде орналасқан виртуалды машинадан қосылуға болады.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-kubectl-before-work]}
 
 1. Кластерге қосылу жоспарланып отырған хостта, егер `kubectl` утилитасы әлі орнатылмаған болса, оны орнатыңыз.
 
@@ -37,7 +39,7 @@
        sudo chmod +x ./kubectl
        ```
 
-    1. Бұл файлды `PATH` орта айнымалысында қамтылған директорияғал, мысалы, `/usr/local/bin` ішіне орналастырыңыз:
+    1. Бұл файлды `PATH` орта айнымалысында қамтылған директорияға, мысалы, `/usr/local/bin` ішіне орналастырыңыз:
 
        ```console
        sudo mv ./kubectl /usr/local/bin/kubectl
@@ -76,6 +78,7 @@
            ```console
            sudo apt-get update
            ```
+
     1. `kubectl` орнатыңыз:
 
        ```console
@@ -84,7 +87,7 @@
 
        {note:info}
 
-       Орнатуғал қолжетімді барлық нұсқалардың тізімін `sudo apt-cache policy kubectl` пәрмені арқылы алуғал болады.
+       Орнатуға қолжетімді барлық нұсқалардың тізімін `sudo apt-cache policy kubectl` пәрмені арқылы алуға болады.
 
        {/note}
 
@@ -119,7 +122,7 @@
 
        {note:info}
 
-       Орнатуғал қолжетімді барлық нұсқалардың тізімін `yum --showduplicates list kubectl` пәрмені арқылы алуғал болады.
+       Орнатуға қолжетімді барлық нұсқалардың тізімін `yum --showduplicates list kubectl` пәрмені арқылы алуға болады.
 
        {/note}
 
@@ -137,16 +140,17 @@
 
        1.33.0 нұсқасындағы кластермен үйлесімді `kubectl` утилитасын жүктеу пәрмендерінің мысалдары:
 
-        - Intel:
+       * Intel:
 
-          ```console
-          curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/amd64/kubectl
-          ```
+         ```console
+         curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/amd64/kubectl
+         ```
 
-        - Apple Silicon:
-          ```console
-          curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/arm64/kubectl
-          ```
+       * Apple Silicon:
+
+         ```console
+         curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/arm64/kubectl
+         ```
 
     1. `kubectl` екілік файлын орындалатын етіңіз:
 
@@ -154,7 +158,7 @@
        sudo chmod +x ./kubectl
        ```
 
-    1. Бұл файлды `PATH` орта айнымалысында қамтылған директорияғал, мысалы, `/usr/local/bin` ішіне орналастырыңыз:
+    1. Бұл файлды `PATH` орта айнымалысында қамтылған директорияға, мысалы, `/usr/local/bin` ішіне орналастырыңыз:
 
        ```console
        sudo mv ./kubectl /usr/local/bin/kubectl
@@ -199,18 +203,16 @@
        curl -LO https://dl.k8s.io/release/v1.33.0/bin/windows/amd64/kubectl.exe
        ```
 
-    1. `PATH` орта айнымалысында `kubectl.exe` файлдар жүктелген директорияны көрсетіңіз:
+    1. `PATH` орта айнымалысында `kubectl.exe` файлы жүктелген директорияны көрсетіңіз:
 
-        1. **Бастау -> Бұл компьютер -> Қасиеттер -> Жүйенің қосымша параметрлері -> Орта айнымалылары -> Жүйелік айнымалылар** мәзір бөліміне өтіңіз.
-        1. `PATH` файлдар бар директорияғал жолды қосып, `kubectl.exe` айнымалысының мәнін өзгертіңіз.
+       1. **Бастау -> Бұл компьютер -> Қасиеттер -> Жүйенің қосымша параметрлері -> Орта айнымалылары -> Жүйелік айнымалылар** мәзір бөліміне өтіңіз.
+       1. `kubectl.exe` файлы бар директорияға жолды қосып, `PATH` айнымалысының мәнін өзгертіңіз.
 
        {note:info}
+       Docker Desktop for Windows `PATH` орта айнымалысына `kubectl` бағдарламасының өз нұсқасын қосады. Егер Docker Desktop орнатылған болса:
 
-       Docker Desktop for Windows `kubectl` орта айнымалысына `PATH` бағдарламасының өз нұсқасын қосады. Егер Docker Desktop орнатылған болса:
-
-        - не жүктелген файлғал жолды Docker Desktop орнатушысы қосқан жазбаның алдына қойыңыз;
-        - не Docker Desktop-пен бірге жеткізілетін `kubectl` файлын жойыңыз.
-
+       * не жүктелген файлға жолды Docker Desktop орнатушысы қосқан жазбаның алдына қойыңыз;
+       * не Docker Desktop-пен бірге жеткізілетін `kubectl` файлын жойыңыз.
        {/note}
 
     1. Пәрменді орындап, `kubectl` нұсқасын тексеріңіз:
@@ -223,20 +225,20 @@
 
    {/tabs}
 
-1. [Single Sign-On (SSO)](../../concepts/access-management) пайдаланып қосылу үшін қажет нәрсенің бәрін дайындаңыз.
+1. {linkto(../../concepts/access-management#k8s-access-management)[text=Single Sign-On (SSO)]} пайдаланып қосылу үшін қажет нәрсенің бәрін дайындаңыз.
 
     1. Кластерге қосылу жоспарланып отырған хостта, егер `client-keystone-auth` плагині әлі орнатылмаған болса, оны орнатыңыз:
 
        {include(/kz/_includes/_client-keystone-auth.md)}
 
-    1. Сізде Kubernetes кластерлерімен жұмыс істеу үшін [қажетті рөл](/kz/tools-for-using-services/account/concepts/rolesandpermissions#cloud_containers_servisi_rolderine_arnalgan_kukyktar) бар екенін тексеріңіз. Егер мұндай рөл болмаса, жоба иесінен немесе суперәкімшіден оны сізге қосуды сұраңыз.
-    1. [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api#api_arkyly_kolzhetimdilikti_belsendiru).
+    1. Сізде Kubernetes кластерлерімен жұмыс істеу үшін {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-k8s)[text=қажетті рөл]} бар екенін тексеріңіз. Егер мұндай рөл болмаса, жоба иесінен немесе суперәкімшіден оны сізге қосуды сұраңыз.
+    1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=API арқылы қолжетімділікті белсендіріңіз]}.
 
-## {heading(Кластерге қосылу)[id=connect]}
+## {heading(Кластерге қосылу)[id=k8s-kubectl-connect]}
 
 {include(/kz/_includes/_kubeconfig.md)}
 
-## {heading(Кластерге қосылуды тексеру)[id=check_connection]}
+## {heading(Кластерге қосылуды тексеру)[id=k8s-kubectl-check-connection]}
 
 {tabs}
 
@@ -252,7 +254,7 @@
 
 1. VK Cloud жеке кабинетіне арналған пайдаланушы құпиясөзін енгізіңіз.
 
-   Бұл кластерге қосылған кезде [аутентификация](../../concepts/access-management) үшін қажет.
+   Бұл кластерге қосылған кезде {linkto(../../concepts/access-management#k8s-access-management)[text=аутентификация]} үшін қажет.
 
 {/tab}
 
@@ -268,7 +270,7 @@ kubectl cluster-info
 
 {/tabs}
 
-Егер кластер қалыпты жұмыс істеп тұрса және `kubectl` онымен жұмыс істеуге бапталған болса, ұқсас алқпарат шығарылады:
+Егер кластер қалыпты жұмыс істеп тұрса және `kubectl` онымен жұмыс істеуге бапталған болса, ұқсас ақпарат шығарылады:
 
 ```text
 Kubernetes control plane is running at...

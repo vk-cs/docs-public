@@ -1,9 +1,14 @@
 {
-    "title": "Router",
-      "shortDescription": "How to connect different networks with each other",
-      "metaDescription": "",
-    "sectionTitle": "Router",
-    "icon": "",
-    "weight": 3,
-    "uuid": "06c78433-5d9b-4bc8-bf88-7b294b2caffc"
+  "title": "Router",
+  "shortDescription": "How to connect different networks with each other",
+  "metaDescription": "",
+  "sectionTitle": "Router",
+  "icon": "",
+  "weight": 3,
+  "uuid": "06c78433-5d9b-4bc8-bf88-7b294b2caffc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,15 @@
     "sectionTitle": "Балансировщик нагрузки",
     "icon": "",
     "weight": 1,
-    "uuid": "9885dcd7-a968-4ae7-86d7-4291b8c7138d"
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "9885dcd7-a968-4ae7-86d7-4291b8c7138d"
 }

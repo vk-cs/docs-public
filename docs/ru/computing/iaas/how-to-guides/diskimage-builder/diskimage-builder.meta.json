@@ -1,8 +1,18 @@
 {
-    "title": "Создание образа с помощью diskimage-builder",
-      "shortDescription": "Как создать образ виртуальной машины с помощью утилиты diskimage-builder",
-      "metaDescription": "Как создать образ виртуальной машины с помощью утилиты diskimage-builder.",
-    "sectionTitle": "Создание образа с помощью diskimage-builder",
-    "weight": 8,
-    "uuid": "c084e2f8-4d10-45c0-9470-cb01cc390a75"
+  "title": "Создание образа с помощью diskimage-builder",
+  "shortDescription": "Как создать образ виртуальной машины с помощью утилиты diskimage-builder",
+  "metaDescription": "Как создать образ виртуальной машины с помощью утилиты diskimage-builder.",
+  "sectionTitle": "Создание образа с помощью diskimage-builder",
+  "weight": 8,
+  "uuid": "c084e2f8-4d10-45c0-9470-cb01cc390a75",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

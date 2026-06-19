@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "SaaS-қолданбаны жаңарту",
   "sectionTitle": "SaaS-қолданбаны жаңарту",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

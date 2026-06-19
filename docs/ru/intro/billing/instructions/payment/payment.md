@@ -1,56 +1,40 @@
-{note:info}
-
-Просматривать детализацию расходов и пополнять лицевой счет могут пользователи, чья [роль](/ru/access/iam/concepts/rolesandpermissions) в [проекте](/ru/tools-for-using-services/account/concepts/projects)  — владелец, суперадминистратор или администратор биллинга.
-
-{/note}
-
-## {heading(Просмотр баланса)[id=view_balance]}
-
-В шапке страницы личного кабинета отображаются [баланс лицевого счета и бонусный баланс](../../concepts/balance) проекта.
-
-Чтобы посмотреть детализацию и расходы на сервисы:
-
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Откройте страницу баланса проекта одним из способов:
-
-    - Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
-    - Перейдите в раздел **Баланс**.
+# {heading(Управление балансом проекта)[id=billing-payment]}
 
 {note:info}
-
-[Детализация](../detail) доступна по всем проектам, в которых ваша [роль](/ru/access/iam/concepts/rolesandpermissions) — владелец, суперадминистратор или администратор биллинга. На вкладках **Детализация** и **Расходы на сервисы** данные по умолчанию отфильтрованы по текущему проекту.
-
+Просматривать детализацию расходов и пополнять лицевой счет могут пользователи, чья {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]} в {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекте]} — владелец, суперадминистратор или администратор биллинга.
 {/note}
 
-## {heading(Внесение средств)[id=balance_charge]}
+## {heading(Просмотр баланса)[id=billing-payment-balance-view]}
 
-Внести средства можно только на [баланс лицевого счета](../../concepts/balance) проекта.
+{include(../../../../_includes/_balance-view.md)}
+
+## {heading(Внесение средств)[id=billing-payment-balance-charge]}
+
+Внести средства можно только на {linkto(../../concepts/balance#billing-balance)[text=баланс лицевого счета]} проекта.
 
 Чтобы внести средства на баланс лицевого счета проекта:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Нажмите на значок ![Пополнить](assets/icon_plus.svg "inline") в шапке странице личного кабинета или нажмите кнопку **Пополнить баланс** на [странице баланса](#view_balance).
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. Нажмите на значок ![Пополнить](./assets/icon_plus.svg "inline") в шапке странице личного кабинета или нажмите кнопку **Пополнить баланс** на {linkto(#billing-payment-balance-view)[text=странице баланса]}.
 1. Укажите сумму пополнения.
 
-   Минимальная сумма пополнения счета — 10 рублей для проектов в [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва и 100 тенге для проектов в регионе Казахстан.
+   Минимальная сумма пополнения счета — 10 рублей для проектов в {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва и 100 тенге для проектов в регионе Казахстан.
 
-1. Выберите один из [способов оплаты](../../concepts/payment-methods).
+1. Выберите один из {linkto(../../concepts/payment-methods#billing-payment-methods)[text=способов оплаты]}.
 
    Для оплаты банковской картой доступны две опции:
 
-   - **Карта**: для оплаты картой, которая [привязана](../add-card#privyazat_kartu) к проекту.
+   - **Карта**: для оплаты картой, которая {linkto(../add-card#billing-add-card-bind)[text=привязана]} к проекту.
 
       При выборе этой опции не нужно вводить реквизиты карты.
 
    - **Банковская карта**: для оплаты картой, которая не привязана к проекту.
-   - **Оплата по счету для юридических лиц**: для оплаты банковским переводом по сформированному счету. Перед формированием счета вы можете [внести](/ru/intro/billing/instructions/corporate#doregistraciya_yul) или [изменить](/ru/intro/billing/instructions/corporate#edit_company) данные о вашей компании.
+   - **Оплата по счету для юридических лиц**: для оплаты банковским переводом по сформированному счету. Перед формированием счета вы можете {linkto(../corporate#billing-corporate-registration-complete)[text=внести]} или {linkto(../corporate#billing-corporate-company-edit)[text=изменить]} данные о вашей компании.
 
    {note:info}
-
-   Для юридических лиц и ИП рекомендуется способ оплаты **Оплата по счету для юридических лиц**. Оплата сервисов способами, отличными от банковского перевода, не учитывается в [отчетных документах](../../concepts/report) для юридических лиц и ИП.
-
+   Для юридических лиц и ИП рекомендуется способ оплаты **Оплата по счету для юридических лиц**. Оплата сервисов способами, отличными от банковского перевода, не учитывается в {linkto(../../concepts/report#billing-report)[text=отчетных документах]} для юридических лиц и ИП.
    {/note}
 
-## Уведомления о расходах
+## {heading(Уведомления о расходах)[id=billing-payment-expense-notifications]}
 
-{include(/ru/_includes/_billing-settings.md)[tags=notifications]}
+{include(../../../../_includes/_billing-settings.md)[tags=notifications]}

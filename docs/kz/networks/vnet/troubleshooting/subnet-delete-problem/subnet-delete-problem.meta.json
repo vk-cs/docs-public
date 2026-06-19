@@ -4,5 +4,11 @@
   "metaDescription": "Ішкі желіні жою кезінде «One or more ports have an IP allocation from this subnet» қатесі туындаса не істеу керек",
   "sectionTitle": "Ішкі желіні жою мүмкін емес",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private"
+    ]
+  }
 }

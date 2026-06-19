@@ -1,4 +1,4 @@
-To get access to new PostgreSQL features, you need to upgrade your DBMS versions. Patch management allows you to upgrade Postgres and Postgres Pro from a lower version to a higher version.
+To get access to new PostgreSQL features, you need to upgrade your DBMS versions. Patch management allows you to upgrade PostgreSQL from a lower version to a higher version.
 
 To upgrade PostgreSQL, use the [pg_upgrade](https://postgrespro.ru/docs/postgresql/13/pgupgrade) utility.
 

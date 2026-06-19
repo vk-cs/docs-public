@@ -1,9 +1,23 @@
 {
-    "title": "Cluster version update",
-      "shortDescription": "How the Kubernetes Cloud Containers cluster update procedure is arranged",
-      "metaDescription": "",
-    "sectionTitle": "Cluster version update",
-    "icon": "",
-    "weight": 9,
-    "uuid": "4c3df781-0296-4176-a968-28af79bf14f3"
+  "title": "Cluster version update",
+  "shortDescription": "How the Kubernetes Cloud Containers cluster update procedure is arranged",
+  "metaDescription": "",
+  "sectionTitle": "Cluster version update",
+  "icon": "",
+  "weight": 9,
+  "uuid": "4c3df781-0296-4176-a968-28af79bf14f3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

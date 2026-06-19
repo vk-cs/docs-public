@@ -4,5 +4,15 @@
   "metaDescription": "Кластер желісінде домендік атауларды шешу үшін пайдаланылатын DNS серверлерінің IP мекенжайларын қалай өзгерту керек.",
   "sectionTitle": "Кластер желісіндегі DNS серверлері мекенжайларын өзгерту",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

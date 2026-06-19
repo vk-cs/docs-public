@@ -5,5 +5,10 @@
   "sectionTitle": "Аддоны и настройки",
   "icon": "",
   "weight": 4,
-  "uuid": "022b4f17-0bd6-441c-9da3-88f4459adae5"
+  "uuid": "022b4f17-0bd6-441c-9da3-88f4459adae5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

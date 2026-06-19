@@ -1,9 +1,18 @@
 {
   "title": "Пошаговые инструкции",
-  "shortDescription": "Инструкции по работе с сервисом уведомлений Cloud Alerting на платформе VK Cloud",
+  "shortDescription": "Инструкции по работе с сервисом уведомлений Cloud Alerting на платформе {var(cloud)}",
   "metaDescription": "Как настраивать триггеры и каналы для получения уведомления о состоянии облачных ресурсов VK Cloud. Инструкции по работе с сервисом уведомлений Cloud Alerting",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 2,
-  "uuid": "4b7840ed-d036-424e-b7ff-ec50652e06a8"
+  "uuid": "4b7840ed-d036-424e-b7ff-ec50652e06a8",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

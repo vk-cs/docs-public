@@ -4,5 +4,12 @@
   "metaDescription": "VK Data Platform платформасындағы Spark сервисімен жұмыс: сервис данасының параметрлері, дананы жасау және онымен жұмыс, тарификация",
   "sectionTitle": "VK Data Platform платформасындағы Spark",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,9 +1,14 @@
 {
-    "title": "Managing origin groups",
-      "shortDescription": "How to operate origin groups in CDN",
-      "metaDescription": "How to operate origin groups in CDN.",
-    "sectionTitle": "Managing origin groups",
-    "icon": "",
-    "weight": 4,
-    "uuid": "25c34379-7886-4614-aec5-9b8795b5739c"
+  "title": "Managing origin groups",
+  "shortDescription": "How to operate origin groups in CDN",
+  "metaDescription": "How to operate origin groups in CDN.",
+  "sectionTitle": "Managing origin groups",
+  "icon": "",
+  "weight": 4,
+  "uuid": "25c34379-7886-4614-aec5-9b8795b5739c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

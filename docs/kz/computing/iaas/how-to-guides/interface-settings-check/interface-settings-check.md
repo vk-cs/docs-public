@@ -1,12 +1,14 @@
+# {heading(ВМ желілік интерфейсін баптау)[id=iaas-interface-settings-check]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ВМ-ге желілік интерфейс қосылғаннан кейін оны тексеріп, қажет болса ВМ операциялық жүйесінде оның баптауларын түзетіңіз.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=iaas-interface-preparatory-steps]}
 
 Виртуалды машинаның желілік интерфейс конфигурациясы туралы ақпаратты алыңыз:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. Виртуалды машина орналасқан жобаны таңдаңыз.
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті виртуалды машинаның атауын басыңыз.
@@ -35,10 +37,9 @@
    | Firewall баптаулары                                 | `default`             |
    <!-- prettier-ignore-end -->
 
-## 1. Желілік интерфейс баптауының дұрыстығын тексеріңіз
+## {heading(1. Желілік интерфейс баптауының дұрыстығын тексеріңіз)[id=iaas-interface-correction-settings-check]}
 
 1. Виртуалды машинаның консоліне қосылып, авторизациядан өтіңіз.
-
 1. Команданы орындаңыз:
 
    ```console
@@ -58,9 +59,7 @@
    Команда шығысынан `link\ether` параметрі бұрын алынған MAC-адреспен сәйкес келетін интерфейс атауын табыңыз. Бұл мысалда — `ens3`.
 
    {note:info}
-
    Linux-тың әртүрлі дистрибутивтері үшін интерфейс атауы әртүрлі болады.
-
    {/note}
 
 1. Алдыңғы қадамда алынған интерфейс атауын қойып, команданы орындаңыз:
@@ -108,7 +107,7 @@
 
    Егер `ip address show` және `ip route show` командаларының шығысында келтірілген мәліметтер болмаса, онда желілік интерфейс баптаулары дұрыс емес. Желілік интерфейсті баптаңыз.
 
-## 2. ВМ желілік интерфейсін баптаңыз
+## {heading(2. ВМ желілік интерфейсін баптаңыз)[id=iaas-interface-settings-check-vm]}
 
 Желі параметрлерін ОС желі конфигураторының көмегімен баптаңыз. ОС дистрибутивіне байланысты әртүрлі желі конфигураторлары қолданылады:
 
@@ -122,166 +121,166 @@
 
 1. `/etc/netplan/50-cloud-init.yaml` файлын келесі түрге келтіріңіз:
 
-    ```yaml
-    network:
-        ethernets:
-            ens3: # Имя интерфейса
-                dhcp4: false
-                addresses:
-                    - 10.0.0.5/24 # Приватный IP-адрес + префикс из CIDR
-                routes:
-                    - to: 0.0.0.0/0
-                      via: 10.0.0.1 # Адрес шлюза
-                nameservers:
-                    addresses:
-                        - 5.61.237.120
-                        - 5.61.237.127
-                match:
-                    macaddress: fa:16:3e:aa:bb:cc # MAC-адрес
-                set-name: ens3
-        version: 2
-    ```
+   ```yaml
+   network:
+       ethernets:
+           ens3: # Имя интерфейса
+               dhcp4: false
+               addresses:
+                   - 10.0.0.5/24 # Приватный IP-адрес + префикс из CIDR
+               routes:
+                   - to: 0.0.0.0/0
+                     via: 10.0.0.1 # Адрес шлюза
+               nameservers:
+                   addresses:
+                       - 5.61.237.120
+                       - 5.61.237.127
+               match:
+                   macaddress: fa:16:3e:aa:bb:cc # MAC-адрес
+               set-name: ens3
+       version: 2
+   ```
 
    Қажет болса, `networks.ethernets.ens3.nameservers.addresses` параметрінде басқа DNS-серверлерді көрсетіңіз.
 
 1. Команданы орындаңыз:
 
-    ```console
-    sudo netplan apply
-    ```
+   ```console
+   sudo netplan apply
+   ```
 
 1. Өңделген конфигурациялық файлға автоматты өзгерістер енгізуге тыйым салыңыз:
 
-    ```console
-    echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-    ```
+   ```console
+   echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+   ```
 
 {/tab}
 {tab(ifupdown)}
 
 1. `/etc/network/interfaces.d/50-cloud-init` файлын келесі түрге келтіріңіз:
 
-    ```ini
-    # This file is generated from information provided by the datasource.  Changes
-    # to it will not persist across an instance reboot.  To disable cloud-init's
-    # network configuration capabilities, write a file
-    # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
-    # network: {config: disabled}
-    auto lo
-    iface lo inet loopback
+   ```ini
+   # This file is generated from information provided by the datasource.  Changes
+   # to it will not persist across an instance reboot.  To disable cloud-init's
+   # network configuration capabilities, write a file
+   # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+   # network: {config: disabled}
+   auto lo
+   iface lo inet loopback
 
-    auto eth0 # Имя интерфейса
-    iface eth0 inet static
-    address 10.0.0.5/24 # Приватный IP-адрес + префикс из CIDR
-    gateway 10.0.0.1 # Адрес шлюза
-    dns-nameservers 5.61.237.120 5.61.237.127
-    ```
+   auto eth0 # Имя интерфейса
+   iface eth0 inet static
+   address 10.0.0.5/24 # Приватный IP-адрес + префикс из CIDR
+   gateway 10.0.0.1 # Адрес шлюза
+   dns-nameservers 5.61.237.120 5.61.237.127
+   ```
 
    Қажет болса, `dns-nameservers` параметрінде басқа DNS-серверлерді көрсетіңіз.
 
 1. Желілік қосылымды қайта іске қосыңыз:
 
-    ```console
-    sudo systemctl restart networking
-    ```
+   ```console
+   sudo systemctl restart networking
+   ```
 
 1. Өңделген конфигурациялық файлға автоматты өзгерістер енгізуге тыйым салыңыз:
 
-    ```console
-    echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-    ```
+   ```console
+   echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+   ```
 
 {/tab}
 {tab(network-scripts)}
 
 1. `/etc/sysconfig/network-scripts/ifcfg-<ИМЯ_ИНТЕРФЕЙСА>` файлын келесі түрге келтіріңіз:
 
-    ```ini
-    # Created by cloud-init on instance boot automatically, do not edit.
-    #
-    BOOTPROTO=none
-    DEVICE=eth0 # Имя интерфейса
-    HWADDR=FA:16:3E:AA:BB:CC # MAC-адрес
-    MTU=1500
-    ONBOOT=yes
-    TYPE=Ethernet
-    USERCTL=no
-    PROXY_METHOD=none
-    BROWSER_ONLY=no
-    IPADDR=10.0.0.5 # Приватный IP-адрес
-    PREFIX=24 # Префикс из CIDR
-    DEFROUTE=yes
-    IPV4_FAILURE_FATAL=no
-    IPV6INIT=no
-    NAME="System eth0" # Используйте это имя позднее для перезапуска сетевого соединения
-    UUID=5fb06bd0-aaaa-bbbb-cccc-d6edd65f3e03 # Для вашей ВМ UUID будет другим
-    GATEWAY=10.0.0.1 # Адрес шлюза
-    DNS1=5.61.237.120 # DNS-сервер 1
-    DNS2=5.61.237.127 # DNS-сервер 2
-    ```
+   ```ini
+   # Created by cloud-init on instance boot automatically, do not edit.
+   #
+   BOOTPROTO=none
+   DEVICE=eth0 # Имя интерфейса
+   HWADDR=FA:16:3E:AA:BB:CC # MAC-адрес
+   MTU=1500
+   ONBOOT=yes
+   TYPE=Ethernet
+   USERCTL=no
+   PROXY_METHOD=none
+   BROWSER_ONLY=no
+   IPADDR=10.0.0.5 # Приватный IP-адрес
+   PREFIX=24 # Префикс из CIDR
+   DEFROUTE=yes
+   IPV4_FAILURE_FATAL=no
+   IPV6INIT=no
+   NAME="System eth0" # Используйте это имя позднее для перезапуска сетевого соединения
+   UUID=5fb06bd0-aaaa-bbbb-cccc-d6edd65f3e03 # Для вашей ВМ UUID будет другим
+   GATEWAY=10.0.0.1 # Адрес шлюза
+   DNS1=5.61.237.120 # DNS-сервер 1
+   DNS2=5.61.237.127 # DNS-сервер 2
+   ```
 
    Қажет болса, `DNS1` және `DNS2` параметрлерінде басқа DNS-серверлерді көрсетіңіз.
 
 1. Желілік қосылымды қайта іске қосыңыз:
 
-    ```console
-    sudo nmcli con up "System eth0"
-    ```
+   ```console
+   sudo nmcli con up "System eth0"
+   ```
 
 1. Өңделген конфигурациялық файлға автоматты өзгерістер енгізуге тыйым салыңыз:
 
-    ```console
-    echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-    ```
+   ```console
+   echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+   ```
 
 {/tab}
 {tab(wicked)}
 
 1. `/etc/sysconfig/network/ifcfg-<ИМЯ_ИНТЕРФЕЙСА>` файлын келесі түрге келтіріңіз:
 
-    ```ini
-    IPADDR='10.0.0.5/24' # Приватный IP-адрес + префикс из CIDR
-    BOOTPROTO='static'
-    STARTMODE='hotplug'
-    ```
+  ```ini
+  IPADDR='10.0.0.5/24' # Приватный IP-адрес + префикс из CIDR
+  BOOTPROTO='static'
+  STARTMODE='hotplug'
+  ```
 
 1. `/etc/sysconfig/network/routes` файлында шлюз адресін көрсетіңіз:
 
-    ```ini
-    default 10.0.0.1 - -
-    ```
+   ```ini
+   default 10.0.0.1 - -
+   ```
 
 1. `/etc/sysconfig/network/config` файлында DNS-серверлердің адрестерін көрсетіңіз:
 
-    ```ini
-    NETCONFIG_DNS_STATIC_SERVERS="5.61.237.120 5.61.237.127"
-    ```
+   ```ini
+   NETCONFIG_DNS_STATIC_SERVERS="5.61.237.120 5.61.237.127"
+   ```
 
    Қажет болса, басқа DNS-серверлерді көрсетіңіз.
 
 1. DNS-серверлер баптауларын қолданыңыз:
 
-    ```console
-    sudo netconfig update
-    ```
+   ```console
+   sudo netconfig update
+   ```
 
 1. Желілік қосылымды қайта іске қосыңыз:
 
-    ```console
-    sudo systemctl restart network
-    ```
+   ```console
+   sudo systemctl restart network
+   ```
 
 1. Өңделген конфигурациялық файлға автоматты өзгерістер енгізуге тыйым салыңыз:
 
-    ```console
-    echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-    ```
+   ```console
+   echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+   ```
 
 {/tab}
 {/tabs}
 
-## 3. ВМ-ге қолжетімділіктің бар екенін тексеріңіз
+## {heading(3. ВМ-ге қолжетімділіктің бар екенін тексеріңіз)[id=iaas-interface-settings-check-access]}
 
 Виртуалды машинаға [қосылып көріңіз](/kz/computing/iaas/instructions/vm/vm-connect). 
 
-Егер қосылу мүмкін болмаса, ВМ-де 2-қадамнан бастап желі мәселелеріне [диагностика жүргізіңіз](/kz/computing/iaas/troubleshooting/linux-vm-network#2_kazhetti_koldanbalardyn_virtualdy_mashinada_iske_kosylganyn_tekseriniz).
+Егер қосылу мүмкін болмаса, ВМ-де 2-қадамнан бастап желі мәселелеріне [диагностика жүргізіңіз](/kz/computing/iaas/troubleshooting/linux-vm-network).

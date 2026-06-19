@@ -1,9 +1,23 @@
 {
-    "title": "Bucket",
-      "shortDescription": "",
-      "metaDescription": "Buckets are containers for objects. A project can have one or more buckets. Access to each bucket can be controlled: specify which users can create and del",
-    "sectionTitle": "Bucket",
-    "icon": "",
-    "weight": 1,
-    "uuid": "7655459d-49fc-455a-b0e0-6fdd04f97da9"
+  "title": "Bucket",
+  "shortDescription": "",
+  "metaDescription": "Buckets are containers for objects. A project can have one or more buckets. Access to each bucket can be controlled: specify which users can create and del",
+  "sectionTitle": "Bucket",
+  "icon": "",
+  "weight": 1,
+  "uuid": "7655459d-49fc-455a-b0e0-6fdd04f97da9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

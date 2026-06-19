@@ -4,5 +4,12 @@
   "metaDescription": "Terraform пайдалана отырып Kubernetes кластерін құру мысалы",
   "sectionTitle": "Kubernetes кластерін құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

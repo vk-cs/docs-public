@@ -1,0 +1,17 @@
+{
+  "title": "Справочник Openstack CLI",
+  "shortDescription": "Основные команды Openstack CLI",
+  "metaDescription": "VK Private Cloud: справочник команд Openstack CLI для управления облачными ресурсами из командной строки.",
+  "sectionTitle": "Справочник Openstack CLI",
+  "weight": 2,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": ""
+}

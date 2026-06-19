@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Шығыс параметрлерінің сипаттамасы",
   "sectionTitle": "Шығыс параметрлерінің сипаттамасы",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

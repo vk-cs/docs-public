@@ -47,6 +47,8 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
    
    - **CNI**: select a [Container Network Interface (CNI)](/en/kubernetes/k8s/concepts/network#supported-cni).
 
+   - **CNI**: select a [Container Network Interface (CNI)](/en/kubernetes/k8s/concepts/network#supported-cni).
+
    - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#creating_network) it. 
      
       By default, the option is disabled, and the load balancers use the same subnet as the cluster nodes.
@@ -59,9 +61,9 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
      Possible address formats:
 
-     - `<DOCKER_REGISTRY_IP_ADDRESS>`. For example, `172.24.4.3`.
-     - `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`. For example, `172.24.4.3:5000`.
-     - An arbitrary domain. For example, `example.com`.
+       - `<DOCKER_REGISTRY_IP_ADDRESS>`. For example, `172.24.4.3`.
+       - `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`. For example, `172.24.4.3:5000`.
+       - An arbitrary domain. For example, `example.com`.
 
      The address you add will be set for all nodes of the cluster, including those that you add after it is created. For more details on disabling the validation, refer to the [official Docker documentation](http://docs.docker.com/reference/cli/dockerd/#insecure-registries).
 

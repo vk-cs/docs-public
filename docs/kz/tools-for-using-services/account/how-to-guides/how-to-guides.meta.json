@@ -1,8 +1,13 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "VK Cloud жеке кабинет сервисін пайдалану сценарийлері",
+  "shortDescription": "{var(cloud)} жеке кабинет сервисін пайдалану сценарийлері",
   "metaDescription": "VK Cloud жеке кабинет сервисін пайдалану сценарийлері",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

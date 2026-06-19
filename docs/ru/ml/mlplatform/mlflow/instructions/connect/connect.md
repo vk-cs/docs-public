@@ -1,4 +1,6 @@
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+# {heading(Подключение к MLflow)[id=mlplatform-mlflow-instructions-connect]}
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Нажмите на ссылку в столбце **DNS-имя** для нужного MLflow-инстанса.
 1. Авторизуйтесь на инстансе:

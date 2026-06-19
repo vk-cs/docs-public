@@ -1,3 +1,3 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Ақауларды жою)[id=iaas-troubleshooting]}
 
 Виртуалды машиналарға қатысты типтік мәселелерді диагностикалау және шешу тәсілдері.

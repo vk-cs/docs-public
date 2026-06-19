@@ -5,5 +5,10 @@
   "sectionTitle": "Tariffication",
   "icon": "",
   "weight": 4,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

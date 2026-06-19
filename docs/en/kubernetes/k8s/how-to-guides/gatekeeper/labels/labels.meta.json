@@ -1,9 +1,23 @@
 {
-    "title": "Configuring mandatory labels",
-      "shortDescription": "How to create a Gatekeeper constraint that checks mandatory labels",
-      "metaDescription": "",
-    "sectionTitle": "Configuring mandatory labels",
-    "icon": "",
-    "weight": 1,
-    "uuid": "f0b66c19-8370-4dee-a8d8-4451caf200da"
+  "title": "Configuring mandatory labels",
+  "shortDescription": "How to create a Gatekeeper constraint that checks mandatory labels",
+  "metaDescription": "",
+  "sectionTitle": "Configuring mandatory labels",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f0b66c19-8370-4dee-a8d8-4451caf200da",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

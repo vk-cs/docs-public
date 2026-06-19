@@ -1,23 +1,23 @@
-Рекомендуется периодически обновлять версии PostgreSQL и PostgresPro для инстансов БД. В новых версиях добавлены новые возможности и исправлены ошибки.
+# {heading(Обновление версии PostgreSQL)[id=dbaas-postgre-update]}
+
+Рекомендуется периодически обновлять версии PostgreSQL для инстансов БД. В новых версиях добавлены новые возможности и исправлены ошибки.
 
 Перед обновлением:
 
-1. Выполните [резервное копирование](/ru/storage/backups/instructions/create-backup-copy) инстанса БД, который планируете обновить.
+1. Выполните [резервное копирование](../../../../storage/backups/instructions/create-backup-copy) инстанса БД, который планируете обновить.
 1. Разверните из резервной копии такой же инстанс, как и тот, который планируется обновить. Выполните для него обновление и проверьте, что все данные остаются доступны.
 
 {note:warn}
-
 Во время обновления инстанс БД будет недоступен. Планируйте обновление заранее.
-
 {/note}
 
-Чтобы обновить инстанс БД PostgreSQL или PostgresPro:
+Чтобы обновить инстанс БД PostgreSQL:
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
    Если для инстанса БД доступно обновление, соответствующее сообщение будет расположено справа от его имени.
@@ -30,13 +30,13 @@
 
 {tab(API)}
 
-1. [Получите URL для использования API сервиса Trove](/ru/tools-for-using-services/api/rest-api/endpoints#prosmotr_spiska_endpointov).
+1. [Получите URL для использования API сервиса Trove](../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-list).
 
    URL имеет вид `https://<эндпоинт API>/<идентификатор проекта>/`.
 
-1. [Получите токен](/ru/tools-for-using-services/api/rest-api/case-keystone-token) для авторизации запросов к API.
+1. [Получите токен](../../../../tools-for-using-services/api/rest-api/case-keystone-token) для авторизации запросов к API.
 
-1. Выполните обновление. Процедура обновления зависит от [конфигурации](../../concepts/work-configs):
+1. Выполните обновление. Процедура обновления зависит от {linkto(../../concepts/work-configs#dbaas-work-configs)[text=конфигурации]}:
 
    {tabs}
    
@@ -75,7 +75,7 @@
       Чтобы определить идентификатор такого инстанса:
 
       1. Найдите инстанс с нужным именем в поле `instances[].name`.
-      1. Убедитесь, что это инстанс PostgreSQL, PostgresPro Standard, PostgresPro Enterprise или PostgresPro Enterprise 1C:
+      1. Убедитесь, что это инстанс PostgreSQL:
 
          ```json
          {
@@ -85,7 +85,7 @@
                "name": "<имя инстанса>",
                ...
                "datastore": {
-                 "type": "<один из типов СУБД: postgresql, postgrespro, postgrespro_enterprise, postgrespro_enterprise_1c>",
+                 "type": "<тип СУБД: postgresql>",
                  "version": "<версия СУБД>"
                },
                ...
@@ -268,7 +268,7 @@
             "name": "<имя кластера>",
             ...
             "datastore": {
-              "type": "<один из типов СУБД: postgresql, postgrespro_enterprise, postgrespro_enterprise_1c>",
+              "type": "<тип СУБД: postgresql>",
               "version": "<версия СУБД>"
             },
             ...

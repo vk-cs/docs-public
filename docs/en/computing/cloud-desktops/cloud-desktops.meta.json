@@ -9,5 +9,10 @@
   "additionalUuids": [
     "c9e9a250-0265-42f9-89d8-86290f8d5c9b",
     "db455752-0075-408f-8de9-66ec5fb63671"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

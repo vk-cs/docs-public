@@ -5,5 +5,10 @@
   "sectionTitle": "Technical support",
   "icon": "",
   "weight": 4,
-  "uuid": "f25066c0-8de0-42ab-be41-57f542395bb6"
+  "uuid": "f25066c0-8de0-42ab-be41-57f542395bb6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

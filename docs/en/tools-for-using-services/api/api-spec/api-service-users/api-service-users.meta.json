@@ -5,5 +5,10 @@
   "sectionTitle": "Service accounts",
   "icon": "",
   "weight": 2,
-  "uuid": "0033a554-67c9-4829-803b-6c01e457380a"
+  "uuid": "0033a554-67c9-4829-803b-6c01e457380a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

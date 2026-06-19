@@ -4,5 +4,10 @@
   "metaDescription": "JupyterHub kernel-ін жасау",
   "sectionTitle": "Жеке kernel жасау",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

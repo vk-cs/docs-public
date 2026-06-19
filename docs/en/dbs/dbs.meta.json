@@ -4,5 +4,20 @@
   "metaDescription": "Databases VK Cloud",
   "weight": 5,
   "icon": "",
-  "uuid": "61aba32f-7609-4b42-9fb4-7f0df0b30a7d"
+  "uuid": "61aba32f-7609-4b42-9fb4-7f0df0b30a7d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }
+

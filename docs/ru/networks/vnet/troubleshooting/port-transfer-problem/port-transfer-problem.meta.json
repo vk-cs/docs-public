@@ -5,5 +5,9 @@
   "sectionTitle": "Не появляется сетевой интерфейс после переноса порта",
   "icon": "",
   "weight": 5,
-  "uuid": "bd4b4e09-f1c9-4ea1-9b70-eb7512c8e043"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

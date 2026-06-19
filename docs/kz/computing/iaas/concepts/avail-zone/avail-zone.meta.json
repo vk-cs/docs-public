@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud-та виртуалды ресурстарды қолжетімділік аймақтары бойынша бөлу",
   "metaDescription": "VK Cloud-та виртуалды ресурстарды қолжетімділік аймақтары бойынша бөлу",
   "sectionTitle": "Қолжетімділік аймақтары",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

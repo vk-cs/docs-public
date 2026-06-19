@@ -1,10 +1,12 @@
-## Просмотр информации об инстансе сервиса
+# {heading(Управление инстансом сервиса)[id=marketplace-pr-instance-manage]}
+
+## {heading(Просмотр информации об инстансе сервиса)[id=marketplace-pr-instance-manage-view]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. Откройте [личный кабинет](https://msk.cloud.vk.com/app) VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 
@@ -12,7 +14,7 @@
 
 {/tabs}
 
-На странице отобразится информация об инстансе, включая ID и статус инстанса.
+На странице отобразится информация об инстансе, включая идентификатор и статус инстанса.
 
 Возможные статусы инстанса сервиса:
 
@@ -25,20 +27,20 @@
 - **Приостанавливается** — инстанс сервиса в процессе деактивации из-за недостаточной суммы, чтобы оплатить использование сервиса.
 - **Ошибка приостановки** — не удалось деактивировать инстанс сервиса из-за ошибки.
 - **Неактивный** — инстанс сервиса деактивирован. Деактивированный инстанс сервиса недоступен для использования.
-- **Возобновляется** — инстанс сервиса в процессе [активации](#aktivaciya_instansa_servisa).
+  {ifdef(public)} **Возобновляется** — инстанс сервиса в процессе {linkto(#marketplace-pr-instance-manage-active)[text=активации]}.
 
-## Активация инстанса сервиса
+## {heading(Активация инстанса сервиса)[id=marketplace-pr-instance-manage-active]}
 
 Активация потребуется:
 
-- при [тарификации](../../tariffication) по предоплате;
+- при {linkto(../../../../applications-and-services/marketplace/tariffication#marketplace-tariffication)[text=тарификации]} по предоплате;
 - после пополнения счета проекта, если инстанс сервиса был деактивирован из-за недостатка средств.
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 1. Перейдите на вкладку **Свойства сервиса**.
@@ -47,31 +49,40 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## Редактирование тарифного плана
+## {heading(Редактирование тарифного плана)[id=marketplace-pr-instance-manage-edit]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 1. Перейдите на вкладку **Тарифные планы**.
 1. Нажмите кнопку **Настроить тариф**.
 1. Укажите новые значения тарифных опций и нажмите кнопку **Подключить тариф**.
 
+{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+Подтвердите подключение тарифного плана с обновленными тарифными опциями. Инстанс сервиса будет обновлен.
+
+Обновление инстанса image-based приложения может занимать до 1,5 ч.
+
+Если обновление инстанса сервиса завершилось с ошибкой (статус инстанса сервиса **Ошибка обновления**), перезапустите {linkto(#marketplace-pr-instance-manage-update-service)[text=обновление сервиса]}.
+{/ifdef}
+
 {/tab}
 
 {/tabs}
 
-## Смена тарифного плана
+## {heading(Смена тарифного плана)[id=marketplace-pr-instance-manage-change]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 1. Перейдите на вкладку **Тарифные планы**.
@@ -83,28 +94,30 @@
 
 {/tabs}
 
-Начнется обновление инстанса сервиса, процесс может занять длительное время. Если обновление завершилось со статусом **Ошибка обновления**, [обновите доступ](#update_access) к инстансу сервиса.
+{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+Начнется обновление инстанса сервиса, процесс может занять длительное время. Если обновление завершилось со статусом **Ошибка обновления**, {linkto(#marketplace-pr-instance-manage-update-access)[text=обновите доступ]} к инстансу сервиса.
+{/ifdef}
 
-## {heading(Обновление доступа к инстансу сервиса)[id=update_access]}
+## {heading(Обновление доступа к инстансу сервиса)[id=marketplace-pr-instance-manage-update-access]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 1. Перейдите на вкладку **Свойства сервиса**.
 1. Нажмите кнопку **Обновить доступ**.
 1. Подтвердите обновление параметров доступа.
 
-   Письмо для обновления доступа к инстансу сервиса будет отправлено на email пользователя.
+   Письмо для обновления доступа к инстансу сервиса будет отправлено на почту пользователя, создавшего инстанс.
 
 {/tab}
 
 {/tabs}
 
-## Пересоздание или повторное обновление инстанса сервиса
+## {heading(Пересоздание или повторное обновление инстанса сервиса)[id=marketplace-pr-instance-manage-update-service]}
 
 Операция доступна, если инстанс сервиса находится в статусе **Ошибка создания** или **Ошибка обновления**.
 
@@ -112,7 +125,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 1. Перейдите на вкладку **Свойства сервиса**.
@@ -122,13 +135,13 @@
 
 {/tabs}
 
-## Удаление инстанса сервиса
+## {heading(Удаление инстанса сервиса)[id=marketplace-pr-instance-manage-delete]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений** → **Мои сервисы**.
 1. Откройте страницу инстанса сервиса, нажав на его имя в списке.
 1. Перейдите на вкладку **Свойства сервиса**.

@@ -1,3 +1,3 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Тұжырымдамалар)[id=iaas-concepts]}
 
 Сервистің негізгі ұғымдары мен сипаттамалары.

@@ -5,5 +5,10 @@
     "sectionTitle": "Подключение к сервису",
     "icon": "",
     "weight": 0,
-    "uuid": "f3400fa4-1942-4f5f-aad9-b403144e9136"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "f3400fa4-1942-4f5f-aad9-b403144e9136"
 }

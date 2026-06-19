@@ -14,7 +14,7 @@
 
 {tab(Жеткізуші кабинеті)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 1. **Қолданбалар дүкені** бөлімінде **Жеткізуші кабинетіне өту** батырмасын басыңыз.
 1. **Сервистерді басқару** қойындысына өтіңіз.
 1. Тізімнен қажетті сервисті таңдаңыз.
@@ -71,10 +71,7 @@
 
 {caption(Сервисті архивтеуге арналған сұрау мысалы)[align=left;position=above]}
 ```console
-$ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product/archive \
--H "Content-Type: application/json" \
--H "x-service-token: $token" \
---data '{
+$ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product/archive -H "Content-Type: application/json" -H "x-service-token: $token" --data '{
   "services": [
     {
       "id": "b27ee400-b045-43eb-8a7d-db48c280ba16",

@@ -3,5 +3,19 @@
   "sectionTitle": "Желілер және контентті жеткізу",
   "metaDescription": "VK Cloud желілері және контентті жеткізу",
   "weight": 2,
-  "icon": ""
+  "icon": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

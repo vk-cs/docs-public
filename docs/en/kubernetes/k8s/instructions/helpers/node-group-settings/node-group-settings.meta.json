@@ -1,9 +1,23 @@
 {
-    "title": "Worker node group settings",
-      "shortDescription": "List of all worker node group settings",
-      "metaDescription": "",
-    "sectionTitle": "Worker node group settings",
-    "icon": "",
-    "weight": 2,
-    "uuid": "25670d2d-c331-4ae0-a577-0949c153988a"
+  "title": "Worker node group settings",
+  "shortDescription": "List of all worker node group settings",
+  "metaDescription": "",
+  "sectionTitle": "Worker node group settings",
+  "icon": "",
+  "weight": 2,
+  "uuid": "25670d2d-c331-4ae0-a577-0949c153988a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,9 +1,19 @@
 {
   "title": "Работа с проектами",
-  "shortDescription": "Управление проектами VK Cloud",
+  "shortDescription": "Управление проектами {var(cloud)}",
   "metaDescription": "Управление проектами VK Cloud.",
   "sectionTitle": "Работа с проектами",
   "icon": "",
   "weight": 2,
-  "uuid": "b4e1e128-e778-4b33-b140-5008fa9146ff"
+  "uuid": "b4e1e128-e778-4b33-b140-5008fa9146ff",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }
